@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "plan",
+  "run_id": "35778072080",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35778072080",
+  "head_sha": "258a5b1fa2545fda1da64b64324afceeaff8f71d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T20:11:09.228Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_pr": null,
+  "summary": "Plan a narrow SSH inbound-staging repair using existing filesystem permissions. Quarantine the security-sensitive historical PR separately. No code or GitHub changes were made; runtime reproduction, validation, and publication remain pending.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "Keep the issue open and prepare one implementation PR on the designated branch after reproducing the defect against refreshed main. Outbound delivery is outside this job."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this exact item to central OpenClaw security handling without public mutation or branch adoption. Its historical context does not block the separately authorized ordinary bug repair."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical ordering bug, distinct from copying new attachments into a seeded SSH sandbox."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical source-fetch timing problem, distinct from the SSH destination-staging defect."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical plugin-discovery defect; no remaining work is assigned to this cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
