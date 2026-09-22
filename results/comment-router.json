@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-09-22T21:35:20.974Z",
+  "updated_at": "2026-09-22T21:36:25.140Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155027:5779974189:2026-09-22T16:16:28Z:re_review",
-      "comment_id": "5779974189",
-      "comment_version_key": "5779974189:2026-09-22T16:16:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155027#issuecomment-5779974189",
-      "comment_created_at": "2026-09-22T16:16:28Z",
-      "comment_updated_at": "2026-09-22T16:16:28Z",
-      "comment_body_sha256": "6bbb76db04770901d08bd583256acc8dd57a5d1032ecd5b6201ce7c052aed7ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155027,
-      "author": "cbertucci33",
-      "author_id": 243565269,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T16:17:41.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-store-env-staleness-152409",
-        "head_sha": "0f02cb35cee6f7c537815c945dba53e28fd8c2eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155729:5780010116:2026-09-22T16:18:59Z:re_review",
-      "comment_id": "5780010116",
-      "comment_version_key": "5780010116:2026-09-22T16:18:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155729#issuecomment-5780010116",
-      "comment_created_at": "2026-09-22T16:18:59Z",
-      "comment_updated_at": "2026-09-22T16:18:59Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155729,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T16:19:55.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-telegram-model-switch-admission",
-        "head_sha": "2eae941420cdf908d847c0c766ea8baac8ed1a46",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155701:5780011450:2026-09-22T16:19:04Z:re_review",
       "comment_id": "5780011450",
@@ -33613,6 +33519,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147611:5657488597:2026-09-22T21:34:51Z:clawsweeper_needs_human",
+      "comment_id": "5657488597",
+      "comment_version_key": "5657488597:2026-09-22T21:34:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147611#issuecomment-5657488597",
+      "comment_created_at": "2026-09-14T00:44:18Z",
+      "comment_updated_at": "2026-09-22T21:34:51Z",
+      "comment_body_sha256": "98fd686a48a60a9f133b7714b31d50226d5fe791f2d44042a4c769c4e0475163",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147611,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: earlier Gateway/HTTP/file-tool results support the existing scenarios, but the body explicitly... (sha=eaced0b56c05db79f8bc5f863f25056eb48ac6e0)",
+      "expected_head_sha": "eaced0b56c05db79f8bc5f863f25056eb48ac6e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T21:36:25.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/continue-transcript-after-malformed-tool-call",
+        "head_sha": "eaced0b56c05db79f8bc5f863f25056eb48ac6e0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147611:5760641385:2026-09-21T12:41:07Z:re_review",
+      "comment_id": "5760641385",
+      "comment_version_key": "5760641385:2026-09-21T12:41:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147611#issuecomment-5760641385",
+      "comment_created_at": "2026-09-21T12:41:07Z",
+      "comment_updated_at": "2026-09-21T12:41:07Z",
+      "comment_body_sha256": "e1329d4b838cd347b885477997d6f349c83bc940c711296d01e1b968f8561b79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147611,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T21:36:25.140Z",
+      "target": null
     }
   ]
 }
