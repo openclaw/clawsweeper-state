@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T15:39:38.633Z",
+  "updated_at": "2026-09-22T15:40:29.598Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150047:5697727723:2026-09-22T09:59:55Z:clawsweeper_needs_human",
-      "comment_id": "5697727723",
-      "comment_version_key": "5697727723:2026-09-22T09:59:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150047#issuecomment-5697727723",
-      "comment_created_at": "2026-09-16T12:51:54Z",
-      "comment_updated_at": "2026-09-22T09:59:55Z",
-      "comment_body_sha256": "01fe09998e86278be2ce22f7bebb6071716a53db973277aa19dcc8e659e06271",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150047,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=35febf3aa058660b2aed25313eceaf85a84769b2)",
-      "expected_head_sha": "35febf3aa058660b2aed25313eceaf85a84769b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T10:01:02.773Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/daemon-output-owner-20260914",
-        "head_sha": "35febf3aa058660b2aed25313eceaf85a84769b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155024:5764534300:2026-09-22T10:00:12Z:clawsweeper_auto_repair",
       "comment_id": "5764534300",
@@ -33277,6 +33244,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155591:5779406499:2026-09-22T15:38:50Z:re_review",
+      "comment_id": "5779406499",
+      "comment_version_key": "5779406499:2026-09-22T15:38:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155591#issuecomment-5779406499",
+      "comment_created_at": "2026-09-22T15:38:50Z",
+      "comment_updated_at": "2026-09-22T15:38:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155591,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T15:40:20.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fork-keeps-claude-cli-session",
+        "head_sha": "c3f3dfd30e9e6dd63c05606d91450065be3fc21d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
