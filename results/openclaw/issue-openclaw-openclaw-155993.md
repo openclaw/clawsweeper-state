@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155993"
-mode: "autonomous"
-run_id: "35794952830"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35794952830"
+mode: "plan"
+run_id: "35799760878"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35799760878"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-22T23:38:55.857Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155993"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155993"
+published_at: "2026-09-22T23:58:46.892Z"
+canonical: "#155993"
+canonical_issue: "#155993"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35794952830](https://github.com/openclaw/clawsweeper/actions/runs/35794952830)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35799760878](https://github.com/openclaw/clawsweeper/actions/runs/35799760878)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155993
+Canonical: #155993
 
 ## Summary
 
-Prepared a narrow, reproduction-gated fix plan. The reported measurement pattern remains on preflight main. Implementation and browser reproduction are blocked on this read-only host with missing dependencies; no code or GitHub changes were made.
+Plan a narrow Workboard label-measurement repair. The checkout matches preflight main 1ce767157d4b5af5633783a249267cdbd872ece4 and retains the reported measurement path. Browser reproduction, regression tests, timings, and implementation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Prepared a narrow, reproduction-gated fix plan. The reported measurement pattern
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155993 | fix_needed | planned | canonical | The source supports a narrow plugin-local bug investigation. Keep the issue open and require a failing real-browser regression on current main before implementing or publishing a fix. |
-| cluster:issue-openclaw-openclaw-155993 | build_fix_artifact | planned | canonical | Provide the executor a bounded repair path with mandatory reproduction before edits and validation before publication. |
+| #155993 | fix_needed | planned | canonical | The report supports focused repair investigation without a product decision. Establish the actual browser failure before choosing or implementing the measurement change; source inspection alone does not prove an observer feedback loop. |
 
 ## Needs Human
 
