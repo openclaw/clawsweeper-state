@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T07:25:49.260Z",
+  "updated_at": "2026-09-22T07:26:18.851Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149490:5689480119:2026-09-22T00:04:30Z:clawsweeper_needs_human",
-      "comment_id": "5689480119",
-      "comment_version_key": "5689480119:2026-09-22T00:04:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149490#issuecomment-5689480119",
-      "comment_created_at": "2026-09-15T23:22:06Z",
-      "comment_updated_at": "2026-09-22T00:04:30Z",
-      "comment_body_sha256": "8babb9b8aec481435c3e4da561ceb51c2f45b78b7bc2a320bc2cc93332c1e9c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed acknowledgment timing remains unverified through real Gateway/Codex execution: a stranded result or duplicate continuation could still escape the scripted ordering tests.... (sha=9d4bc16a5370e2088eb1a9f40ada51f2f49f7b2b)",
-      "expected_head_sha": "9d4bc16a5370e2088eb1a9f40ada51f2f49f7b2b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T02:29:58.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr-137822-native-consumption",
-        "head_sha": "9d4bc16a5370e2088eb1a9f40ada51f2f49f7b2b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150595:5708780981:2026-09-22T00:07:53Z:clawsweeper_needs_human",
       "comment_id": "5708780981",
@@ -33257,6 +33224,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154479:5772710632:2026-09-22T07:25:19Z:re_review",
+      "comment_id": "5772710632",
+      "comment_version_key": "5772710632:2026-09-22T07:25:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154479#issuecomment-5772710632",
+      "comment_created_at": "2026-09-22T07:25:19Z",
+      "comment_updated_at": "2026-09-22T07:25:19Z",
+      "comment_body_sha256": "5deb7796274584ebb6486ca3ba3dd7521464955527d56706d0839d8ae3abb27a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154479,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T07:26:16.728Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-provider-metadata-fixtures",
+        "head_sha": "e519f64113b48086dc742bf5ea2465a76b8526ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
