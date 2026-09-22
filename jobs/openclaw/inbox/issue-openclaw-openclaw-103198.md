@@ -67,25 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven WebChat attachment handoff in https://github.com/openclaw/openclaw/issues/103198. First recheck for an open owning PR because review-time GitHub searches were unavailable; the supplied related workaround https://github.com/openclaw/openclaw/pull/103254 is closed unmerged. Establish a failing regression before editing: ordinary chat.send with a small image and a vision-capable model persists the upload but omits its active media facts, so the existing staging and prompt-reference owners cannot expose a readable artifact. Repair preparation at the Gateway owner using canonical ordered attachment identities and existing staging. Preserve pre-staged document paths, mixed image/document batches, inline image input exactly once, text-only image routing, persistence-failure behavior, cancellation cleanup, and managed transcript references. Do not implement image_0 regex aliases, filesystem timestamp discovery, a parallel image registry, broader filesystem access, new config, or schema changes. Inspect chat-send-user-turn.ts, chat-send-attachments.ts, chat-send-agent-dispatch.ts, and current-turn-images.ts with their existing tests. Validate the real chat.send-to-staging boundary and demonstrate that the uploaded bytes can be read in the intended workspace while native vision still receives one image. Cover sandboxed and unsandboxed operation plus plugin-bound and text-only siblings. Keep the repair focused and prefer absorbing it into existing ownership flows; stop for renewed review if a product, authorization, protocol, or persistence redesign becomes necessary. Record user-visible behavior and reporter credit in the PR body; do not edit release-owned CHANGELOG.md.
+Repair the remaining offloaded-image file-access case in ordinary WebChat. Coordinate with current assignee obviyus and recheck for an open fixing PR before starting. The inline repair in https://github.com/openclaw/openclaw/pull/143753 is already merged; preserve it. Current chat-send attachment preparation excludes offloaded images from pre-staging for vision-capable models, while chat-send-user-turn only adds persisted inline entries to active ctx.media. Establish a failing regression through the real chat-send handoff before editing, then carry validated offloaded image facts to the existing staging owner and the session's selected execution workspace. Cover https://github.com/openclaw/openclaw/issues/142313 as the related no-caption consequence without merely weakening the empty-turn guard. Preserve original bytes, image order, one vision input per image, path-free durable media claims, cancellation behavior, and existing workspace access checks. Do not add image-index guessing, configuration, storage schemas, or broader file access. Validate inline, offloaded, mixed-document, text-only-model, and selected-workspace cases proportionately, including actual file read/digest through the changed boundary. Stop and return to triage if a new product or permission contract is required. Record user impact, proof, and measured test cost in the PR body; do not edit release-owned CHANGELOG.md.
 
 Likely files:
 
 - src/gateway/server-methods/chat-send-user-turn.ts
-- src/gateway/server-methods/chat-send-attachments.ts
-- src/gateway/server-methods/chat-send-agent-dispatch.ts
-- src/auto-reply/reply/current-turn-images.ts
 - src/gateway/server-methods/chat-send-user-turn.test.ts
-- src/gateway/server-methods/chat-send-attachments.owner.test.ts
-- src/auto-reply/reply/current-turn-images.test.ts
-- src/gateway/server.chat.gateway-server-chat-b.test.ts
+- src/gateway/server-methods/chat-send-attachments.ts
+- src/auto-reply/reply/get-reply.media-staging.test.ts
+- src/auto-reply/reply/get-reply-run.media-only.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/server-methods/chat-send-user-turn.test.ts src/gateway/server-methods/chat-send-attachments.owner.test.ts
-- node scripts/run-vitest.mjs src/auto-reply/reply/current-turn-images.test.ts src/gateway/chat-attachments.test.ts
-- node scripts/run-vitest.mjs src/gateway/server.chat.gateway-server-chat-b.test.ts
-- Verify the new regression fails before the repair, then demonstrate bundled WebChat upload-to-file access with preserved single-image vision input and redacted evidence.
+- pnpm test src/gateway/server-methods/chat-send-user-turn.test.ts --maxWorkers=1
+- pnpm test src/gateway/chat-attachments.test.ts --maxWorkers=1
+- pnpm test src/auto-reply/reply/get-reply.media-staging.test.ts --maxWorkers=1
+- pnpm test src/auto-reply/reply/get-reply-run.media-only.test.ts --maxWorkers=1
+- git diff --check
 
 ## Operator Prompt
 
