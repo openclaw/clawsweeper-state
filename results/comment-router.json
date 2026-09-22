@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T17:42:21.938Z",
+  "updated_at": "2026-09-22T17:42:32.452Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:94:5776216898:2026-09-22T12:09:32Z:clawsweeper_needs_human",
-      "comment_id": "5776216898",
-      "comment_version_key": "5776216898:2026-09-22T12:09:32Z",
-      "comment_url": "https://github.com/openclaw/remindctl/pull/94#issuecomment-5776216898",
-      "comment_created_at": "2026-09-22T12:09:32Z",
-      "comment_updated_at": "2026-09-22T12:09:32Z",
-      "comment_body_sha256": "c6c0e2baf83f4de870bc61813dc1d898188957591f9dc6a2ff7c6c3887b2d407",
-      "repo": "openclaw/remindctl",
-      "issue_number": 94,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0035de1d2d4c5aab4f0c25a29bdb3a09a9b5d1f4)",
-      "expected_head_sha": "0035de1d2d4c5aab4f0c25a29bdb3a09a9b5d1f4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T12:10:34.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "build/current-tooling",
-        "head_sha": "0035de1d2d4c5aab4f0c25a29bdb3a09a9b5d1f4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:601:5775922766:2026-09-22T12:09:59Z:clawsweeper_needs_human",
       "comment_id": "5775922766",
@@ -33101,6 +33068,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155865:5781169294:2026-09-22T17:41:34Z:re_review",
+      "comment_id": "5781169294",
+      "comment_version_key": "5781169294:2026-09-22T17:41:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155865#issuecomment-5781169294",
+      "comment_created_at": "2026-09-22T17:41:34Z",
+      "comment_updated_at": "2026-09-22T17:41:34Z",
+      "comment_body_sha256": "825eff3a1d999e5606c5aa5cfd1cc9c502222037058d2356c2a0bceca96294df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155865,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T17:42:30.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compiler-snapshot-rejection-diagnostics-20260923",
+        "head_sha": "ebe54357f50024da950fa31cf35691865e0d887e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
