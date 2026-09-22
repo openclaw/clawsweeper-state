@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T18:12:20.231Z",
+  "updated_at": "2026-09-22T18:12:20.389Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155591:5773713037:2026-09-22T12:48:02Z:clawsweeper_needs_human",
-      "comment_id": "5773713037",
-      "comment_version_key": "5773713037:2026-09-22T12:48:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155591#issuecomment-5773713037",
-      "comment_created_at": "2026-09-22T08:50:45Z",
-      "comment_updated_at": "2026-09-22T12:48:02Z",
-      "comment_body_sha256": "d294911c5ec3c7f043762671aefddc93b0d0e30c44944f8705eb0d6411ab5a2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155591,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied isolated Gateway/real-Claude trace proves retained context, a distinct child ID, and an u...; Review finding: [P1] Preserve account validation when arming an ordinary fork — src/config/sessions/cli-session-binding.ts:123-126 - [P2] Require a stable cutoff for checkpointles... (sha=c89987153a9391b50bc8e66460d641911cb8d5b0)",
-      "expected_head_sha": "c89987153a9391b50bc8e66460d641911cb8d5b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T12:49:18.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fork-keeps-claude-cli-session",
-        "head_sha": "c89987153a9391b50bc8e66460d641911cb8d5b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80859:4427014761:2026-09-22T12:22:53Z:autoclose",
       "comment_id": "4427014761",
@@ -33200,6 +33167,53 @@
         "kind": "pull_request",
         "branch": "fix/2026.8.33-telegram-cold-group",
         "head_sha": "a363ece68002fe676ea3d5eecd158249bb055a0c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155601:5781566025:2026-09-22T18:10:59Z:re_review",
+      "comment_id": "5781566025",
+      "comment_version_key": "5781566025:2026-09-22T18:10:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155601#issuecomment-5781566025",
+      "comment_created_at": "2026-09-22T18:10:59Z",
+      "comment_updated_at": "2026-09-22T18:10:59Z",
+      "comment_body_sha256": "ba5edf596809c1b28fecb3d7bb189630bd24f84dc9246fe61cdea00bc24567af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155601,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T18:12:17.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-cold-group-main",
+        "head_sha": "ce9100f64bd9ae1c211f4397bf3104cdd736156a",
         "cluster_id": null,
         "job_path": null
       },
