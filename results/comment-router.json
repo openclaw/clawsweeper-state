@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T09:11:56.719Z",
+  "updated_at": "2026-09-22T09:12:25.372Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155398:5771352565:2026-09-22T04:47:50Z:clawsweeper_needs_human",
-      "comment_id": "5771352565",
-      "comment_version_key": "5771352565:2026-09-22T04:47:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155398#issuecomment-5771352565",
-      "comment_created_at": "2026-09-22T04:47:50Z",
-      "comment_updated_at": "2026-09-22T04:47:50Z",
-      "comment_body_sha256": "cf6903f89ee6c4af5f95abdc866a9bab6646888501be82cc49df179ae485321f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155398,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests exercise CLI result construction, but no after-fix real turn demonstrates session persistence and a subsequent clean Doctor... (sha=063cd2e6da36a3302c12e7860aa331cbffbe8b01)",
-      "expected_head_sha": "063cd2e6da36a3302c12e7860aa331cbffbe8b01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T04:50:07.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-session-canonical-model-provider",
-        "head_sha": "063cd2e6da36a3302c12e7860aa331cbffbe8b01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155432:5771355224:2026-09-22T04:48:13Z:clawsweeper_needs_human",
       "comment_id": "5771355224",
@@ -33413,6 +33380,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151679:5773960037:2026-09-22T09:11:23Z:re_review",
+      "comment_id": "5773960037",
+      "comment_version_key": "5773960037:2026-09-22T09:11:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151679#issuecomment-5773960037",
+      "comment_created_at": "2026-09-22T09:11:23Z",
+      "comment_updated_at": "2026-09-22T09:11:23Z",
+      "comment_body_sha256": "9712ffea6064a64d07d9288a3139966c11d3d5f928980e82815e6989632cf5c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151679,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T09:12:17.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/codex-node-sessions-bounded-read-awaz",
+        "head_sha": "6c9bdc4796d82ddf666a274613760670808a85eb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
