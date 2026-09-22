@@ -1,0 +1,129 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155685",
+  "mode": "autonomous",
+  "run_id": "35720391801",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35720391801",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155685.md",
+  "published_at": "2026-09-22T11:52:53.458Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155685",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155685",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported source path on preflight main 6ba6f0c7a7e6d4b50f4cbd14857df2c2cb3b25d8 and prepared a narrow fix plan. Implementation and executable regression proof are blocked by this host's read-only filesystem and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#155685",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155685",
+      "candidate_fix": null,
+      "reason": "A narrow prompt-placement repair is warranted. Preserve rewind identity rotation and implement only after demonstrating the failing production-boundary regression on refreshed main."
+    },
+    {
+      "target": "#95610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different volatile inputs and provider scope; the rewind repair does not establish resolution."
+    },
+    {
+      "target": "#112986",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A2A context is explicitly outside this repair."
+    },
+    {
+      "target": "#116045",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item for central OpenClaw security handling without public mutation. The ordinary rewind prompt-placement repair does not depend on it."
+    },
+    {
+      "target": "#125064",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Configuration and envelope-contract changes are outside this bug-only job."
+    },
+    {
+      "target": "#128015",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Diagnostic grouping and sidecar identities are distinct and explicitly excluded."
+    },
+    {
+      "target": "#140129",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Shared cache symptom does not prove the same root cause or coverage."
+    },
+    {
+      "target": "#140621",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical carrier-lifecycle work to preserve, not a fix for sessionId remaining in system content."
+    },
+    {
+      "target": "#148304",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Daily temporal context is explicitly excluded from the rewind repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155685",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155685",
+      "candidate_fix": null,
+      "reason": "The fix plan is actionable, but local implementation is blocked by host restrictions. Require failing-before/passing-after evidence before publishing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 4,
+    "route_security": 1,
+    "keep_independent": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 9,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
