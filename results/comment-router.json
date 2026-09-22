@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T17:16:54.712Z",
+  "updated_at": "2026-09-22T17:17:09.860Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155634:5775442067:2026-09-22T11:13:52Z:re_review",
-      "comment_id": "5775442067",
-      "comment_version_key": "5775442067:2026-09-22T11:13:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155634#issuecomment-5775442067",
-      "comment_created_at": "2026-09-22T11:13:52Z",
-      "comment_updated_at": "2026-09-22T11:13:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155634,
-      "author": "zozo123",
-      "author_id": 553010,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T11:15:00.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "databricks-native-provider",
-        "head_sha": "b105be373a1f5fda0487a9e0b35de5463f615f10",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/RepoBar:137:5775442195:2026-09-22T11:13:53Z:clawsweeper_needs_human",
       "comment_id": "5775442195",
@@ -33338,6 +33291,39 @@
         "kind": "pull_request",
         "branch": "codex/task-terminal-notification-20260918",
         "head_sha": "fb218b1b81588fadf79e52b50618fa7a5f9bc343",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155863:5780801544:2026-09-22T17:15:14Z:clawsweeper_needs_human",
+      "comment_id": "5780801544",
+      "comment_version_key": "5780801544:2026-09-22T17:15:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155863#issuecomment-5780801544",
+      "comment_created_at": "2026-09-22T17:15:14Z",
+      "comment_updated_at": "2026-09-22T17:15:14Z",
+      "comment_body_sha256": "6bb588d37b96cfa3babe1e2ee1ae7b15facd7154d41c84a385f92ceba38c0ce6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155863,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The startup-provider regression demonstrates bounded timeout arguments using fake timers and a mocked request function, but supplies no after-f... (sha=0c5e995d6c71072f6f8bdf5b86b803373c477ce7)",
+      "expected_head_sha": "0c5e995d6c71072f6f8bdf5b86b803373c477ce7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T17:17:09.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-plugin-config-deadline-monotonic-088",
+        "head_sha": "0c5e995d6c71072f6f8bdf5b86b803373c477ce7",
         "cluster_id": null,
         "job_path": null
       }
