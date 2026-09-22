@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T22:47:47.794Z",
+  "updated_at": "2026-09-22T22:47:48.116Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155827:5780098304:2026-09-22T16:25:28Z:clawsweeper_needs_human",
-      "comment_id": "5780098304",
-      "comment_version_key": "5780098304:2026-09-22T16:25:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155827#issuecomment-5780098304",
-      "comment_created_at": "2026-09-22T16:25:28Z",
-      "comment_updated_at": "2026-09-22T16:25:28Z",
-      "comment_body_sha256": "993dffea6f87248395b8bbf8f87776dfd3f35c5866ce3d44656c9a9aef185c52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155827,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility with a published updater driving the candidate remains unverified: the regression clears updater markers, while older drivers can defer plugin installation across Doctor... (sha=e0240ab1b3f0a0099f932b4ed0362a9ca50fde86)",
-      "expected_head_sha": "e0240ab1b3f0a0099f932b4ed0362a9ca50fde86",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T16:50:10.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-plugin-inventory-refresh-20260922",
-        "head_sha": "e0240ab1b3f0a0099f932b4ed0362a9ca50fde86",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155832:5780114075:2026-09-22T16:26:38Z:clawsweeper_auto_repair",
       "comment_id": "5780114075",
@@ -33317,6 +33284,53 @@
         "kind": "pull_request",
         "branch": "memorytunning-pr-v2",
         "head_sha": "55a35533158e6e2dd71cb94c0cd288cc1512d9b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123906:5785501816:2026-09-22T22:46:42Z:re_review",
+      "comment_id": "5785501816",
+      "comment_version_key": "5785501816:2026-09-22T22:46:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5785501816",
+      "comment_created_at": "2026-09-22T22:46:42Z",
+      "comment_updated_at": "2026-09-22T22:46:42Z",
+      "comment_body_sha256": "d792c8141a7e3faf6a35bc646fdde97a8325b12aaf2311784d433cc0ab926410",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123906,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T22:47:41.981Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-close-stale-tui-clients",
+        "head_sha": "4b91ed8228f053758a8cb8c683d7ed0b8bf3b599",
         "cluster_id": null,
         "job_path": null
       },
