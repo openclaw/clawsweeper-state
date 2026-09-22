@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining offloaded-image file-access case in ordinary WebChat. Coordinate with current assignee obviyus and recheck for an open fixing PR before starting. The inline repair in https://github.com/openclaw/openclaw/pull/143753 is already merged; preserve it. Current chat-send attachment preparation excludes offloaded images from pre-staging for vision-capable models, while chat-send-user-turn only adds persisted inline entries to active ctx.media. Establish a failing regression through the real chat-send handoff before editing, then carry validated offloaded image facts to the existing staging owner and the session's selected execution workspace. Cover https://github.com/openclaw/openclaw/issues/142313 as the related no-caption consequence without merely weakening the empty-turn guard. Preserve original bytes, image order, one vision input per image, path-free durable media claims, cancellation behavior, and existing workspace access checks. Do not add image-index guessing, configuration, storage schemas, or broader file access. Validate inline, offloaded, mixed-document, text-only-model, and selected-workspace cases proportionately, including actual file read/digest through the changed boundary. Stop and return to triage if a new product or permission contract is required. Record user impact, proof, and measured test cost in the PR body; do not edit release-owned CHANGELOG.md.
+Repair the remaining offloaded-image file-access case in https://github.com/openclaw/openclaw/issues/103198, coordinating with assigned owner obviyus. Preserve the released inline repair in https://github.com/openclaw/openclaw/pull/143753. First establish a failing production-boundary regression for an ordinary WebChat vision-capable session receiving an image above 2,000,000 decoded bytes: the upload must reach active media and the selected execution workspace so file tools can read its original bytes. Extend the existing Gateway managed-media handoff and staging owner; do not add pseudo-reference guessing, configuration, storage formats, alternate staging owners, or broader filesystem access. Preserve original image ordering and exactly one model image input, including mixed inline/offloaded/document turns. Cover captioned and no-caption uploads, using https://github.com/openclaw/openclaw/issues/142313 as overlapping context without assuming every symptom is resolved. Verify selected-workspace and sandbox behavior, byte identity, and rejection outside the permitted workspace. Extend existing Gateway and reply regressions, demonstrate failure before the fix, and record a real WebChat upload/file-read result using synthetic media. Run the listed focused checks and applicable changed-file gates; measure test cost. Keep release notes in the PR body and do not edit CHANGELOG.md. Stop and return to triage if repair requires a new feature, configuration option, storage contract, or product-policy choice.
 
 Likely files:
 
 - src/gateway/server-methods/chat-send-user-turn.ts
-- src/gateway/server-methods/chat-send-user-turn.test.ts
 - src/gateway/server-methods/chat-send-attachments.ts
+- src/gateway/server-methods/chat-send-user-turn.test.ts
+- src/gateway/server-methods/chat.directive-tags.test.ts
 - src/auto-reply/reply/get-reply.media-staging.test.ts
 - src/auto-reply/reply/get-reply-run.media-only.test.ts
 
 Validation:
 
 - pnpm test src/gateway/server-methods/chat-send-user-turn.test.ts --maxWorkers=1
-- pnpm test src/gateway/chat-attachments.test.ts --maxWorkers=1
+- pnpm test src/gateway/server-methods/chat.directive-tags.test.ts --maxWorkers=1
 - pnpm test src/auto-reply/reply/get-reply.media-staging.test.ts --maxWorkers=1
 - pnpm test src/auto-reply/reply/get-reply-run.media-only.test.ts --maxWorkers=1
 - git diff --check
