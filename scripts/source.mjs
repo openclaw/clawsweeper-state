@@ -32,7 +32,10 @@ export function readJson(file, fallback = null) {
   try {
     return JSON.parse(fs.readFileSync(file, "utf8"));
   } catch (error) {
-    throw new Error(`[clawsweeper-state] readJson: malformed JSON in ${file}`, { cause: error });
+    if (error instanceof SyntaxError) {
+      throw new Error(`[clawsweeper-state] readJson: malformed JSON in ${file}`, { cause: error });
+    }
+    throw error;
   }
 }
 
