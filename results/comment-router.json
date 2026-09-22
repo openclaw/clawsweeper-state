@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T12:27:19.419Z",
+  "updated_at": "2026-09-22T12:27:21.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155490:5772543273:2026-09-22T07:09:34Z:re_review",
-      "comment_id": "5772543273",
-      "comment_version_key": "5772543273:2026-09-22T07:09:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155490#issuecomment-5772543273",
-      "comment_created_at": "2026-09-22T07:09:34Z",
-      "comment_updated_at": "2026-09-22T07:09:34Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155490,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T07:17:04.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mcp-codex-timeouts",
-        "head_sha": "926638fa1c414830a338aeb7c8d24f9d8068dffd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:157:5772612921:2026-09-22T07:16:03Z:clawsweeper_needs_human",
       "comment_id": "5772612921",
@@ -33813,6 +33766,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-archive-readiness-20260922",
         "head_sha": "d8459662171ba29fcd767a372e3a26bfe85e49af",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155688:5775514442:2026-09-22T12:24:27Z:clawsweeper_needs_human",
+      "comment_id": "5775514442",
+      "comment_version_key": "5775514442:2026-09-22T12:24:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155688#issuecomment-5775514442",
+      "comment_created_at": "2026-09-22T11:19:54Z",
+      "comment_updated_at": "2026-09-22T12:24:27Z",
+      "comment_body_sha256": "d2917a2ae116b8d8434ded250e2bc6cd763119bdf03f9f0f68a84e2017ed6525",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155688,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show current allowed actions reaching their final effects while interrupted calls and invalidated reus...; Review finding: [P2] Preserve input revisions that arrive after response completion — extensions/xai/realtime-voice-events.ts:193-194 - [P2] Restrict transcription-failure cleanup... (sha=c44cdc00b72e86bb41f0df77d171e61f7998a1e4)",
+      "expected_head_sha": "c44cdc00b72e86bb41f0df77d171e61f7998a1e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T12:27:21.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/grok-talk-upstream-20260922",
+        "head_sha": "c44cdc00b72e86bb41f0df77d171e61f7998a1e4",
         "cluster_id": null,
         "job_path": null
       }
