@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103198"
-mode: "autonomous"
-run_id: "35685851256"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35685851256"
-head_sha: "0ecd31af54ad8cc735ac7ed71b4b863db7bd78ab"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T05:22:22.929Z"
-canonical: "https://github.com/openclaw/openclaw/issues/103198"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/103198"
+mode: "plan"
+run_id: "35687558672"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35687558672"
+head_sha: "6e59a7126d55621b7004fc26a2f346a77224c59a"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T05:24:22.721Z"
+canonical: "#103198"
+canonical_issue: "#103198"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35685851256](https://github.com/openclaw/clawsweeper/actions/runs/35685851256)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35687558672](https://github.com/openclaw/clawsweeper/actions/runs/35687558672)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/103198
+Canonical: #103198
 
 ## Summary
 
-Source inspection confirms the remaining offloaded-image handoff gap on preflight main. A narrow fix artifact is prepared. Implementation and failing-regression proof are blocked by the read-only host and absent dependencies; assignee coordination and the open-fixing-PR recheck remain pending.
+Plan a narrow repair for the remaining offloaded-image handoff. Source inspection supports the job's finding; runtime reproduction and validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Source inspection confirms the remaining offloaded-image handoff gap on prefligh
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103198 | fix_needed | planned | canonical | The remaining defect is a producer-side attachment handoff gap within existing behavior. Preserve the inline repair and restore validated offloaded-image facts to the existing staging flow. |
-| #86371 | keep_closed | skipped | related | Historical context only; no closure or other mutation is proposed. |
-| cluster:issue-openclaw-openclaw-103198 | build_fix_artifact | planned |  | A narrow conditional repair plan is supported by source evidence. The executor must establish the failing regression before editing production code. |
-| cluster:issue-openclaw-openclaw-103198 | open_fix_pr | blocked |  | Before implementation or publication, an authorized executor must coordinate with obviyus, recheck for an existing fixing PR, reproduce the defect on refreshed main, and complete focused validation and review in a writable checkout. |
+| https://github.com/openclaw/openclaw/issues/103198 | fix_needed | planned | canonical | Carry validated offloaded image facts into the existing staging flow without changing file-access permissions. Establish a failing regression on refreshed main before implementation. |
+| https://github.com/openclaw/openclaw/issues/86371 | keep_closed | skipped | related | Historical context with a different repaired cause; no closeout action is needed. |
 
 ## Needs Human
 
