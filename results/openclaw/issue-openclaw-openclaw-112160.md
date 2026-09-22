@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112160"
 mode: "autonomous"
-run_id: "35762827741"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35762827741"
+run_id: "35767485048"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35767485048"
 head_sha: "efd9be863116673997c5935ba4c06321a3f122c8"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-22T18:27:26.784Z"
+published_at: "2026-09-22T19:07:57.110Z"
 canonical: "https://github.com/openclaw/openclaw/issues/112160"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112160"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35762827741](https://github.com/openclaw/clawsweeper/actions/runs/35762827741)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35767485048](https://github.com/openclaw/clawsweeper/actions/runs/35767485048)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/112160
 
 ## Summary
 
-Prepared a narrow fix artifact. Source inspection supports the staging defect, but implementation and runtime reproduction are blocked by the read-only host and missing dependencies. The checkout also differs from preflight main. No files or GitHub state were changed.
+Source inspection corroborates the SSH staging defect. A narrow fix plan is prepared, but implementation and runtime reproduction are blocked by this read-only host and missing test dependencies. The checkout also differs from preflight main. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Prepared a narrow fix artifact. Source inspection supports the staging defect, b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112160 | fix_needed | planned | canonical | The canonical report has a source-supported ordinary bug and no viable hydrated open PR. Runtime reproduction must precede implementation. |
-| #119687 | route_security | planned | security_sensitive | Quarantine this historical proposal for central OpenClaw security handling. Do not reopen, modify, adopt its patch, or treat its historical checks as validation for this repair. |
-| #87089 | keep_closed | skipped | related | Historical context only. |
-| #135860 | keep_closed | skipped | related | Distinct historical transport-retry report; preserve existing retry behavior. |
-| #144025 | keep_closed | skipped | related | Distinct historical discovery report. |
-| cluster:issue-openclaw-openclaw-112160 | build_fix_artifact | planned | canonical | A bounded repair appears feasible within existing write permissions, subject to reproduction on reconciled latest main. |
-| cluster:issue-openclaw-openclaw-112160 | open_fix_pr | blocked | canonical | Implementation and publication require a writable isolated executor to reconcile main, reproduce first, implement, review, and validate. Reuse clawsweeper/issue-openclaw-openclaw-112160; do not merge or close. |
+| #112160 | fix_needed | blocked | canonical | The canonical bug remains supported by source evidence. Implementation requires a writable isolated executor, dependencies, reconciliation with current main, and the mandated failing stageSandboxMedia regression before production edits. |
+| #119687 | route_security | planned | security_sensitive | Route only this item to central OpenClaw security handling without public mutation. Its broader proposal is historical context, not the implementation path for the ordinary staging bug. |
+| #87089 | keep_closed | skipped | related | Historical adjacent context; no remaining action in this cluster. |
+| #135860 | keep_closed | skipped | related | Historical adjacent context; preserve existing SCP recovery behavior. |
+| #144025 | keep_closed | skipped | related | Historical adjacent context; no closure or implementation action. |
+| cluster:issue-openclaw-openclaw-112160 | build_fix_artifact | planned | canonical | No viable open canonical PR exists in the hydrated inventory. Continue through the authorized executor only after base reconciliation and successful reproduction. |
 
 ## Needs Human
 

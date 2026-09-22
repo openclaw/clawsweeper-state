@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "autonomous",
+  "run_id": "35767485048",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35767485048",
+  "head_sha": "efd9be863116673997c5935ba4c06321a3f122c8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T19:07:57.110Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_pr": null,
+  "summary": "Source inspection corroborates the SSH staging defect. A narrow fix plan is prepared, but implementation and runtime reproduction are blocked by this read-only host and missing test dependencies. The checkout also differs from preflight main. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "The canonical bug remains supported by source evidence. Implementation requires a writable isolated executor, dependencies, reconciliation with current main, and the mandated failing stageSandboxMedia regression before production edits."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this item to central OpenClaw security handling without public mutation. Its broader proposal is historical context, not the implementation path for the ordinary staging bug."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical adjacent context; no remaining action in this cluster."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical adjacent context; preserve existing SCP recovery behavior."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical adjacent context; no closure or implementation action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "No viable open canonical PR exists in the hydrated inventory. Continue through the authorized executor only after base reconciliation and successful reproduction."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
