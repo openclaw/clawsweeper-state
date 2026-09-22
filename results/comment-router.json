@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T19:57:39.846Z",
+  "updated_at": "2026-09-22T19:59:23.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147609:5778364651:2026-09-22T14:30:53Z:re_review",
-      "comment_id": "5778364651",
-      "comment_version_key": "5778364651:2026-09-22T14:30:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147609#issuecomment-5778364651",
-      "comment_created_at": "2026-09-22T14:30:53Z",
-      "comment_updated_at": "2026-09-22T14:30:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147609,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T14:39:16.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/matrix-channel-callback-ownership",
-        "head_sha": "d4a326755180c9ffecfc307da6fedf74f0d31a15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147609:5657478241:2026-09-22T14:37:57Z:clawsweeper_needs_human",
       "comment_id": "5657478241",
@@ -33461,6 +33414,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:619:5783146903:2026-09-22T19:58:11Z:clawsweeper_needs_human",
+      "comment_id": "5783146903",
+      "comment_version_key": "5783146903:2026-09-22T19:58:11Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/619#issuecomment-5783146903",
+      "comment_created_at": "2026-09-22T19:58:11Z",
+      "comment_updated_at": "2026-09-22T19:58:11Z",
+      "comment_body_sha256": "091e0e0cd1b1f108c1e44e326dc6374ab7bd1f61835f422974c0ffbd746cb636",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 619,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the body reports Linux AWS package runs, but provides no inspectable receipt or output connect... (sha=24300631f3b9c9f2a7c99cc47ac23ef5887fb510)",
+      "expected_head_sha": "24300631f3b9c9f2a7c99cc47ac23ef5887fb510",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T19:59:23.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/owned-pinned-write-qualification-20260922",
+        "head_sha": "24300631f3b9c9f2a7c99cc47ac23ef5887fb510",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
