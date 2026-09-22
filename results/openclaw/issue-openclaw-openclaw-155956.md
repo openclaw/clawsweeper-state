@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155956"
-mode: "autonomous"
-run_id: "35782946919"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35782946919"
+mode: "plan"
+run_id: "35789922088"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35789922088"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T21:34:56.952Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155956"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T22:14:14.182Z"
+canonical: "#155956"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/155956"
 canonical_pr: null
-actions_total: 9
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35782946919](https://github.com/openclaw/clawsweeper/actions/runs/35782946919)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35789922088](https://github.com/openclaw/clawsweeper/actions/runs/35789922088)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155956
+Canonical: #155956
 
 ## Summary
 
-Source inspection confirms the ordering defect on preflight main 75dc092275e688aeab9c8bd69914f7b4504d63c1. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by the read-only host and missing Vitest dependencies. No files or GitHub state changed; no tests or review passed.
+Plan a narrow runtime candidate-ordering repair. Source inspection at preflight main 2299989bf44732c54b1e9f21ce4eca111faf1d2c supports the reported defect; runtime reproduction and validation remain required. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 9 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,15 +66,9 @@ Source inspection confirms the ordering defect on preflight main 75dc092275e688a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155956 | fix_needed | blocked | canonical | The canonical fix requires a writable executor. Establish the failing production-entry regression before implementing or opening a PR. |
-| #80843 | keep_related | planned | related | Broader fallback feature request is outside this ordering repair. |
-| #97880 | keep_related | planned | related | Keyless auto-selection is distinct and must remain unchanged. |
-| #85182 | keep_closed | skipped | related | Historical context only. |
-| #108598 | keep_closed | skipped | related | Different entry point and failure; historical context only. |
-| #125437 | keep_closed | skipped | related | Provider discovery is distinct from ordering already-available candidates. |
-| #125861 | keep_closed | skipped | related | No code borrowing or replacement is needed for the credential-backed ordering bug. |
-| #132752 | keep_closed | skipped | related | Error retention is historical sibling behavior to preserve. |
-| cluster:issue-openclaw-openclaw-155956 | build_fix_artifact | planned | canonical | A narrow non-security repair remains warranted; local implementation is blocked by host capabilities, not an unresolved product decision. |
+| #155956 | fix_needed | planned | canonical | A bounded existing-behavior ordering bug has a clear repair surface. Preserve snapshot credential decisions and existing authentication ownership. |
+| #80843 | keep_related | planned | related | Broader fallback functionality is distinct from restoring existing auto-detection ordering. |
+| #97880 | keep_related | planned | related | Keyless default selection is a separate product question and must remain outside this repair. |
 
 ## Needs Human
 
