@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:09:34.547Z",
+  "updated_at": "2026-09-22T11:09:35.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5772163959:2026-09-22T06:30:47Z:re_review",
-      "comment_id": "5772163959",
-      "comment_version_key": "5772163959:2026-09-22T06:30:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5772163959",
-      "comment_created_at": "2026-09-22T06:30:47Z",
-      "comment_updated_at": "2026-09-22T06:30:47Z",
-      "comment_body_sha256": "11e0a883f8e1ecf21c542b9d6aff3907e2eef480576250fe18243d4c5912655f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T06:50:31.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "e6ef5b3e2ce11f23cc451e53e82d44984ea9b606",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155486:5772215504:2026-09-22T06:36:10Z:re_review",
       "comment_id": "5772215504",
@@ -33685,6 +33638,39 @@
         "kind": "pull_request",
         "branch": "fix/android-effort-preview",
         "head_sha": "b1dfd7bb2238fe6aa13c6ed9850c6c4cd54e1ca2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:228:5775373508:2026-09-22T11:08:06Z:clawsweeper_needs_human",
+      "comment_id": "5775373508",
+      "comment_version_key": "5775373508:2026-09-22T11:08:06Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/228#issuecomment-5775373508",
+      "comment_created_at": "2026-09-22T11:08:06Z",
+      "comment_updated_at": "2026-09-22T11:08:06Z",
+      "comment_body_sha256": "2855d5988381d2985b9c482f451acc6a5918fe7b024164d0b8e3fcc10ce9e827",
+      "repo": "steipete/birdclaw",
+      "issue_number": 228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f07c778cf8a5281955e4a135deaa04b279076d96)",
+      "expected_head_sha": "f07c778cf8a5281955e4a135deaa04b279076d96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:09:35.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep-3/deps",
+        "head_sha": "f07c778cf8a5281955e4a135deaa04b279076d96",
         "cluster_id": null,
         "job_path": null
       }
