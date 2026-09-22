@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T04:08:25.982Z",
+  "updated_at": "2026-09-22T04:09:38.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116176:5743331733:2026-09-19T16:05:34Z:re_review",
-      "comment_id": "5743331733",
-      "comment_version_key": "5743331733:2026-09-19T16:05:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116176#issuecomment-5743331733",
-      "comment_created_at": "2026-09-19T16:05:34Z",
-      "comment_updated_at": "2026-09-19T16:05:34Z",
-      "comment_body_sha256": "6504bb8c38381f53163af56e7c2cc6571575111fc580af8be5dab6f47f31d5cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116176,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T21:23:25.288Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154874:5761918735:2026-09-21T14:13:51Z:re_review",
       "comment_id": "5761918735",
@@ -32886,6 +32859,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137483:5530526321:2026-09-22T04:08:38Z:clawsweeper_needs_human",
+      "comment_id": "5530526321",
+      "comment_version_key": "5530526321:2026-09-22T04:08:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137483#issuecomment-5530526321",
+      "comment_created_at": "2026-09-03T18:48:27Z",
+      "comment_updated_at": "2026-09-22T04:08:38Z",
+      "comment_body_sha256": "5b8aa609ded8214560e850064c8c381dd85e7fd1be2bb1f0330e7a1d550ac38a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Successful recovery through all three Gateway replacements remains unverified for the final candidate: the preceding hosted run settled the interrupted turn prematurely, and the new t... (sha=a07d159d9dea856659e376dd54e09f608aa662f7)",
+      "expected_head_sha": "a07d159d9dea856659e376dd54e09f608aa662f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T04:09:38.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-restart-checkpoint-pending-wait-20260904",
+        "head_sha": "a07d159d9dea856659e376dd54e09f608aa662f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
