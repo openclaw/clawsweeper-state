@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "autonomous",
+  "run_id": "35751444898",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35751444898",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T16:46:05.173Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_pr": null,
+  "summary": "Confirmed the inbound SSH staging defect on supplied main 8aefa9e43c0f34793f88c2691049b86644fab7dc. Plan one narrow implementation PR using existing filesystem-bridge operations for the reported rw/none modes. Quarantine the security-sensitive historical PR separately. No code changes, tests, or GitHub mutations performed.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "The reported configurations remain affected. A current-turn handoff through the existing bridge can repair them without redefining sandbox permissions."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical proposal for central OpenClaw security handling. Do not mutate, reopen, or reuse its patch in this lane."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical context; no closure action."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different transfer stage and root cause; historical context only."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different discovery failure; historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "Create or update the single issue implementation branch using existing bridge permissions; no new public staging authority or directory-wide synchronization."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
