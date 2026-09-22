@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:27:01.247Z",
+  "updated_at": "2026-09-22T11:27:16.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1651:5772313830:2026-09-22T06:46:36Z:re_review",
-      "comment_id": "5772313830",
-      "comment_version_key": "5772313830:2026-09-22T06:46:36Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1651#issuecomment-5772313830",
-      "comment_created_at": "2026-09-22T06:46:36Z",
-      "comment_updated_at": "2026-09-22T06:46:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1651,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T06:55:16.432Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/triage-label-noop",
-        "head_sha": "ce0ae7a31c9e6a3325e03baadb5979aa425ef261",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1651:5772361116:2026-09-22T06:54:31Z:clawsweeper_needs_human",
       "comment_id": "5772361116",
@@ -33565,6 +33518,39 @@
         "kind": "pull_request",
         "branch": "fix/stable-download-selection",
         "head_sha": "ebe596fabb7d1915bac5616889c0e9d65f177722",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/stats-store:343:5775589959:2026-09-22T11:26:08Z:clawsweeper_needs_human",
+      "comment_id": "5775589959",
+      "comment_version_key": "5775589959:2026-09-22T11:26:08Z",
+      "comment_url": "https://github.com/steipete/stats-store/pull/343#issuecomment-5775589959",
+      "comment_created_at": "2026-09-22T11:26:08Z",
+      "comment_updated_at": "2026-09-22T11:26:08Z",
+      "comment_body_sha256": "73e91575fb69188992918e2cb4fedc14f005e4cf66fb476a8b288468eb195629",
+      "repo": "steipete/stats-store",
+      "issue_number": 343,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d722df8e8f43e4ad3c8eda74c01f45fb771eaee8)",
+      "expected_head_sha": "d722df8e8f43e4ad3c8eda74c01f45fb771eaee8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:27:16.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deslop-appcast-url",
+        "head_sha": "d722df8e8f43e4ad3c8eda74c01f45fb771eaee8",
         "cluster_id": null,
         "job_path": null
       }
