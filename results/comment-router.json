@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T00:54:02.297Z",
+  "updated_at": "2026-09-22T00:54:17.372Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2454:5764885766:2026-09-21T18:18:40Z:clawsweeper_needs_human",
-      "comment_id": "5764885766",
-      "comment_version_key": "5764885766:2026-09-21T18:18:40Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2454#issuecomment-5764885766",
-      "comment_created_at": "2026-09-21T17:41:40Z",
-      "comment_updated_at": "2026-09-21T18:18:40Z",
-      "comment_body_sha256": "7893c92bffe3cff72c1882e67314cc4d13b378fb08346a11b247523963762aad",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: core now consumes provider evidence to remove persistent claims, but fixture assertions and the unspec...; Review finding: [P1] Use failure-inclusive database inventory to prove Daytona absence — internal/providers/daytona/absence.go:114-119 - [P1] Preserve ordinary acquisition without... (sha=de3050c13ab30b42911164e7c95d2270a3df714b)",
-      "expected_head_sha": "de3050c13ab30b42911164e7c95d2270a3df714b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T18:19:33.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/triage-20260921-core-absent-claim-recovery",
-        "head_sha": "de3050c13ab30b42911164e7c95d2270a3df714b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154268:5754427266:2026-09-21T18:19:31Z:clawsweeper_auto_repair",
       "comment_id": "5754427266",
@@ -33795,6 +33762,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154773:5769706708:2026-09-22T00:53:11Z:re_review",
+      "comment_id": "5769706708",
+      "comment_version_key": "5769706708:2026-09-22T00:53:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154773#issuecomment-5769706708",
+      "comment_created_at": "2026-09-22T00:53:11Z",
+      "comment_updated_at": "2026-09-22T00:53:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154773,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T00:54:03.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-video-generation-credential-abort-signal-080",
+        "head_sha": "e5411896bda545ac0def8227d743aa6f9153a5f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
