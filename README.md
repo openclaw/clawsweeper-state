@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 22, 2026, 11:10 UTC
+Last source update: Sep 22, 2026, 11:15 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Sep 22, 2026, 11:10 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 22, 2026, 11:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35717380771) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 22, 2026, 11:15 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35720285769) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 22, 2026, 10:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35717563787) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 21, 2026, 17:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35634499590) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 22, 2026, 10:51 UTC
+Last source update: Sep 22, 2026, 11:13 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1150 | 100% |
-| Run attempts archived | 3435 | audit |
+| Run attempts archived | 3436 | audit |
 | Latest successful clusters | 976 | 84.9% |
 | Latest failed clusters | 171 | 14.9% |
 | Latest cancelled clusters | 3 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1150 clusters: 339 maintainer action, 331 automation snapshot, 431 intervention needed, 49 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120362](https://github.com/openclaw/openclaw/issues/120362) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling without public mutation or further security triage. Its classification d....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#103694](https://github.com/openclaw/openclaw/pull/103694) is automation_failed: The reported source path remains present. A writable executor must establish the required failing regression before implementation..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#103198](https://github.com/openclaw/openclaw/pull/103198) is automation_failed: Implementation requires a writable executor to establish the failing production-boundary regression, apply the owner-level fix, and compl....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#155588](https://github.com/openclaw/openclaw/pull/155588) is action_planned: The remaining notification defect has a bounded repair path. Historical closed references require no actions, and the supplied evidence d....
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103198](https://github.com/openclaw/openclaw/pull/103198) | automation_failed | Implementation requires a writable executor to establish the failing production-boundary regression, apply the owner-level fix, and complete valida... | Sep 22, 2026, 11:13 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [35716054018](https://github.com/openclaw/clawsweeper/actions/runs/35716054018) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103694](https://github.com/openclaw/openclaw/pull/103694) | automation_failed | The reported source path remains present. A writable executor must establish the required failing regression before implementation. | Sep 22, 2026, 10:51 UTC | [issue-openclaw-openclaw-103694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103694.md) | [35716900658](https://github.com/openclaw/clawsweeper/actions/runs/35716900658) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103198](https://github.com/openclaw/openclaw/pull/103198) | automation_failed | Implementation requires a writable executor. This host cannot create the required failing regression, install missing node_modules, stage synthetic... | Sep 22, 2026, 10:14 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [35710461895](https://github.com/openclaw/clawsweeper/actions/runs/35710461895) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Sep 22, 2026, 07:36 UTC | [issue-openclaw-openclaw-122583](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122583.md) | [35699877249](https://github.com/openclaw/clawsweeper/actions/runs/35699877249) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-155515](cluster:issue-openclaw-openclaw-155515) | automation_failed | Implementation requires a writable, dependency-ready executor checkout. Reuse clawsweeper/issue-openclaw-openclaw-155515 and publish only after rep... | Sep 22, 2026, 07:06 UTC | [issue-openclaw-openclaw-155515](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-155515.md) | [35694450301](https://github.com/openclaw/clawsweeper/actions/runs/35694450301) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Sep 21, 2026, 23:47 UTC | [issue-openclaw-openclaw-79797](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79797.md) | [35668813847](https://github.com/openclaw/clawsweeper/actions/runs/35668813847) |
