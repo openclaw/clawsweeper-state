@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T21:10:06.711Z",
+  "updated_at": "2026-09-22T21:10:52.378Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:351:5779618719:2026-09-22T15:53:22Z:re_review",
-      "comment_id": "5779618719",
-      "comment_version_key": "5779618719:2026-09-22T15:53:22Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/351#issuecomment-5779618719",
-      "comment_created_at": "2026-09-22T15:53:22Z",
-      "comment_updated_at": "2026-09-22T15:53:22Z",
-      "comment_body_sha256": "bfa5b30d82061371e6806bcfb95f997babe2eecd8a4eff100728b131352eead1",
-      "repo": "openclaw/crabpot",
-      "issue_number": 351,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `3c6a5975f51b962bbed1994a3ae6a2c7850228ce`. required base update onto merged coverage pr only; the six-file patch remains 122 changed lines. eight focused tests passed in 1.915s",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T15:54:26.240Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-resource-campaign-20260922",
-        "head_sha": "114169bce4058257c7fd3b17ca35cf823c3ee5af",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153331:5746816428:2026-09-22T15:53:21Z:clawsweeper_needs_human",
       "comment_id": "5746816428",
@@ -33668,6 +33621,39 @@
         "kind": "pull_request",
         "branch": "feat/mattermost-typed-progress-final",
         "head_sha": "a36321f58ebbba877f206f16f174d9edaf3f849c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155923:5783077836:2026-09-22T21:09:58Z:clawsweeper_needs_human",
+      "comment_id": "5783077836",
+      "comment_version_key": "5783077836:2026-09-22T21:09:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155923#issuecomment-5783077836",
+      "comment_created_at": "2026-09-22T19:54:32Z",
+      "comment_updated_at": "2026-09-22T21:09:58Z",
+      "comment_body_sha256": "006859a4cd2b15a830d2ef58ff0e0e7698c66d1d786a14e9214622c8be9d51e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2eec02cf88950699ecded72e29e3b30cc5d2b5cd)",
+      "expected_head_sha": "2eec02cf88950699ecded72e29e3b30cc5d2b5cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T21:10:52.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-pr-lock-report-snapshots-20260923",
+        "head_sha": "2eec02cf88950699ecded72e29e3b30cc5d2b5cd",
         "cluster_id": null,
         "job_path": null
       }
