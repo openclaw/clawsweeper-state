@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155728"
 mode: "autonomous"
-run_id: "35730772295"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35730772295"
+run_id: "35732961482"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35732961482"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-22T13:08:59.646Z"
+published_at: "2026-09-22T14:41:58.717Z"
 canonical: "https://github.com/openclaw/openclaw/issues/155728"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/155728"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35730772295](https://github.com/openclaw/clawsweeper/actions/runs/35730772295)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35732961482](https://github.com/openclaw/clawsweeper/actions/runs/35732961482)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/155728
 
 ## Summary
 
-The reported whole-file allocation mechanism remains in preflight main 8c001ebde9333e0dfe4402e6b0cdc0778d16a079. A narrow repair artifact is prepared. Implementation, runtime reproduction, measurements, and validation are blocked by this read-only host; dependencies are also absent. No files or GitHub state were changed.
+Confirmed the whole-file allocation mechanism on preflight main 4502cad0a1f483561f11c59175e5252b20bf9c51. A narrow fix artifact is ready; implementation, failing regression, and memory measurements are blocked by the read-only filesystem and absent dependencies. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ The reported whole-file allocation mechanism remains in preflight main 8c001ebde
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155728 | fix_needed | blocked | canonical | Implementation requires a writable executor. Establish the required failing capture-entrypoint regression or isolated baseline before editing; stop if it does not reproduce on refreshed main. |
-| #131492 | keep_related | planned | related | Keep open as a distinct memory-operations follow-up outside this implementation scope. |
+| #155728 | fix_needed | planned | canonical | The ordinary performance defect remains source-proven. Runtime reproduction must precede implementation in a writable isolated executor. |
+| #131492 | keep_related | planned | related | Related memory-pressure symptoms, with distinct scope and unresolved evidence; retain outside this implementation. |
 | #153588 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-155728 | build_fix_artifact | planned | canonical | A narrow non-security repair is supported by source inspection; execution remains gated on reproduction and a writable environment. |
+| cluster:issue-openclaw-openclaw-155728 | build_fix_artifact | planned | canonical | No viable contributor PR appears in the hydrated inventory. Prepare one narrow implementation PR after successful entry-point reproduction. |
 
 ## Needs Human
 

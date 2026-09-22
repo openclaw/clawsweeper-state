@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155728",
+  "mode": "autonomous",
+  "run_id": "35732961482",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35732961482",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155728.md",
+  "published_at": "2026-09-22T14:41:58.717Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155728",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155728",
+  "canonical_pr": null,
+  "summary": "Confirmed the whole-file allocation mechanism on preflight main 4502cad0a1f483561f11c59175e5252b20bf9c51. A narrow fix artifact is ready; implementation, failing regression, and memory measurements are blocked by the read-only filesystem and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#155728",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155728",
+      "candidate_fix": null,
+      "reason": "The ordinary performance defect remains source-proven. Runtime reproduction must precede implementation in a writable isolated executor."
+    },
+    {
+      "target": "#131492",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#155728",
+      "candidate_fix": null,
+      "reason": "Related memory-pressure symptoms, with distinct scope and unresolved evidence; retain outside this implementation."
+    },
+    {
+      "target": "#153588",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155728",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155728",
+      "candidate_fix": null,
+      "reason": "No viable contributor PR appears in the hydrated inventory. Prepare one narrow implementation PR after successful entry-point reproduction."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
