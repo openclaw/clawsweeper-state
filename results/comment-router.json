@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T19:55:38.885Z",
+  "updated_at": "2026-09-22T19:56:20.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155301:5770142796:2026-09-22T14:36:49Z:clawsweeper_needs_human",
-      "comment_id": "5770142796",
-      "comment_version_key": "5770142796:2026-09-22T14:36:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155301#issuecomment-5770142796",
-      "comment_created_at": "2026-09-22T01:57:27Z",
-      "comment_updated_at": "2026-09-22T14:36:49Z",
-      "comment_body_sha256": "25e7b4a140e6b16868c4687e29fbbef4d001d99d1f5d4e2fabebb822acbe7380",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155301,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=50725f22f55922b9c9a9a00e35745926a8687c67)",
-      "expected_head_sha": "50725f22f55922b9c9a9a00e35745926a8687c67",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T14:38:40.409Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/decision-model-provider-groups",
-        "head_sha": "50725f22f55922b9c9a9a00e35745926a8687c67",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155767:5778469329:2026-09-22T14:37:45Z:clawsweeper_needs_human",
       "comment_id": "5778469329",
@@ -33433,6 +33400,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139234:5783071462:2026-09-22T19:55:21Z:re_review",
+      "comment_id": "5783071462",
+      "comment_version_key": "5783071462:2026-09-22T19:55:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139234#issuecomment-5783071462",
+      "comment_created_at": "2026-09-22T19:54:12Z",
+      "comment_updated_at": "2026-09-22T19:55:21Z",
+      "comment_body_sha256": "26da71b10e3acd174e82ea52316617b68474fd4241537393d28a5bc9d8f19b40",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139234,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T19:56:18.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-reject-nondecimal-wait",
+        "head_sha": "21f862176b5c7116391d7e903b8e04e355558d7d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
