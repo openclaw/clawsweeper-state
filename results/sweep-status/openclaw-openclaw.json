@@ -3,23 +3,93 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Review in progress",
-  "detail": "Planned 102 items across 34 shards. Capacity is 102 items; due backlog scanned is 6186. Capacity reason: saturated: due backlog filled planned capacity. Review shards are starting; publish will merge artifacts when they finish.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35716688586",
-  "planned_count": 102,
-  "planned_capacity": 102,
-  "planned_shards": 34,
-  "active_codex": 34,
-  "due_backlog": 6186,
-  "oldest_unreviewed_at": "2026-03-28T09:20:36Z",
-  "capacity_reason": "saturated: due backlog filled planned capacity",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 2. Result records: 4. Item numbers: 154767,91867,91475,155610,127387,127430,127421,127224,155584,127411,127425,127171,127423,127442,127435,127433,127432,127397,127400,127450,127409,155607,127389,127309,127436,127378,127318,127268,127406,127446,127262,127228,127445,127060,127360,127434,127429,126953,127320,127332. Next cursor: 154767.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35713053726",
+  "planned_count": null,
+  "planned_capacity": null,
+  "planned_shards": null,
+  "active_codex": null,
+  "due_backlog": null,
+  "oldest_unreviewed_at": null,
+  "capacity_reason": null,
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-09-22T10:41:45.293Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "1 examined; 4/40 action records; 0 closed, 2 comments synced, 2 skipped; cursor at #154767.",
+    "examined": 1,
+    "action_records": 4,
+    "processed": 4,
+    "processed_limit": 40,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 2,
+    "skipped": 2,
+    "skip_reasons": {
+      "skipped_runtime_budget": 2
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 4,
+        "closed": 0,
+        "comment_synced": 2,
+        "skipped": 2,
+        "skip_reasons": {
+          "skipped_runtime_budget": 2
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_runtime_budget",
+        "count": 2,
+        "bucket": "run_budget",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Runtime budget",
+        "summary": "The apply lane stopped because it reached its bounded runtime.",
+        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
+      }
+    ],
+    "next_action_buckets": {
+      "run_budget": 2
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": 1,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 154767,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-09-22T10:39:09.632Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35713053726"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-09-22T10:30:32.014Z",
@@ -126,5 +196,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35712660205"
   },
-  "updated_at": "2026-09-22T10:37:17.447Z"
+  "updated_at": "2026-09-22T10:41:45.549Z"
 }
