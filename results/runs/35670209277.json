@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152564",
+  "mode": "autonomous",
+  "run_id": "35670209277",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35670209277",
+  "head_sha": "ffdff711463380f2636e8e9f7fb152770f26b9c3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152564.md",
+  "published_at": "2026-09-22T01:10:31.414Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152564",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152564",
+  "canonical_pr": null,
+  "summary": "Confirmed the source-level validation mismatch on preflight main 73f058a4e653471383c473a93571f043ddc05587. A narrow fix plan is ready, but implementation and public-boundary reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152564",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152564",
+      "candidate_fix": null,
+      "reason": "The documented compatibility failure remains supported by current source. Establish an executable failing regression before implementation; no open candidate PR is present in the hydrated inventory."
+    },
+    {
+      "target": "#71757",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence for preserving Matrix nested-only semantics."
+    },
+    {
+      "target": "#85010",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with a different failure path; exclude Matrix changes."
+    },
+    {
+      "target": "#113317",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Existing Doctor sequencing work is historical context, not an open repair candidate."
+    },
+    {
+      "target": "#125359",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing shipped-compatibility work and extend coverage to the remaining validation boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152564",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152564",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation requires a writable executor with repository dependencies and must begin with the required failing public-boundary regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
