@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:26:22.948Z",
+  "updated_at": "2026-09-22T11:27:01.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155472:5772386213:2026-09-22T06:54:12Z:freeform_assist",
-      "comment_id": "5772386213",
-      "comment_version_key": "5772386213:2026-09-22T06:54:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155472#issuecomment-5772386213",
-      "comment_created_at": "2026-09-22T06:54:12Z",
-      "comment_updated_at": "2026-09-22T06:54:12Z",
-      "comment_body_sha256": "a0b2f33d7c1591621028168f996ba315f7ebdc0fa28e38d9bfcfbf1ed8b1f80b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155472,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\ndata-model compatibility proof: not applicable. this pr adds one qa lab catalog yaml entry loaded from the checkout into memory; it changes no persisted product schema, format, migration, reader, or writer. the exact-head review already found no actionable patch finding and explicitly records that the prior migration-proof requirement does not apply.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T06:54:59.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-msteams-restart-proactive",
-        "head_sha": "e791b3214f186b78f245ace5cfbd859beb3f8e0a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1651:5772313830:2026-09-22T06:46:36Z:re_review",
       "comment_id": "5772313830",
@@ -33579,6 +33532,39 @@
         "kind": "pull_request",
         "branch": "fix/acpx-watch-owner-incarnation-20260922",
         "head_sha": "62b07bc2bf2896a5f9b65aae9daddcb5fdc9469e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/stats-store:342:5775588396:2026-09-22T11:26:01Z:clawsweeper_needs_human",
+      "comment_id": "5775588396",
+      "comment_version_key": "5775588396:2026-09-22T11:26:01Z",
+      "comment_url": "https://github.com/steipete/stats-store/pull/342#issuecomment-5775588396",
+      "comment_created_at": "2026-09-22T11:26:01Z",
+      "comment_updated_at": "2026-09-22T11:26:01Z",
+      "comment_body_sha256": "0ce150e9f8e5ee26137700de3d852323962dece755807fae6648d8fc1d22db07",
+      "repo": "steipete/stats-store",
+      "issue_number": 342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ebe596fabb7d1915bac5616889c0e9d65f177722)",
+      "expected_head_sha": "ebe596fabb7d1915bac5616889c0e9d65f177722",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:27:01.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stable-download-selection",
+        "head_sha": "ebe596fabb7d1915bac5616889c0e9d65f177722",
         "cluster_id": null,
         "job_path": null
       }
