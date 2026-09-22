@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T20:10:24.237Z",
+  "updated_at": "2026-09-22T20:11:19.615Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155658:5774934391:2026-09-22T14:31:39Z:clawsweeper_needs_human",
-      "comment_id": "5774934391",
-      "comment_version_key": "5774934391:2026-09-22T14:31:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155658#issuecomment-5774934391",
-      "comment_created_at": "2026-09-22T10:30:05Z",
-      "comment_updated_at": "2026-09-22T14:31:39Z",
-      "comment_body_sha256": "bb03bcc5cb12940f0b9f55382818eb376ce9f358378ccd5a6f2bbd5ab0088960",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155658,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head conflicts with newer main fixture changes; its passing validation does not establish the final combined cleanup and admission behavior. (sha=d5e9bbaa68e84cc90a073a1274f953d8e8c9e943)",
-      "expected_head_sha": "d5e9bbaa68e84cc90a073a1274f953d8e8c9e943",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T14:57:32.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-embeddings-cleanup-20260922",
-        "head_sha": "d5e9bbaa68e84cc90a073a1274f953d8e8c9e943",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155686:5775483029:2026-09-22T14:32:18Z:clawsweeper_needs_human",
       "comment_id": "5775483029",
@@ -33475,6 +33442,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155913:5783355492:2026-09-22T20:10:13Z:re_review",
+      "comment_id": "5783355492",
+      "comment_version_key": "5783355492:2026-09-22T20:10:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155913#issuecomment-5783355492",
+      "comment_created_at": "2026-09-22T20:10:13Z",
+      "comment_updated_at": "2026-09-22T20:10:13Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155913,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T20:11:17.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tests-gateway-abort-delivery-drain-20260923",
+        "head_sha": "54b2931e31d7f014f0e0786e2b687ab4524b7e86",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
