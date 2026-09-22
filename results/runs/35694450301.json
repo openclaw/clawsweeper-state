@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155515",
+  "mode": "autonomous",
+  "run_id": "35694450301",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35694450301",
+  "head_sha": "ee881f3741a919971b3717926fa99192c532fdf1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155515.md",
+  "published_at": "2026-09-22T07:06:13.793Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155515",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155515",
+  "canonical_pr": null,
+  "summary": "Source confirms the receipt contradiction on preflight main. A narrow shared-owner repair is planned. Implementation and runtime reproduction are blocked in this read-only checkout, which has no installed dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#155515",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155515",
+      "candidate_fix": null,
+      "reason": "The receipt reports delivery for a dry run. Fixing notice composition requires no configuration, public API, or product-policy change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155515",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#155515",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new-fix PR through the deterministic executor, conditional on a failing actual-entrypoint regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155515",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#155515",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable, dependency-ready executor checkout. Reuse clawsweeper/issue-openclaw-openclaw-155515 and publish only after reproduction and validation; do not merge or close."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
