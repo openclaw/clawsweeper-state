@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-09-22T18:12:20.389Z",
+  "updated_at": "2026-09-22T18:13:20.301Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80859:4427014761:2026-09-22T12:22:53Z:autoclose",
-      "comment_id": "4427014761",
-      "comment_version_key": "4427014761:2026-09-22T12:22:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/80859#issuecomment-4427014761",
-      "comment_created_at": "2026-05-12T03:10:27Z",
-      "comment_updated_at": "2026-09-22T12:22:53Z",
-      "comment_body_sha256": "a07df0618e7392067ac03330f6416e7fdef2a753e64129d8d3c9ac1748945778",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80859,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T12:53:21.663Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127796:5378924991:2026-09-22T12:25:21Z:clawsweeper_auto_repair",
       "comment_id": "5378924991",
@@ -33231,6 +33200,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155879:5781574039:2026-09-22T18:11:36Z:clawsweeper_needs_human",
+      "comment_id": "5781574039",
+      "comment_version_key": "5781574039:2026-09-22T18:11:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155879#issuecomment-5781574039",
+      "comment_created_at": "2026-09-22T18:11:36Z",
+      "comment_updated_at": "2026-09-22T18:11:36Z",
+      "comment_body_sha256": "59892a9d2422c9937b22b9602d5785c92aca9173edf4fd1cf5af01b04d5f0a00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Vitest results exercise the startup scan with a mocked runtime and Doctor discovery with injected context, but do not show after-f... (sha=64d332087abf0b687119a37cd7ab4e30f6cda653)",
+      "expected_head_sha": "64d332087abf0b687119a37cd7ab4e30f6cda653",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T18:13:20.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-acpx-invalid-session-filenames-20260924",
+        "head_sha": "64d332087abf0b687119a37cd7ab4e30f6cda653",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
