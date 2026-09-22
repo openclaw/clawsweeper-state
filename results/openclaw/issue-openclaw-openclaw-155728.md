@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155728"
-mode: "autonomous"
-run_id: "35732961482"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35732961482"
+mode: "plan"
+run_id: "35744285420"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35744285420"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T14:41:58.717Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155728"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155728"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T15:04:02.655Z"
+canonical: "#155728"
+canonical_issue: "#155728"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35732961482](https://github.com/openclaw/clawsweeper/actions/runs/35732961482)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35744285420](https://github.com/openclaw/clawsweeper/actions/runs/35744285420)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155728
+Canonical: #155728
 
 ## Summary
 
-Confirmed the whole-file allocation mechanism on preflight main 4502cad0a1f483561f11c59175e5252b20bf9c51. A narrow fix artifact is ready; implementation, failing regression, and memory measurements are blocked by the read-only filesystem and absent dependencies. No files or GitHub state changed.
+Plan one narrow artifact-capture fix. The checkout matches preflight main 5b7e61fe36849c3bd7d3d1fd1733037157cc2dea and retains whole-file capture, verification, and alias reads. No changes or runtime tests were performed; reproduction, memory measurements, implementation, and validation remain executor requirements.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the whole-file allocation mechanism on preflight main 4502cad0a1f48356
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155728 | fix_needed | planned | canonical | The ordinary performance defect remains source-proven. Runtime reproduction must precede implementation in a writable isolated executor. |
-| #131492 | keep_related | planned | related | Related memory-pressure symptoms, with distinct scope and unresolved evidence; retain outside this implementation. |
-| #153588 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-155728 | build_fix_artifact | planned | canonical | No viable contributor PR appears in the hydrated inventory. Prepare one narrow implementation PR after successful entry-point reproduction. |
+| #155728 | fix_needed | planned | canonical | A focused allocation-producer repair is appropriate. Runtime improvement must be demonstrated before publication; closing and merging are prohibited. |
+| #131492 | keep_related | planned | related | Related memory-pressure symptoms do not establish the same root cause or resolution. Leave its deployment-guidance decision outside this repair. |
+| #153588 | keep_closed | skipped | related | Historical evidence about disk cleanup, distinct from transient binary-buffer allocations. No closure action is applicable. |
 
 ## Needs Human
 
