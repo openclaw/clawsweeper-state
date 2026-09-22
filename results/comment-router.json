@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T07:48:04.057Z",
+  "updated_at": "2026-09-22T07:49:36.211Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153856:5751291203:2026-09-22T00:05:01Z:clawsweeper_auto_repair",
-      "comment_id": "5751291203",
-      "comment_version_key": "5751291203:2026-09-22T00:05:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153856#issuecomment-5751291203",
-      "comment_created_at": "2026-09-20T17:05:29Z",
-      "comment_updated_at": "2026-09-22T00:05:01Z",
-      "comment_body_sha256": "e39192ddf298f101a4d14d6e1c6ac2586f33cbcdd539c2b1c946ea4d15c1e65e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153856,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=966c2ccc84345b29332c981bbf0b72f5f0600ace)",
-      "expected_head_sha": "966c2ccc84345b29332c981bbf0b72f5f0600ace",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T02:29:58.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/decision-routing-host-contract",
-        "head_sha": "966c2ccc84345b29332c981bbf0b72f5f0600ace",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154051:5752567275:2026-09-22T01:04:56Z:clawsweeper_needs_human",
       "comment_id": "5752567275",
@@ -33299,6 +33266,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154723:5772960608:2026-09-22T07:48:35Z:re_review",
+      "comment_id": "5772960608",
+      "comment_version_key": "5772960608:2026-09-22T07:48:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154723#issuecomment-5772960608",
+      "comment_created_at": "2026-09-22T07:48:35Z",
+      "comment_updated_at": "2026-09-22T07:48:35Z",
+      "comment_body_sha256": "ee6c8fa6bc65e661d3222de161c4f43a3399ffba5c7f2530c3fbd2c99c1e84a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154723,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T07:49:34.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-installer-smoke-contract",
+        "head_sha": "88f405c6c6b637cdad529847a993572a8717ca51",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
