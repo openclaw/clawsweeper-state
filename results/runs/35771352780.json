@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "plan",
+  "run_id": "35771352780",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35771352780",
+  "head_sha": "efd9be863116673997c5935ba4c06321a3f122c8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T19:12:03.376Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_issue": "#112160",
+  "canonical_pr": null,
+  "summary": "Plan a narrow SSH inbound-media repair. Checkout HEAD matches preflight main 9a0b096f85919666d25232de1a13470077cd58f0; source inspection confirms local-only staging and skipped uploads for existing runtimes. No code or GitHub mutations performed. Failing regression and real SSH validation remain required before publication.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "Retain the issue as the repair owner. A focused implementation using existing filesystem permissions appears viable; runtime proof is still pending."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact PR for central OpenClaw security handling without public mutation. Its classification does not block the independent bug-only repair."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct pipeline-ordering defect."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct transfer-timing defect."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct discovery defect."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
