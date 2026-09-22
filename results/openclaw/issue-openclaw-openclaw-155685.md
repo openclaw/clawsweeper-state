@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155685"
-mode: "autonomous"
-run_id: "35720391801"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35720391801"
+mode: "plan"
+run_id: "35729950383"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35729950383"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T11:52:53.458Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155685"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155685"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T13:03:26.802Z"
+canonical: "#155685"
+canonical_issue: "#155685"
 canonical_pr: null
-actions_total: 10
+actions_total: 9
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35720391801](https://github.com/openclaw/clawsweeper/actions/runs/35720391801)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35729950383](https://github.com/openclaw/clawsweeper/actions/runs/35729950383)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155685
+Canonical: #155685
 
 ## Summary
 
-Confirmed the reported source path on preflight main 6ba6f0c7a7e6d4b50f4cbd14857df2c2cb3b25d8 and prepared a narrow fix plan. Implementation and executable regression proof are blocked by this host's read-only filesystem and absent dependencies. No files or GitHub state changed.
+Plan a narrow session-identity prompt repair. No files or GitHub state changed. Local source still contains the reported mechanism, but checkout HEAD 6611fdd97f4fa478808a890971d0ab7cea2fc2d2 differs from preflight main cf8c5724cbcae1d3bc6072a62bc82bee39662f0a. Reproduction on refreshed main and validation remain required. Quarantine only the linked cross-session reasoning report.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 10 |
+| Worker actions | 9 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,16 +66,15 @@ Confirmed the reported source path on preflight main 6ba6f0c7a7e6d4b50f4cbd14857
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155685 | fix_needed | planned | canonical | A narrow prompt-placement repair is warranted. Preserve rewind identity rotation and implement only after demonstrating the failing production-boundary regression on refreshed main. |
-| #95610 | keep_related | planned | related | Different volatile inputs and provider scope; the rewind repair does not establish resolution. |
-| #112986 | keep_related | planned | related | A2A context is explicitly outside this repair. |
-| #116045 | route_security | planned | security_sensitive | Quarantine this item for central OpenClaw security handling without public mutation. The ordinary rewind prompt-placement repair does not depend on it. |
-| #125064 | keep_independent | planned | independent | Configuration and envelope-contract changes are outside this bug-only job. |
-| #128015 | keep_independent | planned | independent | Diagnostic grouping and sidecar identities are distinct and explicitly excluded. |
-| #140129 | keep_related | planned | related | Shared cache symptom does not prove the same root cause or coverage. |
-| #140621 | keep_closed | skipped | related | Historical carrier-lifecycle work to preserve, not a fix for sessionId remaining in system content. |
-| #148304 | keep_related | planned | related | Daily temporal context is explicitly excluded from the rewind repair. |
-| cluster:issue-openclaw-openclaw-155685 | build_fix_artifact | planned | canonical | The fix plan is actionable, but local implementation is blocked by host restrictions. Require failing-before/passing-after evidence before publishing. |
+| #155685 | fix_needed | planned | canonical | A focused non-security repair is supported. Refresh main, establish a failing production-payload regression, and check contributor/open work before creating the single implementation PR. |
+| #95610 | keep_related | planned | related | Same cache-stability family, distinct trigger and repair ownership. |
+| #112986 | keep_related | planned | related | A2A prompt composition is explicitly excluded from this repair. |
+| #116045 | route_security | planned | security_sensitive | Route this exact item to central OpenClaw security handling without public mutation. Its replay-boundary question is unnecessary for the rewind prompt repair. |
+| #125064 | keep_related | planned | related | Separate feature proposal; this bug-only job must not introduce configuration. |
+| #128015 | keep_independent | planned | independent | Diagnostics and maintenance grouping are outside the authorized prompt repair. |
+| #140129 | keep_related | planned | related | Shared symptom does not establish a duplicate or coverage by this repair. |
+| #140621 | keep_closed | skipped | related | Historical lifecycle evidence only; preserve its existing carrier-cache behavior. |
+| #148304 | keep_related | planned | related | Temporal context is explicitly excluded from this repair. |
 
 ## Needs Human
 
