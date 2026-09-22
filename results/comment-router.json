@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T08:09:16.249Z",
+  "updated_at": "2026-09-22T08:09:17.469Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153167:5745354639:2026-09-22T03:20:54Z:clawsweeper_needs_human",
-      "comment_id": "5745354639",
-      "comment_version_key": "5745354639:2026-09-22T03:20:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153167#issuecomment-5745354639",
-      "comment_created_at": "2026-09-19T21:15:28Z",
-      "comment_updated_at": "2026-09-22T03:20:54Z",
-      "comment_body_sha256": "af00f30d96b6de181f3d358a035107e105b41301de5d0417333bd654761726e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153167,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed macOS stop-to-restore flow and published-updater handoff remain unverified on this candidate; mocked recovery tests cannot establish that an installed Gateway returns to s... (sha=3f2e406d7e5282060f04ad6bec948e86e85cac06)",
-      "expected_head_sha": "3f2e406d7e5282060f04ad6bec948e86e85cac06",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T03:22:01.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/launchd-doctor-restore-contention",
-        "head_sha": "3f2e406d7e5282060f04ad6bec948e86e85cac06",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155385:5770738297:2026-09-22T03:21:21Z:clawsweeper_auto_repair",
       "comment_id": "5770738297",
@@ -33351,6 +33318,53 @@
         "kind": "pull_request",
         "branch": "fix/hot-reload-cron-retry-no-restart",
         "head_sha": "ea9dfbdbb499d6e8735d5f964776e7869bce3079",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148275:5773184368:2026-09-22T08:08:18Z:re_review",
+      "comment_id": "5773184368",
+      "comment_version_key": "5773184368:2026-09-22T08:08:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148275#issuecomment-5773184368",
+      "comment_created_at": "2026-09-22T08:08:18Z",
+      "comment_updated_at": "2026-09-22T08:08:18Z",
+      "comment_body_sha256": "240360776ba56655e3eed7912517751f964a19741bf9e7b9b6c0d69cd5b4534a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148275,
+      "author": "Navras98",
+      "author_id": 182986534,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T08:09:14.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failover-bailian-throttling-429-148236",
+        "head_sha": "06769a02e0bd3a0c40a356b865375ae268f9b51e",
         "cluster_id": null,
         "job_path": null
       },
