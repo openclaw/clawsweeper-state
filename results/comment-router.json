@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T07:57:41.662Z",
+  "updated_at": "2026-09-22T07:57:44.318Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120150:5212885651:2026-09-02T16:27:58Z:clawsweeper_needs_human",
-      "comment_id": "5212885651",
-      "comment_version_key": "5212885651:2026-09-02T16:27:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120150#issuecomment-5212885651",
-      "comment_created_at": "2026-08-07T05:40:29Z",
-      "comment_updated_at": "2026-09-02T16:27:58Z",
-      "comment_body_sha256": "eaf4b164f618cee1d6ee1a8e70e40fa72b4abf6c5fec072b652328c6f73c814b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dirty branch predates the registry-bound command flow; a mechanical conflict resolution could restore the obsolete dispatch path or reintroduce the already-fixed deferred-steer wa... (sha=6f687016092db7c2ebdd0095fcaabe6a069fb075)",
-      "expected_head_sha": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T03:12:20.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120142",
-        "head_sha": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
-        "cluster_id": "automerge-openclaw-openclaw-120150",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120150.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121195:5234012823:2026-09-22T02:50:01Z:clawsweeper_auto_repair",
       "comment_id": "5234012823",
@@ -33367,6 +33334,53 @@
       "status": "skipped",
       "processed_at": "2026-09-22T07:57:41.662Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155548:5773048458:2026-09-22T07:56:36Z:re_review",
+      "comment_id": "5773048458",
+      "comment_version_key": "5773048458:2026-09-22T07:56:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155548#issuecomment-5773048458",
+      "comment_created_at": "2026-09-22T07:56:36Z",
+      "comment_updated_at": "2026-09-22T07:56:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155548,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T07:57:42.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/headless-auth-20260922",
+        "head_sha": "3e4d7bfb3c753efe370c8d76664e940bae163761",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
