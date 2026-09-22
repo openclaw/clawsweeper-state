@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "35685851256",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35685851256",
+  "head_sha": "0ecd31af54ad8cc735ac7ed71b4b863db7bd78ab",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-22T05:22:22.929Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the remaining offloaded-image handoff gap on preflight main. A narrow fix artifact is prepared. Implementation and failing-regression proof are blocked by the read-only host and absent dependencies; assignee coordination and the open-fixing-PR recheck remain pending.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "The remaining defect is a producer-side attachment handoff gap within existing behavior. Preserve the inline repair and restore validated offloaded-image facts to the existing staging flow."
+    },
+    {
+      "target": "#86371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A narrow conditional repair plan is supported by source evidence. The executor must establish the failing regression before editing production code."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Before implementation or publication, an authorized executor must coordinate with obviyus, recheck for an existing fixing PR, reproduce the defect on refreshed main, and complete focused validation and review in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
