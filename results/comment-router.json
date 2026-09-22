@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T06:12:55.193Z",
+  "updated_at": "2026-09-22T06:12:58.159Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155264:5769100395:2026-09-22T00:02:29Z:clawsweeper_needs_human",
-      "comment_id": "5769100395",
-      "comment_version_key": "5769100395:2026-09-22T00:02:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155264#issuecomment-5769100395",
-      "comment_created_at": "2026-09-21T23:40:11Z",
-      "comment_updated_at": "2026-09-22T00:02:29Z",
-      "comment_body_sha256": "a8f13e2045328651cfe2a7c434a65013389ac146d7d991a1cde5781c3a90e034",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155264,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The corrected producer fails observation-site verification before heartbeat tests and sealing; its retained artifact must not be consumed as a qualified ARM candidate until the failed... (sha=59ab92030a0a779c0986760a0b61f8c0693e2551)",
-      "expected_head_sha": "59ab92030a0a779c0986760a0b61f8c0693e2551",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T00:04:45.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/arm-heartbeat-startup-boundaries",
-        "head_sha": "59ab92030a0a779c0986760a0b61f8c0693e2551",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155280:5769315265:2026-09-22T00:03:31Z:clawsweeper_needs_human",
       "comment_id": "5769315265",
@@ -32737,6 +32704,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117074:5771738062:2026-09-22T06:11:26Z:re_review",
+      "comment_id": "5771738062",
+      "comment_version_key": "5771738062:2026-09-22T06:11:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5771738062",
+      "comment_created_at": "2026-09-22T05:40:09Z",
+      "comment_updated_at": "2026-09-22T06:11:26Z",
+      "comment_body_sha256": "fc4d8999eb5ada3d07411d4d6571f03f4f4cf714845fecd88db04175d9c5dc8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117074,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T06:12:55.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sessions-tombstone-sweep",
+        "head_sha": "2390dc75a784cf8a614dd466a6b82eef8cd77c0c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
