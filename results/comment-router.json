@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T15:58:27.905Z",
+  "updated_at": "2026-09-22T15:58:45.975Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155639:5774667907:2026-09-22T10:08:12Z:clawsweeper_needs_human",
-      "comment_id": "5774667907",
-      "comment_version_key": "5774667907:2026-09-22T10:08:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155639#issuecomment-5774667907",
-      "comment_created_at": "2026-09-22T10:08:12Z",
-      "comment_updated_at": "2026-09-22T10:08:12Z",
-      "comment_body_sha256": "e5ae2aa43494653815a1e81dc050daeaeb915d345e910ca1a9168597ab8a3ae2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155639,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The factory and two exported types create a new supported plugin contract whose surface-budget increase is explicitly unapproved. (sha=02e1b6d1b0d440525d8ccfb49e30d52da8740bc9)",
-      "expected_head_sha": "02e1b6d1b0d440525d8ccfb49e30d52da8740bc9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T10:09:26.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-progress-delivery",
-        "head_sha": "02e1b6d1b0d440525d8ccfb49e30d52da8740bc9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155641:5774672818:2026-09-22T10:08:36Z:clawsweeper_needs_human",
       "comment_id": "5774672818",
@@ -33299,6 +33266,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154963:5779681565:2026-09-22T15:57:41Z:re_review",
+      "comment_id": "5779681565",
+      "comment_version_key": "5779681565:2026-09-22T15:57:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154963#issuecomment-5779681565",
+      "comment_created_at": "2026-09-22T15:57:41Z",
+      "comment_updated_at": "2026-09-22T15:57:41Z",
+      "comment_body_sha256": "dc51ca392a9c2b790bf37693d6866e056d782e245c67b8dde0e9062d59f7eb37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154963,
+      "author": "jerryliang122",
+      "author_id": 25032918,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — pr body updated with the real-gateway process logs (give-up row produced by the real write path, wake removed by the real cron-branch commit, restart persistence/restore), plus a status note on the one pending artifact (post-restart provider-side prompt sample; first remote host was reclaimed mid-campaign, script is ready). requesting re-review and maintainer input on whether the current evidence set is sufficient",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T15:58:42.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/154834-failed-subagent-delivery-recurring-context",
+        "head_sha": "f2e7794d1560d08c1117a7581c54b99e0d1607bb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
