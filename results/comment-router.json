@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T09:53:57.169Z",
+  "updated_at": "2026-09-22T09:53:08.241Z",
   "commands": [
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117144",
@@ -33456,37 +33456,51 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152122:5735540474:2026-09-22T09:52:57Z:clawsweeper_needs_human",
-      "comment_id": "5735540474",
-      "comment_version_key": "5735540474:2026-09-22T09:52:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152122#issuecomment-5735540474",
-      "comment_created_at": "2026-09-18T20:04:53Z",
-      "comment_updated_at": "2026-09-22T09:52:57Z",
-      "comment_body_sha256": "f847a05ce71035f6049b459c5af271df2a7b220ba347b8a923e9a5326b72080a",
+      "idempotency_key": "comment-router:openclaw/openclaw:155603:5774465623:2026-09-22T09:52:09Z:re_review",
+      "comment_id": "5774465623",
+      "comment_version_key": "5774465623:2026-09-22T09:52:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155603#issuecomment-5774465623",
+      "comment_created_at": "2026-09-22T09:52:09Z",
+      "comment_updated_at": "2026-09-22T09:52:09Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
       "repo": "openclaw/openclaw",
-      "issue_number": 152122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "issue_number": 155603,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=89249dfa597d0fc2fbcaec19d812a313dd06fe0b)",
-      "expected_head_sha": "89249dfa597d0fc2fbcaec19d812a313dd06fe0b",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T09:53:57.169Z",
+      "status": "executed",
+      "processed_at": "2026-09-22T09:53:05.910Z",
       "target": {
         "kind": "pull_request",
-        "branch": "codex/matrix-monitor-bot-readiness-20260918",
-        "head_sha": "89249dfa597d0fc2fbcaec19d812a313dd06fe0b",
+        "branch": "fix/remote-workspace-media-monotonic-081",
+        "head_sha": "35a49559cc4a3b8819b0d90dd00e11a87604cbe9",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
