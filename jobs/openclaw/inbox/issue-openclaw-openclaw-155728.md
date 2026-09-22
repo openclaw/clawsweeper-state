@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing plugin artifact capture allocation defect in this issue. First establish a failing current-main regression or isolated before measurement using a synthetic binary fixture through capturePluginGenerationArtifact; do not execute pasted contributor scripts. Replace payload-sized buffers in initial copying, already-captured alias copying, and content verification with bounded descriptor reads and incremental SHA-256 updates. Preserve the exact sourceDigest byte protocol, copied bytes, executable modes, boundary-checked opens, descriptor cleanup, directory receipts, first-capture identity, on-demand verification, and source-change rejection. Keep synchronous loader contracts intact and do not introduce configuration, public APIs, persistent caches, or weaker verification. Extend existing artifact tests with meaningful binary-copy, digest-compatibility, and changed-source cases, including short reads/writes where relevant; establish that the allocation regression fails before the fix. Record isolated before/after external-memory measurements without making portable RSS reclamation claims, and profile the affected plugin entrypoint under the scoped plugin policy. Inspect overlapping generation-reuse work before editing shared owners. Validate fresh plugin loading and existing-state update behavior without changing updater semantics. Run the listed focused checks and applicable changed-file gates; record test cost and behavior evidence in the PR body. Do not edit release-owned CHANGELOG.md. Stop and return for triage if the repair requires a new feature, configuration option, security-policy change, or product decision.
+Repair excessive whole-file allocations during plugin artifact capture. First establish a failing regression through capturePluginGenerationArtifact using a synthetic package asset; independently reproduce the reported allocation scaling in an authorized isolated environment before claiming runtime improvement. Replace full-file buffering for copy/hash and source verification with bounded descriptor reads and incremental SHA-256 updates, including the already-captured alias path. Keep the synchronous capture contract and existing boundary-checked file opening. Preserve exact sourceDigest encoding, content hashes, copied bytes, first-capture identity, executable permissions, directory receipts, mutation detection, failed-capture behavior, and disposal. Do not skip native assets, remove verification, introduce configuration or plugin APIs, change dependencies, alter stored formats, or modify CHANGELOG.md. Extend existing artifact coverage with a cheap allocation-bound regression that fails before the fix, plus relevant short-read/write and content-integrity cases without giant per-PR fixtures or timing assertions. Run focused artifact and native sibling tests, applicable changed-file checks, and the scoped plugin startup profile where relevant. Record measured test cost, before/after memory evidence, fresh capture and existing-install compatibility in the PR body. Stop and return to triage if a public contract or product-policy change becomes necessary.
 
 Likely files:
 
 - src/plugins/plugin-generation-artifact.ts
 - src/plugins/plugin-package-metadata-capture.ts
 - src/plugins/plugin-generation-artifact.test.ts
-- src/plugins/plugin-generation-artifact.ownership.test.ts
 
 Validation:
 
-- pnpm test src/plugins/plugin-generation-artifact.test.ts src/plugins/plugin-generation-artifact.ownership.test.ts src/plugins/plugin-package-metadata-capture.test.ts --maxWorkers=1
-- pnpm build
-- OPENCLAW_LOCAL_CHECK=0 node --import tsx scripts/profile-extension-memory.mts --extension codex --skip-combined --concurrency 1
+- pnpm test src/plugins/plugin-generation-artifact.test.ts src/plugins/plugin-generation-artifact.ownership.test.ts src/plugins/plugin-module-generation.sibling-assets.test.ts --maxWorkers=1
+- pnpm test src/plugins/plugin-module-generation.interop.test.ts --maxWorkers=1
+- pnpm changed:lanes --json
 - git diff --check
 
 ## Operator Prompt
