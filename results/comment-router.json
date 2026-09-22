@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T10:06:16.840Z",
+  "updated_at": "2026-09-22T10:06:18.238Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawscan:55:5771770835:2026-09-22T05:44:29Z:re_review",
-      "comment_id": "5771770835",
-      "comment_version_key": "5771770835:2026-09-22T05:44:29Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/55#issuecomment-5771770835",
-      "comment_created_at": "2026-09-22T05:44:29Z",
-      "comment_updated_at": "2026-09-22T05:44:29Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawscan",
-      "issue_number": 55,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T05:45:40.488Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/endor-local-scanner",
-        "head_sha": "41d779ab8da2a78669a162285279c675de8b34f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155335:5771776696:2026-09-22T05:45:15Z:re_review",
       "comment_id": "5771776696",
@@ -33627,6 +33580,39 @@
         "kind": "pull_request",
         "branch": "maintenance/sweep-3-release",
         "head_sha": "148530652729adec765179bcab0626cd0919d1dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:211:5774624832:2026-09-22T10:05:13Z:clawsweeper_needs_human",
+      "comment_id": "5774624832",
+      "comment_version_key": "5774624832:2026-09-22T10:05:13Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/211#issuecomment-5774624832",
+      "comment_created_at": "2026-09-22T10:05:13Z",
+      "comment_updated_at": "2026-09-22T10:05:13Z",
+      "comment_body_sha256": "1f0a9dbad3b05891e7eb27bce0bb7df4b755bc0a724619d15d63c4ba0a412f85",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 211,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the body reports remote Linux CLI smoke, but provides no commands or observed results connecti... (sha=820fb461de595bbd67d1f3462ae9ab9a602654e1)",
+      "expected_head_sha": "820fb461de595bbd67d1f3462ae9ab9a602654e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T10:06:18.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maintenance/sweep-3-cli",
+        "head_sha": "820fb461de595bbd67d1f3462ae9ab9a602654e1",
         "cluster_id": null,
         "job_path": null
       }
