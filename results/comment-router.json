@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:24:25.698Z",
+  "updated_at": "2026-09-23T12:24:26.949Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156240:5789970043:2026-09-23T06:22:23Z:clawsweeper_needs_human",
-      "comment_id": "5789970043",
-      "comment_version_key": "5789970043:2026-09-23T06:22:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156240#issuecomment-5789970043",
-      "comment_created_at": "2026-09-23T06:07:56Z",
-      "comment_updated_at": "2026-09-23T06:22:23Z",
-      "comment_body_sha256": "e5cc062f98112e8c7907d25c8c1f16c35a682192f0f51051d7f54c2680b403c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Replay and archival now interpret existing migration receipts differently, but published-driver-to-candidate evidence has not established preservation of newer session state and reten... (sha=64fa30d55330bb7400755b5b793e278ea11c25aa)",
-      "expected_head_sha": "64fa30d55330bb7400755b5b793e278ea11c25aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T07:06:47.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "proof-doctor-restored-owner-20260923",
-        "head_sha": "64fa30d55330bb7400755b5b793e278ea11c25aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156256:5790017144:2026-09-23T06:50:27Z:clawsweeper_needs_human",
       "comment_id": "5790017144",
@@ -33445,6 +33412,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156343:5794733204:2026-09-23T12:23:23Z:stop",
+      "comment_id": "5794733204",
+      "comment_version_key": "5794733204:2026-09-23T12:23:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156343#issuecomment-5794733204",
+      "comment_created_at": "2026-09-23T12:23:23Z",
+      "comment_updated_at": "2026-09-23T12:23:23Z",
+      "comment_body_sha256": "9e781fb34e7a14630b8c14db67e422d31ff2cc1cbccd4610d042d7d638f8333f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156343,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "stop",
+      "intent": "stop",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T12:24:26.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/diagnostics-harness-commentary-20260923",
+        "head_sha": "aee0a1d970544b09a30be764b036744df2ce4716",
+        "cluster_id": "automerge-openclaw-openclaw-156343",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156343.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
