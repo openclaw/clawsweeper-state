@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T20:55:04.752Z",
+  "updated_at": "2026-09-23T20:55:41.528Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149882:5794968379:2026-09-23T12:39:22Z:re_review",
-      "comment_id": "5794968379",
-      "comment_version_key": "5794968379:2026-09-23T12:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149882#issuecomment-5794968379",
-      "comment_created_at": "2026-09-23T12:39:22Z",
-      "comment_updated_at": "2026-09-23T12:39:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149882,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T12:40:26.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/freebsd-foreground-update",
-        "head_sha": "4ead56d97168b701f315bdf50e322a1f88d6a28e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2515:5792508821:2026-09-23T12:40:03Z:clawsweeper_needs_human",
       "comment_id": "5792508821",
@@ -33679,6 +33632,39 @@
         "kind": "pull_request",
         "branch": "fix/config-meta-restore-126806",
         "head_sha": "70b177d562223d9f3521795937e3f032723b4586",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156742:5802256175:2026-09-23T20:54:29Z:clawsweeper_needs_human",
+      "comment_id": "5802256175",
+      "comment_version_key": "5802256175:2026-09-23T20:54:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156742#issuecomment-5802256175",
+      "comment_created_at": "2026-09-23T20:18:22Z",
+      "comment_updated_at": "2026-09-23T20:54:29Z",
+      "comment_body_sha256": "bff3b4ec00ea8b7c70fca588f5d442557c8a10a6355562a9cd3fccae50aaa9ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Browser CLI request, tool-result, storage-route, and relay paths have build and test evidence in the captured PR body, but the stat... (sha=b9ddcbc7313871ee924ab21216bb41d92a42b5d3)",
+      "expected_head_sha": "b9ddcbc7313871ee924ab21216bb41d92a42b5d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T20:55:41.528Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l18-browser-owners-0923",
+        "head_sha": "b9ddcbc7313871ee924ab21216bb41d92a42b5d3",
         "cluster_id": null,
         "job_path": null
       }
