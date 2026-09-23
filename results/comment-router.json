@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-23T04:56:26.982Z",
+  "updated_at": "2026-09-23T04:54:29.195Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128848:5400979087:2026-09-22T22:57:57Z:clawsweeper_auto_repair",
+      "comment_id": "5400979087",
+      "comment_version_key": "5400979087:2026-09-22T22:57:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128848#issuecomment-5400979087",
+      "comment_created_at": "2026-08-24T20:33:01Z",
+      "comment_updated_at": "2026-09-22T22:57:57Z",
+      "comment_body_sha256": "45e54f63f56ff89be34604aaedef527c5dff10d68e9671899def46d3d90fd46c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6d6db6d50e6d1e77507f7eca7e7e575e322fbdcd)",
+      "expected_head_sha": "6d6db6d50e6d1e77507f7eca7e7e575e322fbdcd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T23:07:13.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-responses-continuation-idle-ttl",
+        "head_sha": "6d6db6d50e6d1e77507f7eca7e7e575e322fbdcd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132103:5457800153:2026-09-22T22:15:31Z:clawsweeper_needs_human",
       "comment_id": "5457800153",
@@ -33446,53 +33479,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156151:5789254409:2026-09-23T04:51:28Z:re_review",
-      "comment_id": "5789254409",
-      "comment_version_key": "5789254409:2026-09-23T04:51:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156151#issuecomment-5789254409",
-      "comment_created_at": "2026-09-23T04:51:28Z",
-      "comment_updated_at": "2026-09-23T04:51:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156151,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T04:56:21.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-readonly-shell-pipelines",
-        "head_sha": "20b0f1cf56628bf733ab2e948758b0ed99bc86bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
