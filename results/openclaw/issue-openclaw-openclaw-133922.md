@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133922"
 mode: "autonomous"
-run_id: "35823799083"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35823799083"
-head_sha: "bc921e100e1368533259da71693e0c58f150b1f6"
+run_id: "35829641100"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35829641100"
+head_sha: "533447b122055e6a783b605586b9e2cd11d8d0e0"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T06:41:51.622Z"
+published_at: "2026-09-23T08:47:59.059Z"
 canonical: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35823799083](https://github.com/openclaw/clawsweeper/actions/runs/35823799083)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35829641100](https://github.com/openclaw/clawsweeper/actions/runs/35829641100)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/133922
 
 ## Summary
 
-Source inspection supports a narrow native Ollama classification and delivery-deferral repair. Implementation is blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No runtime reproduction, patch, PR, or Telegram proof was completed.
+Source inspection confirms the native Ollama classification and early-block deferral gaps at preflight main. A narrow fix artifact is prepared, but implementation is blocked by the read-only host and missing dependencies. No runtime regression, Telegram proof, code changes, or GitHub mutations were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,11 @@ Source inspection supports a narrow native Ollama classification and delivery-de
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133922 | fix_needed | planned | canonical | Keep the issue open and pursue the bounded repair only after reproducing through the registered native stream and shared subscriber on refreshed main. |
-| #109057 | keep_closed | skipped | related | Preserve the merged contributor work as related implementation context. |
+| #133922 | fix_needed | planned | canonical | The bounded source-level defect remains present, with no open fix PR in the supplied inventory. Runtime reproduction is still required; the reporter's exact August upgrade configuration is unverified. |
+| #109057 | keep_closed | skipped | related | Retain as historical commentary-contract and contributor-credit context. |
 | #13944 | keep_closed | skipped | related | Historical symptom context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation and publication require a writable, dependency-ready executor, reconciled main, and a failing boundary regression first. |
+| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Preparation can proceed without claiming implementation or runtime proof. |
+| cluster:issue-openclaw-openclaw-133922 | open_fix_pr | blocked |  | Implementation and publication are blocked until a writable executor establishes the failing regression, completes the narrow repair, and obtains required validation. Only the deterministic applicator may publish. |
 
 ## Needs Human
 
