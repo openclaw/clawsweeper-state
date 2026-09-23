@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
 mode: "autonomous"
-run_id: "35916465016"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35916465016"
-head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
+run_id: "35919885394"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35919885394"
+head_sha: "c0680bf79ab759f5fbb64dc983e52f5329e36857"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T20:59:56.539Z"
+published_at: "2026-09-23T21:39:02.147Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35916465016](https://github.com/openclaw/clawsweeper/actions/runs/35916465016)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35919885394](https://github.com/openclaw/clawsweeper/actions/runs/35919885394)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128301
 
 ## Summary
 
-The Slack diagnostic gap is present in the local source. Implementation is blocked: this read-only checkout lacks the preflight main commit and dependencies, so the required real-context failing regression, patch, and validation could not be completed. No GitHub mutation or PR occurred.
+The Slack listener still has the reported diagnostic gap: a failed conversations.info lookup returns empty metadata, and the unresolved app_mention exits before INFO logging. The checkout is read-only, so the required failing regression, patch, and validation could not be completed. No PR is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ The Slack diagnostic gap is present in the local source. Implementation is block
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #94691 | keep_closed | skipped | related | Related observability context, not a closure target. |
-| #102811 | keep_closed | skipped | related | Historical context only. |
-| #112259 | keep_related | planned | related | Different root cause and remaining reproduction work. |
-| #115528 | keep_closed | skipped | related | Historical context only. |
-| #128301 | fix_needed | planned | canonical | A narrow diagnostic repair is warranted; paired-message delivery loss is not established. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Resume implementation on a writable checkout containing the preflight main commit and installed dependencies; establish the required failing regression before editing production code. |
+| #128301 | fix_needed | planned | canonical | A narrow diagnostic repair is warranted, pending a failing regression through the registered listener and real monitor context. |
+| #112259 | keep_related | planned | related | It has a separate unresolved reproduction and remains open. |
+| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | planned |  | The executor must refresh the base, establish the failing real-context regression, then implement and validate the diagnostic. |
+| cluster:issue-openclaw-openclaw-128301 | open_fix_pr | blocked |  | A PR requires a failing regression, a validated patch, and base reconciliation first. |
 
 ## Needs Human
 
