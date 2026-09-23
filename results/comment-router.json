@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T01:12:53.249Z",
+  "updated_at": "2026-09-23T01:13:57.430Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147584:5657453081:2026-09-22T18:29:15Z:clawsweeper_needs_human",
-      "comment_id": "5657453081",
-      "comment_version_key": "5657453081:2026-09-22T18:29:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147584#issuecomment-5657453081",
-      "comment_created_at": "2026-09-14T00:38:26Z",
-      "comment_updated_at": "2026-09-22T18:29:15Z",
-      "comment_body_sha256": "65e0b8b96be24b06f5c333219380c775fddd2974c5fca0ba489a2af53250a711",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147584,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Windows Job acquisition now precedes even the released-worker ready response. An acquisition failure could replace the expected deferral with worker startup failure; published-driver... (sha=d737eebd10bc568350be654597434e68bacf0516)",
-      "expected_head_sha": "d737eebd10bc568350be654597434e68bacf0516",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T18:40:23.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-repair-turn-worker",
-        "head_sha": "d737eebd10bc568350be654597434e68bacf0516",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143327:5781950044:2026-09-22T18:39:34Z:re_review",
       "comment_id": "5781950044",
@@ -33189,6 +33156,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140180:5787255760:2026-09-23T01:12:53Z:re_review",
+      "comment_id": "5787255760",
+      "comment_version_key": "5787255760:2026-09-23T01:12:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140180#issuecomment-5787255760",
+      "comment_created_at": "2026-09-23T01:12:53Z",
+      "comment_updated_at": "2026-09-23T01:12:53Z",
+      "comment_body_sha256": "e26b53215b3c78bb12983ec8e4d6cecfa3f7989e3a053277b7ede454f93a58e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140180,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T01:13:53.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cmd-quote-trailing-backslash",
+        "head_sha": "1e6d77f6b3925f37a03bebdea92053d4d6593a72",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
