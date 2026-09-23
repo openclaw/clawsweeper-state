@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-111595"
-mode: "autonomous"
-run_id: "35912708454"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35912708454"
-head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T20:43:07.113Z"
-canonical: "https://github.com/openclaw/openclaw/issues/111595"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/111595"
+mode: "plan"
+run_id: "35920246495"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35920246495"
+head_sha: "c0680bf79ab759f5fbb64dc983e52f5329e36857"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T21:10:06.179Z"
+canonical: "#111595"
+canonical_issue: "#111595"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35912708454](https://github.com/openclaw/clawsweeper/actions/runs/35912708454)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35920246495](https://github.com/openclaw/clawsweeper/actions/runs/35920246495)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/111595
+Canonical: #111595
 
 ## Summary
 
-The defect reproduces in the catalog grouping function at preflight main SHA 3a5709f50fe9d465bb5d883d31901c5848f50f99. This worker could not add the required failing regression or patch: the checkout is read-only, dependencies are absent, and GitHub DNS is unavailable. A scoped fix plan is ready for an executor with a writable checkout.
+At the preflight main SHA, catalog grouping still uses the folded cwd spelling as its Map key, so the Windows path-equivalence defect remains in source. Plan a narrow fix and a failing regression before implementation. No code, tests, or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The defect reproduces in the catalog grouping function at preflight main SHA 3a5
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #111595 | fix_needed | planned | canonical | Existing Windows catalog grouping behavior remains broken; a narrow UI repair is needed. |
-| #111596 | keep_closed | skipped |  | Historical source work; no action on an already-closed PR. |
-| #137115 | keep_related | planned | related | Keep the distinct projectless-session report open. |
-| #144427 | keep_closed | skipped |  | Historical context outside this narrow Windows path-equivalence fix. |
-| cluster:issue-openclaw-openclaw-111595 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout with dependencies and GitHub access; recheck active PR ownership and coordinate with @vincentkoc before publication. |
+| #111595 | fix_needed | planned | canonical | Add a regression that fails on this main SHA, then repair the existing grouping and preference owners. Recheck active PR ownership and coordinate with the reported assignee before opening the fix PR. |
+| #111596 | keep_closed | skipped | related | Use the prior work as implementation evidence and credit @ooiuuii in the new PR. It is already closed. |
+| #137115 | keep_related | planned | related | Windows spelling equivalence does not resolve projectless-directory classification; keep that issue open for its own decision. |
+| #144427 | keep_closed | skipped | related | Its broader changes are outside this bug-only repair; it is already closed. |
 
 ## Needs Human
 

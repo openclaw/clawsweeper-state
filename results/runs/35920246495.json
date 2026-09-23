@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111595",
+  "mode": "plan",
+  "run_id": "35920246495",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35920246495",
+  "head_sha": "c0680bf79ab759f5fbb64dc983e52f5329e36857",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111595.md",
+  "published_at": "2026-09-23T21:10:06.179Z",
+  "canonical": "#111595",
+  "canonical_issue": "#111595",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, catalog grouping still uses the folded cwd spelling as its Map key, so the Windows path-equivalence defect remains in source. Plan a narrow fix and a failing regression before implementation. No code, tests, or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#111595",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Add a regression that fails on this main SHA, then repair the existing grouping and preference owners. Recheck active PR ownership and coordinate with the reported assignee before opening the fix PR."
+    },
+    {
+      "target": "#111596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Use the prior work as implementation evidence and credit @ooiuuii in the new PR. It is already closed."
+    },
+    {
+      "target": "#137115",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Windows spelling equivalence does not resolve projectless-directory classification; keep that issue open for its own decision."
+    },
+    {
+      "target": "#144427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Its broader changes are outside this bug-only repair; it is already closed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
