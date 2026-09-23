@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T11:24:04.542Z",
+  "updated_at": "2026-09-23T11:24:37.964Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:141:5790017931:2026-09-23T06:12:58Z:clawsweeper_needs_human",
-      "comment_id": "5790017931",
-      "comment_version_key": "5790017931:2026-09-23T06:12:58Z",
-      "comment_url": "https://github.com/openclaw/crawlkit/pull/141#issuecomment-5790017931",
-      "comment_created_at": "2026-09-23T06:12:58Z",
-      "comment_updated_at": "2026-09-23T06:12:58Z",
-      "comment_body_sha256": "77c3fff8927c5b5737653cd5611ef769ae68ec132d1c6f026ec26a958454672c",
-      "repo": "openclaw/crawlkit",
-      "issue_number": 141,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=12dc19a89908b229c3609505d947aa96a1d3181f)",
-      "expected_head_sha": "12dc19a89908b229c3609505d947aa96a1d3181f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T06:13:56.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/0.16.5-sweep3",
-        "head_sha": "12dc19a89908b229c3609505d947aa96a1d3181f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156136:5788474408:2026-09-23T06:12:59Z:clawsweeper_needs_human",
       "comment_id": "5788474408",
@@ -33604,6 +33571,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156343:5793937873:2026-09-23T11:23:33Z:automerge",
+      "comment_id": "5793937873",
+      "comment_version_key": "5793937873:2026-09-23T11:23:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156343#issuecomment-5793937873",
+      "comment_created_at": "2026-09-23T11:23:33Z",
+      "comment_updated_at": "2026-09-23T11:23:33Z",
+      "comment_body_sha256": "43cd20a0e74b0c7108ea6a676aee2352bbafe57d47b83b9237bfc8ef25025847",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156343,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T11:24:25.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/diagnostics-harness-commentary-20260923",
+        "head_sha": "aee0a1d970544b09a30be764b036744df2ce4716",
+        "cluster_id": "automerge-openclaw-openclaw-156343",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156343.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
