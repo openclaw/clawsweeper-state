@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
 mode: "autonomous"
-run_id: "35916465016"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35916465016"
+run_id: "35911299794"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35911299794"
 head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T20:59:56.539Z"
+published_at: "2026-09-23T20:43:56.650Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35916465016](https://github.com/openclaw/clawsweeper/actions/runs/35916465016)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35911299794](https://github.com/openclaw/clawsweeper/actions/runs/35911299794)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128301
 
 ## Summary
 
-The Slack diagnostic gap is present in the local source. Implementation is blocked: this read-only checkout lacks the preflight main commit and dependencies, so the required real-context failing regression, patch, and validation could not be completed. No GitHub mutation or PR occurred.
+The diagnostic gap remains on main at 3753440207a2752fa3d7c1efd881f5e3990fe110. The listener skips an unresolved app mention without an INFO record, while the context lookup catches the Slack API failure and returns empty metadata. Implementation and runtime validation are blocked because this worker’s filesystem is read-only and dependencies are absent. No code, branch, PR, or GitHub item was changed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ The Slack diagnostic gap is present in the local source. Implementation is block
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #94691 | keep_closed | skipped | related | Related observability context, not a closure target. |
+| #128301 | fix_needed | planned | canonical | A narrow, non-security diagnostic repair is needed; delivery policy must stay unchanged. |
+| #112259 | keep_related | planned | related | Keep the separate message-loss investigation open. |
+| #94691 | keep_closed | skipped | related | Historical context only. |
 | #102811 | keep_closed | skipped | related | Historical context only. |
-| #112259 | keep_related | planned | related | Different root cause and remaining reproduction work. |
 | #115528 | keep_closed | skipped | related | Historical context only. |
-| #128301 | fix_needed | planned | canonical | A narrow diagnostic repair is warranted; paired-message delivery loss is not established. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Resume implementation on a writable checkout containing the preflight main commit and installed dependencies; establish the required failing regression before editing production code. |
+| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies. The classification and fix plan remain valid. |
 
 ## Needs Human
 
