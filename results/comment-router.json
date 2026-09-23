@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T01:14:58.137Z",
+  "updated_at": "2026-09-23T01:16:39.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143327:5781950044:2026-09-22T18:39:34Z:re_review",
-      "comment_id": "5781950044",
-      "comment_version_key": "5781950044:2026-09-22T18:39:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5781950044",
-      "comment_created_at": "2026-09-22T18:39:34Z",
-      "comment_updated_at": "2026-09-22T18:39:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143327,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T18:40:33.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
-        "head_sha": "c814ddd5412dc0b59d365eebee88238016197b78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155775:5781958748:2026-09-22T18:40:12Z:re_review",
       "comment_id": "5781958748",
@@ -33200,6 +33153,39 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:733:5779466346:2026-09-23T01:15:43Z:clawsweeper_needs_human",
+      "comment_id": "5779466346",
+      "comment_version_key": "5779466346:2026-09-23T01:15:43Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/733#issuecomment-5779466346",
+      "comment_created_at": "2026-09-22T15:42:53Z",
+      "comment_updated_at": "2026-09-23T01:15:43Z",
+      "comment_body_sha256": "4be5a19755b228f833342e8775ed2dbf73fa27f773923a03e66aee4681fc0bcf",
+      "repo": "openclaw/acpx",
+      "issue_number": 733,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Combined Windows compatibility remains unqualified, including x64 native-required operation. The retained concurrent-rotation corruption failure has no established cause, so existing... (sha=2f13b5a5ba7da365452276392146685c7f9ace44)",
+      "expected_head_sha": "2f13b5a5ba7da365452276392146685c7f9ace44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T01:16:39.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acpx-fs-safe-0181-20260922",
+        "head_sha": "2f13b5a5ba7da365452276392146685c7f9ace44",
         "cluster_id": null,
         "job_path": null
       }
