@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-79469"
 mode: "plan"
-run_id: "35900032565"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35900032565"
-head_sha: "314ce089c82eb32be082c35de6dd2d02c2d44fb8"
+run_id: "35904928385"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35904928385"
+head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-23T18:49:11.830Z"
-canonical: "https://github.com/openclaw/openclaw/issues/79469"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/79469"
+published_at: "2026-09-23T18:52:54.212Z"
+canonical: "#79469"
+canonical_issue: "#79469"
 canonical_pr: null
 actions_total: 8
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35900032565](https://github.com/openclaw/clawsweeper/actions/runs/35900032565)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35904928385](https://github.com/openclaw/clawsweeper/actions/runs/35904928385)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/79469
+Canonical: #79469
 
 ## Summary
 
-At main a0bf24c, the Gateway session row exposes only the stored reasoning override, and the Control UI requires that override to equal "on" before showing saved reasoning. This matches the open issue’s inherited-default failure. A runtime regression, red/green validation, and real Gateway browser evidence are required before opening the fix PR. No files or GitHub state were changed.
+At the preflight main SHA, the source path still hides completed reasoning when an authorized session inherits reasoningDefault="on" without a stored override. Plan a focused fix on clawsweeper/issue-openclaw-openclaw-79469. No code was changed or tests run in plan mode; the failing regression, validation, and browser proof remain execution steps.
 
 ## Impact
 
@@ -66,14 +66,14 @@ At main a0bf24c, the Gateway session row exposes only the stored reasoning overr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/79469 | build_fix_artifact | planned | canonical | Keep the issue as the canonical bug and prepare one narrow implementation path. |
-| https://github.com/openclaw/openclaw/issues/88079 | keep_related | planned | related | The live-streaming failure has a different root cause and remains open. |
-| https://github.com/openclaw/openclaw/pull/117365 | keep_related | planned | related | Preserve the contributor’s separate presentation work; it cannot fix the inherited-default gate. |
-| https://github.com/openclaw/openclaw/pull/150148 | keep_related | planned | related | Keep the live-streaming repair on its own path. |
-| https://github.com/openclaw/openclaw/issues/79456 | keep_closed | skipped | independent | Historical context only. |
-| https://github.com/openclaw/openclaw/pull/105904 | keep_closed | skipped | related | Historical UI context only. |
-| https://github.com/openclaw/openclaw/pull/137170 | keep_closed | skipped | related | Consult the predecessor’s findings without treating its unmerged patch as a completed fix. |
-| https://github.com/openclaw/openclaw/issues/153605 | keep_closed | skipped | duplicate | The closed report corroborates the same failure and needs no further action. |
+| #79469 | fix_needed | planned | canonical | The issue remains open and the prior repair PR closed without merging. |
+| #88079 | keep_related | planned | related | Live streaming is separate from visibility of saved reasoning after completion. |
+| #117365 | keep_related | planned | related | Per-block disclosure is distinct useful work and does not project inherited reasoning settings. |
+| #150148 | keep_related | planned | related | The live-stream repair has a different scope and cannot be merged through this job. |
+| #79456 | keep_closed | skipped | independent | Historical, unrelated context. |
+| #105904 | keep_closed | skipped | related | Historical context for the existing View preference. |
+| #137170 | keep_closed | skipped | related | Useful prior work informs the new fix and contributor credit, but is not an open candidate. |
+| #153605 | keep_closed | skipped | duplicate | Already-closed duplicate; no closure action is valid. |
 
 ## Needs Human
 
