@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133922"
-mode: "autonomous"
-run_id: "35807349049"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35807349049"
+mode: "plan"
+run_id: "35811325973"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35811325973"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T02:36:29.088Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133922"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133922"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T02:47:16.690Z"
+canonical: "#133922"
+canonical_issue: "#133922"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35807349049](https://github.com/openclaw/clawsweeper/actions/runs/35807349049)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35811325973](https://github.com/openclaw/clawsweeper/actions/runs/35811325973)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/133922
+Canonical: #133922
 
 ## Summary
 
-Source inspection supports a narrow native Ollama classification and delivery fix. Implementation is blocked on this read-only host with dependencies absent. No runtime regression, Telegram proof, code changes, or GitHub mutations were performed.
+Plan a narrow native Ollama commentary repair. The clean checkout matches preflight main d88a97ad7487d6ab0e1002159cfcd0950503936e. Source inspection supports the reported classification and early-delivery gaps; runtime reproduction, implementation, tests, and Telegram proof remain pending. No mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection supports a narrow native Ollama classification and delivery fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133922 | fix_needed | planned | canonical | Preserve this issue as the canonical bug report. Establish the registered-stream/subscriber regression before changing production behavior. |
-| #109057 | keep_closed | skipped | related | Historical provider repair; retain contributor credit and reuse its established commentary contract. |
-| #13944 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation must run on a writable executor and stop if the required failing regression cannot be established. |
+| #133922 | fix_needed | planned | canonical | Preserve the issue as the canonical repair target. Establish the required regression before changing production code; do not claim reproduction of the reporter's exact August upgrade configuration. |
+| #109057 | keep_closed | skipped | related | Historical implementation context and contributor credit source; its passing checks do not validate a future native Ollama repair. |
+| #13944 | keep_closed | skipped | related | Retain as historical symptom context without assuming an identical root cause. |
 
 ## Needs Human
 
