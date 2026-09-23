@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "autonomous",
+  "run_id": "35924080319",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35924080319",
+  "head_sha": "6500b62dfd4c4efb0e2b821c1e9c427e128febef",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-23T22:28:20.453Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_pr": null,
+  "summary": "Current main still skips unresolved Slack app mentions without an INFO diagnostic. The worker checkout is read-only and has no installed dependencies, so no regression test, patch, validation, or PR was produced. A narrow fix artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The diagnostic gap is source-reproducible, but this read-only worker cannot create the required failing regression or patch."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It shares a silent-loss symptom but has a different remaining investigation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "A writable checkout is required to add a failing listener regression, implement the diagnostic, validate it, and prepare the PR branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

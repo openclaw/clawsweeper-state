@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
 mode: "autonomous"
-run_id: "35919885394"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35919885394"
-head_sha: "c0680bf79ab759f5fbb64dc983e52f5329e36857"
+run_id: "35924080319"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35924080319"
+head_sha: "6500b62dfd4c4efb0e2b821c1e9c427e128febef"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T21:39:02.147Z"
+published_at: "2026-09-23T22:28:20.453Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35919885394](https://github.com/openclaw/clawsweeper/actions/runs/35919885394)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35924080319](https://github.com/openclaw/clawsweeper/actions/runs/35924080319)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128301
 
 ## Summary
 
-The Slack listener still has the reported diagnostic gap: a failed conversations.info lookup returns empty metadata, and the unresolved app_mention exits before INFO logging. The checkout is read-only, so the required failing regression, patch, and validation could not be completed. No PR is ready.
+Current main still skips unresolved Slack app mentions without an INFO diagnostic. The worker checkout is read-only and has no installed dependencies, so no regression test, patch, validation, or PR was produced. A narrow fix artifact is ready for a writable executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The Slack listener still has the reported diagnostic gap: a failed conversations
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | planned | canonical | A narrow diagnostic repair is warranted, pending a failing regression through the registered listener and real monitor context. |
-| #112259 | keep_related | planned | related | It has a separate unresolved reproduction and remains open. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | planned |  | The executor must refresh the base, establish the failing real-context regression, then implement and validate the diagnostic. |
-| cluster:issue-openclaw-openclaw-128301 | open_fix_pr | blocked |  | A PR requires a failing regression, a validated patch, and base reconciliation first. |
+| #128301 | fix_needed | planned | canonical | The diagnostic gap is source-reproducible, but this read-only worker cannot create the required failing regression or patch. |
+| #112259 | keep_related | planned | related | It shares a silent-loss symptom but has a different remaining investigation. |
+| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | A writable checkout is required to add a failing listener regression, implement the diagnostic, validate it, and prepare the PR branch. |
 
 ## Needs Human
 
