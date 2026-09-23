@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T11:20:29.868Z",
+  "updated_at": "2026-09-23T11:20:33.951Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156206:5789964266:2026-09-23T06:07:19Z:re_review",
-      "comment_id": "5789964266",
-      "comment_version_key": "5789964266:2026-09-23T06:07:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156206#issuecomment-5789964266",
-      "comment_created_at": "2026-09-23T06:07:19Z",
-      "comment_updated_at": "2026-09-23T06:07:19Z",
-      "comment_body_sha256": "a2e200af1ad5224cb5883da7c85b32ef63ad528f2295638772bd2da56ebf1a85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156206,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T06:08:17.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/activity-mode-rendering",
-        "head_sha": "92bc53e874d6f2ae183bb0c3aca9134849c86472",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:169:5754948304:2026-09-23T06:07:26Z:clawsweeper_needs_human",
       "comment_id": "5754948304",
@@ -33618,6 +33571,39 @@
       "status": "skipped",
       "processed_at": "2026-09-23T11:20:29.868Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154923:5763360998:2026-09-23T11:19:00Z:clawsweeper_needs_human",
+      "comment_id": "5763360998",
+      "comment_version_key": "5763360998:2026-09-23T11:19:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154923#issuecomment-5763360998",
+      "comment_created_at": "2026-09-21T15:51:09Z",
+      "comment_updated_at": "2026-09-23T11:19:00Z",
+      "comment_body_sha256": "bcb90465fffef4df8804658edc59bcd26ae74cb79e97eed3efa69027a2edd7b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: built embedded-runtime turns demonstrate production finalization writing the marker, but the s... (sha=c596cb2f8d96ef211c110dd663505c8780f8c9f9)",
+      "expected_head_sha": "c596cb2f8d96ef211c110dd663505c8780f8c9f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T11:20:33.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/continuation-skip-bootstrap-marker",
+        "head_sha": "c596cb2f8d96ef211c110dd663505c8780f8c9f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
