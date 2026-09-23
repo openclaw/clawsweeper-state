@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T15:12:52.045Z",
+  "updated_at": "2026-09-23T15:13:48.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5791572517:2026-09-23T08:27:05Z:re_review",
-      "comment_id": "5791572517",
-      "comment_version_key": "5791572517:2026-09-23T08:27:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5791572517",
-      "comment_created_at": "2026-09-23T08:27:05Z",
-      "comment_updated_at": "2026-09-23T08:27:05Z",
-      "comment_body_sha256": "5259cabc94cb08874646821959e0efb88efdf2f845437da9711fe1a604d6b302",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (52aa1a7b1 → 3e49f76b7, 0 behind, 168 ahead). focused skill-selection tests green (12/12); tsgo:core fails only in upstream-owned src/secrets/configure.ts (untouched by this pr)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T08:36:05.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "3e49f76b779ed7a2520aa9bca22bef39bcc07781",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125913:5791628214:2026-09-23T08:31:40Z:re_review",
       "comment_id": "5791628214",
@@ -33272,6 +33225,39 @@
       "status": "skipped",
       "processed_at": "2026-09-23T15:12:52.045Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156591:5797423166:2026-09-23T15:12:54Z:clawsweeper_needs_human",
+      "comment_id": "5797423166",
+      "comment_version_key": "5797423166:2026-09-23T15:12:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156591#issuecomment-5797423166",
+      "comment_created_at": "2026-09-23T15:12:54Z",
+      "comment_updated_at": "2026-09-23T15:12:54Z",
+      "comment_body_sha256": "4d19dd3a99f12fdc60db27268919ca466d662314b8ce05e1438fa11b56936a6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156591,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5e11f51c979a9e855b8e4766b42c5f4771dc7515)",
+      "expected_head_sha": "5e11f51c979a9e855b8e4766b42c5f4771dc7515",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T15:13:48.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/flake-reclamation-responsiveness",
+        "head_sha": "5e11f51c979a9e855b8e4766b42c5f4771dc7515",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
