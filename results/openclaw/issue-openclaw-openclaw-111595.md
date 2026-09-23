@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-111595"
-mode: "plan"
-run_id: "35911049896"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35911049896"
+mode: "autonomous"
+run_id: "35912708454"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35912708454"
 head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-23T19:48:54.948Z"
-canonical: "#111595"
-canonical_issue: "#111595"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-23T20:43:07.113Z"
+canonical: "https://github.com/openclaw/openclaw/issues/111595"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/111595"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35911049896](https://github.com/openclaw/clawsweeper/actions/runs/35911049896)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35912708454](https://github.com/openclaw/clawsweeper/actions/runs/35912708454)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #111595
+Canonical: https://github.com/openclaw/openclaw/issues/111595
 
 ## Summary
 
-At the preflight main SHA, catalog grouping still uses the folded cwd spelling as its key. Plan a narrow Windows identity fix, preserve the prior contributor’s credit, and validate the preference lifecycle before opening one fix PR. No code or GitHub mutation was performed.
+The defect reproduces in the catalog grouping function at preflight main SHA 3a5709f50fe9d465bb5d883d31901c5848f50f99. This worker could not add the required failing regression or patch: the checkout is read-only, dependencies are absent, and GitHub DNS is unavailable. A scoped fix plan is ready for an executor with a writable checkout.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ At the preflight main SHA, catalog grouping still uses the folded cwd spelling a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #111595 | fix_needed | planned | canonical | The reported bug remains in the current grouping path; no open candidate PR is hydrated. |
-| #111596 | keep_closed | skipped | related | Use this contributor work as implementation and credit context; no closure action is valid. |
-| #137115 | keep_related | planned | related | The Windows spelling fix does not decide whether distinct projectless directories should share a group. |
-| #144427 | keep_closed | skipped | related | This broader historical PR does not own the narrow Windows spelling repair. |
-| clawsweeper/issue-openclaw-openclaw-111595 | build_fix_artifact | planned |  | First recheck active PR ownership and coordinate with assignee vincentkoc; then implement and validate the fix. |
-| clawsweeper/issue-openclaw-openclaw-111595 | open_fix_pr | planned |  | Open or update one PR only after the regression fails before the fix, the repaired branch passes required checks and review, and sanitized before/after screenshots are ready. |
+| #111595 | fix_needed | planned | canonical | Existing Windows catalog grouping behavior remains broken; a narrow UI repair is needed. |
+| #111596 | keep_closed | skipped |  | Historical source work; no action on an already-closed PR. |
+| #137115 | keep_related | planned | related | Keep the distinct projectless-session report open. |
+| #144427 | keep_closed | skipped |  | Historical context outside this narrow Windows path-equivalence fix. |
+| cluster:issue-openclaw-openclaw-111595 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout with dependencies and GitHub access; recheck active PR ownership and coordinate with @vincentkoc before publication. |
 
 ## Needs Human
 

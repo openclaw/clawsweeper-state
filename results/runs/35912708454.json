@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111595",
+  "mode": "autonomous",
+  "run_id": "35912708454",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35912708454",
+  "head_sha": "549143746fd2f0012b31121b8996c74ddee8afd9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111595.md",
+  "published_at": "2026-09-23T20:43:07.113Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_pr": null,
+  "summary": "The defect reproduces in the catalog grouping function at preflight main SHA 3a5709f50fe9d465bb5d883d31901c5848f50f99. This worker could not add the required failing regression or patch: the checkout is read-only, dependencies are absent, and GitHub DNS is unavailable. A scoped fix plan is ready for an executor with a writable checkout.",
+  "actions": [
+    {
+      "target": "#111595",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Existing Windows catalog grouping behavior remains broken; a narrow UI repair is needed."
+    },
+    {
+      "target": "#111596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Historical source work; no action on an already-closed PR."
+    },
+    {
+      "target": "#137115",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Keep the distinct projectless-session report open."
+    },
+    {
+      "target": "#144427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context outside this narrow Windows path-equivalence fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-111595",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Implementation must run in a writable checkout with dependencies and GitHub access; recheck active PR ownership and coordinate with @vincentkoc before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
