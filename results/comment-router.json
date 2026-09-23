@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T15:13:48.970Z",
+  "updated_at": "2026-09-23T15:13:52.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125913:5791628214:2026-09-23T08:31:40Z:re_review",
-      "comment_id": "5791628214",
-      "comment_version_key": "5791628214:2026-09-23T08:31:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125913#issuecomment-5791628214",
-      "comment_created_at": "2026-09-23T08:31:40Z",
-      "comment_updated_at": "2026-09-23T08:31:40Z",
-      "comment_body_sha256": "38d081d6d287a1ed18e9136c943b7fcc8fdf4efcb84effb543f6491f36ba38ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125913,
-      "author": "he-yufeng",
-      "author_id": 40085740,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T08:36:05.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-binding-store-evict-oldest",
-        "head_sha": "75c4c81c56487029bdcc310618516cd685befa04",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97339:4823692905:2026-09-23T08:18:53Z:clawsweeper_auto_repair",
       "comment_id": "4823692905",
@@ -33255,6 +33208,39 @@
         "kind": "pull_request",
         "branch": "upd/flake-reclamation-responsiveness",
         "head_sha": "5e11f51c979a9e855b8e4766b42c5f4771dc7515",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-23T15:12:32Z:clawsweeper_needs_human",
+      "comment_id": "5611675668",
+      "comment_version_key": "5611675668:2026-09-23T15:12:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143610#issuecomment-5611675668",
+      "comment_created_at": "2026-09-10T02:19:14Z",
+      "comment_updated_at": "2026-09-23T15:12:32Z",
+      "comment_body_sha256": "a5fc2716e16c9ca078e5a62c91b2c0864413a4eef14fef0f861b74db4166c7d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143610,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the native router, account binding, and shared sender have a real-Gateway harness with final-effect as...; Review finding: [P3] Remove the release-owned changelog entry — CHANGELOG/Unreleased.md:5 - [medium] Qualify retained native authority at the final effect — apps/ios/Sources/Model... (sha=56879b527645b88519f9ab3fa770d703e5abfdcf)",
+      "expected_head_sha": "56879b527645b88519f9ab3fa770d703e5abfdcf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T15:13:52.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-actions-20260909",
+        "head_sha": "56879b527645b88519f9ab3fa770d703e5abfdcf",
         "cluster_id": null,
         "job_path": null
       }
