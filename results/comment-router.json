@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:14:26.002Z",
+  "updated_at": "2026-09-23T07:14:59.649Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139164:5746932696:2026-09-20T02:07:47Z:re_review",
-      "comment_id": "5746932696",
-      "comment_version_key": "5746932696:2026-09-20T02:07:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139164#issuecomment-5746932696",
-      "comment_created_at": "2026-09-20T02:07:47Z",
-      "comment_updated_at": "2026-09-20T02:07:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139164,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T02:12:41.004Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139164:5747061847:2026-09-20T02:31:50Z:re_review",
       "comment_id": "5747061847",
@@ -33791,6 +33764,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152205:5736996577:2026-09-23T07:13:56Z:clawsweeper_needs_human",
+      "comment_id": "5736996577",
+      "comment_version_key": "5736996577:2026-09-23T07:13:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152205#issuecomment-5736996577",
+      "comment_created_at": "2026-09-18T22:34:19Z",
+      "comment_updated_at": "2026-09-23T07:13:56Z",
+      "comment_body_sha256": "4e32f5cb9d4851086ce1f47f266e3a99fbb10e20b00ebd7fbea94a39e34add80",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied genuine command-exit traces prove enqueueing and direct settlement, but not busy-session deli...; Review finding: [P2] Retire evicted occurrences when heartbeat settles its saved snapshot — src/infra/system-events.ts:398-400 - [P2] Preserve exec completions when prompt handlin... (sha=1782f21fbcdeddff8dd21ee683d508dfa7ace4ec)",
+      "expected_head_sha": "1782f21fbcdeddff8dd21ee683d508dfa7ace4ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T07:14:59.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-steering",
+        "head_sha": "1782f21fbcdeddff8dd21ee683d508dfa7ace4ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
