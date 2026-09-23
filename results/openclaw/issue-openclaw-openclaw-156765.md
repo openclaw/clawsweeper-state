@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156765"
-mode: "autonomous"
-run_id: "35920473421"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35920473421"
-head_sha: "c0680bf79ab759f5fbb64dc983e52f5329e36857"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T21:48:11.263Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156765"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156765"
+mode: "plan"
+run_id: "35925417017"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35925417017"
+head_sha: "6500b62dfd4c4efb0e2b821c1e9c427e128febef"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T22:04:29.285Z"
+canonical: "#156765"
+canonical_issue: "#156765"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35920473421](https://github.com/openclaw/clawsweeper/actions/runs/35920473421)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35925417017](https://github.com/openclaw/clawsweeper/actions/runs/35925417017)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156765
+Canonical: #156765
 
 ## Summary
 
-Current main contains a source-backed path that loses an intentional MCP tool veto in Code Mode. A failing regression, code change, and PR could not be prepared: dependencies are absent and the read-only host stops pnpm with EROFS. No GitHub mutation was made.
+Plan a narrow fix for the open Code Mode MCP veto bug. Current main is 60d9d1042375f014944b94006f4b1c2b2f5af9c0. Source inspection confirms the reported path, but no regression or validation command was run in plan mode. The linked public-notice feature request remains separate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main contains a source-backed path that loses an intentional MCP tool ve
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156765 | fix_needed | planned | canonical | Preserve the veto reason in the model-facing MCP namespace result while retaining the missing-projection error for genuinely unowned results. |
-| #139238 | keep_related | planned | related | Its requested public notice is outside this bug-only implementation. |
-| cluster:issue-openclaw-openclaw-156765 | build_fix_artifact | blocked |  | The read-only host prevents adding the required failing regression, installing dependencies, validating a patch, or preparing the PR branch. |
+| #156765 | build_fix_artifact | planned | canonical | The reported behavior is a bounded bug in an existing veto path; the issue has no hydrated candidate PR. |
+| #139238 | keep_related | planned | related | It concerns hook blocks but asks for a distinct public API change outside this bug-only job. |
 
 ## Needs Human
 
