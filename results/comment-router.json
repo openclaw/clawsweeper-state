@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T14:11:48.142Z",
+  "updated_at": "2026-09-23T14:11:59.500Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139818:5557374527:2026-09-23T07:14:14Z:clawsweeper_needs_human",
-      "comment_id": "5557374527",
-      "comment_version_key": "5557374527:2026-09-23T07:14:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139818#issuecomment-5557374527",
-      "comment_created_at": "2026-09-06T06:10:36Z",
-      "comment_updated_at": "2026-09-23T07:14:14Z",
-      "comment_body_sha256": "8d368ffdb4dd4f3ac5c18f7e306e88311b3d8d6aa44a3b2931eadc7d81604bd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139818,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain review from a listed openclaw/openclaw-secops owner for the added secret-egress integration test before merge. (sha=35cc70d023a42ccfe7f0543d999ad4c6e4fa58d9)",
-      "expected_head_sha": "35cc70d023a42ccfe7f0543d999ad4c6e4fa58d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T07:58:54.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/proxy-certificate-identifiers",
-        "head_sha": "35cc70d023a42ccfe7f0543d999ad4c6e4fa58d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139877:5557645148:2026-09-23T07:18:52Z:clawsweeper_needs_human",
       "comment_id": "5557645148",
@@ -33306,6 +33273,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156540:5796382122:2026-09-23T14:10:43Z:clawsweeper_needs_human",
+      "comment_id": "5796382122",
+      "comment_version_key": "5796382122:2026-09-23T14:10:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156540#issuecomment-5796382122",
+      "comment_created_at": "2026-09-23T14:10:43Z",
+      "comment_updated_at": "2026-09-23T14:10:43Z",
+      "comment_body_sha256": "7d94195c347cd0b463bfc8e5406921e2198b940260b39b96e2fa6346b510ee75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed settle/direct-delivery owners need observed parent-final delivery and exact NO_REPLY silence throug...; Review finding: [P2] Give deliverable retries a fresh terminal-attempt identity — src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts:519-522 - [medium] Priva... (sha=c16d2f600a6d41ebbee7daa3da4b25c43a05f7f0)",
+      "expected_head_sha": "c16d2f600a6d41ebbee7daa3da4b25c43a05f7f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T14:11:59.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/private-settle-owed-reply",
+        "head_sha": "c16d2f600a6d41ebbee7daa3da4b25c43a05f7f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
