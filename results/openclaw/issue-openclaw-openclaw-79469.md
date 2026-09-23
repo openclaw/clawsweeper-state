@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-79469"
-mode: "autonomous"
-run_id: "35897599196"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35897599196"
-head_sha: "5d82d01893d4ffe8a8e44f244f8793286bb3d85a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T18:45:26.958Z"
+mode: "plan"
+run_id: "35900032565"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35900032565"
+head_sha: "314ce089c82eb32be082c35de6dd2d02c2d44fb8"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T18:49:11.830Z"
 canonical: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_pr: null
-actions_total: 6
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35897599196](https://github.com/openclaw/clawsweeper/actions/runs/35897599196)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35900032565](https://github.com/openclaw/clawsweeper/actions/runs/35900032565)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/79469
 
 ## Summary
 
-Current main still has the inherited-reasoning visibility defect. The fix path is narrow, but this read-only checkout has no installed dependencies, so no failing regression, patch, validation, or browser proof could be completed. No GitHub action was taken.
+At main a0bf24c, the Gateway session row exposes only the stored reasoning override, and the Control UI requires that override to equal "on" before showing saved reasoning. This matches the open issue’s inherited-default failure. A runtime regression, red/green validation, and real Gateway browser evidence are required before opening the fix PR. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,14 @@ Current main still has the inherited-reasoning visibility defect. The fix path i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #79469 | fix_needed | planned | canonical | An authorized session inheriting configured reasoningDefault="on" can have saved thinking but no stored override, leaving the transcript visibility gate false. |
-| #88079 | keep_related | planned | related | Separate stream-delivery work remains. |
-| #117365 | keep_related | planned | related | Presentation behavior is separate from the missing effective session value. |
-| #150148 | keep_related | planned | related | Keep live streaming on its own review path. |
-| cluster:issue-openclaw-openclaw-79469 | build_fix_artifact | planned |  | Prepare one focused repair on the job's designated branch. |
-| cluster:issue-openclaw-openclaw-79469 | open_fix_pr | blocked |  | Implement the artifact, demonstrate a failing pre-fix regression and passing post-fix proof, then validate and open or update the designated PR. |
+| https://github.com/openclaw/openclaw/issues/79469 | build_fix_artifact | planned | canonical | Keep the issue as the canonical bug and prepare one narrow implementation path. |
+| https://github.com/openclaw/openclaw/issues/88079 | keep_related | planned | related | The live-streaming failure has a different root cause and remains open. |
+| https://github.com/openclaw/openclaw/pull/117365 | keep_related | planned | related | Preserve the contributor’s separate presentation work; it cannot fix the inherited-default gate. |
+| https://github.com/openclaw/openclaw/pull/150148 | keep_related | planned | related | Keep the live-streaming repair on its own path. |
+| https://github.com/openclaw/openclaw/issues/79456 | keep_closed | skipped | independent | Historical context only. |
+| https://github.com/openclaw/openclaw/pull/105904 | keep_closed | skipped | related | Historical UI context only. |
+| https://github.com/openclaw/openclaw/pull/137170 | keep_closed | skipped | related | Consult the predecessor’s findings without treating its unmerged patch as a completed fix. |
+| https://github.com/openclaw/openclaw/issues/153605 | keep_closed | skipped | duplicate | The closed report corroborates the same failure and needs no further action. |
 
 ## Needs Human
 
