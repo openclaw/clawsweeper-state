@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T14:13:41.795Z",
+  "updated_at": "2026-09-23T14:15:01.463Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140615:5563968325:2026-09-23T07:26:30Z:clawsweeper_needs_human",
-      "comment_id": "5563968325",
-      "comment_version_key": "5563968325:2026-09-23T07:26:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140615#issuecomment-5563968325",
-      "comment_created_at": "2026-09-07T02:04:31Z",
-      "comment_updated_at": "2026-09-23T07:26:30Z",
-      "comment_body_sha256": "9e85ab506f4486ab569980d4b29091f6eaaf945d820fcfdc8110d0e6f95eb846",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140615,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f961cdb634e7310474739bfef234d7fa2491c442)",
-      "expected_head_sha": "f961cdb634e7310474739bfef234d7fa2491c442",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T07:58:54.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/80667-cli-trajectory",
-        "head_sha": "f961cdb634e7310474739bfef234d7fa2491c442",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147281:5655384396:2026-09-23T07:09:53Z:clawsweeper_needs_human",
       "comment_id": "5655384396",
@@ -33306,6 +33273,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/acpx:756:5796430354:2026-09-23T14:13:41Z:re_review",
+      "comment_id": "5796430354",
+      "comment_version_key": "5796430354:2026-09-23T14:13:41Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/756#issuecomment-5796430354",
+      "comment_created_at": "2026-09-23T14:13:41Z",
+      "comment_updated_at": "2026-09-23T14:13:41Z",
+      "comment_body_sha256": "887aa970f74c5ed6ae4faa1d76f849653e971b37c9f8af150d507516b82cc78f",
+      "repo": "openclaw/acpx",
+      "issue_number": 756,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T14:14:59.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/audit-checkpoint-shutdown",
+        "head_sha": "4e83639905114435bf3e082a7b6551c82c33c2b9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
