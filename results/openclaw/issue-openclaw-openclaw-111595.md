@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-111595"
-mode: "plan"
-run_id: "35892805403"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35892805403"
+mode: "autonomous"
+run_id: "35890826955"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35890826955"
 head_sha: "74df933aeed3f01eddcf027150f1484fdcb57904"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-23T17:40:59.359Z"
-canonical: "#111595"
-canonical_issue: "#111595"
+published_at: "2026-09-23T17:45:15.628Z"
+canonical: "https://github.com/openclaw/openclaw/issues/111595"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/111595"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35892805403](https://github.com/openclaw/clawsweeper/actions/runs/35892805403)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35890826955](https://github.com/openclaw/clawsweeper/actions/runs/35890826955)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #111595
+Canonical: https://github.com/openclaw/openclaw/issues/111595
 
 ## Summary
 
-Plan one narrow Windows catalog grouping repair. Checkout matches preflight main a4fbf649cd9236258baf5d49014acaed24310485. No files or GitHub state changed; runtime reproduction and validation remain pending.
+Reproduced both Windows grouping defects against preflight main. Prepared a narrow credited fix plan. Local implementation is blocked by the read-only host; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Plan one narrow Windows catalog grouping repair. Checkout matches preflight main
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #111595 | fix_needed | planned | canonical | Repair comparison identity and persisted collapse preferences through existing owners; preserve display spelling and existing grouping boundaries. |
-| #111596 | keep_closed | skipped | related | Retain as credited historical source work, without reopening or issuing another closure. |
-| #137115 | keep_related | planned | related | Distinct catalog semantics remain outside this bug repair; leave open. |
-| #144427 | keep_closed | skipped | related | Historical broader work is not a viable canonical repair for this narrow issue. |
+| #111595 | fix_needed | planned | canonical | The defect remains reproducible and can be repaired within existing grouping and preference owners. |
+| #111596 | keep_closed | skipped | related | Preserve as credited historical work; no reopening, closure, or merge is proposed. |
+| #137115 | keep_related | planned | related | Leave open outside this repair. Path-equivalence normalization must not classify projectless sessions. |
+| #144427 | keep_closed | skipped | related | Broader historical work is outside the Windows path-equivalence repair. |
+| cluster:issue-openclaw-openclaw-111595 | build_fix_artifact | planned | canonical | One issue-specific implementation PR remains appropriate; no product or security-boundary change is needed. |
+| cluster:issue-openclaw-openclaw-111595 | open_fix_pr | blocked | canonical | Implementation and publication require a writable executor that completes ownership coordination, regression-first repair, validation, fresh review, and screenshot delivery. |
 
 ## Needs Human
 

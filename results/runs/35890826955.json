@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111595",
+  "mode": "autonomous",
+  "run_id": "35890826955",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35890826955",
+  "head_sha": "74df933aeed3f01eddcf027150f1484fdcb57904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111595.md",
+  "published_at": "2026-09-23T17:45:15.628Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_pr": null,
+  "summary": "Reproduced both Windows grouping defects against preflight main. Prepared a narrow credited fix plan. Local implementation is blocked by the read-only host; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#111595",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "The defect remains reproducible and can be repaired within existing grouping and preference owners."
+    },
+    {
+      "target": "#111596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Preserve as credited historical work; no reopening, closure, or merge is proposed."
+    },
+    {
+      "target": "#137115",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open outside this repair. Path-equivalence normalization must not classify projectless sessions."
+    },
+    {
+      "target": "#144427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Broader historical work is outside the Windows path-equivalence repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-111595",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "One issue-specific implementation PR remains appropriate; no product or security-boundary change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-111595",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Implementation and publication require a writable executor that completes ownership coordination, regression-first repair, validation, fresh review, and screenshot delivery."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
