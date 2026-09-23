@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
-mode: "autonomous"
-run_id: "35899772652"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35899772652"
-head_sha: "314ce089c82eb32be082c35de6dd2d02c2d44fb8"
+mode: "plan"
+run_id: "35897510305"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35897510305"
+head_sha: "5d82d01893d4ffe8a8e44f244f8793286bb3d85a"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-09-23T19:04:07.604Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128301"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
+result_status: "planned"
+published_at: "2026-09-23T17:48:19.741Z"
+canonical: "#128301"
+canonical_issue: "#128301"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35899772652](https://github.com/openclaw/clawsweeper/actions/runs/35899772652)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35897510305](https://github.com/openclaw/clawsweeper/actions/runs/35897510305)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/128301
+Canonical: #128301
 
 ## Summary
 
-Current main still skips unresolved Slack app mentions without an INFO diagnostic. The checkout is read-only, so I could not add the required failing regression, implement the fix, or validate a PR branch. A narrow fix artifact is ready for an executor with write access.
+Plan a narrow INFO diagnostic for unresolved Slack app mentions on main caa1422d. Source inspection confirms the diagnostic gap; plan mode did not run the required failing regression or change code.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Current main still skips unresolved Slack app mentions without an INFO diagnosti
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=coreTests, extensions, extensionTests, docs [check:changed] extensions/slack/src/monitor/context.test.ts: extension test [check:changed] extensions/slack/src/monitor/context.ts: extension production [check:changed] extensions/slack/src/monitor/events/messages.app-mention-diagnostics.test.ts: extension test [check:changed] extensions/slack/src/monitor/events/messages.test.ts: extension test [check:changed] extensions/slack/src/monitor/events/messages.ts: extension production [check:changed] ui/src/e2e/control-ui-e2e-suite.test-support.ts: UI test [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] extension test core imports $ node --import ./scripts/tsx.mjs scripts/check-no-extension-test-core-imports.ts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/channels/slack/troubleshooting.md extensions/slack/src/monitor/context.test.ts extensions/slack/src/monitor/context.ts extensions/slack/src/monitor/events/messages.app-mention-diagnostics.test.ts extensions/slack/src/monitor/events/messages.test.ts extensions/slack/src/monitor/events/messages.ts ui/src/e2e/control-ui-e2e-suite.test-support.ts [check:changed] doctor contract declaration + closure guard tests $ node --import ./scripts/tsx.mjs scripts/test-projects-serial.mts src/plugins/doctor-contract-declarations.test.ts src/plugins/doctor-contract-closure-guard.test.ts [test] starting test/vitest/vitest.plugins.config.ts [test] passed 1 Vitest shard in 5.32s [check:changed] plugin boundaries $ node --import ./scripts/tsx.mjs scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] Control UI i18n catalog $ pnpm ui:i18n:verify $ node --import ./scripts/tsx.mjs scripts/control-ui-i18n-verify.ts verify [check:changed] typecheck core tests $ node scripts/run-tsgo-core-test-shards.mjs [tsgo:agents-root] passed in 59.3s [tsgo:agents-other] failed (exit 1) in 59.9s [tsgo:core:test] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 253ms ok conflict markers 431ms ok line-cap growth ratchet 10.02s ok max-lines suppression ratchet 8.33s ok assertion SAFETY comment ratchet 174ms ok changelog attributions 144ms ok doctor deprecation registry 165ms ok guarded extension wildcard re-exports 151ms ok plugin-sdk wildcard re-exports 582ms ok extension test core imports 242ms ok duplicate scan target coverage 207ms ok dependency pin guard 173ms ok format changed files 5.61s ok doctor contract declaration + closure guard tests 1.20s ok plugin boundaries 419ms ok package patch guard 448ms ok test temp creation report (warning-only) 63.12s ok core tsgo graph boundary 2.63s ok Control UI i18n catalog 119.50s failed:1 typecheck core tests [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 6 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 782 grandfathered suppressions. OPENCLAW_* count 487/487 assertion SAFETY ratchet OK: 3700 files, 10530 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-09-23 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. OK: extension test files, support helpers, and plugin test helpers avoid direct core test/internal imports (4444 extension files, 0 plugin helpers checked). [dup:check] target coverage ok PASS direct dependency pin guard: checked 701 directly declared dependency specs across 194 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 95ms on 7 files using 4 threads. [1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/tmp/clawsweeper-repair-target-DGQOpf/openclaw-openclaw[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mclassifies only static value module edges[32m 52[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps broad agent runtime and heavy doctor barrels off doctor enumeration paths[33m 395[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps the runtime doctor migration helper off state DB and plugin-state graphs[32m 21[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps kysely statically unreachable from every plugin closure[33m 523[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-declarations.test.ts[2m > [22mbundled plugin doctor contract declarations[2m > [22mmatches every resolvable artifact's coerced doctor surfaces[33m 1581[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-declarations.test.ts[2m > [22mbundled plugin doctor contract declarations[2m > [22mdeclares every state migration identity and phase in module order[32m 73[2mms[22m[39m [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m [2m Tests [22m [1m[32m6 passed[39m[22m[90m (6)[39m [2m Start at [22m 18:50:17 [2m Duration [22m 4.54s[2m (tests 64%, transform 19%, setup 11%, import 6%)[22m Plugin Boundary Report compat deprecated=23 eligibleForRemoval=0 removalPending=9 removalPendingDue=1 removal-pending 2026-09-08 sdk-untrusted-context-identifier-aliases due=true blocker=`MsgContext.ChannelPromptContext`, `MsgContext.ChannelStructuredContext`, `ChannelStructuredContextEntry`, `SupplementalContextFacts.channelStructuredContext`, and `buildChannelMetadata`; retain the aliases until migration of published plugin readers is verified and explicit breaking-release approval is granted readerRefs=7787 readers=extensions/a2a/index.ts,extensions/a2a/setup-entry.ts,extensions/a2a/src/accounts.ts,extensions/a2a/src/channel-base.ts,extensions/a2a/src/channel.test.ts removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=53 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/cli/browser-cli-extension.test.ts,extensions/browser/src/cli/browser-cli.test.ts,extensions/browser/src/sdk-setup-tools.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=27 readers=extensions/active-memory/index.test.ts,extensions/active-memory/index.ts,extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/memory-get-corpus.test.ts,extensions/memory-core/src/public-artifacts.ts removal-pending 2026-10-01 plugin-sdk-channel-lifecycle-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=1 readers=src/plugins/contracts/plugin-sdk-subpaths.test.ts removal-pending 2026-10-01 plugin-sdk-channel-message-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound` and `openclaw/plugin-sdk/channel-inbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/plugin-sdk-native-resolver.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-channel-reply-pipeline-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/contracts/plugin-sdk-subpaths.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-config-runtime-subpath due=false blocker=`api.pluginConfig`, `openclaw/plugin-sdk/config-mutation`, `openclaw/plugin-sdk/runtime-config-snapshot`, and `openclaw/plugin-sdk/config-contracts`; retain until supported external plugin migration is verified readerRefs=3 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts,scripts/lib/config-boundary-guard.mts,src/plugins/contracts/config-boundary-guard.test.ts removal-pending 2026-10-01 plugin-sdk-infra-runtime-subpath due=false blocker=focused subpaths including `openclaw/plugin-sdk/delivery-queue-runtime`, `openclaw/plugin-sdk/diagnostic-runtime`, `openclaw/plugin-sdk/error-runtime`, `openclaw/plugin-sdk/exec-approvals-runtime`, `openclaw/plugin-sdk/fetch-runtime`, and `openclaw/plugin-sdk/ssrf-runtime`; retain until supported external plugin migration is verified and system-event snapshot inspection and consumption have a modern public replacement readerRefs=1 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=59 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=373 supportedBundledFacade=2 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=21 PASS package patch guard: no new pnpm patches; 8 approved patches allowlisted. control-ui-i18n: raw-copy: baseline entries=102 control-ui-i18n: source: keys=9917 literal_references=8750 template_prefix_references=164 ui/src/test-helpers/control-ui-e2e-shared-preview.ts(5,16): error TS2664: Invalid module name in augmentation, module 'vitest' cannot be found. |
-| issue_implementation_status_comment | updated | #128301 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,11 @@ Current main still skips unresolved Slack app mentions without an INFO diagnosti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | planned | canonical | The diagnostic gap remains on current main and no viable open fix PR is hydrated. |
-| #112259 | keep_related | planned | related | Shared silent-loss symptom, different owner and unresolved root cause; leave open. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | planned |  | The artifact specifies a narrow listener and lookup-owner repair with a production-path regression. |
-| cluster:issue-openclaw-openclaw-128301 | open_fix_pr | blocked |  | Implementation and local validation require a writable checkout before the ClawSweeper applicator can open or update the PR. |
+| #128301 | fix_needed | planned | canonical | First add a failing regression through the registered listener and real monitor context, then implement and validate the diagnostic without changing delivery. |
+| #112259 | keep_related | planned | related | It shares a silent-loss symptom but does not establish the Slack unresolved-type diagnostic cause. |
+| #94691 | keep_closed | skipped | related | Historical context only. |
+| #102811 | keep_closed | skipped | related | Historical context only. |
+| #115528 | keep_closed | skipped | related | Its delivery ownership decision should be preserved. |
 
 ## Needs Human
 
