@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T02:17:04.410Z",
+  "updated_at": "2026-09-23T02:31:57.137Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155906:5782782196:2026-09-22T19:37:54Z:re_review",
-      "comment_id": "5782782196",
-      "comment_version_key": "5782782196:2026-09-22T19:37:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155906#issuecomment-5782782196",
-      "comment_created_at": "2026-09-22T19:37:54Z",
-      "comment_updated_at": "2026-09-22T19:37:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155906,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T19:39:05.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-final-delivery-owner",
-        "head_sha": "da8efdbc096c6305a0b1579d96083d802f073566",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabpot:354:5782794299:2026-09-22T19:38:47Z:re_review",
       "comment_id": "5782794299",
@@ -33089,6 +33042,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-09-23T02:30:19Z:clawsweeper_needs_human",
+      "comment_id": "5659092617",
+      "comment_version_key": "5659092617:2026-09-23T02:30:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147886#issuecomment-5659092617",
+      "comment_created_at": "2026-09-14T04:37:59Z",
+      "comment_updated_at": "2026-09-23T02:30:19Z",
+      "comment_body_sha256": "cbaf856e7a283b49a424ebd12889ab118856350d3e5d981373adbcb844d23517",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147886,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two-entry configuration-baseline increase still requires explicit exception approval. (sha=d9005f8f1651332b3fa278eec2adbba7ad1bba96)",
+      "expected_head_sha": "d9005f8f1651332b3fa278eec2adbba7ad1bba96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T02:31:57.137Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-markdown-tables",
+        "head_sha": "d9005f8f1651332b3fa278eec2adbba7ad1bba96",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
