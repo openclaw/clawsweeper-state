@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T02:36:10.411Z",
+  "updated_at": "2026-09-23T02:36:23.458Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118307:5782937965:2026-09-22T19:47:17Z:re_review",
-      "comment_id": "5782937965",
-      "comment_version_key": "5782937965:2026-09-22T19:47:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118307#issuecomment-5782937965",
-      "comment_created_at": "2026-09-22T19:47:17Z",
-      "comment_updated_at": "2026-09-22T19:47:17Z",
-      "comment_body_sha256": "86fb40521eed7950368e5eeca986db2ce2a1d59f5f841a65ccf73526bdd697af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118307,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T19:48:17.042Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/fix-matrix-failed-preview",
-        "head_sha": "a7d5bd872d08518688f9820c1e30f12bd2bee1af",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3878:5782945759:2026-09-22T19:47:42Z:clawsweeper_needs_human",
       "comment_id": "5782945759",
@@ -33018,6 +32971,39 @@
         "kind": "pull_request",
         "branch": "memorytunning-pr-v2",
         "head_sha": "ff16df86c8c7502b38a78217d271777c4870f2de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134869:5489487541:2026-09-23T02:35:25Z:clawsweeper_needs_human",
+      "comment_id": "5489487541",
+      "comment_version_key": "5489487541:2026-09-23T02:35:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134869#issuecomment-5489487541",
+      "comment_created_at": "2026-09-01T05:46:09Z",
+      "comment_updated_at": "2026-09-23T02:35:25Z",
+      "comment_body_sha256": "5722fb18b453206b1ad9b34f250dc1434f6a2608b680569ecd6d53c4e947679b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the shared reporter changes raw-string handling, but no after-fix production-wrapper trace demonstrates... (sha=bc95109f6113c51e3260de3df8b247e9ac6b7e53)",
+      "expected_head_sha": "bc95109f6113c51e3260de3df8b247e9ac6b7e53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T02:36:23.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failed-trailer-string-exit-code",
+        "head_sha": "bc95109f6113c51e3260de3df8b247e9ac6b7e53",
         "cluster_id": null,
         "job_path": null
       }
