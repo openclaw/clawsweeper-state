@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156754",
+  "mode": "autonomous",
+  "run_id": "35928167221",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35928167221",
+  "head_sha": "a3840356d894e66c507ec5e3beb55c65e5958338",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156754.md",
+  "published_at": "2026-09-23T23:50:26.789Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156754",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156754",
+  "canonical_pr": null,
+  "summary": "Current main has the reported command and script announcement gap: the Cron completion path calls the durable sender without a destination transcript mirror. The checkout is read-only, so I could not add the required failing regression, implement the fix, run validation, or prepare the PR branch.",
+  "actions": [
+    {
+      "target": "#156754",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156754",
+      "candidate_fix": null,
+      "reason": "A confirmed, explicitly addressed announcement should be available to the destination session's next inbound turn."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156754",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156754",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable isolated checkout. Reproduce through the Cron run and outbound boundary before changing code."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
