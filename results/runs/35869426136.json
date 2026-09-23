@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138644",
+  "mode": "autonomous",
+  "run_id": "35869426136",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35869426136",
+  "head_sha": "74df933aeed3f01eddcf027150f1484fdcb57904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138644.md",
+  "published_at": "2026-09-23T14:40:01.397Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the missing compaction-state handoff in the available checkout. Implementation and regression execution are blocked by the read-only filesystem and absent dependencies. Local HEAD differs from the preflight main SHA, which is unavailable locally. A narrow executor fix plan is provided; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#138644",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix remains justified. The executor must first reproduce through the current plugin execution path on freshly verified main."
+    },
+    {
+      "target": "#40982",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct product-policy scope; recognizing existing compaction lifecycle does not resolve this request."
+    },
+    {
+      "target": "#137294",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different watchdog and execution path; retain its existing follow-up ownership."
+    },
+    {
+      "target": "#125045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#139009",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Closed-unmerged reference work, not an active implementation owner. Preserve attribution without reopening or closing it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow plan to an executor with a writable checkout and dependencies. Reproduction on verified current main remains mandatory before production edits or PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

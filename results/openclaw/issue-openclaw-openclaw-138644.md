@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
 mode: "autonomous"
-run_id: "35854417207"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35854417207"
-head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
+run_id: "35869426136"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35869426136"
+head_sha: "74df933aeed3f01eddcf027150f1484fdcb57904"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T12:45:53.849Z"
+published_at: "2026-09-23T14:40:01.397Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35854417207](https://github.com/openclaw/clawsweeper/actions/runs/35854417207)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35869426136](https://github.com/openclaw/clawsweeper/actions/runs/35869426136)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Source inspection confirms the missing compaction-to-watchdog handoff on preflight main b4111411166741032e32f362b4f765c9dfafff64. A narrow fix artifact is prepared. Implementation and the required failing regression are blocked by the read-only sandbox and absent dependencies; no code or GitHub state changed.
+Source inspection confirms the missing compaction-state handoff in the available checkout. Implementation and regression execution are blocked by the read-only filesystem and absent dependencies. Local HEAD differs from the preflight main SHA, which is unavailable locally. A narrow executor fix plan is provided; no code or GitHub state changed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Source inspection confirms the missing compaction-to-watchdog handoff on preflig
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | The bug has a narrow existing-owner repair path. The executor must demonstrate the failing regression before implementation. |
-| #40982 | keep_related | planned | related | Distinct product-policy scope; leave open and outside this implementation. |
-| #137294 | keep_related | planned | related | Different watchdog and lifecycle owner; no ingress changes belong in this fix. |
+| #138644 | fix_needed | planned | canonical | A narrow bug fix remains justified. The executor must first reproduce through the current plugin execution path on freshly verified main. |
+| #40982 | keep_related | planned | related | Distinct product-policy scope; recognizing existing compaction lifecycle does not resolve this request. |
+| #137294 | keep_related | planned | related | Different watchdog and execution path; retain its existing follow-up ownership. |
 | #125045 | keep_closed | skipped | related | Historical context only. |
-| #139009 | keep_closed | skipped | related | Closed-unmerged reference work only. Preserve attribution in the new issue implementation; do not reopen, close, or treat it as a landed fix. |
-| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned |  | The fix plan remains actionable for a writable executor, subject to reproducing the defect first. |
+| #139009 | keep_closed | skipped | related | Closed-unmerged reference work, not an active implementation owner. Preserve attribution without reopening or closing it. |
+| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | Hand off the narrow plan to an executor with a writable checkout and dependencies. Reproduction on verified current main remains mandatory before production edits or PR creation. |
 
 ## Needs Human
 
