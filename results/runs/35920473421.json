@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156765",
+  "mode": "autonomous",
+  "run_id": "35920473421",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35920473421",
+  "head_sha": "c0680bf79ab759f5fbb64dc983e52f5329e36857",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156765.md",
+  "published_at": "2026-09-23T21:48:11.263Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156765",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156765",
+  "canonical_pr": null,
+  "summary": "Current main contains a source-backed path that loses an intentional MCP tool veto in Code Mode. A failing regression, code change, and PR could not be prepared: dependencies are absent and the read-only host stops pnpm with EROFS. No GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#156765",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156765",
+      "candidate_fix": null,
+      "reason": "Preserve the veto reason in the model-facing MCP namespace result while retaining the missing-projection error for genuinely unowned results."
+    },
+    {
+      "target": "#139238",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its requested public notice is outside this bug-only implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156765",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156765",
+      "candidate_fix": null,
+      "reason": "The read-only host prevents adding the required failing regression, installing dependencies, validating a patch, or preparing the PR branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
