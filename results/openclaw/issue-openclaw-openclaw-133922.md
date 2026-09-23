@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133922"
 mode: "autonomous"
-run_id: "35811739114"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35811739114"
+run_id: "35815850544"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35815850544"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T03:40:52.564Z"
+published_at: "2026-09-23T04:42:49.296Z"
 canonical: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35811739114](https://github.com/openclaw/clawsweeper/actions/runs/35811739114)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35815850544](https://github.com/openclaw/clawsweeper/actions/runs/35815850544)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133922
 
 ## Summary
 
-Source inspection supports a narrow native Ollama classification repair. Implementation and reproduction are blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed; no runtime or Telegram proof completed.
+Source inspection supports the native Ollama classification gap. Implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. The checkout also differs from preflight main. A narrow, reproduction-gated fix artifact is prepared; no files or GitHub state were changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Source inspection supports a narrow native Ollama classification repair. Impleme
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133922 | fix_needed | planned | canonical | Keep the issue open and prepare a reproduction-first repair. Source evidence is insufficient to claim the required current-main runtime reproduction or the reporter's exact upgrade regression. |
-| #109057 | keep_closed | skipped | related | Related merged implementation context, not a fix covering native Ollama or an open mutation target. |
-| #13944 | keep_closed | skipped | related | Historical symptom context only; no reopening or closure action. |
-| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | The executor can use this conditional repair plan on a writable, provisioned checkout. Do not implement or publish unless the required current-main boundary regression fails first. |
+| #133922 | fix_needed | planned | canonical | A bounded producer/subscriber repair remains plausible; retain the issue while the executor establishes the required regression. |
+| #109057 | keep_closed | skipped | related | Preserve as historical implementation and contributor-credit context. |
+| #13944 | keep_closed | skipped | related | Historical symptom context only; no closure or reopening action. |
+| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Artifact preparation is possible; implementation must resume on a writable executor after reconciling main and establishing the boundary regression. |
 
 ## Needs Human
 
