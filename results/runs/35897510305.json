@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "plan",
+  "run_id": "35897510305",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35897510305",
+  "head_sha": "5d82d01893d4ffe8a8e44f244f8793286bb3d85a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-23T17:48:19.741Z",
+  "canonical": "#128301",
+  "canonical_issue": "#128301",
+  "canonical_pr": null,
+  "summary": "Plan a narrow INFO diagnostic for unresolved Slack app mentions on main caa1422d. Source inspection confirms the diagnostic gap; plan mode did not run the required failing regression or change code.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "First add a failing regression through the registered listener and real monitor context, then implement and validate the diagnostic without changing delivery."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "It shares a silent-loss symptom but does not establish the Slack unresolved-type diagnostic cause."
+    },
+    {
+      "target": "#94691",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#102811",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#115528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its delivery ownership decision should be preserved."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

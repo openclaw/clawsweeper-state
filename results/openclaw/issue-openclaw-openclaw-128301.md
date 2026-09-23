@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
-mode: "autonomous"
-run_id: "35886331878"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35886331878"
-head_sha: "74df933aeed3f01eddcf027150f1484fdcb57904"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "35897510305"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35897510305"
+head_sha: "5d82d01893d4ffe8a8e44f244f8793286bb3d85a"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-23T17:22:58.411Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128301"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
+published_at: "2026-09-23T17:48:19.741Z"
+canonical: "#128301"
+canonical_issue: "#128301"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35886331878](https://github.com/openclaw/clawsweeper/actions/runs/35886331878)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35897510305](https://github.com/openclaw/clawsweeper/actions/runs/35897510305)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/128301
+Canonical: #128301
 
 ## Summary
 
-Verified the diagnostic gap in source at preflight main 8853510cfd32501fc2779c2cf6b49a53cd76dd18. Prepared a narrow fix plan. Implementation and runtime reproduction are blocked on this read-only host with no installed dependencies; no files or GitHub state changed.
+Plan a narrow INFO diagnostic for unresolved Slack app mentions on main caa1422d. Source inspection confirms the diagnostic gap; plan mode did not run the required failing regression or change code.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Verified the diagnostic gap in source at preflight main 8853510cfd32501fc2779c2c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | blocked | canonical | Only implementation is blocked: filesystem writes are prohibited and node_modules is absent. The executor must establish the failing real-context listener regression before changing production code. |
-| #112259 | keep_related | planned | related | Distinct remaining work; leave open outside this implementation. |
+| #128301 | fix_needed | planned | canonical | First add a failing regression through the registered listener and real monitor context, then implement and validate the diagnostic without changing delivery. |
+| #112259 | keep_related | planned | related | It shares a silent-loss symptom but does not establish the Slack unresolved-type diagnostic cause. |
 | #94691 | keep_closed | skipped | related | Historical context only. |
-| #102811 | keep_closed | skipped | related | Historical context, not a repairable candidate branch. |
-| #115528 | keep_closed | skipped | related | Preserve its routing decision; repair only the missing diagnostic. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | planned |  | A narrow non-security diagnostic fix remains appropriate. No merge, closure, or direct GitHub mutation is recommended. |
+| #102811 | keep_closed | skipped | related | Historical context only. |
+| #115528 | keep_closed | skipped | related | Its delivery ownership decision should be preserved. |
 
 ## Needs Human
 
