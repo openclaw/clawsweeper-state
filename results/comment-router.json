@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:25:37.483Z",
+  "updated_at": "2026-09-23T07:25:47.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-23T02:34:37Z:clawsweeper_auto_repair",
-      "comment_id": "5567489931",
-      "comment_version_key": "5567489931:2026-09-23T02:34:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
-      "comment_created_at": "2026-09-07T08:12:30Z",
-      "comment_updated_at": "2026-09-23T02:34:37Z",
-      "comment_body_sha256": "56d95915746b8aa5028b4a6ae05edc5f531ee194a0d79e3afffbd4545d3775d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ff16df86c8c7502b38a78217d271777c4870f2de)",
-      "expected_head_sha": "ff16df86c8c7502b38a78217d271777c4870f2de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T02:36:10.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "ff16df86c8c7502b38a78217d271777c4870f2de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134869:5489487541:2026-09-23T02:35:25Z:clawsweeper_needs_human",
       "comment_id": "5489487541",
@@ -33927,6 +33894,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155040:5790767821:2026-09-23T07:23:11Z:re_review",
+      "comment_id": "5790767821",
+      "comment_version_key": "5790767821:2026-09-23T07:23:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155040#issuecomment-5790767821",
+      "comment_created_at": "2026-09-23T07:23:11Z",
+      "comment_updated_at": "2026-09-23T07:23:11Z",
+      "comment_body_sha256": "c671c542e7cf6ff4ba66acd44c023933340d2255863eac4921f0407911544d8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155040,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T07:25:45.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/telegram-test-pruning",
+        "head_sha": "3eb1bab78c1ee9b2e4dff931d601634183b0b44b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
