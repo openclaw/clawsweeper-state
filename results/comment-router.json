@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T14:20:57.766Z",
+  "updated_at": "2026-09-23T14:21:06.418Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156214:5789784355:2026-09-23T07:12:13Z:clawsweeper_needs_human",
-      "comment_id": "5789784355",
-      "comment_version_key": "5789784355:2026-09-23T07:12:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156214#issuecomment-5789784355",
-      "comment_created_at": "2026-09-23T05:50:36Z",
-      "comment_updated_at": "2026-09-23T07:12:13Z",
-      "comment_body_sha256": "fe318ffea120f84b6f3830c23029aad0dbccf9285bd0860e45643bfdc106350a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156214,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Landing into the currently named 2026.8.33 candidate would replace its deliberately frozen runtime pin, contrary to the recorded plan to carry this update in 2026.8.34. (sha=86019f0070411796522433823399e01fb5066cd1)",
-      "expected_head_sha": "86019f0070411796522433823399e01fb5066cd1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T07:58:54.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-codex-0.156.1",
-        "head_sha": "86019f0070411796522433823399e01fb5066cd1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156237:5789867771:2026-09-23T07:18:20Z:clawsweeper_needs_human",
       "comment_id": "5789867771",
@@ -33340,6 +33307,53 @@
       "status": "skipped",
       "processed_at": "2026-09-23T14:20:57.766Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156542:5796535184:2026-09-23T14:19:43Z:re_review",
+      "comment_id": "5796535184",
+      "comment_version_key": "5796535184:2026-09-23T14:19:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156542#issuecomment-5796535184",
+      "comment_created_at": "2026-09-23T14:19:43Z",
+      "comment_updated_at": "2026-09-23T14:19:43Z",
+      "comment_body_sha256": "5a4d42515369278968c532df6a2b3c71ccf5c14ec64933332b03730b009e371c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156542,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T14:21:04.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/subagents-timeout532",
+        "head_sha": "e7324d88564fb8ea3ce0fe303f78eba8951400f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
