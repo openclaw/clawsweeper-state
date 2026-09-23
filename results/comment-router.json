@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T19:20:00.263Z",
+  "updated_at": "2026-09-23T19:26:00.727Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101866:5390701365:2026-08-24T04:23:23Z:re_review",
-      "comment_id": "5390701365",
-      "comment_version_key": "5390701365:2026-08-24T04:23:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-5390701365",
-      "comment_created_at": "2026-08-24T04:23:23Z",
-      "comment_updated_at": "2026-08-24T04:23:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101866,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T11:11:08.633Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101866:5390795567:2026-08-24T04:37:13Z:re_review",
       "comment_id": "5390795567",
@@ -33463,6 +33436,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1487:5787870408:2026-09-23T19:24:43Z:clawsweeper_needs_human",
+      "comment_id": "5787870408",
+      "comment_version_key": "5787870408:2026-09-23T19:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1487#issuecomment-5787870408",
+      "comment_created_at": "2026-09-23T02:24:49Z",
+      "comment_updated_at": "2026-09-23T19:24:43Z",
+      "comment_body_sha256": "2f21b16d66e53d7fb8fb58462c51741f6a78f3a65c56ed820a7aae1e25d71abb",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1487,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body reports that the current-head production builder and official Gateway 2026.9.5 completed a synthetic-token configuration r... (sha=34b5dfed82827680c9b128436571447106701e60)",
+      "expected_head_sha": "34b5dfed82827680c9b128436571447106701e60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T19:26:00.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-redacted-sibling-secrets",
+        "head_sha": "34b5dfed82827680c9b128436571447106701e60",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
