@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T23:23:35.949Z",
+  "updated_at": "2026-09-23T23:26:15.585Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5798257423:2026-09-23T16:05:23Z:re_review",
-      "comment_id": "5798257423",
-      "comment_version_key": "5798257423:2026-09-23T16:05:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5798257423",
-      "comment_created_at": "2026-09-23T16:05:23Z",
-      "comment_updated_at": "2026-09-23T16:05:23Z",
-      "comment_body_sha256": "38a53a06bf3d8042f95eeb6626b360cda614c2a263848af53493dbc11c46f96b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (322e358bb, was 46 behind, now 0 behind). focused skill-selection tests pass (12/12). tsgo:core errors are pre-existing upstream breakage in configure.*/doctor-prompter/models files, none in our skill-selection/audit files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T16:14:13.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "96423489938ca389eb5b6cacef7902a2f8610e7b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156406:5793187609:2026-09-23T16:13:37Z:clawsweeper_needs_human",
       "comment_id": "5793187609",
@@ -33733,6 +33686,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156845:5804615074:2026-09-23T23:24:56Z:clawsweeper_needs_human",
+      "comment_id": "5804615074",
+      "comment_version_key": "5804615074:2026-09-23T23:24:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156845#issuecomment-5804615074",
+      "comment_created_at": "2026-09-23T23:24:56Z",
+      "comment_updated_at": "2026-09-23T23:24:56Z",
+      "comment_body_sha256": "822914b0a8487e06ba6fc65b37243e189da6eee23863f88b0f7be674142e72fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed cleanup paths have not been run or fault checked, so it remains unverified whether a failed assertion releases held work without stalling the test worker or obscuring the... (sha=43c1c655f8a10670a1a31e8ecc964c40da990418)",
+      "expected_head_sha": "43c1c655f8a10670a1a31e8ecc964c40da990418",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T23:26:15.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/gateway-chat-held-fixtures-20260924",
+        "head_sha": "43c1c655f8a10670a1a31e8ecc964c40da990418",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
