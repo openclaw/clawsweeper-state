@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T01:42:29.190Z",
+  "updated_at": "2026-09-23T01:42:54.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:2491:5782420458:2026-09-22T19:11:40Z:re_review",
-      "comment_id": "5782420458",
-      "comment_version_key": "5782420458:2026-09-22T19:11:40Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2491#issuecomment-5782420458",
-      "comment_created_at": "2026-09-22T19:11:40Z",
-      "comment_updated_at": "2026-09-22T19:11:40Z",
-      "comment_body_sha256": "c048c873e40908c6339c61e2d11b8bcf61d035bf34676d0c6c12078545dd6eeb",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2491,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T19:12:36.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/azure-config-ownership-n858",
-        "head_sha": "f0950d96ead0e2feaf1ca10285a874e5ab06cc97",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155910:5782421714:2026-09-22T19:11:44Z:re_review",
       "comment_id": "5782421714",
@@ -33142,6 +33095,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-consult-read-only-and-retry",
         "head_sha": "ffb224c1270ac460c5b500ade11e72ea0e835faf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155873:5781164606:2026-09-23T01:42:04Z:clawsweeper_auto_repair",
+      "comment_id": "5781164606",
+      "comment_version_key": "5781164606:2026-09-23T01:42:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155873#issuecomment-5781164606",
+      "comment_created_at": "2026-09-22T17:41:16Z",
+      "comment_updated_at": "2026-09-23T01:42:04Z",
+      "comment_body_sha256": "df97e597be450ffb628bfc256f7b175e3b6567b2d6b22dcdb73ef92e9b05ca35",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155873,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=315c9023a698801c313419fa063f659dd18fe23d)",
+      "expected_head_sha": "315c9023a698801c313419fa063f659dd18fe23d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-23T01:42:54.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-computer-use-deadline-monotonic-090",
+        "head_sha": "315c9023a698801c313419fa063f659dd18fe23d",
         "cluster_id": null,
         "job_path": null
       }
