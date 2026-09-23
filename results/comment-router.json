@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T00:38:01.199Z",
+  "updated_at": "2026-09-23T00:38:13.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155870:5781724842:2026-09-22T18:23:01Z:re_review",
-      "comment_id": "5781724842",
-      "comment_version_key": "5781724842:2026-09-22T18:23:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155870#issuecomment-5781724842",
-      "comment_created_at": "2026-09-22T18:23:01Z",
-      "comment_updated_at": "2026-09-22T18:23:01Z",
-      "comment_body_sha256": "6171161f6800828e9b4a21f47e2a449384477105dc0b61c03e34968bcabb1e25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155870,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T18:27:24.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-history-delta-visibility",
-        "head_sha": "64bbf14af8ea98602092e8cb27a7b628e1545484",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155601:5781738891:2026-09-22T18:24:04Z:re_review",
       "comment_id": "5781738891",
@@ -33112,6 +33065,39 @@
         "kind": "pull_request",
         "branch": "triage/20260921-layout-prs",
         "head_sha": "6eefffc291b34dbcb8eb1fdc87660075526d8c90",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:359:5781233234:2026-09-23T00:07:56Z:clawsweeper_needs_human",
+      "comment_id": "5781233234",
+      "comment_version_key": "5781233234:2026-09-23T00:07:56Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/359#issuecomment-5781233234",
+      "comment_created_at": "2026-09-22T17:46:24Z",
+      "comment_updated_at": "2026-09-23T00:07:56Z",
+      "comment_body_sha256": "698885455936495b8e22e27c29e567c67931718203529dd1c819a9b9653c26da",
+      "repo": "openclaw/crabpot",
+      "issue_number": 359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve conflicts against current main while preserving its landed campaign postverification and receipt-contract fixes, then mark the PR ready when complete. (sha=9d13ac859d6e454f23faa7557bc9d3ec4e42e646)",
+      "expected_head_sha": "9d13ac859d6e454f23faa7557bc9d3ec4e42e646",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T00:38:13.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-resource-input-pins-20260923",
+        "head_sha": "9d13ac859d6e454f23faa7557bc9d3ec4e42e646",
         "cluster_id": null,
         "job_path": null
       }
