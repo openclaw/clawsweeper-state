@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156209",
+  "mode": "autonomous",
+  "run_id": "35824123161",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35824123161",
+  "head_sha": "bc921e100e1368533259da71693e0c58f150b1f6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156209.md",
+  "published_at": "2026-09-23T06:16:17.809Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156209",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156209",
+  "canonical_pr": null,
+  "summary": "Verified the importer omission in source at preflight main 978791c0cca368690b57dc655a8538a578b49a5e. Prepared a narrow fix artifact. Implementation and runtime reproduction remain blocked in this read-only worker; dependencies are absent. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#156209",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#156209",
+      "candidate_fix": null,
+      "reason": "Only implementation is blocked: the filesystem is read-only, approval escalation is unavailable, and node_modules is absent. The executor must first demonstrate the failing importer round-trip regression on its latest base, then implement and validate the artifact."
+    },
+    {
+      "target": "#156213",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156209",
+      "candidate_fix": null,
+      "reason": "Related portability request with distinct remaining scope; leave open and exclude it from this fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156209",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156209",
+      "candidate_fix": null,
+      "reason": "The source confirms a bounded contract violation with an existing owner and no new API, configuration, backfill, or product decision required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
