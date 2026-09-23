@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-156340
 source: pr_automerge
 requested_by: "vincentkoc"
 requested_by_id: "25068"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/156340#issuecomment-5792241523"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/156340#issuecomment-5793909722"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/156340#issuecomm
 Maintainer opted #156340 into ClawSweeper automerge.
 
 Requested by: vincentkoc
-Request comment: https://github.com/openclaw/openclaw/pull/156340#issuecomment-5792241523
+Request comment: https://github.com/openclaw/openclaw/pull/156340#issuecomment-5793909722
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/156340
@@ -55,4 +55,10 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
 - Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
+
+Maintainer special instructions:
+
+Explicit maintainer decision: resume landing for exact reviewed head `00b97bc6dbbb502fa903275fc4c86a68fe6c8e23` after the successfully recorded pause in https://github.com/openclaw/openclaw/pull/156340#issuecomment-5793881189. Its receiver completed successfully, including the durable control and immutable action ledgers.
+
+Both required `openclaw/ci-gate` entries are SUCCESS: CI https://github.com/openclaw/openclaw/actions/runs/35851547781 and the automatic Security Review aggregate https://github.com/openclaw/openclaw/actions/runs/35853026450. The latest exact-head ClawSweeper review has no actionable/security findings; this explicitly resolves its pause/resume decision. Continue the native guarded squash landing flow.
 
