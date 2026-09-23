@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:26:09.166Z",
+  "updated_at": "2026-09-23T07:26:36.832Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156105:5787864958:2026-09-23T02:24:17Z:re_review",
-      "comment_id": "5787864958",
-      "comment_version_key": "5787864958:2026-09-23T02:24:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156105#issuecomment-5787864958",
-      "comment_created_at": "2026-09-23T02:24:17Z",
-      "comment_updated_at": "2026-09-23T02:24:17Z",
-      "comment_body_sha256": "8e05369f6ec77656b4210d720021c2d0507409b1c13298694633f8d21448060c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156105,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T02:38:06.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-remediation-legacy-session-readiness",
-        "head_sha": "0e4bdf257f1b64db1f150e3dce83df2476bd76f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156105:5787913794:2026-09-23T02:36:26Z:clawsweeper_needs_human",
       "comment_id": "5787913794",
@@ -33924,6 +33877,39 @@
         "kind": "pull_request",
         "branch": "fix/credential-mutation-owner",
         "head_sha": "564d624a920ce58079a078673a7035015ab9e533",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:61:5790790234:2026-09-23T07:24:57Z:clawsweeper_needs_human",
+      "comment_id": "5790790234",
+      "comment_version_key": "5790790234:2026-09-23T07:24:57Z",
+      "comment_url": "https://github.com/openclaw/release-workflows/pull/61#issuecomment-5790790234",
+      "comment_created_at": "2026-09-23T07:24:57Z",
+      "comment_updated_at": "2026-09-23T07:24:57Z",
+      "comment_body_sha256": "d701fe79a9d6896d52990d70df001ed7c52705d42141f5489d9afc1a56b0c5f7",
+      "repo": "openclaw/release-workflows",
+      "issue_number": 61,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=5242432e977781ba402c68a0b427fc63ab575638)",
+      "expected_head_sha": "5242432e977781ba402c68a0b427fc63ab575638",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T07:26:36.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep3/release-1.10.1",
+        "head_sha": "5242432e977781ba402c68a0b427fc63ab575638",
         "cluster_id": null,
         "job_path": null
       }
