@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-79469"
 mode: "autonomous"
-run_id: "35906942432"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35906942432"
+run_id: "35912670873"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35912670873"
 head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T19:51:04.271Z"
+published_at: "2026-09-23T20:38:30.631Z"
 canonical: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35906942432](https://github.com/openclaw/clawsweeper/actions/runs/35906942432)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35912670873](https://github.com/openclaw/clawsweeper/actions/runs/35912670873)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/79469
 
 ## Summary
 
-At main bc5a318e, Gateway session rows expose only the stored reasoning override, and Control UI requires that override to be "on" to show saved reasoning. An inherited configured "on" therefore fails the documented completed-history behavior. The checkout is read-only and has no installed dependencies, so no regression, patch, validation, browser evidence, branch, or PR was produced.
+Current main still projects only the stored reasoning override, while the Control UI requires that override to equal "on" to show saved thinking. The documented inherited-on path is therefore hidden. Implementation is blocked in this read-only checkout, which also lacks dependencies; no red/green test, browser proof, patch, or PR was produced.
 
 ## Impact
 
@@ -66,11 +66,11 @@ At main bc5a318e, Gateway session rows expose only the stored reasoning override
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #79469 | fix_needed | planned | canonical | A narrow repair is needed; the closed predecessor did not land. |
-| #88079 | keep_related | planned | related | Retain its separate streaming investigation. |
-| #117365 | keep_related | planned | related | Useful presentation work outside this bug fix. |
-| #150148 | keep_related | planned | related | Retain as a separate live-streaming path. |
-| cluster:issue-openclaw-openclaw-79469 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only host; the artifact is a plan for a writable executor, not a validated patch. |
+| #79469 | fix_needed | planned | canonical | The configured inherited-on visibility defect remains source-reproducible on current main. |
+| #88079 | keep_related | planned | related | Live streaming and provider parsing require separate validation. |
+| #117365 | keep_related | planned | related | The contributor's disclosure work remains independently useful. |
+| #150148 | keep_related | planned | related | Keep live-stream repair outside this bug-only implementation. |
+| cluster:issue-openclaw-openclaw-79469 | build_fix_artifact | blocked |  | A writable checkout with installed dependencies is required to establish the requested failing regression, implement the fix, validate it, and capture real Gateway/Control UI evidence. |
 
 ## Needs Human
 
