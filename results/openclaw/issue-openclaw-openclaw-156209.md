@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156209"
-mode: "autonomous"
-run_id: "35824123161"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35824123161"
-head_sha: "bc921e100e1368533259da71693e0c58f150b1f6"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "35828587835"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35828587835"
+head_sha: "06fcd2f2b8572d65ed8cf67f95361b9ab0a14f2c"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-23T06:16:17.809Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156209"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156209"
+published_at: "2026-09-23T06:52:22.652Z"
+canonical: "#156209"
+canonical_issue: "#156209"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35824123161](https://github.com/openclaw/clawsweeper/actions/runs/35824123161)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35828587835](https://github.com/openclaw/clawsweeper/actions/runs/35828587835)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156209
+Canonical: #156209
 
 ## Summary
 
-Verified the importer omission in source at preflight main 978791c0cca368690b57dc655a8538a578b49a5e. Prepared a narrow fix artifact. Implementation and runtime reproduction remain blocked in this read-only worker; dependencies are absent. No files or GitHub state changed.
+Plan a narrow importer repair. Source inspection confirms the omission at the preflight main SHA. No files or GitHub state changed; runtime reproduction, tests, and review remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Verified the importer omission in source at preflight main 978791c0cca368690b57d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156209 | fix_needed | blocked | canonical | Only implementation is blocked: the filesystem is read-only, approval escalation is unavailable, and node_modules is absent. The executor must first demonstrate the failing importer round-trip regression on its latest base, then implement and validate the artifact. |
-| #156213 | keep_related | planned | related | Related portability request with distinct remaining scope; leave open and exclude it from this fix. |
-| cluster:issue-openclaw-openclaw-156209 | build_fix_artifact | planned | canonical | The source confirms a bounded contract violation with an existing owner and no new API, configuration, backfill, or product decision required. |
+| #156209 | fix_needed | planned | canonical | Repair the existing import contract with type: concept.type in the output frontmatter. Preserve existing metadata, identifiers, links, filesystem guards, and lifecycle behavior. Reproduce on current main before implementing. |
+| #156213 | keep_related | planned | related | The importer fix does not establish whole-vault OKF conformance. Keep the broader product request separate and open. |
 
 ## Needs Human
 
