@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:10:13.341Z",
+  "updated_at": "2026-09-23T10:10:47.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155468:5789146312:2026-09-23T04:37:57Z:re_review",
-      "comment_id": "5789146312",
-      "comment_version_key": "5789146312:2026-09-23T04:37:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155468#issuecomment-5789146312",
-      "comment_created_at": "2026-09-23T04:37:57Z",
-      "comment_updated_at": "2026-09-23T04:37:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155468,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T04:52:13.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-control-ui-reconnect-continuity",
-        "head_sha": "5e162efcec96b03888a8ec946eaefd044d6f5b26",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155827:5789170099:2026-09-23T04:40:54Z:re_review",
       "comment_id": "5789170099",
@@ -33763,6 +33716,39 @@
         "kind": "pull_request",
         "branch": "fix/lifecycle-coordinator-lock-cleanup",
         "head_sha": "5824fb426d1b7ac1ede77525986012a62259df98",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156386:5792894139:2026-09-23T10:07:01Z:clawsweeper_needs_human",
+      "comment_id": "5792894139",
+      "comment_version_key": "5792894139:2026-09-23T10:07:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156386#issuecomment-5792894139",
+      "comment_created_at": "2026-09-23T10:07:01Z",
+      "comment_updated_at": "2026-09-23T10:07:01Z",
+      "comment_body_sha256": "81180620a362a64a5c9dca20053f52f2fdb33797a9cd16e07612e143ea1087a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete final-head test validation and timing evidence, then obtain vincentkoc’s explicitly reserved approval to release the draft/CI hold and merge. (sha=670025103b5d086f54c7d66b6e12c1e701b909b0)",
+      "expected_head_sha": "670025103b5d086f54c7d66b6e12c1e701b909b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:10:47.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/line-suite-cleanup-20260923",
+        "head_sha": "670025103b5d086f54c7d66b6e12c1e701b909b0",
         "cluster_id": null,
         "job_path": null
       }
