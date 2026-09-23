@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133922"
 mode: "autonomous"
-run_id: "35807349049"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35807349049"
+run_id: "35811739114"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35811739114"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T02:36:29.088Z"
+published_at: "2026-09-23T03:40:52.564Z"
 canonical: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/133922"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35807349049](https://github.com/openclaw/clawsweeper/actions/runs/35807349049)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35811739114](https://github.com/openclaw/clawsweeper/actions/runs/35811739114)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133922
 
 ## Summary
 
-Source inspection supports a narrow native Ollama classification and delivery fix. Implementation is blocked on this read-only host with dependencies absent. No runtime regression, Telegram proof, code changes, or GitHub mutations were performed.
+Source inspection supports a narrow native Ollama classification repair. Implementation and reproduction are blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed; no runtime or Telegram proof completed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Source inspection supports a narrow native Ollama classification and delivery fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133922 | fix_needed | planned | canonical | Preserve this issue as the canonical bug report. Establish the registered-stream/subscriber regression before changing production behavior. |
-| #109057 | keep_closed | skipped | related | Historical provider repair; retain contributor credit and reuse its established commentary contract. |
-| #13944 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation must run on a writable executor and stop if the required failing regression cannot be established. |
+| #133922 | fix_needed | planned | canonical | Keep the issue open and prepare a reproduction-first repair. Source evidence is insufficient to claim the required current-main runtime reproduction or the reporter's exact upgrade regression. |
+| #109057 | keep_closed | skipped | related | Related merged implementation context, not a fix covering native Ollama or an open mutation target. |
+| #13944 | keep_closed | skipped | related | Historical symptom context only; no reopening or closure action. |
+| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | The executor can use this conditional repair plan on a writable, provisioned checkout. Do not implement or publish unless the required current-main boundary regression fails first. |
 
 ## Needs Human
 
