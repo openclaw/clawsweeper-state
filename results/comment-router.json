@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-23T03:11:38.346Z",
+  "updated_at": "2026-09-23T03:12:48.582Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155937:5783762256:2026-09-22T20:37:44Z:re_review",
-      "comment_id": "5783762256",
-      "comment_version_key": "5783762256:2026-09-22T20:37:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/155937#issuecomment-5783762256",
-      "comment_created_at": "2026-09-22T20:37:44Z",
-      "comment_updated_at": "2026-09-22T20:37:44Z",
-      "comment_body_sha256": "466736b10f582e2b1774163c92d57758af53091c54c85278b9f5c879f4988405",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155937,
-      "author": "fduch-stranger",
-      "author_id": 6566845,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T20:38:38.851Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155907:5783790533:2026-09-22T20:39:46Z:re_review",
       "comment_id": "5783790533",
@@ -33047,6 +33002,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155799:5780030671:2026-09-23T03:11:45Z:clawsweeper_needs_human",
+      "comment_id": "5780030671",
+      "comment_version_key": "5780030671:2026-09-23T03:11:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155799#issuecomment-5780030671",
+      "comment_created_at": "2026-09-22T16:20:27Z",
+      "comment_updated_at": "2026-09-23T03:11:45Z",
+      "comment_body_sha256": "7ef7e7c917e99dbab130572002c42b067f5b5c14fd39fb54fe99ee63fcc8fa6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155799,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The direct real-loopback trace supports the shared probe's approximately 50 ms timeout. The new observeUpdateGatewayReadiness transcri... (sha=d48a577f4177d73d99aca08515ec9a0a983d833a)",
+      "expected_head_sha": "d48a577f4177d73d99aca08515ec9a0a983d833a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T03:12:48.582Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-readiness-deadline-monotonic-086",
+        "head_sha": "d48a577f4177d73d99aca08515ec9a0a983d833a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
