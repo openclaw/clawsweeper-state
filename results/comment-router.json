@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T04:13:16.778Z",
+  "updated_at": "2026-09-23T04:13:59.809Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128848:5784589357:2026-09-22T21:37:35Z:re_review",
-      "comment_id": "5784589357",
-      "comment_version_key": "5784589357:2026-09-22T21:37:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128848#issuecomment-5784589357",
-      "comment_created_at": "2026-09-22T21:37:35Z",
-      "comment_updated_at": "2026-09-22T21:37:35Z",
-      "comment_body_sha256": "1110ea978fb2abc1d67b0a723a7014d2525b1918ae93cd5196d47d191f772e2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128848,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T21:38:38.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-idle-ttl",
-        "head_sha": "6d6db6d50e6d1e77507f7eca7e7e575e322fbdcd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155969:5784605198:2026-09-22T21:38:35Z:clawsweeper_needs_human",
       "comment_id": "5784605198",
@@ -33036,6 +32989,39 @@
         "kind": "pull_request",
         "branch": "sjf/agentsapi-openai-sdk",
         "head_sha": "8ca4a7898f5f7440ce532817027bb8b3ec9e519e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154923:5763360998:2026-09-23T04:12:41Z:clawsweeper_needs_human",
+      "comment_id": "5763360998",
+      "comment_version_key": "5763360998:2026-09-23T04:12:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154923#issuecomment-5763360998",
+      "comment_created_at": "2026-09-21T15:51:09Z",
+      "comment_updated_at": "2026-09-23T04:12:41Z",
+      "comment_body_sha256": "b6cb72d6544429d7e41f20fec62329704658b7fca6f369a388aba54fa1bff63a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge. The reported passing test exercises production bootstrap preparation and finalization with real workspa... (sha=b48c2fb42b35790ac208ebc78e3ee2a8462f6aa1)",
+      "expected_head_sha": "b48c2fb42b35790ac208ebc78e3ee2a8462f6aa1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T04:13:59.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/continuation-skip-bootstrap-marker",
+        "head_sha": "b48c2fb42b35790ac208ebc78e3ee2a8462f6aa1",
         "cluster_id": null,
         "job_path": null
       }
