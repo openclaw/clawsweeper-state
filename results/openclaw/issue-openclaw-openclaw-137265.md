@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137265"
-mode: "autonomous"
-run_id: "35824631601"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35824631601"
-head_sha: "bc921e100e1368533259da71693e0c58f150b1f6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T06:43:42.123Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137265"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137265"
+mode: "plan"
+run_id: "35828585109"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35828585109"
+head_sha: "06fcd2f2b8572d65ed8cf67f95361b9ab0a14f2c"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T06:53:01.713Z"
+canonical: "#137265"
+canonical_issue: "#137265"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35824631601](https://github.com/openclaw/clawsweeper/actions/runs/35824631601)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35828585109](https://github.com/openclaw/clawsweeper/actions/runs/35828585109)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/137265
+Canonical: #137265
 
 ## Summary
 
-Source inspection confirms the text-block omission in the available checkout. Implementation and persisted-transcript reproduction are blocked by the read-only host, missing dependencies, and unavailable preflight main commit. A narrow executor fix plan is provided; no files or GitHub state were changed.
+Plan a narrow session text-block extraction fix. Source inspection supports the reported omission on the preflight main commit; persisted-transcript reproduction and indexing validation remain required. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source inspection confirms the text-block omission in the available checkout. Im
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137265 | fix_needed | blocked | canonical | Implementation requires a writable executor with current main and dependencies. First demonstrate the failing persisted-transcript regression; do not publish based solely on source inspection. |
-| #137937 | keep_closed | skipped | related | Preserve contributor attribution and carry the outstanding proof requirements into the new implementation plan. |
-| cluster:issue-openclaw-openclaw-137265 | build_fix_artifact | planned |  | The source-supported defect has a narrow repair path with no new configuration, schema, dependency, or product-policy requirement. |
+| #137265 | fix_needed | planned | canonical | A focused repair is appropriate, conditional on executable reproduction against current main. Keep the issue open; closure and merge are prohibited. |
+| #137937 | keep_closed | skipped | related | Historical implementation and credit context only; do not reopen, close again, or treat it as merged. |
 
 ## Needs Human
 
