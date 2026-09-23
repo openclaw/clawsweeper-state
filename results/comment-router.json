@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-23T09:33:02.532Z",
+  "updated_at": "2026-09-23T09:29:53.253Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156142:5788722111:2026-09-23T03:57:14Z:re_review",
+      "comment_id": "5788722111",
+      "comment_version_key": "5788722111:2026-09-23T03:57:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156142#issuecomment-5788722111",
+      "comment_created_at": "2026-09-23T03:57:14Z",
+      "comment_updated_at": "2026-09-23T03:57:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156142,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T03:58:05.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scorecard-gateway-distinct-identities",
+        "head_sha": "5818623efb1eacb74e4a4f172f1aee4b21697f67",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116677:5139639947:2026-09-23T03:55:13Z:clawsweeper_auto_repair",
       "comment_id": "5139639947",
@@ -34042,65 +34089,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156343:5792277920:2026-09-23T09:22:06Z:automerge",
-      "comment_id": "5792277920",
-      "comment_version_key": "5792277920:2026-09-23T09:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156343#issuecomment-5792277920",
-      "comment_created_at": "2026-09-23T09:22:06Z",
-      "comment_updated_at": "2026-09-23T09:22:06Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156343,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T09:32:53.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/diagnostics-harness-commentary-20260923",
-        "head_sha": "d5f7d1251967f7446f060999bf62b452f497242b",
-        "cluster_id": "automerge-openclaw-openclaw-156343",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156343.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156343.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
