@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T09:29:53.253Z",
+  "updated_at": "2026-09-23T09:33:20.838Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156142:5788722111:2026-09-23T03:57:14Z:re_review",
-      "comment_id": "5788722111",
-      "comment_version_key": "5788722111:2026-09-23T03:57:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156142#issuecomment-5788722111",
-      "comment_created_at": "2026-09-23T03:57:14Z",
-      "comment_updated_at": "2026-09-23T03:57:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156142,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T03:58:05.131Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scorecard-gateway-distinct-identities",
-        "head_sha": "5818623efb1eacb74e4a4f172f1aee4b21697f67",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116677:5139639947:2026-09-23T03:55:13Z:clawsweeper_auto_repair",
       "comment_id": "5139639947",
@@ -34086,6 +34039,39 @@
         "kind": "pull_request",
         "branch": "codex/share-card-widget-redesign",
         "head_sha": "4fddf829372a6cbeecc489034d7e67dc3083a483",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156221:5792334982:2026-09-23T09:26:24Z:clawsweeper_needs_human",
+      "comment_id": "5792334982",
+      "comment_version_key": "5792334982:2026-09-23T09:26:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156221#issuecomment-5792334982",
+      "comment_created_at": "2026-09-23T09:26:24Z",
+      "comment_updated_at": "2026-09-23T09:26:24Z",
+      "comment_body_sha256": "ef22ada0c14afb463aa294c7444a0462bfd8f9c5a11c7856f848d2bf18930965",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156221,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=a8e7ebe53f5e89ef937f7be66a412506de8230b5)",
+      "expected_head_sha": "a8e7ebe53f5e89ef937f7be66a412506de8230b5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T09:33:20.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/session-selection-once",
+        "head_sha": "a8e7ebe53f5e89ef937f7be66a412506de8230b5",
         "cluster_id": null,
         "job_path": null
       }
