@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T21:09:20.495Z",
+  "updated_at": "2026-09-23T21:09:40.664Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156411:5793069079:2026-09-23T12:38:00Z:clawsweeper_needs_human",
-      "comment_id": "5793069079",
-      "comment_version_key": "5793069079:2026-09-23T12:38:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156411#issuecomment-5793069079",
-      "comment_created_at": "2026-09-23T10:19:59Z",
-      "comment_updated_at": "2026-09-23T12:38:00Z",
-      "comment_body_sha256": "467f0c94c9f91c06d7a619fab26eea321bf896e45e08b281c5606969cab010cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156411,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=25ebbedfdc25472343c307d7349066820205f65d)",
-      "expected_head_sha": "25ebbedfdc25472343c307d7349066820205f65d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T13:03:31.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-plugin-navigation-selection",
-        "head_sha": "25ebbedfdc25472343c307d7349066820205f65d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156420:5793092408:2026-09-23T12:59:47Z:clawsweeper_needs_human",
       "comment_id": "5793092408",
@@ -33592,6 +33559,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145133:5802961583:2026-09-23T21:08:33Z:re_review",
+      "comment_id": "5802961583",
+      "comment_version_key": "5802961583:2026-09-23T21:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145133#issuecomment-5802961583",
+      "comment_created_at": "2026-09-23T21:08:33Z",
+      "comment_updated_at": "2026-09-23T21:08:33Z",
+      "comment_body_sha256": "703b90777bce337d29492c03559187cac34091d278683c0ff05bc0bafe074c84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145133,
+      "author": "abacha",
+      "author_id": 215016,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T21:09:39.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/119382-ingress-lane-release",
+        "head_sha": "e90b4fe6f7a903ff995e1d4f03bcc4c2a4edde8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
