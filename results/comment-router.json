@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:26:22.704Z",
+  "updated_at": "2026-09-23T10:26:47.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3742:5789708605:2026-09-23T05:41:36Z:re_review",
-      "comment_id": "5789708605",
-      "comment_version_key": "5789708605:2026-09-23T05:41:36Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3742#issuecomment-5789708605",
-      "comment_created_at": "2026-09-23T05:41:36Z",
-      "comment_updated_at": "2026-09-23T05:41:36Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3742,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T05:42:38.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/endor-plugin-scan-pipeline",
-        "head_sha": "6abbf61327d4564c0c706b1eaeda27efb2df8a3e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2508:5789749391:2026-09-23T05:46:27Z:clawsweeper_needs_human",
       "comment_id": "5789749391",
@@ -33680,6 +33633,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156389:5793138069:2026-09-23T10:25:08Z:re_review",
+      "comment_id": "5793138069",
+      "comment_version_key": "5793138069:2026-09-23T10:25:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156389#issuecomment-5793138069",
+      "comment_created_at": "2026-09-23T10:25:08Z",
+      "comment_updated_at": "2026-09-23T10:25:08Z",
+      "comment_body_sha256": "52f969d69c5095b72738ebb9d1682eee27f5c93a02920ad0f7b52dbf2e071d91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156389,
+      "author": "Olli0103",
+      "author_id": 51629451,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — both review findings are addressed on head `8eeb4ffe9b`: unique commentary identities (`commentary-<index>-<entropy>`, mirroring the shared phase helper) with a two-tool-round test, and the native-ollama pending-phase guard in the subscriber so early unsigned text is withheld from durable block replies. all four gates pass; the pr body carries the updated evidence and the one ask that needs repository access (the mantis capture for real native-ollama proof)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T10:26:45.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-pretool-commentary-133922",
+        "head_sha": "8eeb4ffe9b24188bf5cac0d1e3f807c489d9874d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
