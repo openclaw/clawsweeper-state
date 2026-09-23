@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 23, 2026, 18:49 UTC
+Last source update: Sep 23, 2026, 18:52 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1171 | 100% |
-| Run attempts archived | 3509 | audit |
+| Run attempts archived | 3510 | audit |
 | Latest successful clusters | 990 | 84.5% |
 | Latest failed clusters | 178 | 15.2% |
 | Latest cancelled clusters | 3 | 0.3% |
@@ -118,7 +118,7 @@ State: Failed clusters need inspection
 - Latest records: 1171 clusters: 341 maintainer action, 343 automation snapshot, 438 intervention needed, 49 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119687](https://github.com/openclaw/openclaw/issues/119687) is maintainer_input: Route this exact item to central OpenClaw security handling without public mutation or branch adoption. Its historical context does not b....
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-111595](cluster:issue-openclaw-openclaw-111595) is automation_failed: Implementation, failing-regression proof, browser screenshots, measured test costs, and validation require a writable prepared executor c....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#79469](https://github.com/openclaw/openclaw/issues/79469) is action_planned: Keep the issue as the canonical bug and prepare one narrow implementation path..
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#79469](https://github.com/openclaw/openclaw/pull/79469) is action_planned: The issue remains open and the prior repair PR closed without merging..
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
@@ -167,7 +167,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#79469](https://github.com/openclaw/openclaw/issues/79469) | action_planned | Keep the issue as the canonical bug and prepare one narrow implementation path. | Sep 23, 2026, 18:49 UTC | [issue-openclaw-openclaw-79469](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79469.md) | [35900032565](https://github.com/openclaw/clawsweeper/actions/runs/35900032565) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#79469](https://github.com/openclaw/openclaw/pull/79469) | action_planned | The issue remains open and the prior repair PR closed without merging. | Sep 23, 2026, 18:52 UTC | [issue-openclaw-openclaw-79469](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79469.md) | [35904928385](https://github.com/openclaw/clawsweeper/actions/runs/35904928385) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#128301](https://github.com/openclaw/openclaw/pull/128301) | action_planned | First add a failing regression through the registered listener and real monitor context, then implement and validate the diagnostic without changin... | Sep 23, 2026, 17:48 UTC | [issue-openclaw-openclaw-128301](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-128301.md) | [35897510305](https://github.com/openclaw/clawsweeper/actions/runs/35897510305) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#156520](https://github.com/openclaw/openclaw/pull/156520) | action_planned | The diagnostic flood remains a distinct bug with a narrow fix path. Implementation must first reproduce it on current main; closure and merge are p... | Sep 23, 2026, 16:37 UTC | [issue-openclaw-openclaw-156520](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-156520.md) | [35876337268](https://github.com/openclaw/clawsweeper/actions/runs/35876337268) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#156359](https://github.com/openclaw/openclaw/pull/156359) | action_planned | This is a bounded, unfixed adapter integration gap. Keep the issue open and prepare one implementation PR after reproducing the defect and completi... | Sep 23, 2026, 10:41 UTC | [issue-openclaw-openclaw-156359](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-156359.md) | [35849891558](https://github.com/openclaw/clawsweeper/actions/runs/35849891558) |
