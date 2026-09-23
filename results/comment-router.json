@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T06:06:25.737Z",
+  "updated_at": "2026-09-23T06:06:29.023Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150153:5700958005:2026-09-23T00:19:21Z:clawsweeper_auto_repair",
-      "comment_id": "5700958005",
-      "comment_version_key": "5700958005:2026-09-23T00:19:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150153#issuecomment-5700958005",
-      "comment_created_at": "2026-09-16T16:31:47Z",
-      "comment_updated_at": "2026-09-23T00:19:21Z",
-      "comment_body_sha256": "dba13a65c5990bdcd434e81ae58111be773f7188cecbfd436a30e6bead918f4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150153,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5dc7317102c8f033ed86d081dfc5c92bd0055dee)",
-      "expected_head_sha": "5dc7317102c8f033ed86d081dfc5c92bd0055dee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T00:20:41.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/task-recovery-reduction",
-        "head_sha": "5dc7317102c8f033ed86d081dfc5c92bd0055dee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156021:5786431461:2026-09-23T00:19:56Z:clawsweeper_needs_human",
       "comment_id": "5786431461",
@@ -33853,6 +33820,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155799:5789946370:2026-09-23T06:05:27Z:re_review",
+      "comment_id": "5789946370",
+      "comment_version_key": "5789946370:2026-09-23T06:05:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155799#issuecomment-5789946370",
+      "comment_created_at": "2026-09-23T06:05:27Z",
+      "comment_updated_at": "2026-09-23T06:05:27Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155799,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T06:06:27.291Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-readiness-deadline-monotonic-086",
+        "head_sha": "321a3d425988a3ab8a6670583035927b751d3393",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
