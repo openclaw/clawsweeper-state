@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133922"
-mode: "autonomous"
-run_id: "35815850544"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35815850544"
-head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T04:42:49.296Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133922"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133922"
+mode: "plan"
+run_id: "35819043424"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35819043424"
+head_sha: "438cd3b870ca4355a6e78eaf4e4e94b162170f96"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T04:44:04.329Z"
+canonical: "#133922"
+canonical_issue: "#133922"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35815850544](https://github.com/openclaw/clawsweeper/actions/runs/35815850544)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35819043424](https://github.com/openclaw/clawsweeper/actions/runs/35819043424)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/133922
+Canonical: #133922
 
 ## Summary
 
-Source inspection supports the native Ollama classification gap. Implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. The checkout also differs from preflight main. A narrow, reproduction-gated fix artifact is prepared; no files or GitHub state were changed.
+Plan a narrow native Ollama commentary repair. The clean checkout matches preflight main 6055b40ef35cb6bbed93bfc15c80e3df82095517. Source inspection supports the reported classification and early-block delivery gap; runtime reproduction remains required before implementation. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection supports the native Ollama classification gap. Implementation 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133922 | fix_needed | planned | canonical | A bounded producer/subscriber repair remains plausible; retain the issue while the executor establishes the required regression. |
-| #109057 | keep_closed | skipped | related | Preserve as historical implementation and contributor-credit context. |
-| #13944 | keep_closed | skipped | related | Historical symptom context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-133922 | build_fix_artifact | planned |  | Artifact preparation is possible; implementation must resume on a writable executor after reconciling main and establishing the boundary regression. |
+| https://github.com/openclaw/openclaw/issues/133922 | fix_needed | planned | canonical | Retain the canonical issue and prepare one reproduction-gated fix. Neither the exact August upgrade configuration nor the user-visible Telegram repair has been proven. |
+| https://github.com/openclaw/openclaw/pull/109057 | keep_closed | skipped | related | Historical contract and contributor-credit context; no action on the merged PR. |
+| https://github.com/openclaw/openclaw/issues/13944 | keep_closed | skipped | related | Related historical symptoms do not establish a duplicate root cause. |
 
 ## Needs Human
 
