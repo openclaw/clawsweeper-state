@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T00:38:13.581Z",
+  "updated_at": "2026-09-23T00:38:14.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155601:5781738891:2026-09-22T18:24:04Z:re_review",
-      "comment_id": "5781738891",
-      "comment_version_key": "5781738891:2026-09-22T18:24:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155601#issuecomment-5781738891",
-      "comment_created_at": "2026-09-22T18:24:04Z",
-      "comment_updated_at": "2026-09-22T18:24:04Z",
-      "comment_body_sha256": "5d0ce2c5880f1b7128f9b73856d66739fa40e99fdb78dbb4d42f7af9f579346f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155601,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T18:27:24.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-cold-group-main",
-        "head_sha": "e3dc255f87a5375c207979d29575f6d275623688",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153340:5781758104:2026-09-22T18:25:24Z:re_review",
       "comment_id": "5781758104",
@@ -33098,6 +33051,39 @@
         "kind": "pull_request",
         "branch": "feat/plugin-resource-input-pins-20260923",
         "head_sha": "9d13ac859d6e454f23faa7557bc9d3ec4e42e646",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147281:5655384396:2026-09-23T00:36:28Z:clawsweeper_needs_human",
+      "comment_id": "5655384396",
+      "comment_version_key": "5655384396:2026-09-23T00:36:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147281#issuecomment-5655384396",
+      "comment_created_at": "2026-09-13T18:58:57Z",
+      "comment_updated_at": "2026-09-23T00:36:28Z",
+      "comment_body_sha256": "4af302a9fd7503cac266f5f81a13bcde123f5dcb8c213bc5c93ae7995e2721e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147281,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed retirement and failure-reporting paths have not completed the recorded installed-updater acceptance. Existing installations could therefore encounter an unverified cleanup... (sha=b5e698ec4771348b2fdc4189598117269f7bf475)",
+      "expected_head_sha": "b5e698ec4771348b2fdc4189598117269f7bf475",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T00:38:14.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/doctor-lint-state-cleanup",
+        "head_sha": "b5e698ec4771348b2fdc4189598117269f7bf475",
         "cluster_id": null,
         "job_path": null
       }
