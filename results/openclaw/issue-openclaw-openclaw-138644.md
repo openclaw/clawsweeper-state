@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "plan"
-run_id: "35820481323"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35820481323"
-head_sha: "438cd3b870ca4355a6e78eaf4e4e94b162170f96"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-23T05:34:18.606Z"
-canonical: "#138644"
-canonical_issue: "#138644"
+mode: "autonomous"
+run_id: "35832286963"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35832286963"
+head_sha: "533447b122055e6a783b605586b9e2cd11d8d0e0"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-23T08:30:57.789Z"
+canonical: "https://github.com/openclaw/openclaw/issues/138644"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
-actions_total: 5
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35820481323](https://github.com/openclaw/clawsweeper/actions/runs/35820481323)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35832286963](https://github.com/openclaw/clawsweeper/actions/runs/35832286963)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #138644
+Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Plan a narrow compaction-state handoff repair. Source inspection at preflight main 59cdcf7c7f0044394348a069c752a6f7393ba866 supports the reported disconnect. No edits, executable reproduction, tests, or GitHub mutations were performed; the checkout is read-only and dependencies are absent.
+Confirmed the compaction-to-watchdog handoff gap by source inspection at preflight main 741a1c84cde99000a3fba8a67c1c96ecfda6fee4. Prepared a narrow repair artifact. Implementation and executable reproduction are blocked by the read-only host and missing node_modules; no changes or GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,13 @@ Plan a narrow compaction-state handoff repair. Source inspection at preflight ma
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | Prepare one implementation on the designated branch, conditional on a failing regression through the current plugin execution path before production edits. |
-| #40982 | keep_related | planned | related | Recognizing active compaction does not resolve untracked silence or authorize changing timeout defaults. |
-| #137294 | keep_related | planned | related | Different execution path and watchdog owner; the job explicitly excludes ingress watchdog changes. |
-| #125045 | keep_closed | skipped | related | Historical evidence for a distinct profile-selection defect. |
-| #139009 | keep_closed | skipped | related | Preserve Finn763's reference-work credit without treating this as a landed fix or an active branch to repair. |
+| #138644 | fix_needed | planned | canonical | A narrow existing-behavior repair is supported by source evidence; the required failing execution regression must precede implementation. |
+| #40982 | keep_related | planned | related | Distinct timeout-policy scope; leave open without expanding this repair. |
+| #137294 | keep_related | planned | related | Different watchdog and lifecycle owner; explicitly excluded from this job. |
+| #125045 | keep_closed | skipped | related | Historical context only. |
+| #139009 | keep_closed | skipped | related | Closed-unmerged reference work, not an active canonical PR or validated fix. |
+| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | Prepare one new issue implementation PR using the designated branch, contingent on reproducing the defect first. |
+| cluster:issue-openclaw-openclaw-138644 | open_fix_pr | blocked | canonical | The executor needs a writable checkout to reproduce, implement, validate, and review the repair before opening or updating the designated PR. |
 
 ## Needs Human
 
