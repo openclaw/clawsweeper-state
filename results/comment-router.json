@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T00:31:45.159Z",
+  "updated_at": "2026-09-23T00:31:47.587Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155587:5781565730:2026-09-22T18:10:57Z:re_review",
-      "comment_id": "5781565730",
-      "comment_version_key": "5781565730:2026-09-22T18:10:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155587#issuecomment-5781565730",
-      "comment_created_at": "2026-09-22T18:10:57Z",
-      "comment_updated_at": "2026-09-22T18:10:57Z",
-      "comment_body_sha256": "b500f96975acec4ed258ca9023d9b5fc7f330d94e81b48bc58284f50363f3ac9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155587,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T18:12:17.524Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-telegram-cold-group",
-        "head_sha": "a363ece68002fe676ea3d5eecd158249bb055a0c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155601:5781566025:2026-09-22T18:10:59Z:re_review",
       "comment_id": "5781566025",
@@ -33188,6 +33141,39 @@
         "kind": "pull_request",
         "branch": "fix/config-write-stringify-stack",
         "head_sha": "0574e896fe2a637d6cd581bf1ad61055719d85fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154390:5755302974:2026-09-23T00:30:27Z:clawsweeper_needs_human",
+      "comment_id": "5755302974",
+      "comment_version_key": "5755302974:2026-09-23T00:30:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154390#issuecomment-5755302974",
+      "comment_created_at": "2026-09-21T04:15:41Z",
+      "comment_updated_at": "2026-09-23T00:30:27Z",
+      "comment_body_sha256": "835af72f1eb558019c055fbd9453847351cd9237b6f1ba65a079fbf0fe3e2570",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154390,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fresh deployment and existing-placement upgrade/rollback remain unqualified: older nodes reject nativeInferenceConfig, and older Gateway code can interpret retained runtime-local plac... (sha=49093ccd09935f04a8fccb1ce452cc97b5c8f9aa)",
+      "expected_head_sha": "49093ccd09935f04a8fccb1ce452cc97b5c8f9aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T00:31:47.587Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/builtin-runtime-harness-server",
+        "head_sha": "49093ccd09935f04a8fccb1ce452cc97b5c8f9aa",
         "cluster_id": null,
         "job_path": null
       }
