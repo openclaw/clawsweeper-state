@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:16:18.970Z",
+  "updated_at": "2026-09-23T12:16:22.941Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153187:5746000231:2026-09-19T23:08:01Z:re_review",
-      "comment_id": "5746000231",
-      "comment_version_key": "5746000231:2026-09-19T23:08:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153187#issuecomment-5746000231",
-      "comment_created_at": "2026-09-19T23:08:01Z",
-      "comment_updated_at": "2026-09-19T23:08:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153187,
-      "author": "jb510",
-      "author_id": 801241,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T06:57:46.102Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153187:5785758176:2026-09-22T23:06:14Z:re_review",
       "comment_id": "5785758176",
@@ -33615,6 +33588,39 @@
       "status": "skipped",
       "processed_at": "2026-09-23T12:16:18.970Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152489:5739416983:2026-09-23T12:10:36Z:clawsweeper_auto_repair",
+      "comment_id": "5739416983",
+      "comment_version_key": "5739416983:2026-09-23T12:10:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152489#issuecomment-5739416983",
+      "comment_created_at": "2026-09-19T04:42:43Z",
+      "comment_updated_at": "2026-09-23T12:10:36Z",
+      "comment_body_sha256": "320d06ee6c7204ed9bd6c32a3e11d88cbb91afa7ad9d2e8830e9f60eba1d99f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5caf8e01a436b7ce0fa5bb6718a41918aeb0e1ce)",
+      "expected_head_sha": "5caf8e01a436b7ce0fa5bb6718a41918aeb0e1ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T12:16:22.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-152360-llm-complete-profile-failover",
+        "head_sha": "5caf8e01a436b7ce0fa5bb6718a41918aeb0e1ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
