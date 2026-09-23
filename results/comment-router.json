@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T02:34:28.392Z",
+  "updated_at": "2026-09-23T02:34:41.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149882:5782811570:2026-09-22T19:40:02Z:re_review",
-      "comment_id": "5782811570",
-      "comment_version_key": "5782811570:2026-09-22T19:40:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149882#issuecomment-5782811570",
-      "comment_created_at": "2026-09-22T19:40:02Z",
-      "comment_updated_at": "2026-09-22T19:40:02Z",
-      "comment_body_sha256": "3cc45d016d7f553bd0c80b366ab16d07f7ae01485dc409b3d3e080f59737173c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149882,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T19:41:23.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/freebsd-foreground-update",
-        "head_sha": "c593ba4bc541322ce8e0fcc4ebc6243bdae534f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:2492:5782822016:2026-09-22T19:40:48Z:re_review",
       "comment_id": "5782822016",
@@ -33027,6 +32980,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156108:5787954248:2026-09-23T02:33:50Z:clawsweeper_needs_human",
+      "comment_id": "5787954248",
+      "comment_version_key": "5787954248:2026-09-23T02:33:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156108#issuecomment-5787954248",
+      "comment_created_at": "2026-09-23T02:33:50Z",
+      "comment_updated_at": "2026-09-23T02:33:50Z",
+      "comment_body_sha256": "bfaf98e4df92cb6c4913cb07ab8abf380a8eefdc7950c84d788a32f3ebad6907",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=0225c5668e386b52319698bc1881df09a1c722c3)",
+      "expected_head_sha": "0225c5668e386b52319698bc1881df09a1c722c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T02:34:41.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-sqlite-metadata",
+        "head_sha": "0225c5668e386b52319698bc1881df09a1c722c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
