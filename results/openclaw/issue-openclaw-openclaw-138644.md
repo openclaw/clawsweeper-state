@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "autonomous"
-run_id: "35832286963"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35832286963"
-head_sha: "533447b122055e6a783b605586b9e2cd11d8d0e0"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T08:30:57.789Z"
+mode: "plan"
+run_id: "35839118493"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35839118493"
+head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T09:04:29.390Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
-actions_total: 7
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35832286963](https://github.com/openclaw/clawsweeper/actions/runs/35832286963)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35839118493](https://github.com/openclaw/clawsweeper/actions/runs/35839118493)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Confirmed the compaction-to-watchdog handoff gap by source inspection at preflight main 741a1c84cde99000a3fba8a67c1c96ecfda6fee4. Prepared a narrow repair artifact. Implementation and executable reproduction are blocked by the read-only host and missing node_modules; no changes or GitHub mutations were made.
+Plan a narrow compaction-state handoff to the existing bounded watchdog grace. Source inspection at preflight main e331b970664a4f8b923e136e348b0e47f98cbe81 supports the reported disconnect. No files or GitHub state changed; failing regression, implementation, and validation remain execution gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,11 @@ Confirmed the compaction-to-watchdog handoff gap by source inspection at preflig
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | A narrow existing-behavior repair is supported by source evidence; the required failing execution regression must precede implementation. |
-| #40982 | keep_related | planned | related | Distinct timeout-policy scope; leave open without expanding this repair. |
-| #137294 | keep_related | planned | related | Different watchdog and lifecycle owner; explicitly excluded from this job. |
-| #125045 | keep_closed | skipped | related | Historical context only. |
-| #139009 | keep_closed | skipped | related | Closed-unmerged reference work, not an active canonical PR or validated fix. |
-| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | Prepare one new issue implementation PR using the designated branch, contingent on reproducing the defect first. |
-| cluster:issue-openclaw-openclaw-138644 | open_fix_pr | blocked | canonical | The executor needs a writable checkout to reproduce, implement, validate, and review the repair before opening or updating the designated PR. |
+| #138644 | fix_needed | planned | canonical | A focused bug repair is justified. First prove premature termination through the current plugin execution path; stop implementation if that regression cannot reproduce. |
+| #40982 | keep_related | planned | related | Changing watchdog policy is distinct from recognizing already-supported compaction activity and is outside this repair. |
+| #137294 | keep_related | planned | related | This is a separate watchdog and execution flow; the job explicitly excludes ingress changes. |
+| #125045 | keep_closed | skipped | related | Historical context for a distinct profile-selection defect; no closure or reopening action. |
+| #139009 | keep_closed | skipped | related | Retain as credited historical reference. Its closed state, failed checks, and uneditable branch do not establish a landed or validated fix. |
 
 ## Needs Human
 
