@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "plan"
-run_id: "35855166305"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35855166305"
+mode: "autonomous"
+run_id: "35854417207"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35854417207"
 head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-23T12:15:45.639Z"
-canonical: "#138644"
-canonical_issue: "#138644"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-23T12:45:53.849Z"
+canonical: "https://github.com/openclaw/openclaw/issues/138644"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35855166305](https://github.com/openclaw/clawsweeper/actions/runs/35855166305)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35854417207](https://github.com/openclaw/clawsweeper/actions/runs/35854417207)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #138644
+Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Plan a narrow compaction-state handoff into the existing bounded watchdog grace. Checkout matches preflight main 317054d42739986ac5bbcf119554698ba0c3a1da. No files or GitHub state changed; executable reproduction and validation remain pending.
+Source inspection confirms the missing compaction-to-watchdog handoff on preflight main b4111411166741032e32f362b4f765c9dfafff64. A narrow fix artifact is prepared. Implementation and the required failing regression are blocked by the read-only sandbox and absent dependencies; no code or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Plan a narrow compaction-state handoff into the existing bounded watchdog grace.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | A focused bug repair is warranted, conditional on first demonstrating premature termination through the current plugin execution path. |
-| #40982 | keep_related | planned | related | Timeout-default policy differs from recognizing an existing compaction lifecycle; leave this adjacent request outside the repair. |
-| #137294 | keep_related | planned | related | Different timeout owner and execution path; explicitly excluded by this job. |
-| #125045 | keep_closed | skipped | related | Historical context for a different mechanism; no action required. |
-| #139009 | keep_closed | skipped | related | Closed-unmerged reference work, not a landed fix or active repair owner. Preserve attribution without reopening or closing it. |
+| #138644 | fix_needed | planned | canonical | The bug has a narrow existing-owner repair path. The executor must demonstrate the failing regression before implementation. |
+| #40982 | keep_related | planned | related | Distinct product-policy scope; leave open and outside this implementation. |
+| #137294 | keep_related | planned | related | Different watchdog and lifecycle owner; no ingress changes belong in this fix. |
+| #125045 | keep_closed | skipped | related | Historical context only. |
+| #139009 | keep_closed | skipped | related | Closed-unmerged reference work only. Preserve attribution in the new issue implementation; do not reopen, close, or treat it as a landed fix. |
+| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned |  | The fix plan remains actionable for a writable executor, subject to reproducing the defect first. |
 
 ## Needs Human
 
