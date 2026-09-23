@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T04:42:13.361Z",
+  "updated_at": "2026-09-23T04:44:53.144Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5784924312:2026-09-22T22:03:05Z:re_review",
-      "comment_id": "5784924312",
-      "comment_version_key": "5784924312:2026-09-22T22:03:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5784924312",
-      "comment_created_at": "2026-09-22T22:03:05Z",
-      "comment_updated_at": "2026-09-22T22:03:05Z",
-      "comment_body_sha256": "d13070a14e96273d74c4b7d185cac17a4698e96e9e242f4e3dd275f0039b86d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 599b0f93aff9aebbc1b3c5b3a4d829d415c392ed. the targeted follow-up addresses read-only startup, completes all tui entry-point routing, preserves primary plus gate-release failures, removes the test-environment bypass, and fixes the hosted windows lifecycle shard by mocking the direct update-command-local-tui owner seam. exact-head blacksmith proof: https://github.com/openclaw/openclaw/actions/runs/35789089457 (513 update cli tests plus targeted lint)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T22:29:30.635Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117074:5148085447:2026-09-22T22:17:35Z:clawsweeper_auto_repair",
       "comment_id": "5148085447",
@@ -33265,6 +33238,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawrouter:166:5789190991:2026-09-23T04:43:35Z:re_review",
+      "comment_id": "5789190991",
+      "comment_version_key": "5789190991:2026-09-23T04:43:35Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/166#issuecomment-5789190991",
+      "comment_created_at": "2026-09-23T04:43:35Z",
+      "comment_updated_at": "2026-09-23T04:43:35Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 166,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T04:44:51.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stream-terminal-accounting",
+        "head_sha": "23d186099693aa25c06e4d746b8229413f20adc9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
