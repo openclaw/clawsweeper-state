@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T00:38:59.860Z",
+  "updated_at": "2026-09-23T00:41:00.221Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124305:5304840142:2026-09-22T18:12:35Z:clawsweeper_needs_human",
-      "comment_id": "5304840142",
-      "comment_version_key": "5304840142:2026-09-22T18:12:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124305#issuecomment-5304840142",
-      "comment_created_at": "2026-08-16T00:02:25Z",
-      "comment_updated_at": "2026-09-22T18:12:35Z",
-      "comment_body_sha256": "f8de8c438c0b423fabd552b7186056a4f223d71036735665d1145baf89407cf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The claimed Baileys messages.upsert-to-SQLite trace does not match the changed WhatsApp delivery and queue owners, and the executable...; Review finding: [P2] Read the completed record before reporting persistence — extensions/whatsapp/src/monitor-inbox.delivery-and-dedupe.test.ts:760-771 - [P2] Replace the trace wi... (sha=dc64d5274fb6567502d3ab7c886331f195c805a8)",
-      "expected_head_sha": "dc64d5274fb6567502d3ab7c886331f195c805a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T18:27:40.170Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-reply-rate",
-        "head_sha": "dc64d5274fb6567502d3ab7c886331f195c805a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124438:5305949573:2026-09-22T18:13:44Z:clawsweeper_auto_repair",
       "comment_id": "5305949573",
@@ -33087,6 +33054,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152118:5735452568:2026-09-23T00:30:19Z:clawsweeper_needs_human",
+      "comment_id": "5735452568",
+      "comment_version_key": "5735452568:2026-09-23T00:30:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152118#issuecomment-5735452568",
+      "comment_created_at": "2026-09-18T19:57:06Z",
+      "comment_updated_at": "2026-09-23T00:30:19Z",
+      "comment_body_sha256": "04efa4329a6f6bc0c1e002e37d06f9bebe8a263641ef12caf3d2477fcc3cf8bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152118,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with eligible configured fallbacks would automatically continue some turns that previously stopped; acceptance of that activation policy and the expanded harnes... (sha=f4384c42f5809a50c51ce495abe04f1cc8c24960)",
+      "expected_head_sha": "f4384c42f5809a50c51ce495abe04f1cc8c24960",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T00:41:00.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/quota-safe-continuation-20260918",
+        "head_sha": "f4384c42f5809a50c51ce495abe04f1cc8c24960",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
