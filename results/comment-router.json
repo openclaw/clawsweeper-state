@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T03:06:02.368Z",
+  "updated_at": "2026-09-23T03:07:52.656Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155924:5783309387:2026-09-22T20:28:30Z:clawsweeper_needs_human",
-      "comment_id": "5783309387",
-      "comment_version_key": "5783309387:2026-09-22T20:28:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155924#issuecomment-5783309387",
-      "comment_created_at": "2026-09-22T20:07:27Z",
-      "comment_updated_at": "2026-09-22T20:28:30Z",
-      "comment_body_sha256": "e1ac1eb8e2792541fbc9a63ff938e422e662f8761caf297b0372be8b9de97416",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155924,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=abcad40c1abeb9bf8642098a0b677c8e63a85211)",
-      "expected_head_sha": "abcad40c1abeb9bf8642098a0b677c8e63a85211",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T20:29:36.782Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-compat-release-gate",
-        "head_sha": "abcad40c1abeb9bf8642098a0b677c8e63a85211",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125605:5323794720:2026-09-22T20:29:10Z:clawsweeper_auto_repair",
       "comment_id": "5323794720",
@@ -33033,6 +33000,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155906:5788277313:2026-09-23T03:06:51Z:re_review",
+      "comment_id": "5788277313",
+      "comment_version_key": "5788277313:2026-09-23T03:06:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155906#issuecomment-5788277313",
+      "comment_created_at": "2026-09-23T03:06:51Z",
+      "comment_updated_at": "2026-09-23T03:06:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155906,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T03:07:50.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-final-delivery-owner",
+        "head_sha": "e6138061071d4c2081d19501d3ba1d03b05ac3b4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
