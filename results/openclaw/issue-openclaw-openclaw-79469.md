@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-79469"
 mode: "autonomous"
-run_id: "35890806360"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35890806360"
-head_sha: "74df933aeed3f01eddcf027150f1484fdcb57904"
+run_id: "35897599196"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35897599196"
+head_sha: "5d82d01893d4ffe8a8e44f244f8793286bb3d85a"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T17:44:35.523Z"
+published_at: "2026-09-23T18:45:26.958Z"
 canonical: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/79469"
 canonical_pr: null
-actions_total: 9
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35890806360](https://github.com/openclaw/clawsweeper/actions/runs/35890806360)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35897599196](https://github.com/openclaw/clawsweeper/actions/runs/35897599196)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/79469
 
 ## Summary
 
-Source inspection supports the inherited-reasoning visibility defect. Implementation is blocked by the read-only host and missing dependencies; no regression, patch, browser proof, or PR was produced. A narrow executor fix artifact is provided. No GitHub mutations occurred.
+Current main still has the inherited-reasoning visibility defect. The fix path is narrow, but this read-only checkout has no installed dependencies, so no failing regression, patch, validation, or browser proof could be completed. No GitHub action was taken.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 9 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,15 +66,12 @@ Source inspection supports the inherited-reasoning visibility defect. Implementa
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #79469 | fix_needed | blocked | canonical | The host prohibits filesystem writes and escalation, preventing dependency installation, a failing regression, implementation, and browser evidence. Resume implementation on a writable executor after refreshing main and establishing the required failing boundary regression. |
-| #88079 | keep_related | planned | related | Live streaming is distinct from completed-history visibility under configured inherited on. |
-| #117365 | keep_related | planned | related | Useful presentation work remains separate. This job neither changes disclosure defaults nor recommends merging this PR. |
-| #150148 | keep_related | planned | related | Its streaming capability and policy changes exceed this configured-on repair. Findings remain with that PR; no merge or replacement is proposed here. |
-| #79456 | keep_closed | skipped | independent | Historical context with a different root cause. |
-| #105904 | keep_closed | skipped | related | Historical UI-control context, not a complete fix for this defect. |
-| #137170 | keep_closed | skipped | related | Use as credited historical context and regression guidance, without transplanting the broader implementation or reopening the PR. |
-| #153605 | keep_closed | skipped | duplicate | Corroborating reproduction already consolidated into the canonical issue. |
-| cluster:issue-openclaw-openclaw-79469 | build_fix_artifact | planned | canonical | A bounded ordinary bug repair remains warranted; the executor must complete the blocked implementation and proof before publication. |
+| #79469 | fix_needed | planned | canonical | An authorized session inheriting configured reasoningDefault="on" can have saved thinking but no stored override, leaving the transcript visibility gate false. |
+| #88079 | keep_related | planned | related | Separate stream-delivery work remains. |
+| #117365 | keep_related | planned | related | Presentation behavior is separate from the missing effective session value. |
+| #150148 | keep_related | planned | related | Keep live streaming on its own review path. |
+| cluster:issue-openclaw-openclaw-79469 | build_fix_artifact | planned |  | Prepare one focused repair on the job's designated branch. |
+| cluster:issue-openclaw-openclaw-79469 | open_fix_pr | blocked |  | Implement the artifact, demonstrate a failing pre-fix regression and passing post-fix proof, then validate and open or update the designated PR. |
 
 ## Needs Human
 

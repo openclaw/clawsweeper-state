@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-79469",
+  "mode": "autonomous",
+  "run_id": "35897599196",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35897599196",
+  "head_sha": "5d82d01893d4ffe8a8e44f244f8793286bb3d85a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-79469.md",
+  "published_at": "2026-09-23T18:45:26.958Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/79469",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/79469",
+  "canonical_pr": null,
+  "summary": "Current main still has the inherited-reasoning visibility defect. The fix path is narrow, but this read-only checkout has no installed dependencies, so no failing regression, patch, validation, or browser proof could be completed. No GitHub action was taken.",
+  "actions": [
+    {
+      "target": "#79469",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "An authorized session inheriting configured reasoningDefault=\"on\" can have saved thinking but no stored override, leaving the transcript visibility gate false."
+    },
+    {
+      "target": "#88079",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "Separate stream-delivery work remains."
+    },
+    {
+      "target": "#117365",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "Presentation behavior is separate from the missing effective session value."
+    },
+    {
+      "target": "#150148",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "Keep live streaming on its own review path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-79469",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "Prepare one focused repair on the job's designated branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-79469",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#79469",
+      "candidate_fix": null,
+      "reason": "Implement the artifact, demonstrate a failing pre-fix regression and passing post-fix proof, then validate and open or update the designated PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
