@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T21:56:18.064Z",
+  "updated_at": "2026-09-23T22:06:12.099Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156463:5796068310:2026-09-23T13:50:51Z:re_review",
-      "comment_id": "5796068310",
-      "comment_version_key": "5796068310:2026-09-23T13:50:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156463#issuecomment-5796068310",
-      "comment_created_at": "2026-09-23T13:50:51Z",
-      "comment_updated_at": "2026-09-23T13:50:51Z",
-      "comment_body_sha256": "b3e499e23cebfdb891ec931cae539b15f71e2032bffdf1717f7f66b186d138e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156463,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T14:22:04.819Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156558:5796558119:2026-09-23T14:21:09Z:clawsweeper_needs_human",
       "comment_id": "5796558119",
@@ -33634,6 +33607,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1660:5803729844:2026-09-23T22:05:08Z:re_review",
+      "comment_id": "5803729844",
+      "comment_version_key": "5803729844:2026-09-23T22:05:08Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/issues/1660#issuecomment-5803729844",
+      "comment_created_at": "2026-09-23T22:05:08Z",
+      "comment_updated_at": "2026-09-23T22:05:08Z",
+      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1660,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T22:06:10.359Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
