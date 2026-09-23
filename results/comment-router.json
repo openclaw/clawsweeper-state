@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:18:52.042Z",
+  "updated_at": "2026-09-23T07:19:16.799Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155971:5787790800:2026-09-23T02:15:52Z:re_review",
-      "comment_id": "5787790800",
-      "comment_version_key": "5787790800:2026-09-23T02:15:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155971#issuecomment-5787790800",
-      "comment_created_at": "2026-09-23T02:15:52Z",
-      "comment_updated_at": "2026-09-23T02:15:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155971,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T02:17:02.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-plugin-compat-gate",
-        "head_sha": "77227cfd15c09c81c735d0a6f3ef82f4bf3197bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156100:5787918260:2026-09-23T02:30:17Z:clawsweeper_needs_human",
       "comment_id": "5787918260",
@@ -33890,6 +33843,39 @@
         "kind": "pull_request",
         "branch": "fix/blacksmith-sync-timeout-reporting-20260923",
         "head_sha": "41567feeb97f343244730948b8414ce5b4fe9582",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-23T07:18:01Z:clawsweeper_needs_human",
+      "comment_id": "5611675668",
+      "comment_version_key": "5611675668:2026-09-23T07:18:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143610#issuecomment-5611675668",
+      "comment_created_at": "2026-09-10T02:19:14Z",
+      "comment_updated_at": "2026-09-23T07:18:01Z",
+      "comment_body_sha256": "11ccb9c35270da707e8417651a49f212efbf6afac337a770ac066be12b8ac00f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143610,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the actual iOS router, captured binding, shared sender, and real-Gateway harness are present, but the...; Review finding: [P3] Remove the release-owned changelog entry — CHANGELOG/Unreleased.md:5 - [medium] Qualify retained authority through the final side effect — apps/ios/Sources/Mo... (sha=c73392012dda319b2bb2776824137e7fb16205f1)",
+      "expected_head_sha": "c73392012dda319b2bb2776824137e7fb16205f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T07:19:16.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-actions-20260909",
+        "head_sha": "c73392012dda319b2bb2776824137e7fb16205f1",
         "cluster_id": null,
         "job_path": null
       }
