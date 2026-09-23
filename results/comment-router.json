@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:34:19.428Z",
+  "updated_at": "2026-09-23T10:34:59.856Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156210:5789703909:2026-09-23T05:41:02Z:re_review",
-      "comment_id": "5789703909",
-      "comment_version_key": "5789703909:2026-09-23T05:41:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156210#issuecomment-5789703909",
-      "comment_created_at": "2026-09-23T05:41:02Z",
-      "comment_updated_at": "2026-09-23T05:41:02Z",
-      "comment_body_sha256": "5ad3fdaabab7764e0a50ebc72eb1c242434a7a71e25069e2210bc099b462248d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156210,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T05:57:11.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/control-ui-render-performance",
-        "head_sha": "c780d06dd8b17600843e14991a336c30b427b495",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156184:5789771587:2026-09-23T05:49:04Z:re_review",
       "comment_id": "5789771587",
@@ -33711,6 +33664,39 @@
         "kind": "pull_request",
         "branch": "ci/verify-installed-macos-app",
         "head_sha": "7e6211a9be86b45c6b81d265d787ad3f95d92d44",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2517:5791515183:2026-09-23T10:09:50Z:clawsweeper_needs_human",
+      "comment_id": "5791515183",
+      "comment_version_key": "5791515183:2026-09-23T10:09:50Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2517#issuecomment-5791515183",
+      "comment_created_at": "2026-09-23T08:22:30Z",
+      "comment_updated_at": "2026-09-23T10:09:50Z",
+      "comment_body_sha256": "dc01c19e26bec7479b8503491545b4bb2a82bb4393d723e2513a7e37e83efc72",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Brev resolver has fake-runner lifecycle coverage, but no after-fix real Brev/SSH result. Supply redacted terminal output showing fr... (sha=a51c2c4645aae0c7b5a2c6af1e73a990fd52fba2)",
+      "expected_head_sha": "a51c2c4645aae0c7b5a2c6af1e73a990fd52fba2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:34:59.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/triage-20260923-brev-retained-target",
+        "head_sha": "a51c2c4645aae0c7b5a2c6af1e73a990fd52fba2",
         "cluster_id": null,
         "job_path": null
       }
