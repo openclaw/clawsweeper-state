@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T18:13:24.670Z",
+  "updated_at": "2026-09-23T18:14:13.546Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156335:5791586497:2026-09-23T11:00:53Z:clawsweeper_needs_human",
-      "comment_id": "5791586497",
-      "comment_version_key": "5791586497:2026-09-23T11:00:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156335#issuecomment-5791586497",
-      "comment_created_at": "2026-09-23T08:28:14Z",
-      "comment_updated_at": "2026-09-23T11:00:53Z",
-      "comment_body_sha256": "dd2af84deb1ad225cbeefa2fe1295984d907629cf7739d1ab4738fcc7924e7fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3717bbe379bb2231fa36666b6d61782dada5d46a)",
-      "expected_head_sha": "3717bbe379bb2231fa36666b6d61782dada5d46a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T11:02:23.822Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-system-info-cost-and-cadence-20260919",
-        "head_sha": "3717bbe379bb2231fa36666b6d61782dada5d46a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156451:5793650221:2026-09-23T11:01:26Z:clawsweeper_needs_human",
       "comment_id": "5793650221",
@@ -33379,6 +33346,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156671:5800334889:2026-09-23T18:13:07Z:re_review",
+      "comment_id": "5800334889",
+      "comment_version_key": "5800334889:2026-09-23T18:13:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156671#issuecomment-5800334889",
+      "comment_created_at": "2026-09-23T18:13:07Z",
+      "comment_updated_at": "2026-09-23T18:13:07Z",
+      "comment_body_sha256": "68cbd558e8389c5c31a996327cc5b4531347e965a0b17c415ab2878ee09c591f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156671,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T18:14:01.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-1-remote-system-expert",
+        "head_sha": "71d94e3441e03dc31a5e7a2d00a0b06806831724",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
