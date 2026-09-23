@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "autonomous"
-run_id: "35841244693"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35841244693"
+mode: "plan"
+run_id: "35839118493"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35839118493"
 head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T10:06:52.091Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T09:04:29.390Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35841244693](https://github.com/openclaw/clawsweeper/actions/runs/35841244693)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35839118493](https://github.com/openclaw/clawsweeper/actions/runs/35839118493)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Confirmed the missing compaction-state handoff in source at preflight main 055db0c631bfb01598ae311015e928013bccdd4c. Implementation and executable reproduction are blocked by the read-only host and absent dependencies. A narrow fix artifact is prepared; no files or GitHub state changed.
+Plan a narrow compaction-state handoff to the existing bounded watchdog grace. Source inspection at preflight main e331b970664a4f8b923e136e348b0e47f98cbe81 supports the reported disconnect. No files or GitHub state changed; failing regression, implementation, and validation remain execution gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Confirmed the missing compaction-state handoff in source at preflight main 055db
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | blocked | canonical | The canonical bug remains supported by current source. Resume implementation on a writable execution host and establish the required failing regression before changing production code. |
-| #40982 | keep_related | planned | related | Distinct timeout-policy request; leave open and outside this implementation. |
-| #137294 | keep_related | planned | related | Different execution path and timeout owner; leave open. |
-| #125045 | keep_closed | skipped | related | Historical context only. |
-| #139009 | keep_closed | skipped | related | Closed-unmerged reference work only. Preserve contributor acknowledgement without treating its code or validation as landed. |
-| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | Artifact preparation is complete; executable reproduction, repair, review, and validation require a writable host. |
+| #138644 | fix_needed | planned | canonical | A focused bug repair is justified. First prove premature termination through the current plugin execution path; stop implementation if that regression cannot reproduce. |
+| #40982 | keep_related | planned | related | Changing watchdog policy is distinct from recognizing already-supported compaction activity and is outside this repair. |
+| #137294 | keep_related | planned | related | This is a separate watchdog and execution flow; the job explicitly excludes ingress changes. |
+| #125045 | keep_closed | skipped | related | Historical context for a distinct profile-selection defect; no closure or reopening action. |
+| #139009 | keep_closed | skipped | related | Retain as credited historical reference. Its closed state, failed checks, and uneditable branch do not establish a landed or validated fix. |
 
 ## Needs Human
 
