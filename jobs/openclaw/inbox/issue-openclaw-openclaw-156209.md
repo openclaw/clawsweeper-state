@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the source-proven loss of top-level OKF type in extensions/memory-wiki/src/okf.ts. First establish a failing regression through importMemoryWikiOkfBundle: import a valid concept into an isolated vault, then use the generated concepts directory as input to a second isolated vault and observe missing-type. Emit the original normalized concept.type at top level while retaining pageType, okfType, nested producer frontmatter, identities, relationships, and existing status semantics. Extend the existing okf.test.ts coverage rather than adding a parallel harness. Verify unknown type strings, continued rejection of genuinely missing type, searchable concept classification, repeat-import idempotence, and refresh of a pre-fix imported page through the existing import path. Keep the broader generated-page/export and lifecycle requests in https://github.com/openclaw/openclaw/issues/156213 out of scope. Do not add flags, new APIs, a vault-wide backfill, or change lifecycle policy; stop for triage if those become necessary. Run the focused importer suite, the memory-wiki extension suite, and relevant changed-file checks. Record measured test cost and isolated CLI after-fix evidence in the PR body. Do not edit release-owned CHANGELOG.md.
+Repair Memory Wiki OKF import so generated concept pages preserve the validated original type in top-level frontmatter. First establish a failing regression through importMemoryWikiOkfBundle using a synthetic typed concept and a separate destination vault for re-importing the generated concepts directory. Add type at the existing frontmatter producer in extensions/memory-wiki/src/okf.ts; preserve pageType, okfType, nested producer metadata, identifiers, links, filesystem guards, and lifecycle status. Extend extensions/memory-wiki/src/okf.test.ts to verify output type, successful output-to-input import, unknown type preservation, continued rejection of missing type, and repeat-import idempotence. Verify an existing imported page lacking type is corrected when its original bundle is imported again, without duplicate pages or unrelated state changes. Do not add a blanket vault migration, export command, new configuration, or status-policy change. The related feature request in workClusterRefs remains separate. Run the focused tests and changed-file gate, record measured test cost and redacted CLI behavior evidence in the PR, and leave release-owned CHANGELOG.md untouched. Stop and return to triage if a broader feature, schema, or product-policy decision becomes necessary.
 
 Likely files:
 
 - extensions/memory-wiki/src/okf.ts
 - extensions/memory-wiki/src/okf.test.ts
-- docs/plugins/memory-wiki.md
 
 Validation:
 
 - pnpm test extensions/memory-wiki/src/okf.test.ts --maxWorkers=1
-- pnpm test:extension memory-wiki
+- pnpm test extensions/memory-wiki/src/markdown.test.ts extensions/memory-wiki/src/compile.test.ts
+- pnpm check:changed
 - git diff --check
-- In isolated test vaults, exercise the supported wiki okf import CLI with valid input, then re-import only the generated concepts directory into a second vault; verify no missing-type warnings and preserved type values.
-- Verify that importing the original bundle refreshes an existing pre-fix page with type, and a subsequent identical import reports zero updates.
 
 ## Operator Prompt
 
