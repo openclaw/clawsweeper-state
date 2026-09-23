@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "autonomous"
-run_id: "35846930192"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35846930192"
+mode: "plan"
+run_id: "35855166305"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35855166305"
 head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T11:12:10.452Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138644"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T12:15:45.639Z"
+canonical: "#138644"
+canonical_issue: "#138644"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35846930192](https://github.com/openclaw/clawsweeper/actions/runs/35846930192)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35855166305](https://github.com/openclaw/clawsweeper/actions/runs/35855166305)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138644
+Canonical: #138644
 
 ## Summary
 
-Source inspection confirms the missing compaction-to-watchdog handoff at preflight main 54a9d03dcf01436c1b671a6567d7d84381fecedc. A narrow repair artifact is prepared. Implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Plan a narrow compaction-state handoff into the existing bounded watchdog grace. Checkout matches preflight main 317054d42739986ac5bbcf119554698ba0c3a1da. No files or GitHub state changed; executable reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Source inspection confirms the missing compaction-to-watchdog handoff at preflig
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | blocked | canonical | The canonical bug remains supported by current-source evidence. Resume implementation in a writable executor and demonstrate the required failing execution-boundary regression before changing production code. |
-| #40982 | keep_related | planned | related | Distinct timeout-policy scope; leave open outside this bug-only repair. |
-| #137294 | keep_related | planned | related | Separate ingress watchdog and lifecycle owner; explicitly excluded from this repair. |
-| #125045 | keep_closed | skipped | related | Historical context only. |
-| #139009 | keep_closed | skipped | related | Closed-unmerged reference work only, with no active branch repair or closure action. Preserve credit when carrying its idea forward. |
-| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | A narrow non-security repair path is clear; no unresolved product decision requires human escalation. |
+| #138644 | fix_needed | planned | canonical | A focused bug repair is warranted, conditional on first demonstrating premature termination through the current plugin execution path. |
+| #40982 | keep_related | planned | related | Timeout-default policy differs from recognizing an existing compaction lifecycle; leave this adjacent request outside the repair. |
+| #137294 | keep_related | planned | related | Different timeout owner and execution path; explicitly excluded by this job. |
+| #125045 | keep_closed | skipped | related | Historical context for a different mechanism; no action required. |
+| #139009 | keep_closed | skipped | related | Closed-unmerged reference work, not a landed fix or active repair owner. Preserve attribution without reopening or closing it. |
 
 ## Needs Human
 
