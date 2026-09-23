@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111595",
+  "mode": "autonomous",
+  "run_id": "35904779438",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35904779438",
+  "head_sha": "549143746fd2f0012b31121b8996c74ddee8afd9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111595.md",
+  "published_at": "2026-09-23T19:37:29.336Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_pr": null,
+  "summary": "The defect reproduces from the grouping code on main a0bf24c0. A fix artifact is ready, but this worker cannot implement or validate it: the checkout is read-only, dependencies are absent, and GitHub CLI has no token. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#111595",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Equivalent Windows paths still split into separate catalog project groups."
+    },
+    {
+      "target": "#111596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Useful historical implementation and credit source; no action on the closed PR."
+    },
+    {
+      "target": "#137115",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Path equivalence for one checkout does not resolve projectless-session classification."
+    },
+    {
+      "target": "#144427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related work outside this narrow Windows path-equivalence fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-111595",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Implementation and PR creation require a writable, dependency-ready executor with GitHub access."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
