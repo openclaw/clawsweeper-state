@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "plan",
+  "run_id": "35913282121",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35913282121",
+  "head_sha": "549143746fd2f0012b31121b8996c74ddee8afd9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-23T20:11:23.666Z",
+  "canonical": "#128301",
+  "canonical_issue": "#128301",
+  "canonical_pr": null,
+  "summary": "Plan a narrow INFO diagnostic for unresolved Slack app mentions on current main (9505f6ee). The existing lookup catches conversations.info failures and returns empty metadata, so implementation must first demonstrate the missing diagnostic through the registered listener and a real monitor context. No code was changed or tests run in plan mode.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Create one narrow diagnostic fix PR after the required failing regression; preserve routing and delivery ownership."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The reports share a message-loss symptom but have different established failure paths."
+    },
+    {
+      "target": "#94691",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Historical logging context; no close action is valid."
+    },
+    {
+      "target": "#102811",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Historical type-resolution context; no PR action is needed."
+    },
+    {
+      "target": "#115528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Historical routing context; it does not supply the requested unresolved-type diagnostic."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
