@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T04:15:17.021Z",
+  "updated_at": "2026-09-23T04:15:26.438Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117734:5154495090:2026-09-22T21:55:39Z:clawsweeper_needs_human",
-      "comment_id": "5154495090",
-      "comment_version_key": "5154495090:2026-09-22T21:55:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5154495090",
-      "comment_created_at": "2026-08-02T01:45:33Z",
-      "comment_updated_at": "2026-09-22T21:55:39Z",
-      "comment_body_sha256": "c89b0847aaf8f48b34400dfcf6dbb854f063eb1220a63135c3d8b8a92d2fb0a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared configuration and SDK extension still need upstream acceptance, including the documented tradeoff that enabling burst protection splits Slack's existing channel-wide pair b... (sha=6423c5867662e682059ab07fe1cb35f68f390038)",
-      "expected_head_sha": "6423c5867662e682059ab07fe1cb35f68f390038",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T21:57:02.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/conversation-burst-budget",
-        "head_sha": "6423c5867662e682059ab07fe1cb35f68f390038",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117734:5498840218:2026-09-01T18:54:38Z:re_review",
       "comment_id": "5498840218",
@@ -33019,6 +32986,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149882:5788930997:2026-09-23T04:14:33Z:re_review",
+      "comment_id": "5788930997",
+      "comment_version_key": "5788930997:2026-09-23T04:14:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149882#issuecomment-5788930997",
+      "comment_created_at": "2026-09-23T04:14:33Z",
+      "comment_updated_at": "2026-09-23T04:14:33Z",
+      "comment_body_sha256": "363892bbe20fc50f4a9632d4cf7287132bd730fa93c954a70ec70a26fc373451",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149882,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T04:15:24.751Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/freebsd-foreground-update",
+        "head_sha": "8f388f1140b61d9a19667cc6e47bab5c43448866",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
