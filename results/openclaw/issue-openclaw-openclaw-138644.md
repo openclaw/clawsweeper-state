@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
-mode: "plan"
-run_id: "35839118493"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35839118493"
+mode: "autonomous"
+run_id: "35846930192"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35846930192"
 head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-23T09:04:29.390Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-23T11:12:10.452Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35839118493](https://github.com/openclaw/clawsweeper/actions/runs/35839118493)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35846930192](https://github.com/openclaw/clawsweeper/actions/runs/35846930192)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-Plan a narrow compaction-state handoff to the existing bounded watchdog grace. Source inspection at preflight main e331b970664a4f8b923e136e348b0e47f98cbe81 supports the reported disconnect. No files or GitHub state changed; failing regression, implementation, and validation remain execution gates.
+Source inspection confirms the missing compaction-to-watchdog handoff at preflight main 54a9d03dcf01436c1b671a6567d7d84381fecedc. A narrow repair artifact is prepared. Implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Plan a narrow compaction-state handoff to the existing bounded watchdog grace. S
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | A focused bug repair is justified. First prove premature termination through the current plugin execution path; stop implementation if that regression cannot reproduce. |
-| #40982 | keep_related | planned | related | Changing watchdog policy is distinct from recognizing already-supported compaction activity and is outside this repair. |
-| #137294 | keep_related | planned | related | This is a separate watchdog and execution flow; the job explicitly excludes ingress changes. |
-| #125045 | keep_closed | skipped | related | Historical context for a distinct profile-selection defect; no closure or reopening action. |
-| #139009 | keep_closed | skipped | related | Retain as credited historical reference. Its closed state, failed checks, and uneditable branch do not establish a landed or validated fix. |
+| #138644 | fix_needed | blocked | canonical | The canonical bug remains supported by current-source evidence. Resume implementation in a writable executor and demonstrate the required failing execution-boundary regression before changing production code. |
+| #40982 | keep_related | planned | related | Distinct timeout-policy scope; leave open outside this bug-only repair. |
+| #137294 | keep_related | planned | related | Separate ingress watchdog and lifecycle owner; explicitly excluded from this repair. |
+| #125045 | keep_closed | skipped | related | Historical context only. |
+| #139009 | keep_closed | skipped | related | Closed-unmerged reference work only, with no active branch repair or closure action. Preserve credit when carrying its idea forward. |
+| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | planned | canonical | A narrow non-security repair path is clear; no unresolved product decision requires human escalation. |
 
 ## Needs Human
 
