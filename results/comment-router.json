@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T02:31:57.137Z",
+  "updated_at": "2026-09-23T02:32:14.999Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:354:5782794299:2026-09-22T19:38:47Z:re_review",
-      "comment_id": "5782794299",
-      "comment_version_key": "5782794299:2026-09-22T19:38:47Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/354#issuecomment-5782794299",
-      "comment_created_at": "2026-09-22T19:38:47Z",
-      "comment_updated_at": "2026-09-22T19:38:47Z",
-      "comment_body_sha256": "9a19f9439f6dd9792aa36cf76fade062c041cc83cde64119824805be9f0fa454",
-      "repo": "openclaw/crabpot",
-      "issue_number": 354,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review: workboard353 has landed and this branch is rebased onto08afd966d2d2ca9c0ef86173bb5b680ac044682e, targeting main. review current head58c71eb5b1bf527372e41c050c655878fd7d9310. source range-diff is unchanged outside retained changelog entries; qualification details and limits are in the body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T19:39:41.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-resource-beam-20260923",
-        "head_sha": "58c71eb5b1bf527372e41c050c655878fd7d9310",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabpot:356:5782793706:2026-09-22T19:38:44Z:re_review",
       "comment_id": "5782793706",
@@ -33072,6 +33025,39 @@
         "kind": "pull_request",
         "branch": "fix/feishu-markdown-tables",
         "head_sha": "d9005f8f1651332b3fa278eec2adbba7ad1bba96",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156106:5787926026:2026-09-23T02:31:05Z:clawsweeper_needs_human",
+      "comment_id": "5787926026",
+      "comment_version_key": "5787926026:2026-09-23T02:31:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156106#issuecomment-5787926026",
+      "comment_created_at": "2026-09-23T02:31:05Z",
+      "comment_updated_at": "2026-09-23T02:31:05Z",
+      "comment_body_sha256": "5bd6f4a3e0f130d8b377f33d7d3358d1435dd6cdb24ec6d9bc623d615425ce5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed exec and container owners are covered with mocked supervisor and engine adapters, but no supplied o...; Review finding: [P1] Preserve private provenance across non-destructive stops — src/agents/sandbox/container-lifecycle.ts:112 - [P2] Let retained process cleanup recognize verifie... (sha=ed36419e7c6b73dcfa31150cff2a1cbe19787a8c)",
+      "expected_head_sha": "ed36419e7c6b73dcfa31150cff2a1cbe19787a8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T02:32:14.999Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guest-sandbox-descendants",
+        "head_sha": "ed36419e7c6b73dcfa31150cff2a1cbe19787a8c",
         "cluster_id": null,
         "job_path": null
       }
