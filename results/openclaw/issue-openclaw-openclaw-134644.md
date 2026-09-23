@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134644"
-mode: "autonomous"
-run_id: "35799582214"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35799582214"
+mode: "plan"
+run_id: "35804845685"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35804845685"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T00:32:19.381Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134644"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134644"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T01:10:24.429Z"
+canonical: "#134644"
+canonical_issue: "#134644"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35799582214](https://github.com/openclaw/clawsweeper/actions/runs/35799582214)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35804845685](https://github.com/openclaw/clawsweeper/actions/runs/35804845685)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/134644
+Canonical: #134644
 
 ## Summary
 
-Current-main source supports the native-stream ownership gap. Implementation and failing-regression proof are blocked by this read-only host and missing dependencies. Prepared a reproduction-first repair artifact; no files or GitHub state changed.
+Plan a narrow Slack native-stream repair, gated on a failing registered-ingress regression. The clean checkout matches preflight main 04f3f7db75a0f389d70df5308314e44e2ea84569. No code or GitHub mutations occurred; runtime reproduction, tests, and live Slack proof remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Current-main source supports the native-stream ownership gap. Implementation and
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134644 | fix_needed | blocked | canonical | The source finding remains plausible, but the required registered-ingress failing regression and locally validated implementation cannot be produced on this host. Executor must establish the adoption boundary before editing. |
-| #48003 | keep_related | planned | related | Admission failures are distinct from placement of output after successful Slack adoption. Preserve existing ownership and keep this report open. |
-| #112697 | keep_related | planned | related | Independent-final ordering is outside this repair and must remain unchanged. |
-| cluster:issue-openclaw-openclaw-134644 | build_fix_artifact | planned | canonical | Hand off a bounded reproduction-first plan to a writable executor. No publication is justified until the regression fails on current main and passes after a plugin-local repair. |
+| #134644 | fix_needed | planned | canonical | A focused channel-delivery repair is warranted, subject to reproducing the defect through preparation, admission, and dispatch. Closing and merging are prohibited. |
+| #48003 | keep_related | planned | related | Distinct admission work with existing ownership; exclude it from this Slack output-placement repair. |
+| #112697 | keep_related | planned | related | Related Slack delivery surface, but a different lifecycle and acceptance decision; preserve its separate tracker. |
 
 ## Needs Human
 
