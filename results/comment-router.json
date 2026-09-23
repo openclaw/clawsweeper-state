@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T05:12:12.477Z",
+  "updated_at": "2026-09-23T05:12:56.374Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133099:5467003411:2026-09-22T21:30:15Z:clawsweeper_auto_repair",
-      "comment_id": "5467003411",
-      "comment_version_key": "5467003411:2026-09-22T21:30:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133099#issuecomment-5467003411",
-      "comment_created_at": "2026-08-30T05:49:45Z",
-      "comment_updated_at": "2026-09-22T21:30:15Z",
-      "comment_body_sha256": "92b2876e96310f54aaa0153d8bd0e8a72b31d601432ecb95fc4fff3bfa88158b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133099,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0ffaefc28ee6294539109411a28e226cc05962f0)",
-      "expected_head_sha": "0ffaefc28ee6294539109411a28e226cc05962f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T23:07:13.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/voice-multimodal-composer-immersive",
-        "head_sha": "0ffaefc28ee6294539109411a28e226cc05962f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134097:5478391699:2026-09-22T22:01:17Z:autoclose",
       "comment_id": "5478391699",
@@ -33521,6 +33488,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153525:5789451989:2026-09-23T05:11:57Z:re_review",
+      "comment_id": "5789451989",
+      "comment_version_key": "5789451989:2026-09-23T05:11:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153525#issuecomment-5789451989",
+      "comment_created_at": "2026-09-23T05:11:57Z",
+      "comment_updated_at": "2026-09-23T05:11:57Z",
+      "comment_body_sha256": "80daccc769447ac69e0a7e2ea4940371bea8bbb2978ab3f0c148bcba65ebe579",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153525,
+      "author": "lit26",
+      "author_id": 51225681,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T05:12:54.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/stepfun-step-5-preview",
+        "head_sha": "5fb8d8a829a77a2cb8689097a5d46e846ab7db59",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
