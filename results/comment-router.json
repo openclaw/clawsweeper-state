@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:41:57.319Z",
+  "updated_at": "2026-09-23T10:42:38.869Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156186:5789777322:2026-09-23T05:49:45Z:re_review",
-      "comment_id": "5789777322",
-      "comment_version_key": "5789777322:2026-09-23T05:49:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156186#issuecomment-5789777322",
-      "comment_created_at": "2026-09-23T05:49:45Z",
-      "comment_updated_at": "2026-09-23T05:49:45Z",
-      "comment_body_sha256": "0a3a2936f2b52e3e43d7cd1e8219a1d8a3c1982187db74d7f1928f151dd14f4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156186,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T05:57:11.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-queued-progress-draft",
-        "head_sha": "4857854a66de8824f88f87607fcaace265cbef3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153600:5789777708:2026-09-23T05:49:48Z:re_review",
       "comment_id": "5789777708",
@@ -33683,6 +33636,39 @@
         "kind": "pull_request",
         "branch": "codex/creation-mode-contract-20260923",
         "head_sha": "d6fab08b981f9414887454ff676a44eef775a84a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:223:5793367390:2026-09-23T10:41:06Z:clawsweeper_needs_human",
+      "comment_id": "5793367390",
+      "comment_version_key": "5793367390:2026-09-23T10:41:06Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/223#issuecomment-5793367390",
+      "comment_created_at": "2026-09-23T10:41:06Z",
+      "comment_updated_at": "2026-09-23T10:41:06Z",
+      "comment_body_sha256": "2c515f499580a1abc899858bf9c622f58fb1700775c05d609f96369deef8f7a3",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Updating the setup scripts before the router publishes operation offers makes export, connect, verify, and update fail against older catalogs; approve the dependency sequence and rout... (sha=6ff110f5296c65e4cde2222f04732e73769ca512)",
+      "expected_head_sha": "6ff110f5296c65e4cde2222f04732e73769ca512",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:42:38.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-operation-offers",
+        "head_sha": "6ff110f5296c65e4cde2222f04732e73769ca512",
         "cluster_id": null,
         "job_path": null
       }
