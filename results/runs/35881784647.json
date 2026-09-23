@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111595",
+  "mode": "autonomous",
+  "run_id": "35881784647",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35881784647",
+  "head_sha": "74df933aeed3f01eddcf027150f1484fdcb57904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111595.md",
+  "published_at": "2026-09-23T16:42:14.847Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/111595",
+  "canonical_pr": null,
+  "summary": "Reproduced both Windows grouping defects on preflight main 5b29899f06ab733ee25334f1d3590d5aebb0aba8. Prepared a narrow fix artifact. Implementation and branch validation remain blocked by this host's read-only filesystem and missing dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#111595",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "The defect is reproduced and the repair scope is clear. A writable executor must implement and validate the fix, recheck active ownership, and coordinate with vincentkoc before publication."
+    },
+    {
+      "target": "#111596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "Retain as credited historical source work; do not reopen, close again, or treat it as a current candidate fix."
+    },
+    {
+      "target": "#137115",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open outside this repair. Path normalization must not infer projectless sessions from directory names."
+    },
+    {
+      "target": "#144427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only. Its broader product behavior is excluded from this narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-111595",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111595",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains warranted. Artifact preparation is complete; implementation, fresh review, Windows proof, screenshots, and validation remain outstanding."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
