@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T03:51:03.142Z",
+  "updated_at": "2026-09-23T03:51:14.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155897:5784290247:2026-09-22T21:15:53Z:re_review",
-      "comment_id": "5784290247",
-      "comment_version_key": "5784290247:2026-09-22T21:15:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155897#issuecomment-5784290247",
-      "comment_created_at": "2026-09-22T21:15:53Z",
-      "comment_updated_at": "2026-09-22T21:15:53Z",
-      "comment_body_sha256": "34790f1edeaf374c5955737bfa2f001095e334b952f78677dac0f883863f79d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155897,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T21:16:51.437Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/chat-custody-floor",
-        "head_sha": "9b2bf2ca1ac4ad97fb0126495608b7c80e094335",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:270:5783324354:2026-09-22T21:15:33Z:clawsweeper_auto_repair",
       "comment_id": "5783324354",
@@ -33005,6 +32958,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150621:5709345911:2026-09-23T03:50:06Z:clawsweeper_needs_human",
+      "comment_id": "5709345911",
+      "comment_version_key": "5709345911:2026-09-23T03:50:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150621#issuecomment-5709345911",
+      "comment_created_at": "2026-09-17T05:34:24Z",
+      "comment_updated_at": "2026-09-23T03:50:06Z",
+      "comment_body_sha256": "e771f36a3136874a4b12a705948f3bb79f6fa96140758f5e7bf0be236c653189",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150621,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the reported merge conflicts while preserving current-main behavior, then refresh review and validation for the resulting head. (sha=68ca6c21e5e1014756c9470164d3e78ec4cf8f32)",
+      "expected_head_sha": "68ca6c21e5e1014756c9470164d3e78ec4cf8f32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T03:51:14.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr135838-identity-lifetime",
+        "head_sha": "68ca6c21e5e1014756c9470164d3e78ec4cf8f32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
