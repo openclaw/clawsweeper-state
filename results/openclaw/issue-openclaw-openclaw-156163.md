@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156163"
-mode: "autonomous"
-run_id: "35817757908"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35817757908"
-head_sha: "438cd3b870ca4355a6e78eaf4e4e94b162170f96"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T04:54:20.458Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156163"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156163"
+mode: "plan"
+run_id: "35822851903"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35822851903"
+head_sha: "bc921e100e1368533259da71693e0c58f150b1f6"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T05:36:21.054Z"
+canonical: "#156163"
+canonical_issue: "#156163"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35817757908](https://github.com/openclaw/clawsweeper/actions/runs/35817757908)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35822851903](https://github.com/openclaw/clawsweeper/actions/runs/35822851903)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156163
+Canonical: #156163
 
 ## Summary
 
-Reproduced the timeout-cache defect in the unchanged runtime module at preflight main 0e79899fedc26ae9a90a196a8bc41b97fd39d7e5 using mocked transport. Prepared a narrow fix artifact. Implementation and required validation are blocked by the read-only host and absent dependencies; no files or GitHub state changed.
+Plan one narrow timeout-recovery fix. Source inspection confirms the defect on the supplied main SHA, 59cdcf7c7f0044394348a069c752a6f7393ba866. No files or GitHub state were changed; executable reproduction, validation, and production-path proof remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Reproduced the timeout-cache defect in the unchanged runtime module at preflight
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156163 | fix_needed | planned | canonical | A narrow recovery bug remains; historical fallback and diagnostic fixes do not cover it. |
-| #79329 | keep_closed | skipped | related | Historical context with a different root cause. |
-| #82145 | keep_closed | skipped | related | Do not revive or replace this historical feature proposal. |
-| #113195 | keep_closed | skipped | related | Preserve its diagnostic behavior while fixing the separate cache defect. |
-| #113409 | keep_closed | skipped | related | Merged diagnostic work is historical evidence, not a fix for timeout-cache recovery. |
-| cluster:issue-openclaw-openclaw-156163 | build_fix_artifact | planned | canonical | The fix remains narrow and authorized; a writable executor must implement and validate it. |
-| cluster:issue-openclaw-openclaw-156163 | open_fix_pr | blocked | canonical | Implementation and publication remain blocked until the executor produces a validated patch in an authorized writable environment. |
+| #156163 | fix_needed | planned | canonical | The timeout-cache recovery defect remains distinct from the historical fixes. Prepare a new fix PR after demonstrating the failing regression on refreshed main. Closure and merge are prohibited by this job. |
 
 ## Needs Human
 
