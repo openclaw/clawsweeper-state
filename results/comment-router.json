@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:10:12.492Z",
+  "updated_at": "2026-09-23T10:10:13.341Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155558:5789106365:2026-09-23T04:33:44Z:re_review",
-      "comment_id": "5789106365",
-      "comment_version_key": "5789106365:2026-09-23T04:33:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155558#issuecomment-5789106365",
-      "comment_created_at": "2026-09-23T04:33:44Z",
-      "comment_updated_at": "2026-09-23T04:33:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155558,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T04:52:13.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-empty-env-credential-20260922",
-        "head_sha": "609843edb7e25ed7fe1f1bfe314f45b442f4ef99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155468:5789146312:2026-09-23T04:37:57Z:re_review",
       "comment_id": "5789146312",
@@ -33777,6 +33730,39 @@
         "kind": "pull_request",
         "branch": "test/freebsd-integrated-package-proof",
         "head_sha": "262e0642466765df520b5e5f358d55fc048c2b31",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137014:5520827543:2026-09-23T10:07:06Z:clawsweeper_auto_repair",
+      "comment_id": "5520827543",
+      "comment_version_key": "5520827543:2026-09-23T10:07:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137014#issuecomment-5520827543",
+      "comment_created_at": "2026-09-03T05:12:07Z",
+      "comment_updated_at": "2026-09-23T10:07:06Z",
+      "comment_body_sha256": "3d2e5f48d65e95598d2fe3fb712fd3c7883dbc0d1dd8a45303e4a75b9b4e8d1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5824fb426d1b7ac1ede77525986012a62259df98)",
+      "expected_head_sha": "5824fb426d1b7ac1ede77525986012a62259df98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:10:13.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lifecycle-coordinator-lock-cleanup",
+        "head_sha": "5824fb426d1b7ac1ede77525986012a62259df98",
         "cluster_id": null,
         "job_path": null
       }
