@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T02:59:58.838Z",
+  "updated_at": "2026-09-23T03:00:16.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151242:5723216366:2026-09-18T00:37:31Z:re_review",
-      "comment_id": "5723216366",
-      "comment_version_key": "5723216366:2026-09-18T00:37:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151242#issuecomment-5723216366",
-      "comment_created_at": "2026-09-18T00:37:31Z",
-      "comment_updated_at": "2026-09-18T00:37:31Z",
-      "comment_body_sha256": "556112223203486b1ca5564200b4e9f7a55d52ddbcf756c9cf768815390a2485",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151242,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T20:27:09.686Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151242:5724049239:2026-09-18T02:11:48Z:re_review",
       "comment_id": "5724049239",
@@ -33009,6 +32982,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156121:5788206889:2026-09-23T02:59:12Z:clawsweeper_needs_human",
+      "comment_id": "5788206889",
+      "comment_version_key": "5788206889:2026-09-23T02:59:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156121#issuecomment-5788206889",
+      "comment_created_at": "2026-09-23T02:59:12Z",
+      "comment_updated_at": "2026-09-23T02:59:12Z",
+      "comment_body_sha256": "2ebd228f17e0b2cd8d490fe0559e7c465f4f52044cd578eba412e9a020429ec9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied tests cover preparation and search visibility, but do not show sessions.resolve rejecting a n...; Review finding: [P1] Send the resolve response inside the prepared consumer — src/gateway/server-methods/sessions-read.ts:420 - [P2] Migrate PR-status readers before removing arch... (sha=28c5bdadbee2ac718d2e12d20087fdc68b78d083)",
+      "expected_head_sha": "28c5bdadbee2ac718d2e12d20087fdc68b78d083",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T03:00:16.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-session-reads",
+        "head_sha": "28c5bdadbee2ac718d2e12d20087fdc68b78d083",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
