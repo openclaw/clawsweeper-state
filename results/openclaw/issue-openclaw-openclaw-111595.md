@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-111595"
-mode: "autonomous"
-run_id: "35906795193"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35906795193"
+mode: "plan"
+run_id: "35911049896"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35911049896"
 head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-23T19:39:09.154Z"
-canonical: "https://github.com/openclaw/openclaw/issues/111595"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/111595"
+published_at: "2026-09-23T19:48:54.948Z"
+canonical: "#111595"
+canonical_issue: "#111595"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35906795193](https://github.com/openclaw/clawsweeper/actions/runs/35906795193)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35911049896](https://github.com/openclaw/clawsweeper/actions/runs/35911049896)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/111595
+Canonical: #111595
 
 ## Summary
 
-Plan an issue-scoped fix PR. The checkout matches the preflight main SHA. A read-only probe of the current grouping owner produced two groups for equivalent Windows paths and for an uppercase worktree marker. No code or GitHub state was changed; the failing regression, UI proof, and validation remain execution gates.
+At the preflight main SHA, catalog grouping still uses the folded cwd spelling as its key. Plan a narrow Windows identity fix, preserve the prior contributor’s credit, and validate the preference lifecycle before opening one fix PR. No code or GitHub mutation was performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Plan an issue-scoped fix PR. The checkout matches the preflight main SHA. A read
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #111595 | fix_needed | planned | canonical | Keep the issue open while the job-owned branch implements and validates the narrow repair. |
-| #111596 | keep_closed | skipped | related | Use the prior work as a credited source during implementation. Its closed state requires no close action. |
-| #137115 | keep_related | planned | related | This is distinct from comparing equivalent spellings of one Windows path. Keep its separate decision open. |
-| #144427 | keep_closed | skipped | related | Historical work in the same UI area does not replace this issue's narrow repair. |
+| #111595 | fix_needed | planned | canonical | The reported bug remains in the current grouping path; no open candidate PR is hydrated. |
+| #111596 | keep_closed | skipped | related | Use this contributor work as implementation and credit context; no closure action is valid. |
+| #137115 | keep_related | planned | related | The Windows spelling fix does not decide whether distinct projectless directories should share a group. |
+| #144427 | keep_closed | skipped | related | This broader historical PR does not own the narrow Windows spelling repair. |
+| clawsweeper/issue-openclaw-openclaw-111595 | build_fix_artifact | planned |  | First recheck active PR ownership and coordinate with assignee vincentkoc; then implement and validate the fix. |
+| clawsweeper/issue-openclaw-openclaw-111595 | open_fix_pr | planned |  | Open or update one PR only after the regression fails before the fix, the repaired branch passes required checks and review, and sanitized before/after screenshots are ready. |
 
 ## Needs Human
 
