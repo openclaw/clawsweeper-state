@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:42:38.869Z",
+  "updated_at": "2026-09-23T10:53:11.465Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153600:5789777708:2026-09-23T05:49:48Z:re_review",
-      "comment_id": "5789777708",
-      "comment_version_key": "5789777708:2026-09-23T05:49:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153600#issuecomment-5789777708",
-      "comment_created_at": "2026-09-23T05:49:48Z",
-      "comment_updated_at": "2026-09-23T05:49:48Z",
-      "comment_body_sha256": "8ffb3f9cc7f69a90287674483099593fa87e78e628a00fc625aaa556a62ff163",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153600,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T05:57:11.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-startup-diagnostics-20260920",
-        "head_sha": "2a92191961e86c56353f3429895fb51b05c778d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155964:5789782920:2026-09-23T05:50:26Z:re_review",
       "comment_id": "5789782920",
@@ -33669,6 +33622,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-operation-offers",
         "head_sha": "6ff110f5296c65e4cde2222f04732e73769ca512",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:224:5793434694:2026-09-23T10:49:48Z:clawsweeper_needs_human",
+      "comment_id": "5793434694",
+      "comment_version_key": "5793434694:2026-09-23T10:49:48Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/224#issuecomment-5793434694",
+      "comment_created_at": "2026-09-23T10:45:41Z",
+      "comment_updated_at": "2026-09-23T10:49:48Z",
+      "comment_body_sha256": "a5a8340406935c4ab9c1bb5fc9b3e8302e154b0855d7755971a12bff265f04b1",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review before merging. (sha=c201f0cd20f752bf23e28c7d1503a6cb46f3b214)",
+      "expected_head_sha": "c201f0cd20f752bf23e28c7d1503a6cb46f3b214",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:53:11.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/self-host-readiness-liveness",
+        "head_sha": "c201f0cd20f752bf23e28c7d1503a6cb46f3b214",
         "cluster_id": null,
         "job_path": null
       }
