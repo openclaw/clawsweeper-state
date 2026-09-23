@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156038",
+  "mode": "autonomous",
+  "run_id": "35802774864",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35802774864",
+  "head_sha": "258a5b1fa2545fda1da64b64324afceeaff8f71d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156038.md",
+  "published_at": "2026-09-23T02:41:06.305Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156038",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156038",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan for the CLI hook omission. Local source confirms the wiring gap, but implementation and runtime reproduction are blocked by the read-only host, missing dependencies, and checkout mismatch: local HEAD is 691da64a73b319c256951db2637dcb718d301b37; preflight main 2a911a7ccb8e86a5e9bae843828f949ed3615e6d is absent locally. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#156038",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "A focused existing-contract repair is justified. Implementation must first reproduce on refreshed main in writable isolation; do not close the issue."
+    },
+    {
+      "target": "#153856",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this distinct feature proposal open under its existing review; do not borrow its public API or expand this bug repair."
+    },
+    {
+      "target": "#57941",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contract evidence does not prove ordinary CLI entry-point coverage."
+    },
+    {
+      "target": "#62152",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical feature request; no keyword-routing configuration belongs in this repair."
+    },
+    {
+      "target": "#62153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as historical evidence without replacement, closure, or code adoption."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156038",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation, failing regression, native after-fix evidence, review, and validation remain blocked on a writable isolated executor with refreshed main and dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
