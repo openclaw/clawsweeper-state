@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156359"
-mode: "autonomous"
-run_id: "35846347914"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35846347914"
+mode: "plan"
+run_id: "35849891558"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35849891558"
 head_sha: "60a77566c685fbe18600595a28964e5bd8135878"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T10:28:53.054Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156359"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156359"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T10:41:18.352Z"
+canonical: "#156359"
+canonical_issue: "#156359"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35846347914](https://github.com/openclaw/clawsweeper/actions/runs/35846347914)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35849891558](https://github.com/openclaw/clawsweeper/actions/runs/35849891558)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156359
+Canonical: #156359
 
 ## Summary
 
-Source inspection confirms both adapters drop readiness-budget notifications. A narrow fix artifact is ready; implementation and executable reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state were changed.
+Confirmed the missing readiness callbacks in both adapters at preflight main 058e664f5cb31f0cdde675536b09325db297e65a. Prepared a narrow implementation plan. No files or GitHub state changed; runtime reproduction and validation remain execution gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Source inspection confirms both adapters drop readiness-budget notifications. A 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156359 | fix_needed | planned | canonical | A distinct two-adapter follow-up remains necessary. No viable open implementation PR is present in the hydrated inventory. |
-| #143590 | keep_closed | skipped | related | Preserve the merged contribution as context; no closure or replacement action applies. |
-| cluster:issue-openclaw-openclaw-156359 | build_fix_artifact | planned |  | The bounded repair can proceed in a writable executor after current-main verification and a failing entrypoint regression. |
-| cluster:issue-openclaw-openclaw-156359 | open_fix_pr | blocked |  | Implementation and publication must wait for a writable executor to reproduce the defect on refreshed main, apply the narrow repair, complete validation and review, and reconcile any existing branch or PR. Merge and issue closure remain prohibited. |
+| #156359 | fix_needed | planned | canonical | This is a bounded, unfixed adapter integration gap. Keep the issue open and prepare one implementation PR after reproducing the defect and completing validation. |
 
 ## Needs Human
 
