@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156163",
+  "mode": "autonomous",
+  "run_id": "35817757908",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35817757908",
+  "head_sha": "438cd3b870ca4355a6e78eaf4e4e94b162170f96",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156163.md",
+  "published_at": "2026-09-23T04:54:20.458Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156163",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156163",
+  "canonical_pr": null,
+  "summary": "Reproduced the timeout-cache defect in the unchanged runtime module at preflight main 0e79899fedc26ae9a90a196a8bc41b97fd39d7e5 using mocked transport. Prepared a narrow fix artifact. Implementation and required validation are blocked by the read-only host and absent dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#156163",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156163",
+      "candidate_fix": null,
+      "reason": "A narrow recovery bug remains; historical fallback and diagnostic fixes do not cover it."
+    },
+    {
+      "target": "#79329",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with a different root cause."
+    },
+    {
+      "target": "#82145",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Do not revive or replace this historical feature proposal."
+    },
+    {
+      "target": "#113195",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve its diagnostic behavior while fixing the separate cache defect."
+    },
+    {
+      "target": "#113409",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged diagnostic work is historical evidence, not a fix for timeout-cache recovery."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156163",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156163",
+      "candidate_fix": null,
+      "reason": "The fix remains narrow and authorized; a writable executor must implement and validate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156163",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#156163",
+      "candidate_fix": null,
+      "reason": "Implementation and publication remain blocked until the executor produces a validated patch in an authorized writable environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
