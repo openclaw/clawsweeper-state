@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:26:48.318Z",
+  "updated_at": "2026-09-23T07:27:19.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155468:5787989932:2026-09-23T02:37:17Z:re_review",
-      "comment_id": "5787989932",
-      "comment_version_key": "5787989932:2026-09-23T02:37:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155468#issuecomment-5787989932",
-      "comment_created_at": "2026-09-23T02:37:17Z",
-      "comment_updated_at": "2026-09-23T02:37:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155468,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T02:38:24.081Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-control-ui-reconnect-continuity",
-        "head_sha": "3287d6778c746b3f0e8289384dda6767afc1d4a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136235:5787991222:2026-09-23T02:38:34Z:re_review",
       "comment_id": "5787991222",
@@ -33910,6 +33863,39 @@
         "kind": "pull_request",
         "branch": "perf/plugin-declared-tool-membership-20260923",
         "head_sha": "0916cdf9d29f32e12c662fd647017bda6100c66b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155857:5780475043:2026-09-23T07:25:08Z:clawsweeper_needs_human",
+      "comment_id": "5780475043",
+      "comment_version_key": "5780475043:2026-09-23T07:25:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155857#issuecomment-5780475043",
+      "comment_created_at": "2026-09-22T16:51:26Z",
+      "comment_updated_at": "2026-09-23T07:25:08Z",
+      "comment_body_sha256": "efee7bdb6e74d7f26662db5312856085c2a3ca3c5c2a5177de46cd7822a146fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0376c52b51e09d070c721eedca2affe0fcd92488)",
+      "expected_head_sha": "0376c52b51e09d070c721eedca2affe0fcd92488",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T07:27:19.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/broken-button-troubleshooting",
+        "head_sha": "0376c52b51e09d070c721eedca2affe0fcd92488",
         "cluster_id": null,
         "job_path": null
       }
