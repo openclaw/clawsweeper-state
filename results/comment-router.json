@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:42:38.869Z",
+  "updated_at": "2026-09-23T10:53:47.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153600:5789777708:2026-09-23T05:49:48Z:re_review",
-      "comment_id": "5789777708",
-      "comment_version_key": "5789777708:2026-09-23T05:49:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153600#issuecomment-5789777708",
-      "comment_created_at": "2026-09-23T05:49:48Z",
-      "comment_updated_at": "2026-09-23T05:49:48Z",
-      "comment_body_sha256": "8ffb3f9cc7f69a90287674483099593fa87e78e628a00fc625aaa556a62ff163",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153600,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T05:57:11.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-startup-diagnostics-20260920",
-        "head_sha": "2a92191961e86c56353f3429895fb51b05c778d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155964:5789782920:2026-09-23T05:50:26Z:re_review",
       "comment_id": "5789782920",
@@ -33669,6 +33622,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-operation-offers",
         "head_sha": "6ff110f5296c65e4cde2222f04732e73769ca512",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155596:5773751246:2026-09-23T10:52:39Z:clawsweeper_needs_human",
+      "comment_id": "5773751246",
+      "comment_version_key": "5773751246:2026-09-23T10:52:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155596#issuecomment-5773751246",
+      "comment_created_at": "2026-09-22T08:54:07Z",
+      "comment_updated_at": "2026-09-23T10:52:39Z",
+      "comment_body_sha256": "831305e07cf58585b303010568e83ee48855b37ce7c1cd411f8b53ac1a8f61c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Incognito conversations that currently survive until restart will instead lose active work and history at 24 hours without an archive; explicit acceptance of this retention change rem... (sha=4d470ef42a08ac0cb0e2bee45a80517a2574bae1)",
+      "expected_head_sha": "4d470ef42a08ac0cb0e2bee45a80517a2574bae1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:53:47.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incognito-expiry-20260921",
+        "head_sha": "4d470ef42a08ac0cb0e2bee45a80517a2574bae1",
         "cluster_id": null,
         "job_path": null
       }
