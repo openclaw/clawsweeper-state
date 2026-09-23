@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156749",
+  "mode": "autonomous",
+  "run_id": "35920510975",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35920510975",
+  "head_sha": "c0680bf79ab759f5fbb64dc983e52f5329e36857",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156749.md",
+  "published_at": "2026-09-23T21:37:45.892Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156749",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156749",
+  "canonical_pr": null,
+  "summary": "The bug reproduces at the extension inventory boundary on main faa6aa6243e6f4e68a5e1b7c5be823aa7f757c6b: a Chrome Web Store tab is admitted alongside an ordinary tab in both access modes. The checkout is read-only, so no regression test, patch, validation run, or PR was created.",
+  "actions": [
+    {
+      "target": "#156749",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156749",
+      "candidate_fix": null,
+      "reason": "A narrow fix belongs in the extension tab-access owner. The current read-only checkout prevents implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156749",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156749",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout to add a failing regression, make the owner-boundary fix, validate it, and open or update the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
