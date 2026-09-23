@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T04:33:05.890Z",
+  "updated_at": "2026-09-23T04:34:01.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5429728341:2026-08-26T18:54:45Z:re_review",
-      "comment_id": "5429728341",
-      "comment_version_key": "5429728341:2026-08-26T18:54:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5429728341",
-      "comment_created_at": "2026-08-26T18:54:45Z",
-      "comment_updated_at": "2026-08-26T18:54:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T22:29:30.635Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5752467993:2026-09-20T20:31:14Z:re_review",
       "comment_id": "5752467993",
@@ -33241,6 +33214,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156067:5787691540:2026-09-23T04:33:03Z:clawsweeper_needs_human",
+      "comment_id": "5787691540",
+      "comment_version_key": "5787691540:2026-09-23T04:33:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156067#issuecomment-5787691540",
+      "comment_created_at": "2026-09-23T02:03:23Z",
+      "comment_updated_at": "2026-09-23T04:33:03Z",
+      "comment_body_sha256": "2807c0fe5a77a9cf2dc3cf310e1d69fec70a5748e767be38f336222d90b22f1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1a99a7c1a869db1dafbe90a5bde5ad3299f94f8f)",
+      "expected_head_sha": "1a99a7c1a869db1dafbe90a5bde5ad3299f94f8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T04:34:01.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-155975-chat-contention-recovery",
+        "head_sha": "1a99a7c1a869db1dafbe90a5bde5ad3299f94f8f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
