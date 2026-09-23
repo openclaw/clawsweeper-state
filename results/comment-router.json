@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T22:59:53.146Z",
+  "updated_at": "2026-09-23T23:00:50.738Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156489:5794738772:2026-09-23T13:57:25Z:clawsweeper_auto_repair",
-      "comment_id": "5794738772",
-      "comment_version_key": "5794738772:2026-09-23T13:57:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156489#issuecomment-5794738772",
-      "comment_created_at": "2026-09-23T12:23:48Z",
-      "comment_updated_at": "2026-09-23T13:57:25Z",
-      "comment_body_sha256": "7cd7c8913058bfef3e5791a5866c524e195a2fcfa4ae80120f7d7157d6d08621",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=609238df0480501e7a5964755c1c5c60118f4247)",
-      "expected_head_sha": "609238df0480501e7a5964755c1c5c60118f4247",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T15:22:08.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/prepare-selected-native-workers-20260923",
-        "head_sha": "609238df0480501e7a5964755c1c5c60118f4247",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156437:5794760147:2026-09-23T13:22:22Z:clawsweeper_needs_human",
       "comment_id": "5794760147",
@@ -33728,6 +33695,39 @@
       "status": "skipped",
       "processed_at": "2026-09-23T22:59:53.146Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156813:5804098559:2026-09-23T22:59:56Z:clawsweeper_needs_human",
+      "comment_id": "5804098559",
+      "comment_version_key": "5804098559:2026-09-23T22:59:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156813#issuecomment-5804098559",
+      "comment_created_at": "2026-09-23T22:36:48Z",
+      "comment_updated_at": "2026-09-23T22:59:56Z",
+      "comment_body_sha256": "458bfdc5089fd62ed01686394f7e7a7642cc5711e18cf4fceabdf3d191cd985a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156813,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed hooks and held-work cleanup have not run in the installed Vitest runner; a teardown ordering error or stalled drain could disrupt non-isolated cron test jobs. The material... (sha=6053894dba0f54ed821cbffd15777f955bca0ce6)",
+      "expected_head_sha": "6053894dba0f54ed821cbffd15777f955bca0ce6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T23:00:50.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/cron-recovery-test-fixtures-20260924",
+        "head_sha": "6053894dba0f54ed821cbffd15777f955bca0ce6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
