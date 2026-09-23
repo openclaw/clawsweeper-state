@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "autonomous",
+  "run_id": "35886331878",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35886331878",
+  "head_sha": "74df933aeed3f01eddcf027150f1484fdcb57904",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-23T17:22:58.411Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_pr": null,
+  "summary": "Verified the diagnostic gap in source at preflight main 8853510cfd32501fc2779c2cf6b49a53cd76dd18. Prepared a narrow fix plan. Implementation and runtime reproduction are blocked on this read-only host with no installed dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Only implementation is blocked: filesystem writes are prohibited and node_modules is absent. The executor must establish the failing real-context listener regression before changing production code."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct remaining work; leave open outside this implementation."
+    },
+    {
+      "target": "#94691",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#102811",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not a repairable candidate branch."
+    },
+    {
+      "target": "#115528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve its routing decision; repair only the missing diagnostic."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "A narrow non-security diagnostic fix remains appropriate. No merge, closure, or direct GitHub mutation is recommended."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
