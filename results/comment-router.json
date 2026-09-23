@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:32:47.991Z",
+  "updated_at": "2026-09-23T12:40:28.239Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156136:5788474408:2026-09-23T07:10:46Z:clawsweeper_needs_human",
-      "comment_id": "5788474408",
-      "comment_version_key": "5788474408:2026-09-23T07:10:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156136#issuecomment-5788474408",
-      "comment_created_at": "2026-09-23T03:29:04Z",
-      "comment_updated_at": "2026-09-23T07:10:46Z",
-      "comment_body_sha256": "4c63069c43f603e064e689ed3d4865646139c7975cac07db5cf1d8c673ebb208",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156136,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5d40c5072552c2bc6b79efa11003812781b69ec4)",
-      "expected_head_sha": "5d40c5072552c2bc6b79efa11003812781b69ec4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T07:12:15.744Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-write-drain-join",
-        "head_sha": "5d40c5072552c2bc6b79efa11003812781b69ec4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:173:5790245783:2026-09-23T07:11:40Z:clawsweeper_needs_human",
       "comment_id": "5790245783",
@@ -33411,6 +33378,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149882:5794968379:2026-09-23T12:39:22Z:re_review",
+      "comment_id": "5794968379",
+      "comment_version_key": "5794968379:2026-09-23T12:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149882#issuecomment-5794968379",
+      "comment_created_at": "2026-09-23T12:39:22Z",
+      "comment_updated_at": "2026-09-23T12:39:22Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149882,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T12:40:26.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/freebsd-foreground-update",
+        "head_sha": "4ead56d97168b701f315bdf50e322a1f88d6a28e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
