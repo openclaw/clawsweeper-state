@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:41:20.659Z",
+  "updated_at": "2026-09-23T12:41:23.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156227:5790656131:2026-09-23T07:14:05Z:re_review",
-      "comment_id": "5790656131",
-      "comment_version_key": "5790656131:2026-09-23T07:14:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156227#issuecomment-5790656131",
-      "comment_created_at": "2026-09-23T07:14:05Z",
-      "comment_updated_at": "2026-09-23T07:14:05Z",
-      "comment_body_sha256": "ac782ff6804e3c5e21affa9823fd2f436b669ab7774affb45c2eda274293b84b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156227,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T07:15:05.809Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dev-update-preflight-ux-20260923",
-        "head_sha": "1166f3ad5fb65e66e22e50ef4db46870215f6f81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156210:5790658048:2026-09-23T07:14:16Z:re_review",
       "comment_id": "5790658048",
@@ -33394,6 +33347,39 @@
         "kind": "pull_request",
         "branch": "upd/flake-chat-abort-late-error-frame",
         "head_sha": "81f242e3f2a8407f88e12d7118ae4d8d0e675ec2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156373:5792745426:2026-09-23T12:35:23Z:clawsweeper_needs_human",
+      "comment_id": "5792745426",
+      "comment_version_key": "5792745426:2026-09-23T12:35:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156373#issuecomment-5792745426",
+      "comment_created_at": "2026-09-23T09:56:16Z",
+      "comment_updated_at": "2026-09-23T12:35:23Z",
+      "comment_body_sha256": "3ea35f46dfbdbe3179d47e8806e770fce1460b96aabfcbbf7a57997a2cfadf9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the revised integration exercises real scoped admission and lifecycle owners, but substitutes the broker and no... (sha=77844196efd3c3cc93ef4d6e280f9eeabb7cd793)",
+      "expected_head_sha": "77844196efd3c3cc93ef4d6e280f9eeabb7cd793",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T12:41:23.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-worker-preview-20260923",
+        "head_sha": "77844196efd3c3cc93ef4d6e280f9eeabb7cd793",
         "cluster_id": null,
         "job_path": null
       }
