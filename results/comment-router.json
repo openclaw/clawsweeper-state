@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T06:04:19.968Z",
+  "updated_at": "2026-09-23T06:04:39.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149307:5786606486:2026-09-23T00:08:45Z:re_review",
-      "comment_id": "5786606486",
-      "comment_version_key": "5786606486:2026-09-23T00:08:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149307#issuecomment-5786606486",
-      "comment_created_at": "2026-09-23T00:08:45Z",
-      "comment_updated_at": "2026-09-23T00:08:45Z",
-      "comment_body_sha256": "e9899881ab8d376cde418037085c77e04702d99c5be0b62a000f6457d802beca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149307,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T00:09:37.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/launchdaemon-actual-read",
-        "head_sha": "c38474eb42f4bc4213f44d84ff6d2f7a59793fb6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156018:5786406416:2026-09-23T00:08:07Z:clawsweeper_needs_human",
       "comment_id": "5786406416",
@@ -33884,6 +33837,39 @@
         "kind": "pull_request",
         "branch": "codex/http-session-sandbox",
         "head_sha": "b94369e7fa8626ae0de1e9a2bace0e95af3b8fdd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:140:5789930053:2026-09-23T06:03:48Z:clawsweeper_needs_human",
+      "comment_id": "5789930053",
+      "comment_version_key": "5789930053:2026-09-23T06:03:48Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/140#issuecomment-5789930053",
+      "comment_created_at": "2026-09-23T06:03:48Z",
+      "comment_updated_at": "2026-09-23T06:03:48Z",
+      "comment_body_sha256": "162b97e16bd0182a1afa002ce54cfc8c6221d28fc9c9929f490e524524a63f41",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: supplied validation covers tests and checks, but does not show crawlkit's SQLite-backed archive operati... (sha=8cb37508e149b04f84b2401542c2d1b018da5dbb)",
+      "expected_head_sha": "8cb37508e149b04f84b2401542c2d1b018da5dbb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T06:04:39.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "build/deps-sweep3",
+        "head_sha": "8cb37508e149b04f84b2401542c2d1b018da5dbb",
         "cluster_id": null,
         "job_path": null
       }
