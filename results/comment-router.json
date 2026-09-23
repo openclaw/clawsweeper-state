@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T00:27:41.134Z",
+  "updated_at": "2026-09-23T00:28:29.082Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155548:5773908792:2026-09-22T09:07:12Z:re_review",
-      "comment_id": "5773908792",
-      "comment_version_key": "5773908792:2026-09-22T09:07:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155548#issuecomment-5773908792",
-      "comment_created_at": "2026-09-22T09:07:12Z",
-      "comment_updated_at": "2026-09-22T09:07:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155548,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T18:10:36.230Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155735:5777154603:2026-09-22T18:09:24Z:clawsweeper_needs_human",
       "comment_id": "5777154603",
@@ -33185,6 +33158,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5786840665:2026-09-23T00:27:26Z:re_review",
+      "comment_id": "5786840665",
+      "comment_version_key": "5786840665:2026-09-23T00:27:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5786840665",
+      "comment_created_at": "2026-09-23T00:27:26Z",
+      "comment_updated_at": "2026-09-23T00:27:26Z",
+      "comment_body_sha256": "9ee5632c661e629fc6285e0e765d5c71a0037a781db31623ae40635d9461b081",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main (`00be6c5f`, 33 commits behind resolved, clean auto-merge). focused tests pass (12/12 skill-selection). tsgo:core errors are pre-existing upstream (40 on clean main, 0 in our files)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T00:28:23.519Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "00be6c5ffb4982dd29c2c1e1d7a1a089fb84dcd6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
