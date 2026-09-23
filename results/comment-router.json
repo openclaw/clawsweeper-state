@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T07:23:45.628Z",
+  "updated_at": "2026-09-23T07:24:39.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5787889284:2026-09-23T02:26:57Z:re_review",
-      "comment_id": "5787889284",
-      "comment_version_key": "5787889284:2026-09-23T02:26:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5787889284",
-      "comment_created_at": "2026-09-23T02:26:57Z",
-      "comment_updated_at": "2026-09-23T02:26:57Z",
-      "comment_body_sha256": "dc0579dea668d190d8ca7e2772762f78136df4c63b16afca6baecd295284fb4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (00be6c5f → ff16df86c, 44 commits behind, clean auto-merge, no conflicts). focused skill-selection audit tests pass (12/12). tsgo:core failures are pre-existing upstream breakage in secrets/configure + models/auth (zero overlap with pr files). 🙏",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T02:35:38.599Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "ff16df86c8c7502b38a78217d271777c4870f2de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155899:5782212412:2026-09-23T02:10:23Z:clawsweeper_needs_human",
       "comment_id": "5782212412",
@@ -33935,6 +33888,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpdf:25:5790763561:2026-09-23T07:22:52Z:clawsweeper_needs_human",
+      "comment_id": "5790763561",
+      "comment_version_key": "5790763561:2026-09-23T07:22:52Z",
+      "comment_url": "https://github.com/openclaw/clawpdf/pull/25#issuecomment-5790763561",
+      "comment_created_at": "2026-09-23T07:22:52Z",
+      "comment_updated_at": "2026-09-23T07:22:52Z",
+      "comment_body_sha256": "6164a37563e84cb3b448198f0b63e090e414d2c462c7c4534f0bbb4f2bf551e1",
+      "repo": "openclaw/clawpdf",
+      "issue_number": 25,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The Crabbox validation claim and PDFium-backed regression tests support the implementation, but the supplied material does not show an... (sha=d8e2c24938342f82089ff2a588e19df0bdb42090)",
+      "expected_head_sha": "d8e2c24938342f82089ff2a588e19df0bdb42090",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T07:24:39.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/image-budget-truncation",
+        "head_sha": "d8e2c24938342f82089ff2a588e19df0bdb42090",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
