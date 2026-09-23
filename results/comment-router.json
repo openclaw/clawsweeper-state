@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T18:16:20.435Z",
+  "updated_at": "2026-09-23T18:17:24.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156343:5793690830:2026-09-23T11:04:39Z:re_review",
-      "comment_id": "5793690830",
-      "comment_version_key": "5793690830:2026-09-23T11:04:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156343#issuecomment-5793690830",
-      "comment_created_at": "2026-09-23T11:04:39Z",
-      "comment_updated_at": "2026-09-23T11:04:39Z",
-      "comment_body_sha256": "f9673a0a92e5087d519f5b23a104237c3e63c7da79511b51fe51bcc0c9fa049a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156343,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T11:05:33.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/diagnostics-harness-commentary-20260923",
-        "head_sha": "aee0a1d970544b09a30be764b036744df2ce4716",
-        "cluster_id": "automerge-openclaw-openclaw-156343",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156343.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156398:5792949623:2026-09-23T11:04:30Z:clawsweeper_needs_human",
       "comment_id": "5792949623",
@@ -33390,6 +33343,39 @@
         "kind": "pull_request",
         "branch": "fix/subagent-child-admission-20260923",
         "head_sha": "54d88dab17dcd2ba4928c530470c209e679b3a3e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156689:5800385455:2026-09-23T18:16:16Z:clawsweeper_needs_human",
+      "comment_id": "5800385455",
+      "comment_version_key": "5800385455:2026-09-23T18:16:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156689#issuecomment-5800385455",
+      "comment_created_at": "2026-09-23T18:16:16Z",
+      "comment_updated_at": "2026-09-23T18:16:16Z",
+      "comment_body_sha256": "3607370e0e7c12255aafabff25978671937e02677c48037dc7ee57b3993115c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed UI E2E test-support contract is used by the QA delegation caller. The PR reports passing local typechecks and tests, but the captur... (sha=8a76557b6c9db6733a79231e41af4bb76e10ebbd)",
+      "expected_head_sha": "8a76557b6c9db6733a79231e41af4bb76e10ebbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T18:17:24.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr156680-inherited-ci-repair",
+        "head_sha": "8a76557b6c9db6733a79231e41af4bb76e10ebbd",
         "cluster_id": null,
         "job_path": null
       }
