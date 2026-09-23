@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:21:56.920Z",
+  "updated_at": "2026-09-23T10:22:05.445Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150995:5717931821:2026-09-23T04:25:56Z:clawsweeper_auto_repair",
-      "comment_id": "5717931821",
-      "comment_version_key": "5717931821:2026-09-23T04:25:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150995#issuecomment-5717931821",
-      "comment_created_at": "2026-09-17T16:37:59Z",
-      "comment_updated_at": "2026-09-23T04:25:56Z",
-      "comment_body_sha256": "b27241ada82ba4eb55b2179cefee3dcee3c53f2fba03b35b15677012a1467376",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150995,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=114bcee7f6b2afd60688d034fd5b6e56a3b74765)",
-      "expected_head_sha": "114bcee7f6b2afd60688d034fd5b6e56a3b74765",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T04:52:57.035Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/native-yield-progress-current",
-        "head_sha": "114bcee7f6b2afd60688d034fd5b6e56a3b74765",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156053:5787218474:2026-09-23T04:23:17Z:clawsweeper_needs_human",
       "comment_id": "5787218474",
@@ -33651,6 +33618,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156415:5793083094:2026-09-23T10:21:06Z:automerge",
+      "comment_id": "5793083094",
+      "comment_version_key": "5793083094:2026-09-23T10:21:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156415#issuecomment-5793083094",
+      "comment_created_at": "2026-09-23T10:21:06Z",
+      "comment_updated_at": "2026-09-23T10:21:06Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156415,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T10:21:56.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/main-knip-workflow-roots",
+        "head_sha": "a147cda57626d0375b6c1c8e0f642e32a23cb12d",
+        "cluster_id": "automerge-openclaw-openclaw-156415",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156415.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-156415.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156402:5793080593:2026-09-23T10:20:54Z:clawsweeper_needs_human",
