@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:41:19.134Z",
+  "updated_at": "2026-09-23T12:41:20.023Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155875:5790637709:2026-09-23T07:12:25Z:re_review",
-      "comment_id": "5790637709",
-      "comment_version_key": "5790637709:2026-09-23T07:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155875#issuecomment-5790637709",
-      "comment_created_at": "2026-09-23T07:12:25Z",
-      "comment_updated_at": "2026-09-23T07:12:25Z",
-      "comment_body_sha256": "42f163491cbae900b8d92c9b5cadcfbf9a3978d456b734d6edcb4610796f482b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155875,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T07:13:33.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-inventory-transient-locks",
-        "head_sha": "e3db0bdce201498e9744df575f5226c1a5b8f028",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154208:5790649489:2026-09-23T07:13:29Z:re_review",
       "comment_id": "5790649489",
@@ -33422,6 +33375,39 @@
         "kind": "pull_request",
         "branch": "fix/catalog-scope-empty-policies",
         "head_sha": "233313ce13d8fd0d90c2cdfcde641c260af69dcb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156457:5793799132:2026-09-23T12:37:36Z:clawsweeper_needs_human",
+      "comment_id": "5793799132",
+      "comment_version_key": "5793799132:2026-09-23T12:37:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156457#issuecomment-5793799132",
+      "comment_created_at": "2026-09-23T11:12:39Z",
+      "comment_updated_at": "2026-09-23T12:37:36Z",
+      "comment_body_sha256": "dc41722087bdb6804c46697121dc8ec560ff53ddad44179eab5f791e5c49fd17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=63ec3428c13d4d50834e282870398937c0ebeb0f)",
+      "expected_head_sha": "63ec3428c13d4d50834e282870398937c0ebeb0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T12:41:20.023Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/config-env-phase-snapshots-20260923",
+        "head_sha": "63ec3428c13d4d50834e282870398937c0ebeb0f",
         "cluster_id": null,
         "job_path": null
       }
