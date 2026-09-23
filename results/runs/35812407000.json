@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156038",
+  "mode": "plan",
+  "run_id": "35812407000",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35812407000",
+  "head_sha": "258a5b1fa2545fda1da64b64324afceeaff8f71d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156038.md",
+  "published_at": "2026-09-23T03:01:51.211Z",
+  "canonical": "#156038",
+  "canonical_issue": "#156038",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the CLI hook gap at preflight main 31e6c4514881c7cfc4cb1755a2e7eadc2928a2c5. Plan one narrow implementation PR. No files or GitHub state changed; runtime reproduction, tests, native proof, and review remain pending.",
+  "actions": [
+    {
+      "target": "#156038",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Restore the existing hook contract through the shared CLI entry point. No hydrated PR provides a viable narrow fix."
+    },
+    {
+      "target": "#153856",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Related hook surface, but a distinct feature proposal. Do not adopt, replace, or require this PR for the CLI invocation repair."
+    },
+    {
+      "target": "#57941",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Historical contract evidence; it does not establish CLI hook invocation."
+    },
+    {
+      "target": "#62152",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Historical feature request; keyword-routing policy is outside this repair."
+    },
+    {
+      "target": "#62153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#156038",
+      "candidate_fix": null,
+      "reason": "Historical context only; do not revive its configuration or implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156038"
-mode: "autonomous"
-run_id: "35802774864"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35802774864"
+mode: "plan"
+run_id: "35812407000"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35812407000"
 head_sha: "258a5b1fa2545fda1da64b64324afceeaff8f71d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T02:41:06.305Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156038"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156038"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T03:01:51.211Z"
+canonical: "#156038"
+canonical_issue: "#156038"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35802774864](https://github.com/openclaw/clawsweeper/actions/runs/35802774864)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35812407000](https://github.com/openclaw/clawsweeper/actions/runs/35812407000)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156038
+Canonical: #156038
 
 ## Summary
 
-Prepared a narrow repair plan for the CLI hook omission. Local source confirms the wiring gap, but implementation and runtime reproduction are blocked by the read-only host, missing dependencies, and checkout mismatch: local HEAD is 691da64a73b319c256951db2637dcb718d301b37; preflight main 2a911a7ccb8e86a5e9bae843828f949ed3615e6d is absent locally. No files or GitHub state changed.
+Source inspection confirms the CLI hook gap at preflight main 31e6c4514881c7cfc4cb1755a2e7eadc2928a2c5. Plan one narrow implementation PR. No files or GitHub state changed; runtime reproduction, tests, native proof, and review remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Prepared a narrow repair plan for the CLI hook omission. Local source confirms t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156038 | fix_needed | planned | canonical | A focused existing-contract repair is justified. Implementation must first reproduce on refreshed main in writable isolation; do not close the issue. |
-| #153856 | keep_related | planned | related | Keep this distinct feature proposal open under its existing review; do not borrow its public API or expand this bug repair. |
-| #57941 | keep_closed | skipped | related | Historical contract evidence does not prove ordinary CLI entry-point coverage. |
-| #62152 | keep_closed | skipped | related | Historical feature request; no keyword-routing configuration belongs in this repair. |
-| #62153 | keep_closed | skipped | related | Retain as historical evidence without replacement, closure, or code adoption. |
-| cluster:issue-openclaw-openclaw-156038 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation, failing regression, native after-fix evidence, review, and validation remain blocked on a writable isolated executor with refreshed main and dependencies. |
+| #156038 | fix_needed | planned | canonical | Restore the existing hook contract through the shared CLI entry point. No hydrated PR provides a viable narrow fix. |
+| #153856 | keep_related | planned | related | Related hook surface, but a distinct feature proposal. Do not adopt, replace, or require this PR for the CLI invocation repair. |
+| #57941 | keep_closed | skipped | related | Historical contract evidence; it does not establish CLI hook invocation. |
+| #62152 | keep_closed | skipped | related | Historical feature request; keyword-routing policy is outside this repair. |
+| #62153 | keep_closed | skipped | related | Historical context only; do not revive its configuration or implementation. |
 
 ## Needs Human
 
