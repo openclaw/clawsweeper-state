@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T06:05:46.300Z",
+  "updated_at": "2026-09-23T06:05:54.591Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156021:5786649795:2026-09-23T00:12:19Z:re_review",
-      "comment_id": "5786649795",
-      "comment_version_key": "5786649795:2026-09-23T00:12:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156021#issuecomment-5786649795",
-      "comment_created_at": "2026-09-23T00:12:19Z",
-      "comment_updated_at": "2026-09-23T00:12:19Z",
-      "comment_body_sha256": "a7b73e71a35952ab3dd041e27653155a8578a8e15be0c9b31d970e08f9a5442d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156021,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T00:13:40.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/crabbox-aws-source-capsule",
-        "head_sha": "a7e44e942eaf6c4af866a2e8e8566d37262dd6fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156030:5786659367:2026-09-23T00:13:06Z:clawsweeper_needs_human",
       "comment_id": "5786659367",
@@ -33870,6 +33823,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-clawhub-extraction-20260923",
         "head_sha": "b4c13287d2ded0b6f0230b0e67ba1c40b4150037",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156250:5789940629:2026-09-23T06:04:49Z:clawsweeper_needs_human",
+      "comment_id": "5789940629",
+      "comment_version_key": "5789940629:2026-09-23T06:04:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156250#issuecomment-5789940629",
+      "comment_created_at": "2026-09-23T06:04:49Z",
+      "comment_updated_at": "2026-09-23T06:04:49Z",
+      "comment_body_sha256": "7d81b0ba11d207990ecf75a59d9c3fe9a620489a0b6d1a0e785c6374ad1acad0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156250,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new Retry entrypoint acquires registration authority before using existing grant admission and credentialed... (sha=8c31dfa24d7538257d74abc21638001226cd3074)",
+      "expected_head_sha": "8c31dfa24d7538257d74abc21638001226cd3074",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T06:05:54.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/android-ingress-tls-retry-20260923",
+        "head_sha": "8c31dfa24d7538257d74abc21638001226cd3074",
         "cluster_id": null,
         "job_path": null
       }
