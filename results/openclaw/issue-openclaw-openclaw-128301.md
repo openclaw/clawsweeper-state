@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
-mode: "autonomous"
-run_id: "35911299794"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35911299794"
+mode: "plan"
+run_id: "35913282121"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35913282121"
 head_sha: "549143746fd2f0012b31121b8996c74ddee8afd9"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T20:43:56.650Z"
-canonical: "https://github.com/openclaw/openclaw/issues/128301"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-23T20:11:23.666Z"
+canonical: "#128301"
+canonical_issue: "#128301"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35911299794](https://github.com/openclaw/clawsweeper/actions/runs/35911299794)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35913282121](https://github.com/openclaw/clawsweeper/actions/runs/35913282121)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/128301
+Canonical: #128301
 
 ## Summary
 
-The diagnostic gap remains on main at 3753440207a2752fa3d7c1efd881f5e3990fe110. The listener skips an unresolved app mention without an INFO record, while the context lookup catches the Slack API failure and returns empty metadata. Implementation and runtime validation are blocked because this worker’s filesystem is read-only and dependencies are absent. No code, branch, PR, or GitHub item was changed.
+Plan a narrow INFO diagnostic for unresolved Slack app mentions on current main (9505f6ee). The existing lookup catches conversations.info failures and returns empty metadata, so implementation must first demonstrate the missing diagnostic through the registered listener and a real monitor context. No code was changed or tests run in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ The diagnostic gap remains on main at 3753440207a2752fa3d7c1efd881f5e3990fe110. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | planned | canonical | A narrow, non-security diagnostic repair is needed; delivery policy must stay unchanged. |
-| #112259 | keep_related | planned | related | Keep the separate message-loss investigation open. |
-| #94691 | keep_closed | skipped | related | Historical context only. |
-| #102811 | keep_closed | skipped | related | Historical context only. |
-| #115528 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies. The classification and fix plan remain valid. |
+| #128301 | fix_needed | planned | canonical | Create one narrow diagnostic fix PR after the required failing regression; preserve routing and delivery ownership. |
+| #112259 | keep_related | planned | related | The reports share a message-loss symptom but have different established failure paths. |
+| #94691 | keep_closed | skipped | related | Historical logging context; no close action is valid. |
+| #102811 | keep_closed | skipped | related | Historical type-resolution context; no PR action is needed. |
+| #115528 | keep_closed | skipped | related | Historical routing context; it does not supply the requested unresolved-type diagnostic. |
 
 ## Needs Human
 
