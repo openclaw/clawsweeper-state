@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-23T14:23:16.292Z",
+  "updated_at": "2026-09-23T14:23:25.217Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:189:5790450971:2026-09-23T07:49:10Z:clawsweeper_needs_human",
-      "comment_id": "5790450971",
-      "comment_version_key": "5790450971:2026-09-23T07:49:10Z",
-      "comment_url": "https://github.com/openclaw/clawrouter/pull/189#issuecomment-5790450971",
-      "comment_created_at": "2026-09-23T06:55:39Z",
-      "comment_updated_at": "2026-09-23T07:49:10Z",
-      "comment_body_sha256": "d9a94499a9641d8357b259cde37aacae7902bd86f6e5d3451fcac049ca6b19f4",
-      "repo": "openclaw/clawrouter",
-      "issue_number": 189,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4d6db4a3dfb048b60fd4bb44cafbd6e41bbd300f)",
-      "expected_head_sha": "4d6db4a3dfb048b60fd4bb44cafbd6e41bbd300f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T08:04:20.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retained-content-expiry",
-        "head_sha": "b9f7449faadb9ff7a7b27b6b3cbf0c78f8089457",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawrouter:189:5790575228:2026-09-23T07:07:02Z:re_review",
       "comment_id": "5790575228",
@@ -33320,6 +33287,39 @@
       "status": "skipped",
       "processed_at": "2026-09-23T14:23:16.292Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156389:5792906376:2026-09-23T14:19:19Z:clawsweeper_needs_human",
+      "comment_id": "5792906376",
+      "comment_version_key": "5792906376:2026-09-23T14:19:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156389#issuecomment-5792906376",
+      "comment_created_at": "2026-09-23T10:07:58Z",
+      "comment_updated_at": "2026-09-23T14:19:19Z",
+      "comment_body_sha256": "79eeeec6fce3e353e9a9302424c9bb16902cc7ff255ad7d49c853384890259dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The live Ollama trace proves after-fix tagging in buildAssistantMessage, but does not exercise the changed subscriber through actual c... (sha=bc73c6c8b7efe6b8453caa8835f3ee79825ff3e9)",
+      "expected_head_sha": "bc73c6c8b7efe6b8453caa8835f3ee79825ff3e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T14:23:25.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-pretool-commentary-133922",
+        "head_sha": "bc73c6c8b7efe6b8453caa8835f3ee79825ff3e9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
