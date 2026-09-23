@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-09-23T21:53:29.730Z",
+  "updated_at": "2026-09-23T21:54:05.682Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156463:5796409552:2026-09-23T14:12:24Z:re_review",
-      "comment_id": "5796409552",
-      "comment_version_key": "5796409552:2026-09-23T14:12:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156463#issuecomment-5796409552",
-      "comment_created_at": "2026-09-23T14:12:24Z",
-      "comment_updated_at": "2026-09-23T14:12:24Z",
-      "comment_body_sha256": "4c182625704fbeec5208681249b1e464646878e773439a9d509089719894ff62",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156463,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T14:22:02.269Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-known-flakes-land",
-        "head_sha": "2379acd7ba16b9667402da765ad99e67a27fca83",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156304:5792536189:2026-09-23T14:18:12Z:clawsweeper_needs_human",
-      "comment_id": "5792536189",
-      "comment_version_key": "5792536189:2026-09-23T14:18:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156304#issuecomment-5792536189",
-      "comment_created_at": "2026-09-23T09:40:21Z",
-      "comment_updated_at": "2026-09-23T14:18:12Z",
-      "comment_body_sha256": "1973c159123b0c210d6e26b29457036bf8f6a6f5fa74942f75465498aa2ffc82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156304,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=bbe0839b7498ac3b8fee950322070992b6dc5c8e)",
-      "expected_head_sha": "bbe0839b7498ac3b8fee950322070992b6dc5c8e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T14:22:03.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/profile-connection-access-20260923",
-        "head_sha": "bbe0839b7498ac3b8fee950322070992b6dc5c8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156484:5794588711:2026-09-23T14:19:41Z:clawsweeper_needs_human",
       "comment_id": "5794588711",
@@ -31581,6 +31501,39 @@
       ]
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1486:5787866866:2026-09-23T21:52:00Z:clawsweeper_needs_human",
+      "comment_id": "5787866866",
+      "comment_version_key": "5787866866:2026-09-23T21:52:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1486#issuecomment-5787866866",
+      "comment_created_at": "2026-09-23T02:24:28Z",
+      "comment_updated_at": "2026-09-23T21:52:00Z",
+      "comment_body_sha256": "ae01dc2bfdec32741bce06521976b77efcdbe6b3bf575b7f484016b55c86bb2b",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The changed production owner is Inno post-uninstall cleanup plus its PowerShell deletion helper. The P...; Review finding: [P1] Check ownership before deleting the named WSL child — scripts/Uninstall-LocalGateway.ps1:695-703 - [P1] Preserve unowned files in generic named children — ins... (sha=889bf11938f824f001e88a5e43f6215918f385da)",
+      "expected_head_sha": "889bf11938f824f001e88a5e43f6215918f385da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T21:52:52.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f023-generated-uninstall-children",
+        "head_sha": "889bf11938f824f001e88a5e43f6215918f385da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156672:5799689738:2026-09-23T21:51:48Z:clawsweeper_needs_human",
       "comment_id": "5799689738",
       "comment_version_key": "5799689738:2026-09-23T21:51:48Z",
@@ -33641,6 +33594,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1666:5803201721:2026-09-23T21:52:53Z:clawsweeper_needs_human",
+      "comment_id": "5803201721",
+      "comment_version_key": "5803201721:2026-09-23T21:52:53Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1666#issuecomment-5803201721",
+      "comment_created_at": "2026-09-23T21:26:11Z",
+      "comment_updated_at": "2026-09-23T21:52:53Z",
+      "comment_body_sha256": "831055611d2df1f05ff5f030d5343f8aa8eabe06c75c3cdde79865376b8ad45d",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1666,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=05ada806cd5ef975a49bd0c977e70b2ab517abca)",
+      "expected_head_sha": "05ada806cd5ef975a49bd0c977e70b2ab517abca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T21:54:05.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/maintainer-profile-permission-fallback",
+        "head_sha": "05ada806cd5ef975a49bd0c977e70b2ab517abca",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
