@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:14:39.427Z",
+  "updated_at": "2026-09-23T10:14:50.849Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155534:5789180451:2026-09-23T04:42:15Z:re_review",
-      "comment_id": "5789180451",
-      "comment_version_key": "5789180451:2026-09-23T04:42:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155534#issuecomment-5789180451",
-      "comment_created_at": "2026-09-23T04:42:15Z",
-      "comment_updated_at": "2026-09-23T04:42:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155534,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T04:52:13.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-gpt-live-startup-errors-20260922",
-        "head_sha": "0d2a9bd7a43ab60f21eba45ea363df80b7fb623f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156121:5789182521:2026-09-23T04:42:31Z:re_review",
       "comment_id": "5789182521",
@@ -33735,6 +33688,39 @@
         "kind": "pull_request",
         "branch": "fix/update-readiness-deadline-monotonic-086",
         "head_sha": "ea3823746432445bb4e020ea5a02e143f0f4b3ae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156400:5792964817:2026-09-23T10:12:37Z:clawsweeper_auto_repair",
+      "comment_id": "5792964817",
+      "comment_version_key": "5792964817:2026-09-23T10:12:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156400#issuecomment-5792964817",
+      "comment_created_at": "2026-09-23T10:12:37Z",
+      "comment_updated_at": "2026-09-23T10:12:37Z",
+      "comment_body_sha256": "e3f92708c38ecc37f8f34ade9b1424819639289ad53dd16fb2c21fd1e361936e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1df6bf8a5702cb83806c4d28276af87d7d220672)",
+      "expected_head_sha": "1df6bf8a5702cb83806c4d28276af87d7d220672",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:14:50.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-session-share-catalog-deadline-20260919",
+        "head_sha": "1df6bf8a5702cb83806c4d28276af87d7d220672",
         "cluster_id": null,
         "job_path": null
       }
