@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-23T22:10:28.929Z",
+  "updated_at": "2026-09-23T22:11:13.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152205:5739654122:2026-09-19T05:27:27Z:re_review",
-      "comment_id": "5739654122",
-      "comment_version_key": "5739654122:2026-09-19T05:27:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152205#issuecomment-5739654122",
-      "comment_created_at": "2026-09-19T05:27:27Z",
-      "comment_updated_at": "2026-09-19T05:27:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152205,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T14:23:16.292Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152205:5740177954:2026-09-19T07:20:38Z:re_review",
       "comment_id": "5740177954",
@@ -33670,6 +33643,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156799:5803791520:2026-09-23T22:10:11Z:clawsweeper_needs_human",
+      "comment_id": "5803791520",
+      "comment_version_key": "5803791520:2026-09-23T22:10:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156799#issuecomment-5803791520",
+      "comment_created_at": "2026-09-23T22:10:11Z",
+      "comment_updated_at": "2026-09-23T22:10:11Z",
+      "comment_body_sha256": "cd1cd3e3db35d4b00a7384d3cc2f85c077cfda146640e447403bc20ffe13a5f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156799,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the added synthetic-instance tests cover live hook reads and revocation during that read, but no production-pat...; Review finding: [P1] Plan an unpinned attempt for plugin-owned credentials — src/plugins/provider-auth-scope.ts:94-98 - [P1] Revalidate plugin authority at provider egress — src/a... (sha=d67af82e6ebff30c5cfff7cda5fbd429fd03eae2)",
+      "expected_head_sha": "d67af82e6ebff30c5cfff7cda5fbd429fd03eae2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T22:11:13.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/plugin-owned-model-auth-f8fa117b",
+        "head_sha": "d67af82e6ebff30c5cfff7cda5fbd429fd03eae2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
