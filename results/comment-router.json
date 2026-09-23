@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-23T10:10:00.765Z",
+  "updated_at": "2026-09-23T10:10:12.492Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155882:5789098002:2026-09-23T04:32:58Z:re_review",
-      "comment_id": "5789098002",
-      "comment_version_key": "5789098002:2026-09-23T04:32:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155882#issuecomment-5789098002",
-      "comment_created_at": "2026-09-23T04:32:58Z",
-      "comment_updated_at": "2026-09-23T04:32:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155882,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T04:52:13.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/155820-slack-dm-channel-id-parse",
-        "head_sha": "cd10dd40ddfc576ddc76e7f698859a53c561d7c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155558:5789106365:2026-09-23T04:33:44Z:re_review",
       "comment_id": "5789106365",
@@ -33791,6 +33744,39 @@
         "kind": "pull_request",
         "branch": "test/mattermost-suite-cleanup-20260923",
         "head_sha": "78aa3009f1aa450464a43999f089ed011dab9960",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155851:5780470433:2026-09-23T10:06:28Z:clawsweeper_needs_human",
+      "comment_id": "5780470433",
+      "comment_version_key": "5780470433:2026-09-23T10:06:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155851#issuecomment-5780470433",
+      "comment_created_at": "2026-09-22T16:51:07Z",
+      "comment_updated_at": "2026-09-23T10:06:28Z",
+      "comment_body_sha256": "9ca26ed9d9995b78895ff8adfb5502233c73079bf15520d15d3eed2d98e679f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed executor, Doctor, and finalizer owners still need native allowed-owner and foreign/revoked... (sha=262e0642466765df520b5e5f358d55fc048c2b31)",
+      "expected_head_sha": "262e0642466765df520b5e5f358d55fc048c2b31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T10:10:12.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/freebsd-integrated-package-proof",
+        "head_sha": "262e0642466765df520b5e5f358d55fc048c2b31",
         "cluster_id": null,
         "job_path": null
       }
