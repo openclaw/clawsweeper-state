@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
 mode: "autonomous"
-run_id: "35924080319"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35924080319"
-head_sha: "6500b62dfd4c4efb0e2b821c1e9c427e128febef"
+run_id: "35929839073"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35929839073"
+head_sha: "a3840356d894e66c507ec5e3beb55c65e5958338"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-23T22:28:20.453Z"
+published_at: "2026-09-23T23:56:10.225Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35924080319](https://github.com/openclaw/clawsweeper/actions/runs/35924080319)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35929839073](https://github.com/openclaw/clawsweeper/actions/runs/35929839073)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/128301
 
 ## Summary
 
-Current main still skips unresolved Slack app mentions without an INFO diagnostic. The worker checkout is read-only and has no installed dependencies, so no regression test, patch, validation, or PR was produced. A narrow fix artifact is ready for a writable executor.
+Current main still has the author-corrected diagnostic gap: an unresolved Slack app mention returns with only a verbose log. The context owner swallows a failed conversations.info lookup and returns empty metadata. This checkout is read-only, so I could not add the required failing regression, implement the fix, or validate a PR branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Current main still skips unresolved Slack app mentions without an INFO diagnosti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | planned | canonical | The diagnostic gap is source-reproducible, but this read-only worker cannot create the required failing regression or patch. |
-| #112259 | keep_related | planned | related | It shares a silent-loss symptom but has a different remaining investigation. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | A writable checkout is required to add a failing listener regression, implement the diagnostic, validate it, and prepare the PR branch. |
+| #128301 | keep_canonical | planned | canonical | The diagnostic defect remains in the Slack listener and context path. Paired-message delivery loss is unproven and outside this fix. |
+| #112259 | keep_related | planned | related | The reports share a silent-loss symptom but require different owners and evidence. |
+| cluster:issue-openclaw-openclaw-128301 | fix_needed | planned |  | A narrow diagnostic fix is needed; the required failing regression has not been run. |
+| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout. |
 
 ## Needs Human
 

@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "autonomous",
+  "run_id": "35929839073",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35929839073",
+  "head_sha": "a3840356d894e66c507ec5e3beb55c65e5958338",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-23T23:56:10.225Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_pr": null,
+  "summary": "Current main still has the author-corrected diagnostic gap: an unresolved Slack app mention returns with only a verbose log. The context owner swallows a failed conversations.info lookup and returns empty metadata. This checkout is read-only, so I could not add the required failing regression, implement the fix, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The diagnostic defect remains in the Slack listener and context path. Paired-message delivery loss is unproven and outside this fix."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The reports share a silent-loss symptom but require different owners and evidence."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "A narrow diagnostic fix is needed; the required failing regression has not been run."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
