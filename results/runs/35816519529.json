@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156155",
+  "mode": "autonomous",
+  "run_id": "35816519529",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35816519529",
+  "head_sha": "258a5b1fa2545fda1da64b64324afceeaff8f71d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156155.md",
+  "published_at": "2026-09-23T04:47:57.373Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156155",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156155",
+  "canonical_pr": null,
+  "summary": "Confirmed the unchecked successor migration in source at the preflight main SHA. Prepared a narrow repair artifact; implementation and executable reproduction are blocked by the read-only sandbox and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#156155",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156155",
+      "candidate_fix": null,
+      "reason": "An ordinary configuration-repair bug has a clear existing owner. Keep the issue open while the executor establishes reproduction and implements the guard."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156155",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#156155",
+      "candidate_fix": null,
+      "reason": "The narrow artifact is actionable in a writable executor; no product-policy decision is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156155",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156155",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked until a writable executor reproduces the defect, validates the patch, and completes review. This is an execution prerequisite, not unresolved maintainer judgment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
