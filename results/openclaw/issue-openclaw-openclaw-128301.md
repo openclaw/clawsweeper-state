@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-128301"
 mode: "autonomous"
-run_id: "35944122736"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35944122736"
+run_id: "35947862279"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35947862279"
 head_sha: "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-24T02:41:28.199Z"
+published_at: "2026-09-24T03:10:50.413Z"
 canonical: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/128301"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35944122736](https://github.com/openclaw/clawsweeper/actions/runs/35944122736)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35947862279](https://github.com/openclaw/clawsweeper/actions/runs/35947862279)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/128301
 
 ## Summary
 
-Current main still lacks the requested INFO diagnostic for unresolved Slack app mentions. The source path is clear, but this read-only checkout has no installed dependencies, so I could not add the required failing regression, implement the fix, or validate a PR branch.
+At main 5603e967f97061a3086eafa632c5c438f0fea456, an unresolved Slack app mention returns with only a verbose log. The real context catches conversations.info failures and returns empty metadata; the existing listener test instead mocks a rejection. A narrow diagnostic fix is warranted, but this read-only checkout prevented adding the failing regression, changing code, or running validation. No PR was created.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main still lacks the requested INFO diagnostic for unresolved Slack app 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128301 | fix_needed | planned | canonical | A narrow diagnostic repair is supported by current source; runtime regression proof and implementation require a writable checkout with dependencies. |
-| #112259 | keep_related | planned | related | Its remaining reproduction and repair path are distinct. |
-| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | Implementation is blocked by the worker host's read-only filesystem. |
+| #128301 | fix_needed | planned | canonical | The diagnostic gap remains; paired-message delivery loss is not established by this evidence. |
+| #112259 | keep_related | planned | related | Different failure boundary and remaining work; keep the issue open. |
+| cluster:issue-openclaw-openclaw-128301 | build_fix_artifact | blocked |  | The worker's filesystem is read-only; implementation and validation must run in the executor. |
 
 ## Needs Human
 
