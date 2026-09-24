@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:11:37.127Z",
+  "updated_at": "2026-09-24T07:12:34.738Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154923:5806252979:2026-09-24T02:14:36Z:re_review",
-      "comment_id": "5806252979",
-      "comment_version_key": "5806252979:2026-09-24T02:14:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154923#issuecomment-5806252979",
-      "comment_created_at": "2026-09-24T02:14:36Z",
-      "comment_updated_at": "2026-09-24T02:14:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154923,
-      "author": "sxh313",
-      "author_id": 250161920,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T02:15:33.225Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/continuation-skip-bootstrap-marker",
-        "head_sha": "36b59f13b0979f542804c09b22b84190bf820125",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156719:5806249278:2026-09-24T02:14:10Z:re_review",
       "comment_id": "5806249278",
@@ -32196,6 +32149,39 @@
         "kind": "pull_request",
         "branch": "codex/bot-reply-context-defaults",
         "head_sha": "70826b1bb051d56c80e4fbb402d4096a7f5e00e6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156997:5807521736:2026-09-24T07:11:41Z:clawsweeper_needs_human",
+      "comment_id": "5807521736",
+      "comment_version_key": "5807521736:2026-09-24T07:11:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156997#issuecomment-5807521736",
+      "comment_created_at": "2026-09-24T04:13:40Z",
+      "comment_updated_at": "2026-09-24T07:11:41Z",
+      "comment_body_sha256": "6cdf496b6d671c01ce2cc4ea40d9ed600305883e37c0ebe19c5b838c2a574885",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156997,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The rebased head has a passing full-importer run, but the documented 20 standalone and three original-shard clean runs are not established; residual order-dependent CI failure remains... (sha=ee92f7adf68d1c97bd3db12568f883caf35965bb)",
+      "expected_head_sha": "ee92f7adf68d1c97bd3db12568f883caf35965bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T07:12:34.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/flake-sessions-create-foreign-admin-enoent",
+        "head_sha": "ee92f7adf68d1c97bd3db12568f883caf35965bb",
         "cluster_id": null,
         "job_path": null
       }
