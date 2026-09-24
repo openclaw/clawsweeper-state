@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:10:42.306Z",
+  "updated_at": "2026-09-24T07:11:32.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156790:5806249500:2026-09-24T02:14:12Z:re_review",
-      "comment_id": "5806249500",
-      "comment_version_key": "5806249500:2026-09-24T02:14:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156790#issuecomment-5806249500",
-      "comment_created_at": "2026-09-24T02:14:12Z",
-      "comment_updated_at": "2026-09-24T02:14:12Z",
-      "comment_body_sha256": "41a78fbcdcbf39ee35ff84fdca51a6af450223a0f716276c17c0f636a953a9b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156790,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T02:15:21.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/wa3b-silent-completion",
-        "head_sha": "da5f3f7f42054a8de219fef110a16023ff0645de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156931:5806251390:2026-09-24T02:14:25Z:clawsweeper_needs_human",
       "comment_id": "5806251390",
@@ -32210,6 +32163,39 @@
         "kind": "pull_request",
         "branch": "fix/android-startup-diagnostics-20260920",
         "head_sha": "d8c432b0d8258d32762c443216f5aba7466f4c2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157097:5809368801:2026-09-24T07:10:29Z:clawsweeper_needs_human",
+      "comment_id": "5809368801",
+      "comment_version_key": "5809368801:2026-09-24T07:10:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157097#issuecomment-5809368801",
+      "comment_created_at": "2026-09-24T07:00:39Z",
+      "comment_updated_at": "2026-09-24T07:10:29Z",
+      "comment_body_sha256": "cc648f388e898b85941f89589c5742ad9c00b891a5818bfecaeabc61697a4f6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157097,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch and current main change the same ownership-test wait, and the provided PR state reports a dirty merge; reconcile the wait before merging. (sha=a3f50069c1bbbadf20318042b2380fe6d994d68f)",
+      "expected_head_sha": "a3f50069c1bbbadf20318042b2380fe6d994d68f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T07:11:32.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maintenance-ownership-test",
+        "head_sha": "a3f50069c1bbbadf20318042b2380fe6d994d68f",
         "cluster_id": null,
         "job_path": null
       }
