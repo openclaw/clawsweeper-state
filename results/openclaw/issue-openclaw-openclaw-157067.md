@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157067"
-mode: "autonomous"
-run_id: "35962557620"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35962557620"
+mode: "plan"
+run_id: "35966528845"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35966528845"
 head_sha: "7443df924f1b1209b9c325985170de3a36ed4e4e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T06:36:17.923Z"
-canonical: "https://github.com/openclaw/openclaw/issues/157067"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/157067"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T06:54:47.169Z"
+canonical: "157067"
+canonical_issue: "157067"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35962557620](https://github.com/openclaw/clawsweeper/actions/runs/35962557620)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35966528845](https://github.com/openclaw/clawsweeper/actions/runs/35966528845)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/157067
+Canonical: 157067
 
 ## Summary
 
-The local source still forwards an uncloneable Windows environment Proxy in exact-entry worker requests. A synthetic worker transfer throws DataCloneError. Implementation and validation are blocked: this checkout is read-only, has no installed dependencies, and does not contain the preflight main SHA. No code or GitHub state was changed.
+Plan a narrow session worker fix for the Windows environment Proxy transfer failure. Reproduce the failure at the exact-entry worker boundary before editing, then validate the repair and ordinary isolated cron preparation. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The local source still forwards an uncloneable Windows environment Proxy in exac
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157067 | fix_needed | planned | canonical | The merged usage-worker fix in #152962 touches a different worker path. |
-| #152962 | keep_closed | skipped | related | Historical related fix. |
-| cluster:issue-openclaw-openclaw-157067 | build_fix_artifact | planned |  | A narrow fix path is identified, but implementation requires a writable checkout and current-main reproduction. |
-| cluster:issue-openclaw-openclaw-157067 | open_fix_pr | blocked |  | The executor must first obtain a writable checkout at current main, reproduce the failure through the exact-entry worker, implement the fix, and validate it. |
+| https://github.com/openclaw/openclaw/issues/157067 | build_fix_artifact | planned | canonical | The issue remains open, and the requested repair has one identified worker transfer boundary. |
+| https://github.com/openclaw/openclaw/issues/155859 | keep_related | planned | related | The startup investigation has distinct remaining work. |
+| https://github.com/openclaw/openclaw/pull/152962 | keep_closed | skipped | related | Historical pattern for the proposed repair; no action is needed on the merged PR. |
 
 ## Needs Human
 
