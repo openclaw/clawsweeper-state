@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120616"
-mode: "autonomous"
-run_id: "36037529352"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36037529352"
+mode: "plan"
+run_id: "36044844101"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36044844101"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T18:41:40.302Z"
-canonical: "https://github.com/openclaw/openclaw/issues/120616"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/120616"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T19:30:31.907Z"
+canonical: "#120616"
+canonical_issue: "#120616"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36037529352](https://github.com/openclaw/clawsweeper/actions/runs/36037529352)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36044844101](https://github.com/openclaw/clawsweeper/actions/runs/36044844101)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/120616
+Canonical: #120616
 
 ## Summary
 
-Current main still has the dotted-field failure path, but this read-only checkout has no installed dependencies. The required failing agent-tool regression could not run, so no code was changed or PR opened.
+Plan a narrow fix for dotted and quoted-dotted cron update fields. The supplied preflight identifies main at 11f0dad5872b1bc0077b3f8ad800d1494681fc3c, but the read-only checkout is at a0905dfe5c17053a3f0ef2aa0cf8f421bce9381c. Reproduce through the agent cron tool on the preflight main commit before changing code; stop if it no longer fails. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Current main still has the dotted-field failure path, but this read-only checkou
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120616 | fix_needed | planned | canonical | The open issue remains unfixed; the source review reports the earlier repair PR was closed unmerged. |
-| #120623 | keep_closed | skipped | related | Historical contributor context and credit source; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-120616 | build_fix_artifact | planned |  | A narrow fix plan is available, pending executable reproduction and implementation in a writable checkout. |
-| cluster:issue-openclaw-openclaw-120616 | open_fix_pr | blocked |  | The required failing regression, patch, validation, and review cannot be completed in this checkout. |
+| #120616 | fix_needed | planned | canonical | The issue remains the canonical bug report. A fix is conditional on reproducing the failure on the preflight main commit. |
+| #120623 | keep_closed | skipped | superseded | Use the contributor's investigation as credited context; the closed PR needs no action. |
 
 ## Needs Human
 
