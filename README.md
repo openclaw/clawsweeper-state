@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 24, 2026, 20:24 UTC
+Last source update: Sep 24, 2026, 20:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 24, 2026, 20:24 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 24, 2026, 20:24 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36049780291) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 24, 2026, 19:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36051444900) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 24, 2026, 20:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36056809095) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 24, 2026, 20:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36056891538) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 24, 2026, 10:56 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35989570659) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 24, 2026, 19:57 UTC
+Last source update: Sep 24, 2026, 20:35 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1192 | 100% |
-| Run attempts archived | 3577 | audit |
+| Run attempts archived | 3578 | audit |
 | Latest successful clusters | 1005 | 84.3% |
 | Latest failed clusters | 184 | 15.4% |
 | Latest cancelled clusters | 3 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1192 clusters: 343 maintainer action, 353 automation snapshot, 447 intervention needed, 49 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#143609](https://github.com/openclaw/openclaw/issues/143609) is maintainer_input: Route this item alone to central security handling; it is outside the Homebrew runtime health fix..
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-120616](cluster:issue-openclaw-openclaw-120616) is automation_failed: Implementation must resume in a writable checkout containing the preflight main commit or newer current main, with dependencies available..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-120616](cluster:issue-openclaw-openclaw-120616) is automation_failed: Implementation must wait for a writable, dependency-ready checkout at the preflight main SHA or a newer verified main..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#157443](https://github.com/openclaw/openclaw/issues/157443) is action_planned: No open candidate PR owns this fix. The plan requires same-process slow-start, crash, foreign-port, and probe-failure checks before a nar....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-120616](cluster:issue-openclaw-openclaw-120616) | automation_failed | Implementation must resume in a writable checkout containing the preflight main commit or newer current main, with dependencies available. | Sep 24, 2026, 19:57 UTC | [issue-openclaw-openclaw-120616](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120616.md) | [36043535217](https://github.com/openclaw/clawsweeper/actions/runs/36043535217) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-120616](cluster:issue-openclaw-openclaw-120616) | automation_failed | Implementation must wait for a writable, dependency-ready checkout at the preflight main SHA or a newer verified main. | Sep 24, 2026, 20:35 UTC | [issue-openclaw-openclaw-120616](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120616.md) | [36049491367](https://github.com/openclaw/clawsweeper/actions/runs/36049491367) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-157477](cluster:issue-openclaw-openclaw-157477) | automation_failed | Implementation requires a writable, dependency-ready checkout. | Sep 24, 2026, 19:09 UTC | [issue-openclaw-openclaw-157477](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-157477.md) | [36041916997](https://github.com/openclaw/clawsweeper/actions/runs/36041916997) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-157442](cluster:issue-openclaw-openclaw-157442) | automation_failed | Implementation requires a writable executor checkout. | Sep 24, 2026, 18:42 UTC | [issue-openclaw-openclaw-157442](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-157442.md) | [36037481563](https://github.com/openclaw/clawsweeper/actions/runs/36037481563) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#157376](https://github.com/openclaw/openclaw/pull/157376) | automation_failed | An unmatched --replace-path containing a literal dotted key is reported as a different path. | Sep 24, 2026, 16:35 UTC | [issue-openclaw-openclaw-157376](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-157376.md) | [36024015198](https://github.com/openclaw/clawsweeper/actions/runs/36024015198) |
