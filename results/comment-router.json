@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T22:12:55.323Z",
+  "updated_at": "2026-09-24T22:13:01.572Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107366:5815759424:2026-09-24T14:11:18Z:re_review",
-      "comment_id": "5815759424",
-      "comment_version_key": "5815759424:2026-09-24T14:11:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107366#issuecomment-5815759424",
-      "comment_created_at": "2026-09-24T14:11:18Z",
-      "comment_updated_at": "2026-09-24T14:11:18Z",
-      "comment_body_sha256": "ba3613eb07b13daf5a07432a608f360fb0c86319ced0a28c388eadfe9c275e20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107366,
-      "author": "henkterharmsel",
-      "author_id": 391243,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T14:14:16.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/acp-oneshot-followup-resume",
-        "head_sha": "cf12b92744ffd7955ba1992d641c99da908d5df4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157313:5815803279:2026-09-24T14:13:50Z:clawsweeper_needs_human",
       "comment_id": "5815803279",
@@ -33229,6 +33182,39 @@
         "kind": "pull_request",
         "branch": "triage/20260921-free-tier-batch",
         "head_sha": "121b8bb98619c1ffc718373fda8fd5e3f1c3e2e0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3961:5820358259:2026-09-24T20:45:32Z:clawsweeper_needs_human",
+      "comment_id": "5820358259",
+      "comment_version_key": "5820358259:2026-09-24T20:45:32Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3961#issuecomment-5820358259",
+      "comment_created_at": "2026-09-24T19:01:19Z",
+      "comment_updated_at": "2026-09-24T20:45:32Z",
+      "comment_body_sha256": "535c672a66427b1086d6bccdbd9d012a7d3ea72bd4d730d452870787c0ad7035",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required full make test handoff remains incomplete after a synthetic Keychain helper hung; a completed run or explicit owner acceptance of the reported sharded coverage is needed... (sha=d281315313bdda4993b3ac3c5248d088a4ab363c)",
+      "expected_head_sha": "d281315313bdda4993b3ac3c5248d088a4ab363c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T22:13:01.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frontmost-merged-icon",
+        "head_sha": "d281315313bdda4993b3ac3c5248d088a4ab363c",
         "cluster_id": null,
         "job_path": null
       }
