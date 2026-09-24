@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157152"
-mode: "plan"
-run_id: "35984404300"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35984404300"
+mode: "autonomous"
+run_id: "35978994453"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35978994453"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-24T10:03:26.311Z"
-canonical: "#157152"
+published_at: "2026-09-24T09:43:14.498Z"
+canonical: "https://github.com/openclaw/openclaw/issues/157152"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157152"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35984404300](https://github.com/openclaw/clawsweeper/actions/runs/35984404300)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35978994453](https://github.com/openclaw/clawsweeper/actions/runs/35978994453)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #157152
+Canonical: https://github.com/openclaw/openclaw/issues/157152
 
 ## Summary
 
-The reported hard cut remains on the preflight main revision. Plan a narrow Memory Core fix and a failing regression through consolidation and the resulting durable entry. No code or GitHub state was changed.
+The defect remains on the supplied main SHA. Deep consolidation hard-cuts the text written to MEMORY.md, while append promotion uses a boundary-aware formatter. A narrow Memory Core fix is appropriate. This read-only worker did not edit code or mutate GitHub.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ The reported hard cut remains on the preflight main revision. Plan a narrow Memo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157152 | fix_needed | planned | canonical | Consolidation and append format the same promoted text differently. Reproduce at the consolidation boundary before implementing the shared formatter. |
-| #89444 | keep_related | planned | related | Snippet presentation is related to promotion quality, but formatting a cut cannot resolve the requested distillation policy. |
+| #157152 | fix_needed | planned | canonical | The issue describes a distinct, bounded presentation defect in the Memory Core plugin. |
+| #89444 | keep_related | planned | related | Separate promotion-policy scope; leave open. |
+| cluster:issue-openclaw-openclaw-157152 | build_fix_artifact | planned |  | The executor can implement and validate this narrow fix on the designated branch. |
 
 ## Needs Human
 
