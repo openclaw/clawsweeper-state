@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:24:44.434Z",
+  "updated_at": "2026-09-24T15:24:47.995Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156324:5811474744:2026-09-24T09:25:29Z:re_review",
-      "comment_id": "5811474744",
-      "comment_version_key": "5811474744:2026-09-24T09:25:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156324#issuecomment-5811474744",
-      "comment_created_at": "2026-09-24T09:25:29Z",
-      "comment_updated_at": "2026-09-24T09:25:29Z",
-      "comment_body_sha256": "e64eb6ba65eff3f242293ee03d43e837c56bc497c95496516c9adf748a54912d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156324,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:35:58.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chokidar-native-watch-namespace-20260923",
-        "head_sha": "e1cd13471f911860e36d5d32f4ac099913ba8270",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157089:5811607799:2026-09-24T09:34:58Z:re_review",
       "comment_id": "5811607799",
@@ -33455,6 +33408,39 @@
         "kind": "pull_request",
         "branch": "pr/1167",
         "head_sha": "1091062a0987dafe940cea5c2baf6049124b410d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157323:5816536431:2026-09-24T15:23:43Z:clawsweeper_needs_human",
+      "comment_id": "5816536431",
+      "comment_version_key": "5816536431:2026-09-24T15:23:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157323#issuecomment-5816536431",
+      "comment_created_at": "2026-09-24T14:55:16Z",
+      "comment_updated_at": "2026-09-24T15:23:43Z",
+      "comment_body_sha256": "fb4fb4473f908954beedcd1a32de29972b81b0c01da1e510ef9e89e52d588026",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7313ab15c1f40b2a70f1a033955afc328d9d776b)",
+      "expected_head_sha": "7313ab15c1f40b2a70f1a033955afc328d9d776b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T15:24:47.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-dispose-linger-157309",
+        "head_sha": "7313ab15c1f40b2a70f1a033955afc328d9d776b",
         "cluster_id": null,
         "job_path": null
       }
