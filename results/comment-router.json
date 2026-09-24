@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T10:33:44.960Z",
+  "updated_at": "2026-09-24T10:34:05.631Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148976:5736664110:2026-09-24T04:57:36Z:clawsweeper_needs_human",
-      "comment_id": "5736664110",
-      "comment_version_key": "5736664110:2026-09-24T04:57:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148976#issuecomment-5736664110",
-      "comment_created_at": "2026-09-18T21:55:50Z",
-      "comment_updated_at": "2026-09-24T04:57:36Z",
-      "comment_body_sha256": "367a9f37100bdd8c44a5d563354a1a5a77b019c18ace5db2ff2a27071b004b15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Document a bounded investigation of the SQLite ENOENT in its original shard, refresh onto main’s maintenance-fixture repair, and obtain required exact-head CI qualification. (sha=142dc62193caf78bbf0cc666761e681745e5543c)",
-      "expected_head_sha": "142dc62193caf78bbf0cc666761e681745e5543c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T04:58:43.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/strict-number-parsing-20260915",
-        "head_sha": "142dc62193caf78bbf0cc666761e681745e5543c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156829:5804274753:2026-09-24T04:57:39Z:clawsweeper_needs_human",
       "comment_id": "5804274753",
@@ -33489,6 +33456,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155959:5812425097:2026-09-24T10:32:09Z:re_review",
+      "comment_id": "5812425097",
+      "comment_version_key": "5812425097:2026-09-24T10:32:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155959#issuecomment-5812425097",
+      "comment_created_at": "2026-09-24T10:32:09Z",
+      "comment_updated_at": "2026-09-24T10:32:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155959,
+      "author": "azuretek",
+      "author_id": 17463699,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T10:34:03.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-snapshot-staging-reuse",
+        "head_sha": "e76a6937cbe40adfa8ee551349bd6c07e12e04bb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
