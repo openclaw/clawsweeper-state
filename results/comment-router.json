@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T11:47:36.163Z",
+  "updated_at": "2026-09-24T11:48:08.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157061:5808836871:2026-09-24T06:19:02Z:clawsweeper_needs_human",
-      "comment_id": "5808836871",
-      "comment_version_key": "5808836871:2026-09-24T06:19:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157061#issuecomment-5808836871",
-      "comment_created_at": "2026-09-24T06:19:02Z",
-      "comment_updated_at": "2026-09-24T06:19:02Z",
-      "comment_body_sha256": "cccc8b4eedbce8664f707a8b21cfe3658809c25be9b04edb877c240d2cf32a98",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157061,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve intentional suppression when the task is missing (P1)** - An outbound hook can return intentional_non_delivery and set the run's delivery status to failed. This new branch still calls taskless suspensio...; Review finding: [P1] Preserve intentional suppression when the task is missing — src/agents/subagents/registry/subagent-registry-lifecycle-announce-cleanup.ts:134-138 - [P2] Settl... (sha=d0acf6f19e4d8e3d17da2b5d092693e8b4066609)",
-      "expected_head_sha": "d0acf6f19e4d8e3d17da2b5d092693e8b4066609",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T06:20:03.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-stranded-subagent-completions-20260919",
-        "head_sha": "d0acf6f19e4d8e3d17da2b5d092693e8b4066609",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156997:5807521736:2026-09-24T06:19:10Z:clawsweeper_needs_human",
       "comment_id": "5807521736",
@@ -33411,6 +33378,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155867:5813455104:2026-09-24T11:46:29Z:re_review",
+      "comment_id": "5813455104",
+      "comment_version_key": "5813455104:2026-09-24T11:46:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155867#issuecomment-5813455104",
+      "comment_created_at": "2026-09-24T11:46:29Z",
+      "comment_updated_at": "2026-09-24T11:46:29Z",
+      "comment_body_sha256": "eb6686f32ef8161c62942d95bc6687c2027735de18c55d43b7f456f4cb645279",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155867,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T11:47:59.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/skills",
+        "head_sha": "8e4827320ba0c47c0b59723239e48847df0abc8c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
