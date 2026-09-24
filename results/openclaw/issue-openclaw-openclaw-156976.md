@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156976"
 mode: "autonomous"
-run_id: "35954073378"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35954073378"
-head_sha: "5ae902bf0a0f31d7c36618352b48621f39b40786"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T04:37:44.454Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156976"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156976"
+run_id: "35957775583"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35957775583"
+head_sha: "7443df924f1b1209b9c325985170de3a36ed4e4e"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T04:59:33.227Z"
+canonical: "#156976"
+canonical_issue: "#156976"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35954073378](https://github.com/openclaw/clawsweeper/actions/runs/35954073378)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35957775583](https://github.com/openclaw/clawsweeper/actions/runs/35957775583)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156976
+Canonical: #156976
 
 ## Summary
 
-Current main (86c2919) still has the reported source-level gap, but this read-only Linux checkout cannot reproduce the removed Homebrew executable through the macOS Gateway health boundary or prepare a validated PR. The fix path is scoped below; implementation must begin with that reproduction.
+Plan a narrow fix for #156976. The reported failure and current source identify the health gap, but the required failing regression on current main has not been run. Do not open the fix PR until that reproduction succeeds.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Current main (86c2919) still has the reported source-level gap, but this read-on
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156976 | fix_needed | planned | canonical | The reported failure remains plausible on current source; runtime reproduction is required before editing. |
-| #52184 | keep_related | planned | related | It does not cover a running Gateway retaining a removed Homebrew executable. |
-| #143609 | route_security | planned | security_sensitive | Route this separate credential-related report to central OpenClaw security handling without changing it in this cluster. |
-| #146268 | keep_independent | planned | independent | Its launcher error is unrelated to a running macOS Gateway retaining an old Homebrew Node path. |
-| cluster:issue-openclaw-openclaw-156976 | build_fix_artifact | blocked |  | The job requires reproduction before implementation. Run it on an authorized writable checkout with an isolated Homebrew-shaped Gateway fixture before opening the PR. |
+| #156976 | build_fix_artifact | planned | canonical | The running Gateway must report when its retained child-runtime executable is unavailable, and deep status must show an actionable restart warning. |
+| #52184 | keep_related | planned | related | Both concern stable Node paths, but their requested behavior and decision owners differ. |
+| #143609 | route_security | planned | security_sensitive | Route this item alone to central security handling; it is outside the Homebrew runtime health fix. |
+| #146268 | keep_independent | planned | independent | Different launch path and user-visible failure. |
 
 ## Needs Human
 

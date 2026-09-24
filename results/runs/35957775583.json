@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156976",
+  "mode": "autonomous",
+  "run_id": "35957775583",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35957775583",
+  "head_sha": "7443df924f1b1209b9c325985170de3a36ed4e4e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156976.md",
+  "published_at": "2026-09-24T04:59:33.227Z",
+  "canonical": "#156976",
+  "canonical_issue": "#156976",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for #156976. The reported failure and current source identify the health gap, but the required failing regression on current main has not been run. Do not open the fix PR until that reproduction succeeds.",
+  "actions": [
+    {
+      "target": "#156976",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156976",
+      "candidate_fix": null,
+      "reason": "The running Gateway must report when its retained child-runtime executable is unavailable, and deep status must show an actionable restart warning."
+    },
+    {
+      "target": "#52184",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156976",
+      "candidate_fix": null,
+      "reason": "Both concern stable Node paths, but their requested behavior and decision owners differ."
+    },
+    {
+      "target": "#143609",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this item alone to central security handling; it is outside the Homebrew runtime health fix."
+    },
+    {
+      "target": "#146268",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different launch path and user-visible failure."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
