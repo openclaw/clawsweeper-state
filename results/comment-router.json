@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:43:29.396Z",
+  "updated_at": "2026-09-24T03:49:38.739Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156547:5803542323:2026-09-23T21:50:59Z:re_review",
-      "comment_id": "5803542323",
-      "comment_version_key": "5803542323:2026-09-23T21:50:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156547#issuecomment-5803542323",
-      "comment_created_at": "2026-09-23T21:50:59Z",
-      "comment_updated_at": "2026-09-23T21:50:59Z",
-      "comment_body_sha256": "16ca27a9e205ed7ba46c9b3812b2687f6f83d274d487643cc024f14735d2db79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156547,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T21:53:13.928Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-lint-refusal-diagnostics",
-        "head_sha": "7ed02170fc6a2ee025480311a83a88ada625631a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156784:5803559559:2026-09-23T21:52:23Z:clawsweeper_needs_human",
       "comment_id": "5803559559",
@@ -33664,6 +33617,39 @@
         "kind": "pull_request",
         "branch": "openclaw/migration-rollback-preservation-20260911",
         "head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:368:5807219786:2026-09-24T03:48:37Z:clawsweeper_auto_repair",
+      "comment_id": "5807219786",
+      "comment_version_key": "5807219786:2026-09-24T03:48:37Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/368#issuecomment-5807219786",
+      "comment_created_at": "2026-09-24T03:48:37Z",
+      "comment_updated_at": "2026-09-24T03:48:37Z",
+      "comment_body_sha256": "ae7ad9069d6d28de2412ffb8263863e73a56b197edddb0da2feae1685b109b7f",
+      "repo": "openclaw/crabpot",
+      "issue_number": 368,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bbc3e1b01b8f82fb541d98e1dd90eda4c270fc3f)",
+      "expected_head_sha": "bbc3e1b01b8f82fb541d98e1dd90eda4c270fc3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:49:38.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-import-screening-ingestion-20260924",
+        "head_sha": "bbc3e1b01b8f82fb541d98e1dd90eda4c270fc3f",
         "cluster_id": null,
         "job_path": null
       }
