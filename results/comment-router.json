@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:29:19.346Z",
+  "updated_at": "2026-09-24T12:29:21.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157097:5809389267:2026-09-24T07:02:17Z:re_review",
-      "comment_id": "5809389267",
-      "comment_version_key": "5809389267:2026-09-24T07:02:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157097#issuecomment-5809389267",
-      "comment_created_at": "2026-09-24T07:02:17Z",
-      "comment_updated_at": "2026-09-24T07:02:17Z",
-      "comment_body_sha256": "20eb2b14cdf1ea2e2188c2e77e0aae2b33d5c50f6cab10b6ea7eeb92c258964b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157097,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: added the requested one-worker ownership-test wall time (16.72 seconds, 10 cases passed) and completed changed-test ci job durations (77 and 76 seconds) to evidence. exact head unchanged; ci is green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T07:03:31.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maintenance-ownership-test",
-        "head_sha": "a3f50069c1bbbadf20318042b2380fe6d994d68f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126616:5354020666:2026-09-24T06:54:55Z:clawsweeper_auto_repair",
       "comment_id": "5354020666",
@@ -33627,6 +33580,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134995:5490998994:2026-09-24T12:28:17Z:clawsweeper_needs_human",
+      "comment_id": "5490998994",
+      "comment_version_key": "5490998994:2026-09-24T12:28:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134995#issuecomment-5490998994",
+      "comment_created_at": "2026-09-01T08:15:11Z",
+      "comment_updated_at": "2026-09-24T12:28:17Z",
+      "comment_body_sha256": "dcc9b7a57d13eddd66e003e5a902ae3de206f1092322e19ec1efa27dcd65c668",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR evidence still lacks measured single-worker wall times for the new or materially changed test files and available CI seconds required by repository test policy. (sha=af45763911a5365b5bae22b8782b7b4dbe22b858)",
+      "expected_head_sha": "af45763911a5365b5bae22b8782b7b4dbe22b858",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T12:29:21.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-134502",
+        "head_sha": "af45763911a5365b5bae22b8782b7b4dbe22b858",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
