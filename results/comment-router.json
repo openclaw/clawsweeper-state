@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:33:22.704Z",
+  "updated_at": "2026-09-24T05:33:37.429Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156767:5803152500:2026-09-23T23:10:40Z:clawsweeper_needs_human",
-      "comment_id": "5803152500",
-      "comment_version_key": "5803152500:2026-09-23T23:10:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156767#issuecomment-5803152500",
-      "comment_created_at": "2026-09-23T21:22:47Z",
-      "comment_updated_at": "2026-09-23T23:10:40Z",
-      "comment_body_sha256": "f79a8fdd3604393486e5170ebd90e505d3528927982e2f709ed10f371e50dc85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156767,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=447b34bc38545e4bcda848c4ac541ae841789bf5)",
-      "expected_head_sha": "447b34bc38545e4bcda848c4ac541ae841789bf5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T00:58:10.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/faster-cloud-snapshots",
-        "head_sha": "447b34bc38545e4bcda848c4ac541ae841789bf5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156772:5803266332:2026-09-24T00:20:58Z:clawsweeper_auto_repair",
       "comment_id": "5803266332",
@@ -32383,6 +32350,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:87247:5808303815:2026-09-24T05:32:15Z:re_review",
+      "comment_id": "5808303815",
+      "comment_version_key": "5808303815:2026-09-24T05:32:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/87247#issuecomment-5808303815",
+      "comment_created_at": "2026-09-24T05:32:15Z",
+      "comment_updated_at": "2026-09-24T05:32:15Z",
+      "comment_body_sha256": "1085e20dea710d63581d00012ed5ac811a01a18161ae61b928506648e4ea02e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 87247,
+      "author": "airbing11",
+      "author_id": 134471324,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T05:33:36.435Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/lancedb-dreaming-v0.2.3",
+        "head_sha": "db2098475fb273a59d87b433eaf5b96c09959e26",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
