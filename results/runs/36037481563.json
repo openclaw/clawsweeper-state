@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157442",
+  "mode": "autonomous",
+  "run_id": "36037481563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36037481563",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157442.md",
+  "published_at": "2026-09-24T18:42:48.979Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157442",
+  "canonical_pr": null,
+  "summary": "Current main still retains a stopped ACP manager after Gateway shutdown. A narrow fix is warranted, but this worker's filesystem is read-only, so no implementation or validation was run.",
+  "actions": [
+    {
+      "target": "#157442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157442",
+      "candidate_fix": null,
+      "reason": "Retire the stopped singleton after its shutdown drain so the next same-process Gateway boot obtains a fresh manager."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157442",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157442",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
