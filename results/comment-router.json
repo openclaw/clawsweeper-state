@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:12:30.807Z",
+  "updated_at": "2026-09-24T21:13:10.489Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157231:5813076864:2026-09-24T11:59:35Z:clawsweeper_needs_human",
-      "comment_id": "5813076864",
-      "comment_version_key": "5813076864:2026-09-24T11:59:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157231#issuecomment-5813076864",
-      "comment_created_at": "2026-09-24T11:21:23Z",
-      "comment_updated_at": "2026-09-24T11:59:35Z",
-      "comment_body_sha256": "7419f1f686e20199f473cf790b9e93d9634eba698541d4412776245c9841c681",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157231,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation's first Hermes detect, plan, or apply after updating could fail when the newly deferred modules are imported; the required installed-update path has not been... (sha=76463052237ac44cd59f38ff4ae9301732220ce9)",
-      "expected_head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T12:33:54.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf-migrate-hermes-import-boundary-20260924",
-        "head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157233:5813085956:2026-09-24T12:01:43Z:clawsweeper_needs_human",
       "comment_id": "5813085956",
@@ -33457,6 +33424,53 @@
         "kind": "pull_request",
         "branch": "fix/managed-output-close-events-20260914",
         "head_sha": "b2bbd40cdb98b6eaccfb4264317d3533f1cb7c3f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156244:5822323594:2026-09-24T21:12:14Z:re_review",
+      "comment_id": "5822323594",
+      "comment_version_key": "5822323594:2026-09-24T21:12:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156244#issuecomment-5822323594",
+      "comment_created_at": "2026-09-24T21:12:14Z",
+      "comment_updated_at": "2026-09-24T21:12:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156244,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T21:13:09.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/test-parallels-host-teardown",
+        "head_sha": "329c14f96fdbf1c8cdf8f7604815a0f784f07e99",
         "cluster_id": null,
         "job_path": null
       },
