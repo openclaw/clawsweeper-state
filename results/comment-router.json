@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:12:58.360Z",
+  "updated_at": "2026-09-24T06:13:19.291Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156453:5805739995:2026-09-24T01:20:31Z:re_review",
-      "comment_id": "5805739995",
-      "comment_version_key": "5805739995:2026-09-24T01:20:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156453#issuecomment-5805739995",
-      "comment_created_at": "2026-09-24T01:20:31Z",
-      "comment_updated_at": "2026-09-24T01:20:31Z",
-      "comment_body_sha256": "8fbfa83fb2f37db108e01eaab2fb38c57fe4d5d99212b31df1c9c97ce5c9a1ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156453,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T02:04:03.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "proof/visitor-composition-20260923",
-        "head_sha": "addc4ec21a4a7226530e612b8f4881626e0920a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156812:5805746776:2026-09-24T01:21:12Z:re_review",
       "comment_id": "5805746776",
@@ -32284,6 +32237,39 @@
         "kind": "pull_request",
         "branch": "fix/discord-voice-connect-deadline-wall-clock",
         "head_sha": "365964d4191ff4d05d0032504ad9687f364c4018",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145043:5637157715:2026-09-24T06:12:00Z:clawsweeper_needs_human",
+      "comment_id": "5637157715",
+      "comment_version_key": "5637157715:2026-09-24T06:12:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145043#issuecomment-5637157715",
+      "comment_created_at": "2026-09-11T16:00:34Z",
+      "comment_updated_at": "2026-09-24T06:12:00Z",
+      "comment_body_sha256": "a0a9763ae21ded10ffde8f11b9dd371fc306740599391dac99d7255e474380dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: older installed-package terminal evidence shows improved migration behavior at f70ab0706aedf357b73edde...; Review finding: [P1] Preserve deferred startup when a configured plugin is unavailable — src/commands/doctor-config-preflight-startup.ts:372-376 - [P1] Validate the prospective in... (sha=644ef9cdc9a97a501bd12c3f1b68d7f44be5bfa4)",
+      "expected_head_sha": "644ef9cdc9a97a501bd12c3f1b68d7f44be5bfa4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T06:13:19.291Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-stale-plugin-handoff-123326",
+        "head_sha": "644ef9cdc9a97a501bd12c3f1b68d7f44be5bfa4",
         "cluster_id": null,
         "job_path": null
       }
