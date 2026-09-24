@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157067",
+  "mode": "autonomous",
+  "run_id": "35962557620",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35962557620",
+  "head_sha": "7443df924f1b1209b9c325985170de3a36ed4e4e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157067.md",
+  "published_at": "2026-09-24T06:36:17.923Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157067",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157067",
+  "canonical_pr": null,
+  "summary": "The local source still forwards an uncloneable Windows environment Proxy in exact-entry worker requests. A synthetic worker transfer throws DataCloneError. Implementation and validation are blocked: this checkout is read-only, has no installed dependencies, and does not contain the preflight main SHA. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#157067",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157067",
+      "candidate_fix": null,
+      "reason": "The merged usage-worker fix in #152962 touches a different worker path."
+    },
+    {
+      "target": "#152962",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#157067",
+      "candidate_fix": null,
+      "reason": "Historical related fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157067",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#157067",
+      "candidate_fix": null,
+      "reason": "A narrow fix path is identified, but implementation requires a writable checkout and current-main reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157067",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157067",
+      "candidate_fix": null,
+      "reason": "The executor must first obtain a writable checkout at current main, reproduce the failure through the exact-entry worker, implement the fix, and validate it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
