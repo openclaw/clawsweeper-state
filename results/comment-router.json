@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:38:17.232Z",
+  "updated_at": "2026-09-24T03:38:53.687Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1666:5803440178:2026-09-23T21:42:49Z:re_review",
-      "comment_id": "5803440178",
-      "comment_version_key": "5803440178:2026-09-23T21:42:49Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1666#issuecomment-5803440178",
-      "comment_created_at": "2026-09-23T21:42:49Z",
-      "comment_updated_at": "2026-09-23T21:42:49Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1666,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T21:44:09.300Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/maintainer-profile-permission-fallback",
-        "head_sha": "05ada806cd5ef975a49bd0c977e70b2ab517abca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156620:5803513709:2026-09-23T21:48:47Z:re_review",
       "comment_id": "5803513709",
@@ -33740,6 +33693,39 @@
         "kind": "pull_request",
         "branch": "codex/discord-binding-worker-20260922",
         "head_sha": "cb26b8c31119b43d292424c306d8fbfb7c1faace",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156972:5807095693:2026-09-24T03:37:53Z:clawsweeper_needs_human",
+      "comment_id": "5807095693",
+      "comment_version_key": "5807095693:2026-09-24T03:37:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156972#issuecomment-5807095693",
+      "comment_created_at": "2026-09-24T03:37:53Z",
+      "comment_updated_at": "2026-09-24T03:37:53Z",
+      "comment_body_sha256": "8dc3339ccd5c423b6d89e06e260d5aa01b582ddadfb690bcf54b3a802156f863",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156972,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR demonstrates real managed handoffs on Linux, but the macOS LaunchAgent stop and restart remain simulated; activation and recovery on a task-private macOS service have not yet b... (sha=41c0736607e59e872cd6147682c36ab64e395dd5)",
+      "expected_head_sha": "41c0736607e59e872cd6147682c36ab64e395dd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:38:53.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/macos-update-authority-scope",
+        "head_sha": "41c0736607e59e872cd6147682c36ab64e395dd5",
         "cluster_id": null,
         "job_path": null
       }
