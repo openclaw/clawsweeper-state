@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T02:36:18.163Z",
+  "updated_at": "2026-09-24T02:40:39.579Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149880:5802041484:2026-09-23T20:03:16Z:re_review",
-      "comment_id": "5802041484",
-      "comment_version_key": "5802041484:2026-09-23T20:03:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149880#issuecomment-5802041484",
-      "comment_created_at": "2026-09-23T20:03:16Z",
-      "comment_updated_at": "2026-09-23T20:03:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149880,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T20:04:10.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "iapi",
-        "head_sha": "c9b23a41803bd83343e4d8b80b0cea4ac33f3a3a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144005:5618417894:2026-09-23T20:06:53Z:clawsweeper_needs_human",
       "comment_id": "5618417894",
@@ -33967,6 +33920,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:766:5806475475:2026-09-24T02:39:25Z:clawsweeper_needs_human",
+      "comment_id": "5806475475",
+      "comment_version_key": "5806475475:2026-09-24T02:39:25Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/766#issuecomment-5806475475",
+      "comment_created_at": "2026-09-24T02:39:25Z",
+      "comment_updated_at": "2026-09-24T02:39:25Z",
+      "comment_body_sha256": "9a6f3b593796ead6d6c18ff02d08c87bd0aaf706644a917eb0d6056d6e723bef",
+      "repo": "openclaw/acpx",
+      "issue_number": 766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production path formats stored image content for sessions history, but the supplied after-fix evidence is limited to tests using a... (sha=57e593bf40de8d75d93e794639e82910d5769d83)",
+      "expected_head_sha": "57e593bf40de8d75d93e794639e82910d5769d83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T02:40:39.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/765-image-history-preview",
+        "head_sha": "57e593bf40de8d75d93e794639e82910d5769d83",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
