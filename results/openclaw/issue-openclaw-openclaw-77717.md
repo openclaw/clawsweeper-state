@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-77717"
 mode: "autonomous"
-run_id: "35998173961"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35998173961"
+run_id: "36002104871"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36002104871"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-24T12:51:49.774Z"
+published_at: "2026-09-24T13:30:42.454Z"
 canonical: "https://github.com/openclaw/openclaw/issues/77717"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/77717"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35998173961](https://github.com/openclaw/clawsweeper/actions/runs/35998173961)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36002104871](https://github.com/openclaw/clawsweeper/actions/runs/36002104871)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/77717
 
 ## Summary
 
-Current main still has the Feishu startup race. The checkout is read-only and has no installed dependencies, so I could not add the required failing regression, patch the branch, or validate a PR.
+Current main contains the reported stale identity write, but this read-only checkout cannot run the required failing regression or receive a patch. No PR was opened.
 
 ## Impact
 
@@ -67,8 +67,8 @@ Current main still has the Feishu startup race. The checkout is read-only and ha
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #77717 | fix_needed | planned | canonical | A focused lifecycle regression and repair are needed through the Feishu account startup path. |
-| cluster:issue-openclaw-openclaw-77717 | build_fix_artifact | blocked |  | Implementation and pre-fix regression proof require a writable checkout with dependencies. |
+| #77717 | fix_needed | planned | canonical | A narrow Feishu lifecycle repair is warranted, subject to a failing regression through the channel startAccount path. |
+| cluster:issue-openclaw-openclaw-77717 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only filesystem and unavailable test dependencies. The executor must first prove the regression on the current base, then implement and validate the fix. |
 
 ## Needs Human
 

@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77717",
+  "mode": "autonomous",
+  "run_id": "36002104871",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36002104871",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77717.md",
+  "published_at": "2026-09-24T13:30:42.454Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported stale identity write, but this read-only checkout cannot run the required failing regression or receive a patch. No PR was opened.",
+  "actions": [
+    {
+      "target": "#77717",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "A narrow Feishu lifecycle repair is warranted, subject to a failing regression through the channel startAccount path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77717",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only filesystem and unavailable test dependencies. The executor must first prove the regression on the current base, then implement and validate the fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): changed-gate validation has an unsafe existing artifacts directory",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#77717",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
