@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156956",
+  "mode": "autonomous",
+  "run_id": "35950518764",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35950518764",
+  "head_sha": "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156956.md",
+  "published_at": "2026-09-24T03:33:05.217Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156956",
+  "canonical_pr": null,
+  "summary": "Current main still has the eventless FileReader hang. The shared composer increments pendingReads but has no settlement path when FileReader emits no event. The existing held-reader test models that condition, but its runner could not start because node_modules is missing. The checkout is read-only, so no failing regression, fix, local validation, branch, or PR was created.",
+  "actions": [
+    {
+      "target": "#156956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156956",
+      "candidate_fix": null,
+      "reason": "The eventless-read failure remains plausible and narrowly repairable; runtime reproduction and implementation need a writable checkout with dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156956",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156956",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout and missing dependencies. The executor must establish a failing owner-boundary regression before editing, then validate the repaired branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
