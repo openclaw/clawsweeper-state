@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T11:38:05.663Z",
+  "updated_at": "2026-09-24T11:38:18.316Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Kova:144:5808606487:2026-09-24T06:00:55Z:re_review",
-      "comment_id": "5808606487",
-      "comment_version_key": "5808606487:2026-09-24T06:00:55Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/144#issuecomment-5808606487",
-      "comment_created_at": "2026-09-24T06:00:55Z",
-      "comment_updated_at": "2026-09-24T06:00:55Z",
-      "comment_body_sha256": "973aa457446d287f69178de04c21aec336cd6c13d03419f6bcee06ff5c1a736c",
-      "repo": "openclaw/Kova",
-      "issue_number": 144,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T06:01:56.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settle-terminal-cpu-samples",
-        "head_sha": "2ce6f16155cab36b557b3016ec7b2313f054f226",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156940:5808588610:2026-09-24T05:59:40Z:re_review",
       "comment_id": "5808588610",
@@ -33467,6 +33420,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157242:5813320074:2026-09-24T11:37:07Z:clawsweeper_needs_human",
+      "comment_id": "5813320074",
+      "comment_version_key": "5813320074:2026-09-24T11:37:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157242#issuecomment-5813320074",
+      "comment_created_at": "2026-09-24T11:37:07Z",
+      "comment_updated_at": "2026-09-24T11:37:07Z",
+      "comment_body_sha256": "42e9017162bec443b6d467df839448a2c795ae2c8f1763d1276ac0af2b6036e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157242,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported single 32/32 run does not yet establish that the former flake stays resolved across repeated standalone and original-shard runs. (sha=3a4138a8cda2fc43f8f575c822ccdf27ba19e709)",
+      "expected_head_sha": "3a4138a8cda2fc43f8f575c822ccdf27ba19e709",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T11:38:18.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-requester-wake-20260924",
+        "head_sha": "3a4138a8cda2fc43f8f575c822ccdf27ba19e709",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
