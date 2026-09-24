@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-24T12:52:23.295Z",
+  "updated_at": "2026-09-24T12:51:49.680Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157112:5809701304:2026-09-24T07:24:08Z:clawsweeper_auto_repair",
+      "comment_id": "5809701304",
+      "comment_version_key": "5809701304:2026-09-24T07:24:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157112#issuecomment-5809701304",
+      "comment_created_at": "2026-09-24T07:24:08Z",
+      "comment_updated_at": "2026-09-24T07:24:08Z",
+      "comment_body_sha256": "8dcc1fe02e0c63fe88160c35376a09a12296cab69b4de8b89cc55b091dcc46a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d68f68011a863fe3648204b7f60dd6a0489bafa7)",
+      "expected_head_sha": "d68f68011a863fe3648204b7f60dd6a0489bafa7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T07:25:22.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-worktree-gc-fails-on-moved-head-20260919",
+        "head_sha": "d68f68011a863fe3648204b7f60dd6a0489bafa7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157113:5809732231:2026-09-24T07:26:28Z:clawsweeper_needs_human",
       "comment_id": "5809732231",
@@ -33608,53 +33641,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5814464155:2026-09-24T12:51:02Z:re_review",
-      "comment_id": "5814464155",
-      "comment_version_key": "5814464155:2026-09-24T12:51:02Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1675#issuecomment-5814464155",
-      "comment_created_at": "2026-09-24T12:51:02Z",
-      "comment_updated_at": "2026-09-24T12:51:02Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1675,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T12:52:21.360Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/reuse-command-review-ack",
-        "head_sha": "5b501705ff6e3da149988433a4a4bbd4b1aa7641",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
