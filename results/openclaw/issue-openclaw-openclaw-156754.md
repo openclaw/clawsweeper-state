@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156754"
-mode: "autonomous"
-run_id: "35928167221"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35928167221"
-head_sha: "a3840356d894e66c507ec5e3beb55c65e5958338"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-23T23:50:26.789Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156754"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156754"
+mode: "plan"
+run_id: "35935991580"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35935991580"
+head_sha: "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T01:07:59.343Z"
+canonical: "#156754"
+canonical_issue: "#156754"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35928167221](https://github.com/openclaw/clawsweeper/actions/runs/35928167221)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35935991580](https://github.com/openclaw/clawsweeper/actions/runs/35935991580)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156754
+Canonical: #156754
 
 ## Summary
 
-Current main has the reported command and script announcement gap: the Cron completion path calls the durable sender without a destination transcript mirror. The checkout is read-only, so I could not add the required failing regression, implement the fix, run validation, or prepare the PR branch.
+Current main has a source-level omission: command and script Cron announcements call the durable sender without a destination transcript mirror. A failing Cron-to-inbound regression is required before implementation. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main has the reported command and script announcement gap: the Cron comp
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156754 | fix_needed | planned | canonical | A confirmed, explicitly addressed announcement should be available to the destination session's next inbound turn. |
-| cluster:issue-openclaw-openclaw-156754 | build_fix_artifact | blocked |  | Implementation requires a writable isolated checkout. Reproduce through the Cron run and outbound boundary before changing code. |
+| #156754 | fix_needed | planned | canonical | The issue remains open and the reported path is missing a mirror on current main. Prove the failure through a Cron run and the outbound boundary before editing. |
 
 ## Needs Human
 
