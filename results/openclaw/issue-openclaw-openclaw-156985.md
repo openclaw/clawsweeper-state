@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156985"
 mode: "autonomous"
-run_id: "35953649348"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35953649348"
+run_id: "35953333273"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35953333273"
 head_sha: "5ae902bf0a0f31d7c36618352b48621f39b40786"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-24T04:03:05.707Z"
+published_at: "2026-09-24T03:58:42.953Z"
 canonical: "https://github.com/openclaw/openclaw/issues/156985"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/156985"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35953649348](https://github.com/openclaw/clawsweeper/actions/runs/35953649348)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35953333273](https://github.com/openclaw/clawsweeper/actions/runs/35953333273)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/156985
 
 ## Summary
 
-The issue remains actionable on main at 2765f7a3341b8be4835afacbff3d04c6e3c3c79b: the Kubernetes recipe still mounts the raw emptyDir at /tmp. Manifest rendering passed. Implementation and runtime reproduction are blocked in this read-only checkout, which has no installed dependencies or Kubernetes context.
+Current main still mounts an uninitialized emptyDir directly at /tmp. The reported OpenShift failure is credible, but this read-only worker could not reproduce the fs-safe failure, edit the manifest, or validate a PR branch. A narrow fix plan is ready for an executor with a writable checkout.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The issue remains actionable on main at 2765f7a3341b8be4835afacbff3d04c6e3c3c79b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156985 | fix_needed | planned | canonical | The deployment recipe needs a narrow temporary-volume repair. |
-| cluster:issue-openclaw-openclaw-156985 | build_fix_artifact | planned |  | Prepared a narrow fix plan for an executor with a writable checkout. |
-| cluster:issue-openclaw-openclaw-156985 | open_fix_pr | blocked |  | Reproduce the failing workspace admission on a current affected image, implement the patch, and validate it before opening or updating the PR. |
+| #156985 | fix_needed | planned | canonical | The deployment recipe still needs a temporary-volume compatibility fix. Keep the issue open. |
+| cluster:issue-openclaw-openclaw-156985 | build_fix_artifact | planned |  | Plan an owned mode-1777 directory on tmp-volume, mount that directory at /tmp, and prove real fs-safe workspace create/write/read/cleanup on an affected image. |
+| cluster:issue-openclaw-openclaw-156985 | open_fix_pr | blocked |  | The job requires reproduction and local validation before opening the implementation PR; this worker cannot perform those steps. |
 
 ## Needs Human
 
