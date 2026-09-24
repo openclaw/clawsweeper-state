@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T20:12:43.690Z",
+  "updated_at": "2026-09-24T20:13:32.135Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151022:5718562996:2026-09-24T12:12:32Z:clawsweeper_needs_human",
-      "comment_id": "5718562996",
-      "comment_version_key": "5718562996:2026-09-24T12:12:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151022#issuecomment-5718562996",
-      "comment_created_at": "2026-09-17T17:27:37Z",
-      "comment_updated_at": "2026-09-24T12:12:32Z",
-      "comment_body_sha256": "52fef03c99dcf05b79064e603b021ef5c887dac160270e6de734de61dba7127e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151022,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR reports passing test counts but omits the measured wall time for its changed tests required by the repository's review policy. (sha=d80ca0e05f27d3415da188b8fd19070b08c247e2)",
-      "expected_head_sha": "d80ca0e05f27d3415da188b8fd19070b08c247e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T12:17:28.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-palette-independent-results",
-        "head_sha": "d80ca0e05f27d3415da188b8fd19070b08c247e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1507:5813257864:2026-09-24T12:15:54Z:clawsweeper_needs_human",
       "comment_id": "5813257864",
@@ -33538,6 +33505,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156941:5821488257:2026-09-24T20:12:14Z:re_review",
+      "comment_id": "5821488257",
+      "comment_version_key": "5821488257:2026-09-24T20:12:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5821488257",
+      "comment_created_at": "2026-09-24T20:12:14Z",
+      "comment_updated_at": "2026-09-24T20:12:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156941,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T20:13:16.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
+        "head_sha": "3ff4d6505931ba32c25dc7f5615d0e9088fa3efc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
