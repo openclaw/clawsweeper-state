@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T14:14:30.329Z",
+  "updated_at": "2026-09-24T14:14:52.507Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156835:5804439213:2026-09-24T08:13:39Z:clawsweeper_auto_repair",
-      "comment_id": "5804439213",
-      "comment_version_key": "5804439213:2026-09-24T08:13:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156835#issuecomment-5804439213",
-      "comment_created_at": "2026-09-23T23:07:52Z",
-      "comment_updated_at": "2026-09-24T08:13:39Z",
-      "comment_body_sha256": "f65b23986c72836fe74080d7756caf718e351a773225b894d7e1807c32cddda8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156835,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=749a3999047980183a4c5dfadb8bdf431e125738)",
-      "expected_head_sha": "749a3999047980183a4c5dfadb8bdf431e125738",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T08:16:20.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tsgo-affected-shards-first-20260923",
-        "head_sha": "749a3999047980183a4c5dfadb8bdf431e125738",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156200:5789459634:2026-09-24T08:13:38Z:clawsweeper_auto_repair",
       "comment_id": "5789459634",
@@ -33660,6 +33627,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157313:5815803279:2026-09-24T14:13:50Z:clawsweeper_needs_human",
+      "comment_id": "5815803279",
+      "comment_version_key": "5815803279:2026-09-24T14:13:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157313#issuecomment-5815803279",
+      "comment_created_at": "2026-09-24T14:13:50Z",
+      "comment_updated_at": "2026-09-24T14:13:50Z",
+      "comment_body_sha256": "b7201e143e2e8559e7314e9e0268865830ac1182c0c905264aca9a40074f0d2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The added tests mock tool construction and inspect the resolver's allowlist; they do not exercise a real CLI gr...; Review finding: [P1] Bind inherited coding tools to the requester's exact run authority — src/gateway/mcp-http.runtime.ts:224-226 - [high] Restricted requester can confer coding t... (sha=8730b853c6e615d12233a3df0f8fb6a37907e563)",
+      "expected_head_sha": "8730b853c6e615d12233a3df0f8fb6a37907e563",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T14:14:52.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/111631-subagent-inherits-harness-owned-tools",
+        "head_sha": "8730b853c6e615d12233a3df0f8fb6a37907e563",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
