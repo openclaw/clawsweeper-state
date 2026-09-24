@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T14:37:06.726Z",
+  "updated_at": "2026-09-24T14:37:47.702Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156732:5803691573:2026-09-24T08:36:17Z:clawsweeper_needs_human",
-      "comment_id": "5803691573",
-      "comment_version_key": "5803691573:2026-09-24T08:36:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156732#issuecomment-5803691573",
-      "comment_created_at": "2026-09-23T22:01:54Z",
-      "comment_updated_at": "2026-09-24T08:36:17Z",
-      "comment_body_sha256": "d7126f1341c2edceff6f6be5fa07120751eec21e89e041f61a3d1cb739847de4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156732,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft head conflicts with current main in the BytePlus test file; the resolved result has not been checked for preservation of main’s shared mock setup and the distinct overflow a... (sha=6b12ed147260ce8c442fadc28548fe6ed072d032)",
-      "expected_head_sha": "6b12ed147260ce8c442fadc28548fe6ed072d032",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T08:53:52.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/byteplus-video-fixtures-20260924",
-        "head_sha": "6b12ed147260ce8c442fadc28548fe6ed072d032",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156995:5807386015:2026-09-24T08:36:24Z:clawsweeper_auto_repair",
       "comment_id": "5807386015",
@@ -33492,6 +33459,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157318:5816221880:2026-09-24T14:36:17Z:re_review",
+      "comment_id": "5816221880",
+      "comment_version_key": "5816221880:2026-09-24T14:36:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157318#issuecomment-5816221880",
+      "comment_created_at": "2026-09-24T14:36:17Z",
+      "comment_updated_at": "2026-09-24T14:36:17Z",
+      "comment_body_sha256": "624c4075aba28862b411f23a255eae50d81e230622d67bdda8d4fac03436ed10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157318,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T14:37:45.789Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-declaration-producers-20260924",
+        "head_sha": "a7261464cee6b55e161052c303210588b9f0c96e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
