@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T02:13:52.868Z",
+  "updated_at": "2026-09-24T02:14:07.605Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156461:5793810035:2026-09-23T19:02:09Z:clawsweeper_needs_human",
-      "comment_id": "5793810035",
-      "comment_version_key": "5793810035:2026-09-23T19:02:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156461#issuecomment-5793810035",
-      "comment_created_at": "2026-09-23T11:13:31Z",
-      "comment_updated_at": "2026-09-23T19:02:09Z",
-      "comment_body_sha256": "c06cf9282aac7e76a4fde2aadf3ba0b380eed37509a860e67f8a18f8ccc2d66f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156461,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the supplied container transcript reaches Slack's changed normalizer through handleSlackAction, but rep... (sha=ed34aaf86804b18bb84094b81b7331744ed52091)",
-      "expected_head_sha": "ed34aaf86804b18bb84094b81b7331744ed52091",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T19:57:09.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/155362-slack-json-escaped-read-bounds",
-        "head_sha": "ed34aaf86804b18bb84094b81b7331744ed52091",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156489:5794738772:2026-09-23T18:26:06Z:clawsweeper_auto_repair",
       "comment_id": "5794738772",
@@ -33799,6 +33766,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156926:5806240885:2026-09-24T02:13:11Z:re_review",
+      "comment_id": "5806240885",
+      "comment_version_key": "5806240885:2026-09-24T02:13:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156926#issuecomment-5806240885",
+      "comment_created_at": "2026-09-24T02:13:11Z",
+      "comment_updated_at": "2026-09-24T02:13:11Z",
+      "comment_body_sha256": "60c78b6ed9998f461901d5f6330ca89bbf733b7e782507717868b7517c7386cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156926,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T02:14:01.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/inline-narration-credited-replacement",
+        "head_sha": "69f068f43b6421b70f28ce317adf2ceb1601f938",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
