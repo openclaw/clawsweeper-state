@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:51:40.664Z",
+  "updated_at": "2026-09-24T03:51:41.214Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154923:5763360998:2026-09-23T21:50:49Z:clawsweeper_needs_human",
-      "comment_id": "5763360998",
-      "comment_version_key": "5763360998:2026-09-23T21:50:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154923#issuecomment-5763360998",
-      "comment_created_at": "2026-09-21T15:51:09Z",
-      "comment_updated_at": "2026-09-23T21:50:49Z",
-      "comment_body_sha256": "0c3285bdaaa3b41ac2aec5243a33ee9bcfcafa1d18c4f8fbb438c42c411197bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154923,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real Gateway and transport-client test reports that turn two omits the workspace sentinel, with a failing one-hunk-revert control.... (sha=f4435bd84504aa285538bbf78814308528f39e3c)",
-      "expected_head_sha": "f4435bd84504aa285538bbf78814308528f39e3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T21:53:29.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/continuation-skip-bootstrap-marker",
-        "head_sha": "f4435bd84504aa285538bbf78814308528f39e3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -33620,6 +33587,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145532:5807239438:2026-09-24T03:50:35Z:re_review",
+      "comment_id": "5807239438",
+      "comment_version_key": "5807239438:2026-09-24T03:50:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145532#issuecomment-5807239438",
+      "comment_created_at": "2026-09-24T03:50:35Z",
+      "comment_updated_at": "2026-09-24T03:50:35Z",
+      "comment_body_sha256": "b7e53391f16532202595723077910f47bb0141733c2d615f6eae1a0e360f0b14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145532,
+      "author": "hugenshen",
+      "author_id": 16300669,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T03:51:39.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/fix-stability-blank-limit-e997",
+        "head_sha": "6e8c092b743aa4ff3890372899993dca8aa9d6c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144363:5624890224:2026-09-24T03:50:07Z:clawsweeper_needs_human",
