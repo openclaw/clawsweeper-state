@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:03:53.131Z",
+  "updated_at": "2026-09-24T15:06:08.393Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156867:5805066010:2026-09-24T09:11:04Z:clawsweeper_needs_human",
-      "comment_id": "5805066010",
-      "comment_version_key": "5805066010:2026-09-24T09:11:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156867#issuecomment-5805066010",
-      "comment_created_at": "2026-09-24T00:11:03Z",
-      "comment_updated_at": "2026-09-24T09:11:04Z",
-      "comment_body_sha256": "5303967746a5f9e4a2a32ce28e21f9ffb85284cf9fd98aafecd33be3710b0bb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156867,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve review confidence** - ClawSweeper must reach high confidence before merge readiness is known. (sha=a60da5033dbd9f1f93df5b403d8325960a78e32b)",
-      "expected_head_sha": "a60da5033dbd9f1f93df5b403d8325960a78e32b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T09:12:14.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l22-memory-owners-20260923",
-        "head_sha": "a60da5033dbd9f1f93df5b403d8325960a78e32b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156535:5796124588:2026-09-24T09:11:28Z:clawsweeper_auto_repair",
       "comment_id": "5796124588",
@@ -33502,6 +33469,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157323:5816693010:2026-09-24T15:04:48Z:re_review",
+      "comment_id": "5816693010",
+      "comment_version_key": "5816693010:2026-09-24T15:04:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157323#issuecomment-5816693010",
+      "comment_created_at": "2026-09-24T15:04:48Z",
+      "comment_updated_at": "2026-09-24T15:04:48Z",
+      "comment_body_sha256": "bbe723ca0254232d5cc3720b5ea1cdf4d4c4bac2c2d69f14ad3928f803fdcdf9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157323,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T15:06:06.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-dispose-linger-157309",
+        "head_sha": "0f403af7b6317b74c9e347111ca1ee8e207c1be8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
