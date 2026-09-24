@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:34:10.255Z",
+  "updated_at": "2026-09-24T03:34:56.790Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/agent-skills:273:5803162184:2026-09-23T21:23:23Z:re_review",
-      "comment_id": "5803162184",
-      "comment_version_key": "5803162184:2026-09-23T21:23:23Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/273#issuecomment-5803162184",
-      "comment_created_at": "2026-09-23T21:23:23Z",
-      "comment_updated_at": "2026-09-23T21:23:23Z",
-      "comment_body_sha256": "24ae87d5bfb1bcd03491f259dd416d21afcd488e5aec4aeb312dfa3b97fcad3c",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 273,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T21:29:23.629Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/autoreview-gpt6-sol-luna",
-        "head_sha": "b1a1018ed5f3cac1cea18bc6f4fab9be783dbee8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:273:5803121567:2026-09-23T21:28:25Z:clawsweeper_needs_human",
       "comment_id": "5803121567",
@@ -33774,6 +33727,39 @@
         "kind": "pull_request",
         "branch": "freeqaz-openai/ci-ratchet-prerequisite-20260922",
         "head_sha": "76d472620aed75789eb95a0a6dbe842f4267ef50",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156964:5807049581:2026-09-24T03:34:01Z:clawsweeper_auto_repair",
+      "comment_id": "5807049581",
+      "comment_version_key": "5807049581:2026-09-24T03:34:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156964#issuecomment-5807049581",
+      "comment_created_at": "2026-09-24T03:34:01Z",
+      "comment_updated_at": "2026-09-24T03:34:01Z",
+      "comment_body_sha256": "c51fbcf87982c1fb4f90b24d2113ff6fd74e61f971950ecd7b37e9ed200411a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ee31f4183b84e306d209fe6f13efd9d2dfa3eb9d)",
+      "expected_head_sha": "ee31f4183b84e306d209fe6f13efd9d2dfa3eb9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:34:56.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/remove-github-preview-reader",
+        "head_sha": "ee31f4183b84e306d209fe6f13efd9d2dfa3eb9d",
         "cluster_id": null,
         "job_path": null
       }
