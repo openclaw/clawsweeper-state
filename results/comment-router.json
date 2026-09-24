@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T00:12:20.877Z",
+  "updated_at": "2026-09-24T00:13:26.815Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155444:5771372269:2026-09-23T16:50:44Z:clawsweeper_auto_repair",
-      "comment_id": "5771372269",
-      "comment_version_key": "5771372269:2026-09-23T16:50:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155444#issuecomment-5771372269",
-      "comment_created_at": "2026-09-22T04:50:39Z",
-      "comment_updated_at": "2026-09-23T16:50:44Z",
-      "comment_body_sha256": "e5ea6d7f9725ebb1890668b3114efc39aec095ab376fab63a8c74ad8fad949d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155444,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0444d796ddf1aabca016a9d0fa926a6db65040a0)",
-      "expected_head_sha": "0444d796ddf1aabca016a9d0fa926a6db65040a0",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-23T16:55:50.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "freeqaz-openai/ci-transform-cache-20260922",
-        "head_sha": "0444d796ddf1aabca016a9d0fa926a6db65040a0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156110:5787991454:2026-09-23T16:50:42Z:clawsweeper_auto_repair",
       "comment_id": "5787991454",
@@ -33529,6 +33496,53 @@
       "status": "skipped",
       "processed_at": "2026-09-24T00:12:20.876Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154175:5805073313:2026-09-24T00:11:51Z:re_review",
+      "comment_id": "5805073313",
+      "comment_version_key": "5805073313:2026-09-24T00:11:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154175#issuecomment-5805073313",
+      "comment_created_at": "2026-09-24T00:11:51Z",
+      "comment_updated_at": "2026-09-24T00:11:51Z",
+      "comment_body_sha256": "cb8658913609b84d779f5513905c54598dc3a4488447bd9d58bf9d156de07e1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154175,
+      "author": "Grynn",
+      "author_id": 212880,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T00:13:25.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/untyped-interrupt-restart",
+        "head_sha": "b4df22991c84536e90f69b657d82b24c7991b021",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
