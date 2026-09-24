@@ -1,0 +1,112 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138644",
+  "mode": "autonomous",
+  "run_id": "35952715268",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35952715268",
+  "head_sha": "5ae902bf0a0f31d7c36618352b48621f39b40786",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138644.md",
+  "published_at": "2026-09-24T04:22:37.450Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_pr": null,
+  "summary": "Current main still has the compaction-to-watchdog gap. The checkout is read-only, so I could not add and run the required failing regression, implement the fix, or validate a PR branch. No GitHub action was performed.",
+  "actions": [
+    {
+      "target": "#138644",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "This issue owns the missing native-compaction busy-state handoff."
+    },
+    {
+      "target": "#40982",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Recognizing an in-flight compaction does not decide the general watchdog-limit policy."
+    },
+    {
+      "target": "#137294",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Its ingress watchdog is separate from the CLI plugin no-output watchdog."
+    },
+    {
+      "target": "#125045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#139009",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Retain as credited reference work, not a landed fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is still needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "The artifact gives the executor a scoped implementation and validation path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Implementation and the required reproduction gate need a writable authorized executor."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 2,
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
