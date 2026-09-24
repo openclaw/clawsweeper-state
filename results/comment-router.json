@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T23:19:38.761Z",
+  "updated_at": "2026-09-24T23:23:35.659Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:789:5815230893:2026-09-24T14:51:20Z:clawsweeper_needs_human",
-      "comment_id": "5815230893",
-      "comment_version_key": "5815230893:2026-09-24T14:51:20Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/789#issuecomment-5815230893",
-      "comment_created_at": "2026-09-24T13:39:48Z",
-      "comment_updated_at": "2026-09-24T14:51:20Z",
-      "comment_body_sha256": "4cc750e8b2832e922f41c60abea09408a06259ed995fb913d3ba8b86eebb5637",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 789,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c657731c7803e5c525528545410289b871ec820b)",
-      "expected_head_sha": "c657731c7803e5c525528545410289b871ec820b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T14:52:44.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/snapshot-mutation-lease-coverage",
-        "head_sha": "c657731c7803e5c525528545410289b871ec820b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157329:5816500735:2026-09-24T14:53:06Z:clawsweeper_auto_repair",
       "comment_id": "5816500735",
@@ -33364,6 +33331,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157564:5823908388:2026-09-24T23:22:40Z:re_review",
+      "comment_id": "5823908388",
+      "comment_version_key": "5823908388:2026-09-24T23:22:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157564#issuecomment-5823908388",
+      "comment_created_at": "2026-09-24T23:22:40Z",
+      "comment_updated_at": "2026-09-24T23:22:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157564,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T23:23:34.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-freeform-tool-args",
+        "head_sha": "ca643c74abd16fa2a4a7d99db404c9b6af879692",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
