@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T09:20:21.509Z",
+  "updated_at": "2026-09-24T09:20:45.847Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156974:5807173616:2026-09-24T03:56:15Z:clawsweeper_auto_repair",
-      "comment_id": "5807173616",
-      "comment_version_key": "5807173616:2026-09-24T03:56:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156974#issuecomment-5807173616",
-      "comment_created_at": "2026-09-24T03:44:33Z",
-      "comment_updated_at": "2026-09-24T03:56:15Z",
-      "comment_body_sha256": "ebf9f1c855edd119c0ca38a1b0fcc4a8da681dff93b4cb76337e21cc9a563854",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156974,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a6ca6153a9f43d6e36b816cd4fb073667c651e0f)",
-      "expected_head_sha": "a6ca6153a9f43d6e36b816cd4fb073667c651e0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T04:04:45.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cron-exact620",
-        "head_sha": "a6ca6153a9f43d6e36b816cd4fb073667c651e0f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156984:5807269465:2026-09-24T03:53:21Z:clawsweeper_needs_human",
       "comment_id": "5807269465",
@@ -32741,6 +32708,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157166:5811377648:2026-09-24T09:19:04Z:clawsweeper_needs_human",
+      "comment_id": "5811377648",
+      "comment_version_key": "5811377648:2026-09-24T09:19:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157166#issuecomment-5811377648",
+      "comment_created_at": "2026-09-24T09:19:04Z",
+      "comment_updated_at": "2026-09-24T09:19:04Z",
+      "comment_body_sha256": "7a22e62854085ac5f6242076b218888f6c1ce129f70e91de17729fdda3039b75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR reports terminal traces through a real Gateway showing after-fix cron and gateway-call response...; Review finding: [P1] Keep ordinary CLI calls out of backend-only agent controls — src/gateway/call-device-auth.ts:116-118 - [P2] Preserve disconnect cancellation for CLI node invo... (sha=d745ae947ccc8b9db71b64ee3ae44be52842d0de)",
+      "expected_head_sha": "d745ae947ccc8b9db71b64ee3ae44be52842d0de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T09:20:45.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-cli-cron-opens-shared-state-db-20260919",
+        "head_sha": "d745ae947ccc8b9db71b64ee3ae44be52842d0de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
