@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T13:51:17.703Z",
+  "updated_at": "2026-09-24T14:01:53.008Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157053:5808362297:2026-09-24T06:19:19Z:clawsweeper_needs_human",
-      "comment_id": "5808362297",
-      "comment_version_key": "5808362297:2026-09-24T06:19:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157053#issuecomment-5808362297",
-      "comment_created_at": "2026-09-24T05:38:23Z",
-      "comment_updated_at": "2026-09-24T06:19:19Z",
-      "comment_body_sha256": "ecf611e7844c5c7eecf98843220099399b7d2c1e071a0376058c59020ddb0f7b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157053,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0eebfb2b46c807a7b42defb88ff5c04d32741d17)",
-      "expected_head_sha": "0eebfb2b46c807a7b42defb88ff5c04d32741d17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T07:29:44.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/config-revert616",
-        "head_sha": "2be4417b39307a035454355d4e107024a10cd74d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157058:5808589181:2026-09-24T06:15:08Z:clawsweeper_needs_human",
       "comment_id": "5808589181",
@@ -33711,6 +33678,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157206:5815528226:2026-09-24T13:57:47Z:re_review",
+      "comment_id": "5815528226",
+      "comment_version_key": "5815528226:2026-09-24T13:57:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157206#issuecomment-5815528226",
+      "comment_created_at": "2026-09-24T13:57:47Z",
+      "comment_updated_at": "2026-09-24T13:57:47Z",
+      "comment_body_sha256": "17a14b119d5530cf450caa1adc14e34fc2072c16e80fdf51220040ea03a89fb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157206,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T14:01:51.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/157078-bug-202696-docker-codex-setup-",
+        "head_sha": "42c8fb8d6aac32729116824ce6dc7397485a440e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
