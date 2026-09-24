@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:06:54.845Z",
+  "updated_at": "2026-09-24T06:06:57.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156074:5806055159:2026-09-24T01:53:36Z:re_review",
-      "comment_id": "5806055159",
-      "comment_version_key": "5806055159:2026-09-24T01:53:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156074#issuecomment-5806055159",
-      "comment_created_at": "2026-09-24T01:53:36Z",
-      "comment_updated_at": "2026-09-24T01:53:36Z",
-      "comment_body_sha256": "6a08bbbc5cc6dbd0ae2167fe3e8ff53a897b66e9530e8f7562d53060a691fb02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156074,
-      "author": "ayoakouh",
-      "author_id": 185819768,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T01:54:40.621Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/156051-control-ui-optimistic-bubble",
-        "head_sha": "49e5d2c390c58940a64829bd5425d8f7ea106862",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156802:5805971721:2026-09-24T01:45:27Z:re_review",
       "comment_id": "5805971721",
@@ -32317,6 +32270,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157069:5808671134:2026-09-24T06:05:44Z:clawsweeper_needs_human",
+      "comment_id": "5808671134",
+      "comment_version_key": "5808671134:2026-09-24T06:05:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157069#issuecomment-5808671134",
+      "comment_created_at": "2026-09-24T06:05:44Z",
+      "comment_updated_at": "2026-09-24T06:05:44Z",
+      "comment_body_sha256": "bca1b2e7c7a2fcdffe3053e024081008cc838cfc20b9879ed952e6c47b5ec3c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157069,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=143da9ac5955bf9d8d3fdfce6253f3855e706608)",
+      "expected_head_sha": "143da9ac5955bf9d8d3fdfce6253f3855e706608",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T06:06:57.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-authority-cause-156948",
+        "head_sha": "143da9ac5955bf9d8d3fdfce6253f3855e706608",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
