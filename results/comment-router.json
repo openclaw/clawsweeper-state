@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:23:42.945Z",
+  "updated_at": "2026-09-24T03:23:54.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5802044626:2026-09-23T20:03:30Z:re_review",
-      "comment_id": "5802044626",
-      "comment_version_key": "5802044626:2026-09-23T20:03:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5802044626",
-      "comment_created_at": "2026-09-23T20:03:30Z",
-      "comment_updated_at": "2026-09-23T20:03:30Z",
-      "comment_body_sha256": "46ae0057045633c0a891d819a98f351d16428a1ac0b78376eb5463a0cafdbceb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (0e6a0dcb7 → bfe5c9d54, was 29 behind, now 0 behind). skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, run-usage). focused tests 6/6 pass. tsgo:core errors only in upstream src/secrets/configure.ts (untouched by this pr)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T20:15:13.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "bfe5c9d547a4a1170f4bf42cf2f66498405e4082",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156741:5802217648:2026-09-23T20:15:36Z:clawsweeper_needs_human",
       "comment_id": "5802217648",
@@ -34166,6 +34119,39 @@
         "kind": "pull_request",
         "branch": "sjf/agentsapi-tools-files",
         "head_sha": "53d6026f8f9b1477027611022a7422acd8966c43",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156965:5806918928:2026-09-24T03:22:55Z:clawsweeper_needs_human",
+      "comment_id": "5806918928",
+      "comment_version_key": "5806918928:2026-09-24T03:22:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156965#issuecomment-5806918928",
+      "comment_created_at": "2026-09-24T03:22:55Z",
+      "comment_updated_at": "2026-09-24T03:22:55Z",
+      "comment_body_sha256": "5b3af835b2598de3047f1ca6a855cf6714926680dc9ce7ab420095d6010ad006",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the changed test file’s isolated wall time and its CI duration once the exact-head job completes. (sha=1408bc46c71fd2a448d8a0a7f1e1447531d92a31)",
+      "expected_head_sha": "1408bc46c71fd2a448d8a0a7f1e1447531d92a31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:23:54.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-bun-rest-dispatcher-20260923",
+        "head_sha": "1408bc46c71fd2a448d8a0a7f1e1447531d92a31",
         "cluster_id": null,
         "job_path": null
       }
