@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T00:16:25.942Z",
+  "updated_at": "2026-09-24T00:18:08.649Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112641:5079568147:2026-09-23T15:24:50Z:clawsweeper_auto_repair",
-      "comment_id": "5079568147",
-      "comment_version_key": "5079568147:2026-09-23T15:24:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112641#issuecomment-5079568147",
-      "comment_created_at": "2026-07-25T17:40:52Z",
-      "comment_updated_at": "2026-09-23T15:24:50Z",
-      "comment_body_sha256": "0957bfdc0b2d00098adc6d4a66d230b74dcc9dd39ab9adce9bb40cd29ef54dde",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=deffae4a317f1236042c095f1e5edf46e7f88791)",
-      "expected_head_sha": "deffae4a317f1236042c095f1e5edf46e7f88791",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T16:55:50.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/enforce-session-maintenance-limits",
-        "head_sha": "deffae4a317f1236042c095f1e5edf46e7f88791",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116677:5139639947:2026-09-23T15:54:28Z:clawsweeper_auto_repair",
       "comment_id": "5139639947",
@@ -33563,6 +33530,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156812:5804630226:2026-09-24T00:17:11Z:clawsweeper_needs_human",
+      "comment_id": "5804630226",
+      "comment_version_key": "5804630226:2026-09-24T00:17:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156812#issuecomment-5804630226",
+      "comment_created_at": "2026-09-23T23:26:12Z",
+      "comment_updated_at": "2026-09-24T00:17:11Z",
+      "comment_body_sha256": "fed7d117a9e2e6b2fee23dd01325375b75252562207616455bc00f2ef94a6636",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: local CLI and fixture checks cover the changed release paths, but no hosted child receipt upload, reuse, or fin...; Review finding: [P1] Keep package integrity failures blocking — scripts/full-release-validation-policy.mjs:1585-1591 - [P1] Require an independent SDK API acknowledgement — script... (sha=949d59dd86ca765cd8025c8c6193865f3e81f981)",
+      "expected_head_sha": "949d59dd86ca765cd8025c8c6193865f3e81f981",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T00:18:08.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/release-speedup",
+        "head_sha": "949d59dd86ca765cd8025c8c6193865f3e81f981",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
