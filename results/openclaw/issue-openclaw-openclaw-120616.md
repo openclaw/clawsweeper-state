@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120616"
-mode: "plan"
-run_id: "36044844101"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36044844101"
+mode: "autonomous"
+run_id: "36043535217"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36043535217"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-24T19:30:31.907Z"
-canonical: "#120616"
-canonical_issue: "#120616"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-24T19:57:05.768Z"
+canonical: "https://github.com/openclaw/openclaw/issues/120616"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/120616"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36044844101](https://github.com/openclaw/clawsweeper/actions/runs/36044844101)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36043535217](https://github.com/openclaw/clawsweeper/actions/runs/36043535217)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #120616
+Canonical: https://github.com/openclaw/openclaw/issues/120616
 
 ## Summary
 
-Plan a narrow fix for dotted and quoted-dotted cron update fields. The supplied preflight identifies main at 11f0dad5872b1bc0077b3f8ad800d1494681fc3c, but the read-only checkout is at a0905dfe5c17053a3f0ef2aa0cf8f421bce9381c. Reproduce through the agent cron tool on the preflight main commit before changing code; stop if it no longer fails. No code or GitHub state was changed.
+The current checkout still drops dotted cron update fields, but implementation is blocked: it is read-only, lacks dependencies, and does not contain the preflight main commit. No regression test or fix was run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Plan a narrow fix for dotted and quoted-dotted cron update fields. The supplied 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120616 | fix_needed | planned | canonical | The issue remains the canonical bug report. A fix is conditional on reproducing the failure on the preflight main commit. |
-| #120623 | keep_closed | skipped | superseded | Use the contributor's investigation as credited context; the closed PR needs no action. |
+| #120616 | fix_needed | planned | canonical | A current-main failing regression and a validated repair remain required. |
+| cluster:issue-openclaw-openclaw-120616 | build_fix_artifact | blocked |  | Implementation must resume in a writable checkout containing the preflight main commit or newer current main, with dependencies available. |
 
 ## Needs Human
 
