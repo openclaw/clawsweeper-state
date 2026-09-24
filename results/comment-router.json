@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T14:14:04.501Z",
+  "updated_at": "2026-09-24T14:14:30.329Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157122:5809920809:2026-09-24T08:09:21Z:clawsweeper_needs_human",
-      "comment_id": "5809920809",
-      "comment_version_key": "5809920809:2026-09-24T08:09:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157122#issuecomment-5809920809",
-      "comment_created_at": "2026-09-24T07:40:20Z",
-      "comment_updated_at": "2026-09-24T08:09:21Z",
-      "comment_body_sha256": "b21b19e79a5e3afab92eab08685074dc558a92cff39a883e0d6ea49761ecb90f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Run the held-read regression against baseline and PR head, complete the affected archived, foreground, and backfill suites plus relevant static gates, and add measured test wall times... (sha=4e9284da1a4f090c8ee058027fcf3e209a33b610)",
-      "expected_head_sha": "4e9284da1a4f090c8ee058027fcf3e209a33b610",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T08:16:20.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-backfill-successor-20260923",
-        "head_sha": "4e9284da1a4f090c8ee058027fcf3e209a33b610",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156835:5804439213:2026-09-24T08:13:39Z:clawsweeper_auto_repair",
       "comment_id": "5804439213",
@@ -33646,6 +33613,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:107366:5815759424:2026-09-24T14:11:18Z:re_review",
+      "comment_id": "5815759424",
+      "comment_version_key": "5815759424:2026-09-24T14:11:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107366#issuecomment-5815759424",
+      "comment_created_at": "2026-09-24T14:11:18Z",
+      "comment_updated_at": "2026-09-24T14:11:18Z",
+      "comment_body_sha256": "ba3613eb07b13daf5a07432a608f360fb0c86319ced0a28c388eadfe9c275e20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107366,
+      "author": "henkterharmsel",
+      "author_id": 391243,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T14:14:16.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/acp-oneshot-followup-resume",
+        "head_sha": "cf12b92744ffd7955ba1992d641c99da908d5df4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
