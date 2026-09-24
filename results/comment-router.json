@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T13:43:53.333Z",
+  "updated_at": "2026-09-24T13:44:09.383Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156430:5793244143:2026-09-24T07:12:44Z:clawsweeper_needs_human",
-      "comment_id": "5793244143",
-      "comment_version_key": "5793244143:2026-09-24T07:12:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156430#issuecomment-5793244143",
-      "comment_created_at": "2026-09-23T10:31:31Z",
-      "comment_updated_at": "2026-09-24T07:12:44Z",
-      "comment_body_sha256": "11c7fe1549a1aaae3c638a0d9642bf136ee665e1f80e029c89048b2003aad94b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156430,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve ID-only Incognito sessions from their actual store (P1)** - With sessionId but no sessionKey, this lookup lists the ordinary agent store. A process-held Incognito entry therefore produces a successful mi...; Review finding: [P1] Resolve ID-only Incognito sessions from their actual store — extensions/active-memory/index.ts:291-299 - [medium] Incomplete Incognito recall exclusion — exte... (sha=103978ba06283704f2961bc68fb6ac46441dd8b1)",
-      "expected_head_sha": "103978ba06283704f2961bc68fb6ac46441dd8b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T07:29:44.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/incognito-active-memory-20260922",
-        "head_sha": "103978ba06283704f2961bc68fb6ac46441dd8b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156457:5793799132:2026-09-24T07:18:19Z:clawsweeper_needs_human",
       "comment_id": "5793799132",
@@ -33669,6 +33636,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156435:5815215908:2026-09-24T13:38:51Z:re_review",
+      "comment_id": "5815215908",
+      "comment_version_key": "5815215908:2026-09-24T13:38:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156435#issuecomment-5815215908",
+      "comment_created_at": "2026-09-24T13:38:51Z",
+      "comment_updated_at": "2026-09-24T13:38:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156435,
+      "author": "Orionation",
+      "author_id": 260579663,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T13:44:07.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-retired-model-catalog-validation",
+        "head_sha": "7a12d040ce00d12354f3ae52f4d514d707ccfb2c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
