@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77717",
+  "mode": "autonomous",
+  "run_id": "36016554671",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36016554671",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77717.md",
+  "published_at": "2026-09-24T15:18:42.370Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_pr": null,
+  "summary": "Current main still permits an aborted Feishu account probe to overwrite replacement identity. A failing regression, repair, and validation could not be completed because the checkout is read-only. No PR was created.",
+  "actions": [
+    {
+      "target": "#77717",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "The source establishes the stale-write path. The reported permanent disconnection has not been reproduced on current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77717",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by read-only filesystem access. The executor needs a writable checkout to reproduce the race through startAccount, repair it, and validate the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
