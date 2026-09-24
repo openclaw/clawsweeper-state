@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-09-24T00:16:09.082Z",
+  "updated_at": "2026-09-24T00:16:25.942Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89043:4591600404:2026-09-23T15:24:29Z:autoclose",
-      "comment_id": "4591600404",
-      "comment_version_key": "4591600404:2026-09-23T15:24:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/89043#issuecomment-4591600404",
-      "comment_created_at": "2026-06-01T10:09:59Z",
-      "comment_updated_at": "2026-09-23T15:24:29Z",
-      "comment_body_sha256": "56913339bc90254197779f0c9b6aa380510fef3ec8f160e7996a256bd27e2871",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89043,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T16:55:50.731Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112641:5079568147:2026-09-23T15:24:50Z:clawsweeper_auto_repair",
       "comment_id": "5079568147",
@@ -33547,6 +33516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155860:5805106106:2026-09-24T00:15:16Z:re_review",
+      "comment_id": "5805106106",
+      "comment_version_key": "5805106106:2026-09-24T00:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155860#issuecomment-5805106106",
+      "comment_created_at": "2026-09-24T00:15:16Z",
+      "comment_updated_at": "2026-09-24T00:15:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155860,
+      "author": "Cyb3rb1ade",
+      "author_id": 84099452,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T00:16:24.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/memory-slot-owner-dreaming-status",
+        "head_sha": "a9403bc4a82c0fa9afaaaac9368c84a9ce4c39d3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
