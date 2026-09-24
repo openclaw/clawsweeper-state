@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156975",
+  "mode": "plan",
+  "run_id": "35956415504",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35956415504",
+  "head_sha": "5ae902bf0a0f31d7c36618352b48621f39b40786",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156975.md",
+  "published_at": "2026-09-24T04:41:29.790Z",
+  "canonical": "#156975",
+  "canonical_issue": "#156975",
+  "canonical_pr": null,
+  "summary": "Current main has a source-supported fallback classification gap for typed runtime-publication supersession. Plan a narrow regression and fix; no regression was run or code changed in plan mode. The production publication race remains unproven.",
+  "actions": [
+    {
+      "target": "#126108",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#156975",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#126224",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked PR alone; it addresses catalog-owner recovery, not this issue's fallback classification."
+    },
+    {
+      "target": "#152275",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156975",
+      "candidate_fix": null,
+      "reason": "Shared runtime symptoms do not establish the same fallback-routing root cause."
+    },
+    {
+      "target": "#156975",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156975",
+      "candidate_fix": null,
+      "reason": "First prove that a typed primary supersession invokes the second candidate on current main. Then classify that typed error in the existing failover owner, preserving the original error."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "route_security": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
