@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:30:38.534Z",
+  "updated_at": "2026-09-24T07:31:26.212Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1485:5787868744:2026-09-24T01:36:51Z:clawsweeper_needs_human",
-      "comment_id": "5787868744",
-      "comment_version_key": "5787868744:2026-09-24T01:36:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1485#issuecomment-5787868744",
-      "comment_created_at": "2026-09-23T02:24:39Z",
-      "comment_updated_at": "2026-09-24T01:36:51Z",
-      "comment_body_sha256": "277a697cd9c5a56aa5215bfec890614a1626a124240bcd03c05ab12aa54077bb",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1485,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head WinUI Save and connect action has not been observed completing, so the form-to-service path and repeat-save behavior remain unverified. (sha=6000006cccde99ccc848b047b9688acbb6532303)",
-      "expected_head_sha": "6000006cccde99ccc848b047b9688acbb6532303",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T03:09:56.969Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f021-unchanged-shared-token",
-        "head_sha": "6000006cccde99ccc848b047b9688acbb6532303",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156723:5801356029:2026-09-24T03:04:59Z:clawsweeper_needs_human",
       "comment_id": "5801356029",
@@ -32217,6 +32184,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156173:5809785655:2026-09-24T07:30:31Z:re_review",
+      "comment_id": "5809785655",
+      "comment_version_key": "5809785655:2026-09-24T07:30:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156173#issuecomment-5809785655",
+      "comment_created_at": "2026-09-24T07:30:31Z",
+      "comment_updated_at": "2026-09-24T07:30:31Z",
+      "comment_body_sha256": "26138003bf995528f1bc1d525d45911820812a2c8ad633f0beeffebdb9bc10f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156173,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T07:31:24.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/async-memory-retention-20260922",
+        "head_sha": "1a3a1af2bcb8e0203801c35ae152e5392df59749",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
