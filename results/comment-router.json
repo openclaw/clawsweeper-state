@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T08:06:58.497Z",
+  "updated_at": "2026-09-24T08:07:12.261Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152189:5806930082:2026-09-24T03:23:52Z:re_review",
-      "comment_id": "5806930082",
-      "comment_version_key": "5806930082:2026-09-24T03:23:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152189#issuecomment-5806930082",
-      "comment_created_at": "2026-09-24T03:23:52Z",
-      "comment_updated_at": "2026-09-24T03:23:52Z",
-      "comment_body_sha256": "2e5d777f451db8a9cd1befc40078ad42c8b00c2a348666b249a360fe269f51b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152189,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T03:27:45.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-qa-lab-hidden-sidebar-focus-20260919",
-        "head_sha": "41ee36ef00b44f6e55a8a4a5929d0e90b2e2d533",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155791:5806948886:2026-09-24T03:25:20Z:re_review",
       "comment_id": "5806948886",
@@ -32604,6 +32557,39 @@
         "kind": "pull_request",
         "branch": "openclaw/typescript-import-cycle-cache-analysis-20260924",
         "head_sha": "0a8e731252d886de99177e70d5b2426f08cbac78",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3923:5804869003:2026-09-24T08:06:15Z:clawsweeper_needs_human",
+      "comment_id": "5804869003",
+      "comment_version_key": "5804869003:2026-09-24T08:06:15Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3923#issuecomment-5804869003",
+      "comment_created_at": "2026-09-23T23:50:33Z",
+      "comment_updated_at": "2026-09-24T08:06:15Z",
+      "comment_body_sha256": "41c4c65303a67a3d68451767473c293217640794d5489315f64c597b4f036f9d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The changed Kimi importer reads Safari local storage and can pass its token to the production usage re...; Review finding: [P2] Validate Safari's complete origin before importing its token — Sources/CodexBarCore/SQLiteWebStorageReader.swift:103-115 - [medium] Safari token selected with... (sha=bc7e0a5359494f4e5226668847662534a6f97528)",
+      "expected_head_sha": "bc7e0a5359494f4e5226668847662534a6f97528",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T08:07:12.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kimi-localstorage-token",
+        "head_sha": "bc7e0a5359494f4e5226668847662534a6f97528",
         "cluster_id": null,
         "job_path": null
       }
