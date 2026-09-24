@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:31:20.866Z",
+  "updated_at": "2026-09-24T12:31:21.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126616:5354456802:2026-08-20T10:08:31Z:re_review",
-      "comment_id": "5354456802",
-      "comment_version_key": "5354456802:2026-08-20T10:08:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126616#issuecomment-5354456802",
-      "comment_created_at": "2026-08-20T10:08:31Z",
-      "comment_updated_at": "2026-08-20T10:08:31Z",
-      "comment_body_sha256": "2462e5bd9ed8ba28ad6d881a928a9c53887fca7e6882be209be41a5c70c94c94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126616,
-      "author": "RaviTharuma",
-      "author_id": 25951435,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T07:03:41.462Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155261:5768971347:2026-09-24T06:57:51Z:clawsweeper_needs_human",
       "comment_id": "5768971347",
@@ -33624,6 +33597,39 @@
         "head_sha": "a6b119fe1e36f4003da5188c3d93acda1a9d2aa4",
         "cluster_id": "automerge-openclaw-openclaw-157259",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157247:5813433193:2026-09-24T12:29:54Z:clawsweeper_needs_human",
+      "comment_id": "5813433193",
+      "comment_version_key": "5813433193:2026-09-24T12:29:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157247#issuecomment-5813433193",
+      "comment_created_at": "2026-09-24T11:44:51Z",
+      "comment_updated_at": "2026-09-24T12:29:54Z",
+      "comment_body_sha256": "a480cb3a9b947197ead97cf97af594927ebd9408855e10aa49d74fde9702df67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157247,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR reports a real cleanup-delete replay and inspected synthetic before/after Tasks screenshots sho...; Review finding: [medium] Unproven denial at the final Tasks response — src/gateway/server-methods/task-history.ts:185 (sha=67be98cb2fd299c1aab4f97f0c8712691f4612c0)",
+      "expected_head_sha": "67be98cb2fd299c1aab4f97f0c8712691f4612c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T12:31:21.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cleaned-task-history634",
+        "head_sha": "67be98cb2fd299c1aab4f97f0c8712691f4612c0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
