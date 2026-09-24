@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T02:34:11.978Z",
+  "updated_at": "2026-09-24T02:34:35.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111020:5801972830:2026-09-23T19:58:39Z:re_review",
-      "comment_id": "5801972830",
-      "comment_version_key": "5801972830:2026-09-23T19:58:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5801972830",
-      "comment_created_at": "2026-09-23T19:58:39Z",
-      "comment_updated_at": "2026-09-23T19:58:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111020,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T20:00:02.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-final-close-no-interrupt",
-        "head_sha": "673460e4cabf4e0978b1441d4102ac65cafe496b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155885:5781762127:2026-09-23T19:54:30Z:clawsweeper_needs_human",
       "comment_id": "5781762127",
@@ -33966,6 +33919,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156933:5806419928:2026-09-24T02:33:41Z:clawsweeper_needs_human",
+      "comment_id": "5806419928",
+      "comment_version_key": "5806419928:2026-09-24T02:33:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156933#issuecomment-5806419928",
+      "comment_created_at": "2026-09-24T02:33:41Z",
+      "comment_updated_at": "2026-09-24T02:33:41Z",
+      "comment_body_sha256": "47f8ccfe986a766b2e172823c5befe3f2ce4019c218fc95ef27e9710d436c34c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No inspected iOS before/after screenshots are attached in the originating chat and PR. The linked images demonstrate Control UI, leaving the native visual landing gate unmet. (sha=8558e7ccf031d7be66d34df266bba08f65785062)",
+      "expected_head_sha": "8558e7ccf031d7be66d34df266bba08f65785062",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T02:34:35.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/ios-live-commentary-156340",
+        "head_sha": "8558e7ccf031d7be66d34df266bba08f65785062",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
