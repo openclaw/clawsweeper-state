@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:11:56.560Z",
+  "updated_at": "2026-09-24T15:13:18.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156855:5811191954:2026-09-24T09:06:25Z:re_review",
-      "comment_id": "5811191954",
-      "comment_version_key": "5811191954:2026-09-24T09:06:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156855#issuecomment-5811191954",
-      "comment_created_at": "2026-09-24T09:06:25Z",
-      "comment_updated_at": "2026-09-24T09:06:25Z",
-      "comment_body_sha256": "de50ebabd934221b12e4400a5d207e2c156921564f340bada4a8e1780896baff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156855,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:17:13.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/explain-approach-for-openclaw-pull-request-156346",
-        "head_sha": "739f79ebebbb34c0d818f15c58d424cadc835ac9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148011:5660179249:2026-09-24T09:16:07Z:clawsweeper_needs_human",
       "comment_id": "5660179249",
@@ -33485,6 +33438,39 @@
         "kind": "pull_request",
         "branch": "perf/warm-skill-prompt-minimum-fits-guard-20260924",
         "head_sha": "ab52352675d73c9ce5cb217e78b958b39e5a0f2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157231:5813076864:2026-09-24T15:11:59Z:clawsweeper_needs_human",
+      "comment_id": "5813076864",
+      "comment_version_key": "5813076864:2026-09-24T15:11:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157231#issuecomment-5813076864",
+      "comment_created_at": "2026-09-24T11:21:23Z",
+      "comment_updated_at": "2026-09-24T15:11:59Z",
+      "comment_body_sha256": "1658c451b7967ed27d0a26d5827425b64cdbeb32bbf7ef521080716b025af15d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation's first Hermes detect, plan, or apply after updating could fail when a deferred module is imported; the published-driver × candidate installed-update path has... (sha=76463052237ac44cd59f38ff4ae9301732220ce9)",
+      "expected_head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T15:13:18.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf-migrate-hermes-import-boundary-20260924",
+        "head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
         "cluster_id": null,
         "job_path": null
       }
