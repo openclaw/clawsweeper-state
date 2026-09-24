@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-09-24T04:22:42.368Z",
+  "updated_at": "2026-09-24T04:23:34.338Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156842:5804521174:2026-09-23T23:15:58Z:request_proof",
-      "comment_id": "5804521174",
-      "comment_version_key": "5804521174:2026-09-23T23:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156842#issuecomment-5804521174",
-      "comment_created_at": "2026-09-23T23:15:58Z",
-      "comment_updated_at": "2026-09-23T23:15:58Z",
-      "comment_body_sha256": "4efdba29500041d6053cad6980f583e415bd05446a92e8c296cb3c7c7788c10e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156842,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "proof telegram-bot-e2e-proof",
-      "intent": "request_proof",
-      "proof_admission": {
-        "status": "queued",
-        "reason": "Queued one review with requested proof focus. The reviewer selects relevant supported checks and uses their observations before its final decision; no separate follow-up review is scheduled.",
-        "request": {
-          "repository": "openclaw/openclaw",
-          "pullRequest": 156842,
-          "headSha": "b4210b52f26fb77af3445d07737fb89facd59bcc",
-          "scenarioId": "telegram-bot-e2e-proof",
-          "requestId": "d227582d09cd790ac2945d24bf1cf2773976b498dd25b03278b334abbf90907d"
-        }
-      },
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T23:16:48.782Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/retry-telegram-sends-after-idle-resets",
-        "head_sha": "b4210b52f26fb77af3445d07737fb89facd59bcc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156757:5802803682:2026-09-23T23:15:40Z:clawsweeper_needs_human",
       "comment_id": "5802803682",
@@ -32695,6 +32637,39 @@
         "kind": "pull_request",
         "branch": "fix/feishu-markdown-tables",
         "head_sha": "6665b70ccf178e331ac67cddd3c78d07f639796d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157001:5807629843:2026-09-24T04:22:35Z:clawsweeper_needs_human",
+      "comment_id": "5807629843",
+      "comment_version_key": "5807629843:2026-09-24T04:22:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157001#issuecomment-5807629843",
+      "comment_created_at": "2026-09-24T04:22:35Z",
+      "comment_updated_at": "2026-09-24T04:22:35Z",
+      "comment_body_sha256": "504b9e333a14a49cd6506ce1734c0c7d527eaf6fee20f252a88e2dae2076b318",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=cd038512040d31831f6b66b8a7cd9510fb9bfe98)",
+      "expected_head_sha": "cd038512040d31831f6b66b8a7cd9510fb9bfe98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T04:23:34.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-lab-boundary-guards-20260923",
+        "head_sha": "cd038512040d31831f6b66b8a7cd9510fb9bfe98",
         "cluster_id": null,
         "job_path": null
       }
