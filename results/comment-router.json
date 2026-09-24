@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:43:04.922Z",
+  "updated_at": "2026-09-24T03:43:29.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156768:5803460527:2026-09-23T21:44:27Z:re_review",
-      "comment_id": "5803460527",
-      "comment_version_key": "5803460527:2026-09-23T21:44:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156768#issuecomment-5803460527",
-      "comment_created_at": "2026-09-23T21:44:27Z",
-      "comment_updated_at": "2026-09-23T21:44:27Z",
-      "comment_body_sha256": "099f0b61835f7ee3147cf1be01736e057ee8b4019d025a3afbf1dae9c71ec91d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156768,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T21:53:13.928Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/autoreview-gpt6-sol-luna",
-        "head_sha": "190a56fe1faed33e525e1241c60480e4a4c46da0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156547:5803542323:2026-09-23T21:50:59Z:re_review",
       "comment_id": "5803542323",
@@ -33681,6 +33634,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145169:5639303517:2026-09-24T03:42:08Z:clawsweeper_needs_human",
+      "comment_id": "5639303517",
+      "comment_version_key": "5639303517:2026-09-24T03:42:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145169#issuecomment-5639303517",
+      "comment_created_at": "2026-09-11T18:59:52Z",
+      "comment_updated_at": "2026-09-24T03:42:08Z",
+      "comment_body_sha256": "43cfdba33a598a16361ad9e0c43b3525925f6ce07396a9efa8c9ee8fad39e66e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the snapshot-matched PR body reports published-updater and Docker recovery observations on earlier hea...; Review finding: [P1] Preserve warnings for legacy plugin migration resources — src/plugins/doctor-migration-resources.ts:22-28 - [P1] Reject migration paths before normalizing the... (sha=f6feb6b75d08785dc61da204fa9b0d4ea581693c)",
+      "expected_head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:43:29.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/migration-rollback-preservation-20260911",
+        "head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
