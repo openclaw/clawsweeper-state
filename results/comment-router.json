@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T01:11:35.910Z",
+  "updated_at": "2026-09-24T01:11:48.842Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156660:5799551210:2026-09-23T17:35:28Z:clawsweeper_auto_repair",
-      "comment_id": "5799551210",
-      "comment_version_key": "5799551210:2026-09-23T17:35:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156660#issuecomment-5799551210",
-      "comment_created_at": "2026-09-23T17:24:45Z",
-      "comment_updated_at": "2026-09-23T17:35:28Z",
-      "comment_body_sha256": "55751a9b27096253d83864ff29b4fc6a8c4ca2ca6723345d8ce7e53342edba27",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156660,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3a029870bb8e734a3fb6abcf9716369fccdc973c)",
-      "expected_head_sha": "3a029870bb8e734a3fb6abcf9716369fccdc973c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T17:55:20.418Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-prefs-bounded-read",
-        "head_sha": "3a029870bb8e734a3fb6abcf9716369fccdc973c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156656:5799564626:2026-09-23T17:25:30Z:clawsweeper_needs_human",
       "comment_id": "5799564626",
@@ -33777,6 +33744,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156856:5805648261:2026-09-24T01:10:45Z:re_review",
+      "comment_id": "5805648261",
+      "comment_version_key": "5805648261:2026-09-24T01:10:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156856#issuecomment-5805648261",
+      "comment_created_at": "2026-09-24T01:10:45Z",
+      "comment_updated_at": "2026-09-24T01:10:45Z",
+      "comment_body_sha256": "c142883b83a291d4945ea18b1e44125ed5a964511ebc88ada85348c4fa2dadf3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156856,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T01:11:47.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/clarify-agent-and-tool-narration-states",
+        "head_sha": "11df0f2fa55e88ae10879157b3bf4d02fcc8bd74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
