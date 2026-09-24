@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156985",
+  "mode": "autonomous",
+  "run_id": "35953333273",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35953333273",
+  "head_sha": "5ae902bf0a0f31d7c36618352b48621f39b40786",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156985.md",
+  "published_at": "2026-09-24T03:58:42.953Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156985",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156985",
+  "canonical_pr": null,
+  "summary": "Current main still mounts an uninitialized emptyDir directly at /tmp. The reported OpenShift failure is credible, but this read-only worker could not reproduce the fs-safe failure, edit the manifest, or validate a PR branch. A narrow fix plan is ready for an executor with a writable checkout.",
+  "actions": [
+    {
+      "target": "#156985",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156985",
+      "candidate_fix": null,
+      "reason": "The deployment recipe still needs a temporary-volume compatibility fix. Keep the issue open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156985",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#156985",
+      "candidate_fix": null,
+      "reason": "Plan an owned mode-1777 directory on tmp-volume, mount that directory at /tmp, and prove real fs-safe workspace create/write/read/cleanup on an affected image."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156985",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156985",
+      "candidate_fix": null,
+      "reason": "The job requires reproduction and local validation before opening the implementation PR; this worker cannot perform those steps."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
