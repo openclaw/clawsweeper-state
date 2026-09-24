@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:17:45.234Z",
+  "updated_at": "2026-09-24T15:18:02.038Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157112:5809701304:2026-09-24T09:16:07Z:clawsweeper_needs_human",
-      "comment_id": "5809701304",
-      "comment_version_key": "5809701304:2026-09-24T09:16:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157112#issuecomment-5809701304",
-      "comment_created_at": "2026-09-24T07:24:08Z",
-      "comment_updated_at": "2026-09-24T09:16:07Z",
-      "comment_body_sha256": "af1df907e94c1e976eea40e5969f76b8f54b03ac7d6fa6102b828c024e3be630",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR reports after-fix cleanup through the registered CLI with real Git and SQLite, including a succ...; Review finding: [P1] Preserve projection custody before retiring an orphan — src/agents/worktrees/gc-removal.ts:73-75 - [medium] GC bypasses the session projection owner — src/age... (sha=4fe044f6f0210c06d169f258cef408ef14d5fd85)",
-      "expected_head_sha": "4fe044f6f0210c06d169f258cef408ef14d5fd85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T09:17:22.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-worktree-gc-fails-on-moved-head-20260919",
-        "head_sha": "4fe044f6f0210c06d169f258cef408ef14d5fd85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137834:5535067597:2026-09-24T09:16:23Z:clawsweeper_auto_repair",
       "comment_id": "5535067597",
@@ -33506,6 +33473,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157323:5816899782:2026-09-24T15:17:06Z:re_review",
+      "comment_id": "5816899782",
+      "comment_version_key": "5816899782:2026-09-24T15:17:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157323#issuecomment-5816899782",
+      "comment_created_at": "2026-09-24T15:17:06Z",
+      "comment_updated_at": "2026-09-24T15:17:06Z",
+      "comment_body_sha256": "64387c6b9f1715b72d7e52682bd61ac6db8c29bb1c9f5799e0f8ac4581594558",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157323,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T15:18:00.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-dispose-linger-157309",
+        "head_sha": "7313ab15c1f40b2a70f1a033955afc328d9d776b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
