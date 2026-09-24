@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157182"
-mode: "plan"
-run_id: "35988158856"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35988158856"
+mode: "autonomous"
+run_id: "35982423701"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35982423701"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-24T10:40:20.199Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-24T10:05:46.436Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157182"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157182"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35988158856](https://github.com/openclaw/clawsweeper/actions/runs/35988158856)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35982423701](https://github.com/openclaw/clawsweeper/actions/runs/35982423701)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/157182
 
 ## Summary
 
-Plan only; no code or GitHub changes were made. The issue and current main support a focused Control UI routing fix. The reported retry rate still needs a browser trace, and a failing regression at the route and Gateway boundary is required before implementation.
+The reported Control UI bug is supported by source inspection, but implementation is blocked. The checkout is read-only and its shallow HEAD (40be2fb0) lacks the preflight main commit (d4748c6c), so the required failing regression on current main could not be established. No code, GitHub state, or PR was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan only; no code or GitHub changes were made. The issue and current main suppo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/157182 | fix_needed | planned | canonical | Reproduce the denial through the browser route and Gateway visibility boundary, then repair UI selection and recovery while preserving Gateway authorization. |
-| https://github.com/openclaw/openclaw/issues/157180 | keep_related | planned | related | It shares the role-cap context but has separate documentation work. |
+| #157180 | keep_related | planned | related | Keep the documentation report open in its own cluster. |
+| #157182 | fix_needed | planned | canonical | Verify the failure on current main before implementing the narrow Control UI fix. |
+| cluster:issue-openclaw-openclaw-157182 | build_fix_artifact | blocked |  | Implementation is blocked by the host filesystem and stale shallow checkout, not by an unresolved maintainer decision. |
 
 ## Needs Human
 
