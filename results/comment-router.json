@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:35:04.779Z",
+  "updated_at": "2026-09-24T03:35:34.453Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156573:5798444115:2026-09-23T21:28:22Z:clawsweeper_needs_human",
-      "comment_id": "5798444115",
-      "comment_version_key": "5798444115:2026-09-23T21:28:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156573#issuecomment-5798444115",
-      "comment_created_at": "2026-09-23T16:17:28Z",
-      "comment_updated_at": "2026-09-23T21:28:22Z",
-      "comment_body_sha256": "977aec6e24451e83fa356e8a6abcd05e8fe43fb20e5ec58040ebe6663b10ff49",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156573,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The three changed Twitch suites have not been executed on this head, and their per-file execution costs remain unmeasured. (sha=c80761d6756cc6c82e24dab4310a9e63a686740c)",
-      "expected_head_sha": "c80761d6756cc6c82e24dab4310a9e63a686740c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T21:36:05.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/twitch-suite-cleanup-20260923",
-        "head_sha": "c80761d6756cc6c82e24dab4310a9e63a686740c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156767:5803326117:2026-09-23T21:35:02Z:re_review",
       "comment_id": "5803326117",
@@ -33777,6 +33744,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155526:5772393150:2026-09-24T03:34:39Z:clawsweeper_needs_human",
+      "comment_id": "5772393150",
+      "comment_version_key": "5772393150:2026-09-24T03:34:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155526#issuecomment-5772393150",
+      "comment_created_at": "2026-09-22T06:54:54Z",
+      "comment_updated_at": "2026-09-24T03:34:39Z",
+      "comment_body_sha256": "12ba3e352a46771b5d6ea313b05a1bb226ef0a888f27a317ba16edc58c6b4e3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported openclaw doctor --fix scenario still throws during the earlier configuration clone, before this repair runs; the limited landing scope needs explicit maintainer acceptanc... (sha=8b2d299f76282c2e8c6aa55ce7a1f6671b23b3e9)",
+      "expected_head_sha": "8b2d299f76282c2e8c6aa55ce7a1f6671b23b3e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:35:34.453Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/rewritemodelrefs-stack-safe-153674",
+        "head_sha": "8b2d299f76282c2e8c6aa55ce7a1f6671b23b3e9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
