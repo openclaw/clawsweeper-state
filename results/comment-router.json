@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:12:30.807Z",
+  "updated_at": "2026-09-24T21:14:57.829Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157231:5813076864:2026-09-24T11:59:35Z:clawsweeper_needs_human",
-      "comment_id": "5813076864",
-      "comment_version_key": "5813076864:2026-09-24T11:59:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157231#issuecomment-5813076864",
-      "comment_created_at": "2026-09-24T11:21:23Z",
-      "comment_updated_at": "2026-09-24T11:59:35Z",
-      "comment_body_sha256": "7419f1f686e20199f473cf790b9e93d9634eba698541d4412776245c9841c681",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157231,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation's first Hermes detect, plan, or apply after updating could fail when the newly deferred modules are imported; the required installed-update path has not been... (sha=76463052237ac44cd59f38ff4ae9301732220ce9)",
-      "expected_head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T12:33:54.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf-migrate-hermes-import-boundary-20260924",
-        "head_sha": "76463052237ac44cd59f38ff4ae9301732220ce9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157233:5813085956:2026-09-24T12:01:43Z:clawsweeper_needs_human",
-      "comment_id": "5813085956",
-      "comment_version_key": "5813085956:2026-09-24T12:01:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157233#issuecomment-5813085956",
-      "comment_created_at": "2026-09-24T11:22:07Z",
-      "comment_updated_at": "2026-09-24T12:01:43Z",
-      "comment_body_sha256": "314c9b0495d502dd2cf49ca28badc80068335f002071dee415ff765664e15b2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157233,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published updater has not been exercised against this candidate on an existing installation. If the deferred runtime does not resolve after upgrade, a previously working tool woul... (sha=f48195c08fc94e647fc742f4b6b623e59206935a)",
-      "expected_head_sha": "f48195c08fc94e647fc742f4b6b623e59206935a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T12:33:54.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/plugin-import-boundaries-20260924",
-        "head_sha": "f48195c08fc94e647fc742f4b6b623e59206935a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157230:5813096754:2026-09-24T12:28:20Z:clawsweeper_needs_human",
       "comment_id": "5813096754",
@@ -33474,6 +33408,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157567:5822197168:2026-09-24T21:02:38Z:re_review",
+      "comment_id": "5822197168",
+      "comment_version_key": "5822197168:2026-09-24T21:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157567#issuecomment-5822197168",
+      "comment_created_at": "2026-09-24T21:02:38Z",
+      "comment_updated_at": "2026-09-24T21:02:38Z",
+      "comment_body_sha256": "b4f43ecce7337aa775b1ff1e99736108cb8d69e9214432a0656025d4507669b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157567,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T21:14:56.388Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-next-performance",
+        "head_sha": "ef14e22409af93f5a2f57c4add122aa783ce1d83",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157567:5822048875:2026-09-24T21:13:17Z:clawsweeper_needs_human",
+      "comment_id": "5822048875",
+      "comment_version_key": "5822048875:2026-09-24T21:13:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157567#issuecomment-5822048875",
+      "comment_created_at": "2026-09-24T20:51:41Z",
+      "comment_updated_at": "2026-09-24T21:13:17Z",
+      "comment_body_sha256": "303b7b0d021b5c0152e5d5ed4eb5d4f5fd6e28a38934500f1156771b459dfb96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157567,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=ef14e22409af93f5a2f57c4add122aa783ce1d83)",
+      "expected_head_sha": "ef14e22409af93f5a2f57c4add122aa783ce1d83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T21:14:57.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-next-performance",
+        "head_sha": "ef14e22409af93f5a2f57c4add122aa783ce1d83",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
