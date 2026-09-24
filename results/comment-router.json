@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T22:19:13.602Z",
+  "updated_at": "2026-09-24T22:19:28.476Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156547:5796192100:2026-09-24T14:11:14Z:clawsweeper_needs_human",
-      "comment_id": "5796192100",
-      "comment_version_key": "5796192100:2026-09-24T14:11:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156547#issuecomment-5796192100",
-      "comment_created_at": "2026-09-23T13:58:44Z",
-      "comment_updated_at": "2026-09-24T14:11:14Z",
-      "comment_body_sha256": "43f4ade46e62e9861820892b5489830ea331e615aade3bc7d05b2fe2465cdca2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156547,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new installed-updater scenario has not run against a package built from this head, leaving refusal propagation, saved history, retained state, child cleanup, and retry unqualified. (sha=98ad4fc6b2b3680298a9202dc03ef940a997bc93)",
-      "expected_head_sha": "98ad4fc6b2b3680298a9202dc03ef940a997bc93",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T14:23:58.426Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-lint-refusal-diagnostics",
-        "head_sha": "98ad4fc6b2b3680298a9202dc03ef940a997bc93",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156723:5801356029:2026-09-24T14:17:15Z:clawsweeper_needs_human",
       "comment_id": "5801356029",
@@ -33346,6 +33313,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157551:5823151907:2026-09-24T22:18:00Z:re_review",
+      "comment_id": "5823151907",
+      "comment_version_key": "5823151907:2026-09-24T22:18:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157551#issuecomment-5823151907",
+      "comment_created_at": "2026-09-24T22:18:00Z",
+      "comment_updated_at": "2026-09-24T22:18:00Z",
+      "comment_body_sha256": "d23a974184d2f703c10ace79b2be779946d46b2328688a117adcbef43084d943",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157551,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T22:19:23.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-add-noninteractive-flag-hint",
+        "head_sha": "75ba9dc678c71621063b4d817b187ba8710d4c10",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
