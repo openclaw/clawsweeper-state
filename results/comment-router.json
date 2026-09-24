@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:24:14.766Z",
+  "updated_at": "2026-09-24T06:24:24.399Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154067:5752623521:2026-09-24T01:31:00Z:clawsweeper_needs_human",
-      "comment_id": "5752623521",
-      "comment_version_key": "5752623521:2026-09-24T01:31:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154067#issuecomment-5752623521",
-      "comment_created_at": "2026-09-20T20:59:57Z",
-      "comment_updated_at": "2026-09-24T01:31:00Z",
-      "comment_body_sha256": "d5a9baec7fc89b5f8f3baaa8b81904af005cc9157dcaeb177ef29bb9e52536d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154067,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the default-on privacy exception** - The new sender ignores feature-statistics consent and DO_NOT_TRACK by design. Current-main policy does not yet record this outcome-report ex...; Review finding: [medium] Confirm the default-on privacy exception — src/infra/update-result-telemetry.ts:19 (sha=2d210c69fddce8cece23dadac118b9e6edf556fb)",
-      "expected_head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T02:04:25.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/update-outcome-pings-pr-20260919",
-        "head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155024:5764534300:2026-09-24T01:34:45Z:clawsweeper_needs_human",
       "comment_id": "5764534300",
@@ -32193,6 +32160,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157024:5808886845:2026-09-24T06:22:45Z:re_review",
+      "comment_id": "5808886845",
+      "comment_version_key": "5808886845:2026-09-24T06:22:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157024#issuecomment-5808886845",
+      "comment_created_at": "2026-09-24T06:22:45Z",
+      "comment_updated_at": "2026-09-24T06:22:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157024,
+      "author": "Olli0103",
+      "author_id": 51629451,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T06:24:23.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-model-reference-published-catalog",
+        "head_sha": "9b494ecc4b7a7bb8ada4b04a11cba07d21c7d41c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
