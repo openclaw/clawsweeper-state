@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120616",
+  "mode": "plan",
+  "run_id": "36067918520",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36067918520",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120616.md",
+  "published_at": "2026-09-24T22:38:04.320Z",
+  "canonical": "#120616",
+  "canonical_issue": "#120616",
+  "canonical_pr": null,
+  "summary": "Current main still appears to ignore dotted and quoted-dotted job.payload update arguments. Plan a narrow fix, gated on a failing regression through the agent cron tool before editing. This read-only checkout has no installed dependencies, so runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#120616",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120616",
+      "candidate_fix": null,
+      "reason": "The current model-facing job.* update path needs dotted-key recovery; the issue must remain open."
+    },
+    {
+      "target": "#120623",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#120616",
+      "candidate_fix": null,
+      "reason": "Retain the contributor's investigation as credited source context; no closure action is valid."
+    },
+    {
+      "target": "issue-openclaw-openclaw-120616",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120616",
+      "candidate_fix": null,
+      "reason": "After the failing regression is demonstrated, prepare one narrow PR on clawsweeper/issue-openclaw-openclaw-120616."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

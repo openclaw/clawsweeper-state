@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120616"
-mode: "autonomous"
-run_id: "36063221888"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36063221888"
+mode: "plan"
+run_id: "36067918520"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36067918520"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T22:26:55.133Z"
-canonical: "https://github.com/openclaw/openclaw/issues/120616"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/120616"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T22:38:04.320Z"
+canonical: "#120616"
+canonical_issue: "#120616"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36063221888](https://github.com/openclaw/clawsweeper/actions/runs/36063221888)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36067918520](https://github.com/openclaw/clawsweeper/actions/runs/36067918520)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/120616
+Canonical: #120616
 
 ## Summary
 
-Current main still skips dotted cron update fields in source inspection. This read-only checkout has no installed dependencies, so the required failing agent-tool regression, code change, and validation could not be completed. A narrow fix path is specified below.
+Current main still appears to ignore dotted and quoted-dotted job.payload update arguments. Plan a narrow fix, gated on a failing regression through the agent cron tool before editing. This read-only checkout has no installed dependencies, so runtime reproduction and validation remain pending.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main still skips dotted cron update fields in source inspection. This re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120616 | fix_needed | planned | canonical | Repair the current model-facing job.* update path. |
-| #120623 | keep_closed | skipped | superseded | Historical source work only. |
-| cluster:issue-openclaw-openclaw-120616 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and a failing agent cron tool regression first. |
+| #120616 | fix_needed | planned | canonical | The current model-facing job.* update path needs dotted-key recovery; the issue must remain open. |
+| #120623 | keep_closed | skipped | superseded | Retain the contributor's investigation as credited source context; no closure action is valid. |
+| issue-openclaw-openclaw-120616 | build_fix_artifact | planned |  | After the failing regression is demonstrated, prepare one narrow PR on clawsweeper/issue-openclaw-openclaw-120616. |
 
 ## Needs Human
 
