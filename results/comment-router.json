@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:05:14.865Z",
+  "updated_at": "2026-09-24T06:06:05.537Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156688:5800242638:2026-09-24T01:53:24Z:clawsweeper_auto_repair",
-      "comment_id": "5800242638",
-      "comment_version_key": "5800242638:2026-09-24T01:53:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156688#issuecomment-5800242638",
-      "comment_created_at": "2026-09-23T18:06:40Z",
-      "comment_updated_at": "2026-09-24T01:53:24Z",
-      "comment_body_sha256": "7a9217730188f7653229038a18a3dac825360577e9b8b3bc0fab03fe0dd5947a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c69c4dca99105e96c885e96b7c6ecdd3ee9a1112)",
-      "expected_head_sha": "c69c4dca99105e96c885e96b7c6ecdd3ee9a1112",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T01:54:23.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/telegram-binding-worker-20260922",
-        "head_sha": "c69c4dca99105e96c885e96b7c6ecdd3ee9a1112",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156634:5799299613:2026-09-24T01:53:29Z:clawsweeper_needs_human",
       "comment_id": "5799299613",
@@ -32289,6 +32256,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156979:5808663021:2026-09-24T06:05:07Z:re_review",
+      "comment_id": "5808663021",
+      "comment_version_key": "5808663021:2026-09-24T06:05:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156979#issuecomment-5808663021",
+      "comment_created_at": "2026-09-24T06:05:07Z",
+      "comment_updated_at": "2026-09-24T06:05:07Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156979,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T06:06:00.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-voice-connect-deadline-wall-clock",
+        "head_sha": "365964d4191ff4d05d0032504ad9687f364c4018",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
