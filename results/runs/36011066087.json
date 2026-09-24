@@ -1,0 +1,108 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157309",
+  "mode": "autonomous",
+  "run_id": "36011066087",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36011066087",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157309.md",
+  "published_at": "2026-09-24T15:03:58.347Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157309",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157309",
+  "canonical_pr": null,
+  "summary": "The reported CLI teardown defect remains plausible on the preflight main SHA. The Codex harness disposes shared clients, but implementation is blocked because the required sibling ../codex source is unavailable for contract inspection. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#157309",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157309",
+      "candidate_fix": null,
+      "reason": "The separate SDK packaging report does not cover this process-exit failure."
+    },
+    {
+      "target": "#157078",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct failure and fix owner."
+    },
+    {
+      "target": "#157206",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157309",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157309",
+      "candidate_fix": null,
+      "reason": "Inspect the exact sibling Codex source and reproduce the supported Docker CLI flow before implementing or opening a PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): changed-gate validation has an unsafe existing artifacts directory",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#157309",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
