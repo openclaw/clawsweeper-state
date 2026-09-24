@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T14:01:53.008Z",
+  "updated_at": "2026-09-24T14:01:57.819Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157058:5808589181:2026-09-24T06:15:08Z:clawsweeper_needs_human",
-      "comment_id": "5808589181",
-      "comment_version_key": "5808589181:2026-09-24T06:15:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157058#issuecomment-5808589181",
-      "comment_created_at": "2026-09-24T05:59:43Z",
-      "comment_updated_at": "2026-09-24T06:15:08Z",
-      "comment_body_sha256": "483f3d466634ccfdbe417b1727fe82273776171b338b5cc0b9c1279c9635d09e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157058,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4bb684bc027ff1a2a19f70e639e8d03c6de5f4b9)",
-      "expected_head_sha": "4bb684bc027ff1a2a19f70e639e8d03c6de5f4b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T07:29:44.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-wear-history-fixture",
-        "head_sha": "4bb684bc027ff1a2a19f70e639e8d03c6de5f4b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157068:5808651687:2026-09-24T06:23:52Z:clawsweeper_needs_human",
       "comment_id": "5808651687",
@@ -33708,6 +33675,53 @@
         "kind": "pull_request",
         "branch": "fix/157078-bug-202696-docker-codex-setup-",
         "head_sha": "42c8fb8d6aac32729116824ce6dc7397485a440e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156907:5815577557:2026-09-24T14:00:43Z:re_review",
+      "comment_id": "5815577557",
+      "comment_version_key": "5815577557:2026-09-24T14:00:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156907#issuecomment-5815577557",
+      "comment_created_at": "2026-09-24T14:00:43Z",
+      "comment_updated_at": "2026-09-24T14:00:43Z",
+      "comment_body_sha256": "0aedce9e822c83bbfcce73f49d5ba95d2b8781302583f6d9525048faca50fce4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156907,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T14:01:56.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-doctor-explicit-agent-20260924",
+        "head_sha": "e0199b25bd6f18e699874c9f89c20b23c04812c4",
         "cluster_id": null,
         "job_path": null
       },
