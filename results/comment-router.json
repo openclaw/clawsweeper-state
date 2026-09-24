@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-24T20:01:44.858Z",
+  "updated_at": "2026-09-24T20:01:54.871Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5752467993:2026-09-20T20:31:14Z:re_review",
-      "comment_id": "5752467993",
-      "comment_version_key": "5752467993:2026-09-20T20:31:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5752467993",
-      "comment_created_at": "2026-09-20T20:31:14Z",
-      "comment_updated_at": "2026-09-20T20:31:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T11:27:48.657Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5770547508:2026-09-22T02:53:46Z:re_review",
       "comment_id": "5770547508",
@@ -33594,6 +33567,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5821290154:2026-09-24T20:00:09Z:re_review",
+      "comment_id": "5821290154",
+      "comment_version_key": "5821290154:2026-09-24T20:00:09Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1675#issuecomment-5821290154",
+      "comment_created_at": "2026-09-24T20:00:09Z",
+      "comment_updated_at": "2026-09-24T20:00:09Z",
+      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1675,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T20:01:52.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reuse-command-review-ack",
+        "head_sha": "aae7a5f6723efc99f7cca1d3bea0335b2bbe2852",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
