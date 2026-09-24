@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T11:43:56.915Z",
+  "updated_at": "2026-09-24T11:44:08.555Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146847:5808799980:2026-09-24T06:16:24Z:re_review",
-      "comment_id": "5808799980",
-      "comment_version_key": "5808799980:2026-09-24T06:16:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146847#issuecomment-5808799980",
-      "comment_created_at": "2026-09-24T06:16:24Z",
-      "comment_updated_at": "2026-09-24T06:16:24Z",
-      "comment_body_sha256": "dfd061a62226972d38269240e1c50152eeae86e908c519dfbfe20ce385c36031",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146847,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T06:17:21.960Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-plugin-ask-user-inbound",
-        "head_sha": "f05c486a93c0b91f7608bbd81f0abe7426453f2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Kova:144:5808738319:2026-09-24T06:11:48Z:re_review",
       "comment_id": "5808738319",
@@ -33422,6 +33375,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-empty-batch-20260924",
         "head_sha": "2bbb022954bd39c1a91cd0255fc52e4b8b3c5f5c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157248:5813394234:2026-09-24T11:41:59Z:clawsweeper_needs_human",
+      "comment_id": "5813394234",
+      "comment_version_key": "5813394234:2026-09-24T11:41:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157248#issuecomment-5813394234",
+      "comment_created_at": "2026-09-24T11:41:59Z",
+      "comment_updated_at": "2026-09-24T11:41:59Z",
+      "comment_body_sha256": "24726d68dc292f850e478e095c930d853e04e6a58714bfd3b5e9919901c06cad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Claude CLI parser and recovery path is exercised with synthetic JSONL through a mocked supervisor and fake clock. No after-fix inst... (sha=68c76c74af907024ff618ef2d5943fc332bed344)",
+      "expected_head_sha": "68c76c74af907024ff618ef2d5943fc332bed344",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T11:44:08.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-agent-subagent-progress-157209",
+        "head_sha": "68c76c74af907024ff618ef2d5943fc332bed344",
         "cluster_id": null,
         "job_path": null
       }
