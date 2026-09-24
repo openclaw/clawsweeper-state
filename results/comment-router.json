@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:27:28.777Z",
+  "updated_at": "2026-09-24T07:28:50.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156759:5802946394:2026-09-24T02:26:14Z:clawsweeper_needs_human",
-      "comment_id": "5802946394",
-      "comment_version_key": "5802946394:2026-09-24T02:26:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156759#issuecomment-5802946394",
-      "comment_created_at": "2026-09-23T21:07:32Z",
-      "comment_updated_at": "2026-09-24T02:26:14Z",
-      "comment_body_sha256": "94c5d6a7192062b091dd46d14d9576577fa58548f0ec7ad6b9414a9cd79bb588",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156759,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An installed updater has not been shown moving this candidate over an existing attached cloud worker, so continued session attachment, credential use, and workspace recovery across th... (sha=6c7213309ec843f3894070480a26257dbf0f2a57)",
-      "expected_head_sha": "6c7213309ec843f3894070480a26257dbf0f2a57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T02:34:11.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l17-worker-env-canonical-20260923",
-        "head_sha": "6c7213309ec843f3894070480a26257dbf0f2a57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156772:5803266332:2026-09-24T02:31:42Z:clawsweeper_auto_repair",
       "comment_id": "5803266332",
@@ -32203,6 +32170,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144745:5809750735:2026-09-24T07:27:53Z:re_review",
+      "comment_id": "5809750735",
+      "comment_version_key": "5809750735:2026-09-24T07:27:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144745#issuecomment-5809750735",
+      "comment_created_at": "2026-09-24T07:27:53Z",
+      "comment_updated_at": "2026-09-24T07:27:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144745,
+      "author": "azuretek",
+      "author_id": 17463699,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T07:28:49.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/surface-model-ref-resolution-reason",
+        "head_sha": "43fbabb5c9dabb20da99b250ed5b8cd313620300",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
