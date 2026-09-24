@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138644"
 mode: "autonomous"
-run_id: "35945476831"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35945476831"
+run_id: "35948988398"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35948988398"
 head_sha: "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-24T02:36:51.540Z"
+published_at: "2026-09-24T03:37:54.036Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138644"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35945476831](https://github.com/openclaw/clawsweeper/actions/runs/35945476831)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35948988398](https://github.com/openclaw/clawsweeper/actions/runs/35948988398)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/138644
 
 ## Summary
 
-The supplied main SHA still has the reported compaction-to-watchdog gap. This read-only checkout has no installed dependencies, so I could not establish the required failing execution-path regression, change code, or validate a PR branch. No GitHub action was taken.
+The inspected checkout still has the compaction-to-watchdog gap, but it is behind the preflight main SHA. The read-only workspace prevented a failing regression, implementation, and validation. The narrow fix path is recorded for the executor; no PR was created.
 
 ## Impact
 
@@ -66,12 +66,12 @@ The supplied main SHA still has the reported compaction-to-watchdog gap. This re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138644 | fix_needed | planned | canonical | A focused repair is warranted, subject to reproducing the failure through the plugin execution path before editing. |
-| #40982 | keep_related | planned | related | Its remaining scope extends beyond the missing compaction-state handoff. |
-| #137294 | keep_related | planned | related | It has a different watchdog owner and failure path. |
-| #125045 | keep_closed | skipped | related | Historical context only. |
-| #139009 | keep_closed | skipped | superseded | Reference work only; no action on a closed PR. |
-| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and a failing plugin-path regression first. |
+| #138644 | fix_needed | planned | canonical | The source path supports the reported defect, but latest-main reproduction remains a required executor gate. |
+| #40982 | keep_related | planned | related | Different remaining work; leave the issue open. |
+| #137294 | keep_independent | planned | independent | Its reproduction and fix path do not depend on the CLI plugin watchdog. |
+| #125045 | keep_closed | skipped | related |  |
+| #139009 | keep_closed | skipped | related |  |
+| cluster:issue-openclaw-openclaw-138644 | build_fix_artifact | blocked |  | Implementation and a PR-ready branch cannot be produced from this workspace. |
 
 ## Needs Human
 

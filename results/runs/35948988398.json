@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138644",
+  "mode": "autonomous",
+  "run_id": "35948988398",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35948988398",
+  "head_sha": "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138644.md",
+  "published_at": "2026-09-24T03:37:54.036Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_pr": null,
+  "summary": "The inspected checkout still has the compaction-to-watchdog gap, but it is behind the preflight main SHA. The read-only workspace prevented a failing regression, implementation, and validation. The narrow fix path is recorded for the executor; no PR was created.",
+  "actions": [
+    {
+      "target": "#138644",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "The source path supports the reported defect, but latest-main reproduction remains a required executor gate."
+    },
+    {
+      "target": "#40982",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Different remaining work; leave the issue open."
+    },
+    {
+      "target": "#137294",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its reproduction and fix path do not depend on the CLI plugin watchdog."
+    },
+    {
+      "target": "#125045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#139009",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Implementation and a PR-ready branch cannot be produced from this workspace."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
