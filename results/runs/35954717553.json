@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156998",
+  "mode": "autonomous",
+  "run_id": "35954717553",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35954717553",
+  "head_sha": "5ae902bf0a0f31d7c36618352b48621f39b40786",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156998.md",
+  "published_at": "2026-09-24T04:45:16.663Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156998",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156998",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow Memory Core bug, but implementation is blocked: the read-only checkout is behind the preflight main SHA, and a failing regression could not be run.",
+  "actions": [
+    {
+      "target": "#156998",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156998",
+      "candidate_fix": null,
+      "reason": "Add a failing manager search regression on current main before changing the query-error owner."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156998",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156998",
+      "candidate_fix": null,
+      "reason": "A writable checkout at current main with dependencies is required to establish the failing regression and validate the repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
