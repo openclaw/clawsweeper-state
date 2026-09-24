@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:06:57.881Z",
+  "updated_at": "2026-09-24T06:09:23.494Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156802:5805971721:2026-09-24T01:45:27Z:re_review",
-      "comment_id": "5805971721",
-      "comment_version_key": "5805971721:2026-09-24T01:45:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156802#issuecomment-5805971721",
-      "comment_created_at": "2026-09-24T01:45:27Z",
-      "comment_updated_at": "2026-09-24T01:45:27Z",
-      "comment_body_sha256": "13616592a4505a4f7a47281ee07dba8f5c86bbaab495cded29fe84f504050930",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156802,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T01:54:54.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-session-account-routing",
-        "head_sha": "ccab80e3884af5bf906724bffe8d9472a2cb2643",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156802:5803851802:2026-09-24T01:53:48Z:clawsweeper_needs_human",
       "comment_id": "5803851802",
@@ -32300,6 +32253,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-workshop-authority-cause-156948",
         "head_sha": "143da9ac5955bf9d8d3fdfce6253f3855e706608",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144319:5624135979:2026-09-24T06:07:44Z:clawsweeper_needs_human",
+      "comment_id": "5624135979",
+      "comment_version_key": "5624135979:2026-09-24T06:07:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144319#issuecomment-5624135979",
+      "comment_created_at": "2026-09-10T19:17:30Z",
+      "comment_updated_at": "2026-09-24T06:07:44Z",
+      "comment_body_sha256": "a0f2244728138a0756a538e35c831e552db1c09953f6c396e61fbf20d042d14d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144319,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: real-process fixtures exercise the introduced launcher, fd 3 receiver, lease refusal, and settlement,...; Review finding: [medium] Verify revocation before final post-core I/O — src/cli/update-cli/update-command-post-core-admission.ts:84 (sha=44f32040f0f7772f226d391fc40e8a292639a166)",
+      "expected_head_sha": "44f32040f0f7772f226d391fc40e8a292639a166",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T06:09:23.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/update-v6-post-core-custody",
+        "head_sha": "44f32040f0f7772f226d391fc40e8a292639a166",
         "cluster_id": null,
         "job_path": null
       }
