@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T11:44:08.555Z",
+  "updated_at": "2026-09-24T11:45:58.556Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Kova:144:5808738319:2026-09-24T06:11:48Z:re_review",
-      "comment_id": "5808738319",
-      "comment_version_key": "5808738319:2026-09-24T06:11:48Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/144#issuecomment-5808738319",
-      "comment_created_at": "2026-09-24T06:11:48Z",
-      "comment_updated_at": "2026-09-24T06:11:48Z",
-      "comment_body_sha256": "1d8890d2d5a6439f35750280307465e05704bae88c1952f2a1859e467a06a40b",
-      "repo": "openclaw/Kova",
-      "issue_number": 144,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T06:17:35.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settle-terminal-cpu-samples",
-        "head_sha": "e6f34a133b8c9ff67ab01e3780c9e6287604d2cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Kova:144:5807610997:2026-09-24T06:16:41Z:clawsweeper_needs_human",
       "comment_id": "5807610997",
@@ -33408,6 +33361,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-agent-subagent-progress-157209",
         "head_sha": "68c76c74af907024ff618ef2d5943fc332bed344",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157247:5813433193:2026-09-24T11:44:51Z:clawsweeper_needs_human",
+      "comment_id": "5813433193",
+      "comment_version_key": "5813433193:2026-09-24T11:44:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157247#issuecomment-5813433193",
+      "comment_created_at": "2026-09-24T11:44:51Z",
+      "comment_updated_at": "2026-09-24T11:44:51Z",
+      "comment_body_sha256": "1b70cc3bd06f7bb9d877816be050d25bdd01dab0c7852e32b7053f4a27a79dcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157247,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported real archive/delete worker tests and inspected synthetic Tasks screenshots support the al...; Review finding: [P1] Preserve child transcript access for archived task pages — src/gateway/server-methods/task-history.ts:175-188 - [P2] Report the archive capacity limit as a pe... (sha=3623ea3e379b87a1bf86aaf8fdff34972402b0f3)",
+      "expected_head_sha": "3623ea3e379b87a1bf86aaf8fdff34972402b0f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T11:45:58.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cleaned-task-history634",
+        "head_sha": "3623ea3e379b87a1bf86aaf8fdff34972402b0f3",
         "cluster_id": null,
         "job_path": null
       }
