@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:03:58.408Z",
+  "updated_at": "2026-09-24T05:05:03.959Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153600:5805244139:2026-09-24T00:29:22Z:re_review",
-      "comment_id": "5805244139",
-      "comment_version_key": "5805244139:2026-09-24T00:29:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153600#issuecomment-5805244139",
-      "comment_created_at": "2026-09-24T00:29:22Z",
-      "comment_updated_at": "2026-09-24T00:29:22Z",
-      "comment_body_sha256": "4053cc06bfecf5ef61ed03d05bc5d1565819e3daab9e3de5dccd0ec4f57a85e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153600,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T00:30:34.193Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-startup-diagnostics-20260920",
-        "head_sha": "7730b58adac21e1cf811b83439eab8e1a07b019f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156870:5805253390:2026-09-24T00:30:21Z:clawsweeper_needs_human",
       "comment_id": "5805253390",
@@ -32648,6 +32601,39 @@
         "kind": "pull_request",
         "branch": "refactor/home-relative-path-resolution-current-20260914",
         "head_sha": "209086ec83d114a4687c6b4578e3a85cf2991e9f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157025:5808018875:2026-09-24T05:04:03Z:clawsweeper_needs_human",
+      "comment_id": "5808018875",
+      "comment_version_key": "5808018875:2026-09-24T05:04:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157025#issuecomment-5808018875",
+      "comment_created_at": "2026-09-24T05:04:03Z",
+      "comment_updated_at": "2026-09-24T05:04:03Z",
+      "comment_body_sha256": "6f93c0900dde520463b93523d328be39f721eb6e86ca46c1ca6aa67c8d7fd7d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The registered hot-reload QA runner changes fixture acquisition and teardown order, but that scenario and the changed tests have no execution results yet; a release QA failure or inco... (sha=db6517ad9ac64609d79aa3b593c82c7ae93e3021)",
+      "expected_head_sha": "db6517ad9ac64609d79aa3b593c82c7ae93e3021",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T05:05:03.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/qa-e2e-oracle-custody-20260924",
+        "head_sha": "db6517ad9ac64609d79aa3b593c82c7ae93e3021",
         "cluster_id": null,
         "job_path": null
       }
