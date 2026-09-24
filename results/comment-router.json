@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:04:58.589Z",
+  "updated_at": "2026-09-24T21:05:16.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157271:5814041779:2026-09-24T12:24:48Z:re_review",
-      "comment_id": "5814041779",
-      "comment_version_key": "5814041779:2026-09-24T12:24:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157271#issuecomment-5814041779",
-      "comment_created_at": "2026-09-24T12:24:48Z",
-      "comment_updated_at": "2026-09-24T12:24:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157271,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T12:33:39.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-typing-yield-resume",
-        "head_sha": "35e109f8b76456911cec0ece171f397a418e6582",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157230:5814047447:2026-09-24T12:25:06Z:re_review",
       "comment_id": "5814047447",
@@ -33499,6 +33452,39 @@
         "kind": "pull_request",
         "branch": "refactor/acp-runtime-option-patch-20260924",
         "head_sha": "eeb5bde429aa182bd824006fc1c5f405fcc7fd9b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157574:5822218622:2026-09-24T21:04:15Z:clawsweeper_needs_human",
+      "comment_id": "5822218622",
+      "comment_version_key": "5822218622:2026-09-24T21:04:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157574#issuecomment-5822218622",
+      "comment_created_at": "2026-09-24T21:04:15Z",
+      "comment_updated_at": "2026-09-24T21:04:15Z",
+      "comment_body_sha256": "aff9913c6cb5098a9dda6bf5be719c673ffe50260622a522a514976d68a4eaa9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: Inspected native Compose before/after images show the visual change, and the PR reports a selected-tar...; Review finding: [P1] Retire the pinned Talk target when the agent changes — apps/android/app/src/main/java/ai/openclaw/app/voice/TalkModeManager.kt:491-494 - [P3] Replace wall-clo... (sha=02c41747db07cfc6bb159f07a5ce60db1a233a8a)",
+      "expected_head_sha": "02c41747db07cfc6bb159f07a5ce60db1a233a8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T21:05:16.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/android-navigation-prs-20260924",
+        "head_sha": "02c41747db07cfc6bb159f07a5ce60db1a233a8a",
         "cluster_id": null,
         "job_path": null
       }
