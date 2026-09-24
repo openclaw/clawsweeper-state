@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:33:43.294Z",
+  "updated_at": "2026-09-24T05:33:48.309Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156788:5803595245:2026-09-24T00:36:08Z:clawsweeper_auto_repair",
-      "comment_id": "5803595245",
-      "comment_version_key": "5803595245:2026-09-24T00:36:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156788#issuecomment-5803595245",
-      "comment_created_at": "2026-09-23T21:54:57Z",
-      "comment_updated_at": "2026-09-24T00:36:08Z",
-      "comment_body_sha256": "4f355870d92be14128c5066c7bdbbe0e2bc26e51fc49495de65e90509731537b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156788,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a2a83c928af3d44358885b55c8f29d459f0fbd01)",
-      "expected_head_sha": "a2a83c928af3d44358885b55c8f29d459f0fbd01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T00:58:10.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/coordinator-reconcile-phases-20260923",
-        "head_sha": "a2a83c928af3d44358885b55c8f29d459f0fbd01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156790:5803692484:2026-09-23T23:03:10Z:clawsweeper_needs_human",
       "comment_id": "5803692484",
@@ -32397,6 +32364,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151441:5808308483:2026-09-24T05:32:44Z:re_review",
+      "comment_id": "5808308483",
+      "comment_version_key": "5808308483:2026-09-24T05:32:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151441#issuecomment-5808308483",
+      "comment_created_at": "2026-09-24T05:32:44Z",
+      "comment_updated_at": "2026-09-24T05:32:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151441,
+      "author": "azuretek",
+      "author_id": 17463699,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T05:33:46.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-send-reserved-marker",
+        "head_sha": "acd2b98586858ef8df78f7342062a977fea6635e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
