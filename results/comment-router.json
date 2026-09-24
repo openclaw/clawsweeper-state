@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:57:58.439Z",
+  "updated_at": "2026-09-24T21:58:00.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157259:5814303429:2026-09-24T12:40:37Z:maintainer_approve_automerge",
-      "comment_id": "5814303429",
-      "comment_version_key": "5814303429:2026-09-24T12:40:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157259#issuecomment-5814303429",
-      "comment_created_at": "2026-09-24T12:40:37Z",
-      "comment_updated_at": "2026-09-24T12:40:37Z",
-      "comment_body_sha256": "719ae401a5107ed0ec125e52c8919babe29960f358a93ab3d6e9220e972f5e56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157259,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "structured ClawSweeper verdict: pass; failed required checks before automerge: Security High (core-auth-secrets):CANCELLED, Security High (channel-runtime-boundary):CANCELLED, Security High (network-ssrf-boundary):CANCELLED, Security High (mcp-process-tool-boundary):CANCELLED, Security High (process-exec-boundary):CANCELLED, Security High (plugin-trust-boundary):CANCELLED, Security High (actions):CANCELLED, check-test-types:CANCELLED",
-      "expected_head_sha": "a6b119fe1e36f4003da5188c3d93acda1a9d2aa4",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-09-24T14:05:12.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-adoption-active-work-20260924",
-        "head_sha": "a6b119fe1e36f4003da5188c3d93acda1a9d2aa4",
-        "cluster_id": "automerge-openclaw-openclaw-157259",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157196:5814305775:2026-09-24T12:40:46Z:re_review",
       "comment_id": "5814305775",
@@ -33127,6 +33068,39 @@
         "kind": "pull_request",
         "branch": "fix/feishu-markdown-tables",
         "head_sha": "8d4a19d13a6fdf3810699bcb4cff7528f12d238a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157608:5822897597:2026-09-24T21:56:32Z:clawsweeper_auto_repair",
+      "comment_id": "5822897597",
+      "comment_version_key": "5822897597:2026-09-24T21:56:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157608#issuecomment-5822897597",
+      "comment_created_at": "2026-09-24T21:56:32Z",
+      "comment_updated_at": "2026-09-24T21:56:32Z",
+      "comment_body_sha256": "fad5c5721e8c3de7228f32b285578724c731c3a72c168758f59630a7899f28eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=606baa08d01bd209536159fcbe00615fdf002ec9)",
+      "expected_head_sha": "606baa08d01bd209536159fcbe00615fdf002ec9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T21:58:00.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-fixture-recorded-chunks",
+        "head_sha": "606baa08d01bd209536159fcbe00615fdf002ec9",
         "cluster_id": null,
         "job_path": null
       }
