@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-24T18:59:42.967Z",
+  "updated_at": "2026-09-24T18:58:42.062Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146847:5812793680:2026-09-24T11:00:08Z:re_review",
+      "comment_id": "5812793680",
+      "comment_version_key": "5812793680:2026-09-24T11:00:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146847#issuecomment-5812793680",
+      "comment_created_at": "2026-09-24T11:00:08Z",
+      "comment_updated_at": "2026-09-24T11:00:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146847,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T11:06:21.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-ask-user-inbound",
+        "head_sha": "a6583ab8a62191ee3fa94a67d21247276e0b9f63",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155262:5812830683:2026-09-24T11:03:01Z:re_review",
       "comment_id": "5812830683",
@@ -33585,39 +33632,6 @@
       "status": "skipped",
       "processed_at": "2026-09-24T18:58:42.062Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:112:5805098978:2026-09-24T18:58:28Z:clawsweeper_needs_human",
-      "comment_id": "5805098978",
-      "comment_version_key": "5805098978:2026-09-24T18:58:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/112#issuecomment-5805098978",
-      "comment_created_at": "2026-09-24T00:14:33Z",
-      "comment_updated_at": "2026-09-24T18:58:28Z",
-      "comment_body_sha256": "cf0c177977b2614d572108e6b10f4132824ec73ebdd267b4c0b5a08ca1345ed1",
-      "repo": "openclaw/openclaw-windows-packaging",
-      "issue_number": 112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the exact-head installed Windows trial and Control UI screenshots show the agent resolving and disclos...; Review finding: [medium] Confirm the all-local-users handoff boundary — plugins/gateway-isolation/index.js:9 (sha=d88790a369e9b9f01b6051a9f689392ab3d8df29)",
-      "expected_head_sha": "d88790a369e9b9f01b6051a9f689392ab3d8df29",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T18:59:42.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chazgo-isolation-guidance-followup",
-        "head_sha": "d88790a369e9b9f01b6051a9f689392ab3d8df29",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
