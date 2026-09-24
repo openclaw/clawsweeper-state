@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157377",
+  "mode": "autonomous",
+  "run_id": "36024037054",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36024037054",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157377.md",
+  "published_at": "2026-09-24T16:41:18.682Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157377",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157377",
+  "canonical_pr": null,
+  "summary": "The local checkout shows the reported model-selection bug, but implementation is blocked: the workspace is read-only, dependencies are absent, and the checkout does not contain the preflight artifact’s latest main SHA. No regression, patch, validation, branch update, or PR was created.",
+  "actions": [
+    {
+      "target": "#157377",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157377",
+      "candidate_fix": null,
+      "reason": "Reproduce on the preflight main revision before changing code, as the job requires."
+    },
+    {
+      "target": "#149796",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#157377",
+      "candidate_fix": null,
+      "reason": "The trigger and remaining reproduction work differ."
+    },
+    {
+      "target": "#71069",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157377",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157377",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout at the preflight main revision, then a failing regression and validated patch before opening the issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
