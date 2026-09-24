@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:21:47.315Z",
+  "updated_at": "2026-09-24T21:39:26.052Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157282:5814143760:2026-09-24T12:40:15Z:clawsweeper_needs_human",
-      "comment_id": "5814143760",
-      "comment_version_key": "5814143760:2026-09-24T12:40:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157282#issuecomment-5814143760",
-      "comment_created_at": "2026-09-24T12:30:52Z",
-      "comment_updated_at": "2026-09-24T12:40:15Z",
-      "comment_body_sha256": "73d5696df47e3112334f0cabea8ed1e06782c78f741447b45c9abb853eae2604",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157282,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3c9d7cd4c39c86a13b6fd57d3e02e3e95bbae471)",
-      "expected_head_sha": "3c9d7cd4c39c86a13b6fd57d3e02e3e95bbae471",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T14:05:12.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-media-harness-deps-20260924",
-        "head_sha": "3c9d7cd4c39c86a13b6fd57d3e02e3e95bbae471",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157279:5814147845:2026-09-24T12:51:37Z:clawsweeper_needs_human",
       "comment_id": "5814147845",
@@ -33116,6 +33083,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142668:5822645436:2026-09-24T21:36:43Z:re_review",
+      "comment_id": "5822645436",
+      "comment_version_key": "5822645436:2026-09-24T21:36:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142668#issuecomment-5822645436",
+      "comment_created_at": "2026-09-24T21:36:43Z",
+      "comment_updated_at": "2026-09-24T21:36:43Z",
+      "comment_body_sha256": "b3a39377affd160c9a81881c7f49ad5ed1b68fa3366ba45d673f81d7857a52c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142668,
+      "author": "ivankuznetsov",
+      "author_id": 21112,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T21:39:24.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/tailscale-pairing-preflight",
+        "head_sha": "20972b15f97d569f1caa2c33a0a8b1ca39430e59",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
