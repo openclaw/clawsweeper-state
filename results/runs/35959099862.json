@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157039",
+  "mode": "autonomous",
+  "run_id": "35959099862",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35959099862",
+  "head_sha": "7443df924f1b1209b9c325985170de3a36ed4e4e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157039.md",
+  "published_at": "2026-09-24T05:38:40.773Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157039",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157039",
+  "canonical_pr": null,
+  "summary": "Current main still adds properties: {} to Tool Search’s nested free-form args schema. The reported Ollama response behavior has not been reproduced through an OpenClaw request. The checkout is read-only and has no installed dependencies, so the regression, patch, and validation remain blocked on an execution-capable worker.",
+  "actions": [
+    {
+      "target": "#157039",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157039",
+      "candidate_fix": null,
+      "reason": "A narrow provider-owned regression remains plausible and needs boundary reproduction before editing."
+    },
+    {
+      "target": "#143180",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#157039",
+      "candidate_fix": null,
+      "reason": "The reports share Tool Search symptoms but have distinct demonstrated paths."
+    },
+    {
+      "target": "#143729",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157039",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157039",
+      "candidate_fix": null,
+      "reason": "Resume in a writable, dependency-ready checkout; reproduce the request boundary before applying the planned fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
