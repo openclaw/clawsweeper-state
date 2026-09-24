@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:20:01.284Z",
+  "updated_at": "2026-09-24T12:20:47.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156940:5809317339:2026-09-24T06:56:18Z:re_review",
-      "comment_id": "5809317339",
-      "comment_version_key": "5809317339:2026-09-24T06:56:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156940#issuecomment-5809317339",
-      "comment_created_at": "2026-09-24T06:56:18Z",
-      "comment_updated_at": "2026-09-24T06:56:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156940,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T06:57:22.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-pr-native-ownership",
-        "head_sha": "eadaf9f8afdb1e4e912b0f27e5bffbae8bafefec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154767:5809149400:2026-09-24T06:43:05Z:re_review",
       "comment_id": "5809149400",
@@ -33634,6 +33587,39 @@
         "kind": "pull_request",
         "branch": "upd/windows-plugin-convergence-recovery-pending",
         "head_sha": "a3a4e23cb009b66b406515fe606f2e80769f9921",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157269:5813942557:2026-09-24T12:19:38Z:clawsweeper_needs_human",
+      "comment_id": "5813942557",
+      "comment_version_key": "5813942557:2026-09-24T12:19:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157269#issuecomment-5813942557",
+      "comment_created_at": "2026-09-24T12:19:38Z",
+      "comment_updated_at": "2026-09-24T12:19:38Z",
+      "comment_body_sha256": "716d9657a444bf212ae124c1483a6ddac0adccfc98844e363635d196e9744c52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157269,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The browser plugin’s changed resolver is covered by a mocked test, and the PR describes before/after discovery on an aarch64 host. No... (sha=6857db243b3474db4026d865408302862a1eb1f5)",
+      "expected_head_sha": "6857db243b3474db4026d865408302862a1eb1f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T12:20:47.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-arm64-playwright-chromium",
+        "head_sha": "6857db243b3474db4026d865408302862a1eb1f5",
         "cluster_id": null,
         "job_path": null
       }
