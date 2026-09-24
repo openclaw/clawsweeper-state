@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157152"
 mode: "autonomous"
-run_id: "35978994453"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35978994453"
+run_id: "36011147648"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36011147648"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-24T09:43:14.498Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-09-24T14:54:31.057Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157152"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157152"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35978994453](https://github.com/openclaw/clawsweeper/actions/runs/35978994453)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36011147648](https://github.com/openclaw/clawsweeper/actions/runs/36011147648)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/157152
 
 ## Summary
 
-The defect remains on the supplied main SHA. Deep consolidation hard-cuts the text written to MEMORY.md, while append promotion uses a boundary-aware formatter. A narrow Memory Core fix is appropriate. This read-only worker did not edit code or mutate GitHub.
+The defect reproduces on the checkout at preflight main f9da9a55: the reported candidate becomes a 640-character snippet ending in “SUPE” without an ellipsis. A narrow plugin fix is planned. This worker could not edit or validate a branch because the filesystem is read-only and dependencies are absent; GitHub DNS resolution also failed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ The defect remains on the supplied main SHA. Deep consolidation hard-cuts the te
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): changed-gate validation has an unsafe existing artifacts directory |
+| issue_implementation_status_comment | updated | #157152 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +67,10 @@ The defect remains on the supplied main SHA. Deep consolidation hard-cuts the te
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157152 | fix_needed | planned | canonical | The issue describes a distinct, bounded presentation defect in the Memory Core plugin. |
-| #89444 | keep_related | planned | related | Separate promotion-policy scope; leave open. |
-| cluster:issue-openclaw-openclaw-157152 | build_fix_artifact | planned |  | The executor can implement and validate this narrow fix on the designated branch. |
+| #157152 | fix_needed | planned | canonical | The accepted consolidation write path can persist the hard-cut result entry. |
+| #89444 | keep_related | planned | related | Keep the distinct promotion-quality discussion open. |
+| cluster:issue-openclaw-openclaw-157152 | build_fix_artifact | planned |  | A focused bug fix is supported, but implementation and validation require a writable executor. |
+| cluster:issue-openclaw-openclaw-157152 | open_fix_pr | blocked |  | Open or update the single fix PR only after the writable executor implements the artifact and completes the listed validation. |
 
 ## Needs Human
 
