@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77717",
+  "mode": "autonomous",
+  "run_id": "36011117893",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36011117893",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77717.md",
+  "published_at": "2026-09-24T14:58:16.245Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77717",
+  "canonical_pr": null,
+  "summary": "At preflight main f9da9a55, source inspection confirms an aborted Feishu account probe can overwrite identity stored by a replacement monitor. The checkout is read-only, so I could not add and run the required failing regression, implement the fix, or validate a PR branch. The reported permanent disconnection itself remains unverified on current main.",
+  "actions": [
+    {
+      "target": "#77717",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "The stale identity write is supported by current source; the required executable regression and repair remain outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77717",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#77717",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout. The next worker must first demonstrate the failing account-start regression on current main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): changed-gate validation has an unsafe existing artifacts directory",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#77717",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

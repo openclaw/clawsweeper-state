@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-77717"
 mode: "autonomous"
-run_id: "36006737971"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36006737971"
+run_id: "36011117893"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36011117893"
 head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-24T14:07:18.085Z"
+published_at: "2026-09-24T14:58:16.245Z"
 canonical: "https://github.com/openclaw/openclaw/issues/77717"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/77717"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36006737971](https://github.com/openclaw/clawsweeper/actions/runs/36006737971)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36011117893](https://github.com/openclaw/clawsweeper/actions/runs/36011117893)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/77717
 
 ## Summary
 
-Current main has the reported Feishu identity state race. A narrow fix is identified, but this read-only checkout has no installed dependencies, so the required failing regression and validation could not be completed. No PR was created.
+At preflight main f9da9a55, source inspection confirms an aborted Feishu account probe can overwrite identity stored by a replacement monitor. The checkout is read-only, so I could not add and run the required failing regression, implement the fix, or validate a PR branch. The reported permanent disconnection itself remains unverified on current main.
 
 ## Impact
 
@@ -67,8 +67,8 @@ Current main has the reported Feishu identity state race. A narrow fix is identi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #77717 | fix_needed | planned | canonical | An old probe can overwrite identity stored by a replacement monitor. |
-| cluster:issue-openclaw-openclaw-77717 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout. First demonstrate the failure through startAccount, then patch and validate before opening a PR. |
+| #77717 | fix_needed | planned | canonical | The stale identity write is supported by current source; the required executable regression and repair remain outstanding. |
+| cluster:issue-openclaw-openclaw-77717 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout. The next worker must first demonstrate the failing account-start regression on current main. |
 
 ## Needs Human
 
