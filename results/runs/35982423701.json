@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157182",
+  "mode": "autonomous",
+  "run_id": "35982423701",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35982423701",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157182.md",
+  "published_at": "2026-09-24T10:05:46.436Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157182",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157182",
+  "canonical_pr": null,
+  "summary": "The reported Control UI bug is supported by source inspection, but implementation is blocked. The checkout is read-only and its shallow HEAD (40be2fb0) lacks the preflight main commit (d4748c6c), so the required failing regression on current main could not be established. No code, GitHub state, or PR was changed.",
+  "actions": [
+    {
+      "target": "#157180",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#157182",
+      "candidate_fix": null,
+      "reason": "Keep the documentation report open in its own cluster."
+    },
+    {
+      "target": "#157182",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157182",
+      "candidate_fix": null,
+      "reason": "Verify the failure on current main before implementing the narrow Control UI fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157182",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157182",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the host filesystem and stale shallow checkout, not by an unresolved maintainer decision."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
