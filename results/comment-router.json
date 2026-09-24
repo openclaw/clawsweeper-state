@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-24T20:17:44.696Z",
+  "updated_at": "2026-09-24T20:17:49.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157259:5813882337:2026-09-24T12:15:53Z:automerge",
-      "comment_id": "5813882337",
-      "comment_version_key": "5813882337:2026-09-24T12:15:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157259#issuecomment-5813882337",
-      "comment_created_at": "2026-09-24T12:15:53Z",
-      "comment_updated_at": "2026-09-24T12:15:53Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157259,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T12:18:59.200Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-adoption-active-work-20260924",
-        "head_sha": "a6b119fe1e36f4003da5188c3d93acda1a9d2aa4",
-        "cluster_id": "automerge-openclaw-openclaw-157259",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157259:5813910837:2026-09-24T12:17:43Z:clawsweeper_needs_human",
       "comment_id": "5813910837",
@@ -33549,6 +33490,39 @@
         "kind": "pull_request",
         "branch": "cleanup/retire-mintlify-20260924",
         "head_sha": "7d115b3edd15456fb8386cfe382b95056f017202",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157457:5819394308:2026-09-24T20:16:37Z:clawsweeper_needs_human",
+      "comment_id": "5819394308",
+      "comment_version_key": "5819394308:2026-09-24T20:16:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157457#issuecomment-5819394308",
+      "comment_created_at": "2026-09-24T18:00:07Z",
+      "comment_updated_at": "2026-09-24T20:16:37Z",
+      "comment_body_sha256": "ef147638fcb6f620291cafa7935d784cb0edbfe9eef9cc72ff52844f660906ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public method has no production caller, and its Periphery ignore suppresses dead-code reporting for that declaration until app activation; the repository requires explicit app... (sha=a604a2c9c82dfa030aa2b6a2fdcd44ed366f0723)",
+      "expected_head_sha": "a604a2c9c82dfa030aa2b6a2fdcd44ed366f0723",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T20:17:49.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/ios-access-http-probes-20260925",
+        "head_sha": "a604a2c9c82dfa030aa2b6a2fdcd44ed366f0723",
         "cluster_id": null,
         "job_path": null
       }
