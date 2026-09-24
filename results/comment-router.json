@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-24T03:37:42.914Z",
+  "updated_at": "2026-09-24T03:36:13.185Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156614:5803340530:2026-09-23T21:35:49Z:re_review",
+      "comment_id": "5803340530",
+      "comment_version_key": "5803340530:2026-09-23T21:35:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156614#issuecomment-5803340530",
+      "comment_created_at": "2026-09-23T21:35:49Z",
+      "comment_updated_at": "2026-09-23T21:35:49Z",
+      "comment_body_sha256": "ff321040c46cb4fa9ff7127aad93f3263c0442af8a047032bcde2a7ad676e49f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156614,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-23T21:37:04.067Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/testbox-outer-job-budget",
+        "head_sha": "d89814d296074c24a8cfa4b76c3ada964011dfee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1497:5803237020:2026-09-23T21:28:33Z:re_review",
       "comment_id": "5803237020",
@@ -33730,39 +33777,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156541:5796090261:2026-09-24T03:36:33Z:clawsweeper_needs_human",
-      "comment_id": "5796090261",
-      "comment_version_key": "5796090261:2026-09-24T03:36:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156541#issuecomment-5796090261",
-      "comment_created_at": "2026-09-23T13:52:16Z",
-      "comment_updated_at": "2026-09-24T03:36:33Z",
-      "comment_body_sha256": "977379880e2bf86262df35bbfb9bbedc1e55346f4d98d159f47cb034980cc6cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156541,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes legacy session repair, persisted-state backfills, configuration collection, and plugin auto-enable, but the submitted evidence does not show the published updater d... (sha=cbf2e05740ef5ecac810c17af2f93f54c2041181)",
-      "expected_head_sha": "cbf2e05740ef5ecac810c17af2f93f54c2041181",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T03:37:42.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l11-config-sessions-accumulate-20260922",
-        "head_sha": "cbf2e05740ef5ecac810c17af2f93f54c2041181",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
