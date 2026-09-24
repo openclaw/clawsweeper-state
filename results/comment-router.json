@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T20:15:22.745Z",
+  "updated_at": "2026-09-24T20:16:45.638Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138016:5813905420:2026-09-24T12:17:22Z:re_review",
-      "comment_id": "5813905420",
-      "comment_version_key": "5813905420:2026-09-24T12:17:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138016#issuecomment-5813905420",
-      "comment_created_at": "2026-09-24T12:17:22Z",
-      "comment_updated_at": "2026-09-24T12:17:22Z",
-      "comment_body_sha256": "556f483ea26a4c7e6dffa542dae276cfbbd7cf3e875cdc59596d352b5134d661",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138016,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T12:18:36.942Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/team-opt-bench-evidence-20260904",
-        "head_sha": "1ff4679f00dfa1b3f687657e76727385d98e63fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156791:5803656285:2026-09-24T12:17:40Z:clawsweeper_auto_repair",
       "comment_id": "5803656285",
@@ -33563,6 +33516,39 @@
         "kind": "pull_request",
         "branch": "fix/desktop-lane-lock-deadline",
         "head_sha": "fac39ff291511c096a8f6779bd691a8915571a91",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157543:5821540117:2026-09-24T20:15:39Z:clawsweeper_needs_human",
+      "comment_id": "5821540117",
+      "comment_version_key": "5821540117:2026-09-24T20:15:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157543#issuecomment-5821540117",
+      "comment_created_at": "2026-09-24T20:15:39Z",
+      "comment_updated_at": "2026-09-24T20:15:39Z",
+      "comment_body_sha256": "5da7180804715ed4bd01bed1705eda0b5591bd713503188952ef441134bf168d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157543,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older Incognito task rows can still contain raw prompts after upgrade. The patch leaves them in place, and no pre-fix-row upgrade check establishes their read and transition behavior. (sha=03c7f02922c6db9745df27d4a3bc9e699b7bd413)",
+      "expected_head_sha": "03c7f02922c6db9745df27d4a3bc9e699b7bd413",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T20:16:45.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incognito-agent-rpc-sinks",
+        "head_sha": "03c7f02922c6db9745df27d4a3bc9e699b7bd413",
         "cluster_id": null,
         "job_path": null
       }
