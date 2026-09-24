@@ -2,53 +2,6 @@
   "updated_at": "2026-09-24T15:11:21.085Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:157089:5811285366:2026-09-24T09:12:51Z:re_review",
-      "comment_id": "5811285366",
-      "comment_version_key": "5811285366:2026-09-24T09:12:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157089#issuecomment-5811285366",
-      "comment_created_at": "2026-09-24T09:12:51Z",
-      "comment_updated_at": "2026-09-24T09:12:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157089,
-      "author": "LLagoon3",
-      "author_id": 115124830,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:13:58.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-optional-wiki-status-guidance",
-        "head_sha": "5fe5a45e4c0ded94e6297e369d8ddcf7caec5bc6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156901:5805787204:2026-09-24T09:15:02Z:clawsweeper_auto_repair",
       "comment_id": "5805787204",
       "comment_version_key": "5805787204:2026-09-24T09:15:02Z",
@@ -33466,6 +33419,39 @@
         "kind": "pull_request",
         "branch": "codex/triage-20260923-engine-default-cleanup-binding",
         "head_sha": "41a90c9586434d9b426a1b7dc531dc586d7cdeb8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157233:5813085956:2026-09-24T15:10:15Z:clawsweeper_needs_human",
+      "comment_id": "5813085956",
+      "comment_version_key": "5813085956:2026-09-24T15:10:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157233#issuecomment-5813085956",
+      "comment_created_at": "2026-09-24T11:22:07Z",
+      "comment_updated_at": "2026-09-24T15:10:15Z",
+      "comment_body_sha256": "6892206e6235b109e044c8a737088a9f960865313583c38b4737b1b21bb266ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157233,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation could register LLM Task after updating but fail on its first invocation if the deferred execution module is unavailable or cannot load; the published-updater... (sha=f48195c08fc94e647fc742f4b6b623e59206935a)",
+      "expected_head_sha": "f48195c08fc94e647fc742f4b6b623e59206935a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T15:11:20.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/plugin-import-boundaries-20260924",
+        "head_sha": "f48195c08fc94e647fc742f4b6b623e59206935a",
         "cluster_id": null,
         "job_path": null
       }
