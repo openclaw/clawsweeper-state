@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:30:44.647Z",
+  "updated_at": "2026-09-24T15:30:55.454Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145928:5811650104:2026-09-24T09:37:53Z:re_review",
-      "comment_id": "5811650104",
-      "comment_version_key": "5811650104:2026-09-24T09:37:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145928#issuecomment-5811650104",
-      "comment_created_at": "2026-09-24T09:37:53Z",
-      "comment_updated_at": "2026-09-24T09:37:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145928,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:41:32.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-145827",
-        "head_sha": "c90a198e243ab416f45600cb0de0f4e6915252a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69822:4340783699:2026-09-24T08:53:14Z:clawsweeper_auto_repair",
       "comment_id": "4340783699",
@@ -33427,6 +33380,39 @@
         "kind": "pull_request",
         "branch": "fix/wear-voice-labels",
         "head_sha": "d97fc70e92e93d5245fd9f17cdf6c21a8fe5ab19",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1497:5803345165:2026-09-24T15:29:20Z:clawsweeper_needs_human",
+      "comment_id": "5803345165",
+      "comment_version_key": "5803345165:2026-09-24T15:29:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1497#issuecomment-5803345165",
+      "comment_created_at": "2026-09-23T21:36:07Z",
+      "comment_updated_at": "2026-09-24T15:29:20Z",
+      "comment_body_sha256": "620c4a8f8bccfda276f5b669e2106ded0abe949bbd4691a6ac0335f7b8e07ae6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1497,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A 32 GB Spark with Local AI enabled and no explicit model choice can now receive no default recommendation, making a setup rerun terminal where main previously used generic capacity s... (sha=e124cf9b37dcb8ca33bbe70f19aed17925c0325f)",
+      "expected_head_sha": "e124cf9b37dcb8ca33bbe70f19aed17925c0325f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T15:30:55.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rtx-spark-recipes",
+        "head_sha": "e124cf9b37dcb8ca33bbe70f19aed17925c0325f",
         "cluster_id": null,
         "job_path": null
       }
