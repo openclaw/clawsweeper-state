@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138644",
+  "mode": "autonomous",
+  "run_id": "35945476831",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35945476831",
+  "head_sha": "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138644.md",
+  "published_at": "2026-09-24T02:36:51.540Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138644",
+  "canonical_pr": null,
+  "summary": "The supplied main SHA still has the reported compaction-to-watchdog gap. This read-only checkout has no installed dependencies, so I could not establish the required failing execution-path regression, change code, or validate a PR branch. No GitHub action was taken.",
+  "actions": [
+    {
+      "target": "#138644",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "A focused repair is warranted, subject to reproducing the failure through the plugin execution path before editing."
+    },
+    {
+      "target": "#40982",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Its remaining scope extends beyond the missing compaction-state handoff."
+    },
+    {
+      "target": "#137294",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "It has a different watchdog owner and failure path."
+    },
+    {
+      "target": "#125045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#139009",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Reference work only; no action on a closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138644",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138644",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies and a failing plugin-path regression first."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
