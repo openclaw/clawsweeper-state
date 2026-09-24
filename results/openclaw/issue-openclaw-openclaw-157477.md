@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157477"
-mode: "autonomous"
-run_id: "36041916997"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36041916997"
-head_sha: "f4322a8542135175b2a96f6a63fde8685ef14cf5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T19:09:37.141Z"
+mode: "plan"
+run_id: "36048599765"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36048599765"
+head_sha: "0dc9e1c0870cec9e277d745fb67270bbc4c6c4ea"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T19:34:32.885Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157477"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157477"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36041916997](https://github.com/openclaw/clawsweeper/actions/runs/36041916997)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36048599765](https://github.com/openclaw/clawsweeper/actions/runs/36048599765)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/157477
 
 ## Summary
 
-The bug remains source-verifiable at main c6c78100: Gateway reads expose scheduleErrorCount, but the closed Automations output schema rejects it. Implementation is blocked in this read-only checkout; no regression was run or patch created.
+The reported mismatch is present at the preflight main SHA. The scheduler writes state.scheduleErrorCount, the Gateway returns it, and the registered Automations tool validates get against a closed job-state schema that omits it. This is a plan only; runtime reproduction and validation remain required before a fix PR.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The bug remains source-verifiable at main c6c78100: Gateway reads expose schedul
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157477 | fix_needed | planned | canonical | A narrow read-schema correction is needed. Runtime reproduction and implementation remain outstanding. |
-| cluster:issue-openclaw-openclaw-157477 | build_fix_artifact | blocked |  | Implementation requires a writable, dependency-ready checkout. |
+| #157477 | fix_needed | planned | canonical | A narrow read-schema repair is warranted. The branch must first demonstrate the original failure through the registered tool with a Gateway read result. |
+| clawsweeper/issue-openclaw-openclaw-157477 | build_fix_artifact | planned |  | Add scheduleErrorCount to the read-only state schema, preserve the closed object and writable-patch boundary, then validate the registered tool and full-job siblings before opening or updating the one authorized PR. |
 
 ## Needs Human
 
