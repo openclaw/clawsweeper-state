@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:03:02.426Z",
+  "updated_at": "2026-09-24T05:03:58.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156873:5805245659:2026-09-24T00:29:32Z:re_review",
-      "comment_id": "5805245659",
-      "comment_version_key": "5805245659:2026-09-24T00:29:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156873#issuecomment-5805245659",
-      "comment_created_at": "2026-09-24T00:29:32Z",
-      "comment_updated_at": "2026-09-24T00:29:32Z",
-      "comment_body_sha256": "e00bd3455550f3a2ac9668cdf63f3764fa930a64bcae7fd0f92d771903942357",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156873,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T00:30:30.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-compat-node-bootstrap-20260924",
-        "head_sha": "3aace2adf94b85461724d38eaa50072ba2ac8517",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153600:5805244139:2026-09-24T00:29:22Z:re_review",
       "comment_id": "5805244139",
@@ -32662,6 +32615,39 @@
         "kind": "pull_request",
         "branch": "fix/exec-denial-reason",
         "head_sha": "34f2fb4ba23a9f41af12e7f8889b8d35a04ac791",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148092:5661355386:2026-09-24T05:02:56Z:clawsweeper_needs_human",
+      "comment_id": "5661355386",
+      "comment_version_key": "5661355386:2026-09-24T05:02:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148092#issuecomment-5661355386",
+      "comment_created_at": "2026-09-14T08:45:07Z",
+      "comment_updated_at": "2026-09-24T05:02:56Z",
+      "comment_body_sha256": "2260ba168b4f64bd0c6b698e2acf92c7e3dfed6562ea7a2a45ea6cd8bcc87e0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148092,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new home-path cases have no measured single-worker wall time or CI seconds recorded in the PR body, so their recurring test cost has not been checked against repository policy. (sha=209086ec83d114a4687c6b4578e3a85cf2991e9f)",
+      "expected_head_sha": "209086ec83d114a4687c6b4578e3a85cf2991e9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T05:03:58.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/home-relative-path-resolution-current-20260914",
+        "head_sha": "209086ec83d114a4687c6b4578e3a85cf2991e9f",
         "cluster_id": null,
         "job_path": null
       }
