@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:23:31.128Z",
+  "updated_at": "2026-09-24T12:23:37.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156547:5803542323:2026-09-23T21:50:59Z:re_review",
-      "comment_id": "5803542323",
-      "comment_version_key": "5803542323:2026-09-23T21:50:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156547#issuecomment-5803542323",
-      "comment_created_at": "2026-09-23T21:50:59Z",
-      "comment_updated_at": "2026-09-23T21:50:59Z",
-      "comment_body_sha256": "16ca27a9e205ed7ba46c9b3812b2687f6f83d274d487643cc024f14735d2db79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156547,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T07:02:54.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-lint-refusal-diagnostics",
-        "head_sha": "5dd54332e20fdb92a8621bd88a338470b0ae2e03",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131716:5451345226:2026-09-24T06:07:20Z:clawsweeper_needs_human",
       "comment_id": "5451345226",
@@ -33606,6 +33559,39 @@
         "kind": "pull_request",
         "branch": "fix/tooling-shim-cancellation-owner-20260924",
         "head_sha": "5c31c72e8e5300d4b53d97c69ebc597fe650f5e6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:280:5813986302:2026-09-24T12:21:56Z:clawsweeper_needs_human",
+      "comment_id": "5813986302",
+      "comment_version_key": "5813986302:2026-09-24T12:21:56Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/280#issuecomment-5813986302",
+      "comment_created_at": "2026-09-24T12:21:56Z",
+      "comment_updated_at": "2026-09-24T12:21:56Z",
+      "comment_body_sha256": "bb053a40681f405a82f05fd42c86f90ffe1f2574d4099190800902dbbd5f8c4b",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 280,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head macOS job fails while exercising native sandbox and Git boundaries after the toolchain update. The failing assertion is not available in the job metadata, so compatibil... (sha=15fb25e1a591fe2f3587707e4ec1747d2af629f5)",
+      "expected_head_sha": "15fb25e1a591fe2f3587707e4ec1747d2af629f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T12:23:37.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maintenance/round4-toolchains",
+        "head_sha": "15fb25e1a591fe2f3587707e4ec1747d2af629f5",
         "cluster_id": null,
         "job_path": null
       }
