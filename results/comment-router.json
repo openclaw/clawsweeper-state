@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:18:55.923Z",
+  "updated_at": "2026-09-24T05:19:54.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156771:5804739044:2026-09-23T23:36:59Z:re_review",
-      "comment_id": "5804739044",
-      "comment_version_key": "5804739044:2026-09-23T23:36:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156771#issuecomment-5804739044",
-      "comment_created_at": "2026-09-23T23:36:59Z",
-      "comment_updated_at": "2026-09-23T23:36:59Z",
-      "comment_body_sha256": "72ddcb4dcd5a1e1a8363c8b82dc21a475746df0cbc1c5d771f3e5c14522859eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156771,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T00:57:14.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/156765-code-mode-block-reason",
-        "head_sha": "7e7f3ecb29862efd114b14dea40d14740b5c10ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156650:5805348921:2026-09-24T00:39:32Z:re_review",
-      "comment_id": "5805348921",
-      "comment_version_key": "5805348921:2026-09-24T00:39:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156650#issuecomment-5805348921",
-      "comment_created_at": "2026-09-24T00:39:32Z",
-      "comment_updated_at": "2026-09-24T00:39:32Z",
-      "comment_body_sha256": "7c040b0b10d9ad1f6af91a10cdd6dee71fa30ae563188e2a8308fa7ae4cc1884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156650,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: worker-deadline regression now dispatches a real task to a real pool worker over ipc (warm worker + atomics.wait block), so the production deadline aborts a genuinely dispatched task. dispatch proof and attribution assertions run outside the fallback owner so a swallowed candidate assertion cannot fake them. full evidence updated in the pr body. new head 1672a490b3c",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T00:57:14.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-local-worker-timeout-attribution",
-        "head_sha": "1672a490b3cb0c9653521ba4afcda7df39f08fea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156865:5805393952:2026-09-24T00:43:55Z:re_review",
       "comment_id": "5805393952",
@@ -32513,6 +32419,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148966:5677880206:2026-09-24T05:18:16Z:clawsweeper_needs_human",
+      "comment_id": "5677880206",
+      "comment_version_key": "5677880206:2026-09-24T05:18:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148966#issuecomment-5677880206",
+      "comment_created_at": "2026-09-15T09:28:18Z",
+      "comment_updated_at": "2026-09-24T05:18:16Z",
+      "comment_body_sha256": "092500c539ebba524000610695c2c275f4810024ec1622c4b9eaf46f06f5e269",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148966,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A maintainer has not explicitly accepted this standalone cleanup as an exception to CONTRIBUTING.md’s refactor-only policy. (sha=9e0eaecb903c0830a7ba7781b1564afe0f73b8c4)",
+      "expected_head_sha": "9e0eaecb903c0830a7ba7781b1564afe0f73b8c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T05:19:54.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/tool-description-exclusions-20260915",
+        "head_sha": "9e0eaecb903c0830a7ba7781b1564afe0f73b8c4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148966:5680478601:2026-09-15T12:52:47Z:re_review",
+      "comment_id": "5680478601",
+      "comment_version_key": "5680478601:2026-09-15T12:52:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148966#issuecomment-5680478601",
+      "comment_created_at": "2026-09-15T12:52:47Z",
+      "comment_updated_at": "2026-09-15T12:52:47Z",
+      "comment_body_sha256": "06c9ac712ba66bc23f017a4f9624c05250481cfe7da1992e4e2ad387ea2b495c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148966,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T05:19:54.622Z",
+      "target": null
     }
   ]
 }
