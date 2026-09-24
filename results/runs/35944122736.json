@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "autonomous",
+  "run_id": "35944122736",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35944122736",
+  "head_sha": "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-24T02:41:28.199Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_pr": null,
+  "summary": "Current main still lacks the requested INFO diagnostic for unresolved Slack app mentions. The source path is clear, but this read-only checkout has no installed dependencies, so I could not add the required failing regression, implement the fix, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "A narrow diagnostic repair is supported by current source; runtime regression proof and implementation require a writable checkout with dependencies."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Its remaining reproduction and repair path are distinct."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the worker host's read-only filesystem."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
