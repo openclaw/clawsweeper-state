@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T05:21:02.802Z",
+  "updated_at": "2026-09-24T05:21:37.612Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155280:5805490666:2026-09-24T00:54:24Z:re_review",
-      "comment_id": "5805490666",
-      "comment_version_key": "5805490666:2026-09-24T00:54:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155280#issuecomment-5805490666",
-      "comment_created_at": "2026-09-24T00:54:24Z",
-      "comment_updated_at": "2026-09-24T00:54:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155280,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T00:57:14.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/claw-1027-plugins-categories",
-        "head_sha": "39b9abe380bb8ef2d110e778e8ad1ac2bc7abc78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90745:4634964020:2026-09-23T23:52:24Z:clawsweeper_needs_human",
       "comment_id": "4634964020",
@@ -32448,6 +32401,39 @@
         "kind": "pull_request",
         "branch": "fix/156956-attachment-read-stall",
         "head_sha": "0e49429224d56fa08fcb852c099a90d5d48ffbdc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156867:5805066010:2026-09-24T05:20:23Z:clawsweeper_needs_human",
+      "comment_id": "5805066010",
+      "comment_version_key": "5805066010:2026-09-24T05:20:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156867#issuecomment-5805066010",
+      "comment_created_at": "2026-09-24T00:11:03Z",
+      "comment_updated_at": "2026-09-24T05:20:23Z",
+      "comment_body_sha256": "04585ed6bb9c00d9f96a4276dbdd3a79db6eec57a4e3658f16614230d5d52fef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156867,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the enforced exact-head CI failure at the foreground compaction timing assertion through its owner without weakening the check or rerunning merely to obtain green. (sha=fbbc105ecb6659ab5fcd6d6e28607673286061c1)",
+      "expected_head_sha": "fbbc105ecb6659ab5fcd6d6e28607673286061c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T05:21:37.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l22-memory-owners-20260923",
+        "head_sha": "fbbc105ecb6659ab5fcd6d6e28607673286061c1",
         "cluster_id": null,
         "job_path": null
       }
