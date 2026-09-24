@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:04:51.652Z",
+  "updated_at": "2026-09-24T21:04:58.589Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148239:5813997731:2026-09-24T12:22:33Z:re_review",
-      "comment_id": "5813997731",
-      "comment_version_key": "5813997731:2026-09-24T12:22:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148239#issuecomment-5813997731",
-      "comment_created_at": "2026-09-24T12:22:33Z",
-      "comment_updated_at": "2026-09-24T12:22:33Z",
-      "comment_body_sha256": "f4c5f6bf634c322f3146d6d8f061fee73409b11537c51d50e6fe3b3f5aa6685c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148239,
-      "author": "colbertlee",
-      "author_id": 60634777,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T12:33:39.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/migrate-server-fetch-to-uvx",
-        "head_sha": "656d8ce5739aed5b8512be3d4a1cc07bfea23ff2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157271:5814041779:2026-09-24T12:24:48Z:re_review",
       "comment_id": "5814041779",
@@ -33516,6 +33469,39 @@
       "status": "skipped",
       "processed_at": "2026-09-24T21:04:51.652Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157446:5819138306:2026-09-24T21:03:35Z:clawsweeper_auto_repair",
+      "comment_id": "5819138306",
+      "comment_version_key": "5819138306:2026-09-24T21:03:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157446#issuecomment-5819138306",
+      "comment_created_at": "2026-09-24T17:42:40Z",
+      "comment_updated_at": "2026-09-24T21:03:35Z",
+      "comment_body_sha256": "c1a1574db675bc96959b348150ab6e4c62841fdeeddbcfd65f8ac0b148aa3641",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=eeb5bde429aa182bd824006fc1c5f405fcc7fd9b)",
+      "expected_head_sha": "eeb5bde429aa182bd824006fc1c5f405fcc7fd9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T21:04:58.589Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-runtime-option-patch-20260924",
+        "head_sha": "eeb5bde429aa182bd824006fc1c5f405fcc7fd9b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
