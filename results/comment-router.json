@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T14:12:52.244Z",
+  "updated_at": "2026-09-24T14:13:17.739Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157113:5809732231:2026-09-24T07:57:32Z:clawsweeper_auto_repair",
-      "comment_id": "5809732231",
-      "comment_version_key": "5809732231:2026-09-24T07:57:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157113#issuecomment-5809732231",
-      "comment_created_at": "2026-09-24T07:26:28Z",
-      "comment_updated_at": "2026-09-24T07:57:32Z",
-      "comment_body_sha256": "1ce0ea42e88651bfdc1ebfbe0f8dc01edfac555dfb4f44a5926cd9d8a0091e96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157113,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0c1d36500f46bc9a9a17418498532e703a2ba260)",
-      "expected_head_sha": "0c1d36500f46bc9a9a17418498532e703a2ba260",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T08:10:54.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-predispatch-auth-waits-on-validation-20260919",
-        "head_sha": "0c1d36500f46bc9a9a17418498532e703a2ba260",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157115:5809855700:2026-09-24T08:04:52Z:clawsweeper_needs_human",
       "comment_id": "5809855700",
@@ -33700,6 +33667,39 @@
       "status": "skipped",
       "processed_at": "2026-09-24T14:12:52.243Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138129:5538833455:2026-09-24T14:11:56Z:clawsweeper_needs_human",
+      "comment_id": "5538833455",
+      "comment_version_key": "5538833455:2026-09-24T14:11:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138129#issuecomment-5538833455",
+      "comment_created_at": "2026-09-04T09:59:33Z",
+      "comment_updated_at": "2026-09-24T14:11:56Z",
+      "comment_body_sha256": "7c7f191af1f59131cc6c76e0cefc1e87bcb8118c54f4bdc414d77a627854da27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: Earlier live traces show a memory write but their CLI-routing claim was withdrawn after the run was id...; Review finding: [P1] [P1] Carry the memory write target into CLI tool construction — src/auto-reply/reply/agent-runner-memory.ts:1683-1689 - [P2] [P2] Preserve the private transcr... (sha=10cef09a2430b0850b41c72fd99f8b6631754e9d)",
+      "expected_head_sha": "10cef09a2430b0850b41c72fd99f8b6631754e9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T14:13:17.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-flush-cli-backends",
+        "head_sha": "10cef09a2430b0850b41c72fd99f8b6631754e9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
