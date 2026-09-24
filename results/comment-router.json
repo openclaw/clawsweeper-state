@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T22:51:16.095Z",
+  "updated_at": "2026-09-24T23:02:11.730Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157270:5813965029:2026-09-24T14:23:52Z:clawsweeper_auto_repair",
-      "comment_id": "5813965029",
-      "comment_version_key": "5813965029:2026-09-24T14:23:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157270#issuecomment-5813965029",
-      "comment_created_at": "2026-09-24T12:20:50Z",
-      "comment_updated_at": "2026-09-24T14:23:52Z",
-      "comment_body_sha256": "2f245b204119263e3254590d615d3050609f2147dcc64accd68865b0e8811484",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157270,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c5fe3db329c708e1e3e687ef55074fcaa64716ba)",
-      "expected_head_sha": "c5fe3db329c708e1e3e687ef55074fcaa64716ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T14:25:11.813Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-usage-stale-rollup-and-completion-event-20260919",
-        "head_sha": "c5fe3db329c708e1e3e687ef55074fcaa64716ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157322:5816000787:2026-09-24T14:23:56Z:clawsweeper_needs_human",
       "comment_id": "5816000787",
@@ -33388,6 +33355,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157592:5823634456:2026-09-24T23:01:08Z:re_review",
+      "comment_id": "5823634456",
+      "comment_version_key": "5823634456:2026-09-24T23:01:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157592#issuecomment-5823634456",
+      "comment_created_at": "2026-09-24T23:01:08Z",
+      "comment_updated_at": "2026-09-24T23:01:08Z",
+      "comment_body_sha256": "389c02052ba8fe19daaf339a563b5a58a4449113c44fffd41f0d09d4e1bf24e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157592,
+      "author": "Kimiyu-186",
+      "author_id": 202845257,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T23:02:10.190Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remote-skills-shutdown-drain",
+        "head_sha": "6d6a02223b2067f9454492793726dd1e1c750df7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
