@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T21:59:02.182Z",
+  "updated_at": "2026-09-24T22:00:21.658Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157292:5814330354:2026-09-24T12:42:30Z:clawsweeper_needs_human",
-      "comment_id": "5814330354",
-      "comment_version_key": "5814330354:2026-09-24T12:42:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157292#issuecomment-5814330354",
-      "comment_created_at": "2026-09-24T12:42:30Z",
-      "comment_updated_at": "2026-09-24T12:42:30Z",
-      "comment_body_sha256": "41c050dd2db4b0eabb59d31d28db67d8350ae26f06dea6cc37cde98bd37c4ab2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157292,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed TUI suites have not been collected or executed, so their assertions and failure-path cleanup remain unverified after the patch. (sha=340fe2f895b47461359a33e9a72e4f4cf0e7e5e6)",
-      "expected_head_sha": "340fe2f895b47461359a33e9a72e4f4cf0e7e5e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T14:05:12.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/tui-regression-oracles-20260924",
-        "head_sha": "340fe2f895b47461359a33e9a72e4f4cf0e7e5e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157257:5814379845:2026-09-24T12:45:27Z:clawsweeper_needs_human",
       "comment_id": "5814379845",
@@ -33124,6 +33091,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157371:5822925744:2026-09-24T21:58:59Z:re_review",
+      "comment_id": "5822925744",
+      "comment_version_key": "5822925744:2026-09-24T21:58:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157371#issuecomment-5822925744",
+      "comment_created_at": "2026-09-24T21:58:59Z",
+      "comment_updated_at": "2026-09-24T21:58:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157371,
+      "author": "YangManBOBO",
+      "author_id": 156181593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T22:00:20.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-ambiguous-reply-duplicate",
+        "head_sha": "98695574f337523720af72c87e074700ab77d456",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
