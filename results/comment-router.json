@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T09:00:47.451Z",
+  "updated_at": "2026-09-24T09:03:05.339Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125905:5331817573:2026-09-24T04:00:17Z:clawsweeper_auto_repair",
-      "comment_id": "5331817573",
-      "comment_version_key": "5331817573:2026-09-24T04:00:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125905#issuecomment-5331817573",
-      "comment_created_at": "2026-08-18T17:34:38Z",
-      "comment_updated_at": "2026-09-24T04:00:17Z",
-      "comment_body_sha256": "19e0c12dfd8fc22d7557e937c1fa46f1fcafb8deec25f900cfecbacd35aa36ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125905,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=41482a67a5160132a38aafa14ad3855b7877c0f7)",
-      "expected_head_sha": "41482a67a5160132a38aafa14ad3855b7877c0f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T04:04:45.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-tail-metrics",
-        "head_sha": "41482a67a5160132a38aafa14ad3855b7877c0f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127775:5377847461:2026-09-24T03:55:48Z:clawsweeper_needs_human",
       "comment_id": "5377847461",
@@ -32667,6 +32634,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157112:5811124487:2026-09-24T09:02:02Z:re_review",
+      "comment_id": "5811124487",
+      "comment_version_key": "5811124487:2026-09-24T09:02:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157112#issuecomment-5811124487",
+      "comment_created_at": "2026-09-24T09:02:02Z",
+      "comment_updated_at": "2026-09-24T09:02:02Z",
+      "comment_body_sha256": "cde15438408676b813db51aeb1bc2eae482052d972f0f6ef46ee80a287aa1619",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157112,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T09:02:59.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-worktree-gc-fails-on-moved-head-20260919",
+        "head_sha": "4fe044f6f0210c06d169f258cef408ef14d5fd85",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
