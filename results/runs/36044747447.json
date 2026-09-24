@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157491",
+  "mode": "autonomous",
+  "run_id": "36044747447",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36044747447",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157491.md",
+  "published_at": "2026-09-24T19:37:25.860Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157491",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157491",
+  "canonical_pr": null,
+  "summary": "Current main (0603d46c) still hashes revision-only changes in successful progress_card receipts as distinct outcomes. A narrow fix PR is warranted. No code was changed or validation run in this read-only worker.",
+  "actions": [
+    {
+      "target": "#157491",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157491",
+      "candidate_fix": null,
+      "reason": "Identical card updates can produce distinct result hashes solely because the stored revision increases."
+    },
+    {
+      "target": "#120415",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#157491",
+      "candidate_fix": null,
+      "reason": "The reports share a loop symptom but require different fixes."
+    },
+    {
+      "target": "#89090",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#130210",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157491",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#157491",
+      "candidate_fix": null,
+      "reason": "A focused two-file repair can address the reported defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157491",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#157491",
+      "candidate_fix": null,
+      "reason": "Create or update the authorized implementation PR after the fix passes its gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
