@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:12:47.918Z",
+  "updated_at": "2026-09-24T07:13:24.449Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153299:5746547993:2026-09-24T02:15:50Z:clawsweeper_needs_human",
-      "comment_id": "5746547993",
-      "comment_version_key": "5746547993:2026-09-24T02:15:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153299#issuecomment-5746547993",
-      "comment_created_at": "2026-09-20T00:56:11Z",
-      "comment_updated_at": "2026-09-24T02:15:50Z",
-      "comment_body_sha256": "bde3149011b05da0a013327232ef907453315f4cc66c32c729883be9e5b3d765",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153299,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A configured policy makes an older strict-schema build reject configuration on downgrade, including an empty policy list; the documented revoke, drain and key-removal procedure has no... (sha=af640b6de9de6894c6f81acc53e35d43b371fe9b)",
-      "expected_head_sha": "af640b6de9de6894c6f81acc53e35d43b371fe9b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T02:16:55.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/talk-scoped-preauthorization-153092",
-        "head_sha": "af640b6de9de6894c6f81acc53e35d43b371fe9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3932:5806268601:2026-09-24T02:16:25Z:clawsweeper_needs_human",
       "comment_id": "5806268601",
@@ -32171,6 +32138,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156074:5809540108:2026-09-24T07:12:33Z:re_review",
+      "comment_id": "5809540108",
+      "comment_version_key": "5809540108:2026-09-24T07:12:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156074#issuecomment-5809540108",
+      "comment_created_at": "2026-09-24T07:12:33Z",
+      "comment_updated_at": "2026-09-24T07:12:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156074,
+      "author": "ayoakouh",
+      "author_id": 185819768,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T07:13:22.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/156051-control-ui-optimistic-bubble",
+        "head_sha": "ea405e219c26d93e855e68d6d45b806d9bfc9e97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
