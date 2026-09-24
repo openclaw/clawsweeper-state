@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T04:33:14.612Z",
+  "updated_at": "2026-09-24T04:34:15.543Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154175:5804583668:2026-09-23T23:21:59Z:re_review",
-      "comment_id": "5804583668",
-      "comment_version_key": "5804583668:2026-09-23T23:21:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154175#issuecomment-5804583668",
-      "comment_created_at": "2026-09-23T23:21:59Z",
-      "comment_updated_at": "2026-09-23T23:21:59Z",
-      "comment_body_sha256": "0194c6c6291ec676d5cb2cd9eab4e2b267aa2adaf88f80e795a5fccb5022fe0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154175,
-      "author": "Grynn",
-      "author_id": 212880,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T23:23:34.313Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/untyped-interrupt-restart",
-        "head_sha": "9c9a08f50c5c453c87e6655a40c9d61b62ea57ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156845:5804615074:2026-09-23T23:24:56Z:clawsweeper_needs_human",
       "comment_id": "5804615074",
@@ -32687,6 +32640,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157009:5807741346:2026-09-24T04:33:14Z:clawsweeper_needs_human",
+      "comment_id": "5807741346",
+      "comment_version_key": "5807741346:2026-09-24T04:33:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157009#issuecomment-5807741346",
+      "comment_created_at": "2026-09-24T04:33:14Z",
+      "comment_updated_at": "2026-09-24T04:33:14Z",
+      "comment_body_sha256": "2230018ffbbf24117c888dc1abd55a6cefbbad726fc670a150942cbc54ea9909",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157009,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported single focused pass does not yet meet the repository's flake-triage proof bar; without repeated standalone, original-shard, and sibling runs, hosted startup contention co... (sha=9f99509974f66945ef06f276fc07660e37d83e44)",
+      "expected_head_sha": "9f99509974f66945ef06f276fc07660e37d83e44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T04:34:15.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/maintenance-restart-fixture-20260923",
+        "head_sha": "9f99509974f66945ef06f276fc07660e37d83e44",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
