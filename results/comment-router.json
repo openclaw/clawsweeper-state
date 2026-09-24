@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:15:26.439Z",
+  "updated_at": "2026-09-24T07:15:32.240Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156620:5806272794:2026-09-24T02:16:55Z:re_review",
-      "comment_id": "5806272794",
-      "comment_version_key": "5806272794:2026-09-24T02:16:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156620#issuecomment-5806272794",
-      "comment_created_at": "2026-09-24T02:16:55Z",
-      "comment_updated_at": "2026-09-24T02:16:55Z",
-      "comment_body_sha256": "1513ae5dccda6fa777e4eb145dc7b6b614278dcdf2fb4526b8d7699c1b0c0ea6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156620,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T02:17:50.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/testbox-scheduler-forwarding",
-        "head_sha": "4f3bcd7f707e13000f75ac858d26fb2c5d35eb27",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145537:5642946903:2026-09-24T02:17:05Z:clawsweeper_needs_human",
       "comment_id": "5642946903",
@@ -32199,6 +32152,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156941:5806704051:2026-09-24T07:14:34Z:clawsweeper_needs_human",
+      "comment_id": "5806704051",
+      "comment_version_key": "5806704051:2026-09-24T07:14:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5806704051",
+      "comment_created_at": "2026-09-24T03:03:57Z",
+      "comment_updated_at": "2026-09-24T07:14:34Z",
+      "comment_body_sha256": "a5815ce5770ef0c70dd0b3b1ccbb01a1a7dd7129cd9888e8f6f197e7346cd7cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156941,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured GitHub state reports merge conflicts. Resolve them and review the resulting authority and session-state paths against current main before merge. (sha=8671700fbda4de7e0f0bf440f3d3931948177eaf)",
+      "expected_head_sha": "8671700fbda4de7e0f0bf440f3d3931948177eaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T07:15:32.240Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
+        "head_sha": "8671700fbda4de7e0f0bf440f3d3931948177eaf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
