@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:15:42.070Z",
+  "updated_at": "2026-09-24T12:16:16.141Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157086:5809029584:2026-09-24T06:34:41Z:clawsweeper_needs_human",
-      "comment_id": "5809029584",
-      "comment_version_key": "5809029584:2026-09-24T06:34:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157086#issuecomment-5809029584",
-      "comment_created_at": "2026-09-24T06:34:41Z",
-      "comment_updated_at": "2026-09-24T06:34:41Z",
-      "comment_body_sha256": "19e8a60fc3c1bd8a9db06bab4e06691ff9fee8c743b7591e91f2fbae819f030f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157086,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed test calls production Doctor lint and parses its output with the released-parser fixture, but replaces the security detector with a... (sha=865110afdaab083bb71d01009f72eebba6e6ca0b)",
-      "expected_head_sha": "865110afdaab083bb71d01009f72eebba6e6ca0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T06:35:35.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-security-update-gate-156394",
-        "head_sha": "865110afdaab083bb71d01009f72eebba6e6ca0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157085:5809031004:2026-09-24T06:34:49Z:clawsweeper_needs_human",
       "comment_id": "5809031004",
@@ -33543,6 +33510,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157239:5813859141:2026-09-24T12:14:28Z:re_review",
+      "comment_id": "5813859141",
+      "comment_version_key": "5813859141:2026-09-24T12:14:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157239#issuecomment-5813859141",
+      "comment_created_at": "2026-09-24T12:14:28Z",
+      "comment_updated_at": "2026-09-24T12:14:28Z",
+      "comment_body_sha256": "01cf0ccd5ec9f5c95e1e867249f9c31e798bace9496c0f5a73fdc8bba1920713",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157239,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T12:16:15.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-priority-restore-window",
+        "head_sha": "5e3abe8c0bbd483689abc068918fa5ad38f54d41",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
