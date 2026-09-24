@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T09:21:00.912Z",
+  "updated_at": "2026-09-24T09:21:03.944Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156988:5807274434:2026-09-24T03:53:49Z:clawsweeper_needs_human",
-      "comment_id": "5807274434",
-      "comment_version_key": "5807274434:2026-09-24T03:53:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156988#issuecomment-5807274434",
-      "comment_created_at": "2026-09-24T03:53:49Z",
-      "comment_updated_at": "2026-09-24T03:53:49Z",
-      "comment_body_sha256": "bbffdb06b38fdf75521102c72bd16c06fa95db29c36aa498e9fe3c098845535a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156988,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The affected test suites and test collection have not run, so the revised assertions and fixture types lack execution evidence. (sha=c86c14d2bb56b1720dc0823aefe490d6e9fb5c8c)",
-      "expected_head_sha": "c86c14d2bb56b1720dc0823aefe490d6e9fb5c8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T04:04:45.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-transport-fixture-oracles-20260924",
-        "head_sha": "c86c14d2bb56b1720dc0823aefe490d6e9fb5c8c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156989:5807282561:2026-09-24T03:54:32Z:clawsweeper_auto_repair",
       "comment_id": "5807282561",
@@ -32741,6 +32708,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156535:5811393009:2026-09-24T09:20:00Z:re_review",
+      "comment_id": "5811393009",
+      "comment_version_key": "5811393009:2026-09-24T09:20:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156535#issuecomment-5811393009",
+      "comment_created_at": "2026-09-24T09:20:00Z",
+      "comment_updated_at": "2026-09-24T09:20:00Z",
+      "comment_body_sha256": "2fdecd8d7eb7d2d3459017e9613b2069be35e06a8c1c22110119b9b03791cd15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156535,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T09:21:02.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/catalog-v2-consumer-20260923",
+        "head_sha": "1d184521fa4be198b5ab42883e3660f292d384ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
