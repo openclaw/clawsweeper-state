@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:32:17.715Z",
+  "updated_at": "2026-09-24T15:34:00.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156812:5811509463:2026-09-24T09:28:04Z:re_review",
-      "comment_id": "5811509463",
-      "comment_version_key": "5811509463:2026-09-24T09:28:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156812#issuecomment-5811509463",
-      "comment_created_at": "2026-09-24T09:28:04Z",
-      "comment_updated_at": "2026-09-24T09:28:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156812,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:41:32.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/release-speedup",
-        "head_sha": "5f481dd254e6c930e127d6ce1b8ff3a11cb61013",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145928:5811650104:2026-09-24T09:37:53Z:re_review",
       "comment_id": "5811650104",
@@ -33444,6 +33397,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157259:5816975098:2026-09-24T15:21:31Z:maintainer_approve_automerge",
+      "comment_id": "5816975098",
+      "comment_version_key": "5816975098:2026-09-24T15:21:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157259#issuecomment-5816975098",
+      "comment_created_at": "2026-09-24T15:21:31Z",
+      "comment_updated_at": "2026-09-24T15:21:31Z",
+      "comment_body_sha256": "719ae401a5107ed0ec125e52c8919babe29960f358a93ab3d6e9220e972f5e56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157259,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": "f5bb75425f7816f0d3339ba528e160ca8c26ef7f",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T15:34:00.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-adoption-active-work-20260924",
+        "head_sha": "f5bb75425f7816f0d3339ba528e160ca8c26ef7f",
+        "cluster_id": "automerge-openclaw-openclaw-157259",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-157259.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
