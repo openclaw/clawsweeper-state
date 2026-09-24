@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-128301",
+  "mode": "autonomous",
+  "run_id": "35940730357",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35940730357",
+  "head_sha": "4233d61c38cd30e6c2fdfbd8ac140f7fba2bcc9e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-128301.md",
+  "published_at": "2026-09-24T01:15:07.955Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/128301",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported diagnostic gap. The Slack listener returns before INFO logging when conversation type is unresolved, and the real context converts a failed conversations.info lookup to empty metadata. The checkout is read only and dependencies are absent, so the required failing regression, patch, local validation, and PR could not be completed.",
+  "actions": [
+    {
+      "target": "#128301",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "A production-boundary regression and narrow diagnostic fix are needed."
+    },
+    {
+      "target": "#112259",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It does not share the Slack conversation-type diagnostic root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The fix is limited to diagnostic visibility; paired-message delivery is unproven."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-128301",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#128301",
+      "candidate_fix": null,
+      "reason": "The required code change and local validation cannot run in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
