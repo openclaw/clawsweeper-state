@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:00:38.187Z",
+  "updated_at": "2026-09-24T06:00:46.509Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:23:5743974133:2026-09-24T00:23:45Z:clawsweeper_needs_human",
-      "comment_id": "5743974133",
-      "comment_version_key": "5743974133:2026-09-24T00:23:45Z",
-      "comment_url": "https://github.com/openclaw/telemetry/pull/23#issuecomment-5743974133",
-      "comment_created_at": "2026-09-19T17:36:02Z",
-      "comment_updated_at": "2026-09-24T00:23:45Z",
-      "comment_body_sha256": "428880af4f5f2eebb429ce50e3699869cb9fdf782fdb32961ee9db69c0b6b179",
-      "repo": "openclaw/telemetry",
-      "issue_number": 23,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The default deployment has no outcome dataset, so HEAD will return 503 and a released companion client will suppress outcome reports until the separate dataset is authorized, deployed... (sha=d7c2aac798816662e6144e514b873aa7916ce504)",
-      "expected_head_sha": "d7c2aac798816662e6144e514b873aa7916ce504",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T01:22:03.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/update-outcome-receiver-20260919",
-        "head_sha": "d7c2aac798816662e6144e514b873aa7916ce504",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1486:5787866866:2026-09-24T01:16:59Z:clawsweeper_needs_human",
       "comment_id": "5787866866",
@@ -32311,6 +32278,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156940:5808588610:2026-09-24T05:59:40Z:re_review",
+      "comment_id": "5808588610",
+      "comment_version_key": "5808588610:2026-09-24T05:59:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156940#issuecomment-5808588610",
+      "comment_created_at": "2026-09-24T05:59:40Z",
+      "comment_updated_at": "2026-09-24T05:59:40Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156940,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T06:00:43.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-native-ownership",
+        "head_sha": "e42e3b6b949c55bc6926aeba2d028ce8ed27fc71",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
