@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120616"
 mode: "plan"
-run_id: "36067918520"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36067918520"
+run_id: "36064447459"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36064447459"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-24T22:38:04.320Z"
+published_at: "2026-09-24T22:56:30.784Z"
 canonical: "#120616"
 canonical_issue: "#120616"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36067918520](https://github.com/openclaw/clawsweeper/actions/runs/36067918520)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36064447459](https://github.com/openclaw/clawsweeper/actions/runs/36064447459)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: #120616
 
 ## Summary
 
-Current main still appears to ignore dotted and quoted-dotted job.payload update arguments. Plan a narrow fix, gated on a failing regression through the agent cron tool before editing. This read-only checkout has no installed dependencies, so runtime reproduction and validation remain pending.
+Current main still has a plausible dotted-field recovery gap in the model-facing cron update path. Reproduce it through the agent cron tool before editing, then prepare one narrow fix PR. No code changes or tests were run in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main still appears to ignore dotted and quoted-dotted job.payload update
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120616 | fix_needed | planned | canonical | The current model-facing job.* update path needs dotted-key recovery; the issue must remain open. |
-| #120623 | keep_closed | skipped | superseded | Retain the contributor's investigation as credited source context; no closure action is valid. |
-| issue-openclaw-openclaw-120616 | build_fix_artifact | planned |  | After the failing regression is demonstrated, prepare one narrow PR on clawsweeper/issue-openclaw-openclaw-120616. |
+| #120616 | fix_needed | planned | canonical | The existing job.* update contract needs a narrow recovery fix. Keep the issue open. |
+| #120623 | keep_closed | skipped | related | Use the contributor's investigation as credited context; no closure or merge action applies. |
 
 ## Needs Human
 
