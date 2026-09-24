@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156985"
-mode: "autonomous"
-run_id: "35953333273"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35953333273"
+mode: "plan"
+run_id: "35956413082"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35956413082"
 head_sha: "5ae902bf0a0f31d7c36618352b48621f39b40786"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T03:58:42.953Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T04:40:34.798Z"
 canonical: "https://github.com/openclaw/openclaw/issues/156985"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/156985"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35953333273](https://github.com/openclaw/clawsweeper/actions/runs/35953333273)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35956413082](https://github.com/openclaw/clawsweeper/actions/runs/35956413082)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/156985
 
 ## Summary
 
-Current main still mounts an uninitialized emptyDir directly at /tmp. The reported OpenShift failure is credible, but this read-only worker could not reproduce the fs-safe failure, edit the manifest, or validate a PR branch. A narrow fix plan is ready for an executor with a writable checkout.
+Current main still mounts an uninitialized emptyDir directly at /tmp, matching the reported failure path. Reproduce fs-safe admission on an affected image before implementing the narrow manifest, regression-test, and documentation fix.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Current main still mounts an uninitialized emptyDir directly at /tmp. The report
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156985 | fix_needed | planned | canonical | The deployment recipe still needs a temporary-volume compatibility fix. Keep the issue open. |
-| cluster:issue-openclaw-openclaw-156985 | build_fix_artifact | planned |  | Plan an owned mode-1777 directory on tmp-volume, mount that directory at /tmp, and prove real fs-safe workspace create/write/read/cleanup on an affected image. |
-| cluster:issue-openclaw-openclaw-156985 | open_fix_pr | blocked |  | The job requires reproduction and local validation before opening the implementation PR; this worker cannot perform those steps. |
+| https://github.com/openclaw/openclaw/issues/156985 | fix_needed | planned | canonical | The reported behavior is a deployment compatibility bug. Runtime reproduction on an affected image remains the first implementation gate. |
 
 ## Needs Human
 
