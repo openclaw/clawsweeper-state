@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157039"
-mode: "autonomous"
-run_id: "35959099862"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35959099862"
+mode: "plan"
+run_id: "35962138237"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35962138237"
 head_sha: "7443df924f1b1209b9c325985170de3a36ed4e4e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-24T05:38:40.773Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-24T05:59:02.599Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157039"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157039"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35959099862](https://github.com/openclaw/clawsweeper/actions/runs/35959099862)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35962138237](https://github.com/openclaw/clawsweeper/actions/runs/35962138237)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/157039
 
 ## Summary
 
-Current main still adds properties: {} to Tool Search’s nested free-form args schema. The reported Ollama response behavior has not been reproduced through an OpenClaw request. The checkout is read-only and has no installed dependencies, so the regression, patch, and validation remain blocked on an execution-capable worker.
+Plan a narrow native Ollama schema fix. The checkout matches the preflight main SHA, and source inspection confirms the reported schema path. A failing request-boundary regression and returned-argument proof are still required before implementation or a PR. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Current main still adds properties: {} to Tool Search’s nested free-form args 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157039 | fix_needed | planned | canonical | A narrow provider-owned regression remains plausible and needs boundary reproduction before editing. |
-| #143180 | keep_related | planned | related | The reports share Tool Search symptoms but have distinct demonstrated paths. |
-| #143729 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-157039 | build_fix_artifact | blocked |  | Resume in a writable, dependency-ready checkout; reproduce the request boundary before applying the planned fix. |
+| https://github.com/openclaw/openclaw/issues/157039 | fix_needed | planned | canonical | The reported provider-owned defect has no open fix PR in the hydrated cluster. Keep the issue open while validating and preparing the fix. |
+| https://github.com/openclaw/openclaw/issues/143180 | keep_related | planned | related | The available evidence does not establish the same root cause or justify closing this report. |
+| https://github.com/openclaw/openclaw/pull/143729 | keep_closed | skipped | related | Historical context only; no action on the closed PR. |
 
 ## Needs Human
 
