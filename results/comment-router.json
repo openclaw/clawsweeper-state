@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T00:23:05.581Z",
+  "updated_at": "2026-09-24T00:23:45.357Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127099:5367736435:2026-09-23T15:11:27Z:clawsweeper_auto_repair",
-      "comment_id": "5367736435",
-      "comment_version_key": "5367736435:2026-09-23T15:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127099#issuecomment-5367736435",
-      "comment_created_at": "2026-08-21T08:53:16Z",
-      "comment_updated_at": "2026-09-23T15:11:27Z",
-      "comment_body_sha256": "60824c32072cf7cb5127f19d987c78c9e80ff16f239e3853616119e57bdf5e91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127099,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=533a9433f2008a6e7edf3ca6c3ac5a7b0c223789)",
-      "expected_head_sha": "533a9433f2008a6e7edf3ca6c3ac5a7b0c223789",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-23T16:55:50.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/docker-sandboxes-install",
-        "head_sha": "ec1e7db1aadb7443b9056f92ede2c9b7e8db89f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130393:5431244544:2026-09-23T15:25:09Z:clawsweeper_needs_human",
       "comment_id": "5431244544",
@@ -33605,6 +33572,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1481:5787872933:2026-09-23T23:56:24Z:clawsweeper_needs_human",
+      "comment_id": "5787872933",
+      "comment_version_key": "5787872933:2026-09-23T23:56:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1481#issuecomment-5787872933",
+      "comment_created_at": "2026-09-23T02:25:06Z",
+      "comment_updated_at": "2026-09-23T23:56:24Z",
+      "comment_body_sha256": "657508a73d9d604e22574d7ad042b3da5ab6147719a7f1f42a5429edc5b38649",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed cleanup and settings loader are exercised in temporary-directory tests, but the PR shows no current...; Review finding: [P1] Provide a safe recovery path for URL-less legacy profiles — src/OpenClaw.Tray.WinUI/Services/SettingsManager.cs:404-407 - [high] Prove retained identity canno... (sha=af414dadc24152d81ae26b309035d6a69452863b)",
+      "expected_head_sha": "af414dadc24152d81ae26b309035d6a69452863b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T00:23:45.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f015-drop-leftover-gateway-tokens",
+        "head_sha": "af414dadc24152d81ae26b309035d6a69452863b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
