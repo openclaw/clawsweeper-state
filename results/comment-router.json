@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T07:13:38.398Z",
+  "updated_at": "2026-09-24T07:15:26.439Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156812:5804630226:2026-09-24T02:16:27Z:clawsweeper_needs_human",
-      "comment_id": "5804630226",
-      "comment_version_key": "5804630226:2026-09-24T02:16:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156812#issuecomment-5804630226",
-      "comment_created_at": "2026-09-23T23:26:12Z",
-      "comment_updated_at": "2026-09-24T02:16:27Z",
-      "comment_body_sha256": "009009af76d7e10f41b5c841df959041f5be1ed4df11d3c2cdf5d847ee1f2f9f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156812,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: local CLI and GitHub-fixture checks cover manifest resolution, but no hosted publisher trace shows an allowed w...; Review finding: [P1] Keep a revoked sealed waiver revoked at the publication gate — scripts/lib/release-publish-gates.mts:53-57 - [P2] Correct the remaining SDK acknowledgement ru... (sha=8e103a6577e66b676195f61980eae3c8b6653d58)",
-      "expected_head_sha": "8e103a6577e66b676195f61980eae3c8b6653d58",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T02:17:27.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/release-speedup",
-        "head_sha": "8e103a6577e66b676195f61980eae3c8b6653d58",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156620:5806272794:2026-09-24T02:16:55Z:re_review",
       "comment_id": "5806272794",
@@ -32185,6 +32152,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157024:5809557032:2026-09-24T07:13:44Z:re_review",
+      "comment_id": "5809557032",
+      "comment_version_key": "5809557032:2026-09-24T07:13:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157024#issuecomment-5809557032",
+      "comment_created_at": "2026-09-24T07:13:44Z",
+      "comment_updated_at": "2026-09-24T07:13:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157024,
+      "author": "Olli0103",
+      "author_id": 51629451,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-24T07:15:24.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-model-reference-published-catalog",
+        "head_sha": "45221d9da11926c0c4f01b09d4188c3860456a14",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
