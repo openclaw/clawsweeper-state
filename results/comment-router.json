@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T15:29:39.832Z",
+  "updated_at": "2026-09-24T15:29:49.145Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157181:5811623563:2026-09-24T09:36:05Z:clawsweeper_auto_repair",
-      "comment_id": "5811623563",
-      "comment_version_key": "5811623563:2026-09-24T09:36:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157181#issuecomment-5811623563",
-      "comment_created_at": "2026-09-24T09:36:05Z",
-      "comment_updated_at": "2026-09-24T09:36:05Z",
-      "comment_body_sha256": "dfe576f3d3e626c51457c6282c5196744d6682d34ba2f1dee6e4e5e0235fe18b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157181,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c6b47e7d08af267ed1a7841b19a5b5f43ba2167c)",
-      "expected_head_sha": "c6b47e7d08af267ed1a7841b19a5b5f43ba2167c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T09:37:24.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/sessions-others-membership-none",
-        "head_sha": "c6b47e7d08af267ed1a7841b19a5b5f43ba2167c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:63:5811634574:2026-09-24T09:36:47Z:clawsweeper_needs_human",
       "comment_id": "5811634574",
@@ -33444,6 +33411,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156996:5807451856:2026-09-24T15:28:44Z:clawsweeper_needs_human",
+      "comment_id": "5807451856",
+      "comment_version_key": "5807451856:2026-09-24T15:28:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156996#issuecomment-5807451856",
+      "comment_created_at": "2026-09-24T04:07:57Z",
+      "comment_updated_at": "2026-09-24T15:28:44Z",
+      "comment_body_sha256": "688c5a0c559af7fdb1530ca3aded2ae24dc340d8a8ab98b15afe7e50961b6ff4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156996,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The captured PR body links an isolated systemd before/after update showing the repaired Git path repla...; Review finding: [P1] Fence other profiles before rebuilding shared runtime — scripts/run-node.mts:1364-1373 - [P1] Keep a safe first-update entrypoint reachable — scripts/run-node... (sha=48e5192d218d8d9f90382126ea28ea75f415d10c)",
+      "expected_head_sha": "48e5192d218d8d9f90382126ea28ea75f415d10c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T15:29:49.145Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/git-update-already-current-stale-dist",
+        "head_sha": "48e5192d218d8d9f90382126ea28ea75f415d10c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
