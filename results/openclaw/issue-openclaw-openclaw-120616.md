@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120616"
 mode: "autonomous"
-run_id: "36056208197"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36056208197"
+run_id: "36063221888"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36063221888"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-24T21:58:42.920Z"
+published_at: "2026-09-24T22:26:55.133Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120616"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120616"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36056208197](https://github.com/openclaw/clawsweeper/actions/runs/36056208197)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36063221888](https://github.com/openclaw/clawsweeper/actions/runs/36063221888)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/120616
 
 ## Summary
 
-Current main still drops dotted cron update fields during flat-parameter recovery. Implementation is blocked: this checkout is read-only and has no installed dependencies, so the required failing regression, code change, and validation could not run. No GitHub action was taken.
+Current main still skips dotted cron update fields in source inspection. This read-only checkout has no installed dependencies, so the required failing agent-tool regression, code change, and validation could not be completed. A narrow fix path is specified below.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main still drops dotted cron update fields during flat-parameter recover
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120616 | fix_needed | planned | canonical | The narrow bug remains source-reproducible; execution proof is pending. |
-| #120623 | keep_closed | skipped | superseded | Historical source work; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-120616 | build_fix_artifact | blocked |  | A writable checkout with dependencies is required to reproduce through the agent cron tool before editing, then validate the fix. |
+| #120616 | fix_needed | planned | canonical | Repair the current model-facing job.* update path. |
+| #120623 | keep_closed | skipped | superseded | Historical source work only. |
+| cluster:issue-openclaw-openclaw-120616 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and a failing agent cron tool regression first. |
 
 ## Needs Human
 
