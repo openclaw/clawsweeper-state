@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T16:04:20.637Z",
+  "updated_at": "2026-09-24T16:04:27.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146847:5811751708:2026-09-24T09:45:28Z:re_review",
-      "comment_id": "5811751708",
-      "comment_version_key": "5811751708:2026-09-24T09:45:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146847#issuecomment-5811751708",
-      "comment_created_at": "2026-09-24T09:45:28Z",
-      "comment_updated_at": "2026-09-24T09:45:28Z",
-      "comment_body_sha256": "caa2df8c34f6a8efda086f46a67df7a99ec5dd5db9901867225bb85d198f85c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146847,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T09:46:35.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-plugin-ask-user-inbound",
-        "head_sha": "794612811450942def984c7a83aa7a8dc1df6139",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:190:5811759946:2026-09-24T09:46:00Z:clawsweeper_auto_repair",
       "comment_id": "5811759946",
@@ -33467,6 +33420,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/sp1-pr-tail",
         "head_sha": "be981fe228b42ff6bb5144ed56357f1a114c9866",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155300:5771891877:2026-09-24T16:00:52Z:clawsweeper_needs_human",
+      "comment_id": "5771891877",
+      "comment_version_key": "5771891877:2026-09-24T16:00:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155300#issuecomment-5771891877",
+      "comment_created_at": "2026-09-22T05:59:57Z",
+      "comment_updated_at": "2026-09-24T16:00:52Z",
+      "comment_body_sha256": "9fd668aaf74a1904229600fc2250bc8652b67653985e4c283a8c71e4dd7250a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Gateway owner has not accepted the source-only same-object exception to the existing broad session-row refresh rule; the contributor-authored policy edit does not establish that d... (sha=f5ff36a38b906d698338b258277fd54e31164382)",
+      "expected_head_sha": "f5ff36a38b906d698338b258277fd54e31164382",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T16:04:27.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-projection-config-republish",
+        "head_sha": "f5ff36a38b906d698338b258277fd54e31164382",
         "cluster_id": null,
         "job_path": null
       }
