@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-24T16:24:42.318Z",
+  "updated_at": "2026-09-24T16:24:43.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-24T10:02:08Z:clawsweeper_needs_human",
-      "comment_id": "5567489931",
-      "comment_version_key": "5567489931:2026-09-24T10:02:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
-      "comment_created_at": "2026-09-07T08:12:30Z",
-      "comment_updated_at": "2026-09-24T10:02:08Z",
-      "comment_body_sha256": "40c3d0f9cfe71020bdd831866ed41736891f77ad3f25d88f1cc7b2ec64139dd6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve distinguishable skill names in audit records (P2)** - Distinct valid names such as Daily Brief and Daily-Brief become the same stored name. The audit record can therefore answer “which skill ran” incorr...; Review finding: [P2] Preserve distinguishable skill names in audit records — src/skills/runtime-skill-selection.ts:33-35 - [P2] Replace the stale upgrade claim with schema-18 proo... (sha=38d3157e07b01680f5a8e33e38289d92fc15628e)",
-      "expected_head_sha": "38d3157e07b01680f5a8e33e38289d92fc15628e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T10:11:41.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "38d3157e07b01680f5a8e33e38289d92fc15628e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5570646456:2026-09-07T12:29:21Z:re_review",
       "comment_id": "5570646456",
@@ -33386,6 +33353,39 @@
       "status": "skipped",
       "processed_at": "2026-09-24T16:24:42.318Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157349:5816876232:2026-09-24T16:19:54Z:clawsweeper_needs_human",
+      "comment_id": "5816876232",
+      "comment_version_key": "5816876232:2026-09-24T16:19:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157349#issuecomment-5816876232",
+      "comment_created_at": "2026-09-24T15:15:41Z",
+      "comment_updated_at": "2026-09-24T16:19:54Z",
+      "comment_body_sha256": "893b07f51a20c3f54f89a396d9a6f7639c980d921185ca94794bce210e889cd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR body reports a real Test Server DM receiving one final answer after three injected 429s, and an...; Review finding: [P1] Recheck the flood gate inside the group request queue — extensions/telegram/src/account-throttler.ts:413-416 - [medium] Revalidate group writer before queued... (sha=ae2ab2441c47b63f138a1d10b42ddfc88acb4e60)",
+      "expected_head_sha": "ae2ab2441c47b63f138a1d10b42ddfc88acb4e60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T16:24:43.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-429-backoff",
+        "head_sha": "ae2ab2441c47b63f138a1d10b42ddfc88acb4e60",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
