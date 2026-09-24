@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:15:05.309Z",
+  "updated_at": "2026-09-24T06:16:58.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156182:5805777354:2026-09-24T01:24:02Z:re_review",
-      "comment_id": "5805777354",
-      "comment_version_key": "5805777354:2026-09-24T01:24:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156182#issuecomment-5805777354",
-      "comment_created_at": "2026-09-24T01:24:02Z",
-      "comment_updated_at": "2026-09-24T01:24:02Z",
-      "comment_body_sha256": "c1d3c63ab8b218a30c115ea95258ced8ec0b78cdba128a559b21677cde4ef996",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156182,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T02:04:03.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-output-parity",
-        "head_sha": "69b99db14f9eaa27a49efd84a5ff1d55a77bfeaa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156876:5805823738:2026-09-24T01:29:12Z:re_review",
       "comment_id": "5805823738",
@@ -32256,6 +32209,39 @@
         "kind": "pull_request",
         "branch": "freeqaz-openai/ci-transform-cache-20260922",
         "head_sha": "fcc6e6cc4a8dfb615a2253dbf8cb78a8932eeb21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157075:5808794737:2026-09-24T06:16:01Z:clawsweeper_auto_repair",
+      "comment_id": "5808794737",
+      "comment_version_key": "5808794737:2026-09-24T06:16:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157075#issuecomment-5808794737",
+      "comment_created_at": "2026-09-24T06:16:01Z",
+      "comment_updated_at": "2026-09-24T06:16:01Z",
+      "comment_body_sha256": "d7f33c34135aa1a180a7cbb55773a2e690bbc4652942f84648d682ccad31a5fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=67d7327cf5a416c12e2dcb58fc841daf1739e84a)",
+      "expected_head_sha": "67d7327cf5a416c12e2dcb58fc841daf1739e84a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T06:16:58.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-boot-warning-noise-20260919",
+        "head_sha": "67d7327cf5a416c12e2dcb58fc841daf1739e84a",
         "cluster_id": null,
         "job_path": null
       }
