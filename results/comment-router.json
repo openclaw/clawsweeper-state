@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-24T04:52:39.276Z",
+  "updated_at": "2026-09-24T04:51:34.928Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1472:5786942397:2026-09-23T23:35:10Z:clawsweeper_auto_repair",
+      "comment_id": "5786942397",
+      "comment_version_key": "5786942397:2026-09-23T23:35:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1472#issuecomment-5786942397",
+      "comment_created_at": "2026-09-23T00:35:46Z",
+      "comment_updated_at": "2026-09-23T23:35:10Z",
+      "comment_body_sha256": "eecf934c48d6e66203a8586b7b0a31416b1218e03d21ca5afae9432eebd681fd",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1472,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d5529dc15b42909d8b011df971a50a1b8e9a48b3)",
+      "expected_head_sha": "d5529dc15b42909d8b011df971a50a1b8e9a48b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-23T23:36:40.451Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/operator-rpc-before-hello-1418",
+        "head_sha": "d5529dc15b42909d8b011df971a50a1b8e9a48b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1489:5787868599:2026-09-23T21:30:51Z:clawsweeper_needs_human",
       "comment_id": "5787868599",
@@ -32710,39 +32743,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156867:5805066010:2026-09-24T04:51:25Z:clawsweeper_needs_human",
-      "comment_id": "5805066010",
-      "comment_version_key": "5805066010:2026-09-24T04:51:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156867#issuecomment-5805066010",
-      "comment_created_at": "2026-09-24T00:11:03Z",
-      "comment_updated_at": "2026-09-24T04:51:25Z",
-      "comment_body_sha256": "a8c33d3b99f69759f65d89c250c62ae01d6f18b974b9edfe6e21174c9a1f428a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156867,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Doctor and memory lifecycle paths still lack a successful published v2026.9.6 updater × exact-candidate run with retained state, activation, Doctor, and rollback; the docu... (sha=fbbc105ecb6659ab5fcd6d6e28607673286061c1)",
-      "expected_head_sha": "fbbc105ecb6659ab5fcd6d6e28607673286061c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T04:52:39.276Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l22-memory-owners-20260923",
-        "head_sha": "fbbc105ecb6659ab5fcd6d6e28607673286061c1",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
