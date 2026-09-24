@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T01:16:54.289Z",
+  "updated_at": "2026-09-24T01:17:20.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155154:5800182172:2026-09-23T18:02:27Z:re_review",
-      "comment_id": "5800182172",
-      "comment_version_key": "5800182172:2026-09-23T18:02:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155154#issuecomment-5800182172",
-      "comment_created_at": "2026-09-23T18:02:27Z",
-      "comment_updated_at": "2026-09-23T18:02:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155154,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T18:12:36.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/perplexity-agent-research-tool",
-        "head_sha": "a40cddb7a7683aac2dd1861bdeaee2f5d25fbaec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155154:5768900603:2026-09-23T18:11:31Z:clawsweeper_auto_repair",
       "comment_id": "5768900603",
@@ -33763,6 +33716,39 @@
       "status": "skipped",
       "processed_at": "2026-09-24T01:16:54.289Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156879:5805588630:2026-09-24T01:15:58Z:clawsweeper_needs_human",
+      "comment_id": "5805588630",
+      "comment_version_key": "5805588630:2026-09-24T01:15:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156879#issuecomment-5805588630",
+      "comment_created_at": "2026-09-24T01:04:50Z",
+      "comment_updated_at": "2026-09-24T01:15:58Z",
+      "comment_body_sha256": "24701695b9a1541e50f8d03537370863b5f502bac71ddd675330aab17b4d72e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final corrected wording has not been shown in a real ACP conversation on this head. The attached image captures the generic before state and recovery, and the PR body explicitly r... (sha=c5832f1c4e1af90fa5e6485b207d315d67700b87)",
+      "expected_head_sha": "c5832f1c4e1af90fa5e6485b207d315d67700b87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T01:17:20.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-acp-terminal-error599-latest603",
+        "head_sha": "9c53e97783fd5a867679936ef4cdb9ffd24637c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
