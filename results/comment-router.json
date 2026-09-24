@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T11:27:49.642Z",
+  "updated_at": "2026-09-24T11:28:01.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157019:5808430206:2026-09-24T05:45:33Z:re_review",
-      "comment_id": "5808430206",
-      "comment_version_key": "5808430206:2026-09-24T05:45:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157019#issuecomment-5808430206",
-      "comment_created_at": "2026-09-24T05:45:33Z",
-      "comment_updated_at": "2026-09-24T05:45:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157019,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T05:53:46.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/156956-attachment-read-stall",
-        "head_sha": "f95ca7e6c9a7034f1ed278cb92b9948e0e88e0c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-09-02T15:41:18Z:clawsweeper_needs_human",
       "comment_id": "5196803797",
@@ -33468,6 +33421,39 @@
         "kind": "pull_request",
         "branch": "codex/reuse-command-review-ack",
         "head_sha": "9815c2efef44d588cf346d70264740821bc4884b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157232:5813148066:2026-09-24T11:26:47Z:clawsweeper_needs_human",
+      "comment_id": "5813148066",
+      "comment_version_key": "5813148066:2026-09-24T11:26:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157232#issuecomment-5813148066",
+      "comment_created_at": "2026-09-24T11:26:47Z",
+      "comment_updated_at": "2026-09-24T11:26:47Z",
+      "comment_body_sha256": "e6ab16c6adc5e5e5e7eefc3fb988502efbf592a40352c2a6c622af9ec1686c97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production classifier feeds the model fallback runner, but the supplied after-fix evidence exercises that runner with a mocked cand... (sha=5ec739606e08d793f627271245175f3888c40223)",
+      "expected_head_sha": "5ec739606e08d793f627271245175f3888c40223",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T11:28:01.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/156975-superseded-model-runtime-fallback",
+        "head_sha": "5ec739606e08d793f627271245175f3888c40223",
         "cluster_id": null,
         "job_path": null
       }
