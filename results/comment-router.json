@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-24T03:41:58.710Z",
+  "updated_at": "2026-09-24T03:42:16.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156667:5803167100:2026-09-23T21:23:43Z:re_review",
-      "comment_id": "5803167100",
-      "comment_version_key": "5803167100:2026-09-23T21:23:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156667#issuecomment-5803167100",
-      "comment_created_at": "2026-09-23T21:23:43Z",
-      "comment_updated_at": "2026-09-23T21:23:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156667,
-      "author": "Cyb3rb1ade",
-      "author_id": 84099452,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-23T21:53:13.928Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-core-dreaming-cron-sidecar-off",
-        "head_sha": "acc290207b1d3d441ac0b65a0c02a4cefc8799a8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156746:5803252511:2026-09-23T21:29:44Z:re_review",
       "comment_id": "5803252511",
@@ -33709,6 +33662,39 @@
       "status": "skipped",
       "processed_at": "2026-09-24T03:41:58.710Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:67820:4701876735:2026-09-24T03:41:08Z:clawsweeper_auto_repair",
+      "comment_id": "4701876735",
+      "comment_version_key": "4701876735:2026-09-24T03:41:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/67820#issuecomment-4701876735",
+      "comment_created_at": "2026-06-14T13:21:19Z",
+      "comment_updated_at": "2026-09-24T03:41:08Z",
+      "comment_body_sha256": "9517b3bad54a12bf7ae6c9a580caee7d876fe6a9f348e8b7e2a120f542e7690a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 67820,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5668c1b2faabc0e1112d4cbfb276d152fa86905e)",
+      "expected_head_sha": "5668c1b2faabc0e1112d4cbfb276d152fa86905e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T03:42:16.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-qr-reuse",
+        "head_sha": "5668c1b2faabc0e1112d4cbfb276d152fa86905e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
