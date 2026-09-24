@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157443",
+  "mode": "plan",
+  "run_id": "36044848100",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36044848100",
+  "head_sha": "f4322a8542135175b2a96f6a63fde8685ef14cf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157443.md",
+  "published_at": "2026-09-24T19:01:13.063Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157443",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157443",
+  "canonical_pr": null,
+  "summary": "Plan a narrow managed Gateway start and status fix. Current main contains the reported diagnostic paths, but the required slow-start regression has not been run. Reproduce it through the CLI before editing; if it does not reproduce, stop without a fix PR.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/157443",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "25116948",
+      "candidate_fix": null,
+      "reason": "No open candidate PR owns this fix. The plan requires same-process slow-start, crash, foreign-port, and probe-failure checks before a narrow repair is proposed."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/157205",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "5",
+      "candidate_fix": null,
+      "reason": "It shares recovery context but has distinct update and Doctor work. Its no-new-fix-PR label also rules out absorbing it into this issue's implementation lane."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/98183",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related fix; no action is valid on this already-closed PR."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
