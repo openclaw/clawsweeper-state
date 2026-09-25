@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:12:36.848Z",
+  "updated_at": "2026-09-25T02:13:39.888Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155959:5784160302:2026-09-24T19:01:24Z:clawsweeper_needs_human",
-      "comment_id": "5784160302",
-      "comment_version_key": "5784160302:2026-09-24T19:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155959#issuecomment-5784160302",
-      "comment_created_at": "2026-09-22T21:06:24Z",
-      "comment_updated_at": "2026-09-24T19:01:24Z",
-      "comment_body_sha256": "cec25c65ae1617ffee657e0d393faedbac881d8e1fd425696d323fb241232e1a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155959,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8703c11c29a59eb6af29d6a431e8fc081f471e7d)",
-      "expected_head_sha": "8703c11c29a59eb6af29d6a431e8fc081f471e7d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T20:10:49.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-snapshot-staging-reuse",
-        "head_sha": "537ec23385b9fc5508dcb598df03a7f95d0c9c65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156158:5788789286:2026-09-24T19:56:52Z:clawsweeper_auto_repair",
       "comment_id": "5788789286",
@@ -33643,6 +33610,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157796:5825548553:2026-09-25T02:12:32Z:re_review",
+      "comment_id": "5825548553",
+      "comment_version_key": "5825548553:2026-09-25T02:12:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157796#issuecomment-5825548553",
+      "comment_created_at": "2026-09-25T02:12:32Z",
+      "comment_updated_at": "2026-09-25T02:12:32Z",
+      "comment_body_sha256": "59c9a97ab0d7138695ef9fc5a2e64f7c5bf764001cbc49c19d355ab49c9238bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157796,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T02:13:38.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-plugin-reload-retained-work-drain-20260919",
+        "head_sha": "b4a3e638f4cc0ce9f47b663683c5beceb1748ee2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
