@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:01:52.122Z",
+  "updated_at": "2026-09-25T02:01:59.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157457:5821311874:2026-09-24T20:01:24Z:re_review",
-      "comment_id": "5821311874",
-      "comment_version_key": "5821311874:2026-09-24T20:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157457#issuecomment-5821311874",
-      "comment_created_at": "2026-09-24T20:01:24Z",
-      "comment_updated_at": "2026-09-24T20:01:24Z",
-      "comment_body_sha256": "008b44f2a8f32edcddb51e3cce7fb36391772ffd97a564ea12b99979cf2f24d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157457,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T20:10:16.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/ios-access-http-probes-20260925",
-        "head_sha": "a604a2c9c82dfa030aa2b6a2fdcd44ed366f0723",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157528:5821442242:2026-09-24T20:09:18Z:clawsweeper_auto_repair",
       "comment_id": "5821442242",
@@ -33656,6 +33609,39 @@
         "kind": "pull_request",
         "branch": "fix/remove-release-ci-block",
         "head_sha": "bab8808d1ce9432f861d00caa7b4c0d1c3b11441",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156129:5788391832:2026-09-25T02:00:37Z:clawsweeper_needs_human",
+      "comment_id": "5788391832",
+      "comment_version_key": "5788391832:2026-09-25T02:00:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156129#issuecomment-5788391832",
+      "comment_created_at": "2026-09-23T03:19:18Z",
+      "comment_updated_at": "2026-09-25T02:00:37Z",
+      "comment_body_sha256": "fdc909211fb70731b2312d0abb17fb1966aed4994452e59d299c301ff3274f6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded main-shaped run took 916 seconds against the documented 900-second qualification target and failed outside the routing change. Live auto-merge is enabled despite the PR b... (sha=ceb79a9353d33243dcc08b84feef80bb1a47aeeb)",
+      "expected_head_sha": "ceb79a9353d33243dcc08b84feef80bb1a47aeeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T02:01:59.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-burden/r4-hosted-queue",
+        "head_sha": "ceb79a9353d33243dcc08b84feef80bb1a47aeeb",
         "cluster_id": null,
         "job_path": null
       }
