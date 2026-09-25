@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T01:05:38.900Z",
+  "updated_at": "2026-09-25T01:05:57.525Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157384:5817692482:2026-09-24T17:00:39Z:clawsweeper_needs_human",
-      "comment_id": "5817692482",
-      "comment_version_key": "5817692482:2026-09-24T17:00:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157384#issuecomment-5817692482",
-      "comment_created_at": "2026-09-24T16:05:28Z",
-      "comment_updated_at": "2026-09-24T17:00:39Z",
-      "comment_body_sha256": "3bec9b7d4435279126bdbc630eadb54143ee8b413afdc2cccb513ef755ee1474",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157384,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a1ad0d53d0ccde0a62247f949cba96da24da9d96)",
-      "expected_head_sha": "a1ad0d53d0ccde0a62247f949cba96da24da9d96",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T17:13:31.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-patch-replace-path-echo",
-        "head_sha": "a1ad0d53d0ccde0a62247f949cba96da24da9d96",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157390:5817995103:2026-09-24T16:56:49Z:clawsweeper_needs_human",
       "comment_id": "5817995103",
@@ -33403,6 +33370,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157739:5824931225:2026-09-25T01:04:38Z:re_review",
+      "comment_id": "5824931225",
+      "comment_version_key": "5824931225:2026-09-25T01:04:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157739#issuecomment-5824931225",
+      "comment_created_at": "2026-09-25T01:04:38Z",
+      "comment_updated_at": "2026-09-25T01:04:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157739,
+      "author": "emes",
+      "author_id": 363010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T01:05:56.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/serialize-unified-tsdown-bundles",
+        "head_sha": "90d519b709250f6a0f6014dca59c52c9d908c982",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
