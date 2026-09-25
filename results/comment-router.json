@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:07:42.820Z",
+  "updated_at": "2026-09-25T00:07:45.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157317:5816634992:2026-09-24T15:01:18Z:re_review",
-      "comment_id": "5816634992",
-      "comment_version_key": "5816634992:2026-09-24T15:01:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157317#issuecomment-5816634992",
-      "comment_created_at": "2026-09-24T15:01:18Z",
-      "comment_updated_at": "2026-09-24T15:01:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157317,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T15:02:48.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wear-store-description",
-        "head_sha": "c0a02540b947dc50e026d9b64a3c193bd0490cec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:26:5816651956:2026-09-24T15:02:20Z:clawsweeper_needs_human",
       "comment_id": "5816651956",
@@ -33375,6 +33328,39 @@
         "kind": "pull_request",
         "branch": "hostneutral/http-ingress-0924",
         "head_sha": "80b27263d060d731c68de08515aa1dd69d423c5d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157615:5823024233:2026-09-25T00:06:51Z:clawsweeper_needs_human",
+      "comment_id": "5823024233",
+      "comment_version_key": "5823024233:2026-09-25T00:06:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157615#issuecomment-5823024233",
+      "comment_created_at": "2026-09-24T22:06:55Z",
+      "comment_updated_at": "2026-09-25T00:06:51Z",
+      "comment_body_sha256": "d3ebb061c2e9dc7eb36f47877902a789f6b2dd5c14e05b286173e4879b33d968",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157615,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An unreadable recovery manifest now makes Doctor refuse import into any populated selected SQLite destination. The captured evidence lacks the published 2026.9.4 updater × candidate f... (sha=e9d2acaec09ac183df3bcd00e7586a1fdfba0231)",
+      "expected_head_sha": "e9d2acaec09ac183df3bcd00e7586a1fdfba0231",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T00:07:45.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-restored-index-preservation-20260924",
+        "head_sha": "e9d2acaec09ac183df3bcd00e7586a1fdfba0231",
         "cluster_id": null,
         "job_path": null
       }
