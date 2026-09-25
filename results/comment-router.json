@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:47:24.169Z",
+  "updated_at": "2026-09-25T02:56:50.927Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155982:5785081560:2026-09-24T18:52:29Z:clawsweeper_needs_human",
-      "comment_id": "5785081560",
-      "comment_version_key": "5785081560:2026-09-24T18:52:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155982#issuecomment-5785081560",
-      "comment_created_at": "2026-09-22T22:15:12Z",
-      "comment_updated_at": "2026-09-24T18:52:29Z",
-      "comment_body_sha256": "4f7f93e5a15219db83b1a5c94e917b6bf4728e74444b1425b98a5adee3c98181",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155982,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two registered Linux/Testbox lifecycle cases have no recorded outcomes for the published head, leaving restart settlement and queued-followup delivery unverified at that boundary. (sha=c03c24aef9d6d31e1db2a37cbfd2b91fade932f5)",
-      "expected_head_sha": "c03c24aef9d6d31e1db2a37cbfd2b91fade932f5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T20:10:49.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recovery-logical-read-current-main-20260922",
-        "head_sha": "321b8f553d7bb2df2b665912d06d8404a5225d1a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156121:5788206889:2026-09-24T17:24:29Z:clawsweeper_auto_repair",
       "comment_id": "5788206889",
@@ -33637,6 +33604,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150702:5825911393:2026-09-25T02:55:18Z:re_review",
+      "comment_id": "5825911393",
+      "comment_version_key": "5825911393:2026-09-25T02:55:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150702#issuecomment-5825911393",
+      "comment_created_at": "2026-09-25T02:55:18Z",
+      "comment_updated_at": "2026-09-25T02:55:18Z",
+      "comment_body_sha256": "a53f65c3b539431b98854639e1b27f7ee8ffb4079ba208d226f6378f46ec794e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150702,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T02:56:49.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sec/fail-closed-delegated-tool-cap-v2",
+        "head_sha": "71bebdd1a4090c88b2f5eb525a880d522529c0a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
