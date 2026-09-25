@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:18:18.062Z",
+  "updated_at": "2026-09-25T06:19:07.925Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148822:5824826857:2026-09-25T00:54:20Z:re_review",
-      "comment_id": "5824826857",
-      "comment_version_key": "5824826857:2026-09-25T00:54:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148822#issuecomment-5824826857",
-      "comment_created_at": "2026-09-25T00:54:20Z",
-      "comment_updated_at": "2026-09-25T00:54:20Z",
-      "comment_body_sha256": "fc5ecea42b05aaccd11c7d440a2b964722b00f0b791cf1aaaf46d04868febf68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148822,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T01:05:17.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/library-pinned-command-prompt-993",
-        "head_sha": "c3ccbc097a6d53623d803a6e15335c0d87c8b674",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157422:5818914142:2026-09-25T01:04:12Z:clawsweeper_needs_human",
       "comment_id": "5818914142",
@@ -34374,6 +34327,39 @@
         "kind": "pull_request",
         "branch": "fix/visitor-historical-model-disclosure",
         "head_sha": "511fb86a2969187e587177a039c01da4ceee4c7e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157694:5824282799:2026-09-25T06:18:04Z:clawsweeper_needs_human",
+      "comment_id": "5824282799",
+      "comment_version_key": "5824282799:2026-09-25T06:18:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157694#issuecomment-5824282799",
+      "comment_created_at": "2026-09-24T23:58:07Z",
+      "comment_updated_at": "2026-09-25T06:18:04Z",
+      "comment_body_sha256": "d1a0c0ac965eb2dcec545ea73aa7ec173284a2fa4dcb4d0c0c2a5a6f89e4445f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157694,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing dual-selector Podman 4.8+ installations can refuse an older HOST-pinned sandbox until an operator restores the old endpoint and recreates it. Recreation removes that containe... (sha=44cb55ecdce699d5829685df08a6be7d1caf240c)",
+      "expected_head_sha": "44cb55ecdce699d5829685df08a6be7d1caf240c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:19:07.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/podman-client-selector-precedence-20260925",
+        "head_sha": "44cb55ecdce699d5829685df08a6be7d1caf240c",
         "cluster_id": null,
         "job_path": null
       }
