@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T18:40:06.431Z",
+  "updated_at": "2026-09-25T18:40:07.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158080:5832768022:2026-09-25T12:58:26Z:re_review",
-      "comment_id": "5832768022",
-      "comment_version_key": "5832768022:2026-09-25T12:58:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158080#issuecomment-5832768022",
-      "comment_created_at": "2026-09-25T12:58:26Z",
-      "comment_updated_at": "2026-09-25T12:58:26Z",
-      "comment_body_sha256": "31585fac11d59427ea8e06334143319e8f566c67f0f2604c94673c98f71a3eef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158080,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T12:59:24.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-queued-heartbeat-shutdown-20260925",
-        "head_sha": "46d594317b6967b2e7b642e9cf64a4767008c827",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/summarize:492:5832701269:2026-09-25T12:54:05Z:re_review",
       "comment_id": "5832701269",
@@ -32618,6 +32571,39 @@
         "kind": "pull_request",
         "branch": "fix/browser-preserve-native-downloads-157547",
         "head_sha": "d4cdcdc328c0c0c7301e5b6349771ab75a6c8f48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158197:5835730770:2026-09-25T18:30:40Z:clawsweeper_needs_human",
+      "comment_id": "5835730770",
+      "comment_version_key": "5835730770:2026-09-25T18:30:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158197#issuecomment-5835730770",
+      "comment_created_at": "2026-09-25T16:22:13Z",
+      "comment_updated_at": "2026-09-25T18:30:40Z",
+      "comment_body_sha256": "1e6e335c5ca4bd0072e0c5109196a4cad3fee465d34899d5948cd58529305ba1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=55dac3fa5ea1d62ac7beac49044e81f778514f26)",
+      "expected_head_sha": "55dac3fa5ea1d62ac7beac49044e81f778514f26",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T18:40:07.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-infra-batching-20260925",
+        "head_sha": "55dac3fa5ea1d62ac7beac49044e81f778514f26",
         "cluster_id": null,
         "job_path": null
       }
