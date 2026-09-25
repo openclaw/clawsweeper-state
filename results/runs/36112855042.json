@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158007",
+  "mode": "autonomous",
+  "run_id": "36112855042",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36112855042",
+  "head_sha": "3d8d89c12d45e24c0922d95e4a11f410869dc12e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158007.md",
+  "published_at": "2026-09-25T08:44:53.545Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158007",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158007",
+  "canonical_pr": null,
+  "summary": "Current main has a source-visible help exit gap, but the required process reproduction could not run: this checkout is read-only and has neither installed dependencies nor build output. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158007",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158007",
+      "candidate_fix": null,
+      "reason": "A narrow CLI exit repair appears warranted, subject to reproducing the hang on current main."
+    },
+    {
+      "target": "#114067",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158007",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#147932",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158007",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#157884",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158007",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158007",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158007",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until a writable checkout with dependencies can reproduce the failure through the real openclaw --help entrypoint."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
