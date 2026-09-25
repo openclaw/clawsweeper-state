@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing macOS native Talk bug in which an accepted slow Gateway chat run can finish after Talk's fixed observation windows and its reply is never spoken. Establish a failing regression through the Talk entry path before editing. Keep observation tied to the accepted run using the existing Gateway completion contract; retrieve only that run's complete reply and preserve terminal-error and Stop behavior. Review the closed source PR at https://github.com/openclaw/openclaw/pull/153444 for useful context, but create a focused repair from current main. Add meaningful regression coverage and obtain isolated native macOS behavior proof for delayed speech and Stop. Do not add a new configuration option, change unrelated Talk modes, or edit CHANGELOG.md.
+Repair the existing macOS Talk Mode bug where an accepted slow chat run outlives the client’s 45-second event wait and 12-second history fallback, leaving its reply unspoken. First establish a failing regression for the accepted-send path. Keep the repair in the native Talk/Gateway client boundary using the existing agent.wait completion contract; match the accepted run, retrieve complete text before speech, and preserve Stop, terminal-failure, and lifecycle cancellation behavior. Review https://github.com/openclaw/openclaw/pull/153444 as closed, unmerged prior work, not as a landed fix. Do not add a Talk-specific config option, change provider timeouts, or alter unrelated realtime Talk behavior. Add focused regression coverage and obtain isolated native macOS after-fix evidence of delayed reply playback and Stop. Record the user-facing fix and proof in the PR body; do not edit release-owned CHANGELOG.md.
 
 Likely files:
 
@@ -79,8 +79,8 @@ Likely files:
 Validation:
 
 - swift build --package-path apps/macos --build-system native --build-tests
-- Run focused Talk runtime and Gateway chat transport tests on a disposable macOS host.
-- Capture an isolated native Talk run showing a delayed accepted reply displayed and spoken, with Stop preventing later playback.
+- Run focused macOS Talk runtime and Gateway transport tests on a disposable macOS host.
+- Capture an isolated native Talk run in which a delayed accepted reply is displayed and spoken, and Stop prevents later playback.
 
 ## Operator Prompt
 
