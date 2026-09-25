@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:38:28.552Z",
+  "updated_at": "2026-09-25T17:41:57.832Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131362:5450164810:2026-09-25T11:15:46Z:clawsweeper_needs_human",
-      "comment_id": "5450164810",
-      "comment_version_key": "5450164810:2026-09-25T11:15:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131362#issuecomment-5450164810",
-      "comment_created_at": "2026-08-28T08:18:54Z",
-      "comment_updated_at": "2026-09-25T11:15:46Z",
-      "comment_body_sha256": "a5a42c0895dc3bea84efcfd5100fb7349d4c8ccda90d8dcd904a1448d109342f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131362,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After the 512-path limit, the CLI exits successfully and replaces the persisted lint report even though some links were never checked. A maintainer must decide whether the explicit un... (sha=fe6d7478daebfa547f16c2d5aa4c03af0d39b6a5)",
-      "expected_head_sha": "fe6d7478daebfa547f16c2d5aa4c03af0d39b6a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T11:22:43.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-wiki-lint-vault-wide-links",
-        "head_sha": "fe6d7478daebfa547f16c2d5aa4c03af0d39b6a5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144363:5624890224:2026-09-25T11:15:30Z:clawsweeper_needs_human",
       "comment_id": "5624890224",
@@ -32626,6 +32593,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158232:5836802852:2026-09-25T17:41:06Z:re_review",
+      "comment_id": "5836802852",
+      "comment_version_key": "5836802852:2026-09-25T17:41:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158232#issuecomment-5836802852",
+      "comment_created_at": "2026-09-25T17:41:06Z",
+      "comment_updated_at": "2026-09-25T17:41:06Z",
+      "comment_body_sha256": "8d608efb3c188d9f50193cd2a16f951a716223ccd499fc65b299018bbf8770ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158232,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-25T17:41:57.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claude-history-inflight",
+        "head_sha": "380b05231aff913c2b3c622e2c6855e7739d6193",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
