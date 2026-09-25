@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157645",
+  "mode": "autonomous",
+  "run_id": "36080718050",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36080718050",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157645.md",
+  "published_at": "2026-09-25T01:12:27.229Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157645",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157645",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for Gateway shutdown cleanup. The issue remains open, and the merged Doctor repair covers a different path. The shutdown defect must be reproduced on main before implementation; no tests or writes were run in this read-only planning checkout.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/157645",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "87572",
+      "candidate_fix": null,
+      "reason": "Reproduce the reported failure on main, then fix only cleanup of a verified deleted-agent target while preserving its database fence and historical data."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/155752",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; the PR is already closed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
