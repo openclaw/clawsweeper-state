@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:59:25.402Z",
+  "updated_at": "2026-09-25T18:02:26.119Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133406:5470136375:2026-09-25T11:54:01Z:clawsweeper_auto_repair",
-      "comment_id": "5470136375",
-      "comment_version_key": "5470136375:2026-09-25T11:54:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133406#issuecomment-5470136375",
-      "comment_created_at": "2026-08-30T17:17:36Z",
-      "comment_updated_at": "2026-09-25T11:54:01Z",
-      "comment_body_sha256": "eaa66fd8daf139cdc221fcae2341689a09178de543363635b25e9906a05db5b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=018111e3f19a047a4b4da53f4122b952d2694287)",
-      "expected_head_sha": "018111e3f19a047a4b4da53f4122b952d2694287",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T12:09:03.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-rich-message-local-media",
-        "head_sha": "018111e3f19a047a4b4da53f4122b952d2694287",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144005:5618417894:2026-09-25T11:58:24Z:clawsweeper_needs_human",
       "comment_id": "5618417894",
@@ -32506,6 +32473,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152671:5837048252:2026-09-25T17:59:06Z:re_review",
+      "comment_id": "5837048252",
+      "comment_version_key": "5837048252:2026-09-25T17:59:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152671#issuecomment-5837048252",
+      "comment_created_at": "2026-09-25T17:59:06Z",
+      "comment_updated_at": "2026-09-25T17:59:06Z",
+      "comment_body_sha256": "52294061e2519e3e1a04723cfd26da6a85bfd9ea4649f057216d3694c272d396",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152671,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T18:02:25.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-152508-sanitize-comparison",
+        "head_sha": "965e18e706998b370f0571ef58c40b9ebf23fce4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
