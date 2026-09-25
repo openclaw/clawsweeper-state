@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158320"
-mode: "autonomous"
-run_id: "36188889793"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36188889793"
+mode: "plan"
+run_id: "36194125157"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36194125157"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T21:36:40.421Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T21:59:50.076Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158320"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158320"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36188889793](https://github.com/openclaw/clawsweeper/actions/runs/36188889793)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36194125157](https://github.com/openclaw/clawsweeper/actions/runs/36194125157)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158320
 
 ## Summary
 
-The reported failure has a plausible source path, but implementation is blocked. The checkout is read-only and lacks the preflight main commit, so I could not establish the required failing regression on current main, change code, or validate a PR branch.
+Plan a narrow plugin-inventory fix for the reported Git update failure. Current main has a matching source path, but the required synthetic failing reproduction and published 2026.9.5 driver × candidate check have not run. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The reported failure has a plausible source path, but implementation is blocked.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158320 | fix_needed | planned | canonical | The issue remains the canonical report. Reproduction against the preflight main SHA is still required before implementation. |
-| cluster:issue-openclaw-openclaw-158320 | build_fix_artifact | blocked |  | Build in a writable checkout containing current main. First demonstrate the failure through a synthetic Git update entrypoint; stop if it no longer reproduces. |
+| #158320 | fix_needed | planned | canonical | The report describes a focused existing-behavior bug with a plausible current-main failure path. Execution must establish the failing regression before changing code. |
 
 ## Needs Human
 
