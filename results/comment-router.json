@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:20:36.684Z",
+  "updated_at": "2026-09-25T04:21:03.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157586:5822863198:2026-09-24T21:53:33Z:re_review",
-      "comment_id": "5822863198",
-      "comment_version_key": "5822863198:2026-09-24T21:53:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157586#issuecomment-5822863198",
-      "comment_created_at": "2026-09-24T21:53:33Z",
-      "comment_updated_at": "2026-09-24T21:53:33Z",
-      "comment_body_sha256": "af14542cb72cc7a73d9a2cf8bd8e577668498de4c4cef80731739f626030a7f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157586,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T22:01:56.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/nodes-help-metadata-performance",
-        "head_sha": "f2ee1952643111e7fac06d66f98895bd26d7131c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157586:5822208830:2026-09-24T22:00:56Z:clawsweeper_needs_human",
       "comment_id": "5822208830",
@@ -33922,6 +33875,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-config-reload-stale-secrets-20260925",
         "head_sha": "a006d6714822044a983edfedf9e68eda1cab61a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1169:5826418055:2026-09-25T04:20:00Z:clawsweeper_needs_human",
+      "comment_id": "5826418055",
+      "comment_version_key": "5826418055:2026-09-25T04:20:00Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1169#issuecomment-5826418055",
+      "comment_created_at": "2026-09-25T03:55:45Z",
+      "comment_updated_at": "2026-09-25T04:20:00Z",
+      "comment_body_sha256": "7c2a0a52ae98b523b0e098f8912d4f7432e185d917f9d9b212f0f46762605a44",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new credential owner calls the op CLI for vault reads, edits, and deletes, but the captured PR body supplie...; Review finding: [P1] Verify item provenance before editing or deleting — internal/secrets/onepassword.go:831-839 - [P1] Allow updates and removal of gog’s other key types — intern... (sha=fc9237e52cf4d4f764bc5b6e19dcdc96e6fa75e4)",
+      "expected_head_sha": "fc9237e52cf4d4f764bc5b6e19dcdc96e6fa75e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:21:03.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/onepassword-keyring",
+        "head_sha": "fc9237e52cf4d4f764bc5b6e19dcdc96e6fa75e4",
         "cluster_id": null,
         "job_path": null
       }
