@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-25T10:54:23.118Z",
+  "updated_at": "2026-09-25T10:44:18.042Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157673:5827118572:2026-09-25T05:07:12Z:re_review",
+      "comment_id": "5827118572",
+      "comment_version_key": "5827118572:2026-09-25T05:07:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157673#issuecomment-5827118572",
+      "comment_created_at": "2026-09-25T05:07:12Z",
+      "comment_updated_at": "2026-09-25T05:07:12Z",
+      "comment_body_sha256": "3e50fbd4556ad5737e4ddc83c33bad5e94b1b30eb59d95a15c49cbedd26f119c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157673,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T05:14:58.916Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/completions-max-tokens-clamp-157307",
+        "head_sha": "7f51b6d0abab0d23e59671dc87d251867b2c0ae5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157673:5823853944:2026-09-25T05:13:47Z:clawsweeper_needs_human",
       "comment_id": "5823853944",
@@ -33489,39 +33536,6 @@
         "kind": "pull_request",
         "branch": "chore/gitcrawl-ci-pin-20260925",
         "head_sha": "9aaf5f1c131c96505167e135204b5980e2d05114",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:670:5828890537:2026-09-25T10:53:35Z:clawsweeper_needs_human",
-      "comment_id": "5828890537",
-      "comment_version_key": "5828890537:2026-09-25T10:53:35Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/670#issuecomment-5828890537",
-      "comment_created_at": "2026-09-25T07:51:03Z",
-      "comment_updated_at": "2026-09-25T10:53:35Z",
-      "comment_body_sha256": "4cc2eed9bd8a833339e211b887b458ea48018cfac38071e92b641473a602176b",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b45a689e1ad063787d9b307487cee5fd8b6dad1e)",
-      "expected_head_sha": "b45a689e1ad063787d9b307487cee5fd8b6dad1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T10:54:23.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-info-owner-20260925",
-        "head_sha": "b45a689e1ad063787d9b307487cee5fd8b6dad1e",
         "cluster_id": null,
         "job_path": null
       }
