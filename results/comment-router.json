@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:03:14.231Z",
+  "updated_at": "2026-09-25T08:03:21.921Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157695:5825820620:2026-09-25T02:44:25Z:re_review",
-      "comment_id": "5825820620",
-      "comment_version_key": "5825820620:2026-09-25T02:44:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157695#issuecomment-5825820620",
-      "comment_created_at": "2026-09-25T02:44:25Z",
-      "comment_updated_at": "2026-09-25T02:44:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157695,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:59:53.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-mcp-startup-serialization",
-        "head_sha": "6698d2cdc986c6790e40500c3278602e2be37503",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157497:5825833466:2026-09-25T02:45:57Z:re_review",
       "comment_id": "5825833466",
@@ -34298,6 +34251,39 @@
         "kind": "pull_request",
         "branch": "ci/ready-candidate-20260923",
         "head_sha": "6e927c67542fc3f47d89619a976fd028fb38fe02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157947:5827633742:2026-09-25T08:00:22Z:clawsweeper_needs_human",
+      "comment_id": "5827633742",
+      "comment_version_key": "5827633742:2026-09-25T08:00:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157947#issuecomment-5827633742",
+      "comment_created_at": "2026-09-25T06:02:25Z",
+      "comment_updated_at": "2026-09-25T08:00:22Z",
+      "comment_body_sha256": "e63e4a39674cd903a505922a06628eaf84c40ec6c42ebc25e3564d9f14f4eb7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require a live chat origin before forwarding a change approval (P1)** - The new always-on session strategy also runs for terminal-origin delegated changes, which have no turn-source channel. The shared resolver...; Review finding: [P1] Require a live chat origin before forwarding a change approval — src/infra/exec-approval-forwarder.ts:543-547 - [P2] Publish each change-approval expiry once... (sha=f1ecfc9305bff2c651073fb471d443903795a338)",
+      "expected_head_sha": "f1ecfc9305bff2c651073fb471d443903795a338",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:03:21.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/chat-native-approvals",
+        "head_sha": "f1ecfc9305bff2c651073fb471d443903795a338",
         "cluster_id": null,
         "job_path": null
       }
