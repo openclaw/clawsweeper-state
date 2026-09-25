@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:56:49.625Z",
+  "updated_at": "2026-09-25T04:57:16.309Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157636:5824354545:2026-09-25T00:07:37Z:clawsweeper_needs_human",
-      "comment_id": "5824354545",
-      "comment_version_key": "5824354545:2026-09-25T00:07:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157636#issuecomment-5824354545",
-      "comment_created_at": "2026-09-25T00:05:41Z",
-      "comment_updated_at": "2026-09-25T00:07:37Z",
-      "comment_body_sha256": "a896c2a62b30567f74d3e69910f7948c7d399ea38720834ff416e04995e421ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157636,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=41ccee22efbfbbb425e6b8457eb99b177b836227)",
-      "expected_head_sha": "41ccee22efbfbbb425e6b8457eb99b177b836227",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:11:49.636Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/kotlin-return-candidates-20260924",
-        "head_sha": "41ccee22efbfbbb425e6b8457eb99b177b836227",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157641:5824375120:2026-09-25T00:07:44Z:clawsweeper_needs_human",
       "comment_id": "5824375120",
@@ -33967,6 +33934,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157683:5824252609:2026-09-25T04:56:04Z:clawsweeper_needs_human",
+      "comment_id": "5824252609",
+      "comment_version_key": "5824252609:2026-09-25T04:56:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157683#issuecomment-5824252609",
+      "comment_created_at": "2026-09-24T23:54:54Z",
+      "comment_updated_at": "2026-09-25T04:56:04Z",
+      "comment_body_sha256": "63d3b3d091d06bd14488595f1912fbd64677feffc0e3feebcabf3372dd80de06",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157683,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Always remove the temporary npm project after a failed command (P2)** - The packaged update harness calls this function under set -e. If npm exits nonzero, Bash exits at this invocation before reaching status=$?...; Review finding: [P2] Always remove the temporary npm project after a failed command — scripts/docker/install-sh-common/version-parse.sh:239-252 - [medium] Temporary npm configurat... (sha=79fae4ed81b35fd7c673e92b0d214cda2c84a921)",
+      "expected_head_sha": "79fae4ed81b35fd7c673e92b0d214cda2c84a921",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:57:16.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-harness-npm-policy-env",
+        "head_sha": "79fae4ed81b35fd7c673e92b0d214cda2c84a921",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
