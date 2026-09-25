@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158386",
+  "mode": "plan",
+  "run_id": "36201140036",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36201140036",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158386.md",
+  "published_at": "2026-09-25T23:33:13.083Z",
+  "canonical": "#158386",
+  "canonical_issue": "#158386",
+  "canonical_pr": null,
+  "summary": "Plan only; no files or GitHub state changed. Current main matches the preflight SHA. The shared Windows task audit reports omitted default-true fields as drift, and its publication callback rejects that drift. The executor must demonstrate a failing regression before editing.",
+  "actions": [
+    {
+      "target": "#158386",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158386",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix is supported. First make the Doctor and real publication-path regressions fail on current main. Treat an omitted Enabled leaf as true only when its parent element exists and the expected value is true; retain the existing publication exception for an intentionally disabled task."
+    },
+    {
+      "target": "#158331",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context outside this bug."
+    },
+    {
+      "target": "#158332",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different subsystem and failure; retain its own discussion."
+    },
+    {
+      "target": "#158333",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate feature request outside this bug-fix cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_independent": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

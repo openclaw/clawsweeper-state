@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158386"
-mode: "autonomous"
-run_id: "36196581758"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36196581758"
+mode: "plan"
+run_id: "36201140036"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36201140036"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T23:01:07.144Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158386"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158386"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T23:33:13.083Z"
+canonical: "#158386"
+canonical_issue: "#158386"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36196581758](https://github.com/openclaw/clawsweeper/actions/runs/36196581758)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36201140036](https://github.com/openclaw/clawsweeper/actions/runs/36201140036)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158386
+Canonical: #158386
 
 ## Summary
 
-The Windows Scheduled Task audit still appears to misclassify omitted default-true Enabled fields, but implementation is blocked: this worker has a read-only checkout at 0b8ac75b, while preflight identifies c935d718 as main. Dependencies are absent, so a failing regression and validation could not be run. No code or GitHub state was changed.
+Plan only; no files or GitHub state changed. Current main matches the preflight SHA. The shared Windows task audit reports omitted default-true fields as drift, and its publication callback rejects that drift. The executor must demonstrate a failing regression before editing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The Windows Scheduled Task audit still appears to misclassify omitted default-tr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158386 | fix_needed | planned | canonical | A narrow shared-audit fix is indicated, subject to reproduction on the preflight main revision. |
-| #158332 | keep_independent | planned | independent | Separate behavior and owner. |
-| #158333 | keep_independent | planned | independent | Separate product decision outside this bug-only job. |
-| #158331 | keep_closed | skipped | independent | Historical linked context only. |
-| cluster:issue-openclaw-openclaw-158386 | build_fix_artifact | blocked |  | The executor needs a writable checkout at current main before it can reproduce, patch, review, and validate the fix. |
+| #158386 | fix_needed | planned | canonical | A narrow bug fix is supported. First make the Doctor and real publication-path regressions fail on current main. Treat an omitted Enabled leaf as true only when its parent element exists and the expected value is true; retain the existing publication exception for an intentionally disabled task. |
+| #158331 | keep_closed | skipped | independent | Closed historical context outside this bug. |
+| #158332 | keep_independent | planned | independent | Different subsystem and failure; retain its own discussion. |
+| #158333 | keep_independent | planned | independent | Separate feature request outside this bug-fix cluster. |
 
 ## Needs Human
 
