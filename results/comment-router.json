@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:32:27.388Z",
+  "updated_at": "2026-09-25T04:33:12.421Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157622:5823141837:2026-09-24T22:24:54Z:clawsweeper_auto_repair",
-      "comment_id": "5823141837",
-      "comment_version_key": "5823141837:2026-09-24T22:24:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157622#issuecomment-5823141837",
-      "comment_created_at": "2026-09-24T22:17:05Z",
-      "comment_updated_at": "2026-09-24T22:24:54Z",
-      "comment_body_sha256": "d6e66305f1b0ede6c6d69f7a2d47538c77c12c67d17b8eecad61dda575a789a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157622,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b6a2a60d5bb0db70d346b9852bbcae340e8dfbcb)",
-      "expected_head_sha": "b6a2a60d5bb0db70d346b9852bbcae340e8dfbcb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T22:25:50.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-seven-participant-selects-per-append-20260919",
-        "head_sha": "b6a2a60d5bb0db70d346b9852bbcae340e8dfbcb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3960:5820177507:2026-09-24T22:24:52Z:clawsweeper_auto_repair",
       "comment_id": "5820177507",
@@ -33911,6 +33878,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157865:5826399021:2026-09-25T04:32:17Z:clawsweeper_needs_human",
+      "comment_id": "5826399021",
+      "comment_version_key": "5826399021:2026-09-25T04:32:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157865#issuecomment-5826399021",
+      "comment_created_at": "2026-09-25T03:53:33Z",
+      "comment_updated_at": "2026-09-25T04:32:17Z",
+      "comment_body_sha256": "844e41325237c95802c9a04eed04f99978d79b0698f377a2f52ae16af7b01fd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157865,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The Android controller's new delayed transcript retry is exercised after injected overload with a scripted Gate...; Review finding: [P2] Bind each retry to its captured agent before history I/O — apps/android/app/src/main/java/ai/openclaw/app/chat/ChatController.kt:7711-7717 - [medium] Stale re... (sha=7e74f1c619038bde0df0dd6702a3ca035709ced1)",
+      "expected_head_sha": "7e74f1c619038bde0df0dd6702a3ca035709ced1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:33:12.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-feedback-android-refresh",
+        "head_sha": "7e74f1c619038bde0df0dd6702a3ca035709ced1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
