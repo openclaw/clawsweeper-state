@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158271"
-mode: "plan"
-run_id: "36186977827"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36186977827"
+mode: "autonomous"
+run_id: "36189278766"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36189278766"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-25T20:43:01.422Z"
-canonical: "#158271"
-canonical_issue: "#158271"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-25T21:51:14.904Z"
+canonical: "https://github.com/openclaw/openclaw/issues/158271"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/158271"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36186977827](https://github.com/openclaw/clawsweeper/actions/runs/36186977827)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36189278766](https://github.com/openclaw/clawsweeper/actions/runs/36189278766)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #158271
+Canonical: https://github.com/openclaw/openclaw/issues/158271
 
 ## Summary
 
-Plan a narrow fix for the still-open agent-turn policy-hash regression. The checkout matches preflight main b36641d7625de2a533be288fb0b809b73d559601. No code was changed and no tests were run in plan mode; the required failing regression and validation must precede a fix PR.
+The inspected checkout supports the reported session-policy hash mismatch, but it is at 5d952773, while preflight identifies a8758fda as current main. That commit is unavailable locally and the checkout is read-only. A failing regression on current main, an implementation branch, and validation remain blocked.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,11 @@ Plan a narrow fix for the still-open agent-turn policy-hash regression. The chec
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158271 | fix_needed | planned | canonical | The merged heartbeat repair does not cover plain agent-command turns. |
-| #120006 | keep_related | planned | related | Those remaining concerns are distinct from the plain agent-turn hash flip. |
-| #121485 | keep_closed | skipped | related | Historical context only. |
-| #121509 | keep_closed | skipped | related | Useful prior fix, but it does not resolve the reported plain agent-command path. |
+| #158271 | fix_needed | planned | canonical | A focused bug fix is warranted after reproducing the alternating entry paths on current main. |
+| #120006 | keep_related | planned | related | Keep its distinct remaining work open. |
+| #121485 | keep_closed | skipped | related | Already closed. |
+| #121509 | keep_closed | skipped | related | Already merged. |
+| cluster:issue-openclaw-openclaw-158271 | build_fix_artifact | blocked |  | Implementation requires a writable checkout at current main and a failing regression through the alternating entry paths. |
 
 ## Needs Human
 
