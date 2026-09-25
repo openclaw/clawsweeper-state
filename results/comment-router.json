@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T07:21:40.636Z",
+  "updated_at": "2026-09-25T07:22:06.662Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154208:5825461273:2026-09-25T02:02:34Z:re_review",
-      "comment_id": "5825461273",
-      "comment_version_key": "5825461273:2026-09-25T02:02:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154208#issuecomment-5825461273",
-      "comment_created_at": "2026-09-25T02:02:19Z",
-      "comment_updated_at": "2026-09-25T02:02:34Z",
-      "comment_body_sha256": "862d50402fbc25bddf12ceb545c5877f322a55eb6e8165a1034afca457612826",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154208,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:03:14.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-tools",
-        "head_sha": "b6d967efa99b66b61adb43c7037d927790b30c8f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157807:5825469135:2026-09-25T02:03:15Z:clawsweeper_auto_repair",
       "comment_id": "5825469135",
@@ -34216,6 +34169,39 @@
         "kind": "pull_request",
         "branch": "feat/rtx-spark-recipes",
         "head_sha": "01096aee8883c54d72d96f5f9bdf47ca1deee1c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145169:5639303517:2026-09-25T07:20:42Z:clawsweeper_needs_human",
+      "comment_id": "5639303517",
+      "comment_version_key": "5639303517:2026-09-25T07:20:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145169#issuecomment-5639303517",
+      "comment_created_at": "2026-09-11T18:59:52Z",
+      "comment_updated_at": "2026-09-25T07:20:42Z",
+      "comment_body_sha256": "631b1c2c85de9dd342a291f41f40a24e03093ac3b5efcb8b479b62d3f22e4dc7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Doctor and recovery owners publish ledger receipts and retire capture files. The captured...; Review finding: [P1] Preserve updates when a plugin has no resource collector — src/commands/doctor-update-rehearsal.ts:461-465 - [P1] Reject noncanonical resource paths before no... (sha=f6feb6b75d08785dc61da204fa9b0d4ea581693c)",
+      "expected_head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T07:22:06.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/migration-rollback-preservation-20260911",
+        "head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
         "cluster_id": null,
         "job_path": null
       }
