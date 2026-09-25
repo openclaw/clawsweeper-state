@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:00:52.435Z",
+  "updated_at": "2026-09-25T02:01:43.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5821290154:2026-09-24T20:00:09Z:re_review",
-      "comment_id": "5821290154",
-      "comment_version_key": "5821290154:2026-09-24T20:00:09Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1675#issuecomment-5821290154",
-      "comment_created_at": "2026-09-24T20:00:09Z",
-      "comment_updated_at": "2026-09-24T20:00:09Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1675,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T20:08:47.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/reuse-command-review-ack",
-        "head_sha": "aae7a5f6723efc99f7cca1d3bea0335b2bbe2852",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1675:5812102904:2026-09-24T20:07:46Z:clawsweeper_needs_human",
       "comment_id": "5812102904",
@@ -33704,6 +33657,39 @@
         "kind": "pull_request",
         "branch": "feat/metrics-collection",
         "head_sha": "6b27f8d797be9b2977ad915287c02afabb17bb09",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157770:5825444733:2026-09-25T02:00:20Z:clawsweeper_needs_human",
+      "comment_id": "5825444733",
+      "comment_version_key": "5825444733:2026-09-25T02:00:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157770#issuecomment-5825444733",
+      "comment_created_at": "2026-09-25T02:00:20Z",
+      "comment_updated_at": "2026-09-25T02:00:20Z",
+      "comment_body_sha256": "302097045b44a998f767ec5ae9a9581c8266619f8e13ecdea89420c17a0f463d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157770,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A patched installed updater now copies the full retained package tree on OverlayFS, including node_modules. The historical full-copy workload was slow enough to motivate hard links, w... (sha=40410d06be2445232274f948931334ef68d44a78)",
+      "expected_head_sha": "40410d06be2445232274f948931334ef68d44a78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T02:01:43.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/installer-current-snapshot-20260925",
+        "head_sha": "40410d06be2445232274f948931334ef68d44a78",
         "cluster_id": null,
         "job_path": null
       }
