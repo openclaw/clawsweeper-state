@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T14:16:15.473Z",
+  "updated_at": "2026-09-25T14:16:39.453Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123906:5299591580:2026-09-25T07:56:44Z:clawsweeper_auto_repair",
-      "comment_id": "5299591580",
-      "comment_version_key": "5299591580:2026-09-25T07:56:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5299591580",
-      "comment_created_at": "2026-08-15T00:45:33Z",
-      "comment_updated_at": "2026-09-25T07:56:44Z",
-      "comment_body_sha256": "3c667c95591c90fe62d99118a6b1a8ac28a6854ec1bf59a477b3da6a7b1a1e15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2be8ef3832f40cd968aaa4bd8d1daecb8a59bd06)",
-      "expected_head_sha": "2be8ef3832f40cd968aaa4bd8d1daecb8a59bd06",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T08:04:04.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-close-stale-tui-clients",
-        "head_sha": "652f2194ae1594cf77f0838d997e64220f6c3db3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5782409249:2026-09-22T19:10:55Z:re_review",
       "comment_id": "5782409249",
@@ -33272,6 +33239,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158034:5830060410:2026-09-25T14:15:37Z:clawsweeper_needs_human",
+      "comment_id": "5830060410",
+      "comment_version_key": "5830060410:2026-09-25T14:15:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158034#issuecomment-5830060410",
+      "comment_created_at": "2026-09-25T09:25:53Z",
+      "comment_updated_at": "2026-09-25T14:15:37Z",
+      "comment_body_sha256": "98afceeb160ca0cf96d0541ee53488b466e412c880db1fb84219868006a41fc9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - An existing third-party catalog hook can return fallback provider rows without outcomes. This branch now records those rows as successful discovery, potentially treating an outage as... (sha=8322ec3c25c442c86418c2c8067893dfb57ff313)",
+      "expected_head_sha": "8322ec3c25c442c86418c2c8067893dfb57ff313",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T14:16:39.453Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-alias-cleanup-20260925",
+        "head_sha": "8322ec3c25c442c86418c2c8067893dfb57ff313",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
