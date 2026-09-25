@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:08:54.321Z",
+  "updated_at": "2026-09-25T06:09:33.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154158:5824500724:2026-09-25T00:20:25Z:re_review",
-      "comment_id": "5824500724",
-      "comment_version_key": "5824500724:2026-09-25T00:20:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154158#issuecomment-5824500724",
-      "comment_created_at": "2026-09-25T00:20:25Z",
-      "comment_updated_at": "2026-09-25T00:20:25Z",
-      "comment_body_sha256": "a223298b85f51992c2307d653f885c715b5458b811e816d877e5e9368d726357",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154158,
-      "author": "ayoakouh",
-      "author_id": 185819768,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:38:59.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/153971-bedrock-credential-rotation",
-        "head_sha": "6efe5c8ee3dd03a996c564c0ddfd938469ee2610",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154158:5753492443:2026-09-20T23:25:30Z:re_review",
       "comment_id": "5753492443",
@@ -34382,6 +34335,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-reload-inflight-turns",
         "head_sha": "17a8b88c6772326b5388d473fb44a0618eb76f14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2464:5767338533:2026-09-25T06:00:14Z:clawsweeper_needs_human",
+      "comment_id": "5767338533",
+      "comment_version_key": "5767338533:2026-09-25T06:00:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2464#issuecomment-5767338533",
+      "comment_created_at": "2026-09-21T20:51:37Z",
+      "comment_updated_at": "2026-09-25T06:00:14Z",
+      "comment_body_sha256": "b236cc5e21d68aac04225efc2e58c148d400e6ab6d440e39b54525b75981413a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A reported termination failure now ends acquisition instead of allowing the former fresh-instance retry. That safer failure mode can stop a workflow that previously recovered, and an... (sha=aea85432cb600cd8a680e02b60aea9be490f5e45)",
+      "expected_head_sha": "aea85432cb600cd8a680e02b60aea9be490f5e45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:09:33.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/tencent-acquisition-causes-n828",
+        "head_sha": "aea85432cb600cd8a680e02b60aea9be490f5e45",
         "cluster_id": null,
         "job_path": null
       }
