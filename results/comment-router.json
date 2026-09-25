@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T12:55:40.307Z",
+  "updated_at": "2026-09-25T12:57:17.797Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157858:5826387046:2026-09-25T06:25:39Z:clawsweeper_needs_human",
-      "comment_id": "5826387046",
-      "comment_version_key": "5826387046:2026-09-25T06:25:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157858#issuecomment-5826387046",
-      "comment_created_at": "2026-09-25T03:52:02Z",
-      "comment_updated_at": "2026-09-25T06:25:39Z",
-      "comment_body_sha256": "d981afd656132e9a4b876c29a90dece9c3c98cdde1ecf224c0fc89583f922c66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR-body images render, but the available review context does not establish that the required before/after screenshots were also attached in the originating chat. (sha=f53d7387843277b89327cedd4db382a969377627)",
-      "expected_head_sha": "f53d7387843277b89327cedd4db382a969377627",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T06:26:55.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rich-pre",
-        "head_sha": "f53d7387843277b89327cedd4db382a969377627",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156541:5796090261:2026-09-25T06:26:14Z:clawsweeper_needs_human",
       "comment_id": "5796090261",
@@ -33228,6 +33195,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158059:5832731936:2026-09-25T12:56:08Z:re_review",
+      "comment_id": "5832731936",
+      "comment_version_key": "5832731936:2026-09-25T12:56:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158059#issuecomment-5832731936",
+      "comment_created_at": "2026-09-25T12:56:08Z",
+      "comment_updated_at": "2026-09-25T12:56:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158059,
+      "author": "NoelDavies",
+      "author_id": 572911,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T12:57:16.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/meme-maker-mime-handling",
+        "head_sha": "d41e2883eef98d3af3960668315ffca348ba3b8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
