@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157827",
+  "mode": "autonomous",
+  "run_id": "36087026290",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36087026290",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157827.md",
+  "published_at": "2026-09-25T03:01:55.454Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157827",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157827",
+  "canonical_pr": null,
+  "summary": "Current main still pairs a multi-line REM summary with only its first source citation when staging short-term memory. The required CLI reproduction, patch, and validation could not run because this worker's checkout is read-only and has no installed dependencies. No branch or PR was created.",
+  "actions": [
+    {
+      "target": "#157827",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157827",
+      "candidate_fix": null,
+      "reason": "The staging citation invariant is source-proven on the supplied current main, but the required failing CLI regression has not been run."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157827",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157827",
+      "candidate_fix": null,
+      "reason": "Implementation and PR preparation require a writable checkout with dependencies and an observed failing CLI regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
