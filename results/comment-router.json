@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T05:12:19.319Z",
+  "updated_at": "2026-09-25T05:12:22.635Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150920:5715201332:2026-09-24T22:12:50Z:clawsweeper_needs_human",
-      "comment_id": "5715201332",
-      "comment_version_key": "5715201332:2026-09-24T22:12:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150920#issuecomment-5715201332",
-      "comment_created_at": "2026-09-17T13:32:27Z",
-      "comment_updated_at": "2026-09-24T22:12:50Z",
-      "comment_body_sha256": "32cc6558d169879f92d2eecec86183120968f7be7d3c35dc5c171cd9ad24686d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150920,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native plugin observers will receive completion for successful skips they previously never saw. An observer that treats every completion as rewritten history may perform unnecessary f... (sha=61be59c97d68955a2f7dd1208c2ec11ffb9a3fb5)",
-      "expected_head_sha": "61be59c97d68955a2f7dd1208c2ec11ffb9a3fb5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:13:36.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/81925-native-noop-after-compaction",
-        "head_sha": "61be59c97d68955a2f7dd1208c2ec11ffb9a3fb5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150958:5716570534:2026-09-24T22:00:30Z:clawsweeper_auto_repair",
       "comment_id": "5716570534",
@@ -33925,6 +33892,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147584:5657453081:2026-09-25T05:11:02Z:clawsweeper_needs_human",
+      "comment_id": "5657453081",
+      "comment_version_key": "5657453081:2026-09-25T05:11:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147584#issuecomment-5657453081",
+      "comment_created_at": "2026-09-14T00:38:26Z",
+      "comment_updated_at": "2026-09-25T05:11:02Z",
+      "comment_body_sha256": "e22eb94a8585ceda9fade3ab4f950f0a0e0f2c5455f4bee582ca0a4693209731",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147584,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: Earlier packaged Windows cells exercised the worker, an allowed grant, wrong-receiver rejection, and c...; Review finding: [P1] Bind the turn requester to the recorded update origin — src/infra/update-repair-turn-worker.ts:41-55 - [high] Unbound requester in delegated repair — src/infr... (sha=d084b25966a63e062b3aab423fd8cd89d74fb86f)",
+      "expected_head_sha": "d084b25966a63e062b3aab423fd8cd89d74fb86f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T05:12:22.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-repair-turn-worker",
+        "head_sha": "d084b25966a63e062b3aab423fd8cd89d74fb86f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
