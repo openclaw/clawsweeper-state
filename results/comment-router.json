@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T11:05:39.160Z",
+  "updated_at": "2026-09-25T11:06:50.930Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157650:5827439079:2026-09-25T05:41:53Z:re_review",
-      "comment_id": "5827439079",
-      "comment_version_key": "5827439079:2026-09-25T05:41:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157650#issuecomment-5827439079",
-      "comment_created_at": "2026-09-25T05:41:53Z",
-      "comment_updated_at": "2026-09-25T05:41:53Z",
-      "comment_body_sha256": "e7e2646439a522ca1bd318344b499293d1baa1cd9f925a34c316970513ef6e24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157650,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T05:54:58.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-anthropic-cache-carrier",
-        "head_sha": "2ee85a9b8f2021d1dea799ff10d3263b3383b095",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157856:5827444108:2026-09-25T05:42:26Z:re_review",
       "comment_id": "5827444108",
@@ -33352,6 +33305,39 @@
         "kind": "pull_request",
         "branch": "codex/compaction-model-source-20260925",
         "head_sha": "46a6c71a274e265ab712266aa0fc7122cc11bcc9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:666:5827652409:2026-09-25T11:05:51Z:clawsweeper_needs_human",
+      "comment_id": "5827652409",
+      "comment_version_key": "5827652409:2026-09-25T11:05:51Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/666#issuecomment-5827652409",
+      "comment_created_at": "2026-09-25T06:03:59Z",
+      "comment_updated_at": "2026-09-25T11:05:51Z",
+      "comment_body_sha256": "d396bca40cc31b9bd872880263dc5d794aef266465a68ddf462d953a24f12ec7",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 666,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the branch reports real filesystem and installed-package retirement checks, but its Linux swap fixture...; Review finding: [P1] Prevent native watchers from binding outside the admitted Root — src/watch-node.ts:80 - [high] Out-of-Root activity reaches the dirty callback — src/watch-nod... (sha=7d6dd4e7729384dca5f4b626a4a7ff92cb8ea9f9)",
+      "expected_head_sha": "7d6dd4e7729384dca5f4b626a4a7ff92cb8ea9f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T11:06:50.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fs-safe-watch-contract-20260925",
+        "head_sha": "7d6dd4e7729384dca5f4b626a4a7ff92cb8ea9f9",
         "cluster_id": null,
         "job_path": null
       }
