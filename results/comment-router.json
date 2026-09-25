@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T10:02:31.020Z",
+  "updated_at": "2026-09-25T10:02:42.152Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157863:5826388283:2026-09-25T04:25:27Z:clawsweeper_needs_human",
-      "comment_id": "5826388283",
-      "comment_version_key": "5826388283:2026-09-25T04:25:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157863#issuecomment-5826388283",
-      "comment_created_at": "2026-09-25T03:52:12Z",
-      "comment_updated_at": "2026-09-25T04:25:27Z",
-      "comment_body_sha256": "04ecae7b6c3ed3456a156a95093d51342b5f5a9f358648badfed55950cff7eba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The committed Linux regression has not been shown to fail unchanged on the pre-fix revision, and its required standalone one-worker wall time is not recorded. (sha=18d4b068c1e0c93dbab70304a1343e6cc00910f3)",
-      "expected_head_sha": "18d4b068c1e0c93dbab70304a1343e6cc00910f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T04:28:03.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-command-adopted-reaping-20260925",
-        "head_sha": "18d4b068c1e0c93dbab70304a1343e6cc00910f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157868:5826396885:2026-09-25T04:15:06Z:clawsweeper_auto_repair",
       "comment_id": "5826396885",
@@ -34144,6 +34111,53 @@
         "kind": "pull_request",
         "branch": "databricks-native-provider",
         "head_sha": "9667ae3aa7887f72bd5ddfb5e341665572bc3c27",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155442:5830530910:2026-09-25T10:01:37Z:re_review",
+      "comment_id": "5830530910",
+      "comment_version_key": "5830530910:2026-09-25T10:01:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155442#issuecomment-5830530910",
+      "comment_created_at": "2026-09-25T10:01:37Z",
+      "comment_updated_at": "2026-09-25T10:01:37Z",
+      "comment_body_sha256": "053490e07ff9b3239082ab585ab7f60b7804e816a5afe8fdaca7fd2caa6d283d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155442,
+      "author": "zozo123",
+      "author_id": 553010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-run",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T10:02:39.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/liquid-adaptive-test-time-compute",
+        "head_sha": "085bff428897fccb12109dd4be9bc1326d459172",
         "cluster_id": null,
         "job_path": null
       },
