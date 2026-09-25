@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Doctor session SQLite recovery bug represented by https://github.com/openclaw/openclaw/issues/153502. First establish a failing regression through runDoctorSessionSqlite and settleRetainedDoctorSessionSources with one agent that has a verified retained plugin import plus a historical_transcript_deferred header mismatch. Repair receipt eligibility and final settlement in the existing Doctor ownership path so verified originals settle while mismatched files, receipts, and SQLite history remain protected. Cover the affected sibling agent and published-updater-to-candidate behavior where feasible. Do not add a feature, configuration option, schema change, permissive transcript import, or CHANGELOG.md entry; stop for review if the safe repair requires one. Measure any changed test’s wall time and run the focused Doctor test and changed-source checks.
+Repair the existing Doctor session SQLite settlement path for a retained plugin import that has verified active JSONL leftovers plus historical_transcript_deferred warnings. First establish a failing regression through the registered Doctor and post-session plugin completion entry point. Keep unverifiable historical originals and receipts protected; do not relax source identity checks, add config or schema, or change retention policy. Make advisory historical warnings compatible with safe settlement, and cover the mixed state and a genuinely conflicting source. Check the update handoff behavior using the published-driver contract where feasible. Record validation and user impact in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/commands/doctor-session-sqlite.ts
 - src/commands/doctor-session-sqlite-types.ts
+- src/commands/doctor-session-sqlite.ts
 - src/commands/doctor-session-sqlite.active-settlement.test.ts
-- src/commands/doctor-session-sqlite.retained-source-verification.test.ts
 
 Validation:
 
 - pnpm test src/commands/doctor-session-sqlite.active-settlement.test.ts --maxWorkers=1
-- pnpm test src/commands/doctor-session-sqlite.retained-source-verification.test.ts --maxWorkers=1
+- pnpm test src/commands/doctor-session-sqlite.discovery.test.ts --maxWorkers=1
 - node scripts/check-changed.mjs
 
 ## Operator Prompt
