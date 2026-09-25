@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158099",
+  "mode": "autonomous",
+  "run_id": "36134980534",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36134980534",
+  "head_sha": "78d6f0eeb3aee523598413635f34822eedcfed95",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158099.md",
+  "published_at": "2026-09-25T13:03:27.576Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158099",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158099",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms that deferred Gateway startup calls install discovery before the automatic-update opt-out is checked. Implementation is blocked: this checkout is read-only, and its local main SHA differs from the preflight main SHA. No failing regression, code change, or validation run was possible.",
+  "actions": [
+    {
+      "target": "#158099",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158099",
+      "candidate_fix": null,
+      "reason": "The documented startup opt-outs do not guard automatic install discovery."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158099",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158099",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout verified against current main before establishing the failing regression and applying the narrow fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
