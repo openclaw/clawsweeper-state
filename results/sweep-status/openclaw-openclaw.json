@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply finished",
-  "detail": "Apply/comment-sync run finished with 0 fresh closes out of requested limit 40. See apply-report.json for per-item results.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105102320",
+  "state": "Apply in progress",
+  "detail": "Starting apply/comment-sync run for up to 40 fresh all closes. Close reasons: all. Scan window: 600 records (base_window). Existing Codex automated review comments are updated in place when closing or when comment-only sync is stale by 0 day(s); checkpoints commit every 40 fresh closes; close delay is 2000ms; sync-comments-only=true; item numbers=155172,143584,154226,120600,128533,157974,151792,132396,139578,133848,152369,137469,151744,141520,152086,152461,152422,151939,152446,151826,138097,151999,151941,136888,144979,151986,152033,136895,152070,152047,150885,138409,152052,138528,151789,151766,151784,151958,151524,151525.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105727708",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,138 +19,7 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-09-25T07:32:45.948Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "close",
-    "status": "ok",
-    "summary": "368 examined; 46/600 action records; 0 closed, 4 comments synced, 42 skipped; cursor at #150995.",
-    "examined": 368,
-    "action_records": 46,
-    "processed": 46,
-    "processed_limit": 600,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 4,
-    "skipped": 42,
-    "skip_reasons": {
-      "kept_open": 35,
-      "skipped_changed_since_review": 3,
-      "skipped_runtime_budget": 2,
-      "skipped_same_author_pair": 1,
-      "skipped_stale_review_comment_sync": 1
-    },
-    "lanes": {
-      "closure": {
-        "processed": 41,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 41,
-        "skip_reasons": {
-          "kept_open": 35,
-          "skipped_changed_since_review": 3,
-          "skipped_runtime_budget": 2,
-          "skipped_same_author_pair": 1
-        }
-      },
-      "comment_sync": {
-        "processed": 5,
-        "closed": 0,
-        "comment_synced": 4,
-        "skipped": 1,
-        "skip_reasons": {
-          "skipped_stale_review_comment_sync": 1
-        }
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "kept_open",
-        "count": 35,
-        "bucket": "inspect",
-        "owner": "maintainer",
-        "retryable": false,
-        "label": "Inspect skip",
-        "summary": "Apply reported an unmapped skip bucket.",
-        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
-      },
-      {
-        "reason": "skipped_changed_since_review",
-        "count": 3,
-        "bucket": "review_refresh",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Refresh review",
-        "summary": "The item changed after the review that proposed closing it.",
-        "next_step": "Queue a fresh ClawSweeper review before any close retry."
-      },
-      {
-        "reason": "skipped_runtime_budget",
-        "count": 2,
-        "bucket": "run_budget",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Runtime budget",
-        "summary": "The apply lane stopped because it reached its bounded runtime.",
-        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      },
-      {
-        "reason": "skipped_stale_review_comment_sync",
-        "count": 1,
-        "bucket": "review_refresh",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Refresh review state",
-        "summary": "The durable review comment is newer than the local review report.",
-        "next_step": "Queue a fresh review instead of overwriting the newer durable comment."
-      },
-      {
-        "reason": "skipped_same_author_pair",
-        "count": 1,
-        "bucket": "stable_skip",
-        "owner": "none",
-        "retryable": false,
-        "label": "Stable skip",
-        "summary": "The source and canonical items have the same author, so automated duplicate close is intentionally conservative.",
-        "next_step": "Leave as a stable skip unless maintainers change the same-author close policy."
-      }
-    ],
-    "next_action_buckets": {
-      "inspect": 35,
-      "review_refresh": 4,
-      "run_budget": 2,
-      "stable_skip": 1
-    },
-    "cycle": {
-      "basis": "scheduled_close_cursor",
-      "apply_ready_count": 408,
-      "candidate_counts": {
-        "confirmed_proposal": 0,
-        "guarded_retry": 354,
-        "proof_required": 2,
-        "promotion_total": 1423,
-        "promotion_eligible": 54,
-        "promotion_cooldown_eligible": 1115,
-        "cooldown_eligible_total": 1473,
-        "inconsistent_or_stale": 1
-      },
-      "window_size": 368,
-      "estimated_full_cycle_windows": 2,
-      "estimated_full_cycle_minutes": 30,
-      "scheduled_interval_minutes": 15,
-      "label": "408 currently actionable close candidates (0 confirmed proposals, 354 guarded retries, 54/1423 promotion probes admitted; 2 require proof; 1473 cooldown-eligible backlog (1115 promotions); 1 inconsistent or stale record excluded) at 368 records per latest cursor advance: about 2 windows; scheduled cadence alone would take roughly 30 min at 15-minute intervals, while successful windows can continue sooner."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 150995,
-      "next_after_apply_checked_at": "2026-09-25T07:28:14.991Z",
-      "updated_at": "2026-09-25T07:28:52.017Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105102320"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-09-25T07:32:45.948Z",
@@ -283,5 +152,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105102320"
   },
-  "updated_at": "2026-09-25T07:32:46.190Z"
+  "updated_at": "2026-09-25T07:41:45.024Z"
 }
