@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T12:57:17.797Z",
+  "updated_at": "2026-09-25T12:57:45.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156541:5796090261:2026-09-25T06:26:14Z:clawsweeper_needs_human",
-      "comment_id": "5796090261",
-      "comment_version_key": "5796090261:2026-09-25T06:26:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156541#issuecomment-5796090261",
-      "comment_created_at": "2026-09-23T13:52:16Z",
-      "comment_updated_at": "2026-09-25T06:26:14Z",
-      "comment_body_sha256": "83e17197fe4a552df5f0917781520dea00d80e814429c231ab3608d555e9f53e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156541,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Doctor repair and SQLite backfill paths write existing state, but copied legacy-state results have not been compared across a published updater and this candidate. Retaine... (sha=239f27da4c3cf06e1c75c6692de58ce08b555547)",
-      "expected_head_sha": "239f27da4c3cf06e1c75c6692de58ce08b555547",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T06:27:36.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l11-config-sessions-accumulate-20260922",
-        "head_sha": "239f27da4c3cf06e1c75c6692de58ce08b555547",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157954:5827706386:2026-09-25T06:26:46Z:clawsweeper_auto_repair",
       "comment_id": "5827706386",
@@ -33225,6 +33192,53 @@
         "kind": "pull_request",
         "branch": "fix/meme-maker-mime-handling",
         "head_sha": "d41e2883eef98d3af3960668315ffca348ba3b8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157465:5832740007:2026-09-25T12:56:39Z:re_review",
+      "comment_id": "5832740007",
+      "comment_version_key": "5832740007:2026-09-25T12:56:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157465#issuecomment-5832740007",
+      "comment_created_at": "2026-09-25T12:56:39Z",
+      "comment_updated_at": "2026-09-25T12:56:39Z",
+      "comment_body_sha256": "290c87769015609badf54cc3e0eda65141137d7482e53ae67fc953a1edc7804e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157465,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T12:57:37.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gemini-tts-two-speakers",
+        "head_sha": "961724a67c2a0bb79b3ae33883b56475ac98167a",
         "cluster_id": null,
         "job_path": null
       },
