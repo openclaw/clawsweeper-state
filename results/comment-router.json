@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T18:13:57.066Z",
+  "updated_at": "2026-09-25T18:14:55.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157885:5826568286:2026-09-25T12:05:36Z:clawsweeper_needs_human",
-      "comment_id": "5826568286",
-      "comment_version_key": "5826568286:2026-09-25T12:05:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157885#issuecomment-5826568286",
-      "comment_created_at": "2026-09-25T04:12:32Z",
-      "comment_updated_at": "2026-09-25T12:05:36Z",
-      "comment_body_sha256": "a3699e798dc3417239175881a0375d90f58473d8e96489b58da197e019f94d05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157885,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility with a Scheduled Task installed by a released OpenClaw version remains unproven: the new native test starts Node directly and does not show status and stop through the p... (sha=6aafd725065070a96fa5323885252d49db1c80ba)",
-      "expected_head_sha": "6aafd725065070a96fa5323885252d49db1c80ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T12:09:03.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-process-text-47a84c",
-        "head_sha": "6aafd725065070a96fa5323885252d49db1c80ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157833:5826578918:2026-09-25T11:58:03Z:clawsweeper_needs_human",
       "comment_id": "5826578918",
@@ -32531,6 +32498,53 @@
         "kind": "pull_request",
         "branch": "fix/retained-workspace-identity-20260926",
         "head_sha": "0e47eb16dd399c267169cad027d90d7494cf5834",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158225:5837267098:2026-09-25T18:13:55Z:re_review",
+      "comment_id": "5837267098",
+      "comment_version_key": "5837267098:2026-09-25T18:13:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158225#issuecomment-5837267098",
+      "comment_created_at": "2026-09-25T18:13:55Z",
+      "comment_updated_at": "2026-09-25T18:13:55Z",
+      "comment_body_sha256": "6d211be63539c1979e2783979822063bdf2466be6369eb374ab8c80ff90ccedc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158225,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T18:14:53.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/taskflow-retire-webhooks",
+        "head_sha": "e0044070bbaea58653788fdeb0592b171784b1dd",
         "cluster_id": null,
         "job_path": null
       },
