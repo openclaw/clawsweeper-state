@@ -1,0 +1,60 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158158",
+  "mode": "autonomous",
+  "run_id": "36149530191",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36149530191",
+  "head_sha": "993e19fdd0afc9b49370abe0b08e6a647db80da7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158158.md",
+  "published_at": "2026-09-25T14:49:46.969Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158158",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158158",
+  "canonical_pr": null,
+  "summary": "The checked-out main already rejects oversized chat frames before WebSocket I/O and handles that rejection without reconnect retries. The requested failure was not reproduced, so this bug-only job cannot justify an implementation PR. Runtime validation was unavailable because dependencies are absent and the worker filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#158158",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158158",
+      "candidate_fix": null,
+      "reason": "The reported disconnect path is guarded in the available checkout. Reproduction and validation on the preflight main SHA remain unverified."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#158158",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
