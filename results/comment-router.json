@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:07:46.454Z",
+  "updated_at": "2026-09-25T00:08:17.279Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1497:5816538438:2026-09-24T14:55:23Z:re_review",
-      "comment_id": "5816538438",
-      "comment_version_key": "5816538438:2026-09-24T14:55:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1497#issuecomment-5816538438",
-      "comment_created_at": "2026-09-24T14:55:23Z",
-      "comment_updated_at": "2026-09-24T14:55:23Z",
-      "comment_body_sha256": "b53791ef01da22802e7938f17fa56abfd02169cb4044c4eea873cedf811fb0ac",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1497,
-      "author": "joelagnel",
-      "author_id": 37460,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T15:03:41.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/rtx-spark-recipes",
-        "head_sha": "e124cf9b37dcb8ca33bbe70f19aed17925c0325f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1497:5803237020:2026-09-23T21:28:33Z:re_review",
       "comment_id": "5803237020",
@@ -33361,6 +33314,39 @@
         "kind": "pull_request",
         "branch": "codex/inline-security-reports",
         "head_sha": "22b5b6f85adea35e1023c23cf9e119d30f8c2ab9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157524:5821238678:2026-09-25T00:07:09Z:clawsweeper_needs_human",
+      "comment_id": "5821238678",
+      "comment_version_key": "5821238678:2026-09-25T00:07:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157524#issuecomment-5821238678",
+      "comment_created_at": "2026-09-24T19:57:14Z",
+      "comment_updated_at": "2026-09-25T00:07:09Z",
+      "comment_body_sha256": "9b2735190a540b5e24f2aaf5a189213b2af4a152a071be7dcba1d24602fead11",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR describes a successful published-updater and rollback scenario, but the linked hosting run is marked cancelled and its detailed scenario receipt was inaccessible from this revi... (sha=38c7aba7406bc7b78bb4ae309954205a86b8523c)",
+      "expected_head_sha": "38c7aba7406bc7b78bb4ae309954205a86b8523c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T00:08:17.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-prod-cutover",
+        "head_sha": "38c7aba7406bc7b78bb4ae309954205a86b8523c",
         "cluster_id": null,
         "job_path": null
       }
