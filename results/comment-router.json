@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T19:35:19.030Z",
+  "updated_at": "2026-09-25T19:35:41.286Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-09-25T13:32:26Z:clawsweeper_needs_human",
-      "comment_id": "5833145824",
-      "comment_version_key": "5833145824:2026-09-25T13:32:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5833145824",
-      "comment_created_at": "2026-09-25T13:24:34Z",
-      "comment_updated_at": "2026-09-25T13:32:26Z",
-      "comment_body_sha256": "ce678844fc1740470108702f315ff531ba06231501a51d3878e050fd1664bc45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway grant reaches worker or Codex GitHub I/O, but the supplied synthetic-token tests and typech...; Review finding: [P1] Retain the worker binding on non-GitHub workspaces — src/gateway/worker-environments/worker-github-binding.ts:43-49 - [P1] Preserve the selected per-agent Git... (sha=b2b47b7620bb05b36b5131381f3174a5442c9fae)",
-      "expected_head_sha": "b2b47b7620bb05b36b5131381f3174a5442c9fae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T13:43:49.353Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "b2b47b7620bb05b36b5131381f3174a5442c9fae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158080:5831255718:2026-09-25T13:43:42Z:clawsweeper_auto_repair",
       "comment_id": "5831255718",
@@ -32507,6 +32474,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158226:5838411264:2026-09-25T19:34:30Z:re_review",
+      "comment_id": "5838411264",
+      "comment_version_key": "5838411264:2026-09-25T19:34:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158226#issuecomment-5838411264",
+      "comment_created_at": "2026-09-25T19:34:30Z",
+      "comment_updated_at": "2026-09-25T19:34:30Z",
+      "comment_body_sha256": "96f664f364e2ba0df2a4b86442044c954c3d1ad61ba0cc714f7f921450143eaf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158226,
+      "author": "Weiming-Hu",
+      "author_id": 16421338,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T19:35:39.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/deepgram-idle-finalize-request",
+        "head_sha": "6171edcffb4cc5aa2db566b25633af4a2ea2d2d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
