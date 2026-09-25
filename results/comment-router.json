@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:56:36.995Z",
+  "updated_at": "2026-09-25T04:56:49.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157740:5824405168:2026-09-25T00:10:38Z:clawsweeper_needs_human",
-      "comment_id": "5824405168",
-      "comment_version_key": "5824405168:2026-09-25T00:10:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157740#issuecomment-5824405168",
-      "comment_created_at": "2026-09-25T00:10:38Z",
-      "comment_updated_at": "2026-09-25T00:10:38Z",
-      "comment_body_sha256": "d167ab5407ab193bc20fce13dbb1b315e22e4605b6f47036d62a76532432a936",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157740,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds a required hosted planner to narrow PR validation, while its matched replay shows no improvement in median selected jobs or the priced-both workload. The initial exact... (sha=65f2fed1363f0f2ce0351e746615bb9267ddfd65)",
-      "expected_head_sha": "65f2fed1363f0f2ce0351e746615bb9267ddfd65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:11:45.569Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/cs1c-final",
-        "head_sha": "65f2fed1363f0f2ce0351e746615bb9267ddfd65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157636:5824354545:2026-09-25T00:07:37Z:clawsweeper_needs_human",
       "comment_id": "5824354545",
@@ -33953,6 +33920,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157905:5826979659:2026-09-25T04:55:16Z:re_review",
+      "comment_id": "5826979659",
+      "comment_version_key": "5826979659:2026-09-25T04:55:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157905#issuecomment-5826979659",
+      "comment_created_at": "2026-09-25T04:55:16Z",
+      "comment_updated_at": "2026-09-25T04:55:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157905,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T04:56:48.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release-speed/closeout-keyed",
+        "head_sha": "997dd124fc33ebe4aaef3169c6f45a70cda1be80",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
