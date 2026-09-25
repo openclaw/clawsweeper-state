@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T01:30:58.282Z",
+  "updated_at": "2026-09-25T01:32:03.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:796:5820159490:2026-09-24T19:53:10Z:clawsweeper_needs_human",
-      "comment_id": "5820159490",
-      "comment_version_key": "5820159490:2026-09-24T19:53:10Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/796#issuecomment-5820159490",
-      "comment_created_at": "2026-09-24T18:48:24Z",
-      "comment_updated_at": "2026-09-24T19:53:10Z",
-      "comment_body_sha256": "72e0f4c8324a755aedc10b2f015d6111b55902f1744d5f4ff549b209ba4dbd51",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 796,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Apps whose AX text setter returns a generic error without changing text previously could continue through synthetic typing; the branch now stops with an indeterminate result. The effe... (sha=83481a69be406c909dede1876e830336c8591a57)",
-      "expected_head_sha": "83481a69be406c909dede1876e830336c8591a57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T19:54:42.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/targeted-command-a-receipts",
-        "head_sha": "83481a69be406c909dede1876e830336c8591a57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152205:5736996577:2026-09-24T19:53:40Z:clawsweeper_auto_repair",
       "comment_id": "5736996577",
@@ -33625,6 +33592,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157745:5825186177:2026-09-25T01:31:06Z:re_review",
+      "comment_id": "5825186177",
+      "comment_version_key": "5825186177:2026-09-25T01:31:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157745#issuecomment-5825186177",
+      "comment_created_at": "2026-09-25T01:31:06Z",
+      "comment_updated_at": "2026-09-25T01:31:06Z",
+      "comment_body_sha256": "ff322f2970cd6c7cd9fc6f7c7b541d2d4aea0c379f6e539b3eb04c4d4f04eefd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157745,
+      "author": "stevenlee-oai",
+      "author_id": 213687449,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T01:32:02.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/siwc-reconnect-selection",
+        "head_sha": "66a7f28e289f1eac0e925797622114823aa5e888",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
