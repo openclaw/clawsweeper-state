@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T07:52:33.008Z",
+  "updated_at": "2026-09-25T07:53:26.855Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157650:5825735480:2026-09-25T02:34:19Z:re_review",
-      "comment_id": "5825735480",
-      "comment_version_key": "5825735480:2026-09-25T02:34:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157650#issuecomment-5825735480",
-      "comment_created_at": "2026-09-25T02:34:19Z",
-      "comment_updated_at": "2026-09-25T02:34:19Z",
-      "comment_body_sha256": "bb7716ea93d4339873d6528854ff0c9e283914d317610f33a28d22e1eb135267",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157650,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:35:48.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-anthropic-cache-carrier",
-        "head_sha": "bbd8e369e323598476a40b797924464f6c72a3e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157825:5825741027:2026-09-25T02:35:00Z:clawsweeper_needs_human",
       "comment_id": "5825741027",
@@ -34326,6 +34279,39 @@
         "kind": "pull_request",
         "branch": "fix/account-management-console",
         "head_sha": "8b6309ddc62bfb24974aa9ffda991d85c1443c7e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157748:5824627301:2026-09-25T07:52:12Z:clawsweeper_needs_human",
+      "comment_id": "5824627301",
+      "comment_version_key": "5824627301:2026-09-25T07:52:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157748#issuecomment-5824627301",
+      "comment_created_at": "2026-09-25T00:33:28Z",
+      "comment_updated_at": "2026-09-25T07:52:12Z",
+      "comment_body_sha256": "d07e693a0ff4e7ee0cc83a806cd32f552f7dd5e121a49886a13950645c2f812e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published-updater run used --no-restart. An existing managed Gateway's reactivation, reported version, and health after this refactor have not been observed with retained operator... (sha=bbb7ef56c7d230296d7d9bc93040ab5e79d9a39c)",
+      "expected_head_sha": "bbb7ef56c7d230296d7d9bc93040ab5e79d9a39c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T07:53:26.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l39-cli2",
+        "head_sha": "bbb7ef56c7d230296d7d9bc93040ab5e79d9a39c",
         "cluster_id": null,
         "job_path": null
       }
