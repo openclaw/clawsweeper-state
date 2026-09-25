@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T23:05:06.479Z",
+  "updated_at": "2026-09-25T23:05:07.709Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155088:5835706434:2026-09-25T16:20:22Z:re_review",
-      "comment_id": "5835706434",
-      "comment_version_key": "5835706434:2026-09-25T16:20:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155088#issuecomment-5835706434",
-      "comment_created_at": "2026-09-25T16:20:22Z",
-      "comment_updated_at": "2026-09-25T16:20:22Z",
-      "comment_body_sha256": "fc1aace0811bee063b85da60a25a375b714936d1e7ecf3cae3f04b51f29f48eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155088,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the pr body now records exact-head telegram test server evidence and inspected screenshots for partial-streamed /status, an ordinary streamed reply, and streaming-off /status. baseline dispatch negative controls fail as expected. the unrelated baseline live-ingress limitation is stated explicitly; no live-before screenshot is claimed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T16:21:19.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-status-stream-152651",
-        "head_sha": "b603dde18d102d53ecba4e9463dd8c8581b046d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156310:5793771061:2026-09-25T16:20:10Z:clawsweeper_needs_human",
       "comment_id": "5793771061",
@@ -33466,6 +33419,39 @@
         "kind": "pull_request",
         "branch": "fix/incognito-agent-rpc-sinks",
         "head_sha": "ab8bc31835e23b7f949083b09a83ea5e360b3b72",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158392:5840550029:2026-09-25T23:02:18Z:clawsweeper_needs_human",
+      "comment_id": "5840550029",
+      "comment_version_key": "5840550029:2026-09-25T23:02:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158392#issuecomment-5840550029",
+      "comment_created_at": "2026-09-25T22:30:01Z",
+      "comment_updated_at": "2026-09-25T23:02:18Z",
+      "comment_body_sha256": "4ee69f4a72a65b4339694d9361c00e9ca2181990a9a2c4ee92b8dc560fde0854",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported OBS 32.2.2 Mac run used the production OBS controller and showed a synthetic Program fram...; Review finding: [P1] Keep private visuals off OBS Program — extensions/facetime/src/obs-video-controller.ts:84-86 - [P2] Start the OBS bridge only for an admitted video call — ext... (sha=89f6817148cbe3334b46be0becd59188912fd7c6)",
+      "expected_head_sha": "89f6817148cbe3334b46be0becd59188912fd7c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T23:05:07.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/facetime-video-bridge",
+        "head_sha": "89f6817148cbe3334b46be0becd59188912fd7c6",
         "cluster_id": null,
         "job_path": null
       }
