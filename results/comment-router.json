@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T05:18:17.029Z",
+  "updated_at": "2026-09-25T05:19:35.942Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157007:5807709732:2026-09-24T23:04:31Z:clawsweeper_needs_human",
-      "comment_id": "5807709732",
-      "comment_version_key": "5807709732:2026-09-24T23:04:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157007#issuecomment-5807709732",
-      "comment_created_at": "2026-09-24T04:29:37Z",
-      "comment_updated_at": "2026-09-24T23:04:31Z",
-      "comment_body_sha256": "d375295fbc54ce1f07d7e40bb3325366b9434dfd2d264756b67bf7c6bc05ea05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157007,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A launchd job with ExitTimeOut at or below five seconds now gets zero active-work drain on a launchd-driven stop. The contributor measured the budget, but a maintainer has not accepte... (sha=b736529385f2d2098fdf1a00fd5e385b59aec1b2)",
-      "expected_head_sha": "b736529385f2d2098fdf1a00fd5e385b59aec1b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:13:36.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/launchd-stop-budget",
-        "head_sha": "b736529385f2d2098fdf1a00fd5e385b59aec1b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157144:5810608779:2026-09-24T22:54:31Z:clawsweeper_needs_human",
       "comment_id": "5810608779",
@@ -33941,6 +33908,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1658:5827221492:2026-09-25T05:18:29Z:re_review",
+      "comment_id": "5827221492",
+      "comment_version_key": "5827221492:2026-09-25T05:18:29Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1658#issuecomment-5827221492",
+      "comment_created_at": "2026-09-25T05:18:29Z",
+      "comment_updated_at": "2026-09-25T05:18:29Z",
+      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1658,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T05:19:34.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/triage-bay-sample-cost",
+        "head_sha": "e5991f28d95961adeb246f44583fb6f531e81e6e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
