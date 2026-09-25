@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153145",
+  "mode": "autonomous",
+  "run_id": "36145160672",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36145160672",
+  "head_sha": "4eb040a942916c6f8f81ea3a8154a2b676bf5d88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153145.md",
+  "published_at": "2026-09-25T14:12:45.141Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153145",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153145",
+  "canonical_pr": null,
+  "summary": "Current main still has the source-proven Talk Mode reply-loss path: a 45-second event wait followed by a 12-second history fallback can end while the agent run remains active. The reporter's exact 30-second timing is unverified. This Linux, read-only worker could not run the required failing native regression, edit the branch, or validate a fix, so no PR is ready.",
+  "actions": [
+    {
+      "target": "#153145",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153145",
+      "candidate_fix": null,
+      "reason": "Keep the canonical issue open while the macOS owner-boundary regression and repair are completed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153145",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#153145",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked in this worker by the read-only checkout and unavailable disposable macOS runner. Reproduce the defect before changing code or opening a PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

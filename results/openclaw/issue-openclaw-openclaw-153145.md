@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153145"
-mode: "plan"
-run_id: "35467598676"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35467598676"
-head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-19T20:33:24.818Z"
-canonical: "#153145"
-canonical_issue: "#153145"
+mode: "autonomous"
+run_id: "36145160672"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36145160672"
+head_sha: "4eb040a942916c6f8f81ea3a8154a2b676bf5d88"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-25T14:12:45.141Z"
+canonical: "https://github.com/openclaw/openclaw/issues/153145"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/153145"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35467598676](https://github.com/openclaw/clawsweeper/actions/runs/35467598676)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36145160672](https://github.com/openclaw/clawsweeper/actions/runs/36145160672)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #153145
+Canonical: https://github.com/openclaw/openclaw/issues/153145
 
 ## Summary
 
-Plan a narrow native Talk reply-observation fix. Checkout matches preflight main e9390ffd104ef34f4f43be3118c56c1ee40f5f54; the reported fixed-wait failure remains in source. Runtime reproduction, implementation, macOS validation, and screenshots remain pending. No changes made.
+Current main still has the source-proven Talk Mode reply-loss path: a 45-second event wait followed by a 12-second history fallback can end while the agent run remains active. The reporter's exact 30-second timing is unverified. This Linux, read-only worker could not run the required failing native regression, edit the branch, or validate a fix, so no PR is ready.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Plan a narrow native Talk reply-observation fix. Checkout matches preflight main
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153145 | fix_needed | planned | canonical | The source finding supports a bounded bug repair. Establish the failing native regression before editing production code; stop for triage if it does not reproduce on refreshed main. |
-| #60636 | keep_closed | skipped | related | Historical timeout context does not establish that the native Talk defect is fixed or duplicated. |
+| #153145 | fix_needed | planned | canonical | Keep the canonical issue open while the macOS owner-boundary regression and repair are completed. |
+| cluster:issue-openclaw-openclaw-153145 | build_fix_artifact | blocked |  | Implementation is blocked in this worker by the read-only checkout and unavailable disposable macOS runner. Reproduce the defect before changing code or opening a PR. |
 
 ## Needs Human
 
