@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:25:03.407Z",
+  "updated_at": "2026-09-25T06:25:03.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157749:5825023475:2026-09-25T01:15:02Z:re_review",
-      "comment_id": "5825023475",
-      "comment_version_key": "5825023475:2026-09-25T01:15:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157749#issuecomment-5825023475",
-      "comment_created_at": "2026-09-25T01:15:02Z",
-      "comment_updated_at": "2026-09-25T01:15:02Z",
-      "comment_body_sha256": "936632d5dbabea913b9dfc5e4bf051d24f0e4763684dec626f1ee3bce3140032",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157749,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T01:16:16.744Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/test-file-line-limits",
-        "head_sha": "8a5d83989e539b3799d86d6e1b641fb881c53fff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157505:5820551342:2026-09-25T01:15:21Z:clawsweeper_needs_human",
       "comment_id": "5820551342",
@@ -34380,6 +34333,39 @@
         "kind": "pull_request",
         "branch": "fix/prepared-catalog-generation-recovery",
         "head_sha": "ecb5109713198cffbad7eccf74b46f323a5f316c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148581:5671897776:2026-09-25T06:20:01Z:clawsweeper_needs_human",
+      "comment_id": "5671897776",
+      "comment_version_key": "5671897776:2026-09-25T06:20:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148581#issuecomment-5671897776",
+      "comment_created_at": "2026-09-14T22:52:53Z",
+      "comment_updated_at": "2026-09-25T06:20:01Z",
+      "comment_body_sha256": "11eac27d6f545477aab53d352b4d9ea54bdb7f1aa16c778b60da16aebc8c378a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148581,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing setup with both ChatGPT and API-key credentials will now send unauthored nano requests through the billable Platform API instead of the previously selected subscription ro... (sha=5220187fc2b40f9f424359f7ef654392a16cd208)",
+      "expected_head_sha": "5220187fc2b40f9f424359f7ef654392a16cd208",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:25:03.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-nano-platform-route",
+        "head_sha": "5220187fc2b40f9f424359f7ef654392a16cd208",
         "cluster_id": null,
         "job_path": null
       }
