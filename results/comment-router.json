@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T20:49:25.486Z",
+  "updated_at": "2026-09-25T20:52:40.537Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158163:5834382186:2026-09-25T14:49:15Z:clawsweeper_auto_repair",
-      "comment_id": "5834382186",
-      "comment_version_key": "5834382186:2026-09-25T14:49:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158163#issuecomment-5834382186",
-      "comment_created_at": "2026-09-25T14:49:15Z",
-      "comment_updated_at": "2026-09-25T14:49:15Z",
-      "comment_body_sha256": "1232fd6a3463a0727df62cf1895e8fb0fd27b6198a0e1da406d3f5988778c57e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158163,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a804f6bfdfbe1054646c41533b5e2b06001eb43e)",
-      "expected_head_sha": "a804f6bfdfbe1054646c41533b5e2b06001eb43e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T14:50:37.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/premigration-sqlite-snapshot-rollback",
-        "head_sha": "a804f6bfdfbe1054646c41533b5e2b06001eb43e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:140995:5834386921:2026-09-25T14:49:34Z:re_review",
       "comment_id": "5834386921",
@@ -32507,6 +32474,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149456:5839425470:2026-09-25T20:51:31Z:re_review",
+      "comment_id": "5839425470",
+      "comment_version_key": "5839425470:2026-09-25T20:51:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149456#issuecomment-5839425470",
+      "comment_created_at": "2026-09-25T20:51:31Z",
+      "comment_updated_at": "2026-09-25T20:51:31Z",
+      "comment_body_sha256": "70956f4e8162642c1fba7a0be1b4d48edea34235854ed17aba55037421a0708a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149456,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T20:52:38.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/held-module-route-teardown-20260916",
+        "head_sha": "95e7ecad12828df2eb1bc0bb995b8b75e5343c45",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
