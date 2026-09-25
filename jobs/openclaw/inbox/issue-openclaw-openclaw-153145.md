@@ -67,23 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair native macOS Talk abandoning a still-active agent response in TalkModeRuntime.sendAndSpeak. First establish a failing owner-boundary regression with prompt acknowledgment, an active run lasting beyond the existing 45-second event wait plus 12-second history fallback, and a later final response within a 600-second agent budget. Distinguish this source-proven failure from the reporter's unverified exact 30-second timing. Reuse the existing agent.wait request/observation contract and native pending-run patterns so a retryable observation timeout is not treated as run completion; keep execution-budget enforcement in the Gateway. Preserve run/session/route identity, terminal failure handling, explicit Stop, pause/lifecycle cancellation, and rejection of late results after replacement. Do not merely enlarge the chat.send acknowledgment timeout, introduce a new setting, alter provider timeouts, rewrite transcripts, or expand into the cross-client timeout-policy feature. Related context: https://github.com/openclaw/openclaw/issues/150189 and https://github.com/openclaw/openclaw/issues/60636. Likely files are TalkModeRuntime.swift, GatewayConnection.swift if a narrow adapter is needed, and focused native Talk regression coverage; reuse shared request/codec contracts. Stop and return for triage if a new feature, configuration knob, protocol policy, or broader architecture change is necessary. Validate on a disposable macOS runner using the listed checks, show delayed-response speech completion and cancellation through the real native flow, and provide sanitized before/after screenshots as required by repository UI policy. Record behavior and validation in the PR body; do not edit release-owned CHANGELOG.md.
+Repair the existing macOS Talk Mode bug where an accepted slow chat run outlives the client’s 45-second event wait and 12-second history fallback, leaving its reply unspoken. First establish a failing regression for the accepted-send path. Keep the repair in the native Talk/Gateway client boundary using the existing agent.wait completion contract; match the accepted run, retrieve complete text before speech, and preserve Stop, terminal-failure, and lifecycle cancellation behavior. Review https://github.com/openclaw/openclaw/pull/153444 as closed, unmerged prior work, not as a landed fix. Do not add a Talk-specific config option, change provider timeouts, or alter unrelated realtime Talk behavior. Add focused regression coverage and obtain isolated native macOS after-fix evidence of delayed reply playback and Stop. Record the user-facing fix and proof in the PR body; do not edit release-owned CHANGELOG.md.
 
 Likely files:
 
 - apps/macos/Sources/OpenClaw/TalkModeRuntime.swift
 - apps/macos/Sources/OpenClaw/GatewayConnection.swift
-- apps/macos/Tests/OpenClawIPCTests/TalkModeRuntimeReplyTests.swift
-- apps/shared/OpenClawKit/Sources/OpenClawChatUI/ChatGatewayRequest.swift
+- apps/macos/Tests/OpenClawIPCTests/TalkModeRuntimeSpeechTests.swift
+- apps/macos/Tests/OpenClawIPCTests/MacGatewayChatTransportMappingTests.swift
 
 Validation:
 
 - swift build --package-path apps/macos --build-system native --build-tests
-- node scripts/test-macos-native.mts named --package-path apps/macos --build-system native --enable-code-coverage --skip-build --filter 'TalkModeRuntimeReplyTests|TalkModeRuntimeSpeechTests'
-- swift test --package-path apps/shared/OpenClawKit --filter 'ChatGatewayRequestTests|ChatGatewayPayloadCodecTests'
-- scripts/lint-swift.sh macos
-- node scripts/check-changed.mjs
-- git diff --check
+- Run focused macOS Talk runtime and Gateway transport tests on a disposable macOS host.
+- Capture an isolated native Talk run in which a delayed accepted reply is displayed and spoken, and Stop prevents later playback.
 
 ## Operator Prompt
 
