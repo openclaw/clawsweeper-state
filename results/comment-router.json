@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T14:11:28.281Z",
+  "updated_at": "2026-09-25T14:12:09.591Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:258:5828894558:2026-09-25T07:51:24Z:clawsweeper_needs_human",
-      "comment_id": "5828894558",
-      "comment_version_key": "5828894558:2026-09-25T07:51:24Z",
-      "comment_url": "https://github.com/openclaw/clawrouter/pull/258#issuecomment-5828894558",
-      "comment_created_at": "2026-09-25T07:51:24Z",
-      "comment_updated_at": "2026-09-25T07:51:24Z",
-      "comment_body_sha256": "9a3fdf29f6d4ff89cbc40b807efc93f7e7e86f43d1780a68859913a725cfee40",
-      "repo": "openclaw/clawrouter",
-      "issue_number": 258,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement console requires strict account routes absent from current main. Exposing it before the stacked backend is integrated would leave existing administrators unable to sav... (sha=8b6309ddc62bfb24974aa9ffda991d85c1443c7e)",
-      "expected_head_sha": "8b6309ddc62bfb24974aa9ffda991d85c1443c7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T07:52:33.008Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/account-management-console",
-        "head_sha": "8b6309ddc62bfb24974aa9ffda991d85c1443c7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157748:5824627301:2026-09-25T07:52:12Z:clawsweeper_needs_human",
       "comment_id": "5824627301",
@@ -33276,6 +33243,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149568:5833824597:2026-09-25T14:11:17Z:re_review",
+      "comment_id": "5833824597",
+      "comment_version_key": "5833824597:2026-09-25T14:11:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149568#issuecomment-5833824597",
+      "comment_created_at": "2026-09-25T14:11:17Z",
+      "comment_updated_at": "2026-09-25T14:11:17Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149568,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T14:12:08.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-spawn-agentid-schema-149550",
+        "head_sha": "1a87c14263ca5f5ef3ab65feca0a4cd79a2a3f85",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
