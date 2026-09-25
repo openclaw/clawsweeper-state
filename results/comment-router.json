@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T09:12:29.535Z",
+  "updated_at": "2026-09-25T09:12:43.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156389:5792906376:2026-09-25T04:02:43Z:clawsweeper_needs_human",
-      "comment_id": "5792906376",
-      "comment_version_key": "5792906376:2026-09-25T04:02:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156389#issuecomment-5792906376",
-      "comment_created_at": "2026-09-23T10:07:58Z",
-      "comment_updated_at": "2026-09-25T04:02:43Z",
-      "comment_body_sha256": "ba3473131d888947f1fc761c643ad0a5ec60f908db6ef60809b0d842e08a7e57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing native Ollama setups using blockStreamingBreak: \"text_end\" would receive durable chunks only at message_end, delaying long tool-free answers; the streaming owner has not acce... (sha=f3cacad70b0de5871edb81ae831cf66464286bf0)",
-      "expected_head_sha": "f3cacad70b0de5871edb81ae831cf66464286bf0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T04:03:51.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-pretool-commentary-133922",
-        "head_sha": "f3cacad70b0de5871edb81ae831cf66464286bf0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157806:5825514923:2026-09-25T04:03:04Z:clawsweeper_needs_human",
       "comment_id": "5825514923",
@@ -34025,6 +33992,39 @@
       "status": "skipped",
       "processed_at": "2026-09-25T09:12:29.535Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158023:5829880169:2026-09-25T09:11:21Z:clawsweeper_needs_human",
+      "comment_id": "5829880169",
+      "comment_version_key": "5829880169:2026-09-25T09:11:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158023#issuecomment-5829880169",
+      "comment_created_at": "2026-09-25T09:11:21Z",
+      "comment_updated_at": "2026-09-25T09:11:21Z",
+      "comment_body_sha256": "470175f06fd1f401c2aedbbe94eaabb7f80e4596287f2ba002bae44b0414c450",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158023,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body describes a manual Chromium smoke run, but provides no observable after-fix trace through createTab, a later allowed comma...; Review finding: [P1] Expire the unnamed-group grant after creation handoff — extensions/browser/chrome-extension/modules/tab-access.js:421 - [P2] Allow safe recovery when group na... (sha=667c78b14176ab1d450c163f52ac7463b4556e6d)",
+      "expected_head_sha": "667c78b14176ab1d450c163f52ac7463b4556e6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T09:12:43.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wavebox-tab-group-fallback-v2",
+        "head_sha": "667c78b14176ab1d450c163f52ac7463b4556e6d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
