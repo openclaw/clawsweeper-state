@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T15:15:35.857Z",
+  "updated_at": "2026-09-25T15:15:59.879Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145043:5637157715:2026-09-25T07:41:17Z:clawsweeper_auto_repair",
-      "comment_id": "5637157715",
-      "comment_version_key": "5637157715:2026-09-25T07:41:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145043#issuecomment-5637157715",
-      "comment_created_at": "2026-09-11T16:00:34Z",
-      "comment_updated_at": "2026-09-25T07:41:17Z",
-      "comment_body_sha256": "b13aee105f1bb7dc2b5a18589d61ebe1290661fd50a82555959ea69e0eb8f929",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145043,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d50e7e798fb6c1d00091bdce45a5f427f652c4b2)",
-      "expected_head_sha": "d50e7e798fb6c1d00091bdce45a5f427f652c4b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T08:19:35.644Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-stale-plugin-handoff-123326",
-        "head_sha": "d50e7e798fb6c1d00091bdce45a5f427f652c4b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146348:5648120098:2026-09-25T08:16:33Z:clawsweeper_needs_human",
       "comment_id": "5648120098",
@@ -33576,6 +33543,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1513:5819648089:2026-09-25T15:14:44Z:clawsweeper_needs_human",
+      "comment_id": "5819648089",
+      "comment_version_key": "5819648089:2026-09-25T15:14:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1513#issuecomment-5819648089",
+      "comment_created_at": "2026-09-24T18:16:48Z",
+      "comment_updated_at": "2026-09-25T15:14:44Z",
+      "comment_body_sha256": "b1f3d965d866f98f3241d5773d07c42a73a04adc7b63bf746a609799942015a9",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The current-head Windows Config-page screenshot demonstrates blank password-style controls for modeled nsec and webhookUrl values. The...; Review finding: [P1] Mask the supported Nostr private-key property — src/OpenClaw.Tray.WinUI/Helpers/ConfigPathSensitivity.cs:18-21 - [medium] Supported Nostr key remains visible... (sha=4184c01c6e0764b6c8f1bc8dcada125234aaced7)",
+      "expected_head_sha": "4184c01c6e0764b6c8f1bc8dcada125234aaced7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T15:15:59.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f083-mask-config-secrets",
+        "head_sha": "4184c01c6e0764b6c8f1bc8dcada125234aaced7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
