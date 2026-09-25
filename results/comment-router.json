@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T16:20:42.415Z",
+  "updated_at": "2026-09-25T16:20:50.493Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155186:5767367188:2026-09-25T10:01:32Z:clawsweeper_auto_repair",
-      "comment_id": "5767367188",
-      "comment_version_key": "5767367188:2026-09-25T10:01:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155186#issuecomment-5767367188",
-      "comment_created_at": "2026-09-21T20:54:07Z",
-      "comment_updated_at": "2026-09-25T10:01:32Z",
-      "comment_body_sha256": "071c2859a237e8dfe96f5c4261e111a404c008923eaff459a65ed644454e4ad0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155186,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fe3ca50e16271d18f8277c9cf6965d4fe6e6fbd6)",
-      "expected_head_sha": "fe3ca50e16271d18f8277c9cf6965d4fe6e6fbd6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T10:09:28.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-binding-affinity-yields-to-cooldown",
-        "head_sha": "fe3ca50e16271d18f8277c9cf6965d4fe6e6fbd6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156651:5799571610:2026-09-25T09:54:39Z:clawsweeper_auto_repair",
       "comment_id": "5799571610",
@@ -32428,6 +32395,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158120:5835697776:2026-09-25T16:19:42Z:re_review",
+      "comment_id": "5835697776",
+      "comment_version_key": "5835697776:2026-09-25T16:19:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158120#issuecomment-5835697776",
+      "comment_created_at": "2026-09-25T16:19:42Z",
+      "comment_updated_at": "2026-09-25T16:19:42Z",
+      "comment_body_sha256": "54ba709b788dd94ab29d935c9c58fe835f0ce40762d85106979c30b98226fe62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158120,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T16:20:48.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/owner-trust-chat",
+        "head_sha": "7ca4c09316bb8cfbca33b3789f7e6d4f0c68e96d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
