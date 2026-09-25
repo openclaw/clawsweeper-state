@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T14:08:13.271Z",
+  "updated_at": "2026-09-25T14:08:27.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157744:5828780323:2026-09-25T07:41:46Z:re_review",
-      "comment_id": "5828780323",
-      "comment_version_key": "5828780323:2026-09-25T07:41:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157744#issuecomment-5828780323",
-      "comment_created_at": "2026-09-25T07:41:46Z",
-      "comment_updated_at": "2026-09-25T07:41:46Z",
-      "comment_body_sha256": "b1877ab6b81d653ca170129934d1177a4338bfecdf3cb56517422b5f83696fb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157744,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review bf3aeccb0b85cafb6ead6579163c78c4c4bb7c7d — fixed-main integration preserves all five profiler files and the released-host harness closure; the sixth file only removes our duplicate baseline assignment, restoring the canonical concurrent fixture fix. updated evidence and scope are in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T07:42:33.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-resource-session-first-warm-20260925",
-        "head_sha": "bf3aeccb0b85cafb6ead6579163c78c4c4bb7c7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157751:5824666072:2026-09-25T07:42:43Z:clawsweeper_needs_human",
       "comment_id": "5824666072",
@@ -33287,6 +33240,39 @@
         "kind": "pull_request",
         "branch": "feat/lobster-managed-input-ready",
         "head_sha": "21255bf94d35a06ed553a9c0d4275168e6e37cce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158135:5833437911:2026-09-25T14:07:18Z:clawsweeper_auto_repair",
+      "comment_id": "5833437911",
+      "comment_version_key": "5833437911:2026-09-25T14:07:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158135#issuecomment-5833437911",
+      "comment_created_at": "2026-09-25T13:44:49Z",
+      "comment_updated_at": "2026-09-25T14:07:18Z",
+      "comment_body_sha256": "3eed61eff0a371658f6bab840913f52c1c446d28ac8d823dddb7a65ac2655f98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=08a2db2039ea1490cdab7977fe03b2481b196286)",
+      "expected_head_sha": "08a2db2039ea1490cdab7977fe03b2481b196286",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T14:08:27.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-foundry-model-capabilities",
+        "head_sha": "08a2db2039ea1490cdab7977fe03b2481b196286",
         "cluster_id": null,
         "job_path": null
       }
