@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T20:18:18.630Z",
+  "updated_at": "2026-09-25T20:19:20.193Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158142:5833773694:2026-09-25T14:07:50Z:clawsweeper_needs_human",
-      "comment_id": "5833773694",
-      "comment_version_key": "5833773694:2026-09-25T14:07:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158142#issuecomment-5833773694",
-      "comment_created_at": "2026-09-25T14:07:50Z",
-      "comment_updated_at": "2026-09-25T14:07:50Z",
-      "comment_body_sha256": "3d707d3d75a5f4f0edb3c51a9333bfa83f299c02532fd6d3330a82bf8a0de1f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158142,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected Telegram screenshots show the new card and an allowed owner's applied result through the...; Review finding: [P1] Guard the Gateway IP-fallback authorization setting — src/system-agent/permission-policy.ts:41-45 - [P1] Bind protected approvals to the selected owner author... (sha=23e0666d11657fae4cc59ee8e3de58c06b291a8a)",
-      "expected_head_sha": "23e0666d11657fae4cc59ee8e3de58c06b291a8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T14:08:53.735Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/owner-permission-floor",
-        "head_sha": "23e0666d11657fae4cc59ee8e3de58c06b291a8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/telecrawl:48:5833779710:2026-09-25T14:08:15Z:clawsweeper_auto_repair",
       "comment_id": "5833779710",
@@ -32571,6 +32538,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158252:5838980628:2026-09-25T20:18:19Z:re_review",
+      "comment_id": "5838980628",
+      "comment_version_key": "5838980628:2026-09-25T20:18:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158252#issuecomment-5838980628",
+      "comment_created_at": "2026-09-25T20:18:19Z",
+      "comment_updated_at": "2026-09-25T20:18:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158252,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T20:19:19.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/157346-android-chat-link-preview-collapse",
+        "head_sha": "1a334a3dd445da76b4380714308b2f639d83792f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
