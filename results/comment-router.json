@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T19:06:51.386Z",
+  "updated_at": "2026-09-25T19:07:12.188Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117430:5151720879:2026-09-25T13:18:50Z:clawsweeper_auto_repair",
-      "comment_id": "5151720879",
-      "comment_version_key": "5151720879:2026-09-25T13:18:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117430#issuecomment-5151720879",
-      "comment_created_at": "2026-08-01T13:54:29Z",
-      "comment_updated_at": "2026-09-25T13:18:50Z",
-      "comment_body_sha256": "ef26272a461a83c9a1aa166c224b08254049235987862abf85b2a629366364c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117430,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T13:28:51.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-ui-clipboard-feedback-accessibility",
-        "head_sha": "3303099b3c5c685f90765829133f19ae7ce8114d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117456:5152035569:2026-09-25T13:20:34Z:clawsweeper_auto_repair",
       "comment_id": "5152035569",
@@ -32443,6 +32410,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158252:5838059390:2026-09-25T19:06:14Z:re_review",
+      "comment_id": "5838059390",
+      "comment_version_key": "5838059390:2026-09-25T19:06:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158252#issuecomment-5838059390",
+      "comment_created_at": "2026-09-25T19:06:14Z",
+      "comment_updated_at": "2026-09-25T19:06:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158252,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T19:07:11.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/157346-android-chat-link-preview-collapse",
+        "head_sha": "be2d00173441a1e148b0fb74d307437b9c34b07c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
