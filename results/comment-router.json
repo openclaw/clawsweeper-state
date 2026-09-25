@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T19:24:10.540Z",
+  "updated_at": "2026-09-25T19:24:14.004Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-09-25T13:24:34Z:clawsweeper_needs_human",
-      "comment_id": "5833145824",
-      "comment_version_key": "5833145824:2026-09-25T13:24:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5833145824",
-      "comment_created_at": "2026-09-25T13:24:34Z",
-      "comment_updated_at": "2026-09-25T13:24:34Z",
-      "comment_body_sha256": "b00248246a378d4420a46b32266f2cf9e31e679d2f474937e5e576411e681f97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway grant reaches worker or Codex GitHub I/O, but the supplied synthetic-token tests and typech...; Review finding: [P1] Retain the worker binding on non-GitHub workspaces — src/gateway/worker-environments/worker-github-binding.ts:43-49 - [P1] Preserve the selected per-agent Git... (sha=b2b47b7620bb05b36b5131381f3174a5442c9fae)",
-      "expected_head_sha": "b2b47b7620bb05b36b5131381f3174a5442c9fae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T13:28:51.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "b2b47b7620bb05b36b5131381f3174a5442c9fae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158113:5832870698:2026-09-25T13:29:10Z:clawsweeper_auto_repair",
       "comment_id": "5832870698",
@@ -32495,6 +32462,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142700:5593738788:2026-09-25T19:16:09Z:clawsweeper_needs_human",
+      "comment_id": "5593738788",
+      "comment_version_key": "5593738788:2026-09-25T19:16:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142700#issuecomment-5593738788",
+      "comment_created_at": "2026-09-09T00:13:43Z",
+      "comment_updated_at": "2026-09-25T19:16:09Z",
+      "comment_body_sha256": "9391af71fa716a341c04e5b5925168959d1593c1ed552c8915cd7f755165fd7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugins that rewrite parameters after trusted inline approval will now stop their tool calls until they request a second approval. The fixture demonstrates a synthetic plugin... (sha=2f4b8e83fa0a7c7d90a304242306be96c3d0b414)",
+      "expected_head_sha": "2f4b8e83fa0a7c7d90a304242306be96c3d0b414",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T19:24:14.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/immutable-tool-approval",
+        "head_sha": "2f4b8e83fa0a7c7d90a304242306be96c3d0b414",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
