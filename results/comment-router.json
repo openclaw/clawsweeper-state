@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:03:21.921Z",
+  "updated_at": "2026-09-25T08:03:34.911Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157650:5825886677:2026-09-25T02:52:11Z:re_review",
-      "comment_id": "5825886677",
-      "comment_version_key": "5825886677:2026-09-25T02:52:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157650#issuecomment-5825886677",
-      "comment_created_at": "2026-09-25T02:52:11Z",
-      "comment_updated_at": "2026-09-25T02:52:11Z",
-      "comment_body_sha256": "7a0f228280cb5a1f17b30f9d4b1dbdd73f6fd2f48279dd9a929240f8c60183fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157650,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:59:53.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-anthropic-cache-carrier",
-        "head_sha": "bbd8e369e323598476a40b797924464f6c72a3e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150702:5825911393:2026-09-25T02:55:18Z:re_review",
       "comment_id": "5825911393",
@@ -34270,6 +34223,39 @@
         "kind": "pull_request",
         "branch": "feat/chat-native-approvals",
         "head_sha": "f1ecfc9305bff2c651073fb471d443903795a338",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157977:5828258052:2026-09-25T07:52:00Z:clawsweeper_needs_human",
+      "comment_id": "5828258052",
+      "comment_version_key": "5828258052:2026-09-25T07:52:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157977#issuecomment-5828258052",
+      "comment_created_at": "2026-09-25T06:56:17Z",
+      "comment_updated_at": "2026-09-25T07:52:00Z",
+      "comment_body_sha256": "fd0889ecffb8eaf49346264a09eef7ad95b6c54c7b23f98971aff7fbcd7c7cb3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157977,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed dispatcher and Codex plugin register caller authority for native compaction, but the captured evide...; Review finding: [medium] Prove authority at the final provider effect — extensions/codex/src/app-server/compact.ts:510 (sha=d874a364e139889e0f7c10c29886b9eb82477c78)",
+      "expected_head_sha": "d874a364e139889e0f7c10c29886b9eb82477c78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:03:34.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/compaction-model-source-20260925",
+        "head_sha": "898dfd78f3bc11b38a6816c3c37b970ffdc96232",
         "cluster_id": null,
         "job_path": null
       }
