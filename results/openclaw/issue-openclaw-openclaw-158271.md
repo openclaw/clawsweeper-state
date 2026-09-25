@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158271"
 mode: "autonomous"
-run_id: "36189278766"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36189278766"
+run_id: "36194121995"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36194121995"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T21:51:14.904Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158271"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158271"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T22:01:34.480Z"
+canonical: "#158271"
+canonical_issue: "#158271"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36189278766](https://github.com/openclaw/clawsweeper/actions/runs/36189278766)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36194121995](https://github.com/openclaw/clawsweeper/actions/runs/36194121995)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158271
+Canonical: #158271
 
 ## Summary
 
-The inspected checkout supports the reported session-policy hash mismatch, but it is at 5d952773, while preflight identifies a8758fda as current main. That commit is unavailable locally and the checkout is read-only. A failing regression on current main, an implementation branch, and validation remain blocked.
+Plan a narrow fix for the plain agent-turn CLI session-policy hash flip. Source inspection at main 08e5e350 confirms that command preparation supplies session-stable binding facts only for synthetic turns. A failing alternating-entry-path regression and validation are required before opening the fix PR. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The inspected checkout supports the reported session-policy hash mismatch, but i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158271 | fix_needed | planned | canonical | A focused bug fix is warranted after reproducing the alternating entry paths on current main. |
-| #120006 | keep_related | planned | related | Keep its distinct remaining work open. |
-| #121485 | keep_closed | skipped | related | Already closed. |
-| #121509 | keep_closed | skipped | related | Already merged. |
-| cluster:issue-openclaw-openclaw-158271 | build_fix_artifact | blocked |  | Implementation requires a writable checkout at current main and a failing regression through the alternating entry paths. |
+| #158271 | build_fix_artifact | planned | canonical | The issue remains open and no open implementation PR is hydrated. Reproduce the alternating paths with a failing regression before changing code. |
+| #120006 | keep_related | planned | related | The reports share CLI session-reset symptoms but retain different unresolved work. |
+| #121485 | keep_closed | skipped | related | Historical context only. |
+| #121509 | keep_closed | skipped | related | Historical fix for a related turn type. |
 
 ## Needs Human
 
