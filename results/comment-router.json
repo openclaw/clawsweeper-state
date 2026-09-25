@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T13:39:32.458Z",
+  "updated_at": "2026-09-25T13:40:04.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157953:5827693170:2026-09-25T07:10:51Z:clawsweeper_needs_human",
-      "comment_id": "5827693170",
-      "comment_version_key": "5827693170:2026-09-25T07:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157953#issuecomment-5827693170",
-      "comment_created_at": "2026-09-25T06:07:03Z",
-      "comment_updated_at": "2026-09-25T07:10:51Z",
-      "comment_body_sha256": "a3cc77f38b7cb34790cdab2ccf40d6385ff325218d54f373591b8f4a17dea171",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157953,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Slack lookup and registered mention listener are exercised with synthetic SDK errors and a mocked logger, but no after-fix Slack wo... (sha=13c658557f9ab6166f4785e75d71deb6437c1cf2)",
-      "expected_head_sha": "13c658557f9ab6166f4785e75d71deb6437c1cf2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T07:13:52.936Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-app-mention-diagnostic-128301",
-        "head_sha": "13c658557f9ab6166f4785e75d71deb6437c1cf2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157953:5828439188:2026-09-25T07:12:56Z:re_review",
       "comment_id": "5828439188",
@@ -33304,6 +33271,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155284:5812091720:2026-09-24T10:07:52Z:re_review",
+      "comment_id": "5812091720",
+      "comment_version_key": "5812091720:2026-09-24T10:07:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155284#issuecomment-5812091720",
+      "comment_created_at": "2026-09-24T10:07:52Z",
+      "comment_updated_at": "2026-09-24T10:07:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155284,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T13:40:03.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-lab-tab-navigation-retention-20260919",
+        "head_sha": "326616b1b9b28051d785c5d6ef42a1eb64fd57d4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
