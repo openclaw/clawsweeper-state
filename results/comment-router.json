@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T13:40:04.752Z",
+  "updated_at": "2026-09-25T13:40:45.084Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157953:5828439188:2026-09-25T07:12:56Z:re_review",
-      "comment_id": "5828439188",
-      "comment_version_key": "5828439188:2026-09-25T07:12:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157953#issuecomment-5828439188",
-      "comment_created_at": "2026-09-25T07:12:56Z",
-      "comment_updated_at": "2026-09-25T07:12:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157953,
-      "author": "Olli0103",
-      "author_id": 51629451,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T07:13:59.868Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-app-mention-diagnostic-128301",
-        "head_sha": "13c658557f9ab6166f4785e75d71deb6437c1cf2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154069:5752643760:2026-09-25T07:12:58Z:clawsweeper_needs_human",
       "comment_id": "5752643760",
@@ -33318,6 +33271,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158136:5833364846:2026-09-25T13:39:46Z:clawsweeper_needs_human",
+      "comment_id": "5833364846",
+      "comment_version_key": "5833364846:2026-09-25T13:39:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158136#issuecomment-5833364846",
+      "comment_created_at": "2026-09-25T13:39:46Z",
+      "comment_updated_at": "2026-09-25T13:39:46Z",
+      "comment_body_sha256": "18855e4b220038e4484e025d8b055916f646b685c9691f9f0b414a98fb1ac84f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158136,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes whether Gateway model runs perform local state-migration preflight, but its reported checks do not exercise a fresh home and an upgraded home against a running Gateway.... (sha=b92425328bedd361fb8c58bab837e161b245ffbd)",
+      "expected_head_sha": "b92425328bedd361fb8c58bab837e161b245ffbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T13:40:45.084Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/infer-gateway-startup-state-lock",
+        "head_sha": "b92425328bedd361fb8c58bab837e161b245ffbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
