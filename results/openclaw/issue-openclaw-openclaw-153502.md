@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
-mode: "plan"
-run_id: "36189036599"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36189036599"
+mode: "autonomous"
+run_id: "36190964466"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36190964466"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-25T21:31:43.087Z"
-canonical: "#153502"
-canonical_issue: "#153502"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-25T22:04:31.271Z"
+canonical: "https://github.com/openclaw/openclaw/issues/153502"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36189036599](https://github.com/openclaw/clawsweeper/actions/runs/36189036599)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36190964466](https://github.com/openclaw/clawsweeper/actions/runs/36190964466)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #153502
+Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-The issue remains open. The two linked PRs are merged, but the hydrated review identifies a remaining Doctor receipt-eligibility defect involving a deferred historical transcript warning. A fix is worth pursuing after a failing current-main reproduction. No code or GitHub state was changed.
+Source inspection supports a narrow Doctor retained-source eligibility bug, but implementation is blocked. The checkout is read-only, has no node_modules, and its shallow HEAD (3272581f) differs from the preflight main SHA (e0698640). No failing regression was run, code changed, or PR opened.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The issue remains open. The two linked PRs are merged, but the hydrated review i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | build_fix_artifact | planned | canonical | Build one narrow Doctor migration fix only if the required current-main reproduction fails as described. |
-| #154413 | keep_closed | skipped | related | Historical fix context; no action on the merged PR. |
-| #154543 | keep_closed | skipped | related | Historical fix context; no action on the merged PR. |
+| #153502 | fix_needed | planned | canonical | The mixed verified-plugin-import and historical-header-warning path needs a failing Doctor regression before repair. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and verification against the preflight main revision. |
 
 ## Needs Human
 
