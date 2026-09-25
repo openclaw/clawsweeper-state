@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T10:07:30.603Z",
+  "updated_at": "2026-09-25T10:07:33.810Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119674:5194289602:2026-09-25T04:22:57Z:clawsweeper_needs_human",
-      "comment_id": "5194289602",
-      "comment_version_key": "5194289602:2026-09-25T04:22:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5194289602",
-      "comment_created_at": "2026-08-05T16:11:53Z",
-      "comment_updated_at": "2026-09-25T04:22:57Z",
-      "comment_body_sha256": "1695b66c4503dfc34aa6e1cf25fbc139b2c9b7a818eaecc7d6f8c2e2e05903ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119674,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing default-profile custom system unit with an opaque launcher can lose implicit status and lifecycle discovery after upgrade; its operator must set OPENCLAW_SYSTEMD_UNIT. Mai... (sha=b8adbe24bcfa944692d5956ff2fe28a1588d85b0)",
-      "expected_head_sha": "b8adbe24bcfa944692d5956ff2fe28a1588d85b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T04:29:24.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119648-doctor-profile-service-identity",
-        "head_sha": "b8adbe24bcfa944692d5956ff2fe28a1588d85b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157615:5823024233:2026-09-25T04:29:47Z:clawsweeper_auto_repair",
       "comment_id": "5823024233",
@@ -34199,6 +34166,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155442:5830598790:2026-09-25T10:06:25Z:re_review",
+      "comment_id": "5830598790",
+      "comment_version_key": "5830598790:2026-09-25T10:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155442#issuecomment-5830598790",
+      "comment_created_at": "2026-09-25T10:06:25Z",
+      "comment_updated_at": "2026-09-25T10:06:25Z",
+      "comment_body_sha256": "ad49916b74ca1eef2e50b36bd02b625ca0298267d1d74bdf622f12828e0f4b16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155442,
+      "author": "zozo123",
+      "author_id": 553010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-run",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T10:07:32.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/liquid-adaptive-test-time-compute",
+        "head_sha": "085bff428897fccb12109dd4be9bc1326d459172",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
