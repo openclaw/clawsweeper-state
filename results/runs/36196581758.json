@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158386",
+  "mode": "autonomous",
+  "run_id": "36196581758",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36196581758",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158386.md",
+  "published_at": "2026-09-25T23:01:07.144Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158386",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158386",
+  "canonical_pr": null,
+  "summary": "The Windows Scheduled Task audit still appears to misclassify omitted default-true Enabled fields, but implementation is blocked: this worker has a read-only checkout at 0b8ac75b, while preflight identifies c935d718 as main. Dependencies are absent, so a failing regression and validation could not be run. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158386",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158386",
+      "candidate_fix": null,
+      "reason": "A narrow shared-audit fix is indicated, subject to reproduction on the preflight main revision."
+    },
+    {
+      "target": "#158332",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate behavior and owner."
+    },
+    {
+      "target": "#158333",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate product decision outside this bug-only job."
+    },
+    {
+      "target": "#158331",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical linked context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158386",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158386",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout at current main before it can reproduce, patch, review, and validate the fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
