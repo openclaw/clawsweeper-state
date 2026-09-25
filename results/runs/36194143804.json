@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158358",
+  "mode": "autonomous",
+  "run_id": "36194143804",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36194143804",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158358.md",
+  "published_at": "2026-09-25T22:40:07.471Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158358",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158358",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported source-level mismatch: an omitted selection produces a bare Claude model ID while the catalog default supplies a 1M budget. Native reproduction and implementation are blocked because this read-only checkout has neither a Claude CLI executable nor installed dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#158358",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158358",
+      "candidate_fix": null,
+      "reason": "The issue describes the mismatch found in current source."
+    },
+    {
+      "target": "#158353",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158358",
+      "candidate_fix": null,
+      "reason": "Window selection may affect compaction frequency, but counter accounting is separate work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158358",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158358",
+      "candidate_fix": null,
+      "reason": "The source-level mismatch warrants a focused repair after the required native reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158358",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#158358",
+      "candidate_fix": null,
+      "reason": "The job requires a failing CLI-run preparation path and a real supported Claude CLI invocation before editing. Native proof is unavailable here."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
