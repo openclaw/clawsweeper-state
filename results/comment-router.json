@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T05:03:20.978Z",
+  "updated_at": "2026-09-25T05:03:22.573Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157677:5824170830:2026-09-24T23:46:56Z:re_review",
-      "comment_id": "5824170830",
-      "comment_version_key": "5824170830:2026-09-24T23:46:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157677#issuecomment-5824170830",
-      "comment_created_at": "2026-09-24T23:46:56Z",
-      "comment_updated_at": "2026-09-24T23:46:56Z",
-      "comment_body_sha256": "d23e6dda9459d1569f6ff9e5973a814b0946f9eed7f566362ce1c621cb232bfa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157677,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:12:33.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-tsdown-failure-diagnostics-20260925",
-        "head_sha": "c3cd47ee77fcc4fbb33ac3f0b9c3912851c1c87a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157679:5824201168:2026-09-24T23:49:37Z:re_review",
       "comment_id": "5824201168",
@@ -33824,6 +33777,39 @@
         "kind": "pull_request",
         "branch": "feat/onepassword-keyring",
         "head_sha": "834f2c56b10f6fd2b6831dec76f8340ce4803620",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157906:5827056253:2026-09-25T05:01:54Z:clawsweeper_needs_human",
+      "comment_id": "5827056253",
+      "comment_version_key": "5827056253:2026-09-25T05:01:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157906#issuecomment-5827056253",
+      "comment_created_at": "2026-09-25T05:01:54Z",
+      "comment_updated_at": "2026-09-25T05:01:54Z",
+      "comment_body_sha256": "403587823de8173c1b6c17d4b9f5673bfbc5c1215fc1584468a1e1c360339a47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157906,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed regression suite's measured standalone wall time is absent from the PR body, so compliance with the repository's per-PR test budget remains unverified. (sha=902a8b6fc216c27c1b00d23cfae673156321c7b3)",
+      "expected_head_sha": "902a8b6fc216c27c1b00d23cfae673156321c7b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T05:03:22.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/config-rpc-runtime-ordering-20260925",
+        "head_sha": "902a8b6fc216c27c1b00d23cfae673156321c7b3",
         "cluster_id": null,
         "job_path": null
       }
