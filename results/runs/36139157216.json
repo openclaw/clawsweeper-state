@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158103",
+  "mode": "plan",
+  "run_id": "36139157216",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36139157216",
+  "head_sha": "78d6f0eeb3aee523598413635f34822eedcfed95",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158103.md",
+  "published_at": "2026-09-25T13:16:08.267Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the open Teams stream-finalization issue. The failing SDK loopback regression and validation have not run; this is a plan, not an implemented fix.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/56040",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "152103",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/155479",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked PR alone because it concerns credentials; it does not own the stream-finalization fix."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/157682",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Approval-card edits do not address streamed answer finalization."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/157704",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "158103",
+      "candidate_fix": null,
+      "reason": "It shares a controller but fixes a distinct status-text defect."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158103",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "158103",
+      "candidate_fix": null,
+      "reason": "Build a narrow fix only after the regression fails on current main."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "route_security": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
