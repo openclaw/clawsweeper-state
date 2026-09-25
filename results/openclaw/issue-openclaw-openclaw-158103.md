@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158103"
-mode: "autonomous"
-run_id: "36141117375"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36141117375"
-head_sha: "7ccc3fe0a786c836fd8d91d78603fd31f40681e4"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T14:25:02.644Z"
+mode: "plan"
+run_id: "36149165779"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36149165779"
+head_sha: "993e19fdd0afc9b49370abe0b08e6a647db80da7"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T14:45:15.439Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158103"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158103"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36141117375](https://github.com/openclaw/clawsweeper/actions/runs/36141117375)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36149165779](https://github.com/openclaw/clawsweeper/actions/runs/36149165779)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158103
 
 ## Summary
 
-Current main still has a plausible Teams finalization defect: the stream controller can replace acknowledged text with Markdown-converted text, while the existing SDK loopback accepts replacements without enforcing Teams’ previous-content prefix rule. This checkout is read-only and has no node_modules, so I could not add the required failing regression, measure tests, validate a patch, or prepare a PR branch.
+Plan a narrow Teams stream-controller fix. The source issue remains open, and the hydrated PRs do not fix its final-update and duplicate-fallback behavior. A failing regression against current main is required before implementation; no code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Current main still has a plausible Teams finalization defect: the stream control
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158103 | fix_needed | planned | canonical | Implement only after the required loopback regression fails on main for the reported reason. |
-| #155479 | keep_independent | planned | independent |  |
-| #157682 | keep_independent | planned | independent |  |
-| #157704 | keep_related | planned | related |  |
-| #56040 | keep_closed | skipped | related | Closed context only. |
-| cluster:issue-openclaw-openclaw-158103 | build_fix_artifact | planned |  | Executor must reproduce, repair, review, and validate before opening or updating the issue PR. |
+| https://github.com/openclaw/openclaw/issues/158103 | build_fix_artifact | planned | canonical | No hydrated open PR owns this final-answer delivery defect. |
+| https://github.com/openclaw/openclaw/pull/155479 | route_security | planned | security_sensitive | Route this token-related PR outside ClawSweeper Repair; it is unrelated to stream finalization. |
+| https://github.com/openclaw/openclaw/pull/157682 | keep_independent | planned | independent | Approval-card finalization is a separate defect. |
+| https://github.com/openclaw/openclaw/pull/157704 | keep_related | planned | related | It shares a controller but does not repair final-answer rejection or fallback delivery. |
+| https://github.com/openclaw/openclaw/issues/56040 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
 
 ## Needs Human
 

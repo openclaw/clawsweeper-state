@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158103",
+  "mode": "plan",
+  "run_id": "36149165779",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36149165779",
+  "head_sha": "993e19fdd0afc9b49370abe0b08e6a647db80da7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158103.md",
+  "published_at": "2026-09-25T14:45:15.439Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Teams stream-controller fix. The source issue remains open, and the hydrated PRs do not fix its final-update and duplicate-fallback behavior. A failing regression against current main is required before implementation; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158103",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "28",
+      "candidate_fix": null,
+      "reason": "No hydrated open PR owns this final-answer delivery defect."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/155479",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this token-related PR outside ClawSweeper Repair; it is unrelated to stream finalization."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/157682",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Approval-card finalization is a separate defect."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/157704",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "28",
+      "candidate_fix": null,
+      "reason": "It shares a controller but does not repair final-answer rejection or fallback delivery."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/56040",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "route_security": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
