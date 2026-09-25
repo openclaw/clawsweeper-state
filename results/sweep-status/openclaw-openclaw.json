@@ -3,93 +3,23 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply comments synced",
-  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 1. Result records: 3. Item numbers: 155172,143584,154226,120600,128533,157974,151792,132396,139578,133848,152369,137469,151744,141520,152086,152461,152422,151939,152446,151826,138097,151999,151941,136888,144979,151986,152033,136895,152070,152047,150885,138409,152052,138528,151789,151766,151784,151958,151524,151525. Next cursor: 155172.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105727708",
-  "planned_count": null,
-  "planned_capacity": null,
-  "planned_shards": null,
-  "active_codex": null,
-  "due_backlog": null,
-  "oldest_unreviewed_at": null,
-  "capacity_reason": null,
+  "state": "Review in progress",
+  "detail": "Planned 114 items across 38 shards. Capacity is 114 items; due backlog scanned is 6592. Capacity reason: saturated: due backlog filled planned capacity. Review shards are starting; publish will merge artifacts when they finish.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36108769865",
+  "planned_count": 114,
+  "planned_capacity": 114,
+  "planned_shards": 38,
+  "active_codex": 38,
+  "due_backlog": 6592,
+  "oldest_unreviewed_at": "2026-03-28T09:20:36Z",
+  "capacity_reason": "saturated: due backlog filled planned capacity",
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-09-25T07:44:21.439Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "comment_sync",
-    "status": "ok",
-    "summary": "1 examined; 3/40 action records; 0 closed, 1 comments synced, 2 skipped; cursor at #155172.",
-    "examined": 1,
-    "action_records": 3,
-    "processed": 3,
-    "processed_limit": 40,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 1,
-    "skipped": 2,
-    "skip_reasons": {
-      "skipped_runtime_budget": 2
-    },
-    "lanes": {
-      "closure": {
-        "processed": 0,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 0,
-        "skip_reasons": {}
-      },
-      "comment_sync": {
-        "processed": 3,
-        "closed": 0,
-        "comment_synced": 1,
-        "skipped": 2,
-        "skip_reasons": {
-          "skipped_runtime_budget": 2
-        }
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "skipped_runtime_budget",
-        "count": 2,
-        "bucket": "run_budget",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Runtime budget",
-        "summary": "The apply lane stopped because it reached its bounded runtime.",
-        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      }
-    ],
-    "next_action_buckets": {
-      "run_budget": 2
-    },
-    "cycle": {
-      "basis": "not_close_cursor",
-      "apply_ready_count": null,
-      "candidate_counts": null,
-      "window_size": 1,
-      "estimated_full_cycle_windows": null,
-      "estimated_full_cycle_minutes": null,
-      "scheduled_interval_minutes": null,
-      "label": "Cycle estimate is only reported for scheduled close cursor windows."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
-      "next_after_number": 155172,
-      "next_after_apply_checked_at": null,
-      "updated_at": "2026-09-25T07:43:58.310Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105727708"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-09-25T07:32:45.948Z",
@@ -222,5 +152,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36105102320"
   },
-  "updated_at": "2026-09-25T07:44:21.655Z"
+  "updated_at": "2026-09-25T07:44:23.404Z"
 }
