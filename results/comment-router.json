@@ -2,53 +2,6 @@
   "updated_at": "2026-09-25T04:59:40.920Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:156368:5823489903:2026-09-24T22:47:38Z:re_review",
-      "comment_id": "5823489903",
-      "comment_version_key": "5823489903:2026-09-24T22:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156368#issuecomment-5823489903",
-      "comment_created_at": "2026-09-24T22:47:38Z",
-      "comment_updated_at": "2026-09-24T22:47:38Z",
-      "comment_body_sha256": "c74e71e014fa7fc3a487b568309705951f3ed137b57e35569fc51fa73260770c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156368,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:12:33.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/b23-security-auth-contracts",
-        "head_sha": "85d232fd1eb91d8535bd189ac7f7632d12062f41",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:157007:5823588543:2026-09-24T22:57:08Z:re_review",
       "comment_id": "5823588543",
       "comment_version_key": "5823588543:2026-09-24T22:57:08Z",
@@ -33917,6 +33870,39 @@
         "kind": "pull_request",
         "branch": "fix/release-feedback-audit-hygiene",
         "head_sha": "1ac048f00487e3553ccf3822fb8583856b5baffa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157855:5826210433:2026-09-25T04:58:43Z:clawsweeper_needs_human",
+      "comment_id": "5826210433",
+      "comment_version_key": "5826210433:2026-09-25T04:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157855#issuecomment-5826210433",
+      "comment_created_at": "2026-09-25T03:30:56Z",
+      "comment_updated_at": "2026-09-25T04:58:43Z",
+      "comment_body_sha256": "b7a6eef5707edefa813b8d84b6b0e7a4e9887141fe09e6951205ab4b1e5a2d68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=98ca331cc2899fb480ed813b8640d5ac51451c13)",
+      "expected_head_sha": "98ca331cc2899fb480ed813b8640d5ac51451c13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:59:36.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-catalog-list-timeout",
+        "head_sha": "98ca331cc2899fb480ed813b8640d5ac51451c13",
         "cluster_id": null,
         "job_path": null
       }
