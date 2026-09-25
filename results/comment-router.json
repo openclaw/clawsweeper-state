@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:03:12.362Z",
+  "updated_at": "2026-09-25T08:03:12.837Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157744:5825701700:2026-09-25T02:30:14Z:re_review",
-      "comment_id": "5825701700",
-      "comment_version_key": "5825701700:2026-09-25T02:30:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157744#issuecomment-5825701700",
-      "comment_created_at": "2026-09-25T02:30:14Z",
-      "comment_updated_at": "2026-09-25T02:30:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157744,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:59:53.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-resource-session-first-warm-20260925",
-        "head_sha": "13e901a14674d702115280dabf9ce66bc536db07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157832:5825805379:2026-09-25T02:42:32Z:re_review",
       "comment_id": "5825805379",
@@ -34326,6 +34279,39 @@
         "kind": "pull_request",
         "branch": "deslop/l25-gateway-owners-0923",
         "head_sha": "9aa1fe0556f6dd34e5cd93059243720a9ee10876",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157765:5825544414:2026-09-25T08:00:12Z:clawsweeper_needs_human",
+      "comment_id": "5825544414",
+      "comment_version_key": "5825544414:2026-09-25T08:00:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157765#issuecomment-5825544414",
+      "comment_created_at": "2026-09-25T02:12:02Z",
+      "comment_updated_at": "2026-09-25T08:00:12Z",
+      "comment_body_sha256": "46fb2eb1b4fb6b9c236aa039836467baeb9b62e7dafab3c4c9ec86c988e3284b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157765,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published updater has not been shown preserving populated ClawHub tracking and generated plugin skill links; an existing installation could lose tracking or skill discoverability af... (sha=210a1043f93537002123047561a7868308fb0944)",
+      "expected_head_sha": "210a1043f93537002123047561a7868308fb0944",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:03:12.837Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l40-skills-tui",
+        "head_sha": "210a1043f93537002123047561a7868308fb0944",
         "cluster_id": null,
         "job_path": null
       }
