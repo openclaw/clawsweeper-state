@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158339",
+  "mode": "autonomous",
+  "run_id": "36192152925",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36192152925",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158339.md",
+  "published_at": "2026-09-25T21:52:12.294Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_pr": null,
+  "summary": "The checkout matches preflight main 84e57221b7bd1dde476d89ffd885684fb23c384e and still generates a config-reader recursion guard from an import URL query. A narrow candidate-side fix is warranted. The worker made no edits because its checkout is read-only; Bun and runnable pnpm are unavailable here, so runtime validation remains for the executor.",
+  "actions": [
+    {
+      "target": "#158339",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158339",
+      "candidate_fix": null,
+      "reason": "The reported managed-update failure has a focused repair in the generated candidate alias."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158339",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#158339",
+      "candidate_fix": null,
+      "reason": "Have the writable executor patch the candidate alias, extend its boundary test, and validate the published-driver × candidate update path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
