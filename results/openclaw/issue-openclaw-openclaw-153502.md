@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
-mode: "plan"
-run_id: "35497291658"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35497291658"
-head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-20T07:40:05.746Z"
-canonical: "#153502"
-canonical_issue: "#153502"
+mode: "autonomous"
+run_id: "36183042948"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36183042948"
+head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-25T20:49:11.721Z"
+canonical: "https://github.com/openclaw/openclaw/issues/153502"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35497291658](https://github.com/openclaw/clawsweeper/actions/runs/35497291658)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36183042948](https://github.com/openclaw/clawsweeper/actions/runs/36183042948)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #153502
+Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-Plan a narrow Doctor receipt-eligibility repair. Source inspection at preflight main 760c9667f5c958d317d9ae3a65b0bd22aee26eb7 supports the reported failure path. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state changed.
+Current main has a plausible Doctor receipt defect for mixed valid and ambiguous historical transcripts. The checkout matches preflight SHA b95d539e120b7eae35e8e52e54213c28ed917471. This read-only host has no installed dependencies, so the required failing reproduction, patch, validation, and PR preparation could not be completed. No GitHub mutation was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Plan a narrow Doctor receipt-eligibility repair. Source inspection at preflight 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | The historical-warning combination needs its own regression and repair; related merged work does not establish that this report is fixed. Proceed only after reproducing the failure on current main. |
-| #149956 | keep_closed | skipped | related | Historical contract evidence only; preserve its source-verification and retry guarantees. |
-| #153097 | keep_closed | skipped | related | Historical contract evidence only; extend the existing receipt and settlement owners. |
+| #153502 | fix_needed | planned | canonical | The issue remains the canonical open report for the mixed-state Doctor case. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only host. Reproduce through Doctor's production migration entrypoint before changing code. |
 
 ## Needs Human
 
