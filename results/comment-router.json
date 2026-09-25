@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-25T06:22:11.228Z",
+  "updated_at": "2026-09-25T06:21:32.419Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157739:5824931225:2026-09-25T01:04:38Z:re_review",
+      "comment_id": "5824931225",
+      "comment_version_key": "5824931225:2026-09-25T01:04:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157739#issuecomment-5824931225",
+      "comment_created_at": "2026-09-25T01:04:38Z",
+      "comment_updated_at": "2026-09-25T01:04:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157739,
+      "author": "emes",
+      "author_id": 363010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T01:05:56.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/serialize-unified-tsdown-bundles",
+        "head_sha": "90d519b709250f6a0f6014dca59c52c9d908c982",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157524:5821238678:2026-09-25T01:05:09Z:clawsweeper_needs_human",
       "comment_id": "5821238678",
@@ -34313,39 +34360,6 @@
         "kind": "pull_request",
         "branch": "fix/startup-header-preflight-20260925bl",
         "head_sha": "0fb9cb7777d431e6a207d73deafc3f9af6522e3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157863:5826388283:2026-09-25T06:21:13Z:clawsweeper_needs_human",
-      "comment_id": "5826388283",
-      "comment_version_key": "5826388283:2026-09-25T06:21:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157863#issuecomment-5826388283",
-      "comment_created_at": "2026-09-25T03:52:12Z",
-      "comment_updated_at": "2026-09-25T06:21:13Z",
-      "comment_body_sha256": "e71783e171c9fdfb0c888dfe936faf402bea1aab711ce098cc32f712d76027e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A five-minute grace can keep synchronous full-/proc scans running every 25 ms while a descendant remains live. The effect on a process-heavy Gateway has not been measured. (sha=77ab6d375b6217b0aa3b3a9f35497d8c7e97b475)",
-      "expected_head_sha": "77ab6d375b6217b0aa3b3a9f35497d8c7e97b475",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T06:22:11.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-command-adopted-reaping-20260925",
-        "head_sha": "77ab6d375b6217b0aa3b3a9f35497d8c7e97b475",
         "cluster_id": null,
         "job_path": null
       }
