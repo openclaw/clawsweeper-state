@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158103",
+  "mode": "autonomous",
+  "run_id": "36133468987",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36133468987",
+  "head_sha": "78d6f0eeb3aee523598413635f34822eedcfed95",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158103.md",
+  "published_at": "2026-09-25T12:46:58.100Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_pr": null,
+  "summary": "Current main contains a Teams stream-finalization path that can replace accepted text with reformatted text, violating the reported prefix rule. Implementation is blocked in this read-only checkout: the required SDK loopback regression could not run, so no code or PR was produced.",
+  "actions": [
+    {
+      "target": "#158103",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158103",
+      "candidate_fix": null,
+      "reason": "The issue remains a distinct, plausible bug, but the job requires a failing SDK loopback regression before implementation. This checkout cannot write the regression or run its dependencies."
+    },
+    {
+      "target": "#155479",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate SSO failure and repair path."
+    },
+    {
+      "target": "#157682",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate approval-card failure and repair path."
+    },
+    {
+      "target": "#157704",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158103",
+      "candidate_fix": null,
+      "reason": "Shared Teams streaming area with a different wire activity and failure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158103",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158103",
+      "candidate_fix": null,
+      "reason": "Resume in a writable, dependency-ready checkout; demonstrate the prefix-rule failure before changing code."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 2,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
