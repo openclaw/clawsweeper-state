@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:59:59.300Z",
+  "updated_at": "2026-09-25T05:00:15.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155860:5824012198:2026-09-24T23:33:04Z:re_review",
-      "comment_id": "5824012198",
-      "comment_version_key": "5824012198:2026-09-24T23:33:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155860#issuecomment-5824012198",
-      "comment_created_at": "2026-09-24T23:33:04Z",
-      "comment_updated_at": "2026-09-24T23:33:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155860,
-      "author": "Cyb3rb1ade",
-      "author_id": 84099452,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:12:33.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-slot-owner-dreaming-status",
-        "head_sha": "7b8360d4218082aab2c27b48b41d426641713798",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157650:5824041134:2026-09-24T23:35:37Z:re_review",
       "comment_id": "5824041134",
@@ -33894,6 +33847,39 @@
         "kind": "pull_request",
         "branch": "codex/june-stale-drain-20260924",
         "head_sha": "7cd9073941acc458e64614100b94f82a5b3058b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157902:5827022447:2026-09-25T04:59:11Z:clawsweeper_needs_human",
+      "comment_id": "5827022447",
+      "comment_version_key": "5827022447:2026-09-25T04:59:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157902#issuecomment-5827022447",
+      "comment_created_at": "2026-09-25T04:59:11Z",
+      "comment_updated_at": "2026-09-25T04:59:11Z",
+      "comment_body_sha256": "4b91e3bfafadcbe967f1b1c5add7cbb1b027702a3e324d236e9f8107178f3455",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new upgrade-survivor watch selects a package-acceptance file listed at 189 seconds in historical CI timing data for every matching helper edit; the PR has not measured or justifie... (sha=297694af4ca4be14d1f05d9dc9ced2a00477e83d)",
+      "expected_head_sha": "297694af4ca4be14d1f05d9dc9ced2a00477e83d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T05:00:15.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-selection-coverage",
+        "head_sha": "297694af4ca4be14d1f05d9dc9ced2a00477e83d",
         "cluster_id": null,
         "job_path": null
       }
