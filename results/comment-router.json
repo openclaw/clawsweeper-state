@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:27:39.634Z",
+  "updated_at": "2026-09-25T06:27:40.228Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157679:5825064937:2026-09-25T01:19:44Z:re_review",
-      "comment_id": "5825064937",
-      "comment_version_key": "5825064937:2026-09-25T01:19:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157679#issuecomment-5825064937",
-      "comment_created_at": "2026-09-25T01:19:44Z",
-      "comment_updated_at": "2026-09-25T01:19:44Z",
-      "comment_body_sha256": "ba68c12135abe45c23aaf7ea7cb6379c8312d1f9458fa240524326fb47282b55",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157679,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T01:20:44.208Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-supervisor-guidance",
-        "head_sha": "ac4f1cd9a2857e467ee6360272aa0c46ae2d962b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157634:5824368086:2026-09-25T01:20:22Z:clawsweeper_needs_human",
       "comment_id": "5824368086",
@@ -34372,6 +34325,39 @@
         "kind": "pull_request",
         "branch": "fix/darwin-update-retention-probes-20260925",
         "head_sha": "af20fec3d82ad91ce16abceb7585d619291b3b42",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:660:5825523307:2026-09-25T06:26:38Z:clawsweeper_needs_human",
+      "comment_id": "5825523307",
+      "comment_version_key": "5825523307:2026-09-25T06:26:38Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/660#issuecomment-5825523307",
+      "comment_created_at": "2026-09-25T02:09:33Z",
+      "comment_updated_at": "2026-09-25T06:26:38Z",
+      "comment_body_sha256": "98aa7c45ac16cc05f65c852bc1c9ffb55b7fa44d3f827eb4e65323485f02f639",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 660,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - ZIP read and extraction performance on this exact head remains unqualified; the earlier controlled comparison was inconclusive and predates the final implementation. (sha=232820b7c98427edd47d9f013b10878e4aab8764)",
+      "expected_head_sha": "232820b7c98427edd47d9f013b10878e4aab8764",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:27:40.228Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/zip-metadata-owner-20260925",
+        "head_sha": "232820b7c98427edd47d9f013b10878e4aab8764",
         "cluster_id": null,
         "job_path": null
       }
