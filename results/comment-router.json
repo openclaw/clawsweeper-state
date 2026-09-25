@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:37:42.843Z",
+  "updated_at": "2026-09-25T04:37:45.070Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157592:5823634456:2026-09-24T23:01:08Z:re_review",
-      "comment_id": "5823634456",
-      "comment_version_key": "5823634456:2026-09-24T23:01:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157592#issuecomment-5823634456",
-      "comment_created_at": "2026-09-24T23:01:08Z",
-      "comment_updated_at": "2026-09-24T23:01:08Z",
-      "comment_body_sha256": "389c02052ba8fe19daaf339a563b5a58a4449113c44fffd41f0d09d4e1bf24e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157592,
-      "author": "Kimiyu-186",
-      "author_id": 202845257,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T23:02:10.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/remote-skills-shutdown-drain",
-        "head_sha": "6d6a02223b2067f9454492793726dd1e1c750df7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155139:5767380624:2026-09-24T23:02:04Z:clawsweeper_needs_human",
       "comment_id": "5767380624",
@@ -33866,6 +33819,39 @@
         "kind": "pull_request",
         "branch": "codex/155742-tool-cache-fingerprints",
         "head_sha": "f5464aac673d95e07ca95058234491cd6b9f7538",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:248:5826822099:2026-09-25T04:36:38Z:clawsweeper_needs_human",
+      "comment_id": "5826822099",
+      "comment_version_key": "5826822099:2026-09-25T04:36:38Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/248#issuecomment-5826822099",
+      "comment_created_at": "2026-09-25T04:36:38Z",
+      "comment_updated_at": "2026-09-25T04:36:38Z",
+      "comment_body_sha256": "c03756259b734b997d35c6a23c8d5bbe63284e1afbfe9251c93fd14b7d656135",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing environment-backed requests can return 503 immediately after deployment until an administrator attests to the storage baseline and completes activation; the operator window a... (sha=be7209d036116b7cd11798125f1a545b9370c51e)",
+      "expected_head_sha": "be7209d036116b7cd11798125f1a545b9370c51e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:37:45.070Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/grant-attachment-activation",
+        "head_sha": "be7209d036116b7cd11798125f1a545b9370c51e",
         "cluster_id": null,
         "job_path": null
       }
