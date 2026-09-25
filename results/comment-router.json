@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:48:12.873Z",
+  "updated_at": "2026-09-25T17:48:33.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157465:5831959449:2026-09-25T11:55:47Z:re_review",
-      "comment_id": "5831959449",
-      "comment_version_key": "5831959449:2026-09-25T11:55:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157465#issuecomment-5831959449",
-      "comment_created_at": "2026-09-25T11:55:47Z",
-      "comment_updated_at": "2026-09-25T11:55:47Z",
-      "comment_body_sha256": "dd777a3ef769c995a87367aaffc5e70875cc0a17bbabf7531fa652771bd0882c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157465,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T11:56:53.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gemini-tts-two-speakers",
-        "head_sha": "95f187014433f0bedf12537f9c7b8da3d417b92a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158000:5828751816:2026-09-25T11:56:02Z:clawsweeper_needs_human",
       "comment_id": "5828751816",
@@ -32543,6 +32496,39 @@
         "kind": "pull_request",
         "branch": "fix/mobile-message-gap",
         "head_sha": "3d3999fa8c60bbf11cde96365a14d32cb6b04a2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2564:5836756484:2026-09-25T17:47:33Z:clawsweeper_needs_human",
+      "comment_id": "5836756484",
+      "comment_version_key": "5836756484:2026-09-25T17:47:33Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2564#issuecomment-5836756484",
+      "comment_created_at": "2026-09-25T17:37:28Z",
+      "comment_updated_at": "2026-09-25T17:47:33Z",
+      "comment_body_sha256": "7ae21e61f6fdd795f3f9a0f291c312ea99f48f0b00d67406a2d7b06fa6beecac",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed CLI owner checks the marker before remote transfer or command dispatch; local tests intercept those...; Review finding: [P1] Provide an upgrade path for cross-repository hydration — internal/cli/run.go:1845-1847 - [medium] Workspace identity may become stale before I/O — internal/cl... (sha=d2ac8b435e1677459ea75bb3c024ee7fc809b25f)",
+      "expected_head_sha": "d2ac8b435e1677459ea75bb3c024ee7fc809b25f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T17:48:33.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/retained-workspace-identity-20260926",
+        "head_sha": "d2ac8b435e1677459ea75bb3c024ee7fc809b25f",
         "cluster_id": null,
         "job_path": null
       }
