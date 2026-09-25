@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T09:16:25.286Z",
+  "updated_at": "2026-09-25T09:17:17.958Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149880:5806772707:2026-09-24T03:09:48Z:re_review",
-      "comment_id": "5806772707",
-      "comment_version_key": "5806772707:2026-09-24T03:09:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149880#issuecomment-5806772707",
-      "comment_created_at": "2026-09-24T03:09:48Z",
-      "comment_updated_at": "2026-09-24T03:09:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149880,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T04:14:38.388Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149880:5806923205:2026-09-24T03:23:18Z:re_review",
       "comment_id": "5806923205",
@@ -34019,6 +33992,39 @@
       "status": "skipped",
       "processed_at": "2026-09-25T09:16:25.286Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158030:5829942849:2026-09-25T09:16:20Z:clawsweeper_needs_human",
+      "comment_id": "5829942849",
+      "comment_version_key": "5829942849:2026-09-25T09:16:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158030#issuecomment-5829942849",
+      "comment_created_at": "2026-09-25T09:16:20Z",
+      "comment_updated_at": "2026-09-25T09:16:20Z",
+      "comment_body_sha256": "0e14ff6148418b9df6d08103cccdc65b85c33fcc1b63bee9ba990150e3d06c66",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR reports build and focused tests, while its changed host path creates sessions, changes bindings, and dis...; Review finding: [P1] Match reply targets within the invoking conversation — src/plugins/plugin-command-conversation-fork.ts:77-81 - [P1] Fence placement against a changed conversa... (sha=860e156060fa9d75dd2ec350269298ad0c58904e)",
+      "expected_head_sha": "860e156060fa9d75dd2ec350269298ad0c58904e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T09:17:17.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-conversation-fork",
+        "head_sha": "860e156060fa9d75dd2ec350269298ad0c58904e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
