@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153145"
-mode: "plan"
-run_id: "36155620255"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36155620255"
+mode: "autonomous"
+run_id: "36177140003"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36177140003"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-25T15:42:58.671Z"
-canonical: "#153145"
-canonical_issue: "#153145"
+result_status: "blocked"
+published_at: "2026-09-25T19:37:21.495Z"
+canonical: "https://github.com/openclaw/openclaw/issues/153145"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/153145"
 canonical_pr: null
-actions_total: 1
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36155620255](https://github.com/openclaw/clawsweeper/actions/runs/36155620255)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36177140003](https://github.com/openclaw/clawsweeper/actions/runs/36177140003)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #153145
+Canonical: https://github.com/openclaw/openclaw/issues/153145
 
 ## Summary
 
-Current main still has the fixed Talk reply-observation window described in the issue. Plan a narrow native repair, starting with a failing regression. The reported exact 30-second cutoff has not been verified. No code or GitHub state was changed.
+Source inspection confirms the accepted-send path still has a finite 45-second event wait followed by a 12-second history fallback. Implementation and the required failing regression were blocked: this worker has a read-only Linux checkout, and its HEAD differs from the preflight main SHA. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Current main still has the fixed Talk reply-observation window described in the 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=apps [check:changed] apps/macos/Sources/OpenClaw/TalkModeRuntime.swift: app surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- apps/macos/Sources/OpenClaw/TalkModeRuntime.swift No files found matching the given patterns. [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] lint apps (swiftlint unavailable on this host) [check:changed] Swift app lint skipped: swiftlint is unavailable on this non-macOS host; macOS CI owns SwiftLint coverage. [check:changed] macOS app CI tests $ pnpm test:macos:ci:1 && pnpm test:macos:ci:2 && pnpm test:macos:ci:3 $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/mac-elevation-host.test.ts [test] starting test/vitest/vitest.tooling.config.ts [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-elevation-host.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-elevation-host.test.ts: retiring openclaw.sqliteCoordinatorPool [test] passed 1 Vitest shard in 2.57s $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/vitest-process-group.test.ts test/scripts/package-mac-app.test.ts test/scripts/stage-cloudflared-macos.test.ts test/scripts/restart-mac.test.ts test/scripts/mac-node-worker.test.ts test/scripts/package-mac-dist.test.ts test/scripts/codesign-mac-app.test.ts test/scripts/notarize-mac-artifact.test.ts test/scripts/mac-elevation-artifact.test.ts [test] starting test/vitest/vitest.tooling.config.ts [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/package-mac-app.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/package-mac-app.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/notarize-mac-artifact.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/notarize-mac-artifact.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/restart-mac.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/restart-mac.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-node-worker.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-node-worker.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/vitest-process-group.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/vitest-process-group.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-elevation-artifact.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/mac-elevation-artifact.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/codesign-mac-app.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/codesign-mac-app.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/stage-cloudflared-macos.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/stage-cloudflared-macos.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/package-mac-dist.test.ts: retiring openclaw.sqliteCoordinatorPool [90mstderr[2m | unknown test [22m[39m[sqlite-test-lifecycle] test/scripts/package-mac-dist.test.ts: retiring openclaw.sqliteCoordinatorPool [31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m [41m[1m FAIL [22m[49m [30m[46m tooling [49m[39m test/scripts/package-mac-app.test.ts[2m > [22mpackage-mac-app plist stamping[2m > [22mpasses an explicit signing identity and honors unset TMPDIR during worker verification [31m[1mAssertionError[22m: node:fs:3134 return binding.mkdtemp(prefix, options.encoding); ^ Error: EROFS: read-only file system, mkdtemp '/tmp/worker-proof-XXXXXX' at Object.mkdtempSync (node:fs:3134:18) at file:///tmp/clawsweeper-target-user-e3nh7n/tmp/oc-vt-SRnWsr/openclaw-package-signing-identity-09HQLh/scripts/verify-mac-node-worker.mjs:4:36 at ModuleJob.run (node:internal/modules/esm/module_job:561:25) at async node:internal/modules/esm/loader:647:26 at async asyncRunEntryP ...  125[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mfails closed for required Info.plist reads[32m 0[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mrequires the release bundle id to match the configured bundle id[32m 0[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mmarks the distributed Control UI as an official release artifact[32m 0[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mdoes not mask canonical Sparkle build failures for release packaging[32m 0[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mchecks Swift before Sparkle metadata or dependency bootstrap work[32m 0[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mfails on old Swift before reading package metadata[32m 15[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mprefers repo Corepack pnpm over a global pnpm shim[32m 15[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mkeeps dependency bootstrap output out of captured Sparkle build values[32m 13[2mms[22m[39m [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mstops when dependency bootstrap fails during Sparkle build retry[32m 11[2mms[22m[39m [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mre-audits the retained app before resuming without build products [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mre-audits the retained dmg before resuming without build products [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mfails closed when required dSYM outputs are missing[32m 0[2mms[22m[39m [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist plist validation[2m > [22mprints required plist keys and fails when a key is missing [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22marchives matching universal symbols from the native build output [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22marchives matching universal symbols from the xcode build output [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22mrejects undersized frame before archiving [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22mrejects missing ARM64 slice before archiving [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22mpackages an x86_64-only build without the arm64 audit [2m[90m↓[39m[22m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts[2m > [22mpackage-mac-dist symbol archives[2m > [22mrefuses a universal archive when one architecture has no symbols [32m✓[39m [30m[46m tooling [49m[39m test/scripts/package-mac-dist.test.ts [2m([22m[2m30 tests[22m[2m | [22m[33m9 skipped[39m[2m)[22m[33m 6416[2mms[22m[39m [32m✓[39m macOS packaging checkpoint boundary [2m(11)[22m [33m[2m✓[22m[39m retains a signed DMG before notarization and resumes without build or signing credentials[33m 917[2mms[22m[39m [33m[2m✓[22m[39m allows ad-hoc smoke resume with identity "-" on a signer-equipped host[33m 841[2mms[22m[39m [33m[2m✓[22m[39m allows ad-hoc smoke resume with identity "" on a signer-equipped host[33m 815[2mms[22m[39m [33m[2m✓[22m[39m uses the automatically selected app identity for the checkpoint DMG[33m 417[2mms[22m[39m [33m[2m✓[22m[39m refuses release recovery before notarization[33m 694[2mms[22m[39m [33m[2m✓[22m[39m refuses release with smoke flag recovery before notarization[33m 735[2mms[22m[39m [33m[2m✓[22m[39m refuses tampered app recovery before notarization[33m 478[2mms[22m[39m [33m[2m✓[22m[39m refuses missing DMG recovery before notarization[33m 495[2mms[22m[39m [33m[2m✓[22m[39m refuses audit recovery before notarization[33m 594[2mms[22m[39m [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[2m | [22m[33m2 skipped[39m[90m (9)[39m [2m Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m237 passed[39m[22m[2m | [22m[33m380 skipped[39m[90m (618)[39m [2m Start at [22m 19:34:41 [2m Duration [22m 7.21s[2m (tests 90%, worker 6%, transform 3%, import 1%)[22m [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m6 passed[39m[22m[2m | [22m[33m2 skipped[39m[90m (9)[39m [2m Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m237 passed[39m[22m[2m | [22m[33m380 skipped[39m[90m (618)[39m [2m Start at [22m 19:34:41 [2m Duration [22m 7.21s[2m (tests 90%, worker 6%, transform 3%, import 1%)[22m |
+| issue_implementation_status_comment | updated | #153145 |  |  |
 
 ## Apply Actions
 
@@ -66,7 +67,10 @@ Current main still has the fixed Talk reply-observation window described in the 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153145 | fix_needed | planned | canonical | First demonstrate the delayed active-run failure on current main, then keep Talk observing that run until a terminal outcome or cancellation. |
+| #153145 | fix_needed | planned | canonical | The source supports the reported failure path, but a failing native regression and verification against preflight main remain required before implementation. |
+| #153444 | keep_closed | skipped | superseded | Historical source work only; preserve Alix-007's credit in the new PR. |
+| #60636 | keep_closed | skipped | related | Related local-model timing context, with a different owner and failure path. |
+| cluster:issue-openclaw-openclaw-153145 | build_fix_artifact | blocked |  | Resume in a writable checkout at current main on a disposable macOS host. Establish a failing accepted-send regression before editing, then validate the repair and native behavior. |
 
 ## Needs Human
 
