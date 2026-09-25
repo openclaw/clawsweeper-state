@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T07:12:05.868Z",
+  "updated_at": "2026-09-25T07:12:48.124Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157680:5825437180:2026-09-25T01:59:27Z:re_review",
-      "comment_id": "5825437180",
-      "comment_version_key": "5825437180:2026-09-25T01:59:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157680#issuecomment-5825437180",
-      "comment_created_at": "2026-09-25T01:59:27Z",
-      "comment_updated_at": "2026-09-25T01:59:27Z",
-      "comment_body_sha256": "819c1b176e9e3d87b14e1281793727cd7f19f0dd35f62a113d9fc83f780e8ac2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157680,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:00:38.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-fixture-source-contracts",
-        "head_sha": "02e938eedc6b30bb3bbfd83908036a111bed12d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157719:5825437983:2026-09-25T01:59:33Z:re_review",
       "comment_id": "5825437983",
@@ -34210,6 +34163,39 @@
         "kind": "pull_request",
         "branch": "feat/plugin-supervisor-guidance",
         "head_sha": "33e98bcf6fba2bf5bf36eb4c8b6a06a1fff11ccf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157413:5818526599:2026-09-25T07:11:51Z:clawsweeper_needs_human",
+      "comment_id": "5818526599",
+      "comment_version_key": "5818526599:2026-09-25T07:11:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157413#issuecomment-5818526599",
+      "comment_created_at": "2026-09-24T17:00:12Z",
+      "comment_updated_at": "2026-09-25T07:11:51Z",
+      "comment_body_sha256": "176f362d48446c5460e29d0dd409d5c08eb49e62adddb357c50e12d654d75d6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157413,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations may encounter startup, Doctor, or rollback failures after the ownership cutover; the exact-head published-package upgrade acceptance needed to verify that path... (sha=e0030ab93545ab4fc4a43282a66c9b1247a49e20)",
+      "expected_head_sha": "e0030ab93545ab4fc4a43282a66c9b1247a49e20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T07:12:48.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/land-temp-state-cleanup",
+        "head_sha": "e0030ab93545ab4fc4a43282a66c9b1247a49e20",
         "cluster_id": null,
         "job_path": null
       }
