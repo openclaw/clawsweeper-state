@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158339"
 mode: "plan"
-run_id: "36197082865"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36197082865"
+run_id: "36198891829"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36198891829"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-25T22:55:40.980Z"
+published_at: "2026-09-25T22:58:48.831Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158339"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158339"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36197082865](https://github.com/openclaw/clawsweeper/actions/runs/36197082865)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36198891829](https://github.com/openclaw/clawsweeper/actions/runs/36198891829)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/158339
 
 ## Summary
 
-The open issue remains the canonical fix path. The checkout at main 8d198548 still uses the reported query guard. No code or GitHub state was changed. Bun 1.4.2 is unavailable here, so a bounded failing Bun regression must precede implementation and PR creation.
+The hydrated issue is open, and its review reports that the query-based guard remains on main. Plan a narrow repair, but reproduce the failure on the exact current main under Bun 1.4.2 before changing code. The local checkout predates the preflight main commit and has no Bun executable. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ The open issue remains the canonical fix path. The checkout at main 8d198548 sti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158339 | fix_needed | planned | canonical | Keep the issue open while the updater alias receives a narrowly validated repair. |
+| https://github.com/openclaw/openclaw/issues/158339 | fix_needed | planned | canonical | The reported failure has a narrow candidate owner in the generated update config alias. Recheck and reproduce it on current main before editing. |
+| issue-openclaw-openclaw-158339 | build_fix_artifact | planned |  | Prepare one issue-scoped fix path, conditional on a failing bounded reproduction on current main. |
 
 ## Needs Human
 

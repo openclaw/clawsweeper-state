@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158339",
+  "mode": "plan",
+  "run_id": "36198891829",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36198891829",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158339.md",
+  "published_at": "2026-09-25T22:58:48.831Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_pr": null,
+  "summary": "The hydrated issue is open, and its review reports that the query-based guard remains on main. Plan a narrow repair, but reproduce the failure on the exact current main under Bun 1.4.2 before changing code. The local checkout predates the preflight main commit and has no Bun executable. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158339",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "980",
+      "candidate_fix": null,
+      "reason": "The reported failure has a narrow candidate owner in the generated update config alias. Recheck and reproduce it on current main before editing."
+    },
+    {
+      "target": "issue-openclaw-openclaw-158339",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "980",
+      "candidate_fix": null,
+      "reason": "Prepare one issue-scoped fix path, conditional on a failing bounded reproduction on current main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
