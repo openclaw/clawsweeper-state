@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
-mode: "autonomous"
-run_id: "36195153259"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36195153259"
+mode: "plan"
+run_id: "36197085803"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36197085803"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T22:57:07.917Z"
-canonical: "https://github.com/openclaw/openclaw/issues/153502"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T23:00:21.051Z"
+canonical: "#153502"
+canonical_issue: "#153502"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36195153259](https://github.com/openclaw/clawsweeper/actions/runs/36195153259)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36197085803](https://github.com/openclaw/clawsweeper/actions/runs/36197085803)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/153502
+Canonical: #153502
 
 ## Summary
 
-Current main has a plausible Doctor settlement defect: historical_transcript_deferred is a warning, but retained-source settlement treats it as a failure. Implementation is blocked because this checkout is read-only, dependencies are absent, and the required failing regression could not run.
+Current main appears to retain a Doctor settlement defect: an advisory historical transcript warning can cause settlement to fail. This is a read-only plan; the required failing regression and validation have not run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Current main has a plausible Doctor settlement defect: historical_transcript_def
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | A mixed retained-plugin receipt and historical-warning state needs an entry-point regression before a safe change. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with the repository toolchain installed. |
+| #153502 | fix_needed | planned | canonical | Keep the issue open. Reproduce the mixed state on current main, then repair only the verified settlement defect. |
+| #154413 | keep_closed | skipped | related | Historical fix context; no action on the closed PR. |
+| #154543 | keep_closed | skipped | related | Historical update fix context; no action on the closed PR. |
 
 ## Needs Human
 
