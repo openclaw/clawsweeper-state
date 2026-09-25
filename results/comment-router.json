@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T22:28:04.816Z",
+  "updated_at": "2026-09-25T22:28:06.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5436685982:2026-08-27T08:53:32Z:re_review",
-      "comment_id": "5436685982",
-      "comment_version_key": "5436685982:2026-08-27T08:53:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5436685982",
-      "comment_created_at": "2026-08-27T08:53:32Z",
-      "comment_updated_at": "2026-08-27T08:53:32Z",
-      "comment_body_sha256": "efd0e224d82e05f387c73dde28d9bce082c01fff57d225a8166c070bf2a2940f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T16:03:42.323Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5437157730:2026-08-27T09:36:58Z:re_review",
       "comment_id": "5437157730",
@@ -33291,6 +33264,39 @@
       "status": "skipped",
       "processed_at": "2026-09-25T22:28:04.816Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:685:5840388730:2026-09-25T22:27:09Z:clawsweeper_needs_human",
+      "comment_id": "5840388730",
+      "comment_version_key": "5840388730:2026-09-25T22:27:09Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/685#issuecomment-5840388730",
+      "comment_created_at": "2026-09-25T22:13:46Z",
+      "comment_updated_at": "2026-09-25T22:27:09Z",
+      "comment_body_sha256": "28154dc0b140604ca127d5c845b0dd548dae4b0fd7d798db234efeb294cd403a",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 685,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the shipped arm64 glibc floor (P1)** - The reported failure concerns x64, but this line also replaces arm64's shipped cross-build path with a 2.28-targeted addon. The PR body reports an existing arm64 G...; Review finding: [P1] Preserve the shipped arm64 glibc floor — .github/workflows/release.yml:127 - [medium] Preserve effective native containment on arm64 upgrades — .github/workfl... (sha=da88197aa9d8a76f4b7d455d266554248a7e02fe)",
+      "expected_head_sha": "da88197aa9d8a76f4b7d455d266554248a7e02fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T22:28:06.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/linux-glibc-floor-20260925",
+        "head_sha": "da88197aa9d8a76f4b7d455d266554248a7e02fe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
