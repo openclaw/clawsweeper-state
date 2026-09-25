@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-09-25T03:19:14.579Z",
+  "updated_at": "2026-09-25T03:20:00.816Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155982:5785081560:2026-09-24T21:13:42Z:clawsweeper_needs_human",
-      "comment_id": "5785081560",
-      "comment_version_key": "5785081560:2026-09-24T21:13:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155982#issuecomment-5785081560",
-      "comment_created_at": "2026-09-22T22:15:12Z",
-      "comment_updated_at": "2026-09-24T21:13:42Z",
-      "comment_body_sha256": "6ba3220a003134215baf22d6dc2572c09f802502ed95e170092d13d00ec11a11",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155982,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied test merge has an older main parent, while current main has also changed reply admission; the combined rotation and recovery behavior needs validation against the current... (sha=fa4678d5d09870b5698080a04fca50b3c4a138be)",
-      "expected_head_sha": "fa4678d5d09870b5698080a04fca50b3c4a138be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T21:15:16.340Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recovery-logical-read-current-main-20260922",
-        "head_sha": "fa4678d5d09870b5698080a04fca50b3c4a138be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154208:5822253809:2026-09-24T21:06:53Z:re_review",
-      "comment_id": "5822253809",
-      "comment_version_key": "5822253809:2026-09-24T21:06:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154208#issuecomment-5822253809",
-      "comment_created_at": "2026-09-24T21:06:53Z",
-      "comment_updated_at": "2026-09-24T21:06:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154208,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T21:15:19.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-tools",
-        "head_sha": "4c17fba84d7f3ab740120bd212f5995c819f2625",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154208:5754025808:2026-09-24T21:13:31Z:clawsweeper_auto_repair",
       "comment_id": "5754025808",
@@ -33824,6 +33744,86 @@
         "kind": "pull_request",
         "branch": "fix/sqlite-snapshot-error-context-20260925",
         "head_sha": "a4838d1b8d1f563745f523fe2db6a7c4ecd84668",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157304:5816321773:2026-09-24T14:42:27Z:re_review",
+      "comment_id": "5816321773",
+      "comment_version_key": "5816321773:2026-09-24T14:42:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157304#issuecomment-5816321773",
+      "comment_created_at": "2026-09-24T14:42:27Z",
+      "comment_updated_at": "2026-09-24T14:42:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157304,
+      "author": "sahilsatralkar",
+      "author_id": 62758655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T03:19:58.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-deepseek-flash-compat",
+        "head_sha": "e61a6b6164bf7fe4fad87154314778dd0902bf43",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157304:5815290895:2026-09-25T03:18:52Z:clawsweeper_needs_human",
+      "comment_id": "5815290895",
+      "comment_version_key": "5815290895:2026-09-25T03:18:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157304#issuecomment-5815290895",
+      "comment_created_at": "2026-09-24T13:43:35Z",
+      "comment_updated_at": "2026-09-25T03:18:52Z",
+      "comment_body_sha256": "63fc049946d153d676904b2cda882da1b264004196aad5bb6f6d9d3879e95ccd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157304,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e61a6b6164bf7fe4fad87154314778dd0902bf43)",
+      "expected_head_sha": "e61a6b6164bf7fe4fad87154314778dd0902bf43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T03:20:00.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-deepseek-flash-compat",
+        "head_sha": "e61a6b6164bf7fe4fad87154314778dd0902bf43",
         "cluster_id": null,
         "job_path": null
       }
