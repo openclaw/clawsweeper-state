@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-25T00:58:07.771Z",
+  "updated_at": "2026-09-25T00:57:39.905Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155695:5776426216:2026-09-24T16:53:46Z:clawsweeper_needs_human",
+      "comment_id": "5776426216",
+      "comment_version_key": "5776426216:2026-09-24T16:53:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155695#issuecomment-5776426216",
+      "comment_created_at": "2026-09-22T12:24:02Z",
+      "comment_updated_at": "2026-09-24T16:53:46Z",
+      "comment_body_sha256": "c91f9e60c627ef18ef9759134873b436e8d5cf765384d826ae7528beb23e1038",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR reports only a combined 43.926-second focused test invocation; the recurring one-worker and CI cost of each changed test file remains undisclosed. (sha=8d15e5ca639851e8d371412cffae97be19b6fb49)",
+      "expected_head_sha": "8d15e5ca639851e8d371412cffae97be19b6fb49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-24T17:13:31.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-spawn-admission-history-20260922",
+        "head_sha": "8d15e5ca639851e8d371412cffae97be19b6fb49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155841:5780268547:2026-09-24T16:45:44Z:clawsweeper_needs_human",
       "comment_id": "5780268547",
@@ -33342,53 +33375,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157776:5824824622:2026-09-25T00:54:09Z:re_review",
-      "comment_id": "5824824622",
-      "comment_version_key": "5824824622:2026-09-25T00:54:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157776#issuecomment-5824824622",
-      "comment_created_at": "2026-09-25T00:54:09Z",
-      "comment_updated_at": "2026-09-25T00:54:09Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157776,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:58:06.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/team-pr-cache-retirement",
-        "head_sha": "9fbcaa2aa199e83a153101e6559b89ea99920972",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
