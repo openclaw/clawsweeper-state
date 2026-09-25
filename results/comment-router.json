@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:07:53.416Z",
+  "updated_at": "2026-09-25T06:08:28.815Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3970:5824658343:2026-09-25T00:36:49Z:clawsweeper_needs_human",
-      "comment_id": "5824658343",
-      "comment_version_key": "5824658343:2026-09-25T00:36:49Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3970#issuecomment-5824658343",
-      "comment_created_at": "2026-09-25T00:36:49Z",
-      "comment_updated_at": "2026-09-25T00:36:49Z",
-      "comment_body_sha256": "8490d0af84cb11b9bae6ac378b29aab940a5e024c31a46c90e2452e1809324d2",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3970,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d2c2b31854ddebbfd61264c594f86ba8c2fb3671)",
-      "expected_head_sha": "d2c2b31854ddebbfd61264c594f86ba8c2fb3671",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:38:03.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage/20260921-new-prs-g",
-        "head_sha": "d2c2b31854ddebbfd61264c594f86ba8c2fb3671",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157730:5824285568:2026-09-25T00:37:12Z:clawsweeper_needs_human",
       "comment_id": "5824285568",
@@ -34371,6 +34338,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157474:5827700129:2026-09-25T06:07:38Z:re_review",
+      "comment_id": "5827700129",
+      "comment_version_key": "5827700129:2026-09-25T06:07:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157474#issuecomment-5827700129",
+      "comment_created_at": "2026-09-25T06:07:38Z",
+      "comment_updated_at": "2026-09-25T06:07:38Z",
+      "comment_body_sha256": "84bf9694c7535b5a21052eb3a605072ed563a03689a6101595bd762a317bacc9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157474,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review both p1 findings are addressed, with built gateway/control ui before-after proof and inspected screenshots embedded in the pr. external claude and api provider boundaries are explicitly scripted; actual routing, cli launch, session snapshot, read tool, image delivery, and rpc/ui behavior were exercised",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T06:08:25.239Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/side-chat-claude-cli",
+        "head_sha": "2c98fe82032d979d657e23d0aa2173d510d01cd0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
