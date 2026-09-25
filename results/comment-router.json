@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T11:07:16.070Z",
+  "updated_at": "2026-09-25T11:07:17.359Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147611:5827488873:2026-09-25T05:47:01Z:re_review",
-      "comment_id": "5827488873",
-      "comment_version_key": "5827488873:2026-09-25T05:47:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147611#issuecomment-5827488873",
-      "comment_created_at": "2026-09-25T05:47:01Z",
-      "comment_updated_at": "2026-09-25T05:47:01Z",
-      "comment_body_sha256": "ce488eee90e102e3fa5381b8bb2edb73c7fdb63b34fa254410303810d08fc977",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147611,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T05:54:58.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/continue-transcript-after-malformed-tool-call",
-        "head_sha": "e980b8c1c5706f1b0a7149ef8cc053c9a3f8115b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157864:5827505437:2026-09-25T05:48:52Z:re_review",
       "comment_id": "5827505437",
@@ -33310,6 +33263,39 @@
         "kind": "pull_request",
         "branch": "codex/doctor-readiness-integrated-01a0a39d",
         "head_sha": "35b2da0d75679d954019163c215b72893dbb7f14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158085:5831356743:2026-09-25T11:06:19Z:clawsweeper_needs_human",
+      "comment_id": "5831356743",
+      "comment_version_key": "5831356743:2026-09-25T11:06:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158085#issuecomment-5831356743",
+      "comment_created_at": "2026-09-25T11:06:19Z",
+      "comment_updated_at": "2026-09-25T11:06:19Z",
+      "comment_body_sha256": "dcaff1b646c6ffcf44b3099edc72398027caae531464bb21e46ba902ea264808",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head architecture check failed, and its diagnostic log was unavailable to this read-only reviewer; the violated boundary and whether the failure comes from this branch remai... (sha=b74c94b3aac43c45c9b6c71cc74c32753ae749f0)",
+      "expected_head_sha": "b74c94b3aac43c45c9b6c71cc74c32753ae749f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T11:07:17.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l45-discord-slack-second-pass",
+        "head_sha": "b74c94b3aac43c45c9b6c71cc74c32753ae749f0",
         "cluster_id": null,
         "job_path": null
       }
