@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T09:15:45.074Z",
+  "updated_at": "2026-09-25T09:16:09.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157869:5826547394:2026-09-25T04:10:17Z:re_review",
-      "comment_id": "5826547394",
-      "comment_version_key": "5826547394:2026-09-25T04:10:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157869#issuecomment-5826547394",
-      "comment_created_at": "2026-09-25T04:10:17Z",
-      "comment_updated_at": "2026-09-25T04:10:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157869,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T04:13:36.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/model-picker-order",
-        "head_sha": "1faf148f4c51dae051c9acfd99ec27ce00c13b5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157884:5826577520:2026-09-25T04:13:29Z:clawsweeper_auto_repair",
       "comment_id": "5826577520",
@@ -34022,6 +33975,39 @@
         "kind": "pull_request",
         "branch": "codex/test-gateway-hello-fixtures-34e",
         "head_sha": "fde0a637bbbe6b570390e5ce2b0502939ec05e1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-09-25T09:09:58Z:clawsweeper_needs_human",
+      "comment_id": "5339397512",
+      "comment_version_key": "5339397512:2026-09-25T09:09:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5339397512",
+      "comment_created_at": "2026-08-19T08:16:00Z",
+      "comment_updated_at": "2026-09-25T09:09:58Z",
+      "comment_body_sha256": "248cf3f9ccdf1131f54d42dca43b7ebcdd7c293fbbc7236b2c72797d207451ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: linked earlier browser runs and the reported clean install exercise Harness behavior, but no observed...; Review finding: [P1] Recheck authority at the Harness process boundary — src/agents/approval-free-host-exec-tools.ts:60-63 - [P1] Move managed dependency installation out of tool... (sha=fb9390d4c8ead8dd740e90efc6aac784bbb6a2bf)",
+      "expected_head_sha": "fb9390d4c8ead8dd740e90efc6aac784bbb6a2bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T09:16:09.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/browser-harness-default",
+        "head_sha": "fb9390d4c8ead8dd740e90efc6aac784bbb6a2bf",
         "cluster_id": null,
         "job_path": null
       }
