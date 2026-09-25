@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T22:56:53.678Z",
+  "updated_at": "2026-09-25T22:57:30.984Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154158:5753560877:2026-09-20T23:34:21Z:re_review",
-      "comment_id": "5753560877",
-      "comment_version_key": "5753560877:2026-09-20T23:34:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154158#issuecomment-5753560877",
-      "comment_created_at": "2026-09-20T23:34:21Z",
-      "comment_updated_at": "2026-09-20T23:34:21Z",
-      "comment_body_sha256": "81376c4df333744108c201cdd3512e141bee6449a8e19d10ca60d5bbd816c644",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154158,
-      "author": "ayoakouh",
-      "author_id": 185819768,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — updated to 890d1e7e4. removed the unused cache-loader dependency and corrected the in-flight cancellation fixture flagged by ci. the dependency contract passes 475 tests and the lifecycle file passes 12 tests; proofs and limitations are updated in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T16:09:34.751Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154158:5753753518:2026-09-21T00:11:02Z:re_review",
       "comment_id": "5753753518",
@@ -33453,6 +33426,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1509:5819597524:2026-09-25T22:56:39Z:clawsweeper_auto_repair",
+      "comment_id": "5819597524",
+      "comment_version_key": "5819597524:2026-09-25T22:56:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1509#issuecomment-5819597524",
+      "comment_created_at": "2026-09-24T18:13:41Z",
+      "comment_updated_at": "2026-09-25T22:56:39Z",
+      "comment_body_sha256": "30c22c26c30974f7bd7b4c186b84a089eaa33b89e6081d2d0d8c200d10e420ed",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=41834892e8f186b0951600e2a0066532115486e7)",
+      "expected_head_sha": "41834892e8f186b0951600e2a0066532115486e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T22:57:30.984Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f082-preserve-bootstrap-on-failed-token",
+        "head_sha": "41834892e8f186b0951600e2a0066532115486e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
