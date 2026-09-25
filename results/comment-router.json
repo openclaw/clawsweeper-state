@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T15:06:07.402Z",
+  "updated_at": "2026-09-25T15:06:09.543Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126255:5379120352:2026-08-22T07:55:47Z:re_review",
-      "comment_id": "5379120352",
-      "comment_version_key": "5379120352:2026-08-22T07:55:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126255#issuecomment-5379120352",
-      "comment_created_at": "2026-08-22T07:55:47Z",
-      "comment_updated_at": "2026-08-22T07:55:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126255,
-      "author": "MagMueller",
-      "author_id": 67061560,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T08:13:22.139Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126255:5379140279:2026-08-22T08:00:58Z:re_review",
       "comment_id": "5379140279",
@@ -33514,6 +33487,39 @@
       "status": "skipped",
       "processed_at": "2026-09-25T15:06:07.402Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:674:5832664984:2026-09-25T14:49:38Z:clawsweeper_needs_human",
+      "comment_id": "5832664984",
+      "comment_version_key": "5832664984:2026-09-25T14:49:38Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/674#issuecomment-5832664984",
+      "comment_created_at": "2026-09-25T12:51:19Z",
+      "comment_updated_at": "2026-09-25T14:49:38Z",
+      "comment_body_sha256": "651e821ede42cdaf169be24c8e688d45aeac614e27911efc618ed32277464b99",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 674,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Moving the awaited close changes scheduling on public read paths. A different cleanup approach measured material read-latency regressions, and the paired installed-package comparison... (sha=0c7ba840bafb6012b82d35bdee31f34948880831)",
+      "expected_head_sha": "0c7ba840bafb6012b82d35bdee31f34948880831",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T15:06:09.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/read-close-integration-20260925",
+        "head_sha": "0c7ba840bafb6012b82d35bdee31f34948880831",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
