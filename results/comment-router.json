@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T03:55:13.935Z",
+  "updated_at": "2026-09-25T03:56:16.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157538:5821667675:2026-09-24T20:24:24Z:re_review",
-      "comment_id": "5821667675",
-      "comment_version_key": "5821667675:2026-09-24T20:24:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157538#issuecomment-5821667675",
-      "comment_created_at": "2026-09-24T20:24:24Z",
-      "comment_updated_at": "2026-09-24T20:24:24Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157538,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T21:21:22.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-six-cleanups-20260924",
-        "head_sha": "0491e177a558bcfbef4ad916fd68a0b1a2bb5790",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151453:5821772208:2026-09-24T20:31:56Z:re_review",
       "comment_id": "5821772208",
@@ -34050,6 +34003,39 @@
         "kind": "pull_request",
         "branch": "perf/test-channel-progress-shell-wait",
         "head_sha": "caafae9f4e487261ee390ab4914bfd3de53b321f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:245:5814249469:2026-09-25T03:55:22Z:clawsweeper_needs_human",
+      "comment_id": "5814249469",
+      "comment_version_key": "5814249469:2026-09-25T03:55:22Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/245#issuecomment-5814249469",
+      "comment_created_at": "2026-09-24T12:37:25Z",
+      "comment_updated_at": "2026-09-25T03:55:22Z",
+      "comment_body_sha256": "f4228b8746ef3608e182c157c3ae70c14d478d6b156354539a210c26eca907c3",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 245,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft head conflicts with current main’s catalog and shared pricing-type changes; the combined Worker behavior needs validation after the conflict is resolved. (sha=40f3414c6ab73bcdbe5069d3cee18ed0a0015a87)",
+      "expected_head_sha": "40f3414c6ab73bcdbe5069d3cee18ed0a0015a87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T03:56:16.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/tts-character-accounting",
+        "head_sha": "40f3414c6ab73bcdbe5069d3cee18ed0a0015a87",
         "cluster_id": null,
         "job_path": null
       }
