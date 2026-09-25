@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T18:40:07.393Z",
+  "updated_at": "2026-09-25T18:40:08.199Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/summarize:492:5832701269:2026-09-25T12:54:05Z:re_review",
-      "comment_id": "5832701269",
-      "comment_version_key": "5832701269:2026-09-25T12:54:05Z",
-      "comment_url": "https://github.com/steipete/summarize/pull/492#issuecomment-5832701269",
-      "comment_created_at": "2026-09-25T12:54:05Z",
-      "comment_updated_at": "2026-09-25T12:54:05Z",
-      "comment_body_sha256": "6194f4328052a7a0cef79a9bfb55ef2ef3a2643ecce32e55f4a0ae6d4ea92829",
-      "repo": "steipete/summarize",
-      "issue_number": 492,
-      "author": "vincent-peng",
-      "author_id": 9654118,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed: added a captured node 26.8.1 run of the focused test to the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T12:59:40.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "node26-native-import",
-        "head_sha": "6ff97b54cc9c9f508fdd0b667133496675cb8f83",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:492:5829634680:2026-09-25T12:58:38Z:clawsweeper_needs_human",
       "comment_id": "5829634680",
@@ -32604,6 +32557,39 @@
         "kind": "pull_request",
         "branch": "codex/mcp-infra-batching-20260925",
         "head_sha": "55dac3fa5ea1d62ac7beac49044e81f778514f26",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147026:5653354698:2026-09-25T18:37:24Z:clawsweeper_auto_repair",
+      "comment_id": "5653354698",
+      "comment_version_key": "5653354698:2026-09-25T18:37:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147026#issuecomment-5653354698",
+      "comment_created_at": "2026-09-13T12:47:40Z",
+      "comment_updated_at": "2026-09-25T18:37:24Z",
+      "comment_body_sha256": "79773b6e5d732c27cbf5102a69ebbb738f667d709c26f8cc010332b18a7303a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147026,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7ff4e01780b7bd9e392e11fff2b6fbb613fd7d28)",
+      "expected_head_sha": "7ff4e01780b7bd9e392e11fff2b6fbb613fd7d28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T18:40:08.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/followup-drain-terminal",
+        "head_sha": "7ff4e01780b7bd9e392e11fff2b6fbb613fd7d28",
         "cluster_id": null,
         "job_path": null
       }
