@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T22:07:32.468Z",
+  "updated_at": "2026-09-25T22:07:50.815Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5199705023:2026-08-06T02:28:50Z:re_review",
-      "comment_id": "5199705023",
-      "comment_version_key": "5199705023:2026-08-06T02:28:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5199705023",
-      "comment_created_at": "2026-08-06T02:28:50Z",
-      "comment_updated_at": "2026-08-06T02:28:50Z",
-      "comment_body_sha256": "113b93e799f12eb01fade2e60864d63eb95bc6bdb18062548299dbeddeae4420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T16:03:42.323Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5199739096:2026-08-06T02:34:55Z:re_review",
       "comment_id": "5199739096",
@@ -32967,6 +32940,39 @@
       "status": "skipped",
       "processed_at": "2026-09-25T22:07:32.468Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158328:5839805746:2026-09-25T22:06:14Z:clawsweeper_needs_human",
+      "comment_id": "5839805746",
+      "comment_version_key": "5839805746:2026-09-25T22:06:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158328#issuecomment-5839805746",
+      "comment_created_at": "2026-09-25T21:21:47Z",
+      "comment_updated_at": "2026-09-25T22:06:14Z",
+      "comment_body_sha256": "cc4ae0b5fe2b406b7753e9af1cdfe507bf691026216222e90e1b78b1aaf5706a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158328,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The added entrypoint test shows the allowed Gateway-rule payload through the official SDK with mocked fetch, bu...; Review finding: [P1] Honor the workspace injection opt-out before creating a session — extensions/agentsapi/agentsapi-attempt.ts:231 - [medium] Opted-out Gateway instructions reac... (sha=db731f194d373dfb3a8b70e6dc9854af6b43bab7)",
+      "expected_head_sha": "db731f194d373dfb3a8b70e6dc9854af6b43bab7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T22:07:50.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-agent-instructions",
+        "head_sha": "db731f194d373dfb3a8b70e6dc9854af6b43bab7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
