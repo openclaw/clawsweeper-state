@@ -2,53 +2,6 @@
   "updated_at": "2026-09-25T04:15:42.697Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:157542:5822571681:2026-09-24T21:30:59Z:re_review",
-      "comment_id": "5822571681",
-      "comment_version_key": "5822571681:2026-09-24T21:30:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157542#issuecomment-5822571681",
-      "comment_created_at": "2026-09-24T21:30:59Z",
-      "comment_updated_at": "2026-09-24T21:30:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157542,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T21:41:07.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/157463-discord-path-plugin-convergence",
-        "head_sha": "d54e783de24bc1ff1be1a414a4ceec914c0906ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1168:5822697553:2026-09-24T21:40:08Z:clawsweeper_needs_human",
       "comment_id": "5822697553",
       "comment_version_key": "5822697553:2026-09-24T21:40:08Z",
@@ -33869,6 +33822,39 @@
         "kind": "pull_request",
         "branch": "fix/dreaming-strip-boundary-157826",
         "head_sha": "767796c4f094128f76b893d3f967c872cfc730d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154067:5752623521:2026-09-25T04:08:12Z:clawsweeper_needs_human",
+      "comment_id": "5752623521",
+      "comment_version_key": "5752623521:2026-09-25T04:08:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154067#issuecomment-5752623521",
+      "comment_created_at": "2026-09-20T20:59:57Z",
+      "comment_updated_at": "2026-09-25T04:08:12Z",
+      "comment_body_sha256": "beea5afa7042de58ca7b6bed375cd86f2e7b2936d214f4cb40b09a6c09a61810",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed sender persists eligibility and can POST a default-on outcome. Its client tests mock fetch...; Review finding: [medium] Confirm the default-on disclosure boundary — src/infra/update-result-telemetry.ts:19 (sha=2d210c69fddce8cece23dadac118b9e6edf556fb)",
+      "expected_head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T04:15:39.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/update-outcome-pings-pr-20260919",
+        "head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
         "cluster_id": null,
         "job_path": null
       }
