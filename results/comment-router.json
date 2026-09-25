@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T20:13:47.742Z",
+  "updated_at": "2026-09-25T20:14:29.282Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119589:5191500547:2026-09-05T03:02:33Z:clawsweeper_needs_human",
-      "comment_id": "5191500547",
-      "comment_version_key": "5191500547:2026-09-05T03:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119589#issuecomment-5191500547",
-      "comment_created_at": "2026-08-05T12:06:10Z",
-      "comment_updated_at": "2026-09-05T03:02:33Z",
-      "comment_body_sha256": "b0051d99fafd6a5e818bcd063d019b1ba10c86f0bc3ac12b5c3e30ef897e8844",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The WeChat failure has not been connected to an ACP producer, leaving the claimed repair owner unverified. (sha=61ed1c4b40db7738c45a67bbb69efc585bce9bf4)",
-      "expected_head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T14:02:54.700Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-92199",
-        "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-        "cluster_id": "automerge-openclaw-openclaw-119589",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119589.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119722:5196416781:2026-09-02T15:57:22Z:clawsweeper_auto_repair",
       "comment_id": "5196416781",
@@ -32571,6 +32538,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158252:5838903458:2026-09-25T20:13:22Z:re_review",
+      "comment_id": "5838903458",
+      "comment_version_key": "5838903458:2026-09-25T20:13:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158252#issuecomment-5838903458",
+      "comment_created_at": "2026-09-25T20:13:22Z",
+      "comment_updated_at": "2026-09-25T20:13:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158252,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T20:14:27.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/157346-android-chat-link-preview-collapse",
+        "head_sha": "9729cf6f0abdad8f2d386acb6bcdb1076068443c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
