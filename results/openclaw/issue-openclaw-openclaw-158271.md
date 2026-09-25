@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158271"
-mode: "autonomous"
-run_id: "36178506956"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36178506956"
+mode: "plan"
+run_id: "36186977827"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36186977827"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T20:16:21.868Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158271"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158271"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T20:43:01.422Z"
+canonical: "#158271"
+canonical_issue: "#158271"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36178506956](https://github.com/openclaw/clawsweeper/actions/runs/36178506956)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36186977827](https://github.com/openclaw/clawsweeper/actions/runs/36186977827)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158271
+Canonical: #158271
 
 ## Summary
 
-Current main still has the reported policy-hash mismatch. Source inspection and a hash calculation confirm the reset condition, but this read-only checkout cannot accept the required failing regression, repair, or local validation.
+Plan a narrow fix for the still-open agent-turn policy-hash regression. The checkout matches preflight main b36641d7625de2a533be288fb0b809b73d559601. No code was changed and no tests were run in plan mode; the required failing regression and validation must precede a fix PR.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Current main still has the reported policy-hash mismatch. Source inspection and 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158271 | fix_needed | planned | canonical | A narrow repair is needed; the required failing regression and patch remain unmade. |
-| #120006 | keep_related | planned | related | This fix does not cover the remaining work in that issue. |
-| cluster:issue-openclaw-openclaw-158271 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with dependencies. |
+| #158271 | fix_needed | planned | canonical | The merged heartbeat repair does not cover plain agent-command turns. |
+| #120006 | keep_related | planned | related | Those remaining concerns are distinct from the plain agent-turn hash flip. |
+| #121485 | keep_closed | skipped | related | Historical context only. |
+| #121509 | keep_closed | skipped | related | Useful prior fix, but it does not resolve the reported plain agent-command path. |
 
 ## Needs Human
 

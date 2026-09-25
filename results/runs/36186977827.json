@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158271",
+  "mode": "plan",
+  "run_id": "36186977827",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36186977827",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158271.md",
+  "published_at": "2026-09-25T20:43:01.422Z",
+  "canonical": "#158271",
+  "canonical_issue": "#158271",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the still-open agent-turn policy-hash regression. The checkout matches preflight main b36641d7625de2a533be288fb0b809b73d559601. No code was changed and no tests were run in plan mode; the required failing regression and validation must precede a fix PR.",
+  "actions": [
+    {
+      "target": "#158271",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158271",
+      "candidate_fix": null,
+      "reason": "The merged heartbeat repair does not cover plain agent-command turns."
+    },
+    {
+      "target": "#120006",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158271",
+      "candidate_fix": null,
+      "reason": "Those remaining concerns are distinct from the plain agent-turn hash flip."
+    },
+    {
+      "target": "#121485",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#121509",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Useful prior fix, but it does not resolve the reported plain agent-command path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
