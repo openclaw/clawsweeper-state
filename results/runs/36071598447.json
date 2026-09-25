@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157665",
+  "mode": "autonomous",
+  "run_id": "36071598447",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36071598447",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157665.md",
+  "published_at": "2026-09-25T00:10:53.714Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157665",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157665",
+  "canonical_pr": null,
+  "summary": "The local source shows the reported grant being dropped at Codex dynamic-tool construction, but the checkout is at 4fffee9 while preflight identifies main as 6f60b82. That commit is unavailable locally, and the host is read-only. No regression was executed, files changed, or PR created.",
+  "actions": [
+    {
+      "target": "#157665",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157665",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix appears warranted, pending reproduction on the preflight main commit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157665",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157665",
+      "candidate_fix": null,
+      "reason": "Resume in a writable checkout containing the preflight main commit and the required Codex sibling; reproduce the defect before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
