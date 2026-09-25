@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T21:44:13.150Z",
+  "updated_at": "2026-09-25T21:52:50.568Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158140:5833684341:2026-09-25T14:52:07Z:clawsweeper_needs_human",
-      "comment_id": "5833684341",
-      "comment_version_key": "5833684341:2026-09-25T14:52:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158140#issuecomment-5833684341",
-      "comment_created_at": "2026-09-25T14:01:41Z",
-      "comment_updated_at": "2026-09-25T14:52:07Z",
-      "comment_body_sha256": "c4b3210eaa96f7ddd66a0841e7ed618addbf96ef3211a9dc4f8c5ec7d27370ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158140,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new test drives the production inbound monitor with a mocked WhatsApp socket and lookup and reports delivery after one failed lookup. The l... (sha=6174f1605e16501496b011a5bec3bd9b19ef3c10)",
-      "expected_head_sha": "6174f1605e16501496b011a5bec3bd9b19ef3c10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T15:35:50.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-dm-lid-transient-drop",
-        "head_sha": "6174f1605e16501496b011a5bec3bd9b19ef3c10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158139:5833722991:2026-09-25T14:04:21Z:clawsweeper_needs_human",
       "comment_id": "5833722991",
@@ -32539,6 +32506,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157946:5840170168:2026-09-25T21:51:48Z:re_review",
+      "comment_id": "5840170168",
+      "comment_version_key": "5840170168:2026-09-25T21:51:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157946#issuecomment-5840170168",
+      "comment_created_at": "2026-09-25T21:51:48Z",
+      "comment_updated_at": "2026-09-25T21:51:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157946,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T21:52:48.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-tool-detail",
+        "head_sha": "c8fe0737ea2e3f7da3a7f40dc84f0ea927f969b9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
