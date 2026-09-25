@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T11:16:19.775Z",
+  "updated_at": "2026-09-25T11:16:26.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157862:5826405028:2026-09-25T04:58:54Z:clawsweeper_needs_human",
-      "comment_id": "5826405028",
-      "comment_version_key": "5826405028:2026-09-25T04:58:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157862#issuecomment-5826405028",
-      "comment_created_at": "2026-09-25T03:54:13Z",
-      "comment_updated_at": "2026-09-25T04:58:54Z",
-      "comment_body_sha256": "97bd45689270bdf3592d782a0376633577c2334865a1908c5c49bcb4e4ec6690",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157862,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After merge, installs running published 2026.9.5 or 2026.9.6 can still fail before candidate code runs. Their documented recovery requires identifying and disabling the affected plugi... (sha=90c5f95bcc8df8cba0da52bc270020d1415fcf41)",
-      "expected_head_sha": "90c5f95bcc8df8cba0da52bc270020d1415fcf41",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T05:55:40.651Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-scanner-import-meta",
-        "head_sha": "90c5f95bcc8df8cba0da52bc270020d1415fcf41",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157869:5826449555:2026-09-25T05:17:58Z:clawsweeper_needs_human",
       "comment_id": "5826449555",
@@ -33261,6 +33228,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157286:5831466783:2026-09-25T11:15:35Z:re_review",
+      "comment_id": "5831466783",
+      "comment_version_key": "5831466783:2026-09-25T11:15:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157286#issuecomment-5831466783",
+      "comment_created_at": "2026-09-25T11:15:35Z",
+      "comment_updated_at": "2026-09-25T11:15:35Z",
+      "comment_body_sha256": "8e634a5c100be3ca7632fca03d1a352acb1b4b8d3c0e1b23c10c098f8493a057",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157286,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T11:16:25.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-portable-gateway-fixtures",
+        "head_sha": "2a950af0a298214023cfff5be30ffc2f4c9f6c7d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
