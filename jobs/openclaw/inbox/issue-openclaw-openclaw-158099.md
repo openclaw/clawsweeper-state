@@ -67,19 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the shipped Gateway startup bug: with update.checkOnStart=false or OPENCLAW_NO_AUTO_UPDATE=1, post-ready startup must not launch install-discovery Git or package-manager subprocesses. First establish a failing regression through the Gateway startup entry point. Make the smallest change in src/gateway/server-startup-update-check.ts and its update lifecycle callers so automatic startup discovery is skipped under either opt-out, while explicit update.status discovery and enabled automatic checks continue to work. Add focused meaningful regression coverage in src/gateway/server-startup-update-check.test.ts, including both opt-outs and an enabled/explicit-status sibling. Do not replace Git ownership classification with a .git-presence check: src/infra/update-check-install-kind.test.ts covers supported GIT_DIR/GIT_WORK_TREE ownership without a marker. Do not alter PATH security policy, add config, or edit CHANGELOG.md. State the observed behavior, affected update surface, and proof in the PR body.
+Fix the existing Gateway startup bug where update.checkOnStart: false or OPENCLAW_NO_AUTO_UPDATE=1 still triggers automatic install discovery and its Git/npm/pnpm subprocesses. Establish a failing regression at the deferred Gateway startup entry point, then guard only automatic initialization in the Gateway update owner. Preserve on-demand update.status and update.run installation discovery and Git installs that use explicit GIT_DIR/GIT_WORK_TREE without a .git marker. Add focused regression coverage for both opt-outs and enabled startup; run the relevant Gateway startup/update tests and source checks. Keep this one focused PR, put user-visible fix context in the PR body, and do not edit release-owned CHANGELOG.md. Stop if the solution requires a new setting, a product-policy change, or a broader update contract change.
 
 Likely files:
 
 - src/gateway/server-startup-update-check.ts
 - src/gateway/server-startup-update-check.test.ts
 - src/infra/update-check-lifecycle.ts
+- src/infra/update-startup.ts
 
 Validation:
 
 - pnpm test src/gateway/server-startup-update-check.test.ts --maxWorkers=1
-- pnpm test src/infra/update-check-install-kind.test.ts --maxWorkers=1
 - pnpm test src/infra/update-startup.test.ts --maxWorkers=1
+- pnpm test src/infra/update-check-install-kind.test.ts --maxWorkers=1
+- git diff --check
 
 ## Operator Prompt
 
