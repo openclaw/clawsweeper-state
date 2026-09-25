@@ -2,53 +2,6 @@
   "updated_at": "2026-09-25T08:03:21.921Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:157497:5825833466:2026-09-25T02:45:57Z:re_review",
-      "comment_id": "5825833466",
-      "comment_version_key": "5825833466:2026-09-25T02:45:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157497#issuecomment-5825833466",
-      "comment_created_at": "2026-09-25T02:45:57Z",
-      "comment_updated_at": "2026-09-25T02:45:57Z",
-      "comment_body_sha256": "53c6e121e33a34f2b3c5ca913a82ceda7ea4c77331f85b527bdb0f375bad9c41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157497,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:59:53.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/automations-get-schedule-error-count",
-        "head_sha": "ccf558d62e57505917f7cfc239bfdcfd1d9489cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:157650:5825886677:2026-09-25T02:52:11Z:re_review",
       "comment_id": "5825886677",
       "comment_version_key": "5825886677:2026-09-25T02:52:11Z",
@@ -34251,6 +34204,39 @@
         "kind": "pull_request",
         "branch": "ci/ready-candidate-20260923",
         "head_sha": "6e927c67542fc3f47d89619a976fd028fb38fe02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149880:5694417690:2026-09-25T07:57:24Z:clawsweeper_needs_human",
+      "comment_id": "5694417690",
+      "comment_version_key": "5694417690:2026-09-25T07:57:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149880#issuecomment-5694417690",
+      "comment_created_at": "2026-09-16T08:25:02Z",
+      "comment_updated_at": "2026-09-25T07:57:24Z",
+      "comment_body_sha256": "1d593941bc85429974911da1fc9943d3a85d60320d1eb5ff93fceda36bfe3503",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149880,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner converts history and parses Gemini Interactions streams. An older-head real-key run observed successful A... (sha=ee92aaa33ae81a30493a952dfbdd508a50b6ea08)",
+      "expected_head_sha": "ee92aaa33ae81a30493a952dfbdd508a50b6ea08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:03:21.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "iapi",
+        "head_sha": "ee92aaa33ae81a30493a952dfbdd508a50b6ea08",
         "cluster_id": null,
         "job_path": null
       }
