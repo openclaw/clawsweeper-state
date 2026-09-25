@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T04:17:42.603Z",
+  "updated_at": "2026-09-25T04:17:50.930Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-09-24T21:56:00Z:clawsweeper_needs_human",
-      "comment_id": "5659092617",
-      "comment_version_key": "5659092617:2026-09-24T21:56:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147886#issuecomment-5659092617",
-      "comment_created_at": "2026-09-14T04:37:59Z",
-      "comment_updated_at": "2026-09-24T21:56:00Z",
-      "comment_body_sha256": "8a0e662172e66cd1e678d8c5ca19c61eed9c5189da8793cdce6991bd1edb014d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two new channel configuration baseline entries are an exception to the repository ratchet and have no recorded approval. (sha=8d4a19d13a6fdf3810699bcb4cff7528f12d238a)",
-      "expected_head_sha": "8d4a19d13a6fdf3810699bcb4cff7528f12d238a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T21:57:58.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-markdown-tables",
-        "head_sha": "8d4a19d13a6fdf3810699bcb4cff7528f12d238a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157608:5822897597:2026-09-24T21:56:32Z:clawsweeper_auto_repair",
       "comment_id": "5822897597",
@@ -33925,6 +33892,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157879:5826609165:2026-09-25T04:16:53Z:re_review",
+      "comment_id": "5826609165",
+      "comment_version_key": "5826609165:2026-09-25T04:16:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157879#issuecomment-5826609165",
+      "comment_created_at": "2026-09-25T04:16:53Z",
+      "comment_updated_at": "2026-09-25T04:16:53Z",
+      "comment_body_sha256": "32505757b650710c392bf8e70ab88939b7153387e5ae2c3bf8fddc183a24b4a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157879,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T04:17:43.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-strip-boundary-157826",
+        "head_sha": "767796c4f094128f76b893d3f967c872cfc730d4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
