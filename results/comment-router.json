@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:04:18.247Z",
+  "updated_at": "2026-09-25T06:04:45.390Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157596:5822454834:2026-09-24T21:22:01Z:re_review",
-      "comment_id": "5822454834",
-      "comment_version_key": "5822454834:2026-09-24T21:22:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157596#issuecomment-5822454834",
-      "comment_created_at": "2026-09-24T21:22:01Z",
-      "comment_updated_at": "2026-09-24T21:22:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157596,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:13:36.537Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156244:5822462094:2026-09-24T21:22:33Z:re_review",
       "comment_id": "5822462094",
@@ -34307,6 +34280,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157899:5827651172:2026-09-25T06:03:53Z:freeform_assist",
+      "comment_id": "5827651172",
+      "comment_version_key": "5827651172:2026-09-25T06:03:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157899#issuecomment-5827651172",
+      "comment_created_at": "2026-09-25T06:03:53Z",
+      "comment_updated_at": "2026-09-25T06:03:53Z",
+      "comment_body_sha256": "c9c2811c254d3a509b80a4a534818b40809cff12ee6b49ec0cd0fac8faa5b2f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157899,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "please clarify and re-evaluate the remaining sdk owner-decision gate for head b2764d96ad5a84c4a31f802dde4d72063215f99f. the standalone sdk decision is https://github.com/openclaw/openclaw/pull/157899#issuecomment-5827325762. its author, @obviyus, is ayaan zaidi (https://github.com/obviyus), and the repository collaborator-permission api reports `role_name: maintain`. the comment directly approves the published/partial-result behavior for both named sdk builders. this is ayaan's own recorded decision, not a contributor quoting a different person's private approval. please distinguish the product-owner decision from code review, which has reported no code or security findings. if policy requires a different sdk maintainer to approve despite this direct decision, please cite that ownership/independence requirement and the required role. do not waive ci or any substantive finding; the question is whether the recorded approval has been attributed correctly.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T06:04:43.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-ready-at-startup",
+        "head_sha": "b2764d96ad5a84c4a31f802dde4d72063215f99f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
