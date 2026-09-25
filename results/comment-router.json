@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T03:56:39.687Z",
+  "updated_at": "2026-09-25T03:56:55.481Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5822145115:2026-09-24T20:58:44Z:re_review",
-      "comment_id": "5822145115",
-      "comment_version_key": "5822145115:2026-09-24T20:58:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5822145115",
-      "comment_created_at": "2026-09-24T20:58:44Z",
-      "comment_updated_at": "2026-09-24T20:58:44Z",
-      "comment_body_sha256": "8a9d00a423c560fc5e14dddba9216fcdd9838181e9645cdbe9ff2e1762c2c1ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `9cbf892bb4f05d10e196698a66e51a4e54cb32d6`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T21:21:22.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "9cbf892bb4f05d10e196698a66e51a4e54cb32d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149880:5822182602:2026-09-24T21:01:33Z:re_review",
       "comment_id": "5822182602",
@@ -34022,6 +33975,39 @@
         "kind": "pull_request",
         "branch": "hostneutral/http-ingress-0924",
         "head_sha": "744851d4dbcf07da0c43ea2d72ced0890fae8533",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1169:5826418055:2026-09-25T03:55:45Z:clawsweeper_needs_human",
+      "comment_id": "5826418055",
+      "comment_version_key": "5826418055:2026-09-25T03:55:45Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1169#issuecomment-5826418055",
+      "comment_created_at": "2026-09-25T03:55:45Z",
+      "comment_updated_at": "2026-09-25T03:55:45Z",
+      "comment_body_sha256": "66f6da4543e9eb327c8ac0446363d46e8e6e243e4b0794319b594816302eb194",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed credential owner shells out to op for vault reads and writes. Fake-CLI tests and an opt-in live test are supplied, and the PR asser...; Review finding: [P1] Reject vault items that gog did not create — internal/secrets/onepassword.go:761-764 - [P1] Match the requested client during subject lookup — internal/secret... (sha=ad59b3a8678c261db10ce6a56c8a79c69a35076f)",
+      "expected_head_sha": "ad59b3a8678c261db10ce6a56c8a79c69a35076f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T03:56:55.481Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/onepassword-keyring",
+        "head_sha": "ad59b3a8678c261db10ce6a56c8a79c69a35076f",
         "cluster_id": null,
         "job_path": null
       }
