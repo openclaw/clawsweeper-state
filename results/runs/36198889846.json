@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158358",
+  "mode": "plan",
+  "run_id": "36198889846",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36198889846",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158358.md",
+  "published_at": "2026-09-25T22:59:24.570Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158358",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158358",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the Claude CLI context-window mismatch, conditional on reproduction against the preflight artifact’s main commit and a supported native Claude CLI. This checkout is older than that commit, and the Claude CLI is unavailable here; no code, PR, or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158358",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "858358",
+      "candidate_fix": null,
+      "reason": "Refresh to the preflight main SHA 26ccb3a0a6a0a5278cad94877fe579b9ef2a1c82 and reproduce the native mismatch before editing. The local shallow checkout is at 66f7b777dcdc7fd9d53286c4f64b80aa592e82bf, and no claude executable is available."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158353",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "158358",
+      "candidate_fix": null,
+      "reason": "A context-window repair does not resolve the compaction counter."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

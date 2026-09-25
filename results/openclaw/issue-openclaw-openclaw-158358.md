@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158358"
-mode: "autonomous"
-run_id: "36194143804"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36194143804"
+mode: "plan"
+run_id: "36198889846"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36198889846"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T22:40:07.471Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T22:59:24.570Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158358"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158358"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36194143804](https://github.com/openclaw/clawsweeper/actions/runs/36194143804)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36198889846](https://github.com/openclaw/clawsweeper/actions/runs/36198889846)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158358
 
 ## Summary
 
-Current main still has the reported source-level mismatch: an omitted selection produces a bare Claude model ID while the catalog default supplies a 1M budget. Native reproduction and implementation are blocked because this read-only checkout has neither a Claude CLI executable nor installed dependencies. No code or GitHub state changed.
+Plan a narrow fix for the Claude CLI context-window mismatch, conditional on reproduction against the preflight artifact’s main commit and a supported native Claude CLI. This checkout is older than that commit, and the Claude CLI is unavailable here; no code, PR, or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Current main still has the reported source-level mismatch: an omitted selection 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158358 | keep_canonical | planned | canonical | The issue describes the mismatch found in current source. |
-| #158353 | keep_related | planned | related | Window selection may affect compaction frequency, but counter accounting is separate work. |
-| cluster:issue-openclaw-openclaw-158358 | fix_needed | planned | canonical | The source-level mismatch warrants a focused repair after the required native reproduction. |
-| cluster:issue-openclaw-openclaw-158358 | build_fix_artifact | blocked | canonical | The job requires a failing CLI-run preparation path and a real supported Claude CLI invocation before editing. Native proof is unavailable here. |
+| https://github.com/openclaw/openclaw/issues/158358 | fix_needed | planned | canonical | Refresh to the preflight main SHA 26ccb3a0a6a0a5278cad94877fe579b9ef2a1c82 and reproduce the native mismatch before editing. The local shallow checkout is at 66f7b777dcdc7fd9d53286c4f64b80aa592e82bf, and no claude executable is available. |
+| https://github.com/openclaw/openclaw/issues/158353 | keep_related | planned | related | A context-window repair does not resolve the compaction counter. |
 
 ## Needs Human
 
