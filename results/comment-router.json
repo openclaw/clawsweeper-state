@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T14:44:40.611Z",
+  "updated_at": "2026-09-25T14:45:23.169Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157127:5829069793:2026-09-25T08:05:28Z:re_review",
-      "comment_id": "5829069793",
-      "comment_version_key": "5829069793:2026-09-25T08:05:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157127#issuecomment-5829069793",
-      "comment_created_at": "2026-09-25T08:05:28Z",
-      "comment_updated_at": "2026-09-25T08:05:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157127,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T08:06:23.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-remediation-restart-custody",
-        "head_sha": "bf78f6381b785c9962361c3240df0ac7b2ed8dce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157386:5817856850:2026-09-25T08:05:37Z:clawsweeper_needs_human",
       "comment_id": "5817856850",
@@ -33493,6 +33446,39 @@
         "kind": "pull_request",
         "branch": "openclaw/desktop-audio-02-linux-capture-20260924",
         "head_sha": "4ca90d00c51e71c332efa5722301a8b3622811d7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151608:5727350446:2026-09-25T14:44:13Z:clawsweeper_needs_human",
+      "comment_id": "5727350446",
+      "comment_version_key": "5727350446:2026-09-25T14:44:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151608#issuecomment-5727350446",
+      "comment_created_at": "2026-09-18T08:27:48Z",
+      "comment_updated_at": "2026-09-25T14:44:13Z",
+      "comment_body_sha256": "7c513e7ee8936202575d99920c85ca2a0140eea744f8a0d226fde04707cb23ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The changed registered-Task reader feeds updater admission and native service control. Linked older in...; Review finding: [P2] Exclude Node services from Task deletion hints — src/daemon/inspect.ts:669-675 - [P3] Report the cost of each changed test file — src/daemon/inspect.windows.t... (sha=50c60810f0953492483b602adcb9f08799c66719)",
+      "expected_head_sha": "50c60810f0953492483b602adcb9f08799c66719",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T14:45:23.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-split-service-inventory",
+        "head_sha": "50c60810f0953492483b602adcb9f08799c66719",
         "cluster_id": null,
         "job_path": null
       }
