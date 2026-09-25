@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T01:37:38.442Z",
+  "updated_at": "2026-09-25T01:41:38.548Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157238:5821189954:2026-09-24T19:54:21Z:re_review",
-      "comment_id": "5821189954",
-      "comment_version_key": "5821189954:2026-09-24T19:54:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157238#issuecomment-5821189954",
-      "comment_created_at": "2026-09-24T19:54:21Z",
-      "comment_updated_at": "2026-09-24T19:54:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157238,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T19:56:09.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/deps-seven-day-20260924",
-        "head_sha": "191c1740ed88ef6e7b8f1ea590b9bb0471b8a22d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157427:5818826316:2026-09-24T19:54:40Z:clawsweeper_needs_human",
       "comment_id": "5818826316",
@@ -33695,6 +33648,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3972:5825273932:2026-09-25T01:40:29Z:clawsweeper_needs_human",
+      "comment_id": "5825273932",
+      "comment_version_key": "5825273932:2026-09-25T01:40:29Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3972#issuecomment-5825273932",
+      "comment_created_at": "2026-09-25T01:40:29Z",
+      "comment_updated_at": "2026-09-25T01:40:29Z",
+      "comment_body_sha256": "c185c2a6db7661a1a1c82d643a7dc44dbd1edce0509ed75ca3248212949d58bb",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3972,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the two plugin-engine date bridges. The PR reports synthetic plugin tests through both engines, but supplies... (sha=9cb51b7e315d94025c81434748515892bcdeadf7)",
+      "expected_head_sha": "9cb51b7e315d94025c81434748515892bcdeadf7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T01:41:38.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-plugin-daily-reset-clock",
+        "head_sha": "9cb51b7e315d94025c81434748515892bcdeadf7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
