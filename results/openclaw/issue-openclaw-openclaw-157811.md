@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157811"
-mode: "autonomous"
-run_id: "36087384100"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36087384100"
+mode: "plan"
+run_id: "36091067432"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36091067432"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-25T03:21:52.932Z"
+published_at: "2026-09-25T03:40:29.157Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157811"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157811"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36087384100](https://github.com/openclaw/clawsweeper/actions/runs/36087384100)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36091067432](https://github.com/openclaw/clawsweeper/actions/runs/36091067432)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/157811
 
 ## Summary
 
-Issue #157811 has a narrow, non-security fix path. The public cron-job projection retains scheduler-only scheduleErrorCount, which the automations tool’s closed output schema rejects.
+The reported schema mismatch remains at the preflight main SHA. Plan a narrow public-job projection fix, with a failing agent-tool contract regression before editing. No files, tests, or GitHub state were changed in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Issue #157811 has a narrow, non-security fix path. The public cron-job projectio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157811 | fix_needed | planned | canonical | Remove the scheduler-only field at the existing public projection and prove populated-state get/update results satisfy the tool contract. |
-| cluster:issue-openclaw-openclaw-157811 | build_fix_artifact | planned |  | Create or reuse one narrow implementation PR after verifying the defect on current main. |
+| https://github.com/openclaw/openclaw/issues/157811 | fix_needed | planned | canonical | Fix the existing output contract without changing scheduler persistence or scheduling behavior. |
 
 ## Needs Human
 
