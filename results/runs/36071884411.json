@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157670",
+  "mode": "autonomous",
+  "run_id": "36071884411",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36071884411",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157670.md",
+  "published_at": "2026-09-25T00:04:49.254Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157670",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157670",
+  "canonical_pr": null,
+  "summary": "Current main reserves a replacement generation before retained-work admission, which fences the serving claim during preparation. No Gateway regression or code change could be completed: this checkout is read-only and has no node_modules. The reported failure after the refusal response remains unverified.",
+  "actions": [
+    {
+      "target": "#157670",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157670",
+      "candidate_fix": null,
+      "reason": "A narrow lifecycle repair is plausible, conditional on a failing regression through plugins.reload on this main SHA."
+    },
+    {
+      "target": "#154891",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#157670",
+      "candidate_fix": null,
+      "reason": "The distinct failure stage and recovery behavior require separate investigation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157670",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157670",
+      "candidate_fix": null,
+      "reason": "Implementation must run in a writable checkout with dependencies. First prove a failing Gateway regression on the unchanged base; stop if the claimed behavior cannot be reproduced."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
