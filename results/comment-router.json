@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T23:05:19.817Z",
+  "updated_at": "2026-09-25T23:05:36.823Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158172:5835761694:2026-09-25T16:24:33Z:re_review",
-      "comment_id": "5835761694",
-      "comment_version_key": "5835761694:2026-09-25T16:24:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158172#issuecomment-5835761694",
-      "comment_created_at": "2026-09-25T16:24:33Z",
-      "comment_updated_at": "2026-09-25T16:24:33Z",
-      "comment_body_sha256": "c041d0cb956435fb13fcbed6c03b18858a7a96082518fffaec4de8bf67783d58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158172,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T16:25:34.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l47-browser-memory2",
-        "head_sha": "db716b408fb1f60d8d4f913d09b9cee29117e605",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158204:5835852797:2026-09-25T16:31:26Z:clawsweeper_needs_human",
       "comment_id": "5835852797",
@@ -33466,6 +33419,39 @@
         "kind": "pull_request",
         "branch": "codex/agent-recorded-outcome-notice",
         "head_sha": "3800c67f506e4554af9df5e2f6cdc1bd655fe7f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158369:5840234472:2026-09-25T23:02:12Z:clawsweeper_needs_human",
+      "comment_id": "5840234472",
+      "comment_version_key": "5840234472:2026-09-25T23:02:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158369#issuecomment-5840234472",
+      "comment_created_at": "2026-09-25T21:58:12Z",
+      "comment_updated_at": "2026-09-25T23:02:12Z",
+      "comment_body_sha256": "bc8bf1fd0203b614fdc85b898d0e2d9aa0d5385eee7213dc633e05fb00af776b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - The patched installed four-plugin startup still reports ENOSPC and Codex/ACPX load failures. The missing-owner discovery path can recopy already loaded plugins, so this head cannot se... (sha=ff7c5f441054810ebd4cf91e87be342d12d9288f)",
+      "expected_head_sha": "ff7c5f441054810ebd4cf91e87be342d12d9288f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T23:05:36.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-capture-startup-157568",
+        "head_sha": "ff7c5f441054810ebd4cf91e87be342d12d9288f",
         "cluster_id": null,
         "job_path": null
       }
