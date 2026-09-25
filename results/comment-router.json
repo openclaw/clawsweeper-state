@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:05:48.174Z",
+  "updated_at": "2026-09-25T17:06:52.261Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158053:5831288314:2026-09-25T11:00:20Z:re_review",
-      "comment_id": "5831288314",
-      "comment_version_key": "5831288314:2026-09-25T11:00:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158053#issuecomment-5831288314",
-      "comment_created_at": "2026-09-25T11:00:20Z",
-      "comment_updated_at": "2026-09-25T11:00:20Z",
-      "comment_body_sha256": "9904f1851eb573ec1d9c184324072e90cd2eca5d9f313340ee0e2261b6233fb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158053,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T11:02:58.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/updater-fresh-target-20260925",
-        "head_sha": "6ef422f1b4e74f3821fe015f77b7c23c12b36246",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:67820:4701876735:2026-09-25T10:17:13Z:clawsweeper_needs_human",
       "comment_id": "4701876735",
@@ -32661,6 +32614,39 @@
         "kind": "pull_request",
         "branch": "fix/mxc-cmd-r-command-mode",
         "head_sha": "a4a9c9398fa10c8b403b6e6b67f12da124aac589",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157413:5818526599:2026-09-25T17:05:17Z:clawsweeper_needs_human",
+      "comment_id": "5818526599",
+      "comment_version_key": "5818526599:2026-09-25T17:05:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157413#issuecomment-5818526599",
+      "comment_created_at": "2026-09-24T17:00:12Z",
+      "comment_updated_at": "2026-09-25T17:05:17Z",
+      "comment_body_sha256": "77b0862cf980bacde5db6d8336fb033ded045a9a356b30deebd7fedcdd16d46d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157413,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: actual worker traces cover allowed and revoked transaction grants, the prior-head published updater re...; Review finding: [P2] Fence existing-file opens against concurrent reset — src/state/openclaw-state-db-open.ts:95-100 - [medium] Reset ownership can be crossed before file creation... (sha=edff95400c13bde8f252645885d00fb844bf9730)",
+      "expected_head_sha": "edff95400c13bde8f252645885d00fb844bf9730",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T17:06:52.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/land-temp-state-cleanup",
+        "head_sha": "edff95400c13bde8f252645885d00fb844bf9730",
         "cluster_id": null,
         "job_path": null
       }
