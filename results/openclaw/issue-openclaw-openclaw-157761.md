@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157761"
-mode: "autonomous"
-run_id: "36078671050"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36078671050"
+mode: "plan"
+run_id: "36083075260"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36083075260"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T01:21:52.625Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T01:44:00.195Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157761"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157761"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36078671050](https://github.com/openclaw/clawsweeper/actions/runs/36078671050)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36083075260](https://github.com/openclaw/clawsweeper/actions/runs/36083075260)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/157761
 
 ## Summary
 
-The reported dry-run validation gap remains in the checkout at the preflight main SHA. A narrow fix is identified, but the read-only sandbox prevents adding and running the required failing CLI regression, patching, or validating a PR branch.
+On main at 691d2e5, unregistered SecretRef targets lack schemaValidated, but dry-run’s full-schema condition excludes builder operations. Add a registered-CLI regression that fails before the fix, then validate unrecognized builder targets while preserving the recognized-target fast path and ordinary value-mode behavior. No code was changed or tests run in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The reported dry-run validation gap remains in the checkout at the preflight mai
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157761 | fix_needed | planned | canonical | The unregistered SecretRef builder target can bypass strict schema validation during dry-run. |
-| cluster:issue-openclaw-openclaw-157761 | build_fix_artifact | blocked |  | Implementation and validation require a writable executor checkout. |
+| https://github.com/openclaw/openclaw/issues/157761 | fix_needed | planned | canonical | The issue has a bounded bug-fix path; reproduction and validation remain required before opening a fix PR. |
 
 ## Needs Human
 
