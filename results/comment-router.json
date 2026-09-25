@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:07:15.331Z",
+  "updated_at": "2026-09-25T08:08:10.049Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157695:5824231692:2026-09-25T02:51:45Z:clawsweeper_needs_human",
-      "comment_id": "5824231692",
-      "comment_version_key": "5824231692:2026-09-25T02:51:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157695#issuecomment-5824231692",
-      "comment_created_at": "2026-09-24T23:52:37Z",
-      "comment_updated_at": "2026-09-25T02:51:45Z",
-      "comment_body_sha256": "c5e59d29dd8666008bbe388aedfe1163f5d4684a80740b61cb32b95111aac753",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157695,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body attributes the standalone producer results to a short SHA that does not resolve to the reviewed head, leaving exact-head validation provenance unclear. (sha=6698d2cdc986c6790e40500c3278602e2be37503)",
-      "expected_head_sha": "6698d2cdc986c6790e40500c3278602e2be37503",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T03:00:26.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-mcp-startup-serialization",
-        "head_sha": "6698d2cdc986c6790e40500c3278602e2be37503",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157724:5824239465:2026-09-25T01:33:26Z:clawsweeper_needs_human",
       "comment_id": "5824239465",
@@ -34113,6 +34080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157975:5828217161:2026-09-25T08:07:21Z:clawsweeper_needs_human",
+      "comment_id": "5828217161",
+      "comment_version_key": "5828217161:2026-09-25T08:07:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157975#issuecomment-5828217161",
+      "comment_created_at": "2026-09-25T06:52:22Z",
+      "comment_updated_at": "2026-09-25T08:07:21Z",
+      "comment_body_sha256": "170ebd1e0c02fc883a7187ea3fab993ad4f2df38ae8f47b584eb3f227b0aa2c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157975,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The inspected Test Server before/after screenshots show the changed native spawn path and a fresh foll...; Review finding: [P1] Preserve explicit persistent native session behavior — src/agents/subagents/spawn/subagent-spawn-request.ts:56-57 - [P1] Retire or honor the thread-context se... (sha=18eafda6a347627f922f21cd64af5fa6cb01e418)",
+      "expected_head_sha": "18eafda6a347627f922f21cd64af5fa6cb01e418",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:08:10.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spawn-no-takeover",
+        "head_sha": "18eafda6a347627f922f21cd64af5fa6cb01e418",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
