@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:37:34.146Z",
+  "updated_at": "2026-09-25T17:38:24.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111392:5016231987:2026-09-25T11:15:25Z:clawsweeper_auto_repair",
-      "comment_id": "5016231987",
-      "comment_version_key": "5016231987:2026-09-25T11:15:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111392#issuecomment-5016231987",
-      "comment_created_at": "2026-07-19T15:12:26Z",
-      "comment_updated_at": "2026-09-25T11:15:25Z",
-      "comment_body_sha256": "4a4fe5baf71795199edc80a5350a7e231193af9e1b57f07610390eb3eec54528",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ad513c00bd762c37d6e8a44dadf0d50c2ae4968)",
-      "expected_head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T11:22:43.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/111376-skip-unchanged-workspace-entries",
-        "head_sha": "5ad513c00bd762c37d6e8a44dadf0d50c2ae4968",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111589:5018228671:2026-09-25T11:16:04Z:clawsweeper_needs_human",
       "comment_id": "5018228671",
@@ -32626,6 +32593,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2564:5836756484:2026-09-25T17:37:28Z:clawsweeper_needs_human",
+      "comment_id": "5836756484",
+      "comment_version_key": "5836756484:2026-09-25T17:37:28Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2564#issuecomment-5836756484",
+      "comment_created_at": "2026-09-25T17:37:28Z",
+      "comment_updated_at": "2026-09-25T17:37:28Z",
+      "comment_body_sha256": "f5c1ebefb4b3f08cf24f88e360fb171e0de2e4cde821f94adc3bfddc8e3e47a5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The changed run owner checks a marker before remote sync and command dispatch; local tests intercept t...; Review finding: [P1] Provide an upgrade path for cross-repository hydration — internal/cli/run.go:1845-1847 - [medium] Workspace origin can change after verification — internal/cl... (sha=b72159f2d34b53c92409b78f889a50631a2754b7)",
+      "expected_head_sha": "b72159f2d34b53c92409b78f889a50631a2754b7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T17:38:24.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/retained-workspace-identity-20260926",
+        "head_sha": "b72159f2d34b53c92409b78f889a50631a2754b7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
