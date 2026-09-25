@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:06:51.996Z",
+  "updated_at": "2026-09-25T08:07:15.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157697:5824231037:2026-09-25T02:43:09Z:clawsweeper_needs_human",
-      "comment_id": "5824231037",
-      "comment_version_key": "5824231037:2026-09-25T02:43:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157697#issuecomment-5824231037",
-      "comment_created_at": "2026-09-24T23:52:32Z",
-      "comment_updated_at": "2026-09-25T02:43:09Z",
-      "comment_body_sha256": "64b9c5ef56de915199b56d7be061fe5fbc5f2f711120b58eaff735abe8d26e4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157697,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Anthropic probe is exercised through a registered wrapper with mocked command results and logger calls, but the captured evidence h... (sha=e87b8d02fc9540678df90e2c64b7e2aea638bd40)",
-      "expected_head_sha": "e87b8d02fc9540678df90e2c64b7e2aea638bd40",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T03:00:26.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/157541-claude-version-probe",
-        "head_sha": "e87b8d02fc9540678df90e2c64b7e2aea638bd40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157695:5824231692:2026-09-25T02:51:45Z:clawsweeper_needs_human",
       "comment_id": "5824231692",
@@ -34082,6 +34049,53 @@
         "kind": "pull_request",
         "branch": "fix/memory-consolidation-snippet-boundary",
         "head_sha": "e81b824ed81db62ce89ef81fcaabf2a87469b530",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158000:5829078130:2026-09-25T08:06:10Z:re_review",
+      "comment_id": "5829078130",
+      "comment_version_key": "5829078130:2026-09-25T08:06:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158000#issuecomment-5829078130",
+      "comment_created_at": "2026-09-25T08:06:10Z",
+      "comment_updated_at": "2026-09-25T08:06:10Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158000,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T08:07:13.804Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/remote-catalog-generation-publication",
+        "head_sha": "778817a18508fc59d79630bdd7ac0e3f69acc328",
         "cluster_id": null,
         "job_path": null
       },
