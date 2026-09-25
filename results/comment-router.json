@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:57:11.139Z",
+  "updated_at": "2026-09-25T06:57:50.435Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157679:5824268835:2026-09-25T01:22:14Z:clawsweeper_needs_human",
-      "comment_id": "5824268835",
-      "comment_version_key": "5824268835:2026-09-25T01:22:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157679#issuecomment-5824268835",
-      "comment_created_at": "2026-09-24T23:56:35Z",
-      "comment_updated_at": "2026-09-25T01:22:14Z",
-      "comment_body_sha256": "0866f24ee075ffe88b1000689b5c6c8fda526788e0006cbc8acb9fe33c114f22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157679,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Operators who adopt plugins.slots.supervisorGuidance must remove it before downgrading to an older strict-schema release; explicit SDK/config owner acceptance of that operator step re... (sha=ac4f1cd9a2857e467ee6360272aa0c46ae2d962b)",
-      "expected_head_sha": "ac4f1cd9a2857e467ee6360272aa0c46ae2d962b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T01:27:01.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-supervisor-guidance",
-        "head_sha": "ac4f1cd9a2857e467ee6360272aa0c46ae2d962b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157730:5824285568:2026-09-25T01:19:38Z:clawsweeper_needs_human",
       "comment_id": "5824285568",
@@ -34233,6 +34200,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157914:5828264793:2026-09-25T06:56:56Z:re_review",
+      "comment_id": "5828264793",
+      "comment_version_key": "5828264793:2026-09-25T06:56:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157914#issuecomment-5828264793",
+      "comment_created_at": "2026-09-25T06:56:56Z",
+      "comment_updated_at": "2026-09-25T06:56:56Z",
+      "comment_body_sha256": "85ac36ead02ee9f0daeda15f54dbcfe4c5d7ed85124b6fdba745694b678b989d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157914,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T06:57:47.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/held-dependency-updates",
+        "head_sha": "0747f888496d4e5e81fadf0ecc2dcf32e4f21ddd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
