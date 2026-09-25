@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158262"
 mode: "autonomous"
-run_id: "36178946404"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36178946404"
+run_id: "36186974584"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36186974584"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T19:58:11.125Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158262"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158262"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T20:42:19.717Z"
+canonical: "#158262"
+canonical_issue: "#158262"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36178946404](https://github.com/openclaw/clawsweeper/actions/runs/36178946404)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36186974584](https://github.com/openclaw/clawsweeper/actions/runs/36186974584)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158262
+Canonical: #158262
 
 ## Summary
 
-On preflight main e74db47, source tracing supports the reported Twilio defect: the initial greeting is followed by a second live TwiML update, and the fallback Gather has no explicit silence outcome. The read-only checkout and absent dependencies prevented a failing regression, implementation, and validation. No PR is ready.
+At preflight main b36641d7625de2a533be288fb0b809b73d559601, the reported non-streaming Twilio paths remain: greeting playback is followed by a second live listening update, and speech gathers have no continuation after silence. Plan a focused regression and repair. No code or GitHub action was performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ On preflight main e74db47, source tracing supports the reported Twilio defect: t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158262 | fix_needed | planned | canonical | The existing behavior needs a focused repair and boundary regression. |
-| cluster:issue-openclaw-openclaw-158262 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout with dependencies. First establish a failing manager-to-Twilio regression on current main, then repair and validate before opening the PR. |
+| #158262 | fix_needed | planned | canonical | The source supports a narrow bug fix, but implementation and validation remain to be done. |
 
 ## Needs Human
 
