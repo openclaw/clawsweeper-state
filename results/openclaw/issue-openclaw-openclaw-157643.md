@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157643"
 mode: "autonomous"
-run_id: "36070706976"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36070706976"
+run_id: "36075681096"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36075681096"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-24T23:51:46.075Z"
+result_status: "blocked"
+published_at: "2026-09-25T00:42:11.409Z"
 canonical: "https://github.com/openclaw/openclaw/issues/157643"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/157643"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36070706976](https://github.com/openclaw/clawsweeper/actions/runs/36070706976)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36075681096](https://github.com/openclaw/clawsweeper/actions/runs/36075681096)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/157643
 
 ## Summary
 
-Current main drops the requested start date when usage.cost queues a background refresh, and the worker inventories old transcripts before applying its date filter. A narrow fix PR is warranted. The reported repeated timeout cycle remains unproven.
+At preflight main eda5b53a1e1d331fa838b5af9468a7df71060e16, bounded usage.cost reports still queue refreshes without their startMs bound. The checkout is read-only, so I could not add the required failing regression, patch the branch, or validate a PR.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main drops the requested start date when usage.cost queues a background 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157643 | fix_needed | planned | canonical | The bounded usage.cost request can restore transcripts outside its requested window. |
-| cluster:issue-openclaw-openclaw-157643 | build_fix_artifact | planned |  | Prepare one narrow implementation PR on clawsweeper/issue-openclaw-openclaw-157643. |
+| #157643 | fix_needed | planned | canonical | The usage.cost defect is source-confirmed, but the required runtime regression and fix could not be performed in the read-only checkout. |
+| cluster:issue-openclaw-openclaw-157643 | build_fix_artifact | blocked |  | Implementation requires a writable checkout to establish the failing Gateway/cache/refresh-worker regression, make the narrow patch, and run validation. |
 
 ## Needs Human
 

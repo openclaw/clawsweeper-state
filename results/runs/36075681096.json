@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157643",
+  "mode": "autonomous",
+  "run_id": "36075681096",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36075681096",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157643.md",
+  "published_at": "2026-09-25T00:42:11.409Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157643",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157643",
+  "canonical_pr": null,
+  "summary": "At preflight main eda5b53a1e1d331fa838b5af9468a7df71060e16, bounded usage.cost reports still queue refreshes without their startMs bound. The checkout is read-only, so I could not add the required failing regression, patch the branch, or validate a PR.",
+  "actions": [
+    {
+      "target": "#157643",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157643",
+      "candidate_fix": null,
+      "reason": "The usage.cost defect is source-confirmed, but the required runtime regression and fix could not be performed in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157643",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157643",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout to establish the failing Gateway/cache/refresh-worker regression, make the narrow patch, and run validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
