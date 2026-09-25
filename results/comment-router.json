@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T11:56:01.109Z",
+  "updated_at": "2026-09-25T11:56:56.372Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149416:5688133179:2026-09-25T06:00:50Z:clawsweeper_auto_repair",
-      "comment_id": "5688133179",
-      "comment_version_key": "5688133179:2026-09-25T06:00:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149416#issuecomment-5688133179",
-      "comment_created_at": "2026-09-15T21:10:03Z",
-      "comment_updated_at": "2026-09-25T06:00:50Z",
-      "comment_body_sha256": "dba4396e25cc5a5b1638d9f5714471e0e6149d1b2105a9a6260b67819f935c00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149416,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a7bbfadfa2c5951930cb03b04d5f598925425e88)",
-      "expected_head_sha": "a7bbfadfa2c5951930cb03b04d5f598925425e88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T06:06:52.919Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-chat-error-presentation-owner-ready",
-        "head_sha": "a7bbfadfa2c5951930cb03b04d5f598925425e88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151771:5729784686:2026-09-25T05:54:34Z:clawsweeper_auto_repair",
       "comment_id": "5729784686",
@@ -33315,6 +33282,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157465:5831959449:2026-09-25T11:55:47Z:re_review",
+      "comment_id": "5831959449",
+      "comment_version_key": "5831959449:2026-09-25T11:55:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157465#issuecomment-5831959449",
+      "comment_created_at": "2026-09-25T11:55:47Z",
+      "comment_updated_at": "2026-09-25T11:55:47Z",
+      "comment_body_sha256": "dd777a3ef769c995a87367aaffc5e70875cc0a17bbabf7531fa652771bd0882c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157465,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T11:56:53.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gemini-tts-two-speakers",
+        "head_sha": "95f187014433f0bedf12537f9c7b8da3d417b92a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
