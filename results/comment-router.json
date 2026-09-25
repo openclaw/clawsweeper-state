@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T16:20:50.493Z",
+  "updated_at": "2026-09-25T16:21:21.131Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156651:5799571610:2026-09-25T09:54:39Z:clawsweeper_auto_repair",
-      "comment_id": "5799571610",
-      "comment_version_key": "5799571610:2026-09-25T09:54:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156651#issuecomment-5799571610",
-      "comment_created_at": "2026-09-23T17:25:52Z",
-      "comment_updated_at": "2026-09-25T09:54:39Z",
-      "comment_body_sha256": "e6419af897adf9e0c473ed8c63e476cd916bdb85b9c11ac5bd281545ef1fe672",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156651,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7e56f0b802b8fe9deb3d5ed95b469fb50aa69278)",
-      "expected_head_sha": "7e56f0b802b8fe9deb3d5ed95b469fb50aa69278",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T10:09:28.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restricted-same-thread-resume",
-        "head_sha": "7e56f0b802b8fe9deb3d5ed95b469fb50aa69278",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156688:5800242638:2026-09-25T10:05:52Z:clawsweeper_auto_repair",
       "comment_id": "5800242638",
@@ -32425,6 +32392,53 @@
         "kind": "pull_request",
         "branch": "feat/owner-trust-chat",
         "head_sha": "7ca4c09316bb8cfbca33b3789f7e6d4f0c68e96d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155088:5835706434:2026-09-25T16:20:22Z:re_review",
+      "comment_id": "5835706434",
+      "comment_version_key": "5835706434:2026-09-25T16:20:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155088#issuecomment-5835706434",
+      "comment_created_at": "2026-09-25T16:20:22Z",
+      "comment_updated_at": "2026-09-25T16:20:22Z",
+      "comment_body_sha256": "fc1aace0811bee063b85da60a25a375b714936d1e7ecf3cae3f04b51f29f48eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155088,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the pr body now records exact-head telegram test server evidence and inspected screenshots for partial-streamed /status, an ordinary streamed reply, and streaming-off /status. baseline dispatch negative controls fail as expected. the unrelated baseline live-ingress limitation is stated explicitly; no live-before screenshot is claimed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T16:21:19.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-status-stream-152651",
+        "head_sha": "b603dde18d102d53ecba4e9463dd8c8581b046d0",
         "cluster_id": null,
         "job_path": null
       },
