@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T01:15:56.011Z",
+  "updated_at": "2026-09-25T01:16:21.070Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5819034190:2026-09-24T17:35:30Z:re_review",
-      "comment_id": "5819034190",
-      "comment_version_key": "5819034190:2026-09-24T17:35:30Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1675#issuecomment-5819034190",
-      "comment_created_at": "2026-09-24T17:35:30Z",
-      "comment_updated_at": "2026-09-24T17:35:30Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1675,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T17:41:41.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/reuse-command-review-ack",
-        "head_sha": "13f5fa7ea881ca966a2631f339cf6725153e9244",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1675:5812102904:2026-09-24T17:40:32Z:clawsweeper_needs_human",
       "comment_id": "5812102904",
@@ -33404,6 +33357,39 @@
         "kind": "pull_request",
         "branch": "codex/targeted-type-strategy-final",
         "head_sha": "dd54049c958694e29f9ca77e12fb0cc8ffe349d8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157505:5820551342:2026-09-25T01:15:21Z:clawsweeper_needs_human",
+      "comment_id": "5820551342",
+      "comment_version_key": "5820551342:2026-09-25T01:15:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157505#issuecomment-5820551342",
+      "comment_created_at": "2026-09-24T19:13:42Z",
+      "comment_updated_at": "2026-09-25T01:15:21Z",
+      "comment_body_sha256": "36c2fe46e3d97d399494100e5a9f843aa41eec259e5ee88c9710956a1d021eab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts with current main. The conflict resolution may change overlapping agent-runtime code, and its resulting tree has not yet been reviewed. (sha=20fdd1b4e080fa8ab2d8880e418449351f434344)",
+      "expected_head_sha": "20fdd1b4e080fa8ab2d8880e418449351f434344",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T01:16:21.070Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l36-tools-sandbox-20260924",
+        "head_sha": "20fdd1b4e080fa8ab2d8880e418449351f434344",
         "cluster_id": null,
         "job_path": null
       }
