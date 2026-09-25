@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T20:08:48.717Z",
+  "updated_at": "2026-09-25T20:09:28.163Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112641:5079568147:2026-09-25T13:55:15Z:clawsweeper_auto_repair",
-      "comment_id": "5079568147",
-      "comment_version_key": "5079568147:2026-09-25T13:55:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112641#issuecomment-5079568147",
-      "comment_created_at": "2026-07-25T17:40:52Z",
-      "comment_updated_at": "2026-09-25T13:55:15Z",
-      "comment_body_sha256": "0c9bd91f06b585e679c5dc740d400acbf7f21ff922210358f572c77c203c1b07",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=901a8b21857c6fa91232227a2c43e2e2975726df)",
-      "expected_head_sha": "901a8b21857c6fa91232227a2c43e2e2975726df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T14:02:54.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/enforce-session-maintenance-limits",
-        "head_sha": "901a8b21857c6fa91232227a2c43e2e2975726df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136274:5508895313:2026-09-25T13:58:23Z:clawsweeper_needs_human",
       "comment_id": "5508895313",
@@ -32515,6 +32482,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158302:5838837185:2026-09-25T20:08:30Z:re_review",
+      "comment_id": "5838837185",
+      "comment_version_key": "5838837185:2026-09-25T20:08:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158302#issuecomment-5838837185",
+      "comment_created_at": "2026-09-25T20:08:30Z",
+      "comment_updated_at": "2026-09-25T20:08:30Z",
+      "comment_body_sha256": "cc8d2e49244bb81e717263893eb91444628249e40626d1f68f423e71357596a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158302,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T20:09:26.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pr-subscription-union",
+        "head_sha": "19b4436667b06fe98bff4461438ae3154cf20b8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
