@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T18:39:44.238Z",
+  "updated_at": "2026-09-25T18:39:55.001Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/summarize:493:5832701541:2026-09-25T12:54:07Z:re_review",
-      "comment_id": "5832701541",
-      "comment_version_key": "5832701541:2026-09-25T12:54:07Z",
-      "comment_url": "https://github.com/steipete/summarize/pull/493#issuecomment-5832701541",
-      "comment_created_at": "2026-09-25T12:54:07Z",
-      "comment_updated_at": "2026-09-25T12:54:07Z",
-      "comment_body_sha256": "40ee48d0a495c03f55ab38e86bcc4354f0b474d945cfb090a0ddcd1221a4ac61",
-      "repo": "steipete/summarize",
-      "issue_number": 493,
-      "author": "vincent-peng",
-      "author_id": 9654118,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed: corrected the refresh-free stdout wording per the p3 finding (commit 0e19b838) and added redacted terminal captures of the updated fish completions and cli flag behavior to the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T12:58:45.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs-command-drift",
-        "head_sha": "0e19b838b6fa958e985ae1fc45d53978427a1ad7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:493:5829694073:2026-09-25T12:57:52Z:clawsweeper_needs_human",
       "comment_id": "5829694073",
@@ -32635,6 +32588,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3997:5836292989:2026-09-25T18:37:24Z:clawsweeper_needs_human",
+      "comment_id": "5836292989",
+      "comment_version_key": "5836292989:2026-09-25T18:37:24Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3997#issuecomment-5836292989",
+      "comment_created_at": "2026-09-25T17:03:30Z",
+      "comment_updated_at": "2026-09-25T18:37:24Z",
+      "comment_body_sha256": "265b3f8cd338616d265a0148f7f6fdf0bfb9108d6c8cae51c38ffcbedabea250",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3997,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed scanner and dashboard model are covered by focused tests, and the PR reports a CLI build, but the captured evidence does not show t...; Review finding: [P1] Honor Hide Personal Info in session rows — Sources/CodexBar/PreferencesSpendDashboardPane.swift:1312-1319 - [medium] Private session identity remains visible... (sha=ede78afa034b0155101c0ad99f657f4603352429)",
+      "expected_head_sha": "ede78afa034b0155101c0ad99f657f4603352429",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T18:39:55.001Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spend-session-rows",
+        "head_sha": "ede78afa034b0155101c0ad99f657f4603352429",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
