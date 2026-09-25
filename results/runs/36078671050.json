@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157761",
+  "mode": "autonomous",
+  "run_id": "36078671050",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36078671050",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157761.md",
+  "published_at": "2026-09-25T01:21:52.625Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157761",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157761",
+  "canonical_pr": null,
+  "summary": "The reported dry-run validation gap remains in the checkout at the preflight main SHA. A narrow fix is identified, but the read-only sandbox prevents adding and running the required failing CLI regression, patching, or validating a PR branch.",
+  "actions": [
+    {
+      "target": "#157761",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157761",
+      "candidate_fix": null,
+      "reason": "The unregistered SecretRef builder target can bypass strict schema validation during dry-run."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157761",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#157761",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
