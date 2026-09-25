@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:42:04.482Z",
+  "updated_at": "2026-09-25T00:42:38.677Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157290:5818657864:2026-09-24T17:09:20Z:re_review",
-      "comment_id": "5818657864",
-      "comment_version_key": "5818657864:2026-09-24T17:09:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157290#issuecomment-5818657864",
-      "comment_created_at": "2026-09-24T17:09:20Z",
-      "comment_updated_at": "2026-09-24T17:09:20Z",
-      "comment_body_sha256": "ec438549d923f30b94019d4b1a4dfe6da37886c2c6bd45e5b3fce2cd3657d14f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157290,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T17:13:06.388Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-native-exec-path-20260924",
-        "head_sha": "ab6e33560ef92b7397fa54a5301eafb3f694cc91",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138090:5538026514:2026-09-24T17:10:40Z:clawsweeper_needs_human",
       "comment_id": "5538026514",
@@ -33358,6 +33311,39 @@
         "kind": "pull_request",
         "branch": "openclaw/issue-157234-repair-self-lease",
         "head_sha": "9669dceefa4b261e9d020b8838b1a22a64b4fe0d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1515:5824701613:2026-09-25T00:41:34Z:clawsweeper_needs_human",
+      "comment_id": "5824701613",
+      "comment_version_key": "5824701613:2026-09-25T00:41:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1515#issuecomment-5824701613",
+      "comment_created_at": "2026-09-25T00:41:34Z",
+      "comment_updated_at": "2026-09-25T00:41:34Z",
+      "comment_body_sha256": "55dba5ba8d70094056a108f22814eb40263e9e00968fc49b26a694f66522bf3c",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1515,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Security-sensitive approval remains outstanding for retrying after a Gateway owner refusal. The Windows endpoint probe cannot certify the Gateway owner lease; safety depends on every... (sha=77b7e4bb295e2c32df587c17e4e1a35ab0a2f428)",
+      "expected_head_sha": "77b7e4bb295e2c32df587c17e4e1a35ab0a2f428",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T00:42:38.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "karkarl-guarded-restart-recovery",
+        "head_sha": "77b7e4bb295e2c32df587c17e4e1a35ab0a2f428",
         "cluster_id": null,
         "job_path": null
       }
