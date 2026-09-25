@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:29:50.685Z",
+  "updated_at": "2026-09-25T06:30:42.916Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157616:5824538194:2026-09-25T00:23:48Z:re_review",
-      "comment_id": "5824538194",
-      "comment_version_key": "5824538194:2026-09-25T00:23:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157616#issuecomment-5824538194",
-      "comment_created_at": "2026-09-25T00:23:48Z",
-      "comment_updated_at": "2026-09-25T00:23:48Z",
-      "comment_body_sha256": "1f63330048b5b968015b9b291735bca88aa551b5029df5063cd004e6aae8f8b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157616,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T01:26:23.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dreaming-cron-doctor-only",
-        "head_sha": "224ebed9006c417d1e5e86b59ec90adad21908c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157657:5824554357:2026-09-25T00:25:30Z:re_review",
       "comment_id": "5824554357",
@@ -34330,6 +34283,39 @@
         "kind": "pull_request",
         "branch": "hostneutral/scheduler-0924",
         "head_sha": "b04936621424c392f268c78d1a36f15a36fd1ad4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157964:5827954434:2026-09-25T06:29:45Z:clawsweeper_needs_human",
+      "comment_id": "5827954434",
+      "comment_version_key": "5827954434:2026-09-25T06:29:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157964#issuecomment-5827954434",
+      "comment_created_at": "2026-09-25T06:29:45Z",
+      "comment_updated_at": "2026-09-25T06:29:45Z",
+      "comment_body_sha256": "b314779a2d21b8d789d0ff713e541c84d6ad077d121588c0063ad35675b88ee1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Gateway test file has no measured one-worker wall time or CI duration in the PR, leaving its recurring test cost unquantified. (sha=aec41c0f98407f6400be320e040d390b644c9d7c)",
+      "expected_head_sha": "aec41c0f98407f6400be320e040d390b644c9d7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:30:42.916Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-gmail-reload-test-publication-20260925",
+        "head_sha": "aec41c0f98407f6400be320e040d390b644c9d7c",
         "cluster_id": null,
         "job_path": null
       }
