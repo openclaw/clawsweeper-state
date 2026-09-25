@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
 mode: "autonomous"
-run_id: "36190964466"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36190964466"
+run_id: "36195153259"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36195153259"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-25T22:04:31.271Z"
+published_at: "2026-09-25T22:57:07.917Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36190964466](https://github.com/openclaw/clawsweeper/actions/runs/36190964466)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36195153259](https://github.com/openclaw/clawsweeper/actions/runs/36195153259)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-Source inspection supports a narrow Doctor retained-source eligibility bug, but implementation is blocked. The checkout is read-only, has no node_modules, and its shallow HEAD (3272581f) differs from the preflight main SHA (e0698640). No failing regression was run, code changed, or PR opened.
+Current main has a plausible Doctor settlement defect: historical_transcript_deferred is a warning, but retained-source settlement treats it as a failure. Implementation is blocked because this checkout is read-only, dependencies are absent, and the required failing regression could not run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source inspection supports a narrow Doctor retained-source eligibility bug, but 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | The mixed verified-plugin-import and historical-header-warning path needs a failing Doctor regression before repair. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and verification against the preflight main revision. |
+| #153502 | fix_needed | planned | canonical | A mixed retained-plugin receipt and historical-warning state needs an entry-point regression before a safe change. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with the repository toolchain installed. |
 
 ## Needs Human
 
