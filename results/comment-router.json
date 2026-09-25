@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:31:19.119Z",
+  "updated_at": "2026-09-25T06:31:33.761Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149880:5824555221:2026-09-25T00:25:36Z:re_review",
-      "comment_id": "5824555221",
-      "comment_version_key": "5824555221:2026-09-25T00:25:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149880#issuecomment-5824555221",
-      "comment_created_at": "2026-09-25T00:25:36Z",
-      "comment_updated_at": "2026-09-25T00:25:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149880,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T01:26:23.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "iapi",
-        "head_sha": "d2bc627ae538c7406b497dbbfdc45c132d853226",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156941:5824580602:2026-09-25T00:28:22Z:re_review",
       "comment_id": "5824580602",
@@ -34304,6 +34257,39 @@
         "kind": "pull_request",
         "branch": "release-speed/publish-parent",
         "head_sha": "79f49102d0f2ec12044d22c98f3bf2c7c7301a5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157765:5825544414:2026-09-25T06:30:22Z:clawsweeper_needs_human",
+      "comment_id": "5825544414",
+      "comment_version_key": "5825544414:2026-09-25T06:30:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157765#issuecomment-5825544414",
+      "comment_created_at": "2026-09-25T02:12:02Z",
+      "comment_updated_at": "2026-09-25T06:30:22Z",
+      "comment_body_sha256": "2ea0a02c1f0b7119fef4ac434981b5397576d051990aaabe770c8a2295c28902",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157765,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published updater has not been shown upgrading an existing installation with populated ClawHub tracking and generated plugin skill links; fresh-install proof cannot establish that t... (sha=b60523a3a213608200f6bbfaad4424fe69c23aed)",
+      "expected_head_sha": "b60523a3a213608200f6bbfaad4424fe69c23aed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T06:31:33.761Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l40-skills-tui",
+        "head_sha": "b60523a3a213608200f6bbfaad4424fe69c23aed",
         "cluster_id": null,
         "job_path": null
       }
