@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T18:15:40.508Z",
+  "updated_at": "2026-09-25T18:16:12.634Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149568:5827146254:2026-09-25T05:10:15Z:re_review",
-      "comment_id": "5827146254",
-      "comment_version_key": "5827146254:2026-09-25T05:10:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149568#issuecomment-5827146254",
-      "comment_created_at": "2026-09-25T05:10:15Z",
-      "comment_updated_at": "2026-09-25T05:10:15Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149568,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T12:10:55.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-spawn-agentid-schema-149550",
-        "head_sha": "3f5dbbb0f2a0b5cc23e32a97b8a158a342d66a7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149568:5690680277:2026-09-25T12:07:46Z:clawsweeper_needs_human",
       "comment_id": "5690680277",
@@ -32602,6 +32555,39 @@
         "kind": "pull_request",
         "branch": "codex/sidebar-status-expiry",
         "head_sha": "362ac91a6f5af17189a40eb150b7cdf2c82be1bd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1513:5819648089:2026-09-25T18:14:55Z:clawsweeper_needs_human",
+      "comment_id": "5819648089",
+      "comment_version_key": "5819648089:2026-09-25T18:14:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1513#issuecomment-5819648089",
+      "comment_created_at": "2026-09-24T18:16:48Z",
+      "comment_updated_at": "2026-09-25T18:14:55Z",
+      "comment_body_sha256": "d0d54ab89781be9d6f32fa9f1ed914398143de10a292be94acc0a990c8c49437",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Honor sensitive classification when rendering webhook URL arrays (P2)** - This new test marks channels.slack.webhookUrls sensitive, but RenderField sends arrays to plaintext item or JSON controls before checking...; Review finding: [P2] Honor sensitive classification when rendering webhook URL arrays — tests/OpenClaw.Tray.Tests/ConfigPathSensitivityTests.cs:15 - [medium] Sensitive array conte... (sha=7e488a40754685220cdfa5b0b5b7fb2d06fe95ad)",
+      "expected_head_sha": "7e488a40754685220cdfa5b0b5b7fb2d06fe95ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T18:16:12.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f083-mask-config-secrets",
+        "head_sha": "7e488a40754685220cdfa5b0b5b7fb2d06fe95ad",
         "cluster_id": null,
         "job_path": null
       }
