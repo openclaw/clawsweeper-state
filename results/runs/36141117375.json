@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158103",
+  "mode": "autonomous",
+  "run_id": "36141117375",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36141117375",
+  "head_sha": "7ccc3fe0a786c836fd8d91d78603fd31f40681e4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158103.md",
+  "published_at": "2026-09-25T14:25:02.644Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158103",
+  "canonical_pr": null,
+  "summary": "Current main still has a plausible Teams finalization defect: the stream controller can replace acknowledged text with Markdown-converted text, while the existing SDK loopback accepts replacements without enforcing Teams’ previous-content prefix rule. This checkout is read-only and has no node_modules, so I could not add the required failing regression, measure tests, validate a patch, or prepare a PR branch.",
+  "actions": [
+    {
+      "target": "#158103",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158103",
+      "candidate_fix": null,
+      "reason": "Implement only after the required loopback regression fails on main for the reported reason."
+    },
+    {
+      "target": "#155479",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#157682",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#157704",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "#56040",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158103",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#158103",
+      "candidate_fix": null,
+      "reason": "Executor must reproduce, repair, review, and validate before opening or updating the issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 2,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
