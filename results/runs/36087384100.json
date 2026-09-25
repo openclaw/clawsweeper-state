@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-157811",
+  "mode": "autonomous",
+  "run_id": "36087384100",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36087384100",
+  "head_sha": "f06c3bf687a4aee9bf03f2cd9e7646806382374a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-157811.md",
+  "published_at": "2026-09-25T03:21:52.932Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/157811",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/157811",
+  "canonical_pr": null,
+  "summary": "Issue #157811 has a narrow, non-security fix path. The public cron-job projection retains scheduler-only scheduleErrorCount, which the automations tool’s closed output schema rejects.",
+  "actions": [
+    {
+      "target": "#157811",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#157811",
+      "candidate_fix": null,
+      "reason": "Remove the scheduler-only field at the existing public projection and prove populated-state get/update results satisfy the tool contract."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-157811",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#157811",
+      "candidate_fix": null,
+      "reason": "Create or reuse one narrow implementation PR after verifying the defect on current main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
