@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158271",
+  "mode": "autonomous",
+  "run_id": "36178506956",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36178506956",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158271.md",
+  "published_at": "2026-09-25T20:16:21.868Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158271",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158271",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported policy-hash mismatch. Source inspection and a hash calculation confirm the reset condition, but this read-only checkout cannot accept the required failing regression, repair, or local validation.",
+  "actions": [
+    {
+      "target": "#158271",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158271",
+      "candidate_fix": null,
+      "reason": "A narrow repair is needed; the required failing regression and patch remain unmade."
+    },
+    {
+      "target": "#120006",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158271",
+      "candidate_fix": null,
+      "reason": "This fix does not cover the remaining work in that issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158271",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158271",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
