@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157665"
 mode: "autonomous"
-run_id: "36071598447"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36071598447"
+run_id: "36080720243"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36080720243"
 head_sha: "f06c3bf687a4aee9bf03f2cd9e7646806382374a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T00:10:53.714Z"
-canonical: "https://github.com/openclaw/openclaw/issues/157665"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/157665"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T01:41:03.723Z"
+canonical: "#157665"
+canonical_issue: "#157665"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36071598447](https://github.com/openclaw/clawsweeper/actions/runs/36071598447)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36080720243](https://github.com/openclaw/clawsweeper/actions/runs/36080720243)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/157665
+Canonical: #157665
 
 ## Summary
 
-The local source shows the reported grant being dropped at Codex dynamic-tool construction, but the checkout is at 4fffee9 while preflight identifies main as 6f60b82. That commit is unavailable locally, and the host is read-only. No regression was executed, files changed, or PR created.
+The checkout matches the preflight main SHA. Source inspection supports the reported missing grant handoff, but no regression was run and no files were changed in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The local source shows the reported grant being dropped at Codex dynamic-tool co
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157665 | fix_needed | planned | canonical | A narrow bug fix appears warranted, pending reproduction on the preflight main commit. |
-| cluster:issue-openclaw-openclaw-157665 | build_fix_artifact | blocked |  | Resume in a writable checkout containing the preflight main commit and the required Codex sibling; reproduce the defect before editing. |
+| https://github.com/openclaw/openclaw/issues/157665 | fix_needed | planned | canonical | Add a regression that fails at the Codex tool-build boundary before repairing the handoff. The required sibling ../codex source is unavailable in this checkout and must be inspected before implementation. |
 
 ## Needs Human
 
