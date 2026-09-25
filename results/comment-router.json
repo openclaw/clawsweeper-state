@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:15:03.260Z",
+  "updated_at": "2026-09-25T02:15:38.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157428:5818809008:2026-09-24T19:59:59Z:clawsweeper_needs_human",
-      "comment_id": "5818809008",
-      "comment_version_key": "5818809008:2026-09-24T19:59:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157428#issuecomment-5818809008",
-      "comment_created_at": "2026-09-24T17:19:45Z",
-      "comment_updated_at": "2026-09-24T19:59:59Z",
-      "comment_body_sha256": "b9f68dd9ad6cf76fa598ac6965fb65576e64c2d08c1bd285ff233b6281f1543b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157428,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed update owners are exercised through CLI, Gateway, status, scheduler, and swap tests using simulated Linux and pacman responses on m... (sha=6daa6a0b00f1b9842d0d4e01ccab587ba4463637)",
-      "expected_head_sha": "6daa6a0b00f1b9842d0d4e01ccab587ba4463637",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T20:10:49.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-pacman-update-ownership",
-        "head_sha": "6daa6a0b00f1b9842d0d4e01ccab587ba4463637",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157422:5818914142:2026-09-24T19:28:35Z:clawsweeper_auto_repair",
       "comment_id": "5818914142",
@@ -33599,6 +33566,53 @@
       "status": "skipped",
       "processed_at": "2026-09-25T02:15:03.260Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149568:5825566797:2026-09-25T02:14:36Z:re_review",
+      "comment_id": "5825566797",
+      "comment_version_key": "5825566797:2026-09-25T02:14:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149568#issuecomment-5825566797",
+      "comment_created_at": "2026-09-25T02:14:36Z",
+      "comment_updated_at": "2026-09-25T02:14:36Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149568,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T02:15:36.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-spawn-agentid-schema-149550",
+        "head_sha": "0206ee239bdb62139c84439316808b9a17cfdfa1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
