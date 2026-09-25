@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:43:18.389Z",
+  "updated_at": "2026-09-25T17:43:37.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157704:5831914918:2026-09-25T11:52:01Z:re_review",
-      "comment_id": "5831914918",
-      "comment_version_key": "5831914918:2026-09-25T11:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157704#issuecomment-5831914918",
-      "comment_created_at": "2026-09-25T11:52:01Z",
-      "comment_updated_at": "2026-09-25T11:52:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157704,
-      "author": "rdbartram",
-      "author_id": 16256546,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T11:54:19.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-progress-informative-lines",
-        "head_sha": "d7a51c56ba7de177f1e81f3330479a580c21ec7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110544:5010497363:2026-09-25T11:21:25Z:clawsweeper_auto_repair",
       "comment_id": "5010497363",
@@ -32550,6 +32503,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157606:5822832248:2026-09-25T17:42:34Z:clawsweeper_auto_repair",
+      "comment_id": "5822832248",
+      "comment_version_key": "5822832248:2026-09-25T17:42:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157606#issuecomment-5822832248",
+      "comment_created_at": "2026-09-24T21:50:56Z",
+      "comment_updated_at": "2026-09-25T17:42:34Z",
+      "comment_body_sha256": "c35a205b6797dc098436605b789acfaea803d98d596e8a968c0508cc05495d12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157606,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a205e0f6c8f7317e70a05467d127d6d84c43d22e)",
+      "expected_head_sha": "a205e0f6c8f7317e70a05467d127d6d84c43d22e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T17:43:37.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-preserve-native-downloads-157547",
+        "head_sha": "a205e0f6c8f7317e70a05467d127d6d84c43d22e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
