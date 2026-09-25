@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T22:57:49.920Z",
+  "updated_at": "2026-09-25T22:58:20.174Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158193:5835546715:2026-09-25T16:08:51Z:clawsweeper_needs_human",
-      "comment_id": "5835546715",
-      "comment_version_key": "5835546715:2026-09-25T16:08:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158193#issuecomment-5835546715",
-      "comment_created_at": "2026-09-25T16:08:51Z",
-      "comment_updated_at": "2026-09-25T16:08:51Z",
-      "comment_body_sha256": "645b3d9e8f918288f2d2a432155edb18009981663c2c894764858daab2f098b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158193,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1da7cbb8ca18600470e496fc471d1bbed044d9fe)",
-      "expected_head_sha": "1da7cbb8ca18600470e496fc471d1bbed044d9fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T16:09:49.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-memory-worker-fresh-event",
-        "head_sha": "1da7cbb8ca18600470e496fc471d1bbed044d9fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154158:5835438911:2026-09-25T16:01:16Z:re_review",
       "comment_id": "5835438911",
@@ -33485,6 +33452,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:611:5782516899:2026-09-25T22:38:05Z:clawsweeper_needs_human",
+      "comment_id": "5782516899",
+      "comment_version_key": "5782516899:2026-09-25T22:38:05Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/611#issuecomment-5782516899",
+      "comment_created_at": "2026-09-22T19:18:29Z",
+      "comment_updated_at": "2026-09-25T22:38:05Z",
+      "comment_body_sha256": "36057b8d96767dcd9ffc4aa1b052f155cc8515728055804d052b6424b4d205d1",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 611,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the contributor’s macOS Node 26 trace exercises the patched trash entrypoint and shows two static forb...; Review finding: [P1] Carry the admitted parent guard into the final mutation — src/trash.ts:146 - [high] Stale parent authority at final trash mutation — src/trash.ts:240 (sha=e49fe9b641f2ff5c4e9bf65877ed93b118dc84cc)",
+      "expected_head_sha": "e49fe9b641f2ff5c4e9bf65877ed93b118dc84cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T22:58:20.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trash-rename-containment",
+        "head_sha": "e49fe9b641f2ff5c4e9bf65877ed93b118dc84cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
