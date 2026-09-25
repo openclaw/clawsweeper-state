@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:42:00.878Z",
+  "updated_at": "2026-09-25T00:42:04.482Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157071:5818583825:2026-09-24T17:04:14Z:re_review",
-      "comment_id": "5818583825",
-      "comment_version_key": "5818583825:2026-09-24T17:04:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157071#issuecomment-5818583825",
-      "comment_created_at": "2026-09-24T17:04:14Z",
-      "comment_updated_at": "2026-09-24T17:04:14Z",
-      "comment_body_sha256": "36f6f64836bc5fce7b211b00ec7660c8df1564ab8e9390c97f8336cd88782688",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157071,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T17:13:06.388Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-import-resource-screening-20260924",
-        "head_sha": "7e7dd5f683ecab4367e4e0c86ab6b33707c4a329",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157290:5818657864:2026-09-24T17:09:20Z:re_review",
       "comment_id": "5818657864",
@@ -33372,6 +33325,39 @@
         "kind": "pull_request",
         "branch": "fix/question-guest-role-preparation",
         "head_sha": "ed5f8646d2f656ce41283d6e399c92df00d8b06c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157733:5824324914:2026-09-25T00:40:34Z:clawsweeper_needs_human",
+      "comment_id": "5824324914",
+      "comment_version_key": "5824324914:2026-09-25T00:40:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157733#issuecomment-5824324914",
+      "comment_created_at": "2026-09-25T00:02:37Z",
+      "comment_updated_at": "2026-09-25T00:40:34Z",
+      "comment_body_sha256": "deceb1e3051fbd37aaa64ead0371e08bbffc6b5829f59b8be5b851e8b7e0eaee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157733,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater has not been run against this exact candidate, so the shipped-driver recovery and upgrade path remains unverified. (sha=9669dceefa4b261e9d020b8838b1a22a64b4fe0d)",
+      "expected_head_sha": "9669dceefa4b261e9d020b8838b1a22a64b4fe0d",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-25T00:42:04.482Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/issue-157234-repair-self-lease",
+        "head_sha": "9669dceefa4b261e9d020b8838b1a22a64b4fe0d",
         "cluster_id": null,
         "job_path": null
       }
