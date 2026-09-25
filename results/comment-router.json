@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T17:55:39.592Z",
+  "updated_at": "2026-09-25T17:56:05.810Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157840:5832064007:2026-09-25T12:04:37Z:re_review",
-      "comment_id": "5832064007",
-      "comment_version_key": "5832064007:2026-09-25T12:04:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157840#issuecomment-5832064007",
-      "comment_created_at": "2026-09-25T12:04:37Z",
-      "comment_updated_at": "2026-09-25T12:04:37Z",
-      "comment_body_sha256": "82701392b79598a6ef29104179536fea7884e945a0addb44df3848956fd71bd7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157840,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T12:05:37.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-grant-forward-2",
-        "head_sha": "26448a4b6ac45354a89611ec013ed40c018fa168",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157726:5824227220:2026-09-25T12:02:16Z:clawsweeper_needs_human",
       "comment_id": "5824227220",
@@ -32497,6 +32450,39 @@
         "kind": "pull_request",
         "branch": "fix/update-repair-turn-worker",
         "head_sha": "485b21fd270e3854cbed93db4b64549e7a404fad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3994:5835961849:2026-09-25T17:52:22Z:clawsweeper_auto_repair",
+      "comment_id": "5835961849",
+      "comment_version_key": "5835961849:2026-09-25T17:52:22Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3994#issuecomment-5835961849",
+      "comment_created_at": "2026-09-25T16:39:47Z",
+      "comment_updated_at": "2026-09-25T17:52:22Z",
+      "comment_body_sha256": "8cb49490f29cbb5fc9bb9e3c610e74cd0316f53d310beffe17884c2dd58717bf",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9c06566f69d56e67a1c9d2700c3b1ad9b86c376c)",
+      "expected_head_sha": "9c06566f69d56e67a1c9d2700c3b1ad9b86c376c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T17:56:05.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/homebrew-in-app-updates",
+        "head_sha": "9c06566f69d56e67a1c9d2700c3b1ad9b86c376c",
         "cluster_id": null,
         "job_path": null
       }
