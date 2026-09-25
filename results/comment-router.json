@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T19:36:37.065Z",
+  "updated_at": "2026-09-25T19:37:29.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148367:5833439809:2026-09-25T13:44:57Z:re_review",
-      "comment_id": "5833439809",
-      "comment_version_key": "5833439809:2026-09-25T13:44:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148367#issuecomment-5833439809",
-      "comment_created_at": "2026-09-25T13:44:57Z",
-      "comment_updated_at": "2026-09-25T13:44:57Z",
-      "comment_body_sha256": "9a294eebe52f25b8f79ed05a1c1f27a86ecf59c532e15c7e2ae0851c0963eab9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148367,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T13:45:55.519Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/conversation-target-normalization-20260914",
-        "head_sha": "cdbae6dd74c8d15cbd23a9a1687210cbb2449a3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157885:5826568286:2026-09-25T13:45:01Z:clawsweeper_needs_human",
       "comment_id": "5826568286",
@@ -32518,6 +32471,39 @@
         "kind": "pull_request",
         "branch": "feat/plugin-supervisor-guidance",
         "head_sha": "97ba38382313253f962e2e42ff95e0b558e1477f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:442:5837494206:2026-09-25T19:36:39Z:clawsweeper_needs_human",
+      "comment_id": "5837494206",
+      "comment_version_key": "5837494206:2026-09-25T19:36:39Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/442#issuecomment-5837494206",
+      "comment_created_at": "2026-09-25T18:29:35Z",
+      "comment_updated_at": "2026-09-25T19:36:39Z",
+      "comment_body_sha256": "26ff78e620c4e8a14ad2bbbf9c1e095e680ca51402536f6e21eade45dc3b0481",
+      "repo": "openclaw/wacli",
+      "issue_number": 442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Confirm that opt-in pairing-time history limits belong in wacli's CLI contract before merge. (sha=576ae58ca3b9c1d592dd87e64761fde856ea5441)",
+      "expected_head_sha": "576ae58ca3b9c1d592dd87e64761fde856ea5441",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T19:37:29.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/auth-history-limits",
+        "head_sha": "576ae58ca3b9c1d592dd87e64761fde856ea5441",
         "cluster_id": null,
         "job_path": null
       }
