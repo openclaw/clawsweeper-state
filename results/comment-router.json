@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:03:12.837Z",
+  "updated_at": "2026-09-25T08:03:14.231Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157832:5825805379:2026-09-25T02:42:32Z:re_review",
-      "comment_id": "5825805379",
-      "comment_version_key": "5825805379:2026-09-25T02:42:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157832#issuecomment-5825805379",
-      "comment_created_at": "2026-09-25T02:42:32Z",
-      "comment_updated_at": "2026-09-25T02:42:32Z",
-      "comment_body_sha256": "5c051389b4dc6fa135d401beeb4413a1c02d6e0dea72f2e20e074bfcac263031",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157832,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T02:59:53.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-model-list-reader",
-        "head_sha": "b456da84a23f83cc98fe93384387699e7f80d676",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157695:5825820620:2026-09-25T02:44:25Z:re_review",
       "comment_id": "5825820620",
@@ -34312,6 +34265,39 @@
         "kind": "pull_request",
         "branch": "deslop/l40-skills-tui",
         "head_sha": "210a1043f93537002123047561a7868308fb0944",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156924:5806165211:2026-09-25T07:57:46Z:clawsweeper_needs_human",
+      "comment_id": "5806165211",
+      "comment_version_key": "5806165211:2026-09-25T07:57:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156924#issuecomment-5806165211",
+      "comment_created_at": "2026-09-24T02:05:16Z",
+      "comment_updated_at": "2026-09-25T07:57:46Z",
+      "comment_body_sha256": "5de3b0528ccc98dd3337947c8034b980d435a77e5289a697d2c29546ac0e4730",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed base-owned readiness check controls production CI fanout, but the supplied tests use fixtures and t...; Review finding: [P1] Recheck requester authority before broad CI work — .github/workflows/ci.yml:2693 - [medium] Revoked requester can still consume broad CI — .github/workflows/c... (sha=6e927c67542fc3f47d89619a976fd028fb38fe02)",
+      "expected_head_sha": "6e927c67542fc3f47d89619a976fd028fb38fe02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:03:14.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/ready-candidate-20260923",
+        "head_sha": "6e927c67542fc3f47d89619a976fd028fb38fe02",
         "cluster_id": null,
         "job_path": null
       }
