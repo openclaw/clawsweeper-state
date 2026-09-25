@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-157961"
 mode: "autonomous"
-run_id: "36102569462"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36102569462"
+run_id: "36106222057"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36106222057"
 head_sha: "3d8d89c12d45e24c0922d95e4a11f410869dc12e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-25T06:55:17.751Z"
-canonical: "https://github.com/openclaw/openclaw/issues/157961"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/157961"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-25T07:12:55.330Z"
+canonical: "#157961"
+canonical_issue: "#157961"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36102569462](https://github.com/openclaw/clawsweeper/actions/runs/36102569462)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36106222057](https://github.com/openclaw/clawsweeper/actions/runs/36106222057)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/157961
+Canonical: #157961
 
 ## Summary
 
-Current main retains a source-proven silent failure: a non-definitive Check outcome replay error leaves the saved operation in place but clears the visible chat error. The successful replay path is covered by existing tests. The read-only checkout prevented adding the required failing rendered regression, implementing the fix, and validating a PR branch.
+The current main checkout has a source-proven silent failure path for Check outcome: a non-definitive replay error clears the visible error while retaining the saved operation. The reported settled-receipt incident itself is not yet reproduced. This plan starts with a failing rendered-control regression; no code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main retains a source-proven silent failure: a non-definitive Check outc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #157961 | fix_needed | planned | canonical | A narrow Control UI bug fix is needed. Keep the issue open while its implementation is validated. |
-| cluster:issue-openclaw-openclaw-157961 | build_fix_artifact | blocked |  | Implementation requires a writable target checkout. First make the rendered Check outcome regression fail on current main, then repair and validate the branch. |
+| #157961 | fix_needed | planned | canonical | A narrow Control UI repair is plausible. The required failing rendered-control regression must establish the defect before implementation proceeds. |
 
 ## Needs Human
 
