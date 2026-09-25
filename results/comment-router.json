@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T05:16:13.367Z",
+  "updated_at": "2026-09-25T05:16:49.183Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156205:5789819196:2026-09-24T23:01:55Z:clawsweeper_needs_human",
-      "comment_id": "5789819196",
-      "comment_version_key": "5789819196:2026-09-24T23:01:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156205#issuecomment-5789819196",
-      "comment_created_at": "2026-09-23T05:53:54Z",
-      "comment_updated_at": "2026-09-24T23:01:55Z",
-      "comment_body_sha256": "5a9d40dcb3c0d4f44df8708ab8adf0795679b092c59d003f1487b88bab08eb79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156205,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A project maintainer has not endorsed the workload tradeoff: the measured 35-tool batch uses 5.43% more warm CPU, and the 512-tool individual-registration case shows about 142 MiB hig... (sha=0e4b2c2ef3044580e72db829e98b033fe0130e1c)",
-      "expected_head_sha": "0e4b2c2ef3044580e72db829e98b033fe0130e1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T00:13:36.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/plugin-declared-tool-membership-20260923",
-        "head_sha": "0e4b2c2ef3044580e72db829e98b033fe0130e1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156244:5789923568:2026-09-24T22:20:13Z:clawsweeper_needs_human",
       "comment_id": "5789923568",
@@ -33911,6 +33878,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157697:5827198737:2026-09-25T05:15:52Z:re_review",
+      "comment_id": "5827198737",
+      "comment_version_key": "5827198737:2026-09-25T05:15:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157697#issuecomment-5827198737",
+      "comment_created_at": "2026-09-25T05:15:52Z",
+      "comment_updated_at": "2026-09-25T05:15:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157697,
+      "author": "Bruce-Yii",
+      "author_id": 298228875,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T05:16:41.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/157541-claude-version-probe",
+        "head_sha": "e87b8d02fc9540678df90e2c64b7e2aea638bd40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
