@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T08:16:34.489Z",
+  "updated_at": "2026-09-25T08:16:45.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157300:5820260562:2026-09-24T18:54:50Z:re_review",
-      "comment_id": "5820260562",
-      "comment_version_key": "5820260562:2026-09-24T18:54:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157300#issuecomment-5820260562",
-      "comment_created_at": "2026-09-24T18:54:50Z",
-      "comment_updated_at": "2026-09-24T18:54:50Z",
-      "comment_body_sha256": "028fd67e7cf4852d6dc352562ee6c72959fbd6a6f8321ecb027570e41099fa2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157300,
-      "author": "htuyer121",
-      "author_id": 277202213,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T03:12:19.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-agent-scope-reuse",
-        "head_sha": "24bfdb01065fbffaa63445b537451e786e97e625",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138488:5826001930:2026-09-25T03:05:47Z:re_review",
       "comment_id": "5826001930",
@@ -33984,6 +33937,39 @@
         "kind": "pull_request",
         "branch": "fix/remote-catalog-generation-publication",
         "head_sha": "778817a18508fc59d79630bdd7ac0e3f69acc328",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3976:5827388437:2026-09-25T08:15:42Z:clawsweeper_needs_human",
+      "comment_id": "5827388437",
+      "comment_version_key": "5827388437:2026-09-25T08:15:42Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3976#issuecomment-5827388437",
+      "comment_created_at": "2026-09-25T05:36:28Z",
+      "comment_updated_at": "2026-09-25T08:15:42Z",
+      "comment_body_sha256": "912917078f07b35a2b6c6b070f6ee6ef839a003475b8bad89f39e6f52a7a75f2",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement shortcut matcher has only synthetic event coverage. Default arrows, Command-digit selection, and custom combinations remain unverified during tracking of a freshly bui... (sha=3903f0d9266c69731da8918cc23880043c43a315)",
+      "expected_head_sha": "3903f0d9266c69731da8918cc23880043c43a315",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T08:16:45.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/20260921-prefs-sync",
+        "head_sha": "3903f0d9266c69731da8918cc23880043c43a315",
         "cluster_id": null,
         "job_path": null
       }
