@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T01:11:26.088Z",
+  "updated_at": "2026-09-25T01:14:08.411Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139260:5553802483:2026-09-24T17:15:16Z:clawsweeper_needs_human",
-      "comment_id": "5553802483",
-      "comment_version_key": "5553802483:2026-09-24T17:15:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139260#issuecomment-5553802483",
-      "comment_created_at": "2026-09-05T18:12:19Z",
-      "comment_updated_at": "2026-09-24T17:15:16Z",
-      "comment_body_sha256": "b48ced14f3a4edc25e1f262009a5accdc7478bc52a3ae751596011551c70c939",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b893d4d9735f4d74cc5b4c21604b24a02b92e9c4)",
-      "expected_head_sha": "b893d4d9735f4d74cc5b4c21604b24a02b92e9c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T17:16:42.250Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-139249-preview-settlement",
-        "head_sha": "b893d4d9735f4d74cc5b4c21604b24a02b92e9c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157425:5818739247:2026-09-24T17:15:04Z:clawsweeper_needs_human",
       "comment_id": "5818739247",
@@ -33417,6 +33384,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157634:5825000676:2026-09-25T01:12:21Z:re_review",
+      "comment_id": "5825000676",
+      "comment_version_key": "5825000676:2026-09-25T01:12:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157634#issuecomment-5825000676",
+      "comment_created_at": "2026-09-25T01:12:21Z",
+      "comment_updated_at": "2026-09-25T01:12:21Z",
+      "comment_body_sha256": "f5eb71d5f5b8492f06b7d3739f1d438e8a45d46b4b6311a232e9b7deddfa9bb3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157634,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T01:14:06.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-database-responsiveness-20260924",
+        "head_sha": "2539f61aab1bfc065fde9f1c1e100f23b2190404",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
