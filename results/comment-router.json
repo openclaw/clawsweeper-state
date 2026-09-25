@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T02:52:43.007Z",
+  "updated_at": "2026-09-25T02:53:07.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156405:5792953350:2026-09-24T17:18:10Z:clawsweeper_needs_human",
-      "comment_id": "5792953350",
-      "comment_version_key": "5792953350:2026-09-24T17:18:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156405#issuecomment-5792953350",
-      "comment_created_at": "2026-09-23T10:11:42Z",
-      "comment_updated_at": "2026-09-24T17:18:10Z",
-      "comment_body_sha256": "a4c82fdff9e640273540fda2c83437b53e23c7857ff0d28f7d99442429316a4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156405,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR's paired large-environment run-read control reports higher CPU and roughly 61 MiB higher current RSS. The process-wide measurements do not establish causality, so the task-runt... (sha=c20dfd0f8d92902a0f7e026a9225505df75e543b)",
-      "expected_head_sha": "c20dfd0f8d92902a0f7e026a9225505df75e543b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T20:10:49.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/unused-flow-config-preparation-20260923",
-        "head_sha": "c20dfd0f8d92902a0f7e026a9225505df75e543b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156435:5794578724:2026-09-24T18:30:17Z:clawsweeper_needs_human",
       "comment_id": "5794578724",
@@ -33651,6 +33618,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157650:5825886677:2026-09-25T02:52:11Z:re_review",
+      "comment_id": "5825886677",
+      "comment_version_key": "5825886677:2026-09-25T02:52:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157650#issuecomment-5825886677",
+      "comment_created_at": "2026-09-25T02:52:11Z",
+      "comment_updated_at": "2026-09-25T02:52:11Z",
+      "comment_body_sha256": "7a0f228280cb5a1f17b30f9d4b1dbdd73f6fd2f48279dd9a929240f8c60183fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157650,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T02:53:00.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.33-anthropic-cache-carrier",
+        "head_sha": "bbd8e369e323598476a40b797924464f6c72a3e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
