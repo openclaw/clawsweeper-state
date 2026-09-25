@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158339",
+  "mode": "autonomous",
+  "run_id": "36200070070",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36200070070",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158339.md",
+  "published_at": "2026-09-25T23:30:31.842Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158339",
+  "canonical_pr": null,
+  "summary": "Current main retains the query-based config-reader guard implicated in the reported Bun recursion. No code, test, branch, or PR was produced: this checkout is read-only, Bun is unavailable, and dependencies are absent. The fix path requires a failing Bun regression before implementation.",
+  "actions": [
+    {
+      "target": "#158339",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158339",
+      "candidate_fix": null,
+      "reason": "A narrow candidate-side bug fix is indicated, pending reproduction and repair on a writable Bun-equipped host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158339",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158339",
+      "candidate_fix": null,
+      "reason": "The required failing Bun regression, code edit, and local validation cannot run in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

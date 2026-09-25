@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158339"
-mode: "plan"
-run_id: "36198891829"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36198891829"
+mode: "autonomous"
+run_id: "36200070070"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36200070070"
 head_sha: "9fb3a5d5887891c08e0310cafc54b09ab3023c2a"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-25T22:58:48.831Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-25T23:30:31.842Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158339"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158339"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36198891829](https://github.com/openclaw/clawsweeper/actions/runs/36198891829)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36200070070](https://github.com/openclaw/clawsweeper/actions/runs/36200070070)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/158339
 
 ## Summary
 
-The hydrated issue is open, and its review reports that the query-based guard remains on main. Plan a narrow repair, but reproduce the failure on the exact current main under Bun 1.4.2 before changing code. The local checkout predates the preflight main commit and has no Bun executable. No code or GitHub state was changed.
+Current main retains the query-based config-reader guard implicated in the reported Bun recursion. No code, test, branch, or PR was produced: this checkout is read-only, Bun is unavailable, and dependencies are absent. The fix path requires a failing Bun regression before implementation.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The hydrated issue is open, and its review reports that the query-based guard re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/158339 | fix_needed | planned | canonical | The reported failure has a narrow candidate owner in the generated update config alias. Recheck and reproduce it on current main before editing. |
-| issue-openclaw-openclaw-158339 | build_fix_artifact | planned |  | Prepare one issue-scoped fix path, conditional on a failing bounded reproduction on current main. |
+| #158339 | fix_needed | planned | canonical | A narrow candidate-side bug fix is indicated, pending reproduction and repair on a writable Bun-equipped host. |
+| cluster:issue-openclaw-openclaw-158339 | build_fix_artifact | blocked |  | The required failing Bun regression, code edit, and local validation cannot run in this worker environment. |
 
 ## Needs Human
 
