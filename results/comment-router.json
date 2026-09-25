@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T00:37:56.669Z",
+  "updated_at": "2026-09-25T00:38:01.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5818328320:2026-09-24T16:46:43Z:re_review",
-      "comment_id": "5818328320",
-      "comment_version_key": "5818328320:2026-09-24T16:46:43Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1675#issuecomment-5818328320",
-      "comment_created_at": "2026-09-24T16:46:43Z",
-      "comment_updated_at": "2026-09-24T16:46:43Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1675,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-24T16:52:45.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/reuse-command-review-ack",
-        "head_sha": "000b2d7719b9259dac08e97910285c82c4a899f5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1675:5812088624:2026-09-24T10:07:40Z:re_review",
       "comment_id": "5812088624",
@@ -33412,6 +33365,39 @@
         "kind": "pull_request",
         "branch": "fix/windows-bundled-mcp-proof-20260925",
         "head_sha": "f87fba9dbcf38668b06b63b2f6170191fc7161f0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157743:5824658192:2026-09-25T00:36:48Z:clawsweeper_needs_human",
+      "comment_id": "5824658192",
+      "comment_version_key": "5824658192:2026-09-25T00:36:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157743#issuecomment-5824658192",
+      "comment_created_at": "2026-09-25T00:36:48Z",
+      "comment_updated_at": "2026-09-25T00:36:48Z",
+      "comment_body_sha256": "06f6ec303cee6547659e1d554a279b02143ea97ea2d90764ee444ccf3d0a3bd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157743,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A matched full selected-workload run is still missing, so the effect of the additional infrastructure processes on total runtime, memory, and process settlement remains unverified. (sha=f79245de98ce7511ece48e255f1a91ff224720bf)",
+      "expected_head_sha": "f79245de98ce7511ece48e255f1a91ff224720bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T00:38:01.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-native-infra-groups-0484",
+        "head_sha": "f79245de98ce7511ece48e255f1a91ff224720bf",
         "cluster_id": null,
         "job_path": null
       }
