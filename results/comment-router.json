@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-25T12:33:52.762Z",
+  "updated_at": "2026-09-25T12:32:58.463Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157951:5827908539:2026-09-25T06:25:32Z:re_review",
+      "comment_id": "5827908539",
+      "comment_version_key": "5827908539:2026-09-25T06:25:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157951#issuecomment-5827908539",
+      "comment_created_at": "2026-09-25T06:25:32Z",
+      "comment_updated_at": "2026-09-25T06:25:32Z",
+      "comment_body_sha256": "dfbc85b1fb3da8fd66e1d7be04441fb8e81311433ef22ac627b5fc80b21a16ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157951,
+      "author": "stevenlee-oai",
+      "author_id": 213687449,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T06:26:38.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/macos-keychain-denial",
+        "head_sha": "2b12ab638dc8549eeef95aeef7f5f900f7782c4f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157962:5827911696:2026-09-25T06:25:52Z:clawsweeper_needs_human",
       "comment_id": "5827911696",
@@ -33192,39 +33239,6 @@
         "kind": "pull_request",
         "branch": "openclaw/2026-9-7-backports",
         "head_sha": "350368f7c558e314097695cdeff9e7c5ab6aed3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3989:5832420615:2026-09-25T12:32:59Z:clawsweeper_needs_human",
-      "comment_id": "5832420615",
-      "comment_version_key": "5832420615:2026-09-25T12:32:59Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3989#issuecomment-5832420615",
-      "comment_created_at": "2026-09-25T12:32:59Z",
-      "comment_updated_at": "2026-09-25T12:32:59Z",
-      "comment_body_sha256": "39daec0a2bc62ae826db93955f59e369486477fba99dbebd4ae699b21b3e4c90",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3989,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9010a8d05f79d351e2bea3e36f0882cd37e9129e)",
-      "expected_head_sha": "9010a8d05f79d351e2bea3e36f0882cd37e9129e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T12:33:52.762Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage/20260921-new-prs-h",
-        "head_sha": "9010a8d05f79d351e2bea3e36f0882cd37e9129e",
         "cluster_id": null,
         "job_path": null
       }
