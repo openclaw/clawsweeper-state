@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Bun managed-update config-reader recursion in scripts/lib/update-config-runtime-compat.mts. First establish a bounded failing regression for the generated alias under Bun 1.4.2 without allowing descendant growth. Replace the import.meta.url query guard with a child-entry mechanism Bun preserves, while retaining fresh-process candidate reads, Node behavior, and rollback selection. Ensure abort and timeout join child work before activation proceeds. Extend the owner-boundary test in test/scripts/update-config-runtime-compat.test.ts so it fails for the original defect. Validate a published v2026.9.6 updater against the candidate on an isolated, process-limited Bun setup, including cancellation cleanup. Do not add a config option, change service ownership policy, or edit release-owned CHANGELOG.md.
+Fix the existing managed-update bug where Bun loses the query marker used by the generated candidate config-reader alias, causing recursive child spawning. Work in scripts/lib/update-config-runtime-compat.mts and its boundary test; preserve fresh-process reads from the current candidate, rollback/replacement behavior, and normal unmarked imports. Establish a failing Bun-specific regression before repair, then prove one bounded read and no surviving descendants after cancellation or timeout in isolated, process-limited state. Validate a published v2026.9.6 updater against the candidate where feasible. Do not add a config option, change the stored-data contract, or edit release-owned CHANGELOG.md. The open Bun update-repair finalizer PR is distinct and should not be duplicated.
 
 Likely files:
 
 - scripts/lib/update-config-runtime-compat.mts
 - test/scripts/update-config-runtime-compat.test.ts
+- scripts/runtime-postbuild.mts
 
 Validation:
 
 - pnpm test test/scripts/update-config-runtime-compat.test.ts --maxWorkers=1
 - node scripts/check-changed.mjs -- scripts/lib/update-config-runtime-compat.mts test/scripts/update-config-runtime-compat.test.ts
-- Published v2026.9.6 updater × candidate build under Bun 1.4.2 in isolated process-limited state: verify one candidate read, bounded cancellation, and no surviving descendants.
 
 ## Operator Prompt
 
