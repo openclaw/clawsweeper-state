@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T09:04:58.675Z",
+  "updated_at": "2026-09-25T09:04:59.477Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141379:5573869511:2026-09-25T03:21:57Z:clawsweeper_needs_human",
-      "comment_id": "5573869511",
-      "comment_version_key": "5573869511:2026-09-25T03:21:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141379#issuecomment-5573869511",
-      "comment_created_at": "2026-09-07T17:18:29Z",
-      "comment_updated_at": "2026-09-25T03:21:57Z",
-      "comment_body_sha256": "6cd2122b78031ae179adcbe66d4ea5363e38060c9e5b1d7233db3f7411d8c92a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141379,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Gateway abort and drain owners are called in Vitest with a seeded registry, but the tests mock chat...; Review finding: [P1] Scope the reply abort to the requested agent — src/gateway/server-methods/sessions-lifecycle-drain.ts:193-197 - [P1] Keep foreign MCP runtimes out of scoped S... (sha=58907ed6b65067fce34500b119ab1daa4b896621)",
-      "expected_head_sha": "58907ed6b65067fce34500b119ab1daa4b896621",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T04:01:20.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/embedded-abort-agent-scope",
-        "head_sha": "58907ed6b65067fce34500b119ab1daa4b896621",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144511:5627167863:2026-09-25T03:28:53Z:clawsweeper_needs_human",
       "comment_id": "5627167863",
@@ -34093,6 +34060,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158006:5828988641:2026-09-25T09:03:56Z:clawsweeper_needs_human",
+      "comment_id": "5828988641",
+      "comment_version_key": "5828988641:2026-09-25T09:03:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158006#issuecomment-5828988641",
+      "comment_created_at": "2026-09-25T07:58:36Z",
+      "comment_updated_at": "2026-09-25T09:03:56Z",
+      "comment_body_sha256": "2ad1cb65cb0ef46e69e5956228ede1a2a8a3e94c105f12c18aeac069ea63037c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158006,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater with legacy operator state is still being tested against the candidate. Its result must establish that a completed handoff clears only its own campaign... (sha=c97b1918b3ce901666b50691e23e494a0fe023aa)",
+      "expected_head_sha": "c97b1918b3ce901666b50691e23e494a0fe023aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T09:04:59.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-stale-update-status-bug",
+        "head_sha": "c97b1918b3ce901666b50691e23e494a0fe023aa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
