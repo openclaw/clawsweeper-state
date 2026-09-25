@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T06:53:18.470Z",
+  "updated_at": "2026-09-25T06:53:33.249Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157413:5818526599:2026-09-25T01:19:46Z:clawsweeper_needs_human",
-      "comment_id": "5818526599",
-      "comment_version_key": "5818526599:2026-09-25T01:19:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157413#issuecomment-5818526599",
-      "comment_created_at": "2026-09-24T17:00:12Z",
-      "comment_updated_at": "2026-09-25T01:19:46Z",
-      "comment_body_sha256": "d9165f3831535aff90c87478c389b4f34c1499c8704d81e097a1cc42494e908b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157413,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.4 updater has passed against an earlier head, but its acceptance run against this exact head remains queued; existing-install recovery and preservation of the pr... (sha=d5e5aad5465080969ba1c78ccfb5dfa11480b7d6)",
-      "expected_head_sha": "d5e5aad5465080969ba1c78ccfb5dfa11480b7d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T01:27:01.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/land-temp-state-cleanup",
-        "head_sha": "d5e5aad5465080969ba1c78ccfb5dfa11480b7d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157597:5822605689:2026-09-25T01:10:17Z:clawsweeper_needs_human",
       "comment_id": "5822605689",
@@ -34205,6 +34172,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157940:5828218485:2026-09-25T06:52:30Z:re_review",
+      "comment_id": "5828218485",
+      "comment_version_key": "5828218485:2026-09-25T06:52:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157940#issuecomment-5828218485",
+      "comment_created_at": "2026-09-25T06:52:30Z",
+      "comment_updated_at": "2026-09-25T06:52:30Z",
+      "comment_body_sha256": "907c693dcfc00b0b42445b442e3c06537b0d8f90d3044707f5c019873d90edad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157940,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T06:53:31.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-collector-cancel-publication-20260925",
+        "head_sha": "54893ee7acd8279a776ffac8342193e65b611b56",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
