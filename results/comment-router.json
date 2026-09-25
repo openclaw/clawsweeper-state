@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-25T05:03:19.341Z",
+  "updated_at": "2026-09-25T05:03:20.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156941:5824161838:2026-09-24T23:46:09Z:re_review",
-      "comment_id": "5824161838",
-      "comment_version_key": "5824161838:2026-09-24T23:46:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5824161838",
-      "comment_created_at": "2026-09-24T23:46:09Z",
-      "comment_updated_at": "2026-09-24T23:46:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156941,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T00:12:33.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
-        "head_sha": "7508f25ca226bd2be887b38362128d5aa05495ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157677:5824170830:2026-09-24T23:46:56Z:re_review",
       "comment_id": "5824170830",
@@ -33838,6 +33791,39 @@
         "kind": "pull_request",
         "branch": "openclaw/doctor-fresh-restoration-157243",
         "head_sha": "928bbe44586de9d1d419b3a8bd46d85f2d4414fb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1169:5826418055:2026-09-25T04:44:19Z:clawsweeper_needs_human",
+      "comment_id": "5826418055",
+      "comment_version_key": "5826418055:2026-09-25T04:44:19Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1169#issuecomment-5826418055",
+      "comment_created_at": "2026-09-25T03:55:45Z",
+      "comment_updated_at": "2026-09-25T04:44:19Z",
+      "comment_body_sha256": "dd7b6c13649c7138781ef32561ad10a48ebd0c18199436258fce9568fd120a52",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports a passing real-vault round trip through the production op-backed store and success...; Review finding: [P1] Fail closed when vault item ownership cannot be fetched — internal/secrets/onepassword.go:848-855 - [P1] Verify ownership before returning vault credentials —... (sha=834f2c56b10f6fd2b6831dec76f8340ce4803620)",
+      "expected_head_sha": "834f2c56b10f6fd2b6831dec76f8340ce4803620",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-25T05:03:20.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/onepassword-keyring",
+        "head_sha": "834f2c56b10f6fd2b6831dec76f8340ce4803620",
         "cluster_id": null,
         "job_path": null
       }
