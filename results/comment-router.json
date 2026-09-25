@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T11:33:28.887Z",
+  "updated_at": "2026-09-25T11:36:14.197Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:662:5825902745:2026-09-25T05:55:22Z:clawsweeper_needs_human",
-      "comment_id": "5825902745",
-      "comment_version_key": "5825902745:2026-09-25T05:55:22Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/662#issuecomment-5825902745",
-      "comment_created_at": "2026-09-25T02:54:18Z",
-      "comment_updated_at": "2026-09-25T05:55:22Z",
-      "comment_body_sha256": "1dd3156dbc2f77c8509d6aa9fdcd78f2ed210a3b1c93deca0496ea39aa4d7e91",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 662,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Performance qualification is explicitly on hold: the comparative study exceeded thresholds in both candidate and identical-baseline controls, leaving the effect on JSON read performan... (sha=6c4045106d974d55839ea837b05f893b3292ff5b)",
-      "expected_head_sha": "6c4045106d974d55839ea837b05f893b3292ff5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T06:03:14.336Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/json-read-result-owner-20260925",
-        "head_sha": "6c4045106d974d55839ea837b05f893b3292ff5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157865:5826399021:2026-09-25T06:00:11Z:clawsweeper_needs_human",
       "comment_id": "5826399021",
@@ -33315,6 +33282,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawrouter:261:5831720034:2026-09-25T11:35:23Z:re_review",
+      "comment_id": "5831720034",
+      "comment_version_key": "5831720034:2026-09-25T11:35:23Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/261#issuecomment-5831720034",
+      "comment_created_at": "2026-09-25T11:35:23Z",
+      "comment_updated_at": "2026-09-25T11:35:23Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 261,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T11:36:13.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/responses-background-recovery",
+        "head_sha": "00533e38592ba2d746180daa99b1ae5d5a8a9642",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
