@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T03:08:47.722Z",
+  "updated_at": "2026-09-25T03:09:47.988Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156688:5800242638:2026-09-24T21:03:12Z:clawsweeper_needs_human",
-      "comment_id": "5800242638",
-      "comment_version_key": "5800242638:2026-09-24T21:03:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156688#issuecomment-5800242638",
-      "comment_created_at": "2026-09-23T18:06:40Z",
-      "comment_updated_at": "2026-09-24T21:03:12Z",
-      "comment_body_sha256": "5e081ef4601bd695bb60c1494159c7eed966c187b137397fa4bbc09993da458b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The candidate-only restart run does not establish that an installation with topic bindings written by the shipped driver hydrates and retires them correctly after update. (sha=28802c6c228bab8d654ce9ef4315d1345130a8c1)",
-      "expected_head_sha": "28802c6c228bab8d654ce9ef4315d1345130a8c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-24T21:08:26.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/telegram-binding-worker-20260922",
-        "head_sha": "28802c6c228bab8d654ce9ef4315d1345130a8c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155860:5780547945:2026-09-24T21:02:57Z:clawsweeper_auto_repair",
       "comment_id": "5780547945",
@@ -33704,6 +33671,51 @@
         "head_sha": "d90fcf20367d78df170fe2d0805328f3ae6f895e",
         "cluster_id": null,
         "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157067:5825980768:2026-09-25T03:03:09Z:re_review",
+      "comment_id": "5825980768",
+      "comment_version_key": "5825980768:2026-09-25T03:03:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/157067#issuecomment-5825980768",
+      "comment_created_at": "2026-09-25T03:03:09Z",
+      "comment_updated_at": "2026-09-25T03:03:09Z",
+      "comment_body_sha256": "4ba1e2f3c4b1d65023a9ad5cae81f02f44a864a2ab5799421083a3af13175d02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157067,
+      "author": "WG-Mojo",
+      "author_id": 24610819,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T03:09:45.777Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": "issue-openclaw-openclaw-157067",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-157067.md"
       },
       "actions": [
         {
