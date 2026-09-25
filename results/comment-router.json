@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-25T13:20:00.773Z",
+  "updated_at": "2026-09-25T13:20:25.876Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157940:5827932881:2026-09-25T06:58:22Z:clawsweeper_needs_human",
-      "comment_id": "5827932881",
-      "comment_version_key": "5827932881:2026-09-25T06:58:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157940#issuecomment-5827932881",
-      "comment_created_at": "2026-09-25T06:27:55Z",
-      "comment_updated_at": "2026-09-25T06:58:22Z",
-      "comment_body_sha256": "471775999f707ce4c8add2476db88d1f95ca85394b30dd1c69d8889afd6ad7b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157940,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head conflicts with current main in registry test fixtures; the combined cancellation and settlement cases have not been validated as one integrated tree. (sha=54893ee7acd8279a776ffac8342193e65b611b56)",
-      "expected_head_sha": "54893ee7acd8279a776ffac8342193e65b611b56",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T07:03:25.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-collector-cancel-publication-20260925",
-        "head_sha": "54893ee7acd8279a776ffac8342193e65b611b56",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157969:5827999172:2026-09-25T06:33:21Z:clawsweeper_needs_human",
       "comment_id": "5827999172",
@@ -33268,6 +33235,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157465:5833067759:2026-09-25T13:19:24Z:re_review",
+      "comment_id": "5833067759",
+      "comment_version_key": "5833067759:2026-09-25T13:19:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157465#issuecomment-5833067759",
+      "comment_created_at": "2026-09-25T13:19:24Z",
+      "comment_updated_at": "2026-09-25T13:19:24Z",
+      "comment_body_sha256": "4df5a228878cfcf2aa6a277c4f6c54a8befb339b967db955de800279a497bc60",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157465,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-25T13:20:21.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gemini-tts-two-speakers",
+        "head_sha": "e4f6f585ce723eba15812a5391472a9a6a7c66e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
