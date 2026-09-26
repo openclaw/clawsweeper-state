@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158874"
-mode: "autonomous"
-run_id: "36241819458"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36241819458"
+mode: "plan"
+run_id: "36245330095"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36245330095"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T13:02:56.782Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158874"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158874"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T13:32:03.066Z"
+canonical: "#158874"
+canonical_issue: "#158874"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36241819458](https://github.com/openclaw/clawsweeper/actions/runs/36241819458)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36245330095](https://github.com/openclaw/clawsweeper/actions/runs/36245330095)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158874
+Canonical: #158874
 
 ## Summary
 
-The defect is visible in the checked-out source, but implementation is blocked. The checkout is at 4e4473b4, while preflight identifies 412eeccc as main; that commit is unavailable locally. Dependencies are absent and this session has read-only filesystem access. No regression test, patch, or validation was run.
+At main 5269bc4, the reported video and music logging gap remains. Plan a focused regression-first fix; no code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The defect is visible in the checked-out source, but implementation is blocked. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158874 | fix_needed | planned | canonical | The reported behavior needs a focused regression and runtime fix on the preflight main revision. |
-| cluster:issue-openclaw-openclaw-158874 | build_fix_artifact | blocked |  | Implementation must resume in a writable checkout at the preflight main revision and first prove the regression through generateVideo and generateMusic. |
+| https://github.com/openclaw/openclaw/issues/158874 | fix_needed | planned | canonical | Add the failing video and music runtime regressions first. If they reproduce the reported behavior, change only the two failure callbacks to warn with attempt.error, then validate fallback and changed-file checks. |
 
 ## Needs Human
 
