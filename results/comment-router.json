@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T05:55:18.381Z",
+  "updated_at": "2026-09-26T05:55:44.789Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142700:5593738788:2026-09-26T00:53:06Z:clawsweeper_needs_human",
-      "comment_id": "5593738788",
-      "comment_version_key": "5593738788:2026-09-26T00:53:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142700#issuecomment-5593738788",
-      "comment_created_at": "2026-09-09T00:13:43Z",
-      "comment_updated_at": "2026-09-26T00:53:06Z",
-      "comment_body_sha256": "710b328c91d64e83d71644413ce10107af622f6b1b18ce6c3d69893fb2ef7ec4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142700,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deployed plugins that rewrite arguments after trusted inline approval will have those calls blocked until they request a separate approval; security and SDK owners have not yet accept... (sha=17f388a5b16201bb79befe7fd73ad31105e83cef)",
-      "expected_head_sha": "17f388a5b16201bb79befe7fd73ad31105e83cef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T00:57:32.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/immutable-tool-approval",
-        "head_sha": "17f388a5b16201bb79befe7fd73ad31105e83cef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143283:5605941231:2026-09-26T00:01:01Z:clawsweeper_needs_human",
       "comment_id": "5605941231",
@@ -33417,6 +33384,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138344:5843681369:2026-09-26T05:54:51Z:re_review",
+      "comment_id": "5843681369",
+      "comment_version_key": "5843681369:2026-09-26T05:54:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138344#issuecomment-5843681369",
+      "comment_created_at": "2026-09-26T05:54:51Z",
+      "comment_updated_at": "2026-09-26T05:54:51Z",
+      "comment_body_sha256": "586a7da0e8a44bd29a982b8719c303dda3beccaf47665e2bb5ddc727373fc9ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138344,
+      "author": "waterundman",
+      "author_id": 120729380,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto current `main` (`0ad702ed`), head is now `40dfe44e`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T05:55:43.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/schtasks-probe-command",
+        "head_sha": "40dfe44ef63f4561d7ab500f78551fb8c8ee69b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
