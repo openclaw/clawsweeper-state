@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T16:07:26.385Z",
+  "updated_at": "2026-09-26T16:07:34.776Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158387:5840511319:2026-09-26T09:08:16Z:clawsweeper_needs_human",
-      "comment_id": "5840511319",
-      "comment_version_key": "5840511319:2026-09-26T09:08:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158387#issuecomment-5840511319",
-      "comment_created_at": "2026-09-25T22:26:34Z",
-      "comment_updated_at": "2026-09-26T09:08:16Z",
-      "comment_body_sha256": "9baef1ab2cd699aa08754e10a807ae6bf791f797b0248ad2b8a919d73d88f5bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed outbound resolver controls the heartbeat recipient passed to durable channel delivery. The PR body...; Review finding: [P1] Validate the recipient kind after outbound policy rewrites it — src/infra/outbound/target-resolver.ts:499-501 - [high] Heartbeat direct-message policy can be... (sha=93c0182c8264ba26e1c23534c06b49dea4f43503)",
-      "expected_head_sha": "93c0182c8264ba26e1c23534c06b49dea4f43503",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T09:09:12.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-openclaw-outbound-target-collision",
-        "head_sha": "93c0182c8264ba26e1c23534c06b49dea4f43503",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158387:5840783585:2026-09-25T22:56:42Z:re_review",
       "comment_id": "5840783585",
@@ -32552,6 +32519,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156541:5796090261:2026-09-26T16:01:10Z:clawsweeper_needs_human",
+      "comment_id": "5796090261",
+      "comment_version_key": "5796090261:2026-09-26T16:01:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156541#issuecomment-5796090261",
+      "comment_created_at": "2026-09-23T13:52:16Z",
+      "comment_updated_at": "2026-09-26T16:01:10Z",
+      "comment_body_sha256": "989666510d32d8711118937c00f7a316e5f4ff0e4d456c3f130891b39e03d79b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156541,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Doctor divergence repair and SQLite backfills operate on existing state, but no published v2026.9.6 updater comparison into this final head establishes equivalent quarantine, retained... (sha=5ffd9b81fa1f1cea0c7371b16363b8cd4f998c1e)",
+      "expected_head_sha": "5ffd9b81fa1f1cea0c7371b16363b8cd4f998c1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T16:07:34.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l11-config-sessions-accumulate-20260922",
+        "head_sha": "5ffd9b81fa1f1cea0c7371b16363b8cd4f998c1e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
