@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158607"
-mode: "autonomous"
-run_id: "36214450504"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36214450504"
+mode: "plan"
+run_id: "36218244966"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36218244966"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T03:54:33.778Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158607"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158607"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T04:38:10.225Z"
+canonical: "#158607"
+canonical_issue: "#158607"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36214450504](https://github.com/openclaw/clawsweeper/actions/runs/36214450504)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36218244966](https://github.com/openclaw/clawsweeper/actions/runs/36218244966)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158607
+Canonical: #158607
 
 ## Summary
 
-The admission-lifetime defect remains plausible on main at 5b3cb698b677235c266ba88ce4e33671e8cbf2a1. The scheduler snapshots caller context and later uses it for a coalesced rerun after the caller can release its admission root. Implementation is blocked in this read-only checkout, which also lacks installed dependencies; the required failing regression and validation could not run.
+Plan a narrow scheduler fix for the open admission-lifetime bug. The issue reports a failing isolated reproduction; this plan has not independently run it. The linked open issue concerns an earlier maintenance handoff failure.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The admission-lifetime defect remains plausible on main at 5b3cb698b677235c266ba
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158607 | fix_needed | planned | canonical | A narrow bug fix is indicated, subject to the required failing regression on current main. |
-| #156766 | keep_related | planned | related | Distinct failure path; leave this issue open under its own follow-up. |
-| cluster:issue-openclaw-openclaw-158607 | build_fix_artifact | blocked |  | Implementation requires a writable prepared checkout. Reproduce the three-offer failure before changing production code. |
+| #158607 | build_fix_artifact | planned | canonical | Retain valid admission ownership for accepted deferred work through preparation, rerun, settlement, and disposal, while preserving restart and suspend refusal. |
+| #156766 | keep_related | planned | related | The reports concern distinct lifecycle stages; this job does not authorize closing the linked issue. |
 
 ## Needs Human
 
