@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158527"
-mode: "autonomous"
-run_id: "36208640176"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36208640176"
+mode: "plan"
+run_id: "36212331186"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36212331186"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T02:10:55.672Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T02:42:41.537Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158527"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158527"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36208640176](https://github.com/openclaw/clawsweeper/actions/runs/36208640176)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36212331186](https://github.com/openclaw/clawsweeper/actions/runs/36212331186)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158527
 
 ## Summary
 
-Current main still contains the reported destructive Doctor migration. Source inspection confirms the deletion path, but the read-only checkout prevented adding the required failing regression, changing code, or validating a fix. No GitHub action was taken.
+The preflight identifies an open data-loss report, and the current main checkout at 76e32e92441321b2e564263bc385cc7f4cc8ecd7 still contains the recursive QMD workspace removal. This is a plan-only run: no files or GitHub state were changed, and no validation was run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main still contains the reported destructive Doctor migration. Source in
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158527 | fix_needed | planned | canonical | The issue has a source-proven data-loss path and no hydrated open implementation PR. |
-| cluster:issue-openclaw-openclaw-158527 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and the required pre-fix failing regression before a PR can be prepared. |
+| https://github.com/openclaw/openclaw/issues/158527 | fix_needed | planned | canonical | Plan a narrow Memory Core Doctor fix that retains QMD content without proven OpenClaw ownership and reports the retained state without refusing the upgrade. |
+| https://github.com/openclaw/openclaw/pull/120936 | keep_closed | skipped | related | Historical context only; it is already closed. |
 
 ## Needs Human
 
