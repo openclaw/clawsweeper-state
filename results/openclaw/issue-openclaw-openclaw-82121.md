@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
 mode: "autonomous"
-run_id: "36248231665"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36248231665"
+run_id: "36242130575"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36242130575"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T14:55:34.490Z"
+published_at: "2026-09-26T13:06:05.345Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36248231665](https://github.com/openclaw/clawsweeper/actions/runs/36248231665)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36242130575](https://github.com/openclaw/clawsweeper/actions/runs/36242130575)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-Current main still has a source-supported path that returns a display-truncated history preview as a complete reply. The workspace is read-only and has no installed dependencies, so I could not add a failing regression, implement the fix, validate it, or prepare a PR branch.
+Current main still has a source-proven path that can deliver a capped chat.history assistant preview through isolated automation. Implementation is blocked: this checkout is read-only and has no installed Vitest dependencies, so the required failing regression, patch, and validation were not completed. No GitHub action was taken.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main still has a source-supported path that returns a display-truncated 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | The source path remains present on current main; a runtime failing regression still needs to be established before implementation. |
-| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with dependencies. The executor must first reproduce the failure through the latest-reply reader and delivery caller. |
+| #82121 | fix_needed | planned | canonical | The reported existing-behavior defect remains supported by current source; a failing boundary regression still must be run before editing. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies. First demonstrate the failing long-row history-to-delivery regression on this main SHA, then repair and validate it. |
 
 ## Needs Human
 
