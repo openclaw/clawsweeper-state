@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158922",
+  "mode": "autonomous",
+  "run_id": "36247517219",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36247517219",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158922.md",
+  "published_at": "2026-09-26T14:47:59.304Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158922",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158922",
+  "canonical_pr": null,
+  "summary": "The reported restart regression remains plausible at main ece27a12d64cd374f539989b168541f547995286, but it was not reproduced. This checkout is read-only, has no installed dependencies, and has no usable Claude CLI login for the required Gateway comparison. No code was changed or PR opened.",
+  "actions": [
+    {
+      "target": "#158922",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158922",
+      "candidate_fix": null,
+      "reason": "Confirm the regression through an isolated Gateway with a usable Claude CLI login before changing code."
+    },
+    {
+      "target": "#146155",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The PR addresses a different trigger and does not repair prepared Claude CLI auth publication."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158922",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158922",
+      "candidate_fix": null,
+      "reason": "The job requires reproduction on current main before implementation; that gate is unmet in this host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
