@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing LINE inbound-routing bug on current main. First establish the reporter’s failing two-agent, no-channel-route case through buildLineMessageContext. In extensions/line/src/bot-message-context.ts, use the existing binding-owner contract so an authoritative bound agent is selected before ambiguous ordinary routing; preserve configured and unbound fallback, unavailable-owner failure, and final reply ownership checks. Extend extensions/line/src/bot-message-context.test.ts with one behavior-level regression and relevant revoked or reassigned binding coverage without duplicating helper tests. Use https://github.com/openclaw/openclaw/pull/123159 as a channel-specific precedent, not as a shared helper mandate. Run the focused LINE test and changed-path checks; state measured test cost in the PR. Keep CHANGELOG.md untouched. Stop if the repair requires a new feature, configuration option, schema change, or product-policy decision.
+Fix the existing LINE inbound routing bug: a runtime-bound conversation must select its bound agent when two agents make ordinary routing ambiguous. First establish a failing regression through buildLineMessageContext in extensions/line/src/bot-message-context.test.ts using two agents and no LINE route. Repair the LINE-owned route selection in extensions/line/src/bot-message-context.ts using the existing binding inspection contract; preserve configured and unbound fallbacks, unavailable-owner behavior, and live binding authority before reply side effects. Use https://github.com/openclaw/openclaw/pull/123159 as an iMessage precedent, not as a shared dependency or permission to copy a second owner. Run the focused LINE context and relevant reply-authority checks plus changed-file validation. Keep the repair to broken existing behavior; stop if it requires a new feature, config option, schema change, or product-policy decision. Put user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -76,8 +76,8 @@ Likely files:
 
 Validation:
 
-- pnpm test extensions/line/src/bot-message-context.test.ts --maxWorkers=1
-- pnpm check:changed
+- node scripts/run-vitest.mjs extensions/line/src/bot-message-context.test.ts
+- node scripts/check-changed.mjs --dry-run -- extensions/line/src/bot-message-context.ts extensions/line/src/bot-message-context.test.ts
 
 ## Operator Prompt
 
