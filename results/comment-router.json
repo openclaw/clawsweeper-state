@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T03:07:00.162Z",
+  "updated_at": "2026-09-26T03:07:32.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126932:5826896942:2026-09-25T04:45:42Z:re_review",
-      "comment_id": "5826896942",
-      "comment_version_key": "5826896942:2026-09-25T04:45:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126932#issuecomment-5826896942",
-      "comment_created_at": "2026-09-25T04:45:42Z",
-      "comment_updated_at": "2026-09-25T04:45:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126932,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T21:16:27.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-meta-restore-126806",
-        "head_sha": "718ae1765c4f0b59ccc26d77d924f2238c43f179",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126932:5364493502:2026-08-21T02:34:32Z:re_review",
       "comment_id": "5364493502",
@@ -33328,6 +33281,39 @@
         "kind": "pull_request",
         "branch": "release/0.20.0",
         "head_sha": "c47029f9dbaedea8fb3eda8627f8760d78d77e8f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153804:5750887695:2026-09-26T03:06:29Z:clawsweeper_needs_human",
+      "comment_id": "5750887695",
+      "comment_version_key": "5750887695:2026-09-26T03:06:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153804#issuecomment-5750887695",
+      "comment_created_at": "2026-09-20T15:55:46Z",
+      "comment_updated_at": "2026-09-26T03:06:29Z",
+      "comment_body_sha256": "285a1e45fbb17e9af1eaa58437b1aecf712a137c7d4b2c713ad3ca07197d9410",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153804,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The historical TypeSafe/Jev terminal trace shows real structured and Code Mode shadow calls with uncha...; Review finding: [P1] Honor shadow-mode opt-out on retained search controls — src/agents/tool-search-runtime.ts:291-295 - [medium] Stale shadow consent reaches provider dispatch —... (sha=6099e15804265744356787d404356f70f4bfd393)",
+      "expected_head_sha": "6099e15804265744356787d404356f70f4bfd393",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T03:07:32.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/semantic-tool-search-shadow",
+        "head_sha": "6099e15804265744356787d404356f70f4bfd393",
         "cluster_id": null,
         "job_path": null
       }
