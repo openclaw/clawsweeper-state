@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-26T12:59:27.540Z",
+  "updated_at": "2026-09-26T13:00:46.651Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5295923120:2026-08-14T16:52:47Z:re_review",
-      "comment_id": "5295923120",
-      "comment_version_key": "5295923120:2026-08-14T16:52:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5295923120",
-      "comment_created_at": "2026-08-14T16:52:47Z",
-      "comment_updated_at": "2026-08-14T16:52:47Z",
-      "comment_body_sha256": "89fd462efb73d07a48ed1382473adf780d1929b8bead5091fee0b6d42bc0a9d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T06:09:24.752Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5296027809:2026-08-14T17:04:23Z:re_review",
       "comment_id": "5296027809",
@@ -33008,6 +32981,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119857:5201328427:2026-09-26T12:57:10Z:clawsweeper_needs_human",
+      "comment_id": "5201328427",
+      "comment_version_key": "5201328427:2026-09-26T12:57:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119857#issuecomment-5201328427",
+      "comment_created_at": "2026-08-06T06:47:40Z",
+      "comment_updated_at": "2026-09-26T12:57:10Z",
+      "comment_body_sha256": "b13ef80ff8ec25a451e0af9ddd95be553af0f46fd3ca6ef971500e317d723786",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing managed runtime installs can receive a different selected package and persisted version. No successful published-updater × candidate cell yet shows that exact and floating se... (sha=69c15e8fa4f9a96163fc3a587e2cf73d49b78df2)",
+      "expected_head_sha": "69c15e8fa4f9a96163fc3a587e2cf73d49b78df2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T13:00:46.651Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-version-bound-convergence-20260806",
+        "head_sha": "69c15e8fa4f9a96163fc3a587e2cf73d49b78df2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
