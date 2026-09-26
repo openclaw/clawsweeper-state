@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159080",
+  "mode": "plan",
+  "run_id": "36267692534",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36267692534",
+  "head_sha": "5f73370171673b318108ffb1a5d59761c9624846",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159080.md",
+  "published_at": "2026-09-26T19:58:31.272Z",
+  "canonical": "#159080",
+  "canonical_issue": "#159080",
+  "canonical_pr": null,
+  "summary": "Plan a narrow LINE routing fix. The checkout matches preflight main at 0830a3fa459ab358e59ce7a5084f3bb5fcad971a: LINE selects an ordinary agent before inspecting the runtime conversation binding, matching the reported failure. The regression has not been run in plan mode; it must fail on main before implementation proceeds.",
+  "actions": [
+    {
+      "target": "#123159",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical linked PR only; it requires no close or merge action."
+    },
+    {
+      "target": "#159080",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159080",
+      "candidate_fix": null,
+      "reason": "Add and run the two-agent regression on current main first. If it fails as reported, select the inspected bound owner before ordinary routing, then validate configured and unbound fallbacks and reply authority. Keep the issue open."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

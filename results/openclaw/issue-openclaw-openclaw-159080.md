@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159080"
-mode: "autonomous"
-run_id: "36264846302"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36264846302"
+mode: "plan"
+run_id: "36267692534"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36267692534"
 head_sha: "5f73370171673b318108ffb1a5d59761c9624846"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T19:40:01.748Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159080"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159080"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T19:58:31.272Z"
+canonical: "#159080"
+canonical_issue: "#159080"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36264846302](https://github.com/openclaw/clawsweeper/actions/runs/36264846302)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36267692534](https://github.com/openclaw/clawsweeper/actions/runs/36267692534)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159080
+Canonical: #159080
 
 ## Summary
 
-The LINE routing bug remains in the preflight main SHA. A narrow LINE fix is identified, but the read-only checkout has no dependencies, so the required failing regression and local validation could not run.
+Plan a narrow LINE routing fix. The checkout matches preflight main at 0830a3fa459ab358e59ce7a5084f3bb5fcad971a: LINE selects an ordinary agent before inspecting the runtime conversation binding, matching the reported failure. The regression has not been run in plan mode; it must fail on main before implementation proceeds.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The LINE routing bug remains in the preflight main SHA. A narrow LINE fix is ide
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123159 | route_security | planned | security_sensitive | Quarantine this ref through central OpenClaw security handling. |
-| #159080 | fix_needed | planned | canonical | The issue has a focused LINE-owned repair path and no viable LINE PR in the hydrated items. |
-| cluster:issue-openclaw-openclaw-159080 | build_fix_artifact | blocked |  | Implementation requires a writable independent checkout with dependencies installed. First prove the two-agent regression fails on this main SHA; stop if it does not. |
+| #123159 | route_security | planned | security_sensitive | Quarantine this historical linked PR only; it requires no close or merge action. |
+| #159080 | fix_needed | planned | canonical | Add and run the two-agent regression on current main first. If it fails as reported, select the inspected bound owner before ordinary routing, then validate configured and unbound fallbacks and reply authority. Keep the issue open. |
 
 ## Needs Human
 
