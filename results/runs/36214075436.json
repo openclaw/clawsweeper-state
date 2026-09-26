@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158603",
+  "mode": "autonomous",
+  "run_id": "36214075436",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36214075436",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158603.md",
+  "published_at": "2026-09-26T03:51:55.582Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158603",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158603",
+  "canonical_pr": null,
+  "summary": "The reported cross-turn hold remains plausible on main 9073678488d35b5e4fd902da17ea8791fb42738e. A frozen yielded batch still uses a requester-wide descendant query, which includes an unrelated older running sibling. The checkout is read-only and has no installed dependencies, so I could not add the required failing regression, patch the owner, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#158603",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Implement and prove a batch-owned settle gate before opening the issue PR."
+    },
+    {
+      "target": "#138632",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Distinct failure and recovery work remains open."
+    },
+    {
+      "target": "#154252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Its retry-limit defect has a separate fix path."
+    },
+    {
+      "target": "#158154",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Keep its delivery and product questions separate."
+    },
+    {
+      "target": "#158518",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Preserve the contributor PR under its own issue and review path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158603",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with the repository dependencies available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
