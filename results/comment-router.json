@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T17:08:19.381Z",
+  "updated_at": "2026-09-26T17:08:30.064Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158694:5845589095:2026-09-26T10:46:30Z:re_review",
-      "comment_id": "5845589095",
-      "comment_version_key": "5845589095:2026-09-26T10:46:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158694#issuecomment-5845589095",
-      "comment_created_at": "2026-09-26T10:46:30Z",
-      "comment_updated_at": "2026-09-26T10:46:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158694,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T11:00:55.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-line-question-safe-index-20260926",
-        "head_sha": "610284f42233c02c0dbcdce491251a3d098cd346",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158694:5843839045:2026-09-26T10:57:10Z:clawsweeper_needs_human",
       "comment_id": "5843839045",
@@ -32530,6 +32483,39 @@
       "status": "skipped",
       "processed_at": "2026-09-26T17:08:19.381Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:695:5847994765:2026-09-26T17:07:35Z:clawsweeper_needs_human",
+      "comment_id": "5847994765",
+      "comment_version_key": "5847994765:2026-09-26T17:07:35Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/695#issuecomment-5847994765",
+      "comment_created_at": "2026-09-26T16:42:06Z",
+      "comment_updated_at": "2026-09-26T17:07:35Z",
+      "comment_body_sha256": "bc74678b4a29cd72f2bc9fbb278c1efa01e93bba8b06318e6bf7a0487ebc012c",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject a symbolic parent during initial admission (P1)** - If a configured parent becomes a symlink after lookup, registration can exhaust its retries with path-mismatch. This outer catch then recovers the error...; Review finding: [P1] Reject a symbolic parent during initial admission — src/watch-scan.ts:212-214 - [P2] Reject readiness when the Root listing does not complete — src/watch-scan... (sha=c9a161807707d2e81502f3fc1180b625f32a8ccc)",
+      "expected_head_sha": "c9a161807707d2e81502f3fc1180b625f32a8ccc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T17:08:30.064Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/watch-churn-20260926",
+        "head_sha": "c9a161807707d2e81502f3fc1180b625f32a8ccc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
