@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T05:12:13.841Z",
+  "updated_at": "2026-09-26T05:13:00.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158473:5841414454:2026-09-26T00:17:17Z:clawsweeper_auto_repair",
-      "comment_id": "5841414454",
-      "comment_version_key": "5841414454:2026-09-26T00:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158473#issuecomment-5841414454",
-      "comment_created_at": "2026-09-26T00:17:17Z",
-      "comment_updated_at": "2026-09-26T00:17:17Z",
-      "comment_body_sha256": "ebef119411478e72701e6a2252928435d716900f1fff206f3084bc245011d5eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158473,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d908e5ed2bd6045cf82609613d725429c4e51bc8)",
-      "expected_head_sha": "d908e5ed2bd6045cf82609613d725429c4e51bc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T00:18:28.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/deleted-agent-shutdown-cleanup",
-        "head_sha": "d908e5ed2bd6045cf82609613d725429c4e51bc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158469:5841417298:2026-09-26T00:17:38Z:clawsweeper_needs_human",
       "comment_id": "5841417298",
@@ -33351,6 +33318,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158443:5841539757:2026-09-26T05:12:06Z:clawsweeper_needs_human",
+      "comment_id": "5841539757",
+      "comment_version_key": "5841539757:2026-09-26T05:12:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158443#issuecomment-5841539757",
+      "comment_created_at": "2026-09-26T00:31:39Z",
+      "comment_updated_at": "2026-09-26T05:12:06Z",
+      "comment_body_sha256": "c27e44296e598f0466257c34774962c4eba11d4625f3b3149671c493165da48b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve writes when optional receipt planning fails (P1)** - For a small changed file, this new await runs before mkdir and writeFile even when no receipt can be produced. If worker startup or shared admission...; Review finding: [P1] Preserve writes when optional receipt planning fails — src/agents/sessions/tools/write.ts:344-347 - [P2] Complete quota scans after temporary renames — src/ga... (sha=a5bd2fffda54688ae678fc341d4ea9f62c59cc75)",
+      "expected_head_sha": "a5bd2fffda54688ae678fc341d4ea9f62c59cc75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T05:13:00.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/l14-file-tool-compute",
+        "head_sha": "a5bd2fffda54688ae678fc341d4ea9f62c59cc75",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
