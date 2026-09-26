@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:56:55.145Z",
+  "updated_at": "2026-09-26T08:57:06.221Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151091:5842970089:2026-09-26T03:58:32Z:re_review",
-      "comment_id": "5842970089",
-      "comment_version_key": "5842970089:2026-09-26T03:58:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151091#issuecomment-5842970089",
-      "comment_created_at": "2026-09-26T03:58:32Z",
-      "comment_updated_at": "2026-09-26T03:58:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151091,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T03:59:27.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-reject-blank-cwd",
-        "head_sha": "452b2bbc0e309f7e7e431280f0e10ff0b14fc16e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158623:5842972953:2026-09-26T03:59:02Z:clawsweeper_needs_human",
       "comment_id": "5842972953",
@@ -32580,6 +32533,39 @@
         "kind": "pull_request",
         "branch": "codex/team-ingress-prune-worker-20260926",
         "head_sha": "375b539a12663e317c56e3b4334236c33a19c1ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158766:5844780240:2026-09-26T08:56:15Z:clawsweeper_needs_human",
+      "comment_id": "5844780240",
+      "comment_version_key": "5844780240:2026-09-26T08:56:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158766#issuecomment-5844780240",
+      "comment_created_at": "2026-09-26T08:56:15Z",
+      "comment_updated_at": "2026-09-26T08:56:15Z",
+      "comment_body_sha256": "f19bbba289a132460ef2eba12e36ee80c93d325bfc29274caaef75aa8c6b20ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required published-driver × candidate update cell and a subsequent update run by the new updater are not yet recorded; the local materialization measurement does not establish bot... (sha=bdf610e9e6161a16c0dab0e4e49dd7657be6cdaf)",
+      "expected_head_sha": "bdf610e9e6161a16c0dab0e4e49dd7657be6cdaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T08:57:06.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-retention-throughput",
+        "head_sha": "bdf610e9e6161a16c0dab0e4e49dd7657be6cdaf",
         "cluster_id": null,
         "job_path": null
       }
