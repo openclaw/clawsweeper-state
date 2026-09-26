@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T14:09:02.000Z",
+  "updated_at": "2026-09-26T14:09:02.213Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158686:5844340897:2026-09-26T07:42:02Z:re_review",
-      "comment_id": "5844340897",
-      "comment_version_key": "5844340897:2026-09-26T07:42:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158686#issuecomment-5844340897",
-      "comment_created_at": "2026-09-26T07:42:02Z",
-      "comment_updated_at": "2026-09-26T07:42:02Z",
-      "comment_body_sha256": "ba5b7d1b86c014ca2d1e6b0e722c8cb2ecb5c4b61c1c9ed833f5b4fa82f17e85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158686,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T07:59:16.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/plugin-discovery-curation",
-        "head_sha": "7287891478b0e098cbe7cdb5379855e1261ebb04",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152671:5844350193:2026-09-26T07:43:37Z:re_review",
       "comment_id": "5844350193",
@@ -32389,6 +32342,39 @@
         "kind": "pull_request",
         "branch": "fix/media-candidate-failure-logs-158874",
         "head_sha": "d597136672fdf271dda60994dd21f6e97845c134",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158915:5846914488:2026-09-26T14:07:42Z:clawsweeper_auto_repair",
+      "comment_id": "5846914488",
+      "comment_version_key": "5846914488:2026-09-26T14:07:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158915#issuecomment-5846914488",
+      "comment_created_at": "2026-09-26T14:07:42Z",
+      "comment_updated_at": "2026-09-26T14:07:42Z",
+      "comment_body_sha256": "7cff4e70395f5419e0609fe161ad0e6ae54224a9e4793ff4cbf4b18ef751bc0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158915,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1525e76a0da5fae0358f003c02459d84018e1f30)",
+      "expected_head_sha": "1525e76a0da5fae0358f003c02459d84018e1f30",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T14:09:02.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-video-retired-endpoint-158876",
+        "head_sha": "1525e76a0da5fae0358f003c02459d84018e1f30",
         "cluster_id": null,
         "job_path": null
       }
