@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T02:56:37.106Z",
+  "updated_at": "2026-09-26T02:57:24.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158257:5837928325:2026-09-25T21:01:14Z:clawsweeper_needs_human",
-      "comment_id": "5837928325",
-      "comment_version_key": "5837928325:2026-09-25T21:01:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158257#issuecomment-5837928325",
-      "comment_created_at": "2026-09-25T18:55:52Z",
-      "comment_updated_at": "2026-09-25T21:01:14Z",
-      "comment_body_sha256": "9346fbdc17975cc210dc9c2065c0f2c8581103488ad49785fc8589db3786da04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The corrected head has no completed broad native hosted PR result in the captured review state, so Windows stability, the slowest hosted rows, aggregate-gate completion, and the expec... (sha=b08221f8b1677445e4aa2ef75a71a4b525cde55c)",
-      "expected_head_sha": "b08221f8b1677445e4aa2ef75a71a4b525cde55c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T21:02:36.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/gh2-hosted-first",
-        "head_sha": "b08221f8b1677445e4aa2ef75a71a4b525cde55c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157860:5826401030:2026-09-25T21:02:40Z:clawsweeper_needs_human",
       "comment_id": "5826401030",
@@ -33329,6 +33296,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150995:5842563982:2026-09-26T02:56:29Z:re_review",
+      "comment_id": "5842563982",
+      "comment_version_key": "5842563982:2026-09-26T02:56:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150995#issuecomment-5842563982",
+      "comment_created_at": "2026-09-26T02:56:29Z",
+      "comment_updated_at": "2026-09-26T02:56:29Z",
+      "comment_body_sha256": "05e35fef6b786d6f173925db557255b81ca585897c4296573f4781fe5321e4b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150995,
+      "author": "anyech",
+      "author_id": 8743351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T02:57:23.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/native-yield-progress-current",
+        "head_sha": "953ef4ef9b41dfb09906092c59d1a5ab31139fe6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
