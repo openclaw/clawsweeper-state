@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:05:23.447Z",
+  "updated_at": "2026-09-26T08:05:33.975Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158120:5842656423:2026-09-26T03:11:03Z:re_review",
-      "comment_id": "5842656423",
-      "comment_version_key": "5842656423:2026-09-26T03:11:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158120#issuecomment-5842656423",
-      "comment_created_at": "2026-09-26T03:11:03Z",
-      "comment_updated_at": "2026-09-26T03:11:03Z",
-      "comment_body_sha256": "b8c2fb7209e42d3664058a7ce4be63fef450b8e0c92de44171aa0edad0e7abb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158120,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T03:12:02.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/owner-trust-chat",
-        "head_sha": "3a91fa51743e16faca253e5063d5444aba460d42",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158441:5841357041:2026-09-26T03:11:18Z:clawsweeper_auto_repair",
       "comment_id": "5841357041",
@@ -32834,6 +32787,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-async-durable-block-20260926",
         "head_sha": "2d01d29c38c0d62f4e37730e38c8a1f6016c604a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158638:5843136350:2026-09-26T08:02:45Z:clawsweeper_needs_human",
+      "comment_id": "5843136350",
+      "comment_version_key": "5843136350:2026-09-26T08:02:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158638#issuecomment-5843136350",
+      "comment_created_at": "2026-09-26T04:23:58Z",
+      "comment_updated_at": "2026-09-26T08:02:45Z",
+      "comment_body_sha256": "83e2ef884a045519a79cd6904316c4769938f2fd4a9a5e02a78039f7c12dcfbb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158638,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing enabled plugin service could be unavailable after the published updater installs this candidate and the Gateway restarts; the reported checks do not exercise that upgrade... (sha=486bdb6bbcd54d30d7e3292acdf64f18a9ef9e69)",
+      "expected_head_sha": "486bdb6bbcd54d30d7e3292acdf64f18a9ef9e69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T08:05:33.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l67-plugin-runtime-third",
+        "head_sha": "486bdb6bbcd54d30d7e3292acdf64f18a9ef9e69",
         "cluster_id": null,
         "job_path": null
       }
