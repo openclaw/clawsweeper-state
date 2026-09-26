@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T10:59:09.250Z",
+  "updated_at": "2026-09-26T11:00:40.998Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158612:5842948220:2026-09-26T05:11:02Z:clawsweeper_needs_human",
-      "comment_id": "5842948220",
-      "comment_version_key": "5842948220:2026-09-26T05:11:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158612#issuecomment-5842948220",
-      "comment_created_at": "2026-09-26T03:55:13Z",
-      "comment_updated_at": "2026-09-26T05:11:02Z",
-      "comment_body_sha256": "5b681cfb8092ac719ebbc61ecd15ed4ca3bf5d1a85ab3dc4f7149fbd6a6fb70f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158612,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported Telegram Test Server runs show replacement-bot delivery and same-bot recovery, and the ne...; Review finding: [P1] Fence purge to the current Telegram account task — extensions/telegram/src/monitor.ts:168 - [medium] Stale account task retains purge authority — extensions/t... (sha=f5a1a70d30581c236dae9d2ed500ce9b26953a59)",
-      "expected_head_sha": "f5a1a70d30581c236dae9d2ed500ce9b26953a59",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T05:13:59.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-identity-ingress-158507",
-        "head_sha": "f5a1a70d30581c236dae9d2ed500ce9b26953a59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158586:5843055106:2026-09-26T05:10:37Z:clawsweeper_needs_human",
       "comment_id": "5843055106",
@@ -32449,6 +32416,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158465:5841383738:2026-09-26T10:59:18Z:clawsweeper_needs_human",
+      "comment_id": "5841383738",
+      "comment_version_key": "5841383738:2026-09-26T10:59:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158465#issuecomment-5841383738",
+      "comment_created_at": "2026-09-26T00:13:27Z",
+      "comment_updated_at": "2026-09-26T10:59:18Z",
+      "comment_body_sha256": "2ab2e974faaad9ccc55955032ecab0476561f6cd7635ec88a0389149c978ff5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Representative concurrent completed-turn throughput and tail latency remain unmeasured. The matched patch burst takes about 2.7 times as long after offloading, so its effect on chat c... (sha=bac48de617131c7c6d7957454627b3c07bfed32b)",
+      "expected_head_sha": "bac48de617131c7c6d7957454627b3c07bfed32b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T11:00:40.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/l16-session-patch-worker-20260925",
+        "head_sha": "bac48de617131c7c6d7957454627b3c07bfed32b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
