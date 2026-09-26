@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T01:30:09.324Z",
+  "updated_at": "2026-09-26T01:31:09.659Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154390:5755302974:2026-09-25T19:05:04Z:clawsweeper_needs_human",
-      "comment_id": "5755302974",
-      "comment_version_key": "5755302974:2026-09-25T19:05:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154390#issuecomment-5755302974",
-      "comment_created_at": "2026-09-21T04:15:41Z",
-      "comment_updated_at": "2026-09-25T19:05:04Z",
-      "comment_body_sha256": "ae34de5ffc138ff3dfc4bc952cca675f804e612cbf5149d57baf7ba8faeec007",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154390,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Accept or isolate same-account credential custody** - The node service retains provider keys while coding tools can run under its OS account. The guide correctly says workspace grants a...; Review finding: [medium] Accept or isolate same-account credential custody — docs/gateway/cloud-workers/native-inference.md:19 (sha=fcfb5384bcaab1c0c51d09c07cdc5e5e74f321f9)",
-      "expected_head_sha": "fcfb5384bcaab1c0c51d09c07cdc5e5e74f321f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T19:06:11.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/builtin-runtime-harness-server",
-        "head_sha": "fcfb5384bcaab1c0c51d09c07cdc5e5e74f321f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-09-25T18:59:22Z:clawsweeper_auto_repair",
       "comment_id": "5365198371",
@@ -33537,6 +33504,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158387:5841968864:2026-09-26T01:30:07Z:re_review",
+      "comment_id": "5841968864",
+      "comment_version_key": "5841968864:2026-09-26T01:30:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158387#issuecomment-5841968864",
+      "comment_created_at": "2026-09-26T01:30:07Z",
+      "comment_updated_at": "2026-09-26T01:30:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158387,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T01:31:08.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-openclaw-outbound-target-collision",
+        "head_sha": "31eac7b383724d4e1f480f268e936e4a6b4b9a4a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
