@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158876",
+  "mode": "autonomous",
+  "run_id": "36241908753",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36241908753",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158876.md",
+  "published_at": "2026-09-26T13:07:24.216Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158876",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158876",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the registered OpenAI video provider still advertises sora-2 to API-key users and submits to the public /videos endpoint. The defect is source-supported, but this read-only checkout has no installed dependencies, so I could not add and run the required failing regression, implement the fix, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#158874",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Separate logging defect; leave open."
+    },
+    {
+      "target": "#158875",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Separate task-attribution defect; leave open."
+    },
+    {
+      "target": "#158876",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Narrow existing-behavior repair is warranted; implementation requires a writable host with dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158876",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "A writable implementation host must first establish a failing registered-plugin regression, then implement and validate the narrow fix."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
