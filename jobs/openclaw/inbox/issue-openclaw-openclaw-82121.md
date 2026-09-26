@@ -67,12 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing-behavior bug where isolated automation can deliver a display-truncated chat.history preview as a complete assistant reply. First establish a failing regression through the latest-reply reader and its delivery caller. In src/agents/run-wait.ts, use producer-owned truncation metadata and message identity to retrieve the full assistant message through the existing chat.message.get contract before returning delivery text; handle unavailable full content without presenting the preview as complete. Preserve literal truncation-marker text in genuine assistant content. Keep the change focused, add meaningful regression coverage, and stop if repair requires a new feature, config option, or product-policy choice. Validate with node scripts/run-vitest.mjs src/agents/run-wait.test.ts src/cron/isolated-agent/subagent-followup.test.ts and git diff --check. Do not edit release-owned CHANGELOG.md.
+Fix the existing-behavior bug in which isolated automation follow-up may deliver a capped chat.history assistant preview as a complete reply. First establish a failing regression through the history-reader and automation-delivery boundary using a long assistant row. Use the Gateway's structured truncation metadata and existing chat.message.get contract to recover full text when message identity is available; preserve literal marker text and established no-final-reply behavior. Cover unavailable recovery and the relevant fallback caller without adding a global marker-stripping policy, new feature, or config option. Review related https://github.com/openclaw/openclaw/pull/93694 for useful unmerged context and credit. Likely files: src/agents/run-wait.ts, src/agents/run-wait.test.ts, src/cron/isolated-agent/subagent-followup.ts, and focused delivery tests. Run the focused Vitest files and git diff --check; record real boundary proof in the PR. Put release-note context in the PR body; do not edit CHANGELOG.md. Stop and return to triage if repair requires a product-policy change.
 
 Likely files:
 
 - src/agents/run-wait.ts
 - src/agents/run-wait.test.ts
+- src/cron/isolated-agent/subagent-followup.ts
 - src/cron/isolated-agent/subagent-followup.test.ts
 
 Validation:
