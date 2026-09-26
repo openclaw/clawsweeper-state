@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:23:41.250Z",
+  "updated_at": "2026-09-26T08:23:45.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:62063:4332884335:2026-09-26T03:17:01Z:clawsweeper_needs_human",
-      "comment_id": "4332884335",
-      "comment_version_key": "4332884335:2026-09-26T03:17:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/62063#issuecomment-4332884335",
-      "comment_created_at": "2026-04-28T06:27:55Z",
-      "comment_updated_at": "2026-09-26T03:17:01Z",
-      "comment_body_sha256": "067198e995f618d41e174729cfe0fac27fd04818e6203db93356d3563978fcb2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 62063,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Adding Swedish creates a full-catalog provider job with 5874 pending fallback keys in the captured dry run; failure of that job would block aggregate locale-refresh publication, and n... (sha=cdcb8aa882b8a62951173e029d4e16fc115f2cc7)",
-      "expected_head_sha": "cdcb8aa882b8a62951173e029d4e16fc115f2cc7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T03:56:23.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-swedish-locale",
-        "head_sha": "cdcb8aa882b8a62951173e029d4e16fc115f2cc7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:50530:4341187119:2026-09-26T03:12:22Z:autoclose",
       "comment_id": "4341187119",
@@ -32504,6 +32471,53 @@
         "kind": "pull_request",
         "branch": "fix/agents-reject-blank-cwd",
         "head_sha": "73867f13f5cefad129573a295cee8289adb15e12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151013:5844575725:2026-09-26T08:22:50Z:re_review",
+      "comment_id": "5844575725",
+      "comment_version_key": "5844575725:2026-09-26T08:22:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151013#issuecomment-5844575725",
+      "comment_created_at": "2026-09-26T08:22:50Z",
+      "comment_updated_at": "2026-09-26T08:22:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151013,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T08:23:43.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-agentdir",
+        "head_sha": "7ca1776256e153d63e18233ce67e11b1ac0af6a3",
         "cluster_id": null,
         "job_path": null
       },
