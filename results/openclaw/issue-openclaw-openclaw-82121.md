@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
 mode: "autonomous"
-run_id: "36268047698"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36268047698"
+run_id: "36270528292"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36270528292"
 head_sha: "5f73370171673b318108ffb1a5d59761c9624846"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T20:38:11.538Z"
+published_at: "2026-09-26T21:19:42.054Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36268047698](https://github.com/openclaw/clawsweeper/actions/runs/36268047698)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36270528292](https://github.com/openclaw/clawsweeper/actions/runs/36270528292)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-Source inspection at the provided main SHA confirms that a display-truncated history preview can reach the isolated cron reply reader. The read-only checkout prevented a failing regression, code changes, and validation. No PR is ready.
+At main b2265de26980f16451d847d3442d552f10244e85, the latest-reply reader still returns display-capped chat.history text as delivery text. A narrow fix is warranted, but this read-only checkout has no node_modules, so I could not add the required failing regression, implement the fix, or validate a PR branch. No GitHub mutation was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Source inspection at the provided main SHA confirms that a display-truncated his
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | The canonical issue remains open and the three hydrated related PRs are closed without merging. |
-| #82128 | keep_closed | skipped | related | Historical context only. |
-| #93694 | keep_closed | skipped | related | Historical source work; preserve @markoub's credit. |
-| #94094 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation needs a writable checkout and a pre-fix failing regression before the executor can prepare a PR. |
+| #82121 | fix_needed | planned | canonical | The existing delivery path can present a preview as a complete reply. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | planned |  | Narrow implementation plan for the canonical issue. |
+| cluster:issue-openclaw-openclaw-82121 | open_fix_pr | blocked |  | The implementation and required validation need a writable checkout with dependencies. |
 
 ## Needs Human
 
