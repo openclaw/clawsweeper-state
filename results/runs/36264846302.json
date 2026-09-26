@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159080",
+  "mode": "autonomous",
+  "run_id": "36264846302",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36264846302",
+  "head_sha": "5f73370171673b318108ffb1a5d59761c9624846",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159080.md",
+  "published_at": "2026-09-26T19:40:01.748Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159080",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159080",
+  "canonical_pr": null,
+  "summary": "The LINE routing bug remains in the preflight main SHA. A narrow LINE fix is identified, but the read-only checkout has no dependencies, so the required failing regression and local validation could not run.",
+  "actions": [
+    {
+      "target": "#123159",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this ref through central OpenClaw security handling."
+    },
+    {
+      "target": "#159080",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159080",
+      "candidate_fix": null,
+      "reason": "The issue has a focused LINE-owned repair path and no viable LINE PR in the hydrated items."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159080",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159080",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable independent checkout with dependencies installed. First prove the two-agent regression fails on this main SHA; stop if it does not."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
