@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T04:16:39.103Z",
+  "updated_at": "2026-09-26T04:17:09.024Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157885:5826568286:2026-09-25T22:56:52Z:clawsweeper_needs_human",
-      "comment_id": "5826568286",
-      "comment_version_key": "5826568286:2026-09-25T22:56:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157885#issuecomment-5826568286",
-      "comment_created_at": "2026-09-25T04:12:32Z",
-      "comment_updated_at": "2026-09-25T22:56:52Z",
-      "comment_body_sha256": "4eebf336a3f828cae0fbb565994156e0b7fbe3e0e6f5db51cb700dc77304e114",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157885,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: An earlier-head native Windows process case supports special-character discovery, but the pinned head...; Review finding: [P1] Revalidate ownerless process identity before taskkill — src/daemon/schtasks-process.ts:91-93 - [high] Reassigned PID can reach Windows taskkill — src/daemon/s... (sha=0295e0e0586dc7458c0a621d7ae8b5513e8c3c90)",
-      "expected_head_sha": "0295e0e0586dc7458c0a621d7ae8b5513e8c3c90",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T23:11:44.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-process-text-47a84c",
-        "head_sha": "0295e0e0586dc7458c0a621d7ae8b5513e8c3c90",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158423:5840888975:2026-09-25T23:10:00Z:clawsweeper_needs_human",
       "comment_id": "5840888975",
@@ -33117,6 +33084,53 @@
       "status": "skipped",
       "processed_at": "2026-09-26T04:16:39.103Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158612:5843086456:2026-09-26T04:16:09Z:re_review",
+      "comment_id": "5843086456",
+      "comment_version_key": "5843086456:2026-09-26T04:16:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158612#issuecomment-5843086456",
+      "comment_created_at": "2026-09-26T04:16:09Z",
+      "comment_updated_at": "2026-09-26T04:16:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158612,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T04:17:07.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-identity-ingress-158507",
+        "head_sha": "564f38b3c93834315f142dcfe82fedb6389c4330",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
