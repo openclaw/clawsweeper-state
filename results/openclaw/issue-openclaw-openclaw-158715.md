@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158715"
 mode: "autonomous"
-run_id: "36225559812"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36225559812"
+run_id: "36227089992"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36227089992"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T07:28:17.216Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T07:35:30.184Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158715"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158715"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36225559812](https://github.com/openclaw/clawsweeper/actions/runs/36225559812)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36227089992](https://github.com/openclaw/clawsweeper/actions/runs/36227089992)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158715
 
 ## Summary
 
-The reported failure path is present at preflight main be531ed2427bdda8e26c6759ebbcea9fb33275ad. The read-only checkout and unavailable dependencies prevented a failing regression, code changes, validation, and PR creation.
+Plan only. The hydrated issue is open and describes a plausible Control UI connection lifecycle bug. Implementation is gated on reproducing it against the preflight main SHA: the local checkout is at baa7a64c, while the preflight records f63fea56. No test or code change was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The reported failure path is present at preflight main be531ed2427bdda8e26c6759e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158715 | fix_needed | planned | canonical | The existing Advanced form can remain unavailable after the Gateway connects. |
-| cluster:issue-openclaw-openclaw-158715 | build_fix_artifact | blocked |  | Implementation and the required pre-fix reproduction need a writable checkout with installed dependencies. |
+| https://github.com/openclaw/openclaw/issues/158715 | fix_needed | planned | canonical | Reproduce the connection transition on current main, then repair the route through the shared runtime-config capability. Do not close the issue. |
 
 ## Needs Human
 
