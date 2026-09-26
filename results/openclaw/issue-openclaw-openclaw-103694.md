@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "36275522266"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36275522266"
+run_id: "36277631776"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36277631776"
 head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T22:48:52.373Z"
+published_at: "2026-09-26T23:34:03.328Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36275522266](https://github.com/openclaw/clawsweeper/actions/runs/36275522266)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36277631776](https://github.com/openclaw/clawsweeper/actions/runs/36277631776)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-At preflight main d9fc2556, non-draft MCP schemas still reach the SDK Ajv validator through the catalog path. The checkout has no installed dependencies and this worker has read-only filesystem access, so it could not run the required failing regression, edit code, or validate a PR branch. The narrow fix path is recorded below for execution in a writable checkout.
+Current main retains the reported non-draft MCP validator path. The checkout is read-only and has no installed dependencies, so I could not establish the required failing regression, implement the fix, or validate a PR branch.
 
 ## Impact
 
@@ -66,9 +66,9 @@ At preflight main d9fc2556, non-draft MCP schemas still reach the SDK Ajv valida
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | The reported defect has a current source path and two hydrated user reproductions; implementation requires a writable checkout with dependencies and a failing regression first. |
-| #103699 | keep_closed | skipped | superseded | Closed historical context; no closure or branch mutation is proposed. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Run the failing production catalog regression on current main in a writable checkout before implementing; then validate the branch. |
+| #103694 | fix_needed | planned | canonical | The source path remains, but a current-main runtime reproduction and failing regression are still required before implementation. |
+| #103699 | keep_closed | skipped | superseded | Historical source and contributor-credit context only. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout after demonstrating the original warning through the production catalog and validator boundary. |
 
 ## Needs Human
 
