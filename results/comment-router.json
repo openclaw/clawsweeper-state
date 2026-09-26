@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T07:49:29.456Z",
+  "updated_at": "2026-09-26T07:51:54.459Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158533:5842008294:2026-09-26T02:11:09Z:clawsweeper_needs_human",
-      "comment_id": "5842008294",
-      "comment_version_key": "5842008294:2026-09-26T02:11:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158533#issuecomment-5842008294",
-      "comment_created_at": "2026-09-26T01:35:32Z",
-      "comment_updated_at": "2026-09-26T02:11:09Z",
-      "comment_body_sha256": "a84199999778d886094cc45acfdd10ab6c4ea5a90eccde26215ffc9ff6df8d6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an upgrade, opening Debug following an incident will no longer show the preceding raw Gateway events. The existing 250-event lookback is replaced by a fresh window, and the supp... (sha=440103f8c018d0c56b8d5686429fafe79f0779b5)",
-      "expected_head_sha": "440103f8c018d0c56b8d5686429fafe79f0779b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T02:56:37.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/l30-ui-event-ingest",
-        "head_sha": "440103f8c018d0c56b8d5686429fafe79f0779b5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158536:5842022515:2026-09-26T01:57:24Z:clawsweeper_needs_human",
       "comment_id": "5842022515",
@@ -32735,6 +32702,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:824:5844392096:2026-09-26T07:50:54Z:re_review",
+      "comment_id": "5844392096",
+      "comment_version_key": "5844392096:2026-09-26T07:50:54Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/824#issuecomment-5844392096",
+      "comment_created_at": "2026-09-26T07:50:54Z",
+      "comment_updated_at": "2026-09-26T07:50:54Z",
+      "comment_body_sha256": "12c6c77ce6ebd650fb0adc4a5d48f985086b2946cd7f461068bdd6609f2d4b65",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 824,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T07:51:53.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/inline-observation-capture",
+        "head_sha": "62684b925441af20511583854b6df740282aaf27",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
