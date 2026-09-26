@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T18:11:47.192Z",
+  "updated_at": "2026-09-26T18:12:11.732Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156907:5805839710:2026-09-26T12:15:51Z:clawsweeper_needs_human",
-      "comment_id": "5805839710",
-      "comment_version_key": "5805839710:2026-09-26T12:15:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156907#issuecomment-5805839710",
-      "comment_created_at": "2026-09-24T01:31:01Z",
-      "comment_updated_at": "2026-09-26T12:15:51Z",
-      "comment_body_sha256": "ba6567550fd5166a370990197031dc738920d18c027cb1c5f8419e9dd1b456ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156907,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required published-driver × current-candidate Doctor upgrade scenario has not exercised existing operator state; the recorded attempt stopped before that scenario ran. (sha=6daa40edfbd49519d8e5f78f42e30f2442826eb3)",
-      "expected_head_sha": "6daa40edfbd49519d8e5f78f42e30f2442826eb3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T12:21:03.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-doctor-explicit-agent-20260924",
-        "head_sha": "6daa40edfbd49519d8e5f78f42e30f2442826eb3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156907:5815362948:2026-09-24T13:48:05Z:re_review",
       "comment_id": "5815362948",
@@ -32080,6 +32047,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159048:5848623902:2026-09-26T18:11:10Z:re_review",
+      "comment_id": "5848623902",
+      "comment_version_key": "5848623902:2026-09-26T18:11:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/159048#issuecomment-5848623902",
+      "comment_created_at": "2026-09-26T18:11:10Z",
+      "comment_updated_at": "2026-09-26T18:11:10Z",
+      "comment_body_sha256": "7ece58a9a4d918c2e48961802ce13aaa1d6643c098cbb8c862132c20764965e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159048,
+      "author": "repla73",
+      "author_id": 3002130,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T18:12:10.356Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
