@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Codex requester-scoped MCP catalog bug: with two per-requester OAuth servers and only one authenticated, the turn must advertise the authenticated server’s tools and the other server’s OAuth connect tool. Repair catalog selection in src/agents/agent-bundle-mcp-harness.ts through the existing merge helper, without adding configuration or changing requester identity, authorization, or tool policy. First establish a failing mixed-authentication regression at the owning harness boundary; cover both authentication directions and preserve executable/advertised alignment and requester isolation. Validate the Codex consumer path as needed. Put user-visible release-note context and measured test cost in the PR body; do not edit CHANGELOG.md. Stop if a new feature, configuration option, or product-policy change becomes necessary.
+Fix the existing Codex requester-scoped MCP catalog bug: with one per-requester OAuth server authenticated and contributing tools, an unauthenticated second server must still advertise its connect tool. First establish a failing mixed-authentication regression at the production harness materializer. Repair catalog selection in src/agents/agent-bundle-mcp-harness.ts using the existing requester-connect merge owner; preserve session-stable advertised specs, requester isolation, approval behavior, and final tool policy. Cover neither/A-only/B-only/both authentication states and the Codex consumer boundary where practical. Run the focused harness tests and relevant Codex tool-setup checks on an authorized host, recording actual results and test cost. Do not add configuration or a new tool surface, and do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/agent-bundle-mcp-harness.ts
 - src/agents/agent-bundle-mcp-harness.test.ts
-- extensions/codex/src/app-server/run-attempt.test.ts
+- extensions/codex/src/app-server/run-attempt.configured-mcp-authority.test.ts
 
 Validation:
 
 - pnpm test src/agents/agent-bundle-mcp-harness.test.ts --maxWorkers=1
-- pnpm test extensions/codex/src/app-server/run-attempt.test.ts --maxWorkers=1
+- pnpm test extensions/codex/src/app-server/run-attempt.configured-mcp-authority.test.ts --maxWorkers=1
 - node scripts/check-changed.mjs
 
 ## Operator Prompt
