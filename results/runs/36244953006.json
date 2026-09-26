@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82121",
+  "mode": "autonomous",
+  "run_id": "36244953006",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36244953006",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82121.md",
+  "published_at": "2026-09-26T13:51:47.587Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_pr": null,
+  "summary": "Current main still has a source-proven path that can deliver a capped chat.history preview as a reply. The checkout is read-only and has no installed dependencies, so I could not add the required failing regression, implement the fix, or validate a PR branch. No GitHub or repository changes were made.",
+  "actions": [
+    {
+      "target": "#82121",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "The reported delivery path remains present; runtime reproduction was blocked by the read-only checkout and missing dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "Recover a proven capped assistant row through chat.message.get while preserving literal marker text and existing no-final-reply behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies is required to reproduce the failure, implement the patch, and validate the branch before opening a PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
