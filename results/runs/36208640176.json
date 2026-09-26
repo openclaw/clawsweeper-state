@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158527",
+  "mode": "autonomous",
+  "run_id": "36208640176",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36208640176",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158527.md",
+  "published_at": "2026-09-26T02:10:55.672Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158527",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158527",
+  "canonical_pr": null,
+  "summary": "Current main still contains the reported destructive Doctor migration. Source inspection confirms the deletion path, but the read-only checkout prevented adding the required failing regression, changing code, or validating a fix. No GitHub action was taken.",
+  "actions": [
+    {
+      "target": "#158527",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158527",
+      "candidate_fix": null,
+      "reason": "The issue has a source-proven data-loss path and no hydrated open implementation PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158527",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158527",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and the required pre-fix failing regression before a PR can be prepared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
