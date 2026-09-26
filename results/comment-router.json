@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T04:07:44.622Z",
+  "updated_at": "2026-09-26T04:07:57.175Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156573:5840746199:2026-09-25T22:52:32Z:re_review",
-      "comment_id": "5840746199",
-      "comment_version_key": "5840746199:2026-09-25T22:52:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156573#issuecomment-5840746199",
-      "comment_created_at": "2026-09-25T22:52:32Z",
-      "comment_updated_at": "2026-09-25T22:52:32Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156573,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T22:53:26.582Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/twitch-suite-cleanup-20260923",
-        "head_sha": "57d1b3dbb8da9909091b609bc180d5eee778ae28",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158217:5840764156:2026-09-25T22:54:39Z:re_review",
       "comment_id": "5840764156",
@@ -33236,6 +33189,39 @@
         "kind": "pull_request",
         "branch": "feat/ssh-codex-summary-window",
         "head_sha": "fba1e11d9463cb4671991dd6fe6bfdad2f4f2d72",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158378:5840353285:2026-09-26T04:06:45Z:clawsweeper_needs_human",
+      "comment_id": "5840353285",
+      "comment_version_key": "5840353285:2026-09-26T04:06:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158378#issuecomment-5840353285",
+      "comment_created_at": "2026-09-25T22:10:18Z",
+      "comment_updated_at": "2026-09-26T04:06:45Z",
+      "comment_body_sha256": "4c2d64e9dff3a9ff3cf9d394bc7610840a75a00a4f11819a1e298fe6fad6f7c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158378,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is draft and GitHub reports a merge conflict after its base changed; the eventual combined tree has no reviewed test merge, so behavior after conflict resolution remains un... (sha=3ec6c71d77f9b410612f7b260b8379041fbfe5cf)",
+      "expected_head_sha": "3ec6c71d77f9b410612f7b260b8379041fbfe5cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T04:07:57.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l55-agents-root-second-pass",
+        "head_sha": "3ec6c71d77f9b410612f7b260b8379041fbfe5cf",
         "cluster_id": null,
         "job_path": null
       }
