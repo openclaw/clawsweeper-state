@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T11:57:02.963Z",
+  "updated_at": "2026-09-26T11:57:08.590Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120232:5843581803:2026-09-26T05:37:40Z:re_review",
-      "comment_id": "5843581803",
-      "comment_version_key": "5843581803:2026-09-26T05:37:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120232#issuecomment-5843581803",
-      "comment_created_at": "2026-09-26T05:37:40Z",
-      "comment_updated_at": "2026-09-26T05:37:40Z",
-      "comment_body_sha256": "0c7650c505a903b7bc669174fc213c5a11786523b9c04ec2399c66b955cbdae1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120232,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T05:59:31.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-deadcode-ci-owner-chain-01cc-20260807",
-        "head_sha": "59a1debd9b6c37cb7a84971f8bc92edd084549ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157498:5843697793:2026-09-26T05:57:39Z:re_review",
       "comment_id": "5843697793",
@@ -32402,6 +32355,39 @@
         "kind": "pull_request",
         "branch": "codex/subagent-registration-worker-20260925",
         "head_sha": "34f4356373c3f1f755ea64ccb0a3d7bc62b9903e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158860:5846059836:2026-09-26T11:56:08Z:clawsweeper_needs_human",
+      "comment_id": "5846059836",
+      "comment_version_key": "5846059836:2026-09-26T11:56:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158860#issuecomment-5846059836",
+      "comment_created_at": "2026-09-26T11:56:08Z",
+      "comment_updated_at": "2026-09-26T11:56:08Z",
+      "comment_body_sha256": "373c2911abb6deaa1a7b6db8fe9d45210e5cf4ceb48116019ba9da5564ce7465",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=93c12eb2ed21942856c01c7d320101d71c47bc0f)",
+      "expected_head_sha": "93c12eb2ed21942856c01c7d320101d71c47bc0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T11:57:08.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/ingress-slice09-telegram-0925",
+        "head_sha": "93c12eb2ed21942856c01c7d320101d71c47bc0f",
         "cluster_id": null,
         "job_path": null
       }
