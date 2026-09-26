@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:59:48.296Z",
+  "updated_at": "2026-09-26T09:00:11.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158617:5842941357:2026-09-26T04:01:24Z:clawsweeper_auto_repair",
-      "comment_id": "5842941357",
-      "comment_version_key": "5842941357:2026-09-26T04:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158617#issuecomment-5842941357",
-      "comment_created_at": "2026-09-26T03:54:01Z",
-      "comment_updated_at": "2026-09-26T04:01:24Z",
-      "comment_body_sha256": "8d7eef00aa6ab6154c943b304a6cd3dd1acbd270e0a633cf895520e61de92bd0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158617,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b7a13d74506c1181557eca2a8b0f37964b0c8dc2)",
-      "expected_head_sha": "b7a13d74506c1181557eca2a8b0f37964b0c8dc2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T04:03:00.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hostneutral/scheduler-upstream-monitor-0925",
-        "head_sha": "b7a13d74506c1181557eca2a8b0f37964b0c8dc2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158235:5837036163:2026-09-26T04:01:26Z:clawsweeper_auto_repair",
       "comment_id": "5837036163",
@@ -32569,6 +32536,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158754:5844797087:2026-09-26T08:59:02Z:clawsweeper_needs_human",
+      "comment_id": "5844797087",
+      "comment_version_key": "5844797087:2026-09-26T08:59:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158754#issuecomment-5844797087",
+      "comment_created_at": "2026-09-26T08:59:02Z",
+      "comment_updated_at": "2026-09-26T08:59:02Z",
+      "comment_body_sha256": "eb9c4128bc43ab83bb35ef1f343f8ff9f29419fd0c9d2666f25816d1bdcfb5ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158754,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Validate the tooling root before loading its packages (P2)** - A directory containing node_modules passes this check even if it is an unrelated checkout or contains a different zod version. The child then loads...; Review finding: [P2] Validate the tooling root before loading its packages — scripts/lib/watch-pr-ci-dependencies.mjs:39-40 - [medium] Unvalidated dependency source — scripts/lib/... (sha=a7a9bac543b6a5ee33ea81044704c6ff9511db65)",
+      "expected_head_sha": "a7a9bac543b6a5ee33ea81044704c6ff9511db65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T09:00:11.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/watch-pr-ci-tooling-deps",
+        "head_sha": "a7a9bac543b6a5ee33ea81044704c6ff9511db65",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
