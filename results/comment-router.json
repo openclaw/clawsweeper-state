@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T11:20:34.292Z",
+  "updated_at": "2026-09-26T11:20:35.913Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158641:5843163755:2026-09-26T05:20:44Z:clawsweeper_needs_human",
-      "comment_id": "5843163755",
-      "comment_version_key": "5843163755:2026-09-26T05:20:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158641#issuecomment-5843163755",
-      "comment_created_at": "2026-09-26T04:28:35Z",
-      "comment_updated_at": "2026-09-26T05:20:44Z",
-      "comment_body_sha256": "a0ebd4f328dc99764487034a85de38a4a7ad757b0cd79358041bd0746e6ad95f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Repair main's lint suppression inventory mismatch and obtain a passing required gate on this PR's merge ref. (sha=1211615329dfa69d9c900621342c2193a9ce85b4)",
-      "expected_head_sha": "1211615329dfa69d9c900621342c2193a9ce85b4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T05:29:14.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-nested-receipts",
-        "head_sha": "1211615329dfa69d9c900621342c2193a9ce85b4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158643:5843168959:2026-09-26T05:21:45Z:clawsweeper_needs_human",
       "comment_id": "5843168959",
@@ -32433,6 +32400,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158696:5843840180:2026-09-26T11:19:40Z:clawsweeper_needs_human",
+      "comment_id": "5843840180",
+      "comment_version_key": "5843840180:2026-09-26T11:19:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158696#issuecomment-5843840180",
+      "comment_created_at": "2026-09-26T06:18:23Z",
+      "comment_updated_at": "2026-09-26T11:19:40Z",
+      "comment_body_sha256": "2f8b195364ba290287d418e69e832b439b628efa3c32f7aa6476031f635bd036",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158696,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Clients that previously sent blank or non-string agent IDs, or unsupported agent scopes, could receive totals before this change and will instead receive INVALID_REQUEST. Maintainers... (sha=a43d03be3cafefcadabd5ce413be1c53f68a8919)",
+      "expected_head_sha": "a43d03be3cafefcadabd5ce413be1c53f68a8919",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T11:20:35.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-usage-cost-scope-20260926",
+        "head_sha": "a43d03be3cafefcadabd5ce413be1c53f68a8919",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
