@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T01:38:43.235Z",
+  "updated_at": "2026-09-26T01:38:43.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157679:5838277422:2026-09-25T19:23:37Z:re_review",
-      "comment_id": "5838277422",
-      "comment_version_key": "5838277422:2026-09-25T19:23:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157679#issuecomment-5838277422",
-      "comment_created_at": "2026-09-25T19:23:37Z",
-      "comment_updated_at": "2026-09-25T19:23:37Z",
-      "comment_body_sha256": "aff989be43988e274aadcc7a923c874ea78361231cdf764ba7497e92421b5de7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157679,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T19:24:34.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-supervisor-guidance",
-        "head_sha": "713b8f9376ef7450c797e09dd491f84ca29de5d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158263:5838016028:2026-09-25T19:02:48Z:clawsweeper_needs_human",
       "comment_id": "5838016028",
@@ -33486,6 +33439,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-openclaw-outbound-target-collision",
         "head_sha": "31eac7b383724d4e1f480f268e936e4a6b4b9a4a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158369:5840234472:2026-09-26T01:37:50Z:clawsweeper_needs_human",
+      "comment_id": "5840234472",
+      "comment_version_key": "5840234472:2026-09-26T01:37:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158369#issuecomment-5840234472",
+      "comment_created_at": "2026-09-25T21:58:12Z",
+      "comment_updated_at": "2026-09-26T01:37:50Z",
+      "comment_body_sha256": "a6c667239cef1095dfe4e6890af3d10beb5c7283993fd7a31c8ec70fa861b617",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has no installed 2-GiB startup and settled post-ready result. Earlier patched heads still exhausted capture space during ACPX setup, so the motivating availability f... (sha=259d094cf0715f1f186491dd2250d53b6d359e87)",
+      "expected_head_sha": "259d094cf0715f1f186491dd2250d53b6d359e87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T01:38:43.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-capture-startup-157568",
+        "head_sha": "259d094cf0715f1f186491dd2250d53b6d359e87",
         "cluster_id": null,
         "job_path": null
       }
