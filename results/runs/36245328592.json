@@ -1,0 +1,61 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158876",
+  "mode": "plan",
+  "run_id": "36245328592",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36245328592",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158876.md",
+  "published_at": "2026-09-26T13:32:41.478Z",
+  "canonical": "#158876",
+  "canonical_issue": "#158876",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for #158876. The job and hydrated issue report the retired public OpenAI Videos API still appears as an available video candidate. First reproduce that behavior through the registered plugin and video_generate path on the supplied main SHA. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#158874",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Failure diagnostics remain relevant regardless of OpenAI video availability."
+    },
+    {
+      "target": "#158875",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Task attribution can fail with providers other than OpenAI."
+    },
+    {
+      "target": "#158876",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158876",
+      "candidate_fix": null,
+      "reason": "Repair public-endpoint availability while preserving existing custom base-URL behavior."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 2,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
