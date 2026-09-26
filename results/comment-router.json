@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T00:13:04.036Z",
+  "updated_at": "2026-09-26T00:13:28.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158120:5836178335:2026-09-25T16:55:18Z:re_review",
-      "comment_id": "5836178335",
-      "comment_version_key": "5836178335:2026-09-25T16:55:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158120#issuecomment-5836178335",
-      "comment_created_at": "2026-09-25T16:55:18Z",
-      "comment_updated_at": "2026-09-25T16:55:18Z",
-      "comment_body_sha256": "765286e1d9ab6403ade1c42f82ad43e54557efd3c1f11a77a3d29c221c32701e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158120,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T17:13:36.965Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/owner-trust-chat",
-        "head_sha": "74c0d256a789cda62b7c895cc3ce2388e167c01f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148399:5836384541:2026-09-25T17:09:53Z:re_review",
       "comment_id": "5836384541",
@@ -33456,6 +33409,39 @@
         "kind": "pull_request",
         "branch": "fix-resource-workload-failure-diagnostics-20260926",
         "head_sha": "3eec9900e4c77dd46842a881ef10b77085429c1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158369:5840234472:2026-09-26T00:11:35Z:clawsweeper_needs_human",
+      "comment_id": "5840234472",
+      "comment_version_key": "5840234472:2026-09-26T00:11:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158369#issuecomment-5840234472",
+      "comment_created_at": "2026-09-25T21:58:12Z",
+      "comment_updated_at": "2026-09-26T00:11:35Z",
+      "comment_body_sha256": "67babee63916ceae1ad8429965695903228be3fc4535b8db910fd350316a39c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head has no matched installed Gateway result. The previous candidate still exhausted the capture mount and failed plugin loading, so the reported availability problem rem... (sha=10691596558acd568940860582e4708f82bb1541)",
+      "expected_head_sha": "10691596558acd568940860582e4708f82bb1541",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T00:13:28.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-capture-startup-157568",
+        "head_sha": "10691596558acd568940860582e4708f82bb1541",
         "cluster_id": null,
         "job_path": null
       }
