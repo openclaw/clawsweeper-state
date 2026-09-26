@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T19:03:59.943Z",
+  "updated_at": "2026-09-26T19:04:04.335Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158895:5846575226:2026-09-26T13:16:17Z:re_review",
-      "comment_id": "5846575226",
-      "comment_version_key": "5846575226:2026-09-26T13:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158895#issuecomment-5846575226",
-      "comment_created_at": "2026-09-26T13:16:17Z",
-      "comment_updated_at": "2026-09-26T13:16:17Z",
-      "comment_body_sha256": "81645393d188eac27c829f08aada3e37e03ae68741b068fd9ba6565b2bc0662e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158895,
-      "author": "TeaCup404",
-      "author_id": 96370799,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T13:17:41.796Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-codex-image-configured-model",
-        "head_sha": "d67b6db755413f5e1dd85239d10f1f75fd09198d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83173:4471305255:2026-09-26T13:15:27Z:autoclose",
       "comment_id": "4471305255",
@@ -32125,6 +32078,39 @@
         "kind": "pull_request",
         "branch": "perf/l20-streaming-wire-deltas",
         "head_sha": "28b93d3528f0522bb1c9adc13c5cdcefcd317ff5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159086:5848636312:2026-09-26T19:01:47Z:clawsweeper_needs_human",
+      "comment_id": "5848636312",
+      "comment_version_key": "5848636312:2026-09-26T19:01:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159086#issuecomment-5848636312",
+      "comment_created_at": "2026-09-26T18:12:55Z",
+      "comment_updated_at": "2026-09-26T19:01:47Z",
+      "comment_body_sha256": "3287d0f36af811bbda3d02a1b9aa90bba7b00f41b2035b3528428ec74c58f43f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159086,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed cron startup lifecycle has not been validated through a published updater driving the candidate with retained operator state, as required by the repository's update policy. (sha=3fef502f8eae6604bbc19a398a91e6a8da917bec)",
+      "expected_head_sha": "3fef502f8eae6604bbc19a398a91e6a8da917bec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T19:04:04.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-catchup-rearm-158969",
+        "head_sha": "3fef502f8eae6604bbc19a398a91e6a8da917bec",
         "cluster_id": null,
         "job_path": null
       }
