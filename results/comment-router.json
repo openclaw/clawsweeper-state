@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T04:59:55.383Z",
+  "updated_at": "2026-09-26T05:00:17.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158396:5841237336:2026-09-25T23:54:15Z:re_review",
-      "comment_id": "5841237336",
-      "comment_version_key": "5841237336:2026-09-25T23:54:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158396#issuecomment-5841237336",
-      "comment_created_at": "2026-09-25T23:54:15Z",
-      "comment_updated_at": "2026-09-25T23:54:15Z",
-      "comment_body_sha256": "d042a41f107301572299eafcd6b12f1159361b83c1530d6c81ee0be114358372",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158396,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T00:06:00.475Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-binding-contention-20260925",
-        "head_sha": "add9ea4bbc68e01e36fb8d8b0206e312fb5a149f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158396:5840764996:2026-09-26T00:04:54Z:clawsweeper_needs_human",
       "comment_id": "5840764996",
@@ -33326,6 +33279,39 @@
         "kind": "pull_request",
         "branch": "fix/spawn-no-takeover",
         "head_sha": "e6f88041619c8706548ab0c05578e20126c76aa3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158369:5840234472:2026-09-26T04:59:25Z:clawsweeper_needs_human",
+      "comment_id": "5840234472",
+      "comment_version_key": "5840234472:2026-09-26T04:59:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158369#issuecomment-5840234472",
+      "comment_created_at": "2026-09-25T21:58:12Z",
+      "comment_updated_at": "2026-09-26T04:59:25Z",
+      "comment_body_sha256": "aecd5cd95f8b273b037c1c7f739490827ef031be5d9af6f2cd44c491d8a3715c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed local admission and recipient path needs current-head evidence that the selected channel a...; Review finding: [P1] Reject ambient channels outside the selected local registry — src/agents/agent-command-local.ts:152-162 - [medium] Cross-registry recipient callback — src/age... (sha=a161769edfcc75f43e083aa6afa49791cc868bc7)",
+      "expected_head_sha": "a161769edfcc75f43e083aa6afa49791cc868bc7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T05:00:17.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/fix-capture-startup-157568",
+        "head_sha": "a161769edfcc75f43e083aa6afa49791cc868bc7",
         "cluster_id": null,
         "job_path": null
       }
