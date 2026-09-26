@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-26T23:19:54.234Z",
+  "updated_at": "2026-09-26T23:19:09.496Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1694:5847789888:2026-09-26T16:13:42Z:re_review",
+      "comment_id": "5847789888",
+      "comment_version_key": "5847789888:2026-09-26T16:13:42Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1694#issuecomment-5847789888",
+      "comment_created_at": "2026-09-26T16:13:42Z",
+      "comment_updated_at": "2026-09-26T16:13:42Z",
+      "comment_body_sha256": "9cb80d50981b1d6499082890a318c8d57fc020c344df2544645384d2a4504963",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1694,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T16:19:05.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qualify-proxy-redaction-fixture",
+        "head_sha": "3a40a338a8e3617e8c78050e135f178f371113fa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1694:5847822293:2026-09-26T16:18:11Z:clawsweeper_needs_human",
       "comment_id": "5847822293",
@@ -33066,39 +33113,6 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159105:5849118082:2026-09-26T23:19:02Z:clawsweeper_needs_human",
-      "comment_id": "5849118082",
-      "comment_version_key": "5849118082:2026-09-26T23:19:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159105#issuecomment-5849118082",
-      "comment_created_at": "2026-09-26T19:19:48Z",
-      "comment_updated_at": "2026-09-26T23:19:02Z",
-      "comment_body_sha256": "a7eb51c23768c0ad753a815b8ce1ab0a12f84f9b571fc8d3391dfd942141cbeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159105,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a merge conflict against current main; reconcile the overlapping test-file changes before merge. (sha=e5afd756064bd6f781c0db81dbe5dcd813ccdc17)",
-      "expected_head_sha": "e5afd756064bd6f781c0db81dbe5dcd813ccdc17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T23:19:54.234Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/compaction-recovery-budget",
-        "head_sha": "e5afd756064bd6f781c0db81dbe5dcd813ccdc17",
         "cluster_id": null,
         "job_path": null
       }
