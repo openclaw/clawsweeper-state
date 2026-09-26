@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T04:08:40.982Z",
+  "updated_at": "2026-09-26T04:10:31.922Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156731:5840802582:2026-09-25T22:58:54Z:re_review",
-      "comment_id": "5840802582",
-      "comment_version_key": "5840802582:2026-09-25T22:58:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156731#issuecomment-5840802582",
-      "comment_created_at": "2026-09-25T22:58:54Z",
-      "comment_updated_at": "2026-09-25T22:58:54Z",
-      "comment_body_sha256": "cf73db6962aa49cdffb2d916ac05f1ef24fcfdc059a6de5c03d72670cfcb8df0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156731,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T22:59:44.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/media-provider-test-fixtures-20260923",
-        "head_sha": "1d13386e8112850d85a0e42422a9d1f05c1b2fa1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158414:5840803637:2026-09-25T22:59:02Z:clawsweeper_needs_human",
       "comment_id": "5840803637",
@@ -33180,6 +33133,39 @@
         "kind": "pull_request",
         "branch": "fix/startup-orphan-async-admission-20260926",
         "head_sha": "4b075c2df7e4ecf60a7988c9ea91f2127b561156",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:252:5842904895:2026-09-26T04:09:33Z:clawsweeper_needs_human",
+      "comment_id": "5842904895",
+      "comment_version_key": "5842904895:2026-09-26T04:09:33Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/252#issuecomment-5842904895",
+      "comment_created_at": "2026-09-26T03:48:04Z",
+      "comment_updated_at": "2026-09-26T04:09:33Z",
+      "comment_body_sha256": "b8bf533aca23c244654367a0adfbd26d362deff09f4d7ede07cb29386d392dd2",
+      "repo": "openclaw/ocm",
+      "issue_number": 252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A native upgrade child can pass the inheritable lock to a detached descendant. If that descendant remains alive after an otherwise completed upgrade, later mutations of that environme... (sha=b3932333fdeb5533922b701b55c580bd64817037)",
+      "expected_head_sha": "b3932333fdeb5533922b701b55c580bd64817037",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T04:10:31.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upgrade-child-custody",
+        "head_sha": "b3932333fdeb5533922b701b55c580bd64817037",
         "cluster_id": null,
         "job_path": null
       }
