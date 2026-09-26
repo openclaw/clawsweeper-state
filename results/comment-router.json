@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T00:09:12.462Z",
+  "updated_at": "2026-09-26T00:09:43.160Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3997:5836292989:2026-09-25T17:03:30Z:clawsweeper_needs_human",
-      "comment_id": "5836292989",
-      "comment_version_key": "5836292989:2026-09-25T17:03:30Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3997#issuecomment-5836292989",
-      "comment_created_at": "2026-09-25T17:03:30Z",
-      "comment_updated_at": "2026-09-25T17:03:30Z",
-      "comment_body_sha256": "443abba10ee68a9903b891b38f9b2280162a5abbcefdf5053b5bcdcaac662bbd",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3997,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production path runs from cached Codex sessions and provider snapshots through the dashboard model to native Settings rows and char...; Review finding: [P1] Honor Hide Personal Info in session rows — Sources/CodexBar/PreferencesSpendDashboardPane.swift:1312-1315 - [medium] Session identity remains visible in priva... (sha=f2898585659fae68edb2ac035db5ab2941457a74)",
-      "expected_head_sha": "f2898585659fae68edb2ac035db5ab2941457a74",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T17:04:47.438Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/spend-session-rows",
-        "head_sha": "f2898585659fae68edb2ac035db5ab2941457a74",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111646:5018796559:2026-09-25T17:03:46Z:clawsweeper_needs_human",
       "comment_id": "5018796559",
@@ -33473,6 +33440,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158458:5841345160:2026-09-26T00:08:48Z:re_review",
+      "comment_id": "5841345160",
+      "comment_version_key": "5841345160:2026-09-26T00:08:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158458#issuecomment-5841345160",
+      "comment_created_at": "2026-09-26T00:08:48Z",
+      "comment_updated_at": "2026-09-26T00:08:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158458,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T00:09:41.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/codex-refresh-158424",
+        "head_sha": "37948adcb8c15165542cace45ab66219ae32bdca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
