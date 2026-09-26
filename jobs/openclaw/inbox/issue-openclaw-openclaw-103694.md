@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair repeated unknown-format warnings during OpenClaw MCP catalog loading. First establish a failing regression using the current pinned SDK/AJV and non-draft output schemas containing google-duration and uint. Fix src/agents/mcp-json-schema-validator.ts, shared by session and node-host MCP clients, using dependency-authoritative format handling or supported validator configuration. Follow vincentkoc's decision on https://github.com/openclaw/openclaw/pull/103699: do not copy a handwritten format registry. Preserve all currently supported format validation, ordinary schema errors, draft-2020-12 behavior, literal data, property names, and incoming schema objects. Do not silence global console output or unrelated warnings. Add focused coverage that catches dependency-registry drift after upgrades and proves malformed supported formats still fail; exercise the production catalog boundary with a synthetic MCP server and record before/after warning output. Reuse existing fixtures and avoid per-test process boots. Run the focused tests and changed-file checks, record test wall time, and put user-visible context in the PR body; do not edit release-owned CHANGELOG.md. Stop for renewed triage if the repair requires a new user-facing feature, config option, validation-policy change, dependency version bump, override, or vendor patch.
+Fix the existing repeated unknown-format warning when OpenClaw loads non-draft schemas from remote MCP servers. First establish a failing regression at the production MCP catalog/validator boundary using an unknown format such as google-duration or uint. Repair the shared validator without a handwritten list of dependency-supported formats; preserve validation for recognized formats and draft-2020-12 behavior. Check the node-host caller of the same validator. Keep the change within the existing behavior contract: add no feature, config option, schema migration, or dependency patch. Add focused regression coverage and real catalog-path proof. Likely files: src/agents/mcp-json-schema-validator.ts, src/agents/mcp-tool-metadata.test.ts, src/agents/agent-bundle-mcp-runtime.test.ts; inspect src/node-host/mcp.ts. Run the focused Vitest file(s) and changed checks permitted by the implementation workflow. Record user-visible behavior and evidence in the PR body; do not edit release-owned CHANGELOG.md. Related prior proposal: https://github.com/openclaw/openclaw/pull/103699.
 
 Likely files:
 
 - src/agents/mcp-json-schema-validator.ts
-- src/agents/agent-bundle-mcp-runtime.test.ts
 - src/agents/mcp-tool-metadata.test.ts
+- src/agents/agent-bundle-mcp-runtime.test.ts
+- src/node-host/mcp.ts
 
 Validation:
 
-- pnpm test src/agents/agent-bundle-mcp-runtime.test.ts src/agents/mcp-tool-metadata.test.ts --maxWorkers=1
-- node scripts/check-changed.mjs --dry-run -- src/agents/mcp-json-schema-validator.ts src/agents/agent-bundle-mcp-runtime.test.ts src/agents/mcp-tool-metadata.test.ts
+- node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts src/agents/agent-bundle-mcp-runtime.test.ts
+- node scripts/check-changed.mjs
 - git diff --check
 
 ## Operator Prompt
