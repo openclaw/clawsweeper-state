@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T06:28:50.495Z",
+  "updated_at": "2026-09-26T06:30:06.936Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157753:5824661977:2026-09-26T02:05:14Z:clawsweeper_needs_human",
-      "comment_id": "5824661977",
-      "comment_version_key": "5824661977:2026-09-26T02:05:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157753#issuecomment-5824661977",
-      "comment_created_at": "2026-09-25T00:37:15Z",
-      "comment_updated_at": "2026-09-26T02:05:14Z",
-      "comment_body_sha256": "255eac3057d0b0bc0f49abe45017ebeaf7ea54d8df8bfb44d38c7358651bd6b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157753,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Exclude configured Claude auth overrides before recording host usage (P2)** - The filter checks ANTHROPIC_API_KEY and CLAUDE_CODE_OAUTH_TOKEN, but misses ANTHROPIC_OAUTH_TOKEN and ANTHROPIC_AUTH_TOKEN. The runne...; Review finding: [P2] Exclude configured Claude auth overrides before recording host usage — src/agents/cli-runner/observed-usage.ts:6-10 - [medium] Configured credential can be mi... (sha=53f2ce20d0b351a68943ea1dc96b51c4778b9e24)",
-      "expected_head_sha": "53f2ce20d0b351a68943ea1dc96b51c4778b9e24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T02:06:23.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-usage-windows",
-        "head_sha": "53f2ce20d0b351a68943ea1dc96b51c4778b9e24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158472:5841422535:2026-09-26T02:05:27Z:clawsweeper_needs_human",
       "comment_id": "5841422535",
@@ -32733,6 +32700,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158693:5843861889:2026-09-26T06:29:05Z:clawsweeper_needs_human",
+      "comment_id": "5843861889",
+      "comment_version_key": "5843861889:2026-09-26T06:29:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158693#issuecomment-5843861889",
+      "comment_created_at": "2026-09-26T06:21:44Z",
+      "comment_updated_at": "2026-09-26T06:29:05Z",
+      "comment_body_sha256": "7b6b33e2380941a6bb6aac4edc7ca4e4e742666a8a7e44e31b89ee7573daa1d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158693,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One green exact-head Windows shard does not establish that this intermittent fixture is stable; the required repeated standalone and original-shard runs, sibling tests, and hosted CI... (sha=ad792114d21188b5a8c4d9611c90a2ab54fc61d2)",
+      "expected_head_sha": "ad792114d21188b5a8c4d9611c90a2ab54fc61d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T06:30:06.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l55-skills-windows-loss",
+        "head_sha": "ad792114d21188b5a8c4d9611c90a2ab54fc61d2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
