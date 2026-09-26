@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T03:09:03.119Z",
+  "updated_at": "2026-09-26T03:09:13.267Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158335:5840152577:2026-09-25T21:50:12Z:re_review",
-      "comment_id": "5840152577",
-      "comment_version_key": "5840152577:2026-09-25T21:50:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158335#issuecomment-5840152577",
-      "comment_created_at": "2026-09-25T21:50:12Z",
-      "comment_updated_at": "2026-09-25T21:50:12Z",
-      "comment_body_sha256": "2067fe7c0a37a44edaa75f91c6f8cffbf61eb501f059db58598fd0f6b0cf875b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158335,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-25T21:54:20.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-reply-draft-recovery870",
-        "head_sha": "75ccd5cdbf09e1fcd775905d46e2d1647af3edf4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157946:5840170168:2026-09-25T21:51:48Z:re_review",
       "comment_id": "5840170168",
@@ -33234,6 +33187,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158467:5841341074:2026-09-26T03:08:23Z:clawsweeper_needs_human",
+      "comment_id": "5841341074",
+      "comment_version_key": "5841341074:2026-09-26T03:08:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158467#issuecomment-5841341074",
+      "comment_created_at": "2026-09-26T00:08:16Z",
+      "comment_updated_at": "2026-09-26T03:08:23Z",
+      "comment_body_sha256": "3dbb54a32589161bbb71202765d06d8bd43c670dfd0dfdc2dfa4559caf164763",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected screenshots and mock-Gateway Chrome test show the same chat composer becoming usable and...; Review finding: [P1] Fence the old run before awaiting worker dispatch — src/gateway/server-worker-placement-startup.ts:313 - [high] Predecessor authority survives an outstanding... (sha=490f738ac13585d09f2c0b25c263ded2e91d4548)",
+      "expected_head_sha": "490f738ac13585d09f2c0b25c263ded2e91d4548",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T03:09:13.267Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recover-failed-worker-on-send",
+        "head_sha": "490f738ac13585d09f2c0b25c263ded2e91d4548",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
