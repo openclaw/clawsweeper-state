@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing macOS Talk Mode bug where an accepted slow chat run outlives the client’s 45-second event wait and 12-second history fallback, leaving its reply unspoken. First establish a failing regression for the accepted-send path. Keep the repair in the native Talk/Gateway client boundary using the existing agent.wait completion contract; match the accepted run, retrieve complete text before speech, and preserve Stop, terminal-failure, and lifecycle cancellation behavior. Review https://github.com/openclaw/openclaw/pull/153444 as closed, unmerged prior work, not as a landed fix. Do not add a Talk-specific config option, change provider timeouts, or alter unrelated realtime Talk behavior. Add focused regression coverage and obtain isolated native macOS after-fix evidence of delayed reply playback and Stop. Record the user-facing fix and proof in the PR body; do not edit release-owned CHANGELOG.md.
+Fix the existing macOS Talk Mode bug where an accepted slow agent run can complete after the client’s fixed reply-observation windows and never be displayed or spoken. Reproduce the pre-fix failure through TalkModeRuntime or establish a failing owner-boundary regression before changing code. Reuse the Gateway's existing agent.wait run-observation contract; match the completed reply to the accepted run, retrieve full text when history is truncated, and preserve Stop and lifecycle cancellation. Consult the closed unmerged source work at https://github.com/openclaw/openclaw/pull/153444, but verify its behavior independently. Keep this a focused bug fix: no new configuration option, provider timeout change, Gateway protocol change, or CHANGELOG.md edit. Validate with native macOS build and focused Talk Mode tests on a disposable macOS CI/VM worker, plus an observed delayed reply and Stop flow; put release-note context in the PR body.
 
 Likely files:
 
 - apps/macos/Sources/OpenClaw/TalkModeRuntime.swift
 - apps/macos/Sources/OpenClaw/GatewayConnection.swift
 - apps/macos/Tests/OpenClawIPCTests/TalkModeRuntimeSpeechTests.swift
-- apps/macos/Tests/OpenClawIPCTests/MacGatewayChatTransportMappingTests.swift
 
 Validation:
 
 - swift build --package-path apps/macos --build-system native --build-tests
-- Run focused macOS Talk runtime and Gateway transport tests on a disposable macOS host.
-- Capture an isolated native Talk run in which a delayed accepted reply is displayed and spoken, and Stop prevents later playback.
+- Run focused Talk Mode native tests through scripts/test-macos-native.mts on a disposable macOS CI/VM worker.
+- Observe delayed matching reply, complete-message recovery, and Stop preventing later speech through the native Talk Mode flow.
+- scripts/lint-swift.sh macos
 
 ## Operator Prompt
 
