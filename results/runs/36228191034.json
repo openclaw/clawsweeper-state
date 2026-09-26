@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158710",
+  "mode": "plan",
+  "run_id": "36228191034",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36228191034",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158710.md",
+  "published_at": "2026-09-26T07:57:11.531Z",
+  "canonical": "#158710",
+  "canonical_issue": "#158710",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the harness selects a nonempty cached catalog without merging the current requester's OAuth connect entries. This supports a narrow fix plan, but no failing regression, code change, validation, or PR was produced in plan mode. The required sibling ../codex source is absent from this checkout and must be inspected before implementation.",
+  "actions": [
+    {
+      "target": "#158710",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158710",
+      "candidate_fix": null,
+      "reason": "Add a failing mixed-authentication regression at the production harness materializer before repairing catalog selection."
+    },
+    {
+      "target": "#114154",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158710",
+      "candidate_fix": null,
+      "reason": "The symptom family overlaps, but the reported failure paths and remaining investigation differ."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

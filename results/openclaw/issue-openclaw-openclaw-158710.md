@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158710"
-mode: "autonomous"
-run_id: "36225539983"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36225539983"
+mode: "plan"
+run_id: "36228191034"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36228191034"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-26T07:30:41.096Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158710"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158710"
+published_at: "2026-09-26T07:57:11.531Z"
+canonical: "#158710"
+canonical_issue: "#158710"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36225539983](https://github.com/openclaw/clawsweeper/actions/runs/36225539983)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36228191034](https://github.com/openclaw/clawsweeper/actions/runs/36228191034)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158710
+Canonical: #158710
 
 ## Summary
 
-Issue #158710 remains reproducible from the catalog selection code on main be531ed2427bdda8e26c6759ebbcea9fb33275ad. A focused repair is planned; no code or GitHub state was changed.
+At the preflight main SHA, the harness selects a nonempty cached catalog without merging the current requester's OAuth connect entries. This supports a narrow fix plan, but no failing regression, code change, validation, or PR was produced in plan mode. The required sibling ../codex source is absent from this checkout and must be inspected before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Issue #158710 remains reproducible from the catalog selection code on main be531
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158710 | fix_needed | planned | canonical | The Codex harness can advertise the authenticated server's tools while omitting the second server's connect tool. |
-| #114154 | keep_related | planned | related | The reports share MCP catalog symptoms but do not establish the same root cause. |
-| cluster:issue-openclaw-openclaw-158710 | build_fix_artifact | planned |  | Plan one focused implementation PR after the dependency inspection and regression proof. |
+| #158710 | fix_needed | planned | canonical | Add a failing mixed-authentication regression at the production harness materializer before repairing catalog selection. |
+| #114154 | keep_related | planned | related | The symptom family overlaps, but the reported failure paths and remaining investigation differ. |
 
 ## Needs Human
 
