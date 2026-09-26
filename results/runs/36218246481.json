@@ -1,0 +1,79 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158603",
+  "mode": "plan",
+  "run_id": "36218246481",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36218246481",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158603.md",
+  "published_at": "2026-09-26T04:38:53.036Z",
+  "canonical": "#158603",
+  "canonical_issue": "#158603",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the distinct cross-turn settle-wake delay. The checkout matches the preflight main SHA. Source inspection supports the reported gate, but a failing regression and validation have not yet been run. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158603",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Reproduce on this main SHA, then scope the frozen batch’s settle decision to work it owns while preserving legitimate follow-on requester work."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/138632",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Different failure and remaining work."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/154252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Separate retry defect in the same settle-wake owner."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/158154",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "The cross-turn fix cannot be assumed to resolve expiry or topic-lane behavior."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/158518",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158603",
+      "candidate_fix": null,
+      "reason": "Preserve the contributor’s separate PR for its own repair and review."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 4
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
