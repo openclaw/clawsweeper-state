@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:24:28.362Z",
+  "updated_at": "2026-09-26T08:24:30.738Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:50205:4354570655:2026-09-26T03:11:50Z:autoclose",
-      "comment_id": "4354570655",
-      "comment_version_key": "4354570655:2026-09-26T03:11:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/50205#issuecomment-4354570655",
-      "comment_created_at": "2026-04-30T17:14:01Z",
-      "comment_updated_at": "2026-09-26T03:11:50Z",
-      "comment_body_sha256": "97f734c674cb9fe6933a3248c9657914ae56fb920b951ec543e72646c04e810a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 50205,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T03:56:23.829Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:59414:4355458285:2026-09-26T03:15:34Z:clawsweeper_auto_repair",
       "comment_id": "4355458285",
@@ -32569,6 +32538,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158750:5844579537:2026-09-26T08:23:29Z:clawsweeper_needs_human",
+      "comment_id": "5844579537",
+      "comment_version_key": "5844579537:2026-09-26T08:23:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158750#issuecomment-5844579537",
+      "comment_created_at": "2026-09-26T08:23:29Z",
+      "comment_updated_at": "2026-09-26T08:23:29Z",
+      "comment_body_sha256": "1e6a85aac7b74a56c2cca43cc0cf224282adcbd7f7797802eb4b0f22be42307d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Warm borrowing now takes a different environment-capture path on Windows. The mixed-case lookup test simulates Windows, but no native Windows run verifies that an existing agent datab... (sha=63ddeba9b5e372a3ea57d032460caddbc161618a)",
+      "expected_head_sha": "63ddeba9b5e372a3ea57d032460caddbc161618a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T08:24:30.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/l50-agent-worker-write-identity",
+        "head_sha": "63ddeba9b5e372a3ea57d032460caddbc161618a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
