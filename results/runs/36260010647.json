@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82121",
+  "mode": "autonomous",
+  "run_id": "36260010647",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36260010647",
+  "head_sha": "f9d81c419e55740d5a48a546b6cd27e49b35250d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82121.md",
+  "published_at": "2026-09-26T18:11:55.372Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_pr": null,
+  "summary": "The bug remains present at main 960f7022928d32f6b371cc7030e233b69ca88260. The latest-reply reader can return a display-truncated history row to isolated automation. The workspace is read-only, so the required failing regression, repair, and validation could not be completed. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#82121",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "The current reader can present a bounded preview as a complete reply."
+    },
+    {
+      "target": "#82128",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "Historical context; its marker-stripping approach does not preserve all literal assistant content."
+    },
+    {
+      "target": "#93694",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "Useful source work for the narrow repair and contributor credit."
+    },
+    {
+      "target": "#94094",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "Historical context for preserving literal assistant content."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "A narrow repair path exists, but this read-only workspace prevents implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "A PR cannot be prepared until the regression fails on main, the repair is implemented, and the required checks pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

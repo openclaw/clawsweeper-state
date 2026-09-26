@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
 mode: "autonomous"
-run_id: "36256606594"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36256606594"
+run_id: "36260010647"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36260010647"
 head_sha: "f9d81c419e55740d5a48a546b6cd27e49b35250d"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T17:38:40.183Z"
+published_at: "2026-09-26T18:11:55.372Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36256606594](https://github.com/openclaw/clawsweeper/actions/runs/36256606594)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36260010647](https://github.com/openclaw/clawsweeper/actions/runs/36260010647)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-Current main still has the source-level defect: the latest-reply reader returns a display-truncated history row as complete text. Implementation and executable regression proof are blocked because this checkout is read-only and lacks node_modules. No files or GitHub state changed.
+The bug remains present at main 960f7022928d32f6b371cc7030e233b69ca88260. The latest-reply reader can return a display-truncated history row to isolated automation. The workspace is read-only, so the required failing regression, repair, and validation could not be completed. No code or GitHub state changed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Current main still has the source-level defect: the latest-reply reader returns 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | The issue remains open, and all linked implementation PRs are closed unmerged. |
-| #82128 | keep_closed | skipped | related | Historical context only. |
-| #93694 | keep_closed | skipped | related | Historical source work; no closure action. |
-| #94094 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | planned |  | A narrow reader-owned repair is supported by current source. |
-| cluster:issue-openclaw-openclaw-82121 | open_fix_pr | blocked |  | The executor needs a writable checkout with dependencies to prove the baseline failure, implement the fix, validate it, and create or update the issue branch. |
+| #82121 | fix_needed | planned | canonical | The current reader can present a bounded preview as a complete reply. |
+| #82128 | keep_closed | skipped | related | Historical context; its marker-stripping approach does not preserve all literal assistant content. |
+| #93694 | keep_closed | skipped | related | Useful source work for the narrow repair and contributor credit. |
+| #94094 | keep_closed | skipped | related | Historical context for preserving literal assistant content. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | planned |  | A narrow repair path exists, but this read-only workspace prevents implementation. |
+| cluster:issue-openclaw-openclaw-82121 | open_fix_pr | blocked |  | A PR cannot be prepared until the regression fails on main, the repair is implemented, and the required checks pass. |
 
 ## Needs Human
 
