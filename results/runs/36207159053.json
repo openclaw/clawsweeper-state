@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158442",
+  "mode": "plan",
+  "run_id": "36207159053",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36207159053",
+  "head_sha": "9fb3a5d5887891c08e0310cafc54b09ab3023c2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158442.md",
+  "published_at": "2026-09-26T01:07:27.129Z",
+  "canonical": "#158442",
+  "canonical_issue": "#158442",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, sessions.patch still advances updatedAt when it acknowledges a read. Plan a narrow Gateway fix and regression proof. No code, branch, PR, or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158442",
+      "candidate_fix": null,
+      "reason": "A read acknowledgement should publish read state without changing conversation recency. Establish the failing Gateway regression before editing."
+    },
+    {
+      "target": "#148262",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158442",
+      "candidate_fix": null,
+      "reason": "It addresses a different acknowledgement lifecycle defect and does not fix the Gateway timestamp producer."
+    },
+    {
+      "target": "#100927",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical UI sorting work; already closed."
+    },
+    {
+      "target": "#134158",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical UI acknowledgement work; already closed."
+    },
+    {
+      "target": "#134160",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It did not change the Gateway timestamp producer and is already closed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
