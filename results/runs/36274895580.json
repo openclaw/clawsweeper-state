@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82121",
+  "mode": "autonomous",
+  "run_id": "36274895580",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36274895580",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82121.md",
+  "published_at": "2026-09-26T22:46:06.166Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_pr": null,
+  "summary": "The current checkout still has a path that can return a display-truncated history preview as a complete reply. Implementation is blocked: the filesystem is read-only, dependencies are absent, and the checkout does not contain the preflight main SHA. No patch or failing regression was produced.",
+  "actions": [
+    {
+      "target": "#82121",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "The issue remains open in preflight. All three linked contributor PRs are closed and supply historical context; none is a viable open fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "A writable checkout at current main with dependencies is required before reproducing, editing, and validating the narrow fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
