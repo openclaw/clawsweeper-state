@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82121",
+  "mode": "autonomous",
+  "run_id": "36265603905",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36265603905",
+  "head_sha": "5f73370171673b318108ffb1a5d59761c9624846",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82121.md",
+  "published_at": "2026-09-26T19:59:20.434Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82121",
+  "canonical_pr": null,
+  "summary": "Current main still has the truncation path: readLatestAssistantReply returns chat.history display text, which isolated cron can deliver as a complete reply. The checkout is read-only and has no node_modules, so I could not add a failing regression, patch the branch, or run validation. The narrow fix path is specified below.",
+  "actions": [
+    {
+      "target": "#82121",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "The producer marks shortened previews, and the latest-reply reader does not use that fact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82121",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#82121",
+      "candidate_fix": null,
+      "reason": "Implementation and local validation require a writable, dependency-ready executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
