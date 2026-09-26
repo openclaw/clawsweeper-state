@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T20:23:38.256Z",
+  "updated_at": "2026-09-26T20:25:03.871Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141535:5792796511:2026-09-23T09:59:52Z:re_review",
-      "comment_id": "5792796511",
-      "comment_version_key": "5792796511:2026-09-23T09:59:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141535#issuecomment-5792796511",
-      "comment_created_at": "2026-09-23T09:59:52Z",
-      "comment_updated_at": "2026-09-23T09:59:52Z",
-      "comment_body_sha256": "af1e66eab641951bfb1ca993fc7119ba08ef9c416ae423fc48e98c5193240f76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141535,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T14:02:34.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-authoring-run-replacement-resilience",
-        "head_sha": "6b387f20b88892831fc2951abd4dfd6c06ee6dfa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141535:5788552010:2026-09-23T03:38:45Z:re_review",
       "comment_id": "5788552010",
@@ -32969,6 +32922,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-custom-provider-cache-ttl",
         "head_sha": "c9e61f2fc40ddec582fb7e7a30ae1d840bae4110",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159155:5849589030:2026-09-26T20:24:05Z:clawsweeper_needs_human",
+      "comment_id": "5849589030",
+      "comment_version_key": "5849589030:2026-09-26T20:24:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159155#issuecomment-5849589030",
+      "comment_created_at": "2026-09-26T20:24:05Z",
+      "comment_updated_at": "2026-09-26T20:24:05Z",
+      "comment_body_sha256": "1b5bfce5f9bea7eb5a57894de6167aab20eabd857a4d39f7e41c6083d86fd131",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159155,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=634e3c3894c639cf8254f860dcafa4c8217f3fdc)",
+      "expected_head_sha": "634e3c3894c639cf8254f860dcafa4c8217f3fdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T20:25:03.871Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-config-commit-invalidates-whole-projection-20260919",
+        "head_sha": "634e3c3894c639cf8254f860dcafa4c8217f3fdc",
         "cluster_id": null,
         "job_path": null
       }
