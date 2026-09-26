@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158922"
-mode: "autonomous"
-run_id: "36247517219"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36247517219"
+mode: "plan"
+run_id: "36250111826"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36250111826"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T14:47:59.304Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T14:58:49.248Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158922"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158922"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36247517219](https://github.com/openclaw/clawsweeper/actions/runs/36247517219)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36250111826](https://github.com/openclaw/clawsweeper/actions/runs/36250111826)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158922
 
 ## Summary
 
-The reported restart regression remains plausible at main ece27a12d64cd374f539989b168541f547995286, but it was not reproduced. This checkout is read-only, has no installed dependencies, and has no usable Claude CLI login for the required Gateway comparison. No code was changed or PR opened.
+Plan a narrow prepared-catalog auth fix for the restart regression. Reproduction on current main and validation remain required before a fix PR is opened. The linked UI PR addresses a different refresh-failure trigger.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The reported restart regression remains plausible at main ece27a12d64cd374f53998
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158922 | fix_needed | planned | canonical | Confirm the regression through an isolated Gateway with a usable Claude CLI login before changing code. |
-| #146155 | keep_related | planned | related | The PR addresses a different trigger and does not repair prepared Claude CLI auth publication. |
-| cluster:issue-openclaw-openclaw-158922 | build_fix_artifact | blocked |  | The job requires reproduction on current main before implementation; that gate is unmet in this host. |
+| https://github.com/openclaw/openclaw/issues/158922 | fix_needed | planned | canonical | The reported restart behavior has no hydrated candidate PR that fixes prepared catalog auth publication. |
+| https://github.com/openclaw/openclaw/pull/146155 | keep_related | planned | related | Its UI refresh-failure behavior is related but does not repair the issue's restart-time provider availability. |
+| https://github.com/openclaw/openclaw/pull/157459 | keep_closed | skipped | related | Historical context only; no action is available for the already-merged PR. |
 
 ## Needs Human
 
