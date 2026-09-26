@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T04:05:11.311Z",
+  "updated_at": "2026-09-26T04:05:14.169Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157972:5828449161:2026-09-25T22:24:19Z:clawsweeper_needs_human",
-      "comment_id": "5828449161",
-      "comment_version_key": "5828449161:2026-09-25T22:24:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157972#issuecomment-5828449161",
-      "comment_created_at": "2026-09-25T07:13:53Z",
-      "comment_updated_at": "2026-09-25T22:24:19Z",
-      "comment_body_sha256": "240dcbb73e8f2ec3d6bdae1a91ab302cea855429bd6c3b8d95ac313185e05a4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157972,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published 2026.9.6 updater has not been shown upgrading this exact candidate with retained SQLite state, restoring the managed Gateway, and rolling back the prior runtime and data... (sha=a97c6001cfd6358ba246e9e7de9498fa3040ee3e)",
-      "expected_head_sha": "a97c6001cfd6358ba246e9e7de9498fa3040ee3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-25T22:25:38.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/2026-9-7-backports",
-        "head_sha": "a97c6001cfd6358ba246e9e7de9498fa3040ee3e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:660:5825523307:2026-09-25T22:24:48Z:clawsweeper_needs_human",
       "comment_id": "5825523307",
@@ -33273,6 +33240,39 @@
       "status": "skipped",
       "processed_at": "2026-09-26T04:05:11.311Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158051:5830582035:2026-09-26T04:00:00Z:clawsweeper_needs_human",
+      "comment_id": "5830582035",
+      "comment_version_key": "5830582035:2026-09-26T04:00:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158051#issuecomment-5830582035",
+      "comment_created_at": "2026-09-25T10:05:18Z",
+      "comment_updated_at": "2026-09-26T04:00:00Z",
+      "comment_body_sha256": "f960eb43a41ba37d7117a5389b42df3c9a53ade5605ae0df6548246f26a9231c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed iOS ingress owner installs an Access cookie into the embedded Dashboard WebView, but the captured e...; Review finding: [medium] Client principal binding does not establish Gateway authorization — apps/ios/Sources/Gateway/GatewayAccessDeviceAuthBinding.swift:91 (sha=0da0f98bb764a519a158f78b1d76f58c251c9d0b)",
+      "expected_head_sha": "0da0f98bb764a519a158f78b1d76f58c251c9d0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T04:05:14.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-cloudflare-dashboard-session-20260925",
+        "head_sha": "0da0f98bb764a519a158f78b1d76f58c251c9d0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
