@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158710"
-mode: "autonomous"
-run_id: "36231231159"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36231231159"
+mode: "plan"
+run_id: "36233064917"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36233064917"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T09:21:43.309Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158710"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158710"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T09:35:29.420Z"
+canonical: "#158710"
+canonical_issue: "#158710"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36231231159](https://github.com/openclaw/clawsweeper/actions/runs/36231231159)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36233064917](https://github.com/openclaw/clawsweeper/actions/runs/36233064917)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158710
+Canonical: #158710
 
 ## Summary
 
-Current main selects the cached authenticated MCP catalog before merging the current requester’s OAuth connect entries. The narrow repair is identifiable, but this read-only checkout has no node_modules and no required sibling ../codex checkout. A failing regression, code change, and validation could not be completed.
+Plan a narrow Codex harness fix for #158710. The preflight shows the issue open, and the inspected harness still selects a cached catalog before adding the current requester’s OAuth connect entries. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Current main selects the cached authenticated MCP catalog before merging the cur
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158710 | fix_needed | planned | canonical | The issue remains open and has no viable open implementation PR in the hydrated inventory. |
-| #114154 | keep_related | planned | related | Distinct reproduction and unresolved root cause; keep open. |
-| cluster:issue-openclaw-openclaw-158710 | build_fix_artifact | blocked |  | Implementation must wait for a writable, dependency-ready checkout and inspection of the required sibling Codex source. |
+| #158710 | fix_needed | planned | canonical | Keep the issue open while the scoped regression, fix, and validation are completed. |
+| #114154 | keep_related | planned | related | The reports share a tool-availability area, but the hydrated evidence does not establish the same root cause. |
+| #134307 | keep_closed | skipped |  | Closed historical context; no closure action is valid. |
+| #157855 | keep_closed | skipped |  | Merged historical context; it does not own this repair. |
 
 ## Needs Human
 
