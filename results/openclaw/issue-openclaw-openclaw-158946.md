@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158946"
-mode: "autonomous"
-run_id: "36250758852"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36250758852"
+mode: "plan"
+run_id: "36253571746"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36253571746"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T15:45:24.833Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158946"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158946"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T16:35:14.287Z"
+canonical: "#158946"
+canonical_issue: "#158946"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36250758852](https://github.com/openclaw/clawsweeper/actions/runs/36250758852)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36253571746](https://github.com/openclaw/clawsweeper/actions/runs/36253571746)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158946
+Canonical: #158946
 
 ## Summary
 
-Current main at c1245de88a079fbc753cacbeb7983cb9ece46d08 still contains both reported code paths. The checkout is read-only and dependencies are absent, so the required failing regression, patch, and validation could not be completed. No GitHub action was taken.
+Plan a narrow fix for #158946. The checkout matches the preflight main commit, and source inspection supports the reported watcher filter bypass and repeated extraPaths traversal. Execution must first demonstrate a failing regression on this main commit; no code, GitHub state, or tests were changed in plan mode.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main at c1245de88a079fbc753cacbeb7983cb9ece46d08 still contains both rep
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158946 | fix_needed | planned | canonical | A narrow bug fix is indicated, pending the required pre-fix boundary regression. |
-| #136175 | keep_related | planned | related | Distinct trigger and remaining work; leave open. |
-| #137366 | keep_related | planned | related | Distinct trigger and remaining work; leave open. |
-| #152441 | keep_related | planned | related | Useful, separate contributor work; leave open under its own issue. |
-| cluster:issue-openclaw-openclaw-158946 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and a failing regression at the watcher boundary before editing. |
+| #135754 | keep_closed | skipped | related | Historical context only. |
+| #136175 | keep_related | planned | related | Different root cause and remaining work. |
+| #137366 | keep_related | planned | related | The scheduling decision in #137366 is outside this bug fix. |
+| #152441 | keep_related | planned | related | Preserve the contributor's separate fix path; it does not replace the requested implementation. |
+| #158946 | fix_needed | planned | canonical | Implement only after the original failure is reproduced; keep the issue open. |
 
 ## Needs Human
 
