@@ -1,0 +1,39 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-09-26T14:27:13.057Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "4109178743",
+    "node_id": "IC_kwDOQb6kR8707Rd3",
+    "url": "https://github.com/openclaw/openclaw/pull/51807#issuecomment-4109178743",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/51807",
+    "pull_request_url": null,
+    "author": "wjc2821296948",
+    "author_association": "NONE",
+    "created_at": "2026-03-23T09:28:08Z",
+    "updated_at": "2026-09-26T14:16:23Z",
+    "body_hash": "1f74617455aae9354927fd46f07c881b6f086e5727c79da80bfd060ae774b84f",
+    "body_excerpt": "### Motivation - 修复 `config.openFile` 使用 `exec(...)` 拼接命令带来的命令/参数注入风险，避免配置路径中包含的 shell 元字符被解释执行。 ### Description - 在 `src/gateway/server-m ... ` 与 `pnpm exec oxfmt --check`，格式与 lint 检查通过；尝试运行 `pnpm build` 时因本地 Node 版本低于仓库要求且存在与本次修改无关的 TypeScript 错误导致构建未完成；未新增持久化单元测试（改动为小范围的安全加固）。",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "4109178743",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic security change summary and test results."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}

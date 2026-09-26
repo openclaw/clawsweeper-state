@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-09-26T14:27:13.057Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5171295999",
+    "node_id": "IC_kwDOQb6kR88AAAABNDu2_w",
+    "url": "https://github.com/openclaw/openclaw/pull/118927#issuecomment-5171295999",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/118927",
+    "pull_request_url": null,
+    "author": "wjc2821296948",
+    "author_association": "NONE",
+    "created_at": "2026-08-03T20:21:51Z",
+    "updated_at": "2026-09-26T14:16:23Z",
+    "body_hash": "2ab114189ef7d6b03bd2f26198d656f4cd001de8dd9024a2fcd76e15063631ab",
+    "body_excerpt": "## Security fix summary (single comment) ### P0 — Git option injection via `--git-dir` / `OPENCLAW_GIT_DIR` **Commit:** `e2edc25f` (instal ... lid value for --git-dir: must not start with '-'\" and `/tmp/PWNED_TEST` is never created. `bash -n` syntax check passes for both scripts.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://openclaw.ai/install-cli.sh"
+    ]
+  },
+  "model_result": {
+    "comment_id": "5171295999",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic security analysis and reproduction; external installer link is contextual, not promotional."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
