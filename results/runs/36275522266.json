@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "36275522266",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36275522266",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-26T22:48:52.373Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "At preflight main d9fc2556, non-draft MCP schemas still reach the SDK Ajv validator through the catalog path. The checkout has no installed dependencies and this worker has read-only filesystem access, so it could not run the required failing regression, edit code, or validate a PR branch. The narrow fix path is recorded below for execution in a writable checkout.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The reported defect has a current source path and two hydrated user reproductions; implementation requires a writable checkout with dependencies and a failing regression first."
+    },
+    {
+      "target": "#103699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no closure or branch mutation is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Run the failing production catalog regression on current main in a writable checkout before implementing; then validate the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
