@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158607",
+  "mode": "autonomous",
+  "run_id": "36214450504",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36214450504",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158607.md",
+  "published_at": "2026-09-26T03:54:33.778Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158607",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158607",
+  "canonical_pr": null,
+  "summary": "The admission-lifetime defect remains plausible on main at 5b3cb698b677235c266ba88ce4e33671e8cbf2a1. The scheduler snapshots caller context and later uses it for a coalesced rerun after the caller can release its admission root. Implementation is blocked in this read-only checkout, which also lacks installed dependencies; the required failing regression and validation could not run.",
+  "actions": [
+    {
+      "target": "#158607",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158607",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix is indicated, subject to the required failing regression on current main."
+    },
+    {
+      "target": "#156766",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158607",
+      "candidate_fix": null,
+      "reason": "Distinct failure path; leave this issue open under its own follow-up."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158607",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158607",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable prepared checkout. Reproduce the three-offer failure before changing production code."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
