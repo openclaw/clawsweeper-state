@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158997",
+  "mode": "autonomous",
+  "run_id": "36254513981",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36254513981",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158997.md",
+  "published_at": "2026-09-26T16:53:21.453Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158997",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158997",
+  "canonical_pr": null,
+  "summary": "The fixture race remains in main at be46e696. The narrow test repair is identified, but this read-only checkout lacks dependencies, so local reproduction, editing, and validation are blocked. No GitHub action was performed.",
+  "actions": [
+    {
+      "target": "#158997",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158997",
+      "candidate_fix": null,
+      "reason": "Wait for actual process-group absence before simulating reuse of the root PID."
+    },
+    {
+      "target": "#158136",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The CLI repair and process fixture race are separate work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158997",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158997",
+      "candidate_fix": null,
+      "reason": "Implementation and local proof require a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
