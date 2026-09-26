@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158781"
-mode: "autonomous"
-run_id: "36232821025"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36232821025"
+mode: "plan"
+run_id: "36236186257"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36236186257"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T10:01:24.640Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158781"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158781"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T10:37:00.855Z"
+canonical: "#158781"
+canonical_issue: "#158781"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36232821025](https://github.com/openclaw/clawsweeper/actions/runs/36232821025)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36236186257](https://github.com/openclaw/clawsweeper/actions/runs/36236186257)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158781
+Canonical: #158781
 
 ## Summary
 
-The Doctor archive receipt bug has a narrow fix path, but this worker could not implement or validate it. The checkout is read-only and its HEAD is older than the preflight main SHA, so the required failing regression on latest main could not be run. No code or GitHub state was changed.
+Current main still compares recorded device numbers when Doctor verifies retained archives. Plan a narrow fix after an entry-point regression demonstrates the failure. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ The Doctor archive receipt bug has a narrow fix path, but this worker could not 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158781 | keep_canonical | planned | canonical | This is the open canonical report. |
-| #153254 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-158781 | fix_needed | planned |  | A persisted-receipt comparison that ignores only dev appears appropriate, subject to reproduction on the preflight main revision. |
-| cluster:issue-openclaw-openclaw-158781 | build_fix_artifact | blocked |  | Implementation requires a writable checkout at the preflight main revision. |
+| #158781 | fix_needed | planned | canonical | The source supports a narrow, unfixed Doctor bug. Plan mode has not run the required failing regression or validated a patch. |
 
 ## Needs Human
 
