@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
 mode: "autonomous"
-run_id: "36237850252"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36237850252"
-head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
+run_id: "36278925821"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36278925821"
+head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T11:40:16.111Z"
+published_at: "2026-09-26T23:53:23.514Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
-actions_total: 2
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36237850252](https://github.com/openclaw/clawsweeper/actions/runs/36237850252)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36278925821](https://github.com/openclaw/clawsweeper/actions/runs/36278925821)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-The inspected checkout has a Doctor settlement path that treats historical_transcript_deferred as a failure despite classifying it as an advisory warning. Implementation is blocked: this read-only checkout has no dependencies, and the preflight main SHA is unavailable locally, so the required failing regression and latest-main validation could not run.
+Current main contains a Doctor settlement mismatch: historical_transcript_deferred is advisory, but retained-source settlement treats it as a failure. The required mixed-state regression, repair, and validation could not be performed because this checkout is read-only. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,10 @@ The inspected checkout has a Doctor settlement path that treats historical_trans
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | A narrow mixed-state recovery regression remains plausible, but it must fail at the Doctor/plugin-completion boundary on the current base before implementation. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation and validation are blocked by the read-only, dependency-free checkout and unavailable preflight main commit. |
+| #153502 | fix_needed | planned | canonical | A mixed-state Doctor regression must fail on current main before a repair is made. |
+| #154413 | keep_closed | skipped | related | Historical context only. |
+| #154543 | keep_closed | skipped | related | Historical context only. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout; source inspection alone does not satisfy the job's reproduce-first gate. |
 
 ## Needs Human
 
