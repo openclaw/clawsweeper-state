@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
-mode: "plan"
-run_id: "36260978929"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36260978929"
+mode: "autonomous"
+run_id: "36262545559"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36262545559"
 head_sha: "f9d81c419e55740d5a48a546b6cd27e49b35250d"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-26T18:14:48.829Z"
-canonical: "#82121"
-canonical_issue: "#82121"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-26T19:08:27.481Z"
+canonical: "https://github.com/openclaw/openclaw/issues/82121"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36260978929](https://github.com/openclaw/clawsweeper/actions/runs/36260978929)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36262545559](https://github.com/openclaw/clawsweeper/actions/runs/36262545559)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #82121
+Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-The latest-main reader can return a display-truncated chat.history assistant preview as a complete reply to isolated automation. Plan a narrow, provenance-aware recovery through chat.message.get. No code or GitHub state was changed; the failing regression and validation remain to be run.
+Source inspection confirms that the latest-reply reader can return a display-truncated history preview as a complete reply. Implementation is blocked in this worker: the checkout is read-only, lacks dependencies, and is at 132c3de7 rather than the preflight main SHA e67317ae. No regression, fix, or PR was created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ The latest-main reader can return a display-truncated chat.history assistant pre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | No open candidate PR owns this fix. |
-| #82128 | keep_closed | skipped | related | Historical context only. |
-| #93694 | keep_closed | skipped | related | Useful implementation and contributor-credit context for the planned narrow fix. |
-| #94094 | keep_closed | skipped | related | Historical context only. |
+| #82121 | fix_needed | planned | canonical | A narrow provenance-based repair remains needed. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation requires a writable checkout refreshed to current main with dependencies available. |
 
 ## Needs Human
 
