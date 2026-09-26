@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T13:58:37.213Z",
+  "updated_at": "2026-09-26T13:58:44.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152679:5843847034:2026-09-26T06:19:15Z:re_review",
-      "comment_id": "5843847034",
-      "comment_version_key": "5843847034:2026-09-26T06:19:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152679#issuecomment-5843847034",
-      "comment_created_at": "2026-09-26T06:19:15Z",
-      "comment_updated_at": "2026-09-26T06:19:15Z",
-      "comment_body_sha256": "8be66d951ced7110d317a56d21a02609f8a6832e35507ce01b0f718070562617",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152679,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T06:20:01.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-152553-feishu-post-dedupe",
-        "head_sha": "17817e6f3cf3782061845b25642e75abaf114263",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158681:5843675830:2026-09-26T06:19:05Z:clawsweeper_needs_human",
       "comment_id": "5843675830",
@@ -33287,6 +33240,39 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158678:5844433928:2026-09-26T13:57:43Z:clawsweeper_auto_repair",
+      "comment_id": "5844433928",
+      "comment_version_key": "5844433928:2026-09-26T13:57:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158678#issuecomment-5844433928",
+      "comment_created_at": "2026-09-26T07:58:19Z",
+      "comment_updated_at": "2026-09-26T13:57:43Z",
+      "comment_body_sha256": "404e2ff4926f8343d01b2f03308fb9c09ebb2a0cf13d2041b1327297f79450dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158678,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=84ec705d51395187e2428ed96ad2c81564c3cdc0)",
+      "expected_head_sha": "84ec705d51395187e2428ed96ad2c81564c3cdc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T13:58:44.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/sqlite-snapshot-peak-space",
+        "head_sha": "84ec705d51395187e2428ed96ad2c81564c3cdc0",
         "cluster_id": null,
         "job_path": null
       }
