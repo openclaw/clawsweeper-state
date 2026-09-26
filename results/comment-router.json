@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T05:05:38.574Z",
+  "updated_at": "2026-09-26T05:05:46.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157878:5841384131:2026-09-26T00:13:29Z:re_review",
-      "comment_id": "5841384131",
-      "comment_version_key": "5841384131:2026-09-26T00:13:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157878#issuecomment-5841384131",
-      "comment_created_at": "2026-09-26T00:13:29Z",
-      "comment_updated_at": "2026-09-26T00:13:29Z",
-      "comment_body_sha256": "8bb870a912fdf147a7981a3a0b3ed3e7d7347a4fe6c760b1ffe9c88aa15b0f9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157878,
-      "author": "etzelm",
-      "author_id": 16581152,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T00:14:15.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/requester-settle-terminal-batch",
-        "head_sha": "abadfc782c9d981f05f3d617e827a918335888fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158464:5841384252:2026-09-26T00:13:30Z:clawsweeper_needs_human",
       "comment_id": "5841384252",
@@ -33332,6 +33285,39 @@
         "kind": "pull_request",
         "branch": "fix-source-watch-test",
         "head_sha": "98116c1ae6b30980ffb199d4aad8046a5f324b86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150995:5717931821:2026-09-26T05:03:05Z:clawsweeper_needs_human",
+      "comment_id": "5717931821",
+      "comment_version_key": "5717931821:2026-09-26T05:03:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150995#issuecomment-5717931821",
+      "comment_created_at": "2026-09-17T16:37:59Z",
+      "comment_updated_at": "2026-09-26T05:03:05Z",
+      "comment_body_sha256": "88f83c58ed33b2f2fc031a3d7bae0b7699f08b946457fac569677d305711e409",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Codex monitor, task publisher, and channel delivery path are exercised through synthetic native eve...; Review finding: [P1] Bind progress registration to a live, successful yield — src/plugin-sdk/agent-harness-task-runtime.ts:282-289 - [medium] Retained runtime can request channel... (sha=18a689fa73d61e3bd128fd8a69004ad23cc88c05)",
+      "expected_head_sha": "18a689fa73d61e3bd128fd8a69004ad23cc88c05",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T05:05:46.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/native-yield-progress-current",
+        "head_sha": "18a689fa73d61e3bd128fd8a69004ad23cc88c05",
         "cluster_id": null,
         "job_path": null
       }
