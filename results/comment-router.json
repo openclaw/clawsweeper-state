@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T23:07:34.385Z",
+  "updated_at": "2026-09-26T23:08:17.063Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158962:5847422624:2026-09-26T15:59:35Z:clawsweeper_needs_human",
-      "comment_id": "5847422624",
-      "comment_version_key": "5847422624:2026-09-26T15:59:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158962#issuecomment-5847422624",
-      "comment_created_at": "2026-09-26T15:20:46Z",
-      "comment_updated_at": "2026-09-26T15:59:35Z",
-      "comment_body_sha256": "4cfc7bcf2433e6e7989f10fb2f9d7da5d89d9e2de8bf06ff36f55d74b72539c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158962,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f488fef72ef9d482093d6e85e91b501e05c8cc94)",
-      "expected_head_sha": "f488fef72ef9d482093d6e85e91b501e05c8cc94",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T16:06:52.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-metadata-inspection-wait",
-        "head_sha": "f488fef72ef9d482093d6e85e91b501e05c8cc94",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158943:5847257188:2026-09-26T15:57:06Z:clawsweeper_needs_human",
       "comment_id": "5847257188",
@@ -33088,6 +33055,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157413:5823139010:2026-09-24T22:16:50Z:re_review",
+      "comment_id": "5823139010",
+      "comment_version_key": "5823139010:2026-09-24T22:16:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157413#issuecomment-5823139010",
+      "comment_created_at": "2026-09-24T22:16:50Z",
+      "comment_updated_at": "2026-09-24T22:16:50Z",
+      "comment_body_sha256": "2c77d925631fe51c62d73be15b9a95e1a190f217b5a7264d3d917c69c7e4d72a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157413,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-26T23:08:17.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/land-temp-state-cleanup",
+        "head_sha": "5dc81a1600397330085660c18151f4f5f050fda6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
