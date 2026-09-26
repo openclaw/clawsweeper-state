@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T14:32:04.755Z",
+  "updated_at": "2026-09-26T14:32:19.259Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152671:5844456713:2026-09-26T08:02:16Z:re_review",
-      "comment_id": "5844456713",
-      "comment_version_key": "5844456713:2026-09-26T08:02:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152671#issuecomment-5844456713",
-      "comment_created_at": "2026-09-26T08:02:16Z",
-      "comment_updated_at": "2026-09-26T08:02:16Z",
-      "comment_body_sha256": "5ba770849d12d034c78048651c4e84c9aae0a948d009480120dbf5a78f052071",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152671,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T08:03:55.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-152508-sanitize-comparison",
-        "head_sha": "f48b1bb08ed67b02524693fd76442de0df96157a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158688:5843775804:2026-09-26T08:03:06Z:clawsweeper_needs_human",
       "comment_id": "5843775804",
@@ -32380,6 +32333,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4026:5847077926:2026-09-26T14:31:16Z:clawsweeper_auto_repair",
+      "comment_id": "5847077926",
+      "comment_version_key": "5847077926:2026-09-26T14:31:16Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4026#issuecomment-5847077926",
+      "comment_created_at": "2026-09-26T14:31:16Z",
+      "comment_updated_at": "2026-09-26T14:31:16Z",
+      "comment_body_sha256": "92b15c9df83a10de1f3bc97ddc0c73b0d494469cad4549f0bf0bb87f9475724c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4026,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bc809208d3bbe2945bad3535d719cbeeb019332d)",
+      "expected_head_sha": "bc809208d3bbe2945bad3535d719cbeeb019332d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T14:32:19.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clinepass-browser-signin",
+        "head_sha": "bc809208d3bbe2945bad3535d719cbeeb019332d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
