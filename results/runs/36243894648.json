@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158890",
+  "mode": "autonomous",
+  "run_id": "36243894648",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36243894648",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158890.md",
+  "published_at": "2026-09-26T13:41:04.305Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158890",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158890",
+  "canonical_pr": null,
+  "summary": "Current main still rejects exec's unsupported timeout field, and source inspection shows a plausible gap in the metadata cron uses for warnings. The required failing regression through an isolated automation run could not be established: this checkout is read-only and has no node_modules. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158890",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158890",
+      "candidate_fix": null,
+      "reason": "Reproduce the missing warning through the isolated automation entry point before implementing."
+    },
+    {
+      "target": "#138528",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct work remains on the watchdog abort path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158890",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158890",
+      "candidate_fix": null,
+      "reason": "Implementation must wait for a writable executor to establish the required failing isolated-automation regression on this main SHA."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
