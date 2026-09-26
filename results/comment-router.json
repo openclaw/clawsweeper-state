@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T10:26:47.327Z",
+  "updated_at": "2026-09-26T10:28:42.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:253:5842873684:2026-09-26T05:01:42Z:clawsweeper_needs_human",
-      "comment_id": "5842873684",
-      "comment_version_key": "5842873684:2026-09-26T05:01:42Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/253#issuecomment-5842873684",
-      "comment_created_at": "2026-09-26T03:43:59Z",
-      "comment_updated_at": "2026-09-26T05:01:42Z",
-      "comment_body_sha256": "019b14c5b5a35c4d7b1ccc2fee543c57559483d73abfc7c3b880f257b1a9d3b9",
-      "repo": "openclaw/ocm",
-      "issue_number": 253,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an interrupted worker, a fresh request can enter the ordinary upgrade path without a recorded recovery acknowledgement. Locks wait for known surviving writers, but they cannot e... (sha=1c190d8e667f464752643b3aaad063996d565623)",
-      "expected_head_sha": "1c190d8e667f464752643b3aaad063996d565623",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T05:08:16.386Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "update-job",
-        "head_sha": "1c190d8e667f464752643b3aaad063996d565623",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158660:5843412221:2026-09-26T05:09:02Z:clawsweeper_needs_human",
       "comment_id": "5843412221",
@@ -32415,6 +32382,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158332:5845479742:2026-09-26T10:27:31Z:re_review",
+      "comment_id": "5845479742",
+      "comment_version_key": "5845479742:2026-09-26T10:27:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/158332#issuecomment-5845479742",
+      "comment_created_at": "2026-09-26T10:27:31Z",
+      "comment_updated_at": "2026-09-26T10:27:31Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158332,
+      "author": "tre1d",
+      "author_id": 328665369,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T10:28:41.123Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
