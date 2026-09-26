@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158944"
 mode: "autonomous"
-run_id: "36250339633"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36250339633"
+run_id: "36253575758"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36253575758"
 head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-26T15:41:54.800Z"
-canonical: "https://github.com/openclaw/openclaw/issues/158944"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/158944"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-26T15:58:04.009Z"
+canonical: "#158944"
+canonical_issue: "#158944"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36250339633](https://github.com/openclaw/clawsweeper/actions/runs/36250339633)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36253575758](https://github.com/openclaw/clawsweeper/actions/runs/36253575758)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/158944
+Canonical: #158944
 
 ## Summary
 
-The bug reproduces on checkout 785fdcaa54574186236343ccf3f98680083bf459: the shared formatter labels plugin expiry and cancellation as Denied. A narrow fix is planned, but the read-only checkout and absent dependencies prevented editing, validation, and PR creation.
+Plan a narrow fix for the open plugin approval card bug on main 71ca294e. Source inspection confirms the reported failure path. No code was changed or tests run in this read-only worker.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The bug reproduces on checkout 785fdcaa54574186236343ccf3f98680083bf459: the sha
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158944 | fix_needed | planned | canonical | The reported behavior remains reproducible in the current source. |
-| cluster:issue-openclaw-openclaw-158944 | build_fix_artifact | planned |  | The existing owners support a narrow fix without changing approval authorization. |
-| cluster:issue-openclaw-openclaw-158944 | open_fix_pr | blocked |  | Implementation requires a writable checkout with repository dependencies available. |
+| #158944 | fix_needed | planned | canonical | A focused implementation is justified, but this read-only worker could not add and run the required failing regression or validate a branch. |
 
 ## Needs Human
 
