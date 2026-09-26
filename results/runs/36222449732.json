@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158675",
+  "mode": "autonomous",
+  "run_id": "36222449732",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36222449732",
+  "head_sha": "726760a4e31bd88b10982908e042f59f01c7a18b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158675.md",
+  "published_at": "2026-09-26T06:32:47.311Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158675",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158675",
+  "canonical_pr": null,
+  "summary": "Current main still returns a bare Code Mode module-access refusal from both source validation and the Node worker. A narrow fix is warranted, but this read-only checkout has no installed dependencies; the focused test stops in Corepack with EROFS before running. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#158675",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158675",
+      "candidate_fix": null,
+      "reason": "The reported feedback defect remains in current source."
+    },
+    {
+      "target": "#57443",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Outside this Code Mode feedback fix."
+    },
+    {
+      "target": "#153896",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158675",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#158675",
+      "candidate_fix": null,
+      "reason": "Add actionable tool guidance to both existing rejection paths without changing the restriction or classification."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158675",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158675",
+      "candidate_fix": null,
+      "reason": "The read-only host prevents adding the failing boundary regression, implementing the fix, and validating a PR branch."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_independent": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
