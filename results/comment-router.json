@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-26T12:21:03.803Z",
+  "updated_at": "2026-09-26T12:21:09.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4607931039:2026-06-02T23:57:49Z:re_review",
-      "comment_id": "4607931039",
-      "comment_version_key": "4607931039:2026-06-02T23:57:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4607931039",
-      "comment_created_at": "2026-06-02T23:57:49Z",
-      "comment_updated_at": "2026-06-02T23:57:49Z",
-      "comment_body_sha256": "90a8f8ed207dbd5853ab9003b7e2b511ad663ae38d251e8eb9dc509ad809d557",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — head `3a5baafd3` adds doctor migration + fresh-install + conflict tests for followup_queue_entries (see pr body proof). @openclaw-mantis telegram desktop proof: verify this pr by queuing a telegram followup during an active turn, restarting the gateway, and confirming the queued reply is delivered exactly once with reply context intact",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T06:09:24.752Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4608247916:2026-06-03T01:12:55Z:re_review",
       "comment_id": "4608247916",
@@ -32567,6 +32540,39 @@
       "status": "skipped",
       "processed_at": "2026-09-26T12:21:03.803Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158732:5844413614:2026-09-26T12:19:28Z:clawsweeper_needs_human",
+      "comment_id": "5844413614",
+      "comment_version_key": "5844413614:2026-09-26T12:19:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158732#issuecomment-5844413614",
+      "comment_created_at": "2026-09-26T07:54:43Z",
+      "comment_updated_at": "2026-09-26T12:19:28Z",
+      "comment_body_sha256": "d94dbde1ea909a54c9c191230cba655617075b3405be390767513ce63998bfe6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158732,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new config parser accepts legacyWebhook rather than stored webhookPort/webhookHost. If the installed updater or startup misses Doctor’s transform, an existing explicitly configure... (sha=3b4b23f54f5a6149bfe8942470a2d1a15f6557ae)",
+      "expected_head_sha": "3b4b23f54f5a6149bfe8942470a2d1a15f6557ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T12:21:09.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/http-ingress-03-telegram",
+        "head_sha": "3b4b23f54f5a6149bfe8942470a2d1a15f6557ae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
