@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159184",
+  "mode": "autonomous",
+  "run_id": "36273068313",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36273068313",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159184.md",
+  "published_at": "2026-09-26T22:00:34.503Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_pr": null,
+  "summary": "The current main SHA has a source-backed path from a prompt-size HTTP 400 to rate-limit retries. A failing regression, patch, and local validation remain uncompleted because this checkout is read-only and test dependencies are absent.",
+  "actions": [
+    {
+      "target": "#159184",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "The reported behavior remains a narrow, plausible bug requiring a production-boundary regression before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159184",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Implementation must run in a writable checkout with dependencies restored; do not open a PR from unvalidated source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
