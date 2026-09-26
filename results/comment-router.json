@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T23:09:49.956Z",
+  "updated_at": "2026-09-26T23:10:03.376Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158267:5838097135:2026-09-26T16:09:34Z:clawsweeper_needs_human",
-      "comment_id": "5838097135",
-      "comment_version_key": "5838097135:2026-09-26T16:09:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158267#issuecomment-5838097135",
-      "comment_created_at": "2026-09-25T19:09:14Z",
-      "comment_updated_at": "2026-09-26T16:09:34Z",
-      "comment_body_sha256": "721afee5d6b34de3bd0f85648a953eb3d59beed51e8663012c08311746601037",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158267,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Delayed safety regression detection** - The exemption inventory includes approval-grant and SecretRef owner-isolation compositions. An unrelated cross-component change can pass PR check...; Review finding: [medium] Delayed safety regression detection — scripts/lib/ci-proof-test-inventory.mts:210 (sha=820a31ae78dc5e939da3fbb6a1fd49523641d1fa)",
-      "expected_head_sha": "820a31ae78dc5e939da3fbb6a1fd49523641d1fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T16:10:44.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/rv2-pr-exempt",
-        "head_sha": "820a31ae78dc5e939da3fbb6a1fd49523641d1fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158582:5847593882:2026-09-26T15:45:55Z:re_review",
       "comment_id": "5847593882",
@@ -33088,6 +33055,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5850760447:2026-09-26T23:08:56Z:re_review",
+      "comment_id": "5850760447",
+      "comment_version_key": "5850760447:2026-09-26T23:08:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5850760447",
+      "comment_created_at": "2026-09-26T23:08:56Z",
+      "comment_updated_at": "2026-09-26T23:08:56Z",
+      "comment_body_sha256": "4331f28ce09de2f746fd899570c66cb891d622b4171568a4323dc68c1d2c5e78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main (bf13028f → 157f8b4e0e, 109 commits, clean auto-merge, no conflicts). skill-selection audit files intact, focused tests 6/6 green. branch now 0 behind main",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T23:10:02.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "157f8b4e0e9f15b42eb383468eeeef9fa7cda211",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
