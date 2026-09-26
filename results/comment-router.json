@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-26T10:06:13.187Z",
+  "updated_at": "2026-09-26T10:06:24.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158642:5843334252:2026-09-26T04:56:01Z:re_review",
-      "comment_id": "5843334252",
-      "comment_version_key": "5843334252:2026-09-26T04:56:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158642#issuecomment-5843334252",
-      "comment_created_at": "2026-09-26T04:56:01Z",
-      "comment_updated_at": "2026-09-26T04:56:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158642,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T04:57:03.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/yield-settle-wake-158603",
-        "head_sha": "9281ad9aecc29b9c26b8708f33b5dd002fc7e296",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158655:5843335010:2026-09-26T04:56:09Z:clawsweeper_needs_human",
       "comment_id": "5843335010",
@@ -32496,6 +32449,39 @@
         "kind": "pull_request",
         "branch": "perf/l54-tool-catalog-allocations",
         "head_sha": "2fb081b05e00da30c14821c467ecfc1ce2b0ee3c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154807:5760403738:2026-09-26T10:05:18Z:clawsweeper_needs_human",
+      "comment_id": "5760403738",
+      "comment_version_key": "5760403738:2026-09-26T10:05:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154807#issuecomment-5760403738",
+      "comment_created_at": "2026-09-21T12:22:00Z",
+      "comment_updated_at": "2026-09-26T10:05:18Z",
+      "comment_body_sha256": "af9f08e1c0d0fc7545318fd6bab7d292aa59a5b277642a8253663017bdca037d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154807,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head has no browser request trace showing that a placeholder refresh retains the visible queued choice and that the next settings write targets the acknowledged session ID... (sha=1d1b0c06e2359d7c3212be23725f45bfa82da561)",
+      "expected_head_sha": "1d1b0c06e2359d7c3212be23725f45bfa82da561",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-26T10:06:24.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/swarm-settings-materialization-20260921",
+        "head_sha": "1d1b0c06e2359d7c3212be23725f45bfa82da561",
         "cluster_id": null,
         "job_path": null
       }
