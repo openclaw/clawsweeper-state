@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-26T08:22:14.118Z",
+  "updated_at": "2026-09-26T08:23:01.327Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:518:5835909830:2026-09-26T03:35:10Z:clawsweeper_auto_repair",
-      "comment_id": "5835909830",
-      "comment_version_key": "5835909830:2026-09-26T03:35:10Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/518#issuecomment-5835909830",
-      "comment_created_at": "2026-09-25T16:35:47Z",
-      "comment_updated_at": "2026-09-26T03:35:10Z",
-      "comment_body_sha256": "898c57f676df8e92c79e25d39e0d36e8d1562fee6110697ce94891692e58b0fb",
-      "repo": "steipete/oracle",
-      "issue_number": 518,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e42699d1aa2090eedf5c0d26f424f8d35e1d0cec)",
-      "expected_head_sha": "e42699d1aa2090eedf5c0d26f424f8d35e1d0cec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T03:36:06.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gpt6-pro-picker-20260926",
-        "head_sha": "e42699d1aa2090eedf5c0d26f424f8d35e1d0cec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:822:5842377351:2026-09-26T03:36:01Z:clawsweeper_needs_human",
       "comment_id": "5842377351",
@@ -32651,6 +32618,53 @@
       "status": "skipped",
       "processed_at": "2026-09-26T08:22:14.118Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158195:5844571026:2026-09-26T08:21:59Z:re_review",
+      "comment_id": "5844571026",
+      "comment_version_key": "5844571026:2026-09-26T08:21:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158195#issuecomment-5844571026",
+      "comment_created_at": "2026-09-26T08:21:59Z",
+      "comment_updated_at": "2026-09-26T08:21:59Z",
+      "comment_body_sha256": "414e95fd3d9d917f4ee778fd5ac96f1cb6149e58b48cfc38edca1447f04edb9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158195,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-26T08:22:58.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-finalizer-runtime-repair",
+        "head_sha": "c49ae4dd1d1d290057b8fe75a91b1fad8ef36292",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
