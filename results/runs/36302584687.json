@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36302584687",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36302584687",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T07:56:36.737Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Current main still omits vision-capable offloaded WebChat images from the managed-media staging handoff. Implementation is blocked because this checkout is read-only: the required failing regression, patch, validation, and real upload/file-read proof could not be performed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Source establishes the missing handoff, but a production-boundary failing regression and real upload/file-read result remain required before implementation can be claimed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout to demonstrate the pre-fix failure, make the narrow patch, and complete the requested proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
