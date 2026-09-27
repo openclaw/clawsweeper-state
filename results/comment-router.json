@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T18:37:50.570Z",
+  "updated_at": "2026-09-27T18:38:11.220Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122779:5271674787:2026-09-27T12:26:54Z:clawsweeper_needs_human",
-      "comment_id": "5271674787",
-      "comment_version_key": "5271674787:2026-09-27T12:26:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122779#issuecomment-5271674787",
-      "comment_created_at": "2026-08-12T19:18:34Z",
-      "comment_updated_at": "2026-09-27T12:26:54Z",
-      "comment_body_sha256": "375691e8cf8abf3f858bb10ca0630ea14789011b831ced40e771ad62b3fd85b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122779,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Classify auth failures using a supported Codex result (P1)** - Codex 0.147.0 converts rate-limit backend failures to JSON-RPC -32603 with no structured data. These predicates therefore leave the central expired...; Review finding: [P1] Classify auth failures using a supported Codex result — extensions/codex/src/app-server/connection-health.ts:249-258 - [P2] Treat valid API-key accounts as an... (sha=562b5daac3319979eb5ff190f93a0ca50e7faa4b)",
-      "expected_head_sha": "562b5daac3319979eb5ff190f93a0ca50e7faa4b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T12:33:08.804Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/kevinlin/model-auth-readiness-observability",
-        "head_sha": "562b5daac3319979eb5ff190f93a0ca50e7faa4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123930:5300071462:2026-09-27T12:28:02Z:clawsweeper_auto_repair",
       "comment_id": "5300071462",
@@ -33838,6 +33805,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159813:5858628957:2026-09-27T18:37:22Z:re_review",
+      "comment_id": "5858628957",
+      "comment_version_key": "5858628957:2026-09-27T18:37:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159813#issuecomment-5858628957",
+      "comment_created_at": "2026-09-27T18:37:22Z",
+      "comment_updated_at": "2026-09-27T18:37:22Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159813,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T18:38:09.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-prior-attempt-artifact",
+        "head_sha": "32a93ee56aa5ef9602fc38767e3772c8c76c3850",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
