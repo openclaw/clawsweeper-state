@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T23:24:47.631Z",
+  "updated_at": "2026-09-27T23:25:09.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159785:5858076169:2026-09-27T17:24:12Z:re_review",
-      "comment_id": "5858076169",
-      "comment_version_key": "5858076169:2026-09-27T17:24:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159785#issuecomment-5858076169",
-      "comment_created_at": "2026-09-27T17:24:12Z",
-      "comment_updated_at": "2026-09-27T17:24:12Z",
-      "comment_body_sha256": "ff1477792e58d7d64212eecb3b75d5d95ffa10192b4d1b08583a96c287b56802",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159785,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T17:24:59.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-159746-russian-recall",
-        "head_sha": "18b4341195d9ee9a42a322614709b7493376e6e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159465:5858003896:2026-09-27T17:14:06Z:re_review",
       "comment_id": "5858003896",
@@ -33788,6 +33741,39 @@
         "kind": "pull_request",
         "branch": "openclaw/move-controls-below-tables",
         "head_sha": "fbb00b45be7d8d291c178d042a943da3a8ad90e2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159952:5860796330:2026-09-27T23:24:10Z:clawsweeper_needs_human",
+      "comment_id": "5860796330",
+      "comment_version_key": "5860796330:2026-09-27T23:24:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159952#issuecomment-5860796330",
+      "comment_created_at": "2026-09-27T23:24:10Z",
+      "comment_updated_at": "2026-09-27T23:24:10Z",
+      "comment_body_sha256": "22f302ab2d05138f6ce9356419affdd25336b7b4666fb050bbf648a8007f88a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159952,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain the updater's revoked-owner persistence cases (P2)** - The replacement case only throws an ordinary config error while the owner remains live. Removing the index and config abort cases leaves no updater-l...; Review finding: [P2] Retain the updater's revoked-owner persistence cases — src/cli/update-cli/update-command-plugins.persistence.test.ts:43 - [medium] Revoked-owner persistence c... (sha=4dac775c1ab99852209c65ffab21880d0c8826ca)",
+      "expected_head_sha": "4dac775c1ab99852209c65ffab21880d0c8826ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T23:25:09.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d077-1790547820",
+        "head_sha": "4dac775c1ab99852209c65ffab21880d0c8826ca",
         "cluster_id": null,
         "job_path": null
       }
