@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-27T16:35:48.639Z",
+  "updated_at": "2026-09-27T16:35:32.034Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159502:5855185454:2026-09-27T10:50:22Z:re_review",
+      "comment_id": "5855185454",
+      "comment_version_key": "5855185454:2026-09-27T10:50:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159502#issuecomment-5855185454",
+      "comment_created_at": "2026-09-27T10:50:22Z",
+      "comment_updated_at": "2026-09-27T10:50:22Z",
+      "comment_body_sha256": "40e4143ce3949b4b07ea5260467e413b0d4bee95d3d2febb5b7be250c1abea3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159502,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T10:59:23.903Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/steering-skip-status",
+        "head_sha": "0328a583f8049fd86f7b2e984ee15e3c7d68831f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159594:5855073038:2026-09-27T10:58:37Z:clawsweeper_needs_human",
       "comment_id": "5855073038",
@@ -33681,39 +33728,6 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1506:5806090970:2026-09-27T16:34:45Z:clawsweeper_needs_human",
-      "comment_id": "5806090970",
-      "comment_version_key": "5806090970:2026-09-27T16:34:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1506#issuecomment-5806090970",
-      "comment_created_at": "2026-09-24T01:57:23Z",
-      "comment_updated_at": "2026-09-27T16:34:45Z",
-      "comment_body_sha256": "22c88c9054535e56fd3d2dd0e4b2f68a9b2722745f0506bd1f50983b9123df59",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1506,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported native WinUI fixture at cba7b9b0 shows wildcard-row removal and persisted reload, but it...; Review finding: [P1] Identify each rule's main or wildcard scope before removal — src/OpenClaw.Tray.WinUI/Presentation/PermissionsPageViewModel.cs:725-732 - [P1] Prevent Add from... (sha=aae72e42f8b723955f4b8d23ede3ac03c5ed41a5)",
-      "expected_head_sha": "aae72e42f8b723955f4b8d23ede3ac03c5ed41a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T16:35:48.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f078-wildcard-exec-policy",
-        "head_sha": "aae72e42f8b723955f4b8d23ede3ac03c5ed41a5",
         "cluster_id": null,
         "job_path": null
       }
