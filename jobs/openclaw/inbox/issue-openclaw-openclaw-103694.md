@@ -67,13 +67,14 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair repeated unknown-format warnings from healthy MCP tool schemas at src/agents/mcp-json-schema-validator.ts. First establish a failing regression on the current production catalog path using an unregistered format and a registered format. Use dependency-authoritative SDK/Ajv format handling or configuration; do not copy a format registry, disable supported-format validation, add a setting, or change MCP transport behavior. Keep the repair bounded to the validator and its meaningful owner-boundary coverage, with a real catalog-load observation after the fix. Related context: https://github.com/openclaw/openclaw/pull/103699 closed unmerged because its copied registry could drift. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing MCP unknown-format warning bug reported at https://github.com/openclaw/openclaw/issues/103694. Establish a failing regression through catalog loading or the shared validator before editing. Inspect the pinned MCP SDK validator and its authoritative supported-format handling; repair src/agents/mcp-json-schema-validator.ts so vendor-specific annotations do not emit repeated warnings while supported formats still reject invalid values. Cover the agent catalog path and the node-host caller where relevant. Do not copy a handwritten format registry, disable all format validation, add a config option, or change stored data. Use focused owner-boundary tests, then run node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts, node scripts/run-vitest.mjs src/agents/agent-bundle-mcp-runtime.test.ts, and git diff --check. Record before/after runtime behavior and test cost in the PR; put release-note context in the PR body, not CHANGELOG.md. Stop and return for review if the SDK lacks a narrow, dependency-backed repair path.
 
 Likely files:
 
 - src/agents/mcp-json-schema-validator.ts
 - src/agents/mcp-tool-metadata.test.ts
 - src/agents/agent-bundle-mcp-runtime.test.ts
+- src/node-host/mcp.ts
 
 Validation:
 
