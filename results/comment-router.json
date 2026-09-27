@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T00:27:49.554Z",
+  "updated_at": "2026-09-27T00:28:16.657Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149278:5685066426:2026-09-26T17:09:11Z:clawsweeper_needs_human",
-      "comment_id": "5685066426",
-      "comment_version_key": "5685066426:2026-09-26T17:09:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149278#issuecomment-5685066426",
-      "comment_created_at": "2026-09-15T17:39:30Z",
-      "comment_updated_at": "2026-09-26T17:09:11Z",
-      "comment_body_sha256": "d21d28cd1fa7787dfcd90ce542dfe58337b853d8e1ab7a8ec43075d80247b190",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149278,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The source-backed fixture exercises the real consultation and Telegram plugin through loopback model, Gateway, and Bot API stand-ins, including... (sha=84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8)",
-      "expected_head_sha": "84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T17:21:34.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw-realtime-voice-model",
-        "head_sha": "84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149490:5689480119:2026-09-26T17:10:16Z:clawsweeper_auto_repair",
       "comment_id": "5689480119",
@@ -33164,6 +33131,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159136:5851263720:2026-09-27T00:27:25Z:re_review",
+      "comment_id": "5851263720",
+      "comment_version_key": "5851263720:2026-09-27T00:27:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159136#issuecomment-5851263720",
+      "comment_created_at": "2026-09-27T00:27:25Z",
+      "comment_updated_at": "2026-09-27T00:27:25Z",
+      "comment_body_sha256": "251f8704bf3ba640321241df9e91ef839b49ab397ef08569a74d39563cfc5805",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159136,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the rev 5 p1 (caller-writable generic-token `currentchannelid` selecting the binding target) is addressed on head `b727a17b` with a host-minted provenance fail-closed:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T00:28:15.414Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spawn-thread-binding-origin",
+        "head_sha": "b727a17b72a666b96444599f2c9922a8bde9c3a4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
