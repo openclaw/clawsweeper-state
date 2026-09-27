@@ -67,20 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing agent-runtime bug where a provider HTTP 400 describing a per-request prompt-size cap is classified as a transient rate limit because of an inner code, causing repeated same-model retries and misleading user guidance. First establish a failing regression through the production assistant-error signal and recovery path. Repair the shared failover classifier and bounded user copy; preserve genuine HTTP 400 rate-limit cases and the existing HTTP 429 retry contract. Add focused coverage for the reported response shape and a genuine rate-limit sibling. Do not add a config option, change retry budgets, alter stored data, or edit CHANGELOG.md. Stop and return to triage if the fix requires a new product policy.
+On current main, first establish a failing regression for a provider HTTP 400 with inner code rate_limit_exceeded and the reported prompt-size wording. Keep the merged same-model retry behavior intact. Repair the existing user-copy owner to show bounded guidance to shorten the request without exposing arbitrary provider payloads or changing general rate-limit copy. Add focused regression coverage in src/agents/failover/user-copy.test.ts and, if needed, the assistant-error formatting test. Validate the relevant focused tests. Record user-visible behavior in the PR body; do not edit CHANGELOG.md. Stop if the repair requires a new feature, configuration option, or product-policy decision.
 
 Likely files:
 
-- src/agents/failover/classify-core.ts
-- src/agents/failover/classification-rules.ts
-- src/agents/failover/failover-classification.structured-misc.cases.ts
 - src/agents/failover/user-copy.ts
+- src/agents/failover/user-copy.test.ts
+- src/agents/embedded-agent-helpers.formatassistanterrortext.test.ts
 
 Validation:
 
-- pnpm test src/agents/failover/failover-classification.corpus.test.ts --maxWorkers=1
-- pnpm test src/agents/embedded-agent-runner/run/failover-retry-controller.test.ts --maxWorkers=1
 - pnpm test src/agents/failover/user-copy.test.ts --maxWorkers=1
+- pnpm test src/agents/embedded-agent-helpers.formatassistanterrortext.test.ts --maxWorkers=1
 
 ## Operator Prompt
 
