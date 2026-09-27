@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "plan"
-run_id: "36344685802"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36344685802"
+mode: "autonomous"
+run_id: "36346430611"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36346430611"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-27T19:35:31.686Z"
-canonical: "#156442"
-canonical_issue: "#156442"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-27T20:51:58.297Z"
+canonical: "https://github.com/openclaw/openclaw/issues/156442"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36344685802](https://github.com/openclaw/clawsweeper/actions/runs/36344685802)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36346430611](https://github.com/openclaw/clawsweeper/actions/runs/36346430611)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #156442
+Canonical: https://github.com/openclaw/openclaw/issues/156442
 
 ## Summary
 
-Plan a narrow Claude CLI recovery fix. First confirm the reported nonempty refresh-lock error fails through the CLI execution and fallback boundary on preflight main 8d4d13c9e4e446b7ad72d3744ce52bcdc3100b9a; the read-only checkout is at a different SHA. No code or GitHub state was changed.
+The reported Claude CLI failure remains reachable on main aea578dbe03ad0e79e5d9563a4b0c6fbb52e9242. A narrow fix is warranted, but this checkout is read-only and has no installed dependencies. No regression test, patch, validation run, branch, or PR was created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,11 @@ Plan a narrow Claude CLI recovery fix. First confirm the reported nonempty refre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156442 | fix_needed | planned | canonical | The closed source PR did not land. Confirm the failure on the preflight main SHA, then implement one bounded same-candidate, same-session retry. |
-| #8673 | keep_related | planned | related | It has a separate refresh owner and must stay open for its own decision. |
-| #89278 | keep_related | planned | related | Its remaining diagnostic work is outside this cluster's Claude CLI retry. |
-| #156572 | keep_closed | skipped |  | Use its approach as credited historical context; no close or merge action is valid. |
+| #156442 | fix_needed | planned | canonical | Retry the same Claude CLI candidate once only when the reported native refresh-lock failure occurs before completed output or side effects. |
+| #8673 | keep_related | planned | related | Distinct refresh owner and failure path. |
+| #89278 | keep_related | planned | related | Distinct backend and remaining repair. |
+| #156572 | keep_closed | skipped | related | Useful historical implementation and credit context; no action on a closed PR. |
+| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies. |
 
 ## Needs Human
 

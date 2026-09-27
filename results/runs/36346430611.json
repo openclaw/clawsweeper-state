@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156442",
+  "mode": "autonomous",
+  "run_id": "36346430611",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36346430611",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156442.md",
+  "published_at": "2026-09-27T20:51:58.297Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_pr": null,
+  "summary": "The reported Claude CLI failure remains reachable on main aea578dbe03ad0e79e5d9563a4b0c6fbb52e9242. A narrow fix is warranted, but this checkout is read-only and has no installed dependencies. No regression test, patch, validation run, branch, or PR was created.",
+  "actions": [
+    {
+      "target": "#156442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "Retry the same Claude CLI candidate once only when the reported native refresh-lock failure occurs before completed output or side effects."
+    },
+    {
+      "target": "#8673",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "Distinct refresh owner and failure path."
+    },
+    {
+      "target": "#89278",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "Distinct backend and remaining repair."
+    },
+    {
+      "target": "#156572",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "Useful historical implementation and credit context; no action on a closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156442",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
