@@ -67,24 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the reported Claude CLI native OAuth refresh-lock failure in the existing CLI execution/recovery boundary. First establish a failing regression using the exact reported process error and the production error-to-recovery path. Preserve vendor-specific recognition with the Anthropic owner where existing contracts allow it; do not add a competing retry manager. Retry only this positively identified, safe pre-work transient failure, with a bounded abortable delay and the remaining monotonic run budget, before model fallback. Preserve the admitted context, model, session binding, cancellation, current-authority checks, cleanup, and terminal side-effect protections. Cover both fresh and resumed turns and the applicable process/plugin execution paths. Prove success after contention, bounded exhaustion, cancellation during delay, insufficient budget, and nonmatching permanent-auth errors; do not replay completed tool or message effects. Do not read, poll, refresh, delete, or rewrite native Claude credentials or lock files. Add no config option, dependency change, schema change, or public plugin API without returning for triage. Extend existing focused fixtures, using fake timers rather than wall-clock waits. Run the listed focused checks and changed-file gates; record test wall time and real boundary evidence with private details redacted. Put user-visible context in the PR body, not CHANGELOG.md. Recheck for an owning open PR before creating one.
+Fix the Claude CLI native OAuth refresh-lock failure reported in https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression using the reported Claude Code error text through the CLI process-result and runCliRecovery boundary. In the existing recovery owner, permit one cancellable same-candidate retry after a bounded wait within the original monotonic deadline only when the exact transient lock failure occurred before delivered work; preserve the admitted run context and session, and retain existing terminal behavior for a second lock failure, other auth errors, delivered work, and cancellation. Do not read or refresh Claude Code credentials, add a config option, or change unrelated provider fallback policy. Treat https://github.com/openclaw/openclaw/pull/156572 as closed, unmerged reference work and credit it where appropriate. Run focused CLI recovery and reliability tests plus the applicable changed-lane checks. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/cli-runner/cli-run-recovery.ts
-- src/agents/cli-runner/exit-error.ts
-- src/agents/cli-runner/output-error.ts
 - src/agents/cli-runner/cli-run-recovery.test.ts
 - src/agents/cli-runner.reliability.test.ts
-- extensions/anthropic/cli.runtime.ts
 
 Validation:
 
 - pnpm test src/agents/cli-runner/cli-run-recovery.test.ts --maxWorkers=1
 - pnpm test src/agents/cli-runner.reliability.test.ts --maxWorkers=1
-- pnpm test src/agents/cli-runner/execute.supervisor-capture.test.ts --maxWorkers=1
 - pnpm changed:lanes --json
-- git diff --check
+- pnpm check:changed
 
 ## Operator Prompt
 
