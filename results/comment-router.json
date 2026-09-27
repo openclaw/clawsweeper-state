@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T18:06:09.397Z",
+  "updated_at": "2026-09-27T18:06:21.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:844:5855676479:2026-09-27T12:07:23Z:re_review",
-      "comment_id": "5855676479",
-      "comment_version_key": "5855676479:2026-09-27T12:07:23Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/844#issuecomment-5855676479",
-      "comment_created_at": "2026-09-27T12:07:23Z",
-      "comment_updated_at": "2026-09-27T12:07:23Z",
-      "comment_body_sha256": "a6fa95bb6b282cdddd6fff756b5a7f206916a66530821094e70ea2b1e31a42a8",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 844,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T12:13:58.074Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/verify-selector-guidance",
-        "head_sha": "333d543d4817e9c71aab5847c3cb0f5f7f272ada",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:844:5855623900:2026-09-27T12:13:05Z:clawsweeper_needs_human",
       "comment_id": "5855623900",
@@ -33887,6 +33840,39 @@
         "kind": "pull_request",
         "branch": "deslop/l79-infra4",
         "head_sha": "30e246cc1c4eaf8e1c73abb47db242615aa7b1b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159546:5854301473:2026-09-27T18:01:19Z:clawsweeper_needs_human",
+      "comment_id": "5854301473",
+      "comment_version_key": "5854301473:2026-09-27T18:01:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159546#issuecomment-5854301473",
+      "comment_created_at": "2026-09-27T08:43:24Z",
+      "comment_updated_at": "2026-09-27T18:01:19Z",
+      "comment_body_sha256": "16ceb592a171a4a3a9cb0a1d1b98da42f7a328f327cb317581442d64d8149fa6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159546,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Extra node-worker bundle downloads** - A successfully used node-worker bundle bearer can fetch the archive again while its install owner remains live, although the current installer iss...; Review finding: [medium] Extra node-worker bundle downloads — src/gateway/worker-environments/artifact-transfer-service.ts:104 (sha=b36525ce24092e7cb6aaab56e5f6e8bc6d5b4af9)",
+      "expected_head_sha": "b36525ce24092e7cb6aaab56e5f6e8bc6d5b4af9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T18:06:21.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bootstrap-download-retry",
+        "head_sha": "b36525ce24092e7cb6aaab56e5f6e8bc6d5b4af9",
         "cluster_id": null,
         "job_path": null
       }
