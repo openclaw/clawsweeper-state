@@ -67,11 +67,12 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the Claude CLI native OAuth refresh-lock failure reported in https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression using the reported Claude Code error text through the CLI process-result and runCliRecovery boundary. In the existing recovery owner, permit one cancellable same-candidate retry after a bounded wait within the original monotonic deadline only when the exact transient lock failure occurred before delivered work; preserve the admitted run context and session, and retain existing terminal behavior for a second lock failure, other auth errors, delivered work, and cancellation. Do not read or refresh Claude Code credentials, add a config option, or change unrelated provider fallback policy. Treat https://github.com/openclaw/openclaw/pull/156572 as closed, unmerged reference work and credit it where appropriate. Run focused CLI recovery and reliability tests plus the applicable changed-lane checks. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing Claude CLI refresh-lock recovery bug reported at https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression for the reported nonempty Claude Code error through the CLI process-result boundary. In src/agents/cli-runner/cli-run-recovery.ts and the narrowest necessary error-classification code, retry only this pre-work contention failure once on the same admitted candidate and session, with a cancellable wait inside the remaining turn deadline. Do not read or refresh Claude credentials, replay delivered work, retry cancellation or unrelated auth errors, add a config option, or alter fallback policy. Add meaningful regression coverage, including a second contention failure and cancellation. Prove after-fix recovery through the production CLI transport with an injected fault and real transport client; report the observed trace and any limits. Run the focused recovery and CLI reliability tests plus changed-scope checks. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/cli-runner/cli-run-recovery.ts
+- src/agents/cli-runner/exit-error.ts
 - src/agents/cli-runner/cli-run-recovery.test.ts
 - src/agents/cli-runner.reliability.test.ts
 
