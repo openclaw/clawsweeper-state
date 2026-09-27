@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T10:14:05.333Z",
+  "updated_at": "2026-09-27T10:14:35.179Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158901:5848810058:2026-09-26T18:37:06Z:re_review",
-      "comment_id": "5848810058",
-      "comment_version_key": "5848810058:2026-09-26T18:37:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158901#issuecomment-5848810058",
-      "comment_created_at": "2026-09-26T18:37:06Z",
-      "comment_updated_at": "2026-09-26T18:37:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158901,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T04:38:23.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-native-worker-runtime",
-        "head_sha": "9f1f817120f1f1b05ad2fe0196a904d50ebc08c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158901:5846664637:2026-09-27T04:25:25Z:clawsweeper_needs_human",
       "comment_id": "5846664637",
@@ -33403,6 +33356,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-watch-live-overflow-20260927",
         "head_sha": "d416a447dced837f83580d90867089f030516b48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159362:5852225095:2026-09-27T10:13:43Z:clawsweeper_needs_human",
+      "comment_id": "5852225095",
+      "comment_version_key": "5852225095:2026-09-27T10:13:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159362#issuecomment-5852225095",
+      "comment_created_at": "2026-09-27T03:15:33Z",
+      "comment_updated_at": "2026-09-27T10:13:43Z",
+      "comment_body_sha256": "6f936a19a578f71ba7cdd524f67dc01d5fae55d5fc97a0ea4b35c3056f5e7b5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159362,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor changes CI planning and release automation, but its pinned hosted run did not complete. Integrating current main's separate fixture repair and obtaining a passing exact-h... (sha=fe9d0bc3503e9af323e40c28bfe62ee89cf151c4)",
+      "expected_head_sha": "fe9d0bc3503e9af323e40c28bfe62ee89cf151c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T10:14:35.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l96-scripts-lib-refresh",
+        "head_sha": "fe9d0bc3503e9af323e40c28bfe62ee89cf151c4",
         "cluster_id": null,
         "job_path": null
       }
