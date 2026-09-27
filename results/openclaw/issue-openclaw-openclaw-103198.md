@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103198"
 mode: "autonomous"
-run_id: "36326342051"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36326342051"
+run_id: "36329304669"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36329304669"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T15:21:56.088Z"
+published_at: "2026-09-27T15:58:53.657Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103198"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103198"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36326342051](https://github.com/openclaw/clawsweeper/actions/runs/36326342051)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36329304669](https://github.com/openclaw/clawsweeper/actions/runs/36329304669)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103198
 
 ## Summary
 
-Current main still has the reported offloaded-image gap in the chat.send path. The checkout is read-only, so I could not add a failing regression, implement the fix, run validation, or prepare the PR branch. No GitHub mutation was made.
+Current main still omits vision-capable offloaded WebChat images from active-turn staging. Source inspection establishes the failing path, but this checkout is read-only, so I could not add or run the required failing chat.send regression, change code, or validate a PR branch.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main still has the reported offloaded-image gap in the chat.send path. T
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103198 | fix_needed | planned | canonical | A narrow existing-behavior repair is warranted, subject to a failing chat.send regression before editing. |
-| #115076 | keep_related | planned | related | Keep its separate metadata and product-contract discussion open. |
-| #143753 | keep_closed | skipped | related | Historical partial repair; no action on the merged PR. |
-| #86371 | keep_closed | skipped | independent | Closed historical context only. |
-| cluster:issue-openclaw-openclaw-103198 | build_fix_artifact | blocked |  | Implementation requires a writable task checkout and a chat.send regression that fails on this main SHA. |
+| #103198 | fix_needed | planned | canonical | The merged inline repair does not cover vision-capable offloaded images. |
+| #115076 | keep_related | planned | related | Keep its distinct metadata question open. |
+| #143753 | keep_closed | skipped | related | Historical inline-image repair and contributor credit context. |
+| #86371 | keep_closed | skipped | independent | Historical context only. |
+| cluster:issue-openclaw-openclaw-103198 | build_fix_artifact | blocked |  | Implementation needs a writable checkout and a failing chat.send regression before editing. |
 
 ## Needs Human
 
