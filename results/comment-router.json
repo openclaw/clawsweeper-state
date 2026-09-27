@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-27T23:32:34.593Z",
+  "updated_at": "2026-09-27T23:31:37.517Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159658:5856160631:2026-09-27T17:10:31Z:clawsweeper_needs_human",
+      "comment_id": "5856160631",
+      "comment_version_key": "5856160631:2026-09-27T17:10:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159658#issuecomment-5856160631",
+      "comment_created_at": "2026-09-27T13:11:13Z",
+      "comment_updated_at": "2026-09-27T17:10:31Z",
+      "comment_body_sha256": "5a41c2fd807aec0f074d1fcf8a18d7866a18098c624c778b8f5851beddca65c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159658,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Cover matches beyond the sixth middle window (P2)** - With a long enough session key, a regex-only token after the sixth middle window but before the tail still returns false, so an intended approval notificatio...; Review finding: [P2] Cover matches beyond the sixth middle window — src/security/safe-regex.ts:387-395 - [medium] Exact-head security approval pending — src/security/safe-regex.ts... (sha=c867ea7baacc15bc25c519f9508378737daa735a)",
+      "expected_head_sha": "c867ea7baacc15bc25c519f9508378737daa735a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T17:25:16.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/safe-regex-mid-window",
+        "head_sha": "c867ea7baacc15bc25c519f9508378737daa735a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159666:5856340377:2026-09-27T17:22:43Z:clawsweeper_auto_repair",
       "comment_id": "5856340377",
@@ -33772,47 +33805,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159751:5860845902:2026-09-27T23:31:45Z:automerge",
-      "comment_id": "5860845902",
-      "comment_version_key": "5860845902:2026-09-27T23:31:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159751#issuecomment-5860845902",
-      "comment_created_at": "2026-09-27T23:31:45Z",
-      "comment_updated_at": "2026-09-27T23:31:45Z",
-      "comment_body_sha256": "2edc9e2f411483c8c7a91c1426b75e8cef613bcf079b0a35b2f1ec51c2bbc851",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159751,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T23:32:34.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/survivor-recovery-failure-phase",
-        "head_sha": "8980c637fa9c0cd1ff7f64ca0b187d1d5f2d2f7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
