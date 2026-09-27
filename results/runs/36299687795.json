@@ -1,0 +1,60 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159184",
+  "mode": "autonomous",
+  "run_id": "36299687795",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36299687795",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159184.md",
+  "published_at": "2026-09-27T06:22:00.368Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_pr": null,
+  "summary": "At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is already covered by code that prevents same-model retries. The remaining misleading rate-limit guidance may need a separate fix, but the requested retry regression could not be established on this checkout. Dependencies are absent and the workspace is read-only, so no tests or implementation were run.",
+  "actions": [
+    {
+      "target": "#159184",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Keep the issue open for triage of the remaining user guidance. The job requires stopping if the reported retry defect cannot be reproduced on latest main."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#159184",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

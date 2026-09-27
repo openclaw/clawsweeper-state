@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159184"
 mode: "autonomous"
-run_id: "36273068313"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36273068313"
-head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
-workflow_conclusion: "failure"
+run_id: "36299687795"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36299687795"
+head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-26T22:00:34.503Z"
+published_at: "2026-09-27T06:22:00.368Z"
 canonical: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36273068313](https://github.com/openclaw/clawsweeper/actions/runs/36273068313)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36299687795](https://github.com/openclaw/clawsweeper/actions/runs/36299687795)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/159184
 
 ## Summary
 
-The current main SHA has a source-backed path from a prompt-size HTTP 400 to rate-limit retries. A failing regression, patch, and local validation remain uncompleted because this checkout is read-only and test dependencies are absent.
+At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is already covered by code that prevents same-model retries. The remaining misleading rate-limit guidance may need a separate fix, but the requested retry regression could not be established on this checkout. Dependencies are absent and the workspace is read-only, so no tests or implementation were run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The current main SHA has a source-backed path from a prompt-size HTTP 400 to rat
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #159184 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,7 @@ The current main SHA has a source-backed path from a prompt-size HTTP 400 to rat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159184 | fix_needed | planned | canonical | The reported behavior remains a narrow, plausible bug requiring a production-boundary regression before implementation. |
-| cluster:issue-openclaw-openclaw-159184 | build_fix_artifact | blocked |  | Implementation must run in a writable checkout with dependencies restored; do not open a PR from unvalidated source inspection. |
+| #159184 | keep_canonical | planned | canonical | Keep the issue open for triage of the remaining user guidance. The job requires stopping if the reported retry defect cannot be reproduced on latest main. |
 
 ## Needs Human
 
