@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-27T18:29:00.072Z",
+  "updated_at": "2026-09-27T18:25:30.452Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159644:5855817312:2026-09-27T12:28:16Z:clawsweeper_needs_human",
+      "comment_id": "5855817312",
+      "comment_version_key": "5855817312:2026-09-27T12:28:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159644#issuecomment-5855817312",
+      "comment_created_at": "2026-09-27T12:28:16Z",
+      "comment_updated_at": "2026-09-27T12:28:16Z",
+      "comment_body_sha256": "482bae14fc307ffda81dd06adcecb9d411e25bf2e9e1fa34c7c50a93e05f7e43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159644,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final-head updater tests and published-driver × candidate upgrade cell remain unqualified, so post-settlement behavior across the first shipped upgrade hop is unverified. (sha=9aceec89c8b738ebc7a4af0f37d4325f3438c973)",
+      "expected_head_sha": "9aceec89c8b738ebc7a4af0f37d4325f3438c973",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T12:29:13.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-settle-migrated-output-20260927",
+        "head_sha": "9aceec89c8b738ebc7a4af0f37d4325f3438c973",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1705:5855727416:2026-09-27T12:27:57Z:clawsweeper_needs_human",
       "comment_id": "5855727416",
@@ -33773,39 +33806,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159605:5855375852:2026-09-27T18:26:23Z:clawsweeper_needs_human",
-      "comment_id": "5855375852",
-      "comment_version_key": "5855375852:2026-09-27T18:26:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159605#issuecomment-5855375852",
-      "comment_created_at": "2026-09-27T11:21:10Z",
-      "comment_updated_at": "2026-09-27T18:26:23Z",
-      "comment_body_sha256": "d2285e4474195712cf727f7de6c36ef4fcbb1fd5d2723d28bea6b2ff3bfe4179",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159605,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published v2026.9.6 updater handing an existing operator configuration to this candidate has not been exercised. The installed updater runs first, so update-time config publication... (sha=7d2dc70f498ab462a164d268852dfcac94cd7cfb)",
-      "expected_head_sha": "7d2dc70f498ab462a164d268852dfcac94cd7cfb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T18:29:00.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fs-safe-config-atomic-prototype-20260926",
-        "head_sha": "7d2dc70f498ab462a164d268852dfcac94cd7cfb",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
