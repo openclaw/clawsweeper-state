@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T21:28:52.541Z",
+  "updated_at": "2026-09-27T21:29:29.877Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159037:5857228025:2026-09-27T15:29:42Z:re_review",
-      "comment_id": "5857228025",
-      "comment_version_key": "5857228025:2026-09-27T15:29:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159037#issuecomment-5857228025",
-      "comment_created_at": "2026-09-27T15:29:42Z",
-      "comment_updated_at": "2026-09-27T15:29:42Z",
-      "comment_body_sha256": "3a047209c50a123a738ee171d3e865de5a85debccded9ce8c293195429511d3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159037,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review (new revision 8df6265a8a7 with after-fix real behavior proof added to the pr body)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T15:32:49.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/video-size-unrecognized-ignored-override",
-        "head_sha": "8df6265a8a77cad26934c1dc013c87b4bf0490a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125788:5327253258:2026-09-27T15:31:23Z:clawsweeper_auto_repair",
       "comment_id": "5327253258",
@@ -33872,6 +33825,39 @@
         "kind": "pull_request",
         "branch": "openclaw/lobsterdex-colouring-pdfs",
         "head_sha": "0ab1d7de6081502eebac5034f5861416eb5c3e2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159792:5858095546:2026-09-27T21:28:35Z:clawsweeper_needs_human",
+      "comment_id": "5858095546",
+      "comment_version_key": "5858095546:2026-09-27T21:28:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159792#issuecomment-5858095546",
+      "comment_created_at": "2026-09-27T17:26:53Z",
+      "comment_updated_at": "2026-09-27T21:28:35Z",
+      "comment_body_sha256": "1727aeb83aeea10b08b6de6711e269e6967d2e4c0863732635bfca651c0c905d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159792,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR reports earlier Linux held-writer results through the real Cron worker path, and source tests c...; Review finding: [P2] Initialize receipt storage outside each reservation transaction — src/cron/store/run-admission.worker.ts:70 - [medium] Verify revoked caller rejection before... (sha=05e980ea0e09bf3ce28163b8aab0a831e35ebf3c)",
+      "expected_head_sha": "05e980ea0e09bf3ce28163b8aab0a831e35ebf3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T21:29:29.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-receipt-observation",
+        "head_sha": "05e980ea0e09bf3ce28163b8aab0a831e35ebf3c",
         "cluster_id": null,
         "job_path": null
       }
