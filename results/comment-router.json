@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T03:59:40.567Z",
+  "updated_at": "2026-09-27T03:59:46.211Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122512:5264065948:2026-09-26T19:58:52Z:clawsweeper_needs_human",
-      "comment_id": "5264065948",
-      "comment_version_key": "5264065948:2026-09-26T19:58:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122512#issuecomment-5264065948",
-      "comment_created_at": "2026-08-12T08:08:39Z",
-      "comment_updated_at": "2026-09-26T19:58:52Z",
-      "comment_body_sha256": "fd643025090befa6c96bb4bb24bea4e5a29a34ac3663ac1ce9c991ff457d9392",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is the shared billing matcher. The contributor reports a passing injected-fault run through the real process supervi... (sha=6176d8fbbc66a36291ceefdbd9d73261b4717b99)",
-      "expected_head_sha": "6176d8fbbc66a36291ceefdbd9d73261b4717b99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T20:04:56.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-usage-credits-billing",
-        "head_sha": "6176d8fbbc66a36291ceefdbd9d73261b4717b99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155630:5774529880:2026-09-26T20:00:36Z:clawsweeper_needs_human",
       "comment_id": "5774529880",
@@ -33690,6 +33657,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159338:5852458300:2026-09-27T03:58:43Z:re_review",
+      "comment_id": "5852458300",
+      "comment_version_key": "5852458300:2026-09-27T03:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159338#issuecomment-5852458300",
+      "comment_created_at": "2026-09-27T03:58:43Z",
+      "comment_updated_at": "2026-09-27T03:58:43Z",
+      "comment_body_sha256": "f72da37d2b88925c6e9d2685fcfe121a3d45bc6e5187e5a65c45c27e5b542bd2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159338,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T03:59:44.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-cleanup-policy-read",
+        "head_sha": "df43b924cc52dc2a6a80125e5ffd88bacfb2a419",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
