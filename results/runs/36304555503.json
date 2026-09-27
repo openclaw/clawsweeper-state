@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "36304555503",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36304555503",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-27T07:59:04.133Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "The checkout matches preflight main (9ae6e185306272725c36231de98017515c475d33), and the reported validator path remains. Runtime reproduction and implementation are blocked: node_modules is absent, and this worker's filesystem is read-only. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The required failing regression could not run. The read-only filesystem also prevents dependency installation or a code change."
+    },
+    {
+      "target": "#103699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Historical source work only; no action on the closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Requires a writable checkout with dependencies and a decision on a supported SDK-backed repair path before an executable fix can be prepared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "After runtime reproduction, decide whether direct Ajv dependencies or an upstream MCP SDK fix are permitted if no narrower supported path exists."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#103694",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

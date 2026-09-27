@@ -2,32 +2,32 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "36302906890"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36302906890"
+run_id: "36304555503"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36304555503"
 head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-27T07:51:33.527Z"
+published_at: "2026-09-27T07:59:04.133Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-103694
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36302906890](https://github.com/openclaw/clawsweeper/actions/runs/36302906890)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36304555503](https://github.com/openclaw/clawsweeper/actions/runs/36304555503)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-Current main still routes non-draft MCP schemas through the SDK AJV validator, but this read-only checkout has no installed dependencies. The required failing regression and pinned SDK inspection could not be completed, so no code or PR was created.
+The checkout matches preflight main (9ae6e185306272725c36231de98017515c475d33), and the reported validator path remains. Runtime reproduction and implementation are blocked: node_modules is absent, and this worker's filesystem is read-only. No files or GitHub state changed.
 
 ## Impact
 
@@ -44,17 +44,16 @@ Current main still routes non-draft MCP schemas through the SDK AJV validator, b
 | Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impacting surface; extension typecheck included [check:changed] package.json: root config/package surface [check:changed] pnpm-lock.yaml: root config/package surface [check:changed] src/agents/mcp-json-schema-validator.ts: core production [check:changed] src/agents/mcp-tool-metadata.test.ts: core test [check:changed] mobile protocol event coverage [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] extension test core imports $ node --import ./scripts/tsx.mjs scripts/check-no-extension-test-core-imports.ts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- package.json pnpm-lock.yaml src/agents/mcp-json-schema-validator.ts src/agents/mcp-tool-metadata.test.ts [check:changed] npm package-lock guard (102 packages) Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_50_418Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fclaude-agent-acp failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_50_352Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@aws-sdk%2fclient-bedrock failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_50_451Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_50_397Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fvertex-sdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_51_315Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/nostr-tools failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_52_224Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/ws failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_49_53_276Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@openai%2fcodex failed: cache mode is 'only-if-cached' ... ry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_18_048Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_18_740Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/audio-decode failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_20_202Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/zod failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_21_187Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_21_491Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_21_953Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_22_160Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/ipaddr.js failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_22_321Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-EVOLrV/home/.npm/_logs/2026-09-27T07_50_22_540Z-debug-0.log [check:changed] summary 463ms ok mobile protocol event coverage 195ms ok conflict markers 312ms ok line-cap growth ratchet 6.06s ok max-lines suppression ratchet 21.33s ok assertion SAFETY comment ratchet 179ms ok changelog attributions 152ms ok doctor deprecation registry 174ms ok guarded extension wildcard re-exports 155ms ok plugin-sdk wildcard re-exports 603ms ok extension test core imports 248ms ok duplicate scan target coverage 185ms ok dependency pin guard 72ms ok format changed files 33.18s failed:1 npm package-lock guard (102 packages) [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Protocol event coverage OK: 64 gateway events; ios handles 27, allowlists 37; android handles 25, allowlists 39. Line-cap ratchet OK: 2 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 742 grandfathered suppressions. OPENCLAW_* count 486/486 assertion SAFETY ratchet OK: 3413 files, 9067 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-09-27 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. OK: extension test files, support helpers, and plugin test helpers avoid direct core test/internal imports (4558 extension files, 0 plugin helpers checked). [dup:check] target coverage ok PASS direct dependency pin guard: checked 708 directly declared dependency specs across 193 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 2ms on 2 files using 4 threads. Validating 102 npm package locks with 4 jobs. |
 | issue_implementation_status_comment | updated | #103694 |  |  |
 
 ## Apply Actions
@@ -67,10 +66,10 @@ Current main still routes non-draft MCP schemas through the SDK AJV validator, b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | A narrow, dependency-backed repair needs a failing current-main regression and inspection of the pinned MCP SDK. |
-| #103699 | keep_closed | skipped | related | Historical source work; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Implementation must resume in a writable checkout with dependencies. Inspect MCP SDK 1.30.0's validator and supported-format handling before editing; stop if it offers no narrow dependency-backed path. |
+| #103694 | fix_needed | blocked | canonical | The required failing regression could not run. The read-only filesystem also prevents dependency installation or a code change. |
+| #103699 | keep_closed | skipped | superseded | Historical source work only; no action on the closed PR. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Requires a writable checkout with dependencies and a decision on a supported SDK-backed repair path before an executable fix can be prepared. |
 
 ## Needs Human
 
-- none
+- After runtime reproduction, decide whether direct Ajv dependencies or an upstream MCP SDK fix are permitted if no narrower supported path exists.
