@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159184",
+  "mode": "autonomous",
+  "run_id": "36317715357",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36317715357",
+  "head_sha": "756c1c45f08cca536117d064dac226d8c536e4bb",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159184.md",
+  "published_at": "2026-09-27T12:08:20.704Z",
+  "canonical": "#159184",
+  "canonical_issue": "#159184",
+  "canonical_pr": null,
+  "summary": "The merged PR stopped repeated HTTP 400 requests, but the remaining prompt-size rejection still reaches generic rate-limit copy on main. Plan a narrow user-copy fix after demonstrating a failing regression. No code was changed or tests run in this plan phase.",
+  "actions": [
+    {
+      "target": "#141260",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Keep its separate reset-hint work open."
+    },
+    {
+      "target": "#159184",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "First demonstrate the failing user-copy regression, then add bounded guidance to shorten the request without echoing arbitrary provider text or changing ordinary rate-limit copy."
+    },
+    {
+      "target": "#159221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Historical fix for the retry portion; no action on the closed PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

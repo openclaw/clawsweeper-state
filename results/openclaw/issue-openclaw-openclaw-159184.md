@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159184"
 mode: "autonomous"
-run_id: "36314221798"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36314221798"
-head_sha: "420da22ea0f2844e495eed9844c8b283fe63e8b7"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T11:44:06.113Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159184"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159184"
+run_id: "36317715357"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36317715357"
+head_sha: "756c1c45f08cca536117d064dac226d8c536e4bb"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T12:08:20.704Z"
+canonical: "#159184"
+canonical_issue: "#159184"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36314221798](https://github.com/openclaw/clawsweeper/actions/runs/36314221798)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36317715357](https://github.com/openclaw/clawsweeper/actions/runs/36317715357)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159184
+Canonical: #159184
 
 ## Summary
 
-The retry fix is merged on main, but the reported prompt-size rejection still follows a rate-limit copy path that can tell users only to try again later. A narrow fix is warranted. This checkout is read-only and has no node_modules, so I could not add the required failing regression, edit code, or validate a PR branch.
+The merged PR stopped repeated HTTP 400 requests, but the remaining prompt-size rejection still reaches generic rate-limit copy on main. Plan a narrow user-copy fix after demonstrating a failing regression. No code was changed or tests run in this plan phase.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The retry fix is merged on main, but the reported prompt-size rejection still fo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159184 | fix_needed | planned | canonical | The remaining copy defect needs an owner-boundary regression and a bounded guidance fix. |
-| #141260 | keep_related | planned | related | Keep its reset-hint work in its own issue. |
-| #159221 | keep_closed | skipped | related | Historical fix for the retry portion; already closed. |
-| cluster:issue-openclaw-openclaw-159184 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout. The executor must first demonstrate the failing owner-boundary regression on this main SHA. |
+| #141260 | keep_related | planned | related | Keep its separate reset-hint work open. |
+| #159184 | fix_needed | planned | canonical | First demonstrate the failing user-copy regression, then add bounded guidance to shorten the request without echoing arbitrary provider text or changing ordinary rate-limit copy. |
+| #159221 | keep_closed | skipped | related | Historical fix for the retry portion; no action on the closed PR. |
 
 ## Needs Human
 
