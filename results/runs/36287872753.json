@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159313",
+  "mode": "autonomous",
+  "run_id": "36287872753",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36287872753",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159313.md",
+  "published_at": "2026-09-27T02:42:53.616Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159313",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159313",
+  "canonical_pr": null,
+  "summary": "The current checkout still propagates EBADF from the plugin descriptor-copy fast path. Implementation is blocked before the required failing regression: this read-only host is Linux x86_64, has no Bun or installed dependencies, and cannot run the requested macOS arm64/Bun 1.4.2 reproduction. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#159313",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159313",
+      "candidate_fix": null,
+      "reason": "The reported bug has a narrow owner-path fix, but the job requires reproduction or a failing production-entry regression before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159313",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159313",
+      "candidate_fix": null,
+      "reason": "Blocked on the job's reproduce-first gate and the host's read-only Linux environment. Run the reported control and establish a failing regression through capturePluginGenerationArtifact on macOS arm64/Bun 1.4.2 before editing or opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
