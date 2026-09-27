@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T09:08:23.962Z",
+  "updated_at": "2026-09-27T09:08:54.980Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159318:5852221159:2026-09-27T03:14:50Z:re_review",
-      "comment_id": "5852221159",
-      "comment_version_key": "5852221159:2026-09-27T03:14:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159318#issuecomment-5852221159",
-      "comment_created_at": "2026-09-27T03:14:50Z",
-      "comment_updated_at": "2026-09-27T03:14:50Z",
-      "comment_body_sha256": "6ea8d871e9283399b48915ded804995a32cf591499a7de9dcdc20c1355d9a2a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159318,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T03:15:40.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa993-history-sync",
-        "head_sha": "9c71b2d0ac09add09fdb12bca3914088e153bbad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159362:5852225095:2026-09-27T03:15:33Z:clawsweeper_needs_human",
       "comment_id": "5852225095",
@@ -33580,6 +33533,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159554:5854444058:2026-09-27T09:07:47Z:clawsweeper_needs_human",
+      "comment_id": "5854444058",
+      "comment_version_key": "5854444058:2026-09-27T09:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159554#issuecomment-5854444058",
+      "comment_created_at": "2026-09-27T09:00:00Z",
+      "comment_updated_at": "2026-09-27T09:07:47Z",
+      "comment_body_sha256": "072fb69a044fff59f392b4be0dc56f24d6da7befe5c69ebe35c1f0c7d39933b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159554,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact candidate has no recorded first-hop run from a published updater with existing configuration and a managed Gateway, leaving upgrade, service restart, and recovery behavior o... (sha=1f4e69ebc1720f69c4ad3e6b718db14bccfafbb4)",
+      "expected_head_sha": "1f4e69ebc1720f69c4ad3e6b718db14bccfafbb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T09:08:54.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l113-cli4",
+        "head_sha": "1f4e69ebc1720f69c4ad3e6b718db14bccfafbb4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
