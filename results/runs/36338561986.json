@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153502",
+  "mode": "autonomous",
+  "run_id": "36338561986",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36338561986",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153502.md",
+  "published_at": "2026-09-27T19:06:19.386Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_pr": null,
+  "summary": "Current checkout 89b736ae still contains the reported Doctor settlement mismatch. Source inspection identifies the failure path, but the read-only checkout has no installed dependencies, so I could not add a failing regression, patch the code, or validate a PR branch. No GitHub action was taken.",
+  "actions": [
+    {
+      "target": "#153502",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "The source-level failure remains, but a failing Doctor-path regression and validated implementation could not be produced in this worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153502",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with repository dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
