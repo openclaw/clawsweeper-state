@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "autonomous"
-run_id: "36304652156"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36304652156"
-head_sha: "f59e3c90cef851563ab7283f7170ceb623c0f7bb"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T08:35:03.152Z"
+mode: "plan"
+run_id: "36307826185"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36307826185"
+head_sha: "e9ef8c0b2c0acbe5908b2e9d1a7e870cdddc6e12"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T09:00:59.886Z"
 canonical: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36304652156](https://github.com/openclaw/clawsweeper/actions/runs/36304652156)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36307826185](https://github.com/openclaw/clawsweeper/actions/runs/36307826185)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/156442
 
 ## Summary
 
-At main SHA 9ae6e185306272725c36231de98017515c475d33, the reported Claude CLI exit reaches terminal recovery without a same-candidate retry. This read-only checkout has no installed dependencies, so I could not add and run the required failing regression or prepare a validated PR branch.
+Plan a narrow Claude CLI recovery fix. The checkout matches the preflight main SHA, and the current recovery path still treats the reported refresh-lock failure as terminal. Implementation must first demonstrate a failing regression through the CLI process-result and recovery boundary. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ At main SHA 9ae6e185306272725c36231de98017515c475d33, the reported Claude CLI ex
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156442 | fix_needed | planned | canonical | A narrow recovery fix remains appropriate, subject to a failing regression on current main. |
-| #8673 | keep_related | planned | related | Different refresh owner and failure path. |
-| #89278 | keep_related | planned | related | Different runtime and remaining work. |
-| #156572 | keep_closed | skipped | superseded | Historical source work; preserve Yun-0000's credit in the new fix PR. |
-| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | planned |  | Prepare one narrow fix path. |
-| cluster:issue-openclaw-openclaw-156442 | open_fix_pr | blocked |  | Implementation and PR creation require a writable execution checkout after the failing regression is established. |
+| https://github.com/openclaw/openclaw/issues/156442 | fix_needed | planned | canonical | Keep the issue open and prepare a focused replacement fix with a pre-fix regression and contributor credit. |
+| https://github.com/openclaw/openclaw/issues/8673 | keep_related | planned | related | The reports involve different recovery owners and require separate fixes. |
+| https://github.com/openclaw/openclaw/issues/89278 | keep_related | planned | related | The remaining user-visible failure and provider path are distinct. |
+| https://github.com/openclaw/openclaw/pull/156572 | keep_closed | skipped | superseded | Use this as credited reference work; no closure action is valid. |
 
 ## Needs Human
 
