@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T21:21:48.716Z",
+  "updated_at": "2026-09-27T21:22:02.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159503:5857165012:2026-09-27T15:24:20Z:re_review",
-      "comment_id": "5857165012",
-      "comment_version_key": "5857165012:2026-09-27T15:24:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159503#issuecomment-5857165012",
-      "comment_created_at": "2026-09-27T15:24:20Z",
-      "comment_updated_at": "2026-09-27T15:24:20Z",
-      "comment_body_sha256": "614e729a6da9f384bc925a03343d070facee6e4fa10508f23155138390001f02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159503,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T15:25:12.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/hide-removed-queued-prompts",
-        "head_sha": "26706afc549492436ac4657b01e2298ea0579660",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159727:5857168058:2026-09-27T15:24:44Z:clawsweeper_needs_human",
       "comment_id": "5857168058",
@@ -33880,6 +33833,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-heap-profile-include-collected-20260919",
         "head_sha": "cb2716199e436dffc224fbb5cdc49f1b5273c5b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159891:5859933150:2026-09-27T21:21:07Z:clawsweeper_auto_repair",
+      "comment_id": "5859933150",
+      "comment_version_key": "5859933150:2026-09-27T21:21:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159891#issuecomment-5859933150",
+      "comment_created_at": "2026-09-27T21:21:07Z",
+      "comment_updated_at": "2026-09-27T21:21:07Z",
+      "comment_body_sha256": "788d0c7f3f09403a3ae6660e50c139a3113a3c1addc24792f7d528fc5e8064c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159891,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8119a80899553d03597a7016ce0782d165e72785)",
+      "expected_head_sha": "8119a80899553d03597a7016ce0782d165e72785",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T21:22:02.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/amazing-yonath-cd5b3c",
+        "head_sha": "8119a80899553d03597a7016ce0782d165e72785",
         "cluster_id": null,
         "job_path": null
       }
