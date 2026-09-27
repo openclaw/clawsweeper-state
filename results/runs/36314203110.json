@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156442",
+  "mode": "plan",
+  "run_id": "36314203110",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36314203110",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156442.md",
+  "published_at": "2026-09-27T11:01:10.696Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Claude CLI refresh-lock recovery fix. The source issue remains open; the earlier fix PR closed unmerged. The two linked OAuth issues have distinct execution paths.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/156442",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "35",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the fix owner. Reproduce the reported handling on current main, then retry only the pre-work contention failure once on the same candidate and session."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/8673",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "35",
+      "candidate_fix": null,
+      "reason": "The failures share an OAuth symptom but have different owners and retry safety contracts."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/89278",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "35",
+      "candidate_fix": null,
+      "reason": "Its Codex callback and diagnostic work is distinct from the Claude CLI subprocess failure."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/156572",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": "35",
+      "candidate_fix": null,
+      "reason": "Retain it as useful source work and credit its author in the new PR."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

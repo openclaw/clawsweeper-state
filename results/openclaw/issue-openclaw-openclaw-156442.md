@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "autonomous"
-run_id: "36311510356"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36311510356"
+mode: "plan"
+run_id: "36314203110"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36314203110"
 head_sha: "420da22ea0f2844e495eed9844c8b283fe63e8b7"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T10:47:00.440Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T11:01:10.696Z"
 canonical: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36311510356](https://github.com/openclaw/clawsweeper/actions/runs/36311510356)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36314203110](https://github.com/openclaw/clawsweeper/actions/runs/36314203110)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/156442
 
 ## Summary
 
-The available checkout still sends the reported Claude CLI error to terminal failure, but implementation is blocked: this sandbox is read-only, the checkout lacks dependencies, and it does not contain the preflight main SHA. No regression, transport proof, validation, or PR was completed.
+Plan a narrow Claude CLI refresh-lock recovery fix. The source issue remains open; the earlier fix PR closed unmerged. The two linked OAuth issues have distinct execution paths.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The available checkout still sends the reported Claude CLI error to terminal fai
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156442 | fix_needed | planned | canonical | A narrow recovery fix appears warranted, subject to the required failing regression on the preflight main revision. |
-| #8673 | keep_independent | planned | independent | Different owner and failure path. |
-| #89278 | keep_independent | planned | independent | Different transport and remaining work. |
-| #156572 | keep_closed | skipped | related | Historical source work; preserve Yun-0000's credit in the new fix. |
-| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | blocked |  | The executor needs a writable checkout at current main before the job's reproduce-first and validation gates can run. |
+| https://github.com/openclaw/openclaw/issues/156442 | build_fix_artifact | planned | canonical | Keep this issue as the fix owner. Reproduce the reported handling on current main, then retry only the pre-work contention failure once on the same candidate and session. |
+| https://github.com/openclaw/openclaw/issues/8673 | keep_related | planned | related | The failures share an OAuth symptom but have different owners and retry safety contracts. |
+| https://github.com/openclaw/openclaw/issues/89278 | keep_related | planned | related | Its Codex callback and diagnostic work is distinct from the Claude CLI subprocess failure. |
+| https://github.com/openclaw/openclaw/pull/156572 | keep_closed | skipped |  | Retain it as useful source work and credit its author in the new PR. |
 
 ## Needs Human
 
