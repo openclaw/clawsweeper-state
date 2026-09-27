@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T16:32:11.826Z",
+  "updated_at": "2026-09-27T16:34:33.953Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:725:5854179903:2026-09-27T10:37:02Z:clawsweeper_needs_human",
-      "comment_id": "5854179903",
-      "comment_version_key": "5854179903:2026-09-27T10:37:02Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/725#issuecomment-5854179903",
-      "comment_created_at": "2026-09-27T08:24:08Z",
-      "comment_updated_at": "2026-09-27T10:37:02Z",
-      "comment_body_sha256": "7c587f3d22f0630bffcc278ae4d01e58c0268f5399df71ee04a4d8d424e1c190",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The synchronous-snapshot stress run still reproduced Windows rename EPERM, and there is no passing pinned-head churn and soak result establishing recovery. (sha=0eca8a26623cd36dc15e83a68cc2629dfd367f7e)",
-      "expected_head_sha": "0eca8a26623cd36dc15e83a68cc2629dfd367f7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T10:42:12.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/watch-windows-scan-rename-20260927",
-        "head_sha": "0eca8a26623cd36dc15e83a68cc2629dfd367f7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:321:5855122847:2026-09-27T10:41:49Z:clawsweeper_needs_human",
       "comment_id": "5855122847",
@@ -33731,6 +33698,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159605:5855375852:2026-09-27T16:33:34Z:clawsweeper_needs_human",
+      "comment_id": "5855375852",
+      "comment_version_key": "5855375852:2026-09-27T16:33:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159605#issuecomment-5855375852",
+      "comment_created_at": "2026-09-27T11:21:10Z",
+      "comment_updated_at": "2026-09-27T16:33:34Z",
+      "comment_body_sha256": "a8c9b6e68c0edc14924fc782249f2abab150ecf624ada51311e43bc2d47fc0f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159605,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The changed Windows sharing-violation fallback and conditional rollback have not yet been rerun on native Windows for this head; injected faults on another platform do not establish n... (sha=e8a48976bcd779285037537734582cc353e6ee29)",
+      "expected_head_sha": "e8a48976bcd779285037537734582cc353e6ee29",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T16:34:33.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-config-atomic-prototype-20260926",
+        "head_sha": "e8a48976bcd779285037537734582cc353e6ee29",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
