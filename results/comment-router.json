@@ -2,53 +2,6 @@
   "updated_at": "2026-09-27T22:10:21.482Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:158877:5854204749:2026-09-27T08:28:11Z:re_review",
-      "comment_id": "5854204749",
-      "comment_version_key": "5854204749:2026-09-27T08:28:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158877#issuecomment-5854204749",
-      "comment_created_at": "2026-09-27T08:28:11Z",
-      "comment_updated_at": "2026-09-27T08:28:11Z",
-      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158877,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T16:12:40.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l79-infra4",
-        "head_sha": "07d96784b10839da18ae8fef6f385ef1ecece435",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158877:5854255085:2026-09-27T16:06:34Z:clawsweeper_needs_human",
       "comment_id": "5854255085",
       "comment_version_key": "5854255085:2026-09-27T16:06:34Z",
@@ -33714,6 +33667,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-audit-suppression-approval-prompts",
         "head_sha": "60bd0cbfbb078c27aa465b7209ea7fa6878085f1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159895:5859980734:2026-09-27T22:09:30Z:clawsweeper_needs_human",
+      "comment_id": "5859980734",
+      "comment_version_key": "5859980734:2026-09-27T22:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159895#issuecomment-5859980734",
+      "comment_created_at": "2026-09-27T21:27:54Z",
+      "comment_updated_at": "2026-09-27T22:09:30Z",
+      "comment_body_sha256": "2730d5e347d2b2e9ae15413c0a94021735eb26802540fac7de13d35402c6166e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159895,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Gateway owner now sends session file reads to the paired node, but the supplied tests and...; Review finding: [P1] Recheck session read authority before remote node I/O — src/gateway/server-methods/workspace-fs.ts:145-162 - [medium] Session revocation can precede a remote... (sha=d15fe4bc17b185a4ddc03c970e108c18c5128496)",
+      "expected_head_sha": "d15fe4bc17b185a4ddc03c970e108c18c5128496",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T22:10:21.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remote-workspace-file-preview",
+        "head_sha": "d15fe4bc17b185a4ddc03c970e108c18c5128496",
         "cluster_id": null,
         "job_path": null
       }
