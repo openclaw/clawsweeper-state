@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remaining bug in this issue: after an OpenAI-compatible provider rejects an oversized prompt with HTTP 400 and an inner rate_limit_exceeded code, users must receive bounded, sanitized guidance to shorten the request instead of generic wait-for-rate-limit copy. First establish a failing regression through the existing user-copy and reply entry points, then repair their shared presentation owner. Preserve the merged no-same-model-retry behavior, genuine HTTP 429/throttling copy, provider-specific classifications, and existing sanitization; do not expose arbitrary raw provider payloads or add configuration. Add focused tests for transcript and reply surfaces and a true-throttling control, then prove the result through an isolated Gateway turn using a scripted compatible provider. Keep release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing agent-runtime bug where a provider HTTP 400 describing a per-request prompt-size cap is classified as a transient rate limit because of an inner code, causing repeated same-model retries and misleading user guidance. First establish a failing regression through the production assistant-error signal and recovery path. Repair the shared failover classifier and bounded user copy; preserve genuine HTTP 400 rate-limit cases and the existing HTTP 429 retry contract. Add focused coverage for the reported response shape and a genuine rate-limit sibling. Do not add a config option, change retry budgets, alter stored data, or edit CHANGELOG.md. Stop and return to triage if the fix requires a new product policy.
 
 Likely files:
 
+- src/agents/failover/classify-core.ts
+- src/agents/failover/classification-rules.ts
+- src/agents/failover/failover-classification.structured-misc.cases.ts
 - src/agents/failover/user-copy.ts
-- src/agents/failover/user-copy.test.ts
-- src/agents/failover/classify.message-predicates.test.ts
 
 Validation:
 
+- pnpm test src/agents/failover/failover-classification.corpus.test.ts --maxWorkers=1
+- pnpm test src/agents/embedded-agent-runner/run/failover-retry-controller.test.ts --maxWorkers=1
 - pnpm test src/agents/failover/user-copy.test.ts --maxWorkers=1
-- pnpm test src/agents/failover/classify.test.ts --maxWorkers=1
-- pnpm test src/agents/embedded-agent-runner/run/attempt-recovery.per-day-rate-limit.test.ts --maxWorkers=1
 
 ## Operator Prompt
 
