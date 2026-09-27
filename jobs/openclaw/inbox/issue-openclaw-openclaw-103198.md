@@ -67,20 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing WebChat bug where an image above the inline threshold, sent to a vision-capable session, reaches model image input but not a readable file path for agent tools. First establish a failing regression at the Gateway chat.send attachment boundary. Extend the existing active-media/staging owner, preserving the selected execution workspace, one vision input, original bytes, and filesystem restrictions. Cover the inline and text-only sibling paths and the no-caption offloaded case related to https://github.com/openclaw/openclaw/issues/142313 without assuming both issues have one root cause. Coordinate with the assigned owner and recheck for an open implementation before opening a PR. Keep release-note context in the PR body; do not edit CHANGELOG.md. Stop if the repair requires a new feature, config option, or product-policy change.
+Repair the remaining offloaded-image file-access case in https://github.com/openclaw/openclaw/issues/103198, coordinating with assigned owner obviyus. Preserve the released inline repair in https://github.com/openclaw/openclaw/pull/143753. First establish a failing production-boundary regression for an ordinary WebChat vision-capable session receiving an image above 2,000,000 decoded bytes: the upload must reach active media and the selected execution workspace so file tools can read its original bytes. Extend the existing Gateway managed-media handoff and staging owner; do not add pseudo-reference guessing, configuration, storage formats, alternate staging owners, or broader filesystem access. Preserve original image ordering and exactly one model image input, including mixed inline/offloaded/document turns. Cover captioned and no-caption uploads, using https://github.com/openclaw/openclaw/issues/142313 as overlapping context without assuming every symptom is resolved. Verify selected-workspace and sandbox behavior, byte identity, and rejection outside the permitted workspace. Extend existing Gateway and reply regressions, demonstrate failure before the fix, and record a real WebChat upload/file-read result using synthetic media. Run the listed focused checks and applicable changed-file gates; measure test cost. Keep release notes in the PR body and do not edit CHANGELOG.md. Stop and return to triage if repair requires a new feature, configuration option, storage contract, or product-policy choice.
 
 Likely files:
 
-- src/gateway/server-methods/chat-send-attachments.ts
 - src/gateway/server-methods/chat-send-user-turn.ts
+- src/gateway/server-methods/chat-send-attachments.ts
 - src/gateway/server-methods/chat-send-user-turn.test.ts
-- src/gateway/server-methods/chat-send-attachments.owner.test.ts
+- src/gateway/server-methods/chat.directive-tags.test.ts
+- src/auto-reply/reply/get-reply.media-staging.test.ts
+- src/auto-reply/reply/get-reply-run.media-only.test.ts
 
 Validation:
 
 - pnpm test src/gateway/server-methods/chat-send-user-turn.test.ts --maxWorkers=1
-- pnpm test src/gateway/server-methods/chat-send-attachments.owner.test.ts --maxWorkers=1
+- pnpm test src/gateway/server-methods/chat.directive-tags.test.ts --maxWorkers=1
 - pnpm test src/auto-reply/reply/get-reply.media-staging.test.ts --maxWorkers=1
+- pnpm test src/auto-reply/reply/get-reply-run.media-only.test.ts --maxWorkers=1
 - git diff --check
 
 ## Operator Prompt
