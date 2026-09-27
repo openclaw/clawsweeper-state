@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T13:00:30.588Z",
+  "updated_at": "2026-09-27T13:04:16.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159417:5853437463:2026-09-27T06:35:14Z:re_review",
-      "comment_id": "5853437463",
-      "comment_version_key": "5853437463:2026-09-27T06:35:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159417#issuecomment-5853437463",
-      "comment_created_at": "2026-09-27T06:35:14Z",
-      "comment_updated_at": "2026-09-27T06:35:14Z",
-      "comment_body_sha256": "dfd8579708a9b1ed854de4ad1e0dc3f667e83c06cf575bf2b33966504d4cd08b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159417,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T07:03:33.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l106-small-core",
-        "head_sha": "cae69fba6307393f3a63d7d7a96b909f2da5aa98",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111873:5026260237:2026-09-27T06:55:34Z:clawsweeper_auto_repair",
       "comment_id": "5026260237",
@@ -33576,6 +33529,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:728:5855935019:2026-09-27T12:58:27Z:clawsweeper_needs_human",
+      "comment_id": "5855935019",
+      "comment_version_key": "5855935019:2026-09-27T12:58:27Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/728#issuecomment-5855935019",
+      "comment_created_at": "2026-09-27T12:45:56Z",
+      "comment_updated_at": "2026-09-27T12:58:27Z",
+      "comment_body_sha256": "767cf9bcb6ef54d23062d8e4e2ebc1dd0d2b1e4df4df7290fc415d72dcb74672",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers whose synchronous pre-rename hook returns a Promise, thenable, or generator will now receive a TypeError and no replacement instead of the previous publication; expli... (sha=b8c35552ec0444a1ee6fad31878de46d03fdaab5)",
+      "expected_head_sha": "b8c35552ec0444a1ee6fad31878de46d03fdaab5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T13:04:16.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sync-before-rename-guard",
+        "head_sha": "b8c35552ec0444a1ee6fad31878de46d03fdaab5",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
