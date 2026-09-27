@@ -67,26 +67,25 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing plugin approval terminal-card bug on current main. First establish a failing regression through the shared native approval flow for a Gateway expiry event arriving before the local timer, including expiry during pending card delivery; cover cancellation and explicit denial as distinct outcomes. Preserve the Gateway’s canonical terminal status through plugin resolution publication, the typed plugin view, and the shared terminal formatter. Settle expiry through the pending registry so delivery completes before finalization. Keep exec and system-agent behavior and approval authorization unchanged. Extend the strongest existing owner-boundary tests without duplicating the same contract across every channel; use Discord presentation as a representative native-card check. Do not edit CHANGELOG.md; put release-note context in the PR body.
+Repair the existing native plugin approval-card behavior for expiry and cancellation. Establish a failing regression through the Gateway publication to channel presentation path before editing. Preserve expired and cancelled terminal status from the canonical approval record through the plugin resolved event, view model, and shared label helper; ensure expiry received during pending card delivery settles after references exist. Cover event-before-local-timer and local-timer-first orderings, expiry during delivery, cancellation, explicit denial, and unchanged exec/system-agent behavior. Keep authorization fail-closed and add no config option or new capability. Use focused approval tests and relevant Plugin SDK checks; record test cost in the PR. Put release-note context in the PR body, not CHANGELOG.md. Stop and seek review if a public SDK or product-policy change beyond this compatible bug fix proves necessary.
 
 Likely files:
 
 - src/gateway/server-methods/approval-publication.ts
 - src/infra/plugin-approvals.ts
-- src/infra/approval-view-model.types.ts
 - src/infra/approval-view-model.ts
+- src/infra/approval-view-model.types.ts
 - src/infra/exec-approval-channel-runtime.ts
 - src/plugin-sdk/approval-terminal.ts
-- src/gateway/server-methods/approval-publication.test.ts
 - src/infra/exec-approval-channel-runtime.test.ts
-- src/infra/approval-handler-runtime.test.ts
-- extensions/discord/src/approval-handler.runtime.test.ts
+- src/plugin-sdk/approval-handler-runtime.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/server-methods/approval-publication.test.ts src/infra/exec-approval-channel-runtime.test.ts src/infra/approval-handler-runtime.test.ts src/infra/approval-view-model.test.ts
-- node scripts/run-vitest.mjs extensions/discord/src/approval-handler.runtime.test.ts
-- git diff --check
+- pnpm test src/gateway/server-methods/approval-publication.test.ts --maxWorkers=1
+- pnpm test src/infra/exec-approval-channel-runtime.test.ts --maxWorkers=1
+- pnpm test src/plugin-sdk/approval-handler-runtime.test.ts --maxWorkers=1
+- pnpm test extensions/discord/src/approval-handler.runtime.test.ts --maxWorkers=1
 
 ## Operator Prompt
 
