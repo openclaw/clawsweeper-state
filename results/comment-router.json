@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T08:28:02.463Z",
+  "updated_at": "2026-09-27T08:29:05.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159354:5852143374:2026-09-27T03:00:59Z:clawsweeper_needs_human",
-      "comment_id": "5852143374",
-      "comment_version_key": "5852143374:2026-09-27T03:00:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159354#issuecomment-5852143374",
-      "comment_created_at": "2026-09-27T03:00:59Z",
-      "comment_updated_at": "2026-09-27T03:00:59Z",
-      "comment_body_sha256": "ba99a1bacc13a929f7784dfc1a2eebe612dbd9930268d0e7b19834dc44a2531f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159354,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR has not shown that an installed, published updater completes candidate Doctor on an affected install; the reported loader result alone does not establish update recovery. (sha=84431fca022a4e39409345358f84821a6ea8f4a9)",
-      "expected_head_sha": "84431fca022a4e39409345358f84821a6ea8f4a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T03:01:50.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-namespace-dependency-scope",
-        "head_sha": "84431fca022a4e39409345358f84821a6ea8f4a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158847:5845768620:2026-09-27T03:00:53Z:clawsweeper_needs_human",
       "comment_id": "5845768620",
@@ -33602,6 +33569,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158877:5854204749:2026-09-27T08:28:11Z:re_review",
+      "comment_id": "5854204749",
+      "comment_version_key": "5854204749:2026-09-27T08:28:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158877#issuecomment-5854204749",
+      "comment_created_at": "2026-09-27T08:28:11Z",
+      "comment_updated_at": "2026-09-27T08:28:11Z",
+      "comment_body_sha256": "a7bca0db0ca4177a09ed2d6f22cf4840945cdf4fc31963cb2280464cbe889fd5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158877,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T08:29:00.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l79-infra4",
+        "head_sha": "6dabff2ac7c5da0e6c476a77ca6a38d462aef396",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
