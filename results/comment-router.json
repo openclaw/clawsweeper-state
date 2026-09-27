@@ -2,53 +2,6 @@
   "updated_at": "2026-09-27T14:04:28.898Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:159502:5853938681:2026-09-27T07:47:25Z:re_review",
-      "comment_id": "5853938681",
-      "comment_version_key": "5853938681:2026-09-27T07:47:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159502#issuecomment-5853938681",
-      "comment_created_at": "2026-09-27T07:47:25Z",
-      "comment_updated_at": "2026-09-27T07:47:25Z",
-      "comment_body_sha256": "cd7fa2a07a48d2f5905e44cf4aebd9ab5011caae68fd81d7a618d9e7d2928123",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159502,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T08:00:40.083Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/steering-skip-status",
-        "head_sha": "0328a583f8049fd86f7b2e984ee15e3c7d68831f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:76744:4366442984:2026-09-05T05:49:36Z:clawsweeper_needs_human",
       "comment_id": "4366442984",
       "comment_version_key": "4366442984:2026-09-05T05:49:36Z",
@@ -33601,6 +33554,39 @@
         "kind": "pull_request",
         "branch": "codex/startup-read-failure",
         "head_sha": "d084f568ffbf6206d91442dbfc6edbb77d17c913",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159650:5856038764:2026-09-27T14:03:05Z:clawsweeper_needs_human",
+      "comment_id": "5856038764",
+      "comment_version_key": "5856038764:2026-09-27T14:03:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159650#issuecomment-5856038764",
+      "comment_created_at": "2026-09-27T12:55:28Z",
+      "comment_updated_at": "2026-09-27T14:03:05Z",
+      "comment_body_sha256": "bd945010af64d3452158376a9d428b132dba5447c3227cc220db9d04469ec627",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159650,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final digest-checking head has no completed published 2026.9.6 updater-to-candidate Doctor result in the captured PR evidence; the successful update cells were run on the earlier... (sha=b5bd072c56427c0dcc7a76b6366e9a59dad140a1)",
+      "expected_head_sha": "b5bd072c56427c0dcc7a76b6366e9a59dad140a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T14:04:28.862Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-plugin-reload-source-drift",
+        "head_sha": "b5bd072c56427c0dcc7a76b6366e9a59dad140a1",
         "cluster_id": null,
         "job_path": null
       }
