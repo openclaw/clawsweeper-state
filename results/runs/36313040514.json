@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36313040514",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36313040514",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T11:15:15.231Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Current main retains a source-backed gap for offloaded WebChat images in vision sessions. Implementation is blocked because this checkout is read-only and has no installed dependencies; the required failing Gateway regression could not be added or run. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A narrow repair appears feasible, but the required failing Gateway chat.send regression and local validation remain unperformed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready checkout is required to reproduce the defect at the Gateway boundary before implementing the fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
