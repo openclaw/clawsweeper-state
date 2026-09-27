@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36305119458",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36305119458",
+  "head_sha": "f59e3c90cef851563ab7283f7170ceb623c0f7bb",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T08:48:45.936Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "The checked-out code appears to omit offloaded WebChat images from the managed-media staging handoff. Implementation is blocked: the read-only checkout is at c85562b3, while preflight identifies a newer main at a66d75f9. No failing regression, patch, WebChat file-read proof, or validation was run against that main.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Reproduce the defect at the production boundary on the preflight main before editing or opening a PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout at the preflight main SHA and a failing production-boundary regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
