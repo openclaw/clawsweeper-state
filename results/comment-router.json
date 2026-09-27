@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T05:32:15.284Z",
+  "updated_at": "2026-09-27T05:32:37.217Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156389:5798360362:2026-09-23T16:12:02Z:re_review",
-      "comment_id": "5798360362",
-      "comment_version_key": "5798360362:2026-09-23T16:12:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156389#issuecomment-5798360362",
-      "comment_created_at": "2026-09-23T16:12:02Z",
-      "comment_updated_at": "2026-09-23T16:12:02Z",
-      "comment_body_sha256": "0eb379650fbec029b9e1cc6cb94e166eeb10f413e74022c76543d5870d771b5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156389,
-      "author": "Olli0103",
-      "author_id": 51629451,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — body carries both remaining asks now: the ordinary final-answer telegram delivery trace and the per-file test wall times",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T23:07:28.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-pretool-commentary-133922",
-        "head_sha": "bc120af4ae6daaa770469ec8ed667000c0a26423",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159174:5849899954:2026-09-26T22:15:59Z:clawsweeper_needs_human",
       "comment_id": "5849899954",
@@ -33844,6 +33797,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-0.21.0-20260926",
         "head_sha": "4c1c31ae768ebf166c6524dbc25a6ab5fe5fb0da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159380:5852772734:2026-09-27T05:27:02Z:clawsweeper_needs_human",
+      "comment_id": "5852772734",
+      "comment_version_key": "5852772734:2026-09-27T05:27:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159380#issuecomment-5852772734",
+      "comment_created_at": "2026-09-27T04:55:34Z",
+      "comment_updated_at": "2026-09-27T05:27:02Z",
+      "comment_body_sha256": "3647a9e071cfd0a39fcb2c3d36c73e39f06e80dbd2d67b96be1d178c1463a767",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159380,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The contributor drove the production simple-completion executor and Ollama HTTP transport against a loopback stand-in and observed thi... (sha=385d2387a97c6689e963769ecf85c704d1d9a722)",
+      "expected_head_sha": "385d2387a97c6689e963769ecf85c704d1d9a722",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T05:32:37.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-simple-completion-reasoning-off",
+        "head_sha": "385d2387a97c6689e963769ecf85c704d1d9a722",
         "cluster_id": null,
         "job_path": null
       }
