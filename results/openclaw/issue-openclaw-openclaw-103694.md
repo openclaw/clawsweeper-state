@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "36297133084"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36297133084"
-head_sha: "0c3e2698410c47b4964c5953bd39673ae93fb1e8"
+run_id: "36300606005"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36300606005"
+head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T06:09:46.624Z"
+published_at: "2026-09-27T07:12:42.299Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36297133084](https://github.com/openclaw/clawsweeper/actions/runs/36297133084)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36300606005](https://github.com/openclaw/clawsweeper/actions/runs/36300606005)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-Current main still delegates non-draft MCP schemas to the SDK Ajv validator, and the hydrated issue reports repeated warnings from healthy catalogs. Reproduction and implementation are blocked in this read-only checkout: node_modules is absent, and the focused test exits before loading the code. No files or GitHub state were changed.
+Current main still routes non-draft MCP schemas to the SDK Ajv validator, but the required failing reproduction could not run. This read-only checkout has no installed SDK dependencies, so no code change or PR is ready.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main still delegates non-draft MCP schemas to the SDK Ajv validator, and
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | A failing regression on current main is required before implementation. |
-| #103699 | keep_closed | skipped | related | Historical candidate only; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Restore dependencies in an independently owned writable checkout, establish the required failing catalog-path regression, then implement and validate the narrow fix. |
+| #103694 | fix_needed | planned | canonical | The reported warning has a plausible current source path, but the job requires a failing reproduction before implementation. |
+| #103699 | keep_closed | skipped | superseded | Historical source work and contributor credit remain relevant to the fix plan. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Reproduce through the production catalog path on a writable, dependency-ready host before editing or opening the PR. |
 
 ## Needs Human
 
