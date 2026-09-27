@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36315389984",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36315389984",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T11:51:50.040Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Current main still excludes offloaded WebChat images from the active-media staging path on vision-capable turns. Source inspection supports the reported gap, but the required Gateway-boundary reproduction and repair could not run: dependencies are absent and Corepack failed with EROFS on this read-only host. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A Gateway chat.send regression must fail on current main before implementation proceeds."
+    },
+    {
+      "target": "#143753",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Historical inline-image repair; no action on the closed PR."
+    },
+    {
+      "target": "#86371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Artifact for a writable executor; reproduction and validation remain required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Do not open a PR until the Gateway chat.send failure is reproduced and the repaired branch passes its required checks on a writable host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
