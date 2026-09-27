@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "36312405596",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36312405596",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-27T10:28:03.537Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "The issue remains open and the supplied main checkout still routes non-draft MCP schemas through the SDK validator. A current-main reproduction and dependency-backed repair could not be completed: this read-only checkout has no installed dependencies, and the focused test runner stops before loading tests. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The job requires a failing current-main regression and inspection of the pinned SDK before editing. Both are blocked by missing dependencies on a read-only host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Prepare this narrow fix only after dependencies are available, the warning reproduces on current main, and the SDK exposes a dependency-backed approach. Do not open a PR from this blocked result."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#103694",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
