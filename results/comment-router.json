@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T23:03:51.193Z",
+  "updated_at": "2026-09-27T23:03:54.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/wacli:447:5857920880:2026-09-27T17:02:57Z:re_review",
-      "comment_id": "5857920880",
-      "comment_version_key": "5857920880:2026-09-27T17:02:57Z",
-      "comment_url": "https://github.com/openclaw/wacli/pull/447#issuecomment-5857920880",
-      "comment_created_at": "2026-09-27T17:02:57Z",
-      "comment_updated_at": "2026-09-27T17:02:57Z",
-      "comment_body_sha256": "d91a249aa75123cdaa19a5042a3e5b7c1467c868952d643c60fc69633a1c6378",
-      "repo": "openclaw/wacli",
-      "issue_number": 447,
-      "author": "zarmat99",
-      "author_id": 145858964,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T17:03:53.615Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/group-info-once",
-        "head_sha": "0612139a9dd6e6c15612879c7e0b24b11c675bf8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159785:5857928525:2026-09-27T17:03:58Z:clawsweeper_auto_repair",
       "comment_id": "5857928525",
@@ -33784,6 +33737,39 @@
         "kind": "pull_request",
         "branch": "deslop/l126-discord-slack4",
         "head_sha": "35cd54e8bcd5bd76d28fbcd35b882cbacf366ca9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159940:5860652084:2026-09-27T23:02:59Z:clawsweeper_needs_human",
+      "comment_id": "5860652084",
+      "comment_version_key": "5860652084:2026-09-27T23:02:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159940#issuecomment-5860652084",
+      "comment_created_at": "2026-09-27T23:02:59Z",
+      "comment_updated_at": "2026-09-27T23:02:59Z",
+      "comment_body_sha256": "27cde8ba251bd34f727b7239dafdafb7b88fa791808ea83c24f53b64793a7e88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159940,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production spawn adapter should show the Gateway's structured start error and log a failed cleanup, but the after-fix evidence is a... (sha=2abff1aa5aeabcdad3a3b75551c290cccd0a6bf2)",
+      "expected_head_sha": "2abff1aa5aeabcdad3a3b75551c290cccd0a6bf2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T23:03:54.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/159862-visible-spawn-failure",
+        "head_sha": "2abff1aa5aeabcdad3a3b75551c290cccd0a6bf2",
         "cluster_id": null,
         "job_path": null
       }
