@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T03:23:00.267Z",
+  "updated_at": "2026-09-27T03:23:23.511Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158251:5837563546:2026-09-26T19:15:11Z:clawsweeper_needs_human",
-      "comment_id": "5837563546",
-      "comment_version_key": "5837563546:2026-09-26T19:15:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158251#issuecomment-5837563546",
-      "comment_created_at": "2026-09-25T18:34:10Z",
-      "comment_updated_at": "2026-09-26T19:15:11Z",
-      "comment_body_sha256": "3ceb90c53c861e98476b51adfc1d36fe8ace1e598498bd432cbcc53a17c368dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158251,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR reports real SQLite contention through the registration entry point and the integrated head's f...; Review finding: [P2] Bound preserve-session abort retries after a persistent failure — src/agents/subagents/spawn/subagent-spawn-cleanup.ts:285-292 - [medium] Prove stale cleanup... (sha=f2aac1c748a793f9d916004c4b0b20afa977b944)",
-      "expected_head_sha": "f2aac1c748a793f9d916004c4b0b20afa977b944",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T20:00:25.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/subagent-registration-worker-20260925",
-        "head_sha": "f2aac1c748a793f9d916004c4b0b20afa977b944",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158257:5837928325:2026-09-26T19:56:01Z:clawsweeper_needs_human",
       "comment_id": "5837928325",
@@ -33572,6 +33539,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159361:5852260831:2026-09-27T03:22:11Z:re_review",
+      "comment_id": "5852260831",
+      "comment_version_key": "5852260831:2026-09-27T03:22:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159361#issuecomment-5852260831",
+      "comment_created_at": "2026-09-27T03:22:11Z",
+      "comment_updated_at": "2026-09-27T03:22:11Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159361,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T03:23:21.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-post-core-deslop",
+        "head_sha": "56a602c9867f032686068101c8dd40c6763a844e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
