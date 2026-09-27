@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-156442",
+  "mode": "autonomous",
+  "run_id": "36299692533",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36299692533",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-156442.md",
+  "published_at": "2026-09-27T06:56:49.141Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/156442",
+  "canonical_pr": null,
+  "summary": "At main 168ebc5b, the reported nonempty Claude CLI error reaches terminal failure without a contention retry. The checkout is read-only and has no installed dependencies, so I could not add a failing regression, implement the fix, validate it, or prepare a PR branch.",
+  "actions": [
+    {
+      "target": "#156442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "A narrow recovery fix remains needed, subject to a failing regression on current main."
+    },
+    {
+      "target": "#8673",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its refresh policy needs separate ownership and validation."
+    },
+    {
+      "target": "#89278",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain its separate follow-up."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156442",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for a writable executor; implementation and validation remain outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-156442",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#156442",
+      "candidate_fix": null,
+      "reason": "A failing regression, narrow patch, required validation, and owning-open-PR recheck must precede PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
