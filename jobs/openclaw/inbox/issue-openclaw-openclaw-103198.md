@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing WebChat bug where an image above the inline threshold, sent to a vision-capable session, reaches model image input but not a readable file path for agent tools. First establish a failing regression at the Gateway chat.send attachment boundary. Extend the existing active-media/staging owner, preserving the selected execution workspace, one vision input, original bytes, and filesystem restrictions. Cover the inline and text-only sibling paths and the no-caption offloaded case related to https://github.com/openclaw/openclaw/issues/142313 without assuming both issues have one root cause. Coordinate with the assigned owner and recheck for an open implementation before opening a PR. Keep release-note context in the PR body; do not edit CHANGELOG.md. Stop if the repair requires a new feature, config option, or product-policy change.
+Fix the remaining existing-behavior bug in https://github.com/openclaw/openclaw/issues/103198: with a vision-capable model, an offloaded WebChat image reaches model vision but lacks a usable active-turn file-tool path. Reproduce or establish a failing regression through chat.send before editing. Reuse the Gateway’s managed media and session-workspace staging owners in src/gateway/server-methods/chat-send-attachments.ts and chat-send-user-turn.ts; preserve one original vision input, selected-workspace isolation, staging limits, cancellation, and existing file authorization. Cover inline, offloaded, mixed-media, and text-only sibling routes. The merged inline repair is https://github.com/openclaw/openclaw/pull/143753. Do not add a new feature, config option, parallel media owner, or CHANGELOG.md entry; put user-visible fix notes and measured test cost in the PR body.
 
 Likely files:
 
 - src/gateway/server-methods/chat-send-attachments.ts
 - src/gateway/server-methods/chat-send-user-turn.ts
 - src/gateway/server-methods/chat-send-user-turn.test.ts
-- src/gateway/server-methods/chat-send-attachments.owner.test.ts
+- src/gateway/server-methods/chat.directive-tags.test.ts
 
 Validation:
 
 - pnpm test src/gateway/server-methods/chat-send-user-turn.test.ts --maxWorkers=1
-- pnpm test src/gateway/server-methods/chat-send-attachments.owner.test.ts --maxWorkers=1
-- pnpm test src/auto-reply/reply/get-reply.media-staging.test.ts --maxWorkers=1
-- git diff --check
+- pnpm test src/gateway/server-methods/chat.directive-tags.test.ts --maxWorkers=1
 
 ## Operator Prompt
 
