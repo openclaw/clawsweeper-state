@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159912"
-mode: "autonomous"
-run_id: "36354679399"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36354679399"
+mode: "plan"
+run_id: "36358872945"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36358872945"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T23:04:36.174Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159912"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159912"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T23:32:42.653Z"
+canonical: "#159912"
+canonical_issue: "#159912"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36354679399](https://github.com/openclaw/clawsweeper/actions/runs/36354679399)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36358872945](https://github.com/openclaw/clawsweeper/actions/runs/36358872945)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159912
+Canonical: #159912
 
 ## Summary
 
-The checked-out Memory Core code still captures an import-time context and uses it to arm background callbacks. The required failing regression through a real plugin instance was not run: this checkout is read-only, has no node_modules, and is a shallow checkout at 069a974b rather than the preflight main SHA. No code was changed or PR opened.
+Plan a narrow Memory Core fix. The checkout matches preflight main, and current source still captures an import-time context for background callbacks. A failing regression through an already-armed interval callback and registry adoption remains the required gate before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The checked-out Memory Core code still captures an import-time context and uses 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159912 | fix_needed | planned | canonical | The reported defect has a credible current-source path, but implementation requires the mandated failing regression before editing. |
-| #155769 | keep_related | planned | related | Keep its distinct restart and service-lifecycle investigation open. |
-| cluster:issue-openclaw-openclaw-159912 | build_fix_artifact | blocked |  | A writable checkout with dependencies and a verified current main is needed to establish the required real-plugin failing regression before building the PR. |
+| #159912 | fix_needed | planned | canonical | Prove the callback failure on current main, then repair background admission within the existing plugin and SDK boundary. |
+| #155769 | keep_related | planned | related | The restart, process-lifecycle, and status concerns need their own investigation; this Memory Core callback plan does not establish one shared cause. |
 
 ## Needs Human
 

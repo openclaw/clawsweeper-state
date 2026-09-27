@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159912",
+  "mode": "plan",
+  "run_id": "36358872945",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36358872945",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159912.md",
+  "published_at": "2026-09-27T23:32:42.653Z",
+  "canonical": "#159912",
+  "canonical_issue": "#159912",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Memory Core fix. The checkout matches preflight main, and current source still captures an import-time context for background callbacks. A failing regression through an already-armed interval callback and registry adoption remains the required gate before implementation.",
+  "actions": [
+    {
+      "target": "#159912",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159912",
+      "candidate_fix": null,
+      "reason": "Prove the callback failure on current main, then repair background admission within the existing plugin and SDK boundary."
+    },
+    {
+      "target": "#155769",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#159912",
+      "candidate_fix": null,
+      "reason": "The restart, process-lifecycle, and status concerns need their own investigation; this Memory Core callback plan does not establish one shared cause."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
