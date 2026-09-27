@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T11:03:35.061Z",
+  "updated_at": "2026-09-27T11:06:19.171Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158786:5845407574:2026-09-27T04:46:53Z:clawsweeper_needs_human",
-      "comment_id": "5845407574",
-      "comment_version_key": "5845407574:2026-09-27T04:46:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158786#issuecomment-5845407574",
-      "comment_created_at": "2026-09-26T10:17:17Z",
-      "comment_updated_at": "2026-09-27T04:46:53Z",
-      "comment_body_sha256": "9f21716ad5065306b58cfbbd83d8a6ac1bb8a0c4ccb24535ca24ba779bab483a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published updater carrying existing operator state has not been shown applying this candidate's reload settings and settling active work through restart. An upgrade could therefore... (sha=e2484a96c62ab217b230a6fa8f3abf1875b1bf14)",
-      "expected_head_sha": "e2484a96c62ab217b230a6fa8f3abf1875b1bf14",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T05:04:30.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l72-gateway4",
-        "head_sha": "e2484a96c62ab217b230a6fa8f3abf1875b1bf14",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159182:5850028403:2026-09-27T04:59:21Z:clawsweeper_needs_human",
       "comment_id": "5850028403",
@@ -33369,6 +33336,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154963:5855276702:2026-09-27T11:05:18Z:re_review",
+      "comment_id": "5855276702",
+      "comment_version_key": "5855276702:2026-09-27T11:05:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154963#issuecomment-5855276702",
+      "comment_created_at": "2026-09-27T11:05:18Z",
+      "comment_updated_at": "2026-09-27T11:05:18Z",
+      "comment_body_sha256": "e32db7a69edb8504f47d404a1af7c4654f3d370c8a8f897e2945c4d99a7a49d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154963,
+      "author": "jerryliang122",
+      "author_id": 25032918,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T11:06:17.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/154834-failed-subagent-delivery-recurring-context",
+        "head_sha": "12e4c7d3acd12987ae41c69ceb3275fd63e2f85e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
