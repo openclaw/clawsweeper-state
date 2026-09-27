@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T13:44:33.341Z",
+  "updated_at": "2026-09-27T13:55:29.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159493:5853627827:2026-09-27T07:14:09Z:clawsweeper_needs_human",
-      "comment_id": "5853627827",
-      "comment_version_key": "5853627827:2026-09-27T07:14:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159493#issuecomment-5853627827",
-      "comment_created_at": "2026-09-27T07:04:16Z",
-      "comment_updated_at": "2026-09-27T07:14:09Z",
-      "comment_body_sha256": "fbdc9ad109641f27e3e65397e7a4edc6f2dc688e10f6fb3d87e2ec15ecb22f50",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=741d7e934abd365d385f57beaa0c4628274c60dc)",
-      "expected_head_sha": "741d7e934abd365d385f57beaa0c4628274c60dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T07:27:15.695Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/detecting-online-active-and-inactive-users",
-        "head_sha": "741d7e934abd365d385f57beaa0c4628274c60dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159447:5852972053:2026-09-27T07:27:34Z:clawsweeper_auto_repair",
       "comment_id": "5852972053",
@@ -33618,6 +33585,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159555:5856474313:2026-09-27T13:54:33Z:re_review",
+      "comment_id": "5856474313",
+      "comment_version_key": "5856474313:2026-09-27T13:54:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159555#issuecomment-5856474313",
+      "comment_created_at": "2026-09-27T13:54:33Z",
+      "comment_updated_at": "2026-09-27T13:54:33Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159555,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T13:55:22.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agentsapi-settlement-cleanup-deadline-monotonic-148",
+        "head_sha": "5b1c90fc686add7d6cacd2d08073a5f3817d62f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
