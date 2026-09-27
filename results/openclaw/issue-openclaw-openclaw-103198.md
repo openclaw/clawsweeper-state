@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103198"
 mode: "autonomous"
-run_id: "36323363159"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36323363159"
+run_id: "36320954532"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36320954532"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T14:21:31.982Z"
+published_at: "2026-09-27T13:38:25.644Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103198"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103198"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36323363159](https://github.com/openclaw/clawsweeper/actions/runs/36323363159)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36320954532](https://github.com/openclaw/clawsweeper/actions/runs/36320954532)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/103198
 
 ## Summary
 
-Current main still has a source-visible gap for vision-capable WebChat image offloads: they reach model vision but are excluded from the media facts used to stage a file-tool path. No code changed. The read-only checkout has no installed dependencies, so the required failing chat.send regression and local validation could not run.
+Current main has a source-backed gap for vision-capable offloaded WebChat images, but the required Gateway regression could not be run. The checkout is read-only, dependencies are absent, and Corepack fails with EROFS. No code, branch, or PR was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Current main still has a source-visible gap for vision-capable WebChat image off
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103198 | fix_needed | planned | canonical | The merged inline repair does not cover the all-offloaded vision route. A failing chat.send regression must be established before editing in a writable executor. |
-| #115076 | keep_related | planned | related | Keep its distinct metadata and product-contract discussion open. |
-| cluster:issue-openclaw-openclaw-103198 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies; the executor must reproduce the defect through chat.send before making the narrow repair. |
+| #103198 | fix_needed | planned | canonical | A failing Gateway chat.send regression and a validated patch are still required. |
+| #143753 | keep_closed | skipped | related | Historical partial repair; no action on the merged PR. |
+| #86371 | keep_closed | skipped | independent | Different entry point and root cause. |
+| cluster:issue-openclaw-openclaw-103198 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout and unavailable test toolchain; reproduce the defect at chat.send before editing or opening a PR. |
 
 ## Needs Human
 
