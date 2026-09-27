@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T23:06:49.511Z",
+  "updated_at": "2026-09-27T23:06:59.988Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159598:5857739290:2026-09-27T16:37:56Z:re_review",
-      "comment_id": "5857739290",
-      "comment_version_key": "5857739290:2026-09-27T16:37:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159598#issuecomment-5857739290",
-      "comment_created_at": "2026-09-27T16:37:56Z",
-      "comment_updated_at": "2026-09-27T16:37:56Z",
-      "comment_body_sha256": "b8dec150630e1b2b184f942f930bc2eb2916ab3de01236e91b0734fcd9ae696c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159598,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T17:06:14.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/startup-read-failure",
-        "head_sha": "a1fbdca064f3106349499ea50f04007c7d48ebb9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159598:5855214814:2026-09-27T17:05:12Z:clawsweeper_auto_repair",
       "comment_id": "5855214814",
@@ -33773,6 +33726,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159585:5854950822:2026-09-27T23:04:17Z:clawsweeper_needs_human",
+      "comment_id": "5854950822",
+      "comment_version_key": "5854950822:2026-09-27T23:04:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159585#issuecomment-5854950822",
+      "comment_created_at": "2026-09-27T10:13:52Z",
+      "comment_updated_at": "2026-09-27T23:04:17Z",
+      "comment_body_sha256": "4012573278fcec1e1c71e2279424433b9d0bebd52baca1f86bae2d2bf38f934b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The synthetic benchmark reports 19–38% slower per-read wall time. Its lower main-thread allocation has not yet been shown to improve responsiveness under concurrent Gateway load. (sha=dd372be6b8f954536c9b54b33dead16d707464b4)",
+      "expected_head_sha": "dd372be6b8f954536c9b54b33dead16d707464b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T23:06:59.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-sqlite-worker-reply-deserialize-20260919",
+        "head_sha": "dd372be6b8f954536c9b54b33dead16d707464b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
