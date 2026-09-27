@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T12:28:31.563Z",
+  "updated_at": "2026-09-27T12:28:40.596Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159415:5852633685:2026-09-27T06:05:38Z:clawsweeper_needs_human",
-      "comment_id": "5852633685",
-      "comment_version_key": "5852633685:2026-09-27T06:05:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159415#issuecomment-5852633685",
-      "comment_created_at": "2026-09-27T04:30:43Z",
-      "comment_updated_at": "2026-09-27T06:05:38Z",
-      "comment_body_sha256": "2335cadfb7845a25d19bda01c87354f02860e542eddabb9cf9984fdb6f039c7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159415,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - As of the reviewed PR body, the 2026.8.1 legacy-operator-state upgrade cell had no final outcome; service restoration and executor settlement on that older published driver remain unc... (sha=9c005fd92621b8d07d82728fe82304b62819273c)",
-      "expected_head_sha": "9c005fd92621b8d07d82728fe82304b62819273c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T06:07:25.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-cli-deslop",
-        "head_sha": "9c005fd92621b8d07d82728fe82304b62819273c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150549:5708227563:2026-09-27T06:00:17Z:clawsweeper_auto_repair",
       "comment_id": "5708227563",
@@ -33491,6 +33458,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159618:5855811101:2026-09-27T12:27:19Z:re_review",
+      "comment_id": "5855811101",
+      "comment_version_key": "5855811101:2026-09-27T12:27:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159618#issuecomment-5855811101",
+      "comment_created_at": "2026-09-27T12:27:19Z",
+      "comment_updated_at": "2026-09-27T12:27:19Z",
+      "comment_body_sha256": "94ee6f2f28b52eabddae1243f642c0fe692d2cee95fec3b65b0c88e7f1b540dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159618,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T12:28:39.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/slop40k-02-20260927",
+        "head_sha": "3adf57e93984afc6fc84f4aa6c425768f9dd14e0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
