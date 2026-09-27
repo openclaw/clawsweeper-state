@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T18:19:46.500Z",
+  "updated_at": "2026-09-27T18:19:49.629Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159618:5855811101:2026-09-27T12:27:19Z:re_review",
-      "comment_id": "5855811101",
-      "comment_version_key": "5855811101:2026-09-27T12:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159618#issuecomment-5855811101",
-      "comment_created_at": "2026-09-27T12:27:19Z",
-      "comment_updated_at": "2026-09-27T12:27:19Z",
-      "comment_body_sha256": "94ee6f2f28b52eabddae1243f642c0fe692d2cee95fec3b65b0c88e7f1b540dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159618,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T12:28:39.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/slop40k-02-20260927",
-        "head_sha": "3adf57e93984afc6fc84f4aa6c425768f9dd14e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159624:5855815487:2026-09-27T12:27:58Z:re_review",
       "comment_id": "5855815487",
@@ -33820,6 +33773,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159817:5858492731:2026-09-27T18:18:47Z:clawsweeper_needs_human",
+      "comment_id": "5858492731",
+      "comment_version_key": "5858492731:2026-09-27T18:18:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159817#issuecomment-5858492731",
+      "comment_created_at": "2026-09-27T18:18:47Z",
+      "comment_updated_at": "2026-09-27T18:18:47Z",
+      "comment_body_sha256": "fa2af9537d57f11eab4b0bb98be14a6a83036e3a621b8cc47292eb05944b16c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159817,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head changes Doctor migration and repair paths, but the captured proof does not yet show a published updater driving this candidate against existing configuration and stat... (sha=984ee27909b565f951d465fcbf50843294d45c2a)",
+      "expected_head_sha": "984ee27909b565f951d465fcbf50843294d45c2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T18:19:49.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l124-commands5",
+        "head_sha": "984ee27909b565f951d465fcbf50843294d45c2a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
