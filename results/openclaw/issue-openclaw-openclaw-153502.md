@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
 mode: "autonomous"
-run_id: "36338561986"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36338561986"
+run_id: "36343980736"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36343980736"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T19:06:19.386Z"
+published_at: "2026-09-27T20:06:44.159Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36338561986](https://github.com/openclaw/clawsweeper/actions/runs/36338561986)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36343980736](https://github.com/openclaw/clawsweeper/actions/runs/36343980736)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-Current checkout 89b736ae still contains the reported Doctor settlement mismatch. Source inspection identifies the failure path, but the read-only checkout has no installed dependencies, so I could not add a failing regression, patch the code, or validate a PR branch. No GitHub action was taken.
+At preflight main SHA 272605d6d54800a2690332d1142faf64951bd60d, Doctor's retained-source settlement rejects historical_transcript_deferred even though the shared migration contract classifies it as a warning. A runnable regression, patch, and validation remain blocked by the read-only checkout and unavailable dependencies. No PR was opened.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current checkout 89b736ae still contains the reported Doctor settlement mismatch
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | The source-level failure remains, but a failing Doctor-path regression and validated implementation could not be produced in this worker environment. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with repository dependencies. |
+| #153502 | fix_needed | planned | canonical | The source-level mismatch supports a narrow Doctor fix, but the required failing entry-point regression could not be run in this read-only checkout. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only filesystem. Reproduce through Doctor and plugin completion on writable latest main before applying the narrow fix. |
 
 ## Needs Human
 
