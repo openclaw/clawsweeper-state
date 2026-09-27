@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Doctor session SQLite recovery defect in https://github.com/openclaw/openclaw/issues/153502. First establish a failing regression through the Doctor post-session path with a verified retained plugin-source receipt and an advisory historical_transcript_deferred finding. Repair the retained-source classification so an unrelated historical warning cannot block plugin completion, without globally treating conflicts or unverified files as safe to archive. Preserve original bytes, receipts, current SQLite state, and per-agent failure attribution. Add focused regression coverage, run the targeted Doctor suite and changed-file checks, and document update behavior using a published-driver × candidate proof cell. Keep release notes in the PR body; do not edit CHANGELOG.md. Stop if the repair needs a new feature, config option, schema, or product-policy choice.
+Fix the existing Doctor session SQLite bug in which an advisory historical_transcript_deferred finding prevents settlement of otherwise verified retained plugin migration sources. Establish a failing regression at the Doctor/post-session plugin repair boundary using an isolated mixed-state fixture, then make the narrow owner-side repair. Preserve unverified historical originals, receipt authority, archive safety, and per-agent failure attribution; do not add a feature, config option, schema change, or broad warning suppression. Related partial fixes: https://github.com/openclaw/openclaw/pull/154413 and https://github.com/openclaw/openclaw/pull/158857. Validate focused Doctor tests and changed-file checks. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/commands/doctor-session-sqlite-types.ts
 - src/commands/doctor-session-sqlite.ts
-- src/commands/doctor-session-sqlite.retained-source-verification.test.ts
+- src/commands/doctor-session-sqlite.active-settlement.test.ts
 
 Validation:
 
+- node scripts/run-vitest.mjs src/commands/doctor-session-sqlite.active-settlement.test.ts --maxWorkers=1
 - node scripts/run-vitest.mjs src/commands/doctor-session-sqlite.retained-source-verification.test.ts --maxWorkers=1
-- node scripts/check-changed.mjs
+- node scripts/check-changed.mjs --base origin/main
 
 ## Operator Prompt
 
