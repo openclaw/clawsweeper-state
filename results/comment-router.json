@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:45:40.084Z",
+  "updated_at": "2026-09-27T15:45:49.781Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158877:5854255085:2026-09-27T09:30:49Z:clawsweeper_needs_human",
-      "comment_id": "5854255085",
-      "comment_version_key": "5854255085:2026-09-27T09:30:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158877#issuecomment-5854255085",
-      "comment_created_at": "2026-09-27T08:36:41Z",
-      "comment_updated_at": "2026-09-27T09:30:49Z",
-      "comment_body_sha256": "64619ed4fea119f0131bd34e1493d51484e9a5805a1cfbe1600571da6caaa796",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-head published v2026.9.6 updater × candidate run has no completed result yet. The changed Doctor, restart-sentinel, and receipt paths still need existing-state upgrade com... (sha=6dabff2ac7c5da0e6c476a77ca6a38d462aef396)",
-      "expected_head_sha": "6dabff2ac7c5da0e6c476a77ca6a38d462aef396",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T09:33:15.794Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l79-infra4",
-        "head_sha": "6dabff2ac7c5da0e6c476a77ca6a38d462aef396",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159563:5854602361:2026-09-27T09:21:48Z:clawsweeper_needs_human",
       "comment_id": "5854602361",
@@ -33653,6 +33620,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159737:5857348321:2026-09-27T15:44:45Z:re_review",
+      "comment_id": "5857348321",
+      "comment_version_key": "5857348321:2026-09-27T15:44:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159737#issuecomment-5857348321",
+      "comment_created_at": "2026-09-27T15:44:45Z",
+      "comment_updated_at": "2026-09-27T15:44:45Z",
+      "comment_body_sha256": "9ea3614cc003a5c94b411e2fbd540ef4345e3dcb34cca398e1d8c2c13dc303fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159737,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T15:45:47.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-session-visibility",
+        "head_sha": "b90f1cabf2121fdfd9f284173c6722dcac2df97e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
