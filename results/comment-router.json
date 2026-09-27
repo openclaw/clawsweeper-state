@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-27T01:23:19.199Z",
+  "updated_at": "2026-09-27T01:23:24.099Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5772163959:2026-09-22T06:30:47Z:re_review",
-      "comment_id": "5772163959",
-      "comment_version_key": "5772163959:2026-09-22T06:30:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5772163959",
-      "comment_created_at": "2026-09-22T06:30:47Z",
-      "comment_updated_at": "2026-09-22T06:30:47Z",
-      "comment_body_sha256": "11e0a883f8e1ecf21c542b9d6aff3907e2eef480576250fe18243d4c5912655f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T18:04:09.499Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5773503555:2026-09-22T08:33:37Z:re_review",
       "comment_id": "5773503555",
@@ -33496,6 +33469,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153916:5751749656:2026-09-27T01:22:21Z:clawsweeper_needs_human",
+      "comment_id": "5751749656",
+      "comment_version_key": "5751749656:2026-09-27T01:22:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153916#issuecomment-5751749656",
+      "comment_created_at": "2026-09-20T18:27:44Z",
+      "comment_updated_at": "2026-09-27T01:22:21Z",
+      "comment_body_sha256": "108f24609e60eb537e8e0de757040c0a8481a7a5b5db3a60ea5732db1848a8ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A Decision provider plugin that ignores abort can keep tool-result delivery and run close waiting beyond the cooperative 750 ms budget; the submitted slow-response proof covers the bu... (sha=13e19a93909b7709ec600b076f529f91b84761bf)",
+      "expected_head_sha": "13e19a93909b7709ec600b076f529f91b84761bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T01:23:24.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/semantic-stall-replan",
+        "head_sha": "13e19a93909b7709ec600b076f529f91b84761bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
