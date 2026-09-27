@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 27, 2026, 03:12 UTC
+Last source update: Sep 27, 2026, 03:42 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 27, 2026, 03:12 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 27, 2026, 03:12 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36289969888) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 27, 2026, 03:01 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36290136016) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 27, 2026, 03:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36291453999) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 27, 2026, 03:38 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36291930837) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 26, 2026, 14:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36249826507) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 27, 2026, 03:05 UTC
+Last source update: Sep 27, 2026, 03:24 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1235 | 100% |
-| Run attempts archived | 3705 | audit |
-| Latest successful clusters | 1036 | 83.9% |
-| Latest failed clusters | 196 | 15.9% |
+| Run attempts archived | 3706 | audit |
+| Latest successful clusters | 1035 | 83.8% |
+| Latest failed clusters | 197 | 16.0% |
 | Latest cancelled clusters | 3 | 0.2% |
 | Needs-human clusters | 126 | 10.2% |
 | Fix actions failed | 34 | 4.5% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1235 clusters: 345 maintainer action, 376 automation snapshot, 464 intervention needed, 50 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#123159](https://github.com/openclaw/openclaw/issues/123159) is maintainer_input: Quarantine this historical linked PR only; it requires no close or merge action..
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-159330](cluster:issue-openclaw-openclaw-159330) is automation_failed: Implementation is blocked by this worker's read-only filesystem; no fix or PR was created..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-103694](cluster:issue-openclaw-openclaw-103694) is automation_failed: Run a failing catalog-path regression on current main before implementing or opening a PR..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#159313](https://github.com/openclaw/openclaw/issues/159313) is action_planned: Reproduce the failure on macOS arm64, then add a failing regression through generation capture and repair only the Bun/Darwin descriptor-....
 - Completed latest: no completed action in the latest records.
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 332 |
-| automation_failed | 210 |
-| automation_blocked | 254 |
+| automation_failed | 211 |
+| automation_blocked | 253 |
 | reviewed_no_action | 50 |
 | completed | 0 |
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-103694](cluster:issue-openclaw-openclaw-103694) | automation_failed | Run a failing catalog-path regression on current main before implementing or opening a PR. | Sep 27, 2026, 03:24 UTC | [issue-openclaw-openclaw-103694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103694.md) | [36289838728](https://github.com/openclaw/clawsweeper/actions/runs/36289838728) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-159330](cluster:issue-openclaw-openclaw-159330) | automation_failed | Implementation is blocked by this worker's read-only filesystem; no fix or PR was created. | Sep 27, 2026, 02:57 UTC | [issue-openclaw-openclaw-159330](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-159330.md) | [36288245251](https://github.com/openclaw/clawsweeper/actions/runs/36288245251) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103694](https://github.com/openclaw/openclaw/pull/103694) | automation_blocked | The job requires a failing regression on latest main before implementation. Missing dependencies and read-only filesystem access prevent that proof... | Sep 27, 2026, 02:39 UTC | [issue-openclaw-openclaw-103694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103694.md) | [36288972089](https://github.com/openclaw/clawsweeper/actions/runs/36288972089) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-82121](cluster:issue-openclaw-openclaw-82121) | automation_failed | Implementation requires a writable, independently owned checkout with dependencies installed. | Sep 27, 2026, 01:50 UTC | [issue-openclaw-openclaw-82121](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-82121.md) | [36284467607](https://github.com/openclaw/clawsweeper/actions/runs/36284467607) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#158922](https://github.com/openclaw/openclaw/pull/158922) | automation_blocked | The job requires a failing regression on current main before implementation. This worker cannot establish that proof or validate a patch in the rea... | Sep 27, 2026, 01:25 UTC | [issue-openclaw-openclaw-158922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-158922.md) | [36285251629](https://github.com/openclaw/clawsweeper/actions/runs/36285251629) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-159184](cluster:issue-openclaw-openclaw-159184) | automation_failed | Implementation must run in a writable checkout with dependencies restored; do not open a PR from unvalidated source inspection. | Sep 26, 2026, 22:00 UTC | [issue-openclaw-openclaw-159184](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-159184.md) | [36273068313](https://github.com/openclaw/clawsweeper/actions/runs/36273068313) |
