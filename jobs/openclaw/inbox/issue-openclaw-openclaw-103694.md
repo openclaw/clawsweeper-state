@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing repeated unknown-format warning for non-draft MCP tool schemas at src/agents/mcp-json-schema-validator.ts. First establish a failing regression through the actual catalog/validator path using an unknown format such as google-duration or uint. Use the MCP SDK or its authoritative format behavior; do not copy a handwritten known-format registry, suppress all warnings, add a config option, or weaken validation of recognized formats such as uri and email. Cover catalog loading and preserved known-format rejection in focused tests. Check the prior, closed proposal at https://github.com/openclaw/openclaw/pull/103699 for context, but do not revive its rejected registry design. Validate with node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts src/agents/agent-bundle-mcp-runtime.test.ts, node scripts/check-changed.mjs, and git diff --check. Put user-visible fix notes and proof in the PR body; do not edit CHANGELOG.md. Stop and return for review if the repair requires a new feature, config option, or product-policy choice.
+Repair repeated unknown-format warnings from healthy MCP tool schemas at src/agents/mcp-json-schema-validator.ts. First establish a failing regression on the current production catalog path using an unregistered format and a registered format. Use dependency-authoritative SDK/Ajv format handling or configuration; do not copy a format registry, disable supported-format validation, add a setting, or change MCP transport behavior. Keep the repair bounded to the validator and its meaningful owner-boundary coverage, with a real catalog-load observation after the fix. Related context: https://github.com/openclaw/openclaw/pull/103699 closed unmerged because its copied registry could drift. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -77,8 +77,8 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts src/agents/agent-bundle-mcp-runtime.test.ts
-- node scripts/check-changed.mjs
+- node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts
+- node scripts/run-vitest.mjs src/agents/agent-bundle-mcp-runtime.test.ts
 - git diff --check
 
 ## Operator Prompt
