@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158944",
+  "mode": "autonomous",
+  "run_id": "36286173169",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36286173169",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158944.md",
+  "published_at": "2026-09-27T02:16:01.566Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158944",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158944",
+  "canonical_pr": null,
+  "summary": "The checked-out main still has the reported plugin approval state loss. Implementation is blocked in this read-only checkout: dependencies are absent, and the required failing regression could not run. No branch, code change, or PR was created.",
+  "actions": [
+    {
+      "target": "#158944",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158944",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix is indicated by the current source, subject to a failing regression and validation in a writable executor checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158944",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158944",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies; the job requires a failing regression before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
