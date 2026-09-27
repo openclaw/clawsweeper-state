@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-27T11:13:58.687Z",
+  "updated_at": "2026-09-27T11:13:35.656Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126224:5338632469:2026-09-27T04:47:34Z:clawsweeper_needs_human",
+      "comment_id": "5338632469",
+      "comment_version_key": "5338632469:2026-09-27T04:47:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126224#issuecomment-5338632469",
+      "comment_created_at": "2026-08-19T06:57:40Z",
+      "comment_updated_at": "2026-09-27T04:47:34Z",
+      "comment_body_sha256": "4fdfdf18f5f07db5769eab3013d3b209b9712a385a60f2d061b976e2512d05b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The earlier-head running Gateway trace shows a recovered models.list response, and current-head tests...; Review finding: [medium] Verify adopted credentials at final provider I/O — src/agents/prepared-model-runtime-auth-publication.ts:314 (sha=3d98fc9c7e1958bcf67364e48f08ec59e9aa147e)",
+      "expected_head_sha": "3d98fc9c7e1958bcf67364e48f08ec59e9aa147e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T05:05:21.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prepared-catalog-generation-recovery",
+        "head_sha": "3d98fc9c7e1958bcf67364e48f08ec59e9aa147e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158992:5847670717:2026-09-27T04:42:02Z:clawsweeper_needs_human",
       "comment_id": "5847670717",
@@ -33392,39 +33425,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159578:5854860849:2026-09-27T11:13:03Z:clawsweeper_auto_repair",
-      "comment_id": "5854860849",
-      "comment_version_key": "5854860849:2026-09-27T11:13:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159578#issuecomment-5854860849",
-      "comment_created_at": "2026-09-27T09:59:28Z",
-      "comment_updated_at": "2026-09-27T11:13:03Z",
-      "comment_body_sha256": "5833ed66bda5b31438025148c8d00ce6a5710eacf0c0810e47557e939ed51c63",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159578,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6846f770aab1f293de0934ec3ae70961337960ae)",
-      "expected_head_sha": "6846f770aab1f293de0934ec3ae70961337960ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T11:13:58.687Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/exec-timeout-race",
-        "head_sha": "6846f770aab1f293de0934ec3ae70961337960ae",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
