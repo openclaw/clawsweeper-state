@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "plan"
-run_id: "36314203110"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36314203110"
-head_sha: "420da22ea0f2844e495eed9844c8b283fe63e8b7"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-27T11:01:10.696Z"
+mode: "autonomous"
+run_id: "36340375076"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36340375076"
+head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-27T19:02:11.899Z"
 canonical: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36314203110](https://github.com/openclaw/clawsweeper/actions/runs/36314203110)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36340375076](https://github.com/openclaw/clawsweeper/actions/runs/36340375076)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/156442
 
 ## Summary
 
-Plan a narrow Claude CLI refresh-lock recovery fix. The source issue remains open; the earlier fix PR closed unmerged. The two linked OAuth issues have distinct execution paths.
+Current main still routes Claude Code’s nonempty refresh-lock error to terminal CLI failure. A narrow fix is warranted, but this read-only checkout lacks dependencies, so the required failing regression, patch, and validation could not be completed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Plan a narrow Claude CLI refresh-lock recovery fix. The source issue remains ope
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/156442 | build_fix_artifact | planned | canonical | Keep this issue as the fix owner. Reproduce the reported handling on current main, then retry only the pre-work contention failure once on the same candidate and session. |
-| https://github.com/openclaw/openclaw/issues/8673 | keep_related | planned | related | The failures share an OAuth symptom but have different owners and retry safety contracts. |
-| https://github.com/openclaw/openclaw/issues/89278 | keep_related | planned | related | Its Codex callback and diagnostic work is distinct from the Claude CLI subprocess failure. |
-| https://github.com/openclaw/openclaw/pull/156572 | keep_closed | skipped |  | Retain it as useful source work and credit its author in the new PR. |
+| #156442 | fix_needed | planned | canonical | Reproduce through the CLI execution and recovery boundary before implementing. |
+| #8673 | keep_related | planned | related | Separate refresh owner and failure path. |
+| #89278 | keep_related | planned | related | Different provider, transport, and remaining repair. |
+| #156572 | keep_closed | skipped | superseded | Historical source work; preserve credit if its approach is reused. |
+| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | planned |  | Prepare one narrow implementation PR after writable checkout and dependency setup are available. |
+| cluster:issue-openclaw-openclaw-156442 | open_fix_pr | blocked |  | The required reproduced, validated branch cannot be prepared in this checkout. |
 
 ## Needs Human
 
