@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T10:16:35.922Z",
+  "updated_at": "2026-09-27T10:16:48.748Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:719:5852402526:2026-09-27T04:37:39Z:clawsweeper_auto_repair",
-      "comment_id": "5852402526",
-      "comment_version_key": "5852402526:2026-09-27T04:37:39Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/719#issuecomment-5852402526",
-      "comment_created_at": "2026-09-27T03:48:16Z",
-      "comment_updated_at": "2026-09-27T04:37:39Z",
-      "comment_body_sha256": "b3b801d24e406fd68551d90646707457db93b1a896354f8a2c2f1a07ec6b5626",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 719,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3e99f29953f621f29ed8ed0175bc2741db39b823)",
-      "expected_head_sha": "3e99f29953f621f29ed8ed0175bc2741db39b823",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T04:38:41.312Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-sidecar-bigint-identity-20260927",
-        "head_sha": "3e99f29953f621f29ed8ed0175bc2741db39b823",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158902:5846663021:2026-09-27T04:34:24Z:clawsweeper_auto_repair",
       "comment_id": "5846663021",
@@ -33406,6 +33373,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159586:5854963145:2026-09-27T10:15:56Z:clawsweeper_needs_human",
+      "comment_id": "5854963145",
+      "comment_version_key": "5854963145:2026-09-27T10:15:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159586#issuecomment-5854963145",
+      "comment_created_at": "2026-09-27T10:15:56Z",
+      "comment_updated_at": "2026-09-27T10:15:56Z",
+      "comment_body_sha256": "32b118c77e7660b2f3fc16cb35b757ab9bf21d6a5e6cba0f1ed87c6d343fde2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159586,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed cron service result reaches a tool-output test through a mocked Gateway call, but the supplied evidence does not show the new field... (sha=6e9b5232e8434060cff065aabf9b2837a9590c93)",
+      "expected_head_sha": "6e9b5232e8434060cff065aabf9b2837a9590c93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T10:16:48.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-159541-cron-remove",
+        "head_sha": "6e9b5232e8434060cff065aabf9b2837a9590c93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
