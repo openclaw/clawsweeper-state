@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T23:06:06.296Z",
+  "updated_at": "2026-09-27T23:06:47.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159632:5857932600:2026-09-27T17:04:31Z:re_review",
-      "comment_id": "5857932600",
-      "comment_version_key": "5857932600:2026-09-27T17:04:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159632#issuecomment-5857932600",
-      "comment_created_at": "2026-09-27T17:04:31Z",
-      "comment_updated_at": "2026-09-27T17:04:31Z",
-      "comment_body_sha256": "6e86e18a54d4c4611ec969f3b0d218594fef45aca98e579a0515dc5a826d96d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159632,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T17:05:26.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/persistent-reply-admission-20260927",
-        "head_sha": "0ffb95a7fd71f2e93b5f6da8f2627d3666c3a84e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159597:5855243628:2026-09-27T17:04:46Z:clawsweeper_needs_human",
       "comment_id": "5855243628",
@@ -33770,6 +33723,39 @@
         "kind": "pull_request",
         "branch": "openclaw/smooth-webui-fades-audit",
         "head_sha": "b6e8d688da0e3c570b9c94877df2d6b1999162ce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159752:5857327844:2026-09-27T23:05:41Z:clawsweeper_needs_human",
+      "comment_id": "5857327844",
+      "comment_version_key": "5857327844:2026-09-27T23:05:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159752#issuecomment-5857327844",
+      "comment_created_at": "2026-09-27T15:41:52Z",
+      "comment_updated_at": "2026-09-27T23:05:41Z",
+      "comment_body_sha256": "6a15a3098e552b0335b66aa2e7de8eb1e1ca3be498173dabbf116202e3cae44c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body does not tie a final-head worker recovery result to the shared staged-result settlement path. An ordering regression there could leave an accepted workspace result or turn... (sha=0df367ed801278e189be8d7e6b4f9065f33408a1)",
+      "expected_head_sha": "0df367ed801278e189be8d7e6b4f9065f33408a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T23:06:47.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l122-gateway-methods-workers",
+        "head_sha": "0df367ed801278e189be8d7e6b4f9065f33408a1",
         "cluster_id": null,
         "job_path": null
       }
