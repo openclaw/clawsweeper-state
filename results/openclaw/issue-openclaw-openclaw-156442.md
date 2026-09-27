@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "autonomous"
-run_id: "36340375076"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36340375076"
+mode: "plan"
+run_id: "36344685802"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36344685802"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T19:02:11.899Z"
-canonical: "https://github.com/openclaw/openclaw/issues/156442"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T19:35:31.686Z"
+canonical: "#156442"
+canonical_issue: "#156442"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36340375076](https://github.com/openclaw/clawsweeper/actions/runs/36340375076)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36344685802](https://github.com/openclaw/clawsweeper/actions/runs/36344685802)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/156442
+Canonical: #156442
 
 ## Summary
 
-Current main still routes Claude Code’s nonempty refresh-lock error to terminal CLI failure. A narrow fix is warranted, but this read-only checkout lacks dependencies, so the required failing regression, patch, and validation could not be completed.
+Plan a narrow Claude CLI recovery fix. First confirm the reported nonempty refresh-lock error fails through the CLI execution and fallback boundary on preflight main 8d4d13c9e4e446b7ad72d3744ce52bcdc3100b9a; the read-only checkout is at a different SHA. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ Current main still routes Claude Code’s nonempty refresh-lock error to termina
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156442 | fix_needed | planned | canonical | Reproduce through the CLI execution and recovery boundary before implementing. |
-| #8673 | keep_related | planned | related | Separate refresh owner and failure path. |
-| #89278 | keep_related | planned | related | Different provider, transport, and remaining repair. |
-| #156572 | keep_closed | skipped | superseded | Historical source work; preserve credit if its approach is reused. |
-| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | planned |  | Prepare one narrow implementation PR after writable checkout and dependency setup are available. |
-| cluster:issue-openclaw-openclaw-156442 | open_fix_pr | blocked |  | The required reproduced, validated branch cannot be prepared in this checkout. |
+| #156442 | fix_needed | planned | canonical | The closed source PR did not land. Confirm the failure on the preflight main SHA, then implement one bounded same-candidate, same-session retry. |
+| #8673 | keep_related | planned | related | It has a separate refresh owner and must stay open for its own decision. |
+| #89278 | keep_related | planned | related | Its remaining diagnostic work is outside this cluster's Claude CLI retry. |
+| #156572 | keep_closed | skipped |  | Use its approach as credited historical context; no close or merge action is valid. |
 
 ## Needs Human
 
