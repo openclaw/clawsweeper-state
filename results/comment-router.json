@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T19:09:19.562Z",
+  "updated_at": "2026-09-27T19:09:24.483Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159234:5856179963:2026-09-27T13:13:58Z:re_review",
-      "comment_id": "5856179963",
-      "comment_version_key": "5856179963:2026-09-27T13:13:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159234#issuecomment-5856179963",
-      "comment_created_at": "2026-09-27T13:13:58Z",
-      "comment_updated_at": "2026-09-27T13:13:58Z",
-      "comment_body_sha256": "c0c84ba7ad62a308a09d5a4161821edcfa5e56936b4089859ad039930b85cf2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159234,
-      "author": "alexeysophia",
-      "author_id": 236049996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T13:14:50.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lazy-media-provider-registry",
-        "head_sha": "4ae26279e0fbe2ff00193836b090ba85cf62e976",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159659:5856180834:2026-09-27T13:14:06Z:clawsweeper_auto_repair",
       "comment_id": "5856180834",
@@ -33885,6 +33838,39 @@
         "kind": "pull_request",
         "branch": "codex/deps-20260926-cutoff",
         "head_sha": "ec5f8fb4d530b3c2d3e2381db0a88df1322dfce7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159465:5853229695:2026-09-27T19:03:49Z:clawsweeper_needs_human",
+      "comment_id": "5853229695",
+      "comment_version_key": "5853229695:2026-09-27T19:03:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159465#issuecomment-5853229695",
+      "comment_created_at": "2026-09-27T06:06:12Z",
+      "comment_updated_at": "2026-09-27T19:03:49Z",
+      "comment_body_sha256": "7fd1651493174282c5106e81a4ec9e4b92d95b28429e1103142922f49e0c6116",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed /pair reply for a loopback Gateway using only gateway.publicOrigin has not been observed on Telegram Test Server; the broker prerequisite failed before a credential lease... (sha=37884b7fbf09a400669b27fd105cf080b42d46d5)",
+      "expected_head_sha": "37884b7fbf09a400669b27fd105cf080b42d46d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T19:09:24.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pairing-public-origin",
+        "head_sha": "37884b7fbf09a400669b27fd105cf080b42d46d5",
         "cluster_id": null,
         "job_path": null
       }
