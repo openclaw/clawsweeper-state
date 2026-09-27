@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36320954532",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36320954532",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T13:38:25.644Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Current main has a source-backed gap for vision-capable offloaded WebChat images, but the required Gateway regression could not be run. The checkout is read-only, dependencies are absent, and Corepack fails with EROFS. No code, branch, or PR was changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A failing Gateway chat.send regression and a validated patch are still required."
+    },
+    {
+      "target": "#143753",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Historical partial repair; no action on the merged PR."
+    },
+    {
+      "target": "#86371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different entry point and root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout and unavailable test toolchain; reproduce the defect at chat.send before editing or opening a PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
