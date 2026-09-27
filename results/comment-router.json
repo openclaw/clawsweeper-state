@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T00:24:59.761Z",
+  "updated_at": "2026-09-27T00:24:59.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158848:5848227322:2026-09-26T17:15:15Z:re_review",
-      "comment_id": "5848227322",
-      "comment_version_key": "5848227322:2026-09-26T17:15:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158848#issuecomment-5848227322",
-      "comment_created_at": "2026-09-26T17:15:15Z",
-      "comment_updated_at": "2026-09-26T17:15:15Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158848,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T17:16:13.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/proxy-capture-async-20260926",
-        "head_sha": "5c67ac2eb371d54540bad3ade9996ccac3ed0e63",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157007:5807709732:2026-09-26T17:15:54Z:clawsweeper_auto_repair",
       "comment_id": "5807709732",
@@ -33175,6 +33128,39 @@
         "kind": "pull_request",
         "branch": "codex/audit-priority-default",
         "head_sha": "99be753688f7df52a0bd95573bb260fed71ae3ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153793:5750811599:2026-09-27T00:17:12Z:clawsweeper_needs_human",
+      "comment_id": "5750811599",
+      "comment_version_key": "5750811599:2026-09-27T00:17:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153793#issuecomment-5750811599",
+      "comment_created_at": "2026-09-20T15:41:46Z",
+      "comment_updated_at": "2026-09-27T00:17:12Z",
+      "comment_body_sha256": "975fb84cd48b119dd7e356a7e45fe49fca8a9423515b5f98c7a44dafa0ed3475",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The proposed Decision API callback and automatic turn-context consumer have maintainer-visible discussion, but no recorded acceptance of this particular plugin contract or consumer sc... (sha=05a86bb1ce9525cb86b0ec467e77934e6b277650)",
+      "expected_head_sha": "05a86bb1ce9525cb86b0ec467e77934e6b277650",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T00:24:59.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/semantic-turn-context-shadow",
+        "head_sha": "05a86bb1ce9525cb86b0ec467e77934e6b277650",
         "cluster_id": null,
         "job_path": null
       }
