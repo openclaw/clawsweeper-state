@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159872"
-mode: "autonomous"
-run_id: "36347252471"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36347252471"
+mode: "plan"
+run_id: "36351968771"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36351968771"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T21:03:01.330Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159872"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159872"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T21:35:15.187Z"
+canonical: "#159872"
+canonical_issue: "#159872"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36347252471](https://github.com/openclaw/clawsweeper/actions/runs/36347252471)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36351968771](https://github.com/openclaw/clawsweeper/actions/runs/36351968771)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159872
+Canonical: #159872
 
 ## Summary
 
-The reported source mismatch reproduces on preflight main 4cf8aae1: requesting memory and sessions with both session gates off resolves to memory only; enabling experimental.sessionMemory includes sessions. Implementation and entry-point validation are blocked because this checkout is read-only and has no installed dependencies.
+Latest main still excludes an explicitly requested sessions source when both session gates are off. A focused diagnostic fix is appropriate. This plan makes no code or GitHub changes; regression tests and CLI validation remain to be run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The reported source mismatch reproduces on preflight main 4cf8aae1: requesting m
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159872 | keep_canonical | planned | canonical | Keep the issue open while the diagnostic fix is prepared. |
-| cluster:issue-openclaw-openclaw-159872 | fix_needed | planned |  | Report the excluded source and an enablement hint through Doctor and memory status while preserving the indexing gate. |
-| cluster:issue-openclaw-openclaw-159872 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with installed dependencies. |
+| #159872 | fix_needed | planned | canonical | Doctor and memory status should name the requested source that was excluded and give an enablement hint. |
 
 ## Needs Human
 
