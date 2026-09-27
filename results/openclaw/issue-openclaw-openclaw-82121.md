@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
 mode: "autonomous"
-run_id: "36284467607"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36284467607"
+run_id: "36287464464"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36287464464"
 head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T01:50:54.566Z"
+published_at: "2026-09-27T02:36:26.281Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36284467607](https://github.com/openclaw/clawsweeper/actions/runs/36284467607)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36287464464](https://github.com/openclaw/clawsweeper/actions/runs/36287464464)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-The reported delivery path remains present on main d2d35727: the latest-reply reader can return a display-truncated history preview as complete text, and isolated cron can deliver it. Implementation and a failing regression could not be completed in this read-only checkout. The test command stopped before Vitest because node_modules is missing; installing dependencies is unavailable under the host permissions.
+The checked-out main still has the reported delivery path: the latest-reply reader returns a display-capped chat.history preview, and isolated automation can use that text as a reply. Runtime reproduction and implementation are blocked because this checkout is read-only and has no node_modules. No code or GitHub state changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The reported delivery path remains present on main d2d35727: the latest-reply re
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | The source path establishes the defect, but an executable pre-fix regression remains required before opening a PR. |
-| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation requires a writable, independently owned checkout with dependencies installed. |
+| #82121 | fix_needed | planned | canonical | A narrow producer-metadata-based fix is warranted, pending a failing regression through the reader and delivery caller. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation cannot proceed in this read-only checkout without dependencies; no failing regression or patched branch exists. |
 
 ## Needs Human
 
