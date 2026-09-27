@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "36313895595",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36313895595",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-27T10:57:02.930Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "The issue remains open on main 320c54c5. Source inspection supports the reported warning, but missing dependencies prevented the required failing runtime reproduction. The pinned SDK accepts a custom AJV instance; using that path would require direct dependencies that this bug-only job forbids. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The job requires reproduction before editing and forbids a new dependency. This read-only checkout cannot install dependencies, and the inspected SDK path does not provide a supported no-dependency configuration for suppressing unknown-format warnings while retaining registered-format validation."
+    },
+    {
+      "target": "#103699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Historical contributor work only; preserve attribution to @jincheng-xydt in any later fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Review the dependency boundary before an executor attempts a fix; no executable PR path is established under this job's constraints."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Decide whether a separate, explicitly authorized job may add direct pinned AJV dependencies or pursue an upstream SDK change. This job forbids new dependencies and requires a failing current-main reproduction before editing."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#103694",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
