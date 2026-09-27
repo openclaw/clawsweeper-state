@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:10:24.181Z",
+  "updated_at": "2026-09-27T15:11:32.521Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:724:5853685674:2026-09-27T08:27:48Z:clawsweeper_auto_repair",
-      "comment_id": "5853685674",
-      "comment_version_key": "5853685674:2026-09-27T08:27:48Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/724#issuecomment-5853685674",
-      "comment_created_at": "2026-09-27T07:13:47Z",
-      "comment_updated_at": "2026-09-27T08:27:48Z",
-      "comment_body_sha256": "52eec1d93013914813e46261053c4853a7e74b02192c123a27d26d0873e1b31d",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 724,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e1fa0882be13ce2048821275d7f6e0b1b9f70ef1)",
-      "expected_head_sha": "e1fa0882be13ce2048821275d7f6e0b1b9f70ef1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T08:43:56.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-watch-live-overflow-20260927",
-        "head_sha": "e1fa0882be13ce2048821275d7f6e0b1b9f70ef1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159397:5852456703:2026-09-27T08:30:43Z:clawsweeper_needs_human",
       "comment_id": "5852456703",
@@ -33977,6 +33944,39 @@
       "status": "skipped",
       "processed_at": "2026-09-27T15:10:24.181Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159716:5857059188:2026-09-27T15:10:29Z:clawsweeper_needs_human",
+      "comment_id": "5857059188",
+      "comment_version_key": "5857059188:2026-09-27T15:10:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159716#issuecomment-5857059188",
+      "comment_created_at": "2026-09-27T15:10:29Z",
+      "comment_updated_at": "2026-09-27T15:10:29Z",
+      "comment_body_sha256": "a02183f7ef818cce36ff3134c7cdfcad78755c1f8ac27971d48f492c3be916f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159716,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - After upgrade, existing scripts that create system-event jobs while passing the previously ignored timeout option will fail instead of creating a job; the PR does not yet show the int... (sha=b9569fc087d850981116de8078a16b1285fbe7d1)",
+      "expected_head_sha": "b9569fc087d850981116de8078a16b1285fbe7d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T15:11:32.521Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live2-system-event-timeout",
+        "head_sha": "b9569fc087d850981116de8078a16b1285fbe7d1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
