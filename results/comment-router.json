@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-27T01:14:53.875Z",
+  "updated_at": "2026-09-27T01:15:15.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5674646867:2026-09-15T04:16:17Z:re_review",
-      "comment_id": "5674646867",
-      "comment_version_key": "5674646867:2026-09-15T04:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5674646867",
-      "comment_created_at": "2026-09-15T04:16:17Z",
-      "comment_updated_at": "2026-09-15T04:16:17Z",
-      "comment_body_sha256": "6adfd0e8e9e8d9b10c6f86d5c3d6863c53b9f8b062dde038acaf85ce003afea4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T18:04:09.499Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5682785218:2026-09-15T15:14:20Z:re_review",
       "comment_id": "5682785218",
@@ -33338,6 +33311,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107671:4977139920:2026-09-27T01:14:17Z:clawsweeper_auto_repair",
+      "comment_id": "4977139920",
+      "comment_version_key": "4977139920:2026-09-27T01:14:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107671#issuecomment-4977139920",
+      "comment_created_at": "2026-07-15T05:22:11Z",
+      "comment_updated_at": "2026-09-27T01:14:17Z",
+      "comment_body_sha256": "777dbeff4bf33016abcf6eed53639426f187a437f2e7d6298ea55370dec7e81e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107671,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=00e49bc7711afd554309b40de1c4edb45e555876)",
+      "expected_head_sha": "00e49bc7711afd554309b40de1c4edb45e555876",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T01:15:15.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-clear-cooldown-command",
+        "head_sha": "00e49bc7711afd554309b40de1c4edb45e555876",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
