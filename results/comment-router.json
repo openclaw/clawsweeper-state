@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T21:33:32.692Z",
+  "updated_at": "2026-09-27T21:33:35.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150078:5698835243:2026-09-27T15:38:32Z:clawsweeper_auto_repair",
-      "comment_id": "5698835243",
-      "comment_version_key": "5698835243:2026-09-27T15:38:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150078#issuecomment-5698835243",
-      "comment_created_at": "2026-09-16T14:07:41Z",
-      "comment_updated_at": "2026-09-27T15:38:32Z",
-      "comment_body_sha256": "944c48097475aa5bca810598ea145c632d2490559fac1feea23e07d33553b962",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150078,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=147394dfdb90c3e0915b98f257031510b8128810)",
-      "expected_head_sha": "147394dfdb90c3e0915b98f257031510b8128810",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T15:39:34.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/persist-hook-claimed-replies",
-        "head_sha": "147394dfdb90c3e0915b98f257031510b8128810",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159143:5849410452:2026-09-27T15:38:20Z:clawsweeper_auto_repair",
       "comment_id": "5849410452",
@@ -32476,53 +32443,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:156703:5859966596:2026-09-27T21:25:52Z:re_review",
-      "comment_id": "5859966596",
-      "comment_version_key": "5859966596:2026-09-27T21:25:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156703#issuecomment-5859966596",
-      "comment_created_at": "2026-09-27T21:25:52Z",
-      "comment_updated_at": "2026-09-27T21:25:52Z",
-      "comment_body_sha256": "f90d9c2044d6d919fc1c41f4630c0a15694c4c7b901aa8e2aa8148ebc0718c4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156703,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T21:32:48.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-fallback-readonly-session",
-        "head_sha": "794a477224066114b9b3e3aab75e36e24b5b0fba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:159889:5859999511:2026-09-27T21:30:38Z:re_review",
       "comment_id": "5859999511",
       "comment_version_key": "5859999511:2026-09-27T21:30:38Z",
@@ -33927,6 +33847,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156703:5859966596:2026-09-27T21:25:52Z:re_review",
+      "comment_id": "5859966596",
+      "comment_version_key": "5859966596:2026-09-27T21:25:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156703#issuecomment-5859966596",
+      "comment_created_at": "2026-09-27T21:25:52Z",
+      "comment_updated_at": "2026-09-27T21:25:52Z",
+      "comment_body_sha256": "f90d9c2044d6d919fc1c41f4630c0a15694c4c7b901aa8e2aa8148ebc0718c4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156703,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T21:33:33.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-fallback-readonly-session",
+        "head_sha": "794a477224066114b9b3e3aab75e36e24b5b0fba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156703:5800944724:2026-09-27T21:32:35Z:clawsweeper_needs_human",
+      "comment_id": "5800944724",
+      "comment_version_key": "5800944724:2026-09-27T21:32:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156703#issuecomment-5800944724",
+      "comment_created_at": "2026-09-23T18:53:05Z",
+      "comment_updated_at": "2026-09-27T21:32:35Z",
+      "comment_body_sha256": "d07a498c02c797945aa016291b4e0c7658149982a6a78ccb721bd6d56ed0ccaa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156703,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=794a477224066114b9b3e3aab75e36e24b5b0fba)",
+      "expected_head_sha": "794a477224066114b9b3e3aab75e36e24b5b0fba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T21:33:35.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-fallback-readonly-session",
+        "head_sha": "794a477224066114b9b3e3aab75e36e24b5b0fba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
