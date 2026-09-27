@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82121"
 mode: "autonomous"
-run_id: "36274895580"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36274895580"
+run_id: "36280279709"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36280279709"
 head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-26T22:46:06.166Z"
+published_at: "2026-09-27T00:18:42.063Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82121"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36274895580](https://github.com/openclaw/clawsweeper/actions/runs/36274895580)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36280279709](https://github.com/openclaw/clawsweeper/actions/runs/36280279709)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/82121
 
 ## Summary
 
-The current checkout still has a path that can return a display-truncated history preview as a complete reply. Implementation is blocked: the filesystem is read-only, dependencies are absent, and the checkout does not contain the preflight main SHA. No patch or failing regression was produced.
+Current main still has the reported delivery path, but this checkout is read-only. No regression test, code change, or PR branch could be created or validated.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The current checkout still has a path that can return a display-truncated histor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82121 | fix_needed | planned | canonical | The issue remains open in preflight. All three linked contributor PRs are closed and supply historical context; none is a viable open fix. |
-| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | A writable checkout at current main with dependencies is required before reproducing, editing, and validating the narrow fix. |
+| #82121 | fix_needed | planned | canonical | The open issue has no viable open candidate PR; the linked proposals are closed without merging. |
+| cluster:issue-openclaw-openclaw-82121 | build_fix_artifact | blocked |  | Implementation requires a writable checkout. |
 
 ## Needs Human
 
