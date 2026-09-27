@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158284",
+  "mode": "autonomous",
+  "run_id": "36290325455",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36290325455",
+  "head_sha": "ccf606d924429a0a57b3d1e743d249f5002b9412",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158284.md",
+  "published_at": "2026-09-27T04:03:59.479Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158284",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158284",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported Slack routing path: a binding can project a message timestamp as an outgoing thread ID. A failing regression and patch could not be produced because this checkout is read-only and has no installed dependencies. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158284",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158284",
+      "candidate_fix": null,
+      "reason": "The source path supports the report, but the required failing boundary regression has not run."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158284",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158284",
+      "candidate_fix": null,
+      "reason": "Implementation needs a writable checkout with dependencies before the job's reproduce-first gate can be completed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
