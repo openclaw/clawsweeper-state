@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T10:14:35.179Z",
+  "updated_at": "2026-09-27T10:16:35.922Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158901:5846664637:2026-09-27T04:25:25Z:clawsweeper_needs_human",
-      "comment_id": "5846664637",
-      "comment_version_key": "5846664637:2026-09-27T04:25:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158901#issuecomment-5846664637",
-      "comment_created_at": "2026-09-26T13:30:04Z",
-      "comment_updated_at": "2026-09-27T04:25:25Z",
-      "comment_body_sha256": "bb82c2bc6cc9480f9f2af1a3f3953da0fa9581a542da6101dbc3d104a8bc47f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the external custody boundary** - The worker account can read its scoped tokens, and OpenClaw cannot verify that an external custodian holds actual provider keys or revokes expo...; Review finding: [medium] Approve the external custody boundary — docs/gateway/cloud-workers/native-inference.md:48 (sha=e1113797c13daada82b2905fe230039171c13ee2)",
-      "expected_head_sha": "e1113797c13daada82b2905fe230039171c13ee2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T04:38:29.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-native-worker-runtime",
-        "head_sha": "9f1f817120f1f1b05ad2fe0196a904d50ebc08c5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:719:5852402526:2026-09-27T04:37:39Z:clawsweeper_auto_repair",
       "comment_id": "5852402526",
@@ -33392,6 +33359,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118594:5854961933:2026-09-27T10:15:44Z:re_review",
+      "comment_id": "5854961933",
+      "comment_version_key": "5854961933:2026-09-27T10:15:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118594#issuecomment-5854961933",
+      "comment_created_at": "2026-09-27T10:15:44Z",
+      "comment_updated_at": "2026-09-27T10:15:44Z",
+      "comment_body_sha256": "527a0e096a0a553a728710f93fe8c2eeea7cd7806265d395d80b4f5eb7827eb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118594,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T10:16:34.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/install-jetson-guide",
+        "head_sha": "90d80ab02d79150fa8600c2323551925b0761fcf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
