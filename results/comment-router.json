@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T01:56:47.306Z",
+  "updated_at": "2026-09-27T01:56:54.220Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153804:5750887695:2026-09-26T18:03:45Z:clawsweeper_needs_human",
-      "comment_id": "5750887695",
-      "comment_version_key": "5750887695:2026-09-26T18:03:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153804#issuecomment-5750887695",
-      "comment_created_at": "2026-09-20T15:55:46Z",
-      "comment_updated_at": "2026-09-26T18:03:45Z",
-      "comment_body_sha256": "f7dbd2b6b84c0be7b6b2393a24427c3f247663f304db9f7f8cf231e92cdd8777",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153804,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve shadow search data transfer** - Opted-in searches send the query and up to eight authorized tool descriptors to the selected provider. The observed opt-out fence addresses unaut...; Review finding: [medium] Approve shadow search data transfer — src/agents/tool-search-semantic-ranking.ts:38 (sha=d4b6cfdec828513cfcdaca78115b8a2fbce06175)",
-      "expected_head_sha": "d4b6cfdec828513cfcdaca78115b8a2fbce06175",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T18:08:13.309Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/semantic-tool-search-shadow",
-        "head_sha": "d4b6cfdec828513cfcdaca78115b8a2fbce06175",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140131:5559521046:2026-09-26T17:58:18Z:clawsweeper_needs_human",
       "comment_id": "5559521046",
@@ -33668,6 +33635,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158697:5851785059:2026-09-27T01:55:47Z:re_review",
+      "comment_id": "5851785059",
+      "comment_version_key": "5851785059:2026-09-27T01:55:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158697#issuecomment-5851785059",
+      "comment_created_at": "2026-09-27T01:55:47Z",
+      "comment_updated_at": "2026-09-27T01:55:47Z",
+      "comment_body_sha256": "4616e99bafae4958186c5fe23cbff421fdd8c500ee84d4d31bff2d41915bdfdc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158697,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T01:56:51.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/remove-this-tooltip-from-the-pr",
+        "head_sha": "f76cacda75e93721143dbe3ab5d8ce456127367c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
