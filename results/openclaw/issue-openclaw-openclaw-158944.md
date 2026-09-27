@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158944"
 mode: "autonomous"
-run_id: "36286173169"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36286173169"
+run_id: "36289406251"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36289406251"
 head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T02:16:01.566Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T02:47:47.368Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158944"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158944"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36286173169](https://github.com/openclaw/clawsweeper/actions/runs/36286173169)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36289406251](https://github.com/openclaw/clawsweeper/actions/runs/36289406251)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/158944
 
 ## Summary
 
-The checked-out main still has the reported plugin approval state loss. Implementation is blocked in this read-only checkout: dependencies are absent, and the required failing regression could not run. No branch, code change, or PR was created.
+Current main still appears to lose plugin expiry and cancellation status before native approval cards are finalized. This is a plan only: no regression was run, code was changed, or GitHub action was taken. Reproduce through Gateway publication and channel presentation before implementing; stop without a PR if the regression does not fail.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The checked-out main still has the reported plugin approval state loss. Implemen
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #158944 | fix_needed | planned | canonical | A narrow bug fix is indicated by the current source, subject to a failing regression and validation in a writable executor checkout. |
-| cluster:issue-openclaw-openclaw-158944 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies; the job requires a failing regression before editing. |
+| https://github.com/openclaw/openclaw/issues/158944 | fix_needed | planned | canonical | The reported behavior has a narrow proposed repair, but the required failing regression has not yet been executed. |
 
 ## Needs Human
 
