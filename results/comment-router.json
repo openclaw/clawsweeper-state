@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T22:27:26.272Z",
+  "updated_at": "2026-09-27T22:28:04.644Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126554:5352454273:2026-09-27T16:06:12Z:clawsweeper_auto_repair",
-      "comment_id": "5352454273",
-      "comment_version_key": "5352454273:2026-09-27T16:06:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126554#issuecomment-5352454273",
-      "comment_created_at": "2026-08-20T06:52:21Z",
-      "comment_updated_at": "2026-09-27T16:06:12Z",
-      "comment_body_sha256": "a683cf59ab50e5e0b56939f3d887a36f0ac06627dc34508440045c5d5479a5f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=94c3cba0178f19efd0548c521778f5c1cbe930a5)",
-      "expected_head_sha": "94c3cba0178f19efd0548c521778f5c1cbe930a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T16:25:10.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-auth-profile-rotation-limit",
-        "head_sha": "94c3cba0178f19efd0548c521778f5c1cbe930a5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-27T16:20:24Z:clawsweeper_needs_human",
       "comment_id": "5567489931",
@@ -33753,6 +33720,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159923:5860412210:2026-09-27T22:27:05Z:clawsweeper_needs_human",
+      "comment_id": "5860412210",
+      "comment_version_key": "5860412210:2026-09-27T22:27:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159923#issuecomment-5860412210",
+      "comment_created_at": "2026-09-27T22:27:05Z",
+      "comment_updated_at": "2026-09-27T22:27:05Z",
+      "comment_body_sha256": "8143d155339e7324ce67ccbbfd94adeefe25fb6208449e89e2345c596faae9a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the screenshots show the changed Desktop panel states, and the owner/RPC tests show takeover and same-...; Review finding: [P1] Keep takeover replay keys across bindings — src/gateway/worker-environments/computer-transport.ts:322 - [medium] Replayed agent takeover can evict a reclaimed... (sha=cbaa66096fb8218edd0482671a30e1127b31af40)",
+      "expected_head_sha": "cbaa66096fb8218edd0482671a30e1127b31af40",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T22:28:04.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/enable-agent-takeover-mode",
+        "head_sha": "cbaa66096fb8218edd0482671a30e1127b31af40",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
