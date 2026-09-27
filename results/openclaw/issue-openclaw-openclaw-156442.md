@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-156442"
-mode: "plan"
-run_id: "36301985760"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36301985760"
-head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-27T07:08:52.525Z"
-canonical: "#156442"
-canonical_issue: "#156442"
+mode: "autonomous"
+run_id: "36304652156"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36304652156"
+head_sha: "f59e3c90cef851563ab7283f7170ceb623c0f7bb"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-27T08:35:03.152Z"
+canonical: "https://github.com/openclaw/openclaw/issues/156442"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/156442"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36301985760](https://github.com/openclaw/clawsweeper/actions/runs/36301985760)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36304652156](https://github.com/openclaw/clawsweeper/actions/runs/36304652156)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #156442
+Canonical: https://github.com/openclaw/openclaw/issues/156442
 
 ## Summary
 
-Plan a narrow Claude CLI recovery fix for #156442. Current-main source inspection supports the reported terminal path, but execution must first demonstrate a failing regression through the production process-to-recovery boundary. No code or GitHub state was changed.
+At main SHA 9ae6e185306272725c36231de98017515c475d33, the reported Claude CLI exit reaches terminal recovery without a same-candidate retry. This read-only checkout has no installed dependencies, so I could not add and run the required failing regression or prepare a validated PR branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Plan a narrow Claude CLI recovery fix for #156442. Current-main source inspectio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156442 | fix_needed | planned | canonical | The reported CLI recovery defect has no viable open implementation PR. |
-| #8673 | keep_related | planned | related | Different refresh owner and remaining work. |
-| #89278 | keep_related | planned | related | Different provider execution path and unresolved diagnostic work. |
-| #156572 | keep_closed | skipped | related | Historical source work only; preserve contributor credit in the new fix path. |
+| #156442 | fix_needed | planned | canonical | A narrow recovery fix remains appropriate, subject to a failing regression on current main. |
+| #8673 | keep_related | planned | related | Different refresh owner and failure path. |
+| #89278 | keep_related | planned | related | Different runtime and remaining work. |
+| #156572 | keep_closed | skipped | superseded | Historical source work; preserve Yun-0000's credit in the new fix PR. |
+| cluster:issue-openclaw-openclaw-156442 | build_fix_artifact | planned |  | Prepare one narrow fix path. |
+| cluster:issue-openclaw-openclaw-156442 | open_fix_pr | blocked |  | Implementation and PR creation require a writable execution checkout after the failing regression is established. |
 
 ## Needs Human
 
