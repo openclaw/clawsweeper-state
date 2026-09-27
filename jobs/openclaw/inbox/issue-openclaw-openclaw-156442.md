@@ -67,14 +67,14 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Claude CLI refresh-lock recovery bug reported at https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression for the reported nonempty Claude Code error through the CLI process-result boundary. In src/agents/cli-runner/cli-run-recovery.ts and the narrowest necessary error-classification code, retry only this pre-work contention failure once on the same admitted candidate and session, with a cancellable wait inside the remaining turn deadline. Do not read or refresh Claude credentials, replay delivered work, retry cancellation or unrelated auth errors, add a config option, or alter fallback policy. Add meaningful regression coverage, including a second contention failure and cancellation. Prove after-fix recovery through the production CLI transport with an injected fault and real transport client; report the observed trace and any limits. Run the focused recovery and CLI reliability tests plus changed-scope checks. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing Claude CLI behavior reported in https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression that carries the reported nonempty Claude Code refresh-lock error through the CLI execution and recovery boundary. In src/agents/cli-runner/cli-run-recovery.ts and the smallest necessary caller or error-classification code, retry that specific pre-work failure once on the same candidate and session within the remaining deadline. Preserve cancellation, current run authority, delivered-work safeguards, and Claude Code's sole ownership of native credentials. Cover successful recovery, repeated contention, unrelated OAuth errors, cancellation, and fallback after the retry fails. Do not add a config option or alter Gateway-owned OAuth refresh. Credit the closed source PR https://github.com/openclaw/openclaw/pull/156572 where its approach is reused. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/cli-runner/cli-run-recovery.ts
-- src/agents/cli-runner/exit-error.ts
 - src/agents/cli-runner/cli-run-recovery.test.ts
-- src/agents/cli-runner.reliability.test.ts
+- src/agents/cli-runner/exit-error.ts
+- src/agents/cli-runner.fault-sequences.e2e.test.ts
 
 Validation:
 
