@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T07:21:57.379Z",
+  "updated_at": "2026-09-27T07:22:26.012Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:701:5850280464:2026-09-27T00:47:32Z:clawsweeper_needs_human",
-      "comment_id": "5850280464",
-      "comment_version_key": "5850280464:2026-09-27T00:47:32Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/701#issuecomment-5850280464",
-      "comment_created_at": "2026-09-26T22:02:47Z",
-      "comment_updated_at": "2026-09-27T00:47:32Z",
-      "comment_body_sha256": "29bbcf286b5ce667b5a9bb75d6a02896f0a1fe0f17b04d2fc06c358e7ad8df4f",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 701,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement soak rule can pass an RSS curve that the former 64 MiB gate failed. The macOS controls support the memory analysis, but no revised macOS soak-entrypoint report shows b... (sha=e76cb8f9ca41f15b3a745c2cee58807a6e66cf17)",
-      "expected_head_sha": "e76cb8f9ca41f15b3a745c2cee58807a6e66cf17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T00:48:29.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/watch-memory-ownership",
-        "head_sha": "e76cb8f9ca41f15b3a745c2cee58807a6e66cf17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4030:5847649152:2026-09-27T00:52:57Z:clawsweeper_needs_human",
       "comment_id": "5847649152",
@@ -33750,6 +33717,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159458:5853753589:2026-09-27T07:21:28Z:re_review",
+      "comment_id": "5853753589",
+      "comment_version_key": "5853753589:2026-09-27T07:21:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159458#issuecomment-5853753589",
+      "comment_created_at": "2026-09-27T07:21:28Z",
+      "comment_updated_at": "2026-09-27T07:21:28Z",
+      "comment_body_sha256": "718c7c2383f2fdadbd67bae0b4fccfd9e8e49616d2e1cb45af48312ee8a4c9a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159458,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T07:22:20.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/activity-spawned-recaps",
+        "head_sha": "aaa9fda020062070f29115da8f25b891c833f328",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
