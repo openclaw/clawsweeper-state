@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159452",
+  "mode": "plan",
+  "run_id": "36301187338",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36301187338",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159452.md",
+  "published_at": "2026-09-27T06:51:42.106Z",
+  "canonical": "#159452",
+  "canonical_issue": "#159452",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, implicit daily and idle rollover rebuilds the session entry without its workspace binding, while worker placement requires that binding. This is a narrow fix candidate. No regression test, code change, or validation was run in plan mode; the failing regression is the first implementation gate.",
+  "actions": [
+    {
+      "target": "#159452",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159452",
+      "candidate_fix": null,
+      "reason": "Reproduce through session initialization and worker placement before editing. Preserve workspace bindings only across implicit rollover, and retain worker ownership checks and explicit plain New Chat detachment."
+    },
+    {
+      "target": "#159304",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this separate from the automatic rollover defect and route it to central security handling."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

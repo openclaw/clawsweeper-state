@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159452"
-mode: "autonomous"
-run_id: "36297905366"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36297905366"
-head_sha: "0c3e2698410c47b4964c5953bd39673ae93fb1e8"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "36301187338"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36301187338"
+head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-27T06:21:02.177Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159452"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159452"
+published_at: "2026-09-27T06:51:42.106Z"
+canonical: "#159452"
+canonical_issue: "#159452"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36297905366](https://github.com/openclaw/clawsweeper/actions/runs/36297905366)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36301187338](https://github.com/openclaw/clawsweeper/actions/runs/36301187338)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159452
+Canonical: #159452
 
 ## Summary
 
-Current main still drops workspace bindings during implicit daily and idle rollover. The checkout is read-only, so no regression test, patch, or validation was run. The fix plan requires the executor to reproduce the failure before editing.
+At the preflight main SHA, implicit daily and idle rollover rebuilds the session entry without its workspace binding, while worker placement requires that binding. This is a narrow fix candidate. No regression test, code change, or validation was run in plan mode; the failing regression is the first implementation gate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main still drops workspace bindings during implicit daily and idle rollo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159452 | fix_needed | planned | canonical | The existing session workspace binding is lost on implicit rollover. |
-| #159304 | route_security | planned | security_sensitive | Route this linked item to central OpenClaw security handling; it is outside this rollover fix. |
-| cluster:issue-openclaw-openclaw-159452 | build_fix_artifact | planned |  | A narrow bug fix is supported by the current source and has no viable hydrated PR. |
+| #159452 | fix_needed | planned | canonical | Reproduce through session initialization and worker placement before editing. Preserve workspace bindings only across implicit rollover, and retain worker ownership checks and explicit plain New Chat detachment. |
+| #159304 | route_security | planned | security_sensitive | Keep this separate from the automatic rollover defect and route it to central security handling. |
 
 ## Needs Human
 
