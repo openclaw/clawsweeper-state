@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159184"
 mode: "autonomous"
-run_id: "36299687795"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36299687795"
-head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
-workflow_conclusion: "success"
+run_id: "36314221798"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36314221798"
+head_sha: "420da22ea0f2844e495eed9844c8b283fe63e8b7"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T06:22:00.368Z"
+published_at: "2026-09-27T11:44:06.113Z"
 canonical: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_pr: null
-actions_total: 1
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36299687795](https://github.com/openclaw/clawsweeper/actions/runs/36299687795)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36314221798](https://github.com/openclaw/clawsweeper/actions/runs/36314221798)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/159184
 
 ## Summary
 
-At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is already covered by code that prevents same-model retries. The remaining misleading rate-limit guidance may need a separate fix, but the requested retry regression could not be established on this checkout. Dependencies are absent and the workspace is read-only, so no tests or implementation were run.
+The retry fix is merged on main, but the reported prompt-size rejection still follows a rate-limit copy path that can tell users only to try again later. A narrow fix is warranted. This checkout is read-only and has no node_modules, so I could not add the required failing regression, edit code, or validate a PR branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is alre
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #159184 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,7 +66,10 @@ At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is alre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159184 | keep_canonical | planned | canonical | Keep the issue open for triage of the remaining user guidance. The job requires stopping if the reported retry defect cannot be reproduced on latest main. |
+| #159184 | fix_needed | planned | canonical | The remaining copy defect needs an owner-boundary regression and a bounded guidance fix. |
+| #141260 | keep_related | planned | related | Keep its reset-hint work in its own issue. |
+| #159221 | keep_closed | skipped | related | Historical fix for the retry portion; already closed. |
+| cluster:issue-openclaw-openclaw-159184 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout. The executor must first demonstrate the failing owner-boundary regression on this main SHA. |
 
 ## Needs Human
 

@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159184",
+  "mode": "autonomous",
+  "run_id": "36314221798",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36314221798",
+  "head_sha": "420da22ea0f2844e495eed9844c8b283fe63e8b7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159184.md",
+  "published_at": "2026-09-27T11:44:06.113Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159184",
+  "canonical_pr": null,
+  "summary": "The retry fix is merged on main, but the reported prompt-size rejection still follows a rate-limit copy path that can tell users only to try again later. A narrow fix is warranted. This checkout is read-only and has no node_modules, so I could not add the required failing regression, edit code, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#159184",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "The remaining copy defect needs an owner-boundary regression and a bounded guidance fix."
+    },
+    {
+      "target": "#141260",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Keep its reset-hint work in its own issue."
+    },
+    {
+      "target": "#159221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Historical fix for the retry portion; already closed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159184",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159184",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout. The executor must first demonstrate the failing owner-boundary regression on this main SHA."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
