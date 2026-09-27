@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T12:11:30.132Z",
+  "updated_at": "2026-09-27T12:13:48.763Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159460:5853187169:2026-09-27T05:59:02Z:clawsweeper_needs_human",
-      "comment_id": "5853187169",
-      "comment_version_key": "5853187169:2026-09-27T05:59:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159460#issuecomment-5853187169",
-      "comment_created_at": "2026-09-27T05:59:02Z",
-      "comment_updated_at": "2026-09-27T05:59:02Z",
-      "comment_body_sha256": "47d45a2af180d69a67f8eca64c10011dacfcd08bc0a30ab04b613066b06bdf25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159460,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the pinned head as unmergeable; the eventual conflict resolution has not been reviewed against a pinned merge result. (sha=046bdc8f35c3aee796a9d40f6bbdf8cffdab8ce2)",
-      "expected_head_sha": "046bdc8f35c3aee796a9d40f6bbdf8cffdab8ce2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T06:00:02.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/l109-model-roster-noops",
-        "head_sha": "046bdc8f35c3aee796a9d40f6bbdf8cffdab8ce2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159451:5853052684:2026-09-27T05:59:24Z:clawsweeper_needs_human",
       "comment_id": "5853052684",
@@ -33345,6 +33312,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158460:5855714546:2026-09-27T12:12:56Z:re_review",
+      "comment_id": "5855714546",
+      "comment_version_key": "5855714546:2026-09-27T12:12:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158460#issuecomment-5855714546",
+      "comment_created_at": "2026-09-27T12:12:56Z",
+      "comment_updated_at": "2026-09-27T12:12:56Z",
+      "comment_body_sha256": "80b99ffae757581934c3363c7c85728dcc134bbdc08d25807c1398b8f7455ea4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158460,
+      "author": "aashish254",
+      "author_id": 145881415,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T12:13:43.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/link-detect-trailing-punctuation",
+        "head_sha": "5855a9ac873eb1ee5391d458805ff5cd8a478b8d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
