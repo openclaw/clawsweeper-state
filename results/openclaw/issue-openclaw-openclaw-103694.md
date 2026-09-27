@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "36288972089"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36288972089"
-head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
-workflow_conclusion: "success"
+run_id: "36289838728"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36289838728"
+head_sha: "ccf606d924429a0a57b3d1e743d249f5002b9412"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T02:39:56.674Z"
+published_at: "2026-09-27T03:24:58.932Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36288972089](https://github.com/openclaw/clawsweeper/actions/runs/36288972089)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36289838728](https://github.com/openclaw/clawsweeper/actions/runs/36289838728)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-The reported warning remains plausible on preflight main 3a68ec05, but the required current-main reproduction could not run: this read-only checkout has no node_modules. No code or GitHub state was changed.
+The current source still routes non-draft MCP output schemas through the SDK Ajv validator, but the required current-main regression could not run. The read-only checkout lacks node_modules. No code or GitHub state was changed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ The reported warning remains plausible on preflight main 3a68ec05, but the requi
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #103694 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ The reported warning remains plausible on preflight main 3a68ec05, but the requi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | blocked | canonical | The job requires a failing regression on latest main before implementation. Missing dependencies and read-only filesystem access prevent that proof here. |
-| #103699 | keep_closed | skipped | superseded | Historical source and contributor-credit context only. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Implementation and PR creation must wait for a writable checkout with installed dependencies and a failing current-main regression. |
+| #103694 | fix_needed | planned | canonical | The reported path remains in source; runtime reproduction and validation are blocked by missing dependencies. |
+| #103699 | keep_closed | skipped | superseded | Historical proposal only; preserve its contributor credit in any new fix. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Run a failing catalog-path regression on current main before implementing or opening a PR. |
 
 ## Needs Human
 
