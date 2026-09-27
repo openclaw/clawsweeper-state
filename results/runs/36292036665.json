@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159330",
+  "mode": "plan",
+  "run_id": "36292036665",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36292036665",
+  "head_sha": "ccf606d924429a0a57b3d1e743d249f5002b9412",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159330.md",
+  "published_at": "2026-09-27T03:43:02.768Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159330",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159330",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Gateway fix for the false branch-change rejection. The checkout matches preflight main f6974fb3550fe089663bc56ce89d8e1ec79170de. No code was changed or tests run in this read-only, dependency-free checkout; the required failing Gateway regression remains the first execution gate.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/159330",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "8506739333",
+      "candidate_fix": null,
+      "reason": "First add a Gateway admission regression that fails on this main SHA. Then classify the empty root as an active-path ancestor while retaining Gateway's matching-session requirement, rotation fence, and legacy exact-leaf behavior."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/159324",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "8506739333",
+      "candidate_fix": null,
+      "reason": "Keep the broader concurrency tracker open; this issue owns the focused first-send fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
