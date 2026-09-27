@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T19:24:49.041Z",
+  "updated_at": "2026-09-27T19:26:37.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159582:5854913764:2026-09-27T13:33:10Z:clawsweeper_needs_human",
-      "comment_id": "5854913764",
-      "comment_version_key": "5854913764:2026-09-27T13:33:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159582#issuecomment-5854913764",
-      "comment_created_at": "2026-09-27T10:08:09Z",
-      "comment_updated_at": "2026-09-27T13:33:10Z",
-      "comment_body_sha256": "65b947fabba6f78f29ecfb7adb58413a8a1b44dce8bd0432bdbfdfe35cb7ba05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159582,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body does not tie the broad QA batches to the final rebased head and says its full changed checks and builds were still running, leaving final-head scenario and report parity u... (sha=5a36d0634f84d442bb94a5ee84d8ed7aae62ee0e)",
-      "expected_head_sha": "5a36d0634f84d442bb94a5ee84d8ed7aae62ee0e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T13:34:23.229Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l118-qalab4",
-        "head_sha": "1b321c2db9892ff2abdae395e2efb6e9538e7e10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156389:5798360362:2026-09-23T16:12:02Z:re_review",
       "comment_id": "5798360362",
@@ -33832,6 +33799,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159850:5859054834:2026-09-27T19:25:40Z:clawsweeper_needs_human",
+      "comment_id": "5859054834",
+      "comment_version_key": "5859054834:2026-09-27T19:25:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159850#issuecomment-5859054834",
+      "comment_created_at": "2026-09-27T19:25:40Z",
+      "comment_updated_at": "2026-09-27T19:25:40Z",
+      "comment_body_sha256": "a114e683b2eecae25f68079f0336c81a40bf3c74679e7f01fece78dda1392ae0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159850,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the authenticated chat-send test reaches steering admission with a mocked provider, but does not execute the ch...; Review finding: [P1] Preserve requester ownership for profile-bound steering — src/auto-reply/reply/reply-tool-authority.ts:389-395 - [medium] Cross-profile personal effects — src... (sha=3ad9067981f7f0c46783bf6f84ee918f4cb3fd12)",
+      "expected_head_sha": "3ad9067981f7f0c46783bf6f84ee918f4cb3fd12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T19:26:37.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/steering-not-working-0fb6b6",
+        "head_sha": "3ad9067981f7f0c46783bf6f84ee918f4cb3fd12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
