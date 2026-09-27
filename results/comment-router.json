@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T18:04:26.609Z",
+  "updated_at": "2026-09-27T18:06:09.397Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158460:5855714546:2026-09-27T12:12:56Z:re_review",
-      "comment_id": "5855714546",
-      "comment_version_key": "5855714546:2026-09-27T12:12:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158460#issuecomment-5855714546",
-      "comment_created_at": "2026-09-27T12:12:56Z",
-      "comment_updated_at": "2026-09-27T12:12:56Z",
-      "comment_body_sha256": "80b99ffae757581934c3363c7c85728dcc134bbdc08d25807c1398b8f7455ea4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158460,
-      "author": "aashish254",
-      "author_id": 145881415,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T12:13:43.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/link-detect-trailing-punctuation",
-        "head_sha": "5855a9ac873eb1ee5391d458805ff5cd8a478b8d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:844:5855676479:2026-09-27T12:07:23Z:re_review",
       "comment_id": "5855676479",
@@ -33901,6 +33854,39 @@
         "kind": "pull_request",
         "branch": "deslop/l119-vitest-root-build",
         "head_sha": "1fe5439b5232594ddf9fee489381101d367e9eff",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158877:5854255085:2026-09-27T17:49:39Z:clawsweeper_needs_human",
+      "comment_id": "5854255085",
+      "comment_version_key": "5854255085:2026-09-27T17:49:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158877#issuecomment-5854255085",
+      "comment_created_at": "2026-09-27T08:36:41Z",
+      "comment_updated_at": "2026-09-27T17:49:39Z",
+      "comment_body_sha256": "92cc40fed8e35e5705be3c8b2be5d398615c1148f07b55ea0fce11e718f31015",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published-updater acceptance run for this integrated head is still pending. The earlier pinned run supports the update behavior, but does not establish the result after the latest... (sha=30e246cc1c4eaf8e1c73abb47db242615aa7b1b6)",
+      "expected_head_sha": "30e246cc1c4eaf8e1c73abb47db242615aa7b1b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T18:06:09.397Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l79-infra4",
+        "head_sha": "30e246cc1c4eaf8e1c73abb47db242615aa7b1b6",
         "cluster_id": null,
         "job_path": null
       }
