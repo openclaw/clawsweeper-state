@@ -67,14 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing repeated unknown-format warning when OpenClaw loads non-draft schemas from remote MCP servers. First establish a failing regression at the production MCP catalog/validator boundary using an unknown format such as google-duration or uint. Repair the shared validator without a handwritten list of dependency-supported formats; preserve validation for recognized formats and draft-2020-12 behavior. Check the node-host caller of the same validator. Keep the change within the existing behavior contract: add no feature, config option, schema migration, or dependency patch. Add focused regression coverage and real catalog-path proof. Likely files: src/agents/mcp-json-schema-validator.ts, src/agents/mcp-tool-metadata.test.ts, src/agents/agent-bundle-mcp-runtime.test.ts; inspect src/node-host/mcp.ts. Run the focused Vitest file(s) and changed checks permitted by the implementation workflow. Record user-visible behavior and evidence in the PR body; do not edit release-owned CHANGELOG.md. Related prior proposal: https://github.com/openclaw/openclaw/pull/103699.
+Fix the existing repeated unknown-format warning for non-draft MCP tool schemas at src/agents/mcp-json-schema-validator.ts. First establish a failing regression through the actual catalog/validator path using an unknown format such as google-duration or uint. Use the MCP SDK or its authoritative format behavior; do not copy a handwritten known-format registry, suppress all warnings, add a config option, or weaken validation of recognized formats such as uri and email. Cover catalog loading and preserved known-format rejection in focused tests. Check the prior, closed proposal at https://github.com/openclaw/openclaw/pull/103699 for context, but do not revive its rejected registry design. Validate with node scripts/run-vitest.mjs src/agents/mcp-tool-metadata.test.ts src/agents/agent-bundle-mcp-runtime.test.ts, node scripts/check-changed.mjs, and git diff --check. Put user-visible fix notes and proof in the PR body; do not edit CHANGELOG.md. Stop and return for review if the repair requires a new feature, config option, or product-policy choice.
 
 Likely files:
 
 - src/agents/mcp-json-schema-validator.ts
 - src/agents/mcp-tool-metadata.test.ts
 - src/agents/agent-bundle-mcp-runtime.test.ts
-- src/node-host/mcp.ts
 
 Validation:
 
