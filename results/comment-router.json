@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T22:56:09.562Z",
+  "updated_at": "2026-09-27T22:56:22.812Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159527:5854057388:2026-09-27T16:05:41Z:clawsweeper_needs_human",
-      "comment_id": "5854057388",
-      "comment_version_key": "5854057388:2026-09-27T16:05:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159527#issuecomment-5854057388",
-      "comment_created_at": "2026-09-27T08:05:18Z",
-      "comment_updated_at": "2026-09-27T16:05:41Z",
-      "comment_body_sha256": "17555d99d994c3b263e7f799e49aca77eb381af158d35a6e559d353a37d2695a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159527,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The HTML export renderer and CSS change, but the captured PR body and comments contain no inspected before/after screenshots. Rendered equivalence and the repository’s visual landing... (sha=9dd0fafa913ca4c8dfa72b92a18856b9f17be9d9)",
-      "expected_head_sha": "9dd0fafa913ca4c8dfa72b92a18856b9f17be9d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T16:25:10.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l112-auto-reply4",
-        "head_sha": "9dd0fafa913ca4c8dfa72b92a18856b9f17be9d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158877:5854255085:2026-09-27T16:20:44Z:clawsweeper_needs_human",
       "comment_id": "5854255085",
@@ -33781,6 +33748,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159632:5860602424:2026-09-27T22:55:26Z:re_review",
+      "comment_id": "5860602424",
+      "comment_version_key": "5860602424:2026-09-27T22:55:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159632#issuecomment-5860602424",
+      "comment_created_at": "2026-09-27T22:55:26Z",
+      "comment_updated_at": "2026-09-27T22:55:26Z",
+      "comment_body_sha256": "ca2fd47137df32061a581bc1988215b3208d8a0282010fc5d84d6f676ad5693a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159632,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T22:56:21.177Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/persistent-reply-admission-20260927",
+        "head_sha": "e936c3a9ed935d9ab5d7b8dc34bfe9bbe7d1562c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
