@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "36331700597",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36331700597",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-27T16:37:06.950Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "At preflight main c4e67604, source inspection shows that vision-capable offloaded WebChat images bypass the existing pre-staging path. I could not establish the required failing chat.send regression or prepare a validated branch: the checkout is read-only and has no node_modules. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "The source-defined bug remains plausible, but implementation must wait for a writable checkout with dependencies and a failing chat.send regression."
+    },
+    {
+      "target": "#115076",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Keep its distinct metadata discussion open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Implementation and PR creation are blocked by the read-only checkout and missing dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
