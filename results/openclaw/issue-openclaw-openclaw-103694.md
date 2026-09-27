@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "36308783946"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36308783946"
-head_sha: "e9ef8c0b2c0acbe5908b2e9d1a7e870cdddc6e12"
-workflow_conclusion: "success"
+run_id: "36309656988"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36309656988"
+head_sha: "be263453cfd2dab110f96c7e29da6013ac23f79f"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T09:19:43.111Z"
+published_at: "2026-09-27T10:12:07.594Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36308783946](https://github.com/openclaw/clawsweeper/actions/runs/36308783946)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36309656988](https://github.com/openclaw/clawsweeper/actions/runs/36309656988)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-The reported path remains on main, but this read-only checkout has no installed MCP SDK. The required failing regression and dependency-backed repair could not be verified, so implementation is blocked for this run.
+Current main still routes non-draft MCP schemas through the shared SDK validator, but implementation could not be verified. This read-only checkout has no installed dependencies, so the pinned SDK source and a failing runtime regression could not be inspected or run. No code or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The reported path remains on main, but this read-only checkout has no installed 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #103694 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,8 @@ The reported path remains on main, but this read-only checkout has no installed 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | blocked | canonical | The job requires a failing regression and inspection of the pinned SDK before editing. Missing dependencies and the read-only host prevent both. |
-| #103699 | keep_closed | skipped | superseded | Historical source work only; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | Implementation cannot start until the required reproduction and SDK inspection succeed. |
+| #103694 | fix_needed | planned | canonical | A dependency-authoritative repair remains needed; the exact repair must follow inspection and reproduction with the pinned SDK. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | blocked |  | The job requires a failing regression and inspection of the SDK's authoritative supported-format handling before editing. Neither gate can be completed in this read-only checkout. |
 
 ## Needs Human
 
