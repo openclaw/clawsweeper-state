@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T17:37:00.328Z",
+  "updated_at": "2026-09-27T17:37:21.787Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159387:5852565351:2026-09-27T11:59:07Z:clawsweeper_needs_human",
-      "comment_id": "5852565351",
-      "comment_version_key": "5852565351:2026-09-27T11:59:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159387#issuecomment-5852565351",
-      "comment_created_at": "2026-09-27T04:18:16Z",
-      "comment_updated_at": "2026-09-27T11:59:07Z",
-      "comment_body_sha256": "1c6c204f65075ef4c1e4a434754dd418e7f188deca227ae5805481241d99156a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The persisted lease decoder changes before the revised candidate has completed published 2026.9.4 and 2026.9.6 updater runs through managed restart and recovery with existing operator... (sha=c759c275a4136cedb2e4d507c0a32f57d4813e7a)",
-      "expected_head_sha": "c759c275a4136cedb2e4d507c0a32f57d4813e7a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T12:02:50.772Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-handoff-v3-custody",
-        "head_sha": "c759c275a4136cedb2e4d507c0a32f57d4813e7a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159409:5852609559:2026-09-27T11:27:05Z:clawsweeper_needs_human",
       "comment_id": "5852609559",
@@ -33828,6 +33795,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159739:5858164085:2026-09-27T17:36:18Z:re_review",
+      "comment_id": "5858164085",
+      "comment_version_key": "5858164085:2026-09-27T17:36:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159739#issuecomment-5858164085",
+      "comment_created_at": "2026-09-27T17:36:18Z",
+      "comment_updated_at": "2026-09-27T17:36:18Z",
+      "comment_body_sha256": "99465e9d1d0b537d7119b9345604aee361801374fc02276c5980060889bceccb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159739,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T17:37:20.214Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/control-ui-native-conversation-surface",
+        "head_sha": "ee84a153021cde35957f0af858ee1e3af6100a87",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
