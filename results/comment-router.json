@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:30:29.061Z",
+  "updated_at": "2026-09-27T15:30:31.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159415:5852633685:2026-09-27T09:08:15Z:clawsweeper_needs_human",
-      "comment_id": "5852633685",
-      "comment_version_key": "5852633685:2026-09-27T09:08:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159415#issuecomment-5852633685",
-      "comment_created_at": "2026-09-27T04:30:43Z",
-      "comment_updated_at": "2026-09-27T09:08:15Z",
-      "comment_body_sha256": "64a571752c275a52ec10033eba2a9250da912d529047ab642f418a2c018b5dc6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159415,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=9b6897ce2895568e37121f67efdc07371e7b0011)",
-      "expected_head_sha": "9b6897ce2895568e37121f67efdc07371e7b0011",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T09:13:28.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-cli-deslop",
-        "head_sha": "9b6897ce2895568e37121f67efdc07371e7b0011",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159428:5852806666:2026-09-27T09:15:32Z:clawsweeper_auto_repair",
       "comment_id": "5852806666",
@@ -33867,6 +33834,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159179:5857227179:2026-09-27T15:29:38Z:re_review",
+      "comment_id": "5857227179",
+      "comment_version_key": "5857227179:2026-09-27T15:29:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159179#issuecomment-5857227179",
+      "comment_created_at": "2026-09-27T15:29:38Z",
+      "comment_updated_at": "2026-09-27T15:29:38Z",
+      "comment_body_sha256": "15e22017304166812f65c311f863b85432fbfe605b7a9bed880c57efdcdc955b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159179,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T15:30:29.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/taskflow-runtime-removal",
+        "head_sha": "5c730848d29b4f368139f335944b6b117325fcec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
