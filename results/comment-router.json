@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T00:01:15.177Z",
+  "updated_at": "2026-09-27T00:01:15.927Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159035:5847997425:2026-09-26T16:42:28Z:clawsweeper_needs_human",
-      "comment_id": "5847997425",
-      "comment_version_key": "5847997425:2026-09-26T16:42:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159035#issuecomment-5847997425",
-      "comment_created_at": "2026-09-26T16:42:28Z",
-      "comment_updated_at": "2026-09-26T16:42:28Z",
-      "comment_body_sha256": "ba3a579d6340ff562185912e8b77d2c63ddc8d83081f3c40ea2894291d2e1cf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159035,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep non-package host links out of retained snapshots (P2)** - With the fixture's hoisted openclaw host link, add a link from node_modules/.pnpm/node_modules to the checkout's .git directory. Because .git has no...; Review finding: [P2] Keep non-package host links out of retained snapshots — src/infra/update-candidate-plugin-tree.ts:84-85 - [low] Unrelated checkout metadata can enter the upda... (sha=0217192e36044ebe52f78e337d69f8cad0b949af)",
-      "expected_head_sha": "0217192e36044ebe52f78e337d69f8cad0b949af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-26T16:56:32.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retain-retired-workspaces",
-        "head_sha": "e783d959a607ace3e48b8994e0f2d465f3cd6126",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156432:5793233175:2026-09-26T16:56:12Z:clawsweeper_needs_human",
       "comment_id": "5793233175",
@@ -33101,6 +33068,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159245:5851096506:2026-09-27T00:00:24Z:re_review",
+      "comment_id": "5851096506",
+      "comment_version_key": "5851096506:2026-09-27T00:00:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159245#issuecomment-5851096506",
+      "comment_created_at": "2026-09-27T00:00:24Z",
+      "comment_updated_at": "2026-09-27T00:00:24Z",
+      "comment_body_sha256": "2887d648ad6b72bebcfdb6840d425b181a7190d1dd02caf0cf117fa3c388b8e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159245,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T00:01:14.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/updater-snapshot-cache",
+        "head_sha": "c0775dc9b266f83b841c808def8d6bae11ec5708",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:708:5851095554:2026-09-27T00:00:15Z:clawsweeper_needs_human",
