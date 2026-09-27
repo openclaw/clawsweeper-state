@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-27T14:02:00.163Z",
+  "updated_at": "2026-09-27T14:00:49.704Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159498:5853836323:2026-09-27T07:32:41Z:re_review",
+      "comment_id": "5853836323",
+      "comment_version_key": "5853836323:2026-09-27T07:32:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159498#issuecomment-5853836323",
+      "comment_created_at": "2026-09-27T07:32:41Z",
+      "comment_updated_at": "2026-09-27T07:32:41Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159498,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T08:00:40.083Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-service-membership-empty-cgroup",
+        "head_sha": "972300e9eab30a1fd44f293ab60dcade668e808c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159479:5853847654:2026-09-27T07:34:26Z:freeform_assist",
       "comment_id": "5853847654",
@@ -33617,39 +33664,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4052:5854188187:2026-09-27T14:01:11Z:clawsweeper_needs_human",
-      "comment_id": "5854188187",
-      "comment_version_key": "5854188187:2026-09-27T14:01:11Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4052#issuecomment-5854188187",
-      "comment_created_at": "2026-09-27T08:25:29Z",
-      "comment_updated_at": "2026-09-27T14:01:11Z",
-      "comment_body_sha256": "0dfb7be3c4d18f5666f026c8067da895b452f2a48932025042f3f9bc090c4c7b",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4052,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This head includes cache-reuse and persisted priority-day changes intended to land through two separate PRs first; merging it beforehand would bundle those changes into this fix contr... (sha=9001101324f6d697df772428a568e060202bbbbd)",
-      "expected_head_sha": "9001101324f6d697df772428a568e060202bbbbd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T14:02:00.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-incomplete-pi-spend",
-        "head_sha": "9001101324f6d697df772428a568e060202bbbbd",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
