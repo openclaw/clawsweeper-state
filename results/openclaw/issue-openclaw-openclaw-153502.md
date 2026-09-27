@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
 mode: "autonomous"
-run_id: "36326534816"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36326534816"
+run_id: "36336526512"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36336526512"
 head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-27T15:14:32.165Z"
+published_at: "2026-09-27T17:49:19.004Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36326534816](https://github.com/openclaw/clawsweeper/actions/runs/36326534816)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36336526512](https://github.com/openclaw/clawsweeper/actions/runs/36336526512)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/153502
 
 ## Summary
 
-Current main still has the reported Doctor settlement mismatch. A narrow fix is warranted, but this checkout is read-only, so the required failing regression, patch, and validation could not be completed.
+Current main has the reported Doctor settlement mismatch, but this worker's checkout is read-only. No regression was run, code changed, or PR opened.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main still has the reported Doctor settlement mismatch. A narrow fix is 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | planned | canonical | A verified retained plugin import receipt can fail settlement solely because an advisory historical warning is present. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation requires a writable checkout to establish the failing Doctor regression before changing code. |
+| #153502 | fix_needed | planned | canonical | A verified retained plugin receipt can reach post-session settlement with an advisory historical warning and fail the documented flow. |
+| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | blocked |  | Implementation and the required failing regression cannot be written or validated in this read-only checkout. |
 
 ## Needs Human
 
