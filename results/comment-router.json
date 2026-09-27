@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T12:05:22.348Z",
+  "updated_at": "2026-09-27T12:05:37.661Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157940:5853072540:2026-09-27T05:40:46Z:re_review",
-      "comment_id": "5853072540",
-      "comment_version_key": "5853072540:2026-09-27T05:40:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157940#issuecomment-5853072540",
-      "comment_created_at": "2026-09-27T05:40:46Z",
-      "comment_updated_at": "2026-09-27T05:40:46Z",
-      "comment_body_sha256": "e03b0b5665a6a092c5bd9505fe8ec2bedc64b2d796191b75ec82f8f5dd821e33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157940,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T05:41:40.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-collector-cancel-publication-20260925",
-        "head_sha": "3130f149097150b0d6a47bad7d4ac1ae8447eb5f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159453:5853075254:2026-09-27T05:41:15Z:clawsweeper_needs_human",
       "comment_id": "5853075254",
@@ -33388,6 +33341,39 @@
         "kind": "pull_request",
         "branch": "codex/qa1010-context-main",
         "head_sha": "608c149398cfe531a9d6852a995567b99a48b4c9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159386:5852637342:2026-09-27T12:04:35Z:clawsweeper_needs_human",
+      "comment_id": "5852637342",
+      "comment_version_key": "5852637342:2026-09-27T12:04:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159386#issuecomment-5852637342",
+      "comment_created_at": "2026-09-27T04:31:24Z",
+      "comment_updated_at": "2026-09-27T12:04:35Z",
+      "comment_body_sha256": "e899a53057c4cf25705db16c0834fbb3f98501b4de1c8c68be9eb89d614bfb18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The earlier iOS dead-code scan identified an unused chat import in a consumer of this refactor. The focused follow-up targets this branch but has not been incorporated; exact-head sca... (sha=a0b7273da8d420f33474890031578a9127a3a47e)",
+      "expected_head_sha": "a0b7273da8d420f33474890031578a9127a3a47e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T12:05:37.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l108-apple-shared2",
+        "head_sha": "a0b7273da8d420f33474890031578a9127a3a47e",
         "cluster_id": null,
         "job_path": null
       }
