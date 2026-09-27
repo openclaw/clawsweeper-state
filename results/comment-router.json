@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T22:56:58.726Z",
+  "updated_at": "2026-09-27T22:57:57.530Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159554:5854444058:2026-09-27T16:17:43Z:clawsweeper_needs_human",
-      "comment_id": "5854444058",
-      "comment_version_key": "5854444058:2026-09-27T16:17:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159554#issuecomment-5854444058",
-      "comment_created_at": "2026-09-27T09:00:00Z",
-      "comment_updated_at": "2026-09-27T16:17:43Z",
-      "comment_body_sha256": "95f747679307a3adf0708d6ff82159de104f652b768bcc33eb10f6a5e2ff469d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published-updater evidence installs the candidate without restarting an existing managed Gateway. A regression in the changed service and updater paths could leave an upgraded ins... (sha=7fd67af9deb31b69efd755b89f07246a591b7cbe)",
-      "expected_head_sha": "7fd67af9deb31b69efd755b89f07246a591b7cbe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T16:25:10.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l113-cli4",
-        "head_sha": "7fd67af9deb31b69efd755b89f07246a591b7cbe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159566:5854646767:2026-09-27T16:08:31Z:clawsweeper_needs_human",
       "comment_id": "5854646767",
@@ -33809,6 +33776,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159341:5852626212:2026-09-27T22:57:02Z:clawsweeper_needs_human",
+      "comment_id": "5852626212",
+      "comment_version_key": "5852626212:2026-09-27T22:57:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159341#issuecomment-5852626212",
+      "comment_created_at": "2026-09-27T04:29:24Z",
+      "comment_updated_at": "2026-09-27T22:57:02Z",
+      "comment_body_sha256": "13dfad6eedfbbd3d0ba8881fb512d961cde18bf90d910e02915318c0ff106a83",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159341,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the Testbox regressions invoke the production deletion observer and browser-storage owners with inject...; Review finding: [P1] Bind unresolved cleanup to the deletion's client generation — ui/src/lib/chat/composer-draft-retirement.runtime.ts:38-41 - [P2] Preserve payloads referenced b... (sha=b32dba1e6fae87ce70217f9062e0f3600e16b15c)",
+      "expected_head_sha": "b32dba1e6fae87ce70217f9062e0f3600e16b15c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T22:57:57.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live2-ui-draft-retire-gateway",
+        "head_sha": "b32dba1e6fae87ce70217f9062e0f3600e16b15c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
