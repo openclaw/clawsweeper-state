@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T11:08:58.306Z",
+  "updated_at": "2026-09-27T11:10:15.349Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159400:5852571837:2026-09-27T04:44:50Z:clawsweeper_needs_human",
-      "comment_id": "5852571837",
-      "comment_version_key": "5852571837:2026-09-27T04:44:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159400#issuecomment-5852571837",
-      "comment_created_at": "2026-09-27T04:19:29Z",
-      "comment_updated_at": "2026-09-27T04:44:50Z",
-      "comment_body_sha256": "b85e422f32a3434e5a2d32e36b88440fa9c1417a3e6b9ffc9b7e00b629feacf3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159400,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=043ddac2e8372bf5f52a19a9ef3bb6257a0173ed)",
-      "expected_head_sha": "043ddac2e8372bf5f52a19a9ef3bb6257a0173ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T05:04:30.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/chat-scroll-perf-2",
-        "head_sha": "603fa0a5a94c6b73c881fab34ad5216e8ddb62c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159402:5852593314:2026-09-27T04:55:59Z:clawsweeper_needs_human",
       "comment_id": "5852593314",
@@ -33411,6 +33378,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1701:5855302581:2026-09-27T11:09:24Z:clawsweeper_needs_human",
+      "comment_id": "5855302581",
+      "comment_version_key": "5855302581:2026-09-27T11:09:24Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1701#issuecomment-5855302581",
+      "comment_created_at": "2026-09-27T11:09:24Z",
+      "comment_updated_at": "2026-09-27T11:09:24Z",
+      "comment_body_sha256": "cba79517407549e65e7a608cba10ba989f3c884f93a012c28a81632fc6b35fd8",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1701,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Constrain the proof relay to its fixture origin (P2)** - The new HTTPS relay appends req.url directly to the fetch destination. CodeQL flags this introduced request-target flow as SSRF, and the script does not c...; Review finding: [P2] Constrain the proof relay to its fixture origin — scripts/e2e/scanner-refusal-hold.mjs:46 - [low] Unchecked proof-relay request target — scripts/e2e/scanner-r... (sha=2181a85ee6a531e1058295e3f6c919a049dad3cd)",
+      "expected_head_sha": "2181a85ee6a531e1058295e3f6c919a049dad3cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T11:10:15.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/scanner-refusal-hold",
+        "head_sha": "2181a85ee6a531e1058295e3f6c919a049dad3cd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
