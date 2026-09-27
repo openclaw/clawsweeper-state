@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T21:13:14.293Z",
+  "updated_at": "2026-09-27T21:14:46.428Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159611:5855402178:2026-09-27T15:07:55Z:clawsweeper_needs_human",
-      "comment_id": "5855402178",
-      "comment_version_key": "5855402178:2026-09-27T15:07:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159611#issuecomment-5855402178",
-      "comment_created_at": "2026-09-27T11:25:21Z",
-      "comment_updated_at": "2026-09-27T15:07:55Z",
-      "comment_body_sha256": "5b9cf06b355a1df0d61056f9df9f7a1e32facf16ad399a5fd3d984d4785f6b08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159611,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new sessions.list pulse fields have helper and mock-Gateway coverage, but no observed request and response through the validated public Gateway RPC for a filtered result exceeding... (sha=d13118353263fd4329064238b094e7ecc9101da4)",
-      "expected_head_sha": "d13118353263fd4329064238b094e7ecc9101da4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T15:21:43.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/activity-page-redesign-cc275a",
-        "head_sha": "d13118353263fd4329064238b094e7ecc9101da4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159650:5856038764:2026-09-27T15:08:33Z:clawsweeper_needs_human",
       "comment_id": "5856038764",
@@ -33869,6 +33836,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156703:5859880793:2026-09-27T21:13:54Z:re_review",
+      "comment_id": "5859880793",
+      "comment_version_key": "5859880793:2026-09-27T21:13:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156703#issuecomment-5859880793",
+      "comment_created_at": "2026-09-27T21:13:54Z",
+      "comment_updated_at": "2026-09-27T21:13:54Z",
+      "comment_body_sha256": "e7b70496d88f6bcbee92a5e8d9a80cc7a554a20d11fd722627f8f40bfc457757",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156703,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T21:14:44.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-fallback-readonly-session",
+        "head_sha": "cfe5361d967d09083b05e5c9dd73eebab7cbba92",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
