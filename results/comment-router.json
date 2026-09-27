@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T22:59:28.612Z",
+  "updated_at": "2026-09-27T23:00:19.399Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159582:5854913764:2026-09-27T15:43:59Z:clawsweeper_needs_human",
-      "comment_id": "5854913764",
-      "comment_version_key": "5854913764:2026-09-27T15:43:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159582#issuecomment-5854913764",
-      "comment_created_at": "2026-09-27T10:08:09Z",
-      "comment_updated_at": "2026-09-27T15:43:59Z",
-      "comment_body_sha256": "5056a6336fdf1b9156b584fa767dec8f4a609779f15ffd41beed46eb7a8e9ac6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159582,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes suite dispatch and evidence aggregation, but the captured proof does not show a registered scenario running through the supported CLI to a final status and report.... (sha=34c7e6f72f09788ee490260070104b7c3f82b469)",
-      "expected_head_sha": "34c7e6f72f09788ee490260070104b7c3f82b469",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T16:25:10.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l118-qalab4",
-        "head_sha": "e92861e2f5f1929ac78d701aa8bfb1b2d68e3b9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159598:5855214814:2026-09-27T16:15:07Z:clawsweeper_needs_human",
       "comment_id": "5855214814",
@@ -33809,6 +33776,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159040:5860626993:2026-09-27T22:59:15Z:re_review",
+      "comment_id": "5860626993",
+      "comment_version_key": "5860626993:2026-09-27T22:59:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159040#issuecomment-5860626993",
+      "comment_created_at": "2026-09-27T22:59:15Z",
+      "comment_updated_at": "2026-09-27T22:59:15Z",
+      "comment_body_sha256": "89ca9c51049109ef86e6f44f50af8d53ca1c51ab208be8e04eed6bca299524ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159040,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T23:00:18.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/durable-plugin-callback",
+        "head_sha": "8d7b5e281f1aa6b06a7524ada96759ecb8a8b201",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
