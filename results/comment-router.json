@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T20:24:21.193Z",
+  "updated_at": "2026-09-27T20:24:23.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:823:5855894840:2026-09-27T14:37:16Z:clawsweeper_needs_human",
-      "comment_id": "5855894840",
-      "comment_version_key": "5855894840:2026-09-27T14:37:16Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/823#issuecomment-5855894840",
-      "comment_created_at": "2026-09-27T12:39:58Z",
-      "comment_updated_at": "2026-09-27T14:37:16Z",
-      "comment_body_sha256": "fd6382429210ae1abf96e20c042dde98a63704eee3a8b655fdaf6d7cbd6c0f03",
-      "repo": "openclaw/acpx",
-      "issue_number": 823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ae075963eac734cb6811f27b9e94b6d660e6c418)",
-      "expected_head_sha": "ae075963eac734cb6811f27b9e94b6d660e6c418",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T14:38:14.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/audit-launcher-arguments",
-        "head_sha": "ae075963eac734cb6811f27b9e94b6d660e6c418",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159693:5856797936:2026-09-27T14:38:23Z:clawsweeper_auto_repair",
       "comment_id": "5856797936",
@@ -33888,6 +33855,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159650:5859512265:2026-09-27T20:22:56Z:re_review",
+      "comment_id": "5859512265",
+      "comment_version_key": "5859512265:2026-09-27T20:22:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159650#issuecomment-5859512265",
+      "comment_created_at": "2026-09-27T20:22:56Z",
+      "comment_updated_at": "2026-09-27T20:22:56Z",
+      "comment_body_sha256": "253930da5aa85f53f310318d223c947447c980b0c8e015f6b493ed1a76cee806",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159650,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T20:24:22.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-plugin-reload-source-drift",
+        "head_sha": "20528397fdd8f56b7108267014b63ac0b32597cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
