@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:27:22.489Z",
+  "updated_at": "2026-09-27T15:27:32.737Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159498:5854509051:2026-09-27T09:08:27Z:re_review",
-      "comment_id": "5854509051",
-      "comment_version_key": "5854509051:2026-09-27T09:08:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159498#issuecomment-5854509051",
-      "comment_created_at": "2026-09-27T09:08:27Z",
-      "comment_updated_at": "2026-09-27T09:08:27Z",
-      "comment_body_sha256": "cc6468e0b7db3730b819a20ff5190bef5e78e79206302e9d3128da48c56f353f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159498,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T09:09:31.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-service-membership-empty-cgroup",
-        "head_sha": "5ef7f2782b1e4bf10b270d1d55a657b164a59c2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159431:5852858710:2026-09-27T09:08:25Z:clawsweeper_auto_repair",
       "comment_id": "5852858710",
@@ -33864,6 +33817,39 @@
         "kind": "pull_request",
         "branch": "openclaw/pr-154390-native-worker-ui",
         "head_sha": "34b647f67726d3d9128d9c38c96542392296ba8b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159738:5857180412:2026-09-27T15:26:20Z:clawsweeper_needs_human",
+      "comment_id": "5857180412",
+      "comment_version_key": "5857180412:2026-09-27T15:26:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159738#issuecomment-5857180412",
+      "comment_created_at": "2026-09-27T15:26:20Z",
+      "comment_updated_at": "2026-09-27T15:26:20Z",
+      "comment_body_sha256": "519577e5666a3f114182139f85cd801180069dba79d414cdcebd3521dd98da1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159738,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Doctor config-flow owner has no recorded after-fix openclaw doctor --fix run on an already-explicit legacy roster, no implicit-rost... (sha=1629dfedc5ea8fb80a66a60b09111f2fb7f470fa)",
+      "expected_head_sha": "1629dfedc5ea8fb80a66a60b09111f2fb7f470fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T15:27:32.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-doctor-config-explicit-ownership",
+        "head_sha": "1629dfedc5ea8fb80a66a60b09111f2fb7f470fa",
         "cluster_id": null,
         "job_path": null
       }
