@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T11:12:18.824Z",
+  "updated_at": "2026-09-27T11:12:27.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159427:5852826733:2026-09-27T05:03:40Z:re_review",
-      "comment_id": "5852826733",
-      "comment_version_key": "5852826733:2026-09-27T05:03:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159427#issuecomment-5852826733",
-      "comment_created_at": "2026-09-27T05:03:40Z",
-      "comment_updated_at": "2026-09-27T05:03:40Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159427,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T05:04:34.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-snapshot-clone",
-        "head_sha": "2d10472766cdd1ddb95b559e9aa73d38f2ff8c47",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159347:5852114160:2026-09-27T05:03:45Z:clawsweeper_needs_human",
       "comment_id": "5852114160",
@@ -33422,6 +33375,39 @@
         "kind": "pull_request",
         "branch": "fix/154834-failed-subagent-delivery-recurring-context",
         "head_sha": "12e4c7d3acd12987ae41c69ceb3275fd63e2f85e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158523:5841886933:2026-09-27T11:11:37Z:clawsweeper_needs_human",
+      "comment_id": "5841886933",
+      "comment_version_key": "5841886933:2026-09-27T11:11:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158523#issuecomment-5841886933",
+      "comment_created_at": "2026-09-26T01:19:35Z",
+      "comment_updated_at": "2026-09-27T11:11:37Z",
+      "comment_body_sha256": "41b828294f0207a21dddfc2d02462436fbc469ba7b1bb5e563ab3be74c6ac0a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The shared formatter feeds tool text into chat Markdown. Contributor-supplied terminal output exercises markdown-it, and the new test... (sha=8b01c0cd6fd6080b7c6da859e6b265e2782e8dc8)",
+      "expected_head_sha": "8b01c0cd6fd6080b7c6da859e6b265e2782e8dc8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T11:12:27.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-span-edge-spaces",
+        "head_sha": "8b01c0cd6fd6080b7c6da859e6b265e2782e8dc8",
         "cluster_id": null,
         "job_path": null
       }
