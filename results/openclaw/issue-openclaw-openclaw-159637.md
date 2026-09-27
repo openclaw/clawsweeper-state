@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159637"
-mode: "autonomous"
-run_id: "36317768822"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36317768822"
-head_sha: "756c1c45f08cca536117d064dac226d8c536e4bb"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T12:51:53.553Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159637"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159637"
+mode: "plan"
+run_id: "36321029171"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36321029171"
+head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T13:06:15.379Z"
+canonical: "#159637"
+canonical_issue: "#159637"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36317768822](https://github.com/openclaw/clawsweeper/actions/runs/36317768822)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36321029171](https://github.com/openclaw/clawsweeper/actions/runs/36321029171)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159637
+Canonical: #159637
 
 ## Summary
 
-Current main retains a header-only path that can forward an undecodable image. A narrow fix is warranted, but this read-only checkout has no installed dependencies, so I could not add the required failing regression, patch the code, or validate a PR branch.
+Current checkout matches the preflight main SHA. Source inspection supports the reported intake defect, but a failing regression has not been run. Plan a narrow fix PR after reproducing it through the registered view_image tool. No code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Current main retains a header-only path that can forward an undecodable image. A
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159637 | fix_needed | planned | canonical | The native view_image result needs full image validation and an accurate surviving-image count. |
-| #94906 | keep_related | planned | related | Its broader recovery decision remains separate. |
-| #143973 | keep_related | planned | related | Transcript storage and image admission have different owners and fixes. |
-| #134951 | keep_independent | planned | independent | A shared error string does not establish the same root cause. |
-| cluster:issue-openclaw-openclaw-159637 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies and a failing registered-tool regression before repair. |
+| #159637 | fix_needed | planned | canonical | Implement the reported intake fix after confirming the regression fails on current main. |
+| #94906 | keep_related | planned | related | Keep the distinct recovery request open. |
+| #143973 | keep_related | planned | related | Storage and retention remain distinct from unreadable-image intake. |
+| #134951 | keep_independent | planned | independent | No evidence connects that provider-wide failure to undecodable view_image bytes. |
+| #29290 | keep_closed | skipped | related | Historical context only; it is already closed. |
+| #131797 | keep_closed | skipped | independent | Historical context only; it is already closed. |
 
 ## Needs Human
 
