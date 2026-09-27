@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 27, 2026, 11:10 UTC
+Last source update: Sep 27, 2026, 11:14 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Sep 27, 2026, 11:10 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 27, 2026, 11:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36313830018) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 27, 2026, 11:14 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36314992507) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 27, 2026, 10:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36314102493) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 26, 2026, 14:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36249826507) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 27, 2026, 11:05 UTC
+Last source update: Sep 27, 2026, 11:15 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1239 | 100% |
-| Run attempts archived | 3741 | audit |
+| Run attempts archived | 3742 | audit |
 | Latest successful clusters | 1040 | 83.9% |
 | Latest failed clusters | 196 | 15.8% |
 | Latest cancelled clusters | 3 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1239 clusters: 347 maintainer action, 379 automation snapshot, 463 intervention needed, 50 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#103694](https://github.com/openclaw/openclaw/pull/103694) is maintainer_input: Reproduce the warning through current-main MCP catalog loading or the shared validator on a host with installed dependencies before prepa....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-103198](cluster:issue-openclaw-openclaw-103198) is automation_failed: Implementation and PR creation must wait for the required pre-fix Gateway regression in a writable checkout with dependencies..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-103198](cluster:issue-openclaw-openclaw-103198) is automation_failed: A writable, dependency-ready checkout is required to reproduce the defect at the Gateway boundary before implementing the fix..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#156442](https://github.com/openclaw/openclaw/issues/156442) is action_planned: Keep this issue as the fix owner. Reproduce the reported handling on current main, then retry only the pre-work contention failure once o....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-103198](cluster:issue-openclaw-openclaw-103198) | automation_failed | Implementation and PR creation must wait for the required pre-fix Gateway regression in a writable checkout with dependencies. | Sep 27, 2026, 10:28 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [36310348143](https://github.com/openclaw/clawsweeper/actions/runs/36310348143) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-103198](cluster:issue-openclaw-openclaw-103198) | automation_failed | A writable, dependency-ready checkout is required to reproduce the defect at the Gateway boundary before implementing the fix. | Sep 27, 2026, 11:15 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [36313040514](https://github.com/openclaw/clawsweeper/actions/runs/36313040514) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#159538](https://github.com/openclaw/openclaw/pull/159538) | automation_failed | The open issue describes a current, bounded adapter defect with no viable open implementation PR in the hydrated inventory. | Sep 27, 2026, 09:17 UTC | [issue-openclaw-openclaw-159538](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-159538.md) | [36306495655](https://github.com/openclaw/clawsweeper/actions/runs/36306495655) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118806](https://github.com/openclaw/openclaw/pull/118806) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Sep 27, 2026, 08:45 UTC | [automerge-openclaw-openclaw-118806](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118806.md) | [36306326780](https://github.com/openclaw/clawsweeper/actions/runs/36306326780) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-153502](cluster:issue-openclaw-openclaw-153502) | automation_failed | Opening the implementation PR requires a reproduced and locally validated patch. | Sep 27, 2026, 06:49 UTC | [issue-openclaw-openclaw-153502](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153502.md) | [36299682166](https://github.com/openclaw/clawsweeper/actions/runs/36299682166) |
