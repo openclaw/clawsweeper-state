@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Reproduce the reported existing-behavior regression on current main in isolated state: with a usable Claude CLI login and a Gateway restart, compare ordinary `models.list` availability and the Control UI Effort control before and after `models.list` refreshed for `claude-cli`. Trace startup provider scope, synthetic auth preparation, and scoped catalog publication. Repair the existing prepared-auth owner so a partial refresh cannot leave a working CLI route falsely unavailable; do not add a config option, relax native-login checks, or implement a UI-only override. Add a focused regression that fails on the original restart behavior and covers an unrelated provider's scoped refresh. Validate the Gateway result and UI consequence. Put release-note context in the PR body; do not edit CHANGELOG.md. Stop and return to triage if the reproduction requires a new product policy or a broader API change.
+Fix the existing-behavior regression in which a Gateway restart leaves working Claude CLI models unavailable until a Claude CLI-scoped refresh. First establish a failing regression through the catalog publication and `models.list` path; identify the exact startup or partial-refresh scope that loses verified native auth. Repair the prepared catalog auth owner without treating genuinely missing native login as available or changing the Control UI's auth rule. Cover startup, unrelated scoped refresh, explicit Claude CLI refresh, and missing-login behavior with focused regression tests. Run the focused catalog worker and Gateway model-list lifecycle tests plus `git diff --check`. Keep release-note context in the PR body; do not edit CHANGELOG.md or add configuration.
 
 Likely files:
 
