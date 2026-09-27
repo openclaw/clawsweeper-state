@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159276"
-mode: "autonomous"
-run_id: "36285020845"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36285020845"
+mode: "plan"
+run_id: "36287550389"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36287550389"
 head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-27T01:46:50.964Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159276"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159276"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-27T02:11:08.094Z"
+canonical: "#159276"
+canonical_issue: "#159276"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36285020845](https://github.com/openclaw/clawsweeper/actions/runs/36285020845)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36287550389](https://github.com/openclaw/clawsweeper/actions/runs/36287550389)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159276
+Canonical: #159276
 
 ## Summary
 
-Current main has the reported Ollama request-builder gap. The checkout is read-only and has no installed test tools, so a failing regression, implementation, and validation could not be completed.
+Plan a narrow native Ollama fix for the open issue. Current-main source inspection supports the reported request-payload gap, but no failing regression or validation was run in plan mode. Reproduce at the Ollama request boundary before editing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Current main has the reported Ollama request-builder gap. The checkout is read-o
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159276 | fix_needed | planned | canonical | The open issue describes a distinct plugin completion path; the linked older Ollama issues are closed historical context. |
-| cluster:issue-openclaw-openclaw-159276 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies. |
+| #159276 | fix_needed | planned | canonical | No hydrated candidate PR covers this distinct direct-completion path. |
+| #50702 | keep_closed | skipped | related | Historical context; no closure action is valid. |
+| #50712 | keep_closed | skipped | related | Historical context; no closure action is valid. |
 
 ## Needs Human
 
