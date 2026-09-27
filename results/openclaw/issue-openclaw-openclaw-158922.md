@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-158922"
-mode: "plan"
-run_id: "36250111826"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36250111826"
-head_sha: "726760a4e31bd88b10982908e042f59f01c7a18b"
+mode: "autonomous"
+run_id: "36285251629"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36285251629"
+head_sha: "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-26T14:58:49.248Z"
+result_status: "blocked"
+published_at: "2026-09-27T01:25:28.200Z"
 canonical: "https://github.com/openclaw/openclaw/issues/158922"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/158922"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36250111826](https://github.com/openclaw/clawsweeper/actions/runs/36250111826)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36285251629](https://github.com/openclaw/clawsweeper/actions/runs/36285251629)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/158922
 
 ## Summary
 
-Plan a narrow prepared-catalog auth fix for the restart regression. Reproduction on current main and validation remain required before a fix PR is opened. The linked UI PR addresses a different refresh-failure trigger.
+Source inspection at preflight main 0586b3d18796ecd8d44463c7f2e0d666bd169156 supports the reported Claude CLI catalog-auth gap, but the required failing regression could not be run: the checkout is read-only and has no node_modules. No code or GitHub state was changed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Plan a narrow prepared-catalog auth fix for the restart regression. Reproduction
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #158922 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Plan a narrow prepared-catalog auth fix for the restart regression. Reproduction
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/158922 | fix_needed | planned | canonical | The reported restart behavior has no hydrated candidate PR that fixes prepared catalog auth publication. |
-| https://github.com/openclaw/openclaw/pull/146155 | keep_related | planned | related | Its UI refresh-failure behavior is related but does not repair the issue's restart-time provider availability. |
-| https://github.com/openclaw/openclaw/pull/157459 | keep_closed | skipped | related | Historical context only; no action is available for the already-merged PR. |
+| #158922 | fix_needed | blocked | canonical | The job requires a failing regression on current main before implementation. This worker cannot establish that proof or validate a patch in the read-only checkout. |
+| #146155 | keep_related | planned | related | The PR does not repair the catalog-auth publication path reported by the issue. |
+| cluster:issue-openclaw-openclaw-158922 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout with repository dependencies. |
 
 ## Needs Human
 

@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158922",
+  "mode": "autonomous",
+  "run_id": "36285251629",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36285251629",
+  "head_sha": "e1a1bc03b8cb207ef3f8661f2224aae1a128ee7c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158922.md",
+  "published_at": "2026-09-27T01:25:28.200Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158922",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158922",
+  "canonical_pr": null,
+  "summary": "Source inspection at preflight main 0586b3d18796ecd8d44463c7f2e0d666bd169156 supports the reported Claude CLI catalog-auth gap, but the required failing regression could not be run: the checkout is read-only and has no node_modules. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#158922",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#158922",
+      "candidate_fix": null,
+      "reason": "The job requires a failing regression on current main before implementation. This worker cannot establish that proof or validate a patch in the read-only checkout."
+    },
+    {
+      "target": "#146155",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#158922",
+      "candidate_fix": null,
+      "reason": "The PR does not repair the catalog-auth publication path reported by the issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158922",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158922",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with repository dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#158922",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
