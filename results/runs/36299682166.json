@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153502",
+  "mode": "autonomous",
+  "run_id": "36299682166",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36299682166",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153502.md",
+  "published_at": "2026-09-27T06:49:45.405Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_pr": null,
+  "summary": "The reported Doctor settlement mismatch is present in the checked out main source, but this read-only checkout has no installed dependencies. I could not add the required failing regression, run the Doctor flow, validate a patch, or prepare a PR branch.",
+  "actions": [
+    {
+      "target": "#153502",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "A narrow Doctor bug remains plausible on current main. Runtime reproduction and implementation are blocked by the read-only checkout and absent node_modules."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153502",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "A writable executor must first demonstrate the failure on this main revision, then implement and validate the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153502",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "Opening the implementation PR requires a reproduced and locally validated patch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
