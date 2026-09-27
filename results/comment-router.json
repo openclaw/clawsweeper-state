@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T13:28:32.352Z",
+  "updated_at": "2026-09-27T13:29:31.013Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159492:5853590965:2026-09-27T06:58:17Z:clawsweeper_auto_repair",
-      "comment_id": "5853590965",
-      "comment_version_key": "5853590965:2026-09-27T06:58:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159492#issuecomment-5853590965",
-      "comment_created_at": "2026-09-27T06:58:17Z",
-      "comment_updated_at": "2026-09-27T06:58:17Z",
-      "comment_body_sha256": "6ddac77c8f480e13e4c8487ecef0e787dc1abd9bd4d7f6cd092d3ff31421c172",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159492,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e7a0c51b81f410cfbb934afddc972116cbcced6a)",
-      "expected_head_sha": "e7a0c51b81f410cfbb934afddc972116cbcced6a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T07:03:45.532Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/parent-led-subagent-recovery",
-        "head_sha": "e7a0c51b81f410cfbb934afddc972116cbcced6a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118806",
       "comment_id": "repair-loop-label-sweep:autofix:118806",
@@ -33618,6 +33585,53 @@
         "kind": "pull_request",
         "branch": "fix/ollama-pretool-commentary-133922",
         "head_sha": "61be9f0a036d0579be1887918278b1708e3cc1f7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159659:5856277969:2026-09-27T13:28:17Z:re_review",
+      "comment_id": "5856277969",
+      "comment_version_key": "5856277969:2026-09-27T13:28:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159659#issuecomment-5856277969",
+      "comment_created_at": "2026-09-27T13:28:17Z",
+      "comment_updated_at": "2026-09-27T13:28:17Z",
+      "comment_body_sha256": "abf1f2ba85d908606c14fc5186b304b9655eee38c0366c61e1864d427b3090c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159659,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — accepted p2 fixed on the new exact head. a bounded private host pipe delivers only validated phase/exit/signal after scheduler process-group and log cleanup, independent of failure_tail_lines=1. actual scheduler boundary red/green: original loses phase; repair retains it; both retain exit 7 and complete cleanup. privacy negatives pass. original main and current failure/success artifact bytes are identical; no stored-data migration is involved. also fixed the reproducible consistent-return lint defect; full hosted lint/tests remain required. pr body has current proof and dependency gaps. review only; no automerge, dispatch, or landing requested",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T13:29:25.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/docker-survivor-failure-metadata",
+        "head_sha": "1863049db13c07e41f5c9bfac2c2da37c2cc346d",
         "cluster_id": null,
         "job_path": null
       },
