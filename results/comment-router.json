@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:58:35.409Z",
+  "updated_at": "2026-09-27T15:59:42.010Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159529:5854693001:2026-09-27T09:35:09Z:re_review",
-      "comment_id": "5854693001",
-      "comment_version_key": "5854693001:2026-09-27T09:35:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159529#issuecomment-5854693001",
-      "comment_created_at": "2026-09-27T09:35:09Z",
-      "comment_updated_at": "2026-09-27T09:35:09Z",
-      "comment_body_sha256": "ad4275fde0d1d4c4390ff8644974758edfbae53830a4f0d47a100213792ac25c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159529,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T09:36:06.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa1004-incomplete-review",
-        "head_sha": "fec44ecd4f805f166ee7d122ba246420812c4439",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159299:5851597844:2026-09-27T09:35:44Z:clawsweeper_needs_human",
       "comment_id": "5851597844",
@@ -33706,6 +33659,39 @@
         "kind": "pull_request",
         "branch": "fix/159542-pdf-active-model",
         "head_sha": "38b1387ccdd375da1411b051d46e5402720fe63f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159718:5857083203:2026-09-27T15:58:53Z:clawsweeper_needs_human",
+      "comment_id": "5857083203",
+      "comment_version_key": "5857083203:2026-09-27T15:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159718#issuecomment-5857083203",
+      "comment_created_at": "2026-09-27T15:13:42Z",
+      "comment_updated_at": "2026-09-27T15:58:53Z",
+      "comment_body_sha256": "0ca536481b434a2757b0c8ea652e07b9f46e90814b33401fc24eba9b14afaf89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159718,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Android installations with no saved sidebar preferences will adopt the new layout on upgrade, including losing Settings as a default page row. The intended transition for tho... (sha=e5df0d8fe04e8ccc4cf286eeda9f6f77f913bdf2)",
+      "expected_head_sha": "e5df0d8fe04e8ccc4cf286eeda9f6f77f913bdf2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T15:59:42.010Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-sidebar-defaults-settings",
+        "head_sha": "e5df0d8fe04e8ccc4cf286eeda9f6f77f913bdf2",
         "cluster_id": null,
         "job_path": null
       }
