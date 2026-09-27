@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159541",
+  "mode": "autonomous",
+  "run_id": "36306508716",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36306508716",
+  "head_sha": "e9ef8c0b2c0acbe5908b2e9d1a7e870cdddc6e12",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159541.md",
+  "published_at": "2026-09-27T09:15:24.115Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159541",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159541",
+  "canonical_pr": null,
+  "summary": "Current main (8620e9097726a817be6bd8f9385a14a54e24f89d) requests cancellation when an external caller removes an active automation, but the removal result does not disclose the request. A narrow fix is planned. The read-only checkout prevented the failing regression, implementation, and validation; no PR was opened.",
+  "actions": [
+    {
+      "target": "#159541",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159541",
+      "candidate_fix": null,
+      "reason": "The reported visibility defect remains in current-main source. Runtime reproduction and regression execution were unavailable in this read-only worker."
+    },
+    {
+      "target": "#131090",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#159541",
+      "candidate_fix": null,
+      "reason": "The caller path and remaining work differ."
+    },
+    {
+      "target": "#153040",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159541",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#159541",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow fix PR on clawsweeper/issue-openclaw-openclaw-159541."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159541",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159541",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
