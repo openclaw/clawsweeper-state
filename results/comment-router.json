@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T10:10:16.848Z",
+  "updated_at": "2026-09-27T10:10:19.742Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159411:5852660395:2026-09-27T04:35:41Z:re_review",
-      "comment_id": "5852660395",
-      "comment_version_key": "5852660395:2026-09-27T04:35:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159411#issuecomment-5852660395",
-      "comment_created_at": "2026-09-27T04:35:41Z",
-      "comment_updated_at": "2026-09-27T04:35:41Z",
-      "comment_body_sha256": "444bcc3e827c502aac3060fc37bf0ca9150e3c409a010b75e11e9dd625754a5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159411,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T04:36:41.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-roster-fixture-contract-20260927",
-        "head_sha": "0ab962b022e576729bc49bce6601534d3d8903df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158708:5844095460:2026-09-27T04:35:46Z:clawsweeper_needs_human",
       "comment_id": "5844095460",
@@ -33417,6 +33370,39 @@
         "kind": "pull_request",
         "branch": "deslop/l109-ui-lib-app",
         "head_sha": "6a173d8c5abb5cc1cb413494b2a7a3a2d03c0f03",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159546:5854301473:2026-09-27T10:08:23Z:clawsweeper_needs_human",
+      "comment_id": "5854301473",
+      "comment_version_key": "5854301473:2026-09-27T10:08:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159546#issuecomment-5854301473",
+      "comment_created_at": "2026-09-27T08:43:24Z",
+      "comment_updated_at": "2026-09-27T10:08:23Z",
+      "comment_body_sha256": "b6b0511e075b5400c60f83ce5d28a614ff86c630dac712aa01a4f33f7b02d992",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159546,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve attempts while the Gateway reports an active serve (P1)** - If a proxy resets its downstream connection while the first Gateway serve is still settling, subsequent requests receive the new transfer_in_p...; Review finding: [P1] Preserve attempts while the Gateway reports an active serve — extensions/crabbox/src/crabbox-worker-node-enrollment.ts:218-219 - [medium] Review the expanded... (sha=1d030951536c20f9024fb521517325e3e350654b)",
+      "expected_head_sha": "1d030951536c20f9024fb521517325e3e350654b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T10:10:19.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bootstrap-download-retry",
+        "head_sha": "1d030951536c20f9024fb521517325e3e350654b",
         "cluster_id": null,
         "job_path": null
       }
