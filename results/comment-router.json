@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T15:27:48.876Z",
+  "updated_at": "2026-09-27T15:27:56.706Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159466:5853280043:2026-09-27T09:09:35Z:clawsweeper_needs_human",
-      "comment_id": "5853280043",
-      "comment_version_key": "5853280043:2026-09-27T09:09:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159466#issuecomment-5853280043",
-      "comment_created_at": "2026-09-27T06:14:35Z",
-      "comment_updated_at": "2026-09-27T09:09:35Z",
-      "comment_body_sha256": "296a34de407def745e414ebab2a0effd97e577028a80daae49edd448df6b7ceb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Add one-worker per-file wall times for the two new Codex test files and the materially changed history-worker test, plus hosted CI seconds when available. (sha=90ff171dc42e604049a79511232c6a3845875f95)",
-      "expected_head_sha": "90ff171dc42e604049a79511232c6a3845875f95",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T09:10:25.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/remote-websocket-startup-recovery",
-        "head_sha": "90ff171dc42e604049a79511232c6a3845875f95",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158567:5842306205:2026-09-27T09:10:45Z:clawsweeper_needs_human",
       "comment_id": "5842306205",
@@ -33853,6 +33820,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159632:5857188491:2026-09-27T15:27:07Z:re_review",
+      "comment_id": "5857188491",
+      "comment_version_key": "5857188491:2026-09-27T15:27:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159632#issuecomment-5857188491",
+      "comment_created_at": "2026-09-27T15:27:07Z",
+      "comment_updated_at": "2026-09-27T15:27:07Z",
+      "comment_body_sha256": "27297a3e83716b2f5892d7254ce0b18c1d81c6a6c9bc1603fa88f6b474b80156",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159632,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T15:27:55.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/persistent-reply-admission-20260927",
+        "head_sha": "f62624652c2aba319c646680e6bf6027ac0b560d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
