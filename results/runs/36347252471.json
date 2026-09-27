@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159872",
+  "mode": "autonomous",
+  "run_id": "36347252471",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36347252471",
+  "head_sha": "3a18b3d1a20770d6b719c377f2a9be24f214a082",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159872.md",
+  "published_at": "2026-09-27T21:03:01.330Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159872",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159872",
+  "canonical_pr": null,
+  "summary": "The reported source mismatch reproduces on preflight main 4cf8aae1: requesting memory and sessions with both session gates off resolves to memory only; enabling experimental.sessionMemory includes sessions. Implementation and entry-point validation are blocked because this checkout is read-only and has no installed dependencies.",
+  "actions": [
+    {
+      "target": "#159872",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159872",
+      "candidate_fix": null,
+      "reason": "Keep the issue open while the diagnostic fix is prepared."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159872",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#159872",
+      "candidate_fix": null,
+      "reason": "Report the excluded source and an enablement hint through Doctor and memory status while preserving the indexing gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159872",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159872",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with installed dependencies."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
