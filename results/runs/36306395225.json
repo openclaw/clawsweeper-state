@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "36306395225",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36306395225",
+  "head_sha": "e9ef8c0b2c0acbe5908b2e9d1a7e870cdddc6e12",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-27T09:06:49.115Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "Current main still routes non-draft MCP output schemas through the SDK Ajv validator, but this read-only checkout lacks dependencies. The required failing reproduction and inspection of the pinned SDK could not run. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The reported warning remains plausible from current source and hydrated user reports, but runtime reproduction is unverified."
+    },
+    {
+      "target": "#103699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Historical source and contributor research only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Restore dependencies in a writable isolated checkout, inspect the pinned SDK’s supported-format handling, and establish a failing regression before implementation. The job requires stopping if that dependency-backed path cannot be established."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
