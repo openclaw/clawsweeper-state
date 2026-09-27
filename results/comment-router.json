@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T10:38:21.787Z",
+  "updated_at": "2026-09-27T10:38:22.158Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159380:5852731861:2026-09-27T04:49:08Z:re_review",
-      "comment_id": "5852731861",
-      "comment_version_key": "5852731861:2026-09-27T04:49:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159380#issuecomment-5852731861",
-      "comment_created_at": "2026-09-27T04:49:08Z",
-      "comment_updated_at": "2026-09-27T04:49:08Z",
-      "comment_body_sha256": "ce1d337ba18cef0a3da7d8f0e19df90facc9383935e0260bbb4ac4a7ef1b7646",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159380,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-run",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T04:56:39.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-simple-completion-reasoning-off",
-        "head_sha": "385d2387a97c6689e963769ecf85c704d1d9a722",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159380:5852772734:2026-09-27T04:55:34Z:clawsweeper_needs_human",
       "comment_id": "5852772734",
@@ -33383,6 +33336,39 @@
         "kind": "pull_request",
         "branch": "fix/native-hook-relay-readiness-recovery-20260926",
         "head_sha": "cefac227909748aff4da9f5d11dfda91f6b37559",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154240:5754190970:2026-09-27T10:34:48Z:clawsweeper_needs_human",
+      "comment_id": "5754190970",
+      "comment_version_key": "5754190970:2026-09-27T10:34:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154240#issuecomment-5754190970",
+      "comment_created_at": "2026-09-21T01:21:48Z",
+      "comment_updated_at": "2026-09-27T10:34:48Z",
+      "comment_body_sha256": "7dc9b7ce3cdf0f5db0c3a32b76df02da1577fccde053c0f1fdfe218debcfbe9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Adjudicate the release-build cache alert** - CodeQL flags selected-tag code execution as a cache-poisoning path through manual dispatch. Both workflow jobs require workflow_run, so reac...; Review finding: [medium] Adjudicate the release-build cache alert — .github/workflows/linux-app-release.yml:348 (sha=82c06a5967fb162aa68e432b252a4c2059eae982)",
+      "expected_head_sha": "82c06a5967fb162aa68e432b252a4c2059eae982",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T10:38:22.158Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/tauri-node-sea-runtime",
+        "head_sha": "82c06a5967fb162aa68e432b252a4c2059eae982",
         "cluster_id": null,
         "job_path": null
       }
