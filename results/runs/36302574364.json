@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-158944",
+  "mode": "autonomous",
+  "run_id": "36302574364",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36302574364",
+  "head_sha": "f5b521426512c17d5036a6589004a2509bc9f937",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-158944.md",
+  "published_at": "2026-09-27T07:53:29.233Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/158944",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/158944",
+  "canonical_pr": null,
+  "summary": "Current main still contains the reported plugin approval-card defect. Source inspection identifies a narrow fix path, but the read-only checkout has no installed dependencies. I could not add and run the required failing regression, edit code, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#158944",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#158944",
+      "candidate_fix": null,
+      "reason": "The source supports the reported defect. An executable failing regression remains required before editing; this host cannot create or run it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-158944",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#158944",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
