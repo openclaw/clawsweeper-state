@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Doctor session SQLite bug in which an advisory historical_transcript_deferred finding prevents settlement of otherwise verified retained plugin migration sources. Establish a failing regression at the Doctor/post-session plugin repair boundary using an isolated mixed-state fixture, then make the narrow owner-side repair. Preserve unverified historical originals, receipt authority, archive safety, and per-agent failure attribution; do not add a feature, config option, schema change, or broad warning suppression. Related partial fixes: https://github.com/openclaw/openclaw/pull/154413 and https://github.com/openclaw/openclaw/pull/158857. Validate focused Doctor tests and changed-file checks. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing Doctor session SQLite behavior where a verified retained plugin import receipt and an advisory historical_transcript_deferred warning cause post-session source settlement to fail. Establish a failing regression through the Doctor and plugin-completion path, then make the settlement decision honor the documented warning contract while retaining unmatched historical originals and current authority checks. Cover a second Doctor run and related settlement cases. Keep the change within the existing Doctor owner; stop if a new feature, configuration option, or product-policy change becomes necessary. Do not edit CHANGELOG.md; put user-visible fix context in the PR body.
 
 Likely files:
 
@@ -77,9 +77,9 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/commands/doctor-session-sqlite.active-settlement.test.ts --maxWorkers=1
-- node scripts/run-vitest.mjs src/commands/doctor-session-sqlite.retained-source-verification.test.ts --maxWorkers=1
-- node scripts/check-changed.mjs --base origin/main
+- pnpm test src/commands/doctor-session-sqlite.active-settlement.test.ts --maxWorkers=1
+- pnpm test src/commands/doctor-session-sqlite.retained-source-verification.test.ts --maxWorkers=1
+- node scripts/check-changed.mjs
 
 ## Operator Prompt
 
