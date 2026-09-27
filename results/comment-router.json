@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T16:37:29.998Z",
+  "updated_at": "2026-09-27T16:42:15.159Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159594:5855073038:2026-09-27T10:58:37Z:clawsweeper_needs_human",
-      "comment_id": "5855073038",
-      "comment_version_key": "5855073038:2026-09-27T10:58:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159594#issuecomment-5855073038",
-      "comment_created_at": "2026-09-27T10:33:56Z",
-      "comment_updated_at": "2026-09-27T10:58:37Z",
-      "comment_body_sha256": "6dcf852d281db00f521de5fec030b0f7c33607ed084b28a2fa29ba36309e8d34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159594,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=ffb9f985357481d4a6e8754bc0e9a1b18edd83f9)",
-      "expected_head_sha": "ffb9f985357481d4a6e8754bc0e9a1b18edd83f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T10:59:25.300Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.33-frozen-test-clock",
-        "head_sha": "ffb9f985357481d4a6e8754bc0e9a1b18edd83f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159502:5853679061:2026-09-27T10:58:25Z:clawsweeper_needs_human",
       "comment_id": "5853679061",
@@ -33731,6 +33698,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1506:5806090970:2026-09-27T16:41:07Z:clawsweeper_needs_human",
+      "comment_id": "5806090970",
+      "comment_version_key": "5806090970:2026-09-27T16:41:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1506#issuecomment-5806090970",
+      "comment_created_at": "2026-09-24T01:57:23Z",
+      "comment_updated_at": "2026-09-27T16:41:07Z",
+      "comment_body_sha256": "ad2a9035cea398d46c9d870cbadf974fdad566612e05ced2b401b66c953a8972",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported native WinUI fixture shows bucket-aware removal and reload at cba7b9b, before the current...; Review finding: [P1] Show each rule's main or wildcard scope before removal — src/OpenClaw.Tray.WinUI/Presentation/PermissionsPageViewModel.cs:726-732 - [P1] Keep inherited Deny/O... (sha=d7776a1ed27a7142519e7e2ddb75925458078876)",
+      "expected_head_sha": "d7776a1ed27a7142519e7e2ddb75925458078876",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T16:42:15.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f078-wildcard-exec-policy",
+        "head_sha": "d7776a1ed27a7142519e7e2ddb75925458078876",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
