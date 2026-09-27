@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T20:21:47.258Z",
+  "updated_at": "2026-09-27T20:22:11.742Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155911:5782512967:2026-09-27T14:23:37Z:clawsweeper_needs_human",
-      "comment_id": "5782512967",
-      "comment_version_key": "5782512967:2026-09-27T14:23:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155911#issuecomment-5782512967",
-      "comment_created_at": "2026-09-22T19:18:12Z",
-      "comment_updated_at": "2026-09-27T14:23:37Z",
-      "comment_body_sha256": "08bd7da0be2333eb1c806ae61e90092526fa56282eae15ec9f95462130ca7b9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155911,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR head conflicts with current main, which moved file capture and native admission into separate owners; the owner record has not been integrated or validated against that path. (sha=d1c96f37e0933d6637ebdf75bc8779605a7abb04)",
-      "expected_head_sha": "d1c96f37e0933d6637ebdf75bc8779605a7abb04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T14:33:40.987Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/plugin-generation-source-projection-20260922",
-        "head_sha": "d1c96f37e0933d6637ebdf75bc8779605a7abb04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157005:5808218703:2026-09-27T14:25:59Z:clawsweeper_needs_human",
       "comment_id": "5808218703",
@@ -33877,6 +33844,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159851:5859499354:2026-09-27T20:21:10Z:re_review",
+      "comment_id": "5859499354",
+      "comment_version_key": "5859499354:2026-09-27T20:21:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159851#issuecomment-5859499354",
+      "comment_created_at": "2026-09-27T20:21:10Z",
+      "comment_updated_at": "2026-09-27T20:21:10Z",
+      "comment_body_sha256": "6dd65563a364253696cc63acacfb9927817df47c07a267ee0208c74b84ca6b01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159851,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T20:22:08.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-p03-whatsapp-media",
+        "head_sha": "e1100a26a72ca0631fcd965d702351b55cb1d0ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
