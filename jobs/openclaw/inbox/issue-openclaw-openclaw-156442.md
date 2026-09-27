@@ -67,21 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Claude CLI behavior reported in https://github.com/openclaw/openclaw/issues/156442. First establish a failing regression that carries the reported nonempty Claude Code refresh-lock error through the CLI execution and recovery boundary. In src/agents/cli-runner/cli-run-recovery.ts and the smallest necessary caller or error-classification code, retry that specific pre-work failure once on the same candidate and session within the remaining deadline. Preserve cancellation, current run authority, delivered-work safeguards, and Claude Code's sole ownership of native credentials. Cover successful recovery, repeated contention, unrelated OAuth errors, cancellation, and fallback after the retry fails. Do not add a config option or alter Gateway-owned OAuth refresh. Credit the closed source PR https://github.com/openclaw/openclaw/pull/156572 where its approach is reused. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Fix the existing Claude CLI refresh-lock failure reported here. Use the CLI process-result and recovery path in src/agents/cli-runner, and review the useful constraints in https://github.com/openclaw/openclaw/pull/156572 without treating that closed PR as merged. First establish a failing regression using the reported native error text at the real runner boundary. Retry the same candidate at most once within the remaining run budget; honor cancellation, current run authority, completed output, delivered side effects, and terminal fallback after a repeated or different failure. Do not read or refresh Claude Code credentials, add a config option, change other providers' OAuth behavior, or replay completed tool work. Add focused regression coverage and direct boundary proof. Run the focused CLI recovery and reliability tests plus diff checks as appropriate. Put release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/cli-runner/cli-run-recovery.ts
 - src/agents/cli-runner/cli-run-recovery.test.ts
 - src/agents/cli-runner/exit-error.ts
-- src/agents/cli-runner.fault-sequences.e2e.test.ts
+- src/agents/cli-runner.reliability.test.ts
 
 Validation:
 
 - pnpm test src/agents/cli-runner/cli-run-recovery.test.ts --maxWorkers=1
 - pnpm test src/agents/cli-runner.reliability.test.ts --maxWorkers=1
-- pnpm changed:lanes --json
-- pnpm check:changed
+- git diff --check
 
 ## Operator Prompt
 
