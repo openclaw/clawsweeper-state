@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T16:09:08.259Z",
+  "updated_at": "2026-09-27T16:09:10.758Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:842:5854778932:2026-09-27T10:00:08Z:clawsweeper_needs_human",
-      "comment_id": "5854778932",
-      "comment_version_key": "5854778932:2026-09-27T10:00:08Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/842#issuecomment-5854778932",
-      "comment_created_at": "2026-09-27T09:46:42Z",
-      "comment_updated_at": "2026-09-27T10:00:08Z",
-      "comment_body_sha256": "6423f948af6343aac2fa9f89847ba75e8ae2c42174a3ca76315e9fddda736abb",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 842,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=271b6b5b774c25f7039d2862b6bc84f77ccd3edf)",
-      "expected_head_sha": "271b6b5b774c25f7039d2862b6bc84f77ccd3edf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T10:00:58.745Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/select-all-strategy",
-        "head_sha": "271b6b5b774c25f7039d2862b6bc84f77ccd3edf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159445:5852957906:2026-09-27T10:02:13Z:clawsweeper_auto_repair",
       "comment_id": "5852957906",
@@ -33662,6 +33629,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159037:5857523433:2026-09-27T16:08:17Z:re_review",
+      "comment_id": "5857523433",
+      "comment_version_key": "5857523433:2026-09-27T16:08:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159037#issuecomment-5857523433",
+      "comment_created_at": "2026-09-27T16:08:17Z",
+      "comment_updated_at": "2026-09-27T16:08:17Z",
+      "comment_body_sha256": "4a0af64c0773b1a9c77d04d5957c376f6e6ee8f03ab5639bf6b8e094d0e4d4a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159037,
+      "author": "YangManBOBO",
+      "author_id": 156181593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review (pr body now states the measured test cost per writing-tests policy: ~1 ms per new test, ~5 s file test time; ci shard ~6 min, full run green)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T16:09:08.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/video-size-unrecognized-ignored-override",
+        "head_sha": "8df6265a8a77cad26934c1dc013c87b4bf0490a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159772:5857523491:2026-09-27T16:08:18Z:clawsweeper_needs_human",
