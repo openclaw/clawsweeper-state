@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T05:29:38.173Z",
+  "updated_at": "2026-09-27T05:29:38.669Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131584:5850612321:2026-09-26T22:48:47Z:re_review",
-      "comment_id": "5850612321",
-      "comment_version_key": "5850612321:2026-09-26T22:48:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131584#issuecomment-5850612321",
-      "comment_created_at": "2026-09-26T22:48:47Z",
-      "comment_updated_at": "2026-09-26T22:48:47Z",
-      "comment_body_sha256": "4806372974cf9000092aab47a3c842c22d49d363e4178cb6e392c65f23563e5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131584,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-26T22:57:47.042Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/explicit-skill-repair-receipt",
-        "head_sha": "b2c948e08a18b92e04f5efa17526a3701d23b1c3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159210:5850344202:2026-09-26T22:56:57Z:clawsweeper_needs_human",
       "comment_id": "5850344202",
@@ -33858,6 +33811,39 @@
         "kind": "pull_request",
         "branch": "fix/native-hook-relay-readiness-recovery-20260926",
         "head_sha": "5641df53e8d11ea20d2e0d89bc0637cf42780bb3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158992:5847670717:2026-09-27T05:28:31Z:clawsweeper_needs_human",
+      "comment_id": "5847670717",
+      "comment_version_key": "5847670717:2026-09-27T05:28:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158992#issuecomment-5847670717",
+      "comment_created_at": "2026-09-26T15:56:46Z",
+      "comment_updated_at": "2026-09-27T05:28:31Z",
+      "comment_body_sha256": "0e363300bb7bc89cb691f415b865bbb54d7ce8a2954fec61f275f858b48d709d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158992,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR reports a real Telegram Test Server DM before/after trace and a successful published-driver upg...; Review finding: [P1] Preserve or explicitly retire Telegram's released spawn mode — src/channels/conversation-resolution.ts:255-256 - [P2] Classify old bindings by their original... (sha=d3e82913038a95d75c9eff89ae49ba14f5878dca)",
+      "expected_head_sha": "d3e82913038a95d75c9eff89ae49ba14f5878dca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T05:29:38.669Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spawn-child-thread-only",
+        "head_sha": "d3e82913038a95d75c9eff89ae49ba14f5878dca",
         "cluster_id": null,
         "job_path": null
       }
