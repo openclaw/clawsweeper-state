@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-27T18:55:30.595Z",
+  "updated_at": "2026-09-27T18:51:55.621Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-09-02T15:41:18Z:clawsweeper_needs_human",
+      "comment_id": "5196803797",
+      "comment_version_key": "5196803797:2026-09-02T15:41:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
+      "comment_created_at": "2026-08-05T20:10:31Z",
+      "comment_updated_at": "2026-09-02T15:41:18Z",
+      "comment_body_sha256": "7511c5ea0e7385587f5d0ad0b4f4e259d173613a1685ebeb3c11de1884d6178e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119718,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch predates main's confirmed-404 retry and partial-delivery handling; a mechanical conflict resolution could reintroduce duplicate sends or discard accepted chunks. (sha=81021f3ac1971e0452a8f7e7d74aeece7e9e4b20)",
+      "expected_head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T13:00:30.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89430",
+        "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
+        "cluster_id": "automerge-openclaw-openclaw-119718",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119712:5196827378:2026-09-02T15:42:28Z:clawsweeper_auto_repair",
       "comment_id": "5196827378",
@@ -33807,53 +33840,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159819:5858754873:2026-09-27T18:54:30Z:re_review",
-      "comment_id": "5858754873",
-      "comment_version_key": "5858754873:2026-09-27T18:54:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159819#issuecomment-5858754873",
-      "comment_created_at": "2026-09-27T18:54:30Z",
-      "comment_updated_at": "2026-09-27T18:54:30Z",
-      "comment_body_sha256": "da7d02cd0ee764b0eac4db5f0e257696a89613c489d291c135d7ebe939e997f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159819,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T18:55:26.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/task-retirement-ci-closure-20260927",
-        "head_sha": "c1f214bb5eef99d594981f1de1eb868fb9356a9d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
