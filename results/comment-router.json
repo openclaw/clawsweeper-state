@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T19:13:21.485Z",
+  "updated_at": "2026-09-27T19:13:39.809Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159555:5856245552:2026-09-27T13:23:36Z:re_review",
-      "comment_id": "5856245552",
-      "comment_version_key": "5856245552:2026-09-27T13:23:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159555#issuecomment-5856245552",
-      "comment_created_at": "2026-09-27T13:23:36Z",
-      "comment_updated_at": "2026-09-27T13:23:36Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159555,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T13:24:28.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agentsapi-settlement-cleanup-deadline-monotonic-148",
-        "head_sha": "5b1c90fc686add7d6cacd2d08073a5f3817d62f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159299:5851597844:2026-09-27T13:23:03Z:clawsweeper_needs_human",
       "comment_id": "5851597844",
@@ -33871,6 +33824,39 @@
         "kind": "pull_request",
         "branch": "fix/f051-approval-card-sanitize",
         "head_sha": "8e6fe7c953604e0e9f189b92bbfd2df822f55844",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159316:5852155950:2026-09-27T19:12:47Z:clawsweeper_needs_human",
+      "comment_id": "5852155950",
+      "comment_version_key": "5852155950:2026-09-27T19:12:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159316#issuecomment-5852155950",
+      "comment_created_at": "2026-09-27T03:03:07Z",
+      "comment_updated_at": "2026-09-27T19:12:47Z",
+      "comment_body_sha256": "4784187a063d0420898518d7ffc64dd29159652f05ec246ce695f858a6b7acba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159316,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the new regression test file’s measured single-worker wall time in the PR body, and add its CI seconds when that run is available. (sha=89e11b5e14bb5988012e66c28d6e54c15b82d52a)",
+      "expected_head_sha": "89e11b5e14bb5988012e66c28d6e54c15b82d52a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T19:13:39.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live2-cleanup-dry-run-readonly",
+        "head_sha": "89e11b5e14bb5988012e66c28d6e54c15b82d52a",
         "cluster_id": null,
         "job_path": null
       }
