@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159184"
 mode: "autonomous"
-run_id: "36305711093"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36305711093"
-head_sha: "f59e3c90cef851563ab7283f7170ceb623c0f7bb"
-workflow_conclusion: "failure"
+run_id: "36299687795"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36299687795"
+head_sha: "f5b521426512c17d5036a6589004a2509bc9f937"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-27T08:47:52.407Z"
+published_at: "2026-09-27T06:22:00.368Z"
 canonical: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/159184"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36305711093](https://github.com/openclaw/clawsweeper/actions/runs/36305711093)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36299687795](https://github.com/openclaw/clawsweeper/actions/runs/36299687795)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/159184
 
 ## Summary
 
-At main 8620e909, the reported HTTP 400 no longer triggers same-model retries: an existing regression covers the reported prompt-size wording. The user-facing copy still follows the rate-limit path and gives wait guidance for a request that must be shortened. A narrow copy fix is warranted, but this read-only checkout has no installed dependencies, so the failing regression, patch, and validation could not be completed.
+At preflight main SHA 168ebc5b, the reported HTTP 400 prompt-length case is already covered by code that prevents same-model retries. The remaining misleading rate-limit guidance may need a separate fix, but the requested retry regression could not be established on this checkout. Dependencies are absent and the workspace is read-only, so no tests or implementation were run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ At main 8620e909, the reported HTTP 400 no longer triggers same-model retries: a
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #159184 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,7 @@ At main 8620e909, the reported HTTP 400 no longer triggers same-model retries: a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159184 | fix_needed | planned | canonical | Repair the remaining misleading user copy while preserving the existing no-retry behavior and general rate-limit guidance. |
-| cluster:issue-openclaw-openclaw-159184 | build_fix_artifact | blocked |  | The proposed fix needs a writable checkout with dependencies and a demonstrated failing copy regression. |
+| #159184 | keep_canonical | planned | canonical | Keep the issue open for triage of the remaining user guidance. The job requires stopping if the reported retry defect cannot be reproduced on latest main. |
 
 ## Needs Human
 
