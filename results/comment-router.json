@@ -2,53 +2,6 @@
   "updated_at": "2026-09-27T15:13:22.551Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:141548:5854378084:2026-09-27T08:52:59Z:re_review",
-      "comment_id": "5854378084",
-      "comment_version_key": "5854378084:2026-09-27T08:52:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141548#issuecomment-5854378084",
-      "comment_created_at": "2026-09-27T08:52:59Z",
-      "comment_updated_at": "2026-09-27T08:52:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141548,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T08:56:48.638Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-automations-enabled-default",
-        "head_sha": "57edde0c30b5d537dc30ebcba9e3795d3505b489",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159066:5848550169:2026-09-27T08:56:03Z:clawsweeper_auto_repair",
       "comment_id": "5848550169",
       "comment_version_key": "5848550169:2026-09-27T08:56:03Z",
@@ -33938,6 +33891,39 @@
       "status": "skipped",
       "processed_at": "2026-09-27T15:13:20.476Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155526:5772393150:2026-09-27T15:06:03Z:clawsweeper_needs_human",
+      "comment_id": "5772393150",
+      "comment_version_key": "5772393150:2026-09-27T15:06:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155526#issuecomment-5772393150",
+      "comment_created_at": "2026-09-22T06:54:54Z",
+      "comment_updated_at": "2026-09-27T15:06:03Z",
+      "comment_body_sha256": "46acda3a1ce957910b30ca5eeda39e9fc1deef0fba3bcac2e939a23fc82cecea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body still closes https://github.com/openclaw/openclaw/issues/153674, although the documented deep-config Doctor path continues to throw at structuredClone before this walker r... (sha=3ea99cf511083f74a618be3fab192116770a02f5)",
+      "expected_head_sha": "3ea99cf511083f74a618be3fab192116770a02f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T15:13:21.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/rewritemodelrefs-stack-safe-153674",
+        "head_sha": "3ea99cf511083f74a618be3fab192116770a02f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158460:5841293290:2026-09-27T15:08:25Z:clawsweeper_auto_repair",
