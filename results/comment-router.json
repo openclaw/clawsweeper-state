@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-27T19:41:23.302Z",
+  "updated_at": "2026-09-27T19:41:25.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159658:5856372570:2026-09-27T13:42:06Z:re_review",
-      "comment_id": "5856372570",
-      "comment_version_key": "5856372570:2026-09-27T13:42:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159658#issuecomment-5856372570",
-      "comment_created_at": "2026-09-27T13:42:06Z",
-      "comment_updated_at": "2026-09-27T13:42:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159658,
-      "author": "Gabrielnkl",
-      "author_id": 18104911,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T14:00:33.216Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/safe-regex-mid-window",
-        "head_sha": "34f038900fa71b9b9901b8a47db273e5454843f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159632:5856411902:2026-09-27T13:47:22Z:re_review",
       "comment_id": "5856411902",
@@ -33823,6 +33776,39 @@
         "kind": "pull_request",
         "branch": "fix/live2-reset-sessions-sqlite",
         "head_sha": "b7eb9d3da935278a97bf356fb4326c832a13b025",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159811:5858440230:2026-09-27T19:33:18Z:clawsweeper_needs_human",
+      "comment_id": "5858440230",
+      "comment_version_key": "5858440230:2026-09-27T19:33:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159811#issuecomment-5858440230",
+      "comment_created_at": "2026-09-27T18:11:41Z",
+      "comment_updated_at": "2026-09-27T19:33:18Z",
+      "comment_body_sha256": "f74cc1dfdfdd496ca92103f234e5a688966cc058bba5bad9010a39880ae938b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final head lacks an observed production-boundary result showing that an earlier durable event still wakes the drain when a later event in the same batch fails; a missed wakeup cou... (sha=b1f8361545d96fc0d7536a5274cd8ffafc7e75d2)",
+      "expected_head_sha": "b1f8361545d96fc0d7536a5274cd8ffafc7e75d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T19:41:25.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l128-channels-core3",
+        "head_sha": "2ff8a830630738dffd87e1b06a3a3cb7e9f71879",
         "cluster_id": null,
         "job_path": null
       }
