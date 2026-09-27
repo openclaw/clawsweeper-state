@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-27T18:33:02.512Z",
+  "updated_at": "2026-09-27T18:35:05.796Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159645:5855833652:2026-09-27T12:30:46Z:clawsweeper_needs_human",
-      "comment_id": "5855833652",
-      "comment_version_key": "5855833652:2026-09-27T12:30:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159645#issuecomment-5855833652",
-      "comment_created_at": "2026-09-27T12:30:46Z",
-      "comment_updated_at": "2026-09-27T12:30:46Z",
-      "comment_body_sha256": "557ac59dbe71cc858eb229a3c7847b31dd6776d1d2d83158f0eb692cfb095a3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159645,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve review confidence** - ClawSweeper must reach high confidence before merge readiness is known. (sha=5722ecb211376f63cf22ee5785b969c2f27fcf29)",
-      "expected_head_sha": "5722ecb211376f63cf22ee5785b969c2f27fcf29",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T12:31:34.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tcr/land-d067-1790508720",
-        "head_sha": "5722ecb211376f63cf22ee5785b969c2f27fcf29",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:845:5855775787:2026-09-27T12:30:44Z:clawsweeper_needs_human",
       "comment_id": "5855775787",
@@ -33838,6 +33805,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1506:5858601523:2026-09-27T18:33:31Z:re_review",
+      "comment_id": "5858601523",
+      "comment_version_key": "5858601523:2026-09-27T18:33:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1506#issuecomment-5858601523",
+      "comment_created_at": "2026-09-27T18:33:31Z",
+      "comment_updated_at": "2026-09-27T18:33:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1506,
+      "author": "shanselman",
+      "author_id": 2892,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-27T18:35:03.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f078-wildcard-exec-policy",
+        "head_sha": "40cc5e61be4c945e63784a72639eebaa50bcad24",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
