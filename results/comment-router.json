@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T01:20:57.361Z",
+  "updated_at": "2026-09-28T01:21:08.594Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159846:5858962840:2026-09-27T19:16:56Z:clawsweeper_needs_human",
-      "comment_id": "5858962840",
-      "comment_version_key": "5858962840:2026-09-27T19:16:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159846#issuecomment-5858962840",
-      "comment_created_at": "2026-09-27T19:16:56Z",
-      "comment_updated_at": "2026-09-27T19:16:56Z",
-      "comment_body_sha256": "d1d5537603858d34a726e74f9ae0bd85b5e05c0617ffaa55a0d91c45307659a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159846,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=71dfaa529cb03cc1b23a9542f95580a80b9ec75f)",
-      "expected_head_sha": "71dfaa529cb03cc1b23a9542f95580a80b9ec75f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T19:19:34.174Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sdk-reclamation-teardown-guard",
-        "head_sha": "71dfaa529cb03cc1b23a9542f95580a80b9ec75f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159844:5858965627:2026-09-27T19:17:09Z:clawsweeper_auto_repair",
       "comment_id": "5858965627",
@@ -33661,6 +33628,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T01:20:57.360Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159347:5852114160:2026-09-28T01:13:16Z:clawsweeper_needs_human",
+      "comment_id": "5852114160",
+      "comment_version_key": "5852114160:2026-09-28T01:13:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159347#issuecomment-5852114160",
+      "comment_created_at": "2026-09-27T02:55:38Z",
+      "comment_updated_at": "2026-09-28T01:13:16Z",
+      "comment_body_sha256": "8dc288c06e193231c3caf422b6c42a4c69ddb91837bd92d59a2536935094c457",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159347,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Windows driver can terminate captured PIDs and launch a Scheduled Task, but the cited Wind...; Review finding: [P1] Bind each captured child to the original task — src/daemon/schtasks-process.ts:333-337 - [P1] Verify the captured task before an uninspected /Run — src/daemon... (sha=8708d59347fd035c4cb7a67986ef33e910357c6d)",
+      "expected_head_sha": "8708d59347fd035c4cb7a67986ef33e910357c6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T01:21:08.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-windows-stop-sqlite-ioerr",
+        "head_sha": "8708d59347fd035c4cb7a67986ef33e910357c6d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
