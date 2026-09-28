@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:42:59.443Z",
+  "updated_at": "2026-09-28T17:43:01.091Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160183:5864409810:2026-09-28T13:04:18Z:clawsweeper_needs_human",
-      "comment_id": "5864409810",
-      "comment_version_key": "5864409810:2026-09-28T13:04:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160183#issuecomment-5864409810",
-      "comment_created_at": "2026-09-28T06:05:54Z",
-      "comment_updated_at": "2026-09-28T13:04:18Z",
-      "comment_body_sha256": "d514352cf27c141a083a35d26ec3389b2c53761a7c60a2877db15b427020702f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160183,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - In the two complete paired loads, event-loop p99 rose from about 60 ms to 71–80 ms and stalls over 100 ms rose from 3–4 to 7–11; a Gateway owner has not explicitly accepted the effect... (sha=726fc1742f3b97562f399d2df81fab09cd6203f2)",
-      "expected_head_sha": "726fc1742f3b97562f399d2df81fab09cd6203f2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T13:25:43.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/l162-store-lane-holds",
-        "head_sha": "726fc1742f3b97562f399d2df81fab09cd6203f2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160189:5864470743:2026-09-28T13:14:52Z:clawsweeper_needs_human",
       "comment_id": "5864470743",
@@ -33591,6 +33558,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160233:5875372545:2026-09-28T17:42:08Z:re_review",
+      "comment_id": "5875372545",
+      "comment_version_key": "5875372545:2026-09-28T17:42:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160233#issuecomment-5875372545",
+      "comment_created_at": "2026-09-28T17:42:08Z",
+      "comment_updated_at": "2026-09-28T17:42:08Z",
+      "comment_body_sha256": "236d8ebf7ff2e8f21d1b09edeb3808fb66b9b88395a153c67b7812fa744befd4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160233,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T17:42:59.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigate-mobile-webui-stop-button-issue",
+        "head_sha": "88e7400ea901d90888e60fc412a05dc88e875251",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
