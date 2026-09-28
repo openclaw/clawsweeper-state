@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:33:44.731Z",
+  "updated_at": "2026-09-28T16:34:03.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160224:5869394685:2026-09-28T11:59:18Z:re_review",
-      "comment_id": "5869394685",
-      "comment_version_key": "5869394685:2026-09-28T11:59:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160224#issuecomment-5869394685",
-      "comment_created_at": "2026-09-28T11:59:18Z",
-      "comment_updated_at": "2026-09-28T11:59:18Z",
-      "comment_body_sha256": "4b39e38112360e6c08d59e9ca3147a26b7d91dcd53a7f16d0926f79e3b6cdea5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160224,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:00:13.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-npm-plugins",
-        "head_sha": "9c992d607f5bccd70af857780eda9fd8327e2b66",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160018:5869398052:2026-09-28T11:59:33Z:re_review",
       "comment_id": "5869398052",
@@ -33514,6 +33467,39 @@
         "kind": "pull_request",
         "branch": "fix/f104-dashboard-owned-ssh-forward",
         "head_sha": "d6b8ec72c3d2551a9bcb6beeb6dfb2a850ad6e98",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160546:5874299802:2026-09-28T16:32:53Z:clawsweeper_needs_human",
+      "comment_id": "5874299802",
+      "comment_version_key": "5874299802:2026-09-28T16:32:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160546#issuecomment-5874299802",
+      "comment_created_at": "2026-09-28T16:32:53Z",
+      "comment_updated_at": "2026-09-28T16:32:53Z",
+      "comment_body_sha256": "d6a629f0a87aa0ac34a8887b04c7060498dc5e69a5cd20e418dcb23f0efb237a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160546,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic update refresh can overwrite cached plugin-provided nodes completions with core-only scripts. The manual regeneration path is documented, but the supplied evidence does not... (sha=5462fe952428bccb818487836dbd2d87d16893ca)",
+      "expected_head_sha": "5462fe952428bccb818487836dbd2d87d16893ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T16:34:03.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/update-repair-latency",
+        "head_sha": "5462fe952428bccb818487836dbd2d87d16893ca",
         "cluster_id": null,
         "job_path": null
       }
