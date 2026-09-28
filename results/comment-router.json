@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:12:43.512Z",
+  "updated_at": "2026-09-28T16:12:46.518Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159752:5857327844:2026-09-28T11:47:58Z:clawsweeper_needs_human",
-      "comment_id": "5857327844",
-      "comment_version_key": "5857327844:2026-09-28T11:47:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159752#issuecomment-5857327844",
-      "comment_created_at": "2026-09-27T15:41:52Z",
-      "comment_updated_at": "2026-09-28T11:47:58Z",
-      "comment_body_sha256": "d607c6e5898531a9504d9877f0517c3532c00b087b4cba96da0c16bf7865d96c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159752,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head Stop/restart evidence has not recorded whether the worker edit reached the accepted workspace and the recovered turn claim was released, leaving the combined recovery r... (sha=4f4f6536b214206a3a4b6b64f5640ad3a6e15862)",
-      "expected_head_sha": "4f4f6536b214206a3a4b6b64f5640ad3a6e15862",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T11:49:05.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l122-gateway-methods-workers",
-        "head_sha": "4f4f6536b214206a3a4b6b64f5640ad3a6e15862",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160403:5869225785:2026-09-28T11:47:58Z:clawsweeper_needs_human",
       "comment_id": "5869225785",
@@ -33459,6 +33426,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160392:5873950809:2026-09-28T16:11:31Z:re_review",
+      "comment_id": "5873950809",
+      "comment_version_key": "5873950809:2026-09-28T16:11:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160392#issuecomment-5873950809",
+      "comment_created_at": "2026-09-28T16:11:31Z",
+      "comment_updated_at": "2026-09-28T16:11:31Z",
+      "comment_body_sha256": "5ea01ea553a2cdf5968772fa992601faa5085eed3d5a71107df360660104a8c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160392,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T16:12:44.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/session-progress-and-blocker-review",
+        "head_sha": "5b31a0945f67a4da24f8ffab7333dd9b6d7f6d94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
