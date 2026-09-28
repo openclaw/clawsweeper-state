@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:02:31.302Z",
+  "updated_at": "2026-09-28T14:02:50.827Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160308:5866802386:2026-09-28T09:03:31Z:clawsweeper_auto_repair",
-      "comment_id": "5866802386",
-      "comment_version_key": "5866802386:2026-09-28T09:03:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160308#issuecomment-5866802386",
-      "comment_created_at": "2026-09-28T09:03:31Z",
-      "comment_updated_at": "2026-09-28T09:03:31Z",
-      "comment_body_sha256": "f513235a94659fc4706218bf24a439530c8ddce665282e7609a18b2f07cc3d90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160308,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d33ccee0f6cec3cdb37be1d1de3bad0dd4442bfc)",
-      "expected_head_sha": "d33ccee0f6cec3cdb37be1d1de3bad0dd4442bfc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T09:04:27.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tcr/land-d084-1790582035",
-        "head_sha": "d33ccee0f6cec3cdb37be1d1de3bad0dd4442bfc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127382:5374153525:2026-09-28T08:56:47Z:clawsweeper_needs_human",
       "comment_id": "5374153525",
@@ -33967,6 +33934,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152052:5734537592:2026-09-28T14:01:52Z:clawsweeper_needs_human",
+      "comment_id": "5734537592",
+      "comment_version_key": "5734537592:2026-09-28T14:01:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152052#issuecomment-5734537592",
+      "comment_created_at": "2026-09-18T18:36:59Z",
+      "comment_updated_at": "2026-09-28T14:01:52Z",
+      "comment_body_sha256": "d2ac4a294d3a56989d1cbc41e61e7020f9f5e1273c8b49047581d41793223efe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152052,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this head as conflicting with main. Reconcile the newer shared config-commit path and verify that explicit removal intent still reaches the writer before merge. (sha=9ca97086acf19482c854c13589ba350af6642dfa)",
+      "expected_head_sha": "9ca97086acf19482c854c13589ba350af6642dfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T14:02:50.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-patch-explicit-agent-removal",
+        "head_sha": "9ca97086acf19482c854c13589ba350af6642dfa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
