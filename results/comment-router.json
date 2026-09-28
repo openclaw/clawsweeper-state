@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:35:56.063Z",
+  "updated_at": "2026-09-28T08:35:56.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160014:5863009005:2026-09-28T03:51:02Z:re_review",
-      "comment_id": "5863009005",
-      "comment_version_key": "5863009005:2026-09-28T03:51:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160014#issuecomment-5863009005",
-      "comment_created_at": "2026-09-28T03:51:02Z",
-      "comment_updated_at": "2026-09-28T03:51:02Z",
-      "comment_body_sha256": "667ad8f2c76339bc3ee09442a0547f3fe807559cd83d387ed17998b9cecc7f37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160014,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:51:52.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/semantic-memory-ci-backend",
-        "head_sha": "80302cb9d32cb655401bca1c46460548727761db",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158307:5851599100:2026-09-27T01:24:13Z:re_review",
       "comment_id": "5851599100",
@@ -33556,6 +33509,39 @@
         "kind": "pull_request",
         "branch": "fix/frv-drop-target-ref",
         "head_sha": "76d63d7414f9e0d6cad0d8eff592e53f40e6cb6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:752:5865910903:2026-09-28T08:29:49Z:clawsweeper_needs_human",
+      "comment_id": "5865910903",
+      "comment_version_key": "5865910903:2026-09-28T08:29:49Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/752#issuecomment-5865910903",
+      "comment_created_at": "2026-09-28T08:03:35Z",
+      "comment_updated_at": "2026-09-28T08:29:49Z",
+      "comment_body_sha256": "0c3c5b0528cd50fdef1458d98026e511cc8f76e3f02c6b21c613443275b465a0",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Publish require-mode guarantees with their implementations (P1)** - Current main still dispatches removal to pathname unlink/rmdir, ordinary mkdir to pathname fs.mkdir, overwrite move to pathname fs.rename, and...; Review finding: [P1] Publish require-mode guarantees with their implementations — docs/security-model.md:251-254 - [high] Unsupported confinement claim — docs/security-model.md:251 (sha=3842b73012c8e08fb32f8286aaaf9a4a2a8ecfc0)",
+      "expected_head_sha": "3842b73012c8e08fb32f8286aaaf9a4a2a8ecfc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:35:56.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/require-harden-docs-20260927",
+        "head_sha": "3842b73012c8e08fb32f8286aaaf9a4a2a8ecfc0",
         "cluster_id": null,
         "job_path": null
       }
