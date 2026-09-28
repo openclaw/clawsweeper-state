@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:44:12.580Z",
+  "updated_at": "2026-09-28T03:44:18.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159844:5858965627:2026-09-27T21:06:03Z:clawsweeper_needs_human",
-      "comment_id": "5858965627",
-      "comment_version_key": "5858965627:2026-09-27T21:06:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159844#issuecomment-5858965627",
-      "comment_created_at": "2026-09-27T19:17:09Z",
-      "comment_updated_at": "2026-09-27T21:06:03Z",
-      "comment_body_sha256": "e367b3da9d2f119c4dbf78fdeef55d81149a9b9908e6e530a620f253eed723f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159844,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact latest package has not been replayed on the published 2026.9.6 host through final Bot API reply delivery. The earlier package returned a durable acknowledgment and then fail... (sha=cac6c76ec652eae4f1aee411e6ea80cdb2e5a7b4)",
-      "expected_head_sha": "cac6c76ec652eae4f1aee411e6ea80cdb2e5a7b4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:33:06.004Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/telegram-host-floor-20260927",
-        "head_sha": "3fa57d7ac0222ed8e3c7f5c1870dd6bd81815943",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159851:5859074237:2026-09-27T21:04:53Z:clawsweeper_auto_repair",
       "comment_id": "5859074237",
@@ -33621,6 +33588,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159263:5862930628:2026-09-28T03:42:51Z:re_review",
+      "comment_id": "5862930628",
+      "comment_version_key": "5862930628:2026-09-28T03:42:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159263#issuecomment-5862930628",
+      "comment_created_at": "2026-09-28T03:42:51Z",
+      "comment_updated_at": "2026-09-28T03:42:51Z",
+      "comment_body_sha256": "96f4569254f475704c0c665aaa9a79968de83b4c09901bcf74c884a51d1bd425",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159263,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:44:17.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/prototype-grouped-typing",
+        "head_sha": "cbc91cc95d24b698d8f2a8a1b58e9dfd53f62ead",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
