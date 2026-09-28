@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-444"
-mode: "plan"
-run_id: "36382611301"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36382611301"
-head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-28T05:39:05.325Z"
-canonical: "#444"
-canonical_issue: "#444"
+mode: "autonomous"
+run_id: "36388777723"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36388777723"
+head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-28T06:58:21.864Z"
+canonical: "https://github.com/openclaw/wacli/issues/444"
+canonical_issue: "https://github.com/openclaw/wacli/issues/444"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36382611301](https://github.com/openclaw/clawsweeper/actions/runs/36382611301)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36388777723](https://github.com/openclaw/clawsweeper/actions/runs/36388777723)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #444
+Canonical: https://github.com/openclaw/wacli/issues/444
 
 ## Summary
 
-Issue #444 remains open and viable on main b87e6178. Mapped 1:1 backfill requests use LID on both anchor attempts, matching the reported timeout. Plan a narrow PN fallback, regression tests, documentation, and an implementation PR. No code or GitHub state was changed.
+Issue #444 remains reproducible in the request path on main b87e617: mapped 1:1 backfill sends both anchor attempts to the LID and has no phone-JID fallback. A narrow fix is specified, but this worker's read-only filesystem prevents adding the regression test, editing the code, running the required gate, or preparing a PR branch.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Issue #444 remains open and viable on main b87e6178. Mapped 1:1 backfill request
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #373 | keep_closed | skipped | related | Historical context; no action on the closed PR. |
-| #427 | keep_closed | skipped | related | Historical cause and credit context; no action on the closed PR. |
-| #444 | build_fix_artifact | planned | canonical | A bounded fallback can address the reported regression within backfill routing. |
+| #444 | fix_needed | planned | canonical | The reported PN-responsive, LID-silent 1:1 case still has no fallback. |
+| cluster:issue-openclaw-wacli-444 | build_fix_artifact | planned |  |  |
+| cluster:issue-openclaw-wacli-444 | open_fix_pr | blocked |  | A writable checkout is required to implement and validate the branch before a PR can be opened. |
 
 ## Needs Human
 
