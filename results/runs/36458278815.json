@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1493",
+  "mode": "autonomous",
+  "run_id": "36458278815",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36458278815",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1493.md",
+  "published_at": "2026-09-28T17:56:27.268Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1493",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1493",
+  "canonical_pr": null,
+  "summary": "Issue #1493 remains reproducible at source level on main 3331b5e388762412bc039c653adf88d7106fdf67. A narrow chat-media fix is warranted. The checkout is read-only, so no code changed and no validation ran; the fix artifact is for the executor.",
+  "actions": [
+    {
+      "target": "#1493",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1493",
+      "candidate_fix": null,
+      "reason": "Carry structured user-media metadata through live and history projection so the existing signature-based echo reconciliation can match the image row."
+    },
+    {
+      "target": "#1119",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this historical PR to central OpenClaw security handling. The #1493 fix must stay within chat presentation and echo correlation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1493",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1493",
+      "candidate_fix": null,
+      "reason": "The executor can implement and validate the scoped fix on clawsweeper/issue-openclaw-openclaw-windows-node-1493."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
