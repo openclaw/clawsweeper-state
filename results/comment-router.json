@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:33:53.446Z",
+  "updated_at": "2026-09-28T12:33:59.819Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160187:5865600295:2026-09-28T07:42:13Z:re_review",
-      "comment_id": "5865600295",
-      "comment_version_key": "5865600295:2026-09-28T07:42:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160187#issuecomment-5865600295",
-      "comment_created_at": "2026-09-28T07:42:13Z",
-      "comment_updated_at": "2026-09-28T07:42:13Z",
-      "comment_body_sha256": "48b3313837e0deafd08f573241d6c08fc814fa3204aab84d417240cf84cdefd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160187,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T07:43:21.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/canonical-extension-inventory",
-        "head_sha": "f9cc6bf9542498c6587afbdfd50ef401039405df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160212:5864869845:2026-09-28T07:42:45Z:clawsweeper_needs_human",
       "comment_id": "5864869845",
@@ -34033,6 +33986,39 @@
         "kind": "pull_request",
         "branch": "fix/r97-forward-16",
         "head_sha": "fe58739c8c3753e8083c5beb812c0ba4d87b4392",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160423:5869498258:2026-09-28T12:32:54Z:clawsweeper_needs_human",
+      "comment_id": "5869498258",
+      "comment_version_key": "5869498258:2026-09-28T12:32:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160423#issuecomment-5869498258",
+      "comment_created_at": "2026-09-28T12:06:47Z",
+      "comment_updated_at": "2026-09-28T12:32:54Z",
+      "comment_body_sha256": "1a7205f53a29ed52cfb45abcf18ccfeb345f500ff527d1745bc164a0643b72e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed video and music callbacks are exercised by injected-provider fallback tests, but the captured PR body shows no after-fix generation... (sha=47b6b1c6a84f69bd254f3d93c46f30f33e85d849)",
+      "expected_head_sha": "47b6b1c6a84f69bd254f3d93c46f30f33e85d849",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:33:59.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-generation-failure-log-level",
+        "head_sha": "47b6b1c6a84f69bd254f3d93c46f30f33e85d849",
         "cluster_id": null,
         "job_path": null
       }
