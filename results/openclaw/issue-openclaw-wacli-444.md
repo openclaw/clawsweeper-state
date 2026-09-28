@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-444"
-mode: "autonomous"
-run_id: "36388777723"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36388777723"
+mode: "plan"
+run_id: "36389645216"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36389645216"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-28T06:58:21.864Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-28T07:07:33.591Z"
 canonical: "https://github.com/openclaw/wacli/issues/444"
 canonical_issue: "https://github.com/openclaw/wacli/issues/444"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36388777723](https://github.com/openclaw/clawsweeper/actions/runs/36388777723)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36389645216](https://github.com/openclaw/clawsweeper/actions/runs/36389645216)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/wacli/issues/444
 
 ## Summary
 
-Issue #444 remains reproducible in the request path on main b87e617: mapped 1:1 backfill sends both anchor attempts to the LID and has no phone-JID fallback. A narrow fix is specified, but this worker's read-only filesystem prevents adding the regression test, editing the code, running the required gate, or preparing a PR branch.
+Issue #444 remains reproducible in the checked-out main at b87e6178: mapped 1:1 backfill requests use the LID, and a timeout retries only with a different anchor. Plan a bounded phone-JID fallback and regression tests. No files or GitHub items were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Issue #444 remains reproducible in the request path on main b87e617: mapped 1:1 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #444 | fix_needed | planned | canonical | The reported PN-responsive, LID-silent 1:1 case still has no fallback. |
-| cluster:issue-openclaw-wacli-444 | build_fix_artifact | planned |  |  |
-| cluster:issue-openclaw-wacli-444 | open_fix_pr | blocked |  | A writable checkout is required to implement and validate the branch before a PR can be opened. |
+| https://github.com/openclaw/wacli/issues/444 | fix_needed | planned | canonical | Implement the issue on the designated branch; closure and merge are blocked by the job. |
+| https://github.com/openclaw/wacli/pull/373 | keep_closed | skipped | related | Historical context only. |
+| https://github.com/openclaw/wacli/pull/427 | keep_closed | skipped | related | Historical context only. |
 
 ## Needs Human
 
