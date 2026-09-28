@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:45:39.910Z",
+  "updated_at": "2026-09-28T22:45:52.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159947:5874856976:2026-09-28T17:08:54Z:re_review",
-      "comment_id": "5874856976",
-      "comment_version_key": "5874856976:2026-09-28T17:08:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5874856976",
-      "comment_created_at": "2026-09-28T17:08:54Z",
-      "comment_updated_at": "2026-09-28T17:08:54Z",
-      "comment_body_sha256": "a4f8c74e310d8644edb6e132834197c33cd9fa076b1b58a1eafc1adcadf161a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159947,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:10:00.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-voice-lab",
-        "head_sha": "57195396e163a9dce04bb7dca13fb0eae05d35a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160400:5869251774:2026-09-28T17:09:18Z:clawsweeper_needs_human",
       "comment_id": "5869251774",
@@ -33974,6 +33927,39 @@
         "kind": "pull_request",
         "branch": "codex/compaction-hydration-current-main-20260928",
         "head_sha": "957d335fec64f78f27dd7514d2c3db13ee6c0ce9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154067:5752623521:2026-09-28T22:39:52Z:clawsweeper_needs_human",
+      "comment_id": "5752623521",
+      "comment_version_key": "5752623521:2026-09-28T22:39:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154067#issuecomment-5752623521",
+      "comment_created_at": "2026-09-20T20:59:57Z",
+      "comment_updated_at": "2026-09-28T22:39:52Z",
+      "comment_body_sha256": "840c06d2e45d5296ad75be90ed4e2963ce52d7ccf7f0f0ff27a01b0545957243",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports real ledger-to-client-to-Worker loopback HTTP effects, including no POST after an...; Review finding: [P2] Keep config loading out of the SQLite worker import graph — src/infra/update-result-telemetry.ts:2 - [medium] Approve the new default-on disclosure boundary —... (sha=2d210c69fddce8cece23dadac118b9e6edf556fb)",
+      "expected_head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T22:45:52.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/update-outcome-pings-pr-20260919",
+        "head_sha": "2d210c69fddce8cece23dadac118b9e6edf556fb",
         "cluster_id": null,
         "job_path": null
       }
