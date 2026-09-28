@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:38:23.319Z",
+  "updated_at": "2026-09-28T12:38:38.175Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:749:5865295159:2026-09-28T07:53:45Z:clawsweeper_needs_human",
-      "comment_id": "5865295159",
-      "comment_version_key": "5865295159:2026-09-28T07:53:45Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/749#issuecomment-5865295159",
-      "comment_created_at": "2026-09-28T07:19:23Z",
-      "comment_updated_at": "2026-09-28T07:53:45Z",
-      "comment_body_sha256": "be1b394a872d55af29503ac472b7395aceda5c28e62b4c6f432c6fdc7cf7b9a6",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 749,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Wait for the author to confirm handoff readiness after the planned exact-head Windows rounds before merging. (sha=c2fcc95fd9ccd5c26047418534129b0501cc1886)",
-      "expected_head_sha": "c2fcc95fd9ccd5c26047418534129b0501cc1886",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T07:54:38.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/windows-semantics-flush-stalls",
-        "head_sha": "c2fcc95fd9ccd5c26047418534129b0501cc1886",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118361:5161527102:2026-09-05T20:42:35Z:clawsweeper_auto_repair",
       "comment_id": "5161527102",
@@ -33956,6 +33923,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T12:38:23.319Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159999:5861553474:2026-09-28T12:34:08Z:clawsweeper_needs_human",
+      "comment_id": "5861553474",
+      "comment_version_key": "5861553474:2026-09-28T12:34:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159999#issuecomment-5861553474",
+      "comment_created_at": "2026-09-28T01:07:56Z",
+      "comment_updated_at": "2026-09-28T12:34:08Z",
+      "comment_body_sha256": "ec8ea74b31915be9a41c05d4ac2c93688311f21245fed9cb50d7dbf1b2e2bf71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159999,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-main OpenResponses run wrapper conflicts with this branch. Resolving it with the branch’s simpler wrapper would omit main’s durable previous_response_id write before a suc... (sha=040693396af03031d4bbb39ce0d7422e89bfd3e0)",
+      "expected_head_sha": "040693396af03031d4bbb39ce0d7422e89bfd3e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:38:38.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l132-gateway-core",
+        "head_sha": "040693396af03031d4bbb39ce0d7422e89bfd3e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
