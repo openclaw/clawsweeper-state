@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T11:39:07.707Z",
+  "updated_at": "2026-09-28T11:33:02.308Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160197:5864777385:2026-09-28T06:38:31Z:clawsweeper_needs_human",
+      "comment_id": "5864777385",
+      "comment_version_key": "5864777385:2026-09-28T06:38:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160197#issuecomment-5864777385",
+      "comment_created_at": "2026-09-28T06:38:31Z",
+      "comment_updated_at": "2026-09-28T06:38:31Z",
+      "comment_body_sha256": "6c94c02b1da3e4d5a5419d16a7841a0e94c04f6e8615bd8ed3ee840b10e7f17f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Confirm the comparator failed while rebuilding the broken base, then handle the red gate through the repository's native broken-main landing workflow for this exact head. (sha=68aa16801117bccd4bb372ebae438ba76fc9e3f3)",
+      "expected_head_sha": "68aa16801117bccd4bb372ebae438ba76fc9e3f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:39:39.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/repair-main-duplicate-chat-attachment-export",
+        "head_sha": "68aa16801117bccd4bb372ebae438ba76fc9e3f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159297:5851582130:2026-09-28T06:35:46Z:clawsweeper_needs_human",
       "comment_id": "5851582130",
@@ -33747,53 +33780,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160176:5869081659:2026-09-28T11:37:31Z:re_review",
-      "comment_id": "5869081659",
-      "comment_version_key": "5869081659:2026-09-28T11:37:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160176#issuecomment-5869081659",
-      "comment_created_at": "2026-09-28T11:37:31Z",
-      "comment_updated_at": "2026-09-28T11:37:31Z",
-      "comment_body_sha256": "e52db096883097dbcfa7a622a9bb0ef0e643b6f8e8a9cb84f51c2a349d0f5b6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160176,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T11:39:06.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/artifact-retention-recording",
-        "head_sha": "5cbe37bc6c6fceb9f52845a95536e23cc2d7115e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
