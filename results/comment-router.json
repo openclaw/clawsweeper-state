@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T09:26:38.689Z",
+  "updated_at": "2026-09-28T09:26:44.283Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5860319056:2026-09-27T22:13:38Z:re_review",
-      "comment_id": "5860319056",
-      "comment_version_key": "5860319056:2026-09-27T22:13:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5860319056",
-      "comment_created_at": "2026-09-27T22:13:38Z",
-      "comment_updated_at": "2026-09-27T22:13:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T04:42:38.762Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1446:5734373005:2026-09-28T04:43:38Z:clawsweeper_needs_human",
       "comment_id": "5734373005",
@@ -33377,6 +33350,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159923:5860412210:2026-09-28T09:25:42Z:clawsweeper_needs_human",
+      "comment_id": "5860412210",
+      "comment_version_key": "5860412210:2026-09-28T09:25:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159923#issuecomment-5860412210",
+      "comment_created_at": "2026-09-27T22:27:05Z",
+      "comment_updated_at": "2026-09-28T09:25:42Z",
+      "comment_body_sha256": "a3f5a3796b341b6b78a1ed8cabaea1844f2af4873a9f49b74c5f93dc70169a05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm authority to displace a human controller** - The action closes an active human viewer using the agent's existing computer grant. The PR body asserts that this was requested, but...; Review finding: [medium] Confirm authority to displace a human controller — src/gateway/worker-environments/computer-transport.ts:571 (sha=f2098f0708bb9a7f70279fc483ae3c542a117560)",
+      "expected_head_sha": "f2098f0708bb9a7f70279fc483ae3c542a117560",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T09:26:44.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/enable-agent-takeover-mode",
+        "head_sha": "f2098f0708bb9a7f70279fc483ae3c542a117560",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
