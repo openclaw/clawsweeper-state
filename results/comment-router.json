@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T10:23:31.553Z",
+  "updated_at": "2026-09-28T10:23:33.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5697449557:2026-09-16T12:30:43Z:re_review",
-      "comment_id": "5697449557",
-      "comment_version_key": "5697449557:2026-09-16T12:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5697449557",
-      "comment_created_at": "2026-09-16T12:30:43Z",
-      "comment_updated_at": "2026-09-16T12:30:43Z",
-      "comment_body_sha256": "422881e6cb10de221d3c28af291ed987bb328ccb8b1cb864d1365b6211454dc9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T05:44:37.283Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5700158294:2026-09-16T15:35:21Z:re_review",
       "comment_id": "5700158294",
@@ -33545,6 +33518,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T10:23:31.553Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160367:5868043577:2026-09-28T10:22:37Z:clawsweeper_needs_human",
+      "comment_id": "5868043577",
+      "comment_version_key": "5868043577:2026-09-28T10:22:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160367#issuecomment-5868043577",
+      "comment_created_at": "2026-09-28T10:22:37Z",
+      "comment_updated_at": "2026-09-28T10:22:37Z",
+      "comment_body_sha256": "562c84bfceef304d56aa651964a7538e3d717e10b64b3556deef4a638e25ea20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160367,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed shared predicate receives Gateway session rows in the Control UI, but the submitted after-fix evidence consists of constructed rows... (sha=ba162f846936bc92bd6fa229ecd189cd4b3e110f)",
+      "expected_head_sha": "ba162f846936bc92bd6fa229ecd189cd4b3e110f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T10:23:33.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-160356-hide-heartbeat-sessions",
+        "head_sha": "ba162f846936bc92bd6fa229ecd189cd4b3e110f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
