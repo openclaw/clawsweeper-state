@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:21:23.707Z",
+  "updated_at": "2026-09-28T07:22:20.268Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150549:5708227563:2026-09-28T02:17:05Z:clawsweeper_auto_repair",
-      "comment_id": "5708227563",
-      "comment_version_key": "5708227563:2026-09-28T02:17:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150549#issuecomment-5708227563",
-      "comment_created_at": "2026-09-17T03:56:14Z",
-      "comment_updated_at": "2026-09-28T02:17:05Z",
-      "comment_body_sha256": "5d51e6b3551c136eb10f50ffd7e011c1ba66418b19f13aab7250ed418f7eadf0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150549,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3da823ba778fd21701a2652e2795388b9fee4814)",
-      "expected_head_sha": "3da823ba778fd21701a2652e2795388b9fee4814",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T02:18:17.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/chat-reply-attribution-excerpt",
-        "head_sha": "3da823ba778fd21701a2652e2795388b9fee4814",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159503:5853707891:2026-09-28T02:14:32Z:clawsweeper_needs_human",
       "comment_id": "5853707891",
@@ -33562,6 +33529,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160228:5865320821:2026-09-28T07:21:28Z:re_review",
+      "comment_id": "5865320821",
+      "comment_version_key": "5865320821:2026-09-28T07:21:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160228#issuecomment-5865320821",
+      "comment_created_at": "2026-09-28T07:21:28Z",
+      "comment_updated_at": "2026-09-28T07:21:28Z",
+      "comment_body_sha256": "7f5edcffaa4b2eb46c03cd40270abb0c283b18c149595e89159dad5386c46f28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160228,
+      "author": "Bruce-Yii",
+      "author_id": 298228875,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added real behavior proof on windows. the generated wrapper is now driven with a real acp `initialize` json-rpc request: the installed npm 11.13.0 launches the installed @agentclientprotocol/codex-acp 1.12.0 and returns a real protocol response (`protocolversion: 1`) after the capture directory holding the captured adapter entry is deleted. the same run against main's `resolvenpmclipath()` fails with `spawn einval` and never reaches npm. head unchanged at 147378c57d30; paths redacted; measured single-worker wall time for the changed test file is 15.08s for 24 tests. `openclaw/ci-gate` passes",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T07:22:18.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160095-windows-npm-adapter-fallback",
+        "head_sha": "147378c57d30970d53eb08bb7ded6700c010ef21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
