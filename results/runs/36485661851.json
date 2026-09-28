@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160716",
+  "mode": "autonomous",
+  "run_id": "36485661851",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36485661851",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160716.md",
+  "published_at": "2026-09-28T22:08:43.193Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160716",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160716",
+  "canonical_pr": null,
+  "summary": "The reported failure remains plausible at main a46cde88785df6aa867e35f98aa5fabce6cd45e9, but this worker could not establish the required failing regression. The host has IPv6 enabled, and its sandbox rejects TCP binds with EPERM. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#160716",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160716",
+      "candidate_fix": null,
+      "reason": "The issue describes a narrow existing-behavior defect; implementation requires a failing regression on an IPv6-disabled host or an equivalent boundary fixture."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160716",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160716",
+      "candidate_fix": null,
+      "reason": "The job requires reproduction before code changes. Resume implementation in a writable environment that permits the TCP probe."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
