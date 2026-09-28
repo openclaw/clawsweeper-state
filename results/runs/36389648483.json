@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160149",
+  "mode": "plan",
+  "run_id": "36389648483",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36389648483",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160149.md",
+  "published_at": "2026-09-28T07:09:25.155Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160149",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160149",
+  "canonical_pr": null,
+  "summary": "The open issue describes a narrow residual compaction fallback bug on the supplied main SHA. Plan a regression through the registered hook, then a boundary-scoped repair and one fix PR. No test, code change, or GitHub mutation was performed in plan mode.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/160149",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "954322",
+      "candidate_fix": null,
+      "reason": "Keep the distinct residual report open while its fix is developed."
+    },
+    {
+      "target": "issue-openclaw-openclaw-160149",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "954322",
+      "candidate_fix": null,
+      "reason": "First prove the defect through CompactionProvider.summarize().messages, then repair range selection using the canonical session-context boundary."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/160149",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "954322",
+      "candidate_fix": null,
+      "reason": "Open or update the single PR only after the regression fails on base and the repaired branch passes focused validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

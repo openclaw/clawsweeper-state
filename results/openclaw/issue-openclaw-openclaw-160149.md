@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-160149"
-mode: "autonomous"
-run_id: "36382459506"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36382459506"
-head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-28T06:25:03.340Z"
+mode: "plan"
+run_id: "36389648483"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36389648483"
+head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-28T07:09:25.155Z"
 canonical: "https://github.com/openclaw/openclaw/issues/160149"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/160149"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36382459506](https://github.com/openclaw/clawsweeper/actions/runs/36382459506)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36389648483](https://github.com/openclaw/clawsweeper/actions/runs/36389648483)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/160149
 
 ## Summary
 
-Current main still has the reported range-selection defect. The checkout is read-only and has no installed dependencies, so the required registered-hook regression, repair, and validation could not be completed.
+The open issue describes a narrow residual compaction fallback bug on the supplied main SHA. Plan a regression through the registered hook, then a boundary-scoped repair and one fix PR. No test, code change, or GitHub mutation was performed in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Current main still has the reported range-selection defect. The checkout is read
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #160149 | fix_needed | planned | canonical | A narrow bug fix is warranted, conditional on first demonstrating the failure through the registered session_before_compact hook. |
-| cluster:issue-openclaw-openclaw-160149 | build_fix_artifact | blocked |  | Implementation and the required failing-before/passing-after hook proof require a writable checkout with dependencies. |
+| https://github.com/openclaw/openclaw/issues/160149 | fix_needed | planned | canonical | Keep the distinct residual report open while its fix is developed. |
+| issue-openclaw-openclaw-160149 | build_fix_artifact | planned |  | First prove the defect through CompactionProvider.summarize().messages, then repair range selection using the canonical session-context boundary. |
+| https://github.com/openclaw/openclaw/issues/160149 | open_fix_pr | planned |  | Open or update the single PR only after the regression fails on base and the repaired branch passes focused validation. |
 
 ## Needs Human
 
