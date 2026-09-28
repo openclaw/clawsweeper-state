@@ -2,12 +2,12 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-3660"
 mode: "autonomous"
-run_id: "36489034004"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36489034004"
+run_id: "36493543455"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36493543455"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "success"
-result_status: "needs_human"
-published_at: "2026-09-28T22:32:19.391Z"
+result_status: "blocked"
+published_at: "2026-09-28T22:43:54.982Z"
 canonical: "https://github.com/steipete/CodexBar/issues/3660"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/3660"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-steipete-codexbar-3660
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36489034004](https://github.com/openclaw/clawsweeper/actions/runs/36489034004)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36493543455](https://github.com/openclaw/clawsweeper/actions/runs/36493543455)
 
 Workflow conclusion: success
 
-Worker result: needs_human
+Worker result: blocked
 
 Canonical: https://github.com/steipete/CodexBar/issues/3660
 
 ## Summary
 
-The automatic-auth failure remains unverified after the Devin diagnostics and Chromium discovery changes on main. The reporter has not supplied a current reproduction that identifies the failing stage, so a focused implementation PR cannot be justified from these artifacts.
+No implementation PR is justified yet. The reporter confirmed that manual authentication works, while automatic authentication has not been retested after the Devin discovery and diagnostic changes reflected in current main. The remaining reported failure has no established cause or reproduction path.
 
 ## Impact
 
@@ -48,7 +48,7 @@ The automatic-auth failure remains unverified after the Devin diagnostics and Ch
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,8 @@ The automatic-auth failure remains unverified after the Devin diagnostics and Ch
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #3660 | needs_human | blocked | needs_human | A reporter retest on a build containing #3814 and #3883, with the selected Auth source, signed-in browser/profile, and exact current error, is needed to identify a specific failing stage before implementing a narrow fix. Do not request tokens or raw browser storage. |
+| #3660 | keep_canonical | planned | canonical | Keep the issue open for the exact current error, selected Auth source, signed-in browser and profile, and a retest on a build containing #3814 and #3883. Without those details, a narrow patch cannot be tied to the reported failure. |
 
 ## Needs Human
 
-- Obtain a current automatic-auth reproduction for #3660 after #3814 and #3883: selected Auth source, signed-in browser/profile, and exact error. The provided artifacts do not identify a remaining defect that can be safely patched.
+- none
