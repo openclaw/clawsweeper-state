@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T13:09:37.083Z",
+  "updated_at": "2026-09-28T13:09:40.037Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160238:5865364829:2026-09-28T08:08:14Z:clawsweeper_needs_human",
-      "comment_id": "5865364829",
-      "comment_version_key": "5865364829:2026-09-28T08:08:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160238#issuecomment-5865364829",
-      "comment_created_at": "2026-09-28T07:25:03Z",
-      "comment_updated_at": "2026-09-28T08:08:14Z",
-      "comment_body_sha256": "b1f3a25652b11dcc406625bc0f3e1c2a21b56fba52f038443a2c371e0c1fd982",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160238,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains incomplete: the four reported daemon failures were reproduced on the pinned base, but fail-fast cancelled sibling coverage and the cancelled build job's proof up... (sha=65dc00ed8b589624e72ec1a28ffd63c53d570358)",
-      "expected_head_sha": "65dc00ed8b589624e72ec1a28ffd63c53d570358",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T08:10:35.174Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/archive-metadata-preflight-20260928",
-        "head_sha": "65dc00ed8b589624e72ec1a28ffd63c53d570358",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160252:5865445576:2026-09-28T07:56:04Z:clawsweeper_needs_human",
       "comment_id": "5865445576",
@@ -33943,6 +33910,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158680:5843672248:2026-09-28T13:01:58Z:clawsweeper_needs_human",
+      "comment_id": "5843672248",
+      "comment_version_key": "5843672248:2026-09-28T13:01:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158680#issuecomment-5843672248",
+      "comment_created_at": "2026-09-26T05:53:10Z",
+      "comment_updated_at": "2026-09-28T13:01:58Z",
+      "comment_body_sha256": "5cec1860a3d51055416496636135ccf48ef90c8e1a4f18f443920ee7df78e27e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR records real SQLite-worker terminal measurements for caller responsiveness, but the pinned head...; Review finding: [P1] Preserve verified-human provenance in the worker classifier — src/agents/main-session-recovery/main-session-restart-recovery-checkpoint-reader.ts:51-52 - [hig... (sha=a441eb6e1ae8f6684a88b05b00657bdd19db758d)",
+      "expected_head_sha": "a441eb6e1ae8f6684a88b05b00657bdd19db758d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T13:09:40.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/recovery-checkpoint-history-worker-20260926",
+        "head_sha": "a441eb6e1ae8f6684a88b05b00657bdd19db758d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
