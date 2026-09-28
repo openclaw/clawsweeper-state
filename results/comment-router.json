@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:13:19.071Z",
+  "updated_at": "2026-09-28T03:13:19.095Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151674:5728266713:2026-09-27T21:13:38Z:clawsweeper_needs_human",
-      "comment_id": "5728266713",
-      "comment_version_key": "5728266713:2026-09-27T21:13:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151674#issuecomment-5728266713",
-      "comment_created_at": "2026-09-18T09:47:29Z",
-      "comment_updated_at": "2026-09-27T21:13:38Z",
-      "comment_body_sha256": "4b7f2d08f44f4a05f74e20b22c5db2555e17fb8238e2c1ba50fca41d2d74206b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151674,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The linked installed Windows CLI cell shows a disabled Task becoming enabled and running, but the sepa...; Review finding: [medium] Prove reassigned Task refusal at the native effects — src/daemon/schtasks-control.ts:535 (sha=a7aa3ae067193f9dffa88536f27e6d8e0b8446ad)",
-      "expected_head_sha": "a7aa3ae067193f9dffa88536f27e6d8e0b8446ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:14:57.309Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-windows-startup-prepared-a2206a12",
-        "head_sha": "a7aa3ae067193f9dffa88536f27e6d8e0b8446ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159870:5859429623:2026-09-27T21:14:12Z:clawsweeper_auto_repair",
       "comment_id": "5859429623",
@@ -33527,6 +33494,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159688:5856730095:2026-09-28T03:12:19Z:clawsweeper_needs_human",
+      "comment_id": "5856730095",
+      "comment_version_key": "5856730095:2026-09-28T03:12:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159688#issuecomment-5856730095",
+      "comment_created_at": "2026-09-27T14:30:10Z",
+      "comment_updated_at": "2026-09-28T03:12:19Z",
+      "comment_body_sha256": "a0cde1dcb997a37e9d091c55ffb48a6bc705d67212bd7b259087a11a043ca5e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159688,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the persisted requester lifetime** - The requester envelope permits a fresh constrained operator to be reconstructed after the original process exits. Live checks and a revoked...; Review finding: [medium] Approve the persisted requester lifetime — src/config/sessions/session-entry-json.ts:54 (sha=9aaed1274ae55e3b896ae8db01d0b7b566845635)",
+      "expected_head_sha": "9aaed1274ae55e3b896ae8db01d0b7b566845635",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T03:13:19.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-session-resume",
+        "head_sha": "62cf705198a12f2585ec3f09710fec3939b98b2b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
