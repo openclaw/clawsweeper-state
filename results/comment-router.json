@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T02:25:54.273Z",
+  "updated_at": "2026-09-28T02:25:56.218Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159851:5859368826:2026-09-27T20:04:06Z:re_review",
-      "comment_id": "5859368826",
-      "comment_version_key": "5859368826:2026-09-27T20:04:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159851#issuecomment-5859368826",
-      "comment_created_at": "2026-09-27T20:04:06Z",
-      "comment_updated_at": "2026-09-27T20:04:06Z",
-      "comment_body_sha256": "ecae716c4fb8f21cf9aebbb40378b4b260116a4b613891981fb7be0d4d7b83f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159851,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T20:11:48.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-p03-whatsapp-media",
-        "head_sha": "852285a705e565870b97c810543658240eb96e2a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159851:5859074237:2026-09-27T20:10:58Z:clawsweeper_needs_human",
       "comment_id": "5859074237",
@@ -33524,6 +33477,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-p04-restart-duplicate",
         "head_sha": "818dd85ae1892e4d63cd431ee00d3baff8e66be2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160039:5862175011:2026-09-28T02:24:31Z:clawsweeper_needs_human",
+      "comment_id": "5862175011",
+      "comment_version_key": "5862175011:2026-09-28T02:24:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160039#issuecomment-5862175011",
+      "comment_created_at": "2026-09-28T02:24:31Z",
+      "comment_updated_at": "2026-09-28T02:24:31Z",
+      "comment_body_sha256": "3abf10cc19fa2bab092a3e5bd98e21b1caab80407a23225e8e01ec9c6150d6df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160039,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add redacted Telegram Test Server userbot proof of the resumed-parent typing lifecycle before merge. Updating the PR body should trigger a fresh ClawSweeper review; if it does not, as... (sha=6d443939731a481491542a774e5ddfdd49dcbcec)",
+      "expected_head_sha": "6d443939731a481491542a774e5ddfdd49dcbcec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T02:25:56.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/resumed-parent-activity",
+        "head_sha": "6d443939731a481491542a774e5ddfdd49dcbcec",
         "cluster_id": null,
         "job_path": null
       }
