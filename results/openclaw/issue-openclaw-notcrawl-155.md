@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-155"
 mode: "autonomous"
-run_id: "36436308088"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36436308088"
+run_id: "36447684751"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36447684751"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-28T14:39:00.336Z"
-canonical: "https://github.com/openclaw/notcrawl/issues/155"
+published_at: "2026-09-28T16:04:30.790Z"
+canonical: "#155"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/155"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36436308088](https://github.com/openclaw/clawsweeper/actions/runs/36436308088)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36447684751](https://github.com/openclaw/clawsweeper/actions/runs/36447684751)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/notcrawl/issues/155
+Canonical: #155
 
 ## Summary
 
-Issue #155 remains reproducible on main at 204af2f8be192709ee3f0acaef120d583465ab3c. Plan a narrow fix for archived simple-table Markdown and search; keep related issue #101 open.
+Issue #155 remains a focused defect on the provided main checkout. Plan a single fix PR for visible simple-table Markdown output and searchable row cells, including rows already archived. No code or GitHub state was changed in this planning pass.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Issue #155 remains reproducible on main at 204af2f8be192709ee3f0acaef120d583465a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155 | fix_needed | planned | canonical | The archived cell data is available, but Markdown export and search omit it. |
-| #101 | keep_related | planned | related | The table fix does not resolve #101's broader rendering request. |
-| cluster:issue-openclaw-notcrawl-155 | build_fix_artifact | planned |  | A bounded fix can read the cells already stored in properties_json without a storage schema change. |
+| https://github.com/openclaw/notcrawl/issues/155 | fix_needed | planned | canonical | Create a failing table-parent and table-row regression first, then fix export and search without changing the archive payload or schema. |
+| https://github.com/openclaw/notcrawl/issues/101 | keep_related | planned | related | The table fix does not resolve the broader rich-block output decisions in #101. |
 
 ## Needs Human
 
