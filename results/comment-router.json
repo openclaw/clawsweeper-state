@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:02:24.097Z",
+  "updated_at": "2026-09-28T23:02:40.874Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156634:5865658938:2026-09-28T07:45:50Z:re_review",
-      "comment_id": "5865658938",
-      "comment_version_key": "5865658938:2026-09-28T07:45:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156634#issuecomment-5865658938",
-      "comment_created_at": "2026-09-28T07:45:50Z",
-      "comment_updated_at": "2026-09-28T07:45:50Z",
-      "comment_body_sha256": "fb0465b666dc891e0afb355f3935ceef5343c7d47a37d4a3737be5856f2d357f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156634,
-      "author": "TreyLawrence",
-      "author_id": 665297,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:30:11.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/queued-reply-config-identity",
-        "head_sha": "1f531901b5edbf8e23d6d79476260e205777c215",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156625:5798496326:2026-09-28T17:23:35Z:clawsweeper_auto_repair",
       "comment_id": "5798496326",
@@ -34004,6 +33957,39 @@
         "kind": "pull_request",
         "branch": "user/natalie-aguinaldo/fix-migration-script-exit-flake",
         "head_sha": "bb214a94b3087a87833e73d19344bb5b7dd51680",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154043:5752497740:2026-09-28T23:01:39Z:clawsweeper_needs_human",
+      "comment_id": "5752497740",
+      "comment_version_key": "5752497740:2026-09-28T23:01:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154043#issuecomment-5752497740",
+      "comment_created_at": "2026-09-20T20:36:36Z",
+      "comment_updated_at": "2026-09-28T23:01:39Z",
+      "comment_body_sha256": "6178cdc348415a9e85bc2fd2437d5737032ee2b014be32d735d0256a6f07f4c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The contributor's terminal trace exercises the real MCP client and HTTP transport for attributed calls...; Review finding: [medium] Caller-asserted identity can feed signed MCP credentials — src/agents/mcp-request-context.ts:17 (sha=6656ee3070729a2dc17ddabaa31ba7151e46dd0c)",
+      "expected_head_sha": "6656ee3070729a2dc17ddabaa31ba7151e46dd0c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:02:40.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mcp-per-request-header-provider",
+        "head_sha": "6656ee3070729a2dc17ddabaa31ba7151e46dd0c",
         "cluster_id": null,
         "job_path": null
       }
