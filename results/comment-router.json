@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T02:13:31.252Z",
+  "updated_at": "2026-09-28T02:14:37.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159819:5859372767:2026-09-27T20:04:36Z:re_review",
-      "comment_id": "5859372767",
-      "comment_version_key": "5859372767:2026-09-27T20:04:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159819#issuecomment-5859372767",
-      "comment_created_at": "2026-09-27T20:04:36Z",
-      "comment_updated_at": "2026-09-27T20:04:36Z",
-      "comment_body_sha256": "b4a44b6e42437d5f16d7f0af2b75f35a5a745e5970ef26808b6cb1279f3fb172",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159819,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T20:05:30.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/task-retirement-ci-closure-20260927",
-        "head_sha": "398815bb7717f4dfd9d940caeecd5b11eddf7c74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159860:5859386132:2026-09-27T20:06:12Z:clawsweeper_auto_repair",
       "comment_id": "5859386132",
@@ -33504,6 +33457,39 @@
         "kind": "pull_request",
         "branch": "codex/batch-exact-focus-metadata",
         "head_sha": "7de1e6a980d1283acb553ffe226f4c7b7a4e81fe",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160032:5862078927:2026-09-28T02:13:35Z:clawsweeper_needs_human",
+      "comment_id": "5862078927",
+      "comment_version_key": "5862078927:2026-09-28T02:13:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160032#issuecomment-5862078927",
+      "comment_created_at": "2026-09-28T02:13:35Z",
+      "comment_updated_at": "2026-09-28T02:13:35Z",
+      "comment_body_sha256": "fc58059db0210e2a9b4c824a75bdaaea6563ebaa6fb8b916657ac9b71309b2a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Mini App route passes a currentness assertion into the production credential worker, but the body r...; Review finding: [medium] Verify revocation before credential persistence — extensions/telegram/src/miniapp/routes.ts:176 (sha=cc8972fc5d81046cc3f5ce4623c7b1ab49324bbd)",
+      "expected_head_sha": "cc8972fc5d81046cc3f5ce4623c7b1ab49324bbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T02:14:37.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l134-tg-matrix-feishu4",
+        "head_sha": "cc8972fc5d81046cc3f5ce4623c7b1ab49324bbd",
         "cluster_id": null,
         "job_path": null
       }
