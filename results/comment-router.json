@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T18:09:29.235Z",
+  "updated_at": "2026-09-28T18:09:56.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:832:5870741404:2026-09-28T13:42:25Z:clawsweeper_needs_human",
-      "comment_id": "5870741404",
-      "comment_version_key": "5870741404:2026-09-28T13:42:25Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/832#issuecomment-5870741404",
-      "comment_created_at": "2026-09-28T13:23:05Z",
-      "comment_updated_at": "2026-09-28T13:42:25Z",
-      "comment_body_sha256": "24e973f02b5831ff241c50996b59e139470efcb25550ce9ef9990badda996cea",
-      "repo": "openclaw/acpx",
-      "issue_number": 832,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An explicit earlier built-in command can now select a newer current-command session. Maintainers need to approve that scope and collision rule before it changes existing explicit-comm... (sha=e1db834630d42a604a164dbe80712062b456bec9)",
-      "expected_head_sha": "e1db834630d42a604a164dbe80712062b456bec9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T13:45:27.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-adapter-range-migration",
-        "head_sha": "e1db834630d42a604a164dbe80712062b456bec9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160147:5864004756:2026-09-28T13:44:14Z:clawsweeper_auto_repair",
       "comment_id": "5864004756",
@@ -33643,6 +33610,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T18:09:29.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1507:5813257864:2026-09-28T17:59:54Z:clawsweeper_needs_human",
+      "comment_id": "5813257864",
+      "comment_version_key": "5813257864:2026-09-28T17:59:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1507#issuecomment-5813257864",
+      "comment_created_at": "2026-09-24T11:33:24Z",
+      "comment_updated_at": "2026-09-28T17:59:54Z",
+      "comment_body_sha256": "b582c3adbb2a6b126f33a284bf2011a1f6e9d17795e19be0cf5bf60aca729179",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Suppress failed proc reads before logging diagnostics (P2)** - If the service exits after -r succeeds, the redirected read prints /proc/&lt;pid>/stat to stderr. CommandRunner records that stderr in the setup log...; Review finding: [P2] Suppress failed proc reads before logging diagnostics — tests/OpenClaw.E2ETests/Setup/GatewayRestartFailureDiagnostic.cs:38-40 - [low] Raw PID can enter uploa... (sha=c99d2d0c29c35c26107eac775e05e80029c7b296)",
+      "expected_head_sha": "c99d2d0c29c35c26107eac775e05e80029c7b296",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T18:09:56.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shanselman-gateway-restart-fixture-diagnostics",
+        "head_sha": "c99d2d0c29c35c26107eac775e05e80029c7b296",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
