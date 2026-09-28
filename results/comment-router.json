@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:02:40.874Z",
+  "updated_at": "2026-09-28T23:02:44.218Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156625:5798496326:2026-09-28T17:23:35Z:clawsweeper_auto_repair",
-      "comment_id": "5798496326",
-      "comment_version_key": "5798496326:2026-09-28T17:23:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156625#issuecomment-5798496326",
-      "comment_created_at": "2026-09-23T16:20:54Z",
-      "comment_updated_at": "2026-09-28T17:23:35Z",
-      "comment_body_sha256": "36509507312f74a5fd22fd3ba7acfb6e826d192a20bc29e02c66f3af5a21a6ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156625,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8218a2a07518464ca82e1cc0482147781ae0cb9d)",
-      "expected_head_sha": "8218a2a07518464ca82e1cc0482147781ae0cb9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:30:14.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fixing-message-ordering-and-grouping-ux",
-        "head_sha": "8218a2a07518464ca82e1cc0482147781ae0cb9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160581:5875185488:2026-09-28T17:30:11Z:clawsweeper_needs_human",
       "comment_id": "5875185488",
@@ -33993,6 +33960,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157007:5880279125:2026-09-28T23:01:48Z:re_review",
+      "comment_id": "5880279125",
+      "comment_version_key": "5880279125:2026-09-28T23:01:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157007#issuecomment-5880279125",
+      "comment_created_at": "2026-09-28T23:01:48Z",
+      "comment_updated_at": "2026-09-28T23:01:48Z",
+      "comment_body_sha256": "aa13cd7f415a0702dc1b3a2c643d0d061692ca065013305be43e3b309121c78b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157007,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T23:02:43.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-stop-budget",
+        "head_sha": "0cca02df4cfdd1f8b325899e5871fa3a04993c90",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
