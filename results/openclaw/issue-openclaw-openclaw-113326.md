@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "36450669961"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36450669961"
+run_id: "36457717271"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36457717271"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-28T17:14:05.673Z"
+published_at: "2026-09-28T18:29:02.939Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36450669961](https://github.com/openclaw/clawsweeper/actions/runs/36450669961)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36457717271](https://github.com/openclaw/clawsweeper/actions/runs/36457717271)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-The defect is present in the inspected main checkout, but implementation is blocked: the workspace is read-only, dependencies are absent, and the required ../codex sibling is unavailable. No code or GitHub state was changed.
+The checkout still rejects non-TTY login before selecting OpenAI’s documented device-code method. A narrow repair is identified, but this read-only checkout has no installed dependencies, the preflight main SHA is unavailable locally, and the required sibling ../codex source is absent. No branch change, test, or PR was completed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The defect is present in the inspected main checkout, but implementation is bloc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | planned | canonical | The documented headless device-code path remains blocked. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | The target checkout cannot be edited or validated on this host. |
+| #113326 | fix_needed | planned | canonical | The explicit device-code path remains blocked at the CLI guard in the available checkout. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | Implementation and validation require a writable, dependency-ready checkout at a verified current main, plus inspection of the required Codex sibling source. |
 
 ## Needs Human
 
