@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:47:21.240Z",
+  "updated_at": "2026-09-28T23:47:36.477Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1507:5813257864:2026-09-28T17:59:54Z:clawsweeper_needs_human",
-      "comment_id": "5813257864",
-      "comment_version_key": "5813257864:2026-09-28T17:59:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1507#issuecomment-5813257864",
-      "comment_created_at": "2026-09-24T11:33:24Z",
-      "comment_updated_at": "2026-09-28T17:59:54Z",
-      "comment_body_sha256": "b582c3adbb2a6b126f33a284bf2011a1f6e9d17795e19be0cf5bf60aca729179",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1507,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Suppress failed proc reads before logging diagnostics (P2)** - If the service exits after -r succeeds, the redirected read prints /proc/&lt;pid>/stat to stderr. CommandRunner records that stderr in the setup log...; Review finding: [P2] Suppress failed proc reads before logging diagnostics — tests/OpenClaw.E2ETests/Setup/GatewayRestartFailureDiagnostic.cs:38-40 - [low] Raw PID can enter uploa... (sha=c99d2d0c29c35c26107eac775e05e80029c7b296)",
-      "expected_head_sha": "c99d2d0c29c35c26107eac775e05e80029c7b296",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T18:09:56.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "shanselman-gateway-restart-fixture-diagnostics",
-        "head_sha": "c99d2d0c29c35c26107eac775e05e80029c7b296",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1534:5875321452:2026-09-28T18:07:36Z:clawsweeper_needs_human",
       "comment_id": "5875321452",
@@ -33902,6 +33869,53 @@
         "kind": "pull_request",
         "branch": "contracts/acp-runtime-turn-testkit",
         "head_sha": "111c819bf0ec24b9fa20ee2a5ae8fda391023f2d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160748:5880859761:2026-09-28T23:46:04Z:re_review",
+      "comment_id": "5880859761",
+      "comment_version_key": "5880859761:2026-09-28T23:46:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160748#issuecomment-5880859761",
+      "comment_created_at": "2026-09-28T23:46:04Z",
+      "comment_updated_at": "2026-09-28T23:46:04Z",
+      "comment_body_sha256": "57377b1dd674a72f33bf76c2723e235a45b2d324ac02f351276bc35d421e1ee3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160748,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T23:47:34.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-selection-memory-20260928",
+        "head_sha": "b001f1bdec4c9e5fedb2d34ca851a380cded6baf",
         "cluster_id": null,
         "job_path": null
       },
