@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:05:16.215Z",
+  "updated_at": "2026-09-28T03:06:35.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154534:5756668795:2026-09-27T21:02:41Z:clawsweeper_needs_human",
-      "comment_id": "5756668795",
-      "comment_version_key": "5756668795:2026-09-27T21:02:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154534#issuecomment-5756668795",
-      "comment_created_at": "2026-09-21T07:03:27Z",
-      "comment_updated_at": "2026-09-27T21:02:41Z",
-      "comment_body_sha256": "72f1b9758dbf1b3e279f65c08f7998811520eb963695c3f92662a3a0b8c8b5ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154534,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The reported Linux production-boundary run exercises trusted grep and sh -c reads and rejects lookalik...; Review finding: [P1] Exclude shells that run implicit startup files from the exemption — src/infra/exec-approvals-policy.ts:227-232 - [high] Implicit zsh startup bypasses the insp... (sha=ad2fed151492814e1144b12db5f2798310680606)",
-      "expected_head_sha": "ad2fed151492814e1144b12db5f2798310680606",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:08:43.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-audit-suppression-approval-prompts",
-        "head_sha": "ad2fed151492814e1144b12db5f2798310680606",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154534:5771102405:2026-09-22T04:13:18Z:re_review",
       "comment_id": "5771102405",
@@ -33479,6 +33446,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160014:5862531060:2026-09-28T03:05:33Z:re_review",
+      "comment_id": "5862531060",
+      "comment_version_key": "5862531060:2026-09-28T03:05:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160014#issuecomment-5862531060",
+      "comment_created_at": "2026-09-28T03:05:33Z",
+      "comment_updated_at": "2026-09-28T03:05:33Z",
+      "comment_body_sha256": "98926093f7792117218d9254945b62367cfab546c98a728b821b802238eb1492",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160014,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:06:33.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/semantic-memory-ci-backend",
+        "head_sha": "d26134d8106853df1252f463fbd8eff2b8e8fb33",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
