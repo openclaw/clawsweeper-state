@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:32:24.901Z",
+  "updated_at": "2026-09-28T23:34:25.386Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160366:5868021478:2026-09-28T17:38:48Z:clawsweeper_needs_human",
-      "comment_id": "5868021478",
-      "comment_version_key": "5868021478:2026-09-28T17:38:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160366#issuecomment-5868021478",
-      "comment_created_at": "2026-09-28T10:21:03Z",
-      "comment_updated_at": "2026-09-28T17:38:48Z",
-      "comment_body_sha256": "0f99e728363ad96195bed55c9555b6a92d1598e1bd6f9f0d6f9ee5fff138ab2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160366,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=78738305532264363a0792f493b2e316871964be)",
-      "expected_head_sha": "78738305532264363a0792f493b2e316871964be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:48:02.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/otimizacao-do-espaco-da-sidebar-mobile",
-        "head_sha": "78738305532264363a0792f493b2e316871964be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160453:5870224902:2026-09-28T17:41:31Z:clawsweeper_needs_human",
       "comment_id": "5870224902",
@@ -33945,6 +33912,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5880688541:2026-09-28T23:33:24Z:re_review",
+      "comment_id": "5880688541",
+      "comment_version_key": "5880688541:2026-09-28T23:33:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5880688541",
+      "comment_created_at": "2026-09-28T23:33:24Z",
+      "comment_updated_at": "2026-09-28T23:33:24Z",
+      "comment_body_sha256": "1814d7ba79fa0e05355b68d7c4dde5fcdf4ff1da40145ead3b650ddb722e9071",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — auto-synced with upstream/main (64 commits, clean merge, head `7989a75671`). skill-selection files intact, zero typecheck errors in our files. note: tsgo:core has pre-existing upstream failures in `scripts/lib/`, `src/plugin-sdk/`, `src/infra/net/` (untouched by this pr)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T23:34:24.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "7989a75671131b58ab8a88cf2986ca0caff36089",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
