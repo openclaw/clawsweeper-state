@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T21:36:53.300Z",
+  "updated_at": "2026-09-28T21:37:23.246Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160454:5870298536:2026-09-28T15:45:48Z:clawsweeper_needs_human",
-      "comment_id": "5870298536",
-      "comment_version_key": "5870298536:2026-09-28T15:45:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160454#issuecomment-5870298536",
-      "comment_created_at": "2026-09-28T12:56:20Z",
-      "comment_updated_at": "2026-09-28T15:45:48Z",
-      "comment_body_sha256": "e5a26ec73ad9cb10c69276fedcc6999ccbce58198a9e31a37fb785eeeb6fc8aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing install has not been shown updating to this exact candidate through the published 2026.9.6 updater with a healthy managed-service restart and preserved SecretRef environme... (sha=1ac542bc5e04894a1ef44bf0c5f9b2ba48ec1c8d)",
-      "expected_head_sha": "1ac542bc5e04894a1ef44bf0c5f9b2ba48ec1c8d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:06:01.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l137-runtime-hosts",
-        "head_sha": "1ac542bc5e04894a1ef44bf0c5f9b2ba48ec1c8d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160462:5870473980:2026-09-28T15:59:04Z:clawsweeper_needs_human",
       "comment_id": "5870473980",
@@ -34041,6 +34008,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160629:5876165279:2026-09-28T21:36:20Z:clawsweeper_needs_human",
+      "comment_id": "5876165279",
+      "comment_version_key": "5876165279:2026-09-28T21:36:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160629#issuecomment-5876165279",
+      "comment_created_at": "2026-09-28T18:34:52Z",
+      "comment_updated_at": "2026-09-28T21:36:20Z",
+      "comment_body_sha256": "e020f5f999e64d27494789349681a8f0457ea0fff3c6bb7396ae93ca6e07e126",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The reported registered-plugin run uses the production Discord action and HTTP adapter against a synthetic loopback API, showing filtered allow...; Review finding: [medium] Approve the scoped guild-wide read boundary — extensions/discord/src/actions/runtime.messaging.send.ts:372 (sha=09608dc03a3f8cb821531c54e2b95e6519fe6553)",
+      "expected_head_sha": "09608dc03a3f8cb821531c54e2b95e6519fe6553",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T21:37:23.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-scoped-thread-reads-20260928",
+        "head_sha": "09608dc03a3f8cb821531c54e2b95e6519fe6553",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
