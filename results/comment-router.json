@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:29:48.569Z",
+  "updated_at": "2026-09-28T11:29:51.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160190:5864673282:2026-09-28T06:29:33Z:re_review",
-      "comment_id": "5864673282",
-      "comment_version_key": "5864673282:2026-09-28T06:29:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160190#issuecomment-5864673282",
-      "comment_created_at": "2026-09-28T06:29:33Z",
-      "comment_updated_at": "2026-09-28T06:29:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160190,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T06:37:59.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-ci/telegram-frozen-scenario-1790569200",
-        "head_sha": "6b6e81ccc0d92c2c836487f229ac657fe87bb888",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160190:5864534001:2026-09-28T06:36:28Z:clawsweeper_needs_human",
       "comment_id": "5864534001",
@@ -33763,6 +33716,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-sessions-nonisolated-deinit",
         "head_sha": "40ecce627a05c0bb7c8231324b2ff7739c93eccf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160391:5868956705:2026-09-28T11:28:49Z:clawsweeper_needs_human",
+      "comment_id": "5868956705",
+      "comment_version_key": "5868956705:2026-09-28T11:28:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160391#issuecomment-5868956705",
+      "comment_created_at": "2026-09-28T11:28:49Z",
+      "comment_updated_at": "2026-09-28T11:28:49Z",
+      "comment_body_sha256": "96b109e025988e58082bcb0017c4689e00ca817415d645f2c2b0d6a84fbc24a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160391,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=932dd2a523faf8559d99eb8fe84e568e6d198fda)",
+      "expected_head_sha": "932dd2a523faf8559d99eb8fe84e568e6d198fda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T11:29:51.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/scheduler-closeout-0928-persistence-cache-publish",
+        "head_sha": "932dd2a523faf8559d99eb8fe84e568e6d198fda",
         "cluster_id": null,
         "job_path": null
       }
