@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T10:11:19.077Z",
+  "updated_at": "2026-09-28T10:12:24.400Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153573:5748790374:2026-09-28T04:58:35Z:clawsweeper_auto_repair",
-      "comment_id": "5748790374",
-      "comment_version_key": "5748790374:2026-09-28T04:58:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153573#issuecomment-5748790374",
-      "comment_created_at": "2026-09-20T08:53:59Z",
-      "comment_updated_at": "2026-09-28T04:58:35Z",
-      "comment_body_sha256": "2f42d160cef470f8c0fd413b9ea332bfa9e470a050cb70d0750caaeea0cf2395",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153573,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e80d804b0913521a9ebd1d134e7f6202cbbfe173)",
-      "expected_head_sha": "e80d804b0913521a9ebd1d134e7f6202cbbfe173",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T05:22:45.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-153543-heartbeat-crosschannel",
-        "head_sha": "e80d804b0913521a9ebd1d134e7f6202cbbfe173",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154417:5755494321:2026-09-28T05:00:55Z:clawsweeper_auto_repair",
       "comment_id": "5755494321",
@@ -33477,6 +33444,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160189:5867879872:2026-09-28T10:11:23Z:re_review",
+      "comment_id": "5867879872",
+      "comment_version_key": "5867879872:2026-09-28T10:11:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160189#issuecomment-5867879872",
+      "comment_created_at": "2026-09-28T10:11:23Z",
+      "comment_updated_at": "2026-09-28T10:11:23Z",
+      "comment_body_sha256": "a4a53e91ea33b30d11029a0355df4f8a407c85a7b712b789dff2a7812d363601",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160189,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T10:12:22.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-service-runtime-retention",
+        "head_sha": "2d28f0fb6db4699a830485026d8b3b808dd8c2c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
