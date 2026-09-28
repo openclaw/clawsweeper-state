@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T23:44:54.734Z",
+  "updated_at": "2026-09-28T23:44:37.703Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160592:5875398763:2026-09-28T18:02:20Z:clawsweeper_needs_human",
+      "comment_id": "5875398763",
+      "comment_version_key": "5875398763:2026-09-28T18:02:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160592#issuecomment-5875398763",
+      "comment_created_at": "2026-09-28T17:43:55Z",
+      "comment_updated_at": "2026-09-28T18:02:20Z",
+      "comment_body_sha256": "e5e6322dee8544c19a5f4fa5e0c77d81eb0cc75e5a6bec38fa29a5a458036de6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160592,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An installed v2026.9.6 updater can enter this candidate with existing update state; the required published-updater abandoned-update cell has not been recorded, so that upgrade and rec... (sha=12a77f511b8b0873b4b0a8cd4d6df96b14e7aa04)",
+      "expected_head_sha": "12a77f511b8b0873b4b0a8cd4d6df96b14e7aa04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T18:03:18.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-run-worker-writes-20260928",
+        "head_sha": "12a77f511b8b0873b4b0a8cd4d6df96b14e7aa04",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160188:5875587438:2026-09-28T17:56:19Z:re_review",
       "comment_id": "5875587438",
@@ -33876,39 +33909,6 @@
       "status": "skipped",
       "processed_at": "2026-09-28T23:44:37.703Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150915:5715345561:2026-09-28T23:43:53Z:clawsweeper_needs_human",
-      "comment_id": "5715345561",
-      "comment_version_key": "5715345561:2026-09-28T23:43:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150915#issuecomment-5715345561",
-      "comment_created_at": "2026-09-17T13:41:32Z",
-      "comment_updated_at": "2026-09-28T23:43:53Z",
-      "comment_body_sha256": "52c2ae618f46920b803210dfe97bb82ba117481418f72dcd68352caab2cc8a90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150915,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2fbfb55844b5e702a8cc9469f1781cc753c076c6)",
-      "expected_head_sha": "2fbfb55844b5e702a8cc9469f1781cc753c076c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T23:44:54.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-2026.9.5-required-channels",
-        "head_sha": "2fbfb55844b5e702a8cc9469f1781cc753c076c6",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
