@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T01:24:11.335Z",
+  "updated_at": "2026-09-28T01:21:52.786Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158901:5846664637:2026-09-27T19:19:59Z:clawsweeper_needs_human",
+      "comment_id": "5846664637",
+      "comment_version_key": "5846664637:2026-09-27T19:19:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158901#issuecomment-5846664637",
+      "comment_created_at": "2026-09-26T13:30:04Z",
+      "comment_updated_at": "2026-09-27T19:19:59Z",
+      "comment_body_sha256": "613c6b4425cfe2b5a2c6978828246da158569fcee90d533956d0c3f456642c68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158901,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: Source-built worker evidence reports an allowed model request, zero HTTP for ungranted models, and HTT...; Review finding: [medium] Verify revoked external auth at the provider boundary — src/worker/native-runtime.ts:295 (sha=a823f500c16a3d648d61519d06e60f902399d7d8)",
+      "expected_head_sha": "a823f500c16a3d648d61519d06e60f902399d7d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T19:21:15.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-154390-native-worker-runtime",
+        "head_sha": "a823f500c16a3d648d61519d06e60f902399d7d8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:734:5859026311:2026-09-27T19:22:43Z:clawsweeper_needs_human",
       "comment_id": "5859026311",
@@ -33628,53 +33661,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159992:5861572533:2026-09-28T01:22:46Z:clawsweeper_auto_merge",
-      "comment_id": "5861572533",
-      "comment_version_key": "5861572533:2026-09-28T01:22:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159992#issuecomment-5861572533",
-      "comment_created_at": "2026-09-28T01:10:16Z",
-      "comment_updated_at": "2026-09-28T01:22:46Z",
-      "comment_body_sha256": "b2b81ea913ab0e5310878619652e20b403a9b4a81d2f8dcd4520f2bd3321cdfb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159992,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=c0a746e67ad4df0d59932bb7648ca52e75d37b6d)",
-      "expected_head_sha": "c0a746e67ad4df0d59932bb7648ca52e75d37b6d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:24:11.335Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-doctor-fixture-retention",
-        "head_sha": "c0a746e67ad4df0d59932bb7648ca52e75d37b6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
