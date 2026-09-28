@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:43:10.801Z",
+  "updated_at": "2026-09-28T23:43:20.480Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160533:5875621367:2026-09-28T17:58:39Z:re_review",
-      "comment_id": "5875621367",
-      "comment_version_key": "5875621367:2026-09-28T17:58:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160533#issuecomment-5875621367",
-      "comment_created_at": "2026-09-28T17:58:39Z",
-      "comment_updated_at": "2026-09-28T17:58:39Z",
-      "comment_body_sha256": "035d7f79cb186732893c5a100a0af579a4aadbc05ef53737f9e927f3c625cbd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160533,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:59:40.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-capture-manifests",
-        "head_sha": "eac3a75d0b7c3cf33c0a60fd8f8ea83e45159189",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:241:5875622258:2026-09-28T17:58:43Z:clawsweeper_needs_human",
       "comment_id": "5875622258",
@@ -33924,6 +33877,39 @@
         "kind": "pull_request",
         "branch": "urda/price-model-aliases",
         "head_sha": "467486002fc8ca0649f96e9f1e7425b486db5b5b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160791:5880810814:2026-09-28T23:42:22Z:clawsweeper_needs_human",
+      "comment_id": "5880810814",
+      "comment_version_key": "5880810814:2026-09-28T23:42:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160791#issuecomment-5880810814",
+      "comment_created_at": "2026-09-28T23:42:22Z",
+      "comment_updated_at": "2026-09-28T23:42:22Z",
+      "comment_body_sha256": "25e17a159a82c69f1089ad9ed6475a25a569d94165b10421f7b625a2d90323d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160791,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing operator CLI or API dispatches that name ios-release.yml would fail after the filename changes; the PR updates in-repository guidance but does not establish an operator cutov... (sha=7906c722571d4c709b1801f2d49fb1ca5771e9e4)",
+      "expected_head_sha": "7906c722571d4c709b1801f2d49fb1ca5771e9e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:43:20.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/ios-store-release-workflow",
+        "head_sha": "7906c722571d4c709b1801f2d49fb1ca5771e9e4",
         "cluster_id": null,
         "job_path": null
       }
