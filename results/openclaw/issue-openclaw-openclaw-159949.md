@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159949"
-mode: "autonomous"
-run_id: "36358129874"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36358129874"
-head_sha: "3a18b3d1a20770d6b719c377f2a9be24f214a082"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "36365325576"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36365325576"
+head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T00:40:00.358Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159949"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159949"
+published_at: "2026-09-28T01:51:39.358Z"
+canonical: "#159949"
+canonical_issue: "#159949"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36358129874](https://github.com/openclaw/clawsweeper/actions/runs/36358129874)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36365325576](https://github.com/openclaw/clawsweeper/actions/runs/36365325576)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/159949
+Canonical: #159949
 
 ## Summary
 
-Current main e71571231be00a39ea88bcc02e7facb41ed23dff still has the reported tool-boundary defect. Both schemas reject JSON null, and both execution paths forward the literal "null" as an anchor; the board rejects that anchor on an empty tab. Implementation and executable regression proof are blocked because this checkout is read-only and has no installed dependencies. The strict-provider serialization claim has no trace in the supplied evidence.
+No fix PR is planned. The source issue is already closed after a maintainer could not reproduce the claimed strict-provider behavior and requested a provider trace and returned tool-call arguments. The earlier contributor PR is closed and unmerged. The job requires reproduction before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main e71571231be00a39ea88bcc02e7facb41ed23dff still has the reported too
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159949 | fix_needed | planned | canonical | A narrow bug fix is warranted after failing regressions are established through both tool entry points. |
-| #137287 | keep_closed | skipped | related | Historical implementation context, not an active fix or closure target. |
-| cluster:issue-openclaw-openclaw-159949 | build_fix_artifact | blocked |  | The executor needs a writable checkout with dependencies to establish failing regressions, implement the fix, and run the required checks. |
+| #159949 | keep_closed | skipped | canonical | The reported provider behavior lacks the route-level reproduction required by the job. |
+| #137287 | keep_closed | skipped |  | Historical contributor work requires no action in this plan. |
 
 ## Needs Human
 
