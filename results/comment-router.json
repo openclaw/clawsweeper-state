@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T19:06:27.024Z",
+  "updated_at": "2026-09-28T19:06:35.750Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159759:5860772214:2026-09-27T23:20:29Z:re_review",
-      "comment_id": "5860772214",
-      "comment_version_key": "5860772214:2026-09-27T23:20:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159759#issuecomment-5860772214",
-      "comment_created_at": "2026-09-27T23:20:29Z",
-      "comment_updated_at": "2026-09-27T23:20:29Z",
-      "comment_body_sha256": "37f74209da41e1b4b8d61b817c9352b2028189e0f21382b5eebda7e70b86c1db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159759,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T14:27:24.747Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152114:5735443429:2026-09-28T14:29:11Z:clawsweeper_auto_repair",
       "comment_id": "5735443429",
@@ -34159,6 +34132,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T19:06:27.024Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160661:5876625345:2026-09-28T19:05:46Z:clawsweeper_needs_human",
+      "comment_id": "5876625345",
+      "comment_version_key": "5876625345:2026-09-28T19:05:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160661#issuecomment-5876625345",
+      "comment_created_at": "2026-09-28T19:05:46Z",
+      "comment_updated_at": "2026-09-28T19:05:46Z",
+      "comment_body_sha256": "1fa738d106b23628ecaacf4c4ff49305af08d323170a19e9e86e733e50f27100",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160661,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For an existing deployment with the OIDC mapping configured, a malformed custom account ID or failed GitHub lookup can turn a previously email-only sign-in into rejected profile admis... (sha=ad75dd50b61b679a7ff4a5deda61a84b60770556)",
+      "expected_head_sha": "ad75dd50b61b679a7ff4a5deda61a84b60770556",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T19:06:35.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cloudflare-identity-custom",
+        "head_sha": "ad75dd50b61b679a7ff4a5deda61a84b60770556",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
