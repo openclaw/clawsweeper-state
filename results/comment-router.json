@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:55:57.715Z",
+  "updated_at": "2026-09-28T06:56:07.649Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159983:5861607557:2026-09-28T01:14:28Z:automerge",
-      "comment_id": "5861607557",
-      "comment_version_key": "5861607557:2026-09-28T01:14:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159983#issuecomment-5861607557",
-      "comment_created_at": "2026-09-28T01:14:28Z",
-      "comment_updated_at": "2026-09-28T01:14:28Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159983,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:15:28.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-http-listener-reservation",
-        "head_sha": "5257f8450cb512f8b396a89f0c6633522eaffd89",
-        "cluster_id": "automerge-openclaw-openclaw-159983",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-159983.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-159983.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159975:5861605557:2026-09-28T01:14:14Z:automerge",
       "comment_id": "5861605557",
@@ -33683,6 +33624,39 @@
         "kind": "pull_request",
         "branch": "openclaw/people-activity-perf-stress",
         "head_sha": "f72cb230d0fc83d716dd17cc754e427c5606cef2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160216:5864987404:2026-09-28T06:55:16Z:clawsweeper_needs_human",
+      "comment_id": "5864987404",
+      "comment_version_key": "5864987404:2026-09-28T06:55:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160216#issuecomment-5864987404",
+      "comment_created_at": "2026-09-28T06:55:16Z",
+      "comment_updated_at": "2026-09-28T06:55:16Z",
+      "comment_body_sha256": "9993af0c940fb60262e2b91a8120eadde86eb5159040b9ffd5c966db630025f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a0248c8dbdf849e850cacfceab0e9051707d11b3)",
+      "expected_head_sha": "a0248c8dbdf849e850cacfceab0e9051707d11b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:56:07.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-cron-delivery-target-narrow-read-20260919",
+        "head_sha": "a0248c8dbdf849e850cacfceab0e9051707d11b3",
         "cluster_id": null,
         "job_path": null
       }
