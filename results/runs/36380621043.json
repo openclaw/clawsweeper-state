@@ -1,0 +1,83 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-3209",
+  "mode": "autonomous",
+  "run_id": "36380621043",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36380621043",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-3209.md",
+  "published_at": "2026-09-28T05:13:12.081Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/3209",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/3209",
+  "canonical_pr": null,
+  "summary": "Issue #3209 remains open, but a safe implementation cannot be identified. Current main discovers and tests supported Claude Desktop session locations. The report does not establish whether the affected Cowork activity produced a readable JSONL transcript with assistant usage counters in one of those locations. The previously merged Codex and chart fixes do not resolve that uncertainty. No code change or PR is planned.",
+  "actions": [
+    {
+      "target": "#3209",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#3209",
+      "candidate_fix": null,
+      "reason": "The issue has a distinct unresolved Claude symptom and must remain open."
+    },
+    {
+      "target": "#3303",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#3209",
+      "candidate_fix": null,
+      "reason": "Separate provider and diagnosed failure mechanism."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-3209",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#3209",
+      "candidate_fix": null,
+      "reason": "The affected session's local input must be established before choosing a safe, narrow implementation. No fix artifact or PR path can be specified from the provided evidence."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For #3209, obtain a redacted relative folder/file layout for one affected Desktop Cowork session and confirmation of whether its JSONL transcript contains assistant message.usage counters, or whether no JSONL exists. This distinguishes unsupported or missing input from discovery, parsing, or publication failure."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#3209",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
