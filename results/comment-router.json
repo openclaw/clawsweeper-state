@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T21:36:31.160Z",
+  "updated_at": "2026-09-28T21:36:53.300Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160453:5870224902:2026-09-28T15:37:34Z:clawsweeper_needs_human",
-      "comment_id": "5870224902",
-      "comment_version_key": "5870224902:2026-09-28T15:37:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160453#issuecomment-5870224902",
-      "comment_created_at": "2026-09-28T12:52:25Z",
-      "comment_updated_at": "2026-09-28T15:37:34Z",
-      "comment_body_sha256": "1ca0c3dd2861b7e3852753fd7fa1a61aae636340fabb3898c4edbdf21f492dcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160453,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the named-reactor audience** - The list and people methods disclose resolved human and agent identities to authorized session readers. This may be intentional, but the durable d...; Review finding: [medium] Confirm the named-reactor audience — src/gateway/server-methods/chat-reactions.ts:117 (sha=c3c41c5412742240248135be135967c14dbbc80a)",
-      "expected_head_sha": "c3c41c5412742240248135be135967c14dbbc80a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:06:01.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/add-emoji-reactions-to-all-chat-messages",
-        "head_sha": "c3c41c5412742240248135be135967c14dbbc80a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160454:5870298536:2026-09-28T15:45:48Z:clawsweeper_needs_human",
       "comment_id": "5870298536",
@@ -34027,6 +33994,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157693:5879174682:2026-09-28T21:35:04Z:re_review",
+      "comment_id": "5879174682",
+      "comment_version_key": "5879174682:2026-09-28T21:35:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5879174682",
+      "comment_created_at": "2026-09-28T21:35:04Z",
+      "comment_updated_at": "2026-09-28T21:35:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157693,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T21:36:51.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/address-all-agent-outage-p0-157325",
+        "head_sha": "bd710bc1500ceef77b2e99224a2b133378810798",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
