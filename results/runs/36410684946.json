@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160313",
+  "mode": "plan",
+  "run_id": "36410684946",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36410684946",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160313.md",
+  "published_at": "2026-09-28T10:39:57.006Z",
+  "canonical": "#160313",
+  "canonical_issue": "#160313",
+  "canonical_pr": null,
+  "summary": "Main still contains the fixture's stderr ready write. The issue records a CI failure caused by the no-output test receiving the whole-command timeout instead. An open PR includes the fixture repair, but its primary change is a separate agent feature and its CI gate is failing. Plan a narrow issue PR after reproducing the failure on main.",
+  "actions": [
+    {
+      "target": "#160313",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160313",
+      "candidate_fix": null,
+      "reason": "The CI failure and unchanged main source support a narrow fixture repair. The executor must reproduce the original failure on main before editing, as the job requires."
+    },
+    {
+      "target": "#160297",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#160313",
+      "candidate_fix": null,
+      "reason": "Keep the contributor's feature PR open. Credit its overlapping fixture repair in the narrow issue PR and recheck main before applying the patch."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
