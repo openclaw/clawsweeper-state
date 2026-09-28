@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T19:34:52.895Z",
+  "updated_at": "2026-09-28T19:33:07.566Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160475:5871170687:2026-09-28T14:44:49Z:clawsweeper_needs_human",
+      "comment_id": "5871170687",
+      "comment_version_key": "5871170687:2026-09-28T14:44:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160475#issuecomment-5871170687",
+      "comment_created_at": "2026-09-28T13:46:49Z",
+      "comment_updated_at": "2026-09-28T14:44:49Z",
+      "comment_body_sha256": "d8fea4b301caa7d3d68f2afe7fbf0fd0e30d2223c2f5d973742abf5f0258a9a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160475,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final-head installed Android client has not completed the authenticated Gateway setup-to-terminal flow. The inspected sidebar screenshots and Robolectric coverage cannot establish... (sha=ea8b2762b3f576b114a9583098f80d0e1371e838)",
+      "expected_head_sha": "ea8b2762b3f576b114a9583098f80d0e1371e838",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T14:46:12.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-catalog-native-start",
+        "head_sha": "ea8b2762b3f576b114a9583098f80d0e1371e838",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160433:5869624877:2026-09-28T14:44:59Z:clawsweeper_needs_human",
       "comment_id": "5869624877",
@@ -34104,53 +34137,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5877046397:2026-09-28T19:33:51Z:re_review",
-      "comment_id": "5877046397",
-      "comment_version_key": "5877046397:2026-09-28T19:33:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5877046397",
-      "comment_created_at": "2026-09-28T19:33:51Z",
-      "comment_updated_at": "2026-09-28T19:33:51Z",
-      "comment_body_sha256": "6fad6e218ca3be278da861ecf9f93183132d3682d0b033b8fd3b35468fcd7311",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (60 commits, clean, no conflicts). skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, run-usage). focused tests 7/7 pass, tsgo:core clean on our files (8 pre-existing upstream errors in node-proxy-agent/api-baseline untouched)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T19:34:50.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "b8dad429aa404b1e9f9b23893cb6d5d1ee20a602",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
