@@ -2,16 +2,16 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "36372031741"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36372031741"
+run_id: "36384152459"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36384152459"
 head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T03:04:41.280Z"
+published_at: "2026-09-28T06:00:52.246Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36372031741](https://github.com/openclaw/clawsweeper/actions/runs/36372031741)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36384152459](https://github.com/openclaw/clawsweeper/actions/runs/36384152459)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Issue #41 remains the canonical adoption tracker. The requested upgrade is blocked by its explicit upstream publication gates, so no implementation PR is ready.
+Issue #41 remains an upstream adoption tracker. Its required stable Ghostty v1.4 tag and compatible published wrapper are not available for an implementation PR, so no code was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Issue #41 remains the canonical adoption tracker. The requested upgrade is block
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | fix_needed | blocked | canonical | No qualifying stable upstream wrapper can be pinned or validated against the issue’s acceptance criteria. Recheck both publication gates before starting the implementation PR. |
-| #77 | keep_closed | skipped | related | Historical groundwork only. |
+| #41 | keep_canonical | planned | canonical | Keep the issue open until both publication gates are met; creating a PR now would require an unreleased runtime or private ABI work that the issue explicitly excludes. |
 
 ## Needs Human
 
