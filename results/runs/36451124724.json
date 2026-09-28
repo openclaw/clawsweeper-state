@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125873",
+  "mode": "autonomous",
+  "run_id": "36451124724",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36451124724",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125873.md",
+  "published_at": "2026-09-28T17:25:23.678Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125873",
+  "canonical_pr": null,
+  "summary": "The defect remains in the inspected checkout at main d9569745764fa53d540dbfe3a0b536975bc69a7d: Bedrock forwards stored tool-call arguments to toolUse.input without runtime coercion. A narrow fix path is identified, but this read-only checkout has no installed dependencies, so I could not establish the required failing runtime regression, edit the branch, or validate a PR.",
+  "actions": [
+    {
+      "target": "#125873",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The outbound Bedrock conversion still needs a provider-scoped repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "Establish a failing Bedrock outbound replay test before applying the shared coercion helper."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125873",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#125873",
+      "candidate_fix": null,
+      "reason": "The required failing regression, patch, local validation, and PR branch cannot be produced in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
