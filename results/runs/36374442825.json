@@ -1,0 +1,94 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-2838",
+  "mode": "autonomous",
+  "run_id": "36374442825",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36374442825",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-2838.md",
+  "published_at": "2026-09-28T03:42:03.346Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/2838",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/2838",
+  "canonical_pr": null,
+  "summary": "Issue #2838 remains open on main 579f684. The reported Sparkle update failure is credible, but it has not been reproduced on current main or tied conclusively to the original blank Switcher tiles. A source change would be speculative until the requested WidgetKit diagnostics identify the failing layer.",
+  "actions": [
+    {
+      "target": "#1989",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2838",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2838",
+      "candidate_fix": null,
+      "reason": "Keep the report open while the failing layer is verified."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-2838",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#2838",
+      "candidate_fix": null,
+      "reason": "The canonical fix path is blocked until current-release diagnostics show whether the failure is stale extension state, installation registration, or another WidgetKit rejection."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-2838",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#2838",
+      "candidate_fix": null,
+      "reason": "Diagnostic artifact only; no safe implementation PR is established."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "After current-release WidgetKit and installed-bundle diagnostics are collected, decide whether an app-side Sparkle lifecycle change is warranted."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2838",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
