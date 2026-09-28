@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160577",
+  "mode": "plan",
+  "run_id": "36472702805",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36472702805",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160577.md",
+  "published_at": "2026-09-28T20:35:57.975Z",
+  "canonical": "#160577",
+  "canonical_issue": "#160577",
+  "canonical_pr": null,
+  "summary": "Current main still wraps OpenShell mirror read errors before the memory-write provenance path can classify a missing file. Plan a narrow fix, gated on a failing regression through the composed bridge and provenance write path. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#160577",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160577",
+      "candidate_fix": null,
+      "reason": "First reproduce the new-file failure through the real mirror bridge composed with the provenance write path. If it fails on current main, preserve only a verified missing-path classification at the bridge boundary and keep genuine boundary failures rejecting."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
