@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:40:45.214Z",
+  "updated_at": "2026-09-28T20:41:05.864Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154923:5806252979:2026-09-24T02:14:36Z:re_review",
-      "comment_id": "5806252979",
-      "comment_version_key": "5806252979:2026-09-24T02:14:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154923#issuecomment-5806252979",
-      "comment_created_at": "2026-09-24T02:14:36Z",
-      "comment_updated_at": "2026-09-24T02:14:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154923,
-      "author": "sxh313",
-      "author_id": 250161920,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:50:51.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/continuation-skip-bootstrap-marker",
-        "head_sha": "90c054c6f8dc8e34a572eabd66a44f66e4f6fc5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154923:5763360998:2026-09-28T15:49:32Z:clawsweeper_needs_human",
       "comment_id": "5763360998",
@@ -33736,6 +33689,39 @@
         "kind": "pull_request",
         "branch": "fix/openai-responses-continuation-noncanonical-call-id",
         "head_sha": "0894572f672f6d491b157859f366f140adbf02b5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159752:5857327844:2026-09-28T20:39:52Z:clawsweeper_needs_human",
+      "comment_id": "5857327844",
+      "comment_version_key": "5857327844:2026-09-28T20:39:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159752#issuecomment-5857327844",
+      "comment_created_at": "2026-09-27T15:41:52Z",
+      "comment_updated_at": "2026-09-28T20:39:52Z",
+      "comment_body_sha256": "46607d888b1c4465fedf6f7e781865dffbb476ae5512ad01ac4d1c6146f85fad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head has no recorded combined Stop-to-Gateway-restart observation confirming byte-identical restored workspace edits and a cleared turn claim; a settlement regression on th... (sha=e186185ae48bfaf43eab6e49682726037ea755e7)",
+      "expected_head_sha": "e186185ae48bfaf43eab6e49682726037ea755e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:41:05.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l122-gateway-methods-workers",
+        "head_sha": "e186185ae48bfaf43eab6e49682726037ea755e7",
         "cluster_id": null,
         "job_path": null
       }
