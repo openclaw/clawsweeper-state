@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159985",
+  "mode": "plan",
+  "run_id": "36365321799",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36365321799",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159985.md",
+  "published_at": "2026-09-28T01:21:03.700Z",
+  "canonical": "#159985",
+  "canonical_issue": "#159985",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the Browser plugin treats extension profiles as eligible for file-path uploads, while its existing bounded byte-payload path serves other profiles. Plan a narrow extension upload fix. This was source-level verification only; no regression test or Store-installed extension run was performed.",
+  "actions": [
+    {
+      "target": "#159985",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159985",
+      "candidate_fix": null,
+      "reason": "No open fix PR is established in the preflight artifact. First demonstrate a failing regression on this main SHA, then repair direct-input and chooser uploads through the Browser plugin."
+    },
+    {
+      "target": "#114506",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this linked, already-merged security item outside ClawSweeper Repair."
+    },
+    {
+      "target": "#51395",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; standard file-input and chooser uploads are a different contract."
+    },
+    {
+      "target": "#115251",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a different upload boundary."
+    },
+    {
+      "target": "#115291",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its remote-node transport does not establish a fix for Store-extension debugger uploads."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
