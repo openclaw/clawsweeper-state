@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:36:13.454Z",
+  "updated_at": "2026-09-28T07:37:59.260Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159940:5862299537:2026-09-28T02:39:43Z:re_review",
-      "comment_id": "5862299537",
-      "comment_version_key": "5862299537:2026-09-28T02:39:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159940#issuecomment-5862299537",
-      "comment_created_at": "2026-09-28T02:39:43Z",
-      "comment_updated_at": "2026-09-28T02:39:43Z",
-      "comment_body_sha256": "4a19b0eb9fe66f82616eca236882fd4f9ab2e1486eb953b2dcf0e2e3a5cfe0d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159940,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T02:40:31.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/159862-visible-spawn-failure",
-        "head_sha": "86d1df1293aa4b10df586b719aa02269f52dcaf0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4080:5861451769:2026-09-28T02:40:13Z:clawsweeper_needs_human",
       "comment_id": "5861451769",
@@ -33587,6 +33540,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-failure-only-20260920",
         "head_sha": "fd7dd49728e541063814e92c7010a975aa9b29f1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160056:5862566823:2026-09-28T07:36:59Z:clawsweeper_needs_human",
+      "comment_id": "5862566823",
+      "comment_version_key": "5862566823:2026-09-28T07:36:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160056#issuecomment-5862566823",
+      "comment_created_at": "2026-09-28T03:08:28Z",
+      "comment_updated_at": "2026-09-28T07:36:59Z",
+      "comment_body_sha256": "6f4902e14107c86ccf0b9f730b9dd354f1b3c60b5cd0d020096d9d1b4a1d085b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed install-identity owner is exercised through Doctor maintenance and credential import on synthetic s...; Review finding: [medium] Verify home authority at native service I/O — src/config/paths.ts:116 (sha=c48a8f4bb280e3491e83995780471d2cc403d978)",
+      "expected_head_sha": "c48a8f4bb280e3491e83995780471d2cc403d978",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:37:59.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-doctor-maintenance-refusal",
+        "head_sha": "c48a8f4bb280e3491e83995780471d2cc403d978",
         "cluster_id": null,
         "job_path": null
       }
