@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:21:19.512Z",
+  "updated_at": "2026-09-28T17:25:54.609Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160446:5870019389:2026-09-28T12:50:37Z:clawsweeper_needs_human",
-      "comment_id": "5870019389",
-      "comment_version_key": "5870019389:2026-09-28T12:50:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160446#issuecomment-5870019389",
-      "comment_created_at": "2026-09-28T12:40:50Z",
-      "comment_updated_at": "2026-09-28T12:50:37Z",
-      "comment_body_sha256": "53e05d2c926c5c3640f5be1e5f49d81e49158884c5a8d48b5b19de6e8bc61974",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160446,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater has not been exercised against this candidate with a copy of existing operator state, so the actual upgrade may still reach Doctor or later channel set... (sha=85b4fb767e63c7faaa53f9e03139a5110d2d1215)",
-      "expected_head_sha": "85b4fb767e63c7faaa53f9e03139a5110d2d1215",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T12:59:37.669Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-readonly-snapshot-plugin-capture",
-        "head_sha": "85b4fb767e63c7faaa53f9e03139a5110d2d1215",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160452:5870121952:2026-09-28T12:47:28Z:clawsweeper_needs_human",
       "comment_id": "5870121952",
@@ -33619,6 +33586,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159644:5875102177:2026-09-28T17:24:59Z:re_review",
+      "comment_id": "5875102177",
+      "comment_version_key": "5875102177:2026-09-28T17:24:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159644#issuecomment-5875102177",
+      "comment_created_at": "2026-09-28T17:24:59Z",
+      "comment_updated_at": "2026-09-28T17:24:59Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159644,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T17:25:52.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-settle-migrated-output-20260927",
+        "head_sha": "ce27cdb74759e4cf7c17cf828d49ac6c62f2f832",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
