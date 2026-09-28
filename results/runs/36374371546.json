@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-449",
+  "mode": "autonomous",
+  "run_id": "36374371546",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36374371546",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-449.md",
+  "published_at": "2026-09-28T03:39:56.637Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/449",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/449",
+  "canonical_pr": null,
+  "summary": "Issue #449 is confirmed on the provided main SHA. The account test helper leaves USERPROFILE unchanged, so Windows tests can use the developer's real account configuration. A one-file fix and regression test are planned; this read-only worker did not edit code or run tests.",
+  "actions": [
+    {
+      "target": "#449",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#449",
+      "candidate_fix": null,
+      "reason": "The reported Windows test isolation defect remains present on the provided main SHA."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-449",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#449",
+      "candidate_fix": null,
+      "reason": "A narrow, test-only helper repair is ready for a writable executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
