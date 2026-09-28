@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:25:28.411Z",
+  "updated_at": "2026-09-28T08:26:01.778Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5862825924:2026-09-28T03:32:55Z:re_review",
-      "comment_id": "5862825924",
-      "comment_version_key": "5862825924:2026-09-28T03:32:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5862825924",
-      "comment_created_at": "2026-09-28T03:32:55Z",
-      "comment_updated_at": "2026-09-28T03:32:55Z",
-      "comment_body_sha256": "ede8700025c1ef5ab893785fa5bd1c71a01c09241e604df233293ef215620ddc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — synced with upstream/main (merge commit e536be8902, was 42 behind, clean merge, skill-selection contract preserved: async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). focused skill-selection tests: 6/6 pass. 🙏",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:41:05.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "e536be89024f684baa59d913546aa29a83a63400",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159588:5855004522:2026-09-28T03:41:01Z:clawsweeper_needs_human",
       "comment_id": "5855004522",
@@ -33510,6 +33463,39 @@
         "kind": "pull_request",
         "branch": "deslop/l136-update-clock",
         "head_sha": "9aec913af5245579b06f9d61b47a3e39f7e785ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160180:5864317975:2026-09-28T08:20:26Z:clawsweeper_needs_human",
+      "comment_id": "5864317975",
+      "comment_version_key": "5864317975:2026-09-28T08:20:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160180#issuecomment-5864317975",
+      "comment_created_at": "2026-09-28T05:57:13Z",
+      "comment_updated_at": "2026-09-28T08:20:26Z",
+      "comment_body_sha256": "5d6238b78458e13562b35808ce5a13111d80045551bd667557e3e87c344c47e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured terminal replay uses a real parent approval and shows the changed guard and validator acc...; Review finding: [medium] Prove recovery authority at publication — .github/workflows/plugin-clawhub-new.yml:107 (sha=132bb177c712ccd15e55c546d9b6fff70f345ed4)",
+      "expected_head_sha": "132bb177c712ccd15e55c546d9b6fff70f345ed4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:26:01.778Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-bootstrap-direct-recovery",
+        "head_sha": "132bb177c712ccd15e55c546d9b6fff70f345ed4",
         "cluster_id": null,
         "job_path": null
       }
