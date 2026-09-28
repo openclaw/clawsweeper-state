@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:33:22.376Z",
+  "updated_at": "2026-09-28T12:33:31.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5865589307:2026-09-28T07:41:25Z:re_review",
-      "comment_id": "5865589307",
-      "comment_version_key": "5865589307:2026-09-28T07:41:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5865589307",
-      "comment_created_at": "2026-09-28T07:41:25Z",
-      "comment_updated_at": "2026-09-28T07:41:25Z",
-      "comment_body_sha256": "bbbf5482eec09e0be861450791c6ed3189a82764fce82adf974ada5c4a6041bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — merged upstream/main (50 commits, clean, no conflicts) into memorytunning-pr-v2. skill-selection contract intact (async worker listauditeventsindatabase, companion table audit_skill_selection_events, 4-field run-usage contract). focused tests 6/6 green. head now 6b1b7719c6",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T07:42:28.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "6b1b7719c6cd07f38919b660e9e2c39bd203f2cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160206:5864804496:2026-09-28T07:37:42Z:clawsweeper_needs_human",
       "comment_id": "5864804496",
@@ -34047,6 +34000,39 @@
         "kind": "pull_request",
         "branch": "fix/r97-forward-2",
         "head_sha": "50d160e168ffe9c411c882c8fbba7f585b391a0c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159226:5851107647:2026-09-28T12:32:21Z:clawsweeper_needs_human",
+      "comment_id": "5851107647",
+      "comment_version_key": "5851107647:2026-09-28T12:32:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159226#issuecomment-5851107647",
+      "comment_created_at": "2026-09-27T00:02:13Z",
+      "comment_updated_at": "2026-09-28T12:32:21Z",
+      "comment_body_sha256": "a7af7f25cb91e519316a851e1b90b3d976260958386107e58a5bff18a4637b99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published v2026.9.6 installation has not been shown upgrading to this exact head and reaching a healthy Gateway with automatic Config, Skills, and Memory reactions; existing install... (sha=0766b81875e25b4e9d3bb13be5b73a3a7b1b6354)",
+      "expected_head_sha": "0766b81875e25b4e9d3bb13be5b73a3a7b1b6354",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:33:31.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-watch-adoption-20260926",
+        "head_sha": "0766b81875e25b4e9d3bb13be5b73a3a7b1b6354",
         "cluster_id": null,
         "job_path": null
       }
