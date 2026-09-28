@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:30:22.750Z",
+  "updated_at": "2026-09-28T06:30:26.072Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159832:5858628203:2026-09-28T01:01:48Z:clawsweeper_needs_human",
-      "comment_id": "5858628203",
-      "comment_version_key": "5858628203:2026-09-28T01:01:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159832#issuecomment-5858628203",
-      "comment_created_at": "2026-09-27T18:37:16Z",
-      "comment_updated_at": "2026-09-28T01:01:48Z",
-      "comment_body_sha256": "33f1b0c30b6c533fdfce928ccb712147cffb8e6f38df0dda840f6db76e5ddca2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159832,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this head as unmergeable against main; the reconciled branch needs focused TUI-selection and planner validation before landing. (sha=d4e00a05fe5a4ea225d5aad606ca856236e61c42)",
-      "expected_head_sha": "d4e00a05fe5a4ea225d5aad606ca856236e61c42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T01:02:42.568Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tui-pty-runtime-prerequisite",
-        "head_sha": "d4e00a05fe5a4ea225d5aad606ca856236e61c42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110608:5010817498:2026-09-28T00:16:14Z:clawsweeper_auto_repair",
       "comment_id": "5010817498",
@@ -33668,6 +33635,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160039:5864671817:2026-09-28T06:29:25Z:re_review",
+      "comment_id": "5864671817",
+      "comment_version_key": "5864671817:2026-09-28T06:29:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160039#issuecomment-5864671817",
+      "comment_created_at": "2026-09-28T06:29:25Z",
+      "comment_updated_at": "2026-09-28T06:29:25Z",
+      "comment_body_sha256": "b2169d511af0a62880d8c0740580766a37b7a2e37ad3e757226678a33f5c6bb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160039,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T06:30:24.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/resumed-parent-activity",
+        "head_sha": "6d443939731a481491542a774e5ddfdd49dcbcec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
