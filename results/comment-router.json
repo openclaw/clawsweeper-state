@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:31:26.328Z",
+  "updated_at": "2026-09-28T11:31:38.613Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:748:5864226288:2026-09-28T06:31:11Z:clawsweeper_needs_human",
-      "comment_id": "5864226288",
-      "comment_version_key": "5864226288:2026-09-28T06:31:11Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/748#issuecomment-5864226288",
-      "comment_created_at": "2026-09-28T05:47:30Z",
-      "comment_updated_at": "2026-09-28T06:31:11Z",
-      "comment_body_sha256": "ad91f90c0104398b1a493301d50604906b46eb0e36f6dfcb3c45fa385104e172",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 748,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Unpinned installer runs during validation** - The script fetches and executes the current Rustup installer without a pinned digest, so code run on a proof machine is not fixed by the re...; Review finding: [medium] Unpinned installer runs during validation — scripts/root-race/linux-campaign.sh:7 (sha=20b47132b62de9d77675c485423ab72a9dac6241)",
-      "expected_head_sha": "20b47132b62de9d77675c485423ab72a9dac6241",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T06:39:16.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/hunt-root-races-20260927",
-        "head_sha": "20b47132b62de9d77675c485423ab72a9dac6241",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160201:5864774711:2026-09-28T06:38:17Z:clawsweeper_needs_human",
       "comment_id": "5864774711",
@@ -33752,6 +33719,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160311:5868975561:2026-09-28T11:30:05Z:re_review",
+      "comment_id": "5868975561",
+      "comment_version_key": "5868975561:2026-09-28T11:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160311#issuecomment-5868975561",
+      "comment_created_at": "2026-09-28T11:30:05Z",
+      "comment_updated_at": "2026-09-28T11:30:05Z",
+      "comment_body_sha256": "ac2b771758b81dd4009042ef89999dc9ec3b380f593c5909faf66251cdad7d51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160311,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T11:31:37.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/lint-source-graphs",
+        "head_sha": "fc8d3d2c773fb01c5f47b735cc0072dc47be6a8c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
