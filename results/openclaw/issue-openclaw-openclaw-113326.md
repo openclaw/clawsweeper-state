@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "36457717271"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36457717271"
+run_id: "36466451545"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36466451545"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-28T18:29:02.939Z"
+published_at: "2026-09-28T21:07:39.527Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36457717271](https://github.com/openclaw/clawsweeper/actions/runs/36457717271)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36466451545](https://github.com/openclaw/clawsweeper/actions/runs/36466451545)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-The checkout still rejects non-TTY login before selecting OpenAI’s documented device-code method. A narrow repair is identified, but this read-only checkout has no installed dependencies, the preflight main SHA is unavailable locally, and the required sibling ../codex source is absent. No branch change, test, or PR was completed.
+The checked-out source contains the reported non-TTY guard, but this worker could not verify the preflight main SHA, edit the read-only checkout, or run the regression. A narrow fix artifact is ready for execution after current-main verification.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The checkout still rejects non-TTY login before selecting OpenAI’s documented 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | planned | canonical | The explicit device-code path remains blocked at the CLI guard in the available checkout. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | Implementation and validation require a writable, dependency-ready checkout at a verified current main, plus inspection of the required Codex sibling source. |
+| #113326 | fix_needed | planned | canonical | The source supports a narrow bug fix, pending reproduction against the preflight main revision. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | Implementation and PR creation require a writable, current checkout and successful local validation. |
 
 ## Needs Human
 
