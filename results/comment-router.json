@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T01:34:35.613Z",
+  "updated_at": "2026-09-28T01:34:42.424Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159843:5858921057:2026-09-27T19:34:41Z:clawsweeper_needs_human",
-      "comment_id": "5858921057",
-      "comment_version_key": "5858921057:2026-09-27T19:34:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159843#issuecomment-5858921057",
-      "comment_created_at": "2026-09-27T19:13:38Z",
-      "comment_updated_at": "2026-09-27T19:34:41Z",
-      "comment_body_sha256": "0f615b078cd17bc10b1c306864671107660a75dc3d85c2b4e2ad6d10a9df1c0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve expanded audit identity collection** - The introduced chat context transfer lets opt-in audits retain authenticated profile facts for runs previously recorded as unknown; the au...; Review finding: [medium] Approve expanded audit identity collection — src/gateway/server-methods/chat-send-user-turn.ts:243 (sha=e2a2b9f94b66e3e511a5c20a2582f2e142e865d6)",
-      "expected_head_sha": "e2a2b9f94b66e3e511a5c20a2582f2e142e865d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T19:35:32.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-p02-attach-evidence",
-        "head_sha": "e2a2b9f94b66e3e511a5c20a2582f2e142e865d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5859144387:2026-09-27T19:34:50Z:re_review",
       "comment_id": "5859144387",
@@ -33549,6 +33516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5861757527:2026-09-28T01:33:35Z:re_review",
+      "comment_id": "5861757527",
+      "comment_version_key": "5861757527:2026-09-28T01:33:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5861757527",
+      "comment_created_at": "2026-09-28T01:33:35Z",
+      "comment_updated_at": "2026-09-28T01:33:35Z",
+      "comment_body_sha256": "497091f9c788407350b85e42ff2e37e494ba8dde619068d5d6fcdefacfaa8674",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main (7aa1db12 → f1783d3e, clean, no conflicts). skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). focused skill-selection tests pass (3/3); tsgo errors only in upstream src/infra/net/node-proxy-agent.ts (untouched by this pr)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T01:34:39.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "f1783d3e87784828f7ff26638fbc44ae6067637c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
