@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:00:03.508Z",
+  "updated_at": "2026-09-28T08:00:07.574Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160052:5862451381:2026-09-28T02:56:13Z:clawsweeper_needs_human",
-      "comment_id": "5862451381",
-      "comment_version_key": "5862451381:2026-09-28T02:56:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160052#issuecomment-5862451381",
-      "comment_created_at": "2026-09-28T02:56:13Z",
-      "comment_updated_at": "2026-09-28T02:56:13Z",
-      "comment_body_sha256": "f51b57c65b255b55e18cc9c230435abeda13f1b3357f53ea641f2107d95861d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160052,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: fake-client wrapper tests show a changed-session refusal, but no real Crabbox path shows an unauthorized or wit...; Review finding: [P1] Scope the 0.67.0 minimum to Testbox runs — extensions/crabbox/src/crabbox-managed-binary.ts:11 - [P2] Update the existing guide for the new label gate — scrip... (sha=66a977269adb2c543189905eaa65531b20ebd0af)",
-      "expected_head_sha": "66a977269adb2c543189905eaa65531b20ebd0af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T03:03:22.122Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/testbox-lifecycle-20260928",
-        "head_sha": "66a977269adb2c543189905eaa65531b20ebd0af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160048:5862457798:2026-09-28T02:56:56Z:clawsweeper_needs_human",
       "comment_id": "5862457798",
@@ -33592,6 +33559,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160187:5865853061:2026-09-28T07:59:08Z:re_review",
+      "comment_id": "5865853061",
+      "comment_version_key": "5865853061:2026-09-28T07:59:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160187#issuecomment-5865853061",
+      "comment_created_at": "2026-09-28T07:59:08Z",
+      "comment_updated_at": "2026-09-28T07:59:08Z",
+      "comment_body_sha256": "ba7373364e5ddc7978047e936c6e021711d2b90111c0c4be885b3339cb093757",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160187,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T08:00:06.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/canonical-extension-inventory",
+        "head_sha": "38472e208b231cadff62fed57897fac1742af2a1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
