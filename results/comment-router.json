@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:48:21.382Z",
+  "updated_at": "2026-09-28T03:48:25.340Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159864:5860018184:2026-09-27T21:33:13Z:re_review",
-      "comment_id": "5860018184",
-      "comment_version_key": "5860018184:2026-09-27T21:33:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159864#issuecomment-5860018184",
-      "comment_created_at": "2026-09-27T21:33:13Z",
-      "comment_updated_at": "2026-09-27T21:33:13Z",
-      "comment_body_sha256": "1d46dcceddbc8e8237b07f1af8529369153a6ac0825785db6af454870dde644b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159864,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T21:34:04.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/vito-session-loop-rca-20260927",
-        "head_sha": "38489245064e7d2f75ee4dd8b085ef1a509b549e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159516:5854095322:2026-09-27T21:27:01Z:clawsweeper_needs_human",
       "comment_id": "5854095322",
@@ -33618,6 +33571,39 @@
         "kind": "pull_request",
         "branch": "fix/code-span-edge-spaces",
         "head_sha": "29f3e6768f259e3f6f6508708a2d6d6286785460",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159688:5856730095:2026-09-28T03:40:51Z:clawsweeper_needs_human",
+      "comment_id": "5856730095",
+      "comment_version_key": "5856730095:2026-09-28T03:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159688#issuecomment-5856730095",
+      "comment_created_at": "2026-09-27T14:30:10Z",
+      "comment_updated_at": "2026-09-28T03:40:51Z",
+      "comment_body_sha256": "96be35a78bf57c771157744bbb07cb5f35b5919c4627b23c99d47c75b0a5fd41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159688,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accept the durable requester authority contract** - The stored requester can lead to model and tool effects after restart; existing final-effect proof is strong, but the repository's pe...; Review finding: [medium] Accept the durable requester authority contract — src/config/sessions/restart-recovery-requester.ts:5 (sha=5467fb083dcfae85fbba1c722b751ae3ea328fb4)",
+      "expected_head_sha": "5467fb083dcfae85fbba1c722b751ae3ea328fb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T03:48:25.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-session-resume",
+        "head_sha": "5467fb083dcfae85fbba1c722b751ae3ea328fb4",
         "cluster_id": null,
         "job_path": null
       }
