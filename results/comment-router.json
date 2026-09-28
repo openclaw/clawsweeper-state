@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:51:24.984Z",
+  "updated_at": "2026-09-28T07:51:49.018Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159880:5859810776:2026-09-28T01:06:52Z:clawsweeper_needs_human",
-      "comment_id": "5859810776",
-      "comment_version_key": "5859810776:2026-09-28T01:06:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159880#issuecomment-5859810776",
-      "comment_created_at": "2026-09-27T21:04:16Z",
-      "comment_updated_at": "2026-09-28T01:06:52Z",
-      "comment_body_sha256": "031d4f56fa90eb5567924bc8c9572acead6e3c2be4889d60ff19b3dabd73b5f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159880,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=9199be2042c96033c1031049ad58fba92925dfa2)",
-      "expected_head_sha": "9199be2042c96033c1031049ad58fba92925dfa2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T02:45:32.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-session-roster-publication-order",
-        "head_sha": "9199be2042c96033c1031049ad58fba92925dfa2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159923:5860412210:2026-09-28T01:48:58Z:clawsweeper_needs_human",
       "comment_id": "5860412210",
@@ -33650,6 +33617,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T07:51:24.984Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159688:5856730095:2026-09-28T07:50:47Z:clawsweeper_needs_human",
+      "comment_id": "5856730095",
+      "comment_version_key": "5856730095:2026-09-28T07:50:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159688#issuecomment-5856730095",
+      "comment_created_at": "2026-09-27T14:30:10Z",
+      "comment_updated_at": "2026-09-28T07:50:47Z",
+      "comment_body_sha256": "5fe27e08d213517a0d9d2411e2f5c76d842771de471f994dea8472d91ed3d392",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159688,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve a recovery path for legacy unsandboxed sessions (P1)** - The new continuation preflight authorizes against the original session. If the operator's current role requires a sandbox and that legacy session...; Review finding: [P1] Preserve a recovery path for legacy unsandboxed sessions — src/gateway/session-recovery-service.ts:180-187 - [medium] Approve post-restart requester custody —... (sha=7c11dd6a054a8aa9a9bd544125b78a35a8466c04)",
+      "expected_head_sha": "7c11dd6a054a8aa9a9bd544125b78a35a8466c04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:51:49.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-session-resume",
+        "head_sha": "7c11dd6a054a8aa9a9bd544125b78a35a8466c04",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
