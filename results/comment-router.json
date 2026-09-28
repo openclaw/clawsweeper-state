@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T10:52:15.268Z",
+  "updated_at": "2026-09-28T10:58:38.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160156:5864367022:2026-09-28T06:01:33Z:re_review",
-      "comment_id": "5864367022",
-      "comment_version_key": "5864367022:2026-09-28T06:01:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160156#issuecomment-5864367022",
-      "comment_created_at": "2026-09-28T06:01:33Z",
-      "comment_updated_at": "2026-09-28T06:01:33Z",
-      "comment_body_sha256": "f941b5ee01f2aa9fc1e86906ca13f70a3628b21cbb4d90eb3402c327781c0ce6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160156,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — updated head 78ac442325bae5b5afeadd27dc9bff3329188692 includes the current fixture repair and real npm-backed regression for both adapters. the pr body now includes installed-plugin baseline failure and real codex acp 1.12.0 handshake after capture deletion, including pinned npm resolution evidence and the archive-provenance limitation",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T06:02:23.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/160095-acpx-wrapper",
-        "head_sha": "78ac442325bae5b5afeadd27dc9bff3329188692",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160184:5864377060:2026-09-28T06:02:31Z:clawsweeper_needs_human",
       "comment_id": "5864377060",
@@ -33793,6 +33746,39 @@
         "kind": "pull_request",
         "branch": "fix/ingress-lane-starvation",
         "head_sha": "b2580da93640258cc34b166e628a02ed908d2e4b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160381:5868510022:2026-09-28T10:57:23Z:clawsweeper_needs_human",
+      "comment_id": "5868510022",
+      "comment_version_key": "5868510022:2026-09-28T10:57:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160381#issuecomment-5868510022",
+      "comment_created_at": "2026-09-28T10:57:23Z",
+      "comment_updated_at": "2026-09-28T10:57:23Z",
+      "comment_body_sha256": "b4870c59eb5587699c13b7ebf7ed0a644f6a3328145437d3ab6c4e2803476bd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=66d57e0dfa26e242a9c80f415c7f29d65a5721cd)",
+      "expected_head_sha": "66d57e0dfa26e242a9c80f415c7f29d65a5721cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T10:58:38.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/scheduler-closeout-0928-cron-exit-publish",
+        "head_sha": "66d57e0dfa26e242a9c80f415c7f29d65a5721cd",
         "cluster_id": null,
         "job_path": null
       }
