@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:19:26.255Z",
+  "updated_at": "2026-09-28T22:19:46.436Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160400:5869251774:2026-09-28T16:18:50Z:clawsweeper_needs_human",
-      "comment_id": "5869251774",
-      "comment_version_key": "5869251774:2026-09-28T16:18:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160400#issuecomment-5869251774",
-      "comment_created_at": "2026-09-28T11:49:53Z",
-      "comment_updated_at": "2026-09-28T16:18:50Z",
-      "comment_body_sha256": "5f0ff3d2425c534093f8ba526675d7e7472a27f64b44ab4ef9378662195eb0f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160400,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently reports a merge conflict. No pinned test-merge result is available, so the integrated resolution must be checked to preserve Doctor's private-view isolation and exist... (sha=16da6a9a10ee944ed019974af3330def192a44c8)",
-      "expected_head_sha": "16da6a9a10ee944ed019974af3330def192a44c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:48:01.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l119-doctor-native-admission",
-        "head_sha": "16da6a9a10ee944ed019974af3330def192a44c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160409:5869323064:2026-09-28T16:21:46Z:clawsweeper_auto_repair",
       "comment_id": "5869323064",
@@ -33881,6 +33848,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160698:5879770104:2026-09-28T22:18:54Z:re_review",
+      "comment_id": "5879770104",
+      "comment_version_key": "5879770104:2026-09-28T22:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160698#issuecomment-5879770104",
+      "comment_created_at": "2026-09-28T22:18:54Z",
+      "comment_updated_at": "2026-09-28T22:18:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160698,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T22:19:45.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1076",
+        "head_sha": "705759e6d9175070c0e4c85e893788f6db0df7f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
