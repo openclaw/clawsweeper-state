@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T19:36:15.694Z",
+  "updated_at": "2026-09-28T19:36:16.820Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160039:5872335342:2026-09-28T14:45:23Z:re_review",
-      "comment_id": "5872335342",
-      "comment_version_key": "5872335342:2026-09-28T14:45:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160039#issuecomment-5872335342",
-      "comment_created_at": "2026-09-28T14:45:23Z",
-      "comment_updated_at": "2026-09-28T14:45:23Z",
-      "comment_body_sha256": "57272f1d9f8a2555d1e9fa0624035dd103c898f117d945de27cea98b2f10be8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160039,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T14:46:25.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resumed-parent-activity",
-        "head_sha": "94c326897f27d0acca1a27e3154903d66c291ce0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160392:5869288247:2026-09-28T14:45:12Z:clawsweeper_auto_repair",
       "comment_id": "5869288247",
@@ -34134,6 +34087,39 @@
         "kind": "pull_request",
         "branch": "codex/claude-unavailable-quota",
         "head_sha": "f2db790e533c0636737b9e61f8bcacb976738cc2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4106:5874012353:2026-09-28T19:12:29Z:clawsweeper_needs_human",
+      "comment_id": "5874012353",
+      "comment_version_key": "5874012353:2026-09-28T19:12:29Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4106#issuecomment-5874012353",
+      "comment_created_at": "2026-09-28T16:15:14Z",
+      "comment_updated_at": "2026-09-28T19:12:29Z",
+      "comment_body_sha256": "a0453163ec5fec4ed00c81729f75237985ce7b60d597010305a14f80d36b1b19",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repository-required full sharded make test pass has not been reported for this broad migration; the focused test filter leaves other suites unverified. (sha=4b80130d559b457294fdbaf92e89188e03706495)",
+      "expected_head_sha": "4b80130d559b457294fdbaf92e89188e03706495",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T19:36:16.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/20260921-env-wrapper-sweep",
+        "head_sha": "4b80130d559b457294fdbaf92e89188e03706495",
         "cluster_id": null,
         "job_path": null
       }
