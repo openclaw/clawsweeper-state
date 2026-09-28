@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1333",
+  "mode": "autonomous",
+  "run_id": "36376066169",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36376066169",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1333.md",
+  "published_at": "2026-09-28T04:07:55.170Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1333",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1333",
+  "canonical_pr": null,
+  "summary": "Issue #1333 remains reproducible in the current main code path, but the reports describe both an absent browser-control listener and a reachable listener rejected by ownership verification. A single narrow fix is not established. No code changed and no validation commands were run.",
+  "actions": [
+    {
+      "target": "#1333",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#1333",
+      "candidate_fix": null,
+      "reason": "The hydrated reports establish two different listener states but do not establish one cause or a safe narrow patch. A Windows reproduction must distinguish missing host provisioning from false ownership rejection before changing the verification path, which protects the saved gateway token."
+    },
+    {
+      "target": "#1154",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1333",
+      "candidate_fix": null,
+      "reason": "The host-readiness work overlaps but does not establish the cause of #1333's ownership rejection."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#1333: Obtain a Windows reproduction that distinguishes absent browser-host provisioning from a reachable listener falsely rejected by ownership verification before selecting a fix."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1333",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
