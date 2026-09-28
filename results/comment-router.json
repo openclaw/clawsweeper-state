@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:54:56.241Z",
+  "updated_at": "2026-09-28T06:54:57.681Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159947:5861585826:2026-09-28T01:11:50Z:re_review",
-      "comment_id": "5861585826",
-      "comment_version_key": "5861585826:2026-09-28T01:11:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5861585826",
-      "comment_created_at": "2026-09-28T01:11:50Z",
-      "comment_updated_at": "2026-09-28T01:11:50Z",
-      "comment_body_sha256": "87431a6a53fec5140accd50c5915679d7280b2207ca5af862f4e6b65dd82e62e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159947,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:12:42.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-voice-lab",
-        "head_sha": "edb7c5f81dd8fbd6efc9199c5af30e0ccb8ce7fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159503:5861588230:2026-09-28T01:12:08Z:re_review",
-      "comment_id": "5861588230",
-      "comment_version_key": "5861588230:2026-09-28T01:12:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159503#issuecomment-5861588230",
-      "comment_created_at": "2026-09-28T01:12:08Z",
-      "comment_updated_at": "2026-09-28T01:12:08Z",
-      "comment_body_sha256": "07bde2235607c7df17c435c4c3d430f372af91691589a28c7f5287c0468e3e71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159503,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:12:59.656Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/hide-removed-queued-prompts",
-        "head_sha": "f3beceeea1faa525ae525dcd52f0951269897639",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148547:5861588634:2026-09-28T01:12:11Z:re_review",
       "comment_id": "5861588634",
@@ -33558,6 +33464,39 @@
       }
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160204:5864786019:2026-09-28T06:51:42Z:clawsweeper_auto_repair",
+      "comment_id": "5864786019",
+      "comment_version_key": "5864786019:2026-09-28T06:51:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160204#issuecomment-5864786019",
+      "comment_created_at": "2026-09-28T06:39:02Z",
+      "comment_updated_at": "2026-09-28T06:51:42Z",
+      "comment_body_sha256": "02655070308c27a5bea8a9fdfd517215ee63f0829337f090a112e9afb6f63a79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=09fc88e910fe89e8b4f90082189ede553fc5974d)",
+      "expected_head_sha": "09fc88e910fe89e8b4f90082189ede553fc5974d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:52:40.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lint-report-memory",
+        "head_sha": "09fc88e910fe89e8b4f90082189ede553fc5974d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154773:5759802997:2026-09-28T06:46:51Z:clawsweeper_auto_repair",
       "comment_id": "5759802997",
       "comment_version_key": "5759802997:2026-09-28T06:46:51Z",
@@ -33751,6 +33690,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-cleanup-fixture-sibling",
         "head_sha": "68bf6d649620ef7d7bb314dd95a0eaa486b3ca9f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160222:5864969960:2026-09-28T06:54:04Z:clawsweeper_needs_human",
+      "comment_id": "5864969960",
+      "comment_version_key": "5864969960:2026-09-28T06:54:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160222#issuecomment-5864969960",
+      "comment_created_at": "2026-09-28T06:54:04Z",
+      "comment_updated_at": "2026-09-28T06:54:04Z",
+      "comment_body_sha256": "ccabde59895a809105e2453c815bb3b09458ab04cefc373ab7a9ca3a8d701e71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the music and video candidate runtimes, reached through the media generation tools. The PR shows synthetic fa... (sha=a10d658f6df1cc5486931d61c8ae7fac82ce0802)",
+      "expected_head_sha": "a10d658f6df1cc5486931d61c8ae7fac82ce0802",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:54:57.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-candidate-failure-logging",
+        "head_sha": "a10d658f6df1cc5486931d61c8ae7fac82ce0802",
         "cluster_id": null,
         "job_path": null
       }
