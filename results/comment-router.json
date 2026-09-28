@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:18:38.372Z",
+  "updated_at": "2026-09-28T07:18:40.333Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148547:5861748718:2026-09-28T01:32:25Z:re_review",
-      "comment_id": "5861748718",
-      "comment_version_key": "5861748718:2026-09-28T01:32:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148547#issuecomment-5861748718",
-      "comment_created_at": "2026-09-28T01:32:25Z",
-      "comment_updated_at": "2026-09-28T01:32:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148547,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:40:13.081Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-stale-heartbeat-tool",
-        "head_sha": "6d8a443c188d2970a7132aa3c5eebdc15f46e072",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148547:5671330879:2026-09-28T01:39:15Z:clawsweeper_needs_human",
       "comment_id": "5671330879",
@@ -33584,6 +33537,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2588:5862610753:2026-09-28T07:17:41Z:clawsweeper_auto_repair",
+      "comment_id": "5862610753",
+      "comment_version_key": "5862610753:2026-09-28T07:17:41Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2588#issuecomment-5862610753",
+      "comment_created_at": "2026-09-28T03:13:29Z",
+      "comment_updated_at": "2026-09-28T07:17:41Z",
+      "comment_body_sha256": "7f86fc4cfb8dacf9402a0321870315cf91fbf9d5f4788f94ec20f23847536262",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=087854cc9bb7f7eccc552e891682f4e7e7d2dbbd)",
+      "expected_head_sha": "087854cc9bb7f7eccc552e891682f4e7e7d2dbbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:18:40.333Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/triage-20260928-fast-create2-timing",
+        "head_sha": "087854cc9bb7f7eccc552e891682f4e7e7d2dbbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
