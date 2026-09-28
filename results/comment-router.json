@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T04:08:53.426Z",
+  "updated_at": "2026-09-28T04:06:08.835Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159870:5859429623:2026-09-27T21:36:54Z:clawsweeper_auto_repair",
+      "comment_id": "5859429623",
+      "comment_version_key": "5859429623:2026-09-27T21:36:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159870#issuecomment-5859429623",
+      "comment_created_at": "2026-09-27T20:11:53Z",
+      "comment_updated_at": "2026-09-27T21:36:54Z",
+      "comment_body_sha256": "58c443cf9e6e875e26197744d688ff8c05ba7468d23609610dd73031764e67c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d37fd21987e16c832b276a864d0540cd393d81dc)",
+      "expected_head_sha": "d37fd21987e16c832b276a864d0540cd393d81dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T22:01:13.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/responses-image-generation",
+        "head_sha": "d37fd21987e16c832b276a864d0540cd393d81dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159873:5859477688:2026-09-27T21:57:29Z:clawsweeper_needs_human",
       "comment_id": "5859477688",
@@ -33614,53 +33647,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159854:5863150264:2026-09-28T04:07:21Z:re_review",
-      "comment_id": "5863150264",
-      "comment_version_key": "5863150264:2026-09-28T04:07:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159854#issuecomment-5863150264",
-      "comment_created_at": "2026-09-28T04:07:21Z",
-      "comment_updated_at": "2026-09-28T04:07:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159854,
-      "author": "aashish254",
-      "author_id": 145881415,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T04:08:52.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/link-detect-trailing-punctuation-improved",
-        "head_sha": "2f9e4e75a37509dcd32a79a2ff97fa761b0e891f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
