@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:35:40.109Z",
+  "updated_at": "2026-09-28T08:35:56.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133376:5863006671:2026-09-28T03:50:51Z:re_review",
-      "comment_id": "5863006671",
-      "comment_version_key": "5863006671:2026-09-28T03:50:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5863006671",
-      "comment_created_at": "2026-09-28T03:50:51Z",
-      "comment_updated_at": "2026-09-28T03:50:51Z",
-      "comment_body_sha256": "f400e92f8d6a8e2443f5c28b9c0cf65d404bd0e01d906dc44f9494d97336c9fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:51:51.151Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "eaeba699c0c649aeec956b4232895576229d3ce2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160014:5863009005:2026-09-28T03:51:02Z:re_review",
       "comment_id": "5863009005",
@@ -33570,6 +33523,39 @@
         "kind": "pull_request",
         "branch": "fix/r97-forward-10",
         "head_sha": "5c0202d0769e9f805a0a59a2034c12e25d769c92",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160212:5864869845:2026-09-28T08:28:46Z:clawsweeper_needs_human",
+      "comment_id": "5864869845",
+      "comment_version_key": "5864869845:2026-09-28T08:28:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160212#issuecomment-5864869845",
+      "comment_created_at": "2026-09-28T06:45:18Z",
+      "comment_updated_at": "2026-09-28T08:28:46Z",
+      "comment_body_sha256": "489cb4f3a05499754bd351b08185e98e8a0cb188d7fe5c3cc03d5ab04e7839dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, the current helper rejects retained two-ref request files. Operators with such a request must find and run pre-cutover tooling for read-only reconciliation; the PR docu... (sha=76d63d7414f9e0d6cad0d8eff592e53f40e6cb6d)",
+      "expected_head_sha": "76d63d7414f9e0d6cad0d8eff592e53f40e6cb6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:35:56.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-drop-target-ref",
+        "head_sha": "76d63d7414f9e0d6cad0d8eff592e53f40e6cb6d",
         "cluster_id": null,
         "job_path": null
       }
