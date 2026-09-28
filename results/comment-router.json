@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:31:29.668Z",
+  "updated_at": "2026-09-28T03:31:34.914Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159889:5859999511:2026-09-27T21:30:38Z:re_review",
-      "comment_id": "5859999511",
-      "comment_version_key": "5859999511:2026-09-27T21:30:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159889#issuecomment-5859999511",
-      "comment_created_at": "2026-09-27T21:30:38Z",
-      "comment_updated_at": "2026-09-27T21:30:38Z",
-      "comment_body_sha256": "b824c2da982313c99ec4eaaf3d41c71e13184089422f1322badbf3913ab5528e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159889,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T21:32:48.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/users-merge",
-        "head_sha": "ad141c2e757f863325e5ddb1a8777e1d2d77ee88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118013:5158624182:2026-09-27T21:21:53Z:clawsweeper_needs_human",
       "comment_id": "5158624182",
@@ -33576,6 +33529,39 @@
         "kind": "pull_request",
         "branch": "codex/acp-session-cancel",
         "head_sha": "531db611be57429c1406d55e5761584e3f7c8a50",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159759:5857595537:2026-09-28T03:30:22Z:clawsweeper_needs_human",
+      "comment_id": "5857595537",
+      "comment_version_key": "5857595537:2026-09-28T03:30:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159759#issuecomment-5857595537",
+      "comment_created_at": "2026-09-27T16:18:14Z",
+      "comment_updated_at": "2026-09-28T03:30:22Z",
+      "comment_body_sha256": "c2090b418a5c3a578364e7deaa7c149594054a17e32fce1889bb15a2a1402c74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159759,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head changes update and migration recovery paths, but its published v2026.9.6 base-upgrade and existing-state rollback cells have no completed result in the captured PR evi... (sha=205297008cab4783d2fb5c7cd8792d3c133c9cad)",
+      "expected_head_sha": "205297008cab4783d2fb5c7cd8792d3c133c9cad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T03:31:34.914Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l123-infra-fifth-pass",
+        "head_sha": "205297008cab4783d2fb5c7cd8792d3c133c9cad",
         "cluster_id": null,
         "job_path": null
       }
