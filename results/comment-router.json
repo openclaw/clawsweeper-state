@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:17:30.888Z",
+  "updated_at": "2026-09-28T03:17:51.962Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:218:5859904544:2026-09-27T21:17:08Z:clawsweeper_needs_human",
-      "comment_id": "5859904544",
-      "comment_version_key": "5859904544:2026-09-27T21:17:08Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/218#issuecomment-5859904544",
-      "comment_created_at": "2026-09-27T21:17:08Z",
-      "comment_updated_at": "2026-09-27T21:17:08Z",
-      "comment_body_sha256": "078ff3bfcc5fac7ee168399ef27994affce9a20f81804888c9651d7ede5661e9",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 218,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Official archives and Docker images would depend on Go's experimental SIMD API. A later toolchain upgrade could stop release builds until the SIMD code is updated, and the discussion... (sha=88b685b84b8a73f1295c4129fa6c86295f36b0d5)",
-      "expected_head_sha": "88b685b84b8a73f1295c4129fa6c86295f36b0d5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:18:05.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/simd-cluster-cosine",
-        "head_sha": "88b685b84b8a73f1295c4129fa6c86295f36b0d5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159890:5859906184:2026-09-27T21:17:22Z:clawsweeper_needs_human",
       "comment_id": "5859906184",
@@ -33527,6 +33494,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159873:5862655982:2026-09-28T03:16:47Z:re_review",
+      "comment_id": "5862655982",
+      "comment_version_key": "5862655982:2026-09-28T03:16:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159873#issuecomment-5862655982",
+      "comment_created_at": "2026-09-28T03:16:47Z",
+      "comment_updated_at": "2026-09-28T03:16:47Z",
+      "comment_body_sha256": "801e092ebcc92034588a35d34967b6288eeb2046b3f5b17ebcb27ea6c1ef7d62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159873,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:17:50.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-p04-restart-duplicate",
+        "head_sha": "5ec5ddc0dc810721cbc67999dd67e8d04d48c0b3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
