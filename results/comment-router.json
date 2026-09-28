@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:32:48.243Z",
+  "updated_at": "2026-09-28T17:32:53.208Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159178:5849976579:2026-09-28T13:08:04Z:clawsweeper_needs_human",
-      "comment_id": "5849976579",
-      "comment_version_key": "5849976579:2026-09-28T13:08:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159178#issuecomment-5849976579",
-      "comment_created_at": "2026-09-26T21:19:20Z",
-      "comment_updated_at": "2026-09-28T13:08:04Z",
-      "comment_body_sha256": "da95529cc5df933b3e59930ca1d09251f5128a3196b49c85f5c849eea973ec7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159178,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Current-head service and SQLite tests exercise closure and admission with modeled Crabbox command effects. The...; Review finding: [medium] Verify revoked authority before final effects — extensions/crabbox/src/crabbox-worker-warm-image-capture.ts:362 (sha=5d116aa3f1e0d85f9408d95cce0640926a8d8c60)",
-      "expected_head_sha": "5d116aa3f1e0d85f9408d95cce0640926a8d8c60",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T13:09:06.400Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr135838-provider-authority-20260926",
-        "head_sha": "5d116aa3f1e0d85f9408d95cce0640926a8d8c60",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159586:5854963145:2026-09-28T13:02:16Z:clawsweeper_auto_repair",
       "comment_id": "5854963145",
@@ -33633,6 +33600,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160495:5875211169:2026-09-28T17:31:41Z:re_review",
+      "comment_id": "5875211169",
+      "comment_version_key": "5875211169:2026-09-28T17:31:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160495#issuecomment-5875211169",
+      "comment_created_at": "2026-09-28T17:31:41Z",
+      "comment_updated_at": "2026-09-28T17:31:41Z",
+      "comment_body_sha256": "c20f813ea56973b8c26049f3484a0087fb8ff904126b89cef2eace90346cb148",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160495,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T17:32:51.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-split-root-service-route",
+        "head_sha": "b5f3bace55c231b5f6b2466151699150c77e8d35",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
