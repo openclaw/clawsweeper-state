@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "36466451545"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36466451545"
-head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+run_id: "36492041330"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36492041330"
+head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-28T21:07:39.527Z"
+published_at: "2026-09-28T23:16:35.031Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36466451545](https://github.com/openclaw/clawsweeper/actions/runs/36466451545)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36492041330](https://github.com/openclaw/clawsweeper/actions/runs/36492041330)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-The checked-out source contains the reported non-TTY guard, but this worker could not verify the preflight main SHA, edit the read-only checkout, or run the regression. A narrow fix artifact is ready for execution after current-main verification.
+At preflight main fd5a7172de91dd29a074d055ff207159c01db8ca, the CLI rejects non-TTY login before selecting OpenAI’s declared device-code method. A narrow fix is warranted, but the read-only checkout prevented a failing regression, implementation, validation, and PR preparation. No GitHub action was taken.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The checked-out source contains the reported non-TTY guard, but this worker coul
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | planned | canonical | The source supports a narrow bug fix, pending reproduction against the preflight main revision. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | Implementation and PR creation require a writable, current checkout and successful local validation. |
+| #113326 | fix_needed | planned | canonical | The documented device-code path is blocked at the CLI entry point. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked |  | Implementation and boundary proof require a writable checkout with dependencies and the required sibling Codex source. |
 
 ## Needs Human
 

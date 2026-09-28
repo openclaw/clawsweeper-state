@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "36492041330",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36492041330",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-09-28T23:16:35.031Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "At preflight main fd5a7172de91dd29a074d055ff207159c01db8ca, the CLI rejects non-TTY login before selecting OpenAI’s declared device-code method. A narrow fix is warranted, but the read-only checkout prevented a failing regression, implementation, validation, and PR preparation. No GitHub action was taken.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "The documented device-code path is blocked at the CLI entry point."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Implementation and boundary proof require a writable checkout with dependencies and the required sibling Codex source."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
