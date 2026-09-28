@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160577",
+  "mode": "autonomous",
+  "run_id": "36457506490",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36457506490",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160577.md",
+  "published_at": "2026-09-28T17:52:50.078Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160577",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160577",
+  "canonical_pr": null,
+  "summary": "Current main (7e6dd89766ce57499b38962882d12f0caaefb165) still has the reported error-classification mismatch. The required composed regression could not be run because this checkout is read-only and has no node_modules, so no code was changed or PR created.",
+  "actions": [
+    {
+      "target": "#160577",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160577",
+      "candidate_fix": null,
+      "reason": "The source path supports a narrow bridge fix, pending the job-required failing regression through the composed path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160577",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160577",
+      "candidate_fix": null,
+      "reason": "The executor must first reproduce the failure through the real mirror bridge composed with provenance, then make and validate the narrow change in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
