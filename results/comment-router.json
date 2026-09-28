@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:14:21.120Z",
+  "updated_at": "2026-09-28T08:15:16.334Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160047:5862395130:2026-09-28T03:23:01Z:clawsweeper_needs_human",
-      "comment_id": "5862395130",
-      "comment_version_key": "5862395130:2026-09-28T03:23:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160047#issuecomment-5862395130",
-      "comment_created_at": "2026-09-28T02:50:22Z",
-      "comment_updated_at": "2026-09-28T03:23:01Z",
-      "comment_body_sha256": "23028cdd446dabce11111ee847e2ee1af359cfde8499b6ab932fab28944577bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160047,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed shared classifier recognizes retirement text and preserves model_not_found for HTTP 410; supplied tests exercise classifier and coe... (sha=4ac6c9af315f5790d25838f74592f8c47cbfc87b)",
-      "expected_head_sha": "4ac6c9af315f5790d25838f74592f8c47cbfc87b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T03:23:51.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retired-model-http410",
-        "head_sha": "4ac6c9af315f5790d25838f74592f8c47cbfc87b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160013:5861718964:2026-09-28T03:24:16Z:clawsweeper_auto_repair",
       "comment_id": "5861718964",
@@ -33535,6 +33502,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:750:5865461814:2026-09-28T08:14:14Z:clawsweeper_needs_human",
+      "comment_id": "5865461814",
+      "comment_version_key": "5865461814:2026-09-28T08:14:14Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/750#issuecomment-5865461814",
+      "comment_created_at": "2026-09-28T07:32:29Z",
+      "comment_updated_at": "2026-09-28T08:14:14Z",
+      "comment_body_sha256": "52f7d2ca3ff4c2711ff01b64327aeb5eaaace05001edaa1ea18f1498db3fe384",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: Root.move({ overwrite: true }) now reaches the native identity-checking rename through retained parent...; Review finding: [P1] Preserve successful moves on rename-unstable filesystems — src/root-move-noreplace.ts:226 - [P2] Correct the Windows empty-directory replacement assertion — t... (sha=ca4c81fff4ebfd17823ece0353ccc3967dea570a)",
+      "expected_head_sha": "ca4c81fff4ebfd17823ece0353ccc3967dea570a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:15:16.333Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/require-harden-move-20260927",
+        "head_sha": "ca4c81fff4ebfd17823ece0353ccc3967dea570a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
