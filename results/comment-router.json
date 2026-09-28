@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:42:06.215Z",
+  "updated_at": "2026-09-28T22:42:21.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160495:5874808978:2026-09-28T17:05:52Z:re_review",
-      "comment_id": "5874808978",
-      "comment_version_key": "5874808978:2026-09-28T17:05:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160495#issuecomment-5874808978",
-      "comment_created_at": "2026-09-28T17:05:52Z",
-      "comment_updated_at": "2026-09-28T17:05:52Z",
-      "comment_body_sha256": "1f3726d9d40fe4a4a2c696c2c3f17ae3e85c57a7ca213ad684797d7f48cb5f40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160495,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:06:55.589Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-split-root-service-route",
-        "head_sha": "dbf35a674cffdbf8e6ce9b390df5d19b1f369f78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118977:5172284329:2026-09-28T17:06:04Z:clawsweeper_auto_repair",
       "comment_id": "5172284329",
@@ -34022,6 +33975,39 @@
         "kind": "pull_request",
         "branch": "codex/delivery-completion-read-cut",
         "head_sha": "9774991ffa7559999e8f9cf78507b92d49361625",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126150:5337305950:2026-09-28T22:41:19Z:clawsweeper_needs_human",
+      "comment_id": "5337305950",
+      "comment_version_key": "5337305950:2026-09-28T22:41:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126150#issuecomment-5337305950",
+      "comment_created_at": "2026-08-19T03:52:19Z",
+      "comment_updated_at": "2026-09-28T22:41:19Z",
+      "comment_body_sha256": "ae65fa2eb3f06eb0a4027474b97f93219239cc1a4b56b28a18a089888cd7e4d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: This branch changes the computer tool’s action list; its PR body reports mocked gateway tests but no after-fix run on a real CUA node. The insp... (sha=7da01c24d4e199c879d4e96e27af00c6ee872f05)",
+      "expected_head_sha": "7da01c24d4e199c879d4e96e27af00c6ee872f05",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T22:42:21.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-computer-wait-cua",
+        "head_sha": "7da01c24d4e199c879d4e96e27af00c6ee872f05",
         "cluster_id": null,
         "job_path": null
       }
