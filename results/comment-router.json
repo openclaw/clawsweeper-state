@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T15:38:43.904Z",
+  "updated_at": "2026-09-28T15:38:50.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Kova:155:5868457945:2026-09-28T10:53:29Z:re_review",
-      "comment_id": "5868457945",
-      "comment_version_key": "5868457945:2026-09-28T10:53:29Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/155#issuecomment-5868457945",
-      "comment_created_at": "2026-09-28T10:53:29Z",
-      "comment_updated_at": "2026-09-28T10:53:29Z",
-      "comment_body_sha256": "c468157d87af6e6bb9ea559b0336059caf15a37771396c0b50cb86c68bdd2f16",
-      "repo": "openclaw/Kova",
-      "issue_number": 155,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T10:58:36.745Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-ci/cpu-census-owner-1790591000",
-        "head_sha": "fa0a259f718c017868e7ec4ee38a16027c6d7909",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Kova:155:5868114196:2026-09-28T10:57:44Z:clawsweeper_needs_human",
       "comment_id": "5868114196",
@@ -33632,6 +33585,39 @@
         "kind": "pull_request",
         "branch": "fix/f015-drop-leftover-gateway-tokens",
         "head_sha": "329ea8e3b2b3b7b046ccbad3342f63f0a8dc9a98",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160519:5873202568:2026-09-28T15:37:44Z:clawsweeper_needs_human",
+      "comment_id": "5873202568",
+      "comment_version_key": "5873202568:2026-09-28T15:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160519#issuecomment-5873202568",
+      "comment_created_at": "2026-09-28T15:29:21Z",
+      "comment_updated_at": "2026-09-28T15:37:44Z",
+      "comment_body_sha256": "94f4c067b2597bd98314af28e6d68d58544406abd1e42929ac45969897a86da6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160519,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A pre-fix persisted native receipt can retain a false boundaryChecked value and continue linking dependency manifests on successor capture; retained peer-read behavior and the publish... (sha=2f7040a821238f7f9d6413e92279e9f090332a61)",
+      "expected_head_sha": "2f7040a821238f7f9d6413e92279e9f090332a61",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T15:38:50.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugins-copy-captured-package-manifests-20260927",
+        "head_sha": "2f7040a821238f7f9d6413e92279e9f090332a61",
         "cluster_id": null,
         "job_path": null
       }
