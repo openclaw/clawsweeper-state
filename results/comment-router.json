@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:34:03.668Z",
+  "updated_at": "2026-09-28T16:34:19.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160018:5869398052:2026-09-28T11:59:33Z:re_review",
-      "comment_id": "5869398052",
-      "comment_version_key": "5869398052:2026-09-28T11:59:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160018#issuecomment-5869398052",
-      "comment_created_at": "2026-09-28T11:59:33Z",
-      "comment_updated_at": "2026-09-28T11:59:33Z",
-      "comment_body_sha256": "8d949e9a72012b1c50dacb113ee79015aff4066c56f8260a790cfc1499c3de8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160018,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:00:35.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/requester-followup-continuation",
-        "head_sha": "5fab8563d8257559ef18032b5edbd1da852f4a65",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160413:5869417859:2026-09-28T12:01:01Z:clawsweeper_auto_repair",
       "comment_id": "5869417859",
@@ -33500,6 +33453,39 @@
         "kind": "pull_request",
         "branch": "perf/update-repair-latency",
         "head_sha": "5462fe952428bccb818487836dbd2d87d16893ca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160457:5870354649:2026-09-28T16:33:26Z:clawsweeper_needs_human",
+      "comment_id": "5870354649",
+      "comment_version_key": "5870354649:2026-09-28T16:33:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160457#issuecomment-5870354649",
+      "comment_created_at": "2026-09-28T12:59:40Z",
+      "comment_updated_at": "2026-09-28T16:33:26Z",
+      "comment_body_sha256": "c13b0d3b8385c86d020cd583dda7a74e775d11d16b309d9f7f165e57aa9891df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published updater has not been shown reconciling an existing Windows Scheduled Task through Doctor repair to a ready Gateway; an upgrade failure in that path could leave the service... (sha=f87833faf1438ed539ac5296c1663f566368cff8)",
+      "expected_head_sha": "f87833faf1438ed539ac5296c1663f566368cff8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T16:34:19.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-windows-restoration-custody",
+        "head_sha": "f87833faf1438ed539ac5296c1663f566368cff8",
         "cluster_id": null,
         "job_path": null
       }
