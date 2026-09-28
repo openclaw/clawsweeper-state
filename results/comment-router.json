@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T21:56:54.281Z",
+  "updated_at": "2026-09-28T21:57:12.410Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160465:5870589016:2026-09-28T15:47:22Z:clawsweeper_needs_human",
-      "comment_id": "5870589016",
-      "comment_version_key": "5870589016:2026-09-28T15:47:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160465#issuecomment-5870589016",
-      "comment_created_at": "2026-09-28T13:14:04Z",
-      "comment_updated_at": "2026-09-28T15:47:22Z",
-      "comment_body_sha256": "1b93a4d1e08e15b2de06a86689ef29ac611a4cc5349c9a1c501be7288783a22d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On restrictive Linux hosts, an older or mismatched worker now fails before launch and requires a coordinated host and worker upgrade; no maintainer-visible acceptance of that operator... (sha=85e772a2aee5ed75771fcdc3fcea75b2705d93dd)",
-      "expected_head_sha": "85e772a2aee5ed75771fcdc3fcea75b2705d93dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:06:01.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openshell-worker-process-ownership-repair",
-        "head_sha": "85e772a2aee5ed75771fcdc3fcea75b2705d93dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160475:5871170687:2026-09-28T15:56:48Z:clawsweeper_needs_human",
       "comment_id": "5871170687",
@@ -34041,6 +34008,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:76:5879475120:2026-09-28T21:56:26Z:re_review",
+      "comment_id": "5879475120",
+      "comment_version_key": "5879475120:2026-09-28T21:56:26Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/76#issuecomment-5879475120",
+      "comment_created_at": "2026-09-28T21:56:26Z",
+      "comment_updated_at": "2026-09-28T21:56:26Z",
+      "comment_body_sha256": "1d85e21c8c0bcffe54b069db3d2738ade762f84a96c90f8005057134bc828bd9",
+      "repo": "openclaw/rfcs",
+      "issue_number": 76,
+      "author": "ryanpei",
+      "author_id": 4312641,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T21:57:11.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cloud-run-hosting-and-sandboxes",
+        "head_sha": "26373a23bcbdc1b7b13c85e174fe18ec0138ddfe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
