@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:04:53.761Z",
+  "updated_at": "2026-09-28T11:05:04.672Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160112:5863649194:2026-09-28T06:21:43Z:clawsweeper_auto_repair",
-      "comment_id": "5863649194",
-      "comment_version_key": "5863649194:2026-09-28T06:21:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160112#issuecomment-5863649194",
-      "comment_created_at": "2026-09-28T04:48:25Z",
-      "comment_updated_at": "2026-09-28T06:21:43Z",
-      "comment_body_sha256": "07b189ad2c4cb8d5f4d6cf7b15f20e209c82aba55b2d03f411038e34713dac49",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fd124c20f466c301df3d71111901a093aff51084)",
-      "expected_head_sha": "fd124c20f466c301df3d71111901a093aff51084",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T06:22:44.346Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/semantic-boundary-memory",
-        "head_sha": "fd124c20f466c301df3d71111901a093aff51084",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160191:5864586272:2026-09-28T06:21:46Z:clawsweeper_needs_human",
       "comment_id": "5864586272",
@@ -33776,6 +33743,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160297:5868596265:2026-09-28T11:03:46Z:re_review",
+      "comment_id": "5868596265",
+      "comment_version_key": "5868596265:2026-09-28T11:03:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5868596265",
+      "comment_created_at": "2026-09-28T11:03:46Z",
+      "comment_updated_at": "2026-09-28T11:03:46Z",
+      "comment_body_sha256": "9333014bb6681e35205a359025d55f7e5fd7d1ac4b6f6ebf54ae6d67081210be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160297,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T11:05:03.262Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-session-interruption-bug",
+        "head_sha": "056529ed65769bfdfe6d1f6adac7dcf6f3c25644",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
