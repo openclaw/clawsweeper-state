@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:27:19.869Z",
+  "updated_at": "2026-09-28T22:28:22.800Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160538:5874005246:2026-09-28T16:14:49Z:clawsweeper_needs_human",
-      "comment_id": "5874005246",
-      "comment_version_key": "5874005246:2026-09-28T16:14:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160538#issuecomment-5874005246",
-      "comment_created_at": "2026-09-28T16:14:49Z",
-      "comment_updated_at": "2026-09-28T16:14:49Z",
-      "comment_body_sha256": "9cc8e263c2e4b983ffc0f568d33c1c58e7f8a6cbe95566c56e786ac6155f9aff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160538,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed installed-skill search owner has synthetic retrieval results and focused tests, but no production-b...; Review finding: [P1] Gate instruction indexing on skill-read authority — src/agents/installed-skill-catalog.ts:55 - [medium] Instruction-term inference under a denied read grant —... (sha=9128f4b456903c0212b35e084dd7e6d7c98ea032)",
-      "expected_head_sha": "9128f4b456903c0212b35e084dd7e6d7c98ea032",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:48:01.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/installed-skill-body-search",
-        "head_sha": "9128f4b456903c0212b35e084dd7e6d7c98ea032",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160539:5874033230:2026-09-28T16:28:07Z:clawsweeper_needs_human",
       "comment_id": "5874033230",
@@ -33943,6 +33910,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159947:5879872196:2026-09-28T22:28:18Z:re_review",
+      "comment_id": "5879872196",
+      "comment_version_key": "5879872196:2026-09-28T22:28:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5879872196",
+      "comment_created_at": "2026-09-28T22:27:20Z",
+      "comment_updated_at": "2026-09-28T22:28:18Z",
+      "comment_body_sha256": "30ff70a3b4f911f552dd25ae14095e1c81ac0a1609aaca20ca1e0323dd0222b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159947,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — repaired roboclaw findings in 960a6ff5b56e9deb9edd766627d1f103b4d9365d. evidence now separates this head’s local proofs from remaining sdk/security, screenshot, and live stored-id playback gates. full isolated build and changed-file validation passed. @roboclaw-bot",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T22:28:21.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/control-ui-voice-lab",
+        "head_sha": "960a6ff5b56e9deb9edd766627d1f103b4d9365d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
