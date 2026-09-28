@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159977"
-mode: "autonomous"
-run_id: "36361291881"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36361291881"
+mode: "plan"
+run_id: "36365323873"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36365323873"
 head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-28T00:48:32.222Z"
-canonical: "https://github.com/openclaw/openclaw/issues/159977"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/159977"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-28T01:19:59.447Z"
+canonical: "#159977"
+canonical_issue: "#159977"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36361291881](https://github.com/openclaw/clawsweeper/actions/runs/36361291881)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36365323873](https://github.com/openclaw/clawsweeper/actions/runs/36365323873)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/159977
+Canonical: #159977
 
 ## Summary
 
-The reported failure is still present at the preflight main SHA dd628a54504f8b72125ca92a7b158015e2ea4f07. A narrow fix is identified, but this worker’s read-only checkout prevented editing, a failing regression run, and local validation. No PR was opened.
+No fix PR is planned. The issue is already closed after a Gateway reproduction handled namespaced-channel attachments successfully. Current main still throws for a direct resolver call with an unknown namespaced ID, but the reported user-visible failure was not reproduced through the registered-channel entry point.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The reported failure is still present at the preflight main SHA dd628a54504f8b72
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159977 | fix_needed | planned | canonical | The resolver needs to skip only the direct bundled lookup for IDs that cannot name a bundled directory. |
-| cluster:issue-openclaw-openclaw-159977 | build_fix_artifact | blocked |  | Implementation and validation require a writable executor checkout with repository dependencies. |
+| https://github.com/openclaw/openclaw/issues/159977 | keep_closed | skipped | canonical | The job requires a reproducible existing user-visible bug before planning an implementation. The hydrated closing evidence and current routing source do not establish one. |
 
 ## Needs Human
 
