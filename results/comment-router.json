@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:39:08.717Z",
+  "updated_at": "2026-09-28T11:39:12.677Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160187:5864783821:2026-09-28T06:38:55Z:re_review",
-      "comment_id": "5864783821",
-      "comment_version_key": "5864783821:2026-09-28T06:38:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160187#issuecomment-5864783821",
-      "comment_created_at": "2026-09-28T06:38:55Z",
-      "comment_updated_at": "2026-09-28T06:38:55Z",
-      "comment_body_sha256": "f5f5846d87858fd9417ec3be70773a9382b3d058fc8379b87e92b887d0bc7838",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160187,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T06:39:55.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/canonical-extension-inventory",
-        "head_sha": "ebd2fa2ee88b02d7d0d95d69b4f9ac06a1bd349a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160204:5864786019:2026-09-28T06:39:02Z:clawsweeper_auto_repair",
       "comment_id": "5864786019",
@@ -33791,6 +33744,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-dashboard-update-outcome",
         "head_sha": "d0af54ed97732b6ea0f1ad7b6221bbe6d371dfb4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160110:5863642147:2026-09-28T11:34:42Z:clawsweeper_needs_human",
+      "comment_id": "5863642147",
+      "comment_version_key": "5863642147:2026-09-28T11:34:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160110#issuecomment-5863642147",
+      "comment_created_at": "2026-09-28T04:47:47Z",
+      "comment_updated_at": "2026-09-28T11:34:42Z",
+      "comment_body_sha256": "e5725c5c063262bce11c5a15f1126c19da5fc9ba28327b145a0b8c0bf72d721f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=b232595ead79e82d247aedba545c6c03e5911b48)",
+      "expected_head_sha": "b232595ead79e82d247aedba545c6c03e5911b48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T11:39:12.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/worker-runtime-install-progress",
+        "head_sha": "b232595ead79e82d247aedba545c6c03e5911b48",
         "cluster_id": null,
         "job_path": null
       }
