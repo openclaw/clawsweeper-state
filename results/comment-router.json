@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:00:37.999Z",
+  "updated_at": "2026-09-28T20:00:55.710Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160133:5863884618:2026-09-28T15:08:23Z:clawsweeper_needs_human",
-      "comment_id": "5863884618",
-      "comment_version_key": "5863884618:2026-09-28T15:08:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160133#issuecomment-5863884618",
-      "comment_created_at": "2026-09-28T05:12:02Z",
-      "comment_updated_at": "2026-09-28T15:08:23Z",
-      "comment_body_sha256": "d3337fd188829db6e936341d4a67428a69e718fe834df258b9ec28b52ef05e08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160133,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing homes with the legacy native plugin disabled could previously continue through automatic unified replacement; after merge, automatic readiness stops with plugin_disabled unti... (sha=46b9311c2709b195d3fc6a35aab50c53f3c25c41)",
-      "expected_head_sha": "46b9311c2709b195d3fc6a35aab50c53f3c25c41",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T15:09:18.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/r97-forward-8",
-        "head_sha": "46b9311c2709b195d3fc6a35aab50c53f3c25c41",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160327:5867212725:2026-09-28T15:08:14Z:clawsweeper_needs_human",
       "comment_id": "5867212725",
@@ -33767,6 +33734,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160325:5877457950:2026-09-28T20:00:05Z:re_review",
+      "comment_id": "5877457950",
+      "comment_version_key": "5877457950:2026-09-28T20:00:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160325#issuecomment-5877457950",
+      "comment_created_at": "2026-09-28T20:00:05Z",
+      "comment_updated_at": "2026-09-28T20:00:05Z",
+      "comment_body_sha256": "e39faae6ea6a148c74c1f3147cc45b46bd158f51d75a2503dba58779300dfaec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160325,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T20:00:53.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-stream-subagent-budget",
+        "head_sha": "28bfae85b6587b8c706685eb3588511df9d4acde",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
