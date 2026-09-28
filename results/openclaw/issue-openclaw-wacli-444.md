@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-444"
-mode: "autonomous"
-run_id: "36374347982"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36374347982"
+mode: "plan"
+run_id: "36374855400"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36374855400"
 head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-28T03:39:20.249Z"
-canonical: "https://github.com/openclaw/wacli/issues/444"
-canonical_issue: "https://github.com/openclaw/wacli/issues/444"
+published_at: "2026-09-28T03:46:49.098Z"
+canonical: "#444"
+canonical_issue: "#444"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36374347982](https://github.com/openclaw/clawsweeper/actions/runs/36374347982)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36374855400](https://github.com/openclaw/clawsweeper/actions/runs/36374855400)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/wacli/issues/444
+Canonical: #444
 
 ## Summary
 
-Issue #444 remains reproducible from the routing logic on main b87e617: mapped 1:1 backfill requests always use the LID, including the retry after a timeout. A narrow fix PR can add a bounded phone-JID fallback.
+Issue #444 remains viable on checked-out main b87e617: mapped 1:1 backfill requests always use the LID, and a timeout changes only the anchor. Plan a focused phone-JID fallback with regression coverage. No code was changed or tests run in this read-only plan.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -67,10 +67,8 @@ Issue #444 remains reproducible from the routing logic on main b87e617: mapped 1
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
 | #373 | keep_closed | skipped | related | Closed historical context. |
-| #427 | keep_closed | skipped | related | Closed historical context, not a candidate fix for #444. |
-| #444 | fix_needed | planned | canonical | The current routing still permits the reported regression; no open implementation PR is present in preflight. |
-| cluster:issue-openclaw-wacli-444 | build_fix_artifact | planned |  | Implement and validate the bounded identity fallback before opening the fix PR. |
-| cluster:issue-openclaw-wacli-444 | open_fix_pr | planned |  | The job allows a fix PR and prohibits merge and issue closure. |
+| #427 | keep_closed | skipped | related | Closed historical context for the reported regression. |
+| #444 | build_fix_artifact | planned | canonical | Implement and validate a bounded fallback for mapped 1:1 chats, then open one focused PR from the job’s target branch. |
 
 ## Needs Human
 
