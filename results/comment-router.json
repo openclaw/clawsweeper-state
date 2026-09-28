@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:15:45.773Z",
+  "updated_at": "2026-09-28T16:15:46.186Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154043:5752497740:2026-09-28T11:55:52Z:clawsweeper_needs_human",
-      "comment_id": "5752497740",
-      "comment_version_key": "5752497740:2026-09-28T11:55:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154043#issuecomment-5752497740",
-      "comment_created_at": "2026-09-20T20:36:36Z",
-      "comment_updated_at": "2026-09-28T11:55:52Z",
-      "comment_body_sha256": "5aaf9f50bc1d3cb31da7d38a79b2f614be7e3f749fc148cce0d83a41f5739616",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154043,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Accept the credential-bearing SDK boundary** - A server-owning plugin can add signed turn credentials at request time. The patch constrains origin, protected headers, requester admissio...; Review finding: [medium] Accept the credential-bearing SDK boundary — src/plugins/plugin-api.types.ts:231 (sha=45880a6fb51382a6ccfab6b09fe2f15c22d78249)",
-      "expected_head_sha": "45880a6fb51382a6ccfab6b09fe2f15c22d78249",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T11:57:39.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mcp-per-request-header-provider",
-        "head_sha": "45880a6fb51382a6ccfab6b09fe2f15c22d78249",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159850:5859054834:2026-09-28T11:55:45Z:clawsweeper_needs_human",
       "comment_id": "5859054834",
@@ -33403,6 +33370,53 @@
         "kind": "pull_request",
         "branch": "openclaw/session-progress-and-blocker-review",
         "head_sha": "5b31a0945f67a4da24f8ffab7333dd9b6d7f6d94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160527:5874000020:2026-09-28T16:14:30Z:re_review",
+      "comment_id": "5874000020",
+      "comment_version_key": "5874000020:2026-09-28T16:14:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160527#issuecomment-5874000020",
+      "comment_created_at": "2026-09-28T16:14:30Z",
+      "comment_updated_at": "2026-09-28T16:14:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160527,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T16:15:44.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-harness-integration-20260928",
+        "head_sha": "108af25fa9ab86fb6af4942f52308a80f5d0bac2",
         "cluster_id": null,
         "job_path": null
       },
