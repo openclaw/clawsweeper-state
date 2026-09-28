@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:50:53.366Z",
+  "updated_at": "2026-09-28T03:51:53.095Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159900:5860050037:2026-09-27T21:37:47Z:clawsweeper_needs_human",
-      "comment_id": "5860050037",
-      "comment_version_key": "5860050037:2026-09-27T21:37:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159900#issuecomment-5860050037",
-      "comment_created_at": "2026-09-27T21:37:47Z",
-      "comment_updated_at": "2026-09-27T21:37:47Z",
-      "comment_body_sha256": "9659d0c044d748e154ca0e29bccb54ecc6f2a6c1a04f4c936400a22e567029a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159900,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Provide redacted after-fix terminal output or logs from repeated listings through the Claude plugin, then update the PR body for a fresh ClawSweeper review; if that does not trigger,... (sha=202f659b3a65d9ef1a12a64b71bff224e5170ee1)",
-      "expected_head_sha": "202f659b3a65d9ef1a12a64b71bff224e5170ee1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:38:41.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-catalog-handler-per-call-allocation-20260919",
-        "head_sha": "202f659b3a65d9ef1a12a64b71bff224e5170ee1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-09-27T21:38:11Z:clawsweeper_needs_human",
       "comment_id": "5833145824",
@@ -33617,6 +33584,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133376:5863006671:2026-09-28T03:50:51Z:re_review",
+      "comment_id": "5863006671",
+      "comment_version_key": "5863006671:2026-09-28T03:50:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5863006671",
+      "comment_created_at": "2026-09-28T03:50:51Z",
+      "comment_updated_at": "2026-09-28T03:50:51Z",
+      "comment_body_sha256": "f400e92f8d6a8e2443f5c28b9c0cf65d404bd0e01d906dc44f9494d97336c9fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133376,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:51:51.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-skill-relative-read",
+        "head_sha": "eaeba699c0c649aeec956b4232895576229d3ce2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
