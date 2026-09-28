@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:49:43.228Z",
+  "updated_at": "2026-09-28T16:56:09.331Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112641:5869511700:2026-09-28T12:07:40Z:re_review",
-      "comment_id": "5869511700",
-      "comment_version_key": "5869511700:2026-09-28T12:07:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112641#issuecomment-5869511700",
-      "comment_created_at": "2026-09-28T12:07:40Z",
-      "comment_updated_at": "2026-09-28T12:07:40Z",
-      "comment_body_sha256": "96c72e9d808bcb0bad7e9b071d22408cfb355f059fd14a940a3ab51c8076ab79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112641,
-      "author": "a-tokyo",
-      "author_id": 12428415,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:35:28.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/enforce-session-maintenance-limits",
-        "head_sha": "d490268c7d8e99e7ceda8b34afe33525ae41da70",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160444:5869921136:2026-09-28T12:34:38Z:clawsweeper_auto_repair",
       "comment_id": "5869921136",
@@ -33498,6 +33451,39 @@
         "kind": "pull_request",
         "branch": "fix/f015-drop-leftover-gateway-tokens",
         "head_sha": "29c83ff9ca877b39bb7507dea1a0e7b105f6a5c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159870:5859429623:2026-09-28T16:55:07Z:clawsweeper_needs_human",
+      "comment_id": "5859429623",
+      "comment_version_key": "5859429623:2026-09-28T16:55:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159870#issuecomment-5859429623",
+      "comment_created_at": "2026-09-27T20:11:53Z",
+      "comment_updated_at": "2026-09-28T16:55:07Z",
+      "comment_body_sha256": "b9846ba122f5d7cdc385fb6eb85093d3da285a6a7ff8b8880765da1bc9204fbc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new callback is part of the exported plugin streaming options, but its intended public contract and compatibility expectations have not received an explicit maintainer decision. (sha=348688bb2405ec3cdf386b5d63e172a124011e45)",
+      "expected_head_sha": "348688bb2405ec3cdf386b5d63e172a124011e45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T16:56:09.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/responses-image-generation",
+        "head_sha": "348688bb2405ec3cdf386b5d63e172a124011e45",
         "cluster_id": null,
         "job_path": null
       }
