@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-444",
+  "mode": "autonomous",
+  "run_id": "36374347982",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36374347982",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-444.md",
+  "published_at": "2026-09-28T03:39:20.249Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/444",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/444",
+  "canonical_pr": null,
+  "summary": "Issue #444 remains reproducible from the routing logic on main b87e617: mapped 1:1 backfill requests always use the LID, including the retry after a timeout. A narrow fix PR can add a bounded phone-JID fallback.",
+  "actions": [
+    {
+      "target": "#373",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#444",
+      "candidate_fix": null,
+      "reason": "Closed historical context."
+    },
+    {
+      "target": "#427",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#444",
+      "candidate_fix": null,
+      "reason": "Closed historical context, not a candidate fix for #444."
+    },
+    {
+      "target": "#444",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#444",
+      "candidate_fix": null,
+      "reason": "The current routing still permits the reported regression; no open implementation PR is present in preflight."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-444",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#444",
+      "candidate_fix": null,
+      "reason": "Implement and validate the bounded identity fallback before opening the fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-444",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#444",
+      "candidate_fix": null,
+      "reason": "The job allows a fix PR and prohibits merge and issue closure."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
