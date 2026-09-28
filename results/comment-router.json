@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:50:20.647Z",
+  "updated_at": "2026-09-28T14:50:39.536Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127171:5369670763:2026-09-28T09:20:51Z:clawsweeper_needs_human",
-      "comment_id": "5369670763",
-      "comment_version_key": "5369670763:2026-09-28T09:20:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127171#issuecomment-5369670763",
-      "comment_created_at": "2026-08-21T12:14:35Z",
-      "comment_updated_at": "2026-09-28T09:20:51Z",
-      "comment_body_sha256": "1fb402654a428bc656846af1af452da02ebfb22de07ee32bc781e10f2fb2cdd4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject backends without an attachment projection (P1)** - The check excludes SSH only. OpenShell registers without a read-only attachment projection, so its attachment spawn can succeed while the child cannot re...; Review finding: [P1] Reject backends without an attachment projection — src/agents/subagents/spawn/subagent-attachments.ts:335-340 - [P1] Mount only the child session's attachment... (sha=b6c1f088f19a7ddb1332b25c985aaa412331fdbb)",
-      "expected_head_sha": "b6c1f088f19a7ddb1332b25c985aaa412331fdbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T10:22:46.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-929-attachment-symlink",
-        "head_sha": "b6c1f088f19a7ddb1332b25c985aaa412331fdbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127389:5374242862:2026-09-28T09:21:27Z:clawsweeper_needs_human",
       "comment_id": "5374242862",
@@ -33453,6 +33420,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T14:50:20.647Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4068:5858660196:2026-09-28T14:49:41Z:clawsweeper_needs_human",
+      "comment_id": "5858660196",
+      "comment_version_key": "5858660196:2026-09-28T14:49:41Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4068#issuecomment-5858660196",
+      "comment_created_at": "2026-09-27T18:41:45Z",
+      "comment_updated_at": "2026-09-28T14:49:41Z",
+      "comment_body_sha256": "66c696f1bef1d27da4a9bce88c66ea774f70dc48ab59053d501cbb38f51e523b",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The resolved head has no reported full make test and make check results, as requested in the previous review and the repository’s handoff guidance. (sha=e77ce6f0bf96e5c0cfb4c4285e890a056b587014)",
+      "expected_head_sha": "e77ce6f0bf96e5c0cfb4c4285e890a056b587014",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T14:50:39.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-sessions-nonisolated-deinit",
+        "head_sha": "e77ce6f0bf96e5c0cfb4c4285e890a056b587014",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
