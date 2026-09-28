@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:37:07.721Z",
+  "updated_at": "2026-09-28T22:37:22.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160176:5869576201:2026-09-28T12:11:27Z:re_review",
-      "comment_id": "5869576201",
-      "comment_version_key": "5869576201:2026-09-28T12:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160176#issuecomment-5869576201",
-      "comment_created_at": "2026-09-28T12:11:27Z",
-      "comment_updated_at": "2026-09-28T12:11:27Z",
-      "comment_body_sha256": "e502d09ba0c3a11561dd178aeb4b130eaf0f8d379b52e5ba32831440d197b0fa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160176,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:57:19.556Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160176:5869763827:2026-09-28T12:23:50Z:re_review",
       "comment_id": "5869763827",
@@ -34021,6 +33994,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T22:37:07.721Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:76:5877685150:2026-09-28T22:36:32Z:clawsweeper_needs_human",
+      "comment_id": "5877685150",
+      "comment_version_key": "5877685150:2026-09-28T22:36:32Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/76#issuecomment-5877685150",
+      "comment_created_at": "2026-09-28T20:14:48Z",
+      "comment_updated_at": "2026-09-28T22:36:32Z",
+      "comment_body_sha256": "d625061d4c6d2057f2abb727173283fe24f678cb3664f8c234f8525902acaef5",
+      "repo": "openclaw/rfcs",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The RFC records a real Cloud Run agent turn through the sandbox launcher with guest output, which supports the core sandbox concept. T...; Review finding: [P1] Wrap the image's actual activation entrypoint — rfcs/0031-cloud-run-hosting-and-sandboxes.md:401-413 - [P2] Reject invalid work directories before building th... (sha=a82ca35b0753640a3382bec1943371c85614be37)",
+      "expected_head_sha": "a82ca35b0753640a3382bec1943371c85614be37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T22:37:22.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cloud-run-hosting-and-sandboxes",
+        "head_sha": "63db75bc3d705c88bbf40f67ffb5e32dd363da24",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
