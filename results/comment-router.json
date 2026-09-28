@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:27:41.443Z",
+  "updated_at": "2026-09-28T20:31:05.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147827:5851978811:2026-09-27T02:30:43Z:re_review",
-      "comment_id": "5851978811",
-      "comment_version_key": "5851978811:2026-09-27T02:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147827#issuecomment-5851978811",
-      "comment_created_at": "2026-09-27T02:30:43Z",
-      "comment_updated_at": "2026-09-27T02:30:43Z",
-      "comment_body_sha256": "1d44cb0a66f2a3fa86e625e5f990f7b9960b74ffd7305b6ecf71e681b8b47fe5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147827,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:49:10.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-plugin-refusal-typed-fixture-proof-20260914",
-        "head_sha": "74d57459f7ff240aaccdb42c3008a389d6e228c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147827:5658752283:2026-09-28T15:29:23Z:clawsweeper_needs_human",
       "comment_id": "5658752283",
@@ -33706,6 +33659,39 @@
         "kind": "pull_request",
         "branch": "codex/ci-hourly-measured-packing",
         "head_sha": "2c3b1bfe3ca9c8d105419d7411dfa049e3e3090c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159144:5849416066:2026-09-28T20:29:57Z:clawsweeper_needs_human",
+      "comment_id": "5849416066",
+      "comment_version_key": "5849416066:2026-09-28T20:29:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159144#issuecomment-5849416066",
+      "comment_created_at": "2026-09-26T20:00:27Z",
+      "comment_updated_at": "2026-09-28T20:29:57Z",
+      "comment_body_sha256": "d32c1f07610b5912d1d0e2016ed945561e588b3eee72298dccd7544efc2f4ee0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A redacted real Google Live call on head 052846f shows the production voice-call handler protecting a greeting until carrier acknowled... (sha=3a11eaf075fb14a86636d49d6ca754a6a6c0cda0)",
+      "expected_head_sha": "3a11eaf075fb14a86636d49d6ca754a6a6c0cda0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:31:05.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-greeting-protection",
+        "head_sha": "3a11eaf075fb14a86636d49d6ca754a6a6c0cda0",
         "cluster_id": null,
         "job_path": null
       }
