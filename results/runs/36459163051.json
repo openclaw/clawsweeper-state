@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-155",
+  "mode": "plan",
+  "run_id": "36459163051",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36459163051",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-155.md",
+  "published_at": "2026-09-28T17:42:49.851Z",
+  "canonical": "#155",
+  "canonical_issue": "#155",
+  "canonical_pr": null,
+  "summary": "Current main still drops API simple tables from Markdown and omits archived table-cell text from search. A focused fix is viable; no code was changed or validation run in plan mode.",
+  "actions": [
+    {
+      "target": "#155",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155",
+      "candidate_fix": null,
+      "reason": "Add a failing table fixture first, then make the table visible in Markdown and derive searchable cell text from preserved row properties so rebuilding the index also repairs existing archives."
+    },
+    {
+      "target": "#101",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#155",
+      "candidate_fix": null,
+      "reason": "The table defect has a narrower implementation and does not resolve the rich-block backlog."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

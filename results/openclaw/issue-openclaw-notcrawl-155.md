@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-155"
-mode: "autonomous"
-run_id: "36454717377"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36454717377"
+mode: "plan"
+run_id: "36459163051"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36459163051"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-28T17:13:27.199Z"
-canonical: "https://github.com/openclaw/notcrawl/issues/155"
-canonical_issue: "https://github.com/openclaw/notcrawl/issues/155"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-28T17:42:49.851Z"
+canonical: "#155"
+canonical_issue: "#155"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36454717377](https://github.com/openclaw/clawsweeper/actions/runs/36454717377)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36459163051](https://github.com/openclaw/clawsweeper/actions/runs/36459163051)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/notcrawl/issues/155
+Canonical: #155
 
 ## Summary
 
-Issue #155 remains reproducible on preflight main 204af2f8. A focused fix is warranted, but this checkout is read-only, so no regression test, patch, validation, branch, or PR could be produced.
+Current main still drops API simple tables from Markdown and omits archived table-cell text from search. A focused fix is viable; no code was changed or validation run in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Issue #155 remains reproducible on preflight main 204af2f8. A focused fix is war
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155 | fix_needed | planned | canonical | The archived cells can supply Markdown visibility and search text without a schema change. |
-| #101 | keep_related | planned | related | The simple-table repair does not resolve the broader rich-block request. |
-| cluster:issue-openclaw-notcrawl-155 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout and Go module cache. No PR-ready patch exists. |
+| #155 | fix_needed | planned | canonical | Add a failing table fixture first, then make the table visible in Markdown and derive searchable cell text from preserved row properties so rebuilding the index also repairs existing archives. |
+| #101 | keep_related | planned | related | The table defect has a narrower implementation and does not resolve the rich-block backlog. |
 
 ## Needs Human
 
