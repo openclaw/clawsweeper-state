@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:32:15.510Z",
+  "updated_at": "2026-09-28T17:32:40.191Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160410:5870481323:2026-09-28T13:07:37Z:re_review",
-      "comment_id": "5870481323",
-      "comment_version_key": "5870481323:2026-09-28T13:07:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160410#issuecomment-5870481323",
-      "comment_created_at": "2026-09-28T13:07:37Z",
-      "comment_updated_at": "2026-09-28T13:07:37Z",
-      "comment_body_sha256": "f88915f749d0aeebb97e73384bc28afb91bae97d4af3fa56701a2b58469a3402",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160410,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T13:08:29.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/add-openclaw-link-opening-options",
-        "head_sha": "8df923d43421cce2cdf5fb697a010e1f358445ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160189:5870488263:2026-09-28T13:08:02Z:re_review",
       "comment_id": "5870488263",
@@ -33658,6 +33611,39 @@
         "kind": "pull_request",
         "branch": "fix/plugins-copy-captured-package-manifests-20260927",
         "head_sha": "dff8edaf444e5cace7ddd6ce8e6469a45709144e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160574:5875211159:2026-09-28T17:31:41Z:clawsweeper_needs_human",
+      "comment_id": "5875211159",
+      "comment_version_key": "5875211159:2026-09-28T17:31:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160574#issuecomment-5875211159",
+      "comment_created_at": "2026-09-28T17:31:41Z",
+      "comment_updated_at": "2026-09-28T17:31:41Z",
+      "comment_body_sha256": "e7cee3eca2272f95cabe92d16899a1eed84857bd3b416af8e85a966f30b8abb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The production OpenAI OAuth listeners have real loopback HTTP tests showing callback replacement and s...; Review finding: [P1] Recheck caller authority before cancelling the earlier wizard — src/gateway/server-methods/system-agent-setup-wizard.ts:65-68 - [medium] Stale caller can canc... (sha=113dd4f1ef65633640da949f16c971a09fad1567)",
+      "expected_head_sha": "113dd4f1ef65633640da949f16c971a09fad1567",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T17:32:40.191Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/siwc-oauth-retry",
+        "head_sha": "113dd4f1ef65633640da949f16c971a09fad1567",
         "cluster_id": null,
         "job_path": null
       }
