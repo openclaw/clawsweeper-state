@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:09:32.592Z",
+  "updated_at": "2026-09-28T12:10:35.082Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160113:5863647843:2026-09-28T07:05:44Z:clawsweeper_needs_human",
-      "comment_id": "5863647843",
-      "comment_version_key": "5863647843:2026-09-28T07:05:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160113#issuecomment-5863647843",
-      "comment_created_at": "2026-09-28T04:48:18Z",
-      "comment_updated_at": "2026-09-28T07:05:44Z",
-      "comment_body_sha256": "a0610f5c2525937d6223bb5a8fe1fc3888cb72070dd8a80ef67cce5ddd965c85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160113,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The PR changes Gateway queue/wait correlation and browser Talk recovery, but the captured body shows tests and...; Review finding: [P2] Read the follow-up ID before rejecting the original wait — ui/src/pages/chat/realtime-talk-shared.ts:419-427 - [medium] Verify live authority before exposing... (sha=ce4b5efd1384989eb319eca6665deb1c01021acf)",
-      "expected_head_sha": "ce4b5efd1384989eb319eca6665deb1c01021acf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T07:21:16.993Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-queued-consult-empty-completion-142080",
-        "head_sha": "ce4b5efd1384989eb319eca6665deb1c01021acf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160109:5863677404:2026-09-28T07:10:44Z:clawsweeper_needs_human",
       "comment_id": "5863677404",
@@ -33992,6 +33959,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160297:5869542289:2026-09-28T12:09:37Z:re_review",
+      "comment_id": "5869542289",
+      "comment_version_key": "5869542289:2026-09-28T12:09:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5869542289",
+      "comment_created_at": "2026-09-28T12:09:37Z",
+      "comment_updated_at": "2026-09-28T12:09:37Z",
+      "comment_body_sha256": "68db7c7f2c67889df5781e900ca2465ee1e03c45a6ac0949d2c7276efb9d97f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160297,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T12:10:33.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-session-interruption-bug",
+        "head_sha": "08fb91ee62350ddfd722309890b02d74dd1bd7c0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
