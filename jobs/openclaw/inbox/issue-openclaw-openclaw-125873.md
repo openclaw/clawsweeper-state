@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Amazon Bedrock tool-call replay defect described by https://github.com/openclaw/openclaw/issues/125873. First establish a failing regression through the Bedrock outbound conversion path using stored non-object arguments, then apply the existing shared transport argument coercion at `extensions/amazon-bedrock/stream.runtime.ts` without rewriting stored history. Cover malformed/scalar arguments, a serialized JSON object, and an already-valid object; verify the captured Converse request and, when available, Bedrock acceptance plus a successful following session turn. Review the closed unmerged candidate https://github.com/openclaw/openclaw/pull/128642 for useful prior work and credit. Keep the repair provider-scoped, add no feature or configuration option, and stop for review if the fix requires a product-policy or stored-data contract change. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the Bedrock provider’s historic tool-call replay boundary for this issue. In extensions/amazon-bedrock/stream.runtime.ts, reuse the exported shared coercion path from openclaw/plugin-sdk/provider-transport-runtime when projecting toolUse.input, so persisted malformed values become an object-shaped input while valid records remain unchanged. Do not add a session-storage fallback, configuration option, model-specific branch, or CHANGELOG edit. Add a behavior-focused regression in extensions/amazon-bedrock/stream.runtime.test.ts that injects historic malformed tool-call arguments into the context, captures the real ConverseStreamCommand input, and proves it is object-shaped; retain a valid-record case. Related context: https://github.com/openclaw/openclaw/pull/126391 and https://github.com/openclaw/openclaw/pull/21873. Establish the failing test on pre-fix code before opening a PR.
 
 Likely files:
 
@@ -77,8 +77,7 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs extensions/amazon-bedrock/stream.runtime.test.ts
-- node scripts/check-changed.mjs
-- Capture a Bedrock provider-boundary replay showing accepted normalized input and a successful following turn when an authorized Bedrock environment is available.
+- node scripts/check-changed.mjs --dry-run -- extensions/amazon-bedrock/stream.runtime.ts extensions/amazon-bedrock/stream.runtime.test.ts
 
 ## Operator Prompt
 
