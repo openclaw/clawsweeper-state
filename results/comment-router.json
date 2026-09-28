@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:01:17.305Z",
+  "updated_at": "2026-09-28T06:01:57.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159353:5852133508:2026-09-28T00:23:15Z:clawsweeper_needs_human",
-      "comment_id": "5852133508",
-      "comment_version_key": "5852133508:2026-09-28T00:23:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159353#issuecomment-5852133508",
-      "comment_created_at": "2026-09-27T02:59:11Z",
-      "comment_updated_at": "2026-09-28T00:23:15Z",
-      "comment_body_sha256": "730a9277d19b7d3e548ac208fa03744eb5801fd473b4dff51c543f5f2c0acc1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159353,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: test source connects reply settlement to the maintenance scheduler, a local HTTP provider, and transcript persi...; Review finding: [medium] Unproven final-effect authority guard — src/agents/session-maintenance/run.ts:157 (sha=c378f9383d45ffa19d76b6dcbd71663a80f1105d)",
-      "expected_head_sha": "c378f9383d45ffa19d76b6dcbd71663a80f1105d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T00:26:05.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "runt/fix-post-turn-compaction-authority",
-        "head_sha": "c378f9383d45ffa19d76b6dcbd71663a80f1105d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159811:5858440230:2026-09-28T00:13:23Z:clawsweeper_needs_human",
       "comment_id": "5858440230",
@@ -33722,6 +33689,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159782:5864360874:2026-09-28T06:00:58Z:re_review",
+      "comment_id": "5864360874",
+      "comment_version_key": "5864360874:2026-09-28T06:00:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159782#issuecomment-5864360874",
+      "comment_created_at": "2026-09-28T06:00:58Z",
+      "comment_updated_at": "2026-09-28T06:00:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159782,
+      "author": "Baishe-Pixel",
+      "author_id": 307817481,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T06:01:54.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-scoped-usage-auth",
+        "head_sha": "b004a64effe6da261da1834f5c7d60b8d95161a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
