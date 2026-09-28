@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T05:22:45.363Z",
+  "updated_at": "2026-09-28T05:23:22.624Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159726:5857133574:2026-09-27T23:07:07Z:clawsweeper_needs_human",
-      "comment_id": "5857133574",
-      "comment_version_key": "5857133574:2026-09-27T23:07:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159726#issuecomment-5857133574",
-      "comment_created_at": "2026-09-27T15:20:26Z",
-      "comment_updated_at": "2026-09-27T23:07:07Z",
-      "comment_body_sha256": "cb5009026771074446f7849c1823a119cb828ae350ae2989a56916c11c784a4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159726,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed versioned binding reader and Doctor sidecar importer lack pinned-head existing-state upgrade parity proof; an unintended normalization difference could lose stored app pol... (sha=46ca26fadc90d68114ca83f2c55ae2cb5e094f53)",
-      "expected_head_sha": "46ca26fadc90d68114ca83f2c55ae2cb5e094f53",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T23:21:38.198Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l125-codex5",
-        "head_sha": "46ca26fadc90d68114ca83f2c55ae2cb5e094f53",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159798:5858215914:2026-09-27T23:05:37Z:clawsweeper_needs_human",
       "comment_id": "5858215914",
@@ -33865,6 +33832,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159854:5863982974:2026-09-28T05:21:54Z:re_review",
+      "comment_id": "5863982974",
+      "comment_version_key": "5863982974:2026-09-28T05:21:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159854#issuecomment-5863982974",
+      "comment_created_at": "2026-09-28T05:21:54Z",
+      "comment_updated_at": "2026-09-28T05:21:54Z",
+      "comment_body_sha256": "c547fbb4f8f9f4ea3da007eaf1141a021992098d84f7f634b3ec02b346751dff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159854,
+      "author": "aashish254",
+      "author_id": 145881415,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T05:23:21.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/link-detect-trailing-punctuation-improved",
+        "head_sha": "29020e119368f12b71a6f6eb6b995b051f5b05ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
