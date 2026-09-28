@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:32:18.373Z",
+  "updated_at": "2026-09-28T12:32:21.660Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159860:5865550985:2026-09-28T07:39:19Z:re_review",
-      "comment_id": "5865550985",
-      "comment_version_key": "5865550985:2026-09-28T07:39:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159860#issuecomment-5865550985",
-      "comment_created_at": "2026-09-28T07:39:19Z",
-      "comment_updated_at": "2026-09-28T07:39:19Z",
-      "comment_body_sha256": "593821610fe1627b7605449d8307a48acdb65865803ca21307f8d722565c78fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159860,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T07:40:30.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-dashboard-auth-20260927",
-        "head_sha": "790fc72d1267e61a5c920964d917a7fe2fd120b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122135:5256881030:2026-09-28T07:40:03Z:clawsweeper_needs_human",
       "comment_id": "5256881030",
@@ -34064,6 +34017,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160176:5864260786:2026-09-28T12:31:23Z:clawsweeper_needs_human",
+      "comment_id": "5864260786",
+      "comment_version_key": "5864260786:2026-09-28T12:31:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160176#issuecomment-5864260786",
+      "comment_created_at": "2026-09-28T05:51:06Z",
+      "comment_updated_at": "2026-09-28T12:31:23Z",
+      "comment_body_sha256": "af65c0d52f00c4a2cf2897efaf81a5de1ab4bbf8d32a6d2d2e78d11a8627a19e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=46e5f792bc79fbaf588305f2e51cd62ccd79d463)",
+      "expected_head_sha": "46e5f792bc79fbaf588305f2e51cd62ccd79d463",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:32:21.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/artifact-retention-recording",
+        "head_sha": "46e5f792bc79fbaf588305f2e51cd62ccd79d463",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
