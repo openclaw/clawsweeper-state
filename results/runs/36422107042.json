@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160441",
+  "mode": "autonomous",
+  "run_id": "36422107042",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36422107042",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160441.md",
+  "published_at": "2026-09-28T13:27:06.725Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160441",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160441",
+  "canonical_pr": null,
+  "summary": "The missing OpenCode Go image routing header remains present on the pinned main commit. A narrow fix path is identified, but this read-only checkout has no installed dependencies, so this worker could not add the required failing regression, change code, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#160441",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160441",
+      "candidate_fix": null,
+      "reason": "Add a failing image-request boundary regression, then reuse the existing routing-header helper."
+    },
+    {
+      "target": "#147728",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this open for its own cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160441",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160441",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies before a fix PR can be prepared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
