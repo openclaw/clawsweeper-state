@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:26:15.728Z",
+  "updated_at": "2026-09-28T23:28:14.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160175:5864286149:2026-09-28T17:45:01Z:clawsweeper_needs_human",
-      "comment_id": "5864286149",
-      "comment_version_key": "5864286149:2026-09-28T17:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160175#issuecomment-5864286149",
-      "comment_created_at": "2026-09-28T05:53:48Z",
-      "comment_updated_at": "2026-09-28T17:45:01Z",
-      "comment_body_sha256": "b52fe2ef58bbf9c127900344869145afd20bf40fcd6b5396a9ee3e366b018391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160175,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Serial execution may cause the complete opt-in Git update preflight lint command to exceed its existing 20-minute deadline; measured CI stripes do not establish full-path headroom. (sha=d780a06d8585b65b193c49768d216782e469c18e)",
-      "expected_head_sha": "d780a06d8585b65b193c49768d216782e469c18e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:48:02.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/semantic-lint-lifetime",
-        "head_sha": "d780a06d8585b65b193c49768d216782e469c18e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160221:5865010971:2026-09-28T17:36:14Z:clawsweeper_needs_human",
       "comment_id": "5865010971",
@@ -33917,6 +33884,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159947:5880603418:2026-09-28T23:27:10Z:re_review",
+      "comment_id": "5880603418",
+      "comment_version_key": "5880603418:2026-09-28T23:27:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5880603418",
+      "comment_created_at": "2026-09-28T23:27:10Z",
+      "comment_updated_at": "2026-09-28T23:27:10Z",
+      "comment_body_sha256": "83156e951a42b7d94a1e0d2359f37e11528dbe3d9d065aabdbd0842d05880dee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159947,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — 9074e8c356da9b18b90bc7a56faf9b260b1c07fd fixes both revision-12 protocol findings with explicit stored/uncertain results, provider-owned stored identity, and regenerated native models. connected real-dispatcher-to-google-final-fetch proof now covers allowed/read-only/revoked callers for both methods; generated swift roundtrips pass. evidence distinguishes intercepted boundary proof from outstanding live google/ui proof and human approvals, and documents inherited ci fixture failures plus the unreproduced startup timeout",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T23:28:13.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/control-ui-voice-lab",
+        "head_sha": "9074e8c356da9b18b90bc7a56faf9b260b1c07fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
