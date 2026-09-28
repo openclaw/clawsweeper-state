@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-125873"
 mode: "autonomous"
-run_id: "36444377660"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36444377660"
+run_id: "36457894146"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36457894146"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-28T16:23:05.815Z"
+published_at: "2026-09-28T18:16:30.266Z"
 canonical: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/125873"
 canonical_pr: null
-actions_total: 6
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36444377660](https://github.com/openclaw/clawsweeper/actions/runs/36444377660)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36457894146](https://github.com/openclaw/clawsweeper/actions/runs/36457894146)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/125873
 
 ## Summary
 
-The Bedrock replay defect remains evident in the inspected clean checkout at 917e1b8: stored tool-call arguments reach toolUse.input through a type assertion without runtime coercion. Implementation is blocked in this read-only checkout, and the failing pre-fix regression could not run because repository dependencies are absent. No code or GitHub state was changed.
+The Bedrock replay defect is visible in the clean local checkout, but implementation cannot proceed: this environment is read-only, dependencies are absent, and the preflight main commit is unavailable locally. No regression was run, code changed, or PR opened.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ The Bedrock replay defect remains evident in the inspected clean checkout at 917
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=extensions, extensionTests, tooling [check:changed] config/assertion-safety-baseline.txt: tooling surface [check:changed] extensions/amazon-bedrock/decode-base64.ts: extension production [check:changed] extensions/amazon-bedrock/stream.runtime.test.ts: extension test [check:changed] extensions/amazon-bedrock/stream.runtime.ts: extension production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] extension test core imports $ node --import ./scripts/tsx.mjs scripts/check-no-extension-test-core-imports.ts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- config/assertion-safety-baseline.txt extensions/amazon-bedrock/decode-base64.ts extensions/amazon-bedrock/stream.runtime.test.ts extensions/amazon-bedrock/stream.runtime.ts [check:changed] doctor contract declaration + closure guard tests $ node --import ./scripts/tsx.mjs scripts/test-projects-serial.mts src/plugins/doctor-contract-declarations.test.ts src/plugins/doctor-contract-closure-guard.test.ts [test] starting test/vitest/vitest.plugins.config.ts [test] passed 1 Vitest shard in 8.75s [check:changed] plugin boundaries $ node --import ./scripts/tsx.mjs scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] typecheck extensions $ node scripts/run-tsgo.mjs -p tsconfig.extensions.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/extensions.tsbuildinfo [tsgo] FAILED (exit 2) [ELIFECYCLE] Command failed with exit code 2. [check:changed] summary 215ms ok conflict markers 400ms ok line-cap growth ratchet 6.77s ok max-lines suppression ratchet 29.76s ok assertion SAFETY comment ratchet 224ms ok changelog attributions 241ms ok doctor deprecation registry 223ms ok guarded extension wildcard re-exports 191ms ok plugin-sdk wildcard re-exports 731ms ok extension test core imports 384ms ok duplicate scan target coverage 223ms ok dependency pin guard 98ms ok format changed files 9.15s ok doctor contract declaration + closure guard tests 1.43s ok plugin boundaries 452ms ok package patch guard 348ms ok test temp creation report (warning-only) 96.84s ok core tsgo graph boundary 89.79s failed:2 typecheck extensions [check:changed] FAILED (exit 2) [ELIFECYCLE] Command failed with exit code 2. Line-cap ratchet OK: 3 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 725 grandfathered suppressions. OPENCLAW_* count 483/483 assertion SAFETY ratchet OK: 3327 files, 8750 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-09-28 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. OK: extension test files, support helpers, and plugin test helpers avoid direct core test/internal imports (4584 extension files, 0 plugin helpers checked). [dup:check] target coverage ok PASS direct dependency pin guard: checked 708 directly declared dependency specs across 194 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 5ms on 3 files using 4 threads. [1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/tmp/clawsweeper-repair-target-bjOBKr/openclaw-openclaw[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mclassifies only static value module edges[32m 105[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps broad agent runtime and heavy doctor barrels off doctor enumeration paths[33m 495[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps the runtime doctor migration helper off state DB and plugin-state graphs[32m 40[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-closure-guard.test.ts[2m > [22mdoctor contract import closures[2m > [22mkeeps kysely statically unreachable from every plugin closure[33m 974[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-declarations.test.ts[2m > [22mbundled plugin doctor contract declarations[2m > [22mmatches every resolvable artifact's coerced doctor surfaces[33m 2659[2mms[22m[39m [32m✓[39m [30m[45m plugins [49m[39m src/plugins/doctor-contract-declarations.test.ts[2m > [22mbundled plugin doctor contract declarations[2m > [22mdeclares every state migration identity and phase in module order[32m 123[2mms[22m[39m [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m [2m Tests [22m [1m[32m6 passed[39m[22m[90m (6)[39m [2m Start at [22m 16:16:10 [2m Duration [22m 7.70s[2m (tests 63%, transform 20%, setup 13%, import 3%)[22m Plugin Boundary Report compat deprecated=23 eligibleForRemoval=0 removalPending=9 removalPendingDue=1 removal-pending 2026-09-08 sdk-untrusted-context-identifier-aliases due=true blocker=`MsgContext.ChannelPromptContext`, `MsgContext.ChannelStructuredContext`, `ChannelStructuredContextEntry`, `SupplementalContextFacts.channelStructuredContext`, and `buildChannelMetadata`; retain the aliases until migration of published plugin readers is verified and explicit breaking-release approval is granted readerRefs=8028 readers=extensions/a2a/index.ts,extensions/a2a/runtime-api.ts,extensions/a2a/setup-entry.ts,extensions/a2a/src/accounts.ts,extensions/a2a/src/channel-base.ts removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=54 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser-tool.runtime.ts,extensions/browser/src/browser-tool.test-support.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/cli/browser-cli-extension.test.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=28 readers=extensions/active-memory/index.test.ts,extensions/active-memory/index.ts,extensions/codex/src/app-server/attempt-context.test.ts,extensions/codex/src/app-server/run-attempt-memory.test-support.ts,extensions/memory-core/index.ts removal-pending 2026-10-01 plugin-sdk-channel-lifecycle-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=1 readers=src/plugins/contracts/plugin-sdk-subpaths.test.ts removal-pending 2026-10-01 plugin-sdk-channel-message-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound` and `openclaw/plugin-sdk/channel-inbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/plugin-sdk-native-resolver.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-channel-reply-pipeline-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/contracts/plugin-sdk-subpaths.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-config-runtime-subpath due=false blocker=`api.pluginConfig`, `openclaw/plugin-sdk/config-mutation`, `openclaw/plugin-sdk/runtime-config-snapshot`, and `openclaw/plugin-sdk/config-contracts`; retain until supported external plugin migration is verified readerRefs=3 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts,scripts/lib/config-boundary-guard.mts,src/plugins/contracts/config-boundary-guard.test.ts removal-pending 2026-10-01 plugin-sdk-infra-runtime-subpath due=false blocker=focused subpaths including `openclaw/plugin-sdk/delivery-queue-runtime`, `openclaw/plugin-sdk/diagnostic-runtime`, `openclaw/plugin-sdk/error-runtime`, `openclaw/plugin-sdk/exec-approvals-runtime`, `openclaw/plugin-sdk/fetch-runtime`, and `openclaw/plugin-sdk/ssrf-runtime`; retain until supported external plugin migration is verified and system-event snapshot inspection and consumption have a modern public replacement readerRefs=1 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=58 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/plugin-enabled.ts plugin-sdk entrypoints=373 supportedBundledFacade=2 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=21 PASS package patch guard: no new pnpm patches; 9 approved patches allowlisted. extensions/amazon-bedrock/stream.runtime.ts(1060,19): error TS2322: Type 'Record<string, unknown>' is not assignable to type 'DocumentType | undefined'. Type 'Record<string, unknown>' is missing the following properties from type 'DocumentType[]': length, pop, push, concat, and 35 more. |
-| issue_implementation_status_comment | updated | #125873 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,12 +66,8 @@ The Bedrock replay defect remains evident in the inspected clean checkout at 917
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #125873 | keep_canonical | planned | canonical | This remains the open issue for the input-replay defect. |
-| #21873 | keep_closed | skipped | related | Historical sibling work only. |
-| #128642 | keep_closed | skipped | related | Useful historical implementation and credit source; no closure action applies. |
-| cluster:issue-openclaw-openclaw-125873 | fix_needed | planned |  | Add a failing command-input regression on pre-fix code, then apply the narrow Bedrock projection fix. |
-| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | planned |  | Prepare one fix PR after pre-fix failure and post-fix validation are established. |
-| cluster:issue-openclaw-openclaw-125873 | open_fix_pr | blocked |  | The required failing pre-fix regression, repaired branch, and local validation do not yet exist; the executor must establish them before opening or updating a PR. |
+| #125873 | fix_needed | planned | canonical | A focused provider repair remains warranted, subject to reproducing the outbound request on the preflight main commit. |
+| cluster:issue-openclaw-openclaw-125873 | build_fix_artifact | blocked |  | Refresh to the preflight main commit in a writable checkout, reproduce the defect through the outbound conversion path, then implement and validate the narrow repair. |
 
 ## Needs Human
 
