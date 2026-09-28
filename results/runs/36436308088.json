@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-155",
+  "mode": "autonomous",
+  "run_id": "36436308088",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36436308088",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-155.md",
+  "published_at": "2026-09-28T14:39:00.336Z",
+  "canonical": "https://github.com/openclaw/notcrawl/issues/155",
+  "canonical_issue": "https://github.com/openclaw/notcrawl/issues/155",
+  "canonical_pr": null,
+  "summary": "Issue #155 remains reproducible on main at 204af2f8be192709ee3f0acaef120d583465ab3c. Plan a narrow fix for archived simple-table Markdown and search; keep related issue #101 open.",
+  "actions": [
+    {
+      "target": "#155",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155",
+      "candidate_fix": null,
+      "reason": "The archived cell data is available, but Markdown export and search omit it."
+    },
+    {
+      "target": "#101",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#155",
+      "candidate_fix": null,
+      "reason": "The table fix does not resolve #101's broader rendering request."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-155",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#155",
+      "candidate_fix": null,
+      "reason": "A bounded fix can read the cells already stored in properties_json without a storage schema change."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
