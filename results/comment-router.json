@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:15:32.554Z",
+  "updated_at": "2026-09-28T06:15:48.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152012:5861323300:2026-09-28T00:37:44Z:re_review",
-      "comment_id": "5861323300",
-      "comment_version_key": "5861323300:2026-09-28T00:37:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152012#issuecomment-5861323300",
-      "comment_created_at": "2026-09-28T00:37:44Z",
-      "comment_updated_at": "2026-09-28T00:37:44Z",
-      "comment_body_sha256": "d1f1fb33b272d64fe314817d62f9a2c6ed5aa6d9dcce38c7692ffcb6c6e55684",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152012,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T00:38:32.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provisioning-retry-elapsed-timer",
-        "head_sha": "4f9a2e4c7607349a1db29f3050ef17cdcab95a88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159880:5859810776:2026-09-28T00:37:36Z:clawsweeper_needs_human",
       "comment_id": "5859810776",
@@ -33741,6 +33694,39 @@
         "kind": "pull_request",
         "branch": "deslop/l114-ui-pages4",
         "head_sha": "755f9de2295293c85e207f30a5d36eba202f864b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160080:5863083609:2026-09-28T06:14:58Z:clawsweeper_needs_human",
+      "comment_id": "5863083609",
+      "comment_version_key": "5863083609:2026-09-28T06:14:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160080#issuecomment-5863083609",
+      "comment_created_at": "2026-09-28T04:00:25Z",
+      "comment_updated_at": "2026-09-28T06:14:58Z",
+      "comment_body_sha256": "ae98d82a17a5d49d38b25f7e0fc4de70108318dc2bc8e6a0ebaaaffe4e38c7f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact Kie credentials from provider errors (P2)** - Late discovery: this call omits requestHeaders while sending an active Bearer key. If an API or proxy error reflects that key, the shared error reader retains...; Review finding: [P2] Redact Kie credentials from provider errors — extensions/kie/video-generation-provider.ts:195 - [medium] Reflected Kie API key in error output — extensions/ki... (sha=829c43edd595d1d0809efc7d076fc15b1c423926)",
+      "expected_head_sha": "829c43edd595d1d0809efc7d076fc15b1c423926",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:15:48.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/video-providers-kie-zai-novita",
+        "head_sha": "829c43edd595d1d0809efc7d076fc15b1c423926",
         "cluster_id": null,
         "job_path": null
       }
