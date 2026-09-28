@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:19:10.874Z",
+  "updated_at": "2026-09-28T06:20:03.184Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159940:5861341301:2026-09-28T00:40:07Z:re_review",
-      "comment_id": "5861341301",
-      "comment_version_key": "5861341301:2026-09-28T00:40:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159940#issuecomment-5861341301",
-      "comment_created_at": "2026-09-28T00:40:07Z",
-      "comment_updated_at": "2026-09-28T00:40:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159940,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T00:41:00.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/159862-visible-spawn-failure",
-        "head_sha": "d39c7f86df37db52f457bf0b4444bb85d177c6ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158902:5846663021:2026-09-28T00:40:16Z:clawsweeper_auto_repair",
       "comment_id": "5846663021",
@@ -33713,6 +33666,39 @@
         "kind": "pull_request",
         "branch": "release-ci/telegram-frozen-scenario-1790569200",
         "head_sha": "cdbb2b6b473b0626ad83b7fc02f64f8a039cc7f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1446:5734373005:2026-09-28T06:19:14Z:clawsweeper_needs_human",
+      "comment_id": "5734373005",
+      "comment_version_key": "5734373005:2026-09-28T06:19:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1446#issuecomment-5734373005",
+      "comment_created_at": "2026-09-18T18:23:32Z",
+      "comment_updated_at": "2026-09-28T06:19:14Z",
+      "comment_body_sha256": "910ad46f0536229b6984b6da67d9a23c065cd2223bc0f360e7420ba982dbafeb",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed tray pairing owner and native host need allowed, nearest-forbidden, and revoked observatio...; Review finding: [P1] Revalidate authority before writing the Chrome response — src/OpenClaw.BrowserBootstrap/NativeTransport.cs:70-71 - [P2] Register the host when Browser control... (sha=9c604eaad44e151ec437a75d80fc034572356efa)",
+      "expected_head_sha": "9c604eaad44e151ec437a75d80fc034572356efa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:20:03.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/automatic-chrome-extension-pairing",
+        "head_sha": "9c604eaad44e151ec437a75d80fc034572356efa",
         "cluster_id": null,
         "job_path": null
       }
