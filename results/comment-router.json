@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:07:17.458Z",
+  "updated_at": "2026-09-28T22:07:54.344Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159923:5860412210:2026-09-28T16:33:24Z:clawsweeper_needs_human",
-      "comment_id": "5860412210",
-      "comment_version_key": "5860412210:2026-09-28T16:33:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159923#issuecomment-5860412210",
-      "comment_created_at": "2026-09-27T22:27:05Z",
-      "comment_updated_at": "2026-09-28T16:33:24Z",
-      "comment_body_sha256": "6d442558bc1116f55104107e08dc954e5eefc6f94d5c758897345fe9339b9492",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159923,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm human-control grant scope** - The introduced Gateway action closes an active human viewer under the agent’s existing computer grant. The visible discussion has not independently...; Review finding: [medium] Confirm human-control grant scope — src/gateway/worker-environments/computer-transport.ts:571 (sha=d54b65fb2b0b14165ad3713968f4a34c132425bd)",
-      "expected_head_sha": "d54b65fb2b0b14165ad3713968f4a34c132425bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:48:01.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/enable-agent-takeover-mode",
-        "head_sha": "d54b65fb2b0b14165ad3713968f4a34c132425bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160039:5862175011:2026-09-28T16:35:27Z:clawsweeper_needs_human",
       "comment_id": "5862175011",
@@ -33881,6 +33848,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157331:5879613055:2026-09-28T22:06:57Z:re_review",
+      "comment_id": "5879613055",
+      "comment_version_key": "5879613055:2026-09-28T22:06:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157331#issuecomment-5879613055",
+      "comment_created_at": "2026-09-28T22:06:57Z",
+      "comment_updated_at": "2026-09-28T22:06:57Z",
+      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157331,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T22:07:52.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gemini-3.8-tts",
+        "head_sha": "827bcda62e6f92a5aa349483e95a302014caec1b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
