@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T08:01:48.929Z",
+  "updated_at": "2026-09-28T08:00:07.574Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160048:5862457798:2026-09-28T02:56:56Z:clawsweeper_needs_human",
+      "comment_id": "5862457798",
+      "comment_version_key": "5862457798:2026-09-28T02:56:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160048#issuecomment-5862457798",
+      "comment_created_at": "2026-09-28T02:56:56Z",
+      "comment_updated_at": "2026-09-28T02:56:56Z",
+      "comment_body_sha256": "c1bd06bcd42228a95870ce31a406c3075f804beeaa6fbd02b3a1c437765ead42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160048,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Memory Core callback path was exercised through a real manager and SQLite index with synthetic embedding factories, but the PR prov... (sha=fd95095cdc65a9c3a65556d14d256dbabc3c4751)",
+      "expected_head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T03:03:22.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-159912-memory-background-reload",
+        "head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159854:5859117933:2026-09-27T19:32:08Z:re_review",
       "comment_id": "5859117933",
@@ -33556,53 +33589,6 @@
         "kind": "pull_request",
         "branch": "test/canonical-extension-inventory",
         "head_sha": "38472e208b231cadff62fed57897fac1742af2a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160190:5865874869:2026-09-28T08:00:48Z:re_review",
-      "comment_id": "5865874869",
-      "comment_version_key": "5865874869:2026-09-28T08:00:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160190#issuecomment-5865874869",
-      "comment_created_at": "2026-09-28T08:00:48Z",
-      "comment_updated_at": "2026-09-28T08:00:48Z",
-      "comment_body_sha256": "1366d95c75646c73b74ceffdf4a2b1aba0a1b434e70f18b6054b6e47a1c1e85e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160190,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T08:01:46.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-ci/telegram-frozen-scenario-1790569200",
-        "head_sha": "66ca67737277e63578a2dbfcb1c0485a8d038c7f",
         "cluster_id": null,
         "job_path": null
       },
