@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T21:15:01.597Z",
+  "updated_at": "2026-09-28T21:15:02.868Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156407:5873674881:2026-09-28T15:55:06Z:re_review",
-      "comment_id": "5873674881",
-      "comment_version_key": "5873674881:2026-09-28T15:55:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156407#issuecomment-5873674881",
-      "comment_created_at": "2026-09-28T15:55:06Z",
-      "comment_updated_at": "2026-09-28T15:55:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156407,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T16:05:43.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/decision-task-models",
-        "head_sha": "68f8bcff04d1d4cfde3c864c1236ffa4cdad90e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156668:5873838952:2026-09-28T16:04:50Z:re_review",
       "comment_id": "5873838952",
@@ -33974,6 +33927,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-0.21.2-20260928",
         "head_sha": "bdf943d544a28efd560c5939548f5e075f65be7b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144324:5624419136:2026-09-28T21:13:48Z:clawsweeper_needs_human",
+      "comment_id": "5624419136",
+      "comment_version_key": "5624419136:2026-09-28T21:13:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144324#issuecomment-5624419136",
+      "comment_created_at": "2026-09-10T19:40:15Z",
+      "comment_updated_at": "2026-09-28T21:13:48Z",
+      "comment_body_sha256": "b8fe2da1e9966b3f61230ae6aba20c6611f9591c74ad069f21ea4f8e052c6b14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Default math parsing changes how previously literal dollar-delimited transcript text appears, and the built-in dependency reverses the related request owner's recorded deferral withou... (sha=83e74ca9aff78ff2b3fac5fcdc584e67b89d37fd)",
+      "expected_head_sha": "83e74ca9aff78ff2b3fac5fcdc584e67b89d37fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T21:15:02.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/control-ui-latex",
+        "head_sha": "83e74ca9aff78ff2b3fac5fcdc584e67b89d37fd",
         "cluster_id": null,
         "job_path": null
       }
