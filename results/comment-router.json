@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:40:16.308Z",
+  "updated_at": "2026-09-28T16:40:52.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159688:5856730095:2026-09-28T11:59:52Z:clawsweeper_needs_human",
-      "comment_id": "5856730095",
-      "comment_version_key": "5856730095:2026-09-28T11:59:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159688#issuecomment-5856730095",
-      "comment_created_at": "2026-09-27T14:30:10Z",
-      "comment_updated_at": "2026-09-28T11:59:52Z",
-      "comment_body_sha256": "9c5262f0c75f66285229ce9c3e9c5db3d296d979fcc7e25fd2689d5f95d75240",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve a recovery path for legacy unsandboxed sessions (P1)** - The new preflight rejects a sandbox-required operator whose tombstoned session is unsandboxed, while current main can create a sandboxed successo...; Review finding: [P1] Preserve a recovery path for legacy unsandboxed sessions — src/gateway/session-recovery-service.ts:180-189 - [medium] Approve the durable requester authority... (sha=d7df6d528f0d23f6f60bf2e71d3a5c78272e5594)",
-      "expected_head_sha": "d7df6d528f0d23f6f60bf2e71d3a5c78272e5594",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T12:07:52.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-session-resume",
-        "head_sha": "d7df6d528f0d23f6f60bf2e71d3a5c78272e5594",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159688:5856891414:2026-09-27T14:48:32Z:re_review",
       "comment_id": "5856891414",
@@ -33537,6 +33504,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160537:5874403305:2026-09-28T16:39:34Z:re_review",
+      "comment_id": "5874403305",
+      "comment_version_key": "5874403305:2026-09-28T16:39:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160537#issuecomment-5874403305",
+      "comment_created_at": "2026-09-28T16:39:34Z",
+      "comment_updated_at": "2026-09-28T16:39:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160537,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T16:40:50.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-update-audit-readiness-20260928",
+        "head_sha": "494ef5009e69c580a9ca93617ef3bb87ab0766ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
