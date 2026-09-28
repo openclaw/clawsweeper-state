@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:36:32.925Z",
+  "updated_at": "2026-09-28T23:37:06.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154534:5771102405:2026-09-22T04:13:18Z:re_review",
-      "comment_id": "5771102405",
-      "comment_version_key": "5771102405:2026-09-22T04:13:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154534#issuecomment-5771102405",
-      "comment_created_at": "2026-09-22T04:13:18Z",
-      "comment_updated_at": "2026-09-22T04:13:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154534,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:52:19.302Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154534:5771379815:2026-09-22T04:51:44Z:re_review",
       "comment_id": "5771379815",
@@ -33945,6 +33918,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T23:36:32.925Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160788:5880718659:2026-09-28T23:35:31Z:clawsweeper_needs_human",
+      "comment_id": "5880718659",
+      "comment_version_key": "5880718659:2026-09-28T23:35:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160788#issuecomment-5880718659",
+      "comment_created_at": "2026-09-28T23:35:31Z",
+      "comment_updated_at": "2026-09-28T23:35:31Z",
+      "comment_body_sha256": "ecf70057f70d57f2e695cf8c70d336889926eea2490640f40b184cf956c033b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160788,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Doctor legacy-import writer has no reported published-driver-to-candidate upgrade check on existing cron state; verify that migration receipts, quarantine entries, and pre... (sha=a16d4a3636291bd368483ccc7618496c74027a38)",
+      "expected_head_sha": "a16d4a3636291bd368483ccc7618496c74027a38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:37:06.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cron-deslop",
+        "head_sha": "a16d4a3636291bd368483ccc7618496c74027a38",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
