@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:35:54.720Z",
+  "updated_at": "2026-09-28T12:36:05.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5858172960:2026-09-27T17:37:33Z:re_review",
-      "comment_id": "5858172960",
-      "comment_version_key": "5858172960:2026-09-27T17:37:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5858172960",
-      "comment_created_at": "2026-09-27T17:37:33Z",
-      "comment_updated_at": "2026-09-27T17:37:33Z",
-      "comment_body_sha256": "0b0acef15ca86caa13dcc44d3b360385ccbb58f870308da56c2bed247c6ed746",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — branch merged with latest upstream/main (51c32cf1, 182 commits). merge was clean, no conflicts. skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage). tsgo:core clean, focused unit tests green (18 passed). ci running on new head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T07:51:24.984Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5859144387:2026-09-27T19:34:50Z:re_review",
       "comment_id": "5859144387",
@@ -33953,6 +33926,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160375:5868309698:2026-09-28T12:35:03Z:clawsweeper_needs_human",
+      "comment_id": "5868309698",
+      "comment_version_key": "5868309698:2026-09-28T12:35:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160375#issuecomment-5868309698",
+      "comment_created_at": "2026-09-28T10:42:16Z",
+      "comment_updated_at": "2026-09-28T12:35:03Z",
+      "comment_body_sha256": "72e5604d162b596134cd22ebf2e81dddd2455ed0ec1a0410fcb9859cb1ad6382",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160375,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater-to-candidate path has not been shown with existing operator config and a config-triggered Gateway restart; the changed scheduler ownership participates... (sha=238fa8cc96a000abafe82c86d49eb8aa496fcab7)",
+      "expected_head_sha": "238fa8cc96a000abafe82c86d49eb8aa496fcab7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:36:05.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/scheduler-closeout-0928-config-reload-publish",
+        "head_sha": "238fa8cc96a000abafe82c86d49eb8aa496fcab7",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
