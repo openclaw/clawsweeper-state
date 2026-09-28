@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T15:52:25.460Z",
+  "updated_at": "2026-09-28T15:52:32.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160297:5868596265:2026-09-28T11:03:46Z:re_review",
-      "comment_id": "5868596265",
-      "comment_version_key": "5868596265:2026-09-28T11:03:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5868596265",
-      "comment_created_at": "2026-09-28T11:03:46Z",
-      "comment_updated_at": "2026-09-28T11:03:46Z",
-      "comment_body_sha256": "9333014bb6681e35205a359025d55f7e5fd7d1ac4b6f6ebf54ae6d67081210be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160297,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T11:05:03.262Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-session-interruption-bug",
-        "head_sha": "056529ed65769bfdfe6d1f6adac7dcf6f3c25644",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160170:5864223689:2026-09-28T11:04:47Z:clawsweeper_needs_human",
       "comment_id": "5864223689",
@@ -33640,6 +33593,39 @@
         "kind": "pull_request",
         "branch": "roboclaw/windows-sqlite-cleanup-20260921",
         "head_sha": "0074d3286bc379e2a66e009e422434a520a345e9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159856:5859316286:2026-09-28T15:40:03Z:clawsweeper_needs_human",
+      "comment_id": "5859316286",
+      "comment_version_key": "5859316286:2026-09-28T15:40:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159856#issuecomment-5859316286",
+      "comment_created_at": "2026-09-27T19:57:05Z",
+      "comment_updated_at": "2026-09-28T15:40:03Z",
+      "comment_body_sha256": "0ef3f2b3141c3ba15ecb673cf3b8b2d273dd4a83bd1dc77b80930148b509bcb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=b481c330c531ad476d95f8ca80a82306581004b6)",
+      "expected_head_sha": "b481c330c531ad476d95f8ca80a82306581004b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T15:52:32.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l130-agents-root4",
+        "head_sha": "b481c330c531ad476d95f8ca80a82306581004b6",
         "cluster_id": null,
         "job_path": null
       }
