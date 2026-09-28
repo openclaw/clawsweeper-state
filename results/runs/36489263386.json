@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160672",
+  "mode": "plan",
+  "run_id": "36489263386",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36489263386",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160672.md",
+  "published_at": "2026-09-28T22:00:53.314Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160672",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160672",
+  "canonical_pr": null,
+  "summary": "Keep #160672 as the canonical issue and plan a narrow fix PR after a failing two-recall comparison on current main. The merged PR #124300 addressed a different Claude CLI cache mechanism. Route the separately linked #143017 to security handling because its proposed tool-catalog change implicates sender authority.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/160672",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "51893",
+      "candidate_fix": null,
+      "reason": "Reproduce the defect at the production CLI dispatch boundary before creating the fix PR."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/143017",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this linked item to central security handling; it does not govern the narrow recall-identity fix."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/124300",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related fix; the PR is already closed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
