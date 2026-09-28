@@ -2,30 +2,30 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1432"
 mode: "autonomous"
-run_id: "36412761636"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36412761636"
+run_id: "36426283632"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36426283632"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T11:03:53.627Z"
+published_at: "2026-09-28T13:54:00.911Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1432"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1432"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-node-1432
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36412761636](https://github.com/openclaw/clawsweeper/actions/runs/36412761636)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36426283632](https://github.com/openclaw/clawsweeper/actions/runs/36426283632)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1432
 
 ## Summary
 
-No fix PR is justified yet. At current main 3331b5e, PowerShell sandbox handling and the Windows UI access setting already exist. Issue #1432 lacks the failing raw invocation, effective sandbox settings, diagnostics, and a current reproduction needed to identify the cause of 0xc0000142. No code was changed, so change-triggered validation was not run.
+No safe implementation can be selected for #1432 yet. At main 3331b5e, the Windows UI API opt-in and PowerShell sandbox guidance already exist, but the reported installation's failing invocation and effective launch settings are missing. No code changed; validation was therefore not run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,10 @@ No fix PR is justified yet. At current main 3331b5e, PowerShell sandbox handling
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1432 | keep_canonical | planned | canonical | Implementation is blocked until a current failing invocation and launch diagnostics distinguish UI-deny from another launch failure. |
-| #1143 | keep_closed | skipped | related | Historical context; the cause of #1432 has not been established. |
-| #1147 | route_security | planned | security_sensitive | Quarantine this historical security-boundary PR from automated repair; no mutation is proposed. |
-| #1189 | keep_closed | skipped | related | Historical, distinct failure; no action on the closed issue. |
-| #1327 | route_security | planned | security_sensitive | Quarantine this historical security-boundary PR from automated repair; no mutation is proposed. |
+| #1432 | needs_human | blocked | canonical | The provided artifacts cannot distinguish UI-deny behavior from another launch-context failure. Obtain one redacted raw invocation and result, Diagnostics output, sandbox settings, and execution mode, then reproduce against current main before choosing an implementation. |
+| #1147 | route_security | planned | security_sensitive | Historical security-boundary context belongs with central OpenClaw security handling; no mutation is proposed. |
+| #1327 | route_security | planned | security_sensitive | Historical security-boundary context belongs with central OpenClaw security handling; no mutation is proposed. |
 
 ## Needs Human
 
-- none
+- #1432: The failing raw invocation and result, Diagnostics output, effective sandbox settings, execution mode, and a current-main reproduction are unavailable. These are needed to identify a safe, narrow fix.
