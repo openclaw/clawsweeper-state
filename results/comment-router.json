@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T18:52:33.207Z",
+  "updated_at": "2026-09-28T18:59:21.746Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160038:5862149388:2026-09-28T14:04:23Z:clawsweeper_needs_human",
-      "comment_id": "5862149388",
-      "comment_version_key": "5862149388:2026-09-28T14:04:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160038#issuecomment-5862149388",
-      "comment_created_at": "2026-09-28T02:21:18Z",
-      "comment_updated_at": "2026-09-28T14:04:23Z",
-      "comment_body_sha256": "24d4f31012bc94964ce1b07bf62cee5b70d6122185c9d34ade371aa32363851b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160038,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The edited Bedrock and Tencent Doctor migrations can rewrite saved settings during an update; no published-updater replay into this candidate shows that existing values, backups, and... (sha=5e0af12b9be15de0761d0c82bfdce051d037b22a)",
-      "expected_head_sha": "5e0af12b9be15de0761d0c82bfdce051d037b22a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T14:15:43.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l136-providers2",
-        "head_sha": "5e0af12b9be15de0761d0c82bfdce051d037b22a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160119:5863823332:2026-09-28T13:57:37Z:clawsweeper_auto_repair",
       "comment_id": "5863823332",
@@ -33895,6 +33862,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160188:5876517238:2026-09-28T18:58:28Z:re_review",
+      "comment_id": "5876517238",
+      "comment_version_key": "5876517238:2026-09-28T18:58:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160188#issuecomment-5876517238",
+      "comment_created_at": "2026-09-28T18:58:28Z",
+      "comment_updated_at": "2026-09-28T18:58:28Z",
+      "comment_body_sha256": "bb8234e8564fa8dabbd29c5e0df9cd8382cfeee07e2c5ea390742580cb02041a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160188,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T18:59:20.435Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/node-parity-l8-node-ux",
+        "head_sha": "51c3e6a73e46f5652c29e4df9687d6ff316cd0c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
