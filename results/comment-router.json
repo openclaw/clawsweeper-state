@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:57:45.807Z",
+  "updated_at": "2026-09-28T11:58:02.975Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121050:5231352861:2026-09-28T07:17:38Z:clawsweeper_auto_repair",
-      "comment_id": "5231352861",
-      "comment_version_key": "5231352861:2026-09-28T07:17:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121050#issuecomment-5231352861",
-      "comment_created_at": "2026-08-09T11:47:27Z",
-      "comment_updated_at": "2026-09-28T07:17:38Z",
-      "comment_body_sha256": "bec8a6f717aabc9868c92f1144f29fa620435f965c56b6af15e4677f943159e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121050,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a7b2ab531422738de9f88397aa0318b0a8bb7744)",
-      "expected_head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T07:20:18.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-55372",
-        "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-        "cluster_id": "automerge-openclaw-openclaw-121050",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159387:5865272585:2026-09-28T07:17:37Z:re_review",
       "comment_id": "5865272585",
@@ -33965,6 +33918,39 @@
         "kind": "pull_request",
         "branch": "codex/node-parity-l5-reconcile",
         "head_sha": "6e63119540dd895bcf23c4df7b2b855590a6b13a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160398:5869361007:2026-09-28T11:57:00Z:clawsweeper_needs_human",
+      "comment_id": "5869361007",
+      "comment_version_key": "5869361007:2026-09-28T11:57:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160398#issuecomment-5869361007",
+      "comment_created_at": "2026-09-28T11:57:00Z",
+      "comment_updated_at": "2026-09-28T11:57:00Z",
+      "comment_body_sha256": "46d3da15ec770a259e355c359bac66541a04d3ef16f7df4fc2888fbd0b72d589",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160398,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Workshop guidance reaches the agent through the production tool description, schema, and patch rejection, but the PR supplies no af... (sha=98be32d05e65e20f16db99e82460cd0a1843fc62)",
+      "expected_head_sha": "98be32d05e65e20f16db99e82460cd0a1843fc62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T11:58:02.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workshop-repair-guidance-152285",
+        "head_sha": "98be32d05e65e20f16db99e82460cd0a1843fc62",
         "cluster_id": null,
         "job_path": null
       }
