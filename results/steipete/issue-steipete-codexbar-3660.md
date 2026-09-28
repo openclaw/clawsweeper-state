@@ -2,12 +2,12 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-3660"
 mode: "autonomous"
-run_id: "36469337061"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36469337061"
-head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+run_id: "36489034004"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36489034004"
+head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-09-28T20:36:40.671Z"
+result_status: "needs_human"
+published_at: "2026-09-28T22:32:19.391Z"
 canonical: "https://github.com/steipete/CodexBar/issues/3660"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/3660"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-steipete-codexbar-3660
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36469337061](https://github.com/openclaw/clawsweeper/actions/runs/36469337061)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36489034004](https://github.com/openclaw/clawsweeper/actions/runs/36489034004)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/steipete/CodexBar/issues/3660
 
 ## Summary
 
-No focused PR is justified yet. At main bd77ea6a, Devin has improved session errors, Chromium browser discovery, and manual-auth guidance, but the reporter has not retested that build or supplied the current error, browser profile, and Auth source. The cause of the remaining automatic-discovery failure is unknown.
+The automatic-auth failure remains unverified after the Devin diagnostics and Chromium discovery changes on main. The reporter has not supplied a current reproduction that identifies the failing stage, so a focused implementation PR cannot be justified from these artifacts.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No focused PR is justified yet. At main bd77ea6a, Devin has improved session err
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,8 @@ No focused PR is justified yet. At main bd77ea6a, Devin has improved session err
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #3660 | keep_canonical | planned | canonical | Implementation is blocked on a current reproduction that identifies the failing automatic-auth path. The available report does not support a narrow change that can be shown to resolve #3660. |
+| #3660 | needs_human | blocked | needs_human | A reporter retest on a build containing #3814 and #3883, with the selected Auth source, signed-in browser/profile, and exact current error, is needed to identify a specific failing stage before implementing a narrow fix. Do not request tokens or raw browser storage. |
 
 ## Needs Human
 
-- none
+- Obtain a current automatic-auth reproduction for #3660 after #3814 and #3883: selected Auth source, signed-in browser/profile, and exact error. The provided artifacts do not identify a remaining defect that can be safely patched.
