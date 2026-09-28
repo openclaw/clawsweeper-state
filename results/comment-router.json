@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T02:09:40.499Z",
+  "updated_at": "2026-09-28T02:07:12.737Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159854:5859152771:2026-09-27T19:41:46Z:clawsweeper_auto_repair",
+      "comment_id": "5859152771",
+      "comment_version_key": "5859152771:2026-09-27T19:41:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159854#issuecomment-5859152771",
+      "comment_created_at": "2026-09-27T19:35:44Z",
+      "comment_updated_at": "2026-09-27T19:41:46Z",
+      "comment_body_sha256": "ad1a2659f0bec97b2f86ca5000fe3854e31c50b8cd0da5d41a7961fb53741c8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b42f98ad3a84f4d1517f62f0d99c637537aae688)",
+      "expected_head_sha": "b42f98ad3a84f4d1517f62f0d99c637537aae688",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-27T20:00:55.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/link-detect-trailing-punctuation-improved",
+        "head_sha": "b42f98ad3a84f4d1517f62f0d99c637537aae688",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159859:5859352508:2026-09-27T20:01:59Z:clawsweeper_needs_human",
       "comment_id": "5859352508",
@@ -33474,53 +33507,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159984:5862035468:2026-09-28T02:08:43Z:re_review",
-      "comment_id": "5862035468",
-      "comment_version_key": "5862035468:2026-09-28T02:08:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159984#issuecomment-5862035468",
-      "comment_created_at": "2026-09-28T02:08:43Z",
-      "comment_updated_at": "2026-09-28T02:08:43Z",
-      "comment_body_sha256": "d012eb686cd7df38eb8363c8b4f1215cf06797a05b6b80544b50661f3db13295",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159984,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T02:09:39.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-independent-new-chat",
-        "head_sha": "5dbe76ae16f934d4e31a058165865dcf10baf020",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
