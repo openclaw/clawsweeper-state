@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160672",
+  "mode": "autonomous",
+  "run_id": "36475432283",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36475432283",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160672.md",
+  "published_at": "2026-09-28T20:54:03.771Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160672",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160672",
+  "canonical_pr": null,
+  "summary": "Current main still gives each Active Memory recall a unique session key, which reaches the Claude CLI system prompt. A narrow fix should keep unique storage identities while giving repeated recalls a stable, truthful prompt identity. The executor must prove the outgoing prompt bytes before and after the change.",
+  "actions": [
+    {
+      "target": "#160672",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160672",
+      "candidate_fix": null,
+      "reason": "The merged Claude CLI cache work does not remove this Active Memory generated prompt difference."
+    },
+    {
+      "target": "#143017",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#160672",
+      "candidate_fix": null,
+      "reason": "The reports share a cache symptom but have distinct owners and remaining work."
+    },
+    {
+      "target": "#124300",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#160672",
+      "candidate_fix": null,
+      "reason": "Historical context only; the PR does not cover Active Memory's generated recall key."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160672",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#160672",
+      "candidate_fix": null,
+      "reason": "The executor should establish the failing prompt comparison, implement the narrow fix, and validate it before opening or updating the issue branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
