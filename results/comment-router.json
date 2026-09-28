@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T05:35:16.105Z",
+  "updated_at": "2026-09-28T05:36:49.966Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159943:5860825271:2026-09-27T23:28:33Z:re_review",
-      "comment_id": "5860825271",
-      "comment_version_key": "5860825271:2026-09-27T23:28:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159943#issuecomment-5860825271",
-      "comment_created_at": "2026-09-27T23:28:33Z",
-      "comment_updated_at": "2026-09-27T23:28:33Z",
-      "comment_body_sha256": "36d121f141fd3e513da2162dc89ee5f0d5fd84c130b9b8401cf87230071d4026",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159943,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T23:32:56.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/correlated-recovery-custody",
-        "head_sha": "ebb1edf2f720351e53c77e99939806cd5e421c79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159947:5860834845:2026-09-27T23:30:02Z:re_review",
       "comment_id": "5860834845",
@@ -33868,6 +33821,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-differential-harness-20260927",
         "head_sha": "8fb2dbfe0c4fee269010800f80db2c0d8cedddac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160156:5864115185:2026-09-28T05:35:57Z:clawsweeper_needs_human",
+      "comment_id": "5864115185",
+      "comment_version_key": "5864115185:2026-09-28T05:35:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160156#issuecomment-5864115185",
+      "comment_created_at": "2026-09-28T05:35:57Z",
+      "comment_updated_at": "2026-09-28T05:35:57Z",
+      "comment_body_sha256": "098c74ca3530c53ce39f72127d54075e3a2a723a89fb64ad39f407afdc27c6e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160156,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the generated ACP wrapper. The reported red/green test executes that wrapper after deleting its captured path,... (sha=22b7e93f6f6b070b7567b3ae7bb0704e5fa172c7)",
+      "expected_head_sha": "22b7e93f6f6b070b7567b3ae7bb0704e5fa172c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T05:36:49.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160095-acpx-wrapper",
+        "head_sha": "22b7e93f6f6b070b7567b3ae7bb0704e5fa172c7",
         "cluster_id": null,
         "job_path": null
       }
