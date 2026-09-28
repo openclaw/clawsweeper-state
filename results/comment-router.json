@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:01:57.302Z",
+  "updated_at": "2026-09-28T06:02:25.120Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159811:5858440230:2026-09-28T00:13:23Z:clawsweeper_needs_human",
-      "comment_id": "5858440230",
-      "comment_version_key": "5858440230:2026-09-28T00:13:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159811#issuecomment-5858440230",
-      "comment_created_at": "2026-09-27T18:11:41Z",
-      "comment_updated_at": "2026-09-28T00:13:23Z",
-      "comment_body_sha256": "93dd6aa589383efe7a1c63a72d97e47ef598961b839d6855c20e776a2876830c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head has no production-boundary trace showing that a durably accepted first event drains promptly when a later event in the same batch fails admission. (sha=2953a71aec0ff9821708781eda378ac0f8ebe0a0)",
-      "expected_head_sha": "2953a71aec0ff9821708781eda378ac0f8ebe0a0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T00:26:11.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l128-channels-core3",
-        "head_sha": "2953a71aec0ff9821708781eda378ac0f8ebe0a0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159945:5860711249:2026-09-28T00:14:43Z:clawsweeper_needs_human",
       "comment_id": "5860711249",
@@ -33719,6 +33686,53 @@
         "kind": "pull_request",
         "branch": "feat/session-scoped-usage-auth",
         "head_sha": "b004a64effe6da261da1834f5c7d60b8d95161a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160156:5864367022:2026-09-28T06:01:33Z:re_review",
+      "comment_id": "5864367022",
+      "comment_version_key": "5864367022:2026-09-28T06:01:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160156#issuecomment-5864367022",
+      "comment_created_at": "2026-09-28T06:01:33Z",
+      "comment_updated_at": "2026-09-28T06:01:33Z",
+      "comment_body_sha256": "f941b5ee01f2aa9fc1e86906ca13f70a3628b21cbb4d90eb3402c327781c0ce6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160156,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — updated head 78ac442325bae5b5afeadd27dc9bff3329188692 includes the current fixture repair and real npm-backed regression for both adapters. the pr body now includes installed-plugin baseline failure and real codex acp 1.12.0 handshake after capture deletion, including pinned npm resolution evidence and the archive-provenance limitation",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T06:02:23.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160095-acpx-wrapper",
+        "head_sha": "78ac442325bae5b5afeadd27dc9bff3329188692",
         "cluster_id": null,
         "job_path": null
       },
