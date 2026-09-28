@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:18:09.117Z",
+  "updated_at": "2026-09-28T03:19:32.428Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159887:5859906910:2026-09-27T21:17:29Z:clawsweeper_needs_human",
-      "comment_id": "5859906910",
-      "comment_version_key": "5859906910:2026-09-27T21:17:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159887#issuecomment-5859906910",
-      "comment_created_at": "2026-09-27T21:17:29Z",
-      "comment_updated_at": "2026-09-27T21:17:29Z",
-      "comment_body_sha256": "afdfd401e611e51d61f95bceb3c1362ac60decc1df344ce781401ba6d157c10a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159887,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing saved in-app browser preference has not been exercised through the new toggle and reload, so preservation of older browser-local settings lacks upgrade proof. (sha=dbe87e860fa59743939ca707fc9bbbc22c6b2562)",
-      "expected_head_sha": "dbe87e860fa59743939ca707fc9bbbc22c6b2562",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:18:36.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/personal-link-browser-preference",
-        "head_sha": "dbe87e860fa59743939ca707fc9bbbc22c6b2562",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156703:5800944724:2026-09-27T21:20:41Z:clawsweeper_needs_human",
       "comment_id": "5800944724",
@@ -33541,6 +33508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159555:5862678598:2026-09-28T03:18:31Z:re_review",
+      "comment_id": "5862678598",
+      "comment_version_key": "5862678598:2026-09-28T03:18:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159555#issuecomment-5862678598",
+      "comment_created_at": "2026-09-28T03:18:31Z",
+      "comment_updated_at": "2026-09-28T03:18:31Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159555,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:19:30.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agentsapi-settlement-cleanup-deadline-monotonic-148",
+        "head_sha": "5b1c90fc686add7d6cacd2d08073a5f3817d62f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
