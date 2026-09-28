@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159977",
+  "mode": "autonomous",
+  "run_id": "36361291881",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36361291881",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159977.md",
+  "published_at": "2026-09-28T00:48:32.222Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159977",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159977",
+  "canonical_pr": null,
+  "summary": "The reported failure is still present at the preflight main SHA dd628a54504f8b72125ca92a7b158015e2ea4f07. A narrow fix is identified, but this worker’s read-only checkout prevented editing, a failing regression run, and local validation. No PR was opened.",
+  "actions": [
+    {
+      "target": "#159977",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159977",
+      "candidate_fix": null,
+      "reason": "The resolver needs to skip only the direct bundled lookup for IDs that cannot name a bundled directory."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159977",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159977",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable executor checkout with repository dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
