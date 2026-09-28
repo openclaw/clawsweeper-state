@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T17:35:13.430Z",
+  "updated_at": "2026-09-28T17:34:37.398Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119712:5196827378:2026-09-27T20:24:37Z:clawsweeper_auto_repair",
+      "comment_id": "5196827378",
+      "comment_version_key": "5196827378:2026-09-27T20:24:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119712#issuecomment-5196827378",
+      "comment_created_at": "2026-08-05T20:12:49Z",
+      "comment_updated_at": "2026-09-27T20:24:37Z",
+      "comment_body_sha256": "9f26f05e53af081f82b5f622d70b12c6a2de8a80f7493e5fc21c43b8df8afa3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5f06105ef03ea2f5cad196c9fed915e528783255)",
+      "expected_head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T13:25:43.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119692",
+        "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
+        "cluster_id": "issue-openclaw-openclaw-119692",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md"
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-09-28T07:56:42Z:clawsweeper_auto_repair",
       "comment_id": "5209715304",
@@ -33516,39 +33549,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160587:5875252916:2026-09-28T17:34:15Z:clawsweeper_needs_human",
-      "comment_id": "5875252916",
-      "comment_version_key": "5875252916:2026-09-28T17:34:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160587#issuecomment-5875252916",
-      "comment_created_at": "2026-09-28T17:34:15Z",
-      "comment_updated_at": "2026-09-28T17:34:15Z",
-      "comment_body_sha256": "75b4748f3aed8e1f54c400f18328f89affc3e68a05dc7c23063a04ead66ea0b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160587,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new test file’s single-worker wall time and CI seconds are not stated in the PR, leaving its required per-PR test cost unmeasured. (sha=5d066d12bec61b61bc8d4ce632425f050eda7181)",
-      "expected_head_sha": "5d066d12bec61b61bc8d4ce632425f050eda7181",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:35:13.430Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr-correction-publication-handoff-20260928",
-        "head_sha": "5d066d12bec61b61bc8d4ce632425f050eda7181",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
