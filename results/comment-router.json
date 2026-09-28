@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T18:46:43.396Z",
+  "updated_at": "2026-09-28T18:47:19.912Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160297:5871689125:2026-09-28T14:12:16Z:re_review",
-      "comment_id": "5871689125",
-      "comment_version_key": "5871689125:2026-09-28T14:12:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5871689125",
-      "comment_created_at": "2026-09-28T14:12:16Z",
-      "comment_updated_at": "2026-09-28T14:12:16Z",
-      "comment_body_sha256": "641b5f0fedebd10471264a64b60d0728f1463d66fbd4b4e975400f3569dc13ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160297,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T14:13:23.387Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-session-interruption-bug",
-        "head_sha": "b286277af2a2c2d2a66983b6f33d3b31069b68f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160446:5870019389:2026-09-28T14:12:03Z:clawsweeper_needs_human",
       "comment_id": "5870019389",
@@ -33864,6 +33817,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-cron-delivery-target-narrow-read-20260919",
         "head_sha": "11c66ee5d749c29cf54a5ef0e42c40fba4776518",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1488:5787865289:2026-09-28T18:46:10Z:clawsweeper_needs_human",
+      "comment_id": "5787865289",
+      "comment_version_key": "5787865289:2026-09-28T18:46:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1488#issuecomment-5787865289",
+      "comment_created_at": "2026-09-23T02:24:19Z",
+      "comment_updated_at": "2026-09-28T18:46:10Z",
+      "comment_body_sha256": "505879cdcba086bf1e1d718e8a0961c5b775b0c2fd99a50aa7ce73deb9edc1f5",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The hosted Setup and connect E2E test step still fails. Its relationship to this patch is not established, and CI Gate remains red. (sha=37f4448b3669b6932964b3e26994d08bee1289b2)",
+      "expected_head_sha": "37f4448b3669b6932964b3e26994d08bee1289b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T18:47:19.912Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f026-invalid-linux-user",
+        "head_sha": "37f4448b3669b6932964b3e26994d08bee1289b2",
         "cluster_id": null,
         "job_path": null
       }
