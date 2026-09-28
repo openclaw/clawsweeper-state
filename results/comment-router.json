@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:08:25.707Z",
+  "updated_at": "2026-09-28T17:08:36.510Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160297:5869931649:2026-09-28T12:35:21Z:re_review",
-      "comment_id": "5869931649",
-      "comment_version_key": "5869931649:2026-09-28T12:35:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5869931649",
-      "comment_created_at": "2026-09-28T12:35:21Z",
-      "comment_updated_at": "2026-09-28T12:35:21Z",
-      "comment_body_sha256": "b450435826270953f0c19ff9b77974e70986275eb9b4f9025d39d1c9697ad892",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160297,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:36:16.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-session-interruption-bug",
-        "head_sha": "1d655af5090c19152bc79b4aa2150e0a1ea8b518",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160018:5865352219:2026-09-28T07:24:02Z:re_review",
       "comment_id": "5865352219",
@@ -33561,6 +33514,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:735:5860369027:2026-09-28T17:00:57Z:clawsweeper_needs_human",
+      "comment_id": "5860369027",
+      "comment_version_key": "5860369027:2026-09-28T17:00:57Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/735#issuecomment-5860369027",
+      "comment_created_at": "2026-09-27T22:20:37Z",
+      "comment_updated_at": "2026-09-28T17:00:57Z",
+      "comment_body_sha256": "ebdc5b3a70b0eb541c50aa0f8d32745d0f689f93fa117cb3955e9ac5eb671381",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 735,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported two- and nine-call reductions for missing parent chains were measured before the final head changed missing-parent admission in the same walker; those exact quantitative... (sha=704f586045a97144ebd05add4e2afce9697e126c)",
+      "expected_head_sha": "704f586045a97144ebd05add4e2afce9697e126c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T17:08:36.510Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/parent-captured-identity",
+        "head_sha": "704f586045a97144ebd05add4e2afce9697e126c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
