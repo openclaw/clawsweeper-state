@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-159985",
+  "mode": "autonomous",
+  "run_id": "36363201652",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36363201652",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-159985.md",
+  "published_at": "2026-09-28T00:59:29.987Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/159985",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/159985",
+  "canonical_pr": null,
+  "summary": "The reported extension upload failure has a source-level reproduction on main at 1e9f0d090fab6c332b0f7a1fc5fcb4ec57d3e47a. This read-only checkout has no installed dependencies, so no patch, regression test, or PR branch was created or validated.",
+  "actions": [
+    {
+      "target": "#159985",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#159985",
+      "candidate_fix": null,
+      "reason": "The existing extension upload contract is broken; no open fix PR is present in the hydrated cluster."
+    },
+    {
+      "target": "#114506",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this linked security item to central OpenClaw security handling."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-159985",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#159985",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies and a regression that fails on this main SHA."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
