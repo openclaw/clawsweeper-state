@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:06:31.038Z",
+  "updated_at": "2026-09-28T20:07:10.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159621:5872843195:2026-09-28T15:11:46Z:re_review",
-      "comment_id": "5872843195",
-      "comment_version_key": "5872843195:2026-09-28T15:11:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159621#issuecomment-5872843195",
-      "comment_created_at": "2026-09-28T15:11:46Z",
-      "comment_updated_at": "2026-09-28T15:11:46Z",
-      "comment_body_sha256": "1ae9178c0386eb77d3f9dafbcdad9e8f3deb2a5e87b0dbce1d214877ebf577dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159621,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:12:52.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/computer-preparation-reuse-20260927",
-        "head_sha": "7c6c061ec0e0e35448a4c9cea695e807a09aea0c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160375:5868309698:2026-09-28T15:12:11Z:clawsweeper_needs_human",
       "comment_id": "5868309698",
@@ -33750,6 +33703,39 @@
         "kind": "pull_request",
         "branch": "deslop/l132-gateway-core",
         "head_sha": "7bc688ea43f973c8ed49a47c63ba6880670abe87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159226:5851107647:2026-09-28T20:05:49Z:clawsweeper_needs_human",
+      "comment_id": "5851107647",
+      "comment_version_key": "5851107647:2026-09-28T20:05:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159226#issuecomment-5851107647",
+      "comment_created_at": "2026-09-27T00:02:13Z",
+      "comment_updated_at": "2026-09-28T20:05:49Z",
+      "comment_body_sha256": "07822419642a9577ec0ef36046e78756bb2cebfaebbcb84eb719b3efc4a34230",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The receiving head changes Skills recovery when an external collection is replaced, but its real-library regression has not yet completed on that head and installed-package automatic... (sha=f3274f8a1bbb6434817a0ceeb33369d66d28a099)",
+      "expected_head_sha": "f3274f8a1bbb6434817a0ceeb33369d66d28a099",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:07:10.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-watch-adoption-20260926",
+        "head_sha": "f3274f8a1bbb6434817a0ceeb33369d66d28a099",
         "cluster_id": null,
         "job_path": null
       }
