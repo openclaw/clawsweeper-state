@@ -1,0 +1,61 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160064",
+  "mode": "plan",
+  "run_id": "36382613428",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36382613428",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160064.md",
+  "published_at": "2026-09-28T05:39:56.566Z",
+  "canonical": "#160064",
+  "canonical_issue": "#160064",
+  "canonical_pr": null,
+  "summary": "No fix PR is planned. The issue’s later Windows CI reproduction ran the real renderer child with its minimal environment and passed. The job requires a failing reproduction on current main before changing code; the reported missing-SystemRoot cause is therefore unproven.",
+  "actions": [
+    {
+      "target": "#160064",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160064",
+      "candidate_fix": null,
+      "reason": "Keep the report open for a reproducible failing case. Passing SystemRoot from a parent that lacks it would not establish a fix for the reported failure."
+    },
+    {
+      "target": "#74454",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical security-sensitive linked ref; no ClawSweeper Repair mutation."
+    },
+    {
+      "target": "#74458",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical security-sensitive linked ref; no ClawSweeper Repair mutation."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "route_security": 2
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
