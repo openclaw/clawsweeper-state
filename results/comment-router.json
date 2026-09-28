@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:18:12.518Z",
+  "updated_at": "2026-09-28T08:18:23.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160024:5862751457:2026-09-28T03:26:26Z:re_review",
-      "comment_id": "5862751457",
-      "comment_version_key": "5862751457:2026-09-28T03:26:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160024#issuecomment-5862751457",
-      "comment_created_at": "2026-09-28T03:26:26Z",
-      "comment_updated_at": "2026-09-28T03:26:26Z",
-      "comment_body_sha256": "608d81f270918bf17b0f83e6d7332c124584b9ee4d79c0a0051afcc19dcc507a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160024,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:27:22.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/semantic-process-memory-limit",
-        "head_sha": "7ce765dc3d3bb5086dde0ea09a12e8e8fa0694ca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150549:5708227563:2026-09-28T03:21:45Z:clawsweeper_auto_repair",
       "comment_id": "5708227563",
@@ -33544,6 +33497,39 @@
         "kind": "pull_request",
         "branch": "fix/r97-forward-10",
         "head_sha": "ee7c4f833e6d2ca20e3c9c95bb4312a08aa82d48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159227:5851135193:2026-09-28T08:17:08Z:clawsweeper_needs_human",
+      "comment_id": "5851135193",
+      "comment_version_key": "5851135193:2026-09-28T08:17:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159227#issuecomment-5851135193",
+      "comment_created_at": "2026-09-27T00:06:30Z",
+      "comment_updated_at": "2026-09-28T08:17:08Z",
+      "comment_body_sha256": "73971d477314adcdb9cb8ca9b6cf378e2ece325464a73af056e8e57c0dca7154",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159227,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: HTTP tests exercise the Gateway and SQLite store, but mock the agent command; they do not show allowed and diff...; Review finding: [P1] Preserve recovery for an authorized stable session — src/gateway/openresponses-http.ts:420-425 - [P1] Fence stored response IDs to the session generation — sr... (sha=970cf2114306e4b5bfcbad5a7645a6671c28e66b)",
+      "expected_head_sha": "970cf2114306e4b5bfcbad5a7645a6671c28e66b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:18:23.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live2-responses-unknown-previous",
+        "head_sha": "970cf2114306e4b5bfcbad5a7645a6671c28e66b",
         "cluster_id": null,
         "job_path": null
       }
