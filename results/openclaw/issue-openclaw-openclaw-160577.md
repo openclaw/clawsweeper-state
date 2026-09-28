@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-160577"
-mode: "plan"
-run_id: "36472702805"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36472702805"
-head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-28T20:35:57.975Z"
-canonical: "#160577"
-canonical_issue: "#160577"
+mode: "autonomous"
+run_id: "36457506490"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36457506490"
+head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-28T17:52:50.078Z"
+canonical: "https://github.com/openclaw/openclaw/issues/160577"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/160577"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36472702805](https://github.com/openclaw/clawsweeper/actions/runs/36472702805)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36457506490](https://github.com/openclaw/clawsweeper/actions/runs/36457506490)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #160577
+Canonical: https://github.com/openclaw/openclaw/issues/160577
 
 ## Summary
 
-Current main still wraps OpenShell mirror read errors before the memory-write provenance path can classify a missing file. Plan a narrow fix, gated on a failing regression through the composed bridge and provenance write path. No code or GitHub state was changed.
+Current main (7e6dd89766ce57499b38962882d12f0caaefb165) still has the reported error-classification mismatch. The required composed regression could not be run because this checkout is read-only and has no node_modules, so no code was changed or PR created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Current main still wraps OpenShell mirror read errors before the memory-write pr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #160577 | fix_needed | planned | canonical | First reproduce the new-file failure through the real mirror bridge composed with the provenance write path. If it fails on current main, preserve only a verified missing-path classification at the bridge boundary and keep genuine boundary failures rejecting. |
+| #160577 | fix_needed | planned | canonical | The source path supports a narrow bridge fix, pending the job-required failing regression through the composed path. |
+| cluster:issue-openclaw-openclaw-160577 | build_fix_artifact | blocked |  | The executor must first reproduce the failure through the real mirror bridge composed with provenance, then make and validate the narrow change in a writable checkout. |
 
 ## Needs Human
 
