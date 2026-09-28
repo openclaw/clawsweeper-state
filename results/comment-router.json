@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-28T20:36:14.325Z",
+  "updated_at": "2026-09-28T20:35:32.813Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160297:5873564610:2026-09-28T15:48:56Z:re_review",
+      "comment_id": "5873564610",
+      "comment_version_key": "5873564610:2026-09-28T15:48:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5873564610",
+      "comment_created_at": "2026-09-28T15:48:56Z",
+      "comment_updated_at": "2026-09-28T15:48:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160297,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T15:50:04.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-session-interruption-bug",
+        "head_sha": "565329e3000f0c0b78b729f6638c781a743c1e68",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156407:5792991931:2026-09-28T15:36:32Z:clawsweeper_needs_human",
       "comment_id": "5792991931",
@@ -33680,53 +33727,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157904:5878019537:2026-09-28T20:35:19Z:re_review",
-      "comment_id": "5878019537",
-      "comment_version_key": "5878019537:2026-09-28T20:35:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157904#issuecomment-5878019537",
-      "comment_created_at": "2026-09-28T20:35:19Z",
-      "comment_updated_at": "2026-09-28T20:35:19Z",
-      "comment_body_sha256": "d082b7944b6e3861aeb86984795377a1ecc94ec626f404f42a1922351ced314c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157904,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T20:36:12.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/clarify-tool-success-and-failure-counts",
-        "head_sha": "17b22cbed3454adfce29e544e551018edc46b977",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
