@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:01:51.869Z",
+  "updated_at": "2026-09-28T07:01:52.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158986:5847780737:2026-09-26T16:12:25Z:re_review",
-      "comment_id": "5847780737",
-      "comment_version_key": "5847780737:2026-09-26T16:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158986#issuecomment-5847780737",
-      "comment_created_at": "2026-09-26T16:12:25Z",
-      "comment_updated_at": "2026-09-26T16:12:25Z",
-      "comment_body_sha256": "ecfb0424463b6ca05138278934aad0d8c90aed20382e6889f706bf4e0adbe6ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158986,
-      "author": "ceckert",
-      "author_id": 779559,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:25:16.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-catalog-generation-retention",
-        "head_sha": "db83fac9c9bace517059bea065a03c4d6b17c774",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158986:5847663128:2026-09-28T01:19:11Z:clawsweeper_needs_human",
       "comment_id": "5847663128",
@@ -33569,6 +33522,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-queued-consult-followup-correlation-main-port-4",
         "head_sha": "1a59862e1da76d1061c56f7addb81a767a35eb1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160228:5865057935:2026-09-28T07:00:59Z:clawsweeper_needs_human",
+      "comment_id": "5865057935",
+      "comment_version_key": "5865057935:2026-09-28T07:00:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160228#issuecomment-5865057935",
+      "comment_created_at": "2026-09-28T07:00:59Z",
+      "comment_updated_at": "2026-09-28T07:00:59Z",
+      "comment_body_sha256": "6393f49f0abeecdb2e7ee2cc9bfd6b1e6050e69246509bd52e364e92fc063178",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed ACPX wrapper is executed on Windows in the reported regression test, but its npm CLI is a fixture that only prints arguments; no af... (sha=147378c57d30970d53eb08bb7ded6700c010ef21)",
+      "expected_head_sha": "147378c57d30970d53eb08bb7ded6700c010ef21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:01:52.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160095-windows-npm-adapter-fallback",
+        "head_sha": "147378c57d30970d53eb08bb7ded6700c010ef21",
         "cluster_id": null,
         "job_path": null
       }
