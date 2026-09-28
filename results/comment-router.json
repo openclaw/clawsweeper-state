@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-28T02:35:51.031Z",
+  "updated_at": "2026-09-28T02:36:53.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/esp-openclaw-node:64:5859468418:2026-09-27T20:17:02Z:re_review",
-      "comment_id": "5859468418",
-      "comment_version_key": "5859468418:2026-09-27T20:17:02Z",
-      "comment_url": "https://github.com/openclaw/esp-openclaw-node/issues/64#issuecomment-5859468418",
-      "comment_created_at": "2026-09-27T20:17:02Z",
-      "comment_updated_at": "2026-09-27T20:17:02Z",
-      "comment_body_sha256": "d0254747cc994855d5c9455cb74c0b112e80577dfc334de5e142c82d97383b70",
-      "repo": "openclaw/esp-openclaw-node",
-      "issue_number": 64,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T20:18:00.640Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159387:5852374168:2026-09-27T03:43:00Z:re_review",
       "comment_id": "5852374168",
@@ -33496,6 +33451,39 @@
         "kind": "pull_request",
         "branch": "fix/antigravity-usage-reap-mcp",
         "head_sha": "6ae8c7c1107112905d6fbbf5271cb76ae563c7be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160036:5862138548:2026-09-28T02:35:10Z:clawsweeper_needs_human",
+      "comment_id": "5862138548",
+      "comment_version_key": "5862138548:2026-09-28T02:35:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160036#issuecomment-5862138548",
+      "comment_created_at": "2026-09-28T02:19:55Z",
+      "comment_updated_at": "2026-09-28T02:35:10Z",
+      "comment_body_sha256": "0f69752c892e8b1384bf9431797cc0597a194efbe757d74236d52f16febb6062",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160036,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve review confidence** - ClawSweeper must reach high confidence before merge readiness is known. (sha=8dfec83a15ea4fcf4dc39ab444cde686c24d47de)",
+      "expected_head_sha": "8dfec83a15ea4fcf4dc39ab444cde686c24d47de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T02:36:53.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-session-continuity-and-pr-reliability",
+        "head_sha": "8dfec83a15ea4fcf4dc39ab444cde686c24d47de",
         "cluster_id": null,
         "job_path": null
       }
