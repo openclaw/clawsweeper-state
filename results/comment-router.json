@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:32:49.836Z",
+  "updated_at": "2026-09-28T22:33:02.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160558:5874621478:2026-09-28T16:53:41Z:clawsweeper_needs_human",
-      "comment_id": "5874621478",
-      "comment_version_key": "5874621478:2026-09-28T16:53:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160558#issuecomment-5874621478",
-      "comment_created_at": "2026-09-28T16:53:41Z",
-      "comment_updated_at": "2026-09-28T16:53:41Z",
-      "comment_body_sha256": "40bdad568d6ef270bef998bb5f8b2bb3711ff588ea479c936f832868510d4300",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160558,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2b0b5aa81a86fd8a6d58361a1d49b2cacfde33b2)",
-      "expected_head_sha": "2b0b5aa81a86fd8a6d58361a1d49b2cacfde33b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:55:14.712Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/export-guard-dynamic-import-forwarders",
-        "head_sha": "2b0b5aa81a86fd8a6d58361a1d49b2cacfde33b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159870:5859429623:2026-09-28T16:55:07Z:clawsweeper_needs_human",
       "comment_id": "5859429623",
@@ -34013,6 +33980,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:76:5879927395:2026-09-28T22:32:02Z:re_review",
+      "comment_id": "5879927395",
+      "comment_version_key": "5879927395:2026-09-28T22:32:02Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/76#issuecomment-5879927395",
+      "comment_created_at": "2026-09-28T22:32:02Z",
+      "comment_updated_at": "2026-09-28T22:32:02Z",
+      "comment_body_sha256": "6a8b0aafff6a4c76eeef509fcc864318a614ccac9f1777c73eae79c7acd62fc6",
+      "repo": "openclaw/rfcs",
+      "issue_number": 76,
+      "author": "ryanpei",
+      "author_id": 4312641,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T22:33:00.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cloud-run-hosting-and-sandboxes",
+        "head_sha": "a82ca35b0753640a3382bec1943371c85614be37",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
