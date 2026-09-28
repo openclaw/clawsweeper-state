@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1365",
+  "mode": "autonomous",
+  "run_id": "36378480386",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36378480386",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1365.md",
+  "published_at": "2026-09-28T04:41:33.878Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1365",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1365",
+  "canonical_pr": null,
+  "summary": "Issue #1365 remains a plausible native chat bug, but the current checkout cannot establish whether text is lost during rendering or clipped by layout. No code or PR was created: this workspace is read-only, and current-head Windows UI proof is needed to choose a safe, narrow fix.",
+  "actions": [
+    {
+      "target": "#1365",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1365",
+      "candidate_fix": null,
+      "reason": "The report needs current-head native proof to distinguish missing text from clipping and to locate the table-cell width failure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1365",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1365",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until a writable Windows checkout can reproduce both symptoms and validate the final narrow edit."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
