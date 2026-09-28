@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T10:12:24.400Z",
+  "updated_at": "2026-09-28T10:13:35.525Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154417:5755494321:2026-09-28T05:00:55Z:clawsweeper_auto_repair",
-      "comment_id": "5755494321",
-      "comment_version_key": "5755494321:2026-09-28T05:00:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154417#issuecomment-5755494321",
-      "comment_created_at": "2026-09-21T04:40:34Z",
-      "comment_updated_at": "2026-09-28T05:00:55Z",
-      "comment_body_sha256": "ffb4018076ce834f1a5d57e7e8ef4ad14534b8131eec70671f7310d3216e5676",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154417,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f)",
-      "expected_head_sha": "b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T05:22:45.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-delivery-notice-in-flight",
-        "head_sha": "b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155479:5772158868:2026-09-28T05:18:28Z:clawsweeper_auto_repair",
       "comment_id": "5772158868",
@@ -33491,6 +33458,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160136:5863910892:2026-09-28T10:07:25Z:clawsweeper_needs_human",
+      "comment_id": "5863910892",
+      "comment_version_key": "5863910892:2026-09-28T10:07:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863910892",
+      "comment_created_at": "2026-09-28T05:14:42Z",
+      "comment_updated_at": "2026-09-28T10:07:25Z",
+      "comment_body_sha256": "d68b1c728370d39cb687750983d322739a13506cfd89621af82691d92c98133f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160136,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway policy feeds WebSocket admission, HTTP authority, plugin-cookie generation, and approval gu...; Review finding: [medium] Prove revocation before a final effect — src/gateway/auth-policy.ts:53 (sha=798eb89fc22138c4fbb37cb58bd92318b305aa0a)",
+      "expected_head_sha": "798eb89fc22138c4fbb37cb58bd92318b305aa0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T10:13:35.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/auth-policy-per-identity",
+        "head_sha": "798eb89fc22138c4fbb37cb58bd92318b305aa0a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
