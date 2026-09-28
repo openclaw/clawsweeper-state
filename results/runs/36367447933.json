@@ -1,0 +1,73 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-1711",
+  "mode": "autonomous",
+  "run_id": "36367447933",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36367447933",
+  "head_sha": "8d659e7cb903370596e26acea5b81399f291c174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-1711.md",
+  "published_at": "2026-09-28T03:08:21.395Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/1711",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/1711",
+  "canonical_pr": null,
+  "summary": "No safe implementation can be selected for #1711 yet. Current main already handles the documented Tahoe status-item failure states, while the remaining reports lack a failing current-build startup trace identifying the branch that fails.",
+  "actions": [
+    {
+      "target": "#1711",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1711",
+      "candidate_fix": null,
+      "reason": "The remaining failure needs a diagnostic trace before its cause can be distinguished from crowding, menu-manager placement, Control Center hosting, or invisible rendered content."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-1711",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#1711",
+      "candidate_fix": null,
+      "reason": "A person experiencing the missing icon must provide a redacted startup Debug Log from an affected current build showing status-item snapshots and the recovery outcome. Without that trace, the failing branch and a safe edit surface cannot be identified."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Obtain a redacted failing current-build startup Debug Log for #1711 showing status-item snapshots and the recovery outcome before selecting an implementation."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1711",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
