@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T13:32:01.250Z",
+  "updated_at": "2026-09-28T13:34:15.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160014:5866372865:2026-09-28T08:33:12Z:re_review",
-      "comment_id": "5866372865",
-      "comment_version_key": "5866372865:2026-09-28T08:33:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160014#issuecomment-5866372865",
-      "comment_created_at": "2026-09-28T08:33:12Z",
-      "comment_updated_at": "2026-09-28T08:33:12Z",
-      "comment_body_sha256": "baddab599ddaec0e00b1da28902abc5ce364a8c1fc5c6039c3f04ca98d248fb1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160014,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T08:34:17.735Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/semantic-memory-ci-backend",
-        "head_sha": "0edcfe55d6614e00e2d537bf05f6e21ab142dd33",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2593:5865827329:2026-09-28T08:33:21Z:clawsweeper_auto_repair",
       "comment_id": "5865827329",
@@ -33907,6 +33860,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:744:5862873871:2026-09-28T13:27:36Z:clawsweeper_needs_human",
+      "comment_id": "5862873871",
+      "comment_version_key": "5862873871:2026-09-28T13:27:36Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/744#issuecomment-5862873871",
+      "comment_created_at": "2026-09-28T03:37:00Z",
+      "comment_updated_at": "2026-09-28T13:27:36Z",
+      "comment_body_sha256": "3fb5c3cbb1781c1b332b4721abcd8cb14f979664f3e0d8dac2c91cceb7ed38a2",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 744,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve the recursive removal upgrade contract (P1)** - Required-mode recursive removal previously used the guarded path, but this new route returns helper-unavailable for Windows directories and unsupported Lin...; Review finding: [P1] Resolve the recursive removal upgrade contract — src/root-remove-native.ts:79-87 - [P2] Attach context to initial native inspection errors — src/root-remove-n... (sha=59bb904b5beee82bc68f26f8ed5ba0084fc741b2)",
+      "expected_head_sha": "59bb904b5beee82bc68f26f8ed5ba0084fc741b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T13:34:15.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/require-harden-remove-20260927",
+        "head_sha": "59bb904b5beee82bc68f26f8ed5ba0084fc741b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
