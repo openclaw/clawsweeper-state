@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:19:47.689Z",
+  "updated_at": "2026-09-28T12:19:51.656Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160240:5865374484:2026-09-28T07:25:48Z:clawsweeper_needs_human",
-      "comment_id": "5865374484",
-      "comment_version_key": "5865374484:2026-09-28T07:25:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160240#issuecomment-5865374484",
-      "comment_created_at": "2026-09-28T07:25:48Z",
-      "comment_updated_at": "2026-09-28T07:25:48Z",
-      "comment_body_sha256": "6588f5eb166f03d1407c9e428cca6644be2b9565ddc20ada296661e07fde6158",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed PR snapshot has no embedded before-and-after screenshots of the changed chat order, so the repository’s rendered-UI visual proof gate remains unmet. (sha=2c8074861ce35099c7694d3215354819da252b9c)",
-      "expected_head_sha": "2c8074861ce35099c7694d3215354819da252b9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T07:27:00.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-chat-message-ordering-race-condition",
-        "head_sha": "2c8074861ce35099c7694d3215354819da252b9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160038:5862149388:2026-09-28T07:25:41Z:clawsweeper_needs_human",
       "comment_id": "5862149388",
@@ -33969,6 +33936,53 @@
         "kind": "pull_request",
         "branch": "codex/qa1010-context-main",
         "head_sha": "7a6157b8be58c6077fb9d19b0e6110387431b1fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159940:5869689362:2026-09-28T12:18:43Z:re_review",
+      "comment_id": "5869689362",
+      "comment_version_key": "5869689362:2026-09-28T12:18:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159940#issuecomment-5869689362",
+      "comment_created_at": "2026-09-28T12:18:43Z",
+      "comment_updated_at": "2026-09-28T12:18:43Z",
+      "comment_body_sha256": "bed87f7b86aeea2db26302bd7571b07234105baac5b8ce52918057c2ddfd68a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159940,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T12:19:50.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/159862-visible-spawn-failure",
+        "head_sha": "86d1df1293aa4b10df586b719aa02269f52dcaf0",
         "cluster_id": null,
         "job_path": null
       },
