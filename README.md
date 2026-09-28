@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 28, 2026, 11:50 UTC
+Last source update: Sep 28, 2026, 12:19 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 28, 2026, 11:50 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply comments synced | Sep 28, 2026, 11:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36412612156) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 28, 2026, 11:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36416140542) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 28, 2026, 12:19 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36415924503) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 28, 2026, 11:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36418593164) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 28, 2026, 09:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36405478917) |
 
 ### Repositories
@@ -91,15 +91,15 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 28, 2026, 11:33 UTC
+Last source update: Sep 28, 2026, 11:57 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1276 | 100% |
-| Run attempts archived | 3820 | audit |
-| Latest successful clusters | 1065 | 83.5% |
+| Latest clusters reviewed | 1277 | 100% |
+| Run attempts archived | 3821 | audit |
+| Latest successful clusters | 1066 | 83.5% |
 | Latest failed clusters | 208 | 16.3% |
 | Latest cancelled clusters | 3 | 0.2% |
 | Needs-human clusters | 132 | 10.3% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1276 clusters: 357 maintainer action, 385 automation snapshot, 483 intervention needed, 51 no pending action, 0 completed.
+- Latest records: 1277 clusters: 357 maintainer action, 385 automation snapshot, 484 intervention needed, 51 no pending action, 0 completed.
 - Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#3377](https://github.com/steipete/codexbar/issues/3377) is maintainer_input: For #3377, determine the corrective path after obtaining matched AppKit/Quartz geometry and rendered-content evidence on an affected mach....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#160377](https://github.com/openclaw/openclaw/pull/160377) is automation_failed: The reported Windows Doctor failure has a narrow, identifiable browser-plugin fix..
+- Intervention first: [openclaw/acpx](https://github.com/openclaw/acpx) [issue-openclaw-acpx-808](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-acpx-808.md) is automation_blocked: Issue #808 remains open, but the available evidence does not identify whether acpx, the configured agent, or the Codex sandbox causes the....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#160313](https://github.com/openclaw/openclaw/pull/160313) is action_planned: The CI failure and unchanged main source support a narrow fixture repair. The executor must reproduce the original failure on main before....
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 357 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 385 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 483 | automation failure or blocker recorded |
+| Intervention Needed | 484 | automation failure or blocker recorded |
 | No Pending Action | 51 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -139,7 +139,7 @@ State: Failed clusters need inspection
 | automation_active | 0 |
 | action_planned | 341 |
 | automation_failed | 220 |
-| automation_blocked | 263 |
+| automation_blocked | 264 |
 | reviewed_no_action | 51 |
 | completed | 0 |
 
@@ -187,6 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/acpx](https://github.com/openclaw/acpx) |  | automation_blocked | Issue #808 remains open, but the available evidence does not identify whether acpx, the configured agent, or the Codex sandbox causes the failure.... | Sep 28, 2026, 11:57 UTC | [issue-openclaw-acpx-808](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-acpx-808.md) | [36417150793](https://github.com/openclaw/clawsweeper/actions/runs/36417150793) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#160377](https://github.com/openclaw/openclaw/pull/160377) | automation_failed | The reported Windows Doctor failure has a narrow, identifiable browser-plugin fix. | Sep 28, 2026, 11:33 UTC | [issue-openclaw-openclaw-160377](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-160377.md) | [36411855070](https://github.com/openclaw/clawsweeper/actions/runs/36411855070) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | No implementation PR is justified yet. Current main repairs the reported 6,247-point position and validates saved positions during status-item crea... | Sep 28, 2026, 11:31 UTC | [issue-steipete-codexbar-3355](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3355.md) | [36415667908](https://github.com/openclaw/clawsweeper/actions/runs/36415667908) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#160353](https://github.com/openclaw/openclaw/pull/160353) | automation_failed | Bound per-sweep retention while preserving UID order, cursor advancement, retries, reconnects, and sender authentication. | Sep 28, 2026, 10:38 UTC | [issue-openclaw-openclaw-160353](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-160353.md) | [36407304036](https://github.com/openclaw/clawsweeper/actions/runs/36407304036) |
@@ -201,7 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [#449](https://github.com/openclaw/wacli/pull/449) | automation_failed | The reported Windows test isolation defect remains present on the provided main SHA. | Sep 28, 2026, 03:39 UTC | [issue-openclaw-wacli-449](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-449.md) | [36374371546](https://github.com/openclaw/clawsweeper/actions/runs/36374371546) |
 | [openclaw/nix-openclaw-tools](https://github.com/openclaw/nix-openclaw-tools) | [#33](https://github.com/openclaw/nix-openclaw-tools/pull/33) | automation_failed | The requested package is still missing on the pinned main checkout. | Sep 28, 2026, 03:07 UTC | [issue-openclaw-nix-openclaw-tools-33](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-nix-openclaw-tools-33.md) | [36371561146](https://github.com/openclaw/clawsweeper/actions/runs/36371561146) |
 | [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) |  | automation_blocked | Issue #116 remains the canonical follow-up. The pin is present on current main, but this worker could not verify that npm latest now points to a Gi... | Sep 28, 2026, 02:58 UTC | [issue-openclaw-openclaw-windows-packaging-116](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-116.md) | [36371522481](https://github.com/openclaw/clawsweeper/actions/runs/36371522481) |
-| [openclaw/imsg](https://github.com/openclaw/imsg) |  | automation_blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | Sep 28, 2026, 02:20 UTC | [issue-openclaw-imsg-322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-322.md) | [36368874126](https://github.com/openclaw/clawsweeper/actions/runs/36368874126) |
 
 #### No Pending Action
 
