@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:27:02.425Z",
+  "updated_at": "2026-09-28T20:27:41.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160392:5873517247:2026-09-28T15:46:12Z:re_review",
-      "comment_id": "5873517247",
-      "comment_version_key": "5873517247:2026-09-28T15:46:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160392#issuecomment-5873517247",
-      "comment_created_at": "2026-09-28T15:46:12Z",
-      "comment_updated_at": "2026-09-28T15:46:12Z",
-      "comment_body_sha256": "ebcb39a88bebe563f992867c0a11c489e0b8ac86e7846712f1190c53b201a748",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160392,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:47:25.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/session-progress-and-blocker-review",
-        "head_sha": "d890f517761910574aeed6635d4510e28e422535",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147827:5851978811:2026-09-27T02:30:43Z:re_review",
       "comment_id": "5851978811",
@@ -33720,6 +33673,39 @@
         "kind": "pull_request",
         "branch": "fix/browser-remote-tab-health-preflight",
         "head_sha": "6c67c9930a4bc56184511e8cc99581946d41753f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160691:5877868924:2026-09-28T20:26:38Z:clawsweeper_needs_human",
+      "comment_id": "5877868924",
+      "comment_version_key": "5877868924:2026-09-28T20:26:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160691#issuecomment-5877868924",
+      "comment_created_at": "2026-09-28T20:26:38Z",
+      "comment_updated_at": "2026-09-28T20:26:38Z",
+      "comment_body_sha256": "f646738d82e22f6b1138f991d81b98639f161218d3b60fa684c1776628d7b0c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160691,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main's separate fix already reports 74 of 77 non-dist rows; the added packing can combine more serial tooling work into rows bounded at 720 seconds, but its benefit and latenc... (sha=2c3b1bfe3ca9c8d105419d7411dfa049e3e3090c)",
+      "expected_head_sha": "2c3b1bfe3ca9c8d105419d7411dfa049e3e3090c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:27:41.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-hourly-measured-packing",
+        "head_sha": "2c3b1bfe3ca9c8d105419d7411dfa049e3e3090c",
         "cluster_id": null,
         "job_path": null
       }
