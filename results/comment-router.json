@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T01:08:41.525Z",
+  "updated_at": "2026-09-28T01:08:44.168Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159841:5858897767:2026-09-27T19:11:24Z:clawsweeper_needs_human",
-      "comment_id": "5858897767",
-      "comment_version_key": "5858897767:2026-09-27T19:11:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159841#issuecomment-5858897767",
-      "comment_created_at": "2026-09-27T19:11:24Z",
-      "comment_updated_at": "2026-09-27T19:11:24Z",
-      "comment_body_sha256": "9cbf252b77b06b7506a4ac65dcab917368c2128eca096bb7da4b99d14351f0af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159841,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0dc29a7f692d1a928142b45daa1b2317bb21b619)",
-      "expected_head_sha": "0dc29a7f692d1a928142b45daa1b2317bb21b619",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T19:12:26.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-terminal-cancellation-20260927",
-        "head_sha": "0dc29a7f692d1a928142b45daa1b2317bb21b619",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159341:5852626212:2026-09-27T19:11:38Z:clawsweeper_auto_repair",
       "comment_id": "5852626212",
@@ -33539,6 +33506,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159887:5861551350:2026-09-28T01:07:40Z:re_review",
+      "comment_id": "5861551350",
+      "comment_version_key": "5861551350:2026-09-28T01:07:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159887#issuecomment-5861551350",
+      "comment_created_at": "2026-09-28T01:07:40Z",
+      "comment_updated_at": "2026-09-28T01:07:40Z",
+      "comment_body_sha256": "8f48f43e736f54058b83646e1eed3afed885120378b1519f44a54dd0aa00f649",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159887,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please. the remaining native handoff evidence is now complete for unchanged pr head 375ab9bc5a63e55e9639c7ee4a68e8bf24716880",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T01:08:42.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/personal-link-browser-preference",
+        "head_sha": "375ab9bc5a63e55e9639c7ee4a68e8bf24716880",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
