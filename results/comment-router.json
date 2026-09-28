@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:17:19.676Z",
+  "updated_at": "2026-09-28T12:17:22.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160228:5865320821:2026-09-28T07:21:28Z:re_review",
-      "comment_id": "5865320821",
-      "comment_version_key": "5865320821:2026-09-28T07:21:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160228#issuecomment-5865320821",
-      "comment_created_at": "2026-09-28T07:21:28Z",
-      "comment_updated_at": "2026-09-28T07:21:28Z",
-      "comment_body_sha256": "7f5edcffaa4b2eb46c03cd40270abb0c283b18c149595e89159dad5386c46f28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160228,
-      "author": "Bruce-Yii",
-      "author_id": 298228875,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — added real behavior proof on windows. the generated wrapper is now driven with a real acp `initialize` json-rpc request: the installed npm 11.13.0 launches the installed @agentclientprotocol/codex-acp 1.12.0 and returns a real protocol response (`protocolversion: 1`) after the capture directory holding the captured adapter entry is deleted. the same run against main's `resolvenpmclipath()` fails with `spawn einval` and never reaches npm. head unchanged at 147378c57d30; paths redacted; measured single-worker wall time for the changed test file is 15.08s for 24 tests. `openclaw/ci-gate` passes",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T07:22:18.978Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/160095-windows-npm-adapter-fallback",
-        "head_sha": "147378c57d30970d53eb08bb7ded6700c010ef21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160163:5864214563:2026-09-28T07:22:09Z:clawsweeper_needs_human",
       "comment_id": "5864214563",
@@ -34011,6 +33964,39 @@
         "kind": "pull_request",
         "branch": "fix/repo-submenu-heatmap-color",
         "head_sha": "90ff5bbebcddd718be2b696df5626aff76a36b0d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155835:5780225048:2026-09-28T12:16:00Z:clawsweeper_needs_human",
+      "comment_id": "5780225048",
+      "comment_version_key": "5780225048:2026-09-28T12:16:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155835#issuecomment-5780225048",
+      "comment_created_at": "2026-09-22T16:34:26Z",
+      "comment_updated_at": "2026-09-28T12:16:00Z",
+      "comment_body_sha256": "2d3cb4d6f4b43463b4b96b419ddefe8965c9670d565358314dc2d09c66578dab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shell-wide height override is verified with injected Chromium geometry, but the installed iPhone PWA's intermittent keyboard events and background/foreground recovery remain unver... (sha=77aa7852d5f28936b9d3ca7871778b2abfdca8d9)",
+      "expected_head_sha": "77aa7852d5f28936b9d3ca7871778b2abfdca8d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T12:17:22.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mobile-keyboard-composer-20260922",
+        "head_sha": "77aa7852d5f28936b9d3ca7871778b2abfdca8d9",
         "cluster_id": null,
         "job_path": null
       }
