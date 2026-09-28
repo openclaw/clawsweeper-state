@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "36485230548",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36485230548",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-09-28T21:53:51.200Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "At main d5b11b54, the CLI rejects piped stdin before selecting the documented OpenAI device-code method. The checkout is read-only, so I could not add the required failing regression, repair the code, validate a branch, or prepare a PR.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "The documented headless login path remains blocked on current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout and the required Codex source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/commands/models/auth-login-cli.ts: core production [check:changed] src/commands/models/auth-login-headless.cases.ts: core production [check:changed] src/commands/models/auth-test-stdin.ts: core production [check:changed] src/commands/models/auth.test.ts: core test [check:changed] src/commands/models/auth.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main Environment variable count budget config/env-var-count-budget.txt: OPENCLAW_* count 485 exceeds budget 484; update config/env-var-count-budget.txt OPENCLAW_* count 485 exceeds budget 484; update config/env-var-count-budget.txt [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 206ms ok conflict markers 392ms ok line-cap growth ratchet 7.00s failed:1 max-lines suppression ratchet [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 5 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 722 grandfathered suppressions.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#113326",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
