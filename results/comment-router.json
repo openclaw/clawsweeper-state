@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:29:24.875Z",
+  "updated_at": "2026-09-28T06:29:25.602Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158387:5861462584:2026-09-28T00:56:15Z:re_review",
-      "comment_id": "5861462584",
-      "comment_version_key": "5861462584:2026-09-28T00:56:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158387#issuecomment-5861462584",
-      "comment_created_at": "2026-09-28T00:56:15Z",
-      "comment_updated_at": "2026-09-28T00:56:15Z",
-      "comment_body_sha256": "7b07e8c83619d3533781dc07a55837568dee46cab852f311c3c82dc26940aec9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158387,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T00:57:05.450Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-openclaw-outbound-target-collision",
-        "head_sha": "fe37dc71c4cada61802644a0d4c76c1ad91379ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159879:5859599228:2026-09-28T00:57:40Z:clawsweeper_needs_human",
       "comment_id": "5859599228",
@@ -33705,6 +33658,39 @@
         "kind": "pull_request",
         "branch": "perf/direct-publication-apply",
         "head_sha": "d94716a9df39b75902b1ac7d5638e5517a8863d6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159226:5851107647:2026-09-28T06:12:48Z:clawsweeper_needs_human",
+      "comment_id": "5851107647",
+      "comment_version_key": "5851107647:2026-09-28T06:12:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159226#issuecomment-5851107647",
+      "comment_created_at": "2026-09-27T00:02:13Z",
+      "comment_updated_at": "2026-09-28T06:12:48Z",
+      "comment_body_sha256": "cab8eed289c32757c994b44d9d6bf71d1f71133cba1086697dc2d333a01561de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published v2026.9.6 updater has not been shown starting this candidate Gateway with existing operator state and confirming automatic Config, Skills, and Memory observation afterward... (sha=422d687745df28564c436bf747ac283cb151a56a)",
+      "expected_head_sha": "422d687745df28564c436bf747ac283cb151a56a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:29:25.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-watch-adoption-20260926",
+        "head_sha": "422d687745df28564c436bf747ac283cb151a56a",
         "cluster_id": null,
         "job_path": null
       }
