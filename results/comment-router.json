@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T06:44:52.241Z",
+  "updated_at": "2026-09-28T06:45:02.324Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133376:5861532889:2026-09-28T01:05:24Z:re_review",
-      "comment_id": "5861532889",
-      "comment_version_key": "5861532889:2026-09-28T01:05:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5861532889",
-      "comment_created_at": "2026-09-28T01:05:24Z",
-      "comment_updated_at": "2026-09-28T01:05:24Z",
-      "comment_body_sha256": "3fca6a328ac9cd6bab8885eade54684bfaf7d0512c8a283ced8aeaf820559abd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T01:06:58.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "c6af5e9add9c21aab257efef0e199fa6fba26e58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159997:5861538505:2026-09-28T01:06:05Z:clawsweeper_needs_human",
       "comment_id": "5861538505",
@@ -33745,6 +33698,39 @@
         "kind": "pull_request",
         "branch": "urda/price-model-aliases",
         "head_sha": "fb7d4a914b125139ea9d1742f41311a118908f76",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160170:5864223689:2026-09-28T06:44:08Z:clawsweeper_needs_human",
+      "comment_id": "5864223689",
+      "comment_version_key": "5864223689:2026-09-28T06:44:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160170#issuecomment-5864223689",
+      "comment_created_at": "2026-09-28T05:47:15Z",
+      "comment_updated_at": "2026-09-28T06:44:08Z",
+      "comment_body_sha256": "6db323f1aec12f4124492e3488c21dba60edc21162047ae81c2f8bc3e87661c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the production updater uses real Git in the reported retained-rollback tests, and the added assertions...; Review finding: [P1] Keep branch custody through the final ref write — src/infra/update-runner-git-steps.ts:170-171 - [high] Linked-worktree branch custody can expire before the r... (sha=e20b8cfe810ea9fb6a73c0fbbf95db441cf92cc4)",
+      "expected_head_sha": "e20b8cfe810ea9fb6a73c0fbbf95db441cf92cc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T06:45:02.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/r97-forward-3",
+        "head_sha": "e20b8cfe810ea9fb6a73c0fbbf95db441cf92cc4",
         "cluster_id": null,
         "job_path": null
       }
