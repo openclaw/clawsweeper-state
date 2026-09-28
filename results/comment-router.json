@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:42:05.089Z",
+  "updated_at": "2026-09-28T23:42:13.015Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160580:5875482136:2026-09-28T17:49:28Z:re_review",
-      "comment_id": "5875482136",
-      "comment_version_key": "5875482136:2026-09-28T17:49:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160580#issuecomment-5875482136",
-      "comment_created_at": "2026-09-28T17:49:28Z",
-      "comment_updated_at": "2026-09-28T17:49:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160580,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:59:08.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-gpt-model-version-audit-warning",
-        "head_sha": "a0a7a557f6f4cc6d02356d9a50831ea8f7ffded2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160580:5875102063:2026-09-28T17:58:12Z:clawsweeper_needs_human",
       "comment_id": "5875102063",
@@ -33952,6 +33905,39 @@
         "kind": "pull_request",
         "branch": "refactor/test-audit-daemon-scheduler-fixtures-20260928",
         "head_sha": "1a9df11a06b1c27029a514a4ba7aab798cbf6c55",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160592:5875398763:2026-09-28T23:40:50Z:clawsweeper_needs_human",
+      "comment_id": "5875398763",
+      "comment_version_key": "5875398763:2026-09-28T23:40:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160592#issuecomment-5875398763",
+      "comment_created_at": "2026-09-28T17:43:55Z",
+      "comment_updated_at": "2026-09-28T23:40:50Z",
+      "comment_body_sha256": "8cbdff0c4d39097b1a2c73cc5785001da502e5f0e8f45180e16fcce40d11c415",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160592,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=24648fa0366aeaf466ad65af96c72a83add3df3c)",
+      "expected_head_sha": "24648fa0366aeaf466ad65af96c72a83add3df3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:42:13.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-run-worker-writes-20260928",
+        "head_sha": "24648fa0366aeaf466ad65af96c72a83add3df3c",
         "cluster_id": null,
         "job_path": null
       }
