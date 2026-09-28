@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:10:58.196Z",
+  "updated_at": "2026-09-28T08:11:17.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146899:5862687475:2026-09-28T03:19:30Z:re_review",
-      "comment_id": "5862687475",
-      "comment_version_key": "5862687475:2026-09-28T03:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146899#issuecomment-5862687475",
-      "comment_created_at": "2026-09-28T03:19:30Z",
-      "comment_updated_at": "2026-09-28T03:19:30Z",
-      "comment_body_sha256": "521a280005effe86dfe7224c3cdd9f5fd8ca571adb85e6a2eb669c71cea7fb1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146899,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:20:19.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delivery-queue-resurrect-terminalized",
-        "head_sha": "6ac6b1618d9041f3c073f3a78acdf48e5a105f53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160014:5861836231:2026-09-28T03:19:22Z:clawsweeper_needs_human",
       "comment_id": "5861836231",
@@ -33546,6 +33499,39 @@
         "kind": "pull_request",
         "branch": "deslop/l73-runtime2",
         "head_sha": "d295140b9769b2ae6874c5d7dd337a1ea0770d82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:748:5864226288:2026-09-28T08:10:22Z:clawsweeper_needs_human",
+      "comment_id": "5864226288",
+      "comment_version_key": "5864226288:2026-09-28T08:10:22Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/748#issuecomment-5864226288",
+      "comment_created_at": "2026-09-28T05:47:30Z",
+      "comment_updated_at": "2026-09-28T08:10:22Z",
+      "comment_body_sha256": "889500d836d971aca83c02003a407438ad6e8654910b184cdb54f0bc7ec78633",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin or verify the Rustup installer before executing it (P2)** - The Linux campaign downloads the current Rustup script and immediately executes it when Rustup is absent. That runs mutable third-party code on the...; Review finding: [P2] Pin or verify the Rustup installer before executing it — scripts/root-race/linux-campaign.sh:7-8 - [medium] Moving Rustup installer executes on the proof host... (sha=20b47132b62de9d77675c485423ab72a9dac6241)",
+      "expected_head_sha": "20b47132b62de9d77675c485423ab72a9dac6241",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:11:17.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hunt-root-races-20260927",
+        "head_sha": "20b47132b62de9d77675c485423ab72a9dac6241",
         "cluster_id": null,
         "job_path": null
       }
