@@ -2,12 +2,12 @@
 repo: "openclaw/clawsweeper"
 cluster_id: "issue-openclaw-clawsweeper-1128"
 mode: "autonomous"
-run_id: "36368423263"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36368423263"
+run_id: "36368972773"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36368972773"
 head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T02:09:08.857Z"
+published_at: "2026-09-28T02:17:21.183Z"
 canonical: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_issue: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/clawsweeper
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36368423263](https://github.com/openclaw/clawsweeper/actions/runs/36368423263)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36368972773](https://github.com/openclaw/clawsweeper/actions/runs/36368972773)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/clawsweeper/issues/1128
 
 ## Summary
 
-The migration in https://github.com/openclaw/clawsweeper/issues/1128 remains unfinished. Its remaining scope cannot be completed as the one focused PR required by this job. No code or GitHub item was changed.
+The remaining work in https://github.com/openclaw/clawsweeper/issues/1128 is too broad for the requested single focused PR. No code or PR was created.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The migration in https://github.com/openclaw/clawsweeper/issues/1128 remains unf
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1128 | needs_human | blocked | canonical | The single-PR job cannot safely implement the remaining roadmap. A maintainer must scope separate behavioral-region work for worker.ts and exact-review-queue.ts, followed by the configuration flip after both compile cleanly. |
+| #1128 | fix_needed | blocked | canonical | A partial slice would not satisfy this roadmap or justify a closing reference. Split the Worker conversion, review-queue conversion, and final tree-wide strictness transition into separately scoped implementation jobs. |
 
 ## Needs Human
 
-- Scope separate follow-up jobs for the remaining worker.ts and exact-review-queue.ts strict conversions and the final configuration flip; this job cannot expand beyond one focused PR for https://github.com/openclaw/clawsweeper/issues/1128.
+- Re-scope https://github.com/openclaw/clawsweeper/issues/1128 into separate implementation jobs for dashboard/worker.ts, dashboard/exact-review-queue.ts, and the final strict configuration transition. The current job requires one focused PR that completes the issue, while the remaining modules have 825 and 318 strict diagnostics respectively.
