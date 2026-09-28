@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:00:07.574Z",
+  "updated_at": "2026-09-28T08:02:51.143Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160048:5862457798:2026-09-28T02:56:56Z:clawsweeper_needs_human",
-      "comment_id": "5862457798",
-      "comment_version_key": "5862457798:2026-09-28T02:56:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160048#issuecomment-5862457798",
-      "comment_created_at": "2026-09-28T02:56:56Z",
-      "comment_updated_at": "2026-09-28T02:56:56Z",
-      "comment_body_sha256": "c1bd06bcd42228a95870ce31a406c3075f804beeaa6fbd02b3a1c437765ead42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160048,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Memory Core callback path was exercised through a real manager and SQLite index with synthetic embedding factories, but the PR prov... (sha=fd95095cdc65a9c3a65556d14d256dbabc3c4751)",
-      "expected_head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T03:03:22.122Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-159912-memory-background-reload",
-        "head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159854:5859117933:2026-09-27T19:32:08Z:re_review",
       "comment_id": "5859117933",
@@ -33589,6 +33556,64 @@
         "kind": "pull_request",
         "branch": "test/canonical-extension-inventory",
         "head_sha": "38472e208b231cadff62fed57897fac1742af2a1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160137:5865889288:2026-09-28T08:01:56Z:request_proof",
+      "comment_id": "5865889288",
+      "comment_version_key": "5865889288:2026-09-28T08:01:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160137#issuecomment-5865889288",
+      "comment_created_at": "2026-09-28T08:01:56Z",
+      "comment_updated_at": "2026-09-28T08:01:56Z",
+      "comment_body_sha256": "6c7c5461f69f3e53bd8e091c7514f3717b29b76f62d6247a98b69d314d436243",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160137,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "proof telegram-bot-e2e-proof",
+      "intent": "request_proof",
+      "proof_admission": {
+        "status": "queued",
+        "reason": "Queued one review with requested proof focus. The reviewer selects relevant supported checks and uses their observations before its final decision; no separate follow-up review is scheduled.",
+        "request": {
+          "repository": "openclaw/openclaw",
+          "pullRequest": 160137,
+          "headSha": "4153439ae7273254c7658f3ff32247410b29f98c",
+          "scenarioId": "telegram-bot-e2e-proof",
+          "requestId": "6dfd234908280c7454fbcd6d8a967af27ffabe3f55497506c671b48cb36442e1"
+        }
+      },
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T08:02:49.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/r97-forward-6",
+        "head_sha": "4153439ae7273254c7658f3ff32247410b29f98c",
         "cluster_id": null,
         "job_path": null
       },
