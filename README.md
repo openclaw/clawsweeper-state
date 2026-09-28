@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 28, 2026, 20:16 UTC
+Last source update: Sep 28, 2026, 20:42 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 28, 2026, 20:16 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 28, 2026, 20:16 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36477901892) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 28, 2026, 19:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36475582299) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 28, 2026, 20:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36480957108) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 28, 2026, 20:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36479804839) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 28, 2026, 13:56 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36432028072) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 28, 2026, 20:09 UTC
+Last source update: Sep 28, 2026, 20:36 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1285 | 100% |
-| Run attempts archived | 3840 | audit |
+| Run attempts archived | 3841 | audit |
 | Latest successful clusters | 1068 | 83.1% |
 | Latest failed clusters | 214 | 16.7% |
 | Latest cancelled clusters | 3 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1285 clusters: 357 maintainer action, 386 automation snapshot, 491 intervention needed, 51 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1119](https://github.com/openclaw/openclaw-windows-node/issues/1119) is maintainer_input: Route this historical PR to central OpenClaw security handling. The #1493 fix must stay within chat presentation and echo correlation..
-- Intervention first: [steipete/codexbar](https://github.com/steipete/codexbar) [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) is automation_blocked: No PR is justified yet. Main at bd77ea6 includes Devin session diagnostics, recovery guidance, and expanded Chromium discovery, but #3660....
+- Intervention first: [steipete/codexbar](https://github.com/steipete/codexbar) [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) is automation_blocked: No focused PR is justified yet. At main bd77ea6a, Devin has improved session errors, Chromium browser discovery, and manual-auth guidance....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#160474](https://github.com/openclaw/openclaw/pull/160474) is action_planned: The job permits one narrow fix PR and prohibits closing or merging the issue..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | No PR is justified yet. Main at bd77ea6 includes Devin session diagnostics, recovery guidance, and expanded Chromium discovery, but #3660 has no re... | Sep 28, 2026, 20:09 UTC | [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) | [36475876735](https://github.com/openclaw/clawsweeper/actions/runs/36475876735) |
+| [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | No focused PR is justified yet. At main bd77ea6a, Devin has improved session errors, Chromium browser discovery, and manual-auth guidance, but the... | Sep 28, 2026, 20:36 UTC | [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) | [36469337061](https://github.com/openclaw/clawsweeper/actions/runs/36469337061) |
 | [openclaw/notcrawl](https://github.com/openclaw/notcrawl) | [cluster:issue-openclaw-notcrawl-155](cluster:issue-openclaw-notcrawl-155) | automation_failed | Implementation requires a writable checkout and Go module cache. | Sep 28, 2026, 20:04 UTC | [issue-openclaw-notcrawl-155](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-notcrawl-155.md) | [36475103193](https://github.com/openclaw/clawsweeper/actions/runs/36475103193) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-113326](cluster:issue-openclaw-openclaw-113326) | automation_failed | Implementation and validation require a writable, dependency-ready checkout at a verified current main, plus inspection of the required Codex sibli... | Sep 28, 2026, 18:29 UTC | [issue-openclaw-openclaw-113326](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-113326.md) | [36457717271](https://github.com/openclaw/clawsweeper/actions/runs/36457717271) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-160577](cluster:issue-openclaw-openclaw-160577) | automation_failed | The executor must first reproduce the failure through the real mirror bridge composed with provenance, then make and validate the narrow change in... | Sep 28, 2026, 17:52 UTC | [issue-openclaw-openclaw-160577](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-160577.md) | [36457506490](https://github.com/openclaw/clawsweeper/actions/runs/36457506490) |
