@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T21:18:10.992Z",
+  "updated_at": "2026-09-28T21:18:43.105Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160519:5873202568:2026-09-28T16:01:05Z:clawsweeper_needs_human",
-      "comment_id": "5873202568",
-      "comment_version_key": "5873202568:2026-09-28T16:01:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160519#issuecomment-5873202568",
-      "comment_created_at": "2026-09-28T15:29:21Z",
-      "comment_updated_at": "2026-09-28T16:01:05Z",
-      "comment_body_sha256": "f92a9b4fc37d1ac95c6e2c7115353fd0fbb9f7551262e060981f24868150d85f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A pre-fix native receipt can preserve a false manifest classification and hardlink the manifest again on successor capture, leaving strict peer repair unable to read an existing insta... (sha=2f7040a821238f7f9d6413e92279e9f090332a61)",
-      "expected_head_sha": "2f7040a821238f7f9d6413e92279e9f090332a61",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:06:01.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugins-copy-captured-package-manifests-20260927",
-        "head_sha": "2f7040a821238f7f9d6413e92279e9f090332a61",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160535:5873794733:2026-09-28T16:02:15Z:clawsweeper_needs_human",
       "comment_id": "5873794733",
@@ -33951,6 +33918,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159759:5878786962:2026-09-28T21:16:58Z:re_review",
+      "comment_id": "5878786962",
+      "comment_version_key": "5878786962:2026-09-28T21:16:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159759#issuecomment-5878786962",
+      "comment_created_at": "2026-09-28T21:16:58Z",
+      "comment_updated_at": "2026-09-28T21:16:58Z",
+      "comment_body_sha256": "3324ad836064a3f6ed7107326b54b4ccaa85770220d252d08cff9c7c6146374f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159759,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T21:18:35.270Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l123-infra-fifth-pass",
+        "head_sha": "c468be72d093f9f97d89f4a525ca8fcad76f6d38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
