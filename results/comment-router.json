@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:40:36.596Z",
+  "updated_at": "2026-09-28T11:43:12.246Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160187:5864440436:2026-09-28T06:55:46Z:clawsweeper_needs_human",
-      "comment_id": "5864440436",
-      "comment_version_key": "5864440436:2026-09-28T06:55:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160187#issuecomment-5864440436",
-      "comment_created_at": "2026-09-28T06:08:56Z",
-      "comment_updated_at": "2026-09-28T06:55:46Z",
-      "comment_body_sha256": "1c1b55e7041fea3977d20b52beeb4d0b92567850c52423ef196d3002bbde11eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160187,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required hosted CI gate failed while building the unchanged UI comparison base, and fail-fast cancelled checks remain unrun; exact-head qualification is incomplete. (sha=ebd2fa2ee88b02d7d0d95d69b4f9ac06a1bd349a)",
-      "expected_head_sha": "ebd2fa2ee88b02d7d0d95d69b4f9ac06a1bd349a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T06:56:50.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/canonical-extension-inventory",
-        "head_sha": "ebd2fa2ee88b02d7d0d95d69b4f9ac06a1bd349a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160221:5865010971:2026-09-28T06:57:12Z:clawsweeper_needs_human",
       "comment_id": "5865010971",
@@ -33794,6 +33761,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160091:5869146143:2026-09-28T11:42:11Z:re_review",
+      "comment_id": "5869146143",
+      "comment_version_key": "5869146143:2026-09-28T11:42:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160091#issuecomment-5869146143",
+      "comment_created_at": "2026-09-28T11:42:11Z",
+      "comment_updated_at": "2026-09-28T11:42:11Z",
+      "comment_body_sha256": "1062419cd4f2611d066a89309183a63184fdd5a6fbc812ae928c06628e5fb8f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160091,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: replaced the closing reference with related so the broader persistent-report and changed-path requests remain open. this pr remains gateway logging only",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T11:43:11.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-dashboard-update-outcome",
+        "head_sha": "d0af54ed97732b6ea0f1ad7b6221bbe6d371dfb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
