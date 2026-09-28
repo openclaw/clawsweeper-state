@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T19:42:55.116Z",
+  "updated_at": "2026-09-28T19:42:55.833Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160392:5872632474:2026-09-28T15:01:52Z:freeform_assist",
-      "comment_id": "5872632474",
-      "comment_version_key": "5872632474:2026-09-28T15:01:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160392#issuecomment-5872632474",
-      "comment_created_at": "2026-09-28T15:01:52Z",
-      "comment_updated_at": "2026-09-28T15:01:52Z",
-      "comment_body_sha256": "95eea9a8c97e4ebf32e7ab5ef1fe133ec145c665348d0b821ac05cd2cb56d5a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160392,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "for exact head `80d5a9eb81bb4be8d4959a48773c1a717a023efa`, what actionable review findings remain? what keeps `status: ⏳ waiting on author` after the completed re-review? ci is still running.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:02:50.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/session-progress-and-blocker-review",
-        "head_sha": "80d5a9eb81bb4be8d4959a48773c1a717a023efa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160327:5872634042:2026-09-28T15:01:56Z:re_review",
       "comment_id": "5872634042",
@@ -34100,6 +34053,39 @@
         "kind": "pull_request",
         "branch": "codex/node-parity-p1a-tool-surface",
         "head_sha": "dffa369315bf78e1008bc123608301a1d0628909",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160162:5864186690:2026-09-28T19:12:51Z:clawsweeper_needs_human",
+      "comment_id": "5864186690",
+      "comment_version_key": "5864186690:2026-09-28T19:12:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160162#issuecomment-5864186690",
+      "comment_created_at": "2026-09-28T05:43:29Z",
+      "comment_updated_at": "2026-09-28T19:12:51Z",
+      "comment_body_sha256": "66e5edb796bc889ee864cc77862d9bb414d56f671c582eb83d4214fdcf7ce6ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160162,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=deb08f87319090a463815fe634596cd62fed6258)",
+      "expected_head_sha": "deb08f87319090a463815fe634596cd62fed6258",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T19:42:55.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/node-parity-l4-completion",
+        "head_sha": "deb08f87319090a463815fe634596cd62fed6258",
         "cluster_id": null,
         "job_path": null
       }
