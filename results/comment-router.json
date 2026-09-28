@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:43:26.694Z",
+  "updated_at": "2026-09-28T22:44:11.477Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160224:5874825820:2026-09-28T17:06:55Z:re_review",
-      "comment_id": "5874825820",
-      "comment_version_key": "5874825820:2026-09-28T17:06:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160224#issuecomment-5874825820",
-      "comment_created_at": "2026-09-28T17:06:55Z",
-      "comment_updated_at": "2026-09-28T17:06:55Z",
-      "comment_body_sha256": "516cc9c97333f8f3a0f143171fb33a155d0b5d96a12c8a85ab8e6c461cc7f5bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160224,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:07:56.959Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-npm-plugins",
-        "head_sha": "defb02bd12cbc339899a3b6807a57066c831db53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157557:5827415361:2026-09-25T05:39:13Z:re_review",
       "comment_id": "5827415361",
@@ -34026,6 +33979,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-witness-not-recorded-under-deployer-stop-20260919",
         "head_sha": "061359450b487d0becaddb14dbc1cf773494712f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160686:5877736910:2026-09-28T22:42:52Z:clawsweeper_needs_human",
+      "comment_id": "5877736910",
+      "comment_version_key": "5877736910:2026-09-28T22:42:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160686#issuecomment-5877736910",
+      "comment_created_at": "2026-09-28T20:18:10Z",
+      "comment_updated_at": "2026-09-28T22:42:52Z",
+      "comment_body_sha256": "7d40ee75c5f294fea75c87484ff41879c78fbc840915efe830477638c52cfd8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160686,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=29a01a0c9b8f7ff6e51e5f02146d54bf86f2a12a)",
+      "expected_head_sha": "29a01a0c9b8f7ff6e51e5f02146d54bf86f2a12a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T22:44:11.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-e2e-dictation-picker-readiness",
+        "head_sha": "29a01a0c9b8f7ff6e51e5f02146d54bf86f2a12a",
         "cluster_id": null,
         "job_path": null
       }
