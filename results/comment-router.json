@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:22:10.729Z",
+  "updated_at": "2026-09-28T20:23:11.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157016:5873255076:2026-09-28T15:32:28Z:re_review",
-      "comment_id": "5873255076",
-      "comment_version_key": "5873255076:2026-09-28T15:32:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157016#issuecomment-5873255076",
-      "comment_created_at": "2026-09-28T15:32:28Z",
-      "comment_updated_at": "2026-09-28T15:32:28Z",
-      "comment_body_sha256": "db67d6712b4d634e11df64b6dc87c12238dbd9754f4712e150408d7f17667c7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157016,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:33:27.810Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/update-disposable-copy",
-        "head_sha": "3209521e98a5b341120b440363bcff2228ed5659",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160455:5870319078:2026-09-28T15:32:45Z:clawsweeper_auto_repair",
       "comment_id": "5870319078",
@@ -33754,6 +33707,39 @@
         "kind": "pull_request",
         "branch": "codex/daemon-terminal-stop",
         "head_sha": "6e6e8f1a9a76d3c6d23201b946f18d4a439c3d49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160257:5865631290:2026-09-28T20:22:21Z:clawsweeper_needs_human",
+      "comment_id": "5865631290",
+      "comment_version_key": "5865631290:2026-09-28T20:22:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160257#issuecomment-5865631290",
+      "comment_created_at": "2026-09-28T07:44:11Z",
+      "comment_updated_at": "2026-09-28T20:22:21Z",
+      "comment_body_sha256": "0f3a32b9cd577cb677dd4b8cb4c8860b39013cf6f105cb7fded4c03859420981",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160257,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body lacks one-worker wall times for the new or materially changed test files and CI seconds once available, so their recurring cost has not been checked against the repository... (sha=08dee0d560fe6fc00cb05af368eebde34e64bd2d)",
+      "expected_head_sha": "08dee0d560fe6fc00cb05af368eebde34e64bd2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:23:11.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-an-unauthorized-message-appearance",
+        "head_sha": "08dee0d560fe6fc00cb05af368eebde34e64bd2d",
         "cluster_id": null,
         "job_path": null
       }
