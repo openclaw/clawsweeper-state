@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T15:09:28.389Z",
+  "updated_at": "2026-09-28T15:09:33.135Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160316:5867230762:2026-09-28T09:45:04Z:clawsweeper_needs_human",
-      "comment_id": "5867230762",
-      "comment_version_key": "5867230762:2026-09-28T09:45:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160316#issuecomment-5867230762",
-      "comment_created_at": "2026-09-28T09:31:28Z",
-      "comment_updated_at": "2026-09-28T09:45:04Z",
-      "comment_body_sha256": "57c86259441924482750d275e15f2a05f536b6aa636561767b512743f70e87cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160316,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the released explicit warning option (P1)** - The released Plugin SDK lets external plugins request the warning with includeWarning: true. This change stops reading that value, so those plugins silently...; Review finding: [P1] Preserve the released explicit warning option — src/security/external-content.ts:366-367 - [medium] Accept or assess the removed trust cue — src/security/exte... (sha=65d69cb003331e0177ee06a30a955bbd833fb682)",
-      "expected_head_sha": "65d69cb003331e0177ee06a30a955bbd833fb682",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T10:22:46.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/remove-external-content-warning",
-        "head_sha": "5f720f759abaf0aa657331abe7604c258dc2ec41",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160332:5867293470:2026-09-28T10:18:56Z:clawsweeper_auto_repair",
       "comment_id": "5867293470",
@@ -33545,6 +33512,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160473:5872775413:2026-09-28T15:08:31Z:re_review",
+      "comment_id": "5872775413",
+      "comment_version_key": "5872775413:2026-09-28T15:08:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160473#issuecomment-5872775413",
+      "comment_created_at": "2026-09-28T15:08:31Z",
+      "comment_updated_at": "2026-09-28T15:08:31Z",
+      "comment_body_sha256": "450bc2feffa30f3f42f9e2b9be3181e8e1b8cf2bb74049c8ffa64495ec9c3163",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160473,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T15:09:31.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/pr159688-main-category-repair",
+        "head_sha": "7fef871caf697231237786ef85ca608609906bf1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
