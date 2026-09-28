@@ -1,0 +1,91 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-3316",
+  "mode": "autonomous",
+  "run_id": "36399117869",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36399117869",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-3316.md",
+  "published_at": "2026-09-28T08:50:41.713Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/3316",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/3316",
+  "canonical_pr": null,
+  "summary": "At main 03f4b688, the reported automatic restart paths are fixed. The missing token-history tail remains open, but its accounting owner cannot be identified from snapshot and usage-row counts. A minimized source/store fixture with expected owned usage is required before a safe implementation PR. No code was changed; tests were not run.",
+  "actions": [
+    {
+      "target": "#3316",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#3316",
+      "candidate_fix": null,
+      "reason": "A snapshot/row count difference does not prove omitted billable usage. The issue needs a minimized source/store fixture showing the expected fork-owned usage and the incorrect materialized result."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-3316",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#3316",
+      "candidate_fix": null,
+      "reason": "Artifact is a fixture-gated plan. Do not open a PR until replay isolates whether parsing, fork ownership, row persistence, or aggregate reconstruction is wrong."
+    },
+    {
+      "target": "#3411",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#3316",
+      "candidate_fix": null,
+      "reason": "The reports share the Codex spend area but retain different unresolved behavior."
+    },
+    {
+      "target": "#3954",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact linked PR for central OpenClaw security handling. Its Codex catch-up component does not block classification of #3316."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#3316",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
