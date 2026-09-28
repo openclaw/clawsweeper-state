@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1443",
+  "mode": "autonomous",
+  "run_id": "36439950623",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36439950623",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1443.md",
+  "published_at": "2026-09-28T15:02:59.266Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1443",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1443",
+  "canonical_pr": null,
+  "summary": "Issue #1443 remains open on main 3331b5e. SettingsManager loads and saves SandboxTimeoutMs, but SandboxPage can handle the slider's initial value before LoadState enables event suppression. This is a narrow, plausible overwrite path; a current-head Windows reproduction is still needed. No code was changed or validation claimed in this read-only worker checkout.",
+  "actions": [
+    {
+      "target": "#1443",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1443",
+      "candidate_fix": null,
+      "reason": "The reported data loss has a narrow source-supported repair path, subject to current-head runtime proof."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1443",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1443",
+      "candidate_fix": null,
+      "reason": "Create one focused fix PR from the job's target branch after implementing and validating the guard."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
