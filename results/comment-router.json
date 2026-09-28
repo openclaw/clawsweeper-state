@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:42:24.960Z",
+  "updated_at": "2026-09-28T23:42:25.557Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160563:5875513065:2026-09-28T17:51:32Z:re_review",
-      "comment_id": "5875513065",
-      "comment_version_key": "5875513065:2026-09-28T17:51:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160563#issuecomment-5875513065",
-      "comment_created_at": "2026-09-28T17:51:32Z",
-      "comment_updated_at": "2026-09-28T17:51:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160563,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T17:59:27.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-stale-roster-row-keeps-stop-visible",
-        "head_sha": "cc1387e7bd15bfa5b0803430bcf5138e6f08d154",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160563:5874689746:2026-09-28T17:58:11Z:clawsweeper_needs_human",
       "comment_id": "5874689746",
@@ -33938,6 +33891,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-synology-context-inventory-20260928",
         "head_sha": "866f79966f3d03874af10e08566eca730347cd0c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160793:5880799771:2026-09-28T23:41:31Z:clawsweeper_needs_human",
+      "comment_id": "5880799771",
+      "comment_version_key": "5880799771:2026-09-28T23:41:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160793#issuecomment-5880799771",
+      "comment_created_at": "2026-09-28T23:41:31Z",
+      "comment_updated_at": "2026-09-28T23:41:31Z",
+      "comment_body_sha256": "233910a3aadd520573035c9f8f29431a99eb2f9cf1180c04597981856a712b09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Codex attempt captures a partial configured-MCP tool surface for the automation tool; the linked is...; Review finding: [P1] Preserve the shipped finite-list scheduling contract — src/agents/tools/cron-tool-creator-cap.ts:324-329 - [medium] Prove partial capture cannot outlive creat... (sha=51e6f31a26e30b8e3f4d37d4166dff32ad4ea6a6)",
+      "expected_head_sha": "51e6f31a26e30b8e3f4d37d4166dff32ad4ea6a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:42:25.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-156379-mcp-continuation-capture",
+        "head_sha": "51e6f31a26e30b8e3f4d37d4166dff32ad4ea6a6",
         "cluster_id": null,
         "job_path": null
       }
