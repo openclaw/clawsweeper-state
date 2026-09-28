@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T15:19:28.979Z",
+  "updated_at": "2026-09-28T15:20:42.879Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Kova:155:5868200844:2026-09-28T10:33:59Z:re_review",
-      "comment_id": "5868200844",
-      "comment_version_key": "5868200844:2026-09-28T10:33:59Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/155#issuecomment-5868200844",
-      "comment_created_at": "2026-09-28T10:33:59Z",
-      "comment_updated_at": "2026-09-28T10:33:59Z",
-      "comment_body_sha256": "76aae22bbda6ce9c7fde200d52a4d78d37b4b8cd6852d0797705b11c6fe84d93",
-      "repo": "openclaw/Kova",
-      "issue_number": 155,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T10:35:07.985Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-ci/cpu-census-owner-1790591000",
-        "head_sha": "448a8b32ffbc89a3564c52b416ad9a649d340653",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160038:5862149388:2026-09-28T10:35:24Z:clawsweeper_auto_repair",
       "comment_id": "5862149388",
@@ -33610,6 +33563,39 @@
         "kind": "pull_request",
         "branch": "fix/159862-visible-spawn-rollback",
         "head_sha": "172c42ff4e828bfe01c8182710e25a190ec0d6f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160487:5872052520:2026-09-28T15:19:29Z:clawsweeper_needs_human",
+      "comment_id": "5872052520",
+      "comment_version_key": "5872052520:2026-09-28T15:19:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160487#issuecomment-5872052520",
+      "comment_created_at": "2026-09-28T14:30:13Z",
+      "comment_updated_at": "2026-09-28T15:19:29Z",
+      "comment_body_sha256": "e3cb7d124967809ff5492aec2547326992f792074deffffd0839054da918f4aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160487,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing 0.155.1 installation has not been shown to upgrade to a matching 0.158.0 plugin and native binary. Doctor requires an exact version match, so package drift could leave Cod... (sha=46a4cee3c9dea87a456a2df928b591246a6f0a3b)",
+      "expected_head_sha": "46a4cee3c9dea87a456a2df928b591246a6f0a3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T15:20:42.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-0158-command-output",
+        "head_sha": "46a4cee3c9dea87a456a2df928b591246a6f0a3b",
         "cluster_id": null,
         "job_path": null
       }
