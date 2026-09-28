@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T09:11:29.051Z",
+  "updated_at": "2026-09-28T09:12:21.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159850:5859054834:2026-09-28T03:55:44Z:clawsweeper_auto_repair",
-      "comment_id": "5859054834",
-      "comment_version_key": "5859054834:2026-09-28T03:55:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159850#issuecomment-5859054834",
-      "comment_created_at": "2026-09-27T19:25:40Z",
-      "comment_updated_at": "2026-09-28T03:55:44Z",
-      "comment_body_sha256": "a29cdc3f3bacda1ddc56ae006f3335ae6523c63fbea7f9905fe43a0a244317ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159850,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7eddf5f4846764d3b851f6e04d917491469a863a)",
-      "expected_head_sha": "7eddf5f4846764d3b851f6e04d917491469a863a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T04:41:31.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/steering-not-working-0fb6b6",
-        "head_sha": "7eddf5f4846764d3b851f6e04d917491469a863a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159854:5859152771:2026-09-28T04:32:13Z:clawsweeper_needs_human",
       "comment_id": "5859152771",
@@ -33335,6 +33302,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159040:5866914960:2026-09-28T09:11:28Z:re_review",
+      "comment_id": "5866914960",
+      "comment_version_key": "5866914960:2026-09-28T09:11:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159040#issuecomment-5866914960",
+      "comment_created_at": "2026-09-28T09:11:28Z",
+      "comment_updated_at": "2026-09-28T09:11:28Z",
+      "comment_body_sha256": "f6acd94217bdf7734a810b72ce60473b1f072ff757ad569e14ec6cf17a5a2229",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159040,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T09:12:20.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/durable-plugin-callback",
+        "head_sha": "20b766575893906c6c18a6a413ac138f37c2b91a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
