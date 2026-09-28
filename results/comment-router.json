@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:10:36.225Z",
+  "updated_at": "2026-09-28T11:11:05.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160194:5864647563:2026-09-28T06:27:14Z:clawsweeper_needs_human",
-      "comment_id": "5864647563",
-      "comment_version_key": "5864647563:2026-09-28T06:27:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160194#issuecomment-5864647563",
-      "comment_created_at": "2026-09-28T06:27:14Z",
-      "comment_updated_at": "2026-09-28T06:27:14Z",
-      "comment_body_sha256": "1d7bc7f781c3e4003aaba18b41baf4810ef709d86363fcdd52423d8e6c3df707",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160194,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A slow but otherwise valid mobile release can now stop before notes are saved: both Android audiences share five minutes, and an individual model request has a 90-second limit with no... (sha=636d416192051671fe24b4daa8adb297c9a496fc)",
-      "expected_head_sha": "636d416192051671fe24b4daa8adb297c9a496fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T06:28:08.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/mobile-release-notes",
-        "head_sha": "636d416192051671fe24b4daa8adb297c9a496fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160181:5864307169:2026-09-28T06:25:55Z:clawsweeper_needs_human",
       "comment_id": "5864307169",
@@ -33798,6 +33765,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158680:5843672248:2026-09-28T11:09:52Z:clawsweeper_needs_human",
+      "comment_id": "5843672248",
+      "comment_version_key": "5843672248:2026-09-28T11:09:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158680#issuecomment-5843672248",
+      "comment_created_at": "2026-09-26T05:53:10Z",
+      "comment_updated_at": "2026-09-28T11:09:52Z",
+      "comment_body_sha256": "44fa84523540c85ffd651bfcebd0c29935541c33a322a23fa5ce4202ef1b5755",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports after-fix caller-gap measurements with a real SQLite worker fixture, but its forbi...; Review finding: [P1] Preserve verified-human provenance in the worker classifier — src/agents/main-session-recovery/main-session-restart-recovery-checkpoint-reader.ts:51-52 - [hig... (sha=a441eb6e1ae8f6684a88b05b00657bdd19db758d)",
+      "expected_head_sha": "a441eb6e1ae8f6684a88b05b00657bdd19db758d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T11:11:05.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/recovery-checkpoint-history-worker-20260926",
+        "head_sha": "a441eb6e1ae8f6684a88b05b00657bdd19db758d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
