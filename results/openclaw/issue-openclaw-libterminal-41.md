@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "36384152459"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36384152459"
-head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
+run_id: "36395373678"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36395373678"
+head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T06:00:52.246Z"
+published_at: "2026-09-28T08:10:55.356Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36384152459](https://github.com/openclaw/clawsweeper/actions/runs/36384152459)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36395373678](https://github.com/openclaw/clawsweeper/actions/runs/36395373678)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Issue #41 remains an upstream adoption tracker. Its required stable Ghostty v1.4 tag and compatible published wrapper are not available for an implementation PR, so no code was changed.
+No implementation PR is ready. Issue #41 explicitly requires a stable Ghostty v1.4 tag and a published compatible wrapper before work starts. The latest supplied upstream check found both gates unmet, and this run could not verify that they have since changed.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Issue #41 remains an upstream adoption tracker. Its required stable Ghostty v1.4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | Keep the issue open until both publication gates are met; creating a PR now would require an unreleased runtime or private ABI work that the issue explicitly excludes. |
+| #41 | keep_canonical | planned | canonical | The issue's explicit prerequisites lack current positive verification. Leave the tracker open and defer implementation until both publications can be confirmed. |
 
 ## Needs Human
 
