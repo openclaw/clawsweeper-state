@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:28:43.338Z",
+  "updated_at": "2026-09-28T07:28:53.328Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160036:5862197999:2026-09-28T02:27:20Z:re_review",
-      "comment_id": "5862197999",
-      "comment_version_key": "5862197999:2026-09-28T02:27:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160036#issuecomment-5862197999",
-      "comment_created_at": "2026-09-28T02:27:20Z",
-      "comment_updated_at": "2026-09-28T02:27:20Z",
-      "comment_body_sha256": "ac9f361d5586fb772566f1fd03887b5039ac0f36cf6e50d720964762c7c31aeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160036,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T02:28:14.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/improve-session-continuity-and-pr-reliability",
-        "head_sha": "8dfec83a15ea4fcf4dc39ab444cde686c24d47de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160041:5862202104:2026-09-28T02:27:51Z:clawsweeper_auto_repair",
       "comment_id": "5862202104",
@@ -33601,6 +33554,39 @@
         "kind": "pull_request",
         "branch": "steipete/worker-turn-waits-for-runtime-refresh",
         "head_sha": "c4180f9961e4a006560f36d00347367b9db5f0d7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159856:5859316286:2026-09-28T07:27:48Z:clawsweeper_needs_human",
+      "comment_id": "5859316286",
+      "comment_version_key": "5859316286:2026-09-28T07:27:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159856#issuecomment-5859316286",
+      "comment_created_at": "2026-09-27T19:57:05Z",
+      "comment_updated_at": "2026-09-28T07:27:48Z",
+      "comment_body_sha256": "ec1d91a2786f33a4e36ca3b648278d230b2d9bfaaf40173a26a505b63f261398",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head has not completed its planned final validation: hosted CI stopped at Build CI manifest before the normal lanes ran, and the PR body still describes the final Testbox c... (sha=b076a3933d140be7168705eb65b70deb4a93fe62)",
+      "expected_head_sha": "b076a3933d140be7168705eb65b70deb4a93fe62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:28:53.328Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l130-agents-root4",
+        "head_sha": "b076a3933d140be7168705eb65b70deb4a93fe62",
         "cluster_id": null,
         "job_path": null
       }
