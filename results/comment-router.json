@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:44:25.188Z",
+  "updated_at": "2026-09-28T14:44:52.633Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160364:5867952719:2026-09-28T10:16:18Z:clawsweeper_needs_human",
-      "comment_id": "5867952719",
-      "comment_version_key": "5867952719:2026-09-28T10:16:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160364#issuecomment-5867952719",
-      "comment_created_at": "2026-09-28T10:16:18Z",
-      "comment_updated_at": "2026-09-28T10:16:18Z",
-      "comment_body_sha256": "3fb51e3b8ab0cd44c43c94e04cc1142fa9968d27d9f4487cd49de16c270cd9d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160364,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production redactor serves log, diagnostic, and source-input sinks, but the supplied after-fix evidence consists of direct-redactor...; Review finding: [P1] Require a complete reference before skipping assignment masking — src/logging/redact.ts:605-611 - [high] Reference-prefix bypass of assignment redaction — src... (sha=44eea67a0451365c8016be8e1b9779c1cfe51c98)",
-      "expected_head_sha": "44eea67a0451365c8016be8e1b9779c1cfe51c98",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T10:17:16.646Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/logging-non-secret-env-references",
-        "head_sha": "44eea67a0451365c8016be8e1b9779c1cfe51c98",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160188:5864500123:2026-09-28T10:16:28Z:clawsweeper_auto_repair",
       "comment_id": "5864500123",
@@ -33445,6 +33412,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158914:5872306033:2026-09-28T14:43:38Z:re_review",
+      "comment_id": "5872306033",
+      "comment_version_key": "5872306033:2026-09-28T14:43:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158914#issuecomment-5872306033",
+      "comment_created_at": "2026-09-28T14:43:38Z",
+      "comment_updated_at": "2026-09-28T14:43:38Z",
+      "comment_body_sha256": "7bd59f117ec2e5f881636fd1492822c24adf61e51b7e99832affb6437f6b9c3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158914,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T14:44:50.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-candidate-failure-logs-158874",
+        "head_sha": "2386b2b29899a4cb2400ae21bda11ec94e6da2c1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
