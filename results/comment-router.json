@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T13:34:29.220Z",
+  "updated_at": "2026-09-28T13:35:22.196Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160281:5866382138:2026-09-28T08:33:53Z:re_review",
-      "comment_id": "5866382138",
-      "comment_version_key": "5866382138:2026-09-28T08:33:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160281#issuecomment-5866382138",
-      "comment_created_at": "2026-09-28T08:33:53Z",
-      "comment_updated_at": "2026-09-28T08:33:53Z",
-      "comment_body_sha256": "3749db5baa80ef859f92bed7546466dfa136d0f558e06f075c6d30f2cbacbafa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160281,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T08:34:55.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/lint-core-graphs",
-        "head_sha": "ba0f76def4ff8b7526d4e980f17e43c7e5cfc6b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160218:5864981335:2026-09-28T08:34:02Z:clawsweeper_needs_human",
       "comment_id": "5864981335",
@@ -33890,6 +33843,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-bb50543d5d",
         "head_sha": "8a7ba6400746c60f1313ef5578b353631f3f48c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:748:5864226288:2026-09-28T13:29:28Z:clawsweeper_needs_human",
+      "comment_id": "5864226288",
+      "comment_version_key": "5864226288:2026-09-28T13:29:28Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/748#issuecomment-5864226288",
+      "comment_created_at": "2026-09-28T05:47:30Z",
+      "comment_updated_at": "2026-09-28T13:29:28Z",
+      "comment_body_sha256": "535460e6f03f3daad027c9c9d5d7d63a45f4667fea4aa8f2e682bcba416bdeab",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin or verify the Rustup installer before executing it (P2)** - When Rustup is absent, this script downloads the current installer and runs it without a fixed digest. A proof machine then executes code outside t...; Review finding: [P2] Pin or verify the Rustup installer before executing it — scripts/root-race/linux-campaign.sh:7-8 - [P2] Exclude native-only operations from the native-off str... (sha=ac814c2b532bb0f19ff1cdad28dee9cb65a88873)",
+      "expected_head_sha": "ac814c2b532bb0f19ff1cdad28dee9cb65a88873",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T13:35:22.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hunt-root-races-20260927",
+        "head_sha": "ac814c2b532bb0f19ff1cdad28dee9cb65a88873",
         "cluster_id": null,
         "job_path": null
       }
