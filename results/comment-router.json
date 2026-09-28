@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T23:35:25.498Z",
+  "updated_at": "2026-09-28T23:36:23.102Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160475:5871170687:2026-09-28T17:50:46Z:clawsweeper_auto_repair",
-      "comment_id": "5871170687",
-      "comment_version_key": "5871170687:2026-09-28T17:50:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160475#issuecomment-5871170687",
-      "comment_created_at": "2026-09-28T13:46:49Z",
-      "comment_updated_at": "2026-09-28T17:50:46Z",
-      "comment_body_sha256": "56f598f4a56ef717cafacc5f398f4d77e60d9f39677843be150aee2aeb6111ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160475,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b61747cd37d1b32c114e28deed742c3fe9ddf7ad)",
-      "expected_head_sha": "b61747cd37d1b32c114e28deed742c3fe9ddf7ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T17:51:54.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-catalog-native-start",
-        "head_sha": "b61747cd37d1b32c114e28deed742c3fe9ddf7ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154534:5756668795:2026-09-28T17:51:08Z:clawsweeper_auto_repair",
       "comment_id": "5756668795",
@@ -33944,6 +33911,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4080:5861451769:2026-09-28T23:30:46Z:clawsweeper_needs_human",
+      "comment_id": "5861451769",
+      "comment_version_key": "5861451769:2026-09-28T23:30:46Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4080#issuecomment-5861451769",
+      "comment_created_at": "2026-09-28T00:54:52Z",
+      "comment_updated_at": "2026-09-28T23:30:46Z",
+      "comment_body_sha256": "1d12fb7ef1c92da4580afc41b98208190afb6090f4d01dc66cfcabbd4889f457",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the Gatekeeper verdict lifetime** - An unchanged CLI retains a prior allowed result after simulated in-place certificate revocation until the memo expires; the repository owner...; Review finding: [medium] Approve the Gatekeeper verdict lifetime — Sources/CodexBarCore/CodexLaunchPreflight+AssessmentMemo.swift:26 (sha=f80ae0310e56f9a7500ff87c5876815af91375e9)",
+      "expected_head_sha": "f80ae0310e56f9a7500ff87c5876815af91375e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:36:23.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-preflight-assessment-memo",
+        "head_sha": "f80ae0310e56f9a7500ff87c5876815af91375e9",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
