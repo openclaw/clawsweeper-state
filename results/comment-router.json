@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:34:13.645Z",
+  "updated_at": "2026-09-28T08:34:16.312Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1707:5862974170:2026-09-28T03:47:34Z:clawsweeper_needs_human",
-      "comment_id": "5862974170",
-      "comment_version_key": "5862974170:2026-09-28T03:47:34Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1707#issuecomment-5862974170",
-      "comment_created_at": "2026-09-28T03:47:34Z",
-      "comment_updated_at": "2026-09-28T03:47:34Z",
-      "comment_body_sha256": "768f2e6bcc993cbed62cc0c7e57cadc8578fba52ae9cf79f35d5407039f7cd40",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The before-and-after publication benchmark uses a fake GitHub client and loopback broker, so it has not established the changed conditional-response path, final effects, or latency ga... (sha=1bf984fbcacac12187cd13ddc4573b2211739dad)",
-      "expected_head_sha": "1bf984fbcacac12187cd13ddc4573b2211739dad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T03:48:46.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/direct-publication-apply",
-        "head_sha": "1bf984fbcacac12187cd13ddc4573b2211739dad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159896:5859985999:2026-09-28T03:49:10Z:clawsweeper_needs_human",
       "comment_id": "5859985999",
@@ -33569,6 +33536,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159431:5852858710:2026-09-28T08:33:04Z:clawsweeper_needs_human",
+      "comment_id": "5852858710",
+      "comment_version_key": "5852858710:2026-09-28T08:33:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159431#issuecomment-5852858710",
+      "comment_created_at": "2026-09-27T05:08:12Z",
+      "comment_updated_at": "2026-09-28T08:33:04Z",
+      "comment_body_sha256": "96c2d8a32d41df211c09259849edb8743d8b96ebc9dc5d90691aeb5249e06ad7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159431,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The final per-user and private-fallback shim matcher has not been exercised in a real packaged Bun-only install. A mismatch with the actual lifecycle PATH would still reject first ins... (sha=c29ab3b9c4435d7d0a6a094d077fe4fd8e8ef272)",
+      "expected_head_sha": "c29ab3b9c4435d7d0a6a094d077fe4fd8e8ef272",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:34:16.312Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-only-update-runtime",
+        "head_sha": "c29ab3b9c4435d7d0a6a094d077fe4fd8e8ef272",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
