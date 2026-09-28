@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T13:44:00.485Z",
+  "updated_at": "2026-09-28T13:44:12.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158523:5855611968:2026-09-28T08:29:48Z:re_review",
-      "comment_id": "5855611968",
-      "comment_version_key": "5855611968:2026-09-28T08:29:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158523#issuecomment-5855611968",
-      "comment_created_at": "2026-09-27T11:57:25Z",
-      "comment_updated_at": "2026-09-28T08:29:48Z",
-      "comment_body_sha256": "a0e4dc5942d8fd0737f703497be7a1f53f5bf4b07fe0c98b26429863c6c1bd01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158523,
-      "author": "aashish254",
-      "author_id": 145881415,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T08:45:29.776Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158460:5855639526:2026-09-28T08:29:04Z:re_review",
       "comment_id": "5855639526",
@@ -33929,6 +33902,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T13:44:00.485Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159879:5859599228:2026-09-28T13:43:07Z:clawsweeper_needs_human",
+      "comment_id": "5859599228",
+      "comment_version_key": "5859599228:2026-09-28T13:43:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159879#issuecomment-5859599228",
+      "comment_created_at": "2026-09-27T20:34:48Z",
+      "comment_updated_at": "2026-09-28T13:43:07Z",
+      "comment_body_sha256": "d2bcd2c921a6c1e37a4c06b14ba1e46b2d958aec6fd74680f9af6fb5ecbcfb3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the production plugin drives a signed-in Chrome tab, but the supplied after-change observations come from VM an...; Review finding: [P1] Require a host release containing the ownership hook — extensions/slack-huddles/package.json:33-36 - [medium] Prove huddle authority at browser effects — exte... (sha=8e7945bd455eeddebedbea4a4f3c819f7685751a)",
+      "expected_head_sha": "8e7945bd455eeddebedbea4a4f3c819f7685751a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T13:44:12.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/claw-slack-huddles-2ca280",
+        "head_sha": "8e7945bd455eeddebedbea4a4f3c819f7685751a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
