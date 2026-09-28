@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T01:11:32.871Z",
+  "updated_at": "2026-09-28T01:12:27.705Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159836:5858732163:2026-09-27T19:11:03Z:re_review",
-      "comment_id": "5858732163",
-      "comment_version_key": "5858732163:2026-09-27T19:11:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159836#issuecomment-5858732163",
-      "comment_created_at": "2026-09-27T18:51:36Z",
-      "comment_updated_at": "2026-09-27T19:11:03Z",
-      "comment_body_sha256": "d68bda57053e2955a6142d53ea344eb530e8c1ba87421714b15049e4c85e4c2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159836,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-27T19:19:19.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-main-ci-fixtures-159169",
-        "head_sha": "043df344a76da2399f55609b09e08b8a3a16457c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159842:5858981806:2026-09-27T19:18:31Z:clawsweeper_needs_human",
       "comment_id": "5858981806",
@@ -33530,6 +33483,39 @@
         "kind": "pull_request",
         "branch": "codex/ci-doctor-fixture-retention",
         "head_sha": "c0a746e67ad4df0d59932bb7648ca52e75d37b6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159297:5851582130:2026-09-28T01:04:57Z:clawsweeper_needs_human",
+      "comment_id": "5851582130",
+      "comment_version_key": "5851582130:2026-09-28T01:04:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159297#issuecomment-5851582130",
+      "comment_created_at": "2026-09-27T01:21:20Z",
+      "comment_updated_at": "2026-09-28T01:04:57Z",
+      "comment_body_sha256": "a3b884f1d285ed5e55196f53ddf5d6695a2063946288f1df9a585bb9aa9b61ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159297,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner-lease reads were exercised in a real Windows 11 Scheduled Task stop/restart run at this head, and injected-error tes... (sha=4880c84c8d03caf123eb194cbb757b13895c5544)",
+      "expected_head_sha": "4880c84c8d03caf123eb194cbb757b13895c5544",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T01:12:27.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-windows-schtasks-owner-lease-ioerr-retry-159222",
+        "head_sha": "4880c84c8d03caf123eb194cbb757b13895c5544",
         "cluster_id": null,
         "job_path": null
       }
