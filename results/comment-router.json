@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T20:35:32.813Z",
+  "updated_at": "2026-09-28T20:38:58.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160297:5873564610:2026-09-28T15:48:56Z:re_review",
-      "comment_id": "5873564610",
-      "comment_version_key": "5873564610:2026-09-28T15:48:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160297#issuecomment-5873564610",
-      "comment_created_at": "2026-09-28T15:48:56Z",
-      "comment_updated_at": "2026-09-28T15:48:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160297,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T15:50:04.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-session-interruption-bug",
-        "head_sha": "565329e3000f0c0b78b729f6638c781a743c1e68",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156407:5792991931:2026-09-28T15:36:32Z:clawsweeper_needs_human",
       "comment_id": "5792991931",
@@ -33724,6 +33677,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-availability-partial-refresh-158922",
         "head_sha": "36cdbaa657c58b8ae1e51ff159682298bbef7f38",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160696:5878066053:2026-09-28T20:38:00Z:clawsweeper_needs_human",
+      "comment_id": "5878066053",
+      "comment_version_key": "5878066053:2026-09-28T20:38:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160696#issuecomment-5878066053",
+      "comment_created_at": "2026-09-28T20:38:00Z",
+      "comment_updated_at": "2026-09-28T20:38:00Z",
+      "comment_body_sha256": "cdebf26d444abd9973b3f298c72950d9b440d48a3d7e1f0c6e140b0a21f3d00a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160696,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed runner and delivery preparers feed production local reads and outbound staging, but this head shows...; Review finding: [P1] Constrain reads to the session root — src/auto-reply/reply/reply-media-paths.ts:521-525 - [P1] Fail closed when the current session row is unavailable — src/a... (sha=a8208b3dbe94bce8444fd9241184cddea80c9c21)",
+      "expected_head_sha": "a8208b3dbe94bce8444fd9241184cddea80c9c21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T20:38:58.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1068",
+        "head_sha": "a8208b3dbe94bce8444fd9241184cddea80c9c21",
         "cluster_id": null,
         "job_path": null
       }
