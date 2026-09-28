@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T13:41:09.251Z",
+  "updated_at": "2026-09-28T13:41:20.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160014:5863009005:2026-09-28T03:51:02Z:re_review",
-      "comment_id": "5863009005",
-      "comment_version_key": "5863009005:2026-09-28T03:51:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160014#issuecomment-5863009005",
-      "comment_created_at": "2026-09-28T03:51:02Z",
-      "comment_updated_at": "2026-09-28T03:51:02Z",
-      "comment_body_sha256": "667ad8f2c76339bc3ee09442a0547f3fe807559cd83d387ed17998b9cecc7f37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160014,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T08:44:12.794Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159854:5859152771:2026-09-28T08:44:03Z:clawsweeper_auto_repair",
       "comment_id": "5859152771",
@@ -33937,6 +33910,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160296:5871033010:2026-09-28T13:39:38Z:re_review",
+      "comment_id": "5871033010",
+      "comment_version_key": "5871033010:2026-09-28T13:39:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160296#issuecomment-5871033010",
+      "comment_created_at": "2026-09-28T13:39:38Z",
+      "comment_updated_at": "2026-09-28T13:39:38Z",
+      "comment_body_sha256": "e6f6368f5c0c0a0bad0c7ad10d4cfd5ca79af8a8758d8d97027349e14794c9fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160296,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T13:41:18.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/why-can-t-it-archive-itself",
+        "head_sha": "bfca7c0c519f1a95c1202b7c1ba462c6d396dba6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
