@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-09-28T08:06:18.600Z",
+  "updated_at": "2026-09-28T08:00:07.574Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160048:5862457798:2026-09-28T02:56:56Z:clawsweeper_needs_human",
+      "comment_id": "5862457798",
+      "comment_version_key": "5862457798:2026-09-28T02:56:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160048#issuecomment-5862457798",
+      "comment_created_at": "2026-09-28T02:56:56Z",
+      "comment_updated_at": "2026-09-28T02:56:56Z",
+      "comment_body_sha256": "c1bd06bcd42228a95870ce31a406c3075f804beeaa6fbd02b3a1c437765ead42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160048,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Memory Core callback path was exercised through a real manager and SQLite index with synthetic embedding factories, but the PR prov... (sha=fd95095cdc65a9c3a65556d14d256dbabc3c4751)",
+      "expected_head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T03:03:22.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-159912-memory-background-reload",
+        "head_sha": "fd95095cdc65a9c3a65556d14d256dbabc3c4751",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159854:5859117933:2026-09-27T19:32:08Z:re_review",
+      "comment_id": "5859117933",
+      "comment_version_key": "5859117933:2026-09-27T19:32:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159854#issuecomment-5859117933",
+      "comment_created_at": "2026-09-27T19:32:08Z",
+      "comment_updated_at": "2026-09-27T19:32:08Z",
+      "comment_body_sha256": "a511e7ee687149fdc666a7c04d66cf97c91c68060e62eb2d31935b86d25b8da0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159854,
+      "author": "aashish254",
+      "author_id": 145881415,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:03:57.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/link-detect-trailing-punctuation-improved",
+        "head_sha": "fc844094c6da18b26bfca21503a1a3d9b744c8df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159854:5859152771:2026-09-28T03:03:10Z:clawsweeper_auto_repair",
       "comment_id": "5859152771",
@@ -33526,72 +33606,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160263:5865901202:2026-09-28T08:02:50Z:clawsweeper_needs_human",
-      "comment_id": "5865901202",
-      "comment_version_key": "5865901202:2026-09-28T08:02:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160263#issuecomment-5865901202",
-      "comment_created_at": "2026-09-28T08:02:50Z",
-      "comment_updated_at": "2026-09-28T08:02:50Z",
-      "comment_body_sha256": "49aeffb1391bd45552b5909b9458cafe673ec995f30c437113e86380acfad8e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160263,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Record focused Linux results and measured one-worker wall time for both changed suites in the PR body. (sha=2ff1271bd654416774f746be242c637211ce0144)",
-      "expected_head_sha": "2ff1271bd654416774f746be242c637211ce0144",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T08:03:57.054Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l136-update-cut-exit",
-        "head_sha": "2ff1271bd654416774f746be242c637211ce0144",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159431:5852858710:2026-09-28T08:05:06Z:clawsweeper_auto_repair",
-      "comment_id": "5852858710",
-      "comment_version_key": "5852858710:2026-09-28T08:05:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159431#issuecomment-5852858710",
-      "comment_created_at": "2026-09-27T05:08:12Z",
-      "comment_updated_at": "2026-09-28T08:05:06Z",
-      "comment_body_sha256": "45ac42e31e4cbd52c4216dff71b75f10464f4b79888611186aa11b172553ae97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159431,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f0ddba7a9f907eb03f7059e06544954051b8c7f)",
-      "expected_head_sha": "9f0ddba7a9f907eb03f7059e06544954051b8c7f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T08:06:18.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-only-update-runtime",
-        "head_sha": "9f0ddba7a9f907eb03f7059e06544954051b8c7f",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
