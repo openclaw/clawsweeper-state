@@ -2,12 +2,12 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-3355"
 mode: "autonomous"
-run_id: "36412261496"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36412261496"
+run_id: "36415667908"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36415667908"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T11:01:28.129Z"
+published_at: "2026-09-28T11:31:31.443Z"
 canonical: "https://github.com/steipete/CodexBar/issues/3355"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/3355"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36412261496](https://github.com/openclaw/clawsweeper/actions/runs/36412261496)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36415667908](https://github.com/openclaw/clawsweeper/actions/runs/36415667908)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/CodexBar/issues/3355
 
 ## Summary
 
-No focused PR is justified on current main. The reported 6,247-point value is already covered by placement repair, and the remaining suspected writer has not been reproduced on a build containing the latest fixes.
+No implementation PR is justified yet. Current main repairs the reported 6,247-point position and validates saved positions during status-item creation, hiding, and removal. The source of any new corruption remains unidentified; the maintainer has requested a current-build runtime trace before another fix.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No focused PR is justified on current main. The reported 6,247-point value is al
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #3355 | keep_canonical | planned | canonical | A current-build macOS trace across launch, dragging, visibility changes, and teardown is needed to identify remaining behavior before choosing a safe narrow patch. |
+| #3355 | keep_canonical | planned | canonical | A new patch needs a current-build trace identifying when and where the invalid position reappears. The reported value and known CodexBar-side preservation gap are already addressed on main. |
 
 ## Needs Human
 
