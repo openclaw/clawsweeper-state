@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:21:08.235Z",
+  "updated_at": "2026-09-28T08:21:34.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4088:5862776636:2026-09-28T03:28:39Z:clawsweeper_auto_repair",
-      "comment_id": "5862776636",
-      "comment_version_key": "5862776636:2026-09-28T03:28:39Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4088#issuecomment-5862776636",
-      "comment_created_at": "2026-09-28T03:28:39Z",
-      "comment_updated_at": "2026-09-28T03:28:39Z",
-      "comment_body_sha256": "28c42421cd650def789d3c45da7bf095a83ba02c1b40e01672fcbf0ad2591536",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4088,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2a2fb62766d575bfb96c3fde28be2a6560d69dd0)",
-      "expected_head_sha": "2a2fb62766d575bfb96c3fde28be2a6560d69dd0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T03:29:38.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage/20260921-codex-auth-3",
-        "head_sha": "2a2fb62766d575bfb96c3fde28be2a6560d69dd0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160035:5862145003:2026-09-28T03:26:28Z:clawsweeper_auto_repair",
       "comment_id": "5862145003",
@@ -33499,6 +33466,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T08:21:08.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160275:5866178674:2026-09-28T08:19:41Z:clawsweeper_needs_human",
+      "comment_id": "5866178674",
+      "comment_version_key": "5866178674:2026-09-28T08:19:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160275#issuecomment-5866178674",
+      "comment_created_at": "2026-09-28T08:19:41Z",
+      "comment_updated_at": "2026-09-28T08:19:41Z",
+      "comment_body_sha256": "41f89a7526c978b0923ce59277aa4ad3f78ad79fe9cc44aae302541a728d2ebb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160275,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected before/after Control UI screenshots show the new button, and the PR reports built-UI Chr...; Review finding: [P1] Preserve queued custody until Codex steering is definitive — src/auto-reply/reply/agent-runner-steer-adoption.ts:419-426 - [P1] Recheck requester authority be... (sha=2d43ca6326fce0014a26fac353b3e0678fc88680)",
+      "expected_head_sha": "2d43ca6326fce0014a26fac353b3e0678fc88680",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:21:34.285Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/jev-queue-decision-missing-steer-option",
+        "head_sha": "2d43ca6326fce0014a26fac353b3e0678fc88680",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
