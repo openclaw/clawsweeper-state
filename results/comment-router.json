@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:51:41.195Z",
+  "updated_at": "2026-09-28T14:53:22.874Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127653:5376077899:2026-09-28T09:22:15Z:clawsweeper_auto_repair",
-      "comment_id": "5376077899",
-      "comment_version_key": "5376077899:2026-09-28T09:22:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127653#issuecomment-5376077899",
-      "comment_created_at": "2026-08-21T22:31:47Z",
-      "comment_updated_at": "2026-09-28T09:22:15Z",
-      "comment_body_sha256": "414ae75935153b77afc4105b00ccaec8f863392e8161be8541521dc6c840815d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127653,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f0e56f9b7913ecb60753739bf924f6ce437d996)",
-      "expected_head_sha": "2f0e56f9b7913ecb60753739bf924f6ce437d996",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T10:22:46.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-canonical-media-fanout",
-        "head_sha": "2f0e56f9b7913ecb60753739bf924f6ce437d996",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127967:5381333443:2026-09-28T09:23:12Z:clawsweeper_auto_repair",
       "comment_id": "5381333443",
@@ -33467,6 +33434,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159988:5861368383:2026-09-28T14:51:41Z:clawsweeper_needs_human",
+      "comment_id": "5861368383",
+      "comment_version_key": "5861368383:2026-09-28T14:51:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159988#issuecomment-5861368383",
+      "comment_created_at": "2026-09-28T00:43:48Z",
+      "comment_updated_at": "2026-09-28T14:51:41Z",
+      "comment_body_sha256": "5d8c13306207091b46d5f1c771943af9e6851199b3ef251b7309df485018ce0f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159988,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current pinned Bun executable has no recorded complete native-split stripe comparison against Node, so case and skip parity and the full-shard time budget remain unverified. (sha=03c12b83328127cf4ee6d31287d0ad22f4cc4054)",
+      "expected_head_sha": "03c12b83328127cf4ee6d31287d0ad22f4cc4054",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T14:53:22.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-native-tests-20260927",
+        "head_sha": "03c12b83328127cf4ee6d31287d0ad22f4cc4054",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
