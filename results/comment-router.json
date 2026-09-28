@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:49:43.228Z",
+  "updated_at": "2026-09-28T16:55:22.643Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112641:5869511700:2026-09-28T12:07:40Z:re_review",
-      "comment_id": "5869511700",
-      "comment_version_key": "5869511700:2026-09-28T12:07:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112641#issuecomment-5869511700",
-      "comment_created_at": "2026-09-28T12:07:40Z",
-      "comment_updated_at": "2026-09-28T12:07:40Z",
-      "comment_body_sha256": "96c72e9d808bcb0bad7e9b071d22408cfb355f059fd14a940a3ab51c8076ab79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112641,
-      "author": "a-tokyo",
-      "author_id": 12428415,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:35:28.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/enforce-session-maintenance-limits",
-        "head_sha": "d490268c7d8e99e7ceda8b34afe33525ae41da70",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160444:5869921136:2026-09-28T12:34:38Z:clawsweeper_auto_repair",
       "comment_id": "5869921136",
@@ -33498,6 +33451,39 @@
         "kind": "pull_request",
         "branch": "fix/f015-drop-leftover-gateway-tokens",
         "head_sha": "29c83ff9ca877b39bb7507dea1a0e7b105f6a5c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160555:5874512192:2026-09-28T16:54:23Z:clawsweeper_needs_human",
+      "comment_id": "5874512192",
+      "comment_version_key": "5874512192:2026-09-28T16:54:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160555#issuecomment-5874512192",
+      "comment_created_at": "2026-09-28T16:46:32Z",
+      "comment_updated_at": "2026-09-28T16:54:23Z",
+      "comment_body_sha256": "d8891aaee54fb877cb2d219964dc57112f70e52698e6eeb76986795f7f21b8b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160555,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when the author is ready to merge. (sha=6ff070cdc0ac13a0c600576114f733f0140785fd)",
+      "expected_head_sha": "6ff070cdc0ac13a0c600576114f733f0140785fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T16:55:22.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/audit-theme-color-drift-and-create-prs",
+        "head_sha": "6ff070cdc0ac13a0c600576114f733f0140785fd",
         "cluster_id": null,
         "job_path": null
       }
