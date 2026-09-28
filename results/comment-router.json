@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T17:17:49.614Z",
+  "updated_at": "2026-09-28T17:18:23.303Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4085:5864395275:2026-09-28T06:45:50Z:re_review",
-      "comment_id": "5864395275",
-      "comment_version_key": "5864395275:2026-09-28T06:45:50Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4085#issuecomment-5864395275",
-      "comment_created_at": "2026-09-28T06:04:24Z",
-      "comment_updated_at": "2026-09-28T06:45:50Z",
-      "comment_body_sha256": "b397bcd2d8a40c0d4e43c0f83e0a3811361a11d4583b8b6f90f7b38a3698085a",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4085,
-      "author": "callmejustdodo",
-      "author_id": 52357676,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T12:58:28.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/quota-burndown",
-        "head_sha": "b4885d028d89317c71a61da6680f1d67f3ac2960",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4085:5862260783:2026-09-28T12:57:35Z:clawsweeper_needs_human",
       "comment_id": "5862260783",
@@ -33568,6 +33521,39 @@
         "kind": "pull_request",
         "branch": "tcr/land-d088-1790607310",
         "head_sha": "033deff474cab100f12c26803f3c0e3de71ab811",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160175:5864286149:2026-09-28T17:17:02Z:clawsweeper_needs_human",
+      "comment_id": "5864286149",
+      "comment_version_key": "5864286149:2026-09-28T17:17:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160175#issuecomment-5864286149",
+      "comment_created_at": "2026-09-28T05:53:48Z",
+      "comment_updated_at": "2026-09-28T17:17:02Z",
+      "comment_body_sha256": "9bf8b26e7af67ba21ce000456ab8587de9e059046be8f8e08ffc0c1bf3f1b7f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Serial execution may push the opt-in Git update preflight's complete pnpm lint command past its existing 20-minute deadline; representative CI stripes do not establish full-path headr... (sha=d780a06d8585b65b193c49768d216782e469c18e)",
+      "expected_head_sha": "d780a06d8585b65b193c49768d216782e469c18e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T17:18:23.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/semantic-lint-lifetime",
+        "head_sha": "d780a06d8585b65b193c49768d216782e469c18e",
         "cluster_id": null,
         "job_path": null
       }
