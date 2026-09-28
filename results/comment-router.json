@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T16:10:32.298Z",
+  "updated_at": "2026-09-28T16:10:53.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160378:5868422594:2026-09-28T11:44:30Z:clawsweeper_needs_human",
-      "comment_id": "5868422594",
-      "comment_version_key": "5868422594:2026-09-28T11:44:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160378#issuecomment-5868422594",
-      "comment_created_at": "2026-09-28T10:50:47Z",
-      "comment_updated_at": "2026-09-28T11:44:30Z",
-      "comment_body_sha256": "687c0d67cf9e37863b6d93d9773e37d296396bfaa7b169f7ab96d78e9e3f062c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160378,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The branch’s real projector and policy-helper probe reports the intended disabled state, but its Gateway reconciliation checks use a m... (sha=3f9c08ec13647e5040d41441c860f146552d3512)",
-      "expected_head_sha": "3f9c08ec13647e5040d41441c860f146552d3512",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T11:49:00.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-skill-review-tool-policy",
-        "head_sha": "3f9c08ec13647e5040d41441c860f146552d3512",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160395:5869099488:2026-09-28T11:38:48Z:clawsweeper_needs_human",
       "comment_id": "5869099488",
@@ -33431,6 +33398,53 @@
       "status": "skipped",
       "processed_at": "2026-09-28T16:10:32.298Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160327:5873910694:2026-09-28T16:09:10Z:re_review",
+      "comment_id": "5873910694",
+      "comment_version_key": "5873910694:2026-09-28T16:09:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160327#issuecomment-5873910694",
+      "comment_created_at": "2026-09-28T16:09:10Z",
+      "comment_updated_at": "2026-09-28T16:09:10Z",
+      "comment_body_sha256": "85f30856a680a8070e5db30a54669901f1e040200f854a92576a7eccf5c0e45a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160327,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T16:10:50.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/lint-plugin-source-graph",
+        "head_sha": "c5a29b0104d65de7de9ef13a8b9796cfd87ed196",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
