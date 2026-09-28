@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-159949"
 mode: "plan"
-run_id: "36365325576"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36365325576"
+run_id: "36367576750"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36367576750"
 head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T01:51:39.358Z"
+published_at: "2026-09-28T01:54:35.033Z"
 canonical: "#159949"
 canonical_issue: "#159949"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36365325576](https://github.com/openclaw/clawsweeper/actions/runs/36365325576)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36367576750](https://github.com/openclaw/clawsweeper/actions/runs/36367576750)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #159949
 
 ## Summary
 
-No fix PR is planned. The source issue is already closed after a maintainer could not reproduce the claimed strict-provider behavior and requested a provider trace and returned tool-call arguments. The earlier contributor PR is closed and unmerged. The job requires reproduction before implementation.
+No fix PR is planned. The issue is closed, and its maintainer reported that the checked provider routes send both tools with strict:false, so the reported strict-provider failure was not reproduced. The job requires reproduction on current main before implementation. A provider request trace and returned tool arguments are needed to establish the failing route.
 
 ## Impact
 
@@ -66,8 +66,8 @@ No fix PR is planned. The source issue is already closed after a maintainer coul
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #159949 | keep_closed | skipped | canonical | The reported provider behavior lacks the route-level reproduction required by the job. |
-| #137287 | keep_closed | skipped |  | Historical contributor work requires no action in this plan. |
+| #159949 | keep_closed | skipped | canonical | The reported strict-provider failure is unproven, and the issue is already closed. |
+| #137287 | keep_closed | skipped | related | Historical contributor work; no action on an already-closed PR. |
 
 ## Needs Human
 
