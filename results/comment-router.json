@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T22:30:46.891Z",
+  "updated_at": "2026-09-28T22:31:55.312Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160539:5874033230:2026-09-28T16:47:59Z:clawsweeper_needs_human",
-      "comment_id": "5874033230",
-      "comment_version_key": "5874033230:2026-09-28T16:47:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160539#issuecomment-5874033230",
-      "comment_created_at": "2026-09-28T16:16:29Z",
-      "comment_updated_at": "2026-09-28T16:47:59Z",
-      "comment_body_sha256": "e47485a2fe7a60a274e8d14fc7387d7d43ff4cf338660789f8cb978339a5a1c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160539,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main changes overlapping planner loops and GitHub reports this head as conflicting; the integrated selection behavior has not been verified. (sha=f1c547e0c427c44c4b4235780519427a0c68b2a6)",
-      "expected_head_sha": "f1c547e0c427c44c4b4235780519427a0c68b2a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T16:49:27.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-planner-scoped-patterns-b27",
-        "head_sha": "f1c547e0c427c44c4b4235780519427a0c68b2a6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1481:5787872933:2026-09-28T16:13:44Z:clawsweeper_needs_human",
       "comment_id": "5787872933",
@@ -33982,6 +33949,53 @@
         "kind": "pull_request",
         "branch": "codex/qa-p04-restart-duplicate",
         "head_sha": "5a7ab3043f4a27460bad7088c1b0282afaaae87e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160748:5879914927:2026-09-28T22:30:59Z:re_review",
+      "comment_id": "5879914927",
+      "comment_version_key": "5879914927:2026-09-28T22:30:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160748#issuecomment-5879914927",
+      "comment_created_at": "2026-09-28T22:30:59Z",
+      "comment_updated_at": "2026-09-28T22:30:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160748,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T22:31:53.675Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/terminal-selection-memory-20260928",
+        "head_sha": "e18d55857fb1d93c8d4b9fca5e4680cc03b971e0",
         "cluster_id": null,
         "job_path": null
       },
