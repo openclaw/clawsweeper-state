@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:34:03.872Z",
+  "updated_at": "2026-09-28T07:34:23.920Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158459:5862272343:2026-09-28T02:36:18Z:re_review",
-      "comment_id": "5862272343",
-      "comment_version_key": "5862272343:2026-09-28T02:36:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158459#issuecomment-5862272343",
-      "comment_created_at": "2026-09-28T02:36:18Z",
-      "comment_updated_at": "2026-09-28T02:36:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158459,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T02:37:15.719Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/duplicate-output-in-control-ui",
-        "head_sha": "b3b4bf94bf1866cf9359ebca992c6415978b5b45",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:856:5862069889:2026-09-28T02:36:42Z:clawsweeper_needs_human",
       "comment_id": "5862069889",
@@ -33601,6 +33554,39 @@
         "kind": "pull_request",
         "branch": "codex/require-harden-move-20260927",
         "head_sha": "ca4c81fff4ebfd17823ece0353ccc3967dea570a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160254:5865474184:2026-09-28T07:33:27Z:clawsweeper_needs_human",
+      "comment_id": "5865474184",
+      "comment_version_key": "5865474184:2026-09-28T07:33:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160254#issuecomment-5865474184",
+      "comment_created_at": "2026-09-28T07:33:27Z",
+      "comment_updated_at": "2026-09-28T07:33:27Z",
+      "comment_body_sha256": "09223bceae58da815abec39748a27902dbd506978c130ce1a104b07defa3b9dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The PR conflicts with current main's cap fallback. Until the paths are integrated and checked together, the merged planner's 130-job admission behavior and preservation of bounded row... (sha=548fec885811f7ae80af34d4299b8111ef7b46a8)",
+      "expected_head_sha": "548fec885811f7ae80af34d4299b8111ef7b46a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:34:23.920Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-assignment-ci-packing-20260928",
+        "head_sha": "548fec885811f7ae80af34d4299b8111ef7b46a8",
         "cluster_id": null,
         "job_path": null
       }
