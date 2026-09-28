@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 28, 2026, 02:35 UTC
+Last source update: Sep 28, 2026, 02:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 28, 2026, 02:35 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 28, 2026, 02:35 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36368555589) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 28, 2026, 02:07 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36368527113) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 28, 2026, 02:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36368395068) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 28, 2026, 02:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36371204352) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 28, 2026, 02:03 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36368262360) |
 
 ### Repositories
@@ -91,19 +91,19 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 28, 2026, 02:20 UTC
+Last source update: Sep 28, 2026, 02:58 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1252 | 100% |
-| Run attempts archived | 3779 | audit |
-| Latest successful clusters | 1049 | 83.8% |
-| Latest failed clusters | 200 | 16.0% |
+| Latest clusters reviewed | 1254 | 100% |
+| Run attempts archived | 3781 | audit |
+| Latest successful clusters | 1051 | 83.8% |
+| Latest failed clusters | 200 | 15.9% |
 | Latest cancelled clusters | 3 | 0.2% |
 | Needs-human clusters | 127 | 10.1% |
-| Fix actions failed | 33 | 4.4% |
+| Fix actions failed | 33 | 4.3% |
 | Fix actions blocked | 164 | 21.6% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1252 clusters: 349 maintainer action, 382 automation snapshot, 470 intervention needed, 51 no pending action, 0 completed.
+- Latest records: 1254 clusters: 349 maintainer action, 382 automation snapshot, 472 intervention needed, 51 no pending action, 0 completed.
 - Maintainer first: [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) [#1128](https://github.com/openclaw/clawsweeper/issues/1128) is maintainer_input: Re-scope https://github.com/openclaw/clawsweeper/issues/1128 into separate implementation jobs for dashboard/worker.ts, dashboard/exact-r....
-- Intervention first: [openclaw/imsg](https://github.com/openclaw/imsg) [issue-openclaw-imsg-322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-322.md) is automation_blocked: external base blocker: validation failed only in base-identical files outside the repair delta: Makefile.
+- Intervention first: [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) [issue-openclaw-openclaw-windows-packaging-116](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-116.md) is automation_blocked: Issue #116 remains the canonical follow-up. The pin is present on current main, but this worker could not verify that npm latest now poin....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#159872](https://github.com/openclaw/openclaw/pull/159872) is action_planned: Doctor and memory status should name the requested source that was excluded and give an enablement hint..
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 349 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 382 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 470 | automation failure or blocker recorded |
+| Intervention Needed | 472 | automation failure or blocker recorded |
 | No Pending Action | 51 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -139,7 +139,7 @@ State: Failed clusters need inspection
 | automation_active | 0 |
 | action_planned | 338 |
 | automation_failed | 213 |
-| automation_blocked | 257 |
+| automation_blocked | 259 |
 | reviewed_no_action | 51 |
 | completed | 0 |
 
@@ -187,6 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) |  | automation_blocked | Issue #116 remains the canonical follow-up. The pin is present on current main, but this worker could not verify that npm latest now points to a Gi... | Sep 28, 2026, 02:58 UTC | [issue-openclaw-openclaw-windows-packaging-116](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-116.md) | [36371522481](https://github.com/openclaw/clawsweeper/actions/runs/36371522481) |
+| [openclaw/libterminal](https://github.com/openclaw/libterminal) |  | automation_blocked | No implementation PR is ready. Issue #41 explicitly requires a stable Ghostty v1.4 tag and a published compatible browser/WASM wrapper before work... | Sep 28, 2026, 02:57 UTC | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [36371408014](https://github.com/openclaw/clawsweeper/actions/runs/36371408014) |
 | [openclaw/imsg](https://github.com/openclaw/imsg) |  | automation_blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | Sep 28, 2026, 02:20 UTC | [issue-openclaw-imsg-322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-322.md) | [36368874126](https://github.com/openclaw/clawsweeper/actions/runs/36368874126) |
 | [openclaw/clownfish](https://github.com/openclaw/clownfish) | [#340](https://github.com/openclaw/clownfish/pull/340) | automation_failed | The reported preflight defect still exists on the provided main checkout. | Sep 28, 2026, 02:18 UTC | [issue-openclaw-clownfish-340](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-clownfish-340.md) | [36368408077](https://github.com/openclaw/clawsweeper/actions/runs/36368408077) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | No fix PR is planned. The issue is closed, and its maintainer reported that the checked provider routes send both tools with strict:false, so the r... | Sep 28, 2026, 01:54 UTC | [issue-openclaw-openclaw-159949](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-159949.md) | [36367576750](https://github.com/openclaw/clawsweeper/actions/runs/36367576750) |
@@ -200,8 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-103694](cluster:issue-openclaw-openclaw-103694) | automation_failed | The job requires a failing regression and a narrow dependency-backed repair before implementation. | Sep 27, 2026, 12:10 UTC | [issue-openclaw-openclaw-103694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103694.md) | [36315516160](https://github.com/openclaw/clawsweeper/actions/runs/36315516160) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#159538](https://github.com/openclaw/openclaw/pull/159538) | automation_failed | The open issue describes a current, bounded adapter defect with no viable open implementation PR in the hydrated inventory. | Sep 27, 2026, 09:17 UTC | [issue-openclaw-openclaw-159538](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-159538.md) | [36306495655](https://github.com/openclaw/clawsweeper/actions/runs/36306495655) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118806](https://github.com/openclaw/openclaw/pull/118806) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Sep 27, 2026, 08:45 UTC | [automerge-openclaw-openclaw-118806](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118806.md) | [36306326780](https://github.com/openclaw/clawsweeper/actions/runs/36306326780) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-82121](cluster:issue-openclaw-openclaw-82121) | automation_failed | Implementation requires a writable, independently owned checkout with dependencies installed. | Sep 27, 2026, 01:50 UTC | [issue-openclaw-openclaw-82121](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-82121.md) | [36284467607](https://github.com/openclaw/clawsweeper/actions/runs/36284467607) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#158922](https://github.com/openclaw/openclaw/pull/158922) | automation_blocked | The job requires a failing regression on current main before implementation. This worker cannot establish that proof or validate a patch in the rea... | Sep 27, 2026, 01:25 UTC | [issue-openclaw-openclaw-158922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-158922.md) | [36285251629](https://github.com/openclaw/clawsweeper/actions/runs/36285251629) |
 
 #### No Pending Action
 
