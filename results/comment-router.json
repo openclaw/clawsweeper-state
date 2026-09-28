@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:29:30.577Z",
+  "updated_at": "2026-09-28T08:29:44.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160047:5862921593:2026-09-28T03:41:42Z:re_review",
-      "comment_id": "5862921593",
-      "comment_version_key": "5862921593:2026-09-28T03:41:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160047#issuecomment-5862921593",
-      "comment_created_at": "2026-09-28T03:41:42Z",
-      "comment_updated_at": "2026-09-28T03:41:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160047,
-      "author": "Irish-Joseph",
-      "author_id": 135312096,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:42:36.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retired-model-http410",
-        "head_sha": "4ac6c9af315f5790d25838f74592f8c47cbfc87b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:745:5862922952:2026-09-28T03:41:52Z:clawsweeper_auto_repair",
       "comment_id": "5862922952",
@@ -33510,6 +33463,39 @@
         "kind": "pull_request",
         "branch": "steipete/app-bun-service-runtime",
         "head_sha": "a0984a199738934e382fe57bb5c64afa00e4d5b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160281:5866310445:2026-09-28T08:28:45Z:clawsweeper_needs_human",
+      "comment_id": "5866310445",
+      "comment_version_key": "5866310445:2026-09-28T08:28:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160281#issuecomment-5866310445",
+      "comment_created_at": "2026-09-28T08:28:45Z",
+      "comment_updated_at": "2026-09-28T08:28:45Z",
+      "comment_body_sha256": "357430a1f5a1ee6d2ebd9fc4192eca7681c67d3b088be717164b3c3707474b46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160281,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-head real package and full source lint inventory remains unqualified. The new project selection could change diagnostics on repository files in ways the synthetic parity fixtu... (sha=ed359f57f80fd57ec89ca28824fb98bceda8f84c)",
+      "expected_head_sha": "ed359f57f80fd57ec89ca28824fb98bceda8f84c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:29:44.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/lint-core-graphs",
+        "head_sha": "ed359f57f80fd57ec89ca28824fb98bceda8f84c",
         "cluster_id": null,
         "job_path": null
       }
