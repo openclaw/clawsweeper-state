@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T00:37:45.905Z",
+  "updated_at": "2026-09-28T00:38:34.177Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159582:5854913764:2026-09-27T18:39:30Z:clawsweeper_needs_human",
-      "comment_id": "5854913764",
-      "comment_version_key": "5854913764:2026-09-27T18:39:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159582#issuecomment-5854913764",
-      "comment_created_at": "2026-09-27T10:08:09Z",
-      "comment_updated_at": "2026-09-27T18:39:30Z",
-      "comment_body_sha256": "74904fc49bdac528d70a245755b89bcb614d2c99527fee64626552e3d0e623e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159582,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main. Conflict resolution must carry the new native-subagent reader into the direct scenario dependency map, then demonstrate that the registered sce... (sha=cf3e5716b0540b171efe53f7cd32a973ee9460e6)",
-      "expected_head_sha": "cf3e5716b0540b171efe53f7cd32a973ee9460e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T18:43:59.415Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l118-qalab4",
-        "head_sha": "0370085c72d004f32fd403f4c18c27467a2c4f51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159598:5855214814:2026-09-27T17:49:23Z:clawsweeper_auto_repair",
       "comment_id": "5855214814",
@@ -33563,6 +33530,53 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152012:5861323300:2026-09-28T00:37:44Z:re_review",
+      "comment_id": "5861323300",
+      "comment_version_key": "5861323300:2026-09-28T00:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152012#issuecomment-5861323300",
+      "comment_created_at": "2026-09-28T00:37:44Z",
+      "comment_updated_at": "2026-09-28T00:37:44Z",
+      "comment_body_sha256": "d1f1fb33b272d64fe314817d62f9a2c6ed5aa6d9dcce38c7692ffcb6c6e55684",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152012,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T00:38:32.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provisioning-retry-elapsed-timer",
+        "head_sha": "4f9a2e4c7607349a1db29f3050ef17cdcab95a88",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
