@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T04:46:22.244Z",
+  "updated_at": "2026-09-28T04:47:18.759Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155273:5769127499:2026-09-27T22:26:07Z:clawsweeper_needs_human",
-      "comment_id": "5769127499",
-      "comment_version_key": "5769127499:2026-09-27T22:26:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155273#issuecomment-5769127499",
-      "comment_created_at": "2026-09-21T23:42:40Z",
-      "comment_updated_at": "2026-09-27T22:26:07Z",
-      "comment_body_sha256": "4b361da571e69c7c4f1a3b9d0f03fa08e73b7b74048f0461b013b592c6e5c3d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155273,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch's Telegram handler tests prescribe matching source IDs and mocked downloads, then observe the image loader; the PR provides no after... (sha=0e1bce35c2dd18c7c706e6d2c4de7ca1ced09218)",
-      "expected_head_sha": "0e1bce35c2dd18c7c706e6d2c4de7ca1ced09218",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T23:03:28.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-reply-media-source-identity-v2",
-        "head_sha": "0e1bce35c2dd18c7c706e6d2c4de7ca1ced09218",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155286:5769351675:2026-09-27T22:12:55Z:clawsweeper_needs_human",
       "comment_id": "5769351675",
@@ -33921,6 +33888,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159632:5863624704:2026-09-28T04:46:16Z:re_review",
+      "comment_id": "5863624704",
+      "comment_version_key": "5863624704:2026-09-28T04:46:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159632#issuecomment-5863624704",
+      "comment_created_at": "2026-09-28T04:46:16Z",
+      "comment_updated_at": "2026-09-28T04:46:16Z",
+      "comment_body_sha256": "713237abeed249b660d67fd203ebb3c01eab76cbee84c5ad0fcf90697a126d57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159632,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T04:47:16.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/persistent-reply-admission-20260927",
+        "head_sha": "393ceeca2e673c12e2213c027ff93e88b9b3e16a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
