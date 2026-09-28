@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-444"
-mode: "plan"
-run_id: "36389645216"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36389645216"
+mode: "autonomous"
+run_id: "36399198396"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36399198396"
 head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-28T07:07:33.591Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-28T08:51:43.241Z"
 canonical: "https://github.com/openclaw/wacli/issues/444"
 canonical_issue: "https://github.com/openclaw/wacli/issues/444"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36389645216](https://github.com/openclaw/clawsweeper/actions/runs/36389645216)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36399198396](https://github.com/openclaw/clawsweeper/actions/runs/36399198396)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/wacli/issues/444
 
 ## Summary
 
-Issue #444 remains reproducible in the checked-out main at b87e6178: mapped 1:1 backfill requests use the LID, and a timeout retries only with a different anchor. Plan a bounded phone-JID fallback and regression tests. No files or GitHub items were changed.
+Issue #444 remains reproducible from the request path on the provided main SHA. A narrow PN fallback is viable, but the read-only checkout prevented the regression test, patch, validation, and PR.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Issue #444 remains reproducible in the checked-out main at b87e6178: mapped 1:1 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/wacli/issues/444 | fix_needed | planned | canonical | Implement the issue on the designated branch; closure and merge are blocked by the job. |
-| https://github.com/openclaw/wacli/pull/373 | keep_closed | skipped | related | Historical context only. |
-| https://github.com/openclaw/wacli/pull/427 | keep_closed | skipped | related | Historical context only. |
+| #444 | fix_needed | planned | canonical | The reported 1:1 regression has a narrow backfill-only fix path. |
+| cluster:issue-openclaw-wacli-444 | build_fix_artifact | planned |  | Implementation and validation are blocked by the read-only filesystem; the fix plan is ready for a writable executor. |
 
 ## Needs Human
 
