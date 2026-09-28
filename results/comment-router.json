@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:40:32.900Z",
+  "updated_at": "2026-09-28T07:41:03.635Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104159:4942392768:2026-09-28T02:12:12Z:clawsweeper_auto_repair",
-      "comment_id": "4942392768",
-      "comment_version_key": "4942392768:2026-09-28T02:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104159#issuecomment-4942392768",
-      "comment_created_at": "2026-07-11T04:28:37Z",
-      "comment_updated_at": "2026-09-28T02:12:12Z",
-      "comment_body_sha256": "342c41d44ee74d4d23acb0d43630841ee9f9e44669b0554db70841e73744031a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104159,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=64d72f94e5db3509a1c4d0ed7f680d9eaa16e1bb)",
-      "expected_head_sha": "64d72f94e5db3509a1c4d0ed7f680d9eaa16e1bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T02:45:32.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/commands-upstream-prompt",
-        "head_sha": "64d72f94e5db3509a1c4d0ed7f680d9eaa16e1bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104569:4947956881:2026-09-28T02:13:20Z:clawsweeper_auto_repair",
       "comment_id": "4947956881",
@@ -33562,6 +33529,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122135:5256881030:2026-09-28T07:40:03Z:clawsweeper_needs_human",
+      "comment_id": "5256881030",
+      "comment_version_key": "5256881030:2026-09-28T07:40:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122135#issuecomment-5256881030",
+      "comment_created_at": "2026-08-11T17:55:36Z",
+      "comment_updated_at": "2026-09-28T07:40:03Z",
+      "comment_body_sha256": "751f390e41acbbcefd51bbd04e12cf23339bf4ba70918cfa3d27b95f86cb719d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve messages on cursorless first-run handoff (P1)** - The new transient-first path freezes cursor persistence and rotates to a monitor generation, but with no previously saved cursor hasPersistedSyncState()...; Review finding: [P1] Preserve messages on cursorless first-run handoff — extensions/matrix/src/matrix/client/shared.ts:495 - [medium] Shared crypto state during delayed handoff —... (sha=f3c00613f95db87ecdc856673487a053a82ca7ed)",
+      "expected_head_sha": "f3c00613f95db87ecdc856673487a053a82ca7ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T07:41:03.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-120275",
+        "head_sha": "f3c00613f95db87ecdc856673487a053a82ca7ed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
