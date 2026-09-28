@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:18:05.618Z",
+  "updated_at": "2026-09-28T14:20:16.139Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160335:5867308426:2026-09-28T09:43:49Z:clawsweeper_needs_human",
-      "comment_id": "5867308426",
-      "comment_version_key": "5867308426:2026-09-28T09:43:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160335#issuecomment-5867308426",
-      "comment_created_at": "2026-09-28T09:35:56Z",
-      "comment_updated_at": "2026-09-28T09:43:49Z",
-      "comment_body_sha256": "0bcb8f8c7cc92adfb54dab55c5518d153e57838c9950e47d9c83e42ec2ec5e7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A published updater may hand a pending sentinel and later final result to the candidate Gateway during service replacement. The submitted synthetic fixtures do not yet prove that upgr... (sha=62cb7cd6ff932afa5896deb9a98b1583d528bbe8)",
-      "expected_head_sha": "62cb7cd6ff932afa5896deb9a98b1583d528bbe8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T09:46:03.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hostneutral/scheduler-closeout-0928-restart-publish",
-        "head_sha": "62cb7cd6ff932afa5896deb9a98b1583d528bbe8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159879:5859599228:2026-09-28T09:45:13Z:clawsweeper_needs_human",
       "comment_id": "5859599228",
@@ -33479,6 +33446,39 @@
       "status": "skipped",
       "processed_at": "2026-09-28T14:18:05.618Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159923:5860412210:2026-09-28T14:18:56Z:clawsweeper_needs_human",
+      "comment_id": "5860412210",
+      "comment_version_key": "5860412210:2026-09-28T14:18:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159923#issuecomment-5860412210",
+      "comment_created_at": "2026-09-27T22:27:05Z",
+      "comment_updated_at": "2026-09-28T14:18:56Z",
+      "comment_body_sha256": "3cc3d9b49a8fa02f368d1da616fe214c9b5157db629c04f783f20d9c12ae6705",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm human-control consent scope** - The introduced takeover uses an existing computer grant to close a human controller. Live-authority and revocation tests address unauthorized use...; Review finding: [medium] Confirm human-control consent scope — src/gateway/worker-environments/computer-transport.ts:571 (sha=c3bfc0e44adbb529d0ded3f41872f0b62cd87b0b)",
+      "expected_head_sha": "c3bfc0e44adbb529d0ded3f41872f0b62cd87b0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T14:20:16.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/enable-agent-takeover-mode",
+        "head_sha": "c3bfc0e44adbb529d0ded3f41872f0b62cd87b0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
