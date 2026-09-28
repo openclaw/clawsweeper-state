@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T07:46:34.975Z",
+  "updated_at": "2026-09-28T07:46:53.213Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154773:5759802997:2026-09-28T02:14:35Z:clawsweeper_needs_human",
-      "comment_id": "5759802997",
-      "comment_version_key": "5759802997:2026-09-28T02:14:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154773#issuecomment-5759802997",
-      "comment_created_at": "2026-09-21T11:34:01Z",
-      "comment_updated_at": "2026-09-28T02:14:35Z",
-      "comment_body_sha256": "afc19bee6e3689580b455791336cb983217895cbb8814cb74bccb9df6a896a54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154773,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added tests call the Google video entrypoint with the real SDK, but fake timers, a stubbed credential resolver, and stubbed global fetch su... (sha=d26636c9c692f6390cfde42116eb4ca8731c9cca)",
-      "expected_head_sha": "d26636c9c692f6390cfde42116eb4ca8731c9cca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T02:45:32.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/google-video-generation-credential-abort-signal-080",
-        "head_sha": "d26636c9c692f6390cfde42116eb4ca8731c9cca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155000:5764169495:2026-09-28T02:32:28Z:clawsweeper_needs_human",
       "comment_id": "5764169495",
@@ -33618,6 +33585,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156634:5865658938:2026-09-28T07:45:50Z:re_review",
+      "comment_id": "5865658938",
+      "comment_version_key": "5865658938:2026-09-28T07:45:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156634#issuecomment-5865658938",
+      "comment_created_at": "2026-09-28T07:45:50Z",
+      "comment_updated_at": "2026-09-28T07:45:50Z",
+      "comment_body_sha256": "fb0465b666dc891e0afb355f3935ceef5343c7d47a37d4a3737be5856f2d357f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156634,
+      "author": "TreyLawrence",
+      "author_id": 665297,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T07:46:51.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/queued-reply-config-identity",
+        "head_sha": "2fabfefe9d227802e30e449182506dc6e081a48b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
