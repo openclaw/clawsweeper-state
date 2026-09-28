@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T12:44:38.792Z",
+  "updated_at": "2026-09-28T12:47:00.135Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124337:5305225836:2026-09-28T07:18:33Z:clawsweeper_auto_repair",
-      "comment_id": "5305225836",
-      "comment_version_key": "5305225836:2026-09-28T07:18:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124337#issuecomment-5305225836",
-      "comment_created_at": "2026-08-16T01:56:19Z",
-      "comment_updated_at": "2026-09-28T07:18:33Z",
-      "comment_body_sha256": "fee9468a22947a0a300c74016d310ed24834755a316c567cbe39605376dc97f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124337,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=38e9433da46b785a58f1d6a10161c348741af08e)",
-      "expected_head_sha": "38e9433da46b785a58f1d6a10161c348741af08e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T07:54:45.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codeagent/ward-1255-m1-intervention",
-        "head_sha": "38e9433da46b785a58f1d6a10161c348741af08e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125131:5312862819:2026-09-03T06:53:59Z:clawsweeper_auto_repair",
       "comment_id": "5312862819",
@@ -33954,6 +33921,53 @@
         {
           "action": "comment",
           "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160291:5870069113:2026-09-28T12:44:13Z:re_review",
+      "comment_id": "5870069113",
+      "comment_version_key": "5870069113:2026-09-28T12:44:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160291#issuecomment-5870069113",
+      "comment_created_at": "2026-09-28T12:44:13Z",
+      "comment_updated_at": "2026-09-28T12:44:13Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160291,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T12:46:58.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/update-plugin-capture-companion-enoent",
+        "head_sha": "327bae55b821c2a7a9bef1e5b4fc14a167550bf9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
