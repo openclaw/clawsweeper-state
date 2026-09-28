@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-28T18:04:01.075Z",
+  "updated_at": "2026-09-28T18:04:38.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153573:5748977417:2026-09-20T09:33:45Z:re_review",
-      "comment_id": "5748977417",
-      "comment_version_key": "5748977417:2026-09-20T09:33:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153573#issuecomment-5748977417",
-      "comment_created_at": "2026-09-20T09:33:45Z",
-      "comment_updated_at": "2026-09-20T09:33:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153573,
-      "author": "juyterman1000",
-      "author_id": 208309368,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T13:44:00.485Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153573:5749036893:2026-09-20T09:46:38Z:re_review",
       "comment_id": "5749036893",
@@ -33623,6 +33596,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1491:5787870597:2026-09-28T18:03:25Z:clawsweeper_needs_human",
+      "comment_id": "5787870597",
+      "comment_version_key": "5787870597:2026-09-28T18:03:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1491#issuecomment-5787870597",
+      "comment_created_at": "2026-09-23T02:24:50Z",
+      "comment_updated_at": "2026-09-28T18:03:25Z",
+      "comment_body_sha256": "b4757514cb9f8448c5b31d0501a083aaa1dac579a3e47ddeff55cea507f17e54",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the WinUI wizard page. Current-head tests cover its source wiring and the terminal decision, but the reported l... (sha=a311146f68564ee1f3aaa55513ff84c9cb77df96)",
+      "expected_head_sha": "a311146f68564ee1f3aaa55513ff84c9cb77df96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T18:04:38.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/setup-wizard-sigterm-success",
+        "head_sha": "a311146f68564ee1f3aaa55513ff84c9cb77df96",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
