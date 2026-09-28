@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-28T09:40:01.121Z",
+  "updated_at": "2026-09-28T09:36:11.862Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159484:5853568435:2026-09-28T04:49:42Z:clawsweeper_needs_human",
+      "comment_id": "5853568435",
+      "comment_version_key": "5853568435:2026-09-28T04:49:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159484#issuecomment-5853568435",
+      "comment_created_at": "2026-09-27T06:55:32Z",
+      "comment_updated_at": "2026-09-28T04:49:42Z",
+      "comment_body_sha256": "0242cdb2389a616936b3e5931e77d0041f69672c229efc958259b31ee75592e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned base predates main's read-worker recovery refactor in the same path. Without an inspected test merge, the combined Stop-before-cleanup and claim-fencing order remains unver... (sha=9aac18cdcc1a0b44b34be78ca2343eee50c7341e)",
+      "expected_head_sha": "9aac18cdcc1a0b44b34be78ca2343eee50c7341e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T04:50:27.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reclaim-obligation-restart",
+        "head_sha": "9aac18cdcc1a0b44b34be78ca2343eee50c7341e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160103:5863661322:2026-09-28T04:49:31Z:clawsweeper_auto_repair",
       "comment_id": "5863661322",
@@ -33356,39 +33389,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160338:5867358382:2026-09-28T09:38:57Z:clawsweeper_auto_repair",
-      "comment_id": "5867358382",
-      "comment_version_key": "5867358382:2026-09-28T09:38:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160338#issuecomment-5867358382",
-      "comment_created_at": "2026-09-28T09:38:57Z",
-      "comment_updated_at": "2026-09-28T09:38:57Z",
-      "comment_body_sha256": "bae17053cc82aad8de0759d9283feb7bce871b06ff22a8024510d4c5b6f8233f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160338,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=24a34b82f731a7ace765c9680fa3cb4ddba268d6)",
-      "expected_head_sha": "24a34b82f731a7ace765c9680fa3cb4ddba268d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T09:40:01.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/lint-core-selections",
-        "head_sha": "24a34b82f731a7ace765c9680fa3cb4ddba268d6",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
