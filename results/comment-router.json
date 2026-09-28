@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T11:20:57.043Z",
+  "updated_at": "2026-09-28T11:21:21.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160117:5864670951:2026-09-28T06:29:20Z:re_review",
-      "comment_id": "5864670951",
-      "comment_version_key": "5864670951:2026-09-28T06:29:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160117#issuecomment-5864670951",
-      "comment_created_at": "2026-09-28T06:29:20Z",
-      "comment_updated_at": "2026-09-28T06:29:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160117,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T06:30:26.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/hide-pill-for-single-sidebar-widget",
-        "head_sha": "0333d8480253bd7e814fd79489a25fc2c22ee213",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160195:5864673308:2026-09-28T06:29:33Z:clawsweeper_auto_repair",
       "comment_id": "5864673308",
@@ -33792,6 +33745,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160162:5864186690:2026-09-28T11:20:28Z:clawsweeper_needs_human",
+      "comment_id": "5864186690",
+      "comment_version_key": "5864186690:2026-09-28T11:20:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160162#issuecomment-5864186690",
+      "comment_created_at": "2026-09-28T05:43:29Z",
+      "comment_updated_at": "2026-09-28T11:20:28Z",
+      "comment_body_sha256": "a0c0bf828f387d361e9e5d980dfd4b3642c1ac652819113a49d207bece23de30",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160162,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required CI gate failed after an OpenResponses harness failure also reproduced on clean main, leaving cancelled jobs unrun. Native prior-CI admission must confirm exact-head failu... (sha=2ec481924d6bc1dd20566b0cd02f0be08bb49249)",
+      "expected_head_sha": "2ec481924d6bc1dd20566b0cd02f0be08bb49249",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T11:21:21.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/node-parity-l4-completion",
+        "head_sha": "2ec481924d6bc1dd20566b0cd02f0be08bb49249",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
