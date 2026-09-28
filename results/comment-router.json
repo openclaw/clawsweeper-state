@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-28T03:03:58.683Z",
+  "updated_at": "2026-09-28T03:04:05.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154462:5755882813:2026-09-27T21:03:04Z:clawsweeper_needs_human",
-      "comment_id": "5755882813",
-      "comment_version_key": "5755882813:2026-09-27T21:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154462#issuecomment-5755882813",
-      "comment_created_at": "2026-09-21T05:36:35Z",
-      "comment_updated_at": "2026-09-27T21:03:04Z",
-      "comment_body_sha256": "463e760309afad918c71bcc31f8256eaa589e2d825fd372d329a4c68a1f06f27",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154462,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Honor VACInc's no-merge hold; obtain explicit merge authorization after exact-head validation and review gates finish. (sha=7fad90f36edfeeee0420e6dcb926bfd4567191ac)",
-      "expected_head_sha": "7fad90f36edfeeee0420e6dcb926bfd4567191ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-27T21:04:21.745Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "turn-path-published-catalog-policy",
-        "head_sha": "7fad90f36edfeeee0420e6dcb926bfd4567191ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159503:5853707891:2026-09-27T21:04:21Z:clawsweeper_needs_human",
       "comment_id": "5853707891",
@@ -33471,6 +33438,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159688:5862506673:2026-09-28T03:02:59Z:re_review",
+      "comment_id": "5862506673",
+      "comment_version_key": "5862506673:2026-09-28T03:02:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159688#issuecomment-5862506673",
+      "comment_created_at": "2026-09-28T03:02:59Z",
+      "comment_updated_at": "2026-09-28T03:02:59Z",
+      "comment_body_sha256": "b981a1d908a6b8ec73cc694941d7f1199eaf6b6ed0bd1c0ed31566298a8426ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159688,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-28T03:04:04.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-session-resume",
+        "head_sha": "9aaed1274ae55e3b896ae8db01d0b7b566845635",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
