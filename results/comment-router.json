@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-28T08:35:56.317Z",
+  "updated_at": "2026-09-28T08:36:11.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158307:5851599100:2026-09-27T01:24:13Z:re_review",
-      "comment_id": "5851599100",
-      "comment_version_key": "5851599100:2026-09-27T01:24:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158307#issuecomment-5851599100",
-      "comment_created_at": "2026-09-27T01:24:13Z",
-      "comment_updated_at": "2026-09-27T01:24:13Z",
-      "comment_body_sha256": "e184d5b857aff2aab8fa4651c23fd1bf75511bd4e2204d04eba85116aad1d088",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158307,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T03:52:17.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-environment-setting",
-        "head_sha": "20015be80bc60b2e65d8c7015c5aaeecfa5194ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158307:5839447003:2026-09-28T03:51:07Z:clawsweeper_needs_human",
       "comment_id": "5839447003",
@@ -33542,6 +33495,39 @@
         "kind": "pull_request",
         "branch": "codex/require-harden-docs-20260927",
         "head_sha": "3842b73012c8e08fb32f8286aaaf9a4a2a8ecfc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160213:5864869979:2026-09-28T08:31:40Z:clawsweeper_needs_human",
+      "comment_id": "5864869979",
+      "comment_version_key": "5864869979:2026-09-28T08:31:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160213#issuecomment-5864869979",
+      "comment_created_at": "2026-09-28T06:45:19Z",
+      "comment_updated_at": "2026-09-28T08:31:40Z",
+      "comment_body_sha256": "c954ca4c17135c589925b658dd8e223d9fc56e77cb0e3c81ee5a1131afb62e81",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-head preflight manifest generation failed; the required CI gate is not satisfied, and the available check metadata does not identify the cause. (sha=5723f76ab07a428d061b6f0680319664c54b66bc)",
+      "expected_head_sha": "5723f76ab07a428d061b6f0680319664c54b66bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T08:36:11.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/diagnosing-failure-and-pr-requirement",
+        "head_sha": "5723f76ab07a428d061b6f0680319664c54b66bc",
         "cluster_id": null,
         "job_path": null
       }
