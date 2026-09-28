@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160498",
+  "mode": "autonomous",
+  "run_id": "36439153074",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36439153074",
+  "head_sha": "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160498.md",
+  "published_at": "2026-09-28T14:58:39.158Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160498",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160498",
+  "canonical_pr": null,
+  "summary": "The reported Control UI failure is supported by the local source, but this worker could not reproduce it on the preflight main commit or prepare a validated PR. The checkout is read-only, shallow, missing test dependencies, and does not contain that commit.",
+  "actions": [
+    {
+      "target": "#160498",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160498",
+      "candidate_fix": null,
+      "reason": "A narrow UI repair is indicated, subject to the required failing browser reproduction on the preflight main commit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160498",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160498",
+      "candidate_fix": null,
+      "reason": "The read-only checkout cannot receive a regression or patch. Reproduce through the mocked-Gateway browser harness on the preflight main commit before implementing or opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
