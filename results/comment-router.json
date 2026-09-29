@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-29T14:40:32.168Z",
+  "updated_at": "2026-09-29T14:41:59.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150078:5851440786:2026-09-27T00:57:16Z:re_review",
-      "comment_id": "5851440786",
-      "comment_version_key": "5851440786:2026-09-27T00:57:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150078#issuecomment-5851440786",
-      "comment_created_at": "2026-09-27T00:57:16Z",
-      "comment_updated_at": "2026-09-27T00:57:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150078,
-      "author": "herefindalex",
-      "author_id": 1432336,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T07:02:17.770Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158459:5841306155:2026-09-29T07:01:33Z:clawsweeper_auto_repair",
       "comment_id": "5841306155",
@@ -33527,6 +33500,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161209:5891570194:2026-09-29T14:35:38Z:clawsweeper_needs_human",
+      "comment_id": "5891570194",
+      "comment_version_key": "5891570194:2026-09-29T14:35:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161209#issuecomment-5891570194",
+      "comment_created_at": "2026-09-29T13:45:27Z",
+      "comment_updated_at": "2026-09-29T14:35:38Z",
+      "comment_body_sha256": "9f7de3d01c97d22907eea87771a7167c5d95d8c453c55ab6757daae09450a9ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject externally revoked pairing before invocation I/O (P1)** - The new preservesBindings path keeps the cached binding usable while a metadata write is queued. The pinned-head WebSocket negative control delete...; Review finding: [P1] Reject externally revoked pairing before invocation I/O — src/infra/device-pairing-worker.ts:133-142 - [high] Revoked pairing can reach invocation input — src... (sha=f6055cebe7e2da75bd4fd664203aefa22734317b)",
+      "expected_head_sha": "f6055cebe7e2da75bd4fd664203aefa22734317b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T14:41:59.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-node-pairing-during-metadata-updates",
+        "head_sha": "f6055cebe7e2da75bd4fd664203aefa22734317b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
