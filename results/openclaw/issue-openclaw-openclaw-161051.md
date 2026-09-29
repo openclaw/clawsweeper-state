@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161051"
-mode: "autonomous"
-run_id: "36535598224"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36535598224"
+mode: "plan"
+run_id: "36552510694"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36552510694"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T09:38:37.312Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T10:03:06.215Z"
 canonical: "https://github.com/openclaw/openclaw/issues/161051"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/161051"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36535598224](https://github.com/openclaw/clawsweeper/actions/runs/36535598224)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36552510694](https://github.com/openclaw/clawsweeper/actions/runs/36552510694)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/161051
 
 ## Summary
 
-The reported spawn-admission gap is present in the available checkout, but implementation is blocked: the checkout is read only, lacks test dependencies, and does not contain the preflight main SHA. No regression was run or PR prepared.
+Plan a narrow fix for the open native subagent spawn bug. The linked follow-up delivery PR is already merged and does not address this failure. Reproduce the spawn rejection on current main before editing; no code or GitHub state was changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The reported spawn-admission gap is present in the available checkout, but imple
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161051 | fix_needed | planned | canonical | A focused regression and repair are warranted once the executor can verify the preflight main revision. |
-| cluster:issue-openclaw-openclaw-161051 | build_fix_artifact | blocked |  | Implementation requires a writable checkout at the reviewed main revision, the required sibling source, and test dependencies. |
+| #161051 | fix_needed | planned | canonical | The issue has a bounded bug-fix path, but the required failing regression and validation have not run in plan mode. |
+| #156919 | keep_closed | skipped | related | Historical related work; no action on an already closed PR. |
 
 ## Needs Human
 
