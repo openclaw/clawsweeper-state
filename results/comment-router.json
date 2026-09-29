@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:18:19.030Z",
+  "updated_at": "2026-09-29T02:18:42.891Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:76:5879475120:2026-09-28T21:56:26Z:re_review",
-      "comment_id": "5879475120",
-      "comment_version_key": "5879475120:2026-09-28T21:56:26Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/76#issuecomment-5879475120",
-      "comment_created_at": "2026-09-28T21:56:26Z",
-      "comment_updated_at": "2026-09-28T21:56:26Z",
-      "comment_body_sha256": "1d85e21c8c0bcffe54b069db3d2738ade762f84a96c90f8005057134bc828bd9",
-      "repo": "openclaw/rfcs",
-      "issue_number": 76,
-      "author": "ryanpei",
-      "author_id": 4312641,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T21:57:11.127Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cloud-run-hosting-and-sandboxes",
-        "head_sha": "26373a23bcbdc1b7b13c85e174fe18ec0138ddfe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158459:5879388021:2026-09-28T21:50:10Z:re_review",
       "comment_id": "5879388021",
@@ -33444,6 +33397,39 @@
         "kind": "pull_request",
         "branch": "deslop/l143-agents-subsystems",
         "head_sha": "be80717e449e76677761acbc5f8cf39a44c2d727",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:209:5882383150:2026-09-29T02:17:48Z:clawsweeper_needs_human",
+      "comment_id": "5882383150",
+      "comment_version_key": "5882383150:2026-09-29T02:17:48Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/209#issuecomment-5882383150",
+      "comment_created_at": "2026-09-29T02:17:48Z",
+      "comment_updated_at": "2026-09-29T02:17:48Z",
+      "comment_body_sha256": "1ea532fa4edaacd482c78b646fdd424cde62e52ebb95191c00a0cc42242bb8fd",
+      "repo": "openclaw/octopool",
+      "issue_number": 209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Workerd tests drive the production Worker and cache owners with a stubbed GitHub transport, but do not show all...; Review finding: [medium] Verify authorization at deferred pooled I/O — src/relay.ts:1433 (sha=8665a6ff3272cae36ffd8ab8428cf2813154468c)",
+      "expected_head_sha": "8665a6ff3272cae36ffd8ab8428cf2813154468c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:18:42.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/ci-stale-while-revalidate-20260929",
+        "head_sha": "8665a6ff3272cae36ffd8ab8428cf2813154468c",
         "cluster_id": null,
         "job_path": null
       }
