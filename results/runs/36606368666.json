@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161278",
+  "mode": "autonomous",
+  "run_id": "36606368666",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36606368666",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161278.md",
+  "published_at": "2026-09-29T17:43:55.908Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161278",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161278",
+  "canonical_pr": null,
+  "summary": "Plan only. Current main lacks the cron message trace scope and dispatch-start event used to create an exported parent before harness execution. A failing cron-to-OTLP regression must be established before implementation. No code was changed or validation run.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/161278",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "10",
+      "candidate_fix": null,
+      "reason": "Establish the failing cron-to-OTLP regression on current main, then add one message trace scope and dispatch-start lifecycle event before harness execution."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/91927",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Session identifier export raises a separate sensitive-data and privacy decision."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
