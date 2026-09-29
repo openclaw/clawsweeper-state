@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119484"
 mode: "plan"
-run_id: "36587063289"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36587063289"
-head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
+run_id: "36579333441"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36579333441"
+head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-29T15:28:12.111Z"
-canonical: "#119484"
-canonical_issue: "#119484"
+published_at: "2026-09-29T16:04:47.868Z"
+canonical: "https://github.com/openclaw/openclaw/issues/119484"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/119484"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36587063289](https://github.com/openclaw/clawsweeper/actions/runs/36587063289)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36579333441](https://github.com/openclaw/clawsweeper/actions/runs/36579333441)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119484
+Canonical: https://github.com/openclaw/openclaw/issues/119484
 
 ## Summary
 
-The open issue remains actionable at main ef1f5681. The prior repair PR closed without merging. Plan a focused agent write, edit, and apply-patch fix; verify the updater scope during implementation because the named restart-helper.ts no longer exists on main. No code, GitHub state, or tests were changed in plan mode.
+Plan a focused CRLF fix for agent-created and edited .cmd/.bat files. Current main still passes batch content through the write, edit, and patch paths without batch-specific normalization. The named update restart helper is absent; the active Windows task restart writer already uses CRLF and the launcher encoder. No code or GitHub state was changed, and validation remains to be run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The open issue remains actionable at main ef1f5681. The prior repair PR closed w
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119484 | fix_needed | planned | canonical | Create one focused replacement fix path for the still-open issue. |
-| #119540 | keep_closed | skipped | superseded | Use the PR as source work and preserve contributor credit; no closure action is valid. |
+| https://github.com/openclaw/openclaw/issues/119484 | fix_needed | planned | canonical | Keep the issue open while the replacement implementation is reproduced, validated, and reviewed. |
+| https://github.com/openclaw/openclaw/pull/119540 | keep_closed | skipped | related | Use the closed PR as source work and preserve contributor credit in the new fix PR. |
 
 ## Needs Human
 

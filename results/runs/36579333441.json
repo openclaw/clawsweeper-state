@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "plan",
+  "run_id": "36579333441",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36579333441",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-09-29T16:04:47.868Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_pr": null,
+  "summary": "Plan a focused CRLF fix for agent-created and edited .cmd/.bat files. Current main still passes batch content through the write, edit, and patch paths without batch-specific normalization. The named update restart helper is absent; the active Windows task restart writer already uses CRLF and the launcher encoder. No code or GitHub state was changed, and validation remains to be run.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/119484",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "4",
+      "candidate_fix": null,
+      "reason": "Keep the issue open while the replacement implementation is reproduced, validated, and reviewed."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119540",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "4",
+      "candidate_fix": null,
+      "reason": "Use the closed PR as source work and preserve contributor credit in the new fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
