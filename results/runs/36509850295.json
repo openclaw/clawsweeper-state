@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160875",
+  "mode": "autonomous",
+  "run_id": "36509850295",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36509850295",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160875.md",
+  "published_at": "2026-09-29T02:29:08.796Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160875",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160875",
+  "canonical_pr": null,
+  "summary": "The checked-out source still clears a pending restart intent after a state-DB read failure. The checkout is behind the preflight main SHA and is read-only, so I could not reproduce the failure on latest main or prepare and validate a branch.",
+  "actions": [
+    {
+      "target": "#160875",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160875",
+      "candidate_fix": null,
+      "reason": "A narrow read-failure repair is indicated, pending reproduction on the preflight main SHA."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160875",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#160875",
+      "candidate_fix": null,
+      "reason": "The applicator must first obtain current main and demonstrate the failing regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160875",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160875",
+      "candidate_fix": null,
+      "reason": "No validated patch or PR branch exists. Refresh the checkout to current main, reproduce, repair, and run the listed gates before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
