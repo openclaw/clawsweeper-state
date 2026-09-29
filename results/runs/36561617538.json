@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "autonomous",
+  "run_id": "36561617538",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36561617538",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-09-29T12:33:05.489Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_pr": null,
+  "summary": "The batch-file defect remains on main at a15f3f72. Agent write, edit, and apply-patch paths can persist LF-only .cmd/.bat content. This checkout is read-only, so no patch, local validation, or PR branch was produced.",
+  "actions": [
+    {
+      "target": "#119484",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "A narrow agent file-mutation fix is still needed."
+    },
+    {
+      "target": "#119540",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Closed context is not a mutation target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119484",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and Windows CMD proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
