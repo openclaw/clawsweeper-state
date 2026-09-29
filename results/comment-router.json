@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:15:11.717Z",
+  "updated_at": "2026-09-29T23:15:15.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161161:5892504414:2026-09-29T14:39:27Z:re_review",
-      "comment_id": "5892504414",
-      "comment_version_key": "5892504414:2026-09-29T14:39:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161161#issuecomment-5892504414",
-      "comment_created_at": "2026-09-29T14:39:27Z",
-      "comment_updated_at": "2026-09-29T14:39:27Z",
-      "comment_body_sha256": "a2ae27e4cc4658bb0e5b65be71b581741b805e48ca0ab6ef0fc66cd165692d79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161161,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T14:40:30.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/private-runtime-inputs",
-        "head_sha": "31ce78b10def6509542e26808fed936691a74c8b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161185:5890431417:2026-09-29T14:40:11Z:clawsweeper_auto_repair",
       "comment_id": "5890431417",
@@ -33200,6 +33153,39 @@
         "kind": "pull_request",
         "branch": "deslop/l196-codex8",
         "head_sha": "de7c0f77ba283a52c0c5c3158dc7e2a5034b8284",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139818:5557374527:2026-09-29T23:14:17Z:clawsweeper_needs_human",
+      "comment_id": "5557374527",
+      "comment_version_key": "5557374527:2026-09-29T23:14:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139818#issuecomment-5557374527",
+      "comment_created_at": "2026-09-06T06:10:36Z",
+      "comment_updated_at": "2026-09-29T23:14:17Z",
+      "comment_body_sha256": "b48629c33a3f296a75d6ac3283c516dba28c1c4233d1b40cfd43b92b7d538564",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Security-owner review of the secret-egress certificate change remains outstanding. (sha=9210c0432d23af64e562133ebccce57ad73cee62)",
+      "expected_head_sha": "9210c0432d23af64e562133ebccce57ad73cee62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T23:15:15.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-certificate-identifiers",
+        "head_sha": "9210c0432d23af64e562133ebccce57ad73cee62",
         "cluster_id": null,
         "job_path": null
       }
