@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "autonomous",
+  "run_id": "36572707798",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36572707798",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-09-29T13:48:44.295Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_pr": null,
+  "summary": "The batch-file defect remains source-reproducible at main 278c079e87b39827ac5a40f50fe73301f8a58953. A narrow fix is planned, but this read-only checkout has no node_modules, so the worker could not run the failing regression, edit code, or validate a PR branch. The job-listed updater restart helper is absent; the current scheduled-task restart writer already emits CRLF through the Windows launcher encoder.",
+  "actions": [
+    {
+      "target": "#119484",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "The agent write, edit, and apply-patch boundaries can persist LF-only .cmd/.bat content on current main."
+    },
+    {
+      "target": "#119540",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Historical source work only; no closure or merge action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119484",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the worker host, not by an unresolved product decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
