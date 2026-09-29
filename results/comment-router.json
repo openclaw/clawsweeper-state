@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T21:05:09.834Z",
+  "updated_at": "2026-09-29T21:06:20.402Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161164:5890272390:2026-09-29T12:25:54Z:re_review",
-      "comment_id": "5890272390",
-      "comment_version_key": "5890272390:2026-09-29T12:25:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161164#issuecomment-5890272390",
-      "comment_created_at": "2026-09-29T12:25:54Z",
-      "comment_updated_at": "2026-09-29T12:25:54Z",
-      "comment_body_sha256": "60a0e84f8ce6c8dc5baaca74c8da74ed499564ce0bfe9e532a7b1589a77b0b63",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161164,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — shared sdk force-refresh single-flight now preserves unexpired assumerole profile rotation. real cli proof: eight files indexed, first 20 signed bedrock requests use a, profile switches to b with a still valid for an hour, next 20 requests all use b without restarting. throttled imds control still succeeds with peak 1 and only 3 token/role/credential lookups for 20 embeddings. pr body includes final-effect proof; 42 scoped tests pass",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:26:50.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-161152-bedrock-embedding-credentials",
-        "head_sha": "9f579b7124269337e3572febd59bfb554f2d8074",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161154:5889064605:2026-09-29T12:26:00Z:clawsweeper_needs_human",
       "comment_id": "5889064605",
@@ -33482,6 +33435,39 @@
         "kind": "pull_request",
         "branch": "xlinush-gateway-store-direct-launch",
         "head_sha": "09475d13d44ae040556b4ec1a70d36173797c285",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161375:5898363939:2026-09-29T21:05:30Z:clawsweeper_needs_human",
+      "comment_id": "5898363939",
+      "comment_version_key": "5898363939:2026-09-29T21:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161375#issuecomment-5898363939",
+      "comment_created_at": "2026-09-29T20:37:11Z",
+      "comment_updated_at": "2026-09-29T21:05:30Z",
+      "comment_body_sha256": "8eb2563c3be1aa39eef6577fe451b10307640b55407811eff5e07d71f06c8564",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161375,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=4ab5cf50f1c3ea88625cdcbc587e0c39b1b79ea9)",
+      "expected_head_sha": "4ab5cf50f1c3ea88625cdcbc587e0c39b1b79ea9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T21:06:20.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/runtime-quarantine-health-reads",
+        "head_sha": "4ab5cf50f1c3ea88625cdcbc587e0c39b1b79ea9",
         "cluster_id": null,
         "job_path": null
       }
