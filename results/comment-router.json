@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:07:16.671Z",
+  "updated_at": "2026-09-29T23:09:39.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160958:5883757370:2026-09-29T14:32:31Z:clawsweeper_needs_human",
-      "comment_id": "5883757370",
-      "comment_version_key": "5883757370:2026-09-29T14:32:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160958#issuecomment-5883757370",
-      "comment_created_at": "2026-09-29T04:39:37Z",
-      "comment_updated_at": "2026-09-29T14:32:31Z",
-      "comment_body_sha256": "89cbf302db262b38c6a1deba4331ea5e76eeea6e7a20318dbe7d50dda56a953a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160958,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Admitting first-time and unknown-author PRs to Blacksmith may increase the five-minute registration burst beyond the documented estimate, whose observed PR-arrival population excluded... (sha=3a67cc650a525f1f275c9639cad290ce68562662)",
-      "expected_head_sha": "3a67cc650a525f1f275c9639cad290ce68562662",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T14:33:40.023Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/upbeat-clarke-696clf",
-        "head_sha": "3a67cc650a525f1f275c9639cad290ce68562662",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157557:5827415361:2026-09-25T05:39:13Z:re_review",
       "comment_id": "5827415361",
@@ -33203,6 +33170,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158226:5900800675:2026-09-29T23:08:46Z:re_review",
+      "comment_id": "5900800675",
+      "comment_version_key": "5900800675:2026-09-29T23:08:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158226#issuecomment-5900800675",
+      "comment_created_at": "2026-09-29T23:08:46Z",
+      "comment_updated_at": "2026-09-29T23:08:46Z",
+      "comment_body_sha256": "b525c72868bca44f6f348f9813f0bc091cc28667d9ff15890a711d57bcdab185",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158226,
+      "author": "Weiming-Hu",
+      "author_id": 16421338,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T23:09:38.805Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/deepgram-idle-finalize-request",
+        "head_sha": "67c19b5ed551f8e0768b38260578cd1477407dd8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
