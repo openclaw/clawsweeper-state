@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:08:43.577Z",
+  "updated_at": "2026-09-29T03:09:12.304Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157465:5833067759:2026-09-25T13:19:24Z:re_review",
-      "comment_id": "5833067759",
-      "comment_version_key": "5833067759:2026-09-25T13:19:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157465#issuecomment-5833067759",
-      "comment_created_at": "2026-09-25T13:19:24Z",
-      "comment_updated_at": "2026-09-25T13:19:24Z",
-      "comment_body_sha256": "4df5a228878cfcf2aa6a277c4f6c54a8befb339b967db955de800279a497bc60",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157465,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T22:44:49.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gemini-tts-two-speakers",
-        "head_sha": "b32e4b2de2a70d8547c0fbe49afabd470d4fabc4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157465:5821541603:2026-09-24T20:15:45Z:re_review",
       "comment_id": "5821541603",
@@ -33086,6 +33039,39 @@
         "kind": "pull_request",
         "branch": "codex/cron-lifecycle-worker-20260928",
         "head_sha": "4924458918289c298360d568935be7f663a874da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160917:5882868694:2026-09-29T03:08:04Z:clawsweeper_needs_human",
+      "comment_id": "5882868694",
+      "comment_version_key": "5882868694:2026-09-29T03:08:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160917#issuecomment-5882868694",
+      "comment_created_at": "2026-09-29T03:08:04Z",
+      "comment_updated_at": "2026-09-29T03:08:04Z",
+      "comment_body_sha256": "04de0bc33c0c1b44b72ef0a9db138432c8145231bfc5571f473aebee091b7b5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160917,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4474ff0dbd849ec5231ca67b1aed2bd08448cd3a)",
+      "expected_head_sha": "4474ff0dbd849ec5231ca67b1aed2bd08448cd3a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T03:09:12.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hostneutral/deslop-delivery-0928",
+        "head_sha": "4474ff0dbd849ec5231ca67b1aed2bd08448cd3a",
         "cluster_id": null,
         "job_path": null
       }
