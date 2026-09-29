@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T00:59:43.885Z",
+  "updated_at": "2026-09-29T00:59:46.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160605:5875767410:2026-09-28T19:03:16Z:clawsweeper_needs_human",
-      "comment_id": "5875767410",
-      "comment_version_key": "5875767410:2026-09-28T19:03:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160605#issuecomment-5875767410",
-      "comment_created_at": "2026-09-28T18:08:16Z",
-      "comment_updated_at": "2026-09-28T19:03:16Z",
-      "comment_body_sha256": "a52494888c9ff03659526553ba51167c8f116716e6c653e1e7ca87c314e83473",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160605,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a83575226db94aa5870b9e391f5cbd87a94e4907)",
-      "expected_head_sha": "a83575226db94aa5870b9e391f5cbd87a94e4907",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T19:11:27.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tcr/land-d087-1790605695",
-        "head_sha": "a83575226db94aa5870b9e391f5cbd87a94e4907",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160614:5875948647:2026-09-28T19:04:05Z:clawsweeper_auto_repair",
       "comment_id": "5875948647",
@@ -33843,6 +33810,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160675:5881594009:2026-09-29T00:58:49Z:re_review",
+      "comment_id": "5881594009",
+      "comment_version_key": "5881594009:2026-09-29T00:58:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160675#issuecomment-5881594009",
+      "comment_created_at": "2026-09-29T00:58:49Z",
+      "comment_updated_at": "2026-09-29T00:58:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160675,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T00:59:44.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-telegram-topic-completion-routing",
+        "head_sha": "76c55d4ca08c6ca496b91035538bfb1bd5aae82c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
