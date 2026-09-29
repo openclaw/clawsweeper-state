@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161024"
-mode: "autonomous"
-run_id: "36545572619"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36545572619"
+mode: "plan"
+run_id: "36552506707"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36552506707"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T09:37:19.941Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161024"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T10:03:59.013Z"
+canonical: "#161024"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/161024"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36545572619](https://github.com/openclaw/clawsweeper/actions/runs/36545572619)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36552506707](https://github.com/openclaw/clawsweeper/actions/runs/36552506707)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161024
+Canonical: #161024
 
 ## Summary
 
-At main cec7fe73, source inspection supports the reported readiness wait, but the required CLI reproduction and implementation could not run. The checkout is read-only, has no dependencies or build output, and pnpm fails with EROFS. No files or GitHub state changed.
+Plan a narrow fix PR. The issue is open, no candidate PR is hydrated, and the job identifies a source-reproducible wait when a foreign process holds the Gateway port. The implementation must first reproduce the delay through the isolated CLI entry point; this plan ran no tests or mutations.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ At main cec7fe73, source inspection supports the reported readiness wait, but th
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161024 | fix_needed | planned | canonical | A narrow existing-behavior fix is indicated, subject to the required real-CLI reproduction on a writable host. |
-| cluster:issue-openclaw-openclaw-161024 | build_fix_artifact | blocked |  | Read-only filesystem and unavailable toolchain prevent the real CLI reproduction, edits, and validation required before a fix PR. |
+| #161024 | fix_needed | planned | canonical | A focused bug fix is authorized, but the required real CLI reproduction and validation remain to be done. |
 
 ## Needs Human
 
