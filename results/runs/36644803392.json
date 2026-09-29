@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/imsg",
+  "cluster_id": "issue-openclaw-imsg-324",
+  "mode": "autonomous",
+  "run_id": "36644803392",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36644803392",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-imsg-324.md",
+  "published_at": "2026-09-29T23:28:37.598Z",
+  "canonical": "https://github.com/openclaw/imsg/issues/324",
+  "canonical_issue": "https://github.com/openclaw/imsg/issues/324",
+  "canonical_pr": null,
+  "summary": "Issue #324 remains reproducible from source on main at 1aca78d212c888ef8b09d2abc2f3ca0b6d1f776c. RPC send passes a bare group identifier to a helper that resolves GUIDs; the helper’s pre-dispatch “Chat not found” response has no delivery disposition. Implementation is blocked because this checkout is read-only. No code was changed or validated, and no PR was opened.",
+  "actions": [
+    {
+      "target": "#324",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#324",
+      "candidate_fix": null,
+      "reason": "A narrow fix is needed for the open canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-imsg-324",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#324",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and macOS validation host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "external base blocker: validation failed only in base-identical files outside the repair delta: Makefile",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#324",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
