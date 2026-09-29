@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-29T07:23:52.535Z",
+  "updated_at": "2026-09-29T07:23:55.805Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117734:5604154172:2026-09-09T15:10:20Z:re_review",
-      "comment_id": "5604154172",
-      "comment_version_key": "5604154172:2026-09-09T15:10:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5604154172",
-      "comment_created_at": "2026-09-09T15:10:20Z",
-      "comment_updated_at": "2026-09-09T15:10:20Z",
-      "comment_body_sha256": "ff09c21ea79b7e808af3563edf03bba0ae50a3654f7c4512750e2a5fa8a382b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T02:20:44.556Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117734:5608899903:2026-09-09T21:19:35Z:re_review",
       "comment_id": "5608899903",
@@ -33226,6 +33199,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160956:5883650496:2026-09-29T07:22:47Z:clawsweeper_auto_repair",
+      "comment_id": "5883650496",
+      "comment_version_key": "5883650496:2026-09-29T07:22:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160956#issuecomment-5883650496",
+      "comment_created_at": "2026-09-29T04:28:17Z",
+      "comment_updated_at": "2026-09-29T07:22:47Z",
+      "comment_body_sha256": "3f8840f692d4c0a6526cae658ff4f897328fa7c59372c8450c20a7cfd1d17297",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160956,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=55824fae4938e44e0ae6bb42abd120f72b48dbfb)",
+      "expected_head_sha": "55824fae4938e44e0ae6bb42abd120f72b48dbfb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T07:23:55.805Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-attribution-categories",
+        "head_sha": "55824fae4938e44e0ae6bb42abd120f72b48dbfb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
