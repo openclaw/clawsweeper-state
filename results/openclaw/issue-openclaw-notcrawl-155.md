@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-155"
 mode: "autonomous"
-run_id: "36510570912"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36510570912"
+run_id: "36514991696"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36514991696"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-29T02:04:19.311Z"
+published_at: "2026-09-29T03:01:41.969Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/155"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/155"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36510570912](https://github.com/openclaw/clawsweeper/actions/runs/36510570912)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36514991696](https://github.com/openclaw/clawsweeper/actions/runs/36514991696)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/notcrawl/issues/155
 
 ## Summary
 
-Issue #155 remains valid on main 204af2f8be192709ee3f0acaef120d583465ab3c. A focused fix is defined, but the read-only checkout prevents creating the regression test, changing code, or validating a PR branch.
+Issue #155 remains reproducible in the source at main 204af2f8. A narrow fix path is defined, but this checkout is read-only: no regression test, patch, validation, branch, or PR could be created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Issue #155 remains valid on main 204af2f8be192709ee3f0acaef120d583465ab3c. A foc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155 | fix_needed | planned | canonical | The existing API table omission needs a narrow export and search fix. |
-| #101 | keep_related | planned | related | The table fix does not settle #101's broader output policy. |
-| cluster:issue-openclaw-notcrawl-155 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout. A writable checkout is required to establish the failing regression, apply the fix, and validate the branch. |
+| #155 | fix_needed | planned | canonical | The archived table payload supports a focused Markdown and search projection fix. |
+| #101 | keep_related | planned | related | The table defect has a narrower, defined output path. |
+| cluster:issue-openclaw-notcrawl-155 | build_fix_artifact | planned |  | Prepare one focused PR from clawsweeper/issue-openclaw-notcrawl-155. |
+| cluster:issue-openclaw-notcrawl-155 | open_fix_pr | blocked |  | Implementation, local validation, and PR creation require a writable checkout and Go cache. |
 
 ## Needs Human
 
