@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T20:55:54.963Z",
+  "updated_at": "2026-09-29T20:56:00.418Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160960:5890097157:2026-09-29T12:15:08Z:re_review",
-      "comment_id": "5890097157",
-      "comment_version_key": "5890097157:2026-09-29T12:15:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160960#issuecomment-5890097157",
-      "comment_created_at": "2026-09-29T12:15:08Z",
-      "comment_updated_at": "2026-09-29T12:15:08Z",
-      "comment_body_sha256": "8f82a7fb7a7cbdcfedfb1689802827eac54683a5298466c60ea18e5c523503f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160960,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:16:13.309Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.34",
-        "head_sha": "f780a397ee26e6a83628a0648c57ca302b674064",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161091:5886880179:2026-09-29T12:11:25Z:clawsweeper_needs_human",
       "comment_id": "5886880179",
@@ -33504,6 +33457,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1541:5884162969:2026-09-29T20:42:10Z:clawsweeper_needs_human",
+      "comment_id": "5884162969",
+      "comment_version_key": "5884162969:2026-09-29T20:42:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1541#issuecomment-5884162969",
+      "comment_created_at": "2026-09-29T05:19:48Z",
+      "comment_updated_at": "2026-09-29T20:42:10Z",
+      "comment_body_sha256": "237d05161345752c22291497db58e9947cbf048c170c134abd25715473cc55ca",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1541,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: current-head native Gateway fixture claims support Workspace navigation, drafts, identity, and agent creation,...; Review finding: [P2] Require independent approval before fetching roster avatars — src/OpenClaw.Tray.WinUI/Controls/AgentIdentityBadge.xaml.cs:53-55 - [P2] Queue a roster refresh... (sha=9809d13f32b85312f5546175c27a3b861b6d9af8)",
+      "expected_head_sha": "9809d13f32b85312f5546175c27a3b861b6d9af8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T20:56:00.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "karkarl-workspace-production-implementation",
+        "head_sha": "9809d13f32b85312f5546175c27a3b861b6d9af8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
