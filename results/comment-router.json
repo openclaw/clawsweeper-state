@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T00:06:45.398Z",
+  "updated_at": "2026-09-29T00:06:56.182Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134425:5876048860:2026-09-28T18:27:07Z:re_review",
-      "comment_id": "5876048860",
-      "comment_version_key": "5876048860:2026-09-28T18:27:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134425#issuecomment-5876048860",
-      "comment_created_at": "2026-09-28T18:27:07Z",
-      "comment_updated_at": "2026-09-28T18:27:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134425,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T18:28:04.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-noncanonical-call-id",
-        "head_sha": "ead9183ff9e09525c265cad90f8513ea95ad7710",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119664:5876062164:2026-09-28T18:28:01Z:re_review",
       "comment_id": "5876062164",
@@ -33882,6 +33835,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-maintenance-plan-rejections-return-20260919",
         "head_sha": "0598ad9564798e1709c32bfdd410a698dd4b8f05",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157007:5807709732:2026-09-29T00:05:52Z:clawsweeper_needs_human",
+      "comment_id": "5807709732",
+      "comment_version_key": "5807709732:2026-09-29T00:05:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157007#issuecomment-5807709732",
+      "comment_created_at": "2026-09-24T04:29:37Z",
+      "comment_updated_at": "2026-09-29T00:05:52Z",
+      "comment_body_sha256": "5a182252a17a4d3c835cc66fd380a207f2683ad52ee3ab8379453cb03949db12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f04d9789dca1e6c8129153b47e2fc278174ac475)",
+      "expected_head_sha": "f04d9789dca1e6c8129153b47e2fc278174ac475",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T00:06:56.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-stop-budget",
+        "head_sha": "f04d9789dca1e6c8129153b47e2fc278174ac475",
         "cluster_id": null,
         "job_path": null
       }
