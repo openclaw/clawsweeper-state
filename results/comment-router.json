@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:08:22.922Z",
+  "updated_at": "2026-09-29T02:09:03.317Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160706:5878604145:2026-09-28T21:07:50Z:clawsweeper_needs_human",
-      "comment_id": "5878604145",
-      "comment_version_key": "5878604145:2026-09-28T21:07:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160706#issuecomment-5878604145",
-      "comment_created_at": "2026-09-28T21:07:50Z",
-      "comment_updated_at": "2026-09-28T21:07:50Z",
-      "comment_body_sha256": "c2907b378ba1a8ddf136527834e144eeb561b920a78bac3f3b6e4b0abe8f866b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160706,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed harness dispatch removes the saved cap before Agents API native execution, but the PR supplies no a...; Review finding: [P1] Preserve the creator-approved cron tool cap — src/agents/harness/selection.ts:209-215 - [high] Restricted cron jobs can reach native tools — src/agents/harnes... (sha=f4e982cb07828d2e2daa159be5ea2725f3b91ff4)",
-      "expected_head_sha": "f4e982cb07828d2e2daa159be5ea2725f3b91ff4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T21:08:55.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-cron-current-tools",
-        "head_sha": "f4e982cb07828d2e2daa159be5ea2725f3b91ff4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157693:5878615674:2026-09-28T21:08:24Z:re_review",
       "comment_id": "5878615674",
@@ -33731,6 +33698,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160882:5882286912:2026-09-29T02:08:07Z:re_review",
+      "comment_id": "5882286912",
+      "comment_version_key": "5882286912:2026-09-29T02:08:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/160882#issuecomment-5882286912",
+      "comment_created_at": "2026-09-29T02:08:07Z",
+      "comment_updated_at": "2026-09-29T02:08:07Z",
+      "comment_body_sha256": "bef2f661254c6a990d8c3ac08a1d8be85b6df50fef4d947148a4c2c0a6c171c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160882,
+      "author": "etzelm",
+      "author_id": 16581152,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "rereview https://github.com/openclaw/openclaw/pull/160884 is my pr that i opened for this issue",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T02:09:02.298Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
