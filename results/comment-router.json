@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:01:15.306Z",
+  "updated_at": "2026-09-29T11:03:11.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135481:5499306006:2026-09-29T04:15:26Z:clawsweeper_auto_repair",
-      "comment_id": "5499306006",
-      "comment_version_key": "5499306006:2026-09-29T04:15:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135481#issuecomment-5499306006",
-      "comment_created_at": "2026-09-01T19:31:55Z",
-      "comment_updated_at": "2026-09-29T04:15:26Z",
-      "comment_body_sha256": "e7d0daeadaf4508e0a63f85a5440b629ad611f36ed7c357456caae89af9a1c8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0c77db2fffec151a11209491b820b4d4d512a0d5)",
-      "expected_head_sha": "0c77db2fffec151a11209491b820b4d4d512a0d5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:16:26.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-lane-defer-drain",
-        "head_sha": "0c77db2fffec151a11209491b820b4d4d512a0d5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123122:5279067631:2026-09-29T04:16:18Z:clawsweeper_needs_human",
       "comment_id": "5279067631",
@@ -33515,6 +33482,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4116:5886209392:2026-09-29T10:58:44Z:clawsweeper_needs_human",
+      "comment_id": "5886209392",
+      "comment_version_key": "5886209392:2026-09-29T10:58:44Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4116#issuecomment-5886209392",
+      "comment_created_at": "2026-09-29T08:05:48Z",
+      "comment_updated_at": "2026-09-29T10:58:44Z",
+      "comment_body_sha256": "ce921581d1545333fdbc60c9745be9d7820e0004602dee2b6c34348c6f0074b9",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4116,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject symlink targets before truncating the evidence file (P2)** - Opening the output with O_TRUNC follows an existing symlink, so running export can erase an unrelated writable file before fchmod runs. Create...; Review finding: [P2] Reject symlink targets before truncating the evidence file — Scripts/adaptive_offline_evidence.py:173-174 - [medium] Output symlink can redirect truncation —... (sha=5be072feb8d177997b0c630832859ab0bbbfc35f)",
+      "expected_head_sha": "5be072feb8d177997b0c630832859ab0bbbfc35f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T11:03:11.482Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/adaptive-offline-evidence",
+        "head_sha": "5be072feb8d177997b0c630832859ab0bbbfc35f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
