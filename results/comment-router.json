@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:47:58.157Z",
+  "updated_at": "2026-09-29T01:48:00.990Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159752:5857327844:2026-09-28T20:11:32Z:clawsweeper_needs_human",
-      "comment_id": "5857327844",
-      "comment_version_key": "5857327844:2026-09-28T20:11:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159752#issuecomment-5857327844",
-      "comment_created_at": "2026-09-27T15:41:52Z",
-      "comment_updated_at": "2026-09-28T20:11:32Z",
-      "comment_body_sha256": "d99ee32b2ac306388c4669320092c8fb497e65c3ad76139ae64b95cf3574d089",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159752,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured final-head evidence does not show one combined Stop-to-Gateway-restart result with exact restored workspace bytes and a null turn claim. A settlement-order regression on... (sha=fa0333a82f6ec83062e132aaff833a3486fe1dec)",
-      "expected_head_sha": "fa0333a82f6ec83062e132aaff833a3486fe1dec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T20:26:30.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l122-gateway-methods-workers",
-        "head_sha": "fa0333a82f6ec83062e132aaff833a3486fe1dec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160257:5865631290:2026-09-28T20:22:21Z:clawsweeper_needs_human",
       "comment_id": "5865631290",
@@ -33801,6 +33768,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160859:5882069474:2026-09-29T01:46:34Z:re_review",
+      "comment_id": "5882069474",
+      "comment_version_key": "5882069474:2026-09-29T01:46:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160859#issuecomment-5882069474",
+      "comment_created_at": "2026-09-29T01:46:34Z",
+      "comment_updated_at": "2026-09-29T01:46:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160859,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T01:47:59.706Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-publication-handoffs",
+        "head_sha": "f7b5bdabcd3bbfa91677f691f584b1107dd6c4e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
