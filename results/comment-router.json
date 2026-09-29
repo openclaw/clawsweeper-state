@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T21:03:02.960Z",
+  "updated_at": "2026-09-29T21:03:53.817Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159847:5859059057:2026-09-29T12:25:22Z:clawsweeper_needs_human",
-      "comment_id": "5859059057",
-      "comment_version_key": "5859059057:2026-09-29T12:25:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159847#issuecomment-5859059057",
-      "comment_created_at": "2026-09-27T19:26:07Z",
-      "comment_updated_at": "2026-09-29T12:25:22Z",
-      "comment_body_sha256": "8bb245610266f011087da78605930e01618a28b952ce4a17881e3cc8a6bde002",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removed private runtime-barrel exports may still be reached by native or dynamically loaded plugin consumers; the final integrated import, build, and API checks are unfinished. (sha=08cc031399f9e0384389587c05c0a997bece2431)",
-      "expected_head_sha": "08cc031399f9e0384389587c05c0a997bece2431",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T12:26:28.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l99-dead-exports",
-        "head_sha": "08cc031399f9e0384389587c05c0a997bece2431",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161165:5889635637:2026-09-29T12:25:43Z:clawsweeper_auto_repair",
       "comment_id": "5889635637",
@@ -33471,6 +33438,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154534:5898828341:2026-09-29T21:02:36Z:re_review",
+      "comment_id": "5898828341",
+      "comment_version_key": "5898828341:2026-09-29T21:02:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154534#issuecomment-5898828341",
+      "comment_created_at": "2026-09-29T21:02:36Z",
+      "comment_updated_at": "2026-09-29T21:02:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154534,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T21:03:51.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-audit-suppression-approval-prompts",
+        "head_sha": "dd49dadf2b34499ea1609ffd5b278e7d71bbb038",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
