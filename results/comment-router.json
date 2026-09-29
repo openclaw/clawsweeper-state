@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T17:08:46.655Z",
+  "updated_at": "2026-09-29T17:10:03.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160864:5885991132:2026-09-29T07:50:16Z:re_review",
-      "comment_id": "5885991132",
-      "comment_version_key": "5885991132:2026-09-29T07:50:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160864#issuecomment-5885991132",
-      "comment_created_at": "2026-09-29T07:50:16Z",
-      "comment_updated_at": "2026-09-29T07:50:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160864,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T07:52:28.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1067",
-        "head_sha": "27fa767f1e722ce92b40cd2ca40de4a0d6fc0de6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160444:5869921136:2026-09-29T07:45:52Z:clawsweeper_needs_human",
       "comment_id": "5869921136",
@@ -33884,6 +33837,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-google-sse-frame-cap-20260929",
         "head_sha": "2d4dcdeb3afe8153fb56dc35593f5006d9bb2d79",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161293:5894979327:2026-09-29T17:09:04Z:clawsweeper_needs_human",
+      "comment_id": "5894979327",
+      "comment_version_key": "5894979327:2026-09-29T17:09:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161293#issuecomment-5894979327",
+      "comment_created_at": "2026-09-29T17:09:04Z",
+      "comment_updated_at": "2026-09-29T17:09:04Z",
+      "comment_body_sha256": "87e8f6355ed572a6f6dd990411ae4d7c60e12d102c020b946b50d4f4b75c6fc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161293,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported default-format runs still reopened completed checks in 3/10 Nemotron trials, and the small Qwen sample worsened from 1/10 to 2/10. Persisting those summaries can leave th... (sha=58c9ba46ed2da971af498f57c62a6ed72019c52c)",
+      "expected_head_sha": "58c9ba46ed2da971af498f57c62a6ed72019c52c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T17:10:03.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-completed-checks",
+        "head_sha": "58c9ba46ed2da971af498f57c62a6ed72019c52c",
         "cluster_id": null,
         "job_path": null
       }
