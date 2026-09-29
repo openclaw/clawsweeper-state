@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:38:08.172Z",
+  "updated_at": "2026-09-29T03:38:54.101Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160188:5864500123:2026-09-28T23:03:50Z:clawsweeper_needs_human",
-      "comment_id": "5864500123",
-      "comment_version_key": "5864500123:2026-09-28T23:03:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160188#issuecomment-5864500123",
-      "comment_created_at": "2026-09-28T06:14:21Z",
-      "comment_updated_at": "2026-09-28T23:03:50Z",
-      "comment_body_sha256": "a113cdf84f0568324b8329b82ce2eade359a36697ed71d86aea0da156a0fb0fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160188,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=33fe34b847e58cbd57765c8171e3095a7f09c1ec)",
-      "expected_head_sha": "33fe34b847e58cbd57765c8171e3095a7f09c1ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T23:07:05.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/node-parity-l8-node-ux",
-        "head_sha": "33fe34b847e58cbd57765c8171e3095a7f09c1ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160552:5874613769:2026-09-28T23:01:04Z:clawsweeper_auto_repair",
       "comment_id": "5874613769",
@@ -32877,6 +32844,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160869:5883154749:2026-09-29T03:38:04Z:re_review",
+      "comment_id": "5883154749",
+      "comment_version_key": "5883154749:2026-09-29T03:38:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160869#issuecomment-5883154749",
+      "comment_created_at": "2026-09-29T03:38:04Z",
+      "comment_updated_at": "2026-09-29T03:38:04Z",
+      "comment_body_sha256": "5996bf807a4139263e610fa63ed07b132793bfdb64accecf5a62f4b1a862841a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160869,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T03:38:52.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-gateway-draining-error-copy",
+        "head_sha": "2756b5ee741b1d3b2aca9911f489fa39636365ec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
