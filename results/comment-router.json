@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:42:49.581Z",
+  "updated_at": "2026-09-29T06:42:58.766Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160620:5882088939:2026-09-29T01:48:32Z:re_review",
-      "comment_id": "5882088939",
-      "comment_version_key": "5882088939:2026-09-29T01:48:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160620#issuecomment-5882088939",
-      "comment_created_at": "2026-09-29T01:48:32Z",
-      "comment_updated_at": "2026-09-29T01:48:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160620,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T01:49:30.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-exec-fatal-code-cron",
-        "head_sha": "265a5641731519b058d4891094f8982b575441d4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160699:5878294993:2026-09-29T01:48:12Z:clawsweeper_auto_repair",
       "comment_id": "5878294993",
@@ -32976,6 +32929,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160448:5869994337:2026-09-29T06:37:33Z:clawsweeper_needs_human",
+      "comment_id": "5869994337",
+      "comment_version_key": "5869994337:2026-09-29T06:37:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160448#issuecomment-5869994337",
+      "comment_created_at": "2026-09-28T12:39:19Z",
+      "comment_updated_at": "2026-09-29T06:37:33Z",
+      "comment_body_sha256": "4fed2ff3b2753e96b056881aecfcafe58372ea51d97e44f004db92ea6f8be0a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160448,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Doctor owner write and Gateway reservation path have prepared tests, but no current-head real trace...; Review finding: [P1] Preserve the accepted delivery-mode input alias — src/cron/delivery-field-schemas.ts:12 - [medium] Prove current owner authority at final effect — src/cron/se... (sha=a4d03a6ba039c4625cff1986eb2b1e1d725b3a81)",
+      "expected_head_sha": "a4d03a6ba039c4625cff1986eb2b1e1d725b3a81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T06:42:58.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-cron-owner",
+        "head_sha": "a4d03a6ba039c4625cff1986eb2b1e1d725b3a81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
