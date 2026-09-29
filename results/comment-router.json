@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T22:33:52.568Z",
+  "updated_at": "2026-09-29T22:39:16.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160884:5882294662:2026-09-29T14:03:11Z:clawsweeper_needs_human",
-      "comment_id": "5882294662",
-      "comment_version_key": "5882294662:2026-09-29T14:03:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160884#issuecomment-5882294662",
-      "comment_created_at": "2026-09-29T02:08:54Z",
-      "comment_updated_at": "2026-09-29T14:03:11Z",
-      "comment_body_sha256": "6e085c2ce84270dc259bf296ad54b4ef3a82a8074dd22f385cdf06d21810e54f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160884,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=90b1a03ef51825df1bb3fae62fb8c96797332571)",
-      "expected_head_sha": "90b1a03ef51825df1bb3fae62fb8c96797332571",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T14:04:18.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/openclaw-cli-api-distinction-9hd1xl",
-        "head_sha": "90b1a03ef51825df1bb3fae62fb8c96797332571",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159856:5859316286:2026-09-29T14:04:38Z:clawsweeper_needs_human",
       "comment_id": "5859316286",
@@ -33183,6 +33150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154534:5900414164:2026-09-29T22:37:07Z:re_review",
+      "comment_id": "5900414164",
+      "comment_version_key": "5900414164:2026-09-29T22:37:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154534#issuecomment-5900414164",
+      "comment_created_at": "2026-09-29T22:37:07Z",
+      "comment_updated_at": "2026-09-29T22:37:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154534,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T22:39:14.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-audit-suppression-approval-prompts",
+        "head_sha": "991ad1f0431e078805ec4e90b5fa14f46c57bae6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
