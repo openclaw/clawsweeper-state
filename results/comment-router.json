@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:36:12.429Z",
+  "updated_at": "2026-09-29T23:36:13.184Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159999:5861553474:2026-09-29T15:19:09Z:clawsweeper_needs_human",
-      "comment_id": "5861553474",
-      "comment_version_key": "5861553474:2026-09-29T15:19:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159999#issuecomment-5861553474",
-      "comment_created_at": "2026-09-28T01:07:56Z",
-      "comment_updated_at": "2026-09-29T15:19:09Z",
-      "comment_body_sha256": "08e10e84721591e2db25aa47a068f26db26d8fc82b0a535e22e3aa541ac90b99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159999,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head conflicts with its GitHub base, so the composed result and validation after resolving the conflict remain unknown. (sha=76b919b56d501ef894e6627807fd02d04b5f69aa)",
-      "expected_head_sha": "76b919b56d501ef894e6627807fd02d04b5f69aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T15:20:32.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l132-gateway-core",
-        "head_sha": "76b919b56d501ef894e6627807fd02d04b5f69aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160962:5883870593:2026-09-29T15:19:33Z:clawsweeper_needs_human",
       "comment_id": "5883870593",
@@ -33108,6 +33075,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5901096546:2026-09-29T23:35:16Z:re_review",
+      "comment_id": "5901096546",
+      "comment_version_key": "5901096546:2026-09-29T23:35:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5901096546",
+      "comment_created_at": "2026-09-29T23:35:16Z",
+      "comment_updated_at": "2026-09-29T23:35:16Z",
+      "comment_body_sha256": "d94a5998e5c4020dac1ff585789b1b039e0e919165a2c90f819163b98dc0ea4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — synced with upstream main (head `c5a85b7a91`, 0 behind). merge conflict in `test/scripts/ci-node-test-plan.test.ts` resolved by taking upstream version (ci-only test file, unrelated to skill-selection changes). focused tests pass (9/9 skill-selection), tsc clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T23:36:11.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "c5a85b7a91d1d2034839776edaeaea3225c70829",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161159:5889435855:2026-09-29T23:31:23Z:clawsweeper_needs_human",
