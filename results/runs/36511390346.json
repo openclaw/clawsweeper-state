@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160889",
+  "mode": "autonomous",
+  "run_id": "36511390346",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36511390346",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160889.md",
+  "published_at": "2026-09-29T02:48:03.257Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160889",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160889",
+  "canonical_pr": null,
+  "summary": "The local source shows how tool-call ID repair can strip a checkpoint after its accepted boundary. Implementation is blocked: this read-only checkout is at 80597756, and the preflight main commit e187219f is unavailable locally. No regression was run and no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#160889",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160889",
+      "candidate_fix": null,
+      "reason": "A narrow fix is indicated by source inspection, subject to a failing regression on the preflight main head."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160889",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160889",
+      "candidate_fix": null,
+      "reason": "Refresh a writable task checkout to the reviewed main head, prove the regression through the sanitizer and real converter, then implement and validate the narrow fix."
+    },
+    {
+      "target": "#150238",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct feature and owner."
+    },
+    {
+      "target": "#159687",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate work; no action on that PR in this cluster."
+    },
+    {
+      "target": "#127106",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
