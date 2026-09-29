@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T09:16:26.861Z",
+  "updated_at": "2026-09-29T09:18:46.621Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118977:5172284329:2026-09-29T03:38:40Z:clawsweeper_needs_human",
-      "comment_id": "5172284329",
-      "comment_version_key": "5172284329:2026-09-29T03:38:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118977#issuecomment-5172284329",
-      "comment_created_at": "2026-08-03T22:09:55Z",
-      "comment_updated_at": "2026-09-29T03:38:40Z",
-      "comment_body_sha256": "82da91d9d57eea938e41c809c2a9f806c07ac8dd124d2f9f70dad5fa1507f500",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118977,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Publishing the formerly private-local transcription helper as a supported third-party SDK API creates a lasting compatibility commitment that the SDK owner has not accepted. (sha=0a348e273357266a8247cd53101af1c0c222a9df)",
-      "expected_head_sha": "0a348e273357266a8247cd53101af1c0c222a9df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T03:39:40.139Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/funasr-websocket-subprotocol-20260804",
-        "head_sha": "0a348e273357266a8247cd53101af1c0c222a9df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154721:5759768702:2026-09-29T03:38:56Z:clawsweeper_auto_repair",
       "comment_id": "5759768702",
@@ -33210,6 +33177,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161091:5887280470:2026-09-29T09:17:26Z:re_review",
+      "comment_id": "5887280470",
+      "comment_version_key": "5887280470:2026-09-29T09:17:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161091#issuecomment-5887280470",
+      "comment_created_at": "2026-09-29T09:17:26Z",
+      "comment_updated_at": "2026-09-29T09:17:26Z",
+      "comment_body_sha256": "2f9f4249da85b88e3caa414fe94ce2b9bb486e433f70fd5390518ac46c3e391d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161091,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T09:18:43.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/detached-finalization-transcript-main",
+        "head_sha": "8ca7aa9aaa8e097b2544991dd743bda3d8f7081e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
