@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:01:05.687Z",
+  "updated_at": "2026-09-29T05:02:53.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159947:5881575985:2026-09-29T00:56:53Z:re_review",
-      "comment_id": "5881575985",
-      "comment_version_key": "5881575985:2026-09-29T00:56:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5881575985",
-      "comment_created_at": "2026-09-29T00:56:53Z",
-      "comment_updated_at": "2026-09-29T00:56:53Z",
-      "comment_body_sha256": "686dc61bba22c8a0bfcde68dde0bb33f3162cfb58480833f157bfd57186ef97d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159947,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — 679eca0c48078f7bdab8ef074c807d4e3855360c adds inspected and embedded before/after visual evidence, plus repairs the real layout defects it exposed (zero-height preview audio and clipped uncertainty warning). browser regressions failed before and pass after. screenshots explicitly label synthetic/intercepted gateway and are not live google proof. live provider work remains separate; exact-head owner approvals remain required",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T00:58:02.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-voice-lab",
-        "head_sha": "679eca0c48078f7bdab8ef074c807d4e3855360c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160747:5879786971:2026-09-29T00:57:03Z:clawsweeper_needs_human",
       "comment_id": "5879786971",
@@ -32643,6 +32596,39 @@
         "kind": "pull_request",
         "branch": "fix/cold-storage-checkpoint-self-reference",
         "head_sha": "0b63d8e8182484bb811877a606a0f780a1af90a8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160969:5883979012:2026-09-29T05:01:52Z:clawsweeper_needs_human",
+      "comment_id": "5883979012",
+      "comment_version_key": "5883979012:2026-09-29T05:01:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160969#issuecomment-5883979012",
+      "comment_created_at": "2026-09-29T05:01:52Z",
+      "comment_updated_at": "2026-09-29T05:01:52Z",
+      "comment_body_sha256": "4c868b1a8a331593f071caa9a73b1e8fec5c9d6335c18fc245ec887eba184693",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160969,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recurring CI cost of the expanded WhatsApp reaction cases is not documented with measured per-file wall time and CI seconds. (sha=ff6dec674271947723db45df29e52ca9bfee6712)",
+      "expected_head_sha": "ff6dec674271947723db45df29e52ca9bfee6712",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T05:02:53.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/deslop-core-media-channels",
+        "head_sha": "ff6dec674271947723db45df29e52ca9bfee6712",
         "cluster_id": null,
         "job_path": null
       }
