@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161415",
+  "mode": "autonomous",
+  "run_id": "36641831442",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36641831442",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161415.md",
+  "published_at": "2026-09-29T22:54:30.348Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161415",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161415",
+  "canonical_pr": null,
+  "summary": "The reported cause is present in the checkout, but implementation is blocked: the checkout does not contain the preflight main commit, dependencies are absent, and this worker has read-only filesystem access. I could not reproduce the failure on latest main, change the test, or measure runtime.",
+  "actions": [
+    {
+      "target": "#161415",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#161415",
+      "candidate_fix": null,
+      "reason": "The job requires a pre-fix reproduction on latest main before implementation. That gate could not be completed in this checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161415",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161415",
+      "candidate_fix": null,
+      "reason": "Implementation must wait for the required latest-main reproduction and a writable, dependency-ready checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#161415",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
