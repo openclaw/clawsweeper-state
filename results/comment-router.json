@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T12:18:59.572Z",
+  "updated_at": "2026-09-29T12:19:09.993Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158723:5884156470:2026-09-29T05:19:12Z:re_review",
-      "comment_id": "5884156470",
-      "comment_version_key": "5884156470:2026-09-29T05:19:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158723#issuecomment-5884156470",
-      "comment_created_at": "2026-09-29T05:19:12Z",
-      "comment_updated_at": "2026-09-29T05:19:12Z",
-      "comment_body_sha256": "996f44a44ef1b8f2e3503f8afba82425a8e201cd7227ff12997500271af0efd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158723,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T05:20:53.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/doctor-managed-runtime-repair",
-        "head_sha": "07eeb69564382d5f1ec58d6403204b0507230278",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160977:5884170389:2026-09-29T05:20:31Z:clawsweeper_needs_human",
       "comment_id": "5884170389",
@@ -33434,6 +33387,39 @@
         "kind": "pull_request",
         "branch": "codex/node-parity-l1-bundle",
         "head_sha": "28467dd801338f27aeb3f5d9b3cbfce0d640a527",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161163:5889577914:2026-09-29T12:18:07Z:clawsweeper_needs_human",
+      "comment_id": "5889577914",
+      "comment_version_key": "5889577914:2026-09-29T12:18:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161163#issuecomment-5889577914",
+      "comment_created_at": "2026-09-29T11:44:21Z",
+      "comment_updated_at": "2026-09-29T12:18:07Z",
+      "comment_body_sha256": "3dbf960b2ad43102e7247063b48f3b90034788a6bc20eece1b31803fad54a210",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body's real-provider loopback HTTP trace shows IMDS throttling recovery, and its signed-request...; Review finding: [P1] Invalidate expiring credentials when the AWS principal changes — extensions/amazon-bedrock/aws-credential-refresh.ts:29-30 - [medium] Former AWS principal can... (sha=de02110d52e55ae46ab49df5b90663934a794d97)",
+      "expected_head_sha": "de02110d52e55ae46ab49df5b90663934a794d97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T12:19:09.993Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bedrock-embedding-shared-client",
+        "head_sha": "de02110d52e55ae46ab49df5b90663934a794d97",
         "cluster_id": null,
         "job_path": null
       }
