@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T13:17:04.484Z",
+  "updated_at": "2026-09-29T13:21:42.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160979:5884107113:2026-09-29T06:00:16Z:clawsweeper_needs_human",
-      "comment_id": "5884107113",
-      "comment_version_key": "5884107113:2026-09-29T06:00:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160979#issuecomment-5884107113",
-      "comment_created_at": "2026-09-29T05:14:23Z",
-      "comment_updated_at": "2026-09-29T06:00:16Z",
-      "comment_body_sha256": "81c44f68946cf86768efabe9197492a1aa45ae4785d1d591f34d6d55f9bfd519",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160979,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports two-to-zero subscription requests for an initial synthetic session-only view and a...; Review finding: [P1] Retire the sidebar PR summary when read access is revoked — ui/src/components/app-sidebar-session-pr-indicators.ts:160-167 - [medium] Cached PR badge survives... (sha=8683373ae1072d96b27930171d2274d708a9f194)",
-      "expected_head_sha": "8683373ae1072d96b27930171d2274d708a9f194",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T06:01:49.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/scope-ui-02-pr-status-20260929",
-        "head_sha": "8683373ae1072d96b27930171d2274d708a9f194",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160934:5883343393:2026-09-29T06:00:35Z:clawsweeper_needs_human",
       "comment_id": "5883343393",
@@ -33521,6 +33488,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161069:5891146092:2026-09-29T13:20:35Z:re_review",
+      "comment_id": "5891146092",
+      "comment_version_key": "5891146092:2026-09-29T13:20:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161069#issuecomment-5891146092",
+      "comment_created_at": "2026-09-29T13:20:35Z",
+      "comment_updated_at": "2026-09-29T13:20:35Z",
+      "comment_body_sha256": "cba344073389660953fc5a9e41ec49700a87d5e6a1207e58ed45a0cb2784431e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161069,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T13:21:38.761Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stalled-turn-recover",
+        "head_sha": "8a21d26fd6e7307ca416ed574e17952a36c14aca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
