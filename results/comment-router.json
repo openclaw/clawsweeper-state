@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:34:48.974Z",
+  "updated_at": "2026-09-29T01:34:54.506Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138263:5540647471:2026-09-28T19:51:55Z:clawsweeper_needs_human",
-      "comment_id": "5540647471",
-      "comment_version_key": "5540647471:2026-09-28T19:51:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138263#issuecomment-5540647471",
-      "comment_created_at": "2026-09-04T12:47:49Z",
-      "comment_updated_at": "2026-09-28T19:51:55Z",
-      "comment_body_sha256": "1988d0c06603387b2150500a1c5e010a330e11c4e4424c5d2c569a58be42ca4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138263,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing OAuth providers that return a cross-origin 307/308 for token or registration POSTs will stop completing login or refresh after upgrade; the proposed OAuth-only break has not... (sha=02eb3e4c0d725f8fa780cb6bade05d6824a9d8bf)",
-      "expected_head_sha": "02eb3e4c0d725f8fa780cb6bade05d6824a9d8bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T20:10:29.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-1014",
-        "head_sha": "02eb3e4c0d725f8fa780cb6bade05d6824a9d8bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145133:5638945541:2026-09-28T19:34:01Z:clawsweeper_auto_repair",
       "comment_id": "5638945541",
@@ -34117,6 +34084,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5881947572:2026-09-29T01:33:56Z:re_review",
+      "comment_id": "5881947572",
+      "comment_version_key": "5881947572:2026-09-29T01:33:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5881947572",
+      "comment_created_at": "2026-09-29T01:33:56Z",
+      "comment_updated_at": "2026-09-29T01:33:56Z",
+      "comment_body_sha256": "8c8373bc3914396b3909d808b71677d454bf0030aaeb4940bbd50e4ffbfde80a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — merged upstream/main (da0b58125d, 72 behind → head dd99238a5a, clean, zero conflicts). skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage). focused tests 9/9 green, tsgo:core clean on our files (upstream-only errors in node-proxy-agent/api-baseline untouched)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T01:34:52.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "dd99238a5a06edf4300b3f3b31499f5bdb793d5d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
