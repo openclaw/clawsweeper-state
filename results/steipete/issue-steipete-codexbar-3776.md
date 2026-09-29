@@ -2,16 +2,16 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-3776"
 mode: "autonomous"
-run_id: "36601569433"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36601569433"
+run_id: "36622655747"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36622655747"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-29T17:02:36.013Z"
+published_at: "2026-09-29T20:02:20.094Z"
 canonical: "https://github.com/steipete/CodexBar/issues/3776"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/3776"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36601569433](https://github.com/openclaw/clawsweeper/actions/runs/36601569433)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36622655747](https://github.com/openclaw/clawsweeper/actions/runs/36622655747)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/CodexBar/issues/3776
 
 ## Summary
 
-Issue #3776 remains a TypeSafe request/token usage gap on main at 25bba9b7. Implementation is blocked until a successful redacted authenticated response establishes the fields, units, reporting period, and account scope.
+Issue #3776 remains open. Implementation is blocked until an authenticated, redacted usage response establishes its units, account scope, and reporting-period semantics.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Issue #3776 remains a TypeSafe request/token usage gap on main at 25bba9b7. Impl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #3776 | needs_human | blocked | canonical | A successful authenticated response and its reporting semantics are absent from the provided artifacts. Someone with authorized access to a TypeSafe account must supply a redacted response covering fields, units, reporting period, and account scope before an implementation can be specified safely. |
-| #3756 | keep_closed | skipped | related | Historical billing foundation; no action on the closed PR. |
-| #3777 | route_security | planned | security_sensitive | Quarantine this linked PR for central security handling without changing it or blocking classification of #3776. |
+| #3776 | needs_human | blocked | needs_human | The provided artifacts lack the authenticated response contract and reporting-period semantics needed to implement or validate request and token totals. Repository instructions prohibit unrequested live credential probes. |
+| #3777 | route_security | planned | security_sensitive | Quarantine this linked PR for central security handling; it is not an implementation candidate for this cluster. |
 
 ## Needs Human
 
-- For #3776, supply a successful redacted authenticated response from GET /api/usage?granularity=day that establishes response fields, units, reporting period, and account scope. The provided artifacts contain only an unauthenticated HTTP 401 and cannot support a safe parser or fixture.
+- For #3776, supply a successful authenticated, redacted /api/usage?granularity=day response documenting field units, account scope, and reporting-period semantics before implementation.
