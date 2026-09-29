@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161017"
 mode: "plan"
-run_id: "36540069855"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36540069855"
+run_id: "36544436199"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36544436199"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-29T08:43:00.325Z"
-canonical: "#161017"
-canonical_issue: "#161017"
+published_at: "2026-09-29T08:47:26.024Z"
+canonical: "4180"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/161017"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36540069855](https://github.com/openclaw/clawsweeper/actions/runs/36540069855)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36544436199](https://github.com/openclaw/clawsweeper/actions/runs/36544436199)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #161017
+Canonical: 4180
 
 ## Summary
 
-At main 398a85fa, the channel reply reset initializer rebuilds the session row without category; it already copies pinnedAt. Plan a narrow regression and fix for category. No code was changed or tests run in plan mode.
+At the preflight main SHA, the channel reply reset rebuilds the session entry without category, while already copying pinnedAt. Plan a narrow regression and fix for category. No code was changed or tests run in plan mode.
 
 ## Impact
 
@@ -66,9 +66,9 @@ At main 398a85fa, the channel reply reset initializer rebuilds the session row w
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123520 | keep_closed | skipped | related | Closed context; no closure action is valid. |
-| #150054 | keep_related | planned | related | The sidebar symptoms overlap, but the causes and fixes differ. |
-| #161017 | build_fix_artifact | planned | canonical | First demonstrate the missing category in a committed row after channel /new and /reset, then preserve it in the reply initializer. |
+| https://github.com/openclaw/openclaw/issues/161017 | fix_needed | planned | canonical | The channel reset path still omits category. The pinning claim is not supported by this source path. |
+| https://github.com/openclaw/openclaw/issues/150054 | keep_related | planned | related | It needs its own placement fix. |
+| https://github.com/openclaw/openclaw/issues/123520 | keep_closed | skipped | related | Historical context for the same symptom through a different entry point; no closure action is valid. |
 
 ## Needs Human
 

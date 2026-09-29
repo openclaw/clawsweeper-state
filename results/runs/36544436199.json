@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161017",
+  "mode": "plan",
+  "run_id": "36544436199",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36544436199",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161017.md",
+  "published_at": "2026-09-29T08:47:26.024Z",
+  "canonical": "4180",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161017",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the channel reply reset rebuilds the session entry without category, while already copying pinnedAt. Plan a narrow regression and fix for category. No code was changed or tests run in plan mode.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/161017",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "4180",
+      "candidate_fix": null,
+      "reason": "The channel reset path still omits category. The pinning claim is not supported by this source path."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/150054",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "4180",
+      "candidate_fix": null,
+      "reason": "It needs its own placement fix."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/123520",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "4180",
+      "candidate_fix": null,
+      "reason": "Historical context for the same symptom through a different entry point; no closure action is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
