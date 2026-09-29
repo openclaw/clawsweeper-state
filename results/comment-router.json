@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T07:40:06.602Z",
+  "updated_at": "2026-09-29T07:40:12.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111373:5882509225:2026-09-29T02:30:08Z:re_review",
-      "comment_id": "5882509225",
-      "comment_version_key": "5882509225:2026-09-29T02:30:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111373#issuecomment-5882509225",
-      "comment_created_at": "2026-09-29T02:30:08Z",
-      "comment_updated_at": "2026-09-29T02:30:08Z",
-      "comment_body_sha256": "c1a0840f52d262b3ab835a1c02959ccb040348fe71983a5544b362d164809d67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111373,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T02:31:03.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-lane-starvation",
-        "head_sha": "fdd048e3ae1bf7ff5595a0dd49c8de18e62aacf0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160620:5882508879:2026-09-29T02:30:06Z:re_review",
       "comment_id": "5882508879",
@@ -33432,6 +33385,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:454:5885378962:2026-09-29T07:39:17Z:clawsweeper_needs_human",
+      "comment_id": "5885378962",
+      "comment_version_key": "5885378962:2026-09-29T07:39:17Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/454#issuecomment-5885378962",
+      "comment_created_at": "2026-09-29T07:05:03Z",
+      "comment_updated_at": "2026-09-29T07:39:17Z",
+      "comment_body_sha256": "4d3850ba44bc34f6a0595c7785585070e7aede9d43de39b92eac55af6bad2ee8",
+      "repo": "openclaw/wacli",
+      "issue_number": 454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Chat-state writes now bypass the queue shared by delegated sends and mark-read. The source and fake-writer test establish the bypass, but the live trace does not show a send completin... (sha=17cce51de631b1a04bb2d79c88c9a825836c7962)",
+      "expected_head_sha": "17cce51de631b1a04bb2d79c88c9a825836c7962",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T07:40:12.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/chat-state-delegate",
+        "head_sha": "17cce51de631b1a04bb2d79c88c9a825836c7962",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
