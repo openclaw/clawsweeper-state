@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:03:42.235Z",
+  "updated_at": "2026-09-29T05:03:50.593Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160828:5881335231:2026-09-29T00:57:05Z:clawsweeper_needs_human",
-      "comment_id": "5881335231",
-      "comment_version_key": "5881335231:2026-09-29T00:57:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160828#issuecomment-5881335231",
-      "comment_created_at": "2026-09-29T00:32:38Z",
-      "comment_updated_at": "2026-09-29T00:57:05Z",
-      "comment_body_sha256": "7b7955740be725b43dd4c1399fe140c98fed618532ec4409697d9087df521b2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160828,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A successful rollback in this edge case leaves the source checkout detached while its original branch still points at the failed candidate. Returning to branch-based work requires ope... (sha=8e3fba057288302dec98947b2fe8612b616e8c1f)",
-      "expected_head_sha": "8e3fba057288302dec98947b2fe8612b616e8c1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T00:58:12.235Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/git-rollback-retained-runtime-restart",
-        "head_sha": "8e3fba057288302dec98947b2fe8612b616e8c1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159525:5854140657:2026-09-29T00:52:49Z:clawsweeper_needs_human",
       "comment_id": "5854140657",
@@ -32626,6 +32593,39 @@
       "status": "skipped",
       "processed_at": "2026-09-29T05:03:42.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160525:5873422755:2026-09-29T05:02:37Z:clawsweeper_auto_repair",
+      "comment_id": "5873422755",
+      "comment_version_key": "5873422755:2026-09-29T05:02:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160525#issuecomment-5873422755",
+      "comment_created_at": "2026-09-28T15:40:48Z",
+      "comment_updated_at": "2026-09-29T05:02:37Z",
+      "comment_body_sha256": "1453c154a61a70f1471bdef3e849a67314ff489cf6845e8c1e43268557d286ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160525,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5d25e9b1777309c507a418cd881eb56a051fac52)",
+      "expected_head_sha": "5d25e9b1777309c507a418cd881eb56a051fac52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T05:03:50.593Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/steer-participant-identity",
+        "head_sha": "5d25e9b1777309c507a418cd881eb56a051fac52",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
