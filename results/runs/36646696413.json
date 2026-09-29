@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161431",
+  "mode": "autonomous",
+  "run_id": "36646696413",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36646696413",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161431.md",
+  "published_at": "2026-09-29T23:47:57.142Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161431",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161431",
+  "canonical_pr": null,
+  "summary": "Current main still drops the responding agent ID during TTS summarization. A narrow fix PR is warranted; the earlier merged cold-start PR addressed a different failure. No GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#161431",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161431",
+      "candidate_fix": null,
+      "reason": "The open issue describes a current, bounded bug with a clear TTS owner and no viable open candidate PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161431",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161431",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161431",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161431",
+      "candidate_fix": null,
+      "reason": null
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#161431",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
