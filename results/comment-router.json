@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T16:07:52.764Z",
+  "updated_at": "2026-09-29T16:08:39.098Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158387:5885838713:2026-09-29T07:39:08Z:re_review",
-      "comment_id": "5885838713",
-      "comment_version_key": "5885838713:2026-09-29T07:39:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158387#issuecomment-5885838713",
-      "comment_created_at": "2026-09-29T07:39:08Z",
-      "comment_updated_at": "2026-09-29T07:39:08Z",
-      "comment_body_sha256": "a03b40b6fb09ac04f7a7c4195a50b23013c5545e2fbba6c72d681ba0cd5589a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158387,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T07:40:05.497Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-openclaw-outbound-target-collision",
-        "head_sha": "cab03df8a9dbaf4a8b4eea6cf1df028753fcec40",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/wacli:454:5885378962:2026-09-29T07:39:17Z:clawsweeper_needs_human",
       "comment_id": "5885378962",
@@ -33528,6 +33481,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-gateway-borrow",
         "head_sha": "cff1758fb8d7b9e476c3c8e37a4058df31cc8ebd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158916:5846887649:2026-09-29T16:07:24Z:clawsweeper_needs_human",
+      "comment_id": "5846887649",
+      "comment_version_key": "5846887649:2026-09-29T16:07:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158916#issuecomment-5846887649",
+      "comment_created_at": "2026-09-26T14:03:53Z",
+      "comment_updated_at": "2026-09-29T16:07:24Z",
+      "comment_body_sha256": "540aa191016b65321a4581c0c10aa29da635d6624ea62749c122541370416083",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The latest integrated head has not completed the published-updater upgrade and rollback cell after changing native service-file publication and recovery comparisons; earlier-head resu... (sha=fd56c8c1ab8b52be0fdad1748cece2edfaf2d6bf)",
+      "expected_head_sha": "fd56c8c1ab8b52be0fdad1748cece2edfaf2d6bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T16:08:39.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l73-runtime2",
+        "head_sha": "fd56c8c1ab8b52be0fdad1748cece2edfaf2d6bf",
         "cluster_id": null,
         "job_path": null
       }
