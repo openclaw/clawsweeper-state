@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:43:31.278Z",
+  "updated_at": "2026-09-29T01:43:55.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160676:5877825068:2026-09-28T20:24:02Z:re_review",
-      "comment_id": "5877825068",
-      "comment_version_key": "5877825068:2026-09-28T20:24:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160676#issuecomment-5877825068",
-      "comment_created_at": "2026-09-28T20:24:02Z",
-      "comment_updated_at": "2026-09-28T20:24:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160676,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T20:26:23.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1065",
-        "head_sha": "56412d239374aea14e048e0b6f8316587d9b162a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159947:5877826661:2026-09-28T20:24:08Z:re_review",
       "comment_id": "5877826661",
@@ -33800,6 +33753,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-catalog-config-capture-20260928",
         "head_sha": "934b477aa8e870f9c7b468c6c633f3c878380f10",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160695:5878025973:2026-09-29T01:42:54Z:clawsweeper_needs_human",
+      "comment_id": "5878025973",
+      "comment_version_key": "5878025973:2026-09-29T01:42:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160695#issuecomment-5878025973",
+      "comment_created_at": "2026-09-28T20:35:41Z",
+      "comment_updated_at": "2026-09-29T01:42:54Z",
+      "comment_body_sha256": "2030d844d598e68d0dc3fda5c1c34cf773c61623485ee675be4f50e28fb6dbec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: production admission and publication entrypoints are exercised with simulated GitHub transport and real-Git fix...; Review finding: [P1] Gate the pre-contract candidate cutoff on release-owner approval — scripts/full-release-validation-at-sha.mts:1669-1672 - [medium] Prove revoked authority is... (sha=72aa29f5beb9e7912c8f280f3516cc1f6ef3823b)",
+      "expected_head_sha": "72aa29f5beb9e7912c8f280f3516cc1f6ef3823b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T01:43:55.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/implement-candidate-owned-frozen-release-qualification",
+        "head_sha": "72aa29f5beb9e7912c8f280f3516cc1f6ef3823b",
         "cluster_id": null,
         "job_path": null
       }
