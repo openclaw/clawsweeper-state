@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T00:33:46.763Z",
+  "updated_at": "2026-09-29T00:34:03.892Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160555:5874512192:2026-09-28T18:19:20Z:clawsweeper_needs_human",
-      "comment_id": "5874512192",
-      "comment_version_key": "5874512192:2026-09-28T18:19:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160555#issuecomment-5874512192",
-      "comment_created_at": "2026-09-28T16:46:32Z",
-      "comment_updated_at": "2026-09-28T18:19:20Z",
-      "comment_body_sha256": "f486db37977970aea8e1cd46d14698d42731ebf2425a2a4c15eb4c4bd5806261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160555,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6ff070cdc0ac13a0c600576114f733f0140785fd)",
-      "expected_head_sha": "6ff070cdc0ac13a0c600576114f733f0140785fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T18:57:28.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/audit-theme-color-drift-and-create-prs",
-        "head_sha": "6ff070cdc0ac13a0c600576114f733f0140785fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160557:5874550502:2026-09-28T18:19:16Z:clawsweeper_needs_human",
       "comment_id": "5874550502",
@@ -33809,6 +33776,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160795:5881340213:2026-09-29T00:33:09Z:re_review",
+      "comment_id": "5881340213",
+      "comment_version_key": "5881340213:2026-09-29T00:33:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160795#issuecomment-5881340213",
+      "comment_created_at": "2026-09-29T00:33:09Z",
+      "comment_updated_at": "2026-09-29T00:33:09Z",
+      "comment_body_sha256": "a7000322a4a21c7dbf15c5c6d2187a86eddfe691406a563d8311cc1cd0ecd896",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160795,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T00:34:02.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-lease-dead-owner",
+        "head_sha": "c84b77c86461153411665d23ec051ef208771e89",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
