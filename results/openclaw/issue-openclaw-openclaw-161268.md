@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161268"
-mode: "autonomous"
-run_id: "36596163777"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36596163777"
+mode: "plan"
+run_id: "36602125753"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36602125753"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T16:42:46.341Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161268"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161268"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T17:38:54.565Z"
+canonical: "#161268"
+canonical_issue: "#161268"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36596163777](https://github.com/openclaw/clawsweeper/actions/runs/36596163777)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36602125753](https://github.com/openclaw/clawsweeper/actions/runs/36602125753)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161268
+Canonical: #161268
 
 ## Summary
 
-The reported bug remains present at main SHA 7b64dadaeeb43212fb23787feaf8722f56a45032. Daily ingestion prefixes bullets with their heading, and the current predicate rejects every snippet beginning “Conversation Summary:”. A source-level check reproduced the false positive, but the read-only checkout and missing dependencies prevented an ingestion regression test, code changes, and a validated PR branch.
+The checkout matches the preflight main SHA. Source inspection supports the reported false positive, but the required failing daily-ingestion regression has not been run. Plan a narrow memory-core fix; do not close or merge.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The reported bug remains present at main SHA 7b64dadaeeb43212fb23787feaf8722f56a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161268 | fix_needed | planned | canonical | The predicate rejects ordinary prose solely because of its heading prefix. |
-| cluster:issue-openclaw-openclaw-161268 | build_fix_artifact | blocked |  | Implementation requires a writable checkout with dependencies so the ingestion regression can fail before the fix and pass afterward. |
+| #161268 | fix_needed | planned | canonical | First reproduce the loss through daily-note ingestion, then narrow the shared predicate and validate the record and read paths. |
+| #94636 | keep_closed | skipped | related | Historical source work; no action on the closed PR. |
 
 ## Needs Human
 

@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161268",
+  "mode": "plan",
+  "run_id": "36602125753",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36602125753",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161268.md",
+  "published_at": "2026-09-29T17:38:54.565Z",
+  "canonical": "#161268",
+  "canonical_issue": "#161268",
+  "canonical_pr": null,
+  "summary": "The checkout matches the preflight main SHA. Source inspection supports the reported false positive, but the required failing daily-ingestion regression has not been run. Plan a narrow memory-core fix; do not close or merge.",
+  "actions": [
+    {
+      "target": "#161268",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161268",
+      "candidate_fix": null,
+      "reason": "First reproduce the loss through daily-note ingestion, then narrow the shared predicate and validate the record and read paths."
+    },
+    {
+      "target": "#94636",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#161268",
+      "candidate_fix": null,
+      "reason": "Historical source work; no action on the closed PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
