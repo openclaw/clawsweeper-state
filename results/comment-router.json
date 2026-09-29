@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:31:27.940Z",
+  "updated_at": "2026-09-29T01:31:41.500Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160662:5876855807:2026-09-28T19:21:16Z:re_review",
-      "comment_id": "5876855807",
-      "comment_version_key": "5876855807:2026-09-28T19:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160662#issuecomment-5876855807",
-      "comment_created_at": "2026-09-28T19:21:16Z",
-      "comment_updated_at": "2026-09-28T19:21:16Z",
-      "comment_body_sha256": "58aec672ba84ea47e3645061093c878159b7fbfb7a27813b3a82ab0946666b62",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160662,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T20:10:09.567Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l143-agents-subsystems",
-        "head_sha": "5d4cd27978b929c6c703ba37f1d946aa173cac80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158459:5877351427:2026-09-28T19:53:17Z:re_review",
       "comment_id": "5877351427",
@@ -34170,6 +34123,39 @@
         "kind": "pull_request",
         "branch": "feat/control-ui-voice-lab",
         "head_sha": "3e6dc02fc2273ed14646d16594234a0aafc3b89b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160818:5881133728:2026-09-29T01:30:44Z:clawsweeper_auto_repair",
+      "comment_id": "5881133728",
+      "comment_version_key": "5881133728:2026-09-29T01:30:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160818#issuecomment-5881133728",
+      "comment_created_at": "2026-09-29T00:12:50Z",
+      "comment_updated_at": "2026-09-29T01:30:44Z",
+      "comment_body_sha256": "804854ce710b86258d205653050627b5649146ebf4e55202b0c2f0cdd3795140",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=01076e7dae8405b331609a4f6b04c7769a0526a0)",
+      "expected_head_sha": "01076e7dae8405b331609a4f6b04c7769a0526a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T01:31:41.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-long-write-lock-holds-worker-transactions-20260919",
+        "head_sha": "01076e7dae8405b331609a4f6b04c7769a0526a0",
         "cluster_id": null,
         "job_path": null
       }
