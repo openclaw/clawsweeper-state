@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-29T06:05:09.482Z",
+  "updated_at": "2026-09-29T06:03:41.446Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160699:5882016506:2026-09-29T01:41:00Z:re_review",
+      "comment_id": "5882016506",
+      "comment_version_key": "5882016506:2026-09-29T01:41:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160699#issuecomment-5882016506",
+      "comment_created_at": "2026-09-29T01:41:00Z",
+      "comment_updated_at": "2026-09-29T01:41:00Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160699,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T01:41:58.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1071",
+        "head_sha": "6d2215430ab249dc9081df401488de3d74329c97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-29T01:40:58Z:clawsweeper_needs_human",
       "comment_id": "5567489931",
@@ -32558,39 +32605,6 @@
         "kind": "pull_request",
         "branch": "steipete/redact-prose-pass",
         "head_sha": "75dd0b7caebe0ea16e78759e6d395832074f3ed7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160944:5883545401:2026-09-29T05:59:27Z:clawsweeper_needs_human",
-      "comment_id": "5883545401",
-      "comment_version_key": "5883545401:2026-09-29T05:59:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160944#issuecomment-5883545401",
-      "comment_created_at": "2026-09-29T04:17:08Z",
-      "comment_updated_at": "2026-09-29T05:59:27Z",
-      "comment_body_sha256": "c5640abe4dc660b9cb456922977ef4b596d3d2b25d03e509487f455a735f4023",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160944,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain the required maintainer security review and approval for the current head's Gateway authority-file change. (sha=e5c30c0a5bca4fab3763863f807cd75eaa673d38)",
-      "expected_head_sha": "e5c30c0a5bca4fab3763863f807cd75eaa673d38",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T06:05:09.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/a2a-step-context-cache",
-        "head_sha": "e5c30c0a5bca4fab3763863f807cd75eaa673d38",
         "cluster_id": null,
         "job_path": null
       }
