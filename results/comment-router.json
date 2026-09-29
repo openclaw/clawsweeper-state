@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:52:06.867Z",
+  "updated_at": "2026-09-29T11:52:53.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160964:5883941464:2026-09-29T04:59:04Z:re_review",
-      "comment_id": "5883941464",
-      "comment_version_key": "5883941464:2026-09-29T04:59:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160964#issuecomment-5883941464",
-      "comment_created_at": "2026-09-29T04:59:04Z",
-      "comment_updated_at": "2026-09-29T04:59:04Z",
-      "comment_body_sha256": "7b1bc9821f9cc605e435c9be545922905fe08898c2ae3b2a22d0bcd0e6159e50",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160964,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T04:59:56.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/zalouser-ingress-commits",
-        "head_sha": "d8730f8c909ef2b67772c6bf31072a29e6274381",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158392:5840550029:2026-09-29T04:59:03Z:clawsweeper_needs_human",
       "comment_id": "5840550029",
@@ -33421,6 +33374,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160075:5862950455:2026-09-29T11:51:50Z:clawsweeper_needs_human",
+      "comment_id": "5862950455",
+      "comment_version_key": "5862950455:2026-09-29T11:51:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160075#issuecomment-5862950455",
+      "comment_created_at": "2026-09-28T03:44:50Z",
+      "comment_updated_at": "2026-09-29T11:51:50Z",
+      "comment_body_sha256": "a80ef6db8c277f4b138b8cac80f71713e69297ea7c5cdc014f54b9170fa3ac37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging with the current closing syntax could close https://github.com/openclaw/openclaw/issues/159339 before its separately reported main-session, Windows command, and failure-alert... (sha=888f9e18efaeceab88ea647bbe8b77f7dddb0e23)",
+      "expected_head_sha": "888f9e18efaeceab88ea647bbe8b77f7dddb0e23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T11:52:53.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/cron-dataclone-env-proxy",
+        "head_sha": "888f9e18efaeceab88ea647bbe8b77f7dddb0e23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
