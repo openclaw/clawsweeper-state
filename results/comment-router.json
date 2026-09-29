@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:38:58.219Z",
+  "updated_at": "2026-09-29T03:39:03.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150668:5709852721:2026-09-28T23:06:23Z:clawsweeper_needs_human",
-      "comment_id": "5709852721",
-      "comment_version_key": "5709852721:2026-09-28T23:06:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150668#issuecomment-5709852721",
-      "comment_created_at": "2026-09-17T06:18:12Z",
-      "comment_updated_at": "2026-09-28T23:06:23Z",
-      "comment_body_sha256": "a4836ef6e72e628671a4b494739c89e60e96bf37f5f447f5a727f68680b96093",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150668,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the configured Gateway port during QR recovery (P1)** - resolveGatewayPort prefers OPENCLAW_GATEWAY_PORT, and the shared setup helper persists the value passed here as gateway.port. With a temporary CLI...; Review finding: [P1] Preserve the configured Gateway port during QR recovery — src/cli/qr-setup.ts:95 - [P1] Protect existing Tailscale Serve routes before activation — src/cli/qr... (sha=579f2f31608645e27743a4848545124f15fe7f5a)",
-      "expected_head_sha": "579f2f31608645e27743a4848545124f15fe7f5a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T23:07:22.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-qr-clean-source-20260917",
-        "head_sha": "579f2f31608645e27743a4848545124f15fe7f5a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159945:5860711249:2026-09-28T23:06:55Z:clawsweeper_needs_human",
       "comment_id": "5860711249",
@@ -32879,6 +32846,39 @@
       "status": "skipped",
       "processed_at": "2026-09-29T03:38:58.219Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4115:5883156943:2026-09-29T03:38:14Z:clawsweeper_needs_human",
+      "comment_id": "5883156943",
+      "comment_version_key": "5883156943:2026-09-29T03:38:14Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4115#issuecomment-5883156943",
+      "comment_created_at": "2026-09-29T03:38:14Z",
+      "comment_updated_at": "2026-09-29T03:38:14Z",
+      "comment_body_sha256": "e404b756a0b354c14ae89a8b3cce8edbf917571adf842b1da5b8160f9e8a55cc",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports a real Claude Code 2.1.282 before/after run through CodexBar’s PTY session, with /...; Review finding: [P1] Limit automatic trust to the dedicated probe directory — Sources/CodexBarCore/Providers/Claude/ClaudeCLISession.swift:333-339 - [medium] Trust may persist for... (sha=d9444c907527dfdde08ee2f08d30463cec60f21d)",
+      "expected_head_sha": "d9444c907527dfdde08ee2f08d30463cec60f21d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T03:39:03.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-probe-trust-dialog",
+        "head_sha": "d9444c907527dfdde08ee2f08d30463cec60f21d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
