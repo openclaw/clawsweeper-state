@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-29T03:51:29.617Z",
+  "updated_at": "2026-09-29T03:50:40.644Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:870:5880576838:2026-09-28T23:25:17Z:clawsweeper_needs_human",
+      "comment_id": "5880576838",
+      "comment_version_key": "5880576838:2026-09-28T23:25:17Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/870#issuecomment-5880576838",
+      "comment_created_at": "2026-09-28T23:25:17Z",
+      "comment_updated_at": "2026-09-28T23:25:17Z",
+      "comment_body_sha256": "13c85d47bda8ee973e61f1bb8eec4e3887890fab387df165c5e30607ce291618",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The newly enforced implicit 20-second deadline, or 60 seconds with analysis, can turn existing successful slow pixel captures into timeout errors. The PR has not shown an after-fix na... (sha=f5aad434f92d16a74b8d389e1b1cf0d2f5843f3b)",
+      "expected_head_sha": "f5aad434f92d16a74b8d389e1b1cf0d2f5843f3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T23:26:12.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pixel-observation-timeout",
+        "head_sha": "f5aad434f92d16a74b8d389e1b1cf0d2f5843f3b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:756:5875258444:2026-09-28T23:16:16Z:clawsweeper_needs_human",
       "comment_id": "5875258444",
@@ -32736,53 +32769,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157693:5883278345:2026-09-29T03:50:24Z:re_review",
-      "comment_id": "5883278345",
-      "comment_version_key": "5883278345:2026-09-29T03:50:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5883278345",
-      "comment_created_at": "2026-09-29T03:50:24Z",
-      "comment_updated_at": "2026-09-29T03:50:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157693,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T03:51:27.820Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/address-all-agent-outage-p0-157325",
-        "head_sha": "244a149c10c524486fa42ef859ee21941a53f331",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
