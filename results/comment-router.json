@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:50:45.704Z",
+  "updated_at": "2026-09-29T08:51:14.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160720:5882945115:2026-09-29T03:15:52Z:re_review",
-      "comment_id": "5882945115",
-      "comment_version_key": "5882945115:2026-09-29T03:15:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160720#issuecomment-5882945115",
-      "comment_created_at": "2026-09-29T03:15:52Z",
-      "comment_updated_at": "2026-09-29T03:15:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160720,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T03:16:52.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/uionb-model",
-        "head_sha": "9093835874ed42c43d8aaaeff3891f2ba9e67921",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160918:5882948142:2026-09-29T03:16:11Z:clawsweeper_auto_repair",
       "comment_id": "5882948142",
@@ -33239,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "dependabot/swift/apps/shared/OpenClawKit/swift-deps-055a78816f",
         "head_sha": "2da8812587022201cc2b99d06a3a1a534e751e07",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160960:5883825972:2026-09-29T08:49:52Z:clawsweeper_needs_human",
+      "comment_id": "5883825972",
+      "comment_version_key": "5883825972:2026-09-29T08:49:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160960#issuecomment-5883825972",
+      "comment_created_at": "2026-09-29T04:46:58Z",
+      "comment_updated_at": "2026-09-29T08:49:52Z",
+      "comment_body_sha256": "8f4d87f91d9f88e81d2a9006cde21c87479e23e4d479aebf55b1e1daa4cf4a9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160960,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway approval owner reaches persistent settings through the system-agent operation wrapper, but...; Review finding: [P1] Fence delegated authority at each final settings effect — src/system-agent/chat-turn-router.ts:590-592 - [P1] Retire closed approvals before reusing their IDs... (sha=efd75c9159e380127944f764b0518d56b9b7f7c6)",
+      "expected_head_sha": "efd75c9159e380127944f764b0518d56b9b7f7c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T08:51:14.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/2026.8.34",
+        "head_sha": "efd75c9159e380127944f764b0518d56b9b7f7c6",
         "cluster_id": null,
         "job_path": null
       }
