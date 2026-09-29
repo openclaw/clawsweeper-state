@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:42:34.000Z",
+  "updated_at": "2026-09-29T06:42:49.581Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160851:5881720890:2026-09-29T01:48:32Z:clawsweeper_needs_human",
-      "comment_id": "5881720890",
-      "comment_version_key": "5881720890:2026-09-29T01:48:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160851#issuecomment-5881720890",
-      "comment_created_at": "2026-09-29T01:11:39Z",
-      "comment_updated_at": "2026-09-29T01:48:32Z",
-      "comment_body_sha256": "20316ef48d63e7c29a05ded7a9ffb7db8064394747a561575eff7492c8573de6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160851,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body supplies an isolated Gateway before/after terminal trace for manual close, listing, reject...; Review finding: [P1] Keep older readers from admitting retained closed sessions — src/acp/control-plane/manager.close-session.ts:252-255 - [medium] Closed session may be re-admitt... (sha=e56f385a1c3f60f0ee97c2482e1499bb1122aa57)",
-      "expected_head_sha": "e56f385a1c3f60f0ee97c2482e1499bb1122aa57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T01:49:28.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-close-keeps-terminal-meta",
-        "head_sha": "e56f385a1c3f60f0ee97c2482e1499bb1122aa57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160620:5882088939:2026-09-29T01:48:32Z:re_review",
       "comment_id": "5882088939",
@@ -32945,6 +32912,53 @@
         "kind": "pull_request",
         "branch": "fix/local-ai-onboarding-resume",
         "head_sha": "83408d7ff42d0ad45fd9c8760e6ea5f1bd963d3d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1538:5885075825:2026-09-29T06:41:40Z:re_review",
+      "comment_id": "5885075825",
+      "comment_version_key": "5885075825:2026-09-29T06:41:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1538#issuecomment-5885075825",
+      "comment_created_at": "2026-09-29T06:41:40Z",
+      "comment_updated_at": "2026-09-29T06:41:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1538,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T06:42:48.046Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-ai-change-model-scoped",
+        "head_sha": "2e932a7dfdc2fdb5e9fb91c8bd12527f87755224",
         "cluster_id": null,
         "job_path": null
       },
