@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T04:43:35.392Z",
+  "updated_at": "2026-09-29T04:43:37.440Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159947:5881201269:2026-09-29T00:19:20Z:re_review",
-      "comment_id": "5881201269",
-      "comment_version_key": "5881201269:2026-09-29T00:19:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5881201269",
-      "comment_created_at": "2026-09-29T00:19:20Z",
-      "comment_updated_at": "2026-09-29T00:19:20Z",
-      "comment_body_sha256": "2e02c2d5c1c0e6f02862de161ddaba4e6b4d22c6970375ecf54384c7ac9e0cc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159947,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — f8c15a9c1add351dcb1fae900769553b564c2bd2 repairs revision 13 repeated store after confirmed success. both handler and rendered control lock; recording cannot erase the successful receipt; edits/refresh cannot unlock. deliberate close/reopen permits another creation, while uncertain stores stay locked. both new rendered cases failed before repair; 18 focused tests, affected ui types/lint and line-cap pass. evidence includes current ci merge/base diagnosis and explicitly retains live google/ui proof and owner approvals as outstanding",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T00:31:26.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-voice-lab",
-        "head_sha": "f8c15a9c1add351dcb1fae900769553b564c2bd2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159947:5860694045:2026-09-29T00:30:10Z:clawsweeper_needs_human",
       "comment_id": "5860694045",
@@ -32588,6 +32541,39 @@
         "kind": "pull_request",
         "branch": "deslop/l73-native-fixture",
         "head_sha": "65f581b3ac64276806f524bf3057dbfad8542aba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155911:5782512967:2026-09-29T04:37:17Z:clawsweeper_needs_human",
+      "comment_id": "5782512967",
+      "comment_version_key": "5782512967:2026-09-29T04:37:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155911#issuecomment-5782512967",
+      "comment_created_at": "2026-09-22T19:18:12Z",
+      "comment_updated_at": "2026-09-29T04:37:17Z",
+      "comment_body_sha256": "f58a95c3df6125cbfd613eda20c9d017ccaec581e97864014dfc321f81ddad38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Built memory-core cold-import worker CPU increased by a median paired 59.25 ms (+6.81%) in the reported runs, with four of five pairs higher; the whole-Gateway benefit remains unmeasu... (sha=72eaccc977dcdd1724c003811e4faa708ef7a9be)",
+      "expected_head_sha": "72eaccc977dcdd1724c003811e4faa708ef7a9be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T04:43:37.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/plugin-generation-source-projection-20260922",
+        "head_sha": "72eaccc977dcdd1724c003811e4faa708ef7a9be",
         "cluster_id": null,
         "job_path": null
       }
