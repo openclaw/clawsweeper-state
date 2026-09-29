@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161017"
-mode: "autonomous"
-run_id: "36530911367"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36530911367"
+mode: "plan"
+run_id: "36540069855"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36540069855"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T07:42:47.337Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161017"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161017"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T08:43:00.325Z"
+canonical: "#161017"
+canonical_issue: "#161017"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36530911367](https://github.com/openclaw/clawsweeper/actions/runs/36530911367)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36540069855](https://github.com/openclaw/clawsweeper/actions/runs/36540069855)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161017
+Canonical: #161017
 
 ## Summary
 
-The checked-out channel reset path omits category while preserving pinnedAt, but the checkout is behind the preflight main SHA. The exact main revision is unavailable locally, network access failed, and the filesystem is read-only. No regression test, code change, or validation was run.
+At main 398a85fa, the channel reply reset initializer rebuilds the session row without category; it already copies pinnedAt. Plan a narrow regression and fix for category. No code was changed or tests run in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The checked-out channel reset path omits category while preserving pinnedAt, but
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161017 | fix_needed | planned | canonical | Verify the defect and a failing regression on the preflight main revision before implementing. |
-| #150054 | keep_independent | planned | independent | Its parent-link behavior needs separate work. |
-| #123520 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-161017 | build_fix_artifact | blocked |  | Implementation requires a writable checkout of the preflight main revision and a failing production-initializer regression. |
+| #123520 | keep_closed | skipped | related | Closed context; no closure action is valid. |
+| #150054 | keep_related | planned | related | The sidebar symptoms overlap, but the causes and fixes differ. |
+| #161017 | build_fix_artifact | planned | canonical | First demonstrate the missing category in a committed row after channel /new and /reset, then preserve it in the reply initializer. |
 
 ## Needs Human
 

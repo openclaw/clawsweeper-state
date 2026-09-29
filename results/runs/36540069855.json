@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161017",
+  "mode": "plan",
+  "run_id": "36540069855",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36540069855",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161017.md",
+  "published_at": "2026-09-29T08:43:00.325Z",
+  "canonical": "#161017",
+  "canonical_issue": "#161017",
+  "canonical_pr": null,
+  "summary": "At main 398a85fa, the channel reply reset initializer rebuilds the session row without category; it already copies pinnedAt. Plan a narrow regression and fix for category. No code was changed or tests run in plan mode.",
+  "actions": [
+    {
+      "target": "#123520",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context; no closure action is valid."
+    },
+    {
+      "target": "#150054",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161017",
+      "candidate_fix": null,
+      "reason": "The sidebar symptoms overlap, but the causes and fixes differ."
+    },
+    {
+      "target": "#161017",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161017",
+      "candidate_fix": null,
+      "reason": "First demonstrate the missing category in a committed row after channel /new and /reset, then preserve it in the reply initializer."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
