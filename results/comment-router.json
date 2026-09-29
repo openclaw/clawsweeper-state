@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T12:44:29.991Z",
+  "updated_at": "2026-09-29T12:44:31.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160382:5868520787:2026-09-29T05:28:49Z:clawsweeper_needs_human",
-      "comment_id": "5868520787",
-      "comment_version_key": "5868520787:2026-09-29T05:28:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160382#issuecomment-5868520787",
-      "comment_created_at": "2026-09-28T10:58:05Z",
-      "comment_updated_at": "2026-09-29T05:28:49Z",
-      "comment_body_sha256": "81b72430eca4de49343bab03695b9e44313be66cc3be29fb15f661d55bd62d47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160382,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported merge conflict overlaps the reply recovery fixture, so the resolved tree must retain main's cleanup behavior and receive the selected changed-input checks. (sha=60f131d3306bece572d58f483c447ac559ec5b5d)",
-      "expected_head_sha": "60f131d3306bece572d58f483c447ac559ec5b5d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T05:39:14.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l138-state-skills-mid",
-        "head_sha": "0dd54eb95c85ad967ef5446a0a32c43927170e03",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160614:5875948647:2026-09-29T05:36:56Z:clawsweeper_needs_human",
       "comment_id": "5875948647",
@@ -33468,6 +33435,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161007:5890544046:2026-09-29T12:43:18Z:re_review",
+      "comment_id": "5890544046",
+      "comment_version_key": "5890544046:2026-09-29T12:43:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161007#issuecomment-5890544046",
+      "comment_created_at": "2026-09-29T12:43:18Z",
+      "comment_updated_at": "2026-09-29T12:43:18Z",
+      "comment_body_sha256": "64add6ad0b5ed0fe199094b46ac2590e80fb00cd472c0026e26d9c16d691f810",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161007,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T12:44:29.963Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/cron-failure-repair",
+        "head_sha": "f33d7005c02d4117e046481a11334fb57156db48",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139220:5553401133:2026-09-29T12:39:30Z:clawsweeper_auto_repair",
