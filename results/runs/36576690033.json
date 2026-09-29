@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161193",
+  "mode": "plan",
+  "run_id": "36576690033",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36576690033",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161193.md",
+  "published_at": "2026-09-29T13:43:45.738Z",
+  "canonical": "#161193",
+  "canonical_issue": "#161193",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the reload resolver rejects the reported bundled-plugin and retained-install combination. The repair is planned, but no failing regression was run or code changed in this read-only plan.",
+  "actions": [
+    {
+      "target": "#151794",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "Historical context; no closure action is valid."
+    },
+    {
+      "target": "#154891",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "Different failure point and remaining work."
+    },
+    {
+      "target": "#161193",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "Add a failing regression through reloadManagedPlugin before changing the resolver. Source inspection supports the defect; runtime reproduction and validation remain unrun."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
