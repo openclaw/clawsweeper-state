@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:12:26.764Z",
+  "updated_at": "2026-09-29T05:12:43.509Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160188:5881643607:2026-09-29T01:04:02Z:re_review",
-      "comment_id": "5881643607",
-      "comment_version_key": "5881643607:2026-09-29T01:04:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160188#issuecomment-5881643607",
-      "comment_created_at": "2026-09-29T01:04:02Z",
-      "comment_updated_at": "2026-09-29T01:04:02Z",
-      "comment_body_sha256": "2e9b12066a847fc322f23771ba0d1d0dde1ef22dd567c4a24877a4ccdc584bf8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160188,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T01:04:59.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/node-parity-l8-node-ux",
-        "head_sha": "3d6612ba48e0024378ace2b4d27cf74fb1e612f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160465:5881642769:2026-09-29T01:03:57Z:re_review",
       "comment_id": "5881642769",
@@ -32623,6 +32576,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-probe-trust-dialog",
         "head_sha": "709ff569c21bce69b9bd73f2806067d03cb62c6c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160974:5884080785:2026-09-29T05:11:47Z:clawsweeper_needs_human",
+      "comment_id": "5884080785",
+      "comment_version_key": "5884080785:2026-09-29T05:11:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160974#issuecomment-5884080785",
+      "comment_created_at": "2026-09-29T05:11:47Z",
+      "comment_updated_at": "2026-09-29T05:11:47Z",
+      "comment_body_sha256": "3d1847ff5c4ab7dc4934f82269e64d61dda706db781c59f16480bfb9dd610dce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160974,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed environment reaches the exec spawn call, but the supplied test mocks the supervisor and observes va...; Review finding: [P1] Preserve HTTPS loopback secret substitution — src/secrets/egress-proxy/registry.ts:61-65 - [P1] Keep configured loopback traffic restrictions effective — src/... (sha=89665e8cd48795431731cabbb23d97f49d5ecec0)",
+      "expected_head_sha": "89665e8cd48795431731cabbb23d97f49d5ecec0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T05:12:43.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/egress-loopback-no-proxy",
+        "head_sha": "89665e8cd48795431731cabbb23d97f49d5ecec0",
         "cluster_id": null,
         "job_path": null
       }
