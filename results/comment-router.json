@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:43:48.045Z",
+  "updated_at": "2026-09-29T08:46:34.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160920:5882905362:2026-09-29T03:11:43Z:re_review",
-      "comment_id": "5882905362",
-      "comment_version_key": "5882905362:2026-09-29T03:11:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160920#issuecomment-5882905362",
-      "comment_created_at": "2026-09-29T03:11:43Z",
-      "comment_updated_at": "2026-09-29T03:11:43Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160920,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T03:12:56.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-runtime-tool-parity",
-        "head_sha": "3ae5c2a4d3bde8cda630bc97c0ab756a6f5667c3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160919:5882903530:2026-09-29T03:11:30Z:re_review",
       "comment_id": "5882903530",
@@ -33309,6 +33262,39 @@
         "kind": "pull_request",
         "branch": "codex/requester-initial-transfer",
         "head_sha": "ae6a4e8accfc9b3b6848ada0bf2e51f7decc28ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161085:5886549958:2026-09-29T08:45:44Z:clawsweeper_needs_human",
+      "comment_id": "5886549958",
+      "comment_version_key": "5886549958:2026-09-29T08:45:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161085#issuecomment-5886549958",
+      "comment_created_at": "2026-09-29T08:28:55Z",
+      "comment_updated_at": "2026-09-29T08:45:44Z",
+      "comment_body_sha256": "551306a693b00eb514dc125345433cd8f2cdba67480f5aa7f6bcf82b72937e86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The reported before/after regression composes real cron persistence and SQLite placement admission, but an inje...; Review finding: [medium] Verify stale cron-root authority at final effect — src/gateway/worker-environments/worker-turn-admission.ts:234 (sha=0a740141cf115e5a9eceafdfa7703e50bb50d1b0)",
+      "expected_head_sha": "0a740141cf115e5a9eceafdfa7703e50bb50d1b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T08:46:34.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cron-current-placement-send",
+        "head_sha": "0a740141cf115e5a9eceafdfa7703e50bb50d1b0",
         "cluster_id": null,
         "job_path": null
       }
