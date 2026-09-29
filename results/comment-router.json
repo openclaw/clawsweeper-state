@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-29T01:03:41.905Z",
+  "updated_at": "2026-09-29T01:00:56.450Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160661:5876625345:2026-09-28T19:05:46Z:clawsweeper_needs_human",
+      "comment_id": "5876625345",
+      "comment_version_key": "5876625345:2026-09-28T19:05:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160661#issuecomment-5876625345",
+      "comment_created_at": "2026-09-28T19:05:46Z",
+      "comment_updated_at": "2026-09-28T19:05:46Z",
+      "comment_body_sha256": "1fa738d106b23628ecaacf4c4ff49305af08d323170a19e9e86e733e50f27100",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160661,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For an existing deployment with the OIDC mapping configured, a malformed custom account ID or failed GitHub lookup can turn a previously email-only sign-in into rejected profile admis... (sha=ad75dd50b61b679a7ff4a5deda61a84b60770556)",
+      "expected_head_sha": "ad75dd50b61b679a7ff4a5deda61a84b60770556",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-28T19:11:27.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cloudflare-identity-custom",
+        "head_sha": "3f1b080cbfe7472bd7fd91b2a81a2c1d091931ea",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160663:5876627697:2026-09-28T19:05:55Z:clawsweeper_needs_human",
       "comment_id": "5876627697",
@@ -33838,53 +33871,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160707:5881631352:2026-09-29T01:02:45Z:re_review",
-      "comment_id": "5881631352",
-      "comment_version_key": "5881631352:2026-09-29T01:02:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160707#issuecomment-5881631352",
-      "comment_created_at": "2026-09-29T01:02:45Z",
-      "comment_updated_at": "2026-09-29T01:02:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160707,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T01:03:40.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1074",
-        "head_sha": "aa8a9c2e04c4af994a7c94766d12a7ec7fbfd41c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
