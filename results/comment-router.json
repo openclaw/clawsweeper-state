@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T19:24:38.119Z",
+  "updated_at": "2026-09-29T19:25:10.769Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160960:5883825972:2026-09-29T10:07:13Z:clawsweeper_needs_human",
-      "comment_id": "5883825972",
-      "comment_version_key": "5883825972:2026-09-29T10:07:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160960#issuecomment-5883825972",
-      "comment_created_at": "2026-09-29T04:46:58Z",
-      "comment_updated_at": "2026-09-29T10:07:13Z",
-      "comment_body_sha256": "47e3aa1c0a36b557eeef11904c69d75b2f4846fbe4b03b728007a736acba807a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160960,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Gateway approval route reaches the config writer, and a real-file test shows rejection at...; Review finding: [P1] Restore the fallback for ordinary config writes — src/infra/replace-file.ts:31 - [P1] Guard each backup mutation after run closure — src/config/io.write.ts:45... (sha=504051ec2a067c02bf6a0047d4fd40bbe1aa850c)",
-      "expected_head_sha": "504051ec2a067c02bf6a0047d4fd40bbe1aa850c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T10:08:39.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.34",
-        "head_sha": "504051ec2a067c02bf6a0047d4fd40bbe1aa850c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160173:5864285481:2026-09-29T10:02:49Z:clawsweeper_auto_repair",
       "comment_id": "5864285481",
@@ -33775,6 +33742,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161213:5891737895:2026-09-29T19:24:13Z:clawsweeper_auto_repair",
+      "comment_id": "5891737895",
+      "comment_version_key": "5891737895:2026-09-29T19:24:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161213#issuecomment-5891737895",
+      "comment_created_at": "2026-09-29T13:54:51Z",
+      "comment_updated_at": "2026-09-29T19:24:13Z",
+      "comment_body_sha256": "6dad2f92c4647ac69a9641037dae153b103dabc078858e2f7b68e5859728284f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c4b6567bfba649c177be0608720ff5f2434ce5c3)",
+      "expected_head_sha": "c4b6567bfba649c177be0608720ff5f2434ce5c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T19:25:10.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d100-1790683980",
+        "head_sha": "c4b6567bfba649c177be0608720ff5f2434ce5c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
