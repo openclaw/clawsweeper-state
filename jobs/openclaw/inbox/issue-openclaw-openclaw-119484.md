@@ -67,20 +67,25 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Windows batch-script writing defect reported at https://github.com/openclaw/openclaw/issues/119484. Use https://github.com/openclaw/openclaw/pull/119540 as historical context, not an open landing target. Reproduce or establish a failing regression first. Ensure newly generated .cmd/.bat content from agent patch creation and session write persists with CRLF on Windows, including repeated writes; keep prechecks, receipts, and readback verification aligned with persisted bytes. Preserve non-batch content and established edits of existing files. Current src/infra/windows-task-restart.ts already emits CRLF, so avoid duplicating that repair. Add focused regression coverage and obtain native Windows CMD execution and persisted-byte proof. Do not add a config option, broaden the change into a file-format policy, or edit release-owned CHANGELOG.md; put release-note context in the PR body.
+Repair the existing Windows batch-file newline invariant in one focused PR. Ensure agent write, edit, and apply-patch paths write or mutate `.cmd`/`.bat` files with CRLF while retaining current line-ending behavior for all other file types; cover Add File and an edit of an existing LF-only batch file. Also make `src/cli/update-cli/restart-helper.ts` produce CRLF and use the existing Windows launcher encoder for its generated restart `.cmd`. Reuse the shared line-ending helpers where practical; do not add config, broaden generic text normalization, or change the managed gateway script behavior already covered by `src/daemon/schtasks-install.ts`. Add raw-byte regression tests and Windows CMD behavior proof. Capture user-visible release-note context in the PR body, but do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/agents/apply-patch-file-ops.ts
+- src/agents/line-endings.ts
 - src/agents/sessions/tools/write.ts
-- src/agents/apply-patch-update.test.ts
+- src/agents/sessions/tools/edit.ts
+- src/agents/apply-patch.ts
+- src/agents/apply-patch-file-ops.ts
+- src/cli/update-cli/restart-helper.ts
 - src/agents/sessions/tools/write.test.ts
+- src/agents/sessions/tools/edit.test.ts
+- src/agents/apply-patch.test.ts
+- src/cli/update-cli/restart-helper.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/apply-patch-update.test.ts src/agents/sessions/tools/write.test.ts
-- node scripts/check-changed.mjs -- src/agents/apply-patch-file-ops.ts src/agents/sessions/tools/write.ts
-- git diff --check
+- node scripts/run-vitest.mjs src/agents/sessions/tools/write.test.ts src/agents/sessions/tools/edit.test.ts src/agents/apply-patch.test.ts src/cli/update-cli/restart-helper.test.ts
+- On a Windows Crabbox/Testbox, inspect generated `.cmd` bytes for no lone LF and execute a nested-block script through cmd.exe.
 
 ## Operator Prompt
 
