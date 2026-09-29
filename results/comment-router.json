@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:44:28.094Z",
+  "updated_at": "2026-09-29T11:45:02.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160858:5881792291:2026-09-29T04:51:33Z:clawsweeper_needs_human",
-      "comment_id": "5881792291",
-      "comment_version_key": "5881792291:2026-09-29T04:51:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160858#issuecomment-5881792291",
-      "comment_created_at": "2026-09-29T01:18:45Z",
-      "comment_updated_at": "2026-09-29T04:51:33Z",
-      "comment_body_sha256": "76a43cea01d5adfb50adecc775116755a64b1f66223b85e112e351ee4aa77a38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=9aabc0b325bb9cf44d3167c5906b773668c6c937)",
-      "expected_head_sha": "9aabc0b325bb9cf44d3167c5906b773668c6c937",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:53:09.450Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cron-lifecycle-worker-20260928",
-        "head_sha": "9aabc0b325bb9cf44d3167c5906b773668c6c937",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160967:5883888040:2026-09-29T04:53:26Z:clawsweeper_needs_human",
       "comment_id": "5883888040",
@@ -33398,6 +33365,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153924:5889575083:2026-09-29T11:44:10Z:re_review",
+      "comment_id": "5889575083",
+      "comment_version_key": "5889575083:2026-09-29T11:44:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153924#issuecomment-5889575083",
+      "comment_created_at": "2026-09-29T11:44:10Z",
+      "comment_updated_at": "2026-09-29T11:44:10Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153924,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T11:45:01.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-docs-mdx-annotated-frontmatter-20260921",
+        "head_sha": "f74ade9824ff2c304355fc257d0c2d3e8e71d137",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
