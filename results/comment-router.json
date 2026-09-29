@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T12:44:34.060Z",
+  "updated_at": "2026-09-29T12:45:27.514Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160699:5878294993:2026-09-29T05:33:28Z:clawsweeper_needs_human",
-      "comment_id": "5878294993",
-      "comment_version_key": "5878294993:2026-09-29T05:33:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160699#issuecomment-5878294993",
-      "comment_created_at": "2026-09-28T20:51:30Z",
-      "comment_updated_at": "2026-09-29T05:33:28Z",
-      "comment_body_sha256": "93628f77550627a50ebb132a57ecdd337ac47a6bfa8c743732237668ef1fc346",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160699,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing live and queued club or group-DM chat turns will stop reaching agents; Tlon ownership has not accepted that delivery cutoff. (sha=83c28b6efdd1bac5659465787366e8bf60feba1a)",
-      "expected_head_sha": "83c28b6efdd1bac5659465787366e8bf60feba1a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T05:39:14.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1071",
-        "head_sha": "83c28b6efdd1bac5659465787366e8bf60feba1a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160858:5881792291:2026-09-29T05:24:22Z:clawsweeper_needs_human",
       "comment_id": "5881792291",
@@ -33515,6 +33482,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161179:5890564026:2026-09-29T12:44:32Z:re_review",
+      "comment_id": "5890564026",
+      "comment_version_key": "5890564026:2026-09-29T12:44:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161179#issuecomment-5890564026",
+      "comment_created_at": "2026-09-29T12:44:32Z",
+      "comment_updated_at": "2026-09-29T12:44:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161179,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T12:45:26.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161176-memory-tier-docs-v2",
+        "head_sha": "a01e55b33256ecf418792f6ff7c0600d5842755c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
