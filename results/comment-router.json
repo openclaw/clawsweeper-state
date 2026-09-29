@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T20:56:50.534Z",
+  "updated_at": "2026-09-29T20:58:50.906Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161154:5890130891:2026-09-29T12:17:06Z:re_review",
-      "comment_id": "5890130891",
-      "comment_version_key": "5890130891:2026-09-29T12:17:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161154#issuecomment-5890130891",
-      "comment_created_at": "2026-09-29T12:17:06Z",
-      "comment_updated_at": "2026-09-29T12:17:06Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161154,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:18:13.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/yield-warning-noise",
-        "head_sha": "3ad7a7e6c08cd10889b27da25ff956e65a515df7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151218:5722368758:2026-09-29T12:17:21Z:clawsweeper_needs_human",
       "comment_id": "5722368758",
@@ -33468,6 +33421,39 @@
         "kind": "pull_request",
         "branch": "paulcam206-gateway-source-2026-9-5",
         "head_sha": "86610aeef3ebcf26391570c8f6202fa685034759",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161339:5896598595:2026-09-29T20:57:52Z:clawsweeper_needs_human",
+      "comment_id": "5896598595",
+      "comment_version_key": "5896598595:2026-09-29T20:57:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161339#issuecomment-5896598595",
+      "comment_created_at": "2026-09-29T18:53:29Z",
+      "comment_updated_at": "2026-09-29T20:57:52Z",
+      "comment_body_sha256": "5421954d0c72e690f02968fceef65c1de526f865bb282ab9fc20eba869828d27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The production owner changes WebSocket credential ownership and shared-client reuse, but the supplied tests moc...; Review finding: [P1] Fence a reused client when the host account changes — extensions/codex/src/app-server/shared-client.ts:724-725 - [high] Reused client can outlive its host-acc... (sha=e5dc600ec6b7fe69b6134b82ba662d2a9f3e9d9d)",
+      "expected_head_sha": "e5dc600ec6b7fe69b6134b82ba662d2a9f3e9d9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T20:58:50.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-1-codex-host-owned-auth",
+        "head_sha": "efe94afea41c9af9ee9bad0775840cc0303a6af9",
         "cluster_id": null,
         "job_path": null
       }
