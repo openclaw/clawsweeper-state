@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/photoscrawl",
+  "cluster_id": "issue-openclaw-photoscrawl-56",
+  "mode": "autonomous",
+  "run_id": "36598340844",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36598340844",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-photoscrawl-56.md",
+  "published_at": "2026-09-29T16:37:00.057Z",
+  "canonical": "https://github.com/openclaw/photoscrawl/issues/56",
+  "canonical_issue": "https://github.com/openclaw/photoscrawl/issues/56",
+  "canonical_pr": null,
+  "summary": "Issue #56 is reproducible from the current main query: SQLite album lookup requires Z_33ASSETS, which the reported generation 34 library lacks. A narrow fix is warranted, but this worker's read-only filesystem prevents implementation and validation.",
+  "actions": [
+    {
+      "target": "#56",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#56",
+      "candidate_fix": null,
+      "reason": "The reported schema change makes the existing album query fail before the SQLite fallback can return assets."
+    },
+    {
+      "target": "cluster:issue-openclaw-photoscrawl-56",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#56",
+      "candidate_fix": null,
+      "reason": "An implementation worker with write access must apply and validate the narrow patch before opening the fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
