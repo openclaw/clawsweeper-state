@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1546"
 mode: "autonomous"
-run_id: "36629056422"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36629056422"
+run_id: "36639931230"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36639931230"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T22:14:17.304Z"
-canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
-canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T22:32:43.957Z"
+canonical: "#1546"
+canonical_issue: "#1546"
 canonical_pr: null
 actions_total: 4
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36629056422](https://github.com/openclaw/clawsweeper/actions/runs/36629056422)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36639931230](https://github.com/openclaw/clawsweeper/actions/runs/36639931230)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1546
+Canonical: #1546
 
 ## Summary
 
-Issue #1546 remains reproducible from the supplied screenshots and consistent with main at 24263d3. A narrow Setup window fix is planned, but this Linux checkout is read-only. No code was changed, validation was run, or PR was opened.
+Issue #1546 remains viable on the supplied main revision. The Setup window sets an initial DPI scaled size but has no resize minimum. This is a plan only: no files were changed, validation was run, or PR was created.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Issue #1546 remains reproducible from the supplied screenshots and consistent wi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1546 | fix_needed | planned | canonical | The Setup window defect has a narrow owner and no active implementation PR in the preflight inventory. |
-| #1145 | keep_independent | planned | independent | It needs separate chat reproduction and repair. |
-| #1292 | keep_related | planned | related | The reports share a display-layout theme but require different fixes. |
-| cluster:issue-openclaw-openclaw-windows-node-1546 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and a Windows validation host. |
+| #1546 | fix_needed | planned | canonical | Implement and validate the Setup window resize constraint. |
+| #1145 | keep_independent | planned | independent | It needs its own current-main chat reproduction. |
+| #1292 | keep_related | planned | related | It shares a layout theme but has distinct affected surfaces and remaining work. |
+| #293 | keep_closed | skipped | related | Historical context only. |
 
 ## Needs Human
 
