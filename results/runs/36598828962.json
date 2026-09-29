@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161278",
+  "mode": "autonomous",
+  "run_id": "36598828962",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36598828962",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161278.md",
+  "published_at": "2026-09-29T17:18:33.131Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161278",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161278",
+  "canonical_pr": null,
+  "summary": "At main 1d0efa48, source inspection confirms that isolated cron emits message completion without the trace scope or dispatch-start event needed to parent the harness span. The checkout is read-only and has no installed dependencies, so I could not add the required failing cron-to-OTLP regression, implement the fix, or validate a PR branch.",
+  "actions": [
+    {
+      "target": "#161278",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161278",
+      "candidate_fix": null,
+      "reason": "A narrow fix is warranted, pending a failing entry-point regression and implementation."
+    },
+    {
+      "target": "#91927",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "This separate telemetry privacy decision belongs with central OpenClaw security handling."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161278",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161278",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout and dependencies to establish the failing regression, patch, and validate the branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161278",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161278",
+      "candidate_fix": null,
+      "reason": "The read-only checkout prevents preparing a validated implementation branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
