@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T09:13:29.954Z",
+  "updated_at": "2026-09-29T09:13:35.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160873:5882066687:2026-09-29T03:37:19Z:clawsweeper_needs_human",
-      "comment_id": "5882066687",
-      "comment_version_key": "5882066687:2026-09-29T03:37:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160873#issuecomment-5882066687",
-      "comment_created_at": "2026-09-29T01:46:17Z",
-      "comment_updated_at": "2026-09-29T03:37:19Z",
-      "comment_body_sha256": "650d3260e17f7e1398c927307a27e76f5ffee6e3581b1529b8ee0789f43327f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160873,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The Discord listener can send collected message text to the title model and PATCH a thread; the PR shows mocked...; Review finding: [P1] Apply Discord access policy before generating a thread title — extensions/discord/src/monitor/thread-auto-name.ts:170-175 - [P2] Expire or retire durable thre... (sha=7a380413a6cd6ef92b67d7250c640ed014cb02bf)",
-      "expected_head_sha": "7a380413a6cd6ef92b67d7250c640ed014cb02bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T03:38:08.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-thread-auto-name",
-        "head_sha": "7a380413a6cd6ef92b67d7250c640ed014cb02bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160869:5883154749:2026-09-29T03:38:04Z:re_review",
       "comment_id": "5883154749",
@@ -33198,6 +33165,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128848:5887208095:2026-09-29T09:12:32Z:re_review",
+      "comment_id": "5887208095",
+      "comment_version_key": "5887208095:2026-09-29T09:12:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128848#issuecomment-5887208095",
+      "comment_created_at": "2026-09-29T09:12:32Z",
+      "comment_updated_at": "2026-09-29T09:12:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128848,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T09:13:33.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-responses-continuation-idle-ttl",
+        "head_sha": "fd976aa960ba2c1ea2361bd10a3028d4590c2b1a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
