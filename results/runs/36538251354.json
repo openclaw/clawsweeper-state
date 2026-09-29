@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161028",
+  "mode": "plan",
+  "run_id": "36538251354",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36538251354",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161028.md",
+  "published_at": "2026-09-29T07:46:12.694Z",
+  "canonical": "#161028",
+  "canonical_issue": "#161028",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the adopted Claude session cwd bug. The preflight reports current main at ff0c8f0e, but the available checkout is at 8a04eb61. A failing Gateway turn regression on current main is required before implementation; no code was changed.",
+  "actions": [
+    {
+      "target": "#161028",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161028",
+      "candidate_fix": null,
+      "reason": "The issue describes a bounded bug, but the required current-main regression has not been run."
+    },
+    {
+      "target": "#145636",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161028",
+      "candidate_fix": null,
+      "reason": "The reports concern different failure points and need separate validation."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

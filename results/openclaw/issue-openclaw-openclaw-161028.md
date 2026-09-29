@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161028"
-mode: "autonomous"
-run_id: "36533073104"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36533073104"
+mode: "plan"
+run_id: "36538251354"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36538251354"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T07:38:07.233Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161028"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161028"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T07:46:12.694Z"
+canonical: "#161028"
+canonical_issue: "#161028"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36533073104](https://github.com/openclaw/clawsweeper/actions/runs/36533073104)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36538251354](https://github.com/openclaw/clawsweeper/actions/runs/36538251354)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161028
+Canonical: #161028
 
 ## Summary
 
-Current main (db92b6a688657380157a022548835706e4d8fe38) still stores a paired node’s cwd as a Gateway workspace override. The reported failure is consistent with that path, but this read-only checkout prevented a failing Gateway-turn regression, code changes, and validation. No PR was opened.
+Plan a narrow fix for the adopted Claude session cwd bug. The preflight reports current main at ff0c8f0e, but the available checkout is at 8a04eb61. A failing Gateway turn regression on current main is required before implementation; no code was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main (db92b6a688657380157a022548835706e4d8fe38) still stores a paired no
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161028 | fix_needed | planned | canonical | The issue reports the Gateway-local mkdir failure, and current source supports its cause. The required failing Gateway-turn regression could not run in this read-only checkout. |
-| #145636 | keep_related | planned | related | Keep this separate request-context report open. |
-| cluster:issue-openclaw-openclaw-161028 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and a failing adopted-session Gateway-turn regression before editing; neither is available in this worker. |
+| #161028 | build_fix_artifact | planned | canonical | The issue describes a bounded bug, but the required current-main regression has not been run. |
+| #145636 | keep_related | planned | related | The reports concern different failure points and need separate validation. |
 
 ## Needs Human
 
