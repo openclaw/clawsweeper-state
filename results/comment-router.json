@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T20:55:32.191Z",
+  "updated_at": "2026-09-29T20:55:35.484Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161164:5890038367:2026-09-29T12:11:58Z:re_review",
-      "comment_id": "5890038367",
-      "comment_version_key": "5890038367:2026-09-29T12:11:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161164#issuecomment-5890038367",
-      "comment_created_at": "2026-09-29T12:11:58Z",
-      "comment_updated_at": "2026-09-29T12:11:58Z",
-      "comment_body_sha256": "6f9ccae03b8d3021d36fb28ebdc93bc5f54e58175ef91426223612a29b116877",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161164,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — fixed the ci lint findings: no shadowed options/environment names, no promise-executor returns, and credential capture now uses the existing explicit pending-credentials barrier instead of an async sdk send overload mock. all seven credential tests pass; production behavior is unchanged from the reviewed repair",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:13:00.857Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-161152-bedrock-embedding-credentials",
-        "head_sha": "622c12d52f9bfe033e7e8371a599d88043b640fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160996:5890034842:2026-09-29T12:11:47Z:re_review",
       "comment_id": "5890034842",
@@ -33530,6 +33483,39 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161372:5898330185:2026-09-29T20:54:06Z:clawsweeper_needs_human",
+      "comment_id": "5898330185",
+      "comment_version_key": "5898330185:2026-09-29T20:54:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161372#issuecomment-5898330185",
+      "comment_created_at": "2026-09-29T20:35:29Z",
+      "comment_updated_at": "2026-09-29T20:54:06Z",
+      "comment_body_sha256": "91355fc1d67b1ddea0b82591b18b8f3d8fb487830f4f3960539cce2fd2475794",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161372,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The combined Node timing does not establish the one-worker cost of each materially changed test file, so compliance with the repository's per-file test budget remains unverified. (sha=f50d9c3003d1aa1fb3a794a0a7edf787bd920747)",
+      "expected_head_sha": "f50d9c3003d1aa1fb3a794a0a7edf787bd920747",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T20:55:35.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/staging-parent-refusal-20260929",
+        "head_sha": "f50d9c3003d1aa1fb3a794a0a7edf787bd920747",
         "cluster_id": null,
         "job_path": null
       }
