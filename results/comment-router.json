@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T10:59:27.103Z",
+  "updated_at": "2026-09-29T11:00:30.461Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1538:5883424751:2026-09-29T04:04:50Z:re_review",
-      "comment_id": "5883424751",
-      "comment_version_key": "5883424751:2026-09-29T04:04:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1538#issuecomment-5883424751",
-      "comment_created_at": "2026-09-29T04:04:50Z",
-      "comment_updated_at": "2026-09-29T04:04:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1538,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T04:11:33.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-change-model-scoped",
-        "head_sha": "807b9724345847caf62d1b537ec734e18e8de6c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1538:5881143722:2026-09-29T04:10:27Z:clawsweeper_needs_human",
       "comment_id": "5881143722",
@@ -33549,6 +33502,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-selector-token-classification",
         "head_sha": "8350ba5d85feeaae6e04005b542da29f6ed1c8bc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161146:5888858922:2026-09-29T10:59:34Z:clawsweeper_needs_human",
+      "comment_id": "5888858922",
+      "comment_version_key": "5888858922:2026-09-29T10:59:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161146#issuecomment-5888858922",
+      "comment_created_at": "2026-09-29T10:59:34Z",
+      "comment_updated_at": "2026-09-29T10:59:34Z",
+      "comment_body_sha256": "299155a963770cba6e01c4e8519595c2efa8764acf1871123a71591fba5f94f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner passes a stable workspace to CLI or embedded planner turns, but the branch supplies only mocked runner-argument as...; Review finding: [P1] Keep workspace instructions out of setup planner turns — src/system-agent/assistant.ts:162 - [medium] Normal-agent workspace instructions reach the setup plan... (sha=30772b67ee6ceb87e297b87d694d5b240d85c35c)",
+      "expected_head_sha": "30772b67ee6ceb87e297b87d694d5b240d85c35c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T11:00:30.461Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160777-stable-system-agent-workspace",
+        "head_sha": "30772b67ee6ceb87e297b87d694d5b240d85c35c",
         "cluster_id": null,
         "job_path": null
       }
