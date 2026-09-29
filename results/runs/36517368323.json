@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-297",
+  "mode": "autonomous",
+  "run_id": "36517368323",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36517368323",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-297.md",
+  "published_at": "2026-09-29T03:33:08.317Z",
+  "canonical": "https://github.com/openclaw/agent-skills/issues/297",
+  "canonical_issue": "https://github.com/openclaw/agent-skills/issues/297",
+  "canonical_pr": null,
+  "summary": "Issue #297 reproduces on checked-out main d5cbe626989195044e97545b3acb7c99b06a6103. A narrow fix is viable, but this read-only workspace prevented edits and local test validation; GitHub was unreachable, so no branch or PR was created.",
+  "actions": [
+    {
+      "target": "#297",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#297",
+      "candidate_fix": null,
+      "reason": "The validator rejects the absolute path before changed-file scope validation, aborting the report."
+    },
+    {
+      "target": "cluster:issue-openclaw-agent-skills-297",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#297",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by read-only filesystem access; PR creation is also blocked by unavailable GitHub connectivity."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
