@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:46:44.041Z",
+  "updated_at": "2026-09-29T11:47:24.607Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159670:5856352687:2026-09-29T04:57:10Z:clawsweeper_needs_human",
-      "comment_id": "5856352687",
-      "comment_version_key": "5856352687:2026-09-29T04:57:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159670#issuecomment-5856352687",
-      "comment_created_at": "2026-09-27T13:39:11Z",
-      "comment_updated_at": "2026-09-29T04:57:10Z",
-      "comment_body_sha256": "f9f050398c17666a5d01a3a87a58d3b265108639f46d794bb1bd0a00ac874752",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The captured isolated patched-Gateway restart shows all 11 Claude CLI rows retaining auth after a part...; Review finding: [medium] Verify removed credentials cannot reach provider I/O — src/agents/prepared-model-runtime.catalog-access.ts:478 (sha=ffd59495f5ed715edafabcacd0509f3b6fbeefa1)",
-      "expected_head_sha": "ffd59495f5ed715edafabcacd0509f3b6fbeefa1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:58:52.875Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-availability-partial-refresh-158922",
-        "head_sha": "ffd59495f5ed715edafabcacd0509f3b6fbeefa1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160465:5870589016:2026-09-29T04:56:50Z:clawsweeper_needs_human",
       "comment_id": "5870589016",
@@ -33406,6 +33373,53 @@
       "status": "skipped",
       "processed_at": "2026-09-29T11:46:44.041Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/wacli:445:5889612951:2026-09-29T11:46:27Z:re_review",
+      "comment_id": "5889612951",
+      "comment_version_key": "5889612951:2026-09-29T11:46:27Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/445#issuecomment-5889612951",
+      "comment_created_at": "2026-09-29T11:46:27Z",
+      "comment_updated_at": "2026-09-29T11:46:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/wacli",
+      "issue_number": 445,
+      "author": "zarmat99",
+      "author_id": 145858964,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T11:47:22.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-sync-background",
+        "head_sha": "01d749bd538e2b376f4a4498fa282b69152081f2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
