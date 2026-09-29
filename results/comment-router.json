@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:09:21.686Z",
+  "updated_at": "2026-09-29T02:09:32.624Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159947:5878625136:2026-09-28T21:08:52Z:re_review",
-      "comment_id": "5878625136",
-      "comment_version_key": "5878625136:2026-09-28T21:08:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5878625136",
-      "comment_created_at": "2026-09-28T21:08:52Z",
-      "comment_updated_at": "2026-09-28T21:08:52Z",
-      "comment_body_sha256": "b475076fe16768ecc386f93e59a79327a5e70d0201253367124b29db4271ec3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159947,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T21:09:52.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/control-ui-voice-lab",
-        "head_sha": "c2dc5b647e3266ef3231fdebf2802dc8fb060775",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:868:5878628607:2026-09-28T21:09:02Z:re_review",
       "comment_id": "5878628607",
@@ -33743,6 +33696,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151648:5727874804:2026-09-29T02:08:31Z:clawsweeper_needs_human",
+      "comment_id": "5727874804",
+      "comment_version_key": "5727874804:2026-09-29T02:08:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151648#issuecomment-5727874804",
+      "comment_created_at": "2026-09-18T09:14:00Z",
+      "comment_updated_at": "2026-09-29T02:08:31Z",
+      "comment_body_sha256": "0d15a38c2c0c2f474d5cc02dc1bb8365d0940ce5baba7424a282b0272a29c3a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The contributor reports a real application admission and embedded-turn run against an isolated HTTP pr...; Review finding: [medium] Prove revoked fallback authority is denied before a write — src/system-agent/setup-inference-turn.ts:535 (sha=c4e4a14404e44cf0990f3cb31eeadce3998cc67e)",
+      "expected_head_sha": "c4e4a14404e44cf0990f3cb31eeadce3998cc67e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:09:32.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-expert-configured-model-fallback-20260918",
+        "head_sha": "c4e4a14404e44cf0990f3cb31eeadce3998cc67e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
