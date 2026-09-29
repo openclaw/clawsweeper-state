@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T09:03:38.590Z",
+  "updated_at": "2026-09-29T09:04:11.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160675:5883110824:2026-09-29T03:33:50Z:re_review",
-      "comment_id": "5883110824",
-      "comment_version_key": "5883110824:2026-09-29T03:33:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160675#issuecomment-5883110824",
-      "comment_created_at": "2026-09-29T03:33:50Z",
-      "comment_updated_at": "2026-09-29T03:33:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160675,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T03:34:50.225Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-telegram-topic-completion-routing",
-        "head_sha": "f6281a5e1c954d7f07f7ea442f13d4651e1357b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1232:5419453107:2026-09-29T03:31:04Z:clawsweeper_auto_repair",
       "comment_id": "5419453107",
@@ -33239,6 +33192,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161098:5887066179:2026-09-29T09:03:19Z:clawsweeper_needs_human",
+      "comment_id": "5887066179",
+      "comment_version_key": "5887066179:2026-09-29T09:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161098#issuecomment-5887066179",
+      "comment_created_at": "2026-09-29T09:03:19Z",
+      "comment_updated_at": "2026-09-29T09:03:19Z",
+      "comment_body_sha256": "73cfd72895998344184b2e2360999cd6a576eb48378009593eabaf7299ff299d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The author reports before-fix failure and after-fix passing tests that load a temporary plugin and append through a guarded in-memory SessionMa... (sha=77406a9bfde79508687f21d337cd2579515e83af)",
+      "expected_head_sha": "77406a9bfde79508687f21d337cd2579515e83af",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T09:04:11.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160641-hook-message-contract",
+        "head_sha": "77406a9bfde79508687f21d337cd2579515e83af",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
