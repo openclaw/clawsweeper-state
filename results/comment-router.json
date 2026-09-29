@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:20:30.385Z",
+  "updated_at": "2026-09-29T08:21:25.617Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160465:5870589016:2026-09-29T02:58:55Z:clawsweeper_needs_human",
-      "comment_id": "5870589016",
-      "comment_version_key": "5870589016:2026-09-29T02:58:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160465#issuecomment-5870589016",
-      "comment_created_at": "2026-09-28T13:14:04Z",
-      "comment_updated_at": "2026-09-29T02:58:55Z",
-      "comment_body_sha256": "6340d54d787e9b2fb78df5fc3096472cce45b7a27b025579a632b14811d2fde6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new same-version SQLite certificate has source-tree existing-state tests, but no recorded shipped v2026.9.6 updater-to-candidate and rollback result. The PR body attributes deferr... (sha=86d3f207cc4e79da80adcf35b1296d137da4dd82)",
-      "expected_head_sha": "86d3f207cc4e79da80adcf35b1296d137da4dd82",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T03:02:47.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openshell-worker-process-ownership-repair",
-        "head_sha": "86d3f207cc4e79da80adcf35b1296d137da4dd82",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160649:5876182867:2026-09-29T02:58:13Z:clawsweeper_needs_human",
       "comment_id": "5876182867",
@@ -33110,6 +33077,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160956:5886421462:2026-09-29T08:20:06Z:re_review",
+      "comment_id": "5886421462",
+      "comment_version_key": "5886421462:2026-09-29T08:20:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160956#issuecomment-5886421462",
+      "comment_created_at": "2026-09-29T08:20:06Z",
+      "comment_updated_at": "2026-09-29T08:20:06Z",
+      "comment_body_sha256": "4f174e5f86bb33fe8c07fc11d7482459339cb07d764ef7f1d25b41b387c51043",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160956,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T08:21:22.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-attribution-categories",
+        "head_sha": "53a26ec6e646c41853668a42ada9e20814dfc315",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
