@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:43:05.533Z",
+  "updated_at": "2026-09-29T08:43:17.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160888:5882895930:2026-09-29T03:10:41Z:re_review",
-      "comment_id": "5882895930",
-      "comment_version_key": "5882895930:2026-09-29T03:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160888#issuecomment-5882895930",
-      "comment_created_at": "2026-09-29T03:10:41Z",
-      "comment_updated_at": "2026-09-29T03:10:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160888,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T03:11:32.588Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/redact-prose-pass",
-        "head_sha": "08d64d3b5ec802237eff61e10e0f1a3aeb8761b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160700:5878204118:2026-09-29T03:11:25Z:clawsweeper_needs_human",
       "comment_id": "5878204118",
@@ -33323,6 +33276,39 @@
         "kind": "pull_request",
         "branch": "codex/doctor-cron-owner",
         "head_sha": "a4d03a6ba039c4625cff1986eb2b1e1d725b3a81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161006:5884647900:2026-09-29T08:42:25Z:clawsweeper_needs_human",
+      "comment_id": "5884647900",
+      "comment_version_key": "5884647900:2026-09-29T08:42:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161006#issuecomment-5884647900",
+      "comment_created_at": "2026-09-29T06:04:49Z",
+      "comment_updated_at": "2026-09-29T08:42:25Z",
+      "comment_body_sha256": "8d4fbb98cbd33d89b0d35263b818bafe7a42296b37504c0899b5a4f44252390d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161006,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users with an explicit heartbeat channel will stop receiving completion notifications there for eligible internal sessions; a failed session publication retains the event for... (sha=83bcbd3a24de144982281b788c4db42129ede808)",
+      "expected_head_sha": "83bcbd3a24de144982281b788c4db42129ede808",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T08:43:17.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-webchat-route",
+        "head_sha": "83bcbd3a24de144982281b788c4db42129ede808",
         "cluster_id": null,
         "job_path": null
       }
