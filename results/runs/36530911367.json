@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161017",
+  "mode": "autonomous",
+  "run_id": "36530911367",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36530911367",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161017.md",
+  "published_at": "2026-09-29T07:42:47.337Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161017",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161017",
+  "canonical_pr": null,
+  "summary": "The checked-out channel reset path omits category while preserving pinnedAt, but the checkout is behind the preflight main SHA. The exact main revision is unavailable locally, network access failed, and the filesystem is read-only. No regression test, code change, or validation was run.",
+  "actions": [
+    {
+      "target": "#161017",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161017",
+      "candidate_fix": null,
+      "reason": "Verify the defect and a failing regression on the preflight main revision before implementing."
+    },
+    {
+      "target": "#150054",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its parent-link behavior needs separate work."
+    },
+    {
+      "target": "#123520",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161017",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161017",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout of the preflight main revision and a failing production-initializer regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
