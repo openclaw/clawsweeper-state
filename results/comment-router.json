@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:23:51.976Z",
+  "updated_at": "2026-09-29T08:23:59.257Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160671:5877016023:2026-09-29T03:02:09Z:clawsweeper_auto_repair",
-      "comment_id": "5877016023",
-      "comment_version_key": "5877016023:2026-09-29T03:02:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160671#issuecomment-5877016023",
-      "comment_created_at": "2026-09-28T19:31:51Z",
-      "comment_updated_at": "2026-09-29T03:02:09Z",
-      "comment_body_sha256": "f2fe2689bb2bfdac682799732ecc757c51b96e34b0bc75ce39470a89b7f05f12",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160671,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7ab07aabd20297314e65e6092259fa4f77c9ba84)",
-      "expected_head_sha": "7ab07aabd20297314e65e6092259fa4f77c9ba84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T03:03:01.966Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/upd-activation-doctor-authority",
-        "head_sha": "7ab07aabd20297314e65e6092259fa4f77c9ba84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160718:5878959873:2026-09-29T03:03:27Z:clawsweeper_needs_human",
       "comment_id": "5878959873",
@@ -33124,6 +33091,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161046:5886460212:2026-09-29T08:22:45Z:re_review",
+      "comment_id": "5886460212",
+      "comment_version_key": "5886460212:2026-09-29T08:22:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161046#issuecomment-5886460212",
+      "comment_created_at": "2026-09-29T08:22:45Z",
+      "comment_updated_at": "2026-09-29T08:22:45Z",
+      "comment_body_sha256": "7f2e623b4d230a06b5961e9b91b5566889dd3f25c7a012c49c776b58960eb0ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161046,
+      "author": "creanet-64",
+      "author_id": 133354112,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T08:23:57.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preflight-steering-20260929",
+        "head_sha": "303ba6bedc8622068c8ce6c5c497213623f3e617",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
