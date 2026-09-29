@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:37:32.405Z",
+  "updated_at": "2026-09-29T03:37:43.073Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140012:5558508784:2026-09-28T23:02:48Z:clawsweeper_needs_human",
-      "comment_id": "5558508784",
-      "comment_version_key": "5558508784:2026-09-28T23:02:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140012#issuecomment-5558508784",
-      "comment_created_at": "2026-09-06T10:05:28Z",
-      "comment_updated_at": "2026-09-28T23:02:48Z",
-      "comment_body_sha256": "0031462316daa4356c52cd624e807c03b71bbdb0119cac78d5a28601a2909b21",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140012,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The live main ruleset requires code-owner review for this restricted security-audit path, but no submitted review is visible yet. (sha=1fa08a1bf022792f20e9ff4f3eb959074d603087)",
-      "expected_head_sha": "1fa08a1bf022792f20e9ff4f3eb959074d603087",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T23:07:05.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/139751-gpt6-generation-tier",
-        "head_sha": "1fa08a1bf022792f20e9ff4f3eb959074d603087",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159601:5855280295:2026-09-28T22:59:22Z:clawsweeper_needs_human",
       "comment_id": "5855280295",
@@ -32863,6 +32830,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/agent-skills:298:5883138052:2026-09-29T03:36:38Z:re_review",
+      "comment_id": "5883138052",
+      "comment_version_key": "5883138052:2026-09-29T03:36:38Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/298#issuecomment-5883138052",
+      "comment_created_at": "2026-09-29T03:36:38Z",
+      "comment_updated_at": "2026-09-29T03:36:38Z",
+      "comment_body_sha256": "b4e51005a255839074ac26667b3d7fe31cdbe9e3c4921cbb26b0ed23fbd78c25",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 298,
+      "author": "kennykankush",
+      "author_id": 155627682,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T03:37:41.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoreview-absolute-finding-path",
+        "head_sha": "6e45f4abb24dfaa24af3e93a61398d575b251459",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
