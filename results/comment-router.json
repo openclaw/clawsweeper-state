@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T20:48:32.986Z",
+  "updated_at": "2026-09-29T20:48:42.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159847:5859059057:2026-09-29T12:05:53Z:clawsweeper_needs_human",
-      "comment_id": "5859059057",
-      "comment_version_key": "5859059057:2026-09-29T12:05:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159847#issuecomment-5859059057",
-      "comment_created_at": "2026-09-27T19:26:07Z",
-      "comment_updated_at": "2026-09-29T12:05:53Z",
-      "comment_body_sha256": "df98fe20a8659e3ca5ab7a999d6545314eb30ae405a6e8899af876142ff5acfe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native or dynamically loaded bundled-plugin consumers may still require a removed runtime-barrel export; final-head directory, cold-import, build, and API checks have not completed. (sha=08cc031399f9e0384389587c05c0a997bece2431)",
-      "expected_head_sha": "08cc031399f9e0384389587c05c0a997bece2431",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T12:12:14.155Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l99-dead-exports",
-        "head_sha": "08cc031399f9e0384389587c05c0a997bece2431",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160173:5864285481:2026-09-29T12:11:41Z:clawsweeper_auto_repair",
       "comment_id": "5864285481",
@@ -33516,6 +33483,53 @@
         "kind": "pull_request",
         "branch": "fix/msteams-progress-informative-lines",
         "head_sha": "d7a51c56ba7de177f1e81f3330479a580c21ec7a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157682:5898559624:2026-09-29T20:47:39Z:re_review",
+      "comment_id": "5898559624",
+      "comment_version_key": "5898559624:2026-09-29T20:47:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157682#issuecomment-5898559624",
+      "comment_created_at": "2026-09-29T20:47:39Z",
+      "comment_updated_at": "2026-09-29T20:47:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157682,
+      "author": "rdbartram",
+      "author_id": 16256546,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T20:48:41.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-approval-card-finalize",
+        "head_sha": "f6f304311cd1aa83f3d66ec72f5491c13cf6539b",
         "cluster_id": null,
         "job_path": null
       },
