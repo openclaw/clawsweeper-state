@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:11:30.455Z",
+  "updated_at": "2026-09-29T23:11:37.176Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123457:5289369670:2026-09-29T14:35:15Z:clawsweeper_needs_human",
-      "comment_id": "5289369670",
-      "comment_version_key": "5289369670:2026-09-29T14:35:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123457#issuecomment-5289369670",
-      "comment_created_at": "2026-08-14T04:12:19Z",
-      "comment_updated_at": "2026-09-29T14:35:15Z",
-      "comment_body_sha256": "9f0570af436cae24652e902445fe0b9d749eb0ec7fe3327f404cc4b3dbae28a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123457,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing a node’s surface approval now makes its previously issued, unexpired scoped URL return 401 immediately. The PR records this compatibility restriction as awaiting security-own... (sha=4e35722191cd4cac6e9805e6facac2e4a4daa81e)",
-      "expected_head_sha": "4e35722191cd4cac6e9805e6facac2e4a4daa81e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T14:36:35.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/plugin-node-capability-approval-current",
-        "head_sha": "4e35722191cd4cac6e9805e6facac2e4a4daa81e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124438:5305949573:2026-09-29T14:23:11Z:clawsweeper_auto_repair",
       "comment_id": "5305949573",
@@ -33172,6 +33139,53 @@
         "kind": "pull_request",
         "branch": "codex/qa-p04-restart-duplicate",
         "head_sha": "d35a91e43c1b467d40433939200e16ae1a489525",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151367:5900824053:2026-09-29T23:10:46Z:re_review",
+      "comment_id": "5900824053",
+      "comment_version_key": "5900824053:2026-09-29T23:10:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151367#issuecomment-5900824053",
+      "comment_created_at": "2026-09-29T23:10:46Z",
+      "comment_updated_at": "2026-09-29T23:10:46Z",
+      "comment_body_sha256": "0489e4082996caa15598d9afde9d18bb74d4b81bef0952254f4424f9acd48412",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151367,
+      "author": "Weiming-Hu",
+      "author_id": 16421338,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T23:11:35.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-spoken-json-multiblock",
+        "head_sha": "8bd4d193b8683c26bcc147fe56526f8b16955f31",
         "cluster_id": null,
         "job_path": null
       },
