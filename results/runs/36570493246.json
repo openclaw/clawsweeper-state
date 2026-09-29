@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161193",
+  "mode": "autonomous",
+  "run_id": "36570493246",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36570493246",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161193.md",
+  "published_at": "2026-09-29T13:25:30.408Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161193",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161193",
+  "canonical_pr": null,
+  "summary": "The checked-out main SHA c374040735c9c4fa6e9dd21efe55b136db782693 still contains the reported reload rejection path. Doctor's source-checkout test establishes that a bundled plugin can be selected while its registry install record is retained. The reload resolver rejects that same-ID record before runtime application. The checkout is read-only and has no node_modules, so I could not add or run the required failing regression, validate a patch, or prepare a PR branch.",
+  "actions": [
+    {
+      "target": "#161193",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "A narrow resolver fix is indicated, but the required failing regression and patch could not be executed in this read-only checkout."
+    },
+    {
+      "target": "#154891",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "Distinct reload failure requiring separate investigation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161193",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161193",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies and a failing lifecycle-boundary regression before a PR can be prepared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
