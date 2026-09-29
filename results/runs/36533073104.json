@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161028",
+  "mode": "autonomous",
+  "run_id": "36533073104",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36533073104",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161028.md",
+  "published_at": "2026-09-29T07:38:07.233Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161028",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161028",
+  "canonical_pr": null,
+  "summary": "Current main (db92b6a688657380157a022548835706e4d8fe38) still stores a paired node’s cwd as a Gateway workspace override. The reported failure is consistent with that path, but this read-only checkout prevented a failing Gateway-turn regression, code changes, and validation. No PR was opened.",
+  "actions": [
+    {
+      "target": "#161028",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161028",
+      "candidate_fix": null,
+      "reason": "The issue reports the Gateway-local mkdir failure, and current source supports its cause. The required failing Gateway-turn regression could not run in this read-only checkout."
+    },
+    {
+      "target": "#145636",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this separate request-context report open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161028",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161028",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and a failing adopted-session Gateway-turn regression before editing; neither is available in this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
