@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:33:25.532Z",
+  "updated_at": "2026-09-29T11:34:30.573Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-09-28T07:56:42Z:clawsweeper_auto_repair",
-      "comment_id": "5209715304",
-      "comment_version_key": "5209715304:2026-09-28T07:56:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209715304",
-      "comment_created_at": "2026-08-06T22:56:08Z",
-      "comment_updated_at": "2026-09-28T07:56:42Z",
-      "comment_body_sha256": "cfb0abcdc8599e36a2f1c721a9d2ed6e2501bc5197d26b822d32aa8aecea4ccb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119983,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=36d8fda796274bea9bef55a88a9b9d1d1ec43e57)",
-      "expected_head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:48:51.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119962",
-        "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-        "cluster_id": "automerge-openclaw-openclaw-119983",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119983.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123906:5299591580:2026-09-29T04:41:42Z:clawsweeper_auto_repair",
       "comment_id": "5299591580",
@@ -33462,6 +33429,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5889405855:2026-09-29T11:33:28Z:re_review",
+      "comment_id": "5889405855",
+      "comment_version_key": "5889405855:2026-09-29T11:33:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5889405855",
+      "comment_created_at": "2026-09-29T11:33:28Z",
+      "comment_updated_at": "2026-09-29T11:33:28Z",
+      "comment_body_sha256": "22050f465453d373761811ef39cb89617f4418ad6482f3d0253d1f1908b64c2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main (`3678731f7d`) into `memorytunning-pr-v2` (new head `3962d0068d`), clean merge, skill-selection tests 6/6 green, ts errors in `plugin-sdk/api-baseline*` + `skills/runtime/refresh.ts` are pre-existing upstream (verified on upstream files), our skill-selection files intact",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T11:34:29.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "3962d0068d5fae4a953b6dd03b0fd5ec06cd8f1c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
