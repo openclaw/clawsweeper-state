@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-156"
 mode: "autonomous"
-run_id: "36621866727"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36621866727"
+run_id: "36618875539"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36618875539"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T19:53:52.988Z"
+result_status: "planned"
+published_at: "2026-09-29T19:28:12.659Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/156"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/156"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36621866727](https://github.com/openclaw/clawsweeper/actions/runs/36621866727)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36618875539](https://github.com/openclaw/clawsweeper/actions/runs/36618875539)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/notcrawl/issues/156
 
 ## Summary
 
-Issue #156 remains reproducible from source on main 204af2f8be192709ee3f0acaef120d583465ab3c: a client timeout on a replay-safe request is excluded from the existing retry loop while the caller remains active. A narrow fix is warranted, but this checkout is read-only, so no regression test, patch, or local validation could be completed.
+Issue #156 remains reproducible from the retry logic on main 204af2f8be192709ee3f0acaef120d583465ab3c. A narrow fix PR is warranted. This worker's read-only filesystem prevented adding the regression, changing code, or validating a branch; the planned fix requires those steps before a PR opens.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Issue #156 remains reproducible from source on main 204af2f8be192709ee3f0acaef12
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156 | fix_needed | planned | canonical | The merged transport retry and 60-second timeout changes do not cover this timeout case. |
-| cluster:issue-openclaw-notcrawl-156 | build_fix_artifact | blocked |  | Implementation is blocked by the read-only checkout. |
+| #156 | fix_needed | planned | canonical | A replay-safe request that reaches the HTTP client's timeout exits the retry loop and aborts API sync. |
+| cluster:issue-openclaw-notcrawl-156 | build_fix_artifact | planned |  | The executor must implement and validate the narrow client-timeout retry fix. |
+| cluster:issue-openclaw-notcrawl-156 | open_fix_pr | planned |  | Open one implementation PR only after the final branch passes its local gates. |
 
 ## Needs Human
 
