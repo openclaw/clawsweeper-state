@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T07:48:34.446Z",
+  "updated_at": "2026-09-29T07:48:54.581Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159226:5851107647:2026-09-29T02:50:27Z:clawsweeper_auto_repair",
-      "comment_id": "5851107647",
-      "comment_version_key": "5851107647:2026-09-29T02:50:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159226#issuecomment-5851107647",
-      "comment_created_at": "2026-09-27T00:02:13Z",
-      "comment_updated_at": "2026-09-29T02:50:27Z",
-      "comment_body_sha256": "534dd4585a8a599186d26b6df7999e5fac72f3f52687f49cdfddf09208e0605f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159226,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7508613b01f90c06568c4ee51fcd5fa96eebbe66)",
-      "expected_head_sha": "7508613b01f90c06568c4ee51fcd5fa96eebbe66",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T02:53:23.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fs-safe-watch-adoption-20260926",
-        "head_sha": "7508613b01f90c06568c4ee51fcd5fa96eebbe66",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160049:5862389912:2026-09-29T02:43:42Z:clawsweeper_needs_human",
       "comment_id": "5862389912",
@@ -33052,6 +33019,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160983:5885958059:2026-09-29T07:47:51Z:re_review",
+      "comment_id": "5885958059",
+      "comment_version_key": "5885958059:2026-09-29T07:47:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160983#issuecomment-5885958059",
+      "comment_created_at": "2026-09-29T07:47:51Z",
+      "comment_updated_at": "2026-09-29T07:47:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160983,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T07:48:53.051Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-capture-freeze",
+        "head_sha": "c9325fb4f50c46ec0c0257f9e828c9a74db7a746",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
