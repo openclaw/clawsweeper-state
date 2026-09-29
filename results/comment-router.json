@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T19:31:51.230Z",
+  "updated_at": "2026-09-29T19:33:07.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161007:5888198327:2026-09-29T10:16:53Z:re_review",
-      "comment_id": "5888198327",
-      "comment_version_key": "5888198327:2026-09-29T10:16:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161007#issuecomment-5888198327",
-      "comment_created_at": "2026-09-29T10:16:53Z",
-      "comment_updated_at": "2026-09-29T10:16:53Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161007,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T10:18:10.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/cron-failure-repair",
-        "head_sha": "c350d18ae9cbb267c7be670b094bd56c84463aee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160075:5862950455:2026-09-29T10:17:13Z:clawsweeper_needs_human",
       "comment_id": "5862950455",
@@ -33798,6 +33751,39 @@
         "kind": "pull_request",
         "branch": "fix/dreaming-contamination-boundary",
         "head_sha": "da80254fc14232e7cd2a83af4c62112031f14fc5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:613:5897216208:2026-09-29T19:32:05Z:clawsweeper_needs_human",
+      "comment_id": "5897216208",
+      "comment_version_key": "5897216208:2026-09-29T19:32:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/613#issuecomment-5897216208",
+      "comment_created_at": "2026-09-29T19:32:05Z",
+      "comment_updated_at": "2026-09-29T19:32:05Z",
+      "comment_body_sha256": "88d304a7f1064429fbae9c5635fbb503ca03de2f7c318c574893e0be57a98ce3",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 613,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR reports PostgreSQL 18.6 runs through the composed production sign-in route showing an administr...; Review finding: [P2] Reject IAM allow decisions from the wrong Driver — apps/controller/src/auth/index.ts:1413 - [P2] Recheck administrator authority after the evaluation wait — a... (sha=a2592aaf4cd964986e678c9257a67d5a6c98d9bf)",
+      "expected_head_sha": "a2592aaf4cd964986e678c9257a67d5a6c98d9bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T19:33:07.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/password-only-sign-in-limit",
+        "head_sha": "a2592aaf4cd964986e678c9257a67d5a6c98d9bf",
         "cluster_id": null,
         "job_path": null
       }
