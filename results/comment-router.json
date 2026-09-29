@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:41:22.742Z",
+  "updated_at": "2026-09-29T03:41:45.886Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159545:5854247619:2026-09-28T23:10:01Z:clawsweeper_needs_human",
-      "comment_id": "5854247619",
-      "comment_version_key": "5854247619:2026-09-28T23:10:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159545#issuecomment-5854247619",
-      "comment_created_at": "2026-09-27T08:35:23Z",
-      "comment_updated_at": "2026-09-28T23:10:01Z",
-      "comment_body_sha256": "68bdef2fb3545276c76e8ba3cff216c8f14f68211e0eb207722d57c592a48be7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159545,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2a1cff09629c6173f5f93bf833f57be7863474f3)",
-      "expected_head_sha": "2a1cff09629c6173f5f93bf833f57be7863474f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T23:11:04.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/talk-model-projection-20260927",
-        "head_sha": "2a1cff09629c6173f5f93bf833f57be7863474f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:702:5850425545:2026-09-28T23:10:31Z:clawsweeper_needs_human",
       "comment_id": "5850425545",
@@ -32876,6 +32843,53 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-openclaw-outbound-target-collision",
         "head_sha": "dd9e56cdae8317c069ff10b6623e9ad69a7724e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159144:5883182083:2026-09-29T03:40:42Z:re_review",
+      "comment_id": "5883182083",
+      "comment_version_key": "5883182083:2026-09-29T03:40:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159144#issuecomment-5883182083",
+      "comment_created_at": "2026-09-29T03:40:42Z",
+      "comment_updated_at": "2026-09-29T03:40:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159144,
+      "author": "mnowrot",
+      "author_id": 135707,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T03:41:43.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-greeting-protection",
+        "head_sha": "3a11eaf075fb14a86636d49d6ca754a6a6c0cda0",
         "cluster_id": null,
         "job_path": null
       },
