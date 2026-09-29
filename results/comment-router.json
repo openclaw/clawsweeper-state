@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:47:10.608Z",
+  "updated_at": "2026-09-29T02:48:03.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153915:5787418931:2026-09-23T01:32:07Z:re_review",
-      "comment_id": "5787418931",
-      "comment_version_key": "5787418931:2026-09-23T01:32:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153915#issuecomment-5787418931",
-      "comment_created_at": "2026-09-23T01:32:07Z",
-      "comment_updated_at": "2026-09-23T01:32:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153915,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:12:36.655Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153915:5790685123:2026-09-23T07:16:37Z:re_review",
       "comment_id": "5790685123",
@@ -33263,6 +33236,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160675:5877089407:2026-09-29T02:47:18Z:clawsweeper_needs_human",
+      "comment_id": "5877089407",
+      "comment_version_key": "5877089407:2026-09-29T02:47:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160675#issuecomment-5877089407",
+      "comment_created_at": "2026-09-28T19:36:43Z",
+      "comment_updated_at": "2026-09-29T02:47:18Z",
+      "comment_body_sha256": "9bb41047e0c49ce4a8995f4242a8c30ae4493aeba9a913a71b046f58765c9f87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160675,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed node-host and Gateway path is exercised through mocked result, queue, and heartbeat boundaries, but...; Review finding: [P1] Validate Direct Messages topic routes before recovery — src/gateway/node-system-run-event-authority.ts:189-192 - [P3] Document result-first notification seman... (sha=82f54c11debde37bfc60cd73950d6341b0f0a50a)",
+      "expected_head_sha": "82f54c11debde37bfc60cd73950d6341b0f0a50a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:48:03.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-telegram-topic-completion-routing",
+        "head_sha": "82f54c11debde37bfc60cd73950d6341b0f0a50a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
