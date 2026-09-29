@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:33:07.692Z",
+  "updated_at": "2026-09-29T05:35:10.255Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153550:5748559523:2026-09-29T01:06:28Z:clawsweeper_needs_human",
-      "comment_id": "5748559523",
-      "comment_version_key": "5748559523:2026-09-29T01:06:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153550#issuecomment-5748559523",
-      "comment_created_at": "2026-09-20T08:03:48Z",
-      "comment_updated_at": "2026-09-29T01:06:28Z",
-      "comment_body_sha256": "b31597a9a96430cf733e2ab28d1dff948a750ae3d50a671ebb57650621045de3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed registry sweeper and delivery owner are exercised only through a fixture whose mocked cleanup callb...; Review finding: [P1] Preserve intentional terminal non-delivery decisions — src/agents/subagents/registry/subagent-registry-lifecycle-delivery.ts:562-567 - [P1] Retain the request... (sha=ef78bb070bf90a657953ffea6d46b4f1a0039786)",
-      "expected_head_sha": "ef78bb070bf90a657953ffea6d46b4f1a0039786",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T01:18:30.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-completion-delivery",
-        "head_sha": "ef78bb070bf90a657953ffea6d46b4f1a0039786",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154773:5759802997:2026-09-29T00:20:03Z:clawsweeper_auto_repair",
       "comment_id": "5759802997",
@@ -32564,6 +32531,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5884321780:2026-09-29T05:34:04Z:re_review",
+      "comment_id": "5884321780",
+      "comment_version_key": "5884321780:2026-09-29T05:34:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5884321780",
+      "comment_created_at": "2026-09-29T05:34:04Z",
+      "comment_updated_at": "2026-09-29T05:34:04Z",
+      "comment_body_sha256": "efe4e6e6c0bfae86a8be47c59c6edfe8a9ee3faef2dfbc94efae07b78aca2c52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — merged upstream/main (945c4e6f6b, 46 commits behind → 0). focused skill-selection tests 17/17 green. tsgo:core has pre-existing upstream errors in node-proxy-agent/api-baseline (not our files). head: 3bf9bafc4d",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T05:35:08.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "3bf9bafc4d540192c314b6942fec2cff1aeaa84e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
