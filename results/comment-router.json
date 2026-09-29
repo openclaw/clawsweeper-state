@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T20:05:16.406Z",
+  "updated_at": "2026-09-29T20:05:34.591Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161109:5887288272:2026-09-29T10:41:17Z:clawsweeper_needs_human",
-      "comment_id": "5887288272",
-      "comment_version_key": "5887288272:2026-09-29T10:41:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161109#issuecomment-5887288272",
-      "comment_created_at": "2026-09-29T09:17:57Z",
-      "comment_updated_at": "2026-09-29T10:41:17Z",
-      "comment_body_sha256": "debca60c5314fbda4b15a48b5613a03d292ba643e8d0e2e3fd3c77a9a0f8a7a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161109,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=521d477e4403e8b3d4cb3429b5d31f80580c653f)",
-      "expected_head_sha": "521d477e4403e8b3d4cb3429b5d31f80580c653f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T10:42:23.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hostneutral/deslop-infra-safe-bin-0929",
-        "head_sha": "521d477e4403e8b3d4cb3429b5d31f80580c653f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161136:5888565305:2026-09-29T10:41:23Z:clawsweeper_needs_human",
       "comment_id": "5888565305",
@@ -33797,6 +33764,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160872:5897729870:2026-09-29T20:04:33Z:re_review",
+      "comment_id": "5897729870",
+      "comment_version_key": "5897729870:2026-09-29T20:04:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160872#issuecomment-5897729870",
+      "comment_created_at": "2026-09-29T20:04:33Z",
+      "comment_updated_at": "2026-09-29T20:04:33Z",
+      "comment_body_sha256": "21d03eadeedc338779a300be4a8cf410bc3376ff672941733ec28147dc6d5e17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160872,
+      "author": "bdjben",
+      "author_id": 188106718,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T20:05:33.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/matrix-room-streaming",
+        "head_sha": "b68e60bde5e5b86b3887014105269c59f9f48084",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
