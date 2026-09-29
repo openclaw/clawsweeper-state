@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T08:28:31.125Z",
+  "updated_at": "2026-09-29T08:28:39.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160915:5882857514:2026-09-29T03:06:56Z:clawsweeper_needs_human",
-      "comment_id": "5882857514",
-      "comment_version_key": "5882857514:2026-09-29T03:06:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160915#issuecomment-5882857514",
-      "comment_created_at": "2026-09-29T03:06:56Z",
-      "comment_updated_at": "2026-09-29T03:06:56Z",
-      "comment_body_sha256": "3f858d196dfda117a7f3f7c04e5f3e93c7826fab9f605edba799b2f1891fd54a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160915,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Gateway startup and shutdown lifetimes have no published-updater-to-candidate proof cell, so update behavior on an existing installation remains unverified under repositor... (sha=3f72685c66789aa478385dcf72964497ab1e317b)",
-      "expected_head_sha": "3f72685c66789aa478385dcf72964497ab1e317b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T03:08:04.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hostneutral/deslop-scheduler-0928",
-        "head_sha": "3f72685c66789aa478385dcf72964497ab1e317b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155911:5782512967:2026-09-29T03:02:48Z:clawsweeper_needs_human",
       "comment_id": "5782512967",
@@ -33142,6 +33109,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161088:5886528569:2026-09-29T08:27:26Z:re_review",
+      "comment_id": "5886528569",
+      "comment_version_key": "5886528569:2026-09-29T08:27:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161088#issuecomment-5886528569",
+      "comment_created_at": "2026-09-29T08:27:26Z",
+      "comment_updated_at": "2026-09-29T08:27:26Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161088,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T08:28:37.893Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161075-project-bootstrap",
+        "head_sha": "1a40db4a908aed1a67af2eb2294cea3beb584ff7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
