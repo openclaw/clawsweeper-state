@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:05:28.290Z",
+  "updated_at": "2026-09-29T02:05:28.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154073:5878185275:2026-09-28T20:45:03Z:re_review",
-      "comment_id": "5878185275",
-      "comment_version_key": "5878185275:2026-09-28T20:45:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154073#issuecomment-5878185275",
-      "comment_created_at": "2026-09-28T20:45:03Z",
-      "comment_updated_at": "2026-09-28T20:45:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154073,
-      "author": "sandra-peach",
-      "author_id": 318417143,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T20:46:04.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-macos-website-widget-navigation",
-        "head_sha": "93f2bb381997aec8ddff0b1a148449d6327de046",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160110:5863642147:2026-09-28T20:45:59Z:clawsweeper_needs_human",
       "comment_id": "5863642147",
@@ -33773,6 +33726,39 @@
       "status": "skipped",
       "processed_at": "2026-09-29T02:05:28.290Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156421:5793032913:2026-09-29T02:04:13Z:clawsweeper_needs_human",
+      "comment_id": "5793032913",
+      "comment_version_key": "5793032913:2026-09-29T02:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156421#issuecomment-5793032913",
+      "comment_created_at": "2026-09-23T10:17:32Z",
+      "comment_updated_at": "2026-09-29T02:04:13Z",
+      "comment_body_sha256": "2c7ad82f0d3133b873d36486ebe08525ac5a46d0d3a7fb420328d23cadf69c2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156421,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed update and Doctor entrypoints are exercised with synthetic non-SQLite files, but the tests stop bef...; Review finding: [P1] Carry the selected identity into explicit executor store options — src/infra/update-managed-service-handoff-lease.ts:83-85 - [P1] Recheck Doctor's selected st... (sha=98f4a930459db0297ad742d5f8efa616fa754e80)",
+      "expected_head_sha": "98f4a930459db0297ad742d5f8efa616fa754e80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:05:28.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/update-doctor-initial-private-stores-20260923",
+        "head_sha": "98f4a930459db0297ad742d5f8efa616fa754e80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
