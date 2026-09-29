@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:09:39.997Z",
+  "updated_at": "2026-09-29T23:10:49.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157557:5827415361:2026-09-25T05:39:13Z:re_review",
-      "comment_id": "5827415361",
-      "comment_version_key": "5827415361:2026-09-25T05:39:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157557#issuecomment-5827415361",
-      "comment_created_at": "2026-09-25T05:39:13Z",
-      "comment_updated_at": "2026-09-25T05:39:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157557,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T14:35:15.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/pr125345-main-refresh2",
-        "head_sha": "352480d50168d023794b8b328075abf172fe68d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160960:5892250439:2026-09-29T14:24:47Z:re_review",
       "comment_id": "5892250439",
@@ -33217,6 +33170,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161422:5900813932:2026-09-29T23:09:54Z:clawsweeper_needs_human",
+      "comment_id": "5900813932",
+      "comment_version_key": "5900813932:2026-09-29T23:09:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161422#issuecomment-5900813932",
+      "comment_created_at": "2026-09-29T23:09:54Z",
+      "comment_updated_at": "2026-09-29T23:09:54Z",
+      "comment_body_sha256": "6e705e09d1877f2cfa82a71b16853dc643ab8721a9f8d27ccc3dc13b16fe298f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The draft has no changed production owner and explicitly marks evidence pending; the linked report demonstrates the before state, not an after-... (sha=1c80ec6895d1f171598d93e7c98bd54ee452bc28)",
+      "expected_head_sha": "1c80ec6895d1f171598d93e7c98bd54ee452bc28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T23:10:49.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161409-sessions-create-catalog-wait",
+        "head_sha": "1c80ec6895d1f171598d93e7c98bd54ee452bc28",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
