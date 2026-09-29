@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:55:04.377Z",
+  "updated_at": "2026-09-29T02:56:18.404Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/octopool:208:5879924886:2026-09-28T22:31:49Z:clawsweeper_needs_human",
-      "comment_id": "5879924886",
-      "comment_version_key": "5879924886:2026-09-28T22:31:49Z",
-      "comment_url": "https://github.com/openclaw/octopool/pull/208#issuecomment-5879924886",
-      "comment_created_at": "2026-09-28T22:31:49Z",
-      "comment_updated_at": "2026-09-28T22:31:49Z",
-      "comment_body_sha256": "d4f9d86e31b545645af3c2608418fe7c191a6887a09abb453851f441d658e53d",
-      "repo": "openclaw/octopool",
-      "issue_number": 208,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deploying the new Worker before D1 migration 0023 completes will make its audit inserts reference a nonexistent column; the documented deploy command does not apply that migration. (sha=99fa939fdf26a456e939951dcf17bc52530076db)",
-      "expected_head_sha": "99fa939fdf26a456e939951dcf17bc52530076db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:32:39.518Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cache-miss-reasons-20260928",
-        "head_sha": "99fa939fdf26a456e939951dcf17bc52530076db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160651:5876289277:2026-09-28T22:31:46Z:clawsweeper_auto_repair",
       "comment_id": "5876289277",
@@ -33081,6 +33048,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5882749813:2026-09-29T02:55:19Z:re_review",
+      "comment_id": "5882749813",
+      "comment_version_key": "5882749813:2026-09-29T02:55:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5882749813",
+      "comment_created_at": "2026-09-29T02:55:19Z",
+      "comment_updated_at": "2026-09-29T02:55:19Z",
+      "comment_body_sha256": "1eb49526952757d0dc6fe8e456daf73ef8bc02ce6a43823e1be25eab7b00dbbe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `0957896b4eba9029a5b46676fa0e370dcb3a879f`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T02:56:17.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "0957896b4eba9029a5b46676fa0e370dcb3a879f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
