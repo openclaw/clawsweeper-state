@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:40:39.084Z",
+  "updated_at": "2026-09-29T06:42:34.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160872:5882051079:2026-09-29T01:44:37Z:clawsweeper_needs_human",
-      "comment_id": "5882051079",
-      "comment_version_key": "5882051079:2026-09-29T01:44:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160872#issuecomment-5882051079",
-      "comment_created_at": "2026-09-29T01:44:37Z",
-      "comment_updated_at": "2026-09-29T01:44:37Z",
-      "comment_body_sha256": "52c9932b1a0d8a02f4d5174f770b590d12febf9f331b159f2b800b7280f86874",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160872,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Matrix handler selects a room mode before draft and final dispatch, but the submitted after-fix evi...; Review finding: [medium] Streaming-only room entries also admit room traffic — extensions/matrix/src/config-schema.ts:72 (sha=1664cf2730b329220af2a190a9b2692c41d88707)",
-      "expected_head_sha": "1664cf2730b329220af2a190a9b2692c41d88707",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T01:48:41.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/matrix-room-streaming",
-        "head_sha": "1664cf2730b329220af2a190a9b2692c41d88707",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160851:5881720890:2026-09-29T01:48:32Z:clawsweeper_needs_human",
       "comment_id": "5881720890",
@@ -32948,6 +32915,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1232:5885075586:2026-09-29T06:41:39Z:re_review",
+      "comment_id": "5885075586",
+      "comment_version_key": "5885075586:2026-09-29T06:41:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1232#issuecomment-5885075586",
+      "comment_created_at": "2026-09-29T06:41:39Z",
+      "comment_updated_at": "2026-09-29T06:41:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1232,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T06:42:32.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-ai-onboarding-resume",
+        "head_sha": "83408d7ff42d0ad45fd9c8760e6ea5f1bd963d3d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
