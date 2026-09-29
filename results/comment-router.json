@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:39:26.388Z",
+  "updated_at": "2026-09-29T06:39:29.235Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160847:5881615849:2026-09-29T01:45:42Z:clawsweeper_auto_repair",
-      "comment_id": "5881615849",
-      "comment_version_key": "5881615849:2026-09-29T01:45:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160847#issuecomment-5881615849",
-      "comment_created_at": "2026-09-29T01:01:08Z",
-      "comment_updated_at": "2026-09-29T01:45:42Z",
-      "comment_body_sha256": "1c661d43c7100093dbc1772537041d9029d35669b412d4e2e2691479761258c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9580a744c4937c95188e05cf113d094c19236c4e)",
-      "expected_head_sha": "9580a744c4937c95188e05cf113d094c19236c4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T01:48:41.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sonnet-5-5-support-0aef8d",
-        "head_sha": "9580a744c4937c95188e05cf113d094c19236c4e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160859:5881901048:2026-09-29T01:39:31Z:clawsweeper_auto_repair",
       "comment_id": "5881901048",
@@ -32934,6 +32901,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160950:5885029518:2026-09-29T06:37:56Z:re_review",
+      "comment_id": "5885029518",
+      "comment_version_key": "5885029518:2026-09-29T06:37:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160950#issuecomment-5885029518",
+      "comment_created_at": "2026-09-29T06:37:56Z",
+      "comment_updated_at": "2026-09-29T06:37:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160950,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T06:39:27.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/emoji-picker-with-before-and-after-proof",
+        "head_sha": "d88d200a44231cd8cbd092b5da44313ef480545b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
