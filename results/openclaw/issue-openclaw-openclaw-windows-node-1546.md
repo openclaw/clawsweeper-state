@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1546"
-mode: "autonomous"
-run_id: "36620390418"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36620390418"
+mode: "plan"
+run_id: "36623360268"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36623360268"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T19:40:54.917Z"
-canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
-canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T20:05:36.679Z"
+canonical: "#1546"
+canonical_issue: "#1546"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36620390418](https://github.com/openclaw/clawsweeper/actions/runs/36620390418)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36623360268](https://github.com/openclaw/clawsweeper/actions/runs/36623360268)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1546
+Canonical: #1546
 
 ## Summary
 
-The Setup resize bug remains viable on main 24263d3b. Implementation and validation are blocked because this worker's filesystem is read-only; no code was changed or PR opened.
+At the preflight main SHA, #1546 remains an open Setup window resize bug with no active implementation PR. Plan a narrow DPI-aware minimum-size fix and regression test. No code, GitHub action, validation, or Windows UI proof was performed in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The Setup resize bug remains viable on main 24263d3b. Implementation and validat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1546 | fix_needed | planned | canonical | A narrow Setup window resize fix is still needed. |
-| #1145 | keep_related | planned | related | Retain its separate chat reproduction and follow-up. |
-| #1292 | keep_related | planned | related | Retain its separate high-scaling investigation. |
-| #293 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-windows-node-1546 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and a Windows validation host. |
+| #1546 | build_fix_artifact | planned | canonical | The issue has a narrow implementation path and no active candidate PR. |
+| #1145 | keep_independent | planned | independent | Its affected surface and reproduction path differ from #1546. |
+| #1292 | keep_related | planned | related | Both involve visible layout failures, but #1292 concerns different windows and controls and retains its own work. |
+| #293 | keep_closed | skipped | independent | The historical Hub window fix does not address the Setup window. |
 
 ## Needs Human
 

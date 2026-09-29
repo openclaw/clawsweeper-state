@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1546",
+  "mode": "plan",
+  "run_id": "36623360268",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36623360268",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1546.md",
+  "published_at": "2026-09-29T20:05:36.679Z",
+  "canonical": "#1546",
+  "canonical_issue": "#1546",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, #1546 remains an open Setup window resize bug with no active implementation PR. Plan a narrow DPI-aware minimum-size fix and regression test. No code, GitHub action, validation, or Windows UI proof was performed in plan mode.",
+  "actions": [
+    {
+      "target": "#1546",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1546",
+      "candidate_fix": null,
+      "reason": "The issue has a narrow implementation path and no active candidate PR."
+    },
+    {
+      "target": "#1145",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its affected surface and reproduction path differ from #1546."
+    },
+    {
+      "target": "#1292",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1546",
+      "candidate_fix": null,
+      "reason": "Both involve visible layout failures, but #1292 concerns different windows and controls and retains its own work."
+    },
+    {
+      "target": "#293",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The historical Hub window fix does not address the Setup window."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
