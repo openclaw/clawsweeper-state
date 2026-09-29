@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T13:26:56.162Z",
+  "updated_at": "2026-09-29T13:28:11.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143647:5612213728:2026-09-29T06:05:52Z:clawsweeper_needs_human",
-      "comment_id": "5612213728",
-      "comment_version_key": "5612213728:2026-09-29T06:05:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143647#issuecomment-5612213728",
-      "comment_created_at": "2026-09-10T03:28:03Z",
-      "comment_updated_at": "2026-09-29T06:05:52Z",
-      "comment_body_sha256": "dca0abb48ac14c8f3d280e2fae00ceb2c283b5e737490b88e4225c0af5e6c795",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143647,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P1\\] Scrub retained migration copies on logout (P1)** - The new scrub only selects plugin-model-catalog-v1. A retained plugin-model-catalog-migration-v1 recovery row can still contain the selected plaintext ke...; Review finding: [P1] [P1] Scrub retained migration copies on logout — src/agents/plugin-model-catalog.ts:177-180 - [P2] [P2] Handle malformed catalog JSON before aborting cleanup... (sha=5a7985791e430e7d0d5b00c4e8cb524c1696d25b)",
-      "expected_head_sha": "5a7985791e430e7d0d5b00c4e8cb524c1696d25b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T06:06:51.368Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-logout-cleanup-142421",
-        "head_sha": "5a7985791e430e7d0d5b00c4e8cb524c1696d25b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143647:5626037785:2026-09-10T22:02:54Z:re_review",
       "comment_id": "5626037785",
@@ -33548,6 +33515,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161201:5891256640:2026-09-29T13:27:11Z:clawsweeper_needs_human",
+      "comment_id": "5891256640",
+      "comment_version_key": "5891256640:2026-09-29T13:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161201#issuecomment-5891256640",
+      "comment_created_at": "2026-09-29T13:27:11Z",
+      "comment_updated_at": "2026-09-29T13:27:11Z",
+      "comment_body_sha256": "16b556ba671e8581f3931cbcedfd9964589c7d9fe9d52e7256a30d10abd3915c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cold preparation now awaits auth and display-path worker reads per agent, but before-and-after time and RSS have not been reported; Gateway readiness and memory cost remain unmeasured. (sha=f8989a7d9247b7eb538b88ef66c60127077dba8e)",
+      "expected_head_sha": "f8989a7d9247b7eb538b88ef66c60127077dba8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T13:28:11.551Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/prepare-catalog-auth-reads",
+        "head_sha": "f8989a7d9247b7eb538b88ef66c60127077dba8e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
