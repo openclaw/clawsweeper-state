@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T15:37:59.668Z",
+  "updated_at": "2026-09-29T15:38:11.646Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143647:5885615902:2026-09-29T07:22:45Z:re_review",
-      "comment_id": "5885615902",
-      "comment_version_key": "5885615902:2026-09-29T07:22:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143647#issuecomment-5885615902",
-      "comment_created_at": "2026-09-29T07:22:45Z",
-      "comment_updated_at": "2026-09-29T07:22:45Z",
-      "comment_body_sha256": "9ff358ebd2c37622574b93b0ab35a642a983604522f46d8ff48bc67555949af4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143647,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T07:23:51.008Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-logout-cleanup-142421",
-        "head_sha": "83069c937bf80a4a4848e57ce4adc2feb81c680b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160956:5883650496:2026-09-29T07:22:47Z:clawsweeper_auto_repair",
       "comment_id": "5883650496",
@@ -33558,6 +33511,39 @@
         "kind": "pull_request",
         "branch": "karkarl-workspace-production-implementation",
         "head_sha": "50da59b27b771870c30ead985c564303414da39e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3796:5797756348:2026-09-29T15:37:14Z:clawsweeper_needs_human",
+      "comment_id": "5797756348",
+      "comment_version_key": "5797756348:2026-09-29T15:37:14Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3796#issuecomment-5797756348",
+      "comment_created_at": "2026-09-23T15:33:43Z",
+      "comment_updated_at": "2026-09-29T15:37:14Z",
+      "comment_body_sha256": "432e98a51c6e89d0227024cd99487dd1b869924127bd6ce19b32464ee830d6b2",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3796,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed cost-control owner reaches the dashboard API POST through the bundled creation helper, but the supp...; Review finding: [P2] Validate the selected deployment in both configuration files — .agents/skills/controlling-costs/scripts/setup:55-59 - [P3] Point SRE setup links to the instal... (sha=f0bc27e8949e94362f44d3dd535f56fafc62227a)",
+      "expected_head_sha": "f0bc27e8949e94362f44d3dd535f56fafc62227a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T15:38:11.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/update-skills",
+        "head_sha": "f0bc27e8949e94362f44d3dd535f56fafc62227a",
         "cluster_id": null,
         "job_path": null
       }
