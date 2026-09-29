@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:31:05.096Z",
+  "updated_at": "2026-09-29T02:31:08.664Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160203:5864827369:2026-09-28T20:50:33Z:clawsweeper_needs_human",
-      "comment_id": "5864827369",
-      "comment_version_key": "5864827369:2026-09-28T20:50:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160203#issuecomment-5864827369",
-      "comment_created_at": "2026-09-28T06:41:32Z",
-      "comment_updated_at": "2026-09-28T20:50:33Z",
-      "comment_body_sha256": "184e8073ba2c4bb1d8c24ae57de96a7a0a005ae2ebf2c3193deeb9e518776b2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160203,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head conflicts with main. The stated UI fixture resolution is unpublished, so the combined cancellation and session-publication code has no reviewable merge result. (sha=6a7b34a59bdb58f9245fac5495e152aef7b7273e)",
-      "expected_head_sha": "6a7b34a59bdb58f9245fac5495e152aef7b7273e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:05:46.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-run-cancellation-20260927",
-        "head_sha": "6a7b34a59bdb58f9245fac5495e152aef7b7273e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160257:5865631290:2026-09-28T20:52:00Z:clawsweeper_needs_human",
       "comment_id": "5865631290",
@@ -33180,6 +33147,53 @@
         "kind": "pull_request",
         "branch": "fix/ingress-lane-starvation",
         "head_sha": "fdd048e3ae1bf7ff5595a0dd49c8de18e62aacf0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160620:5882508879:2026-09-29T02:30:06Z:re_review",
+      "comment_id": "5882508879",
+      "comment_version_key": "5882508879:2026-09-29T02:30:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160620#issuecomment-5882508879",
+      "comment_created_at": "2026-09-29T02:30:06Z",
+      "comment_updated_at": "2026-09-29T02:30:06Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160620,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T02:31:07.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-exec-fatal-code-cron",
+        "head_sha": "8ff241a85e4c028d55e72e029a7c86fcf7ed7f14",
         "cluster_id": null,
         "job_path": null
       },
