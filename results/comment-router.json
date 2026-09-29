@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T23:10:49.795Z",
+  "updated_at": "2026-09-29T23:10:59.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160960:5892250439:2026-09-29T14:24:47Z:re_review",
-      "comment_id": "5892250439",
-      "comment_version_key": "5892250439:2026-09-29T14:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160960#issuecomment-5892250439",
-      "comment_created_at": "2026-09-29T14:24:47Z",
-      "comment_updated_at": "2026-09-29T14:24:47Z",
-      "comment_body_sha256": "e05401a5146fffd7069b9fc72168e7e967265e6f39eaaca88429bb8e33b932d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160960,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T14:36:28.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.34",
-        "head_sha": "6eb6941db86f666ea50d6f579ae88df5e007e555",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161007:5892403814:2026-09-29T14:33:56Z:re_review",
       "comment_id": "5892403814",
@@ -33200,6 +33153,39 @@
         "kind": "pull_request",
         "branch": "fix/161409-sessions-create-catalog-wait",
         "head_sha": "1c80ec6895d1f171598d93e7c98bd54ee452bc28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161421:5900816467:2026-09-29T23:10:07Z:clawsweeper_needs_human",
+      "comment_id": "5900816467",
+      "comment_version_key": "5900816467:2026-09-29T23:10:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161421#issuecomment-5900816467",
+      "comment_created_at": "2026-09-29T23:10:07Z",
+      "comment_updated_at": "2026-09-29T23:10:07Z",
+      "comment_body_sha256": "cba43f7e7d7df6251afb4a9ae6c47f413a1c58531e53beb3ff93822e45cf462c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161421,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports a synthetic WebSocket run covering local connection invalidation, but the supplied...; Review finding: [P2] Recheck pairing authority before deferred metadata commits — src/infra/device-pairing-core.kernel.ts:439-444 - [medium] Revoked node can still write pairing m... (sha=ecf467d6a194577d86f308ff6a2503539452d202)",
+      "expected_head_sha": "ecf467d6a194577d86f308ff6a2503539452d202",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T23:10:59.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-admission-20260929-2121",
+        "head_sha": "ecf467d6a194577d86f308ff6a2503539452d202",
         "cluster_id": null,
         "job_path": null
       }
