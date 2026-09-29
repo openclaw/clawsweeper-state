@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T19:23:24.495Z",
+  "updated_at": "2026-09-29T19:24:38.119Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153824:5751034257:2026-09-29T10:06:48Z:autoclose",
-      "comment_id": "5751034257",
-      "comment_version_key": "5751034257:2026-09-29T10:06:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153824#issuecomment-5751034257",
-      "comment_created_at": "2026-09-20T16:20:33Z",
-      "comment_updated_at": "2026-09-29T10:06:48Z",
-      "comment_body_sha256": "b3057b710bbfa0c605da2478f05e9b152d470bc2575fefd4295cd050a84c6c9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153824,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=aa2a968c3dc7e3bb8799f2cb19a2414d8a2d4898)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=aa2a968c3dc7e3bb8799f2cb19a2414d8a2d4898)",
-      "expected_head_sha": "aa2a968c3dc7e3bb8799f2cb19a2414d8a2d4898",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T10:07:47.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-diary-context-153682",
-        "head_sha": "aa2a968c3dc7e3bb8799f2cb19a2414d8a2d4898",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160960:5883825972:2026-09-29T10:07:13Z:clawsweeper_needs_human",
       "comment_id": "5883825972",
@@ -33761,6 +33728,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161312:5897086512:2026-09-29T19:23:39Z:re_review",
+      "comment_id": "5897086512",
+      "comment_version_key": "5897086512:2026-09-29T19:23:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161312#issuecomment-5897086512",
+      "comment_created_at": "2026-09-29T19:23:39Z",
+      "comment_updated_at": "2026-09-29T19:23:39Z",
+      "comment_body_sha256": "b15c3b06f8b6acc7f721a90406976d9cc8c0cc5d2fe996a0b2639705558e4230",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161312,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T19:24:36.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-self-hosted-attachments-public",
+        "head_sha": "35ea39c69c74b2f2cf352704a628be58f97d65a6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
