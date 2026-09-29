@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T04:50:57.296Z",
+  "updated_at": "2026-09-29T04:51:11.068Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160803:5881024781:2026-09-29T00:40:47Z:clawsweeper_needs_human",
-      "comment_id": "5881024781",
-      "comment_version_key": "5881024781:2026-09-29T00:40:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160803#issuecomment-5881024781",
-      "comment_created_at": "2026-09-29T00:02:19Z",
-      "comment_updated_at": "2026-09-29T00:40:47Z",
-      "comment_body_sha256": "07a7e656d57c01a74d217de77c79e236d1625a4c1ff550a70f18687bebcce880",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Record the added test file's measured one-worker wall time and available CI seconds in the PR body, as required by repository test policy. (sha=bdad38ed43397034759cc9b4210557e69b7ca384)",
-      "expected_head_sha": "bdad38ed43397034759cc9b4210557e69b7ca384",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T00:41:47.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/modelrun-retry-keeps-prompt",
-        "head_sha": "bdad38ed43397034759cc9b4210557e69b7ca384",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160835:5881421618:2026-09-29T00:41:15Z:clawsweeper_needs_human",
       "comment_id": "5881421618",
@@ -32591,6 +32558,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:213:5883856745:2026-09-29T04:50:18Z:clawsweeper_needs_human",
+      "comment_id": "5883856745",
+      "comment_version_key": "5883856745:2026-09-29T04:50:18Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/213#issuecomment-5883856745",
+      "comment_created_at": "2026-09-29T04:50:18Z",
+      "comment_updated_at": "2026-09-29T04:50:18Z",
+      "comment_body_sha256": "44dc66d7121559f6e1b47707833c9d69edae61352575a6f3b5072e825d760517",
+      "repo": "openclaw/octopool",
+      "issue_number": 213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed CLI route reaches native gh after a missing Octopool login, and tests show fake-child dispatch and...; Review finding: [P1] Keep unenrolled GitHub writes behind explicit opt-in — cmd/octopool/gh.go:25-28 - [high] Server rewrite policy bypass on logged-out native dispatch — cmd/octo... (sha=de62d5f8abc63e2b766ad91f58ed1db1e2d6e93b)",
+      "expected_head_sha": "de62d5f8abc63e2b766ad91f58ed1db1e2d6e93b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T04:51:11.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/logged-out-gh-passthrough",
+        "head_sha": "de62d5f8abc63e2b766ad91f58ed1db1e2d6e93b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
