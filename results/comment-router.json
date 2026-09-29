@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:58:25.287Z",
+  "updated_at": "2026-09-29T06:58:38.099Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150992:5717852346:2026-09-29T01:58:52Z:clawsweeper_needs_human",
-      "comment_id": "5717852346",
-      "comment_version_key": "5717852346:2026-09-29T01:58:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150992#issuecomment-5717852346",
-      "comment_created_at": "2026-09-17T16:31:43Z",
-      "comment_updated_at": "2026-09-29T01:58:52Z",
-      "comment_body_sha256": "b35bfb0d71e1982e46181521c17ad0241d0d3d842bea23f6ada8ff1ea9f0bc57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150992,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new test file's single-worker wall time and CI duration are not reported, leaving its recurring per-PR cost unverified under repository testing policy. (sha=b93b2271dd356124f45c2304dffed1829ef0764a)",
-      "expected_head_sha": "b93b2271dd356124f45c2304dffed1829ef0764a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T02:07:41.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/onboard-keep-gateway-auth-mode",
-        "head_sha": "b93b2271dd356124f45c2304dffed1829ef0764a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155424:5771221419:2026-09-29T02:04:16Z:clawsweeper_needs_human",
       "comment_id": "5771221419",
@@ -33028,6 +32995,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159144:5885284532:2026-09-29T06:57:51Z:re_review",
+      "comment_id": "5885284532",
+      "comment_version_key": "5885284532:2026-09-29T06:57:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159144#issuecomment-5885284532",
+      "comment_created_at": "2026-09-29T06:57:42Z",
+      "comment_updated_at": "2026-09-29T06:57:51Z",
+      "comment_body_sha256": "55c1c115240019924a68200b8542b7ea5a4b6fbaff1aca79bdd91132d9cbea9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159144,
+      "author": "mnowrot",
+      "author_id": 135707,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T06:58:36.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-greeting-protection",
+        "head_sha": "c5e76628db1a38d1f37dddf85e30f8286baa00ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
