@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T22:03:02.248Z",
+  "updated_at": "2026-09-29T22:03:11.526Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161102:5887141726:2026-09-29T13:40:40Z:clawsweeper_needs_human",
-      "comment_id": "5887141726",
-      "comment_version_key": "5887141726:2026-09-29T13:40:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161102#issuecomment-5887141726",
-      "comment_created_at": "2026-09-29T09:08:20Z",
-      "comment_updated_at": "2026-09-29T13:40:40Z",
-      "comment_body_sha256": "75641424383717d902fd5993becb501e358942d628b971534e28742feab292e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161102,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The update campaign projection is shown after reconnect and upgrade, but the repository-required published-driver × candidate result for existing operator update state has not been re... (sha=989f6de06c6f5129fcc36406fe51d3e033820a32)",
-      "expected_head_sha": "989f6de06c6f5129fcc36406fe51d3e033820a32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T13:41:50.736Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l156-ui-lib",
-        "head_sha": "989f6de06c6f5129fcc36406fe51d3e033820a32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122849:5273775310:2026-09-29T13:39:33Z:clawsweeper_auto_repair",
       "comment_id": "5273775310",
@@ -33181,6 +33148,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160580:5899881514:2026-09-29T22:02:04Z:re_review",
+      "comment_id": "5899881514",
+      "comment_version_key": "5899881514:2026-09-29T22:02:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160580#issuecomment-5899881514",
+      "comment_created_at": "2026-09-29T22:02:04Z",
+      "comment_updated_at": "2026-09-29T22:02:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160580,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T22:03:09.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-gpt-model-version-audit-warning",
+        "head_sha": "6846fda3f9c51ccc0c5e96bac33b40747be6280e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
