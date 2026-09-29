@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T00:28:01.049Z",
+  "updated_at": "2026-09-29T00:29:49.336Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160170:5864223689:2026-09-28T18:25:00Z:clawsweeper_needs_human",
-      "comment_id": "5864223689",
-      "comment_version_key": "5864223689:2026-09-28T18:25:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160170#issuecomment-5864223689",
-      "comment_created_at": "2026-09-28T05:47:15Z",
-      "comment_updated_at": "2026-09-28T18:25:00Z",
-      "comment_body_sha256": "9676deeb595717b139c65120a4c80ca328008b66c689f8048adfa01669d4da57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160170,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing checkout without a usable branch reflog now refuses retained rollback after activation. The previous runtime is retained, but the Gateway can remain stopped until an opera... (sha=6524c79e2905e622db4887dd9541fafff2d46ebe)",
-      "expected_head_sha": "6524c79e2905e622db4887dd9541fafff2d46ebe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T18:57:28.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/r97-forward-3",
-        "head_sha": "6524c79e2905e622db4887dd9541fafff2d46ebe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160189:5864470743:2026-09-28T18:36:27Z:clawsweeper_needs_human",
       "comment_id": "5864470743",
@@ -33783,6 +33750,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160465:5881295928:2026-09-29T00:28:41Z:re_review",
+      "comment_id": "5881295928",
+      "comment_version_key": "5881295928:2026-09-29T00:28:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160465#issuecomment-5881295928",
+      "comment_created_at": "2026-09-29T00:28:41Z",
+      "comment_updated_at": "2026-09-29T00:28:41Z",
+      "comment_body_sha256": "72b455c4b8d579e55227b1bbaefa6344077495f4adda177cf42968539a77e72e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160465,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T00:29:47.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openshell-worker-process-ownership-repair",
+        "head_sha": "c512ad6113a414341d2513bbf278424389033984",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
