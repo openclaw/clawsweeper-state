@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1443",
+  "mode": "plan",
+  "run_id": "36546580524",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36546580524",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1443.md",
+  "published_at": "2026-09-29T09:05:49.264Z",
+  "canonical": "#1443",
+  "canonical_issue": "#1443",
+  "canonical_pr": null,
+  "summary": "Issue #1443 remains open on the hydrated preflight state. Current main has a plausible initialization path that can overwrite the saved timeout. A focused fix and Windows validation are planned; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#1443",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1443",
+      "candidate_fix": null,
+      "reason": "Settings persistence exists on current main, but the Sandbox page can handle its XAML default slider value before loading saved settings. Confirm that path in an isolated Windows app run, then guard initialization."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

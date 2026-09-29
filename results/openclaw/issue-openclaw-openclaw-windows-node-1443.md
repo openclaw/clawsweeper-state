@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1443"
-mode: "autonomous"
-run_id: "36545958528"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36545958528"
+mode: "plan"
+run_id: "36546580524"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36546580524"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T09:02:37.080Z"
-canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1443"
-canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1443"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T09:05:49.264Z"
+canonical: "#1443"
+canonical_issue: "#1443"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36545958528](https://github.com/openclaw/clawsweeper/actions/runs/36545958528)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36546580524](https://github.com/openclaw/clawsweeper/actions/runs/36546580524)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1443
+Canonical: #1443
 
 ## Summary
 
-Issue #1443 remains a viable focused fix on main 0844c0fa. The Sandbox page has a plausible startup overwrite path, but the checkout is read only. No code was changed, no validation ran, and no PR was opened.
+Issue #1443 remains open on the hydrated preflight state. Current main has a plausible initialization path that can overwrite the saved timeout. A focused fix and Windows validation are planned; no code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Issue #1443 remains a viable focused fix on main 0844c0fa. The Sandbox page has 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1443 | fix_needed | planned | canonical | Guard initialization events before they can persist the default slider value. |
-| cluster:issue-openclaw-openclaw-windows-node-1443 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and Windows validation. |
+| #1443 | fix_needed | planned | canonical | Settings persistence exists on current main, but the Sandbox page can handle its XAML default slider value before loading saved settings. Confirm that path in an isolated Windows app run, then guard initialization. |
 
 ## Needs Human
 
