@@ -1,0 +1,84 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-3776",
+  "mode": "autonomous",
+  "run_id": "36601569433",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36601569433",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-3776.md",
+  "published_at": "2026-09-29T17:02:36.013Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/3776",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/3776",
+  "canonical_pr": null,
+  "summary": "Issue #3776 remains a TypeSafe request/token usage gap on main at 25bba9b7. Implementation is blocked until a successful redacted authenticated response establishes the fields, units, reporting period, and account scope.",
+  "actions": [
+    {
+      "target": "#3776",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#3776",
+      "candidate_fix": null,
+      "reason": "A successful authenticated response and its reporting semantics are absent from the provided artifacts. Someone with authorized access to a TypeSafe account must supply a redacted response covering fields, units, reporting period, and account scope before an implementation can be specified safely."
+    },
+    {
+      "target": "#3756",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#3776",
+      "candidate_fix": null,
+      "reason": "Historical billing foundation; no action on the closed PR."
+    },
+    {
+      "target": "#3777",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked PR for central security handling without changing it or blocking classification of #3776."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For #3776, supply a successful redacted authenticated response from GET /api/usage?granularity=day that establishes response fields, units, reporting period, and account scope. The provided artifacts contain only an unauthenticated HTTP 401 and cannot support a safe parser or fixture."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#3776",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
