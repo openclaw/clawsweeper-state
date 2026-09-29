@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:12:16.559Z",
+  "updated_at": "2026-09-29T02:12:25.724Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154882:5878734332:2026-09-28T21:14:13Z:re_review",
-      "comment_id": "5878734332",
-      "comment_version_key": "5878734332:2026-09-28T21:14:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154882#issuecomment-5878734332",
-      "comment_created_at": "2026-09-28T21:14:13Z",
-      "comment_updated_at": "2026-09-28T21:14:13Z",
-      "comment_body_sha256": "f72c7ba173088b99eb3cb1d2f3fa4b2c77405d08a784a2ffbdc6286eb6dcf6bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154882,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T21:15:20.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/chat-reply-source-20260921",
-        "head_sha": "fe0588523f331654f63f7cda6c185c15330cfa1c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:868:5877676061:2026-09-28T21:13:18Z:clawsweeper_needs_human",
       "comment_id": "5877676061",
@@ -33729,6 +33682,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160877:5882148850:2026-09-29T02:11:20Z:clawsweeper_needs_human",
+      "comment_id": "5882148850",
+      "comment_version_key": "5882148850:2026-09-29T02:11:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160877#issuecomment-5882148850",
+      "comment_created_at": "2026-09-29T01:54:23Z",
+      "comment_updated_at": "2026-09-29T02:11:20Z",
+      "comment_body_sha256": "731341e44e877c7aa74509085753249bf4235c7bceb4fcc80fc2bbecf9d1455c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep NOCOW conversion out of implicit updater repair (P1)** - The managed updater passes repair: true to Doctor, so this new branch can rewrite an existing btrfs store during an update without a distinct NOCOW c...; Review finding: [P1] Keep NOCOW conversion out of implicit updater repair — src/flows/doctor-health.ts:385-387 - [P1] Preserve extended attributes during directory replacement — s... (sha=4a64a2f06943a10544aaedbb8f6ab12aae66e9f5)",
+      "expected_head_sha": "4a64a2f06943a10544aaedbb8f6ab12aae66e9f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:12:25.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-btrfs-nocow-sqlite-stores-20260919",
+        "head_sha": "4a64a2f06943a10544aaedbb8f6ab12aae66e9f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
