@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:33:48.624Z",
+  "updated_at": "2026-09-29T02:33:52.100Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160639:5876165479:2026-09-28T21:43:28Z:clawsweeper_needs_human",
-      "comment_id": "5876165479",
-      "comment_version_key": "5876165479:2026-09-28T21:43:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160639#issuecomment-5876165479",
-      "comment_created_at": "2026-09-28T18:34:52Z",
-      "comment_updated_at": "2026-09-28T21:43:28Z",
-      "comment_body_sha256": "26db174f181952d0808401d3a0a3db5f493e08011073c5bb7a7bf98b80dfa8b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160639,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve review confidence** - ClawSweeper must reach high confidence before merge readiness is known. (sha=6ee2a178815b09ca02789a7fda0d67298529861c)",
-      "expected_head_sha": "6ee2a178815b09ca02789a7fda0d67298529861c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:05:46.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l145-small-channels",
-        "head_sha": "6ee2a178815b09ca02789a7fda0d67298529861c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160651:5876289277:2026-09-28T21:30:55Z:clawsweeper_auto_repair",
       "comment_id": "5876289277",
@@ -33189,6 +33156,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160465:5882536100:2026-09-29T02:32:55Z:re_review",
+      "comment_id": "5882536100",
+      "comment_version_key": "5882536100:2026-09-29T02:32:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160465#issuecomment-5882536100",
+      "comment_created_at": "2026-09-29T02:32:55Z",
+      "comment_updated_at": "2026-09-29T02:32:55Z",
+      "comment_body_sha256": "89450385b6ee2bf9e8ce9272b45a687882b43620ffda1c92face67877533c458",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160465,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review — head 60f69c15f310acc5402bdb530648dddc018e38b2 fixes the compact-small ci failures: ordinary commands retain descendant-owned lineage/artifacts after root exit, while owned-worker root exit still triggers native cleanup. legacy fixtures now explicitly select their process-group contract and real native lifecycle fixtures use the canonical compiled owner. red reproduced; 231 targeted tests across 13 complete files and core production types passed. rebased onto main 4187710037fc88b467b9a6017c069c833e6d6f10, preserving both sides of the two additive capability conflicts; all eight fix files remain byte-identical to that proof. sally requested publication without another local suite and fresh hosted review/ci. incomplete local static checks and the existing maintainer qualification disposition remain explicit in the updated body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T02:33:50.848Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openshell-worker-process-ownership-repair",
+        "head_sha": "60f69c15f310acc5402bdb530648dddc018e38b2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
