@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "autonomous",
+  "run_id": "36592345997",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36592345997",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-09-29T16:23:57.786Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_pr": null,
+  "summary": "The agent write, edit, and apply-patch paths on the preflight main SHA still persist LF-only batch content. A narrow fix PR is warranted, but this worker has a read-only filesystem, no installed dependencies, and no Windows CMD host, so it could not implement or validate the fix. The named updater restart helper has been removed; its current scheduled-task replacement already generates CRLF and uses the Windows launcher encoder.",
+  "actions": [
+    {
+      "target": "#119484",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "The open issue remains actionable on current main. Runtime reproduction and implementation require a writable checkout."
+    },
+    {
+      "target": "#119540",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no closure action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119484",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Implementation and validation cannot run in this read-only worker. The executor needs a writable checkout and Windows proof host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
