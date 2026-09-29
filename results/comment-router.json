@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-29T15:51:30.126Z",
+  "updated_at": "2026-09-29T15:49:46.651Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161005:5885378883:2026-09-29T07:05:03Z:re_review",
+      "comment_id": "5885378883",
+      "comment_version_key": "5885378883:2026-09-29T07:05:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161005#issuecomment-5885378883",
+      "comment_created_at": "2026-09-29T07:05:03Z",
+      "comment_updated_at": "2026-09-29T07:05:03Z",
+      "comment_body_sha256": "3d2517d0dbd418cf143221a77bc6291b57d707e2cf841c0ec1495b0da1d71a4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161005,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T07:33:44.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-detach-durable-key-main",
+        "head_sha": "feab547f10bec0838639832fafaba0a2166b9de7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136177:5506984865:2026-09-29T07:19:46Z:clawsweeper_auto_repair",
       "comment_id": "5506984865",
@@ -33491,39 +33538,6 @@
         "kind": "pull_request",
         "branch": "docs/remote-checks",
         "head_sha": "a5521bc61c7acbb86676cbc11bb7e7601597c590",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161264:5893709857:2026-09-29T15:50:30Z:clawsweeper_needs_human",
-      "comment_id": "5893709857",
-      "comment_version_key": "5893709857:2026-09-29T15:50:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161264#issuecomment-5893709857",
-      "comment_created_at": "2026-09-29T15:50:30Z",
-      "comment_updated_at": "2026-09-29T15:50:30Z",
-      "comment_body_sha256": "fc9faa3d55c444fd9ae1d41092f937646c10d964c84f304d5647a40fe2756ae3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161264,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5d6d27ae8bfbccd5159c9f2c8f9169ebad9c2984)",
-      "expected_head_sha": "5d6d27ae8bfbccd5159c9f2c8f9169ebad9c2984",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T15:51:30.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/test-audit-msteams-app-fixtures-20260929",
-        "head_sha": "5d6d27ae8bfbccd5159c9f2c8f9169ebad9c2984",
         "cluster_id": null,
         "job_path": null
       }
