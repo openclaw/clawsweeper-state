@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T00:57:50.883Z",
+  "updated_at": "2026-09-29T00:58:04.463Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160275:5866178674:2026-09-28T18:59:34Z:clawsweeper_needs_human",
-      "comment_id": "5866178674",
-      "comment_version_key": "5866178674:2026-09-28T18:59:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160275#issuecomment-5866178674",
-      "comment_created_at": "2026-09-28T08:19:41Z",
-      "comment_updated_at": "2026-09-28T18:59:34Z",
-      "comment_body_sha256": "ee2994c1379914cf635e5cda3698a516c411c847a9337e97b080ecc6e4a7ce47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160275,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway and queue owners publish a steer capability for an existing input, but the supplied backend...; Review finding: [P1] Check steering authority before the Codex transcript write — src/auto-reply/reply/agent-runner-steer-adoption.ts:230-239 - [P1] Recheck reservations when a co... (sha=e26167eb7de4a47beff67fae75a737cc1c8ff90f)",
-      "expected_head_sha": "e26167eb7de4a47beff67fae75a737cc1c8ff90f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T19:11:27.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/jev-queue-decision-missing-steer-option",
-        "head_sha": "e26167eb7de4a47beff67fae75a737cc1c8ff90f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160325:5867151894:2026-09-28T19:03:24Z:clawsweeper_needs_human",
       "comment_id": "5867151894",
@@ -33815,6 +33782,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159947:5881575985:2026-09-29T00:56:53Z:re_review",
+      "comment_id": "5881575985",
+      "comment_version_key": "5881575985:2026-09-29T00:56:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159947#issuecomment-5881575985",
+      "comment_created_at": "2026-09-29T00:56:53Z",
+      "comment_updated_at": "2026-09-29T00:56:53Z",
+      "comment_body_sha256": "686dc61bba22c8a0bfcde68dde0bb33f3162cfb58480833f157bfd57186ef97d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159947,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — 679eca0c48078f7bdab8ef074c807d4e3855360c adds inspected and embedded before/after visual evidence, plus repairs the real layout defects it exposed (zero-height preview audio and clipped uncertainty warning). browser regressions failed before and pass after. screenshots explicitly label synthetic/intercepted gateway and are not live google proof. live provider work remains separate; exact-head owner approvals remain required",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T00:58:02.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/control-ui-voice-lab",
+        "head_sha": "679eca0c48078f7bdab8ef074c807d4e3855360c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
