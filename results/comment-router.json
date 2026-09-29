@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T21:29:07.044Z",
+  "updated_at": "2026-09-29T21:29:29.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161007:5890544046:2026-09-29T12:43:18Z:re_review",
-      "comment_id": "5890544046",
-      "comment_version_key": "5890544046:2026-09-29T12:43:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161007#issuecomment-5890544046",
-      "comment_created_at": "2026-09-29T12:43:18Z",
-      "comment_updated_at": "2026-09-29T12:43:18Z",
-      "comment_body_sha256": "64add6ad0b5ed0fe199094b46ac2590e80fb00cd472c0026e26d9c16d691f810",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161007,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:44:29.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/cron-failure-repair",
-        "head_sha": "f33d7005c02d4117e046481a11334fb57156db48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139220:5553401133:2026-09-29T12:39:30Z:clawsweeper_auto_repair",
       "comment_id": "5553401133",
@@ -33398,6 +33351,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-prepare-diagnostics-20260929",
         "head_sha": "f25043b08d3b028e718382032ceb5dfafd0f325c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161339:5896598595:2026-09-29T21:28:23Z:clawsweeper_needs_human",
+      "comment_id": "5896598595",
+      "comment_version_key": "5896598595:2026-09-29T21:28:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161339#issuecomment-5896598595",
+      "comment_created_at": "2026-09-29T18:53:29Z",
+      "comment_updated_at": "2026-09-29T21:28:23Z",
+      "comment_body_sha256": "daf28cdd3dd82d2568d3ea70736c0ad1933373de6b52342b3b635237c52a42a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Codex shared-client and login owners transfer credential choice to a remote host, but the PR report...; Review finding: [P1] Keep host-auth clients scoped to their OpenClaw agent — extensions/codex/src/app-server/shared-client.ts:353-357 - [P1] Recheck the host account before a reus... (sha=7b46e593f73f8fed4c359f63d43b7366acde417c)",
+      "expected_head_sha": "7b46e593f73f8fed4c359f63d43b7366acde417c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T21:29:29.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-1-codex-host-owned-auth",
+        "head_sha": "7b46e593f73f8fed4c359f63d43b7366acde417c",
         "cluster_id": null,
         "job_path": null
       }
