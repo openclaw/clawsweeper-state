@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T15:20:38.586Z",
+  "updated_at": "2026-09-29T15:22:32.623Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160956:5885481461:2026-09-29T07:12:46Z:re_review",
-      "comment_id": "5885481461",
-      "comment_version_key": "5885481461:2026-09-29T07:12:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160956#issuecomment-5885481461",
-      "comment_created_at": "2026-09-29T07:12:46Z",
-      "comment_updated_at": "2026-09-29T07:12:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160956,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T07:13:55.105Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openrouter-attribution-categories",
-        "head_sha": "55824fae4938e44e0ae6bb42abd120f72b48dbfb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158229:5836708515:2026-09-29T07:06:11Z:clawsweeper_needs_human",
       "comment_id": "5836708515",
@@ -33572,6 +33525,39 @@
         "kind": "pull_request",
         "branch": "codex/preserve-live-pending-input",
         "head_sha": "e019f46ef7f705a03f3f3417d28d2dcfc6744b9c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160448:5869994337:2026-09-29T15:09:40Z:clawsweeper_needs_human",
+      "comment_id": "5869994337",
+      "comment_version_key": "5869994337:2026-09-29T15:09:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160448#issuecomment-5869994337",
+      "comment_created_at": "2026-09-28T12:39:19Z",
+      "comment_updated_at": "2026-09-29T15:09:40Z",
+      "comment_body_sha256": "972a223a0aad6fc9cef9b0284af2971d1cd707d8dab8caf7e1edeca02eece748",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160448,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Doctor’s SQLite owner repair and Gateway run admission are represented by tests and earlier-head CI, but the ca...; Review finding: [P1] Preserve the accepted deliver request alias — src/cron/delivery-field-schemas.ts:10-13 - [medium] Verify repaired ownership at final execution — src/cron/stor... (sha=a6d9e86812cbc0ab1fa0c05d131d7ef45bcb53a2)",
+      "expected_head_sha": "a6d9e86812cbc0ab1fa0c05d131d7ef45bcb53a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T15:22:32.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-cron-owner",
+        "head_sha": "a6d9e86812cbc0ab1fa0c05d131d7ef45bcb53a2",
         "cluster_id": null,
         "job_path": null
       }
