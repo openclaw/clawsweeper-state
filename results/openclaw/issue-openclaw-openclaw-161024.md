@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161024"
-mode: "plan"
-run_id: "36540065437"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36540065437"
+mode: "autonomous"
+run_id: "36545572619"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36545572619"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-29T08:06:03.628Z"
-canonical: "#161024"
-canonical_issue: "#161024"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-29T09:37:19.941Z"
+canonical: "https://github.com/openclaw/openclaw/issues/161024"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/161024"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36540065437](https://github.com/openclaw/clawsweeper/actions/runs/36540065437)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36545572619](https://github.com/openclaw/clawsweeper/actions/runs/36545572619)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #161024
+Canonical: https://github.com/openclaw/openclaw/issues/161024
 
 ## Summary
 
-Current checkout matches the preflight main SHA. The reported wait remains source-supported: the missing-service early exit requires a free port. Plan a narrow diagnostic-readiness fix, but reproduce it through the isolated CLI entry point before editing. No code, GitHub action, or validation command was run in this plan.
+At main cec7fe73, source inspection supports the reported readiness wait, but the required CLI reproduction and implementation could not run. The checkout is read-only, has no dependencies or build output, and pnpm fails with EROFS. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Current checkout matches the preflight main SHA. The reported wait remains sourc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161024 | fix_needed | planned | canonical | Keep the issue open and reproduce the foreign-listener failure through the real CLI before implementing the status-specific early outcome. |
+| #161024 | fix_needed | planned | canonical | A narrow existing-behavior fix is indicated, subject to the required real-CLI reproduction on a writable host. |
+| cluster:issue-openclaw-openclaw-161024 | build_fix_artifact | blocked |  | Read-only filesystem and unavailable toolchain prevent the real CLI reproduction, edits, and validation required before a fix PR. |
 
 ## Needs Human
 

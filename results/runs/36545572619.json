@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161024",
+  "mode": "autonomous",
+  "run_id": "36545572619",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36545572619",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161024.md",
+  "published_at": "2026-09-29T09:37:19.941Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161024",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161024",
+  "canonical_pr": null,
+  "summary": "At main cec7fe73, source inspection supports the reported readiness wait, but the required CLI reproduction and implementation could not run. The checkout is read-only, has no dependencies or build output, and pnpm fails with EROFS. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#161024",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161024",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior fix is indicated, subject to the required real-CLI reproduction on a writable host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161024",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161024",
+      "candidate_fix": null,
+      "reason": "Read-only filesystem and unavailable toolchain prevent the real CLI reproduction, edits, and validation required before a fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
