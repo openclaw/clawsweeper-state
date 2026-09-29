@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-29T13:58:10.868Z",
+  "updated_at": "2026-09-29T13:58:22.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154158:5753560877:2026-09-20T23:34:21Z:re_review",
-      "comment_id": "5753560877",
-      "comment_version_key": "5753560877:2026-09-20T23:34:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154158#issuecomment-5753560877",
-      "comment_created_at": "2026-09-20T23:34:21Z",
-      "comment_updated_at": "2026-09-20T23:34:21Z",
-      "comment_body_sha256": "81376c4df333744108c201cdd3512e141bee6449a8e19d10ca60d5bbd816c644",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154158,
-      "author": "ayoakouh",
-      "author_id": 185819768,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — updated to 890d1e7e4. removed the unused cache-loader dependency and corrected the in-flight cancellation fixture flagged by ci. the dependency contract passes 475 tests and the lifecycle file passes 12 tests; proofs and limitations are updated in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T06:33:56.349Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154158:5753753518:2026-09-21T00:11:02Z:re_review",
       "comment_id": "5753753518",
@@ -33530,6 +33503,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160946:5883559810:2026-09-29T13:57:21Z:clawsweeper_needs_human",
+      "comment_id": "5883559810",
+      "comment_version_key": "5883559810:2026-09-29T13:57:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160946#issuecomment-5883559810",
+      "comment_created_at": "2026-09-29T04:18:39Z",
+      "comment_updated_at": "2026-09-29T13:57:21Z",
+      "comment_body_sha256": "dca4623c30256b4aed15319a89c419a5bf2291548b893a353f07be0734563ef4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=a3ff20cabb67987a4ef7719272aa1ccf187d62fe)",
+      "expected_head_sha": "a3ff20cabb67987a4ef7719272aa1ccf187d62fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T13:58:22.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/retained-state-reads-20260928",
+        "head_sha": "a3ff20cabb67987a4ef7719272aa1ccf187d62fe",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
