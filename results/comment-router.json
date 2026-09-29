@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:27:05.129Z",
+  "updated_at": "2026-09-29T11:27:22.413Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160888:5882280221:2026-09-29T04:35:13Z:clawsweeper_needs_human",
-      "comment_id": "5882280221",
-      "comment_version_key": "5882280221:2026-09-29T04:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160888#issuecomment-5882280221",
-      "comment_created_at": "2026-09-29T02:07:27Z",
-      "comment_updated_at": "2026-09-29T04:35:13Z",
-      "comment_body_sha256": "084455b391d10588af46302fbc49914c6629b0b5867e5fe0364b68e087efc203",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep masking pass after aligned or long inline fields (P1)** - The new {0,4} whitespace and {1,256} value limits make records such as user = bot pass: opaque-secret or a key=&lt;257-character value> pass: opaque...; Review finding: [P1] Keep masking pass after aligned or long inline fields — src/logging/redact-patterns.ts:87 - [high] Password field can bypass transcript and log masking — src/... (sha=d7a88e8020c33a3c011d156d6cb836adf688900b)",
-      "expected_head_sha": "d7a88e8020c33a3c011d156d6cb836adf688900b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:36:18.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/redact-prose-pass",
-        "head_sha": "d7a88e8020c33a3c011d156d6cb836adf688900b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160620:5876130261:2026-09-29T04:35:55Z:clawsweeper_needs_human",
       "comment_id": "5876130261",
@@ -33466,6 +33433,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143327:5889301173:2026-09-29T11:26:22Z:re_review",
+      "comment_id": "5889301173",
+      "comment_version_key": "5889301173:2026-09-29T11:26:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5889301173",
+      "comment_created_at": "2026-09-29T11:26:22Z",
+      "comment_updated_at": "2026-09-29T11:26:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143327,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T11:27:20.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
+        "head_sha": "b4dcb32c43b3b56071ae38a6dd87abb2b13b705b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
