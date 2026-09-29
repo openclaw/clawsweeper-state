@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:19:01.586Z",
+  "updated_at": "2026-09-29T02:19:45.434Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157693:5879388099:2026-09-28T21:50:10Z:re_review",
-      "comment_id": "5879388099",
-      "comment_version_key": "5879388099:2026-09-28T21:50:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5879388099",
-      "comment_created_at": "2026-09-28T21:50:10Z",
-      "comment_updated_at": "2026-09-28T21:50:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157693,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T21:58:36.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/address-all-agent-outage-p0-157325",
-        "head_sha": "bb1f84b9a0477a1786dbc4dd5bb330c04cb7848e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158459:5841306155:2026-09-28T21:57:37Z:clawsweeper_auto_repair",
       "comment_id": "5841306155",
@@ -33433,6 +33386,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160696:5878066053:2026-09-29T02:18:45Z:clawsweeper_needs_human",
+      "comment_id": "5878066053",
+      "comment_version_key": "5878066053:2026-09-29T02:18:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160696#issuecomment-5878066053",
+      "comment_created_at": "2026-09-28T20:38:00Z",
+      "comment_updated_at": "2026-09-29T02:18:45Z",
+      "comment_body_sha256": "ed90375717f43d1110b44af03b52549ca947b754b353b2e36228f401f451242e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160696,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The exact-head runner matrix reports real outbound loading and staging for allowed and sender-denied c...; Review finding: [P1] Fence staging against sessions created after dispatch starts — src/auto-reply/reply/dispatch-from-config.prepare-delivery.ts:149 - [high] New-session media st... (sha=d5556bc49c0ca44207e607a8340b30317209c87e)",
+      "expected_head_sha": "d5556bc49c0ca44207e607a8340b30317209c87e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T02:19:45.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1068",
+        "head_sha": "d5556bc49c0ca44207e607a8340b30317209c87e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
