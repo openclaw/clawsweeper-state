@@ -1,0 +1,88 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-3882",
+  "mode": "autonomous",
+  "run_id": "36647634473",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36647634473",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-3882.md",
+  "published_at": "2026-09-29T23:58:09.774Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/3882",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/3882",
+  "canonical_pr": null,
+  "summary": "No narrow implementation PR is justified yet. Current main contains fixes for several identified CPU and write paths, but the remaining symptoms in #3882 lack a current-build CPU sample or write trace identifying a distinct failing path.",
+  "actions": [
+    {
+      "target": "#3882",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#3882",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked pending a current-build CPU sample or redacted write trace that identifies a remaining path and supports a focused regression. The issue should stay open."
+    },
+    {
+      "target": "#3247",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It shares a resource-use symptom with #3882 but retains a distinct, unresolved WebKit question."
+    },
+    {
+      "target": "#3316",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related cost-scan work with unique remaining behavior; it is not a duplicate of #3882."
+    },
+    {
+      "target": "#3323",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The memory-growth report needs its own retained-object evidence."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 3
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#3882",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
