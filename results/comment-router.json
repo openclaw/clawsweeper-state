@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T15:29:00.770Z",
+  "updated_at": "2026-09-29T15:31:06.175Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158251:5837563546:2026-09-29T07:09:13Z:clawsweeper_needs_human",
-      "comment_id": "5837563546",
-      "comment_version_key": "5837563546:2026-09-29T07:09:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158251#issuecomment-5837563546",
-      "comment_created_at": "2026-09-25T18:34:10Z",
-      "comment_updated_at": "2026-09-29T07:09:13Z",
-      "comment_body_sha256": "4a8405f6da97aed5ce78425f765dedbbfcf8cc1c2943ce66957271acc97a4e06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158251,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed spawn cleanup dispatches chat.abort through the Gateway's system-admin lifecycle route after regist...; Review finding: [P2] Bound preserved-run abort cleanup before awaiting it — src/agents/subagents/spawn/subagent-spawn.ts:495-500 - [P2] Move the planner reload off the Gateway thr... (sha=67c3e3e6226d17268f6bb41f32e6b55501fd6994)",
-      "expected_head_sha": "67c3e3e6226d17268f6bb41f32e6b55501fd6994",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T07:16:03.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/subagent-registration-worker-20260925",
-        "head_sha": "67c3e3e6226d17268f6bb41f32e6b55501fd6994",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160980:5884113185:2026-09-29T07:15:29Z:clawsweeper_needs_human",
       "comment_id": "5884113185",
@@ -33547,6 +33514,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161256:5893364800:2026-09-29T15:30:05Z:re_review",
+      "comment_id": "5893364800",
+      "comment_version_key": "5893364800:2026-09-29T15:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161256#issuecomment-5893364800",
+      "comment_created_at": "2026-09-29T15:30:05Z",
+      "comment_updated_at": "2026-09-29T15:30:05Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161256,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T15:31:04.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-node-ci-advisory",
+        "head_sha": "d0cdbe06df5aef059e65dad27e4b5bae7828e103",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
