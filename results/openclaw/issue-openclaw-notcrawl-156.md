@@ -2,12 +2,12 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-156"
 mode: "autonomous"
-run_id: "36598014615"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36598014615"
+run_id: "36606207698"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36606207698"
 head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-29T16:33:10.518Z"
+published_at: "2026-09-29T17:44:58.137Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/156"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/156"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36598014615](https://github.com/openclaw/clawsweeper/actions/runs/36598014615)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36606207698](https://github.com/openclaw/clawsweeper/actions/runs/36606207698)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/notcrawl/issues/156
 
 ## Summary
 
-Issue #156 remains reproducible at main 204af2f8. A narrow fix is warranted, but this read-only checkout prevented adding the failing regression, implementing the fix, and validating a PR branch.
+Issue #156 is reproducible from source on main 204af2f8: the retry predicate rejects a client timeout while the caller context remains active. The checkout is read-only, so I could not create the required failing regression, change code, validate a branch, or prepare a PR.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Issue #156 remains reproducible at main 204af2f8. A narrow fix is warranted, but
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #156 | fix_needed | planned | canonical | The reported client-timeout retry gap remains open. |
-| cluster:issue-openclaw-notcrawl-156 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and Go module cache. |
+| #156 | fix_needed | planned | canonical | A narrow fix is still needed. The hydrated issue is open, and no active implementation PR is identified. |
+| cluster:issue-openclaw-notcrawl-156 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and Go module cache before the required failing regression and branch validation can run. |
 
 ## Needs Human
 
