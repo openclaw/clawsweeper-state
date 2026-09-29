@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160839",
+  "mode": "autonomous",
+  "run_id": "36505937411",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36505937411",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160839.md",
+  "published_at": "2026-09-29T01:32:21.882Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160839",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160839",
+  "canonical_pr": null,
+  "summary": "The reported keyword recall failure remains plausible at preflight main e1ccea91271fb1fc4ab17c511ee03d836f0691e4. An in-memory FTS5 probe reproduced the AND-query miss and showed a rare-term result surviving a bounded OR query. The read-only checkout has no installed dependencies, so the required failing regression through memory_search, implementation, and local validation could not run. No branch or PR was created.",
+  "actions": [
+    {
+      "target": "#160839",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#160839",
+      "candidate_fix": null,
+      "reason": "Repair the existing body keyword recall path while preserving path, trigram, vector, configuration, and stored-data behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160839",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#160839",
+      "candidate_fix": null,
+      "reason": "The executor must first demonstrate the failure through the indexed memory_search entry point, then implement and validate the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-160839",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#160839",
+      "candidate_fix": null,
+      "reason": "Open or update the requested PR only after the executor reproduces the miss, repairs the branch, and passes local validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
