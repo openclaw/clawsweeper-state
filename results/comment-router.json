@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T07:16:25.482Z",
+  "updated_at": "2026-09-29T07:16:41.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160662:5876855807:2026-09-28T19:21:16Z:re_review",
-      "comment_id": "5876855807",
-      "comment_version_key": "5876855807:2026-09-28T19:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160662#issuecomment-5876855807",
-      "comment_created_at": "2026-09-28T19:21:16Z",
-      "comment_updated_at": "2026-09-28T19:21:16Z",
-      "comment_body_sha256": "58aec672ba84ea47e3645061093c878159b7fbfb7a27813b3a82ab0946666b62",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160662,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T02:18:17.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l143-agents-subsystems",
-        "head_sha": "be80717e449e76677761acbc5f8cf39a44c2d727",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160662:5876717066:2026-09-29T02:17:10Z:clawsweeper_needs_human",
       "comment_id": "5876717066",
@@ -33193,6 +33146,39 @@
         "kind": "pull_request",
         "branch": "feat/i18n-catalan",
         "head_sha": "e65dadc1fd39d769e601848c15987b47989fcfc8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160858:5881792291:2026-09-29T07:15:41Z:clawsweeper_needs_human",
+      "comment_id": "5881792291",
+      "comment_version_key": "5881792291:2026-09-29T07:15:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160858#issuecomment-5881792291",
+      "comment_created_at": "2026-09-29T01:18:45Z",
+      "comment_updated_at": "2026-09-29T07:15:41Z",
+      "comment_body_sha256": "d6062784ceb927836088922ab568494224e8f257236ad531b588978207cf2fff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new worker lifecycle has runtime and shutdown coverage, but the published updater-driver × candidate check on existing operator state required by AGENTS.md has not been shown. (sha=1bc62c89b15c5e4d4825f4a40c02a3e7186ed06d)",
+      "expected_head_sha": "1bc62c89b15c5e4d4825f4a40c02a3e7186ed06d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T07:16:41.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-lifecycle-worker-20260928",
+        "head_sha": "1bc62c89b15c5e4d4825f4a40c02a3e7186ed06d",
         "cluster_id": null,
         "job_path": null
       }
