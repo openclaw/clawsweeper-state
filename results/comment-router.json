@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:05:28.575Z",
+  "updated_at": "2026-09-29T11:06:14.139Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160946:5883559810:2026-09-29T04:18:39Z:clawsweeper_needs_human",
-      "comment_id": "5883559810",
-      "comment_version_key": "5883559810:2026-09-29T04:18:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160946#issuecomment-5883559810",
-      "comment_created_at": "2026-09-29T04:18:39Z",
-      "comment_updated_at": "2026-09-29T04:18:39Z",
-      "comment_body_sha256": "ad05031014a52e72a30c3f0d01a6ada34f93ee6d63d57e4e75c3afadde5b6375",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned PR is not cleanly mergeable, and no merged tree is available to verify the combined shared-state read and broker lifecycle against current main. (sha=7d6eb7b29eec59eab2e5a5c0878773c13e6bd6c7)",
-      "expected_head_sha": "7d6eb7b29eec59eab2e5a5c0878773c13e6bd6c7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:20:07.645Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/retained-state-reads-20260928",
-        "head_sha": "7d6eb7b29eec59eab2e5a5c0878773c13e6bd6c7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149691:5692463823:2026-09-29T04:18:52Z:clawsweeper_auto_repair",
       "comment_id": "5692463823",
@@ -33518,6 +33485,39 @@
       "status": "skipped",
       "processed_at": "2026-09-29T11:05:28.575Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161150:5888964276:2026-09-29T11:05:04Z:clawsweeper_needs_human",
+      "comment_id": "5888964276",
+      "comment_version_key": "5888964276:2026-09-29T11:05:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161150#issuecomment-5888964276",
+      "comment_created_at": "2026-09-29T11:05:04Z",
+      "comment_updated_at": "2026-09-29T11:05:04Z",
+      "comment_body_sha256": "ba94fa5b0d096c8bc9a91ce55de9fb8a6ea9591ce7b08be7983a9e005fef90d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed ClickClack service constructor is exercised by a fake-timer test with a mocked runtime and client, but the PR supplies no observed... (sha=05e0a550d50952faedd71d468e972899842f7f9d)",
+      "expected_head_sha": "05e0a550d50952faedd71d468e972899842f7f9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T11:06:14.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clickclack-discussion-poll-before-start",
+        "head_sha": "05e0a550d50952faedd71d468e972899842f7f9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
