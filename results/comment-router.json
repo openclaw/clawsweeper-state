@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:28:25.708Z",
+  "updated_at": "2026-09-29T01:28:34.886Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160661:5876625345:2026-09-28T20:03:38Z:clawsweeper_auto_repair",
-      "comment_id": "5876625345",
-      "comment_version_key": "5876625345:2026-09-28T20:03:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160661#issuecomment-5876625345",
-      "comment_created_at": "2026-09-28T19:05:46Z",
-      "comment_updated_at": "2026-09-28T20:03:38Z",
-      "comment_body_sha256": "6600596b46fe8fdcd5478a58493de9a7fd69b5b7a4dd95af767ed897117f3662",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160661,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3b43bcea9ca39209a7925944a124a853a8f09d0a)",
-      "expected_head_sha": "3b43bcea9ca39209a7925944a124a853a8f09d0a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T20:04:43.250Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cloudflare-identity-custom",
-        "head_sha": "3b43bcea9ca39209a7925944a124a853a8f09d0a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160680:5877520554:2026-09-28T20:04:10Z:clawsweeper_needs_human",
       "comment_id": "5877520554",
@@ -34173,6 +34140,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150668:5881886062:2026-09-29T01:27:36Z:re_review",
+      "comment_id": "5881886062",
+      "comment_version_key": "5881886062:2026-09-29T01:27:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150668#issuecomment-5881886062",
+      "comment_created_at": "2026-09-29T01:27:36Z",
+      "comment_updated_at": "2026-09-29T01:27:36Z",
+      "comment_body_sha256": "f480642c9fc3cf2a823e4510b7390578f87dede7d8730709ed8bc0a0bdbf545f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150668,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — updated head `f7dc2a34248877ce37099b08d197fd3568fd7a87` addresses both revision-2 findings. qr recovery preserves the authored port (the temporary-override regression failed before the fix, then passed) and now offers lan only, deferring automatic tailscale serve activation rather than claiming or replacing existing routes. existing configured serve/funnel pairing remains unchanged; those configurations return a url or a tailscale error before the loopback-only recovery guard",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T01:28:33.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-qr-clean-source-20260917",
+        "head_sha": "f7dc2a34248877ce37099b08d197fd3568fd7a87",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
