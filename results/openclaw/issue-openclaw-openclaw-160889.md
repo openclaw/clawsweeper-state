@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-160889"
-mode: "autonomous"
-run_id: "36511390346"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36511390346"
+mode: "plan"
+run_id: "36515161457"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36515161457"
 head_sha: "32cd4db41a50b57f301a955bd0e291cbfeb714e1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-29T02:48:03.257Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-29T03:03:58.023Z"
 canonical: "https://github.com/openclaw/openclaw/issues/160889"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/160889"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/160895"
 actions_total: 5
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36511390346](https://github.com/openclaw/clawsweeper/actions/runs/36511390346)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36515161457](https://github.com/openclaw/clawsweeper/actions/runs/36515161457)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/160889
 
 ## Summary
 
-The local source shows how tool-call ID repair can strip a checkpoint after its accepted boundary. Implementation is blocked: this read-only checkout is at 80597756, and the preflight main commit e187219f is unavailable locally. No regression was run and no code or GitHub state was changed.
+Current main still has the reported checkpoint invalidation path. An open contributor PR directly addresses it; preserve and validate that PR instead of creating a second implementation PR. Its CI gate is failing, so no merge or issue closure is recommended.
 
 ## Impact
 
@@ -66,11 +66,11 @@ The local source shows how tool-call ID repair can strip a checkpoint after its 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #160889 | fix_needed | planned | canonical | A narrow fix is indicated by source inspection, subject to a failing regression on the preflight main head. |
-| cluster:issue-openclaw-openclaw-160889 | build_fix_artifact | blocked |  | Refresh a writable task checkout to the reviewed main head, prove the regression through the sanitizer and real converter, then implement and validate the narrow fix. |
-| #150238 | keep_independent | planned | independent | Distinct feature and owner. |
-| #159687 | keep_independent | planned | independent | Separate work; no action on that PR in this cluster. |
-| #127106 | keep_closed | skipped | related | Already closed; no closure action is valid. |
+| https://github.com/openclaw/openclaw/pull/127106 | keep_closed | skipped | related | Historical related fix; already closed. |
+| https://github.com/openclaw/openclaw/issues/150238 | keep_independent | planned | independent | Separate feature and owner. |
+| https://github.com/openclaw/openclaw/pull/159687 | keep_independent | planned | independent | Separate feature PR. |
+| https://github.com/openclaw/openclaw/issues/160889 | keep_canonical | planned | canonical | Keep the report open until the candidate is validated and landed. |
+| https://github.com/openclaw/openclaw/pull/160895 | fix_needed | planned | canonical | Reproduce the defect on the pinned main head, inspect the failing check, then make only necessary repairs on this editable contributor branch. Recheck live state before any write. |
 
 ## Needs Human
 

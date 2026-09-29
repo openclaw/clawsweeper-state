@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-160889",
+  "mode": "plan",
+  "run_id": "36515161457",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36515161457",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-160889.md",
+  "published_at": "2026-09-29T03:03:58.023Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/160889",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/160889",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/160895",
+  "summary": "Current main still has the reported checkpoint invalidation path. An open contributor PR directly addresses it; preserve and validate that PR instead of creating a second implementation PR. Its CI gate is failing, so no merge or issue closure is recommended.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/127106",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "12",
+      "candidate_fix": null,
+      "reason": "Historical related fix; already closed."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/150238",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate feature and owner."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/159687",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate feature PR."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/160889",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "12",
+      "candidate_fix": "12",
+      "reason": "Keep the report open until the candidate is validated and landed."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/160895",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "12",
+      "candidate_fix": "12",
+      "reason": "Reproduce the defect on the pinned main head, inspect the failing check, then make only necessary repairs on this editable contributor branch. Recheck live state before any write."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_independent": 2,
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
