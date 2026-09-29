@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T02:28:25.139Z",
+  "updated_at": "2026-09-29T02:31:05.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160201:5864774711:2026-09-28T21:41:23Z:clawsweeper_needs_human",
-      "comment_id": "5864774711",
-      "comment_version_key": "5864774711:2026-09-28T21:41:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160201#issuecomment-5864774711",
-      "comment_created_at": "2026-09-28T06:38:17Z",
-      "comment_updated_at": "2026-09-28T21:41:23Z",
-      "comment_body_sha256": "929f7bb071eb8f607040a699480107a35930be3e3aaa7233ab3c35f2d252369a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160201,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ed9ce554b39efb737aa9a4f5a2f32bf61eb419ea)",
-      "expected_head_sha": "ed9ce554b39efb737aa9a4f5a2f32bf61eb419ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:05:46.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-witness-not-recorded-under-deployer-stop-20260919",
-        "head_sha": "ed9ce554b39efb737aa9a4f5a2f32bf61eb419ea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160203:5864827369:2026-09-28T20:50:33Z:clawsweeper_needs_human",
       "comment_id": "5864827369",
@@ -33183,6 +33150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111373:5882509225:2026-09-29T02:30:08Z:re_review",
+      "comment_id": "5882509225",
+      "comment_version_key": "5882509225:2026-09-29T02:30:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111373#issuecomment-5882509225",
+      "comment_created_at": "2026-09-29T02:30:08Z",
+      "comment_updated_at": "2026-09-29T02:30:08Z",
+      "comment_body_sha256": "c1a0840f52d262b3ab835a1c02959ccb040348fe71983a5544b362d164809d67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111373,
+      "author": "YangManBOBO",
+      "author_id": 156181593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T02:31:03.539Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-lane-starvation",
+        "head_sha": "fdd048e3ae1bf7ff5595a0dd49c8de18e62aacf0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
