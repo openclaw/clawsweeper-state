@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T11:45:02.482Z",
+  "updated_at": "2026-09-29T11:45:33.806Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160967:5883888040:2026-09-29T04:53:26Z:clawsweeper_needs_human",
-      "comment_id": "5883888040",
-      "comment_version_key": "5883888040:2026-09-29T04:53:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160967#issuecomment-5883888040",
-      "comment_created_at": "2026-09-29T04:53:26Z",
-      "comment_updated_at": "2026-09-29T04:53:26Z",
-      "comment_body_sha256": "b902e6551e1367065e3ee0d36215dde32a9b25dbbd7fcf9635672b1c950642f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160967,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=1c65e621881cee35909cbceda82bf51d309d73d9)",
-      "expected_head_sha": "1c65e621881cee35909cbceda82bf51d309d73d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T04:54:18.117Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/track-authorship-of-lengthy-text-with-git-blame",
-        "head_sha": "1c65e621881cee35909cbceda82bf51d309d73d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158723:5883845288:2026-09-29T04:49:02Z:re_review",
       "comment_id": "5883845288",
@@ -33412,6 +33379,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161163:5889577914:2026-09-29T11:44:21Z:clawsweeper_needs_human",
+      "comment_id": "5889577914",
+      "comment_version_key": "5889577914:2026-09-29T11:44:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161163#issuecomment-5889577914",
+      "comment_created_at": "2026-09-29T11:44:21Z",
+      "comment_updated_at": "2026-09-29T11:44:21Z",
+      "comment_body_sha256": "c17e24908dcce7b1b97973595e7eecdaf035eed40f9d29d11f6c602cd3edb8e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR’s loopback HTTP trace shows the Bedrock embedding owner recovering from IMDS throttling after t...; Review finding: [P1] Recreate the chain for non-expiring profile credentials — extensions/amazon-bedrock/aws-credential-refresh.ts:28-30 - [medium] Stale AWS signing identity afte... (sha=be1b4f3b926116167881906cc72c8cbea4bab272)",
+      "expected_head_sha": "be1b4f3b926116167881906cc72c8cbea4bab272",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T11:45:33.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bedrock-embedding-shared-client",
+        "head_sha": "be1b4f3b926116167881906cc72c8cbea4bab272",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
