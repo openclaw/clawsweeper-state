@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T15:24:34.394Z",
+  "updated_at": "2026-09-29T15:28:12.726Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161055:5885507911:2026-09-29T07:14:46Z:re_review",
-      "comment_id": "5885507911",
-      "comment_version_key": "5885507911:2026-09-29T07:14:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161055#issuecomment-5885507911",
-      "comment_created_at": "2026-09-29T07:14:46Z",
-      "comment_updated_at": "2026-09-29T07:14:46Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161055,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T07:15:43.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-call-direct-only-guidance-161022",
-        "head_sha": "d26d555f972b487371e2e25686d0ef5861d6dae2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160978:5884092411:2026-09-29T07:15:01Z:clawsweeper_needs_human",
       "comment_id": "5884092411",
@@ -33558,6 +33511,39 @@
         "kind": "pull_request",
         "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.6",
         "head_sha": "ae848b16da3df14187c98a272bc48aa6fe9ddd7f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1513:5819648089:2026-09-29T15:27:05Z:clawsweeper_needs_human",
+      "comment_id": "5819648089",
+      "comment_version_key": "5819648089:2026-09-29T15:27:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1513#issuecomment-5819648089",
+      "comment_created_at": "2026-09-24T18:16:48Z",
+      "comment_updated_at": "2026-09-29T15:27:05Z",
+      "comment_body_sha256": "d6e088f8079d2407027f1ab32ee4b51d567c54915124efcbb27178850ebd0263",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The inspected earlier-head Windows Config-page screenshot shows the hidden array count and controls through a loopback stub, but the c...; Review finding: [P2] Route sensitive objects before expanding schema properties — src/OpenClaw.Tray.WinUI/Controls/SchemaConfigEditor.xaml.cs:233-235 - [medium] Classified object... (sha=adc98c46cbbfb35f2780f51b53db723788b2315a)",
+      "expected_head_sha": "adc98c46cbbfb35f2780f51b53db723788b2315a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T15:28:12.726Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f083-mask-config-secrets",
+        "head_sha": "adc98c46cbbfb35f2780f51b53db723788b2315a",
         "cluster_id": null,
         "job_path": null
       }
