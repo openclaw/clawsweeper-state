@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T13:56:19.089Z",
+  "updated_at": "2026-09-29T13:56:30.354Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143647:5884938448:2026-09-29T06:30:14Z:re_review",
-      "comment_id": "5884938448",
-      "comment_version_key": "5884938448:2026-09-29T06:30:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143647#issuecomment-5884938448",
-      "comment_created_at": "2026-09-29T06:30:14Z",
-      "comment_updated_at": "2026-09-29T06:30:14Z",
-      "comment_body_sha256": "9d39f1f7b5a42c5465af86e161067f10742793515a0eed824f82d0258b8d6480",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143647,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T06:31:08.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-logout-cleanup-142421",
-        "head_sha": "f660b77e1e963fb5c643b9d7241442317519090c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5860797200:2026-09-27T23:24:17Z:re_review",
       "comment_id": "5860797200",
@@ -33540,6 +33493,39 @@
         "kind": "pull_request",
         "branch": "tcr/land-d100-1790683980",
         "head_sha": "9870314522bc99a52702bd58c167903b5df667f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160075:5862950455:2026-09-29T13:47:53Z:clawsweeper_needs_human",
+      "comment_id": "5862950455",
+      "comment_version_key": "5862950455:2026-09-29T13:47:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160075#issuecomment-5862950455",
+      "comment_created_at": "2026-09-28T03:44:50Z",
+      "comment_updated_at": "2026-09-29T13:47:53Z",
+      "comment_body_sha256": "263d912f4133eccd52eb99bf62086d51e1ed83c2728e38677bd73fdf077b2ed9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging while the PR body closes https://github.com/openclaw/openclaw/issues/159339 could close that broader report before its main-session, Windows command, and failure-alert behavio... (sha=db18dac33d4a189759c54d5d09a01c79a67fbf9e)",
+      "expected_head_sha": "db18dac33d4a189759c54d5d09a01c79a67fbf9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T13:56:30.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/cron-dataclone-env-proxy",
+        "head_sha": "db18dac33d4a189759c54d5d09a01c79a67fbf9e",
         "cluster_id": null,
         "job_path": null
       }
