@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161022",
+  "mode": "autonomous",
+  "run_id": "36531939759",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36531939759",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161022.md",
+  "published_at": "2026-09-29T07:17:14.605Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161022",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161022",
+  "canonical_pr": null,
+  "summary": "Current main still has the reported Tool Search recovery defect. Source inspection established the failing path, but this read-only checkout has no node_modules, so I could not add the required failing regression, implement the fix, or validate a PR branch. A narrow fix artifact is ready for execution.",
+  "actions": [
+    {
+      "target": "#161022",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161022",
+      "candidate_fix": null,
+      "reason": "The source-proven bug needs an owner-boundary regression and a narrow repair."
+    },
+    {
+      "target": "#141743",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161022",
+      "candidate_fix": null,
+      "reason": "Distinct remaining behavior; leave the linked issue open."
+    },
+    {
+      "target": "#157327",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action permitted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161022",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161022",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
