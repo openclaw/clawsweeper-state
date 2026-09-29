@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:17:47.650Z",
+  "updated_at": "2026-09-29T01:18:12.502Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5877046397:2026-09-28T19:33:51Z:re_review",
-      "comment_id": "5877046397",
-      "comment_version_key": "5877046397:2026-09-28T19:33:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5877046397",
-      "comment_created_at": "2026-09-28T19:33:51Z",
-      "comment_updated_at": "2026-09-28T19:33:51Z",
-      "comment_body_sha256": "6fad6e218ca3be278da861ecf9f93183132d3682d0b033b8fd3b35468fcd7311",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (60 commits, clean, no conflicts). skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, run-usage). focused tests 7/7 pass, tsgo:core clean on our files (8 pre-existing upstream errors in node-proxy-agent/api-baseline untouched)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T19:42:59.002Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "b8dad429aa404b1e9f9b23893cb6d5d1ee20a602",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-28T19:41:36Z:clawsweeper_needs_human",
       "comment_id": "5567489931",
@@ -33862,6 +33815,39 @@
         "kind": "pull_request",
         "branch": "openclaw/improve-launch-in-sidechat-ux",
         "head_sha": "13c42b9e7bec908c304efe4c6fb4df29e8a11669",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160695:5878025973:2026-09-29T01:12:01Z:clawsweeper_needs_human",
+      "comment_id": "5878025973",
+      "comment_version_key": "5878025973:2026-09-29T01:12:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160695#issuecomment-5878025973",
+      "comment_created_at": "2026-09-28T20:35:41Z",
+      "comment_updated_at": "2026-09-29T01:12:01Z",
+      "comment_body_sha256": "358ada4683ca98e47bd0a4fdff554a100f1f64612637fb3f352d94e8192f7832",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: local simulated GitHub transport and real-Git fixtures exercise admission bindings, but no hosted nonpublishing...; Review finding: [P1] Gate the pre-contract candidate cutoff on release-owner approval — scripts/full-release-validation-at-sha.mts:1669-1671 - [medium] Prove revoked authority is... (sha=72aa29f5beb9e7912c8f280f3516cc1f6ef3823b)",
+      "expected_head_sha": "72aa29f5beb9e7912c8f280f3516cc1f6ef3823b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T01:18:12.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/implement-candidate-owned-frozen-release-qualification",
+        "head_sha": "72aa29f5beb9e7912c8f280f3516cc1f6ef3823b",
         "cluster_id": null,
         "job_path": null
       }
