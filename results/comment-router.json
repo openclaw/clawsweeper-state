@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:00:24.266Z",
+  "updated_at": "2026-09-29T05:00:48.733Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158916:5846887649:2026-09-29T00:55:59Z:clawsweeper_needs_human",
-      "comment_id": "5846887649",
-      "comment_version_key": "5846887649:2026-09-29T00:55:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158916#issuecomment-5846887649",
-      "comment_created_at": "2026-09-26T14:03:53Z",
-      "comment_updated_at": "2026-09-29T00:55:59Z",
-      "comment_body_sha256": "5274bf4c094319917fb1524de58600e5d720f2c35762c47448c268665863cbb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158916,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The integrated head has not shown a published updater running into candidate service recovery and backup rollback; a regression here could leave an existing Gateway service or its rec... (sha=0623f19c29402434b647a26443a4bc7bfc89ad5a)",
-      "expected_head_sha": "0623f19c29402434b647a26443a4bc7bfc89ad5a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T00:57:16.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l73-runtime2",
-        "head_sha": "0623f19c29402434b647a26443a4bc7bfc89ad5a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1407:5647870843:2026-09-29T00:56:47Z:clawsweeper_auto_repair",
       "comment_id": "5647870843",
@@ -32632,6 +32599,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160864:5883948381:2026-09-29T04:59:46Z:re_review",
+      "comment_id": "5883948381",
+      "comment_version_key": "5883948381:2026-09-29T04:59:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160864#issuecomment-5883948381",
+      "comment_created_at": "2026-09-29T04:59:46Z",
+      "comment_updated_at": "2026-09-29T04:59:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160864,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T05:00:47.158Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1067",
+        "head_sha": "fd884c367622bb6e8f7a862b343db0fa41e36daf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
