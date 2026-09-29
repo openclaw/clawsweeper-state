@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T04:59:05.033Z",
+  "updated_at": "2026-09-29T04:59:44.024Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160382:5868520787:2026-09-29T00:55:20Z:clawsweeper_needs_human",
-      "comment_id": "5868520787",
-      "comment_version_key": "5868520787:2026-09-29T00:55:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160382#issuecomment-5868520787",
-      "comment_created_at": "2026-09-28T10:58:05Z",
-      "comment_updated_at": "2026-09-29T00:55:20Z",
-      "comment_body_sha256": "b18f2eb5dfca47a69e671b9596c90a8f887b0adbdc248663b4d8915bd8fd9965",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160382,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned candidate has not yet shown that the published updater preserves audit and recovery data on copied existing SQLite state and that reopening the migrated database is idempot... (sha=22ac22f08f9c3f0e67f44bdabbe8deb499f11e74)",
-      "expected_head_sha": "22ac22f08f9c3f0e67f44bdabbe8deb499f11e74",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T00:56:15.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l138-state-skills-mid",
-        "head_sha": "22ac22f08f9c3f0e67f44bdabbe8deb499f11e74",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160817:5881137318:2026-09-29T00:52:11Z:clawsweeper_auto_repair",
       "comment_id": "5881137318",
@@ -32604,6 +32571,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160950:5883939493:2026-09-29T04:58:51Z:re_review",
+      "comment_id": "5883939493",
+      "comment_version_key": "5883939493:2026-09-29T04:58:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160950#issuecomment-5883939493",
+      "comment_created_at": "2026-09-29T04:58:51Z",
+      "comment_updated_at": "2026-09-29T04:58:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160950,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T04:59:42.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/emoji-picker-with-before-and-after-proof",
+        "head_sha": "f3137ac7d85bf98d6f2db25ac74d28fc04c1ef7d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
