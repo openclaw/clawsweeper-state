@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T12:16:15.065Z",
+  "updated_at": "2026-09-29T12:17:16.887Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160888:5882280221:2026-09-29T05:13:08Z:clawsweeper_needs_human",
-      "comment_id": "5882280221",
-      "comment_version_key": "5882280221:2026-09-29T05:13:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160888#issuecomment-5882280221",
-      "comment_created_at": "2026-09-29T02:07:27Z",
-      "comment_updated_at": "2026-09-29T05:13:08Z",
-      "comment_body_sha256": "67eb8312f3cc71573f1b241b5768b682812e07f364b242a23c56e0321480d315",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Mask later pass fields in the same record (P1)** - For pass: firstvalue pass: secondvalue, the first field is recognized, but its spaced colon never sets assignmentSeen. The second field follows a letter and is...; Review finding: [P1] Mask later pass fields in the same record — src/logging/redact-patterns.ts:300-303 - [high] Second password field can remain visible — src/logging/redact-patt... (sha=2d55c59449ee4bfc11adcf0bf1b5458b32f3e53c)",
-      "expected_head_sha": "2d55c59449ee4bfc11adcf0bf1b5458b32f3e53c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T05:19:10.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/redact-prose-pass",
-        "head_sha": "2d55c59449ee4bfc11adcf0bf1b5458b32f3e53c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160707:5878439380:2026-09-29T05:10:11Z:clawsweeper_needs_human",
       "comment_id": "5878439380",
@@ -33409,6 +33376,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161091:5886880179:2026-09-29T12:11:25Z:clawsweeper_needs_human",
+      "comment_id": "5886880179",
+      "comment_version_key": "5886880179:2026-09-29T12:11:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161091#issuecomment-5886880179",
+      "comment_created_at": "2026-09-29T08:50:36Z",
+      "comment_updated_at": "2026-09-29T12:11:25Z",
+      "comment_body_sha256": "bd2cc038c23642ad19ddfc841272aa4336fa95c316aa2357efbcfd80f825368b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI run leaves a clean-close writer-drain assertion unattributed and cancelled jobs unexecuted; its focused passing replay on main does not establish whether the failing... (sha=c61098cab0fe7a57580fa9caa506f385bdc5d684)",
+      "expected_head_sha": "c61098cab0fe7a57580fa9caa506f385bdc5d684",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T12:17:16.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/detached-finalization-transcript-main",
+        "head_sha": "c61098cab0fe7a57580fa9caa506f385bdc5d684",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
