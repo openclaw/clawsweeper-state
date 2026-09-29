@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T21:14:43.931Z",
+  "updated_at": "2026-09-29T21:15:38.276Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161154:5890415881:2026-09-29T12:35:03Z:freeform_assist",
-      "comment_id": "5890415881",
-      "comment_version_key": "5890415881:2026-09-29T12:35:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161154#issuecomment-5890415881",
-      "comment_created_at": "2026-09-29T12:35:03Z",
-      "comment_updated_at": "2026-09-29T12:35:03Z",
-      "comment_body_sha256": "985f16b6aa233290d192f8de756eedcf2022389ca25af9a203b9163a74e3cbb8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161154,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "maintainer decision (ayaan, repository maintainer): i accept the remaining case. a detached media run fails **and** its completion turn is empty, so the group sees only the acknowledgement. this is no worse than main, where that failure is also silent; the old \"⚠️ yield failed\" was about the rejected yield and was posted before the image finished. a completion-owned failure notice was prototyped in #161157, which i closed deliberately. our production setup had 0 image-generation failures in 30 days, and i'm only taking fixes for problems we actually observe. if a silent media failure shows up in real use, we'll reopen that approach. please re-review this head with that decision recorded as accepted.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T12:35:20.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/yield-warning-noise",
-        "head_sha": "3ad7a7e6c08cd10889b27da25ff956e65a515df7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161154:5889064605:2026-09-29T12:34:18Z:clawsweeper_needs_human",
       "comment_id": "5889064605",
@@ -33398,6 +33351,39 @@
         "kind": "pull_request",
         "branch": "sjf/fix-1-codex-host-owned-auth",
         "head_sha": "efe94afea41c9af9ee9bad0775840cc0303a6af9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161389:5899032148:2026-09-29T21:14:25Z:clawsweeper_needs_human",
+      "comment_id": "5899032148",
+      "comment_version_key": "5899032148:2026-09-29T21:14:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161389#issuecomment-5899032148",
+      "comment_created_at": "2026-09-29T21:14:25Z",
+      "comment_updated_at": "2026-09-29T21:14:25Z",
+      "comment_body_sha256": "148609000311c4df0723dc84d8d3ac0ed09480084ea992b6ab7453294472d53f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a merge conflict in the recovery area already changed on main. A resolution must retain both the before-reader rollback ordering and the branch's single-attempt behavio... (sha=b046c09bff3e797f78ce69f950475225b04e798d)",
+      "expected_head_sha": "b046c09bff3e797f78ce69f950475225b04e798d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T21:15:38.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/setup-activation-recovery",
+        "head_sha": "b046c09bff3e797f78ce69f950475225b04e798d",
         "cluster_id": null,
         "job_path": null
       }
