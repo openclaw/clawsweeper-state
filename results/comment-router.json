@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:23:10.977Z",
+  "updated_at": "2026-09-29T03:23:19.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160325:5880264595:2026-09-28T23:00:29Z:re_review",
-      "comment_id": "5880264595",
-      "comment_version_key": "5880264595:2026-09-28T23:00:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160325#issuecomment-5880264595",
-      "comment_created_at": "2026-09-28T23:00:29Z",
-      "comment_updated_at": "2026-09-28T23:00:29Z",
-      "comment_body_sha256": "ee824897d8dfa770f6f4afe388713aa4b9bfe04f18c07e067ab1af0fbcbc18cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160325,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-28T23:01:26.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-stream-subagent-budget",
-        "head_sha": "0b18f68ad20f2fdad83b9d539d89ab5f9d9b5274",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159678:5869873591:2026-09-28T12:31:20Z:re_review",
       "comment_id": "5869873591",
@@ -32854,6 +32807,39 @@
         "kind": "pull_request",
         "branch": "steipete/redact-prose-pass",
         "head_sha": "a06a2e4854e17b3f40016f1ff0305338a98600c0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160923:5883005219:2026-09-29T03:22:23Z:clawsweeper_needs_human",
+      "comment_id": "5883005219",
+      "comment_version_key": "5883005219:2026-09-29T03:22:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160923#issuecomment-5883005219",
+      "comment_created_at": "2026-09-29T03:22:23Z",
+      "comment_updated_at": "2026-09-29T03:22:23Z",
+      "comment_body_sha256": "c6df46a7a5b0a669330f3daa1e2a5fd0e1c973b8f1805d811c18d636d15c4e15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160923,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Provide inspected, sanitized before/after screenshots from a real Slack-created session in the originating chat and in the PR body or a body-linked comment. Redact private details, th... (sha=1f33b009de74d70b439f78b948931e390be4b4c4)",
+      "expected_head_sha": "1f33b009de74d70b439f78b948931e390be4b4c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T03:23:19.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/slack-owner-name",
+        "head_sha": "1f33b009de74d70b439f78b948931e390be4b4c4",
         "cluster_id": null,
         "job_path": null
       }
