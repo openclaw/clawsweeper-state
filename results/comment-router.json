@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T01:48:41.504Z",
+  "updated_at": "2026-09-29T01:49:28.801Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160201:5864774711:2026-09-28T20:26:02Z:clawsweeper_needs_human",
-      "comment_id": "5864774711",
-      "comment_version_key": "5864774711:2026-09-28T20:26:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160201#issuecomment-5864774711",
-      "comment_created_at": "2026-09-28T06:38:17Z",
-      "comment_updated_at": "2026-09-28T20:26:02Z",
-      "comment_body_sha256": "b6ed06f4666457791357e3c3c7d3af2099345abe7c1d80fd0ae6b705b086847f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160201,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2efc3a8e677c1a7cef10e711631fc7536b11e5f1)",
-      "expected_head_sha": "2efc3a8e677c1a7cef10e711631fc7536b11e5f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T20:26:59.669Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-witness-not-recorded-under-deployer-stop-20260919",
-        "head_sha": "2efc3a8e677c1a7cef10e711631fc7536b11e5f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160516:5873232187:2026-09-28T20:26:08Z:clawsweeper_needs_human",
       "comment_id": "5873232187",
@@ -33828,6 +33795,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160851:5881720890:2026-09-29T01:48:32Z:clawsweeper_needs_human",
+      "comment_id": "5881720890",
+      "comment_version_key": "5881720890:2026-09-29T01:48:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160851#issuecomment-5881720890",
+      "comment_created_at": "2026-09-29T01:11:39Z",
+      "comment_updated_at": "2026-09-29T01:48:32Z",
+      "comment_body_sha256": "20316ef48d63e7c29a05ded7a9ffb7db8064394747a561575eff7492c8573de6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body supplies an isolated Gateway before/after terminal trace for manual close, listing, reject...; Review finding: [P1] Keep older readers from admitting retained closed sessions — src/acp/control-plane/manager.close-session.ts:252-255 - [medium] Closed session may be re-admitt... (sha=e56f385a1c3f60f0ee97c2482e1499bb1122aa57)",
+      "expected_head_sha": "e56f385a1c3f60f0ee97c2482e1499bb1122aa57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T01:49:28.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-close-keeps-terminal-meta",
+        "head_sha": "e56f385a1c3f60f0ee97c2482e1499bb1122aa57",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
