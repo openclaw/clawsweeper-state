@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-29T03:00:49.585Z",
+  "updated_at": "2026-09-29T03:00:52.089Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157498:5843697793:2026-09-26T05:57:39Z:re_review",
-      "comment_id": "5843697793",
-      "comment_version_key": "5843697793:2026-09-26T05:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157498#issuecomment-5843697793",
-      "comment_created_at": "2026-09-26T05:57:39Z",
-      "comment_updated_at": "2026-09-26T05:57:39Z",
-      "comment_body_sha256": "f582a5e530f44d0c7e363160666f7c7500f90035f19ad5824821626084b7cb6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157498,
-      "author": "etzelm",
-      "author_id": 16581152,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-28T22:38:05.927Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/rfcs:76:5879991719:2026-09-28T22:37:30Z:re_review",
       "comment_id": "5879991719",
@@ -33087,6 +33060,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158916:5846887649:2026-09-29T02:59:41Z:clawsweeper_needs_human",
+      "comment_id": "5846887649",
+      "comment_version_key": "5846887649:2026-09-29T02:59:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158916#issuecomment-5846887649",
+      "comment_created_at": "2026-09-26T14:03:53Z",
+      "comment_updated_at": "2026-09-29T02:59:41Z",
+      "comment_body_sha256": "10a479031fe52e12b7c5c13fc236624ea3a8dfb54ca6e82b806157d766067299",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The terminal readiness refactor can affect which selected-session history is displayed after reconnect; the supplied PTY fixtures do not exercise that sequence through a real Gateway. (sha=51af197b43ab782571acaea314abce090ee0d1b9)",
+      "expected_head_sha": "51af197b43ab782571acaea314abce090ee0d1b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T03:00:52.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l73-runtime2",
+        "head_sha": "51af197b43ab782571acaea314abce090ee0d1b9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
