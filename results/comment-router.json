@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-29T05:37:41.975Z",
+  "updated_at": "2026-09-29T05:37:45.178Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155911:5782512967:2026-09-29T00:58:52Z:clawsweeper_needs_human",
-      "comment_id": "5782512967",
-      "comment_version_key": "5782512967:2026-09-29T00:58:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155911#issuecomment-5782512967",
-      "comment_created_at": "2026-09-22T19:18:12Z",
-      "comment_updated_at": "2026-09-29T00:58:52Z",
-      "comment_body_sha256": "c899d1f2022fb4c239484d59279380986ed4c8bfd2b7fac52c6e5fd4b36c5453",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155911,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Built memory-core cold imports used 59.25 ms more worker CPU at the median (6.81%) in four of five pairs; net Gateway-startup benefit is unestablished, and no independent plugin-owner... (sha=847f7baf4e6d970399a67c31116ce027f2008be4)",
-      "expected_head_sha": "847f7baf4e6d970399a67c31116ce027f2008be4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T01:18:30.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/plugin-generation-source-projection-20260922",
-        "head_sha": "847f7baf4e6d970399a67c31116ce027f2008be4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158369:5840234472:2026-09-29T01:02:44Z:clawsweeper_needs_human",
       "comment_id": "5840234472",
@@ -32578,6 +32545,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158723:5884349394:2026-09-29T05:36:44Z:re_review",
+      "comment_id": "5884349394",
+      "comment_version_key": "5884349394:2026-09-29T05:36:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158723#issuecomment-5884349394",
+      "comment_created_at": "2026-09-29T05:36:44Z",
+      "comment_updated_at": "2026-09-29T05:36:44Z",
+      "comment_body_sha256": "e5d47bba6abdc7cadef4fa78587a692d3279c326432ff34ae67dba85c0eded06",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158723,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-29T05:37:43.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/doctor-managed-runtime-repair",
+        "head_sha": "eaaeb6bf6597adcabe96566a8d19d71fad417d84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
