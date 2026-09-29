@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T12:53:43.483Z",
+  "updated_at": "2026-09-29T12:53:59.033Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158473:5884442834:2026-09-29T05:45:32Z:re_review",
-      "comment_id": "5884442834",
-      "comment_version_key": "5884442834:2026-09-29T05:45:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158473#issuecomment-5884442834",
-      "comment_created_at": "2026-09-29T05:45:32Z",
-      "comment_updated_at": "2026-09-29T05:45:32Z",
-      "comment_body_sha256": "44c57fcedf9faf3179330be9972d9cf64c735d909157e7df302c44a4ca98f89b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158473,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T05:46:25.860Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/deleted-agent-shutdown-cleanup",
-        "head_sha": "4ece37391240a56bee5ea18bbc59d2cd0d116bb2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159702:5857891164:2026-09-29T05:45:30Z:clawsweeper_needs_human",
       "comment_id": "5857891164",
@@ -33560,6 +33513,39 @@
         "kind": "pull_request",
         "branch": "feat/cron-authoring-guidance",
         "head_sha": "e2d98525702e0efa9a937c1bf3355493fb863e9e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161181:5890344711:2026-09-29T12:52:52Z:clawsweeper_needs_human",
+      "comment_id": "5890344711",
+      "comment_version_key": "5890344711:2026-09-29T12:52:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161181#issuecomment-5890344711",
+      "comment_created_at": "2026-09-29T12:30:34Z",
+      "comment_updated_at": "2026-09-29T12:52:52Z",
+      "comment_body_sha256": "a1712dbb800431986ae26a1a767672988f77f38cbec8fff4f5d30518e7fba6b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body lacks the required per-file single-worker wall time for its new and materially changed tests; the supplied concurrent and Bun measurements do not establish the Node per-fi... (sha=5fe6c13a7a791cbf48d3bc1afd2b940ef2502be7)",
+      "expected_head_sha": "5fe6c13a7a791cbf48d3bc1afd2b940ef2502be7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T12:53:59.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cold-reclamation-native-preparation",
+        "head_sha": "5fe6c13a7a791cbf48d3bc1afd2b940ef2502be7",
         "cluster_id": null,
         "job_path": null
       }
