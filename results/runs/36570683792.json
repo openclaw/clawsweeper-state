@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "plan",
+  "run_id": "36570683792",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36570683792",
+  "head_sha": "32cd4db41a50b57f301a955bd0e291cbfeb714e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-09-29T12:54:09.062Z",
+  "canonical": "#119484",
+  "canonical_issue": "#119484",
+  "canonical_pr": null,
+  "summary": "Current main still writes LF-only .cmd/.bat content through the agent write, edit, and apply-patch paths. The job’s restart-helper.ts no longer exists; the current Windows scheduled-task restart path already uses CRLF and the launcher encoder. Plan one focused agent-file fix and retain the prior contributor’s credit. No code, branch, or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#119484",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Reproduce the byte-level defect through the registered agent tools, then normalize batch-file output at their existing mutation boundaries. Keep other file types’ behavior."
+    },
+    {
+      "target": "#119540",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Historical source work only. Preserve attribution in the new fix PR."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
