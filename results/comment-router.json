@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-29T06:03:41.446Z",
+  "updated_at": "2026-09-29T06:05:41.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160699:5882016506:2026-09-29T01:41:00Z:re_review",
-      "comment_id": "5882016506",
-      "comment_version_key": "5882016506:2026-09-29T01:41:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160699#issuecomment-5882016506",
-      "comment_created_at": "2026-09-29T01:41:00Z",
-      "comment_updated_at": "2026-09-29T01:41:00Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160699,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T01:41:58.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1071",
-        "head_sha": "6d2215430ab249dc9081df401488de3d74329c97",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-29T01:40:58Z:clawsweeper_needs_human",
       "comment_id": "5567489931",
@@ -32605,6 +32558,39 @@
         "kind": "pull_request",
         "branch": "steipete/redact-prose-pass",
         "head_sha": "75dd0b7caebe0ea16e78759e6d395832074f3ed7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161006:5884647900:2026-09-29T06:04:49Z:clawsweeper_needs_human",
+      "comment_id": "5884647900",
+      "comment_version_key": "5884647900:2026-09-29T06:04:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161006#issuecomment-5884647900",
+      "comment_created_at": "2026-09-29T06:04:49Z",
+      "comment_updated_at": "2026-09-29T06:04:49Z",
+      "comment_body_sha256": "3f2fdde0f46da8f0d212e9c371c70c0b7ec566859cba8f956accb08a3c2ff84b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161006,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed heartbeat owner redirects an explicit-target WebChat exec completion into the session transcript. The PR reports an after-... (sha=3a26efb9a7c6c165af52ddd17db609bee1bcaa83)",
+      "expected_head_sha": "3a26efb9a7c6c165af52ddd17db609bee1bcaa83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-29T06:05:41.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-webchat-route",
+        "head_sha": "3a26efb9a7c6c165af52ddd17db609bee1bcaa83",
         "cluster_id": null,
         "job_path": null
       }
