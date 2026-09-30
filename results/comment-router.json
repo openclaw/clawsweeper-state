@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T00:04:57.322Z",
+  "updated_at": "2026-09-30T00:05:05.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144544:5893825176:2026-09-29T15:57:10Z:re_review",
-      "comment_id": "5893825176",
-      "comment_version_key": "5893825176:2026-09-29T15:57:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144544#issuecomment-5893825176",
-      "comment_created_at": "2026-09-29T15:57:10Z",
-      "comment_updated_at": "2026-09-29T15:57:10Z",
-      "comment_body_sha256": "0f51f0401b3b0a256670e9a6afcd9a324d0e8e3152864367319fc5c9e136a33a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144544,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T15:58:05.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-promoted-credential-rotation",
-        "head_sha": "10dd989a9431f7a66b60a4e8858c16ec3f0231be",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/agent-scripts:42:5674378770:2026-09-29T15:57:38Z:clawsweeper_auto_repair",
       "comment_id": "5674378770",
@@ -33135,6 +33088,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161451:5901391591:2026-09-30T00:03:56Z:clawsweeper_needs_human",
+      "comment_id": "5901391591",
+      "comment_version_key": "5901391591:2026-09-30T00:03:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161451#issuecomment-5901391591",
+      "comment_created_at": "2026-09-30T00:03:56Z",
+      "comment_updated_at": "2026-09-30T00:03:56Z",
+      "comment_body_sha256": "18db6e9513b915722accd204d77bda0e9261c58d2f8ec13c388b93d6f4776731",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed session_end owner and SQLite history reader have focused test coverage, but the captured PR evidenc...; Review finding: [medium] Registration-time grant may survive revocation — src/plugins/session-end-transcript.ts:105 (sha=8c263aec01d5f29026011aa68dd5d6728d4b716a)",
+      "expected_head_sha": "8c263aec01d5f29026011aa68dd5d6728d4b716a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T00:05:05.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-155696-ended-session-reader",
+        "head_sha": "8c263aec01d5f29026011aa68dd5d6728d4b716a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
