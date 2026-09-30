@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T20:37:35.311Z",
+  "updated_at": "2026-09-30T20:37:47.212Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161792:5908648992:2026-09-30T12:37:17Z:clawsweeper_needs_human",
-      "comment_id": "5908648992",
-      "comment_version_key": "5908648992:2026-09-30T12:37:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161792#issuecomment-5908648992",
-      "comment_created_at": "2026-09-30T09:46:45Z",
-      "comment_updated_at": "2026-09-30T12:37:17Z",
-      "comment_body_sha256": "1b62889b5b1e1d8ee81f65d24afca4d6497e4e506e8c2df2960a32eab15cdd10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161792,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=67fac0e7b41007779c5e8849f64cc75d99119081)",
-      "expected_head_sha": "67fac0e7b41007779c5e8849f64cc75d99119081",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T13:23:36.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-idle-app-server-retirement",
-        "head_sha": "67fac0e7b41007779c5e8849f64cc75d99119081",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156897:5805763037:2026-09-30T13:17:38Z:clawsweeper_needs_human",
       "comment_id": "5805763037",
@@ -33680,6 +33647,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162065:5919251699:2026-09-30T20:33:40Z:re_review",
+      "comment_id": "5919251699",
+      "comment_version_key": "5919251699:2026-09-30T20:33:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5919251699",
+      "comment_created_at": "2026-09-30T20:33:40Z",
+      "comment_updated_at": "2026-09-30T20:33:40Z",
+      "comment_body_sha256": "ec829270faf641e6abd737334a41729107340f84d3083556a3aa968f5721cfbb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162065,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 7ae840df7c4. the compact-large failure was pr-caused: doctor-health.test.ts fully mocked the receipt module and hid the new production merger. the fixture now imports the real module and overrides only the write side effect. the test-type graph and exact lint/format/diff gates pass; 71/73 full-file cases pass locally, with the only two failures being pre-existing host service-inspection cases that did not fail in ci",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T20:37:33.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
+        "head_sha": "7ae840df7c4353a98cbc03283c2afc5a85e68dbb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161952:5914606091:2026-09-30T20:33:46Z:clawsweeper_needs_human",
