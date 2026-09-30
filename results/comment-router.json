@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T14:33:38.705Z",
+  "updated_at": "2026-09-30T14:33:43.258Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132860:5465086483:2026-09-30T07:18:41Z:clawsweeper_auto_repair",
-      "comment_id": "5465086483",
-      "comment_version_key": "5465086483:2026-09-30T07:18:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132860#issuecomment-5465086483",
-      "comment_created_at": "2026-08-29T21:51:02Z",
-      "comment_updated_at": "2026-09-30T07:18:41Z",
-      "comment_body_sha256": "731303b7472da0db4552869e01006389d93005ae175a30c49daed0914867af01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132860,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1c15c9fbe3a10164b2e7da32860fae33bd52c553)",
-      "expected_head_sha": "1c15c9fbe3a10164b2e7da32860fae33bd52c553",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T07:35:09.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-googlechat-typing-placeholder-leak",
-        "head_sha": "1c15c9fbe3a10164b2e7da32860fae33bd52c553",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139260:5553802483:2026-09-30T07:14:47Z:clawsweeper_needs_human",
       "comment_id": "5553802483",
@@ -33348,6 +33315,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:728:5913394338:2026-09-30T14:32:05Z:clawsweeper_needs_human",
+      "comment_id": "5913394338",
+      "comment_version_key": "5913394338:2026-09-30T14:32:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/728#issuecomment-5913394338",
+      "comment_created_at": "2026-09-30T14:32:05Z",
+      "comment_updated_at": "2026-09-30T14:32:05Z",
+      "comment_body_sha256": "0908a446fd4033b3214483fc16d3d935a77dad5087ad7a2af7960dfd0041e37f",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound valid-cookie state reads before password admission (P1)** - A holder of a genuine v2 cookie can replay password requests after its device lane is exhausted. This call awaits the PostgreSQL account-state re...; Review finding: [P1] Bound valid-cookie state reads before password admission — apps/controller/src/auth/index.ts:1265-1270 - [P3] Correct the stated disable-state binding — apps/... (sha=34cc5d876926300695ab8f352a1979ccaeeec502)",
+      "expected_head_sha": "34cc5d876926300695ab8f352a1979ccaeeec502",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T14:33:43.258Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/known-device-auth-version",
+        "head_sha": "34cc5d876926300695ab8f352a1979ccaeeec502",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
