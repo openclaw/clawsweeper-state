@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T05:26:23.935Z",
+  "updated_at": "2026-09-30T05:26:26.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161503:5902585209:2026-09-30T02:00:26Z:re_review",
-      "comment_id": "5902585209",
-      "comment_version_key": "5902585209:2026-09-30T02:00:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161503#issuecomment-5902585209",
-      "comment_created_at": "2026-09-30T02:00:26Z",
-      "comment_updated_at": "2026-09-30T02:00:26Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161503,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:01:28.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-161467-gmail-watcher-eaddrinuse",
-        "head_sha": "ffd92b06263147451db36af225ad71fe3db108c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125969:5902588733:2026-09-30T02:00:46Z:re_review",
       "comment_id": "5902588733",
@@ -32306,6 +32259,39 @@
         "kind": "pull_request",
         "branch": "fix/package-publish-idempotent-retry",
         "head_sha": "61bf12f04a8b411c38b0b6b1c942377365126821",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-09-30T05:19:58Z:clawsweeper_needs_human",
+      "comment_id": "5212438693",
+      "comment_version_key": "5212438693:2026-09-30T05:19:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120138#issuecomment-5212438693",
+      "comment_created_at": "2026-08-07T04:36:34Z",
+      "comment_updated_at": "2026-09-30T05:19:58Z",
+      "comment_body_sha256": "46d94732098ae20b912997e518052b56b5c767d1307bdac377417f8be8e91719",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body shows the real docs check succeeding at an earlier head, but the reviewed head changes the generator's bundled source-cont... (sha=76193dbee0e888f488c77a653422100ee8e32e01)",
+      "expected_head_sha": "76193dbee0e888f488c77a653422100ee8e32e01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T05:26:26.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secretref-docs-generator",
+        "head_sha": "76193dbee0e888f488c77a653422100ee8e32e01",
         "cluster_id": null,
         "job_path": null
       }
