@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161823"
 mode: "autonomous"
-run_id: "36705647395"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36705647395"
-head_sha: "74dc4c6a2fc204e456fb92677ca9271af104e9cc"
-workflow_conclusion: "failure"
+run_id: "36711621502"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36711621502"
+head_sha: "d7fd40ed0f8e8283c0c91c3b7c94f3c485bb608a"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-30T11:28:52.072Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161823"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161823"
-canonical_pr: null
+published_at: "2026-09-30T11:59:33.309Z"
+canonical: "#161823"
+canonical_issue: "#161823"
+canonical_pr: "#161834"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36705647395](https://github.com/openclaw/clawsweeper/actions/runs/36705647395)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36711621502](https://github.com/openclaw/clawsweeper/actions/runs/36711621502)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161823
+Canonical: #161823
 
 ## Summary
 
-The reported bug remains at main 8c9040c6. Memory status treats a metadata-eligible, system-only session as missing, while indexing parses and excludes it. The checkout is read-only, so no code was changed or tests run; a narrow fix is planned for the executor.
+No implementation PR is needed. The preflight records #161834 as merged and #161823 as closed. The checkout contains the reported fix and its regression test.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The reported bug remains at main 8c9040c6. Memory status treats a metadata-eligi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161823 | fix_needed | planned | canonical | The status and indexing admission decisions disagree for system-only sessions. |
-| cluster:issue-openclaw-openclaw-161823 | build_fix_artifact | planned |  | The write-capable executor can implement and validate the narrow Memory Core fix. |
+| #161823 | keep_closed | skipped | fixed_by_candidate | The issue is already closed after its fix merged. |
+| #161834 | keep_closed | skipped | canonical | The existing contributor PR is the merged fix. |
 
 ## Needs Human
 
