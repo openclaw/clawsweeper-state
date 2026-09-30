@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T16:03:09.292Z",
+  "updated_at": "2026-09-30T16:04:17.105Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159683:5907268288:2026-09-30T08:26:52Z:re_review",
-      "comment_id": "5907268288",
-      "comment_version_key": "5907268288:2026-09-30T08:26:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159683#issuecomment-5907268288",
-      "comment_created_at": "2026-09-30T08:26:52Z",
-      "comment_updated_at": "2026-09-30T08:26:52Z",
-      "comment_body_sha256": "26e7c71b710cd9ba1698deab8e58cc99d6b42ed39db66211aa026209007d14e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159683,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T08:27:53.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-wiki-unicode-query-tokens",
-        "head_sha": "439605b92c6e481dd84abc6b3d2f749bba967afb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/wacli:451:5870971208:2026-09-30T08:27:17Z:clawsweeper_needs_human",
       "comment_id": "5870971208",
@@ -33170,6 +33123,39 @@
         "kind": "pull_request",
         "branch": "fix-161929-local-probe-proxy-agent",
         "head_sha": "e2cd9a576649c34775fcbcfd55fee868560d6c81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161940:5914317990:2026-09-30T16:03:01Z:clawsweeper_needs_human",
+      "comment_id": "5914317990",
+      "comment_version_key": "5914317990:2026-09-30T16:03:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161940#issuecomment-5914317990",
+      "comment_created_at": "2026-09-30T15:23:39Z",
+      "comment_updated_at": "2026-09-30T16:03:01Z",
+      "comment_body_sha256": "ac09eb023c7ad2f13d8360566071aace999a5463210e10bebc3136db87de2114",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161940,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed update CLI guidance passes publication-path tests using a real temporary ledger, but the successful recovery observation is supplie... (sha=64fee72e5cafa5a68c0b2784e43ff8ff8debc8e9)",
+      "expected_head_sha": "64fee72e5cafa5a68c0b2784e43ff8ff8debc8e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T16:04:17.105Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161924-update-recovery-guidance",
+        "head_sha": "64fee72e5cafa5a68c0b2784e43ff8ff8debc8e9",
         "cluster_id": null,
         "job_path": null
       }
