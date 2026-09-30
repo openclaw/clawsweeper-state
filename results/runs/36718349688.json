@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161866",
+  "mode": "autonomous",
+  "run_id": "36718349688",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36718349688",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161866.md",
+  "published_at": "2026-09-30T13:43:42.260Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161866",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161866",
+  "canonical_pr": null,
+  "summary": "The reported pnpm terminal failure has a narrow fix path. The updater still inherits terminal stdin while capturing output. The checkout is read-only, so no patch, validation run, or PR was produced. The preflight records main at 79a240058f880cb51f0fd35a098bbd71adb949a4; the local checkout is cd59fe831ed94db1c7468f804af7746d6b755cd8, so the executor must verify the final base before editing.",
+  "actions": [
+    {
+      "target": "#161866",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "Close pnpm stdin for the captured install command while preserving OpenClaw's own interactive prompts and existing build approval policy."
+    },
+    {
+      "target": "#161865",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "This is a separate update failure and remains open."
+    },
+    {
+      "target": "#144713",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; it does not cover the reported stdin contract."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161866",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "Prepare a focused change and regression proof for the pnpm install boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161866",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout, must verify the current main and existing target branch, then implement and validate the artifact before opening or updating one PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
