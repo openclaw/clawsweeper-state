@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:31:28.758Z",
+  "updated_at": "2026-09-30T06:31:38.960Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161450:5902930677:2026-09-30T02:33:46Z:re_review",
-      "comment_id": "5902930677",
-      "comment_version_key": "5902930677:2026-09-30T02:33:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161450#issuecomment-5902930677",
-      "comment_created_at": "2026-09-30T02:33:46Z",
-      "comment_updated_at": "2026-09-30T02:33:46Z",
-      "comment_body_sha256": "43616cb1c9da15542e271f5e85c8efa09e6145fefdce6a5d8fa2d5442b2c6762",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161450,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:34:43.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-cross-os-upgrade",
-        "head_sha": "50c8c89721d41a9fce828b95b6dff5cca1c9ec5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1174:5902932346:2026-09-30T02:33:54Z:clawsweeper_needs_human",
       "comment_id": "5902932346",
@@ -33442,6 +33395,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161677:5905300389:2026-09-30T06:30:31Z:clawsweeper_needs_human",
+      "comment_id": "5905300389",
+      "comment_version_key": "5905300389:2026-09-30T06:30:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161677#issuecomment-5905300389",
+      "comment_created_at": "2026-09-30T06:14:53Z",
+      "comment_updated_at": "2026-09-30T06:30:31Z",
+      "comment_body_sha256": "4717666421478968dabce48b6145be35640c9a068818351154daa3401830bc99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161677,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d73f775de7d6acdf8b507759d0b072cb84bed470)",
+      "expected_head_sha": "d73f775de7d6acdf8b507759d0b072cb84bed470",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T06:31:38.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-pipe-read-cleanup-wait",
+        "head_sha": "d73f775de7d6acdf8b507759d0b072cb84bed470",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
