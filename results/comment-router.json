@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T20:43:38.228Z",
+  "updated_at": "2026-09-30T20:46:45.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155824:5912232730:2026-09-30T13:25:45Z:freeform_assist",
-      "comment_id": "5912232730",
-      "comment_version_key": "5912232730:2026-09-30T13:25:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155824#issuecomment-5912232730",
-      "comment_created_at": "2026-09-30T13:25:32Z",
-      "comment_updated_at": "2026-09-30T13:25:45Z",
-      "comment_body_sha256": "801478688c5afce775868c3a5cfcffa5c906860d4468d8ce6843a2b5c948eec1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155824,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review. i have released the merge hold for 86693209. the exact-head ci workflow passed; the protected aggregate is updating. the unpublished test cleanup is optional.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T13:26:26.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-turn-interrupt-deadline-wall-clock-087",
-        "head_sha": "86693209da447a82d868679b16b9effee644122f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160378:5882661862:2026-09-29T02:45:59Z:re_review",
       "comment_id": "5882661862",
@@ -33738,6 +33691,39 @@
         "kind": "pull_request",
         "branch": "steipete/storage-locations",
         "head_sha": "c2dd36537eef310e0ca538b65881607818bfc999",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162065:5917792169:2026-09-30T20:44:26Z:clawsweeper_auto_repair",
+      "comment_id": "5917792169",
+      "comment_version_key": "5917792169:2026-09-30T20:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5917792169",
+      "comment_created_at": "2026-09-30T19:02:38Z",
+      "comment_updated_at": "2026-09-30T20:44:26Z",
+      "comment_body_sha256": "b2c1355f04e0ad8f0133b09a7a354e0bda7aa78b88d0c5a02a15352c4d21841e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162065,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7ae840df7c4353a98cbc03283c2afc5a85e68dbb)",
+      "expected_head_sha": "7ae840df7c4353a98cbc03283c2afc5a85e68dbb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T20:46:45.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
+        "head_sha": "7ae840df7c4353a98cbc03283c2afc5a85e68dbb",
         "cluster_id": null,
         "job_path": null
       }
