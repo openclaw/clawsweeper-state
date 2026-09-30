@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162135",
+  "mode": "autonomous",
+  "run_id": "36779509924",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36779509924",
+  "head_sha": "ad9ac7f287fdf88e9de0de0ef7913d0c7b0c5e7a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162135.md",
+  "published_at": "2026-09-30T22:05:02.852Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162135",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162135",
+  "canonical_pr": null,
+  "summary": "The reported handoff defect remains in the source at preflight main SHA 7c5997006c892b87432233f57c87188e97426e44. Local implementation and reproduction are blocked: the checkout is read-only and has no node_modules. The requested test and changed-code check both stop before running. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#162135",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162135",
+      "candidate_fix": null,
+      "reason": "A narrow broker handoff fix appears appropriate, subject to reproduction and validation in a writable checkout with dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162135",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#162135",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the read-only checkout and missing dependencies. Reproduce the supplied failure before editing or opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
