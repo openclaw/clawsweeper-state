@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:58:34.055Z",
+  "updated_at": "2026-09-30T06:58:44.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1553:5903179031:2026-09-30T02:58:26Z:re_review",
-      "comment_id": "5903179031",
-      "comment_version_key": "5903179031:2026-09-30T02:58:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1553#issuecomment-5903179031",
-      "comment_created_at": "2026-09-30T02:58:26Z",
-      "comment_updated_at": "2026-09-30T02:58:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1553,
-      "author": "paulcam206",
-      "author_id": 16614499,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:59:20.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/companion-isolated-gateway-setup",
-        "head_sha": "77a7eb64d1c8635147be24bec6bb37b84f886ace",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125969:5333773360:2026-08-18T20:38:09Z:re_review",
       "comment_id": "5333773360",
@@ -33493,6 +33446,39 @@
         "kind": "pull_request",
         "branch": "fix/legacy-default-agent-persistence",
         "head_sha": "799dab0d00602e5f5a1dd9cf35d5205dee00e00e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161422:5900813932:2026-09-30T06:57:42Z:clawsweeper_needs_human",
+      "comment_id": "5900813932",
+      "comment_version_key": "5900813932:2026-09-30T06:57:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161422#issuecomment-5900813932",
+      "comment_created_at": "2026-09-29T23:09:54Z",
+      "comment_updated_at": "2026-09-30T06:57:42Z",
+      "comment_body_sha256": "26a1c3c37601c9d18f18e37468a54bb3d3e7863c99d7af8023b17460e58798a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A model-bound create or patch that previously kept waiting will now fail after 30 seconds. Older clients may show a generic error or reach their own timeout first; the Gateway/UI owne... (sha=e4509069fb65b0d978ad47b04eab59e4b7f776cd)",
+      "expected_head_sha": "e4509069fb65b0d978ad47b04eab59e4b7f776cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T06:58:44.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161409-sessions-create-catalog-wait",
+        "head_sha": "e4509069fb65b0d978ad47b04eab59e4b7f776cd",
         "cluster_id": null,
         "job_path": null
       }
