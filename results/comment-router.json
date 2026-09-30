@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:05:39.678Z",
+  "updated_at": "2026-09-30T07:05:44.948Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125969:5615431676:2026-09-10T08:18:30Z:re_review",
-      "comment_id": "5615431676",
-      "comment_version_key": "5615431676:2026-09-10T08:18:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125969#issuecomment-5615431676",
-      "comment_created_at": "2026-09-10T08:18:30Z",
-      "comment_updated_at": "2026-09-10T08:18:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125969,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T02:59:21.064Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161240:5903171639:2026-09-30T02:57:37Z:re_review",
       "comment_id": "5903171639",
@@ -33605,6 +33578,39 @@
         "head_sha": "becf92c06ae2b6f1945f2903db7e53f26abe57e7",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:670:5901265414:2026-09-30T06:54:03Z:clawsweeper_needs_human",
+      "comment_id": "5901265414",
+      "comment_version_key": "5901265414:2026-09-30T06:54:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5901265414",
+      "comment_created_at": "2026-09-29T23:51:28Z",
+      "comment_updated_at": "2026-09-30T06:54:03Z",
+      "comment_body_sha256": "c57b659e12ac89959998206726a38e0145420c3e5100417d20791b11df686722",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed Actions dispatcher mints App tokens and forwards item and comment events to ClawSweeper. Reported m...; Review finding: [P2] Make the checked-in dispatcher the install source — docs/testing/ci.md:191 - [P3] Repair the protected-coverage sentence — docs/testing/ci.md:115-116 - [mediu... (sha=fd0b22ff6bb84a19673d64fbbf9e588f7dbf341d)",
+      "expected_head_sha": "fd0b22ff6bb84a19673d64fbbf9e588f7dbf341d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:05:44.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "enable-clawsweeper-review",
+        "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
       }
     }
   ]
