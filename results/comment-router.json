@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:20:30.779Z",
+  "updated_at": "2026-09-30T07:20:36.307Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161565:5903401779:2026-09-30T03:20:59Z:clawsweeper_needs_human",
-      "comment_id": "5903401779",
-      "comment_version_key": "5903401779:2026-09-30T03:20:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161565#issuecomment-5903401779",
-      "comment_created_at": "2026-09-30T03:20:59Z",
-      "comment_updated_at": "2026-09-30T03:20:59Z",
-      "comment_body_sha256": "209461eba4b04bc39fe20c4c89d5be3050f3fb7b103b5afbcc226c185f1664e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161565,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when the author is ready to enter the normal landing workflow. (sha=020c85f3bf2da8cedcade46f1560522be9201376)",
-      "expected_head_sha": "020c85f3bf2da8cedcade46f1560522be9201376",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:21:54.366Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-provider-timeout-fixture",
-        "head_sha": "020c85f3bf2da8cedcade46f1560522be9201376",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151739:5729278512:2026-09-30T03:21:11Z:clawsweeper_needs_human",
       "comment_id": "5729278512",
@@ -33666,6 +33633,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:670:5901265414:2026-09-30T07:15:40Z:clawsweeper_needs_human",
+      "comment_id": "5901265414",
+      "comment_version_key": "5901265414:2026-09-30T07:15:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5901265414",
+      "comment_created_at": "2026-09-29T23:51:28Z",
+      "comment_updated_at": "2026-09-30T07:15:40Z",
+      "comment_body_sha256": "30aa4b55e6aae3cec08513d23e2fb4048a582c491f4c683f59075149b6179eb7",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Reported local fixtures exercised the workflow shells and stubbed dispatch, but no after-change trace shows an...; Review finding: [P2] Bring the CI guide back below its hard word limit — docs/testing/ci.md:95-96 - [medium] Prove unauthorized commands stop before mutation — .github/workflows/c... (sha=32962ba95a342059d47cb249fe5dc0fe3e86bc59)",
+      "expected_head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T07:20:36.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "enable-clawsweeper-review",
+        "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
