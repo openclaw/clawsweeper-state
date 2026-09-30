@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162189",
+  "mode": "autonomous",
+  "run_id": "36788717830",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36788717830",
+  "head_sha": "8c7a382f5bca9a09564ce326f3c4892dff7ef4a6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162189.md",
+  "published_at": "2026-09-30T23:18:17.140Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162189",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162189",
+  "canonical_pr": null,
+  "summary": "The checked-out Discord lifecycle can retry READY indefinitely while refreshing the disconnect timestamp that grants health-monitor grace. A narrow fix is planned, but implementation is blocked: the checkout is read-only, and the preflight main commit e09dfc8 is unavailable locally or from GitHub, so its behavior could not be verified.",
+  "actions": [
+    {
+      "target": "#162189",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162189",
+      "candidate_fix": null,
+      "reason": "The open report describes a distinct remaining recovery path from the closed historical reports."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162189",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#162189",
+      "candidate_fix": null,
+      "reason": "Plan a bounded Discord-owned READY failure handoff after confirming the same defect on the exact current main head."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162189",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#162189",
+      "candidate_fix": null,
+      "reason": "The executor must obtain and inspect the exact current main head before implementing or opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
