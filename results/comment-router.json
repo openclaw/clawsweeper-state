@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:42:15.745Z",
+  "updated_at": "2026-09-30T06:42:30.302Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161450:5903010283:2026-09-30T02:41:04Z:re_review",
-      "comment_id": "5903010283",
-      "comment_version_key": "5903010283:2026-09-30T02:41:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161450#issuecomment-5903010283",
-      "comment_created_at": "2026-09-30T02:41:04Z",
-      "comment_updated_at": "2026-09-30T02:41:04Z",
-      "comment_body_sha256": "53936fd7697e5dc5b19544f5d42569f3ac7fdcc278f6700a0af8cad4d4a7a944",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161450,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:41:58.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-cross-os-upgrade",
-        "head_sha": "50c8c89721d41a9fce828b95b6dff5cca1c9ec5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161438:5901191465:2026-09-30T02:40:53Z:clawsweeper_auto_repair",
       "comment_id": "5901191465",
@@ -33478,6 +33431,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161680:5905362588:2026-09-30T06:41:35Z:clawsweeper_needs_human",
+      "comment_id": "5905362588",
+      "comment_version_key": "5905362588:2026-09-30T06:41:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161680#issuecomment-5905362588",
+      "comment_created_at": "2026-09-30T06:19:50Z",
+      "comment_updated_at": "2026-09-30T06:41:35Z",
+      "comment_body_sha256": "e70b54866b69bba01012ec94f39337fe00134fb215280b2671d848c4057d2285",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body lacks the measured per-file wall times and CI seconds required for materially changed tests, so the claimed CI-cost benefit and test budget remain unverified. (sha=127f73a3ce54142fa2440d745cc8498f6f1832a0)",
+      "expected_head_sha": "127f73a3ce54142fa2440d745cc8498f6f1832a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T06:42:30.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d107-1790743857",
+        "head_sha": "127f73a3ce54142fa2440d745cc8498f6f1832a0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
