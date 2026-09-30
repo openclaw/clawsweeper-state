@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162054",
+  "mode": "autonomous",
+  "run_id": "36763688600",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36763688600",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162054.md",
+  "published_at": "2026-09-30T19:54:27.884Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162054",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162054",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported unhandled hook failure-reporting path. The checkout is read-only and has no installed dependencies, so I could not add the required failing regression, patch the branch, or run validation. A narrow fix artifact is ready for the executor.",
+  "actions": [
+    {
+      "target": "#162054",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162054",
+      "candidate_fix": null,
+      "reason": "The source-level failure is present on current main; an executable persistent-error regression remains required before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162054",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#162054",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout with dependencies to establish the failing HTTP regression, implement the fix, and validate it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
