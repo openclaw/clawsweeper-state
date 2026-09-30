@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "36710912133"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36710912133"
-head_sha: "d7fd40ed0f8e8283c0c91c3b7c94f3c485bb608a"
+run_id: "36725071196"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36725071196"
+head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-30T11:52:59.353Z"
+published_at: "2026-09-30T13:57:29.097Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36710912133](https://github.com/openclaw/clawsweeper/actions/runs/36710912133)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36725071196](https://github.com/openclaw/clawsweeper/actions/runs/36725071196)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-No implementation PR is viable yet. Issue #41 explicitly requires a stable Ghostty v1.4 tag and a maintained, published compatible browser/WASM wrapper before work starts. The hydrated issue review says both gates remain unmet; the current main checkout still pins ghostty-web@0.4.0.
+No implementation PR is ready. Issue #41 requires both a stable Ghostty v1.4 tag and a published, maintained v1.4-compatible browser/WASM wrapper. The September 30 preflight review reports that neither gate is met, and current main still pins ghostty-web@0.4.0.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No implementation PR is viable yet. Issue #41 explicitly requires a stable Ghost
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | Keep the upstream tracking issue open. Reassess implementation after both publication gates are verified. |
+| #41 | keep_canonical | planned | canonical | Keep the issue open and defer implementation until both upstream artifacts are published. A replacement wrapper or private WASM ABI patch would violate the issue's explicit gates. |
 
 ## Needs Human
 
