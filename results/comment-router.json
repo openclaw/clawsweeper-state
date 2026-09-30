@@ -1,60 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:52:38.575Z",
+  "updated_at": "2026-09-30T04:52:57.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5782748334:2026-09-22T19:35:21Z:re_review",
-      "comment_id": "5782748334",
-      "comment_version_key": "5782748334:2026-09-22T19:35:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5782748334",
-      "comment_created_at": "2026-09-22T19:35:21Z",
-      "comment_updated_at": "2026-09-22T19:35:21Z",
-      "comment_body_sha256": "ac7738c8b5cd5b64f0a763cfe41479723cf765776c3e73e71b268e642eed020e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 68a59b0567255318b4d2da69057be75a79a15af6. the pr is narrowed to update/tui coordination only (no doctor or data-model surface). the privileged-update gap is addressed on posix and windows: verified target clients from another/unknown account remain visible, activation refuses before signaling or mutation, and the operator is directed to use the installation owner. exact-head proof: https://github.com/openclaw/openclaw/actions/runs/35774480343 (94 focused tests plus targeted oxlint)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T01:30:46.799Z",
-      "target": null
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5783303846:2026-09-22T20:07:07Z:re_review",
-      "comment_id": "5783303846",
-      "comment_version_key": "5783303846:2026-09-22T20:07:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5783303846",
-      "comment_created_at": "2026-09-22T20:07:07Z",
-      "comment_updated_at": "2026-09-22T20:07:07Z",
-      "comment_body_sha256": "eeefe4d39716d76b9fcfc71c788372ef9d59cf640b078f6812d956b7dbcdf607",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head de56f3818627657db9b013fa6fdfa3f8d1db9dcf. this is the reviewed 68a59b05672 patch rebased unchanged onto main’s canonical deadcode fix 1619aff4781603cb998646f5ac8068603dbd3e20. the pr remains narrowed to 21 update/tui files, with no doctor or data-model surface",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T01:30:46.799Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5784924312:2026-09-22T22:03:05Z:re_review",
       "comment_id": "5784924312",
@@ -32115,6 +32061,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161446:5901387525:2026-09-30T00:03:32Z:re_review",
+      "comment_id": "5901387525",
+      "comment_version_key": "5901387525:2026-09-30T00:03:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161446#issuecomment-5901387525",
+      "comment_created_at": "2026-09-30T00:03:32Z",
+      "comment_updated_at": "2026-09-30T00:03:32Z",
+      "comment_body_sha256": "ebf8a4a67055785da1a46cb893a2bf6bad4b962af85816f932e765b49c9c2736",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161446,
+      "author": "IstiqlalBhat",
+      "author_id": 57939895,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T04:52:55.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cli-0-159-1",
+        "head_sha": "739dbad8820c47d3a24d2f494dba19a231b724fc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161446:5901324798:2026-09-30T04:46:32Z:clawsweeper_needs_human",
+      "comment_id": "5901324798",
+      "comment_version_key": "5901324798:2026-09-30T04:46:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161446#issuecomment-5901324798",
+      "comment_created_at": "2026-09-29T23:57:19Z",
+      "comment_updated_at": "2026-09-30T04:46:32Z",
+      "comment_body_sha256": "4f74a6a24f3fe7b20253332ad1f84848bd9ab43516c7ec1e2d3dac603656e2a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upgraded Linux native binary has not completed the native-hook path on a capable runner. The observed bubblewrap setup failure does not establish whether 0.159.1 preserves the exi... (sha=739dbad8820c47d3a24d2f494dba19a231b724fc)",
+      "expected_head_sha": "739dbad8820c47d3a24d2f494dba19a231b724fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T04:52:57.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cli-0-159-1",
+        "head_sha": "739dbad8820c47d3a24d2f494dba19a231b724fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
