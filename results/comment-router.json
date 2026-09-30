@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:05:44.948Z",
+  "updated_at": "2026-09-30T07:05:55.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161240:5903171639:2026-09-30T02:57:37Z:re_review",
-      "comment_id": "5903171639",
-      "comment_version_key": "5903171639:2026-09-30T02:57:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161240#issuecomment-5903171639",
-      "comment_created_at": "2026-09-30T02:57:37Z",
-      "comment_updated_at": "2026-09-30T02:57:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161240,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:59:31.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feature-existing-session-text-20260929",
-        "head_sha": "befa33ac6a59c60aa8ac56e609ac013dbe41ed82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161548:5903180573:2026-09-30T02:58:36Z:clawsweeper_needs_human",
       "comment_id": "5903180573",
@@ -33611,6 +33564,39 @@
         "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
         "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161706:5905999796:2026-09-30T07:04:56Z:clawsweeper_needs_human",
+      "comment_id": "5905999796",
+      "comment_version_key": "5905999796:2026-09-30T07:04:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161706#issuecomment-5905999796",
+      "comment_created_at": "2026-09-30T07:04:56Z",
+      "comment_updated_at": "2026-09-30T07:04:56Z",
+      "comment_body_sha256": "fca2480c6d130de972b8875919800779b053edbf1293f3f843a63739fcf74dca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured PR state reported a merge conflict, and current main rewrote the LanceDB migration test that this branch extends; the integrated test has not been verified. (sha=108cdfb54dcb51bb1b5b70526305a0d491410ca5)",
+      "expected_head_sha": "108cdfb54dcb51bb1b5b70526305a0d491410ca5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:05:55.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l210-longtail-fixes",
+        "head_sha": "108cdfb54dcb51bb1b5b70526305a0d491410ca5",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
