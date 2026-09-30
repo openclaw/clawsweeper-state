@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161992",
+  "mode": "autonomous",
+  "run_id": "36747066256",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36747066256",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161992.md",
+  "published_at": "2026-09-30T17:27:10.294Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161992",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161992",
+  "canonical_pr": null,
+  "summary": "The callback-index mismatch remains in the preflight main commit. A narrow fix is planned, but this read-only checkout prevented a failing regression, code changes, and validation. No PR was opened.",
+  "actions": [
+    {
+      "target": "#161992",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161992",
+      "candidate_fix": null,
+      "reason": "The existing callback contract exposes apiKeyIndex, but this entry point cannot report a caller-selected nonzero index."
+    },
+    {
+      "target": "#161527",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Adjacent provider-auth context with a distinct, unresolved reproduction path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161992",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161992",
+      "candidate_fix": null,
+      "reason": "Implementation must resume in a writable checkout with working dependencies. First demonstrate the index-1 regression failing on the pinned base, then patch and validate it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
