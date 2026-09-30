@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:08:45.426Z",
+  "updated_at": "2026-09-30T07:08:46.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140609:5850806913:2026-09-26T23:15:33Z:re_review",
-      "comment_id": "5850806913",
-      "comment_version_key": "5850806913:2026-09-26T23:15:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140609#issuecomment-5850806913",
-      "comment_created_at": "2026-09-26T23:15:33Z",
-      "comment_updated_at": "2026-09-26T23:15:33Z",
-      "comment_body_sha256": "5fe61b12c7e29fef9bb2c5dc8caf7875f3c4f1ada3370d49b29161fa2d46c417",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140609,
-      "author": "saladinyao-cyber",
-      "author_id": 240252919,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T03:05:54.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secret-egress-proxy-alias-fencing",
-        "head_sha": "abf1283166b947336d331499a525634741def8a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140609:5564012790:2026-09-30T03:04:54Z:clawsweeper_needs_human",
       "comment_id": "5564012790",
@@ -33656,6 +33609,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:670:5901265414:2026-09-30T07:07:33Z:clawsweeper_needs_human",
+      "comment_id": "5901265414",
+      "comment_version_key": "5901265414:2026-09-30T07:07:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5901265414",
+      "comment_created_at": "2026-09-29T23:51:28Z",
+      "comment_updated_at": "2026-09-30T07:07:33Z",
+      "comment_body_sha256": "a030e1705935830b9ee41d176d6d1a650cac513ef6554207230451cc8fb53180",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed workflow sends issue and command events from GitHub Actions to the ClawSweeper receiver. Reported m...; Review finding: [medium] Privileged command boundary lacks final-effect proof — .github/workflows/clawsweeper-dispatch.yml:403 (sha=32962ba95a342059d47cb249fe5dc0fe3e86bc59)",
+      "expected_head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T07:08:46.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "enable-clawsweeper-review",
+        "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
