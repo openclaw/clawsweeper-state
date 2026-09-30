@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 30, 2026, 01:13 UTC
+Last source update: Sep 30, 2026, 01:51 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 30, 2026, 01:13 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 30, 2026, 01:13 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36652891966) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 30, 2026, 01:11 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36653859051) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 30, 2026, 01:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36654667783) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 30, 2026, 01:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36656801629) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 29, 2026, 15:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36592046296) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 30, 2026, 01:16 UTC
+Last source update: Sep 30, 2026, 01:51 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1318 | 100% |
-| Run attempts archived | 3926 | audit |
+| Run attempts archived | 3927 | audit |
 | Latest successful clusters | 1097 | 83.2% |
 | Latest failed clusters | 218 | 16.5% |
 | Latest cancelled clusters | 3 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1318 clusters: 362 maintainer action, 403 automation snapshot, 502 intervention needed, 51 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#91927](https://github.com/openclaw/openclaw/issues/91927) is maintainer_input: Session identifier export raises a separate sensitive-data and privacy decision..
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-161467](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161467.md) is automation_blocked: fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1.
+- Intervention first: [openclaw/imsg](https://github.com/openclaw/imsg) [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) is automation_blocked: external base blocker: validation failed only in base-identical files outside the repair delta: Makefile.
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#161441](https://github.com/openclaw/openclaw/issues/161441) is action_planned: Verify the completed archive against the retained source before owner lookup. Keep owner checks and warnings for backups without a verifi....
 - Completed latest: no completed action in the latest records.
 
@@ -187,10 +187,10 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/imsg](https://github.com/openclaw/imsg) |  | automation_blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | Sep 30, 2026, 01:51 UTC | [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | [36656646741](https://github.com/openclaw/clawsweeper/actions/runs/36656646741) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Sep 30, 2026, 01:09 UTC | [issue-openclaw-openclaw-161467](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161467.md) | [36653434126](https://github.com/openclaw/clawsweeper/actions/runs/36653434126) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#161431](https://github.com/openclaw/openclaw/pull/161431) | automation_failed | The reported multi-agent TTS failure remains in current-main source. | Sep 30, 2026, 00:31 UTC | [issue-openclaw-openclaw-161431](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161431.md) | [36647679863](https://github.com/openclaw/clawsweeper/actions/runs/36647679863) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | No narrow implementation PR is justified yet. Current main contains fixes for several identified CPU and write paths, but the remaining symptoms in... | Sep 29, 2026, 23:58 UTC | [issue-steipete-codexbar-3882](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3882.md) | [36647634473](https://github.com/openclaw/clawsweeper/actions/runs/36647634473) |
-| [openclaw/imsg](https://github.com/openclaw/imsg) |  | automation_blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | Sep 29, 2026, 23:28 UTC | [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | [36644803392](https://github.com/openclaw/clawsweeper/actions/runs/36644803392) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#161415](https://github.com/openclaw/openclaw/pull/161415) | automation_blocked | The job requires a pre-fix reproduction on latest main before implementation. That gate could not be completed in this checkout. | Sep 29, 2026, 22:54 UTC | [issue-openclaw-openclaw-161415](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161415.md) | [36641831442](https://github.com/openclaw/clawsweeper/actions/runs/36641831442) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#3798](https://github.com/steipete/codexbar/pull/3798) | automation_failed | Clarify the cause and the usable mitigation in the settings UI without modifying Claude Code’s Keychain item. | Sep 29, 2026, 22:31 UTC | [issue-steipete-codexbar-3798](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3798.md) | [36633240068](https://github.com/openclaw/clawsweeper/actions/runs/36633240068) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | Issue #3790 remains open, but the supplied reproduction does not identify which usage source produced the paid-account card or whether that source... | Sep 29, 2026, 22:27 UTC | [issue-steipete-codexbar-3790](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3790.md) | [36633263970](https://github.com/openclaw/clawsweeper/actions/runs/36633263970) |
@@ -233,8 +233,8 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-openclaw-imsg-324 | execute_fix blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | [36656646741](https://github.com/openclaw/clawsweeper/actions/runs/36656646741) |
 | issue-openclaw-openclaw-161467 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-openclaw-161467](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161467.md) | [36653434126](https://github.com/openclaw/clawsweeper/actions/runs/36653434126) |
-| issue-openclaw-imsg-324 | execute_fix blocked | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | [36644803392](https://github.com/openclaw/clawsweeper/actions/runs/36644803392) |
 | issue-steipete-codexbar-3776 | needs human | For #3776, supply a successful redacted authenticated response from GET /api/usage?granularity=day that establishes response fields, units, reporti... | [issue-steipete-codexbar-3776](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3776.md) | [36601569433](https://github.com/openclaw/clawsweeper/actions/runs/36601569433) |
 | issue-steipete-codexbar-3728 | needs human | For #3728, obtain provider documentation or a redacted read-only account response establishing monthly and ensemble-mode usage counters, authentica... | [issue-steipete-codexbar-3728](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3728.md) | [36543843793](https://github.com/openclaw/clawsweeper/actions/runs/36543843793) |
 | issue-steipete-codexbar-3660 | needs human | Obtain a current automatic-auth reproduction for #3660 after #3814 and #3883: selected Auth source, signed-in browser/profile, and exact error. The... | [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) | [36489034004](https://github.com/openclaw/clawsweeper/actions/runs/36489034004) |
@@ -268,8 +268,8 @@ State: Failed clusters need inspection
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
+| [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [36656646741](https://github.com/openclaw/clawsweeper/actions/runs/36656646741) |
 | [issue-openclaw-openclaw-161467](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161467.md) | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [36653434126](https://github.com/openclaw/clawsweeper/actions/runs/36653434126) |
-| [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [36644803392](https://github.com/openclaw/clawsweeper/actions/runs/36644803392) |
 | [issue-openclaw-openclaw-125873](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-125873.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=extensions, extensionTests, tooling... | [36444377660](https://github.com/openclaw/clawsweeper/actions/runs/36444377660) |
 | [issue-openclaw-imsg-322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-322.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [36368874126](https://github.com/openclaw/clawsweeper/actions/runs/36368874126) |
 | [issue-openclaw-openclaw-153145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153145.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=apps [check:changed] apps/macos/Sour... | [36203268022](https://github.com/openclaw/clawsweeper/actions/runs/36203268022) |
