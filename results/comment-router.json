@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T17:10:46.653Z",
+  "updated_at": "2026-09-30T17:11:12.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157851:5826695098:2026-09-30T08:51:23Z:clawsweeper_needs_human",
-      "comment_id": "5826695098",
-      "comment_version_key": "5826695098:2026-09-30T08:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157851#issuecomment-5826695098",
-      "comment_created_at": "2026-09-25T04:24:57Z",
-      "comment_updated_at": "2026-09-30T08:51:23Z",
-      "comment_body_sha256": "3ccb6ea3994a4556cec92628f96faf102923d559bb00462a19e1c731af26be44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157851,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: SecOps assessment pending for CodeQL Action** - The new Action revision runs with security-events write permission, and the repository requires independent SecOps approval of CodeQL wor...; Review finding: [medium] SecOps assessment pending for CodeQL Action — .github/workflows/codeql.yml:122 (sha=c1ec038a2dafeb159975d4118ab32dc6f3bfc12a)",
-      "expected_head_sha": "c1ec038a2dafeb159975d4118ab32dc6f3bfc12a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T09:15:52.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-e79b30f36d",
-        "head_sha": "05f26dc0c49d8cc5f12b1044989116f6df8e2c79",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157912:5827144490:2026-09-30T09:10:12Z:clawsweeper_auto_repair",
       "comment_id": "5827144490",
@@ -33443,6 +33410,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161954:5916044979:2026-09-30T17:10:06Z:re_review",
+      "comment_id": "5916044979",
+      "comment_version_key": "5916044979:2026-09-30T17:10:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161954#issuecomment-5916044979",
+      "comment_created_at": "2026-09-30T17:10:06Z",
+      "comment_updated_at": "2026-09-30T17:10:06Z",
+      "comment_body_sha256": "48c5b8034a9373bcaa11fb04681f10736c48dae8ad6813cf47baac7d87a8b84c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161954,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T17:11:10.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-schema-uri-fragments",
+        "head_sha": "1298817c06a1b922c85200ad55143340bf903d6b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
