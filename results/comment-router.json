@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:01:45.431Z",
+  "updated_at": "2026-09-30T04:01:46.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161070:5901602020:2026-09-30T00:24:06Z:re_review",
-      "comment_id": "5901602020",
-      "comment_version_key": "5901602020:2026-09-30T00:24:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161070#issuecomment-5901602020",
-      "comment_created_at": "2026-09-30T00:24:06Z",
-      "comment_updated_at": "2026-09-30T00:24:06Z",
-      "comment_body_sha256": "323c1c19ddcc094261121ed2d170ff8a7fe6019b9c625882d85d016f0039d77b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161070,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T00:32:17.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/codex-solo-native-spawn",
-        "head_sha": "5eb33fa2fa256f18f2dafcc7f9152b146ce16c99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161070:5885970272:2026-09-30T00:31:17Z:clawsweeper_auto_repair",
       "comment_id": "5885970272",
@@ -31998,6 +31951,39 @@
         "kind": "pull_request",
         "branch": "feat/gpt-6.1-sol",
         "head_sha": "239d47a47bd3b86b960a90468f146fd39594eb1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157557:5822598204:2026-09-30T04:00:54Z:clawsweeper_needs_human",
+      "comment_id": "5822598204",
+      "comment_version_key": "5822598204:2026-09-30T04:00:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157557#issuecomment-5822598204",
+      "comment_created_at": "2026-09-24T21:32:59Z",
+      "comment_updated_at": "2026-09-30T04:00:54Z",
+      "comment_body_sha256": "8416c20e02618942e1ef5e6ed65fd2445cf76add3aa135925d98e6d25c971774",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Adopting an agent writes a v3 record that released v2026.9.6 cannot read. On downgrade, Claws status can fail across installed Claws and update or removal of the adopted agent require... (sha=ea39e3080974a522f7febb957a5d30858133171b)",
+      "expected_head_sha": "ea39e3080974a522f7febb957a5d30858133171b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T04:01:46.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "giodl/pr125345-main-refresh2",
+        "head_sha": "ea39e3080974a522f7febb957a5d30858133171b",
         "cluster_id": null,
         "job_path": null
       }
