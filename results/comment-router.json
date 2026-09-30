@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T05:26:26.206Z",
+  "updated_at": "2026-09-30T05:26:27.963Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125969:5902588733:2026-09-30T02:00:46Z:re_review",
-      "comment_id": "5902588733",
-      "comment_version_key": "5902588733:2026-09-30T02:00:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125969#issuecomment-5902588733",
-      "comment_created_at": "2026-09-30T02:00:46Z",
-      "comment_updated_at": "2026-09-30T02:00:46Z",
-      "comment_body_sha256": "5e5d8f2ed1498187e985baa583ae5aea6231d527d6449907a426a34cb74bbb3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125969,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:01:48.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-scoped-image-catalog",
-        "head_sha": "ba61f138050385a8895ee617914182faa36ce2fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161475:5902094616:2026-09-30T02:01:13Z:clawsweeper_needs_human",
       "comment_id": "5902094616",
@@ -32292,6 +32245,39 @@
         "kind": "pull_request",
         "branch": "fix/secretref-docs-generator",
         "head_sha": "76193dbee0e888f488c77a653422100ee8e32e01",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161552:5903241187:2026-09-30T05:13:12Z:clawsweeper_needs_human",
+      "comment_id": "5903241187",
+      "comment_version_key": "5903241187:2026-09-30T05:13:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161552#issuecomment-5903241187",
+      "comment_created_at": "2026-09-30T03:04:40Z",
+      "comment_updated_at": "2026-09-30T05:13:12Z",
+      "comment_body_sha256": "c167d7fd957e3d2e5e27318bdcd093b58ad123acf17c2ce9ca303fa144ecada5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed enrollment manager and pairing worker have real SQLite fixture tests and synthetic WebSocket checks...; Review finding: [P1] Check live enrollment before Watch pairing writes — src/gateway/device-pair-setup-completion.ts:28 - [P1] Authorize WebSocket pairing before durable approval... (sha=661d7ceb6ac5b2855707fc03b2a453f35eb2d9b0)",
+      "expected_head_sha": "661d7ceb6ac5b2855707fc03b2a453f35eb2d9b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T05:26:27.963Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/kind-ellis-e317fb",
+        "head_sha": "661d7ceb6ac5b2855707fc03b2a453f35eb2d9b0",
         "cluster_id": null,
         "job_path": null
       }
