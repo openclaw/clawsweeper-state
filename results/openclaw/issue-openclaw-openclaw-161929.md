@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161929"
-mode: "autonomous"
-run_id: "36732522012"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36732522012"
+mode: "plan"
+run_id: "36737936991"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36737936991"
 head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-30T15:31:18.311Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-30T15:39:01.536Z"
 canonical: "https://github.com/openclaw/openclaw/issues/161929"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/161929"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36732522012](https://github.com/openclaw/clawsweeper/actions/runs/36732522012)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36737936991](https://github.com/openclaw/clawsweeper/actions/runs/36737936991)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/161929
 
 ## Summary
 
-The local HTTP probe still uses the reported request path on main ebe57ef28af64c073de8264c7052ce519f1fda23, but the failure was not independently reproduced. This checkout is read-only and has no installed dependencies, so I could not add the required failing regression, verify Proxyline’s request contract, or validate a fix. No code or GitHub state changed.
+Keep the open issue as canonical. Plan a narrow repair to the shared local HTTP probe, gated on reproducing the reported failure on the pinned main revision and verifying Proxyline’s request contract. No code, tests, or GitHub state were changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The local HTTP probe still uses the reported request path on main ebe57ef28af64c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161929 | fix_needed | blocked | canonical | The issue requires a failing reproduction on current main before code changes. That gate cannot be completed in this read-only checkout. |
-| cluster:issue-openclaw-openclaw-161929 | build_fix_artifact | planned |  | A narrow fix path is identifiable, but execution remains gated on reproduction and a writable checkout. |
+| https://github.com/openclaw/openclaw/issues/161929 | fix_needed | planned | canonical | No open candidate PR covers the reported shared-probe failure. Reproduction and Proxyline contract verification remain required before a fix PR is prepared. |
+| https://github.com/openclaw/openclaw/pull/147941 | keep_closed | skipped | related | Historical related work; no action on the closed PR. |
 
 ## Needs Human
 
