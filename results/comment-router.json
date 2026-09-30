@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T18:49:30.917Z",
+  "updated_at": "2026-09-30T18:50:21.576Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-30T10:38:31Z:clawsweeper_needs_human",
-      "comment_id": "5466178577",
-      "comment_version_key": "5466178577:2026-09-30T10:38:31Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
-      "comment_created_at": "2026-08-30T02:13:24Z",
-      "comment_updated_at": "2026-09-30T10:38:31Z",
-      "comment_body_sha256": "81a9dcadc573b112060bbf797b0e0e9a2aca202036e38259881870adbfdb2325",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3548,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A Node ZIP or binary transfer that keeps making progress beyond 15 seconds now aborts and retries from the beginning. The stall proof does not establish the effect on slow existing in... (sha=ed720cb0cba59b02b770d4ca1d51834bf6e4dabd)",
-      "expected_head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T10:42:21.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f003-fetch-body-timeout",
-        "head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3797:5798083325:2026-09-30T10:41:20Z:clawsweeper_auto_repair",
       "comment_id": "5798083325",
@@ -33445,6 +33412,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161709:5917587067:2026-09-30T18:49:23Z:re_review",
+      "comment_id": "5917587067",
+      "comment_version_key": "5917587067:2026-09-30T18:49:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161709#issuecomment-5917587067",
+      "comment_created_at": "2026-09-30T18:49:23Z",
+      "comment_updated_at": "2026-09-30T18:49:23Z",
+      "comment_body_sha256": "cc152908122adae9968e12b60adc4bfd41dc0b0163bf2a87ce530aaaad7b1e4c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161709,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-30T18:50:21.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mac-app-hosted-gateway",
+        "head_sha": "ed591e220ccfd434fcc4dc2593e31b4610f0c647",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
