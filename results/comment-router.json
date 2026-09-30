@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-30T10:00:58.154Z",
+  "updated_at": "2026-09-30T10:02:43.987Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158000:5829787140:2026-09-25T09:03:58Z:re_review",
-      "comment_id": "5829787140",
-      "comment_version_key": "5829787140:2026-09-25T09:03:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158000#issuecomment-5829787140",
-      "comment_created_at": "2026-09-25T09:03:58Z",
-      "comment_updated_at": "2026-09-25T09:03:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158000,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T05:20:11.627Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158000:5830058703:2026-09-25T09:25:45Z:re_review",
       "comment_id": "5830058703",
@@ -33761,6 +33734,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:703:5908919756:2026-09-30T10:01:48Z:clawsweeper_needs_human",
+      "comment_id": "5908919756",
+      "comment_version_key": "5908919756:2026-09-30T10:01:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/703#issuecomment-5908919756",
+      "comment_created_at": "2026-09-30T10:01:48Z",
+      "comment_updated_at": "2026-09-30T10:01:48Z",
+      "comment_body_sha256": "aace979b25ac0c746edd07a631ced4fa266abfb320e2d02e211924d02938f20b",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 703,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Check caller source grants before the capability refusal (P2)** - This moves the native-support refusal ahead of admitHarnessAuth and authorizeBindings, which also check the caller's own Secret or credential-sou...; Review finding: [P2] Check caller source grants before the capability refusal — packages/occ/src/index.ts:4468-4469 - [P2] Exercise the named denial through the deploy API — tests... (sha=25c3d174555c5fdd409307fd647b2827b427536b)",
+      "expected_head_sha": "25c3d174555c5fdd409307fd647b2827b427536b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T10:02:43.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dogfood-8",
+        "head_sha": "25c3d174555c5fdd409307fd647b2827b427536b",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
