@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:34:41.778Z",
+  "updated_at": "2026-09-30T09:35:02.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160444:5869921136:2026-09-30T04:37:58Z:clawsweeper_needs_human",
-      "comment_id": "5869921136",
-      "comment_version_key": "5869921136:2026-09-30T04:37:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160444#issuecomment-5869921136",
-      "comment_created_at": "2026-09-28T12:34:38Z",
-      "comment_updated_at": "2026-09-30T04:37:58Z",
-      "comment_body_sha256": "06685f0e2a1abe9eefcbe2186f0d484d035048a295608f4497e4c45fa25b4a5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160444,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A Gateway-first upgrade could stop turns on an unchanged published v2026.9.6 session-host node if it cannot install or launch this candidate bundle; the recorded loopback runs do not... (sha=3c200c0069090a4f93905d8d3fd8127372a20704)",
-      "expected_head_sha": "3c200c0069090a4f93905d8d3fd8127372a20704",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T04:39:06.013Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/node-parity-p1a-tool-surface",
-        "head_sha": "3c200c0069090a4f93905d8d3fd8127372a20704",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159847:5859059057:2026-09-30T04:38:15Z:clawsweeper_needs_human",
       "comment_id": "5859059057",
@@ -34276,6 +34243,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:670:5908418803:2026-09-30T09:33:55Z:address_review",
+      "comment_id": "5908418803",
+      "comment_version_key": "5908418803:2026-09-30T09:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5908418803",
+      "comment_created_at": "2026-09-30T09:33:55Z",
+      "comment_updated_at": "2026-09-30T09:33:55Z",
+      "comment_body_sha256": "ffdfcd8750a52d2211f6f4ac892969f26c8013758674eda6c83789beb7dc1fc2",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 670,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "address review",
+      "intent": "address_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T09:34:45.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "enable-clawsweeper-review",
+        "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
