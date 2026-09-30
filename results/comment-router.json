@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:29:44.834Z",
+  "updated_at": "2026-09-30T08:30:25.680Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:670:5903692696:2026-09-30T03:51:50Z:autofix",
-      "comment_id": "5903692696",
-      "comment_version_key": "5903692696:2026-09-30T03:51:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5903692696",
-      "comment_created_at": "2026-09-30T03:51:50Z",
-      "comment_updated_at": "2026-09-30T03:51:50Z",
-      "comment_body_sha256": "27a7eeffb78ce02a9c41299b67831308bbd23e4709cfd597f4e6fa91e6728434",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 670,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T03:52:31.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "enable-clawsweeper-review",
-        "head_sha": "e30a40b607ab819dc0c9e31c5593adb9c5c1cfc3",
-        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161582:5903695963:2026-09-30T03:52:11Z:clawsweeper_needs_human",
       "comment_id": "5903695963",
@@ -34589,6 +34530,39 @@
         "kind": "pull_request",
         "branch": "deslop/l212-ui-diff-options",
         "head_sha": "21f03ea6e6af7beef41e22ecd89a7c023eed3f7f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158596:5842550979:2026-09-30T08:29:19Z:clawsweeper_needs_human",
+      "comment_id": "5842550979",
+      "comment_version_key": "5842550979:2026-09-30T08:29:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158596#issuecomment-5842550979",
+      "comment_created_at": "2026-09-26T02:54:15Z",
+      "comment_updated_at": "2026-09-30T08:29:19Z",
+      "comment_body_sha256": "0b1c2a21cf3a244e82aacd1ca2390e9947acb7ade7bf8e614e5909414c83f2b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed config validator should accept a plugin channel override through openclaw config patch --stdin --dry-run, but the captured PR body... (sha=f1128484bd06b72a81f4b1fe69912b6a5cd04f4b)",
+      "expected_head_sha": "f1128484bd06b72a81f4b1fe69912b6a5cd04f4b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T08:30:25.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/feature-158214-queue-by-channel",
+        "head_sha": "f1128484bd06b72a81f4b1fe69912b6a5cd04f4b",
         "cluster_id": null,
         "job_path": null
       }
