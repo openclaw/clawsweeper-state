@@ -2,16 +2,16 @@
 repo: "openclaw/imsg"
 cluster_id: "issue-openclaw-imsg-324"
 mode: "autonomous"
-run_id: "36656646741"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36656646741"
+run_id: "36658091028"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36658091028"
 head_sha: "0f5162431a344474998f10042f3ea0f8a5705e2a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-30T01:51:27.791Z"
+published_at: "2026-09-30T02:09:21.028Z"
 canonical: "https://github.com/openclaw/imsg/issues/324"
 canonical_issue: "https://github.com/openclaw/imsg/issues/324"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 1
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/imsg
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36656646741](https://github.com/openclaw/clawsweeper/actions/runs/36656646741)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36658091028](https://github.com/openclaw/clawsweeper/actions/runs/36658091028)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/imsg/issues/324
 
 ## Summary
 
-Issue #324 remains viable on main at 1aca78d. The send path can pass a bare group identifier to a helper that resolves GUIDs, and the helper's pre-dispatch “Chat not found” response lacks a delivery disposition. Implementation and validation are blocked by the read-only Linux checkout; no code or PR was created.
+Issue #324 remains reproducible from the send path on main 1aca78d. A narrow fix is defined, but this checkout is read-only, so no regression test, patch, macOS validation, bridge trace, or PR was produced.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 1 |
@@ -67,9 +67,8 @@ Issue #324 remains viable on main at 1aca78d. The send path can pass a bare grou
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #324 | fix_needed | planned | canonical | A focused send-path fix and regression coverage are needed. |
-| cluster:issue-openclaw-imsg-324 | build_fix_artifact | planned |  | Emit a narrow implementation plan for the executor. |
-| cluster:issue-openclaw-imsg-324 | open_fix_pr | blocked |  | A PR requires the patch, passing validation, and the requested macOS bridge trace. |
+| #324 | fix_needed | planned | canonical | The issue is open and has no hydrated implementation PR. The repair needs code and tests; this worker's filesystem permission is read-only. |
+| cluster:issue-openclaw-imsg-324 | build_fix_artifact | blocked |  | Implementation and validation are blocked by the read-only checkout. |
 
 ## Needs Human
 
