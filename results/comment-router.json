@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T00:52:44.362Z",
+  "updated_at": "2026-09-30T00:53:46.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161261:5894815150:2026-09-29T16:58:24Z:re_review",
-      "comment_id": "5894815150",
-      "comment_version_key": "5894815150:2026-09-29T16:58:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161261#issuecomment-5894815150",
-      "comment_created_at": "2026-09-29T16:58:24Z",
-      "comment_updated_at": "2026-09-29T16:58:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161261,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T16:59:19.657Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-google-sse-frame-cap-20260929",
-        "head_sha": "2d4dcdeb3afe8153fb56dc35593f5006d9bb2d79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161267:5894835356:2026-09-29T16:59:46Z:re_review",
       "comment_id": "5894835356",
@@ -33224,6 +33177,39 @@
         "kind": "pull_request",
         "branch": "1071",
         "head_sha": "2078e1b01b7c8e7c7fc21f718b7f0e2c8a0989c3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161446:5901324798:2026-09-30T00:52:48Z:clawsweeper_needs_human",
+      "comment_id": "5901324798",
+      "comment_version_key": "5901324798:2026-09-30T00:52:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161446#issuecomment-5901324798",
+      "comment_created_at": "2026-09-29T23:57:19Z",
+      "comment_updated_at": "2026-09-30T00:52:48Z",
+      "comment_body_sha256": "8cfbd1e93f4546f802be8b812a9b354a35416ef7a2eacb9981aba91bc7baf20c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upgraded Linux native binary has not been exercised through the native-hook path: the CI scenarios stopped during bubblewrap loopback setup, and no same-host 0.158.0/0.159.1 compa... (sha=e29f0a3b8c29fc27e424e5c150db01cc7536404e)",
+      "expected_head_sha": "e29f0a3b8c29fc27e424e5c150db01cc7536404e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T00:53:46.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cli-0-159-1",
+        "head_sha": "e29f0a3b8c29fc27e424e5c150db01cc7536404e",
         "cluster_id": null,
         "job_path": null
       }
