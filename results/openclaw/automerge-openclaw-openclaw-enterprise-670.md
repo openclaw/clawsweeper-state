@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw-enterprise"
 cluster_id: "automerge-openclaw-openclaw-enterprise-670"
-mode: "autonomous"
-run_id: "36673857814"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36673857814"
+mode: "plan"
+run_id: "36675756573"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36675756573"
 head_sha: "59bde930ef5b9f4920160232957eabb73318930c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-30T05:44:17.532Z"
+published_at: "2026-09-30T05:59:22.496Z"
 canonical: "#670"
 canonical_issue: null
-canonical_pr: "#670"
+canonical_pr: "https://github.com/openclaw/openclaw-enterprise/pull/670"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-enterprise
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36673857814](https://github.com/openclaw/clawsweeper/actions/runs/36673857814)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36675756573](https://github.com/openclaw/clawsweeper/actions/runs/36675756573)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #670
 
 ## Summary
 
-Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Repair PR #670 on its existing branch. Limit the edit to the CI guide findings, preserve the dispatcher and its stated proof limits, and leave the PR open for a new exact-head review. This plan makes no GitHub changes.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, addre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #670 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #670 | build_fix_artifact | planned | canonical | The original PR remains the canonical, credited path. Its documented review findings have a narrow repair path, while hosted final-effect proof and merge approval remain outside this fix-only job. |
 
 ## Needs Human
 
