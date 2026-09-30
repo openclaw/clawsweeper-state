@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161467",
+  "mode": "autonomous",
+  "run_id": "36653434126",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36653434126",
+  "head_sha": "0f5162431a344474998f10042f3ea0f8a5705e2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161467.md",
+  "published_at": "2026-09-30T01:09:08.639Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161467",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161467",
+  "canonical_pr": null,
+  "summary": "Current main (2663c6b6202807712586bb2928c22397ccc14b27) still stops the Gmail watcher permanently after EADDRINUSE. A narrow recovery fix is warranted. This read-only worker did not change code or run validation; the fix and PR actions are planned for the executor.",
+  "actions": [
+    {
+      "target": "#161467",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161467",
+      "candidate_fix": null,
+      "reason": "The reported transient bind conflict can leave Gmail delivery down until another Gateway restart."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161467",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161467",
+      "candidate_fix": null,
+      "reason": "Implement recovery in the Gmail watcher lifecycle owner while preserving the duplicate-start guard."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161467",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161467",
+      "candidate_fix": null,
+      "reason": "Create or reuse the job's designated implementation PR after the patch and validation are complete."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#161467",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
