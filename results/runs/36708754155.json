@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161836",
+  "mode": "autonomous",
+  "run_id": "36708754155",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36708754155",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161836.md",
+  "published_at": "2026-09-30T12:04:59.541Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161836",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161836",
+  "canonical_pr": null,
+  "summary": "The staged-image preview defect is supported by source on main at 91fbec71fc8549d4e97222d00481c0eb08fe9d59. Implementation is blocked because this worker's checkout is read-only and has no installed test dependencies; no patch or failing regression was run.",
+  "actions": [
+    {
+      "target": "#161836",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161836",
+      "candidate_fix": null,
+      "reason": "The existing managed inbound display reference is lost during staging."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161836",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161836",
+      "candidate_fix": null,
+      "reason": "Resume in a writable checkout with dependencies, establish the failing boundary regression first, then implement and validate the narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
