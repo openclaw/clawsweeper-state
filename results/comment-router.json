@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T12:04:42.512Z",
+  "updated_at": "2026-09-30T12:05:39.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142236:5842917420:2026-09-26T03:50:09Z:re_review",
-      "comment_id": "5842917420",
-      "comment_version_key": "5842917420:2026-09-26T03:50:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142236#issuecomment-5842917420",
-      "comment_created_at": "2026-09-26T03:50:09Z",
-      "comment_updated_at": "2026-09-26T03:50:09Z",
-      "comment_body_sha256": "fd68523f8c965aa1bc04d5ac50d284fe759772fe056094230cdfd695dc82bace",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142236,
-      "author": "destire-mio",
-      "author_id": 248462155,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T06:27:07.051Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/141839-timeout-history",
-        "head_sha": "7952a8218c90802e572a3dca24e882a1c78534d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142236:5587015216:2026-09-30T06:24:32Z:clawsweeper_needs_human",
       "comment_id": "5587015216",
@@ -33548,6 +33501,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-diary-context-153682",
         "head_sha": "aa2a968c3dc7e3bb8799f2cb19a2414d8a2d4898",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161783:5908363028:2026-09-30T12:04:41Z:clawsweeper_needs_human",
+      "comment_id": "5908363028",
+      "comment_version_key": "5908363028:2026-09-30T12:04:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161783#issuecomment-5908363028",
+      "comment_created_at": "2026-09-30T09:31:03Z",
+      "comment_updated_at": "2026-09-30T12:04:41Z",
+      "comment_body_sha256": "d4aaffe741322ce18de66f9c6923e11d48a686b227777b270ca8a7802bf5a431",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161783,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Already-quarantined installations will lose read-only session access after upgrade. The supplied recovery trace clears a synthetic quarantine directly, so it does not establish that s... (sha=bc80583636f9be126ca0dbac74311abbe26036d6)",
+      "expected_head_sha": "bc80583636f9be126ca0dbac74311abbe26036d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T12:05:39.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-readonly-quarantine-gate-127387",
+        "head_sha": "bc80583636f9be126ca0dbac74311abbe26036d6",
         "cluster_id": null,
         "job_path": null
       }
