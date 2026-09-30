@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacrawl"
 cluster_id: "issue-openclaw-wacrawl-114"
-mode: "autonomous"
-run_id: "36699210108"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36699210108"
+mode: "plan"
+run_id: "36699851490"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36699851490"
 head_sha: "74dc4c6a2fc204e456fb92677ca9271af104e9cc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-30T09:59:12.690Z"
-canonical: "https://github.com/openclaw/wacrawl/issues/114"
-canonical_issue: "https://github.com/openclaw/wacrawl/issues/114"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-30T10:04:56.110Z"
+canonical: "#114"
+canonical_issue: "#114"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36699210108](https://github.com/openclaw/clawsweeper/actions/runs/36699210108)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36699851490](https://github.com/openclaw/clawsweeper/actions/runs/36699851490)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/wacrawl/issues/114
+Canonical: #114
 
 ## Summary
 
-Issue #114 is a viable performance fix on main d25fce36. Legacy adoption scans the full archive for each unmatched incoming message. The checkout is read only, so no regression test, patch, validation, or PR branch could be produced in this run.
+Issue #114 remains open and reproducible in the supplied main checkout. Plan a narrow fix for the repeated archived-message scan, with a failing scaled regression before implementation. No code or GitHub state was changed in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Issue #114 is a viable performance fix on main d25fce36. Legacy adoption scans t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114 | fix_needed | planned | canonical | A narrow lookup change can remove the repeated archive scan without changing adoption policy. |
-| cluster:issue-openclaw-wacrawl-114 | build_fix_artifact | planned |  | The repair is specified for an executor with a writable checkout. |
-| cluster:issue-openclaw-wacrawl-114 | open_fix_pr | blocked |  | Create or reuse clawsweeper/issue-openclaw-wacrawl-114 after the executor applies the patch and passes validation in a writable checkout. |
+| #114 | fix_needed | planned | canonical | The legacy adoption path has a repeated full scan consistent with the reported large-archive hang. The fix can preserve the existing identity and matching rules. |
 
 ## Needs Human
 
