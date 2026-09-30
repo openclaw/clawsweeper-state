@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:14:56.858Z",
+  "updated_at": "2026-09-30T03:16:03.536Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161406:5900057829:2026-09-29T22:11:06Z:clawsweeper_needs_human",
-      "comment_id": "5900057829",
-      "comment_version_key": "5900057829:2026-09-29T22:11:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161406#issuecomment-5900057829",
-      "comment_created_at": "2026-09-29T22:11:06Z",
-      "comment_updated_at": "2026-09-29T22:11:06Z",
-      "comment_body_sha256": "41e1196c29e9edf14bfc8e5f27c7bcb9079888069da8afd37fce0ed5cd8cd3ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b16ceb3d8a28aaca4a5901fe53903dee74a136dd)",
-      "expected_head_sha": "b16ceb3d8a28aaca4a5901fe53903dee74a136dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T22:12:05.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/archive-retirement-write-fixture",
-        "head_sha": "b16ceb3d8a28aaca4a5901fe53903dee74a136dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161239:5892795734:2026-09-29T22:11:22Z:clawsweeper_needs_human",
       "comment_id": "5892795734",
@@ -32637,6 +32604,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160364:5903345429:2026-09-30T03:15:11Z:re_review",
+      "comment_id": "5903345429",
+      "comment_version_key": "5903345429:2026-09-30T03:15:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160364#issuecomment-5903345429",
+      "comment_created_at": "2026-09-30T03:15:11Z",
+      "comment_updated_at": "2026-09-30T03:15:11Z",
+      "comment_body_sha256": "b28fb6e919db097b3b12de47c7015d45369d25099890e49446350f98bd3bfec6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160364,
+      "author": "slzszyt-ux",
+      "author_id": 264127039,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T03:16:01.993Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/logging-non-secret-env-references",
+        "head_sha": "f485a78c10eeab21c5bb28f065944108534b98b4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
