@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:58:51.333Z",
+  "updated_at": "2026-09-30T07:59:26.644Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1554:5903544926:2026-09-30T03:35:54Z:clawsweeper_auto_repair",
-      "comment_id": "5903544926",
-      "comment_version_key": "5903544926:2026-09-30T03:35:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1554#issuecomment-5903544926",
-      "comment_created_at": "2026-09-30T03:35:54Z",
-      "comment_updated_at": "2026-09-30T03:35:54Z",
-      "comment_body_sha256": "9eda52970bc59bd584e06f495c332e1099af520e31401f1a85f61114958b0830",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=245d3660165ced12cc89fed030df9538d4b30f4e)",
-      "expected_head_sha": "245d3660165ced12cc89fed030df9538d4b30f4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:36:46.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f086-winnode-no-proxy",
-        "head_sha": "245d3660165ced12cc89fed030df9538d4b30f4e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161240:5892903321:2026-09-30T03:36:10Z:clawsweeper_auto_repair",
       "comment_id": "5892903321",
@@ -34098,6 +34065,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158823:5906801797:2026-09-30T07:58:43Z:re_review",
+      "comment_id": "5906801797",
+      "comment_version_key": "5906801797:2026-09-30T07:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158823#issuecomment-5906801797",
+      "comment_created_at": "2026-09-30T07:58:09Z",
+      "comment_updated_at": "2026-09-30T07:58:43Z",
+      "comment_body_sha256": "dd13c445d49cde09bd46fd7bb59b48efc1b8a9f485d6f596477acdbef5a9428e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158823,
+      "author": "altaywtf",
+      "author_id": 9790196,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T07:59:24.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-browser-registration-name",
+        "head_sha": "bc18d06fb515c86bcf5b0b5d0076c1256dd77924",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
