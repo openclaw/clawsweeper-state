@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T14:11:29.862Z",
+  "updated_at": "2026-09-30T14:11:36.293Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150246:5808252221:2026-09-24T05:27:08Z:re_review",
-      "comment_id": "5808252221",
-      "comment_version_key": "5808252221:2026-09-24T05:27:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150246#issuecomment-5808252221",
-      "comment_created_at": "2026-09-24T05:27:08Z",
-      "comment_updated_at": "2026-09-24T05:27:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150246,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T07:19:56.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/e2e-built-runtime-typed",
-        "head_sha": "827de193573484d14b510ea99b11facfe13b0721",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150246:5703134312:2026-09-30T07:18:44Z:clawsweeper_needs_human",
       "comment_id": "5703134312",
@@ -33340,6 +33293,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:726:5911779980:2026-09-30T13:39:43Z:clawsweeper_needs_human",
+      "comment_id": "5911779980",
+      "comment_version_key": "5911779980:2026-09-30T13:39:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/726#issuecomment-5911779980",
+      "comment_created_at": "2026-09-30T12:58:47Z",
+      "comment_updated_at": "2026-09-30T13:39:43Z",
+      "comment_body_sha256": "fe93bc07833fdb3240f98e6f0b7516c5f49b129606d48da401271251b0a79c78",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 726,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Withhold unrecognized credentials in sandbox command lines (P1)** - The new argv rules mask named flags but still return the whole cmd_line. A custom header such as X-Session: abc123 matches no rule and reaches...; Review finding: [P1] Withhold unrecognized credentials in sandbox command lines — packages/occ/src/runtime-logs/sanitize.ts:438-441 - [P2] Preserve policy events that arrive behin... (sha=b9ebff4a1dcac99813ec805ed167685ef0f4db72)",
+      "expected_head_sha": "b9ebff4a1dcac99813ec805ed167685ef0f4db72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T14:11:36.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/agent-logs-3",
+        "head_sha": "b9ebff4a1dcac99813ec805ed167685ef0f4db72",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
