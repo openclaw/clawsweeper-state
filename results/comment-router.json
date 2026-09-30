@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-30T21:24:07.328Z",
+  "updated_at": "2026-09-30T21:22:14.655Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151218:5722368758:2026-09-30T14:12:34Z:clawsweeper_needs_human",
+      "comment_id": "5722368758",
+      "comment_version_key": "5722368758:2026-09-30T14:12:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151218#issuecomment-5722368758",
+      "comment_created_at": "2026-09-17T23:03:04Z",
+      "comment_updated_at": "2026-09-30T14:12:34Z",
+      "comment_body_sha256": "63912be8bb61b0a23ddf103eaed3ee7e522624c34d76a8f4a490118fe469d647",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the pinned installed Gateway and hosted Jev trace demonstrates allowed recall, skip, fallback, and pub...; Review finding: [P1] Recheck live consent at final provider dispatch — extensions/active-memory/decision-escalation.ts:155-159 - [medium] Withdrawal can precede hosted evidence tr... (sha=a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1)",
+      "expected_head_sha": "a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T14:15:16.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/active-memory-escalation-provider-51",
+        "head_sha": "a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/gogcli:1173:5913062970:2026-09-30T14:14:24Z:re_review",
       "comment_id": "5913062970",
@@ -33566,39 +33599,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2628:5919975393:2026-09-30T21:22:57Z:clawsweeper_auto_repair",
-      "comment_id": "5919975393",
-      "comment_version_key": "5919975393:2026-09-30T21:22:57Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2628#issuecomment-5919975393",
-      "comment_created_at": "2026-09-30T21:22:57Z",
-      "comment_updated_at": "2026-09-30T21:22:57Z",
-      "comment_body_sha256": "a4c7ec8637aefd3dcb1985ff8e4ef760eb19de3424c432e302bef08f0b65fd51",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2628,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=ab848e1560221461f020a9bee54318d2a76398a5)",
-      "expected_head_sha": "ab848e1560221461f020a9bee54318d2a76398a5",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-30T21:24:07.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/rfb-release-key-on-cancel",
-        "head_sha": "ab848e1560221461f020a9bee54318d2a76398a5",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
