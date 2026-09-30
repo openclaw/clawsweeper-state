@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:35:42.902Z",
+  "updated_at": "2026-09-30T04:36:05.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161475:5902207345:2026-09-30T01:22:52Z:re_review",
-      "comment_id": "5902207345",
-      "comment_version_key": "5902207345:2026-09-30T01:22:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161475#issuecomment-5902207345",
-      "comment_created_at": "2026-09-30T01:22:52Z",
-      "comment_updated_at": "2026-09-30T01:22:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161475,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T01:23:49.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-non-git-worktree-selection",
-        "head_sha": "4646a50aee37a80b710a7f3aefd0cf28d4ae27ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161486:5902208985:2026-09-30T01:23:02Z:clawsweeper_needs_human",
       "comment_id": "5902208985",
@@ -31959,6 +31912,39 @@
       "status": "skipped",
       "processed_at": "2026-09-30T04:35:42.902Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147629:5657621092:2026-09-30T04:34:52Z:clawsweeper_needs_human",
+      "comment_id": "5657621092",
+      "comment_version_key": "5657621092:2026-09-30T04:34:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147629#issuecomment-5657621092",
+      "comment_created_at": "2026-09-14T01:05:59Z",
+      "comment_updated_at": "2026-09-30T04:34:52Z",
+      "comment_body_sha256": "047e94b4881727e786ce303ee265acc73a25abfc5338064562a0db296b70b1f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed updater runs before the candidate and cannot gain this relocation behavior from the target alone. No published-updater to candidate run yet demonstrates the required fir... (sha=87282c8c6a9af3ed08950a475e1dca283fa298ac)",
+      "expected_head_sha": "87282c8c6a9af3ed08950a475e1dca283fa298ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T04:36:05.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-dirty-relocation",
+        "head_sha": "87282c8c6a9af3ed08950a475e1dca283fa298ac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
