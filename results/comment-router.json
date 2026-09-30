@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T23:40:39.529Z",
+  "updated_at": "2026-09-30T23:44:36.370Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159146:5915664011:2026-09-30T16:45:28Z:re_review",
-      "comment_id": "5915664011",
-      "comment_version_key": "5915664011:2026-09-30T16:45:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159146#issuecomment-5915664011",
-      "comment_created_at": "2026-09-30T16:45:28Z",
-      "comment_updated_at": "2026-09-30T16:45:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159146,
-      "author": "mnowrot",
-      "author_id": 135707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T16:47:03.168Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-consent-window-watchdog",
-        "head_sha": "0a102b521852b28f57da7a5f77461aadde3080a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161994:5915690674:2026-09-30T16:47:12Z:clawsweeper_needs_human",
       "comment_id": "5915690674",
@@ -33746,6 +33699,39 @@
         "kind": "pull_request",
         "branch": "steipete/mac-gateway-hosting-controls",
         "head_sha": "368a16dd6516047330a82f9eb0c5e87dec405994",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161926:5913634767:2026-09-30T23:40:50Z:clawsweeper_needs_human",
+      "comment_id": "5913634767",
+      "comment_version_key": "5913634767:2026-09-30T23:40:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161926#issuecomment-5913634767",
+      "comment_created_at": "2026-09-30T14:45:45Z",
+      "comment_updated_at": "2026-09-30T23:40:50Z",
+      "comment_body_sha256": "45a07df1ed79f9968e75882a496f3f20b4d29f04e2b20e55fa9d7dc0d6ca6d9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The macOS Keychain denial path is covered by simulated failures and Codex source inspection, but has no after-fix observation on macOS. (sha=ca1915f2a4215af2723ebc4f2db6b649312443e1)",
+      "expected_head_sha": "ca1915f2a4215af2723ebc4f2db6b649312443e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T23:44:36.370Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-credential-read-errors",
+        "head_sha": "ca1915f2a4215af2723ebc4f2db6b649312443e1",
         "cluster_id": null,
         "job_path": null
       }
