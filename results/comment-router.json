@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:13:11.496Z",
+  "updated_at": "2026-09-30T07:13:24.619Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:840:5903322915:2026-09-30T03:12:48Z:clawsweeper_needs_human",
-      "comment_id": "5903322915",
-      "comment_version_key": "5903322915:2026-09-30T03:12:48Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/840#issuecomment-5903322915",
-      "comment_created_at": "2026-09-30T03:12:48Z",
-      "comment_updated_at": "2026-09-30T03:12:48Z",
-      "comment_body_sha256": "3df93a425d28e4ae3090f8333956728ab8b90adfa4a4a151e63f1754aaf90548",
-      "repo": "openclaw/acpx",
-      "issue_number": 840,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - New sessions use different persisted local and ACP IDs, but the supplied regression coverage does not demonstrate that a v0.19.3 session record keeps its old local handle through look... (sha=8e637583c0bc794ed798b8a852ee2eae6acce4c0)",
-      "expected_head_sha": "8e637583c0bc794ed798b8a852ee2eae6acce4c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:13:48.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/oss-s6-acpx-runtime",
-        "head_sha": "8e637583c0bc794ed798b8a852ee2eae6acce4c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157934:5903327594:2026-09-30T03:13:19Z:re_review",
       "comment_id": "5903327594",
@@ -33708,6 +33675,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161609:5904224182:2026-09-30T07:12:23Z:clawsweeper_needs_human",
+      "comment_id": "5904224182",
+      "comment_version_key": "5904224182:2026-09-30T07:12:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161609#issuecomment-5904224182",
+      "comment_created_at": "2026-09-30T04:45:42Z",
+      "comment_updated_at": "2026-09-30T07:12:23Z",
+      "comment_body_sha256": "b1d00af680123d47711b2cbe1f34166dad8b6182000e7a16b67fd3d9b22b7c5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Agents API binding and executor controller need a production-boundary trace showing authorized star...; Review finding: [P1] Keep controller state under a usable plugin owner — extensions/agentsapi/agentsapi-harness.ts:54-58 - [P1] Make executor retirement gate the actual session re... (sha=0fa140a659996bf542f983ea08f381c5f1428855)",
+      "expected_head_sha": "0fa140a659996bf542f983ea08f381c5f1428855",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:13:24.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-executor-controller",
+        "head_sha": "0fa140a659996bf542f983ea08f381c5f1428855",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
