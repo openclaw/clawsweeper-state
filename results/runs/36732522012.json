@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161929",
+  "mode": "autonomous",
+  "run_id": "36732522012",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36732522012",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161929.md",
+  "published_at": "2026-09-30T15:31:18.311Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161929",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161929",
+  "canonical_pr": null,
+  "summary": "The local HTTP probe still uses the reported request path on main ebe57ef28af64c073de8264c7052ce519f1fda23, but the failure was not independently reproduced. This checkout is read-only and has no installed dependencies, so I could not add the required failing regression, verify Proxyline’s request contract, or validate a fix. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#161929",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#161929",
+      "candidate_fix": null,
+      "reason": "The issue requires a failing reproduction on current main before code changes. That gate cannot be completed in this read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161929",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161929",
+      "candidate_fix": null,
+      "reason": "A narrow fix path is identifiable, but execution remains gated on reproduction and a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
