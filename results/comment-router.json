@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:03:59.424Z",
+  "updated_at": "2026-09-30T02:04:04.800Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157693:5878615674:2026-09-28T21:08:24Z:re_review",
-      "comment_id": "5878615674",
-      "comment_version_key": "5878615674:2026-09-28T21:08:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5878615674",
-      "comment_created_at": "2026-09-28T21:08:24Z",
-      "comment_updated_at": "2026-09-28T21:08:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157693,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T19:22:52.949Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157693:5878903205:2026-09-28T21:22:33Z:re_review",
       "comment_id": "5878903205",
@@ -33291,6 +33264,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160352:5867651649:2026-09-30T02:03:06Z:clawsweeper_needs_human",
+      "comment_id": "5867651649",
+      "comment_version_key": "5867651649:2026-09-30T02:03:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160352#issuecomment-5867651649",
+      "comment_created_at": "2026-09-28T09:57:16Z",
+      "comment_updated_at": "2026-09-30T02:03:06Z",
+      "comment_body_sha256": "a9b29151bb6e2bc960fcd1c5bae78dabc14c78998a203366382200284bcb5a7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: inspected Chromium screenshots show the picker, and the local HTTP test reaches the production guarded...; Review finding: [P1] Recheck the selected account link before catalog HTTP dispatch — src/gateway/server-methods/models-list-result.ts:437-442 - [medium] Account unlink does not r... (sha=da594c9fc0dc66c5cc115f0c72b6f35ded2c59bc)",
+      "expected_head_sha": "da594c9fc0dc66c5cc115f0c72b6f35ded2c59bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T02:04:04.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/ultrafast-ui-with-visualizer",
+        "head_sha": "76764c590b48cc3f3db4e14bf14a34a0fae8e840",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
