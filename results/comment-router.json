@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:22:29.513Z",
+  "updated_at": "2026-09-30T06:22:38.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-09-30T02:29:15Z:clawsweeper_needs_human",
-      "comment_id": "5325833647",
-      "comment_version_key": "5325833647:2026-09-30T02:29:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
-      "comment_created_at": "2026-08-18T08:48:15Z",
-      "comment_updated_at": "2026-09-30T02:29:15Z",
-      "comment_body_sha256": "4be2101aa76812a3416e24266d4403afc8535a06f55fc8995a0bf0d4c965a305",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new effort value is persisted in Codex session bindings, but current-head evidence does not yet demonstrate that an existing stored binding without this field survives resume and... (sha=2bdcde270c42cbc4d233dfa85e4d1a49699ca100)",
-      "expected_head_sha": "2bdcde270c42cbc4d233dfa85e4d1a49699ca100",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T02:30:20.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "2bdcde270c42cbc4d233dfa85e4d1a49699ca100",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125707:5366143735:2026-08-21T06:41:44Z:re_review",
       "comment_id": "5366143735",
@@ -33186,6 +33153,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161677:5905387830:2026-09-30T06:21:49Z:re_review",
+      "comment_id": "5905387830",
+      "comment_version_key": "5905387830:2026-09-30T06:21:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161677#issuecomment-5905387830",
+      "comment_created_at": "2026-09-30T06:21:49Z",
+      "comment_updated_at": "2026-09-30T06:21:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161677,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T06:22:36.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-pipe-read-cleanup-wait",
+        "head_sha": "50bf8451caa74b3ba43233058c7ca626875b85e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
