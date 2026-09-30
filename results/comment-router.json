@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T23:28:38.996Z",
+  "updated_at": "2026-09-30T23:29:06.539Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149187:5682656387:2026-09-30T16:36:52Z:clawsweeper_needs_human",
-      "comment_id": "5682656387",
-      "comment_version_key": "5682656387:2026-09-30T16:36:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149187#issuecomment-5682656387",
-      "comment_created_at": "2026-09-15T15:07:04Z",
-      "comment_updated_at": "2026-09-30T16:36:52Z",
-      "comment_body_sha256": "756295ff9c921614aa8c6fe2a944384ced89e2a1066daf60f7c0cf46f764b690",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149187,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: this branch’s Gateway recovery owner now accepts legacy blob and data-URL images, but the supplied results are...; Review finding: [medium] Inspection-only legacy image access — src/gateway/transcript-image-artifacts.ts:93 (sha=3cbf83a1d21d7e44a66a9da6674bfda7a76c02db)",
-      "expected_head_sha": "3cbf83a1d21d7e44a66a9da6674bfda7a76c02db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T16:39:34.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upstream-history-image-recovery",
-        "head_sha": "3cbf83a1d21d7e44a66a9da6674bfda7a76c02db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:737:5915587136:2026-09-30T16:40:29Z:clawsweeper_needs_human",
       "comment_id": "5915587136",
@@ -33741,6 +33708,39 @@
       "status": "skipped",
       "processed_at": "2026-09-30T23:28:38.996Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159040:5848107200:2026-09-30T23:27:40Z:clawsweeper_needs_human",
+      "comment_id": "5848107200",
+      "comment_version_key": "5848107200:2026-09-30T23:27:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159040#issuecomment-5848107200",
+      "comment_created_at": "2026-09-26T16:58:14Z",
+      "comment_updated_at": "2026-09-30T23:27:40Z",
+      "comment_body_sha256": "02f950c116102d4244313548c9069d4b1b0f9259ab4ea5aad8100028c483cef8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accept the persisted bearer lifetime** - A callback token can outlive its issuing tool call for up to seven days. Live plugin and child checks constrain redemption, but the security own...; Review finding: [medium] Accept the persisted bearer lifetime — src/agents/plugin-async-callback.store.ts:24 (sha=53bfdb2bace61b132d3ab83f79a5af37961dd37e)",
+      "expected_head_sha": "53bfdb2bace61b132d3ab83f79a5af37961dd37e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T23:29:06.539Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/durable-plugin-callback",
+        "head_sha": "53bfdb2bace61b132d3ab83f79a5af37961dd37e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
