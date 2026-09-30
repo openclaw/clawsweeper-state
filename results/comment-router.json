@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:44:35.222Z",
+  "updated_at": "2026-09-30T06:44:39.086Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:772:5900561470:2026-09-30T02:44:24Z:clawsweeper_needs_human",
-      "comment_id": "5900561470",
-      "comment_version_key": "5900561470:2026-09-30T02:44:24Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/772#issuecomment-5900561470",
-      "comment_created_at": "2026-09-29T22:50:00Z",
-      "comment_updated_at": "2026-09-30T02:44:24Z",
-      "comment_body_sha256": "890d25efefd9e7d4671e2b3953dd2b45b8718d36b5fc15a458d56eec3ba4c29f",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 772,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Paired measurements at the current head have not shown that synchronous atomic-write routes meet the stated 5% non-regression threshold; exploratory results on the preceding implement... (sha=b37883f7bf40b428928ecef399684cb488fc8eb1)",
-      "expected_head_sha": "b37883f7bf40b428928ecef399684cb488fc8eb1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T02:45:22.023Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/atomic-io-owner-954",
-        "head_sha": "b37883f7bf40b428928ecef399684cb488fc8eb1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161533:5903044799:2026-09-30T02:44:22Z:clawsweeper_auto_repair",
       "comment_id": "5903044799",
@@ -33504,6 +33471,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160413:5905681811:2026-09-30T06:43:33Z:re_review",
+      "comment_id": "5905681811",
+      "comment_version_key": "5905681811:2026-09-30T06:43:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160413#issuecomment-5905681811",
+      "comment_created_at": "2026-09-30T06:43:33Z",
+      "comment_updated_at": "2026-09-30T06:43:33Z",
+      "comment_body_sha256": "3f42c09aaddb9a68fd66bd876a1cfa15d33af1299698e2295a2ce4c939fef931",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160413,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T06:44:37.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imap-bounded-sweep-160353",
+        "head_sha": "a87c1612c3a188e78fd6f27424ff776fd9d78508",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
