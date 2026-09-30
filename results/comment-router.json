@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T19:28:53.754Z",
+  "updated_at": "2026-09-30T19:30:06.708Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142888:5597190842:2026-09-30T11:13:45Z:clawsweeper_auto_repair",
-      "comment_id": "5597190842",
-      "comment_version_key": "5597190842:2026-09-30T11:13:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142888#issuecomment-5597190842",
-      "comment_created_at": "2026-09-09T06:36:30Z",
-      "comment_updated_at": "2026-09-30T11:13:45Z",
-      "comment_body_sha256": "f76e00a0f82c34d6a8a6b1a9d8a487f3995cd30cb6f9bf45450b7ff34ca48805",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=79663100fc5427b80840f874b45ded394649f6c6)",
-      "expected_head_sha": "79663100fc5427b80840f874b45ded394649f6c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T11:20:10.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-completions-cumulative-delta-replay",
-        "head_sha": "79663100fc5427b80840f874b45ded394649f6c6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161834:5910103461:2026-09-30T11:19:17Z:re_review",
       "comment_id": "5910103461",
@@ -33549,6 +33516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/acpx:844:5918200682:2026-09-30T19:29:11Z:re_review",
+      "comment_id": "5918200682",
+      "comment_version_key": "5918200682:2026-09-30T19:29:11Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/844#issuecomment-5918200682",
+      "comment_created_at": "2026-09-30T19:29:11Z",
+      "comment_updated_at": "2026-09-30T19:29:11Z",
+      "comment_body_sha256": "5d81f901a02c3761a09f4a1fbe67f0755a77316e5aa28d2392644f7f1963030c",
+      "repo": "openclaw/acpx",
+      "issue_number": 844,
+      "author": "superbiche",
+      "author_id": 2478146,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T19:30:05.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/flow-node-config-options",
+        "head_sha": "18c2a9487d7dce8931e3283332678c505f688c7b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
