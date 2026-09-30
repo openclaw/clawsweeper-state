@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:34:52.570Z",
+  "updated_at": "2026-09-30T02:35:03.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161114:5887427948:2026-09-29T20:35:20Z:clawsweeper_needs_human",
-      "comment_id": "5887427948",
-      "comment_version_key": "5887427948:2026-09-29T20:35:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161114#issuecomment-5887427948",
-      "comment_created_at": "2026-09-29T09:26:11Z",
-      "comment_updated_at": "2026-09-29T20:35:20Z",
-      "comment_body_sha256": "af927e840788b0476e866494d48910e9542a8a51c5c09e23827e07b4926306d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161114,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports a real isolated Gateway path from child sessions_yield through requester wake, ses...; Review finding: [medium] Prove denial at the final requester effect — src/agents/subagents/requester-cron-authority.ts:382 (sha=218131976afe6690f641ca1d42f76586e8c4a477)",
-      "expected_head_sha": "218131976afe6690f641ca1d42f76586e8c4a477",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T20:46:50.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/yield-pause-wakes-requester",
-        "head_sha": "218131976afe6690f641ca1d42f76586e8c4a477",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161213:5891737895:2026-09-29T20:38:02Z:clawsweeper_auto_repair",
       "comment_id": "5891737895",
@@ -32639,6 +32606,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147629:5902935530:2026-09-30T02:34:11Z:re_review",
+      "comment_id": "5902935530",
+      "comment_version_key": "5902935530:2026-09-30T02:34:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147629#issuecomment-5902935530",
+      "comment_created_at": "2026-09-30T02:34:11Z",
+      "comment_updated_at": "2026-09-30T02:34:11Z",
+      "comment_body_sha256": "509a57936bd2ed21f4022259f091a0d6ad99efc75370fcddf06460f5fbed2080",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147629,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T02:35:01.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-dirty-relocation",
+        "head_sha": "ec1ce524c507934f90739048ab9591f532845452",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
