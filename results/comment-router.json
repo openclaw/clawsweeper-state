@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:20:05.554Z",
+  "updated_at": "2026-09-30T09:20:17.969Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147629:5904050675:2026-09-30T04:28:53Z:re_review",
-      "comment_id": "5904050675",
-      "comment_version_key": "5904050675:2026-09-30T04:28:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147629#issuecomment-5904050675",
-      "comment_created_at": "2026-09-30T04:28:53Z",
-      "comment_updated_at": "2026-09-30T04:28:53Z",
-      "comment_body_sha256": "f550098d086d8938ca377d7b85ab8c8d804cd80bebc0bc2625a859d58fc860ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147629,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T04:29:44.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-dirty-relocation",
-        "head_sha": "87282c8c6a9af3ed08950a475e1dca283fa298ac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161069:5904051646:2026-09-30T04:28:58Z:freeform_assist",
       "comment_id": "5904051646",
@@ -34261,6 +34214,39 @@
         "kind": "pull_request",
         "branch": "openclaw/split-worker-lifecycle",
         "head_sha": "7775cdac6ccd33bc64214b08f371643edc5055b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4141:5908142189:2026-09-30T09:19:18Z:clawsweeper_needs_human",
+      "comment_id": "5908142189",
+      "comment_version_key": "5908142189:2026-09-30T09:19:18Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4141#issuecomment-5908142189",
+      "comment_created_at": "2026-09-30T09:19:18Z",
+      "comment_updated_at": "2026-09-30T09:19:18Z",
+      "comment_body_sha256": "e24ace60ae6836ba4b09a38111c2efd54c8c09a30c16b765411c44a6981d911c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports passing redactor and migrator fixture tests and a build, but provides no after-fix app run showing a provider debug export redac...; Review finding: [P1] Keep the Kimi defaults cookie when the healing save fails — Sources/CodexBar/Config/CodexBarConfigMigrator.swift:99-107 - [P1] Redact API keys in quoted JSON... (sha=11ac9c614c3c5c186f8448b04926b367c50d29e3)",
+      "expected_head_sha": "11ac9c614c3c5c186f8448b04926b367c50d29e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T09:20:17.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "devin/1790754073-credential-leak-hardening",
+        "head_sha": "11ac9c614c3c5c186f8448b04926b367c50d29e3",
         "cluster_id": null,
         "job_path": null
       }
