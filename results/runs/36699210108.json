@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacrawl",
+  "cluster_id": "issue-openclaw-wacrawl-114",
+  "mode": "autonomous",
+  "run_id": "36699210108",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36699210108",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacrawl-114.md",
+  "published_at": "2026-09-30T09:59:12.690Z",
+  "canonical": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_issue": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_pr": null,
+  "summary": "Issue #114 is a viable performance fix on main d25fce36. Legacy adoption scans the full archive for each unmatched incoming message. The checkout is read only, so no regression test, patch, validation, or PR branch could be produced in this run.",
+  "actions": [
+    {
+      "target": "#114",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "A narrow lookup change can remove the repeated archive scan without changing adoption policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "The repair is specified for an executor with a writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "Create or reuse clawsweeper/issue-openclaw-wacrawl-114 after the executor applies the patch and passes validation in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
