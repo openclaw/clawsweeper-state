@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:39:36.820Z",
+  "updated_at": "2026-09-30T07:39:52.415Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161451:5901391591:2026-09-30T03:18:50Z:clawsweeper_needs_human",
-      "comment_id": "5901391591",
-      "comment_version_key": "5901391591:2026-09-30T03:18:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161451#issuecomment-5901391591",
-      "comment_created_at": "2026-09-30T00:03:56Z",
-      "comment_updated_at": "2026-09-30T03:18:50Z",
-      "comment_body_sha256": "e764fb9456fb5934842a84e68524ef68be969cae2e519465a914ceee796492bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed plugin reader is exercised through a sessions.reset Vitest fixture with the production loader and S...; Review finding: [medium] Captured grant can outlive a replacement policy — src/plugins/session-end-transcript.ts:96 (sha=cd5a5839e01f966c7267bd8e3a5140072d2a3e65)",
-      "expected_head_sha": "cd5a5839e01f966c7267bd8e3a5140072d2a3e65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:29:05.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-155696-ended-session-reader",
-        "head_sha": "cd5a5839e01f966c7267bd8e3a5140072d2a3e65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161466:5901885559:2026-09-30T03:05:48Z:clawsweeper_auto_repair",
       "comment_id": "5901885559",
@@ -33923,6 +33890,53 @@
         "kind": "pull_request",
         "branch": "openclaw/ultrafast-ui-with-visualizer",
         "head_sha": "8261e641ea0bf7e591cfca9217402aff1b2808a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161641:5906504986:2026-09-30T07:38:54Z:re_review",
+      "comment_id": "5906504986",
+      "comment_version_key": "5906504986:2026-09-30T07:38:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161641#issuecomment-5906504986",
+      "comment_created_at": "2026-09-30T07:38:54Z",
+      "comment_updated_at": "2026-09-30T07:38:54Z",
+      "comment_body_sha256": "21d02eb9f7abe9ef953ba508d0a4fcfd6d6ce5080f58b17066608befdab01086",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161641,
+      "author": "Irish-Joseph",
+      "author_id": 135312096,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T07:39:51.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/core-tool-group-allowlist-warning",
+        "head_sha": "69ab1c4153ba9f02ce1da9f82f9b5ec5baa9006c",
         "cluster_id": null,
         "job_path": null
       },
