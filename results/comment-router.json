@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:57:42.323Z",
+  "updated_at": "2026-09-30T02:58:00.102Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5899379626:2026-09-29T21:33:08Z:re_review",
-      "comment_id": "5899379626",
-      "comment_version_key": "5899379626:2026-09-29T21:33:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5899379626",
-      "comment_created_at": "2026-09-29T21:33:08Z",
-      "comment_updated_at": "2026-09-29T21:33:08Z",
-      "comment_body_sha256": "ee1e8cfcbd9865ac482bf7bdbc06010e06ab7ce01c6a1112b21a137b486a5b37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — synced with upstream/main (`71ef1c5d54`, head `4eb35764d1`), clean merge, skill-selection intact, focused tests green (6/6)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T21:35:06.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "4eb35764d1b169828c00ec1aa1ef2a5bb8098306",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161395:5899407637:2026-09-29T21:34:45Z:clawsweeper_auto_repair",
       "comment_id": "5899407637",
@@ -32634,6 +32587,39 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-cross-os-upgrade",
         "head_sha": "50c8c89721d41a9fce828b95b6dff5cca1c9ec5e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161316:5895932447:2026-09-30T02:57:06Z:clawsweeper_needs_human",
+      "comment_id": "5895932447",
+      "comment_version_key": "5895932447:2026-09-30T02:57:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161316#issuecomment-5895932447",
+      "comment_created_at": "2026-09-29T18:11:28Z",
+      "comment_updated_at": "2026-09-30T02:57:06Z",
+      "comment_body_sha256": "92cf21d8f03d0d2226669cae583246a915160ca50235b22b0ae8744740266eeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161316,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Doctor repair flow changes upgrade-sensitive result accumulation, while the published updater to exact-head existing-state preservation check remains unfinished; upgrade-time conf... (sha=9c17f4d0b04fcb5c5ae4113dfa24b8295427743e)",
+      "expected_head_sha": "9c17f4d0b04fcb5c5ae4113dfa24b8295427743e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T02:58:00.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l179-state-skills2",
+        "head_sha": "9c17f4d0b04fcb5c5ae4113dfa24b8295427743e",
         "cluster_id": null,
         "job_path": null
       }
