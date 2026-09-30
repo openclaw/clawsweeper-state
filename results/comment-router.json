@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-30T01:11:46.302Z",
+  "updated_at": "2026-09-30T01:12:43.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161290:5895252946:2026-09-29T17:26:54Z:re_review",
-      "comment_id": "5895252946",
-      "comment_version_key": "5895252946:2026-09-29T17:26:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/161290#issuecomment-5895252946",
-      "comment_created_at": "2026-09-29T17:26:54Z",
-      "comment_updated_at": "2026-09-29T17:26:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161290,
-      "author": "mlyon-web",
-      "author_id": 231417932,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T17:27:46.228Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1541:5884162969:2026-09-29T17:30:02Z:clawsweeper_needs_human",
       "comment_id": "5884162969",
@@ -33295,6 +33250,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161475:5902094616:2026-09-30T01:11:51Z:clawsweeper_needs_human",
+      "comment_id": "5902094616",
+      "comment_version_key": "5902094616:2026-09-30T01:11:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161475#issuecomment-5902094616",
+      "comment_created_at": "2026-09-30T01:11:51Z",
+      "comment_updated_at": "2026-09-30T01:11:51Z",
+      "comment_body_sha256": "e190acc3b0ee6e99679f3b776ef757b8a264e0eaf317c61293a401d5fc35430e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161475,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=281aafce49eed007133ad320448473cd4060fcac)",
+      "expected_head_sha": "281aafce49eed007133ad320448473cd4060fcac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T01:12:43.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-non-git-worktree-selection",
+        "head_sha": "281aafce49eed007133ad320448473cd4060fcac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
