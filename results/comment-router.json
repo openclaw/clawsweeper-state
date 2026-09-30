@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:32:42.883Z",
+  "updated_at": "2026-09-30T08:34:31.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161421:5903712855:2026-09-30T03:54:01Z:re_review",
-      "comment_id": "5903712855",
-      "comment_version_key": "5903712855:2026-09-30T03:54:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161421#issuecomment-5903712855",
-      "comment_created_at": "2026-09-30T03:54:01Z",
-      "comment_updated_at": "2026-09-30T03:54:01Z",
-      "comment_body_sha256": "44927e559e92eeb96a8a979089481e17a8235d124a943a531e58bc1ecf464557",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161421,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T03:55:24.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stable-admission-20260929-2121",
-        "head_sha": "01a8535bb6300aecaa3b7c5a4eb7a0033449b88b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159146:5849408083:2026-09-30T03:54:51Z:clawsweeper_auto_repair",
       "comment_id": "5849408083",
@@ -34563,6 +34516,39 @@
         "kind": "pull_request",
         "branch": "tcr/land-d110-1790749452",
         "head_sha": "c8a93959cde74f8e5011cb053e11033d23a25869",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161579:5903647328:2026-09-30T08:33:33Z:clawsweeper_needs_human",
+      "comment_id": "5903647328",
+      "comment_version_key": "5903647328:2026-09-30T08:33:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161579#issuecomment-5903647328",
+      "comment_created_at": "2026-09-30T03:46:56Z",
+      "comment_updated_at": "2026-09-30T08:33:33Z",
+      "comment_body_sha256": "b8fa03a11ececd9c773d9fd7f84db391a4148cc81a41e3c56ff6fd67fbda44bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The materially changed tests and three new worker-specific CI routes have no reported single-worker wall times or CI seconds, leaving their recurring CI cost unverified. (sha=ba9a655fb297485d2c8dfebca6075d87ff23892c)",
+      "expected_head_sha": "ba9a655fb297485d2c8dfebca6075d87ff23892c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T08:34:31.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/quarantine-health-writes",
+        "head_sha": "ba9a655fb297485d2c8dfebca6075d87ff23892c",
         "cluster_id": null,
         "job_path": null
       }
