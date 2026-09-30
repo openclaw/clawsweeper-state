@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161823",
+  "mode": "autonomous",
+  "run_id": "36705647395",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36705647395",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161823.md",
+  "published_at": "2026-09-30T11:28:52.072Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161823",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161823",
+  "canonical_pr": null,
+  "summary": "The reported bug remains at main 8c9040c6. Memory status treats a metadata-eligible, system-only session as missing, while indexing parses and excludes it. The checkout is read-only, so no code was changed or tests run; a narrow fix is planned for the executor.",
+  "actions": [
+    {
+      "target": "#161823",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161823",
+      "candidate_fix": null,
+      "reason": "The status and indexing admission decisions disagree for system-only sessions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161823",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161823",
+      "candidate_fix": null,
+      "reason": "The write-capable executor can implement and validate the narrow Memory Core fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
