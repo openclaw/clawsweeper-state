@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161550",
+  "mode": "autonomous",
+  "run_id": "36662652035",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36662652035",
+  "head_sha": "0f5162431a344474998f10042f3ea0f8a5705e2a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161550.md",
+  "published_at": "2026-09-30T03:08:23.442Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161550",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161550",
+  "canonical_pr": null,
+  "summary": "The checked-out code still contains the reported failure path, but this read-only runner could not add the required failing regression or validate a repair. No code or GitHub state was changed. The preflight main SHA is unavailable in the checkout, so the executor must verify that revision before implementing.",
+  "actions": [
+    {
+      "target": "#161550",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161550",
+      "candidate_fix": null,
+      "reason": "The preflight identifies main as 25afb0c390545b37440d48785758d7f7506403eb, but the local shallow checkout contains de284e78be4f873800d1bd7fa70d671e26f87ce6. Verify the exact preflight main and establish a failing CLI-boundary regression before editing."
+    },
+    {
+      "target": "#156812",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this ref to central OpenClaw security handling without changing the merged PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161550",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161550",
+      "candidate_fix": null,
+      "reason": "The checkout and dependency cache are read-only. Implementation and validation require a writable, dependency-ready executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
