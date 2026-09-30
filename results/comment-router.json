@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:05:43.577Z",
+  "updated_at": "2026-09-30T08:05:46.582Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161116:5887621855:2026-09-30T03:40:01Z:clawsweeper_needs_human",
-      "comment_id": "5887621855",
-      "comment_version_key": "5887621855:2026-09-30T03:40:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161116#issuecomment-5887621855",
-      "comment_created_at": "2026-09-29T09:38:49Z",
-      "comment_updated_at": "2026-09-30T03:40:01Z",
-      "comment_body_sha256": "c8066f05dfaf9f8bf9630284362277482930018e70365e4e7d6d791604921c98",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161116,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A waiting config writer now ends the channel restart's active-work deferral while an unrelated reply may still be pending; the supplied setup proof does not establish whether that rep... (sha=f1bf1a1e79b40d09b5bb2d63fa5906e358c70d3d)",
-      "expected_head_sha": "f1bf1a1e79b40d09b5bb2d63fa5906e358c70d3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:40:56.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-reload-lease-demand",
-        "head_sha": "f1bf1a1e79b40d09b5bb2d63fa5906e358c70d3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144947:5635344060:2026-09-30T03:40:56Z:clawsweeper_needs_human",
       "comment_id": "5635344060",
@@ -34126,6 +34093,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159873:5906905094:2026-09-30T08:04:42Z:re_review",
+      "comment_id": "5906905094",
+      "comment_version_key": "5906905094:2026-09-30T08:04:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159873#issuecomment-5906905094",
+      "comment_created_at": "2026-09-30T08:04:42Z",
+      "comment_updated_at": "2026-09-30T08:04:42Z",
+      "comment_body_sha256": "58a6dcfc66d0601b7b1d305f9e44794dbb3dee4d9b6581a134ccb47e903cc1e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159873,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T08:05:45.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-p04-restart-duplicate",
+        "head_sha": "dab86ea0f0a44a765d13db3e49b9976a47e7b468",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
