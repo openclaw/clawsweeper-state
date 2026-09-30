@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:35:02.618Z",
+  "updated_at": "2026-09-30T09:35:02.962Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159847:5859059057:2026-09-30T04:38:15Z:clawsweeper_needs_human",
-      "comment_id": "5859059057",
-      "comment_version_key": "5859059057:2026-09-30T04:38:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159847#issuecomment-5859059057",
-      "comment_created_at": "2026-09-27T19:26:07Z",
-      "comment_updated_at": "2026-09-30T04:38:15Z",
-      "comment_body_sha256": "9a329dd328d2b4843557fa13d7275b0138a082b5d5dc2430aa0b01664797c050",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A resolved integration tree still needs the repository-required published-updater upgrade and rollback proof for the touched update, Doctor, and plugin-loading paths; an existing inst... (sha=3a5a65266869b780977eeaac501930134d3a4db4)",
-      "expected_head_sha": "3a5a65266869b780977eeaac501930134d3a4db4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T04:39:16.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l99-dead-exports",
-        "head_sha": "3a5a65266869b780977eeaac501930134d3a4db4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:680:5904146492:2026-09-30T04:38:21Z:clawsweeper_needs_human",
       "comment_id": "5904146492",
@@ -34292,6 +34259,53 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5908421759:2026-09-30T09:34:04Z:re_review",
+      "comment_id": "5908421759",
+      "comment_version_key": "5908421759:2026-09-30T09:34:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5908421759",
+      "comment_created_at": "2026-09-30T09:34:04Z",
+      "comment_updated_at": "2026-09-30T09:34:04Z",
+      "comment_body_sha256": "44b7f41d129cff5db689dac120c89561ed8a32f48d115ebdc93a352c4f6ea5f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — synced with main (1223722f1a, was 73 behind, clean merge, no conflicts). focused tests green (34/34 across skill-selection + audit gateway suites). tsgo:core shows 7 errors, all pre-existing upstream files (plugin-sdk, node-proxy-agent, skills/runtime/refresh.ts) — none in pr diff. skill-selection pieces intact (36 files vs main)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T09:35:01.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "c2dc72d317f9f96d6f18b54330b9d42146cf56bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
