@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-30T14:28:06.380Z",
+  "updated_at": "2026-09-30T14:27:14.961Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161344:5896777656:2026-09-30T07:21:40Z:clawsweeper_needs_human",
+      "comment_id": "5896777656",
+      "comment_version_key": "5896777656:2026-09-30T07:21:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5896777656",
+      "comment_created_at": "2026-09-29T19:04:27Z",
+      "comment_updated_at": "2026-09-30T07:21:40Z",
+      "comment_body_sha256": "62bc7be8d2c520d49474c181387174a22836ec0ee7926d93e3b82bf56a236538",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR exercises Lobster’s embedded pipeline with an injected adapter, but mocks host completion. It does not s...; Review finding: [P1] Preserve HTTP routing when the provider is omitted — extensions/lobster/src/lobster-tool.ts:108 - [P1] Authorize saved embedded results before replay — extens... (sha=33207e23fbd0e131df90d360d316f13555b65aa9)",
+      "expected_head_sha": "33207e23fbd0e131df90d360d316f13555b65aa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:22:38.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lobster-llm-adapter-current",
+        "head_sha": "33207e23fbd0e131df90d360d316f13555b65aa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:670:5906263583:2026-09-30T07:22:43Z:address_review",
       "comment_id": "5906263583",
@@ -33328,39 +33361,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160181:5864307169:2026-09-30T14:26:58Z:clawsweeper_needs_human",
-      "comment_id": "5864307169",
-      "comment_version_key": "5864307169:2026-09-30T14:26:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160181#issuecomment-5864307169",
-      "comment_created_at": "2026-09-28T05:56:04Z",
-      "comment_updated_at": "2026-09-30T14:26:58Z",
-      "comment_body_sha256": "2744264386536136a6152d996b1db8ce0e4567087e5aba7d1d0000ab587b016d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160181,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a merge conflict in plugin inspection cleanup. Resolve it while retaining current main's borrowed-instance ownership check and this branch's disposal-failure reporting. (sha=92ca52529455abfc8f8e3aad00096af80e77566b)",
-      "expected_head_sha": "92ca52529455abfc8f8e3aad00096af80e77566b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T14:28:06.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/swarm-cli-metadata-owner-20260928",
-        "head_sha": "92ca52529455abfc8f8e3aad00096af80e77566b",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
