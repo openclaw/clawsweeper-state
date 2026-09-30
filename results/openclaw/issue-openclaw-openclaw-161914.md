@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161914"
-mode: "autonomous"
-run_id: "36727189253"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36727189253"
+mode: "plan"
+run_id: "36733964271"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36733964271"
 head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-30T14:41:44.564Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161914"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161914"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-30T15:08:34.212Z"
+canonical: "#161914"
+canonical_issue: "#161914"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36727189253](https://github.com/openclaw/clawsweeper/actions/runs/36727189253)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36733964271](https://github.com/openclaw/clawsweeper/actions/runs/36733964271)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161914
+Canonical: #161914
 
 ## Summary
 
-The defect is present in the checkout at main SHA 379ccff689c1f1b3d4cf1182683681d1da97b2df. The ElevenLabs examples use model, while the provider reads only modelId. Implementation is blocked in this read-only checkout, which also lacks installed dependencies; no code was changed or tests run.
+The merged docs PR corrected the ElevenLabs examples. The open issue still covers existing configs that set the ignored model key. Plan a narrow plugin-owned Doctor migration and regression proof; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The defect is present in the checkout at main SHA 379ccff689c1f1b3d4cf1182683681
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161914 | fix_needed | planned | canonical | A narrow documentation correction and plugin-owned Doctor migration are needed. |
-| cluster:issue-openclaw-openclaw-161914 | build_fix_artifact | planned |  | The applicator can implement and validate the scoped fix in a writable checkout. |
-| cluster:issue-openclaw-openclaw-161914 | open_fix_pr | blocked |  | Implement and validate the fix in a writable executor checkout before opening or updating the PR. |
+| #161914 | fix_needed | planned | canonical | The remaining behavior has a bounded repair path, and the job forbids closing the issue. |
+| #161917 | keep_closed | skipped | related | The docs contribution is complete and provides context for the remaining migration. |
 
 ## Needs Human
 
