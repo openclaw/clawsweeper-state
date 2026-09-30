@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacrawl",
+  "cluster_id": "issue-openclaw-wacrawl-114",
+  "mode": "autonomous",
+  "run_id": "36705482852",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36705482852",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacrawl-114.md",
+  "published_at": "2026-09-30T12:59:39.309Z",
+  "canonical": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_issue": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_pr": null,
+  "summary": "Issue #114 remains viable on main d25fce36: legacy adoption scans every archived message for each unmatched incoming message. A narrow fix is specified below, but the checkout and Go module cache are read only, so no patch, tests, or PR branch could be prepared.",
+  "actions": [
+    {
+      "target": "#114",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "The reported large-archive adoption bottleneck remains in current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "A two-file repair and scaled regression are specified in the fix artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and Go cache before the PR can be opened."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
