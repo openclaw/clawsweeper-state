@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:19:52.191Z",
+  "updated_at": "2026-09-30T02:20:12.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161314:5895903335:2026-09-29T19:43:01Z:clawsweeper_auto_repair",
-      "comment_id": "5895903335",
-      "comment_version_key": "5895903335:2026-09-29T19:43:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161314#issuecomment-5895903335",
-      "comment_created_at": "2026-09-29T18:09:33Z",
-      "comment_updated_at": "2026-09-29T19:43:01Z",
-      "comment_body_sha256": "a7812720f389ab77072fe3d3bebf769865f8ed08cfe54eff79df460322b82a1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161314,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e947d639f2596facfde418f53e0e2459258e24ec)",
-      "expected_head_sha": "e947d639f2596facfde418f53e0e2459258e24ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T19:45:56.993Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tcr/land-d102-1790699017",
-        "head_sha": "e947d639f2596facfde418f53e0e2459258e24ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161340:5896569455:2026-09-29T19:44:38Z:clawsweeper_auto_repair",
       "comment_id": "5896569455",
@@ -33329,6 +33296,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1553:5902614040:2026-09-30T02:19:24Z:clawsweeper_needs_human",
+      "comment_id": "5902614040",
+      "comment_version_key": "5902614040:2026-09-30T02:19:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1553#issuecomment-5902614040",
+      "comment_created_at": "2026-09-30T02:03:20Z",
+      "comment_updated_at": "2026-09-30T02:19:24Z",
+      "comment_body_sha256": "62641df69c06762cbaf4523e5b7d3b6516c39c44bd88b81e3401df2e971dae67",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The completed x64 UI onboarding and first chat were observed on prior head 4050932131fa3ecac4228a3e49b...; Review finding: [P1] Provide in-app recovery for an incompatible saved draft — src/OpenClaw.SetupEngine/NativeGatewaySetupService.cs:94-97 - [P1] Preserve an upgrade path for exis... (sha=9c65f5944058173cc6c0b446a2a2fba94c4acadd)",
+      "expected_head_sha": "9c65f5944058173cc6c0b446a2a2fba94c4acadd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T02:20:12.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/companion-isolated-gateway-setup",
+        "head_sha": "9c65f5944058173cc6c0b446a2a2fba94c4acadd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
