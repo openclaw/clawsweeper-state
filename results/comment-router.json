@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T05:12:38.499Z",
+  "updated_at": "2026-09-30T05:12:43.864Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/octopool:214:5902252485:2026-09-30T01:46:20Z:clawsweeper_needs_human",
-      "comment_id": "5902252485",
-      "comment_version_key": "5902252485:2026-09-30T01:46:20Z",
-      "comment_url": "https://github.com/openclaw/octopool/pull/214#issuecomment-5902252485",
-      "comment_created_at": "2026-09-30T01:27:19Z",
-      "comment_updated_at": "2026-09-30T01:46:20Z",
-      "comment_body_sha256": "bbdefc9b7bbbbeda2059cbb4ab4dcb23112085a48712bd9eb285d1b08c8c6b60",
-      "repo": "openclaw/octopool",
-      "issue_number": 214,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR body reports a production relay run with viewer plus one repository alias and cache hits, but t...; Review finding: [P1] Keep existing single-root GraphQL reads live — cmd/octopool/gh_graphql_read.go:311-312 - [P1] Verify usable native credentials before inserting viewer — cmd/o... (sha=bd8270b5d90adbb3c5081c9fdc70685119628642)",
-      "expected_head_sha": "bd8270b5d90adbb3c5081c9fdc70685119628642",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T01:47:20.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/graphql-viewer-batch",
-        "head_sha": "bd8270b5d90adbb3c5081c9fdc70685119628642",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130175:5427447670:2026-08-26T15:22:36Z:re_review",
       "comment_id": "5427447670",
@@ -32301,6 +32268,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161624:5904535701:2026-09-30T05:11:48Z:clawsweeper_needs_human",
+      "comment_id": "5904535701",
+      "comment_version_key": "5904535701:2026-09-30T05:11:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161624#issuecomment-5904535701",
+      "comment_created_at": "2026-09-30T05:11:48Z",
+      "comment_updated_at": "2026-09-30T05:11:48Z",
+      "comment_body_sha256": "ace75001871c38006e41fe5302bb50e8d102b7967e142a596de58aa7df2d0b6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161624,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exported plugin SDK helper now normalizes zero-valued pool options and rejects maxTotalSockets: 0 during construction. Third-party plugins relying on the prior behavior could chan... (sha=b47e86c06ad4a5c31ec4c6711c968a364b6350de)",
+      "expected_head_sha": "b47e86c06ad4a5c31ec4c6711c968a364b6350de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T05:12:43.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "followup/carry-proxy",
+        "head_sha": "b47e86c06ad4a5c31ec4c6711c968a364b6350de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
