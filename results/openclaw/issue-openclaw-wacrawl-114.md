@@ -2,12 +2,12 @@
 repo: "openclaw/wacrawl"
 cluster_id: "issue-openclaw-wacrawl-114"
 mode: "autonomous"
-run_id: "36729733098"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36729733098"
+run_id: "36740707494"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36740707494"
 head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-30T15:04:45.695Z"
+published_at: "2026-09-30T16:01:33.341Z"
 canonical: "https://github.com/openclaw/wacrawl/issues/114"
 canonical_issue: "https://github.com/openclaw/wacrawl/issues/114"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36729733098](https://github.com/openclaw/clawsweeper/actions/runs/36729733098)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36740707494](https://github.com/openclaw/clawsweeper/actions/runs/36740707494)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacrawl/issues/114
 
 ## Summary
 
-Issue #114 remains reproducible from source on main d25fce36. A narrow fix is planned, but this run could not edit the read-only checkout or run Go tests because Go could not create its module cache.
+The performance bug remains on main d25fce36d53f5fe54e122639a9246d19282c29a5. A narrow fix is planned, but the read-only checkout prevents code changes and Go validation. No PR was opened.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Issue #114 remains reproducible from source on main d25fce36. A narrow fix is pl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114 | fix_needed | planned | canonical | Replace the repeated scan with a bounded lookup while preserving source-row, discriminator, ambiguity, storeEvents, and account-identity behavior. |
-| cluster:issue-openclaw-wacrawl-114 | build_fix_artifact | planned |  | The fix plan is ready; implementation and validation are blocked by this run's read-only filesystem. |
+| #114 | fix_needed | planned | canonical | Replace the repeated legacy scan with a lookup keyed by source row and raw discriminator. |
+| cluster:issue-openclaw-wacrawl-114 | build_fix_artifact | blocked |  | Implementation and local validation require a writable executor checkout and Go cache. |
 
 ## Needs Human
 
