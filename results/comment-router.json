@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:21:29.862Z",
+  "updated_at": "2026-09-30T09:21:53.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161069:5904052845:2026-09-30T04:29:05Z:re_review",
-      "comment_id": "5904052845",
-      "comment_version_key": "5904052845:2026-09-30T04:29:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161069#issuecomment-5904052845",
-      "comment_created_at": "2026-09-30T04:29:05Z",
-      "comment_updated_at": "2026-09-30T04:29:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161069,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T04:30:09.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stalled-turn-recover",
-        "head_sha": "c8a2682be6d5625adfcf9e456aded0f6f046b7fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161585:5903760775:2026-09-30T04:29:19Z:clawsweeper_needs_human",
       "comment_id": "5903760775",
@@ -34250,6 +34203,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156540:5796382122:2026-09-30T09:20:45Z:clawsweeper_needs_human",
+      "comment_id": "5796382122",
+      "comment_version_key": "5796382122:2026-09-30T09:20:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156540#issuecomment-5796382122",
+      "comment_created_at": "2026-09-23T14:10:43Z",
+      "comment_updated_at": "2026-09-30T09:20:45Z",
+      "comment_body_sha256": "b2658f864198b5ecf65be537e1aea55088a04760b0af4cbf1d34b2e9929279be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the private-yield delivery boundary** - The shipped contract keeps private parent finals off-channel, while this branch makes the resumed parent’s ordinary final deliverable aft...; Review finding: [medium] Confirm the private-yield delivery boundary — src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts:415 (sha=ba5e732a9e4457b4a72de3c065d43a320721eb88)",
+      "expected_head_sha": "ba5e732a9e4457b4a72de3c065d43a320721eb88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T09:21:53.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/private-settle-owed-reply",
+        "head_sha": "ba5e732a9e4457b4a72de3c065d43a320721eb88",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
