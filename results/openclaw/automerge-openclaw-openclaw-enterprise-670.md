@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw-enterprise"
 cluster_id: "automerge-openclaw-openclaw-enterprise-670"
 mode: "autonomous"
-run_id: "36683478395"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36683478395"
-head_sha: "ce985956ca4f3dd962f87ef2e841fee83a7816cc"
-workflow_conclusion: "failure"
+run_id: "36691763810"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36691763810"
+head_sha: "eeb0f44df224584ad785a13b795d5e28689a8a0d"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-30T07:40:30.020Z"
-canonical: "#670"
+published_at: "2026-09-30T08:49:09.311Z"
+canonical: "https://github.com/openclaw/openclaw-enterprise/pull/670"
 canonical_issue: null
-canonical_pr: "#670"
+canonical_pr: "https://github.com/openclaw/openclaw-enterprise/pull/670"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # automerge-openclaw-openclaw-enterprise-670
 
 Repo: openclaw/openclaw-enterprise
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36683478395](https://github.com/openclaw/clawsweeper/actions/runs/36683478395)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36691763810](https://github.com/openclaw/clawsweeper/actions/runs/36691763810)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #670
+Canonical: https://github.com/openclaw/openclaw-enterprise/pull/670
 
 ## Summary
 
-Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Plan a fix-only repair of open PR #670 on its existing branch. Rebase onto current main, address the documentation failure and actionable review findings, validate the final head, and leave the PR open.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, addre
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,8 @@ Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, addre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #670 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw-enterprise/pull/670 | build_fix_artifact | planned | canonical | A bounded repair of the existing contributor PR is the authorized path. The failing checks and unresolved proof prevent a merge recommendation. |
 
 ## Needs Human
 
-- none
+- The owning workflow must clear or explicitly override the live clawsweeper:human-review publication hold before pushing a repaired #670 branch.
