@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-30T11:13:56.917Z",
+  "updated_at": "2026-09-30T11:14:44.469Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161007:5887515549:2026-09-29T09:31:36Z:re_review",
-      "comment_id": "5887515549",
-      "comment_version_key": "5887515549:2026-09-29T09:31:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161007#issuecomment-5887515549",
-      "comment_created_at": "2026-09-29T09:31:36Z",
-      "comment_updated_at": "2026-09-29T09:31:36Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161007,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T06:00:10.454Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161007:5888198327:2026-09-29T10:16:53Z:re_review",
       "comment_id": "5888198327",
@@ -33786,6 +33759,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161804:5909953867:2026-09-30T11:08:50Z:re_review",
+      "comment_id": "5909953867",
+      "comment_version_key": "5909953867:2026-09-30T11:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161804#issuecomment-5909953867",
+      "comment_created_at": "2026-09-30T11:08:50Z",
+      "comment_updated_at": "2026-09-30T11:08:50Z",
+      "comment_body_sha256": "3f291ad7102b30f21bef9ced869e23b9c58624ed8aa2093c9deddc22564c6110",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161804,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — pushed 20e83903: the full status read now drops every non-object value named by a config issue (so a rejected `logging.file` or any other rejected field falls back to its default instead of reaching a formatter), and a non-string `logging.file` on the unvalidated fast path is treated as unset. entry-point regressions added in `status.gather.test.ts`; evidence gains the real cli before/after for `logging.file: 42` and probe-on runs for rejected auth/remote/tls/port values",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T11:14:43.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-status-invalid-config",
+        "head_sha": "20e8390379d90913088025d8bee5018e9b6e5427",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
