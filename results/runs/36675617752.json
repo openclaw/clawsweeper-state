@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/wacrawl",
+  "cluster_id": "issue-openclaw-wacrawl-114",
+  "mode": "autonomous",
+  "run_id": "36675617752",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36675617752",
+  "head_sha": "59bde930ef5b9f4920160232957eabb73318930c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacrawl-114.md",
+  "published_at": "2026-09-30T05:58:08.747Z",
+  "canonical": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_issue": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_pr": null,
+  "summary": "Issue #114 remains a valid performance bug on main d25fce3. A narrow fix is identified, but this checkout is read only: no files or PR branch could be changed, and Go tests could not create a module cache.",
+  "actions": [
+    {
+      "target": "#114",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "The legacy lookup can take quadratic time on a large archive."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and Go module cache."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
