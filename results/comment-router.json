@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T17:06:07.513Z",
+  "updated_at": "2026-09-30T17:06:20.639Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161763:5907715396:2026-09-30T09:14:27Z:clawsweeper_needs_human",
-      "comment_id": "5907715396",
-      "comment_version_key": "5907715396:2026-09-30T09:14:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161763#issuecomment-5907715396",
-      "comment_created_at": "2026-09-30T08:54:13Z",
-      "comment_updated_at": "2026-09-30T09:14:27Z",
-      "comment_body_sha256": "f9bbba8d9532188218d9f5ba51a828f4ef391cf9f58de4f60e61dd97087c4637",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161763,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix has one reported passing whole-file run, but the required 20 standalone runs, three runs in the original failing shard, and owner sibling tests have not been recorded for this... (sha=8c82989bf3d4801ee232cdd5938918fe9fff4c42)",
-      "expected_head_sha": "8c82989bf3d4801ee232cdd5938918fe9fff4c42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T09:15:52.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-verboselevel-wait-determinism",
-        "head_sha": "8c82989bf3d4801ee232cdd5938918fe9fff4c42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117337:5150947481:2026-09-30T09:13:42Z:clawsweeper_auto_repair",
       "comment_id": "5150947481",
@@ -33435,6 +33402,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161007:5915970887:2026-09-30T17:05:14Z:re_review",
+      "comment_id": "5915970887",
+      "comment_version_key": "5915970887:2026-09-30T17:05:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161007#issuecomment-5915970887",
+      "comment_created_at": "2026-09-30T17:05:14Z",
+      "comment_updated_at": "2026-09-30T17:05:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161007,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T17:06:18.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/cron-failure-repair",
+        "head_sha": "435e097ee7cc8375a30334c6f3f412ac8c19af27",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
