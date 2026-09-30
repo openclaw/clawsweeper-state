@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T20:22:25.385Z",
+  "updated_at": "2026-09-30T20:22:28.153Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:725:5910740145:2026-09-30T12:47:59Z:clawsweeper_auto_repair",
-      "comment_id": "5910740145",
-      "comment_version_key": "5910740145:2026-09-30T12:47:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/725#issuecomment-5910740145",
-      "comment_created_at": "2026-09-30T11:56:19Z",
-      "comment_updated_at": "2026-09-30T12:47:59Z",
-      "comment_body_sha256": "4fe184da6640341ece7095aeca41f0c45d845f52051befdd08a78ef2f4259f33",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d92d4abbd80d41d5fbf01a427746e3df60abfbd5)",
-      "expected_head_sha": "d92d4abbd80d41d5fbf01a427746e3df60abfbd5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T12:53:03.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dogfood2-console-state",
-        "head_sha": "d92d4abbd80d41d5fbf01a427746e3df60abfbd5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161583:5903754616:2026-09-30T12:48:37Z:clawsweeper_needs_human",
       "comment_id": "5903754616",
@@ -33697,6 +33664,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162065:5919006345:2026-09-30T20:21:21Z:re_review",
+      "comment_id": "5919006345",
+      "comment_version_key": "5919006345:2026-09-30T20:21:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5919006345",
+      "comment_created_at": "2026-09-30T20:21:21Z",
+      "comment_updated_at": "2026-09-30T20:21:21Z",
+      "comment_body_sha256": "8ee0e94681ac57bf399d7cea395ec9aa078d3292c9734ceb3493ea24d6283c8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162065,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 56cb458cfbc. the two pr-caused test-type failures are fixed at their fixture contracts: the channel rollback test now uses a valid slack config shape, and the advisory receipt test uses the typed warning merger. exact commands/config-cli test-type graphs, lint/format/diff, and both affected tests are green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T20:22:26.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
+        "head_sha": "56cb458cfbc9e0c87e2c3ee92d428c62e0a26c31",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
