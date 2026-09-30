@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T15:20:16.320Z",
+  "updated_at": "2026-09-30T15:20:18.566Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161641:5904732535:2026-09-30T07:44:07Z:clawsweeper_needs_human",
-      "comment_id": "5904732535",
-      "comment_version_key": "5904732535:2026-09-30T07:44:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161641#issuecomment-5904732535",
-      "comment_created_at": "2026-09-30T05:29:24Z",
-      "comment_updated_at": "2026-09-30T07:44:07Z",
-      "comment_body_sha256": "099ab5e6fee35d32ad6eda8aa707126b6c5d6c39e25510f695de424edb1f714f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain the repository-required exact-head maintainer security approval before merge. (sha=69ab1c4153ba9f02ce1da9f82f9b5ec5baa9006c)",
-      "expected_head_sha": "69ab1c4153ba9f02ce1da9f82f9b5ec5baa9006c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T08:09:40.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/core-tool-group-allowlist-warning",
-        "head_sha": "69ab1c4153ba9f02ce1da9f82f9b5ec5baa9006c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161649:5904903189:2026-09-30T07:39:56Z:clawsweeper_needs_human",
       "comment_id": "5904903189",
@@ -33231,6 +33198,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161125:5914232526:2026-09-30T15:19:03Z:re_review",
+      "comment_id": "5914232526",
+      "comment_version_key": "5914232526:2026-09-30T15:19:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161125#issuecomment-5914232526",
+      "comment_created_at": "2026-09-30T15:19:03Z",
+      "comment_updated_at": "2026-09-30T15:19:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161125,
+      "author": "shleder",
+      "author_id": 230892287,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T15:20:17.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-worker-execargv-heap-limit",
+        "head_sha": "52730a2649f531586b70c2d99fd24d538034a224",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
