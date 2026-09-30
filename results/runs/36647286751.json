@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161441",
+  "mode": "autonomous",
+  "run_id": "36647286751",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36647286751",
+  "head_sha": "7829cdce71310b549c119c670e7bd69e04f7e242",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161441.md",
+  "published_at": "2026-09-30T00:32:20.046Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161441",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161441",
+  "canonical_pr": null,
+  "summary": "Current main still checks backup ownership before inspecting a completed history-only archive. The defect has a narrow fix path, but this worker’s filesystem is read-only, so it could not add the required failing Doctor regression, validate a patch, or prepare the PR branch.",
+  "actions": [
+    {
+      "target": "#161441",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161441",
+      "candidate_fix": null,
+      "reason": "A completed, matching history archive should clear the recurring Doctor finding without weakening warnings for unfinished backups."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161441",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161441",
+      "candidate_fix": null,
+      "reason": "Implementation and required reproduction need a writable execution checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
