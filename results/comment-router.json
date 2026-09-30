@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:39:52.415Z",
+  "updated_at": "2026-09-30T07:40:24.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161466:5901885559:2026-09-30T03:05:48Z:clawsweeper_auto_repair",
-      "comment_id": "5901885559",
-      "comment_version_key": "5901885559:2026-09-30T03:05:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161466#issuecomment-5901885559",
-      "comment_created_at": "2026-09-30T00:50:56Z",
-      "comment_updated_at": "2026-09-30T03:05:48Z",
-      "comment_body_sha256": "e2ef250e73087c5c005d96ad5400044827fcadbe8e0e91f301992cfaa68b3941",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68b93721d78abd39ae16818d8c9df49a2de69ff6)",
-      "expected_head_sha": "68b93721d78abd39ae16818d8c9df49a2de69ff6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:29:05.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-network-recovery",
-        "head_sha": "68b93721d78abd39ae16818d8c9df49a2de69ff6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161486:5902208985:2026-09-30T03:02:01Z:clawsweeper_needs_human",
       "comment_id": "5902208985",
@@ -33950,6 +33917,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161069:5906514093:2026-09-30T07:39:31Z:freeform_assist",
+      "comment_id": "5906514093",
+      "comment_version_key": "5906514093:2026-09-30T07:39:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161069#issuecomment-5906514093",
+      "comment_created_at": "2026-09-30T07:39:31Z",
+      "comment_updated_at": "2026-09-30T07:39:31Z",
+      "comment_body_sha256": "adc386264a466cd6add0fffed6aadcfe3d1b5b01433b324443c37bc52a07aceb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161069,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "maintainer decision (ayaan, repository maintainer): declined. cancelling the queued follow-up that took over a stalled request is an explicit user cancel of that request, and staying silent is the intended outcome, the same as cancelling any queued follow-up. a \"please try again\" notice after a deliberate cancel would be noise.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T07:40:21.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stalled-turn-recover",
+        "head_sha": "e0b05c52afadd818e7b7e9d311a4d1ce33433610",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
