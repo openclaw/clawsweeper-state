@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T20:27:50.404Z",
+  "updated_at": "2026-09-30T20:27:59.881Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-09-30T13:14:02Z:clawsweeper_needs_human",
-      "comment_id": "5212438693",
-      "comment_version_key": "5212438693:2026-09-30T13:14:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120138#issuecomment-5212438693",
-      "comment_created_at": "2026-08-07T04:36:34Z",
-      "comment_updated_at": "2026-09-30T13:14:02Z",
-      "comment_body_sha256": "06213bf0be716975f03628bf608acbe764fa11a029055b799c367586ed50d15d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - A qualified maintainer must review the changed secrets paths and approve this exact head through the repository’s security-sensitive gate before merge. (sha=76193dbee0e888f488c77a653422100ee8e32e01)",
-      "expected_head_sha": "76193dbee0e888f488c77a653422100ee8e32e01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T13:15:11.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secretref-docs-generator",
-        "head_sha": "76193dbee0e888f488c77a653422100ee8e32e01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161848:5910570674:2026-09-30T13:16:01Z:clawsweeper_auto_repair",
       "comment_id": "5910570674",
@@ -33668,6 +33635,53 @@
         "kind": "pull_request",
         "branch": "steipete/mac-gateway-hosting-controls",
         "head_sha": "6a6ac713a65f8c083df6545e642aed1cb2de2cd3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156941:5919131926:2026-09-30T20:26:59Z:re_review",
+      "comment_id": "5919131926",
+      "comment_version_key": "5919131926:2026-09-30T20:26:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5919131926",
+      "comment_created_at": "2026-09-30T20:26:59Z",
+      "comment_updated_at": "2026-09-30T20:26:59Z",
+      "comment_body_sha256": "e2d421b338be47f8e4c9fb92c0cafb39c5d0bbad7dba0d52e12f0cba34418934",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156941,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T20:27:58.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
+        "head_sha": "363819fd156a1fce9f7536d12a6954b59428d790",
         "cluster_id": null,
         "job_path": null
       },
