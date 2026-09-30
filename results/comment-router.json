@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:31:36.573Z",
+  "updated_at": "2026-09-30T09:31:37.602Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147629:5657621092:2026-09-30T04:34:52Z:clawsweeper_needs_human",
-      "comment_id": "5657621092",
-      "comment_version_key": "5657621092:2026-09-30T04:34:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147629#issuecomment-5657621092",
-      "comment_created_at": "2026-09-14T01:05:59Z",
-      "comment_updated_at": "2026-09-30T04:34:52Z",
-      "comment_body_sha256": "047e94b4881727e786ce303ee265acc73a25abfc5338064562a0db296b70b1f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147629,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed updater runs before the candidate and cannot gain this relocation behavior from the target alone. No published-updater to candidate run yet demonstrates the required fir... (sha=87282c8c6a9af3ed08950a475e1dca283fa298ac)",
-      "expected_head_sha": "87282c8c6a9af3ed08950a475e1dca283fa298ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T04:36:05.400Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-dirty-relocation",
-        "head_sha": "87282c8c6a9af3ed08950a475e1dca283fa298ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161605:5904110780:2026-09-30T04:34:47Z:clawsweeper_needs_human",
       "comment_id": "5904110780",
@@ -34262,6 +34229,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:670:5901265414:2026-09-30T09:30:09Z:clawsweeper_needs_human",
+      "comment_id": "5901265414",
+      "comment_version_key": "5901265414:2026-09-30T09:30:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5901265414",
+      "comment_created_at": "2026-09-29T23:51:28Z",
+      "comment_updated_at": "2026-09-30T09:30:09Z",
+      "comment_body_sha256": "921c579e4d67a429b6bff7b5fa34242c08b14a7d424f28d5549e6b2c7f5a7ee0",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The PR reports local fixture runs through the workflow shells, but final repository dispatch was stubbed; no ho...; Review finding: [P2] Bring the CI guide below its hard word limit — docs/testing/ci.md:180-186 - [medium] Unproven command authorization at final I/O — .github/workflows/clawsweep... (sha=32962ba95a342059d47cb249fe5dc0fe3e86bc59)",
+      "expected_head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T09:31:37.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "enable-clawsweeper-review",
+        "head_sha": "32962ba95a342059d47cb249fe5dc0fe3e86bc59",
+        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
