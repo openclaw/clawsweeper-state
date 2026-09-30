@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T10:27:24.508Z",
+  "updated_at": "2026-09-30T10:28:32.392Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161642:5904758978:2026-09-30T05:31:01Z:clawsweeper_needs_human",
-      "comment_id": "5904758978",
-      "comment_version_key": "5904758978:2026-09-30T05:31:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161642#issuecomment-5904758978",
-      "comment_created_at": "2026-09-30T05:31:01Z",
-      "comment_updated_at": "2026-09-30T05:31:01Z",
-      "comment_body_sha256": "d56743ee40c14b3500761fca8acced57993d4c2c5b942c1c444fc3563542edbc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161642,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR has no linked concrete fix, so its standalone scope needs an explicit exception to the repository's refactor-only contribution rule before merge. (sha=43ffa4fe21a5e3deefad6aa789a3ce71b2a8ef8b)",
-      "expected_head_sha": "43ffa4fe21a5e3deefad6aa789a3ce71b2a8ef8b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T05:31:56.843Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/deslop-cw-workspace-0929",
-        "head_sha": "43ffa4fe21a5e3deefad6aa789a3ce71b2a8ef8b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:670:5904762628:2026-09-30T05:31:20Z:address_review",
       "comment_id": "5904762628",
@@ -33764,6 +33731,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161804:5909374329:2026-09-30T10:27:23Z:re_review",
+      "comment_id": "5909374329",
+      "comment_version_key": "5909374329:2026-09-30T10:27:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161804#issuecomment-5909374329",
+      "comment_created_at": "2026-09-30T10:27:23Z",
+      "comment_updated_at": "2026-09-30T10:27:23Z",
+      "comment_body_sha256": "73b9c8c89fc0a0357bce70a42446dba32b71a92dab8e99260cdc669e36ef5d2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161804,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — pushed 0625d44d: non-string `gateway.custombindhost` / `gateway.controlui.basepath` are now treated as unset where status derives the bind host and dashboard links (plain and `--deep`), with regressions in `status.gateway.test.ts` and `status.print.test.ts`; evidence gains the real cli before/after for both fields and the focused test wall time",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T10:28:30.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-status-invalid-config",
+        "head_sha": "0625d44d263589d2907d40e3eb3705fa093bfb39",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
