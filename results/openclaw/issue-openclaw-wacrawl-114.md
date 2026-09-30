@@ -2,12 +2,12 @@
 repo: "openclaw/wacrawl"
 cluster_id: "issue-openclaw-wacrawl-114"
 mode: "autonomous"
-run_id: "36740707494"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36740707494"
+run_id: "36753053435"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36753053435"
 head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-30T16:01:33.341Z"
+published_at: "2026-09-30T17:44:17.510Z"
 canonical: "https://github.com/openclaw/wacrawl/issues/114"
 canonical_issue: "https://github.com/openclaw/wacrawl/issues/114"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36740707494](https://github.com/openclaw/clawsweeper/actions/runs/36740707494)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36753053435](https://github.com/openclaw/clawsweeper/actions/runs/36753053435)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacrawl/issues/114
 
 ## Summary
 
-The performance bug remains on main d25fce36d53f5fe54e122639a9246d19282c29a5. A narrow fix is planned, but the read-only checkout prevents code changes and Go validation. No PR was opened.
+The performance bug remains on main d25fce36d53f5fe54e122639a9246d19282c29a5. A narrow fix is identified, but this worker’s read-only filesystem prevented implementation and local validation.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The performance bug remains on main d25fce36d53f5fe54e122639a9246d19282c29a5. A 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114 | fix_needed | planned | canonical | Replace the repeated legacy scan with a lookup keyed by source row and raw discriminator. |
-| cluster:issue-openclaw-wacrawl-114 | build_fix_artifact | blocked |  | Implementation and local validation require a writable executor checkout and Go cache. |
+| #114 | fix_needed | planned | canonical | A bounded legacy lookup can preserve the existing identity guards and remove the repeated full scan. |
+| cluster:issue-openclaw-wacrawl-114 | build_fix_artifact | blocked |  | Implementation, scaled timing validation, and PR readiness require a writable checkout and Go cache. |
 
 ## Needs Human
 
