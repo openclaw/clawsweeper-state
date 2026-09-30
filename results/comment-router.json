@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:37:23.154Z",
+  "updated_at": "2026-09-30T06:38:20.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154562:5902962380:2026-09-30T02:36:41Z:re_review",
-      "comment_id": "5902962380",
-      "comment_version_key": "5902962380:2026-09-30T02:36:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154562#issuecomment-5902962380",
-      "comment_created_at": "2026-09-30T02:36:41Z",
-      "comment_updated_at": "2026-09-30T02:36:41Z",
-      "comment_body_sha256": "0ed707ddcd64cafe2661bc4c02696c8a64daaa29e23f749daac88c3c5b549415",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154562,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:41:27.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-memory-dreaming-provenance",
-        "head_sha": "6d16d6549b25424e40793b20ef45156a7002b656",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:129:5902426216:2026-09-30T02:39:22Z:clawsweeper_auto_repair",
       "comment_id": "5902426216",
@@ -33436,6 +33389,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161670:5905115935:2026-09-30T06:33:00Z:clawsweeper_needs_human",
+      "comment_id": "5905115935",
+      "comment_version_key": "5905115935:2026-09-30T06:33:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161670#issuecomment-5905115935",
+      "comment_created_at": "2026-09-30T06:00:40Z",
+      "comment_updated_at": "2026-09-30T06:33:00Z",
+      "comment_body_sha256": "29f24b2206b9340b3b53180d9c708b05cb33d40e6b86285a922c0073ee495abf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body identifies no concrete fix or approved exception for this standalone refactor, while CONTRIBUTING.md ordinarily excludes refactor-only PRs. (sha=b1c3f8926920d03f108f512f8c7fe3fab3859c67)",
+      "expected_head_sha": "b1c3f8926920d03f108f512f8c7fe3fab3859c67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T06:38:20.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-ext-residual-0929",
+        "head_sha": "b1c3f8926920d03f108f512f8c7fe3fab3859c67",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
