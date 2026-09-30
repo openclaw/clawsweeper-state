@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T01:39:37.980Z",
+  "updated_at": "2026-09-30T01:40:40.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161315:5896388816:2026-09-29T18:40:07Z:re_review",
-      "comment_id": "5896388816",
-      "comment_version_key": "5896388816:2026-09-29T18:40:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161315#issuecomment-5896388816",
-      "comment_created_at": "2026-09-29T18:40:07Z",
-      "comment_updated_at": "2026-09-29T18:40:07Z",
-      "comment_body_sha256": "6a3d722c0eba8e773e939b43b8ba26a016906070ff8a8a6c81306879a202d806",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161315,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T18:41:06.299Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/steering-retry-admission-public",
-        "head_sha": "ca6f25f45d8f777666fa7f1b290f568dbdac83e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158916:5846887649:2026-09-29T18:34:40Z:clawsweeper_needs_human",
       "comment_id": "5846887649",
@@ -33214,6 +33167,39 @@
         "kind": "pull_request",
         "branch": "fix/update-policy-conflict",
         "head_sha": "27751ea57a3267bbc0a42fd37484f06ef31a362f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158901:5846664637:2026-09-30T01:39:29Z:clawsweeper_needs_human",
+      "comment_id": "5846664637",
+      "comment_version_key": "5846664637:2026-09-30T01:39:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158901#issuecomment-5846664637",
+      "comment_created_at": "2026-09-26T13:30:04Z",
+      "comment_updated_at": "2026-09-30T01:39:29Z",
+      "comment_body_sha256": "144c0e7cdf56c0088530c972d04787d33a9b550dddc04ab0294be1f899452e64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158901,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The new Node runtime selects secret and fetch policy for provider work, but the supplied current-head evidence...; Review finding: [P1] Partition ChatGPT WebSocket reuse by runtime authority — packages/ai/src/stream.ts:89-96 - [high] Cross-runtime authenticated socket reuse — packages/ai/src/p... (sha=1271f20ea68d4820db14294236e5ff7d918e70ae)",
+      "expected_head_sha": "1271f20ea68d4820db14294236e5ff7d918e70ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T01:40:40.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-154390-native-worker-runtime",
+        "head_sha": "1271f20ea68d4820db14294236e5ff7d918e70ae",
         "cluster_id": null,
         "job_path": null
       }
