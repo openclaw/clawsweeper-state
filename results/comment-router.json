@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T00:35:01.882Z",
+  "updated_at": "2026-09-30T00:35:26.182Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159856:5859316286:2026-09-29T16:32:02Z:clawsweeper_needs_human",
-      "comment_id": "5859316286",
-      "comment_version_key": "5859316286:2026-09-29T16:32:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159856#issuecomment-5859316286",
-      "comment_created_at": "2026-09-27T19:57:05Z",
-      "comment_updated_at": "2026-09-29T16:32:02Z",
-      "comment_body_sha256": "c5216497c495c66ed14ac723b6317396359918645a8bb6cc6f61ef76b7c33397",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159856,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The enforced exact-head CI gate failed in three Node shards. The annotations identify the failing tests, but do not establish whether the same failures occur on the pinned main parent. (sha=211d5834ca3111569ab020d9b016a2639d510ad2)",
-      "expected_head_sha": "211d5834ca3111569ab020d9b016a2639d510ad2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T16:35:47.661Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l130-agents-root4",
-        "head_sha": "211d5834ca3111569ab020d9b016a2639d510ad2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150507:5707843343:2026-09-29T16:35:29Z:clawsweeper_needs_human",
       "comment_id": "5707843343",
@@ -33203,6 +33170,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161450:5901715848:2026-09-30T00:34:31Z:re_review",
+      "comment_id": "5901715848",
+      "comment_version_key": "5901715848:2026-09-30T00:34:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161450#issuecomment-5901715848",
+      "comment_created_at": "2026-09-30T00:34:31Z",
+      "comment_updated_at": "2026-09-30T00:34:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161450,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T00:35:24.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-cross-os-upgrade",
+        "head_sha": "6fa98c101d6f4d23d21feb5f7f5c5bdcdac7fa1b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
