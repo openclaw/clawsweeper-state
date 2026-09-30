@@ -2,16 +2,16 @@
 repo: "openclaw/imsg"
 cluster_id: "issue-openclaw-imsg-324"
 mode: "autonomous"
-run_id: "36644803392"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36644803392"
-head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
+run_id: "36656646741"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36656646741"
+head_sha: "0f5162431a344474998f10042f3ea0f8a5705e2a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-29T23:28:37.598Z"
+published_at: "2026-09-30T01:51:27.791Z"
 canonical: "https://github.com/openclaw/imsg/issues/324"
 canonical_issue: "https://github.com/openclaw/imsg/issues/324"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 1
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/imsg
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36644803392](https://github.com/openclaw/clawsweeper/actions/runs/36644803392)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36656646741](https://github.com/openclaw/clawsweeper/actions/runs/36656646741)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/imsg/issues/324
 
 ## Summary
 
-Issue #324 remains reproducible from source on main at 1aca78d212c888ef8b09d2abc2f3ca0b6d1f776c. RPC send passes a bare group identifier to a helper that resolves GUIDs; the helper’s pre-dispatch “Chat not found” response has no delivery disposition. Implementation is blocked because this checkout is read-only. No code was changed or validated, and no PR was opened.
+Issue #324 remains viable on main at 1aca78d. The send path can pass a bare group identifier to a helper that resolves GUIDs, and the helper's pre-dispatch “Chat not found” response lacks a delivery disposition. Implementation and validation are blocked by the read-only Linux checkout; no code or PR was created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 1 |
@@ -67,8 +67,9 @@ Issue #324 remains reproducible from source on main at 1aca78d212c888ef8b09d2abc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #324 | fix_needed | planned | canonical | A narrow fix is needed for the open canonical issue. |
-| cluster:issue-openclaw-imsg-324 | build_fix_artifact | blocked |  | Implementation requires a writable checkout and macOS validation host. |
+| #324 | fix_needed | planned | canonical | A focused send-path fix and regression coverage are needed. |
+| cluster:issue-openclaw-imsg-324 | build_fix_artifact | planned |  | Emit a narrow implementation plan for the executor. |
+| cluster:issue-openclaw-imsg-324 | open_fix_pr | blocked |  | A PR requires the patch, passing validation, and the requested macOS bridge trace. |
 
 ## Needs Human
 

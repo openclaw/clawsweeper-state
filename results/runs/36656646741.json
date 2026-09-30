@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/imsg",
+  "cluster_id": "issue-openclaw-imsg-324",
+  "mode": "autonomous",
+  "run_id": "36656646741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36656646741",
+  "head_sha": "0f5162431a344474998f10042f3ea0f8a5705e2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-imsg-324.md",
+  "published_at": "2026-09-30T01:51:27.791Z",
+  "canonical": "https://github.com/openclaw/imsg/issues/324",
+  "canonical_issue": "https://github.com/openclaw/imsg/issues/324",
+  "canonical_pr": null,
+  "summary": "Issue #324 remains viable on main at 1aca78d. The send path can pass a bare group identifier to a helper that resolves GUIDs, and the helper's pre-dispatch “Chat not found” response lacks a delivery disposition. Implementation and validation are blocked by the read-only Linux checkout; no code or PR was created.",
+  "actions": [
+    {
+      "target": "#324",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#324",
+      "candidate_fix": null,
+      "reason": "A focused send-path fix and regression coverage are needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-imsg-324",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#324",
+      "candidate_fix": null,
+      "reason": "Emit a narrow implementation plan for the executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-imsg-324",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#324",
+      "candidate_fix": null,
+      "reason": "A PR requires the patch, passing validation, and the requested macOS bridge trace."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "external base blocker: validation failed only in base-identical files outside the repair delta: Makefile",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#324",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
