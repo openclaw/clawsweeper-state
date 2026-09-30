@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:13:48.220Z",
+  "updated_at": "2026-09-30T03:14:27.081Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161161:5892627949:2026-09-29T22:09:47Z:clawsweeper_needs_human",
-      "comment_id": "5892627949",
-      "comment_version_key": "5892627949:2026-09-29T22:09:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161161#issuecomment-5892627949",
-      "comment_created_at": "2026-09-29T14:46:32Z",
-      "comment_updated_at": "2026-09-29T22:09:47Z",
-      "comment_body_sha256": "6cca578d08b555b758bf0f3fa74869913d35b969dc927b56f9467688070dcb87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plugin startup with existing operator state after a published updater runs remains unverified; root repository policy requires a published-driver × candidate cell for plugin-loading c... (sha=efcfd9a5886f2c14087514cca90ab4531ea849af)",
-      "expected_head_sha": "efcfd9a5886f2c14087514cca90ab4531ea849af",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T22:10:52.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/private-runtime-inputs",
-        "head_sha": "efcfd9a5886f2c14087514cca90ab4531ea849af",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161407:5900050042:2026-09-29T22:10:43Z:clawsweeper_needs_human",
       "comment_id": "5900050042",
@@ -32629,6 +32596,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157934:5903327594:2026-09-30T03:13:19Z:re_review",
+      "comment_id": "5903327594",
+      "comment_version_key": "5903327594:2026-09-30T03:13:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157934#issuecomment-5903327594",
+      "comment_created_at": "2026-09-30T03:13:19Z",
+      "comment_updated_at": "2026-09-30T03:13:19Z",
+      "comment_body_sha256": "d27b3e472f144ba63b1d7047c800678d457354382ab13cb7f9559eb4439c0d1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157934,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T03:14:25.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-worker-db-identity",
+        "head_sha": "e2d48f9e09e52c871548084b96de72460bd15a5a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
