@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-30T10:27:16.073Z",
+  "updated_at": "2026-09-30T10:24:58.248Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157934:5904755479:2026-09-30T05:30:43Z:re_review",
+      "comment_id": "5904755479",
+      "comment_version_key": "5904755479:2026-09-30T05:30:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157934#issuecomment-5904755479",
+      "comment_created_at": "2026-09-30T05:30:43Z",
+      "comment_updated_at": "2026-09-30T05:30:43Z",
+      "comment_body_sha256": "a0c2fd6febc29c4420855d47732731df16105b8e31d698663bd64ffd9b0035b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157934,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T05:31:44.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-worker-db-identity",
+        "head_sha": "8aab4650273dc590e4dfc294eafe6300c1ec0a9e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161642:5904758978:2026-09-30T05:31:01Z:clawsweeper_needs_human",
       "comment_id": "5904758978",
@@ -33730,39 +33777,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161812:5909359567:2026-09-30T10:26:20Z:clawsweeper_needs_human",
-      "comment_id": "5909359567",
-      "comment_version_key": "5909359567:2026-09-30T10:26:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161812#issuecomment-5909359567",
-      "comment_created_at": "2026-09-30T10:26:20Z",
-      "comment_updated_at": "2026-09-30T10:26:20Z",
-      "comment_body_sha256": "04af3164d91c0a4d807cc12c41a5c5157bf1ba0d8e61cf2d99960a6666022f22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161812,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR says daily enablement is already on, so merging can start unattended signed Google Play uploads before any end-to-end internal upload has confirmed both tracks and the unchange... (sha=e9ed2320d5420030eef5ba7d534e658893d7455e)",
-      "expected_head_sha": "e9ed2320d5420030eef5ba7d534e658893d7455e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T10:27:16.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/daily-android-internal",
-        "head_sha": "e9ed2320d5420030eef5ba7d534e658893d7455e",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
