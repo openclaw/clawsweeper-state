@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:02:29.889Z",
+  "updated_at": "2026-09-30T02:02:37.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159999:5861553474:2026-09-29T19:20:26Z:clawsweeper_needs_human",
-      "comment_id": "5861553474",
-      "comment_version_key": "5861553474:2026-09-29T19:20:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159999#issuecomment-5861553474",
-      "comment_created_at": "2026-09-28T01:07:56Z",
-      "comment_updated_at": "2026-09-29T19:20:26Z",
-      "comment_body_sha256": "09c03c73f5bc5a348286b6bfac579c351fd5dbc50ba51ef357840575eacfbd8b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159999,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No published v2026.9.6 updater-to-candidate restart with existing operator state is recorded. An existing installation could discover a startup or plugin-loading incompatibility only... (sha=b086b643253d1e11c20e7c457000aa904f9b02c4)",
-      "expected_head_sha": "b086b643253d1e11c20e7c457000aa904f9b02c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T19:21:42.369Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l132-gateway-core",
-        "head_sha": "b086b643253d1e11c20e7c457000aa904f9b02c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161202:5891305972:2026-09-29T19:21:07Z:clawsweeper_needs_human",
       "comment_id": "5891305972",
@@ -33243,6 +33210,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143909:5902597446:2026-09-30T02:01:38Z:re_review",
+      "comment_id": "5902597446",
+      "comment_version_key": "5902597446:2026-09-30T02:01:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143909#issuecomment-5902597446",
+      "comment_created_at": "2026-09-30T02:01:38Z",
+      "comment_updated_at": "2026-09-30T02:01:38Z",
+      "comment_body_sha256": "35b1116c785ad1156d2cda9bb09224b5c36d7967463ef25e0b1cfcf98d526286",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143909,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T02:02:36.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidebar-session-reorder",
+        "head_sha": "e0fa1e349556fabfa93129fc65226b222a9f5d18",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
