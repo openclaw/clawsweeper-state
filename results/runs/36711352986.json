@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/wacrawl",
+  "cluster_id": "issue-openclaw-wacrawl-114",
+  "mode": "autonomous",
+  "run_id": "36711352986",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36711352986",
+  "head_sha": "d7fd40ed0f8e8283c0c91c3b7c94f3c485bb608a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacrawl-114.md",
+  "published_at": "2026-09-30T11:57:11.677Z",
+  "canonical": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_issue": "https://github.com/openclaw/wacrawl/issues/114",
+  "canonical_pr": null,
+  "summary": "Current main still contains the repeated full-archive scan reported in #114. The fix is narrow, but this checkout is read-only, so no regression test or code change could be written. A focused Go test also stopped before running because Go could not create its module cache.",
+  "actions": [
+    {
+      "target": "#114",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "Replace the repeated legacy lookup without changing adoption or identity rules."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacrawl-114",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#114",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable checkout and Go module cache."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
