@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161770",
+  "mode": "plan",
+  "run_id": "36703821348",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36703821348",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161770.md",
+  "published_at": "2026-09-30T10:44:35.488Z",
+  "canonical": "#161770",
+  "canonical_issue": "#161770",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for the unchanged-archive Doctor slowdown. The supplied issue reports a measured per-archive cost, and the local archive walker still runs two transactions per row. This worker did not run the required baseline reproduction or change code. The checkout is a shallow main snapshot at d527aa58, while the preflight records 943286f3; the executor must pin and verify current main before implementation.",
+  "actions": [
+    {
+      "target": "#161770",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161770",
+      "candidate_fix": null,
+      "reason": "No hydrated open PR addresses this per-row archive cost. Reproduce on verified current main, then implement the bounded fast path."
+    },
+    {
+      "target": "#150138",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different entry point and remaining work."
+    },
+    {
+      "target": "#154636",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Progress reporting and archive processing have different fixes."
+    },
+    {
+      "target": "#155543",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#154636",
+      "candidate_fix": null,
+      "reason": "This PR does not address the archive walker and is not merge-ready."
+    },
+    {
+      "target": "#124888",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#143595",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#153851",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It addresses traversal cost, not the reported per-row admission cost."
+    },
+    {
+      "target": "#155460",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical performance work with a different cost source."
+    },
+    {
+      "target": "#157730",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "It addresses repeated snapshot work during restoration, not unchanged archive rows."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
