@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:22:58.546Z",
+  "updated_at": "2026-09-30T08:23:09.743Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137438:5529494470:2026-09-30T03:31:59Z:clawsweeper_needs_human",
-      "comment_id": "5529494470",
-      "comment_version_key": "5529494470:2026-09-30T03:31:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137438#issuecomment-5529494470",
-      "comment_created_at": "2026-09-03T17:24:08Z",
-      "comment_updated_at": "2026-09-30T03:31:59Z",
-      "comment_body_sha256": "c362e74ff6473370e39e715f13729eb622e66d661449d2b0f52f205cb047fcda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137438,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Real Telegram topic routing remains unverified: both linked runs stopped before card-edit and terminal-notice assertions because the leased bot lacked private-topic capability. A wron... (sha=9ae65cf6349dc4cff443d5cefee7c8dbe5eb6a39)",
-      "expected_head_sha": "9ae65cf6349dc4cff443d5cefee7c8dbe5eb6a39",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:49:58.038Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stable-review-f09-20260902",
-        "head_sha": "9ae65cf6349dc4cff443d5cefee7c8dbe5eb6a39",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146216:5647329876:2026-09-30T03:38:19Z:clawsweeper_needs_human",
       "comment_id": "5647329876",
@@ -34536,6 +34503,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/wacli:451:5907189820:2026-09-30T08:22:02Z:re_review",
+      "comment_id": "5907189820",
+      "comment_version_key": "5907189820:2026-09-30T08:22:02Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/451#issuecomment-5907189820",
+      "comment_created_at": "2026-09-30T08:22:02Z",
+      "comment_updated_at": "2026-09-30T08:22:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/wacli",
+      "issue_number": 451,
+      "author": "zarmat99",
+      "author_id": 145858964,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T08:23:07.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/presence-subscribe",
+        "head_sha": "49d220e1c5172a6531d6bb9a19d265b85a98195e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
