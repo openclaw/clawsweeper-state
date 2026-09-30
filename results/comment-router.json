@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:16:32.462Z",
+  "updated_at": "2026-09-30T03:16:38.252Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161238:5892816544:2026-09-29T22:12:41Z:clawsweeper_needs_human",
-      "comment_id": "5892816544",
-      "comment_version_key": "5892816544:2026-09-29T22:12:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161238#issuecomment-5892816544",
-      "comment_created_at": "2026-09-29T14:58:15Z",
-      "comment_updated_at": "2026-09-29T22:12:41Z",
-      "comment_body_sha256": "bea9f467c275d97c25bdcdb10b699b16fe2fc9c47272662f9abd1d5c5e72be21",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161238,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed macOS and Windows selector paths have source and fixture coverage but no reported native after-fix publication run. A wrong selector could miss a live shared-output consum... (sha=13a18acf0569765befd83024ea11ed92fb69396d)",
-      "expected_head_sha": "13a18acf0569765befd83024ea11ed92fb69396d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T22:13:46.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/updater-selector-cut",
-        "head_sha": "13a18acf0569765befd83024ea11ed92fb69396d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160899:5882535718:2026-09-29T22:14:25Z:clawsweeper_needs_human",
       "comment_id": "5882535718",
@@ -32651,6 +32618,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151739:5903347932:2026-09-30T03:15:27Z:re_review",
+      "comment_id": "5903347932",
+      "comment_version_key": "5903347932:2026-09-30T03:15:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151739#issuecomment-5903347932",
+      "comment_created_at": "2026-09-30T03:15:27Z",
+      "comment_updated_at": "2026-09-30T03:15:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151739,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T03:16:36.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-json-symlink-chain-20260918",
+        "head_sha": "786730fe85a60fb1698940f0b415feb3c856d8e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
