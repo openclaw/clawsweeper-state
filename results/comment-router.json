@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T12:24:00.637Z",
+  "updated_at": "2026-09-30T12:24:33.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159146:5905580259:2026-09-30T06:36:22Z:re_review",
-      "comment_id": "5905580259",
-      "comment_version_key": "5905580259:2026-09-30T06:36:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159146#issuecomment-5905580259",
-      "comment_created_at": "2026-09-30T06:36:22Z",
-      "comment_updated_at": "2026-09-30T06:36:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159146,
-      "author": "mnowrot",
-      "author_id": 135707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T06:37:21.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-consent-window-watchdog",
-        "head_sha": "bfedf84cc9e02dc9e8fcb6bd7601626c31b00bc9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161670:5905115935:2026-09-30T06:33:00Z:clawsweeper_needs_human",
       "comment_id": "5905115935",
@@ -33515,6 +33468,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159136:5911227137:2026-09-30T12:23:29Z:re_review",
+      "comment_id": "5911227137",
+      "comment_version_key": "5911227137:2026-09-30T12:23:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159136#issuecomment-5911227137",
+      "comment_created_at": "2026-09-30T12:23:29Z",
+      "comment_updated_at": "2026-09-30T12:23:29Z",
+      "comment_body_sha256": "27654fb44f82dc536b32ae05f21f17fc191d4dac5bd9ffb4324d0ab73f4fac5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159136,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rebased/merged current main. the only conflict was #159639's dry refactor of the spawn-context object (adopted; this pr's currentthreadts/currentconversationorigin now flow through the shared helper). #158992's channel gate and this pr's origin/provenance fail-closed compose orthogonally — both kept, both covered by the focused shards (thread-binding integration 9/9 incl. cli run-bound-grant bind, caller-token rejected before bind, explicit agentto wins; acp, openclaw-tools thread-binding, mcp-http provenance, sessions-spawn-hooks all green). new head: f1fefcba070",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T12:24:32.242Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/spawn-thread-binding-origin",
+        "head_sha": "f1fefcba070d5c94e418fb1bc5c3cd80241cfbfa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
