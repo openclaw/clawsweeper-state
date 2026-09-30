@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T11:44:41.408Z",
+  "updated_at": "2026-09-30T11:44:52.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161069:5905294183:2026-09-30T06:14:24Z:re_review",
-      "comment_id": "5905294183",
-      "comment_version_key": "5905294183:2026-09-30T06:14:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161069#issuecomment-5905294183",
-      "comment_created_at": "2026-09-30T06:14:24Z",
-      "comment_updated_at": "2026-09-30T06:14:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161069,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T06:15:19.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stalled-turn-recover",
-        "head_sha": "313f58aeea6820f294009f67535b073e97060243",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161674:5905286658:2026-09-30T06:13:48Z:clawsweeper_auto_repair",
       "comment_id": "5905286658",
@@ -33704,6 +33657,39 @@
         "kind": "pull_request",
         "branch": "openclaw/investigate-chatgpt-plugin-extensions",
         "head_sha": "b5327cb954b2c5f1ff0a841713c597dbf7ffc98e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152205:5736996577:2026-09-30T11:38:22Z:clawsweeper_needs_human",
+      "comment_id": "5736996577",
+      "comment_version_key": "5736996577:2026-09-30T11:38:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152205#issuecomment-5736996577",
+      "comment_created_at": "2026-09-18T22:34:19Z",
+      "comment_updated_at": "2026-09-30T11:38:22Z",
+      "comment_body_sha256": "70ef34274d22c731cb5e266257e04e5860a3953b7c6a8a21e3f4e29ff4262ad6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed exec, prompt, and reply owners have real Gateway and loopback-provider evidence for busy-turn pickup, failed-heartbeat rec... (sha=c54b95baa6de0548d00aa361e25789fc0c61a0f3)",
+      "expected_head_sha": "c54b95baa6de0548d00aa361e25789fc0c61a0f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T11:44:52.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-steering",
+        "head_sha": "c54b95baa6de0548d00aa361e25789fc0c61a0f3",
         "cluster_id": null,
         "job_path": null
       }
