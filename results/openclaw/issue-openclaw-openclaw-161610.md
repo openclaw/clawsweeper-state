@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161610"
-mode: "autonomous"
-run_id: "36670648832"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36670648832"
-head_sha: "3be6719cc9e2ebcfabcb97bdb964b2ae354fc091"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-30T05:11:27.014Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161610"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161610"
+mode: "plan"
+run_id: "36674056559"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36674056559"
+head_sha: "59bde930ef5b9f4920160232957eabb73318930c"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-30T05:37:54.169Z"
+canonical: "#161610"
+canonical_issue: "#161610"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36670648832](https://github.com/openclaw/clawsweeper/actions/runs/36670648832)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36674056559](https://github.com/openclaw/clawsweeper/actions/runs/36674056559)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161610
+Canonical: #161610
 
 ## Summary
 
-The defect remains visible in the source at main 52e60fb: unscoped Codex warnings are cached and replayed into later routes. Implementation is blocked in this run because the checkout is read-only. No failing regression, code change, validation run, branch, or PR was created.
+The hydrated issue is open and describes a narrow Codex warning-routing bug. Plan a fix, but verify it on the execution checkout before editing: this checkout’s HEAD differs from the preflight main SHA, and the required sibling Codex source was unavailable here. No regression, code change, or PR was produced in plan mode.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The defect remains visible in the source at main 52e60fb: unscoped Codex warning
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161610 | fix_needed | planned | canonical | A narrow ingress repair is warranted, pending a pre-fix failing regression and verification of the exact native templates. |
-| cluster:issue-openclaw-openclaw-161610 | build_fix_artifact | planned |  | Prepare a two-file owner-boundary repair; establish that its regression fails on the unmodified base first. |
-| cluster:issue-openclaw-openclaw-161610 | open_fix_pr | blocked |  | Open or update the specified PR branch only after the failing regression, repair, focused validation, and required review are complete on a writable authorized host. |
+| #161610 | fix_needed | planned | canonical | Implement the existing warning-routing behavior after confirming the defect and the two exact native templates on the execution checkout. |
 
 ## Needs Human
 
