@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:25:17.079Z",
+  "updated_at": "2026-09-30T09:27:06.554Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158901:5846664637:2026-09-30T04:33:34Z:clawsweeper_needs_human",
-      "comment_id": "5846664637",
-      "comment_version_key": "5846664637:2026-09-30T04:33:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158901#issuecomment-5846664637",
-      "comment_created_at": "2026-09-26T13:30:04Z",
-      "comment_updated_at": "2026-09-30T04:33:34Z",
-      "comment_body_sha256": "4ecd349e2190ede01d35323547a2e42c1d33b2b303f8924248938b991f53e2a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bound per-session WebSocket fallback authorities (P2)** - Each failed upgrade with a distinct token or request header appends an authority containing full Headers. Only explicit session cleanup clears the array,...; Review finding: [P2] Bound per-session WebSocket fallback authorities — packages/ai/src/providers/openai-chatgpt-responses-websocket-authority.ts:82-85 - [low] Limit retained auth... (sha=e77f8fc2fe311c86ebab4b29286d7eb89fd66195)",
-      "expected_head_sha": "e77f8fc2fe311c86ebab4b29286d7eb89fd66195",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T04:34:53.870Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-native-worker-runtime",
-        "head_sha": "e77f8fc2fe311c86ebab4b29286d7eb89fd66195",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3846:5904103448:2026-09-30T04:34:04Z:clawsweeper_needs_human",
       "comment_id": "5904103448",
@@ -34250,6 +34217,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160629:5908267131:2026-09-30T09:26:09Z:re_review",
+      "comment_id": "5908267131",
+      "comment_version_key": "5908267131:2026-09-30T09:26:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160629#issuecomment-5908267131",
+      "comment_created_at": "2026-09-30T09:26:09Z",
+      "comment_updated_at": "2026-09-30T09:26:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160629,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T09:27:05.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-scoped-thread-reads-20260928",
+        "head_sha": "09608dc03a3f8cb821531c54e2b95e6519fe6553",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
