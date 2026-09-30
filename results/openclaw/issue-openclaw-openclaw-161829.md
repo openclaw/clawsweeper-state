@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161829"
 mode: "autonomous"
-run_id: "36709233159"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36709233159"
+run_id: "36707014202"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36707014202"
 head_sha: "74dc4c6a2fc204e456fb92677ca9271af104e9cc"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-30T11:36:18.508Z"
-canonical: "#161829"
-canonical_issue: "#161829"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-30T11:17:04.393Z"
+canonical: "https://github.com/openclaw/openclaw/issues/161829"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/161829"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36709233159](https://github.com/openclaw/clawsweeper/actions/runs/36709233159)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36707014202](https://github.com/openclaw/clawsweeper/actions/runs/36707014202)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #161829
+Canonical: https://github.com/openclaw/openclaw/issues/161829
 
 ## Summary
 
-Read-only plan for a narrow WhatsApp placeholder fix. The checkout matches the preflight main SHA. The hydrated issue describes a contentless placeholder consuming the durable message key before the decoded resend arrives; a failing regression through messages.upsert and durable drain is still required before implementation.
+Current main still admits contentless WhatsApp upserts under the message key before normalization rejects them. The requested failing regression could not run: this checkout has no node_modules, and the host is read-only. No code or PR was created.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Read-only plan for a narrow WhatsApp placeholder fix. The checkout matches the p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161829 | fix_needed | planned | canonical | Keep the issue open and implement only after the regression fails on the provided main commit. |
-| #158140 | keep_related | planned | related | The PR does not own the placeholder-key repair. |
+| #161829 | fix_needed | planned | canonical | A runnable failing regression is required before implementation. |
+| #158140 | keep_related | planned | related | Separate WhatsApp message-loss cause; leave the contributor PR open. |
+| cluster:issue-openclaw-openclaw-161829 | build_fix_artifact | blocked |  | Implementation and the required before-fix regression need a writable, dependency-ready checkout. |
 
 ## Needs Human
 
