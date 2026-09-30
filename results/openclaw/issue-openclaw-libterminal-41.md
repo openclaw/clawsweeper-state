@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "36395373678"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36395373678"
-head_sha: "c1a83a00a73a800f45ff67ef5c7677ba4f17a8da"
+run_id: "36710912133"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36710912133"
+head_sha: "d7fd40ed0f8e8283c0c91c3b7c94f3c485bb608a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T08:10:55.356Z"
+published_at: "2026-09-30T11:52:59.353Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36395373678](https://github.com/openclaw/clawsweeper/actions/runs/36395373678)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36710912133](https://github.com/openclaw/clawsweeper/actions/runs/36710912133)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-No implementation PR is ready. Issue #41 explicitly requires a stable Ghostty v1.4 tag and a published compatible wrapper before work starts. The latest supplied upstream check found both gates unmet, and this run could not verify that they have since changed.
+No implementation PR is viable yet. Issue #41 explicitly requires a stable Ghostty v1.4 tag and a maintained, published compatible browser/WASM wrapper before work starts. The hydrated issue review says both gates remain unmet; the current main checkout still pins ghostty-web@0.4.0.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No implementation PR is ready. Issue #41 explicitly requires a stable Ghostty v1
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | The issue's explicit prerequisites lack current positive verification. Leave the tracker open and defer implementation until both publications can be confirmed. |
+| #41 | keep_canonical | planned | canonical | Keep the upstream tracking issue open. Reassess implementation after both publication gates are verified. |
 
 ## Needs Human
 
