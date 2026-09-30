@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 30, 2026, 19:31 UTC
+Last source update: Sep 30, 2026, 19:39 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Sep 30, 2026, 19:31 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 30, 2026, 19:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36762099364) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 30, 2026, 19:39 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36762630015) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 30, 2026, 19:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36766028045) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 30, 2026, 05:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36674549250) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 30, 2026, 19:14 UTC
+Last source update: Sep 30, 2026, 19:41 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1338 | 100% |
-| Run attempts archived | 3977 | audit |
+| Run attempts archived | 3978 | audit |
 | Latest successful clusters | 1112 | 83.1% |
 | Latest failed clusters | 223 | 16.7% |
 | Latest cancelled clusters | 3 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1338 clusters: 365 maintainer action, 409 automation snapshot, 511 intervention needed, 53 no pending action, 0 completed.
 - Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#3951](https://github.com/steipete/codexbar/issues/3951) is maintainer_input: Route this exact historical PR to central security handling without changing it..
-- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) is automation_blocked: validation command failed (go test ./internal/cli -run TestTypeRFBText\|TestRFBText -count=1): go: cannot find GOROOT directory: 'go' bin....
+- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) is automation_blocked: validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimm....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#161953](https://github.com/openclaw/openclaw/pull/161953) is action_planned: Reproduce first, then repair the existing publication owner and open one fix PR on the designated branch..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | validation command failed (go test ./internal/cli -run TestTypeRFBText\|TestRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is tri... | Sep 30, 2026, 18:09 UTC | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36754585295](https://github.com/openclaw/clawsweeper/actions/runs/36754585295) |
+| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOR... | Sep 30, 2026, 19:41 UTC | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36765907363](https://github.com/openclaw/clawsweeper/actions/runs/36765907363) |
 | [openclaw/wacrawl](https://github.com/openclaw/wacrawl) | [cluster:issue-openclaw-wacrawl-114](cluster:issue-openclaw-wacrawl-114) | automation_failed | Implementation, scaled timing validation, and PR readiness require a writable checkout and Go cache. | Sep 30, 2026, 17:44 UTC | [issue-openclaw-wacrawl-114](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacrawl-114.md) | [36753053435](https://github.com/openclaw/clawsweeper/actions/runs/36753053435) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-161992](cluster:issue-openclaw-openclaw-161992) | automation_failed | Implementation must resume in a writable checkout with working dependencies. First demonstrate the index-1 regression failing on the pinned base, t... | Sep 30, 2026, 17:27 UTC | [issue-openclaw-openclaw-161992](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161992.md) | [36747066256](https://github.com/openclaw/clawsweeper/actions/runs/36747066256) |
 | [openclaw/libterminal](https://github.com/openclaw/libterminal) |  | automation_blocked | No implementation PR is viable yet. Issue #41 requires a stable Ghostty v1.4 tag and a published compatible browser/WASM wrapper. The hydrated Sept... | Sep 30, 2026, 15:33 UTC | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [36737199652](https://github.com/openclaw/clawsweeper/actions/runs/36737199652) |
@@ -233,7 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-openclaw-crabbox-2627 | execute_fix blocked | validation command failed (go test ./internal/cli -run TestTypeRFBText\|TestRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is tri... | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36754585295](https://github.com/openclaw/clawsweeper/actions/runs/36754585295) |
+| issue-openclaw-crabbox-2627 | execute_fix blocked | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOR... | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36765907363](https://github.com/openclaw/clawsweeper/actions/runs/36765907363) |
 | issue-steipete-codexbar-4110 | needs human | For #4110, identify the Greptile usage endpoint or local source, its authentication method, and the account-scoped fields that define monthly allow... | [issue-steipete-codexbar-4110](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4110.md) | [36740831576](https://github.com/openclaw/clawsweeper/actions/runs/36740831576) |
 | issue-openclaw-openclaw-161866 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-openclaw-161866](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161866.md) | [36724659981](https://github.com/openclaw/clawsweeper/actions/runs/36724659981) |
 | automerge-openclaw-openclaw-enterprise-670 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-enterprise-670](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-enterprise-670.md) | [36697029874](https://github.com/openclaw/clawsweeper/actions/runs/36697029874) |
@@ -268,7 +268,7 @@ State: Failed clusters need inspection
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
-| [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | blocked |  |  | validation command failed (go test ./internal/cli -run TestTypeRFBText\|TestRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is tri... | [36754585295](https://github.com/openclaw/clawsweeper/actions/runs/36754585295) |
+| [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | blocked |  |  | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOR... | [36765907363](https://github.com/openclaw/clawsweeper/actions/runs/36765907363) |
 | [issue-openclaw-openclaw-161866](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161866.md) | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [36724659981](https://github.com/openclaw/clawsweeper/actions/runs/36724659981) |
 | [issue-openclaw-openclaw-enterprise-694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-enterprise-694.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: scripts/docs-site/word-count.mjs, scripts/docs-site... | [36690817325](https://github.com/openclaw/clawsweeper/actions/runs/36690817325) |
 | [issue-openclaw-imsg-324](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-324.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [36658091028](https://github.com/openclaw/clawsweeper/actions/runs/36658091028) |
