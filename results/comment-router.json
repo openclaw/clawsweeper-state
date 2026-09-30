@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T21:35:22.447Z",
+  "updated_at": "2026-09-30T21:41:28.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145133:5913153738:2026-09-30T14:19:21Z:re_review",
-      "comment_id": "5913153738",
-      "comment_version_key": "5913153738:2026-09-30T14:19:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145133#issuecomment-5913153738",
-      "comment_created_at": "2026-09-30T14:19:21Z",
-      "comment_updated_at": "2026-09-30T14:19:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145133,
-      "author": "abacha",
-      "author_id": 215016,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T14:33:27.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119382-ingress-lane-release",
-        "head_sha": "fc008d55b81118d217caf94985f1cff882e49c60",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158000:5913330650:2026-09-30T14:28:33Z:re_review",
       "comment_id": "5913330650",
@@ -33523,6 +33476,39 @@
       "status": "skipped",
       "processed_at": "2026-09-30T21:35:22.447Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161955:5914930919:2026-09-30T21:39:53Z:clawsweeper_auto_repair",
+      "comment_id": "5914930919",
+      "comment_version_key": "5914930919:2026-09-30T21:39:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161955#issuecomment-5914930919",
+      "comment_created_at": "2026-09-30T15:59:50Z",
+      "comment_updated_at": "2026-09-30T21:39:53Z",
+      "comment_body_sha256": "9cbeeb64da44e5d95e2a06cea2d8d4341e23e89201502442fcceb1572f42962f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161955,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a89e4c23b8801c5938e58797534d32c4d06be9b)",
+      "expected_head_sha": "5a89e4c23b8801c5938e58797534d32c4d06be9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T21:41:28.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/transcript-import-mode-a262c5",
+        "head_sha": "5a89e4c23b8801c5938e58797534d32c4d06be9b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
