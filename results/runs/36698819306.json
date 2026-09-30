@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161795",
+  "mode": "autonomous",
+  "run_id": "36698819306",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36698819306",
+  "head_sha": "74dc4c6a2fc204e456fb92677ca9271af104e9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161795.md",
+  "published_at": "2026-09-30T10:43:45.900Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161795",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161795",
+  "canonical_pr": null,
+  "summary": "The checked-out Telegram Doctor migration still treats an empty thread-bindings file as a blocking retired source. Implementation is blocked: this checkout is read-only, and its HEAD (7f122b9e) differs from the preflight main SHA (a4af3a00), which is unavailable locally. No regression, published-updater proof, patch, or PR was produced.",
+  "actions": [
+    {
+      "target": "#161795",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161795",
+      "candidate_fix": null,
+      "reason": "A narrow Telegram-owned repair is indicated, subject to reproducing the refusal on the preflight main SHA."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161795",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161795",
+      "candidate_fix": null,
+      "reason": "Implementation and PR preparation require a writable checkout at the preflight main SHA, followed by the required regression and published-updater validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
