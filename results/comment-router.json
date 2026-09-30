@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T15:54:02.923Z",
+  "updated_at": "2026-09-30T15:54:17.859Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161069:5907205594:2026-09-30T08:23:04Z:re_review",
-      "comment_id": "5907205594",
-      "comment_version_key": "5907205594:2026-09-30T08:23:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161069#issuecomment-5907205594",
-      "comment_created_at": "2026-09-30T08:23:04Z",
-      "comment_updated_at": "2026-09-30T08:23:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161069,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T08:24:09.968Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stalled-turn-recover",
-        "head_sha": "e0b05c52afadd818e7b7e9d311a4d1ce33433610",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123906:5907230263:2026-09-30T08:24:34Z:re_review",
       "comment_id": "5907230263",
@@ -33192,6 +33145,39 @@
         "kind": "pull_request",
         "branch": "deslop/l228-agents-runner3",
         "head_sha": "15fc6d19f157431915c80a6b1355c02d8297d991",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151226:5722457278:2026-09-30T15:47:59Z:clawsweeper_needs_human",
+      "comment_id": "5722457278",
+      "comment_version_key": "5722457278:2026-09-30T15:47:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151226#issuecomment-5722457278",
+      "comment_created_at": "2026-09-17T23:13:16Z",
+      "comment_updated_at": "2026-09-30T15:47:59Z",
+      "comment_body_sha256": "573a01aac8c7a3698f88f472edf53327a84e1c6b15ef48f990ed967e6e3689ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Publishing assets/icon-light.png and assets/icon-dark.png makes an OpenClaw-specific plugin-author convention that the owning maintainer has not yet accepted. (sha=700bfd036cc51df7bb1d343b7ce305d74ded77ca)",
+      "expected_head_sha": "700bfd036cc51df7bb1d343b7ce305d74ded77ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T15:54:17.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-theme-icons",
+        "head_sha": "700bfd036cc51df7bb1d343b7ce305d74ded77ca",
         "cluster_id": null,
         "job_path": null
       }
