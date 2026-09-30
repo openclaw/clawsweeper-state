@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T17:32:31.351Z",
+  "updated_at": "2026-09-30T17:34:21.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5908397182:2026-09-30T09:32:49Z:re_review",
-      "comment_id": "5908397182",
-      "comment_version_key": "5908397182:2026-09-30T09:32:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5908397182",
-      "comment_created_at": "2026-09-30T09:32:49Z",
-      "comment_updated_at": "2026-09-30T09:32:49Z",
-      "comment_body_sha256": "3875cbd0ee2fe682fe75a02170dcc5683b015962a4d5690f274f8c67421ac796",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `5d91df1577885d4c29bdf3be0b6ae66349321482`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T09:34:21.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-close-stale-tui-clients",
-        "head_sha": "5d91df1577885d4c29bdf3be0b6ae66349321482",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156540:5796382122:2026-09-30T09:33:44Z:clawsweeper_needs_human",
       "comment_id": "5796382122",
@@ -33406,6 +33359,39 @@
         "kind": "pull_request",
         "branch": "1071",
         "head_sha": "cc3412635c5b07f2bfaf6d2ce510ad890224983a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1549:5900452285:2026-09-30T17:33:06Z:clawsweeper_needs_human",
+      "comment_id": "5900452285",
+      "comment_version_key": "5900452285:2026-09-30T17:33:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1549#issuecomment-5900452285",
+      "comment_created_at": "2026-09-29T22:40:29Z",
+      "comment_updated_at": "2026-09-30T17:33:06Z",
+      "comment_body_sha256": "ba2919599a3dbf0666d589c4b22595f402f9dca0b85a474970f5685d8d982937",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1549,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upgrade retires the preview.12 crash mitigation while the app still issues pending row-targeted bring requests. The upstream workaround is published, but sustained native switchin... (sha=9b0526eea672fdfddc2331df613812a3acaaa902)",
+      "expected_head_sha": "9b0526eea672fdfddc2331df613812a3acaaa902",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T17:34:21.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "karkarl-reactor-version-update",
+        "head_sha": "9b0526eea672fdfddc2331df613812a3acaaa902",
         "cluster_id": null,
         "job_path": null
       }
