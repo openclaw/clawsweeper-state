@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-30T14:30:25.724Z",
+  "updated_at": "2026-09-30T14:27:14.961Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161344:5896777656:2026-09-30T07:21:40Z:clawsweeper_needs_human",
+      "comment_id": "5896777656",
+      "comment_version_key": "5896777656:2026-09-30T07:21:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5896777656",
+      "comment_created_at": "2026-09-29T19:04:27Z",
+      "comment_updated_at": "2026-09-30T07:21:40Z",
+      "comment_body_sha256": "62bc7be8d2c520d49474c181387174a22836ec0ee7926d93e3b82bf56a236538",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR exercises Lobster’s embedded pipeline with an injected adapter, but mocks host completion. It does not s...; Review finding: [P1] Preserve HTTP routing when the provider is omitted — extensions/lobster/src/lobster-tool.ts:108 - [P1] Authorize saved embedded results before replay — extens... (sha=33207e23fbd0e131df90d360d316f13555b65aa9)",
+      "expected_head_sha": "33207e23fbd0e131df90d360d316f13555b65aa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:22:38.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lobster-llm-adapter-current",
+        "head_sha": "33207e23fbd0e131df90d360d316f13555b65aa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:670:5906263583:2026-09-30T07:22:43Z:address_review",
       "comment_id": "5906263583",
@@ -33311,53 +33344,6 @@
         "kind": "pull_request",
         "branch": "fix-161914-elevenlabs-tts-modelid-docs",
         "head_sha": "0b298279220a5a53ab46a708dc56797e1a67b520",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160492:5913344078:2026-09-30T14:29:18Z:re_review",
-      "comment_id": "5913344078",
-      "comment_version_key": "5913344078:2026-09-30T14:29:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160492#issuecomment-5913344078",
-      "comment_created_at": "2026-09-30T14:29:18Z",
-      "comment_updated_at": "2026-09-30T14:29:18Z",
-      "comment_body_sha256": "ff1ed1d04aa0c6a97c6896f627e1012e785dc7cd0dfcbbbb72a6956013ae98e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160492,
-      "author": "Yun-0000",
-      "author_id": 196228507,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T14:30:24.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-install-loadable-source",
-        "head_sha": "b20f7360dd93d093059f7ac7fe86a92c968c9b87",
         "cluster_id": null,
         "job_path": null
       },
