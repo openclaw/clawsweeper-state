@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161863",
+  "mode": "autonomous",
+  "run_id": "36715000559",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36715000559",
+  "head_sha": "d7fd40ed0f8e8283c0c91c3b7c94f3c485bb608a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161863.md",
+  "published_at": "2026-09-30T13:21:35.650Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161863",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161863",
+  "canonical_pr": null,
+  "summary": "Current main still has two completion paths that can append different reports under the same update-run-finished key. A focused fix PR is warranted. The collision does not prove that no completion notice was persisted.",
+  "actions": [
+    {
+      "target": "#161863",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161863",
+      "candidate_fix": null,
+      "reason": "One completion notice needs stable run-scoped custody and reconciliation."
+    },
+    {
+      "target": "#127378",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161863",
+      "candidate_fix": null,
+      "reason": "The shared idempotency-conflict symptom does not make the catalog-import defect part of this update-notice fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161863",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161863",
+      "candidate_fix": null,
+      "reason": "The checkout is available for a narrow, non-security implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
