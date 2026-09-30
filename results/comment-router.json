@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:40:17.207Z",
+  "updated_at": "2026-09-30T08:40:48.669Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:670:5901265414:2026-09-30T04:10:39Z:clawsweeper_needs_human",
-      "comment_id": "5901265414",
-      "comment_version_key": "5901265414:2026-09-30T04:10:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/670#issuecomment-5901265414",
-      "comment_created_at": "2026-09-29T23:51:28Z",
-      "comment_updated_at": "2026-09-30T04:10:39Z",
-      "comment_body_sha256": "fa4c5334b7f5ffe847d6d70d11bc9b2c19008814eb53d0c3bfad4c15a6778838",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The new Actions owner admits events, mints App tokens, and forwards commands to the ClawSweeper receiv...; Review finding: [P2] Point installation at the pinned dispatcher — docs/testing/ci.md:191 - [medium] Linked template restores a moving credentialed workflow — docs/testing/ci.md:1... (sha=fd0b22ff6bb84a19673d64fbbf9e588f7dbf341d)",
-      "expected_head_sha": "fd0b22ff6bb84a19673d64fbbf9e588f7dbf341d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T04:11:45.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "enable-clawsweeper-review",
-        "head_sha": "fd0b22ff6bb84a19673d64fbbf9e588f7dbf341d",
-        "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161474:5902048826:2026-09-30T04:11:03Z:clawsweeper_needs_human",
       "comment_id": "5902048826",
@@ -34282,6 +34235,53 @@
       "status": "skipped",
       "processed_at": "2026-09-30T08:40:17.207Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161745:5907479613:2026-09-30T08:39:39Z:re_review",
+      "comment_id": "5907479613",
+      "comment_version_key": "5907479613:2026-09-30T08:39:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161745#issuecomment-5907479613",
+      "comment_created_at": "2026-09-30T08:39:39Z",
+      "comment_updated_at": "2026-09-30T08:39:39Z",
+      "comment_body_sha256": "7a87039002d4afc7ddb12116946ecdd1480b200bf4f008d88c82a31543f15c3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161745,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T08:40:47.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mac-sidebar-owner-b1",
+        "head_sha": "14fc1f6a20ea26f0838d6a7fbd7fc2db9b474367",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
