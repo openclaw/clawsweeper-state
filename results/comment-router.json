@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T17:43:43.581Z",
+  "updated_at": "2026-09-30T17:45:04.743Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1538:5908459989:2026-09-30T09:36:01Z:re_review",
-      "comment_id": "5908459989",
-      "comment_version_key": "5908459989:2026-09-30T09:36:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1538#issuecomment-5908459989",
-      "comment_created_at": "2026-09-30T09:36:01Z",
-      "comment_updated_at": "2026-09-30T09:36:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1538,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T09:38:24.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-change-model-scoped",
-        "head_sha": "15d0fc01ffa71ea88522cb8f2a42e3ede780ce06",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161763:5908484397:2026-09-30T09:37:21Z:re_review",
       "comment_id": "5908484397",
@@ -33330,6 +33283,39 @@
         "kind": "pull_request",
         "branch": "codex/sqlite-snapshot-cwd-20260930",
         "head_sha": "50f76a5f080b53d4329e88279b809399d2854925",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147283:5655383591:2026-09-30T17:44:00Z:clawsweeper_needs_human",
+      "comment_id": "5655383591",
+      "comment_version_key": "5655383591:2026-09-30T17:44:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147283#issuecomment-5655383591",
+      "comment_created_at": "2026-09-13T18:58:48Z",
+      "comment_updated_at": "2026-09-30T17:44:00Z",
+      "comment_body_sha256": "5c6dee3bc768c843da17e109db8fa09085db4145341ead4d0b9eed8e877468b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the branch changes cron completion routing and durable source custody, but the reported after-fix runs use focu...; Review finding: [P2] Move source-generation reads off Gateway delivery paths — src/infra/source-generation-authority.ts:18-24 - [medium] Prove wrong-recipient and revoked-source r... (sha=e905bad9417305a23012c6813801cd64c2e51c1d)",
+      "expected_head_sha": "e905bad9417305a23012c6813801cd64c2e51c1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T17:45:04.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cross-chat-async-route",
+        "head_sha": "e905bad9417305a23012c6813801cd64c2e51c1d",
         "cluster_id": null,
         "job_path": null
       }
