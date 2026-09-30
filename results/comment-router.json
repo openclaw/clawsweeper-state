@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:18:07.924Z",
+  "updated_at": "2026-09-30T04:18:17.165Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161466:5901885559:2026-09-30T00:50:56Z:clawsweeper_auto_repair",
-      "comment_id": "5901885559",
-      "comment_version_key": "5901885559:2026-09-30T00:50:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161466#issuecomment-5901885559",
-      "comment_created_at": "2026-09-30T00:50:56Z",
-      "comment_updated_at": "2026-09-30T00:50:56Z",
-      "comment_body_sha256": "80e24e47786939b13e3aa5023ce7ce0a6fd029700a635829b2864de2f84ff9e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68b93721d78abd39ae16818d8c9df49a2de69ff6)",
-      "expected_head_sha": "68b93721d78abd39ae16818d8c9df49a2de69ff6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T00:52:04.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-network-recovery",
-        "head_sha": "68b93721d78abd39ae16818d8c9df49a2de69ff6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161082:5887176196:2026-09-30T00:51:10Z:clawsweeper_needs_human",
       "comment_id": "5887176196",
@@ -32069,6 +32036,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157679:5903934946:2026-09-30T04:17:16Z:re_review",
+      "comment_id": "5903934946",
+      "comment_version_key": "5903934946:2026-09-30T04:17:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157679#issuecomment-5903934946",
+      "comment_created_at": "2026-09-30T04:17:16Z",
+      "comment_updated_at": "2026-09-30T04:17:16Z",
+      "comment_body_sha256": "16e69da7e46af53a0bfa398f41d7678064a989b4b626f7f714cab16eb2111114",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157679,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T04:18:15.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-supervisor-guidance",
+        "head_sha": "29c5a76aedb4798260a8792ca466f17b9ec2ed42",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
