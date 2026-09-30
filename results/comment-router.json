@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:26:55.976Z",
+  "updated_at": "2026-09-30T08:27:25.529Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153573:5748790374:2026-09-30T03:49:16Z:clawsweeper_auto_repair",
-      "comment_id": "5748790374",
-      "comment_version_key": "5748790374:2026-09-30T03:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153573#issuecomment-5748790374",
-      "comment_created_at": "2026-09-20T08:53:59Z",
-      "comment_updated_at": "2026-09-30T03:49:16Z",
-      "comment_body_sha256": "f7456cff8045af1e01b253f830ed7cc2b1e126e902d8b8982609fb9750554ebd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153573,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=35ed1e1a4c2be59e3cf8d432b94471bfc43789be)",
-      "expected_head_sha": "35ed1e1a4c2be59e3cf8d432b94471bfc43789be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T03:50:36.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-153543-heartbeat-crosschannel",
-        "head_sha": "35ed1e1a4c2be59e3cf8d432b94471bfc43789be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1395:5623874720:2026-09-30T03:49:26Z:clawsweeper_needs_human",
       "comment_id": "5623874720",
@@ -34586,6 +34553,39 @@
       "status": "skipped",
       "processed_at": "2026-09-30T08:26:55.976Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159670:5856352687:2026-09-30T08:26:23Z:clawsweeper_needs_human",
+      "comment_id": "5856352687",
+      "comment_version_key": "5856352687:2026-09-30T08:26:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159670#issuecomment-5856352687",
+      "comment_created_at": "2026-09-27T13:39:11Z",
+      "comment_updated_at": "2026-09-30T08:26:23Z",
+      "comment_body_sha256": "d4a7de12ccf20f041e4d1e5d8d8a6ea788bef075a557bb10fdb3acdc0b9b7132",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR body's isolated patched-Gateway restart and model-list trace support the Claude CLI availabilit...; Review finding: [P1] Clear credentials read as removed despite unavailable discovery — src/agents/prepared-model-runtime.catalog-access.ts:345-348 - [high] Removed credential surv... (sha=3df3572308fc7fbfe83f9b1ae691222b348241b4)",
+      "expected_head_sha": "3df3572308fc7fbfe83f9b1ae691222b348241b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T08:27:25.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-availability-partial-refresh-158922",
+        "head_sha": "3df3572308fc7fbfe83f9b1ae691222b348241b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
