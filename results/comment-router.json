@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T20:03:01.546Z",
+  "updated_at": "2026-09-30T20:03:17.237Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161842:5910461442:2026-09-30T12:03:11Z:clawsweeper_needs_human",
-      "comment_id": "5910461442",
-      "comment_version_key": "5910461442:2026-09-30T12:03:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161842#issuecomment-5910461442",
-      "comment_created_at": "2026-09-30T11:41:28Z",
-      "comment_updated_at": "2026-09-30T12:03:11Z",
-      "comment_body_sha256": "0cadc13a87f8d3e58fcc2d5044689eac6510527815edc27dab0951a527a86419",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161842,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=eedb3fc4ba34c7ec17a755d1d2b889932fcebb52)",
-      "expected_head_sha": "eedb3fc4ba34c7ec17a755d1d2b889932fcebb52",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T12:09:18.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/staged-inbound-image-history",
-        "head_sha": "eedb3fc4ba34c7ec17a755d1d2b889932fcebb52",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160812:5881033584:2026-09-30T12:06:19Z:clawsweeper_needs_human",
       "comment_id": "5881033584",
@@ -33761,6 +33728,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162065:5918690060:2026-09-30T20:02:00Z:re_review",
+      "comment_id": "5918690060",
+      "comment_version_key": "5918690060:2026-09-30T20:02:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5918690060",
+      "comment_created_at": "2026-09-30T20:02:00Z",
+      "comment_updated_at": "2026-09-30T20:02:00Z",
+      "comment_body_sha256": "cc14f8c3081547ccc401d2ec92dbbec896a6b35ddafc31cba7c344fce80c0380",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162065,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head d5d285f8d5a. all four accepted warning-flow findings are fixed through one typed plugin-warning contract: legacy normalization forwards channel-hook warnings, both pre-plugin callers retain them, advisory receipts merge them, and unrelated config warnings remain outside the plugin receipt. exact lint/types/diff plus 6 channel, 8 receipt, and 3 updater-boundary cases are green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T20:03:15.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
+        "head_sha": "d5d285f8d5af98ce961f4b0b5c4ad0ae373fd8fa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
