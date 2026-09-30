@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T08:45:57.590Z",
+  "updated_at": "2026-09-30T08:46:13.451Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157693:5903907159:2026-09-30T04:14:33Z:re_review",
-      "comment_id": "5903907159",
-      "comment_version_key": "5903907159:2026-09-30T04:14:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5903907159",
-      "comment_created_at": "2026-09-30T04:14:33Z",
-      "comment_updated_at": "2026-09-30T04:14:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157693,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T04:15:35.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/address-all-agent-outage-p0-157325",
-        "head_sha": "de89351ceaa5bbc76584bb1e866ae9318576fcb3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161583:5903902867:2026-09-30T04:14:08Z:re_review",
       "comment_id": "5903902867",
@@ -34279,6 +34232,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-143821-memory-intersession",
         "head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161758:5907570809:2026-09-30T08:45:12Z:clawsweeper_needs_human",
+      "comment_id": "5907570809",
+      "comment_version_key": "5907570809:2026-09-30T08:45:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161758#issuecomment-5907570809",
+      "comment_created_at": "2026-09-30T08:45:12Z",
+      "comment_updated_at": "2026-09-30T08:45:12Z",
+      "comment_body_sha256": "502a6eb701808cb18f839ae00b01cecda8d5113df301f695d2303e642cedb03b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161758,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed database-opening and Doctor paths lack the repository-required published-updater-to-candidate check against existing operator state; focused tests and a build do not estab... (sha=33b26bc8027042ebcc82106cbc8a4711b8c108d9)",
+      "expected_head_sha": "33b26bc8027042ebcc82106cbc8a4711b8c108d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T08:46:13.451Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l215-core-third-pass",
+        "head_sha": "33b26bc8027042ebcc82106cbc8a4711b8c108d9",
         "cluster_id": null,
         "job_path": null
       }
