@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw-enterprise",
+  "cluster_id": "automerge-openclaw-openclaw-enterprise-670",
+  "mode": "plan",
+  "run_id": "36687106667",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36687106667",
+  "head_sha": "ce985956ca4f3dd962f87ef2e841fee83a7816cc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-enterprise-670.md",
+  "published_at": "2026-09-30T08:04:15.700Z",
+  "canonical": "https://github.com/openclaw/openclaw-enterprise/pull/670",
+  "canonical_issue": null,
+  "canonical_pr": "https://github.com/openclaw/openclaw-enterprise/pull/670",
+  "summary": "Repair plan for open PR #670: reconcile it with current main, fix the CI guide word-limit failure within the maintainer’s requested scope, address review findings, and validate the exact repaired head. The active human-review hold blocks branch publication. This job permits neither merge nor closure.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw-enterprise/pull/670",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "09",
+      "candidate_fix": null,
+      "reason": "The useful source PR needs a narrow branch repair and another exact-head review before it can be considered ready."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw-enterprise/pull/691",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged documentation context for rebasing #670; no action on #691."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Resolve the active clawsweeper:human-review hold on #670 before publishing a branch update. The preflight still shows the label after the maintainer’s latest retry request."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
