@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T13:48:45.616Z",
+  "updated_at": "2026-09-30T13:50:55.703Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-09-29T20:09:30Z:clawsweeper_auto_repair",
-      "comment_id": "5167057200",
-      "comment_version_key": "5167057200:2026-09-29T20:09:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118679#issuecomment-5167057200",
-      "comment_created_at": "2026-08-03T13:38:37Z",
-      "comment_updated_at": "2026-09-29T20:09:30Z",
-      "comment_body_sha256": "d4e2c317f03b43fb6315a4cbca4f5465a858955255b0df06c07b437d71861c89",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118679,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c3287e48919c9813f74b04c575f435b58f5bd546)",
-      "expected_head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T07:06:41.865Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118669",
-        "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
-        "cluster_id": "automerge-openclaw-openclaw-118679",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118679.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-09-18T19:04:29Z:autoclose",
       "comment_id": "5176973305",
@@ -33403,6 +33370,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161818:5909647312:2026-09-30T13:48:45Z:clawsweeper_needs_human",
+      "comment_id": "5909647312",
+      "comment_version_key": "5909647312:2026-09-30T13:48:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161818#issuecomment-5909647312",
+      "comment_created_at": "2026-09-30T10:47:13Z",
+      "comment_updated_at": "2026-09-30T13:48:45Z",
+      "comment_body_sha256": "e150e5e5f61573f4fdae8108fda1873d4f69b9ef8caffaf978fe57a767f782f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The predecessor passed all three candidate cases, but no settled run is recorded for the rebased head with the newer Gateway stdin lifeline; the opt-in proofs could still stop before... (sha=96d73b7ae27532abd21abbcd454e80b98094c034)",
+      "expected_head_sha": "96d73b7ae27532abd21abbcd454e80b98094c034",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T13:50:55.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l132-slack-public-callback",
+        "head_sha": "96d73b7ae27532abd21abbcd454e80b98094c034",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
