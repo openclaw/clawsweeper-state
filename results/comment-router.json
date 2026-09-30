@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T21:20:00.147Z",
+  "updated_at": "2026-09-30T21:21:55.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1555:5913036526:2026-09-30T14:12:51Z:clawsweeper_needs_human",
-      "comment_id": "5913036526",
-      "comment_version_key": "5913036526:2026-09-30T14:12:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1555#issuecomment-5913036526",
-      "comment_created_at": "2026-09-30T14:12:51Z",
-      "comment_updated_at": "2026-09-30T14:12:51Z",
-      "comment_body_sha256": "cb1349203f90a316493c96b3f4862f8d21eb36d6d385c530450560df78945b3b",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1555,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Speech requests that previously succeeded through a legitimate ElevenLabs redirect will now fail with HTTP 302; the PR has no live-provider evidence establishing whether that occurs f... (sha=3e7658f9658328eac0b272d4a2182e2a14a3f692)",
-      "expected_head_sha": "3e7658f9658328eac0b272d4a2182e2a14a3f692",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T14:14:00.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f100-elevenlabs-redirect",
-        "head_sha": "3e7658f9658328eac0b272d4a2182e2a14a3f692",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161881:5912156129:2026-09-30T14:13:31Z:clawsweeper_needs_human",
       "comment_id": "5912156129",
@@ -33571,6 +33538,53 @@
       "status": "skipped",
       "processed_at": "2026-09-30T21:20:00.147Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161019:5919944896:2026-09-30T21:20:41Z:re_review",
+      "comment_id": "5919944896",
+      "comment_version_key": "5919944896:2026-09-30T21:20:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161019#issuecomment-5919944896",
+      "comment_created_at": "2026-09-30T21:20:41Z",
+      "comment_updated_at": "2026-09-30T21:20:41Z",
+      "comment_body_sha256": "e162711aa9be3007ce89d5202ecf1bf969760d88605ee9e5aee025d60153da8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161019,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T21:21:54.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-picker-access",
+        "head_sha": "a9a5ec48a3308477e2e1283416915fb0ceed3fec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
