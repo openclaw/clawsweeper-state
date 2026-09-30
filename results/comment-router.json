@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-30T13:22:19.796Z",
+  "updated_at": "2026-09-30T13:21:17.930Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144745:5809750735:2026-09-24T07:27:53Z:re_review",
+      "comment_id": "5809750735",
+      "comment_version_key": "5809750735:2026-09-24T07:27:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144745#issuecomment-5809750735",
+      "comment_created_at": "2026-09-24T07:27:53Z",
+      "comment_updated_at": "2026-09-24T07:27:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144745,
+      "author": "azuretek",
+      "author_id": 17463699,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T06:48:20.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/surface-model-ref-resolution-reason",
+        "head_sha": "6657c306bb0f932093d3f5e7a52473f97eb45fc1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144745:5631131714:2026-09-30T06:47:28Z:clawsweeper_needs_human",
       "comment_id": "5631131714",
@@ -33413,39 +33460,6 @@
         "kind": "pull_request",
         "branch": "fix/code-mode-module-guidance-158675",
         "head_sha": "9ae407850387399c78c93bf36b34f239d2d94007",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161881:5912156129:2026-09-30T13:21:12Z:clawsweeper_needs_human",
-      "comment_id": "5912156129",
-      "comment_version_key": "5912156129:2026-09-30T13:21:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161881#issuecomment-5912156129",
-      "comment_created_at": "2026-09-30T13:21:12Z",
-      "comment_updated_at": "2026-09-30T13:21:12Z",
-      "comment_body_sha256": "2b0029acb060c4f8465dc667655b6cd936e7a6f1da521816ff21cb95f78f339a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new Skills cases manually deliver watcher callbacks, while the existing real-watcher suite forces polling. A native targeted rescan with fs-safe 0.21.3 has not yet shown that a su... (sha=5a283cebf1419c821c8fcf9d2e4a0b9e1706e7a6)",
-      "expected_head_sha": "5a283cebf1419c821c8fcf9d2e4a0b9e1706e7a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T13:22:19.796Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fs-safe-0.21.3-20260930",
-        "head_sha": "5a283cebf1419c821c8fcf9d2e4a0b9e1706e7a6",
         "cluster_id": null,
         "job_path": null
       }
