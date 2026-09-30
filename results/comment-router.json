@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T17:17:57.796Z",
+  "updated_at": "2026-09-30T17:18:01.733Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161741:5906893685:2026-09-30T08:38:26Z:clawsweeper_needs_human",
-      "comment_id": "5906893685",
-      "comment_version_key": "5906893685:2026-09-30T08:38:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161741#issuecomment-5906893685",
-      "comment_created_at": "2026-09-30T08:03:58Z",
-      "comment_updated_at": "2026-09-30T08:38:26Z",
-      "comment_body_sha256": "c5a4678df511589d2cbdc2d6fb5b0f3076c4a3b43843b968aa5281a2a68ce72b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161741,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body gives combined wall time and per-file execution intervals rather than the required per-file one-worker wall times. The 41.83-second backfill file needs a brief explanation... (sha=abdcb40508e7fb31f1845d9c9b51173a72406626)",
-      "expected_head_sha": "abdcb40508e7fb31f1845d9c9b51173a72406626",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T09:15:52.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-origin-reads",
-        "head_sha": "abdcb40508e7fb31f1845d9c9b51173a72406626",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161749:5907037064:2026-09-30T08:59:32Z:clawsweeper_needs_human",
       "comment_id": "5907037064",
@@ -33457,6 +33424,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159146:5916138073:2026-09-30T17:16:17Z:re_review",
+      "comment_id": "5916138073",
+      "comment_version_key": "5916138073:2026-09-30T17:16:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159146#issuecomment-5916138073",
+      "comment_created_at": "2026-09-30T17:16:17Z",
+      "comment_updated_at": "2026-09-30T17:16:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159146,
+      "author": "mnowrot",
+      "author_id": 135707,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T17:17:59.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-consent-window-watchdog",
+        "head_sha": "0a102b521852b28f57da7a5f77461aadde3080a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
