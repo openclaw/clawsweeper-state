@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T00:46:18.455Z",
+  "updated_at": "2026-09-30T00:48:44.980Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161286:5894656163:2026-09-29T16:48:15Z:clawsweeper_needs_human",
-      "comment_id": "5894656163",
-      "comment_version_key": "5894656163:2026-09-29T16:48:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161286#issuecomment-5894656163",
-      "comment_created_at": "2026-09-29T16:48:15Z",
-      "comment_updated_at": "2026-09-29T16:48:15Z",
-      "comment_body_sha256": "fac1d5cb942b2aa64bb6ea59ac924f9c6387ad9e087e677e14852c71173df78b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body reports local assertions against the production reader with an injected request runner, and related discussion shows a raw... (sha=89fae9eb9c735f4d5030977a2de907d762d8dd54)",
-      "expected_head_sha": "89fae9eb9c735f4d5030977a2de907d762d8dd54",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T16:49:12.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/read-exact-entries-worker-boundary",
-        "head_sha": "89fae9eb9c735f4d5030977a2de907d762d8dd54",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161284:5894692583:2026-09-29T16:50:37Z:clawsweeper_needs_human",
       "comment_id": "5894692583",
@@ -33199,6 +33166,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161449:5901853776:2026-09-30T00:47:41Z:re_review",
+      "comment_id": "5901853776",
+      "comment_version_key": "5901853776:2026-09-30T00:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161449#issuecomment-5901853776",
+      "comment_created_at": "2026-09-30T00:47:41Z",
+      "comment_updated_at": "2026-09-30T00:47:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161449,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T00:48:43.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-2026.8.34-validation",
+        "head_sha": "446849db225c744189f269e3822b684bf5482b20",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
