@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:58:29.459Z",
+  "updated_at": "2026-09-30T02:58:42.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161202:5891305972:2026-09-29T21:35:13Z:clawsweeper_needs_human",
-      "comment_id": "5891305972",
-      "comment_version_key": "5891305972:2026-09-29T21:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161202#issuecomment-5891305972",
-      "comment_created_at": "2026-09-29T13:30:06Z",
-      "comment_updated_at": "2026-09-29T21:35:13Z",
-      "comment_body_sha256": "7120064478c937e60c403dc2f02c6cf11e8f97a284c1c73e9ece11f02b7877ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161202,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Doctor config and cron repair paths can rewrite existing operator state; a published updater has not been shown handing copied pre-upgrade records to this candidate with t... (sha=f90a7eb4ae2dc3d1cf87f7a28a84f568890233e5)",
-      "expected_head_sha": "f90a7eb4ae2dc3d1cf87f7a28a84f568890233e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T21:36:16.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l172-commands6",
-        "head_sha": "f90a7eb4ae2dc3d1cf87f7a28a84f568890233e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:771:5899127241:2026-09-29T21:29:55Z:clawsweeper_needs_human",
       "comment_id": "5899127241",
@@ -32623,6 +32590,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161240:5903171639:2026-09-30T02:57:37Z:re_review",
+      "comment_id": "5903171639",
+      "comment_version_key": "5903171639:2026-09-30T02:57:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161240#issuecomment-5903171639",
+      "comment_created_at": "2026-09-30T02:57:37Z",
+      "comment_updated_at": "2026-09-30T02:57:37Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161240,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T02:58:38.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/feature-existing-session-text-20260929",
+        "head_sha": "befa33ac6a59c60aa8ac56e609ac013dbe41ed82",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
