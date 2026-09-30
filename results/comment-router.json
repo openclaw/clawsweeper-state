@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:14:54.286Z",
+  "updated_at": "2026-09-30T02:15:45.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154093:5897341966:2026-09-29T19:40:20Z:re_review",
-      "comment_id": "5897341966",
-      "comment_version_key": "5897341966:2026-09-29T19:40:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154093#issuecomment-5897341966",
-      "comment_created_at": "2026-09-29T19:40:20Z",
-      "comment_updated_at": "2026-09-29T19:40:20Z",
-      "comment_body_sha256": "f48e0c9e89b07ad6fdd737c158e39bef44a05dc5e9c0c356e69029f022ccc98e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154093,
-      "author": "victor-gurbani",
-      "author_id": 89997914,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T19:41:23.587Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/android-incoming-data-calls",
-        "head_sha": "9c8d85fdb7e27ba0fc49caee45ea6565b329639d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:650:5897347560:2026-09-29T19:40:41Z:clawsweeper_needs_human",
       "comment_id": "5897347560",
@@ -33312,6 +33265,39 @@
         "kind": "pull_request",
         "branch": "deslop/l196-codex8",
         "head_sha": "6084add6c483dd45d3f553f7cbae4029c3b70bc6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161503:5902645627:2026-09-30T02:14:45Z:clawsweeper_needs_human",
+      "comment_id": "5902645627",
+      "comment_version_key": "5902645627:2026-09-30T02:14:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161503#issuecomment-5902645627",
+      "comment_created_at": "2026-09-30T02:06:28Z",
+      "comment_updated_at": "2026-09-30T02:14:45Z",
+      "comment_body_sha256": "7eeaf124e13163f5abcf52d90d0542c86c5fba2f7a8824e00c30d5be7d81b373",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater has not been shown handing an existing watcher to this candidate. An old listener that survives beyond the 35-second retry window could still leave Gma... (sha=25cb3148657a73c3b81d954830d9591bcbdba982)",
+      "expected_head_sha": "25cb3148657a73c3b81d954830d9591bcbdba982",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T02:15:45.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-161467-gmail-watcher-eaddrinuse",
+        "head_sha": "25cb3148657a73c3b81d954830d9591bcbdba982",
         "cluster_id": null,
         "job_path": null
       }
