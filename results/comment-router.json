@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T11:38:34.113Z",
+  "updated_at": "2026-09-30T11:42:27.859Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161677:5905232274:2026-09-30T06:09:43Z:re_review",
-      "comment_id": "5905232274",
-      "comment_version_key": "5905232274:2026-09-30T06:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161677#issuecomment-5905232274",
-      "comment_created_at": "2026-09-30T06:09:43Z",
-      "comment_updated_at": "2026-09-30T06:09:43Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161677,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T06:12:20.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-pipe-read-cleanup-wait",
-        "head_sha": "9ec42a199c690ea70b2b954cfc842e2b6afeac84",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154882:5761657191:2026-09-30T06:11:06Z:clawsweeper_needs_human",
       "comment_id": "5761657191",
@@ -33700,6 +33653,39 @@
         "kind": "pull_request",
         "branch": "deslop/l216-apple6-guards",
         "head_sha": "5981e161c1e3b6d587a8941e6eeb0de7d34f0496",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161845:5910461893:2026-09-30T11:41:30Z:clawsweeper_needs_human",
+      "comment_id": "5910461893",
+      "comment_version_key": "5910461893:2026-09-30T11:41:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161845#issuecomment-5910461893",
+      "comment_created_at": "2026-09-30T11:41:30Z",
+      "comment_updated_at": "2026-09-30T11:41:30Z",
+      "comment_body_sha256": "e5f63a3386779478e2b75da9959f7943670922156969decac7f6d57663a5bfd4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Managed-service upgrade compatibility remains unproven. The branch changes launchd recovery and systemd installation paths, but the PR evidence contains no published-driver × candidat... (sha=820e043f8129c2cf4897309150859db576391f31)",
+      "expected_head_sha": "820e043f8129c2cf4897309150859db576391f31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T11:42:27.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l224-runtime-small",
+        "head_sha": "820e043f8129c2cf4897309150859db576391f31",
         "cluster_id": null,
         "job_path": null
       }
