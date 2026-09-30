@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 30, 2026, 09:50 UTC
+Last source update: Sep 30, 2026, 10:12 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 30, 2026, 09:50 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 30, 2026, 09:44 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36696065434) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 30, 2026, 09:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36698466856) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 30, 2026, 10:12 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36696868870) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 30, 2026, 09:58 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36699379553) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 30, 2026, 05:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36674549250) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 30, 2026, 09:50 UTC
+Last source update: Sep 30, 2026, 10:04 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1324 | 100% |
-| Run attempts archived | 3945 | audit |
+| Run attempts archived | 3947 | audit |
 | Latest successful clusters | 1103 | 83.3% |
 | Latest failed clusters | 218 | 16.5% |
 | Latest cancelled clusters | 3 | 0.2% |
@@ -118,7 +118,7 @@ State: Failed clusters need inspection
 - Latest records: 1324 clusters: 363 maintainer action, 405 automation snapshot, 505 intervention needed, 51 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#156812](https://github.com/openclaw/openclaw/issues/156812) is maintainer_input: Route this historical ref to central security handling without affecting the narrow timing bug..
 - Intervention first: [openclaw/openclaw-enterprise](https://github.com/openclaw/openclaw-enterprise) [#670](https://github.com/openclaw/openclaw-enterprise/pull/670) is automation_blocked: autofix-only job cannot merge.
-- Automation latest: [openclaw/wacrawl](https://github.com/openclaw/wacrawl) [#114](https://github.com/openclaw/wacrawl/issues/114) is action_planned: Replace the repeated legacy scan while preserving matching order, ambiguity handling, storeEvents checks, archived event IDs, and source....
+- Automation latest: [openclaw/wacrawl](https://github.com/openclaw/wacrawl) [#114](https://github.com/openclaw/wacrawl/pull/114) is action_planned: The legacy adoption path has a repeated full scan consistent with the reported large-archive hang. The fix can preserve the existing iden....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
@@ -167,7 +167,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/wacrawl](https://github.com/openclaw/wacrawl) | [#114](https://github.com/openclaw/wacrawl/issues/114) | action_planned | Replace the repeated legacy scan while preserving matching order, ambiguity handling, storeEvents checks, archived event IDs, and source identity g... | Sep 30, 2026, 09:08 UTC | [issue-openclaw-wacrawl-114](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacrawl-114.md) | [36693803594](https://github.com/openclaw/clawsweeper/actions/runs/36693803594) |
+| [openclaw/wacrawl](https://github.com/openclaw/wacrawl) | [#114](https://github.com/openclaw/wacrawl/pull/114) | action_planned | The legacy adoption path has a repeated full scan consistent with the reported large-archive hang. The fix can preserve the existing identity and m... | Sep 30, 2026, 10:04 UTC | [issue-openclaw-wacrawl-114](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacrawl-114.md) | [36699851490](https://github.com/openclaw/clawsweeper/actions/runs/36699851490) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#161610](https://github.com/openclaw/openclaw/pull/161610) | action_planned | Implement the existing warning-routing behavior after confirming the defect and the two exact native templates on the execution checkout. | Sep 30, 2026, 05:37 UTC | [issue-openclaw-openclaw-161610](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161610.md) | [36674056559](https://github.com/openclaw/clawsweeper/actions/runs/36674056559) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#161441](https://github.com/openclaw/openclaw/issues/161441) | action_planned | Verify the completed archive against the retained source before owner lookup. Keep owner checks and warnings for backups without a verified matchin... | Sep 30, 2026, 01:16 UTC | [issue-openclaw-openclaw-161441](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-161441.md) | [36654023422](https://github.com/openclaw/clawsweeper/actions/runs/36654023422) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#1546](https://github.com/openclaw/openclaw-windows-node/pull/1546) | action_planned | Implement and validate the Setup window resize constraint. | Sep 29, 2026, 22:32 UTC | [issue-openclaw-openclaw-windows-node-1546](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1546.md) | [36639931230](https://github.com/openclaw/clawsweeper/actions/runs/36639931230) |
