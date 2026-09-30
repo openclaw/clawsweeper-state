@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T21:54:27.943Z",
+  "updated_at": "2026-09-30T21:54:57.189Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161895:5912527650:2026-09-30T14:11:28Z:clawsweeper_needs_human",
-      "comment_id": "5912527650",
-      "comment_version_key": "5912527650:2026-09-30T14:11:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161895#issuecomment-5912527650",
-      "comment_created_at": "2026-09-30T13:43:10Z",
-      "comment_updated_at": "2026-09-30T14:11:28Z",
-      "comment_body_sha256": "50a9e69b285957eadbe41f4d5d9c11aeaa4827f2c17cb32687de8e3db1bddd36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161895,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR identifies a real pre-fix Gateway log flood, but its after-fix evidence only checks mocked scheduler calls with a fake clock. N... (sha=b0030dac2e650be69ec4e8f402933f762a593aea)",
-      "expected_head_sha": "b0030dac2e650be69ec4e8f402933f762a593aea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T14:33:38.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scheduler-cadence-debug-flood",
-        "head_sha": "b0030dac2e650be69ec4e8f402933f762a593aea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161900:5912547435:2026-09-30T14:30:01Z:clawsweeper_auto_repair",
       "comment_id": "5912547435",
@@ -33537,6 +33504,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:671:5901804623:2026-09-30T19:31:53Z:clawsweeper_needs_human",
+      "comment_id": "5901804623",
+      "comment_version_key": "5901804623:2026-09-30T19:31:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/671#issuecomment-5901804623",
+      "comment_created_at": "2026-09-30T00:42:39Z",
+      "comment_updated_at": "2026-09-30T19:31:53Z",
+      "comment_body_sha256": "0bc74ca578aa9b583ba1610d2e363756ed282d74d5dbc3f76026e773dc148c48",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 671,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The production Gateway wrapper and native process are exercised in an image test, but a simulated server suppli...; Review finding: [medium] Prove peer identity at the readiness boundary — apps/controller/src/drivers/compute/kubernetes/runtime-entrypoints.ts:2419 (sha=e57e777238104b1de0d3bee5c6c631722c4af575)",
+      "expected_head_sha": "e57e777238104b1de0d3bee5c6c631722c4af575",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T21:54:57.188Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-peer-recovery-20260930",
+        "head_sha": "e57e777238104b1de0d3bee5c6c631722c4af575",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
