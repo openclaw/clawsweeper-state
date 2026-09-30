@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T11:37:27.637Z",
+  "updated_at": "2026-09-30T11:37:38.169Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120185:5905223860:2026-09-30T06:09:05Z:re_review",
-      "comment_id": "5905223860",
-      "comment_version_key": "5905223860:2026-09-30T06:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120185#issuecomment-5905223860",
-      "comment_created_at": "2026-09-30T06:09:05Z",
-      "comment_updated_at": "2026-09-30T06:09:05Z",
-      "comment_body_sha256": "ff46bda083a1784ce9851a2858ac779ac61b8fe34c2c10c1707d8ad2c85d3b2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120185,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T06:09:57.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-model-policy-preflight",
-        "head_sha": "6fe53f99b27c7500f6fde1c57c4659e1690b9bc6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:686:5905228030:2026-09-30T06:09:23Z:clawsweeper_needs_human",
       "comment_id": "5905228030",
@@ -33714,6 +33667,39 @@
         "kind": "pull_request",
         "branch": "fix/dogfood2-docs-and-launcher",
         "head_sha": "25a8687dd7a70e31b38b18dd382c5baf1811beaf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161796:5908755478:2026-09-30T11:36:26Z:clawsweeper_needs_human",
+      "comment_id": "5908755478",
+      "comment_version_key": "5908755478:2026-09-30T11:36:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161796#issuecomment-5908755478",
+      "comment_created_at": "2026-09-30T09:52:38Z",
+      "comment_updated_at": "2026-09-30T11:36:26Z",
+      "comment_body_sha256": "e604da272e0696843695a4c111142c5178e2efe8aa7031fc35b7452bd59f862c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161796,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore community-source provenance at artifact consent (P2)** - Late discovery: the replacement test exercises only a custom registry with an official channel. The removed table also checked the default officia...; Review finding: [P2] Restore community-source provenance at artifact consent — src/plugins/clawhub.test.ts:356 - [medium] Community provenance no longer checked at consent — src/p... (sha=b1f04408db0ea40c8bf780de2560834bfb9b4125)",
+      "expected_head_sha": "b1f04408db0ea40c8bf780de2560834bfb9b4125",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T11:37:38.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d111-1790756490",
+        "head_sha": "b1f04408db0ea40c8bf780de2560834bfb9b4125",
         "cluster_id": null,
         "job_path": null
       }
