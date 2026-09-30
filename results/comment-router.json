@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T10:47:51.959Z",
+  "updated_at": "2026-09-30T10:47:58.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161240:5904873960:2026-09-30T05:40:51Z:re_review",
-      "comment_id": "5904873960",
-      "comment_version_key": "5904873960:2026-09-30T05:40:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161240#issuecomment-5904873960",
-      "comment_created_at": "2026-09-30T05:40:51Z",
-      "comment_updated_at": "2026-09-30T05:40:51Z",
-      "comment_body_sha256": "985eb7ef0d22c5917db750c7291dc2b891c49ac4bc4ef29f48d1e62b4ccefc04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161240,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T05:41:47.431Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feature-existing-session-text-20260929",
-        "head_sha": "f6deabca07402432252aa5337735df966602aca2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161558:5903334136:2026-09-30T05:41:24Z:clawsweeper_needs_human",
       "comment_id": "5903334136",
@@ -33821,6 +33774,39 @@
         "kind": "pull_request",
         "branch": "fix/openshell-client-abort-20260930-0944",
         "head_sha": "18635a3900873454de273c5c4629e0f8741e7c83",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:704:5909000939:2026-09-30T10:46:59Z:clawsweeper_needs_human",
+      "comment_id": "5909000939",
+      "comment_version_key": "5909000939:2026-09-30T10:46:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/704#issuecomment-5909000939",
+      "comment_created_at": "2026-09-30T10:06:01Z",
+      "comment_updated_at": "2026-09-30T10:46:59Z",
+      "comment_body_sha256": "236738aa36c803f37c046eea3f7f2ac8fa5c7c5569c32738cc199c76dc7a8210",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 704,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: The changed launcher writes a StatefulSet and additive database/API egress policies, but the PR's after-fix che...; Review finding: [P1] Keep API egress scoped to the intended peer — internal/occdev/openshell_k3d.go:665 - [P2] Exercise stop/start recovery in the real k3d test — tests/integratio... (sha=8fcd324208632e50ede12a7b1466cb3d2b51baca)",
+      "expected_head_sha": "8fcd324208632e50ede12a7b1466cb3d2b51baca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T10:47:58.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dogfood-0",
+        "head_sha": "8fcd324208632e50ede12a7b1466cb3d2b51baca",
         "cluster_id": null,
         "job_path": null
       }
