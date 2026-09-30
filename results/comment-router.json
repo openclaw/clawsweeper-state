@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T15:04:04.825Z",
+  "updated_at": "2026-09-30T15:04:33.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158823:5906801797:2026-09-30T07:58:43Z:re_review",
-      "comment_id": "5906801797",
-      "comment_version_key": "5906801797:2026-09-30T07:58:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158823#issuecomment-5906801797",
-      "comment_created_at": "2026-09-30T07:58:09Z",
-      "comment_updated_at": "2026-09-30T07:58:43Z",
-      "comment_body_sha256": "dd13c445d49cde09bd46fd7bb59b48efc1b8a9f485d6f596477acdbef5a9428e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158823,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T08:09:23.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-browser-registration-name",
-        "head_sha": "bc18d06fb515c86bcf5b0b5d0076c1256dd77924",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160812:5906881317:2026-09-30T08:03:10Z:re_review",
       "comment_id": "5906881317",
@@ -33308,6 +33261,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-1083",
         "head_sha": "1dd2f3f0b2d4f13c7cb752af4cadb2997ae00815",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160442:5869907298:2026-09-30T15:03:07Z:clawsweeper_needs_human",
+      "comment_id": "5869907298",
+      "comment_version_key": "5869907298:2026-09-30T15:03:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160442#issuecomment-5869907298",
+      "comment_created_at": "2026-09-28T12:33:39Z",
+      "comment_updated_at": "2026-09-30T15:03:07Z",
+      "comment_body_sha256": "47d749722aa186786e67af0733aad7d1d7939cadeab6574bf2356079540749e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published-updater cell checks installation and plugin canaries, while retained node turns were exercised separately. A node session surviving that upgrade and loading the new chun... (sha=124fe71b26a6d448dd53b9b06d6e0b8f4875857a)",
+      "expected_head_sha": "124fe71b26a6d448dd53b9b06d6e0b8f4875857a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T15:04:33.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/node-parity-l1-bundle",
+        "head_sha": "124fe71b26a6d448dd53b9b06d6e0b8f4875857a",
         "cluster_id": null,
         "job_path": null
       }
