@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:36:52.398Z",
+  "updated_at": "2026-09-30T04:36:59.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161450:5902227900:2026-09-30T01:24:57Z:re_review",
-      "comment_id": "5902227900",
-      "comment_version_key": "5902227900:2026-09-30T01:24:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161450#issuecomment-5902227900",
-      "comment_created_at": "2026-09-30T01:24:57Z",
-      "comment_updated_at": "2026-09-30T01:24:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161450,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T01:26:01.837Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-cross-os-upgrade",
-        "head_sha": "dc410ea0fc2c532fc97a6973adc172a7ecff6889",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:405:5902065281:2026-09-30T01:25:28Z:clawsweeper_auto_repair",
       "comment_id": "5902065281",
@@ -31970,6 +31923,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-gateway-borrow",
         "head_sha": "d32d58d7dacac047538607fc723facbfc45b3d87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153573:5748790374:2026-09-30T04:30:52Z:clawsweeper_auto_repair",
+      "comment_id": "5748790374",
+      "comment_version_key": "5748790374:2026-09-30T04:30:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153573#issuecomment-5748790374",
+      "comment_created_at": "2026-09-20T08:53:59Z",
+      "comment_updated_at": "2026-09-30T04:30:52Z",
+      "comment_body_sha256": "5e3b1822c8ff1f53f37dbe6dba9cad48c423d970d2eba31d5f18454f4453680c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153573,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c980515bfb8ae97a21d013e4049d282a8a084adb)",
+      "expected_head_sha": "c980515bfb8ae97a21d013e4049d282a8a084adb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T04:36:59.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-153543-heartbeat-crosschannel",
+        "head_sha": "c980515bfb8ae97a21d013e4049d282a8a084adb",
         "cluster_id": null,
         "job_path": null
       }
