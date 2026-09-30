@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:11:49.607Z",
+  "updated_at": "2026-09-30T03:12:46.870Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160864:5899961991:2026-09-29T22:06:14Z:re_review",
-      "comment_id": "5899961991",
-      "comment_version_key": "5899961991:2026-09-29T22:06:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160864#issuecomment-5899961991",
-      "comment_created_at": "2026-09-29T22:06:14Z",
-      "comment_updated_at": "2026-09-29T22:06:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160864,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T22:07:23.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1067",
-        "head_sha": "448ba35e1ea08be689afbfe2a6b3ce379ddfa003",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161123:5887996813:2026-09-29T22:06:45Z:clawsweeper_needs_human",
       "comment_id": "5887996813",
@@ -32640,6 +32593,39 @@
         "kind": "pull_request",
         "branch": "worker/round6-deps",
         "head_sha": "56588fc05df6a5ffd613b499d2789705eef13a26",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161559:5903313410:2026-09-30T03:11:49Z:clawsweeper_needs_human",
+      "comment_id": "5903313410",
+      "comment_version_key": "5903313410:2026-09-30T03:11:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161559#issuecomment-5903313410",
+      "comment_created_at": "2026-09-30T03:11:49Z",
+      "comment_updated_at": "2026-09-30T03:11:49Z",
+      "comment_body_sha256": "d7f60d226de02546212a1d73875677177c831b2518297ffba582f10e8b8a14d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal probe calls the changed production renderer and shows an after-fix title without a lone surrogate. It does not show the G... (sha=9cf3c6a5b955105bddb18931496dcfe266adb031)",
+      "expected_head_sha": "9cf3c6a5b955105bddb18931496dcfe266adb031",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T03:12:46.870Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-utf16-truncation-public-session",
+        "head_sha": "9cf3c6a5b955105bddb18931496dcfe266adb031",
         "cluster_id": null,
         "job_path": null
       }
