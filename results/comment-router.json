@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:06:01.234Z",
+  "updated_at": "2026-09-30T04:06:22.272Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140487:5562647615:2026-09-30T00:27:41Z:clawsweeper_auto_repair",
-      "comment_id": "5562647615",
-      "comment_version_key": "5562647615:2026-09-30T00:27:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140487#issuecomment-5562647615",
-      "comment_created_at": "2026-09-06T22:32:44Z",
-      "comment_updated_at": "2026-09-30T00:27:41Z",
-      "comment_body_sha256": "1130c22488c67a78dd0bb616ab12327da24e8d3caa772939fdfbe4a995efab16",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9fd7c70c8b803a27c41322ce5410c3771ac73c33)",
-      "expected_head_sha": "9fd7c70c8b803a27c41322ce5410c3771ac73c33",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T00:37:58.744Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-memory-isolation",
-        "head_sha": "c0dc13b04db4cdbb285b5577d1ed38c12ac49afa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149344:5686387391:2026-09-30T00:35:00Z:clawsweeper_needs_human",
       "comment_id": "5686387391",
@@ -32029,6 +31996,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161474:5903821463:2026-09-30T04:05:29Z:re_review",
+      "comment_id": "5903821463",
+      "comment_version_key": "5903821463:2026-09-30T04:05:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161474#issuecomment-5903821463",
+      "comment_created_at": "2026-09-30T04:05:29Z",
+      "comment_updated_at": "2026-09-30T04:05:29Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161474,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T04:06:21.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mac-embedded-access-signin",
+        "head_sha": "1f2744909e298e223125f804402657d9c4c66b50",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
