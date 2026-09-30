@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161734",
+  "mode": "autonomous",
+  "run_id": "36686487522",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36686487522",
+  "head_sha": "ce985956ca4f3dd962f87ef2e841fee83a7816cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161734.md",
+  "published_at": "2026-09-30T08:33:53.649Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161734",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161734",
+  "canonical_pr": null,
+  "summary": "Current main has the reported per-archive transaction loop. The read-only checkout prevented a failing regression, implementation, validation, and PR preparation. A live PR recheck was also unavailable because GitHub CLI has no token.",
+  "actions": [
+    {
+      "target": "#157545",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate failure path."
+    },
+    {
+      "target": "#157617",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161734",
+      "candidate_fix": null,
+      "reason": "Related database performance concern with a distinct owner and reproduction."
+    },
+    {
+      "target": "#161734",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161734",
+      "candidate_fix": null,
+      "reason": "The narrow bug remains visible in current source; executable regression and fix remain outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161734",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161734",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout; the executor must also recheck for the reporter's PR before opening one."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
