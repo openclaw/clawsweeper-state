@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T03:08:58.642Z",
+  "updated_at": "2026-09-30T03:09:55.848Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160580:5899881514:2026-09-29T22:02:04Z:re_review",
-      "comment_id": "5899881514",
-      "comment_version_key": "5899881514:2026-09-29T22:02:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160580#issuecomment-5899881514",
-      "comment_created_at": "2026-09-29T22:02:04Z",
-      "comment_updated_at": "2026-09-29T22:02:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160580,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-29T22:03:09.964Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-gpt-model-version-audit-warning",
-        "head_sha": "6846fda3f9c51ccc0c5e96bac33b40747be6280e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161025:5885067915:2026-09-29T22:02:35Z:clawsweeper_needs_human",
       "comment_id": "5885067915",
@@ -32654,6 +32607,39 @@
         "kind": "pull_request",
         "branch": "fix/companion-isolated-gateway-contract",
         "head_sha": "8961ca1b1af3468bb4fccd267bf417a9cecf509d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160352:5867651649:2026-09-30T03:08:57Z:clawsweeper_auto_repair",
+      "comment_id": "5867651649",
+      "comment_version_key": "5867651649:2026-09-30T03:08:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160352#issuecomment-5867651649",
+      "comment_created_at": "2026-09-28T09:57:16Z",
+      "comment_updated_at": "2026-09-30T03:08:57Z",
+      "comment_body_sha256": "7343948fefd6f817dac348581c5ea3c7965dd3b3f1b01fbfa1cf47bd3cb3d5ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=023c7b2a78a38aee82adf86c03398390b8553818)",
+      "expected_head_sha": "023c7b2a78a38aee82adf86c03398390b8553818",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T03:09:55.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/ultrafast-ui-with-visualizer",
+        "head_sha": "023c7b2a78a38aee82adf86c03398390b8553818",
         "cluster_id": null,
         "job_path": null
       }
