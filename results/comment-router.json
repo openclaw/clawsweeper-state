@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:15:36.404Z",
+  "updated_at": "2026-09-30T04:15:40.079Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159670:5856352687:2026-09-30T00:40:36Z:clawsweeper_needs_human",
-      "comment_id": "5856352687",
-      "comment_version_key": "5856352687:2026-09-30T00:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159670#issuecomment-5856352687",
-      "comment_created_at": "2026-09-27T13:39:11Z",
-      "comment_updated_at": "2026-09-30T00:40:36Z",
-      "comment_body_sha256": "2ece95e7eeae83e6649f8bcc63144684ce53d17f6ef3117e31eb5e70fd317e97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The PR body reports a patched isolated Gateway restart and a real model-list query with auth for 11 Cl...; Review finding: [P1] Clear stored credentials when discovery is unavailable — src/agents/prepared-model-runtime.catalog-access.ts:344-347 - [high] Removed auth may survive catalog... (sha=b11049bcaad69650214322deb30f5cb39acc8d88)",
-      "expected_head_sha": "b11049bcaad69650214322deb30f5cb39acc8d88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T00:41:38.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-availability-partial-refresh-158922",
-        "head_sha": "b11049bcaad69650214322deb30f5cb39acc8d88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161395:5899407637:2026-09-30T00:41:19Z:clawsweeper_needs_human",
       "comment_id": "5899407637",
@@ -32052,6 +32019,53 @@
         "kind": "pull_request",
         "branch": "openclaw/address-all-agent-outage-p0-157325",
         "head_sha": "de89351ceaa5bbc76584bb1e866ae9318576fcb3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161583:5903902867:2026-09-30T04:14:08Z:re_review",
+      "comment_id": "5903902867",
+      "comment_version_key": "5903902867:2026-09-30T04:14:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161583#issuecomment-5903902867",
+      "comment_created_at": "2026-09-30T04:14:08Z",
+      "comment_updated_at": "2026-09-30T04:14:08Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161583,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T04:15:38.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-host-contracts",
+        "head_sha": "6067c6dce10918de843b56ee1f3e9fcd4c97eb89",
         "cluster_id": null,
         "job_path": null
       },
