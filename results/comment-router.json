@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-30T19:25:55.623Z",
+  "updated_at": "2026-09-30T19:21:10.119Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161804:5909953867:2026-09-30T11:08:50Z:re_review",
+      "comment_id": "5909953867",
+      "comment_version_key": "5909953867:2026-09-30T11:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161804#issuecomment-5909953867",
+      "comment_created_at": "2026-09-30T11:08:50Z",
+      "comment_updated_at": "2026-09-30T11:08:50Z",
+      "comment_body_sha256": "3f291ad7102b30f21bef9ced869e23b9c58624ed8aa2093c9deddc22564c6110",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161804,
+      "author": "KrasimirKralev",
+      "author_id": 263465593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — pushed 20e83903: the full status read now drops every non-object value named by a config issue (so a rejected `logging.file` or any other rejected field falls back to its default instead of reaching a formatter), and a non-string `logging.file` on the unvalidated fast path is treated as unset. entry-point regressions added in `status.gather.test.ts`; evidence gains the real cli before/after for `logging.file: 42` and probe-on runs for rejected auth/remote/tls/port values",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T11:14:43.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-status-invalid-config",
+        "head_sha": "20e8390379d90913088025d8bee5018e9b6e5427",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161007:5910052568:2026-09-30T11:15:46Z:re_review",
       "comment_id": "5910052568",
@@ -33499,39 +33546,6 @@
         "kind": "pull_request",
         "branch": "steipete/update-cli-flakes",
         "head_sha": "93d5dd61bf60c880b8f8f8d8fd0892470e2622f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160932:5883311816:2026-09-30T19:24:42Z:clawsweeper_needs_human",
-      "comment_id": "5883311816",
-      "comment_version_key": "5883311816:2026-09-30T19:24:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160932#issuecomment-5883311816",
-      "comment_created_at": "2026-09-29T03:53:48Z",
-      "comment_updated_at": "2026-09-30T19:24:42Z",
-      "comment_body_sha256": "62bc84ec9c3735a0b646cc4b9f7dcb3134c3739f1152496a9c9cf635c490cf94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160932,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c8704d67e8f1c49c85b98115cf37aa19f3a100bb)",
-      "expected_head_sha": "c8704d67e8f1c49c85b98115cf37aa19f3a100bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T19:25:55.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/thread-archive-permissions",
-        "head_sha": "c8704d67e8f1c49c85b98115cf37aa19f3a100bb",
         "cluster_id": null,
         "job_path": null
       }
