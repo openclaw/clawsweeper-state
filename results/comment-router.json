@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T04:15:26.208Z",
+  "updated_at": "2026-09-30T04:15:36.404Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140487:5562647615:2026-09-30T00:38:30Z:clawsweeper_auto_repair",
-      "comment_id": "5562647615",
-      "comment_version_key": "5562647615:2026-09-30T00:38:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140487#issuecomment-5562647615",
-      "comment_created_at": "2026-09-06T22:32:44Z",
-      "comment_updated_at": "2026-09-30T00:38:30Z",
-      "comment_body_sha256": "d52984fdd822a5890a8c9194257a11b1037872150bb5a606f3e8bd4f2a6974cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c0dc13b04db4cdbb285b5577d1ed38c12ac49afa)",
-      "expected_head_sha": "c0dc13b04db4cdbb285b5577d1ed38c12ac49afa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T00:39:35.475Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-memory-isolation",
-        "head_sha": "c0dc13b04db4cdbb285b5577d1ed38c12ac49afa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159670:5856352687:2026-09-30T00:40:36Z:clawsweeper_needs_human",
       "comment_id": "5856352687",
@@ -32055,6 +32022,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157693:5903907159:2026-09-30T04:14:33Z:re_review",
+      "comment_id": "5903907159",
+      "comment_version_key": "5903907159:2026-09-30T04:14:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157693#issuecomment-5903907159",
+      "comment_created_at": "2026-09-30T04:14:33Z",
+      "comment_updated_at": "2026-09-30T04:14:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157693,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T04:15:35.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/address-all-agent-outage-p0-157325",
+        "head_sha": "de89351ceaa5bbc76584bb1e866ae9318576fcb3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
