@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T23:11:56.393Z",
+  "updated_at": "2026-09-30T23:12:27.580Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2626:5915409795:2026-09-30T16:32:42Z:clawsweeper_needs_human",
-      "comment_id": "5915409795",
-      "comment_version_key": "5915409795:2026-09-30T16:32:42Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2626#issuecomment-5915409795",
-      "comment_created_at": "2026-09-30T16:29:17Z",
-      "comment_updated_at": "2026-09-30T16:32:42Z",
-      "comment_body_sha256": "875f7672568b546367630a8cf6c2e6bd5e8a18acbfab73afe02628d12ad0a7f1",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR reports live CLI capture with explicit native mode and successful forks on a smoke deployment,...; Review finding: [P1] Make the default Cloudflare create command select a snapshot — internal/cli/checkpoint.go:235-236 - [P1] Fence the repository-authorized claim through snapsho... (sha=aed8ca39b67ba45f281b95d0272539084284fd55)",
-      "expected_head_sha": "aed8ca39b67ba45f281b95d0272539084284fd55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T16:33:42.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/cloudflare-container-snapshots",
-        "head_sha": "aed8ca39b67ba45f281b95d0272539084284fd55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158051:5830582035:2026-09-30T16:23:28Z:clawsweeper_needs_human",
       "comment_id": "5830582035",
@@ -33761,6 +33728,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162188:5921306427:2026-09-30T23:11:33Z:re_review",
+      "comment_id": "5921306427",
+      "comment_version_key": "5921306427:2026-09-30T23:11:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162188#issuecomment-5921306427",
+      "comment_created_at": "2026-09-30T23:11:33Z",
+      "comment_updated_at": "2026-09-30T23:11:33Z",
+      "comment_body_sha256": "11068c42e2e199b32d367dd60f68d12d12c1d74e49bb99b7cac0cb48bb976ee1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162188,
+      "author": "hannesrudolph",
+      "author_id": 49103247,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T23:12:25.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/accounts-only-2026.9.7",
+        "head_sha": "fe40126aa4a1956fb28a45126fa1a5855c885bde",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
