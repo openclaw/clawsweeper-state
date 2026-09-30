@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-161550"
-mode: "autonomous"
-run_id: "36662652035"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36662652035"
+mode: "plan"
+run_id: "36665410702"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36665410702"
 head_sha: "0f5162431a344474998f10042f3ea0f8a5705e2a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-30T03:08:23.442Z"
-canonical: "https://github.com/openclaw/openclaw/issues/161550"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/161550"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-30T03:43:08.241Z"
+canonical: "#161550"
+canonical_issue: "#161550"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36662652035](https://github.com/openclaw/clawsweeper/actions/runs/36662652035)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36665410702](https://github.com/openclaw/clawsweeper/actions/runs/36665410702)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/161550
+Canonical: #161550
 
 ## Summary
 
-The checked-out code still contains the reported failure path, but this read-only runner could not add the required failing regression or validate a repair. No code or GitHub state was changed. The preflight main SHA is unavailable in the checkout, so the executor must verify that revision before implementing.
+Current main retains the broad job filter described in the open issue. The plan is to add a failing CLI-boundary regression, then restrict timing collection to planned shards. No files or GitHub state were changed. Tests and the historical dry-run remain unrun; this checkout has no node_modules.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The checked-out code still contains the reported failure path, but this read-onl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161550 | fix_needed | planned | canonical | The preflight identifies main as 25afb0c390545b37440d48785758d7f7506403eb, but the local shallow checkout contains de284e78be4f873800d1bd7fa70d671e26f87ce6. Verify the exact preflight main and establish a failing CLI-boundary regression before editing. |
-| #156812 | route_security | planned | security_sensitive | Route this ref to central OpenClaw security handling without changing the merged PR. |
-| cluster:issue-openclaw-openclaw-161550 | build_fix_artifact | blocked |  | The checkout and dependency cache are read-only. Implementation and validation require a writable, dependency-ready executor checkout. |
+| #156812 | route_security | planned | security_sensitive | Route this historical ref to central security handling without affecting the narrow timing bug. |
+| #161550 | fix_needed | planned | canonical | Keep the issue open while the authorized fix is implemented and validated. |
+| issue-openclaw-openclaw-161550 | build_fix_artifact | planned |  | Prepare the implementation path; opening a PR depends on a failing regression and successful validation. |
 
 ## Needs Human
 

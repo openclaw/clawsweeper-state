@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161550",
+  "mode": "plan",
+  "run_id": "36665410702",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36665410702",
+  "head_sha": "0f5162431a344474998f10042f3ea0f8a5705e2a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161550.md",
+  "published_at": "2026-09-30T03:43:08.241Z",
+  "canonical": "#161550",
+  "canonical_issue": "#161550",
+  "canonical_pr": null,
+  "summary": "Current main retains the broad job filter described in the open issue. The plan is to add a failing CLI-boundary regression, then restrict timing collection to planned shards. No files or GitHub state were changed. Tests and the historical dry-run remain unrun; this checkout has no node_modules.",
+  "actions": [
+    {
+      "target": "#156812",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this historical ref to central security handling without affecting the narrow timing bug."
+    },
+    {
+      "target": "#161550",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "155550",
+      "candidate_fix": null,
+      "reason": "Keep the issue open while the authorized fix is implemented and validated."
+    },
+    {
+      "target": "issue-openclaw-openclaw-161550",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161550",
+      "candidate_fix": null,
+      "reason": "Prepare the implementation path; opening a PR depends on a failing regression and successful validation."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
