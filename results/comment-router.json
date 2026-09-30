@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T09:35:02.962Z",
+  "updated_at": "2026-09-30T09:35:11.704Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:680:5904146492:2026-09-30T04:38:21Z:clawsweeper_needs_human",
-      "comment_id": "5904146492",
-      "comment_version_key": "5904146492:2026-09-30T04:38:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/680#issuecomment-5904146492",
-      "comment_created_at": "2026-09-30T04:38:21Z",
-      "comment_updated_at": "2026-09-30T04:38:21Z",
-      "comment_body_sha256": "fad7affbdc3a08ce0c4511dc9625a6e74d28a3f817ce0cc17dcb74aa475cbad5",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 680,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new expiry regressions use mocked Kubernetes clients; they do not yet show the regular worker-to-Compute Agent workflow withholding readiness and activation when a session expires... (sha=60a1d1b0dd4c0eb72e3b07c3c44dfe23889bddcb)",
-      "expected_head_sha": "60a1d1b0dd4c0eb72e3b07c3c44dfe23889bddcb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T04:39:17.261Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "platform/repository-material-expiry-public-0930",
-        "head_sha": "60a1d1b0dd4c0eb72e3b07c3c44dfe23889bddcb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161583:5904146956:2026-09-30T04:38:24Z:re_review",
       "comment_id": "5904146956",
@@ -34293,6 +34260,53 @@
         "kind": "pull_request",
         "branch": "memorytunning-pr-v2",
         "head_sha": "c2dc72d317f9f96d6f18b54330b9d42146cf56bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161777:5908426891:2026-09-30T09:34:19Z:re_review",
+      "comment_id": "5908426891",
+      "comment_version_key": "5908426891:2026-09-30T09:34:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161777#issuecomment-5908426891",
+      "comment_created_at": "2026-09-30T09:34:19Z",
+      "comment_updated_at": "2026-09-30T09:34:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161777,
+      "author": "ArthurNie",
+      "author_id": 264332276,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T09:35:10.258Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feishu-streaming-window",
+        "head_sha": "069b84f617fc40fdd85fbff14b120ae14918f2c0",
         "cluster_id": null,
         "job_path": null
       },
