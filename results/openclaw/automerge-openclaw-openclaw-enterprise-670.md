@@ -1,22 +1,22 @@
 ---
 repo: "openclaw/openclaw-enterprise"
 cluster_id: "automerge-openclaw-openclaw-enterprise-670"
-mode: "plan"
-run_id: "36675756573"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36675756573"
-head_sha: "59bde930ef5b9f4920160232957eabb73318930c"
+mode: "autonomous"
+run_id: "36680211924"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36680211924"
+head_sha: "ce985956ca4f3dd962f87ef2e841fee83a7816cc"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-30T05:59:22.496Z"
+published_at: "2026-09-30T07:05:39.659Z"
 canonical: "#670"
 canonical_issue: null
-canonical_pr: "https://github.com/openclaw/openclaw-enterprise/pull/670"
+canonical_pr: "#670"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-enterprise
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36675756573](https://github.com/openclaw/clawsweeper/actions/runs/36675756573)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36680211924](https://github.com/openclaw/clawsweeper/actions/runs/36680211924)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #670
 
 ## Summary
 
-Repair PR #670 on its existing branch. Limit the edit to the CI guide findings, preserve the dispatcher and its stated proof limits, and leave the PR open for a new exact-head review. This plan makes no GitHub changes.
+Make PR #670 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
@@ -46,7 +46,7 @@ Repair PR #670 on its existing branch. Limit the edit to the CI guide findings, 
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,19 +54,19 @@ Repair PR #670 on its existing branch. Limit the edit to the CI guide findings, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw-enterprise/pull/670 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #670 | merge_canonical | blocked | fix_pr | autofix-only job cannot merge |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #670 | build_fix_artifact | planned | canonical | The original PR remains the canonical, credited path. Its documented review findings have a narrow repair path, while hosted final-effect proof and merge approval remain outside this fix-only job. |
+| #670 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
