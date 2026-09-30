@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T19:59:32.467Z",
+  "updated_at": "2026-09-30T19:59:40.931Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157641:5824375120:2026-09-30T11:36:35Z:clawsweeper_needs_human",
-      "comment_id": "5824375120",
-      "comment_version_key": "5824375120:2026-09-30T11:36:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157641#issuecomment-5824375120",
-      "comment_created_at": "2026-09-25T00:07:44Z",
-      "comment_updated_at": "2026-09-30T11:36:35Z",
-      "comment_body_sha256": "e9c16d4a73ecfcab9ec7b10370312a47dda6a59bba6fb7ae72a1da9b1c7ee912",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=19e5e3ed1bb6b13c17af07b20127c8283b3c2f18)",
-      "expected_head_sha": "19e5e3ed1bb6b13c17af07b20127c8283b3c2f18",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T11:44:21.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-cp866-console-encoding",
-        "head_sha": "19e5e3ed1bb6b13c17af07b20127c8283b3c2f18",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160812:5881033584:2026-09-30T11:43:08Z:clawsweeper_auto_repair",
       "comment_id": "5881033584",
@@ -33657,6 +33624,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104018:5918642038:2026-09-30T19:58:43Z:re_review",
+      "comment_id": "5918642038",
+      "comment_version_key": "5918642038:2026-09-30T19:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104018#issuecomment-5918642038",
+      "comment_created_at": "2026-09-30T19:58:43Z",
+      "comment_updated_at": "2026-09-30T19:58:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104018,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T19:59:38.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/readiness-profiles-upstream",
+        "head_sha": "f177e69a2c02ec27b09a76286db10f4c176ea232",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
