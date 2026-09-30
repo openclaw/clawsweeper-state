@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/openclaw-enterprise",
+  "cluster_id": "issue-openclaw-openclaw-enterprise-694",
+  "mode": "autonomous",
+  "run_id": "36690817325",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36690817325",
+  "head_sha": "eeb0f44df224584ad785a13b795d5e28689a8a0d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-enterprise-694.md",
+  "published_at": "2026-09-30T08:42:09.490Z",
+  "canonical": "https://github.com/openclaw/openclaw-enterprise/issues/694",
+  "canonical_issue": "https://github.com/openclaw/openclaw-enterprise/issues/694",
+  "canonical_pr": null,
+  "summary": "Issue #694 remains valid on main d811df620cc27e8e1ef2c327dc42c1ea8ad65c8f: the launcher supports a node-scoped DNS resolver, but the quickstart does not point users to it. Plan a narrow documentation PR. A proactive DNS check needs a reliable reproduction and detection signal before it can safely block startup.",
+  "actions": [
+    {
+      "target": "#694",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#694",
+      "candidate_fix": null,
+      "reason": "The documented recovery path is absent from the quickstart. A startup preflight based on the reported Docker mechanism is not yet supported by a reliable reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-enterprise-694",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#694",
+      "candidate_fix": null,
+      "reason": "Provide an actionable diagnosis and recovery link for quickstart users."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "external base blocker: validation failed only in base-identical files outside the repair delta: scripts/docs-site/word-count.mjs, scripts/docs-site/build.mjs, scripts/docs-site/vendor/docs-markdown.mjs",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#694",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
