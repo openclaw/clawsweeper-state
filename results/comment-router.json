@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T07:16:33.498Z",
+  "updated_at": "2026-09-30T07:18:18.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151739:5903347932:2026-09-30T03:15:27Z:re_review",
-      "comment_id": "5903347932",
-      "comment_version_key": "5903347932:2026-09-30T03:15:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151739#issuecomment-5903347932",
-      "comment_created_at": "2026-09-30T03:15:27Z",
-      "comment_updated_at": "2026-09-30T03:15:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151739,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T03:16:36.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-json-symlink-chain-20260918",
-        "head_sha": "786730fe85a60fb1698940f0b415feb3c856d8e6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161543:5903124335:2026-09-30T03:15:36Z:clawsweeper_needs_human",
       "comment_id": "5903124335",
@@ -33685,6 +33638,39 @@
         "kind": "pull_request",
         "branch": "fix/local-ai-onboarding-resume",
         "head_sha": "a11db81b8740c6961e14aed91ff60c30542ed3cd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161714:5906184119:2026-09-30T07:17:18Z:clawsweeper_needs_human",
+      "comment_id": "5906184119",
+      "comment_version_key": "5906184119:2026-09-30T07:17:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161714#issuecomment-5906184119",
+      "comment_created_at": "2026-09-30T07:17:18Z",
+      "comment_updated_at": "2026-09-30T07:17:18Z",
+      "comment_body_sha256": "a092803001caa90e3510edb771d3d7a571e3c72bd119c95bdaaedd612a4067d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161714,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head conflicts with fetched current main at the reset-hook assertion; resolution must retain its exactly-once check. (sha=43d227f1c177472f73543e0623b3b26ac330b8de)",
+      "expected_head_sha": "43d227f1c177472f73543e0623b3b26ac330b8de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T07:18:18.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d110-1790749452",
+        "head_sha": "43d227f1c177472f73543e0623b3b26ac330b8de",
         "cluster_id": null,
         "job_path": null
       }
