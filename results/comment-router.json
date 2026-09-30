@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T14:46:50.923Z",
+  "updated_at": "2026-09-30T14:49:38.165Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161693:5905810438:2026-09-30T07:14:16Z:clawsweeper_needs_human",
-      "comment_id": "5905810438",
-      "comment_version_key": "5905810438:2026-09-30T07:14:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161693#issuecomment-5905810438",
-      "comment_created_at": "2026-09-30T06:52:28Z",
-      "comment_updated_at": "2026-09-30T07:14:16Z",
-      "comment_body_sha256": "ddb709af5ee442433e0bfd1c769dafc25ca73472b0b414cf0cf123fe18ed9fe7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161693,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=33551ec880bcf7d77b4749dd977c26f2649a194c)",
-      "expected_head_sha": "33551ec880bcf7d77b4749dd977c26f2649a194c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T07:35:09.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-state-live-wal-native-e2f7",
-        "head_sha": "33551ec880bcf7d77b4749dd977c26f2649a194c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161713:5906107348:2026-09-30T07:26:31Z:clawsweeper_needs_human",
       "comment_id": "5906107348",
@@ -33413,6 +33380,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161897:5913683704:2026-09-30T14:48:31Z:re_review",
+      "comment_id": "5913683704",
+      "comment_version_key": "5913683704:2026-09-30T14:48:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161897#issuecomment-5913683704",
+      "comment_created_at": "2026-09-30T14:48:31Z",
+      "comment_updated_at": "2026-09-30T14:48:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161897,
+      "author": "boeingchoco",
+      "author_id": 194511351,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T14:49:36.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/context-engine-skip-idle-quarantine-clear",
+        "head_sha": "97a39734b1e2b5c13e3d6fae74d17d452021df5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
