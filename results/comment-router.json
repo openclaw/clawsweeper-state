@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T01:41:15.227Z",
+  "updated_at": "2026-09-30T01:41:31.687Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:112:5800806952:2026-09-29T18:42:42Z:clawsweeper_needs_human",
-      "comment_id": "5800806952",
-      "comment_version_key": "5800806952:2026-09-29T18:42:42Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/112#issuecomment-5800806952",
-      "comment_created_at": "2026-09-23T18:44:50Z",
-      "comment_updated_at": "2026-09-29T18:42:42Z",
-      "comment_body_sha256": "d4593d92157a8b2178e3d2e2d0637e48b3db5a3936b91856ff4ce61ba3f8ce14",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Align the auth schema generator with Better Auth 1.7.5 (P2)** - The runtime dependency moves to 1.7.5, but db:generate-auth still executes auth 1.6.30. The documented regeneration path can therefore produce a sc...; Review finding: [P2] Align the auth schema generator with Better Auth 1.7.5 — apps/api/package.json:22 - [P3] Record the auth compatibility upgrade in Unreleased — apps/api/packag... (sha=7ef0278b7b4ec9c1414e9d1cbcc30078fdb894ed)",
-      "expected_head_sha": "7ef0278b7b4ec9c1414e9d1cbcc30078fdb894ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T18:43:45.941Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/production-8fb831b037",
-        "head_sha": "7ef0278b7b4ec9c1414e9d1cbcc30078fdb894ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161334:5896430976:2026-09-29T18:42:48Z:clawsweeper_needs_human",
       "comment_id": "5896430976",
@@ -33203,6 +33170,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130175:5902381989:2026-09-30T01:40:34Z:re_review",
+      "comment_id": "5902381989",
+      "comment_version_key": "5902381989:2026-09-30T01:40:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130175#issuecomment-5902381989",
+      "comment_created_at": "2026-09-30T01:40:34Z",
+      "comment_updated_at": "2026-09-30T01:40:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130175,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T01:41:29.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live-profile-prepared-thinking",
+        "head_sha": "bef2e01fa32f6cd2979bdc397b1b5841ffca99aa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
