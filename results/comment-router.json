@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T13:46:21.962Z",
+  "updated_at": "2026-09-30T13:46:38.382Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161363:5905978336:2026-09-30T07:03:31Z:re_review",
-      "comment_id": "5905978336",
-      "comment_version_key": "5905978336:2026-09-30T07:03:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161363#issuecomment-5905978336",
-      "comment_created_at": "2026-09-30T07:03:31Z",
-      "comment_updated_at": "2026-09-30T07:03:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161363,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T07:06:20.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-summary-prose-false-positive",
-        "head_sha": "8c12861cb6d09ba83daa520ac25fa939881c50b4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117144:5148867933:2026-09-01T13:12:07Z:clawsweeper_auto_repair",
       "comment_id": "5148867933",
@@ -33400,6 +33353,39 @@
         "kind": "pull_request",
         "branch": "perf/reasoning-progress-normalization-reuse",
         "head_sha": "d66fd026f8ea6c9576d694fb99f8999483592e84",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-30T13:43:37Z:clawsweeper_needs_human",
+      "comment_id": "5567489931",
+      "comment_version_key": "5567489931:2026-09-30T13:43:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
+      "comment_created_at": "2026-09-07T08:12:30Z",
+      "comment_updated_at": "2026-09-30T13:43:37Z",
+      "comment_body_sha256": "89521cc232b524f677f9bead7d8bbea17a428a42141f0490c810a8269bc1465b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports an earlier Docker runtime observation and a schema-17 release-to-candidate cycle, but supplies no current-head trace...; Review finding: [P2] Preserve distinct skill names in audit records — src/skills/runtime-skill-selection.ts:36-40 - [P2] Move companion-table setup to database admission — src/aud... (sha=6c89e860f848d3aa875c6ad68232a1becb26a105)",
+      "expected_head_sha": "6c89e860f848d3aa875c6ad68232a1becb26a105",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T13:46:38.382Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "6c89e860f848d3aa875c6ad68232a1becb26a105",
         "cluster_id": null,
         "job_path": null
       }
