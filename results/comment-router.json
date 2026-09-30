@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T21:17:57.927Z",
+  "updated_at": "2026-09-30T21:17:59.545Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151218:5722368758:2026-09-30T14:04:33Z:clawsweeper_needs_human",
-      "comment_id": "5722368758",
-      "comment_version_key": "5722368758:2026-09-30T14:04:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151218#issuecomment-5722368758",
-      "comment_created_at": "2026-09-17T23:03:04Z",
-      "comment_updated_at": "2026-09-30T14:04:33Z",
-      "comment_body_sha256": "8944f60ab17c7ca3411a9e6ca7d7dda877f9e5b88c3e50da83d73183388b45a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151218,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the pinned installed Gateway and hosted Jev trace demonstrates allowed recall, skip, fallback, and pub...; Review finding: [P1] Recheck live consent at final provider dispatch — extensions/active-memory/decision-escalation.ts:155-159 - [medium] Withdrawal can precede hosted evidence tr... (sha=a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1)",
-      "expected_head_sha": "a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T14:11:29.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/active-memory-escalation-provider-51",
-        "head_sha": "a9fc279a322c0cb04b7f6ed6db4e5b195d4e43e1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161747:5906986736:2026-09-30T14:07:49Z:clawsweeper_auto_repair",
       "comment_id": "5906986736",
@@ -33535,6 +33502,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162056:5919890704:2026-09-30T21:16:48Z:re_review",
+      "comment_id": "5919890704",
+      "comment_version_key": "5919890704:2026-09-30T21:16:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162056#issuecomment-5919890704",
+      "comment_created_at": "2026-09-30T21:16:48Z",
+      "comment_updated_at": "2026-09-30T21:16:48Z",
+      "comment_body_sha256": "333466057164fa0cbfafe9a6602ed9d98d96fb12d865c721efed360bad962b2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162056,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T21:17:58.372Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.8.34-retained-deleted-agent-db",
+        "head_sha": "3de5d53f3b64b886a07362fb964d5d5f0ce10f5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
