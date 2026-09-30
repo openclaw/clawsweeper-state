@@ -1,0 +1,111 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161953",
+  "mode": "autonomous",
+  "run_id": "36738759109",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36738759109",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161953.md",
+  "published_at": "2026-09-30T16:26:20.923Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161953",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161953",
+  "canonical_pr": null,
+  "summary": "The Windows path-spelling mismatch remains on main b10b50b8. A narrow fix is warranted, but this read-only Linux checkout has no installed dependencies, so implementation, the required failing regression, and Windows Gateway validation could not be completed here. No GitHub or source changes were made.",
+  "actions": [
+    {
+      "target": "#161953",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161953",
+      "candidate_fix": null,
+      "reason": "Existing durable session creation can reject its current publication owner on Windows."
+    },
+    {
+      "target": "#152992",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161953",
+      "candidate_fix": null,
+      "reason": "Separate update recovery work remains in its own thread."
+    },
+    {
+      "target": "#161654",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#161953",
+      "candidate_fix": null,
+      "reason": "Worker request cloning has a different entry point and cause."
+    },
+    {
+      "target": "#147409",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#157923",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#158401",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Useful merged foundation, but not a complete fix for this issue."
+    },
+    {
+      "target": "#161872",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a separate worker failure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161953",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161953",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with dependencies and isolated Windows Gateway validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
