@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-30T05:38:08.493Z",
+  "updated_at": "2026-09-30T05:38:09.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157934:5902692914:2026-09-30T02:10:39Z:re_review",
-      "comment_id": "5902692914",
-      "comment_version_key": "5902692914:2026-09-30T02:10:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157934#issuecomment-5902692914",
-      "comment_created_at": "2026-09-30T02:10:39Z",
-      "comment_updated_at": "2026-09-30T02:10:39Z",
-      "comment_body_sha256": "0793e1df1e8a7744d834a892afc8de64af3d1da67bf1a6f8ac25f297f25ae36d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157934,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T02:12:11.869Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/archive-worker-db-identity",
-        "head_sha": "f8fd4409702594eb0936f9331219966a75bc030f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161352:5897275415:2026-09-30T02:11:35Z:clawsweeper_needs_human",
       "comment_id": "5897275415",
@@ -32298,6 +32251,39 @@
         "kind": "pull_request",
         "branch": "fix/w3-ui",
         "head_sha": "4f29517668e9ab720cbcbbffc433793f07cd5bf4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:772:5900561470:2026-09-30T05:37:23Z:clawsweeper_needs_human",
+      "comment_id": "5900561470",
+      "comment_version_key": "5900561470:2026-09-30T05:37:23Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/772#issuecomment-5900561470",
+      "comment_created_at": "2026-09-29T22:50:00Z",
+      "comment_updated_at": "2026-09-30T05:37:23Z",
+      "comment_body_sha256": "2b4b827c95a41083e0dbeff067da8b12cdba59e4fb04b90c885fe5143a44cafb",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 772,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The current head has no paired result against the author's 5% performance limit. The preceding revision exceeded that limit on guarded sync and async fallback workloads. (sha=9d1a45da77a644efb70fc479e2e529f4128dd00c)",
+      "expected_head_sha": "9d1a45da77a644efb70fc479e2e529f4128dd00c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T05:38:09.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/atomic-io-owner-954",
+        "head_sha": "9d1a45da77a644efb70fc479e2e529f4128dd00c",
         "cluster_id": null,
         "job_path": null
       }
