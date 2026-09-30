@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T06:18:11.037Z",
+  "updated_at": "2026-09-30T06:19:45.495Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161519:5902855830:2026-09-30T02:26:54Z:clawsweeper_needs_human",
-      "comment_id": "5902855830",
-      "comment_version_key": "5902855830:2026-09-30T02:26:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161519#issuecomment-5902855830",
-      "comment_created_at": "2026-09-30T02:26:54Z",
-      "comment_updated_at": "2026-09-30T02:26:54Z",
-      "comment_body_sha256": "edc3fc7a0b327b0b41f19da34194bce7a5166d4840657f7e069e6b6d119bd7fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when the wording is final. (sha=d11e4b451ea430b8f92f33810d17af5be4004dd6)",
-      "expected_head_sha": "d11e4b451ea430b8f92f33810d17af5be4004dd6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T02:27:48.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/cron-authoring-judgment",
-        "head_sha": "d11e4b451ea430b8f92f33810d17af5be4004dd6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161450:5902856211:2026-09-30T02:26:57Z:re_review",
       "comment_id": "5902856211",
@@ -33198,6 +33165,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3853:5905349064:2026-09-30T06:18:45Z:clawsweeper_needs_human",
+      "comment_id": "5905349064",
+      "comment_version_key": "5905349064:2026-09-30T06:18:45Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3853#issuecomment-5905349064",
+      "comment_created_at": "2026-09-30T06:18:45Z",
+      "comment_updated_at": "2026-09-30T06:18:45Z",
+      "comment_body_sha256": "8ec2742dec93a1dd22a2d68e0e259815e7c1fc96425eb099a0fa90245d620e76",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude retained backups from skill discovery (P1)** - A failed cleanup now leaves .demo.backup-* beside the installed skill. findSkillFolders accepts that directory's SKILL.md and gives it a distinct slug, so c...; Review finding: [P1] Exclude retained backups from skill discovery — packages/clawhub/src/cli/commands/skills.ts:1860 - [P3] Record the new rollback boundary in specs — docs/cli.m... (sha=f01e56b8e3ba71fae8c779af4237c8c0d72d9d42)",
+      "expected_head_sha": "f01e56b8e3ba71fae8c779af4237c8c0d72d9d42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-30T06:19:45.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "work/oss-s6-clawhub-install",
+        "head_sha": "f01e56b8e3ba71fae8c779af4237c8c0d72d9d42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
