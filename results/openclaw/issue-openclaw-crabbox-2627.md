@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2627"
 mode: "autonomous"
-run_id: "36754585295"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36754585295"
-head_sha: "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b"
+run_id: "36765907363"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36765907363"
+head_sha: "ad9ac7f287fdf88e9de0de0ef7913d0c7b0c5e7a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-30T18:09:34.690Z"
+published_at: "2026-09-30T19:41:31.569Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2627"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2627"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36754585295](https://github.com/openclaw/clawsweeper/actions/runs/36754585295)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36765907363](https://github.com/openclaw/clawsweeper/actions/runs/36765907363)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2627
 
 ## Summary
 
-The cancellation gap remains on current main. A narrow fix and regression plan is ready, but the read-only checkout prevented implementation and validation.
+The cancellation gap remains at main 4979ad55d68aa9afa7babd01bfa7ff638e5cd04d. A narrow fix is viable, but this checkout is read only, so no branch, regression test, or validated PR could be produced.
 
 ## Impact
 
@@ -54,7 +54,7 @@ The cancellation gap remains on current main. A narrow fix and regression plan i
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (go test ./internal/cli -run TestTypeRFBText|TestRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
+| execute_fix | blocked |  |  | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
 | issue_implementation_status_comment | updated | #2627 |  |  |
 
 ## Apply Actions
@@ -67,8 +67,8 @@ The cancellation gap remains on current main. A narrow fix and regression plan i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2627 | fix_needed | planned | canonical | A pressed key needs a bounded best-effort release when cancellation interrupts the delay. |
-| cluster:issue-openclaw-crabbox-2627 | build_fix_artifact | blocked |  | Implementation requires a writable checkout; the executor should establish the failing regression, apply the narrow fix, and validate before opening the PR. |
+| #2627 | fix_needed | planned | canonical | Implement and validate the reported cancellation cleanup. |
+| cluster:issue-openclaw-crabbox-2627 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout. |
 
 ## Needs Human
 
