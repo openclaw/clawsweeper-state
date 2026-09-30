@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-161866",
+  "mode": "autonomous",
+  "run_id": "36724659981",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36724659981",
+  "head_sha": "c73bf3840ef24af16b578f6fe3cfc927b5e81c3b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-161866.md",
+  "published_at": "2026-09-30T13:55:50.262Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/161866",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/161866",
+  "canonical_pr": null,
+  "summary": "Issue #161866 remains reproducible from the current main source: the updater inherits stdin for a captured pnpm install. Plan a narrow fix on the designated ClawSweeper branch. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#144713",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context."
+    },
+    {
+      "target": "#161865",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "A separate activation and runtime-retention failure; keep its issue open."
+    },
+    {
+      "target": "#161866",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "The reported terminal mismatch remains in current main, and no open hydrated PR owns this fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-161866",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#161866",
+      "candidate_fix": null,
+      "reason": "A narrow package-install stdin fix is appropriate for the authorized fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#161866",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
