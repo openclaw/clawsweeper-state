@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T11:02:35.174Z",
+  "updated_at": "2026-09-30T11:04:52.191Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161621:5904496787:2026-09-30T05:47:07Z:clawsweeper_needs_human",
-      "comment_id": "5904496787",
-      "comment_version_key": "5904496787:2026-09-30T05:47:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161621#issuecomment-5904496787",
-      "comment_created_at": "2026-09-30T05:08:27Z",
-      "comment_updated_at": "2026-09-30T05:47:07Z",
-      "comment_body_sha256": "ce28b762678dafc444fead8563a37fd8f496810b1c3914c1f3bea245c3fc2b73",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161621,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After a transient teardown error, new desktop observations return the recorded failure until a lifecycle stop retries cleanup. This removes automatic recovery for existing desktop use... (sha=3630ed629dc448ba9d8514169231e9761360d0bb)",
-      "expected_head_sha": "3630ed629dc448ba9d8514169231e9761360d0bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T05:52:58.884Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-desktop-session-cleanup-storm-20260919",
-        "head_sha": "3630ed629dc448ba9d8514169231e9761360d0bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161628:5904563588:2026-09-30T05:49:23Z:clawsweeper_needs_human",
       "comment_id": "5904563588",
@@ -33774,6 +33741,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161703:5909871120:2026-09-30T11:02:51Z:re_review",
+      "comment_id": "5909871120",
+      "comment_version_key": "5909871120:2026-09-30T11:02:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161703#issuecomment-5909871120",
+      "comment_created_at": "2026-09-30T11:02:51Z",
+      "comment_updated_at": "2026-09-30T11:02:51Z",
+      "comment_body_sha256": "5392455afed2d20d8be47b3975b819a67dcff0f89c056606c103790df59e5cc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161703,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T11:04:50.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-scheduler-writers-20260929",
+        "head_sha": "40827c04e151b0a8c09cf86bab8fc5db46813e8f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
