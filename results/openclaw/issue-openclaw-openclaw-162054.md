@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-162054"
 mode: "plan"
-run_id: "36773582004"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36773582004"
+run_id: "36776348305"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36776348305"
 head_sha: "ad9ac7f287fdf88e9de0de0ef7913d0c7b0c5e7a"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-30T20:58:44.510Z"
+published_at: "2026-09-30T21:01:29.744Z"
 canonical: "#162054"
 canonical_issue: "#162054"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36773582004](https://github.com/openclaw/clawsweeper/actions/runs/36773582004)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36776348305](https://github.com/openclaw/clawsweeper/actions/runs/36776348305)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #162054
 
 ## Summary
 
-The issue is already closed. A maintainer tested authenticated hooks against an isolated Gateway with invalid config reloads and could not reproduce the reported crash. Current main still contains the conditional reporter path, but the supplied evidence does not establish a reachable failure through the supported runtime flow. The job requires reproduction before a fix, so no fix PR is planned.
+No fix artifact is recommended. The issue is already closed after a maintainer tested authenticated hooks on an isolated Gateway and could not reproduce the reported crash through a supported runtime path. Current main still pins the active config and skips invalid reloads.
 
 ## Impact
 
@@ -66,7 +66,7 @@ The issue is already closed. A maintainer tested authenticated hooks against an 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #162054 | keep_closed | skipped |  | The issue is already closed, and the job requires a current-main reproduction before implementation. |
+| #162054 | keep_closed | skipped |  | The job requires reproduction on current main before a fix. The available live test and current source do not establish the required failure through a supported Gateway path; the source issue is already closed. |
 
 ## Needs Human
 
