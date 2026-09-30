@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2627"
 mode: "autonomous"
-run_id: "36768428805"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36768428805"
+run_id: "36765907363"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36765907363"
 head_sha: "ad9ac7f287fdf88e9de0de0ef7913d0c7b0c5e7a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-30T20:01:23.200Z"
+published_at: "2026-09-30T19:41:31.569Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2627"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2627"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 1
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36768428805](https://github.com/openclaw/clawsweeper/actions/runs/36768428805)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36765907363](https://github.com/openclaw/clawsweeper/actions/runs/36765907363)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2627
 
 ## Summary
 
-The cancellation bug remains on main at 4979ad55d68aa9afa7babd01bfa7ff638e5cd04d. A narrow fix is viable, but the read-only checkout prevented the required regression test, patch, validation, and PR branch.
+The cancellation gap remains at main 4979ad55d68aa9afa7babd01bfa7ff638e5cd04d. A narrow fix is viable, but this checkout is read only, so no branch, regression test, or validated PR could be produced.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 1 |
@@ -67,9 +67,8 @@ The cancellation bug remains on main at 4979ad55d68aa9afa7babd01bfa7ff638e5cd04d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2627 | fix_needed | planned | canonical | A focused regression and bounded best-effort key release are needed. |
-| cluster:issue-openclaw-crabbox-2627 | build_fix_artifact | planned |  | The artifact specifies work for a writable executor; no code or tests were changed here. |
-| cluster:issue-openclaw-crabbox-2627 | open_fix_pr | blocked |  | Implementation requires a writable checkout and the declared Go toolchain before a PR can be opened. |
+| #2627 | fix_needed | planned | canonical | Implement and validate the reported cancellation cleanup. |
+| cluster:issue-openclaw-crabbox-2627 | build_fix_artifact | blocked |  | Implementation and validation require a writable checkout. |
 
 ## Needs Human
 
