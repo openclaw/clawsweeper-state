@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-30T02:19:45.670Z",
+  "updated_at": "2026-09-30T02:19:52.191Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161313:5895893254:2026-09-29T19:42:26Z:clawsweeper_needs_human",
-      "comment_id": "5895893254",
-      "comment_version_key": "5895893254:2026-09-29T19:42:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161313#issuecomment-5895893254",
-      "comment_created_at": "2026-09-29T18:08:54Z",
-      "comment_updated_at": "2026-09-29T19:42:26Z",
-      "comment_body_sha256": "a527acd7bace3b4b34e7d6cb1b3e6ff456d5e99c5c3205df344d41d098994859",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161313,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1c95a213249c3ea22fddd103c301d3c9d39ac9c4)",
-      "expected_head_sha": "1c95a213249c3ea22fddd103c301d3c9d39ac9c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-29T19:45:56.993Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tcr/land-d103-1790700257",
-        "head_sha": "1c95a213249c3ea22fddd103c301d3c9d39ac9c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161314:5895903335:2026-09-29T19:43:01Z:clawsweeper_auto_repair",
       "comment_id": "5895903335",
@@ -33315,6 +33282,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161475:5902779490:2026-09-30T02:18:54Z:re_review",
+      "comment_id": "5902779490",
+      "comment_version_key": "5902779490:2026-09-30T02:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161475#issuecomment-5902779490",
+      "comment_created_at": "2026-09-30T02:18:54Z",
+      "comment_updated_at": "2026-09-30T02:18:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161475,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-30T02:19:51.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-non-git-worktree-selection",
+        "head_sha": "f460d919e77993180ca7f74fa89202bc5ae81e57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
