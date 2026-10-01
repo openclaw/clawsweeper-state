@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T06:08:47.560Z",
+  "updated_at": "2026-10-01T06:08:52.771Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159697:5856801076:2026-10-01T01:46:24Z:clawsweeper_needs_human",
-      "comment_id": "5856801076",
-      "comment_version_key": "5856801076:2026-10-01T01:46:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159697#issuecomment-5856801076",
-      "comment_created_at": "2026-09-27T14:38:50Z",
-      "comment_updated_at": "2026-10-01T01:46:24Z",
-      "comment_body_sha256": "3ded38a653f1798119ad9539f983918b795d5584aabb003fa5d27aa0712f4e6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159697,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the shipped voice-confirmation default (P1)** - The patch removes the final spoken check, so a high-impact voice action allowed by ordinary tool policy can run without the confirmation documented for v2...; Review finding: [P1] Preserve the shipped voice-confirmation default — docs/nodes/talk/realtime-sessions.md:131-133 - [medium] High-impact voice gate removed by default — docs/nod... (sha=98e8ba9615e577b32db473fd65d019511833b83b)",
-      "expected_head_sha": "98e8ba9615e577b32db473fd65d019511833b83b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T01:55:22.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/scoped-app-repeat-permission-pr3",
-        "head_sha": "98e8ba9615e577b32db473fd65d019511833b83b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160442:5869907298:2026-10-01T01:26:44Z:clawsweeper_needs_human",
       "comment_id": "5869907298",
@@ -33658,6 +33625,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161871:5922275888:2026-10-01T00:32:17Z:re_review",
+      "comment_id": "5922275888",
+      "comment_version_key": "5922275888:2026-10-01T00:32:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161871#issuecomment-5922275888",
+      "comment_created_at": "2026-10-01T00:32:17Z",
+      "comment_updated_at": "2026-10-01T00:32:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161871,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:08:51.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-store-agent-db-drain",
+        "head_sha": "04823541036b0793242ca1409676ab206e6c8f8d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
