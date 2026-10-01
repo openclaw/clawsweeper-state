@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T09:54:59.586Z",
+  "updated_at": "2026-10-01T09:55:05.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159516:5864005625:2026-09-28T05:24:06Z:re_review",
-      "comment_id": "5864005625",
-      "comment_version_key": "5864005625:2026-09-28T05:24:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159516#issuecomment-5864005625",
-      "comment_created_at": "2026-09-28T05:24:06Z",
-      "comment_updated_at": "2026-09-28T05:24:06Z",
-      "comment_body_sha256": "0f58ce2851fcebf1a71e5b087d4cf0bdc11db53d0948cb48f5ae0b0c6244d8ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159516,
-      "author": "stevenlee-oai",
-      "author_id": 213687449,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:04:59.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/plugin-approval-requester-ux",
-        "head_sha": "a8c92c9cf365bfeaf457222dc9d39281ca791883",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159516:5854095322:2026-10-01T06:03:45Z:clawsweeper_needs_human",
       "comment_id": "5854095322",
@@ -33860,6 +33813,39 @@
         "kind": "pull_request",
         "branch": "codex/service-discovery-path",
         "head_sha": "8d84a5a057986ed43a440dd3ef0de4fc1fbbae8c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160680:5877520554:2026-10-01T09:53:55Z:clawsweeper_needs_human",
+      "comment_id": "5877520554",
+      "comment_version_key": "5877520554:2026-10-01T09:53:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160680#issuecomment-5877520554",
+      "comment_created_at": "2026-09-28T20:04:10Z",
+      "comment_updated_at": "2026-10-01T09:53:55Z",
+      "comment_body_sha256": "a0147214cbb38f5c8a7ccfacfe9ed543c990be051ccc5c1e7c218a476b922452",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fresh installed Scheduled Task behavior and published-updater-to-candidate compatibility remain unqualified; the census probe does not establish successful upgrade completion, Gateway... (sha=bcca1644e33a0a968dbb60540ebd120920648aa6)",
+      "expected_head_sha": "bcca1644e33a0a968dbb60540ebd120920648aa6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T09:55:05.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-native-argv-boundary",
+        "head_sha": "bcca1644e33a0a968dbb60540ebd120920648aa6",
         "cluster_id": null,
         "job_path": null
       }
