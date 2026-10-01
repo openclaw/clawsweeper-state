@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1546"
 mode: "autonomous"
-run_id: "36639931230"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36639931230"
-head_sha: "7829cdce71310b549c119c670e7bd69e04f7e242"
+run_id: "36800124362"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36800124362"
+head_sha: "8c7a382f5bca9a09564ce326f3c4892dff7ef4a6"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-29T22:32:43.957Z"
-canonical: "#1546"
-canonical_issue: "#1546"
+published_at: "2026-10-01T01:17:18.007Z"
+canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
+canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1546"
 canonical_pr: null
 actions_total: 4
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36639931230](https://github.com/openclaw/clawsweeper/actions/runs/36639931230)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36800124362](https://github.com/openclaw/clawsweeper/actions/runs/36800124362)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #1546
+Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1546
 
 ## Summary
 
-Issue #1546 remains viable on the supplied main revision. The Setup window sets an initial DPI scaled size but has no resize minimum. This is a plan only: no files were changed, validation was run, or PR was created.
+No implementation PR is needed. At the preflight main SHA 3a58bf34902fb9b6e9f925826414ac0d6a7bf6dd, the Setup window already has a DPI-aware native minimum, contract coverage, and Windows UI tests for minimum-size layout. The checkout is clean. Build, tests, and current-head visible Windows proof were not run: this worker is on a read-only Linux host without an interactive Windows desktop.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Issue #1546 remains viable on the supplied main revision. The Setup window sets 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #1546 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Issue #1546 remains viable on the supplied main revision. The Setup window sets 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1546 | fix_needed | planned | canonical | Implement and validate the Setup window resize constraint. |
-| #1145 | keep_independent | planned | independent | It needs its own current-main chat reproduction. |
-| #1292 | keep_related | planned | related | It shares a layout theme but has distinct affected surfaces and remaining work. |
-| #293 | keep_closed | skipped | related | Historical context only. |
+| #1546 | keep_canonical | planned | canonical | The requested narrow fix is already present on current main. Keep the source issue open under this job's no-close guardrail; do not create a duplicate PR. |
+| #1145 | keep_independent | planned | independent | Setup window minimum sizing does not address chat text wrapping. |
+| #1292 | keep_related | planned | related | It shares a display-scaling theme but has distinct affected surfaces and remaining work. |
+| #293 | keep_closed | skipped | related | Historical minimum-size work for a different window; no action is needed. |
 
 ## Needs Human
 
