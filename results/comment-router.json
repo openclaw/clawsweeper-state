@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:25:25.830Z",
+  "updated_at": "2026-10-01T03:25:49.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156941:5920456400:2026-09-30T21:59:20Z:re_review",
-      "comment_id": "5920456400",
-      "comment_version_key": "5920456400:2026-09-30T21:59:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5920456400",
-      "comment_created_at": "2026-09-30T21:59:20Z",
-      "comment_updated_at": "2026-09-30T21:59:20Z",
-      "comment_body_sha256": "bedb42ed1c2d9c92122e936012078dbf49a19516b61db171fc908c697355c918",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156941,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T22:07:37.794Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
-        "head_sha": "17487454baa68c8901b1c9c84393135e93748a55",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156941:5806704051:2026-09-30T22:06:44Z:clawsweeper_needs_human",
       "comment_id": "5806704051",
@@ -33533,6 +33486,39 @@
         "kind": "pull_request",
         "branch": "refactor/test-audit-litellm-surface-20261001",
         "head_sha": "ad86897754c3153751d2136d07e82d653ecffc92",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162314:5923708335:2026-10-01T03:24:45Z:clawsweeper_needs_human",
+      "comment_id": "5923708335",
+      "comment_version_key": "5923708335:2026-10-01T03:24:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162314#issuecomment-5923708335",
+      "comment_created_at": "2026-10-01T02:46:31Z",
+      "comment_updated_at": "2026-10-01T03:24:45Z",
+      "comment_body_sha256": "6d98ab9975718f6a214473bd865319431af11c19bbc1b23814292fbcdbdf2ca9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162314,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The worker cutover changes existing CLI add and update paths beyond the browser feature gate; focused legacy-read checks do not yet establish full add, interrupted recovery, and nativ... (sha=fb8255630228c394714b7306947b77e6ac56a79b)",
+      "expected_head_sha": "fb8255630228c394714b7306947b77e6ac56a79b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T03:25:49.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "giodl/claws-minimal-control-ui",
+        "head_sha": "fb8255630228c394714b7306947b77e6ac56a79b",
         "cluster_id": null,
         "job_path": null
       }
