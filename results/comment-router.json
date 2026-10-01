@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:35:03.586Z",
+  "updated_at": "2026-10-01T07:36:00.048Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159147:5924178555:2026-10-01T03:32:42Z:re_review",
-      "comment_id": "5924178555",
-      "comment_version_key": "5924178555:2026-10-01T03:32:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159147#issuecomment-5924178555",
-      "comment_created_at": "2026-10-01T03:32:42Z",
-      "comment_updated_at": "2026-10-01T03:32:42Z",
-      "comment_body_sha256": "79e1f04ec76dbdbd7c3fbde6dfa079a474975e07ba20bdc99e786d4e898c3783",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159147,
-      "author": "mnowrot",
-      "author_id": 135707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T03:37:26.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-command-runtime-reuse",
-        "head_sha": "e7f9fd600bc807c30e0402d94e65a35c5f136c9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162304:5924210499:2026-10-01T03:36:02Z:re_review",
       "comment_id": "5924210499",
@@ -33804,6 +33757,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162481:5926906742:2026-10-01T07:35:09Z:freeform_assist",
+      "comment_id": "5926906742",
+      "comment_version_key": "5926906742:2026-10-01T07:35:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162481#issuecomment-5926906742",
+      "comment_created_at": "2026-10-01T07:35:09Z",
+      "comment_updated_at": "2026-10-01T07:35:09Z",
+      "comment_body_sha256": "895a15e0d310694dfc58ac1fbe6d388b9878daa8fd6afe7eed5c7cad65f47cad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162481,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "maintainer decision (ayaan, repository maintainer): (1) caller cancellation: accepted as is. the turn is released at the tool boundary (wraptoolwithabortsignal / racewithabortsignal). what remains is a detached, bounded timer (at most 10 min) on a run that was already accepted. no wait-only signal will be threaded through the in-process mutation-completion path. (2) management-grant turns receiving the outcome of a run they were allowed to start: accepted. it is read under the same cron.runs visibility rules, it is not a meaningful widening, and without it those turns would schedule verify jobs again. please re-review.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T07:35:57.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/automations-run-wait",
+        "head_sha": "5c9cffbf67fd955052a01b161018ff52023ba5f7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
