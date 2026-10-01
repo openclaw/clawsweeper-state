@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T23:42:49.958Z",
+  "updated_at": "2026-10-01T23:43:41.312Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149048:5680300677:2026-10-01T19:25:00Z:clawsweeper_auto_repair",
-      "comment_id": "5680300677",
-      "comment_version_key": "5680300677:2026-10-01T19:25:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149048#issuecomment-5680300677",
-      "comment_created_at": "2026-09-15T12:39:31Z",
-      "comment_updated_at": "2026-10-01T19:25:00Z",
-      "comment_body_sha256": "b1563c2b3ff88c30b5dc06e5369a607c1f04623c1322fd4116f6cde587c6e2d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149048,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=147aa5b937cda8c4e1c4abc4e6b8f3c6301239a2)",
-      "expected_head_sha": "147aa5b937cda8c4e1c4abc4e6b8f3c6301239a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T19:26:28.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "nmxdesign/improve-notification-quiet-hours",
-        "head_sha": "147aa5b937cda8c4e1c4abc4e6b8f3c6301239a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162902:5937476382:2026-10-01T19:25:34Z:clawsweeper_needs_human",
       "comment_id": "5937476382",
@@ -32952,6 +32919,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156667:5942814759:2026-10-01T23:42:43Z:re_review",
+      "comment_id": "5942814759",
+      "comment_version_key": "5942814759:2026-10-01T23:42:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156667#issuecomment-5942814759",
+      "comment_created_at": "2026-10-01T23:42:43Z",
+      "comment_updated_at": "2026-10-01T23:42:43Z",
+      "comment_body_sha256": "f543da5f9ba11b643d063d0965115f96c5ea349b2c1fc0fe200830215d1f4963",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156667,
+      "author": "Cyb3rb1ade",
+      "author_id": 84099452,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T23:43:39.782Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-dreaming-cron-sidecar-off",
+        "head_sha": "3c5e4ac331743be754846a791633bc6be322658d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
