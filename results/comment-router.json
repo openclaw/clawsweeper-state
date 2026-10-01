@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:33:55.193Z",
+  "updated_at": "2026-10-01T08:34:09.786Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162128:5925002241:2026-10-01T04:53:55Z:re_review",
-      "comment_id": "5925002241",
-      "comment_version_key": "5925002241:2026-10-01T04:53:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162128#issuecomment-5925002241",
-      "comment_created_at": "2026-10-01T04:53:55Z",
-      "comment_updated_at": "2026-10-01T04:53:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162128,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T04:54:47.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-auto-exit-cleanup",
-        "head_sha": "d3f1374d3590180ba65cca18838721d82b2cacba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162016:5916570416:2026-10-01T04:57:57Z:clawsweeper_auto_repair",
       "comment_id": "5916570416",
@@ -33609,6 +33562,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-session-search",
         "head_sha": "aa689aee3ba2c49b6fe2351f1c405d1c99da0d83",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162227:5922313805:2026-10-01T08:33:18Z:clawsweeper_needs_human",
+      "comment_id": "5922313805",
+      "comment_version_key": "5922313805:2026-10-01T08:33:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162227#issuecomment-5922313805",
+      "comment_created_at": "2026-10-01T00:35:47Z",
+      "comment_updated_at": "2026-10-01T08:33:18Z",
+      "comment_body_sha256": "4f348c125aa9d5514098f305897a86c31e4462fc30a6964b4ef8095e99c8f820",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162227,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing peer and isolated-cron workflows that rely on automatic target-channel announcements will stop producing those posts after upgrade; transition proof or explicit acceptance of... (sha=e9dcaf9e220114d4a21e99f960ba595010e0c419)",
+      "expected_head_sha": "e9dcaf9e220114d4a21e99f960ba595010e0c419",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T08:34:09.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/announce-skip-agent-logic-c83574",
+        "head_sha": "e9dcaf9e220114d4a21e99f960ba595010e0c419",
         "cluster_id": null,
         "job_path": null
       }
