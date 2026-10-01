@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T06:30:36.293Z",
+  "updated_at": "2026-10-01T06:30:51.025Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160442:5904552141:2026-09-30T05:13:11Z:re_review",
-      "comment_id": "5904552141",
-      "comment_version_key": "5904552141:2026-09-30T05:13:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160442#issuecomment-5904552141",
-      "comment_created_at": "2026-09-30T05:13:11Z",
-      "comment_updated_at": "2026-09-30T05:13:11Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160442,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T02:09:54.999Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-facetime:53:5922995808:2026-10-01T02:00:09Z:clawsweeper_needs_human",
       "comment_id": "5922995808",
@@ -33826,6 +33799,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162474:5926007672:2026-10-01T06:29:48Z:re_review",
+      "comment_id": "5926007672",
+      "comment_version_key": "5926007672:2026-10-01T06:29:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162474#issuecomment-5926007672",
+      "comment_created_at": "2026-10-01T06:29:48Z",
+      "comment_updated_at": "2026-10-01T06:29:48Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162474,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:30:49.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-no-delivery-spawn-only-summary",
+        "head_sha": "5c4d468586cc3a408a918b2757f29622b89c6c29",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
