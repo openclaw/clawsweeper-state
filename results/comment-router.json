@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-10-01T15:46:30.474Z",
+  "updated_at": "2026-10-01T15:40:47.261Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161135:5888498656:2026-10-01T10:31:02Z:clawsweeper_needs_human",
+      "comment_id": "5888498656",
+      "comment_version_key": "5888498656:2026-10-01T10:31:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161135#issuecomment-5888498656",
+      "comment_created_at": "2026-09-29T10:36:39Z",
+      "comment_updated_at": "2026-10-01T10:31:02Z",
+      "comment_body_sha256": "437a4cde7d6d83bd6df51b2f2796264f5643f94041303ac237720d1ea85db61a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the reported merge conflicts while preserving bounded heartbeat diagnostics, and refresh validation for inputs changed by the resolution. (sha=b47d948d8637dff8a90b69417391026a6d8a6ca3)",
+      "expected_head_sha": "b47d948d8637dff8a90b69417391026a6d8a6ca3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:31:57.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/private-session-alias",
+        "head_sha": "b47d948d8637dff8a90b69417391026a6d8a6ca3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162609:5929553963:2026-10-01T10:30:39Z:re_review",
+      "comment_id": "5929553963",
+      "comment_version_key": "5929553963:2026-10-01T10:30:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162609#issuecomment-5929553963",
+      "comment_created_at": "2026-10-01T10:30:39Z",
+      "comment_updated_at": "2026-10-01T10:30:39Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162609,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T10:32:03.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/narrow-transcript-reader-imports",
+        "head_sha": "464621d2dada54f0481cbf4c33edc005a8a542a6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162391:5924717518:2026-10-01T04:24:58Z:re_review",
       "comment_id": "5924717518",
@@ -34220,86 +34300,6 @@
         "kind": "pull_request",
         "branch": "tcr/land-d133-1790865117",
         "head_sha": "0104a20f67207605db73d03bb35aeeffffacf84c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1538:5934833314:2026-10-01T15:38:02Z:re_review",
-      "comment_id": "5934833314",
-      "comment_version_key": "5934833314:2026-10-01T15:38:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1538#issuecomment-5934833314",
-      "comment_created_at": "2026-10-01T15:38:02Z",
-      "comment_updated_at": "2026-10-01T15:38:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1538,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T15:46:16.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-change-model-scoped",
-        "head_sha": "39ece57eb99b5c6668b2d288886a1d6d6788c867",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1538:5881143722:2026-10-01T15:44:58Z:clawsweeper_needs_human",
-      "comment_id": "5881143722",
-      "comment_version_key": "5881143722:2026-10-01T15:44:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1538#issuecomment-5881143722",
-      "comment_created_at": "2026-09-29T00:13:47Z",
-      "comment_updated_at": "2026-10-01T15:44:58Z",
-      "comment_body_sha256": "d6d06382c1093ce3c4e3afd82e2ee46ff0de5d2412b077cd072af67e5e3026fc",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1538,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Land https://github.com/openclaw/openclaw-windows-node/pull/1232 (fix: resume Local AI setup with a new model) before merging this PR. (sha=39ece57eb99b5c6668b2d288886a1d6d6788c867)",
-      "expected_head_sha": "39ece57eb99b5c6668b2d288886a1d6d6788c867",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T15:46:30.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-change-model-scoped",
-        "head_sha": "39ece57eb99b5c6668b2d288886a1d6d6788c867",
         "cluster_id": null,
         "job_path": null
       }
