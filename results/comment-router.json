@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:17:28.410Z",
+  "updated_at": "2026-10-01T10:17:47.838Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160729:5925927620:2026-10-01T06:22:52Z:re_review",
-      "comment_id": "5925927620",
-      "comment_version_key": "5925927620:2026-10-01T06:22:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160729#issuecomment-5925927620",
-      "comment_created_at": "2026-10-01T06:22:52Z",
-      "comment_updated_at": "2026-10-01T06:22:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160729,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:23:56.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-125873",
-        "head_sha": "48cc01d6d93418db766faa95c4b90eb6f005d5a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151599:5727055763:2026-10-01T06:23:01Z:clawsweeper_auto_repair",
       "comment_id": "5727055763",
@@ -33862,6 +33815,39 @@
         "kind": "pull_request",
         "branch": "deslop/l268-dup-core-frameworks2-20260930",
         "head_sha": "f731da80ee54de5f6fe005c00666657fcf7f09b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160538:5874005246:2026-10-01T10:16:35Z:clawsweeper_needs_human",
+      "comment_id": "5874005246",
+      "comment_version_key": "5874005246:2026-10-01T10:16:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160538#issuecomment-5874005246",
+      "comment_created_at": "2026-09-28T16:14:49Z",
+      "comment_updated_at": "2026-10-01T10:16:35Z",
+      "comment_body_sha256": "4b6bc87356b583a7b87382493d8987d8e92105af8f12de2d7d4e7e22485fd020",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the catalog now gates body reads and cached matches on the native reader binding, but the disk-backed... (sha=7f52122dbd255fb2aba19c76d82e746af9cadf9e)",
+      "expected_head_sha": "7f52122dbd255fb2aba19c76d82e746af9cadf9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:17:47.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/installed-skill-body-search",
+        "head_sha": "7f52122dbd255fb2aba19c76d82e746af9cadf9e",
         "cluster_id": null,
         "job_path": null
       }
