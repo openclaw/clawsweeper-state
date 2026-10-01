@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T19:46:03.607Z",
+  "updated_at": "2026-10-01T19:46:19.282Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162721:5932359700:2026-10-01T13:22:58Z:re_review",
-      "comment_id": "5932359700",
-      "comment_version_key": "5932359700:2026-10-01T13:22:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162721#issuecomment-5932359700",
-      "comment_created_at": "2026-10-01T13:22:58Z",
-      "comment_updated_at": "2026-10-01T13:22:58Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162721,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T13:27:01.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/crabbox-bootstrap-retry-proof-20261001",
-        "head_sha": "448cf89d0868a71ffafb474d597a4f1d7cc83c73",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160836:5932367165:2026-10-01T13:23:23Z:re_review",
       "comment_id": "5932367165",
@@ -33844,6 +33797,39 @@
         "kind": "pull_request",
         "branch": "steipete/bun-cli-launcher",
         "head_sha": "b71f3d5e5c265a12712e395ffdb1cc3b18e67c21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-atif:16:5922385927:2026-10-01T19:44:56Z:clawsweeper_auto_repair",
+      "comment_id": "5922385927",
+      "comment_version_key": "5922385927:2026-10-01T19:44:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-atif/pull/16#issuecomment-5922385927",
+      "comment_created_at": "2026-10-01T00:42:22Z",
+      "comment_updated_at": "2026-10-01T19:44:56Z",
+      "comment_body_sha256": "b63cbda11b8b7c3581d8b404936d8ff9e446d16b3bbfa6edfcc9c9e574472be7",
+      "repo": "openclaw/openclaw-atif",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94)",
+      "expected_head_sha": "39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-01T19:46:19.282Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/staging-root-realpath",
+        "head_sha": "39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94",
         "cluster_id": null,
         "job_path": null
       }
