@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162908",
+  "mode": "autonomous",
+  "run_id": "36907151457",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36907151457",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162908.md",
+  "published_at": "2026-10-01T19:15:09.060Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162908",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162908",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the teardown ordering defect in the checked-out main. Implementation and failing-regression proof are blocked by the read-only sandbox and absent dependencies. A narrow fix artifact is ready for the executor; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#162908",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#162908",
+      "candidate_fix": null,
+      "reason": "The source-supported repair remains narrow, but implementation requires a writable executor that first demonstrates the failing regression on refreshed main. This is an execution blocker, not an unresolved maintainer decision."
+    },
+    {
+      "target": "#162907",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this distinct Talk transcript bug open and outside the terminal-write teardown patch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162908",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#162908",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; the writable executor must reproduce, implement, validate, and review before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
