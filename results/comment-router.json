@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:16:20.132Z",
+  "updated_at": "2026-10-01T21:16:21.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146651:5935036268:2026-10-01T15:47:27Z:re_review",
-      "comment_id": "5935036268",
-      "comment_version_key": "5935036268:2026-10-01T15:47:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146651#issuecomment-5935036268",
-      "comment_created_at": "2026-10-01T15:47:27Z",
-      "comment_updated_at": "2026-10-01T15:47:27Z",
-      "comment_body_sha256": "9711fdcd9975d6332932ed346d4a42aa310f83f599be61d07379cf94de32fa48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146651,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T15:48:44.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-discord-acp-dispatch-owner-146365",
-        "head_sha": "30105889e735426199dbf3c9fb34d18db74a95e7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:823:5934777866:2026-10-01T15:51:10Z:clawsweeper_needs_human",
       "comment_id": "5934777866",
@@ -33172,6 +33125,39 @@
         "kind": "pull_request",
         "branch": "feat/memory-host-audience",
         "head_sha": "2538b39be11759fe9ca1dc50e534a6ba897b3630",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162177:5920717279:2026-10-01T21:15:26Z:clawsweeper_needs_human",
+      "comment_id": "5920717279",
+      "comment_version_key": "5920717279:2026-10-01T21:15:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162177#issuecomment-5920717279",
+      "comment_created_at": "2026-09-30T22:19:22Z",
+      "comment_updated_at": "2026-10-01T21:15:26Z",
+      "comment_body_sha256": "b3f4cc2394190b0aa64fea94868f92752e101cd97f577466e58b9c2bca999290",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162177,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - SDK/security owners have not accepted the expanded persistence and delegated-authority contract, including the source-compatibility implications of optional timing fields and a union-... (sha=4ff568e950926b6e43533f148a512e97890b5d00)",
+      "expected_head_sha": "4ff568e950926b6e43533f148a512e97890b5d00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:16:21.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/memory-provider-flush",
+        "head_sha": "4ff568e950926b6e43533f148a512e97890b5d00",
         "cluster_id": null,
         "job_path": null
       }
