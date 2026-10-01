@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T04:23:53.161Z",
+  "updated_at": "2026-10-01T04:24:37.400Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162177:5920717279:2026-09-30T22:19:22Z:clawsweeper_needs_human",
-      "comment_id": "5920717279",
-      "comment_version_key": "5920717279:2026-09-30T22:19:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162177#issuecomment-5920717279",
-      "comment_created_at": "2026-09-30T22:19:22Z",
-      "comment_updated_at": "2026-09-30T22:19:22Z",
-      "comment_body_sha256": "4c25ad376b3cb54787a5675fb7c1ffd58a98acf7ce71c83f6f4a34d9e6794760",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162177,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed auto-reply owner dispatches a detached flush with a delegated audience and selected provider tools,...; Review finding: [medium] Unproven delegated-audience storage boundary — src/auto-reply/reply/memory-flush-prepare.ts:149 (sha=35223a21d6cd460302e001bc1663fc4f0f3aad25)",
-      "expected_head_sha": "35223a21d6cd460302e001bc1663fc4f0f3aad25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T23:08:11.945Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-provider-flush",
-        "head_sha": "35223a21d6cd460302e001bc1663fc4f0f3aad25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162178:5920720560:2026-09-30T22:19:39Z:clawsweeper_needs_human",
       "comment_id": "5920720560",
@@ -33442,6 +33409,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162275:5924706077:2026-10-01T04:23:50Z:freeform_assist",
+      "comment_id": "5924706077",
+      "comment_version_key": "5924706077:2026-10-01T04:23:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162275#issuecomment-5924706077",
+      "comment_created_at": "2026-10-01T04:23:50Z",
+      "comment_updated_at": "2026-10-01T04:23:50Z",
+      "comment_body_sha256": "877d6d535754c88f1faee0e7ebd864e8243e4e6af5409c8e2c3c72bc45a33b25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162275,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nplease review exact head `620930a687df3fad6d0c48709accc7b2dc47b915` after the current-main handoff-owner rebase. focused owner tests, wrapper-closure checks, assertion-safety, and fresh p1 autoreview pass.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T04:24:35.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-public-setup-migrations",
+        "head_sha": "620930a687df3fad6d0c48709accc7b2dc47b915",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
