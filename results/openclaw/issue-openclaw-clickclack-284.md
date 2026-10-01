@@ -2,16 +2,16 @@
 repo: "openclaw/clickclack"
 cluster_id: "issue-openclaw-clickclack-284"
 mode: "autonomous"
-run_id: "36911426840"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36911426840"
+run_id: "36914480604"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36914480604"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-01T19:08:26.902Z"
+published_at: "2026-10-01T19:32:35.617Z"
 canonical: "https://github.com/openclaw/clickclack/issues/284"
 canonical_issue: "https://github.com/openclaw/clickclack/issues/284"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/clickclack
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36911426840](https://github.com/openclaw/clawsweeper/actions/runs/36911426840)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36914480604](https://github.com/openclaw/clawsweeper/actions/runs/36914480604)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/clickclack/issues/284
 
 ## Summary
 
-Source inspection supports a narrow sidebar grid-sizing repair on preflight main 5781ea2209c0a08b2d92b573699cd7285bf29e40. Implementation and browser validation are blocked by the read-only filesystem; pnpm --version fails with EROFS. No files or GitHub state were changed. A scoped fix artifact is ready for the executor.
+Current preflight main retains the reported sidebar sizing defect. A narrow repair artifact is ready, but implementation and browser validation are blocked by the read-only filesystem and absent dependencies. No code or GitHub mutations occurred.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Source inspection supports a narrow sidebar grid-sizing repair on preflight main
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #284 | fix_needed | planned | canonical | Keep #284 as the canonical report and implement the narrow sizing repair after establishing a failing browser regression. Closure and merge are prohibited by this job. |
-| cluster:issue-openclaw-clickclack-284 | build_fix_artifact | planned |  | The non-mutating artifact can proceed. Applying edits, establishing red/green browser proof, and preparing the PR branch require a writable executor environment. |
+| #284 | fix_needed | planned | canonical | The maintainer-defined CSS repair remains viable and requires no product or security-boundary decision. |
+| cluster:issue-openclaw-clickclack-284 | build_fix_artifact | planned |  | The artifact can be implemented and validated by an executor with writable checkout access. |
+| cluster:issue-openclaw-clickclack-284 | open_fix_pr | blocked |  | PR creation is blocked until a writable executor establishes the failing baseline, implements the narrow repair, and passes validation. |
 
 ## Needs Human
 

@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/clickclack",
+  "cluster_id": "issue-openclaw-clickclack-284",
+  "mode": "autonomous",
+  "run_id": "36914480604",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36914480604",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-clickclack-284.md",
+  "published_at": "2026-10-01T19:32:35.617Z",
+  "canonical": "https://github.com/openclaw/clickclack/issues/284",
+  "canonical_issue": "https://github.com/openclaw/clickclack/issues/284",
+  "canonical_pr": null,
+  "summary": "Current preflight main retains the reported sidebar sizing defect. A narrow repair artifact is ready, but implementation and browser validation are blocked by the read-only filesystem and absent dependencies. No code or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#284",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#284",
+      "candidate_fix": null,
+      "reason": "The maintainer-defined CSS repair remains viable and requires no product or security-boundary decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-clickclack-284",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#284",
+      "candidate_fix": null,
+      "reason": "The artifact can be implemented and validated by an executor with writable checkout access."
+    },
+    {
+      "target": "cluster:issue-openclaw-clickclack-284",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#284",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked until a writable executor establishes the failing baseline, implements the narrow repair, and passes validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
