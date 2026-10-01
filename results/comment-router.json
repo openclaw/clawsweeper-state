@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:42:29.757Z",
+  "updated_at": "2026-10-01T03:43:05.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155950:5920701132:2026-09-30T22:18:01Z:re_review",
-      "comment_id": "5920701132",
-      "comment_version_key": "5920701132:2026-09-30T22:18:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155950#issuecomment-5920701132",
-      "comment_created_at": "2026-09-30T22:18:01Z",
-      "comment_updated_at": "2026-09-30T22:18:01Z",
-      "comment_body_sha256": "dc9b8ad25e3301e3d5dfc19084679f4cc74fbea5caae7a7cd8b01361cebbf06d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155950,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:07:04.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/tts-tool-profile",
-        "head_sha": "dd972e11e20943c7f9d088be82986bd9004a9e9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157441:5920701678:2026-09-30T22:18:04Z:re_review",
       "comment_id": "5920701678",
@@ -33383,6 +33336,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-macos-skeleton-loader-overlap-with-window-controls",
         "head_sha": "bf34e33c3e0baef8fbc4cdb247718f13470140de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3881:5923125709:2026-10-01T03:42:02Z:clawsweeper_auto_repair",
+      "comment_id": "5923125709",
+      "comment_version_key": "5923125709:2026-10-01T03:42:02Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3881#issuecomment-5923125709",
+      "comment_created_at": "2026-10-01T01:51:59Z",
+      "comment_updated_at": "2026-10-01T03:42:02Z",
+      "comment_body_sha256": "8f07b2ad4187d2e8f4b3d0cebfc18aed34fe95bc26829d73a5e4f7ab80249b50",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad781daa521e42ba1cbb4b57a7eec09f4db33165)",
+      "expected_head_sha": "ad781daa521e42ba1cbb4b57a7eec09f4db33165",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T03:43:05.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-723-managed-mcp-collection",
+        "head_sha": "ad781daa521e42ba1cbb4b57a7eec09f4db33165",
         "cluster_id": null,
         "job_path": null
       }
