@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T13:08:35.459Z",
+  "updated_at": "2026-10-01T13:08:50.441Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158682:5843687801:2026-10-01T09:14:46Z:clawsweeper_needs_human",
-      "comment_id": "5843687801",
-      "comment_version_key": "5843687801:2026-10-01T09:14:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158682#issuecomment-5843687801",
-      "comment_created_at": "2026-09-26T05:56:00Z",
-      "comment_updated_at": "2026-10-01T09:14:46Z",
-      "comment_body_sha256": "8e696339f75612e2ede90c2815b0d075a264e0191784b378cec3499d0bea747b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158682,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the installed dependency link in place while packing (P2)** - This renames the installed link into scratch before replacing it with a copied directory. SIGKILL or another forced exit during packing bypasses...; Review finding: [P2] Keep the installed dependency link in place while packing — scripts/lib/package-bundled-links.mts:73-76 - [P2] Apply publication exclusions before materializi... (sha=f8167b82a8b8739d1189beffdad1ceb9bb003341)",
-      "expected_head_sha": "f8167b82a8b8739d1189beffdad1ceb9bb003341",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T09:15:50.391Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-runtime-only-package",
-        "head_sha": "f8167b82a8b8739d1189beffdad1ceb9bb003341",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158705:5844091743:2026-10-01T09:15:31Z:clawsweeper_auto_repair",
       "comment_id": "5844091743",
@@ -33814,6 +33781,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162711:5932070341:2026-10-01T13:05:16Z:re_review",
+      "comment_id": "5932070341",
+      "comment_version_key": "5932070341:2026-10-01T13:05:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162711#issuecomment-5932070341",
+      "comment_created_at": "2026-10-01T13:05:16Z",
+      "comment_updated_at": "2026-10-01T13:05:16Z",
+      "comment_body_sha256": "5c31f85041597c76761b66a693df84d6d29f655f1d7b32c26486a975cf06fffd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162711,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T13:08:49.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-v2-regressions",
+        "head_sha": "39cb1339f8a0a7180c91843eedfb5a08f3da5a77",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
