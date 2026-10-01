@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:47:20.512Z",
+  "updated_at": "2026-10-01T03:47:51.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160599:5920704613:2026-09-30T22:18:18Z:re_review",
-      "comment_id": "5920704613",
-      "comment_version_key": "5920704613:2026-09-30T22:18:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160599#issuecomment-5920704613",
-      "comment_created_at": "2026-09-30T22:18:18Z",
-      "comment_updated_at": "2026-09-30T22:18:18Z",
-      "comment_body_sha256": "dc9b8ad25e3301e3d5dfc19084679f4cc74fbea5caae7a7cd8b01361cebbf06d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160599,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:07:04.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/fix-secrets-recipe-links",
-        "head_sha": "e4aa6575aa5835b38c57940279725c29350f4eec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155300:5921164603:2026-09-30T22:58:37Z:re_review",
       "comment_id": "5921164603",
@@ -33271,6 +33224,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-runtime-propagation",
         "head_sha": "dd3a14deb4e3f19f032fc1499b827926b6ce6754",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162251:5922850828:2026-10-01T03:46:25Z:clawsweeper_needs_human",
+      "comment_id": "5922850828",
+      "comment_version_key": "5922850828:2026-10-01T03:46:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162251#issuecomment-5922850828",
+      "comment_created_at": "2026-10-01T01:26:26Z",
+      "comment_updated_at": "2026-10-01T03:46:25Z",
+      "comment_body_sha256": "3eb06723702e42d85ec04c3b1579919ac9d6dee11539d634a73684e02d2595ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162251,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Kotlin models now depend on Gradle-generated source registration, but successful clean Android app compilation has not yet been established by the available evidence. (sha=778a477df3cbc4a6aa197cab909172bfac4f09bd)",
+      "expected_head_sha": "778a477df3cbc4a6aa197cab909172bfac4f09bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T03:47:51.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l253-gen-native-protocol-20260930",
+        "head_sha": "778a477df3cbc4a6aa197cab909172bfac4f09bd",
         "cluster_id": null,
         "job_path": null
       }
