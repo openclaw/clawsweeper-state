@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:59:11.529Z",
+  "updated_at": "2026-10-01T01:59:18.935Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162056:5918518173:2026-09-30T19:50:26Z:re_review",
-      "comment_id": "5918518173",
-      "comment_version_key": "5918518173:2026-09-30T19:50:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162056#issuecomment-5918518173",
-      "comment_created_at": "2026-09-30T19:50:26Z",
-      "comment_updated_at": "2026-09-30T19:50:26Z",
-      "comment_body_sha256": "0868a6ac765c90dc2ce212d49bb98be3c72bd2bc00579fe11067ce36dd607d2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162056,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head d8c465a8d02. both accepted findings are fixed: authority is checked before prerequisite/schema/index writes and again before analyze/media/final writes; the notice now gives an available manual recovery procedure. production sqlite proof is 179/179, including active v18 upgrade and retained v16/v18 files byte-for-byte unchanged with registry ownership preserved",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T20:02:47.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.34-retained-deleted-agent-db",
-        "head_sha": "d8c465a8d028226bb1a5cb4fb141e9f5c2ab46a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161344:5918533113:2026-09-30T19:51:26Z:re_review",
       "comment_id": "5918533113",
@@ -33321,6 +33274,39 @@
         "kind": "pull_request",
         "branch": "jesse/endor-plugin-scan-pipeline",
         "head_sha": "bcecd578192327f37f466a8b302deb8a27e7d42f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4143:5915882158:2026-10-01T01:58:32Z:clawsweeper_needs_human",
+      "comment_id": "5915882158",
+      "comment_version_key": "5915882158:2026-10-01T01:58:32Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4143#issuecomment-5915882158",
+      "comment_created_at": "2026-09-30T16:59:45Z",
+      "comment_updated_at": "2026-10-01T01:58:32Z",
+      "comment_body_sha256": "81cbc1f781aa692b1216729ec66b962e8e6889b80bd85834910e41a4f26f1bda",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing npm Codex launcher with a working but unrecognized payload layout would now be skipped. The macOS trace covers the current published layout and tests cover synthetic legac... (sha=53a366fbf296f8caffe8de2bdcbd551c3aa85bde)",
+      "expected_head_sha": "53a366fbf296f8caffe8de2bdcbd551c3aa85bde",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:59:18.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cli-discovery",
+        "head_sha": "53a366fbf296f8caffe8de2bdcbd551c3aa85bde",
         "cluster_id": null,
         "job_path": null
       }
