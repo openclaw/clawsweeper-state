@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:22:51.327Z",
+  "updated_at": "2026-10-01T02:23:00.288Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162065:5919251699:2026-09-30T20:33:40Z:re_review",
-      "comment_id": "5919251699",
-      "comment_version_key": "5919251699:2026-09-30T20:33:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5919251699",
-      "comment_created_at": "2026-09-30T20:33:40Z",
-      "comment_updated_at": "2026-09-30T20:33:40Z",
-      "comment_body_sha256": "ec829270faf641e6abd737334a41729107340f84d3083556a3aa968f5721cfbb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162065,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 7ae840df7c4. the compact-large failure was pr-caused: doctor-health.test.ts fully mocked the receipt module and hid the new production merger. the fixture now imports the real module and overrides only the write side effect. the test-type graph and exact lint/format/diff gates pass; 71/73 full-file cases pass locally, with the only two failures being pre-existing host service-inspection cases that did not fail in ci",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T20:37:33.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
-        "head_sha": "7ae840df7c4353a98cbc03283c2afc5a85e68dbb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161952:5914606091:2026-09-30T20:33:46Z:clawsweeper_needs_human",
       "comment_id": "5914606091",
@@ -32425,39 +32378,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160453:5870224902:2026-10-01T02:19:30Z:clawsweeper_auto_repair",
-      "comment_id": "5870224902",
-      "comment_version_key": "5870224902:2026-10-01T02:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160453#issuecomment-5870224902",
-      "comment_created_at": "2026-09-28T12:52:25Z",
-      "comment_updated_at": "2026-10-01T02:19:30Z",
-      "comment_body_sha256": "459599f0a577c753aeef2cda3759870d97e008687e64eed6b5d89c5731654368",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160453,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7)",
-      "expected_head_sha": "51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T02:22:25.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/add-emoji-reactions-to-all-chat-messages",
-        "head_sha": "51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160675:5877089407:2026-10-01T01:59:42Z:clawsweeper_needs_human",
       "comment_id": "5877089407",
       "comment_version_key": "5877089407:2026-10-01T01:59:42Z",
@@ -33331,6 +33251,86 @@
         "kind": "pull_request",
         "branch": "openclaw/pr-154390-native-worker-runtime",
         "head_sha": "95bf55657ef4da2a73f14918d1d8d55f938a1954",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160453:5874147981:2026-09-28T16:23:27Z:re_review",
+      "comment_id": "5874147981",
+      "comment_version_key": "5874147981:2026-09-28T16:23:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160453#issuecomment-5874147981",
+      "comment_created_at": "2026-09-28T16:23:27Z",
+      "comment_updated_at": "2026-09-28T16:23:27Z",
+      "comment_body_sha256": "69511c0b1cb42186ff7b73c842f9a08bb6b3b950835178be4ba85968942d8057",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160453,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T02:22:58.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/add-emoji-reactions-to-all-chat-messages",
+        "head_sha": "51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160453:5870224902:2026-10-01T02:19:30Z:clawsweeper_auto_repair",
+      "comment_id": "5870224902",
+      "comment_version_key": "5870224902:2026-10-01T02:19:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160453#issuecomment-5870224902",
+      "comment_created_at": "2026-09-28T12:52:25Z",
+      "comment_updated_at": "2026-10-01T02:19:30Z",
+      "comment_body_sha256": "459599f0a577c753aeef2cda3759870d97e008687e64eed6b5d89c5731654368",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7)",
+      "expected_head_sha": "51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T02:23:00.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/add-emoji-reactions-to-all-chat-messages",
+        "head_sha": "51bfced765ceabfddf71bd4ea1e1de17a6b5c8d7",
         "cluster_id": null,
         "job_path": null
       }
