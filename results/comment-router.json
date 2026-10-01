@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T16:43:42.474Z",
+  "updated_at": "2026-10-01T16:44:00.237Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145002:5802187934:2026-09-23T20:13:29Z:re_review",
-      "comment_id": "5802187934",
-      "comment_version_key": "5802187934:2026-09-23T20:13:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145002#issuecomment-5802187934",
-      "comment_created_at": "2026-09-23T20:13:29Z",
-      "comment_updated_at": "2026-09-23T20:13:29Z",
-      "comment_body_sha256": "4a14d265c54e9ddaff522d36c25960e761e7962f49c699801b78abdcc091c8c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145002,
-      "author": "FtlC-ian",
-      "author_id": 40432656,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T11:14:26.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "investigate/system-agent-runtime-fallback-main",
-        "head_sha": "87fa7e4c1bbd06cd599d8c6a9584942562952f98",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145002:5636829656:2026-10-01T11:13:23Z:clawsweeper_needs_human",
       "comment_id": "5636829656",
@@ -34010,6 +33963,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-blocked-outcome-followup",
         "head_sha": "8b77715ba4f1b5514b94872f161f540620067b6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4143:5915882158:2026-10-01T16:43:06Z:clawsweeper_needs_human",
+      "comment_id": "5915882158",
+      "comment_version_key": "5915882158:2026-10-01T16:43:06Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4143#issuecomment-5915882158",
+      "comment_created_at": "2026-09-30T16:59:45Z",
+      "comment_updated_at": "2026-10-01T16:43:06Z",
+      "comment_body_sha256": "c53221f6d1d18d3ccfe01a2ce9d8aed1b654706929a1c80fc7fbe00aeda0529a",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - An otherwise working npm Codex launcher with an unrecognized layout will be skipped and can become unavailable when no trusted bundled fallback exists; supported-upgrade evidence or e... (sha=17c454f9f30335fd12d3613f8a4bf949b99158fd)",
+      "expected_head_sha": "17c454f9f30335fd12d3613f8a4bf949b99158fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T16:44:00.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cli-discovery",
+        "head_sha": "17c454f9f30335fd12d3613f8a4bf949b99158fd",
         "cluster_id": null,
         "job_path": null
       }
