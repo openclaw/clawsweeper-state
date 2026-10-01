@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:03:23.907Z",
+  "updated_at": "2026-10-01T14:03:49.000Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5772163959:2026-09-22T06:30:47Z:re_review",
-      "comment_id": "5772163959",
-      "comment_version_key": "5772163959:2026-09-22T06:30:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5772163959",
-      "comment_created_at": "2026-09-22T06:30:47Z",
-      "comment_updated_at": "2026-09-22T06:30:47Z",
-      "comment_body_sha256": "11e0a883f8e1ecf21c542b9d6aff3907e2eef480576250fe18243d4c5912655f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T09:46:27.417Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5773503555:2026-09-22T08:33:37Z:re_review",
       "comment_id": "5773503555",
@@ -34146,6 +34119,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162741:5933049528:2026-10-01T14:02:09Z:clawsweeper_needs_human",
+      "comment_id": "5933049528",
+      "comment_version_key": "5933049528:2026-10-01T14:02:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162741#issuecomment-5933049528",
+      "comment_created_at": "2026-10-01T14:02:09Z",
+      "comment_updated_at": "2026-10-01T14:02:09Z",
+      "comment_body_sha256": "006142744fc7f5cad9cd0152479a01d3fa670fc1812cf855b06311df7de5df25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162741,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed card handler is exercised only with mocked lookup, message dispatch, and send functions. Ad... (sha=fbf336cb2869ddaddf7bc82f70ef8991688ac917)",
+      "expected_head_sha": "fbf336cb2869ddaddf7bc82f70ef8991688ac917",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T14:03:49.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-card-chat-type-fail-closed",
+        "head_sha": "fbf336cb2869ddaddf7bc82f70ef8991688ac917",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
