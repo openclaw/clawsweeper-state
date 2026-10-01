@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:43:26.848Z",
+  "updated_at": "2026-10-01T01:44:10.421Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162056:5918101692:2026-09-30T19:22:36Z:re_review",
-      "comment_id": "5918101692",
-      "comment_version_key": "5918101692:2026-09-30T19:22:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162056#issuecomment-5918101692",
-      "comment_created_at": "2026-09-30T19:22:36Z",
-      "comment_updated_at": "2026-09-30T19:22:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162056,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T19:31:37.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.34-retained-deleted-agent-db",
-        "head_sha": "d3d04bc75e940ed549bfe218f84a20b4ed1447f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5918115730:2026-09-30T19:23:30Z:re_review",
       "comment_id": "5918115730",
@@ -33420,6 +33373,39 @@
         "kind": "pull_request",
         "branch": "fix/tailscale-startup-recovery",
         "head_sha": "1e8259ab7dfc168d2853730ed8dabb0913f992f1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kitchen-sink:110:5923032755:2026-10-01T01:43:18Z:clawsweeper_needs_human",
+      "comment_id": "5923032755",
+      "comment_version_key": "5923032755:2026-10-01T01:43:18Z",
+      "comment_url": "https://github.com/openclaw/kitchen-sink/pull/110#issuecomment-5923032755",
+      "comment_created_at": "2026-10-01T01:43:18Z",
+      "comment_updated_at": "2026-10-01T01:43:18Z",
+      "comment_body_sha256": "e0c81efc2ca03ca0c3d363d21dc13b32d64df657d74c1bf2b7e3c339755b7312",
+      "repo": "openclaw/kitchen-sink",
+      "issue_number": 110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=75b668a17d88b53920dd0020d4c2fc5c4439788d)",
+      "expected_head_sha": "75b668a17d88b53920dd0020d4c2fc5c4439788d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:44:10.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redci-r7-kitchen-sink",
+        "head_sha": "75b668a17d88b53920dd0020d4c2fc5c4439788d",
         "cluster_id": null,
         "job_path": null
       }
