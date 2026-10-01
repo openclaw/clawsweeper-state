@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:41:49.404Z",
+  "updated_at": "2026-10-01T03:42:01.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159614:5920131736:2026-09-30T21:34:37Z:re_review",
-      "comment_id": "5920131736",
-      "comment_version_key": "5920131736:2026-09-30T21:34:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159614#issuecomment-5920131736",
-      "comment_created_at": "2026-09-30T21:34:37Z",
-      "comment_updated_at": "2026-09-30T21:34:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159614,
-      "author": "carlosjarenom",
-      "author_id": 199355241,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:07:04.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-135133-gateway-lock-error-path",
-        "head_sha": "0a31528c08dc698dd37d981f6991dff5f6fd574f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158844:5920201452:2026-09-30T21:39:55Z:re_review",
       "comment_id": "5920201452",
@@ -33425,6 +33378,39 @@
         "kind": "pull_request",
         "branch": "fix/sandbox-skill-sync-readonly-modes",
         "head_sha": "acf124260401fd6b0e77312057f92893e827e223",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1730:5924261000:2026-10-01T03:41:05Z:clawsweeper_needs_human",
+      "comment_id": "5924261000",
+      "comment_version_key": "5924261000:2026-10-01T03:41:05Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1730#issuecomment-5924261000",
+      "comment_created_at": "2026-10-01T03:41:05Z",
+      "comment_updated_at": "2026-10-01T03:41:05Z",
+      "comment_body_sha256": "0cdc458e853d6539bead87868b7589d21ae95e50918ece4030985d789902f147",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1730,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add real behavior proof before merge for the changed production lanes, including current head, environment, command, and observed outgoing tier. Redact credentials and private identif... (sha=1de5ac5557822281f6ebea7a89673ca0d3c7c677)",
+      "expected_head_sha": "1de5ac5557822281f6ebea7a89673ca0d3c7c677",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T03:42:01.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/write-access-priority-tier",
+        "head_sha": "1de5ac5557822281f6ebea7a89673ca0d3c7c677",
         "cluster_id": null,
         "job_path": null
       }
