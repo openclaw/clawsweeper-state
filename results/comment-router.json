@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:43:26.340Z",
+  "updated_at": "2026-10-01T07:43:43.181Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3881:5923125709:2026-10-01T03:42:02Z:clawsweeper_auto_repair",
-      "comment_id": "5923125709",
-      "comment_version_key": "5923125709:2026-10-01T03:42:02Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3881#issuecomment-5923125709",
-      "comment_created_at": "2026-10-01T01:51:59Z",
-      "comment_updated_at": "2026-10-01T03:42:02Z",
-      "comment_body_sha256": "8f07b2ad4187d2e8f4b3d0cebfc18aed34fe95bc26829d73a5e4f7ab80249b50",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad781daa521e42ba1cbb4b57a7eec09f4db33165)",
-      "expected_head_sha": "ad781daa521e42ba1cbb4b57a7eec09f4db33165",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T03:43:05.830Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-723-managed-mcp-collection",
-        "head_sha": "ad781daa521e42ba1cbb4b57a7eec09f4db33165",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162329:5923983958:2026-10-01T03:42:51Z:clawsweeper_needs_human",
       "comment_id": "5923983958",
@@ -33802,6 +33769,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabpot:405:5927029903:2026-10-01T07:42:31Z:re_review",
+      "comment_id": "5927029903",
+      "comment_version_key": "5927029903:2026-10-01T07:42:31Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/405#issuecomment-5927029903",
+      "comment_created_at": "2026-10-01T07:42:31Z",
+      "comment_updated_at": "2026-10-01T07:42:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/crabpot",
+      "issue_number": 405,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T07:43:34.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-lifecycle-capture-20260929",
+        "head_sha": "ba0f3771c1b2343f8910e2a2446a61a35333dadb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
