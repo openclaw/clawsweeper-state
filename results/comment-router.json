@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T09:44:42.095Z",
+  "updated_at": "2026-10-01T09:44:48.199Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5798257423:2026-09-23T16:05:23Z:re_review",
-      "comment_id": "5798257423",
-      "comment_version_key": "5798257423:2026-09-23T16:05:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5798257423",
-      "comment_created_at": "2026-09-23T16:05:23Z",
-      "comment_updated_at": "2026-09-23T16:05:23Z",
-      "comment_body_sha256": "38a53a06bf3d8042f95eeb6626b360cda614c2a263848af53493dbc11c46f96b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (322e358bb, was 46 behind, now 0 behind). focused skill-selection tests pass (12/12). tsgo:core errors are pre-existing upstream breakage in configure.*/doctor-prompter/models files, none in our skill-selection/audit files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T05:54:31.806Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5802044626:2026-09-23T20:03:30Z:re_review",
       "comment_id": "5802044626",
@@ -33885,6 +33858,39 @@
       "status": "skipped",
       "processed_at": "2026-10-01T09:44:42.095Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156181:5789276094:2026-10-01T09:43:48Z:clawsweeper_auto_repair",
+      "comment_id": "5789276094",
+      "comment_version_key": "5789276094:2026-10-01T09:43:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156181#issuecomment-5789276094",
+      "comment_created_at": "2026-09-23T04:53:51Z",
+      "comment_updated_at": "2026-10-01T09:43:48Z",
+      "comment_body_sha256": "33fff096e8e0aa501bce5c108c4517500ae266e0b09496aadecef7a5f56c0e93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=79ed2de3defbf64b0722037fba2d23d616cc5f8d)",
+      "expected_head_sha": "79ed2de3defbf64b0722037fba2d23d616cc5f8d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T09:44:48.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/no-reply-explicit-silence",
+        "head_sha": "79ed2de3defbf64b0722037fba2d23d616cc5f8d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
