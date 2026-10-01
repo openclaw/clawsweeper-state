@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-162421"
-mode: "autonomous"
-run_id: "36819197856"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36819197856"
+mode: "plan"
+run_id: "36827205424"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36827205424"
 head_sha: "cac974b3e1da900cac3e7480b91d02a36ca60163"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T06:03:15.921Z"
-canonical: "https://github.com/openclaw/openclaw/issues/162421"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/162421"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T06:56:39.527Z"
+canonical: "#162421"
+canonical_issue: "#162421"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36819197856](https://github.com/openclaw/clawsweeper/actions/runs/36819197856)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36827205424](https://github.com/openclaw/clawsweeper/actions/runs/36827205424)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/162421
+Canonical: #162421
 
 ## Summary
 
-Source inspection supports a narrow repair on preflight main. Runtime reproduction stopped before execution because dependencies are missing; the read-only sandbox prevents installation, implementation, and persisted boundary tests. No files or GitHub state changed. A conditional fix artifact is ready for the executor.
+Plan a narrow shared config mutation fix for primary-model loss. Local HEAD matches preflight main 77251fed713f9e9b0e8e7dcd12f05648a77d6cfd, and source inspection corroborates the reported defect. No files or GitHub state changed. Runtime reproduction, implementation, review, and validation remain executor gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow repair on preflight main. Runtime reproducti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #162421 | fix_needed | planned | canonical | The source finding remains present. Keep the issue open; execution must establish a failing regression before implementation. Close and merge are prohibited by the job. |
-| cluster:issue-openclaw-openclaw-162421 | build_fix_artifact | planned |  | Prepare the narrow repair for a writable executor. Reproduce first; stop without opening a PR if the reported behavior does not reproduce on its current main. |
+| #162421 | fix_needed | planned | canonical | The reported behavior has a clear existing config contract and a narrow shared-owner repair path. Prepare one fix PR after failing command-boundary regressions establish the defect on current main. |
 
 ## Needs Human
 
