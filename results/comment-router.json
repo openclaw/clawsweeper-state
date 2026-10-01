@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T05:52:06.355Z",
+  "updated_at": "2026-10-01T05:52:29.314Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160699:5878294993:2026-09-30T23:18:22Z:clawsweeper_needs_human",
-      "comment_id": "5878294993",
-      "comment_version_key": "5878294993:2026-09-30T23:18:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160699#issuecomment-5878294993",
-      "comment_created_at": "2026-09-28T20:51:30Z",
-      "comment_updated_at": "2026-09-30T23:18:22Z",
-      "comment_body_sha256": "ea5d50e701a633702528bf5688a3f868632aebda75cc1e4f2d1700a95eeaeee2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160699,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing club and group-DM chat events will stop reaching the agent on upgrade; no Tlon owner has explicitly accepted that delivery cutoff. (sha=304068df2dbdb3524deb77c250fe79208a0668fc)",
-      "expected_head_sha": "304068df2dbdb3524deb77c250fe79208a0668fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T01:20:18.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1071",
-        "head_sha": "304068df2dbdb3524deb77c250fe79208a0668fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160760:5879943313:2026-09-30T23:33:50Z:clawsweeper_needs_human",
       "comment_id": "5879943313",
@@ -34023,6 +33990,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162432:5925583596:2026-10-01T05:51:20Z:re_review",
+      "comment_id": "5925583596",
+      "comment_version_key": "5925583596:2026-10-01T05:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162432#issuecomment-5925583596",
+      "comment_created_at": "2026-10-01T05:51:20Z",
+      "comment_updated_at": "2026-10-01T05:51:20Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162432,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T05:52:27.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-default-cap",
+        "head_sha": "6c0ece5220554848425c4ca63f1e367e5aa24450",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
