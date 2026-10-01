@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T00:46:14.898Z",
+  "updated_at": "2026-10-01T00:46:19.890Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162024:5917034766:2026-09-30T18:13:39Z:re_review",
-      "comment_id": "5917034766",
-      "comment_version_key": "5917034766:2026-09-30T18:13:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162024#issuecomment-5917034766",
-      "comment_created_at": "2026-09-30T18:13:39Z",
-      "comment_updated_at": "2026-09-30T18:13:39Z",
-      "comment_body_sha256": "8c9bfea6fa26ec31aab6bc30435a780eb49af4fcdad4fcb92216c03696431ccc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162024,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T18:14:48.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/daybreak-support-for-xhigh",
-        "head_sha": "1d223b7f49ab2846ee93dc8670f16080d192d6e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161344:5917040658:2026-09-30T18:14:01Z:re_review",
       "comment_id": "5917040658",
@@ -33352,6 +33305,39 @@
         "kind": "pull_request",
         "branch": "perf/20260930-process-basename",
         "head_sha": "ddee25bdae836742a89dc5f85b8b7c9a59d83050",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161546:5903140345:2026-10-01T00:07:29Z:clawsweeper_auto_repair",
+      "comment_id": "5903140345",
+      "comment_version_key": "5903140345:2026-10-01T00:07:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161546#issuecomment-5903140345",
+      "comment_created_at": "2026-09-30T02:54:18Z",
+      "comment_updated_at": "2026-10-01T00:07:29Z",
+      "comment_body_sha256": "d2ce2acfe52a3ea3d9a24051ae19ced2080e819e72b2db9e945c355a1a0d9f6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161546,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=be09e24436c169657e46a14a47951db55c81f67b)",
+      "expected_head_sha": "be09e24436c169657e46a14a47951db55c81f67b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T00:46:19.890Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-cli-progress-delay",
+        "head_sha": "be09e24436c169657e46a14a47951db55c81f67b",
         "cluster_id": null,
         "job_path": null
       }
