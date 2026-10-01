@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1583"
-mode: "autonomous"
-run_id: "36938162274"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36938162274"
-head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T23:03:22.614Z"
-canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1583"
-canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1583"
+mode: "plan"
+run_id: "36941115718"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36941115718"
+head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T23:33:19.790Z"
+canonical: "#1583"
+canonical_issue: "#1583"
 canonical_pr: null
 actions_total: 4
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-node-1583
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36938162274](https://github.com/openclaw/clawsweeper/actions/runs/36938162274)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36941115718](https://github.com/openclaw/clawsweeper/actions/runs/36941115718)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1583
+Canonical: #1583
 
 ## Summary
 
-Verified the Companion terminal-event delivery gap on preflight main 76ab839973aad5d74b983740440c4e82fb5ed8ba. A narrow fix is viable, but implementation is blocked by the read-only filesystem. Required validation attempts also failed before execution because PowerShell cannot create its cache and .NET SDK 10.0.400 is missing. No code or GitHub mutations were made. The unavailable local #160075 hydration entry is retained as upstream context only, without an actionable local target or invented live metadata.
+Prepared a focused Companion terminal-event repair plan against preflight main 76ab839973aad5d74b983740440c4e82fb5ed8ba. No files or GitHub state changed. Branch validation remains blocked by read-only access, missing .NET SDK 10.0.400, and PowerShell initialization failing on a read-only cache directory.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Verified the Companion terminal-event delivery gap on preflight main 76ab839973a
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,11 @@ Verified the Companion terminal-event delivery gap on preflight main 76ab839973a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1583 | fix_needed | planned | canonical | Implement the Companion terminal-event repair through the executor on a writable Windows checkout with the required SDK. No validation success or PR readiness is claimed. |
-| #1462 | keep_related | planned | related | Shared symptom does not establish a common root cause or coverage by this narrow repair. |
-| #1570 | route_security | planned | security_sensitive | Route this exact historical item to central OpenClaw security handling without mutation. Its ownership work is separate from terminal chat delivery. |
-| cluster:issue-openclaw-openclaw-windows-node-1583 | build_fix_artifact | planned | canonical | The artifact defines a narrow executable repair path; execution requires a writable Windows environment. Publication must wait for implementation and required validation. |
+| #1583 | build_fix_artifact | planned | canonical | The Companion defect has a narrow repair path through existing chat lifecycle owners. Prepare implementation and proof without changing the native Gateway or Local AI ownership boundary. |
+| #1462 | keep_related | planned | related | Similar visible symptoms do not establish the same root cause. Preserve its distinct completion and queued /stop investigation. |
+| #1570 | route_security | planned | security_sensitive | Read-only routing to central OpenClaw security handling. No comment, label, closure, merge, or repair is proposed for this item. |
+| #160075 | needs_human | blocked | needs_human | Reference resolution is blocked: confirm the intended repository and hydrate the upstream reference before assigning live target metadata. The supplied artifacts cannot safely establish target_kind or target_updated_at for this target. Retain the upstream link as context only and propose no mutation. |
 
 ## Needs Human
 
-- none
+- #160075: resolve the repository mismatch and hydrate the intended openclaw/openclaw#160075 reference. The local-repository hydration returned HTTP 404 with kind unknown and updated_at null; do not fabricate live metadata. This blocker applies only to this reference.
