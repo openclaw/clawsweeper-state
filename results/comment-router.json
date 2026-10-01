@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T23:57:40.071Z",
+  "updated_at": "2026-10-01T23:57:48.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5858172960:2026-09-27T17:37:33Z:re_review",
-      "comment_id": "5858172960",
-      "comment_version_key": "5858172960:2026-09-27T17:37:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5858172960",
-      "comment_created_at": "2026-09-27T17:37:33Z",
-      "comment_updated_at": "2026-09-27T17:37:33Z",
-      "comment_body_sha256": "0b0acef15ca86caa13dcc44d3b360385ccbb58f870308da56c2bed247c6ed746",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — branch merged with latest upstream/main (51c32cf1, 182 commits). merge was clean, no conflicts. skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage). tsgo:core clean, focused unit tests green (18 passed). ci running on new head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T19:44:45.097Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5859144387:2026-09-27T19:34:50Z:re_review",
       "comment_id": "5859144387",
@@ -33037,6 +33010,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3892:5942956523:2026-10-01T23:56:57Z:clawsweeper_needs_human",
+      "comment_id": "5942956523",
+      "comment_version_key": "5942956523:2026-10-01T23:56:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3892#issuecomment-5942956523",
+      "comment_created_at": "2026-10-01T23:56:57Z",
+      "comment_updated_at": "2026-10-01T23:56:57Z",
+      "comment_body_sha256": "64aad4c48c6d317d6515b5e7fe026a0e7e523cd1125007919b0fab43ffee3299",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3892,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Retirement removes the hosted acceptance route required by https://github.com/openclaw/clawhub/pull/3742; preserving its staging base branch alone leaves that trial without a document... (sha=76ac3f8bec7332081b26891257325489f6c587b4)",
+      "expected_head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T23:57:48.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remove-staging-environment-20261001",
+        "head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
