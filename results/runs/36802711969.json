@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162267",
+  "mode": "autonomous",
+  "run_id": "36802711969",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36802711969",
+  "head_sha": "8c7a382f5bca9a09564ce326f3c4892dff7ef4a6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162267.md",
+  "published_at": "2026-10-01T02:54:13.526Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162267",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162267",
+  "canonical_pr": null,
+  "summary": "At main SHA 80680fb3428a5d06bbccafaccaaade703da651ef, source inspection confirms that a terminal suspended descendant without cleanupCompletedAt counts against its ancestor’s spawn slots and appears as pending in the sub-agent list. The checkout is read-only, so I could not add a failing regression, implement the fix, run tests, or prepare the PR branch.",
+  "actions": [
+    {
+      "target": "#162267",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162267",
+      "candidate_fix": null,
+      "reason": "A separate admission and display projection is needed; changing the cleanup-pending count globally would alter cleanup decisions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162267",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#162267",
+      "candidate_fix": null,
+      "reason": "Prepared for the executor; no source files were changed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162267",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#162267",
+      "candidate_fix": null,
+      "reason": "The executor must first create and validate the narrow patch in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
