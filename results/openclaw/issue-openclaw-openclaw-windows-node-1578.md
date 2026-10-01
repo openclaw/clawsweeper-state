@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1578"
 mode: "autonomous"
-run_id: "36915632685"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36915632685"
+run_id: "36916499098"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36916499098"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-10-01T19:41:31.653Z"
+result_status: "needs_human"
+published_at: "2026-10-01T19:48:30.145Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-node-1578
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36915632685](https://github.com/openclaw/clawsweeper/actions/runs/36915632685)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36916499098](https://github.com/openclaw/clawsweeper/actions/runs/36916499098)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1578
 
 ## Summary
 
-No PR proposed. Current main already skips installation for recognized healthy Gateway packages. The affected Companion build and current-user package registration are needed to identify a narrow repair. No files or GitHub state changed.
+No narrow repair established. Current main already bypasses installation for recognized healthy Gateway packages. The affected build, package registration, and exact failure are needed to explain #1578. No code or GitHub changes made.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No PR proposed. Current main already skips installation for recognized healthy G
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,8 @@ No PR proposed. Current main already skips installation for recognized healthy G
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1578 | keep_canonical | planned | canonical | Keep the report open. Implementation is blocked until the affected Companion build, exact error, and same-user Gateway package name, publisher, family, version, status, and alias availability establish why the existing detection path did not reuse the installation. The evidence does not establish that the reported failure is fixed or support a specific code change. |
+| #1578 | keep_canonical | planned | canonical | Keep the report open. Existing source covers the stated healthy-installed-package case, but does not prove this reported failure is fixed. Choosing a repair without the affected registration and exact error would be speculative. |
 
 ## Needs Human
 
-- none
+- #1578: establish the failing path using the affected Companion version, exact error text, and current-user Gateway package Name, Publisher, PackageFamilyName, Version, Status, and alias availability. Determine whether this is an older-build failure, detection defect, or unhealthy registration before selecting an implementation.
