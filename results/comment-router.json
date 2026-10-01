@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T18:38:38.915Z",
+  "updated_at": "2026-10-01T18:39:00.796Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162652:5930527236:2026-10-01T12:19:46Z:clawsweeper_needs_human",
-      "comment_id": "5930527236",
-      "comment_version_key": "5930527236:2026-10-01T12:19:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162652#issuecomment-5930527236",
-      "comment_created_at": "2026-10-01T11:38:30Z",
-      "comment_updated_at": "2026-10-01T12:19:46Z",
-      "comment_body_sha256": "e62c51de4ee9aeed819e8786607b9804831feb9f51bbef3c151d37b31fcb1882",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162652,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed Tauri resource generation and macOS staging have not been exercised through their actual build/package entrypoints; a resource integration failure could prevent native CLI... (sha=259decdc4bc902a9eadf372deb48c1513f1754ca)",
-      "expected_head_sha": "259decdc4bc902a9eadf372deb48c1513f1754ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T12:20:43.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l271-arch-small-installer-policy",
-        "head_sha": "259decdc4bc902a9eadf372deb48c1513f1754ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162483:5926223725:2026-10-01T12:19:57Z:clawsweeper_needs_human",
       "comment_id": "5926223725",
@@ -34297,6 +34264,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162925:5938067706:2026-10-01T18:37:48Z:re_review",
+      "comment_id": "5938067706",
+      "comment_version_key": "5938067706:2026-10-01T18:37:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162925#issuecomment-5938067706",
+      "comment_created_at": "2026-10-01T18:37:48Z",
+      "comment_updated_at": "2026-10-01T18:37:48Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162925,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T18:38:59.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-v2-triage-45",
+        "head_sha": "3ad149d370ad1642d6d4e014c901b3d30186bdb3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
