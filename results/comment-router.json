@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T13:15:00.573Z",
+  "updated_at": "2026-10-01T13:15:00.980Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162490:5928523392:2026-10-01T09:21:23Z:re_review",
-      "comment_id": "5928523392",
-      "comment_version_key": "5928523392:2026-10-01T09:21:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162490#issuecomment-5928523392",
-      "comment_created_at": "2026-10-01T09:21:23Z",
-      "comment_updated_at": "2026-10-01T09:21:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162490,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T09:22:26.775Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/webui-stall-recovery",
-        "head_sha": "c1bca05fb2f7df05810c4605097aebef98315e0f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162490:5928532065:2026-10-01T09:21:57Z:re_review",
       "comment_id": "5928532065",
@@ -33839,6 +33792,39 @@
         "kind": "pull_request",
         "branch": "fix/message-cli-scoped-custom-channels",
         "head_sha": "69d23257c656b939c16a62e458f395540f69b9c7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162702:5932211744:2026-10-01T13:14:02Z:clawsweeper_needs_human",
+      "comment_id": "5932211744",
+      "comment_version_key": "5932211744:2026-10-01T13:14:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162702#issuecomment-5932211744",
+      "comment_created_at": "2026-10-01T13:14:02Z",
+      "comment_updated_at": "2026-10-01T13:14:02Z",
+      "comment_body_sha256": "a68d95b41bc379406a30d5d26a6e2a84f2cd4531dcec38dbc1c31f29a9e04e79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162702,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The saved repair marker gains alerted:true and survives fallback alerts. Existing-state evidence must show that a legacy marker still gets its pending fallback and that the new marker... (sha=f064aed485d39cf8b91f5a8a64c6e1d18ea86b3a)",
+      "expected_head_sha": "f064aed485d39cf8b91f5a8a64c6e1d18ea86b3a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T13:15:00.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-repair-streak",
+        "head_sha": "f064aed485d39cf8b91f5a8a64c6e1d18ea86b3a",
         "cluster_id": null,
         "job_path": null
       }
