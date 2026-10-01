@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T20:11:01.562Z",
+  "updated_at": "2026-10-01T20:11:29.567Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161871:5922275888:2026-10-01T00:32:17Z:re_review",
-      "comment_id": "5922275888",
-      "comment_version_key": "5922275888:2026-10-01T00:32:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161871#issuecomment-5922275888",
-      "comment_created_at": "2026-10-01T00:32:17Z",
-      "comment_updated_at": "2026-10-01T00:32:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161871,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T14:02:33.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/session-store-agent-db-drain",
-        "head_sha": "faf9ad27ae3b5de01a720ff840291c08e11208aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/SweetCookieKit:21:5932121596:2026-10-01T14:01:34Z:clawsweeper_needs_human",
       "comment_id": "5932121596",
@@ -33599,6 +33552,39 @@
         "kind": "pull_request",
         "branch": "tcr/land-d136-1790872331",
         "head_sha": "8cf3958ea4f31cc04d33a0bdda8e8ff50b04ae8b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:848:5939639190:2026-10-01T20:10:33Z:clawsweeper_needs_human",
+      "comment_id": "5939639190",
+      "comment_version_key": "5939639190:2026-10-01T20:10:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/848#issuecomment-5939639190",
+      "comment_created_at": "2026-10-01T20:10:33Z",
+      "comment_updated_at": "2026-10-01T20:10:33Z",
+      "comment_body_sha256": "da5f20164b360c3508b4cf552bc5a8908a78bff412cd8b8762f3e1dcc5f48d49",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - IAM owners have not accepted grants covering all current and future resources of the permitted kinds, including other people's Agents and Secrets. (sha=6fb248170d8dd7f311c3e9142118b07506c693d2)",
+      "expected_head_sha": "6fb248170d8dd7f311c3e9142118b07506c693d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T20:11:29.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc-d92-iam-delegation",
+        "head_sha": "6fb248170d8dd7f311c3e9142118b07506c693d2",
         "cluster_id": null,
         "job_path": null
       }
