@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:48:30.687Z",
+  "updated_at": "2026-10-01T08:48:59.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162414:5925353037:2026-10-01T05:29:00Z:re_review",
-      "comment_id": "5925353037",
-      "comment_version_key": "5925353037:2026-10-01T05:29:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162414#issuecomment-5925353037",
-      "comment_created_at": "2026-10-01T05:29:00Z",
-      "comment_updated_at": "2026-10-01T05:29:00Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162414,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T05:29:48.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/profiles",
-        "head_sha": "cc07f41738d1940d3b458c459e3da1e5cdc42792",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139024:5925358939:2026-10-01T05:29:35Z:re_review",
       "comment_id": "5925358939",
@@ -33573,6 +33526,39 @@
         "kind": "pull_request",
         "branch": "fix/ui-workspace-pdf-preview",
         "head_sha": "90285fde4090521e6bfdabe9c6b0b44dd784e75b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162557:5927978832:2026-10-01T08:48:02Z:clawsweeper_needs_human",
+      "comment_id": "5927978832",
+      "comment_version_key": "5927978832:2026-10-01T08:48:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162557#issuecomment-5927978832",
+      "comment_created_at": "2026-10-01T08:48:02Z",
+      "comment_updated_at": "2026-10-01T08:48:02Z",
+      "comment_body_sha256": "306b8b455654b49d81e19986fa916b4a1d8b08f99e23cbb7c0eddf782e8da777",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing signed bridge clients using exact-window actionOnly menu hotkeys may receive operationUnsupported after this update; no OpenClaw macOS qualification establishes the intended... (sha=38e7cbc015b3b0fb6b69f5abd0db935ee06a210c)",
+      "expected_head_sha": "38e7cbc015b3b0fb6b69f5abd0db935ee06a210c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T08:48:59.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-06721367d4",
+        "head_sha": "38e7cbc015b3b0fb6b69f5abd0db935ee06a210c",
         "cluster_id": null,
         "job_path": null
       }
