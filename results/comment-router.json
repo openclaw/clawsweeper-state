@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T20:30:51.010Z",
+  "updated_at": "2026-10-01T20:30:52.788Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162749:5933180995:2026-10-01T14:08:57Z:re_review",
-      "comment_id": "5933180995",
-      "comment_version_key": "5933180995:2026-10-01T14:08:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162749#issuecomment-5933180995",
-      "comment_created_at": "2026-10-01T14:08:57Z",
-      "comment_updated_at": "2026-10-01T14:08:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162749,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T14:10:17.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/segmenter-surrogate-guard",
-        "head_sha": "04fbcd40f26fa1bd65faa3c8ae4661b256834bc2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162702:5933187083:2026-10-01T14:09:16Z:re_review",
       "comment_id": "5933187083",
@@ -33589,6 +33542,39 @@
         "kind": "pull_request",
         "branch": "fix/f108-inline-shell-allow-rules",
         "head_sha": "413a4c2d47785e78caaa8abd1138f82da76f3be7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155911:5782512967:2026-10-01T20:29:41Z:clawsweeper_needs_human",
+      "comment_id": "5782512967",
+      "comment_version_key": "5782512967:2026-10-01T20:29:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155911#issuecomment-5782512967",
+      "comment_created_at": "2026-09-22T19:18:12Z",
+      "comment_updated_at": "2026-10-01T20:29:41Z",
+      "comment_body_sha256": "8cba9af3425de732bb3dba097fa79fc5f9cc79a3f694a02c962a9b763814e446",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The measured cold-import CPU increase remains unaccepted, and synthetic repeated resolves do not establish payback for ordinary retained-owner workloads or an overall Gateway benefit. (sha=f00da91d74eb7005655e50d9650061f987955ca5)",
+      "expected_head_sha": "f00da91d74eb7005655e50d9650061f987955ca5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T20:30:52.788Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/plugin-generation-source-projection-20260922",
+        "head_sha": "f00da91d74eb7005655e50d9650061f987955ca5",
         "cluster_id": null,
         "job_path": null
       }
