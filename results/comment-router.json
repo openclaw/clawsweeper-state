@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T00:46:19.890Z",
+  "updated_at": "2026-10-01T00:46:20.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161344:5917040658:2026-09-30T18:14:01Z:re_review",
-      "comment_id": "5917040658",
-      "comment_version_key": "5917040658:2026-09-30T18:14:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5917040658",
-      "comment_created_at": "2026-09-30T18:14:01Z",
-      "comment_updated_at": "2026-09-30T18:14:01Z",
-      "comment_body_sha256": "f0ac86ab6c70efa54c10580a39147fa5f9074c4d5ec846af3abdf6d08d9d50e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161344,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T18:15:03.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lobster-llm-adapter-current",
-        "head_sha": "8f88364e74651a63c60345bf31866f65f48fdd49",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136454:5917045521:2026-09-30T18:14:19Z:re_review",
       "comment_id": "5917045521",
@@ -33338,6 +33291,39 @@
         "kind": "pull_request",
         "branch": "fix/telegram-cli-progress-delay",
         "head_sha": "be09e24436c169657e46a14a47951db55c81f67b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162079:5918389606:2026-10-01T00:03:58Z:clawsweeper_needs_human",
+      "comment_id": "5918389606",
+      "comment_version_key": "5918389606:2026-10-01T00:03:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162079#issuecomment-5918389606",
+      "comment_created_at": "2026-09-30T19:41:52Z",
+      "comment_updated_at": "2026-10-01T00:03:58Z",
+      "comment_body_sha256": "92224b29d313920656f44adb4986dd9d67bd2f17575f7c51e58f2483494aa825",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162079,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.7 updater has not been shown driving this exact candidate through Gateway shutdown, leaving update behavior during upgrade unqualified. (sha=925690c43f0074c4f07dc361ef9788bec046604d)",
+      "expected_head_sha": "925690c43f0074c4f07dc361ef9788bec046604d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T00:46:20.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-cron-update-scope",
+        "head_sha": "925690c43f0074c4f07dc361ef9788bec046604d",
         "cluster_id": null,
         "job_path": null
       }
