@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:21:02.865Z",
+  "updated_at": "2026-10-01T10:21:22.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162361:5926031351:2026-10-01T06:31:45Z:re_review",
-      "comment_id": "5926031351",
-      "comment_version_key": "5926031351:2026-10-01T06:31:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162361#issuecomment-5926031351",
-      "comment_created_at": "2026-10-01T06:31:45Z",
-      "comment_updated_at": "2026-10-01T06:31:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162361,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:32:45.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-swap-posix-fixture",
-        "head_sha": "c4e7d264fdb4b130c8ddaee5cc922b907156e542",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:790:5924451378:2026-10-01T06:22:57Z:clawsweeper_needs_human",
       "comment_id": "5924451378",
@@ -33903,6 +33856,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162391:5929401170:2026-10-01T10:19:57Z:freeform_assist",
+      "comment_id": "5929401170",
+      "comment_version_key": "5929401170:2026-10-01T10:19:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162391#issuecomment-5929401170",
+      "comment_created_at": "2026-10-01T10:19:57Z",
+      "comment_updated_at": "2026-10-01T10:19:57Z",
+      "comment_body_sha256": "7e37848e4d1ec9a88c6fb04bd5ee047ffa23669ee16c4034a68b01bcba14b34d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162391,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "maintainer decision (ayaan, repository maintainer): the data-model item comes from `qa/scenarios/scheduling/cron-blocked-outcome.yaml`, a qa scenario fixture. this pr changes no schema, migration, persisted format or stored field; error and permanent run classification already exist (your own review verified this). migration proof does not apply.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T10:21:20.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-blocked-outcome",
+        "head_sha": "7eaa535871c1557abc9a650e639d2f8b1e37bc20",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
