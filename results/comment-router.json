@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:38:10.053Z",
+  "updated_at": "2026-10-01T08:38:33.404Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158723:5884349394:2026-09-29T05:36:44Z:re_review",
-      "comment_id": "5884349394",
-      "comment_version_key": "5884349394:2026-09-29T05:36:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158723#issuecomment-5884349394",
-      "comment_created_at": "2026-09-29T05:36:44Z",
-      "comment_updated_at": "2026-09-29T05:36:44Z",
-      "comment_body_sha256": "e5d47bba6abdc7cadef4fa78587a692d3279c326432ff34ae67dba85c0eded06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158723,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T05:21:31.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/doctor-managed-runtime-repair",
-        "head_sha": "baa24755b0f21ef72772748bab8095803939af59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3742:5693028256:2026-10-01T05:13:48Z:clawsweeper_auto_repair",
       "comment_id": "5693028256",
@@ -33527,6 +33480,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162549:5927821423:2026-10-01T08:37:31Z:clawsweeper_needs_human",
+      "comment_id": "5927821423",
+      "comment_version_key": "5927821423:2026-10-01T08:37:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162549#issuecomment-5927821423",
+      "comment_created_at": "2026-10-01T08:37:31Z",
+      "comment_updated_at": "2026-10-01T08:37:31Z",
+      "comment_body_sha256": "c99b5cdbcf0b3560efe2f56b849ed3f3dab2e6abea173c3be61dc34c64b89c1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162549,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: real SQLite tests support worker execution, snapshot consistency, and commit rollback, but the cron fi...; Review finding: [P2] [P2] Separate inferred worker contracts from leaf approval types — src/infra/exec-approvals-contracts.ts:5 - [medium] Verify durable revocation before native... (sha=45d0935126fb99d0b7edc0207be1989163e24c9f)",
+      "expected_head_sha": "45d0935126fb99d0b7edc0207be1989163e24c9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T08:38:33.404Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/operator-approvals",
+        "head_sha": "45d0935126fb99d0b7edc0207be1989163e24c9f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
