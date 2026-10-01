@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T17:59:40.541Z",
+  "updated_at": "2026-10-01T18:00:22.522Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158895:5930492146:2026-10-01T11:35:59Z:re_review",
-      "comment_id": "5930492146",
-      "comment_version_key": "5930492146:2026-10-01T11:35:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158895#issuecomment-5930492146",
-      "comment_created_at": "2026-10-01T11:35:59Z",
-      "comment_updated_at": "2026-10-01T11:35:59Z",
-      "comment_body_sha256": "663651bff0a5c15160e63f9df70c58da6435b54732e84be86ee1e096efa2b693",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158895,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T11:43:51.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-codex-image-configured-model",
-        "head_sha": "913e2e1ab9749b82e39ae3dad93e628543bd234b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119256:5180866476:2026-10-01T11:42:45Z:clawsweeper_needs_human",
       "comment_id": "5180866476",
@@ -34135,6 +34088,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147325:5655812979:2026-10-01T17:59:06Z:clawsweeper_needs_human",
+      "comment_id": "5655812979",
+      "comment_version_key": "5655812979:2026-10-01T17:59:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147325#issuecomment-5655812979",
+      "comment_created_at": "2026-09-13T20:11:27Z",
+      "comment_updated_at": "2026-10-01T17:59:06Z",
+      "comment_body_sha256": "d0562cad5884b8f13ba5dcd016ee3ac729ba88cd3fff0e61a1e2b319c334e48e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147325,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: RemoteRunLiveActivity now drives native enrollment, rotation, recovery, and retirement, but the comple...; Review finding: [medium] Unqualified native final-effect authorization — apps/ios/Sources/LiveActivity/RemoteRunLiveActivity.swift:629 (sha=f86cf9ba71bff7f906a6e7ee6d3a4f704d65a9d6)",
+      "expected_head_sha": "f86cf9ba71bff7f906a6e7ee6d3a4f704d65a9d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T18:00:22.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/native-live-activity-20260913",
+        "head_sha": "f86cf9ba71bff7f906a6e7ee6d3a4f704d65a9d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
