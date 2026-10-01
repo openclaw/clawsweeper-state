@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1578"
 mode: "autonomous"
-run_id: "36916499098"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36916499098"
+run_id: "36923954962"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36923954962"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-01T19:48:30.145Z"
+published_at: "2026-10-01T20:49:41.131Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36916499098](https://github.com/openclaw/clawsweeper/actions/runs/36916499098)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36923954962](https://github.com/openclaw/clawsweeper/actions/runs/36923954962)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1578
 
 ## Summary
 
-No narrow repair established. Current main already bypasses installation for recognized healthy Gateway packages. The affected build, package registration, and exact failure are needed to explain #1578. No code or GitHub changes made.
+Current main already bypasses installation for recognized healthy Gateway packages. The affected build and package registration are needed to establish a focused repair. No code or GitHub changes were made; no PR is recommended yet.
 
 ## Impact
 
@@ -66,8 +66,8 @@ No narrow repair established. Current main already bypasses installation for rec
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1578 | keep_canonical | planned | canonical | Keep the report open. Existing source covers the stated healthy-installed-package case, but does not prove this reported failure is fixed. Choosing a repair without the affected registration and exact error would be speculative. |
+| #1578 | keep_canonical | planned | canonical | Keep the report open. Existing source covers recognized healthy installed packages, but does not establish that the reported failure is fixed. The missing reproduction evidence prevents choosing a safe, narrow implementation. |
 
 ## Needs Human
 
-- #1578: establish the failing path using the affected Companion version, exact error text, and current-user Gateway package Name, Publisher, PackageFamilyName, Version, Status, and alias availability. Determine whether this is an older-build failure, detection defect, or unhealthy registration before selecting an implementation.
+- #1578: Provide the affected Companion build, exact error text, current-user Gateway package name/publisher/family/version/status, and availability of its package-qualified openclaw.exe and clawctl.exe aliases. This will distinguish a detection regression from an unsupported or unhealthy installation before selecting a repair.
