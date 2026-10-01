@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T12:29:39.720Z",
+  "updated_at": "2026-10-01T12:30:01.882Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143911:5616705068:2026-10-01T08:31:54Z:clawsweeper_needs_human",
-      "comment_id": "5616705068",
-      "comment_version_key": "5616705068:2026-10-01T08:31:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143911#issuecomment-5616705068",
-      "comment_created_at": "2026-09-10T09:56:24Z",
-      "comment_updated_at": "2026-10-01T08:31:54Z",
-      "comment_body_sha256": "1bdf23223d92f095ce834fe611ae46843540bfd8f7af77f82df6468efac620b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143911,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2f7d3084fce5e3f2887b7091a75da22dfd247108)",
-      "expected_head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T08:32:52.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-143821-memory-intersession",
-        "head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139260:5553802483:2026-10-01T08:32:04Z:clawsweeper_needs_human",
       "comment_id": "5553802483",
@@ -33827,6 +33794,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/plugin-inspector:96:5931475505:2026-10-01T12:29:08Z:re_review",
+      "comment_id": "5931475505",
+      "comment_version_key": "5931475505:2026-10-01T12:29:08Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/96#issuecomment-5931475505",
+      "comment_created_at": "2026-10-01T12:29:08Z",
+      "comment_updated_at": "2026-10-01T12:29:08Z",
+      "comment_body_sha256": "c842257c259ae6b13828fb8733abf31cd72bbe2a6f0d63cf39b2ea31a39eb8fe",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 96,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T12:30:00.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/manifest-contract-keys",
+        "head_sha": "1d9e6e1e2d254bc4fcb46e4ba4ac46804e438b8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
