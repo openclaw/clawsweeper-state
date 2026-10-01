@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:24:33.230Z",
+  "updated_at": "2026-10-01T08:24:48.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158000:5828751816:2026-10-01T04:32:19Z:clawsweeper_needs_human",
-      "comment_id": "5828751816",
-      "comment_version_key": "5828751816:2026-10-01T04:32:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158000#issuecomment-5828751816",
-      "comment_created_at": "2026-09-25T07:39:41Z",
-      "comment_updated_at": "2026-10-01T04:32:19Z",
-      "comment_body_sha256": "72b4de53de012258eb46f5c8f5a9928e84910b600ce5f25fd3532ea893573cb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158000,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=926140dbc5a2993ce8453455b0078f6f45092590)",
-      "expected_head_sha": "926140dbc5a2993ce8453455b0078f6f45092590",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T04:38:56.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/remote-catalog-generation-publication",
-        "head_sha": "926140dbc5a2993ce8453455b0078f6f45092590",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158000:5829078130:2026-09-25T08:06:10Z:re_review",
       "comment_id": "5829078130",
@@ -33566,6 +33533,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162481:5927631804:2026-10-01T08:23:56Z:freeform_assist",
+      "comment_id": "5927631804",
+      "comment_version_key": "5927631804:2026-10-01T08:23:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162481#issuecomment-5927631804",
+      "comment_created_at": "2026-10-01T08:23:56Z",
+      "comment_updated_at": "2026-10-01T08:23:56Z",
+      "comment_body_sha256": "dadb2577b9cb36af6865f98a10f38b19bde9942251ae0e7f161b1376c8fb6c04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162481,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "maintainer decision (ayaan, repository maintainer): the authority-chain proof gate is accepted without a dedicated revocation-mid-request harness. read authority (caller authority, agent runtime, management grant) is rechecked synchronously right before the outcome is attached, with no await between the check and the response. the only remaining window is \"revoked after the response was built\", which every read api has. a harness that revokes mid-request would harden a hypothetical. the handler-level test covers allowed vs revoked callers through the real cron.run/cron.runs handlers. please re-review.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T08:24:46.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/automations-run-wait",
+        "head_sha": "cf942df0601778092d56ca34453ff545cf23db06",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
