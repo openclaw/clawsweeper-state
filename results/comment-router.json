@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:01:19.331Z",
+  "updated_at": "2026-10-01T21:02:20.241Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162516:5934277260:2026-10-01T15:09:24Z:re_review",
-      "comment_id": "5934277260",
-      "comment_version_key": "5934277260:2026-10-01T15:09:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162516#issuecomment-5934277260",
-      "comment_created_at": "2026-10-01T15:09:24Z",
-      "comment_updated_at": "2026-10-01T15:09:24Z",
-      "comment_body_sha256": "a3fda05ba2dfb880c91c953a95cbf5b04cdbbaaf038057db47447c9891857b9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162516,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T15:10:50.841Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-cancelled-consumer-retention-20261001",
-        "head_sha": "b100d1b622a3819255ccab99e0956050c8706dd9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162756:5934297935:2026-10-01T15:10:32Z:re_review",
       "comment_id": "5934297935",
@@ -33002,6 +32955,39 @@
         "kind": "pull_request",
         "branch": "1085",
         "head_sha": "63d7b0843d198a0012de063e8738d007de609274",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162844:5936171434:2026-10-01T21:01:28Z:clawsweeper_needs_human",
+      "comment_id": "5936171434",
+      "comment_version_key": "5936171434:2026-10-01T21:01:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162844#issuecomment-5936171434",
+      "comment_created_at": "2026-10-01T16:50:06Z",
+      "comment_updated_at": "2026-10-01T21:01:28Z",
+      "comment_body_sha256": "effa23eeda03a9f2a46100ea2e8981a6eae650699698a11ce8ed75878df9b8a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the results and measured wall time for pnpm test src/agents/mcp-http-transport.test.ts --maxWorkers=1, plus available CI test time, in the PR body; reuse existing valid measure... (sha=128189c2ecaaf2126d51cdc8f47a615a8831520f)",
+      "expected_head_sha": "128189c2ecaaf2126d51cdc8f47a615a8831520f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:02:20.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-node26-stream-rejection",
+        "head_sha": "128189c2ecaaf2126d51cdc8f47a615a8831520f",
         "cluster_id": null,
         "job_path": null
       }
