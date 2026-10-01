@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-162853"
-mode: "autonomous"
-run_id: "36896909465"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36896909465"
+mode: "plan"
+run_id: "36909440737"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36909440737"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T18:23:21.285Z"
-canonical: "https://github.com/openclaw/openclaw/issues/162853"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/162853"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T18:53:32.868Z"
+canonical: "#162853"
+canonical_issue: "#162853"
 canonical_pr: null
-actions_total: 6
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36896909465](https://github.com/openclaw/clawsweeper/actions/runs/36896909465)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36909440737](https://github.com/openclaw/clawsweeper/actions/runs/36909440737)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/162853
+Canonical: #162853
 
 ## Summary
 
-Confirmed the preflight bypass in source at the artifact's current main SHA, 5834b4f0785efa131469806c8d53588f79566a66. A narrow repair is planned. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no code changes, tests, or GitHub mutations were performed.
+Plan one narrow completion-turn preflight repair. The supplied main still contains the preservation-flag bypass. Implementation, failing regression, validation, and fresh review remain executor prerequisites; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,14 @@ Confirmed the preflight bypass in source at the artifact's current main SHA, 583
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #162853 | fix_needed | blocked | canonical | The source finding remains valid and has a narrow existing owner. Implementation is blocked only by host execution prerequisites; the executor must reproduce the defect before editing. |
-| #125308 | keep_related | planned | related | Keep the broader long-session report open and outside this implementation. |
-| #159799 | keep_related | planned | related | Retain its separate reproduction and policy discussion. |
-| #136452 | keep_closed | skipped | related | Historical context only. |
-| #136533 | keep_closed | skipped | related | Preserve historical contributor context without reopening or changing the merged PR. |
-| cluster:issue-openclaw-openclaw-162853 | build_fix_artifact | planned |  | Provide a concrete repair path despite this worker's implementation blocker. Close and merge remain disabled. |
+| #162853 | fix_needed | planned | canonical | Repair required preflight admission without weakening provenance or completion-state preservation. Stop if the regression cannot reproduce on the executor's latest main or the repair requires a new product policy. |
+| #125308 | keep_related | planned | related | The completion admission repair does not resolve this broader long-session report. |
+| #159799 | keep_related | planned | related | Keep its separate hydration contract open and outside this implementation. |
+| #130863 | keep_closed | skipped | related | Historical implementation context only. |
+| #136452 | keep_closed | skipped | related | Closed historical report with a distinct admission cause. |
+| #136533 | keep_closed | skipped | related | Reuse existing owner contracts; do not reopen historical work. |
+| #139822 | keep_closed | skipped | related | Historical maintenance and pending-input ownership context. |
+| #161037 | keep_closed | skipped | related | Test-history context, not a completion-compaction fix candidate. |
 
 ## Needs Human
 
