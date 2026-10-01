@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T12:33:24.966Z",
+  "updated_at": "2026-10-01T12:33:30.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162443:5927767057:2026-10-01T08:33:40Z:re_review",
-      "comment_id": "5927767057",
-      "comment_version_key": "5927767057:2026-10-01T08:33:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162443#issuecomment-5927767057",
-      "comment_created_at": "2026-10-01T08:33:40Z",
-      "comment_updated_at": "2026-10-01T08:33:40Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162443,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T08:37:47.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/suspicious-hermann-534b0d",
-        "head_sha": "dcad0638315d11eafd42532a00f1223126b63bf5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:111:5905732455:2026-10-01T08:37:15Z:clawsweeper_needs_human",
       "comment_id": "5905732455",
@@ -33838,6 +33791,39 @@
         "kind": "pull_request",
         "branch": "upd/upd-doctor-unsettled-never-down",
         "head_sha": "bfa4e155e48311db239c70d5c2270c880819c279",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162685:5931538139:2026-10-01T12:32:24Z:clawsweeper_needs_human",
+      "comment_id": "5931538139",
+      "comment_version_key": "5931538139:2026-10-01T12:32:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162685#issuecomment-5931538139",
+      "comment_created_at": "2026-10-01T12:32:24Z",
+      "comment_updated_at": "2026-10-01T12:32:24Z",
+      "comment_body_sha256": "1b8edfcf2a6962b604b968b69cab2290d4bc011a1b49fa30a06fae6147ce93dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162685,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations lose runtime credential-field conversion; the corrected published-driver upgrade cell must establish preserved account selections, rotation state, backups, reco... (sha=5314148af38e8451fe63dec906d88a757bd2ae63)",
+      "expected_head_sha": "5314148af38e8451fe63dec906d88a757bd2ae63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T12:33:30.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-doctor-canonical-credentials",
+        "head_sha": "5314148af38e8451fe63dec906d88a757bd2ae63",
         "cluster_id": null,
         "job_path": null
       }
