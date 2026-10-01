@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:59:00.962Z",
+  "updated_at": "2026-10-01T01:59:11.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156940:5918298538:2026-09-30T19:35:41Z:re_review",
-      "comment_id": "5918298538",
-      "comment_version_key": "5918298538:2026-09-30T19:35:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156940#issuecomment-5918298538",
-      "comment_created_at": "2026-09-30T19:35:41Z",
-      "comment_updated_at": "2026-09-30T19:35:41Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156940,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T20:02:47.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-pr-native-ownership",
-        "head_sha": "7666583561710730e5131268979af86b8899bae2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162056:5918518173:2026-09-30T19:50:26Z:re_review",
       "comment_id": "5918518173",
@@ -33335,6 +33288,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-723-managed-mcp-collection",
         "head_sha": "08eada83bb57df2287803b7922d92420966a7743",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3742:5693028256:2026-10-01T01:58:08Z:clawsweeper_needs_human",
+      "comment_id": "5693028256",
+      "comment_version_key": "5693028256:2026-10-01T01:58:08Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3742#issuecomment-5693028256",
+      "comment_created_at": "2026-09-16T06:26:05Z",
+      "comment_updated_at": "2026-10-01T01:58:08Z",
+      "comment_body_sha256": "ac6d3579f4197efd13b8e5357ea82c6187e0762b9d7db6ec545c04a1586045fb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow installs ClawScan 0.2.0 for ordinary Production skill and plugin jobs even with Endor off; current-head hosted evidence does not establish their upgrade behavior against... (sha=bcecd578192327f37f466a8b302deb8a27e7d42f)",
+      "expected_head_sha": "bcecd578192327f37f466a8b302deb8a27e7d42f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:59:11.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/endor-plugin-scan-pipeline",
+        "head_sha": "bcecd578192327f37f466a8b302deb8a27e7d42f",
         "cluster_id": null,
         "job_path": null
       }
