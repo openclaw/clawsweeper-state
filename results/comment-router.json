@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T05:29:49.794Z",
+  "updated_at": "2026-10-01T05:30:37.194Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162124:5919603580:2026-09-30T23:08:21Z:clawsweeper_needs_human",
-      "comment_id": "5919603580",
-      "comment_version_key": "5919603580:2026-09-30T23:08:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162124#issuecomment-5919603580",
-      "comment_created_at": "2026-09-30T20:57:51Z",
-      "comment_updated_at": "2026-09-30T23:08:21Z",
-      "comment_body_sha256": "6b4bbd19c6428493dc24be804b76aa2553b211d486b3d420746f43eca02b7d67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162124,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Three of the five failed CI test jobs have no matching main-branch failure established in the supplied comparison, so their attribution remains unresolved. (sha=7cc90e68567a26184666c474027cfe184b03e06b)",
-      "expected_head_sha": "7cc90e68567a26184666c474027cfe184b03e06b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T00:39:04.776Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-suppressed-worker-errors",
-        "head_sha": "7cc90e68567a26184666c474027cfe184b03e06b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155959:5812425097:2026-09-24T10:32:09Z:re_review",
       "comment_id": "5812425097",
@@ -33920,6 +33887,53 @@
         "kind": "pull_request",
         "branch": "dbasync/profiles",
         "head_sha": "cc07f41738d1940d3b458c459e3da1e5cdc42792",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139024:5925358939:2026-10-01T05:29:35Z:re_review",
+      "comment_id": "5925358939",
+      "comment_version_key": "5925358939:2026-10-01T05:29:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139024#issuecomment-5925358939",
+      "comment_created_at": "2026-10-01T05:29:35Z",
+      "comment_updated_at": "2026-10-01T05:29:35Z",
+      "comment_body_sha256": "cb357741cf9cfb89f582f07c3db1088727c5c76066ead22d022f87329899a60a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139024,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T05:30:34.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-138955-session-group-defaults-scope-error",
+        "head_sha": "62f51c2670442df5b891b70f922464663e26a393",
         "cluster_id": null,
         "job_path": null
       },
