@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T06:44:52.174Z",
+  "updated_at": "2026-10-01T06:45:00.304Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162279:5923589072:2026-10-01T02:35:54Z:re_review",
-      "comment_id": "5923589072",
-      "comment_version_key": "5923589072:2026-10-01T02:35:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162279#issuecomment-5923589072",
-      "comment_created_at": "2026-10-01T02:35:54Z",
-      "comment_updated_at": "2026-10-01T02:35:54Z",
-      "comment_body_sha256": "2871cf20ac08e148b748e158e3c6d7676f450bc4e4f338a8c6d7b50a6a8da9df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162279,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T02:36:51.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-and-land-pr-with-markdown",
-        "head_sha": "5fa5ee4276aa915e35daf1410f2395d957cf66f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159335:5851940556:2026-10-01T02:36:03Z:clawsweeper_auto_repair",
       "comment_id": "5851940556",
@@ -33781,6 +33734,39 @@
         "kind": "pull_request",
         "branch": "fix/steer-failure",
         "head_sha": "a460b2c1bbb11b3e1054430f3d0070a547fb94c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162309:5923604768:2026-10-01T06:44:03Z:clawsweeper_needs_human",
+      "comment_id": "5923604768",
+      "comment_version_key": "5923604768:2026-10-01T06:44:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162309#issuecomment-5923604768",
+      "comment_created_at": "2026-10-01T02:37:30Z",
+      "comment_updated_at": "2026-10-01T06:44:03Z",
+      "comment_body_sha256": "c52778f84254f3dd73d693f560842f55e5e526ff49eb81a788e6e58719c3162a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the verified merge conflicts against current main, preserve intervening native-client changes, and validate the conflict resolutions through the native landing workflow. (sha=30d27e3ab96242e6d6500df4e462f690c63b72ad)",
+      "expected_head_sha": "30d27e3ab96242e6d6500df4e462f690c63b72ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T06:45:00.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l260-dup-apps-shared",
+        "head_sha": "30d27e3ab96242e6d6500df4e462f690c63b72ad",
         "cluster_id": null,
         "job_path": null
       }
