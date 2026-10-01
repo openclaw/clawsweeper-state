@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T16:18:09.674Z",
+  "updated_at": "2026-10-01T16:18:14.612Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162391:5930112100:2026-10-01T11:09:46Z:re_review",
-      "comment_id": "5930112100",
-      "comment_version_key": "5930112100:2026-10-01T11:09:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162391#issuecomment-5930112100",
-      "comment_created_at": "2026-10-01T11:09:46Z",
-      "comment_updated_at": "2026-10-01T11:09:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162391,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T11:10:50.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-blocked-outcome",
-        "head_sha": "7eaa535871c1557abc9a650e639d2f8b1e37bc20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1232:5926046301:2026-10-01T06:33:00Z:re_review",
       "comment_id": "5926046301",
@@ -33866,6 +33819,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-auth-profile-retry-cap",
         "head_sha": "45c74b9d39901fb3e95e50d3d0587bd387aec819",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162686:5931608798:2026-10-01T16:16:46Z:clawsweeper_needs_human",
+      "comment_id": "5931608798",
+      "comment_version_key": "5931608798:2026-10-01T16:16:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162686#issuecomment-5931608798",
+      "comment_created_at": "2026-10-01T12:36:44Z",
+      "comment_updated_at": "2026-10-01T16:16:46Z",
+      "comment_body_sha256": "8205f481a8990da0a62a2a99daaebab1d965d341429781ed39b170efc40a2708",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162686,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Report measured wall times from pnpm test &lt;file> --maxWorkers=1 for delivery-dispatch.double-announce.test.ts, timer-outcomes.regression.test.ts, and run.meta-error-status.test.ts... (sha=8b77715ba4f1b5514b94872f161f540620067b6d)",
+      "expected_head_sha": "8b77715ba4f1b5514b94872f161f540620067b6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T16:18:14.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-blocked-outcome-followup",
+        "head_sha": "8b77715ba4f1b5514b94872f161f540620067b6d",
         "cluster_id": null,
         "job_path": null
       }
