@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T15:10:33.061Z",
+  "updated_at": "2026-10-01T15:10:52.515Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162432:5925424924:2026-10-01T10:23:44Z:clawsweeper_needs_human",
-      "comment_id": "5925424924",
-      "comment_version_key": "5925424924:2026-10-01T10:23:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162432#issuecomment-5925424924",
-      "comment_created_at": "2026-10-01T05:35:51Z",
-      "comment_updated_at": "2026-10-01T10:23:44Z",
-      "comment_body_sha256": "9e10957dff25988bc19b412da17b02072e52abd38f4895ca8dd892ef1e2cc278",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied isolated Gateway runs demonstrate migration, backup, shell effects, explicit/current-policy d...; Review finding: [medium] Verify migrated app authority rejects revoked or reassigned access — src/cron/legacy-default-tool-cap-migration.ts:182 (sha=bafc39646d49e9705b4cc55e1cc4030df4759be7)",
-      "expected_head_sha": "bafc39646d49e9705b4cc55e1cc4030df4759be7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T10:26:42.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-default-cap",
-        "head_sha": "bafc39646d49e9705b4cc55e1cc4030df4759be7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162439:5925523544:2026-10-01T10:22:45Z:clawsweeper_needs_human",
       "comment_id": "5925523544",
@@ -34227,6 +34194,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162516:5934277260:2026-10-01T15:09:24Z:re_review",
+      "comment_id": "5934277260",
+      "comment_version_key": "5934277260:2026-10-01T15:09:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162516#issuecomment-5934277260",
+      "comment_created_at": "2026-10-01T15:09:24Z",
+      "comment_updated_at": "2026-10-01T15:09:24Z",
+      "comment_body_sha256": "a3fda05ba2dfb880c91c953a95cbf5b04cdbbaaf038057db47447c9891857b9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162516,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T15:10:50.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-cancelled-consumer-retention-20261001",
+        "head_sha": "b100d1b622a3819255ccab99e0956050c8706dd9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
