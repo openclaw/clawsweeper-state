@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1564"
 mode: "autonomous"
-run_id: "36849380607"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36849380607"
+run_id: "36851261641"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36851261641"
 head_sha: "7f87179433d0da5a0084141a8e8d7b909988e8a4"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-01T10:32:30.416Z"
+published_at: "2026-10-01T10:50:32.890Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1564"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1564"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36849380607](https://github.com/openclaw/clawsweeper/actions/runs/36849380607)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36851261641](https://github.com/openclaw/clawsweeper/actions/runs/36851261641)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1564
 
 ## Summary
 
-No Companion PR is warranted: the reported rendering trigger belongs to the Gateway Control UI, with an existing upstream repair linked in the issue. Keep #1564 open for recovery validation. No code or GitHub changes were made; build, tests, and runtime reproduction were not run.
+No Companion PR is appropriate: the reported repair belongs to Gateway Control UI CSS and already has a linked upstream implementation candidate. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ No Companion PR is warranted: the reported rendering trigger belongs to the Gate
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1564 | keep_canonical | planned | canonical | Implementation in this repository is blocked by component ownership: the reported repair belongs to openclaw/openclaw and already has a linked candidate. Preserve DragonLi-Mi's reproduction evidence and keep this issue open for current-build Companion typing and IME recovery proof after upstream disposition. |
-| #919 | keep_closed | skipped | independent | Unrelated historical context; no action is required. |
+| #1564 | keep_canonical | planned | canonical | Keep the report open for affected Companion validation. Implementation in this repository is blocked by the repair's upstream ownership; adding a host workaround would duplicate the reported CSS repair without evidence supporting that strategy. |
+| #919 | keep_closed | skipped | independent | Unrelated historical context; no action required. |
 
 ## Needs Human
 
