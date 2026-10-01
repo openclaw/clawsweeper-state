@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163020",
+  "mode": "autonomous",
+  "run_id": "36932312648",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36932312648",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163020.md",
+  "published_at": "2026-10-01T22:52:46.749Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163020",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163020",
+  "canonical_pr": null,
+  "summary": "Verified the source-level false positive on preflight main 6ced196f957fef52040ed0f91a32a738b939ae4f. Prepared a narrow fix artifact. Implementation and failing regression proof are blocked by the read-only host and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#163020",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#163020",
+      "candidate_fix": null,
+      "reason": "A producer-side bug repair remains appropriate, but this host cannot write the regression or patch, install dependencies, or locally validate the branch. Executor must establish a failing production-composition regression before editing; stop for triage if it does not reproduce."
+    },
+    {
+      "target": "#92011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163020",
+      "candidate_fix": null,
+      "reason": "Preserve the merged safeguard and contributor credit; no closeout or branch repair applies."
+    },
+    {
+      "target": "#92271",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163020",
+      "candidate_fix": null,
+      "reason": "Historical behavior contract, with a different failure and repair direction."
+    },
+    {
+      "target": "#115405",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163020",
+      "candidate_fix": null,
+      "reason": "Retain the existing CLI authority contract; this cluster requires no replacement of historical contributor work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163020",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163020",
+      "candidate_fix": null,
+      "reason": "The non-mutating repair plan is clear despite the implementation host blocker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
