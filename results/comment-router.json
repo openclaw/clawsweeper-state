@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:13:50.898Z",
+  "updated_at": "2026-10-01T07:14:59.704Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162268:5923072297:2026-10-01T03:05:55Z:clawsweeper_needs_human",
-      "comment_id": "5923072297",
-      "comment_version_key": "5923072297:2026-10-01T03:05:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162268#issuecomment-5923072297",
-      "comment_created_at": "2026-10-01T01:46:51Z",
-      "comment_updated_at": "2026-10-01T03:05:55Z",
-      "comment_body_sha256": "a979789b7eaba3005e92be5a11a9c1880ef36d6de6803a11b7de4127545fbdae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162268,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater may fail its earlier copy-based ownership admission before reaching this candidate-side fix; the required supported-handoff upgrade run has not establi... (sha=04d02b063a83e2a30ad265cdb9ef4bf24f491986)",
-      "expected_head_sha": "04d02b063a83e2a30ad265cdb9ef4bf24f491986",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T03:08:05.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-ownership-inspection",
-        "head_sha": "04d02b063a83e2a30ad265cdb9ef4bf24f491986",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162283:5923321020:2026-10-01T03:05:07Z:clawsweeper_auto_repair",
       "comment_id": "5923321020",
@@ -33868,6 +33835,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162496:5926567838:2026-10-01T07:14:04Z:re_review",
+      "comment_id": "5926567838",
+      "comment_version_key": "5926567838:2026-10-01T07:14:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162496#issuecomment-5926567838",
+      "comment_created_at": "2026-10-01T07:14:04Z",
+      "comment_updated_at": "2026-10-01T07:14:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162496,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T07:14:58.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-test-isolation-preloads",
+        "head_sha": "6287c6d4d50020d72d0f65d2d719d8dfdff585ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
