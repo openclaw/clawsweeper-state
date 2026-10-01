@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:34:26.623Z",
+  "updated_at": "2026-10-01T21:35:06.256Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5594449357:2026-09-09T01:38:29Z:re_review",
-      "comment_id": "5594449357",
-      "comment_version_key": "5594449357:2026-09-09T01:38:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5594449357",
-      "comment_created_at": "2026-09-09T01:38:29Z",
-      "comment_updated_at": "2026-09-09T01:38:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T16:10:09.646Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5596402074:2026-09-09T05:39:31Z:re_review",
       "comment_id": "5596402074",
@@ -33397,6 +33370,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162771:5933912384:2026-10-01T21:34:13Z:clawsweeper_needs_human",
+      "comment_id": "5933912384",
+      "comment_version_key": "5933912384:2026-10-01T21:34:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162771#issuecomment-5933912384",
+      "comment_created_at": "2026-10-01T14:49:03Z",
+      "comment_updated_at": "2026-10-01T21:34:13Z",
+      "comment_body_sha256": "45add08717bda33724378b0ae9a173d2712c77946b942a4ee53ccac015605287",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162771,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing-state compatibility remains unverified for the corrected replacement-database scenario: demonstrate same-pass import and preservation of canonical history before relying on r... (sha=253d558337db012cc5b19aaab502210d17fa0682)",
+      "expected_head_sha": "253d558337db012cc5b19aaab502210d17fa0682",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:35:06.256Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-doctor-artifact-receipts",
+        "head_sha": "253d558337db012cc5b19aaab502210d17fa0682",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
