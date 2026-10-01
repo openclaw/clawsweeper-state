@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1564"
 mode: "autonomous"
-run_id: "36840023272"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36840023272"
-head_sha: "7849c6a870349fdd9a5940b9e833d814f4caa02d"
+run_id: "36849380607"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36849380607"
+head_sha: "7f87179433d0da5a0084141a8e8d7b909988e8a4"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-01T09:05:14.231Z"
+published_at: "2026-10-01T10:32:30.416Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1564"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1564"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36840023272](https://github.com/openclaw/clawsweeper/actions/runs/36840023272)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36849380607](https://github.com/openclaw/clawsweeper/actions/runs/36849380607)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1564
 
 ## Summary
 
-No Companion PR is warranted: the hydrated issue identifies Gateway-owned CSS as the trigger and links an existing upstream repair. Keep the issue open pending upstream disposition and Companion validation. No code or GitHub changes were made.
+No Companion PR is warranted: the reported rendering trigger belongs to the Gateway Control UI, with an existing upstream repair linked in the issue. Keep #1564 open for recovery validation. No code or GitHub changes were made; build, tests, and runtime reproduction were not run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ No Companion PR is warranted: the hydrated issue identifies Gateway-owned CSS as
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1564 | keep_canonical | planned | canonical | The job's no-existing-implementation premise is contradicted by the hydrated issue evidence. The requested repair belongs to the Gateway repository and already has a linked implementation candidate; a separate Companion patch is unsupported by the reported root cause. |
-| #919 | keep_closed | skipped | independent | Unrelated closed historical context; no action is needed. |
+| #1564 | keep_canonical | planned | canonical | Implementation in this repository is blocked by component ownership: the reported repair belongs to openclaw/openclaw and already has a linked candidate. Preserve DragonLi-Mi's reproduction evidence and keep this issue open for current-build Companion typing and IME recovery proof after upstream disposition. |
+| #919 | keep_closed | skipped | independent | Unrelated historical context; no action is required. |
 
 ## Needs Human
 
