@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T22:12:32.133Z",
+  "updated_at": "2026-10-01T22:12:51.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162865:5936733688:2026-10-01T17:22:06Z:re_review",
-      "comment_id": "5936733688",
-      "comment_version_key": "5936733688:2026-10-01T17:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162865#issuecomment-5936733688",
-      "comment_created_at": "2026-10-01T17:22:06Z",
-      "comment_updated_at": "2026-10-01T17:22:06Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162865,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T18:06:14.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/prune-stale-max-lines-baseline-20261001",
-        "head_sha": "a80bb2ffbf8ce3c3bd7274ea5fa6dd8d4b674f9d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162774:5936774623:2026-10-01T17:24:42Z:re_review",
       "comment_id": "5936774623",
@@ -32887,6 +32840,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-cli-0-159-1",
         "head_sha": "1be1ac8557c7b07408a0f4cf84d8498b56b7aa85",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162537:5927627427:2026-10-01T22:11:55Z:clawsweeper_needs_human",
+      "comment_id": "5927627427",
+      "comment_version_key": "5927627427:2026-10-01T22:11:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162537#issuecomment-5927627427",
+      "comment_created_at": "2026-10-01T08:23:37Z",
+      "comment_updated_at": "2026-10-01T22:11:55Z",
+      "comment_body_sha256": "af6e4573a65613e9ba2c2b66895ada1449128f526a1b838757173a98f2a3453a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162537,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the GitHub-reported merge conflict, validate any changed resolution, and mark the draft ready for review before landing. (sha=6617e915cf82ff731ec6129a203d22ad49da2e53)",
+      "expected_head_sha": "6617e915cf82ff731ec6129a203d22ad49da2e53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T22:12:51.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/bun-runtime-agnostic-diagnostics",
+        "head_sha": "6617e915cf82ff731ec6129a203d22ad49da2e53",
         "cluster_id": null,
         "job_path": null
       }
