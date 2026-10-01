@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T11:31:32.298Z",
+  "updated_at": "2026-10-01T11:31:50.246Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162464:5925901907:2026-10-01T07:19:11Z:clawsweeper_needs_human",
-      "comment_id": "5925901907",
-      "comment_version_key": "5925901907:2026-10-01T07:19:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162464#issuecomment-5925901907",
-      "comment_created_at": "2026-10-01T06:20:39Z",
-      "comment_updated_at": "2026-10-01T07:19:11Z",
-      "comment_body_sha256": "4129ca063fac694b480087beb3c1a9128d03dc8250afb571dae22aa2ca8ff2a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published updater’s handoff to the packaged candidate remains unverified under the repository’s update-proof policy; the recorded updater probes simulate service boundaries. (sha=a662d4c40e204719fc500a886a62e294cf03225c)",
-      "expected_head_sha": "a662d4c40e204719fc500a886a62e294cf03225c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T07:36:41.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lint-kysely-prerequisite",
-        "head_sha": "1ecad8365cd2e5ebeeec9d4407ad1f6ef3a22f62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162477:5926126374:2026-10-01T07:27:07Z:clawsweeper_needs_human",
       "comment_id": "5926126374",
@@ -33859,6 +33826,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:797:5930420885:2026-10-01T11:31:01Z:freeform_assist",
+      "comment_id": "5930420885",
+      "comment_version_key": "5930420885:2026-10-01T11:31:01Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/797#issuecomment-5930420885",
+      "comment_created_at": "2026-10-01T11:31:01Z",
+      "comment_updated_at": "2026-10-01T11:31:01Z",
+      "comment_body_sha256": "83ceceecba87b843b144725282ee5b49fd442c27301fd38f9820a12783057fa2",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 797,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "/review please review the native initialization boundary at c4945f82dfd33913246d03da85bcd072d87ce796. the regression fails before the fix and passes on node 24, stock bun, and the checksum-verified openclaw bun prerelease. full ci is running; the import-context limitation is documented in the pr and native architecture guide.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T11:31:47.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-init-async-context-w41",
+        "head_sha": "c4945f82dfd33913246d03da85bcd072d87ce796",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
