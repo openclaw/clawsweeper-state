@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:26:16.287Z",
+  "updated_at": "2026-10-01T14:30:22.679Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152585:5929148689:2026-10-01T10:02:29Z:re_review",
-      "comment_id": "5929148689",
-      "comment_version_key": "5929148689:2026-10-01T10:02:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152585#issuecomment-5929148689",
-      "comment_created_at": "2026-10-01T10:02:29Z",
-      "comment_updated_at": "2026-10-01T10:02:29Z",
-      "comment_body_sha256": "cd61912fdc38216e14e02b4ecb6a6c0445c7a1637c70e611c12fa431d297a528",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152585,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T10:03:24.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-memory-path-stale-statistics",
-        "head_sha": "e6aeaca7f427f6d9f6ef7623f9e346ebdeb6eece",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-10-01T10:02:20Z:clawsweeper_needs_human",
       "comment_id": "5659092617",
@@ -34241,6 +34194,39 @@
         "kind": "pull_request",
         "branch": "feat/memory-host-audience",
         "head_sha": "a58687c0f57e774bccd2da034db3ada7ab8019a2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132860:5465086483:2026-10-01T14:29:11Z:clawsweeper_needs_human",
+      "comment_id": "5465086483",
+      "comment_version_key": "5465086483:2026-10-01T14:29:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132860#issuecomment-5465086483",
+      "comment_created_at": "2026-08-29T21:51:02Z",
+      "comment_updated_at": "2026-10-01T14:29:11Z",
+      "comment_body_sha256": "a78b2f061306d83321f97f6f7907bbbae7b22258406fe04b639dba9ca712c70c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Google Chat monitor is exercised through its registered event processor with mocked inbound execution and mocked platform calls. No... (sha=5d0a48973da72ddd4f9c07e9fcd9f541a762ddfe)",
+      "expected_head_sha": "5d0a48973da72ddd4f9c07e9fcd9f541a762ddfe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T14:30:22.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-googlechat-typing-placeholder-leak",
+        "head_sha": "5d0a48973da72ddd4f9c07e9fcd9f541a762ddfe",
         "cluster_id": null,
         "job_path": null
       }
