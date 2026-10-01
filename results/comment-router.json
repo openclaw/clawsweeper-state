@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:02:51.958Z",
+  "updated_at": "2026-10-01T02:02:52.855Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159040:5848107200:2026-09-30T19:53:49Z:clawsweeper_needs_human",
-      "comment_id": "5848107200",
-      "comment_version_key": "5848107200:2026-09-30T19:53:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159040#issuecomment-5848107200",
-      "comment_created_at": "2026-09-26T16:58:14Z",
-      "comment_updated_at": "2026-09-30T19:53:49Z",
-      "comment_body_sha256": "f5c5eb005534668482450e2d5b2eb189c6cb9e191de33fcddbbe90e93190c6dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the durable bearer lifetime** - The plugin privately retains a bearer that may trigger a native-child continuation for up to seven days after tool execution; live plugin and chi...; Review finding: [medium] Approve the durable bearer lifetime — src/agents/plugin-async-callback.store.ts:24 (sha=f2ffcc839fa799ca5843de5d81346b49d9de9f83)",
-      "expected_head_sha": "f2ffcc839fa799ca5843de5d81346b49d9de9f83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T20:03:01.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/durable-plugin-callback",
-        "head_sha": "836bf8600c9e1355bf438d8c6ae72771fda62dd0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159396:5852450262:2026-09-30T19:57:16Z:clawsweeper_needs_human",
       "comment_id": "5852450262",
@@ -33291,6 +33258,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162215:5923233198:2026-10-01T02:01:59Z:re_review",
+      "comment_id": "5923233198",
+      "comment_version_key": "5923233198:2026-10-01T02:01:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162215#issuecomment-5923233198",
+      "comment_created_at": "2026-10-01T02:01:59Z",
+      "comment_updated_at": "2026-10-01T02:01:59Z",
+      "comment_body_sha256": "0053497a249fe9b154878f0b053bdff9603d4915f3384e475ba11861296fb99d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162215,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T02:02:51.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-doctor-native-assignment-lazy-3bf892b2",
+        "head_sha": "38645fb1592d23b59034c1efe9cf96fec020d3b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162277:5923232013:2026-10-01T02:01:52Z:clawsweeper_needs_human",
