@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T05:45:53.177Z",
+  "updated_at": "2026-10-01T05:46:12.906Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3877:5922764487:2026-10-01T01:18:06Z:clawsweeper_needs_human",
-      "comment_id": "5922764487",
-      "comment_version_key": "5922764487:2026-10-01T01:18:06Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3877#issuecomment-5922764487",
-      "comment_created_at": "2026-10-01T01:18:06Z",
-      "comment_updated_at": "2026-10-01T01:18:06Z",
-      "comment_body_sha256": "f961ec2255df50fed355b0169c65fd89a95c79db8c5e998b0ea112aa90b83e31",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR body reports a live staging branch URL returning the new backend and exact build SHA after depl...; Review finding: [P2] Require a staging-specific edge identity — convex/lib/clawhubVercelOidc.ts:37-38 - [medium] Preview identity crosses the staging edge boundary — convex/lib/cl... (sha=c5a2b7af1cb744d9f009bb114d60d3a394b69625)",
-      "expected_head_sha": "c5a2b7af1cb744d9f009bb114d60d3a394b69625",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T01:18:57.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "staging",
-        "head_sha": "c5a2b7af1cb744d9f009bb114d60d3a394b69625",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4148:5922765501:2026-10-01T01:18:11Z:clawsweeper_auto_repair",
       "comment_id": "5922765501",
@@ -33993,6 +33960,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159326:5925521906:2026-10-01T05:45:17Z:re_review",
+      "comment_id": "5925521906",
+      "comment_version_key": "5925521906:2026-10-01T05:45:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159326#issuecomment-5925521906",
+      "comment_created_at": "2026-10-01T05:45:17Z",
+      "comment_updated_at": "2026-10-01T05:45:17Z",
+      "comment_body_sha256": "60d36c6e1cb65bb7815f97d13631acd9300da1272976a18be03b46c70fab7509",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159326,
+      "author": "stevenlee-oai",
+      "author_id": 213687449,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T05:46:11.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/siwc-host-identity",
+        "head_sha": "319d12eb3cd74389086d6b1e4cff922662d5f062",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
