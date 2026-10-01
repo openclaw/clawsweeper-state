@@ -2,12 +2,12 @@
 repo: "openclaw/clawsweeper"
 cluster_id: "issue-openclaw-clawsweeper-1128"
 mode: "autonomous"
-run_id: "36822583329"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36822583329"
-head_sha: "cac974b3e1da900cac3e7480b91d02a36ca60163"
+run_id: "36831634218"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36831634218"
+head_sha: "2f777941de926c6f11cb0c6363ecfe4bbee94371"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-01T06:05:17.194Z"
+published_at: "2026-10-01T07:44:11.590Z"
 canonical: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_issue: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/clawsweeper
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36822583329](https://github.com/openclaw/clawsweeper/actions/runs/36822583329)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36831634218](https://github.com/openclaw/clawsweeper/actions/runs/36831634218)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/clawsweeper/issues/1128
 
 ## Summary
 
-The roadmap remains valid on supplied main cac974b3e1da900cac3e7480b91d02a36ca60163, but its remaining conversion exceeds one narrow implementation PR: a fresh strict probe reports 1,144 diagnostics across the Worker and review queue. Implementation is blocked pending a narrower scope; no code changes or GitHub mutations were made, and no executable fix artifact is emitted.
+The roadmap remains valid on supplied main 2f777941de926c6f11cb0c6363ecfe4bbee94371, but completing it exceeds one narrow automated PR: the remaining two modules contain 1,144 strict diagnostics across 31,549 lines. No code or GitHub mutations were made. Implementation also requires a writable checkout.
 
 ## Impact
 
@@ -66,15 +66,15 @@ The roadmap remains valid on supplied main cac974b3e1da900cac3e7480b91d02a36ca60
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1128 | keep_canonical | planned | canonical | Earlier merged slices advanced the roadmap without completing it. Keep the canonical issue open. |
-| cluster:issue-openclaw-clawsweeper-1128 | needs_human | blocked | needs_human | A maintainer must define a narrower implementation job compatible with the phased roadmap. Completion requires several separately proven behavioral conversions before the global configuration flip; the current job requires one PR satisfying the entire issue and explicitly forbids proceeding when that scope is too broad. |
-| #1132 | keep_closed | skipped | related | Historical evidence for a completed phase. |
-| #1141 | keep_closed | skipped | related | Historical evidence for the existing migration mechanism. |
-| #1552 | keep_closed | skipped | related | Historical evidence for a completed slice. |
-| #1553 | keep_closed | skipped | related | Historical evidence for boundary-first conversion. |
-| #1554 | keep_closed | skipped | related | Historical evidence for a completed slice. |
-| #1705 | keep_closed | skipped | related | Historical evidence for current strict coverage. |
+| #1128 | keep_canonical | planned | canonical | Merged slices advanced the migration without completing its remaining monolith conversions. Keep the roadmap open. |
+| #1132 | keep_closed | skipped | related | Historical evidence of a completed phase. |
+| #1141 | keep_closed | skipped | related | Historical evidence of a completed phase. |
+| #1552 | keep_closed | skipped | related | Historical evidence of a completed phase. |
+| #1553 | keep_closed | skipped | related | Historical evidence of a completed phase. |
+| #1554 | keep_closed | skipped | related | Historical evidence of a completed phase. |
+| #1705 | keep_closed | skipped | related | Historical evidence of the latest completed allowlist slice. |
+| cluster:issue-openclaw-clawsweeper-1128 | needs_human | blocked | needs_human | Maintainer judgment is needed to bound the implementation request to one behavioral migration slice or retain it as a multi-PR roadmap. The current job requires one focused PR satisfying the issue; selecting a partial slice would change that scope. No executable fix path is proposed. |
 
 ## Needs Human
 
-- Define a narrower implementation job for https://github.com/openclaw/clawsweeper/issues/1128. The supplied main probe reports 825 Worker and 319 queue diagnostics across multiple behavioral regions; one narrow PR cannot complete the umbrella roadmap, and the current job requires a closing reference while explicitly forbidding implementation when the scope is too broad.
+- For https://github.com/openclaw/clawsweeper/issues/1128, decide whether to authorize one explicitly bounded behavioral migration slice or retain the remaining conversion as a multi-PR roadmap. The supplied inventory contains 1,144 diagnostics across dashboard/worker.ts and dashboard/exact-review-queue.ts and does not establish a narrow implementation satisfying the current one-PR job.
