@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:44:03.846Z",
+  "updated_at": "2026-10-01T10:44:53.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159147:5926254601:2026-10-01T06:50:28Z:re_review",
-      "comment_id": "5926254601",
-      "comment_version_key": "5926254601:2026-10-01T06:50:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159147#issuecomment-5926254601",
-      "comment_created_at": "2026-10-01T06:50:28Z",
-      "comment_updated_at": "2026-10-01T06:50:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159147,
-      "author": "mnowrot",
-      "author_id": 135707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:51:47.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-command-runtime-reuse",
-        "head_sha": "e7f9fd600bc807c30e0402d94e65a35c5f136c9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162033:5926272171:2026-10-01T06:51:54Z:re_review",
       "comment_id": "5926272171",
@@ -33882,6 +33835,39 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/oce-stream-watch-records",
         "head_sha": "c210bd9f948f0310dbb09f24235784d9e2377aad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162374:5924649453:2026-10-01T10:43:51Z:clawsweeper_needs_human",
+      "comment_id": "5924649453",
+      "comment_version_key": "5924649453:2026-10-01T10:43:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162374#issuecomment-5924649453",
+      "comment_created_at": "2026-10-01T04:18:20Z",
+      "comment_updated_at": "2026-10-01T10:43:51Z",
+      "comment_body_sha256": "0f065f85e7272152a07f56b1e655abaacfd527349f77905b27ccde8f72024f82",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic completion turns containing child output gain policy-permitted requester tools, including write or exec where allowed; the required security approval for this exact head is... (sha=bc20189b9426f0e1d9031bcf51fd4d3cf5aca1cb)",
+      "expected_head_sha": "bc20189b9426f0e1d9031bcf51fd4d3cf5aca1cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:44:53.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-completion-tools",
+        "head_sha": "bc20189b9426f0e1d9031bcf51fd4d3cf5aca1cb",
         "cluster_id": null,
         "job_path": null
       }
