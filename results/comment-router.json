@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:11:00.376Z",
+  "updated_at": "2026-10-01T10:11:17.338Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:787:5925525998:2026-10-01T06:11:38Z:clawsweeper_needs_human",
-      "comment_id": "5925525998",
-      "comment_version_key": "5925525998:2026-10-01T06:11:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/787#issuecomment-5925525998",
-      "comment_created_at": "2026-10-01T05:45:41Z",
-      "comment_updated_at": "2026-10-01T06:11:38Z",
-      "comment_body_sha256": "f00a0a209a107e27407df6e499b3a804fd23df65033c0860ac25a55043ae14b7",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 787,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0603468eb5d870765c6dc22bf34e09686b81a9aa)",
-      "expected_head_sha": "0603468eb5d870765c6dc22bf34e09686b81a9aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T06:17:06.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/oce-reuse-analyzer-package-owners",
-        "head_sha": "0603468eb5d870765c6dc22bf34e09686b81a9aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:784:5925508109:2026-10-01T06:11:50Z:clawsweeper_needs_human",
       "comment_id": "5925508109",
@@ -33863,6 +33830,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150623:5929261284:2026-10-01T10:10:21Z:re_review",
+      "comment_id": "5929261284",
+      "comment_version_key": "5929261284:2026-10-01T10:10:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150623#issuecomment-5929261284",
+      "comment_created_at": "2026-10-01T10:10:21Z",
+      "comment_updated_at": "2026-10-01T10:10:21Z",
+      "comment_body_sha256": "9a628e72c2d5bbc801da1d0ad99298041e9d3eb9d22eea1e8d5e25ba5b924bac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150623,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — exact head 0fe267503297addd35bf4aa880fb6eedaa59c2ed. the pr body now includes current-main versus candidate real-gateway evidence and a large-active-context control. the gateway regression now catches the actual extra persisted compaction, not merely provider request count. no stored-data contract changes",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T10:11:16.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-window-token-estimate",
+        "head_sha": "0fe267503297addd35bf4aa880fb6eedaa59c2ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
