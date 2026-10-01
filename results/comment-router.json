@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-01T05:26:17.157Z",
+  "updated_at": "2026-10-01T05:24:54.264Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161871:5911654273:2026-10-01T00:37:06Z:clawsweeper_needs_human",
+      "comment_id": "5911654273",
+      "comment_version_key": "5911654273:2026-10-01T00:37:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161871#issuecomment-5911654273",
+      "comment_created_at": "2026-09-30T12:50:48Z",
+      "comment_updated_at": "2026-10-01T00:37:06Z",
+      "comment_body_sha256": "c7b3f3b41319bf34923ae5aa80d7bfb0798836b7dddffe20c0aa59913415e82a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161871,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head conflicts with current main in the transcript-reader test import block; a resolution must retain both main's reset-boundary reader and this branch's suite cleanup helper. (sha=0f374490ccc50696cae4cade3aa521aa2dba768f)",
+      "expected_head_sha": "0f374490ccc50696cae4cade3aa521aa2dba768f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T00:37:55.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-store-agent-db-drain",
+        "head_sha": "0f374490ccc50696cae4cade3aa521aa2dba768f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162141:5920132008:2026-10-01T00:37:11Z:clawsweeper_auto_repair",
       "comment_id": "5920132008",
@@ -33848,53 +33881,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162192:5925314417:2026-10-01T05:25:17Z:re_review",
-      "comment_id": "5925314417",
-      "comment_version_key": "5925314417:2026-10-01T05:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162192#issuecomment-5925314417",
-      "comment_created_at": "2026-10-01T05:25:17Z",
-      "comment_updated_at": "2026-10-01T05:25:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162192,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T05:26:15.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cron-quarantine-writes-20260930",
-        "head_sha": "c9fdd3397da4967e11c62b65d814285a3361d502",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
