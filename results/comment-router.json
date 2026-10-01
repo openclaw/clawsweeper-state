@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:31:04.701Z",
+  "updated_at": "2026-10-01T07:31:17.096Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1710:5867727578:2026-09-28T10:01:42Z:re_review",
-      "comment_id": "5867727578",
-      "comment_version_key": "5867727578:2026-09-28T10:01:42Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1710#issuecomment-5867727578",
-      "comment_created_at": "2026-09-28T10:01:42Z",
-      "comment_updated_at": "2026-09-28T10:01:42Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1710,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T03:32:03.578Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/scheduled-backfill-budget",
-        "head_sha": "b67d265eae5f0a520da986d17c9b969d5c46cd69",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1710:5863863150:2026-10-01T03:29:38Z:clawsweeper_needs_human",
       "comment_id": "5863863150",
@@ -33800,6 +33753,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162245:5922786174:2026-10-01T07:29:48Z:clawsweeper_needs_human",
+      "comment_id": "5922786174",
+      "comment_version_key": "5922786174:2026-10-01T07:29:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162245#issuecomment-5922786174",
+      "comment_created_at": "2026-10-01T01:20:11Z",
+      "comment_updated_at": "2026-10-01T07:29:48Z",
+      "comment_body_sha256": "9ffba72fbc07d9161cbed9a471d08c7b0d69b4d949786644562681db2b342bfd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162245,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: real resolver and SQLite regressions demonstrate normalization and exact replacement checks with synth...; Review finding: [medium] Verify normalized grants at the final effect boundary — src/cli/update-cli/update-command-executor-grant.ts:92 (sha=2cc6107554dc55d1628b467022139d96401400be)",
+      "expected_head_sha": "2cc6107554dc55d1628b467022139d96401400be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T07:31:17.096Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-windows-bigint-lease-identity",
+        "head_sha": "2cc6107554dc55d1628b467022139d96401400be",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
