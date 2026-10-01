@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T20:38:54.950Z",
+  "updated_at": "2026-10-01T20:39:12.864Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162756:5933370091:2026-10-01T14:19:09Z:re_review",
-      "comment_id": "5933370091",
-      "comment_version_key": "5933370091:2026-10-01T14:19:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162756#issuecomment-5933370091",
-      "comment_created_at": "2026-10-01T14:19:09Z",
-      "comment_updated_at": "2026-10-01T14:19:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162756,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T14:20:55.762Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stall-after-delivery",
-        "head_sha": "50a09f1e574729633744db78d7ddb06a8708692a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162753:5933379968:2026-10-01T14:19:41Z:clawsweeper_needs_human",
       "comment_id": "5933379968",
@@ -33522,6 +33475,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162920:5938396647:2026-10-01T20:38:13Z:clawsweeper_needs_human",
+      "comment_id": "5938396647",
+      "comment_version_key": "5938396647:2026-10-01T20:38:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162920#issuecomment-5938396647",
+      "comment_created_at": "2026-10-01T18:56:07Z",
+      "comment_updated_at": "2026-10-01T20:38:13Z",
+      "comment_body_sha256": "cce645706ce2164d63f6c02bab8af5c5102f54ccac6c704113e16b3b8a89f5d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing or restored legacy ACP state now blocks startup until Doctor succeeds; the required published-updater × candidate proof has not established automatic repair and successful st... (sha=83fecd5545d3d34baaaf1f87cc0f97c8a5927b05)",
+      "expected_head_sha": "83fecd5545d3d34baaaf1f87cc0f97c8a5927b05",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T20:39:12.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-doctor-canonical-metadata",
+        "head_sha": "83fecd5545d3d34baaaf1f87cc0f97c8a5927b05",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
