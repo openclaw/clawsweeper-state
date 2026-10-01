@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1583"
-mode: "autonomous"
-run_id: "36941661924"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36941661924"
+mode: "plan"
+run_id: "36943238009"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36943238009"
 head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T23:40:39.571Z"
-canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1583"
-canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1583"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T23:57:08.713Z"
+canonical: "#1583"
+canonical_issue: "#1583"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36941661924](https://github.com/openclaw/clawsweeper/actions/runs/36941661924)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36943238009](https://github.com/openclaw/clawsweeper/actions/runs/36943238009)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1583
+Canonical: #1583
 
 ## Summary
 
-Confirmed the Companion terminal-event delivery gap on supplied main 76ab839973aad5d74b983740440c4e82fb5ed8ba. Prepared a narrow fix plan. Implementation is blocked by the read-only workspace; validation also lacks .NET SDK 10.0.400. No code or GitHub state changed.
+Current main still drops message-less terminal errors from native chat. Plan a focused Companion repair through the existing lifecycle owners. No code or GitHub changes were made; validation remains pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Confirmed the Companion terminal-event delivery gap on supplied main 76ab839973a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1583 | fix_needed | planned | canonical | The Companion defect remains present and has a bounded repair path. Implementation, review, and current-head behavior proof require a writable Windows validation environment. |
-| #1462 | keep_related | planned | related | Related symptom, but no evidence establishes the same root cause. Preserve its unique completion and cancellation investigation. |
-| #1570 | route_security | planned | security_sensitive | Quarantine this exact reference for central OpenClaw security handling without commenting, labeling, reopening, or changing it. Its classification does not block the unrelated Companion event-delivery fix. |
-| #160075 | needs_human | blocked | needs_human | Blocked only for this unavailable reference: verify the repository identity and hydrate the actual upstream item before assigning its kind, updated_at, state, or coverage. Do not fabricate metadata or mutate the unavailable local target. Retain upstream references as contextual evidence. |
-| cluster:issue-openclaw-openclaw-windows-node-1583 | build_fix_artifact | planned |  | Return an executable narrow repair plan for the applicator while accurately recording the environment blocker. |
+| #1583 | fix_needed | planned | canonical | A narrow Companion error-delivery fix remains viable without changing Local AI setup, Gateway ownership, or security boundaries. |
+| #1462 | keep_related | planned | related | The shared thinking symptom does not establish the same terminal-error root cause. Preserve its distinct reproduction and recovery work. |
+| #1570 | route_security | planned | security_sensitive | Quarantine this exact historical item for central OpenClaw security handling. No comment, label, closure, merge, or repair is proposed for it. |
+| #160075 | needs_human | blocked | needs_human | Blocked pending resolution of the misqualified reference and hydration of its actual repository metadata. Do not invent a target kind or timestamp, infer closed state from the classification hint, or perform any GitHub mutation for this item. |
 
 ## Needs Human
 
-- #160075: preflight hydrated the wrong-repository local reference with HTTP 404, kind unknown, and updated_at null. Verify and hydrate openclaw/openclaw/pull/160075 before making item-state or coverage claims; no mutation is authorized for this unavailable target.
+- #160075: Resolve the misqualified reference against https://github.com/openclaw/openclaw/pull/160075 and hydrate its actual kind and updated_at before restoring a classified action. The target-repository preflight returned HTTP 404, kind unknown, and updated_at null.
