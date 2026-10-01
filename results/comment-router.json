@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:19:47.050Z",
+  "updated_at": "2026-10-01T07:19:48.787Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162314:5924030600:2026-10-01T03:18:06Z:re_review",
-      "comment_id": "5924030600",
-      "comment_version_key": "5924030600:2026-10-01T03:18:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162314#issuecomment-5924030600",
-      "comment_created_at": "2026-10-01T03:18:06Z",
-      "comment_updated_at": "2026-10-01T03:18:06Z",
-      "comment_body_sha256": "f487ba9d217b319d51c34b97b5d59342972518572b992e5403b7fde3f124bbdc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162314,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T03:19:01.262Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/claws-minimal-control-ui",
-        "head_sha": "fb8255630228c394714b7306947b77e6ac56a79b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162263:5923058897:2026-10-01T03:18:13Z:clawsweeper_needs_human",
       "comment_id": "5923058897",
@@ -33853,6 +33806,39 @@
         "kind": "pull_request",
         "branch": "maintenance/poltergeist-round7-20260930",
         "head_sha": "4a86289f6378218d7e9524e31dbe7033590b9fd0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148025:5660275542:2026-10-01T07:18:38Z:clawsweeper_needs_human",
+      "comment_id": "5660275542",
+      "comment_version_key": "5660275542:2026-10-01T07:18:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148025#issuecomment-5660275542",
+      "comment_created_at": "2026-09-14T07:05:24Z",
+      "comment_updated_at": "2026-10-01T07:18:38Z",
+      "comment_body_sha256": "59f9938c8b0f8ddca1a70df80a9a402da14888c8ffdac80c9d30cd680b392c3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the focused regression file's measured cost in the PR body using pnpm test src/auto-reply/reply/queue.drain-scope.test.ts --maxWorkers=1, and include CI seconds once available. (sha=e53fa8cd8988c2eadfef124e04a82e3a5c451bb0)",
+      "expected_head_sha": "e53fa8cd8988c2eadfef124e04a82e3a5c451bb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T07:19:48.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-followup-drain-detached-scope",
+        "head_sha": "e53fa8cd8988c2eadfef124e04a82e3a5c451bb0",
         "cluster_id": null,
         "job_path": null
       }
