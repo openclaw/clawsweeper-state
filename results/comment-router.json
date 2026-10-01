@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:18:53.704Z",
+  "updated_at": "2026-10-01T21:19:03.734Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162796:5935310617:2026-10-01T16:01:46Z:re_review",
-      "comment_id": "5935310617",
-      "comment_version_key": "5935310617:2026-10-01T16:01:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162796#issuecomment-5935310617",
-      "comment_created_at": "2026-10-01T16:01:46Z",
-      "comment_updated_at": "2026-10-01T16:01:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162796,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T16:02:53.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-mcp-runtime-cache-reset-20261001",
-        "head_sha": "af357e3d281c66f5cf1d0d658468e5e78e87728f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160442:5935050576:2026-10-01T15:48:06Z:re_review",
       "comment_id": "5935050576",
@@ -33164,6 +33117,39 @@
         "kind": "pull_request",
         "branch": "fix/mcp-node26-stream-rejection",
         "head_sha": "128189c2ecaaf2126d51cdc8f47a615a8831520f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154384:5755235592:2026-10-01T21:17:48Z:clawsweeper_needs_human",
+      "comment_id": "5755235592",
+      "comment_version_key": "5755235592:2026-10-01T21:17:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154384#issuecomment-5755235592",
+      "comment_created_at": "2026-09-21T04:05:14Z",
+      "comment_updated_at": "2026-10-01T21:17:48Z",
+      "comment_body_sha256": "92eef71a335823ce7208456695af220569b40d85336a9f666c60998698769977",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154384,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required published-driver × candidate update cell is missing; recorded candidate-runtime results do not establish installed-driver admission, launcher activation, and upload recov... (sha=c0b84345bf0f69c7e079867a2e4597f87e97f687)",
+      "expected_head_sha": "c0b84345bf0f69c7e079867a2e4597f87e97f687",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:19:03.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-browser-proxy-upload-retry-cap",
+        "head_sha": "c0b84345bf0f69c7e079867a2e4597f87e97f687",
         "cluster_id": null,
         "job_path": null
       }
