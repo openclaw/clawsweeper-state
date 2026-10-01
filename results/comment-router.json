@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T00:54:46.476Z",
+  "updated_at": "2026-10-01T00:55:16.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161990:5915641163:2026-09-30T18:03:11Z:clawsweeper_needs_human",
-      "comment_id": "5915641163",
-      "comment_version_key": "5915641163:2026-09-30T18:03:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161990#issuecomment-5915641163",
-      "comment_created_at": "2026-09-30T16:44:03Z",
-      "comment_updated_at": "2026-09-30T18:03:11Z",
-      "comment_body_sha256": "7fc6a6bcd21c0707a8830c2ccdaaee9886e12d1bb19b136e4623ad34363cc479",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161990,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A native Windows cancellation run has not yet shown the Scheduled Task returning to its prior autostart state while stale or changed task ownership is refused. (sha=50f76a5f080b53d4329e88279b809399d2854925)",
-      "expected_head_sha": "50f76a5f080b53d4329e88279b809399d2854925",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T18:21:33.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/sqlite-snapshot-cwd-20260930",
-        "head_sha": "50f76a5f080b53d4329e88279b809399d2854925",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162015:5916576049:2026-09-30T18:01:06Z:clawsweeper_auto_repair",
       "comment_id": "5916576049",
@@ -33435,6 +33402,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:845:5922071213:2026-10-01T00:54:25Z:clawsweeper_needs_human",
+      "comment_id": "5922071213",
+      "comment_version_key": "5922071213:2026-10-01T00:54:25Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/845#issuecomment-5922071213",
+      "comment_created_at": "2026-10-01T00:16:01Z",
+      "comment_updated_at": "2026-10-01T00:54:25Z",
+      "comment_body_sha256": "147ee230be61b893d36483c65c8e71c1b402e77b7afb621afc2e6053fd58586e",
+      "repo": "openclaw/acpx",
+      "issue_number": 845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **\\[P2\\] Preserve line breaks in file-write approval previews (P2)** - This was missed in the earlier review; the production code is unchanged since that reviewed head. toWritePreview deliberately keeps up to 16 s...; Review finding: [P2] [P2] Preserve line breaks in file-write approval previews — src/filesystem.ts:55 - [low] File-write approval preview loses line layout — src/filesystem.ts:55 (sha=160ab276ff983f70c814c153942348550bfd2e64)",
+      "expected_head_sha": "160ab276ff983f70c814c153942348550bfd2e64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T00:55:16.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/permission-prompt-controls",
+        "head_sha": "160ab276ff983f70c814c153942348550bfd2e64",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
