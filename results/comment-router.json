@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:15:05.526Z",
+  "updated_at": "2026-10-01T10:15:13.939Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162460:5925820170:2026-10-01T06:13:33Z:re_review",
-      "comment_id": "5925820170",
-      "comment_version_key": "5925820170:2026-10-01T06:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162460#issuecomment-5925820170",
-      "comment_created_at": "2026-10-01T06:13:33Z",
-      "comment_updated_at": "2026-10-01T06:13:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162460,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:21:03.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-spawn-only-summary",
-        "head_sha": "7105901bbea0e81161919f3afdf9e91d088a4127",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162460:5925833007:2026-10-01T06:19:57Z:clawsweeper_needs_human",
       "comment_id": "5925833007",
@@ -33890,6 +33843,39 @@
         "kind": "pull_request",
         "branch": "codex/updater-journal-lifecycle",
         "head_sha": "6de0f4e5111603db6a623dc310be20b1dfb3dfa8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162166:5920496361:2026-10-01T10:14:12Z:clawsweeper_needs_human",
+      "comment_id": "5920496361",
+      "comment_version_key": "5920496361:2026-10-01T10:14:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162166#issuecomment-5920496361",
+      "comment_created_at": "2026-09-30T22:02:15Z",
+      "comment_updated_at": "2026-10-01T10:14:12Z",
+      "comment_body_sha256": "1f30022c7cd1923b5f64c77448f5d8e15402b6a4ffd26a27ded2d070d460d402",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Final-candidate cancellation, failed final-reference retry, and sibling-lifetime results remain unrecorded; awaited retirement still needs confirmation that it settles without stalls... (sha=80c3bdc1232e7ed4acdd36f4e3c75a396c92486e)",
+      "expected_head_sha": "80c3bdc1232e7ed4acdd36f4e3c75a396c92486e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:15:13.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-lifetime-wal",
+        "head_sha": "80c3bdc1232e7ed4acdd36f4e3c75a396c92486e",
         "cluster_id": null,
         "job_path": null
       }
