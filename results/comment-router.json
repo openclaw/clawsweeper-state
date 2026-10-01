@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T09:05:59.774Z",
+  "updated_at": "2026-10-01T09:06:33.734Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162391:5925275984:2026-10-01T05:21:26Z:re_review",
-      "comment_id": "5925275984",
-      "comment_version_key": "5925275984:2026-10-01T05:21:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162391#issuecomment-5925275984",
-      "comment_created_at": "2026-10-01T05:21:26Z",
-      "comment_updated_at": "2026-10-01T05:21:26Z",
-      "comment_body_sha256": "d8d140bcb2034933dcc0a3c6d4c3141af37f74055e71a46c5374121fe0505f5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162391,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T05:39:47.012Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-blocked-outcome",
-        "head_sha": "7eaa535871c1557abc9a650e639d2f8b1e37bc20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:528:5925249300:2026-10-01T05:36:42Z:clawsweeper_needs_human",
       "comment_id": "5925249300",
@@ -33481,6 +33434,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162488:5926333914:2026-10-01T09:05:25Z:clawsweeper_needs_human",
+      "comment_id": "5926333914",
+      "comment_version_key": "5926333914:2026-10-01T09:05:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162488#issuecomment-5926333914",
+      "comment_created_at": "2026-10-01T06:57:00Z",
+      "comment_updated_at": "2026-10-01T09:05:25Z",
+      "comment_body_sha256": "32fa5c379c3e739b6c133299a547a5e1e12476c351c67271ae7c5549b004413f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the confirmed merge conflicts and record successful pnpm build validation covering the resulting SDK and bundled-provider import topology, reusing a valid covering result if a... (sha=137d00ad932f320f50180f10328b4831f0d5312e)",
+      "expected_head_sha": "137d00ad932f320f50180f10328b4831f0d5312e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T09:06:33.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l267-dup-providers2-sweep",
+        "head_sha": "137d00ad932f320f50180f10328b4831f0d5312e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
