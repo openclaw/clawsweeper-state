@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:29:25.111Z",
+  "updated_at": "2026-10-01T07:29:42.831Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162268:5923072297:2026-10-01T03:29:30Z:clawsweeper_needs_human",
-      "comment_id": "5923072297",
-      "comment_version_key": "5923072297:2026-10-01T03:29:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162268#issuecomment-5923072297",
-      "comment_created_at": "2026-10-01T01:46:51Z",
-      "comment_updated_at": "2026-10-01T03:29:30Z",
-      "comment_body_sha256": "77a0520503f3fbebb8d91b5cc3beffe6b4c5b54c450c562f7569f1897cdaca8e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162268,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=666f7010e0dc3d4bad0aa3772811b51b51bc4604)",
-      "expected_head_sha": "666f7010e0dc3d4bad0aa3772811b51b51bc4604",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T03:30:33.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-ownership-inspection",
-        "head_sha": "666f7010e0dc3d4bad0aa3772811b51b51bc4604",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162344:5924159985:2026-10-01T03:30:54Z:clawsweeper_needs_human",
       "comment_id": "5924159985",
@@ -33758,6 +33725,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141345:5926800645:2026-10-01T07:28:36Z:re_review",
+      "comment_id": "5926800645",
+      "comment_version_key": "5926800645:2026-10-01T07:28:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141345#issuecomment-5926800645",
+      "comment_created_at": "2026-10-01T07:28:36Z",
+      "comment_updated_at": "2026-10-01T07:28:36Z",
+      "comment_body_sha256": "2a8646c63f370d97cb0d3802a113e8d6b67adc95383a30892345f9117e4962d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141345,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T07:29:34.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failover-rate-limit-leg-hint",
+        "head_sha": "11b7e8a56d952872a06edec7ad7e063dccfea382",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
