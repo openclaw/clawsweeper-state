@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T18:21:20.707Z",
+  "updated_at": "2026-10-01T18:23:57.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162483:5931164037:2026-10-01T12:13:38Z:re_review",
-      "comment_id": "5931164037",
-      "comment_version_key": "5931164037:2026-10-01T12:13:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162483#issuecomment-5931164037",
-      "comment_created_at": "2026-10-01T12:13:38Z",
-      "comment_updated_at": "2026-10-01T12:13:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162483,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T12:14:35.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-home-display-boundaries",
-        "head_sha": "03c1bad98fe917120f295c5fec0f5555a2476afa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162522:5931184155:2026-10-01T12:14:37Z:re_review",
       "comment_id": "5931184155",
@@ -34308,6 +34261,39 @@
         "kind": "pull_request",
         "branch": "dbasync/profile-authority",
         "head_sha": "3c23dc3fa1f385118e0e89ba879b1c9b6d0db8d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162911:5937783862:2026-10-01T18:22:55Z:clawsweeper_needs_human",
+      "comment_id": "5937783862",
+      "comment_version_key": "5937783862:2026-10-01T18:22:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162911#issuecomment-5937783862",
+      "comment_created_at": "2026-10-01T18:22:55Z",
+      "comment_updated_at": "2026-10-01T18:22:55Z",
+      "comment_body_sha256": "203356fc434b41c8af6773c44ffd54aa1def6460f5867991ed1b6ab76723e74f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Provide completed focused-test and changed-gate results for the final replay, with measured test wall time. (sha=9325bf5407b312618e1e1ebb15b97956d467b66f)",
+      "expected_head_sha": "9325bf5407b312618e1e1ebb15b97956d467b66f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T18:23:57.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d137-1790875241",
+        "head_sha": "9325bf5407b312618e1e1ebb15b97956d467b66f",
         "cluster_id": null,
         "job_path": null
       }
