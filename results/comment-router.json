@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:48:59.078Z",
+  "updated_at": "2026-10-01T08:49:37.829Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139024:5925358939:2026-10-01T05:29:35Z:re_review",
-      "comment_id": "5925358939",
-      "comment_version_key": "5925358939:2026-10-01T05:29:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139024#issuecomment-5925358939",
-      "comment_created_at": "2026-10-01T05:29:35Z",
-      "comment_updated_at": "2026-10-01T05:29:35Z",
-      "comment_body_sha256": "cb357741cf9cfb89f582f07c3db1088727c5c76066ead22d022f87329899a60a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139024,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T05:30:34.314Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-138955-session-group-defaults-scope-error",
-        "head_sha": "62f51c2670442df5b891b70f922464663e26a393",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161118:5887793948:2026-10-01T05:29:49Z:clawsweeper_needs_human",
       "comment_id": "5887793948",
@@ -33559,6 +33512,39 @@
         "kind": "pull_request",
         "branch": "dependabot/swift/apps/macos/swift-deps-06721367d4",
         "head_sha": "38e7cbc015b3b0fb6b69f5abd0db935ee06a210c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158030:5829942849:2026-10-01T08:48:18Z:clawsweeper_needs_human",
+      "comment_id": "5829942849",
+      "comment_version_key": "5829942849:2026-10-01T08:48:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158030#issuecomment-5829942849",
+      "comment_created_at": "2026-09-25T09:16:20Z",
+      "comment_updated_at": "2026-10-01T08:48:18Z",
+      "comment_body_sha256": "8e7a01ca8d7b05a1da11ff46c56af6a1a0e6151569b8e695e331ec2623baf9fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: exact-head evidence exercises the fork host with mocked dispatch and transport, plus SQLite provenance and work...; Review finding: [P1] Carry replay authority through asynchronous model admission — src/plugins/plugin-command-conversation-fork.ts:487-489 - [P1] Fence fork binding commits after... (sha=19d38e9f4ae3e03ea5fe28c0a9fd8ae0ca3ea0e7)",
+      "expected_head_sha": "19d38e9f4ae3e03ea5fe28c0a9fd8ae0ca3ea0e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T08:49:37.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-conversation-fork",
+        "head_sha": "19d38e9f4ae3e03ea5fe28c0a9fd8ae0ca3ea0e7",
         "cluster_id": null,
         "job_path": null
       }
