@@ -1,60 +1,60 @@
 ---
 repo: "openclaw/clawsweeper"
 cluster_id: "issue-openclaw-clawsweeper-1128"
-mode: "plan"
-run_id: "36820473206"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36820473206"
+mode: "autonomous"
+run_id: "36822583329"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36822583329"
 head_sha: "cac974b3e1da900cac3e7480b91d02a36ca60163"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-01T05:38:02.069Z"
-canonical: "#1128"
-canonical_issue: "#1128"
+published_at: "2026-10-01T06:05:17.194Z"
+canonical: "https://github.com/openclaw/clawsweeper/issues/1128"
+canonical_issue: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_pr: null
-actions_total: 7
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-clawsweeper-1128
 
 Repo: openclaw/clawsweeper
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36820473206](https://github.com/openclaw/clawsweeper/actions/runs/36820473206)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36822583329](https://github.com/openclaw/clawsweeper/actions/runs/36822583329)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #1128
+Canonical: https://github.com/openclaw/clawsweeper/issues/1128
 
 ## Summary
 
-The roadmap remains valid, but completing it exceeds this job's focused-PR scope. Current main has 1,144 strict diagnostics across the two remaining modules. No executable fix artifact is proposed; continue with bounded behavioral-region jobs before the global compiler-flag flip.
+The roadmap remains valid on supplied main cac974b3e1da900cac3e7480b91d02a36ca60163, but its remaining conversion exceeds one narrow implementation PR: a fresh strict probe reports 1,144 diagnostics across the Worker and review queue. Implementation is blocked pending a narrower scope; no code changes or GitHub mutations were made, and no executable fix artifact is emitted.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #1128 |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,15 @@ The roadmap remains valid, but completing it exceeds this job's focused-PR scope
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1128 | keep_related | planned | related | Finishing both monoliths and enabling global strict flags would require a broad conversion rather than the requested focused PR. No executable fix artifact is supported by the provided artifacts, so retain the umbrella issue without mutation. Follow-up scopes should separately cover Worker status collection/cache helpers, Worker public Bay projections, queue admission/input typing, and queue lifecycle/publication optional-state handling, each with its own behavior proof. Public Bay projection work requires Bay contract assessment and response-parity proof. Keep the umbrella issue open; partial slices must use related references rather than claim completion. |
-| #1132 | keep_closed | skipped | related | Historical evidence of a completed phase; no action needed. |
-| #1141 | keep_closed | skipped | related | Historical evidence of the existing migration mechanism; no action needed. |
-| #1552 | keep_closed | skipped | related | Completed partial implementation; no action needed. |
-| #1553 | keep_closed | skipped | related | Completed partial implementation; no action needed. |
-| #1554 | keep_closed | skipped | related | Completed supporting migration work; no action needed. |
-| #1705 | keep_closed | skipped | related | Completed allowlist expansion; no action needed. |
+| #1128 | keep_canonical | planned | canonical | Earlier merged slices advanced the roadmap without completing it. Keep the canonical issue open. |
+| cluster:issue-openclaw-clawsweeper-1128 | needs_human | blocked | needs_human | A maintainer must define a narrower implementation job compatible with the phased roadmap. Completion requires several separately proven behavioral conversions before the global configuration flip; the current job requires one PR satisfying the entire issue and explicitly forbids proceeding when that scope is too broad. |
+| #1132 | keep_closed | skipped | related | Historical evidence for a completed phase. |
+| #1141 | keep_closed | skipped | related | Historical evidence for the existing migration mechanism. |
+| #1552 | keep_closed | skipped | related | Historical evidence for a completed slice. |
+| #1553 | keep_closed | skipped | related | Historical evidence for boundary-first conversion. |
+| #1554 | keep_closed | skipped | related | Historical evidence for a completed slice. |
+| #1705 | keep_closed | skipped | related | Historical evidence for current strict coverage. |
 
 ## Needs Human
 
-- none
+- Define a narrower implementation job for https://github.com/openclaw/clawsweeper/issues/1128. The supplied main probe reports 825 Worker and 319 queue diagnostics across multiple behavioral regions; one narrow PR cannot complete the umbrella roadmap, and the current job requires a closing reference while explicitly forbidding implementation when the scope is too broad.
