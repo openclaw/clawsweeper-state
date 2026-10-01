@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T20:43:13.232Z",
+  "updated_at": "2026-10-01T20:43:28.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162713:5933369647:2026-10-01T14:19:07Z:re_review",
-      "comment_id": "5933369647",
-      "comment_version_key": "5933369647:2026-10-01T14:19:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162713#issuecomment-5933369647",
-      "comment_created_at": "2026-10-01T14:19:07Z",
-      "comment_updated_at": "2026-10-01T14:19:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162713,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T14:25:09.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/webui-double-stall-notice",
-        "head_sha": "823a9662e829a6ba4068680624ae083504861d5c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162177:5920717279:2026-10-01T14:24:05Z:clawsweeper_needs_human",
       "comment_id": "5920717279",
@@ -33477,6 +33430,39 @@
         "kind": "pull_request",
         "branch": "fix/spawn-only-flake",
         "head_sha": "77af04e73d8cabc564b4134afd5b7e7325440bd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3837:5863078198:2026-10-01T20:42:23Z:clawsweeper_needs_human",
+      "comment_id": "5863078198",
+      "comment_version_key": "5863078198:2026-10-01T20:42:23Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3837#issuecomment-5863078198",
+      "comment_created_at": "2026-09-28T03:59:44Z",
+      "comment_updated_at": "2026-10-01T20:42:23Z",
+      "comment_body_sha256": "bcd00df37dbcf0782c6b6aad2f4738350029f6e99a4365ca76158022d576e7e0",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A permanent Lobster Packs category and its public launch timing lack maintainer approval; exposing publishing guidance before a supporting OpenClaw release is established could lead a... (sha=1fb03758685a0d52ea4e0c5484a6db665ae99ef0)",
+      "expected_head_sha": "1fb03758685a0d52ea4e0c5484a6db665ae99ef0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T20:43:28.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/lobster-packs",
+        "head_sha": "1fb03758685a0d52ea4e0c5484a6db665ae99ef0",
         "cluster_id": null,
         "job_path": null
       }
