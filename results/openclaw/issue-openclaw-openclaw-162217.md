@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-162217"
 mode: "autonomous"
-run_id: "36795883196"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36795883196"
+run_id: "36800650422"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36800650422"
 head_sha: "8c7a382f5bca9a09564ce326f3c4892dff7ef4a6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T00:46:06.066Z"
-canonical: "https://github.com/openclaw/openclaw/issues/162217"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/162217"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T01:23:23.176Z"
+canonical: "#162217"
+canonical_issue: "#162217"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36795883196](https://github.com/openclaw/clawsweeper/actions/runs/36795883196)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36800650422](https://github.com/openclaw/clawsweeper/actions/runs/36800650422)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/162217
+Canonical: #162217
 
 ## Summary
 
-At the preflight main SHA, the Codex bridge records a finality marker only in message-tool-only mode. Automatic mode therefore lacks the marker that distinguishes a progress send from a completed source reply. The repair is scoped, but this checkout is read-only: I could not add the failing regression, patch the bridge, or run validation.
+No fix PR is planned. The issue is already closed after a contributor reported that automatic-mode progress and final replies both reached Telegram Test Server and qa-channel on current main. The job requires a failing current-main reproduction before implementation; none is established by the hydrated evidence.
 
 ## Impact
 
@@ -66,8 +66,8 @@ At the preflight main SHA, the Codex bridge records a finality marker only in me
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #162217 | fix_needed | planned | canonical | A confirmed current-source automatic-mode progress send still needs a finality marker so the later final answer can be delivered. |
-| cluster:issue-openclaw-openclaw-162217 | build_fix_artifact | blocked |  | Implementation and validation require a writable authorized checkout. |
+| #162217 | keep_closed | skipped | canonical | The reported failure was not reproduced in the hydrated current-main delivery evidence. |
+| #161234 | keep_closed | skipped | related | Historical merged context; no action is available or requested. |
 
 ## Needs Human
 
