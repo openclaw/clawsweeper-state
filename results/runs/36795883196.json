@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162217",
+  "mode": "autonomous",
+  "run_id": "36795883196",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36795883196",
+  "head_sha": "8c7a382f5bca9a09564ce326f3c4892dff7ef4a6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162217.md",
+  "published_at": "2026-10-01T00:46:06.066Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162217",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162217",
+  "canonical_pr": null,
+  "summary": "At the preflight main SHA, the Codex bridge records a finality marker only in message-tool-only mode. Automatic mode therefore lacks the marker that distinguishes a progress send from a completed source reply. The repair is scoped, but this checkout is read-only: I could not add the failing regression, patch the bridge, or run validation.",
+  "actions": [
+    {
+      "target": "#162217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162217",
+      "candidate_fix": null,
+      "reason": "A confirmed current-source automatic-mode progress send still needs a finality marker so the later final answer can be delivered."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162217",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#162217",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require a writable authorized checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
