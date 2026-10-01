@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 1, 2026, 08:54 UTC
+Last source update: Oct 1, 2026, 09:32 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 1, 2026, 08:54 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 1, 2026, 08:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36836764967) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 1, 2026, 08:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36839154129) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 1, 2026, 09:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36837055395) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 1, 2026, 09:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36842970126) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 30, 2026, 05:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/36674549250) |
 
 ### Repositories
@@ -91,18 +91,18 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 1, 2026, 09:05 UTC
+Last source update: Oct 1, 2026, 09:37 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1353 | 100% |
-| Run attempts archived | 4009 | audit |
-| Latest successful clusters | 1121 | 82.9% |
-| Latest failed clusters | 228 | 16.9% |
+| Latest clusters reviewed | 1354 | 100% |
+| Run attempts archived | 4010 | audit |
+| Latest successful clusters | 1122 | 82.9% |
+| Latest failed clusters | 228 | 16.8% |
 | Latest cancelled clusters | 4 | 0.3% |
-| Needs-human clusters | 136 | 10.1% |
+| Needs-human clusters | 137 | 10.1% |
 | Fix actions failed | 33 | 4.1% |
 | Fix actions blocked | 170 | 21.3% |
 | Completed close actions | 0 | 0.0% |
@@ -115,15 +115,15 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1353 clusters: 366 maintainer action, 413 automation snapshot, 517 intervention needed, 57 no pending action, 0 completed.
-- Maintainer first: [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) [cluster:issue-openclaw-clawsweeper-1128](cluster:issue-openclaw-clawsweeper-1128) is maintainer_input: For https://github.com/openclaw/clawsweeper/issues/1128, decide whether to authorize one explicitly bounded behavioral migration slice or....
+- Latest records: 1354 clusters: 367 maintainer action, 413 automation snapshot, 517 intervention needed, 57 no pending action, 0 completed.
+- Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4100](https://github.com/steipete/codexbar/issues/4100) is maintainer_input: #4100: Select one concrete CodexBar adaptation from the upstream digest and specify its expected behavior and acceptance criteria..
 - Intervention first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [issue-openclaw-openclaw-windows-node-1564](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1564.md) is automation_blocked: No Companion PR is warranted: the hydrated issue identifies Gateway-owned CSS as the trigger and links an existing upstream repair. Keep....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#162421](https://github.com/openclaw/openclaw/pull/162421) is action_planned: The reported behavior has a clear existing config contract and a narrow shared-owner repair path. Prepare one fix PR after failing comman....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
-| Maintainer Action | 366 | explicit decision, access, or merge authority recorded |
+| Maintainer Action | 367 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 413 | repair, check, or planned action recorded; verify live status |
 | Intervention Needed | 517 | automation failure or blocker recorded |
 | No Pending Action | 57 | latest record proposes no repair or apply action |
@@ -131,7 +131,7 @@ State: Failed clusters need inspection
 
 | Lane state | Count |
 | --- | ---: |
-| maintainer_input | 219 |
+| maintainer_input | 220 |
 | merge_ready | 45 |
 | merge_not_authorized | 102 |
 | checks_blocked | 43 |
@@ -147,6 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4100](https://github.com/steipete/codexbar/issues/4100) | maintainer_input | #4100: Select one concrete CodexBar adaptation from the upstream digest and specify its expected behavior and acceptance criteria. | Oct 1, 2026, 09:37 UTC | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [36843496723](https://github.com/openclaw/clawsweeper/actions/runs/36843496723) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | [cluster:issue-openclaw-clawsweeper-1128](cluster:issue-openclaw-clawsweeper-1128) | maintainer_input | For https://github.com/openclaw/clawsweeper/issues/1128, decide whether to authorize one explicitly bounded behavioral migration slice or retain th... | Oct 1, 2026, 07:44 UTC | [issue-openclaw-clawsweeper-1128](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-clawsweeper-1128.md) | [36831634218](https://github.com/openclaw/clawsweeper/actions/runs/36831634218) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153401](https://github.com/openclaw/openclaw/issues/153401) | maintainer_input | Quarantine this linked tracker for central OpenClaw security handling; its other recovery work is outside this fix. | Sep 30, 2026, 19:55 UTC | [issue-openclaw-openclaw-162047](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-162047.md) | [36761499676](https://github.com/openclaw/clawsweeper/actions/runs/36761499676) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#3951](https://github.com/steipete/codexbar/issues/3951) | maintainer_input | Route this exact historical PR to central security handling without changing it. | Sep 30, 2026, 19:14 UTC | [issue-steipete-codexbar-4144](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4144.md) | [36763286267](https://github.com/openclaw/clawsweeper/actions/runs/36763286267) |
@@ -161,7 +162,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#1432](https://github.com/openclaw/openclaw-windows-node/pull/1432) | maintainer_input | #1432: The failing raw invocation and result, Diagnostics output, effective sandbox settings, execution mode, and a current-main reproduction are u... | Sep 28, 2026, 13:54 UTC | [issue-openclaw-openclaw-windows-node-1432](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1432.md) | [36426283632](https://github.com/openclaw/clawsweeper/actions/runs/36426283632) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#3377](https://github.com/steipete/codexbar/issues/3377) | maintainer_input | For #3377, determine the corrective path after obtaining matched AppKit/Quartz geometry and rendered-content evidence on an affected machine; the c... | Sep 28, 2026, 11:32 UTC | [issue-steipete-codexbar-3377](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3377.md) | [36415779816](https://github.com/openclaw/clawsweeper/actions/runs/36415779816) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#3954](https://github.com/steipete/codexbar/issues/3954) | maintainer_input | Quarantine this exact linked PR for central OpenClaw security handling. Its Codex catch-up component does not block classification of #3316. | Sep 28, 2026, 08:50 UTC | [issue-steipete-codexbar-3316](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3316.md) | [36399117869](https://github.com/openclaw/clawsweeper/actions/runs/36399117869) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#74454](https://github.com/openclaw/openclaw/issues/74454) | maintainer_input | Historical security-sensitive linked ref; no ClawSweeper Repair mutation. | Sep 28, 2026, 05:39 UTC | [issue-openclaw-openclaw-160064](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-160064.md) | [36382613428](https://github.com/openclaw/clawsweeper/actions/runs/36382613428) |
 
 #### Automation Snapshot
 
@@ -233,6 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-steipete-codexbar-4100 | needs human | #4100: Select one concrete CodexBar adaptation from the upstream digest and specify its expected behavior and acceptance criteria. | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [36843496723](https://github.com/openclaw/clawsweeper/actions/runs/36843496723) |
 | issue-openclaw-clawsweeper-1128 | needs human | For https://github.com/openclaw/clawsweeper/issues/1128, decide whether to authorize one explicitly bounded behavioral migration slice or retain th... | [issue-openclaw-clawsweeper-1128](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-clawsweeper-1128.md) | [36831634218](https://github.com/openclaw/clawsweeper/actions/runs/36831634218) |
 | issue-openclaw-crabbox-2627 | execute_fix blocked | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOR... | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36768428805](https://github.com/openclaw/clawsweeper/actions/runs/36768428805) |
 | automerge-openclaw-openclaw-enterprise-670 | fix failed | Codex /review did not pass after final base synchronization: The latest commit removes a default-off command safety gate and changes the workflow d... | [automerge-openclaw-openclaw-enterprise-670](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-enterprise-670.md) | [36766634334](https://github.com/openclaw/clawsweeper/actions/runs/36766634334) |
@@ -262,7 +263,6 @@ State: Failed clusters need inspection
 | issue-openclaw-openclaw-153313 | needs human | Resolve implementation ownership: does this job intentionally override the recorded manual-only instruction and authorize a separate implementation... | [issue-openclaw-openclaw-153313](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153313.md) | [35482909453](https://github.com/openclaw/clawsweeper/actions/runs/35482909453) |
 | issue-openclaw-openclaw-153250 | needs human | Resolve whether automatic implementation should proceed despite the current clawsweeper:manual-only label and @holny's implementation offer. The su... | [issue-openclaw-openclaw-153250](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153250.md) | [35480720221](https://github.com/openclaw/clawsweeper/actions/runs/35480720221) |
 | issue-openclaw-openclaw-152499 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [issue-openclaw-openclaw-152499](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152499.md) | [35422501807](https://github.com/openclaw/clawsweeper/actions/runs/35422501807) |
-| issue-openclaw-openclaw-152145 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=coreTests, ui [check:changed] ui/src... | [issue-openclaw-openclaw-152145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152145.md) | [35392189093](https://github.com/openclaw/clawsweeper/actions/runs/35392189093) |
 
 ### Fix Failure Queue
 
