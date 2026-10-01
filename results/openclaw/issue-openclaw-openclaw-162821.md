@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-162821"
-mode: "autonomous"
-run_id: "36890575442"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36890575442"
+mode: "plan"
+run_id: "36901039051"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36901039051"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-01T17:08:52.889Z"
-canonical: "https://github.com/openclaw/openclaw/issues/162821"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/162821"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-01T17:44:34.927Z"
+canonical: "#162821"
+canonical_issue: "#162821"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36890575442](https://github.com/openclaw/clawsweeper/actions/runs/36890575442)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36901039051](https://github.com/openclaw/clawsweeper/actions/runs/36901039051)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/162821
+Canonical: #162821
 
 ## Summary
 
-The reported startup path remains exposed on preflight main. Implementation is blocked by this read-only Linux host and unavailable isolated Windows execution. A conditional fix artifact is prepared; no code changes, Windows reproduction, tests, or PR publication occurred.
+Plan one narrow compile-cache startup fix. The reported mechanism remains exposed at supplied main 4176b957ad34cefa9a4182d64ebecf434e007cb7. Native Windows reproduction, implementation, tests, and review remain pending; no changes or GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The reported startup path remains exposed on preflight main. Implementation is b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #162821 | fix_needed | planned | canonical | A narrow bug repair remains warranted, but the required failing Windows reproduction must precede implementation. This host cannot edit files or provide that proof. |
-| #130020 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-162821 | build_fix_artifact | planned |  | Prepare one conditional new-fix-PR path without claiming reproduction or authorizing publication before its required evidence. |
+| #162821 | fix_needed | planned | canonical | This is a focused startup bug with an authorized fix path. Shortening the build marker alone cannot protect arbitrarily deep bases. Require native Windows reproduction before implementation; keep the issue open and do not recommend merging. |
 
 ## Needs Human
 
