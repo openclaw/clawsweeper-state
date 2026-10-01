@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T12:59:52.397Z",
+  "updated_at": "2026-10-01T12:59:53.123Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158749:5851566473:2026-09-27T01:18:39Z:re_review",
-      "comment_id": "5851566473",
-      "comment_version_key": "5851566473:2026-09-27T01:18:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158749#issuecomment-5851566473",
-      "comment_created_at": "2026-09-27T01:18:39Z",
-      "comment_updated_at": "2026-09-27T01:18:39Z",
-      "comment_body_sha256": "3fb13a8b34fadaad4a2dbe230026b0accd4cd0c774bc911cfa6433332dc90ef4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158749,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T09:07:02.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/test-audit-zalo-startup-20260926",
-        "head_sha": "fb8d7728ffb402ebda0853c4db7cbba2bd1ec797",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158749:5844540671:2026-10-01T09:05:58Z:clawsweeper_needs_human",
       "comment_id": "5844540671",
@@ -33848,6 +33801,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1232:5419453107:2026-10-01T12:58:45Z:clawsweeper_auto_repair",
+      "comment_id": "5419453107",
+      "comment_version_key": "5419453107:2026-10-01T12:58:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1232#issuecomment-5419453107",
+      "comment_created_at": "2026-08-26T01:45:40Z",
+      "comment_updated_at": "2026-10-01T12:58:45Z",
+      "comment_body_sha256": "22733379ef7a15a043548e92f3a899fa3edfa6cd03814c6394764053208f03b4",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d03e4ec69343eafe29319dd9755b440814e09da8)",
+      "expected_head_sha": "d03e4ec69343eafe29319dd9755b440814e09da8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T12:59:53.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-ai-onboarding-resume",
+        "head_sha": "d03e4ec69343eafe29319dd9755b440814e09da8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
