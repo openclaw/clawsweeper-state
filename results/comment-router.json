@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T19:39:23.502Z",
+  "updated_at": "2026-10-01T19:39:35.470Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162474:5932241833:2026-10-01T13:15:50Z:freeform_assist",
-      "comment_id": "5932241833",
-      "comment_version_key": "5932241833:2026-10-01T13:15:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162474#issuecomment-5932241833",
-      "comment_created_at": "2026-10-01T13:15:50Z",
-      "comment_updated_at": "2026-10-01T13:15:50Z",
-      "comment_body_sha256": "940b4c0de0779029b4ed8bd20636d92df0be90cecee8385578d81b8b1b0bc645",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162474,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "maintainer decision (ayaan, repository maintainer): approved. a `delivery: none` cron run whose parent only spawns subagents now waits for them under the run's existing deadline and records the child's result. a child that times out or ends with nothing is an execution error, and goes through the normal failure accounting (history, status and backoff; failure alerts only where an alert route is configured; agent-reported failures on silent jobs don't count toward auto-disable per #162686). this intentionally replaces #135318's no-wait choice for no-delivery spawn-only runs: before, the child's result was silently dropped and the run recorded `ok` with nothing. nothing is sent to chat in either case.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T13:16:59.618Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-no-delivery-spawn-only-summary",
-        "head_sha": "2b2dbb948ca538b060c5086b80ef284c2e00442d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155327:5769817925:2026-10-01T13:16:06Z:clawsweeper_needs_human",
       "comment_id": "5769817925",
@@ -34112,6 +34065,39 @@
         "kind": "pull_request",
         "branch": "fix/guest-sidebar-catalog",
         "head_sha": "0277a072b3ec04479663dfb2ac633e6af6f411bd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162954:5939127457:2026-10-01T19:38:27Z:clawsweeper_needs_human",
+      "comment_id": "5939127457",
+      "comment_version_key": "5939127457:2026-10-01T19:38:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162954#issuecomment-5939127457",
+      "comment_created_at": "2026-10-01T19:38:27Z",
+      "comment_updated_at": "2026-10-01T19:38:27Z",
+      "comment_body_sha256": "e686e4fb21d9fef718025e19a050859b3b55a693433d5bdf01393132924ee446",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162954,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Have the PR owner mark this draft ready for review when they intend to proceed with landing. (sha=0cc6c4a60758eac114fbed924491fdbc4d39e5e1)",
+      "expected_head_sha": "0cc6c4a60758eac114fbed924491fdbc4d39e5e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T19:39:35.470Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-acp-sdk-1.5.0",
+        "head_sha": "0cc6c4a60758eac114fbed924491fdbc4d39e5e1",
         "cluster_id": null,
         "job_path": null
       }
