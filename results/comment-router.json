@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:42:19.629Z",
+  "updated_at": "2026-10-01T03:42:29.757Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147599:5920700872:2026-09-30T22:18:00Z:re_review",
-      "comment_id": "5920700872",
-      "comment_version_key": "5920700872:2026-09-30T22:18:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147599#issuecomment-5920700872",
-      "comment_created_at": "2026-09-30T22:18:00Z",
-      "comment_updated_at": "2026-09-30T22:18:00Z",
-      "comment_body_sha256": "dc9b8ad25e3301e3d5dfc19084679f4cc74fbea5caae7a7cd8b01361cebbf06d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147599,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:07:04.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/control-ui-descriptor-surface-list",
-        "head_sha": "ea41093c990be429fd51846636e0308c0f02b8ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155950:5920701132:2026-09-30T22:18:01Z:re_review",
       "comment_id": "5920701132",
@@ -33397,6 +33350,39 @@
         "kind": "pull_request",
         "branch": "fix/update-sqlite-snapshot",
         "head_sha": "c301a7ba1b6749510b6519f544d3481e5afd1707",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162350:5924263991:2026-10-01T03:41:24Z:clawsweeper_needs_human",
+      "comment_id": "5924263991",
+      "comment_version_key": "5924263991:2026-10-01T03:41:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162350#issuecomment-5924263991",
+      "comment_created_at": "2026-10-01T03:41:24Z",
+      "comment_updated_at": "2026-10-01T03:41:24Z",
+      "comment_body_sha256": "ae9008735c3db691ac9364089fb07c78608c8a6ea8c1fb6e1c349f08b1c6976e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162350,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain and compare actual macOS app after-fix screenshots, update the PR’s evidence, and report the focused E2E runtime before marking it ready. (sha=bf34e33c3e0baef8fbc4cdb247718f13470140de)",
+      "expected_head_sha": "bf34e33c3e0baef8fbc4cdb247718f13470140de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T03:42:29.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-macos-skeleton-loader-overlap-with-window-controls",
+        "head_sha": "bf34e33c3e0baef8fbc4cdb247718f13470140de",
         "cluster_id": null,
         "job_path": null
       }
