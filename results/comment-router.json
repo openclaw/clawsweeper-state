@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T04:25:02.700Z",
+  "updated_at": "2026-10-01T04:25:09.364Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161451:5920765923:2026-09-30T22:23:26Z:re_review",
-      "comment_id": "5920765923",
-      "comment_version_key": "5920765923:2026-09-30T22:23:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161451#issuecomment-5920765923",
-      "comment_created_at": "2026-09-30T22:23:26Z",
-      "comment_updated_at": "2026-09-30T22:23:26Z",
-      "comment_body_sha256": "bb93c11a68373d0671be3cc6397ca8c87c7ad2080eed6b8cb287d8a869680c6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161451,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:08:11.945Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-155696-ended-session-reader",
-        "head_sha": "8e79afee9cf998c0d1efccd74761fc46e6c3cafa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151441:5809175857:2026-09-24T06:44:57Z:re_review",
       "comment_id": "5809175857",
@@ -33453,6 +33406,39 @@
         "kind": "pull_request",
         "branch": "release/v0.2.2",
         "head_sha": "021e8b15a2a86b0066dfd471ee766f4b383f9db7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162387:5924710101:2026-10-01T04:24:14Z:clawsweeper_needs_human",
+      "comment_id": "5924710101",
+      "comment_version_key": "5924710101:2026-10-01T04:24:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162387#issuecomment-5924710101",
+      "comment_created_at": "2026-10-01T04:24:14Z",
+      "comment_updated_at": "2026-10-01T04:24:14Z",
+      "comment_body_sha256": "1c8793a6b760d864c4bb17d92d324d67fbfed12df3a2c0ecb6a1dc26020e1fc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162387,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-driver × candidate Git update compatibility remains unverified; the PR body explicitly records this required upgrade check as pending. (sha=2b12196a65e944acf5e30f558ca43e196a981c2a)",
+      "expected_head_sha": "2b12196a65e944acf5e30f558ca43e196a981c2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T04:25:09.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/updater-staging-clones",
+        "head_sha": "2b12196a65e944acf5e30f558ca43e196a981c2a",
         "cluster_id": null,
         "job_path": null
       }
