@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:09:30.803Z",
+  "updated_at": "2026-10-01T01:09:35.774Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160108:5917236487:2026-09-30T18:26:44Z:re_review",
-      "comment_id": "5917236487",
-      "comment_version_key": "5917236487:2026-09-30T18:26:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160108#issuecomment-5917236487",
-      "comment_created_at": "2026-09-30T18:26:44Z",
-      "comment_updated_at": "2026-09-30T18:26:44Z",
-      "comment_body_sha256": "293b8b36bd9b0a6b56f8294dadef3fcdc4b74ca1435e515c58c9adc43db17f15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160108,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T18:27:43.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-upstream-enterprise-worker",
-        "head_sha": "7f3ec7359c4e8b6960de381a1cb476111a752739",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:745:5916913677:2026-09-30T18:23:26Z:clawsweeper_needs_human",
       "comment_id": "5916913677",
@@ -33536,6 +33489,39 @@
         "kind": "pull_request",
         "branch": "gd-fix-rce",
         "head_sha": "3ce4da881d58fc457e3a5bb945321a040bcd46ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4115:5883156943:2026-10-01T01:08:07Z:clawsweeper_needs_human",
+      "comment_id": "5883156943",
+      "comment_version_key": "5883156943:2026-10-01T01:08:07Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4115#issuecomment-5883156943",
+      "comment_created_at": "2026-09-29T03:38:14Z",
+      "comment_updated_at": "2026-10-01T01:08:07Z",
+      "comment_body_sha256": "733f7e7e84e62e7c8b2d763e034ef1ec0518198ef1569813d069c6f6a5087ce1",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The contributor’s real Claude Code 2.1.282 terminal trace shows the earlier session implementation accepting trust and capturing /help... (sha=94984614a6ea0076b0850c6f019020f160d8f01d)",
+      "expected_head_sha": "94984614a6ea0076b0850c6f019020f160d8f01d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:09:35.774Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-probe-trust-dialog",
+        "head_sha": "94984614a6ea0076b0850c6f019020f160d8f01d",
         "cluster_id": null,
         "job_path": null
       }
