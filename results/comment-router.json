@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T19:01:18.432Z",
+  "updated_at": "2026-10-01T19:01:48.587Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162692:5931648723:2026-10-01T12:39:22Z:re_review",
-      "comment_id": "5931648723",
-      "comment_version_key": "5931648723:2026-10-01T12:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162692#issuecomment-5931648723",
-      "comment_created_at": "2026-10-01T12:39:22Z",
-      "comment_updated_at": "2026-10-01T12:39:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162692,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T12:40:11.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-list-profiles-test-owner",
-        "head_sha": "a1e32d0eefa89aca9479f1e14be196791eb19241",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4174:5929038489:2026-10-01T12:39:40Z:clawsweeper_needs_human",
       "comment_id": "5929038489",
@@ -34258,6 +34211,39 @@
         "kind": "pull_request",
         "branch": "fix/162761-completion-authority",
         "head_sha": "f9328392d754c57021afe410fecc372994006343",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162612:5929422989:2026-10-01T19:00:48Z:clawsweeper_needs_human",
+      "comment_id": "5929422989",
+      "comment_version_key": "5929422989:2026-10-01T19:00:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162612#issuecomment-5929422989",
+      "comment_created_at": "2026-10-01T10:21:29Z",
+      "comment_updated_at": "2026-10-01T19:00:48Z",
+      "comment_body_sha256": "9c02d336bcf7bb7e4c33897a3e3cde1dfc876bc691b89f0619d75dc254a98f56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted cron integration is unvalidated: resolution must preserve locked repair before retiring original ownership, include-write refusal safeguards, and canonical watcher owne... (sha=bc0f6167b1d5bbb7f7ea01485935214e83826acb)",
+      "expected_head_sha": "bc0f6167b1d5bbb7f7ea01485935214e83826acb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T19:01:48.587Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-config-roster",
+        "head_sha": "bc0f6167b1d5bbb7f7ea01485935214e83826acb",
         "cluster_id": null,
         "job_path": null
       }
