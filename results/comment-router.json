@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T12:23:02.605Z",
+  "updated_at": "2026-10-01T12:23:13.082Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162481:5927631804:2026-10-01T08:23:56Z:freeform_assist",
-      "comment_id": "5927631804",
-      "comment_version_key": "5927631804:2026-10-01T08:23:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162481#issuecomment-5927631804",
-      "comment_created_at": "2026-10-01T08:23:56Z",
-      "comment_updated_at": "2026-10-01T08:23:56Z",
-      "comment_body_sha256": "dadb2577b9cb36af6865f98a10f38b19bde9942251ae0e7f161b1376c8fb6c04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162481,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "maintainer decision (ayaan, repository maintainer): the authority-chain proof gate is accepted without a dedicated revocation-mid-request harness. read authority (caller authority, agent runtime, management grant) is rechecked synchronously right before the outcome is attached, with no await between the check and the response. the only remaining window is \"revoked after the response was built\", which every read api has. a harness that revokes mid-request would harden a hypothetical. the handler-level test covers allowed vs revoked callers through the real cron.run/cron.runs handlers. please re-review.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T08:24:46.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/automations-run-wait",
-        "head_sha": "cf942df0601778092d56ca34453ff545cf23db06",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162491:5926377912:2026-10-01T08:25:09Z:clawsweeper_needs_human",
       "comment_id": "5926377912",
@@ -33791,6 +33744,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161895:5931337688:2026-10-01T12:22:11Z:re_review",
+      "comment_id": "5931337688",
+      "comment_version_key": "5931337688:2026-10-01T12:22:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161895#issuecomment-5931337688",
+      "comment_created_at": "2026-10-01T12:22:11Z",
+      "comment_updated_at": "2026-10-01T12:22:11Z",
+      "comment_body_sha256": "7baa4540902235d3a07c37883dff6fe2b5cd8d2f423b76df5ee7462b27d2f52b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161895,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T12:23:11.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduler-cadence-debug-flood",
+        "head_sha": "b0030dac2e650be69ec4e8f402933f762a593aea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
