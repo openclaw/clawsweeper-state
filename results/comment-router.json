@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T12:31:32.353Z",
+  "updated_at": "2026-10-01T12:32:44.479Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162227:5922313805:2026-10-01T08:33:18Z:clawsweeper_needs_human",
-      "comment_id": "5922313805",
-      "comment_version_key": "5922313805:2026-10-01T08:33:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162227#issuecomment-5922313805",
-      "comment_created_at": "2026-10-01T00:35:47Z",
-      "comment_updated_at": "2026-10-01T08:33:18Z",
-      "comment_body_sha256": "4f348c125aa9d5514098f305897a86c31e4462fc30a6964b4ef8095e99c8f820",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162227,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing peer and isolated-cron workflows that rely on automatic target-channel announcements will stop producing those posts after upgrade; transition proof or explicit acceptance of... (sha=e9dcaf9e220114d4a21e99f960ba595010e0c419)",
-      "expected_head_sha": "e9dcaf9e220114d4a21e99f960ba595010e0c419",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T08:34:09.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/announce-skip-agent-logic-c83574",
-        "head_sha": "e9dcaf9e220114d4a21e99f960ba595010e0c419",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162434:5925430284:2026-10-01T08:33:39Z:clawsweeper_needs_human",
       "comment_id": "5925430284",
@@ -33855,6 +33822,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabpot:405:5931519601:2026-10-01T12:31:26Z:re_review",
+      "comment_id": "5931519601",
+      "comment_version_key": "5931519601:2026-10-01T12:31:26Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/405#issuecomment-5931519601",
+      "comment_created_at": "2026-10-01T12:31:26Z",
+      "comment_updated_at": "2026-10-01T12:31:26Z",
+      "comment_body_sha256": "80e9020ba04152bf2b9ad82da39166e5c48fcf0d8a5795e2273599fd9ee5a684",
+      "repo": "openclaw/crabpot",
+      "issue_number": 405,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T12:32:33.993Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-lifecycle-capture-20260929",
+        "head_sha": "bd515401c0e2edf55f8e27f4bec774db8cbd4dac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
