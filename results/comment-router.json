@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:33:48.814Z",
+  "updated_at": "2026-10-01T02:34:11.294Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159896:5859985999:2026-09-30T20:13:56Z:clawsweeper_needs_human",
-      "comment_id": "5859985999",
-      "comment_version_key": "5859985999:2026-09-30T20:13:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159896#issuecomment-5859985999",
-      "comment_created_at": "2026-09-27T21:28:42Z",
-      "comment_updated_at": "2026-09-30T20:13:56Z",
-      "comment_body_sha256": "b8b9d4aaf2eb85d98a97275edc26fc09de1c4f822fc399791e0adf0ca0d5cc14",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Retain failed revocations after normal finalization (P1)** - If the first DELETE fails, dispose() leaves the grant in pendingRevocations but clears its timers and schedules no retry. Normal attempt finalization...; Review finding: [P1] Retain failed revocations after normal finalization — src/agents/github-local-environment.ts:85-101 - [high] Failed final revocation leaves an active grant —... (sha=2ba2020026fd873dbff7fc5b37f89e73ec5d74c3)",
-      "expected_head_sha": "2ba2020026fd873dbff7fc5b37f89e73ec5d74c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T21:03:47.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-gateway-native-credential-binding",
-        "head_sha": "2ba2020026fd873dbff7fc5b37f89e73ec5d74c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160108:5863740283:2026-09-30T20:24:06Z:clawsweeper_needs_human",
       "comment_id": "5863740283",
@@ -33306,6 +33273,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162255:5923563498:2026-10-01T02:33:17Z:automerge",
+      "comment_id": "5923563498",
+      "comment_version_key": "5923563498:2026-10-01T02:33:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162255#issuecomment-5923563498",
+      "comment_created_at": "2026-10-01T02:33:17Z",
+      "comment_updated_at": "2026-10-01T02:33:17Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162255,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; current checks are failing: PR context and evidence:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-01T02:34:07.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-2-onboarding-docs",
+        "head_sha": "af284a9707b38cc6b72094559a4b14ffdac83019",
+        "cluster_id": "automerge-openclaw-openclaw-162255",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-162255.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-162255.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-162255.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
