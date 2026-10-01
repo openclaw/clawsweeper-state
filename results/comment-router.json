@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:13:31.671Z",
+  "updated_at": "2026-10-01T14:13:43.013Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162331:5923971559:2026-10-01T09:50:48Z:clawsweeper_needs_human",
-      "comment_id": "5923971559",
-      "comment_version_key": "5923971559:2026-10-01T09:50:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162331#issuecomment-5923971559",
-      "comment_created_at": "2026-10-01T03:12:25Z",
-      "comment_updated_at": "2026-10-01T09:50:48Z",
-      "comment_body_sha256": "05c036cd830bab1abb75db45dc2d7794839edee1d7be2a820e9cfe7b0bb39712",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162331,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4f0e2cfbecc68a4523f0225f1eb8c87c817e7469)",
-      "expected_head_sha": "4f0e2cfbecc68a4523f0225f1eb8c87c817e7469",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T09:53:39.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l258-dup-ui-server-contracts",
-        "head_sha": "4f0e2cfbecc68a4523f0225f1eb8c87c817e7469",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162385:5924716474:2026-10-01T09:50:07Z:clawsweeper_auto_repair",
       "comment_id": "5924716474",
@@ -34214,6 +34181,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162753:5933249281:2026-10-01T14:12:33Z:re_review",
+      "comment_id": "5933249281",
+      "comment_version_key": "5933249281:2026-10-01T14:12:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162753#issuecomment-5933249281",
+      "comment_created_at": "2026-10-01T14:12:33Z",
+      "comment_updated_at": "2026-10-01T14:12:33Z",
+      "comment_body_sha256": "98c11027eeb9e1146450be69487cf3faeb37f9c94254b178fd99797553b4c035",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162753,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T14:13:40.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-steer-skills-watchers-v2",
+        "head_sha": "e22d769a27c6e60834755776a3a4296bbc092457",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
