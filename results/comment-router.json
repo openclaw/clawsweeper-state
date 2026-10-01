@@ -1,6 +1,100 @@
 {
-  "updated_at": "2026-10-01T10:40:48.087Z",
+  "updated_at": "2026-10-01T10:40:28.155Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161421:5903712855:2026-09-30T03:54:01Z:re_review",
+      "comment_id": "5903712855",
+      "comment_version_key": "5903712855:2026-09-30T03:54:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161421#issuecomment-5903712855",
+      "comment_created_at": "2026-09-30T03:54:01Z",
+      "comment_updated_at": "2026-09-30T03:54:01Z",
+      "comment_body_sha256": "44927e559e92eeb96a8a979089481e17a8235d124a943a531e58bc1ecf464557",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161421,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:47:30.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-admission-20260929-2121",
+        "head_sha": "1e1b9aaee4432413e206fdf3fd65b73145fd7bcb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/telemetry:28:5926160599:2026-10-01T06:42:41Z:re_review",
+      "comment_id": "5926160599",
+      "comment_version_key": "5926160599:2026-10-01T06:42:41Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/28#issuecomment-5926160599",
+      "comment_created_at": "2026-10-01T06:42:41Z",
+      "comment_updated_at": "2026-10-01T06:42:41Z",
+      "comment_body_sha256": "fd9705be3d951ef605c85f48bc5d4c9f733f35ca2a4a3898302f37f9807768d6",
+      "repo": "openclaw/telemetry",
+      "issue_number": 28,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:47:31.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telemetry-vocabulary-release-freshness-20261001",
+        "head_sha": "c2dd9130f6157ab8b561e261d1ee185daad46f0f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161421:5900816467:2026-10-01T06:46:31Z:clawsweeper_needs_human",
       "comment_id": "5900816467",
@@ -33816,72 +33910,6 @@
         "kind": "pull_request",
         "branch": "feat/plugin-conversation-fork",
         "head_sha": "491ba325e7a7a2cee236c2ceec70d0dd12250572",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162490:5926385824:2026-10-01T10:39:22Z:clawsweeper_needs_human",
-      "comment_id": "5926385824",
-      "comment_version_key": "5926385824:2026-10-01T10:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162490#issuecomment-5926385824",
-      "comment_created_at": "2026-10-01T07:01:13Z",
-      "comment_updated_at": "2026-10-01T10:39:22Z",
-      "comment_body_sha256": "66e1bca24d1c7400ee898fff6ec7167ab83e0173fb57c67ea43c87e2fc4dd2e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the pinned-head real Gateway chat.send trace supports recovery delivery and history persistence. Prese...; Review finding: [medium] Verify authority after removing the workspace authoring wrapper — src/auto-reply/reply/stalled-turn-recovery.ts:65 (sha=c1bca05fb2f7df05810c4605097aebef98315e0f)",
-      "expected_head_sha": "c1bca05fb2f7df05810c4605097aebef98315e0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T10:40:30.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/webui-stall-recovery",
-        "head_sha": "c1bca05fb2f7df05810c4605097aebef98315e0f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158251:5837563546:2026-10-01T10:39:37Z:clawsweeper_auto_repair",
-      "comment_id": "5837563546",
-      "comment_version_key": "5837563546:2026-10-01T10:39:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158251#issuecomment-5837563546",
-      "comment_created_at": "2026-09-25T18:34:10Z",
-      "comment_updated_at": "2026-10-01T10:39:37Z",
-      "comment_body_sha256": "3d9e74d8402c425ba856d9ce729c2c0c1c408365ffbfbf6744a0d5f99a162ffc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158251,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6365a3e3361797fb785deada962362ac2e1650ed)",
-      "expected_head_sha": "6365a3e3361797fb785deada962362ac2e1650ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T10:40:48.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/subagent-registration-worker-20260925",
-        "head_sha": "6365a3e3361797fb785deada962362ac2e1650ed",
         "cluster_id": null,
         "job_path": null
       }
