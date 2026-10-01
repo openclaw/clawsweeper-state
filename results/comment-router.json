@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:53:23.489Z",
+  "updated_at": "2026-10-01T01:53:39.877Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160872:5918558848:2026-09-30T19:53:11Z:re_review",
-      "comment_id": "5918558848",
-      "comment_version_key": "5918558848:2026-09-30T19:53:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160872#issuecomment-5918558848",
-      "comment_created_at": "2026-09-30T19:53:11Z",
-      "comment_updated_at": "2026-09-30T19:53:11Z",
-      "comment_body_sha256": "cca31d58073716b98fb723e33a9e78001bda244566116918c0653b258fa19292",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160872,
-      "author": "bdjben",
-      "author_id": 188106718,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T19:54:09.116Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/matrix-room-streaming",
-        "head_sha": "6a82f336f1ee40e1ffc3bf79dc0206418f4bbe93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162089:5918570260:2026-09-30T19:53:58Z:clawsweeper_needs_human",
       "comment_id": "5918570260",
@@ -33336,6 +33289,39 @@
         "kind": "pull_request",
         "branch": "codex/atomic-io-owner-954",
         "head_sha": "c6c06df5c562e8ea6b130cee09bc5156cd118b49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160488:5872062171:2026-10-01T01:47:52Z:clawsweeper_needs_human",
+      "comment_id": "5872062171",
+      "comment_version_key": "5872062171:2026-10-01T01:47:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160488#issuecomment-5872062171",
+      "comment_created_at": "2026-09-28T14:30:43Z",
+      "comment_updated_at": "2026-10-01T01:47:52Z",
+      "comment_body_sha256": "3348eef7c716112f76bf68eff2466502ada27a92bed1244e1f4909fd74613723",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR’s Testbox runs exercise the production lease store and ledger, but substitute process identities, retain...; Review finding: [P1] Recheck borrower custody before releasing the repaired lease — src/infra/update-managed-service-handoff-reclamation.ts:245-246 - [P1] Keep a refused lease rel... (sha=6441a7fd8577b4caf4db21fc55cb4cd581b27b11)",
+      "expected_head_sha": "6441a7fd8577b4caf4db21fc55cb4cd581b27b11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:53:39.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-handoff-lease-dead-owner",
+        "head_sha": "6441a7fd8577b4caf4db21fc55cb4cd581b27b11",
         "cluster_id": null,
         "job_path": null
       }
