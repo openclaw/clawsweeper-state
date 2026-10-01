@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:06:15.071Z",
+  "updated_at": "2026-10-01T10:06:33.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162361:5925799854:2026-10-01T06:11:44Z:re_review",
-      "comment_id": "5925799854",
-      "comment_version_key": "5925799854:2026-10-01T06:11:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162361#issuecomment-5925799854",
-      "comment_created_at": "2026-10-01T06:11:44Z",
-      "comment_updated_at": "2026-10-01T06:11:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162361,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:12:46.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-swap-posix-fixture",
-        "head_sha": "885f1e525cfc9420da7a33ccf7abc14b5d4fa5b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162456:5925799742:2026-10-01T06:11:44Z:clawsweeper_needs_human",
       "comment_id": "5925799742",
@@ -33860,6 +33813,39 @@
         "kind": "pull_request",
         "branch": "dbasync/reclass",
         "head_sha": "3c78d2ca4de80ed3066070e6bd6efed2399984ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162466:5925961714:2026-10-01T10:05:30Z:clawsweeper_needs_human",
+      "comment_id": "5925961714",
+      "comment_version_key": "5925961714:2026-10-01T10:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162466#issuecomment-5925961714",
+      "comment_created_at": "2026-10-01T06:25:53Z",
+      "comment_updated_at": "2026-10-01T10:05:30Z",
+      "comment_body_sha256": "36f3511d7e9ca04be3013d4b02e44f9a144a8e505abaf55cd4b28a2e060f7937",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation’s published updater has not exercised this exact candidate’s recovery capture and rollback publication, so end-to-end update compatibility remains unverified. (sha=0f8efc2dec759bbb3c7e74e2858e066dd0e018a3)",
+      "expected_head_sha": "0f8efc2dec759bbb3c7e74e2858e066dd0e018a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:06:33.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-sqlite-cow-storage",
+        "head_sha": "0f8efc2dec759bbb3c7e74e2858e066dd0e018a3",
         "cluster_id": null,
         "job_path": null
       }
