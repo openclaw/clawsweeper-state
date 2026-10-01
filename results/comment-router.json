@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T13:49:31.489Z",
+  "updated_at": "2026-10-01T13:48:44.166Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5570646456:2026-09-07T12:29:21Z:re_review",
@@ -33853,37 +33853,51 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114309:5087534168:2026-10-01T13:48:20Z:clawsweeper_needs_human",
-      "comment_id": "5087534168",
-      "comment_version_key": "5087534168:2026-10-01T13:48:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114309#issuecomment-5087534168",
-      "comment_created_at": "2026-07-27T05:17:00Z",
-      "comment_updated_at": "2026-10-01T13:48:20Z",
-      "comment_body_sha256": "a95363f0d79ff8ad72349368c02baf3745759b839402491a83f05d4ade2a3120",
+      "idempotency_key": "comment-router:openclaw/openclaw:162522:5932749628:2026-10-01T13:45:56Z:re_review",
+      "comment_id": "5932749628",
+      "comment_version_key": "5932749628:2026-10-01T13:45:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162522#issuecomment-5932749628",
+      "comment_created_at": "2026-10-01T13:45:56Z",
+      "comment_updated_at": "2026-10-01T13:45:56Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
       "repo": "openclaw/openclaw",
-      "issue_number": 114309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "issue_number": 162522,
+      "author": "steipete",
+      "author_id": 58493,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body reports mocked regressions for steering, the client close owner, and full-history materialization, but no attributable after-... (sha=28b2d65466b1257c61b435fecebf9b8ce5de4467)",
-      "expected_head_sha": "28b2d65466b1257c61b435fecebf9b8ce5de4467",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T13:49:31.489Z",
+      "status": "executed",
+      "processed_at": "2026-10-01T13:48:42.815Z",
       "target": {
         "kind": "pull_request",
-        "branch": "qa-laptop-qa08-c66ca2f",
-        "head_sha": "28b2d65466b1257c61b435fecebf9b8ce5de4467",
+        "branch": "dbasync/reg-gateway",
+        "head_sha": "5c35dfb483edad1d66408bb39590da1057f91af7",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
