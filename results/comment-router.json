@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T05:30:37.194Z",
+  "updated_at": "2026-10-01T05:30:49.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155959:5812425097:2026-09-24T10:32:09Z:re_review",
-      "comment_id": "5812425097",
-      "comment_version_key": "5812425097:2026-09-24T10:32:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155959#issuecomment-5812425097",
-      "comment_created_at": "2026-09-24T10:32:09Z",
-      "comment_updated_at": "2026-09-24T10:32:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155959,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T00:39:08.327Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-snapshot-staging-reuse",
-        "head_sha": "9513b6f9d00ff120f32a93dedd1843bab89c1618",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155959:5784160302:2026-09-30T23:13:32Z:clawsweeper_needs_human",
       "comment_id": "5784160302",
@@ -33951,6 +33904,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161118:5887793948:2026-10-01T05:29:49Z:clawsweeper_needs_human",
+      "comment_id": "5887793948",
+      "comment_version_key": "5887793948:2026-10-01T05:29:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161118#issuecomment-5887793948",
+      "comment_created_at": "2026-09-29T09:50:14Z",
+      "comment_updated_at": "2026-10-01T05:29:49Z",
+      "comment_body_sha256": "e6a1f983f24deeb77bc4a8c3c75ef97206577961abbb115ef3e2940d69abcec6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161118,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add the measured wall time for pnpm test src/agents/embedded-agent-runner/thinking.request-shape-errors.test.ts --maxWorkers=1 to the PR body, plus CI seconds when available. (sha=e07ae70c5ab3b55197c87d7c20336ef8f7288bbd)",
+      "expected_head_sha": "e07ae70c5ab3b55197c87d7c20336ef8f7288bbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T05:30:49.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/thinking-recovery-invalid-request",
+        "head_sha": "e07ae70c5ab3b55197c87d7c20336ef8f7288bbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
