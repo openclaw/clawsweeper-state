@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162564",
+  "mode": "autonomous",
+  "run_id": "36840592424",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36840592424",
+  "head_sha": "7849c6a870349fdd9a5940b9e833d814f4caa02d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162564.md",
+  "published_at": "2026-10-01T09:51:35.378Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162564",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162564",
+  "canonical_pr": null,
+  "summary": "Verified overlapping SQLite cleanup ownership on preflight main f59b75644636e93de17dee9a4e096790b76e5ffb. Prepared a narrow repair artifact. Implementation and native reproduction are blocked by the read-only Linux host; swift --version returns permissionDenied. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#162564",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#162564",
+      "candidate_fix": null,
+      "reason": "Requires a writable macOS execution environment to establish a failing regression through the real initializer before implementing or publishing the repair. Source inspection alone does not satisfy the reproduction gate."
+    },
+    {
+      "target": "#158090",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct implementation work whose tested merge exposed the native symptom; it is not a canonical fix or replacement source for this cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162564",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162564",
+      "candidate_fix": null,
+      "reason": "A bounded existing-behavior repair remains appropriate for an executor with a writable checkout and macOS proof capability."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=apps [check:changed] apps/shared/OpenClawKit/Tests/OpenClawNativeStateTests/OpenClawNativeStateSQLiteTests.swift: app surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- apps/shared/OpenClawKit/Tests/OpenClawNativeStateTests/OpenClawNativeStateSQLiteTests.swift No files found matching the given patterns. [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] lint apps (swiftlint unavailable on this host) [check:changed] Swift app lint skipped: swiftlint is unavailable on this non-macOS host; macOS CI owns SwiftLint coverage. [check:changed] macOS app CI tests $ pnpm test:macos:ci:1 && pnpm test:macos:ci:2 && pnpm test:macos:ci:3 $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/mac-elevation-host.test.ts [test] starting test/vitest/vitest.tooling.config.ts [test] passed 1 Vitest shard in 2.37s $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/vitest-process-group.test.ts test/scripts/package-mac-app.test.ts test/scripts/stage-cloudflared-macos.test.ts test/scripts/stage-openclaw-bun-macos.test.ts test/scripts/build-mac-sqlite.test.ts test/scripts/restart-mac.test.ts test/scripts/mac-runtime.test.ts test/scripts/package-mac-dist.test.ts test/scripts/codesign-mac-app.test.ts test/scripts/notarize-mac-artifact.test.ts test/scripts/mac-elevation-artifact.test.ts [test] starting test/vitest/vitest.tooling.config.ts [test] passed 1 Vitest shard in 8.09s $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/ci-platform-checkout.test.ts test/scripts/macos-native-test-launch.test.ts src/daemon/launchd.test.ts src/daemon/runtime-paths.test.ts src/daemon/runtime-binary.test.ts src/gateway/worker-environments/workspace-rsync-path.test.ts src/infra/brew.test.ts src/infra/stable-node-path.test.ts src/process/supervisor/adapters/child.service-lifecycle.test.ts test/scripts/verify-mac-runtime-fs.test.ts test/scripts/create-dmg.test.ts src/skills/runtime/refresh.test.ts src/skills/runtime/refresh.missing-root.integration.test.ts [test] starting test/vitest/vitest.unit-fast.config.ts [test] starting test/vitest/vitest.unit.config.ts node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js (48:0) \u001b[33m[MODULE_LEVEL_DIRECTIVE] \u001b[0mThe semantics of the module level directive \"\" in \"node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js\" may not be preserved when bundling. \u001b[38;5;246m╭\u001b[0m\u001b[38;5;246m─\u001b[0m\u001b[38;5;246m[\u001b[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/resolve-evaluate-options.js:48:1 \u001b[38;5;246m]\u001b[0m \u001b[38;5;246m│\u001b[0m \u001b[38;5;246m48 │\u001b[0m '' \u001b[38;5;240m │\u001b[0m ─┬ \u001b[38;5;240m │\u001b[0m ╰── module level directive may not be preserved \u001b[38;5;240m │\u001b[0m \u001b[38;5;240m │\u001b[0m \u001b[38;5;115mHelp\u001b[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives \u001b[38;5;246m────╯\u001b[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js (6:0) \u001b[33m[MODULE_LEVEL_DIRECTIVE] \u001b[0mThe semantics of the module level directive \"\" in \"node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js\" may not be preserved when bundling. \u001b[38;5;246m╭\u001b[0m\u001b[38;5;246m─\u001b[0m\u001b[38;5;246m[\u001b[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-create.js:6:1 \u001b[38;5;246m]\u001b[0m \u001b[38;5;246m│\u001b[0m \u001b[38;5;246m6 │\u001b[0m '' \u001b[38;5;240m │\u001b[0m ─┬ \u001b[38;5;240m │\u001b[0m ╰── module level directive may not be preserved \u001b[38;5;240m │\u001b[0m \u001b[38;5;240m │\u001b[0m \u001b[38;5;115mHelp\u001b[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives \u001b[38;5;246m───╯\u001b[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js (11:0) \u001b[33m[MODULE_LEVEL_DIRECTIVE] \u001b[0mThe semantics of the module level directive \"\" in \"node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js\" may not be preserved when bundling. \u001b[38;5;246m╭\u001b[0m\u001b[38;5;246m─\u001b[0m\u001b[38;5;246m[\u001b[0m node_modules/.pnpm/@mdx-js+mdx@3.1.1_supports-color@10.2.2/node_modules/@mdx-js/mdx/lib/util/estree-util-is-declaration.js:11:1 \u001b[38;5;246m]\u001b[0m \u001b[38;5;246m│\u001b[0m \u001b[38;5;246m11 │\u001b[0m '' \u001b[38;5;240m │\u001b[0m ─┬ \u001b[38;5;240m │\u001b[0m ╰── module level directive may not be preserved \u001b[38;5;240m │\u001b[0m \u001b[38;5;240m │\u001b[0m \u001b[38;5;115mHelp\u001b[0m: For more information, see https://rolldown.rs/in-depth/directives#other-directives \u001b[38;5;246m────╯\u001b[0m node_modules/.pnpm/hast-util-to-estree@3.1.3_supports-color@10.2.2/node_modules/hast-util-to-estree/lib/handlers/comment.js (12:0) \u001b[33m[MODULE_LEVEL_DIRECTIVE] \u001b[0mThe semantics of the module level directive \"\" in \"node_modules/.pnpm/hast-util-to-estree@3.1.3_sup ...  \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/ci-platform-checkout.test.ts \u001b[2m(\u001b[22m\u001b[2m73 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[33m 50969\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, timeouts-exhausted)\u001b[33m 736\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, recovery)\u001b[33m 3320\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, early-leader-exit)\u001b[33m 896\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, harness-timeout)\u001b[33m 804\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, git-failure)\u001b[33m 393\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, git-exit-124)\u001b[33m 4515\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, cancel-SIGTERM)\u001b[33m 9516\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, cancel-SIGINT)\u001b[33m 5437\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, cancel-SIGHUP)\u001b[33m 5464\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=false, cleanup-failure)\u001b[33m 391\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, timeouts-exhausted)\u001b[33m 2017\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, recovery)\u001b[33m 3810\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, early-leader-exit)\u001b[33m 943\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, git-failure)\u001b[33m 1991\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, checkout-failure)\u001b[33m 2267\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, harness-recovery)\u001b[33m 1694\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, cancel-SIGTERM)\u001b[33m 9616\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m preserves checkout ownership and fixture isolation (Linux=true, cleanup-failure)\u001b[33m 452\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes linux-node trusted harness (push, workflow=same, target=selected, retained=false) without mutating the candidate\u001b[33m 1396\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes linux-node trusted harness (push, workflow=previous, target=selected, retained=false) without mutating the candidate\u001b[33m 1814\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes platform trusted harness (push, workflow=same, target=selected, retained=false) without mutating the candidate\u001b[33m 1354\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes platform trusted harness (push, workflow=same, target=selected, retained=true) without mutating the candidate\u001b[33m 1362\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes platform trusted harness (push, workflow=previous, target=selected, retained=false) without mutating the candidate\u001b[33m 1740\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (push, workflow=same, target=selected, retained=false) without mutating the candidate\u001b[33m 2006\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (pull_request, workflow=same, target=selected, retained=false) without mutating the candidate\u001b[33m 2019\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (pull_request, workflow=previous, target=selected, retained=false) without mutating the candidate\u001b[33m 1524\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (workflow_dispatch, workflow=previous, target=selected, retained=false) without mutating the candidate\u001b[33m 1400\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (workflow_dispatch, workflow=previous, target=missing-branch, retained=false) without mutating the candidate\u001b[33m 1563\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (pull_request, workflow=missing, target=selected, retained=false) without mutating the candidate\u001b[33m 1651\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (push, workflow=missing-action, target=selected, retained=false) without mutating the candidate\u001b[33m 1935\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (workflow_dispatch, workflow=previous, target=moved-event, retained=false) without mutating the candidate\u001b[33m 1821\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (push, workflow=same, target=missing-sha, retained=false) without mutating the candidate\u001b[33m 802\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m materializes preflight trusted harness (workflow_dispatch, workflow=previous, target=missing-sha, retained=false) without mutating the candidate\u001b[33m 1031\u001b[2mms\u001b[22m\u001b[39m \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m waits for legal slow tree startup before cancellation\u001b[33m 9527\u001b[2mms\u001b[22m\u001b[39m \u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[90m (4)\u001b[39m \u001b[2m Tests \u001b[22m \u001b[1m\u001b[31m23 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m86 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m17 skipped\u001b[39m\u001b[90m (126)\u001b[39m \u001b[2m Start at \u001b[22m 09:47:56 \u001b[2m Duration \u001b[22m 52.09s\u001b[2m (tests 96%, worker 1%, transform 1%, import 1%)\u001b[22m \u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[90m (4)\u001b[39m \u001b[2m Tests \u001b[22m \u001b[1m\u001b[31m23 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m86 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m17 skipped\u001b[39m\u001b[90m (126)\u001b[39m \u001b[2m Start at \u001b[22m 09:47:56 \u001b[2m Duration \u001b[22m 52.10s\u001b[2m (tests 96%, worker 1%, transform 1%, import 1%)\u001b[22m",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#162564",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
