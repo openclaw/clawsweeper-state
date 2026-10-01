@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T03:25:49.471Z",
+  "updated_at": "2026-10-01T03:25:55.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156941:5806704051:2026-09-30T22:06:44Z:clawsweeper_needs_human",
-      "comment_id": "5806704051",
-      "comment_version_key": "5806704051:2026-09-30T22:06:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156941#issuecomment-5806704051",
-      "comment_created_at": "2026-09-24T03:03:57Z",
-      "comment_updated_at": "2026-09-30T22:06:44Z",
-      "comment_body_sha256": "b7acabccafa5ec9243056e41af68523ca32a8ba37c824cef74a5dc9964a2380e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156941,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The four assembled seeded main/work global-chat cases that failed on an earlier head have not been completed locally after the final key repair. The added worker test proves the autho... (sha=17487454baa68c8901b1c9c84393135e93748a55)",
-      "expected_head_sha": "17487454baa68c8901b1c9c84393135e93748a55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T22:07:46.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-pr-gateway-ownership",
-        "head_sha": "17487454baa68c8901b1c9c84393135e93748a55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162168:5920559057:2026-09-30T22:06:55Z:clawsweeper_needs_human",
       "comment_id": "5920559057",
@@ -33522,6 +33489,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162266:5924096044:2026-10-01T03:24:50Z:re_review",
+      "comment_id": "5924096044",
+      "comment_version_key": "5924096044:2026-10-01T03:24:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162266#issuecomment-5924096044",
+      "comment_created_at": "2026-10-01T03:24:50Z",
+      "comment_updated_at": "2026-10-01T03:24:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162266,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T03:25:53.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-stopped-channel-breaker",
+        "head_sha": "85b1e72c29bc98155efd2c24c33b1f9631e58bb0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
