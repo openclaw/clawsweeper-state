@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:05:33.449Z",
+  "updated_at": "2026-10-01T02:06:05.214Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162065:5918690060:2026-09-30T20:02:00Z:re_review",
-      "comment_id": "5918690060",
-      "comment_version_key": "5918690060:2026-09-30T20:02:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162065#issuecomment-5918690060",
-      "comment_created_at": "2026-09-30T20:02:00Z",
-      "comment_updated_at": "2026-09-30T20:02:00Z",
-      "comment_body_sha256": "cc14f8c3081547ccc401d2ec92dbbec896a6b35ddafc31cba7c344fce80c0380",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162065,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head d5d285f8d5a. all four accepted warning-flow findings are fixed through one typed plugin-warning contract: legacy normalization forwards channel-hook warnings, both pre-plugin callers retain them, advisory receipts merge them, and unrelated config warnings remain outside the plugin receipt. exact lint/types/diff plus 6 channel, 8 receipt, and 3 updater-boundary cases are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T20:03:15.047Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.34-post-plugin-doctor-warning",
-        "head_sha": "d5d285f8d5af98ce961f4b0b5c4ad0ae373fd8fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161779:5908277493:2026-09-30T20:02:59Z:clawsweeper_needs_human",
       "comment_id": "5908277493",
@@ -33265,6 +33218,39 @@
         "kind": "pull_request",
         "branch": "oss-s7-wacli-462",
         "head_sha": "19aeb0b31819a2c63024afefc24018b08669ff6c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162268:5923072297:2026-10-01T02:05:13Z:clawsweeper_needs_human",
+      "comment_id": "5923072297",
+      "comment_version_key": "5923072297:2026-10-01T02:05:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162268#issuecomment-5923072297",
+      "comment_created_at": "2026-10-01T01:46:51Z",
+      "comment_updated_at": "2026-10-01T02:05:13Z",
+      "comment_body_sha256": "67d3871025f3be34d5d5b8fc2b7c72fd258489badd0ce3530fa678f89a89a217",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162268,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published updater's earlier copy-based admission may fail on a busy WAL before it invokes candidate finalization. The required published-driver × candidate run has not established... (sha=7a65802c53febfd551826011e24114f9499d7365)",
+      "expected_head_sha": "7a65802c53febfd551826011e24114f9499d7365",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T02:06:05.214Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-ownership-inspection",
+        "head_sha": "7a65802c53febfd551826011e24114f9499d7365",
         "cluster_id": null,
         "job_path": null
       }
