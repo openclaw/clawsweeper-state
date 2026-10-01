@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:26:02.855Z",
+  "updated_at": "2026-10-01T07:26:04.423Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162056:5924126703:2026-10-01T03:27:47Z:re_review",
-      "comment_id": "5924126703",
-      "comment_version_key": "5924126703:2026-10-01T03:27:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162056#issuecomment-5924126703",
-      "comment_created_at": "2026-10-01T03:27:47Z",
-      "comment_updated_at": "2026-10-01T03:27:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162056,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T03:28:34.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.8.34-retained-deleted-agent-db",
-        "head_sha": "a8db30d4812a1ce6ef5d6db8d6ddba248cfc6408",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162283:5923321020:2026-10-01T03:27:39Z:clawsweeper_needs_human",
       "comment_id": "5923321020",
@@ -33755,6 +33708,39 @@
         "kind": "pull_request",
         "branch": "fix/f104-dashboard-owned-ssh-forward",
         "head_sha": "8d5cf3a45b3de5ee9f343ad75d5d039625bf6cfc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91271:4644476495:2026-10-01T07:23:30Z:clawsweeper_needs_human",
+      "comment_id": "4644476495",
+      "comment_version_key": "4644476495:2026-10-01T07:23:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91271#issuecomment-4644476495",
+      "comment_created_at": "2026-06-07T23:53:14Z",
+      "comment_updated_at": "2026-10-01T07:23:30Z",
+      "comment_body_sha256": "e758de5b6996fc94ecb87d7e5232b0dacf766b349aecaefc479c7644940f4ab9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed session-send owner supplies requester names to initial, reply, and announcement prompts, and loopback tests observe the dispatched... (sha=42c5d4a6d7865950659927d31e7ccdefb2133279)",
+      "expected_head_sha": "42c5d4a6d7865950659927d31e7ccdefb2133279",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T07:26:04.423Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/38570-a2a-requester-identity",
+        "head_sha": "42c5d4a6d7865950659927d31e7ccdefb2133279",
         "cluster_id": null,
         "job_path": null
       }
