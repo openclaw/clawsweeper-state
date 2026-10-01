@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:46:47.329Z",
+  "updated_at": "2026-10-01T21:47:23.887Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162859:5936475363:2026-10-01T17:06:49Z:re_review",
-      "comment_id": "5936475363",
-      "comment_version_key": "5936475363:2026-10-01T17:06:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162859#issuecomment-5936475363",
-      "comment_created_at": "2026-10-01T17:06:49Z",
-      "comment_updated_at": "2026-10-01T17:06:49Z",
-      "comment_body_sha256": "4acf08ffea99f0372d01062f719a6fb847870227968350ed6b1ffee9f416387b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162859,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T17:07:56.488Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/dotenv-18.0.3-20261001",
-        "head_sha": "0e43c3ca3627fa2e682ede6818621f260bc07b9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162800:5934906199:2026-10-01T17:07:35Z:clawsweeper_needs_human",
       "comment_id": "5934906199",
@@ -32948,6 +32901,39 @@
         "kind": "pull_request",
         "branch": "fix/mantle-aws-sdk-auth-mode",
         "head_sha": "ecc257738433c97e42971b1b796f2fc6b42ad701",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163015:5941318020:2026-10-01T21:46:32Z:clawsweeper_needs_human",
+      "comment_id": "5941318020",
+      "comment_version_key": "5941318020:2026-10-01T21:46:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163015#issuecomment-5941318020",
+      "comment_created_at": "2026-10-01T21:46:32Z",
+      "comment_updated_at": "2026-10-01T21:46:32Z",
+      "comment_body_sha256": "9b6c4b2f1b4a1324b8f92d751e00ea4f968e4edfd888375351d10744b01dd511",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations containing newly retired keys now stop at Doctor and require an intermediate upgrade. The reported fixture tests do not establish published-updater rollback or... (sha=efdbb720bd327367e908996787f652c99c88f1ee)",
+      "expected_head_sha": "efdbb720bd327367e908996787f652c99c88f1ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:47:23.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l285-migrations-doctor-config-20261001",
+        "head_sha": "efdbb720bd327367e908996787f652c99c88f1ee",
         "cluster_id": null,
         "job_path": null
       }
