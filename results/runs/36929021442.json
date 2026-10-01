@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1242",
+  "mode": "autonomous",
+  "run_id": "36929021442",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36929021442",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1242.md",
+  "published_at": "2026-10-01T21:33:27.206Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1242",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1242",
+  "canonical_pr": null,
+  "summary": "No implementation PR is justified yet. Current main already changes the runtime, Spark profiles, and setup inference gate. Remaining warm-up failures need reproduction on the affected Spark using current main before selecting a narrow repair. The misqualified upstream reference is retained as evidence rather than a local action target. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#1242",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Keep the issue open without claiming it is fixed. Implementation is blocked on repeated current-main launches and existing-install recovery evidence from the affected Spark, including the actual selected model/profile, runtime, driver, and failure logs. The available evidence does not identify a safe additional patch."
+    },
+    {
+      "target": "#1399",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Historical mitigation evidence; no action against this closed contributor PR."
+    },
+    {
+      "target": "#1422",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Historical maintainer decision; preserve the accepted admission policy."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1242",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
