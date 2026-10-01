@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:12:44.453Z",
+  "updated_at": "2026-10-01T21:12:46.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5786840665:2026-09-23T00:27:26Z:re_review",
-      "comment_id": "5786840665",
-      "comment_version_key": "5786840665:2026-09-23T00:27:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5786840665",
-      "comment_created_at": "2026-09-23T00:27:26Z",
-      "comment_updated_at": "2026-09-23T00:27:26Z",
-      "comment_body_sha256": "9ee5632c661e629fc6285e0e765d5c71a0037a781db31623ae40635d9461b081",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (`00be6c5f`, 33 commits behind resolved, clean auto-merge). focused tests pass (12/12 skill-selection). tsgo:core errors are pre-existing upstream (40 on clean main, 0 in our files)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T15:47:45.447Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5787889284:2026-09-23T02:26:57Z:re_review",
       "comment_id": "5787889284",
@@ -33121,6 +33094,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161480:5937029612:2026-10-01T21:11:33Z:clawsweeper_needs_human",
+      "comment_id": "5937029612",
+      "comment_version_key": "5937029612:2026-10-01T21:11:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161480#issuecomment-5937029612",
+      "comment_created_at": "2026-10-01T17:40:45Z",
+      "comment_updated_at": "2026-10-01T21:11:33Z",
+      "comment_body_sha256": "944422b4a3b425ea71095b46766487bf31c7dd715ac3eba31fca7ff19e182363",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve configured sources when optimizing repeated atoms (P1)** - In legacy mode, \\p{L} is an identity escape followed by literal braces, rather than one property atom. Consequently ^\\p{L}{1,}$ matches p{L}},...; Review finding: [P1] Preserve configured sources when optimizing repeated atoms — src/logging/redact-pattern-runtime.ts:55-57 - [high] Configured masking can silently lose matches... (sha=4abb7d3ffaddc85fe04eb9cd20c173c1cf6a3611)",
+      "expected_head_sha": "4abb7d3ffaddc85fe04eb9cd20c173c1cf6a3611",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:12:46.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1085",
+        "head_sha": "4abb7d3ffaddc85fe04eb9cd20c173c1cf6a3611",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
