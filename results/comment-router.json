@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T21:19:03.734Z",
+  "updated_at": "2026-10-01T21:19:12.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160442:5935050576:2026-10-01T15:48:06Z:re_review",
-      "comment_id": "5935050576",
-      "comment_version_key": "5935050576:2026-10-01T15:48:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160442#issuecomment-5935050576",
-      "comment_created_at": "2026-10-01T15:48:06Z",
-      "comment_updated_at": "2026-10-01T15:48:06Z",
-      "comment_body_sha256": "6622b52cd9729795c36228f091335a2e6ddf77eede5153ee0a898cd32b530e26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160442,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T16:04:05.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/node-parity-l1-bundle",
-        "head_sha": "f8c852f8aad05d3e5c247cf400d1390a44fa8f15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104018:5935322081:2026-10-01T16:02:24Z:re_review",
       "comment_id": "5935322081",
@@ -33150,6 +33103,39 @@
         "kind": "pull_request",
         "branch": "fix/gap-browser-proxy-upload-retry-cap",
         "head_sha": "c0b84345bf0f69c7e079867a2e4597f87e97f687",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163000:5940796225:2026-10-01T21:18:12Z:clawsweeper_needs_human",
+      "comment_id": "5940796225",
+      "comment_version_key": "5940796225:2026-10-01T21:18:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163000#issuecomment-5940796225",
+      "comment_created_at": "2026-10-01T21:18:12Z",
+      "comment_updated_at": "2026-10-01T21:18:12Z",
+      "comment_body_sha256": "82b269e497381d52a7775c8700df32db6507ff6cc5da7781dae6994b5745e276",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163000,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Finish the declared changed-file checks and UI build, then complete and publish the inspected before/after rendering comparison. (sha=680c0639dacbcbbb1897d3ad528f5a316d72c6fa)",
+      "expected_head_sha": "680c0639dacbcbbb1897d3ad528f5a316d72c6fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T21:19:12.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l283-dup-ui-pages-shared",
+        "head_sha": "680c0639dacbcbbb1897d3ad528f5a316d72c6fa",
         "cluster_id": null,
         "job_path": null
       }
