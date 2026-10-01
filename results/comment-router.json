@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:47:01.149Z",
+  "updated_at": "2026-10-01T10:47:04.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160509:5926286116:2026-10-01T06:53:04Z:re_review",
-      "comment_id": "5926286116",
-      "comment_version_key": "5926286116:2026-10-01T06:53:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160509#issuecomment-5926286116",
-      "comment_created_at": "2026-10-01T06:53:04Z",
-      "comment_updated_at": "2026-10-01T06:53:04Z",
-      "comment_body_sha256": "e5346f021ec0141159f30efc17e5927aa8af24d12a1bf98f2d161a8b0bbebb78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160509,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:54:01.142Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/slop40k-10-20260927",
-        "head_sha": "e56882532692332c3245292bdf74a090016e3822",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162474:5926291451:2026-10-01T06:53:30Z:re_review",
       "comment_id": "5926291451",
@@ -33868,6 +33821,39 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/oce-repository-option-projection",
         "head_sha": "e51b986dbd546b3e9a0a33d34631bfba9430186d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158091:5832923157:2026-10-01T10:46:01Z:clawsweeper_needs_human",
+      "comment_id": "5832923157",
+      "comment_version_key": "5832923157:2026-10-01T10:46:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158091#issuecomment-5832923157",
+      "comment_created_at": "2026-09-25T13:09:25Z",
+      "comment_updated_at": "2026-10-01T10:46:01Z",
+      "comment_body_sha256": "61f55237be19fefd44136926099c85a5a5a3e818713991dc68e3a870dce4e6d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=08c2c76ac9ff643da9a651231ea0d260d38a8593)",
+      "expected_head_sha": "08c2c76ac9ff643da9a651231ea0d260d38a8593",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:47:04.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/installed-skill-harnesses",
+        "head_sha": "08c2c76ac9ff643da9a651231ea0d260d38a8593",
         "cluster_id": null,
         "job_path": null
       }
