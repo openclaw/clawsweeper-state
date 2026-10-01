@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:05:37.621Z",
+  "updated_at": "2026-10-01T10:05:49.373Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5925777428:2026-10-01T06:09:43Z:re_review",
-      "comment_id": "5925777428",
-      "comment_version_key": "5925777428:2026-10-01T06:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5925777428",
-      "comment_created_at": "2026-10-01T06:09:43Z",
-      "comment_updated_at": "2026-10-01T06:09:43Z",
-      "comment_body_sha256": "6c32c1d76922b1ce663e081ecc1d994214cd6eb3acf7ab1814fa6aba84913e0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T06:10:48.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "2ef912f2ae0a6a1dc20f414d05fc58cfe8c81e1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162428:5925378543:2026-10-01T06:10:43Z:clawsweeper_auto_repair",
       "comment_id": "5925378543",
@@ -33880,6 +33833,39 @@
         "kind": "pull_request",
         "branch": "codex/test-session-budget-pool-f885",
         "head_sha": "0abefcbdec9c83d2a4086d6165ad7ebd3e1e778f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158030:5829942849:2026-10-01T10:04:55Z:clawsweeper_needs_human",
+      "comment_id": "5829942849",
+      "comment_version_key": "5829942849:2026-10-01T10:04:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158030#issuecomment-5829942849",
+      "comment_created_at": "2026-09-25T09:16:20Z",
+      "comment_updated_at": "2026-10-01T10:04:55Z",
+      "comment_body_sha256": "b2cfa0c72e3cf9d87e62e6e8b8c6c3b065297ec79789a7bd1916402374aa2898",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: exact-head tests exercise the fork host with mocked session creation, transport, and reply dispatch; they do no...; Review finding: [P1] [P1] Ignore benign activity refreshes when fencing a fork route — src/plugins/plugin-command-conversation-fork.ts:147-150 - [P1] [P1] Give queued replay deliv... (sha=bd244fd9b8e1222ec07271dec79eea4c33baf5f4)",
+      "expected_head_sha": "bd244fd9b8e1222ec07271dec79eea4c33baf5f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T10:05:49.373Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-conversation-fork",
+        "head_sha": "bd244fd9b8e1222ec07271dec79eea4c33baf5f4",
         "cluster_id": null,
         "job_path": null
       }
