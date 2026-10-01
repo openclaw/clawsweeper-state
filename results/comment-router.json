@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T16:33:52.294Z",
+  "updated_at": "2026-10-01T16:39:39.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142852:5930134174:2026-10-01T11:11:21Z:re_review",
-      "comment_id": "5930134174",
-      "comment_version_key": "5930134174:2026-10-01T11:11:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142852#issuecomment-5930134174",
-      "comment_created_at": "2026-10-01T11:11:21Z",
-      "comment_updated_at": "2026-10-01T11:11:21Z",
-      "comment_body_sha256": "b5f78bda977cc43fba0d3e7572a9c706d258c27f65c529789fdd8f7e68ada90c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142852,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head c8f9a69fa64769b307fd132355141a71edec8986 merges current main, preserves its complete-payload settlement, and reduces the regression file to 215 lines. updated body includes forced-wake red/green evidence and convex-leased telegram test server requester observations of both a photo and a voice note",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T11:12:11.131Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-132780-announce-media-drop",
-        "head_sha": "c8f9a69fa64769b307fd132355141a71edec8986",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162406:5925113905:2026-10-01T11:11:12Z:clawsweeper_auto_repair",
       "comment_id": "5925113905",
@@ -34018,6 +33971,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-testbox-spend-controls",
         "head_sha": "c8a6f847ddbc8f29cd47e1b5fa2c76fa79c2f8f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:827:5935820608:2026-10-01T16:38:31Z:clawsweeper_needs_human",
+      "comment_id": "5935820608",
+      "comment_version_key": "5935820608:2026-10-01T16:38:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/827#issuecomment-5935820608",
+      "comment_created_at": "2026-10-01T16:30:42Z",
+      "comment_updated_at": "2026-10-01T16:38:31Z",
+      "comment_body_sha256": "57decf3b13f147dc35d67905303baa71fbfecba4a3a86995c138d82fbc70091a",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 827,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=349ca2677e2d31fa2007a114c47f9b6949b0209e)",
+      "expected_head_sha": "349ca2677e2d31fa2007a114c47f9b6949b0209e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T16:39:39.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/fork-pr-default",
+        "head_sha": "349ca2677e2d31fa2007a114c47f9b6949b0209e",
         "cluster_id": null,
         "job_path": null
       }
