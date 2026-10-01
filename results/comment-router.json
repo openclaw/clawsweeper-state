@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T10:08:51.844Z",
+  "updated_at": "2026-10-01T10:08:56.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160978:5884092411:2026-10-01T06:08:50Z:clawsweeper_needs_human",
-      "comment_id": "5884092411",
-      "comment_version_key": "5884092411:2026-10-01T06:08:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160978#issuecomment-5884092411",
-      "comment_created_at": "2026-09-29T05:12:58Z",
-      "comment_updated_at": "2026-10-01T06:08:50Z",
-      "comment_body_sha256": "f47ad4982968df659525ecdd470942cb950b7cdbc29bdf643011de34a57f815f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160978,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8d7ff60ad086da8b3d3691eeb637732e6915255e)",
-      "expected_head_sha": "8d7ff60ad086da8b3d3691eeb637732e6915255e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T06:15:21.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/scope-ui-01-publish-20260929",
-        "head_sha": "8d7ff60ad086da8b3d3691eeb637732e6915255e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148947:5677609897:2026-10-01T06:15:31Z:clawsweeper_needs_human",
       "comment_id": "5677609897",
@@ -33849,6 +33816,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161103:5929227203:2026-10-01T10:07:56Z:re_review",
+      "comment_id": "5929227203",
+      "comment_version_key": "5929227203:2026-10-01T10:07:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161103#issuecomment-5929227203",
+      "comment_created_at": "2026-10-01T10:07:56Z",
+      "comment_updated_at": "2026-10-01T10:07:56Z",
+      "comment_body_sha256": "d16fc9805b4a87e6837a01e82565f81233e1aea2a0b0d3f67819457d93d510a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161103,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: head 774153d1da42739a29a02f471159c40863352f86 adds only the missing real preparedmodelruntimeconfigsmatch export to the existing test mock. all 10 prepared-harness delivery tests and both reasoning regressions pass. production code remains identical to the reviewed 7747fd7 head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T10:08:55.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161100-codex-max-reply-thinking",
+        "head_sha": "774153d1da42739a29a02f471159c40863352f86",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
