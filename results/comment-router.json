@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T04:11:49.792Z",
+  "updated_at": "2026-10-01T04:12:02.515Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160675:5877089407:2026-09-30T21:23:33Z:clawsweeper_needs_human",
-      "comment_id": "5877089407",
-      "comment_version_key": "5877089407:2026-09-30T21:23:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160675#issuecomment-5877089407",
-      "comment_created_at": "2026-09-28T19:36:43Z",
-      "comment_updated_at": "2026-09-30T21:23:33Z",
-      "comment_body_sha256": "faaab03ee3e2fef3f2423fd4759d7621774394bca67ef870e85a95c8ae2e3b84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160675,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Gateway authorization and heartbeat routing have focused after-fix tests with mocked Telegram sendi...; Review finding: [P1] Preserve the lost-result fallback outside Telegram — src/agents/bash-tools.exec-host-node.ts:626 - [P1] Defer generic events from other delivery routes — src/... (sha=3ed3921c07b24aa2d6d241a06c4cd1933d56eb34)",
-      "expected_head_sha": "3ed3921c07b24aa2d6d241a06c4cd1933d56eb34",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T23:08:11.945Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-telegram-topic-completion-routing",
-        "head_sha": "3ed3921c07b24aa2d6d241a06c4cd1933d56eb34",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161676:5905316535:2026-09-30T22:19:31Z:clawsweeper_needs_human",
       "comment_id": "5905316535",
@@ -33378,6 +33345,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110561:5924568694:2026-10-01T04:10:50Z:re_review",
+      "comment_id": "5924568694",
+      "comment_version_key": "5924568694:2026-10-01T04:10:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110561#issuecomment-5924568694",
+      "comment_created_at": "2026-10-01T04:10:50Z",
+      "comment_updated_at": "2026-10-01T04:10:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110561,
+      "author": "wangyan2026",
+      "author_id": 51532318,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T04:12:01.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/strict-blob-text-cast-110186",
+        "head_sha": "22422a4d3ccfcc1c539fe050eab66b0eeece8b82",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
