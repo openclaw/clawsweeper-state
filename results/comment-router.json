@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:00:27.434Z",
+  "updated_at": "2026-10-01T01:02:21.344Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136454:5738311245:2026-09-19T01:37:53Z:re_review",
-      "comment_id": "5738311245",
-      "comment_version_key": "5738311245:2026-09-19T01:37:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136454#issuecomment-5738311245",
-      "comment_created_at": "2026-09-19T01:37:53Z",
-      "comment_updated_at": "2026-09-19T01:37:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136454,
-      "author": "HGLUSSY",
-      "author_id": 283802306,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T18:22:19.809Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136454:5807142939:2026-09-24T03:42:01Z:re_review",
       "comment_id": "5807142939",
@@ -33485,6 +33458,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4150:5922590751:2026-10-01T01:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5922590751",
+      "comment_version_key": "5922590751:2026-10-01T01:01:25Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4150#issuecomment-5922590751",
+      "comment_created_at": "2026-10-01T01:01:25Z",
+      "comment_updated_at": "2026-10-01T01:01:25Z",
+      "comment_body_sha256": "3749fb45a34822e5b57b776c00d21a3eab0ed744a504e314c5debcc48eb59528",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR currently conflicts with main in CHANGELOG.md; resolving it must preserve both 0.70.1 entries. (sha=099c0ccb643e14ba8c843b57da555744693cf0d4)",
+      "expected_head_sha": "099c0ccb643e14ba8c843b57da555744693cf0d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:02:21.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/20260930-codex-catchup-lstat",
+        "head_sha": "099c0ccb643e14ba8c843b57da555744693cf0d4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
