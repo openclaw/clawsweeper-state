@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T05:32:11.169Z",
+  "updated_at": "2026-10-01T05:32:17.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4103:5876416419:2026-09-28T18:51:40Z:re_review",
-      "comment_id": "5876416419",
-      "comment_version_key": "5876416419:2026-09-28T18:51:40Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4103#issuecomment-5876416419",
-      "comment_created_at": "2026-09-28T18:51:40Z",
-      "comment_updated_at": "2026-09-28T18:51:40Z",
-      "comment_body_sha256": "7834d824b17439b50d161691ccd14357184a95c41996642fa9d8982f4c37e055",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4103,
-      "author": "Sogl",
-      "author_id": 7556290,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — revision 7 finding addressed at 77051eac: the cli token updater now compares the freshly loaded stored credential against the one that authorized the fetch and skips the writeback on mismatch. two new tests exercise the real config-file path (stale writeback refused, unchanged credential still written)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T00:41:20.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/antigravity-account-scoped-fetch",
-        "head_sha": "d9f3aed901b1b9c8efc4075f89a3e5b5ea301e91",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4103:5869037465:2026-10-01T00:25:36Z:clawsweeper_needs_human",
       "comment_id": "5869037465",
@@ -33934,6 +33887,39 @@
         "kind": "pull_request",
         "branch": "refactor/lg-config-sender-policy",
         "head_sha": "98bc0c934a3f6849ba975a952d20e8b8d6151c21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162430:5925377147:2026-10-01T05:31:20Z:clawsweeper_needs_human",
+      "comment_id": "5925377147",
+      "comment_version_key": "5925377147:2026-10-01T05:31:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162430#issuecomment-5925377147",
+      "comment_created_at": "2026-10-01T05:31:20Z",
+      "comment_updated_at": "2026-10-01T05:31:20Z",
+      "comment_body_sha256": "b89bde16b6864a98b3d78fc35d9dbc7ab3ec3dc2618c6f537ebadfbf9902dd2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162430,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published-updater × candidate result is still pending, so direct-update backup, repair ordering, and preserved settings are not yet established through the installed updater bound... (sha=4d962e5429bfa22a39ba27a933dc416a94187d40)",
+      "expected_head_sha": "4d962e5429bfa22a39ba27a933dc416a94187d40",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T05:32:17.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-retain-supported-migrations",
+        "head_sha": "4d962e5429bfa22a39ba27a933dc416a94187d40",
         "cluster_id": null,
         "job_path": null
       }
