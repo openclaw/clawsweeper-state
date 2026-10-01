@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1242",
+  "mode": "autonomous",
+  "run_id": "36938146494",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36938146494",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1242.md",
+  "published_at": "2026-10-01T23:01:43.190Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1242",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1242",
+  "canonical_pr": null,
+  "summary": "No safely justified implementation was identified on supplied main 76ab839973aad5d74b983740440c4e82fb5ed8ba. Current runtime and Spark profiles differ from the historical failures, and affected-device reproduction remains unverified. No code or GitHub changes were made. Required validation is environment-blocked.",
+  "actions": [
+    {
+      "target": "#1242",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Keep the report open without claiming resolution. Before selecting a patch, collect repeated inference runs with current b11026 and the selected Spark profile, plus existing-install recovery evidence identifying the actual receipt, runtime, context, cache formats, and failure logs. Historical evidence alone cannot justify another runtime bump, context change, or admission-policy reversal."
+    },
+    {
+      "target": "#1399",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Preserve the landed contributor work. Deferring inference prevents the historical setup gate but does not prove CUDA loading is fixed."
+    },
+    {
+      "target": "#1422",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1242",
+      "candidate_fix": null,
+      "reason": "Historical policy context. Reintroducing a dedicated-memory cap would reverse an explicit maintainer decision and can exclude supported Spark hardware."
+    },
+    {
+      "target": "#22893",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Non-mutating metadata blocker scoped to #22893. Correct the misresolved upstream reference in the hydration inventory before treating it as a target-repository item. No GitHub action is justified against openclaw/openclaw-windows-node#22893."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 2,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#22893: correct the hydration inventory's misresolved upstream reference. Target-repository hydration returned HTTP 404 with kind unknown and updated_at null; the source link is https://github.com/ggml-org/llama.cpp/issues/22893."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1242",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
