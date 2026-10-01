@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T01:04:24.323Z",
+  "updated_at": "2026-10-01T01:05:28.237Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161344:5896777656:2026-09-30T18:21:42Z:clawsweeper_needs_human",
-      "comment_id": "5896777656",
-      "comment_version_key": "5896777656:2026-09-30T18:21:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5896777656",
-      "comment_created_at": "2026-09-29T19:04:27Z",
-      "comment_updated_at": "2026-09-30T18:21:42Z",
-      "comment_body_sha256": "707f0288c3c86e5121142db3a9ef2da1f1e502e612db20efe6bcdc6154cdee0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161344,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Lobster adapter is exercised in workflow tests with an injected adapter and mocked host completion,...; Review finding: [P1] Authorize saved embedded results before returning them — extensions/lobster/src/lobster-tool.ts:108 - [high] Saved-result replay bypasses current model author... (sha=8f88364e74651a63c60345bf31866f65f48fdd49)",
-      "expected_head_sha": "8f88364e74651a63c60345bf31866f65f48fdd49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T18:22:45.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lobster-llm-adapter-current",
-        "head_sha": "8f88364e74651a63c60345bf31866f65f48fdd49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161344:5906561320:2026-09-30T07:42:42Z:re_review",
       "comment_id": "5906561320",
@@ -33517,6 +33484,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162237:5922619768:2026-10-01T01:04:16Z:clawsweeper_needs_human",
+      "comment_id": "5922619768",
+      "comment_version_key": "5922619768:2026-10-01T01:04:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162237#issuecomment-5922619768",
+      "comment_created_at": "2026-10-01T01:04:16Z",
+      "comment_updated_at": "2026-10-01T01:04:16Z",
+      "comment_body_sha256": "4c5b1d13619415bda0b505206d3c237bdef4cee26492ef2d9ea66826fda4dc2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162237,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head security approval is still outstanding for a change that carries Gateway-wide automation-management authority through a CLI grant. (sha=7dd812ff6dc810559de062c6a7e86f4d95e3150b)",
+      "expected_head_sha": "7dd812ff6dc810559de062c6a7e86f4d95e3150b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T01:05:28.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-mcp-owner-authority",
+        "head_sha": "7dd812ff6dc810559de062c6a7e86f4d95e3150b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
