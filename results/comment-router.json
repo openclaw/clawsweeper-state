@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T22:11:14.222Z",
+  "updated_at": "2026-10-01T22:11:30.083Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160108:5935965468:2026-10-01T17:58:38Z:re_review",
-      "comment_id": "5935965468",
-      "comment_version_key": "5935965468:2026-10-01T17:58:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160108#issuecomment-5935965468",
-      "comment_created_at": "2026-10-01T16:38:52Z",
-      "comment_updated_at": "2026-10-01T17:58:38Z",
-      "comment_body_sha256": "64de987b28be6f7f9726643d44b61db591df3058bee857d9621deeed16081ca0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160108,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T18:06:14.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-upstream-enterprise-worker",
-        "head_sha": "d137d64104d1fd287f3c1f136c25f8a7d4ec264b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160700:5936522783:2026-10-01T17:09:31Z:re_review",
       "comment_id": "5936522783",
@@ -32929,6 +32882,39 @@
         "kind": "pull_request",
         "branch": "flake/20261001-flake-time-budgets",
         "head_sha": "802868d93b6ceaaaf4e083ae31ab8ddc40e77f8c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1500:5806089178:2026-10-01T22:10:01Z:clawsweeper_needs_human",
+      "comment_id": "5806089178",
+      "comment_version_key": "5806089178:2026-10-01T22:10:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1500#issuecomment-5806089178",
+      "comment_created_at": "2026-09-24T01:57:10Z",
+      "comment_updated_at": "2026-10-01T22:10:01Z",
+      "comment_body_sha256": "4aeffc2b32db98cfbaf97094dd562be3016b7edb1fae9889df23aba52a967e9e",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The hash-matched complete body shows older-head synthetic ConfigEditorModel execution and a test-local Gateway simulation. It does not... (sha=15d0ee49bb65d67b679023e1b9fbb3fa2a2a07a7)",
+      "expected_head_sha": "15d0ee49bb65d67b679023e1b9fbb3fa2a2a07a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T22:11:30.083Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f061-config-redaction-save",
+        "head_sha": "15d0ee49bb65d67b679023e1b9fbb3fa2a2a07a7",
         "cluster_id": null,
         "job_path": null
       }
