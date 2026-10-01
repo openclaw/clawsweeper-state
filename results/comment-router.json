@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T06:53:54.534Z",
+  "updated_at": "2026-10-01T06:54:02.769Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162268:5923072297:2026-10-01T02:30:21Z:clawsweeper_needs_human",
-      "comment_id": "5923072297",
-      "comment_version_key": "5923072297:2026-10-01T02:30:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162268#issuecomment-5923072297",
-      "comment_created_at": "2026-10-01T01:46:51Z",
-      "comment_updated_at": "2026-10-01T02:30:21Z",
-      "comment_body_sha256": "07991879efbda2bb4c9d9f4e9574f3a977191b05b99c9fec592f1ea60f8b9ae9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162268,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published v2026.9.6 updater may fail its earlier copy-based ownership admission before reaching candidate finalization; the required upgrade cell has not established that affected... (sha=7a65802c53febfd551826011e24114f9499d7365)",
-      "expected_head_sha": "7a65802c53febfd551826011e24114f9499d7365",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T02:41:25.706Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-ownership-inspection",
-        "head_sha": "7a65802c53febfd551826011e24114f9499d7365",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162274:5923201889:2026-10-01T02:25:28Z:clawsweeper_auto_repair",
       "comment_id": "5923201889",
@@ -33848,6 +33815,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:160509:5926286116:2026-10-01T06:53:04Z:re_review",
+      "comment_id": "5926286116",
+      "comment_version_key": "5926286116:2026-10-01T06:53:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/160509#issuecomment-5926286116",
+      "comment_created_at": "2026-10-01T06:53:04Z",
+      "comment_updated_at": "2026-10-01T06:53:04Z",
+      "comment_body_sha256": "e5346f021ec0141159f30efc17e5927aa8af24d12a1bf98f2d161a8b0bbebb78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 160509,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:54:01.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/slop40k-10-20260927",
+        "head_sha": "e56882532692332c3245292bdf74a090016e3822",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
