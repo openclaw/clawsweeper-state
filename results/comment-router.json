@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T06:32:25.002Z",
+  "updated_at": "2026-10-01T06:32:50.553Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162245:5922786174:2026-10-01T02:08:47Z:clawsweeper_needs_human",
-      "comment_id": "5922786174",
-      "comment_version_key": "5922786174:2026-10-01T02:08:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162245#issuecomment-5922786174",
-      "comment_created_at": "2026-10-01T01:20:11Z",
-      "comment_updated_at": "2026-10-01T02:08:47Z",
-      "comment_body_sha256": "780d87db94f0ace6c8cf4b7f6e234b30f38de500e25030c623c275ea6ad60a40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162245,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed candidate resolver uses real SQLite lease rows but mocked NTFS metadata in a test, showing admissio...; Review finding: [medium] Unproven final-effect fence after legacy admission — src/cli/update-cli/update-command-executor-grant.ts:95 (sha=0380ddda84aeea7b01cbdd33a3125bcb56a1bc57)",
-      "expected_head_sha": "0380ddda84aeea7b01cbdd33a3125bcb56a1bc57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T02:10:08.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/upd-windows-bigint-lease-identity",
-        "head_sha": "0380ddda84aeea7b01cbdd33a3125bcb56a1bc57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162282:5923305477:2026-10-01T02:08:56Z:clawsweeper_needs_human",
       "comment_id": "5923305477",
@@ -33846,6 +33813,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162361:5926031351:2026-10-01T06:31:45Z:re_review",
+      "comment_id": "5926031351",
+      "comment_version_key": "5926031351:2026-10-01T06:31:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162361#issuecomment-5926031351",
+      "comment_created_at": "2026-10-01T06:31:45Z",
+      "comment_updated_at": "2026-10-01T06:31:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162361,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:32:45.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-swap-posix-fixture",
+        "head_sha": "c4e7d264fdb4b130c8ddaee5cc922b907156e542",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
