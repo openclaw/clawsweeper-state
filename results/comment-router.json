@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:51:18.811Z",
+  "updated_at": "2026-10-01T14:52:08.753Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162374:5924649453:2026-10-01T10:17:53Z:clawsweeper_needs_human",
-      "comment_id": "5924649453",
-      "comment_version_key": "5924649453:2026-10-01T10:17:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162374#issuecomment-5924649453",
-      "comment_created_at": "2026-10-01T04:18:20Z",
-      "comment_updated_at": "2026-10-01T10:17:53Z",
-      "comment_body_sha256": "c21a501616e9636344a48dd5948f101cf93477cfef7ea6aa421d1d536f723870",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162374,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A completion turn containing frozen child output gains policy-permitted requester tools, including write or exec where allowed; the security owner has not yet approved that authority... (sha=4e4af24f43f38845fda3d91042fd61bbfb12fdaa)",
-      "expected_head_sha": "4e4af24f43f38845fda3d91042fd61bbfb12fdaa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T10:18:53.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-completion-tools",
-        "head_sha": "4e4af24f43f38845fda3d91042fd61bbfb12fdaa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1181:5928832352:2026-10-01T10:18:12Z:clawsweeper_needs_human",
       "comment_id": "5928832352",
@@ -34289,6 +34256,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabpot:405:5933938585:2026-10-01T14:50:29Z:re_review",
+      "comment_id": "5933938585",
+      "comment_version_key": "5933938585:2026-10-01T14:50:29Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/405#issuecomment-5933938585",
+      "comment_created_at": "2026-10-01T14:50:29Z",
+      "comment_updated_at": "2026-10-01T14:50:29Z",
+      "comment_body_sha256": "dd774ef6b5513396536251a9e5a7c74f21834c17fa393a39cf5c2dcf5ff1f373",
+      "repo": "openclaw/crabpot",
+      "issue_number": 405,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T14:52:06.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-lifecycle-capture-20260929",
+        "head_sha": "3b06008ba0595d4bf2088caccd91c2f820af5682",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
