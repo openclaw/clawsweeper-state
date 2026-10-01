@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:12:00.922Z",
+  "updated_at": "2026-10-01T02:12:17.713Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150246:5703134312:2026-09-30T20:11:16Z:clawsweeper_needs_human",
-      "comment_id": "5703134312",
-      "comment_version_key": "5703134312:2026-09-30T20:11:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150246#issuecomment-5703134312",
-      "comment_created_at": "2026-09-16T19:14:12Z",
-      "comment_updated_at": "2026-09-30T20:11:16Z",
-      "comment_body_sha256": "8b662a48713b39a4eeedb45b44861651aa15007a452e81b9786e2c479b03c000",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150246,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Selecting the owning core test-type shard adds about 190 seconds of hosted runner preparation in the cited run; no CI owner has accepted that recurring capacity cost. (sha=a3490bdb238f1443298d95f98305705e0930220c)",
-      "expected_head_sha": "a3490bdb238f1443298d95f98305705e0930220c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-30T20:12:40.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/e2e-built-runtime-typed",
-        "head_sha": "a3490bdb238f1443298d95f98305705e0930220c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1510:5819579285:2026-09-30T20:12:22Z:clawsweeper_needs_human",
       "comment_id": "5819579285",
@@ -33226,6 +33193,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155873:5923332299:2026-10-01T02:11:25Z:re_review",
+      "comment_id": "5923332299",
+      "comment_version_key": "5923332299:2026-10-01T02:11:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155873#issuecomment-5923332299",
+      "comment_created_at": "2026-10-01T02:11:25Z",
+      "comment_updated_at": "2026-10-01T02:11:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155873,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T02:12:15.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-computer-use-deadline-monotonic-090",
+        "head_sha": "789d6b78bd76a4b0d613742e660e4b00bdcd590a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
