@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-162907",
+  "mode": "autonomous",
+  "run_id": "36906424495",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36906424495",
+  "head_sha": "6566c6974a29b61193690f4fcc9a3181ee34c233",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-162907.md",
+  "published_at": "2026-10-01T19:20:43.915Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/162907",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/162907",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for stale pre-run orphan navigation. Local source confirms the mechanism, but preflight main SHA verification and runtime reproduction remain executor prerequisites: that SHA is unavailable locally, GitHub DNS failed, and this worker is read-only.",
+  "actions": [
+    {
+      "target": "#162907",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162907",
+      "candidate_fix": null,
+      "reason": "The reported mechanism supports a focused bug repair. Before editing, the executor must verify it on preflight main or refreshed current main and establish a failing regression through the real session boundary."
+    },
+    {
+      "target": "#150283",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no mutation is warranted."
+    },
+    {
+      "target": "#150530",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#150536",
+      "reason": "Historical evidence for a distinct, repaired failure boundary."
+    },
+    {
+      "target": "#150536",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; retain its behavior as sibling regression coverage."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-162907",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#162907",
+      "candidate_fix": null,
+      "reason": "Produce one narrow implementation PR on the job's existing target branch, subject to source verification and regression proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
