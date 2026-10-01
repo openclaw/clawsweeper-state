@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T02:08:29.250Z",
+  "updated_at": "2026-10-01T02:09:27.355Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160108:5918713166:2026-09-30T20:03:35Z:re_review",
-      "comment_id": "5918713166",
-      "comment_version_key": "5918713166:2026-09-30T20:03:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160108#issuecomment-5918713166",
-      "comment_created_at": "2026-09-30T20:03:35Z",
-      "comment_updated_at": "2026-09-30T20:03:35Z",
-      "comment_body_sha256": "448235b534c22856831295f33d6e29f67deb4a40e949a6357457d0923ac016bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160108,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T20:05:14.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-upstream-enterprise-worker",
-        "head_sha": "f54dcd3a3ebe24eee472757a3b64db3b070d4e3d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:844:5917131400:2026-09-30T20:04:45Z:clawsweeper_needs_human",
       "comment_id": "5917131400",
@@ -33237,6 +33190,39 @@
         "kind": "pull_request",
         "branch": "feat/plugin-conversation-fork",
         "head_sha": "9cffdbfc014e9bdc5f93ce92e6b8aa5693b8c339",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162080:5918385426:2026-10-01T02:07:50Z:clawsweeper_needs_human",
+      "comment_id": "5918385426",
+      "comment_version_key": "5918385426:2026-10-01T02:07:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162080#issuecomment-5918385426",
+      "comment_created_at": "2026-09-30T19:41:34Z",
+      "comment_updated_at": "2026-10-01T02:07:50Z",
+      "comment_body_sha256": "5d6e42ebe6303bc6cb1213daac2aae182e429c3528b4516ce034e9718d61ee27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The submitted terminal trace exercises the production catalog worker with a generated native ESM plugi...; Review finding: [P1] Keep module-local state separate for live workspaces — src/plugins/plugin-native-esm-identity.ts:55-56 - [P1] Reject a supplied stale owner before capture I/O... (sha=192dd01869308518db7ebe0b0a9111d39042b701)",
+      "expected_head_sha": "192dd01869308518db7ebe0b0a9111d39042b701",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T02:09:27.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-worker-native-esm",
+        "head_sha": "192dd01869308518db7ebe0b0a9111d39042b701",
         "cluster_id": null,
         "job_path": null
       }
