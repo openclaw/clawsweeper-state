@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T08:03:26.831Z",
+  "updated_at": "2026-10-01T08:03:43.001Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160488:5872062171:2026-10-01T04:00:48Z:clawsweeper_needs_human",
-      "comment_id": "5872062171",
-      "comment_version_key": "5872062171:2026-10-01T04:00:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160488#issuecomment-5872062171",
-      "comment_created_at": "2026-09-28T14:30:43Z",
-      "comment_updated_at": "2026-10-01T04:00:48Z",
-      "comment_body_sha256": "0e3aa15af3c5ec46cfead2334029ca7c83637d8e3acdbac40ff84d2236a8f689",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160488,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the production lease store and ledger are exercised with synthetic process identities and mocked census results...; Review finding: [P1] Recheck borrower custody before releasing the repaired lease — src/infra/update-managed-service-handoff-reclamation.ts:229-230 - [P1] Keep a refused lease rel... (sha=c40c7c8d0557c12f3749cb42ea258f4a771655eb)",
-      "expected_head_sha": "c40c7c8d0557c12f3749cb42ea258f4a771655eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T04:01:35.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/upd-handoff-lease-dead-owner",
-        "head_sha": "c40c7c8d0557c12f3749cb42ea258f4a771655eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:792:5924466049:2026-10-01T04:00:38Z:clawsweeper_needs_human",
       "comment_id": "5924466049",
@@ -33830,6 +33797,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawpdf:29:5927326244:2026-10-01T08:02:25Z:re_review",
+      "comment_id": "5927326244",
+      "comment_version_key": "5927326244:2026-10-01T08:02:25Z",
+      "comment_url": "https://github.com/openclaw/clawpdf/pull/29#issuecomment-5927326244",
+      "comment_created_at": "2026-10-01T08:02:25Z",
+      "comment_updated_at": "2026-10-01T08:02:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawpdf",
+      "issue_number": 29,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T08:03:28.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/release-automation-20261001",
+        "head_sha": "0170cd1713c4794bc4d3affa7b1e297a45ff3097",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
