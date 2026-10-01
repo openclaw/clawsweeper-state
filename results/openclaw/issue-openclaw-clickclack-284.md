@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/clickclack"
 cluster_id: "issue-openclaw-clickclack-284"
-mode: "plan"
-run_id: "36915092005"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36915092005"
+mode: "autonomous"
+run_id: "36922011177"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36922011177"
 head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-01T19:35:44.442Z"
-canonical: "#284"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-10-01T20:34:15.244Z"
+canonical: "https://github.com/openclaw/clickclack/issues/284"
 canonical_issue: "https://github.com/openclaw/clickclack/issues/284"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/clickclack
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36915092005](https://github.com/openclaw/clawsweeper/actions/runs/36915092005)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36922011177](https://github.com/openclaw/clawsweeper/actions/runs/36922011177)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #284
+Canonical: https://github.com/openclaw/clickclack/issues/284
 
 ## Summary
 
-Plan a focused CSS repair and Playwright regression for #284. Checkout matches preflight main 5781ea2209c0a08b2d92b573699cd7285bf29e40. Source inspection supports the sizing defect; browser reproduction and validation remain required. No files or GitHub state were changed.
+The supplied current-main checkout retains the sidebar sizing defect. A narrow fix artifact is ready, but implementation and browser validation are blocked by the read-only filesystem and missing Playwright dependency. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Plan a focused CSS repair and Playwright regression for #284. Checkout matches p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/clickclack/issues/284 | fix_needed | planned | canonical | A narrow layout repair is plausible without changing product policy. Confirm the failure in Playwright before implementing or opening the PR. |
+| #284 | fix_needed | planned | canonical | The source-backed defect remains viable for a focused CSS repair. Establish a failing browser regression before claiming behavioral reproduction or applying the repair. |
+| cluster:issue-openclaw-clickclack-284 | build_fix_artifact | planned |  | The executor can implement and validate this narrow plan in a writable checkout. Reuse clawsweeper/issue-openclaw-clickclack-284 and maintain one implementation PR. |
 
 ## Needs Human
 
