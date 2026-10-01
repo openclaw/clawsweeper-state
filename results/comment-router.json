@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-01T10:25:29.504Z",
+  "updated_at": "2026-10-01T10:25:10.431Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141276:5926060110:2026-10-01T06:34:11Z:re_review",
+      "comment_id": "5926060110",
+      "comment_version_key": "5926060110:2026-10-01T06:34:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141276#issuecomment-5926060110",
+      "comment_created_at": "2026-10-01T06:34:11Z",
+      "comment_updated_at": "2026-10-01T06:34:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141276,
+      "author": "jguin",
+      "author_id": 7443834,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T06:35:17.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/provider-usage-prometheus-139188",
+        "head_sha": "81d7d6f0a47c66cb4710bcea436ad09147e0698b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1538:5881143722:2026-10-01T06:33:49Z:clawsweeper_auto_repair",
       "comment_id": "5881143722",
@@ -33843,39 +33890,6 @@
         "kind": "pull_request",
         "branch": "fix/automations-run-wait",
         "head_sha": "cf942df0601778092d56ca34453ff545cf23db06",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162580:5928697924:2026-10-01T10:24:23Z:clawsweeper_needs_human",
-      "comment_id": "5928697924",
-      "comment_version_key": "5928697924:2026-10-01T10:24:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162580#issuecomment-5928697924",
-      "comment_created_at": "2026-10-01T09:31:34Z",
-      "comment_updated_at": "2026-10-01T10:24:23Z",
-      "comment_body_sha256": "d7e0df96ca3872a860a52992f5e82c244ce04bdb74d059c7fe02bebead731fa1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing multi-agent rooms will receive queued and recovered participant answers without participant labels, and those answers will not contribute to follow-up rounds; maintainer acce... (sha=1c17739ac9245c343cb7a1811a68c2b6e08af756)",
-      "expected_head_sha": "1c17739ac9245c343cb7a1811a68c2b6e08af756",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T10:25:29.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/group-participant-queue",
-        "head_sha": "1c17739ac9245c343cb7a1811a68c2b6e08af756",
         "cluster_id": null,
         "job_path": null
       }
