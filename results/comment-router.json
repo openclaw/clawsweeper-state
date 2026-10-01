@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T04:25:09.364Z",
+  "updated_at": "2026-10-01T04:25:26.354Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151441:5809175857:2026-09-24T06:44:57Z:re_review",
-      "comment_id": "5809175857",
-      "comment_version_key": "5809175857:2026-09-24T06:44:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151441#issuecomment-5809175857",
-      "comment_created_at": "2026-09-24T06:44:57Z",
-      "comment_updated_at": "2026-09-24T06:44:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151441,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T23:08:56.237Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-send-reserved-marker",
-        "head_sha": "34483602c3876f8cd99db4506722ec74b0d2df61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151441:5725897761:2026-09-30T23:07:47Z:clawsweeper_needs_human",
       "comment_id": "5725897761",
@@ -33439,6 +33392,39 @@
         "kind": "pull_request",
         "branch": "codex/updater-staging-clones",
         "head_sha": "2b12196a65e944acf5e30f558ca43e196a981c2a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162384:5924713008:2026-10-01T04:24:31Z:clawsweeper_needs_human",
+      "comment_id": "5924713008",
+      "comment_version_key": "5924713008:2026-10-01T04:24:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162384#issuecomment-5924713008",
+      "comment_created_at": "2026-10-01T04:24:31Z",
+      "comment_updated_at": "2026-10-01T04:24:31Z",
+      "comment_body_sha256": "e4284bb1b1e39ebaa67b6081a4811a72d2802ff99f959be1f7ba38c7ba9fcc92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162384,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility when a published updater launches the candidate source build remains unverified; the reported freshness run does not establish that upgrade boundary. (sha=643d195c00e82c048fccc42048c3f0cec48c178c)",
+      "expected_head_sha": "643d195c00e82c048fccc42048c3f0cec48c178c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T04:25:26.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/updater-build-inventory",
+        "head_sha": "643d195c00e82c048fccc42048c3f0cec48c178c",
         "cluster_id": null,
         "job_path": null
       }
