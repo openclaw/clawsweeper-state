@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-01T07:17:23.025Z",
+  "updated_at": "2026-10-01T07:17:24.307Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161773:5908099394:2026-10-01T03:10:37Z:clawsweeper_auto_repair",
-      "comment_id": "5908099394",
-      "comment_version_key": "5908099394:2026-10-01T03:10:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161773#issuecomment-5908099394",
-      "comment_created_at": "2026-09-30T09:16:49Z",
-      "comment_updated_at": "2026-10-01T03:10:37Z",
-      "comment_body_sha256": "4e24dc8b8661c8e7872637a50c12abaf380391ed7f917b8a41164c4bb6864c53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161773,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f53e66f6a9070fef0a689e2494b1a1fe6e3faa81)",
-      "expected_head_sha": "f53e66f6a9070fef0a689e2494b1a1fe6e3faa81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T03:11:42.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/160232-embedded-prompt-current-input",
-        "head_sha": "f53e66f6a9070fef0a689e2494b1a1fe6e3faa81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162327:5923967609:2026-10-01T03:12:03Z:clawsweeper_auto_repair",
       "comment_id": "5923967609",
@@ -33849,6 +33816,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabpot:405:5926607616:2026-10-01T07:16:34Z:re_review",
+      "comment_id": "5926607616",
+      "comment_version_key": "5926607616:2026-10-01T07:16:34Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/405#issuecomment-5926607616",
+      "comment_created_at": "2026-10-01T07:16:34Z",
+      "comment_updated_at": "2026-10-01T07:16:34Z",
+      "comment_body_sha256": "f291689ce17be210afa37619f49fb24e81e4c9b8fea954130f5c65b84c5ecef8",
+      "repo": "openclaw/crabpot",
+      "issue_number": 405,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — changed head 1cf2c77a00c6c2d1b6c2236fa866b32fccd60613 adds a temporary evidence-only hosted windows startup observer. the pr remains draft and blocked on actual lifecycle teardown proof; no timeout or cleanup policy was changed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-01T07:17:22.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-lifecycle-capture-20260929",
+        "head_sha": "1cf2c77a00c6c2d1b6c2236fa866b32fccd60613",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156362:5792644137:2026-10-01T07:16:26Z:clawsweeper_needs_human",
