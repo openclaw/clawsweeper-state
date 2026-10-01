@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T00:31:42.419Z",
+  "updated_at": "2026-10-01T00:31:50.767Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141276:5916600950:2026-09-30T17:46:22Z:re_review",
-      "comment_id": "5916600950",
-      "comment_version_key": "5916600950:2026-09-30T17:46:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141276#issuecomment-5916600950",
-      "comment_created_at": "2026-09-30T17:46:22Z",
-      "comment_updated_at": "2026-09-30T17:46:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141276,
-      "author": "jguin",
-      "author_id": 7443834,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-30T18:02:01.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/provider-usage-prometheus-139188",
-        "head_sha": "8fb619ec36e9c9f1a3163c8376e897e29cb2c004",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161955:5916842412:2026-09-30T18:01:14Z:re_review",
       "comment_id": "5916842412",
@@ -33286,6 +33239,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-session-thinking-override",
         "head_sha": "2c00fc6c6e3f14f9b0462f3eebb7c2250929b3a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162222:5922260122:2026-10-01T00:30:53Z:clawsweeper_needs_human",
+      "comment_id": "5922260122",
+      "comment_version_key": "5922260122:2026-10-01T00:30:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162222#issuecomment-5922260122",
+      "comment_created_at": "2026-10-01T00:30:53Z",
+      "comment_updated_at": "2026-10-01T00:30:53Z",
+      "comment_body_sha256": "3dd82a5a6f5164d036220c1d145ee8c063dd79a6974a66d89889cc9b06bd0f59",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve review confidence** - ClawSweeper must reach high confidence before merge readiness is known. (sha=3869b5eba6175ad66d649f76a3be944d7200a505)",
+      "expected_head_sha": "3869b5eba6175ad66d649f76a3be944d7200a505",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T00:31:50.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tcr/land-d120-1790807261",
+        "head_sha": "3869b5eba6175ad66d649f76a3be944d7200a505",
         "cluster_id": null,
         "job_path": null
       }
