@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-01T22:13:07.998Z",
+  "updated_at": "2026-10-01T22:14:19.315Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5937052730:2026-10-01T17:42:17Z:re_review",
-      "comment_id": "5937052730",
-      "comment_version_key": "5937052730:2026-10-01T17:42:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5937052730",
-      "comment_created_at": "2026-10-01T17:42:17Z",
-      "comment_updated_at": "2026-10-01T17:42:17Z",
-      "comment_body_sha256": "f0a6a4f0f7501d7d0a6f1bb4920ba1ba6e4bc6aff91aaab5ab4b4e79a26cabab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T18:06:14.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "8d0742d23797d4c8975aa97c963dd5c7ba59140e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162884:5937110345:2026-10-01T17:45:45Z:re_review",
       "comment_id": "5937110345",
@@ -32859,6 +32812,39 @@
         "kind": "pull_request",
         "branch": "claude/upbeat-clarke-696clf",
         "head_sha": "206ae6156943747888d9a23524fe57a675361139",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162889:5937102532:2026-10-01T22:13:11Z:clawsweeper_needs_human",
+      "comment_id": "5937102532",
+      "comment_version_key": "5937102532:2026-10-01T22:13:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162889#issuecomment-5937102532",
+      "comment_created_at": "2026-10-01T17:45:19Z",
+      "comment_updated_at": "2026-10-01T22:13:11Z",
+      "comment_body_sha256": "6723978adeaf2a26e1434e07088d056969371390572fc477a5b2f5ef2edd11e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=24d99671f9e5f6c9fc88b62e1e0d53e2db5b4bd1)",
+      "expected_head_sha": "24d99671f9e5f6c9fc88b62e1e0d53e2db5b4bd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-01T22:14:19.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l282-compat-shims2-followup-20261001",
+        "head_sha": "24d99671f9e5f6c9fc88b62e1e0d53e2db5b4bd1",
         "cluster_id": null,
         "job_path": null
       }
