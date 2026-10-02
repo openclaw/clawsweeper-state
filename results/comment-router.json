@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T17:48:47.077Z",
+  "updated_at": "2026-10-02T17:49:02.603Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161759:5952952569:2026-10-02T13:02:04Z:re_review",
-      "comment_id": "5952952569",
-      "comment_version_key": "5952952569:2026-10-02T13:02:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161759#issuecomment-5952952569",
-      "comment_created_at": "2026-10-02T13:02:04Z",
-      "comment_updated_at": "2026-10-02T13:02:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161759,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T13:03:31.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/split-worker-lifecycle",
-        "head_sha": "d921288a089daeb3bcabe6e3929c10acd9207d47",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163523:5952793015:2026-10-02T13:02:43Z:clawsweeper_needs_human",
       "comment_id": "5952793015",
@@ -33243,6 +33196,39 @@
         "kind": "pull_request",
         "branch": "codex/aws-small-root-mint",
         "head_sha": "ab50e52383eec8b009c093889d3b995da2b2be16",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163684:5958059383:2026-10-02T17:48:03Z:clawsweeper_needs_human",
+      "comment_id": "5958059383",
+      "comment_version_key": "5958059383:2026-10-02T17:48:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163684#issuecomment-5958059383",
+      "comment_created_at": "2026-10-02T17:48:03Z",
+      "comment_updated_at": "2026-10-02T17:48:03Z",
+      "comment_body_sha256": "0773f8dd624c3b17f56777fb9143c7bcacd5f5cc063ca6284e274fc9473b51ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163684,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production batch owner is exercised through synthetic SQLite tests, while CLI dispatch is mocked; no operator CLI run demonstrates after-ch... (sha=392d17495a90dc126c5f57d546503016136d2a21)",
+      "expected_head_sha": "392d17495a90dc126c5f57d546503016136d2a21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T17:49:02.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/batch-agent-database-snapshots",
+        "head_sha": "392d17495a90dc126c5f57d546503016136d2a21",
         "cluster_id": null,
         "job_path": null
       }
