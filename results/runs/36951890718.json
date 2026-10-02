@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163150",
+  "mode": "autonomous",
+  "run_id": "36951890718",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36951890718",
+  "head_sha": "96aa78ac663f91b750f9f7f80d34511e89fe153c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163150.md",
+  "published_at": "2026-10-02T02:19:59.688Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163150",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163150",
+  "canonical_pr": null,
+  "summary": "The diagnostics defects remain present at preflight main d4b98b3a5101349febc02ae14b828f689f7b8538. A narrow fix artifact is ready, but implementation, failing-regression reproduction, and validation are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#163150",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Existing behavior supports a bug-only repair. Execution requires a writable isolated checkout with dependencies; source verification does not substitute for the required failing regression."
+    },
+    {
+      "target": "#159638",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Worker churn has an unconfirmed trigger. Improved retirement diagnostics help investigation but do not fix or explain that lifecycle."
+    },
+    {
+      "target": "#163151",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Pre-dispatch recovery is a separate execution defect and remains open."
+    },
+    {
+      "target": "#163152",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "This is a distinct performance feature request. Leave its capacity decision to its own workflow."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163150",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair is supported by current source. The deterministic executor can implement and validate it without a new product decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
