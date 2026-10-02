@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T17:27:34.467Z",
+  "updated_at": "2026-10-02T17:28:04.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163269:5952303596:2026-10-02T12:26:12Z:re_review",
-      "comment_id": "5952303596",
-      "comment_version_key": "5952303596:2026-10-02T12:26:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163269#issuecomment-5952303596",
-      "comment_created_at": "2026-10-02T12:26:12Z",
-      "comment_updated_at": "2026-10-02T12:26:12Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163269,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T12:27:17.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/s24",
-        "head_sha": "5df45ee17ae705cfcd66d220826439532c3d8034",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163474:5951367941:2026-10-02T12:26:37Z:clawsweeper_needs_human",
       "comment_id": "5951367941",
@@ -33675,6 +33628,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-ultrafast-route-discovery-20260919",
         "head_sha": "8b0e4dd0bae401a06b878ffd8653284bd8c84f71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162108:5919223387:2026-10-02T17:27:11Z:clawsweeper_needs_human",
+      "comment_id": "5919223387",
+      "comment_version_key": "5919223387:2026-10-02T17:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162108#issuecomment-5919223387",
+      "comment_created_at": "2026-09-30T20:31:49Z",
+      "comment_updated_at": "2026-10-02T17:27:11Z",
+      "comment_body_sha256": "0f93cd648d2b6282c6d8521ce20811c92b6c625baa004fca259a37110af19cab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required published-updater compatibility run has not been demonstrated for the current receipt implementation; the cited upgrade exercised the earlier side-channel version. (sha=9ac4a486bcf90509353b2d339ccf7a711cfac844)",
+      "expected_head_sha": "9ac4a486bcf90509353b2d339ccf7a711cfac844",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T17:28:04.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/w4-update-progress",
+        "head_sha": "9ac4a486bcf90509353b2d339ccf7a711cfac844",
         "cluster_id": null,
         "job_path": null
       }
