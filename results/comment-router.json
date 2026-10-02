@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:30:06.803Z",
+  "updated_at": "2026-10-02T20:30:33.832Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163513:5955492093:2026-10-02T15:18:47Z:re_review",
-      "comment_id": "5955492093",
-      "comment_version_key": "5955492093:2026-10-02T15:18:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163513#issuecomment-5955492093",
-      "comment_created_at": "2026-10-02T15:18:47Z",
-      "comment_updated_at": "2026-10-02T15:18:47Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163513,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T15:19:50.407Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/watch",
-        "head_sha": "859cc39837b93a7bf4306b1a84426b28135dde7f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162669:5930813581:2026-10-02T15:19:48Z:clawsweeper_needs_human",
       "comment_id": "5930813581",
@@ -33149,6 +33102,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149725:5960953620:2026-10-02T20:29:43Z:stop",
+      "comment_id": "5960953620",
+      "comment_version_key": "5960953620:2026-10-02T20:29:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5960953620",
+      "comment_created_at": "2026-10-02T20:29:43Z",
+      "comment_updated_at": "2026-10-02T20:29:43Z",
+      "comment_body_sha256": "c0450a2010a1d84523a4cf1b1d9dd85fc7b94b823e00d70d9f6c2a7775f08811",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149725,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "stop",
+      "intent": "stop",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T20:30:33.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/rfc54-macos-rust-runtime",
+        "head_sha": "2d7032db761843c6dd0797e61dc6a6b2026d93ba",
+        "cluster_id": "automerge-openclaw-openclaw-149725",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149725.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
