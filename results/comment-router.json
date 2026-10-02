@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:13:41.115Z",
+  "updated_at": "2026-10-02T01:14:09.619Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154384:5940637473:2026-10-01T21:10:17Z:re_review",
-      "comment_id": "5940637473",
-      "comment_version_key": "5940637473:2026-10-01T21:10:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154384#issuecomment-5940637473",
-      "comment_created_at": "2026-10-01T21:10:17Z",
-      "comment_updated_at": "2026-10-01T21:10:17Z",
-      "comment_body_sha256": "244ae8450e2fe769a0d0210f5be7bc77c784483be732043b72388be69b58acdf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154384,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T21:11:19.990Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-browser-proxy-upload-retry-cap",
-        "head_sha": "c0b84345bf0f69c7e079867a2e4597f87e97f687",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:822:5940639051:2026-10-01T21:10:23Z:clawsweeper_needs_human",
       "comment_id": "5940639051",
@@ -33646,6 +33599,39 @@
         "kind": "pull_request",
         "branch": "fix/state-heartbeat-error-context-20261002",
         "head_sha": "ddad1cb9f630ef30823cddb2c2ba323428d509d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163105:5942960971:2026-10-02T01:13:14Z:clawsweeper_needs_human",
+      "comment_id": "5942960971",
+      "comment_version_key": "5942960971:2026-10-02T01:13:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163105#issuecomment-5942960971",
+      "comment_created_at": "2026-10-01T23:57:25Z",
+      "comment_updated_at": "2026-10-02T01:13:14Z",
+      "comment_body_sha256": "9c1fc7f3143a7b290c4dc816e4f6f89115d3b989ee0e10d53665e2777aa7c603",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Normal updates now rewrite legacy databases while the Gateway is stopped, and an unverified conversion can prevent service restoration. No completed published-2026.9.7-to-candidate le... (sha=c71805db50af46a8b652d801c54c3183a81a1920)",
+      "expected_head_sha": "c71805db50af46a8b652d801c54c3183a81a1920",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T01:14:09.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-sqlite-incremental-reclamation",
+        "head_sha": "c71805db50af46a8b652d801c54c3183a81a1920",
         "cluster_id": null,
         "job_path": null
       }
