@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:40:10.624Z",
+  "updated_at": "2026-10-02T04:40:50.359Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143647:5943073612:2026-10-02T00:08:16Z:re_review",
-      "comment_id": "5943073612",
-      "comment_version_key": "5943073612:2026-10-02T00:08:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143647#issuecomment-5943073612",
-      "comment_created_at": "2026-10-02T00:08:16Z",
-      "comment_updated_at": "2026-10-02T00:08:16Z",
-      "comment_body_sha256": "7bdac93de21e3bd7e1aab3cad925deefc09e820fc818e6bd361d0a66a6db290a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143647,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T00:09:17.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-logout-cleanup-142421",
-        "head_sha": "6436dedda6949e0ef2b9b2d2134b5942e536ff6b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1232:5419453107:2026-10-02T00:08:07Z:clawsweeper_auto_repair",
       "comment_id": "5419453107",
@@ -33394,6 +33347,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T04:40:10.624Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163249:5945710770:2026-10-02T04:39:56Z:clawsweeper_needs_human",
+      "comment_id": "5945710770",
+      "comment_version_key": "5945710770:2026-10-02T04:39:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163249#issuecomment-5945710770",
+      "comment_created_at": "2026-10-02T04:39:56Z",
+      "comment_updated_at": "2026-10-02T04:39:56Z",
+      "comment_body_sha256": "16f8386009c5b6663433d4ca8011354b70b582a8186ee5f3a989339c42132f4c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163249,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add measured runtime for the materially changed CLI cleanup test to the PR evidence, including available CI duration as required by repository policy. (sha=38f79ebe0d7fd53f872a1a74af17c71c10549397)",
+      "expected_head_sha": "38f79ebe0d7fd53f872a1a74af17c71c10549397",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T04:40:50.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-lifecycle-test-contracts",
+        "head_sha": "38f79ebe0d7fd53f872a1a74af17c71c10549397",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
