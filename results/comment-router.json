@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T18:45:54.995Z",
+  "updated_at": "2026-10-02T18:46:15.974Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119256:5218342429:2026-08-07T14:30:55Z:re_review",
-      "comment_id": "5218342429",
-      "comment_version_key": "5218342429:2026-08-07T14:30:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5218342429",
-      "comment_created_at": "2026-08-07T14:30:55Z",
-      "comment_updated_at": "2026-08-07T14:30:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "pscoutosoares",
-      "author_id": 15336146,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T13:47:22.374Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119256:5219868177:2026-08-07T17:01:54Z:re_review",
       "comment_id": "5219868177",
@@ -33230,6 +33203,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154904:5959056778:2026-10-02T18:45:06Z:re_review",
+      "comment_id": "5959056778",
+      "comment_version_key": "5959056778:2026-10-02T18:45:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5959056778",
+      "comment_created_at": "2026-10-02T18:45:06Z",
+      "comment_updated_at": "2026-10-02T18:45:06Z",
+      "comment_body_sha256": "9e23c3225a59e9bc45e21ebdd78de5659719f47a6981f9f2997bcda3ecb50edf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154904,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rev11 head 5682aec80e8. fixes the remaining p2 (completed-turn false-ack): visible-path membership was too weak -- a cached user k whose turn another manager completes with a same-branch assistant reply remains a visible-path ancestor and was wrongly degraded. added resolvetranscriptcanonicalcurrentturnentryidintransaction, a durable mirror of resolvecurrentturnentryid that drives the shared walksessioncurrentturn generator up from the append cursor (same traversability rules), returning the first non-traversable entry id; the dirty anchor path now degrades iff entryid equals that current turn. new regression g2 proves the old visible-path check stays red (k still on path) while the new exact-match rejects. anchor-dedup 9/9, tsgo:core 0, ratchet ok, deadexport 0, lint/fmt clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T18:46:13.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-anchor-dedup",
+        "head_sha": "5682aec80e8330e0cd215d2bee971bdc16fabc03",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
