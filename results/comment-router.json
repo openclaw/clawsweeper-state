@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:08:57.490Z",
+  "updated_at": "2026-10-02T21:09:27.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162473:5927377031:2026-10-01T08:05:49Z:re_review",
-      "comment_id": "5927377031",
-      "comment_version_key": "5927377031:2026-10-01T08:05:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162473#issuecomment-5927377031",
-      "comment_created_at": "2026-10-01T08:05:49Z",
-      "comment_updated_at": "2026-10-01T08:05:49Z",
-      "comment_body_sha256": "6837d59357af8ce11fcaac072383f48d33421eeabc623cb1d0cc2ba6239fda1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162473,
-      "author": "chuanleiguo",
-      "author_id": 5415054,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T16:12:39.200Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-foreign-live-input",
-        "head_sha": "fe9e2350536db99e5a74f2527704063c6280e9ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162473:5926006165:2026-10-02T16:11:43Z:clawsweeper_needs_human",
       "comment_id": "5926006165",
@@ -32707,6 +32660,39 @@
         "kind": "pull_request",
         "branch": "refactor/lg-runtime-retire-oauth-sidecars",
         "head_sha": "d9ad1ee455644f579795993e32a158b373935749",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:151:5947381577:2026-10-02T21:08:28Z:clawsweeper_needs_human",
+      "comment_id": "5947381577",
+      "comment_version_key": "5947381577:2026-10-02T21:08:28Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/151#issuecomment-5947381577",
+      "comment_created_at": "2026-10-02T07:28:46Z",
+      "comment_updated_at": "2026-10-02T21:08:28Z",
+      "comment_body_sha256": "66ccc1a45a885a11dd8c4bcfe185fa349a983111133ff9d8a302c9b5c0a38672",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 151,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a67a41bdbf3d0e0b0a7328d462befd4ccd64cab8)",
+      "expected_head_sha": "a67a41bdbf3d0e0b0a7328d462befd4ccd64cab8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T21:09:27.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.97.9",
+        "head_sha": "a67a41bdbf3d0e0b0a7328d462befd4ccd64cab8",
         "cluster_id": null,
         "job_path": null
       }
