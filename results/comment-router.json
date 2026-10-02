@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:36:20.982Z",
+  "updated_at": "2026-10-02T21:36:35.450Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:5136674917:2026-07-30T21:56:16Z:re_review",
-      "comment_id": "5136674917",
-      "comment_version_key": "5136674917:2026-07-30T21:56:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5136674917",
-      "comment_created_at": "2026-07-30T21:56:16Z",
-      "comment_updated_at": "2026-07-30T21:56:16Z",
-      "comment_body_sha256": "b60e9d7fc438f08e2973f5fdd4850c3fb4c9df6898bf26fbefa2a09b5c788c09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T16:34:49.831Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:5140474611:2026-07-31T07:32:10Z:re_review",
       "comment_id": "5140474611",
@@ -32969,6 +32942,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163488:5951844719:2026-10-02T21:35:21Z:clawsweeper_needs_human",
+      "comment_id": "5951844719",
+      "comment_version_key": "5951844719:2026-10-02T21:35:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163488#issuecomment-5951844719",
+      "comment_created_at": "2026-10-02T11:57:29Z",
+      "comment_updated_at": "2026-10-02T21:35:21Z",
+      "comment_body_sha256": "e04425544c1d61d7b663a1b92a559f64ba8f2a0481e1244ea1a51eed11476691",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The three-second held-turn pause and rich edit under the private Gateway UID have no successful Test Server scenario assertions; release validation could still fail at those boundarie... (sha=cb44d2d89c659e747fd9baf85cd02e3e692b4a81)",
+      "expected_head_sha": "cb44d2d89c659e747fd9baf85cd02e3e692b4a81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T21:36:35.450Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-release-qa-failures",
+        "head_sha": "cb44d2d89c659e747fd9baf85cd02e3e692b4a81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
