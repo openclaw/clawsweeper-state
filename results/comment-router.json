@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-02T23:20:46.602Z",
+  "updated_at": "2026-10-02T23:19:01.617Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163492:5951910765:2026-10-02T12:03:01Z:re_review",
+      "comment_id": "5951910765",
+      "comment_version_key": "5951910765:2026-10-02T12:03:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163492#issuecomment-5951910765",
+      "comment_created_at": "2026-10-02T12:03:01Z",
+      "comment_updated_at": "2026-10-02T12:03:01Z",
+      "comment_body_sha256": "d3ea66cac06308afe14861af1b19d8a0f5b8333713f7b08d72f9d23189320a32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163492,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T17:51:14.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release98-telegram-qa-failures",
+        "head_sha": "1a97d2e869f7311bbe4942d8bf5a035c8229bc0d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163492:5951981288:2026-10-02T17:50:10Z:clawsweeper_needs_human",
       "comment_id": "5951981288",
@@ -33368,39 +33415,6 @@
         "kind": "pull_request",
         "branch": "codex/profile-tab-anchors",
         "head_sha": "320272336697a90cc75408fb60614f8e236319ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162917:5937961792:2026-10-02T23:19:26Z:clawsweeper_needs_human",
-      "comment_id": "5937961792",
-      "comment_version_key": "5937961792:2026-10-02T23:19:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162917#issuecomment-5937961792",
-      "comment_created_at": "2026-10-01T18:32:17Z",
-      "comment_updated_at": "2026-10-02T23:19:26Z",
-      "comment_body_sha256": "6dd5af0b39fc8584c649b2c8580d0e74f87914c74aa9183e1c0308725674f83c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162917,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5b76ddbfe544be8430ebd7a726de586daec1f335)",
-      "expected_head_sha": "5b76ddbfe544be8430ebd7a726de586daec1f335",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T23:20:46.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-anthropic-sdk-0.128.0",
-        "head_sha": "5b76ddbfe544be8430ebd7a726de586daec1f335",
         "cluster_id": null,
         "job_path": null
       }
