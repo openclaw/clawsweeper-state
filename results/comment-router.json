@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:45:01.212Z",
+  "updated_at": "2026-10-02T01:45:36.562Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118036:5159063956:2026-10-01T21:28:18Z:clawsweeper_needs_human",
-      "comment_id": "5159063956",
-      "comment_version_key": "5159063956:2026-10-01T21:28:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118036#issuecomment-5159063956",
-      "comment_created_at": "2026-08-02T16:01:05Z",
-      "comment_updated_at": "2026-10-01T21:28:18Z",
-      "comment_body_sha256": "f04f49d0249f1aaca0f17bda4f2fa535592774769bf4a3275a93f41bcb504d81",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118036,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Feishu inbound recipient decision is covered by mocked dispatcher and send tests, without observed after-fix native delivery. Add r... (sha=eed4f591d2e862360662f3b07eb634422ed3df64)",
-      "expected_head_sha": "eed4f591d2e862360662f3b07eb634422ed3df64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T21:29:16.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feishu-mention-reply-sender",
-        "head_sha": "eed4f591d2e862360662f3b07eb634422ed3df64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142976:5940992575:2026-10-01T21:28:32Z:re_review",
       "comment_id": "5940992575",
@@ -33601,6 +33568,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1591:5944035448:2026-10-02T01:44:34Z:re_review",
+      "comment_id": "5944035448",
+      "comment_version_key": "5944035448:2026-10-02T01:44:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1591#issuecomment-5944035448",
+      "comment_created_at": "2026-10-02T01:44:34Z",
+      "comment_updated_at": "2026-10-02T01:44:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1591,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T01:45:34.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/winget-oobe-ready",
+        "head_sha": "1def3d7d16cec6278b229ebf7731fc43a0f2f5c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
