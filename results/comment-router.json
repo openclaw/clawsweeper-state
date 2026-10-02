@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:19:50.162Z",
+  "updated_at": "2026-10-02T03:20:08.755Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159040:5874107791:2026-09-28T16:20:56Z:re_review",
-      "comment_id": "5874107791",
-      "comment_version_key": "5874107791:2026-09-28T16:20:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159040#issuecomment-5874107791",
-      "comment_created_at": "2026-09-28T16:20:56Z",
-      "comment_updated_at": "2026-09-28T16:20:56Z",
-      "comment_body_sha256": "916dcc6f66fa891bd50ef4faa9c7be3d987dfa27b19631bee6b1e29e54a75842",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159040,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T22:45:01.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/durable-plugin-callback",
-        "head_sha": "1300b7aa26afea1cedf6cfa1725f01ad53ce20c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159040:5860626993:2026-09-27T22:59:15Z:re_review",
       "comment_id": "5860626993",
@@ -33997,6 +33950,39 @@
         "kind": "pull_request",
         "branch": "fix/exec-approvals-doctor-canonical-policy",
         "head_sha": "cc0242aa678802e72c6c6ceca1fa4482f1447801",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163204:5944994830:2026-10-02T03:19:19Z:clawsweeper_needs_human",
+      "comment_id": "5944994830",
+      "comment_version_key": "5944994830:2026-10-02T03:19:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163204#issuecomment-5944994830",
+      "comment_created_at": "2026-10-02T03:19:19Z",
+      "comment_updated_at": "2026-10-02T03:19:19Z",
+      "comment_body_sha256": "09c02646f725e6ef4ca4ef5ffceca6a53d6975fe7c52f806bc362f1a94334c15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fe92604345fbdd72c4874f1f5961e790e3e589fb)",
+      "expected_head_sha": "fe92604345fbdd72c4874f1f5961e790e3e589fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T03:20:08.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/audio-transcription-unused-attachments",
+        "head_sha": "fe92604345fbdd72c4874f1f5961e790e3e589fb",
         "cluster_id": null,
         "job_path": null
       }
