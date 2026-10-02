@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T07:06:08.068Z",
+  "updated_at": "2026-10-02T07:06:19.438Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160620:5944168178:2026-10-02T01:57:35Z:re_review",
-      "comment_id": "5944168178",
-      "comment_version_key": "5944168178:2026-10-02T01:57:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160620#issuecomment-5944168178",
-      "comment_created_at": "2026-10-02T01:57:35Z",
-      "comment_updated_at": "2026-10-02T01:57:35Z",
-      "comment_body_sha256": "2a11cbba9c967b6b77ffdca8b08093862612af48346678402f8d26d6887925c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160620,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T01:58:33.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-exec-fatal-code-cron",
-        "head_sha": "8e4df6c84d9650945a46fc783786dedd812f0d4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163149:5943943193:2026-10-02T01:57:59Z:clawsweeper_needs_human",
       "comment_id": "5943943193",
@@ -33237,6 +33190,39 @@
         "kind": "pull_request",
         "branch": "codex/swarm-session-metadata-admission-20260915",
         "head_sha": "4a870a461c2677f662a5243177458cc4bdfba263",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163336:5947109902:2026-10-02T07:05:16Z:clawsweeper_needs_human",
+      "comment_id": "5947109902",
+      "comment_version_key": "5947109902:2026-10-02T07:05:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163336#issuecomment-5947109902",
+      "comment_created_at": "2026-10-02T07:05:16Z",
+      "comment_updated_at": "2026-10-02T07:05:16Z",
+      "comment_body_sha256": "f19338a338ca49b3ede49edfacac219bde78123493d3fe7d1560bebd417516b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163336,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected older-stack chooser screenshots show selection UI, but not the changed creation and exec...; Review finding: [P1] Validate required checkout custody on normal chat execution — src/gateway/session-sharing-policy.ts:421-425 - [medium] Stored workspace permission reaches I/O... (sha=5e50758087a9cb95fcfa17417534f13b527cafe6)",
+      "expected_head_sha": "5e50758087a9cb95fcfa17417534f13b527cafe6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T07:06:19.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/required-session-workspaces",
+        "head_sha": "5e50758087a9cb95fcfa17417534f13b527cafe6",
         "cluster_id": null,
         "job_path": null
       }
