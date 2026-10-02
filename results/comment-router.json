@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T05:10:20.200Z",
+  "updated_at": "2026-10-02T05:10:51.778Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162998:5940644865:2026-10-02T00:25:43Z:clawsweeper_needs_human",
-      "comment_id": "5940644865",
-      "comment_version_key": "5940644865:2026-10-02T00:25:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162998#issuecomment-5940644865",
-      "comment_created_at": "2026-10-01T21:10:40Z",
-      "comment_updated_at": "2026-10-02T00:25:43Z",
-      "comment_body_sha256": "c58044c218beadfef399c70033ee33c541e6da0f4097562dd68471d638d3dd75",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162998,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-updater qualification has not yet shown that retained subagent records survive canary validation and recover after the serving Gateway activates. (sha=7af702b81d60959a08e1e87284952e690f11808c)",
-      "expected_head_sha": "7af702b81d60959a08e1e87284952e690f11808c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T00:26:40.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/updater-canary-recovery-cost",
-        "head_sha": "7af702b81d60959a08e1e87284952e690f11808c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162995:5940621526:2026-10-02T00:25:42Z:clawsweeper_needs_human",
       "comment_id": "5940621526",
@@ -33454,6 +33421,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163225:5945968548:2026-10-02T05:09:20Z:re_review",
+      "comment_id": "5945968548",
+      "comment_version_key": "5945968548:2026-10-02T05:09:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163225#issuecomment-5945968548",
+      "comment_created_at": "2026-10-02T05:09:20Z",
+      "comment_updated_at": "2026-10-02T05:09:20Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163225,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T05:10:50.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incognito-p2",
+        "head_sha": "2d71e259da566cd65441bb5ac16348b39966b8df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
