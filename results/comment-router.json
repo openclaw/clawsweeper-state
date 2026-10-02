@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:55:25.867Z",
+  "updated_at": "2026-10-02T03:55:27.138Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162973:5939778116:2026-10-01T23:39:09Z:clawsweeper_needs_human",
-      "comment_id": "5939778116",
-      "comment_version_key": "5939778116:2026-10-01T23:39:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162973#issuecomment-5939778116",
-      "comment_created_at": "2026-10-01T20:18:41Z",
-      "comment_updated_at": "2026-10-01T23:39:09Z",
-      "comment_body_sha256": "326f4a836b7825483e2f54fef3eb66ecfb4b00f64a9236215643cd856dd9b360",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162973,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations that relied on cross-provider slash-form alias precedence will select the named provider after upgrade and can fail if that provider lacks the model or credent... (sha=87b82a2fe97432e26c6582cba8557214907be6d2)",
-      "expected_head_sha": "87b82a2fe97432e26c6582cba8557214907be6d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T23:40:04.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-alias-provider-scope",
-        "head_sha": "87b82a2fe97432e26c6582cba8557214907be6d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143991:5942691017:2026-10-01T23:32:12Z:re_review",
       "comment_id": "5942691017",
@@ -33442,6 +33409,53 @@
       "status": "skipped",
       "processed_at": "2026-10-02T03:55:25.867Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163223:5945311440:2026-10-02T03:54:24Z:re_review",
+      "comment_id": "5945311440",
+      "comment_version_key": "5945311440:2026-10-02T03:54:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163223#issuecomment-5945311440",
+      "comment_created_at": "2026-10-02T03:54:24Z",
+      "comment_updated_at": "2026-10-02T03:54:24Z",
+      "comment_body_sha256": "faf54917ae8d4c8b8a308652d60d8a99a8e117d4baf8a53739dd17a6b5b1d152",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163223,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T03:55:26.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l284-dup-feature-plugins3-qa-helpers",
+        "head_sha": "00ae3b5f52da7e428492d55016716f84bc7c7f2a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
