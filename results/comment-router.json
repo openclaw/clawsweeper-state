@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:42:36.021Z",
+  "updated_at": "2026-10-02T21:42:48.915Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163185:5944740703:2026-10-02T16:35:12Z:clawsweeper_needs_human",
-      "comment_id": "5944740703",
-      "comment_version_key": "5944740703:2026-10-02T16:35:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163185#issuecomment-5944740703",
-      "comment_created_at": "2026-10-02T02:54:01Z",
-      "comment_updated_at": "2026-10-02T16:35:12Z",
-      "comment_body_sha256": "11c4d3d922504e5fb93958ba43a59b6ae2158b5b3a29a298559d1200d2d4225e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163185,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=8d607162674f1bb22dc756e919d4859284a8e0ab)",
-      "expected_head_sha": "8d607162674f1bb22dc756e919d4859284a8e0ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T16:36:07.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/web-ui-wm-clickability-8a43b7",
-        "head_sha": "8d607162674f1bb22dc756e919d4859284a8e0ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4206:5956815709:2026-10-02T16:35:41Z:clawsweeper_needs_human",
       "comment_id": "5956815709",
@@ -33031,6 +32998,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163804:5961928650:2026-10-02T21:41:44Z:autofix",
+      "comment_id": "5961928650",
+      "comment_version_key": "5961928650:2026-10-02T21:41:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163804#issuecomment-5961928650",
+      "comment_created_at": "2026-10-02T21:41:44Z",
+      "comment_updated_at": "2026-10-02T21:41:44Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163804,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-02T21:42:41.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-brand-icons",
+        "head_sha": "8733640d48add0bf5e14b97c8c8bb291a18b9ee5",
+        "cluster_id": "automerge-openclaw-openclaw-163804",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163804.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163804.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
