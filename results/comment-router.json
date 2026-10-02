@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T17:34:14.535Z",
+  "updated_at": "2026-10-02T17:35:13.676Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87793:4568751026:2026-10-02T12:33:17Z:clawsweeper_needs_human",
-      "comment_id": "4568751026",
-      "comment_version_key": "4568751026:2026-10-02T12:33:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87793#issuecomment-4568751026",
-      "comment_created_at": "2026-05-28T22:10:41Z",
-      "comment_updated_at": "2026-10-02T12:33:17Z",
-      "comment_body_sha256": "bbea87881f6681c29307eaa98744486bee4b816a01130f208dcb684d8b88e889",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87793,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Codex notification helper and timeout formatter are exercised by unit and simulated-client tests, but no real app-server trace show... (sha=1f272b3dc3b91fcaabbda200d02cf13c8a71b0df)",
-      "expected_head_sha": "1f272b3dc3b91fcaabbda200d02cf13c8a71b0df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T12:34:18.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-codex-terminal-event-release",
-        "head_sha": "1f272b3dc3b91fcaabbda200d02cf13c8a71b0df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163504:5952424626:2026-10-02T12:33:56Z:clawsweeper_needs_human",
       "comment_id": "5952424626",
@@ -33670,6 +33637,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163545:5957830303:2026-10-02T17:33:51Z:re_review",
+      "comment_id": "5957830303",
+      "comment_version_key": "5957830303:2026-10-02T17:33:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163545#issuecomment-5957830303",
+      "comment_created_at": "2026-10-02T17:33:51Z",
+      "comment_updated_at": "2026-10-02T17:33:51Z",
+      "comment_body_sha256": "448f1fd0bb28af86208c2d339dc0382f60e0a96a07a209fda9d82ed573eb43dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163545,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T17:35:11.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-tool-unknown",
+        "head_sha": "7601fa95ebf00b315d756e76c17033eb412264d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
