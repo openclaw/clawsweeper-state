@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T07:46:59.390Z",
+  "updated_at": "2026-10-02T07:47:35.741Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163118:5943269641:2026-10-02T02:43:58Z:clawsweeper_needs_human",
-      "comment_id": "5943269641",
-      "comment_version_key": "5943269641:2026-10-02T02:43:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163118#issuecomment-5943269641",
-      "comment_created_at": "2026-10-02T00:27:09Z",
-      "comment_updated_at": "2026-10-02T02:43:58Z",
-      "comment_body_sha256": "136b518ba2d2eae6965c9ae0bc64cdc82f7b1c03db51e800654578d98863b46b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163118,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with calls.jsonl lose direct import and must use the 2026.9.7 bridge; preserved rows, untouched legacy bytes, and package/service recovery through the actual pu... (sha=e7feaa3639e01725cad3b1807060072b37ef1924)",
-      "expected_head_sha": "e7feaa3639e01725cad3b1807060072b37ef1924",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T02:44:54.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lg-runtime-voice-explicit-owner",
-        "head_sha": "e7feaa3639e01725cad3b1807060072b37ef1924",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127796:5378924991:2026-10-02T02:44:02Z:clawsweeper_auto_repair",
       "comment_id": "5378924991",
@@ -32984,6 +32951,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161759:5947646946:2026-10-02T07:46:31Z:re_review",
+      "comment_id": "5947646946",
+      "comment_version_key": "5947646946:2026-10-02T07:46:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161759#issuecomment-5947646946",
+      "comment_created_at": "2026-10-02T07:46:31Z",
+      "comment_updated_at": "2026-10-02T07:46:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161759,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T07:47:34.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/split-worker-lifecycle",
+        "head_sha": "01282ceeeb2d7b631528dd934c8d571df9509882",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
