@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T13:58:23.172Z",
+  "updated_at": "2026-10-02T13:59:08.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3897:5947642071:2026-10-02T08:55:19Z:clawsweeper_needs_human",
-      "comment_id": "5947642071",
-      "comment_version_key": "5947642071:2026-10-02T08:55:19Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3897#issuecomment-5947642071",
-      "comment_created_at": "2026-10-02T07:46:07Z",
-      "comment_updated_at": "2026-10-02T08:55:19Z",
-      "comment_body_sha256": "54fcb23fee0cd9a66089cb5cbcf3854eb2ed27521e84a12a820be8fafb762ac0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared helper defaults to P0-only review, whereas ClawHub’s closeout instructions do not specify a severity cutoff; ordinary P1/P2 defects may fall outside the requested review un... (sha=662fe79692b78a29fc8f5cc8550e89fe547bbdc5)",
-      "expected_head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T08:56:12.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/autoreview-scanner-free-20261002",
-        "head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163146:5943791309:2026-10-02T08:55:14Z:clawsweeper_needs_human",
       "comment_id": "5943791309",
@@ -33155,6 +33122,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147432:5954018729:2026-10-02T13:57:32Z:re_review",
+      "comment_id": "5954018729",
+      "comment_version_key": "5954018729:2026-10-02T13:57:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147432#issuecomment-5954018729",
+      "comment_created_at": "2026-10-02T13:57:32Z",
+      "comment_updated_at": "2026-10-02T13:57:32Z",
+      "comment_body_sha256": "a015b35055d32fa7f9b6fa2b45df8c4daf56213c5e60d8956195fa9f8b650a89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147432,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T13:59:06.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/visible-subagent-exec-notifications",
+        "head_sha": "f27ff343d9618a4f696287e68ebaa7267a312da3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
