@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163518"
-mode: "autonomous"
-run_id: "37008387948"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37008387948"
+mode: "plan"
+run_id: "37014434735"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37014434735"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T13:18:36.820Z"
-canonical: "https://github.com/openclaw/openclaw/issues/163518"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/163518"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T13:42:47.216Z"
+canonical: "#163518"
+canonical_issue: "#163518"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37008387948](https://github.com/openclaw/clawsweeper/actions/runs/37008387948)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37014434735](https://github.com/openclaw/clawsweeper/actions/runs/37014434735)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/163518
+Canonical: #163518
 
 ## Summary
 
-Source inspection confirms the diagnostic defect on checked-out main 1ce46edd0db2b28abada9834e934ab06d3e971de. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only filesystem and absent node_modules. No code or GitHub state changed.
+Plan a narrow shared-dispatch diagnostic fix. The clean checkout matches preflight main dc8d44c9fc4848a7ca3d2207af2cc7ae5c29632b and still contains the reported missing-handler error. No edits, runtime reproduction, tests, or GitHub mutations were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Source inspection confirms the diagnostic defect on checked-out main 1ce46edd0db
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163518 | fix_needed | planned | canonical | The shared diagnostic conflates plugin availability with action capability. The bug-only repair is clear; local implementation requires a writable executor environment. |
-| #162653 | keep_related | planned | related | Custom-channel CLI preparation is a distinct root cause. Preserve the contributor PR and its existing proof requirement outside this implementation scope. |
-| #163517 | keep_related | planned | related | Adding read capability is separate from correctly reporting an unsupported action. Keep the feature request open under its existing maintainer review. |
-| #108434 | keep_closed | skipped | related | Historical evidence for the expected diagnostic and existing test owner; no mutation is appropriate. |
-| cluster:issue-openclaw-openclaw-163518 | build_fix_artifact | planned | canonical | A narrow non-security repair is justified by current source. Preparation is complete; implementation and validation remain pending. |
+| #163518 | fix_needed | planned | canonical | Separate missing plugin from missing action handler after the existing dry-run return. Preserve unavailable-channel errors and existing dispatch and authorization behavior. |
+| #162653 | keep_independent | planned | independent | Different root cause and execution boundary; retain contributor work outside this repair. |
+| #163517 | keep_related | planned | related | Correcting unsupported-action diagnostics does not provide the requested read capability. |
+| #108434 | keep_closed | skipped | related | Historical diagnostic precedent only; no action on the merged PR. |
 
 ## Needs Human
 

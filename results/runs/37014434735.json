@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163518",
+  "mode": "plan",
+  "run_id": "37014434735",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37014434735",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163518.md",
+  "published_at": "2026-10-02T13:42:47.216Z",
+  "canonical": "#163518",
+  "canonical_issue": "#163518",
+  "canonical_pr": null,
+  "summary": "Plan a narrow shared-dispatch diagnostic fix. The clean checkout matches preflight main dc8d44c9fc4848a7ca3d2207af2cc7ae5c29632b and still contains the reported missing-handler error. No edits, runtime reproduction, tests, or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#163518",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163518",
+      "candidate_fix": null,
+      "reason": "Separate missing plugin from missing action handler after the existing dry-run return. Preserve unavailable-channel errors and existing dispatch and authorization behavior."
+    },
+    {
+      "target": "#162653",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#163518",
+      "candidate_fix": null,
+      "reason": "Different root cause and execution boundary; retain contributor work outside this repair."
+    },
+    {
+      "target": "#163517",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163518",
+      "candidate_fix": null,
+      "reason": "Correcting unsupported-action diagnostics does not provide the requested read capability."
+    },
+    {
+      "target": "#108434",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163518",
+      "candidate_fix": null,
+      "reason": "Historical diagnostic precedent only; no action on the merged PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
