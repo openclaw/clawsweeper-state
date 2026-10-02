@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:08:28.240Z",
+  "updated_at": "2026-10-02T04:08:43.030Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158929:5942868913:2026-10-01T23:48:06Z:re_review",
-      "comment_id": "5942868913",
-      "comment_version_key": "5942868913:2026-10-01T23:48:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158929#issuecomment-5942868913",
-      "comment_created_at": "2026-10-01T23:48:06Z",
-      "comment_updated_at": "2026-10-01T23:48:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158929,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T23:49:09.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-invalid-exec-diagnostic-158890",
-        "head_sha": "8b1d29f02d25782be85596941c06ee3c318cbe78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117144:5148867933:2026-09-01T13:12:07Z:clawsweeper_auto_repair",
       "comment_id": "5148867933",
@@ -33333,6 +33286,39 @@
         "kind": "pull_request",
         "branch": "fix/failed-trailer-string-exit-code",
         "head_sha": "bc95109f6113c51e3260de3df8b247e9ac6b7e53",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163171:5944539425:2026-10-02T04:07:47Z:clawsweeper_needs_human",
+      "comment_id": "5944539425",
+      "comment_version_key": "5944539425:2026-10-02T04:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163171#issuecomment-5944539425",
+      "comment_created_at": "2026-10-02T02:34:18Z",
+      "comment_updated_at": "2026-10-02T04:07:47Z",
+      "comment_body_sha256": "1b7dbb2a68452a163b4a2061e6d075193c9e6770c4ac0db2eb4f326736bdf7fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing session JSON and delivery query columns are rewritten, but published-updater evidence has not yet verified exact backups, projection agreement, unrelated-state preservation,... (sha=74510f888d7386f1acf20952d285d57449a09d18)",
+      "expected_head_sha": "74510f888d7386f1acf20952d285d57449a09d18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T04:08:43.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-config-july-session-provider-aliases",
+        "head_sha": "74510f888d7386f1acf20952d285d57449a09d18",
         "cluster_id": null,
         "job_path": null
       }
