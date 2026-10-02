@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:57:49.596Z",
+  "updated_at": "2026-10-02T01:57:56.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163017:5941254607:2026-10-01T21:42:22Z:re_review",
-      "comment_id": "5941254607",
-      "comment_version_key": "5941254607:2026-10-01T21:42:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163017#issuecomment-5941254607",
-      "comment_created_at": "2026-10-01T21:42:22Z",
-      "comment_updated_at": "2026-10-01T21:42:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163017,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T21:43:56.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/docs-bun-97-update-limits",
-        "head_sha": "5640284001053050aac6be24af9fcf986a1e472c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160884:5882294662:2026-10-01T21:43:01Z:clawsweeper_needs_human",
       "comment_id": "5882294662",
@@ -33624,6 +33577,39 @@
         "kind": "pull_request",
         "branch": "fix/realtime-voice-content-20261002",
         "head_sha": "7fe2c2862d435ffb050cb1ed0090bec6c08f9b5d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:825:5944160992:2026-10-02T01:56:53Z:clawsweeper_needs_human",
+      "comment_id": "5944160992",
+      "comment_version_key": "5944160992:2026-10-02T01:56:53Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/825#issuecomment-5944160992",
+      "comment_created_at": "2026-10-02T01:56:53Z",
+      "comment_updated_at": "2026-10-02T01:56:53Z",
+      "comment_body_sha256": "da3a45358fe30a936fa7310ce813c74c85f1ea6849c0263b64091d92714cfe2f",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 825,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Windows setups that repeatedly report zero device or inode values can now receive path-mismatch during otherwise legitimate directory preparation; helper-level compatibility coverage... (sha=f133633d7b6a012f2d012f30af094dfe2a82095d)",
+      "expected_head_sha": "f133633d7b6a012f2d012f30af094dfe2a82095d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T01:57:56.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-directory-identity",
+        "head_sha": "f133633d7b6a012f2d012f30af094dfe2a82095d",
         "cluster_id": null,
         "job_path": null
       }
