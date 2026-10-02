@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T19:58:41.749Z",
+  "updated_at": "2026-10-02T19:59:22.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163427:5954932363:2026-10-02T14:46:15Z:freeform_assist",
-      "comment_id": "5954932363",
-      "comment_version_key": "5954932363:2026-10-02T14:46:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163427#issuecomment-5954932363",
-      "comment_created_at": "2026-10-02T14:46:15Z",
-      "comment_updated_at": "2026-10-02T14:46:15Z",
-      "comment_body_sha256": "22ae501b68864bfb17eee4257ed612836f16e41544e06f7ea69bcd9b865d1c82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163427,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "please assess this supplied exact-head real-behavior proof despite the collaborator proof exemption. review only; do not repair, merge, queue, or enable automerge.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T14:47:10.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-native-workspace-proof",
-        "head_sha": "fb960a6d350a054ed4e036bc61d161d701f4bf82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163563:5954374454:2026-10-02T14:46:28Z:clawsweeper_needs_human",
       "comment_id": "5954374454",
@@ -33243,6 +33196,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-async-user-turn-custody",
         "head_sha": "7d6b4c15af1c382b1650c6658ea08710e872840e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161344:5896777656:2026-10-02T19:58:12Z:clawsweeper_needs_human",
+      "comment_id": "5896777656",
+      "comment_version_key": "5896777656:2026-10-02T19:58:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5896777656",
+      "comment_created_at": "2026-09-29T19:04:27Z",
+      "comment_updated_at": "2026-10-02T19:58:12Z",
+      "comment_body_sha256": "0b5714b7e83a1ba0258b1838d4a2488a29c40fa06adadae5802d224974585fa5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the matching captured body shows current-head Gateway POST /tools/invoke through the production adapte...; Review finding: [P1] [P1] Make embedded replay protection non-overridable — extensions/lobster/src/lobster-runner.ts:258 - [P1] [P1] Preserve saved-result reuse for existing HTTP... (sha=3dd9bc402649453af8f9b62b5402b314e638e5d2)",
+      "expected_head_sha": "3dd9bc402649453af8f9b62b5402b314e638e5d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T19:59:22.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lobster-llm-adapter-current",
+        "head_sha": "3dd9bc402649453af8f9b62b5402b314e638e5d2",
         "cluster_id": null,
         "job_path": null
       }
