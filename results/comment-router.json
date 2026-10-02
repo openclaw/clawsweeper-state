@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:45:41.442Z",
+  "updated_at": "2026-10-02T23:45:46.345Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163706:5958708969:2026-10-02T18:25:48Z:clawsweeper_needs_human",
-      "comment_id": "5958708969",
-      "comment_version_key": "5958708969:2026-10-02T18:25:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163706#issuecomment-5958708969",
-      "comment_created_at": "2026-10-02T18:25:48Z",
-      "comment_updated_at": "2026-10-02T18:25:48Z",
-      "comment_body_sha256": "953ce9d236aa81c54bf9c60d878ed1b2904c3c59610ba90ae9c7a7db0d0b0f44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163706,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing setups with unreliable filesystem notifications can retain stale rollout previews, workspace metadata, or recency after an in-place append: the 15-minute safety cycle now reu... (sha=e88bbcf72a855b24d9d51bd71383a05ddd3ff094)",
-      "expected_head_sha": "e88bbcf72a855b24d9d51bd71383a05ddd3ff094",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T18:26:45.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-codex-catalog-scan-20260919",
-        "head_sha": "e88bbcf72a855b24d9d51bd71383a05ddd3ff094",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163594:5958716123:2026-10-02T18:26:07Z:re_review",
       "comment_id": "5958716123",
@@ -33394,6 +33361,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163860:5963222142:2026-10-02T23:44:45Z:clawsweeper_auto_merge",
+      "comment_id": "5963222142",
+      "comment_version_key": "5963222142:2026-10-02T23:44:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163860#issuecomment-5963222142",
+      "comment_created_at": "2026-10-02T23:44:45Z",
+      "comment_updated_at": "2026-10-02T23:44:45Z",
+      "comment_body_sha256": "48532a5bda73e2ea807f5fcb3338f6941a6c5a4df855a43a1c27a98e302e5561",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=009c0b1cbe0f4a86ee50155df95a33e9e8b0e539)",
+      "expected_head_sha": "009c0b1cbe0f4a86ee50155df95a33e9e8b0e539",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T23:45:46.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-chat-plugin-card-loading",
+        "head_sha": "009c0b1cbe0f4a86ee50155df95a33e9e8b0e539",
+        "cluster_id": "automerge-openclaw-openclaw-163860",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163860.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
