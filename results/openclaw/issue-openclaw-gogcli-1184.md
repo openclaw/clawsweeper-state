@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/gogcli"
 cluster_id: "issue-openclaw-gogcli-1184"
-mode: "autonomous"
-run_id: "36962543754"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36962543754"
+mode: "plan"
+run_id: "36961067949"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36961067949"
 head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T04:02:46.486Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T03:40:53.604Z"
 canonical: "https://github.com/openclaw/gogcli/issues/1184"
 canonical_issue: "https://github.com/openclaw/gogcli/issues/1184"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/gogcli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36962543754](https://github.com/openclaw/clawsweeper/actions/runs/36962543754)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36961067949](https://github.com/openclaw/clawsweeper/actions/runs/36961067949)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/gogcli/issues/1184
 
 ## Summary
 
-The documentation request remains valid on preflight main 414e2ff8afa281ec3d9f0cdb057bdbc53386db91. A narrow fix artifact is ready for the executor. Local implementation and complete validation are blocked by the read-only filesystem and insufficient Go version; no edits or GitHub mutations occurred.
+The documentation request remains valid on the preflight main SHA. Plan a two-file documentation PR with offline parser validation. No files or GitHub state were changed; validation remains planned.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The documentation request remains valid on preflight main 414e2ff8afa281ec3d9f0c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1184 | fix_needed | planned | canonical | Add the maintainer-selected documentation alternative and preserve existing CLI behavior. |
-| cluster:issue-openclaw-gogcli-1184 | build_fix_artifact | planned |  | The fix is narrow and executable by the applicator; local implementation cannot proceed under the current filesystem and toolchain constraints. |
+| https://github.com/openclaw/gogcli/issues/1184 | fix_needed | planned | canonical | A focused documentation fix satisfies the approved request without a product decision. Closure and merge are prohibited by this job. |
 
 ## Needs Human
 
