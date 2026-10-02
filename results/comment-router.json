@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:09:40.927Z",
+  "updated_at": "2026-10-02T11:09:48.899Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163281:5946105684:2026-10-02T05:24:31Z:re_review",
-      "comment_id": "5946105684",
-      "comment_version_key": "5946105684:2026-10-02T05:24:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163281#issuecomment-5946105684",
-      "comment_created_at": "2026-10-02T05:24:31Z",
-      "comment_updated_at": "2026-10-02T05:24:31Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163281,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T05:38:02.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-arm64-playwright-discovery",
-        "head_sha": "13700277ee1d77f956b83d05c85a0a308987feff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153844:5751128132:2026-10-02T05:37:02Z:clawsweeper_needs_human",
       "comment_id": "5751128132",
@@ -33559,6 +33512,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-1093-v2-01-catalog",
         "head_sha": "1baf83d1f613790c992c50fd34f894e2e3308c67",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163299:5946614749:2026-10-02T11:08:12Z:clawsweeper_needs_human",
+      "comment_id": "5946614749",
+      "comment_version_key": "5946614749:2026-10-02T11:08:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163299#issuecomment-5946614749",
+      "comment_created_at": "2026-10-02T06:16:52Z",
+      "comment_updated_at": "2026-10-02T11:08:12Z",
+      "comment_body_sha256": "49a8b76a5705fa0d95d2434f1f3cbfab0593edf344b0500ebd80710ea0ba3b32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured installed-host Add and plugin-update observations support allowed happy paths, but do not...; Review finding: [P1] Bind deferred rollback mutations to the current lifecycle owner — src/skills/lifecycle/archive-install.ts:266-268 - [P2] Retain the skill transaction before t... (sha=144b0e159ed8fed251031a7c7bc976608dbc1d24)",
+      "expected_head_sha": "144b0e159ed8fed251031a7c7bc976608dbc1d24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T11:09:48.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-1093-v2-06-artifact-trust",
+        "head_sha": "144b0e159ed8fed251031a7c7bc976608dbc1d24",
         "cluster_id": null,
         "job_path": null
       }
