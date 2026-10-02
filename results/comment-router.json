@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:45:51.397Z",
+  "updated_at": "2026-10-02T20:46:11.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136474:5515094548:2026-09-02T19:24:04Z:re_review",
-      "comment_id": "5515094548",
-      "comment_version_key": "5515094548:2026-09-02T19:24:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136474#issuecomment-5515094548",
-      "comment_created_at": "2026-09-02T19:24:04Z",
-      "comment_updated_at": "2026-09-02T19:24:04Z",
-      "comment_body_sha256": "613a9c07b4c6cb8e1011e81c9edd9d275ba2e4ad2d7cb78c36c58030ccf23c25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136474,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T15:48:26.097Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136474:5518044020:2026-09-02T23:40:24Z:re_review",
       "comment_id": "5518044020",
@@ -32743,6 +32716,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163167:5944287425:2026-10-02T20:45:00Z:clawsweeper_needs_human",
+      "comment_id": "5944287425",
+      "comment_version_key": "5944287425:2026-10-02T20:45:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163167#issuecomment-5944287425",
+      "comment_created_at": "2026-10-02T02:09:00Z",
+      "comment_updated_at": "2026-10-02T20:45:00Z",
+      "comment_body_sha256": "7f34377e016e3be0d7a0813209f7a4fca5a41beb0e1c83b913a4649e0a688ce1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163167,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installations retaining delivery JSON will now stop at refusal instead of importing it. Compatibility evidence must demonstrate the documented backup-and-bridge recovery, supported SQ... (sha=e9edd36a954df5672e76024e60403bd4b0551c86)",
+      "expected_head_sha": "e9edd36a954df5672e76024e60403bd4b0551c86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T20:46:11.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-runtime-retired-queues",
+        "head_sha": "e9edd36a954df5672e76024e60403bd4b0551c86",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
