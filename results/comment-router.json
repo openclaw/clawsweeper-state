@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:03:07.069Z",
+  "updated_at": "2026-10-02T11:03:59.077Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141957:5580946379:2026-10-02T05:28:34Z:clawsweeper_needs_human",
-      "comment_id": "5580946379",
-      "comment_version_key": "5580946379:2026-10-02T05:28:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141957#issuecomment-5580946379",
-      "comment_created_at": "2026-09-08T07:19:24Z",
-      "comment_updated_at": "2026-10-02T05:28:34Z",
-      "comment_body_sha256": "d2b1fdf1680d179e0f6cd30dc7faf95a6a1fb32fb327e1124a281f4a4cd11f18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141957,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed stream-rendering collector is exercised through injected subscription events, but no after-fix real channel trace shows this branch... (sha=520f90d75f8f45b8d3b3011e3e8b2d8d03976509)",
-      "expected_head_sha": "520f90d75f8f45b8d3b3011e3e8b2d8d03976509",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T05:29:27.738Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-141556-no-reply-recovery",
-        "head_sha": "520f90d75f8f45b8d3b3011e3e8b2d8d03976509",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1594:5945988460:2026-10-02T05:28:33Z:clawsweeper_auto_repair",
       "comment_id": "5945988460",
@@ -33566,6 +33533,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163460:5950922900:2026-10-02T11:01:18Z:re_review",
+      "comment_id": "5950922900",
+      "comment_version_key": "5950922900:2026-10-02T11:01:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163460#issuecomment-5950922900",
+      "comment_created_at": "2026-10-02T11:01:18Z",
+      "comment_updated_at": "2026-10-02T11:01:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163460,
+      "author": "jacobtomlinson",
+      "author_id": 1610850,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T11:03:58.007Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/clawhub-listing-details-163402",
+        "head_sha": "af7e120caaaee1c451b93db2144a9a27bd4760b3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
