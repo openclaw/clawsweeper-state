@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T12:54:23.004Z",
+  "updated_at": "2026-10-02T12:55:07.489Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137184:5552523605:2026-09-05T14:36:41Z:re_review",
-      "comment_id": "5552523605",
-      "comment_version_key": "5552523605:2026-09-05T14:36:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137184#issuecomment-5552523605",
-      "comment_created_at": "2026-09-05T14:36:41Z",
-      "comment_updated_at": "2026-09-05T14:36:41Z",
-      "comment_body_sha256": "118dfd4c869d686fa8488af37a1b9b4a4d53a298938cb8c99dda879036cdb250",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137184,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T07:48:26.006Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137184:5628934287:2026-09-11T03:18:42Z:re_review",
       "comment_id": "5628934287",
@@ -33419,6 +33392,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151076:5952791746:2026-10-02T12:54:09Z:re_review",
+      "comment_id": "5952791746",
+      "comment_version_key": "5952791746:2026-10-02T12:54:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151076#issuecomment-5952791746",
+      "comment_created_at": "2026-10-02T12:54:09Z",
+      "comment_updated_at": "2026-10-02T12:54:09Z",
+      "comment_body_sha256": "c3738ac19fc2b4d07a4ad8a760fabc668cb2f5bfd8f1acab7cb542ea1dc023bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151076,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review for head `fd05ee2ffa8`: the rev 10 p3 doc finding is fixed--`internal-params.ts` embeddedcontextaccountingevent comment no longer excludes zero-usage; it now states admitted requires no nonzero usage and excludes only aborted/rejected + silent overflow",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T12:55:06.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-recovery-noop-budget",
+        "head_sha": "fd05ee2ffa81b3800b4ac3f2ebae97a3cc81db86",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
