@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T08:49:51.407Z",
+  "updated_at": "2026-10-02T08:50:10.561Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163218:5945177552:2026-10-02T03:40:23Z:re_review",
-      "comment_id": "5945177552",
-      "comment_version_key": "5945177552:2026-10-02T03:40:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163218#issuecomment-5945177552",
-      "comment_created_at": "2026-10-02T03:40:23Z",
-      "comment_updated_at": "2026-10-02T03:40:23Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163218,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T03:41:25.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/s23",
-        "head_sha": "9ae036939dcead3806a7e0dfdbf3a9df9b9a16be",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162612:5929422989:2026-10-02T03:40:59Z:clawsweeper_needs_human",
       "comment_id": "5929422989",
@@ -33022,6 +32975,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:91:5948487781:2026-10-02T08:49:17Z:clawsweeper_needs_human",
+      "comment_id": "5948487781",
+      "comment_version_key": "5948487781:2026-10-02T08:49:17Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/91#issuecomment-5948487781",
+      "comment_created_at": "2026-10-02T08:49:17Z",
+      "comment_updated_at": "2026-10-02T08:49:17Z",
+      "comment_body_sha256": "3b9b1033bff5f4d369a314d246f48347c273fdb0b2b3bdae7140cce597bca9e9",
+      "repo": "openclaw/carapace",
+      "issue_number": 91,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The previously documented repository-local review command will stop working; existing contributors must install the shared skill and change their invocation. Explicit acceptance of th... (sha=f10d492a17a183cce15dc8f2c50b698a9cd19e7d)",
+      "expected_head_sha": "f10d492a17a183cce15dc8f2c50b698a9cd19e7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T08:50:10.561Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/shared-autoreview-20261002",
+        "head_sha": "f10d492a17a183cce15dc8f2c50b698a9cd19e7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
