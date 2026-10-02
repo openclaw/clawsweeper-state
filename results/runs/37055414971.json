@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37055414971",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37055414971",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-02T19:43:02.579Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Confirmed the missing live-sync archive reconciliation on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Prepared a scoped fix plan. Implementation and validation are blocked by the read-only filesystem; independent pinned-protocol verification is blocked by GitHub DNS failure. No files or GitHub state were changed, and no regression or full gate passed.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The existing behavior still needs a focused repair. Runtime reproduction and protocol-boundary verification remain prerequisites; the issue must remain open."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The plan is available for a writable executor. Local implementation, failing-regression proof, protocol verification, and required validation are blocked in this worker; do not open a PR until those prerequisites pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
