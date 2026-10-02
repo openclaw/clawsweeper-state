@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T19:18:37.690Z",
+  "updated_at": "2026-10-02T19:19:30.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163511:5952483994:2026-10-02T14:14:56Z:clawsweeper_needs_human",
-      "comment_id": "5952483994",
-      "comment_version_key": "5952483994:2026-10-02T14:14:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163511#issuecomment-5952483994",
-      "comment_created_at": "2026-10-02T12:37:26Z",
-      "comment_updated_at": "2026-10-02T14:14:56Z",
-      "comment_body_sha256": "3d44cccb013e84db22520cecee47859c8a6915edbab66138eb09a814dcad4701",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Registered Slack ingress exercises production dispatch and SDK ChatStreamer, showing seal-before-replacement and Stop suppression, but client f... (sha=ade05e3967019c0bb1bcfc1c325d4400c98adfac)",
-      "expected_head_sha": "ade05e3967019c0bb1bcfc1c325d4400c98adfac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T14:15:47.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-steering-boundary-134644",
-        "head_sha": "ade05e3967019c0bb1bcfc1c325d4400c98adfac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154904:5762082271:2026-10-02T14:14:53Z:clawsweeper_auto_repair",
       "comment_id": "5762082271",
@@ -33134,6 +33101,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162960:5959708734:2026-10-02T19:18:28Z:re_review",
+      "comment_id": "5959708734",
+      "comment_version_key": "5959708734:2026-10-02T19:18:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162960#issuecomment-5959708734",
+      "comment_created_at": "2026-10-02T19:18:28Z",
+      "comment_updated_at": "2026-10-02T19:18:28Z",
+      "comment_body_sha256": "e14ce5c706cbb9f2329d37286fe68854d42aede9cf04838bcc4c7bd77c63b0e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162960,
+      "author": "Kimiyu-186",
+      "author_id": 202845257,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T19:19:29.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/paired-node-skill-lifecycle-242",
+        "head_sha": "9224f43ea289f1d9fd8a304fc273936b8bc2fbc3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
