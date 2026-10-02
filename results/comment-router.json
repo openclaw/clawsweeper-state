@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:39:19.680Z",
+  "updated_at": "2026-10-02T20:40:11.514Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158902:5955853929:2026-10-02T15:39:09Z:re_review",
-      "comment_id": "5955853929",
-      "comment_version_key": "5955853929:2026-10-02T15:39:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158902#issuecomment-5955853929",
-      "comment_created_at": "2026-10-02T15:39:09Z",
-      "comment_updated_at": "2026-10-02T15:39:09Z",
-      "comment_body_sha256": "ab5854c4615d87b5876a509b6b0b03038562b0e61ff8b1f0eac970ba3ef39bea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158902,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head e4b248a8cc3: final ci repair replaces wall-clock test races with the repository-owned vitest cancellation signal. timeout-race ratchet, all core-test type shards, and the 14-test real worker process file pass",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T15:47:40.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-native-worker-ui",
-        "head_sha": "e4b248a8cc34ca97a214910dc044c1660f8af166",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106529:4961034548:2026-10-02T15:35:27Z:clawsweeper_needs_human",
       "comment_id": "4961034548",
@@ -32715,6 +32668,53 @@
       "status": "skipped",
       "processed_at": "2026-10-02T20:39:19.680Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155019:5961090401:2026-10-02T20:39:08Z:re_review",
+      "comment_id": "5961090401",
+      "comment_version_key": "5961090401:2026-10-02T20:39:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155019#issuecomment-5961090401",
+      "comment_created_at": "2026-10-02T20:39:08Z",
+      "comment_updated_at": "2026-10-02T20:39:08Z",
+      "comment_body_sha256": "a3fe0d8c9899560cf63930378ed338e6d17d218bc4406271c27e22f34c34f73e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155019,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rebased/merged to latest main (buildactivesubagentruntimecontext is now async — all tests await it), added a real sqlite persist->reload->render integration proof (drained failed+cleanupcompletedat drops out of awaiting-delivery after restart; retrying failed row stays visible) and a guard-off ablation. head 2eb547eea1e",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T20:40:09.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failed-delivery-not-outstanding",
+        "head_sha": "2eb547eea1eeb02675141490ceb4a86fb68d76e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
