@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:42:26.563Z",
+  "updated_at": "2026-10-02T11:43:14.549Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163297:5946611728:2026-10-02T06:16:33Z:clawsweeper_needs_human",
-      "comment_id": "5946611728",
-      "comment_version_key": "5946611728:2026-10-02T06:16:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163297#issuecomment-5946611728",
-      "comment_created_at": "2026-10-02T06:16:33Z",
-      "comment_updated_at": "2026-10-02T06:16:33Z",
-      "comment_body_sha256": "49bd7ff18fd1d993780901b079fdcb486410aeb3a4e99ffaf39394912a8e73fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163297,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured installed-host observations positively cover successful Gateway update and removal, but d...; Review finding: [P1] Keep removal bound to the initiating administrator’s live authority — src/claws/gateway-remove-apply.ts:124-127 - [P2] Forward the adopted agent digest throug... (sha=f79124ef4ca0a7dec5d67f5fb59c6aefc3b838c7)",
-      "expected_head_sha": "f79124ef4ca0a7dec5d67f5fb59c6aefc3b838c7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T06:17:37.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-1093-v2-03-update-remove",
-        "head_sha": "f79124ef4ca0a7dec5d67f5fb59c6aefc3b838c7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163295:5946614174:2026-10-02T06:16:49Z:clawsweeper_auto_repair",
       "comment_id": "5946614174",
@@ -33574,6 +33541,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148951:5951619789:2026-10-02T11:42:22Z:re_review",
+      "comment_id": "5951619789",
+      "comment_version_key": "5951619789:2026-10-02T11:42:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148951#issuecomment-5951619789",
+      "comment_created_at": "2026-10-02T11:42:22Z",
+      "comment_updated_at": "2026-10-02T11:42:22Z",
+      "comment_body_sha256": "2ba62c96c58c6b173bd31df73fa193dd7dbd6ae04089b9c22fc4906a8a585e3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148951,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T11:43:13.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/swarm-session-metadata-admission-20260915",
+        "head_sha": "908b8551fc24c2e8e626715daffd05ebc4260556",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
