@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:39:42.307Z",
+  "updated_at": "2026-10-02T04:39:47.946Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163099:5942830087:2026-10-02T00:07:11Z:clawsweeper_needs_human",
-      "comment_id": "5942830087",
-      "comment_version_key": "5942830087:2026-10-02T00:07:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163099#issuecomment-5942830087",
-      "comment_created_at": "2026-10-01T23:44:14Z",
-      "comment_updated_at": "2026-10-02T00:07:11Z",
-      "comment_body_sha256": "097874739b90b9f150149258944799cbd8ecd580cbf36fd13536906d480fe949",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163099,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2fb0d8d382c70abbb33e30e06401e8f8e75dc643)",
-      "expected_head_sha": "2fb0d8d382c70abbb33e30e06401e8f8e75dc643",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T00:08:13.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-retained-identity-assets",
-        "head_sha": "2fb0d8d382c70abbb33e30e06401e8f8e75dc643",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163108:5943071834:2026-10-02T00:08:06Z:clawsweeper_needs_human",
       "comment_id": "5943071834",
@@ -33400,6 +33367,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163239:5945697131:2026-10-02T04:38:21Z:re_review",
+      "comment_id": "5945697131",
+      "comment_version_key": "5945697131:2026-10-02T04:38:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163239#issuecomment-5945697131",
+      "comment_created_at": "2026-10-02T04:38:21Z",
+      "comment_updated_at": "2026-10-02T04:38:21Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163239,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T04:39:46.942Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "investigate/skill-scanner-removal",
+        "head_sha": "f10a34890ab5e83f9a7b49cc7bf5cd13fae30e6a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
