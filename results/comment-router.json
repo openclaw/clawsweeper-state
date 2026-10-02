@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T22:03:17.023Z",
+  "updated_at": "2026-10-02T22:03:55.505Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163650:5957246835:2026-10-02T16:58:35Z:re_review",
-      "comment_id": "5957246835",
-      "comment_version_key": "5957246835:2026-10-02T16:58:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163650#issuecomment-5957246835",
-      "comment_created_at": "2026-10-02T16:58:35Z",
-      "comment_updated_at": "2026-10-02T16:58:35Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163650,
-      "author": "jacobtomlinson",
-      "author_id": 1610850,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T17:00:21.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/main-cli-config-163459",
-        "head_sha": "c7cb2e5aeb152779f784e044bd7ec90b9af0a980",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143216:5604417850:2026-10-02T16:57:41Z:clawsweeper_needs_human",
       "comment_id": "5604417850",
@@ -32953,6 +32906,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0013-continuity-sidecars",
         "head_sha": "65d74e137db53e517b21fc17b63696fa082717e9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4176:5930761071:2026-10-02T22:03:01Z:clawsweeper_needs_human",
+      "comment_id": "5930761071",
+      "comment_version_key": "5930761071:2026-10-02T22:03:01Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4176#issuecomment-5930761071",
+      "comment_created_at": "2026-10-01T11:54:13Z",
+      "comment_updated_at": "2026-10-02T22:03:01Z",
+      "comment_body_sha256": "4b33cb899165eba2e8a8edab9c81c4353e99f9ff77f82383c7e0b2783b5ac66e",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The earlier terminal transcript exercises production CLI discovery, scanning, and persisted-cache repricing with generated logs, but d... (sha=26ee8be3425481f04725a7b936ba9003bff99db9)",
+      "expected_head_sha": "26ee8be3425481f04725a7b936ba9003bff99db9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T22:03:55.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pi-cache-write-1h",
+        "head_sha": "26ee8be3425481f04725a7b936ba9003bff99db9",
         "cluster_id": null,
         "job_path": null
       }
