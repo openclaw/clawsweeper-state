@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163150"
-mode: "autonomous"
-run_id: "36951890718"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36951890718"
+mode: "plan"
+run_id: "36957005623"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36957005623"
 head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T02:19:59.688Z"
-canonical: "https://github.com/openclaw/openclaw/issues/163150"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/163150"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T02:48:23.568Z"
+canonical: "#163150"
+canonical_issue: "#163150"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36951890718](https://github.com/openclaw/clawsweeper/actions/runs/36951890718)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36957005623](https://github.com/openclaw/clawsweeper/actions/runs/36957005623)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/163150
+Canonical: #163150
 
 ## Summary
 
-The diagnostics defects remain present at preflight main d4b98b3a5101349febc02ae14b828f689f7b8538. A narrow fix artifact is ready, but implementation, failing-regression reproduction, and validation are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
+Prepared a narrow diagnostics repair plan. Source inspection at checkout main/origin/main 949f3f52121b16cff0788be771125b3733bb9e0f supports the reported attribution and logging gaps. Runtime reproduction, implementation, validation, and review remain pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The diagnostics defects remain present at preflight main d4b98b3a5101349febc02ae
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163150 | fix_needed | planned | canonical | Existing behavior supports a bug-only repair. Execution requires a writable isolated checkout with dependencies; source verification does not substitute for the required failing regression. |
-| #159638 | keep_related | planned | related | Worker churn has an unconfirmed trigger. Improved retirement diagnostics help investigation but do not fix or explain that lifecycle. |
-| #163151 | keep_related | planned | related | Pre-dispatch recovery is a separate execution defect and remains open. |
-| #163152 | keep_related | planned | related | This is a distinct performance feature request. Leave its capacity decision to its own workflow. |
-| cluster:issue-openclaw-openclaw-163150 | build_fix_artifact | planned |  | A narrow non-security repair is supported by current source. The deterministic executor can implement and validate it without a new product decision. |
+| #163150 | fix_needed | planned | canonical | Implement existing retirement attribution and once-only bounded failure diagnostics after demonstrating a failing broker-boundary regression on the execution base. |
+| #159638 | keep_related | planned | related | Better diagnostics may aid investigation, but this repair does not resolve the separate worker-churn mechanism. |
+| #163151 | keep_related | planned | related | Recovery owns different behavior and requires a separate repair. |
+| #163152 | keep_related | planned | related | Keep the feature request open outside this diagnostics repair; its product decision does not block this cluster. |
 
 ## Needs Human
 

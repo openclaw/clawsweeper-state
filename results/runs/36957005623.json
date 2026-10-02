@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163150",
+  "mode": "plan",
+  "run_id": "36957005623",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36957005623",
+  "head_sha": "96aa78ac663f91b750f9f7f80d34511e89fe153c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163150.md",
+  "published_at": "2026-10-02T02:48:23.568Z",
+  "canonical": "#163150",
+  "canonical_issue": "#163150",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow diagnostics repair plan. Source inspection at checkout main/origin/main 949f3f52121b16cff0788be771125b3733bb9e0f supports the reported attribution and logging gaps. Runtime reproduction, implementation, validation, and review remain pending. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#163150",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Implement existing retirement attribution and once-only bounded failure diagnostics after demonstrating a failing broker-boundary regression on the execution base."
+    },
+    {
+      "target": "#159638",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Better diagnostics may aid investigation, but this repair does not resolve the separate worker-churn mechanism."
+    },
+    {
+      "target": "#163151",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Recovery owns different behavior and requires a separate repair."
+    },
+    {
+      "target": "#163152",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163150",
+      "candidate_fix": null,
+      "reason": "Keep the feature request open outside this diagnostics repair; its product decision does not block this cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
