@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T02:43:50.064Z",
+  "updated_at": "2026-10-02T02:44:15.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:405:5934384737:2026-10-01T15:15:09Z:re_review",
-      "comment_id": "5934384737",
-      "comment_version_key": "5934384737:2026-10-01T15:15:09Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/405#issuecomment-5934384737",
-      "comment_created_at": "2026-10-01T15:15:09Z",
-      "comment_updated_at": "2026-10-01T15:15:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/crabpot",
-      "issue_number": 405,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T22:16:47.954Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-lifecycle-capture-20260929",
-        "head_sha": "7a23175f425c77f5a82ca997484a4e7004f8d28c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:405:5921905079:2026-10-01T22:15:47Z:clawsweeper_needs_human",
       "comment_id": "5921905079",
@@ -33868,6 +33821,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T02:43:50.064Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162080:5918385426:2026-10-02T02:43:21Z:clawsweeper_needs_human",
+      "comment_id": "5918385426",
+      "comment_version_key": "5918385426:2026-10-02T02:43:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162080#issuecomment-5918385426",
+      "comment_created_at": "2026-09-30T19:41:34Z",
+      "comment_updated_at": "2026-10-02T02:43:21Z",
+      "comment_body_sha256": "b290d6f1cb1c425e728b5c00b6d9cd49db7e60e3bb6f755be8d986193c2399c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required published-driver × candidate update evidence is missing for the changed installed-plugin loader, leaving upgrade and restart compatibility unverified. (sha=6761ceea0c061d0c27ef4d41a8780f1de38b41b0)",
+      "expected_head_sha": "6761ceea0c061d0c27ef4d41a8780f1de38b41b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T02:44:15.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-worker-native-esm",
+        "head_sha": "6761ceea0c061d0c27ef4d41a8780f1de38b41b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
