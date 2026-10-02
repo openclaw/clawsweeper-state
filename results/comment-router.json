@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T18:41:19.163Z",
+  "updated_at": "2026-10-02T18:41:29.530Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119256:5183416890:2026-08-04T19:04:19Z:re_review",
-      "comment_id": "5183416890",
-      "comment_version_key": "5183416890:2026-08-04T19:04:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5183416890",
-      "comment_created_at": "2026-08-04T19:04:19Z",
-      "comment_updated_at": "2026-08-04T19:04:19Z",
-      "comment_body_sha256": "7a7bb62e8ba3a06f7f2e5b210d6fb0a0b5009a294ab33702c105da5f5ee8f620",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "pscoutosoares",
-      "author_id": 15336146,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T13:47:22.374Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119256:5186338830:2026-08-05T01:05:06Z:re_review",
       "comment_id": "5186338830",
@@ -33156,6 +33129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:306:5957853677:2026-10-02T18:40:36Z:clawsweeper_needs_human",
+      "comment_id": "5957853677",
+      "comment_version_key": "5957853677:2026-10-02T18:40:36Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/306#issuecomment-5957853677",
+      "comment_created_at": "2026-10-02T17:35:28Z",
+      "comment_updated_at": "2026-10-02T18:40:36Z",
+      "comment_body_sha256": "b8e3de102f1a6f9b251e18050c4944ce8365313fb3fe7d84cd9f469ca0dd3ea3",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing invocations without a model override will select a different model and lose automatic access-failure recovery; workflows that previously recovered can now stop. (sha=6893ea75811eff687c603dbc79109cd49b03ef8f)",
+      "expected_head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T18:41:29.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoreview-operator-model",
+        "head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
