@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163544"
-mode: "autonomous"
-run_id: "37012753619"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37012753619"
+mode: "plan"
+run_id: "37016977476"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37016977476"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-10-02T13:32:16.630Z"
+published_at: "2026-10-02T14:05:42.786Z"
 canonical: "https://github.com/openclaw/openclaw/issues/163544"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/163544"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37012753619](https://github.com/openclaw/clawsweeper/actions/runs/37012753619)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37016977476](https://github.com/openclaw/clawsweeper/actions/runs/37016977476)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/163544
 
 ## Summary
 
-Reproduced the missing audible-delivery request through the existing service-worker fixture on preflight main. Prepared a two-file fix plan. Local implementation is blocked by the read-only filesystem; Vitest and macOS Safari validation remain pending.
+Confirmed the missing audible-delivery request at the current-main push boundary. Plan a two-file repair and regression coverage. No files or GitHub state changed; focused tests, review, and macOS Safari observations remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Reproduced the missing audible-delivery request through the existing service-wor
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163544 | fix_needed | blocked | canonical | The narrow fix is supported. Applying it locally is blocked by the read-only host; candidate validation and macOS Safari sound observations must be completed by the executor. |
-| #138019 | keep_related | planned | related | Keep open as overlapping Chromium evidence. Do not claim the Safari repair fixes this report without browser-specific reproduction. |
-| cluster:issue-openclaw-openclaw-163544 | build_fix_artifact | planned |  | A narrow new fix PR remains appropriate. The artifact is executable preparation, not a claim that a patch or PR already exists. |
+| #163544 | fix_needed | planned | canonical | A narrow presentation-owner repair fits the authorized bug scope. Keep the issue open; this lane forbids closure and merging. |
+| #138019 | keep_related | planned | related | Preserve the distinct browser reproduction and coordinate through the implementation PR without claiming the Safari repair fixes Chromium. |
 
 ## Needs Human
 
