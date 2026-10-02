@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T00:29:31.181Z",
+  "updated_at": "2026-10-02T00:29:50.969Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162982:5939984789:2026-10-01T20:31:32Z:clawsweeper_needs_human",
-      "comment_id": "5939984789",
-      "comment_version_key": "5939984789:2026-10-01T20:31:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162982#issuecomment-5939984789",
-      "comment_created_at": "2026-10-01T20:31:32Z",
-      "comment_updated_at": "2026-10-01T20:31:32Z",
-      "comment_body_sha256": "076ba3a9f7a1c04c79e23fe4f2120feb2c1508a113e2ae6cd552d24e561e560b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162982,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Complete and record exact-head flake validation: 20 clean standalone profile-service runs, owner sibling tests, and the reviewed-head identity for the three original-shard runs. (sha=7a68e9447ae07a09bb9ea0c30d7c4ceb80c21e37)",
-      "expected_head_sha": "7a68e9447ae07a09bb9ea0c30d7c4ceb80c21e37",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T20:32:52.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-browser-mcp-runtime-cache-owner-v2",
-        "head_sha": "7a68e9447ae07a09bb9ea0c30d7c4ceb80c21e37",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162888:5937145506:2026-10-01T20:32:06Z:clawsweeper_needs_human",
       "comment_id": "5937145506",
@@ -33231,6 +33198,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163119:5943287480:2026-10-02T00:28:57Z:re_review",
+      "comment_id": "5943287480",
+      "comment_version_key": "5943287480:2026-10-02T00:28:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163119#issuecomment-5943287480",
+      "comment_created_at": "2026-10-02T00:28:57Z",
+      "comment_updated_at": "2026-10-02T00:28:57Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163119,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T00:29:49.506Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/freeze-recovery",
+        "head_sha": "81361b032dcdc86e68370fc05041d9a6e74eea1e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
