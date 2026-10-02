@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:43:54.672Z",
+  "updated_at": "2026-10-02T04:44:28.179Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162537:5927627427:2026-10-02T00:11:07Z:clawsweeper_needs_human",
-      "comment_id": "5927627427",
-      "comment_version_key": "5927627427:2026-10-02T00:11:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162537#issuecomment-5927627427",
-      "comment_created_at": "2026-10-01T08:23:37Z",
-      "comment_updated_at": "2026-10-02T00:11:07Z",
-      "comment_body_sha256": "c28d20c0336e6a56883eb46e2c61adf1730b5aaef92ff4aa8423e569e25b3fdf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162537,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed runtime parser participates in Doctor’s artifact-removal eligibility; the current candidate still needs the refreshed Node/Bun update and flagged-holder custody evidence p... (sha=2b9af004666bc033519d8f62b56c7d8df4a871ca)",
-      "expected_head_sha": "2b9af004666bc033519d8f62b56c7d8df4a871ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T00:12:07.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-runtime-agnostic-diagnostics",
-        "head_sha": "2b9af004666bc033519d8f62b56c7d8df4a871ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163112:5943104440:2026-10-02T00:11:14Z:re_review",
       "comment_id": "5943104440",
@@ -33314,6 +33281,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159013:5945739898:2026-10-02T04:43:18Z:re_review",
+      "comment_id": "5945739898",
+      "comment_version_key": "5945739898:2026-10-02T04:43:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159013#issuecomment-5945739898",
+      "comment_created_at": "2026-10-02T04:43:18Z",
+      "comment_updated_at": "2026-10-02T04:43:18Z",
+      "comment_body_sha256": "84e68d7009fdf73638a8c350829414e2cbec90e7025f74691eb11abf2898ce62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159013,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T04:44:26.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-deleted-agent-resources",
+        "head_sha": "e90278625fd48abf27bdb5107e427c6b4a577b54",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
