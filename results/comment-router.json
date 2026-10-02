@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T00:46:38.271Z",
+  "updated_at": "2026-10-02T00:46:43.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126924:5519213898:2026-09-03T02:05:38Z:re_review",
-      "comment_id": "5519213898",
-      "comment_version_key": "5519213898:2026-09-03T02:05:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5519213898",
-      "comment_created_at": "2026-09-03T02:05:38Z",
-      "comment_updated_at": "2026-09-03T02:05:38Z",
-      "comment_body_sha256": "7e1033f767012bad4657121301f16cb80ece2ab98dbec4c65414ca3d7970e056",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126924,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T20:56:35.363Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126924:5519280828:2026-09-03T02:13:56Z:re_review",
       "comment_id": "5519280828",
@@ -33403,6 +33376,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163106:5943159749:2026-10-02T00:45:45Z:clawsweeper_needs_human",
+      "comment_id": "5943159749",
+      "comment_version_key": "5943159749:2026-10-02T00:45:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163106#issuecomment-5943159749",
+      "comment_created_at": "2026-10-02T00:16:33Z",
+      "comment_updated_at": "2026-10-02T00:45:45Z",
+      "comment_body_sha256": "ca191bb36a89cad89fda604204725530259832a105cf53fd6a931fa31376b01c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The inspected workflow pins the changed media runner and exercises applyMediaUnderstanding, but mocked catalog and registry boundaries prove on... (sha=2e1eb0dd0a1a4f710cf3208b352d5f3422a3fe36)",
+      "expected_head_sha": "2e1eb0dd0a1a4f710cf3208b352d5f3422a3fe36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T00:46:43.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/media-explicit-capabilities",
+        "head_sha": "2e1eb0dd0a1a4f710cf3208b352d5f3422a3fe36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
