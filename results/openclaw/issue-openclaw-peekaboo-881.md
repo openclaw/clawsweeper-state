@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37068562365"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37068562365"
+run_id: "37073377013"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37073377013"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-02T21:48:03.716Z"
+published_at: "2026-10-02T22:39:43.137Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37068562365](https://github.com/openclaw/clawsweeper/actions/runs/37068562365)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37073377013](https://github.com/openclaw/clawsweeper/actions/runs/37073377013)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Keep #881 open. Current-main inspection did not establish a definite receipt-loss defect. Implementation is blocked on the retained same-session metadata requested by the maintainer; no safe narrow patch or fix PR is justified yet.
+Keep #881 open. Current-main inspection did not establish the reported evidence-loss boundary. Implementation is blocked pending the retained host/session metadata requested by the maintainer; no code changes or PR are justified yet.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Keep #881 open. Current-main inspection did not establish a definite receipt-los
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The missing evidence prevents distinguishing host-side receipt loss from unavailable or changed identity evidence. Resume after the already-requested retained metadata identifies the failing path and its binary/source version. No code changes or executable fix artifact were produced; the issue remains the canonical investigation thread. |
+| #881 | keep_canonical | planned | canonical | The selected Bridge's retained receipt evidence is needed to distinguish released-host behavior from current source and identify a narrow repair. Preserve the existing attribution and retry-safety checks; do not repeat potentially dispatched focus operations for diagnosis. |
 
 ## Needs Human
 
