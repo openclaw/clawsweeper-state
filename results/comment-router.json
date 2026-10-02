@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:15:42.989Z",
+  "updated_at": "2026-10-02T03:15:54.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-packaging:143:5941037864:2026-10-01T21:31:14Z:re_review",
-      "comment_id": "5941037864",
-      "comment_version_key": "5941037864:2026-10-01T21:31:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/143#issuecomment-5941037864",
-      "comment_created_at": "2026-10-01T21:31:14Z",
-      "comment_updated_at": "2026-10-01T21:31:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-packaging",
-      "issue_number": 143,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T22:38:26.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/skip-pr-payload-artifacts",
-        "head_sha": "3bae080c87af6289ef110ec084d60327c033260a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:143:5940702999:2026-10-01T22:37:35Z:clawsweeper_needs_human",
       "comment_id": "5940702999",
@@ -34031,6 +33984,39 @@
         "kind": "pull_request",
         "branch": "fix/release-feedback-container-origins",
         "head_sha": "7cdb5c792b4fe6a8a9b07e458ae3cb4794c0db3d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1514:5819669055:2026-10-02T03:15:03Z:clawsweeper_needs_human",
+      "comment_id": "5819669055",
+      "comment_version_key": "5819669055:2026-10-02T03:15:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1514#issuecomment-5819669055",
+      "comment_created_at": "2026-09-24T18:18:00Z",
+      "comment_updated_at": "2026-10-02T03:15:03Z",
+      "comment_body_sha256": "1634f0506e8b0ca5657396052fdcf899d2dfbb28044eb449e9999aad3eacece6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1514,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: App, SshTunnelService, and DashboardBrowserShell govern shared-token navigation, but the captured head explicit...; Review finding: [P1] [P1] Keep cancellation from exposing pending token navigation — src/OpenClaw.Connection/SshTunnelService.cs:264-266 - [P1] [P1] Preserve saved Dashboard mount... (sha=23ff490fc65f0c94878bb058f9c7a56d9335c070)",
+      "expected_head_sha": "23ff490fc65f0c94878bb058f9c7a56d9335c070",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T03:15:54.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f104-dashboard-owned-ssh-forward",
+        "head_sha": "23ff490fc65f0c94878bb058f9c7a56d9335c070",
         "cluster_id": null,
         "job_path": null
       }
