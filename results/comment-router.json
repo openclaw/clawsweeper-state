@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:33:03.528Z",
+  "updated_at": "2026-10-02T06:34:58.149Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160620:5943855662:2026-10-02T01:26:31Z:re_review",
-      "comment_id": "5943855662",
-      "comment_version_key": "5943855662:2026-10-02T01:26:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160620#issuecomment-5943855662",
-      "comment_created_at": "2026-10-02T01:25:52Z",
-      "comment_updated_at": "2026-10-02T01:26:31Z",
-      "comment_body_sha256": "613a7f757ad13dc292b7a912a8c26c2c36317422d777f078f3b9cb556f6c06dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160620,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T01:27:24.332Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-exec-fatal-code-cron",
-        "head_sha": "8e4df6c84d9650945a46fc783786dedd812f0d4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163146:5943791309:2026-10-02T01:27:57Z:clawsweeper_auto_repair",
       "comment_id": "5943791309",
@@ -33343,6 +33296,39 @@
         "kind": "pull_request",
         "branch": "refactor/lg-runtime-talk-retirement",
         "head_sha": "b01f2743e5d4cfdc0ce6b18580ff53e6c542bb27",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149589:5690970347:2026-10-02T06:34:01Z:clawsweeper_needs_human",
+      "comment_id": "5690970347",
+      "comment_version_key": "5690970347:2026-10-02T06:34:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149589#issuecomment-5690970347",
+      "comment_created_at": "2026-09-16T02:11:44Z",
+      "comment_updated_at": "2026-10-02T06:34:01Z",
+      "comment_body_sha256": "2d1629d19eb75c51535b2f67acdda74c9364da55abc60fe6f1799d95fa8e2464",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accept automatic access to the previously blocked address range** - The opt-in is automatic for provider-owned embedding hosts. Exact-origin checks and live denied-destination evidence...; Review finding: [medium] Accept automatic access to the previously blocked address range — extensions/ollama/src/embedding-provider.runtime.ts:372 (sha=da8e88bfd98541127f7d2ee990c34ad3352c4b9e)",
+      "expected_head_sha": "da8e88bfd98541127f7d2ee990c34ad3352c4b9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T06:34:58.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-embedding-private-network-ssrf",
+        "head_sha": "da8e88bfd98541127f7d2ee990c34ad3352c4b9e",
         "cluster_id": null,
         "job_path": null
       }
