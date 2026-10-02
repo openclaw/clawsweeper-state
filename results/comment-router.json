@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:04:17.859Z",
+  "updated_at": "2026-10-02T01:04:37.939Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/hermit:52:5791281673:2026-09-23T08:04:35Z:re_review",
-      "comment_id": "5791281673",
-      "comment_version_key": "5791281673:2026-09-23T08:04:35Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/52#issuecomment-5791281673",
-      "comment_created_at": "2026-09-23T08:04:35Z",
-      "comment_updated_at": "2026-09-23T08:04:35Z",
-      "comment_body_sha256": "8cf73bbb843586443be6a1ff8c49ee79d7b52b1dee1bdb7ddcb5fd720c23e9a9",
-      "repo": "openclaw/hermit",
-      "issue_number": 52,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T21:02:52.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/sweep-3",
-        "head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162994:5940472283:2026-10-01T21:01:54Z:clawsweeper_auto_repair",
       "comment_id": "5940472283",
@@ -33608,6 +33561,39 @@
         "kind": "pull_request",
         "branch": "fix/release-feedback-container-origins",
         "head_sha": "8ce2ba96c890dc64184c25176320f48c8c4b4a62",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163134:5943633297:2026-10-02T01:03:28Z:clawsweeper_needs_human",
+      "comment_id": "5943633297",
+      "comment_version_key": "5943633297:2026-10-02T01:03:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163134#issuecomment-5943633297",
+      "comment_created_at": "2026-10-02T01:03:28Z",
+      "comment_updated_at": "2026-10-02T01:03:28Z",
+      "comment_body_sha256": "de8ceeff5e835bfe19058f9fc5855938f43ed696362ca116519f5a3f5d42c088",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add the changed lifetime test file's measured wall time to the PR Evidence section, using existing remote results where available. (sha=ddad1cb9f630ef30823cddb2c2ba323428d509d4)",
+      "expected_head_sha": "ddad1cb9f630ef30823cddb2c2ba323428d509d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T01:04:37.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-heartbeat-error-context-20261002",
+        "head_sha": "ddad1cb9f630ef30823cddb2c2ba323428d509d4",
         "cluster_id": null,
         "job_path": null
       }
