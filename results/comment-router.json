@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T10:39:20.060Z",
+  "updated_at": "2026-10-02T10:39:39.538Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163260:5945847818:2026-10-02T04:55:36Z:re_review",
-      "comment_id": "5945847818",
-      "comment_version_key": "5945847818:2026-10-02T04:55:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163260#issuecomment-5945847818",
-      "comment_created_at": "2026-10-02T04:55:36Z",
-      "comment_updated_at": "2026-10-02T04:55:36Z",
-      "comment_body_sha256": "36d280082581cfa8c3fe5c4b2a54d2bcf97b086fad2a7401d58a195341c90d3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163260,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T04:56:28.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-v4-harness",
-        "head_sha": "b14e61727f1ab017633cb2d37d1488893b31fb0c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163257:5945849949:2026-10-02T04:55:50Z:clawsweeper_needs_human",
       "comment_id": "5945849949",
@@ -33571,6 +33524,39 @@
         "kind": "pull_request",
         "branch": "openclaw/investigate-chatgpt-plugin-extensions",
         "head_sha": "83a6c94514a1c7c950dadedd144d50aced8767c8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163423:5949267745:2026-10-02T10:38:37Z:clawsweeper_needs_human",
+      "comment_id": "5949267745",
+      "comment_version_key": "5949267745:2026-10-02T10:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163423#issuecomment-5949267745",
+      "comment_created_at": "2026-10-02T09:32:50Z",
+      "comment_updated_at": "2026-10-02T10:38:37Z",
+      "comment_body_sha256": "184a4c2e8f759ab5633a11da917a4ec9d5da17f797bb35d0a3a18138533f1306",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed delivery owner admits distinct channel registrations, but only mocked replacement senders exercise...; Review finding: [medium] Prove replacement-registration authority before transport I/O — src/channels/turn/durable-delivery-runtime.ts:54 (sha=53d71035bec708498c9bc63a5d8583212a18098e)",
+      "expected_head_sha": "53d71035bec708498c9bc63a5d8583212a18098e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T10:39:39.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/100387-whatsapp-registry-handoff",
+        "head_sha": "53d71035bec708498c9bc63a5d8583212a18098e",
         "cluster_id": null,
         "job_path": null
       }
