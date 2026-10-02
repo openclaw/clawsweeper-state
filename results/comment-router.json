@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:01:07.863Z",
+  "updated_at": "2026-10-02T21:02:11.475Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158986:5847780737:2026-09-26T16:12:25Z:re_review",
-      "comment_id": "5847780737",
-      "comment_version_key": "5847780737:2026-09-26T16:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158986#issuecomment-5847780737",
-      "comment_created_at": "2026-09-26T16:12:25Z",
-      "comment_updated_at": "2026-09-26T16:12:25Z",
-      "comment_body_sha256": "ecfb0424463b6ca05138278934aad0d8c90aed20382e6889f706bf4e0adbe6ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158986,
-      "author": "ceckert",
-      "author_id": 779559,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T16:07:10.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-catalog-generation-retention",
-        "head_sha": "deca2183ccdb8d5e506d801bbf0ce483de1021b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158986:5847663128:2026-10-02T16:05:57Z:clawsweeper_needs_human",
       "comment_id": "5847663128",
@@ -32761,6 +32714,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-empty-token-history",
         "head_sha": "39c8e9bb18c8d735422ced70ffe56d6f54d8f9ca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163779:5961410880:2026-10-02T21:01:17Z:clawsweeper_needs_human",
+      "comment_id": "5961410880",
+      "comment_version_key": "5961410880:2026-10-02T21:01:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163779#issuecomment-5961410880",
+      "comment_created_at": "2026-10-02T21:01:17Z",
+      "comment_updated_at": "2026-10-02T21:01:17Z",
+      "comment_body_sha256": "abac66cfaf5e9f5fc76a5b0c74863a81cb6daac1441be669a036bf11a506a662",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163779,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed transcript redactor is exercised by synthetic message regressions and SQLite append/readback tests, but no real setup demonstrates... (sha=92246211ed678e6921d896a70dca6541e2a6ff2e)",
+      "expected_head_sha": "92246211ed678e6921d896a70dca6541e2a6ff2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T21:02:11.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/responses-dotted-ciphertext",
+        "head_sha": "92246211ed678e6921d896a70dca6541e2a6ff2e",
         "cluster_id": null,
         "job_path": null
       }
