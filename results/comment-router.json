@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T10:23:17.658Z",
+  "updated_at": "2026-10-02T10:23:33.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136554:5515422483:2026-10-02T04:40:03Z:clawsweeper_auto_repair",
-      "comment_id": "5515422483",
-      "comment_version_key": "5515422483:2026-10-02T04:40:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136554#issuecomment-5515422483",
-      "comment_created_at": "2026-09-02T19:49:29Z",
-      "comment_updated_at": "2026-10-02T04:40:03Z",
-      "comment_body_sha256": "c76397d35fc17a1761910020a3d8aa41881647830a8696210e5cbf0dab3aea9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a88961f303651993e4267c57c47f0dc8f14b39d0)",
-      "expected_head_sha": "a88961f303651993e4267c57c47f0dc8f14b39d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T04:41:13.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-timeout-disposition",
-        "head_sha": "a88961f303651993e4267c57c47f0dc8f14b39d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136554:5517061182:2026-09-02T22:03:17Z:re_review",
       "comment_id": "5517061182",
@@ -33598,6 +33565,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1600:5950267026:2026-10-02T10:22:36Z:re_review",
+      "comment_id": "5950267026",
+      "comment_version_key": "5950267026:2026-10-02T10:22:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1600#issuecomment-5950267026",
+      "comment_created_at": "2026-10-02T10:22:36Z",
+      "comment_updated_at": "2026-10-02T10:22:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1600,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T10:23:29.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/download-store-ready-msix-from-github-actions",
+        "head_sha": "252910ce43a1b825c73877717d778e21463063a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
