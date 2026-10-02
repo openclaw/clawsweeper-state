@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T05:16:32.179Z",
+  "updated_at": "2026-10-02T05:17:28.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162247:5943283778:2026-10-02T00:28:35Z:re_review",
-      "comment_id": "5943283778",
-      "comment_version_key": "5943283778:2026-10-02T00:28:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162247#issuecomment-5943283778",
-      "comment_created_at": "2026-10-02T00:28:35Z",
-      "comment_updated_at": "2026-10-02T00:28:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162247,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T00:29:19.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/android-proxy-login-162240",
-        "head_sha": "93d9736b65f6c4cc10181151b00e618fe89b4785",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:878:5943284343:2026-10-02T00:28:38Z:clawsweeper_needs_human",
       "comment_id": "5943284343",
@@ -33471,6 +33424,39 @@
         "kind": "pull_request",
         "branch": "release/0.70.0-source-record",
         "head_sha": "05e026b2b5408fe3e631aafc1af3a7b5730d5060",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139979:5558365845:2026-10-02T05:15:52Z:clawsweeper_needs_human",
+      "comment_id": "5558365845",
+      "comment_version_key": "5558365845:2026-10-02T05:15:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139979#issuecomment-5558365845",
+      "comment_created_at": "2026-09-06T09:35:41Z",
+      "comment_updated_at": "2026-10-02T05:15:52Z",
+      "comment_body_sha256": "5b663f3a31ef572faea8cd2238cf8fe5c409f06c7900ecbf805e57cf50fd20ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139979,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed policy resolver is covered with substituted provider objects and mocked loader invalidation... (sha=2ba15a102114de6ce088a1f6037692a834b35ad6)",
+      "expected_head_sha": "2ba15a102114de6ce088a1f6037692a834b35ad6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T05:17:28.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-policy-owner-freshness",
+        "head_sha": "2ba15a102114de6ce088a1f6037692a834b35ad6",
         "cluster_id": null,
         "job_path": null
       }
