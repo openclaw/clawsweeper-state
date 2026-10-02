@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:34:52.963Z",
+  "updated_at": "2026-10-02T04:34:56.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162828:5943004326:2026-10-02T00:01:46Z:re_review",
-      "comment_id": "5943004326",
-      "comment_version_key": "5943004326:2026-10-02T00:01:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162828#issuecomment-5943004326",
-      "comment_created_at": "2026-10-02T00:01:46Z",
-      "comment_updated_at": "2026-10-02T00:01:46Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162828,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T00:02:34.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-device-code-deadline-monotonic-096",
-        "head_sha": "c7405101f750401f0e7648734a4649c0ead3682b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163074:5943004918:2026-10-02T00:01:49Z:re_review",
       "comment_id": "5943004918",
@@ -33323,6 +33276,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-137871-imap-delivery-route",
         "head_sha": "77c1c9642c99d767cb176b174ae04e3702f08ecd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:260:5902814155:2026-10-02T04:34:00Z:clawsweeper_needs_human",
+      "comment_id": "5902814155",
+      "comment_version_key": "5902814155:2026-10-02T04:34:00Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/260#issuecomment-5902814155",
+      "comment_created_at": "2026-09-30T02:22:32Z",
+      "comment_updated_at": "2026-10-02T04:34:00Z",
+      "comment_body_sha256": "5de5c1e58d2737dc20bb9e295092143c0af3ece9fce8dd037c08607479d9caa3",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Honor the recorded hold until https://github.com/openclaw/slacrawl/pull/261 lands, then let maintainers close this PR with the landed commit link. (sha=bbde0a7362c9dcb5080a951952f8a9329b8c3cd3)",
+      "expected_head_sha": "bbde0a7362c9dcb5080a951952f8a9329b8c3cd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T04:34:56.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "build/slacrawl-crawlkit-0.16.6",
+        "head_sha": "bbde0a7362c9dcb5080a951952f8a9329b8c3cd3",
         "cluster_id": null,
         "job_path": null
       }
