@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134644"
 mode: "autonomous"
-run_id: "36990426900"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36990426900"
-head_sha: "55b5c2eaa5b49db47e374239e45a60ef7df39f1b"
+run_id: "36995891470"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36995891470"
+head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-02T10:10:43.915Z"
+published_at: "2026-10-02T11:08:13.178Z"
 canonical: "https://github.com/openclaw/openclaw/issues/134644"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/134644"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36990426900](https://github.com/openclaw/clawsweeper/actions/runs/36990426900)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36995891470](https://github.com/openclaw/clawsweeper/actions/runs/36995891470)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/134644
 
 ## Summary
 
-Source inspection confirms the native-stream ownership gap on preflight main 0614328f729e36addaaa02d72d114054ca6c9a27. Implementation and failing registered-ingress proof are blocked by the read-only host. Open-PR coordination could not complete because GitHub CLI lacks authentication and the API request failed DNS resolution. No files or GitHub state changed.
+Current-main source supports the reported native-stream ownership defect. Implementation is blocked by the read-only host; the required failing registered-ingress regression and local validation remain unrun. Open-PR coordination also remains pending because the bounded GitHub lookup requires unavailable credentials. A scoped executor artifact is provided.
 
 ## Impact
 
@@ -67,11 +67,11 @@ Source inspection confirms the native-stream ownership gap on preflight main 061
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134644 | fix_needed | planned | canonical | A narrow Slack delivery-owner repair remains warranted; implementation must begin with contributor coordination and a failing regression on current main. |
-| #48003 | keep_related | planned | related | Failed injection differs from incorrect Slack placement after successful injection. |
-| #112697 | keep_related | planned | related | Independent-turn FIFO delivery is outside this native-stream ownership repair. |
-| #135300 | keep_closed | skipped | related | Historical reference and contributor-credit source only; it is not a landed fix or an open automation target. |
-| cluster:issue-openclaw-openclaw-134644 | build_fix_artifact | planned | canonical | The fix plan is reviewable, but implementation is blocked by the read-only environment and outstanding contributor coordination. |
+| #134644 | fix_needed | planned | canonical | The canonical issue describes successful steering with stale Slack outbound ownership. Implement only after coordinating existing work and proving the defect through registered ingress on latest main. |
+| #48003 | keep_related | planned | related | Injection admission failures are distinct from output placement after successful steering. |
+| #112697 | keep_related | planned | related | Independent-turn final ordering remains outside this active-turn stream ownership repair. |
+| #135300 | keep_closed | skipped | related | Use as credited historical reference only; do not reopen, close again, or treat it as a landed fix. |
+| cluster:issue-openclaw-openclaw-134644 | build_fix_artifact | planned |  | Hand off the narrow repair to a writable executor. Recheck existing PRs and coordinate Olli0103's claim before creating competing work; reproduce before editing. |
 
 ## Needs Human
 
