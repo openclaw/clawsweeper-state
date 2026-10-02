@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1145"
 mode: "autonomous"
-run_id: "37073544682"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37073544682"
+run_id: "37078848284"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37078848284"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
-result_status: "needs_human"
-published_at: "2026-10-02T22:41:14.533Z"
+result_status: "planned"
+published_at: "2026-10-02T23:45:50.726Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1145"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1145"
 canonical_pr: "https://github.com/openclaw/openclaw-windows-node/pull/1426"
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-windows-node-1145
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37073544682](https://github.com/openclaw/clawsweeper/actions/runs/37073544682)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37078848284](https://github.com/openclaw/clawsweeper/actions/runs/37078848284)
 
 Workflow conclusion: success
 
-Worker result: needs_human
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1145
 
 ## Summary
 
-No new PR proposed. Current main already contains the targeted Markdown list wrapping repair and native regression coverage. Verification of the original messages on current Windows builds remains unresolved.
+No new PR warranted: supplied current main already contains the targeted list-wrapping repair and regression coverage. Original-message runtime confirmation remains unverified. No code or GitHub changes made.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No new PR proposed. Current main already contains the targeted Markdown list wra
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ No new PR proposed. Current main already contains the targeted Markdown list wra
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1145 | keep_canonical | planned | canonical | The reported mechanism already has a focused implementation on current main. Another patch lacks an established remaining defect; keep the issue open for original-message verification. |
-| #1426 | keep_closed | skipped | related | Already merged historical evidence. Preserve @karkarl's implementation credit; no mutation is appropriate. |
+| #1145 | keep_canonical | planned | canonical | The reported list-measurement mechanism already has a focused implementation. Keep the issue open for original-message confirmation rather than create a speculative second patch; closure is prohibited by this job. |
+| #1426 | keep_closed | skipped | related | Historical merged contributor work supplies the existing repair. Preserve its attribution; no action on the closed PR. |
 
 ## Needs Human
 
-- Verify the original numbered, bulleted, and inline-code messages from #1145 on current main in a native Windows Release build at the original narrow width. If clipping remains, provide the exact message and visible reproduction so a distinct remaining defect can receive a focused implementation.
+- none
