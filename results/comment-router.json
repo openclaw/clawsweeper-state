@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T13:38:59.608Z",
+  "updated_at": "2026-10-02T13:39:40.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162473:5927377031:2026-10-01T08:05:49Z:re_review",
-      "comment_id": "5927377031",
-      "comment_version_key": "5927377031:2026-10-01T08:05:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162473#issuecomment-5927377031",
-      "comment_created_at": "2026-10-01T08:05:49Z",
-      "comment_updated_at": "2026-10-01T08:05:49Z",
-      "comment_body_sha256": "6837d59357af8ce11fcaac072383f48d33421eeabc623cb1d0cc2ba6239fda1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162473,
-      "author": "chuanleiguo",
-      "author_id": 5415054,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T08:33:51.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-foreign-live-input",
-        "head_sha": "36468d347f852ac83fdddad4e4fd989d8a2c129e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162473:5926006165:2026-10-02T08:32:50Z:clawsweeper_needs_human",
       "comment_id": "5926006165",
@@ -33428,6 +33381,39 @@
         "kind": "pull_request",
         "branch": "openclaw/sentry-claw-855-invalid-utf8",
         "head_sha": "1ad5d8f403d8e011b48a5b56683a2b1297040ddc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161543:5903124335:2026-10-02T13:38:37Z:clawsweeper_needs_human",
+      "comment_id": "5903124335",
+      "comment_version_key": "5903124335:2026-10-02T13:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161543#issuecomment-5903124335",
+      "comment_created_at": "2026-09-30T02:52:36Z",
+      "comment_updated_at": "2026-10-02T13:38:37Z",
+      "comment_body_sha256": "91eeb2cd5455171ff02a72e281b207ca9cf74786bc82d4f5eebcd2ea2b2798ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161543,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The previously stopped macOS missing-tree qualification and short-interval idle-resource observations remain pending on the candidate with fs-safe 0.23.0; consumer recovery and resour... (sha=577906d9a0379c04f6be8e1d4dce516168ee06c5)",
+      "expected_head_sha": "577906d9a0379c04f6be8e1d4dce516168ee06c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T13:39:40.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-watch-completion-20260929",
+        "head_sha": "577906d9a0379c04f6be8e1d4dce516168ee06c5",
         "cluster_id": null,
         "job_path": null
       }
