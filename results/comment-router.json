@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T18:46:15.974Z",
+  "updated_at": "2026-10-02T18:46:35.007Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119256:5219868177:2026-08-07T17:01:54Z:re_review",
-      "comment_id": "5219868177",
-      "comment_version_key": "5219868177:2026-08-07T17:01:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5219868177",
-      "comment_created_at": "2026-08-07T17:01:54Z",
-      "comment_updated_at": "2026-08-07T17:01:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "pscoutosoares",
-      "author_id": 15336146,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T13:47:22.374Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119256:5227620902:2026-08-08T18:57:53Z:re_review",
       "comment_id": "5227620902",
@@ -33250,6 +33223,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163693:5958427853:2026-10-02T18:45:33Z:clawsweeper_needs_human",
+      "comment_id": "5958427853",
+      "comment_version_key": "5958427853:2026-10-02T18:45:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163693#issuecomment-5958427853",
+      "comment_created_at": "2026-10-02T18:09:50Z",
+      "comment_updated_at": "2026-10-02T18:45:33Z",
+      "comment_body_sha256": "db76e4be5ebba1544c6796b3bc840260bb5131f0adecb77af76840c6744cb952",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163693,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Maintainers must approve the new shared-default setup surface and its operator-visible consequence: changing embedding identity can pause existing vector search until the user explici... (sha=8d4329e3bdbd50581da3bc6eb291f7e3c710510f)",
+      "expected_head_sha": "8d4329e3bdbd50581da3bc6eb291f7e3c710510f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T18:46:35.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/optional-memory-embedding-setup",
+        "head_sha": "8d4329e3bdbd50581da3bc6eb291f7e3c710510f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
