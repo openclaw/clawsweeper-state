@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:45:47.764Z",
+  "updated_at": "2026-10-02T23:46:04.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163594:5958716123:2026-10-02T18:26:07Z:re_review",
-      "comment_id": "5958716123",
-      "comment_version_key": "5958716123:2026-10-02T18:26:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163594#issuecomment-5958716123",
-      "comment_created_at": "2026-10-02T18:26:07Z",
-      "comment_updated_at": "2026-10-02T18:26:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163594,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T18:27:07.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/ledger",
-        "head_sha": "efdd370171149b9fc4faed3f1b480d8972c8b320",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149167:5958746806:2026-10-02T18:28:00Z:re_review",
       "comment_id": "5958746806",
@@ -33405,6 +33358,39 @@
         "kind": "pull_request",
         "branch": "steipete/driverless-audio-probes-20260828",
         "head_sha": "3b572e3afcffbeababb7627da8465879e91b69aa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:150:5954942639:2026-10-02T23:45:08Z:clawsweeper_auto_repair",
+      "comment_id": "5954942639",
+      "comment_version_key": "5954942639:2026-10-02T23:45:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/150#issuecomment-5954942639",
+      "comment_created_at": "2026-10-02T14:46:51Z",
+      "comment_updated_at": "2026-10-02T23:45:08Z",
+      "comment_body_sha256": "c4ee95e8cbcec98b955b0889acbaa19d19d9b5b6f04a8fe29ca9593891d78837",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=453a660c852e29b659c5d8a3044472da67285344)",
+      "expected_head_sha": "453a660c852e29b659c5d8a3044472da67285344",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T23:46:04.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-version-override",
+        "head_sha": "453a660c852e29b659c5d8a3044472da67285344",
         "cluster_id": null,
         "job_path": null
       }
