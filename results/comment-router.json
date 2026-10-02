@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T16:25:32.191Z",
+  "updated_at": "2026-10-02T16:26:19.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5941126574:2026-10-01T21:36:03Z:re_review",
-      "comment_id": "5941126574",
-      "comment_version_key": "5941126574:2026-10-01T21:36:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5941126574",
-      "comment_created_at": "2026-10-01T21:36:03Z",
-      "comment_updated_at": "2026-10-01T21:36:03Z",
-      "comment_body_sha256": "557a917d0537bd3b3dbb1ab0929a6dd7f0dec21aeeab012e6721fc8ea5d29598",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T11:37:02.775Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163369:5947684653:2026-10-02T11:36:24Z:clawsweeper_needs_human",
       "comment_id": "5947684653",
@@ -33327,6 +33300,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154904:5956643218:2026-10-02T16:25:18Z:re_review",
+      "comment_id": "5956643218",
+      "comment_version_key": "5956643218:2026-10-02T16:25:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5956643218",
+      "comment_created_at": "2026-10-02T16:25:18Z",
+      "comment_updated_at": "2026-10-02T16:25:18Z",
+      "comment_body_sha256": "4464469729fb06967a4d501b2e0453f1f119ed11e6c04f32926ccd0579f14118",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154904,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rev8 two p2 fixed (canonical leaf-event_id gate; nested-tx test options). head 1f380bea3d2. 103 files/1293 tests green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T16:26:18.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-anchor-dedup",
+        "head_sha": "1f380bea3d234e6fbe2550994b607182cba173d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
