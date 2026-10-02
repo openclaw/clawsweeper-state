@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T10:14:58.103Z",
+  "updated_at": "2026-10-02T10:19:54.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162612:5929422989:2026-10-02T04:38:40Z:clawsweeper_needs_human",
-      "comment_id": "5929422989",
-      "comment_version_key": "5929422989:2026-10-02T04:38:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162612#issuecomment-5929422989",
-      "comment_created_at": "2026-10-01T10:21:29Z",
-      "comment_updated_at": "2026-10-02T04:38:40Z",
-      "comment_body_sha256": "fedf3f93df17ebb23dfc7a639149151c8ae0be6d875c1704becb82c37eb596d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162612,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing legacy configurations now require Doctor before startup. The integrated candidate still lacks verified upgrade coverage preserving config/include backups, historical cron/ses... (sha=dcc57cf5a6fdd11481dde68afc6c69e9e57de2fe)",
-      "expected_head_sha": "dcc57cf5a6fdd11481dde68afc6c69e9e57de2fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T04:39:57.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/lg-config-roster",
-        "head_sha": "dcc57cf5a6fdd11481dde68afc6c69e9e57de2fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161440:5901287101:2026-10-02T04:37:44Z:clawsweeper_needs_human",
       "comment_id": "5901287101",
@@ -33572,6 +33539,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142954:5950200297:2026-10-02T10:18:53Z:re_review",
+      "comment_id": "5950200297",
+      "comment_version_key": "5950200297:2026-10-02T10:18:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142954#issuecomment-5950200297",
+      "comment_created_at": "2026-10-02T10:18:53Z",
+      "comment_updated_at": "2026-10-02T10:18:53Z",
+      "comment_body_sha256": "a16280ff60e9642ae6f2bc6d9dcafdd6e0537d898d63507947db804b4ddd2dd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142954,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T10:19:53.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat-wear-gateway-client-20260909",
+        "head_sha": "343fe8ad332d0191790ef33691639461ff91881a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
