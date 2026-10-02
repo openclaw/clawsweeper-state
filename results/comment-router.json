@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T02:27:08.900Z",
+  "updated_at": "2026-10-02T02:27:37.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163019:5941440353:2026-10-01T22:05:31Z:clawsweeper_auto_repair",
-      "comment_id": "5941440353",
-      "comment_version_key": "5941440353:2026-10-01T22:05:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163019#issuecomment-5941440353",
-      "comment_created_at": "2026-10-01T21:54:59Z",
-      "comment_updated_at": "2026-10-01T22:05:31Z",
-      "comment_body_sha256": "bcc578b4cb36c1e6e7a778554a1b5236bd97d7e58a5ab70fd9f4b6d5b66bdc45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163019,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f39b5ba18de67c459f55b263968e73fefb3ad772)",
-      "expected_head_sha": "f39b5ba18de67c459f55b263968e73fefb3ad772",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T22:06:34.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-legacy-postpublish-ownership",
-        "head_sha": "f39b5ba18de67c459f55b263968e73fefb3ad772",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162859:5936475363:2026-10-01T17:06:49Z:re_review",
       "comment_id": "5936475363",
@@ -33768,6 +33735,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162146:5944465008:2026-10-02T02:26:58Z:re_review",
+      "comment_id": "5944465008",
+      "comment_version_key": "5944465008:2026-10-02T02:26:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162146#issuecomment-5944465008",
+      "comment_created_at": "2026-10-02T02:26:49Z",
+      "comment_updated_at": "2026-10-02T02:26:58Z",
+      "comment_body_sha256": "e68af9901cc60a85ca33916541e0183b1e2b24d0bd6c7bcde56bee4d7077fc17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162146,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T02:27:36.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/162129-update-report-cap-priority",
+        "head_sha": "89941d11b881502848ec406a8e2de212eed41680",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
