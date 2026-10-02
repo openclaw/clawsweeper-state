@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T02:59:54.443Z",
+  "updated_at": "2026-10-02T03:00:18.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155591:5941905189:2026-10-01T22:26:02Z:re_review",
-      "comment_id": "5941905189",
-      "comment_version_key": "5941905189:2026-10-01T22:26:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155591#issuecomment-5941905189",
-      "comment_created_at": "2026-10-01T22:26:02Z",
-      "comment_updated_at": "2026-10-01T22:26:02Z",
-      "comment_body_sha256": "4a6ee24b78f955ac5f2cee1bd1913403b012e9d4352a7caf8ade5b358a842d7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155591,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T22:27:26.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fork-keeps-claude-cli-session",
-        "head_sha": "989056f18ab145cc6a4769647104b4516d700671",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3861:5915140066:2026-10-01T22:26:11Z:clawsweeper_needs_human",
       "comment_id": "5915140066",
@@ -33928,6 +33881,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T02:59:54.443Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2656:5943895349:2026-10-02T02:59:25Z:clawsweeper_needs_human",
+      "comment_id": "5943895349",
+      "comment_version_key": "5943895349:2026-10-02T02:59:25Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2656#issuecomment-5943895349",
+      "comment_created_at": "2026-10-02T01:30:02Z",
+      "comment_updated_at": "2026-10-02T02:59:25Z",
+      "comment_body_sha256": "7c248777bf723c510e52d755b8f9d409f188c67a0bf3ea78aecd42e0ad12d541",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2656,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=17a7e988d4cdb822459b0d8de35fdd56d6755cc1)",
+      "expected_head_sha": "17a7e988d4cdb822459b0d8de35fdd56d6755cc1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T03:00:18.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-checkpoint-killed-rollback-test",
+        "head_sha": "17a7e988d4cdb822459b0d8de35fdd56d6755cc1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
