@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T05:50:21.595Z",
+  "updated_at": "2026-10-02T05:50:37.047Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3894:5943417087:2026-10-02T00:42:02Z:re_review",
-      "comment_id": "5943417087",
-      "comment_version_key": "5943417087:2026-10-02T00:42:02Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3894#issuecomment-5943417087",
-      "comment_created_at": "2026-10-02T00:42:02Z",
-      "comment_updated_at": "2026-10-02T00:42:02Z",
-      "comment_body_sha256": "f4b0205a005c40ef28a44c9196f8a5899adcc0771b17377e8fd69229222d4db0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3894,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T00:42:56.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/managed-mcp-icon-preview",
-        "head_sha": "82828be4b55f076adc3ef03047a778fc8b3f0094",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3893:5943416885:2026-10-02T00:42:01Z:re_review",
       "comment_id": "5943416885",
@@ -33503,6 +33456,39 @@
         "kind": "pull_request",
         "branch": "fix/staging-root-realpath",
         "head_sha": "39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163290:5946341875:2026-10-02T05:49:43Z:clawsweeper_needs_human",
+      "comment_id": "5946341875",
+      "comment_version_key": "5946341875:2026-10-02T05:49:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163290#issuecomment-5946341875",
+      "comment_created_at": "2026-10-02T05:49:43Z",
+      "comment_updated_at": "2026-10-02T05:49:43Z",
+      "comment_body_sha256": "9051444e5814ea49b7cad93df1bb11bbe483e4568d1bc8fdcf1b7b7ca9868e93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163290,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=e02c7ad3bce203f60472d9927c07232439390a35)",
+      "expected_head_sha": "e02c7ad3bce203f60472d9927c07232439390a35",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T05:50:37.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-ci-fleet-cache-lifecycle",
+        "head_sha": "e02c7ad3bce203f60472d9927c07232439390a35",
         "cluster_id": null,
         "job_path": null
       }
