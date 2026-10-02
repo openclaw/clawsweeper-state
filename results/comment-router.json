@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T13:11:34.335Z",
+  "updated_at": "2026-10-02T13:11:48.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163360:5947969041:2026-10-02T08:13:04Z:re_review",
-      "comment_id": "5947969041",
-      "comment_version_key": "5947969041:2026-10-02T08:13:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163360#issuecomment-5947969041",
-      "comment_created_at": "2026-10-02T08:13:04Z",
-      "comment_updated_at": "2026-10-02T08:13:04Z",
-      "comment_body_sha256": "13b044c8972cfbefaea6fdf84e506ec296a516a35a415b565e049ac4281c5c77",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163360,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T08:14:01.465Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-v4-product-plugins-rest",
-        "head_sha": "e18a25be6a894dbd3ffe0613216a8bd665d74ce1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163331:5947030893:2026-10-02T08:13:18Z:clawsweeper_needs_human",
       "comment_id": "5947030893",
@@ -33394,6 +33347,39 @@
         "kind": "pull_request",
         "branch": "fix/overflow-recovery-noop-budget",
         "head_sha": "fd05ee2ffa81b3800b4ac3f2ebae97a3cc81db86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163535:5952994764:2026-10-02T13:10:48Z:clawsweeper_needs_human",
+      "comment_id": "5952994764",
+      "comment_version_key": "5952994764:2026-10-02T13:10:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163535#issuecomment-5952994764",
+      "comment_created_at": "2026-10-02T13:03:58Z",
+      "comment_updated_at": "2026-10-02T13:10:48Z",
+      "comment_body_sha256": "582226c4d5f5f10e52d4c845a37d771ce762e0828915bcad93d2797d27a04db8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing legacy-only private-server setups lose access until Doctor completes migration; the published 2026.9.7 updater path, deferred-plugin recovery, and preservation of original ba... (sha=69eadd88f95d4687324caa1c34535d5445c2a981)",
+      "expected_head_sha": "69eadd88f95d4687324caa1c34535d5445c2a981",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T13:11:48.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-config-channel-network",
+        "head_sha": "69eadd88f95d4687324caa1c34535d5445c2a981",
         "cluster_id": null,
         "job_path": null
       }
