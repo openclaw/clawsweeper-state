@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-02T05:55:41.596Z",
+  "updated_at": "2026-10-02T05:52:47.843Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1590:5943433625:2026-10-02T00:43:45Z:clawsweeper_needs_human",
+      "comment_id": "5943433625",
+      "comment_version_key": "5943433625:2026-10-02T00:43:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1590#issuecomment-5943433625",
+      "comment_created_at": "2026-10-02T00:43:45Z",
+      "comment_updated_at": "2026-10-02T00:43:45Z",
+      "comment_body_sha256": "6eca789402393d6ac74fabcf4aec1687e3cf126a61a04687cd9a581a8830c1b0",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1590,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject redirected migration paths before resetting records (P2)** - If store-migration or an ancestor is a directory junction, Get-StaleMigrationRecords enumerates its target and this call deletes matching files...; Review finding: [P2] Reject redirected migration paths before resetting records — scripts/Enable-StoreMigrationTest.ps1:240-242 - [medium] Reset follows redirected directory ances... (sha=35c60685e5ea38587ebf94a1421db1f6ed03127d)",
+      "expected_head_sha": "35c60685e5ea38587ebf94a1421db1f6ed03127d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T00:44:40.744Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/natalie-aguinaldo/store-migration-test-script",
+        "head_sha": "0be5e0dd22a496fd20f2fd3c8e8f269126b1203c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1232:5942786612:2026-10-02T00:45:23Z:re_review",
       "comment_id": "5942786612",
@@ -33451,53 +33484,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163246:5946385609:2026-10-02T05:54:38Z:re_review",
-      "comment_id": "5946385609",
-      "comment_version_key": "5946385609:2026-10-02T05:54:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163246#issuecomment-5946385609",
-      "comment_created_at": "2026-10-02T05:54:38Z",
-      "comment_updated_at": "2026-10-02T05:54:38Z",
-      "comment_body_sha256": "0279d806ea7c8f3148837844a464aa188d830473609010912d4abfc9230d8a4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163246,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T05:55:40.095Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/pr-no-fail-fast-label",
-        "head_sha": "73683f7fe89f8fae236f1a3f8fd1fc383710dec7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
