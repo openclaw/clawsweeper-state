@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T07:06:45.334Z",
+  "updated_at": "2026-10-02T07:06:56.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128848:5887884681:2026-09-29T09:56:06Z:re_review",
-      "comment_id": "5887884681",
-      "comment_version_key": "5887884681:2026-09-29T09:56:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128848#issuecomment-5887884681",
-      "comment_created_at": "2026-09-29T09:56:06Z",
-      "comment_updated_at": "2026-09-29T09:56:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128848,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T02:00:54.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-idle-ttl",
-        "head_sha": "c7c4836946430db247ceb70fcccc07aa00654a16",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128848:5425958354:2026-08-26T13:23:55Z:re_review",
       "comment_id": "5425958354",
@@ -33223,6 +33176,39 @@
         "kind": "pull_request",
         "branch": "fix/restricted-session-experience",
         "head_sha": "3aec33051c5e449da006483a725d04362db50e5d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162920:5938396647:2026-10-02T07:05:53Z:clawsweeper_needs_human",
+      "comment_id": "5938396647",
+      "comment_version_key": "5938396647:2026-10-02T07:05:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162920#issuecomment-5938396647",
+      "comment_created_at": "2026-10-01T18:56:07Z",
+      "comment_updated_at": "2026-10-02T07:05:53Z",
+      "comment_body_sha256": "070aa89ca9828f6d44d6bde207b458f5d1fc92d37c8eb890a347fe71dd8f7c72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legacy or restored ACP state now prevents session-store startup until offline Doctor succeeds; automatic repair by the published 2026.9.7 updater, preservation of resume identities an... (sha=24af1eeee0f445ea8c365f137c3db9afcd51fe72)",
+      "expected_head_sha": "24af1eeee0f445ea8c365f137c3db9afcd51fe72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T07:06:56.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-doctor-canonical-metadata",
+        "head_sha": "24af1eeee0f445ea8c365f137c3db9afcd51fe72",
         "cluster_id": null,
         "job_path": null
       }
