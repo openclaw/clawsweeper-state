@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163615",
+  "mode": "autonomous",
+  "run_id": "37032219880",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37032219880",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163615.md",
+  "published_at": "2026-10-02T16:52:19.981Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163615",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163615",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the array-wrapper parsing gap on preflight main d0f7dcca06379cb1155666175de3a769ceffe61b. Implementation and runtime reproduction are blocked by the read-only filesystem and absent dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#163615",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163615",
+      "candidate_fix": null,
+      "reason": "The narrow parser repair remains justified by current source and hydrated evidence. Runtime reproduction, implementation, and validation require the writable executor environment."
+    },
+    {
+      "target": "#163446",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Unrelated historical context; no action belongs to this repair."
+    },
+    {
+      "target": "#163447",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163615",
+      "candidate_fix": null,
+      "reason": "Related historical defect with a different parsing trigger."
+    },
+    {
+      "target": "#163448",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163615",
+      "candidate_fix": null,
+      "reason": "Preserve the merged contributor work as context; it does not resolve the array-wrapper residual."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163615",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163615",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Applying it locally is blocked by host restrictions; the executor must establish failing boundary regressions before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
