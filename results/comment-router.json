@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:50:02.152Z",
+  "updated_at": "2026-10-02T20:50:21.502Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163426:5949243550:2026-10-02T15:56:11Z:clawsweeper_needs_human",
-      "comment_id": "5949243550",
-      "comment_version_key": "5949243550:2026-10-02T15:56:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163426#issuecomment-5949243550",
-      "comment_created_at": "2026-10-02T09:31:20Z",
-      "comment_updated_at": "2026-10-02T15:56:11Z",
-      "comment_body_sha256": "64d3f3535589785781f103cb79998789c2eaca31c3f3d62d9e00ec78c22b6dd3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163426,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repaired usage fixture has not yet demonstrated the required repeated standalone, original-order shard, and sibling reliability coverage for the historical shared-state cleanup fa... (sha=84574fcad888d502ec42d550db22eafbf157d50d)",
-      "expected_head_sha": "84574fcad888d502ec42d550db22eafbf157d50d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T15:57:06.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/steering-local-lint",
-        "head_sha": "84574fcad888d502ec42d550db22eafbf157d50d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154904:5762082271:2026-10-02T15:56:03Z:clawsweeper_auto_repair",
       "comment_id": "5762082271",
@@ -32783,6 +32750,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163496:5961253472:2026-10-02T20:49:25Z:re_review",
+      "comment_id": "5961253472",
+      "comment_version_key": "5961253472:2026-10-02T20:49:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163496#issuecomment-5961253472",
+      "comment_created_at": "2026-10-02T20:49:25Z",
+      "comment_updated_at": "2026-10-02T20:49:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163496,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T20:50:20.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/wsstate",
+        "head_sha": "88d4a106e072c597f5fd6153f77d07bee1e1b9c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
