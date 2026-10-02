@@ -1,0 +1,52 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "plan",
+  "run_id": "37069553711",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37069553711",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-02T21:57:49.466Z",
+  "canonical": "#531",
+  "canonical_issue": "#531",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported defect in the checkout matching preflight main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Plan a narrow expansion-root fix for #531; retain #532 as separate performance work. No files or GitHub state changed, and no runtime validation was performed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The existing default-ignore check can reject files because of ancestors above the requested expansion root. This is a bounded selection bug with an explicit implementation and validation scope."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Same file-selection area, but a different root cause and independent remaining work."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
