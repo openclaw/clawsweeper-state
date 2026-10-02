@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:08:04.708Z",
+  "updated_at": "2026-10-02T06:08:12.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162314:5924030600:2026-10-01T03:18:06Z:re_review",
-      "comment_id": "5924030600",
-      "comment_version_key": "5924030600:2026-10-01T03:18:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162314#issuecomment-5924030600",
-      "comment_created_at": "2026-10-01T03:18:06Z",
-      "comment_updated_at": "2026-10-01T03:18:06Z",
-      "comment_body_sha256": "f487ba9d217b319d51c34b97b5d59342972518572b992e5403b7fde3f124bbdc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162314,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T01:06:49.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/claws-minimal-control-ui",
-        "head_sha": "d87f0a7348bce0b5221062886705c54aa14ace8d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163074:5943659832:2026-10-02T01:06:01Z:re_review",
       "comment_id": "5943659832",
@@ -33313,6 +33266,39 @@
         "kind": "pull_request",
         "branch": "steipete/subagent-registry-row-owner",
         "head_sha": "d6c37eb44bbc8889f94f08af4b397a7cac59209e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155654:5774867202:2026-10-02T06:07:06Z:clawsweeper_needs_human",
+      "comment_id": "5774867202",
+      "comment_version_key": "5774867202:2026-10-02T06:07:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155654#issuecomment-5774867202",
+      "comment_created_at": "2026-09-22T10:24:38Z",
+      "comment_updated_at": "2026-10-02T06:07:06Z",
+      "comment_body_sha256": "4dede1b5755f8bf2c053b36df2bc8e3980ddd1065dfd6bba5dde1562806b6213",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155654,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain the independent openclaw/openclaw-secops approval required for the shared guard path. (sha=c12feeb35b34609f1df2c607a57955eb92d98e2e)",
+      "expected_head_sha": "c12feeb35b34609f1df2c607a57955eb92d98e2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T06:08:12.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/security-review-recovery-diagnostics-20260922",
+        "head_sha": "c12feeb35b34609f1df2c607a57955eb92d98e2e",
         "cluster_id": null,
         "job_path": null
       }
