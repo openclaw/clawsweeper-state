@@ -1,6 +1,6 @@
 ---
 repo: openclaw/openclaw
-cluster_id: automerge-openclaw-openclaw-163838
+cluster_id: automerge-openclaw-openclaw-163836
 mode: autonomous
 repair_mode: autofix
 job_intent: automerge_pr
@@ -16,11 +16,11 @@ require_human_for:
   - close
   - merge
 canonical:
-  - #163838
+  - #163836
 candidates:
-  - #163838
+  - #163836
 cluster_refs:
-  - #163838
+  - #163836
 allow_instant_close: false
 allow_fix_pr: true
 allow_merge: false
@@ -29,27 +29,27 @@ allow_post_merge_close: false
 require_fix_before_close: true
 security_policy: central_security_only
 security_sensitive: false
-target_branch: clawsweeper/automerge-openclaw-openclaw-163838
+target_branch: clawsweeper/automerge-openclaw-openclaw-163836
 source: pr_automerge
 requested_by: "Patrick-Erichsen"
 requested_by_id: "20157849"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/163838#issuecomment-5962727760"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/163836#issuecomment-5962701728"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
-Maintainer opted #163838 into ClawSweeper autofix.
+Maintainer opted #163836 into ClawSweeper autofix.
 
 Requested by: Patrick-Erichsen
-Request comment: https://github.com/openclaw/openclaw/pull/163838#issuecomment-5962727760
+Request comment: https://github.com/openclaw/openclaw/pull/163836#issuecomment-5962701728
 
 
-Source PR: https://github.com/openclaw/openclaw/pull/163838
-Title: fix: restore MIT license detection
+Source PR: https://github.com/openclaw/openclaw/pull/163836
+Title: fix: plugins reload while searching and leave incomplete loading states
 
 ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop:
 
-- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/openclaw/pull/163838"]` so the Codex edit pass can make this PR merge-ready.
+- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/openclaw/pull/163836"]` so the Codex edit pass can make this PR merge-ready.
 - The edit pass should rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context when required, run the relevant validation, and keep iterating until the branch is ready or an external blocker is proven.
 - If the PR branch cannot be safely updated, emit a narrow credited replacement only when the artifact can preserve the original contributor credit; otherwise return `needs_human`.
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
