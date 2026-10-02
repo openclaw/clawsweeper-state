@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T09:44:47.421Z",
+  "updated_at": "2026-10-02T09:45:57.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163234:5945510196:2026-10-02T04:17:17Z:re_review",
-      "comment_id": "5945510196",
-      "comment_version_key": "5945510196:2026-10-02T04:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163234#issuecomment-5945510196",
-      "comment_created_at": "2026-10-02T04:17:17Z",
-      "comment_updated_at": "2026-10-02T04:17:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163234,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T04:18:20.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/s19",
-        "head_sha": "b92e0c6f598d1faa3b8e2ebe35563c5e3b89aed3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161480:5937029612:2026-10-02T04:17:45Z:clawsweeper_needs_human",
       "comment_id": "5937029612",
@@ -33541,6 +33494,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163118:5943269641:2026-10-02T09:44:57Z:clawsweeper_needs_human",
+      "comment_id": "5943269641",
+      "comment_version_key": "5943269641:2026-10-02T09:44:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163118#issuecomment-5943269641",
+      "comment_created_at": "2026-10-02T00:27:09Z",
+      "comment_updated_at": "2026-10-02T09:44:57Z",
+      "comment_body_sha256": "ff4464b4b0659002c927e7ecb109e9fbb90e6619cc2019582932dbbe40e27cc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163118,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installations retaining calls.jsonl lose direct candidate import and must use the 2026.9.7 bridge. Published-updater evidence has not established canonical row/transcript preservation... (sha=bf6991c200306b63f3535c37c0e870bf2d1977bf)",
+      "expected_head_sha": "bf6991c200306b63f3535c37c0e870bf2d1977bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T09:45:57.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-runtime-voice-explicit-owner",
+        "head_sha": "bf6991c200306b63f3535c37c0e870bf2d1977bf",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
