@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:38:50.431Z",
+  "updated_at": "2026-10-02T01:41:00.761Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159234:5856179963:2026-09-27T13:13:58Z:re_review",
-      "comment_id": "5856179963",
-      "comment_version_key": "5856179963:2026-09-27T13:13:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159234#issuecomment-5856179963",
-      "comment_created_at": "2026-09-27T13:13:58Z",
-      "comment_updated_at": "2026-09-27T13:13:58Z",
-      "comment_body_sha256": "c0c84ba7ad62a308a09d5a4161821edcfa5e56936b4089859ad039930b85cf2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159234,
-      "author": "alexeysophia",
-      "author_id": 236049996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T21:27:57.001Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162866:5936909590:2026-10-01T21:24:46Z:clawsweeper_needs_human",
       "comment_id": "5936909590",
@@ -33565,6 +33538,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162146:5943985196:2026-10-02T01:39:29Z:re_review",
+      "comment_id": "5943985196",
+      "comment_version_key": "5943985196:2026-10-02T01:39:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162146#issuecomment-5943985196",
+      "comment_created_at": "2026-10-02T01:39:29Z",
+      "comment_updated_at": "2026-10-02T01:39:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162146,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T01:40:59.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/162129-update-report-cap-priority",
+        "head_sha": "0405a6efb37bad366d4b93d4479ae7471a7fe145",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
