@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163406",
+  "mode": "autonomous",
+  "run_id": "36987657020",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36987657020",
+  "head_sha": "8a4028d9f42fbd503454674a7712777aa7e2388d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163406.md",
+  "published_at": "2026-10-02T10:21:50.457Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163406",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163406",
+  "canonical_pr": null,
+  "summary": "Confirmed the transcript-owner mismatch in preflight main 1b8ce2af633a7a1057f93526299170d008f499f1. Implementation and executable reproduction are blocked by the read-only host: the focused test command failed in Corepack with EROFS before Vitest started. No code or GitHub state changed; a narrow executor repair artifact is provided.",
+  "actions": [
+    {
+      "target": "#163406",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163406",
+      "candidate_fix": null,
+      "reason": "Source confirms a narrow existing-behavior bug. Keep this issue open while the executor establishes the failing production-boundary regression and repairs Copilot's transcript ownership."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163406",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#163406",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan is available without an established need for a new SDK contract. Writable isolated execution is required to implement and validate it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
