@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:26:34.765Z",
+  "updated_at": "2026-10-02T11:26:39.479Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163260:5946406155:2026-10-02T05:56:56Z:re_review",
-      "comment_id": "5946406155",
-      "comment_version_key": "5946406155:2026-10-02T05:56:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163260#issuecomment-5946406155",
-      "comment_created_at": "2026-10-02T05:56:56Z",
-      "comment_updated_at": "2026-10-02T05:56:56Z",
-      "comment_body_sha256": "3004153650b82f5c9a576ee2fdc97de6d79f1ede012a59528cd80869aa3a66fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163260,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T05:57:53.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bun-v4-harness",
-        "head_sha": "2910f445f0760ca65ec646f5f88aafa15881523b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1595:5946207912:2026-10-02T05:57:44Z:clawsweeper_auto_repair",
       "comment_id": "5946207912",
@@ -33611,6 +33564,39 @@
         "kind": "pull_request",
         "branch": "fix/readloop-tts-deadline",
         "head_sha": "ed3f5dc64ccbb779d96d2fb674c40ba2a6a26650",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163469:5951022116:2026-10-02T11:25:42Z:clawsweeper_needs_human",
+      "comment_id": "5951022116",
+      "comment_version_key": "5951022116:2026-10-02T11:25:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163469#issuecomment-5951022116",
+      "comment_created_at": "2026-10-02T11:09:45Z",
+      "comment_updated_at": "2026-10-02T11:25:42Z",
+      "comment_body_sha256": "f2718a7404317ccc77155e7f08c880f6809aeaed070777560cb37384cca887f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163469,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add the measured wall time for pnpm test src/agents/tool-images.test.ts --maxWorkers=1 and the available CI seconds to the PR body. (sha=06afee03eb68fbe1270e2160518aef02b3f5e877)",
+      "expected_head_sha": "06afee03eb68fbe1270e2160518aef02b3f5e877",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T11:26:39.479Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/text-content-6366-20261002",
+        "head_sha": "06afee03eb68fbe1270e2160518aef02b3f5e877",
         "cluster_id": null,
         "job_path": null
       }
