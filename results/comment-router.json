@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T14:55:32.917Z",
+  "updated_at": "2026-10-02T14:55:50.566Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163430:5949738883:2026-10-02T09:56:54Z:re_review",
-      "comment_id": "5949738883",
-      "comment_version_key": "5949738883:2026-10-02T09:56:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163430#issuecomment-5949738883",
-      "comment_created_at": "2026-10-02T09:56:54Z",
-      "comment_updated_at": "2026-10-02T09:56:54Z",
-      "comment_body_sha256": "c52bc9a79a2a1333101882fc428d0058b7c0113313746619ad078bf62d83b003",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163430,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T10:02:40.869Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llama-vc-runtime-security-inventory",
-        "head_sha": "0c5cd2a8f32f5e5c67c480a8e35e50af1f2c2f84",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163430:5949382424:2026-10-02T10:01:43Z:clawsweeper_needs_human",
       "comment_id": "5949382424",
@@ -33144,6 +33097,39 @@
         "kind": "pull_request",
         "branch": "steipete/anthropic-in-history-system-updates",
         "head_sha": "45cf10158d3ca7009b88afeef4af4a5d03f38f12",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163435:5949555830:2026-10-02T14:54:38Z:clawsweeper_needs_human",
+      "comment_id": "5949555830",
+      "comment_version_key": "5949555830:2026-10-02T14:54:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163435#issuecomment-5949555830",
+      "comment_created_at": "2026-10-02T09:47:57Z",
+      "comment_updated_at": "2026-10-02T14:54:38Z",
+      "comment_body_sha256": "f2d1f6b80fd6d26173e81df9f545c85a48e33454667b03c9da7be70e4ca3a2d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163435,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the registered Snowflake login and runtime-auth paths have mocked callback and HTTP coverage only; demonstrate... (sha=bc69a724daa8fc60f9a9b1b92d7849db265e7744)",
+      "expected_head_sha": "bc69a724daa8fc60f9a9b1b92d7849db265e7744",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T14:55:50.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/l4-snowflake-provider-20261002",
+        "head_sha": "bc69a724daa8fc60f9a9b1b92d7849db265e7744",
         "cluster_id": null,
         "job_path": null
       }
