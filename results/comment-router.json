@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T19:37:41.243Z",
+  "updated_at": "2026-10-02T19:37:46.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163398:5954797505:2026-10-02T14:37:55Z:freeform_assist",
-      "comment_id": "5954797505",
-      "comment_version_key": "5954797505:2026-10-02T14:37:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163398#issuecomment-5954797505",
-      "comment_created_at": "2026-10-02T14:37:55Z",
-      "comment_updated_at": "2026-10-02T14:37:55Z",
-      "comment_body_sha256": "23bbeb03b9645299025e1343f74b51d566fdfda89ebf7b954e99cf288f161b22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163398,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "please assess the exact-head real-behavior proof in https://github.com/openclaw/openclaw/pull/163398#issuecomment-5954794259 despite the collaborator proof exemption. evaluate whether this supplied terminal evidence satisfies the underlying proof-confidence requirement for head `5921473b69da69f9c35ae2d2bb0fd8eb3f9b32bd`. this is a review-only request; do not repair, rebase, merge, queue, or enable automerge.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T14:38:52.467Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-completion-determinism",
-        "head_sha": "5921473b69da69f9c35ae2d2bb0fd8eb3f9b32bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:916:5954796786:2026-10-02T14:37:52Z:clawsweeper_needs_human",
       "comment_id": "5954796786",
@@ -33157,6 +33110,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/mermaid-12.0.0",
         "head_sha": "7362f855fb93db13d5469d1b29f99f2386ad4e85",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3812:5931883447:2026-10-02T19:36:49Z:clawsweeper_auto_repair",
+      "comment_id": "5931883447",
+      "comment_version_key": "5931883447:2026-10-02T19:36:49Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3812#issuecomment-5931883447",
+      "comment_created_at": "2026-10-01T12:53:25Z",
+      "comment_updated_at": "2026-10-02T19:36:49Z",
+      "comment_body_sha256": "7f6c5e3f47d001a30b38277f5a7d5f2a15c9d7614234e720ec44b56f0216e4e1",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f3406f202d3da43d77b5fe66fbaa8b293ad1a28d)",
+      "expected_head_sha": "f3406f202d3da43d77b5fe66fbaa8b293ad1a28d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T19:37:46.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f023-install-telemetry-race",
+        "head_sha": "f3406f202d3da43d77b5fe66fbaa8b293ad1a28d",
         "cluster_id": null,
         "job_path": null
       }
