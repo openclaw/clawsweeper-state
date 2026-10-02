@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T16:42:19.489Z",
+  "updated_at": "2026-10-02T16:42:49.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163481:5951757134:2026-10-02T11:50:35Z:clawsweeper_needs_human",
-      "comment_id": "5951757134",
-      "comment_version_key": "5951757134:2026-10-02T11:50:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163481#issuecomment-5951757134",
-      "comment_created_at": "2026-10-02T11:50:35Z",
-      "comment_updated_at": "2026-10-02T11:50:35Z",
-      "comment_body_sha256": "f1a7e4946459402fed63ea3e85cea0c64cfd9cc17461b29beee561d885fcc2f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Successful activation with the published 2026.9.7 updater and this patched 2026.9.8 candidate remains unverified; the cited macOS release-validation run demonstrates only the pre-fix... (sha=360d71a49dd757fddaeaef38c38df57966168ede)",
-      "expected_head_sha": "360d71a49dd757fddaeaef38c38df57966168ede",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T11:51:36.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/2026.9.8-missing-root-alias",
-        "head_sha": "360d71a49dd757fddaeaef38c38df57966168ede",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163379:5947928921:2026-10-02T11:50:54Z:clawsweeper_needs_human",
       "comment_id": "5947928921",
@@ -33573,6 +33540,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163637:5956907897:2026-10-02T16:41:47Z:re_review",
+      "comment_id": "5956907897",
+      "comment_version_key": "5956907897:2026-10-02T16:41:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163637#issuecomment-5956907897",
+      "comment_created_at": "2026-10-02T16:41:47Z",
+      "comment_updated_at": "2026-10-02T16:41:47Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163637,
+      "author": "jacobtomlinson",
+      "author_id": 1610850,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T16:42:48.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/main-worker-ci-163459",
+        "head_sha": "84c8a5f407b7fa6cbf3822112bd2f468c6da94fb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
