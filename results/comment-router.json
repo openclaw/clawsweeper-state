@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T16:51:54.540Z",
+  "updated_at": "2026-10-02T16:52:04.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163378:5951870105:2026-10-02T11:59:38Z:re_review",
-      "comment_id": "5951870105",
-      "comment_version_key": "5951870105:2026-10-02T11:59:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163378#issuecomment-5951870105",
-      "comment_created_at": "2026-10-02T11:59:38Z",
-      "comment_updated_at": "2026-10-02T11:59:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163378,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T12:00:34.235Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/s10",
-        "head_sha": "b1131d113cb2466f5facf22e97e9c4350df72ef0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163489:5951880843:2026-10-02T12:00:32Z:clawsweeper_needs_human",
       "comment_id": "5951880843",
@@ -33580,6 +33533,39 @@
         "kind": "pull_request",
         "branch": "openclaw/voice-execution-outcomes-pr1",
         "head_sha": "0f64900c67abb437cb088658eae49f6af9355f68",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159695:5856808661:2026-10-02T16:51:03Z:clawsweeper_needs_human",
+      "comment_id": "5856808661",
+      "comment_version_key": "5856808661:2026-10-02T16:51:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159695#issuecomment-5856808661",
+      "comment_created_at": "2026-09-27T14:39:53Z",
+      "comment_updated_at": "2026-10-02T16:51:03Z",
+      "comment_body_sha256": "2f24e21441de83b068945837779dbdfd6f9d3df0d627a2388e9395fdf13f6b6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accept the bounded post-permit effect contract** - The node can spawn after Gateway cancellation when cancellation delivery is delayed. This is documented and demonstrated rather than c...; Review finding: [medium] Accept the bounded post-permit effect contract — src/node-host/installed-app-launch.ts:154 (sha=b890cdd1fbe176cf2b8af68d325210a2f9ee1a3f)",
+      "expected_head_sha": "b890cdd1fbe176cf2b8af68d325210a2f9ee1a3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T16:52:04.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/linux-app-launch-pr2",
+        "head_sha": "b890cdd1fbe176cf2b8af68d325210a2f9ee1a3f",
         "cluster_id": null,
         "job_path": null
       }
