@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T14:24:59.686Z",
+  "updated_at": "2026-10-02T14:25:14.289Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163425:5949136521:2026-10-02T09:24:40Z:re_review",
-      "comment_id": "5949136521",
-      "comment_version_key": "5949136521:2026-10-02T09:24:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163425#issuecomment-5949136521",
-      "comment_created_at": "2026-10-02T09:24:40Z",
-      "comment_updated_at": "2026-10-02T09:24:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163425,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T09:25:43.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/catalog2",
-        "head_sha": "40e692dc460f8a065bd9a1f9fbf00bc2ca8cce45",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163350:5947278301:2026-10-02T09:24:50Z:clawsweeper_auto_repair",
       "comment_id": "5947278301",
@@ -33106,6 +33059,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-runtime-test-utils-freshness",
         "head_sha": "6969c355f7a46b04765a2a73f02d6c29294789ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163570:5954580147:2026-10-02T14:24:16Z:clawsweeper_needs_human",
+      "comment_id": "5954580147",
+      "comment_version_key": "5954580147:2026-10-02T14:24:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163570#issuecomment-5954580147",
+      "comment_created_at": "2026-10-02T14:24:16Z",
+      "comment_updated_at": "2026-10-02T14:24:16Z",
+      "comment_body_sha256": "cb12818e819cbdbb48b95b693b74029dd9d87943b0a70ff61ca9278f6540b740",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163570,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add the measured wall time for pnpm test test/scripts/install-sh.test.ts --maxWorkers=1 and the CI seconds to the PR body, as required for materially changed test files. (sha=bdeee0136f82b6991cb71ee990de34e924b3c842)",
+      "expected_head_sha": "bdeee0136f82b6991cb71ee990de34e924b3c842",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T14:25:14.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/installer-zdotdir-path-163569",
+        "head_sha": "bdeee0136f82b6991cb71ee990de34e924b3c842",
         "cluster_id": null,
         "job_path": null
       }
