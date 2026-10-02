@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:32:33.722Z",
+  "updated_at": "2026-10-02T06:32:50.623Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163148:5943850953:2026-10-02T01:25:23Z:re_review",
-      "comment_id": "5943850953",
-      "comment_version_key": "5943850953:2026-10-02T01:25:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163148#issuecomment-5943850953",
-      "comment_created_at": "2026-10-02T01:25:23Z",
-      "comment_updated_at": "2026-10-02T01:25:23Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163148,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T01:26:25.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/unknown-command-silence",
-        "head_sha": "39387e9248d31906469ec131cd5da3c0dbc936fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160442:5869907298:2026-10-02T01:26:01Z:clawsweeper_needs_human",
       "comment_id": "5869907298",
@@ -33357,6 +33310,39 @@
         "kind": "pull_request",
         "branch": "codex/telegram-release-launch-env",
         "head_sha": "e43f5d58af3f502d8a017e967a6f7a31aafc926e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163186:5944711373:2026-10-02T06:31:51Z:clawsweeper_auto_repair",
+      "comment_id": "5944711373",
+      "comment_version_key": "5944711373:2026-10-02T06:31:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163186#issuecomment-5944711373",
+      "comment_created_at": "2026-10-02T02:52:20Z",
+      "comment_updated_at": "2026-10-02T06:31:51Z",
+      "comment_body_sha256": "4b59acbfea897413747660291fbde4d437720cb7f1d2cf92efa1a42fe3d0ec90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163186,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1378ed9baa234e17ce37e424ab7cde408a8ea3cf)",
+      "expected_head_sha": "1378ed9baa234e17ce37e424ab7cde408a8ea3cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T06:32:50.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-runtime-retire-oauth-sidecars",
+        "head_sha": "1378ed9baa234e17ce37e424ab7cde408a8ea3cf",
         "cluster_id": null,
         "job_path": null
       }
