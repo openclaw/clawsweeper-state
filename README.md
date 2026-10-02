@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 2, 2026, 22:25 UTC
+Last source update: Oct 2, 2026, 22:40 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 2, 2026, 22:25 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 2, 2026, 22:25 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37069209418) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 2, 2026, 22:23 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37072058574) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 2, 2026, 22:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37069209418) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 2, 2026, 22:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37072871385) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 2, 2026, 16:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37036236563) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 2, 2026, 21:57 UTC
+Last source update: Oct 2, 2026, 22:39 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1389 | 100% |
-| Run attempts archived | 4114 | audit |
+| Run attempts archived | 4115 | audit |
 | Latest successful clusters | 1150 | 82.8% |
 | Latest failed clusters | 235 | 16.9% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1389 clusters: 376 maintainer action, 428 automation snapshot, 527 intervention needed, 58 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1612](https://github.com/openclaw/openclaw-windows-node/issues/1612) is maintainer_input: #1612: Obtain a concrete problem statement or feature request from the author before implementation can be scoped..
-- Intervention first: [openclaw/peekaboo](https://github.com/openclaw/peekaboo) [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) is automation_blocked: Keep #881 open. Current-main inspection did not establish a definite receipt-loss defect. Implementation is blocked on the retained same-....
+- Intervention first: [openclaw/peekaboo](https://github.com/openclaw/peekaboo) [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) is automation_blocked: Keep #881 open. Current-main inspection did not establish the reported evidence-loss boundary. Implementation is blocked pending the reta....
 - Automation latest: [steipete/oracle](https://github.com/steipete/oracle) [#531](https://github.com/steipete/oracle/pull/531) is action_planned: The existing default-ignore check can reject files because of ancestors above the requested expansion root. This is a bounded selection b....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Keep #881 open. Current-main inspection did not establish a definite receipt-loss defect. Implementation is blocked on the retained same-session me... | Oct 2, 2026, 21:48 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37068562365](https://github.com/openclaw/clawsweeper/actions/runs/37068562365) |
+| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Keep #881 open. Current-main inspection did not establish the reported evidence-loss boundary. Implementation is blocked pending the retained host/... | Oct 2, 2026, 22:39 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37073377013](https://github.com/openclaw/clawsweeper/actions/runs/37073377013) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4201](https://github.com/steipete/codexbar/pull/4201) | automation_failed | The source-proven defect has a bounded repair independent of #4200. Leave the issue open. | Oct 2, 2026, 20:34 UTC | [issue-steipete-codexbar-4201](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4201.md) | [37030495125](https://github.com/openclaw/clawsweeper/actions/runs/37030495125) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 2, 2026, 19:56 UTC | [issue-openclaw-openclaw-163568](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163568.md) | [37019308664](https://github.com/openclaw/clawsweeper/actions/runs/37019308664) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118303](https://github.com/openclaw/openclaw/pull/118303) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 2, 2026, 16:20 UTC | [automerge-openclaw-openclaw-118303](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118303.md) | [37028475673](https://github.com/openclaw/clawsweeper/actions/runs/37028475673) |
