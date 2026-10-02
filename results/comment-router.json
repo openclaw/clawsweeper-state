@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T07:42:41.181Z",
+  "updated_at": "2026-10-02T07:43:29.613Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114996:5233546058:2026-08-09T19:52:42Z:re_review",
-      "comment_id": "5233546058",
-      "comment_version_key": "5233546058:2026-08-09T19:52:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114996#issuecomment-5233546058",
-      "comment_created_at": "2026-08-09T19:52:42Z",
-      "comment_updated_at": "2026-08-09T19:52:42Z",
-      "comment_body_sha256": "cadb390defe06aa7ff5006edb0af8c433a7c5335faf02d774015483882b49270",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114996,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T02:43:50.064Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114996:5234418446:2026-08-09T23:33:02Z:re_review",
       "comment_id": "5234418446",
@@ -32974,6 +32947,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T07:42:41.181Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163358:5947376658:2026-10-02T07:42:33Z:clawsweeper_needs_human",
+      "comment_id": "5947376658",
+      "comment_version_key": "5947376658:2026-10-02T07:42:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163358#issuecomment-5947376658",
+      "comment_created_at": "2026-10-02T07:28:19Z",
+      "comment_updated_at": "2026-10-02T07:42:33Z",
+      "comment_body_sha256": "b8bfb47ec898282b3c7aaf35e05b1c08f215a8c4fce7e2d626d11f65c549658f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163358,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed installer host check and guided setup error are exercised through mocked process and preparation calls. The body explicitly reports... (sha=19cb1f9af104bdfb985f1f1b2399f9ebe6d6bc07)",
+      "expected_head_sha": "19cb1f9af104bdfb985f1f1b2399f9ebe6d6bc07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T07:43:29.613Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llama-cpp-macos-floor",
+        "head_sha": "19cb1f9af104bdfb985f1f1b2399f9ebe6d6bc07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
