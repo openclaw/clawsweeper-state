@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T05:23:30.966Z",
+  "updated_at": "2026-10-02T05:25:23.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5860319056:2026-09-27T22:13:38Z:re_review",
-      "comment_id": "5860319056",
-      "comment_version_key": "5860319056:2026-09-27T22:13:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5860319056",
-      "comment_created_at": "2026-09-27T22:13:38Z",
-      "comment_updated_at": "2026-09-27T22:13:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T00:34:21.056Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5860785836:2026-09-27T23:22:35Z:re_review",
       "comment_id": "5860785836",
@@ -33431,6 +33404,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163201:5944930323:2026-10-02T05:24:27Z:clawsweeper_needs_human",
+      "comment_id": "5944930323",
+      "comment_version_key": "5944930323:2026-10-02T05:24:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163201#issuecomment-5944930323",
+      "comment_created_at": "2026-10-02T03:12:17Z",
+      "comment_updated_at": "2026-10-02T05:24:27Z",
+      "comment_body_sha256": "474d7ece6821d0051a2b3cbd34e2217db79caa27eefdd5d0017622a67dd6267b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported Debian PTY runs exercise runTui, unknown-command fallback, editor restoration, and one unchanged send after reconnect thr... (sha=93095867865cabde66f81f1a4dbf17ec248aeb26)",
+      "expected_head_sha": "93095867865cabde66f81f1a4dbf17ec248aeb26",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T05:25:23.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tui-slash-draft-163199",
+        "head_sha": "93095867865cabde66f81f1a4dbf17ec248aeb26",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
