@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T02:55:24.966Z",
+  "updated_at": "2026-10-02T02:55:51.933Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:853:5941841865:2026-10-01T22:22:02Z:clawsweeper_needs_human",
-      "comment_id": "5941841865",
-      "comment_version_key": "5941841865:2026-10-01T22:22:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/853#issuecomment-5941841865",
-      "comment_created_at": "2026-10-01T22:22:02Z",
-      "comment_updated_at": "2026-10-01T22:22:02Z",
-      "comment_body_sha256": "6156d419785c734158923a93dbd8b66de44637c66ab8b2c63b5272469a52b95f",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 853,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain human review of the retroactive record before landing, retaining Proposed status unless responsible reviewers explicitly accept the design. (sha=4274d79eb2240690d8286d8e893ecf350c40df7f)",
-      "expected_head_sha": "4274d79eb2240690d8286d8e893ecf350c40df7f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T22:23:05.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc-0046-codex-gateway-isolation",
-        "head_sha": "4274d79eb2240690d8286d8e893ecf350c40df7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163035:5941856178:2026-10-01T22:22:59Z:clawsweeper_needs_human",
       "comment_id": "5941856178",
@@ -33922,6 +33889,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163191:5944755111:2026-10-02T02:54:54Z:re_review",
+      "comment_id": "5944755111",
+      "comment_version_key": "5944755111:2026-10-02T02:54:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163191#issuecomment-5944755111",
+      "comment_created_at": "2026-10-02T02:54:54Z",
+      "comment_updated_at": "2026-10-02T02:54:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163191,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T02:55:50.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cron-ignore-rejected-adds",
+        "head_sha": "8a71dc6f24e15737e0e3f80a29e7dc4584eb237d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
