@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T00:14:37.520Z",
+  "updated_at": "2026-10-02T00:14:47.834Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162959:5939404362:2026-10-01T19:56:07Z:clawsweeper_needs_human",
-      "comment_id": "5939404362",
-      "comment_version_key": "5939404362:2026-10-01T19:56:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162959#issuecomment-5939404362",
-      "comment_created_at": "2026-10-01T19:56:07Z",
-      "comment_updated_at": "2026-10-01T19:56:07Z",
-      "comment_body_sha256": "6207e7bfd015b5d6b27ee5d7949d8fe49dd77b5694d0277f8b36d376a87afe8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162959,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Merge the prerequisite release-preparation PR at https://github.com/openclaw/openclaw/pull/162931 before merging this backport. (sha=f634d5770809a8d7a653960698c91a46bba1b2c9)",
-      "expected_head_sha": "f634d5770809a8d7a653960698c91a46bba1b2c9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T19:57:10.816Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-prep/2026.9.8-p0-p1-backports",
-        "head_sha": "f634d5770809a8d7a653960698c91a46bba1b2c9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162963:5939420454:2026-10-01T19:57:00Z:clawsweeper_needs_human",
       "comment_id": "5939420454",
@@ -33318,6 +33285,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161609:5904224182:2026-10-02T00:13:45Z:clawsweeper_needs_human",
+      "comment_id": "5904224182",
+      "comment_version_key": "5904224182:2026-10-02T00:13:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161609#issuecomment-5904224182",
+      "comment_created_at": "2026-09-30T04:45:42Z",
+      "comment_updated_at": "2026-10-02T00:13:45Z",
+      "comment_body_sha256": "aab0dc5ff2910b3e0142450223541417cd33ad178d522c3d473df3a396d0fcbd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: exercise the registered Agents API harness and an actual executor controller, showing allowed connection/retire...; Review finding: [P1] Make retirement failure block the actual session reset — extensions/agentsapi/agentsapi-bindings.ts:155-158 - [medium] Prove executor authority before final I... (sha=059958b39f18d6c47e5a8414fdde2c647f54c5a4)",
+      "expected_head_sha": "059958b39f18d6c47e5a8414fdde2c647f54c5a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T00:14:47.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-executor-controller",
+        "head_sha": "059958b39f18d6c47e5a8414fdde2c647f54c5a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
