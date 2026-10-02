@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T22:22:05.444Z",
+  "updated_at": "2026-10-02T22:22:55.743Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5957531433:2026-10-02T17:15:38Z:re_review",
-      "comment_id": "5957531433",
-      "comment_version_key": "5957531433:2026-10-02T17:15:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5957531433",
-      "comment_created_at": "2026-10-02T17:15:38Z",
-      "comment_updated_at": "2026-10-02T17:15:38Z",
-      "comment_body_sha256": "f7bc9242d930399b0620fb99df199074dae18ebf3c4e9d36ed4e51b159f84cb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rev9 two p2 fixed (durable parent-chain canonical gate; fixture nested-tx db path). head b774fd18c9f. 103 files/1293 tests green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T17:16:58.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-anchor-dedup",
-        "head_sha": "b774fd18c9f2f0f6d3f2bfe087d4ac3e71e7e751",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142954:5598452887:2026-10-02T17:16:27Z:clawsweeper_needs_human",
       "comment_id": "5598452887",
@@ -32948,6 +32901,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159478:5853462916:2026-10-02T22:22:00Z:clawsweeper_needs_human",
+      "comment_id": "5853462916",
+      "comment_version_key": "5853462916:2026-10-02T22:22:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159478#issuecomment-5853462916",
+      "comment_created_at": "2026-09-27T06:39:37Z",
+      "comment_updated_at": "2026-10-02T22:22:00Z",
+      "comment_body_sha256": "c4b556f7bee05d837894dccec3defa09b683e6a49d7734a38f851a945719071a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Already-enabled installations can begin hosted group-history evaluations and stop replying to some previously answered messages; fresh-install, assistance-off and saved-enabled runtim... (sha=60becc8feacd3aa5d4d7eb149470e25d8cce97b6)",
+      "expected_head_sha": "60becc8feacd3aa5d4d7eb149470e25d8cce97b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T22:22:55.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/group-decision-participation",
+        "head_sha": "60becc8feacd3aa5d4d7eb149470e25d8cce97b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
