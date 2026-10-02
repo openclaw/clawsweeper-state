@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T12:37:35.979Z",
+  "updated_at": "2026-10-02T12:37:44.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93218:5265592146:2026-08-12T10:37:39Z:re_review",
-      "comment_id": "5265592146",
-      "comment_version_key": "5265592146:2026-08-12T10:37:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93218#issuecomment-5265592146",
-      "comment_created_at": "2026-08-12T10:37:39Z",
-      "comment_updated_at": "2026-08-12T10:37:39Z",
-      "comment_body_sha256": "8313061c24ac0efd95dde53e6c8ccab90028de2ce29d5d7a9b81303b4e5bc5f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93218,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T07:41:41.718Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93218:5505848587:2026-09-02T07:17:20Z:re_review",
       "comment_id": "5505848587",
@@ -33143,6 +33116,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117464:5152061513:2026-10-02T12:36:39Z:clawsweeper_needs_human",
+      "comment_id": "5152061513",
+      "comment_version_key": "5152061513:2026-10-02T12:36:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117464#issuecomment-5152061513",
+      "comment_created_at": "2026-08-01T15:23:50Z",
+      "comment_updated_at": "2026-10-02T12:36:39Z",
+      "comment_body_sha256": "9ebde4a437b711646421fae1983b3bc5e3cfd956d3cf71caf45e664cc446d657",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied branch is conflicting, and no verified merge result exists; integration must connect pagination to current main’s listPinsDiscord while preserving message-ID validation a... (sha=ff1d62dbc475bae5e9a9d370a64e6364fedf268b)",
+      "expected_head_sha": "ff1d62dbc475bae5e9a9d370a64e6364fedf268b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T12:37:44.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa402-discord-pins-opaque-pagination",
+        "head_sha": "ff1d62dbc475bae5e9a9d370a64e6364fedf268b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
