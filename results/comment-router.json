@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T18:06:59.657Z",
+  "updated_at": "2026-10-02T18:08:23.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:257:5806713752:2026-10-02T13:06:49Z:clawsweeper_needs_human",
-      "comment_id": "5806713752",
-      "comment_version_key": "5806713752:2026-10-02T13:06:49Z",
-      "comment_url": "https://github.com/openclaw/discrawl/pull/257#issuecomment-5806713752",
-      "comment_created_at": "2026-09-24T03:04:48Z",
-      "comment_updated_at": "2026-10-02T13:06:49Z",
-      "comment_body_sha256": "4fba309b6ab48dc5d8e100f1eb6a2add4375c339faeff30970119131141a2256",
-      "repo": "openclaw/discrawl",
-      "issue_number": 257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging activates a synchronous index build on the scheduled publisher's cached archive; acceptable peak memory, disk headroom, writer delay, continuing member-write cost, verified re... (sha=4f5126db7af9f26010e1909a4497623cc5507f70)",
-      "expected_head_sha": "4f5126db7af9f26010e1909a4497623cc5507f70",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T13:07:39.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/member-change-index",
-        "head_sha": "4f5126db7af9f26010e1909a4497623cc5507f70",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163488:5951844719:2026-10-02T13:06:29Z:clawsweeper_needs_human",
       "comment_id": "5951844719",
@@ -33266,6 +33233,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154904:5958371278:2026-10-02T18:07:20Z:re_review",
+      "comment_id": "5958371278",
+      "comment_version_key": "5958371278:2026-10-02T18:07:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5958371278",
+      "comment_created_at": "2026-10-02T18:07:20Z",
+      "comment_updated_at": "2026-10-02T18:07:20Z",
+      "comment_body_sha256": "c71a89a66f2f59c33ad3094357c451f0fbd1c05d4bac46937d3ceac147bec485",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154904,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: rev10 head 395efe0e2ca. dropped handwritten max-seq recursive cte; dirty-path revalidation now reuses canonical owner istranscriptentryonactivepathintransaction inside the same savepoint snapshot; clean path reuses readactivetranscriptentryanchorintransaction (no duplicated sql, db-worker t1 ratchet at base). test g uses a real appendleafcontrol branch switch with old heuristic proven red (hit=1) and new owner green; test h proves outer-write-tx real (raw begin throws, savepoint replay passes). anchor-dedup 8/8, tsgo:core 0, kysely 5/5, deadexport 0, ratchet ok",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T18:08:22.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-anchor-dedup",
+        "head_sha": "395efe0e2ca8a5a7869cc9a7b2bebf7d064445bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
