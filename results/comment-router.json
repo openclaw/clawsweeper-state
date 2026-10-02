@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:14:56.739Z",
+  "updated_at": "2026-10-02T23:15:12.240Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160675:5877089407:2026-10-02T17:45:43Z:clawsweeper_needs_human",
-      "comment_id": "5877089407",
-      "comment_version_key": "5877089407:2026-10-02T17:45:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160675#issuecomment-5877089407",
-      "comment_created_at": "2026-09-28T19:36:43Z",
-      "comment_updated_at": "2026-10-02T17:45:43Z",
-      "comment_body_sha256": "bde3143172d205726f54e0cc9554ae686e5201cf479e8f35750fee378aeb6bf6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160675,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: b040d3c has positive operator-reported VPS evidence for the Gateway completion queue and conversation...; Review finding: [medium] Verify queued authority rejection before final delivery — src/infra/outbound/targets.ts:594 (sha=b040d3cdc4cd4eebf8060e02fccfb0078d3ed828)",
-      "expected_head_sha": "b040d3cdc4cd4eebf8060e02fccfb0078d3ed828",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T17:46:46.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-telegram-topic-completion-routing",
-        "head_sha": "b040d3cdc4cd4eebf8060e02fccfb0078d3ed828",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:160:5762738687:2026-10-02T17:46:06Z:clawsweeper_needs_human",
       "comment_id": "5762738687",
@@ -33379,6 +33346,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162917:5962939725:2026-10-02T23:14:13Z:re_review",
+      "comment_id": "5962939725",
+      "comment_version_key": "5962939725:2026-10-02T23:14:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162917#issuecomment-5962939725",
+      "comment_created_at": "2026-10-02T23:14:13Z",
+      "comment_updated_at": "2026-10-02T23:14:13Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162917,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T23:15:09.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-anthropic-sdk-0.128.0",
+        "head_sha": "5b76ddbfe544be8430ebd7a726de586daec1f335",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
