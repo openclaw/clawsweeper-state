@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:32:18.267Z",
+  "updated_at": "2026-10-02T20:32:45.860Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5955633826:2026-10-02T15:27:16Z:re_review",
-      "comment_id": "5955633826",
-      "comment_version_key": "5955633826:2026-10-02T15:27:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5955633826",
-      "comment_created_at": "2026-10-02T15:27:16Z",
-      "comment_updated_at": "2026-10-02T15:27:16Z",
-      "comment_body_sha256": "78a9b1e1e7f0252b95e7c9791b1b03567fca25bc1fa8faf4b76185e370113deb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: addressed rev4 p2 findings (dirty-index revalidation against authoritative identity log; single read-transaction snapshot). head 0944fff447",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T15:31:00.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-anchor-dedup",
-        "head_sha": "0944fff447bb9fa6c5c314f88a4a07d7350ebcf1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158902:5955640380:2026-10-02T15:27:36Z:re_review",
       "comment_id": "5955640380",
@@ -33026,6 +32979,39 @@
         "kind": "pull_request",
         "branch": "codex/background-exact-window-drag",
         "head_sha": "5258888c88e926629e9b085e5eb37aff11b38805",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3815:5824109903:2026-10-02T20:30:30Z:clawsweeper_needs_human",
+      "comment_id": "5824109903",
+      "comment_version_key": "5824109903:2026-10-02T20:30:30Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3815#issuecomment-5824109903",
+      "comment_created_at": "2026-09-24T23:41:46Z",
+      "comment_updated_at": "2026-10-02T20:30:30Z",
+      "comment_body_sha256": "d84ed7238b7bc98008b487021a8058f1d729fc85195f5112a43e32e5113cbb4d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1e5c2356f5c15d8af06da46ca04c3a9065f83f13)",
+      "expected_head_sha": "1e5c2356f5c15d8af06da46ca04c3a9065f83f13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T20:32:45.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-detail-pending-2925",
+        "head_sha": "1e5c2356f5c15d8af06da46ca04c3a9065f83f13",
         "cluster_id": null,
         "job_path": null
       }
