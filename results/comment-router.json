@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T12:48:23.569Z",
+  "updated_at": "2026-10-02T12:48:30.301Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161759:5947646946:2026-10-02T07:46:31Z:re_review",
-      "comment_id": "5947646946",
-      "comment_version_key": "5947646946:2026-10-02T07:46:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161759#issuecomment-5947646946",
-      "comment_created_at": "2026-10-02T07:46:31Z",
-      "comment_updated_at": "2026-10-02T07:46:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161759,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T07:47:34.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/split-worker-lifecycle",
-        "head_sha": "01282ceeeb2d7b631528dd934c8d571df9509882",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161344:5918533113:2026-09-30T19:51:26Z:re_review",
       "comment_id": "5918533113",
@@ -33356,6 +33309,39 @@
         "kind": "pull_request",
         "branch": "fix/pr-testbox-isolated-gates-20260925",
         "head_sha": "ed5452a054dbd55895853eca2419ac2cba8eb05d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163516:5952668965:2026-10-02T12:47:28Z:clawsweeper_auto_repair",
+      "comment_id": "5952668965",
+      "comment_version_key": "5952668965:2026-10-02T12:47:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163516#issuecomment-5952668965",
+      "comment_created_at": "2026-10-02T12:47:28Z",
+      "comment_updated_at": "2026-10-02T12:47:28Z",
+      "comment_body_sha256": "4213bc23be0c48d8fdadb2956b81c43059e21eef0eff824aecfba6665dcfbb7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1072523998eb5169493a8c49448e58ad8f41987b)",
+      "expected_head_sha": "1072523998eb5169493a8c49448e58ad8f41987b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T12:48:30.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-thinking-level-clamp",
+        "head_sha": "1072523998eb5169493a8c49448e58ad8f41987b",
         "cluster_id": null,
         "job_path": null
       }
