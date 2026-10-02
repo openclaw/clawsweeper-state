@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/gogcli",
+  "cluster_id": "issue-openclaw-gogcli-1184",
+  "mode": "autonomous",
+  "run_id": "36969207939",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/36969207939",
+  "head_sha": "96aa78ac663f91b750f9f7f80d34511e89fe153c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gogcli-1184.md",
+  "published_at": "2026-10-02T05:34:15.773Z",
+  "canonical": "https://github.com/openclaw/gogcli/issues/1184",
+  "canonical_issue": "https://github.com/openclaw/gogcli/issues/1184",
+  "canonical_pr": null,
+  "summary": "Verified the documentation gap on supplied main 414e2ff8afaafa281ec3d9f0cdb057bdbc53386db91. Prepared a two-file documentation fix. Local implementation is blocked by the read-only workspace; parser validation also requires the repository's newer Go toolchain. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#1184",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "The maintainer explicitly selected the narrow documentation alternative; no product decision remains."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1184",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "A narrow executable fix plan is available despite local write and toolchain limitations."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1184",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "Implementation and PR creation require a writable executor with the repository toolchain. Reuse the specified branch and any existing implementation PR; open one PR only after validation passes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
