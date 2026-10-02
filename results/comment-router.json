@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:45:53.854Z",
+  "updated_at": "2026-10-02T21:46:23.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163618:5956400466:2026-10-02T16:12:00Z:clawsweeper_needs_human",
-      "comment_id": "5956400466",
-      "comment_version_key": "5956400466:2026-10-02T16:12:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163618#issuecomment-5956400466",
-      "comment_created_at": "2026-10-02T16:12:00Z",
-      "comment_updated_at": "2026-10-02T16:12:00Z",
-      "comment_body_sha256": "efb06959879d40d9d1793c3f37820f0d802c107452f584279f422c27590f1008",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163618,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=52df636c5071b9ab7a697a295d3e73a07eceb29f)",
-      "expected_head_sha": "52df636c5071b9ab7a697a295d3e73a07eceb29f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T16:39:06.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-steer-canonical-config",
-        "head_sha": "52df636c5071b9ab7a697a295d3e73a07eceb29f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163631:5956816137:2026-10-02T16:35:43Z:clawsweeper_needs_human",
       "comment_id": "5956816137",
@@ -33057,6 +33024,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163737:5961971551:2026-10-02T21:45:18Z:re_review",
+      "comment_id": "5961971551",
+      "comment_version_key": "5961971551:2026-10-02T21:45:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163737#issuecomment-5961971551",
+      "comment_created_at": "2026-10-02T21:45:18Z",
+      "comment_updated_at": "2026-10-02T21:45:18Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163737,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T21:46:22.177Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/swap-bounds-time-budget-flake",
+        "head_sha": "a4e32645ed74f550637f8fb864e9c4a990aa2d2c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
