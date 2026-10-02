@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:45:18.974Z",
+  "updated_at": "2026-10-02T23:45:22.496Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163691:5958350072:2026-10-02T18:24:42Z:clawsweeper_needs_human",
-      "comment_id": "5958350072",
-      "comment_version_key": "5958350072:2026-10-02T18:24:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163691#issuecomment-5958350072",
-      "comment_created_at": "2026-10-02T18:06:03Z",
-      "comment_updated_at": "2026-10-02T18:24:42Z",
-      "comment_body_sha256": "62f25aecbcd4de4b942e567d15a16d6e15e4e9e6e86bc959f4bfc88a42d94991",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163691,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the recorded native NEEDS WORK result by diagnosing the hosted concurrency failure or establishing an evidence-backed disposition through the native landing workflow. (sha=838d8d1283515b8134a1c5bdd6f9f4d295606686)",
-      "expected_head_sha": "838d8d1283515b8134a1c5bdd6f9f4d295606686",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T18:25:47.605Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/subagent-cleanup-unused-run-id",
-        "head_sha": "838d8d1283515b8134a1c5bdd6f9f4d295606686",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162176:5920796134:2026-10-02T18:24:55Z:clawsweeper_auto_repair",
       "comment_id": "5920796134",
@@ -33380,6 +33347,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163605:5963218775:2026-10-02T23:44:22Z:re_review",
+      "comment_id": "5963218775",
+      "comment_version_key": "5963218775:2026-10-02T23:44:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163605#issuecomment-5963218775",
+      "comment_created_at": "2026-10-02T23:44:22Z",
+      "comment_updated_at": "2026-10-02T23:44:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163605,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T23:45:21.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/txevents",
+        "head_sha": "5e1292728da80029401c152422f18387f1fdd62f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
