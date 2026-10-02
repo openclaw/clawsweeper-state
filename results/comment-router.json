@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:03:17.059Z",
+  "updated_at": "2026-10-02T20:04:30.122Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163519:5952611199:2026-10-02T14:53:00Z:clawsweeper_needs_human",
-      "comment_id": "5952611199",
-      "comment_version_key": "5952611199:2026-10-02T14:53:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163519#issuecomment-5952611199",
-      "comment_created_at": "2026-10-02T12:44:45Z",
-      "comment_updated_at": "2026-10-02T14:53:00Z",
-      "comment_body_sha256": "91da4efab8c94964431398a2276cc8709f0a68171d07a54604313bb6ac909b88",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b1242327caa87e1d65c06a412dd586a324529285)",
-      "expected_head_sha": "b1242327caa87e1d65c06a412dd586a324529285",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T14:53:54.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llama-cpp-bounded-embedding-preset",
-        "head_sha": "b1242327caa87e1d65c06a412dd586a324529285",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawdinators:14:5718973365:2026-10-02T14:53:16Z:clawsweeper_needs_human",
       "comment_id": "5718973365",
@@ -33187,6 +33154,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149725:5960502521:2026-10-02T20:03:25Z:autofix",
+      "comment_id": "5960502521",
+      "comment_version_key": "5960502521:2026-10-02T20:03:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5960502521",
+      "comment_created_at": "2026-10-02T20:03:25Z",
+      "comment_updated_at": "2026-10-02T20:03:25Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149725,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "autofix enabled; current checks are failing: PR context and evidence:FAILURE, macos-swift (packages):FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-02T20:04:26.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/rfc54-macos-rust-runtime",
+        "head_sha": "2d7032db761843c6dd0797e61dc6a6b2026d93ba",
+        "cluster_id": "automerge-openclaw-openclaw-149725",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149725.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149725.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149725.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
