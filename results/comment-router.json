@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T08:41:44.112Z",
+  "updated_at": "2026-10-02T08:41:55.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163145:5945103122:2026-10-02T03:31:45Z:re_review",
-      "comment_id": "5945103122",
-      "comment_version_key": "5945103122:2026-10-02T03:31:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163145#issuecomment-5945103122",
-      "comment_created_at": "2026-10-02T03:31:45Z",
-      "comment_updated_at": "2026-10-02T03:31:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163145,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T03:32:34.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incognito-p1",
-        "head_sha": "57510ef6ddf909665a47c2344f6f13601b787960",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163204:5944994830:2026-10-02T03:32:03Z:clawsweeper_needs_human",
       "comment_id": "5944994830",
@@ -33019,6 +32972,39 @@
         "kind": "pull_request",
         "branch": "feat/foreground-session-policy",
         "head_sha": "4a7a3f6a9708a8b50658dfb9ef358186850d8ac7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163381:5948111483:2026-10-02T08:41:02Z:clawsweeper_needs_human",
+      "comment_id": "5948111483",
+      "comment_version_key": "5948111483:2026-10-02T08:41:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163381#issuecomment-5948111483",
+      "comment_created_at": "2026-10-02T08:23:11Z",
+      "comment_updated_at": "2026-10-02T08:41:02Z",
+      "comment_body_sha256": "151809ca2657c5adca40e8fddf0b03569f832b78d46415269d0c662085d63a38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Upload and embed sanitized failed-panel before/after screenshots with working GitHub links, and update PR Evidence with final focused validation results and measured costs for materia... (sha=e97104eeee824ec872ad1a6ff0b2610619839c10)",
+      "expected_head_sha": "e97104eeee824ec872ad1a6ff0b2610619839c10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T08:41:55.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/helpful-error-messages-20261002",
+        "head_sha": "e97104eeee824ec872ad1a6ff0b2610619839c10",
         "cluster_id": null,
         "job_path": null
       }
