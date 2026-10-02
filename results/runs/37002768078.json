@@ -1,0 +1,118 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-365",
+  "mode": "autonomous",
+  "run_id": "37002768078",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37002768078",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-365.md",
+  "published_at": "2026-10-02T11:50:25.066Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_pr": null,
+  "summary": "No safe implementation PR can be specified: current main contains the confirmed parser repairs and conditional primary-device recovery, but the six all-empty groups remain unexplained. A current-main reproduction with redacted payload-shape and ingestion/decryption evidence is needed. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#365",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a reproducible remaining defect: obtain a current-main replay and redacted payload-shape/ingestion evidence from an affected group to distinguish absent content, unsupported payloads, and delivery/decryption failure. Selecting a recovery or parser patch now would invent the root cause. Keep the canonical issue open; emit no executable fix artifact."
+    },
+    {
+      "target": "#344",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Historical diagnostic improvement; it does not establish the empty-group root cause."
+    },
+    {
+      "target": "#362",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "A distinct repaired message-edit defect, not proof that the six groups are recovered."
+    },
+    {
+      "target": "#371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Different failure mode; historical context only."
+    },
+    {
+      "target": "#383",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Confirmed partial repair already present; remaining empty-group investigation stays open."
+    },
+    {
+      "target": "#416",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Confirmed partial repair; cannot serve as complete coverage of #365."
+    },
+    {
+      "target": "#441",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Related recovery support already shipped; no basis to repeat that patch or declare #365 fixed."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 6
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 6
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#365: Obtain a current-main reproduction and redacted payload-shape, ingestion, and decryption evidence from an affected group. The October 2 hydrated review reports no high-confidence reproduction for the six all-empty groups; #416 explicitly excludes establishing their cause, and #441 provides conditional recovery without proving those groups recover. The supplied artifacts cannot safely determine an implementation."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#365",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
