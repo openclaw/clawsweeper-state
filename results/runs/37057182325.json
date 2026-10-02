@@ -1,0 +1,62 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "autonomous",
+  "run_id": "37057182325",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37057182325",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-02T20:00:00.645Z",
+  "canonical": "https://github.com/steipete/oracle/issues/531",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/531",
+  "canonical_pr": null,
+  "summary": "Verified the reported defect on supplied current main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Prepared a narrow repair artifact. Implementation and validation are blocked by the read-only filesystem and absent dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The existing attachment-selection bug remains real and narrowly repairable; no product decision or security routing is needed."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Adjacent performance issue with distinct remaining work; explicitly outside this patch."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The repair artifact is ready for a writable executor; only implementation and validation are blocked in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
