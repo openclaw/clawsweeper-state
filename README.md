@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 2, 2026, 21:25 UTC
+Last source update: Oct 2, 2026, 21:35 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 2, 2026, 21:25 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 2, 2026, 21:25 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37063355172) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 2, 2026, 20:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37063732203) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 2, 2026, 21:35 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37063676557) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 2, 2026, 21:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37067454654) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 2, 2026, 16:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37036236563) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 2, 2026, 21:00 UTC
+Last source update: Oct 2, 2026, 21:31 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1388 | 100% |
-| Run attempts archived | 4110 | audit |
+| Run attempts archived | 4111 | audit |
 | Latest successful clusters | 1148 | 82.7% |
 | Latest failed clusters | 236 | 17.0% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1388 clusters: 376 maintainer action, 427 automation snapshot, 527 intervention needed, 58 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1612](https://github.com/openclaw/openclaw-windows-node/issues/1612) is maintainer_input: #1612: Obtain a concrete problem statement or feature request from the author before implementation can be scoped..
-- Intervention first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4201](https://github.com/steipete/codexbar/pull/4201) is automation_failed: The source-proven defect has a bounded repair independent of #4200. Leave the issue open..
+- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [#531](https://github.com/steipete/oracle/pull/531) is automation_failed: Default-ignore filtering uses cwd-relative ancestry and loses each input's expansion boundary. The existing behavior can be repaired with....
 - Automation latest: [openclaw/wacli](https://github.com/openclaw/wacli) [#466](https://github.com/openclaw/wacli/pull/466) is action_planned: The reported behavior remains consistent with inspected main. A fix requires protocol verification and durable ordering rather than uncon....
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [steipete/oracle](https://github.com/steipete/oracle) | [#531](https://github.com/steipete/oracle/pull/531) | automation_failed | Default-ignore filtering uses cwd-relative ancestry and loses each input's expansion boundary. The existing behavior can be repaired without a new... | Oct 2, 2026, 21:31 UTC | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37063500152](https://github.com/openclaw/clawsweeper/actions/runs/37063500152) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4201](https://github.com/steipete/codexbar/pull/4201) | automation_failed | The source-proven defect has a bounded repair independent of #4200. Leave the issue open. | Oct 2, 2026, 20:34 UTC | [issue-steipete-codexbar-4201](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4201.md) | [37030495125](https://github.com/openclaw/clawsweeper/actions/runs/37030495125) |
-| [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-531](cluster:issue-steipete-oracle-531) | automation_failed | PR creation is blocked until a writable executor implements and validates the fix on clawsweeper/issue-steipete-oracle-531. No product decision is... | Oct 2, 2026, 20:31 UTC | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37060686826](https://github.com/openclaw/clawsweeper/actions/runs/37060686826) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 2, 2026, 19:56 UTC | [issue-openclaw-openclaw-163568](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163568.md) | [37019308664](https://github.com/openclaw/clawsweeper/actions/runs/37019308664) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118303](https://github.com/openclaw/openclaw/pull/118303) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 2, 2026, 16:20 UTC | [automerge-openclaw-openclaw-118303](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118303.md) | [37028475673](https://github.com/openclaw/clawsweeper/actions/runs/37028475673) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4202](https://github.com/steipete/codexbar/pull/4202) | automation_failed | The request remains valid and has a focused implementation path. Earlier fixes address different triggers. Keep the issue open. | Oct 2, 2026, 16:02 UTC | [issue-steipete-codexbar-4202](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4202.md) | [37030545015](https://github.com/openclaw/clawsweeper/actions/runs/37030545015) |
