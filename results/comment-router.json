@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T05:11:02.367Z",
+  "updated_at": "2026-10-02T05:11:07.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146651:5935036268:2026-10-01T15:47:27Z:re_review",
-      "comment_id": "5935036268",
-      "comment_version_key": "5935036268:2026-10-01T15:47:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146651#issuecomment-5935036268",
-      "comment_created_at": "2026-10-01T15:47:27Z",
-      "comment_updated_at": "2026-10-01T15:47:27Z",
-      "comment_body_sha256": "9711fdcd9975d6332932ed346d4a42aa310f83f599be61d07379cf94de32fa48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146651,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T00:26:49.941Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-discord-acp-dispatch-owner-146365",
-        "head_sha": "ed01d25c6d2becbbaa0776d2a34e48cf2918a86e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146651:5650125892:2026-10-02T00:25:55Z:clawsweeper_needs_human",
       "comment_id": "5650125892",
@@ -33465,6 +33418,39 @@
         "kind": "pull_request",
         "branch": "codex/qa50-cache-stat-owner",
         "head_sha": "62370c880976cb199ccc8a26b6ad7cf4cf15c8d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163182:5944675247:2026-10-02T05:10:04Z:clawsweeper_needs_human",
+      "comment_id": "5944675247",
+      "comment_version_key": "5944675247:2026-10-02T05:10:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163182#issuecomment-5944675247",
+      "comment_created_at": "2026-10-02T02:48:29Z",
+      "comment_updated_at": "2026-10-02T05:10:04Z",
+      "comment_body_sha256": "dda5ba94fcf26c4a5597165cdc01d3b0f63d8ca376a077ce3ff430d30166cdb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed canonical target reader supplies refreshed metadata to Gateway usage selection. The registered-hand...; Review finding: [medium] Verify revocation before usage loading — src/gateway/server-methods/usage-session-selection.ts:294 (sha=3a99184788fe3afd11f40ed75d909773f8c5fa11)",
+      "expected_head_sha": "3a99184788fe3afd11f40ed75d909773f8c5fa11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T05:11:07.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-runtime-usage-canonical",
+        "head_sha": "3a99184788fe3afd11f40ed75d909773f8c5fa11",
         "cluster_id": null,
         "job_path": null
       }
