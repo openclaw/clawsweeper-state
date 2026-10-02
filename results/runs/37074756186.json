@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37074756186",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37074756186",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-02T22:56:28.703Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Confirmed the missing local auto-unarchive path on preflight main. Implementation is blocked by the read-only workspace, unavailable pinned dependency source, and unavailable required toolchains. No files or GitHub state changed; no validated branch or PR exists.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The ordinary consistency bug remains present and is distinct from merged explicit-archive repair #299. Keep the issue open while preparing its dedicated fix."
+    },
+    {
+      "target": "#299",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical context for explicit archive propagation and recovery, not a duplicate or replacement target."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is possible; execution requires a writable checkout, required toolchains, and pinned protocol source. Do not publish a PR before protocol verification, regression coverage, and the full local gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
