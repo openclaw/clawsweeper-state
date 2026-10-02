@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T18:25:08.065Z",
+  "updated_at": "2026-10-02T18:25:20.765Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/hermit:52:5791281673:2026-09-23T08:04:35Z:re_review",
-      "comment_id": "5791281673",
-      "comment_version_key": "5791281673:2026-09-23T08:04:35Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/52#issuecomment-5791281673",
-      "comment_created_at": "2026-09-23T08:04:35Z",
-      "comment_updated_at": "2026-09-23T08:04:35Z",
-      "comment_body_sha256": "8cf73bbb843586443be6a1ff8c49ee79d7b52b1dee1bdb7ddcb5fd720c23e9a9",
-      "repo": "openclaw/hermit",
-      "issue_number": 52,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T13:33:23.131Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/sweep-3",
-        "head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/hermit:52:5791146685:2026-10-02T13:32:22Z:clawsweeper_needs_human",
       "comment_id": "5791146685",
@@ -33093,6 +33046,39 @@
         "kind": "pull_request",
         "branch": "feat/memory-provider-flush",
         "head_sha": "48f99ae2a6ad8ba85b2011e2f4ddad416cd2d077",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163667:5957742101:2026-10-02T18:23:52Z:clawsweeper_auto_repair",
+      "comment_id": "5957742101",
+      "comment_version_key": "5957742101:2026-10-02T18:23:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163667#issuecomment-5957742101",
+      "comment_created_at": "2026-10-02T17:28:06Z",
+      "comment_updated_at": "2026-10-02T18:23:52Z",
+      "comment_body_sha256": "991f8f567f530363a1180eb5f50aa4c6f1c65b202989719aca0274f588b69346",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163667,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3a9eb56ed1a3f2babf4099a26416213c28077f29)",
+      "expected_head_sha": "3a9eb56ed1a3f2babf4099a26416213c28077f29",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T18:25:20.765Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l306-deslop-memory-consolidation",
+        "head_sha": "3a9eb56ed1a3f2babf4099a26416213c28077f29",
         "cluster_id": null,
         "job_path": null
       }
