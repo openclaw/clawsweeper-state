@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T19:10:03.897Z",
+  "updated_at": "2026-10-02T19:11:28.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5954280374:2026-10-02T14:08:10Z:re_review",
-      "comment_id": "5954280374",
-      "comment_version_key": "5954280374:2026-10-02T14:08:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5954280374",
-      "comment_created_at": "2026-10-02T14:08:10Z",
-      "comment_updated_at": "2026-10-02T14:08:10Z",
-      "comment_body_sha256": "e9ffb3806b8d33b027f7de2464b0a77576640bc2c02cb9e62126a9550364609b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please. merged latest `origin/main` (`6786915f92`) into this branch — new head `a1f5663c762`. the only conflict was main deleting `session-manager.user-idempotency.test.ts` (batch d124); i accepted that deletion and migrated only the #152511 dirty-index dedup regression into `session-manager.transcript-anchor-dedup.test.ts` (did not resurrect the removed low-value file). production degrade in `session-manager-entries.ts` auto-merged and stays orthogonal to the untouched canonical-adoption anchor throw in `session-manager-persistence.ts`. executable pre-fix red test + non-vacuous ablation recorded in the pr body. only `check:changed` failure is the pre-existing main `env-var-count-budget` ratchet drift (477 vs 476; this pr adds 0 `openclaw_*` names)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T14:09:08.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-anchor-dedup",
-        "head_sha": "a1f5663c76209d0d5a6acd5c61fcab4204cd931c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163488:5954286307:2026-10-02T14:08:24Z:re_review",
       "comment_id": "5954286307",
@@ -33239,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "fix/telegram-progress-no-link-previews",
         "head_sha": "2d7d314d712be43bf8606ed313b4f20e9f1fa972",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163725:5959585498:2026-10-02T19:10:22Z:clawsweeper_needs_human",
+      "comment_id": "5959585498",
+      "comment_version_key": "5959585498:2026-10-02T19:10:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163725#issuecomment-5959585498",
+      "comment_created_at": "2026-10-02T19:10:22Z",
+      "comment_updated_at": "2026-10-02T19:10:22Z",
+      "comment_body_sha256": "03938d2404a47a8ad7e9774a1e07a27c1a4200debfdc6af734fd86a27ac6a0cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=bd1481bbd70ad87c27e496d931d052a1bf0b2bb4)",
+      "expected_head_sha": "bd1481bbd70ad87c27e496d931d052a1bf0b2bb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T19:11:28.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/host-authority-module-identity-20261003",
+        "head_sha": "bd1481bbd70ad87c27e496d931d052a1bf0b2bb4",
         "cluster_id": null,
         "job_path": null
       }
