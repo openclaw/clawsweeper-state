@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T09:22:13.443Z",
+  "updated_at": "2026-10-02T09:22:46.729Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161421:5900816467:2026-10-02T03:53:43Z:clawsweeper_needs_human",
-      "comment_id": "5900816467",
-      "comment_version_key": "5900816467:2026-10-02T03:53:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161421#issuecomment-5900816467",
-      "comment_created_at": "2026-09-29T23:10:07Z",
-      "comment_updated_at": "2026-10-02T03:53:43Z",
-      "comment_body_sha256": "49fd850ab307d6962d18ca3dffe69f85daebac7e99692bdefdc3c38bc9c3d466",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161421,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show allowed delivery and queued foreign revocation or reassignment rejection through both production...; Review finding: [medium] Queued revocation lacks final-effect evidence — src/gateway/node-registry.ts:1291 (sha=dc48b25fa0451e8636fef1cef4f3c62239759653)",
-      "expected_head_sha": "dc48b25fa0451e8636fef1cef4f3c62239759653",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T03:54:39.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stable-admission-20260929-2121",
-        "head_sha": "dc48b25fa0451e8636fef1cef4f3c62239759653",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149725:5692745339:2026-10-02T03:54:18Z:clawsweeper_needs_human",
       "comment_id": "5692745339",
@@ -33512,6 +33479,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148951:5949086185:2026-10-02T09:21:55Z:re_review",
+      "comment_id": "5949086185",
+      "comment_version_key": "5949086185:2026-10-02T09:21:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148951#issuecomment-5949086185",
+      "comment_created_at": "2026-10-02T09:21:55Z",
+      "comment_updated_at": "2026-10-02T09:21:55Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148951,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T09:22:45.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/swarm-session-metadata-admission-20260915",
+        "head_sha": "ada6c76eb4bd50f4e46f5bd64a5e0b112de32389",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
