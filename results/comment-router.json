@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T08:29:59.965Z",
+  "updated_at": "2026-10-02T08:30:08.870Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163120:5945030390:2026-10-02T03:23:21Z:re_review",
-      "comment_id": "5945030390",
-      "comment_version_key": "5945030390:2026-10-02T03:23:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163120#issuecomment-5945030390",
-      "comment_created_at": "2026-10-02T03:23:21Z",
-      "comment_updated_at": "2026-10-02T03:23:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163120,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T03:24:18.064Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/freeze",
-        "head_sha": "ec8a09a8268f8e05bd340bc4b8ac1dca4a81806f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163197:5944856173:2026-10-02T03:24:01Z:clawsweeper_needs_human",
       "comment_id": "5944856173",
@@ -32885,6 +32838,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-workboard-session-capture-owner",
         "head_sha": "06ae626ff63797c36ac8cacde80449dec2515776",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163369:5947684653:2026-10-02T08:29:04Z:clawsweeper_needs_human",
+      "comment_id": "5947684653",
+      "comment_version_key": "5947684653:2026-10-02T08:29:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163369#issuecomment-5947684653",
+      "comment_created_at": "2026-10-02T07:49:47Z",
+      "comment_updated_at": "2026-10-02T08:29:04Z",
+      "comment_body_sha256": "5854739ad0a3b297f3dc8037dffaa0bb352289a40439f4aa318d73a5658b0959",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is Doctor’s update-admission reader. Real synthetic SQLite regressions support its freshness and performa... (sha=11d5ff7edd550c5b723a682a6425774cdc52f4fa)",
+      "expected_head_sha": "11d5ff7edd550c5b723a682a6425774cdc52f4fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T08:30:08.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-maintenance-admission-read",
+        "head_sha": "11d5ff7edd550c5b723a682a6425774cdc52f4fa",
         "cluster_id": null,
         "job_path": null
       }
