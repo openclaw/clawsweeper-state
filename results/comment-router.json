@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:18:55.150Z",
+  "updated_at": "2026-10-02T11:19:56.093Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163208:5945069627:2026-10-02T05:55:12Z:clawsweeper_needs_human",
-      "comment_id": "5945069627",
-      "comment_version_key": "5945069627:2026-10-02T05:55:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163208#issuecomment-5945069627",
-      "comment_created_at": "2026-10-02T03:27:55Z",
-      "comment_updated_at": "2026-10-02T05:55:12Z",
-      "comment_body_sha256": "3b1763c8f45ed6866e48fbedb8546d83cc5835f29a8dc1cc6fb5b00de9592df8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163208,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Have the coordinator verify the owning WAL timer-fixture repair and explicitly release the recorded landing stop. (sha=327854fbf2a52efaafd0705f4f9564ff8da526a7)",
-      "expected_head_sha": "327854fbf2a52efaafd0705f4f9564ff8da526a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T05:56:15.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/s14",
-        "head_sha": "327854fbf2a52efaafd0705f4f9564ff8da526a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163074:5942459585:2026-10-02T05:54:54Z:clawsweeper_needs_human",
       "comment_id": "5942459585",
@@ -33550,6 +33517,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163456:5951205440:2026-10-02T11:18:55Z:re_review",
+      "comment_id": "5951205440",
+      "comment_version_key": "5951205440:2026-10-02T11:18:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163456#issuecomment-5951205440",
+      "comment_created_at": "2026-10-02T11:18:55Z",
+      "comment_updated_at": "2026-10-02T11:18:55Z",
+      "comment_body_sha256": "51d355cb7d1b0733a8cb21b7f19cc53831483d943a7f70f183ceede5acfaa5e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163456,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T11:19:54.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/w75-cua-output",
+        "head_sha": "653a556fa6a6f4910feccee30f2cd46f7ca1a688",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
