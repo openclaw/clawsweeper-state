@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T14:15:07.567Z",
+  "updated_at": "2026-10-02T14:15:16.350Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163264:5948771748:2026-10-02T09:06:14Z:re_review",
-      "comment_id": "5948771748",
-      "comment_version_key": "5948771748:2026-10-02T09:06:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163264#issuecomment-5948771748",
-      "comment_created_at": "2026-10-02T09:06:14Z",
-      "comment_updated_at": "2026-10-02T09:06:14Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163264,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T09:07:21.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sdk-async",
-        "head_sha": "cef4b507b16a525bf7fa5e7b0b1c465d3bdcf4ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163153:5944030275:2026-10-02T09:07:24Z:clawsweeper_auto_repair",
       "comment_id": "5944030275",
@@ -33246,6 +33199,39 @@
         "kind": "pull_request",
         "branch": "fix/release98-telegram-qa-failures",
         "head_sha": "4f8d05c61262329b42cde30c2587d840bd750b74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148112:5661826066:2026-10-02T14:14:14Z:clawsweeper_needs_human",
+      "comment_id": "5661826066",
+      "comment_version_key": "5661826066:2026-10-02T14:14:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148112#issuecomment-5661826066",
+      "comment_created_at": "2026-09-14T09:24:30Z",
+      "comment_updated_at": "2026-10-02T14:14:14Z",
+      "comment_body_sha256": "1ab16732117b9229321261d95f9cb94fdad6f7d4c43c9fd490a9e942c4798558",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Plugin embedded calls without a live parent now wait through reversible suspension instead of rejecting immediately; this can delay completion beyond the embedded runner’s own timeout... (sha=13cff260d05ce73896fc97f67eb2e8814d4445fa)",
+      "expected_head_sha": "13cff260d05ce73896fc97f67eb2e8814d4445fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T14:15:16.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-plugin-embedded-agent-deferred-admission-147997",
+        "head_sha": "13cff260d05ce73896fc97f67eb2e8814d4445fa",
         "cluster_id": null,
         "job_path": null
       }
