@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/peekaboo",
+  "cluster_id": "issue-openclaw-peekaboo-881",
+  "mode": "autonomous",
+  "run_id": "37078825284",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37078825284",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-peekaboo-881.md",
+  "published_at": "2026-10-02T23:46:28.608Z",
+  "canonical": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_issue": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_pr": null,
+  "summary": "No safe implementation established on supplied main. Current code carries and validates exact-window bounds; the selected Bridge host and retained same-session receipts are needed to identify the reported loss. No changes or GitHub mutations made.",
+  "actions": [
+    {
+      "target": "#881",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Preserve the canonical report while the requested host-specific evidence is outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-peekaboo-881",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on identifying the missing receipt field and selected host/protocol from retained same-session evidence. A speculative patch could weaken attribution or retry guarantees. Resume only after that evidence establishes a narrow current-main defect."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#881: Supply the retained, redacted same-session binary version, Bridge status, Simulator inventory row, failing remote capture JSON, and successful local capture JSON requested by steipete, preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to determine whether a narrow current-main defect exists; do not make further focus/input attempts."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#881",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

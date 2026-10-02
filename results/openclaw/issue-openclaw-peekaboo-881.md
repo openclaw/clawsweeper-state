@@ -2,30 +2,30 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37073377013"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37073377013"
+run_id: "37078825284"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37078825284"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-02T22:39:43.137Z"
+published_at: "2026-10-02T23:46:28.608Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-peekaboo-881
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37073377013](https://github.com/openclaw/clawsweeper/actions/runs/37073377013)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37078825284](https://github.com/openclaw/clawsweeper/actions/runs/37078825284)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Keep #881 open. Current-main inspection did not establish the reported evidence-loss boundary. Implementation is blocked pending the retained host/session metadata requested by the maintainer; no code changes or PR are justified yet.
+No safe implementation established on supplied main. Current code carries and validates exact-window bounds; the selected Bridge host and retained same-session receipts are needed to identify the reported loss. No changes or GitHub mutations made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Keep #881 open. Current-main inspection did not establish the reported evidence-
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The selected Bridge's retained receipt evidence is needed to distinguish released-host behavior from current source and identify a narrow repair. Preserve the existing attribution and retry-safety checks; do not repeat potentially dispatched focus operations for diagnosis. |
+| #881 | keep_canonical | planned | canonical | Preserve the canonical report while the requested host-specific evidence is outstanding. |
+| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | Implementation is blocked on identifying the missing receipt field and selected host/protocol from retained same-session evidence. A speculative patch could weaken attribution or retry guarantees. Resume only after that evidence establishes a narrow current-main defect. |
 
 ## Needs Human
 
-- none
+- #881: Supply the retained, redacted same-session binary version, Bridge status, Simulator inventory row, failing remote capture JSON, and successful local capture JSON requested by steipete, preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to determine whether a narrow current-main defect exists; do not make further focus/input attempts.
