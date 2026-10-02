@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-531"
 mode: "autonomous"
-run_id: "36960538561"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36960538561"
-head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
+run_id: "37048204397"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37048204397"
+head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-10-02T03:35:18.223Z"
+published_at: "2026-10-02T18:37:32.974Z"
 canonical: "https://github.com/steipete/oracle/issues/531"
 canonical_issue: "https://github.com/steipete/oracle/issues/531"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36960538561](https://github.com/openclaw/clawsweeper/actions/runs/36960538561)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37048204397](https://github.com/openclaw/clawsweeper/actions/runs/37048204397)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/531
 
 ## Summary
 
-Confirmed #531 on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Emit a narrow implementation plan; #532 remains separate related work. Local implementation is blocked by the read-only workspace. No files or GitHub state were changed.
+Verified #531 remains valid on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Prepared a narrow implementation artifact. Read-only checkout prevents implementation; dependencies are absent, so repository tests were not run. #532 remains a separate performance follow-up.
 
 ## Impact
 
@@ -67,9 +67,9 @@ Confirmed #531 on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Emit 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #531 | fix_needed | planned | canonical | The attachment-selection bug is still present and has a narrow non-security repair. Preserve #531 as the canonical issue and leave it open. |
-| #532 | keep_related | planned | related | Different root cause and acceptance criteria despite sharing files.ts. Leave open for its own implementation; do not include the discovery-performance rewrite in #531. |
-| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned | canonical | A concrete narrow fix path is available without a maintainer decision. Local writes and dependency-backed validation are blocked; the executor must implement, review, and validate this plan. |
+| #531 | fix_needed | planned | canonical | The ordinary attachment-selection bug is source-proven and narrowly repairable. Implementation requires a writable executor checkout. |
+| #532 | keep_related | planned | related | Distinct root cause and remaining work. Keep open for its own implementation cluster; do not change .gitignore discovery in this fix. |
+| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned |  | A focused new fix PR is authorized; closure and merge are prohibited. |
 
 ## Needs Human
 
