@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163547"
-mode: "autonomous"
-run_id: "37013611095"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37013611095"
+mode: "plan"
+run_id: "37021685303"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37021685303"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T14:24:55.609Z"
-canonical: "https://github.com/openclaw/openclaw/issues/163547"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/163547"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T14:45:48.247Z"
+canonical: "#163547"
+canonical_issue: "#163547"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37013611095](https://github.com/openclaw/clawsweeper/actions/runs/37013611095)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37021685303](https://github.com/openclaw/clawsweeper/actions/runs/37021685303)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/163547
+Canonical: #163547
 
 ## Summary
 
-Current main retains the fatal Doctor diagnostic path. A narrow fix artifact is prepared, but implementation and failing-regression proof are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
+Plan one narrow Doctor recovery fix. The clean checkout matches preflight main 2aa2bd669e3aa18f9e7f36cb7c7c3ad6b862a236, where discovery and history-read failures still escape before migrations. No implementation, runtime regression, or upgrade validation was performed in this read-only planning run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main retains the fatal Doctor diagnostic path. A narrow fix artifact is 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163547 | fix_needed | planned | canonical | Source inspection corroborates the Doctor defect. The executor must establish a failing regression through the production diagnostic owner and Doctor preflight before editing. |
-| #162232 | keep_closed | skipped | related | Preserve the landed shared-snapshot owner and its credit. No closure or reopening action is appropriate. |
-| cluster:issue-openclaw-openclaw-163547 | build_fix_artifact | planned |  | Provide an executor-ready, reproduction-first plan for one new fix PR; retain all migration, admission, authority, cancellation, and cleanup boundaries. |
+| #163547 | fix_needed | planned | canonical | A focused bug fix remains warranted. There is no hydrated open implementation PR, and the historical performance PR does not resolve the diagnostic failure. Implementation must first prove safe continuation and preserve unsafe refusals. |
+| #162232 | keep_closed | skipped | related | Historical evidence only; no closeout or branch repair action applies. |
 
 ## Needs Human
 
