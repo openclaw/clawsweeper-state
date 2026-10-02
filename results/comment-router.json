@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T20:46:55.398Z",
+  "updated_at": "2026-10-02T20:47:02.512Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160442:5905675843:2026-09-30T06:43:07Z:re_review",
-      "comment_id": "5905675843",
-      "comment_version_key": "5905675843:2026-09-30T06:43:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160442#issuecomment-5905675843",
-      "comment_created_at": "2026-09-30T06:43:07Z",
-      "comment_updated_at": "2026-09-30T06:43:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160442,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T15:51:29.285Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160442:5935050576:2026-10-01T15:48:06Z:re_review",
       "comment_id": "5935050576",
@@ -32753,6 +32726,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T20:46:55.398Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155019:5764290561:2026-10-02T20:46:01Z:clawsweeper_needs_human",
+      "comment_id": "5764290561",
+      "comment_version_key": "5764290561:2026-10-02T20:46:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155019#issuecomment-5764290561",
+      "comment_created_at": "2026-09-21T16:57:50Z",
+      "comment_updated_at": "2026-10-02T20:46:01Z",
+      "comment_body_sha256": "ef1a60101f44f646b05c4c510ec2d31ecb8616b5a7bdaa286695bb93013b984d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed context renderer has useful real-SQLite persist/reload coverage, but the supplied evidence remains a fixture test with seeded clean... (sha=2eb547eea1eeb02675141490ceb4a86fb68d76e6)",
+      "expected_head_sha": "2eb547eea1eeb02675141490ceb4a86fb68d76e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T20:47:02.512Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failed-delivery-not-outstanding",
+        "head_sha": "2eb547eea1eeb02675141490ceb4a86fb68d76e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
