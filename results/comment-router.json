@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:48:13.252Z",
+  "updated_at": "2026-10-02T11:48:26.299Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126924:5723563366:2026-09-18T01:20:45Z:re_review",
-      "comment_id": "5723563366",
-      "comment_version_key": "5723563366:2026-09-18T01:20:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5723563366",
-      "comment_created_at": "2026-09-18T01:20:45Z",
-      "comment_updated_at": "2026-09-18T01:20:45Z",
-      "comment_body_sha256": "12e23753dea8624b0d1eb41d123310aaab35702f2f378c8dadb81b17297b1c06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126924,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review `d84188291a07cda8fd8df83075b673a5ac40e75d`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T06:50:12.051Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116704:5150075591:2026-10-02T06:49:05Z:clawsweeper_auto_repair",
       "comment_id": "5150075591",
@@ -33112,6 +33085,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T11:48:13.252Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:59:5182800868:2026-10-02T11:47:35Z:clawsweeper_needs_human",
+      "comment_id": "5182800868",
+      "comment_version_key": "5182800868:2026-10-02T11:47:35Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/59#issuecomment-5182800868",
+      "comment_created_at": "2026-08-04T18:03:54Z",
+      "comment_updated_at": "2026-10-02T11:47:35Z",
+      "comment_body_sha256": "519f498582fdc488eef6b3062bd84562e7b1dcf977de40b9311cec99773153a7",
+      "repo": "openclaw/rfcs",
+      "issue_number": 59,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is an RFC document, with no production entrypoint to exercise; the captured evidence consists of document audits and static c... (sha=a4c616d7e242e0fb6dc71d423d660e4b519650cc)",
+      "expected_head_sha": "a4c616d7e242e0fb6dc71d423d660e4b519650cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T11:48:26.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/external-automation-deadlines-rfc",
+        "head_sha": "a4c616d7e242e0fb6dc71d423d660e4b519650cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
