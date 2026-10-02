@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
-mode: "plan"
-run_id: "37077777141"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37077777141"
+mode: "autonomous"
+run_id: "37074756186"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37074756186"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-02T23:32:39.735Z"
-canonical: "#466"
-canonical_issue: "#466"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-10-02T22:56:28.703Z"
+canonical: "https://github.com/openclaw/wacli/issues/466"
+canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37077777141](https://github.com/openclaw/clawsweeper/actions/runs/37077777141)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37074756186](https://github.com/openclaw/clawsweeper/actions/runs/37074756186)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #466
+Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Issue #466 remains a distinct, non-security bug on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Plan one focused implementation PR, conditional on verifying the pinned protocol contract and passing regression coverage and the full repository gate. No changes or tests were performed.
+Confirmed the missing local auto-unarchive path on preflight main. Implementation is blocked by the read-only workspace, unavailable pinned dependency source, and unavailable required toolchains. No files or GitHub state changed; no validated branch or PR exists.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Issue #466 remains a distinct, non-security bug on preflight main a4f23eef739547
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | build_fix_artifact | planned | canonical | A narrow live-sync/store repair is appropriate. Implementation must first prove the protocol semantics and a failing production-handler regression; unknown legacy state must remain unchanged. |
-| #299 | keep_closed | skipped | related | Historical recovery infrastructure is useful context; this merged PR does not resolve #466. |
+| #466 | fix_needed | planned | canonical | The ordinary consistency bug remains present and is distinct from merged explicit-archive repair #299. Keep the issue open while preparing its dedicated fix. |
+| #299 | keep_closed | skipped | related | Historical context for explicit archive propagation and recovery, not a duplicate or replacement target. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Artifact preparation is possible; execution requires a writable checkout, required toolchains, and pinned protocol source. Do not publish a PR before protocol verification, regression coverage, and the full local gate. |
 
 ## Needs Human
 
