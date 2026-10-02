@@ -1,0 +1,116 @@
+{
+  "repo": "openclaw/gogcli",
+  "cluster_id": "issue-openclaw-gogcli-1159",
+  "mode": "autonomous",
+  "run_id": "37078348097",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37078348097",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gogcli-1159.md",
+  "published_at": "2026-10-02T23:39:34.086Z",
+  "canonical": "https://github.com/openclaw/gogcli/issues/1159",
+  "canonical_issue": "https://github.com/openclaw/gogcli/issues/1159",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by #1159's explicit requirement to wait for general availability. The hydrated October 2 review reports insertComment remains Developer Preview despite appearing in public discovery. Current main still uses Drive-backed comment creation and already contains the separate warning fix. No code changes or implementation PR are appropriate.",
+  "actions": [
+    {
+      "target": "#1159",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1159",
+      "candidate_fix": null,
+      "reason": "Keep the canonical capability tracker open. Implementation must wait for confirmed GA and public discovery/Go SDK support under the issue's stated requirement. The automatic queue comment does not override that requirement or the maintainer's decision."
+    },
+    {
+      "target": "#585",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence for a distinct browser workaround; it does not authorize native preview API implementation."
+    },
+    {
+      "target": "#683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical text-range mutation work is distinct from native anchored comment creation."
+    },
+    {
+      "target": "#687",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolving quoted text to ranges does not provide native editor comment anchors."
+    },
+    {
+      "target": "#691",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical orphan-check work is a separate scope; no closure or implementation action is proposed."
+    },
+    {
+      "target": "#1160",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#1162",
+      "reason": "The separate warning correction is already present and does not satisfy native anchored-comment support."
+    },
+    {
+      "target": "#1162",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged adjacent warning fix is historical evidence, not a candidate implementation for #1159."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 6
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 6
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1159",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
