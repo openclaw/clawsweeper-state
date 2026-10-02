@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T22:22:05.444Z",
+  "updated_at": "2026-10-02T22:23:12.045Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5957531433:2026-10-02T17:15:38Z:re_review",
-      "comment_id": "5957531433",
-      "comment_version_key": "5957531433:2026-10-02T17:15:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5957531433",
-      "comment_created_at": "2026-10-02T17:15:38Z",
-      "comment_updated_at": "2026-10-02T17:15:38Z",
-      "comment_body_sha256": "f7bc9242d930399b0620fb99df199074dae18ebf3c4e9d36ed4e51b159f84cb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rev9 two p2 fixed (durable parent-chain canonical gate; fixture nested-tx db path). head b774fd18c9f. 103 files/1293 tests green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T17:16:58.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-anchor-dedup",
-        "head_sha": "b774fd18c9f2f0f6d3f2bfe087d4ac3e71e7e751",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142954:5598452887:2026-10-02T17:16:27Z:clawsweeper_needs_human",
       "comment_id": "5598452887",
@@ -32948,6 +32901,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149725:5692745339:2026-10-02T22:21:46Z:clawsweeper_needs_human",
+      "comment_id": "5692745339",
+      "comment_version_key": "5692745339:2026-10-02T22:21:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5692745339",
+      "comment_created_at": "2026-09-16T05:57:13Z",
+      "comment_updated_at": "2026-10-02T22:21:46Z",
+      "comment_body_sha256": "61f38b8651898b31996570c8795fb237f1c35388da2c149f72757695e8592207",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: retained 57fd090f app observations establish native/Bun success, Pause denial, held-Canvas suppression... (sha=db7b080a224cb489682905d86885782267a879e5)",
+      "expected_head_sha": "db7b080a224cb489682905d86885782267a879e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T22:23:12.045Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/rfc54-macos-rust-runtime",
+        "head_sha": "db7b080a224cb489682905d86885782267a879e5",
+        "cluster_id": "automerge-openclaw-openclaw-149725",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149725.md"
+      }
     }
   ]
 }
