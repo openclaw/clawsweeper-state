@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T16:57:03.440Z",
+  "updated_at": "2026-10-02T16:58:00.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162917:5951894592:2026-10-02T12:01:40Z:stop",
-      "comment_id": "5951894592",
-      "comment_version_key": "5951894592:2026-10-02T12:01:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162917#issuecomment-5951894592",
-      "comment_created_at": "2026-10-02T12:01:40Z",
-      "comment_updated_at": "2026-10-02T12:01:40Z",
-      "comment_body_sha256": "eb7e7849eda8d9761760a30c52b2838d2e6ab06ac93b0a8e18ffea425d30bb96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162917,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "stop",
-      "intent": "stop",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T12:02:34.332Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-anthropic-sdk-0.128.0",
-        "head_sha": "ac2247c07181ef62fd06022f53e06c11d877b7c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/osc-progress:51:5833625980:2026-10-02T12:01:51Z:clawsweeper_needs_human",
       "comment_id": "5833625980",
@@ -33603,6 +33556,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163594:5955312728:2026-10-02T16:56:52Z:clawsweeper_needs_human",
+      "comment_id": "5955312728",
+      "comment_version_key": "5955312728:2026-10-02T16:56:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163594#issuecomment-5955312728",
+      "comment_created_at": "2026-10-02T15:08:28Z",
+      "comment_updated_at": "2026-10-02T16:56:52Z",
+      "comment_body_sha256": "a7b0a9977b4e71be75f534f3ac5cb56887c04ec2d6cafe8737ef33159a40a6f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; the resolved composition with current main has not been reviewed or validated. (sha=5ab3c24ce009a2fbe7aa1ea0c8f3931c1475f72b)",
+      "expected_head_sha": "5ab3c24ce009a2fbe7aa1ea0c8f3931c1475f72b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T16:58:00.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ledger",
+        "head_sha": "5ab3c24ce009a2fbe7aa1ea0c8f3931c1475f72b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
