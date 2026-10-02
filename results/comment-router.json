@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:00:18.685Z",
+  "updated_at": "2026-10-02T03:00:50.806Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3861:5915140066:2026-10-01T22:26:11Z:clawsweeper_needs_human",
-      "comment_id": "5915140066",
-      "comment_version_key": "5915140066:2026-10-01T22:26:11Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3861#issuecomment-5915140066",
-      "comment_created_at": "2026-09-30T16:12:38Z",
-      "comment_updated_at": "2026-10-01T22:26:11Z",
-      "comment_body_sha256": "e2fd0538c3ba5a255a16cfcd6fa2fa9244566791cbf81694fa0419dc6f738268",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3861,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The h3 update also moves its srvx dependency from 0.11.22 to 1.0.5; representative deployed Nitro proxy and server-route responses have not yet been verified to retain their expected... (sha=213d0a42e78b876d59a0644d6e40c39d081958da)",
-      "expected_head_sha": "213d0a42e78b876d59a0644d6e40c39d081958da",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T22:27:32.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/h3-2.0.1-rc.32",
-        "head_sha": "213d0a42e78b876d59a0644d6e40c39d081958da",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161480:5941914788:2026-10-01T22:26:40Z:re_review",
       "comment_id": "5941914788",
@@ -33914,6 +33881,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163191:5944811550:2026-10-02T02:59:53Z:re_review",
+      "comment_id": "5944811550",
+      "comment_version_key": "5944811550:2026-10-02T02:59:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163191#issuecomment-5944811550",
+      "comment_created_at": "2026-10-02T02:59:53Z",
+      "comment_updated_at": "2026-10-02T02:59:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163191,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T03:00:49.453Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cron-ignore-rejected-adds",
+        "head_sha": "8a71dc6f24e15737e0e3f80a29e7dc4584eb237d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
