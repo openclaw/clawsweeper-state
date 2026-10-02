@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:44:39.256Z",
+  "updated_at": "2026-10-02T23:45:18.974Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163636:5958690418:2026-10-02T18:24:40Z:re_review",
-      "comment_id": "5958690418",
-      "comment_version_key": "5958690418:2026-10-02T18:24:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163636#issuecomment-5958690418",
-      "comment_created_at": "2026-10-02T18:24:40Z",
-      "comment_updated_at": "2026-10-02T18:24:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163636,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T18:25:47.586Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delegated-compaction-watchdog",
-        "head_sha": "6c313a7f3e3568522efc201aa382ede0ef4d35be",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163691:5958350072:2026-10-02T18:24:42Z:clawsweeper_needs_human",
       "comment_id": "5958350072",
@@ -33391,6 +33344,39 @@
         "kind": "pull_request",
         "branch": "openclaw/ci-plugin-shutdown",
         "head_sha": "66024d383ab9e39d91fa43b0887c64d2382f8151",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162759:5933560902:2026-10-02T23:44:14Z:clawsweeper_needs_human",
+      "comment_id": "5933560902",
+      "comment_version_key": "5933560902:2026-10-02T23:44:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162759#issuecomment-5933560902",
+      "comment_created_at": "2026-10-01T14:29:57Z",
+      "comment_updated_at": "2026-10-02T23:44:14Z",
+      "comment_body_sha256": "6eb083bbb4fa2967ddbf636cd09c4f4b657f0836911ca1d219a4b461f6a4aca2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162759,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published 2026.9.7 upgrade and rollback outcomes remain incomplete for persisted pins and completion records, includes, read-only sources, and fresh or absent configuration; a failed... (sha=8940d30850a0dba4fda7e38e16c9c78d5bcc7e28)",
+      "expected_head_sha": "8940d30850a0dba4fda7e38e16c9c78d5bcc7e28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T23:45:18.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-webhooks-explicit-listeners",
+        "head_sha": "8940d30850a0dba4fda7e38e16c9c78d5bcc7e28",
         "cluster_id": null,
         "job_path": null
       }
