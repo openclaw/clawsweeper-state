@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T13:11:04.193Z",
+  "updated_at": "2026-10-02T13:11:34.335Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163355:5947967494:2026-10-02T08:12:57Z:re_review",
-      "comment_id": "5947967494",
-      "comment_version_key": "5947967494:2026-10-02T08:12:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163355#issuecomment-5947967494",
-      "comment_created_at": "2026-10-02T08:12:57Z",
-      "comment_updated_at": "2026-10-02T08:12:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163355,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T08:13:51.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/pushprefs",
-        "head_sha": "00366e5a2261322f1d5d964ac8085daf35eb548f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163360:5947969041:2026-10-02T08:13:04Z:re_review",
       "comment_id": "5947969041",
@@ -33408,6 +33361,39 @@
         "kind": "pull_request",
         "branch": "fix/onboarding-hide-unsupported-native",
         "head_sha": "22623756917d87ce9607f8f8c3c8dc47633ba4f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151076:5719823472:2026-10-02T13:10:21Z:clawsweeper_needs_human",
+      "comment_id": "5719823472",
+      "comment_version_key": "5719823472:2026-10-02T13:10:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151076#issuecomment-5719823472",
+      "comment_created_at": "2026-09-17T19:11:24Z",
+      "comment_updated_at": "2026-10-02T13:10:21Z",
+      "comment_body_sha256": "fbed723947f3a79e2e81e8e7c0675e787877304471abcaecfefbd37a346e13ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Rename the PR to describe excluding silent overflows from budget renewal; no-op compactions remain charged. (sha=fd05ee2ffa81b3800b4ac3f2ebae97a3cc81db86)",
+      "expected_head_sha": "fd05ee2ffa81b3800b4ac3f2ebae97a3cc81db86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T13:11:34.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-recovery-noop-budget",
+        "head_sha": "fd05ee2ffa81b3800b4ac3f2ebae97a3cc81db86",
         "cluster_id": null,
         "job_path": null
       }
