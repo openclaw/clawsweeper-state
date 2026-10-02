@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T01:26:19.382Z",
+  "updated_at": "2026-10-02T01:26:27.399Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162997:5940626932:2026-10-01T21:09:44Z:clawsweeper_needs_human",
-      "comment_id": "5940626932",
-      "comment_version_key": "5940626932:2026-10-01T21:09:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162997#issuecomment-5940626932",
-      "comment_created_at": "2026-10-01T21:09:44Z",
-      "comment_updated_at": "2026-10-01T21:09:44Z",
-      "comment_body_sha256": "c7995766b450756a45aa26b2eb83a6ada5444bd51a96995f57c1c64712d124c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162997,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Source updates now generate isolated assets later in the build; the required published-driver × candidate validation is explicitly pending, so compatibility with an installed updater... (sha=f11902bfc8c76cff5c440be88e15535217316601)",
-      "expected_head_sha": "f11902bfc8c76cff5c440be88e15535217316601",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-01T21:11:55.709Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/updater-asset-build-cost",
-        "head_sha": "f11902bfc8c76cff5c440be88e15535217316601",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162996:5940631007:2026-10-01T21:09:57Z:clawsweeper_needs_human",
       "comment_id": "5940631007",
@@ -33565,6 +33532,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163148:5943850953:2026-10-02T01:25:23Z:re_review",
+      "comment_id": "5943850953",
+      "comment_version_key": "5943850953:2026-10-02T01:25:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163148#issuecomment-5943850953",
+      "comment_created_at": "2026-10-02T01:25:23Z",
+      "comment_updated_at": "2026-10-02T01:25:23Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163148,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T01:26:25.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/unknown-command-silence",
+        "head_sha": "39387e9248d31906469ec131cd5da3c0dbc936fb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
