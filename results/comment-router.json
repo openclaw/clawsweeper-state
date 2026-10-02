@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T19:29:32.112Z",
+  "updated_at": "2026-10-02T19:29:37.997Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101665:5003008177:2026-07-17T11:55:16Z:re_review",
-      "comment_id": "5003008177",
-      "comment_version_key": "5003008177:2026-07-17T11:55:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101665#issuecomment-5003008177",
-      "comment_created_at": "2026-07-17T11:55:16Z",
-      "comment_updated_at": "2026-07-17T11:55:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101665,
-      "author": "BenGuanRan",
-      "author_id": 117555359,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T14:16:28.401Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101665:5003132624:2026-07-17T12:11:47Z:re_review",
       "comment_id": "5003132624",
@@ -33232,6 +33205,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kitchen-sink:112:5923134636:2026-10-02T19:28:45Z:clawsweeper_needs_human",
+      "comment_id": "5923134636",
+      "comment_version_key": "5923134636:2026-10-02T19:28:45Z",
+      "comment_url": "https://github.com/openclaw/kitchen-sink/pull/112#issuecomment-5923134636",
+      "comment_created_at": "2026-10-01T01:52:53Z",
+      "comment_updated_at": "2026-10-02T19:28:45Z",
+      "comment_body_sha256": "bcf78ff9cb30e4a8dbb83e7908112740ca6d25f64a545e03563dc208b3ef105f",
+      "repo": "openclaw/kitchen-sink",
+      "issue_number": 112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5861accfe4c9a97acabfa3a7c4f28a5a55d03c2c)",
+      "expected_head_sha": "5861accfe4c9a97acabfa3a7c4f28a5a55d03c2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T19:29:37.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/brace-expansion-5.0.12",
+        "head_sha": "5861accfe4c9a97acabfa3a7c4f28a5a55d03c2c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
