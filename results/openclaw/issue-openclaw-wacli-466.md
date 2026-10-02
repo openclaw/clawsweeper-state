@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
-mode: "autonomous"
-run_id: "37055414971"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37055414971"
+mode: "plan"
+run_id: "37057248998"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37057248998"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T19:43:02.579Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T19:59:11.694Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37055414971](https://github.com/openclaw/clawsweeper/actions/runs/37055414971)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37057248998](https://github.com/openclaw/clawsweeper/actions/runs/37057248998)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the missing live-sync archive reconciliation on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Prepared a scoped fix plan. Implementation and validation are blocked by the read-only filesystem; independent pinned-protocol verification is blocked by GitHub DNS failure. No files or GitHub state were changed, and no regression or full gate passed.
+Issue #466 remains a viable, non-security fix candidate on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Plan one implementation PR after verifying protocol semantics and establishing a failing production-handler regression. No files or GitHub state were changed; no regression or validation gates were run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed the missing live-sync archive reconciliation on preflight main a4f23ee
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The existing behavior still needs a focused repair. Runtime reproduction and protocol-boundary verification remain prerequisites; the issue must remain open. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The plan is available for a writable executor. Local implementation, failing-regression proof, protocol verification, and required validation are blocked in this worker; do not open a PR until those prerequisites pass. |
+| https://github.com/openclaw/wacli/issues/466 | fix_needed | planned | canonical | The inspected main still lacks local auto-unarchive. Implementation must first verify preference polarity, collection routing, and archive/message ordering rather than infer them from field names. |
 
 ## Needs Human
 
