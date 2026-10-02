@@ -2,16 +2,16 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-365"
 mode: "autonomous"
-run_id: "37002768078"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37002768078"
+run_id: "37003486366"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37003486366"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-02T11:50:25.066Z"
+published_at: "2026-10-02T11:58:13.163Z"
 canonical: "https://github.com/openclaw/wacli/issues/365"
 canonical_issue: "https://github.com/openclaw/wacli/issues/365"
 canonical_pr: null
-actions_total: 7
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37002768078](https://github.com/openclaw/clawsweeper/actions/runs/37002768078)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37003486366](https://github.com/openclaw/clawsweeper/actions/runs/37003486366)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/wacli/issues/365
 
 ## Summary
 
-No safe implementation PR can be specified: current main contains the confirmed parser repairs and conditional primary-device recovery, but the six all-empty groups remain unexplained. A current-main reproduction with redacted payload-shape and ingestion/decryption evidence is needed. No files or GitHub items were changed.
+No implementation PR is justified yet. Current main contains the confirmed parser and conditional recovery repairs, but the six all-empty groups remain unexplained without a current-main reproduction or representative payload evidence. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,14 +66,15 @@ No safe implementation PR can be specified: current main contains the confirmed 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #365 | needs_human | blocked | needs_human | Implementation is blocked on a reproducible remaining defect: obtain a current-main replay and redacted payload-shape/ingestion evidence from an affected group to distinguish absent content, unsupported payloads, and delivery/decryption failure. Selecting a recovery or parser patch now would invent the root cause. Keep the canonical issue open; emit no executable fix artifact. |
-| #344 | keep_closed | skipped | related | Historical diagnostic improvement; it does not establish the empty-group root cause. |
-| #362 | keep_closed | skipped | related | A distinct repaired message-edit defect, not proof that the six groups are recovered. |
-| #371 | keep_closed | skipped | related | Different failure mode; historical context only. |
-| #383 | keep_closed | skipped | related | Confirmed partial repair already present; remaining empty-group investigation stays open. |
-| #416 | keep_closed | skipped | related | Confirmed partial repair; cannot serve as complete coverage of #365. |
-| #441 | keep_closed | skipped | related | Related recovery support already shipped; no basis to repeat that patch or declare #365 fixed. |
+| #365 | keep_canonical | planned | canonical | The remaining observation is not proven fixed or attributable to a specific current-main defect. Preserve the canonical investigation. |
+| #344 | keep_closed | skipped | related | Historical diagnostic work; it does not identify the six groups' root cause. |
+| #362 | keep_closed | skipped | related | A resolved encrypted-edit defect with a distinct root cause. |
+| #371 | keep_closed | skipped | related | Historical backfill context; coverage of the six empty groups is not established. |
+| #383 | keep_closed | skipped | related | Addresses confirmed parser gaps without establishing the remaining empty-group cause. |
+| #416 | keep_closed | skipped | related | The focused parser repair is present; repeating it would not satisfy the remaining request. |
+| #441 | keep_closed | skipped | related | Recovery support is present, but recovery of the six reported groups remains unproven. |
+| cluster:issue-openclaw-wacli-365 | needs_human | blocked | needs_human | Obtain a current-main reproduction and redacted payload-shape/decryption diagnostics for an affected group, showing which expected text messages arrive and become empty rows. Without that evidence, a patch would guess at the root cause and cannot support a closing reference. |
 
 ## Needs Human
 
-- #365: Obtain a current-main reproduction and redacted payload-shape, ingestion, and decryption evidence from an affected group. The October 2 hydrated review reports no high-confidence reproduction for the six all-empty groups; #416 explicitly excludes establishing their cause, and #441 provides conditional recovery without proving those groups recover. The supplied artifacts cannot safely determine an implementation.
+- #365: Provide a reproduction on main a4f23eef7395473931e3a44c93eacd6ebebdc313 and redacted payload-shape/decryption diagnostics for an affected group that connect expected text messages to empty stored rows. The supplied v0.17.1 measurements and synthetic parser/SDK tests do not isolate the remaining defect.
