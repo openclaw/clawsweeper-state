@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T11:10:51.323Z",
+  "updated_at": "2026-10-02T11:10:55.061Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163281:5946243952:2026-10-02T05:39:29Z:re_review",
-      "comment_id": "5946243952",
-      "comment_version_key": "5946243952:2026-10-02T05:39:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163281#issuecomment-5946243952",
-      "comment_created_at": "2026-10-02T05:39:29Z",
-      "comment_updated_at": "2026-10-02T05:39:29Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163281,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T05:40:25.196Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-arm64-playwright-discovery",
-        "head_sha": "13700277ee1d77f956b83d05c85a0a308987feff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163289:5946248592:2026-10-02T05:40:01Z:clawsweeper_needs_human",
       "comment_id": "5946248592",
@@ -33550,6 +33503,39 @@
       "status": "skipped",
       "processed_at": "2026-10-02T11:10:51.323Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163300:5946600906:2026-10-02T11:09:41Z:clawsweeper_needs_human",
+      "comment_id": "5946600906",
+      "comment_version_key": "5946600906:2026-10-02T11:09:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163300#issuecomment-5946600906",
+      "comment_created_at": "2026-10-02T06:15:27Z",
+      "comment_updated_at": "2026-10-02T11:09:41Z",
+      "comment_body_sha256": "b36947cd2070f1c262b95994e0a96c33967a80393aefd6a47b960bbf2b214793",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured body reports real installed-host Add and task success, but does not show the changed Gate...; Review finding: [P1] Compare committed policy after the Update agent write — src/claws/update-apply.ts:675-678 - [P2] Prepare migration facts outside the synchronous Add guard — s... (sha=26a9707d9670381fa804f43a8ee1dbc8cebb9dd5)",
+      "expected_head_sha": "26a9707d9670381fa804f43a8ee1dbc8cebb9dd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T11:10:55.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-1093-v2-07-access-guards",
+        "head_sha": "26a9707d9670381fa804f43a8ee1dbc8cebb9dd5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
