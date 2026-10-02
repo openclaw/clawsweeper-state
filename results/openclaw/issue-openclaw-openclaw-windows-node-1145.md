@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1145"
 mode: "autonomous"
-run_id: "37078848284"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37078848284"
+run_id: "37079638113"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37079638113"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-02T23:45:50.726Z"
+result_status: "needs_human"
+published_at: "2026-10-02T23:56:07.458Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1145"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1145"
 canonical_pr: "https://github.com/openclaw/openclaw-windows-node/pull/1426"
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-node-1145
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37078848284](https://github.com/openclaw/clawsweeper/actions/runs/37078848284)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37079638113](https://github.com/openclaw/clawsweeper/actions/runs/37079638113)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1145
 
 ## Summary
 
-No new PR warranted: supplied current main already contains the targeted list-wrapping repair and regression coverage. Original-message runtime confirmation remains unverified. No code or GitHub changes made.
+No new PR proposed. Current main contains the targeted list-wrapping repair and regression tests. Confirmation with the original messages remains necessary before declaring #1145 fully resolved. No code or GitHub changes were made.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No new PR warranted: supplied current main already contains the targeted list-wr
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ No new PR warranted: supplied current main already contains the targeted list-wr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1145 | keep_canonical | planned | canonical | The reported list-measurement mechanism already has a focused implementation. Keep the issue open for original-message confirmation rather than create a speculative second patch; closure is prohibited by this job. |
-| #1426 | keep_closed | skipped | related | Historical merged contributor work supplies the existing repair. Preserve its attribution; no action on the closed PR. |
+| #1145 | keep_canonical | planned | canonical | The demonstrated clipping mechanism already has an implementation on current main. A new patch would be speculative without a remaining reproduction. Keep the original issue open for confirmation; closure and merge are prohibited in this lane. |
+| #1426 | keep_closed | skipped | related | Preserve @karkarl's existing implementation credit. This PR is already closed and receives no mutation. |
 
 ## Needs Human
 
-- none
+- For #1145 only: confirm the original numbered, bulleted, and inline-code messages in a current-main Windows Release build at narrow and resized widths, then decide whether the shipped repair fully resolves the report. If clipping remains, capture the exact message and current-build screenshot to define a focused follow-up.
