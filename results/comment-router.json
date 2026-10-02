@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:38:47.517Z",
+  "updated_at": "2026-10-02T06:38:51.908Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5943933762:2026-10-02T01:34:00Z:re_review",
-      "comment_id": "5943933762",
-      "comment_version_key": "5943933762:2026-10-02T01:34:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5943933762",
-      "comment_created_at": "2026-10-02T01:34:00Z",
-      "comment_updated_at": "2026-10-02T01:34:00Z",
-      "comment_body_sha256": "806669ea5f3b2fc02f55db851f3e8aa7772f0b650ba0125e26681f1f670f7d9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main 01d479d85e into memorytunning-pr-v2 (new head 6e283adfc7, 0 behind). focused audit tests pass (14/14). tsgo:core errors are upstream-only (node-proxy-agent, plugin-sdk api-baseline, skills refresh), none in our audit/skill-selection files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T01:34:51.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "6e283adfc739f2bc990b14806a3e5f21e5eb5094",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163105:5942960971:2026-10-02T01:34:08Z:clawsweeper_needs_human",
       "comment_id": "5942960971",
@@ -33343,6 +33296,39 @@
         "kind": "pull_request",
         "branch": "fix/channel-monitor-work-scope",
         "head_sha": "5d230d6833b970a8e680460f438edca6b3d937e6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163053:5942200965:2026-10-02T06:37:55Z:clawsweeper_needs_human",
+      "comment_id": "5942200965",
+      "comment_version_key": "5942200965:2026-10-02T06:37:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163053#issuecomment-5942200965",
+      "comment_created_at": "2026-10-01T22:47:10Z",
+      "comment_updated_at": "2026-10-02T06:37:55Z",
+      "comment_body_sha256": "e2d27313206b37599a56958383357f1ef3263f987b24ca8553a812c213c3b202",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163053,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Update the PR body with the published head, successful current-head type checks, standalone regression timings, and actual prompt-admission/cache-TTL validation results. (sha=7c6d949f522f804a01aabbd9c864df1c98f53b50)",
+      "expected_head_sha": "7c6d949f522f804a01aabbd9c864df1c98f53b50",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T06:38:51.908Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-agent-db-main-thread-holds-20260919",
+        "head_sha": "7c6d949f522f804a01aabbd9c864df1c98f53b50",
         "cluster_id": null,
         "job_path": null
       }
