@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T15:51:01.626Z",
+  "updated_at": "2026-10-02T15:51:01.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142888:5922512120:2026-10-01T00:53:56Z:re_review",
-      "comment_id": "5922512120",
-      "comment_version_key": "5922512120:2026-10-01T00:53:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142888#issuecomment-5922512120",
-      "comment_created_at": "2026-10-01T00:53:56Z",
-      "comment_updated_at": "2026-10-01T00:53:56Z",
-      "comment_body_sha256": "1c07ba309b416d28d572313118c16fd8694fdccf60a9b7ef631310cc381cda13",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142888,
-      "author": "Richard355168",
-      "author_id": 215392403,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T11:10:48.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-completions-cumulative-delta-replay",
-        "head_sha": "ad8f3f92ca009003f58dfec490bd63bf5e86564c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142888:5599949835:2026-09-09T09:53:39Z:re_review",
       "comment_id": "5599949835",
@@ -33260,6 +33213,39 @@
         "kind": "pull_request",
         "branch": "docs/readme-inspect-exit-code",
         "head_sha": "86ec996d086c379995e465c5d879f0a13d3e1c8f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:261:5927666534:2026-10-02T15:49:49Z:clawsweeper_needs_human",
+      "comment_id": "5927666534",
+      "comment_version_key": "5927666534:2026-10-02T15:49:49Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/261#issuecomment-5927666534",
+      "comment_created_at": "2026-10-01T08:26:29Z",
+      "comment_updated_at": "2026-10-02T15:49:49Z",
+      "comment_body_sha256": "bed1ecdbe972dfa4491f5e81aa03e608b6def81ad181c7a54aae325ed9330dc9",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 261,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Confirm Crawlkit v0.16.7 release publication and satisfy the two-day cooldown; the verified tag-based minimum is 2026-10-03T07:56:58Z, with later publication potentially requiring a l... (sha=8f9ec83b22a95c13bdfeb9fba350139f1b0b6363)",
+      "expected_head_sha": "8f9ec83b22a95c13bdfeb9fba350139f1b0b6363",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T15:51:01.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/crawlkit-0.16.7-20261001",
+        "head_sha": "8f9ec83b22a95c13bdfeb9fba350139f1b0b6363",
         "cluster_id": null,
         "job_path": null
       }
