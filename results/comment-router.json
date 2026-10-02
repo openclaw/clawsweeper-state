@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:04:27.384Z",
+  "updated_at": "2026-10-02T23:05:31.315Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5693244222:2026-09-16T06:47:29Z:re_review",
-      "comment_id": "5693244222",
-      "comment_version_key": "5693244222:2026-09-16T06:47:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5693244222",
-      "comment_created_at": "2026-09-16T06:47:29Z",
-      "comment_updated_at": "2026-09-16T06:47:29Z",
-      "comment_body_sha256": "9b80f1aacc3472652a23d5674216db8aecd9ed571198053bd242cd11965b65e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T17:45:12.025Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5697449557:2026-09-16T12:30:43Z:re_review",
       "comment_id": "5697449557",
@@ -33208,6 +33181,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163848:5962847336:2026-10-02T23:04:40Z:autofix",
+      "comment_id": "5962847336",
+      "comment_version_key": "5962847336:2026-10-02T23:04:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163848#issuecomment-5962847336",
+      "comment_created_at": "2026-10-02T23:04:40Z",
+      "comment_updated_at": "2026-10-02T23:04:40Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163848,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "autofix enabled; current checks are failing: openclaw/dependency-review:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-02T23:05:28.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/clawhub-plugin-first",
+        "head_sha": "89bd78f0f5acdbb0a3f7be1246f18274b3b3e73a",
+        "cluster_id": "automerge-openclaw-openclaw-163848",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163848.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163848.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163848.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
