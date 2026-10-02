@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-02T03:55:27.138Z",
+  "updated_at": "2026-10-02T03:56:11.169Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143991:5942691017:2026-10-01T23:32:12Z:re_review",
-      "comment_id": "5942691017",
-      "comment_version_key": "5942691017:2026-10-01T23:32:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143991#issuecomment-5942691017",
-      "comment_created_at": "2026-10-01T23:32:12Z",
-      "comment_updated_at": "2026-10-01T23:32:12Z",
-      "comment_body_sha256": "4c572d1cca59ceb0b05bdc625d641880dd0a242e4f9c6bf48ed32a1ebdff7abd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143991,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-01T23:40:04.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-add-recreate-deleted-id",
-        "head_sha": "a73367216f794a288760425556a0befa586188c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:147:5942778533:2026-10-01T23:39:14Z:clawsweeper_needs_human",
       "comment_id": "5942778533",
@@ -33456,6 +33409,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163232:5945314369:2026-10-02T03:54:43Z:clawsweeper_needs_human",
+      "comment_id": "5945314369",
+      "comment_version_key": "5945314369:2026-10-02T03:54:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163232#issuecomment-5945314369",
+      "comment_created_at": "2026-10-02T03:54:43Z",
+      "comment_updated_at": "2026-10-02T03:54:43Z",
+      "comment_body_sha256": "0181a0a6dacf3e01adc9183cad330bd03406fedd9f1409a43f5ca5eaa48bd6fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record Linux execution of the existing Bun launcher regression and supply covering published-driver-to-candidate update evidence before merge. (sha=2425eec4b6fc105d7b96a69f3a13f27787d77749)",
+      "expected_head_sha": "2425eec4b6fc105d7b96a69f3a13f27787d77749",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T03:56:11.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bun-native-package-imports",
+        "head_sha": "2425eec4b6fc105d7b96a69f3a13f27787d77749",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
