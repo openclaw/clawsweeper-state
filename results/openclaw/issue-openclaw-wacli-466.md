@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
-mode: "autonomous"
-run_id: "37048218980"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37048218980"
+mode: "plan"
+run_id: "37051300662"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37051300662"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-02T18:38:29.291Z"
-canonical: "https://github.com/openclaw/wacli/issues/466"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-02T19:05:58.287Z"
+canonical: "#466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37048218980](https://github.com/openclaw/clawsweeper/actions/runs/37048218980)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37051300662](https://github.com/openclaw/clawsweeper/actions/runs/37051300662)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/wacli/issues/466
+Canonical: #466
 
 ## Summary
 
-The local archive-state gap remains on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation is blocked by the read-only filesystem, unavailable required toolchain/dependencies, and failed GitHub DNS resolution. No code changed; no regression or full gate completed. Protocol semantics remain unverified. Return the scoped fix plan for a writable executor; keep #466 open.
+Plan a narrow fix for #466 on the preflight main commit a4f23eef7395473931e3a44c93eacd6ebebdc313. Inspection supports the reported missing local auto-unarchive path. No files or GitHub state changed; regression execution, pinned protocol verification, and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The local archive-state gap remains on preflight main a4f23eef7395473931e3a44c93
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | Source inspection confirms missing local reconciliation. Execution blockers do not create an unresolved maintainer decision. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The fix plan is available; implementation is blocked by filesystem/toolchain/network constraints. Do not open a PR from this unchanged checkout. |
+| #466 | fix_needed | planned | canonical | The issue remains a viable ordinary synchronization bug. Implement only after verifying the pinned protocol contract; retain the issue until a separately reviewed implementation lands. |
 
 ## Needs Human
 
