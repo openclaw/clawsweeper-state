@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163832",
+  "mode": "autonomous",
+  "run_id": "37074519152",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37074519152",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163832.md",
+  "published_at": "2026-10-02T22:55:27.510Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163832",
+  "canonical_pr": null,
+  "summary": "Verified the reported source defects on preflight main 1275c610039527240f3879c604c28bcafcdc9003 and prepared a narrow implementation plan. Implementation and required validation are blocked by the read-only host, absent dependencies, and unavailable approved catalog export. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#163832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163832",
+      "candidate_fix": null,
+      "reason": "The existing UI behavior remains broken. Keep the issue open and implement through the cluster fix artifact; no viable hydrated PR owns this repair."
+    },
+    {
+      "target": "#145417",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical design context only; preserve the existing card geometry and bounded shelves."
+    },
+    {
+      "target": "#163459",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Conservatively quarantine only this linked PR for central OpenClaw security handling. Do not mutate or incorporate it into the UI repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#163832",
+      "candidate_fix": null,
+      "reason": "A narrow non-security fix remains appropriate. The artifact is ready for a writable executor; it is not a validated patch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163832",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#163832",
+      "candidate_fix": null,
+      "reason": "The executor must implement and validate the fix on clawsweeper/issue-openclaw-openclaw-163832 using an approved export before the deterministic scripts open or update the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
