@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-02T21:31:37.306Z",
+  "updated_at": "2026-10-02T21:31:44.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:4961581997:2026-07-13T19:05:35Z:re_review",
-      "comment_id": "4961581997",
-      "comment_version_key": "4961581997:2026-07-13T19:05:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-4961581997",
-      "comment_created_at": "2026-07-13T19:05:35Z",
-      "comment_updated_at": "2026-07-13T19:05:35Z",
-      "comment_body_sha256": "c44ec12190f1a55ced719527c90b34a360f4d60ae2463cd3cc65cf2e8a3d9f3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T16:34:49.831Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:4990641317:2026-07-16T10:07:48Z:re_review",
       "comment_id": "4990641317",
@@ -32869,6 +32842,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128252:5386881254:2026-10-02T21:30:29Z:clawsweeper_needs_human",
+      "comment_id": "5386881254",
+      "comment_version_key": "5386881254:2026-10-02T21:30:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128252#issuecomment-5386881254",
+      "comment_created_at": "2026-08-23T15:48:51Z",
+      "comment_updated_at": "2026-10-02T21:30:29Z",
+      "comment_body_sha256": "2e209ab591eed80c5210d11553b7c2d120462212df2511c9d0330a6dc31a31a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied pinned-head Docker run exercises lifecycle tests with mocked task writers and confirms two pre-fix failures, but does not observe... (sha=6baae77194184e1818a7db55864e6615272d08cb)",
+      "expected_head_sha": "6baae77194184e1818a7db55864e6615272d08cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-02T21:31:44.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delivery-status-independent",
+        "head_sha": "6baae77194184e1818a7db55864e6615272d08cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
