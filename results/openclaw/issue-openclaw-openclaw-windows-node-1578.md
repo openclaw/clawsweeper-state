@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1578"
 mode: "autonomous"
-run_id: "36923954962"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36923954962"
-head_sha: "6566c6974a29b61193690f4fcc9a3181ee34c233"
+run_id: "36969186712"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36969186712"
+head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
 workflow_conclusion: "success"
-result_status: "needs_human"
-published_at: "2026-10-01T20:49:41.131Z"
+result_status: "blocked"
+published_at: "2026-10-02T05:33:16.339Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1578"
-canonical_pr: null
-actions_total: 1
+canonical_pr: "https://github.com/openclaw/openclaw-windows-node/pull/1591"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-windows-node-1578
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36923954962](https://github.com/openclaw/clawsweeper/actions/runs/36923954962)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/36969186712](https://github.com/openclaw/clawsweeper/actions/runs/36969186712)
 
 Workflow conclusion: success
 
-Worker result: needs_human
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1578
 
 ## Summary
 
-Current main already bypasses installation for recognized healthy Gateway packages. The affected build and package registration are needed to establish a focused repair. No code or GitHub changes were made; no PR is recommended yet.
+The documented WinGet failure is repaired on supplied current main by #1591. Healthy existing packages already bypass installation. No additional PR is justified without evidence of a remaining package-detection defect. No code or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Current main already bypasses installation for recognized healthy Gateway packag
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1578 | keep_canonical | planned | canonical | Keep the report open. Existing source covers recognized healthy installed packages, but does not establish that the reported failure is fixed. The missing reproduction evidence prevents choosing a safe, narrow implementation. |
+| #1578 | keep_canonical | planned | canonical | Keep the issue open for its distinct detection claim. Additional implementation is blocked until a current-main reproduction supplies the Companion build, Windows version, current-user Gateway package name/publisher/family/version/health, qualified alias availability, and exact setup error. The existing evidence does not establish which detection condition fails. |
+| #1591 | keep_closed | skipped | related | Preserve @RomneyDa's landed repair and attribution. This closed PR is historical evidence, not a mutation target. |
 
 ## Needs Human
 
-- #1578: Provide the affected Companion build, exact error text, current-user Gateway package name/publisher/family/version/status, and availability of its package-qualified openclaw.exe and clawctl.exe aliases. This will distinguish a detection regression from an unsupported or unhealthy installation before selecting a repair.
+- none
