@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T08:24:14.979Z",
+  "updated_at": "2026-10-02T08:24:18.741Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160699:5878294993:2026-10-02T03:17:26Z:clawsweeper_needs_human",
-      "comment_id": "5878294993",
-      "comment_version_key": "5878294993:2026-10-02T03:17:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160699#issuecomment-5878294993",
-      "comment_created_at": "2026-09-28T20:51:30Z",
-      "comment_updated_at": "2026-10-02T03:17:26Z",
-      "comment_body_sha256": "7abe9c2832561d1618c7e6d9cec4ee706c876b8d145c7344d2e95ecd2ffcfa7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160699,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading intentionally stops replay of markerless pending DM content and requires a fresh DM, even after approval; owner acceptance of this recovery tradeoff remains outstanding.; Review finding: [medium] Confirm anonymous club access to ordinary agent work — extensions/tlon/src/monitor/club-message.ts:33 (sha=75833d6f69e77cf31203e9a39b8e219980fc3605)",
-      "expected_head_sha": "75833d6f69e77cf31203e9a39b8e219980fc3605",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T03:18:01.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1071",
-        "head_sha": "75833d6f69e77cf31203e9a39b8e219980fc3605",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163200:5944904435:2026-10-02T03:17:25Z:clawsweeper_needs_human",
       "comment_id": "5944904435",
@@ -32894,6 +32861,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163269:5948113353:2026-10-02T08:23:17Z:re_review",
+      "comment_id": "5948113353",
+      "comment_version_key": "5948113353:2026-10-02T08:23:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163269#issuecomment-5948113353",
+      "comment_created_at": "2026-10-02T08:23:17Z",
+      "comment_updated_at": "2026-10-02T08:23:17Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163269,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-02T08:24:16.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/s24",
+        "head_sha": "cf10f582bc4ae01ef12dad699e5ae35e8740b031",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
