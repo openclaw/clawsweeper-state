@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163939",
+  "mode": "autonomous",
+  "run_id": "37087801845",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37087801845",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163939.md",
+  "published_at": "2026-10-03T02:27:06.920Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163939",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163939",
+  "canonical_pr": null,
+  "summary": "Both failure paths were reproduced using in-memory execution of production modules at preflight main ff96d47c3506c50123a555332e6a6cc576b2559f. A narrow fix artifact is ready for the executor. Implementation is blocked by the read-only filesystem; dependencies and native Windows validation are unavailable. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#163939",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163939",
+      "candidate_fix": null,
+      "reason": "Existing diagnostic behavior is broken and has a narrow repair path. Implementation requires a writable executor checkout and the specified validation."
+    },
+    {
+      "target": "#162254",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical environment context only; already closed and unrelated to the diagnostic root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163939",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163939",
+      "candidate_fix": null,
+      "reason": "The fix plan is actionable, but this worker cannot implement or validate a repaired branch under the host restrictions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
