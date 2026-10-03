@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-831"
 mode: "autonomous"
-run_id: "37139455042"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37139455042"
+run_id: "37151414776"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37151414776"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-03T17:12:58.371Z"
+result_status: "blocked"
+published_at: "2026-10-03T20:27:39.900Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/831"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/831"
 canonical_pr: "https://github.com/openclaw/Peekaboo/pull/832"
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37139455042](https://github.com/openclaw/clawsweeper/actions/runs/37139455042)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37151414776](https://github.com/openclaw/clawsweeper/actions/runs/37151414776)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/Peekaboo/issues/831
 
 ## Summary
 
-Audited no-PR outcome: the source repair is present on preflight main 2297a96bc4dd04212daa90aca18a350eabeabd6e. #831 remains open for corrected-distribution qualification and publication, which this implementation job does not authorize.
+No implementation PR is warranted: the source repair and runtime compatibility gates are present on supplied main afb5487d765dad703425b7d22d2ed71d4e784305. #831 remains open for corrected-distribution qualification and publication, which this implementation job does not authorize.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Audited no-PR outcome: the source repair is present on preflight main 2297a96bc4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #831 | keep_canonical | planned | canonical | Another implementation PR would duplicate the existing source repair. Preserve the issue for qualification of corrected bytes on an older Xcode-free Mac and separately authorized publication; source presence alone does not resolve the distribution report. |
-| #797 | keep_closed | skipped | independent | Historical context only; no action is required. |
-| #832 | keep_closed | skipped | canonical | Already merged canonical source repair; no branch repair, merge, or closure is needed. |
-| #883 | keep_closed | skipped | related | Merged audit follow-through is historical evidence, not an open candidate requiring automation. |
+| #831 | keep_canonical | planned | canonical | The remaining work requires qualifying corrected release bytes on an older Xcode-free Mac and publishing a corrected distribution through the release workflow. Another source PR would duplicate the existing repair and would not satisfy the issue. |
+| #797 | keep_closed | skipped | independent | Historical context only; no action is appropriate. |
+| #832 | keep_closed | skipped | related | Merged source repair is historical evidence, not an open repair or merge target. |
+| #883 | keep_closed | skipped | related | Merged compatibility-audit follow-up does not establish corrected-distribution publication or native launch qualification. |
 
 ## Needs Human
 
