@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:36:33.859Z",
+  "updated_at": "2026-10-03T23:37:53.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164325:5971608676:2026-10-03T17:22:35Z:re_review",
-      "comment_id": "5971608676",
-      "comment_version_key": "5971608676:2026-10-03T17:22:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164325#issuecomment-5971608676",
-      "comment_created_at": "2026-10-03T17:22:35Z",
-      "comment_updated_at": "2026-10-03T17:22:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164325,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:23:35.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-terminal-truecolor-164323",
-        "head_sha": "a85d6863d86c8e616f98e01c1f6fd932197acde1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122135:5256881030:2026-10-03T17:23:10Z:clawsweeper_auto_repair",
       "comment_id": "5256881030",
@@ -33289,6 +33242,39 @@
         "kind": "pull_request",
         "branch": "f356-userdoc-flake",
         "head_sha": "c3be3f36edd562c9cdbf880fa73dd1f53369c09d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164616:5974654517:2026-10-03T23:36:55Z:clawsweeper_needs_human",
+      "comment_id": "5974654517",
+      "comment_version_key": "5974654517:2026-10-03T23:36:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164616#issuecomment-5974654517",
+      "comment_created_at": "2026-10-03T23:36:55Z",
+      "comment_updated_at": "2026-10-03T23:36:55Z",
+      "comment_body_sha256": "891925a268d5b385ab0b62713c7e53db44e3777d901248e5228024cce4e1f19f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164616,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Bundled service installation now requires successful deep runtime-intent inspection; intercepted tests do not establish fresh-install and existing-service upgrade behavior through the... (sha=d0df33bb6ce4d5153fea3da87c7cc3efae7fcae6)",
+      "expected_head_sha": "d0df33bb6ce4d5153fea3da87c7cc3efae7fcae6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:37:53.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mac-migration-expected-runtime-pin",
+        "head_sha": "d0df33bb6ce4d5153fea3da87c7cc3efae7fcae6",
         "cluster_id": null,
         "job_path": null
       }
