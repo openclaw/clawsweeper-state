@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T12:00:05.282Z",
+  "updated_at": "2026-10-03T12:00:22.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164080:5966322919:2026-10-03T06:23:23Z:clawsweeper_auto_repair",
-      "comment_id": "5966322919",
-      "comment_version_key": "5966322919:2026-10-03T06:23:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164080#issuecomment-5966322919",
-      "comment_created_at": "2026-10-03T06:23:23Z",
-      "comment_updated_at": "2026-10-03T06:23:23Z",
-      "comment_body_sha256": "c11d0181173f1ba7ef357f0e3b9bc0e0a074dc8048500f229faf4c1e495b9253",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164080,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=78cf2f18472e70f7cb34eb4ca847826baedd4048)",
-      "expected_head_sha": "78cf2f18472e70f7cb34eb4ca847826baedd4048",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T06:24:17.113Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-reconnect-tls-trust-review",
-        "head_sha": "78cf2f18472e70f7cb34eb4ca847826baedd4048",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164078:5966324782:2026-10-03T06:23:37Z:clawsweeper_needs_human",
       "comment_id": "5966324782",
@@ -32748,6 +32715,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164277:5968943382:2026-10-03T11:59:35Z:re_review",
+      "comment_id": "5968943382",
+      "comment_version_key": "5968943382:2026-10-03T11:59:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164277#issuecomment-5968943382",
+      "comment_created_at": "2026-10-03T11:59:35Z",
+      "comment_updated_at": "2026-10-03T11:59:35Z",
+      "comment_body_sha256": "b9bfa78bb88783dd9a65e0d80fad66d57840c557f0e6e4e9cb80188e62b7c920",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164277,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T12:00:21.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mcp-apps-deslop",
+        "head_sha": "808d08038ca0c4cd8339aa7dbb02c043181aea16",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
