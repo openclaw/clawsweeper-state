@@ -1,0 +1,73 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "autonomous",
+  "run_id": "37160686321",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37160686321",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-03T23:10:21.426Z",
+  "canonical": "https://github.com/steipete/oracle/issues/531",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/531",
+  "canonical_pr": null,
+  "summary": "The defect remains on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix artifact is prepared, but implementation and validation are blocked by the read-only filesystem and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "A focused attachment-selection bug remains; no product decision or security routing is required."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Keep this distinct performance issue open and outside the #531 implementation."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Provide an executable narrow repair plan for a writable executor."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Creating or updating clawsweeper/issue-steipete-oracle-531 and validating its implementation require a writable checkout with dependencies. PR publication remains blocked until those gates pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
