@@ -1,0 +1,62 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "autonomous",
+  "run_id": "37155850929",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37155850929",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-03T21:43:04.040Z",
+  "canonical": "https://github.com/steipete/oracle/issues/531",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/531",
+  "canonical_pr": null,
+  "summary": "Verified #531 against preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 and reproduced the ancestor-filter defect using the actual source helper. A narrow fix remains viable. Implementation and full validation are blocked by read-only filesystem access and absent target dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The bug remains source-proven and has a narrow repair path. Implementation requires a writable executor checkout; no product decision is unresolved."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this distinct performance report open as adjacent context."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Provide an executable narrow repair plan for a writable executor, using clawsweeper/issue-steipete-oracle-531 and the repository's own validation commands."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
