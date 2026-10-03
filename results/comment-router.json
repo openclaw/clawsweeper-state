@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-03T00:58:10.058Z",
+  "updated_at": "2026-10-03T00:58:30.283Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118748:5204538166:2026-08-06T12:19:08Z:re_review",
-      "comment_id": "5204538166",
-      "comment_version_key": "5204538166:2026-08-06T12:19:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118748#issuecomment-5204538166",
-      "comment_created_at": "2026-08-06T12:19:08Z",
-      "comment_updated_at": "2026-08-06T12:19:08Z",
-      "comment_body_sha256": "366fac451f52df6a7b3f4f26d699399c77584149326b6ed1236215f6b205ee2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118748,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T19:31:33.089Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118748:5263483181:2026-08-12T07:07:37Z:re_review",
       "comment_id": "5263483181",
@@ -33342,6 +33315,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162920:5938396647:2026-10-03T00:57:36Z:clawsweeper_needs_human",
+      "comment_id": "5938396647",
+      "comment_version_key": "5938396647:2026-10-03T00:57:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162920#issuecomment-5938396647",
+      "comment_created_at": "2026-10-01T18:56:07Z",
+      "comment_updated_at": "2026-10-03T00:57:36Z",
+      "comment_body_sha256": "82db26a3eb4cb22fcde48b15fad9e0822df028f46ec818eb1b7a089d85395419",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: canonical ACP selection in chat admission and native subagent reactivation lacks observed allowed and nearest-f... (sha=d6b48e2916c2a9d59549d6eb8838d1d0adbebf0e)",
+      "expected_head_sha": "d6b48e2916c2a9d59549d6eb8838d1d0adbebf0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T00:58:30.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-doctor-canonical-metadata",
+        "head_sha": "d6b48e2916c2a9d59549d6eb8838d1d0adbebf0e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
