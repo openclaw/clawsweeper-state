@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120978",
+  "mode": "plan",
+  "run_id": "37144660166",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37144660166",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120978.md",
+  "published_at": "2026-10-03T18:36:59.991Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_pr": null,
+  "summary": "Plan a narrow request-lifecycle cancellation fix. Keep the canonical issue open, preserve the closed contributor PR as credited source work, and keep the failure-notice PR related. Implementation requires a failing regression on freshly verified main; no code changes, runtime validation, or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/120978",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "137",
+      "candidate_fix": null,
+      "reason": "A focused implementation path is defined, but current-main runtime reproduction and all implementation gates remain pending."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/120979",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "137",
+      "candidate_fix": null,
+      "reason": "Retain as historical implementation and proof evidence, carrying verified contributor attribution into the planned PR."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/164206",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "137",
+      "candidate_fix": null,
+      "reason": "Different remaining work in the same hook owners. Preserve its behavior when implementing cancellation; no merge or closure recommendation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
