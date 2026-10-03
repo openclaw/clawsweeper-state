@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37080018908",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37080018908",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-03T00:02:46.565Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Verified the missing local auto-unarchive path on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation and validation are blocked by the read-only filesystem. Pinned preference polarity and dispatch collection remain unverified. No files or GitHub items changed; the fix artifact is conditional on completing protocol verification and all validation gates.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The bug remains a viable repair candidate, but this worker cannot write regression tests, implementation, or branch state. Complete pinned protocol verification before choosing eligibility semantics; then implement and validate in a writable executor."
+    },
+    {
+      "target": "#299",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or branch replacement is applicable."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "A bounded executor artifact is available despite the local filesystem blocker; it does not represent a completed patch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

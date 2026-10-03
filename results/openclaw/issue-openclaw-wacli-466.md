@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37079649642"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37079649642"
+run_id: "37080018908"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37080018908"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-02T23:58:30.268Z"
+published_at: "2026-10-03T00:02:46.565Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37079649642](https://github.com/openclaw/clawsweeper/actions/runs/37079649642)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37080018908](https://github.com/openclaw/clawsweeper/actions/runs/37080018908)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The reported archive-state gap remains visible in source on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation and validation are blocked by the read-only filesystem. No files or GitHub state changed; no failing regression or validated PR branch was produced.
+Verified the missing local auto-unarchive path on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation and validation are blocked by the read-only filesystem. Pinned preference polarity and dispatch collection remain unverified. No files or GitHub items changed; the fix artifact is conditional on completing protocol verification and all validation gates.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The reported archive-state gap remains visible in source on preflight main a4f23
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The source finding is distinct from merged #299. A focused repair remains appropriate, but writing a regression, implementing persistence, and running required gates need a writable executor. |
-| #299 | keep_closed | skipped | related | Historical implementation context for recovery and explicit commands; it does not cover incoming-message auto-unarchive. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned | canonical | Resume on a writable checkout, reuse clawsweeper/issue-openclaw-wacli-466 if it exists, and produce one locally validated PR only after protocol verification and regression coverage. |
+| #466 | fix_needed | blocked | canonical | The bug remains a viable repair candidate, but this worker cannot write regression tests, implementation, or branch state. Complete pinned protocol verification before choosing eligibility semantics; then implement and validate in a writable executor. |
+| #299 | keep_closed | skipped | related | Historical context only; no closure or branch replacement is applicable. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | A bounded executor artifact is available despite the local filesystem blocker; it does not represent a completed patch. |
 
 ## Needs Human
 
