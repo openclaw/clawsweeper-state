@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T18:01:05.201Z",
+  "updated_at": "2026-10-03T18:01:08.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164263:5968702650:2026-10-03T11:25:31Z:re_review",
-      "comment_id": "5968702650",
-      "comment_version_key": "5968702650:2026-10-03T11:25:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164263#issuecomment-5968702650",
-      "comment_created_at": "2026-10-03T11:25:31Z",
-      "comment_updated_at": "2026-10-03T11:25:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164263,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T11:26:30.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-idle-watchdog",
-        "head_sha": "82bf344628127bed14f4ea2df6ddccf29962cf95",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164246:5968708919:2026-10-03T11:26:22Z:re_review",
       "comment_id": "5968708919",
@@ -33185,6 +33138,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164175:5967226286:2026-10-03T18:00:12Z:clawsweeper_needs_human",
+      "comment_id": "5967226286",
+      "comment_version_key": "5967226286:2026-10-03T18:00:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164175#issuecomment-5967226286",
+      "comment_created_at": "2026-10-03T08:34:17Z",
+      "comment_updated_at": "2026-10-03T18:00:12Z",
+      "comment_body_sha256": "f4b7fcf4b4ea339d7ad79424b90443568f0fa3aa6d06ac94be7d22278dc7265a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The persisted replay contract lacks maintainer acceptance: continuously resumed sessions receive only the newest eight exchanges with each prompt and reply bounded to 2,000 characters... (sha=1111b7b10d9b3cd9a09e68032740e550060c99f9)",
+      "expected_head_sha": "1111b7b10d9b3cd9a09e68032740e550060c99f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T18:01:08.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-announce-continuity",
+        "head_sha": "1111b7b10d9b3cd9a09e68032740e550060c99f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
