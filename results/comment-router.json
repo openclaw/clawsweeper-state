@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T09:50:52.246Z",
+  "updated_at": "2026-10-03T09:50:57.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163930:5965594528:2026-10-03T04:38:51Z:re_review",
-      "comment_id": "5965594528",
-      "comment_version_key": "5965594528:2026-10-03T04:38:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163930#issuecomment-5965594528",
-      "comment_created_at": "2026-10-03T04:38:51Z",
-      "comment_updated_at": "2026-10-03T04:38:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163930,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T04:39:49.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/compound1b",
-        "head_sha": "01e664751e259cfac55fc7473467010bc7f3e90e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163997:5965078556:2026-10-03T04:38:50Z:clawsweeper_needs_human",
       "comment_id": "5965078556",
@@ -32655,6 +32608,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-capture-adapter",
         "head_sha": "c2425b42663d933fad8bbed710884d58de9e019f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163815:5962352749:2026-10-03T09:50:03Z:clawsweeper_needs_human",
+      "comment_id": "5962352749",
+      "comment_version_key": "5962352749:2026-10-03T09:50:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163815#issuecomment-5962352749",
+      "comment_created_at": "2026-10-02T22:18:10Z",
+      "comment_updated_at": "2026-10-03T09:50:03Z",
+      "comment_body_sha256": "9d0e9a363803fb6f02f717384835b2e113b2dd2eee7c25ec00b0acc88d8ba59e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=7c2b64c74520cd10d4dc98eb24b168d77b41b6f3)",
+      "expected_head_sha": "7c2b64c74520cd10d4dc98eb24b168d77b41b6f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T09:50:57.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-lifecycle-mutation-stalls-20260919",
+        "head_sha": "7c2b64c74520cd10d4dc98eb24b168d77b41b6f3",
         "cluster_id": null,
         "job_path": null
       }
