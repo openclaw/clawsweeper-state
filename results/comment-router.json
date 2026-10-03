@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T19:22:11.283Z",
+  "updated_at": "2026-10-03T19:22:39.048Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164284:5969396892:2026-10-03T12:58:51Z:re_review",
-      "comment_id": "5969396892",
-      "comment_version_key": "5969396892:2026-10-03T12:58:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164284#issuecomment-5969396892",
-      "comment_created_at": "2026-10-03T12:58:51Z",
-      "comment_updated_at": "2026-10-03T12:58:51Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164284,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T12:59:44.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/pendstage",
-        "head_sha": "e02c42d9af4be4647aacfe37cc582faa4fdb76b4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:162994:5941356753:2026-10-01T21:48:58Z:re_review",
       "comment_id": "5941356753",
@@ -32920,6 +32873,39 @@
         "kind": "pull_request",
         "branch": "dev/kevinlin/model-auth-readiness-observability",
         "head_sha": "562b5daac3319979eb5ff190f93a0ca50e7faa4b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164442:5972111125:2026-10-03T19:21:36Z:clawsweeper_needs_human",
+      "comment_id": "5972111125",
+      "comment_version_key": "5972111125:2026-10-03T19:21:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164442#issuecomment-5972111125",
+      "comment_created_at": "2026-10-03T18:20:24Z",
+      "comment_updated_at": "2026-10-03T19:21:36Z",
+      "comment_body_sha256": "3118935646b8b71f8e205607945fce4f665634655721abbc7caaeff225f5955c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Capturing the entire transcript adds memory proportional to its stored payload size; the measured approximately 295 MiB external increase can worsen existing host memory pressure. Sur... (sha=6decff511d2be268604af6d9614e4df39f7b76ca)",
+      "expected_head_sha": "6decff511d2be268604af6d9614e4df39f7b76ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T19:22:39.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/160386-large-store-sqlite-io",
+        "head_sha": "6decff511d2be268604af6d9614e4df39f7b76ca",
         "cluster_id": null,
         "job_path": null
       }
