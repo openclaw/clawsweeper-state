@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-03T20:23:02.348Z",
+  "updated_at": "2026-10-03T20:23:36.176Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121309:5454002391:2026-08-28T14:50:15Z:re_review",
-      "comment_id": "5454002391",
-      "comment_version_key": "5454002391:2026-08-28T14:50:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5454002391",
-      "comment_created_at": "2026-08-28T14:50:15Z",
-      "comment_updated_at": "2026-08-28T14:50:15Z",
-      "comment_body_sha256": "29b045ecf84e82d89e4b16eb85f78e7c942468353601ae4e2568ba95f7be4f46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T13:57:41.546Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164320:5969859688:2026-10-03T13:57:53Z:re_review",
       "comment_id": "5969859688",
@@ -33219,6 +33192,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164511:5973144114:2026-10-03T20:22:41Z:clawsweeper_needs_human",
+      "comment_id": "5973144114",
+      "comment_version_key": "5973144114:2026-10-03T20:22:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164511#issuecomment-5973144114",
+      "comment_created_at": "2026-10-03T20:22:41Z",
+      "comment_updated_at": "2026-10-03T20:22:41Z",
+      "comment_body_sha256": "28b8bc64798352fcfefd86fbe55f08cc7a3ca60bae179de791dba3cc78437edc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164511,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed inline-dispatch owner is covered after the fix only by mocked node invocation tests; the live trace and inspected screenshots prece... (sha=3f871cfa1d780b561112388229c865304ac51890)",
+      "expected_head_sha": "3f871cfa1d780b561112388229c865304ac51890",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T20:23:36.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-exec-foreground-suppress-notify",
+        "head_sha": "3f871cfa1d780b561112388229c865304ac51890",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
