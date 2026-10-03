@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:53:10.340Z",
+  "updated_at": "2026-10-03T11:53:13.337Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164064:5966272386:2026-10-03T06:15:40Z:re_review",
-      "comment_id": "5966272386",
-      "comment_version_key": "5966272386:2026-10-03T06:15:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164064#issuecomment-5966272386",
-      "comment_created_at": "2026-10-03T06:15:40Z",
-      "comment_updated_at": "2026-10-03T06:15:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164064,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T06:17:07.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/reclass4",
-        "head_sha": "4b9e4c81f8ebe5a64dd27de62ef2468bb5f6a915",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164075:5966289553:2026-10-03T06:18:17Z:re_review",
       "comment_id": "5966289553",
@@ -32759,6 +32712,39 @@
         "kind": "pull_request",
         "branch": "agent-containment-policy-rfc",
         "head_sha": "9e40f06b11db4cb9a4a88a5c71fda1fc418705e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164282:5968892606:2026-10-03T11:52:22Z:clawsweeper_needs_human",
+      "comment_id": "5968892606",
+      "comment_version_key": "5968892606:2026-10-03T11:52:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164282#issuecomment-5968892606",
+      "comment_created_at": "2026-10-03T11:52:22Z",
+      "comment_updated_at": "2026-10-03T11:52:22Z",
+      "comment_body_sha256": "dec192e4be6f3a619fad6c09d03e1c2d3700052e71593b3a76f4413bff0c9f2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The registry deadline owner and announcement callback chain are covered by mocked dispatch and mocked announce-flow regressions. Available real... (sha=b2fee98fa49bdd52b261f2794bd289df826a79d2)",
+      "expected_head_sha": "b2fee98fa49bdd52b261f2794bd289df826a79d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T11:53:13.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/requester-completion-expiry",
+        "head_sha": "b2fee98fa49bdd52b261f2794bd289df826a79d2",
         "cluster_id": null,
         "job_path": null
       }
