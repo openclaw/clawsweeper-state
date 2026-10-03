@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163900"
-mode: "autonomous"
-run_id: "37083831562"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37083831562"
+mode: "plan"
+run_id: "37087150560"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37087150560"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-10-03T01:20:57.774Z"
+published_at: "2026-10-03T02:02:58.152Z"
 canonical: "https://github.com/openclaw/openclaw/issues/163900"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/163900"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37083831562](https://github.com/openclaw/clawsweeper/actions/runs/37083831562)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37087150560](https://github.com/openclaw/clawsweeper/actions/runs/37087150560)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/163900
 
 ## Summary
 
-Reproduced consolidation-section compaction failure on preflight main. Narrow fix artifact prepared; implementation and post-fix validation are blocked by the read-only host and absent dependencies. No GitHub mutations or code changes occurred.
+Plan a narrow generated-section recognition repair. Source inspection confirms the mismatch on checked-out main 9851c13b813054931db51359651630b0b680c3a5. No files or GitHub state changed; regression execution and validation remain for the executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Reproduced consolidation-section compaction failure on preflight main. Narrow fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163900 | fix_needed | blocked | canonical | The defect is reproduced. Code edits and persistent regression/publication proof require a writable executor with dependencies; this host permits reads only. |
-| #158897 | keep_related | planned | related | Distinct product scope; leave open and exclude it from this implementation. |
-| #73691 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-163900 | build_fix_artifact | planned |  | A narrow existing-behavior repair is justified; the deterministic executor owns implementation, validation, and PR creation. |
+| https://github.com/openclaw/openclaw/issues/163900 | fix_needed | planned | canonical | A focused parser repair can reclaim fully generated consolidation sections without changing budgets, retention policy, provenance, or publication semantics. |
+| https://github.com/openclaw/openclaw/issues/158897 | keep_related | planned | related | Distinct feature and policy scope; generated-section recognition does not satisfy this request. |
+| https://github.com/openclaw/openclaw/issues/73691 | keep_closed | skipped | related | Historical growth and compaction context; no closure or reopening is warranted. |
 
 ## Needs Human
 
