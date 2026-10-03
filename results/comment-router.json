@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T07:49:35.381Z",
+  "updated_at": "2026-10-03T07:50:10.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:911:5964448606:2026-10-03T02:10:38Z:re_review",
-      "comment_id": "5964448606",
-      "comment_version_key": "5964448606:2026-10-03T02:10:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/911#issuecomment-5964448606",
-      "comment_created_at": "2026-10-03T02:10:38Z",
-      "comment_updated_at": "2026-10-03T02:10:38Z",
-      "comment_body_sha256": "ace0efd57707d8a8d46620fb8366cef0de6c08e73c14fdedf47005a0f6018505",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 911,
-      "author": "stevenlee-oai",
-      "author_id": 213687449,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T02:14:05.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/oce-lifecycle-cleanup-iteration",
-        "head_sha": "ebf85720253dbd1e2c21f68a5cf8b1cea2f72cf1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:911:5951431611:2026-10-03T02:13:17Z:clawsweeper_needs_human",
       "comment_id": "5951431611",
@@ -33119,6 +33072,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-single-pass",
         "head_sha": "b7f48cfa0bae91e65c390c8a44fdb7d3aa871277",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164151:5966907087:2026-10-03T07:48:37Z:clawsweeper_needs_human",
+      "comment_id": "5966907087",
+      "comment_version_key": "5966907087:2026-10-03T07:48:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164151#issuecomment-5966907087",
+      "comment_created_at": "2026-10-03T07:48:37Z",
+      "comment_updated_at": "2026-10-03T07:48:37Z",
+      "comment_body_sha256": "fed3783a3ba83161969241b990bd29e8577306466b111cf4bebc4e6b52ad252d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164151,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Reported terminal results exercise the real normalizer, skill invocation, and request expansion with synthetic skill specifications, p... (sha=e0cfecad525aa92ef223d4c37b355580dada259a)",
+      "expected_head_sha": "e0cfecad525aa92ef223d4c37b355580dada259a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T07:50:10.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-payload-spacing-164149",
+        "head_sha": "e0cfecad525aa92ef223d4c37b355580dada259a",
         "cluster_id": null,
         "job_path": null
       }
