@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-02T23:59:15.606Z",
+  "updated_at": "2026-10-03T00:00:04.293Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163709:5958807072:2026-10-02T18:38:40Z:clawsweeper_needs_human",
-      "comment_id": "5958807072",
-      "comment_version_key": "5958807072:2026-10-02T18:38:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163709#issuecomment-5958807072",
-      "comment_created_at": "2026-10-02T18:32:07Z",
-      "comment_updated_at": "2026-10-02T18:38:40Z",
-      "comment_body_sha256": "5a9dc56bbe9719a102831f57f398db6b960723c1d9541f06456ea0e6ae7d2ea4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163709,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=f870181ae66e44ecf3110a5c5baa6be9b88b92e9)",
-      "expected_head_sha": "f870181ae66e44ecf3110a5c5baa6be9b88b92e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T18:39:41.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l305-deslop-browser-plumbing",
-        "head_sha": "f870181ae66e44ecf3110a5c5baa6be9b88b92e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163684:5958059383:2026-10-02T18:38:48Z:clawsweeper_needs_human",
       "comment_id": "5958059383",
@@ -33324,6 +33291,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163875:5963349466:2026-10-02T23:59:06Z:autofix",
+      "comment_id": "5963349466",
+      "comment_version_key": "5963349466:2026-10-02T23:59:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163875#issuecomment-5963349466",
+      "comment_created_at": "2026-10-02T23:59:06Z",
+      "comment_updated_at": "2026-10-02T23:59:06Z",
+      "comment_body_sha256": "73e9a22cb70b40a243b3213d6b314a1bf80b80835d6403ccf5d58884a58e3afe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163875,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-02T23:59:54.954Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mcp-browser-signin",
+        "head_sha": "781d6e07cb4df65b7e37027f089c95399b872648",
+        "cluster_id": "automerge-openclaw-openclaw-163875",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
