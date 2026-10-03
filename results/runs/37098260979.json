@@ -1,0 +1,51 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164024",
+  "mode": "plan",
+  "run_id": "37098260979",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37098260979",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164024.md",
+  "published_at": "2026-10-03T05:00:25.346Z",
+  "canonical": "#164024",
+  "canonical_issue": "#164024",
+  "canonical_pr": "#164032",
+  "summary": "Use the reporter's existing, reviewed contributor PR as the canonical repair. Keep the issue open pending landing; no competing implementation PR or fix artifact is needed.",
+  "actions": [
+    {
+      "target": "#164024",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164024",
+      "candidate_fix": "#164032",
+      "reason": "Preserve the canonical report while its existing contributor repair owns validation and follow-up."
+    },
+    {
+      "target": "#164032",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164032",
+      "candidate_fix": null,
+      "reason": "Retain this contributor PR as the single repair path, preserving authorship. No demonstrated repair blocker warrants branch changes or replacement; merge remains outside this job's authority."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
