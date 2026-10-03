@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37160698053",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37160698053",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-03T23:11:01.968Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Confirmed the defect on preflight main and demonstrated six failing discovery-scope assertions using the unchanged collector with filesystem/glob doubles. A narrow fix artifact is ready; implementation, full validation, and PR preparation are blocked by the read-only filesystem and unavailable dependencies.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The ordinary collector performance bug remains real and has a narrow repair boundary. Keep #532 as the canonical implementation request."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "Provide an executable repair plan for a writable executor without requiring a maintainer product decision."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "Implementation and PR preparation require a writable checkout with dependencies. Apply the planned fix artifact, complete validation and review, then create or update the single designated PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

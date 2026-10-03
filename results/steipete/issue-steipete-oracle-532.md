@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-532"
 mode: "autonomous"
-run_id: "37096835309"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37096835309"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+run_id: "37160698053"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37160698053"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T04:57:49.737Z"
+published_at: "2026-10-03T23:11:01.968Z"
 canonical: "https://github.com/steipete/oracle/issues/532"
 canonical_issue: "https://github.com/steipete/oracle/issues/532"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37096835309](https://github.com/openclaw/clawsweeper/actions/runs/37096835309)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37160698053](https://github.com/openclaw/clawsweeper/actions/runs/37160698053)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/532
 
 ## Summary
 
-Verified #532 on preflight main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix is viable; the executable repair artifact is planned. Local implementation and validation are blocked by the read-only workspace, which also lacks dependencies. No files or GitHub state were changed.
+Confirmed the defect on preflight main and demonstrated six failing discovery-scope assertions using the unchanged collector with filesystem/glob doubles. A narrow fix artifact is ready; implementation, full validation, and PR preparation are blocked by the read-only filesystem and unavailable dependencies.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified #532 on preflight main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #532 | fix_needed | planned | canonical | The reported performance defect remains present and needs a focused collector repair. No product decision or security escalation is required. |
-| cluster:issue-steipete-oracle-532 | build_fix_artifact | planned |  | A concrete narrow implementation and validation plan is available for the authorized executor. |
-| cluster:issue-steipete-oracle-532 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked until an executor with a writable checkout installs dependencies, implements the artifact, and completes validation. Reuse clawsweeper/issue-steipete-oracle-532 and any existing PR; do not open an unvalidated PR. |
+| #532 | fix_needed | planned | canonical | The ordinary collector performance bug remains real and has a narrow repair boundary. Keep #532 as the canonical implementation request. |
+| cluster:issue-steipete-oracle-532 | build_fix_artifact | planned |  | Provide an executable repair plan for a writable executor without requiring a maintainer product decision. |
+| cluster:issue-steipete-oracle-532 | open_fix_pr | blocked |  | Implementation and PR preparation require a writable checkout with dependencies. Apply the planned fix artifact, complete validation and review, then create or update the single designated PR. |
 
 ## Needs Human
 
