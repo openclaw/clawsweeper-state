@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T01:21:48.657Z",
+  "updated_at": "2026-10-03T01:22:13.165Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163741:5960266923:2026-10-02T19:52:14Z:re_review",
-      "comment_id": "5960266923",
-      "comment_version_key": "5960266923:2026-10-02T19:52:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163741#issuecomment-5960266923",
-      "comment_created_at": "2026-10-02T19:52:14Z",
-      "comment_updated_at": "2026-10-02T19:52:14Z",
-      "comment_body_sha256": "95b23150cd0e46adc2af78323625bb810cf874335c306ccac49f7cf99b5d86d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163741,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T19:54:22.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-browser-cleanup-owner-race-20261003",
-        "head_sha": "48d7af007af9c175ef9087064c0db859961b51c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163753:5960269374:2026-10-02T19:52:20Z:re_review",
       "comment_id": "5960269374",
@@ -33277,6 +33230,39 @@
         "kind": "pull_request",
         "branch": "feat/spend-statistics-time-zone",
         "head_sha": "40646dda7a6a6407a8e77adf8c0c6235d00f2f8b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163919:5964046934:2026-10-03T01:21:18Z:clawsweeper_auto_repair",
+      "comment_id": "5964046934",
+      "comment_version_key": "5964046934:2026-10-03T01:21:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163919#issuecomment-5964046934",
+      "comment_created_at": "2026-10-03T01:21:18Z",
+      "comment_updated_at": "2026-10-03T01:21:18Z",
+      "comment_body_sha256": "bf211920caebc587987c094c98591f55b36af4d0762df4033a9336d7b13dc862",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163919,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e04091de03fc2448ee30b8dddeeb336ea19e5df5)",
+      "expected_head_sha": "e04091de03fc2448ee30b8dddeeb336ea19e5df5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T01:22:13.165Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l314-deslop-gateway-agents-core-20261002",
+        "head_sha": "e04091de03fc2448ee30b8dddeeb336ea19e5df5",
         "cluster_id": null,
         "job_path": null
       }
