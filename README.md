@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 3, 2026, 10:40 UTC
+Last source update: Oct 3, 2026, 11:20 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 3, 2026, 10:40 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 3, 2026, 10:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37116470797) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 10:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37116876737) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 3, 2026, 11:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37117806226) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 10:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37118114736) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 3, 2026, 10:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37116952260) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 3, 2026, 10:44 UTC
+Last source update: Oct 3, 2026, 10:58 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1405 | 100% |
-| Run attempts archived | 4180 | audit |
+| Run attempts archived | 4181 | audit |
 | Latest successful clusters | 1161 | 82.6% |
 | Latest failed clusters | 239 | 17.0% |
 | Latest cancelled clusters | 5 | 0.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1405 clusters: 379 maintainer action, 434 automation snapshot, 533 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [openclaw/acpx](https://github.com/openclaw/acpx) [cluster:issue-openclaw-acpx-808](cluster:issue-openclaw-acpx-808) is maintainer_input: For #808, obtain the reporter's resolved cursor-composer command and relevant configuration, acpx/adapter versions, platform, and a redac....
-- Intervention first: [openclaw/gogcli](https://github.com/openclaw/gogcli) [#1184](https://github.com/openclaw/gogcli/pull/1184) is automation_failed: The fix remains viable and needs no product decision. Implementation is blocked only in this read-only worker; the writable executor shou....
+- Intervention first: [openclaw/gogcli](https://github.com/openclaw/gogcli) [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) is automation_failed: PR creation is blocked here on implementation and validation in a writable environment. The fix artifact remains actionable; no maintaine....
 - Automation latest: [steipete/oracle](https://github.com/steipete/oracle) [#535](https://github.com/steipete/oracle/issues/535) is action_planned: A narrow launch-only integration repair remains viable. Establish the affected-version regression before implementing; preserve reuse and....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/gogcli](https://github.com/openclaw/gogcli) | [#1184](https://github.com/openclaw/gogcli/pull/1184) | automation_failed | The fix remains viable and needs no product decision. Implementation is blocked only in this read-only worker; the writable executor should apply a... | Oct 3, 2026, 10:44 UTC | [issue-openclaw-gogcli-1184](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1184.md) | [37117147523](https://github.com/openclaw/clawsweeper/actions/runs/37117147523) |
+| [openclaw/gogcli](https://github.com/openclaw/gogcli) | [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) | automation_failed | PR creation is blocked here on implementation and validation in a writable environment. The fix artifact remains actionable; no maintainer judgment... | Oct 3, 2026, 10:58 UTC | [issue-openclaw-gogcli-1184](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1184.md) | [37117880465](https://github.com/openclaw/clawsweeper/actions/runs/37117880465) |
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [#466](https://github.com/openclaw/wacli/pull/466) | automation_failed | The reported local archive drift remains real and distinct from merged explicit archive-command repairs. Keep the issue open while the scoped imple... | Oct 3, 2026, 09:58 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37114476025](https://github.com/openclaw/clawsweeper/actions/runs/37114476025) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | No new implementation PR is warranted: the source repair is present on current main. #831 remains open for corrected-artifact qualification and pub... | Oct 3, 2026, 07:45 UTC | [issue-openclaw-peekaboo-831](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-831.md) | [37107249706](https://github.com/openclaw/clawsweeper/actions/runs/37107249706) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): validation command left 1 background process(es) after exit | Oct 3, 2026, 07:34 UTC | [issue-openclaw-openclaw-164113](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164113.md) | [37105575261](https://github.com/openclaw/clawsweeper/actions/runs/37105575261) |
