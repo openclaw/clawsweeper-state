@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/gogcli",
+  "cluster_id": "issue-openclaw-gogcli-1184",
+  "mode": "autonomous",
+  "run_id": "37143776999",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37143776999",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gogcli-1184.md",
+  "published_at": "2026-10-03T18:30:44.017Z",
+  "canonical": "https://github.com/openclaw/gogcli/issues/1184",
+  "canonical_issue": "https://github.com/openclaw/gogcli/issues/1184",
+  "canonical_pr": null,
+  "summary": "Confirmed the documentation gap on preflight main 414e2ff8afa281ec3d9f0cdb057bdbc53386db91 and prepared a narrow fix plan. Implementation is blocked by the read-only workspace; existing-PR verification requires authenticated GitHub access. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#1184",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "The maintainer-approved documentation repair remains narrowly implementable without changing parser behavior or output contracts."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1184",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "Provide an executable documentation plan for the authorized executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1184",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1184",
+      "candidate_fix": null,
+      "reason": "Before implementing or opening a PR, the executor must obtain a writable checkout, refresh main and issue state, and check the designated branch for an existing PR to avoid duplicate work."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/gogcli/pull/1187",
+      "branch": "clawsweeper/issue-openclaw-gogcli-1184",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/gogcli/pull/1187",
+      "commit": "8d5ae9ea4bfed484b1f75574001d2c324d552269",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1184",
+      "pr": "https://github.com/openclaw/gogcli/pull/1187",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/gogcli/pull/1187",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#1187",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "docs(gmail): explain option delimiter for negated search queries",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
