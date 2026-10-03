@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37094019035"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37094019035"
+run_id: "37096697371"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37096697371"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-10-03T03:45:24.199Z"
+result_status: "needs_human"
+published_at: "2026-10-03T04:33:56.861Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 1
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37094019035](https://github.com/openclaw/clawsweeper/actions/runs/37094019035)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37096697371](https://github.com/openclaw/clawsweeper/actions/runs/37096697371)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-#466 remains valid on preflight main. Implementation is blocked by the unverified companion auto-unarchive contract and read-only environment. No code or GitHub changes were made; regression and full-gate validation remain incomplete.
+Confirmed the local archive-state defect on preflight main. Implementation stops at the job's protocol-contract gate: inspected pinned whatsmeow sources establish the preference event but do not establish safe companion auto-unarchive semantics. No files or GitHub items were changed.
 
 ## Impact
 
@@ -67,10 +67,10 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The local storage mechanism still preserves archived state after incoming messages. Safe implementation requires protocol confirmation, durable ordering, and regression coverage. |
-| #299 | keep_closed | skipped | related | Historical design context, not a mutation target or a fix for #466. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | Retain the scoped repair outline, but do not implement or propose a PR until the companion contract is established and a writable executor can complete regression and required validation. |
+| #466 | fix_needed | planned | canonical | The local mechanism remains unfixed. Protocol semantics require maintainer direction before implementation; the SQL reproduction does not prove WhatsApp companion behavior. |
+| #299 | keep_closed | skipped | related | Historical context for the existing recovery design; no closure or branch-replacement action applies. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | Blocked on the explicit protocol-contract prerequisite and on writable, supported-toolchain execution. This artifact is a conditional scope record, not authorization to create a PR with inferred semantics. |
 
 ## Needs Human
 
-- #466: The inspected pinned SDK establishes the preference event, but does not establish preference polarity and companion auto-unarchive eligibility/order semantics. The job explicitly requires stopping for maintainer direction when that contract cannot establish safe behavior. Provide authoritative contract evidence or maintainer direction before implementation.
+- #466: Establish an authoritative contract for setting_unarchiveChats boolean polarity and eligible companion auto-unarchive transitions, including archive/message timing. The job explicitly requires maintainer direction when safe behavior cannot be established; preference event delivery alone is insufficient.

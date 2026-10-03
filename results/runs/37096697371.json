@@ -1,0 +1,100 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37096697371",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37096697371",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-03T04:33:56.861Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Confirmed the local archive-state defect on preflight main. Implementation stops at the job's protocol-contract gate: inspected pinned whatsmeow sources establish the preference event but do not establish safe companion auto-unarchive semantics. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The local mechanism remains unfixed. Protocol semantics require maintainer direction before implementation; the SQL reproduction does not prove WhatsApp companion behavior."
+    },
+    {
+      "target": "#299",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical context for the existing recovery design; no closure or branch-replacement action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Blocked on the explicit protocol-contract prerequisite and on writable, supported-toolchain execution. This artifact is a conditional scope record, not authorization to create a PR with inferred semantics."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "skipped": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#466: Establish an authoritative contract for setting_unarchiveChats boolean polarity and eligible companion auto-unarchive transitions, including archive/message timing. The job explicitly requires maintainer direction when safe behavior cannot be established; preference event delivery alone is insufficient."
+  ],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "skipped",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "needs_human",
+      "reason": "worker marked the fix path as non-executable; closure actions may still apply",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#466",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
