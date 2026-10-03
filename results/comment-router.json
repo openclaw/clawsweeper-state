@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T16:50:20.097Z",
+  "updated_at": "2026-10-03T16:51:11.554Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164233:5968150969:2026-10-03T10:13:40Z:re_review",
-      "comment_id": "5968150969",
-      "comment_version_key": "5968150969:2026-10-03T10:13:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164233#issuecomment-5968150969",
-      "comment_created_at": "2026-10-03T10:13:40Z",
-      "comment_updated_at": "2026-10-03T10:13:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164233,
-      "author": "Lanfei",
-      "author_id": 2156642,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T10:14:25.640Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/xai-search-self-hosted",
-        "head_sha": "d13a6bf03f7b7dfb9c4699d4f70bdf4089880ce0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163930:5968142212:2026-10-03T10:12:39Z:re_review",
       "comment_id": "5968142212",
@@ -33348,6 +33301,39 @@
         "kind": "pull_request",
         "branch": "dbasync/compound2a",
         "head_sha": "903173e5253609f743bf82f7a0451257b45a7253",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1062:5971161931:2026-10-03T16:50:10Z:clawsweeper_needs_human",
+      "comment_id": "5971161931",
+      "comment_version_key": "5971161931:2026-10-03T16:50:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1062#issuecomment-5971161931",
+      "comment_created_at": "2026-10-03T16:38:13Z",
+      "comment_updated_at": "2026-10-03T16:50:10Z",
+      "comment_body_sha256": "3c6813a095fa57200d1be82c69b67157fcedd2c5bad4c6fcb1d584f61e329a7e",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1062,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The candidate adds persisted Agent database state, but the available evidence does not verify that a database created by the packaged old pin opens under the candidate and reopens und... (sha=f722b95e8faa06a0b6a0c828ddbedec1077329f7)",
+      "expected_head_sha": "f722b95e8faa06a0b6a0c828ddbedec1077329f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T16:51:11.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/openclaw-pin-6f91eda9c7",
+        "head_sha": "f722b95e8faa06a0b6a0c828ddbedec1077329f7",
         "cluster_id": null,
         "job_path": null
       }
