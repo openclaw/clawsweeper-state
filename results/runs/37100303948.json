@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37100303948",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37100303948",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-03T05:39:26.043Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "The archive-mirror defect remains present at preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. A focused fix is planned, but implementation and PR readiness are blocked by the read-only filesystem, unavailable required Go toolchain, and failed GitHub dependency retrieval. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The source confirms an ordinary local-state consistency bug. Keep #466 open as the canonical request and implement the calibrated sync/store repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "A concrete executor plan is possible without a new product decision. Implementation must first verify the pinned dependency contract and establish the failing regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "PR opening is blocked until a writable executor verifies the dependency contract, implements the fix, and completes required validation. Reuse the designated branch and any existing implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
