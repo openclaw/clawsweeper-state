@@ -1,17 +1,17 @@
 ---
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-531"
-mode: "autonomous"
-run_id: "37090499773"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37090499773"
+mode: "plan"
+run_id: "37091129629"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37091129629"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T02:42:45.452Z"
-canonical: "https://github.com/steipete/oracle/issues/531"
-canonical_issue: "https://github.com/steipete/oracle/issues/531"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T02:52:45.167Z"
+canonical: "#531"
+canonical_issue: "#531"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37090499773](https://github.com/openclaw/clawsweeper/actions/runs/37090499773)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37091129629](https://github.com/openclaw/clawsweeper/actions/runs/37091129629)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/steipete/oracle/issues/531
+Canonical: #531
 
 ## Summary
 
-Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation and full validation require a writable executor: this checkout is read-only, dependencies are absent, and pnpm fails with EROFS. No files or GitHub items were changed.
+Confirmed the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Plan a narrow expansion-root fix for #531; keep #532 related and #533 independent. No files or GitHub state changed; implementation tests and CLI smoke remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #531 | fix_needed | planned | canonical | The reported root-cause defect remains present and has a narrow implementation path; no product or security decision is required. |
-| #532 | keep_related | planned | related | Keep open as adjacent performance work with a distinct cause. |
-| #533 | keep_independent | planned | independent | Dependency maintenance is outside this implementation cluster. |
-| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned |  | The artifact is ready for a writable executor; implementation has not been performed. |
-| cluster:issue-steipete-oracle-531 | open_fix_pr | blocked |  | PR preparation is blocked on a writable executor with dependencies. It must implement and validate the artifact before the applicator creates or updates the single issue PR. |
+| #531 | fix_needed | planned | canonical | The existing selection bug remains viable for a narrow repair without a new feature or configuration decision. |
+| #532 | keep_related | planned | related | Same collector, distinct root cause and remaining work; preserve its separate implementation scope. |
+| #533 | keep_independent | planned | independent | Independent dependency maintenance; no merge or cleanup recommendation in this cluster. |
 
 ## Needs Human
 

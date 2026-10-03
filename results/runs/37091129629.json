@@ -1,0 +1,62 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "plan",
+  "run_id": "37091129629",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37091129629",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-03T02:52:45.167Z",
+  "canonical": "#531",
+  "canonical_issue": "#531",
+  "canonical_pr": null,
+  "summary": "Confirmed the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Plan a narrow expansion-root fix for #531; keep #532 related and #533 independent. No files or GitHub state changed; implementation tests and CLI smoke remain pending.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The existing selection bug remains viable for a narrow repair without a new feature or configuration decision."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Same collector, distinct root cause and remaining work; preserve its separate implementation scope."
+    },
+    {
+      "target": "#533",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent dependency maintenance; no merge or cleanup recommendation in this cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
