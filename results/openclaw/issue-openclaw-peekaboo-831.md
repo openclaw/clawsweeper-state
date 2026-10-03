@@ -2,14 +2,14 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-831"
 mode: "autonomous"
-run_id: "36990157583"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36990157583"
-head_sha: "8a4028d9f42fbd503454674a7712777aa7e2388d"
+run_id: "37107249706"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37107249706"
+head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-02T09:33:42.036Z"
-canonical: "https://github.com/openclaw/Peekaboo/issues/831"
-canonical_issue: "https://github.com/openclaw/Peekaboo/issues/831"
+published_at: "2026-10-03T07:45:58.231Z"
+canonical: "https://github.com/openclaw/peekaboo/issues/831"
+canonical_issue: "https://github.com/openclaw/peekaboo/issues/831"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36990157583](https://github.com/openclaw/clawsweeper/actions/runs/36990157583)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37107249706](https://github.com/openclaw/clawsweeper/actions/runs/37107249706)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/Peekaboo/issues/831
+Canonical: https://github.com/openclaw/peekaboo/issues/831
 
 ## Summary
 
-The source repair is present on supplied main SHA 016240d908566e54b702336ba39abc0f621b5b60. Issue #831 remains valid for corrected-distribution qualification and publication, which an implementation PR cannot satisfy. No code changes or GitHub mutations were made.
+No new implementation PR is warranted: the source repair is present on current main. #831 remains open for corrected-artifact qualification and publication, which this implementation job does not authorize.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The source repair is present on supplied main SHA 016240d908566e54b702336ba39abc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #831 | keep_canonical | planned | canonical | Implementation is blocked because the requested source repair already exists. Remaining work requires qualification of the exact replacement archives on an older, Xcode-free Mac and publication through the release workflow. This job contains no explicit release command, and AGENTS.md prohibits publishing without one. Keep #831 open; no narrow implementation PR is warranted. |
-| #832 | keep_closed | skipped | related | Historical source-repair evidence; no action on the merged PR. |
-| #883 | keep_closed | skipped | related | Historical release-verification evidence; it does not complete #831's distribution work. |
+| #831 | keep_canonical | planned | canonical | The implementation is already repaired on main. Remaining work is qualifying the exact corrected distributable bytes on supported older macOS without Xcode and publishing them through the release workflow. The job provides no explicit release command; keep the issue open and emit no redundant fix artifact. |
+| #832 | keep_closed | skipped | related | Merged historical source repair by @steipete; preserve its credit and leave the closed PR untouched. |
+| #883 | keep_closed | skipped | related | Merged related runtime-audit improvement by @steipete; it does not establish corrected-download publication. Leave the closed PR untouched. |
 
 ## Needs Human
 

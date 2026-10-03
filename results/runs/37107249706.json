@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/peekaboo",
+  "cluster_id": "issue-openclaw-peekaboo-831",
+  "mode": "autonomous",
+  "run_id": "37107249706",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37107249706",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-peekaboo-831.md",
+  "published_at": "2026-10-03T07:45:58.231Z",
+  "canonical": "https://github.com/openclaw/peekaboo/issues/831",
+  "canonical_issue": "https://github.com/openclaw/peekaboo/issues/831",
+  "canonical_pr": null,
+  "summary": "No new implementation PR is warranted: the source repair is present on current main. #831 remains open for corrected-artifact qualification and publication, which this implementation job does not authorize.",
+  "actions": [
+    {
+      "target": "#831",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#831",
+      "candidate_fix": null,
+      "reason": "The implementation is already repaired on main. Remaining work is qualifying the exact corrected distributable bytes on supported older macOS without Xcode and publishing them through the release workflow. The job provides no explicit release command; keep the issue open and emit no redundant fix artifact."
+    },
+    {
+      "target": "#832",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#831",
+      "candidate_fix": null,
+      "reason": "Merged historical source repair by @steipete; preserve its credit and leave the closed PR untouched."
+    },
+    {
+      "target": "#883",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#831",
+      "candidate_fix": null,
+      "reason": "Merged related runtime-audit improvement by @steipete; it does not establish corrected-download publication. Leave the closed PR untouched."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#831",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
