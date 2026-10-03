@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:56:33.789Z",
+  "updated_at": "2026-10-03T23:56:55.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164423:5971759243:2026-10-03T17:40:51Z:re_review",
-      "comment_id": "5971759243",
-      "comment_version_key": "5971759243:2026-10-03T17:40:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164423#issuecomment-5971759243",
-      "comment_created_at": "2026-10-03T17:40:51Z",
-      "comment_updated_at": "2026-10-03T17:40:51Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164423,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:41:44.762Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-openai-7.23.0-replacement",
-        "head_sha": "ca18bc81fee2c5353e65a64cccfb51bc92ba42e6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136274:5971768697:2026-10-03T17:42:00Z:re_review",
       "comment_id": "5971768697",
@@ -33327,6 +33280,39 @@
         "kind": "pull_request",
         "branch": "codex/worker-runtime-package",
         "head_sha": "91505d067ce3d84179e4862314b046262159088c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123930:5300071462:2026-10-03T23:56:01Z:clawsweeper_needs_human",
+      "comment_id": "5300071462",
+      "comment_version_key": "5300071462:2026-10-03T23:56:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123930#issuecomment-5300071462",
+      "comment_created_at": "2026-08-15T02:27:48Z",
+      "comment_updated_at": "2026-10-03T23:56:01Z",
+      "comment_body_sha256": "c6be4e2fe1c1e1f05ca152044f9b8506f4f731ed3ed56fe80a397864ba3bcff2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123930,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the delivery owner now permits parent-owned ACP output based on a gathered conversation binding; show... (sha=ab4f105db5d416bc8f313f9bc88d5d2d96bae94e)",
+      "expected_head_sha": "ab4f105db5d416bc8f313f9bc88d5d2d96bae94e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:56:55.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-thread-bound-child-reply-delivery",
+        "head_sha": "ab4f105db5d416bc8f313f9bc88d5d2d96bae94e",
         "cluster_id": null,
         "job_path": null
       }
