@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:45:08.644Z",
+  "updated_at": "2026-10-03T11:45:27.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155019:5961090401:2026-10-02T20:39:08Z:re_review",
-      "comment_id": "5961090401",
-      "comment_version_key": "5961090401:2026-10-02T20:39:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155019#issuecomment-5961090401",
-      "comment_created_at": "2026-10-02T20:39:08Z",
-      "comment_updated_at": "2026-10-02T20:39:08Z",
-      "comment_body_sha256": "a3fe0d8c9899560cf63930378ed338e6d17d218bc4406271c27e22f34c34f73e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155019,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rebased/merged to latest main (buildactivesubagentruntimecontext is now async — all tests await it), added a real sqlite persist->reload->render integration proof (drained failed+cleanupcompletedat drops out of awaiting-delivery after restart; retrying failed row stays visible) and a guard-off ablation. head 2eb547eea1e",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T06:07:02.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/failed-delivery-not-outstanding",
-        "head_sha": "2eb547eea1eeb02675141490ceb4a86fb68d76e6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163919:5964046934:2026-10-03T06:06:14Z:clawsweeper_needs_human",
       "comment_id": "5964046934",
@@ -32788,6 +32741,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164224:5968837618:2026-10-03T11:44:26Z:re_review",
+      "comment_id": "5968837618",
+      "comment_version_key": "5968837618:2026-10-03T11:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164224#issuecomment-5968837618",
+      "comment_created_at": "2026-10-03T11:44:26Z",
+      "comment_updated_at": "2026-10-03T11:44:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164224,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T11:45:26.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incognito-p5c",
+        "head_sha": "b7540ace24c84554cdfbcadf188af55c024d0b5b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
