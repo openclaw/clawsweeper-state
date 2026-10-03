@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T07:44:58.005Z",
+  "updated_at": "2026-10-03T07:45:13.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:909:5964447589:2026-10-03T02:10:31Z:re_review",
-      "comment_id": "5964447589",
-      "comment_version_key": "5964447589:2026-10-03T02:10:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/909#issuecomment-5964447589",
-      "comment_created_at": "2026-10-03T02:10:31Z",
-      "comment_updated_at": "2026-10-03T02:10:31Z",
-      "comment_body_sha256": "ace0efd57707d8a8d46620fb8366cef0de6c08e73c14fdedf47005a0f6018505",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 909,
-      "author": "stevenlee-oai",
-      "author_id": 213687449,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T02:13:56.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/oce-docs-tab-navigation",
-        "head_sha": "6d69abd31fdbeaf3a19ff462bce52101e7fea3e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:909:5951412057:2026-10-03T02:13:04Z:clawsweeper_needs_human",
       "comment_id": "5951412057",
@@ -33133,6 +33086,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-runtime-fixture-labels",
         "head_sha": "8eecfd7e21bb9d1594a793c64d6ffd93f844a0a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164070:5966456844:2026-10-03T07:44:16Z:clawsweeper_needs_human",
+      "comment_id": "5966456844",
+      "comment_version_key": "5966456844:2026-10-03T07:44:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164070#issuecomment-5966456844",
+      "comment_created_at": "2026-10-03T06:43:11Z",
+      "comment_updated_at": "2026-10-03T07:44:16Z",
+      "comment_body_sha256": "ef0f53edc7da0a1e42b0e06fb466faadb48657683a9aae673586bffc91e09464",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164070,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed browser consultation listener is exercised only with mocked Gateway requests and injected chat events; the captured body explicitly... (sha=11b14d04595bf78dc5ba04632234a616962fe7e1)",
+      "expected_head_sha": "11b14d04595bf78dc5ba04632234a616962fe7e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T07:45:13.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-consult-correlation-clean-v5",
+        "head_sha": "11b14d04595bf78dc5ba04632234a616962fe7e1",
         "cluster_id": null,
         "job_path": null
       }
