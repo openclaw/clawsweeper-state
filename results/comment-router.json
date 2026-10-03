@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T08:24:37.813Z",
+  "updated_at": "2026-10-03T08:25:33.067Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163967:5964747898:2026-10-03T02:41:42Z:clawsweeper_needs_human",
-      "comment_id": "5964747898",
-      "comment_version_key": "5964747898:2026-10-03T02:41:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163967#issuecomment-5964747898",
-      "comment_created_at": "2026-10-03T02:41:42Z",
-      "comment_updated_at": "2026-10-03T02:41:42Z",
-      "comment_body_sha256": "268ed23d02c6155a77bb43666e7fd2654f509bea729ccea8aded753e2a7f7812",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163967,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The inspected image exercises ChatScreen and ChatMarkdown through a Robolectric screenshot fixture with substituted history responses; it convi... (sha=8071054fca738e7a7c7516bdb9ad9bfb1105add6)",
-      "expected_head_sha": "8071054fca738e7a7c7516bdb9ad9bfb1105add6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T02:42:27.459Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/android-commentary-format",
-        "head_sha": "8071054fca738e7a7c7516bdb9ad9bfb1105add6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163962:5964749212:2026-10-03T02:41:53Z:clawsweeper_needs_human",
       "comment_id": "5964749212",
@@ -33111,6 +33078,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162262:5967152879:2026-10-03T08:24:28Z:re_review",
+      "comment_id": "5967152879",
+      "comment_version_key": "5967152879:2026-10-03T08:24:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162262#issuecomment-5967152879",
+      "comment_created_at": "2026-10-03T08:24:28Z",
+      "comment_updated_at": "2026-10-03T08:24:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162262,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T08:25:31.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-startup-recovery",
+        "head_sha": "3c4e3d7ac8fbb4c06422d77aec8d3d8e9335cd74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
