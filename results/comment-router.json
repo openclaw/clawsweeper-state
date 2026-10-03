@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T06:39:43.342Z",
+  "updated_at": "2026-10-03T06:40:50.319Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163937:5964225877:2026-10-03T01:44:16Z:clawsweeper_needs_human",
-      "comment_id": "5964225877",
-      "comment_version_key": "5964225877:2026-10-03T01:44:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163937#issuecomment-5964225877",
-      "comment_created_at": "2026-10-03T01:44:16Z",
-      "comment_updated_at": "2026-10-03T01:44:16Z",
-      "comment_body_sha256": "b3fa238e73e6bbb7942b1a0924ba420eb7d9173b0120bfc8483a0c84a4589491",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163937,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed example feeds its new model ID into the native Responses adapter, but the captured PR supplies no after-change real API completion.... (sha=4486bd919665cbc5ddc4ae72d7279aa5e9b74ac3)",
-      "expected_head_sha": "4486bd919665cbc5ddc4ae72d7279aa5e9b74ac3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T01:45:03.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "main",
-        "head_sha": "4486bd919665cbc5ddc4ae72d7279aa5e9b74ac3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78031:4382313550:2026-10-03T01:31:07Z:clawsweeper_auto_repair",
       "comment_id": "4382313550",
@@ -32452,6 +32419,53 @@
       "status": "skipped",
       "processed_at": "2026-10-03T06:39:43.342Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137184:5966436551:2026-10-03T06:39:59Z:re_review",
+      "comment_id": "5966436551",
+      "comment_version_key": "5966436551:2026-10-03T06:39:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137184#issuecomment-5966436551",
+      "comment_created_at": "2026-10-03T06:39:59Z",
+      "comment_updated_at": "2026-10-03T06:39:59Z",
+      "comment_body_sha256": "458d0cf753f3ca8fe9c9418fe20e5c4392b8129e6f0174b0ab586b1ae6f93fb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137184,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T06:40:48.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-single-pass",
+        "head_sha": "e5a96a0190cce7ff7de857d291ebcfdd73742d27",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
