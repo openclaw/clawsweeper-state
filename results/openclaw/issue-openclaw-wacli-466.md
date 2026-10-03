@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37114193597"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37114193597"
+run_id: "37114476025"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37114476025"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T09:51:42.990Z"
+published_at: "2026-10-03T09:58:13.241Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37114193597](https://github.com/openclaw/clawsweeper/actions/runs/37114193597)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37114476025](https://github.com/openclaw/clawsweeper/actions/runs/37114476025)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed archive-state drift using current-main SQL in memory. Implementation is blocked by the read-only checkout, unavailable pinned whatsmeow source, and an insufficient Go toolchain. No code changed or PR created; protocol parity and required validation remain unproven.
+Confirmed the storage defect on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation is blocked by the read-only workspace and unavailable required Go toolchain. Protocol collection, initial-state semantics, and timestamp units remain unverified. No code changes or GitHub mutations occurred; a conditional fix artifact follows.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed archive-state drift using current-main SQL in memory. Implementation i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The remaining sync defect is distinct from the explicit archive propagation and recovery work in merged #299. Keep #466 open while preparing a verified fix. |
-| #299 | keep_closed | skipped | related | Historical implementation context only; no replacement, merge, or closure action applies. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Return a conditional repair artifact. Implementation and PR creation remain blocked until a writable executor can inspect the pinned dependency and run the required regression and validation gates. |
+| #466 | fix_needed | planned | canonical | The reported local archive drift remains real and distinct from merged explicit archive-command repairs. Keep the issue open while the scoped implementation prerequisites are satisfied. |
+| #299 | keep_closed | skipped | related | Historical implementation context, not a replacement target or a fix for #466. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Preserve an actionable scoped repair plan for a writable executor without guessing protocol behavior or claiming validation. |
 
 ## Needs Human
 
