@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:57:12.480Z",
+  "updated_at": "2026-10-03T23:57:59.128Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163783:5961736485:2026-10-02T21:26:35Z:re_review",
-      "comment_id": "5961736485",
-      "comment_version_key": "5961736485:2026-10-02T21:26:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163783#issuecomment-5961736485",
-      "comment_created_at": "2026-10-02T21:26:35Z",
-      "comment_updated_at": "2026-10-02T21:26:35Z",
-      "comment_body_sha256": "8e15392569e6448b43eeeda0da603136c50ac282e1ba6ca29888d3a52caefc04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163783,
-      "author": "openclaw-agent-man",
-      "author_id": 276152650,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:43:37.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-channel-create",
-        "head_sha": "cffcc8b247a5514a64cf6d53d4b32b4a719e213b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163783:5961532592:2026-10-03T17:42:16Z:clawsweeper_auto_repair",
       "comment_id": "5961532592",
@@ -33299,6 +33252,39 @@
         "kind": "pull_request",
         "branch": "fix/mobile-release-ref-retries",
         "head_sha": "e3e9a99d6f401c2c6b42a7ac4a3014e97b62196b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4223:5965412527:2026-10-03T23:57:12Z:clawsweeper_needs_human",
+      "comment_id": "5965412527",
+      "comment_version_key": "5965412527:2026-10-03T23:57:12Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4223#issuecomment-5965412527",
+      "comment_created_at": "2026-10-03T04:12:54Z",
+      "comment_updated_at": "2026-10-03T23:57:12Z",
+      "comment_body_sha256": "ae0748517858a6d7de96397c9d2a90383dbf6f8adf92e4737b64ddbcf492b94c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts on the pinned head; the resolved branch needs renewed validation before landing. (sha=474a22f0e3c16f826e157b5cb60e6ac9bb7febac)",
+      "expected_head_sha": "474a22f0e3c16f826e157b5cb60e6ac9bb7febac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:57:59.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/credential-notification-localization",
+        "head_sha": "474a22f0e3c16f826e157b5cb60e6ac9bb7febac",
         "cluster_id": null,
         "job_path": null
       }
