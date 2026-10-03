@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the misleading embedded iOS Notifications page. Establish a failing regression through the real Config-page/notification-rendering boundary before editing: supply an admitted iOS native-device-settings snapshot while browser Web Push is install-required, and demonstrate that current code renders Safari installation guidance without a native destination. Consume ApplicationContext.nativeDeviceSettings through its existing subscription lifecycle and pass only the needed presentation facts to the notification section. For iOS, explain that native notifications are configured on This iPhone/This iPad and provide working navigation to the existing device route, including the appropriate tablet label. Reuse existing native controls and permission ownership; do not add a competing toggle, bridge, APNs transport, config option, permission behavior, or persisted state. Handle snapshot readiness and updates consistently with existing native settings consumers. Preserve macOS native notifications, ordinary Safari installation guidance, installed iOS PWA subscriptions, and desktop browser behavior. Keep https://github.com/openclaw/openclaw/issues/146791 separate from this presentation repair. Add focused regression coverage at the owning rendering boundary, update canonical English copy and relevant notification documentation, and follow generated-locale policy. Capture and inspect sanitized before/after screenshots through the actual iOS embedded flow before completion. Run focused tests and the required changed-file checks; record test wall time and CI cost. Put user-visible release-note context in the PR body, and do not edit CHANGELOG.md. Stop and return to triage if the repair requires a new feature, configuration option, or product-policy decision.
+Repair the existing iOS embedded Settings → Notifications presentation bug. First establish a failing owner-boundary regression using the existing native device-settings contract with platform ios and browser permission install-required. Pass the existing nativeDeviceSettings capability or its validated snapshot through config-page/view props, react to its existing lifecycle updates, and render concise native guidance with navigation to the existing device and permission routes. Reuse This iPhone/This iPad labels and controls; do not duplicate notification state, permission handling, or enrollment. Native iOS must not present Safari Add-to-Home-Screen as its enablement path. Preserve normal iPhone/iPad Safari installation guidance, installed PWA behavior, and macOS native notification controls. Keep https://github.com/openclaw/openclaw/issues/146791 separate: do not change APNs, relay registration, disclosure, authorization, persisted preferences, or notification delivery. Update canonical English copy and relevant docs under the UI locale policy; do not hand-edit generated translations. Run focused UI tests, UI typecheck, locale verification, and the repository changed-file gate; record test wall time and CI cost. Inspect sanitized before/after screenshots from the native iOS Settings flow before completing the repair. Put release-note context in the PR body; do not edit CHANGELOG.md. Stop and return to triage if the repair requires a new capability, config option, or product-policy choice.
 
 Likely files:
 
@@ -75,16 +75,18 @@ Likely files:
 - ui/src/pages/config/view-types.ts
 - ui/src/pages/config/notifications-section.ts
 - ui/src/pages/config/notifications-section.test.ts
+- ui/src/pages/config/config-page.test.ts
 - ui/src/i18n/locales/en-settings.ts
 - docs/web/notifications.md
 
 Validation:
 
-- pnpm --dir ui test src/pages/config/notifications-section.test.ts src/app/web-push.test.ts --maxWorkers=1
+- pnpm --dir ui test src/pages/config/notifications-section.test.ts src/pages/config/config-page.test.ts src/app/web-push.test.ts --maxWorkers=1
+- pnpm tsgo:ui
 - pnpm ui:i18n:verify
+- pnpm check:changed
 - git diff --check
-- Capture inspected, sanitized before/after iOS embedded Notifications screenshots and verify navigation to existing phone/tablet notification and permission controls.
-- Run the repository-required changed-file gate for the final repair paths.
+- Inspect sanitized native iPhone/iPad Settings → Notifications before/after screenshots and verify navigation to existing device notification and permission settings.
 
 ## Operator Prompt
 
