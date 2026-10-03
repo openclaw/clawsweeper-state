@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T14:51:16.312Z",
+  "updated_at": "2026-10-03T14:52:26.780Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162262:5967359228:2026-10-03T08:51:57Z:re_review",
-      "comment_id": "5967359228",
-      "comment_version_key": "5967359228:2026-10-03T08:51:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162262#issuecomment-5967359228",
-      "comment_created_at": "2026-10-03T08:51:57Z",
-      "comment_updated_at": "2026-10-03T08:51:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162262,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T09:00:49.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-startup-recovery",
-        "head_sha": "3c4e3d7ac8fbb4c06422d77aec8d3d8e9335cd74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164171:5967402803:2026-10-03T08:56:23Z:re_review",
       "comment_id": "5967402803",
@@ -32596,6 +32549,39 @@
         "kind": "pull_request",
         "branch": "codex/testperf-sdk-lock-contention",
         "head_sha": "6b47bcfa2f6b7423a3eb951f583ecb8f2f12384f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Kova:165:5970283346:2026-10-03T14:51:41Z:clawsweeper_auto_repair",
+      "comment_id": "5970283346",
+      "comment_version_key": "5970283346:2026-10-03T14:51:41Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/165#issuecomment-5970283346",
+      "comment_created_at": "2026-10-03T14:51:41Z",
+      "comment_updated_at": "2026-10-03T14:51:41Z",
+      "comment_body_sha256": "46434f988365896cb0cee825e81726712fad84313a69510cdd565c1be0e08b6f",
+      "repo": "openclaw/Kova",
+      "issue_number": 165,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1931dbd4880f16f5d23ef388559f8b221404a66e)",
+      "expected_head_sha": "1931dbd4880f16f5d23ef388559f8b221404a66e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T14:52:26.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-frv-mock-auth-config",
+        "head_sha": "1931dbd4880f16f5d23ef388559f8b221404a66e",
         "cluster_id": null,
         "job_path": null
       }
