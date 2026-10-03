@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164211",
+  "mode": "autonomous",
+  "run_id": "37113471390",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37113471390",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164211.md",
+  "published_at": "2026-10-03T09:49:48.782Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164211",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164211",
+  "canonical_pr": null,
+  "summary": "The inspected source retains the reported path defect. Implementation is blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed; the fix artifact requires current-main reproduction before editing.",
+  "actions": [
+    {
+      "target": "#164211",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164211",
+      "candidate_fix": null,
+      "reason": "A narrow startup-path repair remains justified by source evidence. Runtime reproduction and implementation must occur on a writable, dependency-equipped checkout with the current base pinned."
+    },
+    {
+      "target": "#76639",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164211",
+      "candidate_fix": null,
+      "reason": "Historical context with a distinct cause; no mutation."
+    },
+    {
+      "target": "#80431",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164211",
+      "candidate_fix": null,
+      "reason": "Preserve its dist-first/source-fallback contract; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164211",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164211",
+      "candidate_fix": null,
+      "reason": "Prepare the narrow executor handoff; local implementation and publication remain blocked until host and base prerequisites are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
