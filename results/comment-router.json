@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T01:51:39.354Z",
+  "updated_at": "2026-10-03T01:54:44.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142954:5598452887:2026-10-02T20:36:57Z:clawsweeper_needs_human",
-      "comment_id": "5598452887",
-      "comment_version_key": "5598452887:2026-10-02T20:36:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142954#issuecomment-5598452887",
-      "comment_created_at": "2026-09-09T08:07:42Z",
-      "comment_updated_at": "2026-10-02T20:36:57Z",
-      "comment_body_sha256": "5dbb62d4992459f7948f784594d9bdea89e2b040163e66b2b978f047c7553775",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142954,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-phone upgrade qualification remains incomplete: the successful development APK update does not establish retention of identity, grants, conversations, and settings from the... (sha=bca15ef5233305a618425833b70308c5c1d5c083)",
-      "expected_head_sha": "bca15ef5233305a618425833b70308c5c1d5c083",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T20:39:19.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-wear-gateway-client-20260909",
-        "head_sha": "bca15ef5233305a618425833b70308c5c1d5c083",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142954:5611341118:2026-09-10T01:36:11Z:re_review",
       "comment_id": "5611341118",
@@ -33070,6 +33037,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131590:5964323602:2026-10-03T01:53:52Z:re_review",
+      "comment_id": "5964323602",
+      "comment_version_key": "5964323602:2026-10-03T01:53:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5964323602",
+      "comment_created_at": "2026-10-03T01:53:52Z",
+      "comment_updated_at": "2026-10-03T01:53:52Z",
+      "comment_body_sha256": "49d6f3687dbc5cfe01641ceec048060e4e0fad8e5184beb2819b03e642f81e92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131590,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `2090a5e1058` is a ground-up re-expression of this fix on current main rather than a mechanical rebase: main's cron deslop refactor (63b38c70ea5) and the runonexit watcher-ownership refactor (bfa29707294) retired the seams the old head patched, so the old diff no longer applied",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T01:54:43.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131490-oneshot-silent-disable",
+        "head_sha": "2090a5e1058b94d94b1f360580cb7059b17843a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
