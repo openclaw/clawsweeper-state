@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:51:58.138Z",
+  "updated_at": "2026-10-03T04:52:52.177Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163860:5963145825:2026-10-02T23:36:13Z:autofix",
-      "comment_id": "5963145825",
-      "comment_version_key": "5963145825:2026-10-02T23:36:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163860#issuecomment-5963145825",
-      "comment_created_at": "2026-10-02T23:36:13Z",
-      "comment_updated_at": "2026-10-02T23:36:13Z",
-      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163860,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T23:36:55.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-chat-plugin-card-loading",
-        "head_sha": "009c0b1cbe0f4a86ee50155df95a33e9e8b0e539",
-        "cluster_id": "automerge-openclaw-openclaw-163860",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163860.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163860.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3579:5515247828:2026-10-02T23:37:40Z:clawsweeper_auto_repair",
       "comment_id": "5515247828",
@@ -32663,6 +32604,39 @@
         "kind": "pull_request",
         "branch": "fix/ui-agent-database-warmup",
         "head_sha": "5077b939d2c72b264f3d354e462ce3952f388499",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163203:5944964594:2026-10-03T04:51:53Z:clawsweeper_needs_human",
+      "comment_id": "5944964594",
+      "comment_version_key": "5944964594:2026-10-03T04:51:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163203#issuecomment-5944964594",
+      "comment_created_at": "2026-10-02T03:15:59Z",
+      "comment_updated_at": "2026-10-03T04:51:53Z",
+      "comment_body_sha256": "161791c6dcbb6c7503940f56135bdbd0b389c93783aa1fda38854b1bbb746458",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing shared-root accounts can appear unlinked if migration does not finish before runtime starts. The published 2026.9.7 updater-to-candidate and packed-plugin older-host compatib... (sha=3f9acb0dd9bfd7f9310ed69625fcf1d7f2e0dfce)",
+      "expected_head_sha": "3f9acb0dd9bfd7f9310ed69625fcf1d7f2e0dfce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T04:52:52.177Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-runtime-whatsapp-canonical-credentials",
+        "head_sha": "3f9acb0dd9bfd7f9310ed69625fcf1d7f2e0dfce",
         "cluster_id": null,
         "job_path": null
       }
