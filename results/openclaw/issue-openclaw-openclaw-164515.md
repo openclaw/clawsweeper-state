@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164515"
-mode: "autonomous"
-run_id: "37152145316"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37152145316"
+mode: "plan"
+run_id: "37156937821"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37156937821"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T21:15:04.454Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164515"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164515"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T22:08:45.113Z"
+canonical: "#164515"
+canonical_issue: "#164515"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37152145316](https://github.com/openclaw/clawsweeper/actions/runs/37152145316)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37156937821](https://github.com/openclaw/clawsweeper/actions/runs/37156937821)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164515
+Canonical: #164515
 
 ## Summary
 
-Source inspection confirms the active-to-replay projection mismatch on clean local main c732cad6448e7d2e8b36ae79e9ed2b66c68666fc. Implementation and failing-regression validation are blocked by the read-only host and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.
+Prepare one narrow projection fix for #164515. The clean checkout matches preflight main SHA 7b9615fc20fe61de6d32cb77bf5b2f0f3bed5e5a, and source inspection confirms the reported active-to-replay mismatch remains. No edits, tests, or GitHub mutations were performed. Route the adjacent security-review item separately.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Source inspection confirms the active-to-replay projection mismatch on clean loc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164515 | fix_needed | planned | canonical | The source finding remains actionable. A production-boundary failing regression must precede implementation; neither runtime reproduction nor a repaired branch was validated here. |
-| #102175 | keep_related | planned | related | Adjacent cache-efficiency context with distinct remaining work; keep open outside this implementation. |
-| cluster:issue-openclaw-openclaw-164515 | build_fix_artifact | planned |  | A narrow bug-only fix path is clear enough to prepare without making repository or GitHub mutations. |
-| cluster:issue-openclaw-openclaw-164515 | open_fix_pr | blocked |  | Implementation and publication are blocked until a writable executor establishes the failing regression, repairs the owner, passes required validation, and completes fresh review. |
+| https://github.com/openclaw/openclaw/issues/164515 | fix_needed | planned | canonical | Repair the existing projection owner so the same inter-session user's provider-visible content and fixed arrival envelope remain stable during tool loops and reconstructed turns. |
+| https://github.com/openclaw/openclaw/issues/102175 | route_security | planned | security_sensitive | Refer this exact item to central OpenClaw security handling without public mutation. Its broader policy scope does not block the independent projection repair. |
 
 ## Needs Human
 

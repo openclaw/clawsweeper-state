@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164515",
+  "mode": "plan",
+  "run_id": "37156937821",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37156937821",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164515.md",
+  "published_at": "2026-10-03T22:08:45.113Z",
+  "canonical": "#164515",
+  "canonical_issue": "#164515",
+  "canonical_pr": null,
+  "summary": "Prepare one narrow projection fix for #164515. The clean checkout matches preflight main SHA 7b9615fc20fe61de6d32cb77bf5b2f0f3bed5e5a, and source inspection confirms the reported active-to-replay mismatch remains. No edits, tests, or GitHub mutations were performed. Route the adjacent security-review item separately.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/164515",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164515",
+      "candidate_fix": null,
+      "reason": "Repair the existing projection owner so the same inter-session user's provider-visible content and fixed arrival envelope remain stable during tool loops and reconstructed turns."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/102175",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer this exact item to central OpenClaw security handling without public mutation. Its broader policy scope does not block the independent projection repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
