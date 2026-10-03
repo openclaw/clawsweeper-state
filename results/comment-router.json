@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:20:54.737Z",
+  "updated_at": "2026-10-03T23:21:12.443Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163592:5955307760:2026-10-03T17:01:56Z:clawsweeper_needs_human",
-      "comment_id": "5955307760",
-      "comment_version_key": "5955307760:2026-10-03T17:01:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163592#issuecomment-5955307760",
-      "comment_created_at": "2026-10-02T15:08:11Z",
-      "comment_updated_at": "2026-10-03T17:01:56Z",
-      "comment_body_sha256": "b906b2931312859ea60fa5ffc1a08afac1dd41acbfeb264c5a2be5f12afed759",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163592,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Checkpoint-bearing installations now require Doctor conversion before runtime reads; final-head fresh-store and published-driver evidence must establish successful upgrades, exact bac... (sha=cdd07fe9f009dbf51690ed0a3b905342971c4e61)",
-      "expected_head_sha": "cdd07fe9f009dbf51690ed0a3b905342971c4e61",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T17:02:40.959Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/lg-config-compaction-state",
-        "head_sha": "cdd07fe9f009dbf51690ed0a3b905342971c4e61",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164413:5971370380:2026-10-03T17:03:07Z:re_review",
       "comment_id": "5971370380",
@@ -33228,6 +33195,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164368:5974541793:2026-10-03T23:20:14Z:re_review",
+      "comment_id": "5974541793",
+      "comment_version_key": "5974541793:2026-10-03T23:20:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164368#issuecomment-5974541793",
+      "comment_created_at": "2026-10-03T23:20:14Z",
+      "comment_updated_at": "2026-10-03T23:20:14Z",
+      "comment_body_sha256": "fc76aaefd8a1b1597b2edf6ab20a24e035d1d1834c05c447fc650284e1d4ab45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164368,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: exact head ff311f77ed36caa405abf91688a718f0898bc2e8 now has built-gateway real websocket-to-stdio-mcp before/after cursor traces, unchanged aggregation/discovery controls, failing-before/passing-after installed regressions with standalone single-worker timings, and one real provider smoke. evidence and explicit browser-proof limit are in the updated pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T23:21:11.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-app-cursors-164365",
+        "head_sha": "ff311f77ed36caa405abf91688a718f0898bc2e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
