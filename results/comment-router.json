@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:35:09.898Z",
+  "updated_at": "2026-10-03T11:35:10.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119833:5213865819:2026-08-07T07:25:14Z:re_review",
-      "comment_id": "5213865819",
-      "comment_version_key": "5213865819:2026-08-07T07:25:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119833#issuecomment-5213865819",
-      "comment_created_at": "2026-08-07T07:25:14Z",
-      "comment_updated_at": "2026-08-07T07:25:14Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119833,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T05:41:18.316Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119833:5214361577:2026-08-07T08:16:05Z:re_review",
       "comment_id": "5214361577",
@@ -33052,6 +33025,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120569:5226146956:2026-10-03T11:34:11Z:clawsweeper_needs_human",
+      "comment_id": "5226146956",
+      "comment_version_key": "5226146956:2026-10-03T11:34:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120569#issuecomment-5226146956",
+      "comment_created_at": "2026-08-08T12:41:25Z",
+      "comment_updated_at": "2026-10-03T11:34:11Z",
+      "comment_body_sha256": "b83a4a72d95a6eaa532adc7dba46c626f4f883a94421e8a74ac99582665d1f88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120569,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch needs reconciliation with the current shared stream owner and available-context parser; its old positive-count assertions cannot be retained unchanged. (sha=325722185315037a380d9e3fd0734c587413ff4e)",
+      "expected_head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T11:35:10.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120356",
+        "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
+        "cluster_id": "automerge-openclaw-openclaw-120569",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120569.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
