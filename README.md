@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 3, 2026, 04:26 UTC
+Last source update: Oct 3, 2026, 04:49 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 3, 2026, 04:26 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 3, 2026, 04:26 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37095427516) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 3, 2026, 04:08 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37095481245) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 3, 2026, 04:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37095347690) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 04:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37097743529) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 3, 2026, 03:07 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37092120797) |
 
 ### Repositories
@@ -91,20 +91,20 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 3, 2026, 03:47 UTC
+Last source update: Oct 3, 2026, 04:36 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1397 | 100% |
-| Run attempts archived | 4146 | audit |
-| Latest successful clusters | 1156 | 82.7% |
+| Latest clusters reviewed | 1399 | 100% |
+| Run attempts archived | 4149 | audit |
+| Latest successful clusters | 1158 | 82.8% |
 | Latest failed clusters | 236 | 16.9% |
 | Latest cancelled clusters | 5 | 0.4% |
 | Needs-human clusters | 147 | 10.5% |
 | Fix actions failed | 33 | 4.0% |
-| Fix actions blocked | 173 | 21.2% |
+| Fix actions blocked | 175 | 21.3% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
 | Blocked mutation attempts | 325 | 99.7% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1397 clusters: 379 maintainer action, 431 automation snapshot, 529 intervention needed, 58 no pending action, 0 completed.
-- Maintainer first: [openclaw/wacli](https://github.com/openclaw/wacli) [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) is maintainer_input: #466: The inspected pinned SDK establishes the preference event, but does not establish preference polarity and companion auto-unarchive....
-- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [#531](https://github.com/steipete/oracle/pull/531) is automation_failed: The canonical issue remains viable. Implement and validate the cluster fix artifact in a writable executor..
+- Latest records: 1399 clusters: 379 maintainer action, 431 automation snapshot, 531 intervention needed, 58 no pending action, 0 completed.
+- Maintainer first: [openclaw/wacli](https://github.com/openclaw/wacli) [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) is maintainer_input: #466: Establish an authoritative contract for setting_unarchiveChats boolean polarity and eligible companion auto-unarchive transitions,....
+- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) is automation_blocked: validation_script_missing: required pnpm check:changed is unavailable in target checkout.
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#163958](https://github.com/openclaw/openclaw/pull/163958) is action_planned: A focused monitor repair is warranted. Establish a failing regression on the execution base before changing production code; stop if it d....
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 379 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 431 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 529 | automation failure or blocker recorded |
+| Intervention Needed | 531 | automation failure or blocker recorded |
 | No Pending Action | 58 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -139,7 +139,7 @@ State: Failed clusters need inspection
 | automation_active | 0 |
 | action_planned | 387 |
 | automation_failed | 245 |
-| automation_blocked | 284 |
+| automation_blocked | 286 |
 | reviewed_no_action | 58 |
 | completed | 0 |
 
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/wacli](https://github.com/openclaw/wacli) |  | maintainer_input | #466: The inspected pinned SDK establishes the preference event, but does not establish preference polarity and companion auto-unarchive eligibilit... | Oct 3, 2026, 03:45 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37094019035](https://github.com/openclaw/clawsweeper/actions/runs/37094019035) |
+| [openclaw/wacli](https://github.com/openclaw/wacli) |  | maintainer_input | #466: Establish an authoritative contract for setting_unarchiveChats boolean polarity and eligible companion auto-unarchive transitions, including... | Oct 3, 2026, 04:33 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37096697371](https://github.com/openclaw/clawsweeper/actions/runs/37096697371) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#1145](https://github.com/openclaw/openclaw-windows-node/issues/1145) | maintainer_input | For #1145 only: confirm the original numbered, bulleted, and inline-code messages in a current-main Windows Release build at narrow and resized wid... | Oct 2, 2026, 23:56 UTC | [issue-openclaw-openclaw-windows-node-1145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1145.md) | [37079638113](https://github.com/openclaw/clawsweeper/actions/runs/37079638113) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163459](https://github.com/openclaw/openclaw/pull/163459) | maintainer_input | Route this linked item to central security handling without public mutation. It does not block the separate UI classification. | Oct 2, 2026, 23:32 UTC | [issue-openclaw-openclaw-163832](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163832.md) | [37077779376](https://github.com/openclaw/clawsweeper/actions/runs/37077779376) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#1612](https://github.com/openclaw/openclaw-windows-node/issues/1612) | maintainer_input | #1612: Obtain a concrete problem statement or feature request from the author before implementation can be scoped. | Oct 2, 2026, 19:55 UTC | [issue-openclaw-openclaw-windows-node-1612](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1612.md) | [37055379739](https://github.com/openclaw/clawsweeper/actions/runs/37055379739) |
@@ -187,6 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 3, 2026, 04:36 UTC | [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) | [37096852901](https://github.com/openclaw/clawsweeper/actions/runs/37096852901) |
+| [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 3, 2026, 04:35 UTC | [issue-steipete-oracle-534](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-534.md) | [37096845593](https://github.com/openclaw/clawsweeper/actions/runs/37096845593) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [#531](https://github.com/steipete/oracle/pull/531) | automation_failed | The canonical issue remains viable. Implement and validate the cluster fix artifact in a writable executor. | Oct 3, 2026, 03:47 UTC | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37094023282](https://github.com/openclaw/clawsweeper/actions/runs/37094023282) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-532](cluster:issue-steipete-oracle-532) | automation_failed | PR creation is blocked until a writable executor implements the artifact, proves the regression fails before the fix, passes validation, and captur... | Oct 3, 2026, 02:43 UTC | [issue-steipete-oracle-532](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-532.md) | [37090594674](https://github.com/openclaw/clawsweeper/actions/runs/37090594674) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Implementation is blocked on retained same-session bridge metadata. Inspection of the supplied current main does not establish a narrow defect or p... | Oct 2, 2026, 23:57 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37079678795](https://github.com/openclaw/clawsweeper/actions/runs/37079678795) |
@@ -200,8 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117144](https://github.com/openclaw/openclaw/pull/117144) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 2, 2026, 08:56 UTC | [automerge-openclaw-openclaw-117144](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117144.md) | [36982780080](https://github.com/openclaw/clawsweeper/actions/runs/36982780080) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) |  | automation_blocked | No new PR warranted yet. The observed WinGet failure is repaired on current main by #1591. A separate existing-package detection defect remains unp... | Oct 2, 2026, 05:52 UTC | [issue-openclaw-openclaw-windows-node-1578](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1578.md) | [36970635706](https://github.com/openclaw/clawsweeper/actions/runs/36970635706) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 2, 2026, 00:45 UTC | [automerge-openclaw-openclaw-119975](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119975.md) | [36944703174](https://github.com/openclaw/clawsweeper/actions/runs/36944703174) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118806](https://github.com/openclaw/openclaw/pull/118806) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 1, 2026, 23:07 UTC | [automerge-openclaw-openclaw-118806](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118806.md) | [36932934899](https://github.com/openclaw/clawsweeper/actions/runs/36932934899) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#162891](https://github.com/openclaw/openclaw/pull/162891) | automation_failed | The documented inclusion contract has a narrow existing-behavior defect. Reverify the filter on latest main before applying the fix; leave the issu... | Oct 1, 2026, 19:33 UTC | [issue-openclaw-openclaw-162891](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-162891.md) | [36903304988](https://github.com/openclaw/clawsweeper/actions/runs/36903304988) |
 
 #### No Pending Action
 
@@ -233,7 +233,9 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-openclaw-wacli-466 | needs human | #466: The inspected pinned SDK establishes the preference event, but does not establish preference polarity and companion auto-unarchive eligibilit... | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37094019035](https://github.com/openclaw/clawsweeper/actions/runs/37094019035) |
+| issue-steipete-oracle-535 | execute_fix blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) | [37096852901](https://github.com/openclaw/clawsweeper/actions/runs/37096852901) |
+| issue-steipete-oracle-534 | execute_fix blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [issue-steipete-oracle-534](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-534.md) | [37096845593](https://github.com/openclaw/clawsweeper/actions/runs/37096845593) |
+| issue-openclaw-wacli-466 | needs human | #466: Establish an authoritative contract for setting_unarchiveChats boolean polarity and eligible companion auto-unarchive transitions, including... | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37096697371](https://github.com/openclaw/clawsweeper/actions/runs/37096697371) |
 | issue-openclaw-openclaw-windows-node-1145 | needs human | For #1145 only: confirm the original numbered, bulleted, and inline-code messages in a current-main Windows Release build at narrow and resized wid... | [issue-openclaw-openclaw-windows-node-1145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1145.md) | [37079638113](https://github.com/openclaw/clawsweeper/actions/runs/37079638113) |
 | issue-openclaw-openclaw-163568 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [issue-openclaw-openclaw-163568](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163568.md) | [37019308664](https://github.com/openclaw/clawsweeper/actions/runs/37019308664) |
 | issue-openclaw-openclaw-windows-node-1612 | needs human | #1612: Obtain a concrete problem statement or feature request from the author before implementation can be scoped. | [issue-openclaw-openclaw-windows-node-1612](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1612.md) | [37055379739](https://github.com/openclaw/clawsweeper/actions/runs/37055379739) |
@@ -261,13 +263,13 @@ State: Failed clusters need inspection
 | issue-steipete-codexbar-3660 | needs human | Obtain a current automatic-auth reproduction for #3660 after #3814 and #3883: selected Auth source, signed-in browser/profile, and exact error. The... | [issue-steipete-codexbar-3660](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3660.md) | [36489034004](https://github.com/openclaw/clawsweeper/actions/runs/36489034004) |
 | issue-openclaw-openclaw-125873 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=extensions, extensionTests, tooling... | [issue-openclaw-openclaw-125873](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-125873.md) | [36444377660](https://github.com/openclaw/clawsweeper/actions/runs/36444377660) |
 | issue-openclaw-openclaw-windows-node-1432 | needs human | #1432: The failing raw invocation and result, Diagnostics output, effective sandbox settings, execution mode, and a current-main reproduction are u... | [issue-openclaw-openclaw-windows-node-1432](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1432.md) | [36426283632](https://github.com/openclaw/clawsweeper/actions/runs/36426283632) |
-| issue-steipete-codexbar-3377 | needs human | For #3377, determine the corrective path after obtaining matched AppKit/Quartz geometry and rendered-content evidence on an affected machine; the c... | [issue-steipete-codexbar-3377](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3377.md) | [36415779816](https://github.com/openclaw/clawsweeper/actions/runs/36415779816) |
-| issue-steipete-codexbar-3209 | needs human | For #3209, obtain a redacted relative folder/file layout for one affected Desktop Cowork session and confirmation of whether its JSONL transcript c... | [issue-steipete-codexbar-3209](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-3209.md) | [36380621043](https://github.com/openclaw/clawsweeper/actions/runs/36380621043) |
 
 ### Fix Failure Queue
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
+| [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) | blocked |  |  | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [37096852901](https://github.com/openclaw/clawsweeper/actions/runs/37096852901) |
+| [issue-steipete-oracle-534](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-534.md) | blocked |  |  | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [37096845593](https://github.com/openclaw/clawsweeper/actions/runs/37096845593) |
 | [issue-openclaw-openclaw-163568](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163568.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [37019308664](https://github.com/openclaw/clawsweeper/actions/runs/37019308664) |
 | [automerge-openclaw-openclaw-119975](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119975.md) | failed |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [36944703174](https://github.com/openclaw/clawsweeper/actions/runs/36944703174) |
 | [automerge-openclaw-openclaw-119975](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119975.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [36944703174](https://github.com/openclaw/clawsweeper/actions/runs/36944703174) |
@@ -291,8 +293,6 @@ State: Failed clusters need inspection
 | [issue-openclaw-openclaw-152499](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152499.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [35422501807](https://github.com/openclaw/clawsweeper/actions/runs/35422501807) |
 | [issue-openclaw-openclaw-152145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152145.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=coreTests, ui [check:changed] ui/src... | [35392189093](https://github.com/openclaw/clawsweeper/actions/runs/35392189093) |
 | [issue-openclaw-openclaw-149933](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-149933.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [35078947217](https://github.com/openclaw/clawsweeper/actions/runs/35078947217) |
-| [automerge-openclaw-openclaw-146737](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-146737.md) | failed |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impact... | [35026098014](https://github.com/openclaw/clawsweeper/actions/runs/35026098014) |
-| [automerge-openclaw-openclaw-146737](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-146737.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impact... | [35026098014](https://github.com/openclaw/clawsweeper/actions/runs/35026098014) |
 
 ### Top Blocked Reasons
 
