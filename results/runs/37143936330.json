@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37143936330",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37143936330",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-03T18:26:53.621Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on the issue's two upstream publication gates. The hydrated October 3 review reports neither gate met; current main still pins ghostty-web@0.4.0. No code changes or PR are appropriate. Two incorrectly extracted repository-relative refs require inventory correction because their kind and updated_at are unavailable.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Retain the adoption tracker. Resume implementation only after both stable publications are verified; no new maintainer decision is needed."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical preparation, not completed runtime adoption; no further action."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Blocked solely on correcting the invalid repository-relative inventory entry. Do not infer closure, fabricate target metadata, or act against openclaw/libterminal#169."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Blocked solely on correcting the invalid repository-relative inventory entry. Do not infer closure, fabricate target metadata, or act against openclaw/libterminal#182."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#169: Correct the repository-relative extraction of https://github.com/coder/ghostty-web/pull/169; the libterminal lookup returned HTTP 404 with kind unknown and updated_at null. No GitHub action is authorized for this unavailable target.",
+    "#182: Correct the repository-relative extraction of https://github.com/coder/ghostty-web/pull/182; the libterminal lookup returned HTTP 404 with kind unknown and updated_at null. No GitHub action is authorized for this unavailable target."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#41",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
