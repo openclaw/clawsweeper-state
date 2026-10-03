@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T19:14:00.825Z",
+  "updated_at": "2026-10-03T19:14:20.629Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3845:5895661422:2026-10-03T12:52:22Z:clawsweeper_needs_human",
-      "comment_id": "5895661422",
-      "comment_version_key": "5895661422:2026-10-03T12:52:22Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3845#issuecomment-5895661422",
-      "comment_created_at": "2026-09-29T17:53:47Z",
-      "comment_updated_at": "2026-10-03T12:52:22Z",
-      "comment_body_sha256": "a9bcebccec61f9d0a273efde5643ea2ab341f9a4f34e0f1b93fc284967ed1055",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3845,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the explicitly requested human review and mark the draft ready before landing. (sha=e3895d703b10afa9e9952bfb76262999611d74ca)",
-      "expected_head_sha": "e3895d703b10afa9e9952bfb76262999611d74ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T12:53:05.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/health-publication-repair",
-        "head_sha": "e3895d703b10afa9e9952bfb76262999611d74ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3871:5920165548:2026-10-03T12:52:21Z:clawsweeper_needs_human",
       "comment_id": "5920165548",
@@ -32909,6 +32876,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164061:5972596099:2026-10-03T19:13:25Z:re_review",
+      "comment_id": "5972596099",
+      "comment_version_key": "5972596099:2026-10-03T19:13:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164061#issuecomment-5972596099",
+      "comment_created_at": "2026-10-03T19:13:25Z",
+      "comment_updated_at": "2026-10-03T19:13:25Z",
+      "comment_body_sha256": "16220dcd01e96651e51cf30d4a0bccd3f0e70ab4e2fabea55c220bdc9b9af5b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164061,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T19:14:19.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-sidebar",
+        "head_sha": "ee0e73d74eabf40581395a0ce94d51f022fe7708",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
