@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164515",
+  "mode": "autonomous",
+  "run_id": "37152145316",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37152145316",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164515.md",
+  "published_at": "2026-10-03T21:15:04.454Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164515",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164515",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the active-to-replay projection mismatch on clean local main c732cad6448e7d2e8b36ae79e9ed2b66c68666fc. Implementation and failing-regression validation are blocked by the read-only host and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#164515",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164515",
+      "candidate_fix": null,
+      "reason": "The source finding remains actionable. A production-boundary failing regression must precede implementation; neither runtime reproduction nor a repaired branch was validated here."
+    },
+    {
+      "target": "#102175",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#164515",
+      "candidate_fix": null,
+      "reason": "Adjacent cache-efficiency context with distinct remaining work; keep open outside this implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164515",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164515",
+      "candidate_fix": null,
+      "reason": "A narrow bug-only fix path is clear enough to prepare without making repository or GitHub mutations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164515",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#164515",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked until a writable executor establishes the failing regression, repairs the owner, passes required validation, and completes fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
