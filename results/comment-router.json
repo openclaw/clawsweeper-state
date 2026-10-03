@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:42:57.554Z",
+  "updated_at": "2026-10-03T11:44:07.298Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:306:5957853677:2026-10-03T06:04:46Z:clawsweeper_needs_human",
-      "comment_id": "5957853677",
-      "comment_version_key": "5957853677:2026-10-03T06:04:46Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/306#issuecomment-5957853677",
-      "comment_created_at": "2026-10-02T17:35:28Z",
-      "comment_updated_at": "2026-10-03T06:04:46Z",
-      "comment_body_sha256": "c27e46dd9c77ad1cd579c2b0f5609dd570b37fc47a98ecbeb496d08afdc8e366",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 306,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing invocations without a model override will change model selection and lose automatic access-failure recovery; previously recovering reviews may now stop. (sha=6893ea75811eff687c603dbc79109cd49b03ef8f)",
-      "expected_head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T06:05:43.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-operator-model",
-        "head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/tokentally:58:5947160049:2026-10-03T06:05:44Z:clawsweeper_needs_human",
       "comment_id": "5947160049",
@@ -32774,6 +32741,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163812:5968829342:2026-10-03T11:43:13Z:re_review",
+      "comment_id": "5968829342",
+      "comment_version_key": "5968829342:2026-10-03T11:43:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163812#issuecomment-5968829342",
+      "comment_created_at": "2026-10-03T11:43:13Z",
+      "comment_updated_at": "2026-10-03T11:43:13Z",
+      "comment_body_sha256": "7bbed708bcd81609f624c7426a58ecd58cd3ed917b51e92334d7a72b1af38523",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163812,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T11:44:05.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "baseline-npm-manifest-exec-20261003",
+        "head_sha": "2842981ff2aa42dc5b34827bb5519d95c1c0d401",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
