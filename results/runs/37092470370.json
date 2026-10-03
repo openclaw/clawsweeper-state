@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163958",
+  "mode": "plan",
+  "run_id": "37092470370",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37092470370",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163958.md",
+  "published_at": "2026-10-03T03:16:55.264Z",
+  "canonical": "#163958",
+  "canonical_issue": "#163958",
+  "canonical_pr": null,
+  "summary": "Plan a narrow availability-aware disk-space monitor fix. The reported path remains in local main at 1b08795ae4945bf14add3dbb526b66a7ab925d16. No code changes, runtime reproduction, tests, or GitHub mutations were performed; failing regression proof is required before implementation.",
+  "actions": [
+    {
+      "target": "#163958",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163958",
+      "candidate_fix": null,
+      "reason": "A focused monitor repair is warranted. Establish a failing regression on the execution base before changing production code; stop if it does not reproduce."
+    },
+    {
+      "target": "#146012",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#163958",
+      "candidate_fix": null,
+      "reason": "Distinct recovery behavior; exclude abandonment and closure from this monitor repair."
+    },
+    {
+      "target": "#137001",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163958",
+      "candidate_fix": null,
+      "reason": "Historical monitoring precedent. Preserve its stale-build suppression while allowing unavailable-host recovery without rebinding."
+    },
+    {
+      "target": "#146010",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#163958",
+      "candidate_fix": null,
+      "reason": "Historical evidence that unavailable placements and pending results must remain protected; no action required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
