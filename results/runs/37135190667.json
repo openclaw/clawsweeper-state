@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164319",
+  "mode": "plan",
+  "run_id": "37135190667",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37135190667",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164319.md",
+  "published_at": "2026-10-03T16:02:27.195Z",
+  "canonical": "#164319",
+  "canonical_issue": "#164319",
+  "canonical_pr": null,
+  "summary": "Plan a narrow SQLite snapshot publication repair. Source inspection at preflight main 01d4351e8f93665a95446ab0f5794de11a2e1f08 supports the reported birthtime rejection after hard-link transfer. No edits, reproduction, tests, or GitHub mutations were performed. Implementation must first demonstrate the failing regression.",
+  "actions": [
+    {
+      "target": "#164319",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164319",
+      "candidate_fix": null,
+      "reason": "The snapshot transfer repair has a clear bug-only scope. Prepare one implementation PR after reproduction and required validation; closure and merge are prohibited."
+    },
+    {
+      "target": "#164308",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#164319",
+      "candidate_fix": null,
+      "reason": "Related metadata symptom, distinct platform, owner, and validation requirements. Keep outside this repair."
+    },
+    {
+      "target": "#162672",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164319",
+      "candidate_fix": null,
+      "reason": "Historical context for Linux birthtime-as-ctime behavior; no action on the closed issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

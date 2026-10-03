@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164319"
-mode: "autonomous"
-run_id: "37126744141"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37126744141"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T14:27:58.662Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164319"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164319"
+mode: "plan"
+run_id: "37135190667"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37135190667"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T16:02:27.195Z"
+canonical: "#164319"
+canonical_issue: "#164319"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37126744141](https://github.com/openclaw/clawsweeper/actions/runs/37126744141)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37135190667](https://github.com/openclaw/clawsweeper/actions/runs/37135190667)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164319
+Canonical: #164319
 
 ## Summary
 
-The reported transfer rejection remains in preflight main e2dd931aaba886c32877f8a32d07290f7103981f. A narrow repair artifact is ready, but implementation and runtime reproduction are blocked by read-only filesystem access and missing dependencies. No files or GitHub state were changed.
+Plan a narrow SQLite snapshot publication repair. Source inspection at preflight main 01d4351e8f93665a95446ab0f5794de11a2e1f08 supports the reported birthtime rejection after hard-link transfer. No edits, reproduction, tests, or GitHub mutations were performed. Implementation must first demonstrate the failing regression.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The reported transfer rejection remains in preflight main e2dd931aaba886c32877f8
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164319 | fix_needed | planned | canonical | Repair remains warranted from current source and hydrated issue evidence. The executor must establish the required failing entry-point regression before editing production code. |
-| #164308 | keep_related | planned | related | Keep open as adjacent, distinct work; this snapshot repair cannot resolve its inventory contract. |
-| #162672 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-164319 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation is blocked on a writable executor with dependencies and isolated validation support. |
+| #164319 | fix_needed | planned | canonical | The snapshot transfer repair has a clear bug-only scope. Prepare one implementation PR after reproduction and required validation; closure and merge are prohibited. |
+| #164308 | keep_related | planned | related | Related metadata symptom, distinct platform, owner, and validation requirements. Keep outside this repair. |
+| #162672 | keep_closed | skipped | related | Historical context for Linux birthtime-as-ctime behavior; no action on the closed issue. |
 
 ## Needs Human
 
