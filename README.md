@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 3, 2026, 22:25 UTC
+Last source update: Oct 3, 2026, 23:35 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 3, 2026, 22:25 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 3, 2026, 22:25 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37157918859) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 22:18 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37157925457) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 3, 2026, 23:35 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37161310914) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 23:18 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37161295409) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 3, 2026, 14:09 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37128619979) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 3, 2026, 22:08 UTC
+Last source update: Oct 3, 2026, 23:24 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1419 | 100% |
-| Run attempts archived | 4228 | audit |
-| Latest successful clusters | 1174 | 82.7% |
-| Latest failed clusters | 241 | 17.0% |
+| Run attempts archived | 4232 | audit |
+| Latest successful clusters | 1175 | 82.8% |
+| Latest failed clusters | 240 | 16.9% |
 | Latest cancelled clusters | 4 | 0.3% |
 | Needs-human clusters | 149 | 10.5% |
 | Fix actions failed | 33 | 4.0% |
@@ -115,17 +115,17 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1419 clusters: 385 maintainer action, 440 automation snapshot, 535 intervention needed, 59 no pending action, 0 completed.
+- Latest records: 1419 clusters: 385 maintainer action, 441 automation snapshot, 534 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#102175](https://github.com/openclaw/openclaw/issues/102175) is maintainer_input: Refer this exact item to central OpenClaw security handling without public mutation. Its broader policy scope does not block the independ....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164557](https://github.com/openclaw/openclaw/pull/164557) is automation_failed: The source finding remains valid and has a narrow existing-owner repair path. A failing regression must still be demonstrated before prod....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164470](https://github.com/openclaw/openclaw/pull/164470) is action_planned: The reported failure has a narrow existing-behavior repair path. Reproduce on current main before editing, then bind deferred tool execut....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120978](https://github.com/openclaw/openclaw/pull/120978) is automation_failed: The ordinary lifecycle bug has a narrow existing-owner repair path. Keep the issue open; closure and merge are prohibited by this job..
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164557](https://github.com/openclaw/openclaw/issues/164557) is action_planned: A focused presentation fix is supported by the existing contract. Merge and closure are prohibited by this job..
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
 | Maintainer Action | 385 | explicit decision, access, or merge authority recorded |
-| Automation Snapshot | 440 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 535 | automation failure or blocker recorded |
+| Automation Snapshot | 441 | repair, check, or planned action recorded; verify live status |
+| Intervention Needed | 534 | automation failure or blocker recorded |
 | No Pending Action | 59 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -137,8 +137,8 @@ State: Failed clusters need inspection
 | checks_blocked | 43 |
 | repair_open | 1 |
 | automation_active | 0 |
-| action_planned | 396 |
-| automation_failed | 250 |
+| action_planned | 397 |
+| automation_failed | 249 |
 | automation_blocked | 285 |
 | reviewed_no_action | 59 |
 | completed | 0 |
@@ -167,6 +167,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164557](https://github.com/openclaw/openclaw/issues/164557) | action_planned | A focused presentation fix is supported by the existing contract. Merge and closure are prohibited by this job. | Oct 3, 2026, 23:20 UTC | [issue-openclaw-openclaw-164557](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164557.md) | [37161282012](https://github.com/openclaw/clawsweeper/actions/runs/37161282012) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164470](https://github.com/openclaw/openclaw/pull/164470) | action_planned | The reported failure has a narrow existing-behavior repair path. Reproduce on current main before editing, then bind deferred tool execution to the... | Oct 3, 2026, 20:43 UTC | [issue-openclaw-openclaw-164470](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164470.md) | [37152362213](https://github.com/openclaw/clawsweeper/actions/runs/37152362213) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164499](https://github.com/openclaw/openclaw/pull/164499) | action_planned | A focused cleanup-owner repair is appropriate. Establish executable failure and inspect the pinned native ownership contract before implementation;... | Oct 3, 2026, 20:43 UTC | [issue-openclaw-openclaw-164499](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164499.md) | [37152360230](https://github.com/openclaw/clawsweeper/actions/runs/37152360230) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164346](https://github.com/openclaw/openclaw/pull/164346) | action_planned | Repair the page's existing selected-agent catalog lifecycle while preserving the all-agent inventory and open editor. Establish the required mounte... | Oct 3, 2026, 18:33 UTC | [issue-openclaw-openclaw-164346](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164346.md) | [37135186889](https://github.com/openclaw/clawsweeper/actions/runs/37135186889) |
@@ -181,27 +182,26 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163958](https://github.com/openclaw/openclaw/pull/163958) | action_planned | A focused monitor repair is warranted. Establish a failing regression on the execution base before changing production code; stop if it does not re... | Oct 3, 2026, 03:16 UTC | [issue-openclaw-openclaw-163958](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163958.md) | [37092470370](https://github.com/openclaw/clawsweeper/actions/runs/37092470370) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163964](https://github.com/openclaw/openclaw/pull/163964) | action_planned | Preserve azuretek's existing implementation and attribution; do not open a competing PR. Obtain the complete review requirements before repair. Fir... | Oct 3, 2026, 02:53 UTC | [issue-openclaw-openclaw-163956](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163956.md) | [37091131002](https://github.com/openclaw/clawsweeper/actions/runs/37091131002) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163939](https://github.com/openclaw/openclaw/pull/163939) | action_planned | A focused existing-behavior repair is appropriate. Establish failing regressions before implementation, retain authentication and lifecycle contrac... | Oct 3, 2026, 02:53 UTC | [issue-openclaw-openclaw-163939](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163939.md) | [37091132383](https://github.com/openclaw/clawsweeper/actions/runs/37091132383) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163900](https://github.com/openclaw/openclaw/issues/163900) | action_planned | A focused parser repair can reclaim fully generated consolidation sections without changing budgets, retention policy, provenance, or publication s... | Oct 3, 2026, 02:02 UTC | [issue-openclaw-openclaw-163900](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163900.md) | [37087150560](https://github.com/openclaw/clawsweeper/actions/runs/37087150560) |
 
 #### Intervention Needed
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164557](https://github.com/openclaw/openclaw/pull/164557) | automation_failed | The source finding remains valid and has a narrow existing-owner repair path. A failing regression must still be demonstrated before production edits. | Oct 3, 2026, 22:02 UTC | [issue-openclaw-openclaw-164557](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164557.md) | [37156550958](https://github.com/openclaw/clawsweeper/actions/runs/37156550958) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#120978](https://github.com/openclaw/openclaw/pull/120978) | automation_failed | The ordinary lifecycle bug has a narrow existing-owner repair path. Keep the issue open; closure and merge are prohibited by this job. | Oct 3, 2026, 23:24 UTC | [issue-openclaw-openclaw-120978](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120978.md) | [37159485581](https://github.com/openclaw/clawsweeper/actions/runs/37159485581) |
+| [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-532](cluster:issue-steipete-oracle-532) | automation_failed | Implementation and PR preparation require a writable checkout with dependencies. Apply the planned fix artifact, complete validation and review, th... | Oct 3, 2026, 23:11 UTC | [issue-steipete-oracle-532](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-532.md) | [37160698053](https://github.com/openclaw/clawsweeper/actions/runs/37160698053) |
+| [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-531](cluster:issue-steipete-oracle-531) | automation_failed | Creating or updating clawsweeper/issue-steipete-oracle-531 and validating its implementation require a writable checkout with dependencies. PR publ... | Oct 3, 2026, 23:10 UTC | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37160686321](https://github.com/openclaw/clawsweeper/actions/runs/37160686321) |
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) | automation_failed | Implementation requires a writable executor checkout and tool caches. Reuse clawsweeper/issue-openclaw-wacli-466 if it exists, re-fetch issue and b... | Oct 3, 2026, 21:59 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37152307260](https://github.com/openclaw/clawsweeper/actions/runs/37152307260) |
-| [steipete/oracle](https://github.com/steipete/oracle) | [#531](https://github.com/steipete/oracle/pull/531) | automation_failed | The bug remains source-proven and has a narrow repair path. Implementation requires a writable executor checkout; no product decision is unresolved. | Oct 3, 2026, 21:43 UTC | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37155850929](https://github.com/openclaw/clawsweeper/actions/runs/37155850929) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#120978](https://github.com/openclaw/openclaw/pull/120978) | automation_failed | The ordinary lifecycle bug has a narrow existing-owner repair path. Implementation is blocked by host restrictions; runtime reproduction remains re... | Oct 3, 2026, 20:51 UTC | [issue-openclaw-openclaw-120978](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120978.md) | [37149110963](https://github.com/openclaw/clawsweeper/actions/runs/37149110963) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4230](https://github.com/steipete/codexbar/pull/4230) | automation_failed | A narrow shared extraction fix directly satisfies the existing balance display request. | Oct 3, 2026, 20:45 UTC | [issue-steipete-codexbar-4230](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4230.md) | [37152325564](https://github.com/openclaw/clawsweeper/actions/runs/37152325564) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | No implementation PR is warranted: the source repair and runtime compatibility gates are present on supplied main afb5487d765dad703425b7d22d2ed71d4... | Oct 3, 2026, 20:27 UTC | [issue-openclaw-peekaboo-831](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-831.md) | [37151414776](https://github.com/openclaw/clawsweeper/actions/runs/37151414776) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Implementation is blocked pending the ZCode metadata already requested by the maintainer. The supplied main contains the catalog fallback from #505... | Oct 3, 2026, 17:13 UTC | [issue-openclaw-peekaboo-869](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-869.md) | [37139469031](https://github.com/openclaw/clawsweeper/actions/runs/37139469031) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): validation command left 1 background process(es) after exit | Oct 3, 2026, 07:34 UTC | [issue-openclaw-openclaw-164113](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164113.md) | [37105575261](https://github.com/openclaw/clawsweeper/actions/runs/37105575261) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164091](https://github.com/openclaw/openclaw/pull/164091) | automation_failed | The defect remains reproducible in available main source and has a narrow queue-owned repair. Leave the issue open. | Oct 3, 2026, 07:12 UTC | [issue-openclaw-openclaw-164091](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164091.md) | [37103775730](https://github.com/openclaw/clawsweeper/actions/runs/37103775730) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119735](https://github.com/openclaw/openclaw/pull/119735) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 3, 2026, 05:27 UTC | [automerge-openclaw-openclaw-119735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119735.md) | [37097239642](https://github.com/openclaw/clawsweeper/actions/runs/37097239642) |
-| [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-532](cluster:issue-steipete-oracle-532) | automation_failed | Implementation and PR readiness are blocked until an executor with a writable checkout installs dependencies, implements the artifact, and complete... | Oct 3, 2026, 04:57 UTC | [issue-steipete-oracle-532](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-532.md) | [37096835309](https://github.com/openclaw/clawsweeper/actions/runs/37096835309) |
 | [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 3, 2026, 04:35 UTC | [issue-steipete-oracle-534](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-534.md) | [37096845593](https://github.com/openclaw/clawsweeper/actions/runs/37096845593) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Implementation is blocked on retained same-session bridge metadata. Inspection of the supplied current main does not establish a narrow defect or p... | Oct 2, 2026, 23:57 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37079678795](https://github.com/openclaw/clawsweeper/actions/runs/37079678795) |
 | [openclaw/gogcli](https://github.com/openclaw/gogcli) |  | automation_blocked | Implementation is blocked by #1159's explicit requirement to wait for general availability. The hydrated October 2 review reports insertComment rem... | Oct 2, 2026, 23:39 UTC | [issue-openclaw-gogcli-1159](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1159.md) | [37078348097](https://github.com/openclaw/clawsweeper/actions/runs/37078348097) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4201](https://github.com/steipete/codexbar/pull/4201) | automation_failed | The source-proven defect has a bounded repair independent of #4200. Leave the issue open. | Oct 2, 2026, 20:34 UTC | [issue-steipete-codexbar-4201](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4201.md) | [37030495125](https://github.com/openclaw/clawsweeper/actions/runs/37030495125) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 2, 2026, 19:56 UTC | [issue-openclaw-openclaw-163568](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-163568.md) | [37019308664](https://github.com/openclaw/clawsweeper/actions/runs/37019308664) |
 
 #### No Pending Action
 
