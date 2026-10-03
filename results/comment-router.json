@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T00:09:53.826Z",
+  "updated_at": "2026-10-03T00:10:01.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154904:5959056778:2026-10-02T18:45:06Z:re_review",
-      "comment_id": "5959056778",
-      "comment_version_key": "5959056778:2026-10-02T18:45:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154904#issuecomment-5959056778",
-      "comment_created_at": "2026-10-02T18:45:06Z",
-      "comment_updated_at": "2026-10-02T18:45:06Z",
-      "comment_body_sha256": "9e23c3225a59e9bc45e21ebdd78de5659719f47a6981f9f2997bcda3ecb50edf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154904,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: rev11 head 5682aec80e8. fixes the remaining p2 (completed-turn false-ack): visible-path membership was too weak -- a cached user k whose turn another manager completes with a same-branch assistant reply remains a visible-path ancestor and was wrongly degraded. added resolvetranscriptcanonicalcurrentturnentryidintransaction, a durable mirror of resolvecurrentturnentryid that drives the shared walksessioncurrentturn generator up from the append cursor (same traversability rules), returning the first non-traversable entry id; the dirty anchor path now degrades iff entryid equals that current turn. new regression g2 proves the old visible-path check stays red (k still on path) while the new exact-match rejects. anchor-dedup 9/9, tsgo:core 0, ratchet ok, deadexport 0, lint/fmt clean",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T18:46:13.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-anchor-dedup",
-        "head_sha": "5682aec80e8330e0cd215d2bee971bdc16fabc03",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163693:5958427853:2026-10-02T18:45:33Z:clawsweeper_needs_human",
       "comment_id": "5958427853",
@@ -33324,6 +33277,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163875:5963447633:2026-10-03T00:09:10Z:fix_ci",
+      "comment_id": "5963447633",
+      "comment_version_key": "5963447633:2026-10-03T00:09:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163875#issuecomment-5963447633",
+      "comment_created_at": "2026-10-03T00:09:10Z",
+      "comment_updated_at": "2026-10-03T00:09:10Z",
+      "comment_body_sha256": "ce450af36a6c06eda2ae3b7ea08c75eb4058dd382e584f8140b050327e432465",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163875,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "fix ci",
+      "intent": "fix_ci",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-03T00:10:00.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mcp-browser-signin",
+        "head_sha": "781d6e07cb4df65b7e37027f089c95399b872648",
+        "cluster_id": "automerge-openclaw-openclaw-163875",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
