@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164115"
-mode: "autonomous"
-run_id: "37105827518"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37105827518"
+mode: "plan"
+run_id: "37110387053"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37110387053"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T07:58:54.162Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164115"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164115"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T08:43:03.212Z"
+canonical: "#164115"
+canonical_issue: "#164115"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37105827518](https://github.com/openclaw/clawsweeper/actions/runs/37105827518)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37110387053](https://github.com/openclaw/clawsweeper/actions/runs/37110387053)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164115
+Canonical: #164115
 
 ## Summary
 
-Source inspection confirms the global-only alias lookup on preflight main e17e653e8deaf6bd09f7f7bcd6f2faab3ddee3ec. A narrow executor fix plan is ready. Implementation and executable regression proof are blocked by the read-only host and absent dependencies; no files or GitHub state changed.
+Plan a narrow aggregate-status alias fix. The clean checkout matches preflight main 28f73eb9a5b3bac834701852d4464152ea70e2f8. Source inspection confirms global-only alias lookup remains; executable reproduction, implementation, review, and validation are pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Source inspection confirms the global-only alias lookup on preflight main e17e65
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164115 | fix_needed | planned | canonical | The ordinary status bug has a clear narrow repair path. The executor must establish the failing regression before editing production code. |
-| #115984 | keep_closed | skipped | related | Historical context only. |
-| #127631 | keep_closed | skipped | related | Historical context supporting reuse of the existing alias owner. |
-| #144648 | keep_closed | skipped | related | Historical performance context, not a fix for agent-local aliases. |
-| cluster:issue-openclaw-openclaw-164115 | build_fix_artifact | planned |  | The artifact is executable on a writable, dependency-ready executor. Local implementation is blocked by host restrictions; no maintainer product decision is unresolved. |
+| #164115 | fix_needed | planned | canonical | A focused bug repair is appropriate. Establish the failing regression on current main before implementing; stop if reproduction fails. |
+| #115984 | keep_closed | skipped | related | Historical context addressing a different defect; preserve its landed behavior. |
+| #127631 | keep_closed | skipped | related | Historical precedent for using the shared alias owner; it does not repair aggregate status. |
+| #144648 | keep_closed | skipped | related | Preserve prepared-reference reuse while correcting alias preparation. |
 
 ## Needs Human
 
