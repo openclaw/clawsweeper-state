@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:31:52.351Z",
+  "updated_at": "2026-10-03T04:32:30.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161480:5963015643:2026-10-02T23:22:01Z:re_review",
-      "comment_id": "5963015643",
-      "comment_version_key": "5963015643:2026-10-02T23:22:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161480#issuecomment-5963015643",
-      "comment_created_at": "2026-10-02T23:22:01Z",
-      "comment_updated_at": "2026-10-02T23:22:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161480,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T23:23:00.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1085",
-        "head_sha": "1f9c75727a6e08b3bd1ba2ed5bb766fcd7e077e3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163823:5962485693:2026-10-02T23:22:21Z:clawsweeper_auto_repair",
       "comment_id": "5962485693",
@@ -32495,6 +32448,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-66263-codex-native-compaction-can-leave",
         "head_sha": "9203935de573361844161999bf905b1bd9b0aec9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:261:5927666534:2026-10-03T04:31:37Z:clawsweeper_needs_human",
+      "comment_id": "5927666534",
+      "comment_version_key": "5927666534:2026-10-03T04:31:37Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/261#issuecomment-5927666534",
+      "comment_created_at": "2026-10-01T08:26:29Z",
+      "comment_updated_at": "2026-10-03T04:31:37Z",
+      "comment_body_sha256": "dcde3b09bab16b21431fbfab8762ec3e50509ce2168c9dfe658ba1d0fdee58fd",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 261,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Crawlkit v0.16.7 has not completed official GitHub Release publication. The PR’s stated cooldown expires at 2026-10-03T07:50:56Z, but whether public module availability satisfies the... (sha=9482eef0c31ad6e07954dfbfe3d6535dcded7d21)",
+      "expected_head_sha": "9482eef0c31ad6e07954dfbfe3d6535dcded7d21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T04:32:30.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/crawlkit-0.16.7-20261001",
+        "head_sha": "9482eef0c31ad6e07954dfbfe3d6535dcded7d21",
         "cluster_id": null,
         "job_path": null
       }
