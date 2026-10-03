@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-531"
 mode: "autonomous"
-run_id: "37094023282"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37094023282"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+run_id: "37139351326"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37139351326"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T03:47:06.423Z"
+published_at: "2026-10-03T17:40:25.907Z"
 canonical: "https://github.com/steipete/oracle/issues/531"
 canonical_issue: "https://github.com/steipete/oracle/issues/531"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37094023282](https://github.com/openclaw/clawsweeper/actions/runs/37094023282)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37139351326](https://github.com/openclaw/clawsweeper/actions/runs/37139351326)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/531
 
 ## Summary
 
-The defect remains on preflight main. A narrow fix artifact is prepared, but implementation is blocked by the read-only filesystem and absent dependencies. No files or GitHub state were changed; regression-suite validation and the CLI dry-run remain pending.
+Verified #531 on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 and prepared a narrow fix artifact. Implementation and validation are blocked by the read-only filesystem; no files or GitHub state were changed. #532 remains separate performance work.
 
 ## Impact
 
@@ -66,10 +66,10 @@ The defect remains on preflight main. A narrow fix artifact is prepared, but imp
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #531 | fix_needed | planned | canonical | The canonical issue remains viable. Implement and validate the cluster fix artifact in a writable executor. |
-| #532 | keep_related | planned | related | Keep open as adjacent context; do not alter ignore-discovery scope in this repair. |
-| #533 | keep_independent | planned | independent | Independent dependency maintenance; no repair, merge, or closure action belongs in this cluster. |
-| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned |  | Artifact planning is complete; code changes and required validation are blocked pending a writable executor with repository dependencies. |
+| #531 | fix_needed | planned | canonical | The ordinary file-selection bug remains viable and has a narrow repair path. No product or security decision is required. |
+| #532 | keep_related | planned | related | Same file-selection area, distinct performance cause and implementation scope; keep open for its own repair. |
+| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned |  | The artifact is ready for a writable executor; local implementation and validation remain blocked by filesystem permissions. |
+| cluster:issue-steipete-oracle-531 | open_fix_pr | blocked |  | PR creation is blocked until a writable executor implements the artifact, demonstrates failing-then-passing regressions, completes validation and review, and captures the required CLI proof. |
 
 ## Needs Human
 
