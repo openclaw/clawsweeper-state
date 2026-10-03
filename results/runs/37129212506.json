@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-535",
+  "mode": "autonomous",
+  "run_id": "37129212506",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37129212506",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-535.md",
+  "published_at": "2026-10-03T14:30:03.890Z",
+  "canonical": "https://github.com/steipete/oracle/issues/535",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/535",
+  "canonical_pr": null,
+  "summary": "The reported integration remains present on preflight main. A narrow fix is planned, but implementation and validation are blocked by the read-only workspace and missing dependencies. No code or GitHub changes were made; no runtime reproduction or passing checks are claimed.",
+  "actions": [
+    {
+      "target": "#535",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "An ordinary launch reliability bug has a focused repair path and requires no new capability or product decision. Runtime confirmation with 1.2.2 remains required."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "The artifact provides a narrow executor handoff; producing it does not require filesystem or GitHub mutation."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness require a writable executor with dependencies installed. Complete regression, patch, review, checks, and affected-version cold-start proof before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
