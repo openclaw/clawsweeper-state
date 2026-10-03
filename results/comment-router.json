@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T22:53:30.963Z",
+  "updated_at": "2026-10-03T22:53:42.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163117:5971153127:2026-10-03T16:37:06Z:re_review",
-      "comment_id": "5971153127",
-      "comment_version_key": "5971153127:2026-10-03T16:37:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163117#issuecomment-5971153127",
-      "comment_created_at": "2026-10-03T16:37:06Z",
-      "comment_updated_at": "2026-10-03T16:37:06Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163117,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T16:38:01.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-completion-preflight-compaction-162853",
-        "head_sha": "4249ccac54cd9d6031484267b4948d44343e0cd5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1062:5971161931:2026-10-03T16:38:13Z:clawsweeper_needs_human",
       "comment_id": "5971161931",
@@ -33275,6 +33228,39 @@
         "kind": "pull_request",
         "branch": "refactor/shared-autoreview-20261002",
         "head_sha": "334cc560ec495b215ad5e59c35b413e07a88703b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawdinators:15:5792524450:2026-10-03T22:52:46Z:clawsweeper_needs_human",
+      "comment_id": "5792524450",
+      "comment_version_key": "5792524450:2026-10-03T22:52:46Z",
+      "comment_url": "https://github.com/openclaw/clawdinators/pull/15#issuecomment-5792524450",
+      "comment_created_at": "2026-09-23T09:39:32Z",
+      "comment_updated_at": "2026-10-03T22:52:46Z",
+      "comment_body_sha256": "0b373b29b338b2ec98f899fd670f99289311f679a933a9c6fa263c31ecbd6299",
+      "repo": "openclaw/clawdinators",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct callers sending caller:null or ami_override:null will receive HTTP 400 instead of queuing deployment with legacy defaults; compatibility outside the bundled string-valued calle... (sha=68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c)",
+      "expected_head_sha": "68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T22:53:42.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep3/control-payload",
+        "head_sha": "68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c",
         "cluster_id": null,
         "job_path": null
       }
