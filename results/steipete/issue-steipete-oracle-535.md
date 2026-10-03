@@ -1,17 +1,17 @@
 ---
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-535"
-mode: "autonomous"
-run_id: "37129212506"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37129212506"
+mode: "plan"
+run_id: "37129804331"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37129804331"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T14:30:03.890Z"
-canonical: "https://github.com/steipete/oracle/issues/535"
-canonical_issue: "https://github.com/steipete/oracle/issues/535"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T14:32:50.757Z"
+canonical: "#535"
+canonical_issue: "#535"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37129212506](https://github.com/openclaw/clawsweeper/actions/runs/37129212506)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37129804331](https://github.com/openclaw/clawsweeper/actions/runs/37129804331)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/steipete/oracle/issues/535
+Canonical: #535
 
 ## Summary
 
-The reported integration remains present on preflight main. A narrow fix is planned, but implementation and validation are blocked by the read-only workspace and missing dependencies. No code or GitHub changes were made; no runtime reproduction or passing checks are claimed.
+Issue #535 remains a focused repair candidate on inspected main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Plan current-launch log preparation and explicit chrome-launcher 1.2.2 regression coverage. No files or GitHub state were changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The reported integration remains present on preflight main. A narrow fix is plan
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #535 | fix_needed | planned | canonical | An ordinary launch reliability bug has a focused repair path and requires no new capability or product decision. Runtime confirmation with 1.2.2 remains required. |
-| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned |  | The artifact provides a narrow executor handoff; producing it does not require filesystem or GitHub mutation. |
-| cluster:issue-steipete-oracle-535 | open_fix_pr | blocked |  | Implementation and PR readiness require a writable executor with dependencies installed. Complete regression, patch, review, checks, and affected-version cold-start proof before opening or updating the single implementation PR. |
+| #535 | fix_needed | planned | canonical | A narrow integration repair is viable without a configuration or product-policy change. Establish the required 1.2.2 runtime regression before implementing or opening the single authorized PR. Closure and merge are prohibited. |
 
 ## Needs Human
 
