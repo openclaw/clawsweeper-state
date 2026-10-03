@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T08:04:16.453Z",
+  "updated_at": "2026-10-03T08:04:27.786Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163937:5964225877:2026-10-03T02:21:36Z:clawsweeper_needs_human",
-      "comment_id": "5964225877",
-      "comment_version_key": "5964225877:2026-10-03T02:21:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163937#issuecomment-5964225877",
-      "comment_created_at": "2026-10-03T01:44:16Z",
-      "comment_updated_at": "2026-10-03T02:21:36Z",
-      "comment_body_sha256": "c54f53828b920d0a85456bd123f240bde23841e25ed843ab893bc5f7385f37b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163937,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed example passes its new ID into the native Responses adapter, but the captured PR supplies no after-change real API completion showi... (sha=5aabae87aa4a211ca13a2eb8d716753681e65263)",
-      "expected_head_sha": "5aabae87aa4a211ca13a2eb8d716753681e65263",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T02:22:26.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "main",
-        "head_sha": "5aabae87aa4a211ca13a2eb8d716753681e65263",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163954:5964550634:2026-10-03T02:21:42Z:clawsweeper_needs_human",
       "comment_id": "5964550634",
@@ -33075,6 +33042,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164048:5967003612:2026-10-03T08:03:32Z:re_review",
+      "comment_id": "5967003612",
+      "comment_version_key": "5967003612:2026-10-03T08:03:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164048#issuecomment-5967003612",
+      "comment_created_at": "2026-10-03T08:03:32Z",
+      "comment_updated_at": "2026-10-03T08:03:32Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164048,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T08:04:26.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/idle-worker-probe-unavailable-node",
+        "head_sha": "60688afc11d9abba7c78286018bcdc7b0fc9f977",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
