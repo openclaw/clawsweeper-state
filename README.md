@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 3, 2026, 05:48 UTC
+Last source update: Oct 3, 2026, 06:11 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 3, 2026, 05:48 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 3, 2026, 05:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37100891760) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 3, 2026, 05:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37100522050) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 3, 2026, 06:11 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37101338407) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 3, 2026, 06:02 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37101672408) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 3, 2026, 04:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37098051568) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 3, 2026, 05:39 UTC
+Last source update: Oct 3, 2026, 06:00 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1400 | 100% |
-| Run attempts archived | 4154 | audit |
+| Run attempts archived | 4155 | audit |
 | Latest successful clusters | 1158 | 82.7% |
 | Latest failed clusters | 237 | 16.9% |
 | Latest cancelled clusters | 5 | 0.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1400 clusters: 378 maintainer action, 431 automation snapshot, 532 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1145](https://github.com/openclaw/openclaw-windows-node/issues/1145) is maintainer_input: For #1145 only: confirm the original numbered, bulleted, and inline-code messages in a current-main Windows Release build at narrow and r....
-- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) is automation_failed: PR opening is blocked until a writable executor verifies the dependency contract, implements the fix, and completes required validation.....
+- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [#466](https://github.com/openclaw/wacli/pull/466) is automation_failed: The source confirms missing local reconciliation. Keep this canonical issue open while the executor implements and validates the focused....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#163958](https://github.com/openclaw/openclaw/pull/163958) is action_planned: A focused monitor repair is warranted. Establish a failing regression on the execution base before changing production code; stop if it d....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) | automation_failed | PR opening is blocked until a writable executor verifies the dependency contract, implements the fix, and completes required validation. Reuse the... | Oct 3, 2026, 05:39 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37100303948](https://github.com/openclaw/clawsweeper/actions/runs/37100303948) |
+| [openclaw/wacli](https://github.com/openclaw/wacli) | [#466](https://github.com/openclaw/wacli/pull/466) | automation_failed | The source confirms missing local reconciliation. Keep this canonical issue open while the executor implements and validates the focused repair. | Oct 3, 2026, 06:00 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37101432633](https://github.com/openclaw/clawsweeper/actions/runs/37101432633) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119735](https://github.com/openclaw/openclaw/pull/119735) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 3, 2026, 05:27 UTC | [automerge-openclaw-openclaw-119735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119735.md) | [37097239642](https://github.com/openclaw/clawsweeper/actions/runs/37097239642) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-532](cluster:issue-steipete-oracle-532) | automation_failed | Implementation and PR readiness are blocked until an executor with a writable checkout installs dependencies, implements the artifact, and complete... | Oct 3, 2026, 04:57 UTC | [issue-steipete-oracle-532](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-532.md) | [37096835309](https://github.com/openclaw/clawsweeper/actions/runs/37096835309) |
 | [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 3, 2026, 04:36 UTC | [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) | [37096852901](https://github.com/openclaw/clawsweeper/actions/runs/37096852901) |
