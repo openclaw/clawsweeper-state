@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T02:30:30.083Z",
+  "updated_at": "2026-10-03T02:32:14.343Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163324:5961685670:2026-10-02T21:22:30Z:re_review",
-      "comment_id": "5961685670",
-      "comment_version_key": "5961685670:2026-10-02T21:22:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163324#issuecomment-5961685670",
-      "comment_created_at": "2026-10-02T21:22:30Z",
-      "comment_updated_at": "2026-10-02T21:22:30Z",
-      "comment_body_sha256": "19fff7aeb3263fa89210fcbadef6e181de3fec2740cbad387f9cb2cb82cd84b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163324,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T21:24:24.712Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/macos-node-floor-wording",
-        "head_sha": "a704ce4c452a60124a1ab9e0eab79af6582c4513",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:857:5941872858:2026-10-02T21:22:17Z:clawsweeper_needs_human",
       "comment_id": "5941872858",
@@ -32911,6 +32864,39 @@
         "kind": "pull_request",
         "branch": "chore/browser-test-secret-ref-wait",
         "head_sha": "7a042a31f9cdc2d4e0ad4cbb5b6b1632fb8dd637",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:933:5964537699:2026-10-03T02:31:19Z:clawsweeper_needs_human",
+      "comment_id": "5964537699",
+      "comment_version_key": "5964537699:2026-10-03T02:31:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/933#issuecomment-5964537699",
+      "comment_created_at": "2026-10-03T02:20:13Z",
+      "comment_updated_at": "2026-10-03T02:31:19Z",
+      "comment_body_sha256": "ceae098f14b00fac94817f8f7c0238d900a4d4df50a9079ec5409d6f7c206847",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the prior delayed-read regression request: advance the clock during an empty read and verify that output produced before completion appears exactly once on the next cursor po... (sha=3b1faeeaa34b5b2434143de645097b97c1a55296)",
+      "expected_head_sha": "3b1faeeaa34b5b2434143de645097b97c1a55296",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T02:32:14.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-logs-quiet-follow",
+        "head_sha": "3b1faeeaa34b5b2434143de645097b97c1a55296",
         "cluster_id": null,
         "job_path": null
       }
