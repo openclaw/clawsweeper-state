@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164470"
-mode: "autonomous"
-run_id: "37147064770"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37147064770"
+mode: "plan"
+run_id: "37152362213"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37152362213"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T19:49:21.538Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164470"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164470"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T20:43:44.484Z"
+canonical: "#164470"
+canonical_issue: "#164470"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37147064770](https://github.com/openclaw/clawsweeper/actions/runs/37147064770)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37152362213](https://github.com/openclaw/clawsweeper/actions/runs/37152362213)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164470
+Canonical: #164470
 
 ## Summary
 
-Current preflight main retains the reported callback-context defect. Implementation and the required failing regression are blocked by read-only filesystem access and an absent Copilot SDK dependency. A narrow executor fix artifact is prepared; no changes or GitHub mutations were made.
+Plan a narrow Copilot callback-context fix. The clean checkout matches preflight main SHA 930bd387bbaa8acf6538e8af03e029329d0e5d8d. No code changed, tests ran, or GitHub mutations occurred; runtime reproduction remains required before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current preflight main retains the reported callback-context defect. Implementat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164470 | fix_needed | planned | canonical | A narrow existing-behavior repair is supported by source evidence. Leave the issue open and require a failing regression through the real SDK transport before production edits. |
-| cluster:issue-openclaw-openclaw-164470 | build_fix_artifact | planned | canonical | The artifact is ready for executor preparation; implementation and publication remain gated on successful reproduction and validation. |
+| #164470 | fix_needed | planned | canonical | The reported failure has a narrow existing-behavior repair path. Reproduce on current main before editing, then bind deferred tool execution to the current bridge's construction context while retaining existing scheduling and lifecycle checks. |
 
 ## Needs Human
 
