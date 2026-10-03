@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164611",
+  "mode": "autonomous",
+  "run_id": "37161812378",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37161812378",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164611.md",
+  "published_at": "2026-10-03T23:51:50.039Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164611",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164611",
+  "canonical_pr": null,
+  "summary": "Reproduced premature preview deletion against preflight main 1660c032f48bfb81c2d7f3cba92143a1928606a7. A narrow fix artifact is ready; implementation and required validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#164611",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164611",
+      "candidate_fix": null,
+      "reason": "Existing rotation behavior violates its documented post-new-then-delete-old contract. Implement one narrow Telegram-only repair through the executor."
+    },
+    {
+      "target": "#164610",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#164611",
+      "candidate_fix": null,
+      "reason": "Preserve the distinct production reproduction and cover both reports through one PR. Reconcile the concurrent implementation paths before branch or PR publication."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164611",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164611",
+      "candidate_fix": null,
+      "reason": "The fix plan is actionable, but local implementation and publication readiness remain blocked by host limits. Recheck current main and existing canonical work before executing it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
