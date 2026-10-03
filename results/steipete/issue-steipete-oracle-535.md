@@ -2,16 +2,16 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-535"
 mode: "autonomous"
-run_id: "37096852901"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37096852901"
+run_id: "37108196996"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37108196996"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-03T04:36:02.595Z"
+result_status: "blocked"
+published_at: "2026-10-03T08:04:13.917Z"
 canonical: "https://github.com/steipete/oracle/issues/535"
 canonical_issue: "https://github.com/steipete/oracle/issues/535"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 1
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37096852901](https://github.com/openclaw/clawsweeper/actions/runs/37096852901)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37108196996](https://github.com/openclaw/clawsweeper/actions/runs/37108196996)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/steipete/oracle/issues/535
 
 ## Summary
 
-Issue #535 remains a supported, narrow browser-launch bug. Prepared a fix artifact; implementation and validation were not performed because this checkout is read-only and dependencies are absent.
+Issue #535 remains a viable narrow fix candidate on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Implementation and validation are blocked by the read-only environment, absent dependencies, and unavailable network resolution. No files or GitHub state changed; a scoped executor fix artifact is provided.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 1 |
@@ -67,8 +67,9 @@ Issue #535 remains a supported, narrow browser-launch bug. Prepared a fix artifa
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #535 | fix_needed | planned | canonical | Preserve #535 as the canonical report and implement current-launch port discovery. The job permits a fix PR and prohibits closure and merge. |
-| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned |  | Provide the executor with a narrow implementation and validation plan without requiring maintainer judgment or mutating GitHub. |
+| #535 | fix_needed | planned | canonical | The source-supported bug warrants a focused launch-integration repair. Runtime reproduction remains a mandatory executor gate. |
+| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned |  | Provide an auditable narrow implementation plan for a writable executor without claiming a completed patch or passing validation. |
+| cluster:issue-steipete-oracle-535 | open_fix_pr | blocked |  | PR implementation is blocked on a writable environment with dependency access, followed by successful regression and repository validation. Reuse clawsweeper/issue-steipete-oracle-535 and open or update one PR only after those gates pass. |
 
 ## Needs Human
 
