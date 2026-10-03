@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120978"
-mode: "plan"
-run_id: "37141371701"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37141371701"
+mode: "autonomous"
+run_id: "37142383749"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37142383749"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-03T17:43:33.031Z"
-canonical: "#120978"
-canonical_issue: "#120978"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-10-03T18:17:18.148Z"
+canonical: "https://github.com/openclaw/openclaw/issues/120978"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/120978"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37141371701](https://github.com/openclaw/clawsweeper/actions/runs/37141371701)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37142383749](https://github.com/openclaw/clawsweeper/actions/runs/37142383749)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #120978
+Canonical: https://github.com/openclaw/openclaw/issues/120978
 
 ## Summary
 
-Plan a narrow hook admission cancellation fix. Local main matches preflight SHA fc7e71bad25845ba8c23ddd6f3c44ded11a9f427. The earlier implementation is closed unmerged; the open Gmail failure-notice PR addresses distinct work. No code or GitHub mutations were made, and runtime reproduction and validation remain pending.
+Source inspection supports the admission lifecycle defect. Implementation and required failing HTTP regression are blocked by the read-only host and absent dependencies. No code or GitHub state changed; a narrow executor repair artifact is provided.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Plan a narrow hook admission cancellation fix. Local main matches preflight SHA 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120978 | fix_needed | planned | canonical | Retain this issue as canonical and implement only after a regression demonstrates the defect through the real HTTP and queued-admission boundary. |
-| #120979 | keep_closed | skipped | related | Preserve as historical contributor work and inspect its focused implementation and proof for reuse with attribution. No closure or reopening action is proposed. |
-| #164206 | keep_related | planned | related | Keep its independent repair path open. It does not satisfy disconnect-before-admission cancellation. |
+| #120978 | fix_needed | planned | canonical | The source-supported bug has no viable hydrated open cancellation PR. Reproduction on a reconciled current main is required before implementation. |
+| #120979 | keep_closed | skipped | related | Historical contributor work informs the new issue implementation; closure did not fix the issue. |
+| #164206 | keep_related | planned | related | Keep this useful contributor PR open under its separate review path; it does not satisfy the cancellation issue. |
+| cluster:issue-openclaw-openclaw-120978 | build_fix_artifact | planned | canonical | A concrete narrow repair plan is available for the deterministic executor; runtime reproduction and validated implementation remain prerequisites. |
 
 ## Needs Human
 
