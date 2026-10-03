@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T03:29:17.138Z",
+  "updated_at": "2026-10-03T03:29:45.312Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163805:5962386392:2026-10-02T22:21:22Z:re_review",
-      "comment_id": "5962386392",
-      "comment_version_key": "5962386392:2026-10-02T22:21:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163805#issuecomment-5962386392",
-      "comment_created_at": "2026-10-02T22:21:22Z",
-      "comment_updated_at": "2026-10-02T22:21:22Z",
-      "comment_body_sha256": "90f6d17465f82e2859c26ebd5d5a4225babc40dcfdae4ebe8724abed71d267c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163805,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T22:22:19.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/w88-v5-harness",
-        "head_sha": "4482305d4dd038bd824cd58f3e432b83521b4afb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163819:5962393001:2026-10-02T22:21:58Z:re_review",
       "comment_id": "5962393001",
@@ -32611,6 +32564,39 @@
         "kind": "pull_request",
         "branch": "refactor/lg-config-retire-unwritten-image-backfill",
         "head_sha": "82cec9081b34130e356c1ea31745dc4381a383cc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163889:5963596541:2026-10-03T03:28:33Z:clawsweeper_needs_human",
+      "comment_id": "5963596541",
+      "comment_version_key": "5963596541:2026-10-03T03:28:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163889#issuecomment-5963596541",
+      "comment_created_at": "2026-10-03T00:25:48Z",
+      "comment_updated_at": "2026-10-03T03:28:33Z",
+      "comment_body_sha256": "a3b0bb1217adc73cf8676f26e525844e78379cfd5a3124e9a5aff56900e983f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f0c139d3cc9230c9ea4385f090f348cdd55673bd)",
+      "expected_head_sha": "f0c139d3cc9230c9ea4385f090f348cdd55673bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T03:29:45.312Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/compound1",
+        "head_sha": "f0c139d3cc9230c9ea4385f090f348cdd55673bd",
         "cluster_id": null,
         "job_path": null
       }
