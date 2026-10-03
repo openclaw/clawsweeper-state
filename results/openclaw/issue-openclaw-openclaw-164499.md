@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164499"
-mode: "autonomous"
-run_id: "37149637261"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37149637261"
+mode: "plan"
+run_id: "37152360230"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37152360230"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T20:15:59.486Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164499"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164499"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T20:43:05.437Z"
+canonical: "#164499"
+canonical_issue: "#164499"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37149637261](https://github.com/openclaw/clawsweeper/actions/runs/37149637261)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37152360230](https://github.com/openclaw/clawsweeper/actions/runs/37152360230)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164499
+Canonical: #164499
 
 ## Summary
 
-The cleanup gap remains source-supported on supplied main e7090f6d88be1c9e4bc7fe22e1f4825d040c1137. Implementation and reproduction are blocked by the read-only filesystem, missing dependencies, and unavailable GitHub connectivity. A narrow fix artifact is prepared; no files or GitHub state were changed.
+The retained-AWS ownership defect remains source-supported on preflight main 930bd387bbaa8acf6538e8af03e029329d0e5d8d. Plan one narrow implementation PR; executable regression, native contract inspection, and live AWS validation remain pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The cleanup gap remains source-supported on supplied main e7090f6d88be1c9e4bc7fe
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164499 | fix_needed | blocked | canonical | The issue remains the clear canonical bug report. Implementation is blocked until an authorized writable executor can establish a failing wrapper regression and inspect the pinned native claim contract; no product judgment or closure decision is needed. |
-| cluster:issue-openclaw-openclaw-164499 | build_fix_artifact | planned |  | A narrow executor handoff is appropriate, subject to reproduction and native-contract verification. No merge, close, or direct GitHub mutation is authorized. |
+| #164499 | fix_needed | planned | canonical | A focused cleanup-owner repair is appropriate. Establish executable failure and inspect the pinned native ownership contract before implementation; preserve existing fencing and failure-safe cleanup. |
 
 ## Needs Human
 
