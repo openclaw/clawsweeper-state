@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164147"
-mode: "autonomous"
-run_id: "37107530300"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37107530300"
+mode: "plan"
+run_id: "37110385087"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37110385087"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T08:25:52.564Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T08:59:52.636Z"
 canonical: "https://github.com/openclaw/openclaw/issues/164147"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/164147"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37107530300](https://github.com/openclaw/clawsweeper/actions/runs/37107530300)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37110385087](https://github.com/openclaw/clawsweeper/actions/runs/37110385087)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/164147
 
 ## Summary
 
-Reproduced mixed-origin notification omission through both approval delivery factories, in both device orders, including resolved and expired cleanup. Implementation is blocked by the read-only workspace and missing dependencies; remote main freshness could not be verified. No files or GitHub state changed.
+Plan a narrow per-target relay routing fix. The clean checkout matches preflight main 28f73eb9a5b3bac834701852d4464152ea70e2f8, and source inspection confirms first-origin filtering remains. No changes, runtime reproduction, tests, or GitHub mutations were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Reproduced mixed-origin notification omission through both approval delivery fac
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164147 | fix_needed | planned | canonical | A narrow existing-behavior repair is justified. Keep the issue open; implementation must continue in a writable executor checkout after current-main verification. |
-| cluster:issue-openclaw-openclaw-164147 | build_fix_artifact | planned |  | Artifact preparation is complete; code changes and validated PR readiness are blocked by concrete host limitations. No maintainer product decision is needed. |
+| https://github.com/openclaw/openclaw/issues/164147 | fix_needed | planned | canonical | A bounded delivery-owner bug has a clear repair path. Establish an executable failing regression before implementation; preserve existing authorization and relay-origin validation. |
 
 ## Needs Human
 
