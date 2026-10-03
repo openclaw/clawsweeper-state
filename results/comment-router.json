@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T05:05:44.812Z",
+  "updated_at": "2026-10-03T05:06:01.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163862:5963249919:2026-10-02T23:47:47Z:clawsweeper_needs_human",
-      "comment_id": "5963249919",
-      "comment_version_key": "5963249919:2026-10-02T23:47:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163862#issuecomment-5963249919",
-      "comment_created_at": "2026-10-02T23:47:47Z",
-      "comment_updated_at": "2026-10-02T23:47:47Z",
-      "comment_body_sha256": "d50aae2fcb4a4e075a915e389f7b30b57bb35d1932d1acc6e13957d3a3bb4e1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163862,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported real Gateway and signed WebSocket runs support allowed local approval and static exclusio...; Review finding: [P2] Recheck local approval policy at the capability commit — src/gateway/server/ws-connection/connect-node-session.ts:145-147 - [medium] Queued approval survives... (sha=70aefe9ec0369f5df05e23ddad528fb12904dad9)",
-      "expected_head_sha": "70aefe9ec0369f5df05e23ddad528fb12904dad9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T23:49:09.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/silent-local-node-capabilities",
-        "head_sha": "70aefe9ec0369f5df05e23ddad528fb12904dad9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162669:5930813581:2026-10-02T23:47:44Z:clawsweeper_needs_human",
       "comment_id": "5930813581",
@@ -32634,6 +32601,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123906:5965788967:2026-10-03T05:04:38Z:re_review",
+      "comment_id": "5965788967",
+      "comment_version_key": "5965788967:2026-10-03T05:04:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5965788967",
+      "comment_created_at": "2026-10-03T05:04:38Z",
+      "comment_updated_at": "2026-10-03T05:04:38Z",
+      "comment_body_sha256": "9b5893f6411b4aabf0413cf8b3217132775806a36ed171b909231eb73dfe0725",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123906,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head c94a2c592901c1411fb7e707356f0b86ea034605. the branch is rebased onto current main, the residual diff was re-audited for duplicate or superseded updater/tui machinery, and the two rebase-stale tests now use the current execution-guard contract. focused update/tui/process suites are green; hosted exact-head ci is in progress",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T05:06:00.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-close-stale-tui-clients",
+        "head_sha": "c94a2c592901c1411fb7e707356f0b86ea034605",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
