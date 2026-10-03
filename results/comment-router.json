@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T05:16:56.468Z",
+  "updated_at": "2026-10-03T05:17:46.066Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163880:5963445980:2026-10-03T00:08:59Z:clawsweeper_auto_repair",
-      "comment_id": "5963445980",
-      "comment_version_key": "5963445980:2026-10-03T00:08:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163880#issuecomment-5963445980",
-      "comment_created_at": "2026-10-03T00:08:59Z",
-      "comment_updated_at": "2026-10-03T00:08:59Z",
-      "comment_body_sha256": "3e066db2fe3736189f6756c7a7b70ac372f5c9f93fe2c90169a6202a6e720525",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163880,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=321989f9f569294f19ca56cebffda413b5910140)",
-      "expected_head_sha": "321989f9f569294f19ca56cebffda413b5910140",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T00:09:53.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gpt-live-relay-audio-boundaries",
-        "head_sha": "321989f9f569294f19ca56cebffda413b5910140",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163875:5963447633:2026-10-03T00:09:10Z:fix_ci",
       "comment_id": "5963447633",
@@ -32644,6 +32611,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163753:5965875166:2026-10-03T05:16:56Z:re_review",
+      "comment_id": "5965875166",
+      "comment_version_key": "5965875166:2026-10-03T05:16:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163753#issuecomment-5965875166",
+      "comment_created_at": "2026-10-03T05:16:56Z",
+      "comment_updated_at": "2026-10-03T05:16:56Z",
+      "comment_body_sha256": "b8289e1db61fdc058531d262a4f63542c64eeaa7a1accccc25d4f13778dbe1a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163753,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T05:17:43.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-async-user-turn-custody",
+        "head_sha": "9dc0726e145d26ab56063e73c60b1aa629f15400",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
