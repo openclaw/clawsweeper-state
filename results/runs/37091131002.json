@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163956",
+  "mode": "plan",
+  "run_id": "37091131002",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37091131002",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163956.md",
+  "published_at": "2026-10-03T02:53:56.668Z",
+  "canonical": "#163956",
+  "canonical_issue": "#163956",
+  "canonical_pr": "#163964",
+  "summary": "Keep the issue open and preserve the existing contributor PR as the candidate fix. Complete its missing browser and rendered-warning proof before further action. No changes or tests were performed.",
+  "actions": [
+    {
+      "target": "#163956",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163956",
+      "candidate_fix": "#163964",
+      "reason": "Retain the canonical report until the candidate satisfies the required validation. Contributor-reported reproduction remains evidence, not a browser regression independently executed by this worker."
+    },
+    {
+      "target": "#163964",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163956",
+      "candidate_fix": "#163964",
+      "reason": "Preserve azuretek's existing implementation and attribution; do not open a competing PR. Obtain the complete review requirements before repair. First establish the selected-file regression on current main, stopping if it cannot reproduce. Then validate the candidate in secretless isolation through both consumers, including rendered warnings changed by this PR. Run the job's focused UI tests, both listed E2E suites, and git diff --check; record focused wall time and CI cost. Preserve metadata, limits, video behavior, ownership fences, Incognito handling, and IndexedDB format. No merge or closure is recommended."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

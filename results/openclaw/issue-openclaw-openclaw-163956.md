@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163956"
-mode: "autonomous"
-run_id: "37090017636"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37090017636"
+mode: "plan"
+run_id: "37091131002"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37091131002"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T02:35:29.972Z"
-canonical: "https://github.com/openclaw/openclaw/issues/163956"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/163956"
-canonical_pr: null
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T02:53:56.668Z"
+canonical: "#163956"
+canonical_issue: "#163956"
+canonical_pr: "#163964"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37090017636](https://github.com/openclaw/clawsweeper/actions/runs/37090017636)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37091131002](https://github.com/openclaw/clawsweeper/actions/runs/37091131002)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/163956
+Canonical: #163956
 
 ## Summary
 
-The reported retained-File path remains on preflight main b641b4be58768c70bd0ef784afde76c4f0ec6930. A narrow repair artifact is prepared. Implementation and required disk-backed Chromium reproduction are blocked by this worker's read-only filesystem. No code or GitHub state changed; no behavioral validation was run.
+Keep the issue open and preserve the existing contributor PR as the candidate fix. Complete its missing browser and rendered-warning proof before further action. No changes or tests were performed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The reported retained-File path remains on preflight main b641b4be58768c70bd0ef7
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163956 | fix_needed | planned | canonical | Source supports a narrow producer repair, but actual disk-backed selection reproduction remains a mandatory executor prerequisite. |
-| cluster:issue-openclaw-openclaw-163956 | build_fix_artifact | planned |  | Execute in a writable isolated checkout, first establish the actual disk-backed failure on current main, then repair and validate. Stop and return to triage if reproduction fails. |
+| #163956 | keep_canonical | planned | canonical | Retain the canonical report until the candidate satisfies the required validation. Contributor-reported reproduction remains evidence, not a browser regression independently executed by this worker. |
+| #163964 | fix_needed | planned | canonical | Preserve azuretek's existing implementation and attribution; do not open a competing PR. Obtain the complete review requirements before repair. First establish the selected-file regression on current main, stopping if it cannot reproduce. Then validate the candidate in secretless isolation through both consumers, including rendered warnings changed by this PR. Run the job's focused UI tests, both listed E2E suites, and git diff --check; record focused wall time and CI cost. Preserve metadata, limits, video behavior, ownership fences, Incognito handling, and IndexedDB format. No merge or closure is recommended. |
 
 ## Needs Human
 
