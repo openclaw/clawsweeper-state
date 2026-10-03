@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164091",
+  "mode": "plan",
+  "run_id": "37107136502",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37107136502",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164091.md",
+  "published_at": "2026-10-03T07:43:26.999Z",
+  "canonical": "#164091",
+  "canonical_issue": "#164091",
+  "canonical_pr": "#164105",
+  "summary": "Reuse the reporter's existing implementation PR. Keep the issue and contributor PR open; do not create a competing PR. No closure, merge, or GitHub mutation is planned.",
+  "actions": [
+    {
+      "target": "#164091",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164091",
+      "candidate_fix": "#164105",
+      "reason": "The existing contributor PR owns implementation and validation. Keep the canonical report open while that work proceeds."
+    },
+    {
+      "target": "#164105",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164105",
+      "candidate_fix": null,
+      "reason": "Preserve this focused contributor implementation as the canonical PR. Retrieve the complete outstanding review item before planning any branch repair; the available evidence does not justify replacement or establish merge readiness."
+    },
+    {
+      "target": "#138023",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164091",
+      "candidate_fix": null,
+      "reason": "Historical related evidence only; no action is needed."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
