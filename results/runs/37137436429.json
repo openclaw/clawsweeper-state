@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120978",
+  "mode": "autonomous",
+  "run_id": "37137436429",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37137436429",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120978.md",
+  "published_at": "2026-10-03T17:21:47.060Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the disconnect-admission defect. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only host and absent dependencies. The checkout SHA differs from preflight main; latest-main verification remains required. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#120978",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the canonical report. Proceed only after reproducing the defect through the real HTTP/request/admission boundary on freshly verified main."
+    },
+    {
+      "target": "#120979",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Retain as credited historical implementation evidence. Its unmerged closure does not resolve the issue."
+    },
+    {
+      "target": "#164206",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Leave this distinct fix open and preserve its behavior when modifying the overlapping hook owners."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120978",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "The narrow non-security repair remains plausible. A writable executor must establish the required failing regression before changing production code."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
