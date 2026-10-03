@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-03T10:52:25.538Z",
+  "updated_at": "2026-10-03T10:52:32.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131604:5466795460:2026-08-30T04:54:58Z:re_review",
-      "comment_id": "5466795460",
-      "comment_version_key": "5466795460:2026-08-30T04:54:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131604#issuecomment-5466795460",
-      "comment_created_at": "2026-08-30T04:54:58Z",
-      "comment_updated_at": "2026-08-30T04:54:58Z",
-      "comment_body_sha256": "30902bcab5289acd17f58343376fbfbfd08d843695e8ab80c9bfa36a83ac55be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131604,
-      "author": "michielhdoteth",
-      "author_id": 97935846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review requested after force-push to 606ccca. all code-caused ci failures (ts2722 typecheck + python o_rdwr pread) are resolved. remaining failures are pre-existing (config-8, compact-small-49 flaky, pr context metadata, ci-gate cascading)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T05:26:11.072Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3904:5965942262:2026-10-03T05:27:10Z:clawsweeper_needs_human",
       "comment_id": "5965942262",
@@ -32652,6 +32625,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164089:5968456390:2026-10-03T10:51:40Z:re_review",
+      "comment_id": "5968456390",
+      "comment_version_key": "5968456390:2026-10-03T10:51:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164089#issuecomment-5968456390",
+      "comment_created_at": "2026-10-03T10:51:40Z",
+      "comment_updated_at": "2026-10-03T10:51:40Z",
+      "comment_body_sha256": "1a877058cd094fbfb8d007de746049bd5c4d046fc5a478622852f3de257fa709",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164089,
+      "author": "GoldArowana",
+      "author_id": 27399349,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T10:52:31.090Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-promotion-inline-content",
+        "head_sha": "2ac8d3ac34843ebeeb93182fbd6af3c94d8eaa7e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
