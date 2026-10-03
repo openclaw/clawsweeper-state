@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164346"
-mode: "autonomous"
-run_id: "37130559668"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37130559668"
+mode: "plan"
+run_id: "37135186889"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37135186889"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T15:23:23.759Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164346"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164346"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T18:33:46.358Z"
+canonical: "#164346"
+canonical_issue: "#164346"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37130559668](https://github.com/openclaw/clawsweeper/actions/runs/37130559668)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37135186889](https://github.com/openclaw/clawsweeper/actions/runs/37135186889)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164346
+Canonical: #164346
 
 ## Summary
 
-Confirmed the selected-agent observer gap on preflight main db01f6d520b844c62f146a789f3da2c11075529c. Prepared a narrow fix artifact. Implementation, mounted regression, browser proof, and validation remain blocked by the read-only host and missing UI dependencies. No files or GitHub state changed.
+Source inspection and the job's dependency-free harness confirm the selected-agent observation gap at hydrated main 01d4351e8f93665a95446ab0f5794de11a2e1f08. Prepare one narrow implementation PR. Mounted reproduction, implementation, browser proof, and validation remain executor work; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Confirmed the selected-agent observer gap on preflight main db01f6d520b844c62f14
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164346 | fix_needed | planned | canonical | A bounded existing-behavior bug has a clear owner-level repair; mounted baseline reproduction remains a required prerequisite. |
-| #163940 | keep_related | planned | related | Separate lifecycle work; leave open and exclude it from this implementation. |
-| #139876 | keep_closed | skipped | related | Historical publication repair by @obviyus; preserve its behavior and credit. |
-| cluster:issue-openclaw-openclaw-164346 | build_fix_artifact | planned | canonical | Ready for a writable executor to reproduce and implement the narrow repair. |
-| cluster:issue-openclaw-openclaw-164346 | open_fix_pr | blocked | canonical | Implementation and publication must wait for a writable executor with dependencies, successful mounted baseline reproduction, validation, and fresh review. |
+| #164346 | fix_needed | planned | canonical | Repair the page's existing selected-agent catalog lifecycle while preserving the all-agent inventory and open editor. Establish the required mounted baseline failure before editing production. |
+| #139876 | keep_closed | skipped | related | Historical related work whose behavior must be preserved; no closure or replacement action applies. |
 
 ## Needs Human
 
