@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-163956",
+  "mode": "autonomous",
+  "run_id": "37090017636",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37090017636",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-163956.md",
+  "published_at": "2026-10-03T02:35:29.972Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/163956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/163956",
+  "canonical_pr": null,
+  "summary": "The reported retained-File path remains on preflight main b641b4be58768c70bd0ef784afde76c4f0ec6930. A narrow repair artifact is prepared. Implementation and required disk-backed Chromium reproduction are blocked by this worker's read-only filesystem. No code or GitHub state changed; no behavioral validation was run.",
+  "actions": [
+    {
+      "target": "#163956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163956",
+      "candidate_fix": null,
+      "reason": "Source supports a narrow producer repair, but actual disk-backed selection reproduction remains a mandatory executor prerequisite."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-163956",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#163956",
+      "candidate_fix": null,
+      "reason": "Execute in a writable isolated checkout, first establish the actual disk-backed failure on current main, then repair and validate. Stop and return to triage if reproduction fails."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
