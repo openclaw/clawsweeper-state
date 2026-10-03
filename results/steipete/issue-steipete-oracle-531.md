@@ -1,17 +1,17 @@
 ---
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-531"
-mode: "autonomous"
-run_id: "37080137689"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37080137689"
+mode: "plan"
+run_id: "37084873329"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37084873329"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T00:04:11.297Z"
-canonical: "https://github.com/steipete/oracle/issues/531"
-canonical_issue: "https://github.com/steipete/oracle/issues/531"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T01:11:16.546Z"
+canonical: "#531"
+canonical_issue: "#531"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37080137689](https://github.com/openclaw/clawsweeper/actions/runs/37080137689)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37084873329](https://github.com/openclaw/clawsweeper/actions/runs/37084873329)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/steipete/oracle/issues/531
+Canonical: #531
 
 ## Summary
 
-Verified #531 remains valid on supplied main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Prepared a narrow repair artifact. Implementation and validation are blocked by the read-only filesystem and absent dependencies; no files or GitHub state were changed.
+Confirmed #531 remains valid on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A read-only check of the existing helper reproduced ancestor rejection for tmp, dist, and build. Narrow implementation and validation are planned; no files or GitHub state changed, and no suite or CLI smoke was run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Verified #531 remains valid on supplied main SHA 5dd3cd855e14dce996038004f4c5b92
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #531 | fix_needed | planned | canonical | A narrow non-security repair is warranted; expansion provenance must survive filtering so ignored ancestors above each input root cannot reject its matches. |
-| #532 | keep_related | planned | related | Adjacent performance defect with unique remaining work; retain as separate context. |
-| #533 | keep_independent | planned | independent | Independent dependency maintenance; no repair, merge, or closure action belongs to this cluster. |
-| cluster:issue-steipete-oracle-531 | build_fix_artifact | planned | canonical | The fix plan is concrete and narrow despite this worker's implementation constraints. |
-| cluster:issue-steipete-oracle-531 | open_fix_pr | blocked | canonical | Implementation and PR publication are blocked until a writable executor installs dependencies, completes the patch, and passes required validation. |
+| #531 | fix_needed | planned | canonical | The attachment-selection defect is still present and has a narrow implementation path without a new option or product decision. |
+| #532 | keep_related | planned | related | Same selection surface, distinct root cause and remaining work. |
+| #533 | keep_independent | planned | independent | Independent dependency work with no overlap with #531. |
 
 ## Needs Human
 
