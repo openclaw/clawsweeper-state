@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120978"
-mode: "autonomous"
-run_id: "37137436429"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37137436429"
+mode: "plan"
+run_id: "37135184847"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37135184847"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T17:21:47.060Z"
-canonical: "https://github.com/openclaw/openclaw/issues/120978"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/120978"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T17:41:03.968Z"
+canonical: "#120978"
+canonical_issue: "#120978"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37137436429](https://github.com/openclaw/clawsweeper/actions/runs/37137436429)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37135184847](https://github.com/openclaw/clawsweeper/actions/runs/37135184847)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/120978
+Canonical: #120978
 
 ## Summary
 
-Source inspection supports the disconnect-admission defect. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only host and absent dependencies. The checkout SHA differs from preflight main; latest-main verification remains required. No files or GitHub state were changed.
+Plan a narrow hook admission lifecycle fix. Keep the canonical issue open, preserve the closed contributor PR as reusable evidence, and keep the distinct failure-notice PR related. No mutations or runtime reproduction were performed; implementation and publication require a failing latest-main HTTP regression first.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection supports the disconnect-admission defect. A narrow fix artifac
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120978 | fix_needed | planned | canonical | Keep this issue as the canonical report. Proceed only after reproducing the defect through the real HTTP/request/admission boundary on freshly verified main. |
-| #120979 | keep_closed | skipped | related | Retain as credited historical implementation evidence. Its unmerged closure does not resolve the issue. |
-| #164206 | keep_related | planned | related | Leave this distinct fix open and preserve its behavior when modifying the overlapping hook owners. |
-| cluster:issue-openclaw-openclaw-120978 | build_fix_artifact | planned | canonical | The narrow non-security repair remains plausible. A writable executor must establish the required failing regression before changing production code. |
+| #120978 | fix_needed | planned | canonical | No hydrated open PR implements disconnect cancellation. Build and validate the scoped fix only after reproducing the defect on latest main. |
+| #120979 | keep_closed | skipped | related | Retain as historical contributor work and reuse only relevant implementation and boundary proof with verified attribution. Historical validation does not validate a new current-main patch. |
+| #164206 | keep_related | planned | related | This is useful adjacent work with a different failure and scope. It does not resolve abandoned pending admission. |
 
 ## Needs Human
 

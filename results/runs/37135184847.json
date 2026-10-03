@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120978",
+  "mode": "plan",
+  "run_id": "37135184847",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37135184847",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120978.md",
+  "published_at": "2026-10-03T17:41:03.968Z",
+  "canonical": "#120978",
+  "canonical_issue": "#120978",
+  "canonical_pr": null,
+  "summary": "Plan a narrow hook admission lifecycle fix. Keep the canonical issue open, preserve the closed contributor PR as reusable evidence, and keep the distinct failure-notice PR related. No mutations or runtime reproduction were performed; implementation and publication require a failing latest-main HTTP regression first.",
+  "actions": [
+    {
+      "target": "#120978",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "No hydrated open PR implements disconnect cancellation. Build and validate the scoped fix only after reproducing the defect on latest main."
+    },
+    {
+      "target": "#120979",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Retain as historical contributor work and reuse only relevant implementation and boundary proof with verified attribution. Historical validation does not validate a new current-main patch."
+    },
+    {
+      "target": "#164206",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "This is useful adjacent work with a different failure and scope. It does not resolve abandoned pending admission."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
