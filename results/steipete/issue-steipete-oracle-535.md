@@ -1,17 +1,17 @@
 ---
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-535"
-mode: "autonomous"
-run_id: "37116169822"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37116169822"
+mode: "plan"
+run_id: "37116745861"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37116745861"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T10:26:03.410Z"
-canonical: "https://github.com/steipete/oracle/issues/535"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T10:35:59.687Z"
+canonical: "#535"
 canonical_issue: "https://github.com/steipete/oracle/issues/535"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37116169822](https://github.com/openclaw/clawsweeper/actions/runs/37116169822)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37116745861](https://github.com/openclaw/clawsweeper/actions/runs/37116745861)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/steipete/oracle/issues/535
+Canonical: #535
 
 ## Summary
 
-The narrow repair remains viable on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Implementation and validation are blocked by the read-only filesystem; focused tests and pnpm run check both failed before execution with Corepack EROFS. No files or GitHub items were changed.
+Plan a focused cold-start fix for #535. The checkout matches preflight main; new launches currently have no stderr-log preparation. Regression and runtime validation must explicitly exercise chrome-launcher 1.2.2, rather than infer its behavior from locked 1.2.1. No changes or tests were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The narrow repair remains viable on preflight main 5dd3cd855e14dce996038004f4c5b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #535 | fix_needed | planned | canonical | Canonical ordinary startup bug with a narrow new-launch repair path; no product decision is required. |
-| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned |  | Fix planning is complete. Applying the patch, establishing runtime proof, and validating the branch require a writable executor environment. |
+| https://github.com/steipete/oracle/issues/535 | fix_needed | planned | canonical | A narrow launch-only integration repair remains viable. Establish the affected-version regression before implementing; preserve reuse and lifecycle behavior. |
 
 ## Needs Human
 
