@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T05:19:04.464Z",
+  "updated_at": "2026-10-03T05:19:12.313Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126224:5338632469:2026-10-03T00:12:58Z:clawsweeper_needs_human",
-      "comment_id": "5338632469",
-      "comment_version_key": "5338632469:2026-10-03T00:12:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126224#issuecomment-5338632469",
-      "comment_created_at": "2026-08-19T06:57:40Z",
-      "comment_updated_at": "2026-10-03T00:12:58Z",
-      "comment_body_sha256": "c1ccde3b9c1bc5cc2e2bc233f9c8aa1bdaa8f1f6e616a7331082da45681c20b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the historical real Gateway models.list run demonstrates earlier catalog recovery, and current real-wo...; Review finding: [medium] Verify stale credential rejection through final provider I/O — src/agents/prepared-model-runtime-auth-publication.ts:378 (sha=f7961e4a7d75978e221a2222eb29eb4857e71fb9)",
-      "expected_head_sha": "f7961e4a7d75978e221a2222eb29eb4857e71fb9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T00:13:58.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/prepared-catalog-generation-recovery",
-        "head_sha": "f7961e4a7d75978e221a2222eb29eb4857e71fb9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162759:5933560902:2026-10-03T00:12:55Z:clawsweeper_needs_human",
       "comment_id": "5933560902",
@@ -32644,6 +32611,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/libterminal:99:5965884039:2026-10-03T05:18:16Z:re_review",
+      "comment_id": "5965884039",
+      "comment_version_key": "5965884039:2026-10-03T05:18:16Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/99#issuecomment-5965884039",
+      "comment_created_at": "2026-10-03T05:18:16Z",
+      "comment_updated_at": "2026-10-03T05:18:16Z",
+      "comment_body_sha256": "1eadea89a29a899a786afc50bfd45ff4035d769fa96ce7c2d915c7a11e2fb2c5",
+      "repo": "openclaw/libterminal",
+      "issue_number": 99,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T05:19:10.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/release-libterminal-0.3.9-20261003",
+        "head_sha": "bdfe5834fd9dfc7729a28ebd9ec5e859f747611d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
