@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164283",
+  "mode": "autonomous",
+  "run_id": "37121280724",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37121280724",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164283.md",
+  "published_at": "2026-10-03T12:50:22.805Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164283",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164283",
+  "canonical_pr": null,
+  "summary": "Verified unbounded predicates on preflight main 063685e96d00ce25a9a7b4ac5e00a40dda32d488. Real SQLite query-shape reproduction fails above the native bind ceiling. Narrow fix artifact prepared; implementation and production-entry regression validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#164283",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164283",
+      "candidate_fix": null,
+      "reason": "Existing behavior has a narrow source-supported repair using the established sqliteStringSet owner. Keep the issue open pending implementation and validation."
+    },
+    {
+      "target": "#127474",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Adjacent SQLite-limit history does not make durable ingress part of the Memory Core repair."
+    },
+    {
+      "target": "#137541",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No action on closed archive context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164283",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164283",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation is blocked on a writable, dependency-equipped executor; do not publish a PR until production-entry regressions fail before the fix and pass afterward."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
