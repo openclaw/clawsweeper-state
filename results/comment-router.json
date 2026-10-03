@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:12:35.207Z",
+  "updated_at": "2026-10-03T23:13:25.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143755:5971274267:2026-10-03T16:51:20Z:re_review",
-      "comment_id": "5971274267",
-      "comment_version_key": "5971274267:2026-10-03T16:51:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143755#issuecomment-5971274267",
-      "comment_created_at": "2026-10-03T16:51:20Z",
-      "comment_updated_at": "2026-10-03T16:51:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143755,
-      "author": "aishwary-dongre",
-      "author_id": 87765118,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T16:52:03.360Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-runtime-cleanup-on-setup-failure",
-        "head_sha": "1d75263f858d1709d5bc356d7d8db15c0e79ec69",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164296:5971195947:2026-10-03T16:43:32Z:re_review",
       "comment_id": "5971195947",
@@ -33251,6 +33204,39 @@
         "kind": "pull_request",
         "branch": "fix/lg-config-transcript-binding",
         "head_sha": "186ee485e0e64da8e7ff00667b13f457ded09568",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164521:5973254729:2026-10-03T23:12:36Z:clawsweeper_auto_repair",
+      "comment_id": "5973254729",
+      "comment_version_key": "5973254729:2026-10-03T23:12:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164521#issuecomment-5973254729",
+      "comment_created_at": "2026-10-03T20:36:43Z",
+      "comment_updated_at": "2026-10-03T23:12:36Z",
+      "comment_body_sha256": "8eade4e890ae1b5c71da5d05e8d16e76d318cd6736a071dc12f79443c9239642",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=91d8a07889804e4fb1d7164362a5fdb018b0165c)",
+      "expected_head_sha": "91d8a07889804e4fb1d7164362a5fdb018b0165c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:13:25.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigilant-bhabha-f47540",
+        "head_sha": "91d8a07889804e4fb1d7164362a5fdb018b0165c",
         "cluster_id": null,
         "job_path": null
       }
