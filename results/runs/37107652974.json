@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37107652974",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37107652974",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-03T07:55:30.323Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Confirmed the missing local archive transition on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Prepared a scoped fix plan; implementation is blocked by the read-only filesystem, unavailable required Go toolchain, and failed pinned-dependency fetches. No files or GitHub state changed; no regression or full gate passed.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The source finding remains valid on the supplied current main. Keep the issue open while implementing and validating its narrow sync/store repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "A narrow artifact is appropriate despite local execution blockers. It preserves the existing archive behavior and recovery architecture without introducing product knobs."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "PR publication is blocked until a writable executor with Go 1.27.1 and dependency access verifies polarity, implements the fix, and passes required validation. Reuse clawsweeper/issue-openclaw-wacli-466 and create or update exactly one PR through the applicator."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
