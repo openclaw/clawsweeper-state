@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T01:51:32.973Z",
+  "updated_at": "2026-10-03T01:51:39.354Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142954:5950200297:2026-10-02T10:18:53Z:re_review",
-      "comment_id": "5950200297",
-      "comment_version_key": "5950200297:2026-10-02T10:18:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142954#issuecomment-5950200297",
-      "comment_created_at": "2026-10-02T10:18:53Z",
-      "comment_updated_at": "2026-10-02T10:18:53Z",
-      "comment_body_sha256": "a16280ff60e9642ae6f2bc6d9dcafdd6e0537d898d63507947db804b4ddd2dd6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142954,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T20:39:18.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-wear-gateway-client-20260909",
-        "head_sha": "bca15ef5233305a618425833b70308c5c1d5c083",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142954:5598452887:2026-10-02T20:36:57Z:clawsweeper_needs_human",
       "comment_id": "5598452887",
@@ -33081,6 +33034,39 @@
         "kind": "pull_request",
         "branch": "docs/152-historical-terminology",
         "head_sha": "59612cc09190891b36abf3872961bb407d3cc85c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3897:5947642071:2026-10-03T01:50:48Z:clawsweeper_needs_human",
+      "comment_id": "5947642071",
+      "comment_version_key": "5947642071:2026-10-03T01:50:48Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3897#issuecomment-5947642071",
+      "comment_created_at": "2026-10-02T07:46:07Z",
+      "comment_updated_at": "2026-10-03T01:50:48Z",
+      "comment_body_sha256": "957f8e559945aceb1d83dad9b296e56811b848cb30a49c8579cd88559204c3c5",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3897,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Without an explicit ClawHub threshold, shared reviews default to P0 only and can omit ordinary P1–P3 defects previously covered by closeout review. (sha=662fe79692b78a29fc8f5cc8550e89fe547bbdc5)",
+      "expected_head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T01:51:39.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/autoreview-scanner-free-20261002",
+        "head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
         "cluster_id": null,
         "job_path": null
       }
