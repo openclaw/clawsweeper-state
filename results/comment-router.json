@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T19:37:38.678Z",
+  "updated_at": "2026-10-03T19:38:31.281Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121050:5231352861:2026-10-03T13:21:28Z:clawsweeper_needs_human",
-      "comment_id": "5231352861",
-      "comment_version_key": "5231352861:2026-10-03T13:21:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121050#issuecomment-5231352861",
-      "comment_created_at": "2026-08-09T11:47:27Z",
-      "comment_updated_at": "2026-10-03T13:21:28Z",
-      "comment_body_sha256": "d7fa17d7ead77ec6f0154dc39a145ad64585863a42a7ddda1953d84f2a8b91b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121050,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main; port the context and regressions into the canonical config writer and current restart-recovery tests before merge. (sha=a7b2ab531422738de9f88397aa0318b0a8bb7744)",
-      "expected_head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T13:23:01.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-55372",
-        "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-        "cluster_id": "automerge-openclaw-openclaw-121050",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164311:5969437861:2026-10-03T13:22:05Z:clawsweeper_needs_human",
       "comment_id": "5969437861",
@@ -32897,6 +32850,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163471:5972782604:2026-10-03T19:37:32Z:re_review",
+      "comment_id": "5972782604",
+      "comment_version_key": "5972782604:2026-10-03T19:37:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163471#issuecomment-5972782604",
+      "comment_created_at": "2026-10-03T19:37:32Z",
+      "comment_updated_at": "2026-10-03T19:37:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163471,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T19:38:30.204Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-context-carrier-ownership",
+        "head_sha": "031b446d6d95ec9c70e487a0bb3e71c1631d3e36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
