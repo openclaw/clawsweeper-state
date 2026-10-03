@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T01:22:19.350Z",
+  "updated_at": "2026-10-03T01:22:57.857Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149167:5960304362:2026-10-02T19:53:48Z:re_review",
-      "comment_id": "5960304362",
-      "comment_version_key": "5960304362:2026-10-02T19:53:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149167#issuecomment-5960304362",
-      "comment_created_at": "2026-10-02T19:53:48Z",
-      "comment_updated_at": "2026-10-02T19:53:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149167,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T19:56:51.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/irc-channel-delivery-fixes",
-        "head_sha": "aed2317d1fa528e1683c643f1b95b6abd19492d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149207:5683101663:2026-10-02T19:52:08Z:clawsweeper_needs_human",
       "comment_id": "5683101663",
@@ -33249,6 +33202,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-security-policy-2026-10-1",
         "head_sha": "d2b19f82bea3896e761db091e8fd758ca7101dcd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162759:5933560902:2026-10-03T01:21:52Z:clawsweeper_needs_human",
+      "comment_id": "5933560902",
+      "comment_version_key": "5933560902:2026-10-03T01:21:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162759#issuecomment-5933560902",
+      "comment_created_at": "2026-10-01T14:29:57Z",
+      "comment_updated_at": "2026-10-03T01:21:52Z",
+      "comment_body_sha256": "cd4f101d26c525299da4cdff2e804ecea754d9ba9f032e7f32a4a26fccbc12c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162759,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Final published-2026.9.7 upgrade and rollback compatibility remains unverified after the retained-official-plugin correction, including pin/completion persistence, includes, read-only... (sha=b7f2aff2d1649f9cc9a069ffb57d35954bb002c0)",
+      "expected_head_sha": "b7f2aff2d1649f9cc9a069ffb57d35954bb002c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T01:22:57.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lg-webhooks-explicit-listeners",
+        "head_sha": "b7f2aff2d1649f9cc9a069ffb57d35954bb002c0",
         "cluster_id": null,
         "job_path": null
       }
