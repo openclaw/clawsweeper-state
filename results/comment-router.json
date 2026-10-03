@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T01:50:19.002Z",
+  "updated_at": "2026-10-03T01:51:07.054Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138084:5538994512:2026-10-02T20:36:07Z:clawsweeper_auto_repair",
-      "comment_id": "5538994512",
-      "comment_version_key": "5538994512:2026-10-02T20:36:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138084#issuecomment-5538994512",
-      "comment_created_at": "2026-09-04T10:13:31Z",
-      "comment_updated_at": "2026-10-02T20:36:07Z",
-      "comment_body_sha256": "b6a8775e9f36065583e1104906d2767d84ddf0727d8f71e4f0397624c8d9b402",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bbbf99cc9c2a459b2eb729765efa6f1f5af9c900)",
-      "expected_head_sha": "bbbf99cc9c2a459b2eb729765efa6f1f5af9c900",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T20:39:13.367Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agent-initiated-compaction",
-        "head_sha": "bbbf99cc9c2a459b2eb729765efa6f1f5af9c900",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163764:5960968186:2026-10-02T20:30:49Z:clawsweeper_needs_human",
       "comment_id": "5960968186",
@@ -33070,6 +33037,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163936:5964277031:2026-10-03T01:50:09Z:re_review",
+      "comment_id": "5964277031",
+      "comment_version_key": "5964277031:2026-10-03T01:50:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163936#issuecomment-5964277031",
+      "comment_created_at": "2026-10-03T01:50:09Z",
+      "comment_updated_at": "2026-10-03T01:50:09Z",
+      "comment_body_sha256": "a433d1e5a02d2fd05d2a5f54d10fa16c6f01adc25c916beecdbbe111e0203e2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163936,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T01:51:05.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/96534-embedding-fallback-latch",
+        "head_sha": "e1b331bbaec0711a9d117cb29d1594b6a109905b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
