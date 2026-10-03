@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37114476025"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37114476025"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+run_id: "37139480448"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37139480448"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T09:58:13.241Z"
+published_at: "2026-10-03T17:14:45.032Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37114476025](https://github.com/openclaw/clawsweeper/actions/runs/37114476025)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37139480448](https://github.com/openclaw/clawsweeper/actions/runs/37139480448)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the storage defect on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation is blocked by the read-only workspace and unavailable required Go toolchain. Protocol collection, initial-state semantics, and timestamp units remain unverified. No code changes or GitHub mutations occurred; a conditional fix artifact follows.
+Confirmed the missing auto-unarchive integration on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Prepared a focused fix artifact. Implementation and PR creation are blocked by read-only filesystem access and unavailable required tooling; no files or GitHub items were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the storage defect on preflight main a4f23eef7395473931e3a44c93eacd6eb
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The reported local archive drift remains real and distinct from merged explicit archive-command repairs. Keep the issue open while the scoped implementation prerequisites are satisfied. |
-| #299 | keep_closed | skipped | related | Historical implementation context, not a replacement target or a fix for #466. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Preserve an actionable scoped repair plan for a writable executor without guessing protocol behavior or claiming validation. |
+| #466 | fix_needed | planned | canonical | The existing-behavior bug remains supported by current source inspection. Keep the issue open and implement one focused PR; closure and merge are prohibited. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The scope is a cohesive sync/store consistency repair with no new product policy or configuration. The artifact can be applied in a writable executor. |
+| cluster:issue-openclaw-wacli-466 | open_fix_pr | blocked |  | PR creation requires a writable checkout, the pinned toolchain and dependencies, a failing production-path regression, and successful implementation validation. These are concrete execution blockers, not an unresolved maintainer decision. |
 
 ## Needs Human
 
