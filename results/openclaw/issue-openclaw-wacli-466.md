@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37107652974"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37107652974"
+run_id: "37114193597"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37114193597"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T07:55:30.323Z"
+published_at: "2026-10-03T09:51:42.990Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37107652974](https://github.com/openclaw/clawsweeper/actions/runs/37107652974)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37114193597](https://github.com/openclaw/clawsweeper/actions/runs/37114193597)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the missing local archive transition on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Prepared a scoped fix plan; implementation is blocked by the read-only filesystem, unavailable required Go toolchain, and failed pinned-dependency fetches. No files or GitHub state changed; no regression or full gate passed.
+Confirmed archive-state drift using current-main SQL in memory. Implementation is blocked by the read-only checkout, unavailable pinned whatsmeow source, and an insufficient Go toolchain. No code changed or PR created; protocol parity and required validation remain unproven.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the missing local archive transition on preflight main a4f23eef7395473
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The source finding remains valid on the supplied current main. Keep the issue open while implementing and validating its narrow sync/store repair. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | A narrow artifact is appropriate despite local execution blockers. It preserves the existing archive behavior and recovery architecture without introducing product knobs. |
-| cluster:issue-openclaw-wacli-466 | open_fix_pr | blocked |  | PR publication is blocked until a writable executor with Go 1.27.1 and dependency access verifies polarity, implements the fix, and passes required validation. Reuse clawsweeper/issue-openclaw-wacli-466 and create or update exactly one PR through the applicator. |
+| #466 | fix_needed | planned | canonical | The remaining sync defect is distinct from the explicit archive propagation and recovery work in merged #299. Keep #466 open while preparing a verified fix. |
+| #299 | keep_closed | skipped | related | Historical implementation context only; no replacement, merge, or closure action applies. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Return a conditional repair artifact. Implementation and PR creation remain blocked until a writable executor can inspect the pinned dependency and run the required regression and validation gates. |
 
 ## Needs Human
 
