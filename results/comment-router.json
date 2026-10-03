@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T17:12:16.483Z",
+  "updated_at": "2026-10-03T17:12:36.718Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1708:5862991406:2026-10-03T10:27:55Z:clawsweeper_needs_human",
-      "comment_id": "5862991406",
-      "comment_version_key": "5862991406:2026-10-03T10:27:55Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1708#issuecomment-5862991406",
-      "comment_created_at": "2026-09-28T03:49:24Z",
-      "comment_updated_at": "2026-10-03T10:27:55Z",
-      "comment_body_sha256": "6b39682e1ff323cc7078e135fc1b12f319b8a8449c8015abed4f862940be7159",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1708,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legitimate organic updates to repeatedly reviewed items can wait 10–15 minutes for automatic feedback; explicit acceptance of that production latency is not recorded. (sha=4511800a5898bdc9fa68193b5ff2b0dc032390c1)",
-      "expected_head_sha": "4511800a5898bdc9fa68193b5ff2b0dc032390c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T10:28:53.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/active-item-review-debounce",
-        "head_sha": "4511800a5898bdc9fa68193b5ff2b0dc032390c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164183:5967283648:2026-10-03T10:28:20Z:clawsweeper_needs_human",
       "comment_id": "5967283648",
@@ -33351,6 +33318,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164413:5971514062:2026-10-03T17:11:38Z:re_review",
+      "comment_id": "5971514062",
+      "comment_version_key": "5971514062:2026-10-03T17:11:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164413#issuecomment-5971514062",
+      "comment_created_at": "2026-10-03T17:11:38Z",
+      "comment_updated_at": "2026-10-03T17:11:38Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164413,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T17:12:35.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/reclass6",
+        "head_sha": "6ede63650cb2c00b1e359367ecfbafe7c8f45608",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
