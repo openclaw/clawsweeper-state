@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T10:21:29.040Z",
+  "updated_at": "2026-10-03T10:22:33.899Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5965788967:2026-10-03T05:04:38Z:re_review",
-      "comment_id": "5965788967",
-      "comment_version_key": "5965788967:2026-10-03T05:04:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5965788967",
-      "comment_created_at": "2026-10-03T05:04:38Z",
-      "comment_updated_at": "2026-10-03T05:04:38Z",
-      "comment_body_sha256": "9b5893f6411b4aabf0413cf8b3217132775806a36ed171b909231eb73dfe0725",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head c94a2c592901c1411fb7e707356f0b86ea034605. the branch is rebased onto current main, the residual diff was re-audited for duplicate or superseded updater/tui machinery, and the two rebase-stale tests now use the current execution-guard contract. focused update/tui/process suites are green; hosted exact-head ci is in progress",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T05:06:00.234Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-close-stale-tui-clients",
-        "head_sha": "c94a2c592901c1411fb7e707356f0b86ea034605",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:964:5965754337:2026-10-03T05:04:43Z:clawsweeper_needs_human",
       "comment_id": "5965754337",
@@ -32661,6 +32614,39 @@
         "kind": "pull_request",
         "branch": "feat/xai-search-self-hosted",
         "head_sha": "d13a6bf03f7b7dfb9c4699d4f70bdf4089880ce0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164244:5968222350:2026-10-03T10:21:41Z:clawsweeper_needs_human",
+      "comment_id": "5968222350",
+      "comment_version_key": "5968222350:2026-10-03T10:21:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164244#issuecomment-5968222350",
+      "comment_created_at": "2026-10-03T10:21:41Z",
+      "comment_updated_at": "2026-10-03T10:21:41Z",
+      "comment_body_sha256": "b0506b666fb0e8c6279d243f1be6ce8014ac0cc61228d7b9693100c841d82ae6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=cd39f2c62db61e9eb8c91479ac9ed6fa51d71fbc)",
+      "expected_head_sha": "cd39f2c62db61e9eb8c91479ac9ed6fa51d71fbc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T10:22:33.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/x03-errors-and-messages-20261002",
+        "head_sha": "cd39f2c62db61e9eb8c91479ac9ed6fa51d71fbc",
         "cluster_id": null,
         "job_path": null
       }
