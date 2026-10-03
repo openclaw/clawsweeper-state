@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T12:55:23.034Z",
+  "updated_at": "2026-10-03T12:56:01.755Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/hermit:52:5791281673:2026-09-23T08:04:35Z:re_review",
-      "comment_id": "5791281673",
-      "comment_version_key": "5791281673:2026-09-23T08:04:35Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/52#issuecomment-5791281673",
-      "comment_created_at": "2026-09-23T08:04:35Z",
-      "comment_updated_at": "2026-09-23T08:04:35Z",
-      "comment_body_sha256": "8cf73bbb843586443be6a1ff8c49ee79d7b52b1dee1bdb7ddcb5fd720c23e9a9",
-      "repo": "openclaw/hermit",
-      "issue_number": 52,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T07:15:56.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/sweep-3",
-        "head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/hermit:52:5791146685:2026-10-03T07:14:04Z:clawsweeper_needs_human",
       "comment_id": "5791146685",
@@ -32953,6 +32906,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/vitest-5.0.2",
         "head_sha": "6a0baa01208a1e51680d7649e91d03ee523911a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164307:5969369453:2026-10-03T12:55:06Z:clawsweeper_needs_human",
+      "comment_id": "5969369453",
+      "comment_version_key": "5969369453:2026-10-03T12:55:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164307#issuecomment-5969369453",
+      "comment_created_at": "2026-10-03T12:55:06Z",
+      "comment_updated_at": "2026-10-03T12:55:06Z",
+      "comment_body_sha256": "158ac3dbdad4254c79a89b20c67da2d5ce1344724e979d04b6b22c4cf0ad603e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164307,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the declared focused regression execution and socket-boundary validation, recording results and test durations before merge. (sha=13f046e212034cbd31cb6422f8dc44aba561a103)",
+      "expected_head_sha": "13f046e212034cbd31cb6422f8dc44aba561a103",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T12:56:01.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-connection-retention-20260919",
+        "head_sha": "13f046e212034cbd31cb6422f8dc44aba561a103",
         "cluster_id": null,
         "job_path": null
       }
