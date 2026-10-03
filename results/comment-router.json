@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T15:10:46.601Z",
+  "updated_at": "2026-10-03T15:11:42.253Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164171:5967525655:2026-10-03T09:06:53Z:re_review",
-      "comment_id": "5967525655",
-      "comment_version_key": "5967525655:2026-10-03T09:06:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164171#issuecomment-5967525655",
-      "comment_created_at": "2026-10-03T09:06:53Z",
-      "comment_updated_at": "2026-10-03T09:06:53Z",
-      "comment_body_sha256": "64f7b05376854f0e4c0b23418d6fba2124d64fc26176023239f2cc350f017349",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164171,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T09:07:46.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-timeout-completion-wake",
-        "head_sha": "6d3b9728a686b68675f58f09739cd82392a1d366",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164200:5967529126:2026-10-03T09:07:11Z:clawsweeper_needs_human",
       "comment_id": "5967529126",
@@ -32712,6 +32665,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-native-live-fixtures",
         "head_sha": "bbf8fec137076545ddbfaeaad009f2ccc2a5d8da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164363:5970439669:2026-10-03T15:10:55Z:clawsweeper_needs_human",
+      "comment_id": "5970439669",
+      "comment_version_key": "5970439669:2026-10-03T15:10:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164363#issuecomment-5970439669",
+      "comment_created_at": "2026-10-03T15:10:55Z",
+      "comment_updated_at": "2026-10-03T15:10:55Z",
+      "comment_body_sha256": "68e576c2870d286ddcff8c3242117190296189c1b8ce17df5d5ced0a52e32b7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164363,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed snapshot publisher is exercised through real filesystem transfers, but the affected Linux platform and birthtime fallback are mocke... (sha=946d8607516f6e9e15aa9e8650ded5fb9728c668)",
+      "expected_head_sha": "946d8607516f6e9e15aa9e8650ded5fb9728c668",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T15:11:42.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-snapshot-link-birthtime",
+        "head_sha": "946d8607516f6e9e15aa9e8650ded5fb9728c668",
         "cluster_id": null,
         "job_path": null
       }
