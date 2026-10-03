@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37094031913",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37094031913",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-03T03:44:45.072Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow repair is viable and planned. Local implementation and validation are blocked by the read-only workspace and absent dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The reported traversal defect remains in current main and can be repaired without a configuration option or product decision. Keep this issue open; closure and merge are prohibited by the job."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "A concrete three-file repair plan is available; local implementation and validation must occur in the executor."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on implementing and validating the canonical fix path in a writable checkout. Re-fetch live issue and branch/PR state before proceeding."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
