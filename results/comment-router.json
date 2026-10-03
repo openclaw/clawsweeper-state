@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T00:39:09.440Z",
+  "updated_at": "2026-10-03T00:39:18.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:336:5790923994:2026-10-02T19:08:35Z:clawsweeper_auto_repair",
-      "comment_id": "5790923994",
-      "comment_version_key": "5790923994:2026-10-02T19:08:35Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/336#issuecomment-5790923994",
-      "comment_created_at": "2026-09-23T07:35:45Z",
-      "comment_updated_at": "2026-10-02T19:08:35Z",
-      "comment_body_sha256": "22d0349d5e01d1a3cfe630c5934754e877898cac14e7bcff2acf75dfbd91c997",
-      "repo": "openclaw/clownfish",
-      "issue_number": 336,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5d0b8b9d177322dd24e2cd959b6eef8d897d0258)",
-      "expected_head_sha": "5d0b8b9d177322dd24e2cd959b6eef8d897d0258",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-02T19:09:35.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/clownfish-dependency-state",
-        "head_sha": "5d0b8b9d177322dd24e2cd959b6eef8d897d0258",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:922:5959564042:2026-10-02T19:09:04Z:clawsweeper_needs_human",
       "comment_id": "5959564042",
@@ -33344,6 +33311,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163886:5963706062:2026-10-03T00:38:23Z:re_review",
+      "comment_id": "5963706062",
+      "comment_version_key": "5963706062:2026-10-03T00:38:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163886#issuecomment-5963706062",
+      "comment_created_at": "2026-10-03T00:38:23Z",
+      "comment_updated_at": "2026-10-03T00:38:23Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163886,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T00:39:16.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/android-gateway-handoff-owner-state",
+        "head_sha": "253772c060560327a8bca2137647dc0c3d829bb5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
