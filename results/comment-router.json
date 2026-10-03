@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:51:17.943Z",
+  "updated_at": "2026-10-03T23:51:20.430Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163117:5971654936:2026-10-03T17:28:11Z:re_review",
-      "comment_id": "5971654936",
-      "comment_version_key": "5971654936:2026-10-03T17:28:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163117#issuecomment-5971654936",
-      "comment_created_at": "2026-10-03T17:28:11Z",
-      "comment_updated_at": "2026-10-03T17:28:11Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163117,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:29:10.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-completion-preflight-compaction-162853",
-        "head_sha": "4249ccac54cd9d6031484267b4948d44343e0cd5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164325:5969741870:2026-10-03T17:28:17Z:clawsweeper_needs_human",
       "comment_id": "5969741870",
@@ -33341,6 +33294,39 @@
         "kind": "pull_request",
         "branch": "jesse/endor-review-retry-followup",
         "head_sha": "d2e79eaff41be3b260d75514386a9d3116cb333b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabhelm:29:5922065495:2026-10-03T23:50:33Z:clawsweeper_needs_human",
+      "comment_id": "5922065495",
+      "comment_version_key": "5922065495:2026-10-03T23:50:33Z",
+      "comment_url": "https://github.com/openclaw/crabhelm/pull/29#issuecomment-5922065495",
+      "comment_created_at": "2026-10-01T00:15:35Z",
+      "comment_updated_at": "2026-10-03T23:50:33Z",
+      "comment_body_sha256": "3ef9fb21bf264a9136fec4597dc5622873f909141fd8d9ec14b01aac29c9d82a",
+      "repo": "openclaw/crabhelm",
+      "issue_number": 29,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound the frames buffered before coordinator attachment (P2)** - After the server resumes the socket, attachSocket() can wait behind serialized coordinator work or its PostgreSQL active-state query. Every receiv...; Review finding: [P2] Bound the frames buffered before coordinator attachment — aws/postgres-coordinator.ts:1158-1160 - [medium] Unbounded pre-attachment memory retention — aws/pos... (sha=ba03cb48ae8fed05a727976d325e4c28691a1d7e)",
+      "expected_head_sha": "ba03cb48ae8fed05a727976d325e4c28691a1d7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:51:20.430Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/aws-runtime-socket-resume",
+        "head_sha": "ba03cb48ae8fed05a727976d325e4c28691a1d7e",
         "cluster_id": null,
         "job_path": null
       }
