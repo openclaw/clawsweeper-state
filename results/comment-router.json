@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T10:39:45.462Z",
+  "updated_at": "2026-10-03T10:40:04.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164051:5965881977:2026-10-03T05:17:57Z:re_review",
-      "comment_id": "5965881977",
-      "comment_version_key": "5965881977:2026-10-03T05:17:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164051#issuecomment-5965881977",
-      "comment_created_at": "2026-10-03T05:17:57Z",
-      "comment_updated_at": "2026-10-03T05:17:57Z",
-      "comment_body_sha256": "f7d070fba6419f7e04afd33a26cdab821e882782d24fba7566e137542ed21edb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164051,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T05:19:03.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/consolidated-memory-budget-compaction",
-        "head_sha": "0256ea782789a1367e62f0be044ff83a036f6d6e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:969:5965883450:2026-10-03T05:18:10Z:clawsweeper_needs_human",
       "comment_id": "5965883450",
@@ -32633,6 +32586,39 @@
         "kind": "pull_request",
         "branch": "feat/lobster-packs",
         "head_sha": "1fb03758685a0d52ea4e0c5484a6db665ae99ef0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163835:5962791141:2026-10-03T10:39:15Z:clawsweeper_needs_human",
+      "comment_id": "5962791141",
+      "comment_version_key": "5962791141:2026-10-03T10:39:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163835#issuecomment-5962791141",
+      "comment_created_at": "2026-10-02T22:59:06Z",
+      "comment_updated_at": "2026-10-03T10:39:15Z",
+      "comment_body_sha256": "a6135e5d9223a77a680605d2c6ffd1a0027f215c5587d1449232879a215336c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed ACP source-turn and restart-recovery owners have public Gateway RPC and real-persistence tests, but external ACP execution is mocke... (sha=46f3ac1c449a4eeeb7441071edc92d6ecb55e72a)",
+      "expected_head_sha": "46f3ac1c449a4eeeb7441071edc92d6ecb55e72a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T10:40:04.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-source-restart-recovery",
+        "head_sha": "46f3ac1c449a4eeeb7441071edc92d6ecb55e72a",
         "cluster_id": null,
         "job_path": null
       }
