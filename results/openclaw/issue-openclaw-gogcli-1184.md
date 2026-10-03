@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/gogcli"
 cluster_id: "issue-openclaw-gogcli-1184"
-mode: "plan"
-run_id: "36971181957"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36971181957"
-head_sha: "96aa78ac663f91b750f9f7f80d34511e89fe153c"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "37110050870"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37110050870"
+head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-02T05:58:42.697Z"
-canonical: "#1184"
-canonical_issue: "#1184"
+published_at: "2026-10-03T08:36:45.767Z"
+canonical: "https://github.com/openclaw/gogcli/issues/1184"
+canonical_issue: "https://github.com/openclaw/gogcli/issues/1184"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/gogcli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36971181957](https://github.com/openclaw/clawsweeper/actions/runs/36971181957)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37110050870](https://github.com/openclaw/clawsweeper/actions/runs/37110050870)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #1184
+Canonical: https://github.com/openclaw/gogcli/issues/1184
 
 ## Summary
 
-Confirmed the documentation gap at preflight main SHA 414e2ff8afa281ec3d9f0cdb057bdbc53386db91. Plan a focused two-file documentation PR. No files or GitHub state changed; validation remains pending.
+The documentation gap remains on preflight main 414e2ff8afa281ec3d9f0cdb057bdbc53386db91. A focused two-file fix is planned. Implementation and validation are blocked by the read-only workspace and an unsupported local Go version; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Confirmed the documentation gap at preflight main SHA 414e2ff8afa281ec3d9f0cdb05
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1184 | fix_needed | planned | canonical | A narrow documentation fix satisfies the selected issue scope without a product decision or security-sensitive work. |
+| #1184 | fix_needed | planned | canonical | The maintainer explicitly selected documentation guidance, resolving product scope without changing argument parsing. |
+| cluster:issue-openclaw-gogcli-1184 | build_fix_artifact | planned |  | A narrow new PR remains viable and can be implemented by a writable executor. |
+| cluster:issue-openclaw-gogcli-1184 | open_fix_pr | blocked |  | Implementation is blocked until a writable executor with the repository-required Go toolchain applies and validates the canonical fix plan. No PR readiness or parser-test success is claimed. |
 
 ## Needs Human
 
