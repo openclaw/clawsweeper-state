@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:42:06.062Z",
+  "updated_at": "2026-10-03T11:42:29.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148612:5966192234:2026-10-03T06:03:55Z:re_review",
-      "comment_id": "5966192234",
-      "comment_version_key": "5966192234:2026-10-03T06:03:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148612#issuecomment-5966192234",
-      "comment_created_at": "2026-10-03T06:03:55Z",
-      "comment_updated_at": "2026-10-03T06:03:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148612,
-      "author": "beenhero",
-      "author_id": 8139,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T06:04:50.839Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-active-run-approval-identity",
-        "head_sha": "b70fc2aeb29782b2fa35742bd5ca605f78508724",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164061:5966097101:2026-10-03T06:04:29Z:clawsweeper_needs_human",
       "comment_id": "5966097101",
@@ -32785,6 +32738,39 @@
         "kind": "pull_request",
         "branch": "deslop/x01-retry-timeout-abort-20261002",
         "head_sha": "3088f84e566afe2ca914ab6ce69fbb2a7199b1c3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164222:5967919388:2026-10-03T11:41:35Z:clawsweeper_needs_human",
+      "comment_id": "5967919388",
+      "comment_version_key": "5967919388:2026-10-03T11:41:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164222#issuecomment-5967919388",
+      "comment_created_at": "2026-10-03T09:47:16Z",
+      "comment_updated_at": "2026-10-03T11:41:35Z",
+      "comment_body_sha256": "af4d0332801e97b97175633bef9f7c127dd2c5341ecd10d9bc080ef091f3b000",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record 20 clean standalone runs per affected file, three original-order shard runs per affected configuration/runtime, and owner sibling coverage; explicitly qualify inherited failure... (sha=4df149d8fd1c50b6995d9e9402fb48dabe2a0c73)",
+      "expected_head_sha": "4df149d8fd1c50b6995d9e9402fb48dabe2a0c73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T11:42:29.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/w109-v6-interactions",
+        "head_sha": "4df149d8fd1c50b6995d9e9402fb48dabe2a0c73",
         "cluster_id": null,
         "job_path": null
       }
