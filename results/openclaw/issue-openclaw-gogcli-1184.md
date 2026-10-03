@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/gogcli"
 cluster_id: "issue-openclaw-gogcli-1184"
-mode: "plan"
-run_id: "37110383177"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37110383177"
+mode: "autonomous"
+run_id: "37113754358"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37113754358"
 head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-03T09:00:55.452Z"
+published_at: "2026-10-03T09:44:03.563Z"
 canonical: "https://github.com/openclaw/gogcli/issues/1184"
 canonical_issue: "https://github.com/openclaw/gogcli/issues/1184"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/gogcli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37110383177](https://github.com/openclaw/clawsweeper/actions/runs/37110383177)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37113754358](https://github.com/openclaw/clawsweeper/actions/runs/37113754358)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/gogcli/issues/1184
 
 ## Summary
 
-Confirmed the documentation gap against preflight main SHA 414e2ff8afa281ec3d9f0cdb057bdbc53386db91. Plan a focused two-file documentation PR; implementation and validation remain for the writable executor.
+Confirmed the documentation gap on supplied main 414e2ff8afa281ec3d9f0cdb057bdbc53386db91. Prepared a focused two-file fix artifact. Local implementation and full validation are blocked by the read-only filesystem; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Confirmed the documentation gap against preflight main SHA 414e2ff8afa281ec3d9f0
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/gogcli/issues/1184 | fix_needed | planned | canonical | The maintainer-approved documentation scope is clear and still viable. Leave the issue open while the implementation PR owns validation. |
+| #1184 | fix_needed | planned | canonical | The request remains viable and narrowly specified; #1184 remains the canonical issue until its documentation fix lands. |
+| cluster:issue-openclaw-gogcli-1184 | build_fix_artifact | planned |  | A concrete documentation-only repair is ready for the executor; no product or security decision remains. |
+| cluster:issue-openclaw-gogcli-1184 | open_fix_pr | blocked |  | Implementation and PR preparation require a writable executor and passing validation. GitHub mutations remain delegated to ClawSweeper scripts. |
 
 ## Needs Human
 
