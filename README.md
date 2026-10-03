@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 3, 2026, 08:43 UTC
+Last source update: Oct 3, 2026, 08:53 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Oct 3, 2026, 08:43 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 3, 2026, 08:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37110474984) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 3, 2026, 08:53 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37110177625) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 3, 2026, 08:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37110260677) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 3, 2026, 06:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37104083047) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 3, 2026, 08:43 UTC
+Last source update: Oct 3, 2026, 08:55 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1404 | 100% |
-| Run attempts archived | 4165 | audit |
+| Run attempts archived | 4166 | audit |
 | Latest successful clusters | 1159 | 82.5% |
 | Latest failed clusters | 240 | 17.1% |
 | Latest cancelled clusters | 5 | 0.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1404 clusters: 378 maintainer action, 431 automation snapshot, 536 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1145](https://github.com/openclaw/openclaw-windows-node/issues/1145) is maintainer_input: For #1145 only: confirm the original numbered, bulleted, and inline-code messages in a current-main Windows Release build at narrow and r....
-- Intervention first: [openclaw/gogcli](https://github.com/openclaw/gogcli) [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) is automation_failed: Implementation is blocked until a writable executor with the repository-required Go toolchain applies and validates the canonical fix pla....
+- Intervention first: [openclaw/gogcli](https://github.com/openclaw/gogcli) [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) is automation_failed: The writable executor must implement and validate the artifact, reuse or create clawsweeper/issue-openclaw-gogcli-1184, and create or upd....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164115](https://github.com/openclaw/openclaw/pull/164115) is action_planned: A focused bug repair is appropriate. Establish the failing regression on current main before implementing; stop if reproduction fails..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/gogcli](https://github.com/openclaw/gogcli) | [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) | automation_failed | Implementation is blocked until a writable executor with the repository-required Go toolchain applies and validates the canonical fix plan. No PR r... | Oct 3, 2026, 08:36 UTC | [issue-openclaw-gogcli-1184](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1184.md) | [37110050870](https://github.com/openclaw/clawsweeper/actions/runs/37110050870) |
+| [openclaw/gogcli](https://github.com/openclaw/gogcli) | [cluster:issue-openclaw-gogcli-1184](cluster:issue-openclaw-gogcli-1184) | automation_failed | The writable executor must implement and validate the artifact, reuse or create clawsweeper/issue-openclaw-gogcli-1184, and create or update one PR... | Oct 3, 2026, 08:55 UTC | [issue-openclaw-gogcli-1184](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-1184.md) | [37111081650](https://github.com/openclaw/clawsweeper/actions/runs/37111081650) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#164147](https://github.com/openclaw/openclaw/pull/164147) | automation_failed | A narrow existing-behavior repair is justified. Keep the issue open; implementation must continue in a writable executor checkout after current-mai... | Oct 3, 2026, 08:25 UTC | [issue-openclaw-openclaw-164147](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164147.md) | [37107530300](https://github.com/openclaw/clawsweeper/actions/runs/37107530300) |
 | [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 3, 2026, 08:04 UTC | [issue-steipete-oracle-535](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-535.md) | [37108196996](https://github.com/openclaw/clawsweeper/actions/runs/37108196996) |
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) | automation_failed | PR publication is blocked until a writable executor with Go 1.27.1 and dependency access verifies polarity, implements the fix, and passes required... | Oct 3, 2026, 07:55 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37107652974](https://github.com/openclaw/clawsweeper/actions/runs/37107652974) |
