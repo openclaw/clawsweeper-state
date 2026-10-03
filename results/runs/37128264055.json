@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121377",
+  "mode": "autonomous",
+  "run_id": "37128264055",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37128264055",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121377.md",
+  "published_at": "2026-10-03T14:07:14.721Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121377",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121377",
+  "canonical_pr": null,
+  "summary": "Verified the persistence defect on main SHA 38d10371c5f2bf52eb3611860a73571affd03043. Plan a narrow implementation PR that retains both boolean overrides and corrects the native effective-state display regression identified by prior review. No files or GitHub state changed; runtime tests and native proof remain for execution.",
+  "actions": [
+    {
+      "target": "#121377",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121377",
+      "candidate_fix": null,
+      "reason": "The existing boolean persistence contract has a narrow source-proven defect. Preserve global search disable while repairing persistence and its directly affected native consumer."
+    },
+    {
+      "target": "#118705",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different fields, root cause, and product decision; leave open outside this implementation."
+    },
+    {
+      "target": "#121378",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#121377",
+      "candidate_fix": null,
+      "reason": "Historical contributor work will receive explicit credit. The job requests a new issue implementation PR; no reopening or closure is planned."
+    },
+    {
+      "target": "#121401",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct browser history supplies the effective-state contract; no browser implementation change is expected."
+    },
+    {
+      "target": "#121402",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical item for central OpenClaw security handling. Perform no GitHub mutation or implementation based on it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121377",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#121377",
+      "candidate_fix": null,
+      "reason": "Executable narrow fix plan is appropriate. The job allows one implementation PR and prohibits merge and issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#121377",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
