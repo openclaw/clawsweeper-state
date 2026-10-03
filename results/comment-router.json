@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:51:00.999Z",
+  "updated_at": "2026-10-03T23:51:17.943Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164411:5971654435:2026-10-03T17:28:07Z:re_review",
-      "comment_id": "5971654435",
-      "comment_version_key": "5971654435:2026-10-03T17:28:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164411#issuecomment-5971654435",
-      "comment_created_at": "2026-10-03T17:28:07Z",
-      "comment_updated_at": "2026-10-03T17:28:07Z",
-      "comment_body_sha256": "e0b06340da0655f47200f7cf267f8b622789ae6276ccb0032e6c2daa17b8a93e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164411,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:29:05.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/w121-advisory-bun-live",
-        "head_sha": "77cb55960aa05c6a99bc251117e529851098569a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163117:5971654936:2026-10-03T17:28:11Z:re_review",
       "comment_id": "5971654936",
@@ -33355,6 +33308,39 @@
         "kind": "pull_request",
         "branch": "fix/164334-paused-batch-sibling",
         "head_sha": "a7002f214bdc174b73c86559f9f3fb1c33a856e8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1728:5921220142:2026-10-03T23:50:29Z:clawsweeper_needs_human",
+      "comment_id": "5921220142",
+      "comment_version_key": "5921220142:2026-10-03T23:50:29Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1728#issuecomment-5921220142",
+      "comment_created_at": "2026-09-30T23:03:41Z",
+      "comment_updated_at": "2026-10-03T23:50:29Z",
+      "comment_body_sha256": "3690ffa7659b8d5f44d6ede064a14a3aaa1a8b1c2e8c44589f17996e96663c30",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The first postdeployment continuation resets failures and backoff for legacy pending or parked Endor rows; independent owner acceptance of that operational reset remains unrecorded. (sha=d2e79eaff41be3b260d75514386a9d3116cb333b)",
+      "expected_head_sha": "d2e79eaff41be3b260d75514386a9d3116cb333b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:51:17.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/endor-review-retry-followup",
+        "head_sha": "d2e79eaff41be3b260d75514386a9d3116cb333b",
         "cluster_id": null,
         "job_path": null
       }
