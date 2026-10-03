@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T15:14:22.147Z",
+  "updated_at": "2026-10-03T15:15:03.787Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159147:5930199174:2026-10-01T11:15:54Z:re_review",
-      "comment_id": "5930199174",
-      "comment_version_key": "5930199174:2026-10-01T11:15:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159147#issuecomment-5930199174",
-      "comment_created_at": "2026-10-01T11:15:54Z",
-      "comment_updated_at": "2026-10-01T11:15:54Z",
-      "comment_body_sha256": "504f841d44534e3ef9dd6f7e9db1fed569967103656e9e351df0acc5c7ab9c54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159147,
-      "author": "mnowrot",
-      "author_id": 135707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T09:12:52.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-command-runtime-reuse",
-        "head_sha": "4c19a1d10d9e7ba29e66346559c6757a99e40d6a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164075:5966290606:2026-10-03T09:11:52Z:clawsweeper_needs_human",
       "comment_id": "5966290606",
@@ -32684,6 +32637,39 @@
         "kind": "pull_request",
         "branch": "fix/acp-source-restart-recovery",
         "head_sha": "22e3f3085e0d0a3fc28328a9b821ebca0df4dbb6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164304:5969320398:2026-10-03T15:14:21Z:clawsweeper_needs_human",
+      "comment_id": "5969320398",
+      "comment_version_key": "5969320398:2026-10-03T15:14:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164304#issuecomment-5969320398",
+      "comment_created_at": "2026-10-03T12:48:40Z",
+      "comment_updated_at": "2026-10-03T15:14:21Z",
+      "comment_body_sha256": "d032d8f6ad30eff5bb361cbc5f1c947f3212d8df80f85ee3edf9e26b726bce70",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164304,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted composition with current main remains unreviewed and unvalidated across worker preparation, pending-input settlement, and creation-custody guards. (sha=0ee5211b626200685d46c45980cc693e162338ea)",
+      "expected_head_sha": "0ee5211b626200685d46c45980cc693e162338ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T15:15:03.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-create",
+        "head_sha": "0ee5211b626200685d46c45980cc693e162338ea",
         "cluster_id": null,
         "job_path": null
       }
