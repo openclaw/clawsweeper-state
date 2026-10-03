@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-163875",
+  "mode": "plan",
+  "run_id": "37156935765",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37156935765",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163875.md",
+  "published_at": "2026-10-03T22:03:59.867Z",
+  "canonical": "#163875",
+  "canonical_issue": "#163858",
+  "canonical_pr": "#163875",
+  "summary": "Plan the bounded review/fix loop on the existing contributor branch. Supplied review and CI are passing; no outstanding code defect is established. Keep the PR and source issue open, and quarantine only the explicitly security-sensitive linked PR.",
+  "actions": [
+    {
+      "target": "#163875",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#163875",
+      "candidate_fix": null,
+      "reason": "Use the requested existing-branch workflow to refresh state, inspect current integration and review requirements, and repair only evidenced blockers. Passing historical checks do not establish validation of a subsequently changed head."
+    },
+    {
+      "target": "#163858",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "fixed_by_candidate",
+      "canonical": "#163875",
+      "candidate_fix": "#163875",
+      "reason": "Retain the source reproduction and follow-up thread while the existing candidate owns validation. No closure is authorized."
+    },
+    {
+      "target": "#160246",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked item for central OpenClaw security handling without commenting, labeling, closing, merging, or including its implementation in the repair."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
