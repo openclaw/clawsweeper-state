@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T21:42:59.562Z",
+  "updated_at": "2026-10-03T21:43:06.793Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5970618416:2026-10-03T15:33:28Z:re_review",
-      "comment_id": "5970618416",
-      "comment_version_key": "5970618416:2026-10-03T15:33:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5970618416",
-      "comment_created_at": "2026-10-03T15:33:28Z",
-      "comment_updated_at": "2026-10-03T15:33:28Z",
-      "comment_body_sha256": "44b9f83c1f1f87bc331e958f45617fad28ae6af8d9e774409faca09187d5bfd7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (a163d9b3db), focused audit tests 12/12 green, tsgo:core errors only in upstream files (node-proxy-agent, api-baseline, refresh.ts), none in our audit/skill-selection files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T15:34:30.865Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "0c4f31d8dc73d226b02e7b821327e6bc653868ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1030:5970619773:2026-10-03T15:33:38Z:clawsweeper_needs_human",
       "comment_id": "5970619773",
@@ -33291,6 +33244,39 @@
         "kind": "pull_request",
         "branch": "steipete/mcp-app-view-grant",
         "head_sha": "3f6be2e88bcae5eb460dc2d691e170425b647b02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164554:5973759726:2026-10-03T21:42:02Z:clawsweeper_needs_human",
+      "comment_id": "5973759726",
+      "comment_version_key": "5973759726:2026-10-03T21:42:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164554#issuecomment-5973759726",
+      "comment_created_at": "2026-10-03T21:42:02Z",
+      "comment_updated_at": "2026-10-03T21:42:02Z",
+      "comment_body_sha256": "899695388a4a968bee4cc69d77c4587482a3175629e11eeb48cd8bc4062229ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164554,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility with the published 2026.9.7/2026.9.8 updater remains unverified on this 2026.9.9 candidate; those installed drivers cannot receive candidate-side fixes, so an incompatib... (sha=1345768aea84df6011e116dfe577500f9a5d3bfa)",
+      "expected_head_sha": "1345768aea84df6011e116dfe577500f9a5d3bfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T21:43:06.793Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-2026-9-9-doctor-authority",
+        "head_sha": "1345768aea84df6011e116dfe577500f9a5d3bfa",
         "cluster_id": null,
         "job_path": null
       }
