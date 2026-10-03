@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/acpx",
+  "cluster_id": "issue-openclaw-acpx-808",
+  "mode": "autonomous",
+  "run_id": "37113087241",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37113087241",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-acpx-808.md",
+  "published_at": "2026-10-03T09:32:05.405Z",
+  "canonical": "https://github.com/openclaw/acpx/issues/808",
+  "canonical_issue": "https://github.com/openclaw/acpx/issues/808",
+  "canonical_pr": null,
+  "summary": "Implementation blocked by insufficient reproduction evidence. Inspected supplied current main; no confirmed acpx root cause or safe narrow patch was established. No code or GitHub changes made.",
+  "actions": [
+    {
+      "target": "#808",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#808",
+      "candidate_fix": null,
+      "reason": "Keep the report open. The sandboxed versus unsandboxed comparison does not establish whether acpx, the adapter, or an environmental restriction caused the failure; no boundary-bypass claim is present."
+    },
+    {
+      "target": "cluster:issue-openclaw-acpx-808",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#808",
+      "candidate_fix": null,
+      "reason": "Before implementation, obtain the resolved cursor-composer command and relevant configuration, acpx/adapter versions, platform, and a redacted verbose trace identifying the failed ACP method or denied operation. Without those details, a fix artifact would prescribe speculative changes. This action requests reproduction evidence only and authorizes no mutation."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For #808, obtain the reporter's resolved cursor-composer command and relevant configuration, acpx/adapter versions, platform, and a redacted verbose trace identifying the failed ACP method or denied operation. The supplied artifacts do not establish an acpx root cause or a safe narrow patch."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#808",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
