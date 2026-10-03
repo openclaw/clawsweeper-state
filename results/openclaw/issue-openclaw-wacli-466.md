@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37088374067"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37088374067"
-head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
+run_id: "37094019035"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37094019035"
+head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-03T02:06:20.249Z"
+published_at: "2026-10-03T03:45:24.199Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-wacli-466
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37088374067](https://github.com/openclaw/clawsweeper/actions/runs/37088374067)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37094019035](https://github.com/openclaw/clawsweeper/actions/runs/37094019035)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the local archive-state defect on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. Implementation is blocked by the read-only workspace, unavailable pinned whatsmeow source, and insufficient installed Go version. No code or GitHub mutations were made; no validated PR branch exists.
+#466 remains valid on preflight main. Implementation is blocked by the unverified companion auto-unarchive contract and read-only environment. No code or GitHub changes were made; regression and full-gate validation remain incomplete.
 
 ## Impact
 
@@ -48,13 +48,14 @@ Confirmed the local archive-state defect on preflight main a4f23eef7395473931e3a
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | skipped |  |  | worker marked the fix path as non-executable; closure actions may still apply |
+| issue_implementation_status_comment | updated | #466 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +67,10 @@ Confirmed the local archive-state defect on preflight main a4f23eef7395473931e3a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The defect is confirmed at the local storage boundary. A new fix PR remains the canonical path, conditional on verifying protocol semantics and completing implementation and validation in a writable environment. |
-| #299 | keep_closed | skipped | related | Historical implementation context only; no closure or replacement action is appropriate. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation and PR readiness remain blocked by concrete environment and protocol-source prerequisites. |
+| #466 | fix_needed | planned | canonical | The local storage mechanism still preserves archived state after incoming messages. Safe implementation requires protocol confirmation, durable ordering, and regression coverage. |
+| #299 | keep_closed | skipped | related | Historical design context, not a mutation target or a fix for #466. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | Retain the scoped repair outline, but do not implement or propose a PR until the companion contract is established and a writable executor can complete regression and required validation. |
 
 ## Needs Human
 
-- none
+- #466: The inspected pinned SDK establishes the preference event, but does not establish preference polarity and companion auto-unarchive eligibility/order semantics. The job explicitly requires stopping for maintainer direction when that contract cannot establish safe behavior. Provide authoritative contract evidence or maintainer direction before implementation.
