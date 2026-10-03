@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T20:00:55.227Z",
+  "updated_at": "2026-10-03T20:01:11.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164291:5969691083:2026-10-03T13:36:29Z:re_review",
-      "comment_id": "5969691083",
-      "comment_version_key": "5969691083:2026-10-03T13:36:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164291#issuecomment-5969691083",
-      "comment_created_at": "2026-10-03T13:36:29Z",
-      "comment_updated_at": "2026-10-03T13:36:29Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164291,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T13:37:27.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/mentions",
-        "head_sha": "7c74859be0b3b6446b04ee6582176a65eb0062ef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1016:5969694156:2026-10-03T13:36:56Z:clawsweeper_needs_human",
       "comment_id": "5969694156",
@@ -33076,6 +33029,39 @@
         "kind": "pull_request",
         "branch": "fix/blacksmith-status",
         "head_sha": "f0438ddf1f4631c90b7f402087c71ad96e895503",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:902:5972953780:2026-10-03T20:00:21Z:clawsweeper_needs_human",
+      "comment_id": "5972953780",
+      "comment_version_key": "5972953780:2026-10-03T20:00:21Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/902#issuecomment-5972953780",
+      "comment_created_at": "2026-10-03T20:00:21Z",
+      "comment_updated_at": "2026-10-03T20:00:21Z",
+      "comment_body_sha256": "8d7c8edcbf2094c1e9bd965f2142ce26f727821eddf724414021cb5c2a3ad035",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new mandatory application-focus read can refuse background paste where the previous target-local checks passed. Native qualification must show a cold target still succeeds and lat... (sha=c7d902380bf3b884e6c2d56ad68f1eec5e7a3b9c)",
+      "expected_head_sha": "c7d902380bf3b884e6c2d56ad68f1eec5e7a3b9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T20:01:11.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/background-paste-focus-owner",
+        "head_sha": "c7d902380bf3b884e6c2d56ad68f1eec5e7a3b9c",
         "cluster_id": null,
         "job_path": null
       }
