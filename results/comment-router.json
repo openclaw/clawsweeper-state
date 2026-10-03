@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T10:50:14.228Z",
+  "updated_at": "2026-10-03T10:51:37.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131604:5961280086:2026-10-02T20:51:23Z:re_review",
-      "comment_id": "5961280086",
-      "comment_version_key": "5961280086:2026-10-02T20:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131604#issuecomment-5961280086",
-      "comment_created_at": "2026-10-02T20:51:23Z",
-      "comment_updated_at": "2026-10-02T20:51:23Z",
-      "comment_body_sha256": "be4348ce0b0b2b8b7984dc8236c1d6f04225e8dfbd6f263920ddaf3bb31196fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131604,
-      "author": "michielhdoteth",
-      "author_id": 97935846,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T05:26:06.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-117741-atomic-append",
-        "head_sha": "2b23bda8ea1b99ab8b7f3f2aa69f95454ffc5f43",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131604:5450868297:2026-08-28T09:30:40Z:re_review",
       "comment_id": "5450868297",
@@ -32625,6 +32578,39 @@
         "kind": "pull_request",
         "branch": "codex/frv-local-failure-disposition",
         "head_sha": "de71e1e16cba83bf2305ef57f7ce8e714b730d1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164040:5965648212:2026-10-03T10:50:45Z:clawsweeper_needs_human",
+      "comment_id": "5965648212",
+      "comment_version_key": "5965648212:2026-10-03T10:50:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164040#issuecomment-5965648212",
+      "comment_created_at": "2026-10-03T04:46:57Z",
+      "comment_updated_at": "2026-10-03T10:50:45Z",
+      "comment_body_sha256": "614db28b084d1c0f58b766e5df60f078ae1b81fdf327fae10a44cdf99bb5faad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c5ca34e25bd3420aa042fb0d2b5b1581e3859c22)",
+      "expected_head_sha": "c5ca34e25bd3420aa042fb0d2b5b1581e3859c22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T10:51:37.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-explicit-reconnect-tls-review-20261003",
+        "head_sha": "c5ca34e25bd3420aa042fb0d2b5b1581e3859c22",
         "cluster_id": null,
         "job_path": null
       }
