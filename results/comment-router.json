@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:04:46.126Z",
+  "updated_at": "2026-10-03T04:04:57.834Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163838:5962727760:2026-10-02T22:52:55Z:autofix",
-      "comment_id": "5962727760",
-      "comment_version_key": "5962727760:2026-10-02T22:52:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163838#issuecomment-5962727760",
-      "comment_created_at": "2026-10-02T22:52:55Z",
-      "comment_updated_at": "2026-10-02T22:52:55Z",
-      "comment_body_sha256": "73e9a22cb70b40a243b3213d6b314a1bf80b80835d6403ccf5d58884a58e3afe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163838,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T22:53:39.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-mit-license-detection",
-        "head_sha": "dfc953b8071852d47ebd1630ce65efc6869e38ac",
-        "cluster_id": "automerge-openclaw-openclaw-163838",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163838.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-163838.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129612:5418727499:2026-10-02T22:51:29Z:clawsweeper_auto_repair",
       "comment_id": "5418727499",
@@ -32629,6 +32570,39 @@
         "kind": "pull_request",
         "branch": "fix/control-ui-m8-local-waveform-20260923",
         "head_sha": "fb4a15436de00dae96cd8b3f7c14ffe28a6ad668",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163985:5964959089:2026-10-03T04:04:10Z:clawsweeper_needs_human",
+      "comment_id": "5964959089",
+      "comment_version_key": "5964959089:2026-10-03T04:04:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163985#issuecomment-5964959089",
+      "comment_created_at": "2026-10-03T03:12:39Z",
+      "comment_updated_at": "2026-10-03T04:04:10Z",
+      "comment_body_sha256": "74d240a46f8141f48cd876c09a5526b410e7d6fbebeac089cfb18865b50af912",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163985,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fresh installation does not establish that a published updater can upgrade an existing installation to the archive-only package and successfully prepare its worker bundle; that requ... (sha=c324cf68457e4beba0392b973cf9fe1df3b55683)",
+      "expected_head_sha": "c324cf68457e4beba0392b973cf9fe1df3b55683",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T04:04:57.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-package-chunk-budget",
+        "head_sha": "c324cf68457e4beba0392b973cf9fe1df3b55683",
         "cluster_id": null,
         "job_path": null
       }
