@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37090594674",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37090594674",
+  "head_sha": "3b069266298d6cfaf878ff7671be6b2e5a94436c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-03T02:43:35.073Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Verified #532 on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix is viable, but implementation and validation are blocked by the read-only filesystem. No files or GitHub state changed; fix artifact prepared for the executor.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The reported traversal defect remains present and has a focused implementation path. Keep #532 open; merge and closure are prohibited by this job."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new-fix PR on clawsweeper/issue-steipete-oracle-532 without changing #531's separate default-ignore ancestor policy."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked until a writable executor implements the artifact, proves the regression fails before the fix, passes validation, and captures the requested redacted dry-run transcript."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
