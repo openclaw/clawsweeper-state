@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-163939"
-mode: "autonomous"
-run_id: "37087801845"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37087801845"
+mode: "plan"
+run_id: "37091132383"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37091132383"
 head_sha: "3b069266298d6cfaf878ff7671be6b2e5a94436c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-03T02:27:06.920Z"
-canonical: "https://github.com/openclaw/openclaw/issues/163939"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/163939"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-03T02:53:20.459Z"
+canonical: "#163939"
+canonical_issue: "#163939"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37087801845](https://github.com/openclaw/clawsweeper/actions/runs/37087801845)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37091132383](https://github.com/openclaw/clawsweeper/actions/runs/37091132383)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/163939
+Canonical: #163939
 
 ## Summary
 
-Both failure paths were reproduced using in-memory execution of production modules at preflight main ff96d47c3506c50123a555332e6a6cc576b2559f. A narrow fix artifact is ready for the executor. Implementation is blocked by the read-only filesystem; dependencies and native Windows validation are unavailable. No files or GitHub state were changed.
+Plan one narrow Windows diagnostic fix. Source inspection at preflight main ba331730cfe8e268b998d3e4dea58c68d583f837 corroborates both reported failure paths. No code changes, tests, native Windows verification, or GitHub mutations were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Both failure paths were reproduced using in-memory execution of production modul
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #163939 | fix_needed | planned | canonical | Existing diagnostic behavior is broken and has a narrow repair path. Implementation requires a writable executor checkout and the specified validation. |
-| #162254 | keep_closed | skipped | related | Historical environment context only; already closed and unrelated to the diagnostic root cause. |
-| cluster:issue-openclaw-openclaw-163939 | build_fix_artifact | planned | canonical | The fix plan is actionable, but this worker cannot implement or validate a repaired branch under the host restrictions. |
+| #163939 | fix_needed | planned | canonical | A focused existing-behavior repair is appropriate. Establish failing regressions before implementation, retain authentication and lifecycle contracts, and complete native Windows proof before claiming completion. |
+| #162254 | keep_closed | skipped | related | Historical environment context, not a candidate implementation or closure target. |
 
 ## Needs Human
 
