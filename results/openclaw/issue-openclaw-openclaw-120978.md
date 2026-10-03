@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120978"
 mode: "autonomous"
-run_id: "37125881377"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37125881377"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+run_id: "37132154705"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37132154705"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-03T14:30:38.642Z"
+published_at: "2026-10-03T15:50:33.531Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120978"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120978"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37125881377](https://github.com/openclaw/clawsweeper/actions/runs/37125881377)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37132154705](https://github.com/openclaw/clawsweeper/actions/runs/37132154705)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/120978
 
 ## Summary
 
-Source inspection confirms the missing disconnect-to-admission cancellation path at preflight main a596d146f9b71c93a4473c4701bd1de60a70f3ed. A narrow repair artifact is prepared, but implementation and the required failing HTTP regression are blocked by the read-only host and absent node_modules. No code or GitHub state changed.
+The reported cancellation gap remains visible in source at preflight main 6e4b44530228a2240142c84dffdcd74d1ff9bc75. A narrow repair artifact is prepared. Implementation and the required failing HTTP regression are blocked by this host's read-only filesystem and absent node_modules. No code or GitHub state changed; no runtime reproduction or validation was completed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Source inspection confirms the missing disconnect-to-admission cancellation path
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120978 | fix_needed | planned | canonical | Keep the issue open as the canonical bug. Require a failing regression through the real HTTP/request/admission boundary before production edits. |
-| #120979 | keep_closed | skipped | related | Historical contributor evidence only. Leave closed and credit @litang9 in the new issue implementation. |
-| #164206 | keep_related | planned | related | Distinct failure-notice work. Leave open and preserve its behavior if it lands before implementation. |
-| cluster:issue-openclaw-openclaw-120978 | build_fix_artifact | planned | canonical | Prepare a narrow new_fix_pr artifact as explicitly required by the issue implementation job. Implementation remains conditional on a failing current-main regression. |
-| cluster:issue-openclaw-openclaw-120978 | open_fix_pr | blocked | canonical | The canonical fix path cannot become a validated PR on this host. The executor needs a writable isolated checkout with dependencies, must reproduce before editing, coordinate with the named assignee obviyus, and reuse clawsweeper/issue-openclaw-openclaw-120978 when present. |
+| #120978 | fix_needed | planned | canonical | The canonical bug has no viable implementation PR in the hydrated inventory. Preserve the issue and hand the narrow repair to a writable executor; require reproduction before production edits. |
+| #120979 | keep_closed | skipped | related | Retain as historical implementation and proof context, preserving litang9's credit. Its unmerged closure does not resolve the issue. |
+| #164206 | keep_related | planned | related | Keep this useful adjacent fix open. Merge and closure are outside this job's authority. |
+| cluster:issue-openclaw-openclaw-120978 | build_fix_artifact | planned |  | Return an executable preparation plan for the deterministic executor without claiming a patch or validated PR exists. |
 
 ## Needs Human
 
