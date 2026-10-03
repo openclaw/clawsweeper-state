@@ -1,0 +1,86 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-535",
+  "mode": "autonomous",
+  "run_id": "37122380402",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37122380402",
+  "head_sha": "15a53b4f065fd96d4ceeff86cc47384c9902e153",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-535.md",
+  "published_at": "2026-10-03T12:21:01.666Z",
+  "canonical": "https://github.com/steipete/oracle/issues/535",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/535",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan for #535 against preflight main. Implementation and validation are blocked by the read-only filesystem: pnpm fails with EROFS before starting. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#535",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "The reported integration gap remains present on preflight main and has a narrow repair path. Keep the issue open while the executor implements and validates the fix."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this focused fix without a product decision. Do not open a PR until the affected-version regression and required validation are complete."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation_script_missing: required pnpm check:changed is unavailable in target checkout",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#535",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
