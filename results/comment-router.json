@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:33:47.746Z",
+  "updated_at": "2026-10-03T04:33:52.576Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-atif:16:5922385927:2026-10-02T23:25:56Z:clawsweeper_auto_repair",
-      "comment_id": "5922385927",
-      "comment_version_key": "5922385927:2026-10-02T23:25:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw-atif/pull/16#issuecomment-5922385927",
-      "comment_created_at": "2026-10-01T00:42:22Z",
-      "comment_updated_at": "2026-10-02T23:25:56Z",
-      "comment_body_sha256": "7298d55d866e73bb312380ccadbb29279dd5cfd3a85266d6090bd4422286ac3b",
-      "repo": "openclaw/openclaw-atif",
-      "issue_number": 16,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94)",
-      "expected_head_sha": "39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-10-02T23:27:18.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/staging-root-realpath",
-        "head_sha": "39e4bbb4bfacc50a731b511e3e46fe0bd5a2be94",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:37:5923604753:2026-10-02T23:26:25Z:clawsweeper_needs_human",
       "comment_id": "5923604753",
@@ -32458,6 +32425,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162917:5965555584:2026-10-03T04:32:52Z:re_review",
+      "comment_id": "5965555584",
+      "comment_version_key": "5965555584:2026-10-03T04:32:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162917#issuecomment-5965555584",
+      "comment_created_at": "2026-10-03T04:32:52Z",
+      "comment_updated_at": "2026-10-03T04:32:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162917,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-03T04:33:51.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-anthropic-sdk-0.128.0",
+        "head_sha": "315cb310e42f2674eb018d8b6129974160ce0f5f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
