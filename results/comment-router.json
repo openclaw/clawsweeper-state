@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T11:49:28.261Z",
+  "updated_at": "2026-10-03T11:49:54.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146132:5966240230:2026-10-03T06:10:42Z:re_review",
-      "comment_id": "5966240230",
-      "comment_version_key": "5966240230:2026-10-03T06:10:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146132#issuecomment-5966240230",
-      "comment_created_at": "2026-10-03T06:10:42Z",
-      "comment_updated_at": "2026-10-03T06:10:42Z",
-      "comment_body_sha256": "a12fa696f2a0835f621010cc8d63ee5c59d2ebb82ed1829b3600d74d5497248d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146132,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T06:11:43.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-client-fetch-cancel-nofollow",
-        "head_sha": "1e7d7983f56ae218b56958c8ad83f447a25ea9e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163792:5961752359:2026-10-03T06:10:57Z:clawsweeper_needs_human",
       "comment_id": "5961752359",
@@ -32759,6 +32712,39 @@
         "kind": "pull_request",
         "branch": "steipete/cs-setup-retry-20261003",
         "head_sha": "748d1b334e41ba65a0251d003378b76c528b6df6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163835:5962791141:2026-10-03T11:48:58Z:clawsweeper_needs_human",
+      "comment_id": "5962791141",
+      "comment_version_key": "5962791141:2026-10-03T11:48:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163835#issuecomment-5962791141",
+      "comment_created_at": "2026-10-02T22:59:06Z",
+      "comment_updated_at": "2026-10-03T11:48:58Z",
+      "comment_body_sha256": "da91fc241847ed5e0a8fd4fae3c54dd4956f37273bc50a8ba1d971227cab4453",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: ACP source admission, settlement, and recovery have real SQLite and public Gateway regression coverage, but external execution is mocked and re... (sha=6c0bdc74ce2fe34152f91204b119308b3782e540)",
+      "expected_head_sha": "6c0bdc74ce2fe34152f91204b119308b3782e540",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T11:49:54.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-source-restart-recovery",
+        "head_sha": "025ad2b9f87bc8cdf1a3b7198bbb5378ed1491d0",
         "cluster_id": null,
         "job_path": null
       }
