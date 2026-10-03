@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:28:23.562Z",
+  "updated_at": "2026-10-03T04:29:30.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162917:5962939725:2026-10-02T23:14:13Z:re_review",
-      "comment_id": "5962939725",
-      "comment_version_key": "5962939725:2026-10-02T23:14:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162917#issuecomment-5962939725",
-      "comment_created_at": "2026-10-02T23:14:13Z",
-      "comment_updated_at": "2026-10-02T23:14:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162917,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-02T23:15:31.077Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-anthropic-sdk-0.128.0",
-        "head_sha": "5b76ddbfe544be8430ebd7a726de586daec1f335",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:163849",
       "comment_id": "repair-loop-label-sweep:autofix:163849",
@@ -32548,6 +32501,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-lifecycle-mutation-stalls-20260919",
         "head_sha": "3140fb81730f4bd5c7ea47bb4c9b369a0d6bdf30",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163535:5952994764:2026-10-03T04:28:39Z:clawsweeper_needs_human",
+      "comment_id": "5952994764",
+      "comment_version_key": "5952994764:2026-10-03T04:28:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163535#issuecomment-5952994764",
+      "comment_created_at": "2026-10-02T13:03:58Z",
+      "comment_updated_at": "2026-10-03T04:28:39Z",
+      "comment_body_sha256": "1a8250065c6253c5f9d9b81ad7770c032a7c013570a8a524be2cc80963e85539",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legacy-only private-server setups lose runtime access until Doctor repair completes. Supported Nextcloud Talk/Tlon upgrades have not yet demonstrated migration through the genuine pub... (sha=70f1331526d26f307a80bd6fd7a796b87721a170)",
+      "expected_head_sha": "70f1331526d26f307a80bd6fd7a796b87721a170",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T04:29:30.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-config-channel-network",
+        "head_sha": "70f1331526d26f307a80bd6fd7a796b87721a170",
         "cluster_id": null,
         "job_path": null
       }
