@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-03T23:21:12.443Z",
+  "updated_at": "2026-10-03T23:21:18.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164413:5971370380:2026-10-03T17:03:07Z:re_review",
-      "comment_id": "5971370380",
-      "comment_version_key": "5971370380:2026-10-03T17:03:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164413#issuecomment-5971370380",
-      "comment_created_at": "2026-10-03T17:03:07Z",
-      "comment_updated_at": "2026-10-03T17:03:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164413,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T17:04:08.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/reclass6",
-        "head_sha": "51d6c8f144444d35e2ce7d1a81b708e39d2b1fe9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164296:5969266006:2026-10-03T17:03:38Z:clawsweeper_needs_human",
       "comment_id": "5969266006",
@@ -33242,6 +33195,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3870:5919821431:2026-10-03T23:20:28Z:clawsweeper_needs_human",
+      "comment_id": "5919821431",
+      "comment_version_key": "5919821431:2026-10-03T23:20:28Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3870#issuecomment-5919821431",
+      "comment_created_at": "2026-09-30T21:12:29Z",
+      "comment_updated_at": "2026-10-03T23:20:28Z",
+      "comment_body_sha256": "d7ba16ffbd4ad6f8783f2788f6f75c188017411498ece1e06ea5408a1d4656d1",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the config test fixture; production config.ts is unchanged. Reported Windows Vitest results directly support the fixture r... (sha=451696df88d29e73d8c1365bfd71dbbddabc8e6d)",
+      "expected_head_sha": "451696df88d29e73d8c1365bfd71dbbddabc8e6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-03T23:21:18.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-mode-windows-test",
+        "head_sha": "451696df88d29e73d8c1365bfd71dbbddabc8e6d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
