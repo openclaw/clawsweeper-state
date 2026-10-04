@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T18:11:25.101Z",
+  "updated_at": "2026-10-04T18:12:20.856Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164744:5979470306:2026-10-04T11:30:12Z:re_review",
-      "comment_id": "5979470306",
-      "comment_version_key": "5979470306:2026-10-04T11:30:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164744#issuecomment-5979470306",
-      "comment_created_at": "2026-10-04T11:30:12Z",
-      "comment_updated_at": "2026-10-04T11:30:12Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164744,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T11:31:19.720Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/placementreads",
-        "head_sha": "fd262173a432b056aee129561ad2dd1bfc12370a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161410:5900169039:2026-10-04T11:30:22Z:clawsweeper_needs_human",
       "comment_id": "5900169039",
@@ -33348,6 +33301,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164949:5981069696:2026-10-04T18:11:20Z:clawsweeper_needs_human",
+      "comment_id": "5981069696",
+      "comment_version_key": "5981069696:2026-10-04T18:11:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164949#issuecomment-5981069696",
+      "comment_created_at": "2026-10-04T14:30:21Z",
+      "comment_updated_at": "2026-10-04T18:11:20Z",
+      "comment_body_sha256": "69879d9d585bb1950ec94f58b7f5cdb7b58dceea8a0ce1fb0ab95f39bfed5187",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed receipt owner, agents_wait completion handler, silence classifier, and cron finalizer have supplemental regression coverage, but th... (sha=d8256cf01549910017500e237e11d2cfd02f94fd)",
+      "expected_head_sha": "d8256cf01549910017500e237e11d2cfd02f94fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T18:12:20.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/optional-silence-settled-collector",
+        "head_sha": "d8256cf01549910017500e237e11d2cfd02f94fd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
