@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T14:07:16.091Z",
+  "updated_at": "2026-10-04T14:08:35.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164774:5977413668:2026-10-04T06:43:43Z:re_review",
-      "comment_id": "5977413668",
-      "comment_version_key": "5977413668:2026-10-04T06:43:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164774#issuecomment-5977413668",
-      "comment_created_at": "2026-10-04T06:43:43Z",
-      "comment_updated_at": "2026-10-04T06:43:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164774,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T06:44:41.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dropped-final-answer",
-        "head_sha": "0a11a7762d14a4256f851af4e1167b71769900e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164788:5976894703:2026-10-04T06:44:06Z:clawsweeper_needs_human",
       "comment_id": "5976894703",
@@ -33735,6 +33688,39 @@
         "kind": "pull_request",
         "branch": "fix/rewritemodelrefs-stack-safe-153674",
         "head_sha": "5f523c61f5402b081cde009bc2edf5a2144c8979",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159428:5852806666:2026-10-04T14:07:40Z:clawsweeper_needs_human",
+      "comment_id": "5852806666",
+      "comment_version_key": "5852806666:2026-10-04T14:07:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159428#issuecomment-5852806666",
+      "comment_created_at": "2026-09-27T05:00:55Z",
+      "comment_updated_at": "2026-10-04T14:07:40Z",
+      "comment_body_sha256": "47b59f822dffa70220b483919cbd061b084dcbba7372df1de25c3df77e44fa03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The resize owner is exercised by Chromium tests using mocked Gateway history and media, including forced older-Safari detection. These results... (sha=a165a8c00ad43334efb522f748cdb388e8b25b60)",
+      "expected_head_sha": "a165a8c00ad43334efb522f748cdb388e8b25b60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T14:08:35.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-scrollback-anchor",
+        "head_sha": "a165a8c00ad43334efb522f748cdb388e8b25b60",
         "cluster_id": null,
         "job_path": null
       }
