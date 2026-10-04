@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T20:15:38.832Z",
+  "updated_at": "2026-10-04T20:16:16.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164850:5980166293:2026-10-04T12:56:33Z:re_review",
-      "comment_id": "5980166293",
-      "comment_version_key": "5980166293:2026-10-04T12:56:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164850#issuecomment-5980166293",
-      "comment_created_at": "2026-10-04T12:56:33Z",
-      "comment_updated_at": "2026-10-04T12:56:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164850,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T12:57:27.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/policy-watch-interval-overflow",
-        "head_sha": "29ccf88b4ba0e54fce0be0f78018c8b80f89a80d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164909:5980183222:2026-10-04T12:58:23Z:clawsweeper_needs_human",
       "comment_id": "5980183222",
@@ -33535,6 +33488,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165054:5983375992:2026-10-04T20:15:18Z:clawsweeper_needs_human",
+      "comment_id": "5983375992",
+      "comment_version_key": "5983375992:2026-10-04T20:15:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165054#issuecomment-5983375992",
+      "comment_created_at": "2026-10-04T19:06:27Z",
+      "comment_updated_at": "2026-10-04T20:15:18Z",
+      "comment_body_sha256": "e63c9c20cd362cb975bc7e6066b4327776652f08d1c50398425a3773d348e9bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the body reports a live before/after improvement, but does not show a real non-core plugin using the e...; Review finding: [P2] Carry invocation authority into SQLite write admission — extensions/memory-core/src/short-term-promotion-record.ts:394-396 - [P2] Restore SDK budgets until ow... (sha=0782b83ce0ce5b87209131f82fce23a5aa243b79)",
+      "expected_head_sha": "0782b83ce0ce5b87209131f82fce23a5aa243b79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T20:16:16.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-interactive-recall",
+        "head_sha": "0782b83ce0ce5b87209131f82fce23a5aa243b79",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
