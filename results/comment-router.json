@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T18:25:21.417Z",
+  "updated_at": "2026-10-04T18:25:58.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136274:5979541997:2026-10-04T11:39:24Z:re_review",
-      "comment_id": "5979541997",
-      "comment_version_key": "5979541997:2026-10-04T11:39:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5979541997",
-      "comment_created_at": "2026-10-04T11:39:24Z",
-      "comment_updated_at": "2026-10-04T11:39:24Z",
-      "comment_body_sha256": "bba8401300765b260c38f4af1d3088cb5a1a00a80f6a675d05a82836d37a0a8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136274,
-      "author": "a-tokyo",
-      "author_id": 12428415,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T11:40:28.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/per-team-sharepoint-upload",
-        "head_sha": "4a2af9c901cec0d04430b9a864ae963e18346965",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146847:5814757186:2026-09-24T13:09:55Z:re_review",
       "comment_id": "5814757186",
@@ -33466,6 +33419,39 @@
       "status": "skipped",
       "processed_at": "2026-10-04T18:25:21.417Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165021:5982558722:2026-10-04T18:25:04Z:clawsweeper_needs_human",
+      "comment_id": "5982558722",
+      "comment_version_key": "5982558722:2026-10-04T18:25:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165021#issuecomment-5982558722",
+      "comment_created_at": "2026-10-04T17:26:24Z",
+      "comment_updated_at": "2026-10-04T18:25:04Z",
+      "comment_body_sha256": "a076734431408a33c9aa638dfdf2e0613580c9d5d7c527bebd03fdb2c058b58e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165021,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new loader-to-HTTP regression uses mocked requests, responses, and dispatch callbacks. Provide production-p...; Review finding: [P1] Reject outbound sends with unresolved authored credentials — extensions/a2a/src/accounts.ts:33-36 - [medium] Failed outbound credentials permit anonymous I/O... (sha=8b898074438186a1c37a939dd3bc3ac14e5de727)",
+      "expected_head_sha": "8b898074438186a1c37a939dd3bc3ac14e5de727",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T18:25:58.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1095",
+        "head_sha": "8b898074438186a1c37a939dd3bc3ac14e5de727",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
