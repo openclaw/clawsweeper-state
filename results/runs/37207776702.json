@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164937",
+  "mode": "autonomous",
+  "run_id": "37207776702",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37207776702",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164937.md",
+  "published_at": "2026-10-04T14:33:16.162Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164937",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164937",
+  "canonical_pr": null,
+  "summary": "The reported launcher-identity defect remains source-supported on preflight main 1e49231d063bad36e4b6b187727d957fbfc7fdfb. Implementation and runtime reproduction are blocked by read-only filesystem access and missing repository dependencies. A narrow executor fix artifact is prepared; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#164937",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164937",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is supported. Execute only after reproducing through the actual wrapper resolver on the executor's current main; this host cannot create fixtures, install dependencies, or edit code."
+    },
+    {
+      "target": "#125305",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no reopening or closure action is needed."
+    },
+    {
+      "target": "#125896",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged contributor work as historical context; it does not fix the current issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164937",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164937",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation and PR readiness are blocked locally by read-only access and missing dependencies; the executor must reproduce, repair, validate, and review before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
