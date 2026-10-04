@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T16:39:39.676Z",
+  "updated_at": "2026-10-04T16:39:46.625Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164685:5978873815:2026-10-04T10:09:25Z:re_review",
-      "comment_id": "5978873815",
-      "comment_version_key": "5978873815:2026-10-04T10:09:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164685#issuecomment-5978873815",
-      "comment_created_at": "2026-10-04T10:09:25Z",
-      "comment_updated_at": "2026-10-04T10:09:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164685,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:10:31.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/wtlookup",
-        "head_sha": "bf604ea2b8c671023dad4646a8a338fe32afc0bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161609:5904224182:2026-10-04T10:09:58Z:clawsweeper_needs_human",
       "comment_id": "5904224182",
@@ -33368,6 +33321,39 @@
         "kind": "pull_request",
         "branch": "fix/frv-upgrade-scenario-test-expectations",
         "head_sha": "915cefb463aeb74fe9dda006e046a4f762ff0450",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164949:5981069696:2026-10-04T16:38:53Z:clawsweeper_needs_human",
+      "comment_id": "5981069696",
+      "comment_version_key": "5981069696:2026-10-04T16:38:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164949#issuecomment-5981069696",
+      "comment_created_at": "2026-10-04T14:30:21Z",
+      "comment_updated_at": "2026-10-04T16:38:53Z",
+      "comment_body_sha256": "8605b0756f1b56d25ad86201e5ccb878f75536ffbe90e6f63b027c8b1bfbac2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Receipt accounting, optional-silence classification, and cron finalization have reported regression-test coverage, but the contributor explicit... (sha=1b4043ba7ca3fcc9183399cc3c25ae075de39dee)",
+      "expected_head_sha": "1b4043ba7ca3fcc9183399cc3c25ae075de39dee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T16:39:46.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/optional-silence-settled-collector",
+        "head_sha": "1b4043ba7ca3fcc9183399cc3c25ae075de39dee",
         "cluster_id": null,
         "job_path": null
       }
