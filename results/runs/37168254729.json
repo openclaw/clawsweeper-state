@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1144",
+  "mode": "autonomous",
+  "run_id": "37168254729",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37168254729",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1144.md",
+  "published_at": "2026-10-04T01:35:04.273Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1144",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1144",
+  "canonical_pr": null,
+  "summary": "No code changed or PR prepared. Inspection matches preflight main, but #1144's affected renderer and current reproduction remain unconfirmed. Native block-selection boundaries do not establish the reported WebView2 cursor-tracking failure. Implementation is also blocked by the read-only Linux environment and failed validation prerequisites.",
+  "actions": [
+    {
+      "target": "#1144",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "Retain the canonical report. The job requires stopping without a PR when the implementation is underspecified or unsafe to automate. No verified narrow repair currently connects the reported interaction to an owned code path; a speculative renderer rewrite would not satisfy that requirement."
+    },
+    {
+      "target": "#1550",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "Related selection friction, but a shared root cause is unproven. Keep open and preserve its separate product-decision scope."
+    },
+    {
+      "target": "#883",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "Historical rendering evidence only. Do not reopen, close again, or claim coverage of #1144."
+    },
+    {
+      "target": "#997",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "Preserve the merged contribution as historical context. It is neither an open repair branch nor a verified fix for the current report."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1144",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
