@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-04T12:18:29.773Z",
+  "updated_at": "2026-10-04T12:19:13.150Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161344:5918533113:2026-09-30T19:51:26Z:re_review",
-      "comment_id": "5918533113",
-      "comment_version_key": "5918533113:2026-09-30T19:51:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5918533113",
-      "comment_created_at": "2026-09-30T19:51:26Z",
-      "comment_updated_at": "2026-09-30T19:51:26Z",
-      "comment_body_sha256": "ff03aeae87e605cbca7730718c148b42aa6b2295b514e77624fd0ca0ba0d3ba9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161344,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T04:49:20.306Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164767:5976692523:2026-10-04T04:48:38Z:clawsweeper_auto_repair",
       "comment_id": "5976692523",
@@ -34132,6 +34105,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164891:5979839210:2026-10-04T12:18:17Z:re_review",
+      "comment_id": "5979839210",
+      "comment_version_key": "5979839210:2026-10-04T12:18:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164891#issuecomment-5979839210",
+      "comment_created_at": "2026-10-04T12:18:17Z",
+      "comment_updated_at": "2026-10-04T12:18:17Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164891,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T12:19:11.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/compound3",
+        "head_sha": "edbdc8b0fbc4806ee6bc874bdc5b37cf77ff4f87",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
