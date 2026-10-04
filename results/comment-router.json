@@ -2,53 +2,6 @@
   "updated_at": "2026-10-04T15:08:09.736Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:164805:5977896763:2026-10-04T07:57:35Z:re_review",
-      "comment_id": "5977896763",
-      "comment_version_key": "5977896763:2026-10-04T07:57:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164805#issuecomment-5977896763",
-      "comment_created_at": "2026-10-04T07:57:35Z",
-      "comment_updated_at": "2026-10-04T07:57:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164805,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T07:58:30.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/cron1",
-        "head_sha": "2c39da9600191c6faf295ca42d797fe6ea29ed5d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158051:5830582035:2026-10-04T07:57:57Z:clawsweeper_needs_human",
       "comment_id": "5830582035",
       "comment_version_key": "5830582035:2026-10-04T07:57:57Z",
@@ -33787,6 +33740,39 @@
         "kind": "pull_request",
         "branch": "tcr/land-d205-1791125415",
         "head_sha": "bff07b46f8e0fa132f9f6b461d27946ff096e3ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140995:5567372642:2026-10-04T15:07:08Z:clawsweeper_needs_human",
+      "comment_id": "5567372642",
+      "comment_version_key": "5567372642:2026-10-04T15:07:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140995#issuecomment-5567372642",
+      "comment_created_at": "2026-09-07T08:02:37Z",
+      "comment_updated_at": "2026-10-04T15:07:08Z",
+      "comment_body_sha256": "4fe4ecd95fb0c02ce030a0e886a8a512be49ca7e070ecc647dad378ab03b1a67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing result consumers can receive changed or absent top-level size and quality when returned metadata exists, while metadata-free results retain request-derived values; the canoni... (sha=0fc7c4a23879ad7f5dc0b91e60b3197a00a37c72)",
+      "expected_head_sha": "0fc7c4a23879ad7f5dc0b91e60b3197a00a37c72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T15:08:09.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-image-applied-settings-140295",
+        "head_sha": "0fc7c4a23879ad7f5dc0b91e60b3197a00a37c72",
         "cluster_id": null,
         "job_path": null
       }
