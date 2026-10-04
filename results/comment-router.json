@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T08:05:13.000Z",
+  "updated_at": "2026-10-04T08:05:29.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161344:5975451228:2026-10-04T01:37:16Z:re_review",
-      "comment_id": "5975451228",
-      "comment_version_key": "5975451228:2026-10-04T01:37:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5975451228",
-      "comment_created_at": "2026-10-04T01:37:16Z",
-      "comment_updated_at": "2026-10-04T01:37:16Z",
-      "comment_body_sha256": "c6a8b221b950c059320aed4823a3fbabf683c706ea206155667f7cdc48b7a1bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161344,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T01:38:01.860Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lobster-llm-adapter-current",
-        "head_sha": "134946619f2c3ff75affd20ff88c11aff7a91ac9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164669:5975450366:2026-10-04T01:37:08Z:clawsweeper_needs_human",
       "comment_id": "5975450366",
@@ -33289,6 +33242,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-workshop-clarify-repair-authorization",
         "head_sha": "fcd482c53e80753ea1a2ea62f437dfd3e50ec748",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164758:5976555531:2026-10-04T08:04:34Z:clawsweeper_needs_human",
+      "comment_id": "5976555531",
+      "comment_version_key": "5976555531:2026-10-04T08:04:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164758#issuecomment-5976555531",
+      "comment_created_at": "2026-10-04T04:25:47Z",
+      "comment_updated_at": "2026-10-04T08:04:34Z",
+      "comment_body_sha256": "2e8498e0508d60b5245029f6aea8067e963265205b8af34b757e0119079ee6d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164758,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the hash-matched full body preserves positive real create/removal-owner evidence from Linux fleets of...; Review finding: [P1] Require deletion authority before creation evicts global victims — src/agents/worktrees/service.ts:594-598 - [P1] Protect session admissions before capacity e... (sha=16722076ced1bc83000a9066f8136f6d85209df3)",
+      "expected_head_sha": "16722076ced1bc83000a9066f8136f6d85209df3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T08:05:29.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-worktree-gc-background-and-cap-20260919",
+        "head_sha": "16722076ced1bc83000a9066f8136f6d85209df3",
         "cluster_id": null,
         "job_path": null
       }
