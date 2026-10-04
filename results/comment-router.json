@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T15:52:32.780Z",
+  "updated_at": "2026-10-04T15:52:59.008Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164841:5978283792:2026-10-04T09:30:34Z:clawsweeper_needs_human",
-      "comment_id": "5978283792",
-      "comment_version_key": "5978283792:2026-10-04T09:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164841#issuecomment-5978283792",
-      "comment_created_at": "2026-10-04T08:53:57Z",
-      "comment_updated_at": "2026-10-04T09:30:34Z",
-      "comment_body_sha256": "a23d0bc19e7488727f5f8f3c210ff1b7cef01d96088d425ad5dad05fd72392b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164841,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed local-audio producer is exercised through runCapability, discovery, and CLI template expansion, but runExec is mocked and transcrip... (sha=93c2988392297dda20a4c174500a9fa878b34fb0)",
-      "expected_head_sha": "93c2988392297dda20a4c174500a9fa878b34fb0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T09:31:58.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whisper-language-164840",
-        "head_sha": "93c2988392297dda20a4c174500a9fa878b34fb0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164848:5978546976:2026-10-04T09:32:21Z:clawsweeper_needs_human",
       "comment_id": "5978546976",
@@ -33371,6 +33338,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164864:5981794894:2026-10-04T15:52:02Z:re_review",
+      "comment_id": "5981794894",
+      "comment_version_key": "5981794894:2026-10-04T15:52:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164864#issuecomment-5981794894",
+      "comment_created_at": "2026-10-04T15:52:02Z",
+      "comment_updated_at": "2026-10-04T15:52:02Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164864,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T15:52:57.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/cron3",
+        "head_sha": "1a3bc505adc9ae8ec3e89dd689d1a99e7ec03978",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
