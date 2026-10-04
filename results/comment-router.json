@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T13:15:29.699Z",
+  "updated_at": "2026-10-04T13:15:52.931Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164774:5976867363:2026-10-04T05:17:30Z:re_review",
-      "comment_id": "5976867363",
-      "comment_version_key": "5976867363:2026-10-04T05:17:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164774#issuecomment-5976867363",
-      "comment_created_at": "2026-10-04T05:17:30Z",
-      "comment_updated_at": "2026-10-04T05:17:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164774,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T05:18:30.551Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dropped-final-answer",
-        "head_sha": "edfd2be85fc40ee8dfaba4103e8274c763fba95e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164727:5976064165:2026-10-04T05:17:53Z:clawsweeper_needs_human",
       "comment_id": "5976064165",
@@ -34238,6 +34191,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164857:5978844220:2026-10-04T13:14:58Z:clawsweeper_needs_human",
+      "comment_id": "5978844220",
+      "comment_version_key": "5978844220:2026-10-04T13:14:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164857#issuecomment-5978844220",
+      "comment_created_at": "2026-10-04T10:06:23Z",
+      "comment_updated_at": "2026-10-04T13:14:58Z",
+      "comment_body_sha256": "2f67d4bee980a6d0f032a165b97955a2becd12fc1542ff5e36e26fa65f07905b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Android's catalog and membership actions need allowed-action traces and stale-action rejection before final req...; Review finding: [P1] Use a block body for the early return — apps/android/app/src/main/java/ai/openclaw/app/chat/ChatController.kt:1513-1516 - [P1] Bind the membership patch to th... (sha=b708da5f00bc9496b0c1078e5391c6ca95c6ba17)",
+      "expected_head_sha": "b708da5f00bc9496b0c1078e5391c6ca95c6ba17",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T13:15:52.931Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/android-sidebar-session-groups",
+        "head_sha": "b708da5f00bc9496b0c1078e5391c6ca95c6ba17",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
