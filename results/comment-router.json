@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T22:03:15.549Z",
+  "updated_at": "2026-10-04T22:03:47.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162067:5980881529:2026-10-04T14:09:38Z:re_review",
-      "comment_id": "5980881529",
-      "comment_version_key": "5980881529:2026-10-04T14:09:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162067#issuecomment-5980881529",
-      "comment_created_at": "2026-10-04T14:09:38Z",
-      "comment_updated_at": "2026-10-04T14:09:38Z",
-      "comment_body_sha256": "b6160801adb1090edff85d4ad295ac0030b40061edbe24ed2c97f08ae1762576",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162067,
-      "author": "rogeriochaves",
-      "author_id": 792201,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T14:15:29.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-observer-timeout",
-        "head_sha": "a8e209baeef7cae12458ba76644e57c44ba66e18",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1221:5980929039:2026-10-04T14:14:34Z:clawsweeper_needs_human",
       "comment_id": "5980929039",
@@ -33835,6 +33788,39 @@
         "kind": "pull_request",
         "branch": "fix/voice-call-echo-barge-in-guard",
         "head_sha": "13386d29ac56751e0c0bca9ff24fbed58b9b27d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165138:5984883975:2026-10-04T22:02:43Z:clawsweeper_needs_human",
+      "comment_id": "5984883975",
+      "comment_version_key": "5984883975:2026-10-04T22:02:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165138#issuecomment-5984883975",
+      "comment_created_at": "2026-10-04T22:02:43Z",
+      "comment_updated_at": "2026-10-04T22:02:43Z",
+      "comment_body_sha256": "5a857060355870241982188dfbb9c89c634482699db3a40414a6e92da28afcf4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: exercise permitted, unallowlisted, and removed-during-resolution senders through production storage, dispatch,...; Review finding: [P1] [P1] Invalidate stored grants before the final reply handoff — extensions/x/src/send.ts:120-121 - [high] Revoked sender grant survives asynchronous authorizat... (sha=a3ab54912bc8b93edf14992af23181f0c0c970c9)",
+      "expected_head_sha": "a3ab54912bc8b93edf14992af23181f0c0c970c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T22:03:47.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/roboclaw-steering-extension-301aea",
+        "head_sha": "a3ab54912bc8b93edf14992af23181f0c0c970c9",
         "cluster_id": null,
         "job_path": null
       }
