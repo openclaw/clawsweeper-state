@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T09:38:53.152Z",
+  "updated_at": "2026-10-04T09:38:59.062Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4228:5970298674:2026-10-03T14:53:38Z:re_review",
-      "comment_id": "5970298674",
-      "comment_version_key": "5970298674:2026-10-03T14:53:38Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4228#issuecomment-5970298674",
-      "comment_created_at": "2026-10-03T14:53:38Z",
-      "comment_updated_at": "2026-10-03T14:53:38Z",
-      "comment_body_sha256": "6ec8c8e76d6c156351a10dd3165d6c09095341a9e5a6f198b2e8deb881527f12",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4228,
-      "author": "enieuwy",
-      "author_id": 121954036,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T02:23:04.290Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/muse-web-member-email",
-        "head_sha": "05bd2a44fd2f4eac0c7066ed27525ea0aa11ea05",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4228:5970059161:2026-10-04T02:22:11Z:clawsweeper_needs_human",
       "comment_id": "5970059161",
@@ -33939,6 +33892,39 @@
         "kind": "pull_request",
         "branch": "chore/autoreview-scanner-free-20261002",
         "head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-10-04T09:37:57Z:clawsweeper_needs_human",
+      "comment_id": "5466178577",
+      "comment_version_key": "5466178577:2026-10-04T09:37:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
+      "comment_created_at": "2026-08-30T02:13:24Z",
+      "comment_updated_at": "2026-10-04T09:37:57Z",
+      "comment_body_sha256": "52567e62cff7a9fba64e1cb451ee06c3a8d793f164d7f825bb465583fa9eb6b6",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Node ZIP and artifact downloads that progress for longer than 15 seconds will abort and restart, potentially exhausting retries; the total-transfer cutoff needs explicit main... (sha=ed720cb0cba59b02b770d4ca1d51834bf6e4dabd)",
+      "expected_head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T09:38:59.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-fetch-body-timeout",
+        "head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
         "cluster_id": null,
         "job_path": null
       }
