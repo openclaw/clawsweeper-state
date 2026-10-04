@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T17:14:31.106Z",
+  "updated_at": "2026-10-04T17:14:39.916Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142902:5597494666:2026-10-04T10:41:38Z:clawsweeper_needs_human",
-      "comment_id": "5597494666",
-      "comment_version_key": "5597494666:2026-10-04T10:41:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142902#issuecomment-5597494666",
-      "comment_created_at": "2026-09-09T06:53:47Z",
-      "comment_updated_at": "2026-10-04T10:41:38Z",
-      "comment_body_sha256": "ef065a62cb921a28a64b5c5c23412e148b5a5c47c43c931ccdfeef39329a42d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142902,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One provider-rejected object can now suppress up to four otherwise valid messages sharing its request, including text or controls; maintainers must accept that loss or select a recove... (sha=2abcd6436551fc72e3160881564760608445dd78)",
-      "expected_head_sha": "2abcd6436551fc72e3160881564760608445dd78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T10:42:40.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-outbound-push-batching",
-        "head_sha": "2abcd6436551fc72e3160881564760608445dd78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1212:5979125968:2026-10-04T10:43:07Z:clawsweeper_needs_human",
       "comment_id": "5979125968",
@@ -33373,6 +33340,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164962:5982454366:2026-10-04T17:13:42Z:re_review",
+      "comment_id": "5982454366",
+      "comment_version_key": "5982454366:2026-10-04T17:13:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164962#issuecomment-5982454366",
+      "comment_created_at": "2026-10-04T17:13:42Z",
+      "comment_updated_at": "2026-10-04T17:13:42Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164962,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T17:14:38.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/shutdownadmit",
+        "head_sha": "be4add9a87fb15a2bad0950d14352e65a9752dd3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
