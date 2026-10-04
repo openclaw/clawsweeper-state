@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-04T12:55:11.934Z",
+  "updated_at": "2026-10-04T12:56:09.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158966:5976848806:2026-10-04T05:14:25Z:re_review",
-      "comment_id": "5976848806",
-      "comment_version_key": "5976848806:2026-10-04T05:14:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/158966#issuecomment-5976848806",
-      "comment_created_at": "2026-10-04T05:14:25Z",
-      "comment_updated_at": "2026-10-04T05:14:25Z",
-      "comment_body_sha256": "10b4c3d73d7c72918f76b5b149aa277d65c8d6a221632646a16678f9e26290c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158966,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-run",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T05:15:17.955Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164776:5976811362:2026-10-04T05:14:24Z:clawsweeper_needs_human",
       "comment_id": "5976811362",
@@ -34135,6 +34090,39 @@
         "kind": "pull_request",
         "branch": "dbasync/incogp7b",
         "head_sha": "454a76b86ddec3a8f669620b463ecae511d43231",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163592:5955307760:2026-10-04T12:55:01Z:clawsweeper_needs_human",
+      "comment_id": "5955307760",
+      "comment_version_key": "5955307760:2026-10-04T12:55:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163592#issuecomment-5955307760",
+      "comment_created_at": "2026-10-02T15:08:11Z",
+      "comment_updated_at": "2026-10-04T12:55:01Z",
+      "comment_body_sha256": "d84a764cb17fee0ab3577b7bbf02d7a9d95bd20c7635b75135f11715500c3009",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163592,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with historical checkpoints now require successful Doctor conversion before runtime admission. Current-candidate packaged upgrade evidence remains pending for h... (sha=e818d504d7beeaf3372dd2f0236586d89a650cd6)",
+      "expected_head_sha": "e818d504d7beeaf3372dd2f0236586d89a650cd6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T12:56:09.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/lg-config-compaction-state",
+        "head_sha": "e818d504d7beeaf3372dd2f0236586d89a650cd6",
         "cluster_id": null,
         "job_path": null
       }
