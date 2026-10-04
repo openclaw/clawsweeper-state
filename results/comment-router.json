@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T15:58:40.622Z",
+  "updated_at": "2026-10-04T15:59:10.613Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3579:5515247828:2026-10-04T09:37:51Z:clawsweeper_auto_repair",
-      "comment_id": "5515247828",
-      "comment_version_key": "5515247828:2026-10-04T09:37:51Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3579#issuecomment-5515247828",
-      "comment_created_at": "2026-09-02T19:35:45Z",
-      "comment_updated_at": "2026-10-04T09:37:51Z",
-      "comment_body_sha256": "3ded02cca69e3cda7c24ea2c22430f3d4f3f19bb861c59ec05e537dff6ffecc6",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3579,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad060dd43844c774a20bab8d970e5aa2749b3d69)",
-      "expected_head_sha": "ad060dd43844c774a20bab8d970e5aa2749b3d69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T09:39:05.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hermit-content-rights-timeout",
-        "head_sha": "ad060dd43844c774a20bab8d970e5aa2749b3d69",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-10-04T09:38:43Z:clawsweeper_needs_human",
       "comment_id": "5415957601",
@@ -33373,6 +33340,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164988:5981844522:2026-10-04T15:58:17Z:re_review",
+      "comment_id": "5981844522",
+      "comment_version_key": "5981844522:2026-10-04T15:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164988#issuecomment-5981844522",
+      "comment_created_at": "2026-10-04T15:58:17Z",
+      "comment_updated_at": "2026-10-04T15:58:17Z",
+      "comment_body_sha256": "5249d5971f2a4718b2da6ce00ee7871302a9236f23156c63824724eec483f0a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164988,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T15:59:09.587Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/disconnected-title-on-new-tabs-during-loading",
+        "head_sha": "24d5a395774804a0d3411524560445cb89478411",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
