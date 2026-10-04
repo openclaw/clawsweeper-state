@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164790",
+  "mode": "autonomous",
+  "run_id": "37180184187",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37180184187",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164790.md",
+  "published_at": "2026-10-04T05:44:08.452Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164790",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164790",
+  "canonical_pr": null,
+  "summary": "The stale fourth boolean remains on pinned main 877f0c1108b8c5546b89c77e74ec64eea388ae39. Canonical reproduction stopped before compilation because dependencies are absent. The read-only host prevents installation and editing; a narrow executor fix artifact is prepared, but no locally validated branch exists.",
+  "actions": [
+    {
+      "target": "#164790",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164790",
+      "candidate_fix": null,
+      "reason": "The one-line fixture migration is source-supported. Implementation is blocked on a writable executor checkout with locked dependencies and successful pre-edit reproduction."
+    },
+    {
+      "target": "#164368",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164790",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or repair of this PR is planned."
+    },
+    {
+      "target": "#164577",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164790",
+      "candidate_fix": null,
+      "reason": "Keep the current production helper contract; broader historical review findings are outside this fixture repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164790",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164790",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; local implementation and validation are blocked by read-only filesystem access and absent dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
