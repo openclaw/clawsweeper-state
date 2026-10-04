@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-04T22:54:52.027Z",
+  "updated_at": "2026-10-04T22:54:55.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138204:5542394871:2026-09-04T15:04:05Z:re_review",
-      "comment_id": "5542394871",
-      "comment_version_key": "5542394871:2026-09-04T15:04:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138204#issuecomment-5542394871",
-      "comment_created_at": "2026-09-04T15:04:05Z",
-      "comment_updated_at": "2026-09-04T15:04:05Z",
-      "comment_body_sha256": "f0e287d619c06718ecd018cf7317aac62b2979e4bcee0ba076b0d77bd3c2f1f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138204,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T15:28:26.095Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138204:5542816559:2026-09-04T15:33:31Z:re_review",
       "comment_id": "5542816559",
@@ -33359,6 +33332,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1253:5985238431:2026-10-04T22:54:05Z:clawsweeper_needs_human",
+      "comment_id": "5985238431",
+      "comment_version_key": "5985238431:2026-10-04T22:54:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1253#issuecomment-5985238431",
+      "comment_created_at": "2026-10-04T22:40:34Z",
+      "comment_updated_at": "2026-10-04T22:54:05Z",
+      "comment_body_sha256": "f94a7db73b692bd8b6d208f050b28a1a62166be7f0f67a4987b990744c229783",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1253,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head conflicts with current main; the resolved branch must reconcile the new images-runtime-startup-2 lane across the matrix, gate, inventory assertions, and documentation... (sha=c4df4263c0551d56bc2a638eebaaf4630230ad92)",
+      "expected_head_sha": "c4df4263c0551d56bc2a638eebaaf4630230ad92",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T22:54:55.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-select-1",
+        "head_sha": "c4df4263c0551d56bc2a638eebaaf4630230ad92",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
