@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T23:16:45.928Z",
+  "updated_at": "2026-10-04T23:17:29.089Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136274:5508895313:2026-10-04T15:40:24Z:clawsweeper_needs_human",
-      "comment_id": "5508895313",
-      "comment_version_key": "5508895313:2026-10-04T15:40:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5508895313",
-      "comment_created_at": "2026-09-02T11:35:47Z",
-      "comment_updated_at": "2026-10-04T15:40:24Z",
-      "comment_body_sha256": "67c8369f99933790c20c9adc1e40e67f35fb85075820aba692a676f2ee52f4c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136274,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: captured production logs support standard-channel uploads, member access after restart, shared-channel...; Review finding: [medium] Verify revoked handoffs before final authenticated I/O — extensions/msteams/src/team-lookup.ts:18 (sha=fbb5c21d4d8c50672ab7c760e4b4f1b2b680e02d)",
-      "expected_head_sha": "fbb5c21d4d8c50672ab7c760e4b4f1b2b680e02d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T15:41:33.887Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/per-team-sharepoint-upload",
-        "head_sha": "fbb5c21d4d8c50672ab7c760e4b4f1b2b680e02d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163647:5957280177:2026-10-04T15:40:39Z:clawsweeper_needs_human",
       "comment_id": "5957280177",
@@ -33545,6 +33512,53 @@
       "status": "skipped",
       "processed_at": "2026-10-04T23:16:45.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165091:5985504553:2026-10-04T23:16:38Z:re_review",
+      "comment_id": "5985504553",
+      "comment_version_key": "5985504553:2026-10-04T23:16:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165091#issuecomment-5985504553",
+      "comment_created_at": "2026-10-04T23:16:38Z",
+      "comment_updated_at": "2026-10-04T23:16:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165091,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T23:17:27.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/keep-composer-visible-while-messages-queue",
+        "head_sha": "6e4cf506075db217f6370a0c17bd8c951e6b22e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
