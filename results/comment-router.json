@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T17:41:29.982Z",
+  "updated_at": "2026-10-04T17:41:42.623Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:306:5957853677:2026-10-04T10:51:36Z:clawsweeper_needs_human",
-      "comment_id": "5957853677",
-      "comment_version_key": "5957853677:2026-10-04T10:51:36Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/306#issuecomment-5957853677",
-      "comment_created_at": "2026-10-02T17:35:28Z",
-      "comment_updated_at": "2026-10-04T10:51:36Z",
-      "comment_body_sha256": "2ec9b767400c72e40c23d09464445d72c8f2ad17b3d1d768cbedbdf68e45b691",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 306,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing invocations without a model override will change selection and lose automatic access-failure recovery; reviews that previously recovered may now stop. (sha=6893ea75811eff687c603dbc79109cd49b03ef8f)",
-      "expected_head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T10:52:51.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-operator-model",
-        "head_sha": "6893ea75811eff687c603dbc79109cd49b03ef8f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:90:5948209294:2026-10-04T10:51:42Z:clawsweeper_needs_human",
       "comment_id": "5948209294",
@@ -33372,6 +33339,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:159143:5982676481:2026-10-04T17:40:48Z:re_review",
+      "comment_id": "5982676481",
+      "comment_version_key": "5982676481:2026-10-04T17:40:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159143#issuecomment-5982676481",
+      "comment_created_at": "2026-10-04T17:40:48Z",
+      "comment_updated_at": "2026-10-04T17:40:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159143,
+      "author": "mnowrot",
+      "author_id": 135707,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T17:41:41.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-transcript-turn-order",
+        "head_sha": "e22c8de5acf80ff0186b5fdf288cf763d9cd1352",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
