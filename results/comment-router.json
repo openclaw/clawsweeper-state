@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T04:18:18.681Z",
+  "updated_at": "2026-10-04T04:18:25.433Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164503:5974044686:2026-10-03T22:17:58Z:re_review",
-      "comment_id": "5974044686",
-      "comment_version_key": "5974044686:2026-10-03T22:17:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164503#issuecomment-5974044686",
-      "comment_created_at": "2026-10-03T22:17:58Z",
-      "comment_updated_at": "2026-10-03T22:17:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164503,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T22:18:53.985Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-maintenance-agent-drain",
-        "head_sha": "5150793412a92886eccd073c27c7f370cd1b56fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123489:5289826383:2026-10-03T22:18:53Z:clawsweeper_auto_repair",
       "comment_id": "5289826383",
@@ -32749,6 +32702,39 @@
         "kind": "pull_request",
         "branch": "fix/update-retention-ficlone-eperm",
         "head_sha": "2408f9743121832cb9c90ec8a5557615d081869b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1166:5976297965:2026-10-04T04:17:34Z:clawsweeper_needs_human",
+      "comment_id": "5976297965",
+      "comment_version_key": "5976297965:2026-10-04T04:17:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1166#issuecomment-5976297965",
+      "comment_created_at": "2026-10-04T03:50:50Z",
+      "comment_updated_at": "2026-10-04T04:17:34Z",
+      "comment_body_sha256": "960650486a16168bd8564d01d84effd596cfd57be02d45b11365348b8d788665",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=549cdd0138f558e0cd3fddef60a196aee6e8fab1)",
+      "expected_head_sha": "549cdd0138f558e0cd3fddef60a196aee6e8fab1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T04:18:25.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-baseline-second-lane-guards-20261004",
+        "head_sha": "549cdd0138f558e0cd3fddef60a196aee6e8fab1",
         "cluster_id": null,
         "job_path": null
       }
