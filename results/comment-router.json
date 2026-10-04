@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T16:21:22.160Z",
+  "updated_at": "2026-10-04T16:23:35.422Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164678:5978807209:2026-10-04T10:02:31Z:re_review",
-      "comment_id": "5978807209",
-      "comment_version_key": "5978807209:2026-10-04T10:02:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164678#issuecomment-5978807209",
-      "comment_created_at": "2026-10-04T10:02:31Z",
-      "comment_updated_at": "2026-10-04T10:02:31Z",
-      "comment_body_sha256": "d850f8b4781b9663e9f61912c9b57a1113a8e1e20a5b3abcec22151aa4515867",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164678,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:03:22.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-relay-cdpurl-port",
-        "head_sha": "02df1d4453c57b2b04aae197feb6ce3f07d1e223",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164774:5978803106:2026-10-04T10:02:06Z:re_review",
       "comment_id": "5978803106",
@@ -33405,6 +33358,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164893:5979638798:2026-10-04T16:22:46Z:clawsweeper_auto_repair",
+      "comment_id": "5979638798",
+      "comment_version_key": "5979638798:2026-10-04T16:22:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164893#issuecomment-5979638798",
+      "comment_created_at": "2026-10-04T11:52:15Z",
+      "comment_updated_at": "2026-10-04T16:22:46Z",
+      "comment_body_sha256": "a905a4ee314c6166ca536d204809b5b2b952ed5c1c26fde457182d7b2325c177",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164893,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f6ea4c72ecb0c7235216b73687147d127f6ad78b)",
+      "expected_head_sha": "f6ea4c72ecb0c7235216b73687147d127f6ad78b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T16:23:35.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/linux-companion-files-motion-webkit",
+        "head_sha": "f6ea4c72ecb0c7235216b73687147d127f6ad78b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
