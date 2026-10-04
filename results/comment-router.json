@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T20:17:26.335Z",
+  "updated_at": "2026-10-04T20:17:37.523Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164864:5979054408:2026-10-04T12:58:39Z:clawsweeper_needs_human",
-      "comment_id": "5979054408",
-      "comment_version_key": "5979054408:2026-10-04T12:58:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164864#issuecomment-5979054408",
-      "comment_created_at": "2026-10-04T10:32:21Z",
-      "comment_updated_at": "2026-10-04T12:58:39Z",
-      "comment_body_sha256": "ea779beda79e6b62ddaca57e93157e594923cd8ac74c6b576703ef18139138ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The open cron2 dependency must merge and be integrated, including its refusal-type extraction, before the complete stack can be qualified. (sha=938dc4fcd87c85fa31a076ec57f1251138ca9b83)",
-      "expected_head_sha": "938dc4fcd87c85fa31a076ec57f1251138ca9b83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T12:59:48.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/cron3",
-        "head_sha": "938dc4fcd87c85fa31a076ec57f1251138ca9b83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164850:5978564765:2026-10-04T13:02:55Z:clawsweeper_needs_human",
       "comment_id": "5978564765",
@@ -33522,6 +33489,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165066:5983978919:2026-10-04T20:16:37Z:re_review",
+      "comment_id": "5983978919",
+      "comment_version_key": "5983978919:2026-10-04T20:16:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165066#issuecomment-5983978919",
+      "comment_created_at": "2026-10-04T20:16:37Z",
+      "comment_updated_at": "2026-10-04T20:16:37Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165066,
+      "author": "akshatshahh",
+      "author_id": 98461448,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T20:17:35.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-165047-stage-inbound-media",
+        "head_sha": "e7e963a55e3b1455db935a36339d5d1e648f5116",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
