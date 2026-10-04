@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T15:44:19.492Z",
+  "updated_at": "2026-10-04T15:44:22.025Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164841:5978283792:2026-10-04T09:19:38Z:clawsweeper_needs_human",
-      "comment_id": "5978283792",
-      "comment_version_key": "5978283792:2026-10-04T09:19:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164841#issuecomment-5978283792",
-      "comment_created_at": "2026-10-04T08:53:57Z",
-      "comment_updated_at": "2026-10-04T09:19:38Z",
-      "comment_body_sha256": "3f2763bdf842eac72f03fbfcfe0ce0dad41c3f329fd85bee61d16d2af3da7748",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164841,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed local-audio producer is exercised through runCapability, discovery, and CLI template expansion, but runExec is mocked and transcrip... (sha=93c2988392297dda20a4c174500a9fa878b34fb0)",
-      "expected_head_sha": "93c2988392297dda20a4c174500a9fa878b34fb0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T09:20:31.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whisper-language-164840",
-        "head_sha": "93c2988392297dda20a4c174500a9fa878b34fb0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164821:5977944410:2026-10-04T09:19:57Z:clawsweeper_needs_human",
       "comment_id": "5977944410",
@@ -33287,6 +33254,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136274:5981724373:2026-10-04T15:43:31Z:re_review",
+      "comment_id": "5981724373",
+      "comment_version_key": "5981724373:2026-10-04T15:43:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5981724373",
+      "comment_created_at": "2026-10-04T15:43:31Z",
+      "comment_updated_at": "2026-10-04T15:43:31Z",
+      "comment_body_sha256": "be51524a944005e91dfdc4e26ebff5fd3f22db41b018921e7acf176c313c539c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136274,
+      "author": "a-tokyo",
+      "author_id": 12428415,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T15:44:20.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/per-team-sharepoint-upload",
+        "head_sha": "fbb5c21d4d8c50672ab7c760e4b4f1b2b680e02d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
