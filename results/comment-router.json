@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T01:27:32.035Z",
+  "updated_at": "2026-10-04T01:27:37.623Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148488:5972354301:2026-10-03T18:48:42Z:re_review",
-      "comment_id": "5972354301",
-      "comment_version_key": "5972354301:2026-10-03T18:48:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148488#issuecomment-5972354301",
-      "comment_created_at": "2026-10-03T18:48:42Z",
-      "comment_updated_at": "2026-10-03T18:48:42Z",
-      "comment_body_sha256": "a9fb3dac19ef367c3a5704787cc7291f6b80c4cffde57a1dc3d575286f98be89",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148488,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T18:49:25.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-clawhub-hint",
-        "head_sha": "605925d8d62793e52f89905ca295cb6aca71442c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164463:5972354094:2026-10-03T18:48:40Z:re_review",
       "comment_id": "5972354094",
@@ -33573,6 +33526,39 @@
         "kind": "pull_request",
         "branch": "docs/compact-release-notes-v2026.9.8",
         "head_sha": "c1f5e3394111612f3d68022c588a94ea4b67d4a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164657:5975384568:2026-10-04T01:26:46Z:clawsweeper_needs_human",
+      "comment_id": "5975384568",
+      "comment_version_key": "5975384568:2026-10-04T01:26:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164657#issuecomment-5975384568",
+      "comment_created_at": "2026-10-04T01:26:46Z",
+      "comment_updated_at": "2026-10-04T01:26:46Z",
+      "comment_body_sha256": "c9d3903ef48969dc921165701f6fb6f57667cfd1afd66cbbda39be4a23aa13e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164657,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the exact-head job exercises the production display and broadcast owners, but CaptureTransport replaces... (sha=42d957d7be1c3df53692d2a8512fec00c9c6083c)",
+      "expected_head_sha": "42d957d7be1c3df53692d2a8512fec00c9c6083c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T01:27:37.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-media-display-cr-20261003",
+        "head_sha": "42d957d7be1c3df53692d2a8512fec00c9c6083c",
         "cluster_id": null,
         "job_path": null
       }
