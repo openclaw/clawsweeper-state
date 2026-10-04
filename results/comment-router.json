@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T23:10:55.175Z",
+  "updated_at": "2026-10-04T23:11:09.547Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-10-04T15:37:53Z:clawsweeper_needs_human",
-      "comment_id": "5833145824",
-      "comment_version_key": "5833145824:2026-10-04T15:37:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5833145824",
-      "comment_created_at": "2026-09-25T13:24:34Z",
-      "comment_updated_at": "2026-10-04T15:37:53Z",
-      "comment_body_sha256": "57888a17f11f22a84566c9fb94bd5aef6947c9ab846e7a31203272fe9118f3f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve reusable credentials on trusted nodes** - Node execution writes the selected account's bearer token into a process-readable private profile. An approved host administrator or sa...; Review finding: [medium] Approve reusable credentials on trusted nodes — extensions/codex/src/node-exec-server.runtime.ts:239 (sha=bd2b4a6d0c98f0e96c56472ee05c4ee9b76feb8e)",
-      "expected_head_sha": "bd2b4a6d0c98f0e96c56472ee05c4ee9b76feb8e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T15:39:10.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "bd2b4a6d0c98f0e96c56472ee05c4ee9b76feb8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5860000727:2026-09-27T21:30:48Z:re_review",
       "comment_id": "5860000727",
@@ -33449,6 +33416,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165129:5985452157:2026-10-04T23:09:33Z:re_review",
+      "comment_id": "5985452157",
+      "comment_version_key": "5985452157:2026-10-04T23:09:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165129#issuecomment-5985452157",
+      "comment_created_at": "2026-10-04T23:09:33Z",
+      "comment_updated_at": "2026-10-04T23:09:33Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165129,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T23:11:08.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/cron2b",
+        "head_sha": "52146becdb62089044f8f8a06b7b32b484ca1c1d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
