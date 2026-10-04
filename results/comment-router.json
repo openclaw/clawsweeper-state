@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T14:56:55.155Z",
+  "updated_at": "2026-10-04T14:57:38.044Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163645:5957300427:2026-10-04T07:34:14Z:clawsweeper_needs_human",
-      "comment_id": "5957300427",
-      "comment_version_key": "5957300427:2026-10-04T07:34:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163645#issuecomment-5957300427",
-      "comment_created_at": "2026-10-02T17:01:06Z",
-      "comment_updated_at": "2026-10-04T07:34:14Z",
-      "comment_body_sha256": "77f3bef366392a3dd35dfee686597e3c50a6111aa779a8164d9456f6f8b9692b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163645,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the real-SDK HTTP/TLS qualification supports authenticated native requests and redirect rejection, but...; Review finding: [medium] Verify revocation reaches active requests and retries — src/worker/worker.runtime.ts:202 (sha=fe04f32b0bb54d7de5312ab3d8e8f51ef9f3c334)",
-      "expected_head_sha": "fe04f32b0bb54d7de5312ab3d8e8f51ef9f3c334",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T07:35:11.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-158902-native-runtime",
-        "head_sha": "fe04f32b0bb54d7de5312ab3d8e8f51ef9f3c334",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1629:5977746590:2026-10-04T07:34:45Z:clawsweeper_auto_repair",
       "comment_id": "5977746590",
@@ -33723,6 +33690,53 @@
       "status": "skipped",
       "processed_at": "2026-10-04T14:56:55.155Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164597:5981305013:2026-10-04T14:56:38Z:re_review",
+      "comment_id": "5981305013",
+      "comment_version_key": "5981305013:2026-10-04T14:56:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164597#issuecomment-5981305013",
+      "comment_created_at": "2026-10-04T14:56:38Z",
+      "comment_updated_at": "2026-10-04T14:56:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164597,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T14:57:36.511Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/session-events-summary-request",
+        "head_sha": "99e84015ee7a4896f9458370f3f3f95b245d85bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
