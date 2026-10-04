@@ -2,39 +2,6 @@
   "updated_at": "2026-10-04T13:10:49.846Z",
   "commands": [
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164777:5976821705:2026-10-04T05:17:05Z:clawsweeper_needs_human",
-      "comment_id": "5976821705",
-      "comment_version_key": "5976821705:2026-10-04T05:17:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164777#issuecomment-5976821705",
-      "comment_created_at": "2026-10-04T05:09:54Z",
-      "comment_updated_at": "2026-10-04T05:17:05Z",
-      "comment_body_sha256": "7e29c3e7762d1d2687e20ec7b0e639949123c4abf35f90beb5be158a619c3a3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164777,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Intentionally enabled workspace hooks whose keys collide with another source will stop loading after upgrade; owner acceptance and documented recovery using a unique hookKey and match... (sha=593aa42cf57d1d47a157831ed56329b809a8d3d8)",
-      "expected_head_sha": "593aa42cf57d1d47a157831ed56329b809a8d3d8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T05:17:57.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-hook-key-collision",
-        "head_sha": "593aa42cf57d1d47a157831ed56329b809a8d3d8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164779:5976865402:2026-10-04T05:17:11Z:clawsweeper_auto_repair",
       "comment_id": "5976865402",
       "comment_version_key": "5976865402:2026-10-04T05:17:11Z",
@@ -34121,6 +34088,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164246:5980291787:2026-10-04T13:09:47Z:re_review",
+      "comment_id": "5980291787",
+      "comment_version_key": "5980291787:2026-10-04T13:09:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164246#issuecomment-5980291787",
+      "comment_created_at": "2026-10-04T13:09:47Z",
+      "comment_updated_at": "2026-10-04T13:09:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164246,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T13:10:48.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-failure-fallback",
+        "head_sha": "4ca7a00588c6fff33a459ef5b89c2d5c07e1b52d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1220:5980292623:2026-10-04T13:09:53Z:clawsweeper_needs_human",
