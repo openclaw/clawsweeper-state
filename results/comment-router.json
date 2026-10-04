@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T11:50:22.183Z",
+  "updated_at": "2026-10-04T11:51:15.494Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164721:5975990712:2026-10-04T04:22:41Z:clawsweeper_needs_human",
-      "comment_id": "5975990712",
-      "comment_version_key": "5975990712:2026-10-04T04:22:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164721#issuecomment-5975990712",
-      "comment_created_at": "2026-10-04T03:00:45Z",
-      "comment_updated_at": "2026-10-04T04:22:41Z",
-      "comment_body_sha256": "f5982fd799f744fbba3861daaa2b149056cfde05f1e34129c8d4db6509c3097b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164721,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed prompt owner is exercised through assembly, an AgentSession tool loop, in-memory reconstruction, and Anthropic builder capture, but... (sha=dd0c2670e9a77ca636170c2982104bd13cf55541)",
-      "expected_head_sha": "dd0c2670e9a77ca636170c2982104bd13cf55541",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T04:23:36.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-inter-session-prompt-replay",
-        "head_sha": "dd0c2670e9a77ca636170c2982104bd13cf55541",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164683:5975541301:2026-10-04T04:23:41Z:clawsweeper_needs_human",
       "comment_id": "5975541301",
@@ -34111,6 +34078,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164896:5979625205:2026-10-04T11:50:26Z:re_review",
+      "comment_id": "5979625205",
+      "comment_version_key": "5979625205:2026-10-04T11:50:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164896#issuecomment-5979625205",
+      "comment_created_at": "2026-10-04T11:50:26Z",
+      "comment_updated_at": "2026-10-04T11:50:26Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164896,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T11:51:14.429Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plan-check-no-restatement",
+        "head_sha": "bdb8e05b5a2a5fdf588898f74cbbdfd08fb1b728",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
