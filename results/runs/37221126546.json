@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37221126546",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37221126546",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-04T17:40:02.665Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Verified #532 on supplied current main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Prepared a narrow implementation artifact. Implementation and validation are blocked by the read-only filesystem and absent dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The reported performance defect remains present and has a narrow collector-only repair path."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this bounded fix without a product-policy decision."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "Creating a validated PR requires a writable checkout and available dependencies. The executor must complete the planned implementation and gates before opening or updating the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
