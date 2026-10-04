@@ -1,0 +1,62 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-537",
+  "mode": "autonomous",
+  "run_id": "37171652083",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37171652083",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-537.md",
+  "published_at": "2026-10-04T02:41:56.312Z",
+  "canonical": "https://github.com/steipete/oracle/issues/537",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/537",
+  "canonical_pr": null,
+  "summary": "Verified #537 on supplied main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9: handshake 404s bypass approval retries. Plan a narrow implementation PR; keep #538 separate. No files or GitHub state changed. Vitest and live Chrome validation remain for the executor.",
+  "actions": [
+    {
+      "target": "#537",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#537",
+      "candidate_fix": null,
+      "reason": "A narrow classifier change and behavioral regressions directly address the source-proven defect. Implementation and full validation must run in the executor's writable checkout."
+    },
+    {
+      "target": "#538",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct endpoint-discovery defect. Retrying a dead UUID cannot repair discovery; keep this issue open and exclude its implementation from #537."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-537",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#537",
+      "candidate_fix": null,
+      "reason": "Return an executable narrow fix plan for the applicator; closing and merging are prohibited by this job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
