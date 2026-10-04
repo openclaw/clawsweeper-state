@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T11:05:16.112Z",
+  "updated_at": "2026-10-04T11:05:57.249Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1161:5976131803:2026-10-04T03:23:12Z:clawsweeper_needs_human",
-      "comment_id": "5976131803",
-      "comment_version_key": "5976131803:2026-10-04T03:23:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1161#issuecomment-5976131803",
-      "comment_created_at": "2026-10-04T03:23:12Z",
-      "comment_updated_at": "2026-10-04T03:23:12Z",
-      "comment_body_sha256": "6d32b93f774ad1c1a0424c66b1e9162c34f6f3dbc4bfdd185c2fd1f89f51f0b5",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a3cd94ea9504d6b353eb3f88fe10ac5d62a6780e)",
-      "expected_head_sha": "a3cd94ea9504d6b353eb3f88fe10ac5d62a6780e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T03:23:55.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/kubernetes-configuration-cancellation",
-        "head_sha": "a3cd94ea9504d6b353eb3f88fe10ac5d62a6780e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3856:5914641779:2026-10-04T03:23:41Z:clawsweeper_auto_repair",
       "comment_id": "5914641779",
@@ -34197,6 +34164,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138204:5979290845:2026-10-04T11:05:06Z:re_review",
+      "comment_id": "5979290845",
+      "comment_version_key": "5979290845:2026-10-04T11:05:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138204#issuecomment-5979290845",
+      "comment_created_at": "2026-10-04T11:05:06Z",
+      "comment_updated_at": "2026-10-04T11:05:06Z",
+      "comment_body_sha256": "60fe409b92f998498634597f1a3e94d3bcc9d39b524d4987c187e47fac78d20e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138204,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T11:05:56.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/assistant-visible-glm-arg-key",
+        "head_sha": "9731cd6999d1ca73a7cbdb5aad6dcd07eabc8627",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
