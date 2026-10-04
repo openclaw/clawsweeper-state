@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T16:43:07.656Z",
+  "updated_at": "2026-10-04T16:44:54.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162994:5978910116:2026-10-04T10:13:12Z:re_review",
-      "comment_id": "5978910116",
-      "comment_version_key": "5978910116:2026-10-04T10:13:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162994#issuecomment-5978910116",
-      "comment_created_at": "2026-10-04T10:13:12Z",
-      "comment_updated_at": "2026-10-04T10:13:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162994,
-      "author": "Frosmans",
-      "author_id": 37348612,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:14:03.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fros/update-normal-cycle-verification",
-        "head_sha": "0d9ba60bfaf5883760fb21dc8deb6e7db469f203",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164861:5978917635:2026-10-04T10:13:57Z:clawsweeper_auto_repair",
       "comment_id": "5978917635",
@@ -33292,6 +33245,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-plugin-cleanup-on-restart-20260919",
         "head_sha": "1da3342e054ec9c2e1fa9c9fca1d7cff6aa7175c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164175:5967226286:2026-10-04T16:43:55Z:clawsweeper_needs_human",
+      "comment_id": "5967226286",
+      "comment_version_key": "5967226286:2026-10-04T16:43:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164175#issuecomment-5967226286",
+      "comment_created_at": "2026-10-03T08:34:17Z",
+      "comment_updated_at": "2026-10-04T16:43:55Z",
+      "comment_body_sha256": "afeb4307446ec4b845d6d31720ed0a288b40b154601df215a9b3741aed33971e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Maintainer acceptance is still required for the persisted replay contract: continuously resumed sessions receive only the newest eight exchanges, each prompt and reply capped at 2,000... (sha=2cef489c0adec3c4cd5bfea95592e0484a0e1956)",
+      "expected_head_sha": "2cef489c0adec3c4cd5bfea95592e0484a0e1956",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T16:44:54.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-announce-continuity",
+        "head_sha": "2cef489c0adec3c4cd5bfea95592e0484a0e1956",
         "cluster_id": null,
         "job_path": null
       }
