@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164832",
+  "mode": "autonomous",
+  "run_id": "37189225581",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37189225581",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164832.md",
+  "published_at": "2026-10-04T09:02:20.282Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164832",
+  "canonical_pr": null,
+  "summary": "Verified the HTTP 400 classification defect in source at preflight main 9c66d4c9a39b16d70e7c55186fe7e8550468a663. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#164832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164832",
+      "candidate_fix": null,
+      "reason": "The source defect remains present. Implement only after establishing the required failing registered-provider regression on a writable executor."
+    },
+    {
+      "target": "#156746",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164832",
+      "candidate_fix": null,
+      "reason": "Preserve the merged predecessor as context and explicitly account for its conservative treatment of ambiguous HTTP 400."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164832",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for the deterministic executor; implementation, failing regression, native HTTP proof, fresh review, and candidate validation remain blocked on this host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
