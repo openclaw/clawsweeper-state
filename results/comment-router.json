@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T14:12:54.132Z",
+  "updated_at": "2026-10-04T14:14:19.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164484:5977498200:2026-10-04T06:56:52Z:re_review",
-      "comment_id": "5977498200",
-      "comment_version_key": "5977498200:2026-10-04T06:56:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164484#issuecomment-5977498200",
-      "comment_created_at": "2026-10-04T06:56:52Z",
-      "comment_updated_at": "2026-10-04T06:56:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164484,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T06:57:47.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/involve",
-        "head_sha": "8a1aa4a0f78c35a87d80dfcaaae332e0f728f3dc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159147:5930199174:2026-10-01T11:15:54Z:re_review",
       "comment_id": "5930199174",
@@ -33661,6 +33614,39 @@
         "kind": "pull_request",
         "branch": "fix/antigravity-dedupe-version-spawn",
         "head_sha": "855fd18d59a41f100f656859208ba5359d3a1b95",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164725:5976013625:2026-10-04T14:13:18Z:clawsweeper_needs_human",
+      "comment_id": "5976013625",
+      "comment_version_key": "5976013625:2026-10-04T14:13:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164725#issuecomment-5976013625",
+      "comment_created_at": "2026-10-04T03:04:22Z",
+      "comment_updated_at": "2026-10-04T14:13:18Z",
+      "comment_body_sha256": "b5aa8799dc9b5a6ee123063f90063d130d12c7998d45f69f2a34a6439851bec7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c66c78e99d94a00f378bf2dcc013291c1f707cea)",
+      "expected_head_sha": "c66c78e99d94a00f378bf2dcc013291c1f707cea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T14:14:19.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-superseded-preview-gate",
+        "head_sha": "c66c78e99d94a00f378bf2dcc013291c1f707cea",
         "cluster_id": null,
         "job_path": null
       }
