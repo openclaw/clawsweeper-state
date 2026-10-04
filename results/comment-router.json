@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T17:27:25.004Z",
+  "updated_at": "2026-10-04T17:29:09.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164744:5979186505:2026-10-04T10:51:19Z:re_review",
-      "comment_id": "5979186505",
-      "comment_version_key": "5979186505:2026-10-04T10:51:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164744#issuecomment-5979186505",
-      "comment_created_at": "2026-10-04T10:51:19Z",
-      "comment_updated_at": "2026-10-04T10:51:19Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164744,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:52:19.804Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/placementreads",
-        "head_sha": "0aba32b4f12826c1c05f54c1bc9ba4b71026a143",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:9:5513058422:2026-10-04T10:51:01Z:clawsweeper_needs_human",
       "comment_id": "5513058422",
@@ -33356,6 +33309,39 @@
         "kind": "pull_request",
         "branch": "1095",
         "head_sha": "02193fd1b9e0f6f492815d86cbe94ce74280f26a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165020:5982573864:2026-10-04T17:28:15Z:clawsweeper_needs_human",
+      "comment_id": "5982573864",
+      "comment_version_key": "5982573864:2026-10-04T17:28:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165020#issuecomment-5982573864",
+      "comment_created_at": "2026-10-04T17:28:15Z",
+      "comment_updated_at": "2026-10-04T17:28:15Z",
+      "comment_body_sha256": "346f32986a647d59b18a7b32ea4bec67f67166fabaefdd721b71644cc71a09b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Inspected before/after screenshots and focused browser evidence are absent, leaving actual dropdown focus, dismissal, confirmation rendering, and preservation of existing sidebar pins... (sha=07e64b0c22ce58e05dfd21e084363a1040e48439)",
+      "expected_head_sha": "07e64b0c22ce58e05dfd21e084363a1040e48439",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T17:29:09.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/workboard-sidebar-board-actions",
+        "head_sha": "07e64b0c22ce58e05dfd21e084363a1040e48439",
         "cluster_id": null,
         "job_path": null
       }
