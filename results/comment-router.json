@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T19:33:37.823Z",
+  "updated_at": "2026-10-04T19:34:42.445Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3834:5862155265:2026-10-04T12:03:42Z:clawsweeper_needs_human",
-      "comment_id": "5862155265",
-      "comment_version_key": "5862155265:2026-10-04T12:03:42Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3834#issuecomment-5862155265",
-      "comment_created_at": "2026-09-28T02:22:02Z",
-      "comment_updated_at": "2026-10-04T12:03:42Z",
-      "comment_body_sha256": "716df6104cc5d39403f8e4c4cbd06ffabdf64ec10caae68476cbaa284f5cf2d4",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3834,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Have the stack owner resolve or explicitly narrow the recorded audit hold and confirm the approved contents of https://github.com/openclaw/clawhub/pull/3833 still match this acceptanc... (sha=55f67573daad6575f9d0500ede4603fa520a2cea)",
-      "expected_head_sha": "55f67573daad6575f9d0500ede4603fa520a2cea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T12:04:36.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-723-manual-proof",
-        "head_sha": "55f67573daad6575f9d0500ede4603fa520a2cea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164835:5978211962:2026-10-04T12:03:36Z:clawsweeper_needs_human",
       "comment_id": "5978211962",
@@ -33618,6 +33585,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164756:5976524494:2026-10-04T19:33:44Z:clawsweeper_needs_human",
+      "comment_id": "5976524494",
+      "comment_version_key": "5976524494:2026-10-04T19:33:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164756#issuecomment-5976524494",
+      "comment_created_at": "2026-10-04T04:20:38Z",
+      "comment_updated_at": "2026-10-04T19:33:44Z",
+      "comment_body_sha256": "9efae86a6b2a75e56f08fcfec9b1d7db1375f6dc4caf76346ec93ae6ec8c4208",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A model can perpetually start another background command from each completion turn, consuming tokens and posting replies indefinitely despite the rate limits; no maintainer has accept... (sha=c2c5f3b661b4e83fb0fddca6616161a3eb340466)",
+      "expected_head_sha": "c2c5f3b661b4e83fb0fddca6616161a3eb340466",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T19:34:42.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-chain-cooldown",
+        "head_sha": "c2c5f3b661b4e83fb0fddca6616161a3eb340466",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
