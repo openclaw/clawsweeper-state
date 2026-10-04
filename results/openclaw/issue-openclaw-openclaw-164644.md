@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-164644"
-mode: "autonomous"
-run_id: "37166704033"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37166704033"
+mode: "plan"
+run_id: "37168639770"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37168639770"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-04T01:06:06.479Z"
-canonical: "https://github.com/openclaw/openclaw/issues/164644"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/164644"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-04T01:41:46.204Z"
+canonical: "#164644"
+canonical_issue: "#164644"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37166704033](https://github.com/openclaw/clawsweeper/actions/runs/37166704033)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37168639770](https://github.com/openclaw/clawsweeper/actions/runs/37168639770)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/164644
+Canonical: #164644
 
 ## Summary
 
-Both reported regressions reproduce through source probes on preflight main 7a7bcb8930d9d47a9b2288387b15f8f75b18e3a9. A two-file fix is planned. Implementation and complete validation are blocked in this read-only checkout with missing dependencies; no files or GitHub state were changed.
+Both routing failures reproduced through the current source evaluator at supplied main dc77a98a11f95ef4f78ee920eb1a65d19b05e3eb. The existing hosted Linux alias satisfies the expected selectors in memory. A two-file fix is planned; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Both reported regressions reproduce through source probes on preflight main 7a7b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #164644 | fix_needed | planned | canonical | The screenshot worker bypasses the documented release reservation contract. Keep the issue open while the executor implements and validates the fix. |
-| #164600 | keep_closed | skipped | related | Merged context is historical evidence, not a repair or closure target. |
-| cluster:issue-openclaw-openclaw-164644 | build_fix_artifact | planned |  | The narrow fix artifact is ready; applying and validating it requires the writable executor. |
-| cluster:issue-openclaw-openclaw-164644 | open_fix_pr | blocked |  | Publication is blocked until the executor applies the two-file repair and completes validation. This is an execution constraint, not an unresolved maintainer decision. |
+| #164644 | fix_needed | planned | canonical | A narrow repair restores existing documented routing without adding options, changing policy, or altering screenshot capture. Full validation and hosted evidence remain pending. |
+| #164600 | keep_closed | skipped | related | Historical context only; preserve the merged contributor work. |
 
 ## Needs Human
 
