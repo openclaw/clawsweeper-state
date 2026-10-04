@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T14:35:29.395Z",
+  "updated_at": "2026-10-04T14:35:35.219Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164789:5977666278:2026-10-04T07:22:21Z:re_review",
-      "comment_id": "5977666278",
-      "comment_version_key": "5977666278:2026-10-04T07:22:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164789#issuecomment-5977666278",
-      "comment_created_at": "2026-10-04T07:22:21Z",
-      "comment_updated_at": "2026-10-04T07:22:21Z",
-      "comment_body_sha256": "93be0a6eca71b07ec213286d421d6556a280462ea8119f85f593356b31db30b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164789,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T07:23:15.366Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-artifact-scan-provenance",
-        "head_sha": "1188e5059d2ef4c2a6e5d0ee4651359caaa4e486",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3863:5915164968:2026-10-04T07:22:36Z:clawsweeper_auto_repair",
       "comment_id": "5915164968",
@@ -33688,6 +33641,39 @@
         "kind": "pull_request",
         "branch": "codex/meeting-audio-monotonic-heartbeat",
         "head_sha": "e4212bc11be2dfe8a55a73cb32388b43b7db5395",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164943:5980995854:2026-10-04T14:34:33Z:clawsweeper_needs_human",
+      "comment_id": "5980995854",
+      "comment_version_key": "5980995854:2026-10-04T14:34:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164943#issuecomment-5980995854",
+      "comment_created_at": "2026-10-04T14:22:28Z",
+      "comment_updated_at": "2026-10-04T14:34:33Z",
+      "comment_body_sha256": "56564a061433fed103722af8ce0d1375fdc4567d013a397c5722f5dc52183b46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The explicitly required published-driver × candidate update cell has not yet demonstrated that an existing v2026.9.8 installation updates successfully and starts a healthy replacement... (sha=eb793627ef10ef0f7bed0e1e6d03b06931864001)",
+      "expected_head_sha": "eb793627ef10ef0f7bed0e1e6d03b06931864001",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T14:35:35.219Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/placepreserve",
+        "head_sha": "eb793627ef10ef0f7bed0e1e6d03b06931864001",
         "cluster_id": null,
         "job_path": null
       }
