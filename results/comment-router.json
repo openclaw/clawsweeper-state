@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T05:17:49.196Z",
+  "updated_at": "2026-10-04T05:17:53.341Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164514:5974521224:2026-10-03T23:17:31Z:re_review",
-      "comment_id": "5974521224",
-      "comment_version_key": "5974521224:2026-10-03T23:17:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164514#issuecomment-5974521224",
-      "comment_created_at": "2026-10-03T23:17:31Z",
-      "comment_updated_at": "2026-10-03T23:17:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164514,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T23:18:26.816Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/agenttx",
-        "head_sha": "36667aaf51b0f897b4e94dafe02184fee6e77e3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123732:5295664347:2026-10-03T23:17:48Z:clawsweeper_needs_human",
       "comment_id": "5295664347",
@@ -32756,6 +32709,39 @@
         "kind": "pull_request",
         "branch": "perf/memory-wiki-compile-index",
         "head_sha": "d0d6aca450609e9c75f2685f6b01ceb97a5f701f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1181:5976863835:2026-10-04T05:16:55Z:clawsweeper_needs_human",
+      "comment_id": "5976863835",
+      "comment_version_key": "5976863835:2026-10-04T05:16:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1181#issuecomment-5976863835",
+      "comment_created_at": "2026-10-04T05:16:55Z",
+      "comment_updated_at": "2026-10-04T05:16:55Z",
+      "comment_body_sha256": "98ec41b205e3dbf69fb66470313a3b090522811583d407ddd2f9dec378450b1a",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Attach redacted real-process shutdown output demonstrating the new event sequence. Remove private IPs, endpoints, credentials, and personal data before posting. Updating the PR body s... (sha=cac88e7996446c007668f1e11489780ceaedb9a2)",
+      "expected_head_sha": "cac88e7996446c007668f1e11489780ceaedb9a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T05:17:53.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "d394-shutdown-log",
+        "head_sha": "cac88e7996446c007668f1e11489780ceaedb9a2",
         "cluster_id": null,
         "job_path": null
       }
