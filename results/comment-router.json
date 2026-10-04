@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T01:41:03.451Z",
+  "updated_at": "2026-10-04T01:41:27.365Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1079:5972401613:2026-10-03T18:59:08Z:clawsweeper_needs_human",
-      "comment_id": "5972401613",
-      "comment_version_key": "5972401613:2026-10-03T18:59:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1079#issuecomment-5972401613",
-      "comment_created_at": "2026-10-03T18:53:45Z",
-      "comment_updated_at": "2026-10-03T18:59:08Z",
-      "comment_body_sha256": "45ca4679910da8e6fa3b4be74a65a6bce22dfaf3dda857fff1cfe64e0f01ea31",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1079,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c42c3e526f68b22b745c8446cb00530c0c18e049)",
-      "expected_head_sha": "c42c3e526f68b22b745c8446cb00530c0c18e049",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T19:00:17.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test-deslop-5",
-        "head_sha": "c42c3e526f68b22b745c8446cb00530c0c18e049",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164439:5971948591:2026-10-03T18:59:49Z:clawsweeper_needs_human",
       "comment_id": "5971948591",
@@ -33535,6 +33502,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164649:5975471833:2026-10-04T01:40:32Z:re_review",
+      "comment_id": "5975471833",
+      "comment_version_key": "5975471833:2026-10-04T01:40:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164649#issuecomment-5975471833",
+      "comment_created_at": "2026-10-04T01:40:32Z",
+      "comment_updated_at": "2026-10-04T01:40:32Z",
+      "comment_body_sha256": "54696287813f5c5f9486150833c45a24501779585c7f25f6c0ca1ee093e5a303",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164649,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T01:41:26.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-rotated-preview-delete",
+        "head_sha": "68deb9bd52d45b28bc5139ffbbd46d0f68be0452",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
