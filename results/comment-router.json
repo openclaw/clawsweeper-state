@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T18:04:09.476Z",
+  "updated_at": "2026-10-04T18:04:10.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164747:5979425365:2026-10-04T11:24:09Z:re_review",
-      "comment_id": "5979425365",
-      "comment_version_key": "5979425365:2026-10-04T11:24:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164747#issuecomment-5979425365",
-      "comment_created_at": "2026-10-04T11:24:09Z",
-      "comment_updated_at": "2026-10-04T11:24:09Z",
-      "comment_body_sha256": "1873185c69b3b4899d2ba691f2fee77cb836db2db22c3fb9c206aece0c6e9582",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164747,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T11:25:12.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/transcriptfacts",
-        "head_sha": "f8177d96f47fde49101993b793cad89692f5a3a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164883:5979429057:2026-10-04T11:24:39Z:re_review",
       "comment_id": "5979429057",
@@ -33373,6 +33326,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-artifacts-download-latency-20260919",
         "head_sha": "e04d6bba84af14c3a8100b65bd5a0805b2268b0c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165031:5982855825:2026-10-04T18:03:16Z:clawsweeper_needs_human",
+      "comment_id": "5982855825",
+      "comment_version_key": "5982855825:2026-10-04T18:03:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165031#issuecomment-5982855825",
+      "comment_created_at": "2026-10-04T18:03:16Z",
+      "comment_updated_at": "2026-10-04T18:03:16Z",
+      "comment_body_sha256": "3e059cfb17885f2e642bce10bbbbf3774bb6f4c0b07bb9f6dbfc493fa65f5a98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed streaming parser is exercised by regression tests and a temporary runner test with a synthetic plugin target and real Anthropic val... (sha=970b52a716bcd150bdbbe493ae23cb114a5fddb0)",
+      "expected_head_sha": "970b52a716bcd150bdbbe493ae23cb114a5fddb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T18:04:10.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-interrupted-raw-protocol",
+        "head_sha": "970b52a716bcd150bdbbe493ae23cb114a5fddb0",
         "cluster_id": null,
         "job_path": null
       }
