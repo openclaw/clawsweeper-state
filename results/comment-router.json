@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T21:59:49.023Z",
+  "updated_at": "2026-10-04T22:00:03.757Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164455:5980872926:2026-10-04T14:08:34Z:re_review",
-      "comment_id": "5980872926",
-      "comment_version_key": "5980872926:2026-10-04T14:08:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164455#issuecomment-5980872926",
-      "comment_created_at": "2026-10-04T14:08:34Z",
-      "comment_updated_at": "2026-10-04T14:08:34Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164455,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T14:09:30.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "daily/2026-10-03",
-        "head_sha": "129e3121f001784ff077b242c6b0cb746cabdb53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155850:5780445648:2026-10-04T14:08:30Z:clawsweeper_needs_human",
       "comment_id": "5780445648",
@@ -33869,6 +33822,39 @@
         "kind": "pull_request",
         "branch": "perf/20261004-claude-report-wire",
         "head_sha": "eb6bb6830822e7f7b556d2b6f7e65dcb0913ec0c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164792:5976984535:2026-10-04T21:59:05Z:clawsweeper_needs_human",
+      "comment_id": "5976984535",
+      "comment_version_key": "5976984535:2026-10-04T21:59:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164792#issuecomment-5976984535",
+      "comment_created_at": "2026-10-04T05:36:50Z",
+      "comment_updated_at": "2026-10-04T21:59:05Z",
+      "comment_body_sha256": "386881bd0ebc8244a284592f466efd6ecca0d229a14147d9eaad363525b81aad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164792,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Maintainers must accept automatic deletion of pre-fence unreferenced vectors: reverted content and unpublished work cached before the fence can require paid re-embedding, clock moveme... (sha=03a9eb0c0a588c7a7b9328f70b88200da56277a5)",
+      "expected_head_sha": "03a9eb0c0a588c7a7b9328f70b88200da56277a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T22:00:03.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-embedding-cache-orphan-gc",
+        "head_sha": "03a9eb0c0a588c7a7b9328f70b88200da56277a5",
         "cluster_id": null,
         "job_path": null
       }
