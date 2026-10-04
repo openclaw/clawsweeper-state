@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T09:50:51.478Z",
+  "updated_at": "2026-10-04T09:51:54.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164603:5974471307:2026-10-03T23:42:30Z:clawsweeper_needs_human",
-      "comment_id": "5974471307",
-      "comment_version_key": "5974471307:2026-10-03T23:42:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164603#issuecomment-5974471307",
-      "comment_created_at": "2026-10-03T23:10:46Z",
-      "comment_updated_at": "2026-10-03T23:42:30Z",
-      "comment_body_sha256": "a2b86097ab23c800580d720d648af54161b962aac9da8f72733951ae383a95f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164603,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: demonstrate authorized embeddings requests succeeding and a read-only trusted-proxy caller receiving rejection...; Review finding: [P1] Restore the embeddings endpoint’s method-scope admission — src/gateway/embeddings-http.ts:171-175 - [high] Read-only callers can invoke the embedding provider... (sha=753faa890033415a43a1cc1ae392f19913d393a2)",
-      "expected_head_sha": "753faa890033415a43a1cc1ae392f19913d393a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T02:30:45.611Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l349-gateway-root2-20261003",
-        "head_sha": "753faa890033415a43a1cc1ae392f19913d393a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164706:5975783009:2026-10-04T02:28:22Z:clawsweeper_needs_human",
       "comment_id": "5975783009",
@@ -33966,6 +33933,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164678:5978681639:2026-10-04T09:50:55Z:re_review",
+      "comment_id": "5978681639",
+      "comment_version_key": "5978681639:2026-10-04T09:50:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164678#issuecomment-5978681639",
+      "comment_created_at": "2026-10-04T09:50:55Z",
+      "comment_updated_at": "2026-10-04T09:50:55Z",
+      "comment_body_sha256": "62c0e0a265aaf8334f2ab83306573cdf1ff3a4a440f3d83327bc46cd733585d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164678,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T09:51:53.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-relay-cdpurl-port",
+        "head_sha": "d98015b4dcf5a1c2ef4c391229ecfbca10e19c44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
