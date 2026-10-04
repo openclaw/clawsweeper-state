@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T05:44:20.763Z",
+  "updated_at": "2026-10-04T05:44:34.521Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164566:5973950943:2026-10-03T23:34:46Z:clawsweeper_needs_human",
-      "comment_id": "5973950943",
-      "comment_version_key": "5973950943:2026-10-03T23:34:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164566#issuecomment-5973950943",
-      "comment_created_at": "2026-10-03T22:05:53Z",
-      "comment_updated_at": "2026-10-03T23:34:46Z",
-      "comment_body_sha256": "f2063221dced85461bc0b76c2bcd0c940334f28f0455273eb147302a2d9731fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164566,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b24817f66be9cf78d258adcaf7b0714bad5a0340)",
-      "expected_head_sha": "b24817f66be9cf78d258adcaf7b0714bad5a0340",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T23:35:46.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/l346-agents-root2-simplify",
-        "head_sha": "b24817f66be9cf78d258adcaf7b0714bad5a0340",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164424:5971780371:2026-10-03T23:35:10Z:clawsweeper_needs_human",
       "comment_id": "5971780371",
@@ -32787,6 +32754,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161344:5977025429:2026-10-04T05:43:30Z:re_review",
+      "comment_id": "5977025429",
+      "comment_version_key": "5977025429:2026-10-04T05:43:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5977025429",
+      "comment_created_at": "2026-10-04T05:43:30Z",
+      "comment_updated_at": "2026-10-04T05:43:30Z",
+      "comment_body_sha256": "2c7aeaabe5fbe965a536657f9ff7de3ce85447fe50b52ec0262b50f4bd8d17e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161344,
+      "author": "azuretek",
+      "author_id": 17463699,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T05:44:32.760Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lobster-llm-adapter-current",
+        "head_sha": "9935db1aad19c2da254801c96d2f1116ccc91498",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
