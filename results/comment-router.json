@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T05:46:10.481Z",
+  "updated_at": "2026-10-04T05:46:57.513Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164465:5972446196:2026-10-03T23:38:25Z:clawsweeper_needs_human",
-      "comment_id": "5972446196",
-      "comment_version_key": "5972446196:2026-10-03T23:38:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164465#issuecomment-5972446196",
-      "comment_created_at": "2026-10-03T18:58:05Z",
-      "comment_updated_at": "2026-10-03T23:38:25Z",
-      "comment_body_sha256": "2937530ca9edb4705b3e1c457324dd58f075146d9383867f35cc04f92d1e2e90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve current-main conflicts and validate the resulting head, including Doctor quarantine/index-repair coverage. (sha=482cd2720708cb8c8eedf230aac219c6c349d0e9)",
-      "expected_head_sha": "482cd2720708cb8c8eedf230aac219c6c349d0e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T23:39:19.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-census-followups-lifecycle-creation-20260919",
-        "head_sha": "482cd2720708cb8c8eedf230aac219c6c349d0e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164590:5974323967:2026-10-03T23:38:43Z:clawsweeper_auto_repair",
       "comment_id": "5974323967",
@@ -32815,6 +32782,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164719:5975946299:2026-10-04T05:45:54Z:clawsweeper_needs_human",
+      "comment_id": "5975946299",
+      "comment_version_key": "5975946299:2026-10-04T05:45:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164719#issuecomment-5975946299",
+      "comment_created_at": "2026-10-04T02:53:55Z",
+      "comment_updated_at": "2026-10-04T05:45:54Z",
+      "comment_body_sha256": "dc32f9380f202943cc9c7b8c2e3369904341c415bf2ee6d5c25465c6cff39f4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164719,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: recorded Telegram single and chained runs positively exercise exec→event queue→heartbeat→originating-t...; Review finding: [medium] Establish ownership validity through delayed delivery — src/infra/heartbeat-runner-execution.ts:401 (sha=4dbc218a5e233c9eb1fcc1cc6d426110906765ea)",
+      "expected_head_sha": "4dbc218a5e233c9eb1fcc1cc6d426110906765ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T05:46:57.513Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-completion-origin-session",
+        "head_sha": "4dbc218a5e233c9eb1fcc1cc6d426110906765ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
