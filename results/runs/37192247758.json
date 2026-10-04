@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164847",
+  "mode": "autonomous",
+  "run_id": "37192247758",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37192247758",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164847.md",
+  "published_at": "2026-10-04T10:06:05.448Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164847",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164847",
+  "canonical_pr": null,
+  "summary": "Confirmed the search-owner validation mismatch in source at preflight main SHA 05db5743550677ed9265b72da3e0d675372c82b3. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. Prepared a narrow fix artifact; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#164847",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164847",
+      "candidate_fix": null,
+      "reason": "A narrow repair to the search owner is supported by current source and documented behavior. A failing runtime regression must still be established before production edits."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164847",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164847",
+      "candidate_fix": null,
+      "reason": "The fix plan is ready for an executor with a writable, independently owned checkout and installed dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164847",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#164847",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until a writable executor reproduces the defect, implements the narrow repair, resolves review findings, and passes focused tests plus pnpm check:changed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
