@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164644",
+  "mode": "autonomous",
+  "run_id": "37166704033",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37166704033",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164644.md",
+  "published_at": "2026-10-04T01:06:06.479Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164644",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164644",
+  "canonical_pr": null,
+  "summary": "Both reported regressions reproduce through source probes on preflight main 7a7bcb8930d9d47a9b2288387b15f8f75b18e3a9. A two-file fix is planned. Implementation and complete validation are blocked in this read-only checkout with missing dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#164644",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164644",
+      "candidate_fix": null,
+      "reason": "The screenshot worker bypasses the documented release reservation contract. Keep the issue open while the executor implements and validates the fix."
+    },
+    {
+      "target": "#164600",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#164644",
+      "candidate_fix": null,
+      "reason": "Merged context is historical evidence, not a repair or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164644",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#164644",
+      "candidate_fix": null,
+      "reason": "The narrow fix artifact is ready; applying and validating it requires the writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164644",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#164644",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor applies the two-file repair and completes validation. This is an execution constraint, not an unresolved maintainer decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
