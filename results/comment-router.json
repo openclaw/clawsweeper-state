@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T08:15:23.264Z",
+  "updated_at": "2026-10-04T08:15:53.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161344:5896777656:2026-10-04T01:44:18Z:clawsweeper_needs_human",
-      "comment_id": "5896777656",
-      "comment_version_key": "5896777656:2026-10-04T01:44:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161344#issuecomment-5896777656",
-      "comment_created_at": "2026-09-29T19:04:27Z",
-      "comment_updated_at": "2026-10-04T01:44:18Z",
-      "comment_body_sha256": "6a7b2fdf964a99693d47601172fae2a10c6b943bd925bf71100258c99a5e54a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161344,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: matching captured-body logs demonstrate this head’s Gateway tool entrypoint reaching real inference an...; Review finding: [P1] [P1] Key provenance by the decoded checkpoint identity — extensions/lobster/src/lobster-checkpoint-provenance.ts:49-54 - [P1] [P1] Authorize the same handle t... (sha=134946619f2c3ff75affd20ff88c11aff7a91ac9)",
-      "expected_head_sha": "134946619f2c3ff75affd20ff88c11aff7a91ac9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T01:45:24.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/lobster-llm-adapter-current",
-        "head_sha": "134946619f2c3ff75affd20ff88c11aff7a91ac9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164677:5975501237:2026-10-04T01:45:12Z:clawsweeper_needs_human",
       "comment_id": "5975501237",
@@ -33272,6 +33239,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164694:5978017853:2026-10-04T08:15:02Z:re_review",
+      "comment_id": "5978017853",
+      "comment_version_key": "5978017853:2026-10-04T08:15:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164694#issuecomment-5978017853",
+      "comment_created_at": "2026-10-04T08:15:02Z",
+      "comment_updated_at": "2026-10-04T08:15:02Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164694,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T08:15:52.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ttsprepare",
+        "head_sha": "4ebfcd375fe80a341f644655fbfbac6fd6ad6d1d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
