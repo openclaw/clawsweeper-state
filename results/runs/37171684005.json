@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-164642",
+  "mode": "autonomous",
+  "run_id": "37171684005",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37171684005",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-164642.md",
+  "published_at": "2026-10-04T03:24:19.826Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/164642",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/164642",
+  "canonical_pr": null,
+  "summary": "Verified the misleading reload help/output on supplied main 4947e8d220e8f50ac322bba3f3f5b14be3bba5e4. Plan one narrow PR clarifying process-local scope, following the accepted alternative recorded in the hydrated review. No code or GitHub mutations performed; runtime validation remains pending.",
+  "actions": [
+    {
+      "target": "#164642",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164642",
+      "candidate_fix": null,
+      "reason": "Clarifying the existing command contract is a narrow ordinary bug fix. Adding authenticated Gateway refresh would introduce a separate control-plane contract and is outside this repair."
+    },
+    {
+      "target": "#91556",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep historical context unchanged; this repair does not implement the broader remote refresh request."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-164642",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#164642",
+      "candidate_fix": null,
+      "reason": "Emit an executable narrow repair plan for the deterministic executor. This worker cannot edit or run write-producing test infrastructure on the read-only host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
