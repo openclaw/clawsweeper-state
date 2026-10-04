@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T17:38:42.755Z",
+  "updated_at": "2026-10-04T17:39:42.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164869:5979191334:2026-10-04T10:51:51Z:re_review",
-      "comment_id": "5979191334",
-      "comment_version_key": "5979191334:2026-10-04T10:51:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164869#issuecomment-5979191334",
-      "comment_created_at": "2026-10-04T10:51:51Z",
-      "comment_updated_at": "2026-10-04T10:51:51Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164869,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:52:43.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incogp7a",
-        "head_sha": "9145490181643a97e1e26596e67d62d718347887",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1738:5936307902:2026-10-04T10:51:54Z:clawsweeper_needs_human",
       "comment_id": "5936307902",
@@ -33386,6 +33339,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1634:5982660710:2026-10-04T17:38:50Z:clawsweeper_needs_human",
+      "comment_id": "5982660710",
+      "comment_version_key": "5982660710:2026-10-04T17:38:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1634#issuecomment-5982660710",
+      "comment_created_at": "2026-10-04T17:38:50Z",
+      "comment_updated_at": "2026-10-04T17:38:50Z",
+      "comment_body_sha256": "da337cce69be15c1b07964666dcad7206173f8833d54a3c089b968ab8c1e8652",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1634,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The reported Windows test exercises ChatMetadataStore and AttachmentMetaMatcher directly, but does not show a real native-chat send followed by... (sha=e15282dc6adb0131b0160fc88f02e7d6e59a6a03)",
+      "expected_head_sha": "e15282dc6adb0131b0160fc88f02e7d6e59a6a03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T17:39:42.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f030-multiline-caption",
+        "head_sha": "e15282dc6adb0131b0160fc88f02e7d6e59a6a03",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
