@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T22:13:32.941Z",
+  "updated_at": "2026-10-04T22:14:20.015Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164936:5981353808:2026-10-04T15:02:32Z:re_review",
-      "comment_id": "5981353808",
-      "comment_version_key": "5981353808:2026-10-04T15:02:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164936#issuecomment-5981353808",
-      "comment_created_at": "2026-10-04T15:02:32Z",
-      "comment_updated_at": "2026-10-04T15:02:32Z",
-      "comment_body_sha256": "45dda97cf9d65507ece8a05e8535669a1aedf78d0db6d3b2e991341d131f5939",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164936,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T15:05:13.345Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-web-fetch-code-literals-20261004",
-        "head_sha": "746af80caca566d13542e288d1cce96bd1754e15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156667:5981368808:2026-10-04T15:04:21Z:re_review",
       "comment_id": "5981368808",
@@ -33168,6 +33121,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-process-death-admission-20261004",
         "head_sha": "65389a93451c1ab1a38b1ce9264a7ba44a32c95e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165021:5982558722:2026-10-04T22:13:26Z:clawsweeper_needs_human",
+      "comment_id": "5982558722",
+      "comment_version_key": "5982558722:2026-10-04T22:13:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165021#issuecomment-5982558722",
+      "comment_created_at": "2026-10-04T17:26:24Z",
+      "comment_updated_at": "2026-10-04T22:13:26Z",
+      "comment_body_sha256": "7c9798b53aa75f5a1c300c7d0f65a76018d4c998c039826f11324971033fc29a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165021,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed A2A account resolver feeds production bearer authentication and outbound delivery, but supplied reg... (sha=b23e9453683e2d2a401d56312923b292d5df712a)",
+      "expected_head_sha": "b23e9453683e2d2a401d56312923b292d5df712a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T22:14:20.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1095",
+        "head_sha": "b23e9453683e2d2a401d56312923b292d5df712a",
         "cluster_id": null,
         "job_path": null
       }
