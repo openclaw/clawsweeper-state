@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-04T06:34:10.953Z",
+  "updated_at": "2026-10-04T06:34:42.124Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5920034397:2026-09-30T21:27:21Z:re_review",
-      "comment_id": "5920034397",
-      "comment_version_key": "5920034397:2026-09-30T21:27:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5920034397",
-      "comment_created_at": "2026-09-30T21:27:21Z",
-      "comment_updated_at": "2026-09-30T21:27:21Z",
-      "comment_body_sha256": "e550f3a64cc2e681eeeafa1b695d5377a3fb943af85925f0c09d25c3844a7357",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T00:35:04.259Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5925777428:2026-10-01T06:09:43Z:re_review",
       "comment_id": "5925777428",
@@ -32743,6 +32716,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164789:5976938633:2026-10-04T06:33:47Z:clawsweeper_needs_human",
+      "comment_id": "5976938633",
+      "comment_version_key": "5976938633:2026-10-04T06:33:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164789#issuecomment-5976938633",
+      "comment_created_at": "2026-10-04T05:29:21Z",
+      "comment_updated_at": "2026-10-04T06:33:47Z",
+      "comment_body_sha256": "275b2b3a927f2290adceb9af05933e76347cf7e6dc2e293c34db160a68466662",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164789,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve detection of methods extracted from child\\_process (P1)** - For const spawn = require(\"node:child_process\").spawn; spawn(\"node\");, the collector adds spawn only to namespace aliases, leaving method alia...; Review finding: [P1] Preserve detection of methods extracted from child_process — src/skills/security/scanner.ts:330-331 - [high] Extracted process methods evade critical findings... (sha=5dccaac6f96e049736852181dce763a8748cfee4)",
+      "expected_head_sha": "5dccaac6f96e049736852181dce763a8748cfee4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T06:34:42.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-artifact-scan-provenance",
+        "head_sha": "5dccaac6f96e049736852181dce763a8748cfee4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
