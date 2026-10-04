@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1144"
 mode: "autonomous"
-run_id: "37168254729"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37168254729"
+run_id: "37169786976"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37169786976"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-04T01:35:04.273Z"
+published_at: "2026-10-04T02:05:59.732Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1144"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1144"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-node-1144
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37168254729](https://github.com/openclaw/clawsweeper/actions/runs/37168254729)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37169786976](https://github.com/openclaw/clawsweeper/actions/runs/37169786976)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1144
 
 ## Summary
 
-No code changed or PR prepared. Inspection matches preflight main, but #1144's affected renderer and current reproduction remain unconfirmed. Native block-selection boundaries do not establish the reported WebView2 cursor-tracking failure. Implementation is also blocked by the read-only Linux environment and failed validation prerequisites.
+Implementation stopped without code changes or a PR. The checkout matches preflight main, but the affected renderer and current-main drag-selection failure remain unconfirmed. Local validation is also blocked by the read-only Linux environment and missing .NET SDK 10.0.400.
 
 ## Impact
 
@@ -48,7 +48,7 @@ No code changed or PR prepared. Inspection matches preflight main, but #1144's a
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,11 @@ No code changed or PR prepared. Inspection matches preflight main, but #1144's a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1144 | keep_canonical | planned | canonical | Retain the canonical report. The job requires stopping without a PR when the implementation is underspecified or unsafe to automate. No verified narrow repair currently connects the reported interaction to an owned code path; a speculative renderer rewrite would not satisfy that requirement. |
-| #1550 | keep_related | planned | related | Related selection friction, but a shared root cause is unproven. Keep open and preserve its separate product-decision scope. |
-| #883 | keep_closed | skipped | related | Historical rendering evidence only. Do not reopen, close again, or claim coverage of #1144. |
-| #997 | keep_closed | skipped | related | Preserve the merged contribution as historical context. It is neither an open repair branch nor a verified fix for the current report. |
+| #1144 | needs_human | blocked | needs_human | A safely scoped implementation requires a failing current-main reproduction tied to the actual renderer. Record app build, Gateway version, UseLegacyWebChat state, deterministic message content, and a drag recording showing whether failure occurs within one paragraph or across separate blocks. Reproduce on an isolated Windows app before choosing the fix owner. The provided artifacts do not establish which renderer requires repair, so a concrete fix artifact cannot safely be emitted. The job explicitly requires stopping when implementation cannot be safely determined. |
+| #1550 | keep_related | planned | related | Keep open as related context. Do not assume a shared root cause or expand this implementation job into native cross-block selection design. |
+| #883 | keep_closed | skipped | related | Historical rendering context only. No closure or repair action applies. |
+| #997 | keep_closed | skipped | related | Preserve the historical contributor work as context. Its merged state does not prove #1144 is fixed on current main. |
 
 ## Needs Human
 
-- none
+- #1144: Confirm the affected renderer using the app build, Gateway version, and UseLegacyWebChat setting, then capture a current-main drag reproduction on an isolated Windows app. The hydrated October 3 review leaves the renderer and reproduction unconfirmed; WebView2 and native Reactor chat have different fix owners.

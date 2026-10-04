@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1144",
+  "mode": "autonomous",
+  "run_id": "37169786976",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37169786976",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1144.md",
+  "published_at": "2026-10-04T02:05:59.732Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1144",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1144",
+  "canonical_pr": null,
+  "summary": "Implementation stopped without code changes or a PR. The checkout matches preflight main, but the affected renderer and current-main drag-selection failure remain unconfirmed. Local validation is also blocked by the read-only Linux environment and missing .NET SDK 10.0.400.",
+  "actions": [
+    {
+      "target": "#1144",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "A safely scoped implementation requires a failing current-main reproduction tied to the actual renderer. Record app build, Gateway version, UseLegacyWebChat state, deterministic message content, and a drag recording showing whether failure occurs within one paragraph or across separate blocks. Reproduce on an isolated Windows app before choosing the fix owner. The provided artifacts do not establish which renderer requires repair, so a concrete fix artifact cannot safely be emitted. The job explicitly requires stopping when implementation cannot be safely determined."
+    },
+    {
+      "target": "#1550",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1144",
+      "candidate_fix": null,
+      "reason": "Keep open as related context. Do not assume a shared root cause or expand this implementation job into native cross-block selection design."
+    },
+    {
+      "target": "#883",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical rendering context only. No closure or repair action applies."
+    },
+    {
+      "target": "#997",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the historical contributor work as context. Its merged state does not prove #1144 is fixed on current main."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#1144: Confirm the affected renderer using the app build, Gateway version, and UseLegacyWebChat setting, then capture a current-main drag reproduction on an isolated Windows app. The hydrated October 3 review leaves the renderer and reproduction unconfirmed; WebView2 and native Reactor chat have different fix owners."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1144",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
