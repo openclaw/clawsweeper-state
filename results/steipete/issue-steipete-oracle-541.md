@@ -2,16 +2,16 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-541"
 mode: "autonomous"
-run_id: "37189745248"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37189745248"
+run_id: "37195776852"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37195776852"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-04T08:45:45.690Z"
+published_at: "2026-10-04T10:37:51.565Z"
 canonical: "https://github.com/steipete/oracle/issues/541"
 canonical_issue: "https://github.com/steipete/oracle/issues/541"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37189745248](https://github.com/openclaw/clawsweeper/actions/runs/37189745248)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37195776852](https://github.com/openclaw/clawsweeper/actions/runs/37195776852)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/oracle/issues/541
 
 ## Summary
 
-Verified the diagnostic gap on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation, validation, and terminal smoke evidence are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.
+Verified the diagnostic gap on supplied main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow implementation remains viable, but the read-only environment blocks edits, validation, and required browser-smoke evidence. No files or GitHub items were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Verified the diagnostic gap on preflight main 5dd3cd855e14dce996038004f4c5b92b47
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #541 | fix_needed | planned | canonical | The opt-in cookie-copy policy landed previously, but the distinct transfer-diagnostics request remains unimplemented. |
-| #367 | keep_closed | skipped | related | Historical context only; no action on the closed issue. |
-| #372 | keep_closed | skipped | related | Preserve the landed authentication policy; this PR does not satisfy #541. |
-| cluster:issue-steipete-oracle-541 | build_fix_artifact | planned | canonical | Provide a concrete executor plan; local implementation requires a writable checkout. |
-| cluster:issue-steipete-oracle-541 | open_fix_pr | blocked | canonical | PR creation is blocked until the narrow implementation passes validation and required redacted terminal evidence is captured in a writable executor environment. |
+| #541 | fix_needed | planned | canonical | Keep #541 open as the canonical implementation request; no closure or merge is authorized. |
+| #367 | keep_closed | skipped | related | Historical policy context; preserve the existing manual-login defaults. |
+| #372 | keep_closed | skipped | related | Historical authentication-policy context, not a fix for #541. |
+| cluster:issue-steipete-oracle-541 | build_fix_artifact | planned | canonical | The artifact is ready for an executor with a writable checkout. Local implementation and PR readiness are blocked by the environment, not by an unresolved product decision. |
 
 ## Needs Human
 
