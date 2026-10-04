@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T15:17:30.988Z",
+  "updated_at": "2026-10-04T15:17:46.829Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164755:5978039472:2026-10-04T08:18:07Z:re_review",
-      "comment_id": "5978039472",
-      "comment_version_key": "5978039472:2026-10-04T08:18:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164755#issuecomment-5978039472",
-      "comment_created_at": "2026-10-04T08:18:07Z",
-      "comment_updated_at": "2026-10-04T08:18:07Z",
-      "comment_body_sha256": "4ab83aeae35d42628282d904e8747799f26c288ac7b8b01376388b6fa57a4ae3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164755,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T08:18:55.316Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/lifemaint",
-        "head_sha": "d07ce205da51855c79d183d648e2a361bb965634",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164820:5977932693:2026-10-04T08:20:09Z:clawsweeper_needs_human",
       "comment_id": "5977932693",
@@ -33660,6 +33613,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-plugin-cleanup-on-restart-20260919",
         "head_sha": "3cf1e6ffc01b619d5600bd904b3afe1f7ae3dcc4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1628:5976323587:2026-10-04T15:16:56Z:clawsweeper_needs_human",
+      "comment_id": "5976323587",
+      "comment_version_key": "5976323587:2026-10-04T15:16:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1628#issuecomment-5976323587",
+      "comment_created_at": "2026-10-04T03:55:03Z",
+      "comment_updated_at": "2026-10-04T15:16:56Z",
+      "comment_body_sha256": "1b64c5bab19362551f104354a93aa62533043ee33552707817f4aa58e2d1099e",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1628,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the production-client socket trace proves successful direct control I/O with zero proxy connections, a...; Review finding: [P2] Verify the parent's process lifetime before authorizing its listener — src/OpenClaw.Connection/FixtureLoopbackListenerOwner.cs:45-48 - [medium] Reused parent... (sha=e4fdb6eb9cd62319a2f4f9ecb7d84e8955a58ddd)",
+      "expected_head_sha": "e4fdb6eb9cd62319a2f4f9ecb7d84e8955a58ddd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T15:17:46.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f009-browser-proxy-direct",
+        "head_sha": "e4fdb6eb9cd62319a2f4f9ecb7d84e8955a58ddd",
         "cluster_id": null,
         "job_path": null
       }
