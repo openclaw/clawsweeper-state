@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T05:18:32.034Z",
+  "updated_at": "2026-10-04T05:18:51.184Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164368:5974541793:2026-10-03T23:20:14Z:re_review",
-      "comment_id": "5974541793",
-      "comment_version_key": "5974541793:2026-10-03T23:20:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164368#issuecomment-5974541793",
-      "comment_created_at": "2026-10-03T23:20:14Z",
-      "comment_updated_at": "2026-10-03T23:20:14Z",
-      "comment_body_sha256": "fc76aaefd8a1b1597b2edf6ab20a24e035d1d1834c05c447fc650284e1d4ab45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164368,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: exact head ff311f77ed36caa405abf91688a718f0898bc2e8 now has built-gateway real websocket-to-stdio-mcp before/after cursor traces, unchanged aggregation/discovery controls, failing-before/passing-after installed regressions with standalone single-worker timings, and one real provider smoke. evidence and explicit browser-proof limit are in the updated pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-03T23:21:11.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-app-cursors-164365",
-        "head_sha": "ff311f77ed36caa405abf91688a718f0898bc2e8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3870:5919821431:2026-10-03T23:20:28Z:clawsweeper_needs_human",
       "comment_id": "5919821431",
@@ -32759,6 +32712,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164727:5976064165:2026-10-04T05:17:53Z:clawsweeper_needs_human",
+      "comment_id": "5976064165",
+      "comment_version_key": "5976064165:2026-10-04T05:17:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164727#issuecomment-5976064165",
+      "comment_created_at": "2026-10-04T03:12:15Z",
+      "comment_updated_at": "2026-10-04T05:17:53Z",
+      "comment_body_sha256": "ab2e2eb5913ca9bdf4c80fd35f3fde08a5b8567a524d71e94621d1babfd6efa5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6663bac175fcba157a8064646b0e2ef2add7396e)",
+      "expected_head_sha": "6663bac175fcba157a8064646b0e2ef2add7396e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T05:18:51.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incogp6",
+        "head_sha": "6663bac175fcba157a8064646b0e2ef2add7396e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
