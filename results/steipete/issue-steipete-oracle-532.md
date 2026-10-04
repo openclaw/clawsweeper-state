@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-532"
 mode: "autonomous"
-run_id: "37189636379"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37189636379"
+run_id: "37195665521"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37195665521"
 head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-04T08:43:38.784Z"
+published_at: "2026-10-04T10:36:17.113Z"
 canonical: "https://github.com/steipete/oracle/issues/532"
 canonical_issue: "https://github.com/steipete/oracle/issues/532"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37189636379](https://github.com/openclaw/clawsweeper/actions/runs/37189636379)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37195665521](https://github.com/openclaw/clawsweeper/actions/runs/37195665521)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/532
 
 ## Summary
 
-Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 and prepared a narrow implementation artifact. Implementation is blocked by the read-only filesystem; focused tests and typecheck both failed before starting because Corepack could not create its cache. No files or GitHub items were changed.
+Confirmed the reported cwd-wide ignore discovery on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow repair remains viable. Implementation and validation are blocked by the read-only filesystem and absent target dependencies; no files or GitHub items were changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #532 | fix_needed | planned | canonical | The reported traversal defect remains real and has a narrow repair surface. Implementation and after-fix verification require a writable checkout with dependencies available. |
-| cluster:issue-steipete-oracle-532 | build_fix_artifact | planned |  | The artifact is ready for a writable executor to implement and validate; it does not authorize merge or issue closure. |
+| #532 | fix_needed | planned | canonical | The source proves a focused collector defect. Keep this issue as the canonical request and implement one repair PR without closing or merging. |
+| cluster:issue-steipete-oracle-532 | build_fix_artifact | planned |  | The artifact can be built from read-only inspection; applying it and obtaining validation proof require a writable executor. |
 
 ## Needs Human
 
