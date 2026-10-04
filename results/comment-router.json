@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T17:25:14.012Z",
+  "updated_at": "2026-10-04T17:26:53.864Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164755:5979171218:2026-10-04T10:49:41Z:re_review",
-      "comment_id": "5979171218",
-      "comment_version_key": "5979171218:2026-10-04T10:49:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164755#issuecomment-5979171218",
-      "comment_created_at": "2026-10-04T10:49:41Z",
-      "comment_updated_at": "2026-10-04T10:49:41Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164755,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T10:50:32.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/lifemaint",
-        "head_sha": "494871c186eaf8edfd1fa3c84fa97d3a224847fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164867:5979183739:2026-10-04T10:51:01Z:clawsweeper_needs_human",
       "comment_id": "5979183739",
@@ -33373,6 +33326,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1633:5982555864:2026-10-04T17:26:03Z:clawsweeper_needs_human",
+      "comment_id": "5982555864",
+      "comment_version_key": "5982555864:2026-10-04T17:26:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1633#issuecomment-5982555864",
+      "comment_created_at": "2026-10-04T17:26:03Z",
+      "comment_updated_at": "2026-10-04T17:26:03Z",
+      "comment_body_sha256": "c31d75e380a1560bf768574aacc6120459c07c6f15b6a59a4eee4612bd8f9798",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Logger.WriterLoopAsync now delays failed file writes, but the supplied Windows evidence exercises only the pure delay helper. It does not demon... (sha=ffa09cc179a3a5bded68b9a91a7fabcb473ea5c0)",
+      "expected_head_sha": "ffa09cc179a3a5bded68b9a91a7fabcb473ea5c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T17:26:53.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f040-log-writer-backoff",
+        "head_sha": "ffa09cc179a3a5bded68b9a91a7fabcb473ea5c0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
