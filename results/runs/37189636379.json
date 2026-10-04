@@ -1,0 +1,52 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37189636379",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37189636379",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-04T08:43:38.784Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Verified the defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 and prepared a narrow implementation artifact. Implementation is blocked by the read-only filesystem; focused tests and typecheck both failed before starting because Corepack could not create its cache. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The reported traversal defect remains real and has a narrow repair surface. Implementation and after-fix verification require a writable checkout with dependencies available."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for a writable executor to implement and validate; it does not authorize merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
