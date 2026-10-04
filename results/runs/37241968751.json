@@ -1,0 +1,73 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-535",
+  "mode": "autonomous",
+  "run_id": "37241968751",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37241968751",
+  "head_sha": "6e783d80e5177979744dbc72dd1f6a32c7f134d7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-535.md",
+  "published_at": "2026-10-04T23:02:25.389Z",
+  "canonical": "https://github.com/steipete/oracle/issues/535",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/535",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact against preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Implementation is blocked by the read-only workspace and unavailable installed dependencies. No regression, patch, successful validation, or after-fix Chrome evidence was produced.",
+  "actions": [
+    {
+      "target": "#535",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "The reported supported-dependency integration defect retains a narrow repair path. Runtime reproduction remains required before implementation."
+    },
+    {
+      "target": "#538",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different discovery path and remaining work; retain for its own focused job."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate this bounded integration repair without changing product policy."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "PR preparation requires a writable checkout, installed dependencies, a failing 1.2.2 regression, passing validation, and redacted after-fix cold-start evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
