@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T01:41:56.747Z",
+  "updated_at": "2026-10-04T01:42:10.100Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126392:5346286100:2026-10-03T18:16:16Z:clawsweeper_needs_human",
-      "comment_id": "5346286100",
-      "comment_version_key": "5346286100:2026-10-03T18:16:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126392#issuecomment-5346286100",
-      "comment_created_at": "2026-08-19T18:22:36Z",
-      "comment_updated_at": "2026-10-03T18:16:16Z",
-      "comment_body_sha256": "142e09bd122574c7428f70a0bc1c50301b00c3469e1cdbac15d804e3d32b8ddc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A real-Gateway automation-management case timed out in the reported CI run. Its original cause is still unknown; the passing isolated replay does not establish an owning fix. (sha=861a757060bf7214d77ac349b8ca7791f07db812)",
-      "expected_head_sha": "861a757060bf7214d77ac349b8ca7791f07db812",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T19:00:49.346Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/hovercard-avatar-auth-refresh",
-        "head_sha": "861a757060bf7214d77ac349b8ca7791f07db812",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126642:5355098515:2026-10-03T18:16:47Z:clawsweeper_auto_repair",
       "comment_id": "5355098515",
@@ -33549,6 +33516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164630:5975476338:2026-10-04T01:41:16Z:re_review",
+      "comment_id": "5975476338",
+      "comment_version_key": "5975476338:2026-10-04T01:41:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164630#issuecomment-5975476338",
+      "comment_created_at": "2026-10-04T01:41:16Z",
+      "comment_updated_at": "2026-10-04T01:41:16Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164630,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T01:42:08.450Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/acctctl",
+        "head_sha": "151abdc63a528ce6c1262d408c43bb6df77aac0b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
