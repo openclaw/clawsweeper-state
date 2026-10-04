@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-04T06:05:08.194Z",
+  "updated_at": "2026-10-04T06:04:38.982Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164593:5974824442:2026-10-04T00:03:03Z:re_review",
+      "comment_id": "5974824442",
+      "comment_version_key": "5974824442:2026-10-04T00:03:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164593#issuecomment-5974824442",
+      "comment_created_at": "2026-10-04T00:03:03Z",
+      "comment_updated_at": "2026-10-04T00:03:03Z",
+      "comment_body_sha256": "693225eebc9156956d19890b8daa2df047a0e071added2441b456ea1a9e6336f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164593,
+      "author": "TheAngryPit",
+      "author_id": 7040636,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T00:04:04.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/operator-profile-display-20261003",
+        "head_sha": "abc9126e291fd5f060bbbd59459d92ca90a03bb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164607:5974824821:2026-10-04T00:03:06Z:re_review",
       "comment_id": "5974824821",
@@ -32750,39 +32797,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1197:5977158083:2026-10-04T06:04:19Z:clawsweeper_needs_human",
-      "comment_id": "5977158083",
-      "comment_version_key": "5977158083:2026-10-04T06:04:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1197#issuecomment-5977158083",
-      "comment_created_at": "2026-10-04T06:04:19Z",
-      "comment_updated_at": "2026-10-04T06:04:19Z",
-      "comment_body_sha256": "86b739b1f99fad3d0ebc1bbb2b0a4ef6d5a6fa39e56c64c90528a2de9e71c76b",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1197,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the supported-caller and integration-test exception decision, and update the credential reference and service flow for the changed cleanup semantics. (sha=db0b749de87156ea3fd0dc46654bc949424b7e94)",
-      "expected_head_sha": "db0b749de87156ea3fd0dc46654bc949424b7e94",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T06:05:08.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repository-credentials-expiry-only-sweep",
-        "head_sha": "db0b749de87156ea3fd0dc46654bc949424b7e94",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
