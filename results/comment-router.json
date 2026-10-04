@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T19:26:33.857Z",
+  "updated_at": "2026-10-04T19:27:07.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164883:5979706134:2026-10-04T12:01:17Z:re_review",
-      "comment_id": "5979706134",
-      "comment_version_key": "5979706134:2026-10-04T12:01:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164883#issuecomment-5979706134",
-      "comment_created_at": "2026-10-04T12:01:17Z",
-      "comment_updated_at": "2026-10-04T12:01:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164883,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T12:02:17.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incogp7b",
-        "head_sha": "8ac04a5e4bf25aee18066e19984795f643b238d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164372:5970591362:2026-10-04T12:01:25Z:clawsweeper_needs_human",
       "comment_id": "5970591362",
@@ -33632,6 +33585,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165012:5982239801:2026-10-04T19:26:07Z:clawsweeper_needs_human",
+      "comment_id": "5982239801",
+      "comment_version_key": "5982239801:2026-10-04T19:26:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165012#issuecomment-5982239801",
+      "comment_created_at": "2026-10-04T16:47:15Z",
+      "comment_updated_at": "2026-10-04T19:26:07Z",
+      "comment_body_sha256": "7ab54ebb8aec11cdd2e8468df5fbe2f7700e2749c16289f6ef573a03860ee855",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165012,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the reported main-branch conflicts while preserving async auth preparation, delegate policy preparation, and synchronous SDK compatibility, then review the resolution and vali... (sha=06a63457328dafd365e7b8d96ce66e6a649ed9ea)",
+      "expected_head_sha": "06a63457328dafd365e7b8d96ce66e6a649ed9ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T19:27:07.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/delegateexec",
+        "head_sha": "06a63457328dafd365e7b8d96ce66e6a649ed9ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
