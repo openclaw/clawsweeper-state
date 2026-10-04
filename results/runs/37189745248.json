@@ -1,0 +1,83 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-541",
+  "mode": "autonomous",
+  "run_id": "37189745248",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37189745248",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-541.md",
+  "published_at": "2026-10-04T08:45:45.690Z",
+  "canonical": "https://github.com/steipete/oracle/issues/541",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/541",
+  "canonical_pr": null,
+  "summary": "Verified the diagnostic gap on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation, validation, and terminal smoke evidence are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#541",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#541",
+      "candidate_fix": null,
+      "reason": "The opt-in cookie-copy policy landed previously, but the distinct transfer-diagnostics request remains unimplemented."
+    },
+    {
+      "target": "#367",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no action on the closed issue."
+    },
+    {
+      "target": "#372",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed authentication policy; this PR does not satisfy #541."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-541",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#541",
+      "candidate_fix": null,
+      "reason": "Provide a concrete executor plan; local implementation requires a writable checkout."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-541",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#541",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked until the narrow implementation passes validation and required redacted terminal evidence is captured in a writable executor environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
