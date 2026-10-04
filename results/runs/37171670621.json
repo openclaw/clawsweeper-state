@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120978",
+  "mode": "autonomous",
+  "run_id": "37171670621",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37171670621",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120978.md",
+  "published_at": "2026-10-04T03:31:08.833Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120978",
+  "canonical_pr": null,
+  "summary": "The admission cancellation gap remains in source at preflight main 4947e8d220e8f50ac322bba3f3f5b14be3bba5e4. A narrow repair artifact is prepared, but implementation and the required failing HTTP regression are blocked by this host's read-only filesystem and absent dependency tree. No code or GitHub state changed; no runtime validation or fresh review was completed.",
+  "actions": [
+    {
+      "target": "#120978",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "The ordinary lifecycle bug has a clear narrow repair path. Implementation must begin with a failing current-main HTTP regression on a writable isolated executor."
+    },
+    {
+      "target": "#120979",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Historical contributor work remains useful evidence and deserves explicit credit. Its unmerged closure does not resolve the canonical issue."
+    },
+    {
+      "target": "#164206",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Distinct landed repair provides sibling behavior to preserve, not a fix for disconnected pending admission."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120978",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120978",
+      "candidate_fix": null,
+      "reason": "Preparation is complete enough for a scoped executor handoff; no PR may be published before reproduction, implementation, validation, and fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
