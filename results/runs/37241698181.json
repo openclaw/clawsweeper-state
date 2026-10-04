@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-532",
+  "mode": "autonomous",
+  "run_id": "37241698181",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37241698181",
+  "head_sha": "6e783d80e5177979744dbc72dd1f6a32c7f134d7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-532.md",
+  "published_at": "2026-10-04T22:57:03.854Z",
+  "canonical": "https://github.com/steipete/oracle/issues/532",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/532",
+  "canonical_pr": null,
+  "summary": "Verified the reported defect on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow implementation remains viable. Fix artifact prepared; implementation and validation are blocked by the read-only checkout and absent dependencies. No code or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#532",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The supported directory/glob collector still performs unrelated recursive ignore discovery. Repair only that discovery path while retaining attachment-selection behavior."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "The finding is source-proven and sufficiently narrow for a new fix PR; no unresolved product decision requires human triage."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-532",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#532",
+      "candidate_fix": null,
+      "reason": "Implementation and validation must run in a writable executor before opening or updating the single implementation PR. This is an environment blocker, not a maintainer judgment decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
