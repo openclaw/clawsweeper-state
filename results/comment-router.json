@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T02:38:46.512Z",
+  "updated_at": "2026-10-04T02:39:01.727Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164138:5966839604:2026-10-03T20:23:28Z:clawsweeper_needs_human",
-      "comment_id": "5966839604",
-      "comment_version_key": "5966839604:2026-10-03T20:23:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164138#issuecomment-5966839604",
-      "comment_created_at": "2026-10-03T07:38:32Z",
-      "comment_updated_at": "2026-10-03T20:23:28Z",
-      "comment_body_sha256": "416af6a523aa5a8bfcebc7d3bed298e57f051cd6ad0529be1cc09b54bfc2d7f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: This branch exercises the disk monitor through a mocked tunnel and controlled clock; it supplies no real transport run of its backoff. The merg... (sha=aad8665b8ea0934062e95d9d27d8a943b2e5339c)",
-      "expected_head_sha": "aad8665b8ea0934062e95d9d27d8a943b2e5339c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T20:24:21.318Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-disk-space-stale-node",
-        "head_sha": "aad8665b8ea0934062e95d9d27d8a943b2e5339c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164476:5972625473:2026-10-03T20:23:26Z:clawsweeper_needs_human",
       "comment_id": "5972625473",
@@ -32925,6 +32892,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164476:5975848130:2026-10-04T02:38:04Z:re_review",
+      "comment_id": "5975848130",
+      "comment_version_key": "5975848130:2026-10-04T02:38:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164476#issuecomment-5975848130",
+      "comment_created_at": "2026-10-04T02:38:04Z",
+      "comment_updated_at": "2026-10-04T02:38:04Z",
+      "comment_body_sha256": "24168bb5f9f8d0b6e0e41b58eee7f94cc99533333d30d964ca262a67e57da144",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164476,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T02:39:00.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/pairallow",
+        "head_sha": "0053c28a3ab0dd0b0cc1032cc3e1cbed720f7185",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
