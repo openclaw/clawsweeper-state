@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T15:21:56.166Z",
+  "updated_at": "2026-10-04T15:22:16.064Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139221:5553404933:2026-10-04T08:23:02Z:clawsweeper_needs_human",
-      "comment_id": "5553404933",
-      "comment_version_key": "5553404933:2026-10-04T08:23:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139221#issuecomment-5553404933",
-      "comment_created_at": "2026-09-05T17:06:30Z",
-      "comment_updated_at": "2026-10-04T08:23:02Z",
-      "comment_body_sha256": "4df7122d0c0ade14cf097eaed2cb54bd229881f9df23b154e0d3a59b554a2f4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139221,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; the refreshed implementation must preserve current main’s command and completion lifecycle refactors. (sha=4fd3386c2fe6dd5e15c1b7ba15f359fffef7621e)",
-      "expected_head_sha": "4fd3386c2fe6dd5e15c1b7ba15f359fffef7621e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T08:24:07.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/model-prompt-stdin",
-        "head_sha": "4fd3386c2fe6dd5e15c1b7ba15f359fffef7621e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139230:5553616619:2026-10-04T08:23:25Z:clawsweeper_needs_human",
       "comment_id": "5553616619",
@@ -33677,6 +33644,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113089:5981520491:2026-10-04T15:21:17Z:re_review",
+      "comment_id": "5981520491",
+      "comment_version_key": "5981520491:2026-10-04T15:21:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5981520491",
+      "comment_created_at": "2026-10-04T15:21:17Z",
+      "comment_updated_at": "2026-10-04T15:21:17Z",
+      "comment_body_sha256": "17bc6dd5a76c74a4bdae98b852d80131b79376f9db2ef3087d30d97afe7103de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113089,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T15:22:14.461Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/spawn-session-id",
+        "head_sha": "b81a9ffdc4fff10a569622bd60e9e4d38c5ec75a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
