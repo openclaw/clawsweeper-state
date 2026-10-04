@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T10:10:20.411Z",
+  "updated_at": "2026-10-04T10:10:33.510Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:46:5975908477:2026-10-04T02:47:45Z:clawsweeper_needs_human",
-      "comment_id": "5975908477",
-      "comment_version_key": "5975908477:2026-10-04T02:47:45Z",
-      "comment_url": "https://github.com/openclaw/turnwire/pull/46#issuecomment-5975908477",
-      "comment_created_at": "2026-10-04T02:47:45Z",
-      "comment_updated_at": "2026-10-04T02:47:45Z",
-      "comment_body_sha256": "30126b3926ca3440c08db975d197d1f8c212ce0151307c1cb7586986990bf863",
-      "repo": "openclaw/turnwire",
-      "issue_number": 46,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied test transcript exercises approval storage in temporary directories, but does not show a real Turnwire review reaching CLI display... (sha=04ff3a9bfaeda6141f1795d056d88f37f8ffa551)",
-      "expected_head_sha": "04ff3a9bfaeda6141f1795d056d88f37f8ffa551",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T02:48:34.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turnwire-f004",
-        "head_sha": "04ff3a9bfaeda6141f1795d056d88f37f8ffa551",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:114:5975910370:2026-10-04T02:48:03Z:clawsweeper_needs_human",
       "comment_id": "5975910370",
@@ -34036,6 +34003,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164685:5978873815:2026-10-04T10:09:25Z:re_review",
+      "comment_id": "5978873815",
+      "comment_version_key": "5978873815:2026-10-04T10:09:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164685#issuecomment-5978873815",
+      "comment_created_at": "2026-10-04T10:09:25Z",
+      "comment_updated_at": "2026-10-04T10:09:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164685,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T10:10:31.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/wtlookup",
+        "head_sha": "bf604ea2b8c671023dad4646a8a338fe32afc0bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
