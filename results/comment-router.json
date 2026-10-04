@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T08:08:34.531Z",
+  "updated_at": "2026-10-04T08:08:58.071Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124275:5304118293:2026-10-04T01:38:47Z:clawsweeper_needs_human",
-      "comment_id": "5304118293",
-      "comment_version_key": "5304118293:2026-10-04T01:38:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124275#issuecomment-5304118293",
-      "comment_created_at": "2026-08-15T20:35:23Z",
-      "comment_updated_at": "2026-10-04T01:38:47Z",
-      "comment_body_sha256": "183a231a1307ca9960d6daba789a084aeedf861558ef9b8b6dbcb170210bfb4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124275,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing non-live runs with restrictive global security and a partial agent block will stop receiving OpenClaw's implicit native-tool bypass and can refuse permissioned actions. Execu... (sha=a92a96c76bfad396beb551c70f6193fc11921f3b)",
-      "expected_head_sha": "a92a96c76bfad396beb551c70f6193fc11921f3b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T01:39:42.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-exec-policy-layering",
-        "head_sha": "a92a96c76bfad396beb551c70f6193fc11921f3b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124275:5603838659:2026-09-09T14:48:30Z:re_review",
       "comment_id": "5603838659",
@@ -33286,6 +33253,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164824:5977970663:2026-10-04T08:08:05Z:re_review",
+      "comment_id": "5977970663",
+      "comment_version_key": "5977970663:2026-10-04T08:08:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164824#issuecomment-5977970663",
+      "comment_created_at": "2026-10-04T08:08:05Z",
+      "comment_updated_at": "2026-10-04T08:08:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164824,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T08:08:56.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/wtrunend",
+        "head_sha": "a8c7355dc07b5120691fe0145995655ba7342915",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
