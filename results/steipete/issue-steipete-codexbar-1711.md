@@ -2,16 +2,16 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-1711"
 mode: "autonomous"
-run_id: "36367447933"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/36367447933"
-head_sha: "8d659e7cb903370596e26acea5b81399f291c174"
+run_id: "37195822261"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37195822261"
+head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-28T03:08:21.395Z"
+published_at: "2026-10-04T10:39:22.549Z"
 canonical: "https://github.com/steipete/CodexBar/issues/1711"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/1711"
 canonical_pr: null
-actions_total: 2
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/36367447933](https://github.com/openclaw/clawsweeper/actions/runs/36367447933)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37195822261](https://github.com/openclaw/clawsweeper/actions/runs/37195822261)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/CodexBar/issues/1711
 
 ## Summary
 
-No safe implementation can be selected for #1711 yet. Current main already handles the documented Tahoe status-item failure states, while the remaining reports lack a failing current-build startup trace identifying the branch that fails.
+Implementation blocked: the remaining Control Center failures lack a correlated current-build trace establishing a narrow CodexBar defect. Existing recovery and diagnostics are present on preflight main. The owner explicitly rejects further defaults mutation without additional evidence. No code or GitHub changes were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,15 @@ No safe implementation can be selected for #1711 yet. Current main already handl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1711 | keep_canonical | planned | canonical | The remaining failure needs a diagnostic trace before its cause can be distinguished from crowding, menu-manager placement, Control Center hosting, or invisible rendered content. |
-| cluster:issue-steipete-codexbar-1711 | needs_human | blocked | needs_human | A person experiencing the missing icon must provide a redacted startup Debug Log from an affected current build showing status-item snapshots and the recovery outcome. Without that trace, the failing branch and a safe edit surface cannot be identified. |
+| #1711 | keep_canonical | planned | canonical | Keep the remaining reports open; neither an already-fixed outcome nor a safe additional implementation is established. |
+| #1440 | keep_closed | skipped | related | Historical evidence only. |
+| #1945 | keep_closed | skipped | related | Historical evidence does not establish that the remaining macOS-owned mapping problem is fixed. |
+| #4012 | keep_closed | skipped | related | Historical diagnostic work; no merge or repair action for this closed PR. |
+| #4022 | keep_closed | skipped | related | Related shutdown fix, not a demonstrated resolution of #1711. |
+| #4033 | keep_closed | skipped | related | Related identity repair; historical context only. |
+| #4082 | keep_closed | skipped | related | Related position validation, not coverage of the remaining issue. |
+| cluster:issue-steipete-codexbar-1711 | needs_human | blocked | needs_human | Implementation requires a failing current-build startup trace correlated with visibility defaults, AppKit/window geometry, Control Center hosting, and menu-manager state. Maintainer assessment of that trace is needed to establish a narrow repair consistent with the owner's no-further-defaults-mutation decision; no executable fix artifact is justified by the supplied evidence. |
 
 ## Needs Human
 
-- Obtain a redacted failing current-build startup Debug Log for #1711 showing status-item snapshots and the recovery outcome before selecting an implementation.
+- For #1711 implementation only: obtain and assess a failing current-build startup trace correlated with visibility defaults, AppKit/window geometry, Control Center hosting, and menu-manager state to identify a narrow CodexBar repair consistent with the owner's September 24 no-further-defaults-mutation decision. The supplied comments and unhydrated #3377 reference do not establish that repair.
