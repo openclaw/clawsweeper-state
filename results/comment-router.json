@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T22:10:22.053Z",
+  "updated_at": "2026-10-04T22:10:31.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3870:5975928851:2026-10-04T02:51:03Z:re_review",
-      "comment_id": "5975928851",
-      "comment_version_key": "5975928851:2026-10-04T02:51:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3870#issuecomment-5975928851",
-      "comment_created_at": "2026-10-04T02:51:03Z",
-      "comment_updated_at": "2026-10-04T02:51:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3870,
-      "author": "Irish-Joseph",
-      "author_id": 135312096,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T14:23:57.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-mode-windows-test",
-        "head_sha": "451696df88d29e73d8c1365bfd71dbbddabc8e6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3870:5919821431:2026-10-04T14:23:06Z:clawsweeper_needs_human",
       "comment_id": "5919821431",
@@ -33855,6 +33808,39 @@
         "kind": "pull_request",
         "branch": "steipete/zen-margulis-eabe88",
         "head_sha": "ad429f4c0f592557d1751e7706c8e29926347d56",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1639:5984474099:2026-10-04T22:09:44Z:clawsweeper_needs_human",
+      "comment_id": "5984474099",
+      "comment_version_key": "5984474099:2026-10-04T22:09:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1639#issuecomment-5984474099",
+      "comment_created_at": "2026-10-04T21:17:08Z",
+      "comment_updated_at": "2026-10-04T22:09:44Z",
+      "comment_body_sha256": "e5c70e1f882ba62ac3d345e8a7405b50f5468b00036106e4130d7a8e52551bca",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1639,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The explicit environment and private config-file path have not demonstrated successful contained execution on a supported PSEC client; fallback success cannot establish native deliver... (sha=7dd04a1585376113975e308a076a11896013798e)",
+      "expected_head_sha": "7dd04a1585376113975e308a076a11896013798e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T22:10:31.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/system-run-execution-context-v1",
+        "head_sha": "7dd04a1585376113975e308a076a11896013798e",
         "cluster_id": null,
         "job_path": null
       }
