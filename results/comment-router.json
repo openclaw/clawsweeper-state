@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T09:35:41.801Z",
+  "updated_at": "2026-10-04T09:35:48.123Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164476:5975682970:2026-10-04T02:13:49Z:re_review",
-      "comment_id": "5975682970",
-      "comment_version_key": "5975682970:2026-10-04T02:13:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164476#issuecomment-5975682970",
-      "comment_created_at": "2026-10-04T02:13:49Z",
-      "comment_updated_at": "2026-10-04T02:13:49Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164476,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T02:14:49.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/pairallow",
-        "head_sha": "ddf57da1cf4d5da062558be74db146fcce2a15b4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1147:5975692836:2026-10-04T02:15:13Z:clawsweeper_needs_human",
       "comment_id": "5975692836",
@@ -33941,6 +33894,39 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/oce-development-pool-close",
         "head_sha": "7cc22ac145b2a25c557b19e1830321fdcf4887a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164850:5978564765:2026-10-04T09:34:58Z:clawsweeper_needs_human",
+      "comment_id": "5978564765",
+      "comment_version_key": "5978564765:2026-10-04T09:34:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164850#issuecomment-5978564765",
+      "comment_created_at": "2026-10-04T09:34:58Z",
+      "comment_updated_at": "2026-10-04T09:34:58Z",
+      "comment_body_sha256": "defd4aba848acbfe261e4684c8b7d757838f0f0306743ff32c5d2353844f5fa2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164850,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add measured cost for pnpm test extensions/policy/src/cli.watch-interval.test.ts --maxWorkers=1 to the PR body, including CI seconds once available. (sha=a0d2769177f353e8ca8246096c4832536378891d)",
+      "expected_head_sha": "a0d2769177f353e8ca8246096c4832536378891d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T09:35:48.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/policy-watch-interval-overflow",
+        "head_sha": "a0d2769177f353e8ca8246096c4832536378891d",
         "cluster_id": null,
         "job_path": null
       }
