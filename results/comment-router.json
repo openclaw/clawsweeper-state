@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T18:01:54.272Z",
+  "updated_at": "2026-10-04T18:02:55.057Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164884:5979410630:2026-10-04T11:22:09Z:re_review",
-      "comment_id": "5979410630",
-      "comment_version_key": "5979410630:2026-10-04T11:22:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164884#issuecomment-5979410630",
-      "comment_created_at": "2026-10-04T11:22:09Z",
-      "comment_updated_at": "2026-10-04T11:22:09Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164884,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T11:23:04.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-read-unavailable-error",
-        "head_sha": "359ea0b0e54fe63e8b457f6e576114dfff00d483",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164660:5979416914:2026-10-04T11:23:00Z:re_review",
       "comment_id": "5979416914",
@@ -33403,6 +33356,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165028:5982766886:2026-10-04T18:02:00Z:clawsweeper_needs_human",
+      "comment_id": "5982766886",
+      "comment_version_key": "5982766886:2026-10-04T18:02:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165028#issuecomment-5982766886",
+      "comment_created_at": "2026-10-04T17:52:13Z",
+      "comment_updated_at": "2026-10-04T18:02:00Z",
+      "comment_body_sha256": "efda3c9af9d7b4ebae697974b6f03c02492ae7174c17bb7a2e11f7b0194e9432",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165028,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed admission and lifecycle shutdown scheduling has not passed the required published-version-to-candidate update cell, leaving replacement Gateway readiness and settlement wi... (sha=e2c53ebe9b2f16faf32712541e245bd2b63f665d)",
+      "expected_head_sha": "e2c53ebe9b2f16faf32712541e245bd2b63f665d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T18:02:55.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sessauthtail",
+        "head_sha": "e2c53ebe9b2f16faf32712541e245bd2b63f665d",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
