@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T07:46:10.488Z",
+  "updated_at": "2026-10-04T07:46:20.748Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164520:5973232234:2026-10-04T01:21:10Z:clawsweeper_needs_human",
-      "comment_id": "5973232234",
-      "comment_version_key": "5973232234:2026-10-04T01:21:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164520#issuecomment-5973232234",
-      "comment_created_at": "2026-10-03T20:33:44Z",
-      "comment_updated_at": "2026-10-04T01:21:10Z",
-      "comment_body_sha256": "a2dbefc1611ceae516295df6a835c0ea46b5d558aaa7bff4935e38737175c13e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164520,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=d60bfc2386ea8006309bcd67fe6d859ccb3359e8)",
-      "expected_head_sha": "d60bfc2386ea8006309bcd67fe6d859ccb3359e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T01:22:09.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/x10-unpaid-caches-20261003",
-        "head_sha": "d60bfc2386ea8006309bcd67fe6d859ccb3359e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164656:5975351530:2026-10-04T01:21:54Z:clawsweeper_auto_repair",
       "comment_id": "5975351530",
@@ -33211,6 +33178,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164789:5977815512:2026-10-04T07:45:23Z:re_review",
+      "comment_id": "5977815512",
+      "comment_version_key": "5977815512:2026-10-04T07:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164789#issuecomment-5977815512",
+      "comment_created_at": "2026-10-04T07:45:23Z",
+      "comment_updated_at": "2026-10-04T07:45:23Z",
+      "comment_body_sha256": "a17655e367c5c6fe9990e17a74f0421e7e3a15dc7335192adc2a5c0385a4d05e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164789,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T07:46:19.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-artifact-scan-provenance",
+        "head_sha": "0dfcb52210b9ee99cd553a33334aed05cb896995",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
