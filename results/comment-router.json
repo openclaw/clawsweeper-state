@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T05:06:45.973Z",
+  "updated_at": "2026-10-04T05:07:38.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164589:5974299588:2026-10-03T23:02:19Z:clawsweeper_needs_human",
-      "comment_id": "5974299588",
-      "comment_version_key": "5974299588:2026-10-03T23:02:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164589#issuecomment-5974299588",
-      "comment_created_at": "2026-10-03T22:47:22Z",
-      "comment_updated_at": "2026-10-03T23:02:19Z",
-      "comment_body_sha256": "6cf9a1d77b806c923726e5a0b4597a48e9ca0fdbcdc8246e5f59cf90f343ddc7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required three original-shard runs and owner sibling coverage are not documented, leaving cross-test timer and cleanup interactions unverified. (sha=834de449fa2791f7bf3187aa2fd14264cbd212bd)",
-      "expected_head_sha": "834de449fa2791f7bf3187aa2fd14264cbd212bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T23:03:08.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-run-attempt-completed-work-flake",
-        "head_sha": "834de449fa2791f7bf3187aa2fd14264cbd212bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164584:5974203666:2026-10-03T23:03:57Z:clawsweeper_auto_repair",
       "comment_id": "5974203666",
@@ -32741,6 +32708,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164775:5976803428:2026-10-04T05:06:53Z:clawsweeper_needs_human",
+      "comment_id": "5976803428",
+      "comment_version_key": "5976803428:2026-10-04T05:06:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164775#issuecomment-5976803428",
+      "comment_created_at": "2026-10-04T05:06:53Z",
+      "comment_updated_at": "2026-10-04T05:06:53Z",
+      "comment_body_sha256": "222f1b382fbd4a7b9eb2bcb9e0f32ac8ef1dc507eefce20973a8f6add1ea73d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured macOS real-exec trace positively proves ordinary ls succeeds and hidden touch is denied a...; Review finding: [P1] [P1] Preserve control-command guards when rejecting an explanation — src/infra/command-explainer/extract.ts:1187 - [high] Invalid explanations weaken the live... (sha=a40e2ae4dc936b8c6d812c0b1727735e4cfb1317)",
+      "expected_head_sha": "a40e2ae4dc936b8c6d812c0b1727735e4cfb1317",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T05:07:38.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shell-plan-control-char-comment",
+        "head_sha": "a40e2ae4dc936b8c6d812c0b1727735e4cfb1317",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
