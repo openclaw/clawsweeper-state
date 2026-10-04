@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165061",
+  "mode": "autonomous",
+  "run_id": "37228471223",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37228471223",
+  "head_sha": "f7c8c55f33a2a0bd28a09b5999a11f5b85196436",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165061.md",
+  "published_at": "2026-10-04T19:34:35.999Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165061",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165061",
+  "canonical_pr": null,
+  "summary": "The source gap remains on preflight main f0b38edab5da3f9b9d827e319826c75258619b05. A narrow repair plan is ready, but implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#165061",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#165061",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with installed dependencies. Establish the failing mounted event/history regression on latest main before editing; source inspection alone does not satisfy the reproduction gate."
+    },
+    {
+      "target": "#160596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165061",
+      "candidate_fix": null,
+      "reason": "Historical context only. Preserve its active replacement recovery; no closure or merge action is permitted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165061",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165061",
+      "candidate_fix": null,
+      "reason": "A bounded bug-only repair is plausible without new configuration, dependencies, or policy. The writable executor must reproduce first and stop if latest main does not reproduce."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
