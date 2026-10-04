@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T00:10:03.886Z",
+  "updated_at": "2026-10-04T00:10:23.671Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122512:5264065948:2026-10-03T17:53:07Z:clawsweeper_needs_human",
-      "comment_id": "5264065948",
-      "comment_version_key": "5264065948:2026-10-03T17:53:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122512#issuecomment-5264065948",
-      "comment_created_at": "2026-08-12T08:08:39Z",
-      "comment_updated_at": "2026-10-03T17:53:07Z",
-      "comment_body_sha256": "1e38548761d3619a9567dbb380a052484df78ac9d23df4d2bc5381a25d199c8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the current merge conflicts, refresh validation for the resulting head, and add measured one-worker cost for both changed test files; report E2E CI seconds once available. (sha=741dc46b4c1f1903fd413c63906dc5c8c37510c0)",
-      "expected_head_sha": "741dc46b4c1f1903fd413c63906dc5c8c37510c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-03T17:54:02.884Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-usage-credits-billing",
-        "head_sha": "741dc46b4c1f1903fd413c63906dc5c8c37510c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152705:5740400289:2026-10-03T17:53:16Z:clawsweeper_auto_repair",
       "comment_id": "5740400289",
@@ -33432,6 +33399,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164490:5974868560:2026-10-04T00:09:31Z:re_review",
+      "comment_id": "5974868560",
+      "comment_version_key": "5974868560:2026-10-04T00:09:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164490#issuecomment-5974868560",
+      "comment_created_at": "2026-10-04T00:09:31Z",
+      "comment_updated_at": "2026-10-04T00:09:31Z",
+      "comment_body_sha256": "5b2d6ac210f40d1f972c8f392a79b2266b5f51778a10a0af3255fe567b0e41de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164490,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T00:10:22.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/schemafacts",
+        "head_sha": "9bd9115a3287a88aba5db15912e1bb4f05373c11",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
