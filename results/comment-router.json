@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-04T14:27:17.668Z",
+  "updated_at": "2026-10-04T14:28:09.757Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164789:5976938633:2026-10-04T07:09:44Z:clawsweeper_needs_human",
-      "comment_id": "5976938633",
-      "comment_version_key": "5976938633:2026-10-04T07:09:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164789#issuecomment-5976938633",
-      "comment_created_at": "2026-10-04T05:29:21Z",
-      "comment_updated_at": "2026-10-04T07:09:44Z",
-      "comment_body_sha256": "c9e4aa42817be6ca01ec9b82ec0f3c2a84d83263866a597a4ab43b0de513f9c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164789,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve detection of methods extracted from child\\_process (P1)** - The previous blocker remains: const spawn = require(\"node:child_process\").spawn; spawn(\"node\"); adds spawn only to namespace aliases. This gua...; Review finding: [P1] Preserve detection of methods extracted from child_process — src/skills/security/scanner.ts:330-331 - [P1] Distinguish complex member receivers from bare exec... (sha=5dccaac6f96e049736852181dce763a8748cfee4)",
-      "expected_head_sha": "5dccaac6f96e049736852181dce763a8748cfee4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T07:10:42.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-artifact-scan-provenance",
-        "head_sha": "5dccaac6f96e049736852181dce763a8748cfee4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164293:5969222287:2026-10-04T07:10:10Z:clawsweeper_needs_human",
       "comment_id": "5969222287",
@@ -33742,6 +33709,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164233:5981040054:2026-10-04T14:27:04Z:re_review",
+      "comment_id": "5981040054",
+      "comment_version_key": "5981040054:2026-10-04T14:27:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164233#issuecomment-5981040054",
+      "comment_created_at": "2026-10-04T14:27:04Z",
+      "comment_updated_at": "2026-10-04T14:27:04Z",
+      "comment_body_sha256": "8cd6e0c3a4f9f701af9528a3402eec150f4208263b9d04dd9362314862b6dbb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164233,
+      "author": "Lanfei",
+      "author_id": 2156642,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-04T14:28:08.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/xai-search-self-hosted",
+        "head_sha": "dcf81a23f64799634b64a5dd2d6a9886e4741d49",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
