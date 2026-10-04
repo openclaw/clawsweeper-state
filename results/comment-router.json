@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-04T08:24:59.015Z",
+  "updated_at": "2026-10-04T08:25:20.924Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5697449557:2026-09-16T12:30:43Z:re_review",
-      "comment_id": "5697449557",
-      "comment_version_key": "5697449557:2026-09-16T12:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5697449557",
-      "comment_created_at": "2026-09-16T12:30:43Z",
-      "comment_updated_at": "2026-09-16T12:30:43Z",
-      "comment_body_sha256": "422881e6cb10de221d3c28af291ed987bb328ccb8b1cb864d1365b6211454dc9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T01:46:28.893Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5700158294:2026-09-16T15:35:21Z:re_review",
       "comment_id": "5700158294",
@@ -33380,6 +33353,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164755:5976510887:2026-10-04T08:24:12Z:clawsweeper_needs_human",
+      "comment_id": "5976510887",
+      "comment_version_key": "5976510887:2026-10-04T08:24:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164755#issuecomment-5976510887",
+      "comment_created_at": "2026-10-04T04:18:25Z",
+      "comment_updated_at": "2026-10-04T08:24:12Z",
+      "comment_body_sha256": "37e8d6926284c5181fe8e9c0f373b02152ccead99645ec2c917d6ef06e7ae279",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164755,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The integrated candidate's reclamation concurrency timeout is not yet attributed, leaving uncertainty about session mutation progress under concurrent worker admission. (sha=d07ce205da51855c79d183d648e2a361bb965634)",
+      "expected_head_sha": "d07ce205da51855c79d183d648e2a361bb965634",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T08:25:20.924Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/lifemaint",
+        "head_sha": "d07ce205da51855c79d183d648e2a361bb965634",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
