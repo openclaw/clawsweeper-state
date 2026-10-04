@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T20:23:02.203Z",
+  "updated_at": "2026-10-04T20:23:08.188Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164246:5980294959:2026-10-04T13:10:07Z:re_review",
-      "comment_id": "5980294959",
-      "comment_version_key": "5980294959:2026-10-04T13:10:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164246#issuecomment-5980294959",
-      "comment_created_at": "2026-10-04T13:10:07Z",
-      "comment_updated_at": "2026-10-04T13:10:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164246,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T13:10:55.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-failure-fallback",
-        "head_sha": "4ca7a00588c6fff33a459ef5b89c2d5c07e1b52d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164914:5980314765:2026-10-04T13:12:11Z:clawsweeper_needs_human",
       "comment_id": "5980314765",
@@ -33491,6 +33444,39 @@
         "kind": "pull_request",
         "branch": "openclaw/remove-local-frv-preflight-from-release-skill",
         "head_sha": "fca2aae4257ef30dda8c63d0ab555a459eefcfbe",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165066:5983742830:2026-10-04T20:22:08Z:clawsweeper_needs_human",
+      "comment_id": "5983742830",
+      "comment_version_key": "5983742830:2026-10-04T20:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165066#issuecomment-5983742830",
+      "comment_created_at": "2026-10-04T19:48:16Z",
+      "comment_updated_at": "2026-10-04T20:22:08Z",
+      "comment_body_sha256": "bc842cc67cf68f2655d52d188c245310f63884c79ddf39ded01bb46ace326309",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165066,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed staging owner is exercised by mocked SCP failure assertions, but no observed after-fix Gateway run shows a failed copy or skipped s... (sha=e7e963a55e3b1455db935a36339d5d1e648f5116)",
+      "expected_head_sha": "e7e963a55e3b1455db935a36339d5d1e648f5116",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T20:23:08.188Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-165047-stage-inbound-media",
+        "head_sha": "e7e963a55e3b1455db935a36339d5d1e648f5116",
         "cluster_id": null,
         "job_path": null
       }
