@@ -2,53 +2,6 @@
   "updated_at": "2026-10-04T23:58:04.439Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:163238:5982265377:2026-10-04T16:50:25Z:re_review",
-      "comment_id": "5982265377",
-      "comment_version_key": "5982265377:2026-10-04T16:50:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163238#issuecomment-5982265377",
-      "comment_created_at": "2026-10-04T16:50:25Z",
-      "comment_updated_at": "2026-10-04T16:50:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163238,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T16:51:19.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1089",
-        "head_sha": "2f701e2b294416d1f19e226185a7809344fa4d14",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:153580:5982267749:2026-10-04T16:50:43Z:re_review",
       "comment_id": "5982267749",
       "comment_version_key": "5982267749:2026-10-04T16:50:43Z",
@@ -33141,6 +33094,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165129:5985497351:2026-10-04T23:57:04Z:clawsweeper_needs_human",
+      "comment_id": "5985497351",
+      "comment_version_key": "5985497351:2026-10-04T23:57:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165129#issuecomment-5985497351",
+      "comment_created_at": "2026-10-04T23:15:42Z",
+      "comment_updated_at": "2026-10-04T23:57:04Z",
+      "comment_body_sha256": "2ee799a304da51d52ee9197a5b223945127c9a51973864b98ba134ad4bb59e88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: production IRC, Teams, and Nostr transport coverage supports held handoffs, but injected preparation a... (sha=10175ea05f9d1c6107d25a2c7d242ae3e3daa03a)",
+      "expected_head_sha": "10175ea05f9d1c6107d25a2c7d242ae3e3daa03a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T23:58:04.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/cron2b",
+        "head_sha": "10175ea05f9d1c6107d25a2c7d242ae3e3daa03a",
+        "cluster_id": null,
+        "job_path": null
+      }
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2691:5985796641:2026-10-04T23:57:08Z:clawsweeper_needs_human",
