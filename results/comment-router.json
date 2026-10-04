@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-04T23:09:45.225Z",
+  "updated_at": "2026-10-04T23:09:51.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164987:5981646677:2026-10-04T15:33:47Z:re_review",
-      "comment_id": "5981646677",
-      "comment_version_key": "5981646677:2026-10-04T15:33:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164987#issuecomment-5981646677",
-      "comment_created_at": "2026-10-04T15:33:47Z",
-      "comment_updated_at": "2026-10-04T15:33:47Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164987,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T15:36:58.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sdk-alias-native-policy",
-        "head_sha": "9deab12a4a7c8c4e9b2cdfb9a47da2a4866dc68e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1595:5981671196:2026-10-04T15:36:53Z:re_review",
       "comment_id": "5981671196",
@@ -33502,6 +33455,39 @@
         "kind": "pull_request",
         "branch": "openclaw/keep-composer-visible-while-messages-queue",
         "head_sha": "da3a6ffab10ced1758700b6b3132ab5350b616fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164592:5974332240:2026-10-04T23:08:44Z:clawsweeper_needs_human",
+      "comment_id": "5974332240",
+      "comment_version_key": "5974332240:2026-10-04T23:08:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164592#issuecomment-5974332240",
+      "comment_created_at": "2026-10-03T22:52:04Z",
+      "comment_updated_at": "2026-10-04T23:08:44Z",
+      "comment_body_sha256": "e0f868118ffb6ae6f679ab4c57dadde871f3e1012c14f2581f360088c573d81e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164592,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Restoring the setting makes previously retired retained values effective again, potentially increasing resource use and provider demand; explicit maintainer acceptance of that upgrade... (sha=2e17633288ee324f944a8322e4b57f54958f6c36)",
+      "expected_head_sha": "2e17633288ee324f944a8322e4b57f54958f6c36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-04T23:09:51.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/configurable-gateway-limits",
+        "head_sha": "2e17633288ee324f944a8322e4b57f54958f6c36",
         "cluster_id": null,
         "job_path": null
       }
