@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:46:46.836Z",
+  "updated_at": "2026-10-05T23:46:51.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3911:5998335648:2026-10-05T16:10:11Z:re_review",
-      "comment_id": "5998335648",
-      "comment_version_key": "5998335648:2026-10-05T16:10:11Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3911#issuecomment-5998335648",
-      "comment_created_at": "2026-10-05T16:10:11Z",
-      "comment_updated_at": "2026-10-05T16:10:11Z",
-      "comment_body_sha256": "1bc08fe42f4f1952f9e0301dc91888a618f4ba48fc56ae8a5a8707dd32b1061e",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3911,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T16:11:17.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/skills-sh-deploy-overlap-experiment",
-        "head_sha": "432df1e47ce73f977ecdf52ea1391a18265dab48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165648:5998348995:2026-10-05T16:10:57Z:clawsweeper_auto_repair",
       "comment_id": "5998348995",
@@ -34010,6 +33963,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149278:5685066426:2026-10-05T23:45:57Z:clawsweeper_needs_human",
+      "comment_id": "5685066426",
+      "comment_version_key": "5685066426:2026-10-05T23:45:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149278#issuecomment-5685066426",
+      "comment_created_at": "2026-09-15T17:39:30Z",
+      "comment_updated_at": "2026-10-05T23:45:57Z",
+      "comment_body_sha256": "7449048a0caaa18fc8e01da954861dd1b4499302b67129c99e108c4dc03cdbff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149278,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The inspected fixture exercises the real consultation, embedded runtime, and Telegram plugin, but uses loopback model/Bot API and a synthetic q... (sha=84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8)",
+      "expected_head_sha": "84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T23:46:51.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw-realtime-voice-model",
+        "head_sha": "84fa62f4388aaf5017fdaadc8f0cb5dbcb7777c8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
