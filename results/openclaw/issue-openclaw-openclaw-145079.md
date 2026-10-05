@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145079"
 mode: "autonomous"
-run_id: "37280550735"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37280550735"
+run_id: "37287585060"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37287585060"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T08:49:10.537Z"
+published_at: "2026-10-05T10:01:04.388Z"
 canonical: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37280550735](https://github.com/openclaw/clawsweeper/actions/runs/37280550735)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37287585060](https://github.com/openclaw/clawsweeper/actions/runs/37287585060)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/145079
 
 ## Summary
 
-Confirmed the shared matcher gap on preflight main 3543c6bb0895d7697f2049fc2baeb1ccd93b25da. Narrow fix artifact prepared; implementation and required transport-to-AgentSession reproduction are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed.
+Source inspection confirms the Google incomplete-frame matcher gap on checked-out main d06b562b67007c4d03daf2b16ed194026df97eb1. Implementation and required transport-to-AgentSession reproduction are blocked by the read-only host and missing dependencies. A narrow executor artifact is prepared; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Confirmed the shared matcher gap on preflight main 3543c6bb0895d7697f2049fc2baeb
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145079 | fix_needed | planned | canonical | Existing transient recovery omits this exact Google producer diagnostic. Keep the issue open and implement only after establishing the required failing current-main regression. |
-| #127338 | keep_closed | skipped | related | Historical recovery-owner context; no closeout action. |
-| #144583 | keep_closed | skipped | related | Historical sibling recovery evidence. |
-| #145080 | keep_closed | skipped | related | Credited historical source work, not an open repair or closure target. |
-| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned | canonical | Executable handoff for the deterministic executor; this worker cannot produce a locally validated branch under the host restrictions. |
+| #145079 | fix_needed | planned | canonical | Existing recovery behavior has a narrow diagnostic-classification gap. Runtime reproduction must precede the production edit. |
+| #127338 | keep_closed | skipped | related | Historical implementation context; no action on the merged PR. |
+| #144583 | keep_closed | skipped | related | Related recovery precedent; does not fix the Google diagnostic. |
+| #145080 | keep_closed | skipped | related | Credited prior work for the same defect; the issue-implementation job explicitly requests a new fix PR. |
+| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned |  | Prepared artifact is actionable on a writable executor, conditional on failing-before runtime proof. |
+| cluster:issue-openclaw-openclaw-145079 | open_fix_pr | blocked |  | Publication is blocked until a writable executor reproduces, repairs, reviews, and validates the branch. Reuse clawsweeper/issue-openclaw-openclaw-145079 and its existing PR if present. |
 
 ## Needs Human
 

@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145079",
+  "mode": "autonomous",
+  "run_id": "37287585060",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37287585060",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145079.md",
+  "published_at": "2026-10-05T10:01:04.388Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145079",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145079",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the Google incomplete-frame matcher gap on checked-out main d06b562b67007c4d03daf2b16ed194026df97eb1. Implementation and required transport-to-AgentSession reproduction are blocked by the read-only host and missing dependencies. A narrow executor artifact is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145079",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Existing recovery behavior has a narrow diagnostic-classification gap. Runtime reproduction must precede the production edit."
+    },
+    {
+      "target": "#127338",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Historical implementation context; no action on the merged PR."
+    },
+    {
+      "target": "#144583",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Related recovery precedent; does not fix the Google diagnostic."
+    },
+    {
+      "target": "#145080",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Credited prior work for the same defect; the issue-implementation job explicitly requests a new fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145079",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Prepared artifact is actionable on a writable executor, conditional on failing-before runtime proof."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145079",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until a writable executor reproduces, repairs, reviews, and validates the branch. Reuse clawsweeper/issue-openclaw-openclaw-145079 and its existing PR if present."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
