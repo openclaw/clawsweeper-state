@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145079"
 mode: "autonomous"
-run_id: "37296510241"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37296510241"
+run_id: "37303041940"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37303041940"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T11:19:08.503Z"
+published_at: "2026-10-05T12:32:13.818Z"
 canonical: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37296510241](https://github.com/openclaw/clawsweeper/actions/runs/37296510241)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37303041940](https://github.com/openclaw/clawsweeper/actions/runs/37303041940)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/145079
 
 ## Summary
 
-Current-main source and a matcher probe confirm the classification gap. Implementation and required transport-to-AgentSession reproduction are blocked by the read-only host and missing dependencies. A narrow executor artifact is prepared; no files or GitHub state changed.
+Confirmed the shared matcher gap on preflight main 83b743ac7141882378a821db5beacd14a7222745. Implementation and required transport-to-session reproduction are blocked by the read-only sandbox and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current-main source and a matcher probe confirm the classification gap. Implemen
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145079 | fix_needed | planned | canonical | No viable open implementation PR exists. The source establishes a narrow matcher repair, subject to the mandatory failing-before real-flow reproduction. |
-| #127338 | keep_closed | skipped | related | Historical evidence only; already closed. |
-| #144583 | keep_closed | skipped | related | Related recovery precedent; already closed. |
-| #145080 | keep_closed | skipped | related | Retain as credited prior work. The issue-implementation job explicitly selects new_fix_pr with source_prs empty; no reopening or closure is authorized. |
-| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned | canonical | Executor must establish failing-before proof in a writable isolated checkout, then implement, validate, review, and prepare the single authorized PR. |
+| #145079 | fix_needed | planned | canonical | Existing recovery behavior has a narrow classification gap. Keep the canonical issue open; executor must reproduce before changing production code. |
+| #127338 | keep_closed | skipped | related | Historical evidence only. |
+| #144583 | keep_closed | skipped | related | Historical sibling recovery evidence only. |
+| #145080 | keep_closed | skipped | related | Preserve prior-work credit in the new implementation PR; no closure or branch repair action applies. |
+| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned |  | Artifact preparation is complete. Local implementation is blocked by host restrictions; continue in a writable, independently owned executor checkout. |
 
 ## Needs Human
 

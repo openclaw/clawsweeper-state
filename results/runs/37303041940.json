@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145079",
+  "mode": "autonomous",
+  "run_id": "37303041940",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37303041940",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145079.md",
+  "published_at": "2026-10-05T12:32:13.818Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145079",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145079",
+  "canonical_pr": null,
+  "summary": "Confirmed the shared matcher gap on preflight main 83b743ac7141882378a821db5beacd14a7222745. Implementation and required transport-to-session reproduction are blocked by the read-only sandbox and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#145079",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Existing recovery behavior has a narrow classification gap. Keep the canonical issue open; executor must reproduce before changing production code."
+    },
+    {
+      "target": "#127338",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#144583",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Historical sibling recovery evidence only."
+    },
+    {
+      "target": "#145080",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Preserve prior-work credit in the new implementation PR; no closure or branch repair action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145079",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145079",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Local implementation is blocked by host restrictions; continue in a writable, independently owned executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
