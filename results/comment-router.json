@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:39:46.921Z",
+  "updated_at": "2026-10-05T23:39:59.531Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165619:5998118597:2026-10-05T15:57:37Z:re_review",
-      "comment_id": "5998118597",
-      "comment_version_key": "5998118597:2026-10-05T15:57:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165619#issuecomment-5998118597",
-      "comment_created_at": "2026-10-05T15:57:37Z",
-      "comment_updated_at": "2026-10-05T15:57:37Z",
-      "comment_body_sha256": "8cd7dcadf02e22be2485b3c951e2aae85b5362d96d283b8592833e1bb709fff4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165619,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T15:58:40.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-tool-stream-utf16",
-        "head_sha": "f6f797a546aa3fb7c85350b5daea5d74a285a7eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165454:5998134391:2026-10-05T15:58:33Z:re_review",
       "comment_id": "5998134391",
@@ -33979,6 +33932,39 @@
         "kind": "pull_request",
         "branch": "codex/auth-maintain-command-allowlist",
         "head_sha": "706c569352cb0bb246129870eedd6f66c8b4ab1e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165849:6005586605:2026-10-05T23:38:57Z:clawsweeper_needs_human",
+      "comment_id": "6005586605",
+      "comment_version_key": "6005586605:2026-10-05T23:38:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165849#issuecomment-6005586605",
+      "comment_created_at": "2026-10-05T23:38:57Z",
+      "comment_updated_at": "2026-10-05T23:38:57Z",
+      "comment_body_sha256": "36217b3226bf901f30ce18a83dea199d7d3ada78f9418423efc97f12af1b7c42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165849,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: supplied validation exercises the Markdown renderer in tests, but does not show the running chat UI pro... (sha=5ef37a1a9499492e570f9a44ebfea7dcd66b55fa)",
+      "expected_head_sha": "5ef37a1a9499492e570f9a44ebfea7dcd66b55fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T23:39:59.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-github-reference-context",
+        "head_sha": "5ef37a1a9499492e570f9a44ebfea7dcd66b55fa",
         "cluster_id": null,
         "job_path": null
       }
