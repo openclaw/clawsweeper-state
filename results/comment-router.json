@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T01:03:07.850Z",
+  "updated_at": "2026-10-05T01:03:13.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165034:5982899394:2026-10-04T18:08:28Z:re_review",
-      "comment_id": "5982899394",
-      "comment_version_key": "5982899394:2026-10-04T18:08:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165034#issuecomment-5982899394",
-      "comment_created_at": "2026-10-04T18:08:28Z",
-      "comment_updated_at": "2026-10-04T18:08:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165034,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T18:09:23.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/catalogwrite",
-        "head_sha": "44526f0e5bdea1a8d45566a54c384a36d88eb5a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164719:5975946299:2026-10-04T18:10:09Z:clawsweeper_needs_human",
       "comment_id": "5975946299",
@@ -33109,6 +33062,39 @@
         "kind": "pull_request",
         "branch": "codex/source-defect-oct05",
         "head_sha": "99f6a4602c6ddf9dfffc4ff3dbd7d1c32b37d0cc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4267:5986341057:2026-10-05T01:02:18Z:clawsweeper_needs_human",
+      "comment_id": "5986341057",
+      "comment_version_key": "5986341057:2026-10-05T01:02:18Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4267#issuecomment-5986341057",
+      "comment_created_at": "2026-10-05T01:02:18Z",
+      "comment_updated_at": "2026-10-05T01:02:18Z",
+      "comment_body_sha256": "5c155bbc1001f37b5149a8703c109fb547c25204350e79a3cd9b8114b59cd0c7",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4267,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Resolve expanded-account identity disclosure** - The added collection runs automatically and inherits full identity defaults, exposing non-selected managed-account emails and workspace...; Review finding: [medium] Resolve expanded-account identity disclosure — Sources/CodexBarCLI/CLIDashboardCommand.swift:75 (sha=33006e289cc4bbbf032f484372f29c97043b2801)",
+      "expected_head_sha": "33006e289cc4bbbf032f484372f29c97043b2801",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T01:03:13.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/20260921-dashboard-accounts-4184",
+        "head_sha": "33006e289cc4bbbf032f484372f29c97043b2801",
         "cluster_id": null,
         "job_path": null
       }
