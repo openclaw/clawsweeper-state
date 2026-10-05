@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T06:29:53.079Z",
+  "updated_at": "2026-10-05T06:29:59.227Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155526:5985826894:2026-10-05T00:01:19Z:re_review",
-      "comment_id": "5985826894",
-      "comment_version_key": "5985826894:2026-10-05T00:01:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155526#issuecomment-5985826894",
-      "comment_created_at": "2026-10-05T00:01:19Z",
-      "comment_updated_at": "2026-10-05T00:01:19Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155526,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T00:02:11.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/rewritemodelrefs-stack-safe-153674",
-        "head_sha": "5f523c61f5402b081cde009bc2edf5a2144c8979",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165150:5985025626:2026-10-05T00:01:52Z:clawsweeper_needs_human",
       "comment_id": "5985025626",
@@ -33531,6 +33484,39 @@
         "kind": "pull_request",
         "branch": "fix/joined-cleanup-outcomes",
         "head_sha": "fc39a0ae0b02b814526c47a9308e46e844c63583",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165382:5989285282:2026-10-05T06:28:05Z:clawsweeper_needs_human",
+      "comment_id": "5989285282",
+      "comment_version_key": "5989285282:2026-10-05T06:28:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165382#issuecomment-5989285282",
+      "comment_created_at": "2026-10-05T06:28:05Z",
+      "comment_updated_at": "2026-10-05T06:28:05Z",
+      "comment_body_sha256": "f03d8f94dd19f537303d529271b9bcbcbef5954991f8dbdaa2c1e44e2b9915c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165382,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: recovery now converts persisted receipts into native kill/removal commands. Available coverage mocks the transp...; Review finding: [P1] [P1] Skip foreground reconciliation in update canaries — src/gateway/server-startup-finish.ts:191-194 - [high] Canary crosses physical allocation custody — sr... (sha=fe17f1296f4bcef742e8898397684f029b73763b)",
+      "expected_head_sha": "fe17f1296f4bcef742e8898397684f029b73763b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T06:29:59.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/foreground-allocation-recovery",
+        "head_sha": "fe17f1296f4bcef742e8898397684f029b73763b",
         "cluster_id": null,
         "job_path": null
       }
