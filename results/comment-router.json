@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:34:18.390Z",
+  "updated_at": "2026-10-05T18:34:50.405Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146234:5647466987:2026-10-05T11:51:36Z:clawsweeper_needs_human",
-      "comment_id": "5647466987",
-      "comment_version_key": "5647466987:2026-10-05T11:51:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146234#issuecomment-5647466987",
-      "comment_created_at": "2026-09-12T17:20:35Z",
-      "comment_updated_at": "2026-10-05T11:51:36Z",
-      "comment_body_sha256": "d92fb73ed22a7518d658210efa611ee8ba479b1b52277aa3668ad23e9d214424",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146234,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main, which moved classification into a shared owner and explicitly preserves named heartbeat lanes; the rebased result must reconcile derived labels... (sha=84315f842e1df116813848b86edb515f640dd46f)",
-      "expected_head_sha": "84315f842e1df116813848b86edb515f640dd46f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T11:58:56.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-classification-filter-jony",
-        "head_sha": "84315f842e1df116813848b86edb515f640dd46f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165535:5993184452:2026-10-05T11:56:21Z:clawsweeper_needs_human",
       "comment_id": "5993184452",
@@ -33532,6 +33499,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165680:6000684931:2026-10-05T18:33:47Z:re_review",
+      "comment_id": "6000684931",
+      "comment_version_key": "6000684931:2026-10-05T18:33:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165680#issuecomment-6000684931",
+      "comment_created_at": "2026-10-05T18:33:47Z",
+      "comment_updated_at": "2026-10-05T18:33:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165680,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T18:34:48.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/coldadmit",
+        "head_sha": "9d84354e1dbd0148b9774c4528021f81ede9e711",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
