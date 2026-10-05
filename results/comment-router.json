@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T21:55:22.296Z",
+  "updated_at": "2026-10-05T21:56:15.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165605:5996401895:2026-10-05T14:21:37Z:re_review",
-      "comment_id": "5996401895",
-      "comment_version_key": "5996401895:2026-10-05T14:21:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165605#issuecomment-5996401895",
-      "comment_created_at": "2026-10-05T14:21:37Z",
-      "comment_updated_at": "2026-10-05T14:21:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165605,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T14:22:46.763Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w4wtreg",
-        "head_sha": "bd73a308f6f78ca270f19a2ea90b56124cf65d49",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160936:5883304349:2026-10-05T14:21:51Z:clawsweeper_auto_repair",
       "comment_id": "5883304349",
@@ -33917,6 +33870,39 @@
         "kind": "pull_request",
         "branch": "1074",
         "head_sha": "6cdfccc3a915085e27ab7b4bdb8233c66d6db105",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165583:5995216176:2026-10-05T21:55:17Z:clawsweeper_needs_human",
+      "comment_id": "5995216176",
+      "comment_version_key": "5995216176:2026-10-05T21:55:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165583#issuecomment-5995216176",
+      "comment_created_at": "2026-10-05T13:15:39Z",
+      "comment_updated_at": "2026-10-05T21:55:17Z",
+      "comment_body_sha256": "9ef5fcdc2e0d87e8dd295abe81e49a6951dec8d188de5724210c6a4f35c0d227",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165583,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - SDK-owner acceptance of the additive V2 transport contract and the migration window for legacy transports remains unrecorded; legacy transports cannot provide the new post-wait admiss... (sha=864b228f6a4c6faada761d6328d7e34f22b3f657)",
+      "expected_head_sha": "864b228f6a4c6faada761d6328d7e34f22b3f657",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T21:56:15.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-configured-profile-cli-fallback",
+        "head_sha": "864b228f6a4c6faada761d6328d7e34f22b3f657",
         "cluster_id": null,
         "job_path": null
       }
