@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-10-05T16:28:40.537Z",
+  "updated_at": "2026-10-05T16:27:09.496Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165410:5992329544:2026-10-05T10:06:58Z:re_review",
+      "comment_id": "5992329544",
+      "comment_version_key": "5992329544:2026-10-05T10:06:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165410#issuecomment-5992329544",
+      "comment_created_at": "2026-10-05T10:06:58Z",
+      "comment_updated_at": "2026-10-05T10:06:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165410,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T10:08:30.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/createtarget-traj",
+        "head_sha": "99dfc15513cde638050e4e53b05438f9cb3a432d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164821:5977944410:2026-10-05T10:07:52Z:clawsweeper_needs_human",
+      "comment_id": "5977944410",
+      "comment_version_key": "5977944410:2026-10-05T10:07:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164821#issuecomment-5977944410",
+      "comment_created_at": "2026-10-04T08:04:20Z",
+      "comment_updated_at": "2026-10-05T10:07:52Z",
+      "comment_body_sha256": "1ae30be461c11d29cacdb592946869abf43bfdf26507c3dff88d09d5b2001e4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164821,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed Workshop description/schema and unused-skill rejection are supported only by reported tests... (sha=e4d7580e9e943206ac27b1966b1b8f282605d307)",
+      "expected_head_sha": "e4d7580e9e943206ac27b1966b1b8f282605d307",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T10:08:47.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-clarify-repair-authorization",
+        "head_sha": "e4d7580e9e943206ac27b1966b1b8f282605d307",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165496:5992137852:2026-10-05T10:09:59Z:clawsweeper_needs_human",
       "comment_id": "5992137852",
@@ -33658,72 +33738,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165661:5998539883:2026-10-05T16:27:14Z:clawsweeper_needs_human",
-      "comment_id": "5998539883",
-      "comment_version_key": "5998539883:2026-10-05T16:27:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165661#issuecomment-5998539883",
-      "comment_created_at": "2026-10-05T16:21:48Z",
-      "comment_updated_at": "2026-10-05T16:27:14Z",
-      "comment_body_sha256": "d7846914e83b299c8431748a90047d3c0d52ea42a78c8b2b7930d75bf998b0e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165661,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Record the two remaining original providers-shard replay results to complete the repository’s three-run flake-validation requirement. (sha=819a824c20fa516cae568774cacb72d1ac30dddf)",
-      "expected_head_sha": "819a824c20fa516cae568774cacb72d1ac30dddf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T16:28:19.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zai-probe-deadline-clock",
-        "head_sha": "819a824c20fa516cae568774cacb72d1ac30dddf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:964:5995997523:2026-10-05T16:27:41Z:clawsweeper_needs_human",
-      "comment_id": "5995997523",
-      "comment_version_key": "5995997523:2026-10-05T16:27:41Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/964#issuecomment-5995997523",
-      "comment_created_at": "2026-10-05T13:59:44Z",
-      "comment_updated_at": "2026-10-05T16:27:41Z",
-      "comment_body_sha256": "79fdf9a134b6a668dd743046d0ee019462791cf2a35034b5ce8f73584b35e04c",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 964,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5033ea24d1c02594fb53e1a4a9e361c2963ce4a6)",
-      "expected_head_sha": "5033ea24d1c02594fb53e1a4a9e361c2963ce4a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T16:28:40.537Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/peekaboo-terminal-title-controls-20261005",
-        "head_sha": "5033ea24d1c02594fb53e1a4a9e361c2963ce4a6",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
