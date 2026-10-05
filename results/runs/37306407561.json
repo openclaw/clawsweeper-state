@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165553",
+  "mode": "autonomous",
+  "run_id": "37306407561",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37306407561",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165553.md",
+  "published_at": "2026-10-05T12:31:32.983Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165553",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165553",
+  "canonical_pr": null,
+  "summary": "The reported fixture remains on preflight main. Native reproduction stopped before Vitest because dependencies are missing. The read-only sandbox prevents dependency installation and edits. A narrow fix artifact is prepared; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165553",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165553",
+      "candidate_fix": null,
+      "reason": "A test-only repair is source-supported. Implementation and publication remain blocked until native reproduction and required validation can run in a writable, independently owned checkout."
+    },
+    {
+      "target": "#162583",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#165553",
+      "candidate_fix": null,
+      "reason": "Distinct cleanup scope; it does not own this cancellation fixture repair."
+    },
+    {
+      "target": "#165340",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165553",
+      "candidate_fix": null,
+      "reason": "Already merged historical context, not an action target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165553",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165553",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is possible despite the host blocker. The executor must establish the original failure before editing or publishing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
