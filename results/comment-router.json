@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T03:19:39.241Z",
+  "updated_at": "2026-10-05T03:19:58.962Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165098:5984517900:2026-10-04T21:22:07Z:re_review",
-      "comment_id": "5984517900",
-      "comment_version_key": "5984517900:2026-10-04T21:22:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165098#issuecomment-5984517900",
-      "comment_created_at": "2026-10-04T21:22:07Z",
-      "comment_updated_at": "2026-10-04T21:22:07Z",
-      "comment_body_sha256": "b101e1518563b5b5fe01e71d455007a3c19a3db999bca02a5ebc7190b6e30968",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165098,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T21:23:02.927Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sqlite-subagent-cohort-batch",
-        "head_sha": "a05df1b834e9643d3ffa5e10cf3f161f3459746e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5967351842:2026-10-03T08:51:09Z:re_review",
       "comment_id": "5967351842",
@@ -33043,6 +32996,39 @@
         "kind": "pull_request",
         "branch": "prep/delete-cleanup-completion-receipts",
         "head_sha": "333244b451eb9c69a79167cce9e6bf7d10008075",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165150:5985025626:2026-10-05T03:19:13Z:clawsweeper_needs_human",
+      "comment_id": "5985025626",
+      "comment_version_key": "5985025626:2026-10-05T03:19:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165150#issuecomment-5985025626",
+      "comment_created_at": "2026-10-04T22:15:02Z",
+      "comment_updated_at": "2026-10-05T03:19:13Z",
+      "comment_body_sha256": "67408e176fa8f83f12ac2550d60b3e04e1c6a99b0b6f29bd2a2ffab010802c28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub still reports merge conflicts for the pinned head; integrated behavior has not been established by a verified test-merge result. (sha=7ebcd1a56683059d1df534abc482c2e3b58f2136)",
+      "expected_head_sha": "7ebcd1a56683059d1df534abc482c2e3b58f2136",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T03:19:58.962Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-sessions-list-shared-delta-20260919",
+        "head_sha": "7ebcd1a56683059d1df534abc482c2e3b58f2136",
         "cluster_id": null,
         "job_path": null
       }
