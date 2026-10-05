@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:02:38.779Z",
+  "updated_at": "2026-10-05T10:02:57.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165334:5988276420:2026-10-05T04:45:29Z:clawsweeper_auto_repair",
-      "comment_id": "5988276420",
-      "comment_version_key": "5988276420:2026-10-05T04:45:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165334#issuecomment-5988276420",
-      "comment_created_at": "2026-10-05T04:45:29Z",
-      "comment_updated_at": "2026-10-05T04:45:29Z",
-      "comment_body_sha256": "a18cd68d72e4c41916b9284e25fdbc4e99476f35627c5e577bfabbef8c51a913",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165334,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7dfc59254168b6fd730ed772f4b76b7c1c7972ef)",
-      "expected_head_sha": "7dfc59254168b6fd730ed772f4b76b7c1c7972ef",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T04:46:27.066Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/revert-session-channel-links",
-        "head_sha": "7dfc59254168b6fd730ed772f4b76b7c1c7972ef",
-        "cluster_id": "automerge-openclaw-openclaw-165334",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144363:5624890224:2026-10-05T04:45:33Z:clawsweeper_needs_human",
       "comment_id": "5624890224",
@@ -32879,6 +32832,39 @@
         "kind": "pull_request",
         "branch": "fix/stepfun-modelsdev-alias",
         "head_sha": "5f31ef468d4357f8f0f134e9cf821a2dbcf26448",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:947:5992255951:2026-10-05T10:01:54Z:clawsweeper_needs_human",
+      "comment_id": "5992255951",
+      "comment_version_key": "5992255951:2026-10-05T10:01:54Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/947#issuecomment-5992255951",
+      "comment_created_at": "2026-10-05T10:01:54Z",
+      "comment_updated_at": "2026-10-05T10:01:54Z",
+      "comment_body_sha256": "7b4e150bd51b2ce32b544900f361bdb9842af5e9937041626031f603a1da513e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported subprocess tests exercise production wrapper start/shutdown through real OS spawning and signals, including a SIGTERM-ign... (sha=ff6b0d3542f67b2a2f9c0d69f312f08124d38f79)",
+      "expected_head_sha": "ff6b0d3542f67b2a2f9c0d69f312f08124d38f79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T10:02:57.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-browser-shutdown-20261005",
+        "head_sha": "ff6b0d3542f67b2a2f9c0d69f312f08124d38f79",
         "cluster_id": null,
         "job_path": null
       }
