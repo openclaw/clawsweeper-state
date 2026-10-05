@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165232",
+  "mode": "autonomous",
+  "run_id": "37250279660",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37250279660",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165232.md",
+  "published_at": "2026-10-05T01:50:37.511Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165232",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165232",
+  "canonical_pr": null,
+  "summary": "Confirmed the stale GC assertion on checkout main 78169b93e02fc702b06d5bc260a5062b54018725. Prepared a one-file test repair artifact. No files or GitHub state changed; runtime validation remains required because this worker has read-only access and no installed dependencies.",
+  "actions": [
+    {
+      "target": "#165232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165232",
+      "candidate_fix": null,
+      "reason": "A narrow test contract defect remains present. Keep the issue open and repair the existing real-Gateway scenario without changing production cleanup or security behavior."
+    },
+    {
+      "target": "#120362",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling. No public mutation or repair of its implementation is planned."
+    },
+    {
+      "target": "#164758",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this exact ref to central OpenClaw security handling without reopening its review or changing its production implementation. The independent test repair can proceed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165232",
+      "candidate_fix": null,
+      "reason": "Create or update one narrow implementation PR on clawsweeper/issue-openclaw-openclaw-165232. Merge and issue closure are prohibited by this job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
