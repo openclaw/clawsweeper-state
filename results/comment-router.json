@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T16:53:09.409Z",
+  "updated_at": "2026-10-05T16:53:19.156Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165470:5992803977:2026-10-05T10:38:32Z:re_review",
-      "comment_id": "5992803977",
-      "comment_version_key": "5992803977:2026-10-05T10:38:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165470#issuecomment-5992803977",
-      "comment_created_at": "2026-10-05T10:38:32Z",
-      "comment_updated_at": "2026-10-05T10:38:32Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165470,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T10:39:34.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/rpcsql",
-        "head_sha": "221ae574aad79efe06ad9d486c6c304251bf076e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165405:5989778623:2026-10-05T10:39:35Z:clawsweeper_needs_human",
       "comment_id": "5989778623",
@@ -33606,6 +33559,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-background-context-reload",
         "head_sha": "1640a33bb67bc4a614570add6f50e965bedb2a6f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:64:5975918022:2026-10-05T16:52:20Z:clawsweeper_needs_human",
+      "comment_id": "5975918022",
+      "comment_version_key": "5975918022:2026-10-05T16:52:20Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/64#issuecomment-5975918022",
+      "comment_created_at": "2026-10-04T02:49:17Z",
+      "comment_updated_at": "2026-10-05T16:52:20Z",
+      "comment_body_sha256": "e7720658cd9b59e0e6fb1d7c091e73cf299888a4331722ce50986a11e7590c9e",
+      "repo": "openclaw/clawscan",
+      "issue_number": 64,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed sandbox runner emits Docker --mount arguments, but the captured macOS transcript exercises only local serialization tests, without... (sha=b5ff8ffe05af66eb54edc5c9a770c10b294b1d97)",
+      "expected_head_sha": "b5ff8ffe05af66eb54edc5c9a770c10b294b1d97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T16:53:19.156Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawscan-f004",
+        "head_sha": "b5ff8ffe05af66eb54edc5c9a770c10b294b1d97",
         "cluster_id": null,
         "job_path": null
       }
