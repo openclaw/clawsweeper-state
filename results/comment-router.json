@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T04:45:14.899Z",
+  "updated_at": "2026-10-05T04:45:28.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165137:5985110569:2026-10-04T22:23:43Z:re_review",
-      "comment_id": "5985110569",
-      "comment_version_key": "5985110569:2026-10-04T22:23:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165137#issuecomment-5985110569",
-      "comment_created_at": "2026-10-04T22:23:43Z",
-      "comment_updated_at": "2026-10-04T22:23:43Z",
-      "comment_body_sha256": "aa2ce07c18e02b3f7cfc0be39c3228b72f6ff174bde23ebce8d00f13e1ddfd01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165137,
-      "author": "mbelinky",
-      "author_id": 132747814,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T22:24:42.410Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/handoff-message-reply-id",
-        "head_sha": "2f1d5980b1b59fe7e1faa5d0cc57be9c50f97b0d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164723:5976016316:2026-10-04T22:23:53Z:clawsweeper_needs_human",
       "comment_id": "5976016316",
@@ -33468,6 +33421,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165313:5987768625:2026-10-05T04:44:28Z:clawsweeper_needs_human",
+      "comment_id": "5987768625",
+      "comment_version_key": "5987768625:2026-10-05T04:44:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165313#issuecomment-5987768625",
+      "comment_created_at": "2026-10-05T03:49:44Z",
+      "comment_updated_at": "2026-10-05T04:44:28Z",
+      "comment_body_sha256": "8e89175f251a8747b6efb417c6816ebe826530fb19b2cd8af8c2aa51f87eca39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=bc4bcc84f9540c3e299c81c85073b37612a81562)",
+      "expected_head_sha": "bc4bcc84f9540c3e299c81c85073b37612a81562",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T04:45:28.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-followup-drain-callback",
+        "head_sha": "bc4bcc84f9540c3e299c81c85073b37612a81562",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
