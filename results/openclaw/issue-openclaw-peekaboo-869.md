@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-869"
 mode: "autonomous"
-run_id: "37377424454"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37377424454"
+run_id: "37377989704"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37377989704"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-05T21:44:13.987Z"
+published_at: "2026-10-05T21:49:04.363Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37377424454](https://github.com/openclaw/clawsweeper/actions/runs/37377424454)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37377989704](https://github.com/openclaw/clawsweeper/actions/runs/37377989704)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/869
 
 ## Summary
 
-No PR justified: current main contains the related lookup and diagnostic repairs, but ZCode’s original failure remains unclassified. Keep #869 open pending diagnostic evidence.
+Implementation is blocked on identifying a remaining current-main defect. Existing fixes are present, but the original ZCode refusal remains unclassified. Keep #869 open; no code changes or PR are justified by the available evidence.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No PR justified: current main contains the related lookup and diagnostic repairs
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #869 | keep_canonical | planned | canonical | Implementation is blocked on evidence identifying a remaining failure on current code. Recover retained original errors/receipt or obtain same-host read-only diagnostics from a current binary. The available evidence does not justify changing eligibility or exact identity checks, and does not prove the issue fixed. |
-| #505 | keep_closed | skipped | related | Historical partial repair; retain closed state without treating it as a complete fix for #869. |
-| #906 | keep_closed | skipped | related | Historical diagnostic improvement; retain closed state without claiming the separate ZCode click/focus failure is resolved. |
+| #869 | keep_canonical | planned | canonical | The available evidence cannot distinguish historical catalog divergence, capture ineligibility, stale identity, or Accessibility lookup failure. Recoverable original receipts or same-host read-only diagnostics from a current binary are needed before choosing a patch. Do not relax targeting safeguards or claim resolution. |
+| #505 | keep_closed | skipped | related | Historical partial-fix evidence; it does not prove coverage of the reported ZCode failure. |
+| #906 | keep_closed | skipped | related | The diagnostic improvement is already present; repeating it would not satisfy the unresolved issue. |
 
 ## Needs Human
 
