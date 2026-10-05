@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T09:53:10.670Z",
+  "updated_at": "2026-10-05T09:53:15.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164934:5988193959:2026-10-05T04:36:43Z:re_review",
-      "comment_id": "5988193959",
-      "comment_version_key": "5988193959:2026-10-05T04:36:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164934#issuecomment-5988193959",
-      "comment_created_at": "2026-10-05T04:36:43Z",
-      "comment_updated_at": "2026-10-05T04:36:43Z",
-      "comment_body_sha256": "6837d59357af8ce11fcaac072383f48d33421eeabc623cb1d0cc2ba6239fda1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164934,
-      "author": "Heetisk",
-      "author_id": 202494345,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T04:37:35.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-consult-correlation-clean-v5",
-        "head_sha": "e007ea9ad8a2138af24616fb797775a49d9b8b2b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165303:5987504432:2026-10-05T04:37:34Z:clawsweeper_needs_human",
       "comment_id": "5987504432",
@@ -32943,6 +32896,39 @@
         "kind": "pull_request",
         "branch": "codex/stab-provider-error-surface",
         "head_sha": "e273888b679cdf7eb78a6a213ce24a5fe31fed78",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:939:5992114937:2026-10-05T09:52:19Z:clawsweeper_needs_human",
+      "comment_id": "5992114937",
+      "comment_version_key": "5992114937:2026-10-05T09:52:19Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/939#issuecomment-5992114937",
+      "comment_created_at": "2026-10-05T09:52:19Z",
+      "comment_updated_at": "2026-10-05T09:52:19Z",
+      "comment_body_sha256": "47875b0410c99d5ad05dc6025fe7d646e7232cc2e0a6fa25eed4d6155af755ae",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 939,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed documentation builder is exercised by synthetic LF/CRLF integration fixtures, with reported passing assertions for generated title,... (sha=cfacd72741bacda00536d9c6d4a7e715dda44e8b)",
+      "expected_head_sha": "cfacd72741bacda00536d9c6d4a7e715dda44e8b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T09:53:15.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-docs-frontmatter-20261005",
+        "head_sha": "cfacd72741bacda00536d9c6d4a7e715dda44e8b",
         "cluster_id": null,
         "job_path": null
       }
