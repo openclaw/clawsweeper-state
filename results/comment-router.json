@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T03:24:20.113Z",
+  "updated_at": "2026-10-05T03:25:25.362Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clownfish:341:5907049075:2026-09-30T08:13:24Z:re_review",
-      "comment_id": "5907049075",
-      "comment_version_key": "5907049075:2026-09-30T08:13:24Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/341#issuecomment-5907049075",
-      "comment_created_at": "2026-09-30T08:13:24Z",
-      "comment_updated_at": "2026-09-30T08:13:24Z",
-      "comment_body_sha256": "3e670f6fadadb487f936d3572422fa11f81a82580c05e010aeb4569a597916dc",
-      "repo": "openclaw/clownfish",
-      "issue_number": 341,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T21:24:16.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/round6-confirmed-merge",
-        "head_sha": "5b3e6bc4895bac5d5a4de068d308d2050d006b15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:341:5904561388:2026-10-04T21:23:22Z:clawsweeper_needs_human",
       "comment_id": "5904561388",
@@ -33053,6 +33006,39 @@
         "kind": "pull_request",
         "branch": "fix/queued-followup-typing",
         "head_sha": "8afd852ac2dacf6f79b6d12224b07a20b31c8d82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165291:5987306885:2026-10-05T03:24:33Z:clawsweeper_needs_human",
+      "comment_id": "5987306885",
+      "comment_version_key": "5987306885:2026-10-05T03:24:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165291#issuecomment-5987306885",
+      "comment_created_at": "2026-10-05T02:56:42Z",
+      "comment_updated_at": "2026-10-05T03:24:33Z",
+      "comment_body_sha256": "c5b52cd5d2185711c502ac080ba24605737439575cb1ce998cc3f3e4c5980aa8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165291,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Codex receipt ordering and terminal interruption remain unverified in a real run; incorrect integration could omit a finished reply or hide a sibling's failure. (sha=802673593e837b6a5deb9e4d90ce61340ab201a7)",
+      "expected_head_sha": "802673593e837b6a5deb9e4d90ce61340ab201a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T03:25:25.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/review-request-unclear",
+        "head_sha": "802673593e837b6a5deb9e4d90ce61340ab201a7",
         "cluster_id": null,
         "job_path": null
       }
