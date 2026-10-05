@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T21:17:52.111Z",
+  "updated_at": "2026-10-05T21:18:05.310Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164934:5995485484:2026-10-05T13:30:52Z:re_review",
-      "comment_id": "5995485484",
-      "comment_version_key": "5995485484:2026-10-05T13:30:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164934#issuecomment-5995485484",
-      "comment_created_at": "2026-10-05T13:30:52Z",
-      "comment_updated_at": "2026-10-05T13:30:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164934,
-      "author": "Heetisk",
-      "author_id": 202494345,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T13:31:56.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-consult-correlation-clean-v5",
-        "head_sha": "f5930d6455f8e6f475e1444eeae074bd66e60e93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86574:4535806050:2026-10-05T13:24:04Z:autoclose",
       "comment_id": "4535806050",
@@ -33820,6 +33773,39 @@
         "kind": "pull_request",
         "branch": "1071",
         "head_sha": "266f03603fe8b7d94708b1be3b892422e4c2a6e8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165800:6003081889:2026-10-05T21:16:22Z:clawsweeper_needs_human",
+      "comment_id": "6003081889",
+      "comment_version_key": "6003081889:2026-10-05T21:16:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165800#issuecomment-6003081889",
+      "comment_created_at": "2026-10-05T21:16:22Z",
+      "comment_updated_at": "2026-10-05T21:16:22Z",
+      "comment_body_sha256": "5a091c84fe5876ad92f2fb53c3a72c7c1fb9789156aec272ea17e02126439710",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165800,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record measured wall time for the changed transcript test file and attributable CI seconds in the PR body, as repository testing policy requires. (sha=4655d9fd88f62095f31437d6354cf84ade79463a)",
+      "expected_head_sha": "4655d9fd88f62095f31437d6354cf84ade79463a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T21:18:05.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-subagent-final-answer-run-id",
+        "head_sha": "4655d9fd88f62095f31437d6354cf84ade79463a",
         "cluster_id": null,
         "job_path": null
       }
