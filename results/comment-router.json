@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:40:53.424Z",
+  "updated_at": "2026-10-05T18:42:16.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165549:5994034769:2026-10-05T12:02:49Z:re_review",
-      "comment_id": "5994034769",
-      "comment_version_key": "5994034769:2026-10-05T12:02:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165549#issuecomment-5994034769",
-      "comment_created_at": "2026-10-05T12:02:49Z",
-      "comment_updated_at": "2026-10-05T12:02:49Z",
-      "comment_body_sha256": "86557a4155b643870840be1832ca724d19581f91026fe4cd69c68b653bc9aed5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165549,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T12:03:50.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-inject-live-identity-165522",
-        "head_sha": "ae024df09dbee011ee43a94a0dbddb91c34c3bc0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164934:5980765156:2026-10-05T12:03:11Z:clawsweeper_auto_repair",
       "comment_id": "5980765156",
@@ -33599,6 +33552,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148432:5668510863:2026-10-05T18:40:59Z:clawsweeper_needs_human",
+      "comment_id": "5668510863",
+      "comment_version_key": "5668510863:2026-10-05T18:40:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148432#issuecomment-5668510863",
+      "comment_created_at": "2026-09-14T18:10:17Z",
+      "comment_updated_at": "2026-10-05T18:40:59Z",
+      "comment_body_sha256": "c187e7e59658127aa5d9785275468743f7cb118253536f4bcacdd161dffe3f7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch has not been reconciled with main's newer heartbeat cleanup owner, so its final merged behavior remains unreviewed. (sha=4bd505ca80cace99d5f2988d7468dc562004b3a1)",
+      "expected_head_sha": "4bd505ca80cace99d5f2988d7468dc562004b3a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T18:42:16.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-lease-heartbeat-onlost-idempotency",
+        "head_sha": "4bd505ca80cace99d5f2988d7468dc562004b3a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
