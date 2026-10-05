@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T16:10:27.303Z",
+  "updated_at": "2026-10-05T16:11:19.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139451:5555182942:2026-10-05T09:43:37Z:clawsweeper_needs_human",
-      "comment_id": "5555182942",
-      "comment_version_key": "5555182942:2026-10-05T09:43:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139451#issuecomment-5555182942",
-      "comment_created_at": "2026-09-05T22:22:09Z",
-      "comment_updated_at": "2026-10-05T09:43:37Z",
-      "comment_body_sha256": "bd408320ead870c0611d452797892dc967e3b2ca9c14ff21fe9de66d11d37339",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence covers direct helper unit tests, not an after-fix configuration-write or startup flow through the production owner. Provi...; Review finding: [P1] Extend the existing backup owner instead of adding an unused parallel path — src/config/auto-backup.ts:15-18 - [P2] Reserve backup filenames exclusively to pr... (sha=4eb7f41c85874aa5f0945201be4f43782723ae0c)",
-      "expected_head_sha": "4eb7f41c85874aa5f0945201be4f43782723ae0c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T10:01:15.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "g3-agent/1788646607344",
-        "head_sha": "4eb7f41c85874aa5f0945201be4f43782723ae0c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161595:5903967220:2026-10-05T09:58:54Z:clawsweeper_needs_human",
       "comment_id": "5903967220",
@@ -33694,6 +33661,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3911:5998335648:2026-10-05T16:10:11Z:re_review",
+      "comment_id": "5998335648",
+      "comment_version_key": "5998335648:2026-10-05T16:10:11Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3911#issuecomment-5998335648",
+      "comment_created_at": "2026-10-05T16:10:11Z",
+      "comment_updated_at": "2026-10-05T16:10:11Z",
+      "comment_body_sha256": "1bc08fe42f4f1952f9e0301dc91888a618f4ba48fc56ae8a5a8707dd32b1061e",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3911,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T16:11:17.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/skills-sh-deploy-overlap-experiment",
+        "head_sha": "432df1e47ce73f977ecdf52ea1391a18265dab48",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
