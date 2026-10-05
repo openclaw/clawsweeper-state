@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T08:34:23.655Z",
+  "updated_at": "2026-10-05T08:35:10.495Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165129:5987473096:2026-10-05T03:15:13Z:re_review",
-      "comment_id": "5987473096",
-      "comment_version_key": "5987473096:2026-10-05T03:15:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165129#issuecomment-5987473096",
-      "comment_created_at": "2026-10-05T03:15:13Z",
-      "comment_updated_at": "2026-10-05T03:15:13Z",
-      "comment_body_sha256": "bf2ec598fe8493a64c6ef0993c1b46e185eb710289b9d779b9ea6ccf50d1b934",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165129,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T03:16:16.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/cron2b",
-        "head_sha": "4741f40d6f47252ffda483a957679c50f6995f8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165277:5987114357:2026-10-05T03:15:37Z:clawsweeper_needs_human",
       "comment_id": "5987114357",
@@ -32915,6 +32868,39 @@
         "kind": "pull_request",
         "branch": "fix/continuation-skip-bootstrap-marker",
         "head_sha": "7266e580cf7ce2220373b7d3b987377f4b02f74a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165011:5982222163:2026-10-05T08:34:09Z:clawsweeper_needs_human",
+      "comment_id": "5982222163",
+      "comment_version_key": "5982222163:2026-10-05T08:34:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165011#issuecomment-5982222163",
+      "comment_created_at": "2026-10-04T16:45:04Z",
+      "comment_updated_at": "2026-10-05T08:34:09Z",
+      "comment_body_sha256": "2bb20928dde8068bf9673226a1c206d95aa750a29a6943d490032b2587e38a95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed sidebar subscription and unread projection have fixture-backed coverage, but no supplied after-fix real Control UI/Gateway evidence... (sha=869c48bd99bbb2822ee07be9ad38987a181ce614)",
+      "expected_head_sha": "869c48bd99bbb2822ee07be9ad38987a181ce614",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T08:35:10.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-agent-unread-badge",
+        "head_sha": "869c48bd99bbb2822ee07be9ad38987a181ce614",
         "cluster_id": null,
         "job_path": null
       }
