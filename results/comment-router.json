@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T05:00:35.957Z",
+  "updated_at": "2026-10-05T05:00:52.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165127:5984824690:2026-10-04T21:56:58Z:clawsweeper_needs_human",
-      "comment_id": "5984824690",
-      "comment_version_key": "5984824690:2026-10-04T21:56:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165127#issuecomment-5984824690",
-      "comment_created_at": "2026-10-04T21:56:58Z",
-      "comment_updated_at": "2026-10-04T21:56:58Z",
-      "comment_body_sha256": "c831df8789184c81f069095db7c97bf03e3e73d500815661e24e417b608a999b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165127,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ffa586c4b13b43da728b8766b91b4c28074f2673)",
-      "expected_head_sha": "ffa586c4b13b43da728b8766b91b4c28074f2673",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T22:46:13.988Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nested-code-indentation",
-        "head_sha": "ffa586c4b13b43da728b8766b91b4c28074f2673",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165139:5984835037:2026-10-04T21:58:18Z:clawsweeper_needs_human",
       "comment_id": "5984835037",
@@ -33480,6 +33447,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165028:5988406750:2026-10-05T04:59:57Z:re_review",
+      "comment_id": "5988406750",
+      "comment_version_key": "5988406750:2026-10-05T04:59:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165028#issuecomment-5988406750",
+      "comment_created_at": "2026-10-05T04:59:57Z",
+      "comment_updated_at": "2026-10-05T04:59:57Z",
+      "comment_body_sha256": "7af696371508f4f431990aaefd973da83103961c43fba5313bb93145ea0e65e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165028,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T05:00:50.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sessauthtail",
+        "head_sha": "056d6887f12dad04b6193ba9656a06bb54dc66ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
