@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T17:30:38.398Z",
+  "updated_at": "2026-10-05T17:30:38.880Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136177:5506984865:2026-10-05T10:49:53Z:clawsweeper_auto_repair",
-      "comment_id": "5506984865",
-      "comment_version_key": "5506984865:2026-10-05T10:49:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136177#issuecomment-5506984865",
-      "comment_created_at": "2026-09-02T08:50:40Z",
-      "comment_updated_at": "2026-10-05T10:49:53Z",
-      "comment_body_sha256": "82b97571e3c4b21ccb0fdc39ca1c9bd9d4b29f9fac6c2a98fa917c40477aa561",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136177,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f88d7839e3461631386007fe74b7750be8048be)",
-      "expected_head_sha": "2f88d7839e3461631386007fe74b7750be8048be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T10:59:09.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/134662-reasoning-stream-session-access",
-        "head_sha": "2f88d7839e3461631386007fe74b7750be8048be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145732:5644344218:2026-10-05T10:54:41Z:clawsweeper_needs_human",
       "comment_id": "5644344218",
@@ -33512,6 +33479,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1400:5999390934:2026-10-05T17:29:33Z:clawsweeper_needs_human",
+      "comment_id": "5999390934",
+      "comment_version_key": "5999390934:2026-10-05T17:29:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1400#issuecomment-5999390934",
+      "comment_created_at": "2026-10-05T17:14:15Z",
+      "comment_updated_at": "2026-10-05T17:29:33Z",
+      "comment_body_sha256": "87df2e8e5bf7ca3f8a17ca8383e895eae36fa5babf2d0b6ef26b049546f7f683",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured body reports three real Compose/k3d Codex turns through the changed OpenShell endpoint, b...; Review finding: [P1] Restrict Agent Gateways to relay operations — internal/occdev/openshell_k3d.go:896-903 - [P2] Handle renewed bootstrap material for an existing runtime provid... (sha=fd9a082e2587432bde6282748a82e3025a64fd1a)",
+      "expected_head_sha": "fd9a082e2587432bde6282748a82e3025a64fd1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T17:30:38.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/openshell-first-agent-codex",
+        "head_sha": "fd9a082e2587432bde6282748a82e3025a64fd1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
