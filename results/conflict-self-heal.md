@@ -1,22 +1,23 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-05T15:37:21.678Z
+Generated: 2026-10-05T16:39:37.073Z
 Repository: openclaw/openclaw
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_clawsweeper_prs | 27 |
+| open_clawsweeper_prs | 28 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 28 |
+| skipped | 29 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
 
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
+| [#165662](https://github.com/openclaw/openclaw/pull/165662) | fix(ci): point paired Vitest inventory at retained Gateway scope suite | clawsweeper/issue-openclaw-openclaw-165653 | MERGEABLE | CLEAN | skipped | head repository is unknown |
 | [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
