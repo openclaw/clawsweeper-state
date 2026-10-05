@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165476",
+  "mode": "autonomous",
+  "run_id": "37290698037",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37290698037",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165476.md",
+  "published_at": "2026-10-05T09:52:01.086Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165476",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165476",
+  "canonical_pr": null,
+  "summary": "Reproduced incorrect embedding routing on preflight main 13c1d87f6df4ad77a7afa0ebe631c8801997a69e. Prepared a narrow fix artifact. Local implementation and validation remain blocked by the read-only host; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165476",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165476",
+      "candidate_fix": null,
+      "reason": "Native subscription chat routing incorrectly supplies the embedding destination. The repair is ordinary bug work with no demonstrated trust-boundary bypass. Implementation requires the writable executor."
+    },
+    {
+      "target": "#160878",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165476",
+      "candidate_fix": null,
+      "reason": "Historical related auth repair, not a candidate for this endpoint-selection defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165476",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165476",
+      "candidate_fix": null,
+      "reason": "A focused new fix PR is authorized. Reuse clawsweeper/issue-openclaw-openclaw-165476 and any existing implementation PR after refreshing live state."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
