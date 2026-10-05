@@ -2,14 +2,14 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-4100"
 mode: "autonomous"
-run_id: "37299100124"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37299100124"
+run_id: "37302999365"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37302999365"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-05T10:53:37.941Z"
-canonical: "https://github.com/steipete/codexbar/issues/4100"
-canonical_issue: "https://github.com/steipete/codexbar/issues/4100"
+published_at: "2026-10-05T11:32:43.057Z"
+canonical: "https://github.com/steipete/CodexBar/issues/4100"
+canonical_issue: "https://github.com/steipete/CodexBar/issues/4100"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 1
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37299100124](https://github.com/openclaw/clawsweeper/actions/runs/37299100124)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37302999365](https://github.com/openclaw/clawsweeper/actions/runs/37302999365)
 
 Workflow conclusion: success
 
 Worker result: needs_human
 
-Canonical: https://github.com/steipete/codexbar/issues/4100
+Canonical: https://github.com/steipete/CodexBar/issues/4100
 
 ## Summary
 
-#4100 is an automated upstream monitoring digest without a selected CodexBar change or acceptance criteria. A maintainer must select a concrete improvement before implementation. No code or GitHub changes were made.
+#4100 is an upstream monitoring digest without a selected implementation request. No code changes or PR are appropriate until a maintainer selects a concrete CodexBar improvement.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/steipete/codexbar/issues/4100
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #4100 | needs_human | blocked | needs_human | Implementation is blocked on a product decision: select one upstream improvement and define the expected CodexBar behavior and acceptance criteria. The operator prompt explicitly requires stopping without a PR when the issue is underspecified or needs a product decision. |
+| #4100 | needs_human | blocked | needs_human | The unresolved decision is which upstream idea, if any, should become a CodexBar change. Choosing one arbitrarily would invent product scope; the job explicitly requires stopping without a PR for underspecified requests or product decisions. |
 
 ## Needs Human
 
-- #4100: Select one concrete upstream improvement to adopt, with expected CodexBar behavior and acceptance criteria.
+- #4100: Select one concrete CodexBar improvement from the digest and specify expected behavior and acceptance criteria, preferably in a separate focused issue.
