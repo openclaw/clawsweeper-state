@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T00:56:25.542Z",
+  "updated_at": "2026-10-05T00:56:29.333Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160695:5878025973:2026-10-04T18:04:53Z:clawsweeper_needs_human",
-      "comment_id": "5878025973",
-      "comment_version_key": "5878025973:2026-10-04T18:04:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160695#issuecomment-5878025973",
-      "comment_created_at": "2026-09-28T20:35:41Z",
-      "comment_updated_at": "2026-10-04T18:04:53Z",
-      "comment_body_sha256": "29e55a299ccbd57c3be7dbf097067796b45f4d1f44b66b3a416b66c1f7dca33f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160695,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the admission owner reaches the trusted npm shell and Docker mutation guards, but available allowed/revoked and...; Review finding: [medium] Revoked admission lacks real final-effect proof — scripts/release-qualification-admission.mjs:612 (sha=5373a1d6831caff2f763c7435f1475a4e46ec909)",
-      "expected_head_sha": "5373a1d6831caff2f763c7435f1475a4e46ec909",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T18:05:52.367Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/implement-candidate-owned-frozen-release-qualification",
-        "head_sha": "5373a1d6831caff2f763c7435f1475a4e46ec909",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165032:5982869855:2026-10-04T18:04:55Z:clawsweeper_needs_human",
       "comment_id": "5982869855",
@@ -33098,6 +33065,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165193:5986284550:2026-10-05T00:55:24Z:re_review",
+      "comment_id": "5986284550",
+      "comment_version_key": "5986284550:2026-10-05T00:55:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165193#issuecomment-5986284550",
+      "comment_created_at": "2026-10-05T00:55:24Z",
+      "comment_updated_at": "2026-10-05T00:55:24Z",
+      "comment_body_sha256": "ed7d54ce77fead597c49a3c1520535128a9d26c34faf3c8980ad3e73e7f9cf9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165193,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T00:56:27.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/nativepatchtail",
+        "head_sha": "5d5593caebfaeb746e16ccf65bd5c0d1edf696a2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
