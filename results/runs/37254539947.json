@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165266",
+  "mode": "autonomous",
+  "run_id": "37254539947",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37254539947",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165266.md",
+  "published_at": "2026-10-05T02:56:13.270Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165266",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165266",
+  "canonical_pr": null,
+  "summary": "The reported drain path remains source-reachable at preflight main 09abaaf0db1e5143d9c1b93da435c60f608cf652. A narrow fix artifact is prepared, but implementation and reproduction are blocked by the read-only host, absent dependencies, and inaccessible systemd user bus. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165266",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165266",
+      "candidate_fix": null,
+      "reason": "The issue isolates an existing lifecycle defect. Implementation must first reproduce it through the maintenance entry point on a writable, supported executor."
+    },
+    {
+      "target": "#160671",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165266",
+      "candidate_fix": null,
+      "reason": "Historical recovery work explicitly left this lifecycle follow-up unfinished."
+    },
+    {
+      "target": "#157011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical root cause; no action belongs in this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165266",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165266",
+      "candidate_fix": null,
+      "reason": "A bounded implementation path is clear. Host restrictions block implementation only, without requiring a maintainer product decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
