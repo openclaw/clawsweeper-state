@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T12:52:28.682Z",
+  "updated_at": "2026-10-05T12:52:40.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4277:5989961468:2026-10-05T07:22:33Z:re_review",
-      "comment_id": "5989961468",
-      "comment_version_key": "5989961468:2026-10-05T07:22:33Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4277#issuecomment-5989961468",
-      "comment_created_at": "2026-10-05T07:22:33Z",
-      "comment_updated_at": "2026-10-05T07:22:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4277,
-      "author": "luochen211",
-      "author_id": 188724350,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T07:26:47.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-4275-refresh-report-reuse",
-        "head_sha": "2f6cf82ebc6fab46e63e57ae4e6d38625d3d1d7c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4277:5989817735:2026-10-05T07:25:56Z:clawsweeper_needs_human",
       "comment_id": "5989817735",
@@ -33087,6 +33040,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3892:5942956523:2026-10-05T12:51:36Z:clawsweeper_needs_human",
+      "comment_id": "5942956523",
+      "comment_version_key": "5942956523:2026-10-05T12:51:36Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3892#issuecomment-5942956523",
+      "comment_created_at": "2026-10-01T23:56:57Z",
+      "comment_updated_at": "2026-10-05T12:51:36Z",
+      "comment_body_sha256": "d12ea7577033f79946b1015f7b2fe1e0976a8af722dab1effc1d2f097a5a57a6",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3892,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head conflicts with its live base; the resolved deployment and worker integration has not yet been reviewed or validated. (sha=76ac3f8bec7332081b26891257325489f6c587b4)",
+      "expected_head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T12:52:40.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remove-staging-environment-20261001",
+        "head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
