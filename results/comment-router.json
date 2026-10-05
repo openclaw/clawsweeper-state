@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T05:34:19.379Z",
+  "updated_at": "2026-10-05T05:34:22.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159448:5985467156:2026-10-04T23:11:35Z:re_review",
-      "comment_id": "5985467156",
-      "comment_version_key": "5985467156:2026-10-04T23:11:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159448#issuecomment-5985467156",
-      "comment_created_at": "2026-10-04T23:11:35Z",
-      "comment_updated_at": "2026-10-04T23:11:35Z",
-      "comment_body_sha256": "069202524ca849ecb56ea0635a6dd586a56a9eb6eb5e50fb55070f1726d00f82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159448,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T23:12:28.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/catalog-retention-followup",
-        "head_sha": "c5f18987224b8f2dbbda5d5ab9389930c9c0ec34",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165134:5984785483:2026-10-04T23:11:42Z:clawsweeper_auto_repair",
       "comment_id": "5984785483",
@@ -33402,6 +33355,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sessauthtail",
         "head_sha": "5e346d7e0beb88d5e565257ce66c1f4e92d1f166",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165340:5988358106:2026-10-05T05:33:23Z:clawsweeper_needs_human",
+      "comment_id": "5988358106",
+      "comment_version_key": "5988358106:2026-10-05T05:33:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165340#issuecomment-5988358106",
+      "comment_created_at": "2026-10-05T04:54:47Z",
+      "comment_updated_at": "2026-10-05T05:33:23Z",
+      "comment_body_sha256": "88a7c371f10b20877102619b2fbdc11f35cf9e0f27480bc6cbe037f6308c850c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165340,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the pinned head’s merge conflicts, preserve current-main worker behavior and both cleanup repairs, and validate the affected integration paths. (sha=45acc5d7f891c0164e67a6cad9eb72a51cf015c5)",
+      "expected_head_sha": "45acc5d7f891c0164e67a6cad9eb72a51cf015c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T05:34:22.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/l378-retry-timeout2-batch-20261004",
+        "head_sha": "45acc5d7f891c0164e67a6cad9eb72a51cf015c5",
         "cluster_id": null,
         "job_path": null
       }
