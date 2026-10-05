@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:20:22.021Z",
+  "updated_at": "2026-10-05T18:23:14.718Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165549:5993835966:2026-10-05T11:49:56Z:re_review",
-      "comment_id": "5993835966",
-      "comment_version_key": "5993835966:2026-10-05T11:49:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165549#issuecomment-5993835966",
-      "comment_created_at": "2026-10-05T11:49:56Z",
-      "comment_updated_at": "2026-10-05T11:49:56Z",
-      "comment_body_sha256": "5b4bf7e6067deb82b6336961bced0bff1c703da56f1931df829c0cad38e4394d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165549,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T11:52:00.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-inject-live-identity-165522",
-        "head_sha": "95b4994adf6849eee222f2134a521e13b4ec4fbf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146185:5647161421:2026-10-05T11:52:01Z:clawsweeper_auto_repair",
       "comment_id": "5647161421",
@@ -33499,6 +33452,39 @@
         "kind": "pull_request",
         "branch": "fix/voice-call-realtime-call-control",
         "head_sha": "fee48c3a2f083be0a5bff92264a9c88d1a6c7cdb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165716:6000499011:2026-10-05T18:22:13Z:clawsweeper_needs_human",
+      "comment_id": "6000499011",
+      "comment_version_key": "6000499011:2026-10-05T18:22:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165716#issuecomment-6000499011",
+      "comment_created_at": "2026-10-05T18:22:13Z",
+      "comment_updated_at": "2026-10-05T18:22:13Z",
+      "comment_body_sha256": "87abf2f12b508203868142d706fa651c0c259f074de6ac6a172bf915b6b4be0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165716,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured Twilio observations positively support brief use, voicemail completion, reporting, and an...; Review finding: [P1] Apply the receptionist brief before admitting non-realtime callbacks — extensions/voice-call/src/manager/events.ts:257-259 - [medium] Callback restrictions di... (sha=20defbc679283f8c97e0e39b744d94d5187e63bf)",
+      "expected_head_sha": "20defbc679283f8c97e0e39b744d94d5187e63bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T18:23:14.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/voice-call-errand-features",
+        "head_sha": "20defbc679283f8c97e0e39b744d94d5187e63bf",
         "cluster_id": null,
         "job_path": null
       }
