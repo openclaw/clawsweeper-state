@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165557",
+  "mode": "autonomous",
+  "run_id": "37307962617",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37307962617",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165557.md",
+  "published_at": "2026-10-05T12:33:35.198Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165557",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165557",
+  "canonical_pr": null,
+  "summary": "The fixture mismatch remains in source at preflight main SHA 91dc92261fda821f9991493bec8f90a8b5cfaefe. Reproduction stopped before test execution because Corepack encountered EROFS and dependencies are absent. A narrow test-only fix artifact is prepared; no files or GitHub state were changed. Implementation, passing validation, timing evidence, and fresh review remain pending.",
+  "actions": [
+    {
+      "target": "#165557",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165557",
+      "candidate_fix": null,
+      "reason": "Source supports the reported fixture defect. The executor must reproduce it through the specified test command before editing; stop without a PR if the expected failures do not reproduce."
+    },
+    {
+      "target": "#165487",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165557",
+      "candidate_fix": null,
+      "reason": "Already-merged production context; no mutation or replacement is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165557",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165557",
+      "candidate_fix": null,
+      "reason": "The fix plan is narrow and non-mutating. Execute it only after the baseline reproduction gate succeeds on a writable, dependency-ready checkout; reuse the job's branch and one PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
