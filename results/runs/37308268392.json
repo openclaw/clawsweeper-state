@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165559",
+  "mode": "autonomous",
+  "run_id": "37308268392",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37308268392",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165559.md",
+  "published_at": "2026-10-05T12:53:22.213Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165559",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165559",
+  "canonical_pr": null,
+  "summary": "Confirmed the assertion defect on preflight main and prepared a narrow fix plan. Implementation and required validation are blocked by the read-only host, absent dependencies, and unavailable Node 24.19.0. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165559",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165559",
+      "candidate_fix": null,
+      "reason": "The existing assertion conflates controlled backing stores with smaller allocations attributed to the same frame."
+    },
+    {
+      "target": "#160414",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165559",
+      "candidate_fix": null,
+      "reason": "Historical GC-timing repair; no mutation is appropriate."
+    },
+    {
+      "target": "#164981",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165559",
+      "candidate_fix": null,
+      "reason": "Historical retained-workload repair; preserve it while correcting the distinct dropped-workload assertion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165559",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165559",
+      "candidate_fix": null,
+      "reason": "A narrow test-only repair is justified; the artifact is ready for the executor, while implementation and publication remain gated on required proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
