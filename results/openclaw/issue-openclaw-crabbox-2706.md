@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2706"
 mode: "autonomous"
-run_id: "37288028683"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37288028683"
+run_id: "37294103085"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37294103085"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-05T09:19:03.851Z"
+result_status: "blocked"
+published_at: "2026-10-05T10:26:18.680Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37288028683](https://github.com/openclaw/clawsweeper/actions/runs/37288028683)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37294103085](https://github.com/openclaw/clawsweeper/actions/runs/37294103085)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/crabbox/issues/2706
 
 ## Summary
 
-Verified the stop target-precedence defect on preflight main 481fde099fdda58c9dd57d006c1f7ed18190a213. Narrow implementation artifact prepared; code changes and validation are blocked locally by the read-only filesystem. Apple Silicon runtime proof remains pending. No GitHub mutations occurred.
+Confirmed the stop target-precedence defect on supplied main SHA 481fde099fdda58c9dd57d006c1f7ed18190a213. A narrow fix artifact is ready; implementation and runtime validation are blocked by the read-only environment and unavailable authorized Apple Silicon Tart setup. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Verified the stop target-precedence defect on preflight main 481fde099fdda58c9dd
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (go test ./internal/providers/all -run Stop.*Target|Target.*Stop -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
+| execute_fix | blocked |  |  | validation command failed (go test -count=1 ./internal/providers/all -run TestStopTartTarget): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
 | issue_implementation_status_comment | updated | #2706 |  |  |
 
 ## Apply Actions
@@ -67,9 +67,9 @@ Verified the stop target-precedence defect on preflight main 481fde099fdda58c9dd
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2706 | fix_needed | planned | canonical | The request remains viable as a narrow provider-neutral precedence correction. Keep the issue open; closing and merging are prohibited by this job. |
-| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | One narrow new implementation PR is justified. The artifact is available for the executor despite this worker's inability to edit or build. |
-| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked on a writable executor and the required validation, including native Tart proof. This is an execution limitation, not an unresolved product decision. |
+| #2706 | fix_needed | planned | canonical | The existing flag-precedence contract remains broken; the issue is a narrow ordinary bug with no viable canonical PR in the supplied inventory. |
+| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | The verified defect has a narrow implementation path that a writable executor can carry forward. |
+| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | Implementation and PR readiness require a writable executor, working Go toolchain/cache, and authorized Apple Silicon Tart proof for both ID and slug cleanup. Reuse clawsweeper/issue-openclaw-crabbox-2706 and do not publish a PR claiming validation until these gates complete. |
 
 ## Needs Human
 
