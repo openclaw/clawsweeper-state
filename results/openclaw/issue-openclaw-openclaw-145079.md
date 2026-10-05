@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145079"
 mode: "autonomous"
-run_id: "37303041940"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37303041940"
+run_id: "37311134146"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37311134146"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T12:32:13.818Z"
+published_at: "2026-10-05T13:58:02.517Z"
 canonical: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145079"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37303041940](https://github.com/openclaw/clawsweeper/actions/runs/37303041940)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37311134146](https://github.com/openclaw/clawsweeper/actions/runs/37311134146)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/145079
 
 ## Summary
 
-Confirmed the shared matcher gap on preflight main 83b743ac7141882378a821db5beacd14a7222745. Implementation and required transport-to-session reproduction are blocked by the read-only sandbox and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state were changed.
+Confirmed the reported matcher gap on preflight main f1930848efe65b8f3fa07028e6a4fdc112ed8ac9. Prepared a narrow credited fix plan. Implementation and transport-to-session reproduction remain blocked by the read-only host, absent dependencies, and pnpm bootstrap failing with EROFS. No code or GitHub mutations occurred.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Confirmed the shared matcher gap on preflight main 83b743ac7141882378a821db5beac
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145079 | fix_needed | planned | canonical | Existing recovery behavior has a narrow classification gap. Keep the canonical issue open; executor must reproduce before changing production code. |
-| #127338 | keep_closed | skipped | related | Historical evidence only. |
-| #144583 | keep_closed | skipped | related | Historical sibling recovery evidence only. |
-| #145080 | keep_closed | skipped | related | Preserve prior-work credit in the new implementation PR; no closure or branch repair action applies. |
-| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned |  | Artifact preparation is complete. Local implementation is blocked by host restrictions; continue in a writable, independently owned executor checkout. |
+| #145079 | fix_needed | planned | canonical | The canonical report remains source-supported and has no viable open implementation PR. Establish the required failing real-boundary regression before making the matcher repair. |
+| #127338 | keep_closed | skipped | related | Historical recovery foundation; no action on the closed PR. |
+| #144583 | keep_closed | skipped | related | Adjacent historical implementation; no action on the closed PR. |
+| #145080 | keep_closed | skipped | related | Preserve contributor credit in the new issue implementation; leave the closed source PR unchanged. |
+| cluster:issue-openclaw-openclaw-145079 | build_fix_artifact | planned |  | A narrow artifact can be handed to the executor despite local implementation restrictions. |
+| cluster:issue-openclaw-openclaw-145079 | open_fix_pr | blocked |  | Executor must complete reproduction, implementation, validation, and review on a writable isolated host before opening or updating the single implementation PR. |
 
 ## Needs Human
 
