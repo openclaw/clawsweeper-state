@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:24:46.406Z",
+  "updated_at": "2026-10-05T23:25:25.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165645:5997978199:2026-10-05T15:49:26Z:autofix",
-      "comment_id": "5997978199",
-      "comment_version_key": "5997978199:2026-10-05T15:49:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165645#issuecomment-5997978199",
-      "comment_created_at": "2026-10-05T15:49:26Z",
-      "comment_updated_at": "2026-10-05T15:49:26Z",
-      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165645,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T15:50:21.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/testflight-device-auth-suspension",
-        "head_sha": "5fb5097e27c32fb2d31ebadd7e3d748fb0d7ae70",
-        "cluster_id": "automerge-openclaw-openclaw-165645",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165645.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165645.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147761:5658386258:2026-10-05T15:49:34Z:clawsweeper_auto_repair",
       "comment_id": "5658386258",
@@ -33932,6 +33873,39 @@
         "kind": "pull_request",
         "branch": "codex/oce-next-defect",
         "head_sha": "3f7bdcfc561e312f95e1d0cf9145cd800cb878fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1382:5993692544:2026-10-05T23:24:35Z:clawsweeper_needs_human",
+      "comment_id": "5993692544",
+      "comment_version_key": "5993692544:2026-10-05T23:24:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1382#issuecomment-5993692544",
+      "comment_created_at": "2026-10-05T11:39:55Z",
+      "comment_updated_at": "2026-10-05T23:24:35Z",
+      "comment_body_sha256": "f82187e98202784ef0340b24e5b2c8d81a75d7a1588ec37f2631e7f715f18665",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1382,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fda301c3f5505ed69581d8611ac2cf6e048ad987)",
+      "expected_head_sha": "fda301c3f5505ed69581d8611ac2cf6e048ad987",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T23:25:25.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/source-scan-after-1370",
+        "head_sha": "fda301c3f5505ed69581d8611ac2cf6e048ad987",
         "cluster_id": null,
         "job_path": null
       }
