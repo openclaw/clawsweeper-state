@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165617",
+  "mode": "autonomous",
+  "run_id": "37326768279",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37326768279",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165617.md",
+  "published_at": "2026-10-05T15:22:17.432Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165617",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165617",
+  "canonical_pr": null,
+  "summary": "Current preflight main still omits fs-safe’s reported unsupported-rename cause from the migration fallback allowlist. A narrow fix artifact is prepared. Implementation, failing regression proof, validation, and PR creation are blocked by the read-only filesystem and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165617",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165617",
+      "candidate_fix": null,
+      "reason": "Restore compatibility with the pinned dependency at the existing migration fallback owner; keep the issue open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165617",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165617",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for a writable executor. It requires a failing baseline regression before any production edit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165617",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#165617",
+      "candidate_fix": null,
+      "reason": "Implementation and publication remain blocked on a writable, dependency-prepared executor. Reuse clawsweeper/issue-openclaw-openclaw-165617, prove the regression, implement and validate the narrow repair, obtain fresh review, then let the deterministic applicator open or update the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
