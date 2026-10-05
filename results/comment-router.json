@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T14:43:23.493Z",
+  "updated_at": "2026-10-05T14:43:23.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136274:5981724373:2026-10-04T15:43:31Z:re_review",
-      "comment_id": "5981724373",
-      "comment_version_key": "5981724373:2026-10-04T15:43:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5981724373",
-      "comment_created_at": "2026-10-04T15:43:31Z",
-      "comment_updated_at": "2026-10-04T15:43:31Z",
-      "comment_body_sha256": "be51524a944005e91dfdc4e26ebff5fd3f22db41b018921e7acf176c313c539c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136274,
-      "author": "a-tokyo",
-      "author_id": 12428415,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T08:40:34.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/per-team-sharepoint-upload",
-        "head_sha": "82a70dc5601d41a44db5ba7a66ae550f6502de42",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136274:5508895313:2026-10-05T08:39:25Z:clawsweeper_needs_human",
       "comment_id": "5508895313",
@@ -33550,6 +33503,39 @@
         "kind": "pull_request",
         "branch": "fix/ui-tool-stream-utf16",
         "head_sha": "327fe1045ee57fe83282686e9f95dc263729f3d9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165621:5996783860:2026-10-05T14:42:22Z:clawsweeper_auto_repair",
+      "comment_id": "5996783860",
+      "comment_version_key": "5996783860:2026-10-05T14:42:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165621#issuecomment-5996783860",
+      "comment_created_at": "2026-10-05T14:42:22Z",
+      "comment_updated_at": "2026-10-05T14:42:22Z",
+      "comment_body_sha256": "c5c2b9287673b5cc3a0f8539b5ec42cf79115747571cadae94ddc26e9fe442c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165621,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=883119c32dd4dea01d4c06db81bb85c926f2bb9d)",
+      "expected_head_sha": "883119c32dd4dea01d4c06db81bb85c926f2bb9d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-05T14:43:23.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/copilot-usage-cancel",
+        "head_sha": "883119c32dd4dea01d4c06db81bb85c926f2bb9d",
         "cluster_id": null,
         "job_path": null
       }
