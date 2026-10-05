@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T03:49:16.730Z",
+  "updated_at": "2026-10-05T03:49:23.794Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165018:5984818910:2026-10-04T21:56:14Z:re_review",
-      "comment_id": "5984818910",
-      "comment_version_key": "5984818910:2026-10-04T21:56:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165018#issuecomment-5984818910",
-      "comment_created_at": "2026-10-04T21:56:14Z",
-      "comment_updated_at": "2026-10-04T21:56:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165018,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T21:57:02.409Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1092",
-        "head_sha": "e668c7d911f3d37654cca67437c958dc2961ddc3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:333:5972971768:2026-10-04T21:56:48Z:clawsweeper_auto_repair",
       "comment_id": "5972971768",
@@ -32975,6 +32928,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-fixed-lease-id-catalog",
         "head_sha": "d5301920ba991b1f012c7d0207d42b9bae2bd42a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165303:5987504432:2026-10-05T03:47:56Z:clawsweeper_needs_human",
+      "comment_id": "5987504432",
+      "comment_version_key": "5987504432:2026-10-05T03:47:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165303#issuecomment-5987504432",
+      "comment_created_at": "2026-10-05T03:18:36Z",
+      "comment_updated_at": "2026-10-05T03:47:56Z",
+      "comment_body_sha256": "a096fe0224d0e7fa36caa745866b281eeb1c8f234e6c16c3979f820b8ed63b13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Full existing-state upgrade compatibility remains unqualified: the replay reports successful activation but fails plugin convergence at the intentionally retained API floor. A compati... (sha=d044d960f74332512ff71bbe9d56ae804bb722c8)",
+      "expected_head_sha": "d044d960f74332512ff71bbe9d56ae804bb722c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T03:49:23.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/deferred-webhook-pins",
+        "head_sha": "d044d960f74332512ff71bbe9d56ae804bb722c8",
         "cluster_id": null,
         "job_path": null
       }
