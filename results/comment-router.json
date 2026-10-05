@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T22:04:33.084Z",
+  "updated_at": "2026-10-05T22:04:33.262Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165614:5996520629:2026-10-05T14:28:01Z:re_review",
-      "comment_id": "5996520629",
-      "comment_version_key": "5996520629:2026-10-05T14:28:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165614#issuecomment-5996520629",
-      "comment_created_at": "2026-10-05T14:28:01Z",
-      "comment_updated_at": "2026-10-05T14:28:01Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165614,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T14:28:55.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/rpcmeta",
-        "head_sha": "39442061d0e3f3ec539612a130fb50ca01b235ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165605:5996073242:2026-10-05T14:27:57Z:clawsweeper_needs_human",
       "comment_id": "5996073242",
@@ -33806,6 +33759,65 @@
       "status": "skipped",
       "processed_at": "2026-10-05T22:04:26.342Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165825:6003995014:2026-10-05T22:03:33Z:autofix",
+      "comment_id": "6003995014",
+      "comment_version_key": "6003995014:2026-10-05T22:03:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165825#issuecomment-6003995014",
+      "comment_created_at": "2026-10-05T22:03:33Z",
+      "comment_updated_at": "2026-10-05T22:03:33Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165825,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "autofix enabled; current checks are failing: openclaw/ci-gate:FAILURE, openclaw/dependency-review:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-05T22:04:28.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remove-fleet",
+        "head_sha": "db724d8ef9a9f9e47a7552ba40bd6f5ea0a031d2",
+        "cluster_id": "automerge-openclaw-openclaw-165825",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165825.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165825.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165825.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/telecrawl:55:5974634973:2026-10-05T22:02:20Z:clawsweeper_needs_human",
