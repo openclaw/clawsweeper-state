@@ -1,0 +1,96 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-535",
+  "mode": "autonomous",
+  "run_id": "37253433289",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37253433289",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-535.md",
+  "published_at": "2026-10-05T02:01:30.251Z",
+  "canonical": "https://github.com/steipete/oracle/issues/535",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/535",
+  "canonical_pr": null,
+  "summary": "Confirmed the unprepared new-launch integration on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable, but implementation and runtime proof are blocked by the read-only environment. Focused tests and pnpm check stopped in Corepack with EROFS before running. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#535",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Keep #535 as the canonical implementation request. Establish the required 1.2.2 regression before implementing the narrow integration fix."
+    },
+    {
+      "target": "#538",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Distinct root cause and attachment path; keep open for a separate focused job."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Artifact generation is complete. Implementation and PR creation require a writable executor with dependencies and runtime validation; no maintainer product decision is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation_script_missing: required pnpm check:changed is unavailable in target checkout",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#535",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
