@@ -1,0 +1,76 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37257923855",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37257923855",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-05T03:07:18.211Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "No implementation PR is currently justified. Issue #41 explicitly requires two stable upstream publications; the hydrated review reports both gates unmet. The checkout matches preflight main and still pins ghostty-web@0.4.0. External refs #169 and #182 require correctly scoped hydration before item-level actions can be validated. No files or GitHub state changed; tests were not run.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until both publication gates are verified and an exact qualifying stable wrapper is identified. Keep the adoption tracker open; do not generate a speculative fix artifact."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical supporting work, not a runtime-adoption fix or closure target."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Block routing pending correctly scoped hydration of coder/ghostty-web PR #169 and verification of its security-sensitive signal. Keep this reference quarantined from mutation; do not apply an action to openclaw/libterminal #169. This does not change #41's independent publication blocker."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Block item-level classification pending correctly scoped hydration of coder/ghostty-web PR #182. Retain its link as external context only; do not apply an action to openclaw/libterminal #182."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Resolve the mishydrated #169 reference against coder/ghostty-web PR #169, obtain its actual updated_at, and verify the reported security signal before central security routing. No mutation is authorized.",
+    "Resolve the mishydrated #182 reference against coder/ghostty-web PR #182 and obtain its actual kind, state, and updated_at before restoring item-level classification. No mutation is authorized."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
