@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165745",
+  "mode": "autonomous",
+  "run_id": "37362865146",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37362865146",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165745.md",
+  "published_at": "2026-10-05T19:58:16.051Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165745",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the deferred image-loss path. A narrow fix artifact is ready, but implementation and boundary reproduction are blocked by the read-only filesystem and unavailable dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165745",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165745",
+      "candidate_fix": null,
+      "reason": "The existing presentation path drops model-visible images. Classification is clear; reproduction and implementation require a writable executor with dependencies and a verified current base."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165745",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165745",
+      "candidate_fix": null,
+      "reason": "Provide the authorized executor a narrow new-PR repair plan without treating missing host capabilities as maintainer ambiguity."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
