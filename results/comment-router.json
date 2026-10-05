@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:19:35.595Z",
+  "updated_at": "2026-10-05T18:19:51.879Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146155:5647095910:2026-10-05T11:50:19Z:clawsweeper_needs_human",
-      "comment_id": "5647095910",
-      "comment_version_key": "5647095910:2026-10-05T11:50:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146155#issuecomment-5647095910",
-      "comment_created_at": "2026-09-12T16:16:09Z",
-      "comment_updated_at": "2026-10-05T11:50:19Z",
-      "comment_body_sha256": "7e6e6fd975de17491eb61341df984c6f51a126e5045d695426dbaaff0a1a2b9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146155,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed chat renderer is exercised through installMockGateway with a successful catalog response followed by a rejection, and the contribut... (sha=73490a5814a93d3a66f6d8f5fc52cc7b977fa227)",
-      "expected_head_sha": "73490a5814a93d3a66f6d8f5fc52cc7b977fa227",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T11:51:18.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/astra-effort-retained-catalog",
-        "head_sha": "73490a5814a93d3a66f6d8f5fc52cc7b977fa227",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146188:5647161124:2026-10-05T11:50:50Z:clawsweeper_needs_human",
       "comment_id": "5647161124",
@@ -33488,6 +33455,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165205:6000430945:2026-10-05T18:17:53Z:re_review",
+      "comment_id": "6000430945",
+      "comment_version_key": "6000430945:2026-10-05T18:17:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165205#issuecomment-6000430945",
+      "comment_created_at": "2026-10-05T18:17:53Z",
+      "comment_updated_at": "2026-10-05T18:17:53Z",
+      "comment_body_sha256": "b03de7b7098acf51e63a6e2e73265c029ecb757d47aebd3b85f3516dc9ebdb2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165205,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T18:19:50.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sessauthobs",
+        "head_sha": "c5eba15df3829255c3dd926a47aeb72c46d6ad21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
