@@ -1,40 +1,6 @@
 {
-  "updated_at": "2026-10-05T05:09:03.672Z",
+  "updated_at": "2026-10-05T05:09:50.304Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:114:5975940616:2026-10-04T22:45:59Z:clawsweeper_auto_repair",
-      "comment_id": "5975940616",
-      "comment_version_key": "5975940616:2026-10-04T22:45:59Z",
-      "comment_url": "https://github.com/openclaw/Tachikoma/pull/114#issuecomment-5975940616",
-      "comment_created_at": "2026-10-04T02:52:59Z",
-      "comment_updated_at": "2026-10-04T22:45:59Z",
-      "comment_body_sha256": "cb4e2cbe6a8a4e1c0cf47c0e674941329532dc1560f03c39b20075f083f91977",
-      "repo": "openclaw/tachikoma",
-      "issue_number": 114,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=01b88e3001616f22c4247fc4afd7b4c65539b592)",
-      "expected_head_sha": "01b88e3001616f22c4247fc4afd7b4c65539b592",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T22:46:49.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tachikoma-f011",
-        "head_sha": "01b88e3001616f22c4247fc4afd7b4c65539b592",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "source_delivery_conflict": true
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/swabble:15:5922805818:2026-10-04T22:46:01Z:clawsweeper_auto_repair",
       "comment_id": "5922805818",
@@ -33476,6 +33442,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163655:5988485276:2026-10-05T05:08:58Z:re_review",
+      "comment_id": "5988485276",
+      "comment_version_key": "5988485276:2026-10-05T05:08:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163655#issuecomment-5988485276",
+      "comment_created_at": "2026-10-05T05:08:58Z",
+      "comment_updated_at": "2026-10-05T05:08:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163655,
+      "author": "chuanleiguo",
+      "author_id": 5415054,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T05:09:49.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/foreign-live-input-custody",
+        "head_sha": "3461bd2c46b82ff5c467371ea4b069da5b1c50bb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
