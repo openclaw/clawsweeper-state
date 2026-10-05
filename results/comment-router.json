@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T11:05:32.620Z",
+  "updated_at": "2026-10-05T11:05:39.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164836:5988881659:2026-10-05T05:50:14Z:re_review",
-      "comment_id": "5988881659",
-      "comment_version_key": "5988881659:2026-10-05T05:50:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164836#issuecomment-5988881659",
-      "comment_created_at": "2026-10-05T05:50:14Z",
-      "comment_updated_at": "2026-10-05T05:50:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164836,
-      "author": "RXQ6",
-      "author_id": 205592600,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T05:51:14.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-schema-depth-budget",
-        "head_sha": "dbd386703d14c17f5aa5174ff14680dd757878d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140955:5566603333:2026-10-05T05:50:13Z:clawsweeper_needs_human",
       "comment_id": "5566603333",
@@ -32847,6 +32800,39 @@
         "kind": "pull_request",
         "branch": "ci-fix/uir1-update-cause",
         "head_sha": "bdaa8fe625b0e6932fba0d03f438f3bad37a2114",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:942:5992235958:2026-10-05T11:04:46Z:clawsweeper_needs_human",
+      "comment_id": "5992235958",
+      "comment_version_key": "5992235958:2026-10-05T11:04:46Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/942#issuecomment-5992235958",
+      "comment_created_at": "2026-10-05T10:00:33Z",
+      "comment_updated_at": "2026-10-05T11:04:46Z",
+      "comment_body_sha256": "4ea734e483a55427a63cee9f6039b1ff05da6bd65b4db857bc8bef7151730f3b",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Foundation transform feeds CLI window dispatch/readback, but supplied final-head evidence exercises synthetic outcomes and presenta... (sha=f9592219e26dea919297676f3875719aac2832b2)",
+      "expected_head_sha": "f9592219e26dea919297676f3875719aac2832b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T11:05:39.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-foundation-readback-20261005",
+        "head_sha": "f9592219e26dea919297676f3875719aac2832b2",
         "cluster_id": null,
         "job_path": null
       }
