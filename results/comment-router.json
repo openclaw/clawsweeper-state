@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T07:39:31.792Z",
+  "updated_at": "2026-10-05T07:39:43.519Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165129:5986622843:2026-10-05T01:35:44Z:re_review",
-      "comment_id": "5986622843",
-      "comment_version_key": "5986622843:2026-10-05T01:35:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165129#issuecomment-5986622843",
-      "comment_created_at": "2026-10-05T01:35:44Z",
-      "comment_updated_at": "2026-10-05T01:35:44Z",
-      "comment_body_sha256": "a698a591e8292afbb732049e1129d38e7671b5fd1b44ddfb0878dcb0a4bdce22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165129,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T01:36:45.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/cron2b",
-        "head_sha": "4741f40d6f47252ffda483a957679c50f6995f8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165247:5986625901:2026-10-05T01:36:06Z:clawsweeper_needs_human",
       "comment_id": "5986625901",
@@ -33305,6 +33258,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-4275-refresh-report-reuse",
         "head_sha": "2f6cf82ebc6fab46e63e57ae4e6d38625d3d1d7c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2705:5990124393:2026-10-05T07:38:47Z:clawsweeper_needs_human",
+      "comment_id": "5990124393",
+      "comment_version_key": "5990124393:2026-10-05T07:38:47Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2705#issuecomment-5990124393",
+      "comment_created_at": "2026-10-05T07:34:34Z",
+      "comment_updated_at": "2026-10-05T07:38:47Z",
+      "comment_body_sha256": "a4ed1f4f80eb76adfa8e4d5dd6edc0ee8a81999ccdaba1d155397e147bec7776",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain explicit release of the author's review-only hold before landing. (sha=a5947b2ffa9912181b472690c3371dbccaeb2686)",
+      "expected_head_sha": "a5947b2ffa9912181b472690c3371dbccaeb2686",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T07:39:43.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/coordinator-lease-read-stalls",
+        "head_sha": "a5947b2ffa9912181b472690c3371dbccaeb2686",
         "cluster_id": null,
         "job_path": null
       }
