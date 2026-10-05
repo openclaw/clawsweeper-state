@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:14:46.540Z",
+  "updated_at": "2026-10-05T23:16:20.778Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3897:5947642071:2026-10-05T15:38:36Z:clawsweeper_needs_human",
-      "comment_id": "5947642071",
-      "comment_version_key": "5947642071:2026-10-05T15:38:36Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3897#issuecomment-5947642071",
-      "comment_created_at": "2026-10-02T07:46:07Z",
-      "comment_updated_at": "2026-10-05T15:38:36Z",
-      "comment_body_sha256": "97dc14e2c5ad253d9f5585e3c4266c2ba24f19b29728e8acb94f2539e50ad4da",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing handoff invocations can become P0-only and omit actionable P1–P3 defects unless a wider threshold is explicitly selected; ClawHub has no recorded acceptance of that narrowing. (sha=662fe79692b78a29fc8f5cc8550e89fe547bbdc5)",
-      "expected_head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T15:39:55.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/autoreview-scanner-free-20261002",
-        "head_sha": "662fe79692b78a29fc8f5cc8550e89fe547bbdc5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3910:5997381743:2026-10-05T15:38:59Z:clawsweeper_needs_human",
       "comment_id": "5997381743",
@@ -33923,6 +33890,53 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165680:6005190820:2026-10-05T23:15:25Z:re_review",
+      "comment_id": "6005190820",
+      "comment_version_key": "6005190820:2026-10-05T23:15:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165680#issuecomment-6005190820",
+      "comment_created_at": "2026-10-05T23:15:25Z",
+      "comment_updated_at": "2026-10-05T23:15:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165680,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T23:16:19.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/coldadmit",
+        "head_sha": "1e4bb9739cf6243d2656ef0b0b9fe4b7ebb8d0e2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
           "label": null,
           "job_path": null
         }
