@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T16:38:28.962Z",
+  "updated_at": "2026-10-05T16:40:03.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165507:5992668513:2026-10-05T10:29:35Z:re_review",
-      "comment_id": "5992668513",
-      "comment_version_key": "5992668513:2026-10-05T10:29:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165507#issuecomment-5992668513",
-      "comment_created_at": "2026-10-05T10:29:35Z",
-      "comment_updated_at": "2026-10-05T10:29:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165507,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T10:30:29.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-status-maxbuffer-165494",
-        "head_sha": "de4a6604be9c12e4350f4cdabbda61ed95d57a00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165515:5992672940:2026-10-05T10:29:51Z:clawsweeper_needs_human",
       "comment_id": "5992672940",
@@ -33628,6 +33581,39 @@
         "kind": "pull_request",
         "branch": "codex/runtime-loaders54-d534",
         "head_sha": "c4bad1d599d22872705d096032b3928c8deebeb3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165669:5998816431:2026-10-05T16:38:20Z:clawsweeper_needs_human",
+      "comment_id": "5998816431",
+      "comment_version_key": "5998816431:2026-10-05T16:38:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165669#issuecomment-5998816431",
+      "comment_created_at": "2026-10-05T16:38:20Z",
+      "comment_updated_at": "2026-10-05T16:38:20Z",
+      "comment_body_sha256": "7b5687438d944bcc0f6ee988ab949e9dbc429d4b62665147f4a5b1ff48e50c56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165669,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal output covers the real builder and an extracted synthetic runtime fixture, but not an installed OpenClaw runtime...; Review finding: [P2] Preserve private hidden-file exclusions inside plugin dist — src/gateway/worker-environments/node-bootstrap-artifact-build.ts:370-375 - [medium] Unreferenced... (sha=f69d9cf3755d2ec1661ff7c591839d211515ac1f)",
+      "expected_head_sha": "f69d9cf3755d2ec1661ff7c591839d211515ac1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T16:40:03.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-165638-node-bootstrap-dotsetup",
+        "head_sha": "f69d9cf3755d2ec1661ff7c591839d211515ac1f",
         "cluster_id": null,
         "job_path": null
       }
