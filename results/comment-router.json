@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:47:37.982Z",
+  "updated_at": "2026-10-05T18:48:01.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165561:5994251841:2026-10-05T12:16:06Z:re_review",
-      "comment_id": "5994251841",
-      "comment_version_key": "5994251841:2026-10-05T12:16:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165561#issuecomment-5994251841",
-      "comment_created_at": "2026-10-05T12:16:06Z",
-      "comment_updated_at": "2026-10-05T12:16:06Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165561,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T12:17:09.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w4sysaudit",
-        "head_sha": "af3f4e764dbc3a38406f2f4f4b5fefc0afe4fd9a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165554:5994254511:2026-10-05T12:16:17Z:re_review",
       "comment_id": "5994254511",
@@ -33540,6 +33493,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sessauthobs",
         "head_sha": "a21f4275773eefa8ea8af670e678f870f056d08c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3833:5862161949:2026-10-05T18:45:22Z:clawsweeper_needs_human",
+      "comment_id": "5862161949",
+      "comment_version_key": "5862161949:2026-10-05T18:45:22Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3833#issuecomment-5862161949",
+      "comment_created_at": "2026-09-28T02:22:52Z",
+      "comment_updated_at": "2026-10-05T18:45:22Z",
+      "comment_body_sha256": "5fa79c5eefa205271eed088e446048c342f210d2546d9c2c28bd5369d4c3fada",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3833,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Landing company-specific bundle directories without defining their relationship to the documented operational-input workflow could leave two maintenance sources for the same integrati... (sha=66f547401795bfeba82d76902d8a00cd5121a75f)",
+      "expected_head_sha": "66f547401795bfeba82d76902d8a00cd5121a75f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T18:48:01.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-723-manual-bundles",
+        "head_sha": "66f547401795bfeba82d76902d8a00cd5121a75f",
         "cluster_id": null,
         "job_path": null
       }
