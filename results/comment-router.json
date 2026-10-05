@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:39:16.663Z",
+  "updated_at": "2026-10-05T10:39:36.566Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Kova:167:5975941503:2026-10-05T05:22:21Z:clawsweeper_needs_human",
-      "comment_id": "5975941503",
-      "comment_version_key": "5975941503:2026-10-05T05:22:21Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/167#issuecomment-5975941503",
-      "comment_created_at": "2026-10-04T02:53:07Z",
-      "comment_updated_at": "2026-10-05T05:22:21Z",
-      "comment_body_sha256": "4cd6fd35ade4e5e17d81690d0a9ff2121c788484668fdea45e502fe1ac9a6d89",
-      "repo": "openclaw/Kova",
-      "issue_number": 167,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Linux probe is covered only by synthetic predicate inputs in the supplied macOS test run, which skipped all sixteen Linux runtime c... (sha=9b2a061579a7f0bcc320be4ea5391c914051226f)",
-      "expected_head_sha": "9b2a061579a7f0bcc320be4ea5391c914051226f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T05:23:15.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-f009",
-        "head_sha": "9b2a061579a7f0bcc320be4ea5391c914051226f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:160:5762738687:2026-10-05T05:22:26Z:clawsweeper_needs_human",
       "comment_id": "5762738687",
@@ -32829,6 +32796,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165470:5992803977:2026-10-05T10:38:32Z:re_review",
+      "comment_id": "5992803977",
+      "comment_version_key": "5992803977:2026-10-05T10:38:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165470#issuecomment-5992803977",
+      "comment_created_at": "2026-10-05T10:38:32Z",
+      "comment_updated_at": "2026-10-05T10:38:32Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165470,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T10:39:34.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/rpcsql",
+        "head_sha": "221ae574aad79efe06ad9d486c6c304251bf076e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
