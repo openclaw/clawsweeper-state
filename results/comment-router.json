@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T01:16:55.007Z",
+  "updated_at": "2026-10-05T01:17:06.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160695:5983133892:2026-10-04T18:37:01Z:re_review",
-      "comment_id": "5983133892",
-      "comment_version_key": "5983133892:2026-10-04T18:37:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160695#issuecomment-5983133892",
-      "comment_created_at": "2026-10-04T18:37:01Z",
-      "comment_updated_at": "2026-10-04T18:37:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160695,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T18:38:27.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/implement-candidate-owned-frozen-release-qualification",
-        "head_sha": "e164a1d5cdc6319ef5208419e1f8325b59738432",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165046:5983176319:2026-10-04T18:42:08Z:clawsweeper_needs_human",
       "comment_id": "5983176319",
@@ -33117,6 +33070,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4266:5986258946:2026-10-05T01:15:57Z:clawsweeper_needs_human",
+      "comment_id": "5986258946",
+      "comment_version_key": "5986258946:2026-10-05T01:15:57Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4266#issuecomment-5986258946",
+      "comment_created_at": "2026-10-05T00:52:18Z",
+      "comment_updated_at": "2026-10-05T01:15:57Z",
+      "comment_body_sha256": "107d168993ff1155c155df5fdb4f8f180af79e432501628f3b24a41a96966df3",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head has GitHub-reported merge conflicts and requires a branch refresh before its final merge result can be reviewed. (sha=1d126430927bd469cb5fcbe53af86055ea008d71)",
+      "expected_head_sha": "1d126430927bd469cb5fcbe53af86055ea008d71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T01:17:06.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/20261004-claude-row-compact",
+        "head_sha": "1d126430927bd469cb5fcbe53af86055ea008d71",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
