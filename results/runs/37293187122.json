@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165494",
+  "mode": "autonomous",
+  "run_id": "37293187122",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37293187122",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165494.md",
+  "published_at": "2026-10-05T10:39:16.745Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165494",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165494",
+  "canonical_pr": null,
+  "summary": "The reported source path remains on preflight main a9f47795c00c14f6b28e8d5170970c18efcff3d4. A narrow fix artifact is ready for the executor. Local implementation and production-path reproduction are blocked by the read-only host and absent dependencies; live Tailscale validation also lacks the CLI. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165494",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#165494",
+      "candidate_fix": null,
+      "reason": "The canonical bug has a narrow existing-behavior repair, but this host cannot create or validate the implementation branch. The executor must establish the failing production status-command regression before editing."
+    },
+    {
+      "target": "#137454",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve Nachx639's separate recovery work; it is not the canonical fix for this overflow."
+    },
+    {
+      "target": "#138770",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct startup trigger and unresolved reproduction; leave open outside this repair."
+    },
+    {
+      "target": "#144307",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the separate process-retention report open; do not change timeout or shutdown policy here."
+    },
+    {
+      "target": "#148308",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct claim-loss trigger; retain its existing follow-up path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165494",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165494",
+      "candidate_fix": null,
+      "reason": "Hand off the bounded repair to a writable executor without escalating clear classification decisions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
