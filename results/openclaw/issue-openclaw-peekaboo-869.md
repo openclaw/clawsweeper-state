@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-869"
 mode: "autonomous"
-run_id: "37341165755"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37341165755"
+run_id: "37352616673"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37352616673"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-05T16:33:01.089Z"
+published_at: "2026-10-05T18:04:32.103Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37341165755](https://github.com/openclaw/clawsweeper/actions/runs/37341165755)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37352616673](https://github.com/openclaw/clawsweeper/actions/runs/37352616673)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/869
 
 ## Summary
 
-No implementation PR is justified yet. Preflight main already contains the exact-window fallback and coordinate-refusal diagnostics, but the original ZCode failure remains unclassified. Keep #869 open pending the missing diagnostic evidence.
+Implementation stopped without a PR: supplied main contains the relevant lookup and diagnostic improvements, but the remaining ZCode failure has no established current-main reproduction or classified cause. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No implementation PR is justified yet. Preflight main already contains the exact
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #869 | keep_canonical | planned | canonical | Implementation is blocked by insufficient evidence to identify a remaining defect on current main. Recover the original redacted errors/receipt or obtain current-binary read-only inventory on the same host before selecting a narrow fix. No additional input attempts are warranted by this run. |
-| #505 | keep_closed | skipped | related | Historical fix evidence only; no mutation. |
-| #906 | keep_closed | skipped | related | Historical diagnostic improvement only; no mutation. |
+| #869 | keep_canonical | planned | canonical | Keep the report open. Implementation is blocked on evidence identifying a remaining current-main defect: recoverable original errors/receipt or fresh read-only diagnostics from a current binary on the same host. Changing eligibility or exact Accessibility matching would be speculative. |
+| #505 | keep_closed | skipped | related | Historical partial-overlap evidence; no closure or repair action. |
+| #906 | keep_closed | skipped | related | Historical diagnostic improvement; insufficient evidence to classify #869 as fixed. |
 
 ## Needs Human
 
