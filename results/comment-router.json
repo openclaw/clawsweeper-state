@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T00:01:12.929Z",
+  "updated_at": "2026-10-05T00:01:38.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165017:5982302964:2026-10-04T16:55:05Z:re_review",
-      "comment_id": "5982302964",
-      "comment_version_key": "5982302964:2026-10-04T16:55:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165017#issuecomment-5982302964",
-      "comment_created_at": "2026-10-04T16:55:05Z",
-      "comment_updated_at": "2026-10-04T16:55:05Z",
-      "comment_body_sha256": "8ba52bca322f0a814b4b9ae8e11efd93fc21e774596d1ff8a148d1b2d7be17f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165017,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T16:55:55.462Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/w145-whatsapp-baileys",
-        "head_sha": "a30b08f59c39a00d280c4f3162b6382938a6ca2c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164949:5981069696:2026-10-04T16:55:40Z:clawsweeper_needs_human",
       "comment_id": "5981069696",
@@ -33157,6 +33110,39 @@
         "kind": "pull_request",
         "branch": "refactor/shared-autoreview-20261002",
         "head_sha": "a89790d35abd06ae2b6d59decdc7fccbbeee5489",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabhelm:29:5922065495:2026-10-05T00:00:38Z:clawsweeper_auto_repair",
+      "comment_id": "5922065495",
+      "comment_version_key": "5922065495:2026-10-05T00:00:38Z",
+      "comment_url": "https://github.com/openclaw/crabhelm/pull/29#issuecomment-5922065495",
+      "comment_created_at": "2026-10-01T00:15:35Z",
+      "comment_updated_at": "2026-10-05T00:00:38Z",
+      "comment_body_sha256": "1c5741133deebdfdc4d6eb6e03b42266aeca233f908fcf97ee1622fa6c7ddaa7",
+      "repo": "openclaw/crabhelm",
+      "issue_number": 29,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ba03cb48ae8fed05a727976d325e4c28691a1d7e)",
+      "expected_head_sha": "ba03cb48ae8fed05a727976d325e4c28691a1d7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T00:01:38.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/aws-runtime-socket-resume",
+        "head_sha": "ba03cb48ae8fed05a727976d325e4c28691a1d7e",
         "cluster_id": null,
         "job_path": null
       }
