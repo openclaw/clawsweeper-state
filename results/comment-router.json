@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T03:44:06.531Z",
+  "updated_at": "2026-10-05T03:45:06.280Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165127:5984769958:2026-10-04T21:50:09Z:re_review",
-      "comment_id": "5984769958",
-      "comment_version_key": "5984769958:2026-10-04T21:50:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165127#issuecomment-5984769958",
-      "comment_created_at": "2026-10-04T21:50:09Z",
-      "comment_updated_at": "2026-10-04T21:50:09Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165127,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-04T21:51:11.975Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nested-code-indentation",
-        "head_sha": "ffa586c4b13b43da728b8766b91b4c28074f2673",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131604:5984738335:2026-10-04T21:47:17Z:re_review",
       "comment_id": "5984738335",
@@ -33017,6 +32970,39 @@
         "kind": "pull_request",
         "branch": "codex/slack-automatic-slash-commands",
         "head_sha": "6bf3654c72e12e41b56484b21c896373663e1e86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:49:5935852229:2026-10-05T03:44:06Z:clawsweeper_auto_repair",
+      "comment_id": "5935852229",
+      "comment_version_key": "5935852229:2026-10-05T03:44:06Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/49#issuecomment-5935852229",
+      "comment_created_at": "2026-10-01T16:32:28Z",
+      "comment_updated_at": "2026-10-05T03:44:06Z",
+      "comment_body_sha256": "fb4817056106834b3f279441ac0c96616153f433dda2c26d75b6abbaad1d8fd0",
+      "repo": "openclaw/babelfish",
+      "issue_number": 49,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f8fce0067744b300dc84a563344303c56597e7f7)",
+      "expected_head_sha": "f8fce0067744b300dc84a563344303c56597e7f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T03:45:06.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cap-monitor-stdout",
+        "head_sha": "f8fce0067744b300dc84a563344303c56597e7f7",
         "cluster_id": null,
         "job_path": null
       }
