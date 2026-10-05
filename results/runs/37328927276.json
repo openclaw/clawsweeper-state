@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-537",
+  "mode": "autonomous",
+  "run_id": "37328927276",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37328927276",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-537.md",
+  "published_at": "2026-10-05T15:02:08.439Z",
+  "canonical": "https://github.com/steipete/oracle/issues/537",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/537",
+  "canonical_pr": null,
+  "summary": "Confirmed #537 on supplied main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation and validation are blocked by the read-only filesystem; no code or GitHub state changed. An executable fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#537",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#537",
+      "candidate_fix": null,
+      "reason": "Restore the existing configured approval wait for the exact reported browser-WebSocket 404 handshake response."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-537",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#537",
+      "candidate_fix": null,
+      "reason": "The narrow implementation is clear and can be handed to a writable executor without expanding scope."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-537",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#537",
+      "candidate_fix": null,
+      "reason": "PR creation must wait for implementation and validation in a writable executor. Re-fetch issue state, reuse the named branch and any existing implementation PR, then apply the artifact and required labels."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

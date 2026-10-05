@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-537"
 mode: "autonomous"
-run_id: "37320734377"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37320734377"
+run_id: "37328927276"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37328927276"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T14:01:23.086Z"
+published_at: "2026-10-05T15:02:08.439Z"
 canonical: "https://github.com/steipete/oracle/issues/537"
 canonical_issue: "https://github.com/steipete/oracle/issues/537"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37320734377](https://github.com/openclaw/clawsweeper/actions/runs/37320734377)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37328927276](https://github.com/openclaw/clawsweeper/actions/runs/37328927276)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/537
 
 ## Summary
 
-Verified the reported classifier defect on supplied current main. A narrow fix artifact is ready; implementation and required validation are blocked by the read-only workspace and absent dependencies. No files or GitHub state were changed.
+Confirmed #537 on supplied main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation and validation are blocked by the read-only filesystem; no code or GitHub state changed. An executable fix artifact is provided.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified the reported classifier defect on supplied current main. A narrow fix a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #537 | fix_needed | planned | canonical | The issue remains valid and has a narrow existing-behavior repair that preserves Chrome consent. |
-| cluster:issue-steipete-oracle-537 | build_fix_artifact | planned |  | The artifact supplies a concrete implementation and validation path for a writable executor. |
-| cluster:issue-steipete-oracle-537 | open_fix_pr | blocked |  | PR preparation is blocked until a writable executor implements the artifact and records the required validation. No implementation or passing checks are claimed. |
+| #537 | fix_needed | planned | canonical | Restore the existing configured approval wait for the exact reported browser-WebSocket 404 handshake response. |
+| cluster:issue-steipete-oracle-537 | build_fix_artifact | planned | canonical | The narrow implementation is clear and can be handed to a writable executor without expanding scope. |
+| cluster:issue-steipete-oracle-537 | open_fix_pr | blocked | canonical | PR creation must wait for implementation and validation in a writable executor. Re-fetch issue state, reuse the named branch and any existing implementation PR, then apply the artifact and required labels. |
 
 ## Needs Human
 
