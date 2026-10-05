@@ -1,0 +1,124 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165653",
+  "mode": "autonomous",
+  "run_id": "37338331455",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37338331455",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165653.md",
+  "published_at": "2026-10-05T16:30:50.518Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165653",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165653",
+  "canonical_pr": null,
+  "summary": "Verified the stale inventory entry on preflight main 553841e490220a6c723da84a4fdd3caf0dcb2a11. The admission guard rejects the deleted path; the proposed replacement admits all 17 declared paths in memory. A one-file fix artifact is ready for the executor. Local implementation and full validation are blocked by the read-only filesystem and missing dependencies.",
+  "actions": [
+    {
+      "target": "#165653",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165653",
+      "candidate_fix": null,
+      "reason": "The narrow manifest repair follows the retained test owner without changing Gateway authorization behavior. Keep the issue open; closure and merge are prohibited by this job."
+    },
+    {
+      "target": "#138937",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165653",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#165580",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165653",
+      "candidate_fix": null,
+      "reason": "Preserve the intentional test consolidation; repair its downstream benchmark inventory."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165653",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165653",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate. Implementation is blocked only in this read-only worker environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/165662",
+      "branch": "clawsweeper/issue-openclaw-openclaw-165653",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/165662",
+      "commit": "5f2ec1271f542efe186eccdaec402281bea1c117",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#165653",
+      "pr": "https://github.com/openclaw/openclaw/pull/165662",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/165662",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#165662",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(ci): point paired Vitest inventory at retained Gateway scope suite",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
