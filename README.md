@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 5, 2026, 14:40 UTC
+Last source update: Oct 5, 2026, 14:46 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Oct 5, 2026, 14:40 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 5, 2026, 14:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37320171494) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 5, 2026, 14:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37324575904) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 5, 2026, 14:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37326290284) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 5, 2026, 11:38 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37304147258) |
 
@@ -91,20 +91,20 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 5, 2026, 14:05 UTC
+Last source update: Oct 5, 2026, 14:49 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1471 | 100% |
-| Run attempts archived | 4335 | audit |
-| Latest successful clusters | 1184 | 80.5% |
-| Latest failed clusters | 283 | 19.2% |
+| Run attempts archived | 4336 | audit |
+| Latest successful clusters | 1185 | 80.6% |
+| Latest failed clusters | 282 | 19.2% |
 | Latest cancelled clusters | 4 | 0.3% |
 | Needs-human clusters | 149 | 10.1% |
-| Fix actions failed | 34 | 4.1% |
-| Fix actions blocked | 181 | 21.6% |
+| Fix actions failed | 34 | 4.0% |
+| Fix actions blocked | 182 | 21.7% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
 | Blocked mutation attempts | 325 | 99.7% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1471 clusters: 389 maintainer action, 443 automation snapshot, 580 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4100](https://github.com/steipete/codexbar/issues/4100) is maintainer_input: #4100: Select one concrete CodexBar improvement from the digest and provide expected behavior and acceptance criteria before requesting i....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#165590](https://github.com/openclaw/openclaw/pull/165590) is automation_failed: Implementation is blocked until a writable, dependency-ready executor reproduces the reported failure on current main. This is an environ....
+- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) is automation_blocked: validation command failed (go test -count=1 -timeout=5m ./internal/providers/tart -run ^TestTartStop): go: cannot find GOROOT directory:....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 399 |
-| automation_failed | 290 |
-| automation_blocked | 290 |
+| automation_failed | 289 |
+| automation_blocked | 291 |
 | reviewed_no_action | 59 |
 | completed | 0 |
 
@@ -187,6 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | validation command failed (go test -count=1 -timeout=5m ./internal/providers/tart -run ^TestTartStop): go: cannot find GOROOT directory: 'go' binar... | Oct 5, 2026, 14:49 UTC | [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | [37325836099](https://github.com/openclaw/clawsweeper/actions/runs/37325836099) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165590](https://github.com/openclaw/openclaw/pull/165590) | automation_failed | Implementation is blocked until a writable, dependency-ready executor reproduces the reported failure on current main. This is an environment block... | Oct 5, 2026, 14:05 UTC | [issue-openclaw-openclaw-165590](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165590.md) | [37317185797](https://github.com/openclaw/clawsweeper/actions/runs/37317185797) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [cluster:issue-steipete-oracle-537](cluster:issue-steipete-oracle-537) | automation_failed | PR preparation is blocked until a writable executor implements the artifact and records the required validation. No implementation or passing check... | Oct 5, 2026, 14:01 UTC | [issue-steipete-oracle-537](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-537.md) | [37320734377](https://github.com/openclaw/clawsweeper/actions/runs/37320734377) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-145079](cluster:issue-openclaw-openclaw-145079) | automation_failed | Executor must complete reproduction, implementation, validation, and review on a writable isolated host before opening or updating the single imple... | Oct 5, 2026, 13:58 UTC | [issue-openclaw-openclaw-145079](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-145079.md) | [37311134146](https://github.com/openclaw/clawsweeper/actions/runs/37311134146) |
@@ -197,7 +198,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165553](https://github.com/openclaw/openclaw/pull/165553) | automation_failed | A test-only repair is source-supported. Implementation and publication remain blocked until native reproduction and required validation can run in... | Oct 5, 2026, 12:31 UTC | [issue-openclaw-openclaw-165553](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165553.md) | [37306407561](https://github.com/openclaw/clawsweeper/actions/runs/37306407561) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165563](https://github.com/openclaw/openclaw/pull/165563) | automation_failed | The source supports the reported repair, but scanner reproduction has not been established on this host. The executor must reproduce all three repo... | Oct 5, 2026, 12:27 UTC | [issue-openclaw-openclaw-165563](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165563.md) | [37308948519](https://github.com/openclaw/clawsweeper/actions/runs/37308948519) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165560](https://github.com/openclaw/openclaw/pull/165560) | automation_failed | The job explicitly requires reproducing the reduced compiler crash on a supported isolated macOS host before editing. That prerequisite cannot be c... | Oct 5, 2026, 12:22 UTC | [issue-openclaw-openclaw-165560](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165560.md) | [37308438019](https://github.com/openclaw/clawsweeper/actions/runs/37308438019) |
-| [openclaw/crabbox](https://github.com/openclaw/crabbox) | [cluster:issue-openclaw-crabbox-2706](cluster:issue-openclaw-crabbox-2706) | automation_failed | PR readiness is blocked until a writable executor implements the fix, runs the required Go validation, and obtains the requested owned-lease ID/slu... | Oct 5, 2026, 11:46 UTC | [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | [37304511313](https://github.com/openclaw/clawsweeper/actions/runs/37304511313) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165522](https://github.com/openclaw/openclaw/pull/165522) | automation_failed | The source-supported display defect is separate from terminal-event identity feature work. Execution must first recheck competing work and establis... | Oct 5, 2026, 10:58 UTC | [issue-openclaw-openclaw-165522](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165522.md) | [37299372822](https://github.com/openclaw/clawsweeper/actions/runs/37299372822) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165494](https://github.com/openclaw/openclaw/pull/165494) | automation_failed | The canonical bug has a narrow existing-behavior repair, but this host cannot create or validate the implementation branch. The executor must estab... | Oct 5, 2026, 10:39 UTC | [issue-openclaw-openclaw-165494](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165494.md) | [37293187122](https://github.com/openclaw/clawsweeper/actions/runs/37293187122) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165463](https://github.com/openclaw/openclaw/pull/165463) | automation_failed | Local implementation is blocked by filesystem permissions and unavailable exact-base verification. The planned cluster artifact supplies the execut... | Oct 5, 2026, 09:54 UTC | [issue-openclaw-openclaw-165463](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165463.md) | [37287931077](https://github.com/openclaw/clawsweeper/actions/runs/37287931077) |
@@ -233,6 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-openclaw-crabbox-2706 | execute_fix blocked | validation command failed (go test -count=1 -timeout=5m ./internal/providers/tart -run ^TestTartStop): go: cannot find GOROOT directory: 'go' binar... | [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | [37325836099](https://github.com/openclaw/clawsweeper/actions/runs/37325836099) |
 | issue-steipete-codexbar-4100 | needs human | #4100: Select one concrete CodexBar improvement from the digest and provide expected behavior and acceptance criteria before requesting implementat... | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [37314472474](https://github.com/openclaw/clawsweeper/actions/runs/37314472474) |
 | issue-openclaw-peekaboo-881 | needs human | For #881, obtain the retained, redacted same-session binary version, Bridge host/protocol, window identity/bounds, and existing remote/local receip... | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37287946911](https://github.com/openclaw/clawsweeper/actions/runs/37287946911) |
 | automerge-openclaw-openclaw-165334 | fix failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, ui, extensions, ext... | [automerge-openclaw-openclaw-165334](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165334.md) | [37266102434](https://github.com/openclaw/clawsweeper/actions/runs/37266102434) |
@@ -262,12 +263,12 @@ State: Failed clusters need inspection
 | issue-openclaw-clawsweeper-1128 | needs human | For https://github.com/openclaw/clawsweeper/issues/1128, decide whether to authorize one explicitly bounded behavioral migration slice or retain th... | [issue-openclaw-clawsweeper-1128](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-clawsweeper-1128.md) | [36831634218](https://github.com/openclaw/clawsweeper/actions/runs/36831634218) |
 | issue-openclaw-crabbox-2627 | execute_fix blocked | validation command failed (go test ./internal/cli -run ^TestTypeRFBText -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOR... | [issue-openclaw-crabbox-2627](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2627.md) | [36768428805](https://github.com/openclaw/clawsweeper/actions/runs/36768428805) |
 | automerge-openclaw-openclaw-enterprise-670 | fix failed | Codex /review did not pass after final base synchronization: The latest commit removes a default-off command safety gate and changes the workflow d... | [automerge-openclaw-openclaw-enterprise-670](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-enterprise-670.md) | [36766634334](https://github.com/openclaw/clawsweeper/actions/runs/36766634334) |
-| issue-steipete-codexbar-4110 | needs human | For #4110, identify the Greptile usage endpoint or local source, its authentication method, and the account-scoped fields that define monthly allow... | [issue-steipete-codexbar-4110](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4110.md) | [36740831576](https://github.com/openclaw/clawsweeper/actions/runs/36740831576) |
 
 ### Fix Failure Queue
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
+| [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | blocked |  |  | validation command failed (go test -count=1 -timeout=5m ./internal/providers/tart -run ^TestTartStop): go: cannot find GOROOT directory: 'go' binar... | [37325836099](https://github.com/openclaw/clawsweeper/actions/runs/37325836099) |
 | [automerge-openclaw-openclaw-165334](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165334.md) | failed |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, ui, extensions, ext... | [37266102434](https://github.com/openclaw/clawsweeper/actions/runs/37266102434) |
 | [automerge-openclaw-openclaw-165334](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165334.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, ui, extensions, ext... | [37266102434](https://github.com/openclaw/clawsweeper/actions/runs/37266102434) |
 | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | blocked |  |  | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [37262105585](https://github.com/openclaw/clawsweeper/actions/runs/37262105585) |
@@ -292,7 +293,6 @@ State: Failed clusters need inspection
 | [issue-openclaw-openclaw-125873](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-125873.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=extensions, extensionTests, tooling... | [36444377660](https://github.com/openclaw/clawsweeper/actions/runs/36444377660) |
 | [issue-openclaw-imsg-322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-imsg-322.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: Makefile | [36368874126](https://github.com/openclaw/clawsweeper/actions/runs/36368874126) |
 | [issue-openclaw-openclaw-153145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153145.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=apps [check:changed] apps/macos/Sour... | [36203268022](https://github.com/openclaw/clawsweeper/actions/runs/36203268022) |
-| [issue-openclaw-openclaw-157309](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-157309.md) | blocked |  |  | validation command failed (pnpm check:changed): changed-gate validation has an unsafe existing artifacts directory | [36011066087](https://github.com/openclaw/clawsweeper/actions/runs/36011066087) |
 
 ### Top Blocked Reasons
 
