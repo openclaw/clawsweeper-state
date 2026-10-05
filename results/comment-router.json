@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:03:05.956Z",
+  "updated_at": "2026-10-05T10:03:12.445Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157953:5988284272:2026-10-05T04:46:18Z:re_review",
-      "comment_id": "5988284272",
-      "comment_version_key": "5988284272:2026-10-05T04:46:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157953#issuecomment-5988284272",
-      "comment_created_at": "2026-10-05T04:46:18Z",
-      "comment_updated_at": "2026-10-05T04:46:18Z",
-      "comment_body_sha256": "d3729ab8ebfa8cb195e68e69a94a3e8e57498fc167f947c785a73b9ac042a34d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157953,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T04:47:24.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-app-mention-diagnostic-128301",
-        "head_sha": "e53b267a74a0718e0e14e188577b8f794b62fe67",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146651:5981744743:2026-10-04T15:46:05Z:re_review",
       "comment_id": "5981744743",
@@ -32865,6 +32818,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-sessions-list-shared-delta-20260919",
         "head_sha": "31fbb6c26daba57c63f46a3cb8425a9558b0bf52",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:949:5992262407:2026-10-05T10:02:22Z:clawsweeper_needs_human",
+      "comment_id": "5992262407",
+      "comment_version_key": "5992262407:2026-10-05T10:02:22Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/949#issuecomment-5992262407",
+      "comment_created_at": "2026-10-05T10:02:22Z",
+      "comment_updated_at": "2026-10-05T10:02:22Z",
+      "comment_body_sha256": "d8f34558ba69f07a3fed973a1f78af94930985c451294051798dce22ddccef13",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The bootstrap’s real BrowserManager and MCP handlers are exercised through actual WebSocket I/O against refusal and disconnect fixture... (sha=22c47d11eb102984f7364563607506fb2a8aded0)",
+      "expected_head_sha": "22c47d11eb102984f7364563607506fb2a8aded0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T10:03:12.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-browser-lifecycle-20261005",
+        "head_sha": "22c47d11eb102984f7364563607506fb2a8aded0",
         "cluster_id": null,
         "job_path": null
       }
