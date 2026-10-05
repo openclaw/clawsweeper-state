@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/gitcrawl",
+  "cluster_id": "issue-openclaw-gitcrawl-232",
+  "mode": "autonomous",
+  "run_id": "37383493088",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37383493088",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gitcrawl-232.md",
+  "published_at": "2026-10-05T22:40:22.023Z",
+  "canonical": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_issue": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_pr": null,
+  "summary": "The bottleneck remains in the source at preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narrow fix artifact is ready for the executor. Implementation and validation are blocked by read-only filesystem access; the reporter's active-PR check also requires authenticated GitHub reads. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "The reported performance bug remains source-supported. Runtime timing and query-plan reproduction have not been independently completed."
+    },
+    {
+      "target": "#175",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Historical behavior and contributor-credit context; this merged PR is not a repair or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "The patch can remain within the store query/index surface and focused regression coverage."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Local implementation and validation are blocked by filesystem permissions. PR readiness additionally requires authenticated active-work checks; no PR should be opened from this unvalidated result."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
