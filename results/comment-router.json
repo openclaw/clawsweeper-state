@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T16:01:47.520Z",
+  "updated_at": "2026-10-05T16:02:35.848Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165495:5992140743:2026-10-05T09:54:05Z:clawsweeper_needs_human",
-      "comment_id": "5992140743",
-      "comment_version_key": "5992140743:2026-10-05T09:54:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165495#issuecomment-5992140743",
-      "comment_created_at": "2026-10-05T09:54:05Z",
-      "comment_updated_at": "2026-10-05T09:54:05Z",
-      "comment_body_sha256": "168e1c29a5f9af24b140139a51da4581d5f683ffcfecdd4ac52fd6d26e41cbaa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165495,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f480bc6b2c13829ebda85341d2e263776a36f8fe)",
-      "expected_head_sha": "f480bc6b2c13829ebda85341d2e263776a36f8fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T09:55:03.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-exact-entries-narrow-guards-20260919",
-        "head_sha": "f480bc6b2c13829ebda85341d2e263776a36f8fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165493:5992150090:2026-10-05T09:54:44Z:clawsweeper_needs_human",
       "comment_id": "5992150090",
@@ -33680,6 +33647,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165626:5998186560:2026-10-05T16:01:35Z:re_review",
+      "comment_id": "5998186560",
+      "comment_version_key": "5998186560:2026-10-05T16:01:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165626#issuecomment-5998186560",
+      "comment_created_at": "2026-10-05T16:01:35Z",
+      "comment_updated_at": "2026-10-05T16:01:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165626,
+      "author": "funmerlin",
+      "author_id": 258679497,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T16:02:34.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-overload-prompt-replay",
+        "head_sha": "77950c6518dab42c2b2455d252aa8f3f9668a0d9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
