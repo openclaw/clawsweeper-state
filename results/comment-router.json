@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:51:29.763Z",
+  "updated_at": "2026-10-05T10:52:09.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4270:5988727520:2026-10-05T05:34:05Z:re_review",
-      "comment_id": "5988727520",
-      "comment_version_key": "5988727520:2026-10-05T05:34:05Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4270#issuecomment-5988727520",
-      "comment_created_at": "2026-10-05T05:34:05Z",
-      "comment_updated_at": "2026-10-05T05:34:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4270,
-      "author": "gabrielrojasc",
-      "author_id": 37199173,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T05:38:58.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bugfix/codex-ledger-upgrade-pricing",
-        "head_sha": "29a8b92dc880997c54a1749588bc8d0610f6151d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4270:5988220222:2026-10-05T05:38:00Z:clawsweeper_needs_human",
       "comment_id": "5988220222",
@@ -32847,6 +32800,39 @@
         "kind": "pull_request",
         "branch": "dbasync/rpcsql",
         "head_sha": "221ae574aad79efe06ad9d486c6c304251bf076e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165483:5991896194:2026-10-05T10:51:13Z:clawsweeper_auto_repair",
+      "comment_id": "5991896194",
+      "comment_version_key": "5991896194:2026-10-05T10:51:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165483#issuecomment-5991896194",
+      "comment_created_at": "2026-10-05T09:37:58Z",
+      "comment_updated_at": "2026-10-05T10:51:13Z",
+      "comment_body_sha256": "a33100e25c9a7ec7bcc39945ecfd3c6d6c9c734ff2efc41eb390d8224896183c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8100dca89f333cf4c40c7c2161947b0451eb2c06)",
+      "expected_head_sha": "8100dca89f333cf4c40c7c2161947b0451eb2c06",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T10:52:09.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stab-abort-lifecycle",
+        "head_sha": "8100dca89f333cf4c40c7c2161947b0451eb2c06",
         "cluster_id": null,
         "job_path": null
       }
