@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T11:51:49.501Z",
+  "updated_at": "2026-10-05T11:52:02.249Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165349:5988543100:2026-10-05T06:30:04Z:clawsweeper_needs_human",
-      "comment_id": "5988543100",
-      "comment_version_key": "5988543100:2026-10-05T06:30:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165349#issuecomment-5988543100",
-      "comment_created_at": "2026-10-05T05:15:16Z",
-      "comment_updated_at": "2026-10-05T06:30:04Z",
-      "comment_body_sha256": "2a7baa48104e1c9570d03ee512dae63d24cfb4749d286e0257f24d416ddae277",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165349,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7d18caeec7b3b478b1532a20a31049552c3850fa)",
-      "expected_head_sha": "7d18caeec7b3b478b1532a20a31049552c3850fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T06:31:02.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/fd4-meetings-20261004",
-        "head_sha": "7d18caeec7b3b478b1532a20a31049552c3850fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164934:5980765156:2026-10-05T06:30:02Z:clawsweeper_auto_repair",
       "comment_id": "5980765156",
@@ -33038,6 +33005,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165549:5993835966:2026-10-05T11:49:56Z:re_review",
+      "comment_id": "5993835966",
+      "comment_version_key": "5993835966:2026-10-05T11:49:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165549#issuecomment-5993835966",
+      "comment_created_at": "2026-10-05T11:49:56Z",
+      "comment_updated_at": "2026-10-05T11:49:56Z",
+      "comment_body_sha256": "5b4bf7e6067deb82b6336961bced0bff1c703da56f1931df829c0cad38e4394d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165549,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T11:52:00.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-inject-live-identity-165522",
+        "head_sha": "95b4994adf6849eee222f2134a521e13b4ec4fbf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
