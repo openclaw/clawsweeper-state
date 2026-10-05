@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T08:02:52.130Z",
+  "updated_at": "2026-10-05T08:03:02.341Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164829:5978128749:2026-10-05T02:40:32Z:clawsweeper_needs_human",
-      "comment_id": "5978128749",
-      "comment_version_key": "5978128749:2026-10-05T02:40:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164829#issuecomment-5978128749",
-      "comment_created_at": "2026-10-04T08:31:14Z",
-      "comment_updated_at": "2026-10-05T02:40:32Z",
-      "comment_body_sha256": "64c8fdda8607ef428a93afb16aaf191f6726d569170be89b16d8f3b9877de4f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugin callers that change an explicit base for a retained owner checkout will now fail instead of launching, including when the checkout is clean; maintainer acceptance of t... (sha=375497a2ab62a174737bce7db6846e9b7e8f3559)",
-      "expected_head_sha": "375497a2ab62a174737bce7db6846e9b7e8f3559",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T02:41:25.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-redispatch-base-164786",
-        "head_sha": "375497a2ab62a174737bce7db6846e9b7e8f3559",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165193:5987182664:2026-10-05T02:41:32Z:re_review",
       "comment_id": "5987182664",
@@ -32902,6 +32869,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165401:5990487767:2026-10-05T08:02:09Z:re_review",
+      "comment_id": "5990487767",
+      "comment_version_key": "5990487767:2026-10-05T08:02:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165401#issuecomment-5990487767",
+      "comment_created_at": "2026-10-05T08:02:09Z",
+      "comment_updated_at": "2026-10-05T08:02:09Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165401,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T08:03:01.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/firstturnhdr",
+        "head_sha": "32029df558da6caf117c14ef1e43396af188e8f2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
