@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-869"
 mode: "autonomous"
-run_id: "37351893188"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37351893188"
+run_id: "37341165755"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37341165755"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-05T17:57:54.964Z"
+published_at: "2026-10-05T16:33:01.089Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37351893188](https://github.com/openclaw/clawsweeper/actions/runs/37351893188)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37341165755](https://github.com/openclaw/clawsweeper/actions/runs/37341165755)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/869
 
 ## Summary
 
-No implementation PR is justified yet. Current main contains the relevant lookup and diagnostic repairs, but the remaining ZCode failure has no established cause or current-main reproduction. No files or GitHub state were changed.
+No implementation PR is justified yet. Preflight main already contains the exact-window fallback and coordinate-refusal diagnostics, but the original ZCode failure remains unclassified. Keep #869 open pending the missing diagnostic evidence.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No implementation PR is justified yet. Current main contains the relevant lookup
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #869 | keep_canonical | planned | canonical | Implementation is blocked on evidence identifying a remaining current-main defect: recoverable original errors/receipt or same-host read-only diagnostics from a current binary. The available inventory cannot distinguish historical catalog lookup, eligibility rejection, exact Accessibility unavailability, or actual disappearance. Keep the issue open without claiming resolution or relaxing targeting safeguards. |
-| #505 | keep_closed | skipped | related | Historical evidence only; it does not prove the ZCode report resolved. |
-| #906 | keep_closed | skipped | related | Historical diagnostic repair only; no closure or further PR action is appropriate. |
+| #869 | keep_canonical | planned | canonical | Implementation is blocked by insufficient evidence to identify a remaining defect on current main. Recover the original redacted errors/receipt or obtain current-binary read-only inventory on the same host before selecting a narrow fix. No additional input attempts are warranted by this run. |
+| #505 | keep_closed | skipped | related | Historical fix evidence only; no mutation. |
+| #906 | keep_closed | skipped | related | Historical diagnostic improvement only; no mutation. |
 
 ## Needs Human
 
