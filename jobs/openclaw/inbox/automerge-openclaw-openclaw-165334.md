@@ -2,7 +2,7 @@
 repo: openclaw/openclaw
 cluster_id: automerge-openclaw-openclaw-165334
 mode: autonomous
-repair_mode: autofix
+repair_mode: automerge
 job_intent: automerge_pr
 allowed_actions:
   - comment
@@ -33,15 +33,15 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-165334
 source: pr_automerge
 requested_by: "Patrick-Erichsen"
 requested_by_id: "20157849"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/165334#issuecomment-5988173282"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/165334#issuecomment-6000536767"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
-Maintainer opted #165334 into ClawSweeper autofix.
+Maintainer opted #165334 into ClawSweeper automerge.
 
 Requested by: Patrick-Erichsen
-Request comment: https://github.com/openclaw/openclaw/pull/165334#issuecomment-5988173282
+Request comment: https://github.com/openclaw/openclaw/pull/165334#issuecomment-6000536767
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/165334
@@ -53,6 +53,6 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - The edit pass should rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context when required, run the relevant validation, and keep iterating until the branch is ready or an external blocker is proven.
 - If the PR branch cannot be safely updated, emit a narrow credited replacement only when the artifact can preserve the original contributor credit; otherwise return `needs_human`.
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
-- Final merge is disabled for autofix. Keep the PR open after a passing ClawSweeper verdict unless a maintainer explicitly changes mode.
+- Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
 
