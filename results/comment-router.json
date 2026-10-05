@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:45:11.295Z",
+  "updated_at": "2026-10-05T23:45:12.369Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165626:5998186560:2026-10-05T16:01:35Z:re_review",
-      "comment_id": "5998186560",
-      "comment_version_key": "5998186560:2026-10-05T16:01:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165626#issuecomment-5998186560",
-      "comment_created_at": "2026-10-05T16:01:35Z",
-      "comment_updated_at": "2026-10-05T16:01:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165626,
-      "author": "funmerlin",
-      "author_id": 258679497,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T16:02:34.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-overload-prompt-replay",
-        "head_sha": "77950c6518dab42c2b2455d252aa8f3f9668a0d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3911:5998084449:2026-10-05T16:02:19Z:clawsweeper_needs_human",
       "comment_id": "5998084449",
@@ -33979,6 +33932,39 @@
         "kind": "pull_request",
         "branch": "fix/graincrawl-f004",
         "head_sha": "6ae4507abd97f2b49dea02228b87734344df83a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kova:166:5975945423:2026-10-05T23:44:23Z:clawsweeper_needs_human",
+      "comment_id": "5975945423",
+      "comment_version_key": "5975945423:2026-10-05T23:44:23Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/166#issuecomment-5975945423",
+      "comment_created_at": "2026-10-04T02:53:47Z",
+      "comment_updated_at": "2026-10-05T23:44:23Z",
+      "comment_body_sha256": "883114e97e84a5c516773375ee6299a26492011a4a7b9f629eaf09fe3ad30368",
+      "repo": "openclaw/kova",
+      "issue_number": 166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The macOS transcript at the pinned head exercises matrix-core unit tests, not the changed matrixData-to-Astro rendering path. Actual /matrix ev... (sha=11c1873b45f7ff11047e7036203c07b5688e737b)",
+      "expected_head_sha": "11c1873b45f7ff11047e7036203c07b5688e737b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T23:45:12.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-f008",
+        "head_sha": "11c1873b45f7ff11047e7036203c07b5688e737b",
         "cluster_id": null,
         "job_path": null
       }
