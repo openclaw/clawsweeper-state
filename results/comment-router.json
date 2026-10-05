@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:53:04.201Z",
+  "updated_at": "2026-10-05T10:53:26.309Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165358:5988771003:2026-10-05T05:38:33Z:re_review",
-      "comment_id": "5988771003",
-      "comment_version_key": "5988771003:2026-10-05T05:38:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165358#issuecomment-5988771003",
-      "comment_created_at": "2026-10-05T05:38:33Z",
-      "comment_updated_at": "2026-10-05T05:38:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165358,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T05:40:06.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-code-mode-step-title-165315",
-        "head_sha": "7fb74cee918e2e8fa3d2a11bf3341d772af4f0a8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:200:5947797814:2026-10-05T05:39:48Z:clawsweeper_needs_human",
       "comment_id": "5947797814",
@@ -32847,6 +32800,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-exit-after-receipt-20260919",
         "head_sha": "01882174c18d044158bd0b62d08a5dd05adbc943",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165473:5991731402:2026-10-05T10:52:25Z:clawsweeper_auto_repair",
+      "comment_id": "5991731402",
+      "comment_version_key": "5991731402:2026-10-05T10:52:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165473#issuecomment-5991731402",
+      "comment_created_at": "2026-10-05T09:27:15Z",
+      "comment_updated_at": "2026-10-05T10:52:25Z",
+      "comment_body_sha256": "3f864c84b3e71df32fc9da820ba661fe29349d004fe4386a9357393687b012aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8a9cb33578a1256395b3f1b4e02ad8d54e2de428)",
+      "expected_head_sha": "8a9cb33578a1256395b3f1b4e02ad8d54e2de428",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T10:53:26.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-transcript-voice-order-context",
+        "head_sha": "8a9cb33578a1256395b3f1b4e02ad8d54e2de428",
         "cluster_id": null,
         "job_path": null
       }
