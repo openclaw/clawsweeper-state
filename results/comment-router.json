@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T22:42:44.995Z",
+  "updated_at": "2026-10-05T22:43:24.307Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3866:5919588175:2026-10-05T14:56:03Z:clawsweeper_needs_human",
-      "comment_id": "5919588175",
-      "comment_version_key": "5919588175:2026-10-05T14:56:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3866#issuecomment-5919588175",
-      "comment_created_at": "2026-09-30T20:56:45Z",
-      "comment_updated_at": "2026-10-05T14:56:03Z",
-      "comment_body_sha256": "1b19bb3b0e1b4d9b58e85d788445d5842fb7aeaf33a2ced3e71599345f7b84a0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3866,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9a767a03b121ed74fcd3515e02767ec60758ebb7)",
-      "expected_head_sha": "9a767a03b121ed74fcd3515e02767ec60758ebb7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T14:57:02.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/deterministic-skill-file-order",
-        "head_sha": "9a767a03b121ed74fcd3515e02767ec60758ebb7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165608:5996167355:2026-10-05T14:57:25Z:clawsweeper_needs_human",
       "comment_id": "5996167355",
@@ -33922,6 +33889,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165832:6004666740:2026-10-05T22:42:28Z:re_review",
+      "comment_id": "6004666740",
+      "comment_version_key": "6004666740:2026-10-05T22:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165832#issuecomment-6004666740",
+      "comment_created_at": "2026-10-05T22:42:28Z",
+      "comment_updated_at": "2026-10-05T22:42:28Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165832,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T22:43:23.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llama-cpp-low-ram-embedding-hint-165815",
+        "head_sha": "2063449c7f5b8463e3b7c8c62c02ca6eeda7b250",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
