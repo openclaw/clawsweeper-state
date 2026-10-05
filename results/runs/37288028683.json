@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2706",
+  "mode": "autonomous",
+  "run_id": "37288028683",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37288028683",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2706.md",
+  "published_at": "2026-10-05T09:19:03.851Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_pr": null,
+  "summary": "Verified the stop target-precedence defect on preflight main 481fde099fdda58c9dd57d006c1f7ed18190a213. Narrow implementation artifact prepared; code changes and validation are blocked locally by the read-only filesystem. Apple Silicon runtime proof remains pending. No GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#2706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The request remains viable as a narrow provider-neutral precedence correction. Keep the issue open; closing and merging are prohibited by this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "One narrow new implementation PR is justified. The artifact is available for the executor despite this worker's inability to edit or build."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked on a writable executor and the required validation, including native Tart proof. This is an execution limitation, not an unresolved product decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (go test ./internal/providers/all -run Stop.*Target|Target.*Stop -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2706",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
