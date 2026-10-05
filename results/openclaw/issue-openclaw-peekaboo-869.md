@@ -2,16 +2,16 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-869"
 mode: "autonomous"
-run_id: "37139469031"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37139469031"
-head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
+run_id: "37341165755"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37341165755"
+head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-03T17:13:32.846Z"
+published_at: "2026-10-05T16:33:01.089Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37139469031](https://github.com/openclaw/clawsweeper/actions/runs/37139469031)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37341165755](https://github.com/openclaw/clawsweeper/actions/runs/37341165755)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/869
 
 ## Summary
 
-Implementation is blocked pending the ZCode metadata already requested by the maintainer. The supplied main contains the catalog fallback from #505, but the evidence does not establish which remaining lookup, click-eligibility, or Accessibility failure caused #869. No code or GitHub changes were made.
+No implementation PR is justified yet. Preflight main already contains the exact-window fallback and coordinate-refusal diagnostics, but the original ZCode failure remains unclassified. Keep #869 open pending the missing diagnostic evidence.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Implementation is blocked pending the ZCode metadata already requested by the ma
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #869 | keep_canonical | planned | canonical | Keep #869 as the canonical unresolved report. A safely scoped implementation requires the existing requested evidence to distinguish an old-version catalog failure from eligibility rejection, stale identity, or Accessibility mismatch. The automatic queue comment supplies no new reproduction evidence. |
-| #505 | keep_closed | skipped | related | Historical related fix, not a closure target or proven complete fix for #869. |
+| #869 | keep_canonical | planned | canonical | Implementation is blocked by insufficient evidence to identify a remaining defect on current main. Recover the original redacted errors/receipt or obtain current-binary read-only inventory on the same host before selecting a narrow fix. No additional input attempts are warranted by this run. |
+| #505 | keep_closed | skipped | related | Historical fix evidence only; no mutation. |
+| #906 | keep_closed | skipped | related | Historical diagnostic improvement only; no mutation. |
 
 ## Needs Human
 
