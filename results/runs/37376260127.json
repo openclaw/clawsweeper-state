@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165807",
+  "mode": "autonomous",
+  "run_id": "37376260127",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37376260127",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165807.md",
+  "published_at": "2026-10-05T22:08:43.642Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165807",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165807",
+  "canonical_pr": null,
+  "summary": "Reproduced the TMPDIR precedence defect in the actual environment owner at preflight main 022a951094f9c2a3b0449bd6ebe973b8b8a7ebb6. A narrow fix artifact is ready for the executor. Local implementation and required validation are blocked by the read-only filesystem; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#165807",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165807",
+      "candidate_fix": null,
+      "reason": "Preserve the caller's nonblank TMPDIR narrowly in the managed updater environment owner. Implementation remains blocked on a writable executor checkout, rather than a maintainer decision."
+    },
+    {
+      "target": "#163465",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct capacity history only; no reopening, closure, or additional implementation target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165807",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#165807",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Apply and validate it in the deterministic executor's writable checkout before opening or updating the implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
