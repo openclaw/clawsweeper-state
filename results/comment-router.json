@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:09:33.794Z",
+  "updated_at": "2026-10-05T18:10:56.620Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164934:5993654520:2026-10-05T11:37:28Z:re_review",
-      "comment_id": "5993654520",
-      "comment_version_key": "5993654520:2026-10-05T11:37:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164934#issuecomment-5993654520",
-      "comment_created_at": "2026-10-05T11:37:28Z",
-      "comment_updated_at": "2026-10-05T11:37:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164934,
-      "author": "Heetisk",
-      "author_id": 202494345,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T11:49:28.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-consult-correlation-clean-v5",
-        "head_sha": "f5930d6455f8e6f475e1444eeae074bd66e60e93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165547:5993655525:2026-10-05T11:37:32Z:re_review",
       "comment_id": "5993655525",
@@ -33530,6 +33483,39 @@
       "status": "skipped",
       "processed_at": "2026-10-05T18:09:33.794Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4223:5965412527:2026-10-05T18:09:34Z:clawsweeper_auto_repair",
+      "comment_id": "5965412527",
+      "comment_version_key": "5965412527:2026-10-05T18:09:34Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4223#issuecomment-5965412527",
+      "comment_created_at": "2026-10-03T04:12:54Z",
+      "comment_updated_at": "2026-10-05T18:09:34Z",
+      "comment_body_sha256": "c68c061f8ccce4780ad06d223f6a1334e0d2737c075b262ae51eb7847e9edf2f",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=982f815a38acf9c51a4dd0ebec93f39cb96656b8)",
+      "expected_head_sha": "982f815a38acf9c51a4dd0ebec93f39cb96656b8",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-05T18:10:56.620Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/credential-notification-localization",
+        "head_sha": "982f815a38acf9c51a4dd0ebec93f39cb96656b8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
