@@ -1,0 +1,73 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-540",
+  "mode": "autonomous",
+  "run_id": "37337283471",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37337283471",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-540.md",
+  "published_at": "2026-10-05T16:04:33.611Z",
+  "canonical": "https://github.com/steipete/oracle/issues/540",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/540",
+  "canonical_pr": null,
+  "summary": "Verified the exit-23 rejection remains on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Implementation is blocked by the read-only filesystem; focused tests and pnpm run check both stopped in Corepack with EROFS before running. Real-rsync churn reproduction and signed-in macOS proof remain outstanding. No files or GitHub items changed.",
+  "actions": [
+    {
+      "target": "#540",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#540",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains warranted. Establish the failing real-rsync regression before changing behavior; keep the issue open."
+    },
+    {
+      "target": "#258",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this historical item to central OpenClaw security handling without commenting, labeling, closing, or modifying it. The ordinary copy-reliability repair does not change its authentication contract."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-540",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#540",
+      "candidate_fix": null,
+      "reason": "Provide an executor-ready repair plan while keeping implementation and publication blocked on the missing validation evidence."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-540",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#540",
+      "candidate_fix": null,
+      "reason": "Do not open a PR until a writable executor establishes the failing regression, implements and validates the repair, and captures the required redacted macOS reuse and cleanup evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
