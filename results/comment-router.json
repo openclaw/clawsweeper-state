@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T01:02:48.931Z",
+  "updated_at": "2026-10-05T01:02:59.718Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164265:5968533470:2026-10-04T18:07:14Z:clawsweeper_needs_human",
-      "comment_id": "5968533470",
-      "comment_version_key": "5968533470:2026-10-04T18:07:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164265#issuecomment-5968533470",
-      "comment_created_at": "2026-10-03T11:03:04Z",
-      "comment_updated_at": "2026-10-04T18:07:14Z",
-      "comment_body_sha256": "fdd506cc6c3c9adad15b88fe52b2cd2a5859a3b808959bc0ba4077b236d0102e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164265,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations cross a one-way compatibility fence, but the corrected candidate still lacks completed published-updater and interrupted-cutover recovery proof covering the ful... (sha=66d3e79c1128f31debe36fde4d95184a80262182)",
-      "expected_head_sha": "66d3e79c1128f31debe36fde4d95184a80262182",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T18:08:16.248Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/heartbeat-automations",
-        "head_sha": "66d3e79c1128f31debe36fde4d95184a80262182",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165026:5982716608:2026-10-04T18:08:21Z:clawsweeper_auto_repair",
       "comment_id": "5982716608",
@@ -33098,6 +33065,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165134:5986337524:2026-10-05T01:01:52Z:re_review",
+      "comment_id": "5986337524",
+      "comment_version_key": "5986337524:2026-10-05T01:01:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165134#issuecomment-5986337524",
+      "comment_created_at": "2026-10-05T01:01:52Z",
+      "comment_updated_at": "2026-10-05T01:01:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165134,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T01:02:58.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incogp7f",
+        "head_sha": "b759cc69cac85d390557db81c3e84fad70724c2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
