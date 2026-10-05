@@ -1,0 +1,82 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "autonomous",
+  "run_id": "37253343874",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37253343874",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-05T02:00:30.084Z",
+  "canonical": "https://github.com/steipete/oracle/issues/531",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/531",
+  "canonical_pr": null,
+  "summary": "Confirmed #531 remains present on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. Prepared a narrow implementation artifact; local implementation and validation are blocked by the read-only filesystem and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The bug is viable and needs no product decision. Implementation, disk-backed failing regressions, after-fix CLI output, and required validation need a writable executor checkout."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Keep the performance report open for its separate repair; this artifact changes default-ignore boundaries only."
+    },
+    {
+      "target": "#533",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Dependency maintenance does not implement #531. No merge or repair recommendation is made for this independent PR."
+    },
+    {
+      "target": "#536",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Browser localization is independent of #531. Its remaining review requirement belongs to that PR's own maintenance path."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Artifact construction is complete; executing the implementation remains blocked in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
