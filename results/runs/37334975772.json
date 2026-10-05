@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165638",
+  "mode": "autonomous",
+  "run_id": "37334975772",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37334975772",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165638.md",
+  "published_at": "2026-10-05T16:01:12.579Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165638",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165638",
+  "canonical_pr": null,
+  "summary": "Confirmed the recursive dot-entry omission in source at preflight main 745efb1629b662357b845e7db69c758e341b2c07. Prepared a narrow executor fix artifact. Local implementation and provider-boundary reproduction remain blocked by the read-only host and absent dependencies; no code or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#165638",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165638",
+      "candidate_fix": null,
+      "reason": "The producer still omits required nested runtime chunks. A narrow bug fix is warranted, contingent on executor reproduction before production edits."
+    },
+    {
+      "target": "#163446",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165638",
+      "candidate_fix": null,
+      "reason": "Historical context only; it is not a fix candidate or mutation target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165638",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165638",
+      "candidate_fix": null,
+      "reason": "The fix plan is narrow and executable by the authorized repair executor; no product decision is outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165638",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#165638",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked on a writable executor checkout with dependencies. Apply the fix artifact there, reproduce first, validate and review, then open or update the single authorized branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
