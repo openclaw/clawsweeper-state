@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T02:00:21.558Z",
+  "updated_at": "2026-10-05T02:00:24.001Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/markdansi:20:5933788360:2026-10-04T19:45:45Z:clawsweeper_needs_human",
-      "comment_id": "5933788360",
-      "comment_version_key": "5933788360:2026-10-04T19:45:45Z",
-      "comment_url": "https://github.com/steipete/Markdansi/pull/20#issuecomment-5933788360",
-      "comment_created_at": "2026-10-01T14:42:49Z",
-      "comment_updated_at": "2026-10-04T19:45:45Z",
-      "comment_body_sha256": "fef8303632ac9a3e54e953625e89c2fe78c055080023ec5f09e8e719766ad02c",
-      "repo": "steipete/markdansi",
-      "issue_number": 20,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f225c9d6b26b66fc15903e0a01de127dc8d923cb)",
-      "expected_head_sha": "f225c9d6b26b66fc15903e0a01de127dc8d923cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-04T19:46:36.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/orphan-phrase-spaces",
-        "head_sha": "f225c9d6b26b66fc15903e0a01de127dc8d923cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144065:5619424188:2026-10-04T19:45:55Z:clawsweeper_auto_repair",
       "comment_id": "5619424188",
@@ -33074,6 +33041,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164687:5986819921:2026-10-05T01:59:22Z:re_review",
+      "comment_id": "5986819921",
+      "comment_version_key": "5986819921:2026-10-05T01:59:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164687#issuecomment-5986819921",
+      "comment_created_at": "2026-10-05T01:59:22Z",
+      "comment_updated_at": "2026-10-05T01:59:22Z",
+      "comment_body_sha256": "cf6b82aba57cc00eeb8f7d50103e5492b50d892458e5b14de2932f8c66dfe5cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164687,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-run",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T02:00:23.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/utf16-bom-declared-mime",
+        "head_sha": "dfba98df9ef5e26ca021c7746d402bb2bc5fff7f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
