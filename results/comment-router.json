@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T17:49:40.445Z",
+  "updated_at": "2026-10-05T17:49:46.259Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146076:5646742478:2026-10-05T11:33:59Z:clawsweeper_needs_human",
-      "comment_id": "5646742478",
-      "comment_version_key": "5646742478:2026-10-05T11:33:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146076#issuecomment-5646742478",
-      "comment_created_at": "2026-09-12T15:13:07Z",
-      "comment_updated_at": "2026-10-05T11:33:59Z",
-      "comment_body_sha256": "e93a50caad93018e50164b2399883779d588dc84296f2bfe8753f28f746eeb79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146076,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; the resolved branch must be reviewed against main’s extracted caption owner before landing. (sha=0d0b8c7a88816adb2d27023c107c700fbcb50750)",
-      "expected_head_sha": "0d0b8c7a88816adb2d27023c107c700fbcb50750",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T11:37:04.353Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-140455-descr",
-        "head_sha": "0d0b8c7a88816adb2d27023c107c700fbcb50750",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146089:5646769437:2026-10-05T11:34:09Z:clawsweeper_auto_repair",
       "comment_id": "5646769437",
@@ -33460,6 +33427,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165695:5999959707:2026-10-05T17:48:51Z:re_review",
+      "comment_id": "5999959707",
+      "comment_version_key": "5999959707:2026-10-05T17:48:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165695#issuecomment-5999959707",
+      "comment_created_at": "2026-10-05T17:48:51Z",
+      "comment_updated_at": "2026-10-05T17:48:51Z",
+      "comment_body_sha256": "2ef6caa6fe5a42f760eb06f31d8f142b83a71bc22d4dc706135ea4731bab4954",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165695,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review exact head 208f049c204: the prior p1 is fixed, and ci exposed one isolated publication-admission fixture omission. the shared family module is now included in both authenticated publication source inventory and copied transport fixtures. please re-review this exact head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T17:49:45.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-cloudflare-family",
+        "head_sha": "208f049c2046f865de1292f853d2f197ba8259ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
