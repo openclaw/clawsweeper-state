@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T23:12:17.825Z",
+  "updated_at": "2026-10-05T23:13:01.201Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147372:5655896363:2026-10-05T15:37:45Z:clawsweeper_needs_human",
-      "comment_id": "5655896363",
-      "comment_version_key": "5655896363:2026-10-05T15:37:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147372#issuecomment-5655896363",
-      "comment_created_at": "2026-09-13T20:25:59Z",
-      "comment_updated_at": "2026-10-05T15:37:45Z",
-      "comment_body_sha256": "c6d81ba0ad6521b5554930ffa1b46b44139c640c7142535103531ac02b026949",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147372,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Maintainers have not explicitly approved the added plugin write operations and omitted-versus-empty entity refresh semantics as a supported contract. (sha=e90b971396bf932d3d4e64178be9ed495b0aa232)",
-      "expected_head_sha": "e90b971396bf932d3d4e64178be9ed495b0aa232",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T15:38:43.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-wiki-apply-create-concept-entity",
-        "head_sha": "e90b971396bf932d3d4e64178be9ed495b0aa232",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:945:5992233397:2026-10-05T15:38:26Z:clawsweeper_needs_human",
       "comment_id": "5992233397",
@@ -33899,6 +33866,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165840:6005137852:2026-10-05T23:12:05Z:re_review",
+      "comment_id": "6005137852",
+      "comment_version_key": "6005137852:2026-10-05T23:12:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165840#issuecomment-6005137852",
+      "comment_created_at": "2026-10-05T23:12:05Z",
+      "comment_updated_at": "2026-10-05T23:12:05Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165840,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T23:13:00.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w5compactplace",
+        "head_sha": "46d9cf5543643c940b2ff2b37f4dbe3c45961d42",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
