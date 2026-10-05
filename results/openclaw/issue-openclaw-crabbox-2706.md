@@ -2,19 +2,19 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2706"
 mode: "autonomous"
-run_id: "37294103085"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37294103085"
+run_id: "37304511313"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37304511313"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T10:26:18.680Z"
+published_at: "2026-10-05T11:46:10.268Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37294103085](https://github.com/openclaw/clawsweeper/actions/runs/37294103085)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37304511313](https://github.com/openclaw/clawsweeper/actions/runs/37304511313)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2706
 
 ## Summary
 
-Confirmed the stop target-precedence defect on supplied main SHA 481fde099fdda58c9dd57d006c1f7ed18190a213. A narrow fix artifact is ready; implementation and runtime validation are blocked by the read-only environment and unavailable authorized Apple Silicon Tart setup. No code or GitHub mutations occurred.
+Verified the stop flag-precedence defect on preflight main 8991bab59198fe532b15d8e559f5938fd4d021ac. A narrow provider-neutral fix remains viable. Implementation and validation are blocked by the read-only filesystem, unavailable required Go toolchain, and absence of an authorized Apple Silicon Tart setup. No files or GitHub state changed.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Confirmed the stop target-precedence defect on supplied main SHA 481fde099fdda58
 | Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Confirmed the stop target-precedence defect on supplied main SHA 481fde099fdda58
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (go test -count=1 ./internal/providers/all -run TestStopTartTarget): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
-| issue_implementation_status_comment | updated | #2706 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,9 @@ Confirmed the stop target-precedence defect on supplied main SHA 481fde099fdda58
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2706 | fix_needed | planned | canonical | The existing flag-precedence contract remains broken; the issue is a narrow ordinary bug with no viable canonical PR in the supplied inventory. |
-| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | The verified defect has a narrow implementation path that a writable executor can carry forward. |
-| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | Implementation and PR readiness require a writable executor, working Go toolchain/cache, and authorized Apple Silicon Tart proof for both ID and slug cleanup. Reuse clawsweeper/issue-openclaw-crabbox-2706 and do not publish a PR claiming validation until these gates complete. |
+| #2706 | fix_needed | planned | canonical | The ordinary flag-precedence bug remains present and has a bounded implementation path. Keep the source issue open; closing and merging are prohibited by this job. |
+| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | A concrete narrow fix plan can be emitted despite this worker's implementation blockers. |
+| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | PR readiness is blocked until a writable executor implements the fix, runs the required Go validation, and obtains the requested owned-lease ID/slug release proof on an authorized Apple Silicon setup. These are environment blockers, not unresolved product decisions. |
 
 ## Needs Human
 

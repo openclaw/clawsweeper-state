@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2706",
+  "mode": "autonomous",
+  "run_id": "37304511313",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37304511313",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2706.md",
+  "published_at": "2026-10-05T11:46:10.268Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_pr": null,
+  "summary": "Verified the stop flag-precedence defect on preflight main 8991bab59198fe532b15d8e559f5938fd4d021ac. A narrow provider-neutral fix remains viable. Implementation and validation are blocked by the read-only filesystem, unavailable required Go toolchain, and absence of an authorized Apple Silicon Tart setup. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#2706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The ordinary flag-precedence bug remains present and has a bounded implementation path. Keep the source issue open; closing and merging are prohibited by this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "A concrete narrow fix plan can be emitted despite this worker's implementation blockers."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "PR readiness is blocked until a writable executor implements the fix, runs the required Go validation, and obtains the requested owned-lease ID/slug release proof on an authorized Apple Silicon setup. These are environment blockers, not unresolved product decisions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
