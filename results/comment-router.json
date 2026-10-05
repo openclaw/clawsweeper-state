@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T09:37:03.795Z",
+  "updated_at": "2026-10-05T09:39:59.942Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144699:5987932856:2026-10-05T04:09:22Z:re_review",
-      "comment_id": "5987932856",
-      "comment_version_key": "5987932856:2026-10-05T04:09:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144699#issuecomment-5987932856",
-      "comment_created_at": "2026-10-05T04:09:22Z",
-      "comment_updated_at": "2026-10-05T04:09:22Z",
-      "comment_body_sha256": "2839d4e9b4351f287a35d12652d7f26b1336573571e035378e0969b1e799878f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144699,
-      "author": "xmoxmo",
-      "author_id": 112841961,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T04:10:09.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/shared-memory-multi-agent-v3",
-        "head_sha": "3414787f83d03b1ef3efadb6cb40221b188038f0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165319:5987879895:2026-10-05T04:09:45Z:clawsweeper_needs_human",
       "comment_id": "5987879895",
@@ -32965,6 +32918,39 @@
         "kind": "pull_request",
         "branch": "steipete/ock-waits-b4",
         "head_sha": "1924453ee6f5d47924c0e958600c4f601cab94d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165486:5991912580:2026-10-05T09:39:03Z:clawsweeper_needs_human",
+      "comment_id": "5991912580",
+      "comment_version_key": "5991912580:2026-10-05T09:39:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165486#issuecomment-5991912580",
+      "comment_created_at": "2026-10-05T09:39:03Z",
+      "comment_updated_at": "2026-10-05T09:39:03Z",
+      "comment_body_sha256": "032cb96a1f21f5ebd336f5ddb900c189637ae2db90ed03298bea881bb91f4898",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Signed fork artifacts, generated pins, and native release-profile qualification are still pending for both Windows architectures; the present debug proof does not qualify production e... (sha=81a0ebcdb7aa5b6709f92639544d7991a22e7501)",
+      "expected_head_sha": "81a0ebcdb7aa5b6709f92639544d7991a22e7501",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T09:39:59.942Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/w148-windows-tauri-bun",
+        "head_sha": "81a0ebcdb7aa5b6709f92639544d7991a22e7501",
         "cluster_id": null,
         "job_path": null
       }
