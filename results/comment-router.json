@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T10:54:04.066Z",
+  "updated_at": "2026-10-05T10:54:38.352Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165112:5984502201:2026-10-05T05:44:36Z:clawsweeper_auto_repair",
-      "comment_id": "5984502201",
-      "comment_version_key": "5984502201:2026-10-05T05:44:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165112#issuecomment-5984502201",
-      "comment_created_at": "2026-10-04T21:20:08Z",
-      "comment_updated_at": "2026-10-05T05:44:36Z",
-      "comment_body_sha256": "20dfa18a4fb5e3bb78a2bbdf2dd724a08e78a02ce97424af360106da7f4721a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=06cd0cffa1b2ba9809f6fad70824f07d15929ed2)",
-      "expected_head_sha": "06cd0cffa1b2ba9809f6fad70824f07d15929ed2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T05:45:41.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/converged-roster-workspace-pin",
-        "head_sha": "06cd0cffa1b2ba9809f6fad70824f07d15929ed2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141305:5572908155:2026-10-05T05:39:45Z:clawsweeper_needs_human",
       "comment_id": "5572908155",
@@ -32836,6 +32803,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165515:5993014990:2026-10-05T10:53:44Z:re_review",
+      "comment_id": "5993014990",
+      "comment_version_key": "5993014990:2026-10-05T10:53:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165515#issuecomment-5993014990",
+      "comment_created_at": "2026-10-05T10:53:44Z",
+      "comment_updated_at": "2026-10-05T10:53:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165515,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T10:54:36.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-sessions-focus-nesting-drafts",
+        "head_sha": "88ec1aa5fb75288ff66e4d99b89f06010ff216f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
