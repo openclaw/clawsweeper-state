@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T18:17:46.402Z",
+  "updated_at": "2026-10-05T18:19:35.595Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165548:5993840318:2026-10-05T11:50:14Z:re_review",
-      "comment_id": "5993840318",
-      "comment_version_key": "5993840318:2026-10-05T11:50:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165548#issuecomment-5993840318",
-      "comment_created_at": "2026-10-05T11:50:14Z",
-      "comment_updated_at": "2026-10-05T11:50:14Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165548,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T11:51:09.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incogp7j",
-        "head_sha": "a1c2471998305ebeea69e6c9fac5297fb8bd808a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146155:5647095910:2026-10-05T11:50:19Z:clawsweeper_needs_human",
       "comment_id": "5647095910",
@@ -33499,6 +33452,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-restart-recovery-claim-error-exposure",
         "head_sha": "fba69b0f817e895493033669b1804d9287615df7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164445:5972153054:2026-10-05T18:18:25Z:clawsweeper_needs_human",
+      "comment_id": "5972153054",
+      "comment_version_key": "5972153054:2026-10-05T18:18:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164445#issuecomment-5972153054",
+      "comment_created_at": "2026-10-03T18:25:21Z",
+      "comment_updated_at": "2026-10-05T18:18:25Z",
+      "comment_body_sha256": "5079142345a7a72245427317915f7a19119e6ff607bd0eed72811d78e0e2b381",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164445,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The first sweep after upgrade replaces historical collectors' absent or ok durable outcomes with failure and enables normal completion cleanup; explicit maintainer acceptance of that... (sha=879d2d5e6ad3cc8d8dd7a76e16e7216981b5cc6b)",
+      "expected_head_sha": "879d2d5e6ad3cc8d8dd7a76e16e7216981b5cc6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T18:19:35.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/yielded-run-no-wake-source",
+        "head_sha": "879d2d5e6ad3cc8d8dd7a76e16e7216981b5cc6b",
         "cluster_id": null,
         "job_path": null
       }
