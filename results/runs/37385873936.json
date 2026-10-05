@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2706",
+  "mode": "autonomous",
+  "run_id": "37385873936",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37385873936",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2706.md",
+  "published_at": "2026-10-05T23:04:26.903Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_pr": null,
+  "summary": "Verified the stop target-precedence defect on preflight main 383c6ab828b29335853419c7476d304610d9f126. A focused fix artifact is ready for the executor. Local implementation and validation are blocked by the read-only filesystem; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#2706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "An ordinary command flag precedence bug remains on the supplied current main; its repair does not require changing ownership or release policy."
+    },
+    {
+      "target": "#209",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Preserve the merged provider work as context."
+    },
+    {
+      "target": "#2327",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "No action on an already-merged context PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "A narrow executable repair plan can be handed off despite this worker's filesystem restriction."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The implementation PR path is blocked until an executor with a writable checkout establishes the failing regression, implements the fix, and validates the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
