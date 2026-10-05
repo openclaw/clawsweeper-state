@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T11:58:12.621Z",
+  "updated_at": "2026-10-05T11:58:21.545Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165388:5989341626:2026-10-05T06:31:47Z:clawsweeper_needs_human",
-      "comment_id": "5989341626",
-      "comment_version_key": "5989341626:2026-10-05T06:31:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165388#issuecomment-5989341626",
-      "comment_created_at": "2026-10-05T06:31:47Z",
-      "comment_updated_at": "2026-10-05T06:31:47Z",
-      "comment_body_sha256": "2bf9c65107c55eb732d5e224258ffa5ddefe01bfd53db8d0ac9e8f1294072372",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: sessions.diff newly admits scoped creators to local and remote repository content. Supplied tests mock the auth... (sha=74c820546b09ca3788fd74bdb45fe0578302e2ae)",
-      "expected_head_sha": "74c820546b09ca3788fd74bdb45fe0578302e2ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T06:32:45.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/own-workspace-review",
-        "head_sha": "74c820546b09ca3788fd74bdb45fe0578302e2ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165386:5989345503:2026-10-05T06:32:00Z:clawsweeper_needs_human",
       "comment_id": "5989345503",
@@ -33040,6 +33007,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165534:5993939480:2026-10-05T11:56:44Z:re_review",
+      "comment_id": "5993939480",
+      "comment_version_key": "5993939480:2026-10-05T11:56:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165534#issuecomment-5993939480",
+      "comment_created_at": "2026-10-05T11:56:44Z",
+      "comment_updated_at": "2026-10-05T11:56:44Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165534,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T11:58:20.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w4sbxws",
+        "head_sha": "60834713185c5fc619a4ef43ebb03fdd37664ddd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
