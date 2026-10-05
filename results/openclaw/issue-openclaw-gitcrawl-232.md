@@ -2,12 +2,12 @@
 repo: "openclaw/gitcrawl"
 cluster_id: "issue-openclaw-gitcrawl-232"
 mode: "autonomous"
-run_id: "37229015698"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37229015698"
-head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
+run_id: "37268707671"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37268707671"
+head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-04T19:42:20.420Z"
+published_at: "2026-10-05T05:44:12.076Z"
 canonical: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_issue: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/gitcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37229015698](https://github.com/openclaw/clawsweeper/actions/runs/37229015698)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37268707671](https://github.com/openclaw/clawsweeper/actions/runs/37268707671)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/gitcrawl/issues/232
 
 ## Summary
 
-Verified #232 on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narrow indexed-pagination fix remains needed. Implementation and Go validation could not run in this read-only workspace; the fix artifact is ready for the executor.
+Verified #232 remains valid on main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. Prepared a narrow indexed-pagination fix plan. Filesystem access is read-only; no code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified #232 on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #232 | fix_needed | planned | canonical | The reported performance defect remains present. Preserve #232 as the canonical issue and implement one focused PR; closure and merge are prohibited by this job. |
-| #175 | keep_closed | skipped | related | Historical implementation context; no mutation or reopening is needed. |
-| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned | canonical | A narrow non-security fix is sufficiently specified for executor implementation. No maintainer product decision remains unresolved. |
+| #232 | fix_needed | planned | canonical | A focused performance bug remains on current main. Implement through one PR on clawsweeper/issue-openclaw-gitcrawl-232; leave the issue open. |
+| #175 | keep_closed | skipped | related | Historical implementation context, not a fix for the current pagination performance report. |
+| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned | canonical | Create or update the single issue implementation PR after regression coverage and review; closing and merging are prohibited by the job. |
 
 ## Needs Human
 
