@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165786",
+  "mode": "autonomous",
+  "run_id": "37375592898",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37375592898",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165786.md",
+  "published_at": "2026-10-05T21:52:09.407Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165786",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165786",
+  "canonical_pr": null,
+  "summary": "Confirmed the allocation-key collision in source on preflight main 0e54386a46344884e0317c21b81d21b29ccdb615. Prepared a narrow executor fix plan. Implementation and required Gateway regression proof are blocked by the read-only workspace; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165786",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "Distinct Crabbox key-producer defect remains source-confirmed. Reproduce through createCrabboxTool and the real attachment owner before changing production code."
+    },
+    {
+      "target": "#165210",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#165212",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "Historical context and existing identity-owner precedent."
+    },
+    {
+      "target": "#165297",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "Historical context only; its prior checks are not validation for this proposed fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165786",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "A narrow bug-only fix remains appropriate for a writable executor, conditional on the required failing regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165786",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#165786",
+      "candidate_fix": null,
+      "reason": "Executor must implement and validate the artifact in a writable isolated checkout before opening or updating the single authorized PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impacting surface; extension typecheck included [check:changed] extensions/crabbox/api.ts: extension production [check:changed] extensions/crabbox/index.ts: extension production [check:changed] extensions/crabbox/src/crabbox-tool.test.ts: extension test [check:changed] extensions/crabbox/src/crabbox-tool.ts: extension production [check:changed] package.json: root config/package surface [check:changed] scripts/lib/plugin-sdk-entrypoints.json: public core/plugin contract affects extensions [check:changed] src/gateway/worker-environments/session-attachment-service.test.ts: core test [check:changed] src/plugin-sdk/tool-execution-context.ts: public core/plugin contract affects extensions [check:changed] mobile protocol event coverage [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] SQLite worker ratchet $ node --import ./scripts/tsx.mjs scripts/check-database-worker-ratchet.mts --base origin/main [check:changed] test timeout race ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-timeout-race-ratchet.mts --base origin/main [check:changed] first-party mock export ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-mock-exports.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] extension test core imports $ node --import ./scripts/tsx.mjs scripts/check-no-extension-test-core-imports.ts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/plugins/sdk-entrypoints.md extensions/crabbox/api.ts extensions/crabbox/index.ts extensions/crabbox/src/crabbox-tool.test.ts extensions/crabbox/src/crabbox-tool.ts package.json scripts/lib/plugin-sdk-entrypoints.json src/gateway/worker-environments/session-attachment-service.test.ts src/plugin-sdk/tool-execution-context.ts [check:changed] npm package-lock guard Command failed: /opt/hostedtoolcache/node/24.21.0/x64/bin/node /opt/hostedtoolcache/node/24.21.0/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-t6G56y/home/.npm/_logs/2026-10-05T21_50_47_787Z-debug-0.log [check:changed] summary 421ms ok mobile protocol event coverage 219ms ok conflict markers 329ms ok line-cap growth ratchet 5.17s ok max-lines suppression ratchet 11.06s ok assertion SAFETY comment ratchet 2.22s ok SQLite worker ratchet 853ms ok test timeout race ratchet 10.79s ok first-party mock export ratchet 187ms ok changelog attributions 188ms ok doctor deprecation registry 222ms ok guarded extension wildcard re-exports 191ms ok plugin-sdk wildcard re-exports 570ms ok extension test core imports 315ms ok duplicate scan target coverage 281ms ok dependency pin guard 252ms ok format changed files 770ms failed:1 npm package-lock guard [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Protocol event coverage OK: 65 gateway events; ios handles 28, allowlists 37; android handles 26, allowlists 39. Line-cap ratchet OK: 6 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 618 grandfathered suppressions. OPENCLAW_* count 464/464 assertion SAFETY ratchet OK: 2962 files, 7236 grandfathered assertions. SQLite worker ratchet OK: no T1 call-count growth against 0e54386a46344884e0317c21b81d21b29ccdb615. test timeout race ratchet OK: 132 files, 319 grandfathered sites. Mock factory ratchet OK: 10622 grandfathered factories. [doctor-deprecation-registry] OK as of 2026-10-05 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. OK: extension test files, support helpers, and plugin test helpers avoid direct core test/internal imports (4556 extension files, 0 plugin helpers checked). [dup:check] target coverage ok PASS direct dependency pin guard: checked 716 directly declared dependency specs across 198 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 161ms on 7 files using 4 threads. Validating 1 npm package lock with 1 job.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#165786",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
