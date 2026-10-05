@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T11:19:45.141Z",
+  "updated_at": "2026-10-05T11:19:54.374Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/octopool:228:5975941415:2026-10-05T05:59:51Z:clawsweeper_needs_human",
-      "comment_id": "5975941415",
-      "comment_version_key": "5975941415:2026-10-05T05:59:51Z",
-      "comment_url": "https://github.com/openclaw/octopool/pull/228#issuecomment-5975941415",
-      "comment_created_at": "2026-10-04T02:53:07Z",
-      "comment_updated_at": "2026-10-05T05:59:51Z",
-      "comment_body_sha256": "aa3e49c6bc318d721ce9dd7e369862861324118dac04715c73e8e71189ed858d",
-      "repo": "openclaw/octopool",
-      "issue_number": 228,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Actions adapter is exercised through callGitHubWeb with mocked fetch responses only. The posted pass does not demonstrate the patch... (sha=01960dc3f2df837ca51a5ff146a7808d9978a864)",
-      "expected_head_sha": "01960dc3f2df837ca51a5ff146a7808d9978a864",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T06:00:46.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/octopool-f002",
-        "head_sha": "01960dc3f2df837ca51a5ff146a7808d9978a864",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rastermill:20:5922533994:2026-10-05T06:00:27Z:clawsweeper_auto_repair",
       "comment_id": "5922533994",
@@ -32898,6 +32865,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165533:5993378921:2026-10-05T11:18:54Z:re_review",
+      "comment_id": "5993378921",
+      "comment_version_key": "5993378921:2026-10-05T11:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165533#issuecomment-5993378921",
+      "comment_created_at": "2026-10-05T11:18:54Z",
+      "comment_updated_at": "2026-10-05T11:18:54Z",
+      "comment_body_sha256": "11c8183efdf373db85650eaeff2e92523fa0bf5517b9e628858a1656b8948f1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165533,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T11:19:51.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-plugin-captured-aliases",
+        "head_sha": "deb44a7f20b774769104ab4262c8ada438d4fc8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
