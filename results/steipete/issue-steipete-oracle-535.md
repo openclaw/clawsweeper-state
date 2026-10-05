@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-535"
 mode: "autonomous"
-run_id: "37253433289"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37253433289"
+run_id: "37258335505"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37258335505"
 head_sha: "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-05T02:01:30.251Z"
+published_at: "2026-10-05T03:14:20.025Z"
 canonical: "https://github.com/steipete/oracle/issues/535"
 canonical_issue: "https://github.com/steipete/oracle/issues/535"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37253433289](https://github.com/openclaw/clawsweeper/actions/runs/37253433289)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37258335505](https://github.com/openclaw/clawsweeper/actions/runs/37258335505)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/535
 
 ## Summary
 
-Confirmed the unprepared new-launch integration on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable, but implementation and runtime proof are blocked by the read-only environment. Focused tests and pnpm check stopped in Corepack with EROFS before running. No files or GitHub state changed.
+Source inspection supports a narrow cold-start repair. Implementation and validation are blocked by the read-only filesystem, absent dependencies, and unavailable GitHub DNS. No files or GitHub items were changed; an executor-ready fix artifact follows.
 
 ## Impact
 
@@ -67,9 +67,9 @@ Confirmed the unprepared new-launch integration on preflight main 5dd3cd855e14dc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #535 | fix_needed | planned | canonical | Keep #535 as the canonical implementation request. Establish the required 1.2.2 regression before implementing the narrow integration fix. |
-| #538 | keep_related | planned | related | Distinct root cause and attachment path; keep open for a separate focused job. |
-| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned | canonical | Artifact generation is complete. Implementation and PR creation require a writable executor with dependencies and runtime validation; no maintainer product decision is needed. |
+| #535 | fix_needed | blocked | canonical | Only implementation is blocked by this environment. Establish the required failing 1.2.2 regression, implement the narrow fix, and validate in a writable executor before opening the PR. |
+| #538 | keep_related | planned | related | Different acquisition path and root cause. Leave open for its own focused repair. |
+| cluster:issue-steipete-oracle-535 | build_fix_artifact | planned | canonical | The fix plan remains viable and narrow; a writable executor must complete the implementation and evidence gates. |
 
 ## Needs Human
 

@@ -1,0 +1,97 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-535",
+  "mode": "autonomous",
+  "run_id": "37258335505",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37258335505",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-535.md",
+  "published_at": "2026-10-05T03:14:20.025Z",
+  "canonical": "https://github.com/steipete/oracle/issues/535",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/535",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow cold-start repair. Implementation and validation are blocked by the read-only filesystem, absent dependencies, and unavailable GitHub DNS. No files or GitHub items were changed; an executor-ready fix artifact follows.",
+  "actions": [
+    {
+      "target": "#535",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Only implementation is blocked by this environment. Establish the required failing 1.2.2 regression, implement the narrow fix, and validate in a writable executor before opening the PR."
+    },
+    {
+      "target": "#538",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "Different acquisition path and root cause. Leave open for its own focused repair."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-535",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#535",
+      "candidate_fix": null,
+      "reason": "The fix plan remains viable and narrow; a writable executor must complete the implementation and evidence gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation_script_missing: required pnpm check:changed is unavailable in target checkout",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#535",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
