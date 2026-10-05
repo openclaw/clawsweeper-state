@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2706"
 mode: "autonomous"
-run_id: "37345115549"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37345115549"
+run_id: "37382807534"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37382807534"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-05T17:04:53.706Z"
+published_at: "2026-10-05T22:34:41.666Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37345115549](https://github.com/openclaw/clawsweeper/actions/runs/37345115549)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37382807534](https://github.com/openclaw/clawsweeper/actions/runs/37382807534)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2706
 
 ## Summary
 
-The target-precedence defect remains on supplied current main 8991bab59198fe532b15d8e559f5938fd4d021ac. A narrow fix artifact is ready; implementation and validation are blocked by the read-only filesystem and unavailable required Go toolchain. No code or GitHub mutations were performed.
+Confirmed the reported validation-order defect on preflight main 383c6ab828b29335853419c7476d304610d9f126. A narrow implementation path is planned. Local implementation and validation are blocked by the read-only filesystem; native Tart proof also requires an unavailable Apple Silicon macOS host.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ The target-precedence defect remains on supplied current main 8991bab59198fe532b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2706 | fix_needed | planned | canonical | An ordinary flag-precedence bug has a focused repair path without changing ownership policy, claim formats, or release authorization. |
-| #209 | keep_closed | skipped | related | Historical provider work is not a mutation target. |
-| #2327 | keep_closed | skipped | related | Historical configuration work is not a mutation target. |
-| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | The artifact provides a narrow implementation and validation contract for a writable executor. |
-| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | Opening the implementation PR is blocked until a writable executor establishes the failing regression, applies the fix, and validates with Go 1.26.5. Native proof additionally requires an Apple Silicon host with Tart. |
+| #2706 | fix_needed | planned | canonical | The existing-behavior bug remains viable. Implementation requires a writable executor with the declared Go toolchain; no product or ownership-policy decision is needed. |
+| #209 | keep_closed | skipped | related | Closed historical context only. |
+| #2327 | keep_closed | skipped | related | Closed historical context only. |
+| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned | canonical | Artifact is ready for the deterministic executor. Implementation is blocked in this worker by read-only filesystem permissions; no branch was changed or PR opened. |
 
 ## Needs Human
 

@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2706",
+  "mode": "autonomous",
+  "run_id": "37382807534",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37382807534",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2706.md",
+  "published_at": "2026-10-05T22:34:41.666Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported validation-order defect on preflight main 383c6ab828b29335853419c7476d304610d9f126. A narrow implementation path is planned. Local implementation and validation are blocked by the read-only filesystem; native Tart proof also requires an unavailable Apple Silicon macOS host.",
+  "actions": [
+    {
+      "target": "#2706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The existing-behavior bug remains viable. Implementation requires a writable executor with the declared Go toolchain; no product or ownership-policy decision is needed."
+    },
+    {
+      "target": "#209",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#2327",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the deterministic executor. Implementation is blocked in this worker by read-only filesystem permissions; no branch was changed or PR opened."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
