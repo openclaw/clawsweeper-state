@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-05T07:25:36.489Z",
+  "updated_at": "2026-10-05T07:25:56.355Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1217:5979644653:2026-10-05T01:17:24Z:clawsweeper_needs_human",
-      "comment_id": "5979644653",
-      "comment_version_key": "5979644653:2026-10-05T01:17:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1217#issuecomment-5979644653",
-      "comment_created_at": "2026-10-04T11:53:02Z",
-      "comment_updated_at": "2026-10-05T01:17:24Z",
-      "comment_body_sha256": "e6a17994d8c98fa00a671a3eb152411fc55f585d40d2fca2a794f9d2c2a3c39c",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1217,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=62151c64056b9582c185fcde06a5e7a38174c2e3)",
-      "expected_head_sha": "62151c64056b9582c185fcde06a5e7a38174c2e3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T01:18:16.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/stevenlee/oce-secret-picker-unused-state",
-        "head_sha": "62151c64056b9582c185fcde06a5e7a38174c2e3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165239:5986473608:2026-10-05T01:17:26Z:clawsweeper_needs_human",
       "comment_id": "5986473608",
@@ -33270,6 +33237,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158051:5989988397:2026-10-05T07:24:42Z:re_review",
+      "comment_id": "5989988397",
+      "comment_version_key": "5989988397:2026-10-05T07:24:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158051#issuecomment-5989988397",
+      "comment_created_at": "2026-10-05T07:24:42Z",
+      "comment_updated_at": "2026-10-05T07:24:42Z",
+      "comment_body_sha256": "c7ad4876c4e6161a109f24373f81bd966223facb2ae06f44404aec6cef5a0ee1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158051,
+      "author": "TheAngryPit",
+      "author_id": 7040636,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T07:25:54.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-cloudflare-dashboard-session-20260925",
+        "head_sha": "7c51cbbddaba415e905d58c016612a0972130235",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
