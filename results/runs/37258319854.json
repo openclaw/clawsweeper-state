@@ -1,0 +1,92 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-531",
+  "mode": "autonomous",
+  "run_id": "37258319854",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37258319854",
+  "head_sha": "dd58d9ec74fbfa5f757caab1b24c07194bef6f2b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-531.md",
+  "published_at": "2026-10-05T03:15:13.954Z",
+  "canonical": "https://github.com/steipete/oracle/issues/531",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/531",
+  "canonical_pr": null,
+  "summary": "#531 remains valid on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow repair artifact is ready, but implementation and validation are blocked by the read-only environment. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#531",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "The ordinary attachment-selection bug is still present and has a narrow repair path."
+    },
+    {
+      "target": "#532",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave this separate performance issue open and preserve existing .gitignore discovery in the #531 repair."
+    },
+    {
+      "target": "#533",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Dependency maintenance is outside this implementation cluster."
+    },
+    {
+      "target": "#536",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Browser localization is unrelated to #531 and should remain on its existing contributor path."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "A concrete new-fix plan is available without a product-policy decision."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-531",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#531",
+      "candidate_fix": null,
+      "reason": "Implementation and PR publication must wait for a writable executor with dependencies and successful validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
