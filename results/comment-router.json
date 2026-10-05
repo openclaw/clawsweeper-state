@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-05T11:37:28.164Z",
+  "updated_at": "2026-10-05T11:37:29.164Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144960:5846733978:2026-09-26T13:40:39Z:re_review",
-      "comment_id": "5846733978",
-      "comment_version_key": "5846733978:2026-09-26T13:40:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144960#issuecomment-5846733978",
-      "comment_created_at": "2026-09-26T13:40:39Z",
-      "comment_updated_at": "2026-09-26T13:40:39Z",
-      "comment_body_sha256": "b1347354a6d43926ec716213d3f29e25d8d8c4028cacc350884547357c510aba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144960,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the exact head now awaits both kilocode model resolutions before comparing them. evidence and validation limits are updated in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T06:26:03.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kilocode-modelsdev-alias",
-        "head_sha": "045e34089a32c3128f9ce075bfd73c3369bdb116",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144960:5635619826:2026-10-05T06:25:02Z:clawsweeper_needs_human",
       "comment_id": "5635619826",
@@ -32931,6 +32884,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-723-manual-bundles",
         "head_sha": "66f547401795bfeba82d76902d8a00cd5121a75f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136314:5510195853:2026-10-05T11:36:32Z:clawsweeper_needs_human",
+      "comment_id": "5510195853",
+      "comment_version_key": "5510195853:2026-10-05T11:36:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136314#issuecomment-5510195853",
+      "comment_created_at": "2026-09-02T13:20:33Z",
+      "comment_updated_at": "2026-10-05T11:36:32Z",
+      "comment_body_sha256": "65eec195468489e4529cd537e938f02ab7a6c76086d394c2cf40454739ddf99f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136314,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed access-control and group-gating owners are covered by isolated tests with constructed admissions, m...; Review finding: [P1] Recheck ingestion permission before recording queued messages — extensions/whatsapp/src/auto-reply/monitor/group-gating.ts:242-248 - [medium] Queued ingestion... (sha=f468e641d682c35b2e08ad48fbbb7d1ecc4e3c81)",
+      "expected_head_sha": "f468e641d682c35b2e08ad48fbbb7d1ecc4e3c81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-05T11:37:29.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/whatsapp-group-ingest-from",
+        "head_sha": "f468e641d682c35b2e08ad48fbbb7d1ecc4e3c81",
         "cluster_id": null,
         "job_path": null
       }
