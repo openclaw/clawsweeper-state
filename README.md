@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 5, 2026, 10:39 UTC
+Last source update: Oct 5, 2026, 10:49 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 5, 2026, 10:39 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 5, 2026, 10:39 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37293977041) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 5, 2026, 10:29 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37296716275) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 5, 2026, 10:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37296349440) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 5, 2026, 10:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37298875882) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 5, 2026, 08:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37285723494) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 5, 2026, 10:39 UTC
+Last source update: Oct 5, 2026, 10:53 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1462 | 100% |
-| Run attempts archived | 4316 | audit |
+| Run attempts archived | 4317 | audit |
 | Latest successful clusters | 1185 | 81.1% |
 | Latest failed clusters | 273 | 18.7% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1462 clusters: 389 maintainer action, 443 automation snapshot, 571 intervention needed, 59 no pending action, 0 completed.
-- Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4100](https://github.com/steipete/codexbar/issues/4100) is maintainer_input: Select one concrete CodexBar change from #4100 and specify its expected behavior and acceptance criteria..
+- Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4100](https://github.com/steipete/codexbar/issues/4100) is maintainer_input: #4100: Select one concrete upstream improvement to adopt, with expected CodexBar behavior and acceptance criteria..
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#165494](https://github.com/openclaw/openclaw/pull/165494) is automation_failed: The canonical bug has a narrow existing-behavior repair, but this host cannot create or validate the implementation branch. The executor....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4100](https://github.com/steipete/codexbar/issues/4100) | maintainer_input | Select one concrete CodexBar change from #4100 and specify its expected behavior and acceptance criteria. | Oct 5, 2026, 10:09 UTC | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [37291791598](https://github.com/openclaw/clawsweeper/actions/runs/37291791598) |
+| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4100](https://github.com/steipete/codexbar/issues/4100) | maintainer_input | #4100: Select one concrete upstream improvement to adopt, with expected CodexBar behavior and acceptance criteria. | Oct 5, 2026, 10:53 UTC | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [37299100124](https://github.com/openclaw/clawsweeper/actions/runs/37299100124) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) | [cluster:issue-openclaw-peekaboo-881](cluster:issue-openclaw-peekaboo-881) | maintainer_input | For #881, obtain the retained, redacted same-session binary version, Bridge host/protocol, window identity/bounds, and existing remote/local receip... | Oct 5, 2026, 09:11 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37287946911](https://github.com/openclaw/clawsweeper/actions/runs/37287946911) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#120362](https://github.com/openclaw/openclaw/issues/120362) | maintainer_input | Quarantine this exact ref for central OpenClaw security handling. No public mutation or repair of its implementation is planned. | Oct 5, 2026, 01:50 UTC | [issue-openclaw-openclaw-165232](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165232.md) | [37250279660](https://github.com/openclaw/clawsweeper/actions/runs/37250279660) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#163376](https://github.com/openclaw/openclaw/issues/163376) | maintainer_input | Quarantine this exact historical ref for central OpenClaw security handling without public mutation. The separate test assertion repair does not ch... | Oct 4, 2026, 13:58 UTC | [issue-openclaw-openclaw-164917](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-164917.md) | [37205278224](https://github.com/openclaw/clawsweeper/actions/runs/37205278224) |
@@ -233,8 +233,8 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-steipete-codexbar-4100 | needs human | #4100: Select one concrete upstream improvement to adopt, with expected CodexBar behavior and acceptance criteria. | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [37299100124](https://github.com/openclaw/clawsweeper/actions/runs/37299100124) |
 | issue-openclaw-crabbox-2706 | execute_fix blocked | validation command failed (go test -count=1 ./internal/providers/all -run TestStopTartTarget): go: cannot find GOROOT directory: 'go' binary is tri... | [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | [37294103085](https://github.com/openclaw/clawsweeper/actions/runs/37294103085) |
-| issue-steipete-codexbar-4100 | needs human | Select one concrete CodexBar change from #4100 and specify its expected behavior and acceptance criteria. | [issue-steipete-codexbar-4100](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4100.md) | [37291791598](https://github.com/openclaw/clawsweeper/actions/runs/37291791598) |
 | issue-openclaw-peekaboo-881 | needs human | For #881, obtain the retained, redacted same-session binary version, Bridge host/protocol, window identity/bounds, and existing remote/local receip... | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37287946911](https://github.com/openclaw/clawsweeper/actions/runs/37287946911) |
 | automerge-openclaw-openclaw-165334 | fix failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, ui, extensions, ext... | [automerge-openclaw-openclaw-165334](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165334.md) | [37266102434](https://github.com/openclaw/clawsweeper/actions/runs/37266102434) |
 | issue-steipete-oracle-531 | execute_fix blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [issue-steipete-oracle-531](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-531.md) | [37262105585](https://github.com/openclaw/clawsweeper/actions/runs/37262105585) |
