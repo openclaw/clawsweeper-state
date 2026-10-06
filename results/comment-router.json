@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T11:37:15.166Z",
+  "updated_at": "2026-10-06T11:37:25.156Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163655:5988485276:2026-10-05T05:08:58Z:re_review",
-      "comment_id": "5988485276",
-      "comment_version_key": "5988485276:2026-10-05T05:08:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163655#issuecomment-5988485276",
-      "comment_created_at": "2026-10-05T05:08:58Z",
-      "comment_updated_at": "2026-10-05T05:08:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163655,
-      "author": "chuanleiguo",
-      "author_id": 5415054,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T05:44:46.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/foreign-live-input-custody",
-        "head_sha": "92258a6d2829fe7dea1b632b3d94c72a9f137173",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163655:5957482308:2026-10-06T05:43:53Z:clawsweeper_needs_human",
       "comment_id": "5957482308",
@@ -34075,6 +34028,39 @@
         "kind": "pull_request",
         "branch": "fix/f034-protocol-relative-readme-images",
         "head_sha": "cd8c5b4aed50885b0a63ef8d3fd7d3e4d3715f10",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3812:5931883447:2026-10-06T11:36:27Z:clawsweeper_needs_human",
+      "comment_id": "5931883447",
+      "comment_version_key": "5931883447:2026-10-06T11:36:27Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3812#issuecomment-5931883447",
+      "comment_created_at": "2026-10-01T12:53:25Z",
+      "comment_updated_at": "2026-10-06T11:36:27Z",
+      "comment_body_sha256": "33753ae3e8a505a4ec203efe4f9e969d8504b00286dcd58710dd598924e52d58",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new test exercises reportCliInstallInternal through sequential mocked handlers; the captured macOS evidence reports source inspection only.... (sha=f087394171cdf062087a189f56e6422ff3760ff6)",
+      "expected_head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T11:37:25.156Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f023-install-telemetry-race",
+        "head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
         "cluster_id": null,
         "job_path": null
       }
