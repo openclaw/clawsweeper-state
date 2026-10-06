@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37287946911"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37287946911"
+run_id: "37400465753"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37400465753"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-05T09:11:54.441Z"
+published_at: "2026-10-06T01:46:52.672Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37287946911](https://github.com/openclaw/clawsweeper/actions/runs/37287946911)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37400465753](https://github.com/openclaw/clawsweeper/actions/runs/37400465753)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Keep #881 open. Inspection of preflight main found existing exact-window evidence propagation, but did not establish the reported failure on current source or a justified narrow patch. Implementation is blocked on the retained host/session metadata requested by the maintainer. No code or GitHub changes were made.
+Implementation is blocked on retained host/session diagnostics. Inspection of the supplied main revision did not establish a narrow defect explaining the reported 4.2.0 failure. Keep #881 open; no code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Keep #881 open. Inspection of preflight main found existing exact-window evidenc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The remote-only 4.2.0 report remains unresolved; source inspection and synthetic receipt coverage do not prove success or failure on the reported Simulator host. |
-| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | No bounded implementation is established. Resume diagnosis with the maintainer-requested retained binary version, selected Bridge host/protocol, PID/process generation, window ID/bounds, and remote/local target receipts including dispatch/retry metadata. Do not retry focus, weaken attribution, or infer that current main is fixed. No executable fix artifact is justified yet. |
+| #881 | keep_canonical | planned | canonical | The report remains unresolved. Neither a current-main fix nor a precise current-main root cause is established. |
+| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | Before defining a patch, obtain the retained diagnostics already requested by the maintainer to identify the evidence-loss stage. Do not retry focus/input, create new screenshots, or claim the issue is fixed. The supplied artifacts cannot safely support a narrow executable fix artifact, so the fix action is downgraded to a non-mutating diagnostics blocker. |
 
 ## Needs Human
 
-- For #881, obtain the retained, redacted same-session binary version, Bridge host/protocol, window identity/bounds, and existing remote/local receipts with dispatch/retry metadata requested by steipete on October 2. These are absent from the hydrated responses, and no failing current-main path or bounded patch is established. Do not gather evidence through further focus/input attempts.
+- For #881, supply the retained, redacted same-session diagnostics requested by steipete: exact binary --version, bridge status --verbose --json, Simulator window inventory row, and existing failing remote/successful local see JSON preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. Do not perform new focus/input attempts or capture new screenshots.
