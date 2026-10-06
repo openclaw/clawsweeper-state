@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T06:40:01.808Z",
+  "updated_at": "2026-10-06T06:40:40.254Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90745:5804738437:2026-09-23T23:36:56Z:re_review",
-      "comment_id": "5804738437",
-      "comment_version_key": "5804738437:2026-09-23T23:36:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-5804738437",
-      "comment_created_at": "2026-09-23T23:36:56Z",
-      "comment_updated_at": "2026-09-23T23:36:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90745,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T00:43:47.206Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-context-runtime",
-        "head_sha": "7fe52a1496b9c960b11d877464a46bdb18db218e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165761:6003267713:2026-10-06T00:42:29Z:clawsweeper_needs_human",
       "comment_id": "6003267713",
@@ -33477,6 +33430,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T06:40:01.808Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165966:6010852041:2026-10-06T06:39:35Z:clawsweeper_needs_human",
+      "comment_id": "6010852041",
+      "comment_version_key": "6010852041:2026-10-06T06:39:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165966#issuecomment-6010852041",
+      "comment_created_at": "2026-10-06T06:39:35Z",
+      "comment_updated_at": "2026-10-06T06:39:35Z",
+      "comment_body_sha256": "40051f015a6c3551466bbc786211d9d6996c96a7e929d98ddd208e3b5d5acb70",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165966,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Schema 25 makes older builds refuse upgraded stores; complete deployment-route and real-size restore qualification remain unresolved despite positive component preservation and synthe... (sha=d1cd9117ed290e1bc856599db9b1e9d6e381b739)",
+      "expected_head_sha": "d1cd9117ed290e1bc856599db9b1e9d6e381b739",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T06:40:40.254Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-agent-db-format-v2-20260919",
+        "head_sha": "d1cd9117ed290e1bc856599db9b1e9d6e381b739",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
