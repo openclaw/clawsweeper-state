@@ -2,12 +2,12 @@
 repo: "openclaw/ocm"
 cluster_id: "issue-openclaw-ocm-295"
 mode: "autonomous"
-run_id: "37528884702"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37528884702"
+run_id: "37536904836"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37536904836"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T20:50:58.325Z"
+published_at: "2026-10-06T21:56:51.797Z"
 canonical: "https://github.com/openclaw/ocm/issues/295"
 canonical_issue: "https://github.com/openclaw/ocm/issues/295"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/ocm
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37528884702](https://github.com/openclaw/clawsweeper/actions/runs/37528884702)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37536904836](https://github.com/openclaw/clawsweeper/actions/runs/37536904836)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/ocm/issues/295
 
 ## Summary
 
-Verified the restore defect on supplied current main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A narrow fix remains viable. Implementation and validation are blocked by this session's read-only filesystem and absence of a configured approved remote check host. No files or GitHub state were changed.
+Verified the restore defect on checkout fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add, matching preflight main. A narrow fix remains viable. Implementation and validation are blocked by read-only filesystem access and no configured approved remote worker. No files were changed, tests run, or GitHub mutations performed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified the restore defect on supplied current main fbd5ca8e0cd9c3caafc6e5fab54
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #295 | fix_needed | planned | canonical | The issue remains reproducible from current source and requires a focused tree-restore fix. |
-| #166 | keep_closed | skipped | related | Completed capture work is historical context and does not fix the separate restore cleanup defect. |
-| cluster:issue-openclaw-ocm-295 | build_fix_artifact | planned | canonical | The fix artifact is ready for an executor with a writable task checkout and approved remote validation workers; implementation remains blocked in this session. |
+| #295 | fix_needed | planned | canonical | The source confirms a narrow preservation defect with clear expected behavior. Keep #295 as the canonical issue and implement through the cluster fix artifact. |
+| #166 | keep_closed | skipped | related | Completed capture work is related historical context and does not cover #295. No closure or other mutation is appropriate. |
+| cluster:issue-openclaw-ocm-295 | build_fix_artifact | planned |  | The artifact is ready for an executor with writable task-owned source and approved remote validation workers. Implementation remains blocked in this session; no maintainer product decision is needed. |
 
 ## Needs Human
 

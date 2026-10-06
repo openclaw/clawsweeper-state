@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-295",
+  "mode": "autonomous",
+  "run_id": "37536904836",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37536904836",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-295.md",
+  "published_at": "2026-10-06T21:56:51.797Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/295",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/295",
+  "canonical_pr": null,
+  "summary": "Verified the restore defect on checkout fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add, matching preflight main. A narrow fix remains viable. Implementation and validation are blocked by read-only filesystem access and no configured approved remote worker. No files were changed, tests run, or GitHub mutations performed.",
+  "actions": [
+    {
+      "target": "#295",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#295",
+      "candidate_fix": null,
+      "reason": "The source confirms a narrow preservation defect with clear expected behavior. Keep #295 as the canonical issue and implement through the cluster fix artifact."
+    },
+    {
+      "target": "#166",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Completed capture work is related historical context and does not cover #295. No closure or other mutation is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-295",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#295",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for an executor with writable task-owned source and approved remote validation workers. Implementation remains blocked in this session; no maintainer product decision is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
