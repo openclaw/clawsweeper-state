@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:50:26.686Z",
+  "updated_at": "2026-10-06T02:50:43.027Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165334:6001416617:2026-10-05T19:19:26Z:automerge",
-      "comment_id": "6001416617",
-      "comment_version_key": "6001416617:2026-10-05T19:19:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165334#issuecomment-6001416617",
-      "comment_created_at": "2026-10-05T19:19:26Z",
-      "comment_updated_at": "2026-10-05T19:19:26Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165334,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: check-lint-extensions-3:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T19:29:25.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/revert-session-channel-links",
-        "head_sha": "1013b27cf93ada2f5177b63d32064539d5531a11",
-        "cluster_id": "automerge-openclaw-openclaw-165334",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160700:6001439069:2026-10-05T19:20:53Z:re_review",
       "comment_id": "6001439069",
@@ -34068,6 +34015,39 @@
         "kind": "pull_request",
         "branch": "deslop/l401-types-guards-cli-commands-20261005",
         "head_sha": "eb75f70be05eee0f125b92be2e2f148cc54fb0a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3579:5515247828:2026-10-06T02:49:48Z:clawsweeper_auto_repair",
+      "comment_id": "5515247828",
+      "comment_version_key": "5515247828:2026-10-06T02:49:48Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3579#issuecomment-5515247828",
+      "comment_created_at": "2026-09-02T19:35:45Z",
+      "comment_updated_at": "2026-10-06T02:49:48Z",
+      "comment_body_sha256": "9e2bd43fe9977ab806c3f42fc8a6b145caf13ff0f5e1e49ce9f3bd396059d4f8",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad060dd43844c774a20bab8d970e5aa2749b3d69)",
+      "expected_head_sha": "ad060dd43844c774a20bab8d970e5aa2749b3d69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:50:43.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hermit-content-rights-timeout",
+        "head_sha": "ad060dd43844c774a20bab8d970e5aa2749b3d69",
         "cluster_id": null,
         "job_path": null
       }
