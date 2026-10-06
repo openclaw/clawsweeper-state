@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:13:36.515Z",
+  "updated_at": "2026-10-06T20:13:44.270Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144065:5619424188:2026-10-06T13:20:52Z:clawsweeper_needs_human",
-      "comment_id": "5619424188",
-      "comment_version_key": "5619424188:2026-10-06T13:20:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144065#issuecomment-5619424188",
-      "comment_created_at": "2026-09-10T13:25:58Z",
-      "comment_updated_at": "2026-10-06T13:20:52Z",
-      "comment_body_sha256": "36e2e92a9a1aae9dd42d7f34c1cb7796444561bdcf315f9ece56d71e9e3988cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144065,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Shared plans require a revision-2-capable applying CLI; existing released revision-1 CLIs reject them, and the explicit maintainer hold has not authorized this shared-write contract. (sha=590c6fe105a8366ddb3b857f51fa455e4ba336e9)",
-      "expected_head_sha": "590c6fe105a8366ddb3b857f51fa455e4ba336e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T13:21:53.300Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-143262-descr",
-        "head_sha": "590c6fe105a8366ddb3b857f51fa455e4ba336e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163358:5947376658:2026-10-06T13:21:38Z:clawsweeper_needs_human",
       "comment_id": "5947376658",
@@ -33956,6 +33923,59 @@
         "cluster_id": "automerge-openclaw-openclaw-166217",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166217.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166269:6024569430:2026-10-06T20:11:34Z:clawsweeper_auto_repair",
+      "comment_id": "6024569430",
+      "comment_version_key": "6024569430:2026-10-06T20:11:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166269#issuecomment-6024569430",
+      "comment_created_at": "2026-10-06T20:11:34Z",
+      "comment_updated_at": "2026-10-06T20:11:34Z",
+      "comment_body_sha256": "301217708680d3bd07716f132a366ef3c4bb50a92b7c3caecd80194b118b32da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166269,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a7358d956f8f1a39ccd34bdea8601ae5bb59affc)",
+      "expected_head_sha": "a7358d956f8f1a39ccd34bdea8601ae5bb59affc",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-06T20:13:38.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-auth-timeout-metadata",
+        "head_sha": "a7358d956f8f1a39ccd34bdea8601ae5bb59affc",
+        "cluster_id": "automerge-openclaw-openclaw-166269",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
