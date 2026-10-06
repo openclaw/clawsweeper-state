@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:19:41.101Z",
+  "updated_at": "2026-10-06T20:20:41.874Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166062:6017417729:2026-10-06T13:33:54Z:automerge",
-      "comment_id": "6017417729",
-      "comment_version_key": "6017417729:2026-10-06T13:33:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6017417729",
-      "comment_created_at": "2026-10-06T13:33:54Z",
-      "comment_updated_at": "2026-10-06T13:33:54Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T13:34:50.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/github-copilot-auth-worker-fixture",
-        "head_sha": "3fa8dfaba162a65526977bdfb9364e37211bc77d",
-        "cluster_id": "automerge-openclaw-openclaw-166062",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166089:6017314817:2026-10-06T13:28:14Z:re_review",
       "comment_id": "6017314817",
@@ -33936,6 +33877,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T20:19:41.101Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166252:6023366720:2026-10-06T20:19:30Z:clawsweeper_needs_human",
+      "comment_id": "6023366720",
+      "comment_version_key": "6023366720:2026-10-06T20:19:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166252#issuecomment-6023366720",
+      "comment_created_at": "2026-10-06T19:00:20Z",
+      "comment_updated_at": "2026-10-06T20:19:30Z",
+      "comment_body_sha256": "1541befa5ba00c5804efdc8c688e3d86b2c86a3ecf14f59f22f14cd83546089d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=21796d60730a280070036d0eaee26c0a45bed001)",
+      "expected_head_sha": "21796d60730a280070036d0eaee26c0a45bed001",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T20:20:41.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6discovery-preflight",
+        "head_sha": "21796d60730a280070036d0eaee26c0a45bed001",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
