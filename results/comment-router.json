@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T11:38:43.505Z",
+  "updated_at": "2026-10-06T11:38:50.270Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3917:6010197809:2026-10-06T05:46:28Z:re_review",
-      "comment_id": "6010197809",
-      "comment_version_key": "6010197809:2026-10-06T05:46:28Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3917#issuecomment-6010197809",
-      "comment_created_at": "2026-10-06T05:46:28Z",
-      "comment_updated_at": "2026-10-06T05:46:28Z",
-      "comment_body_sha256": "af514e1522b1ee16023ce829f67619d8f029364204e68998e6ad2f78fe8fb909",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3917,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T05:47:22.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openclaw-release-milestone",
-        "head_sha": "64d7c07dfbb25a662d22333a819ca45b89e34b34",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165856:6010197829:2026-10-06T05:46:28Z:re_review",
       "comment_id": "6010197829",
@@ -34067,6 +34020,39 @@
         "kind": "pull_request",
         "branch": "fix/f028-skills-sh-mirror-identity",
         "head_sha": "1519ebbc32c654cc4529aef6b5199854a6b6ff7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121204:5233780085:2026-10-06T11:37:32Z:clawsweeper_needs_human",
+      "comment_id": "5233780085",
+      "comment_version_key": "5233780085:2026-10-06T11:37:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121204#issuecomment-5233780085",
+      "comment_created_at": "2026-08-09T20:50:24Z",
+      "comment_updated_at": "2026-10-06T11:37:32Z",
+      "comment_body_sha256": "ca3f2442f40828a6d5b402ec0ba6fbae39727af37cb1486cd82d1ff2c857cb33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public pending-disposition hook needs owner acceptance of its permanent SDK contract. (sha=2d997a0bcd9b7eb104b1890699cf20f90e45ba17)",
+      "expected_head_sha": "2d997a0bcd9b7eb104b1890699cf20f90e45ba17",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T11:38:50.270Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codeagent/wo1229-upstream-pr",
+        "head_sha": "2d997a0bcd9b7eb104b1890699cf20f90e45ba17",
         "cluster_id": null,
         "job_path": null
       }
