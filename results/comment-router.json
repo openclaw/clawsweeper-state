@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T06:10:06.574Z",
+  "updated_at": "2026-10-06T06:10:43.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165802:6006111639:2026-10-06T00:08:28Z:re_review",
-      "comment_id": "6006111639",
-      "comment_version_key": "6006111639:2026-10-06T00:08:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165802#issuecomment-6006111639",
-      "comment_created_at": "2026-10-06T00:08:28Z",
-      "comment_updated_at": "2026-10-06T00:08:28Z",
-      "comment_body_sha256": "38701eb66c5e6990b46a6d00972d9af536834a19b50c7b2303ff82ffd00a85e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165802,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T00:09:25.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-delivery-session-provenance-current",
-        "head_sha": "c54c0b297b58f17c3837963cffe2ba36ede992b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149317:5685599911:2026-10-06T00:09:01Z:clawsweeper_needs_human",
       "comment_id": "5685599911",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "fix/foreign-live-input-custody",
         "head_sha": "cedb5dc77f24da931dad8d80ac06db0e9548dd1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:265:6010471161:2026-10-06T06:09:21Z:clawsweeper_needs_human",
+      "comment_id": "6010471161",
+      "comment_version_key": "6010471161:2026-10-06T06:09:21Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/265#issuecomment-6010471161",
+      "comment_created_at": "2026-10-06T06:09:21Z",
+      "comment_updated_at": "2026-10-06T06:09:21Z",
+      "comment_body_sha256": "136fd5f3592f7c5d80757684c09374bc785e04560da79875a3fce8f8e19e9bb0",
+      "repo": "steipete/poltergeist",
+      "issue_number": 265,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c0cb9ddcadcd2c9f0fee6b512943c257bdc67934)",
+      "expected_head_sha": "c0cb9ddcadcd2c9f0fee6b512943c257bdc67934",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T06:10:43.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cancel-deferred-rebuilds-20261006",
+        "head_sha": "c0cb9ddcadcd2c9f0fee6b512943c257bdc67934",
         "cluster_id": null,
         "job_path": null
       }
