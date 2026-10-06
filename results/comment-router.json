@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T16:22:33.611Z",
+  "updated_at": "2026-10-06T16:30:51.442Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166059:6013803598:2026-10-06T09:56:20Z:clawsweeper_needs_human",
-      "comment_id": "6013803598",
-      "comment_version_key": "6013803598:2026-10-06T09:56:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166059#issuecomment-6013803598",
-      "comment_created_at": "2026-10-06T09:56:20Z",
-      "comment_updated_at": "2026-10-06T09:56:20Z",
-      "comment_body_sha256": "11f18da384b81dd9d3f2661559fd5ccb5e0c12030225974083410074fa8bff2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166059,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f1bb688615fd3c7169a9e8d61a7829af1461f47a)",
-      "expected_head_sha": "f1bb688615fd3c7169a9e8d61a7829af1461f47a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T09:57:20.243Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-abandoned-turn-releases-everything-20260919",
-        "head_sha": "f1bb688615fd3c7169a9e8d61a7829af1461f47a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165890:6013802372:2026-10-06T09:56:15Z:re_review",
       "comment_id": "6013802372",
@@ -33766,6 +33733,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166184:6020750334:2026-10-06T16:29:15Z:freeform_assist",
+      "comment_id": "6020750334",
+      "comment_version_key": "6020750334:2026-10-06T16:29:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166184#issuecomment-6020750334",
+      "comment_created_at": "2026-10-06T16:29:15Z",
+      "comment_updated_at": "2026-10-06T16:29:15Z",
+      "comment_body_sha256": "c258a27cbca532033c4c84332cdec28896ae0197e87aa87b491a1e0352d1c3b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166184,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge\\n\\nthe p2 proof item is resolved on exact head `707f235f5394c5f446ece49a8fd07865a495268d`. evidence is recorded in the pr body: 20 clean standalone shared-auth runs in separate processes, 20 clean zalo executions, and three clean original-shard runs with owner siblings (58 files; 692 passed, 2 skipped each).",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T16:30:48.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-test-blockers-20261006",
+        "head_sha": "707f235f5394c5f446ece49a8fd07865a495268d",
+        "cluster_id": "automerge-openclaw-openclaw-166184",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166184.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
