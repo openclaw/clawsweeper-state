@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 6, 2026, 08:40 UTC
+Last source update: Oct 6, 2026, 09:14 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 6, 2026, 08:40 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 6, 2026, 08:38 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37432816092) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 6, 2026, 08:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37437637393) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 6, 2026, 09:14 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37441450365) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 6, 2026, 08:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37438992923) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 5, 2026, 23:21 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37387932275) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 6, 2026, 08:40 UTC
+Last source update: Oct 6, 2026, 09:09 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1493 | 100% |
-| Run attempts archived | 4386 | audit |
+| Run attempts archived | 4387 | audit |
 | Latest successful clusters | 1186 | 79.4% |
 | Latest failed clusters | 303 | 20.3% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1493 clusters: 389 maintainer action, 443 automation snapshot, 602 intervention needed, 59 no pending action, 0 completed.
 - Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4300](https://github.com/steipete/codexbar/issues/4300) is maintainer_input: #4300: Supply the Codex app version, local-versus-remote execution location, and one affected task's redacted metadata/model/token counte....
-- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [#538](https://github.com/steipete/oracle/pull/538) is automation_failed: Narrow ordinary discovery bug remains valid. No active implementation PR is present in the hydrated inventory..
+- Intervention first: [openclaw/gitcrawl](https://github.com/openclaw/gitcrawl) [cluster:issue-openclaw-gitcrawl-232](cluster:issue-openclaw-gitcrawl-232) is automation_failed: Implementation and PR readiness require a writable executor, Go toolchain/cache access, authenticated bounded GitHub reads, and completed....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,10 +187,10 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/gitcrawl](https://github.com/openclaw/gitcrawl) | [cluster:issue-openclaw-gitcrawl-232](cluster:issue-openclaw-gitcrawl-232) | automation_failed | Implementation and PR readiness require a writable executor, Go toolchain/cache access, authenticated bounded GitHub reads, and completed regressio... | Oct 6, 2026, 09:09 UTC | [issue-openclaw-gitcrawl-232](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gitcrawl-232.md) | [37440472093](https://github.com/openclaw/clawsweeper/actions/runs/37440472093) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [#538](https://github.com/steipete/oracle/pull/538) | automation_failed | Narrow ordinary discovery bug remains valid. No active implementation PR is present in the hydrated inventory. | Oct 6, 2026, 07:59 UTC | [issue-steipete-oracle-538](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-538.md) | [37432613649](https://github.com/openclaw/clawsweeper/actions/runs/37432613649) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165961](https://github.com/openclaw/openclaw/pull/165961) | automation_failed | Source supports a focused bug repair with no new provider, configuration, public capability, or policy. Require a failing real-boundary regression... | Oct 6, 2026, 07:40 UTC | [issue-openclaw-openclaw-165961](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165961.md) | [37424011686](https://github.com/openclaw/clawsweeper/actions/runs/37424011686) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165958](https://github.com/openclaw/openclaw/pull/165958) | automation_failed | A narrow UI repair remains justified by source evidence. Required boundary reproduction must succeed before production edits; this host cannot prep... | Oct 6, 2026, 07:04 UTC | [issue-openclaw-openclaw-165958](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165958.md) | [37422392441](https://github.com/openclaw/clawsweeper/actions/runs/37422392441) |
-| [openclaw/gitcrawl](https://github.com/openclaw/gitcrawl) | [#232](https://github.com/openclaw/gitcrawl/pull/232) | automation_failed | The ordinary performance bug has a narrow implementation path. Keep the issue open while the executor establishes the regression and prepares one v... | Oct 6, 2026, 05:32 UTC | [issue-openclaw-gitcrawl-232](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gitcrawl-232.md) | [37418715888](https://github.com/openclaw/clawsweeper/actions/runs/37418715888) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165938](https://github.com/openclaw/openclaw/pull/165938) | automation_failed | The narrow test-fixture defect remains source-supported. Keep the issue open; the executor must reproduce resource growth before editing and valida... | Oct 6, 2026, 04:36 UTC | [issue-openclaw-openclaw-165938](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165938.md) | [37412267833](https://github.com/openclaw/clawsweeper/actions/runs/37412267833) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | Keep #881 open. Inspection found no concrete current-main evidence-loss defect supporting a narrow patch. Implementation requires the retained same... | Oct 6, 2026, 04:01 UTC | [issue-openclaw-peekaboo-881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-881.md) | [37411477806](https://github.com/openclaw/clawsweeper/actions/runs/37411477806) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [cluster:issue-openclaw-crabbox-2706](cluster:issue-openclaw-crabbox-2706) | automation_failed | PR creation is blocked until a writable executor establishes the failing regression, implements the fix, and validates the repaired branch. | Oct 6, 2026, 03:05 UTC | [issue-openclaw-crabbox-2706](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2706.md) | [37406988804](https://github.com/openclaw/clawsweeper/actions/runs/37406988804) |
