@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-296",
+  "mode": "autonomous",
+  "run_id": "37500092504",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37500092504",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-296.md",
+  "published_at": "2026-10-06T17:04:17.947Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_pr": null,
+  "summary": "The late-admission rollback race remains on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused fix artifact is prepared. Implementation and validation are blocked by the read-only filesystem and absent approved remote validation host; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#296",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "The existing admission safeguard does not protect the runtime throughout the upgrade transaction. The reported failure remains supported by current source inspection; reproduction was not independently executed."
+    },
+    {
+      "target": "#47",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "Historical implementation context, not a fix for the remaining transaction-lifetime race."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-296",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "The non-mutating artifact is ready for an executor with writable source and approved remote validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-296",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness require a writable task checkout and an approved remote validation worker. The applicator must implement and validate the artifact before opening one PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
