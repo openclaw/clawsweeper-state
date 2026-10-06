@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T06:32:09.115Z",
+  "updated_at": "2026-10-06T06:32:24.626Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111020:5801972830:2026-09-23T19:58:39Z:re_review",
-      "comment_id": "5801972830",
-      "comment_version_key": "5801972830:2026-09-23T19:58:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5801972830",
-      "comment_created_at": "2026-09-23T19:58:39Z",
-      "comment_updated_at": "2026-09-23T19:58:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111020,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T00:41:32.507Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-final-close-no-interrupt",
-        "head_sha": "b0cb38b7e0c6d0f958e63b554e53d01d6fb50253",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111020:5013302283:2026-10-06T00:40:30Z:clawsweeper_auto_repair",
       "comment_id": "5013302283",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "fix/generate-strict-boolean-arguments-20261006",
         "head_sha": "535cf46fb72f87096a127c2109e24eee624e0e66",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-10-06T06:31:19Z:clawsweeper_needs_human",
+      "comment_id": "4921233233",
+      "comment_version_key": "4921233233:2026-10-06T06:31:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-4921233233",
+      "comment_created_at": "2026-07-09T03:12:50Z",
+      "comment_updated_at": "2026-10-06T06:31:19Z",
+      "comment_body_sha256": "b73de06604fc32f02d1f88bee06b71b8b1339dd9d698b9ca844680ea8203ad2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Teams entity identity flows through parsing, batching, and sender visibility into agent context. The new handle... (sha=b07c05db39e82c09ded5161418fe9c784cd2fd99)",
+      "expected_head_sha": "b07c05db39e82c09ded5161418fe9c784cd2fd99",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T06:32:24.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-052-msteams-inbound-normalize",
+        "head_sha": "b07c05db39e82c09ded5161418fe9c784cd2fd99",
         "cluster_id": null,
         "job_path": null
       }
