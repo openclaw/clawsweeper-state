@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T14:19:19.776Z",
+  "updated_at": "2026-10-06T14:20:42.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5967944295:2026-10-03T09:51:07Z:re_review",
-      "comment_id": "5967944295",
-      "comment_version_key": "5967944295:2026-10-03T09:51:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/906#issuecomment-5967944295",
-      "comment_created_at": "2026-10-03T09:51:07Z",
-      "comment_updated_at": "2026-10-03T09:51:07Z",
-      "comment_body_sha256": "39928d8e013e1cd216681fc316b86b770eb5067f27748fe7c0c5ff1ff483dd81",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 906,
-      "author": "miguelbranco80",
-      "author_id": 158162,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T08:23:40.223Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5970841150:2026-10-03T16:00:21Z:re_review",
       "comment_id": "5970841150",
@@ -33515,6 +33488,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166062:6018294823:2026-10-06T14:19:38Z:automerge",
+      "comment_id": "6018294823",
+      "comment_version_key": "6018294823:2026-10-06T14:19:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6018294823",
+      "comment_created_at": "2026-10-06T14:19:38Z",
+      "comment_updated_at": "2026-10-06T14:19:38Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166062,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T14:20:31.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-auth-worker-fixture",
+        "head_sha": "7ee3a0f08cb4d0fa6afc853a2b0cb61ede4ac417",
+        "cluster_id": "automerge-openclaw-openclaw-166062",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
