@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166171",
+  "mode": "autonomous",
+  "run_id": "37487700974",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37487700974",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166171.md",
+  "published_at": "2026-10-06T15:50:46.215Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166171",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166171",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the two stale summary click targets on preflight main. Native browser reproduction is blocked by the read-only host: Corepack fails with EROFS before tests start, and dependencies are absent. No files or GitHub state changed. A narrow fix artifact is ready for the executor, conditional on reproducing the reported failure first.",
+  "actions": [
+    {
+      "target": "#166171",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166171",
+      "candidate_fix": null,
+      "reason": "The repair scope is clear, but implementation must await native reproduction on a writable, prepared executor host."
+    },
+    {
+      "target": "#166006",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166171",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or branch repair is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166171",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166171",
+      "candidate_fix": null,
+      "reason": "Provide the deterministic executor a narrow repair and validation contract; this worker cannot write a branch or complete browser proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
