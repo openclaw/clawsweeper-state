@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 6, 2026, 16:49 UTC
+Last source update: Oct 6, 2026, 17:10 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 6, 2026, 16:49 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 6, 2026, 16:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37495459215) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 6, 2026, 16:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37498576134) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 6, 2026, 17:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37501198042) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 6, 2026, 16:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37499787520) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 6, 2026, 16:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37498503662) |
 
 ### Repositories
@@ -91,18 +91,18 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 6, 2026, 16:32 UTC
+Last source update: Oct 6, 2026, 17:04 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1507 | 100% |
-| Run attempts archived | 4415 | audit |
-| Latest successful clusters | 1189 | 78.9% |
-| Latest failed clusters | 314 | 20.8% |
+| Latest clusters reviewed | 1509 | 100% |
+| Run attempts archived | 4417 | audit |
+| Latest successful clusters | 1189 | 78.8% |
+| Latest failed clusters | 316 | 20.9% |
 | Latest cancelled clusters | 4 | 0.3% |
-| Needs-human clusters | 150 | 10.0% |
+| Needs-human clusters | 150 | 9.9% |
 | Fix actions failed | 35 | 4.1% |
 | Fix actions blocked | 183 | 21.6% |
 | Completed close actions | 0 | 0.0% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1507 clusters: 391 maintainer action, 443 automation snapshot, 613 intervention needed, 60 no pending action, 0 completed.
+- Latest records: 1509 clusters: 391 maintainer action, 443 automation snapshot, 615 intervention needed, 60 no pending action, 0 completed.
 - Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4313](https://github.com/steipete/codexbar/issues/4313) is maintainer_input: Clarify which MiMo membership metric is missing, the plan name and CodexBar version, and a redacted expected-versus-current example. Any....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#166191](https://github.com/openclaw/openclaw/pull/166191) is automation_failed: Local implementation is blocked by host prerequisites. The executor must reproduce the original mobile-child-Stop failure on its latest b....
+- Intervention first: [openclaw/ocm](https://github.com/openclaw/ocm) [cluster:issue-openclaw-ocm-296](cluster:issue-openclaw-ocm-296) is automation_failed: Implementation and PR readiness require a writable task checkout and an approved remote validation worker. The applicator must implement....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 391 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 443 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 613 | automation failure or blocker recorded |
+| Intervention Needed | 615 | automation failure or blocker recorded |
 | No Pending Action | 60 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -138,7 +138,7 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 399 |
-| automation_failed | 320 |
+| automation_failed | 322 |
 | automation_blocked | 293 |
 | reviewed_no_action | 60 |
 | completed | 0 |
@@ -187,6 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/ocm](https://github.com/openclaw/ocm) | [cluster:issue-openclaw-ocm-296](cluster:issue-openclaw-ocm-296) | automation_failed | Implementation and PR readiness require a writable task checkout and an approved remote validation worker. The applicator must implement and valida... | Oct 6, 2026, 17:04 UTC | [issue-openclaw-ocm-296](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-ocm-296.md) | [37500092504](https://github.com/openclaw/clawsweeper/actions/runs/37500092504) |
+| [openclaw/ocm](https://github.com/openclaw/ocm) | [#295](https://github.com/openclaw/ocm/pull/295) | automation_failed | The reported data-loss path remains present. #166 fixed capture rather than this restore cleanup. Keep the issue open and implement its narrow fix. | Oct 6, 2026, 17:03 UTC | [issue-openclaw-ocm-295](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-ocm-295.md) | [37499993925](https://github.com/openclaw/clawsweeper/actions/runs/37499993925) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166191](https://github.com/openclaw/openclaw/pull/166191) | automation_failed | Local implementation is blocked by host prerequisites. The executor must reproduce the original mobile-child-Stop failure on its latest base before... | Oct 6, 2026, 16:32 UTC | [issue-openclaw-openclaw-166191](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166191.md) | [37494296504](https://github.com/openclaw/clawsweeper/actions/runs/37494296504) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166178](https://github.com/openclaw/openclaw/pull/166178) | automation_failed | A bounded plugin-owned addressing repair is still needed; neither related open work nor the closed historical repair fixes current main. | Oct 6, 2026, 16:21 UTC | [issue-openclaw-openclaw-166178](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166178.md) | [37490695335](https://github.com/openclaw/clawsweeper/actions/runs/37490695335) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166170](https://github.com/openclaw/openclaw/pull/166170) | automation_failed | Source confirms an ordinary child-startup bug with a narrow existing-owner repair path. Executable reproduction must precede production edits on a... | Oct 6, 2026, 16:19 UTC | [issue-openclaw-openclaw-166170](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166170.md) | [37488050758](https://github.com/openclaw/clawsweeper/actions/runs/37488050758) |
@@ -200,8 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/gitcrawl](https://github.com/openclaw/gitcrawl) | [#232](https://github.com/openclaw/gitcrawl/pull/232) | automation_failed | The source supports a focused performance repair without a product or security decision. Keep the issue open; executor implementation must first co... | Oct 6, 2026, 13:08 UTC | [issue-openclaw-gitcrawl-232](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gitcrawl-232.md) | [37467861844](https://github.com/openclaw/clawsweeper/actions/runs/37467861844) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166076](https://github.com/openclaw/openclaw/pull/166076) | automation_failed | A narrow host-accounting repair is warranted. The executor must establish the failing boundary regression before editing; this host cannot write fi... | Oct 6, 2026, 11:50 UTC | [issue-openclaw-openclaw-166076](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166076.md) | [37451151576](https://github.com/openclaw/clawsweeper/actions/runs/37451151576) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | Implementation is blocked by unidentified dots usage input. Current main supports standard Codex accounting, but the report provides no affected to... | Oct 6, 2026, 10:47 UTC | [issue-steipete-codexbar-4300](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4300.md) | [37451711238](https://github.com/openclaw/clawsweeper/actions/runs/37451711238) |
-| [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | Implementation blocked on identifying the failing picker variant. Preflight main already supports sliders and reports unconfirmed effort selection.... | Oct 6, 2026, 10:33 UTC | [issue-steipete-oracle-539](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-539.md) | [37450051505](https://github.com/openclaw/clawsweeper/actions/runs/37450051505) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#165961](https://github.com/openclaw/openclaw/pull/165961) | automation_failed | Source supports a focused bug repair with no new provider, configuration, public capability, or policy. Require a failing real-boundary regression... | Oct 6, 2026, 07:40 UTC | [issue-openclaw-openclaw-165961](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-165961.md) | [37424011686](https://github.com/openclaw/clawsweeper/actions/runs/37424011686) |
 
 #### No Pending Action
 
