@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T01:54:51.068Z",
+  "updated_at": "2026-10-06T01:55:15.378Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165205:6000761740:2026-10-05T18:38:32Z:re_review",
-      "comment_id": "6000761740",
-      "comment_version_key": "6000761740:2026-10-05T18:38:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165205#issuecomment-6000761740",
-      "comment_created_at": "2026-10-05T18:38:32Z",
-      "comment_updated_at": "2026-10-05T18:38:32Z",
-      "comment_body_sha256": "5e4c42beca7d1bee5830d2be4c90afdb625e7d7537b9f3a763ee4905c70b90d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165205,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T18:39:44.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sessauthobs",
-        "head_sha": "a21f4275773eefa8ea8af670e678f870f056d08c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/tidepool:3:5975939347:2026-10-05T18:39:00Z:clawsweeper_needs_human",
       "comment_id": "5975939347",
@@ -34133,6 +34086,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165608:5996167355:2026-10-06T01:54:16Z:clawsweeper_needs_human",
+      "comment_id": "5996167355",
+      "comment_version_key": "5996167355:2026-10-06T01:54:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165608#issuecomment-5996167355",
+      "comment_created_at": "2026-10-05T14:09:00Z",
+      "comment_updated_at": "2026-10-06T01:54:16Z",
+      "comment_body_sha256": "72559d2f43aea6d3ee47f11d7797773f99bb29dea4b3d328f9a461c4cf049e6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The historical comparison worsened median ACK latency by 13.52 ms and missed both requested limits; no current-head measurement or explicit maintainer acceptance resolves that perform... (sha=fcc8409858e1b755b19ddb35508513f91f1172d3)",
+      "expected_head_sha": "fcc8409858e1b755b19ddb35508513f91f1172d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T01:55:15.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-chat-send-latency-20260919",
+        "head_sha": "fcc8409858e1b755b19ddb35508513f91f1172d3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
