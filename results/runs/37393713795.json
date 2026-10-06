@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165869",
+  "mode": "autonomous",
+  "run_id": "37393713795",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37393713795",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165869.md",
+  "published_at": "2026-10-06T01:00:43.991Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165869",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165869",
+  "canonical_pr": null,
+  "summary": "The selector omission remains on preflight main 5f0a95cbf1bd5a61cff1fbce851d3ee8fe639138. A narrow fix artifact is prepared. Implementation, native retention reproduction, tests, and fresh review are blocked by this host's read-only filesystem and absent node_modules. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#116594",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve the existing closure."
+    },
+    {
+      "target": "#129662",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The trusted-package exception does not cover this selector omission; do not change that policy."
+    },
+    {
+      "target": "#157485",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct remaining defect; preserve historical closure and cleanup ownership."
+    },
+    {
+      "target": "#157752",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical implementation context; do not reopen or modify its lifecycle scope."
+    },
+    {
+      "target": "#165869",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165869",
+      "candidate_fix": null,
+      "reason": "Source supports a bounded producer-side repair without changing hardlink admission policy. A writable executor must first demonstrate the failing native retention regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165869",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165869",
+      "candidate_fix": null,
+      "reason": "Concrete narrow fix plan for the deterministic executor; this worker cannot produce or validate a repaired branch under the host filesystem restriction."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 4,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 4,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
