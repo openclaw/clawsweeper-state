@@ -1,0 +1,136 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2715",
+  "mode": "autonomous",
+  "run_id": "37518975238",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37518975238",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2715.md",
+  "published_at": "2026-10-06T19:39:53.364Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2715",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2715",
+  "canonical_pr": null,
+  "summary": "The readiness defect remains on the supplied current main SHA. A narrow provider-neutral repair is viable, but implementation and validation are blocked by the read-only filesystem. No code or GitHub state was changed, and no PR branch was validated.",
+  "actions": [
+    {
+      "target": "#2715",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2715",
+      "candidate_fix": null,
+      "reason": "The source confirms both reported failure paths. Establish executable failing regressions and complete the narrow repair in a writable executor."
+    },
+    {
+      "target": "#1360",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct failure; leave closed."
+    },
+    {
+      "target": "#2706",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct explicit-flag ordering defect; leave closed."
+    },
+    {
+      "target": "#2712",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical context does not cover the current readiness defect."
+    },
+    {
+      "target": "#2717",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate image-selection work; retain its existing product-decision lane."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2715",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2715",
+      "candidate_fix": null,
+      "reason": "Concrete narrow repair plan is available for a writable executor; implementation was not performed here."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2715",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2715",
+      "candidate_fix": null,
+      "reason": "A PR cannot be represented as ready until the executor implements and validates the repair, checks for an existing remote branch/PR, and records the required real-boundary results."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (go test -race -timeout=20m ./internal/cli ./internal/providers/aws -run Test(Status|ApplyResolvedLeaseConfig|AWS.*Readiness) -count=1): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2715",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
