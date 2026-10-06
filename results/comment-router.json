@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T11:10:23.478Z",
+  "updated_at": "2026-10-06T11:11:05.428Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150923:5715326784:2026-10-06T05:34:37Z:clawsweeper_needs_human",
-      "comment_id": "5715326784",
-      "comment_version_key": "5715326784:2026-10-06T05:34:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150923#issuecomment-5715326784",
-      "comment_created_at": "2026-09-17T13:40:13Z",
-      "comment_updated_at": "2026-10-06T05:34:37Z",
-      "comment_body_sha256": "391933708236b4dec3d551f6785122a6731eea69c3dcaeb98d10047548307230",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150923,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head has merge conflicts; integration with newer main code has not yet been reviewed or validated. (sha=fef2d095dad65ac909784a29c133ca094aa5af04)",
-      "expected_head_sha": "fef2d095dad65ac909784a29c133ca094aa5af04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T05:35:28.523Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-shared-confirm-dialog-150359",
-        "head_sha": "fef2d095dad65ac909784a29c133ca094aa5af04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150932:5715574444:2026-10-06T05:34:27Z:clawsweeper_needs_human",
       "comment_id": "5715574444",
@@ -33855,6 +33822,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166092:6014958754:2026-10-06T11:10:07Z:automerge",
+      "comment_id": "6014958754",
+      "comment_version_key": "6014958754:2026-10-06T11:10:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166092#issuecomment-6014958754",
+      "comment_created_at": "2026-10-06T11:10:07Z",
+      "comment_updated_at": "2026-10-06T11:10:07Z",
+      "comment_body_sha256": "20300e31134837abe4e007090f2762cbb7902df06c4e77282b4791224a4a9635",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166092,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-06T11:10:56.532Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-package-artifact-timeout",
+        "head_sha": "fad2935496f40cb8f7859efe6e3649e26ba80887",
+        "cluster_id": "automerge-openclaw-openclaw-166092",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166092.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166092.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
