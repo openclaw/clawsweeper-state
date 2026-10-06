@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:04:29.977Z",
+  "updated_at": "2026-10-06T12:04:48.369Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/poltergeist:255:6010345991:2026-10-06T05:59:48Z:re_review",
-      "comment_id": "6010345991",
-      "comment_version_key": "6010345991:2026-10-06T05:59:48Z",
-      "comment_url": "https://github.com/steipete/poltergeist/pull/255#issuecomment-6010345991",
-      "comment_created_at": "2026-10-06T05:59:48Z",
-      "comment_updated_at": "2026-10-06T05:59:48Z",
-      "comment_body_sha256": "5e17784ad47dde1576e38166f1bc8338b44e3e6a2a20b763470c87b7ea9b1e70",
-      "repo": "steipete/poltergeist",
-      "issue_number": 255,
-      "author": "rudycelekli",
-      "author_id": 47457359,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T06:06:07.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/terminate-owned-processes-20261006",
-        "head_sha": "cea6d31de99167edc45543a851f6bc45b4d48b06",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150968:5845856531:2026-09-26T11:23:16Z:re_review",
       "comment_id": "5845856531",
@@ -34065,6 +34018,39 @@
         "kind": "pull_request",
         "branch": "fix/new-session-group-context",
         "head_sha": "f421e4c1093811ed4733327347fa29a41094a25f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166102:6015822742:2026-10-06T12:03:37Z:clawsweeper_needs_human",
+      "comment_id": "6015822742",
+      "comment_version_key": "6015822742:2026-10-06T12:03:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166102#issuecomment-6015822742",
+      "comment_created_at": "2026-10-06T12:03:37Z",
+      "comment_updated_at": "2026-10-06T12:03:37Z",
+      "comment_body_sha256": "e657c32ff2e6b62362d966f8a205faae043cd5b4e7a59e448ee802c13f3789aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166102,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=1a2d1b11cbd61532e17444d69ba1bf9dd40b10b9)",
+      "expected_head_sha": "1a2d1b11cbd61532e17444d69ba1bf9dd40b10b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T12:04:48.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sqlopt-schema",
+        "head_sha": "1a2d1b11cbd61532e17444d69ba1bf9dd40b10b9",
         "cluster_id": null,
         "job_path": null
       }
