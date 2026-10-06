@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-166218
 source: pr_automerge
 requested_by: "RomneyDa"
 requested_by_id: "6581799"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/166218#issuecomment-6022356314"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/166218#issuecomment-6022566262"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/166218#issuecomm
 Maintainer opted #166218 into ClawSweeper automerge.
 
 Requested by: RomneyDa
-Request comment: https://github.com/openclaw/openclaw/pull/166218#issuecomment-6022356314
+Request comment: https://github.com/openclaw/openclaw/pull/166218#issuecomment-6022566262
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/166218
