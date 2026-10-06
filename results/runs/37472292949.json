@@ -1,0 +1,82 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-538",
+  "mode": "autonomous",
+  "run_id": "37472292949",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37472292949",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-538.md",
+  "published_at": "2026-10-06T13:42:34.375Z",
+  "canonical": "https://github.com/steipete/oracle/issues/538",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/538",
+  "canonical_pr": null,
+  "summary": "Verified #538 on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9 and reproduced stale endpoint selection in two source-derived in-memory checks. Prepared a narrow implementation artifact. Code changes and local validation are blocked by read-only filesystem access; no branch or PR was created.",
+  "actions": [
+    {
+      "target": "#538",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#538",
+      "candidate_fix": null,
+      "reason": "The ordinary endpoint-selection bug remains and needs a focused implementation. Filesystem restrictions block implementation here, not the classification."
+    },
+    {
+      "target": "#535",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#538",
+      "candidate_fix": null,
+      "reason": "Distinct launcher integration repair; leave open and outside this implementation."
+    },
+    {
+      "target": "#537",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#538",
+      "candidate_fix": null,
+      "reason": "Distinct approval-handling repair; this fix must not change consent or approval retry behavior."
+    },
+    {
+      "target": "#426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#538",
+      "candidate_fix": null,
+      "reason": "Historical foundation to preserve; it does not resolve #538."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-538",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#538",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; implementation and PR readiness have not been established."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
