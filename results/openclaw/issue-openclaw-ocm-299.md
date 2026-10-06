@@ -2,12 +2,12 @@
 repo: "openclaw/ocm"
 cluster_id: "issue-openclaw-ocm-299"
 mode: "autonomous"
-run_id: "37528639806"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37528639806"
+run_id: "37536883755"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37536883755"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T20:47:50.668Z"
+published_at: "2026-10-06T21:56:09.952Z"
 canonical: "https://github.com/openclaw/ocm/issues/299"
 canonical_issue: "https://github.com/openclaw/ocm/issues/299"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/ocm
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37528639806](https://github.com/openclaw/clawsweeper/actions/runs/37528639806)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37536883755](https://github.com/openclaw/clawsweeper/actions/runs/37536883755)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/ocm/issues/299
 
 ## Summary
 
-The bug remains source-proven on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A narrow revision-based fix is viable. Implementation and validation are blocked by this session's read-only filesystem permissions; no code changes, tests, or GitHub mutations were performed.
+Verified the reported bug in source at preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. Prepared a narrow revision-guard fix artifact. Implementation and validation are blocked by this worker's read-only filesystem and restricted network; no files changed, tests run, or GitHub mutations performed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The bug remains source-proven on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #299 | fix_needed | planned | canonical | A focused existing-behavior repair can preserve later operator policy requests without changing product policy or security boundaries. Keep the issue open; closure and merge are prohibited by this job. |
-| cluster:issue-openclaw-ocm-299 | build_fix_artifact | planned |  | The artifact is ready for an executor with write access and approved remote validation workers. This worker cannot create or validate the implementation branch. |
+| #299 | fix_needed | planned | canonical | The canonical issue remains valid and narrowly repairable using the existing service-policy revision contract. |
+| cluster:issue-openclaw-ocm-299 | build_fix_artifact | planned |  | The artifact is ready for a writable executor; do not publish a PR until the regression and required remote validation have completed. |
 
 ## Needs Human
 
