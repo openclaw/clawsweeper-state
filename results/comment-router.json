@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:02:36.624Z",
+  "updated_at": "2026-10-06T04:03:48.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165756:6003331515:2026-10-05T21:29:57Z:clawsweeper_needs_human",
-      "comment_id": "6003331515",
-      "comment_version_key": "6003331515:2026-10-05T21:29:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165756#issuecomment-6003331515",
-      "comment_created_at": "2026-10-05T21:29:57Z",
-      "comment_updated_at": "2026-10-05T21:29:57Z",
-      "comment_body_sha256": "3e567e1d739877718c2db2fe8232c65b0cca9292bdd44e29c5a05c1aa13165cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165756,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured isolated-Gateway run supports LanceDB status, v2 search/get, and embedding failure recove...; Review finding: [P2] Redact embedding failures before exposing them through health — extensions/memory-lancedb/provider-runtime.ts:277-282 - [P2] Revalidate authority after databa... (sha=7828803bbc1e9d813b626279249c96adc56ab8dd)",
-      "expected_head_sha": "7828803bbc1e9d813b626279249c96adc56ab8dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T21:31:17.351Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-lancedb-admin-health",
-        "head_sha": "7828803bbc1e9d813b626279249c96adc56ab8dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165769:6003335665:2026-10-05T21:30:11Z:clawsweeper_needs_human",
       "comment_id": "6003335665",
@@ -33788,6 +33755,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1581:6009080707:2026-10-06T04:03:00Z:re_review",
+      "comment_id": "6009080707",
+      "comment_version_key": "6009080707:2026-10-06T04:03:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1581#issuecomment-6009080707",
+      "comment_created_at": "2026-10-06T04:03:00Z",
+      "comment_updated_at": "2026-10-06T04:03:00Z",
+      "comment_body_sha256": "ec8cf195de93d50cda489b8931ee59234b8057df767b001203464ea6614bfd4f",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1581,
+      "author": "larroy",
+      "author_id": 928489,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T04:03:47.053Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-attach-paperclip-icon",
+        "head_sha": "18b97d6e45d70da3656cfcb9dac867d11ca9afe2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
