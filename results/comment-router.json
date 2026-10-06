@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T07:02:24.231Z",
+  "updated_at": "2026-10-06T07:02:37.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165715:6000454335:2026-10-06T00:58:22Z:clawsweeper_auto_repair",
-      "comment_id": "6000454335",
-      "comment_version_key": "6000454335:2026-10-06T00:58:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165715#issuecomment-6000454335",
-      "comment_created_at": "2026-10-05T18:19:21Z",
-      "comment_updated_at": "2026-10-06T00:58:22Z",
-      "comment_body_sha256": "b590fe23d3a458850a08af9e8105d588bd234f893625717c0609d276f24ff9c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165715,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=56eb6da4a30f7a103a706476cfcc0103a2ce266b)",
-      "expected_head_sha": "56eb6da4a30f7a103a706476cfcc0103a2ce266b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T01:11:31.066Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-realtime-call-control",
-        "head_sha": "56eb6da4a30f7a103a706476cfcc0103a2ce266b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165802:6003005071:2026-10-06T01:08:05Z:clawsweeper_needs_human",
       "comment_id": "6003005071",
@@ -33623,6 +33590,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1649:6011148388:2026-10-06T07:01:41Z:re_review",
+      "comment_id": "6011148388",
+      "comment_version_key": "6011148388:2026-10-06T07:01:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1649#issuecomment-6011148388",
+      "comment_created_at": "2026-10-06T07:01:41Z",
+      "comment_updated_at": "2026-10-06T07:01:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1649,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T07:02:36.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-session-native-gateway-recovery",
+        "head_sha": "0fec24806addc245d803d3307fe84d6344538801",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
