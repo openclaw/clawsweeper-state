@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T11:49:12.707Z",
+  "updated_at": "2026-10-06T11:49:13.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clownfish:341:5907049075:2026-09-30T08:13:24Z:re_review",
-      "comment_id": "5907049075",
-      "comment_version_key": "5907049075:2026-09-30T08:13:24Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/341#issuecomment-5907049075",
-      "comment_created_at": "2026-09-30T08:13:24Z",
-      "comment_updated_at": "2026-09-30T08:13:24Z",
-      "comment_body_sha256": "3e670f6fadadb487f936d3572422fa11f81a82580c05e010aeb4569a597916dc",
-      "repo": "openclaw/clownfish",
-      "issue_number": 341,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T05:51:57.774Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/round6-confirmed-merge",
-        "head_sha": "5b3e6bc4895bac5d5a4de068d308d2050d006b15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:341:5904561388:2026-10-06T05:50:57Z:clawsweeper_needs_human",
       "comment_id": "5904561388",
@@ -34068,6 +34021,39 @@
         "kind": "pull_request",
         "branch": "fix/graincrawl-f004",
         "head_sha": "6ae4507abd97f2b49dea02228b87734344df83a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1510:6015246390:2026-10-06T11:48:13Z:clawsweeper_needs_human",
+      "comment_id": "6015246390",
+      "comment_version_key": "6015246390:2026-10-06T11:48:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1510#issuecomment-6015246390",
+      "comment_created_at": "2026-10-06T11:26:07Z",
+      "comment_updated_at": "2026-10-06T11:48:13Z",
+      "comment_body_sha256": "14499e89e164eb6711980edb3bf9f95ff2820d5872fc3e17b33d4453d0e2ce05",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1510,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The host and GitHub disagree on the author's trusted-role classification, leaving the ordinary contributor runtime-proof requirement unresolved. (sha=64945931acc75950bc2da37e4cdb13c0eea5ceeb)",
+      "expected_head_sha": "64945931acc75950bc2da37e4cdb13c0eea5ceeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T11:49:13.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-k3d-import",
+        "head_sha": "64945931acc75950bc2da37e4cdb13c0eea5ceeb",
         "cluster_id": null,
         "job_path": null
       }
