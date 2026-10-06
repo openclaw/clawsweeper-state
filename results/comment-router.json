@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T21:03:38.103Z",
+  "updated_at": "2026-10-06T21:03:47.341Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1521:6018357114:2026-10-06T14:22:54Z:clawsweeper_needs_human",
-      "comment_id": "6018357114",
-      "comment_version_key": "6018357114:2026-10-06T14:22:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1521#issuecomment-6018357114",
-      "comment_created_at": "2026-10-06T14:22:54Z",
-      "comment_updated_at": "2026-10-06T14:22:54Z",
-      "comment_body_sha256": "6fcafe6434c2e6d323e024b1c5f51477170e3f35a258708c3638794a0047c6d6",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1521,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Portless HTTP endpoints will connect to port 80 instead of the previous implicit 443; maintainers must accept that correction and the requirement for affected development deployments... (sha=58c74ad456cda94d5ea27f3eb46db91db04f382c)",
-      "expected_head_sha": "58c74ad456cda94d5ea27f3eb46db91db04f382c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T14:24:01.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openshell-http-default-port",
-        "head_sha": "58c74ad456cda94d5ea27f3eb46db91db04f382c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127197:5370639538:2026-10-06T14:03:01Z:clawsweeper_auto_repair",
       "comment_id": "5370639538",
@@ -33945,6 +33912,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146155:6025393995:2026-10-06T21:02:46Z:re_review",
+      "comment_id": "6025393995",
+      "comment_version_key": "6025393995:2026-10-06T21:02:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146155#issuecomment-6025393995",
+      "comment_created_at": "2026-10-06T21:02:46Z",
+      "comment_updated_at": "2026-10-06T21:02:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146155,
+      "author": "NGO-A",
+      "author_id": 199489407,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T21:03:45.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/astra-effort-retained-catalog",
+        "head_sha": "7a70f6172e3272da7e8460819a9d4d58af472ea7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
