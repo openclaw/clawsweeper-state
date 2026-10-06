@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T14:00:12.289Z",
+  "updated_at": "2026-10-06T14:00:18.545Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165532:5993210422:2026-10-06T08:06:32Z:clawsweeper_needs_human",
-      "comment_id": "5993210422",
-      "comment_version_key": "5993210422:2026-10-06T08:06:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165532#issuecomment-5993210422",
-      "comment_created_at": "2026-10-05T11:07:28Z",
-      "comment_updated_at": "2026-10-06T08:06:32Z",
-      "comment_body_sha256": "ec736e873c34aedae393981e44aef4a4b58234b4073c955bded963a797bdebef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165532,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P2\\] Preserve hexadecimal token suffixes during normalization (P2)** - For token_0123456789ABCDEF, this replacement inserts an underscore before A, producing token_0123456789_abcdef. Main lowercases the origin...; Review finding: [P2] [P2] Preserve hexadecimal token suffixes during normalization — packages/net-policy/src/redact-sensitive-url.ts:125 - [medium] Existing hexadecimal token name... (sha=0823e3a9f504e2e6edc84620ad3d33a01582fa4b)",
-      "expected_head_sha": "0823e3a9f504e2e6edc84620ad3d33a01582fa4b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T08:07:30.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/dynamic-audit-20261005",
-        "head_sha": "0823e3a9f504e2e6edc84620ad3d33a01582fa4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165890:6007220393:2026-10-06T08:06:42Z:clawsweeper_needs_human",
       "comment_id": "6007220393",
@@ -33454,6 +33421,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166108:6017880270:2026-10-06T13:58:48Z:re_review",
+      "comment_id": "6017880270",
+      "comment_version_key": "6017880270:2026-10-06T13:58:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166108#issuecomment-6017880270",
+      "comment_created_at": "2026-10-06T13:58:48Z",
+      "comment_updated_at": "2026-10-06T13:58:48Z",
+      "comment_body_sha256": "58e0bf64b0b727b606c64f76c41cc319653e6b43f5ad6a9e1ff5d5b51c68d79a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166108,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T14:00:16.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-166088-state-read-admission",
+        "head_sha": "7dd033f0d4e360cbf2f27aec01e64503320ceace",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
