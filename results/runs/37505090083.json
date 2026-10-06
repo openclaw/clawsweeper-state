@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-4314",
+  "mode": "autonomous",
+  "run_id": "37505090083",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37505090083",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-4314.md",
+  "published_at": "2026-10-06T17:42:52.433Z",
+  "canonical": "https://github.com/steipete/codexbar/issues/4314",
+  "canonical_issue": "https://github.com/steipete/codexbar/issues/4314",
+  "canonical_pr": null,
+  "summary": "Confirmed the Nous balance display gap on preflight main 9699239f0ddc16777c84e5cc6116e526e9a4f71a. A narrow fix is viable. Read-only filesystem permissions and the Linux environment prevent implementation and macOS renderer validation here; no files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#4314",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#4314",
+      "candidate_fix": null,
+      "reason": "The issue remains a focused display bug; existing plugin data and renderer seams support repair without changing fetching, authentication, parsing, settings, or tokens."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-4314",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#4314",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new-fix PR on clawsweeper/issue-steipete-codexbar-4314 after establishing a failing Swift regression."
+    },
+    {
+      "target": "cluster:issue-steipete-codexbar-4314",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#4314",
+      "candidate_fix": null,
+      "reason": "Local implementation and validation require a writable macOS executor. The structured fix plan is ready for that executor; PR creation must follow passing validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

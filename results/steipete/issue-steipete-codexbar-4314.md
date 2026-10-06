@@ -2,16 +2,16 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-4314"
 mode: "autonomous"
-run_id: "37492376979"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37492376979"
+run_id: "37505090083"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37505090083"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T16:06:26.773Z"
+published_at: "2026-10-06T17:42:52.433Z"
 canonical: "https://github.com/steipete/codexbar/issues/4314"
 canonical_issue: "https://github.com/steipete/codexbar/issues/4314"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37492376979](https://github.com/openclaw/clawsweeper/actions/runs/37492376979)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37505090083](https://github.com/openclaw/clawsweeper/actions/runs/37505090083)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/codexbar/issues/4314
 
 ## Summary
 
-Confirmed the display gap on supplied main SHA 412de0700930997fb868a4cb4e3800c4743e13c2. A narrow fix is viable, but implementation and required validation are blocked by the read-only filesystem and Linux environment. No files or GitHub state were changed.
+Confirmed the Nous balance display gap on preflight main 9699239f0ddc16777c84e5cc6116e526e9a4f71a. A narrow fix is viable. Read-only filesystem permissions and the Linux environment prevent implementation and macOS renderer validation here; no files or GitHub items were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Confirmed the display gap on supplied main SHA 412de0700930997fb868a4cb4e3800c47
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #4314 | fix_needed | planned | canonical | The reported credits reach the snapshot but are not projected into the existing Balance token. No authentication, parsing, configuration, or product-policy change is needed. |
-| cluster:issue-steipete-codexbar-4314 | build_fix_artifact | planned |  | Execute the narrow artifact in a writable macOS checkout, reusing clawsweeper/issue-steipete-codexbar-4314. Establish the failing regression before implementation and complete required validation before opening or updating the single PR. |
+| #4314 | fix_needed | planned | canonical | The issue remains a focused display bug; existing plugin data and renderer seams support repair without changing fetching, authentication, parsing, settings, or tokens. |
+| cluster:issue-steipete-codexbar-4314 | build_fix_artifact | planned |  | Prepare one narrow new-fix PR on clawsweeper/issue-steipete-codexbar-4314 after establishing a failing Swift regression. |
+| cluster:issue-steipete-codexbar-4314 | open_fix_pr | blocked |  | Local implementation and validation require a writable macOS executor. The structured fix plan is ready for that executor; PR creation must follow passing validation. |
 
 ## Needs Human
 
