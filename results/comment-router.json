@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:33:27.666Z",
+  "updated_at": "2026-10-06T03:33:36.601Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158051:6002520181:2026-10-05T21:00:24Z:re_review",
-      "comment_id": "6002520181",
-      "comment_version_key": "6002520181:2026-10-05T21:00:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158051#issuecomment-6002520181",
-      "comment_created_at": "2026-10-05T20:40:35Z",
-      "comment_updated_at": "2026-10-05T21:00:24Z",
-      "comment_body_sha256": "a7c4e64011d3b5d728614ba631e03bd94d445b135249a57068c5a59dca1cf92d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158051,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:18:41.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-cloudflare-dashboard-session-20260925",
-        "head_sha": "7c51cbbddaba415e905d58c016612a0972130235",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165785:6002711972:2026-10-05T20:53:01Z:re_review",
       "comment_id": "6002711972",
@@ -33893,6 +33846,39 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/oce-repository-option-text",
         "head_sha": "d5d2caa6d25e3c6b27de7a52e397db4cd3f4a546",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165931:6008776262:2026-10-06T03:32:46Z:clawsweeper_needs_human",
+      "comment_id": "6008776262",
+      "comment_version_key": "6008776262:2026-10-06T03:32:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165931#issuecomment-6008776262",
+      "comment_created_at": "2026-10-06T03:32:46Z",
+      "comment_updated_at": "2026-10-06T03:32:46Z",
+      "comment_body_sha256": "532705e70d25f5be81e8cb026a0fd56522b9fbcf7ca99494a075494d2fde9dbc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=aca85f96b9b524649feeb7036dbe5f1fa4b915d9)",
+      "expected_head_sha": "aca85f96b9b524649feeb7036dbe5f1fa4b915d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T03:33:36.601Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-gateway-scheduler-wake-allocations-20260919",
+        "head_sha": "aca85f96b9b524649feeb7036dbe5f1fa4b915d9",
         "cluster_id": null,
         "job_path": null
       }
