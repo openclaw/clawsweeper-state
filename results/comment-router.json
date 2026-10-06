@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T07:21:18.661Z",
+  "updated_at": "2026-10-06T07:21:37.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165866:6007492882:2026-10-06T01:32:39Z:re_review",
-      "comment_id": "6007492882",
-      "comment_version_key": "6007492882:2026-10-06T01:32:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165866#issuecomment-6007492882",
-      "comment_created_at": "2026-10-06T01:32:39Z",
-      "comment_updated_at": "2026-10-06T01:32:39Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165866,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T01:33:32.284Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-legacy-session-import-165850",
-        "head_sha": "370c64396abbb2699188bcf4d3f7a4b20d70d9bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165859:6006081643:2026-10-06T01:32:34Z:clawsweeper_needs_human",
       "comment_id": "6006081643",
@@ -33547,6 +33500,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-10-06T07:20:27Z:clawsweeper_needs_human",
+      "comment_id": "4921233233",
+      "comment_version_key": "4921233233:2026-10-06T07:20:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-4921233233",
+      "comment_created_at": "2026-07-09T03:12:50Z",
+      "comment_updated_at": "2026-10-06T07:20:27Z",
+      "comment_body_sha256": "8f098d62574144e3407917d377041d87276b850d53fca0a8b7aa52e43c472997",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Teams quote identity passes through parsing, batching, and sender visibility into agent input. The new real-han... (sha=56419fce2f9f345340aa142b0c5852278249ad80)",
+      "expected_head_sha": "56419fce2f9f345340aa142b0c5852278249ad80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T07:21:37.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-052-msteams-inbound-normalize",
+        "head_sha": "56419fce2f9f345340aa142b0c5852278249ad80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
