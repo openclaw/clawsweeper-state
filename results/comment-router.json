@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:03:04.810Z",
+  "updated_at": "2026-10-06T13:04:57.539Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1649:6010682525:2026-10-06T07:24:04Z:clawsweeper_needs_human",
-      "comment_id": "6010682525",
-      "comment_version_key": "6010682525:2026-10-06T07:24:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1649#issuecomment-6010682525",
-      "comment_created_at": "2026-10-06T06:25:56Z",
-      "comment_updated_at": "2026-10-06T07:24:04Z",
-      "comment_body_sha256": "f16a79eff974018d87510618be064b30dae66bdc08566dc17f51867a83aa21b1",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1649,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: recovery tests inject package responses, and the reported Windows attempt stopped before deployment. Demonstrat...; Review finding: [medium] Verify superseded restoration cannot persist stale authority — src/OpenClaw.Connection/NativeGateway/IsolatedGatewayRuntime.cs:137 (sha=0fec24806addc245d803d3307fe84d6344538801)",
-      "expected_head_sha": "0fec24806addc245d803d3307fe84d6344538801",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T07:25:04.047Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stale-session-native-gateway-recovery",
-        "head_sha": "0fec24806addc245d803d3307fe84d6344538801",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/goplaces:63:6011386453:2026-10-06T07:24:06Z:clawsweeper_needs_human",
       "comment_id": "6011386453",
@@ -33270,6 +33237,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165921:6016874703:2026-10-06T13:03:39Z:re_review",
+      "comment_id": "6016874703",
+      "comment_version_key": "6016874703:2026-10-06T13:03:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165921#issuecomment-6016874703",
+      "comment_created_at": "2026-10-06T13:03:39Z",
+      "comment_updated_at": "2026-10-06T13:03:39Z",
+      "comment_body_sha256": "05d9b9a759706dcaafff2a54032060c468f2d64e7794ba61f0353f3956ca41ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165921,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T13:04:55.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w5locked-cutover",
+        "head_sha": "b12cd829c298bcfd1e7ccb681928e2c43e4a6905",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
