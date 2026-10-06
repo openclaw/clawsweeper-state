@@ -1,0 +1,93 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-4300",
+  "mode": "autonomous",
+  "run_id": "37437149422",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37437149422",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-4300.md",
+  "published_at": "2026-10-06T08:40:04.222Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/4300",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/4300",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on identifying one affected dots usage record. Current main estimates costs from local token logs; the hydrated issue cannot distinguish missing source support from discovery, parsing, or pricing defects. No code changes or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#4300",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#4300",
+      "candidate_fix": null,
+      "reason": "Before a safe implementation can be specified, obtain the Codex app version, local-versus-remote execution location, and redacted metadata/model/token counters plus relative storage layout for one affected task. Compare the same account and reporting window before and after refresh/rescan. Omit credentials and conversation contents. Quota consumption alone does not establish API-equivalent cost. The provided artifacts cannot support a concrete fix artifact, so this action is non-mutating pending that input."
+    },
+    {
+      "target": "#3209",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#4300",
+      "candidate_fix": null,
+      "reason": "Keep this separate report open; its Claude input and chart symptoms are outside the focused dots implementation."
+    },
+    {
+      "target": "#2193",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#2208",
+      "reason": "Historical accounting context does not prove dots coverage."
+    },
+    {
+      "target": "#2208",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged contribution as historical evidence; no action is required."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#4300: Supply the Codex app version, local-versus-remote execution location, and one affected task's redacted metadata/model/token counters and relative storage layout, plus a controlled same-account, same-window comparison before and after refresh/rescan. The hydrated issue and review lack these inputs, preventing a safe choice between source support, discovery, parsing, and pricing repairs."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#4300",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
