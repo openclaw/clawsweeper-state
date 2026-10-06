@@ -2,12 +2,12 @@
 repo: "openclaw/gitcrawl"
 cluster_id: "issue-openclaw-gitcrawl-232"
 mode: "autonomous"
-run_id: "37409388688"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37409388688"
+run_id: "37418715888"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37418715888"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T03:35:49.095Z"
+published_at: "2026-10-06T05:32:38.552Z"
 canonical: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_issue: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/gitcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37409388688](https://github.com/openclaw/clawsweeper/actions/runs/37409388688)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37418715888](https://github.com/openclaw/clawsweeper/actions/runs/37418715888)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/gitcrawl/issues/232
 
 ## Summary
 
-Verified the reported query and missing ordering index on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narrow repair remains viable. Implementation and runtime validation are blocked by the read-only filesystem; a fresh reporter-PR check also requires authenticated GitHub reads. No files or GitHub items changed.
+The reported query shape remains on the preflight main SHA. A narrow fix artifact is ready, but implementation, pinned-driver benchmarks, and validation are blocked by read-only filesystem access and an incompatible local Go toolchain. The required live PR/reporter recheck also failed because gh lacks authentication.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified the reported query and missing ordering index on preflight main 3f4276c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #232 | fix_needed | planned | canonical | The ordinary performance bug remains source-verifiable. Keep the issue open and implement through the cluster artifact after refreshing active-work inventory in a writable executor. |
-| #175 | keep_closed | skipped | related | Historical behavior-preservation evidence, not a repair candidate or closure target. |
-| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned | canonical | Hand off the narrow implementation to a writable executor. Do not publish a PR until active-work checks, production-path proof, review, and validation pass. |
+| #232 | fix_needed | planned | canonical | The ordinary performance bug has a narrow implementation path. Keep the issue open while the executor establishes the regression and prepares one validated PR. |
+| #175 | keep_closed | skipped | related | Merged historical context; no close, repair, or merge action applies. |
+| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned |  | Artifact construction is complete; local implementation is blocked by filesystem permissions and toolchain availability. Authenticated inventory recheck is required before creating competing work. |
 
 ## Needs Human
 

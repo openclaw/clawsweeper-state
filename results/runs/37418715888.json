@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/gitcrawl",
+  "cluster_id": "issue-openclaw-gitcrawl-232",
+  "mode": "autonomous",
+  "run_id": "37418715888",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37418715888",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gitcrawl-232.md",
+  "published_at": "2026-10-06T05:32:38.552Z",
+  "canonical": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_issue": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_pr": null,
+  "summary": "The reported query shape remains on the preflight main SHA. A narrow fix artifact is ready, but implementation, pinned-driver benchmarks, and validation are blocked by read-only filesystem access and an incompatible local Go toolchain. The required live PR/reporter recheck also failed because gh lacks authentication.",
+  "actions": [
+    {
+      "target": "#232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "The ordinary performance bug has a narrow implementation path. Keep the issue open while the executor establishes the regression and prepares one validated PR."
+    },
+    {
+      "target": "#175",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Merged historical context; no close, repair, or merge action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Artifact construction is complete; local implementation is blocked by filesystem permissions and toolchain availability. Authenticated inventory recheck is required before creating competing work."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
