@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:19:13.783Z",
+  "updated_at": "2026-10-06T02:19:54.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165720:6001009398:2026-10-05T18:53:58Z:re_review",
-      "comment_id": "6001009398",
-      "comment_version_key": "6001009398:2026-10-05T18:53:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165720#issuecomment-6001009398",
-      "comment_created_at": "2026-10-05T18:53:58Z",
-      "comment_updated_at": "2026-10-05T18:53:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165720,
-      "author": "Sedrak-Hovhannisyan",
-      "author_id": 264150421,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T18:56:06.466Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/message-send-keep-code-newlines",
-        "head_sha": "8a18dc43bdcaf47be3c0fb8b8a2d7183c39aeb0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165188:5985590555:2026-10-05T18:56:06Z:clawsweeper_needs_human",
       "comment_id": "5985590555",
@@ -34062,6 +34015,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-openrouter-relaxed-tool-schema",
         "head_sha": "dfc5422b0904750c08f756eb0c15afd6ff647aae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164265:5968533470:2026-10-06T02:18:51Z:clawsweeper_needs_human",
+      "comment_id": "5968533470",
+      "comment_version_key": "5968533470:2026-10-06T02:18:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164265#issuecomment-5968533470",
+      "comment_created_at": "2026-10-03T11:03:04Z",
+      "comment_updated_at": "2026-10-06T02:18:51Z",
+      "comment_body_sha256": "0f59e9b3a9217d6a610ed7887480768bf4b0e5f01cd2949169f3b14eb092ee3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164265,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve the completed real-filesystem guard cases and earlier scheduling/completion evidence, then es...; Review finding: [medium] Establish transport rejection after authority revocation — src/auto-reply/reply/route-reply.ts:367 (sha=8f5fb5a8e55392625582900a45795322a04eb5f4)",
+      "expected_head_sha": "8f5fb5a8e55392625582900a45795322a04eb5f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:19:54.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/heartbeat-automations",
+        "head_sha": "8f5fb5a8e55392625582900a45795322a04eb5f4",
         "cluster_id": null,
         "job_path": null
       }
