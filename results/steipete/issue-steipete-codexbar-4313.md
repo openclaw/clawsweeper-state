@@ -2,14 +2,14 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-4313"
 mode: "autonomous"
-run_id: "37468313459"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37468313459"
+run_id: "37475091068"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37475091068"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-06T13:10:50.508Z"
-canonical: "https://github.com/steipete/codexbar/issues/4313"
-canonical_issue: "https://github.com/steipete/codexbar/issues/4313"
+published_at: "2026-10-06T14:02:34.729Z"
+canonical: "https://github.com/steipete/CodexBar/issues/4313"
+canonical_issue: "https://github.com/steipete/CodexBar/issues/4313"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 1
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37468313459](https://github.com/openclaw/clawsweeper/actions/runs/37468313459)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37475091068](https://github.com/openclaw/clawsweeper/actions/runs/37475091068)
 
 Workflow conclusion: success
 
 Worker result: needs_human
 
-Canonical: https://github.com/steipete/codexbar/issues/4313
+Canonical: https://github.com/steipete/CodexBar/issues/4313
 
 ## Summary
 
-MiMo subscription tracking already exists on the supplied current main. #4313 does not identify an additional metric or failing behavior, so a focused implementation cannot be defined. No changes or PR proposed.
+MiMo subscription tracking already exists on the supplied current main. Issue #4313 does not identify the additional metric or unsupported membership behavior requested. No code changes or PR are warranted until that scope is clarified.
 
 ## Impact
 
@@ -66,8 +66,8 @@ MiMo subscription tracking already exists on the supplied current main. #4313 do
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #4313 | needs_human | planned | needs_human | Keep the issue open. The operator instructions require stopping without a PR when the request is underspecified; choosing an additional membership metric would invent product scope. |
+| #4313 | needs_human | planned | needs_human | The requested extension remains undefined after inspecting existing implementation and hydrated comments. Choosing a new membership metric would invent product scope. Keep the issue open pending clarification. |
 
 ## Needs Human
 
-- #4313: Obtain the missing subscription metric, membership plan name, CodexBar version, and a redacted expected-versus-current example. If a new response field is required, obtain its authoritative contract or a redacted sample before implementation.
+- #4313: Identify the missing subscription metric or unsupported membership plan, the affected CodexBar version, and a redacted expected-versus-current example. Any new API-backed metric also needs a documented response contract or representative redacted payload.
