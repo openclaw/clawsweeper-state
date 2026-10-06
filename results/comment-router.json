@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:05:09.374Z",
+  "updated_at": "2026-10-06T20:06:13.871Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165991:6017061360:2026-10-06T13:14:14Z:re_review",
-      "comment_id": "6017061360",
-      "comment_version_key": "6017061360:2026-10-06T13:14:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165991#issuecomment-6017061360",
-      "comment_created_at": "2026-10-06T13:14:14Z",
-      "comment_updated_at": "2026-10-06T13:14:14Z",
-      "comment_body_sha256": "b6b634b7b65ab210550e9cc049f83d4e613d8721aa64a8d1c41c5431b3aae99a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165991,
-      "author": "snotty",
-      "author_id": 5853861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T13:15:21.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/status-published-context-window",
-        "head_sha": "c006ac66e2d8330a909e127025170aec8463d7dd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166067:6014107845:2026-10-06T13:14:47Z:clawsweeper_needs_human",
       "comment_id": "6014107845",
@@ -34025,6 +33978,39 @@
         "kind": "pull_request",
         "branch": "perf/chat-cumulative-snapshot",
         "head_sha": "2631c17633d8f8f4be4345ef468e5d324a0f8409",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabhelm:28:5921890419:2026-10-06T19:48:20Z:clawsweeper_needs_human",
+      "comment_id": "5921890419",
+      "comment_version_key": "5921890419:2026-10-06T19:48:20Z",
+      "comment_url": "https://github.com/openclaw/crabhelm/pull/28#issuecomment-5921890419",
+      "comment_created_at": "2026-09-30T23:59:33Z",
+      "comment_updated_at": "2026-10-06T19:48:20Z",
+      "comment_body_sha256": "91632e041efc1ce7c5d9ee96e934b9a4ed04b25ffbb41cb8aa9eb9a46bf914bc",
+      "repo": "openclaw/crabhelm",
+      "issue_number": 28,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A rejected replacement ticket now interrupts active work and terminates the bridge instead of retaining reconnect attempts; existing installations need an accepted, verified credentia... (sha=dfd827d0d5ef16d56392e9958f0bba4c37cd613c)",
+      "expected_head_sha": "dfd827d0d5ef16d56392e9958f0bba4c37cd613c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T20:06:13.871Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-token-refresh",
+        "head_sha": "dfd827d0d5ef16d56392e9958f0bba4c37cd613c",
         "cluster_id": null,
         "job_path": null
       }
