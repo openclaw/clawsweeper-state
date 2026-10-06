@@ -384,7 +384,7 @@ function privateUrl(value) {
         privateHost(parsed.hostname),
     );
   } catch {
-    return false;
+    return true;
   }
 }
 
