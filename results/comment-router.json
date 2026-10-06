@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T00:55:06.921Z",
+  "updated_at": "2026-10-06T00:55:48.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148239:5847350285:2026-09-26T15:10:24Z:re_review",
-      "comment_id": "5847350285",
-      "comment_version_key": "5847350285:2026-09-26T15:10:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148239#issuecomment-5847350285",
-      "comment_created_at": "2026-09-26T15:10:24Z",
-      "comment_updated_at": "2026-09-26T15:10:24Z",
-      "comment_body_sha256": "43d9cef2137695d4ff0fba7f67ba0adaa8315de66d58a9862904c462c4545e59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148239,
-      "author": "colbertlee",
-      "author_id": 60634777,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T17:34:39.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/migrate-server-fetch-to-uvx",
-        "head_sha": "a45c97c9ff42509d6f28db0f94e164d30fd7628a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148224:5663648732:2026-10-05T17:33:40Z:clawsweeper_needs_human",
       "comment_id": "5663648732",
@@ -33998,6 +33951,39 @@
         "kind": "pull_request",
         "branch": "fix/149253-linux-watchdog-cli-churn",
         "head_sha": "613daebf549689344f8c03417eee99303f5e1ce7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138562:5545826920:2026-10-06T00:54:51Z:clawsweeper_needs_human",
+      "comment_id": "5545826920",
+      "comment_version_key": "5545826920:2026-10-06T00:54:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138562#issuecomment-5545826920",
+      "comment_created_at": "2026-09-04T20:02:24Z",
+      "comment_updated_at": "2026-10-06T00:54:51Z",
+      "comment_body_sha256": "d0bc4d824e21f9c55edfd4f8fa06f40f6cd2b766c87686d3a5fcf29bf34abe54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138562,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If retained as a landing candidate, the branch needs conflict resolution and renewed validation against the current sidebar architecture. (sha=631c2e475033a7f14e102fa94d8f69127a3ced60)",
+      "expected_head_sha": "631c2e475033a7f14e102fa94d8f69127a3ced60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T00:55:48.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigate-misleading-sidebar-run-failures",
+        "head_sha": "631c2e475033a7f14e102fa94d8f69127a3ced60",
         "cluster_id": null,
         "job_path": null
       }
