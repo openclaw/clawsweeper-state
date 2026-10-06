@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2715"
 mode: "autonomous"
-run_id: "37500398475"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37500398475"
+run_id: "37507199419"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37507199419"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-06T17:14:17.470Z"
+published_at: "2026-10-06T18:08:36.484Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2715"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2715"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37500398475](https://github.com/openclaw/clawsweeper/actions/runs/37500398475)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37507199419](https://github.com/openclaw/clawsweeper/actions/runs/37507199419)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2715
 
 ## Summary
 
-Verified the readiness defect in the checkout matching preflight main f9a122dd96e850207ed70a555c281fbc8475fa77. Prepared a narrow provider-neutral fix artifact. Implementation and validation are blocked by the read-only sandbox; no code or GitHub mutations occurred, and no regression or live AWS tests were run.
+Verified both readiness defects on preflight main f9a122dd96e850207ed70a555c281fbc8475fa77. A narrow fix remains viable. Implementation is blocked by the read-only filesystem; no code, Go regression tests, AWS lease validation, or GitHub mutations were performed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Verified the readiness defect in the checkout matching preflight main f9a122dd96
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (go test -race -timeout=20m ./internal/cli -run TestApplyResolvedLeaseConfig|TestStatus|TestInspect|TestRunCommandRejectsExistingLeaseTarget): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
+| execute_fix | blocked |  |  | validation command failed (go test -race -timeout=20m ./internal/cli -run Test(ApplyResolvedLeaseConfig|Status|InspectRecordedWindowsReadiness|RunResolvedWindowsReadiness|RunCommandRejectsExistingLeaseTarget|ExternalDesktopChildEnvDenylist|ApplyTargetChildEnvironment|HeartbeatAndStatusKeepResolvedClaimSnapshot)): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set |
 | issue_implementation_status_comment | updated | #2715 |  |  |
 
 ## Apply Actions
@@ -67,12 +67,12 @@ Verified the readiness defect in the checkout matching preflight main f9a122dd96
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2715 | fix_needed | blocked | canonical | The bug remains viable and narrow. Implementation requires a writable executor with the declared Go toolchain and access to owned AWS validation leases. |
-| #1360 | keep_closed | skipped | related | Historical context only; do not reopen or modify. |
-| #2706 | keep_closed | skipped | related | Distinct failure already closed; preserve that outcome. |
-| #2712 | keep_closed | skipped | related | Merged historical context does not provide a fix for this cluster. |
-| #2717 | keep_related | planned | related | Leave open for its existing product review; exclude image selection from this implementation. |
-| cluster:issue-openclaw-crabbox-2715 | build_fix_artifact | planned | canonical | A concrete fix plan can proceed independently of this worker's implementation restrictions. |
+| #2715 | fix_needed | blocked | canonical | The canonical bug is source-verified and repairable through existing hooks. Implementation and validation require a writable executor with the declared Go toolchain and an owned AWS validation lease. |
+| #1360 | keep_closed | skipped | related | Historical context with a distinct failure; no reopening or closeout work. |
+| #2706 | keep_closed | skipped | related | Distinct configuration precedence failure; retain as historical evidence. |
+| #2712 | keep_closed | skipped | related | Merged adjacent repair does not cover the verified readiness defect. |
+| #2717 | keep_related | planned | related | Separate image-selection work; this readiness repair requires no new configuration or image-default decision. |
+| cluster:issue-openclaw-crabbox-2715 | build_fix_artifact | planned | canonical | Concrete executor artifact is ready; local implementation remains blocked by the read-only environment. |
 
 ## Needs Human
 
