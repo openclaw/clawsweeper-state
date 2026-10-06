@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T08:19:13.297Z",
+  "updated_at": "2026-10-06T08:20:01.558Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138692:5548122351:2026-10-06T02:42:25Z:clawsweeper_needs_human",
-      "comment_id": "5548122351",
-      "comment_version_key": "5548122351:2026-10-06T02:42:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138692#issuecomment-5548122351",
-      "comment_created_at": "2026-09-05T00:39:13Z",
-      "comment_updated_at": "2026-10-06T02:42:25Z",
-      "comment_body_sha256": "3bf824acd87afed6dd8a96ed0978877b4f3b3caa727afd8bb211c127ca71c33b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138692,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicting branch adds 219 production lines against Discord's former local cleanup queue; conflict resolution must integrate the handoff with main's shared retirement owner and r... (sha=320f4181125c00dfd37aeb6e2bfc6271890375ad)",
-      "expected_head_sha": "320f4181125c00dfd37aeb6e2bfc6271890375ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T02:43:20.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-138630-draft-delete-custody",
-        "head_sha": "320f4181125c00dfd37aeb6e2bfc6271890375ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:50:5991976247:2026-10-06T02:42:55Z:clawsweeper_needs_human",
       "comment_id": "5991976247",
@@ -33487,6 +33454,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165981:6012272270:2026-10-06T08:18:58Z:re_review",
+      "comment_id": "6012272270",
+      "comment_version_key": "6012272270:2026-10-06T08:18:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165981#issuecomment-6012272270",
+      "comment_created_at": "2026-10-06T08:18:58Z",
+      "comment_updated_at": "2026-10-06T08:18:58Z",
+      "comment_body_sha256": "f7d6a36480f111bb6a82ac18a9563b323f665e6a219cff0427ce2970273e53df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165981,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T08:20:00.282Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/161739-apfs-captures",
+        "head_sha": "b3880e0ec0affe380a45044efc180bd56881ae40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
