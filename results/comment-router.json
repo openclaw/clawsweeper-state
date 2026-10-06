@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T05:15:35.121Z",
+  "updated_at": "2026-10-06T05:16:10.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148956:5677828433:2026-10-05T22:47:16Z:clawsweeper_needs_human",
-      "comment_id": "5677828433",
-      "comment_version_key": "5677828433:2026-10-05T22:47:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148956#issuecomment-5677828433",
-      "comment_created_at": "2026-09-15T09:23:25Z",
-      "comment_updated_at": "2026-10-05T22:47:16Z",
-      "comment_body_sha256": "d77ce0cf27494755bc9273d692dc3f1eb7c449d1417743a270949126fc75a419",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148956,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported conflicting branch has not been validated against current main's extracted history-query owner and newer transcript read contracts. (sha=b85dcaaaf3420616ab6b1456f8de30463092c8b0)",
-      "expected_head_sha": "b85dcaaaf3420616ab6b1456f8de30463092c8b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T22:48:49.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-history-tail-count-7006",
-        "head_sha": "b85dcaaaf3420616ab6b1456f8de30463092c8b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3912:5998449736:2026-10-05T22:47:58Z:clawsweeper_needs_human",
       "comment_id": "5998449736",
@@ -33594,6 +33561,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165680:6009822218:2026-10-06T05:15:02Z:re_review",
+      "comment_id": "6009822218",
+      "comment_version_key": "6009822218:2026-10-06T05:15:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165680#issuecomment-6009822218",
+      "comment_created_at": "2026-10-06T05:15:02Z",
+      "comment_updated_at": "2026-10-06T05:15:02Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165680,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T05:16:08.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/coldadmit",
+        "head_sha": "78515ed21eb4eb781ce8b959ec3b177a86b107b8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
