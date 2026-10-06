@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37411477806"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37411477806"
+run_id: "37547739153"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37547739153"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-06T04:01:54.376Z"
+published_at: "2026-10-06T23:44:02.330Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37411477806](https://github.com/openclaw/clawsweeper/actions/runs/37411477806)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37547739153](https://github.com/openclaw/clawsweeper/actions/runs/37547739153)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Keep #881 open. Inspection found no concrete current-main evidence-loss defect supporting a narrow patch. Implementation requires the retained same-session diagnostics requested by the maintainer. No code or GitHub mutations were made.
+Implementation is blocked on retained same-session diagnostics needed to identify the evidence-loss stage. Current-main inspection does not establish a narrow defect or prove the reported failure fixed. Keep #881 open; no implementation PR is justified yet.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Keep #881 open. Inspection found no concrete current-main evidence-loss defect s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The 4.2.0 report remains unresolved, but current-main reproduction and the failing selected-host receipt are unavailable. No narrow corrective edit is established without guessing which evidence is missing or weakening attribution. Resume after retained same-session diagnostics identify the failing path; preserve the maintainer's instruction against further focus/input attempts. |
+| #881 | keep_canonical | planned | canonical | The failing installed-host evidence cannot be distinguished from a current-source defect without the diagnostics already requested by the maintainer. Resume implementation after obtaining retained version, host/protocol, PID/process generation, window ID/bounds, remote/local capture receipts, and dispatch/retry metadata. Preserve exact-window validation and explicit host selection; do not gather evidence through new focus/input attempts. |
 
 ## Needs Human
 
