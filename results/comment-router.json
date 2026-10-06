@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T17:33:59.283Z",
+  "updated_at": "2026-10-06T17:35:52.038Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166062:6013947237:2026-10-06T10:56:14Z:clawsweeper_needs_human",
-      "comment_id": "6013947237",
-      "comment_version_key": "6013947237:2026-10-06T10:56:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6013947237",
-      "comment_created_at": "2026-10-06T10:04:45Z",
-      "comment_updated_at": "2026-10-06T10:56:14Z",
-      "comment_body_sha256": "508b04745965254ffc086a33b30b093c73d6da9093ce9cbcf03ba12d28afc5b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Windows fresh-install and existing-state upgrade behavior remains unverified: the changed alias check could still reject legitimate database paths after SQLite creation and lea... (sha=115eebff761c0efa49bee3dc1c19336f59dfea61)",
-      "expected_head_sha": "115eebff761c0efa49bee3dc1c19336f59dfea61",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T10:57:23.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/github-copilot-auth-worker-fixture",
-        "head_sha": "115eebff761c0efa49bee3dc1c19336f59dfea61",
-        "cluster_id": "automerge-openclaw-openclaw-166062",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166074:6014767589:2026-10-06T10:57:31Z:re_review",
       "comment_id": "6014767589",
@@ -33865,6 +33818,39 @@
         "kind": "pull_request",
         "branch": "fix/graincrawl-f004",
         "head_sha": "6ae4507abd97f2b49dea02228b87734344df83a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3862:5915139830:2026-10-06T17:34:44Z:clawsweeper_auto_repair",
+      "comment_id": "5915139830",
+      "comment_version_key": "5915139830:2026-10-06T17:34:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3862#issuecomment-5915139830",
+      "comment_created_at": "2026-09-30T16:12:37Z",
+      "comment_updated_at": "2026-10-06T17:34:44Z",
+      "comment_body_sha256": "e94b5c381175138cf5411c60a034c5a2356825076eec92448e917f7daa9a987c",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6a0baa01208a1e51680d7649e91d03ee523911a7)",
+      "expected_head_sha": "6a0baa01208a1e51680d7649e91d03ee523911a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T17:35:52.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/vitest-5.0.2",
+        "head_sha": "6a0baa01208a1e51680d7649e91d03ee523911a7",
         "cluster_id": null,
         "job_path": null
       }
