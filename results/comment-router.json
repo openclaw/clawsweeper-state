@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T18:58:29.822Z",
+  "updated_at": "2026-10-06T18:58:49.556Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4295:6016101916:2026-10-06T12:20:48Z:re_review",
-      "comment_id": "6016101916",
-      "comment_version_key": "6016101916:2026-10-06T12:20:48Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4295#issuecomment-6016101916",
-      "comment_created_at": "2026-10-06T12:20:48Z",
-      "comment_updated_at": "2026-10-06T12:20:48Z",
-      "comment_body_sha256": "bd3dacca8ff0cfc1ca0c6e36707aafa79e21ed05b8e76fffa8209a19f54eec9a",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4295,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T12:26:37.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/daily-request-lower-bound",
-        "head_sha": "3763a665c3c3ba20713b393f05188ee119b8b3d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4295:6007795531:2026-10-06T12:25:40Z:clawsweeper_needs_human",
       "comment_id": "6007795531",
@@ -33928,6 +33881,39 @@
         "head_sha": "bb2fa83520c8add608a839b51193b871c7dcf545",
         "cluster_id": "automerge-openclaw-openclaw-166217",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166217.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152611:5739947046:2026-10-06T18:57:49Z:autoclose",
+      "comment_id": "5739947046",
+      "comment_version_key": "5739947046:2026-10-06T18:57:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152611#issuecomment-5739947046",
+      "comment_created_at": "2026-09-19T06:31:46Z",
+      "comment_updated_at": "2026-10-06T18:57:49Z",
+      "comment_body_sha256": "e27baa4973124221ca2a393cb7df7db7ebe3a458750d6919c22f79794cc72500",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152611,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "autoclose structured ClawSweeper close marker: close-required (sha=755eb9e940ff650d879e63a343cd4f39fb11f564)",
+      "intent": "autoclose",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper close marker: close-required (sha=755eb9e940ff650d879e63a343cd4f39fb11f564)",
+      "expected_head_sha": "755eb9e940ff650d879e63a343cd4f39fb11f564",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T18:58:49.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-discord-unbound-reset-guards",
+        "head_sha": "755eb9e940ff650d879e63a343cd4f39fb11f564",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
