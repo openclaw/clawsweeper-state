@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:55:19.000Z",
+  "updated_at": "2026-10-06T02:55:30.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165716:6000499011:2026-10-05T19:32:10Z:clawsweeper_needs_human",
-      "comment_id": "6000499011",
-      "comment_version_key": "6000499011:2026-10-05T19:32:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165716#issuecomment-6000499011",
-      "comment_created_at": "2026-10-05T18:22:13Z",
-      "comment_updated_at": "2026-10-05T19:32:10Z",
-      "comment_body_sha256": "a440990f5cf8cf623b561cb3a4db97a22eedf99dfbc916b572d5bf386235e2d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165716,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: captured Twilio observations support realtime brief use, voicemail completion, reports, and an allowed...; Review finding: [P1] Apply the receptionist brief before admitting classic callbacks — extensions/voice-call/src/manager/events.ts:257-259 - [P1] Carry steering authority into the... (sha=20defbc679283f8c97e0e39b744d94d5187e63bf)",
-      "expected_head_sha": "20defbc679283f8c97e0e39b744d94d5187e63bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T19:34:15.066Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/voice-call-errand-features",
-        "head_sha": "20defbc679283f8c97e0e39b744d94d5187e63bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165334:6001622207:2026-10-05T19:34:02Z:stop",
       "comment_id": "6001622207",
@@ -33983,6 +33950,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165370:6008376832:2026-10-06T02:54:38Z:re_review",
+      "comment_id": "6008376832",
+      "comment_version_key": "6008376832:2026-10-06T02:54:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165370#issuecomment-6008376832",
+      "comment_created_at": "2026-10-06T02:54:38Z",
+      "comment_updated_at": "2026-10-06T02:54:38Z",
+      "comment_body_sha256": "948892d2e844692e0cd7321a75533a70cd821dca481d7cb4ba5fedac27ed1b03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165370,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T02:55:28.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sessauthtool",
+        "head_sha": "4df384ebcca43a31d030361fdd8879a74025fd8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
