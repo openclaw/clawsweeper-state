@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T22:45:55.822Z",
+  "updated_at": "2026-10-06T22:46:01.166Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165844:6021001272:2026-10-06T16:44:03Z:re_review",
-      "comment_id": "6021001272",
-      "comment_version_key": "6021001272:2026-10-06T16:44:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165844#issuecomment-6021001272",
-      "comment_created_at": "2026-10-06T16:44:03Z",
-      "comment_updated_at": "2026-10-06T16:44:03Z",
-      "comment_body_sha256": "30b9b513885dc1fdf53634d1649bc9d23579884abb767300b669b3d68e97d3fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165844,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T16:45:38.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-phase-safe-watchdog-fallback",
-        "head_sha": "61166eba37fb6fc9e7ec691fb2079e547d3aa666",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:92:5975937254:2026-10-06T16:44:31Z:clawsweeper_needs_human",
       "comment_id": "5975937254",
@@ -33599,6 +33552,39 @@
         "kind": "pull_request",
         "branch": "fix/copilot-usage-cancel",
         "head_sha": "6dc13b7fc000dbbcd17791c1a7d406ccf5c91209",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154033:5752465486:2026-10-06T22:44:47Z:clawsweeper_needs_human",
+      "comment_id": "5752465486",
+      "comment_version_key": "5752465486:2026-10-06T22:44:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154033#issuecomment-5752465486",
+      "comment_created_at": "2026-09-20T20:30:46Z",
+      "comment_updated_at": "2026-10-06T22:44:47Z",
+      "comment_body_sha256": "5f153b9deb009c17a27b34511618c20c7fdc3ad19a45109ea12df82649602746",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: synthetic raw-notification tests exercise the media projector, but no real Codex run shows native screenshot de...; Review finding: [P1] [P1] Exclude host dynamic-tool echoes from native attachment projection — extensions/codex/src/app-server/event-projector-media.ts:141-142 - [P2] [P2] Retain... (sha=545552b20a92f06f5d3e90bf14a1cd043def551b)",
+      "expected_head_sha": "545552b20a92f06f5d3e90bf14a1cd043def551b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T22:46:01.166Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-tool-output-image-153949",
+        "head_sha": "545552b20a92f06f5d3e90bf14a1cd043def551b",
         "cluster_id": null,
         "job_path": null
       }
