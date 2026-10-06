@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T10:31:35.612Z",
+  "updated_at": "2026-10-06T10:31:47.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150562:5722268551:2026-09-17T22:51:08Z:re_review",
-      "comment_id": "5722268551",
-      "comment_version_key": "5722268551:2026-09-17T22:51:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5722268551",
-      "comment_created_at": "2026-09-17T22:51:08Z",
-      "comment_updated_at": "2026-09-17T22:51:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150562,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T04:55:36.471Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150562:5722346204:2026-09-17T23:00:21Z:re_review",
       "comment_id": "5722346204",
@@ -33646,6 +33619,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166062:6013947237:2026-10-06T10:30:41Z:clawsweeper_needs_human",
+      "comment_id": "6013947237",
+      "comment_version_key": "6013947237:2026-10-06T10:30:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6013947237",
+      "comment_created_at": "2026-10-06T10:04:45Z",
+      "comment_updated_at": "2026-10-06T10:30:41Z",
+      "comment_body_sha256": "6e2cdcf70e2c3965c60347a9163fb17f00cd4c45641fb85b1f56f16d38a5df57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166062,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Windows short/long alias recovery after SQLite creation remains unverified; the reported packaged fresh-install and upgrade failures could persist despite the simulated alias r... (sha=ea175cefdd103f75ba84a286479c0103fd79813b)",
+      "expected_head_sha": "ea175cefdd103f75ba84a286479c0103fd79813b",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T10:31:47.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-auth-worker-fixture",
+        "head_sha": "ea175cefdd103f75ba84a286479c0103fd79813b",
+        "cluster_id": "automerge-openclaw-openclaw-166062",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
