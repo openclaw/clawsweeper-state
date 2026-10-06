@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T10:01:24.056Z",
+  "updated_at": "2026-10-06T10:01:36.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150416:5724031250:2026-09-18T02:10:01Z:re_review",
-      "comment_id": "5724031250",
-      "comment_version_key": "5724031250:2026-09-18T02:10:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150416#issuecomment-5724031250",
-      "comment_created_at": "2026-09-18T02:10:01Z",
-      "comment_updated_at": "2026-09-18T02:10:01Z",
-      "comment_body_sha256": "47ef0d28a45a1fcb5da51ce1e14ad501869a31101dbc1a86d44ecf611191a032",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150416,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — real runtime trace added: the regression drives the real handler, real sdk debouncer, real ingress lifecycle, and real timers. before (parent d49937902): 1 merged dispatch; after: 2 dispatches whose routed session keys (via the real resolvemsteamsroutesessionkey) are distinct per thread root (:thread:root-a / :thread:root-b). channel boundary note: live teams/graph is unavailable in this sandbox, so this is the isolated mock-gateway harness covering the changed path (valid boundary proof); live-channel proof remains a stated gap",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T04:36:47.646Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163553:5953627567:2026-10-06T04:36:35Z:clawsweeper_needs_human",
       "comment_id": "5953627567",
@@ -33329,6 +33302,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166050:6013879854:2026-10-06T10:00:34Z:re_review",
+      "comment_id": "6013879854",
+      "comment_version_key": "6013879854:2026-10-06T10:00:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166050#issuecomment-6013879854",
+      "comment_created_at": "2026-10-06T10:00:34Z",
+      "comment_updated_at": "2026-10-06T10:00:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166050,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T10:01:34.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6approval",
+        "head_sha": "42ba88eb4e0b85e91fdfe9e42b9a9b847fd1008d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
