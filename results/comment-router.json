@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:21:28.509Z",
+  "updated_at": "2026-10-06T13:21:34.359Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:838:6010956218:2026-10-06T07:34:26Z:clawsweeper_needs_human",
-      "comment_id": "6010956218",
-      "comment_version_key": "6010956218:2026-10-06T07:34:26Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/838#issuecomment-6010956218",
-      "comment_created_at": "2026-10-06T06:47:25Z",
-      "comment_updated_at": "2026-10-06T07:34:26Z",
-      "comment_body_sha256": "56f1bfa8c6773eff620383a5e9df69fd11488e0af39474e3d23c01467e304b08",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 838,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Resolve the directory collision contract** - Plain renameat can replace a concurrently created empty destination despite the default no-clobber request. This documented behavior require...; Review finding: [medium] Resolve the directory collision contract — native/src/move_noreplace.rs:64 (sha=8ef4593c06d420d5e96c7e385403c232aa4dd48a)",
-      "expected_head_sha": "8ef4593c06d420d5e96c7e385403c232aa4dd48a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T07:35:12.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/noreplace-move-fallback",
-        "head_sha": "8ef4593c06d420d5e96c7e385403c232aa4dd48a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1493:6011610100:2026-10-06T07:34:28Z:clawsweeper_needs_human",
       "comment_id": "6011610100",
@@ -33288,6 +33255,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162684:5931527660:2026-10-06T13:20:34Z:clawsweeper_needs_human",
+      "comment_id": "5931527660",
+      "comment_version_key": "5931527660:2026-10-06T13:20:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162684#issuecomment-5931527660",
+      "comment_created_at": "2026-10-01T12:31:51Z",
+      "comment_updated_at": "2026-10-06T13:20:34Z",
+      "comment_body_sha256": "cd868e2c1f9040d95a187cc7a9e41ac665da11067a90350f23e685402dd77d35",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162684,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Repository-required Telegram Test Server userbot/client verification remains unrecorded; production API timelines do not establish continuous client-visible typing or queued-item canc... (sha=242a714b8d8693906f00ccdafb365da3d060ef38)",
+      "expected_head_sha": "242a714b8d8693906f00ccdafb365da3d060ef38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T13:21:34.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/queued-followup-typing",
+        "head_sha": "242a714b8d8693906f00ccdafb365da3d060ef38",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
