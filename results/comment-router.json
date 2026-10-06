@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T07:42:47.286Z",
+  "updated_at": "2026-10-06T07:43:07.359Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1391:5994613346:2026-10-06T01:58:30Z:clawsweeper_needs_human",
-      "comment_id": "5994613346",
-      "comment_version_key": "5994613346:2026-10-06T01:58:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1391#issuecomment-5994613346",
-      "comment_created_at": "2026-10-05T12:38:55Z",
-      "comment_updated_at": "2026-10-06T01:58:30Z",
-      "comment_body_sha256": "335f5af9aec34f63623d68aba1060033a74b4c4fa8e7346028a847bbf040b924",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1391,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8b92669b62470411401069922e66317039391759)",
-      "expected_head_sha": "8b92669b62470411401069922e66317039391759",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T01:59:18.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/817-production-upgrade-trim",
-        "head_sha": "8b92669b62470411401069922e66317039391759",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165902:6007768765:2026-10-06T01:59:07Z:clawsweeper_needs_human",
       "comment_id": "6007768765",
@@ -33567,6 +33534,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/goplaces:66:6011723038:2026-10-06T07:42:23Z:re_review",
+      "comment_id": "6011723038",
+      "comment_version_key": "6011723038:2026-10-06T07:42:23Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/66#issuecomment-6011723038",
+      "comment_created_at": "2026-10-06T07:42:23Z",
+      "comment_updated_at": "2026-10-06T07:42:23Z",
+      "comment_body_sha256": "c6bcfe96e4813a96d6597af97ab94a14bce8e0110024b9f529c50e70fd5c730e",
+      "repo": "openclaw/goplaces",
+      "issue_number": 66,
+      "author": "rudycelekli",
+      "author_id": 47457359,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T07:43:06.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/goplaces-cli-timeout-20261006",
+        "head_sha": "fe24b74f4b1e29627c94c234591bda77f4bd797e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
