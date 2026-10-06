@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:44:50.674Z",
+  "updated_at": "2026-10-06T03:46:13.860Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:165765",
-      "comment_id": "repair-loop-label-sweep:autofix:165765",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165765",
-      "comment_created_at": "2026-10-05T21:19:07.126Z",
-      "comment_updated_at": "2026-10-05T21:19:07.126Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165765,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "autofix enabled; current checks are failing: checks-ui (1/3):FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:20:31.127Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/github-plugin-ui",
-        "head_sha": "0ca18c821433acec41ff5276238a9fbfdacd90d7",
-        "cluster_id": "automerge-openclaw-openclaw-165765",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165765.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165765.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1749:6000985784:2026-10-05T21:19:27Z:clawsweeper_needs_human",
       "comment_id": "6000985784",
@@ -33787,6 +33735,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-plugin-invocation-scope-allocations-20260919",
         "head_sha": "0e52217759cbbde1b90e3c3be8e6786e6e49c081",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3912:5998449736:2026-10-06T03:45:17Z:clawsweeper_needs_human",
+      "comment_id": "5998449736",
+      "comment_version_key": "5998449736:2026-10-06T03:45:17Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3912#issuecomment-5998449736",
+      "comment_created_at": "2026-10-05T16:16:38Z",
+      "comment_updated_at": "2026-10-06T03:45:17Z",
+      "comment_body_sha256": "debf2576a2f93002e84f33ca15768c81e8de3c45bbaca24c8dcefc72ce4a102a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3912,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The rate-limiter upgrade adds persistent queue storage and a nested component without verified fresh-deployment and populated-bucket upgrade evidence; existing quotas must survive and... (sha=7e83da93bbc78832b003b425b8f8d4a60218fcfa)",
+      "expected_head_sha": "7e83da93bbc78832b003b425b8f8d4a60218fcfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T03:46:13.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-ce2629ecef",
+        "head_sha": "7e83da93bbc78832b003b425b8f8d4a60218fcfa",
         "cluster_id": null,
         "job_path": null
       }
