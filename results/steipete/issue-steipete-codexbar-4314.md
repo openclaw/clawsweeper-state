@@ -2,12 +2,12 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-4314"
 mode: "autonomous"
-run_id: "37505090083"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37505090083"
+run_id: "37514717926"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37514717926"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T17:42:52.433Z"
+published_at: "2026-10-06T18:57:36.792Z"
 canonical: "https://github.com/steipete/codexbar/issues/4314"
 canonical_issue: "https://github.com/steipete/codexbar/issues/4314"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37505090083](https://github.com/openclaw/clawsweeper/actions/runs/37505090083)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37514717926](https://github.com/openclaw/clawsweeper/actions/runs/37514717926)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/codexbar/issues/4314
 
 ## Summary
 
-Confirmed the Nous balance display gap on preflight main 9699239f0ddc16777c84e5cc6116e526e9a4f71a. A narrow fix is viable. Read-only filesystem permissions and the Linux environment prevent implementation and macOS renderer validation here; no files or GitHub items were changed.
+Confirmed the Nous balance projection gap on preflight main 9699239f0ddc16777c84e5cc6116e526e9a4f71a. A narrow fix artifact is ready. Implementation and required validation are blocked by the read-only workspace; no code or GitHub changes were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the Nous balance display gap on preflight main 9699239f0ddc16777c84e5c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #4314 | fix_needed | planned | canonical | The issue remains a focused display bug; existing plugin data and renderer seams support repair without changing fetching, authentication, parsing, settings, or tokens. |
-| cluster:issue-steipete-codexbar-4314 | build_fix_artifact | planned |  | Prepare one narrow new-fix PR on clawsweeper/issue-steipete-codexbar-4314 after establishing a failing Swift regression. |
-| cluster:issue-steipete-codexbar-4314 | open_fix_pr | blocked |  | Local implementation and validation require a writable macOS executor. The structured fix plan is ready for that executor; PR creation must follow passing validation. |
+| #4314 | fix_needed | planned | canonical | The source report remains valid and has a narrow shared resolver repair seam. |
+| cluster:issue-steipete-codexbar-4314 | build_fix_artifact | planned |  | Produce an executable narrow repair plan for a writable macOS executor. |
+| cluster:issue-steipete-codexbar-4314 | open_fix_pr | blocked |  | PR preparation is blocked until a writable macOS executor implements the artifact and completes focused tests, make test, and make check. The deterministic applicator must re-fetch issue and branch state before applying. |
 
 ## Needs Human
 
