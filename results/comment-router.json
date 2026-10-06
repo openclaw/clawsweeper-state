@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:43:36.684Z",
+  "updated_at": "2026-10-06T04:43:56.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165828:6004332413:2026-10-05T22:21:23Z:re_review",
-      "comment_id": "6004332413",
-      "comment_version_key": "6004332413:2026-10-05T22:21:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165828#issuecomment-6004332413",
-      "comment_created_at": "2026-10-05T22:21:23Z",
-      "comment_updated_at": "2026-10-05T22:21:23Z",
-      "comment_body_sha256": "06a22c5b942e1a41d11c98362861ad5539304d20fde9b66d847d685ed73295cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165828,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T22:22:24.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/automations-run-bypasses-gate-165817",
-        "head_sha": "fce4bfb59bad0b11b7641069e2dd6babaad5cfc2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165825:6004336418:2026-10-05T22:21:38Z:clawsweeper_needs_human",
       "comment_id": "6004336418",
@@ -33796,6 +33749,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T04:43:36.684Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3866:5919588175:2026-10-06T04:43:00Z:clawsweeper_needs_human",
+      "comment_id": "5919588175",
+      "comment_version_key": "5919588175:2026-10-06T04:43:00Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3866#issuecomment-5919588175",
+      "comment_created_at": "2026-09-30T20:56:45Z",
+      "comment_updated_at": "2026-10-06T04:43:00Z",
+      "comment_body_sha256": "d90d83e8bdcdad3afec7c76386eb97a12777c13bff765ee2c28962166a371cab",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3866,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9a767a03b121ed74fcd3515e02767ec60758ebb7)",
+      "expected_head_sha": "9a767a03b121ed74fcd3515e02767ec60758ebb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T04:43:56.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/deterministic-skill-file-order",
+        "head_sha": "9a767a03b121ed74fcd3515e02767ec60758ebb7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
