@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T22:43:48.064Z",
+  "updated_at": "2026-10-06T22:44:17.115Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166200:6020852232:2026-10-06T16:35:13Z:re_review",
-      "comment_id": "6020852232",
-      "comment_version_key": "6020852232:2026-10-06T16:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166200#issuecomment-6020852232",
-      "comment_created_at": "2026-10-06T16:35:13Z",
-      "comment_updated_at": "2026-10-06T16:35:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166200,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T16:36:15.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-2026.9.9-frv-blockers-2",
-        "head_sha": "6b80c3408ce16f29aac6e32206484b77eb92d354",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166192:6020645093:2026-10-06T16:35:42Z:clawsweeper_needs_human",
       "comment_id": "6020645093",
@@ -33667,6 +33620,39 @@
         "kind": "pull_request",
         "branch": "fix/github-discard-cancel",
         "head_sha": "ac1b5b632b52c586925cac7f259926d2f8383bec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:987:6026799179:2026-10-06T22:43:22Z:clawsweeper_needs_human",
+      "comment_id": "6026799179",
+      "comment_version_key": "6026799179:2026-10-06T22:43:22Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/987#issuecomment-6026799179",
+      "comment_created_at": "2026-10-06T22:43:22Z",
+      "comment_updated_at": "2026-10-06T22:43:22Z",
+      "comment_body_sha256": "d256352fbe711ec7c4927b8c5506acc72483b34611f59aacc243a8bfb9ca8468",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 987,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: SnapshotManager's changed filesystem publication path is covered by reported native regression tests using real PNG files, but no separate afte... (sha=c8bccdba84f444d1d705da306da8ef731307f6c0)",
+      "expected_head_sha": "c8bccdba84f444d1d705da306da8ef731307f6c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T22:44:17.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/snapshot-artifact-reuse-20261006",
+        "head_sha": "c8bccdba84f444d1d705da306da8ef731307f6c0",
         "cluster_id": null,
         "job_path": null
       }
