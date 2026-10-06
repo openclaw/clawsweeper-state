@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:48:14.593Z",
+  "updated_at": "2026-10-06T02:48:51.369Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165021:6001332955:2026-10-05T19:14:02Z:re_review",
-      "comment_id": "6001332955",
-      "comment_version_key": "6001332955:2026-10-05T19:14:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165021#issuecomment-6001332955",
-      "comment_created_at": "2026-10-05T19:14:02Z",
-      "comment_updated_at": "2026-10-05T19:14:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165021,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T19:16:12.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1095",
-        "head_sha": "20a4017842fee1dc076fd56d562d205e28df17a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148472:5669298141:2026-10-05T19:14:44Z:clawsweeper_needs_human",
       "comment_id": "5669298141",
@@ -34124,6 +34077,39 @@
         "kind": "pull_request",
         "branch": "ci-speed-19",
         "head_sha": "3279760306d64d80fa72d0ced1b6dc058646adb7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165761:6003267713:2026-10-06T02:48:05Z:clawsweeper_needs_human",
+      "comment_id": "6003267713",
+      "comment_version_key": "6003267713:2026-10-06T02:48:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165761#issuecomment-6003267713",
+      "comment_created_at": "2026-10-05T21:26:31Z",
+      "comment_updated_at": "2026-10-06T02:48:05Z",
+      "comment_body_sha256": "1c6149db427a11537b8d3d91d5d271fa4571348b62c74ca4c77494597087b1ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published policy worsens broker request p99 by 2.78% and 4.78% in two isolated comparisons; moving synchronous checkpoint I/O between operations has not met the requested latency... (sha=67af83ea701d97e06e2896ffb57aee9648cddc3c)",
+      "expected_head_sha": "67af83ea701d97e06e2896ffb57aee9648cddc3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:48:51.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-wal-checkpoint-scheduling-20260919",
+        "head_sha": "67af83ea701d97e06e2896ffb57aee9648cddc3c",
         "cluster_id": null,
         "job_path": null
       }
