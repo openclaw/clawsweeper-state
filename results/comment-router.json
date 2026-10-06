@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T22:09:08.035Z",
+  "updated_at": "2026-10-06T22:11:32.014Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136581:5516063502:2026-10-06T15:55:31Z:clawsweeper_needs_human",
-      "comment_id": "5516063502",
-      "comment_version_key": "5516063502:2026-10-06T15:55:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136581#issuecomment-5516063502",
-      "comment_created_at": "2026-09-02T20:38:06Z",
-      "comment_updated_at": "2026-10-06T15:55:31Z",
-      "comment_body_sha256": "14a52cd36bbbe1d146cbbebc8ada642cc5dc52e1a14138bf0b4995eb365211e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136581,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, unattended ACP debug clients will reject or cancel mixed-scope reads that previously automatically allowed; no maintainer has accepted this intentional compatibility ch... (sha=b322a6c2ea471b583adaa12cc97df0412142049e)",
-      "expected_head_sha": "b322a6c2ea471b583adaa12cc97df0412142049e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T15:56:36.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-read-approval-locations",
-        "head_sha": "b322a6c2ea471b583adaa12cc97df0412142049e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166102:6015822742:2026-10-06T15:55:46Z:clawsweeper_needs_human",
       "comment_id": "6015822742",
@@ -33852,6 +33819,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166199:6026376383:2026-10-06T22:10:35Z:re_review",
+      "comment_id": "6026376383",
+      "comment_version_key": "6026376383:2026-10-06T22:10:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166199#issuecomment-6026376383",
+      "comment_created_at": "2026-10-06T22:10:35Z",
+      "comment_updated_at": "2026-10-06T22:10:35Z",
+      "comment_body_sha256": "1c6a376afa9a1fcc684e12a4af3b93e59674ca5b8b171cca4c891a6aaedec27b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166199,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T22:11:30.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/gate-unconfigured-web-search",
+        "head_sha": "b49b3b88b1da68dc3181aad109e0c2bab77c6b2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
