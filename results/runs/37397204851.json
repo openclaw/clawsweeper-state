@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2706",
+  "mode": "autonomous",
+  "run_id": "37397204851",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37397204851",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2706.md",
+  "published_at": "2026-10-06T01:09:29.632Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2706",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported precedence defect on preflight main 383c6ab828b29335853419c7476d304610d9f126. A narrow repair is viable; implementation and validation are blocked by the read-only filesystem. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#2706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The source confirms an existing-behavior bug with a narrow provider-neutral repair path."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "The artifact provides a focused implementation and validation path despite the worker's filesystem restriction."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2706",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#2706",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked by the read-only checkout and Go cache restriction. A writable executor must establish the failing regression, implement the artifact, validate, and then create or update the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
