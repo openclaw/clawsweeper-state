@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:25:27.274Z",
+  "updated_at": "2026-10-06T03:27:29.530Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158902:5957020409:2026-10-02T16:47:58Z:re_review",
-      "comment_id": "5957020409",
-      "comment_version_key": "5957020409:2026-10-02T16:47:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158902#issuecomment-5957020409",
-      "comment_created_at": "2026-10-02T16:47:58Z",
-      "comment_updated_at": "2026-10-02T16:47:58Z",
-      "comment_body_sha256": "d9b46f07985fa17602ae7d534a297be3c24703a84ec6883fe9d3b3841a73032d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158902,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T21:11:56.794Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3916:6002835337:2026-10-05T21:00:43Z:clawsweeper_needs_human",
       "comment_id": "6002835337",
@@ -33864,6 +33837,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163646:6008715456:2026-10-06T03:26:36Z:re_review",
+      "comment_id": "6008715456",
+      "comment_version_key": "6008715456:2026-10-06T03:26:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163646#issuecomment-6008715456",
+      "comment_created_at": "2026-10-06T03:26:36Z",
+      "comment_updated_at": "2026-10-06T03:26:36Z",
+      "comment_body_sha256": "75edcb72b0e26208c023112a20c83fd3145b34ee31a000f7592dedceb00fc546",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163646,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T03:27:28.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-158902-gateway-compat",
+        "head_sha": "321017defb29309030d3a2574c06e5dbe349e474",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
