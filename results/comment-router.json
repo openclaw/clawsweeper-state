@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:35:55.124Z",
+  "updated_at": "2026-10-06T13:37:25.375Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165987:6011581891:2026-10-06T07:39:46Z:clawsweeper_needs_human",
-      "comment_id": "6011581891",
-      "comment_version_key": "6011581891:2026-10-06T07:39:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165987#issuecomment-6011581891",
-      "comment_created_at": "2026-10-06T07:32:34Z",
-      "comment_updated_at": "2026-10-06T07:39:46Z",
-      "comment_body_sha256": "73928624a4a7362fa3fdee19a7e107d474a9b9d9da0eeff75547a80e5d07e703",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The requester-settlement owner now dispatches completed batches after inactive-descendant waiting expires, but the captured after-fix evidence... (sha=07dd2d5df445ed06f8e5375ce978c94f7c11167a)",
-      "expected_head_sha": "07dd2d5df445ed06f8e5375ce978c94f7c11167a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T07:40:35.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settle-wake-deliver-after-descendant-wait",
-        "head_sha": "07dd2d5df445ed06f8e5375ce978c94f7c11167a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165989:6011687049:2026-10-06T07:39:54Z:clawsweeper_needs_human",
       "comment_id": "6011687049",
@@ -33348,6 +33315,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145537:6017447700:2026-10-06T13:35:31Z:re_review",
+      "comment_id": "6017447700",
+      "comment_version_key": "6017447700:2026-10-06T13:35:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145537#issuecomment-6017447700",
+      "comment_created_at": "2026-10-06T13:35:31Z",
+      "comment_updated_at": "2026-10-06T13:35:31Z",
+      "comment_body_sha256": "bbfac126bb91fa420eb790068800c186f93cb03ef203e6e93f1e84236851d0a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145537,
+      "author": "altaywtf",
+      "author_id": 9790196,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T13:37:23.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/fix-stability-blank-bundle-e997",
+        "head_sha": "275ece0ed45c2e430ed04ef2aef6823dc684d2a4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
