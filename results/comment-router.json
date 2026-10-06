@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T21:16:22.282Z",
+  "updated_at": "2026-10-06T21:17:19.073Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152477:5739398832:2026-10-06T14:41:41Z:clawsweeper_needs_human",
-      "comment_id": "5739398832",
-      "comment_version_key": "5739398832:2026-10-06T14:41:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152477#issuecomment-5739398832",
-      "comment_created_at": "2026-09-19T04:39:31Z",
-      "comment_updated_at": "2026-10-06T14:41:41Z",
-      "comment_body_sha256": "9e74da5c386860506adfcc00b1f90fef3270723f5d7535611743b06d471fbb18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152477,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main, and no pinned test merge establishes its integrated behavior if maintainers choose to retain it. (sha=a1ab1283d9cd254247956fc4cb37f09239ebe887)",
-      "expected_head_sha": "a1ab1283d9cd254247956fc4cb37f09239ebe887",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T14:42:53.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stable-publish-preflight-0918",
-        "head_sha": "a1ab1283d9cd254247956fc4cb37f09239ebe887",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166126:6017226915:2026-10-06T14:42:19Z:clawsweeper_needs_human",
       "comment_id": "6017226915",
@@ -33955,6 +33922,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166224:6025605143:2026-10-06T21:16:18Z:re_review",
+      "comment_id": "6025605143",
+      "comment_version_key": "6025605143:2026-10-06T21:16:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166224#issuecomment-6025605143",
+      "comment_created_at": "2026-10-06T21:16:18Z",
+      "comment_updated_at": "2026-10-06T21:16:18Z",
+      "comment_body_sha256": "934057d5444cc890f739cfb920a757befaae1f38d69f60ed7e942ab2e43b26ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166224,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T21:17:17.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-attention-details",
+        "head_sha": "21b052fcce875aebf1378e4ddfb488fbc6e43a0d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
