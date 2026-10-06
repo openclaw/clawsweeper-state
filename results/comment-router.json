@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:11:19.679Z",
+  "updated_at": "2026-10-06T13:11:39.593Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/goplaces:65:6011481553:2026-10-06T07:25:19Z:re_review",
-      "comment_id": "6011481553",
-      "comment_version_key": "6011481553:2026-10-06T07:25:19Z",
-      "comment_url": "https://github.com/openclaw/goplaces/pull/65#issuecomment-6011481553",
-      "comment_created_at": "2026-10-06T07:25:19Z",
-      "comment_updated_at": "2026-10-06T07:25:19Z",
-      "comment_body_sha256": "c981b1d4ac8aee7a00fa42431fd3af2f91b0798920cc24418a4eb261b689e8c5",
-      "repo": "openclaw/goplaces",
-      "issue_number": 65,
-      "author": "rudycelekli",
-      "author_id": 47457359,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T07:30:50.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/goplaces-cli-limits-20261006",
-        "head_sha": "f1c2682b887c971e9600e82985275d81bb976ccc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/goplaces:66:6011482331:2026-10-06T07:25:22Z:re_review",
       "comment_id": "6011482331",
@@ -33265,6 +33218,39 @@
         "kind": "pull_request",
         "branch": "coli/memory-extra-path-decay-policy",
         "head_sha": "b16ce8dd0e25841ef64ee16ae21e9239839ded79",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151924:5733332426:2026-10-06T13:10:37Z:clawsweeper_auto_repair",
+      "comment_id": "5733332426",
+      "comment_version_key": "5733332426:2026-10-06T13:10:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151924#issuecomment-5733332426",
+      "comment_created_at": "2026-09-18T16:58:08Z",
+      "comment_updated_at": "2026-10-06T13:10:37Z",
+      "comment_body_sha256": "02352551ee081895af335385be4e69f3fe64f328475d7a5bfa7aadcf8e023f11",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e1a88129751a651ab35eb0c7a9fe631a6529efcf)",
+      "expected_head_sha": "e1a88129751a651ab35eb0c7a9fe631a6529efcf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T13:11:39.593Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-bot-loop-guard",
+        "head_sha": "e1a88129751a651ab35eb0c7a9fe631a6529efcf",
         "cluster_id": null,
         "job_path": null
       }
