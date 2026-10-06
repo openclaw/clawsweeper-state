@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T18:20:54.301Z",
+  "updated_at": "2026-10-06T18:21:37.667Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165901:6007654885:2026-10-06T11:50:17Z:clawsweeper_needs_human",
-      "comment_id": "6007654885",
-      "comment_version_key": "6007654885:2026-10-06T11:50:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165901#issuecomment-6007654885",
-      "comment_created_at": "2026-10-06T01:48:17Z",
-      "comment_updated_at": "2026-10-06T11:50:17Z",
-      "comment_body_sha256": "45e70245e65056908c7f84bcb7c185456efbe53aac99c8de322c329400ac2fdf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Complete and record affected-path runtime validation and the refreshed SDK comparison for integrated head 29c4394edd26f10da4150b15d0ab88e697a1ffad. (sha=29c4394edd26f10da4150b15d0ab88e697a1ffad)",
-      "expected_head_sha": "29c4394edd26f10da4150b15d0ab88e697a1ffad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T11:51:28.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incogp7m2",
-        "head_sha": "29c4394edd26f10da4150b15d0ab88e697a1ffad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151781:5729888590:2026-10-06T11:54:21Z:clawsweeper_needs_human",
       "comment_id": "5729888590",
@@ -33881,6 +33848,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166218:6021887263:2026-10-06T18:20:08Z:clawsweeper_needs_human",
+      "comment_id": "6021887263",
+      "comment_version_key": "6021887263:2026-10-06T18:20:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166218#issuecomment-6021887263",
+      "comment_created_at": "2026-10-06T17:35:58Z",
+      "comment_updated_at": "2026-10-06T18:20:08Z",
+      "comment_body_sha256": "d63980798be4a25defd10556866fe83ff70cb6715bb7f9c493b7e81e9e28b9ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The remaining deadline increases could allow shard-order or load-sensitive failures to escape detection without establishing their cause; original-shard evidence or a documented bound... (sha=a09e9bbe7f24321a2518fe947411f28cbebe28b4)",
+      "expected_head_sha": "a09e9bbe7f24321a2518fe947411f28cbebe28b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T18:21:37.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-beta-timing-blockers",
+        "head_sha": "a09e9bbe7f24321a2518fe947411f28cbebe28b4",
+        "cluster_id": "automerge-openclaw-openclaw-166218",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166218.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
