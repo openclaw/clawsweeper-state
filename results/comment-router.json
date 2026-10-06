@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T06:56:23.286Z",
+  "updated_at": "2026-10-06T06:56:24.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101441:6007022863:2026-10-06T00:58:21Z:re_review",
-      "comment_id": "6007022863",
-      "comment_version_key": "6007022863:2026-10-06T00:58:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-6007022863",
-      "comment_created_at": "2026-10-06T00:58:21Z",
-      "comment_updated_at": "2026-10-06T00:58:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101441,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T00:59:07.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-sanitize-outbound-90684",
-        "head_sha": "4477aec80a4c72f96620dd4564efc3bac7eddec8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165824:6007081004:2026-10-06T01:01:40Z:re_review",
       "comment_id": "6007081004",
@@ -33642,6 +33595,39 @@
         "kind": "pull_request",
         "branch": "fix/node-stream-close-ack-timeout",
         "head_sha": "63515db3972999ce56277e2f1a07e352da7ccf32",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3907:5976646881:2026-10-06T06:55:23Z:clawsweeper_needs_human",
+      "comment_id": "5976646881",
+      "comment_version_key": "5976646881:2026-10-06T06:55:23Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3907#issuecomment-5976646881",
+      "comment_created_at": "2026-10-04T04:40:57Z",
+      "comment_updated_at": "2026-10-06T06:55:23Z",
+      "comment_body_sha256": "88e3ae2be08e71e1800738fd05a424dbca7fcbd70a65ce46bb4feef7a653cda6",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3907,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Attach the existing inspected proof captures directly to this PR using native GitHub attachments and replace the committed proof-branch links, preserving fixture, commit, and runtime... (sha=33b90e93f45d4f33c402814de577ef5612946d25)",
+      "expected_head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T06:56:24.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hide-private-packages-on-publisher-pages",
+        "head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
         "cluster_id": null,
         "job_path": null
       }
