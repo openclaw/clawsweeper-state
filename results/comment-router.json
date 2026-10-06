@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T23:01:15.529Z",
+  "updated_at": "2026-10-06T23:01:32.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166200:6021178513:2026-10-06T16:54:34Z:re_review",
-      "comment_id": "6021178513",
-      "comment_version_key": "6021178513:2026-10-06T16:54:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166200#issuecomment-6021178513",
-      "comment_created_at": "2026-10-06T16:54:34Z",
-      "comment_updated_at": "2026-10-06T16:54:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166200,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T16:57:20.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-2026.9.9-frv-blockers-2",
-        "head_sha": "fe35a1f4e99679dcdec99b64d0bbb841a144ff44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166200:6021108475:2026-10-06T16:50:21Z:clawsweeper_needs_human",
       "comment_id": "6021108475",
@@ -33625,6 +33578,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1653:6027007020:2026-10-06T23:00:39Z:clawsweeper_needs_human",
+      "comment_id": "6027007020",
+      "comment_version_key": "6027007020:2026-10-06T23:00:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1653#issuecomment-6027007020",
+      "comment_created_at": "2026-10-06T23:00:39Z",
+      "comment_updated_at": "2026-10-06T23:00:39Z",
+      "comment_body_sha256": "136b3d03fc5c359438307138dc4bfdf7f1cc4b60259c0317abace419e68a8ad4",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1653,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations that deliberately route a loopback gateway address through a process proxy will instead connect locally. The PR calls this backward compatible without acknowle... (sha=cc68a5507b7a669d8519d02b595eea790efab024)",
+      "expected_head_sha": "cc68a5507b7a669d8519d02b595eea790efab024",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T23:01:32.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f112-gateway-ws-proxy",
+        "head_sha": "cc68a5507b7a669d8519d02b595eea790efab024",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
