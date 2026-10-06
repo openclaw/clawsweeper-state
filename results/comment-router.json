@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T15:03:42.967Z",
+  "updated_at": "2026-10-06T15:04:38.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144951:6012710018:2026-10-06T08:47:02Z:re_review",
-      "comment_id": "6012710018",
-      "comment_version_key": "6012710018:2026-10-06T08:47:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144951#issuecomment-6012710018",
-      "comment_created_at": "2026-10-06T08:47:02Z",
-      "comment_updated_at": "2026-10-06T08:47:02Z",
-      "comment_body_sha256": "f9b5b997e6da84aa54c53425ff446256880707aeb4555e40f64fddac879b4d7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144951,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please at exact head `31b8ddbe9ed601126e269bf4deca1c37b2e818f1`. refreshed the named trusted-ci baseline failure without copying or bypassing the missing helper. fresh current-source alias coverage passes 8/8, with real manifest-alias removal failing only ownership while all four fireworks controls pass. complete pending-range p0-p3 autoreview is clean",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T08:48:06.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stepfun-modelsdev-alias",
-        "head_sha": "31b8ddbe9ed601126e269bf4deca1c37b2e818f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161740:5906837247:2026-10-06T08:47:53Z:clawsweeper_needs_human",
       "comment_id": "5906837247",
@@ -33660,6 +33613,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166152:6018967328:2026-10-06T15:02:57Z:clawsweeper_needs_human",
+      "comment_id": "6018967328",
+      "comment_version_key": "6018967328:2026-10-06T15:02:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166152#issuecomment-6018967328",
+      "comment_created_at": "2026-10-06T14:55:06Z",
+      "comment_updated_at": "2026-10-06T15:02:57Z",
+      "comment_body_sha256": "8619f1797515228d076110ce3d43a477f54696ea3704e8d77efa159184d5a50a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add measured wall time for both changed test files using pnpm test &lt;file> --maxWorkers=1, and CI seconds when available. (sha=4131f13b1523df456711a629f41783b59b850515)",
+      "expected_head_sha": "4131f13b1523df456711a629f41783b59b850515",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T15:04:38.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gpt6-prompt-overlay",
+        "head_sha": "4131f13b1523df456711a629f41783b59b850515",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
