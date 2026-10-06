@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165961",
+  "mode": "autonomous",
+  "run_id": "37424011686",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37424011686",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165961.md",
+  "published_at": "2026-10-06T07:40:09.645Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165961",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165961",
+  "canonical_pr": null,
+  "summary": "The image authentication ordering defect remains in source at preflight main SHA 4304c49a8ea76c6f165115fc9502d70c5e56a224. A narrow fix artifact is planned. Implementation and runtime reproduction are blocked by the read-only host and absent node_modules; no code changes, test passes, or GitHub mutations are claimed.",
+  "actions": [
+    {
+      "target": "#165961",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165961",
+      "candidate_fix": null,
+      "reason": "Source supports a focused bug repair with no new provider, configuration, public capability, or policy. Require a failing real-boundary regression before production edits."
+    },
+    {
+      "target": "#165864",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#165961",
+      "candidate_fix": null,
+      "reason": "Distinct responsibility and failure path. Leave its existing repair and review work outside this implementation job."
+    },
+    {
+      "target": "#156929",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165961",
+      "candidate_fix": null,
+      "reason": "Historical implementation reference; do not reimplement PDF authentication or backport it."
+    },
+    {
+      "target": "#161400",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only; no action required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165961",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165961",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; applying it requires a writable executor with dependencies and regression execution."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
