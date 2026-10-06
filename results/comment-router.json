@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T06:41:18.525Z",
+  "updated_at": "2026-10-06T06:42:02.203Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165761:6003267713:2026-10-06T00:42:29Z:clawsweeper_needs_human",
-      "comment_id": "6003267713",
-      "comment_version_key": "6003267713:2026-10-06T00:42:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165761#issuecomment-6003267713",
-      "comment_created_at": "2026-10-05T21:26:31Z",
-      "comment_updated_at": "2026-10-06T00:42:29Z",
-      "comment_body_sha256": "b038f034fff01c6cb5f0fa141565fc43e7ca802957d41e88da4adea931e3d34a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165761,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Pressure checkpoints still perform synchronous I/O on the writer worker and can delay queued requests; the pending isolated sustained comparison must resolve whether the final policy... (sha=67af83ea701d97e06e2896ffb57aee9648cddc3c)",
-      "expected_head_sha": "67af83ea701d97e06e2896ffb57aee9648cddc3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T00:43:54.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-wal-checkpoint-scheduling-20260919",
-        "head_sha": "67af83ea701d97e06e2896ffb57aee9648cddc3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90745:4634964020:2026-10-06T00:42:36Z:clawsweeper_auto_repair",
       "comment_id": "4634964020",
@@ -33477,6 +33444,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4296:6009951203:2026-10-06T06:40:57Z:clawsweeper_needs_human",
+      "comment_id": "6009951203",
+      "comment_version_key": "6009951203:2026-10-06T06:40:57Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4296#issuecomment-6009951203",
+      "comment_created_at": "2026-10-06T05:24:07Z",
+      "comment_updated_at": "2026-10-06T06:40:57Z",
+      "comment_body_sha256": "839c0fc9a688def162d882e5b113433d1cdf47d4a47bb7738246c84925dfa566",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=46866f890192d54015af142eb8195501c380350b)",
+      "expected_head_sha": "46866f890192d54015af142eb8195501c380350b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T06:42:02.203Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-cost-catch-up-recovery",
+        "head_sha": "46866f890192d54015af142eb8195501c380350b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
