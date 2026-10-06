@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T17:26:49.518Z",
+  "updated_at": "2026-10-06T17:27:15.329Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:884:5943377679:2026-10-06T10:49:00Z:clawsweeper_needs_human",
-      "comment_id": "5943377679",
-      "comment_version_key": "5943377679:2026-10-06T10:49:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/884#issuecomment-5943377679",
-      "comment_created_at": "2026-10-02T00:37:59Z",
-      "comment_updated_at": "2026-10-06T10:49:00Z",
-      "comment_body_sha256": "0a335be94fbc4878595e61279c4ee040d7b7521e732d98e841c606977923774f",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 884,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Known node-host messages will disappear from higher-floor reads under the proposed severity policy; the explicitly requested owner approval has not been recorded. (sha=0083852e7536269976cfe125a6e27268be9990b9)",
-      "expected_head_sha": "0083852e7536269976cfe125a6e27268be9990b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T10:50:02.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc-0051-runtime-log-node-host-levels",
-        "head_sha": "0083852e7536269976cfe125a6e27268be9990b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:924:5962065509:2026-10-06T10:49:20Z:clawsweeper_needs_human",
       "comment_id": "5962065509",
@@ -33865,6 +33832,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166217:6021718614:2026-10-06T17:26:08Z:autofix",
+      "comment_id": "6021718614",
+      "comment_version_key": "6021718614:2026-10-06T17:26:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166217#issuecomment-6021718614",
+      "comment_created_at": "2026-10-06T17:26:08Z",
+      "comment_updated_at": "2026-10-06T17:26:08Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166217,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T17:27:04.994Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mcp-audit-ci",
+        "head_sha": "e023ee0101af4a8e96c71e0af83d1ed9d007eb57",
+        "cluster_id": "automerge-openclaw-openclaw-166217",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166217.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166217.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
