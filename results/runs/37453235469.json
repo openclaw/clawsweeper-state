@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166084",
+  "mode": "autonomous",
+  "run_id": "37453235469",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37453235469",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166084.md",
+  "published_at": "2026-10-06T11:41:17.895Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166084",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166084",
+  "canonical_pr": null,
+  "summary": "Verified both unbounded Gateway-copy catalog observations on preflight main e62b6f87bfcba92ef1d585c4b92e91deb9a2c7cf. Prepared a narrow fix plan. The read-only host blocks adding the required failing public regression, implementing the repair, and validating the branch; no implementation or runtime reproduction is claimed.",
+  "actions": [
+    {
+      "target": "#166084",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166084",
+      "candidate_fix": null,
+      "reason": "A distinct existing-behavior bug remains source-verifiable. Implementation must first establish the requested failing public regression on a writable executor."
+    },
+    {
+      "target": "#158177",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this item to central OpenClaw security handling without public mutation. The catalog-wait repair does not depend on it."
+    },
+    {
+      "target": "#161409",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#165989",
+      "reason": "Historical sibling evidence; no closure action is appropriate."
+    },
+    {
+      "target": "#165989",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Reuse the established observation pattern as context while leaving this merged PR untouched."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166084",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166084",
+      "candidate_fix": null,
+      "reason": "The fix artifact is ready for a writable executor. This worker cannot satisfy the regression-first implementation gate under the read-only filesystem policy."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
