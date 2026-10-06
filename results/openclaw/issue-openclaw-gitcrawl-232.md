@@ -2,16 +2,16 @@
 repo: "openclaw/gitcrawl"
 cluster_id: "issue-openclaw-gitcrawl-232"
 mode: "autonomous"
-run_id: "37440472093"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37440472093"
+run_id: "37467861844"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37467861844"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T09:09:33.559Z"
+published_at: "2026-10-06T13:08:31.956Z"
 canonical: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_issue: "https://github.com/openclaw/gitcrawl/issues/232"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/gitcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37440472093](https://github.com/openclaw/clawsweeper/actions/runs/37440472093)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37467861844](https://github.com/openclaw/clawsweeper/actions/runs/37467861844)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/gitcrawl/issues/232
 
 ## Summary
 
-Verified the reported query and missing ordering index on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. Narrow fix artifact prepared; implementation and validation are blocked by the read-only filesystem. Reporter PR recheck requires authenticated GitHub reads. No code or GitHub mutations performed.
+The reported query shape remains on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narrow fix artifact is prepared. Implementation and validation are blocked by the read-only filesystem; the required open-PR recheck also failed because gh lacks authentication. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Verified the reported query and missing ordering index on preflight main 3f4276c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #232 | fix_needed | planned | canonical | The source confirms a narrow performance repair remains applicable. Recheck active contributor work before implementation. |
-| #175 | keep_closed | skipped | related | Historical implementation whose candidate-selection semantics must be preserved. |
-| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned |  | A narrow executor plan remains useful despite local implementation restrictions. |
-| cluster:issue-openclaw-gitcrawl-232 | open_fix_pr | blocked |  | Implementation and PR readiness require a writable executor, Go toolchain/cache access, authenticated bounded GitHub reads, and completed regression and validation gates. |
+| #232 | fix_needed | planned | canonical | The source supports a focused performance repair without a product or security decision. Keep the issue open; executor implementation must first complete the PR ownership check and establish the regression. |
+| #175 | keep_closed | skipped | related | Historical pagination work to preserve and acknowledge; it does not supply the missing ordering index or seekable continuation. |
+| cluster:issue-openclaw-gitcrawl-232 | build_fix_artifact | planned |  | Artifact creation is complete. Only implementation and PR publication are blocked pending a writable executor, authenticated ownership recheck, regression proof, validation, and review. |
 
 ## Needs Human
 
