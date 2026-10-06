@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2715",
+  "mode": "autonomous",
+  "run_id": "37500398475",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37500398475",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2715.md",
+  "published_at": "2026-10-06T17:14:17.470Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2715",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2715",
+  "canonical_pr": null,
+  "summary": "Verified the readiness defect in the checkout matching preflight main f9a122dd96e850207ed70a555c281fbc8475fa77. Prepared a narrow provider-neutral fix artifact. Implementation and validation are blocked by the read-only sandbox; no code or GitHub mutations occurred, and no regression or live AWS tests were run.",
+  "actions": [
+    {
+      "target": "#2715",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2715",
+      "candidate_fix": null,
+      "reason": "The bug remains viable and narrow. Implementation requires a writable executor with the declared Go toolchain and access to owned AWS validation leases."
+    },
+    {
+      "target": "#1360",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; do not reopen or modify."
+    },
+    {
+      "target": "#2706",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct failure already closed; preserve that outcome."
+    },
+    {
+      "target": "#2712",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical context does not provide a fix for this cluster."
+    },
+    {
+      "target": "#2717",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open for its existing product review; exclude image selection from this implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2715",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2715",
+      "candidate_fix": null,
+      "reason": "A concrete fix plan can proceed independently of this worker's implementation restrictions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (go test -race -timeout=20m ./internal/cli -run TestApplyResolvedLeaseConfig|TestStatus|TestInspect|TestRunCommandRejectsExistingLeaseTarget): go: cannot find GOROOT directory: 'go' binary is trimmed and GOROOT is not set",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2715",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
