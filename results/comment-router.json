@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T00:39:01.018Z",
+  "updated_at": "2026-10-06T00:39:36.831Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165404:5989736977:2026-10-05T16:45:04Z:clawsweeper_needs_human",
-      "comment_id": "5989736977",
-      "comment_version_key": "5989736977:2026-10-05T16:45:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165404#issuecomment-5989736977",
-      "comment_created_at": "2026-10-05T07:05:13Z",
-      "comment_updated_at": "2026-10-05T16:45:04Z",
-      "comment_body_sha256": "211d21b62290619a958bcfd75f3be7e64a9ca52b62b57ea6d78568eaa999f6f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older runtimes can reopen the unchanged database schema but silently skip new projection deltas, restoring stale tool-result content; backup-based rollback needs explicit acceptance o... (sha=897cbe723bb871263edbb0563dad61191a7d83cd)",
-      "expected_head_sha": "897cbe723bb871263edbb0563dad61191a7d83cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T16:46:11.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-cache-ttl-snapshot-deltas-20260919",
-        "head_sha": "897cbe723bb871263edbb0563dad61191a7d83cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165647:5998171042:2026-10-05T16:45:47Z:clawsweeper_needs_human",
       "comment_id": "5998171042",
@@ -34160,6 +34127,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165885:6006666194:2026-10-06T00:38:36Z:re_review",
+      "comment_id": "6006666194",
+      "comment_version_key": "6006666194:2026-10-06T00:38:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165885#issuecomment-6006666194",
+      "comment_created_at": "2026-10-06T00:38:36Z",
+      "comment_updated_at": "2026-10-06T00:38:36Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165885,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T00:39:35.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incogp7k",
+        "head_sha": "4863c5b66d793bfc74c948afd30f88a659c08d99",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
