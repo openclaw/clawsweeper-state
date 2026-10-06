@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-295",
+  "mode": "autonomous",
+  "run_id": "37526957965",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37526957965",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-295.md",
+  "published_at": "2026-10-06T20:34:13.685Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/295",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/295",
+  "canonical_pr": null,
+  "summary": "Verified the restore defect against preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A narrow repair is viable; implementation and validation are blocked by this session's read-only filesystem. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#295",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#295",
+      "candidate_fix": null,
+      "reason": "The issue remains valid on the supplied current main. Prepare one new implementation PR through the executor; no maintainer judgment is needed."
+    },
+    {
+      "target": "#166",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#295",
+      "candidate_fix": null,
+      "reason": "Historical capture repair is related evidence, not a fix for the separate restore deletion path."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-295",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#295",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for a writable executor. Implementation and PR publication remain blocked until the required remote regression, baseline, platform checks, and CLI evidence are completed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

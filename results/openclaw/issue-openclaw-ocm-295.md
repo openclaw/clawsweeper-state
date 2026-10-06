@@ -2,12 +2,12 @@
 repo: "openclaw/ocm"
 cluster_id: "issue-openclaw-ocm-295"
 mode: "autonomous"
-run_id: "37499993925"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37499993925"
+run_id: "37526957965"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37526957965"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-10-06T17:03:31.220Z"
+result_status: "blocked"
+published_at: "2026-10-06T20:34:13.685Z"
 canonical: "https://github.com/openclaw/ocm/issues/295"
 canonical_issue: "https://github.com/openclaw/ocm/issues/295"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/ocm
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37499993925](https://github.com/openclaw/clawsweeper/actions/runs/37499993925)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37526957965](https://github.com/openclaw/clawsweeper/actions/runs/37526957965)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/ocm/issues/295
 
 ## Summary
 
-Verified #295 on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. Planned a narrow restore fix with CLI regression coverage. Implementation and checks await the executor because this session is read-only.
+Verified the restore defect against preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A narrow repair is viable; implementation and validation are blocked by this session's read-only filesystem. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified #295 on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. Planne
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #295 | fix_needed | planned | canonical | The reported data-loss path remains present. #166 fixed capture rather than this restore cleanup. Keep the issue open and implement its narrow fix. |
-| #166 | keep_closed | skipped | related | Historical context only; no action on this merged contributor PR. |
-| cluster:issue-openclaw-ocm-295 | build_fix_artifact | planned |  | A narrow fix is justified and authorized. Artifact construction is complete; filesystem writes and validation are blocked in this session and must be performed by the executor. |
+| #295 | fix_needed | planned | canonical | The issue remains valid on the supplied current main. Prepare one new implementation PR through the executor; no maintainer judgment is needed. |
+| #166 | keep_closed | skipped | related | Historical capture repair is related evidence, not a fix for the separate restore deletion path. |
+| cluster:issue-openclaw-ocm-295 | build_fix_artifact | planned |  | The artifact is ready for a writable executor. Implementation and PR publication remain blocked until the required remote regression, baseline, platform checks, and CLI evidence are completed. |
 
 ## Needs Human
 
