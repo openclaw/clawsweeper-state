@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T01:33:33.994Z",
+  "updated_at": "2026-10-06T01:33:41.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165695:6000077010:2026-10-05T17:56:08Z:re_review",
-      "comment_id": "6000077010",
-      "comment_version_key": "6000077010:2026-10-05T17:56:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165695#issuecomment-6000077010",
-      "comment_created_at": "2026-10-05T17:56:08Z",
-      "comment_updated_at": "2026-10-05T17:56:08Z",
-      "comment_body_sha256": "f325ef36fdce8d23dd938459b56471dff362e534707de5539b8b8e92e766e6ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165695,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review exact head e09b43e4160: ci exposed the second and final isolated fixture bundle that copied clawhub-prepared-artifact.mjs without its new leaf dependency. publication_contract_files now carries the shared family module into release-checks and strict-validator fixtures. please re-review this exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T17:59:07.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-cloudflare-family",
-        "head_sha": "e09b43e4160f30958c82a707e433d613a21e5375",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:252:6000110670:2026-10-05T17:58:12Z:clawsweeper_needs_human",
       "comment_id": "6000110670",
@@ -34185,6 +34138,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165859:6006081643:2026-10-06T01:32:34Z:clawsweeper_needs_human",
+      "comment_id": "6006081643",
+      "comment_version_key": "6006081643:2026-10-06T01:32:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165859#issuecomment-6006081643",
+      "comment_created_at": "2026-10-06T00:06:46Z",
+      "comment_updated_at": "2026-10-06T01:32:34Z",
+      "comment_body_sha256": "c2f03329bed6d9e25915ff2226053c503621613ec6e905627af1e3f443be63e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165859,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=187d69504a43dac8e80e7a778544694f271fc247)",
+      "expected_head_sha": "187d69504a43dac8e80e7a778544694f271fc247",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T01:33:41.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w5locked-fix",
+        "head_sha": "187d69504a43dac8e80e7a778544694f271fc247",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
