@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:27:29.530Z",
+  "updated_at": "2026-10-06T03:27:32.996Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3916:6002835337:2026-10-05T21:00:43Z:clawsweeper_needs_human",
-      "comment_id": "6002835337",
-      "comment_version_key": "6002835337:2026-10-05T21:00:43Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3916#issuecomment-6002835337",
-      "comment_created_at": "2026-10-05T21:00:43Z",
-      "comment_updated_at": "2026-10-05T21:00:43Z",
-      "comment_body_sha256": "4313e923911f59ec669c47d015968d311098b1eaa1f76685f110efe6ec3e0a4b",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3916,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Windows and Linux results exercise the corrected skills.test.ts fixture, but filesystem, registry, and metadata effects are mocked... (sha=663c6eea1421f942f6068194e99401bcbfa1edc0)",
-      "expected_head_sha": "663c6eea1421f942f6068194e99401bcbfa1edc0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T21:12:17.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-update-windows-tests",
-        "head_sha": "663c6eea1421f942f6068194e99401bcbfa1edc0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165773:6002857026:2026-10-05T21:02:04Z:clawsweeper_needs_human",
       "comment_id": "6002857026",
@@ -33867,6 +33834,53 @@
         "kind": "pull_request",
         "branch": "openclaw/pr-158902-gateway-compat",
         "head_sha": "321017defb29309030d3a2574c06e5dbe349e474",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:973:6008715167:2026-10-06T03:26:34Z:re_review",
+      "comment_id": "6008715167",
+      "comment_version_key": "6008715167:2026-10-06T03:26:34Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/973#issuecomment-6008715167",
+      "comment_created_at": "2026-10-06T03:26:34Z",
+      "comment_updated_at": "2026-10-06T03:26:34Z",
+      "comment_body_sha256": "1c06429520e3e5f68fdf4d1d11ce2b47421d436f9fbe72d19ba7ceeea1ae2fd2",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 973,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T03:27:31.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/peekaboo-automation-wait-duration-20261005",
+        "head_sha": "7fafe591402f35f771869abba8963acc16a55023",
         "cluster_id": null,
         "job_path": null
       },
