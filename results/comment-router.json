@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:35:52.088Z",
+  "updated_at": "2026-10-06T03:36:27.648Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165762:6003087439:2026-10-05T21:16:42Z:re_review",
-      "comment_id": "6003087439",
-      "comment_version_key": "6003087439:2026-10-05T21:16:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165762#issuecomment-6003087439",
-      "comment_created_at": "2026-10-05T21:16:42Z",
-      "comment_updated_at": "2026-10-05T21:16:42Z",
-      "comment_body_sha256": "6d57023479b96e2af6b666cbbb1cc5e69ef4a4e15e8e7b3a4cbaa16229c26807",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165762,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: the sole timing evidence request is now addressed in the pr body, including measured local wall time and hosted ci file/wrapper/job seconds with the ci job url. head remains e18f9398304dbb81b0a1fbbcd564a47b036cd595; no code changes",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:18:41.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-call-mcp-image-165745",
-        "head_sha": "e18f9398304dbb81b0a1fbbcd564a47b036cd595",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116175:5125613634:2026-10-05T21:12:59Z:clawsweeper_needs_human",
       "comment_id": "5125613634",
@@ -33823,6 +33776,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-explicit-parent-session-owner",
         "head_sha": "7201fa6c7b6a7504002d27e1ed270a02e6cc4030",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlbar:53:5975900665:2026-10-06T03:35:40Z:clawsweeper_needs_human",
+      "comment_id": "5975900665",
+      "comment_version_key": "5975900665:2026-10-06T03:35:40Z",
+      "comment_url": "https://github.com/openclaw/crawlbar/pull/53#issuecomment-5975900665",
+      "comment_created_at": "2026-10-04T02:46:32Z",
+      "comment_updated_at": "2026-10-06T03:35:40Z",
+      "comment_body_sha256": "1d4a9acec29ab4075e28cb4d3145d86b6922ce88f1218b6af5de89dc3ffc8ddf",
+      "repo": "openclaw/crawlbar",
+      "issue_number": 53,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured macOS self-test directly exercises the production log store using synthetic temporary files, which is supplemental test evidence.... (sha=3fe11d6ec94af3f27538b337fead95b88cdc0d2a)",
+      "expected_head_sha": "3fe11d6ec94af3f27538b337fead95b88cdc0d2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T03:36:27.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/crawlbar-f004",
+        "head_sha": "3fe11d6ec94af3f27538b337fead95b88cdc0d2a",
         "cluster_id": null,
         "job_path": null
       }
