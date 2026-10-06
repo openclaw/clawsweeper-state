@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T16:45:07.580Z",
+  "updated_at": "2026-10-06T16:45:26.240Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154093:5980921622:2026-10-04T14:13:51Z:re_review",
-      "comment_id": "5980921622",
-      "comment_version_key": "5980921622:2026-10-04T14:13:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154093#issuecomment-5980921622",
-      "comment_created_at": "2026-10-04T14:13:51Z",
-      "comment_updated_at": "2026-10-04T14:13:51Z",
-      "comment_body_sha256": "ac47e893c068b9b5544316d156cfdd4139478f36b687b1edfa33890ef7f6e37e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154093,
-      "author": "victor-gurbani",
-      "author_id": 89997914,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T10:08:21.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/android-incoming-data-calls",
-        "head_sha": "417e0230ba9d238342f2a7028a3332b1a2b26ff7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154093:5752910628:2026-10-06T10:07:13Z:clawsweeper_needs_human",
       "comment_id": "5752910628",
@@ -33936,6 +33889,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/axorcist:92:5975937254:2026-10-06T16:44:31Z:clawsweeper_needs_human",
+      "comment_id": "5975937254",
+      "comment_version_key": "5975937254:2026-10-06T16:44:31Z",
+      "comment_url": "https://github.com/openclaw/AXorcist/pull/92#issuecomment-5975937254",
+      "comment_created_at": "2026-10-04T02:52:25Z",
+      "comment_updated_at": "2026-10-06T16:44:31Z",
+      "comment_body_sha256": "b86fe6dd627fd20f32b2684c511d2bfda2f1e5dd669def44675efdbd36cc4686",
+      "repo": "openclaw/axorcist",
+      "issue_number": 92,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The macOS Swift test transcript exercises handleObserve through a fake registry, proving list handling and logical rollback but not native AXOb... (sha=5364e45b9923a272b303c54cc8d5fe349fa0963a)",
+      "expected_head_sha": "5364e45b9923a272b303c54cc8d5fe349fa0963a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T16:45:26.240Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/axorcist-f008",
+        "head_sha": "5364e45b9923a272b303c54cc8d5fe349fa0963a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
