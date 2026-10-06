@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T18:13:48.972Z",
+  "updated_at": "2026-10-06T18:14:11.192Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165901:6015533953:2026-10-06T11:44:56Z:re_review",
@@ -33701,65 +33701,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:166229:6022529077:2026-10-06T18:12:44Z:automerge",
-      "comment_id": "6022529077",
-      "comment_version_key": "6022529077:2026-10-06T18:12:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166229#issuecomment-6022529077",
-      "comment_created_at": "2026-10-06T18:12:44Z",
-      "comment_updated_at": "2026-10-06T18:12:44Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166229,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-10-06T18:13:37.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-issue-166220-in-openclaw",
-        "head_sha": "af47db9a721ef82100ef3f50b471dcc58dcbf4ae",
-        "cluster_id": "automerge-openclaw-openclaw-166229",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166229.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166229.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166229.md"
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165054:5983375992:2026-10-06T18:12:23Z:clawsweeper_needs_human",
       "comment_id": "5983375992",
       "comment_version_key": "5983375992:2026-10-06T18:12:23Z",
@@ -33871,6 +33812,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166229:6022529077:2026-10-06T18:12:44Z:automerge",
+      "comment_id": "6022529077",
+      "comment_version_key": "6022529077:2026-10-06T18:12:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166229#issuecomment-6022529077",
+      "comment_created_at": "2026-10-06T18:12:44Z",
+      "comment_updated_at": "2026-10-06T18:12:44Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166229,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T18:13:54.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-issue-166220-in-openclaw",
+        "head_sha": "af47db9a721ef82100ef3f50b471dcc58dcbf4ae",
+        "cluster_id": "automerge-openclaw-openclaw-166229",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166229.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166229.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
