@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T08:54:14.445Z",
+  "updated_at": "2026-10-06T08:54:26.748Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1461:6008676041:2026-10-06T03:22:41Z:clawsweeper_needs_human",
-      "comment_id": "6008676041",
-      "comment_version_key": "6008676041:2026-10-06T03:22:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1461#issuecomment-6008676041",
-      "comment_created_at": "2026-10-06T03:22:41Z",
-      "comment_updated_at": "2026-10-06T03:22:41Z",
-      "comment_body_sha256": "452aba1dcc653cca3f0fc567289b8f2333401d33d526daa73e0ebe673544a72e",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1461,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Add after-fix Helm terminal output showing the corrected refusal and successful empty-array recovery; redact private endpoints, IP addresses, credentials, and other private details. A... (sha=a0d007f3fe0045a3323918f1b0bf3edce196ea20)",
-      "expected_head_sha": "a0d007f3fe0045a3323918f1b0bf3edce196ea20",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T03:23:35.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-egress-empty-msg",
-        "head_sha": "a0d007f3fe0045a3323918f1b0bf3edce196ea20",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165926:6008677749:2026-10-06T03:22:51Z:clawsweeper_needs_human",
       "comment_id": "6008677749",
@@ -33439,6 +33406,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:162548:6012807642:2026-10-06T08:53:25Z:re_review",
+      "comment_id": "6012807642",
+      "comment_version_key": "6012807642:2026-10-06T08:53:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162548#issuecomment-6012807642",
+      "comment_created_at": "2026-10-06T08:53:25Z",
+      "comment_updated_at": "2026-10-06T08:53:25Z",
+      "comment_body_sha256": "d922332675a9bc8d273b3666bbf2f965ffdec30a137f2525c126f273d80d1a5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162548,
+      "author": "linancn",
+      "author_id": 31125281,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T08:54:25.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-imap-missing-uidnext",
+        "head_sha": "e20ae7c2f9a526c08cf5f5c4c3ab2f9629fd9381",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
