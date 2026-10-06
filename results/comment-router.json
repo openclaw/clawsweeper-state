@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:21:39.165Z",
+  "updated_at": "2026-10-06T04:21:52.564Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165805:6003595438:2026-10-05T21:43:05Z:clawsweeper_needs_human",
-      "comment_id": "6003595438",
-      "comment_version_key": "6003595438:2026-10-05T21:43:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165805#issuecomment-6003595438",
-      "comment_created_at": "2026-10-05T21:43:05Z",
-      "comment_updated_at": "2026-10-05T21:43:05Z",
-      "comment_body_sha256": "6b22131510eb94adec7950a7ecafec578965dedb1c2853bbe008a2f1af996794",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165805,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied macOS trace exercises the production workspace bridge with scripted dir.list responses and observes rejection after 32 calls, but... (sha=e6ac5076b9c783b920e77da956a774b428a8e2d7)",
-      "expected_head_sha": "e6ac5076b9c783b920e77da956a774b428a8e2d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T21:44:03.653Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/file-transfer-directory-page-cap",
-        "head_sha": "e6ac5076b9c783b920e77da956a774b428a8e2d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1400:5999390934:2026-10-05T21:43:26Z:clawsweeper_needs_human",
       "comment_id": "5999390934",
@@ -33926,6 +33893,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163646:6009265944:2026-10-06T04:20:56Z:re_review",
+      "comment_id": "6009265944",
+      "comment_version_key": "6009265944:2026-10-06T04:20:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163646#issuecomment-6009265944",
+      "comment_created_at": "2026-10-06T04:20:56Z",
+      "comment_updated_at": "2026-10-06T04:20:56Z",
+      "comment_body_sha256": "ab440568d365dbe6f49cf58cc07fc6949fc025890515404f6d531f6c00ced255",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163646,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T04:21:50.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-158902-gateway-compat",
+        "head_sha": "7d5a0810250007cf581c022663e9b8c5baef2a61",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
