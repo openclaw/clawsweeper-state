@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T22:26:33.166Z",
+  "updated_at": "2026-10-06T22:26:52.168Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165300:6009144112:2026-10-06T04:09:05Z:re_review",
-      "comment_id": "6009144112",
-      "comment_version_key": "6009144112:2026-10-06T04:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165300#issuecomment-6009144112",
-      "comment_created_at": "2026-10-06T04:09:05Z",
-      "comment_updated_at": "2026-10-06T04:09:05Z",
-      "comment_body_sha256": "be6ed1624ac35ef4e2f2260bf16cd4d6baa60348aebaccbf4ae3c402780fff54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165300,
-      "author": "patrickrun",
-      "author_id": 29052739,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review: the two notes-ownership regressions are fixed at `d562661a3adf990ccc6320d17ff9e96b2b6804ea`. the pr body now answers the recovery-scope question: the standalone sdk helper behavior is unchanged, and inline orphan recovery remains opt-in through the memory wiki wrapper. focused tests and targeted static checks passed. the body explicitly states that no live existing-vault cli/tool proof was run, so this update makes no such claim",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T16:05:07.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/managed-markdown-parser",
-        "head_sha": "ccab9028e92a56d05c42cc56f44544cbf1e1b580",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165300:5987467322:2026-10-06T16:03:58Z:clawsweeper_needs_human",
       "comment_id": "5987467322",
@@ -33875,6 +33828,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-picker-availability",
         "head_sha": "be5ebe4628211c1720330e8e137f5090bfa831b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1500:5806089178:2026-10-06T22:25:56Z:clawsweeper_needs_human",
+      "comment_id": "5806089178",
+      "comment_version_key": "5806089178:2026-10-06T22:25:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1500#issuecomment-5806089178",
+      "comment_created_at": "2026-09-24T01:57:10Z",
+      "comment_updated_at": "2026-10-06T22:25:56Z",
+      "comment_body_sha256": "3a468d79e8ea6b5e10ba6d84c9647fd2c560513b30d0b11393c1c5534e9de19a",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Reconcile the title and opening impact statement with the Gateway's existing native-mask restoration, and remove stale statements saying the Config page was not exercised. (sha=6ad6ed0f3b253d7577701ac95db040bc4b0acd68)",
+      "expected_head_sha": "6ad6ed0f3b253d7577701ac95db040bc4b0acd68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T22:26:52.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f061-config-redaction-save",
+        "head_sha": "6ad6ed0f3b253d7577701ac95db040bc4b0acd68",
         "cluster_id": null,
         "job_path": null
       }
