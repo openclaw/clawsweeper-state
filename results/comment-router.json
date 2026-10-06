@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:18:45.655Z",
+  "updated_at": "2026-10-06T02:19:06.198Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161230:5904157342:2026-09-30T04:39:25Z:re_review",
-      "comment_id": "5904157342",
-      "comment_version_key": "5904157342:2026-09-30T04:39:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161230#issuecomment-5904157342",
-      "comment_created_at": "2026-09-30T04:39:25Z",
-      "comment_updated_at": "2026-09-30T04:39:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161230,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T18:55:44.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/159228-backup-agent-db-canonical-path",
-        "head_sha": "3a0ed2f7600549c10cb67433f025e1acfc75577c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161230:5893049210:2026-10-05T18:54:16Z:clawsweeper_auto_repair",
       "comment_id": "5893049210",
@@ -34062,6 +34015,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-sessions-branches-list-latency-20260919",
         "head_sha": "467c267918bec779b889be5b1f2204fbff99f30d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3812:5931883447:2026-10-06T02:18:16Z:clawsweeper_needs_human",
+      "comment_id": "5931883447",
+      "comment_version_key": "5931883447:2026-10-06T02:18:16Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3812#issuecomment-5931883447",
+      "comment_created_at": "2026-10-01T12:53:25Z",
+      "comment_updated_at": "2026-10-06T02:18:16Z",
+      "comment_body_sha256": "6d41dbda21bba555fe763f7165d24643fc69f761970cc53b79a210c7016ae405",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added test invokes the telemetry handler sequentially with mocked database responses and confirms no patch calls; the captured body reports... (sha=f087394171cdf062087a189f56e6422ff3760ff6)",
+      "expected_head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:19:06.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f023-install-telemetry-race",
+        "head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
         "cluster_id": null,
         "job_path": null
       }
