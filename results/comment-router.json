@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T23:20:54.446Z",
+  "updated_at": "2026-10-06T23:21:31.915Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166209:6021551877:2026-10-06T17:16:07Z:clawsweeper_needs_human",
-      "comment_id": "6021551877",
-      "comment_version_key": "6021551877:2026-10-06T17:16:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166209#issuecomment-6021551877",
-      "comment_created_at": "2026-10-06T17:16:07Z",
-      "comment_updated_at": "2026-10-06T17:16:07Z",
-      "comment_body_sha256": "2f7dcd0073e8e6f08f7478367209cbc27a72239ff6c8aabb2a3128312f5224b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166209,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Record the changed test file’s one-worker wall time and CI cost when available in the PR body, as required by repository policy. (sha=319bf48404465f1257cd5eb17f58b94a19eaf82c)",
-      "expected_head_sha": "319bf48404465f1257cd5eb17f58b94a19eaf82c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T17:17:22.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "investigate/updater-phase-profile-20261006",
-        "head_sha": "319bf48404465f1257cd5eb17f58b94a19eaf82c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103553:4934897631:2026-10-06T17:13:45Z:clawsweeper_auto_repair",
       "comment_id": "4934897631",
@@ -33669,6 +33636,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158903:6027239695:2026-10-06T23:20:33Z:re_review",
+      "comment_id": "6027239695",
+      "comment_version_key": "6027239695:2026-10-06T23:20:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158903#issuecomment-6027239695",
+      "comment_created_at": "2026-10-06T23:20:33Z",
+      "comment_updated_at": "2026-10-06T23:20:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158903,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T23:21:30.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-154390-required-worker-profile",
+        "head_sha": "5259efc07ef99f2539c5165cacb345c12d17bcb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
