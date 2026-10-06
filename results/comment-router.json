@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T09:57:26.641Z",
+  "updated_at": "2026-10-06T09:57:58.413Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149100:5680683785:2026-10-06T04:33:01Z:autoclose",
-      "comment_id": "5680683785",
-      "comment_version_key": "5680683785:2026-10-06T04:33:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149100#issuecomment-5680683785",
-      "comment_created_at": "2026-09-15T13:07:48Z",
-      "comment_updated_at": "2026-10-06T04:33:01Z",
-      "comment_body_sha256": "77283083aa0d9ff60c72747eeb2a4a2446ee759a4f5835a70db99141ca07b70c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149100,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=d4fee9e221be0caad9146eb39e1826acc3b9314a)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=d4fee9e221be0caad9146eb39e1826acc3b9314a)",
-      "expected_head_sha": "d4fee9e221be0caad9146eb39e1826acc3b9314a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T04:33:47.969Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-149050",
-        "head_sha": "d4fee9e221be0caad9146eb39e1826acc3b9314a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165941:6009319258:2026-10-06T04:33:00Z:clawsweeper_needs_human",
       "comment_id": "6009319258",
@@ -33317,6 +33284,65 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166062:6013816780:2026-10-06T09:57:11Z:automerge",
+      "comment_id": "6013816780",
+      "comment_version_key": "6013816780:2026-10-06T09:57:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6013816780",
+      "comment_created_at": "2026-10-06T09:57:11Z",
+      "comment_updated_at": "2026-10-06T09:57:11Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166062,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; current checks are failing: openclaw/dependency-review:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-06T09:57:55.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-auth-worker-fixture",
+        "head_sha": "af74429a612ad453c368294273663b3e9c631284",
+        "cluster_id": "automerge-openclaw-openclaw-166062",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
