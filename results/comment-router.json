@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T14:15:29.357Z",
+  "updated_at": "2026-10-06T14:15:39.038Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5996549102:2026-10-05T14:29:31Z:re_review",
-      "comment_id": "5996549102",
-      "comment_version_key": "5996549102:2026-10-05T14:29:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/906#issuecomment-5996549102",
-      "comment_created_at": "2026-10-05T14:29:31Z",
-      "comment_updated_at": "2026-10-05T14:29:31Z",
-      "comment_body_sha256": "2eedb5f1f5272390ec6389269ae26ae7b3b9c44b626562e6b102b80118801ac0",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 906,
-      "author": "miguelbranco80",
-      "author_id": 158162,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T08:23:37.524Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/per-person-gateway-roles",
-        "head_sha": "73ea7f9d6e59c06917757b3905ff53949536538a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5967351842:2026-10-03T08:51:09Z:re_review",
       "comment_id": "5967351842",
@@ -33523,6 +33476,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-10-06T14:14:08Z:clawsweeper_needs_human",
+      "comment_id": "5659092617",
+      "comment_version_key": "5659092617:2026-10-06T14:14:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147886#issuecomment-5659092617",
+      "comment_created_at": "2026-09-14T04:37:59Z",
+      "comment_updated_at": "2026-10-06T14:14:08Z",
+      "comment_body_sha256": "752f5b132b173a798685b525cb5510b47d7b7cdc879cef784ae7a5b5b23432a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147886,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two-entry channel configuration baseline increase requires explicit maintainer exception approval before merge. (sha=26e94102944c0c7ee21c168083bb8414e001d115)",
+      "expected_head_sha": "26e94102944c0c7ee21c168083bb8414e001d115",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T14:15:39.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-markdown-tables",
+        "head_sha": "26e94102944c0c7ee21c168083bb8414e001d115",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
