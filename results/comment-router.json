@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T09:57:58.413Z",
+  "updated_at": "2026-10-06T09:58:13.455Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165941:6009319258:2026-10-06T04:33:00Z:clawsweeper_needs_human",
@@ -33309,11 +33309,11 @@
       "trusted_bot": false,
       "trusted_bot_author": null,
       "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: openclaw/dependency-review:FAILURE",
+      "repair_reason": null,
       "expected_head_sha": null,
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-10-06T09:57:55.411Z",
+      "status": "executed",
+      "processed_at": "2026-10-06T09:58:05.442Z",
       "target": {
         "kind": "pull_request",
         "branch": "fix/github-copilot-auth-worker-fixture",
@@ -33323,26 +33323,20 @@
       },
       "actions": [
         {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
-        },
-        {
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:automerge",
           "job_path": null
         },
         {
-          "action": "dispatch_repair",
-          "status": "waiting",
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
           "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
+          "job_path": null
         },
         {
           "action": "comment",
-          "status": "pending",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
