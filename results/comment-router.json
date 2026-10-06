@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T21:47:26.117Z",
+  "updated_at": "2026-10-06T21:48:17.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152613:5739939568:2026-10-06T15:34:18Z:clawsweeper_needs_human",
-      "comment_id": "5739939568",
-      "comment_version_key": "5739939568:2026-10-06T15:34:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152613#issuecomment-5739939568",
-      "comment_created_at": "2026-09-19T06:30:09Z",
-      "comment_updated_at": "2026-10-06T15:34:18Z",
-      "comment_body_sha256": "0479b577e4c7d13c975a0ffeb2a023e973bfc76dbd7ea89f98221b75c072c3c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152613,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with main and targets a retired subsystem; any retained contribution needs a supported current owner rather than restoration of the removed Tasks runtime. (sha=af496ffa86fe073777914c1d1fe008055da0f487)",
-      "expected_head_sha": "af496ffa86fe073777914c1d1fe008055da0f487",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T15:37:23.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/151859-acp-maintenance-cleanup-diagnostics",
-        "head_sha": "af496ffa86fe073777914c1d1fe008055da0f487",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162507:5926921488:2026-10-06T15:27:11Z:clawsweeper_needs_human",
       "comment_id": "5926921488",
@@ -33868,6 +33835,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166284:6024982979:2026-10-06T21:46:57Z:clawsweeper_auto_merge",
+      "comment_id": "6024982979",
+      "comment_version_key": "6024982979:2026-10-06T21:46:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166284#issuecomment-6024982979",
+      "comment_created_at": "2026-10-06T20:36:49Z",
+      "comment_updated_at": "2026-10-06T21:46:57Z",
+      "comment_body_sha256": "afa83853cc2bf4a5bf386d148e66a24aebcfb503d53d26a0613f90f902dab0c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=583ae647a803d4feb53678861d391c37c8b64c58); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": "583ae647a803d4feb53678861d391c37c8b64c58",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T21:47:58.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-config-warning-size-drop",
+        "head_sha": "583ae647a803d4feb53678861d391c37c8b64c58",
+        "cluster_id": "automerge-openclaw-openclaw-166284",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
