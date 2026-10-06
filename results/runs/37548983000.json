@@ -1,0 +1,72 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-541",
+  "mode": "autonomous",
+  "run_id": "37548983000",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37548983000",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-541.md",
+  "published_at": "2026-10-06T23:58:40.791Z",
+  "canonical": "https://github.com/steipete/oracle/issues/541",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/541",
+  "canonical_pr": null,
+  "summary": "Verified the remaining diagnostic gaps on preflight main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow implementation remains viable. The fix artifact is ready for the executor, but local implementation and validation are blocked by the enforced read-only filesystem and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#541",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#541",
+      "candidate_fix": null,
+      "reason": "Implement only sanitized cookie-transfer diagnostics. The logged-out session and its cause remain unverified; authentication policy and dependency behavior are outside this fix."
+    },
+    {
+      "target": "#367",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation."
+    },
+    {
+      "target": "#372",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed policy; no mutation."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-541",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#541",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement the bounded plan. Re-fetch issue and branch state before applying it; do not merge or directly close the issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

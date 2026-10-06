@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-541"
 mode: "autonomous"
-run_id: "37229369038"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37229369038"
-head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
+run_id: "37548983000"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37548983000"
+head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-04T19:47:41.065Z"
+published_at: "2026-10-06T23:58:40.791Z"
 canonical: "https://github.com/steipete/oracle/issues/541"
 canonical_issue: "https://github.com/steipete/oracle/issues/541"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37229369038](https://github.com/openclaw/clawsweeper/actions/runs/37229369038)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37548983000](https://github.com/openclaw/clawsweeper/actions/runs/37548983000)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/541
 
 ## Summary
 
-Verified the diagnostic gap on preflight main 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow fix remains viable. Implementation and validation are blocked by the read-only environment; no files or GitHub items were changed and no PR was opened.
+Verified the remaining diagnostic gaps on preflight main SHA 5dd3cd855e14dce996038004f4c5b92b47eb19f9. A narrow implementation remains viable. The fix artifact is ready for the executor, but local implementation and validation are blocked by the enforced read-only filesystem and absent dependencies. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the diagnostic gap on preflight main 5dd3cd855e14dce996038004f4c5b92b47
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #541 | fix_needed | planned | canonical | No active implementation PR is present in the supplied inventory. Preserve #541 as the canonical request and implement diagnostics only. |
-| #367 | keep_closed | skipped | related | Historical context only; preserve the existing authentication policy. |
-| #372 | keep_closed | skipped | related | No further action on this merged PR. |
-| cluster:issue-steipete-oracle-541 | build_fix_artifact | planned |  | Return a concrete narrow fix plan; the environment blocks implementation rather than requiring a product decision. |
+| #541 | fix_needed | planned | canonical | Implement only sanitized cookie-transfer diagnostics. The logged-out session and its cause remain unverified; authentication policy and dependency behavior are outside this fix. |
+| #367 | keep_closed | skipped | related | Historical context only; no mutation. |
+| #372 | keep_closed | skipped | related | Preserve the landed policy; no mutation. |
+| cluster:issue-steipete-oracle-541 | build_fix_artifact | planned | canonical | A writable executor can implement the bounded plan. Re-fetch issue and branch state before applying it; do not merge or directly close the issue. |
 
 ## Needs Human
 
