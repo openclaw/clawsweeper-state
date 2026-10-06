@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:07:54.238Z",
+  "updated_at": "2026-10-06T04:07:57.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158051:5977841086:2026-10-04T07:49:19Z:re_review",
-      "comment_id": "5977841086",
-      "comment_version_key": "5977841086:2026-10-04T07:49:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158051#issuecomment-5977841086",
-      "comment_created_at": "2026-10-04T07:49:19Z",
-      "comment_updated_at": "2026-10-04T07:49:19Z",
-      "comment_body_sha256": "a6eb1c0640dd56da50085bd3f4cb6c892c720aad5eb2b1ebc73e7019d4c0ff18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158051,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T21:38:11.979Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158051:5978073047:2026-10-04T08:23:06Z:re_review",
       "comment_id": "5978073047",
@@ -33864,6 +33837,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2711:6009124047:2026-10-06T04:07:10Z:clawsweeper_auto_repair",
+      "comment_id": "6009124047",
+      "comment_version_key": "6009124047:2026-10-06T04:07:10Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2711#issuecomment-6009124047",
+      "comment_created_at": "2026-10-06T04:07:10Z",
+      "comment_updated_at": "2026-10-06T04:07:10Z",
+      "comment_body_sha256": "048d4214495032f56515415f8a9a23d1815137409e10794a44ca42fd0b06386c",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2711,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a11ce97a9bf7b062dbc4913f4935c544816bd0e2)",
+      "expected_head_sha": "a11ce97a9bf7b062dbc4913f4935c544816bd0e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T04:07:57.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fleet-alarm-rearm-loop",
+        "head_sha": "a11ce97a9bf7b062dbc4913f4935c544816bd0e2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
