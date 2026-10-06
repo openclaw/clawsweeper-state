@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-166062
 source: pr_automerge
 requested_by: "RomneyDa"
 requested_by_id: "6581799"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014655796"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6017417729"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomm
 Maintainer opted #166062 into ClawSweeper automerge.
 
 Requested by: RomneyDa
-Request comment: https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014655796
+Request comment: https://github.com/openclaw/openclaw/pull/166062#issuecomment-6017417729
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/166062
@@ -55,8 +55,3 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
 - Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
-
-Maintainer special instructions:
-
-Corrected CI repair uses the supported per-request timeout option; focused test and `pnpm tsgo:core:test` pass. Final branch AutoReview is P0/P1 clean.
-
