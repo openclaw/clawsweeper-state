@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T21:59:42.720Z",
+  "updated_at": "2026-10-06T21:59:43.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160981:5984584613:2026-10-04T21:29:16Z:re_review",
-      "comment_id": "5984584613",
-      "comment_version_key": "5984584613:2026-10-04T21:29:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160981#issuecomment-5984584613",
-      "comment_created_at": "2026-10-04T21:29:16Z",
-      "comment_updated_at": "2026-10-04T21:29:16Z",
-      "comment_body_sha256": "e32e9191546e9292a4fc4cc42d269431499d5720556117dd7334be520f2b3de1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160981,
-      "author": "yeager",
-      "author_id": 1206564,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T15:42:57.529Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-swedish-localization",
-        "head_sha": "6f92aaabf4160f61ea9508016dc78fc27b41a17a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160981:5884104390:2026-10-06T15:41:29Z:clawsweeper_needs_human",
       "comment_id": "5884104390",
@@ -33843,6 +33796,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-picker-availability",
         "head_sha": "95b44d68654c66b9c17b9c3a436b8a390391bf55",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153776:5750668716:2026-10-06T21:58:53Z:clawsweeper_auto_repair",
+      "comment_id": "5750668716",
+      "comment_version_key": "5750668716:2026-10-06T21:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153776#issuecomment-5750668716",
+      "comment_created_at": "2026-09-20T15:15:20Z",
+      "comment_updated_at": "2026-10-06T21:58:53Z",
+      "comment_body_sha256": "b407d271332c0eb77f6084e8d9bd8cb48be8baacdf7719f39411320ee4b518e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153776,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=33d6b0acb441c3756b1b6e5202716343f86bb660)",
+      "expected_head_sha": "33d6b0acb441c3756b1b6e5202716343f86bb660",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T21:59:43.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-windows-home-path-clean",
+        "head_sha": "33d6b0acb441c3756b1b6e5202716343f86bb660",
         "cluster_id": null,
         "job_path": null
       }
