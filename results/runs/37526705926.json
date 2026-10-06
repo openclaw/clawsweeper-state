@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166271",
+  "mode": "autonomous",
+  "run_id": "37526705926",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37526705926",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166271.md",
+  "published_at": "2026-10-06T21:09:33.708Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166271",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166271",
+  "canonical_pr": null,
+  "summary": "The hook-context replay mismatch remains source-proven on main 660556970ac30cc71ee5b4a5bf8d270acc5a318a. Plan one narrow implementation PR using the existing retained context carrier. No code changes, runtime tests, or GitHub mutations were performed in this read-only worker.",
+  "actions": [
+    {
+      "target": "#166271",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166271",
+      "candidate_fix": null,
+      "reason": "A narrow repair is warranted: persist hook additions through the existing context owner on append-only routes instead of temporarily rewriting the current user message."
+    },
+    {
+      "target": "#159196",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#166271",
+      "candidate_fix": null,
+      "reason": "Keep open as a related prefix-stability report; this repair does not establish that its broader failures are fixed."
+    },
+    {
+      "target": "#91223",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#99495",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166271",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166271",
+      "candidate_fix": null,
+      "reason": "No viable contributor PR is present in the hydrated inventory; create a focused fix through the deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
