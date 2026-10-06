@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:37:30.187Z",
+  "updated_at": "2026-10-06T13:37:32.267Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165483:5991896194:2026-10-06T07:40:03Z:clawsweeper_needs_human",
-      "comment_id": "5991896194",
-      "comment_version_key": "5991896194:2026-10-06T07:40:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165483#issuecomment-5991896194",
-      "comment_created_at": "2026-10-05T09:37:58Z",
-      "comment_updated_at": "2026-10-06T07:40:03Z",
-      "comment_body_sha256": "8d2c8f06652219872dece345537610e625d7ab14f6c6233521570f638c17d978",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165483,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=50bc8d4c8fd4d526cae4941fc380fd0b95c614e0)",
-      "expected_head_sha": "50bc8d4c8fd4d526cae4941fc380fd0b95c614e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T07:41:01.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-abort-lifecycle",
-        "head_sha": "50bc8d4c8fd4d526cae4941fc380fd0b95c614e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151284:5723390781:2026-10-06T07:40:34Z:clawsweeper_needs_human",
       "comment_id": "5723390781",
@@ -33362,6 +33329,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6017442863:2026-10-06T13:35:14Z:re_review",
+      "comment_id": "6017442863",
+      "comment_version_key": "6017442863:2026-10-06T13:35:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6017442863",
+      "comment_created_at": "2026-10-06T13:35:14Z",
+      "comment_updated_at": "2026-10-06T13:35:14Z",
+      "comment_body_sha256": "fd7aa895151a20ef3f892db435b4dd1ce25fb0c06c29416c7db9e84f80b9efb3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main into memorytunning-pr-v2 (new head b58afc4ed7, 0 behind). focused audit tests 195/195 green, skill-selection files intact (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). note: tsc core shows 2 pre-existing upstream errors in state-migrations.no-replace-move.ts (not our files)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T13:37:30.701Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "b58afc4ed752ea1d32ebd8d5c3b8990a5979738a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
