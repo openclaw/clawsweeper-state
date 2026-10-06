@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T01:41:29.061Z",
+  "updated_at": "2026-10-06T01:41:33.299Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160700:5936522783:2026-10-01T17:09:31Z:re_review",
-      "comment_id": "5936522783",
-      "comment_version_key": "5936522783:2026-10-01T17:09:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160700#issuecomment-5936522783",
-      "comment_created_at": "2026-10-01T17:09:31Z",
-      "comment_updated_at": "2026-10-01T17:09:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160700,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T18:02:43.346Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1073",
-        "head_sha": "6f1c6354f2068729e959886ba0e1c955e6049af7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160700:5878204118:2026-10-05T18:01:36Z:clawsweeper_needs_human",
       "comment_id": "5878204118",
@@ -34182,6 +34135,39 @@
         "kind": "pull_request",
         "branch": "fix/npm-missing-error",
         "head_sha": "7ba4e2f5d7b233fc39dc60096552cd676eca90b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149816:5693390456:2026-10-06T01:40:35Z:clawsweeper_needs_human",
+      "comment_id": "5693390456",
+      "comment_version_key": "5693390456:2026-10-06T01:40:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149816#issuecomment-5693390456",
+      "comment_created_at": "2026-09-16T07:01:48Z",
+      "comment_updated_at": "2026-10-06T01:40:35Z",
+      "comment_body_sha256": "776812c11d05ed82ebbd3514b8eeae8d563994229ad0f6f5d8b2856f9f748277",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with its base; exporter admission, lifecycle prerequisites, and upload must be integrated with current CI ownership and qualified on the repaired head. (sha=8913b1a52174dd10daea967e0ba6bcdadd6726f2)",
+      "expected_head_sha": "8913b1a52174dd10daea967e0ba6bcdadd6726f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T01:41:33.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-ios-release-simulator-artifact-20260916",
+        "head_sha": "8913b1a52174dd10daea967e0ba6bcdadd6726f2",
         "cluster_id": null,
         "job_path": null
       }
