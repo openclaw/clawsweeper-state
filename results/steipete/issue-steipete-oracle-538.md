@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-538"
 mode: "autonomous"
-run_id: "37421203022"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37421203022"
+run_id: "37432613649"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37432613649"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T06:02:29.350Z"
+published_at: "2026-10-06T07:59:26.761Z"
 canonical: "https://github.com/steipete/oracle/issues/538"
 canonical_issue: "https://github.com/steipete/oracle/issues/538"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37421203022](https://github.com/openclaw/clawsweeper/actions/runs/37421203022)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37432613649](https://github.com/openclaw/clawsweeper/actions/runs/37432613649)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/538
 
 ## Summary
 
-Confirmed #538 on the supplied current main SHA. A narrow fix is viable, but this read-only workspace prevents implementation, dependency installation, and branch validation. The executable fix artifact is planned; no files or GitHub state were changed.
+Confirmed #538 on supplied current main and reproduced stale UUID selection using the actual resolver in memory. Implementation and required validation are blocked by the read-only filesystem. No files or GitHub state changed; a narrow executable fix plan is provided.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Confirmed #538 on the supplied current main SHA. A narrow fix is viable, but thi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #538 | fix_needed | planned | canonical | The bug remains viable and needs a narrow discovery repair. Local implementation and validation are blocked by the read-only filesystem; no product decision is required. |
-| #535 | keep_related | planned | related | Distinct root cause; preserve for its own implementation job. |
-| #537 | keep_related | planned | related | Distinct root cause; preserve existing approval semantics in this repair. |
-| #426 | keep_closed | skipped | related | Historical evidence only; retain its bounded probe and existing contributor attribution. |
-| cluster:issue-steipete-oracle-538 | build_fix_artifact | planned |  | A narrow, reviewable fix plan is available despite the local implementation blocker. |
+| #538 | fix_needed | planned | canonical | Narrow ordinary discovery bug remains valid. No active implementation PR is present in the hydrated inventory. |
+| #535 | keep_related | planned | related | Distinct root cause; retain as adjacent context. |
+| #537 | keep_related | planned | related | Distinct connection-stage defect; retain as adjacent context. |
+| #426 | keep_closed | skipped | related | Historical implementation context only; no mutation. |
+| cluster:issue-steipete-oracle-538 | build_fix_artifact | planned | canonical | Artifact construction is complete. Applying it and validating clawsweeper/issue-steipete-oracle-538 require a writable executor; PR creation remains gated on successful validation. |
 
 ## Needs Human
 
