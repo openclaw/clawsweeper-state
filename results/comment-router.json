@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T05:50:52.082Z",
+  "updated_at": "2026-10-06T05:50:52.865Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165842:6005607892:2026-10-05T23:40:15Z:re_review",
-      "comment_id": "6005607892",
-      "comment_version_key": "6005607892:2026-10-05T23:40:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165842#issuecomment-6005607892",
-      "comment_created_at": "2026-10-05T23:40:15Z",
-      "comment_updated_at": "2026-10-05T23:40:15Z",
-      "comment_body_sha256": "07f7862fa9c368e96f47c13392e90024560b965c9eb7341a9e8fad1ca20e0783",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165842,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T23:46:03.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-whatsapp-inbound-drain",
-        "head_sha": "625dc96195d4bfbd4430afea964b1cd661565380",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165819:6005624182:2026-10-05T23:41:13Z:re_review",
       "comment_id": "6005624182",
@@ -33373,6 +33326,39 @@
         "kind": "pull_request",
         "branch": "fix/clawsweeper-bot-f001",
         "head_sha": "46a12f4cea9890971012bed37a53dd5f3340880e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163553:5953627567:2026-10-06T05:49:59Z:clawsweeper_needs_human",
+      "comment_id": "5953627567",
+      "comment_version_key": "5953627567:2026-10-06T05:49:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163553#issuecomment-5953627567",
+      "comment_created_at": "2026-10-02T13:37:46Z",
+      "comment_updated_at": "2026-10-06T05:49:59Z",
+      "comment_body_sha256": "c0ab8ac30f61501efd0e85f4969955f860395747e43a382d7645c51d96ac3a3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The tier projector feeds the real map-entry validator. Inspected scratch-Gateway Chromium screenshots provide positive rendering evide... (sha=c32550b36ab3dc5f689035d5754eeb3ba9b4c154)",
+      "expected_head_sha": "c32550b36ab3dc5f689035d5754eeb3ba9b4c154",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T05:50:52.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr/pr-1-map-drafts",
+        "head_sha": "c32550b36ab3dc5f689035d5754eeb3ba9b4c154",
         "cluster_id": null,
         "job_path": null
       }
