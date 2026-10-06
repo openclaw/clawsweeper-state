@@ -2,12 +2,12 @@
 repo: "openclaw/ocm"
 cluster_id: "issue-openclaw-ocm-296"
 mode: "autonomous"
-run_id: "37506231983"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37506231983"
+run_id: "37527228207"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37527228207"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T17:51:10.627Z"
+published_at: "2026-10-06T20:36:40.438Z"
 canonical: "https://github.com/openclaw/ocm/issues/296"
 canonical_issue: "https://github.com/openclaw/ocm/issues/296"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/ocm
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37506231983](https://github.com/openclaw/clawsweeper/actions/runs/37506231983)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37527228207](https://github.com/openclaw/clawsweeper/actions/runs/37527228207)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/ocm/issues/296
 
 ## Summary
 
-The isolation gap remains on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused fix artifact is ready, but implementation and validation are blocked by the read-only filesystem. No files or GitHub items were changed.
+Source inspection confirms the isolation gap on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused fix remains viable. Implementation and validation are blocked by the read-only filesystem and unavailable approved remote worker; no files changed, tests ran, or PR was opened.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The isolation gap remains on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d13
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #296 | fix_needed | planned | canonical | The admission safeguard from #47 does not cover siblings admitted after preparation. Keep #296 open for the focused implementation. |
-| #47 | keep_closed | skipped | related | Historical context only; no closure or repair action applies to this merged PR. |
-| cluster:issue-openclaw-ocm-296 | build_fix_artifact | planned |  | The narrow fix remains viable. The artifact can be applied by an executor with a writable task checkout and approved remote validation worker. |
+| #296 | fix_needed | planned | canonical | Preserve runtime isolation through finalization, verification, and automatic recovery; refusing rollback after admitting a sibling would leave the primary transaction unrecovered. |
+| #47 | keep_closed | skipped | related | Historical context for the isolation invariant, not a closure or branch-repair target. |
+| cluster:issue-openclaw-ocm-296 | build_fix_artifact | planned | canonical | The fix artifact is actionable for an executor with writable source access and an approved remote worker; implementation remains blocked in this session. |
 
 ## Needs Human
 

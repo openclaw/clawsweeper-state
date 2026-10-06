@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-296",
+  "mode": "autonomous",
+  "run_id": "37527228207",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37527228207",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-296.md",
+  "published_at": "2026-10-06T20:36:40.438Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the isolation gap on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused fix remains viable. Implementation and validation are blocked by the read-only filesystem and unavailable approved remote worker; no files changed, tests ran, or PR was opened.",
+  "actions": [
+    {
+      "target": "#296",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "Preserve runtime isolation through finalization, verification, and automatic recovery; refusing rollback after admitting a sibling would leave the primary transaction unrecovered."
+    },
+    {
+      "target": "#47",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "Historical context for the isolation invariant, not a closure or branch-repair target."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-296",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "The fix artifact is actionable for an executor with writable source access and an approved remote worker; implementation remains blocked in this session."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
