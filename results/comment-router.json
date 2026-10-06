@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:24:19.954Z",
+  "updated_at": "2026-10-06T12:24:22.392Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:102379:5902064508:2026-09-30T01:08:58Z:re_review",
-      "comment_id": "5902064508",
-      "comment_version_key": "5902064508:2026-09-30T01:08:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-5902064508",
-      "comment_created_at": "2026-09-30T01:08:58Z",
-      "comment_updated_at": "2026-09-30T01:08:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102379,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T06:18:46.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bug-052-msteams-inbound-normalize",
-        "head_sha": "86c5859b661663e200a4e254b621e1bd15309e36",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-10-06T06:17:51Z:clawsweeper_needs_human",
       "comment_id": "4921233233",
@@ -34080,6 +34033,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166104:6015956547:2026-10-06T12:23:24Z:clawsweeper_needs_human",
+      "comment_id": "6015956547",
+      "comment_version_key": "6015956547:2026-10-06T12:23:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166104#issuecomment-6015956547",
+      "comment_created_at": "2026-10-06T12:11:52Z",
+      "comment_updated_at": "2026-10-06T12:23:24Z",
+      "comment_body_sha256": "3b02b80c253b3ff1110d5e590dd01550beb59df4dc2fc5b29e07706e35ff3d2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Honor the explicit draft hold; the author must conclude whether this narrow optimization is ready to land and mark the PR ready before merge. (sha=91f8e3cf39a56835f251b58cd486c3c4ad4cb32c)",
+      "expected_head_sha": "91f8e3cf39a56835f251b58cd486c3c4ad4cb32c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T12:24:22.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-worker-idle-heap-counter",
+        "head_sha": "91f8e3cf39a56835f251b58cd486c3c4ad4cb32c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
