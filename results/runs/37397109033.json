@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/gitcrawl",
+  "cluster_id": "issue-openclaw-gitcrawl-232",
+  "mode": "autonomous",
+  "run_id": "37397109033",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37397109033",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gitcrawl-232.md",
+  "published_at": "2026-10-06T01:08:44.937Z",
+  "canonical": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_issue": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_pr": null,
+  "summary": "Confirmed the candidate-query bottleneck remains on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. Prepared a narrow implementation artifact. The read-only workspace blocks code changes and Go validation; no branch or PR was created.",
+  "actions": [
+    {
+      "target": "#232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "The focused performance repair remains necessary. Keep this issue open while the executor implements and validates the fix."
+    },
+    {
+      "target": "#175",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Preserve the merged behavior and contributor credit; no mutation is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair is viable and can be handed to the writable executor without requiring maintainer judgment."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on implementation and validation in a writable executor. Reuse clawsweeper/issue-openclaw-gitcrawl-232 if present, recheck active linked work, and publish only after the required evidence and review pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
