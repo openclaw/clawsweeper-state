@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:18:30.111Z",
+  "updated_at": "2026-10-06T04:18:33.224Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165799:6003532219:2026-10-05T21:39:57Z:re_review",
-      "comment_id": "6003532219",
-      "comment_version_key": "6003532219:2026-10-05T21:39:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165799#issuecomment-6003532219",
-      "comment_created_at": "2026-10-05T21:39:57Z",
-      "comment_updated_at": "2026-10-05T21:39:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165799,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:41:30.587Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w5board",
-        "head_sha": "2b638d373d499b484a8ed0ee8c7be7355c73a836",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:37:5923604753:2026-10-05T21:40:54Z:clawsweeper_needs_human",
       "comment_id": "5923604753",
@@ -33903,6 +33856,39 @@
         "kind": "pull_request",
         "branch": "fix-collector-withdrawal-work",
         "head_sha": "30f0c39aa22670ff2ec618fdf7562c94a18023f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165940:6009233544:2026-10-06T04:17:43Z:clawsweeper_needs_human",
+      "comment_id": "6009233544",
+      "comment_version_key": "6009233544:2026-10-06T04:17:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165940#issuecomment-6009233544",
+      "comment_created_at": "2026-10-06T04:17:43Z",
+      "comment_updated_at": "2026-10-06T04:17:43Z",
+      "comment_body_sha256": "0be8dd307f51d7cb2ac3c599e7ef779ea79077def2c627ac865e9f47233f0ded",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165940,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=61e696038897519374551048b26327b6dd28d86a)",
+      "expected_head_sha": "61e696038897519374551048b26327b6dd28d86a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T04:18:33.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-test-wal-pacing",
+        "head_sha": "61e696038897519374551048b26327b6dd28d86a",
         "cluster_id": null,
         "job_path": null
       }
