@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/gitcrawl",
+  "cluster_id": "issue-openclaw-gitcrawl-232",
+  "mode": "autonomous",
+  "run_id": "37409388688",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37409388688",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gitcrawl-232.md",
+  "published_at": "2026-10-06T03:35:49.095Z",
+  "canonical": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_issue": "https://github.com/openclaw/gitcrawl/issues/232",
+  "canonical_pr": null,
+  "summary": "Verified the reported query and missing ordering index on preflight main 3f4276c344af4a6227fa3ce9c3b2048969657fcb. A narrow repair remains viable. Implementation and runtime validation are blocked by the read-only filesystem; a fresh reporter-PR check also requires authenticated GitHub reads. No files or GitHub items changed.",
+  "actions": [
+    {
+      "target": "#232",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "The ordinary performance bug remains source-verifiable. Keep the issue open and implement through the cluster artifact after refreshing active-work inventory in a writable executor."
+    },
+    {
+      "target": "#175",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Historical behavior-preservation evidence, not a repair candidate or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-gitcrawl-232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#232",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow implementation to a writable executor. Do not publish a PR until active-work checks, production-path proof, review, and validation pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
