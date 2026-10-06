@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:32:34.049Z",
+  "updated_at": "2026-10-06T20:32:45.483Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-10-06T13:38:38Z:clawsweeper_needs_human",
-      "comment_id": "5466178577",
-      "comment_version_key": "5466178577:2026-10-06T13:38:38Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
-      "comment_created_at": "2026-08-30T02:13:24Z",
-      "comment_updated_at": "2026-10-06T13:38:38Z",
-      "comment_body_sha256": "4f8e4fb001ee513d91f68e02cd3c581d39059d9b43dffdcad314083218d34d52",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3548,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Node skill, package, and GitHub archive downloads that continue making progress beyond 15 seconds will abort and restart on retry. The total-transfer limit still needs explic... (sha=ed720cb0cba59b02b770d4ca1d51834bf6e4dabd)",
-      "expected_head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T13:39:52.377Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f003-fetch-body-timeout",
-        "head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152000:5733884314:2026-10-06T13:39:27Z:clawsweeper_auto_repair",
       "comment_id": "5733884314",
@@ -33818,6 +33785,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166284:6024899365:2026-10-06T20:31:43Z:automerge",
+      "comment_id": "6024899365",
+      "comment_version_key": "6024899365:2026-10-06T20:31:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166284#issuecomment-6024899365",
+      "comment_created_at": "2026-10-06T20:31:43Z",
+      "comment_updated_at": "2026-10-06T20:31:43Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166284,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T20:32:37.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-config-warning-size-drop",
+        "head_sha": "583ae647a803d4feb53678861d391c37c8b64c58",
+        "cluster_id": "automerge-openclaw-openclaw-166284",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
