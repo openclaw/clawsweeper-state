@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:02:16.316Z",
+  "updated_at": "2026-10-06T12:02:37.375Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/hermit:52:5791146685:2026-10-06T06:02:33Z:clawsweeper_needs_human",
-      "comment_id": "5791146685",
-      "comment_version_key": "5791146685:2026-10-06T06:02:33Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/52#issuecomment-5791146685",
-      "comment_created_at": "2026-09-23T07:52:50Z",
-      "comment_updated_at": "2026-10-06T06:02:33Z",
-      "comment_body_sha256": "9630b20f228422df09b57e35a6d2ef953c63e9a421fcca5569cf87703951b189",
-      "repo": "openclaw/hermit",
-      "issue_number": 52,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=af2b07dd98da2275cf75eb73dd5e5a323c633208)",
-      "expected_head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T06:03:41.847Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/sweep-3",
-        "head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/kova:166:5975945423:2026-10-06T06:02:53Z:clawsweeper_needs_human",
       "comment_id": "5975945423",
@@ -34097,6 +34064,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165824:6015790293:2026-10-06T12:01:33Z:re_review",
+      "comment_id": "6015790293",
+      "comment_version_key": "6015790293:2026-10-06T12:01:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165824#issuecomment-6015790293",
+      "comment_created_at": "2026-10-06T12:01:33Z",
+      "comment_updated_at": "2026-10-06T12:01:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165824,
+      "author": "synapse-homeroot",
+      "author_id": 313547117,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T12:02:35.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-inbound-debounce",
+        "head_sha": "98574163d557a1c810c0c788f194e2966b0b2e17",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
