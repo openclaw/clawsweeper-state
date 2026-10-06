@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T23:22:03.652Z",
+  "updated_at": "2026-10-06T23:23:34.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166040:6013143720:2026-10-06T17:14:41Z:clawsweeper_needs_human",
-      "comment_id": "6013143720",
-      "comment_version_key": "6013143720:2026-10-06T17:14:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166040#issuecomment-6013143720",
-      "comment_created_at": "2026-10-06T09:14:35Z",
-      "comment_updated_at": "2026-10-06T17:14:41Z",
-      "comment_body_sha256": "f2e45f8c254e5d712274caa6280808676acf5a2df31a4b77747be8f492e39255",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Add the repository-required pnpm test &lt;file> --maxWorkers=1 wall-time measurements and available CI seconds for the new or materially changed tests to the PR body. (sha=89fd70dbd61d34e9dd7d52333f805ae235aac791)",
-      "expected_head_sha": "89fd70dbd61d34e9dd7d52333f805ae235aac791",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T17:17:33.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dashboard-card-remove-archived",
-        "head_sha": "89fd70dbd61d34e9dd7d52333f805ae235aac791",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:106789",
       "comment_id": "repair-loop-label-sweep:automerge:106789",
@@ -33683,6 +33650,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165621:6027256619:2026-10-06T23:22:02Z:re_review",
+      "comment_id": "6027256619",
+      "comment_version_key": "6027256619:2026-10-06T23:22:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165621#issuecomment-6027256619",
+      "comment_created_at": "2026-10-06T23:22:02Z",
+      "comment_updated_at": "2026-10-06T23:22:02Z",
+      "comment_body_sha256": "6d4af8d8c16cc7d69c816b471edbd897fc3999d1b03f20e897d9ca93d47f1c4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165621,
+      "author": "nocodet888-arch",
+      "author_id": 305874177,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T23:23:32.984Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/copilot-usage-cancel",
+        "head_sha": "8e0d776b2a65c5d748820c0c91a9470a3767ebed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
