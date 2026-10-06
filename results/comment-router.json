@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T00:05:55.271Z",
+  "updated_at": "2026-10-06T00:06:46.474Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147905:5829444943:2026-09-25T08:35:45Z:re_review",
-      "comment_id": "5829444943",
-      "comment_version_key": "5829444943:2026-09-25T08:35:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147905#issuecomment-5829444943",
-      "comment_created_at": "2026-09-25T08:35:45Z",
-      "comment_updated_at": "2026-09-25T08:35:45Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147905,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T16:30:23.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/locale-publisher-stale-automerge-recovery",
-        "head_sha": "63fd7faaf76e560c6adf93d2a584921871dfdc94",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165662:5998663323:2026-10-05T16:29:06Z:clawsweeper_needs_human",
       "comment_id": "5998663323",
@@ -34023,6 +33976,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-phase-safe-watchdog-fallback",
         "head_sha": "c4ac55976175713486274361045cd6a7a7d46aae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165855:6005944652:2026-10-06T00:05:45Z:clawsweeper_needs_human",
+      "comment_id": "6005944652",
+      "comment_version_key": "6005944652:2026-10-06T00:05:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165855#issuecomment-6005944652",
+      "comment_created_at": "2026-10-05T23:58:55Z",
+      "comment_updated_at": "2026-10-06T00:05:45Z",
+      "comment_body_sha256": "280836d5892d9f4adfb33474d113b7998f79039c3b68ce9389c912f1b1a3a83d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new beta compatibility modules have not yet been shown to let the published 2026.10.1-beta.1 updater finish after package replacement; successful packaging does not establish that... (sha=fecc61402094199abd31f0d122c027c2b765a016)",
+      "expected_head_sha": "fecc61402094199abd31f0d122c027c2b765a016",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T00:06:46.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-compat-inventory",
+        "head_sha": "fecc61402094199abd31f0d122c027c2b765a016",
         "cluster_id": null,
         "job_path": null
       }
