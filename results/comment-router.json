@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-06T00:09:27.473Z",
+  "updated_at": "2026-10-06T00:10:02.255Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147609:5780891748:2026-09-22T17:21:42Z:re_review",
-      "comment_id": "5780891748",
-      "comment_version_key": "5780891748:2026-09-22T17:21:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147609#issuecomment-5780891748",
-      "comment_created_at": "2026-09-22T17:21:42Z",
-      "comment_updated_at": "2026-09-22T17:21:42Z",
-      "comment_body_sha256": "1e67b4cda704e774001070216f4c5ea67d8776a754f427cb2dbcdd2a97ab815e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147609,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T16:30:59.857Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147609:5781406854:2026-09-22T17:59:31Z:re_review",
       "comment_id": "5781406854",
@@ -34042,6 +34015,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149317:5685599911:2026-10-06T00:09:01Z:clawsweeper_needs_human",
+      "comment_id": "5685599911",
+      "comment_version_key": "5685599911:2026-10-06T00:09:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149317#issuecomment-5685599911",
+      "comment_created_at": "2026-09-15T18:15:08Z",
+      "comment_updated_at": "2026-10-06T00:09:01Z",
+      "comment_body_sha256": "fc53e20845cba423033f9465a2ee29b2e10c9d1ee17cae19e541aa7999f94c94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149317,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: This head’s shared Web Audio queue has mocked regression proof; related browser observations do not demonstrate completed playback on this bran... (sha=ab85edfdf594060f22c1739c1f9e39132a2fc4d8)",
+      "expected_head_sha": "ab85edfdf594060f22c1739c1f9e39132a2fc4d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T00:10:02.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/realtime-talk-playback-overflow-queue-cap",
+        "head_sha": "ab85edfdf594060f22c1739c1f9e39132a2fc4d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
