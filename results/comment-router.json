@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:57:54.759Z",
+  "updated_at": "2026-10-06T20:58:07.060Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165792:6018191329:2026-10-06T14:14:24Z:re_review",
-      "comment_id": "6018191329",
-      "comment_version_key": "6018191329:2026-10-06T14:14:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165792#issuecomment-6018191329",
-      "comment_created_at": "2026-10-06T14:14:24Z",
-      "comment_updated_at": "2026-10-06T14:14:24Z",
-      "comment_body_sha256": "be09e924933d5a13dd687104a3db47c24d8f06b4e07abe68e60c1b9c89cc2949",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165792,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T14:15:27.629Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-unread-parent-ack",
-        "head_sha": "06c054b3946d4fe7e0c130746ae5c2fcedc364da",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-10-06T14:14:08Z:clawsweeper_needs_human",
       "comment_id": "5659092617",
@@ -33971,6 +33924,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T20:57:54.759Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155634:5774584522:2026-10-06T20:56:33Z:clawsweeper_needs_human",
+      "comment_id": "5774584522",
+      "comment_version_key": "5774584522:2026-10-06T20:56:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155634#issuecomment-5774584522",
+      "comment_created_at": "2026-09-22T10:01:52Z",
+      "comment_updated_at": "2026-10-06T20:56:33Z",
+      "comment_body_sha256": "83670e07839433a2262cd96356fd060c91aad48e7d69a41995c726bab3dccbf7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155634,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Captured terminal evidence demonstrates installed-plugin execution and real Unity Gateway streaming, dynamic models, and tool results.... (sha=f387a70b4450f1dfa1760413e5701c45cf1c8007)",
+      "expected_head_sha": "f387a70b4450f1dfa1760413e5701c45cf1c8007",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T20:58:07.060Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "databricks-native-provider",
+        "head_sha": "f387a70b4450f1dfa1760413e5701c45cf1c8007",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
