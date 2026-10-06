@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T03:33:22.771Z",
+  "updated_at": "2026-10-06T03:33:27.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159232:5856179695:2026-09-27T13:13:56Z:re_review",
-      "comment_id": "5856179695",
-      "comment_version_key": "5856179695:2026-09-27T13:13:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159232#issuecomment-5856179695",
-      "comment_created_at": "2026-09-27T13:13:56Z",
-      "comment_updated_at": "2026-09-27T13:13:56Z",
-      "comment_body_sha256": "5481ec49780da7e73b6ae8a61c289dcf4f396b9fedf0e1fe9ab420c247dc3ad2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159232,
-      "author": "alexeysophia",
-      "author_id": 236049996,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:16:35.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-vision-catalog-skip",
-        "head_sha": "32918d0f27dcb88ec5eec343388e62e57438838c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158051:6002520181:2026-10-05T21:00:24Z:re_review",
       "comment_id": "6002520181",
@@ -33907,6 +33860,39 @@
         "kind": "pull_request",
         "branch": "fix/f116-llama-health-body-timeout",
         "head_sha": "bccab25811633a9c64f9bdf3e23a5f5ff1e7187c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1467:6008773365:2026-10-06T03:32:28Z:clawsweeper_needs_human",
+      "comment_id": "6008773365",
+      "comment_version_key": "6008773365:2026-10-06T03:32:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1467#issuecomment-6008773365",
+      "comment_created_at": "2026-10-06T03:32:28Z",
+      "comment_updated_at": "2026-10-06T03:32:28Z",
+      "comment_body_sha256": "72a0d13d9596268e4f648e26d69c9b4dfaf7a100bbf9510d02b3722e872cfa6c",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Provide redacted after-refactor repository-options API output from a running controller before merge. (sha=d5d2caa6d25e3c6b27de7a52e397db4cd3f4a546)",
+      "expected_head_sha": "d5d2caa6d25e3c6b27de7a52e397db4cd3f4a546",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T03:33:27.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/oce-repository-option-text",
+        "head_sha": "d5d2caa6d25e3c6b27de7a52e397db4cd3f4a546",
         "cluster_id": null,
         "job_path": null
       }
