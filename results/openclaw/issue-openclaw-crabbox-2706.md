@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2706"
 mode: "autonomous"
-run_id: "37397204851"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37397204851"
+run_id: "37406988804"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37406988804"
 head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-06T01:09:29.632Z"
+published_at: "2026-10-06T03:05:46.216Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2706"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37397204851](https://github.com/openclaw/clawsweeper/actions/runs/37397204851)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37406988804](https://github.com/openclaw/clawsweeper/actions/runs/37406988804)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2706
 
 ## Summary
 
-Confirmed the reported precedence defect on preflight main 383c6ab828b29335853419c7476d304610d9f126. A narrow repair is viable; implementation and validation are blocked by the read-only filesystem. No files or GitHub state changed.
+Confirmed the precedence defect on supplied main 148d5dc33e7cf19ae109d93d44f356228d93be18. A narrow fix is viable; implementation and validation are blocked by the read-only environment. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the reported precedence defect on preflight main 383c6ab828b2933585341
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2706 | fix_needed | planned | canonical | The source confirms an existing-behavior bug with a narrow provider-neutral repair path. |
-| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | The artifact provides a focused implementation and validation path despite the worker's filesystem restriction. |
-| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked by the read-only checkout and Go cache restriction. A writable executor must establish the failing regression, implement the artifact, validate, and then create or update the single PR. |
+| #2706 | fix_needed | planned | canonical | The explicit command target must reach provider validation before the loaded Linux target can cause rejection. Keep the issue open. |
+| cluster:issue-openclaw-crabbox-2706 | build_fix_artifact | planned |  | A provider-neutral precedence repair can remain confined to target selection and focused tests. |
+| cluster:issue-openclaw-crabbox-2706 | open_fix_pr | blocked |  | PR creation is blocked until a writable executor establishes the failing regression, implements the fix, and validates the repaired branch. |
 
 ## Needs Human
 
