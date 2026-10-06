@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-166062
 source: pr_automerge
 requested_by: "RomneyDa"
 requested_by_id: "6581799"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014431057"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014655796"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/166062#issuecomm
 Maintainer opted #166062 into ClawSweeper automerge.
 
 Requested by: RomneyDa
-Request comment: https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014431057
+Request comment: https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014655796
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/166062
@@ -58,5 +58,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 
 Maintainer special instructions:
 
-CI repair: the `agent.wait` server long-poll budget remains 30s; only the test client transport budget now outlives it at 60s. Focused test passed in 20.9s. Final branch AutoReview is P0/P1 clean.
+Corrected CI repair uses the supported per-request timeout option; focused test and `pnpm tsgo:core:test` pass. Final branch AutoReview is P0/P1 clean.
 
