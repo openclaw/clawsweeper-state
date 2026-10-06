@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T16:10:04.380Z",
+  "updated_at": "2026-10-06T16:10:09.603Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163553:6013575987:2026-10-06T09:41:46Z:re_review",
-      "comment_id": "6013575987",
-      "comment_version_key": "6013575987:2026-10-06T09:41:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163553#issuecomment-6013575987",
-      "comment_created_at": "2026-10-06T09:41:46Z",
-      "comment_updated_at": "2026-10-06T09:41:46Z",
-      "comment_body_sha256": "1e6c10111bcaa8db1ad2c97eb336858de72235ceb767e4d2a9f949878bdb4bfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163553,
-      "author": "neilnyn",
-      "author_id": 178126040,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — the submitted key and acceptance outcome are now shown: the new `evidence-probe` entry is visible in the accounts list with a running status, and it persists in the gateway config (screenshot + redacted json in the pr body)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T09:42:44.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr/pr-1-map-drafts",
-        "head_sha": "c32550b36ab3dc5f689035d5754eeb3ba9b4c154",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164265:5968533470:2026-10-06T09:41:36Z:clawsweeper_needs_human",
       "comment_id": "5968533470",
@@ -33731,6 +33684,39 @@
         "kind": "pull_request",
         "branch": "fix/abort-admission-metadata",
         "head_sha": "b9c8cea6c96999a4a181feb888ea20753f208719",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4288:5998039129:2026-10-06T16:09:09Z:clawsweeper_needs_human",
+      "comment_id": "5998039129",
+      "comment_version_key": "5998039129:2026-10-06T16:09:09Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4288#issuecomment-5998039129",
+      "comment_created_at": "2026-10-05T15:53:01Z",
+      "comment_updated_at": "2026-10-06T16:09:09Z",
+      "comment_body_sha256": "34e8bb54034dfb9234414bfc39e262fac2391c66b71879541a15b481d06d37be",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4288,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Confirm whether bounded same-IDE log refresh should remain automatic or require opt-in. (sha=6048e620a1adbe16ab84761045560aeb94c3fbc3)",
+      "expected_head_sha": "6048e620a1adbe16ab84761045560aeb94c3fbc3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T16:10:09.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/jetbrains-quota-from-idea-log",
+        "head_sha": "6048e620a1adbe16ab84761045560aeb94c3fbc3",
         "cluster_id": null,
         "job_path": null
       }
