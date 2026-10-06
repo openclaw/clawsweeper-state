@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:22:45.063Z",
+  "updated_at": "2026-10-06T13:23:34.017Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:4270:5988727520:2026-10-05T05:34:05Z:re_review",
-      "comment_id": "5988727520",
-      "comment_version_key": "5988727520:2026-10-05T05:34:05Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4270#issuecomment-5988727520",
-      "comment_created_at": "2026-10-05T05:34:05Z",
-      "comment_updated_at": "2026-10-05T05:34:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4270,
-      "author": "gabrielrojasc",
-      "author_id": 37199173,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T07:36:47.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bugfix/codex-ledger-upgrade-pricing",
-        "head_sha": "4e98bb58bf023e46cdbfc4dd28cb51aacbb82e4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4270:5988220222:2026-10-06T07:35:55Z:clawsweeper_needs_human",
       "comment_id": "5988220222",
@@ -33285,6 +33238,39 @@
         "kind": "pull_request",
         "branch": "fix/llama-cpp-macos-floor",
         "head_sha": "ab16354ce7f7ac69ce40c772e0f13b196bebd66e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166026:6012777600:2026-10-06T13:22:31Z:clawsweeper_needs_human",
+      "comment_id": "6012777600",
+      "comment_version_key": "6012777600:2026-10-06T13:22:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166026#issuecomment-6012777600",
+      "comment_created_at": "2026-10-06T08:51:28Z",
+      "comment_updated_at": "2026-10-06T13:22:31Z",
+      "comment_body_sha256": "2691515cb0b468671be7a3b1afcbe3f5f7f2738bd347b3a7dca2756cc9c175f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166026,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility acceptance remains incomplete for the published 2026.10.1-beta.1 updater installing this September candidate with existing state. The candidate migrates schema 19 to 20,... (sha=12acf7b531f5b412e4886294ff7c8d9c1c8cb8e6)",
+      "expected_head_sha": "12acf7b531f5b412e4886294ff7c8d9c1c8cb8e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T13:23:34.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/release-2026.9.9-october-beta-update-compat",
+        "head_sha": "12acf7b531f5b412e4886294ff7c8d9c1c8cb8e6",
         "cluster_id": null,
         "job_path": null
       }
