@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T07:17:27.118Z",
+  "updated_at": "2026-10-06T07:17:45.013Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165856:6007409145:2026-10-06T01:24:55Z:re_review",
-      "comment_id": "6007409145",
-      "comment_version_key": "6007409145:2026-10-06T01:24:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165856#issuecomment-6007409145",
-      "comment_created_at": "2026-10-06T01:24:55Z",
-      "comment_updated_at": "2026-10-06T01:24:55Z",
-      "comment_body_sha256": "783fb3c0b5848a001d5451b2ae5f70bb8349c9a7f3de8f5e236873219bd05e0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165856,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T01:25:46.309Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-release-finalization",
-        "head_sha": "7fdc1d03a2e11c014427e60f5b0eae2d75035f24",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165885:6006769336:2026-10-06T01:25:29Z:clawsweeper_needs_human",
       "comment_id": "6006769336",
@@ -33575,6 +33528,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T07:17:27.118Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4254:5980900821:2026-10-06T07:16:53Z:clawsweeper_needs_human",
+      "comment_id": "5980900821",
+      "comment_version_key": "5980900821:2026-10-06T07:16:53Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4254#issuecomment-5980900821",
+      "comment_created_at": "2026-10-04T14:12:06Z",
+      "comment_updated_at": "2026-10-06T07:16:53Z",
+      "comment_body_sha256": "1fbe8e595a685ca6d21067fe41c4ef51ff11b752e23478687edf1495ba6f403b",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed Antigravity fetch path is covered by a shell-fixture agy, but the live sampler establishes... (sha=507b7d2e78844ff253cffb30f7765cdc20952b31)",
+      "expected_head_sha": "507b7d2e78844ff253cffb30f7765cdc20952b31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T07:17:45.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/antigravity-dedupe-version-spawn",
+        "head_sha": "507b7d2e78844ff253cffb30f7765cdc20952b31",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
