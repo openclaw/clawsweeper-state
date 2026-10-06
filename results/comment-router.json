@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:41:23.150Z",
+  "updated_at": "2026-10-06T20:41:24.123Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166026:6017714288:2026-10-06T13:49:59Z:re_review",
-      "comment_id": "6017714288",
-      "comment_version_key": "6017714288:2026-10-06T13:49:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166026#issuecomment-6017714288",
-      "comment_created_at": "2026-10-06T13:49:59Z",
-      "comment_updated_at": "2026-10-06T13:49:59Z",
-      "comment_body_sha256": "8583e42ebbb085ad576122d60fbe2787a17d119959da7e5918c97b19b2ea7bf8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166026,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 92ff30cc9f8912219e399ce38275103b26358811. the prior schema-20 p1 is fixed; candidate-specific published-beta docker updater acceptance now passes end-to-end, and the exact ci wrapper-inventory regression is repaired with focused 92/92 refresh plus eager-import-closure proof. please report any remaining actionable finding",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T13:51:17.318Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/release-2026.9.9-october-beta-update-compat",
-        "head_sha": "92ff30cc9f8912219e399ce38275103b26358811",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-10-06T13:46:43Z:clawsweeper_auto_repair",
       "comment_id": "5567489931",
@@ -33894,6 +33847,39 @@
         "kind": "pull_request",
         "branch": "fix/f023-install-telemetry-race",
         "head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3883:5923385214:2026-10-06T20:40:21Z:clawsweeper_auto_repair",
+      "comment_id": "5923385214",
+      "comment_version_key": "5923385214:2026-10-06T20:40:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3883#issuecomment-5923385214",
+      "comment_created_at": "2026-10-01T02:16:20Z",
+      "comment_updated_at": "2026-10-06T20:40:21Z",
+      "comment_body_sha256": "6c7ea4de09553e9bfc8fa58e3020bcd9a25360d1a8af110d6915e6999cfbeec4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3883,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a0c79ec4139a3338d2ddb018cfddb9cf97203cad)",
+      "expected_head_sha": "a0c79ec4139a3338d2ddb018cfddb9cf97203cad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T20:41:24.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claws-openclaw-only-20260930",
+        "head_sha": "a0c79ec4139a3338d2ddb018cfddb9cf97203cad",
         "cluster_id": null,
         "job_path": null
       }
