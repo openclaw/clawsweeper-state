@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T05:49:10.388Z",
+  "updated_at": "2026-10-06T05:50:28.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165843:6005591928:2026-10-05T23:39:17Z:re_review",
-      "comment_id": "6005591928",
-      "comment_version_key": "6005591928:2026-10-05T23:39:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165843#issuecomment-6005591928",
-      "comment_created_at": "2026-10-05T23:39:17Z",
-      "comment_updated_at": "2026-10-05T23:39:17Z",
-      "comment_body_sha256": "ad552ec645454d5d7e7c87f65545a1455d6722c3bb3cafc81253e7e60d5cade5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165843,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T23:40:22.966Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-gateway-readiness-owner",
-        "head_sha": "02a5105f0de40625f8e941ea3a1279794bbae289",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:114:5975910370:2026-10-05T23:44:22Z:clawsweeper_needs_human",
       "comment_id": "5975910370",
@@ -33387,6 +33340,39 @@
         "kind": "pull_request",
         "branch": "fix/authorized-completion-silent-reply",
         "head_sha": "f15a839d07b40d161caae6036984e681a3e40aa7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1481:6010232079:2026-10-06T05:49:33Z:clawsweeper_needs_human",
+      "comment_id": "6010232079",
+      "comment_version_key": "6010232079:2026-10-06T05:49:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1481#issuecomment-6010232079",
+      "comment_created_at": "2026-10-06T05:49:33Z",
+      "comment_updated_at": "2026-10-06T05:49:33Z",
+      "comment_body_sha256": "b42794b1388dcdf4aa80d4d18863be92f94c72d10a09b24b7e7161bb4b60e76b",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the mutation and constrained-CPU/load results promised before landing, confirming the same cases pass without unexpected skips. (sha=99d7975eff42dc8de0a8633fd8c5809ed5824bb6)",
+      "expected_head_sha": "99d7975eff42dc8de0a8633fd8c5809ed5824bb6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T05:50:28.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tw1-reserved-lanes",
+        "head_sha": "99d7975eff42dc8de0a8633fd8c5809ed5824bb6",
         "cluster_id": null,
         "job_path": null
       }
