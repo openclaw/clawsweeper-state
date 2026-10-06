@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-10-06T17:01:31.480Z",
+  "updated_at": "2026-10-06T17:02:33.867Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166062:6014431057:2026-10-06T10:35:10Z:automerge",
-      "comment_id": "6014431057",
-      "comment_version_key": "6014431057:2026-10-06T10:35:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166062#issuecomment-6014431057",
-      "comment_created_at": "2026-10-06T10:35:10Z",
-      "comment_updated_at": "2026-10-06T10:35:10Z",
-      "comment_body_sha256": "53bfd74c0e4dd615a80a2220761e752bf2aeb13af1c6bb9dee85da8a9f761593",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T10:35:59.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/github-copilot-auth-worker-fixture",
-        "head_sha": "6f5d4a90f2e36d2fc24a066fed0232a27d764663",
-        "cluster_id": "automerge-openclaw-openclaw-166062",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166062.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129304:5410488025:2026-10-06T10:26:14Z:clawsweeper_auto_repair",
       "comment_id": "5410488025",
@@ -33854,6 +33795,39 @@
         "kind": "pull_request",
         "branch": "openclaw/pr-158902-clients",
         "head_sha": "9a6b1c3c57a1f8b11a8d1a819a21469f61a69ec6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-10-06T17:01:30Z:clawsweeper_needs_human",
+      "comment_id": "4921233233",
+      "comment_version_key": "4921233233:2026-10-06T17:01:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-4921233233",
+      "comment_created_at": "2026-07-09T03:12:50Z",
+      "comment_updated_at": "2026-10-06T17:01:30Z",
+      "comment_body_sha256": "a4eb22dd115f6d95b5b4c4f0694a46f690f6fd1e33a7385e39c4ea347d121a7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Teams parsing prepares quote identity, batching retains it, and visibility filtering feeds agent input. Relevan...; Review finding: [P2] [P2] Revoke the permission source used by group quotes — extensions/msteams/src/monitor-handler/message-handler.ingress-lifecycle.test.ts:309-315 - [P3] [P3]... (sha=5610a56fd1222c5470db36c99945a66504d383ee)",
+      "expected_head_sha": "5610a56fd1222c5470db36c99945a66504d383ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T17:02:33.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-052-msteams-inbound-normalize",
+        "head_sha": "5610a56fd1222c5470db36c99945a66504d383ee",
         "cluster_id": null,
         "job_path": null
       }
