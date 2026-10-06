@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 6, 2026, 13:51 UTC
+Last source update: Oct 6, 2026, 14:11 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 6, 2026, 13:51 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 6, 2026, 13:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37467292768) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 6, 2026, 13:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37473503695) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 6, 2026, 14:11 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37474428668) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 6, 2026, 13:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37475010241) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 6, 2026, 10:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37453296951) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 6, 2026, 13:42 UTC
+Last source update: Oct 6, 2026, 14:03 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1497 | 100% |
-| Run attempts archived | 4400 | audit |
+| Run attempts archived | 4402 | audit |
 | Latest successful clusters | 1188 | 79.4% |
 | Latest failed clusters | 305 | 20.4% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -116,8 +116,8 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1497 clusters: 391 maintainer action, 443 automation snapshot, 604 intervention needed, 59 no pending action, 0 completed.
-- Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4313](https://github.com/steipete/codexbar/issues/4313) is maintainer_input: #4313: Obtain the missing subscription metric, membership plan name, CodexBar version, and a redacted expected-versus-current example. If....
-- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [#538](https://github.com/steipete/oracle/pull/538) is automation_failed: The ordinary endpoint-selection bug remains and needs a focused implementation. Filesystem restrictions block implementation here, not th....
+- Maintainer first: [steipete/codexbar](https://github.com/steipete/codexbar) [#4313](https://github.com/steipete/codexbar/issues/4313) is maintainer_input: #4313: Identify the missing subscription metric or unsupported membership plan, the affected CodexBar version, and a redacted expected-ve....
+- Intervention first: [steipete/oracle](https://github.com/steipete/oracle) [#538](https://github.com/steipete/oracle/pull/538) is automation_failed: Only local implementation is blocked by filesystem permissions. The defect and narrow executor fix path are established..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4313](https://github.com/steipete/codexbar/issues/4313) | maintainer_input | #4313: Obtain the missing subscription metric, membership plan name, CodexBar version, and a redacted expected-versus-current example. If a new res... | Oct 6, 2026, 13:10 UTC | [issue-steipete-codexbar-4313](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4313.md) | [37468313459](https://github.com/openclaw/clawsweeper/actions/runs/37468313459) |
+| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4313](https://github.com/steipete/codexbar/issues/4313) | maintainer_input | #4313: Identify the missing subscription metric or unsupported membership plan, the affected CodexBar version, and a redacted expected-versus-curre... | Oct 6, 2026, 14:02 UTC | [issue-steipete-codexbar-4313](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4313.md) | [37475091068](https://github.com/openclaw/clawsweeper/actions/runs/37475091068) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [cluster:issue-openclaw-crabbox-2708](cluster:issue-openclaw-crabbox-2708) | maintainer_input | For https://github.com/openclaw/crabbox/issues/2708, coordinate and verify Blacksmith's supported authoritative Testbox-to-workflow binding before... | Oct 6, 2026, 12:42 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [37464689400](https://github.com/openclaw/clawsweeper/actions/runs/37464689400) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#158177](https://github.com/openclaw/openclaw/issues/158177) | maintainer_input | Route only this item to central OpenClaw security handling without public mutation. The catalog-wait repair does not depend on it. | Oct 6, 2026, 11:41 UTC | [issue-openclaw-openclaw-166084](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166084.md) | [37453235469](https://github.com/openclaw/clawsweeper/actions/runs/37453235469) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [#258](https://github.com/steipete/oracle/issues/258) | maintainer_input | Quarantine this exact historical item for central OpenClaw security handling without public mutation. The ordinary copy-error repair for #540 can p... | Oct 5, 2026, 17:01 UTC | [issue-steipete-oracle-540](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-540.md) | [37344738152](https://github.com/openclaw/clawsweeper/actions/runs/37344738152) |
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [steipete/oracle](https://github.com/steipete/oracle) | [#538](https://github.com/steipete/oracle/pull/538) | automation_failed | The ordinary endpoint-selection bug remains and needs a focused implementation. Filesystem restrictions block implementation here, not the classifi... | Oct 6, 2026, 13:42 UTC | [issue-steipete-oracle-538](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-538.md) | [37472292949](https://github.com/openclaw/clawsweeper/actions/runs/37472292949) |
+| [steipete/oracle](https://github.com/steipete/oracle) | [#538](https://github.com/steipete/oracle/pull/538) | automation_failed | Only local implementation is blocked by filesystem permissions. The defect and narrow executor fix path are established. | Oct 6, 2026, 14:03 UTC | [issue-steipete-oracle-538](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-538.md) | [37475028921](https://github.com/openclaw/clawsweeper/actions/runs/37475028921) |
 | [openclaw/gitcrawl](https://github.com/openclaw/gitcrawl) | [#232](https://github.com/openclaw/gitcrawl/pull/232) | automation_failed | The source supports a focused performance repair without a product or security decision. Keep the issue open; executor implementation must first co... | Oct 6, 2026, 13:08 UTC | [issue-openclaw-gitcrawl-232](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gitcrawl-232.md) | [37467861844](https://github.com/openclaw/clawsweeper/actions/runs/37467861844) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166076](https://github.com/openclaw/openclaw/pull/166076) | automation_failed | A narrow host-accounting repair is warranted. The executor must establish the failing boundary regression before editing; this host cannot write fi... | Oct 6, 2026, 11:50 UTC | [issue-openclaw-openclaw-166076](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166076.md) | [37451151576](https://github.com/openclaw/clawsweeper/actions/runs/37451151576) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) |  | automation_blocked | Implementation is blocked by unidentified dots usage input. Current main supports standard Codex accounting, but the report provides no affected to... | Oct 6, 2026, 10:47 UTC | [issue-steipete-codexbar-4300](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4300.md) | [37451711238](https://github.com/openclaw/clawsweeper/actions/runs/37451711238) |
@@ -233,7 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-steipete-codexbar-4313 | needs human | #4313: Obtain the missing subscription metric, membership plan name, CodexBar version, and a redacted expected-versus-current example. If a new res... | [issue-steipete-codexbar-4313](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4313.md) | [37468313459](https://github.com/openclaw/clawsweeper/actions/runs/37468313459) |
+| issue-steipete-codexbar-4313 | needs human | #4313: Identify the missing subscription metric or unsupported membership plan, the affected CodexBar version, and a redacted expected-versus-curre... | [issue-steipete-codexbar-4313](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4313.md) | [37475091068](https://github.com/openclaw/clawsweeper/actions/runs/37475091068) |
 | issue-openclaw-crabbox-2708 | needs human | For https://github.com/openclaw/crabbox/issues/2708, coordinate and verify Blacksmith's supported authoritative Testbox-to-workflow binding before... | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [37464689400](https://github.com/openclaw/clawsweeper/actions/runs/37464689400) |
 | automerge-openclaw-openclaw-165825 | repair_contributor_branch blocked | source PR #165825 is paused by clawsweeper:human-review; refusing to mutate the PR branch | [automerge-openclaw-openclaw-165825](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165825.md) | [37382032454](https://github.com/openclaw/clawsweeper/actions/runs/37382032454) |
 | automerge-openclaw-openclaw-165765 | fix failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impact... | [automerge-openclaw-openclaw-165765](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-165765.md) | [37378020658](https://github.com/openclaw/clawsweeper/actions/runs/37378020658) |
