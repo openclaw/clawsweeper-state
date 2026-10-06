@@ -1,92 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:11:47.524Z",
+  "updated_at": "2026-10-06T02:12:04.765Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165334:6000906763:2026-10-05T18:47:38Z:stop",
-      "comment_id": "6000906763",
-      "comment_version_key": "6000906763:2026-10-05T18:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165334#issuecomment-6000906763",
-      "comment_created_at": "2026-10-05T18:47:38Z",
-      "comment_updated_at": "2026-10-05T18:47:38Z",
-      "comment_body_sha256": "c0450a2010a1d84523a4cf1b1d9dd85fc7b94b823e00d70d9f6c2a7775f08811",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165334,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "stop",
-      "intent": "stop",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T18:48:38.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/revert-session-channel-links",
-        "head_sha": "348dc4a052e1177f1b7a587a6c612dfe65ce0ef2",
-        "cluster_id": "automerge-openclaw-openclaw-165334",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3860:5915151419:2026-10-05T18:47:46Z:clawsweeper_needs_human",
-      "comment_id": "5915151419",
-      "comment_version_key": "5915151419:2026-10-05T18:47:46Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3860#issuecomment-5915151419",
-      "comment_created_at": "2026-09-30T16:13:20Z",
-      "comment_updated_at": "2026-10-05T18:47:46Z",
-      "comment_body_sha256": "1b5ededbbc8b255007532aeda80b1a21fb96d4469227073e32e057b3d170dfde",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3860,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=df5a5e3c557d29e6927c768a4a8059b3dac73477)",
-      "expected_head_sha": "df5a5e3c557d29e6927c768a4a8059b3dac73477",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T18:48:51.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/development-minor-and-patch-86dcf221f9",
-        "head_sha": "df5a5e3c557d29e6927c768a4a8059b3dac73477",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3864:5915148551:2026-10-05T18:51:22Z:clawsweeper_needs_human",
       "comment_id": "5915148551",
@@ -34103,6 +34017,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149961:5695763718:2026-10-06T02:10:50Z:clawsweeper_needs_human",
+      "comment_id": "5695763718",
+      "comment_version_key": "5695763718:2026-10-06T02:10:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149961#issuecomment-5695763718",
+      "comment_created_at": "2026-09-16T10:10:23Z",
+      "comment_updated_at": "2026-10-06T02:10:50Z",
+      "comment_body_sha256": "08e15c2f37518e863f5e53d58077bcff24140b38bf59df8edd3d03adf186e528",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main moved timestamp resolution into monitor/reactions.ts after this head; refresh the branch and confirm the validation reaches that owner. No pinned three-way merge result w... (sha=21af8bf79853c72d3a69596f0f65d9598d53e23e)",
+      "expected_head_sha": "21af8bf79853c72d3a69596f0f65d9598d53e23e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:12:04.765Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-status-reaction-strict-timestamp",
+        "head_sha": "21af8bf79853c72d3a69596f0f65d9598d53e23e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149961:5701822536:2026-09-16T17:35:52Z:re_review",
+      "comment_id": "5701822536",
+      "comment_version_key": "5701822536:2026-09-16T17:35:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149961#issuecomment-5701822536",
+      "comment_created_at": "2026-09-16T17:35:52Z",
+      "comment_updated_at": "2026-09-16T17:35:52Z",
+      "comment_body_sha256": "38566983185a76a732f0f702acbb103ce0eeaf1c06687589236aa783e13015d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149961,
+      "author": "xydt-juyaohui",
+      "author_id": 266015826,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:12:04.765Z",
+      "target": null
     }
   ]
 }
