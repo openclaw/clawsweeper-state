@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-299",
+  "mode": "autonomous",
+  "run_id": "37542510815",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37542510815",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-299.md",
+  "published_at": "2026-10-06T22:48:48.828Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/299",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/299",
+  "canonical_pr": null,
+  "summary": "Verified the reported bug in source at supplied main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused revision-guard fix remains viable. Implementation and validation are blocked by this worker's read-only filesystem and unavailable write approval; no code, regression, branch, or PR was created. A concrete fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#299",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#299",
+      "candidate_fix": null,
+      "reason": "The bug and canonical classification are clear. Only implementation is blocked: this worker cannot edit the four affected files, create isolated test state, create the task branch, or run the required writable remote validation procedure. No unresolved product or security decision requires human triage."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-299",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#299",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is source-supported and does not require new configuration, product policy, or security-boundary changes. This artifact is a plan, not an implemented or validated patch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
