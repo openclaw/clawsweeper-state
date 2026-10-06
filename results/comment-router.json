@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-06T05:01:46.098Z",
+  "updated_at": "2026-10-06T04:59:44.088Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165793:6004631750:2026-10-05T22:39:36Z:re_review",
+      "comment_id": "6004631750",
+      "comment_version_key": "6004631750:2026-10-05T22:39:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165793#issuecomment-6004631750",
+      "comment_created_at": "2026-10-05T22:39:36Z",
+      "comment_updated_at": "2026-10-05T22:39:36Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165793,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-05T22:40:39.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w4mirrors3-mirror",
+        "head_sha": "aa1f6eb29e97f1b0f640c7bccd0e2dd7f42e14bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165830:6004638354:2026-10-05T22:40:09Z:clawsweeper_needs_human",
       "comment_id": "6004638354",
@@ -33566,39 +33613,6 @@
         "kind": "pull_request",
         "branch": "w182-shared-pin-667c",
         "head_sha": "76a49471519e26438891fa771840a0c47e9e07e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151242:5722663281:2026-10-06T05:00:26Z:clawsweeper_needs_human",
-      "comment_id": "5722663281",
-      "comment_version_key": "5722663281:2026-10-06T05:00:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151242#issuecomment-5722663281",
-      "comment_created_at": "2026-09-17T23:33:42Z",
-      "comment_updated_at": "2026-10-06T05:00:26Z",
-      "comment_body_sha256": "014cbf8fd7ff7d5b2497d398328ef64080f93ef919d0b28ab820802db55f0de7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151242,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing default setups may receive fitting-link blocks larger than the previous 1200-character preferred maximum; acceptance of that behavior and the optional SDK ceiling is not reco... (sha=f50cf56d212e6fea385fa3f3efb79aff1cef3c45)",
-      "expected_head_sha": "f50cf56d212e6fea385fa3f3efb79aff1cef3c45",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T05:01:46.098Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/embedded-long-link-chunks",
-        "head_sha": "f50cf56d212e6fea385fa3f3efb79aff1cef3c45",
         "cluster_id": null,
         "job_path": null
       }
