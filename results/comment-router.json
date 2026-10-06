@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T22:43:48.064Z",
+  "updated_at": "2026-10-06T22:44:12.341Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166200:6020852232:2026-10-06T16:35:13Z:re_review",
-      "comment_id": "6020852232",
-      "comment_version_key": "6020852232:2026-10-06T16:35:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166200#issuecomment-6020852232",
-      "comment_created_at": "2026-10-06T16:35:13Z",
-      "comment_updated_at": "2026-10-06T16:35:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166200,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T16:36:15.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-2026.9.9-frv-blockers-2",
-        "head_sha": "6b80c3408ce16f29aac6e32206484b77eb92d354",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166192:6020645093:2026-10-06T16:35:42Z:clawsweeper_needs_human",
       "comment_id": "6020645093",
@@ -33667,6 +33620,39 @@
         "kind": "pull_request",
         "branch": "fix/github-discard-cancel",
         "head_sha": "ac1b5b632b52c586925cac7f259926d2f8383bec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154094:5752910770:2026-10-06T22:43:12Z:clawsweeper_needs_human",
+      "comment_id": "5752910770",
+      "comment_version_key": "5752910770:2026-10-06T22:43:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154094#issuecomment-5752910770",
+      "comment_created_at": "2026-09-20T21:47:37Z",
+      "comment_updated_at": "2026-10-06T22:43:12Z",
+      "comment_body_sha256": "41b47d2bf2773cc894ee6119e22d909542f75f74897705b458eedc5e131f58fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154094,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied context reports merge conflicts. Resolve them against current main while preserving its canonical media projection and inline-image deduplication, then review and validat... (sha=0c9cfe0229060f1047e8b79df0e4e38a6463ae68)",
+      "expected_head_sha": "0c9cfe0229060f1047e8b79df0e4e38a6463ae68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T22:44:12.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-sent-image-20260920",
+        "head_sha": "0c9cfe0229060f1047e8b79df0e4e38a6463ae68",
         "cluster_id": null,
         "job_path": null
       }
