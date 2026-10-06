@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T14:04:37.384Z",
+  "updated_at": "2026-10-06T14:04:45.458Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137641:6012196980:2026-10-06T08:13:59Z:re_review",
-      "comment_id": "6012196980",
-      "comment_version_key": "6012196980:2026-10-06T08:13:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137641#issuecomment-6012196980",
-      "comment_created_at": "2026-10-06T08:13:59Z",
-      "comment_updated_at": "2026-10-06T08:13:59Z",
-      "comment_body_sha256": "ab13b677fae9c40344f6fa8e495b1d12b21d8aa2eacf19f9ff7419a5830e2dfe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137641,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please. refreshed the conflict at exact head `aad1b283c21e70d88518c2f77a9d8ad2bbfac4b2`, preserving main's inferred sender context from #165883. fresh secretless proof https://github.com/ly85206559/openclaw/actions/runs/37433638650 shows unchanged-main red (1 failed/3 passed) then exact-product green (7/7), with real pairing/sender boundary and default-account/no-config controls. full pending-range p0-p3 autoreview is clean; evidence now distinguishes this head from prior ci. no changes to account routing, proxy, token precedence, or live-authority checks",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T08:14:50.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/zalo-missing-token-guidance",
-        "head_sha": "aad1b283c21e70d88518c2f77a9d8ad2bbfac4b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:840:6012249035:2026-10-06T08:17:29Z:clawsweeper_needs_human",
       "comment_id": "6012249035",
@@ -33485,6 +33438,39 @@
         "kind": "pull_request",
         "branch": "fix/ami-retention-input-failures",
         "head_sha": "fae55fa08a833d8d3991330a6ef8d3e756496cee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166129:6017969655:2026-10-06T14:03:27Z:clawsweeper_auto_repair",
+      "comment_id": "6017969655",
+      "comment_version_key": "6017969655:2026-10-06T14:03:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166129#issuecomment-6017969655",
+      "comment_created_at": "2026-10-06T14:03:27Z",
+      "comment_updated_at": "2026-10-06T14:03:27Z",
+      "comment_body_sha256": "7bb84023236b8eca4323fdb6d2f837f04ca5d184f9b0a44d96b6fd3c57338211",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d1ab0d4d23f48578bc8f10e7b3626df54d7e2eb4)",
+      "expected_head_sha": "d1ab0d4d23f48578bc8f10e7b3626df54d7e2eb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T14:04:45.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-task-list-buttons",
+        "head_sha": "d1ab0d4d23f48578bc8f10e7b3626df54d7e2eb4",
         "cluster_id": null,
         "job_path": null
       }
