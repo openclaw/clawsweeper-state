@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T16:22:08.801Z",
+  "updated_at": "2026-10-06T16:22:18.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:63:5975938153:2026-10-06T09:55:25Z:clawsweeper_needs_human",
-      "comment_id": "5975938153",
-      "comment_version_key": "5975938153:2026-10-06T09:55:25Z",
-      "comment_url": "https://github.com/openclaw/release-workflows/pull/63#issuecomment-5975938153",
-      "comment_created_at": "2026-10-04T02:52:34Z",
-      "comment_updated_at": "2026-10-06T09:55:25Z",
-      "comment_body_sha256": "f22a9f22e592451d21e869ac88d1faf5055cb930898aa5e79fe1c9fe094053e2",
-      "repo": "openclaw/release-workflows",
-      "issue_number": 63,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=16d69ebadbc7d9c89fb3232fadff1f6f25434f12)",
-      "expected_head_sha": "16d69ebadbc7d9c89fb3232fadff1f6f25434f12",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T09:56:15.234Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-workflows-f004",
-        "head_sha": "16d69ebadbc7d9c89fb3232fadff1f6f25434f12",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rastermill:20:5922533994:2026-10-06T09:55:38Z:clawsweeper_needs_human",
       "comment_id": "5922533994",
@@ -33756,6 +33723,39 @@
       "status": "skipped",
       "processed_at": "2026-10-06T16:22:08.801Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156603:5801339564:2026-10-06T16:21:19Z:clawsweeper_needs_human",
+      "comment_id": "5801339564",
+      "comment_version_key": "5801339564:2026-10-06T16:21:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156603#issuecomment-5801339564",
+      "comment_created_at": "2026-09-23T19:20:04Z",
+      "comment_updated_at": "2026-10-06T16:21:19Z",
+      "comment_body_sha256": "f5e363cf17b0a7342b0f283e2dcb4f3b706e9a222700d6f84b16432126206d3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156603,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Capture includes inbound text without model execution** - The message lifecycle retains inbound text before dispatch and exports it on processed events, including handled or aborted tur...; Review finding: [medium] Capture includes inbound text without model execution — src/logging/diagnostic-message-content.ts:29 (sha=f22d0ecc73c0adf4f790ecab8f509c7e060924ae)",
+      "expected_head_sha": "f22d0ecc73c0adf4f790ecab8f509c7e060924ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T16:22:18.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "port/otel-capture-io",
+        "head_sha": "f22d0ecc73c0adf4f790ecab8f509c7e060924ae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
