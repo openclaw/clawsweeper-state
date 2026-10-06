@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T23:44:19.472Z",
+  "updated_at": "2026-10-06T23:44:23.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166218:6022011492:2026-10-06T17:43:19Z:re_review",
-      "comment_id": "6022011492",
-      "comment_version_key": "6022011492:2026-10-06T17:43:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166218#issuecomment-6022011492",
-      "comment_created_at": "2026-10-06T17:43:19Z",
-      "comment_updated_at": "2026-10-06T17:43:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166218,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T17:45:40.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-beta-timing-blockers",
-        "head_sha": "d09c86171b759fe2bd6082dc4f7da3702fc326ea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166183:6022016205:2026-10-06T17:43:36Z:re_review",
       "comment_id": "6022016205",
@@ -33618,6 +33571,39 @@
         "kind": "pull_request",
         "branch": "fix/whatsapp-pending-delivery-notice",
         "head_sha": "c9cc8b67703d4174c33036fdd5c8be11cced86c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166348:6027520604:2026-10-06T23:42:30Z:clawsweeper_needs_human",
+      "comment_id": "6027520604",
+      "comment_version_key": "6027520604:2026-10-06T23:42:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166348#issuecomment-6027520604",
+      "comment_created_at": "2026-10-06T23:42:30Z",
+      "comment_updated_at": "2026-10-06T23:42:30Z",
+      "comment_body_sha256": "2a3085e9cce1e85178591bb4f5b0cd05ac0ee0f64804336e98c7396beeb581c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0d0440cfe85532ec5edb0fc54e08758789454bbd)",
+      "expected_head_sha": "0d0440cfe85532ec5edb0fc54e08758789454bbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T23:44:23.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-2026.9.9-gateway-client-onclose",
+        "head_sha": "0d0440cfe85532ec5edb0fc54e08758789454bbd",
         "cluster_id": null,
         "job_path": null
       }
