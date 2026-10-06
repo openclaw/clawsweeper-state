@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T23:44:23.544Z",
+  "updated_at": "2026-10-06T23:44:35.953Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166183:6022016205:2026-10-06T17:43:36Z:re_review",
-      "comment_id": "6022016205",
-      "comment_version_key": "6022016205:2026-10-06T17:43:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166183#issuecomment-6022016205",
-      "comment_created_at": "2026-10-06T17:43:36Z",
-      "comment_updated_at": "2026-10-06T17:43:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166183,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T17:45:40.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6auth",
-        "head_sha": "f60eb0b49810a0d1bcd989c4fb22a22142c2fe66",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-10-06T17:43:57Z:clawsweeper_auto_repair",
       "comment_id": "5567489931",
@@ -33604,6 +33557,39 @@
         "kind": "pull_request",
         "branch": "fix/release-2026.9.9-gateway-client-onclose",
         "head_sha": "0d0440cfe85532ec5edb0fc54e08758789454bbd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154485:5756063247:2026-10-06T23:43:09Z:clawsweeper_needs_human",
+      "comment_id": "5756063247",
+      "comment_version_key": "5756063247:2026-10-06T23:43:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154485#issuecomment-5756063247",
+      "comment_created_at": "2026-09-21T06:01:20Z",
+      "comment_updated_at": "2026-10-06T23:43:09Z",
+      "comment_body_sha256": "dfdbe5aee3470ba75f27eecfbf84ffe2753ac295674b66a80ba8f8dea887950a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: synthetic create-and-verify tests exercise the archive filter, but no real after-fix backup and restore... (sha=defd02b8eb173835871ee424930416751fbbd4d3)",
+      "expected_head_sha": "defd02b8eb173835871ee424930416751fbbd4d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T23:44:35.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/backup-filter-nested-package-content",
+        "head_sha": "defd02b8eb173835871ee424930416751fbbd4d3",
         "cluster_id": null,
         "job_path": null
       }
