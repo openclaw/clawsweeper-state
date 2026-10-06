@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T19:59:32.903Z",
+  "updated_at": "2026-10-06T19:59:45.817Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4278:5989872130:2026-10-06T13:01:05Z:clawsweeper_auto_repair",
-      "comment_id": "5989872130",
-      "comment_version_key": "5989872130:2026-10-06T13:01:05Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4278#issuecomment-5989872130",
-      "comment_created_at": "2026-10-05T07:15:37Z",
-      "comment_updated_at": "2026-10-06T13:01:05Z",
-      "comment_body_sha256": "269af874e5f2a8379507576eedc6d32405a3cbf9543523b1d8a53012d60256b0",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4278,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ef44c99e59e04cf8aba6362708586f2097641ae2)",
-      "expected_head_sha": "ef44c99e59e04cf8aba6362708586f2097641ae2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T13:02:00.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-partial-pricing",
-        "head_sha": "ef44c99e59e04cf8aba6362708586f2097641ae2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166122:6016830408:2026-10-06T13:01:27Z:clawsweeper_needs_human",
       "comment_id": "6016830408",
@@ -34096,6 +34063,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1750:6024360412:2026-10-06T19:58:48Z:clawsweeper_needs_human",
+      "comment_id": "6024360412",
+      "comment_version_key": "6024360412:2026-10-06T19:58:48Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1750#issuecomment-6024360412",
+      "comment_created_at": "2026-10-06T19:58:48Z",
+      "comment_updated_at": "2026-10-06T19:58:48Z",
+      "comment_body_sha256": "36bd724e0fc4583217e4dda4347c05c33d9fe9571fb9d34ab76d1f5b2e8a3da2",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Linux test exercises the production validation entrypoint, but its Go executable is a Node shim. This proves environment injection... (sha=35f595b0afdad032a776a2c88d26dae5eac30fcf)",
+      "expected_head_sha": "35f595b0afdad032a776a2c88d26dae5eac30fcf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T19:59:45.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/go-validation-goroot",
+        "head_sha": "35f595b0afdad032a776a2c88d26dae5eac30fcf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
