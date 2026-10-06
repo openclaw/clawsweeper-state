@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-165903",
+  "mode": "autonomous",
+  "run_id": "37402027425",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37402027425",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-165903.md",
+  "published_at": "2026-10-06T02:39:44.717Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/165903",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/165903",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported producer gap in source at preflight main 0c7a83dd65c676b1c224458d06ce4bdb69ea51ac. A narrow fix artifact is ready; implementation and failing-regression proof are blocked by the read-only host and absent dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#165903",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165903",
+      "candidate_fix": null,
+      "reason": "Repair the executed heartbeat's session-binding propagation through existing Cron outcome fields. Leave the issue open; closure and merge are prohibited."
+    },
+    {
+      "target": "#148211",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#165903",
+      "candidate_fix": null,
+      "reason": "Historical reader-side implementation, not a viable open PR or a fix for the heartbeat producer gap."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-165903",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#165903",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow producer repair to a writable executor, which must establish a failing boundary regression before implementing or publishing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
