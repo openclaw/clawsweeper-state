@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T04:33:39.322Z",
+  "updated_at": "2026-10-06T04:33:42.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160707:5938586818:2026-10-01T19:07:33Z:re_review",
-      "comment_id": "5938586818",
-      "comment_version_key": "5938586818:2026-10-01T19:07:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160707#issuecomment-5938586818",
-      "comment_created_at": "2026-10-01T19:07:33Z",
-      "comment_updated_at": "2026-10-01T19:07:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160707,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T21:55:20.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1074",
-        "head_sha": "6cdfccc3a915085e27ab7b4bdb8233c66d6db105",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:160707:5878439380:2026-10-05T21:54:19Z:clawsweeper_needs_human",
       "comment_id": "5878439380",
@@ -33883,6 +33836,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-availability-partial-refresh-158922",
         "head_sha": "b5a92a62801bdef3ff43bd4740669220a81cb505",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162798:5934854366:2026-10-06T04:32:51Z:clawsweeper_auto_repair",
+      "comment_id": "5934854366",
+      "comment_version_key": "5934854366:2026-10-06T04:32:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162798#issuecomment-5934854366",
+      "comment_created_at": "2026-10-01T15:39:03Z",
+      "comment_updated_at": "2026-10-06T04:32:51Z",
+      "comment_body_sha256": "c25e1764c613738c5ac83887ffff4c92ce338905bc80ab57fa25499412e155e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162798,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d8422b936d7934cd4fffe3aa31932bc677a648eb)",
+      "expected_head_sha": "d8422b936d7934cd4fffe3aa31932bc677a648eb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T04:33:42.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-onboarding-route-label",
+        "head_sha": "d8422b936d7934cd4fffe3aa31932bc677a648eb",
         "cluster_id": null,
         "job_path": null
       }
