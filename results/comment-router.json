@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:35:52.481Z",
+  "updated_at": "2026-10-06T02:37:34.034Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165720:6000744038:2026-10-05T19:02:41Z:clawsweeper_needs_human",
-      "comment_id": "6000744038",
-      "comment_version_key": "6000744038:2026-10-05T19:02:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165720#issuecomment-6000744038",
-      "comment_created_at": "2026-10-05T18:37:26Z",
-      "comment_updated_at": "2026-10-05T19:02:41Z",
-      "comment_body_sha256": "39bb8310803ad0d851d8e320fc591c8bd27eaa956cfe9bb827f9bc15507e8d90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165720,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The shared payload builder is exercised by real CLI-to-IRC delivery, with an independent client observing preserved code escapes and r... (sha=8a18dc43bdcaf47be3c0fb8b8a2d7183c39aeb0b)",
-      "expected_head_sha": "8a18dc43bdcaf47be3c0fb8b8a2d7183c39aeb0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-05T19:04:40.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/message-send-keep-code-newlines",
-        "head_sha": "8a18dc43bdcaf47be3c0fb8b8a2d7183c39aeb0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165729:6001007120:2026-10-05T18:53:50Z:clawsweeper_needs_human",
       "comment_id": "6001007120",
@@ -34051,6 +34018,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165370:6008180287:2026-10-06T02:36:34Z:re_review",
+      "comment_id": "6008180287",
+      "comment_version_key": "6008180287:2026-10-06T02:36:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165370#issuecomment-6008180287",
+      "comment_created_at": "2026-10-06T02:36:34Z",
+      "comment_updated_at": "2026-10-06T02:36:34Z",
+      "comment_body_sha256": "46fc470053d0566fc0b81901fd3cd6e55593f206e248a963ef1fe1b53f2c1daf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165370,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T02:37:32.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sessauthtool",
+        "head_sha": "d45384415d7b91fd416ce5185500e00650d25a6b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
