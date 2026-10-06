@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/ocm",
+  "cluster_id": "issue-openclaw-ocm-296",
+  "mode": "autonomous",
+  "run_id": "37506231983",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37506231983",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-ocm-296.md",
+  "published_at": "2026-10-06T17:51:10.627Z",
+  "canonical": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_issue": "https://github.com/openclaw/ocm/issues/296",
+  "canonical_pr": null,
+  "summary": "The isolation gap remains on preflight main fbd5ca8e0cd9c3caafc6e5fab5485f8d5d135add. A focused fix artifact is ready, but implementation and validation are blocked by the read-only filesystem. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#296",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "The admission safeguard from #47 does not cover siblings admitted after preparation. Keep #296 open for the focused implementation."
+    },
+    {
+      "target": "#47",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or repair action applies to this merged PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-ocm-296",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#296",
+      "candidate_fix": null,
+      "reason": "The narrow fix remains viable. The artifact can be applied by an executor with a writable task checkout and approved remote validation worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
