@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T02:50:43.027Z",
+  "updated_at": "2026-10-06T02:50:45.901Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160700:6001439069:2026-10-05T19:20:53Z:re_review",
-      "comment_id": "6001439069",
-      "comment_version_key": "6001439069:2026-10-05T19:20:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160700#issuecomment-6001439069",
-      "comment_created_at": "2026-10-05T19:20:53Z",
-      "comment_updated_at": "2026-10-05T19:20:53Z",
-      "comment_body_sha256": "2665cd7f9af707adca11cd7083cea93f1efbdffb792339fff5ce8dfcf3a279e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160700,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-05T19:29:25.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1073",
-        "head_sha": "1c6eb579b84eecb751ea5569fc816b05ba9dd3e3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165749:6001469589:2026-10-05T19:22:57Z:autofix",
       "comment_id": "6001469589",
@@ -34048,6 +34001,39 @@
         "kind": "pull_request",
         "branch": "fix/hermit-content-rights-timeout",
         "head_sha": "ad060dd43844c774a20bab8d970e5aa2749b3d69",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-10-06T02:49:45Z:clawsweeper_needs_human",
+      "comment_id": "5466178577",
+      "comment_version_key": "5466178577:2026-10-06T02:49:45Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
+      "comment_created_at": "2026-08-30T02:13:24Z",
+      "comment_updated_at": "2026-10-06T02:49:45Z",
+      "comment_body_sha256": "5e76a4c538f1d0c651f40669ad1d1d62fd41b63f1657887cc1f20a2d95494a29",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Node skill, package, and GitHub archive downloads that keep making progress beyond 15 seconds will now abort and restart on retry. The total-transfer budget has neither expli... (sha=ed720cb0cba59b02b770d4ca1d51834bf6e4dabd)",
+      "expected_head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T02:50:45.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-fetch-body-timeout",
+        "head_sha": "ed720cb0cba59b02b770d4ca1d51834bf6e4dabd",
         "cluster_id": null,
         "job_path": null
       }
