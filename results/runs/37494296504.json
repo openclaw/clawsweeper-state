@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166191",
+  "mode": "autonomous",
+  "run_id": "37494296504",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37494296504",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166191.md",
+  "published_at": "2026-10-06T16:32:10.636Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166191",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166191",
+  "canonical_pr": null,
+  "summary": "The reported locator defect remains in preflight main 3d23bf9dd463f6cec1928cc65a7297c885a4529e. Narrow fix artifact prepared; local implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies/build outputs. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#166191",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#166191",
+      "candidate_fix": null,
+      "reason": "Local implementation is blocked by host prerequisites. The executor must reproduce the original mobile-child-Stop failure on its latest base before editing; inability to reproduce returns this issue to triage."
+    },
+    {
+      "target": "#166142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166191",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166191",
+      "candidate_fix": null,
+      "reason": "A one-file test-fixture repair is clear from source. Apply only after required runtime reproduction in a writable prepared executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
