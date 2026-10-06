@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T20:53:03.194Z",
+  "updated_at": "2026-10-06T20:55:00.634Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152210:5737171604:2026-10-06T14:09:52Z:clawsweeper_auto_repair",
-      "comment_id": "5737171604",
-      "comment_version_key": "5737171604:2026-10-06T14:09:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152210#issuecomment-5737171604",
-      "comment_created_at": "2026-09-18T22:57:32Z",
-      "comment_updated_at": "2026-10-06T14:09:52Z",
-      "comment_body_sha256": "99c196e8b9c2da01a15c7540a9469bb309a083544bdc9aca523ec767f5f79cfa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152210,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=57a15c13e86ba93bcfd69a4913dd2d20fd8ed988)",
-      "expected_head_sha": "57a15c13e86ba93bcfd69a4913dd2d20fd8ed988",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T14:10:56.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-152182",
-        "head_sha": "57a15c13e86ba93bcfd69a4913dd2d20fd8ed988",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152272:5737652082:2026-10-06T14:09:54Z:clawsweeper_needs_human",
       "comment_id": "5737652082",
@@ -33957,6 +33924,53 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165334:5988276420:2026-10-06T20:53:14Z:clawsweeper_needs_human",
+      "comment_id": "5988276420",
+      "comment_version_key": "5988276420:2026-10-06T20:53:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165334#issuecomment-5988276420",
+      "comment_created_at": "2026-10-05T04:45:29Z",
+      "comment_updated_at": "2026-10-06T20:53:14Z",
+      "comment_body_sha256": "1449499f92d6be2cd1803a61d8dac403c0ae0ae91a1db71a72e55169f46c5613",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Land https://github.com/openclaw/openclaw/pull/166217 first, and have the local landing owner reconcile the active clawsweeper:human-review hold. (sha=f3f8f7b6b2a8fd06b5641629bb7803b345cdf53e)",
+      "expected_head_sha": "f3f8f7b6b2a8fd06b5641629bb7803b345cdf53e",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T20:55:00.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/revert-session-channel-links",
+        "head_sha": "f3f8f7b6b2a8fd06b5641629bb7803b345cdf53e",
+        "cluster_id": "automerge-openclaw-openclaw-165334",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
