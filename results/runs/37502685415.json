@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166210",
+  "mode": "autonomous",
+  "run_id": "37502685415",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37502685415",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166210.md",
+  "published_at": "2026-10-06T17:51:54.281Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166210",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166210",
+  "canonical_pr": null,
+  "summary": "The reported condition remains in the checkout matching preflight main c10679395819ede78bb073f979f95c157e165bfa. A narrow fix artifact is prepared, but implementation and provider-boundary reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#166210",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166210",
+      "candidate_fix": null,
+      "reason": "No hydrated implementation PR owns this condition. Proceed through the narrow fix artifact on a writable executor; require a failing provider-boundary regression before production edits."
+    },
+    {
+      "target": "#162779",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#166210",
+      "candidate_fix": null,
+      "reason": "Separate deadline repair. Check patch collision without absorbing its clock or timeout changes; merge is outside this job's authority."
+    },
+    {
+      "target": "#119468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with a different root cause."
+    },
+    {
+      "target": "#119469",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119543",
+      "candidate_fix": "#119543",
+      "reason": "Historical superseded SaveVideo draft; no action required."
+    },
+    {
+      "target": "#119543",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed output filtering and sibling coverage."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166210",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166210",
+      "candidate_fix": null,
+      "reason": "Build one narrow fix on clawsweeper/issue-openclaw-openclaw-166210 after establishing the required failing regression and verifying upstream status semantics."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
