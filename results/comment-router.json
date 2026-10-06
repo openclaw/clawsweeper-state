@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:02:00.529Z",
+  "updated_at": "2026-10-06T12:02:03.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/hermit:52:5791281673:2026-09-23T08:04:35Z:re_review",
-      "comment_id": "5791281673",
-      "comment_version_key": "5791281673:2026-09-23T08:04:35Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/52#issuecomment-5791281673",
-      "comment_created_at": "2026-09-23T08:04:35Z",
-      "comment_updated_at": "2026-09-23T08:04:35Z",
-      "comment_body_sha256": "8cf73bbb843586443be6a1ff8c49ee79d7b52b1dee1bdb7ddcb5fd720c23e9a9",
-      "repo": "openclaw/hermit",
-      "issue_number": 52,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T06:03:40.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maintenance/sweep-3",
-        "head_sha": "af2b07dd98da2275cf75eb73dd5e5a323c633208",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:114:5975910370:2026-10-06T06:02:39Z:clawsweeper_needs_human",
       "comment_id": "5975910370",
@@ -34108,6 +34061,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-166084-catalog-continue-wait",
         "head_sha": "3186225481c750e3a60a8573886b6b04d5e3a31c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165862:6006209543:2026-10-06T12:00:48Z:clawsweeper_needs_human",
+      "comment_id": "6006209543",
+      "comment_version_key": "6006209543:2026-10-06T12:00:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165862#issuecomment-6006209543",
+      "comment_created_at": "2026-10-06T00:13:49Z",
+      "comment_updated_at": "2026-10-06T12:00:48Z",
+      "comment_body_sha256": "b3329a0fa6cd18caa1cce1425222ef16c5e34dbf034d94b28d8ccfff46b09235",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Exact-head reported SQLite replay and real local-process observations support the changed scope producer and background identity path,... (sha=8606f2f901500b4bc0ddc9c288e1f0779f81e010)",
+      "expected_head_sha": "8606f2f901500b4bc0ddc9c288e1f0779f81e010",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T12:02:03.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-165786-crabbox-turn-identity",
+        "head_sha": "8606f2f901500b4bc0ddc9c288e1f0779f81e010",
         "cluster_id": null,
         "job_path": null
       }
