@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-06T07:15:40.907Z",
+  "updated_at": "2026-10-06T07:15:44.474Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148895:5676884004:2026-10-06T01:16:45Z:clawsweeper_needs_human",
-      "comment_id": "5676884004",
-      "comment_version_key": "5676884004:2026-10-06T01:16:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148895#issuecomment-5676884004",
-      "comment_created_at": "2026-09-15T08:06:21Z",
-      "comment_updated_at": "2026-10-06T01:16:45Z",
-      "comment_body_sha256": "33f962e1707877753cc7022bf738834e3cf301f2c29032defdf90d358e7a31f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148895,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cancellation and writer-fence behavior has not been validated on the new head after integrating main’s maintenance and admission refactors. (sha=523ef1963ab768bcbc807740aab23175af10bfd5)",
-      "expected_head_sha": "523ef1963ab768bcbc807740aab23175af10bfd5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T01:17:46.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/foreground-maintenance-reservation-release",
-        "head_sha": "523ef1963ab768bcbc807740aab23175af10bfd5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165891:6007311714:2026-10-06T01:16:58Z:clawsweeper_needs_human",
       "comment_id": "6007311714",
@@ -33609,6 +33576,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165728:6011333686:2026-10-06T07:14:54Z:re_review",
+      "comment_id": "6011333686",
+      "comment_version_key": "6011333686:2026-10-06T07:14:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165728#issuecomment-6011333686",
+      "comment_created_at": "2026-10-06T07:14:54Z",
+      "comment_updated_at": "2026-10-06T07:14:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165728,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-06T07:15:43.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigate-openclaw-visualization-bug",
+        "head_sha": "24501c09394bf272f7db5d2d26c36f51cef7c9a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
