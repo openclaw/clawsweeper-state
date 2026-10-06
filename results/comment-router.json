@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:14:22.967Z",
+  "updated_at": "2026-10-06T12:14:24.566Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160131:6010500507:2026-10-06T06:11:49Z:re_review",
-      "comment_id": "6010500507",
-      "comment_version_key": "6010500507:2026-10-06T06:11:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160131#issuecomment-6010500507",
-      "comment_created_at": "2026-10-06T06:11:49Z",
-      "comment_updated_at": "2026-10-06T06:11:49Z",
-      "comment_body_sha256": "df41bba12be7d42571afb32f9ab11467eb7e01ee2679b95278f7cb6dfdfcae33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160131,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T06:12:53.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-collection-removal-focus",
-        "head_sha": "3e67e552d0c3cc306e3f6e62779ea5b2a72b4407",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151013:5844884260:2026-09-26T09:11:09Z:re_review",
       "comment_id": "5844884260",
@@ -34009,6 +33962,39 @@
         "kind": "pull_request",
         "branch": "dbasync/w5locked-cutover",
         "head_sha": "a0496515369496e9537f9988f685d637ebf3c977",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4308:6014826073:2026-10-06T12:13:37Z:clawsweeper_needs_human",
+      "comment_id": "6014826073",
+      "comment_version_key": "6014826073:2026-10-06T12:13:37Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4308#issuecomment-6014826073",
+      "comment_created_at": "2026-10-06T11:01:24Z",
+      "comment_updated_at": "2026-10-06T12:13:37Z",
+      "comment_body_sha256": "022048fa43036d0e76d9c116791dd539db9f516fa91701e7beb22ef5e1ddf209",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4308,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head has merge conflicts; the resolved result needs review against current main before landing. (sha=1f61b436b00fc1bf35313e8c6fa65227e9f833ad)",
+      "expected_head_sha": "1f61b436b00fc1bf35313e8c6fa65227e9f833ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-06T12:14:24.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-free-usage-parsing",
+        "head_sha": "1f61b436b00fc1bf35313e8c6fa65227e9f833ad",
         "cluster_id": null,
         "job_path": null
       }
