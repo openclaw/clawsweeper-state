@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T16:02:05.810Z",
+  "updated_at": "2026-10-07T16:01:56.192Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166487:6032537012:2026-10-07T08:46:39Z:clawsweeper_needs_human",
@@ -33015,51 +33015,37 @@
       "target": null
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:159066:6041711782:2026-10-07T16:01:01Z:re_review",
-      "comment_id": "6041711782",
-      "comment_version_key": "6041711782:2026-10-07T16:01:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159066#issuecomment-6041711782",
-      "comment_created_at": "2026-10-07T16:01:01Z",
-      "comment_updated_at": "2026-10-07T16:01:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159066,
-      "author": "maxsxu",
-      "author_id": 15963141,
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3811:5822605422:2026-10-07T15:46:44Z:clawsweeper_needs_human",
+      "comment_id": "5822605422",
+      "comment_version_key": "5822605422:2026-10-07T15:46:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3811#issuecomment-5822605422",
+      "comment_created_at": "2026-09-24T21:33:34Z",
+      "comment_updated_at": "2026-10-07T15:46:44Z",
+      "comment_body_sha256": "96358b2e284c86e31e4cc1123cae26e6c43b3abf0057d03fe5aac15aa4877381",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed catalog source was exercised through a macOS loopback Test/Trending handler with successful mixed-row capture and processi... (sha=1519ebbc32c654cc4529aef6b5199854a6b6ff7a)",
+      "expected_head_sha": "1519ebbc32c654cc4529aef6b5199854a6b6ff7a",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T16:02:04.439Z",
+      "status": "skipped",
+      "processed_at": "2026-10-07T16:01:56.192Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/macos-launchagent-service-env-drift-143609",
-        "head_sha": "3bf18ddcf51e43d50f47e2c44c8df3f2958f30e7",
+        "branch": "fix/f028-skills-sh-mirror-identity",
+        "head_sha": "1519ebbc32c654cc4529aef6b5199854a6b6ff7a",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
