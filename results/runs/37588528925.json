@@ -1,0 +1,111 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37588528925",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37588528925",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-07T07:43:32.161Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on a supported Blacksmith pre-worker dispatch binding. The provided main revision confirms the adapter cannot distinguish failed dispatch from slow allocation when native status is queued without a run URL. Recorded triage explicitly rejects inferred associations. No code changes or PR are appropriate.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Keep the distinct provider lifecycle report open pending the supported capability already identified by triage."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed recovery guarantees; no mutation of historical context."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The merged status repair does not resolve the distinct provider capability gap."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2708",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Non-mutating provider-contract handoff only. Blacksmith must expose a supported exact Testbox-to-workflow binding before worker registration and preserve it through cancellation or admission failure. The supplied artifacts contain no such capability, so an executable fix artifact cannot safely be constructed. Revisit implementation once the supported provider contract is available."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 4,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For https://github.com/openclaw/crabbox/issues/2708, coordinate the supported pre-worker Testbox-to-workflow binding with Blacksmith as directed by the October 6 triage comment. Implementation remains blocked until that exact binding is available; inferred associations are explicitly rejected."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
