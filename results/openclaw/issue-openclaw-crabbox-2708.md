@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37637055796"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37637055796"
+run_id: "37690841421"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37690841421"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T14:34:21.756Z"
+published_at: "2026-10-07T21:42:45.133Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37637055796](https://github.com/openclaw/clawsweeper/actions/runs/37637055796)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37690841421](https://github.com/openclaw/clawsweeper/actions/runs/37690841421)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No implementation PR is safely justified. On preflight main a67dd997f64483ae6dfc7d318f470a429eb542fd, Crabbox still lacks an authoritative pre-worker dispatch-to-run binding. The hydrated triage direction explicitly requires a supported Blacksmith capability before adapter work proceeds. No files or GitHub state were changed.
+No safe Crabbox implementation is established on supplied main a67dd997f64483ae6dfc7d318f470a429eb542fd. The issue remains blocked on supported Blacksmith pre-worker dispatch binding. No code changes or GitHub mutations were made; no PR is recommended.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No implementation PR is safely justified. On preflight main a67dd997f64483ae6dfc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | canonical | Implementation is blocked on Blacksmith exposing a supported exact dispatch-to-run binding and terminal outcome independent of worker registration. The available evidence cannot distinguish slow allocation from failed admission while native status remains queued without an association. Guessing a run or weakening settlement checks would violate the recorded implementation boundary. Leave the issue open; emit no executable fix artifact. |
-| #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical context only; no merge or closure action. |
-| #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Historical context only; no merge or closure action. |
+| #2708 | keep_related | blocked | related | Retain this issue as canonical. Slow allocation and pre-worker dispatch failure remain indistinguishable without authoritative provider evidence. Resume implementation when Blacksmith exposes a supported Testbox-to-run binding that survives admission failure and cancellation. Under the job's stop-without-PR guardrail, no executable fix artifact can safely be emitted yet. |
+| #2669 | keep_closed | skipped | related | Historical stop-custody report; distinct from missing pre-worker dispatch evidence. |
+| #2670 | keep_closed | skipped | related | Merged custody repair by @shakkernerd remains historical evidence and does not resolve the dispatch-binding gap. |
+| #2682 | keep_closed | skipped | related | Historical status-interface request; distinct from provider association missing before worker startup. |
+| #2683 | keep_closed | skipped | related | Merged observation repair by @shakkernerd remains useful but cannot create the missing provider-side dispatch binding. |
 
 ## Needs Human
 
