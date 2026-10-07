@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T10:37:45.003Z",
+  "updated_at": "2026-10-07T10:37:57.748Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119712:5196827378:2026-10-03T03:16:57Z:clawsweeper_needs_human",
-      "comment_id": "5196827378",
-      "comment_version_key": "5196827378:2026-10-03T03:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119712#issuecomment-5196827378",
-      "comment_created_at": "2026-08-05T20:12:49Z",
-      "comment_updated_at": "2026-10-03T03:16:57Z",
-      "comment_body_sha256": "ea732bb6d92631aec09b0cc2e33ead776a38e65c24aa4e9135b7e041bb70be3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119712,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The closing reference would resolve the linked all-zero usage report despite leaving its confirmed missing-frame cause unchanged. (sha=5f06105ef03ea2f5cad196c9fed915e528783255)",
-      "expected_head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T03:53:11.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119692",
-        "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
-        "cluster_id": "issue-openclaw-openclaw-119692",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119735:5198106186:2026-10-03T04:37:47Z:clawsweeper_auto_repair",
       "comment_id": "5198106186",
@@ -33394,6 +33361,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166444:6036155941:2026-10-07T10:37:07Z:re_review",
+      "comment_id": "6036155941",
+      "comment_version_key": "6036155941:2026-10-07T10:37:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166444#issuecomment-6036155941",
+      "comment_created_at": "2026-10-07T10:37:07Z",
+      "comment_updated_at": "2026-10-07T10:37:07Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166444,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T10:37:54.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6placement",
+        "head_sha": "93f59e7793be077bab06a0f6d4f1731c1b7bfb2b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
