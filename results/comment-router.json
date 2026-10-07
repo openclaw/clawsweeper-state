@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T21:32:35.759Z",
+  "updated_at": "2026-10-07T21:32:47.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138344:5548415402:2026-09-05T01:28:40Z:re_review",
-      "comment_id": "5548415402",
-      "comment_version_key": "5548415402:2026-09-05T01:28:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138344#issuecomment-5548415402",
-      "comment_created_at": "2026-09-05T01:28:40Z",
-      "comment_updated_at": "2026-09-05T01:28:40Z",
-      "comment_body_sha256": "dd92600d4c5560448ed2d6792a538b038c33ee6a1a2f0e86f2549649153b34d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138344,
-      "author": "waterundman",
-      "author_id": 120729380,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — pr body evidence section now includes a native windows behavior trace of the literal -command path (existing-task json snapshot, missing-task hresult, defender before/after observations with realtime protection on), and the unsupported injection claim has been removed from the code comment and description",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T14:04:23.203Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138344:5549659206:2026-09-05T05:26:36Z:re_review",
       "comment_id": "5549659206",
@@ -33352,6 +33325,39 @@
       "status": "skipped",
       "processed_at": "2026-10-07T21:32:35.759Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166750:6047261433:2026-10-07T21:31:54Z:clawsweeper_needs_human",
+      "comment_id": "6047261433",
+      "comment_version_key": "6047261433:2026-10-07T21:31:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166750#issuecomment-6047261433",
+      "comment_created_at": "2026-10-07T21:31:54Z",
+      "comment_updated_at": "2026-10-07T21:31:54Z",
+      "comment_body_sha256": "b706d857bac9e79aa7c830b3c66b9cc50747ffaec4fc9db8ab415d856f4dac51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied trace exercises the changed outbound owner and shows corrected channel names, but substitutes a recording transport for Twitch del... (sha=25cab660aeba3d972c51cbf7c0635c0f2de22a80)",
+      "expected_head_sha": "25cab660aeba3d972c51cbf7c0635c0f2de22a80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T21:32:47.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "daily/2026-10-07",
+        "head_sha": "25cab660aeba3d972c51cbf7c0635c0f2de22a80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
