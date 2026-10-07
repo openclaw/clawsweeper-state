@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37699156744",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37699156744",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-07T22:59:17.680Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Verified the archive-reconciliation gap against preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation and regression validation are blocked by the read-only filesystem. Returned a scoped fix artifact; no code or GitHub mutations occurred, and no fix is claimed.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The accepted product boundary is clear and the defect remains supported by source inspection. Implementation requires a writable checkout and runtime validation; no maintainer product decision is needed."
+    },
+    {
+      "target": "#468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical partial implementation only. The job explicitly requires a new implementation PR and prohibits closure or merge."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is possible, but implementation and PR readiness remain blocked by enforced read-only access. Resume in a writable executor and complete the required proof before claiming the behavior fixed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

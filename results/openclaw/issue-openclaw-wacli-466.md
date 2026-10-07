@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37692786968"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37692786968"
+run_id: "37699156744"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37699156744"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T22:00:08.841Z"
+published_at: "2026-10-07T22:59:17.680Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37692786968](https://github.com/openclaw/clawsweeper/actions/runs/37692786968)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37699156744](https://github.com/openclaw/clawsweeper/actions/runs/37699156744)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The defect remains present in source on supplied main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused reconciliation repair is appropriate, but implementation and validation are blocked by the read-only environment. No files or GitHub state changed; no regression or real-account confirmation completed.
+Verified the archive-reconciliation gap against preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation and regression validation are blocked by the read-only filesystem. Returned a scoped fix artifact; no code or GitHub mutations occurred, and no fix is claimed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The defect remains present in source on supplied main 8fe6a5a1186c8b3af8258ade81
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | Keep the canonical issue open. Plan one new implementation PR under the accepted reconciliation boundary; this worker cannot implement or validate it in the read-only environment. |
-| #468 | keep_closed | skipped | related | Historical context only. Do not reopen, adopt unchanged, or emit another closure. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned | canonical | Artifact planning can proceed; implementation, the initial failing regression, required gates, and account confirmation remain blocked. Hand this plan to a writable executor before opening a PR. |
+| #466 | fix_needed | planned | canonical | The accepted product boundary is clear and the defect remains supported by source inspection. Implementation requires a writable checkout and runtime validation; no maintainer product decision is needed. |
+| #468 | keep_closed | skipped | related | Historical partial implementation only. The job explicitly requires a new implementation PR and prohibits closure or merge. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Artifact preparation is possible, but implementation and PR readiness remain blocked by enforced read-only access. Resume in a writable executor and complete the required proof before claiming the behavior fixed. |
 
 ## Needs Human
 
