@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T02:29:21.446Z",
+  "updated_at": "2026-10-07T02:29:40.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166217:6025039253:2026-10-06T20:40:15Z:re_review",
-      "comment_id": "6025039253",
-      "comment_version_key": "6025039253:2026-10-06T20:40:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166217#issuecomment-6025039253",
-      "comment_created_at": "2026-10-06T20:40:15Z",
-      "comment_updated_at": "2026-10-06T20:40:15Z",
-      "comment_body_sha256": "2744ee684583fe3333b5549ef9f247cb2849bd2c7c8ec23836adef227e3b8f02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166217,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T20:41:18.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-mcp-audit-ci",
-        "head_sha": "ab4445b17193d89762e62e016c9b823211be8aae",
-        "cluster_id": "automerge-openclaw-openclaw-166217",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166217.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3812:5931883447:2026-10-06T20:40:20Z:clawsweeper_needs_human",
       "comment_id": "5931883447",
@@ -34151,6 +34104,39 @@
         "kind": "pull_request",
         "branch": "dbasync/w6profile",
         "head_sha": "932b4735cc827658ca505a28276ba98f31e386cd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165852:6005913512:2026-10-07T02:28:42Z:clawsweeper_auto_repair",
+      "comment_id": "6005913512",
+      "comment_version_key": "6005913512:2026-10-07T02:28:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165852#issuecomment-6005913512",
+      "comment_created_at": "2026-10-05T23:56:56Z",
+      "comment_updated_at": "2026-10-07T02:28:42Z",
+      "comment_body_sha256": "cb70402fc5670b2716191b96fa160d2e3961ec5d2a801097cb8b4c02e8e493c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c7603be2d1eca20e03acba77c74f58c7e15ef95c)",
+      "expected_head_sha": "c7603be2d1eca20e03acba77c74f58c7e15ef95c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T02:29:40.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/upd-verify-health-timeout-warning",
+        "head_sha": "c7603be2d1eca20e03acba77c74f58c7e15ef95c",
         "cluster_id": null,
         "job_path": null
       }
