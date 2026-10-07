@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T21:17:20.975Z",
+  "updated_at": "2026-10-07T21:17:38.294Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166582:6037834622:2026-10-07T13:48:29Z:clawsweeper_needs_human",
-      "comment_id": "6037834622",
-      "comment_version_key": "6037834622:2026-10-07T13:48:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166582#issuecomment-6037834622",
-      "comment_created_at": "2026-10-07T12:24:14Z",
-      "comment_updated_at": "2026-10-07T13:48:29Z",
-      "comment_body_sha256": "aa440aa27b3fa2f59a1f34ffc20001860212228b4c2a5a66cbb55ba4ded613c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166582,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The pinned-head trace exercises the Teams action resolver and Graph request owner through real HTTP to a loopback host, showing correc... (sha=84f5b882f03957fd29ba74dec36d3db3cdbe3bc8)",
-      "expected_head_sha": "84f5b882f03957fd29ba74dec36d3db3cdbe3bc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T13:49:34.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-channel-reply-reactions",
-        "head_sha": "84f5b882f03957fd29ba74dec36d3db3cdbe3bc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166601:6039360765:2026-10-07T13:48:59Z:re_review",
       "comment_id": "6039360765",
@@ -33424,6 +33391,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166703:6047017947:2026-10-07T21:16:28Z:re_review",
+      "comment_id": "6047017947",
+      "comment_version_key": "6047017947:2026-10-07T21:16:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166703#issuecomment-6047017947",
+      "comment_created_at": "2026-10-07T21:16:28Z",
+      "comment_updated_at": "2026-10-07T21:16:28Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166703,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T21:17:36.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/turnbudget-step1-current",
+        "head_sha": "aa49dc56d0c5d4a10f72de5c7ec6c0c22a5bf984",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
