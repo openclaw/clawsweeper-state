@@ -2,14 +2,14 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37565269841"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37565269841"
+run_id: "37576769596"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37576769596"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T03:11:51.555Z"
-canonical: "https://github.com/openclaw/Peekaboo/issues/881"
-canonical_issue: "https://github.com/openclaw/Peekaboo/issues/881"
+published_at: "2026-10-07T05:35:17.932Z"
+canonical: "https://github.com/openclaw/peekaboo/issues/881"
+canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37565269841](https://github.com/openclaw/clawsweeper/actions/runs/37565269841)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37576769596](https://github.com/openclaw/clawsweeper/actions/runs/37576769596)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/Peekaboo/issues/881
+Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation is blocked on the retained same-session diagnostics requested by the collaborator. Current-main inspection did not establish a definite bounds-loss defect or prove the released Simulator failure fixed. Keep #881 open without an executable fix plan. No code or GitHub changes were made.
+Implementation blocked: the selected host and failing receipt producer remain unidentified. Current-main inspection does not establish a narrow defect to patch. Keep #881 open; no code changes or PR planned.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Implementation is blocked on the retained same-session diagnostics requested by 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_related | planned | canonical | Keep #881 open as the canonical report using a non-mutating retention action. Before a narrow implementation can be selected, obtain the already-requested redacted same-session binary version, bridge status, inventory row, and retained failing remote/successful local capture JSON. These must distinguish release behavior from current main and locate the actual evidence-loss boundary. Do not retry focus/input, weaken exact-window attribution, or silently switch hosts. Without that evidence, an executable fix artifact would prescribe a speculative patch. |
+| #881 | keep_canonical | planned | canonical | The repair boundary is underspecified without the retained selected-host/protocol and receipt evidence requested by the collaborator. Resume implementation when those diagnostics identify the failing producer or a concrete current-main defect is established. Do not weaken attribution, silently switch hosts, or repeat potentially post-dispatch focus/input operations. |
 
 ## Needs Human
 
