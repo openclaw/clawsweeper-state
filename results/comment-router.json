@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T19:12:54.942Z",
+  "updated_at": "2026-10-07T19:13:41.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166252:6023366720:2026-10-07T11:28:51Z:clawsweeper_needs_human",
-      "comment_id": "6023366720",
-      "comment_version_key": "6023366720:2026-10-07T11:28:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166252#issuecomment-6023366720",
-      "comment_created_at": "2026-10-06T19:00:20Z",
-      "comment_updated_at": "2026-10-07T11:28:51Z",
-      "comment_body_sha256": "028db505f24443354e8a0c20cffb515a8de3812a98bada2c20f0f6074e89577e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166252,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The integrated head changes reachable session/read owners, so the predecessor's passing measurements do not establish the retained per-flow SQL nonincrease and readiness gate for 0dc2... (sha=d3a2f2d57ce7c844e2e92f10f13bda9fa905f143)",
-      "expected_head_sha": "d3a2f2d57ce7c844e2e92f10f13bda9fa905f143",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T11:30:08.086Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6discovery-preflight",
-        "head_sha": "d3a2f2d57ce7c844e2e92f10f13bda9fa905f143",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/tokentally:58:5947160049:2026-10-07T11:29:26Z:clawsweeper_needs_human",
       "comment_id": "5947160049",
@@ -33515,6 +33482,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:425:6044984046:2026-10-07T19:12:38Z:re_review",
+      "comment_id": "6044984046",
+      "comment_version_key": "6044984046:2026-10-07T19:12:38Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/425#issuecomment-6044984046",
+      "comment_created_at": "2026-10-07T19:12:38Z",
+      "comment_updated_at": "2026-10-07T19:12:38Z",
+      "comment_body_sha256": "570c0405e5988669623d3fe599bcc4dbba42c25340769b2de9b49abe042877e7",
+      "repo": "openclaw/mcporter",
+      "issue_number": 425,
+      "author": "alexminza",
+      "author_id": 149919,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T19:13:40.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/408-vault-encrypt",
+        "head_sha": "99ff6eff8e3b78aca146b408489d800fa3e9f4df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
