@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-07T23:52:09.102Z",
+  "updated_at": "2026-10-07T23:50:55.209Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164933:5980796280:2026-10-07T17:16:40Z:clawsweeper_needs_human",
+      "comment_id": "5980796280",
+      "comment_version_key": "5980796280:2026-10-07T17:16:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164933#issuecomment-5980796280",
+      "comment_created_at": "2026-10-04T13:59:25Z",
+      "comment_updated_at": "2026-10-07T17:16:40Z",
+      "comment_body_sha256": "936ed20815282fd98a1c6c265430f00a6c6c55cf1de5e1251b00925af116a34f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed session-evidence resolver and retirement owner have supplemental SQLite regressions and mocked teardown coverage, but no after-fix... (sha=96e80171b8bad354d80cf1ca1691554834d9f382)",
+      "expected_head_sha": "96e80171b8bad354d80cf1ca1691554834d9f382",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T18:29:40.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-placement-retirement-20261004",
+        "head_sha": "96e80171b8bad354d80cf1ca1691554834d9f382",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165122:5984673018:2026-10-07T18:25:11Z:clawsweeper_needs_human",
       "comment_id": "5984673018",
@@ -33120,53 +33153,6 @@
       "status": "skipped",
       "processed_at": "2026-10-07T23:50:55.209Z",
       "target": null
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166613:6049187578:2026-10-07T23:51:15Z:re_review",
-      "comment_id": "6049187578",
-      "comment_version_key": "6049187578:2026-10-07T23:51:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166613#issuecomment-6049187578",
-      "comment_created_at": "2026-10-07T23:51:15Z",
-      "comment_updated_at": "2026-10-07T23:51:15Z",
-      "comment_body_sha256": "a2a4ae723f6420e63dd149498eb346c3a46434107e3e03c4118a99216642a8c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166613,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:52:07.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/158903-destination",
-        "head_sha": "eb7b17b396278e722a739b3730aee8f8bf343fab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
