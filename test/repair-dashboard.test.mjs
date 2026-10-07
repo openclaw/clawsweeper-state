@@ -76,6 +76,49 @@ test("repair dashboard links shorthand targets through the source repo", () => {
   );
 });
 
+test("repair dashboard links a pull or issue before a cluster target", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "clawsweeper-state-cluster-"));
+  const runsDir = path.join(root, "results", "runs");
+  fs.mkdirSync(runsDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(runsDir, "run.json"),
+    JSON.stringify({
+      repo: "openclaw/openclaw",
+      cluster_id: "issue-openclaw-openclaw-5",
+      run_id: "55",
+      run_url: "https://github.com/openclaw/clawsweeper/actions/runs/55",
+      workflow_conclusion: "success",
+      published_at: "2026-05-02T19:00:00.000Z",
+      needs_human: ["choose the real item"],
+      fix_actions: [
+        {
+          target: "cluster:issue-openclaw-openclaw-5",
+          pr: "https://github.com/openclaw/openclaw/pull/9",
+          url: "https://github.com/openclaw/openclaw/issues/5",
+          status: "blocked",
+          reason: "cluster target is not a url",
+        },
+      ],
+      apply_actions: [
+        {
+          target: "cluster:issue-openclaw-openclaw-8",
+          action: "close_duplicate",
+          url: "https://github.com/openclaw/openclaw/issues/8",
+          status: "executed",
+          title: "use the issue url",
+          closed_at: "2026-05-02T19:01:00.000Z",
+        },
+      ],
+    }),
+    "utf8",
+  );
+
+  const dashboard = renderRepairDashboard(root);
+  assert.match(dashboard, /\[#9\]\(https:\/\/github\.com\/openclaw\/openclaw\/pull\/9\)/);
+  assert.match(dashboard, /\[#8\]\(https:\/\/github\.com\/openclaw\/openclaw\/issues\/8\)/);
+  assert.doesNotMatch(dashboard, /\]\(cluster:/);
+});
+
 test("repair dashboard groups owner action lanes by operator bucket", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "clawsweeper-state-owner-"));
   const runsDir = path.join(root, "results", "runs");
