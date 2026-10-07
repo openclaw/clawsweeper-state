@@ -2,30 +2,30 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37648678530"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37648678530"
+run_id: "37653150644"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37653150644"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T16:08:14.741Z"
+published_at: "2026-10-07T16:42:04.663Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-peekaboo-881
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37648678530](https://github.com/openclaw/clawsweeper/actions/runs/37648678530)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37653150644](https://github.com/openclaw/clawsweeper/actions/runs/37653150644)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation is blocked on retained diagnostics identifying the failing Bridge producer. Current-main inspection does not establish a narrow repair or prove the report already fixed. No code changes or PR are proposed.
+Implementation is blocked on the retained host/session diagnostics requested by the maintainer. Source inspection does not establish a narrow current-main defect. No code changes or PR are recommended yet; #881 remains canonical and open.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Implementation is blocked on retained diagnostics identifying the failing Bridge
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | Preserve the original report and brunobarrientos's reproduction context. Neither resolution nor a shared root cause with historical linked work is established. |
-| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | The 4.2.0 report lacks retained evidence distinguishing host/protocol mismatch, unavailable native identity, and evidence loss. Resume after obtaining the maintainer-requested redacted diagnostics, preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. Do not repeat focus/input attempts, weaken attribution, or silently switch hosts. The job explicitly requires stopping without code changes when safe implementation is underspecified. |
+| #881 | keep_related | planned | related | Keep #881 open pending the retained diagnostics already requested by steipete. The fix_needed action is downgraded to a non-mutating keep_related action because the provided artifacts do not safely establish an implementation path or support a concrete fix_artifact. Preserve selected host/protocol, PID/process generation, exact window ID, bounds, target receipt, and dispatch/retry metadata. Compare the released artifact with current main before selecting a metadata-preservation repair or capability refusal. Do not repeat potentially post-dispatch focus/input operations or silently switch hosts. |
 
 ## Needs Human
 
-- #881: Obtain the collaborator-requested retained binary --version, bridge status --verbose --json, redacted Simulator inventory row, and existing failing remote/successful local capture JSON from the same affected host/session. These are needed to identify the missing exact-window evidence field and producer before specifying a safe repair; do not gather them through further focus/input attempts.
+- none
