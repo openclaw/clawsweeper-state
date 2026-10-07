@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37607648422"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37607648422"
+run_id: "37611222165"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37611222165"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T10:34:45.592Z"
+published_at: "2026-10-07T11:05:49.021Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37607648422](https://github.com/openclaw/clawsweeper/actions/runs/37607648422)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37611222165](https://github.com/openclaw/clawsweeper/actions/runs/37611222165)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation is blocked by the read-only filesystem, unavailable required tooling, and incomplete preference/bootstrap protocol evidence. No code changed, regression executed, or PR opened.
+The archive-state defect remains on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation is blocked by the read-only filesystem and unavailable pinned protocol source, so archive/message boundaries and upgraded-store preference recovery could not be established safely. No code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The ordinary archive-state bug remains unresolved and has no viable open implementation PR. Keep #466 as the canonical issue. |
-| #468 | keep_closed | skipped | related | Historical implementation context, not a landing or closure target. Preserve attribution for any ideas or code carried forward. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | The artifact records a narrow recovery path, but implementation and PR publication must wait for a writable executor with required tooling and verified preference/bootstrap semantics. |
+| #466 | fix_needed | planned | canonical | A non-security bug remains with no viable open implementation PR. Preserve #466 as the canonical issue; implementation requires the blocked contract checks below. |
+| #468 | keep_closed | skipped | related | Closed prior work is evidence only and must receive no closure, branch-repair, or merge action. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked | canonical | The handoff artifact records the intended narrow repair, but implementation and PR creation must remain blocked until pinned protocol boundaries can be verified in a writable validation environment. Do not substitute guessed timestamps or default unknown preferences to enabled. |
 
 ## Needs Human
 
