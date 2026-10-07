@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166646",
+  "mode": "autonomous",
+  "run_id": "37647482900",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37647482900",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166646.md",
+  "published_at": "2026-10-07T16:48:30.303Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166646",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166646",
+  "canonical_pr": null,
+  "summary": "Verified the selection defect on preflight main f98d079cb9d30f2bc5965197d22da2e9af64b3be. Prepared a narrow executor fix plan. This read-only worker made no changes; Vitest, patch validation, and real managed-Chrome proof remain required.",
+  "actions": [
+    {
+      "target": "#166646",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166646",
+      "candidate_fix": null,
+      "reason": "The existing opening-time cap selects a recently used sibling tab ahead of idle candidates. A narrow repair remains warranted; implementation requires a writable executor."
+    },
+    {
+      "target": "#138591",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#166646",
+      "candidate_fix": null,
+      "reason": "Configuration policy is separate from the eviction-order bug and remains outside this implementation job."
+    },
+    {
+      "target": "#29724",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166646",
+      "candidate_fix": null,
+      "reason": "Historical implementation context only; no repair, closure, or merge action targets this landed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166646",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166646",
+      "candidate_fix": null,
+      "reason": "A focused existing-behavior repair can proceed through the executor without GitHub mutations from this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
