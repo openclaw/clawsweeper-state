@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37640113105",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37640113105",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-07T14:59:30.426Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Confirmed the archive defect on preflight main with an in-memory probe using repository SQL. Returned a focused fix artifact; implementation and validation are blocked by the read-only checkout, unavailable required Go toolchain, and incomplete access to pinned history contracts. No files or GitHub state changed; no PR created.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The ordinary archive reconciliation bug remains on current main, and no viable open implementation PR exists."
+    },
+    {
+      "target": "#468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; the rejected implementation must not be landed or receive another closure action."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The artifact is reviewable, but implementation is blocked until a writable checkout, required toolchain, and pinned protocol sources are available. Do not open a PR before regression, protocol, migration, and full-gate validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

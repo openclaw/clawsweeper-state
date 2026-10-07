@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37622773041"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37622773041"
+run_id: "37640113105"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37640113105"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T12:47:48.205Z"
+published_at: "2026-10-07T14:59:30.426Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37622773041](https://github.com/openclaw/clawsweeper/actions/runs/37622773041)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37640113105](https://github.com/openclaw/clawsweeper/actions/runs/37640113105)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The archive-state defect remains on preflight main. A scoped fix artifact is prepared, but implementation and validation are blocked by the read-only filesystem, unavailable required toolchain, and incomplete pinned-protocol verification. No files or GitHub items were changed.
+Confirmed the archive defect on preflight main with an in-memory probe using repository SQL. Returned a focused fix artifact; implementation and validation are blocked by the read-only checkout, unavailable required Go toolchain, and incomplete access to pinned history contracts. No files or GitHub state changed; no PR created.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The archive-state defect remains on preflight main. A scoped fix artifact is pre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | A new ordered, preference-aware local reconciliation path is needed. Keep the issue open; closure and merge are prohibited by this job. |
-| #468 | keep_closed | skipped | related | Historical implementation context only; it is not a viable canonical PR or a closure target. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The planning artifact is complete. Applying it and opening a PR remain blocked until writable execution, the required toolchain, and sufficient protocol evidence are available. |
+| #466 | fix_needed | planned | canonical | The ordinary archive reconciliation bug remains on current main, and no viable open implementation PR exists. |
+| #468 | keep_closed | skipped | related | Historical evidence only; the rejected implementation must not be landed or receive another closure action. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The artifact is reviewable, but implementation is blocked until a writable checkout, required toolchain, and pinned protocol sources are available. Do not open a PR before regression, protocol, migration, and full-gate validation. |
 
 ## Needs Human
 
