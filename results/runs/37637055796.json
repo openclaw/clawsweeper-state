@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37637055796",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37637055796",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-07T14:34:21.756Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No implementation PR is safely justified. On preflight main a67dd997f64483ae6dfc7d318f470a429eb542fd, Crabbox still lacks an authoritative pre-worker dispatch-to-run binding. The hydrated triage direction explicitly requires a supported Blacksmith capability before adapter work proceeds. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on Blacksmith exposing a supported exact dispatch-to-run binding and terminal outcome independent of worker registration. The available evidence cannot distinguish slow allocation from failed admission while native status remains queued without an association. Guessing a run or weakening settlement checks would violate the recorded implementation boundary. Leave the issue open; emit no executable fix artifact."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no merge or closure action."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no merge or closure action."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
