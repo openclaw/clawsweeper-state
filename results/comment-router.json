@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T17:42:03.443Z",
+  "updated_at": "2026-10-07T17:43:03.379Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5725926586:2026-09-18T06:07:48Z:re_review",
-      "comment_id": "5725926586",
-      "comment_version_key": "5725926586:2026-09-18T06:07:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5725926586",
-      "comment_created_at": "2026-09-18T06:07:48Z",
-      "comment_updated_at": "2026-09-18T06:07:48Z",
-      "comment_body_sha256": "94a8245890e70e1921a2e6ff8bc93b903a5c4b190cb660005218d5397e54ecc0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T09:46:54.171Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5744567190:2026-09-19T19:05:02Z:re_review",
       "comment_id": "5744567190",
@@ -33308,6 +33281,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3916:6002835337:2026-10-07T17:39:52Z:clawsweeper_needs_human",
+      "comment_id": "6002835337",
+      "comment_version_key": "6002835337:2026-10-07T17:39:52Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3916#issuecomment-6002835337",
+      "comment_created_at": "2026-10-05T21:00:43Z",
+      "comment_updated_at": "2026-10-07T17:39:52Z",
+      "comment_body_sha256": "98ca7d28a9cbbb1a8a016e846de9691e450182c7786c323bfdeb4a2df0782576",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the merge conflicts and validate the resulting skills test suite on Windows and Linux. (sha=663c6eea1421f942f6068194e99401bcbfa1edc0)",
+      "expected_head_sha": "663c6eea1421f942f6068194e99401bcbfa1edc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T17:43:03.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-update-windows-tests",
+        "head_sha": "663c6eea1421f942f6068194e99401bcbfa1edc0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
