@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T13:54:00.700Z",
+  "updated_at": "2026-10-07T13:55:17.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161321:6032724715:2026-10-07T06:58:43Z:re_review",
-      "comment_id": "6032724715",
-      "comment_version_key": "6032724715:2026-10-07T06:58:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161321#issuecomment-6032724715",
-      "comment_created_at": "2026-10-07T06:58:43Z",
-      "comment_updated_at": "2026-10-07T06:58:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161321,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T07:00:12.628Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "daily/2026-09-29",
-        "head_sha": "9fbb170b7bf5639ce61db8415190f3777e59f6d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157106:5809441331:2026-10-07T06:56:36Z:clawsweeper_auto_repair",
       "comment_id": "5809441331",
@@ -33027,6 +32980,39 @@
         "kind": "pull_request",
         "branch": "dbasync/w6device",
         "head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133727:5473956354:2026-10-07T13:54:09Z:clawsweeper_needs_human",
+      "comment_id": "5473956354",
+      "comment_version_key": "5473956354:2026-10-07T13:54:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133727#issuecomment-5473956354",
+      "comment_created_at": "2026-08-31T05:02:23Z",
+      "comment_updated_at": "2026-10-07T13:54:09Z",
+      "comment_body_sha256": "07da112bf7ce9b6b53da46bc5d433febd0e8546228de48b9aa9e794d00069725",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body reports tests of fallback previews and failure payload selection, but no after-fix transport result through the changed reply... (sha=da010d149beb9dc88859c264951efcfead2b4fd8)",
+      "expected_head_sha": "da010d149beb9dc88859c264951efcfead2b4fd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T13:55:17.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "continuum/6b046b02",
+        "head_sha": "da010d149beb9dc88859c264951efcfead2b4fd8",
         "cluster_id": null,
         "job_path": null
       }
