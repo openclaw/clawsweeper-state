@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:08:53.838Z",
+  "updated_at": "2026-10-07T22:09:13.717Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166621:6040027036:2026-10-07T14:51:49Z:clawsweeper_needs_human",
-      "comment_id": "6040027036",
-      "comment_version_key": "6040027036:2026-10-07T14:51:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166621#issuecomment-6040027036",
-      "comment_created_at": "2026-10-07T14:24:03Z",
-      "comment_updated_at": "2026-10-07T14:51:49Z",
-      "comment_body_sha256": "2c3a648b1fdf8e87a166cc468be69c59497cc7767dd6ca988d938b865b337fae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166621,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the verified remaining merge conflicts, validate the affected integration on the resulting head, and mark the PR ready for review. (sha=b296db61edc10d91eb1b4405e464eb6feaa0b813)",
-      "expected_head_sha": "b296db61edc10d91eb1b4405e464eb6feaa0b813",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T14:52:54.450Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/d01-gateway-server-methods-20261007",
-        "head_sha": "b296db61edc10d91eb1b4405e464eb6feaa0b813",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3870:5975928851:2026-10-04T02:51:03Z:re_review",
       "comment_id": "5975928851",
@@ -33330,6 +33297,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1663:6047708378:2026-10-07T22:06:28Z:clawsweeper_needs_human",
+      "comment_id": "6047708378",
+      "comment_version_key": "6047708378:2026-10-07T22:06:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1663#issuecomment-6047708378",
+      "comment_created_at": "2026-10-07T22:00:32Z",
+      "comment_updated_at": "2026-10-07T22:06:28Z",
+      "comment_body_sha256": "6a4843d4afb280b6957db512fd367ecd1ead8e2df01d34976a95ffc07d98511f",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1663,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve denial auditing when the client disconnects (P2)** - If a signed-in caller disconnects while admission or IAM authorization is pending, nativeAdminProxyContext can still finish with an attributable auth...; Review finding: [P2] Preserve denial auditing when the client disconnects — apps/controller/src/http/native-admin.ts:866-868 - [medium] Client disconnect suppresses attributable d... (sha=9c90a0da91436dbc7f002978db9ff773895ce895)",
+      "expected_head_sha": "9c90a0da91436dbc7f002978db9ff773895ce895",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T22:09:13.717Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-admin-upgrade-socket-error",
+        "head_sha": "9c90a0da91436dbc7f002978db9ff773895ce895",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
