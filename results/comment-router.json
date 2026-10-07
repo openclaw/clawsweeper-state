@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T21:22:48.515Z",
+  "updated_at": "2026-10-07T21:25:54.437Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166539:6034974015:2026-10-07T13:52:43Z:clawsweeper_needs_human",
-      "comment_id": "6034974015",
-      "comment_version_key": "6034974015:2026-10-07T13:52:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166539#issuecomment-6034974015",
-      "comment_created_at": "2026-10-07T09:23:48Z",
-      "comment_updated_at": "2026-10-07T13:52:43Z",
-      "comment_body_sha256": "fecade8fab560028b8f1d584aab70c7bd8cf4ac358ff5cc776826bed3af3960b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166539,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Final-head SQL cost remains unqualified: the historical adjacent-window result used grouped runs, and two of 108 SQL/stack delta groups lack baseline matches. (sha=77ecbf16d11f6e90125c4fad9938d18b53f85fef)",
-      "expected_head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T13:54:00.700Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6device",
-        "head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134404:5502799295:2026-09-02T01:07:46Z:re_review",
       "comment_id": "5502799295",
@@ -33400,6 +33367,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165753:6047150600:2026-10-07T21:24:48Z:re_review",
+      "comment_id": "6047150600",
+      "comment_version_key": "6047150600:2026-10-07T21:24:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165753#issuecomment-6047150600",
+      "comment_created_at": "2026-10-07T21:24:48Z",
+      "comment_updated_at": "2026-10-07T21:24:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165753,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T21:25:53.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/special-token-prose",
+        "head_sha": "d4050f4484292e032232c18bc6b6943c1e973e2c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
