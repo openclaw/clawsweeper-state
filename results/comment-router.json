@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-10-07T00:09:41.467Z",
+  "updated_at": "2026-10-07T00:09:44.791Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165334:6022452653:2026-10-06T18:08:35Z:autofix",
-      "comment_id": "6022452653",
-      "comment_version_key": "6022452653:2026-10-06T18:08:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165334#issuecomment-6022452653",
-      "comment_created_at": "2026-10-06T18:08:35Z",
-      "comment_updated_at": "2026-10-06T18:08:35Z",
-      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165334,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "autofix enabled; current checks are failing: checks-node-changed-extensions-bundle-10:FAILURE, checks-node-changed-extensions-bundle-17:FAILURE, checks-node-changed-compact-large-17:FAILURE, checks-node-changed-compact-small-1:FAILURE, checks-node-changed-14:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T18:09:53.589Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/revert-session-channel-links",
-        "head_sha": "d1bc7ab5c416d28c1540d45c866acd7861f6b959",
-        "cluster_id": "automerge-openclaw-openclaw-165334",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165334.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166229:6022452725:2026-10-06T18:08:36Z:re_review",
       "comment_id": "6022452725",
@@ -33700,6 +33647,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-166088-state-read-admission",
         "head_sha": "d0a218e7d7ec42349aa4e96ff06d7dd5608c791a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1658:6027869907:2026-10-07T00:08:53Z:clawsweeper_needs_human",
+      "comment_id": "6027869907",
+      "comment_version_key": "6027869907:2026-10-07T00:08:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1658#issuecomment-6027869907",
+      "comment_created_at": "2026-10-07T00:08:53Z",
+      "comment_updated_at": "2026-10-07T00:08:53Z",
+      "comment_body_sha256": "ab3396b5f6c974b1283903739e40cfa779560b6978bd80fe8c8f73f05b9415c4",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1658,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7776b4c1a13ecf45d0c2c046b9b3bb6dd2b3a353)",
+      "expected_head_sha": "7776b4c1a13ecf45d0c2c046b9b3bb6dd2b3a353",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T00:09:44.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f105-ssh-loopback-forward",
+        "head_sha": "7776b4c1a13ecf45d0c2c046b9b3bb6dd2b3a353",
         "cluster_id": null,
         "job_path": null
       }
