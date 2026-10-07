@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T17:12:21.342Z",
+  "updated_at": "2026-10-07T17:15:32.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6030349804:2026-10-07T03:34:32Z:re_review",
-      "comment_id": "6030349804",
-      "comment_version_key": "6030349804:2026-10-07T03:34:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6030349804",
-      "comment_created_at": "2026-10-07T03:34:32Z",
-      "comment_updated_at": "2026-10-07T03:34:32Z",
-      "comment_body_sha256": "1ae8dd920acd46b63d254d1362c841d6b47e9ad99aefd817e3377cf99219d03b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main (`e7546f2e40`, was 43 behind) into `memorytunning-pr-v2` (`6eaad285fe`). skill-selection contract intact (async worker `listauditeventsindatabase`, companion table `audit_skill_selection_events`, 4-field run-usage contract). focused tests 6/6 green. note: `tsgo:core` has 2 pre-existing upstream errors (`state-migrations.no-replace-move.ts`, `plugin-source-file.ts` — fs-safe 0.24.0 api mismatch, files untouched by this pr)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T09:46:54.170Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5570646456:2026-09-07T12:29:21Z:re_review",
       "comment_id": "5570646456",
@@ -33082,6 +33055,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166608:6042957341:2026-10-07T17:14:29Z:re_review",
+      "comment_id": "6042957341",
+      "comment_version_key": "6042957341:2026-10-07T17:14:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166608#issuecomment-6042957341",
+      "comment_created_at": "2026-10-07T17:14:29Z",
+      "comment_updated_at": "2026-10-07T17:14:29Z",
+      "comment_body_sha256": "41bf1789cb7b541c09be86e77990f7a7cb796983078cadc86382d6d4fe4658fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166608,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T17:15:31.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/158903-dispatch-authority",
+        "head_sha": "a0ed0af423a288c318514aa6f98e0e26619cc323",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
