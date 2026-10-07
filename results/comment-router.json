@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T02:54:58.500Z",
+  "updated_at": "2026-10-07T02:55:17.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166011:6025554183:2026-10-06T21:13:04Z:re_review",
-      "comment_id": "6025554183",
-      "comment_version_key": "6025554183:2026-10-06T21:13:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166011#issuecomment-6025554183",
-      "comment_created_at": "2026-10-06T21:13:04Z",
-      "comment_updated_at": "2026-10-06T21:13:04Z",
-      "comment_body_sha256": "cacfc7aaebd53760af11be80f81413fbdebb5656b57bbf16b2888772bdb0affa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166011,
-      "author": "dankarization",
-      "author_id": 26330178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T21:14:19.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/private-telegram-topic-title-upstream-20261006",
-        "head_sha": "bdc8bf4d8e50d44df3e2fafd150235eabb955936",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166263:6024351442:2026-10-06T21:13:47Z:clawsweeper_needs_human",
       "comment_id": "6024351442",
@@ -34095,6 +34048,39 @@
         "kind": "pull_request",
         "branch": "fix/native-onboarding-device-token-recovery",
         "head_sha": "e2e68340c829562be3cc296fb24dfae782c84d75",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142700:5593738788:2026-10-07T02:54:12Z:clawsweeper_needs_human",
+      "comment_id": "5593738788",
+      "comment_version_key": "5593738788:2026-10-07T02:54:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142700#issuecomment-5593738788",
+      "comment_created_at": "2026-09-09T00:13:43Z",
+      "comment_updated_at": "2026-10-07T02:54:12Z",
+      "comment_body_sha256": "7bfb1e7b26e1d9a2e7c9f6ac0c44e7fa17c59992c0511e16f04d2cf1b12119e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installed plugins that rewrite arguments after trusted approval will stop executing those calls until they request separate approval; maintainer acceptance of this upgrade be... (sha=a2b289035881d8d193b3dee23a4cc9189ec1ad9a)",
+      "expected_head_sha": "a2b289035881d8d193b3dee23a4cc9189ec1ad9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T02:55:17.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/immutable-tool-approval",
+        "head_sha": "a2b289035881d8d193b3dee23a4cc9189ec1ad9a",
         "cluster_id": null,
         "job_path": null
       }
