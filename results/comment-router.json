@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T19:41:48.963Z",
+  "updated_at": "2026-10-07T19:42:33.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5864095988:2026-09-28T05:33:55Z:re_review",
-      "comment_id": "5864095988",
-      "comment_version_key": "5864095988:2026-09-28T05:33:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5864095988",
-      "comment_created_at": "2026-09-28T05:33:55Z",
-      "comment_updated_at": "2026-09-28T05:33:55Z",
-      "comment_body_sha256": "1c37ff8eb5b11ee0b6ecae2e3dd45cff39b5a5f12ddbf7c2aa8027e3289bfbff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — merged upstream/main (be535fd24b → head 4e70d1afdb, 45 commits, clean, zero conflicts). skill-selection contract intact (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). focused tests 6/6 pass. tsgo:core errors only in upstream files (node-proxy-agent, api-baseline, runtime-import-closure), none in our files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T11:45:52.088Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5865589307:2026-09-28T07:41:25Z:re_review",
       "comment_id": "5865589307",
@@ -33585,6 +33558,39 @@
       "status": "skipped",
       "processed_at": "2026-10-07T19:41:48.963Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136506:5514346649:2026-10-07T19:41:33Z:clawsweeper_auto_repair",
+      "comment_id": "5514346649",
+      "comment_version_key": "5514346649:2026-10-07T19:41:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136506#issuecomment-5514346649",
+      "comment_created_at": "2026-09-02T18:23:56Z",
+      "comment_updated_at": "2026-10-07T19:41:33Z",
+      "comment_body_sha256": "c08204f4f66c1322dde7935e8a193ba665acf31d495d8255513aaca8413469a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=31eb24878d28c6898f28c74fe7ba2308060a922f)",
+      "expected_head_sha": "31eb24878d28c6898f28c74fe7ba2308060a922f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T19:42:33.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-989",
+        "head_sha": "31eb24878d28c6898f28c74fe7ba2308060a922f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
