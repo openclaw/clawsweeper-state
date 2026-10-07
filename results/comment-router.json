@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T05:25:15.680Z",
+  "updated_at": "2026-10-07T05:25:30.959Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162067:6028151901:2026-10-07T00:31:48Z:re_review",
-      "comment_id": "6028151901",
-      "comment_version_key": "6028151901:2026-10-07T00:31:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162067#issuecomment-6028151901",
-      "comment_created_at": "2026-10-07T00:31:48Z",
-      "comment_updated_at": "2026-10-07T00:31:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162067,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T00:32:49.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-observer-timeout",
-        "head_sha": "d54b034ddaa4ca8a3dc1f1ebd0ee3c9a6a6c49c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:307:6028155682:2026-10-07T00:32:07Z:clawsweeper_needs_human",
       "comment_id": "6028155682",
@@ -33430,6 +33383,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-artifacts-members-evidence-20260919",
         "head_sha": "39131b233ebc4c29cf2ff1bbbd85bfe84b806562",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128524:5391299193:2026-10-07T05:24:43Z:clawsweeper_needs_human",
+      "comment_id": "5391299193",
+      "comment_version_key": "5391299193:2026-10-07T05:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128524#issuecomment-5391299193",
+      "comment_created_at": "2026-08-24T06:00:10Z",
+      "comment_updated_at": "2026-10-07T05:24:43Z",
+      "comment_body_sha256": "4429d7ef16ed5e1d588ed3ec689ababafc9aaffec6747768c69409ad057b1ceb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head conflicts with main; the fixture isolation must be carried onto the current test structure and validated before landing. (sha=623a651a747a529d8aaa3b842e8b41f92eb26434)",
+      "expected_head_sha": "623a651a747a529d8aaa3b842e8b41f92eb26434",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T05:25:30.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/server-kernel-disable-bundled-plugins",
+        "head_sha": "623a651a747a529d8aaa3b842e8b41f92eb26434",
         "cluster_id": null,
         "job_path": null
       }
