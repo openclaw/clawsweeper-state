@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:43:31.701Z",
+  "updated_at": "2026-10-07T22:43:44.940Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163462:6041544623:2026-10-07T15:52:07Z:re_review",
-      "comment_id": "6041544623",
-      "comment_version_key": "6041544623:2026-10-07T15:52:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163462#issuecomment-6041544623",
-      "comment_created_at": "2026-10-07T15:52:07Z",
-      "comment_updated_at": "2026-10-07T15:52:07Z",
-      "comment_body_sha256": "9c6f3ba3fd49a06b85ce4ada7c37a7ed452f8a60213b993cd819662da0d4d6d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163462,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T15:53:03.400Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/broker-target-input-before-owner",
-        "head_sha": "0d1eb3bfc19d2e1ebce7783b698c27fd7d96fe29",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166631:6040682620:2026-10-07T15:52:13Z:clawsweeper_needs_human",
       "comment_id": "6040682620",
@@ -33359,6 +33312,39 @@
         "kind": "pull_request",
         "branch": "improve/plain-language-plugins",
         "head_sha": "33c7eb1e8d5e64a02b1ed56ccd619880558caaed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161057:5888118624:2026-10-07T22:42:29Z:clawsweeper_needs_human",
+      "comment_id": "5888118624",
+      "comment_version_key": "5888118624:2026-10-07T22:42:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161057#issuecomment-5888118624",
+      "comment_created_at": "2026-09-29T10:11:41Z",
+      "comment_updated_at": "2026-10-07T22:42:29Z",
+      "comment_body_sha256": "86463f568b52255bc9dec4b54923b989ee263a7413262178b831183e9e08d05c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=54dfe9761360cf46ad0ec41aa65e50f80de86e64)",
+      "expected_head_sha": "54dfe9761360cf46ad0ec41aa65e50f80de86e64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T22:43:44.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-workshop-simplify",
+        "head_sha": "54dfe9761360cf46ad0ec41aa65e50f80de86e64",
         "cluster_id": null,
         "job_path": null
       }
