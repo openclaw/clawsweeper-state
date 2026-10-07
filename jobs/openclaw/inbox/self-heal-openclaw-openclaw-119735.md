@@ -32,7 +32,7 @@ source: clawsweeper_self_rebase
 self_heal_target_pr: "119735"
 expected_head_sha: "f57eb9ab76670b2a0484db32e1e63ee9026ed190"
 self_heal_merge_state: "mergeStateStatus is DIRTY"
-self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37602012904"
+self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37615031756"
 ---
 
 # ClawSweeper self-heal PR rebase
@@ -44,7 +44,7 @@ Title: fix(whatsapp): refresh activity for pending inbound work
 Target branch: `clawsweeper/issue-openclaw-openclaw-114169`
 Target head SHA: `f57eb9ab76670b2a0484db32e1e63ee9026ed190`
 Detected state: mergeStateStatus is DIRTY
-Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37602012904
+Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37615031756
 
 Use this job only for bounded conflict/behind self-heal:
 
