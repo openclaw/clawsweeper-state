@@ -2,30 +2,30 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37613796745"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37613796745"
+run_id: "37622863506"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37622863506"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T11:28:44.898Z"
+published_at: "2026-10-07T12:47:02.191Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-peekaboo-881
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37613796745](https://github.com/openclaw/clawsweeper/actions/runs/37613796745)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37622863506](https://github.com/openclaw/clawsweeper/actions/runs/37622863506)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation blocked: the reported 4.2.0 remote/local discrepancy cannot be localized on supplied current main without the retained host/session diagnostics already requested by the maintainer. No changes or executable fix artifact are justified yet.
+Implementation is blocked on retained affected-host diagnostics. Inspection of preflight main efd65b5814f722c6b1715271dab2b6a3902ec9a4 did not establish a current-source bounds-loss defect or a safe narrow patch. No code changes or PR are proposed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Implementation blocked: the reported 4.2.0 remote/local discrepancy cannot be lo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | Keep the reported discrepancy open without claiming it is fixed or weakening exact-window attribution. |
-| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | The fix action cannot safely be repaired into an executable artifact from the supplied evidence. Obtain the already-requested retained diagnostics to identify whether and where a narrow repair is needed; preserve attribution checks and conservative post-dispatch outcomes. |
+| #881 | keep_canonical | planned | canonical | Keep the canonical report open. The retained host/protocol, process generation, exact window bounds, target receipts, and dispatch/retry diagnostics are needed to distinguish a producing-owner failure from released-host incompatibility. A speculative fix artifact would not satisfy the job's current-main verification requirement. |
 
 ## Needs Human
 
-- For #881, obtain the already-requested retained binary version, verbose Bridge status, inventory row, and existing failing remote/successful local capture JSON with host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to identify the missing-evidence producer and distinguish the reported 4.2.0 behavior from current main; do not repeat focus/input attempts.
+- none
