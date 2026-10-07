@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:28:53.269Z",
+  "updated_at": "2026-10-07T03:29:11.372Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:422:6026052809:2026-10-06T21:46:57Z:re_review",
-      "comment_id": "6026052809",
-      "comment_version_key": "6026052809:2026-10-06T21:46:57Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/422#issuecomment-6026052809",
-      "comment_created_at": "2026-10-06T21:46:57Z",
-      "comment_updated_at": "2026-10-06T21:46:57Z",
-      "comment_body_sha256": "eb6601fe3ba4de061e51a1bba5984da4dc6a88a9659a9af07259cb491b960b3d",
-      "repo": "openclaw/mcporter",
-      "issue_number": 422,
-      "author": "rudycelekli",
-      "author_id": 47457359,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T21:48:37.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcporter-emitted-tool-members-20261006",
-        "head_sha": "fe48d36685f182c629cc90ba9a33179670807a1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/poltergeist:258:6025985594:2026-10-06T21:42:11Z:re_review",
       "comment_id": "6025985594",
@@ -34176,6 +34129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166121:6016799653:2026-10-07T03:28:12Z:clawsweeper_needs_human",
+      "comment_id": "6016799653",
+      "comment_version_key": "6016799653:2026-10-07T03:28:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166121#issuecomment-6016799653",
+      "comment_created_at": "2026-10-06T13:00:01Z",
+      "comment_updated_at": "2026-10-07T03:28:12Z",
+      "comment_body_sha256": "63fab2a43799faec1abdcdb26beed72f2760522cd27670322a76c31adb083878",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7ba41d3a8b0960d007d6346dd8c595082f137e3f)",
+      "expected_head_sha": "7ba41d3a8b0960d007d6346dd8c595082f137e3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T03:29:11.372Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr/pr-2-account-routing",
+        "head_sha": "7ba41d3a8b0960d007d6346dd8c595082f137e3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
