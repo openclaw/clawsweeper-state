@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-07T13:54:28.421Z",
+  "updated_at": "2026-10-07T13:54:00.700Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161321:6032724715:2026-10-07T06:58:43Z:re_review",
+      "comment_id": "6032724715",
+      "comment_version_key": "6032724715:2026-10-07T06:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161321#issuecomment-6032724715",
+      "comment_created_at": "2026-10-07T06:58:43Z",
+      "comment_updated_at": "2026-10-07T06:58:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161321,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T07:00:12.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "daily/2026-09-29",
+        "head_sha": "9fbb170b7bf5639ce61db8415190f3777e59f6d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157106:5809441331:2026-10-07T06:56:36Z:clawsweeper_auto_repair",
       "comment_id": "5809441331",
@@ -32980,39 +33027,6 @@
         "kind": "pull_request",
         "branch": "dbasync/w6device",
         "head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:72:6011539754:2026-10-07T13:53:34Z:clawsweeper_needs_human",
-      "comment_id": "6011539754",
-      "comment_version_key": "6011539754:2026-10-07T13:53:34Z",
-      "comment_url": "https://github.com/openclaw/goplaces/pull/72#issuecomment-6011539754",
-      "comment_created_at": "2026-10-06T07:29:32Z",
-      "comment_updated_at": "2026-10-07T13:53:34Z",
-      "comment_body_sha256": "f2ee3dfb6e9192fd3c085461e5c30e5db1b2b05c7f19097b714f12894b4b4be3",
-      "repo": "openclaw/goplaces",
-      "issue_number": 72,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured built-CLI terminal trace exercises details parsing and the production HTTP client against an owned loopback fixture, show... (sha=0ca738f1fd37c41fe9a1921107fb127a47c8a553)",
-      "expected_head_sha": "0ca738f1fd37c41fe9a1921107fb127a47c8a553",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T13:54:28.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/details-session-token-20261006",
-        "head_sha": "0ca738f1fd37c41fe9a1921107fb127a47c8a553",
         "cluster_id": null,
         "job_path": null
       }
