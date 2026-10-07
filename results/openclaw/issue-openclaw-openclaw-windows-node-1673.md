@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1673"
 mode: "autonomous"
-run_id: "37676830227"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37676830227"
+run_id: "37678081571"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37678081571"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T19:52:16.579Z"
+published_at: "2026-10-07T20:02:53.481Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1673"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1673"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37676830227](https://github.com/openclaw/clawsweeper/actions/runs/37676830227)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37678081571](https://github.com/openclaw/clawsweeper/actions/runs/37678081571)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1673
 
 ## Summary
 
-The reported failure remains source-verifiable on preflight main. A narrow credited repair is planned, but implementation and validation are blocked by the read-only workspace. The contributor commit could not be retrieved because GitHub DNS resolution failed. No code or GitHub state changed, and no tests ran.
+The reported bug remains present in preflight main 5e3fb40bcc8936a44015de18fac2f5b35a4fb2ac. A narrow repair artifact is ready, but implementation and validation are blocked by the read-only Linux environment. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ The reported failure remains source-verifiable on preflight main. A narrow credi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1673 | fix_needed | planned | canonical | The issue remains a focused, non-security bug with a clear canonical implementation path. Keep it open while the executor implements and validates the repair. |
-| cluster:issue-openclaw-openclaw-windows-node-1673 | build_fix_artifact | planned |  | The repair artifact is actionable, but local implementation and publication readiness are blocked by filesystem permissions, contributor-commit retrieval, and unavailable native Windows proof. Do not publish a PR as validated from this run. |
+| #1673 | fix_needed | planned | canonical | Source inspection confirms a focused persistence and setup-lifecycle repair. No product decision is required; implementation needs a writable checkout and Windows validation host. |
+| cluster:issue-openclaw-openclaw-windows-node-1673 | build_fix_artifact | planned |  | The artifact is a non-mutating plan for the executor, not an implemented or validated patch. |
+| cluster:issue-openclaw-openclaw-windows-node-1673 | open_fix_pr | blocked |  | Publication is blocked until the executor implements the repair in a writable checkout, inspects the contributor commit, passes all required validation, resolves review findings, and collects isolated native UI and strict MXC proof. |
 
 ## Needs Human
 

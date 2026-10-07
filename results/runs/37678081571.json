@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1673",
+  "mode": "autonomous",
+  "run_id": "37678081571",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37678081571",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1673.md",
+  "published_at": "2026-10-07T20:02:53.481Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1673",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1673",
+  "canonical_pr": null,
+  "summary": "The reported bug remains present in preflight main 5e3fb40bcc8936a44015de18fac2f5b35a4fb2ac. A narrow repair artifact is ready, but implementation and validation are blocked by the read-only Linux environment. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#1673",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1673",
+      "candidate_fix": null,
+      "reason": "Source inspection confirms a focused persistence and setup-lifecycle repair. No product decision is required; implementation needs a writable checkout and Windows validation host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1673",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1673",
+      "candidate_fix": null,
+      "reason": "The artifact is a non-mutating plan for the executor, not an implemented or validated patch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1673",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1673",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor implements the repair in a writable checkout, inspects the contributor commit, passes all required validation, resolves review findings, and collects isolated native UI and strict MXC proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
