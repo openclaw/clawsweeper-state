@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37610844343"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37610844343"
+run_id: "37607935457"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37607935457"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T11:01:30.725Z"
+published_at: "2026-10-07T10:34:03.855Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37610844343](https://github.com/openclaw/clawsweeper/actions/runs/37610844343)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37607935457](https://github.com/openclaw/clawsweeper/actions/runs/37607935457)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation is premature: the hydrated issue and October 7 review report record both required upstream publication gates as unmet. The checkout matches preflight main and retains ghostty-web@0.4.0. No code changes or PR are proposed.
+Implementation stopped before code changes: #41 explicitly requires two stable upstream publications, and no qualifying release is verified. Keep the adoption tracker open. No PR or fix artifact is proposed. Only the unavailable #169 and #182 actions require repository-qualified hydration.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation is premature: the hydrated issue and October 7 review report reco
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #41 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Implementation is premature: the hydrated issue and October 7 review report reco
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | Keep the adoption tracker open. Implementation is blocked on the stable Ghostty tag and qualifying published wrapper; another baseline-only PR or private ABI patch would not satisfy the issue. |
-| #77 | keep_closed | skipped | related | Historical validation groundwork; no action on this already-merged PR. |
-| #169 | needs_human | blocked | needs_human | The incorrectly resolved same-repository ref requires hydration mapping correction before per-item classification can satisfy validation. Leave metadata null rather than invent it; no GitHub mutation or upstream PR action is proposed. |
-| #182 | needs_human | blocked | needs_human | The incorrectly resolved same-repository ref requires hydration mapping correction before per-item classification can satisfy validation. Leave metadata null rather than invent it; no GitHub mutation or upstream PR action is proposed. |
+| #41 | keep_canonical | planned | canonical | The issue's explicit start conditions are not satisfied by the available evidence. Resume only after verifying both publications and selecting the exact compatible stable package/version. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork; it does not satisfy runtime adoption and receives no mutation. |
+| #169 | needs_human | blocked | needs_human | The routing action cannot safely be repaired from the supplied artifacts. Hydrate https://github.com/coder/ghostty-web/pull/169 under its correct repository before central security routing. This action is non-mutating; do not route or mutate openclaw/libterminal#169. |
+| #182 | needs_human | blocked | needs_human | Hydrate https://github.com/coder/ghostty-web/pull/182 under its correct repository before emitting an item classification requiring live metadata. Retain it as upstream publication context in evidence only. This action is non-mutating; no action against openclaw/libterminal#182 is supported. |
 
 ## Needs Human
 
-- #169: Correct the cross-repository hydration mapping. openclaw/libterminal#169 returned HTTP 404 with unknown kind and null updated_at; the source link is https://github.com/coder/ghostty-web/pull/169. No mutation is proposed.
-- #182: Correct the cross-repository hydration mapping. openclaw/libterminal#182 returned HTTP 404 with unknown kind and null updated_at; the source link is https://github.com/coder/ghostty-web/pull/182. No mutation is proposed.
+- #169: Repository-qualified hydration of https://github.com/coder/ghostty-web/pull/169 is required before central security routing; supplied preflight instead records openclaw/libterminal#169 as unavailable with unknown kind and null updated_at.
+- #182: Repository-qualified hydration of https://github.com/coder/ghostty-web/pull/182 is required for live item metadata; supplied preflight instead records openclaw/libterminal#182 as unavailable with unknown kind and null updated_at.
