@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T18:29:40.609Z",
+  "updated_at": "2026-10-07T18:29:51.141Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166011:6012392391:2026-10-07T10:31:46Z:clawsweeper_needs_human",
-      "comment_id": "6012392391",
-      "comment_version_key": "6012392391:2026-10-07T10:31:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166011#issuecomment-6012392391",
-      "comment_created_at": "2026-10-06T08:26:55Z",
-      "comment_updated_at": "2026-10-07T10:31:46Z",
-      "comment_body_sha256": "62d3f3f3f0051bcbd55429280e550da5bf22ea244cc756947828808d025b420a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166011,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The inspected Windows captures convincingly show title refresh, reload persistence, and manual-label priority on operator integration... (sha=6a7214dd609b443e649792eba075a2b13f4714c1)",
-      "expected_head_sha": "6a7214dd609b443e649792eba075a2b13f4714c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T10:33:19.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/private-telegram-topic-title-upstream-20261006",
-        "head_sha": "6a7214dd609b443e649792eba075a2b13f4714c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166524:6034223737:2026-10-07T10:32:29Z:clawsweeper_needs_human",
       "comment_id": "6034223737",
@@ -33430,6 +33397,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166674:6044228907:2026-10-07T18:27:54Z:re_review",
+      "comment_id": "6044228907",
+      "comment_version_key": "6044228907:2026-10-07T18:27:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166674#issuecomment-6044228907",
+      "comment_created_at": "2026-10-07T18:27:54Z",
+      "comment_updated_at": "2026-10-07T18:27:54Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166674,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T18:29:49.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/tb3writes",
+        "head_sha": "b277579ae3efce17c3a0e089af84151605bd523a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
