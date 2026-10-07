@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T23:20:05.360Z",
+  "updated_at": "2026-10-07T23:20:16.940Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3922:6032177689:2026-10-07T16:41:29Z:clawsweeper_needs_human",
-      "comment_id": "6032177689",
-      "comment_version_key": "6032177689:2026-10-07T16:41:29Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3922#issuecomment-6032177689",
-      "comment_created_at": "2026-10-07T06:15:35Z",
-      "comment_updated_at": "2026-10-07T16:41:29Z",
-      "comment_body_sha256": "df2f909ff52045640187b30ac51550e7acf44b19b39e6152945f3398a51a8cb4",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3922,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=325099aa9a951886c85966af90aae3e6123dac66)",
-      "expected_head_sha": "325099aa9a951886c85966af90aae3e6123dac66",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T16:42:29.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hermit-content-rights-proxy-timeout",
-        "head_sha": "325099aa9a951886c85966af90aae3e6123dac66",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3883:5923385214:2026-10-07T16:41:25Z:clawsweeper_auto_repair",
       "comment_id": "5923385214",
@@ -33440,6 +33407,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166802:6048819913:2026-10-07T23:19:31Z:freeform_assist",
+      "comment_id": "6048819913",
+      "comment_version_key": "6048819913:2026-10-07T23:19:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166802#issuecomment-6048819913",
+      "comment_created_at": "2026-10-07T23:19:31Z",
+      "comment_updated_at": "2026-10-07T23:19:31Z",
+      "comment_body_sha256": "a634aa14bc133d00ff9d90bdee55c3c069d0d533abcaff841119d733e35c6671",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166802,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review. removes the shell-only retired agents.list downgrade; existing real shell regression fails before and passes after. no updater or timeout policy changes. review exact head f13af5968f4514a6e828b475dd66a14996574958.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T23:20:14.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-canonical-survivor-20261007",
+        "head_sha": "f13af5968f4514a6e828b475dd66a14996574958",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
