@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37543256702"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37543256702"
-head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
+run_id: "37569314794"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37569314794"
+head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-06T22:57:37.029Z"
+published_at: "2026-10-07T04:03:08.175Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37543256702](https://github.com/openclaw/clawsweeper/actions/runs/37543256702)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37569314794](https://github.com/openclaw/clawsweeper/actions/runs/37569314794)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe implementation PR is available: the hydrated triage direction requires Blacksmith to expose an exact pre-worker dispatch association. Inspection of preflight main confirms that Crabbox still depends on native run URLs. No code or GitHub mutations were made.
+No implementation PR is viable with the documented provider contract. Current main depends on Blacksmith supplying an exact workflow association; the recorded triage explicitly requires a provider-side capability before an adapter repair. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No safe implementation PR is available: the hydrated triage direction requires B
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | related | Keep the issue open with a non-mutating action. No safe executable fix artifact can be derived from the provided evidence: implementation is blocked until Blacksmith supplies a supported, durable binding from the exact Testbox request to its workflow run before worker startup, including admission failure and cancellation. Guessing associations or equating native completion with settlement would contradict the established contract. The job explicitly requires stopping without a PR when automation cannot safely implement the request. |
-| #2669 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #2670 | keep_closed | skipped | related | Merged ownership safeguard remains relevant context and does not resolve the dispatch capability gap. |
-| #2682 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #2683 | keep_closed | skipped | related | Merged status capability remains relevant context and cannot supply an association missing upstream. |
+| #2708 | keep_related | skipped | canonical | Implementation depends on Blacksmith exposing a supported exact Testbox-to-workflow binding before worker registration and preserving it through admission failure or cancellation. The hydrated triage already resolves the approach; there is no unresolved product decision. Keep the canonical issue open pending that provider capability. Do not create a speculative fix PR. |
+| #2669 | keep_closed | skipped | related | Closed context only. |
+| #2670 | keep_closed | skipped | related | Merged historical context; preserve its settlement safeguards. |
+| #2682 | keep_closed | skipped | related | Closed context only. |
+| #2683 | keep_closed | skipped | related | Merged historical context; does not resolve the provider capability gap. |
 
 ## Needs Human
 
