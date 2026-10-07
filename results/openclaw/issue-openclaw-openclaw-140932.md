@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140932"
 mode: "autonomous"
-run_id: "37656913575"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37656913575"
+run_id: "37667768477"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37667768477"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T18:09:02.873Z"
+published_at: "2026-10-07T18:56:59.253Z"
 canonical: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37656913575](https://github.com/openclaw/clawsweeper/actions/runs/37656913575)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37667768477](https://github.com/openclaw/clawsweeper/actions/runs/37667768477)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/140932
 
 ## Summary
 
-Reproduced missing EmbeddingGemma formatting at the actual local adapter boundary with dependency stubs. A narrow fix artifact is ready; implementation and required validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Reproduced missing EmbeddingGemma prefixes at the provider boundary on preflight main de7c3b7e1b94fe2d36f801312b6005179ca29034. A narrow fix artifact is ready. Implementation is blocked by the read-only filesystem and absent dependencies; repository tests, review, and real CLI retrieval proof remain unrun. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Reproduced missing EmbeddingGemma formatting at the actual local adapter boundar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140932 | fix_needed | planned | canonical | The bug remains reproducible in checked-out main source. Implement through the cluster fix artifact on a writable executor; required tests, live CLI proof, and review remain pending. |
-| #147181 | keep_related | planned | related | Keep open for its separate configurable query-only contract. |
-| #42408 | keep_related | planned | related | Keep open for its distinct indexing-path and corpus-hygiene work. |
-| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Applying it is blocked here by the read-only filesystem; tests and live managed-server proof require a writable, dependency-equipped executor. |
+| #140932 | fix_needed | blocked | canonical | The bug remains reproducible and the repair fits the authorized scope. Editing, adding persisted regressions, dependency installation, and isolated CLI index/rebuild proof require a writable executor. |
+| #147181 | keep_related | planned | related | Keep open as distinct feature work; adding configuration or general query templates is outside this repair. |
+| #42408 | keep_related | planned | related | Keep open; retrieval symptoms overlap, but the root causes and remaining work differ. |
+| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned | canonical | The repair is sufficiently narrow and evidenced to hand off without a product or persistence-policy decision. |
 
 ## Needs Human
 
