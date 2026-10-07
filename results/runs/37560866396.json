@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/peekaboo",
+  "cluster_id": "issue-openclaw-peekaboo-881",
+  "mode": "autonomous",
+  "run_id": "37560866396",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37560866396",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-peekaboo-881.md",
+  "published_at": "2026-10-07T02:16:47.540Z",
+  "canonical": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_issue": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on retained same-session diagnostics needed to identify the evidence-loss boundary. Inspection of preflight main found no demonstrated narrow defect to patch. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#881",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Keep the canonical report open while the failing producer or transport boundary remains unidentified."
+    },
+    {
+      "target": "cluster:issue-openclaw-peekaboo-881",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Obtain the retained, redacted same-session --version, bridge status --verbose --json, Simulator inventory row, and existing remote/local see JSON requested by the maintainer. Preserve host/protocol, process generation, window identity, bounds, receipts, and dispatch/retry metadata. Without these, selecting a patch would be speculative. Do not weaken attribution, silently switch hosts, or repeat focus/input attempts."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For #881, the reporter or host operator must supply the retained, redacted same-session diagnostics requested at https://github.com/openclaw/Peekaboo/issues/881#issuecomment-5960976458 before the evidence-loss boundary and a narrow repair can be identified. No new focus/input attempts are needed."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#881",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
