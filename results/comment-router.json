@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T08:39:05.160Z",
+  "updated_at": "2026-10-07T08:39:13.759Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163943:5965998027:2026-10-03T05:34:27Z:re_review",
-      "comment_id": "5965998027",
-      "comment_version_key": "5965998027:2026-10-03T05:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163943#issuecomment-5965998027",
-      "comment_created_at": "2026-10-03T05:34:27Z",
-      "comment_updated_at": "2026-10-03T05:34:27Z",
-      "comment_body_sha256": "203d74644c0c5671be684ce1a211db1d4696af494658b43cfb12ae85ebec02f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163943,
-      "author": "ashrafumair111-lab",
-      "author_id": 236079866,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-run",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T02:51:17.745Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/configurable-archive-shortcut",
-        "head_sha": "0933accf11c7afbb70dd5a015358d1c39fc5419d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163943:5964384570:2026-10-07T02:50:23Z:clawsweeper_auto_repair",
       "comment_id": "5964384570",
@@ -33288,6 +33241,39 @@
         "kind": "pull_request",
         "branch": "feat/auth-full-history",
         "head_sha": "5f01e714543b9c8800ccf370e2722f62ac1213ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1664:6029449134:2026-10-07T08:37:44Z:clawsweeper_needs_human",
+      "comment_id": "6029449134",
+      "comment_version_key": "6029449134:2026-10-07T08:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1664#issuecomment-6029449134",
+      "comment_created_at": "2026-10-07T02:14:31Z",
+      "comment_updated_at": "2026-10-07T08:37:44Z",
+      "comment_body_sha256": "9d41a9a1870c020eee7c0f989c1130656f020539a423cb74e132bab4733a74b4",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Report current-head scripts/validate-mxc-e2e.ps1 validation required for the approval-capability change. If the host cannot run it, document the prerequisite blocker; an AllowSkip res... (sha=ea35de471cf86ae467f1371a442841a3a6f38b4a)",
+      "expected_head_sha": "ea35de471cf86ae467f1371a442841a3a6f38b4a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T08:39:13.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f054-approval-event-identity",
+        "head_sha": "ea35de471cf86ae467f1371a442841a3a6f38b4a",
         "cluster_id": null,
         "job_path": null
       }
