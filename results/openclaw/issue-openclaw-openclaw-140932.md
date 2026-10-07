@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140932"
 mode: "autonomous"
-run_id: "37656913575"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37656913575"
+run_id: "37671870209"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37671870209"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T18:09:02.873Z"
+published_at: "2026-10-07T19:28:08.414Z"
 canonical: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37656913575](https://github.com/openclaw/clawsweeper/actions/runs/37656913575)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37671870209](https://github.com/openclaw/clawsweeper/actions/runs/37671870209)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/140932
 
 ## Summary
 
-Reproduced missing EmbeddingGemma formatting at the actual local adapter boundary with dependency stubs. A narrow fix artifact is ready; implementation and required validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Reproduced missing query/document prefixes through the unmodified provider adapter at preflight main 9df0cd095766ff05864aa67aa91b627a347a4d1a. Prepared a narrow repair artifact. Implementation is blocked by the read-only workspace; dependencies and a managed EmbeddingGemma server are unavailable. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Reproduced missing EmbeddingGemma formatting at the actual local adapter boundar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140932 | fix_needed | planned | canonical | The bug remains reproducible in checked-out main source. Implement through the cluster fix artifact on a writable executor; required tests, live CLI proof, and review remain pending. |
-| #147181 | keep_related | planned | related | Keep open for its separate configurable query-only contract. |
-| #42408 | keep_related | planned | related | Keep open for its distinct indexing-path and corpus-hygiene work. |
-| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Applying it is blocked here by the read-only filesystem; tests and live managed-server proof require a writable, dependency-equipped executor. |
+| #140932 | fix_needed | blocked | canonical | The bug is reproduced and has a narrow existing-owner repair path. Read-only filesystem permissions prohibit adding regressions or implementing the fix; node_modules, compiled runtime, and a managed llama-server are unavailable for required validation. |
+| #147181 | keep_related | planned | related | Distinct feature scope; keep open and exclude configuration additions and other model families from this repair. |
+| #42408 | keep_related | planned | related | Related retrieval-quality symptoms with different causes and remaining work; keep open without expanding this implementation. |
+| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned |  | Artifact preparation is complete. A writable executor must implement, validate, obtain fresh review, and create or update the single authorized PR branch. |
 
 ## Needs Human
 
