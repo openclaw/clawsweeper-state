@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T00:10:20.655Z",
+  "updated_at": "2026-10-07T00:10:33.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166236:6022480229:2026-10-06T18:10:18Z:re_review",
-      "comment_id": "6022480229",
-      "comment_version_key": "6022480229:2026-10-06T18:10:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166236#issuecomment-6022480229",
-      "comment_created_at": "2026-10-06T18:10:18Z",
-      "comment_updated_at": "2026-10-06T18:10:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166236,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T18:12:59.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6worktree",
-        "head_sha": "2ab66ed713a4ee986cd248c1855aebbdaa443a5d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90970:4639788750:2026-10-06T17:47:24Z:clawsweeper_needs_human",
       "comment_id": "4639788750",
@@ -33632,6 +33585,39 @@
         "kind": "pull_request",
         "branch": "perf/memory-wiki-compile-scan-cache",
         "head_sha": "a28368580955dadc055788d0cda9ad21ba71e5af",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154537:5756696680:2026-10-07T00:09:31Z:clawsweeper_needs_human",
+      "comment_id": "5756696680",
+      "comment_version_key": "5756696680:2026-10-07T00:09:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154537#issuecomment-5756696680",
+      "comment_created_at": "2026-09-21T07:06:16Z",
+      "comment_updated_at": "2026-10-07T00:09:31Z",
+      "comment_body_sha256": "12e4fe5f8edffd00a1eb81767031c18f25c790c550702d90d4d37fdc1827b95d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154537,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed session-maintenance owner is covered by after-fix in-memory tests, but no real SQLite maint... (sha=a1df78c2f79182e0d1eaa499ea8b6e23b48e7c0b)",
+      "expected_head_sha": "a1df78c2f79182e0d1eaa499ea8b6e23b48e7c0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T00:10:33.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-grouped-sessions",
+        "head_sha": "a1df78c2f79182e0d1eaa499ea8b6e23b48e7c0b",
         "cluster_id": null,
         "job_path": null
       }
