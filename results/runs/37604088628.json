@@ -1,0 +1,76 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37604088628",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37604088628",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-07T10:00:23.579Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation is premature: issue #41 explicitly requires stable Ghostty v1.4 and a published compatible wrapper before upgrading. Available evidence does not establish either prerequisite. No code changes, PR, or GitHub mutations were made. Actions for incorrectly scoped, unavailable refs #169 and #182 require correct repository-qualified hydration; no live metadata was invented.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Keep the adoption tracker open. Resume only after both upstream publications are verified and an exact compatible stable package version can be selected; an unreleased dependency or private ABI patch would violate the source request."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical preparation only; no closure or further implementation action is needed."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The repository mismatch prevents safely repairing the route_security payload. Keep this action non-mutating and the reported security-sensitive upstream item quarantined from repair automation. Correctly hydrate https://github.com/coder/ghostty-web/pull/169 before central security routing; do not route or mutate openclaw/libterminal #169. This does not make issue #41 security-sensitive."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The repository mismatch and absent live metadata prevent safely repairing this per-item action. Correctly hydrate https://github.com/coder/ghostty-web/pull/182 before restoring a keep_related action. Keep it as upstream context only; do not mutate openclaw/libterminal #182 or treat the reported prerelease as satisfying the stable publication gate."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#169: Correct repository-qualified hydration is required for https://github.com/coder/ghostty-web/pull/169 before central security routing. The supplied openclaw/libterminal entry returned HTTP 404 with kind unknown and updated_at null.",
+    "#182: Correct repository-qualified hydration is required for https://github.com/coder/ghostty-web/pull/182 before restoring its per-item classification. The supplied openclaw/libterminal entry returned HTTP 404 with kind unknown and updated_at null."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
