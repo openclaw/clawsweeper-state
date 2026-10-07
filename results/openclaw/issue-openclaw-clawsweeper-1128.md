@@ -2,30 +2,30 @@
 repo: "openclaw/clawsweeper"
 cluster_id: "issue-openclaw-clawsweeper-1128"
 mode: "autonomous"
-run_id: "37588516755"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37588516755"
+run_id: "37591140978"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37591140978"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T07:42:45.279Z"
+published_at: "2026-10-07T08:07:28.739Z"
 canonical: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_issue: "https://github.com/openclaw/clawsweeper/issues/1128"
 canonical_pr: null
-actions_total: 7
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-clawsweeper-1128
 
 Repo: openclaw/clawsweeper
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37588516755](https://github.com/openclaw/clawsweeper/actions/runs/37588516755)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37591140978](https://github.com/openclaw/clawsweeper/actions/runs/37591140978)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/clawsweeper/issues/1128
 
 ## Summary
 
-The migration remains valid, but its remaining scope exceeds one narrow implementation PR: the current strict probe reports 1,160 diagnostics across worker.ts and exact-review-queue.ts. No code or GitHub changes were made.
+The roadmap remains valid, but completing it exceeds one focused automation PR. On pinned main, strict compilation reports 1,160 diagnostics across the two remaining monoliths. No code changed or PR was opened; implementation remains blocked pending a bounded scope decision.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,14 +66,15 @@ The migration remains valid, but its remaining scope exceeds one narrow implemen
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1128 | keep_related | skipped | canonical | Keep the canonical roadmap open. The job explicitly requires stopping without code when the request is too broad. Completing both monolith conversions and the global flag flip is not a narrow repair; a partial slice would leave this roadmap unfinished and would not justify its closing reference. The provided evidence does not support a safely executable narrow fix artifact, so the fix_needed action is downgraded to a non-mutating keep_related action. Bounded follow-up jobs are required before implementation. |
-| #1132 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
-| #1141 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
-| #1552 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
-| #1553 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
-| #1554 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
-| #1705 | keep_closed | skipped | related | Historical partial implementation, not an open repair target. |
+| #1128 | keep_canonical | planned | canonical | Earlier phases are implemented, but neither remaining monolith nor the global configuration migration is complete. Keep the roadmap open. |
+| #1132 | keep_closed | skipped | related | Historical evidence for the completed ingress phase. |
+| #1141 | keep_closed | skipped | related | Historical evidence for the existing migration mechanism. |
+| #1552 | keep_closed | skipped | related | Completed telemetry slice; not completion of the roadmap. |
+| #1553 | keep_closed | skipped | related | Completed public-boundary slice; historical context only. |
+| #1554 | keep_closed | skipped | related | Completed proof-contract slice; historical context only. |
+| #1705 | keep_closed | skipped | related | Completed strict enrollment slice; no remaining action on this PR. |
+| cluster:issue-openclaw-clawsweeper-1128 | needs_human | blocked | needs_human | Only the implementation scope decision requires human judgment: define bounded implementation jobs for the remaining Worker and queue migration rather than authorize a broad roadmap-completion PR. No executable fix artifact can safely be reconstructed from the provided evidence, so this action is downgraded to a non-mutating scope blocker. The current job scope and canonical issue remain unchanged. |
 
 ## Needs Human
 
-- none
+- Define bounded implementation scopes for https://github.com/openclaw/clawsweeper/issues/1128: the remaining 1,160 strict diagnostics span dashboard/worker.ts and dashboard/exact-review-queue.ts, while this job requires one focused PR satisfying the roadmap. A partial slice would not satisfy its closing-reference requirement.

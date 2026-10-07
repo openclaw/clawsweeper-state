@@ -1,0 +1,129 @@
+{
+  "repo": "openclaw/clawsweeper",
+  "cluster_id": "issue-openclaw-clawsweeper-1128",
+  "mode": "autonomous",
+  "run_id": "37591140978",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37591140978",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-clawsweeper-1128.md",
+  "published_at": "2026-10-07T08:07:28.739Z",
+  "canonical": "https://github.com/openclaw/clawsweeper/issues/1128",
+  "canonical_issue": "https://github.com/openclaw/clawsweeper/issues/1128",
+  "canonical_pr": null,
+  "summary": "The roadmap remains valid, but completing it exceeds one focused automation PR. On pinned main, strict compilation reports 1,160 diagnostics across the two remaining monoliths. No code changed or PR was opened; implementation remains blocked pending a bounded scope decision.",
+  "actions": [
+    {
+      "target": "#1128",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Earlier phases are implemented, but neither remaining monolith nor the global configuration migration is complete. Keep the roadmap open."
+    },
+    {
+      "target": "#1132",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Historical evidence for the completed ingress phase."
+    },
+    {
+      "target": "#1141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Historical evidence for the existing migration mechanism."
+    },
+    {
+      "target": "#1552",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Completed telemetry slice; not completion of the roadmap."
+    },
+    {
+      "target": "#1553",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Completed public-boundary slice; historical context only."
+    },
+    {
+      "target": "#1554",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Completed proof-contract slice; historical context only."
+    },
+    {
+      "target": "#1705",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Completed strict enrollment slice; no remaining action on this PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-clawsweeper-1128",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#1128",
+      "candidate_fix": null,
+      "reason": "Only the implementation scope decision requires human judgment: define bounded implementation jobs for the remaining Worker and queue migration rather than authorize a broad roadmap-completion PR. No executable fix artifact can safely be reconstructed from the provided evidence, so this action is downgraded to a non-mutating scope blocker. The current job scope and canonical issue remain unchanged."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 6,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 6,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Define bounded implementation scopes for https://github.com/openclaw/clawsweeper/issues/1128: the remaining 1,160 strict diagnostics span dashboard/worker.ts and dashboard/exact-review-queue.ts, while this job requires one focused PR satisfying the roadmap. A partial slice would not satisfy its closing-reference requirement."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1128",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
