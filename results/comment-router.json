@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T04:53:56.678Z",
+  "updated_at": "2026-10-07T04:54:41.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154608:5794896351:2026-09-23T12:34:11Z:re_review",
-      "comment_id": "5794896351",
-      "comment_version_key": "5794896351:2026-09-23T12:34:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154608#issuecomment-5794896351",
-      "comment_created_at": "2026-09-23T12:34:11Z",
-      "comment_updated_at": "2026-09-23T12:34:11Z",
-      "comment_body_sha256": "40aedb0d436535404e4405f3474a9b4185a3912151e09d6ff3203be42dbc45fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154608,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T23:54:21.419Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/browser-08-docker-efficiency",
-        "head_sha": "d689f7899e7e0433490573247a83e3193942b5f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154608:5771713291:2026-09-22T05:36:55Z:re_review",
       "comment_id": "5771713291",
@@ -33605,6 +33558,39 @@
       "status": "skipped",
       "processed_at": "2026-10-07T04:53:56.678Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:339:5998411001:2026-10-07T04:53:50Z:clawsweeper_needs_human",
+      "comment_id": "5998411001",
+      "comment_version_key": "5998411001:2026-10-07T04:53:50Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/339#issuecomment-5998411001",
+      "comment_created_at": "2026-10-05T16:14:26Z",
+      "comment_updated_at": "2026-10-07T04:53:50Z",
+      "comment_body_sha256": "5b4228a70eae2a30452b0fbda72c56193601e92fdd64c2c7e2dec3dbbe624bfc",
+      "repo": "openclaw/crabline",
+      "issue_number": 339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=717af2bccb8b047f6d273ce640e8b1309836a5f5)",
+      "expected_head_sha": "717af2bccb8b047f6d273ce640e8b1309836a5f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T04:54:41.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-4b2c77c676",
+        "head_sha": "717af2bccb8b047f6d273ce640e8b1309836a5f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
