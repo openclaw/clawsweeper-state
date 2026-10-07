@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:25:23.856Z",
+  "updated_at": "2026-10-07T03:25:28.544Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166213:6021575448:2026-10-06T21:33:30Z:clawsweeper_needs_human",
-      "comment_id": "6021575448",
-      "comment_version_key": "6021575448:2026-10-06T21:33:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166213#issuecomment-6021575448",
-      "comment_created_at": "2026-10-06T17:17:32Z",
-      "comment_updated_at": "2026-10-06T21:33:30Z",
-      "comment_body_sha256": "abb5be2804657ae1dc74467f19e60c5372f4000fab85fa1145d968287048aa8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2f41dba74297dbc32d60ebf92415f0d4234c26a8)",
-      "expected_head_sha": "2f41dba74297dbc32d60ebf92415f0d4234c26a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T21:47:08.763Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-terminal-bottom-to-right-docking",
-        "head_sha": "54afa4bddbfdbe1f2d5249fd8dfecaf4e134ea2a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166224:6022296357:2026-10-06T21:22:27Z:clawsweeper_needs_human",
       "comment_id": "6022296357",
@@ -34162,6 +34129,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135895:6030248586:2026-10-07T03:24:29Z:re_review",
+      "comment_id": "6030248586",
+      "comment_version_key": "6030248586:2026-10-07T03:24:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-6030248586",
+      "comment_created_at": "2026-10-07T03:24:29Z",
+      "comment_updated_at": "2026-10-07T03:24:29Z",
+      "comment_body_sha256": "ef9e2bca7439d4f460e83444abf82c12f53b6cd407f0f8fda802d6f22fc09ac6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135895,
+      "author": "lordratner",
+      "author_id": 49489398,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T03:25:26.889Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-talk-inbound-media",
+        "head_sha": "d420728afb1542291a33c1b953749b705cd854bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
