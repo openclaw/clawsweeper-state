@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:14:45.681Z",
+  "updated_at": "2026-10-07T03:15:15.732Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136274:5981724373:2026-10-04T15:43:31Z:re_review",
-      "comment_id": "5981724373",
-      "comment_version_key": "5981724373:2026-10-04T15:43:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5981724373",
-      "comment_created_at": "2026-10-04T15:43:31Z",
-      "comment_updated_at": "2026-10-04T15:43:31Z",
-      "comment_body_sha256": "be51524a944005e91dfdc4e26ebff5fd3f22db41b018921e7acf176c313c539c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136274,
-      "author": "a-tokyo",
-      "author_id": 12428415,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T21:37:46.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/per-team-sharepoint-upload",
-        "head_sha": "1b0fde42bd9c2a0380fe53f7e0c5d430bd2cbf0e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136274:5508895313:2026-10-06T21:36:36Z:clawsweeper_needs_human",
       "comment_id": "5508895313",
@@ -34131,6 +34084,39 @@
         "kind": "pull_request",
         "branch": "refactor/slop40k-19-20261006",
         "head_sha": "d82ce3deeb343f735acc221ed688631a5ee3a85e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166413:6030144047:2026-10-07T03:14:19Z:clawsweeper_needs_human",
+      "comment_id": "6030144047",
+      "comment_version_key": "6030144047:2026-10-07T03:14:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166413#issuecomment-6030144047",
+      "comment_created_at": "2026-10-07T03:14:19Z",
+      "comment_updated_at": "2026-10-07T03:14:19Z",
+      "comment_body_sha256": "e2b5f4058067b62a2a0a0b86f15c40adfcf6df8d7185ce3b98b13725f1bb5557",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166413,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Doctor's resource-entry owner is exercised by a real-SQLite regression, but the supplied evidence contains only tests and build results. It doe... (sha=92a35ba26ec01ef372e604032d836d1e945bd150)",
+      "expected_head_sha": "92a35ba26ec01ef372e604032d836d1e945bd150",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T03:15:15.732Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-lease-archive-resume",
+        "head_sha": "92a35ba26ec01ef372e604032d836d1e945bd150",
         "cluster_id": null,
         "job_path": null
       }
