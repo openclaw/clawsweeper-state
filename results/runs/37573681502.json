@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37573681502",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37573681502",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-07T04:57:58.833Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on a supported Blacksmith pre-worker dispatch binding. Inspection of preflight main 81226dc3752cba84ae81ee4075e50c1db25881de confirms Crabbox cannot distinguish failed dispatch from slow allocation when native status is queued without a run URL. No code changes or PR path proposed; the issue remains open.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Keep the issue open without a fix action: the provided artifacts do not support a safe executable fix artifact. A safe adapter implementation requires Blacksmith to expose and retain an authoritative Testbox-to-workflow binding before worker registration, including admission failure and cancellation. No supported capability is provided by the hydrated evidence. Guessing by workflow/ref/time or treating native completion as settlement would violate the existing ownership contract. Resume implementation when the provider contract and representative response fixtures are available; no unresolved maintainer decision remains."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical context; not a fix for the canonical issue."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical context; not a fix for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

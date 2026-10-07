@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37543256702"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37543256702"
-head_sha: "7b767cc6bf7ed7176a94b1e8732b478ea49012d2"
+run_id: "37573681502"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37573681502"
+head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-06T22:57:37.029Z"
+published_at: "2026-10-07T04:57:58.833Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37543256702](https://github.com/openclaw/clawsweeper/actions/runs/37543256702)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37573681502](https://github.com/openclaw/clawsweeper/actions/runs/37573681502)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe implementation PR is available: the hydrated triage direction requires Blacksmith to expose an exact pre-worker dispatch association. Inspection of preflight main confirms that Crabbox still depends on native run URLs. No code or GitHub mutations were made.
+Implementation is blocked on a supported Blacksmith pre-worker dispatch binding. Inspection of preflight main 81226dc3752cba84ae81ee4075e50c1db25881de confirms Crabbox cannot distinguish failed dispatch from slow allocation when native status is queued without a run URL. No code changes or PR path proposed; the issue remains open.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No safe implementation PR is available: the hydrated triage direction requires B
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | related | Keep the issue open with a non-mutating action. No safe executable fix artifact can be derived from the provided evidence: implementation is blocked until Blacksmith supplies a supported, durable binding from the exact Testbox request to its workflow run before worker startup, including admission failure and cancellation. Guessing associations or equating native completion with settlement would contradict the established contract. The job explicitly requires stopping without a PR when automation cannot safely implement the request. |
-| #2669 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #2670 | keep_closed | skipped | related | Merged ownership safeguard remains relevant context and does not resolve the dispatch capability gap. |
-| #2682 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #2683 | keep_closed | skipped | related | Merged status capability remains relevant context and cannot supply an association missing upstream. |
+| #2708 | keep_related | planned | related | Keep the issue open without a fix action: the provided artifacts do not support a safe executable fix artifact. A safe adapter implementation requires Blacksmith to expose and retain an authoritative Testbox-to-workflow binding before worker registration, including admission failure and cancellation. No supported capability is provided by the hydrated evidence. Guessing by workflow/ref/time or treating native completion as settlement would violate the existing ownership contract. Resume implementation when the provider contract and representative response fixtures are available; no unresolved maintainer decision remains. |
+| #2669 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Merged historical context; not a fix for the canonical issue. |
+| #2682 | keep_closed | skipped | related | Historical context only. |
+| #2683 | keep_closed | skipped | related | Merged historical context; not a fix for the canonical issue. |
 
 ## Needs Human
 
