@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-07T21:25:30.664Z",
+  "updated_at": "2026-10-07T21:22:48.515Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166539:6034974015:2026-10-07T13:52:43Z:clawsweeper_needs_human",
+      "comment_id": "6034974015",
+      "comment_version_key": "6034974015:2026-10-07T13:52:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166539#issuecomment-6034974015",
+      "comment_created_at": "2026-10-07T09:23:48Z",
+      "comment_updated_at": "2026-10-07T13:52:43Z",
+      "comment_body_sha256": "fecade8fab560028b8f1d584aab70c7bd8cf4ac358ff5cc776826bed3af3960b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166539,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Final-head SQL cost remains unqualified: the historical adjacent-window result used grouped runs, and two of 108 SQL/stack delta groups lack baseline matches. (sha=77ecbf16d11f6e90125c4fad9938d18b53f85fef)",
+      "expected_head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T13:54:00.700Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6device",
+        "head_sha": "77ecbf16d11f6e90125c4fad9938d18b53f85fef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134404:5502799295:2026-09-02T01:07:46Z:re_review",
       "comment_id": "5502799295",
@@ -33366,39 +33399,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162078:5918215130:2026-10-07T21:24:32Z:clawsweeper_needs_human",
-      "comment_id": "5918215130",
-      "comment_version_key": "5918215130:2026-10-07T21:24:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162078#issuecomment-5918215130",
-      "comment_created_at": "2026-09-30T19:30:09Z",
-      "comment_updated_at": "2026-10-07T21:24:32Z",
-      "comment_body_sha256": "f74f7c3dc9ed1b078a52728c93f3194e210ef6fd61a7fedf84ee9c7369743032",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162078,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed WhatsApp delivery coordinator is exercised through a mocked socket, with no after-fix trace... (sha=b3b213764bf63d1055518b647c4763318f7faa52)",
-      "expected_head_sha": "b3b213764bf63d1055518b647c4763318f7faa52",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T21:25:30.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "osc/whatsapp-don-t-complete-content-less-cip-be27",
-        "head_sha": "b3b213764bf63d1055518b647c4763318f7faa52",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
