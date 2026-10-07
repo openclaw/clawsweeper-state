@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37573681502"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37573681502"
+run_id: "37578751829"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37578751829"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T04:57:58.833Z"
+published_at: "2026-10-07T05:59:20.498Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37573681502](https://github.com/openclaw/clawsweeper/actions/runs/37573681502)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37578751829](https://github.com/openclaw/clawsweeper/actions/runs/37578751829)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation is blocked on a supported Blacksmith pre-worker dispatch binding. Inspection of preflight main 81226dc3752cba84ae81ee4075e50c1db25881de confirms Crabbox cannot distinguish failed dispatch from slow allocation when native status is queued without a run URL. No code changes or PR path proposed; the issue remains open.
+No safe adapter implementation is currently supported. Blacksmith must expose an authoritative pre-worker Testbox-to-workflow binding that survives admission failure and cancellation. The recorded triage direction already establishes this dependency. Keep the issue open pending that capability; no code changes or PR are proposed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Implementation is blocked on a supported Blacksmith pre-worker dispatch binding.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | planned | related | Keep the issue open without a fix action: the provided artifacts do not support a safe executable fix artifact. A safe adapter implementation requires Blacksmith to expose and retain an authoritative Testbox-to-workflow binding before worker registration, including admission failure and cancellation. No supported capability is provided by the hydrated evidence. Guessing by workflow/ref/time or treating native completion as settlement would violate the existing ownership contract. Resume implementation when the provider contract and representative response fixtures are available; no unresolved maintainer decision remains. |
+| #2708 | keep_related | planned | related | Keep this issue open without mutation. Implementation is blocked on a supported Blacksmith pre-worker dispatch binding and terminal lifecycle evidence. Queue-timeout changes cannot establish the missing identity, and guessed associations or completion-only settlement would contradict the existing ownership contract. No executable fix artifact is safely supported by the provided evidence. Resume adapter work after the provider capability is documented and available. |
 | #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Merged historical context; not a fix for the canonical issue. |
+| #2670 | keep_closed | skipped | related | Historical context only; its ownership guarantees must be preserved. |
 | #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Merged historical context; not a fix for the canonical issue. |
+| #2683 | keep_closed | skipped | related | Historical context only; this repair does not resolve pre-worker dispatch failures. |
 
 ## Needs Human
 
