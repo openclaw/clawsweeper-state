@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127119",
+  "mode": "autonomous",
+  "run_id": "37574857595",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37574857595",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127119.md",
+  "published_at": "2026-10-07T05:43:28.978Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127119",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127119",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix plan. Source inspection confirms the compatibility omission in the available checkout, but a failing production-builder regression could not run because dependencies are missing. The host is read-only, GitHub DNS is unavailable, and checkout HEAD differs from preflight main. No files or GitHub state changed; implementation, validation, and live-provider proof remain outstanding.",
+  "actions": [
+    {
+      "target": "#127119",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "A bounded compatibility-default repair remains justified by source and hydrated evidence. Reproduce through the production builder on refreshed main before editing or opening a PR."
+    },
+    {
+      "target": "#127135",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "Preserve useful research and contributor credit without reopening, closing, or treating the unmerged proposal as a fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127119",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for executor preparation; it does not authorize publication before the required reproduction and validation succeed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
