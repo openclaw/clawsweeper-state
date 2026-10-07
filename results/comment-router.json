@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T19:39:54.520Z",
+  "updated_at": "2026-10-07T19:40:15.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166073:6014237849:2026-10-07T11:41:35Z:clawsweeper_needs_human",
-      "comment_id": "6014237849",
-      "comment_version_key": "6014237849:2026-10-07T11:41:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166073#issuecomment-6014237849",
-      "comment_created_at": "2026-10-06T10:23:13Z",
-      "comment_updated_at": "2026-10-07T11:41:35Z",
-      "comment_body_sha256": "012fa7b8f7f22d6fe2b8e06f4162bb487ff4cfef2389f805811d3f206a877e13",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166073,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrades stop loading native Claude instructions and memory that existing local agents may depend on; maintainer acceptance of that default change remains unresolved despite the worki... (sha=93761e64d823f3ab76c84c75266aabc1210192fd)",
-      "expected_head_sha": "93761e64d823f3ab76c84c75266aabc1210192fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T11:42:56.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claude-cli-memory-isolation",
-        "head_sha": "93761e64d823f3ab76c84c75266aabc1210192fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166506:6037181802:2026-10-07T11:43:10Z:re_review",
       "comment_id": "6037181802",
@@ -33524,6 +33491,53 @@
         "kind": "pull_request",
         "branch": "dbasync/turnbudget-step1-current",
         "head_sha": "c0ff2f671854a467dbf2e83009fa36e30ff872fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:425:6045435372:2026-10-07T19:39:11Z:re_review",
+      "comment_id": "6045435372",
+      "comment_version_key": "6045435372:2026-10-07T19:39:11Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/425#issuecomment-6045435372",
+      "comment_created_at": "2026-10-07T19:39:11Z",
+      "comment_updated_at": "2026-10-07T19:39:11Z",
+      "comment_body_sha256": "c1cedec81f4a3fd671c522a45c140c4f82f3b694ba89921704153c2678c61941",
+      "repo": "openclaw/mcporter",
+      "issue_number": 425,
+      "author": "alexminza",
+      "author_id": 149919,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T19:40:14.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/408-vault-encrypt",
+        "head_sha": "c45fb625da24828f657ddf473ccbf4f9e1d0ac5e",
         "cluster_id": null,
         "job_path": null
       },
