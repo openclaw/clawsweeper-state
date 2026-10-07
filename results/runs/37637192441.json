@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37637192441",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37637192441",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-07T14:37:28.476Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation is premature: #41 explicitly requires stable Ghostty v1.4 and a compatible published wrapper, and neither gate was verified as satisfied. No code changed, tests ran, or PR was created. Actions for the two incorrectly hydrated upstream references are blocked pending correct hydration.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Retain the adoption tracker and defer implementation until both publication gates are verified. The existing hold provides clear direction; no new maintainer decision is required."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical baseline work remains useful but does not satisfy runtime adoption."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Block this action pending correct hydration of coder/ghostty-web#169, including its kind, updated_at, and evidence needed to assess security routing. Do not substitute a timestamp from #41 or act on the unavailable local namesake."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Block this action pending correct hydration of coder/ghostty-web#182, including its kind and updated_at. Retain the upstream link as contextual evidence without acting on the unavailable local namesake."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Correct the repository resolution and hydrate coder/ghostty-web#169 before classifying or routing it; the supplied local 404 record provides neither a target timestamp nor supporting security evidence.",
+    "Correct the repository resolution and hydrate coder/ghostty-web#182 before emitting a per-item classification requiring its target timestamp."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#41",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

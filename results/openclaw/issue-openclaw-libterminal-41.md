@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37607935457"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37607935457"
+run_id: "37637192441"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37637192441"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T10:34:03.855Z"
+published_at: "2026-10-07T14:37:28.476Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37607935457](https://github.com/openclaw/clawsweeper/actions/runs/37607935457)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37637192441](https://github.com/openclaw/clawsweeper/actions/runs/37637192441)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation stopped before code changes: #41 explicitly requires two stable upstream publications, and no qualifying release is verified. Keep the adoption tracker open. No PR or fix artifact is proposed. Only the unavailable #169 and #182 actions require repository-qualified hydration.
+Implementation is premature: #41 explicitly requires stable Ghostty v1.4 and a compatible published wrapper, and neither gate was verified as satisfied. No code changed, tests ran, or PR was created. Actions for the two incorrectly hydrated upstream references are blocked pending correct hydration.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation stopped before code changes: #41 explicitly requires two stable u
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #41 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ Implementation stopped before code changes: #41 explicitly requires two stable u
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | The issue's explicit start conditions are not satisfied by the available evidence. Resume only after verifying both publications and selecting the exact compatible stable package/version. |
-| #77 | keep_closed | skipped | related | Historical validation groundwork; it does not satisfy runtime adoption and receives no mutation. |
-| #169 | needs_human | blocked | needs_human | The routing action cannot safely be repaired from the supplied artifacts. Hydrate https://github.com/coder/ghostty-web/pull/169 under its correct repository before central security routing. This action is non-mutating; do not route or mutate openclaw/libterminal#169. |
-| #182 | needs_human | blocked | needs_human | Hydrate https://github.com/coder/ghostty-web/pull/182 under its correct repository before emitting an item classification requiring live metadata. Retain it as upstream publication context in evidence only. This action is non-mutating; no action against openclaw/libterminal#182 is supported. |
+| #41 | keep_canonical | planned | canonical | Retain the adoption tracker and defer implementation until both publication gates are verified. The existing hold provides clear direction; no new maintainer decision is required. |
+| #77 | keep_closed | skipped | related | Historical baseline work remains useful but does not satisfy runtime adoption. |
+| #169 | needs_human | blocked | needs_human | Block this action pending correct hydration of coder/ghostty-web#169, including its kind, updated_at, and evidence needed to assess security routing. Do not substitute a timestamp from #41 or act on the unavailable local namesake. |
+| #182 | needs_human | blocked | needs_human | Block this action pending correct hydration of coder/ghostty-web#182, including its kind and updated_at. Retain the upstream link as contextual evidence without acting on the unavailable local namesake. |
 
 ## Needs Human
 
-- #169: Repository-qualified hydration of https://github.com/coder/ghostty-web/pull/169 is required before central security routing; supplied preflight instead records openclaw/libterminal#169 as unavailable with unknown kind and null updated_at.
-- #182: Repository-qualified hydration of https://github.com/coder/ghostty-web/pull/182 is required for live item metadata; supplied preflight instead records openclaw/libterminal#182 as unavailable with unknown kind and null updated_at.
+- Correct the repository resolution and hydrate coder/ghostty-web#169 before classifying or routing it; the supplied local 404 record provides neither a target timestamp nor supporting security evidence.
+- Correct the repository resolution and hydrate coder/ghostty-web#182 before emitting a per-item classification requiring its target timestamp.
