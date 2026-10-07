@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T04:34:33.088Z",
+  "updated_at": "2026-10-07T04:36:57.920Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158459:5877351427:2026-09-28T19:53:17Z:re_review",
-      "comment_id": "5877351427",
-      "comment_version_key": "5877351427:2026-09-28T19:53:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158459#issuecomment-5877351427",
-      "comment_created_at": "2026-09-28T19:53:17Z",
-      "comment_updated_at": "2026-09-28T19:53:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158459,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T23:38:04.904Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158459:5877729065:2026-09-28T20:17:39Z:re_review",
       "comment_id": "5877729065",
@@ -33555,6 +33528,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawdinators:15:5792524450:2026-10-07T04:36:09Z:clawsweeper_needs_human",
+      "comment_id": "5792524450",
+      "comment_version_key": "5792524450:2026-10-07T04:36:09Z",
+      "comment_url": "https://github.com/openclaw/clawdinators/pull/15#issuecomment-5792524450",
+      "comment_created_at": "2026-09-23T09:39:32Z",
+      "comment_updated_at": "2026-10-07T04:36:09Z",
+      "comment_body_sha256": "e92f68b899ea6e6b0ccab4e63934a8d62b19966ed049f9f6607eb2244f6988d5",
+      "repo": "openclaw/clawdinators",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct callers sending caller:null or ami_override:null will receive HTTP 400 instead of dispatching with legacy defaults; compatibility beyond the bundled string-valued caller has no... (sha=68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c)",
+      "expected_head_sha": "68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T04:36:57.920Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep3/control-payload",
+        "head_sha": "68c2318cd85e1142a4d77fdd0c5ed7ffb0aaa59c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
