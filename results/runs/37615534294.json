@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "self-heal-openclaw-openclaw-119160",
+  "mode": "autonomous",
+  "run_id": "37615534294",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37615534294",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119160.md",
+  "published_at": "2026-10-07T11:44:36.589Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/119155",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119148",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119155",
+  "summary": "Plan bounded rebase of the existing pinned branch. The preflight confirms the expected open head; current main contains the canonical output-cap fix. No edits, pushes, or validation runs occurred.",
+  "actions": [
+    {
+      "target": "#119148",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": "#119155",
+      "candidate_fix": "#119155",
+      "reason": "Closed context only; no mutation authorized."
+    },
+    {
+      "target": "#119155",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "canonical",
+      "canonical": "#119155",
+      "candidate_fix": null,
+      "reason": "Merged canonical behavior; preserve gaoming-wu's contributor credit."
+    },
+    {
+      "target": "#119160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "superseded",
+      "canonical": "#119155",
+      "candidate_fix": "#119155",
+      "reason": "Authorized branch maintenance only. Executor must re-fetch open state and exact expected head before editing, stop if either changed, and preserve canonical behavior during rebase. Closing, merging, and labeling are prohibited."
+    },
+    {
+      "target": "cluster:self-heal-openclaw-openclaw-119160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#119155",
+      "candidate_fix": null,
+      "reason": "Provide executor preparation without mutating GitHub or the read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
