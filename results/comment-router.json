@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T21:03:35.081Z",
+  "updated_at": "2026-10-07T21:04:13.292Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166553:6039019835:2026-10-07T13:31:05Z:re_review",
-      "comment_id": "6039019835",
-      "comment_version_key": "6039019835:2026-10-07T13:31:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166553#issuecomment-6039019835",
-      "comment_created_at": "2026-10-07T13:31:05Z",
-      "comment_updated_at": "2026-10-07T13:31:05Z",
-      "comment_body_sha256": "1bcb0976a7e389dad02a7cdc71c4035887a595aca0b03e57574257f4ca54005b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166553,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T13:37:57.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-operator-authority",
-        "head_sha": "e9f6ca8cfdf82d3406f11b3a13900aa7849ac4ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166553:6035560096:2026-10-07T13:37:00Z:clawsweeper_needs_human",
       "comment_id": "6035560096",
@@ -33373,6 +33326,39 @@
         "kind": "pull_request",
         "branch": "fix/member-change-index",
         "head_sha": "4f5126db7af9f26010e1909a4497623cc5507f70",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166741:6046803863:2026-10-07T21:03:19Z:clawsweeper_needs_human",
+      "comment_id": "6046803863",
+      "comment_version_key": "6046803863:2026-10-07T21:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166741#issuecomment-6046803863",
+      "comment_created_at": "2026-10-07T21:03:19Z",
+      "comment_updated_at": "2026-10-07T21:03:19Z",
+      "comment_body_sha256": "89b1c44a2e3cc9ce19662d946a30b73ccbba13da3d0c6b355e7bbe616b882205",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166741,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic four-worker hashing increases measured Node peak RSS by about 608 MiB; existing low-memory installations could fail during inventory, and no constrained-memory validation or... (sha=880c3e12ce66a021f9689d5726ea3068b75bdb15)",
+      "expected_head_sha": "880c3e12ce66a021f9689d5726ea3068b75bdb15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T21:04:13.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/runtime-retention-profile-20261007",
+        "head_sha": "880c3e12ce66a021f9689d5726ea3068b75bdb15",
         "cluster_id": null,
         "job_path": null
       }
