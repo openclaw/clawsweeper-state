@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T20:48:49.810Z",
+  "updated_at": "2026-10-07T20:49:11.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166503:6038562981:2026-10-07T13:06:20Z:re_review",
-      "comment_id": "6038562981",
-      "comment_version_key": "6038562981:2026-10-07T13:06:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166503#issuecomment-6038562981",
-      "comment_created_at": "2026-10-07T13:06:20Z",
-      "comment_updated_at": "2026-10-07T13:06:20Z",
-      "comment_body_sha256": "c5cd624d0e9572da15e1cc5ba2124645d235d08f197c4357bacd0c8834b50107",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166503,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T13:08:17.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6discovery-reader",
-        "head_sha": "111e464459b0cb2030c43ed9fcadc3fb526c5193",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166590:6038563387:2026-10-07T13:06:21Z:clawsweeper_auto_repair",
       "comment_id": "6038563387",
@@ -33447,6 +33400,39 @@
         "kind": "pull_request",
         "branch": "fix/whatsapp-mention-digit-fallback",
         "head_sha": "d3341b2fc5ddf186fbc89645e569550b80f5552d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166590:6038563387:2026-10-07T20:48:02Z:clawsweeper_needs_human",
+      "comment_id": "6038563387",
+      "comment_version_key": "6038563387:2026-10-07T20:48:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166590#issuecomment-6038563387",
+      "comment_created_at": "2026-10-07T13:06:21Z",
+      "comment_updated_at": "2026-10-07T20:48:02Z",
+      "comment_body_sha256": "c05fbab07ab08d0c1aa56b45fbe8923adba164ae9603d7701ab10fe1a63736e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166590,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed assembly and prompt-phase owners have helper-test evidence, but this head lacks an after-fix production trace showing single delive... (sha=9fd3dc64b487572b462ad6f6c8e364b259232b1c)",
+      "expected_head_sha": "9fd3dc64b487572b462ad6f6c8e364b259232b1c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T20:49:11.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/before-prompt-context-append-only-166271",
+        "head_sha": "9fd3dc64b487572b462ad6f6c8e364b259232b1c",
         "cluster_id": null,
         "job_path": null
       }
