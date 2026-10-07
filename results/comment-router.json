@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-07T23:28:00.445Z",
+  "updated_at": "2026-10-07T23:27:51.761Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1491:5787870597:2026-10-07T17:02:03Z:clawsweeper_auto_repair",
+      "comment_id": "5787870597",
+      "comment_version_key": "5787870597:2026-10-07T17:02:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1491#issuecomment-5787870597",
+      "comment_created_at": "2026-09-23T02:24:50Z",
+      "comment_updated_at": "2026-10-07T17:02:03Z",
+      "comment_body_sha256": "bfa39edd58f30d278920b8310f02f201fe5d136a2a57fc7eae838576c280a77b",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=427f6f1b014f36a35afc76e12e2892c7a4f73a32)",
+      "expected_head_sha": "427f6f1b014f36a35afc76e12e2892c7a4f73a32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T17:03:01.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/setup-wizard-sigterm-success",
+        "head_sha": "427f6f1b014f36a35afc76e12e2892c7a4f73a32",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166094:6015283024:2026-10-07T17:02:35Z:clawsweeper_needs_human",
       "comment_id": "6015283024",
@@ -33471,53 +33504,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166810:6048910972:2026-10-07T23:27:12Z:freeform_assist",
-      "comment_id": "6048910972",
-      "comment_version_key": "6048910972:2026-10-07T23:27:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166810#issuecomment-6048910972",
-      "comment_created_at": "2026-10-07T23:27:12Z",
-      "comment_updated_at": "2026-10-07T23:27:12Z",
-      "comment_body_sha256": "fb2568ec3c387b62f893494f8488d86f772cfe67f23abc782b2a3f574c9d9127",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166810,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review. reuses existing publication listener to wait for accepted initial pricing and observed recovery thread. preserves original catalog/pricing/admitted-run and worker-exit assertions; original-order versions pass after. no second adoption, added timers or production changes. review head 302bdb57c7600fb4df7b29026d9f604f7f21ea97.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:27:58.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-catalog-publication-fixture-20261007",
-        "head_sha": "302bdb57c7600fb4df7b29026d9f604f7f21ea97",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
