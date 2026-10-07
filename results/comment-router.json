@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T20:20:13.598Z",
+  "updated_at": "2026-10-07T20:20:25.832Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161410:5900169039:2026-10-07T12:43:06Z:clawsweeper_needs_human",
-      "comment_id": "5900169039",
-      "comment_version_key": "5900169039:2026-10-07T12:43:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161410#issuecomment-5900169039",
-      "comment_created_at": "2026-09-29T22:18:06Z",
-      "comment_updated_at": "2026-10-07T12:43:06Z",
-      "comment_body_sha256": "7384526d0ee4a53e2f9c2087899a5035b076dea78e63000fc1e0a5ba4ee5d929",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161410,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7f0bcc88b84908d10fd3782ecc6a3cc573d07b33)",
-      "expected_head_sha": "7f0bcc88b84908d10fd3782ecc6a3cc573d07b33",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T12:44:11.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-161370-delivery-custody",
-        "head_sha": "7f0bcc88b84908d10fd3782ecc6a3cc573d07b33",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:161410:5901418211:2026-09-30T00:06:29Z:re_review",
       "comment_id": "5901418211",
@@ -33462,6 +33429,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166706:6046082542:2026-10-07T20:19:09Z:re_review",
+      "comment_id": "6046082542",
+      "comment_version_key": "6046082542:2026-10-07T20:19:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166706#issuecomment-6046082542",
+      "comment_created_at": "2026-10-07T20:19:09Z",
+      "comment_updated_at": "2026-10-07T20:19:09Z",
+      "comment_body_sha256": "428ebd0acb28063dd2f777f56a4fb4fdf5fb7b8445d149889900a67c0620d244",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166706,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T20:20:23.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/add-support-for-claude-5-5-haiku",
+        "head_sha": "bc241c93f4319caaaf7199ffe1a74402b3f64484",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
