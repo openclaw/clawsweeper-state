@@ -2,16 +2,16 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37182435079"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37182435079"
-head_sha: "f7c8c55f33a2a0bd28a09b5999a11f5b85196436"
+run_id: "37607648422"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37607648422"
+head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-04T06:23:31.767Z"
+published_at: "2026-10-07T10:34:45.592Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37182435079](https://github.com/openclaw/clawsweeper/actions/runs/37182435079)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37607648422](https://github.com/openclaw/clawsweeper/actions/runs/37607648422)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The archive-state gap remains on preflight main a4f23eef7395473931e3a44c93eacd6ebebdc313. A focused fix artifact is prepared, but implementation and validation are blocked by the read-only workspace, unavailable required Go toolchain, and incomplete protocol verification. No files or GitHub items were changed.
+Confirmed the defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation is blocked by the read-only filesystem, unavailable required tooling, and incomplete preference/bootstrap protocol evidence. No code changed, regression executed, or PR opened.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The archive-state gap remains on preflight main a4f23eef7395473931e3a44c93eacd6e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The reported sync behavior is absent on current preflight main. Keep the issue open; implementation must establish safe protocol behavior and pass the required gates. |
-| #299 | keep_closed | skipped | related | Historical explicit-command recovery work; preserve its sequencing and replay guarantees. |
-| #454 | keep_closed | skipped | related | Historical explicit-command delegation work with distinct scope; preserve its behavior. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | A narrow repair plan remains useful for a writable executor with the pinned dependency source and Go 1.27.1. Do not open a PR until protocol verification, regression proof, review and the full gate complete. |
+| #466 | fix_needed | planned | canonical | The ordinary archive-state bug remains unresolved and has no viable open implementation PR. Keep #466 as the canonical issue. |
+| #468 | keep_closed | skipped | related | Historical implementation context, not a landing or closure target. Preserve attribution for any ideas or code carried forward. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | The artifact records a narrow recovery path, but implementation and PR publication must wait for a writable executor with required tooling and verified preference/bootstrap semantics. |
 
 ## Needs Human
 
