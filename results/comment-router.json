@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T07:43:01.746Z",
+  "updated_at": "2026-10-07T07:43:10.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1664:6029449134:2026-10-07T02:14:31Z:clawsweeper_needs_human",
-      "comment_id": "6029449134",
-      "comment_version_key": "6029449134:2026-10-07T02:14:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1664#issuecomment-6029449134",
-      "comment_created_at": "2026-10-07T02:14:31Z",
-      "comment_updated_at": "2026-10-07T02:14:31Z",
-      "comment_body_sha256": "23ee3de0389995a7ee09ab03f1dd63969697e7bda713f86390b8b02c741202fc",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: AgentEventsPage.AddEvent now uses AgentEventIdentity, but the supplied Windows evidence exercises only isolated helper tests. It does not show... (sha=710b9d2f70fd119c7269634a74646cf1b658b4fc)",
-      "expected_head_sha": "710b9d2f70fd119c7269634a74646cf1b658b4fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T02:15:24.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f054-approval-event-identity",
-        "head_sha": "710b9d2f70fd119c7269634a74646cf1b658b4fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166386:6029332759:2026-10-07T02:16:08Z:clawsweeper_needs_human",
       "comment_id": "6029332759",
@@ -33365,6 +33332,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166444:6033360357:2026-10-07T07:42:16Z:re_review",
+      "comment_id": "6033360357",
+      "comment_version_key": "6033360357:2026-10-07T07:42:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166444#issuecomment-6033360357",
+      "comment_created_at": "2026-10-07T07:42:16Z",
+      "comment_updated_at": "2026-10-07T07:42:16Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166444,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T07:43:07.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6placement",
+        "head_sha": "5937396fa5b76c8fee12880aaf5e51f4b49e506c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
