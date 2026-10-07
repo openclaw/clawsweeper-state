@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T07:22:29.423Z",
+  "updated_at": "2026-10-07T07:22:32.760Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Peekaboo:977:6008497255:2026-10-06T03:06:03Z:re_review",
-      "comment_id": "6008497255",
-      "comment_version_key": "6008497255:2026-10-06T03:06:03Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/977#issuecomment-6008497255",
-      "comment_created_at": "2026-10-06T03:06:03Z",
-      "comment_updated_at": "2026-10-06T03:06:03Z",
-      "comment_body_sha256": "1a09a436d2d08e22b5a33aff30679ff4226a0a0c6649c5817588a7a913b1585f",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 977,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T01:54:41.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pr953-menu-owner",
-        "head_sha": "7c1fb12ff18d699ef1d21359353ac52a5984d45b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166108:6016046305:2026-10-07T01:53:42Z:clawsweeper_needs_human",
       "comment_id": "6016046305",
@@ -33438,6 +33391,39 @@
         "kind": "pull_request",
         "branch": "fix/gateway-process-query-rights",
         "head_sha": "9b55a1aad1ff73ef432f6da5d8d79063cb2dbfe4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166499:6033025934:2026-10-07T07:20:29Z:clawsweeper_needs_human",
+      "comment_id": "6033025934",
+      "comment_version_key": "6033025934:2026-10-07T07:20:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166499#issuecomment-6033025934",
+      "comment_created_at": "2026-10-07T07:20:29Z",
+      "comment_updated_at": "2026-10-07T07:20:29Z",
+      "comment_body_sha256": "443347a45a308f48da9154973f03d2aea4caf17dfe6f7eac6bdca76c704c878d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed Mattermost monitor is exercised through FakeWebSocket and mocked reply dispatch, despite re... (sha=09f57cd9a1c1f065f11f8356637d0faff417c6c2)",
+      "expected_head_sha": "09f57cd9a1c1f065f11f8356637d0faff417c6c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T07:22:32.760Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mattermost-ingress-debounce",
+        "head_sha": "09f57cd9a1c1f065f11f8356637d0faff417c6c2",
         "cluster_id": null,
         "job_path": null
       }
