@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T02:21:49.227Z",
+  "updated_at": "2026-10-07T02:21:50.410Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153297:5812000989:2026-09-24T10:01:29Z:re_review",
-      "comment_id": "5812000989",
-      "comment_version_key": "5812000989:2026-09-24T10:01:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153297#issuecomment-5812000989",
-      "comment_created_at": "2026-09-24T10:01:29Z",
-      "comment_updated_at": "2026-09-24T10:01:29Z",
-      "comment_body_sha256": "2a328a380f77c9175cad95312f0434e32e9656e99f52e53d3c039a45d50251f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153297,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T20:36:14.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/recover-lost-required-subagent-completion-delivery",
-        "head_sha": "4f6eaf20c2c6100f65ace0fba19390c28b5edffb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153297:5746514413:2026-10-06T20:35:07Z:clawsweeper_needs_human",
       "comment_id": "5746514413",
@@ -34191,6 +34144,39 @@
         "kind": "pull_request",
         "branch": "bug-052-msteams-inbound-normalize",
         "head_sha": "1d71530f92aa611df83fb13b51f5f775105a4309",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:775:5925044584:2026-10-07T02:20:41Z:clawsweeper_needs_human",
+      "comment_id": "5925044584",
+      "comment_version_key": "5925044584:2026-10-07T02:20:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/775#issuecomment-5925044584",
+      "comment_created_at": "2026-10-01T04:58:12Z",
+      "comment_updated_at": "2026-10-07T02:20:41Z",
+      "comment_body_sha256": "a1c950fddcd8e22711c31ee5ce12cf609780c01881aa59429754ad12d6ae4746",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Complete current-source Calendar approval/denial/disabled-tool and corrected Codex repository acceptance remains unqualified on both installations, including the previously failed Kub... (sha=0455423ecdda235978f99b7e8ca8fe0dfe43d686)",
+      "expected_head_sha": "0455423ecdda235978f99b7e8ca8fe0dfe43d686",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T02:21:50.410Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/qa-integration-matrix",
+        "head_sha": "24642f911b000bf807bb0af497b58679a768390a",
         "cluster_id": null,
         "job_path": null
       }
