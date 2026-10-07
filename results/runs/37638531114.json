@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "self-heal-openclaw-openclaw-118303",
+  "mode": "autonomous",
+  "run_id": "37638531114",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37638531114",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118303.md",
+  "published_at": "2026-10-07T14:44:59.770Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/118303",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116601",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/118303",
+  "summary": "Bounded branch-rebase plan prepared. Execution is blocked because the required deterministic_rebase_only field is forbidden by the result schema, and omitting it selects the general repair path. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#118303",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118303",
+      "candidate_fix": null,
+      "reason": "Repair only the existing branch's base synchronization after rechecking the exact expected head. Substantive review repairs, merge, closure, and labels are outside this job."
+    },
+    {
+      "target": "#116601",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "Keep the source report open. Branch synchronization does not establish that its reported behavior is fixed."
+    },
+    {
+      "target": "#64244",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no action is authorized or needed."
+    },
+    {
+      "target": "cluster:self-heal-openclaw-openclaw-118303",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#118303",
+      "candidate_fix": null,
+      "reason": "The required bounded-execution guard cannot be represented in the accepted schema. Do not dispatch this artifact through general repair; the workflow owner must reconcile the schema and execution contract first."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
