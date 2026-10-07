@@ -31,8 +31,8 @@ target_branch: clawsweeper/issue-openclaw-openclaw-89254
 source: clawsweeper_self_rebase
 self_heal_target_pr: "120143"
 expected_head_sha: "bc3012edd4df6fb5d53e313c412aa42701639816"
-self_heal_merge_state: "mergeStateStatus is BEHIND"
-self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31922698631"
+self_heal_merge_state: "mergeStateStatus is DIRTY"
+self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37602012904"
 ---
 
 # ClawSweeper self-heal PR rebase
@@ -43,8 +43,8 @@ Source PR: https://github.com/openclaw/openclaw/pull/120143
 Title: fix(matrix): warn when open DMs lack an allowlist wildcard
 Target branch: `clawsweeper/issue-openclaw-openclaw-89254`
 Target head SHA: `bc3012edd4df6fb5d53e313c412aa42701639816`
-Detected state: mergeStateStatus is BEHIND
-Repair run: https://github.com/openclaw/clawsweeper/actions/runs/31922698631
+Detected state: mergeStateStatus is DIRTY
+Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37602012904
 
 Use this job only for bounded conflict/behind self-heal:
 
