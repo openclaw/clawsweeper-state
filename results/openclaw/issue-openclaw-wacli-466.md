@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37640113105"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37640113105"
+run_id: "37653035931"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37653035931"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T14:59:30.426Z"
+published_at: "2026-10-07T16:40:52.670Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37640113105](https://github.com/openclaw/clawsweeper/actions/runs/37640113105)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37653035931](https://github.com/openclaw/clawsweeper/actions/runs/37653035931)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the archive defect on preflight main with an in-memory probe using repository SQL. Returned a focused fix artifact; implementation and validation are blocked by the read-only checkout, unavailable required Go toolchain, and incomplete access to pinned history contracts. No files or GitHub state changed; no PR created.
+Confirmed the storage defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91 with a failing in-memory SQL probe. Produced a focused fix artifact. Implementation and validation are blocked by the read-only filesystem, unavailable pinned dependency source, and toolchain setup. No files or GitHub items were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the archive defect on preflight main with an in-memory probe using rep
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The ordinary archive reconciliation bug remains on current main, and no viable open implementation PR exists. |
-| #468 | keep_closed | skipped | related | Historical evidence only; the rejected implementation must not be landed or receive another closure action. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The artifact is reviewable, but implementation is blocked until a writable checkout, required toolchain, and pinned protocol sources are available. Do not open a PR before regression, protocol, migration, and full-gate validation. |
+| #466 | fix_needed | planned | canonical | The issue remains valid. Repair must cover both eligible live arrivals and older archive replay while preserving existing archive choices. |
+| #468 | keep_closed | skipped | related | Historical implementation evidence only. Preserve @AdamMagued's contribution credit without reopening or closing this PR. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Fix planning is complete; implementation requires a writable executor with the repository toolchain and pinned dependency source. Verify protocol contracts before selecting boundary storage or opening a PR. |
 
 ## Needs Human
 
