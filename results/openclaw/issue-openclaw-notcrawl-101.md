@@ -2,12 +2,12 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-101"
 mode: "autonomous"
-run_id: "37685547753"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37685547753"
+run_id: "37689575633"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37689575633"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-07T20:58:19.162Z"
+published_at: "2026-10-07T21:32:23.877Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37685547753](https://github.com/openclaw/clawsweeper/actions/runs/37685547753)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37689575633](https://github.com/openclaw/clawsweeper/actions/runs/37689575633)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/notcrawl/issues/101
 
 ## Summary
 
-Rich-block URL context remains missing on current main, but the recorded Markdown output-contract decision is unresolved. No code changed or executable PR plan emitted.
+Rich-block URL context remains missing on preflight main. The hydrated discussion leaves the output contract unresolved, so implementation stops pending that specific product decision. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Rich-block URL context remains missing on current main, but the recorded Markdow
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101 | needs_human | planned | needs_human | Approve the rich-block output contract before automation changes documented placeholder behavior. The missing URL context is established, while transclusion duplication remains unverified. |
+| #101 | needs_human | blocked | needs_human | The job requires stopping when a product decision remains. Resolve the explicitly flagged rich-block Markdown contract and whether URL/caption support alone satisfies #101 before preparing an implementation PR or closing reference. |
 
 ## Needs Human
 
-- #101: Decide whether deterministic archived URL/caption output satisfies the request for bookmarks, link previews, tweets, and video embeds, with synced/transcluded-content behavior explicitly deferred. No such contract approval appears in the supplied evidence.
+- Decide the rich-block Markdown output contract: approve deterministic URL/caption representations for archived bookmarks, embeds, and link previews, and confirm whether transclusion semantics remain a separate follow-up.
