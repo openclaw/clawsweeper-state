@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T23:45:00.882Z",
+  "updated_at": "2026-10-07T23:45:01.774Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165185:5985555951:2026-10-07T18:04:06Z:clawsweeper_needs_human",
-      "comment_id": "5985555951",
-      "comment_version_key": "5985555951:2026-10-07T18:04:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165185#issuecomment-5985555951",
-      "comment_created_at": "2026-10-04T23:23:41Z",
-      "comment_updated_at": "2026-10-07T18:04:06Z",
-      "comment_body_sha256": "24baac2be0900208d029f0988e1f8d9cc7cd2f7f1caef6ff91c2faea223952cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165185,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=109f8b97f14d0b4246107841fe32fa783868a699)",
-      "expected_head_sha": "109f8b97f14d0b4246107841fe32fa783868a699",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T18:05:45.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/incognito-reset-worktree-removal",
-        "head_sha": "109f8b97f14d0b4246107841fe32fa783868a699",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133390:5470008689:2026-10-07T18:04:10Z:clawsweeper_needs_human",
       "comment_id": "5470008689",
@@ -33367,6 +33334,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166820:6049103973:2026-10-07T23:43:54Z:re_review",
+      "comment_id": "6049103973",
+      "comment_version_key": "6049103973:2026-10-07T23:43:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166820#issuecomment-6049103973",
+      "comment_created_at": "2026-10-07T23:43:54Z",
+      "comment_updated_at": "2026-10-07T23:43:54Z",
+      "comment_body_sha256": "f60d0e204c7877f4087f7dbb9094b7ade7b0caa652fde3e7371a5e2c965c22c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166820,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review: both real inbound worktree variants pass with peer writes completed before allocation release. all original state/order assertions remain, and timeout/cancellation still unwinds through the existing withintest cleanup guard. focused gateway test types and lint passed; inherited dead-export failure is documented",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T23:45:00.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-session-independence-20261007",
+        "head_sha": "ec0f09b416baaf95b394b17fea6e31deef1ce07a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166811:6048957734:2026-10-07T23:44:11Z:clawsweeper_needs_human",
