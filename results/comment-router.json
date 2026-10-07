@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T08:21:43.169Z",
+  "updated_at": "2026-10-07T08:22:15.392Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/ocm:310:6029686443:2026-10-07T02:34:29Z:re_review",
-      "comment_id": "6029686443",
-      "comment_version_key": "6029686443:2026-10-07T02:34:29Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/310#issuecomment-6029686443",
-      "comment_created_at": "2026-10-07T02:34:29Z",
-      "comment_updated_at": "2026-10-07T02:34:29Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/ocm",
-      "issue_number": 310,
-      "author": "shakkernerd",
-      "author_id": 165377636,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T02:39:22.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dev-policy-restore",
-        "head_sha": "6a5cd40144e0db35a003b7463af74b23ce2b3632",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:310:6028519495:2026-10-07T02:38:16Z:clawsweeper_needs_human",
       "comment_id": "6028519495",
@@ -33290,6 +33243,39 @@
         "kind": "pull_request",
         "branch": "dbasync/tb2receipts",
         "head_sha": "2d78b09cf63592f7ad0d6d6d250324d629af5009",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166000:6012008995:2026-10-07T08:21:16Z:clawsweeper_needs_human",
+      "comment_id": "6012008995",
+      "comment_version_key": "6012008995:2026-10-07T08:21:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166000#issuecomment-6012008995",
+      "comment_created_at": "2026-10-06T08:01:31Z",
+      "comment_updated_at": "2026-10-07T08:21:16Z",
+      "comment_body_sha256": "79bd3115477302c1cd1c279118d7f3aa0f30954050888c20adfa9f64c568c92f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166000,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Doctor maintenance and delegated predecessor-stop now consume the parent's deadline. The reported 44/44 mocked-service suite verifies... (sha=6117be9e5a9e96cf2acdf369163bd41a117f23dd)",
+      "expected_head_sha": "6117be9e5a9e96cf2acdf369163bd41a117f23dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T08:22:15.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/upstream-doctor-deadline-20261006",
+        "head_sha": "6117be9e5a9e96cf2acdf369163bd41a117f23dd",
         "cluster_id": null,
         "job_path": null
       }
