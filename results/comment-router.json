@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T06:29:00.858Z",
+  "updated_at": "2026-10-07T06:29:07.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162110:5990122791:2026-10-05T07:34:28Z:re_review",
-      "comment_id": "5990122791",
-      "comment_version_key": "5990122791:2026-10-05T07:34:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162110#issuecomment-5990122791",
-      "comment_created_at": "2026-10-05T07:34:28Z",
-      "comment_updated_at": "2026-10-05T07:34:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162110,
-      "author": "openclaw-agent-man",
-      "author_id": 276152650,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T01:21:47.076Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-extension-target-enumeration",
-        "head_sha": "7efa40864849031fb4afcd12552a8895e577bf30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2723:6028822162:2026-10-07T01:20:53Z:clawsweeper_auto_repair",
       "comment_id": "6028822162",
@@ -33254,6 +33207,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-live-session-state-gauge-20260919",
         "head_sha": "ecd730e368ce972784a9362c787ee6424ceb44b2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132806:5464465500:2026-10-07T06:28:14Z:clawsweeper_needs_human",
+      "comment_id": "5464465500",
+      "comment_version_key": "5464465500:2026-10-07T06:28:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132806#issuecomment-5464465500",
+      "comment_created_at": "2026-08-29T19:42:51Z",
+      "comment_updated_at": "2026-10-07T06:28:14Z",
+      "comment_body_sha256": "47d562866a6cb08f76bee6af0790bfeeb15c1bd2d4387a881b582a98d7e45b1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132806,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: This head supplies helper-test results without an after-fix observation of safeguard compaction, the persisted summary, and resumed work. The m... (sha=1819620cefa15fb6b031565fbe3402957ba251b2)",
+      "expected_head_sha": "1819620cefa15fb6b031565fbe3402957ba251b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T06:29:07.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "forge/123668-compaction-active-request",
+        "head_sha": "1819620cefa15fb6b031565fbe3402957ba251b2",
         "cluster_id": null,
         "job_path": null
       }
