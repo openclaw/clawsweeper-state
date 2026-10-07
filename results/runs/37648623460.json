@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37648623460",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37648623460",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-07T16:07:01.534Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation remains blocked on the issue's two upstream publication gates. No code changed, no validation runs were needed, and no PR is proposed. The two unavailable linked aliases require repository-qualified hydration before further handling.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Keep the adoption tracker open. Resume implementation only after both qualifying stable publications are verified; the job's viability guard requires stopping without a PR meanwhile."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical validation groundwork; it does not satisfy the requested dependency adoption."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The external item cannot safely be routed through the unavailable local alias. Resolve and hydrate coder/ghostty-web PR #169 before deciding security handling; preserve the potential security concern for central OpenClaw handling without any GitHub mutation. Do not invent target kind or updated_at for openclaw/libterminal#169."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve and hydrate coder/ghostty-web PR #182 before assigning a per-item classification with live metadata. Retain its URL as publication context only; do not invent metadata or mutate the unavailable openclaw/libterminal#182 alias."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#169: Resolve the mismatched repository reference and hydrate https://github.com/coder/ghostty-web/pull/169 before security handling. The supplied local alias returned HTTP 404 and has no target kind or updated_at.",
+    "#182: Resolve the mismatched repository reference and hydrate https://github.com/coder/ghostty-web/pull/182 before per-item classification. The supplied local alias returned HTTP 404 and has no target kind or updated_at."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#41",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

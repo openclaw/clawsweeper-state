@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37637192441"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37637192441"
+run_id: "37648623460"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37648623460"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T14:37:28.476Z"
+published_at: "2026-10-07T16:07:01.534Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37637192441](https://github.com/openclaw/clawsweeper/actions/runs/37637192441)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37648623460](https://github.com/openclaw/clawsweeper/actions/runs/37648623460)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation is premature: #41 explicitly requires stable Ghostty v1.4 and a compatible published wrapper, and neither gate was verified as satisfied. No code changed, tests ran, or PR was created. Actions for the two incorrectly hydrated upstream references are blocked pending correct hydration.
+Implementation remains blocked on the issue's two upstream publication gates. No code changed, no validation runs were needed, and no PR is proposed. The two unavailable linked aliases require repository-qualified hydration before further handling.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation is premature: #41 explicitly requires stable Ghostty v1.4 and a c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | Retain the adoption tracker and defer implementation until both publication gates are verified. The existing hold provides clear direction; no new maintainer decision is required. |
-| #77 | keep_closed | skipped | related | Historical baseline work remains useful but does not satisfy runtime adoption. |
-| #169 | needs_human | blocked | needs_human | Block this action pending correct hydration of coder/ghostty-web#169, including its kind, updated_at, and evidence needed to assess security routing. Do not substitute a timestamp from #41 or act on the unavailable local namesake. |
-| #182 | needs_human | blocked | needs_human | Block this action pending correct hydration of coder/ghostty-web#182, including its kind and updated_at. Retain the upstream link as contextual evidence without acting on the unavailable local namesake. |
+| #41 | keep_canonical | planned | canonical | Keep the adoption tracker open. Resume implementation only after both qualifying stable publications are verified; the job's viability guard requires stopping without a PR meanwhile. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork; it does not satisfy the requested dependency adoption. |
+| #169 | needs_human | blocked | needs_human | The external item cannot safely be routed through the unavailable local alias. Resolve and hydrate coder/ghostty-web PR #169 before deciding security handling; preserve the potential security concern for central OpenClaw handling without any GitHub mutation. Do not invent target kind or updated_at for openclaw/libterminal#169. |
+| #182 | needs_human | blocked | needs_human | Resolve and hydrate coder/ghostty-web PR #182 before assigning a per-item classification with live metadata. Retain its URL as publication context only; do not invent metadata or mutate the unavailable openclaw/libterminal#182 alias. |
 
 ## Needs Human
 
-- Correct the repository resolution and hydrate coder/ghostty-web#169 before classifying or routing it; the supplied local 404 record provides neither a target timestamp nor supporting security evidence.
-- Correct the repository resolution and hydrate coder/ghostty-web#182 before emitting a per-item classification requiring its target timestamp.
+- #169: Resolve the mismatched repository reference and hydrate https://github.com/coder/ghostty-web/pull/169 before security handling. The supplied local alias returned HTTP 404 and has no target kind or updated_at.
+- #182: Resolve the mismatched repository reference and hydrate https://github.com/coder/ghostty-web/pull/182 before per-item classification. The supplied local alias returned HTTP 404 and has no target kind or updated_at.
