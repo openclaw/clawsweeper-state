@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T07:17:29.636Z",
+  "updated_at": "2026-10-07T07:17:32.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:775:5925044584:2026-10-07T01:51:52Z:clawsweeper_needs_human",
-      "comment_id": "5925044584",
-      "comment_version_key": "5925044584:2026-10-07T01:51:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/775#issuecomment-5925044584",
-      "comment_created_at": "2026-10-01T04:58:12Z",
-      "comment_updated_at": "2026-10-07T01:51:52Z",
-      "comment_body_sha256": "612613fdbcc303b045ebb2148b9687c15227b82159e1b78d9e5408e708c5c11f",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 775,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The protected integration-qa environment is absent; its approved credentials, independent review protection, dedicated Slack arrangement, and first main-only rollout need an owner-app... (sha=a898456b2faee9f6a9e3daef30a70c92a4b431cf)",
-      "expected_head_sha": "a898456b2faee9f6a9e3daef30a70c92a4b431cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T01:52:57.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/kevinlin/qa-integration-matrix",
-        "head_sha": "a898456b2faee9f6a9e3daef30a70c92a4b431cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155142:5766728093:2026-10-07T01:52:38Z:clawsweeper_needs_human",
       "comment_id": "5766728093",
@@ -33435,6 +33402,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166265:6032971596:2026-10-07T07:16:38Z:re_review",
+      "comment_id": "6032971596",
+      "comment_version_key": "6032971596:2026-10-07T07:16:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166265#issuecomment-6032971596",
+      "comment_created_at": "2026-10-07T07:16:38Z",
+      "comment_updated_at": "2026-10-07T07:16:38Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166265,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T07:17:30.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incogp7n",
+        "head_sha": "4e5cc5a909ce0ad948b10fc98a16b89b865a6880",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
