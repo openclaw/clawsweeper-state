@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T11:01:45.406Z",
+  "updated_at": "2026-10-07T11:01:50.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158903:6030738222:2026-10-07T04:10:18Z:re_review",
-      "comment_id": "6030738222",
-      "comment_version_key": "6030738222:2026-10-07T04:10:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158903#issuecomment-6030738222",
-      "comment_created_at": "2026-10-07T04:10:18Z",
-      "comment_updated_at": "2026-10-07T04:10:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158903,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T04:11:22.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-required-worker-profile",
-        "head_sha": "3377c44e1c39921d9a1abff48ba69ab28cba98aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:993:6030233732:2026-10-07T04:10:33Z:clawsweeper_needs_human",
       "comment_id": "6030233732",
@@ -33346,6 +33299,39 @@
         "kind": "pull_request",
         "branch": "fix/f009-browser-proxy-direct",
         "head_sha": "af5ad2d363fae7fff4ed58b476ba21dcf4714035",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155835:5780225048:2026-10-07T11:00:48Z:clawsweeper_needs_human",
+      "comment_id": "5780225048",
+      "comment_version_key": "5780225048:2026-10-07T11:00:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155835#issuecomment-5780225048",
+      "comment_created_at": "2026-09-22T16:34:26Z",
+      "comment_updated_at": "2026-10-07T11:00:48Z",
+      "comment_body_sha256": "bf6cdf91c52412ef73012dcb9e0dc2e961508ac9731ea3977103f9aee7455e94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the height budget for the entire shell, while supplied after-fix evidence covers injected Chromium chat geometry rather than repeated keyboard use and resume in the aff... (sha=77aa7852d5f28936b9d3ca7871778b2abfdca8d9)",
+      "expected_head_sha": "77aa7852d5f28936b9d3ca7871778b2abfdca8d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T11:01:50.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mobile-keyboard-composer-20260922",
+        "head_sha": "77aa7852d5f28936b9d3ca7871778b2abfdca8d9",
         "cluster_id": null,
         "job_path": null
       }
