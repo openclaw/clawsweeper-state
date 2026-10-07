@@ -1,13 +1,13 @@
 {
   "repo": "openclaw/openclaw",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-10-07T12:49:31.223Z",
+  "generated_at": "2026-10-07T13:38:36.091Z",
   "summary": {
     "open_clawsweeper_prs": 27,
-    "candidates": 0,
+    "candidates": 1,
     "waiting": 0,
-    "skipped": 28,
-    "conflicting_or_dirty": 0
+    "skipped": 27,
+    "conflicting_or_dirty": 1
   },
   "dispatch": {
     "enabled": true,
@@ -19,10 +19,48 @@
     "max_prs": 5,
     "max_repairs_per_head": 2,
     "max_repairs_per_pr": 10,
-    "candidates": [],
-    "attempts": [],
-    "status": "no_candidates",
-    "dispatched_at": "2026-10-07T12:49:31.224Z"
+    "candidates": [
+      {
+        "pr": 117144,
+        "url": "https://github.com/openclaw/openclaw/pull/117144",
+        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
+        "head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117144.md"
+      }
+    ],
+    "attempts": [
+      {
+        "batch_id": "conflict-self-heal-2026-10-07T13-38-38-251Z",
+        "target_repo": "openclaw/openclaw",
+        "repair_repo": "openclaw/clawsweeper",
+        "pr": 117144,
+        "url": "https://github.com/openclaw/openclaw/pull/117144",
+        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
+        "head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
+        "latest_head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117144.md",
+        "workflow": "repair-cluster-worker.yml",
+        "runner": "blacksmith-4vcpu-ubuntu-2404",
+        "execution_runner": "blacksmith-32vcpu-ubuntu-2404",
+        "model": "internal",
+        "dispatched_at": "2026-10-07T13:38:38.641Z",
+        "status": "dispatched",
+        "latest_head_sha_after_publish": "6824d737491e864a69bb602a650b5e694974f0fa"
+      }
+    ],
+    "status": "dispatched",
+    "dispatched_at": "2026-10-07T13:38:36.092Z",
+    "live_worker_capacity_before_dispatch": {
+      "repo": "openclaw/clawsweeper",
+      "workflow": "repair-cluster-worker.yml",
+      "active": 0,
+      "requested": 1,
+      "max_live_workers": 51,
+      "available": 51,
+      "active_runs": []
+    }
   },
   "prs": [
     {
@@ -671,8 +709,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-98276",
       "head_repo": "openclaw/openclaw",
       "head_sha": "6824d737491e864a69bb602a650b5e694974f0fa",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "scripts",
         "stale",
@@ -687,8 +725,8 @@
         "status: ⏳ waiting on author"
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117144.md",
-      "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "status": "candidate",
+      "reason": "mergeStateStatus is DIRTY"
     },
     {
       "number": 106789,

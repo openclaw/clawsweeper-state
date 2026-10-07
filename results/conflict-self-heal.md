@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-07T12:49:31.223Z
+Generated: 2026-10-07T13:38:36.091Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -8,10 +8,10 @@ Repository: openclaw/openclaw
 | Metric | Count |
 | --- | ---: |
 | open_clawsweeper_prs | 27 |
-| candidates | 0 |
+| candidates | 1 |
 | waiting | 0 |
-| skipped | 28 |
-| conflicting_or_dirty | 0 |
+| skipped | 27 |
+| conflicting_or_dirty | 1 |
 
 ## Pull Requests
 
@@ -42,6 +42,6 @@ Repository: openclaw/openclaw
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
+| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | CONFLICTING | DIRTY | candidate | mergeStateStatus is DIRTY |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
