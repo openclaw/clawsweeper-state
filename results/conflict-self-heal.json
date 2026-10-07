@@ -1,13 +1,13 @@
 {
   "repo": "openclaw/openclaw",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-10-07T13:38:36.091Z",
+  "generated_at": "2026-10-07T14:39:06.519Z",
   "summary": {
     "open_clawsweeper_prs": 27,
-    "candidates": 1,
+    "candidates": 3,
     "waiting": 0,
-    "skipped": 27,
-    "conflicting_or_dirty": 1
+    "skipped": 25,
+    "conflicting_or_dirty": 3
   },
   "dispatch": {
     "enabled": true,
@@ -21,6 +21,22 @@
     "max_repairs_per_pr": 10,
     "candidates": [
       {
+        "pr": 118806,
+        "url": "https://github.com/openclaw/openclaw/pull/118806",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118776",
+        "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118806.md"
+      },
+      {
+        "pr": 118303,
+        "url": "https://github.com/openclaw/openclaw/pull/118303",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "3f2b38a5bdd3905bd7567502120f0cac8a324b6c",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118303.md"
+      },
+      {
         "pr": 117144,
         "url": "https://github.com/openclaw/openclaw/pull/117144",
         "branch": "clawsweeper/issue-openclaw-openclaw-98276",
@@ -31,7 +47,45 @@
     ],
     "attempts": [
       {
-        "batch_id": "conflict-self-heal-2026-10-07T13-38-38-251Z",
+        "batch_id": "conflict-self-heal-2026-10-07T14-39-08-832Z",
+        "target_repo": "openclaw/openclaw",
+        "repair_repo": "openclaw/clawsweeper",
+        "pr": 118806,
+        "url": "https://github.com/openclaw/openclaw/pull/118806",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118776",
+        "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
+        "latest_head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118806.md",
+        "workflow": "repair-cluster-worker.yml",
+        "runner": "blacksmith-4vcpu-ubuntu-2404",
+        "execution_runner": "blacksmith-32vcpu-ubuntu-2404",
+        "model": "internal",
+        "dispatched_at": "2026-10-07T14:39:09.209Z",
+        "status": "dispatched",
+        "latest_head_sha_after_publish": "d20ce06d439667096a4a319750a93686904a6e2e"
+      },
+      {
+        "batch_id": "conflict-self-heal-2026-10-07T14-39-08-832Z",
+        "target_repo": "openclaw/openclaw",
+        "repair_repo": "openclaw/clawsweeper",
+        "pr": 118303,
+        "url": "https://github.com/openclaw/openclaw/pull/118303",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "3f2b38a5bdd3905bd7567502120f0cac8a324b6c",
+        "latest_head_sha": "3f2b38a5bdd3905bd7567502120f0cac8a324b6c",
+        "merge_state": "mergeStateStatus is DIRTY",
+        "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118303.md",
+        "workflow": "repair-cluster-worker.yml",
+        "runner": "blacksmith-4vcpu-ubuntu-2404",
+        "execution_runner": "blacksmith-32vcpu-ubuntu-2404",
+        "model": "internal",
+        "dispatched_at": "2026-10-07T14:39:09.636Z",
+        "status": "dispatched",
+        "latest_head_sha_after_publish": "3f2b38a5bdd3905bd7567502120f0cac8a324b6c"
+      },
+      {
+        "batch_id": "conflict-self-heal-2026-10-07T14-39-08-832Z",
         "target_repo": "openclaw/openclaw",
         "repair_repo": "openclaw/clawsweeper",
         "pr": 117144,
@@ -45,21 +99,31 @@
         "runner": "blacksmith-4vcpu-ubuntu-2404",
         "execution_runner": "blacksmith-32vcpu-ubuntu-2404",
         "model": "internal",
-        "dispatched_at": "2026-10-07T13:38:38.641Z",
+        "dispatched_at": "2026-10-07T14:39:10.002Z",
         "status": "dispatched",
         "latest_head_sha_after_publish": "6824d737491e864a69bb602a650b5e694974f0fa"
       }
     ],
     "status": "dispatched",
-    "dispatched_at": "2026-10-07T13:38:36.092Z",
+    "dispatched_at": "2026-10-07T14:39:06.520Z",
     "live_worker_capacity_before_dispatch": {
       "repo": "openclaw/clawsweeper",
       "workflow": "repair-cluster-worker.yml",
-      "active": 0,
-      "requested": 1,
+      "active": 1,
+      "requested": 3,
       "max_live_workers": 51,
-      "available": 51,
-      "active_runs": []
+      "available": 50,
+      "active_runs": [
+        {
+          "databaseId": 37631943453,
+          "status": "in_progress",
+          "conclusion": null,
+          "createdAt": "2026-10-07T13:52:08Z",
+          "updatedAt": "2026-10-07T13:56:58Z",
+          "url": "https://github.com/openclaw/clawsweeper/actions/runs/37631943453",
+          "displayTitle": "issue implementation jobs/openclaw/inbox/issue-openclaw-openclaw-166605.md"
+        }
+      ]
     }
   },
   "prs": [
@@ -94,8 +158,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-55372",
       "head_repo": "openclaw/openclaw",
       "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "app: web-ui",
         "gateway",
@@ -112,7 +176,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-121050.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 120569,
@@ -122,8 +186,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-120356",
       "head_repo": "openclaw/openclaw",
       "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "agents",
         "size: S",
@@ -137,7 +201,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-120569.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 120150,
@@ -147,8 +211,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-120142",
       "head_repo": "openclaw/openclaw",
       "head_sha": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "channel: discord",
         "size: S",
@@ -161,7 +225,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-120150.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 120143,
@@ -171,8 +235,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-89254",
       "head_repo": "openclaw/openclaw",
       "head_sha": "bc3012edd4df6fb5d53e313c412aa42701639816",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "docs",
         "channel: matrix",
@@ -187,7 +251,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-120143.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "self-heal already dispatched 2 time(s) for this PR head"
     },
     {
       "number": 119983,
@@ -197,8 +261,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-119962",
       "head_repo": "openclaw/openclaw",
       "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "app: web-ui",
         "size: S",
@@ -211,7 +275,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119983.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119975,
@@ -221,8 +285,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-119958",
       "head_repo": "openclaw/openclaw",
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "cli",
         "size: M",
@@ -237,7 +301,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119975.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "self-heal already dispatched 2 time(s) for this PR head"
     },
     {
       "number": 119737,
@@ -247,8 +311,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-96692",
       "head_repo": "openclaw/openclaw",
       "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "channel: slack",
         "stale",
@@ -263,7 +327,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119737.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "self-heal already dispatched 2 time(s) for this PR head"
     },
     {
       "number": 119735,
@@ -273,8 +337,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-114169",
       "head_repo": "openclaw/openclaw",
       "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "channel: whatsapp-web",
         "stale",
@@ -289,7 +353,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119735.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "self-heal already dispatched 2 time(s) for this PR head"
     },
     {
       "number": 119722,
@@ -299,8 +363,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-112625",
       "head_repo": "openclaw/openclaw",
       "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "cli",
         "commands",
@@ -316,7 +380,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119722.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119718,
@@ -326,8 +390,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-89430",
       "head_repo": "openclaw/openclaw",
       "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "docs",
         "channel: googlechat",
@@ -342,7 +406,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119718.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119712,
@@ -352,8 +416,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-119692",
       "head_repo": "openclaw/openclaw",
       "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "stale",
         "size: XS",
@@ -366,7 +430,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119712.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119589,
@@ -376,8 +440,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-92199",
       "head_repo": "openclaw/openclaw",
       "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "size: XS",
         "clawsweeper",
@@ -389,7 +453,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119589.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119265,
@@ -399,8 +463,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-119253",
       "head_repo": "openclaw/openclaw",
       "head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "agents",
         "stale",
@@ -416,7 +480,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119265.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 119160,
@@ -426,8 +490,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-119148",
       "head_repo": "openclaw/openclaw",
       "head_sha": "6fda8a12802ccea2338f402ce976fea1789030a1",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "size: S",
         "clawsweeper",
@@ -439,7 +503,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119160.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "self-heal already dispatched 2 time(s) for this PR head"
     },
     {
       "number": 118806,
@@ -449,8 +513,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-118776",
       "head_repo": "openclaw/openclaw",
       "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "agents",
         "size: S",
@@ -463,8 +527,8 @@
         "status: ⏳ waiting on author"
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118806.md",
-      "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "status": "candidate",
+      "reason": "mergeStateStatus is DIRTY"
     },
     {
       "number": 118680,
@@ -474,8 +538,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-118667",
       "head_repo": "openclaw/openclaw",
       "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "size: S",
         "clawsweeper",
@@ -487,7 +551,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118680.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 118679,
@@ -497,8 +561,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-118669",
       "head_repo": "openclaw/openclaw",
       "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "size: M",
         "clawsweeper",
@@ -513,7 +577,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118679.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 118361,
@@ -523,8 +587,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-116747",
       "head_repo": "openclaw/openclaw",
       "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "size: S",
         "clawsweeper",
@@ -538,7 +602,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118361.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 118309,
@@ -548,8 +612,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-118185",
       "head_repo": "openclaw/openclaw",
       "head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "gateway",
         "agents",
@@ -565,7 +629,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118309.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 118303,
@@ -575,8 +639,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-116601",
       "head_repo": "openclaw/openclaw",
       "head_sha": "3f2b38a5bdd3905bd7567502120f0cac8a324b6c",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "docs",
         "agents",
@@ -592,8 +656,8 @@
         "status: ⏳ waiting on author"
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-118303.md",
-      "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "status": "candidate",
+      "reason": "mergeStateStatus is DIRTY"
     },
     {
       "number": 117976,
@@ -603,8 +667,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-90786",
       "head_repo": "openclaw/openclaw",
       "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "stale",
         "size: S",
@@ -619,7 +683,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117976.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 117951,
@@ -629,8 +693,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-73478",
       "head_repo": "openclaw/openclaw",
       "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "gateway",
         "agents",
@@ -646,7 +710,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117951.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 117906,
@@ -682,8 +746,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-88079",
       "head_repo": "openclaw/openclaw",
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "app: web-ui",
         "stale",
@@ -699,7 +763,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117721.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 117144,
@@ -736,8 +800,8 @@
       "branch": "clawsweeper/automerge-openclaw-openclaw-104485",
       "head_repo": "openclaw/openclaw",
       "head_sha": "b272f5a912cacf9a67a601a9e7296b04a84f9d4e",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "scripts",
         "maintainer",
@@ -751,7 +815,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-106789.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     },
     {
       "number": 76744,
@@ -761,8 +825,8 @@
       "branch": "clawsweeper/issue-openclaw-openclaw-76734",
       "head_repo": "openclaw/openclaw",
       "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "labels": [
         "docs",
         "size: XS",
@@ -775,7 +839,7 @@
       ],
       "job_path": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-76744.md",
       "status": "skipped",
-      "reason": "merge state is clean or unknown"
+      "reason": "paused by clawsweeper:human-review"
     }
   ]
 }
