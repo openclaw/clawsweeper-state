@@ -1,0 +1,126 @@
+{
+  "repo": "steipete/codexbar",
+  "cluster_id": "issue-steipete-codexbar-1999",
+  "mode": "autonomous",
+  "run_id": "37670772955",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37670772955",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-codexbar-1999.md",
+  "published_at": "2026-10-07T19:02:23.564Z",
+  "canonical": "https://github.com/steipete/CodexBar/issues/1999",
+  "canonical_issue": "https://github.com/steipete/CodexBar/issues/1999",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on identifying the growing helper's invocation and allocation source. Existing hardening remains on supplied main; no targeted repair is established. Keep #1999 open and quarantine only #3954. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#1999",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1999",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on redacted full command lines and parent/responsible PID chains, sample/vmmap/lsof captures, possible custom Claude statusLine invocation, and non-content session/cache sizes. These distinguish usage, serve, and cost scanning before selecting a narrow repair. Another generic timeout or buffer patch would not directly satisfy the report."
+    },
+    {
+      "target": "#1004",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence does not establish that #1999 has the same allocation source."
+    },
+    {
+      "target": "#1005",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical timeout repair; no reopening, replacement, or closure action is needed."
+    },
+    {
+      "target": "#2007",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related landed hardening does not prove the original incident fixed."
+    },
+    {
+      "target": "#2050",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Deterministic metadata hardening is historical context, not attribution of #1999."
+    },
+    {
+      "target": "#2196",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep as historical related work; no new merge or correctness-clearance claim is made."
+    },
+    {
+      "target": "#3950",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already-landed shell hardening supplies context without establishing the incident's cause."
+    },
+    {
+      "target": "#3954",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical integration PR for central OpenClaw security handling. No GitHub mutation or repair is proposed for it."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 6,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 6
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1999",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
