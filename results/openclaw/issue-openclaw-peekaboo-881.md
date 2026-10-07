@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37607627850"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37607627850"
+run_id: "37609717517"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37609717517"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T10:32:53.860Z"
+published_at: "2026-10-07T10:52:24.206Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37607627850](https://github.com/openclaw/clawsweeper/actions/runs/37607627850)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37609717517](https://github.com/openclaw/clawsweeper/actions/runs/37609717517)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Keep #881 open. Current-main inspection did not establish a specific evidence-loss defect. Implementation is blocked on the retained host and capture diagnostics requested by the maintainer; no speculative fix artifact or PR is proposed.
+Implementation blocked: the supplied evidence does not establish the reported 4.2.0 failure on current main or identify a safe, narrow repair. No code changes or PR were created.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Keep #881 open. Current-main inspection did not establish a specific evidence-lo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The report remains unresolved. Neither current-source inspection nor related historical fixes proves that this released-artifact failure is fixed. |
-| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | Selecting a repair remains unresolved pending the retained, redacted binary version, Bridge host/protocol status, same-session inventory row, and existing failing remote/successful local capture JSON, including generation, bounds, receipt, and dispatch/retry metadata. Without this evidence, no narrow current-main fix artifact can be selected safely. Do not repeat focus/input operations, weaken attribution, or silently switch hosts. |
+| #881 | keep_canonical | planned | canonical | Keep the canonical report open. Available evidence cannot distinguish released-host incompatibility, failed identity validation, or a current capture defect. |
+| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | Resume implementation after the retained metadata establishes the failing host/protocol and evidence path, or a deterministic current-main regression demonstrates the defect. An executable fix artifact would currently require guessing. |
 
 ## Needs Human
 
-- #881: Obtain the maintainer-requested retained, redacted binary version, Bridge host/protocol status, same-session inventory row, and existing remote/local capture JSON before deciding which exact-window evidence requires repair. No further focus/input attempt is requested.
+- For #881, obtain the collaborator-requested retained binary --version, bridge status --verbose --json, redacted Simulator inventory row, and existing remote/local capture JSON preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to distinguish released-host incompatibility, failed identity validation, and a current capture defect before selecting a repair. Do not repeat focus/input operations.

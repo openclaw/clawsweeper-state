@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/peekaboo",
+  "cluster_id": "issue-openclaw-peekaboo-881",
+  "mode": "autonomous",
+  "run_id": "37609717517",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37609717517",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-peekaboo-881.md",
+  "published_at": "2026-10-07T10:52:24.206Z",
+  "canonical": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_issue": "https://github.com/openclaw/peekaboo/issues/881",
+  "canonical_pr": null,
+  "summary": "Implementation blocked: the supplied evidence does not establish the reported 4.2.0 failure on current main or identify a safe, narrow repair. No code changes or PR were created.",
+  "actions": [
+    {
+      "target": "#881",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Keep the canonical report open. Available evidence cannot distinguish released-host incompatibility, failed identity validation, or a current capture defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-peekaboo-881",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#881",
+      "candidate_fix": null,
+      "reason": "Resume implementation after the retained metadata establishes the failing host/protocol and evidence path, or a deterministic current-main regression demonstrates the defect. An executable fix artifact would currently require guessing."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For #881, obtain the collaborator-requested retained binary --version, bridge status --verbose --json, redacted Simulator inventory row, and existing remote/local capture JSON preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to distinguish released-host incompatibility, failed identity validation, and a current capture defect before selecting a repair. Do not repeat focus/input operations."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#881",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
