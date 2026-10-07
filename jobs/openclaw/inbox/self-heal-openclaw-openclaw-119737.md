@@ -32,7 +32,7 @@ source: clawsweeper_self_rebase
 self_heal_target_pr: "119737"
 expected_head_sha: "db140b159c758bf135a7de9a9f6afe073c3ac4cd"
 self_heal_merge_state: "mergeStateStatus is DIRTY"
-self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37615031756"
+self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37602012904"
 ---
 
 # ClawSweeper self-heal PR rebase
@@ -44,7 +44,7 @@ Title: fix(slack): require confirmed thread placement for terminal receipts
 Target branch: `clawsweeper/issue-openclaw-openclaw-96692`
 Target head SHA: `db140b159c758bf135a7de9a9f6afe073c3ac4cd`
 Detected state: mergeStateStatus is DIRTY
-Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37615031756
+Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37602012904
 
 Use this job only for bounded conflict/behind self-heal:
 

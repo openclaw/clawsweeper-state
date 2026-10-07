@@ -32,7 +32,7 @@ source: clawsweeper_self_rebase
 self_heal_target_pr: "119160"
 expected_head_sha: "6fda8a12802ccea2338f402ce976fea1789030a1"
 self_heal_merge_state: "mergeStateStatus is DIRTY"
-self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37615031756"
+self_heal_run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37602012904"
 ---
 
 # ClawSweeper self-heal PR rebase
@@ -44,7 +44,7 @@ Title: fix(bedrock): honor Opus 5 maxTokens when reasoning is off
 Target branch: `clawsweeper/issue-openclaw-openclaw-119148`
 Target head SHA: `6fda8a12802ccea2338f402ce976fea1789030a1`
 Detected state: mergeStateStatus is DIRTY
-Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37615031756
+Repair run: https://github.com/openclaw/clawsweeper/actions/runs/37602012904
 
 Use this job only for bounded conflict/behind self-heal:
 
