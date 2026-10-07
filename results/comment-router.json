@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T14:08:11.282Z",
+  "updated_at": "2026-10-07T14:08:13.626Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166503:6032959202:2026-10-07T07:15:52Z:re_review",
-      "comment_id": "6032959202",
-      "comment_version_key": "6032959202:2026-10-07T07:15:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166503#issuecomment-6032959202",
-      "comment_created_at": "2026-10-07T07:15:52Z",
-      "comment_updated_at": "2026-10-07T07:15:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166503,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T07:16:48.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6discovery-reader",
-        "head_sha": "efedc3db2f14d5e5cb35cff008a13433f14fecd9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131695:5450962568:2026-10-07T07:15:55Z:clawsweeper_needs_human",
       "comment_id": "5450962568",
@@ -32987,6 +32940,39 @@
         "kind": "pull_request",
         "branch": "feat/w148-windows-tauri-bun",
         "head_sha": "954968f06d00b0d9ea2449f69ffb48d282f70a61",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3856:5914641779:2026-10-07T14:07:04Z:clawsweeper_needs_human",
+      "comment_id": "5914641779",
+      "comment_version_key": "5914641779:2026-10-07T14:07:04Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3856#issuecomment-5914641779",
+      "comment_created_at": "2026-09-30T15:42:49Z",
+      "comment_updated_at": "2026-10-07T14:07:04Z",
+      "comment_body_sha256": "8284a98a5eac75530fb74ffa35a0e96a9484813ef8009e1d466f9739b885400e",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The earlier-head macOS/Bun trace exercises publisher and audit handlers and shows staged rows omitted, but explicitly lacks a running... (sha=2942a184ec4d908c5b00609216a2c00b7022cb08)",
+      "expected_head_sha": "2942a184ec4d908c5b00609216a2c00b7022cb08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T14:08:13.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f033-unpublished-package-listing",
+        "head_sha": "2942a184ec4d908c5b00609216a2c00b7022cb08",
         "cluster_id": null,
         "job_path": null
       }
