@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T00:54:42.056Z",
+  "updated_at": "2026-10-07T00:54:46.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:159815:6023280359:2026-10-06T18:55:30Z:re_review",
-      "comment_id": "6023280359",
-      "comment_version_key": "6023280359:2026-10-06T18:55:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/159815#issuecomment-6023280359",
-      "comment_created_at": "2026-10-06T18:55:30Z",
-      "comment_updated_at": "2026-10-06T18:55:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 159815,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T19:04:50.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/clawnstantine-lobsterdex",
-        "head_sha": "a68129366c5e9a187f9801774b11d213a9ab5f46",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159815:5858488154:2026-10-06T19:02:06Z:clawsweeper_needs_human",
       "comment_id": "5858488154",
@@ -33572,6 +33525,39 @@
         "kind": "pull_request",
         "branch": "fix/sandbox-domain-hostname",
         "head_sha": "3c53bb93638f0f8b45c84f02608c89ffc5f73360",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166357:6028099355:2026-10-07T00:53:49Z:clawsweeper_needs_human",
+      "comment_id": "6028099355",
+      "comment_version_key": "6028099355:2026-10-07T00:53:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166357#issuecomment-6028099355",
+      "comment_created_at": "2026-10-07T00:27:39Z",
+      "comment_updated_at": "2026-10-07T00:53:49Z",
+      "comment_body_sha256": "13b00f8a0eff6bfe4e44ff30bd2245d8522999f55303b9183943ca15c0e5a7e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Telegram admission, native-dispatch, cancellation, and supersede paths have test evidence only; the captured body explicitly says T... (sha=0afec71d40333823165f4139b032ae7760f19cdb)",
+      "expected_head_sha": "0afec71d40333823165f4139b032ae7760f19cdb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T00:54:46.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-commands-require-mention",
+        "head_sha": "0afec71d40333823165f4139b032ae7760f19cdb",
         "cluster_id": null,
         "job_path": null
       }
