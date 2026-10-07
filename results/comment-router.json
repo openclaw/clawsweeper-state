@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T23:29:00.906Z",
+  "updated_at": "2026-10-07T23:29:09.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164933:6042780037:2026-10-07T17:05:30Z:re_review",
-      "comment_id": "6042780037",
-      "comment_version_key": "6042780037:2026-10-07T17:05:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164933#issuecomment-6042780037",
-      "comment_created_at": "2026-10-07T17:05:30Z",
-      "comment_updated_at": "2026-10-07T17:05:30Z",
-      "comment_body_sha256": "c739619e21a2aef0593cae1720fcbd083f2370245ed326fa7b75c0d144d8f368",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164933,
-      "author": "patrickrun",
-      "author_id": 29052739,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T17:09:32.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cron-placement-retirement-20261004",
-        "head_sha": "96e80171b8bad354d80cf1ca1691554834d9f382",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:56997:4336607065:2026-10-07T16:29:06Z:autoclose",
       "comment_id": "4336607065",
@@ -33451,6 +33404,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-1093-v2-06-artifact-trust",
         "head_sha": "9b046246cdc28220bdb80fc15d83d26073f3adb2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163306:5946602968:2026-10-07T23:28:07Z:clawsweeper_needs_human",
+      "comment_id": "5946602968",
+      "comment_version_key": "5946602968:2026-10-07T23:28:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163306#issuecomment-5946602968",
+      "comment_created_at": "2026-10-02T06:15:39Z",
+      "comment_updated_at": "2026-10-07T23:28:07Z",
+      "comment_body_sha256": "a48e0ca5bc64e8504f9879b2870a2e8d6512196692f54f9cad0b07bd9e3775df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The coordinated stack's current-main integration remains unverified: its body records a first-layer conflict, and the supplied test merge does not match the pinned parents. (sha=4cac01dcb10a76fca035dc7664805a0bb6597f95)",
+      "expected_head_sha": "4cac01dcb10a76fca035dc7664805a0bb6597f95",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T23:29:09.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-1093-v2-27-line-cap-extractions",
+        "head_sha": "4cac01dcb10a76fca035dc7664805a0bb6597f95",
         "cluster_id": null,
         "job_path": null
       }
