@@ -2,16 +2,16 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37691814965"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37691814965"
+run_id: "37692786968"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37692786968"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T21:52:00.913Z"
+published_at: "2026-10-07T22:00:08.841Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37691814965](https://github.com/openclaw/clawsweeper/actions/runs/37691814965)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37692786968](https://github.com/openclaw/clawsweeper/actions/runs/37692786968)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The defect remains supported by source inspection at preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused fix plan is provided, but implementation and PR creation are blocked by the read-only environment. Focused tests could not start; the failing regression, upgrade validation, and required real-account proof remain outstanding.
+The defect remains present in source on supplied main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused reconciliation repair is appropriate, but implementation and validation are blocked by the read-only environment. No files or GitHub state changed; no regression or real-account confirmation completed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The defect remains supported by source inspection at preflight main 8fe6a5a1186c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | Keep #466 as the canonical issue. Implement archive reconciliation through one ordered owner rather than adding archive side effects to generic upserts. |
-| #468 | keep_closed | skipped | related | Historical evidence and contributor context only. Do not reopen, adopt unchanged, or emit closure actions. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The accepted product boundary is sufficiently clear for a fix artifact. Implementation must remain confined to this archive-state defect and stop for triage if dependencies, flags, policy options, or broader rewrites become necessary. |
-| cluster:issue-openclaw-wacli-466 | open_fix_pr | blocked |  | Blocked on implementing and validating the canonical fix on clawsweeper/issue-openclaw-wacli-466 in a writable environment, followed by redacted real-account confirmation. Reuse that branch and any existing implementation PR; apply required labels only through the applicator. Do not open a PR or claim the issue fixed from this inspection. |
+| #466 | fix_needed | planned | canonical | Keep the canonical issue open. Plan one new implementation PR under the accepted reconciliation boundary; this worker cannot implement or validate it in the read-only environment. |
+| #468 | keep_closed | skipped | related | Historical context only. Do not reopen, adopt unchanged, or emit another closure. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned | canonical | Artifact planning can proceed; implementation, the initial failing regression, required gates, and account confirmation remain blocked. Hand this plan to a writable executor before opening a PR. |
 
 ## Needs Human
 
