@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T20:48:03.266Z",
+  "updated_at": "2026-10-07T20:48:04.004Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165825:6004336418:2026-10-05T22:32:16Z:clawsweeper_needs_human",
-      "comment_id": "6004336418",
-      "comment_version_key": "6004336418:2026-10-05T22:32:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165825#issuecomment-6004336418",
-      "comment_created_at": "2026-10-05T22:21:38Z",
-      "comment_updated_at": "2026-10-05T22:32:16Z",
-      "comment_body_sha256": "87f6dbff70748425848c2144c68e4ab787a36b179b31c1244425cf48329a6d53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165825,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing fleet operators lose OpenClaw lifecycle, backup, restore, and removal commands while their resources remain running or stored; the operator handoff needs explicit acceptance. (sha=d6e35af507e2dec152bc293efa28f90bad633ec7)",
-      "expected_head_sha": "d6e35af507e2dec152bc293efa28f90bad633ec7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T13:00:18.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/remove-fleet",
-        "head_sha": "d6e35af507e2dec152bc293efa28f90bad633ec7",
-        "cluster_id": "automerge-openclaw-openclaw-165825",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165825.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166555:6035680860:2026-10-07T12:37:00Z:clawsweeper_auto_repair",
       "comment_id": "6035680860",
@@ -33289,6 +33256,53 @@
         "kind": "pull_request",
         "branch": "fix/update-dirty-relocation",
         "head_sha": "01270f23cf996e949e39b50dce4e59fd8b7feffd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166587:6046545440:2026-10-07T20:47:01Z:re_review",
+      "comment_id": "6046545440",
+      "comment_version_key": "6046545440:2026-10-07T20:47:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166587#issuecomment-6046545440",
+      "comment_created_at": "2026-10-07T20:47:01Z",
+      "comment_updated_at": "2026-10-07T20:47:01Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166587,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T20:48:02.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/restartmain",
+        "head_sha": "496b87316d669980f59dd9f38f5bc6c083f5b4b9",
         "cluster_id": null,
         "job_path": null
       },
