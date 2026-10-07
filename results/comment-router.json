@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T06:20:41.157Z",
+  "updated_at": "2026-10-07T06:26:05.437Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165432:6009576431:2026-10-06T04:51:35Z:re_review",
-      "comment_id": "6009576431",
-      "comment_version_key": "6009576431:2026-10-06T04:51:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165432#issuecomment-6009576431",
-      "comment_created_at": "2026-10-06T04:51:35Z",
-      "comment_updated_at": "2026-10-06T04:51:35Z",
-      "comment_body_sha256": "b4f448eccae5217e75e9fdc028371df8be87645e1a992787b5628bb2713a17ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165432,
-      "author": "Oldrich333",
-      "author_id": 184516902,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T01:14:54.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-loopback-boot-context",
-        "head_sha": "c8fbc4a64bc1f887ed38e6d49d21e7d281efe1e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165432:5990528579:2026-10-07T01:13:49Z:clawsweeper_needs_human",
       "comment_id": "5990528579",
@@ -33268,6 +33221,39 @@
         "kind": "pull_request",
         "branch": "fix/bg-exec-anchor-release-race",
         "head_sha": "73440925ad20d763fd69b862418b8836e0ff3228",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166460:6031578444:2026-10-07T06:25:00Z:clawsweeper_needs_human",
+      "comment_id": "6031578444",
+      "comment_version_key": "6031578444:2026-10-07T06:25:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166460#issuecomment-6031578444",
+      "comment_created_at": "2026-10-07T05:25:23Z",
+      "comment_updated_at": "2026-10-07T06:25:00Z",
+      "comment_body_sha256": "ce40aa70196824fe336c51813403e8735bcbf8c2eafc8f9d8a17a31c38b871bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166460,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The exact-head cloud run exercises the real admission callback through prompt submission, SQLite persistence, replay, and the provider gate, wi... (sha=ffdf298cddbb434d9e1d5d1720ff88e736d458b9)",
+      "expected_head_sha": "ffdf298cddbb434d9e1d5d1720ff88e736d458b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T06:26:05.437Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "investigate/166446-admission-lifecycle",
+        "head_sha": "ffdf298cddbb434d9e1d5d1720ff88e736d458b9",
         "cluster_id": null,
         "job_path": null
       }
