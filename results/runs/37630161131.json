@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "self-heal-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "37630161131",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37630161131",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-117144.md",
+  "published_at": "2026-10-07T13:48:13.957Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/117144",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/117144",
+  "summary": "Prepared a bounded branch-sync artifact. Implementation is blocked: the read-only shallow checkout lacks the pinned PR commit, and the required result schema forbids the deterministic_rebase_only field requested by this job. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#117144",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "A writable executor must acquire and revalidate the pinned branch. The job/schema mismatch must be reconciled before execution so the pure base-sync restriction is represented without permitting substantive repair."
+    },
+    {
+      "target": "#98276",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "Keep the report open; bounded branch synchronization does not establish that its runtime distribution requirement is fixed."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct runtime behavior outside this branch-sync job."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "Historical contributor context only; preserve existing attribution."
+    },
+    {
+      "target": "cluster:self-heal-openclaw-openclaw-117144",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "Preparation is complete; release only after the schema supports the required execution restriction and a writable executor has the exact source commit."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
