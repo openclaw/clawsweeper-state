@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37676715262",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37676715262",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-07T19:50:06.781Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked on #41's explicit upstream publication gates. The October 7 review confirms neither a stable Ghostty v1.4.0 tag nor a qualifying stable wrapper is available. Checkout HEAD matches preflight main fc0f56595507f97359ba96a3334190a3f227e156. No code changed or PR planned; keep the adoption tracker open.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "The requested adoption remains pending, but no qualifying stable dependency exists in the reviewed channel. Resume only after both upstream gates are verified; an unreleased dependency or local ABI implementation would violate the issue's explicit scope."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical preparation only; it does not satisfy the adoption request and requires no action."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The missing local target metadata cannot be safely repaired from the provided artifacts. Resolve the misqualified inventory entry before classifying this target; no GitHub mutation is planned."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The missing local target metadata cannot be safely repaired from the provided artifacts. Resolve the misqualified inventory entry before classifying this target; no GitHub mutation is planned."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#169: Resolve the misqualified openclaw/libterminal inventory entry. Preflight returned HTTP 404, kind unknown, and updated_at null; #41 links coder/ghostty-web/pull/169 instead. Do not fabricate local target metadata.",
+    "#182: Resolve the misqualified openclaw/libterminal inventory entry. Preflight returned HTTP 404, kind unknown, and updated_at null; #41 links coder/ghostty-web/pull/182 instead. Do not fabricate local target metadata."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#41",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

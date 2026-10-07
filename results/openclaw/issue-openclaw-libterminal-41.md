@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37668146007"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37668146007"
+run_id: "37676715262"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37676715262"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T18:40:50.654Z"
+published_at: "2026-10-07T19:50:06.781Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37668146007](https://github.com/openclaw/clawsweeper/actions/runs/37668146007)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37676715262](https://github.com/openclaw/clawsweeper/actions/runs/37676715262)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation remains blocked on stable Ghostty v1.4.0 and a maintained, published compatible wrapper. The canonical issue remains open without an executable fix plan. The misresolved #169 and #182 placeholders lack local target metadata and require hydration correction before further handling. No code changed or PR prepared.
+Implementation is blocked on #41's explicit upstream publication gates. The October 7 review confirms neither a stable Ghostty v1.4.0 tag nor a qualifying stable wrapper is available. Checkout HEAD matches preflight main fc0f56595507f97359ba96a3334190a3f227e156. No code changed or PR planned; keep the adoption tracker open.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation remains blocked on stable Ghostty v1.4.0 and a maintained, publis
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_related | blocked | canonical | Keep the canonical adoption tracker open. No qualifying stable dependency is established by the supplied evidence, so an executable fix artifact cannot safely be prepared. Resume implementation only after both publication gates are verified; do not substitute a prerelease, upstream commit, private ABI patch, or another preparation-only PR. |
-| #77 | keep_closed | skipped | related | Historical validation groundwork; it does not satisfy the adoption request. |
-| #169 | needs_human | blocked | needs_human | Only this placeholder is blocked pending correction of its repository identity and hydration. No local target kind or update timestamp can safely be supplied, and no GitHub mutation is proposed. |
-| #182 | needs_human | blocked | needs_human | Only this placeholder is blocked pending correction of its repository identity and hydration. No local target kind or update timestamp can safely be supplied, and no GitHub mutation is proposed. |
+| #41 | keep_canonical | planned | canonical | The requested adoption remains pending, but no qualifying stable dependency exists in the reviewed channel. Resume only after both upstream gates are verified; an unreleased dependency or local ABI implementation would violate the issue's explicit scope. |
+| #77 | keep_closed | skipped | related | Historical preparation only; it does not satisfy the adoption request and requires no action. |
+| #169 | needs_human | blocked | needs_human | The missing local target metadata cannot be safely repaired from the provided artifacts. Resolve the misqualified inventory entry before classifying this target; no GitHub mutation is planned. |
+| #182 | needs_human | blocked | needs_human | The missing local target metadata cannot be safely repaired from the provided artifacts. Resolve the misqualified inventory entry before classifying this target; no GitHub mutation is planned. |
 
 ## Needs Human
 
-- #169: Correct the misresolved local placeholder for coder/ghostty-web/pull/169 before further handling; the supplied local lookup is HTTP 404 with unknown kind and no updated_at.
-- #182: Correct the misresolved local placeholder for coder/ghostty-web/pull/182 before further handling; the supplied local lookup is HTTP 404 with unknown kind and no updated_at.
+- #169: Resolve the misqualified openclaw/libterminal inventory entry. Preflight returned HTTP 404, kind unknown, and updated_at null; #41 links coder/ghostty-web/pull/169 instead. Do not fabricate local target metadata.
+- #182: Resolve the misqualified openclaw/libterminal inventory entry. Preflight returned HTTP 404, kind unknown, and updated_at null; #41 links coder/ghostty-web/pull/182 instead. Do not fabricate local target metadata.
