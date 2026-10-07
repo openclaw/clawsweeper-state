@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-127119",
+  "mode": "autonomous",
+  "run_id": "37601738218",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37601738218",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-127119.md",
+  "published_at": "2026-10-07T10:14:43.491Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/127119",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/127119",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the field-selection omission on preflight main 8242407539b5d783b8fb8793f54d7092b4bbbd5a. Implementation and executable reproduction are blocked by the read-only filesystem and missing dependencies. A narrow fix artifact is prepared; no files or GitHub state were changed, and vendor enforcement remains unverified.",
+  "actions": [
+    {
+      "target": "#127119",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "The source finding remains valid, but the required failing production-builder regression cannot run on this host. Preserve the issue and resume implementation in a writable, independently owned checkout with dependencies."
+    },
+    {
+      "target": "#127135",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "Keep the historical PR closed and preserve its useful endpoint-scoping research in the new issue implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-127119",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#127119",
+      "candidate_fix": null,
+      "reason": "Return the narrow executor plan without pretending that a patch, failing regression, passing validation, or provider proof exists."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

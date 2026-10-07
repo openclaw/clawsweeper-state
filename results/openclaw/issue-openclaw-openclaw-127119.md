@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127119"
 mode: "autonomous"
-run_id: "37594885672"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37594885672"
+run_id: "37601738218"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37601738218"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T09:15:59.000Z"
+published_at: "2026-10-07T10:14:43.491Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37594885672](https://github.com/openclaw/clawsweeper/actions/runs/37594885672)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37601738218](https://github.com/openclaw/clawsweeper/actions/runs/37601738218)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/127119
 
 ## Summary
 
-The reported omission remains in source at preflight main fa420c6eb2752a78430cef1f2e3bf15cc17d8e9e. A narrow fix artifact is prepared, but implementation and executable reproduction are blocked by the read-only host. No files or GitHub state changed; vendor enforcement remains unverified.
+Source inspection confirms the field-selection omission on preflight main 8242407539b5d783b8fb8793f54d7092b4bbbd5a. Implementation and executable reproduction are blocked by the read-only filesystem and missing dependencies. A narrow fix artifact is prepared; no files or GitHub state were changed, and vendor enforcement remains unverified.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The reported omission remains in source at preflight main fa420c6eb2752a78430cef
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127119 | fix_needed | planned | canonical | The existing compatibility default needs a bounded endpoint-specific correction; no viable open implementation PR is present in the hydrated inventory. |
-| #127135 | keep_closed | skipped | related | Preserve the closed research and contributor credit without reopening, closing, or treating it as a landed fix. |
-| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned |  | A narrow executor plan remains appropriate despite this host's implementation blocker. |
-| cluster:issue-openclaw-openclaw-127119 | open_fix_pr | blocked |  | Resume implementation on a writable authorized executor with dependencies. Establish the failing production-builder regression before editing and complete validation before publication readiness. |
+| #127119 | fix_needed | planned | canonical | The source finding remains valid, but the required failing production-builder regression cannot run on this host. Preserve the issue and resume implementation in a writable, independently owned checkout with dependencies. |
+| #127135 | keep_closed | skipped | related | Keep the historical PR closed and preserve its useful endpoint-scoping research in the new issue implementation. |
+| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned | canonical | Return the narrow executor plan without pretending that a patch, failing regression, passing validation, or provider proof exists. |
 
 ## Needs Human
 
