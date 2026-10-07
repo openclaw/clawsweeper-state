@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T11:55:28.650Z",
+  "updated_at": "2026-10-07T11:55:37.672Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166308:6031478449:2026-10-07T05:17:32Z:re_review",
-      "comment_id": "6031478449",
-      "comment_version_key": "6031478449:2026-10-07T05:17:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166308#issuecomment-6031478449",
-      "comment_created_at": "2026-10-07T05:17:32Z",
-      "comment_updated_at": "2026-10-07T05:17:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166308,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T05:18:23.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-isolated-title-instructions",
-        "head_sha": "e168844eccb111869dbe646b07892dde853c03c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165493:5992150090:2026-10-07T05:18:00Z:clawsweeper_needs_human",
       "comment_id": "5992150090",
@@ -33035,6 +32988,39 @@
         "kind": "pull_request",
         "branch": "fix/truncated-image-admission",
         "head_sha": "1ad4be4b8d19800b466515a430559e88aac1d43d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137763:5534477236:2026-10-07T11:54:09Z:clawsweeper_needs_human",
+      "comment_id": "5534477236",
+      "comment_version_key": "5534477236:2026-10-07T11:54:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137763#issuecomment-5534477236",
+      "comment_created_at": "2026-09-04T01:42:58Z",
+      "comment_updated_at": "2026-10-07T11:54:09Z",
+      "comment_body_sha256": "e38c97cbfa10aa8b75a062d9ba6de2e40ddabeb6cefb12e91ce61087e8c6f46f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137763,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add before/after timings from pnpm test src/infra/outbound/outbound-audit.test.ts --maxWorkers=1, or explicitly explain the skip allowed by the prior review, and include available CI... (sha=c2409aeabb67116f31e52a415dabfd1ff7dff192)",
+      "expected_head_sha": "c2409aeabb67116f31e52a415dabfd1ff7dff192",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T11:55:37.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/outbound-audit-kind-prefix-prototype-lookup",
+        "head_sha": "c2409aeabb67116f31e52a415dabfd1ff7dff192",
         "cluster_id": null,
         "job_path": null
       }
