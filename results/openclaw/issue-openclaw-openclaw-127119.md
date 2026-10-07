@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127119"
 mode: "autonomous"
-run_id: "37574857595"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37574857595"
+run_id: "37577832191"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37577832191"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T05:43:28.978Z"
+published_at: "2026-10-07T06:22:57.471Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37574857595](https://github.com/openclaw/clawsweeper/actions/runs/37574857595)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37577832191](https://github.com/openclaw/clawsweeper/actions/runs/37577832191)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127119
 
 ## Summary
 
-Prepared a narrow fix plan. Source inspection confirms the compatibility omission in the available checkout, but a failing production-builder regression could not run because dependencies are missing. The host is read-only, GitHub DNS is unavailable, and checkout HEAD differs from preflight main. No files or GitHub state changed; implementation, validation, and live-provider proof remain outstanding.
+Current-main source still selects the wrong output-token field. A narrow fix artifact is ready, but implementation and request-boundary reproduction are blocked by this read-only host, missing dependencies, and Corepack EROFS. No files or GitHub state changed; live-provider enforcement remains unverified.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Prepared a narrow fix plan. Source inspection confirms the compatibility omissio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127119 | fix_needed | planned | canonical | A bounded compatibility-default repair remains justified by source and hydrated evidence. Reproduce through the production builder on refreshed main before editing or opening a PR. |
-| #127135 | keep_closed | skipped | related | Preserve useful research and contributor credit without reopening, closing, or treating the unmerged proposal as a fix. |
-| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned |  | The artifact is ready for executor preparation; it does not authorize publication before the required reproduction and validation succeed. |
+| #127119 | fix_needed | planned | canonical | The source mismatch remains on supplied current main. Reproduce through the production builder before changing production code; stop if that regression does not fail for the intended field mismatch. |
+| #127135 | keep_closed | skipped | related | Historical research and contributor credit only; no reopening, closure, or merge action. |
+| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned |  | The fix plan is narrow and executable elsewhere. This worker cannot claim a repaired or validated branch. |
 
 ## Needs Human
 
