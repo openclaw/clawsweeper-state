@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T06:55:57.339Z",
+  "updated_at": "2026-10-07T06:56:59.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155238:5799191743:2026-09-23T17:04:13Z:re_review",
-      "comment_id": "5799191743",
-      "comment_version_key": "5799191743:2026-09-23T17:04:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155238#issuecomment-5799191743",
-      "comment_created_at": "2026-09-23T17:04:13Z",
-      "comment_updated_at": "2026-09-23T17:04:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155238,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T01:49:16.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-session-activation",
-        "head_sha": "68a07b52e5881bc9294ec1ddaa548a605ad7a433",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155238:5768402895:2026-10-07T01:48:21Z:clawsweeper_auto_repair",
       "comment_id": "5768402895",
@@ -33176,6 +33129,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-detail-pending-2925",
         "head_sha": "1e5c2356f5c15d8af06da46ca04c3a9065f83f13",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166236:6022618542:2026-10-07T06:55:42Z:clawsweeper_needs_human",
+      "comment_id": "6022618542",
+      "comment_version_key": "6022618542:2026-10-07T06:55:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166236#issuecomment-6022618542",
+      "comment_created_at": "2026-10-06T18:16:41Z",
+      "comment_updated_at": "2026-10-07T06:55:42Z",
+      "comment_body_sha256": "e53bb83fcbb7176db548a2390d4ef7149acc58903da0c75f1f6b470dc41b3c94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record a fresh matched warmed-chat SQL comparison of a8ce562539ff6d28336f118e058d1c55da97125b against cc055867245d63ebb5129259a25e98f925100539, retaining all background SQL and failed... (sha=a8ce562539ff6d28336f118e058d1c55da97125b)",
+      "expected_head_sha": "a8ce562539ff6d28336f118e058d1c55da97125b",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-07T06:56:59.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6worktree",
+        "head_sha": "a8ce562539ff6d28336f118e058d1c55da97125b",
         "cluster_id": null,
         "job_path": null
       }
