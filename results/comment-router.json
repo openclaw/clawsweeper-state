@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T19:09:15.454Z",
+  "updated_at": "2026-10-07T19:09:17.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166252:6036880367:2026-10-07T11:23:22Z:re_review",
-      "comment_id": "6036880367",
-      "comment_version_key": "6036880367:2026-10-07T11:23:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166252#issuecomment-6036880367",
-      "comment_created_at": "2026-10-07T11:23:22Z",
-      "comment_updated_at": "2026-10-07T11:23:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166252,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T11:24:13.992Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6discovery-preflight",
-        "head_sha": "d3a2f2d57ce7c844e2e92f10f13bda9fa905f143",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1614:6036710478:2026-10-07T11:25:28Z:clawsweeper_needs_human",
       "comment_id": "6036710478",
@@ -33498,6 +33451,39 @@
         "kind": "pull_request",
         "branch": "fix/openrouter-cold-thinking-levels",
         "head_sha": "1f582feb21810a30a113390abb3340db3f7ac48d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1484:5787876384:2026-10-07T19:08:13Z:clawsweeper_needs_human",
+      "comment_id": "5787876384",
+      "comment_version_key": "5787876384:2026-10-07T19:08:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1484#issuecomment-5787876384",
+      "comment_created_at": "2026-09-23T02:25:25Z",
+      "comment_updated_at": "2026-10-07T19:08:13Z",
+      "comment_body_sha256": "8d965d9e68ee8249c9ed2bca49220b0d2ac915d1e410a078185b8e71e7229869",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed tray, saved-row, and MCP owners export a shared-token dashboard link after a listener check, but th...; Review finding: [medium] Verify stale browser authority before authentication I/O — src/OpenClaw.Tray.WinUI/App.CapabilityHandlers.cs:289 (sha=1d9bbac0e6d18288ecafe6ce4a50552185904778)",
+      "expected_head_sha": "1d9bbac0e6d18288ecafe6ce4a50552185904778",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T19:09:17.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f020-dashboard-tunnel",
+        "head_sha": "1d9bbac0e6d18288ecafe6ce4a50552185904778",
         "cluster_id": null,
         "job_path": null
       }
