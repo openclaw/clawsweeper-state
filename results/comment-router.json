@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T23:32:19.340Z",
+  "updated_at": "2026-10-07T23:32:53.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166606:6042956950:2026-10-07T17:14:28Z:re_review",
-      "comment_id": "6042956950",
-      "comment_version_key": "6042956950:2026-10-07T17:14:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166606#issuecomment-6042956950",
-      "comment_created_at": "2026-10-07T17:14:28Z",
-      "comment_updated_at": "2026-10-07T17:14:28Z",
-      "comment_body_sha256": "fafe257408b46fabda7dd71e8bb520e548bddd53b5e0a3b5a950b6f24eae401b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166606,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T17:18:15.943Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/158903-workspace-worker",
-        "head_sha": "dc625dc1c1dec030de67b61ccde61a22c144b539",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:508:6031635200:2026-10-07T17:16:14Z:clawsweeper_needs_human",
       "comment_id": "6031635200",
@@ -33457,6 +33410,39 @@
         "kind": "pull_request",
         "branch": "fix/1672-error-contract",
         "head_sha": "c7d42f727ec393c43652bde8d03564102fee2daa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158495:5841651595:2026-10-07T23:31:51Z:clawsweeper_needs_human",
+      "comment_id": "5841651595",
+      "comment_version_key": "5841651595:2026-10-07T23:31:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158495#issuecomment-5841651595",
+      "comment_created_at": "2026-09-26T00:46:12Z",
+      "comment_updated_at": "2026-10-07T23:31:51Z",
+      "comment_body_sha256": "9208ae8dcace8b02fe772567cc0e1c2b724ba9dd1dda43b291ab14040f63876a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158495,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add real behavior proof before merge: a redacted production-path trace with a real transport client is appropriate; terminal output, logs, or diagnostic recordings count. Redact keys,... (sha=3d2a30dbc60203bd2175d7bc50f8ed912b58a172)",
+      "expected_head_sha": "3d2a30dbc60203bd2175d7bc50f8ed912b58a172",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T23:32:53.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "proof/giodl/thinking-recovery-20260925",
+        "head_sha": "3d2a30dbc60203bd2175d7bc50f8ed912b58a172",
         "cluster_id": null,
         "job_path": null
       }
