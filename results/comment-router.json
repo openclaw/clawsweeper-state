@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T15:19:18.889Z",
+  "updated_at": "2026-10-07T15:21:25.614Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:72:6011539754:2026-10-07T08:04:25Z:clawsweeper_needs_human",
-      "comment_id": "6011539754",
-      "comment_version_key": "6011539754:2026-10-07T08:04:25Z",
-      "comment_url": "https://github.com/openclaw/goplaces/pull/72#issuecomment-6011539754",
-      "comment_created_at": "2026-10-06T07:29:32Z",
-      "comment_updated_at": "2026-10-07T08:04:25Z",
-      "comment_body_sha256": "efe63c95c83c588557bd3e450ccec7d852bd4f7179ecb8d7c0524db399f1e59c",
-      "repo": "openclaw/goplaces",
-      "issue_number": 72,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The built-CLI loopback trace exercises details parsing and the production HTTP client, showing the encoded token and successful JSON o... (sha=1d4a322cf18c067eea27f5e6bcf1b3ea38918af6)",
-      "expected_head_sha": "1d4a322cf18c067eea27f5e6bcf1b3ea38918af6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T08:05:16.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/details-session-token-20261006",
-        "head_sha": "1d4a322cf18c067eea27f5e6bcf1b3ea38918af6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/hermit:52:5791281673:2026-09-23T08:04:35Z:re_review",
       "comment_id": "5791281673",
@@ -32940,6 +32907,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166259:6040940906:2026-10-07T15:20:22Z:re_review",
+      "comment_id": "6040940906",
+      "comment_version_key": "6040940906:2026-10-07T15:20:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166259#issuecomment-6040940906",
+      "comment_created_at": "2026-10-07T15:20:22Z",
+      "comment_updated_at": "2026-10-07T15:20:22Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166259,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T15:21:23.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w6binding",
+        "head_sha": "e7b564caa5f297cfe4196f11b66b9ffee1fb8528",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
