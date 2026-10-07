@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2717"
 mode: "autonomous"
-run_id: "37609434072"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37609434072"
+run_id: "37615561373"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37615561373"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-10-07T10:49:22.754Z"
+result_status: "needs_human"
+published_at: "2026-10-07T11:42:59.272Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2717"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2717"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-crabbox-2717
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37609434072](https://github.com/openclaw/clawsweeper/actions/runs/37609434072)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37615561373](https://github.com/openclaw/clawsweeper/actions/runs/37615561373)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/crabbox/issues/2717
 
 ## Summary
 
-Independent Windows image selection is already implemented on supplied main a67dd997f64483ae6dfc7d318f470a429eb542fd. The remaining Server 2025 default rollout is explicitly gated on live canaries and regional promoted-image migration. No code changed or PR planned.
+Independent Windows image selection is implemented on the supplied main SHA. The remaining Server 2025 default switch requires the canary-backed rollout explicitly requested in the issue discussion. No implementation PR is appropriate yet; no files or GitHub state were changed.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Independent Windows image selection is already implemented on supplied main a67d
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,10 @@ Independent Windows image selection is already implemented on supplied main a67d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2717 | keep_related | planned | related | Keep this issue open for the separate operational rollout. Implementation is blocked on the explicitly required live Server 2025 qualification and regional promoted-image rollout evidence, which is absent from the hydrated artifact. This operational migration exceeds a narrow implementation PR; do not switch only the stock fallback or duplicate the shipped selector work. |
-| #2715 | keep_closed | skipped | related | Closed historical context; no action required. |
-| #2720 | keep_closed | skipped | related | Merged partial implementation is historical evidence, not an open implementation candidate or a complete fix for the remaining rollout. |
+| #2717 | needs_human | blocked | canonical | Implementation is blocked on the explicitly deferred rollout decision and canary evidence. A fallback-only patch would leave promoted defaults unchanged and would not satisfy the remaining request. |
+| #2715 | keep_closed | skipped | independent | Historical context only. |
+| #2720 | keep_closed | skipped | related | Completed selector implementation; does not cover the remaining default rollout. |
 
 ## Needs Human
 
-- none
+- For https://github.com/openclaw/crabbox/issues/2717, complete and accept Server 2025 native readiness, desktop and WSL2 canaries, regional promoted-image inventory/rebakes, and rollback preparation before scheduling the separate default-switch implementation.
