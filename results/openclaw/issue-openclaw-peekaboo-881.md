@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37609717517"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37609717517"
+run_id: "37613796745"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37613796745"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T10:52:24.206Z"
+published_at: "2026-10-07T11:28:44.898Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37609717517](https://github.com/openclaw/clawsweeper/actions/runs/37609717517)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37613796745](https://github.com/openclaw/clawsweeper/actions/runs/37613796745)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation blocked: the supplied evidence does not establish the reported 4.2.0 failure on current main or identify a safe, narrow repair. No code changes or PR were created.
+Implementation blocked: the reported 4.2.0 remote/local discrepancy cannot be localized on supplied current main without the retained host/session diagnostics already requested by the maintainer. No changes or executable fix artifact are justified yet.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Implementation blocked: the supplied evidence does not establish the reported 4.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | Keep the canonical report open. Available evidence cannot distinguish released-host incompatibility, failed identity validation, or a current capture defect. |
-| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | Resume implementation after the retained metadata establishes the failing host/protocol and evidence path, or a deterministic current-main regression demonstrates the defect. An executable fix artifact would currently require guessing. |
+| #881 | keep_canonical | planned | canonical | Keep the reported discrepancy open without claiming it is fixed or weakening exact-window attribution. |
+| cluster:issue-openclaw-peekaboo-881 | needs_human | blocked | needs_human | The fix action cannot safely be repaired into an executable artifact from the supplied evidence. Obtain the already-requested retained diagnostics to identify whether and where a narrow repair is needed; preserve attribution checks and conservative post-dispatch outcomes. |
 
 ## Needs Human
 
-- For #881, obtain the collaborator-requested retained binary --version, bridge status --verbose --json, redacted Simulator inventory row, and existing remote/local capture JSON preserving host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to distinguish released-host incompatibility, failed identity validation, and a current capture defect before selecting a repair. Do not repeat focus/input operations.
+- For #881, obtain the already-requested retained binary version, verbose Bridge status, inventory row, and existing failing remote/successful local capture JSON with host/protocol, PID/process generation, window ID, bounds, target receipt, and dispatch/retry metadata. These are needed to identify the missing-evidence producer and distinguish the reported 4.2.0 behavior from current main; do not repeat focus/input attempts.
