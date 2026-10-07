@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "self-heal-openclaw-openclaw-120143",
+  "mode": "autonomous",
+  "run_id": "37602294300",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37602294300",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-120143.md",
+  "published_at": "2026-10-07T09:46:30.318Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/120143",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89254",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/120143",
+  "summary": "Plan bounded rebase/conflict repair of the existing writable branch. Preflight confirms the expected open PR and head SHA. Existing review findings remain unresolved; fresh exact-head review is required after any push. No mutations performed.",
+  "actions": [
+    {
+      "target": "#120143",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120143",
+      "candidate_fix": null,
+      "reason": "Repair the existing branch only for base synchronization and directly required conflict resolution. Re-fetch the open state and exact expected head before changing anything; stop if either differs. Do not merge, close, or add labels."
+    },
+    {
+      "target": "#89254",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120143",
+      "candidate_fix": "#120143",
+      "reason": "Keep the source report open while its existing diagnostic PR is repaired and reviewed. Issue closeout is outside this job."
+    },
+    {
+      "target": "cluster:self-heal-openclaw-openclaw-120143",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120143",
+      "candidate_fix": null,
+      "reason": "Provide an auditable existing-branch repair plan for the deterministic executor. This read-only worker does not edit or push."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
