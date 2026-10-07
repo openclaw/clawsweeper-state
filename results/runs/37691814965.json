@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37691814965",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37691814965",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-07T21:52:00.913Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "The defect remains supported by source inspection at preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused fix plan is provided, but implementation and PR creation are blocked by the read-only environment. Focused tests could not start; the failing regression, upgrade validation, and required real-account proof remain outstanding.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Keep #466 as the canonical issue. Implement archive reconciliation through one ordered owner rather than adding archive side effects to generic upserts."
+    },
+    {
+      "target": "#468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical evidence and contributor context only. Do not reopen, adopt unchanged, or emit closure actions."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The accepted product boundary is sufficiently clear for a fix artifact. Implementation must remain confined to this archive-state defect and stop for triage if dependencies, flags, policy options, or broader rewrites become necessary."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Blocked on implementing and validating the canonical fix on clawsweeper/issue-openclaw-wacli-466 in a writable environment, followed by redacted real-account confirmation. Reuse that branch and any existing implementation PR; apply required labels only through the applicator. Do not open a PR or claim the issue fixed from this inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
