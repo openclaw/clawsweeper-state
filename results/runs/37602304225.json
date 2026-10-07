@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "self-heal-openclaw-openclaw-119975",
+  "mode": "autonomous",
+  "run_id": "37602304225",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37602304225",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/self-heal-openclaw-openclaw-119975.md",
+  "published_at": "2026-10-07T09:47:32.410Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/119975",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119958",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119975",
+  "summary": "Plan bounded base-sync repair of the existing PR branch. Preflight confirms the expected open head and writable same-repo branch. No edits, rebase, tests, or GitHub mutations performed; existing review findings remain unresolved.",
+  "actions": [
+    {
+      "target": "#119975",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119975",
+      "candidate_fix": null,
+      "reason": "Re-fetch open state and require the exact expected head before preparation and publication. Rebase only the existing branch; stop if conflict resolution requires a substantive behavior decision. Merge, closure, and labels are prohibited."
+    },
+    {
+      "target": "#119958",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119958",
+      "candidate_fix": "#119975",
+      "reason": "Preserve the original report while the candidate remains unmerged and review-blocked. Issue closeout is outside this self-heal job."
+    },
+    {
+      "target": "#119972",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119975",
+      "candidate_fix": null,
+      "reason": "Historical implementation and contributor-credit context only."
+    },
+    {
+      "target": "#151387",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed managed-service behavior during any required conflict resolution."
+    },
+    {
+      "target": "cluster:self-heal-openclaw-openclaw-119975",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119975",
+      "candidate_fix": null,
+      "reason": "Produce a schema-valid, existing-branch repair plan without expanding into review-finding repair or opening a replacement PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_canonical": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
