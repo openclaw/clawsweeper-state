@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37622863506"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37622863506"
+run_id: "37629481282"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37629481282"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T12:47:02.191Z"
+published_at: "2026-10-07T13:38:42.087Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37622863506](https://github.com/openclaw/clawsweeper/actions/runs/37622863506)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37629481282](https://github.com/openclaw/clawsweeper/actions/runs/37629481282)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation is blocked on retained affected-host diagnostics. Inspection of preflight main efd65b5814f722c6b1715271dab2b6a3902ec9a4 did not establish a current-source bounds-loss defect or a safe narrow patch. No code changes or PR are proposed.
+Implementation is blocked on retained host and receipt evidence needed to identify a narrow repair. Inspection of preflight main did not establish the reported Simulator failure or prove it fixed. No code changes or PR are proposed.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Implementation is blocked on retained affected-host diagnostics. Inspection of p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | Keep the canonical report open. The retained host/protocol, process generation, exact window bounds, target receipts, and dispatch/retry diagnostics are needed to distinguish a producing-owner failure from released-host incompatibility. A speculative fix artifact would not satisfy the job's current-main verification requirement. |
+| #881 | keep_canonical | planned | canonical | Keep the issue open. Resume implementation once the already-requested retained metadata identifies the selected Bridge host/protocol and the missing or contradictory receipt evidence. Choosing a producer fix or capability failure now would be speculative. |
 
 ## Needs Human
 
