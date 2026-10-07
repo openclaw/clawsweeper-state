@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140932"
 mode: "autonomous"
-run_id: "37675658427"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37675658427"
+run_id: "37678177176"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37678177176"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T19:56:52.859Z"
+published_at: "2026-10-07T20:42:28.802Z"
 canonical: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/140932"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37675658427](https://github.com/openclaw/clawsweeper/actions/runs/37675658427)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37678177176](https://github.com/openclaw/clawsweeper/actions/runs/37678177176)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/140932
 
 ## Summary
 
-Source inspection confirms missing EmbeddingGemma formatting in the checked-out main. Repair artifact prepared; implementation, failing regression, and live CLI validation are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed.
+Reproduced missing query and document formatting on supplied main 2d6024975f2dc1246ca2fe4be1b144142626659d. A narrow fix artifact is ready. Implementation and required validation are blocked by the read-only filesystem and absent dependencies; no files or GitHub state were changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Source inspection confirms missing EmbeddingGemma formatting in the checked-out 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140932 | fix_needed | planned | canonical | A narrow plugin-owned bug repair is warranted. Executable reproduction and implementation require a writable, dependency-equipped executor; source inspection is not a passing regression or live CLI proof. |
-| #147181 | keep_related | planned | related | Distinct feature scope; leave open and exclude configurable query instructions from this repair. |
-| #42408 | keep_related | planned | related | Related retrieval symptoms with distinct causes; leave open without expanding this repair. |
-| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation and publication remain dependent on successful reproduction, repair, review, and validation in the executor. |
+| #140932 | fix_needed | planned | canonical | The default local model's retrieval formatting remains missing. Repair can remain plugin-owned and use existing identity mismatch/rebuild handling. |
+| #147181 | keep_related | planned | related | Distinct feature scope; leave open and exclude configurable instructions and Qwen behavior from this repair. |
+| #42408 | keep_related | planned | related | Different causes of retrieval quality problems; this formatting repair does not cover the remaining diagnostics and corpus-hygiene work. |
+| cluster:issue-openclaw-openclaw-140932 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation and PR readiness remain blocked by this host's read-only filesystem; the authorized executor must implement and validate before publication. |
 
 ## Needs Human
 
