@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 7, 2026, 10:36 UTC
+Last source update: Oct 7, 2026, 10:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 7, 2026, 10:36 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 7, 2026, 10:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37608433903) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 7, 2026, 10:33 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37608160951) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 7, 2026, 10:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37603892005) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 7, 2026, 10:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37609610567) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 7, 2026, 07:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37588322625) |
 
 ### Repositories
@@ -91,18 +91,18 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 7, 2026, 10:34 UTC
+Last source update: Oct 7, 2026, 10:49 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1532 | 100% |
-| Run attempts archived | 4483 | audit |
-| Latest successful clusters | 1192 | 77.8% |
-| Latest failed clusters | 336 | 21.9% |
+| Latest clusters reviewed | 1534 | 100% |
+| Run attempts archived | 4485 | audit |
+| Latest successful clusters | 1193 | 77.8% |
+| Latest failed clusters | 337 | 22.0% |
 | Latest cancelled clusters | 4 | 0.3% |
-| Needs-human clusters | 151 | 9.9% |
+| Needs-human clusters | 151 | 9.8% |
 | Fix actions failed | 35 | 4.1% |
 | Fix actions blocked | 186 | 21.8% |
 | Completed close actions | 0 | 0.0% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1532 clusters: 397 maintainer action, 443 automation snapshot, 631 intervention needed, 61 no pending action, 0 completed.
+- Latest records: 1534 clusters: 397 maintainer action, 443 automation snapshot, 633 intervention needed, 61 no pending action, 0 completed.
 - Maintainer first: [openclaw/libterminal](https://github.com/openclaw/libterminal) [#169](https://github.com/openclaw/libterminal/issues/169) is maintainer_input: #169: Repository-qualified hydration of https://github.com/coder/ghostty-web/pull/169 is required before central security routing; suppli....
-- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) is automation_failed: The artifact records a narrow recovery path, but implementation and PR publication must wait for a writable executor with required toolin....
+- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [issue-openclaw-crabbox-2717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2717.md) is automation_blocked: Independent Windows image selection is already implemented on supplied main a67dd997f64483ae6dfc7d318f470a429eb542fd. The remaining Serve....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 397 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 443 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 631 | automation failure or blocker recorded |
+| Intervention Needed | 633 | automation failure or blocker recorded |
 | No Pending Action | 61 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 399 |
-| automation_failed | 336 |
-| automation_blocked | 295 |
+| automation_failed | 337 |
+| automation_blocked | 296 |
 | reviewed_no_action | 61 |
 | completed | 0 |
 
@@ -187,6 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | Independent Windows image selection is already implemented on supplied main a67dd997f64483ae6dfc7d318f470a429eb542fd. The remaining Server 2025 def... | Oct 7, 2026, 10:49 UTC | [issue-openclaw-crabbox-2717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2717.md) | [37609434072](https://github.com/openclaw/clawsweeper/actions/runs/37609434072) |
+| [steipete/codexbar](https://github.com/steipete/codexbar) | [#4322](https://github.com/steipete/codexbar/pull/4322) | automation_failed | The source-proven bug remains valid and has a narrow implementation path. Keep the issue open while the executor implements and validates the fix. | Oct 7, 2026, 10:47 UTC | [issue-steipete-codexbar-4322](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4322.md) | [37607667340](https://github.com/openclaw/clawsweeper/actions/runs/37607667340) |
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) | automation_failed | The artifact records a narrow recovery path, but implementation and PR publication must wait for a writable executor with required tooling and veri... | Oct 7, 2026, 10:34 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37607648422](https://github.com/openclaw/clawsweeper/actions/runs/37607648422) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166536](https://github.com/openclaw/openclaw/pull/166536) | automation_failed | A narrow fix remains justified by source evidence; a writable executor must establish the required failing regression before editing or publishing. | Oct 7, 2026, 10:18 UTC | [issue-openclaw-openclaw-166536](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166536.md) | [37599277529](https://github.com/openclaw/clawsweeper/actions/runs/37599277529) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#127119](https://github.com/openclaw/openclaw/pull/127119) | automation_failed | The source finding remains valid, but the required failing production-builder regression cannot run on this host. Preserve the issue and resume imp... | Oct 7, 2026, 10:14 UTC | [issue-openclaw-openclaw-127119](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-127119.md) | [37601738218](https://github.com/openclaw/clawsweeper/actions/runs/37601738218) |
@@ -200,8 +202,6 @@ State: Failed clusters need inspection
 | [steipete/oracle](https://github.com/steipete/oracle) |  | automation_blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | Oct 7, 2026, 04:01 UTC | [issue-steipete-oracle-548](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-548.md) | [37569156932](https://github.com/openclaw/clawsweeper/actions/runs/37569156932) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166344](https://github.com/openclaw/openclaw/pull/166344) | automation_failed | Implementation requires a writable executor checkout with dependencies. Reproduce on its current main before editing; this worker established sourc... | Oct 7, 2026, 00:02 UTC | [issue-openclaw-openclaw-166344](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166344.md) | [37546148122](https://github.com/openclaw/clawsweeper/actions/runs/37546148122) |
 | [steipete/oracle](https://github.com/steipete/oracle) | [#541](https://github.com/steipete/oracle/pull/541) | automation_failed | Implement only sanitized cookie-transfer diagnostics. The logged-out session and its cause remain unverified; authentication policy and dependency... | Oct 6, 2026, 23:58 UTC | [issue-steipete-oracle-541](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-541.md) | [37548983000](https://github.com/openclaw/clawsweeper/actions/runs/37548983000) |
-| [openclaw/ocm](https://github.com/openclaw/ocm) | [#299](https://github.com/openclaw/ocm/pull/299) | automation_failed | The issue is source-confirmed and needs no product decision. Applying the fix and establishing the required failing regression require a writable t... | Oct 6, 2026, 23:27 UTC | [issue-openclaw-ocm-299](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-ocm-299.md) | [37546278236](https://github.com/openclaw/clawsweeper/actions/runs/37546278236) |
-| [openclaw/ocm](https://github.com/openclaw/ocm) | [#295](https://github.com/openclaw/ocm/pull/295) | automation_failed | The source confirms a narrow preservation defect with clear expected behavior. Keep #295 as the canonical issue and implement through the cluster f... | Oct 6, 2026, 21:56 UTC | [issue-openclaw-ocm-295](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-ocm-295.md) | [37536904836](https://github.com/openclaw/clawsweeper/actions/runs/37536904836) |
 
 #### No Pending Action
 
