@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2717",
+  "mode": "autonomous",
+  "run_id": "37610820841",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37610820841",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2717.md",
+  "published_at": "2026-10-07T11:02:08.218Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2717",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2717",
+  "canonical_pr": null,
+  "summary": "Windows image selectors are already implemented on supplied main a67dd997f64483ae6dfc7d318f470a429eb542fd. The remaining Server 2025 default rollout is explicitly deferred pending live canaries, regional image rebaking, qualification, and rollback preparation. No code changes or PR proposed.",
+  "actions": [
+    {
+      "target": "#2717",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "Independent selection is complete, but the remaining default rollout is still outstanding and must retain its canonical issue."
+    },
+    {
+      "target": "#2715",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2720",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "Merged partial implementation, preserving the existing credit to @saftall."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2717",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "The supplied artifacts do not support a safe executable fix plan for the remaining operational rollout. Maintainer judgment on the default switch is deferred until the required live qualification and regional rollout evidence exists; resume narrow code planning after that decision."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 2,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For https://github.com/openclaw/crabbox/issues/2717 only: obtain the required Server 2025 native and WSL2 canary results, promoted regional image inventory/rebaking/qualification and rollback evidence, then confirm the default rollout decision. The hydrated discussion explicitly defers this decision and contains no completed qualification evidence."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2717",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
