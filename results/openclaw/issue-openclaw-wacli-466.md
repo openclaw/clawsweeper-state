@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37653035931"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37653035931"
+run_id: "37670696566"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37670696566"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T16:40:52.670Z"
+published_at: "2026-10-07T19:01:35.610Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37653035931](https://github.com/openclaw/clawsweeper/actions/runs/37653035931)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37670696566](https://github.com/openclaw/clawsweeper/actions/runs/37670696566)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the storage defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91 with a failing in-memory SQL probe. Produced a focused fix artifact. Implementation and validation are blocked by the read-only filesystem, unavailable pinned dependency source, and toolchain setup. No files or GitHub items were changed.
+The archive-reconciliation gap remains on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation is blocked by the read-only filesystem, unavailable required toolchain, and absent pinned dependency source. No files or GitHub state changed; no failing regression or validated PR branch was produced.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the storage defect on preflight main 8fe6a5a1186c8b3af8258ade817e443e4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The issue remains valid. Repair must cover both eligible live arrivals and older archive replay while preserving existing archive choices. |
-| #468 | keep_closed | skipped | related | Historical implementation evidence only. Preserve @AdamMagued's contribution credit without reopening or closing this PR. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Fix planning is complete; implementation requires a writable executor with the repository toolchain and pinned dependency source. Verify protocol contracts before selecting boundary storage or opening a PR. |
+| #466 | fix_needed | blocked | canonical | A focused repair remains warranted, but this environment cannot write a regression or patch, inspect the uncached pinned dependency, or run required validation. Resume implementation in a writable checkout with Go 1.27.1 and the declared pnpm version. |
+| #468 | keep_closed | skipped | related | Preserve the closed contributor work as credited historical evidence for the new issue implementation. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | Provide a reviewable repair plan while implementation remains externally blocked. |
 
 ## Needs Human
 
