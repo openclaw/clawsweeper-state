@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T23:40:46.580Z",
+  "updated_at": "2026-10-07T23:41:16.260Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166674:6043185271:2026-10-07T17:27:31Z:re_review",
-      "comment_id": "6043185271",
-      "comment_version_key": "6043185271:2026-10-07T17:27:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166674#issuecomment-6043185271",
-      "comment_created_at": "2026-10-07T17:27:31Z",
-      "comment_updated_at": "2026-10-07T17:27:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166674,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T17:43:39.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/tb3writes",
-        "head_sha": "befb81a2986f4df58278611121769b3c03692428",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166674:6043271042:2026-10-07T17:42:33Z:clawsweeper_auto_repair",
       "comment_id": "6043271042",
@@ -33436,6 +33389,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:775:5925044584:2026-10-07T23:40:19Z:clawsweeper_needs_human",
+      "comment_id": "5925044584",
+      "comment_version_key": "5925044584:2026-10-07T23:40:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/775#issuecomment-5925044584",
+      "comment_created_at": "2026-10-01T04:58:12Z",
+      "comment_updated_at": "2026-10-07T23:40:19Z",
+      "comment_body_sha256": "fba4b48d35aba20f1ba7ccd5480cd842aa1ea1a8dfd9ab1db5a12649b0de84b3",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The consolidated acceptance harness has not completed its required unfiltered replay across both installations; partial successes do not qualify the complete coverage transition. (sha=420fd1cd79936607a15d137c7bb627b8f30110e2)",
+      "expected_head_sha": "420fd1cd79936607a15d137c7bb627b8f30110e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T23:41:16.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/qa-integration-matrix",
+        "head_sha": "420fd1cd79936607a15d137c7bb627b8f30110e2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
