@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:19:44.046Z",
+  "updated_at": "2026-10-07T03:21:14.553Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94387:4737709965:2026-10-06T21:39:31Z:clawsweeper_needs_human",
-      "comment_id": "4737709965",
-      "comment_version_key": "4737709965:2026-10-06T21:39:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94387#issuecomment-4737709965",
-      "comment_created_at": "2026-06-18T03:50:25Z",
-      "comment_updated_at": "2026-10-06T21:39:31Z",
-      "comment_body_sha256": "24ae851d16e949c0f201fa6ea030f46aa7610c9545eea47d3481c01d90437752",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch has no validated final declaration surface against current main; confirm the new exports match all three callback kinds and retain backward-compatible request in... (sha=bd5cf54f75fbfb5881e707ca75b8e18b450a023d)",
-      "expected_head_sha": "bd5cf54f75fbfb5881e707ca75b8e18b450a023d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T21:40:42.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "aknight/export-approval-handler-runtime-types",
-        "head_sha": "bd5cf54f75fbfb5881e707ca75b8e18b450a023d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:545:6025519955:2026-10-06T21:40:28Z:clawsweeper_needs_human",
       "comment_id": "6025519955",
@@ -34162,6 +34129,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166413:6030205020:2026-10-07T03:20:16Z:re_review",
+      "comment_id": "6030205020",
+      "comment_version_key": "6030205020:2026-10-07T03:20:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166413#issuecomment-6030205020",
+      "comment_created_at": "2026-10-07T03:20:16Z",
+      "comment_updated_at": "2026-10-07T03:20:16Z",
+      "comment_body_sha256": "74056372a2e404144fa1fb979faa5b8716aad31a7488841b63575fce9463c51d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166413,
+      "author": "dlmccoy",
+      "author_id": 725956,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T03:21:12.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-lease-archive-resume",
+        "head_sha": "92a35ba26ec01ef372e604032d836d1e945bd150",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
