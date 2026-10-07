@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T18:44:42.092Z",
+  "updated_at": "2026-10-07T18:45:06.962Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166236:6022618542:2026-10-07T10:23:49Z:clawsweeper_needs_human",
-      "comment_id": "6022618542",
-      "comment_version_key": "6022618542:2026-10-07T10:23:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166236#issuecomment-6022618542",
-      "comment_created_at": "2026-10-06T18:16:41Z",
-      "comment_updated_at": "2026-10-07T10:23:49Z",
-      "comment_body_sha256": "b8bb1e8164a22a9dbbd57c3162d3fc8a8c3a7c32187e412e7df8213463c343d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166236,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head first-session/first-chat median exceeds the accepted zero-increase SQL limit by three statements; the cron increase also lacks the required attribution. Lower aggregate... (sha=432445d9728fec253a64e03c9f9d86d7378c378d)",
-      "expected_head_sha": "432445d9728fec253a64e03c9f9d86d7378c378d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T10:47:32.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6worktree",
-        "head_sha": "432445d9728fec253a64e03c9f9d86d7378c378d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166283:6024995939:2026-10-07T10:22:34Z:clawsweeper_needs_human",
       "comment_id": "6024995939",
@@ -33449,6 +33416,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166613:6044499312:2026-10-07T18:44:01Z:re_review",
+      "comment_id": "6044499312",
+      "comment_version_key": "6044499312:2026-10-07T18:44:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166613#issuecomment-6044499312",
+      "comment_created_at": "2026-10-07T18:44:01Z",
+      "comment_updated_at": "2026-10-07T18:44:01Z",
+      "comment_body_sha256": "6057a09a40603bcf1695ed7f9e763177d5bc364a5a96e0562922b7be60ffffdf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166613,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T18:45:05.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/158903-destination",
+        "head_sha": "29a36c8e46a3d3cbbff95d7760bd08d91ecb1303",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
