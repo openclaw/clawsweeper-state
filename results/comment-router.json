@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:12:21.028Z",
+  "updated_at": "2026-10-07T03:12:22.313Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158903:5846888892:2026-10-06T21:35:30Z:clawsweeper_needs_human",
-      "comment_id": "5846888892",
-      "comment_version_key": "5846888892:2026-10-06T21:35:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158903#issuecomment-5846888892",
-      "comment_created_at": "2026-09-26T14:04:03Z",
-      "comment_updated_at": "2026-10-06T21:35:30Z",
-      "comment_body_sha256": "0484a0e4cefe5da322055a36a55c81a16aaf158fe895815f0493dbe5dc3ccaea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158903,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported real Gateway→physical worker→node-local HTTP run and inspected Chromium states establish...; Review finding: [medium] Verify revocation during retained background setup — src/gateway/server-worker-required-profile.ts:483 (sha=1d5319b47df581a24136ad313a1a65e64460522c)",
-      "expected_head_sha": "1d5319b47df581a24136ad313a1a65e64460522c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-06T21:36:43.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-154390-required-worker-profile",
-        "head_sha": "1d5319b47df581a24136ad313a1a65e64460522c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153635:5749276799:2026-10-06T21:35:49Z:clawsweeper_auto_repair",
       "comment_id": "5749276799",
@@ -34106,6 +34073,39 @@
       "status": "skipped",
       "processed_at": "2026-10-07T03:12:21.028Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155464:5771801613:2026-10-07T03:11:22Z:clawsweeper_needs_human",
+      "comment_id": "5771801613",
+      "comment_version_key": "5771801613:2026-10-07T03:11:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155464#issuecomment-5771801613",
+      "comment_created_at": "2026-09-22T05:48:23Z",
+      "comment_updated_at": "2026-10-07T03:11:22Z",
+      "comment_body_sha256": "15a2565cbf452e8cf6dfcccf226bd9449465f90b3181dc665c2e2ba700503464",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing callers that dispatch during an active turn will receive UNAVAILABLE and must retry; maintainer acceptance of this changed contract remains unresolved. (sha=83a653913560299fa91259372442289a6321f0c9)",
+      "expected_head_sha": "83a653913560299fa91259372442289a6321f0c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T03:12:22.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/155333-preserve-active-dispatch",
+        "head_sha": "83a653913560299fa91259372442289a6321f0c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
