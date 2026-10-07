@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T10:43:38.805Z",
+  "updated_at": "2026-10-07T10:44:23.603Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164778:6030482929:2026-10-07T03:46:05Z:re_review",
-      "comment_id": "6030482929",
-      "comment_version_key": "6030482929:2026-10-07T03:46:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164778#issuecomment-6030482929",
-      "comment_created_at": "2026-10-07T03:46:05Z",
-      "comment_updated_at": "2026-10-07T03:46:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164778,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T03:53:22.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openshell-mirror-nested-git",
-        "head_sha": "9eab39c8a0d756d7b12ae9d6e76ecd6eb03cea14",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164778:5976823482:2026-10-07T03:52:25Z:clawsweeper_needs_human",
       "comment_id": "5976823482",
@@ -33405,6 +33358,39 @@
         "kind": "pull_request",
         "branch": "upd/upd-handoff-failure-cause",
         "head_sha": "f8b92fa27abf18f97fcd81aa57f8fe7f09a08af9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132059:5457078422:2026-10-07T10:43:32Z:clawsweeper_auto_repair",
+      "comment_id": "5457078422",
+      "comment_version_key": "5457078422:2026-10-07T10:43:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132059#issuecomment-5457078422",
+      "comment_created_at": "2026-08-28T19:50:30Z",
+      "comment_updated_at": "2026-10-07T10:43:32Z",
+      "comment_body_sha256": "190ae5303eea06dadfb335fc2afa20ae2f0987333fa7d698f1e584c2c6c0751c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=024235aa117fc0bacd391950bfd2843e453f64ef)",
+      "expected_head_sha": "024235aa117fc0bacd391950bfd2843e453f64ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T10:44:23.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/improve-gateway-client-centralize-operat",
+        "head_sha": "024235aa117fc0bacd391950bfd2843e453f64ef",
         "cluster_id": null,
         "job_path": null
       }
