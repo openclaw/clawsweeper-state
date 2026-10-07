@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-127119"
 mode: "autonomous"
-run_id: "37577832191"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37577832191"
+run_id: "37583769476"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37583769476"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T06:22:57.471Z"
+published_at: "2026-10-07T07:28:42.970Z"
 canonical: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/127119"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37577832191](https://github.com/openclaw/clawsweeper/actions/runs/37577832191)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37583769476](https://github.com/openclaw/clawsweeper/actions/runs/37583769476)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/127119
 
 ## Summary
 
-Current-main source still selects the wrong output-token field. A narrow fix artifact is ready, but implementation and request-boundary reproduction are blocked by this read-only host, missing dependencies, and Corepack EROFS. No files or GitHub state changed; live-provider enforcement remains unverified.
+Current-main source still contains the Model Studio token-field mismatch. A narrow fix artifact is prepared, but implementation and executable reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; vendor cap enforcement remains unverified.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current-main source still selects the wrong output-token field. A narrow fix art
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #127119 | fix_needed | planned | canonical | The source mismatch remains on supplied current main. Reproduce through the production builder before changing production code; stop if that regression does not fail for the intended field mismatch. |
-| #127135 | keep_closed | skipped | related | Historical research and contributor credit only; no reopening, closure, or merge action. |
-| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned |  | The fix plan is narrow and executable elsewhere. This worker cannot claim a repaired or validated branch. |
+| #127119 | fix_needed | planned | canonical | A bounded compatibility-default repair remains justified by current source and hydrated evidence. Local implementation is blocked by read-only filesystem permissions and missing dependencies, rather than an unresolved product decision. |
+| #127135 | keep_closed | skipped | related | Preserve the closed historical reference and credit its useful endpoint-scoping research. No closure, reopening, merge, or comment is proposed. |
+| cluster:issue-openclaw-openclaw-127119 | build_fix_artifact | planned | canonical | Prepare one narrow new-fix PR on clawsweeper/issue-openclaw-openclaw-127119 for the deterministic executor. Artifact preparation is complete; local implementation and validation remain blocked. |
 
 ## Needs Human
 
