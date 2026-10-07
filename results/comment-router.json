@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:16:23.234Z",
+  "updated_at": "2026-10-07T22:16:52.948Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166626:6040179838:2026-10-07T15:07:12Z:clawsweeper_needs_human",
-      "comment_id": "6040179838",
-      "comment_version_key": "6040179838:2026-10-07T15:07:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166626#issuecomment-6040179838",
-      "comment_created_at": "2026-10-07T14:31:59Z",
-      "comment_updated_at": "2026-10-07T15:07:12Z",
-      "comment_body_sha256": "f14bbd8f0bb7b867d89c7445761fb27073df2ab66165ee1a33f36d0e3c63087e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=21bcea37b3fb640a83895b27d30b76c74a043145)",
-      "expected_head_sha": "21bcea37b3fb640a83895b27d30b76c74a043145",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T15:21:30.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/d04-discord-20261007",
-        "head_sha": "21bcea37b3fb640a83895b27d30b76c74a043145",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1638:6040974117:2026-10-07T15:21:52Z:clawsweeper_needs_human",
       "comment_id": "6040974117",
@@ -33312,6 +33279,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165721:6047953591:2026-10-07T22:15:54Z:re_review",
+      "comment_id": "6047953591",
+      "comment_version_key": "6047953591:2026-10-07T22:15:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165721#issuecomment-6047953591",
+      "comment_created_at": "2026-10-07T22:15:54Z",
+      "comment_updated_at": "2026-10-07T22:15:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165721,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T22:16:51.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/irc-server-password-spaces",
+        "head_sha": "948c98ccf7bba0b8ee6f4792efcf5f4bee5f22d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
