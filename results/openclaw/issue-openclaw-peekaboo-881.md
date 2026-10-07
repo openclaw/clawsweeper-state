@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-881"
 mode: "autonomous"
-run_id: "37576769596"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37576769596"
+run_id: "37585484594"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37585484594"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T05:35:17.932Z"
+published_at: "2026-10-07T07:11:52.431Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/881"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37576769596](https://github.com/openclaw/clawsweeper/actions/runs/37576769596)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37585484594](https://github.com/openclaw/clawsweeper/actions/runs/37585484594)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/881
 
 ## Summary
 
-Implementation blocked: the selected host and failing receipt producer remain unidentified. Current-main inspection does not establish a narrow defect to patch. Keep #881 open; no code changes or PR planned.
+Implementation stopped without a PR. The reported Simulator failure remains unverified on current main, and the retained host/protocol and target receipts requested by the collaborator are absent. Source inspection does not establish a narrow defect that can safely be repaired.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Implementation blocked: the selected host and failing receipt producer remain un
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #881 | keep_canonical | planned | canonical | The repair boundary is underspecified without the retained selected-host/protocol and receipt evidence requested by the collaborator. Resume implementation when those diagnostics identify the failing producer or a concrete current-main defect is established. Do not weaken attribution, silently switch hosts, or repeat potentially post-dispatch focus/input operations. |
+| #881 | keep_canonical | planned | canonical | Implementation is blocked on evidence identifying the failing host, protocol, and receipt path. Obtain the already-retained, redacted metadata requested by the collaborator without repeating focus/input operations. Do not claim the issue is already fixed or create a speculative attribution patch. |
 
 ## Needs Human
 
