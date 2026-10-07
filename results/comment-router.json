@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-07T10:22:00.109Z",
+  "updated_at": "2026-10-07T10:24:07.637Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:4856820752:2026-07-01T15:16:48Z:re_review",
-      "comment_id": "4856820752",
-      "comment_version_key": "4856820752:2026-07-01T15:16:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-4856820752",
-      "comment_created_at": "2026-07-01T15:16:48Z",
-      "comment_updated_at": "2026-07-01T15:16:48Z",
-      "comment_body_sha256": "654f66e0264a731f88a1fd761d7661befca58220d132a656634010101e3eb234",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T03:52:30.309Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98458:4877569377:2026-07-03T15:14:08Z:re_review",
       "comment_id": "4877569377",
@@ -33262,6 +33235,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165514:5992633528:2026-10-07T10:22:59Z:clawsweeper_needs_human",
+      "comment_id": "5992633528",
+      "comment_version_key": "5992633528:2026-10-07T10:22:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165514#issuecomment-5992633528",
+      "comment_created_at": "2026-10-05T10:27:15Z",
+      "comment_updated_at": "2026-10-07T10:22:59Z",
+      "comment_body_sha256": "7e3f0accba07fb8806eb73271b1b0e32d0aecaaaf1e18ad31407e98b44b7f355",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165514,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the shared embedding client now assigns the recognized subscription route's credentials to the native embedding... (sha=bb3329359f11c224dfac556cabd9d9c2dd308eff)",
+      "expected_head_sha": "bb3329359f11c224dfac556cabd9d9c2dd308eff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T10:24:07.637Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedding-chat-only-subscription-baseurl",
+        "head_sha": "bb3329359f11c224dfac556cabd9d9c2dd308eff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
