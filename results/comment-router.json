@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T13:14:47.102Z",
+  "updated_at": "2026-10-07T13:14:55.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132806:5464465500:2026-10-07T06:28:14Z:clawsweeper_needs_human",
-      "comment_id": "5464465500",
-      "comment_version_key": "5464465500:2026-10-07T06:28:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132806#issuecomment-5464465500",
-      "comment_created_at": "2026-08-29T19:42:51Z",
-      "comment_updated_at": "2026-10-07T06:28:14Z",
-      "comment_body_sha256": "47d562866a6cb08f76bee6af0790bfeeb15c1bd2d4387a881b582a98d7e45b1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132806,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: This head supplies helper-test results without an after-fix observation of safeguard compaction, the persisted summary, and resumed work. The m... (sha=1819620cefa15fb6b031565fbe3402957ba251b2)",
-      "expected_head_sha": "1819620cefa15fb6b031565fbe3402957ba251b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T06:29:07.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "forge/123668-compaction-active-request",
-        "head_sha": "1819620cefa15fb6b031565fbe3402957ba251b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166479:6032334799:2026-10-07T06:28:20Z:clawsweeper_needs_human",
       "comment_id": "6032334799",
@@ -33176,6 +33143,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166587:6038709890:2026-10-07T13:13:58Z:re_review",
+      "comment_id": "6038709890",
+      "comment_version_key": "6038709890:2026-10-07T13:13:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166587#issuecomment-6038709890",
+      "comment_created_at": "2026-10-07T13:13:58Z",
+      "comment_updated_at": "2026-10-07T13:13:58Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166587,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T13:14:54.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/restartmain",
+        "head_sha": "1cff897fae28e2cc1cea1483053274354c2ac10e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
