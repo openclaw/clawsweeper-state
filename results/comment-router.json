@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T01:12:51.687Z",
+  "updated_at": "2026-10-07T01:13:18.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135895:6024033483:2026-10-06T19:37:39Z:re_review",
-      "comment_id": "6024033483",
-      "comment_version_key": "6024033483:2026-10-06T19:37:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-6024033483",
-      "comment_created_at": "2026-10-06T19:37:39Z",
-      "comment_updated_at": "2026-10-06T19:37:39Z",
-      "comment_body_sha256": "023693d30ed59ed840ac4456741c2758c6020e5ba1d29c192cb768a2c2545fcc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135895,
-      "author": "lordratner",
-      "author_id": 49489398,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T19:39:10.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nextcloud-talk-inbound-media",
-        "head_sha": "fd74a2e849af5f8f65b14361b1368e7eb76c7173",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1544:6024020363:2026-10-06T19:36:53Z:clawsweeper_needs_human",
       "comment_id": "6024020363",
@@ -33490,6 +33443,39 @@
         "kind": "pull_request",
         "branch": "fix/publish-rename-noreplace-fallback",
         "head_sha": "d41e0d2546d22a28079569e0426a88bbdc9cd469",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1751:6028731341:2026-10-07T01:12:28Z:clawsweeper_auto_repair",
+      "comment_id": "6028731341",
+      "comment_version_key": "6028731341:2026-10-07T01:12:28Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1751#issuecomment-6028731341",
+      "comment_created_at": "2026-10-07T01:12:28Z",
+      "comment_updated_at": "2026-10-07T01:12:28Z",
+      "comment_body_sha256": "e520cb30b11b7c2ef849af67f1bd9e865e97ed7884645050c5ff812194963a86",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1751,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3ace3e23c01719d8ad73a93b169c928d158f0b15)",
+      "expected_head_sha": "3ace3e23c01719d8ad73a93b169c928d158f0b15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T01:13:18.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/review-no-signoff-without-reason",
+        "head_sha": "3ace3e23c01719d8ad73a93b169c928d158f0b15",
         "cluster_id": null,
         "job_path": null
       }
