@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166672",
+  "mode": "autonomous",
+  "run_id": "37659763937",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37659763937",
+  "head_sha": "34cc1aa014a16295779cdca4e336479bad5636ec",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166672.md",
+  "published_at": "2026-10-07T17:42:44.875Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166672",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166672",
+  "canonical_pr": null,
+  "summary": "Reproduced the Twitch target-normalization defect on preflight main through both production outbound interfaces. Prepared a narrow fix artifact. Local implementation and validation are blocked by the read-only filesystem and unavailable dependencies. No files or GitHub state were changed; live Twitch recovery remains unproven.",
+  "actions": [
+    {
+      "target": "#166672",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#166672",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with dependencies. The defect is established and needs no product decision; only local implementation and validation are blocked."
+    },
+    {
+      "target": "#105909",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166672",
+      "candidate_fix": null,
+      "reason": "Historical evidence only. Preserve contributor credit without reopening or closing this PR again."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166672",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166672",
+      "candidate_fix": null,
+      "reason": "A narrow non-security bug fix remains warranted; the writable executor can implement the artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
