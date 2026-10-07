@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166360",
+  "mode": "autonomous",
+  "run_id": "37551927170",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37551927170",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166360.md",
+  "published_at": "2026-10-07T00:33:03.095Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166360",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fixture repair plan. Source inspection confirms the omission in the available checkout, but runtime reproduction and implementation are blocked by missing dependencies and the read-only host. The executor must verify current main and establish failing-before/passing-after evidence before opening the PR. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#166360",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166360",
+      "candidate_fix": null,
+      "reason": "The producer-local repair is clear. Local implementation is blocked by read-only filesystem permissions and missing dependencies; require actual E2E reproduction on verified current main before editing."
+    },
+    {
+      "target": "#143113",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#166360",
+      "candidate_fix": null,
+      "reason": "Preserve LiuwqGit's independent desktop work and review blockers without repairing, replacing, closing, or merging it in this cluster."
+    },
+    {
+      "target": "#166268",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical item for central OpenClaw security handling. The fixture-only repair preserves existing production admission and does not require changing this PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166360",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166360",
+      "candidate_fix": null,
+      "reason": "Provide an executable, reproduction-gated handoff for the deterministic executor; local host limitations do not create a product-direction decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
