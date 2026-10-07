@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T21:36:52.236Z",
+  "updated_at": "2026-10-07T21:36:55.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166259:6039868882:2026-10-07T14:15:46Z:re_review",
-      "comment_id": "6039868882",
-      "comment_version_key": "6039868882:2026-10-07T14:15:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166259#issuecomment-6039868882",
-      "comment_created_at": "2026-10-07T14:15:46Z",
-      "comment_updated_at": "2026-10-07T14:15:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166259,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T14:20:29.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6binding",
-        "head_sha": "565c6ad68949345f1febcdc8219f961a0a1e8751",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:43562:4324373409:2026-10-07T14:17:42Z:autoclose",
       "comment_id": "4324373409",
@@ -33239,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-main-heap-retained-growth-20260919",
         "head_sha": "c410e1a21cde28a15252163422cb42fbb2db66c4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3856:5914641779:2026-10-07T21:35:54Z:clawsweeper_needs_human",
+      "comment_id": "5914641779",
+      "comment_version_key": "5914641779:2026-10-07T21:35:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3856#issuecomment-5914641779",
+      "comment_created_at": "2026-09-30T15:42:49Z",
+      "comment_updated_at": "2026-10-07T21:35:54Z",
+      "comment_body_sha256": "54d016e15cf9b367fb455a254f5c3fd1c4fffe29753a09806e86d25eedc981db",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured earlier-head macOS/Bun trace shows publisher and audit handlers omitting staged rows, but explicitly lacks a running Conv... (sha=2942a184ec4d908c5b00609216a2c00b7022cb08)",
+      "expected_head_sha": "2942a184ec4d908c5b00609216a2c00b7022cb08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T21:36:55.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f033-unpublished-package-listing",
+        "head_sha": "2942a184ec4d908c5b00609216a2c00b7022cb08",
         "cluster_id": null,
         "job_path": null
       }
