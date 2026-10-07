@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:50:28.504Z",
+  "updated_at": "2026-10-07T22:50:46.565Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166283:6024995939:2026-10-07T15:34:25Z:clawsweeper_needs_human",
-      "comment_id": "6024995939",
-      "comment_version_key": "6024995939:2026-10-07T15:34:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166283#issuecomment-6024995939",
-      "comment_created_at": "2026-10-06T20:37:37Z",
-      "comment_updated_at": "2026-10-07T15:34:25Z",
-      "comment_body_sha256": "0680739f13206efbf27ce20d846e974228a4771bddbcd3dda75e46b8db3d726d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166283,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The integrated candidate has not yet demonstrated the stated all-thread SQL mean and median no-increase requirement; the passing previous-candidate comparison is explicitly historical. (sha=6f9d0a271e0fecd0721008fca19e034ce499d641)",
-      "expected_head_sha": "6f9d0a271e0fecd0721008fca19e034ce499d641",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T16:04:10.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6profile",
-        "head_sha": "6f9d0a271e0fecd0721008fca19e034ce499d641",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166553:6035560096:2026-10-07T15:58:02Z:clawsweeper_needs_human",
       "comment_id": "6035560096",
@@ -33322,6 +33289,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:157739:6048448710:2026-10-07T22:49:46Z:re_review",
+      "comment_id": "6048448710",
+      "comment_version_key": "6048448710:2026-10-07T22:49:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157739#issuecomment-6048448710",
+      "comment_created_at": "2026-10-07T22:49:46Z",
+      "comment_updated_at": "2026-10-07T22:49:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157739,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T22:50:45.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/serialize-unified-tsdown-bundles",
+        "head_sha": "2a2b751e8e81882dcca96688fc76f3a7604dff2c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
