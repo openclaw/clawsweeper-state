@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T03:56:00.047Z",
+  "updated_at": "2026-10-07T03:56:49.636Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146128:6026905323:2026-10-06T22:52:04Z:re_review",
-      "comment_id": "6026905323",
-      "comment_version_key": "6026905323:2026-10-06T22:52:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146128#issuecomment-6026905323",
-      "comment_created_at": "2026-10-06T22:52:04Z",
-      "comment_updated_at": "2026-10-06T22:52:04Z",
-      "comment_body_sha256": "121f2e80a34a12f96fc83b5eb40def67f1e6eff214bbd2b9ed2931c69ae358cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146128,
-      "author": "nocodet888-arch",
-      "author_id": 305874177,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-06T23:00:38.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clickclack-response-cancel-nofollow",
-        "head_sha": "411f1c8fc5cd91acc4f570cf2bda4091744e2547",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166329:6026907173:2026-10-06T22:52:13Z:re_review",
       "comment_id": "6026907173",
@@ -33619,6 +33572,39 @@
         "kind": "pull_request",
         "branch": "feat/codex-settings-account-overview",
         "head_sha": "0a21e762f5bfdd55191e6e6eefb744f61eeb1c11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:91:5513205930:2026-10-07T03:55:57Z:clawsweeper_needs_human",
+      "comment_id": "5513205930",
+      "comment_version_key": "5513205930:2026-10-07T03:55:57Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/91#issuecomment-5513205930",
+      "comment_created_at": "2026-09-02T16:55:44Z",
+      "comment_updated_at": "2026-10-07T03:55:57Z",
+      "comment_body_sha256": "ed0f87c46c2efe2d61d9af7fc6db7f46002868df2fbfaa76f213f755bb158269",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 91,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the exact-head Crabbox evidence runs mocked membership fetch/body regressions at 20 ms, rather than real transp... (sha=a2e927a17c089522b9d9efd26a58bab68444e7bb)",
+      "expected_head_sha": "a2e927a17c089522b9d9efd26a58bab68444e7bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T03:56:49.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/org-membership-abort",
+        "head_sha": "a2e927a17c089522b9d9efd26a58bab68444e7bb",
         "cluster_id": null,
         "job_path": null
       }
