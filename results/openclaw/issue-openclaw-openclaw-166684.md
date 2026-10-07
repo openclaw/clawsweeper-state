@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-166684"
 mode: "autonomous"
-run_id: "37667702855"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37667702855"
+run_id: "37671574874"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37671574874"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-07T18:54:39.960Z"
+published_at: "2026-10-07T20:06:59.045Z"
 canonical: "https://github.com/openclaw/openclaw/issues/166684"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/166684"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37667702855](https://github.com/openclaw/clawsweeper/actions/runs/37667702855)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37671574874](https://github.com/openclaw/clawsweeper/actions/runs/37671574874)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/166684
 
 ## Summary
 
-Reproduced the production matcher stall: rejecting a valid 50-character HTTPS URL took 2,156 ms. Prepared a narrow fix artifact; no files or GitHub state were changed.
+Confirmed the browser URL glob stall on preflight main: rejecting a valid HTTPS URL took 2079.6 ms. Prepared a narrow implementation plan; code changes and post-fix validation remain for the executor.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Reproduced the production matcher stall: rejecting a valid 50-character HTTPS UR
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #166684 | fix_needed | planned | canonical | The reported CPU stall remains reproducible in the inspected main checkout and has a narrow repair in the existing matcher owner. |
-| cluster:issue-openclaw-openclaw-166684 | build_fix_artifact | planned |  | The job authorizes one implementation PR. A narrow executable artifact can proceed without a maintainer decision; merging and closing remain prohibited. |
+| #166684 | fix_needed | planned | canonical | The reported defect remains on the supplied current-main SHA and can be repaired inside the existing matcher without configuration, dependency, or public-contract changes. |
+| cluster:issue-openclaw-openclaw-166684 | build_fix_artifact | planned |  | A focused new implementation PR is authorized. The executor owns writable implementation, validation, review, and publication; closing and merging are prohibited. |
 
 ## Needs Human
 
