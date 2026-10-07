@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166344",
+  "mode": "autonomous",
+  "run_id": "37546148122",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37546148122",
+  "head_sha": "7b767cc6bf7ed7176a94b1e8732b478ea49012d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166344.md",
+  "published_at": "2026-10-07T00:02:29.417Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166344",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166344",
+  "canonical_pr": null,
+  "summary": "Current-main source supports the reported synthetic destination leak. A narrow producer repair is planned, but implementation and runtime reproduction are blocked by the read-only filesystem, unavailable pnpm initialization, and absent dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#166344",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#166344",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout with dependencies. Reproduce on its current main before editing; this worker established source evidence only. No maintainer product decision is unresolved."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166344",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166344",
+      "candidate_fix": null,
+      "reason": "The narrow artifact is ready for executor preparation; actual implementation remains blocked in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
