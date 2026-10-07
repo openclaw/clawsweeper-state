@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-07T02:21:26.107Z",
+  "updated_at": "2026-10-07T02:21:49.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166269:6024569430:2026-10-06T20:34:43Z:clawsweeper_auto_merge",
-      "comment_id": "6024569430",
-      "comment_version_key": "6024569430:2026-10-06T20:34:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166269#issuecomment-6024569430",
-      "comment_created_at": "2026-10-06T20:11:34Z",
-      "comment_updated_at": "2026-10-06T20:34:43Z",
-      "comment_body_sha256": "13ff5b63ddb64cb73d7e29c3bdccb96a2c056439a2b1002ba49fa8c0661b48a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=9ebbaa645852fb094a847368173c73f467cd0c44); current checks are failing: security-fast:FAILURE, build-artifacts:FAILURE, check-additional-extension-package-boundary:FAILURE",
-      "expected_head_sha": "9ebbaa645852fb094a847368173c73f467cd0c44",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-10-06T20:36:06.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-auth-timeout-metadata",
-        "head_sha": "9ebbaa645852fb094a847368173c73f467cd0c44",
-        "cluster_id": "automerge-openclaw-openclaw-166269",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153297:5812000989:2026-09-24T10:01:29Z:re_review",
       "comment_id": "5812000989",
@@ -34205,6 +34158,39 @@
         "kind": "pull_request",
         "branch": "fix/loopback-model-context-window",
         "head_sha": "11d1d8e411ad0b8868ba0711fb57cf3858685e10",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-10-07T02:20:44Z:clawsweeper_auto_repair",
+      "comment_id": "4921233233",
+      "comment_version_key": "4921233233:2026-10-07T02:20:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-4921233233",
+      "comment_created_at": "2026-07-09T03:12:50Z",
+      "comment_updated_at": "2026-10-07T02:20:44Z",
+      "comment_body_sha256": "e509c64f6d54f2daa01d6ee55a8384d9462d38244cf99023467a24da5b7f42fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1d71530f92aa611df83fb13b51f5f775105a4309)",
+      "expected_head_sha": "1d71530f92aa611df83fb13b51f5f775105a4309",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-07T02:21:49.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-052-msteams-inbound-normalize",
+        "head_sha": "1d71530f92aa611df83fb13b51f5f775105a4309",
         "cluster_id": null,
         "job_path": null
       }
