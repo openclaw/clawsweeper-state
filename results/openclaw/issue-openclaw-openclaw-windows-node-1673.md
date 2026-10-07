@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1673"
 mode: "autonomous"
-run_id: "37678081571"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37678081571"
+run_id: "37685808121"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37685808121"
 head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T20:02:53.481Z"
+published_at: "2026-10-07T21:01:04.963Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1673"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1673"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37678081571](https://github.com/openclaw/clawsweeper/actions/runs/37678081571)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37685808121](https://github.com/openclaw/clawsweeper/actions/runs/37685808121)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1673
 
 ## Summary
 
-The reported bug remains present in preflight main 5e3fb40bcc8936a44015de18fac2f5b35a4fb2ac. A narrow repair artifact is ready, but implementation and validation are blocked by the read-only Linux environment. No files or GitHub state were changed.
+The reported failure remains source-verifiable on preflight main 2ba89f377ce8ce3f5ddfc452e4d509329f109114. A narrow implementation plan is ready, but this read-only Linux session cannot patch the branch or complete required Windows validation and visible proof. No code or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ The reported bug remains present in preflight main 5e3fb40bcc8936a44015de18fac2f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1673 | fix_needed | planned | canonical | Source inspection confirms a focused persistence and setup-lifecycle repair. No product decision is required; implementation needs a writable checkout and Windows validation host. |
-| cluster:issue-openclaw-openclaw-windows-node-1673 | build_fix_artifact | planned |  | The artifact is a non-mutating plan for the executor, not an implemented or validated patch. |
-| cluster:issue-openclaw-openclaw-windows-node-1673 | open_fix_pr | blocked |  | Publication is blocked until the executor implements the repair in a writable checkout, inspects the contributor commit, passes all required validation, resolves review findings, and collects isolated native UI and strict MXC proof. |
+| #1673 | fix_needed | planned | canonical | The ordinary catalog synchronization bug remains present. Implementation is blocked by the execution environment, not by unresolved maintainer judgment. |
+| cluster:issue-openclaw-openclaw-windows-node-1673 | build_fix_artifact | planned |  | Artifact preparation is possible despite the read-only checkout. Applying the repair and publishing a validated PR require a writable executor and appropriate Windows proof hosts. |
 
 ## Needs Human
 
