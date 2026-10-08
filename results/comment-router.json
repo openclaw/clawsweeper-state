@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-08T16:53:57.344Z",
+  "updated_at": "2026-10-08T16:49:43.586Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167087:6057946010:2026-10-08T10:32:46Z:re_review",
+      "comment_id": "6057946010",
+      "comment_version_key": "6057946010:2026-10-08T10:32:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167087#issuecomment-6057946010",
+      "comment_created_at": "2026-10-08T10:32:46Z",
+      "comment_updated_at": "2026-10-08T10:32:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167087,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T10:33:37.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/linux-release-request-app-token",
+        "head_sha": "a1ec8d64e1dd85e29f248ea8f3a9d0c8dd381bbb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/collab:1:6038915360:2026-10-08T10:34:48Z:clawsweeper_needs_human",
       "comment_id": "6038915360",
@@ -32949,39 +32996,6 @@
         "kind": "pull_request",
         "branch": "fix/package-completion-admission",
         "head_sha": "4cd5478d0622d613a11a8f3e90dd038b581f1a6d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2748:6064437663:2026-10-08T16:52:57Z:clawsweeper_needs_human",
-      "comment_id": "6064437663",
-      "comment_version_key": "6064437663:2026-10-08T16:52:57Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2748#issuecomment-6064437663",
-      "comment_created_at": "2026-10-08T16:30:53Z",
-      "comment_updated_at": "2026-10-08T16:52:57Z",
-      "comment_body_sha256": "cb8056cc702c9ece3fffced59bea8e5c6c7604bc47140e25fd2aa8293312de46",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2748,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing unpinned Windows desktop and WSL2 allocations will inherit Server 2025 wherever stock fallback applies, but their previously agreed create/use/destroy qualification is not es... (sha=7249d451039b3098a5be0c2a0a2534b18f67f2c4)",
-      "expected_head_sha": "7249d451039b3098a5be0c2a0a2534b18f67f2c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T16:53:57.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-2025-default-v2",
-        "head_sha": "7249d451039b3098a5be0c2a0a2534b18f67f2c4",
         "cluster_id": null,
         "job_path": null
       }
