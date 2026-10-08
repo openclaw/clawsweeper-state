@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:10:22.832Z",
+  "updated_at": "2026-10-08T08:10:48.855Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:74:5550209322:2026-10-08T03:39:15Z:clawsweeper_needs_human",
-      "comment_id": "5550209322",
-      "comment_version_key": "5550209322:2026-10-08T03:39:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/74#issuecomment-5550209322",
-      "comment_created_at": "2026-09-05T07:13:57Z",
-      "comment_updated_at": "2026-10-08T03:39:15Z",
-      "comment_body_sha256": "24bcc397e38a92f28ece953b4cc106dec258ec31603de2b41ae834ade123b813",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 74,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Bootstrap reruns with older or unparseable controllers will now stop before Galaxy and require controller recovery; the explicitly requested decision on unconditional enforcement is n... (sha=6a137ce6b0951ccd33352a3572338500f3ee46df)",
-      "expected_head_sha": "6a137ce6b0951ccd33352a3572338500f3ee46df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T03:40:05.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/apt-ansible-min-version",
-        "head_sha": "6a137ce6b0951ccd33352a3572338500f3ee46df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148397:6051591059:2026-10-08T03:30:49Z:re_review",
       "comment_id": "6051591059",
@@ -33300,6 +33267,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165514:6055618483:2026-10-08T08:09:48Z:re_review",
+      "comment_id": "6055618483",
+      "comment_version_key": "6055618483:2026-10-08T08:09:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165514#issuecomment-6055618483",
+      "comment_created_at": "2026-10-08T08:09:48Z",
+      "comment_updated_at": "2026-10-08T08:09:48Z",
+      "comment_body_sha256": "4c327f3c5c42863855b15666e95129f5e9ef4cc0e4cd767eea3a4ab15dd6d290",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165514,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — exact head bb3329359f11c224dfac556cabd9d9c2dd308eff now has built-gateway http routing, destination-owned auth rejection, existing-index rebuild/retrieval, and a real gpt-5-mini gate documented in the pr body. source commits are unchanged",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T08:10:47.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedding-chat-only-subscription-baseurl",
+        "head_sha": "bb3329359f11c224dfac556cabd9d9c2dd308eff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
