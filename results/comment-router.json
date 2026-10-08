@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:01:12.924Z",
+  "updated_at": "2026-10-08T01:01:15.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5712930296:2026-09-17T10:34:39Z:re_review",
-      "comment_id": "5712930296",
-      "comment_version_key": "5712930296:2026-09-17T10:34:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5712930296",
-      "comment_created_at": "2026-09-17T10:34:39Z",
-      "comment_updated_at": "2026-09-17T10:34:39Z",
-      "comment_body_sha256": "45cd196866c51de10ddae65318b3bb7293cf65ab781c2eaf1f0873468f0b9495",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T19:50:14.696Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5719230552:2026-09-17T18:22:24Z:re_review",
       "comment_id": "5719230552",
@@ -33595,6 +33568,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T01:01:12.924Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163641:5957256577:2026-10-08T01:00:05Z:clawsweeper_needs_human",
+      "comment_id": "5957256577",
+      "comment_version_key": "5957256577:2026-10-08T01:00:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163641#issuecomment-5957256577",
+      "comment_created_at": "2026-10-02T16:58:59Z",
+      "comment_updated_at": "2026-10-08T01:00:05Z",
+      "comment_body_sha256": "f72969da775e900328d66508982479e56b74926d695243e03f66fb4cd99d2d6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163641,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head conflicts with current main; its combined transport wiring and affected behavior must be reviewed after conflict resolution. (sha=f4755919e65766527874813211c0d1f1c90d7324)",
+      "expected_head_sha": "f4755919e65766527874813211c0d1f1c90d7324",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:01:15.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-close-transport-admission",
+        "head_sha": "f4755919e65766527874813211c0d1f1c90d7324",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
