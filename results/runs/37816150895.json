@@ -1,0 +1,52 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37816150895",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37816150895",
+  "head_sha": "3db5c867c82e47c1fe31299625d34c184b9a4d8b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-08T17:28:14.107Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Confirmed the false-hit classification and backfill suppression on preflight main. Prepared a narrow fix artifact. Implementation and required validation are blocked by the read-only workspace, unavailable Bun/dependencies, and unconfigured GitHub authentication. No files or GitHub state changed; no PR opened.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The reported ordinary bug remains present on the supplied main snapshot, and its implementation scope is clear. Keep the issue open while the executor implements and validates the canonical fix."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Apply it in a writable executor with the target toolchain and GitHub read access; inspect the previous run and recover existing work before implementation. Opening the PR remains blocked until all required proof is captured."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
