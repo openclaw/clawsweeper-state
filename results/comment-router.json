@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T09:44:35.950Z",
+  "updated_at": "2026-10-08T09:44:44.972Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161057:6043855758:2026-10-07T18:05:25Z:re_review",
-      "comment_id": "6043855758",
-      "comment_version_key": "6043855758:2026-10-07T18:05:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161057#issuecomment-6043855758",
-      "comment_created_at": "2026-10-07T18:05:25Z",
-      "comment_updated_at": "2026-10-07T18:05:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161057,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:12:21.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/skill-workshop-simplify",
-        "head_sha": "3a7873324fb1c50839084fc950f8a34973fba3bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161057:5888118624:2026-10-08T05:11:03Z:clawsweeper_needs_human",
       "comment_id": "5888118624",
@@ -33209,6 +33162,39 @@
         "kind": "pull_request",
         "branch": "deslop/d07-p2-20261007",
         "head_sha": "b909127a533bb949526195f89ba3fb19a17db4c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167105:6057129991:2026-10-08T09:43:40Z:clawsweeper_needs_human",
+      "comment_id": "6057129991",
+      "comment_version_key": "6057129991:2026-10-08T09:43:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167105#issuecomment-6057129991",
+      "comment_created_at": "2026-10-08T09:43:40Z",
+      "comment_updated_at": "2026-10-08T09:43:40Z",
+      "comment_body_sha256": "b24e7c63be476bea630f890713deff565bac91f38910cacdfe161a56bff73dae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied trace exercises requestEvaluation with a mocked global fetch and synthetic HTTP 401 stream, showing the authentication error while... (sha=64d43ec38f0fed10bc95b4cf27c8285ecf4727ed)",
+      "expected_head_sha": "64d43ec38f0fed10bc95b4cf27c8285ecf4727ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T09:44:44.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/typesafe-error-cancel",
+        "head_sha": "64d43ec38f0fed10bc95b4cf27c8285ecf4727ed",
         "cluster_id": null,
         "job_path": null
       }
