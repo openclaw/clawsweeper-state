@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T12:23:01.071Z",
+  "updated_at": "2026-10-08T12:23:36.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167007:6054512354:2026-10-08T07:06:35Z:re_review",
-      "comment_id": "6054512354",
-      "comment_version_key": "6054512354:2026-10-08T07:06:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167007#issuecomment-6054512354",
-      "comment_created_at": "2026-10-08T07:06:35Z",
-      "comment_updated_at": "2026-10-08T07:06:35Z",
-      "comment_body_sha256": "69ea3958feb379c2e4c2a50abdb78172da604a82b0db0389916ca426c798fa67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167007,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T07:08:15.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/yielded-requester-settle-fence",
-        "head_sha": "66e81c10bd1104281249736504d69a4a27d04659",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166284",
       "comment_id": "repair-loop-label-sweep:automerge:166284",
@@ -33054,6 +33007,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T12:23:01.071Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1728:6059466355:2026-10-08T12:22:40Z:clawsweeper_needs_human",
+      "comment_id": "6059466355",
+      "comment_version_key": "6059466355:2026-10-08T12:22:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1728#issuecomment-6059466355",
+      "comment_created_at": "2026-10-08T12:05:30Z",
+      "comment_updated_at": "2026-10-08T12:22:40Z",
+      "comment_body_sha256": "feded7c56435c70db8512233d9af13b57d416ffc6f23e24ec292432254238932",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add real-Driver recovery logs or terminal output to the PR body, redacting private endpoints, IP addresses, credentials and other private information; updating the body triggers fresh... (sha=7be5a5671d6ca92cbee00688a3b4663afd8d9541)",
+      "expected_head_sha": "7be5a5671d6ca92cbee00688a3b4663afd8d9541",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T12:23:36.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-815",
+        "head_sha": "7be5a5671d6ca92cbee00688a3b4663afd8d9541",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
