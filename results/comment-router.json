@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T13:48:37.289Z",
+  "updated_at": "2026-10-08T13:49:24.466Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167046:6055415602:2026-10-08T07:56:30Z:clawsweeper_needs_human",
-      "comment_id": "6055415602",
-      "comment_version_key": "6055415602:2026-10-08T07:56:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167046#issuecomment-6055415602",
-      "comment_created_at": "2026-10-08T07:56:30Z",
-      "comment_updated_at": "2026-10-08T07:56:30Z",
-      "comment_body_sha256": "93bafa52d17adba90299552f77d24cb72c0243015864213638fd156742b2bf8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167046,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - After the parent merges, retarget this PR to main and review the integrated delta, rerunning affected validation if production inputs change. (sha=42ac6375c4fc3dd8a3a92b426aed4a7cc4d1902c)",
-      "expected_head_sha": "42ac6375c4fc3dd8a3a92b426aed4a7cc4d1902c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T07:58:23.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sqlentry",
-        "head_sha": "42ac6375c4fc3dd8a3a92b426aed4a7cc4d1902c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3866:5919588175:2026-10-08T07:57:45Z:clawsweeper_needs_human",
       "comment_id": "5919588175",
@@ -33255,6 +33222,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166359:6061309716:2026-10-08T13:48:24Z:re_review",
+      "comment_id": "6061309716",
+      "comment_version_key": "6061309716:2026-10-08T13:48:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166359#issuecomment-6061309716",
+      "comment_created_at": "2026-10-08T13:48:24Z",
+      "comment_updated_at": "2026-10-08T13:48:24Z",
+      "comment_body_sha256": "70cdca709725bb82530ca2645bf597097099853a1c6d43428c09610be0a181c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166359,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T13:49:22.747Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-step-labels",
+        "head_sha": "cab65a8cb82eb9ecca9a6dd46fb1d8e58a1bfcfd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
