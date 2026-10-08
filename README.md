@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 8, 2026, 05:26 UTC
+Last source update: Oct 8, 2026, 05:49 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 8, 2026, 05:26 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 8, 2026, 05:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37729363158) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 8, 2026, 05:26 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37732307826) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 8, 2026, 05:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37734169343) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 8, 2026, 05:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37734233096) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 7, 2026, 23:56 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37705046217) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 8, 2026, 05:32 UTC
+Last source update: Oct 8, 2026, 05:36 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1573 | 100% |
-| Run attempts archived | 4583 | audit |
+| Run attempts archived | 4586 | audit |
 | Latest successful clusters | 1201 | 76.4% |
 | Latest failed clusters | 368 | 23.4% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1573 clusters: 403 maintainer action, 443 automation snapshot, 666 intervention needed, 61 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1553](https://github.com/openclaw/openclaw-windows-node/issues/1553) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling without public mutation. It does not establish a fix for #1672..
-- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [#2717](https://github.com/openclaw/crabbox/issues/2717) is automation_blocked: Keep https://github.com/openclaw/crabbox/issues/2717 open as the canonical rollout thread. An executable fix artifact is not safely suppo....
+- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [#466](https://github.com/openclaw/wacli/pull/466) is automation_failed: The ordinary archive-state bug remains valid, and no viable implementation PR exists in the supplied inventory. Keep #466 open..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,12 +187,12 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/wacli](https://github.com/openclaw/wacli) | [#466](https://github.com/openclaw/wacli/pull/466) | automation_failed | The ordinary archive-state bug remains valid, and no viable implementation PR exists in the supplied inventory. Keep #466 open. | Oct 8, 2026, 05:36 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37732864162](https://github.com/openclaw/clawsweeper/actions/runs/37732864162) |
+| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) | automation_failed | The executor needs a writable checkout, project dependencies, and a supported runtime to establish the failing regression, implement the artifact,... | Oct 8, 2026, 05:36 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37732877871](https://github.com/openclaw/clawsweeper/actions/runs/37732877871) |
+| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Oct 8, 2026, 05:34 UTC | [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | [37732739545](https://github.com/openclaw/clawsweeper/actions/runs/37732739545) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [#2717](https://github.com/openclaw/crabbox/issues/2717) | automation_blocked | Keep https://github.com/openclaw/crabbox/issues/2717 open as the canonical rollout thread. An executable fix artifact is not safely supported by th... | Oct 8, 2026, 05:32 UTC | [issue-openclaw-crabbox-2717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2717.md) | [37732614053](https://github.com/openclaw/clawsweeper/actions/runs/37732614053) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166269](https://github.com/openclaw/openclaw/pull/166269) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Oct 8, 2026, 05:19 UTC | [automerge-openclaw-openclaw-166269](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-166269.md) | [37729737370](https://github.com/openclaw/clawsweeper/actions/runs/37729737370) |
-| [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-466](cluster:issue-openclaw-wacli-466) | automation_failed | PR creation remains blocked on implementation in a writable executor and successful required validation. Full behavior must not be claimed fixed be... | Oct 8, 2026, 05:04 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37730219759](https://github.com/openclaw/clawsweeper/actions/runs/37730219759) |
-| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | external base blocker: validation failed only in base-identical files outside the repair delta: scripts/setup-swift-workspace.py, AXorcist | Oct 8, 2026, 04:38 UTC | [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | [37728003854](https://github.com/openclaw/clawsweeper/actions/runs/37728003854) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166952](https://github.com/openclaw/openclaw/pull/166952) | automation_failed | The source finding remains plausible, but the required failing Gateway assertion must be established before any edit. | Oct 8, 2026, 04:34 UTC | [issue-openclaw-openclaw-166952](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166952.md) | [37724736862](https://github.com/openclaw/clawsweeper/actions/runs/37724736862) |
-| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) | automation_failed | Implementation and PR creation are blocked until a writable executor establishes failing regression coverage, implements the fix, and passes requir... | Oct 8, 2026, 04:08 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37725712537](https://github.com/openclaw/clawsweeper/actions/runs/37725712537) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [cluster:issue-openclaw-openclaw-windows-node-1643](cluster:issue-openclaw-openclaw-windows-node-1643) | automation_failed | Implementation requires a writable checkout and Windows validation host. Reuse clawsweeper/issue-openclaw-openclaw-windows-node-1643 and any existi... | Oct 8, 2026, 04:02 UTC | [issue-openclaw-openclaw-windows-node-1643](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1643.md) | [37725194223](https://github.com/openclaw/clawsweeper/actions/runs/37725194223) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#1642](https://github.com/openclaw/openclaw-windows-node/pull/1642) | automation_failed | The documented alpha opt-in remains disconnected from discovery and version ordering. A focused repair is warranted; leave the issue open. | Oct 8, 2026, 04:01 UTC | [issue-openclaw-openclaw-windows-node-1642](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-1642.md) | [37725208078](https://github.com/openclaw/clawsweeper/actions/runs/37725208078) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#166935](https://github.com/openclaw/openclaw/pull/166935) | automation_failed | Local implementation and baseline reproduction require a writable executor with installed dependencies. The narrow fix decision is clear; no mainta... | Oct 8, 2026, 03:59 UTC | [issue-openclaw-openclaw-166935](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166935.md) | [37722635888](https://github.com/openclaw/clawsweeper/actions/runs/37722635888) |
@@ -233,7 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-openclaw-peekaboo-1005 | execute_fix blocked | external base blocker: validation failed only in base-identical files outside the repair delta: scripts/setup-swift-workspace.py, AXorcist | [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | [37728003854](https://github.com/openclaw/clawsweeper/actions/runs/37728003854) |
+| issue-openclaw-peekaboo-1005 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | [37732739545](https://github.com/openclaw/clawsweeper/actions/runs/37732739545) |
 | issue-openclaw-openclaw-166816 | execute_fix blocked | Codex fix worker timed out after 1800000ms | [issue-openclaw-openclaw-166816](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166816.md) | [37703367711](https://github.com/openclaw/clawsweeper/actions/runs/37703367711) |
 | issue-openclaw-openclaw-166725 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, tooling [check:chan... | [issue-openclaw-openclaw-166725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166725.md) | [37683662065](https://github.com/openclaw/clawsweeper/actions/runs/37683662065) |
 | issue-openclaw-notcrawl-101 | needs human | Decide the rich-block Markdown output contract: approve deterministic URL/caption representations for archived bookmarks, embeds, and link previews... | [issue-openclaw-notcrawl-101](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-notcrawl-101.md) | [37689575633](https://github.com/openclaw/clawsweeper/actions/runs/37689575633) |
@@ -268,7 +268,7 @@ State: Failed clusters need inspection
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
-| [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: scripts/setup-swift-workspace.py, AXorcist | [37728003854](https://github.com/openclaw/clawsweeper/actions/runs/37728003854) |
+| [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [37732739545](https://github.com/openclaw/clawsweeper/actions/runs/37732739545) |
 | [issue-openclaw-openclaw-166816](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166816.md) | blocked |  |  | Codex fix worker timed out after 1800000ms | [37703367711](https://github.com/openclaw/clawsweeper/actions/runs/37703367711) |
 | [issue-openclaw-openclaw-166725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166725.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, tooling [check:chan... | [37683662065](https://github.com/openclaw/clawsweeper/actions/runs/37683662065) |
 | [issue-openclaw-openclaw-166708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-166708.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, extensions, extensi... | [37674954566](https://github.com/openclaw/clawsweeper/actions/runs/37674954566) |
