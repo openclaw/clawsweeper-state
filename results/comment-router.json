@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T06:58:16.777Z",
+  "updated_at": "2026-10-08T06:58:20.410Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166880:6050547173:2026-10-08T01:52:54Z:re_review",
-      "comment_id": "6050547173",
-      "comment_version_key": "6050547173:2026-10-08T01:52:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166880#issuecomment-6050547173",
-      "comment_created_at": "2026-10-08T01:52:54Z",
-      "comment_updated_at": "2026-10-08T01:52:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166880,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T01:53:46.776Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-progress-react-166859",
-        "head_sha": "cc508666e872990bb761aa01dc08390425aa6648",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137484:5530546903:2026-10-08T01:53:55Z:clawsweeper_auto_repair",
       "comment_id": "5530546903",
@@ -33522,6 +33475,39 @@
         "kind": "pull_request",
         "branch": "d94-deployer-revision-read",
         "head_sha": "07a1463a1ee2ac8eea5c70b290599a782054a5ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:854:6053059971:2026-10-08T06:57:23Z:clawsweeper_needs_human",
+      "comment_id": "6053059971",
+      "comment_version_key": "6053059971:2026-10-08T06:57:23Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/854#issuecomment-6053059971",
+      "comment_created_at": "2026-10-08T05:31:34Z",
+      "comment_updated_at": "2026-10-08T06:57:23Z",
+      "comment_body_sha256": "c4a6881cef8ef63f7d4067b9543d13fafaf0c1544dfda8ad5c8c8fdef3ed00f7",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Attach inspectable after-fix output from the reported native smoke and migrated consumer runs, such as terminal screenshots, logs, or a validation transcript. Redact IP addresses, key... (sha=f8e83615af10724bd70f28ecc69e0a791a544e87)",
+      "expected_head_sha": "f8e83615af10724bd70f28ecc69e0a791a544e87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T06:58:20.410Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "campaign/native-dead-exports",
+        "head_sha": "f8e83615af10724bd70f28ecc69e0a791a544e87",
         "cluster_id": null,
         "job_path": null
       }
