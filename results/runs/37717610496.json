@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166898",
+  "mode": "autonomous",
+  "run_id": "37717610496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37717610496",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166898.md",
+  "published_at": "2026-10-08T02:37:12.612Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166898",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166898",
+  "canonical_pr": null,
+  "summary": "The stale assertion remains on preflight main 1f891df2c45f0ac634d23b0fefded80e693a5978. Reproduction stopped before test startup because Corepack cannot write to the read-only filesystem; dependencies are also absent. No files or GitHub state changed. A narrow repair artifact is ready for an executor with a writable isolated checkout.",
+  "actions": [
+    {
+      "target": "#166898",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166898",
+      "candidate_fix": null,
+      "reason": "The source mismatch is clear; implementation must first establish the actual failing test on a supported writable isolated host."
+    },
+    {
+      "target": "#150280",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166898",
+      "candidate_fix": null,
+      "reason": "Preserve the merged optimization and its contributor attribution."
+    },
+    {
+      "target": "#166778",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166898",
+      "candidate_fix": null,
+      "reason": "Historical context only; production compression behavior stays unchanged."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166898",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166898",
+      "candidate_fix": null,
+      "reason": "Prepare one conditional test-only repair for the deterministic executor; publication requires successful original reproduction, repair validation, and fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
