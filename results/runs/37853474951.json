@@ -1,0 +1,89 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37853474951",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37853474951",
+  "head_sha": "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-08T22:31:12.090Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Implementation stopped without a PR: the reset-requiring recovery failure remains unexplained and has not been reproduced on stock current main. The inspected timeout scheduling could delay recovery under continuous queue traffic, but the supplied diagnostics do not establish that condition.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The operator requires stopping when the request is underspecified. Capture a failure-time trace and reproduce on stock current main or isolate a minimal extension before choosing a repair and claiming that it satisfies #67. No product decision is required."
+    },
+    {
+      "target": "#15",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical connection-lifecycle context; not a proven fix for #67."
+    },
+    {
+      "target": "#23",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context outside the connection-recovery implementation scope."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related custom-firmware availability report, not a demonstrated duplicate."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#67",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
