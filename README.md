@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 8, 2026, 05:49 UTC
+Last source update: Oct 8, 2026, 06:19 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Oct 8, 2026, 05:49 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 8, 2026, 05:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37734169343) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 8, 2026, 06:19 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37734726132) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 8, 2026, 05:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37734233096) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 7, 2026, 23:56 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37705046217) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 8, 2026, 05:36 UTC
+Last source update: Oct 8, 2026, 06:01 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1573 | 100% |
-| Run attempts archived | 4586 | audit |
+| Run attempts archived | 4587 | audit |
 | Latest successful clusters | 1201 | 76.4% |
 | Latest failed clusters | 368 | 23.4% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1573 clusters: 403 maintainer action, 443 automation snapshot, 666 intervention needed, 61 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) [#1553](https://github.com/openclaw/openclaw-windows-node/issues/1553) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling without public mutation. It does not establish a fix for #1672..
-- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [#466](https://github.com/openclaw/wacli/pull/466) is automation_failed: The ordinary archive-state bug remains valid, and no viable implementation PR exists in the supplied inventory. Keep #466 open..
+- Intervention first: [openclaw/wacli](https://github.com/openclaw/wacli) [#466](https://github.com/openclaw/wacli/pull/466) is automation_failed: The bug is still supported by current source. Implement one ordered reconciliation path; keep the issue open..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/wacli](https://github.com/openclaw/wacli) | [#466](https://github.com/openclaw/wacli/pull/466) | automation_failed | The ordinary archive-state bug remains valid, and no viable implementation PR exists in the supplied inventory. Keep #466 open. | Oct 8, 2026, 05:36 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37732864162](https://github.com/openclaw/clawsweeper/actions/runs/37732864162) |
+| [openclaw/wacli](https://github.com/openclaw/wacli) | [#466](https://github.com/openclaw/wacli/pull/466) | automation_failed | The bug is still supported by current source. Implement one ordered reconciliation path; keep the issue open. | Oct 8, 2026, 06:01 UTC | [issue-openclaw-wacli-466](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-466.md) | [37735016590](https://github.com/openclaw/clawsweeper/actions/runs/37735016590) |
 | [steipete/birdclaw](https://github.com/steipete/birdclaw) | [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) | automation_failed | The executor needs a writable checkout, project dependencies, and a supported runtime to establish the failing regression, implement the artifact,... | Oct 8, 2026, 05:36 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37732877871](https://github.com/openclaw/clawsweeper/actions/runs/37732877871) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Oct 8, 2026, 05:34 UTC | [issue-openclaw-peekaboo-1005](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-1005.md) | [37732739545](https://github.com/openclaw/clawsweeper/actions/runs/37732739545) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [#2717](https://github.com/openclaw/crabbox/issues/2717) | automation_blocked | Keep https://github.com/openclaw/crabbox/issues/2717 open as the canonical rollout thread. An executable fix artifact is not safely supported by th... | Oct 8, 2026, 05:32 UTC | [issue-openclaw-crabbox-2717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2717.md) | [37732614053](https://github.com/openclaw/clawsweeper/actions/runs/37732614053) |
