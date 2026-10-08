@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-08T02:50:20.335Z",
+  "updated_at": "2026-10-08T02:48:28.282Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156433:5804694253:2026-09-23T23:32:22Z:re_review",
+      "comment_id": "5804694253",
+      "comment_version_key": "5804694253:2026-09-23T23:32:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156433#issuecomment-5804694253",
+      "comment_created_at": "2026-09-23T23:32:22Z",
+      "comment_updated_at": "2026-09-23T23:32:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156433,
+      "author": "Orionation",
+      "author_id": 260579663,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-07T22:03:55.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-preflight-retry-timeout-cache",
+        "head_sha": "5ced163e0082318aa4a38f4f090ef649884c0823",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156433:5793230027:2026-10-07T22:03:02Z:clawsweeper_auto_repair",
       "comment_id": "5793230027",
@@ -33459,39 +33506,6 @@
         "kind": "pull_request",
         "branch": "kiro-monthly-pace",
         "head_sha": "893a68b80e7796db22d7c303108af6b62d9a73f2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166889:6050701671:2026-10-08T02:49:15Z:clawsweeper_needs_human",
-      "comment_id": "6050701671",
-      "comment_version_key": "6050701671:2026-10-08T02:49:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166889#issuecomment-6050701671",
-      "comment_created_at": "2026-10-08T02:07:01Z",
-      "comment_updated_at": "2026-10-08T02:49:15Z",
-      "comment_body_sha256": "db411355d0cb6915ff6b991a712d1d889972499b339c755bd82dfd443b0586f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166889,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7a0ab1eb73236416f3cacd225bb7e32920d1f956)",
-      "expected_head_sha": "7a0ab1eb73236416f3cacd225bb7e32920d1f956",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T02:50:20.335Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/heartbeat-s1-20261007",
-        "head_sha": "7a0ab1eb73236416f3cacd225bb7e32920d1f956",
         "cluster_id": null,
         "job_path": null
       }
