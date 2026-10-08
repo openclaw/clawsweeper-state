@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37732877871"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37732877871"
+run_id: "37744815429"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37744815429"
 head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T05:36:12.279Z"
+published_at: "2026-10-08T07:44:40.572Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37732877871](https://github.com/openclaw/clawsweeper/actions/runs/37732877871)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37744815429](https://github.com/openclaw/clawsweeper/actions/runs/37744815429)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Verified the false-hit defect on preflight main. A narrow fix artifact is ready; implementation is blocked by the read-only workspace and missing dependencies. No code or GitHub state changed.
+Confirmed the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A focused repair remains viable. Local implementation and validation are blocked by read-only access, missing dependencies/Bun, and an unsupported Node version; the executor repair artifact is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Verified the false-hit defect on preflight main. A narrow fix artifact is ready;
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The reported defect remains source-proven and has a bounded implementation path. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Emit one narrow bug-fix plan for deterministic executor implementation. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | The executor needs a writable checkout, project dependencies, and a supported runtime to establish the failing regression, implement the artifact, pass validation, and create or update the single issue PR. |
+| #233 | fix_needed | blocked | canonical | Implementation requires a writable executor checkout with the repository toolchain. This is an environment blocker, not an unresolved product decision. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The narrow non-security bug has no hydrated viable implementation PR. The artifact can be applied after the executor resolves the local environment blocker. |
 
 ## Needs Human
 
