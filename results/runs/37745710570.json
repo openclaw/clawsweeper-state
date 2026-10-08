@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37745710570",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37745710570",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-08T07:52:50.906Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Confirmed the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow repair remains viable. Implementation and PR creation are blocked by read-only filesystem permissions, missing dependencies/Bun, unsupported local Node, and unavailable GitHub DNS. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Keep #233 as the canonical request and implement the focused repair through the artifact."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The repair can be planned precisely despite this worker's implementation restrictions."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked until an executor can coordinate the existing attempt, obtain a writable checkout and supported toolchain, implement the artifact, and pass the required tests and isolated CLI proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
