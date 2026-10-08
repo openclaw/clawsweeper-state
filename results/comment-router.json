@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T13:18:51.616Z",
+  "updated_at": "2026-10-08T13:20:07.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142571:5935137115:2026-10-01T15:52:31Z:re_review",
-      "comment_id": "5935137115",
-      "comment_version_key": "5935137115:2026-10-01T15:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142571#issuecomment-5935137115",
-      "comment_created_at": "2026-10-01T15:52:31Z",
-      "comment_updated_at": "2026-10-01T15:52:31Z",
-      "comment_body_sha256": "81030515c90452ba6b2abe6d690ecca874d9f9ddb3223fc1cc755e13ab6e1bd1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142571,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T07:38:26.800Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-login-account-scope",
-        "head_sha": "514c35cce9b5e80859f0482b70660ce0b826f591",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3907:5976646881:2026-10-08T07:37:22Z:clawsweeper_needs_human",
       "comment_id": "5976646881",
@@ -33102,6 +33055,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-codex-ultrafast-policy-warning",
         "head_sha": "94c7bb31c2467ad8d4957c62daca46614979b7ff",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148397:5668044693:2026-10-08T13:18:44Z:clawsweeper_needs_human",
+      "comment_id": "5668044693",
+      "comment_version_key": "5668044693:2026-10-08T13:18:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148397#issuecomment-5668044693",
+      "comment_created_at": "2026-09-14T17:32:34Z",
+      "comment_updated_at": "2026-10-08T13:18:44Z",
+      "comment_body_sha256": "73b48bed0543d7fec2fcaddf21111694af9dec093733cdfa25dd2f23af63f7eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The shared serializer and run-to-stream intent are exercised through real production code against synthetic HTTP responses, but no current real... (sha=7d35535d8f7b0e0f142240a04fe2d4cb9c87ee34)",
+      "expected_head_sha": "7d35535d8f7b0e0f142240a04fe2d4cb9c87ee34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T13:20:07.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qwen-chat-template-reasoning-effort",
+        "head_sha": "7d35535d8f7b0e0f142240a04fe2d4cb9c87ee34",
         "cluster_id": null,
         "job_path": null
       }
