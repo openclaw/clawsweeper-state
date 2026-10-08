@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:10:46.487Z",
+  "updated_at": "2026-10-08T05:10:54.854Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166823:6049332788:2026-10-08T00:04:04Z:re_review",
-      "comment_id": "6049332788",
-      "comment_version_key": "6049332788:2026-10-08T00:04:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166823#issuecomment-6049332788",
-      "comment_created_at": "2026-10-08T00:04:04Z",
-      "comment_updated_at": "2026-10-08T00:04:04Z",
-      "comment_body_sha256": "2d56554a39be16f51964ce62cdacd7263c6a965a74a84aa624289a5e4fe4f945",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166823,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review df3530f01528196f805a44a484d7837a6b1283b8. release-tree replay found an additional missing recovery-settlement boundary; the follow-up uses the existing authoritative settled probe before retry. all eight release-tree writer/lifecycle cases pass. required repeated runs are now pinned to the corrected main head; prior-head runs are not counted",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T00:04:50.441Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-plugin-cleanup-fixture-20261007",
-        "head_sha": "df3530f01528196f805a44a484d7837a6b1283b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166824:6049265581:2026-10-08T00:04:35Z:clawsweeper_needs_human",
       "comment_id": "6049265581",
@@ -33592,6 +33545,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-interactive-maintenance",
         "head_sha": "0d8ecefc028a0c004ad519da40bd014c103d9928",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:101:6043180537:2026-10-08T05:09:59Z:clawsweeper_needs_human",
+      "comment_id": "6043180537",
+      "comment_version_key": "6043180537:2026-10-08T05:09:59Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/101#issuecomment-6043180537",
+      "comment_created_at": "2026-10-07T17:27:15Z",
+      "comment_updated_at": "2026-10-08T05:09:59Z",
+      "comment_body_sha256": "48aa750ef6b432dc8036335202e100fc5a6f990e6ee86abe12cc274f8037c8bf",
+      "repo": "openclaw/libterminal",
+      "issue_number": 101,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Inspect the detailed failed Check log outside the blocked review proxy, identify the failing subcommand, and resolve only a demonstrated incompatibility introduced by this update. (sha=2abc101fc0a9ffff75a0aa3baee5e9917cd7c412)",
+      "expected_head_sha": "2abc101fc0a9ffff75a0aa3baee5e9917cd7c412",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T05:10:54.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-a7d64c6992",
+        "head_sha": "2abc101fc0a9ffff75a0aa3baee5e9917cd7c412",
         "cluster_id": null,
         "job_path": null
       }
