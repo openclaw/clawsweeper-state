@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-10-08T23:39:44.901Z",
+  "updated_at": "2026-10-08T23:39:57.595Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166993",
-      "comment_id": "repair-loop-label-sweep:automerge:166993",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166993",
-      "comment_created_at": "2026-10-08T17:58:13.251Z",
-      "comment_updated_at": "2026-10-08T17:58:13.251Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166993,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; current checks are failing: android-test-play:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T17:59:18.852Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-identity-schema-compat",
-        "head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
-        "cluster_id": "automerge-openclaw-openclaw-166993",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167284:6062536048:2026-10-08T17:58:24Z:clawsweeper_needs_human",
       "comment_id": "6062536048",
@@ -32921,6 +32869,39 @@
         "kind": "pull_request",
         "branch": "fix/ollama-rediscover-pulled-models",
         "head_sha": "392ff91a365222bd301145d2ce5bb14218514a7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167510:6070664775:2026-10-08T23:38:48Z:clawsweeper_needs_human",
+      "comment_id": "6070664775",
+      "comment_version_key": "6070664775:2026-10-08T23:38:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167510#issuecomment-6070664775",
+      "comment_created_at": "2026-10-08T22:54:40Z",
+      "comment_updated_at": "2026-10-08T23:38:48Z",
+      "comment_body_sha256": "3d173a9f0a898b45474e25a82dc9b13e629fdd662f7d7af8d4d6e8be3afaf67e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167510,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c60b03547759366891fdbb48f1a69aa4f1a2dfce)",
+      "expected_head_sha": "c60b03547759366891fdbb48f1a69aa4f1a2dfce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T23:39:57.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-postmortem-f01-20261008",
+        "head_sha": "c60b03547759366891fdbb48f1a69aa4f1a2dfce",
         "cluster_id": null,
         "job_path": null
       }
