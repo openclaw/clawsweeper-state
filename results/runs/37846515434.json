@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37846515434",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37846515434",
+  "head_sha": "c48313d78bce80ea5e60ef57c397341e349cd837",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-08T21:30:05.827Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Keep #67 open. The customized firmware's reset-requiring recovery failure is not attributable to current main from the available evidence, so no issue-closing implementation PR is justified. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The recovery report remains unresolved and has unique investigation work; neither duplicate closure nor an already-fixed classification is supported."
+    },
+    {
+      "target": "#15",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical reconnect evidence only."
+    },
+    {
+      "target": "#23",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Audio repair is outside this implementation scope."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related worker-liveness context with a distinct, unproven root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "No narrow change can yet be shown to satisfy #67, so this implementation action is non-mutating and no executable fix artifact is justified. Needed evidence is a stock/current-main reproducer or minimal extension, plus failure-time connection state, elapsed deadline, queue traffic and worker progress showing why existing timeout/reconnect recovery stopped. A watchdog change alone would be speculative."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 3,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#67 implementation only: provide a stock/current-main reproducer or minimal extension and failure-time connection state, elapsed deadline, queue traffic and worker progress to identify why the existing 12-second timeout and reconnect recovery stopped."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#67",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
