@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T22:20:00.484Z",
+  "updated_at": "2026-10-08T22:20:17.756Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163238:5985097841:2026-10-04T22:22:03Z:re_review",
-      "comment_id": "5985097841",
-      "comment_version_key": "5985097841:2026-10-04T22:22:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163238#issuecomment-5985097841",
-      "comment_created_at": "2026-10-04T22:22:03Z",
-      "comment_updated_at": "2026-10-04T22:22:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163238,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T16:22:42.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1089",
-        "head_sha": "3033c7d66ef3f2b500abe406e0e4ca4666eb15ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163238:5945490579:2026-10-08T16:21:30Z:clawsweeper_auto_repair",
       "comment_id": "5945490579",
@@ -33116,6 +33069,39 @@
         "kind": "pull_request",
         "branch": "feat/context-engine-transcript-api",
         "head_sha": "7e69878f92eda7b0e1ba1e53b6f88aac35aec9b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4375:6068763069:2026-10-08T22:19:20Z:clawsweeper_needs_human",
+      "comment_id": "6068763069",
+      "comment_version_key": "6068763069:2026-10-08T22:19:20Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4375#issuecomment-6068763069",
+      "comment_created_at": "2026-10-08T20:47:55Z",
+      "comment_updated_at": "2026-10-08T22:19:20Z",
+      "comment_body_sha256": "ff7da3acb0a6befe700e96e79450cd99b9034d802e2d01f4a07c9664eaeae389",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4375,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed live receipt reader, feed selection, and Homebrew upgrade target have synthetic coverage only. Provide terminal output, logs, or a recording from the rebuilt app on real o... (sha=a87a86b0fec8764cf8cade7e80ac41841b094ed9)",
+      "expected_head_sha": "a87a86b0fec8764cf8cade7e80ac41841b094ed9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T22:20:17.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-official-cask",
+        "head_sha": "a87a86b0fec8764cf8cade7e80ac41841b094ed9",
         "cluster_id": null,
         "job_path": null
       }
