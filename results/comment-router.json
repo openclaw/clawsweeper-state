@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T09:36:58.171Z",
+  "updated_at": "2026-10-08T09:37:25.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166727:6052722051:2026-10-08T05:06:38Z:re_review",
-      "comment_id": "6052722051",
-      "comment_version_key": "6052722051:2026-10-08T05:06:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166727#issuecomment-6052722051",
-      "comment_created_at": "2026-10-08T05:06:38Z",
-      "comment_updated_at": "2026-10-08T05:06:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166727,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:07:48.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-url-glob-linear",
-        "head_sha": "efecf4aaa9aef8688a935134519c60df57187c48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139998:5558462517:2026-10-08T05:06:50Z:clawsweeper_auto_repair",
       "comment_id": "5558462517",
@@ -33265,6 +33218,39 @@
         "kind": "pull_request",
         "branch": "docs/rfc-0080-credential-gateway",
         "head_sha": "a9379635d5c89e2cc4bf613c7f45b96f27de2d03",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:160:5762738687:2026-10-08T09:36:30Z:clawsweeper_needs_human",
+      "comment_id": "5762738687",
+      "comment_version_key": "5762738687:2026-10-08T09:36:30Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/160#issuecomment-5762738687",
+      "comment_created_at": "2026-09-21T15:07:56Z",
+      "comment_updated_at": "2026-10-08T09:36:30Z",
+      "comment_body_sha256": "e43cefc8d8a94badd474b328b012f138e9e9e1ad9894d082f068dbc437ddac4b",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Sync with current main and validate the shared macOS app-integrity checker against its OpenClaw 2026.9.5 artifact. (sha=7e6211a9be86b45c6b81d265d787ad3f95d92d44)",
+      "expected_head_sha": "7e6211a9be86b45c6b81d265d787ad3f95d92d44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T09:37:25.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/verify-installed-macos-app",
+        "head_sha": "7e6211a9be86b45c6b81d265d787ad3f95d92d44",
         "cluster_id": null,
         "job_path": null
       }
