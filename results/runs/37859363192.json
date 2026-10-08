@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-101",
+  "mode": "autonomous",
+  "run_id": "37859363192",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37859363192",
+  "head_sha": "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-101.md",
+  "published_at": "2026-10-08T23:30:27.601Z",
+  "canonical": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_issue": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_pr": null,
+  "summary": "Verified the rich-block URL omission on preflight main. Prepared a narrow implementation artifact; local implementation and validation are blocked by read-only filesystem access and unavailable Go 1.27.1. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#101",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "The URL/caption rendering gap remains on supplied current main and has a narrow fix path. Table support does not cover it."
+    },
+    {
+      "target": "#155",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#161",
+      "reason": "Historical table-fix context; no closure action is permitted or needed."
+    },
+    {
+      "target": "#161",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; not an active implementation candidate for #101."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-101",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "The artifact is reviewable, but implementation is blocked until the executor has a writable checkout and Go 1.27.1 or newer."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
