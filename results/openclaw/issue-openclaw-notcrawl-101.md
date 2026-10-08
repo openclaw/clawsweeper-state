@@ -2,12 +2,12 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-101"
 mode: "autonomous"
-run_id: "37853260734"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37853260734"
-head_sha: "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74"
+run_id: "37856898919"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37856898919"
+head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-08T22:29:05.737Z"
+published_at: "2026-10-08T23:03:51.186Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37853260734](https://github.com/openclaw/clawsweeper/actions/runs/37853260734)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37856898919](https://github.com/openclaw/clawsweeper/actions/runs/37856898919)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/notcrawl/issues/101
 
 ## Summary
 
-The rich-block export gap remains on current main, but the hydrated discussion leaves its Markdown output contract unresolved. Stop without a PR pending that specific product decision. No code or GitHub mutations were made.
+Rich-block URL omission remains on current main, but a URL/caption-only change would not establish that the separate transclusion request is satisfied. No implementation or PR is recommended until that scope is resolved.
 
 ## Impact
 
@@ -66,10 +66,10 @@ The rich-block export gap remains on current main, but the hydrated discussion l
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101 | needs_human | blocked | needs_human | The implementation trigger authorizes investigation but does not resolve the explicitly deferred output contract. Confirm the accepted rich-block representation and whether a URL/caption-only implementation satisfies #101 before producing a closing-reference PR. |
-| #155 | keep_closed | skipped | related | Historical evidence only; no closure action is appropriate. |
-| #161 | keep_closed | skipped | related | The merged PR does not fulfill #101 and is not an implementation candidate for this run. |
+| #101 | needs_human | blocked | canonical | A focused URL renderer is plausible, but the job requires an implementation satisfying #101 and a closing reference. Whether that partial scope satisfies the issue remains unresolved; the separate transclusion behavior lacks a concrete archive and source-mode reproduction. |
+| #155 | keep_closed | skipped | related | Historical evidence; simple-table support does not satisfy #101. |
+| #161 | keep_closed | skipped | related | Merged historical context with no remaining action in this cluster. |
 
 ## Needs Human
 
-- #101: Approve the Markdown representation for URL-bearing rich blocks and confirm whether URL/caption rendering alone satisfies the issue, with transclusion deduplication handled separately.
+- #101: Decide whether a URL/caption-only implementation may satisfy the issue, with transclusion deduplication tracked separately. If both are required, provide a concrete archive and source-mode reproduction for duplication before planning the combined implementation.
