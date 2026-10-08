@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-101"
 mode: "autonomous"
-run_id: "37689575633"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37689575633"
-head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
+run_id: "37839785913"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37839785913"
+head_sha: "c48313d78bce80ea5e60ef57c397341e349cd837"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-07T21:32:23.877Z"
+published_at: "2026-10-08T20:34:45.517Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37689575633](https://github.com/openclaw/clawsweeper/actions/runs/37689575633)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37839785913](https://github.com/openclaw/clawsweeper/actions/runs/37839785913)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/notcrawl/issues/101
 
 ## Summary
 
-Rich-block URL context remains missing on preflight main. The hydrated discussion leaves the output contract unresolved, so implementation stops pending that specific product decision. No code or GitHub mutations occurred.
+The rich-block URL omission remains on current main. Implementation stops at the documented product decision: approve the URL/caption output contract and determine whether that narrower change satisfies #101 while transclusion remains separate. No code or GitHub state changed; local implementation is also blocked by the read-only workspace.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,10 @@ Rich-block URL context remains missing on preflight main. The hydrated discussio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101 | needs_human | blocked | needs_human | The job requires stopping when a product decision remains. Resolve the explicitly flagged rich-block Markdown contract and whether URL/caption support alone satisfies #101 before preparing an implementation PR or closing reference. |
+| #101 | needs_human | planned | canonical | Choose whether a focused archived-URL/caption representation fulfills this issue or should be a partial proposal that leaves it open. A closing reference cannot be justified for the broader request from the available evidence. |
+| #155 | keep_closed | skipped | related | Historical context only. |
+| #161 | keep_closed | skipped | related | Merged historical context; it does not satisfy #101. |
 
 ## Needs Human
 
-- Decide the rich-block Markdown output contract: approve deterministic URL/caption representations for archived bookmarks, embeds, and link previews, and confirm whether transclusion semantics remain a separate follow-up.
+- For https://github.com/openclaw/notcrawl/issues/101, approve a deterministic archived URL/caption representation and decide whether transclusion remains separate, so the implementation scope and closing reference are justified.
