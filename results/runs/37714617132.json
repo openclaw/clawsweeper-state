@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-466",
+  "mode": "autonomous",
+  "run_id": "37714617132",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37714617132",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-466.md",
+  "published_at": "2026-10-08T01:50:53.082Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/466",
+  "canonical_pr": null,
+  "summary": "Verified the archive-reconciliation gap on supplied main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused fix remains viable, but implementation and tests are blocked by the read-only filesystem. No files or GitHub state changed; no PR is ready. Required real-account confirmation remains outstanding.",
+  "actions": [
+    {
+      "target": "#466",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "The bug remains present in source. Preserve #466 as the canonical issue; implementation requires a writable executor and the validation described in the fix artifact."
+    },
+    {
+      "target": "#468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Historical partial implementation only. Do not reopen, adopt unchanged, or emit another closure action. Preserve AdamMagued's contribution in the new implementation's context."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-466",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#466",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation is blocked by enforced read-only access; PR readiness additionally requires deterministic validation and real-account proof. Do not open a PR from this unimplemented result."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
