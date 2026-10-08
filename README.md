@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 8, 2026, 21:41 UTC
+Last source update: Oct 8, 2026, 21:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 8, 2026, 21:41 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 8, 2026, 21:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37843352938) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 8, 2026, 21:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37847800725) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 8, 2026, 21:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37847132372) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 8, 2026, 21:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37849183024) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 8, 2026, 21:22 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37846280678) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 8, 2026, 21:43 UTC
+Last source update: Oct 8, 2026, 21:45 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1600 | 100% |
-| Run attempts archived | 4662 | audit |
+| Run attempts archived | 4663 | audit |
 | Latest successful clusters | 1203 | 75.2% |
 | Latest failed clusters | 393 | 24.6% |
 | Latest cancelled clusters | 4 | 0.3% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1600 clusters: 405 maintainer action, 443 automation snapshot, 689 intervention needed, 63 no pending action, 0 completed.
 - Maintainer first: [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) [cluster:issue-openclaw-esp-openclaw-node-67](cluster:issue-openclaw-esp-openclaw-node-67) is maintainer_input: #67 implementation only: provide a stock/current-main reproducer or minimal extension and failure-time connection state, elapsed deadline....
-- Intervention first: [openclaw/notcrawl](https://github.com/openclaw/notcrawl) [#101](https://github.com/openclaw/notcrawl/pull/101) is automation_failed: A focused archived URL/caption rendering path remains viable. Implementation is blocked by this session's read-only filesystem, rather th....
+- Intervention first: [steipete/birdclaw](https://github.com/steipete/birdclaw) [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) is automation_failed: PR creation is blocked until the executor implements and validates the canonical fix on clawsweeper/issue-steipete-birdclaw-233, includin....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) | automation_failed | PR creation is blocked until the executor implements and validates the canonical fix on clawsweeper/issue-steipete-birdclaw-233, including real CLI... | Oct 8, 2026, 21:45 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37848436437](https://github.com/openclaw/clawsweeper/actions/runs/37848436437) |
 | [openclaw/notcrawl](https://github.com/openclaw/notcrawl) | [#101](https://github.com/openclaw/notcrawl/pull/101) | automation_failed | A focused archived URL/caption rendering path remains viable. Implementation is blocked by this session's read-only filesystem, rather than a maint... | Oct 8, 2026, 21:43 UTC | [issue-openclaw-notcrawl-101](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-notcrawl-101.md) | [37848178555](https://github.com/openclaw/clawsweeper/actions/runs/37848178555) |
-| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [#233](https://github.com/steipete/birdclaw/pull/233) | automation_failed | The ordinary expansion correctness defect remains present and has a narrow repair path without changing the network trust boundary. Keep the issue... | Oct 8, 2026, 21:00 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37843092605](https://github.com/openclaw/clawsweeper/actions/runs/37843092605) |
 | [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) | [cluster:issue-openclaw-openclaw-windows-packaging-161](cluster:issue-openclaw-openclaw-windows-packaging-161) | automation_failed | This is a coordinated dependency and release-input migration rather than a tiny adapter patch. Keep this artifact non-executable until SDK contract... | Oct 8, 2026, 20:35 UTC | [issue-openclaw-openclaw-windows-packaging-161](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-161.md) | [37840034108](https://github.com/openclaw/clawsweeper/actions/runs/37840034108) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [cluster:issue-openclaw-crabbox-2708](cluster:issue-openclaw-crabbox-2708) | automation_failed | Implementation is blocked on an external provider capability. With queued state and no authoritative association, Crabbox cannot distinguish slow a... | Oct 8, 2026, 20:04 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [37835702341](https://github.com/openclaw/clawsweeper/actions/runs/37835702341) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#167382](https://github.com/openclaw/openclaw/pull/167382) | automation_failed | Implementation is blocked on a writable executor checkout with installed repository dependencies. Establish the failing owner-boundary regression b... | Oct 8, 2026, 19:29 UTC | [issue-openclaw-openclaw-167382](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-167382.md) | [37823684593](https://github.com/openclaw/clawsweeper/actions/runs/37823684593) |
