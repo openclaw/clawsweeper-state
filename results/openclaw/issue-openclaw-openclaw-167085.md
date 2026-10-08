@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-167085"
 mode: "autonomous"
-run_id: "37756796302"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37756796302"
-head_sha: "dbd42faaac5974121b30866352ac0c3718ce1ed9"
+run_id: "37762204836"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37762204836"
+head_sha: "7204939939a660c8fd03105b5a49e2988f33db57"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T09:33:54.157Z"
+published_at: "2026-10-08T11:38:31.318Z"
 canonical: "https://github.com/openclaw/openclaw/issues/167085"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/167085"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37756796302](https://github.com/openclaw/clawsweeper/actions/runs/37756796302)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37762204836](https://github.com/openclaw/clawsweeper/actions/runs/37762204836)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/167085
 
 ## Summary
 
-Current-main source supports a narrow explicit-message-cap repair. Implementation and reproduction are blocked by the read-only host: pnpm failed before tests started, dependencies are absent, and Claude CLI is unavailable. No files or GitHub state changed.
+Source inspection confirms a narrow explicit-message profile parity gap on preflight main 245b7f6fb2ad8974a5c481359635f9fa50070caf. Fix artifact prepared; implementation and required reproduction are blocked by the read-only checkout, absent dependencies, and absent Claude CLI. No code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current-main source supports a narrow explicit-message-cap repair. Implementatio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167085 | fix_needed | blocked | canonical | The source-backed defect remains a repair candidate, but this host cannot establish the required failing production regression or modify and validate a branch. Resume the concrete fix artifact on a writable executor; stop if the regression does not reproduce. |
-| #121558 | keep_related | planned | related | Distinct output-assembly root cause with active maintainer context. Keep open and exclude narration parsing from this repair. |
-| cluster:issue-openclaw-openclaw-167085 | build_fix_artifact | planned |  | Prepared for a writable executor. Reproduction must precede implementation; publication remains conditional on validation and fresh review. |
+| #167085 | fix_needed | planned | canonical | A narrow bug fix remains plausible and authorized. The executor must establish a failing production-boundary regression before changing production code; stop if it does not fail for the intended reason. |
+| #121558 | keep_related | planned | related | Related workaround context with a different root cause; keep open and exclude narration changes from this repair. |
+| cluster:issue-openclaw-openclaw-167085 | build_fix_artifact | planned |  | Hand off one bounded, reproduction-first fix to the executor; no unresolved product decision requires human escalation. |
 
 ## Needs Human
 
