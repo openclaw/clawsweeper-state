@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T10:24:33.302Z",
+  "updated_at": "2026-10-08T10:24:58.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162650:6053161334:2026-10-08T05:39:18Z:re_review",
-      "comment_id": "6053161334",
-      "comment_version_key": "6053161334:2026-10-08T05:39:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162650#issuecomment-6053161334",
-      "comment_created_at": "2026-10-08T05:39:18Z",
-      "comment_updated_at": "2026-10-08T05:39:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162650,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:40:07.493Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-contract-artifact-failure",
-        "head_sha": "78224ccde293c399ac8becae24bd6024e8b7ec65",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166293:6053161395:2026-10-08T05:39:18Z:re_review",
       "comment_id": "6053161395",
@@ -33205,6 +33158,39 @@
         "kind": "pull_request",
         "branch": "kc-kc-guide",
         "head_sha": "6339219af56d7740bc93f54512962ea10f585de7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:922:5959564042:2026-10-08T10:23:48Z:clawsweeper_needs_human",
+      "comment_id": "5959564042",
+      "comment_version_key": "5959564042:2026-10-08T10:23:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/922#issuecomment-5959564042",
+      "comment_created_at": "2026-10-02T19:09:04Z",
+      "comment_updated_at": "2026-10-08T10:23:48Z",
+      "comment_body_sha256": "0115b774ee03327def0db22fe4b5e3fa3c943700d3cd38535540f215e6b55a96",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 922,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The reported Fastify HTTP fixture exercises OCC admission, HTTP error mapping, and the production Kubernetes validator, but uses in-memory stat... (sha=db5130867077e3c732149a932ebc51c6440d9948)",
+      "expected_head_sha": "db5130867077e3c732149a932ebc51c6440d9948",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T10:24:58.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/harness-auth-conflict-message",
+        "head_sha": "db5130867077e3c732149a932ebc51c6440d9948",
         "cluster_id": null,
         "job_path": null
       }
