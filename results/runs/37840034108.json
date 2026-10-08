@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-161",
+  "mode": "autonomous",
+  "run_id": "37840034108",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37840034108",
+  "head_sha": "c48313d78bce80ea5e60ef57c397341e349cd837",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-161.md",
+  "published_at": "2026-10-08T20:35:50.088Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/161",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/161",
+  "canonical_pr": null,
+  "summary": "MXC SDK adoption remains outstanding on supplied main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation is blocked: this read-only Linux workspace cannot produce or validate the required coordinated SDK, native-runtime, and packaging cutover. No files or GitHub state changed; no PR is ready.",
+  "actions": [
+    {
+      "target": "#161",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#161",
+      "candidate_fix": null,
+      "reason": "The requested migration is still necessary. Preserve #161 as the canonical implementation request."
+    },
+    {
+      "target": "#44",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#161",
+      "candidate_fix": null,
+      "reason": "Historical backend-design evidence only; no closure or replacement action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-161",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#161",
+      "candidate_fix": null,
+      "reason": "This is a coordinated dependency and release-input migration rather than a tiny adapter patch. Keep this artifact non-executable until SDK contracts are inspected and the bounded cutover can be implemented and proven in a writable Windows environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

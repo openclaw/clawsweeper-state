@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37796944606"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37796944606"
-head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
-workflow_conclusion: "success"
+run_id: "37840034108"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37840034108"
+head_sha: "c48313d78bce80ea5e60ef57c397341e349cd837"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T15:14:27.246Z"
+published_at: "2026-10-08T20:35:50.088Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37796944606](https://github.com/openclaw/clawsweeper/actions/runs/37796944606)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37840034108](https://github.com/openclaw/clawsweeper/actions/runs/37840034108)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-#161 remains valid on main and stays open, but SDK adoption requires a coordinated backend and release-runtime migration beyond this lane's narrow implementation scope. No files or GitHub state changed.
+MXC SDK adoption remains outstanding on supplied main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation is blocked: this read-only Linux workspace cannot produce or validate the required coordinated SDK, native-runtime, and packaging cutover. No files or GitHub state changed; no PR is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #161 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,9 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | keep_related | skipped | related | Retain #161 open as the canonical migration request. The smallest complete implementation spans backend replacement, native-runtime trust inputs, packaging and compatibility proof. These require a separately scoped migration workflow; emitting an executable narrow fix artifact here would conceal required coordinated work. |
-| #44 | keep_closed | skipped | related | Historical implementation evidence only; no action against this closed PR is needed. |
+| #161 | fix_needed | planned | canonical | The requested migration is still necessary. Preserve #161 as the canonical implementation request. |
+| #44 | keep_closed | skipped | related | Historical backend-design evidence only; no closure or replacement action applies. |
+| cluster:issue-openclaw-openclaw-windows-packaging-161 | build_fix_artifact | blocked |  | This is a coordinated dependency and release-input migration rather than a tiny adapter patch. Keep this artifact non-executable until SDK contracts are inspected and the bounded cutover can be implemented and proven in a writable Windows environment. |
 
 ## Needs Human
 
