@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T12:59:41.171Z",
+  "updated_at": "2026-10-08T13:01:18.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118359:5922611694:2026-10-01T01:03:29Z:re_review",
-      "comment_id": "5922611694",
-      "comment_version_key": "5922611694:2026-10-01T01:03:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118359#issuecomment-5922611694",
-      "comment_created_at": "2026-10-01T01:03:29Z",
-      "comment_updated_at": "2026-10-01T01:03:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118359,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T07:32:58.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-retire-queued-cancellation-on-freeze-118028",
-        "head_sha": "68e21b0ca17e79a95eb1ad24ac71dacda04705a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118359:5161475717:2026-10-08T07:31:40Z:clawsweeper_auto_repair",
       "comment_id": "5161475717",
@@ -33074,6 +33027,39 @@
         "kind": "pull_request",
         "branch": "openclaw/terminal-copy-feedback",
         "head_sha": "be837f6bf0d2a4cd1cc722b97b44211062f684c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159285:5851358336:2026-10-08T13:00:11Z:clawsweeper_needs_human",
+      "comment_id": "5851358336",
+      "comment_version_key": "5851358336:2026-10-08T13:00:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159285#issuecomment-5851358336",
+      "comment_created_at": "2026-09-27T00:43:16Z",
+      "comment_updated_at": "2026-10-08T13:00:11Z",
+      "comment_body_sha256": "f60df50a652ee05aa1adaccff64bf417b7ddb0864a1680cc06bdfffc6bff9355",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The historical real-Gateway trace proves unread=false → true through chat.send and sessions.list, and inspected images prove the sideb... (sha=6f18e35ab87f93be1fc5e11589680861ac7a2b8a)",
+      "expected_head_sha": "6f18e35ab87f93be1fc5e11589680861ac7a2b8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T13:01:18.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-recovery-unread",
+        "head_sha": "6f18e35ab87f93be1fc5e11589680861ac7a2b8a",
         "cluster_id": null,
         "job_path": null
       }
