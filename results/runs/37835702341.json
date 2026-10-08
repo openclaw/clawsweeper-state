@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37835702341",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37835702341",
+  "head_sha": "602e573750d089c09f5d140558f62bde4dd73740",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-08T20:04:05.045Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository-side implementation is established. Blacksmith must expose a durable Testbox-to-workflow binding before worker registration, retained through admission failure and cancellation. The inspected checkout matches preflight main 7d597efb297a121c77d84a0995448ea0e12c4637. No code changes or GitHub mutations were made; no PR is recommended.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Keep the issue open as the canonical provider-capability request; the earlier settlement fixes do not resolve pre-worker dispatch association."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; not an implementation candidate for this distinct capability gap."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; it does not supply the missing pre-worker binding."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2708",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "related",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on an external provider capability. With queued state and no authoritative association, Crabbox cannot distinguish slow allocation from failed dispatch. Resume only when the supported binding and terminal-state contract are available. The fix artifact records an audited no-PR outcome, not an executable implementation plan."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 4,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

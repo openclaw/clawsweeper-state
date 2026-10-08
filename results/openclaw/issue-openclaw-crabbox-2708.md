@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37832232273"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37832232273"
-head_sha: "ef72f4b940b4dce28c5ccd6a9634e97360f172bc"
-workflow_conclusion: "success"
+run_id: "37835702341"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37835702341"
+head_sha: "602e573750d089c09f5d140558f62bde4dd73740"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T19:34:29.769Z"
+published_at: "2026-10-08T20:04:05.045Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37832232273](https://github.com/openclaw/clawsweeper/actions/runs/37832232273)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37835702341](https://github.com/openclaw/clawsweeper/actions/runs/37835702341)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Repository implementation is blocked on a supported Blacksmith pre-worker dispatch binding. Current main matches the recorded triage direction: native queued status without a run association cannot distinguish slow allocation from failed dispatch. No code changes or PR are appropriate until the provider supplies that capability.
+No safe repository-side implementation is established. Blacksmith must expose a durable Testbox-to-workflow binding before worker registration, retained through admission failure and cancellation. The inspected checkout matches preflight main 7d597efb297a121c77d84a0995448ea0e12c4637. No code changes or GitHub mutations were made; no PR is recommended.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Repository implementation is blocked on a supported Blacksmith pre-worker dispat
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #2708 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,12 @@ Repository implementation is blocked on a supported Blacksmith pre-worker dispat
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | related | Blocked on Blacksmith exposing a durable, authoritative Testbox-to-workflow-run binding before worker startup that survives cancellation and admission failure. Revisit the provider adapter once that supported capability exists; timeout changes or guessed run associations do not satisfy the issue. |
+| #2708 | keep_canonical | planned | canonical | Keep the issue open as the canonical provider-capability request; the earlier settlement fixes do not resolve pre-worker dispatch association. |
 | #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical merged repair with a distinct scope. |
+| #2670 | keep_closed | skipped | related | Historical context; not an implementation candidate for this distinct capability gap. |
 | #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Historical merged repair; it does not resolve this dispatch lifecycle gap. |
+| #2683 | keep_closed | skipped | related | Historical context; it does not supply the missing pre-worker binding. |
+| cluster:issue-openclaw-crabbox-2708 | fix_needed | blocked | related | Implementation is blocked on an external provider capability. With queued state and no authoritative association, Crabbox cannot distinguish slow allocation from failed dispatch. Resume only when the supported binding and terminal-state contract are available. The fix artifact records an audited no-PR outcome, not an executable implementation plan. |
 
 ## Needs Human
 
