@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:53:48.222Z",
+  "updated_at": "2026-10-08T01:54:50.088Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166252:6046807723:2026-10-07T21:03:31Z:re_review",
-      "comment_id": "6046807723",
-      "comment_version_key": "6046807723:2026-10-07T21:03:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166252#issuecomment-6046807723",
-      "comment_created_at": "2026-10-07T21:03:31Z",
-      "comment_updated_at": "2026-10-07T21:03:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166252,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T21:04:34.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6discovery-preflight",
-        "head_sha": "9a04e75a33d5f6801afcc0e07388476119f851a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137822:5534952513:2026-10-07T21:03:38Z:clawsweeper_needs_human",
-      "comment_id": "5534952513",
-      "comment_version_key": "5534952513:2026-10-07T21:03:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137822#issuecomment-5534952513",
-      "comment_created_at": "2026-09-04T02:48:25Z",
-      "comment_updated_at": "2026-10-07T21:03:38Z",
-      "comment_body_sha256": "a59d01fb83ceae44e36870f49e440530dbf08eeef341186b103c567b604f8ed0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137822,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The monitor proof injects notifications and mocks delivery; it does not observe a Gateway/Codex follow-up, visible final reply, or settled pare... (sha=94541a2754900ad1b6fd245f46ef179af6bf5dce)",
-      "expected_head_sha": "94541a2754900ad1b6fd245f46ef179af6bf5dce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T21:04:38.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cursor/fix-codex-yield-wake-e7ab",
-        "head_sha": "94541a2754900ad1b6fd245f46ef179af6bf5dce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137855:5535311815:2026-10-07T21:04:21Z:clawsweeper_needs_human",
       "comment_id": "5535311815",
@@ -33493,6 +33413,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137484:5530546903:2026-10-08T01:53:55Z:clawsweeper_auto_repair",
+      "comment_id": "5530546903",
+      "comment_version_key": "5530546903:2026-10-08T01:53:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137484#issuecomment-5530546903",
+      "comment_created_at": "2026-09-03T18:50:12Z",
+      "comment_updated_at": "2026-10-08T01:53:55Z",
+      "comment_body_sha256": "40b41b70d872fe8a7df859c7e3a42218df119e4017fc5fe4e5e3a670e4cdfaf0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4558029e139704c39db17aee05d7b15d8cc603fe)",
+      "expected_head_sha": "4558029e139704c39db17aee05d7b15d8cc603fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:54:50.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136175-local-nonbatch-index-concurrency",
+        "head_sha": "4558029e139704c39db17aee05d7b15d8cc603fe",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137484:5543888484:2026-09-04T17:02:33Z:re_review",
+      "comment_id": "5543888484",
+      "comment_version_key": "5543888484:2026-09-04T17:02:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137484#issuecomment-5543888484",
+      "comment_created_at": "2026-09-04T17:02:33Z",
+      "comment_updated_at": "2026-09-04T17:02:33Z",
+      "comment_body_sha256": "486aa80d493dab3ccd829cb67732f42710e4faa21594ec00d6a3b2b4287aba05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137484,
+      "author": "shojikumaru",
+      "author_id": 184229851,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:54:50.088Z",
+      "target": null
     }
   ]
 }
