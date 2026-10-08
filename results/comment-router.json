@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T11:46:36.813Z",
+  "updated_at": "2026-10-08T11:47:02.493Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-10-08T06:32:19Z:clawsweeper_needs_human",
-      "comment_id": "5659092617",
-      "comment_version_key": "5659092617:2026-10-08T06:32:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147886#issuecomment-5659092617",
-      "comment_created_at": "2026-09-14T04:37:59Z",
-      "comment_updated_at": "2026-10-08T06:32:19Z",
-      "comment_body_sha256": "3791e0a56aaded98889a28836094a51b8f41614e4cbc02c7a7f25b5625df4b4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Record explicit approval or rejection of the two Feishu markdown.tables configuration-baseline entries. (sha=c8c8018b3224e56e8948b02dea80ea6ee44d0398)",
-      "expected_head_sha": "c8c8018b3224e56e8948b02dea80ea6ee44d0398",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T06:33:33.339Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-markdown-tables",
-        "head_sha": "c8c8018b3224e56e8948b02dea80ea6ee44d0398",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152985:5743065845:2026-10-08T06:32:32Z:clawsweeper_needs_human",
       "comment_id": "5743065845",
@@ -33209,6 +33176,53 @@
         "kind": "pull_request",
         "branch": "fix/x-api-json-byte-cap",
         "head_sha": "9bb4270aa82fe2e7622fdaeebc14890340846236",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167066:6059143356:2026-10-08T11:45:21Z:re_review",
+      "comment_id": "6059143356",
+      "comment_version_key": "6059143356:2026-10-08T11:45:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167066#issuecomment-6059143356",
+      "comment_created_at": "2026-10-08T11:45:21Z",
+      "comment_updated_at": "2026-10-08T11:45:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167066,
+      "author": "hugenshen",
+      "author_id": 16300669,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T11:47:00.793Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-session-id-trim",
+        "head_sha": "2a97df20bd1d240d2560e8326a35972de785415e",
         "cluster_id": null,
         "job_path": null
       },
