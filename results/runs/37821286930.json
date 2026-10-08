@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167365",
+  "mode": "autonomous",
+  "run_id": "37821286930",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37821286930",
+  "head_sha": "1e7c8d9981416ad8e230ab5b4987668053ed8841",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167365.md",
+  "published_at": "2026-10-08T19:01:14.396Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167365",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167365",
+  "canonical_pr": null,
+  "summary": "The reported inventory omission remains source-confirmed on preflight main ff9e8818527accde219a9e4da9c7e0ea25a2f04c. A narrow fix artifact is ready for the executor. Implementation, failing regression, and runtime validation are blocked here by the read-only host and absent node_modules; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#167365",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#167365",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable isolated executor with dependencies. Establish the failing dynamic-model regression before changing production code; do not publish if it fails to reproduce."
+    },
+    {
+      "target": "#156864",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167365",
+      "candidate_fix": null,
+      "reason": "Agent execution access is distinct from this inventory defect. Keep open without claiming this repair resolves it."
+    },
+    {
+      "target": "#157396",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167365",
+      "candidate_fix": null,
+      "reason": "Diagnostics and retention decisions are outside the inventory repair. Keep open and preserve existing identity checks."
+    },
+    {
+      "target": "#167351",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167365",
+      "candidate_fix": null,
+      "reason": "Keep the hosting-marker redesign separate; do not change hosting eligibility or subagent defaults in this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167365",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167365",
+      "candidate_fix": null,
+      "reason": "The bug-only repair path is clear enough to plan, but requires baseline reproduction and implementation proof in the writable executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
