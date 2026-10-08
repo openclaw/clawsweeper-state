@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-08T02:48:57.587Z
+Generated: 2026-10-08T03:44:02.527Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -24,7 +24,7 @@ Repository: openclaw/openclaw
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
+| [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | CONFLICTING | DIRTY | skipped | self-heal already dispatched 2 time(s) for this PR head |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | clawsweeper/issue-openclaw-openclaw-114169 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | clawsweeper/issue-openclaw-openclaw-89430 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
