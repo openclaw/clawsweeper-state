@@ -2,12 +2,12 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37723333427"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37723333427"
+run_id: "37725712537"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37725712537"
 head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T03:38:19.667Z"
+published_at: "2026-10-08T04:08:19.024Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37723333427](https://github.com/openclaw/clawsweeper/actions/runs/37723333427)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37725712537](https://github.com/openclaw/clawsweeper/actions/runs/37725712537)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Confirmed the bug on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready; implementation and branch validation are blocked by the read-only sandbox and missing dependencies. No code or GitHub mutations were made.
+Confirmed the false-hit mechanism on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a7. Narrow fix artifact prepared; implementation and validation are blocked by the read-only filesystem, missing dependencies and Bun, and unsupported local Node version. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the bug on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | Repair future success classification and recover existing false-hit index/cache entries while retaining valid destinations. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The executable repair plan remains valid; a writable executor with the repository toolchain must implement and validate it. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR publication is blocked until the canonical fix artifact is implemented, reviewed, and locally validated in a writable checkout. |
+| #233 | fix_needed | planned | canonical | The canonical issue remains viable on supplied current main and needs resolver classification guards plus stored-row and cache recovery. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The non-mutating artifact is ready for a writable executor with the repository's required toolchain. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Implementation and PR creation are blocked until a writable executor establishes failing regression coverage, implements the fix, and passes required validation. |
 
 ## Needs Human
 
