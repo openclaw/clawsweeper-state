@@ -2,12 +2,12 @@
 repo: "openclaw/gogcli"
 cluster_id: "issue-openclaw-gogcli-1195"
 mode: "autonomous"
-run_id: "37739687253"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37739687253"
+run_id: "37741771150"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37741771150"
 head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T06:53:50.600Z"
+published_at: "2026-10-08T07:14:06.586Z"
 canonical: "https://github.com/openclaw/gogcli/issues/1195"
 canonical_issue: "https://github.com/openclaw/gogcli/issues/1195"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/gogcli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37739687253](https://github.com/openclaw/clawsweeper/actions/runs/37739687253)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37741771150](https://github.com/openclaw/clawsweeper/actions/runs/37741771150)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/gogcli/issues/1195
 
 ## Summary
 
-Confirmed the documentation defect on supplied main SHA 4d7478e9b73a2c60a5d557ff1456210ee4089422. Prepared a narrow documentation fix and verified its Bash gate against 11 synthetic cases. Implementation, isolated runtime reproduction, and required CI are blocked by the read-only filesystem. No files or GitHub state were changed.
+Verified the documentation defect on supplied main. Prepared a narrow fix artifact and tested the proposed gate with synthetic diagnostics. Implementation and required validation are blocked by the read-only filesystem; no files or GitHub state changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the documentation defect on supplied main SHA 4d7478e9b73a2c60a5d557ff
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1195 | fix_needed | planned | canonical | The request remains valid and needs only documentation and release-note changes. Production authentication behavior must remain unchanged. |
-| cluster:issue-openclaw-gogcli-1195 | build_fix_artifact | planned |  | The fix plan is concrete and narrow; a writable executor must implement and complete runtime validation. |
-| cluster:issue-openclaw-gogcli-1195 | open_fix_pr | blocked |  | PR publication is blocked until a writable executor applies the fix, proves the isolated diagnostic reproduction, and passes required validation. |
+| #1195 | fix_needed | planned | canonical | The source request remains viable and needs only documentation changes; preserve all production authentication behavior. |
+| cluster:issue-openclaw-gogcli-1195 | build_fix_artifact | planned |  | Concrete narrow repair plan is available. Applying edits and completing real diagnostic reproduction and CI require a writable executor. |
+| cluster:issue-openclaw-gogcli-1195 | open_fix_pr | blocked |  | Blocked until a writable executor applies and validates the fix on clawsweeper/issue-openclaw-gogcli-1195. Re-fetch live state and reuse any existing implementation PR before opening one. |
 
 ## Needs Human
 

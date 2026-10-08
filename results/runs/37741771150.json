@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/gogcli",
+  "cluster_id": "issue-openclaw-gogcli-1195",
+  "mode": "autonomous",
+  "run_id": "37741771150",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37741771150",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gogcli-1195.md",
+  "published_at": "2026-10-08T07:14:06.586Z",
+  "canonical": "https://github.com/openclaw/gogcli/issues/1195",
+  "canonical_issue": "https://github.com/openclaw/gogcli/issues/1195",
+  "canonical_pr": null,
+  "summary": "Verified the documentation defect on supplied main. Prepared a narrow fix artifact and tested the proposed gate with synthetic diagnostics. Implementation and required validation are blocked by the read-only filesystem; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#1195",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1195",
+      "candidate_fix": null,
+      "reason": "The source request remains viable and needs only documentation changes; preserve all production authentication behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1195",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1195",
+      "candidate_fix": null,
+      "reason": "Concrete narrow repair plan is available. Applying edits and completing real diagnostic reproduction and CI require a writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1195",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1195",
+      "candidate_fix": null,
+      "reason": "Blocked until a writable executor applies and validates the fix on clawsweeper/issue-openclaw-gogcli-1195. Re-fetch live state and reuse any existing implementation PR before opening one."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
