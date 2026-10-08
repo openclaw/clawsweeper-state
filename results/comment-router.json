@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T06:00:40.035Z",
+  "updated_at": "2026-10-08T06:01:01.340Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166616:6049991554:2026-10-08T01:01:41Z:re_review",
-      "comment_id": "6049991554",
-      "comment_version_key": "6049991554:2026-10-08T01:01:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166616#issuecomment-6049991554",
-      "comment_created_at": "2026-10-08T01:01:41Z",
-      "comment_updated_at": "2026-10-08T01:01:41Z",
-      "comment_body_sha256": "7453047f0cf0053db9011e02a9f021f8005315b2fb6d86d0655af079626e2aa1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166616,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T01:02:37.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/158903-placement-owners",
-        "head_sha": "3caba7128532c23c8fc2497d3c1473e133cfdb93",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147244:5655062491:2026-10-08T01:01:53Z:clawsweeper_needs_human",
       "comment_id": "5655062491",
@@ -33111,6 +33064,39 @@
         "kind": "pull_request",
         "branch": "fix/update-rehearsal-avatar-paths",
         "head_sha": "ece7d134608bdd3670918cb5158af88688302066",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166993:6053434782:2026-10-08T05:59:55Z:clawsweeper_needs_human",
+      "comment_id": "6053434782",
+      "comment_version_key": "6053434782:2026-10-08T05:59:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166993#issuecomment-6053434782",
+      "comment_created_at": "2026-10-08T05:59:55Z",
+      "comment_updated_at": "2026-10-08T05:59:55Z",
+      "comment_body_sha256": "5c743cef61770eacbfb96a23058f402fbcc54d5e7e6026393c9dfa77d87774ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After this lands, a global schema bump alone cannot exclude older credential writers when row meanings change without DDL; the storage owner must accept and record the proposed stable... (sha=0055a0180970aace400289f4baaa3cb0c6d140ae)",
+      "expected_head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T06:01:01.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-identity-schema-compat",
+        "head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
         "cluster_id": null,
         "job_path": null
       }
