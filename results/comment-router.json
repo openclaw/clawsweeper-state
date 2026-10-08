@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T22:33:22.849Z",
+  "updated_at": "2026-10-08T22:33:24.733Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167333:6064859032:2026-10-08T16:55:26Z:clawsweeper_needs_human",
-      "comment_id": "6064859032",
-      "comment_version_key": "6064859032:2026-10-08T16:55:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167333#issuecomment-6064859032",
-      "comment_created_at": "2026-10-08T16:55:26Z",
-      "comment_updated_at": "2026-10-08T16:55:26Z",
-      "comment_body_sha256": "52b9c487de51d3eeab1fd23b7021fdb3afb4f788998d195bfd2d1a0449227345",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167333,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9194278a0f2ec24a3d3cd8fa90cb8fd25010e58c)",
-      "expected_head_sha": "9194278a0f2ec24a3d3cd8fa90cb8fd25010e58c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T16:56:33.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/context-engine-turn-advancement-backgrounded-exec",
-        "head_sha": "9194278a0f2ec24a3d3cd8fa90cb8fd25010e58c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1521:6018357114:2026-10-08T16:56:42Z:clawsweeper_needs_human",
       "comment_id": "6018357114",
@@ -32927,6 +32894,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166413:6070381224:2026-10-08T22:32:26Z:re_review",
+      "comment_id": "6070381224",
+      "comment_version_key": "6070381224:2026-10-08T22:32:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166413#issuecomment-6070381224",
+      "comment_created_at": "2026-10-08T22:32:26Z",
+      "comment_updated_at": "2026-10-08T22:32:26Z",
+      "comment_body_sha256": "d5421dd08f1a098911de8898f3a5f0a45abb98161764288b7f97259fba94392d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166413,
+      "author": "dlmccoy",
+      "author_id": 725956,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T22:33:23.153Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-lease-archive-resume",
+        "head_sha": "68f3922399af9dfe80b22c8fcf80d27300986093",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
