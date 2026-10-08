@@ -2,19 +2,19 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37716607318"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37716607318"
+run_id: "37723333427"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37723333427"
 head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-10-08T02:15:29.640Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-10-08T03:38:19.667Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37716607318](https://github.com/openclaw/clawsweeper/actions/runs/37716607318)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37723333427](https://github.com/openclaw/clawsweeper/actions/runs/37723333427)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Verified the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow implementation artifact is ready for the executor. Local implementation and validation are blocked by read-only filesystem access, missing dependencies/Bun, and an unsupported Node version.
+Confirmed the bug on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready; implementation and branch validation are blocked by the read-only sandbox and missing dependencies. No code or GitHub mutations were made.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Verified the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241
 | Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Verified the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 |
-| issue_implementation_status_comment | updated | #233 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,9 @@ Verified the false-hit mechanism on preflight main 2f81941b308bd99d38c4608d2d241
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The canonical issue describes a source-confirmed existing bug with a narrow implementation path. Keep it open while the executor builds and validates the fix. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The executor can implement the bounded repair without maintainer judgment. Worker-local restrictions do not invalidate the fix artifact. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR publication is blocked until the executor implements the fix in a writable checkout with the declared toolchain, proves the initial regression fails, passes validation, and addresses review findings. |
+| #233 | fix_needed | planned | canonical | Repair future success classification and recover existing false-hit index/cache entries while retaining valid destinations. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The executable repair plan remains valid; a writable executor with the repository toolchain must implement and validate it. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR publication is blocked until the canonical fix artifact is implemented, reviewed, and locally validated in a writable checkout. |
 
 ## Needs Human
 
