@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:19:41.302Z",
+  "updated_at": "2026-10-08T05:20:05.698Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156192:5789376897:2026-10-08T00:11:53Z:clawsweeper_needs_human",
-      "comment_id": "5789376897",
-      "comment_version_key": "5789376897:2026-10-08T00:11:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156192#issuecomment-5789376897",
-      "comment_created_at": "2026-09-23T05:04:00Z",
-      "comment_updated_at": "2026-10-08T00:11:53Z",
-      "comment_body_sha256": "1d9c516d34fe7990cb7e5eb15e6754c4f39c7477e6a1c78ed4ce382698fcd5af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156192,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body exercises sanitizer functions and a standalone image ServerResponse, not after-fix forwarding through startDebugProxyServer w...; Review finding: [P1] [P1] Handle received filename bytes before the Latin-1 fast path — src/shared/http-header-sanitize.ts:89-94 - [P1] [P1] Preserve legal tabs in forwarded heade... (sha=7d17e9b408770609efdc93dd22418db733ac483b)",
-      "expected_head_sha": "7d17e9b408770609efdc93dd22418db733ac483b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T00:12:47.813Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/forwarded-header-latin1-complement",
-        "head_sha": "7d17e9b408770609efdc93dd22418db733ac483b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166828:6049371842:2026-10-08T00:11:44Z:clawsweeper_needs_human",
       "comment_id": "6049371842",
@@ -33490,6 +33457,53 @@
         "kind": "pull_request",
         "branch": "fix/doctor-interactive-maintenance",
         "head_sha": "0d8ecefc028a0c004ad519da40bd014c103d9928",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156483:6052900759:2026-10-08T05:19:12Z:re_review",
+      "comment_id": "6052900759",
+      "comment_version_key": "6052900759:2026-10-08T05:19:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156483#issuecomment-6052900759",
+      "comment_created_at": "2026-10-08T05:19:12Z",
+      "comment_updated_at": "2026-10-08T05:19:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156483,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T05:20:04.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-lmstudio-readiness-reporting",
+        "head_sha": "6ae4acf133bfa4d97eb112f058223fde03489ad3",
         "cluster_id": null,
         "job_path": null
       },
