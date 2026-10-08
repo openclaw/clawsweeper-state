@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-08T20:38:11.897Z
+Generated: 2026-10-08T21:36:06.946Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -42,6 +42,6 @@ Repository: openclaw/openclaw
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | CONFLICTING | DIRTY | skipped | self-heal already dispatched 2 time(s) for this PR head |
+| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
