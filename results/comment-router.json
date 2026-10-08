@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T21:34:50.890Z",
+  "updated_at": "2026-10-08T21:35:09.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158051:6018952049:2026-10-06T14:54:17Z:re_review",
-      "comment_id": "6018952049",
-      "comment_version_key": "6018952049:2026-10-06T14:54:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158051#issuecomment-6018952049",
-      "comment_created_at": "2026-10-06T14:54:17Z",
-      "comment_updated_at": "2026-10-06T14:54:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158051,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T15:04:29.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-cloudflare-dashboard-session-20260925",
-        "head_sha": "4f1b3a0ea228b167d23028c58d5e4561ba50c592",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158051:5830582035:2026-10-08T15:03:05Z:clawsweeper_needs_human",
       "comment_id": "5830582035",
@@ -33319,6 +33272,39 @@
         "kind": "pull_request",
         "branch": "fix-signin-known-models",
         "head_sha": "e994b2dcb164c617863117962be0e63600279344",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:48:5935864876:2026-10-08T21:34:00Z:clawsweeper_needs_human",
+      "comment_id": "5935864876",
+      "comment_version_key": "5935864876:2026-10-08T21:34:00Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/48#issuecomment-5935864876",
+      "comment_created_at": "2026-10-01T16:33:10Z",
+      "comment_updated_at": "2026-10-08T21:34:00Z",
+      "comment_body_sha256": "4a4c1cd504a9eda6b71ea0d93200ae26200fb2890063a5b31d01d4001a796f96",
+      "repo": "openclaw/babelfish",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the captured built-plugin macOS trace supports literal capture and repaired nested deny/allow hook results, but does not show an installed denying guar...; Review finding: [P1] Ignore shell comments when tracking quote state — src/shell-command.ts:41-45 - [P1] Handle unquoted escapes before toggling quote state — src/shell-command.ts... (sha=b7ef1122864002f2ff939eaf3f9774d4f6a67c65)",
+      "expected_head_sha": "b7ef1122864002f2ff939eaf3f9774d4f6a67c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T21:35:09.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shell-expand-string-commands",
+        "head_sha": "b7ef1122864002f2ff939eaf3f9774d4f6a67c65",
         "cluster_id": null,
         "job_path": null
       }
