@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:23:34.437Z",
+  "updated_at": "2026-10-08T04:23:40.139Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163295:5946614174:2026-10-07T23:26:54Z:clawsweeper_auto_repair",
-      "comment_id": "5946614174",
-      "comment_version_key": "5946614174:2026-10-07T23:26:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163295#issuecomment-5946614174",
-      "comment_created_at": "2026-10-02T06:16:49Z",
-      "comment_updated_at": "2026-10-07T23:26:54Z",
-      "comment_body_sha256": "aa782c8dfaa73f6d3678623cd63b07393d7efa88516ca8e3ae033afb0586dfe2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163295,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d0ed023909c194933071bef726074b30d034b164)",
-      "expected_head_sha": "d0ed023909c194933071bef726074b30d034b164",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T23:27:58.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-1093-v2-01-catalog",
-        "head_sha": "d0ed023909c194933071bef726074b30d034b164",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:133:6048907466:2026-10-07T23:26:54Z:clawsweeper_needs_human",
       "comment_id": "6048907466",
@@ -33399,6 +33366,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166930:6052166620:2026-10-08T04:22:45Z:re_review",
+      "comment_id": "6052166620",
+      "comment_version_key": "6052166620:2026-10-08T04:22:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166930#issuecomment-6052166620",
+      "comment_created_at": "2026-10-08T04:22:45Z",
+      "comment_updated_at": "2026-10-08T04:22:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166930,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T04:23:38.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/whether-gateway-pr-166883-should-land-on-main",
+        "head_sha": "aa6157bee0b1da514ab0b1e4ac8753d53e56e3ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
