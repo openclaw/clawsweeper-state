@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T16:05:53.782Z",
+  "updated_at": "2026-10-08T16:05:54.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1761:6057449150:2026-10-08T10:02:55Z:re_review",
-      "comment_id": "6057449150",
-      "comment_version_key": "6057449150:2026-10-08T10:02:55Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1761#issuecomment-6057449150",
-      "comment_created_at": "2026-10-08T10:02:55Z",
-      "comment_updated_at": "2026-10-08T10:02:55Z",
-      "comment_body_sha256": "fb0238ba422c7abfca3cd73b87f39bdd6df47efe91cf1739c6be84ec76a348f9",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1761,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T10:03:59.658Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "async-context-reads",
-        "head_sha": "f31f66bfd3a2081a807010890aeaf60a0af0ba5b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155855:5780431908:2026-10-08T10:02:59Z:clawsweeper_needs_human",
       "comment_id": "5780431908",
@@ -32914,6 +32867,39 @@
         "kind": "pull_request",
         "branch": "warm-mcp-invoke-through-policy",
         "head_sha": "d2d2dfea047860ae2692fc77b0139de5d1cc66c0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156786:5803641571:2026-10-08T16:04:38Z:clawsweeper_needs_human",
+      "comment_id": "5803641571",
+      "comment_version_key": "5803641571:2026-10-08T16:04:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156786#issuecomment-5803641571",
+      "comment_created_at": "2026-09-23T21:58:20Z",
+      "comment_updated_at": "2026-10-08T16:04:38Z",
+      "comment_body_sha256": "a4740e7cd059845faee0403f3cbea20abd3189ea5418724125694c420ceaf166",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The touched picker and dialog have changed on current main, and no clean synchronized merge has been verified. (sha=d2963d1ef666d16ab194eec94be9f5a029bdf316)",
+      "expected_head_sha": "d2963d1ef666d16ab194eec94be9f5a029bdf316",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T16:05:54.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/cloud-default-small",
+        "head_sha": "d2963d1ef666d16ab194eec94be9f5a029bdf316",
         "cluster_id": null,
         "job_path": null
       }
