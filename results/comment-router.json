@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T02:15:21.806Z",
+  "updated_at": "2026-10-08T02:15:22.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151242:6008580173:2026-10-06T03:13:43Z:re_review",
-      "comment_id": "6008580173",
-      "comment_version_key": "6008580173:2026-10-06T03:13:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151242#issuecomment-6008580173",
-      "comment_created_at": "2026-10-06T03:13:43Z",
-      "comment_updated_at": "2026-10-06T03:13:43Z",
-      "comment_body_sha256": "45a1cf533a890982bc65620cdd51fb2491d9fdaed8d4034012b1ee60020285ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151242,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T21:32:29.931Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/embedded-long-link-chunks",
-        "head_sha": "bbb79e72b1bb8ac98a7f466342644705f7df5a25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151242:5722581462:2026-09-17T23:26:12Z:re_review",
       "comment_id": "5722581462",
@@ -33432,6 +33385,39 @@
         "kind": "pull_request",
         "branch": "fix/workspace-lock-race",
         "head_sha": "345cb673417189481afbdcc59736c65a716063c7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166885:6050645680:2026-10-08T02:14:19Z:clawsweeper_needs_human",
+      "comment_id": "6050645680",
+      "comment_version_key": "6050645680:2026-10-08T02:14:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166885#issuecomment-6050645680",
+      "comment_created_at": "2026-10-08T02:01:52Z",
+      "comment_updated_at": "2026-10-08T02:14:19Z",
+      "comment_body_sha256": "4946626586388503fb8ff66026ce045d342362c748fea360150bdf5cd306834b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166885,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the remaining release-branch original-order, standalone, original-shard, and sibling qualification, and record the changed-check outcome before lifting the existing draft hol... (sha=bdfe7bd3d644146b3f3291b6d618d790e2c6a28b)",
+      "expected_head_sha": "bdfe7bd3d644146b3f3291b6d618d790e2c6a28b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T02:15:22.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/release-2026.9.9-frv-fixtures-20261008",
+        "head_sha": "bdfe7bd3d644146b3f3291b6d618d790e2c6a28b",
         "cluster_id": null,
         "job_path": null
       }
