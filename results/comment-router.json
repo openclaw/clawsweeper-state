@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T18:19:35.648Z",
+  "updated_at": "2026-10-08T18:20:45.658Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5961847628:2026-10-02T21:35:24Z:re_review",
-      "comment_id": "5961847628",
-      "comment_version_key": "5961847628:2026-10-02T21:35:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5961847628",
-      "comment_created_at": "2026-10-02T21:35:24Z",
-      "comment_updated_at": "2026-10-02T21:35:24Z",
-      "comment_body_sha256": "dc8259ef765710d77ce864f54fb00acab4079f31cd7ae74a7c3c2a3d62a2285f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — merged upstream/main (55 commits, clean, zero conflicts). new head 14d893dfd3e5, branch now in sync with main. skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T11:54:57.698Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5963132726:2026-10-02T23:34:46Z:re_review",
       "comment_id": "5963132726",
@@ -33182,6 +33155,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156673:5799676584:2026-10-08T18:19:46Z:clawsweeper_needs_human",
+      "comment_id": "5799676584",
+      "comment_version_key": "5799676584:2026-10-08T18:19:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156673#issuecomment-5799676584",
+      "comment_created_at": "2026-09-23T17:31:59Z",
+      "comment_updated_at": "2026-10-08T18:19:46Z",
+      "comment_body_sha256": "3492c583d8b4f3264ea429ba835c29a9a648c97d081b40445ffa67ffb302fc34",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=24cb681d836e259262dd60a93e0c32e56fe87db5)",
+      "expected_head_sha": "24cb681d836e259262dd60a93e0c32e56fe87db5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T18:20:45.658Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/usage-worker-transcript-oom",
+        "head_sha": "24cb681d836e259262dd60a93e0c32e56fe87db5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
