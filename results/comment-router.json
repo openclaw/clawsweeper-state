@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:37:27.414Z",
+  "updated_at": "2026-10-08T05:38:10.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166810:6049636862:2026-10-08T00:29:54Z:re_review",
-      "comment_id": "6049636862",
-      "comment_version_key": "6049636862:2026-10-08T00:29:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166810#issuecomment-6049636862",
-      "comment_created_at": "2026-10-08T00:29:54Z",
-      "comment_updated_at": "2026-10-08T00:29:54Z",
-      "comment_body_sha256": "bb6e2ce15a29e0816c39e8becd6148159728da01c2e12a198340616bbe7669f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166810,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T00:30:58.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-catalog-publication-fixture-20261007",
-        "head_sha": "dc3d95ccc860d361f1eae8edbfeebeafa4dec514",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166837:6049640190:2026-10-08T00:30:10Z:clawsweeper_needs_human",
       "comment_id": "6049640190",
@@ -33453,6 +33406,39 @@
         "kind": "pull_request",
         "branch": "fix/synthetic-context-discovery-20260923",
         "head_sha": "776c206e9fb451c767d300fad57dd912eb5ec488",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166982:6053132313:2026-10-08T05:37:01Z:clawsweeper_needs_human",
+      "comment_id": "6053132313",
+      "comment_version_key": "6053132313:2026-10-08T05:37:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166982#issuecomment-6053132313",
+      "comment_created_at": "2026-10-08T05:37:01Z",
+      "comment_updated_at": "2026-10-08T05:37:01Z",
+      "comment_body_sha256": "4cfa6fd7a97bdc13ce81311f70a2e7b7e21d0e8ff145b26edf8ad01e1b72f443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166982,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility with an unpatched published updater remains unverified for this candidate; record the repository-required published-driver × candidate upgrade result before merge. (sha=61f3583afb82ae817b141fdab2be0b3538ba7ec1)",
+      "expected_head_sha": "61f3583afb82ae817b141fdab2be0b3538ba7ec1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T05:38:10.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/d07-p2-20261007",
+        "head_sha": "61f3583afb82ae817b141fdab2be0b3538ba7ec1",
         "cluster_id": null,
         "job_path": null
       }
