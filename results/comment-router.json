@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:34:28.800Z",
+  "updated_at": "2026-10-08T04:34:39.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166796:6049043981:2026-10-07T23:38:36Z:re_review",
-      "comment_id": "6049043981",
-      "comment_version_key": "6049043981:2026-10-07T23:38:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166796#issuecomment-6049043981",
-      "comment_created_at": "2026-10-07T23:38:36Z",
-      "comment_updated_at": "2026-10-07T23:38:36Z",
-      "comment_body_sha256": "51520eb872c132075ae166ea7012baff19bf8cd07dcadc16fecb3abf77f02377",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166796,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review: the original manager boundary is now proven on hosted docker ci. a follow-up enables the existing cli debug diagnostics only inside this synthetic, env-isolated podman control to identify the next create failure; no runtime assertion or operator default changes",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:39:27.497Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-docker-failures-20261007",
-        "head_sha": "8cd63e4f68597008840882a1620cbfd01baee2cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:165825:6049043968:2026-10-07T23:38:36Z:re_review",
       "comment_id": "6049043968",
@@ -33426,6 +33379,39 @@
         "kind": "pull_request",
         "branch": "fix/trajectory-export-atomic-127581",
         "head_sha": "c45545ff56901982efbde00e054746088db5776e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161235:5892450711:2026-10-08T04:33:35Z:autoclose",
+      "comment_id": "5892450711",
+      "comment_version_key": "5892450711:2026-10-08T04:33:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161235#issuecomment-5892450711",
+      "comment_created_at": "2026-09-29T14:36:45Z",
+      "comment_updated_at": "2026-10-08T04:33:35Z",
+      "comment_body_sha256": "cbad2672e12a3f575969168e5d242c9185cd03d5226037b3a116160690fe6a2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161235,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "autoclose structured ClawSweeper close marker: close-required (sha=b040fcc173e159746b8283d7d5ab5da41118b44d)",
+      "intent": "autoclose",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper close marker: close-required (sha=b040fcc173e159746b8283d7d5ab5da41118b44d)",
+      "expected_head_sha": "b040fcc173e159746b8283d7d5ab5da41118b44d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T04:34:39.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-bundled-plugin-reload-20260929",
+        "head_sha": "b040fcc173e159746b8283d7d5ab5da41118b44d",
         "cluster_id": null,
         "job_path": null
       }
