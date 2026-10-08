@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T20:17:04.299Z",
+  "updated_at": "2026-10-08T20:17:08.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156650:5805348921:2026-09-24T00:39:32Z:re_review",
-      "comment_id": "5805348921",
-      "comment_version_key": "5805348921:2026-09-24T00:39:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156650#issuecomment-5805348921",
-      "comment_created_at": "2026-09-24T00:39:32Z",
-      "comment_updated_at": "2026-09-24T00:39:32Z",
-      "comment_body_sha256": "7c040b0b10d9ad1f6af91a10cdd6dee71fa30ae563188e2a8308fa7ae4cc1884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156650,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: worker-deadline regression now dispatches a real task to a real pool worker over ipc (warm worker + atomics.wait block), so the production deadline aborts a genuinely dispatched task. dispatch proof and attribution assertions run outside the fallback owner so a swallowed candidate assertion cannot fake them. full evidence updated in the pr body. new head 1672a490b3c",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T13:52:47.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-local-worker-timeout-attribution",
-        "head_sha": "1672a490b3cb0c9653521ba4afcda7df39f08fea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156650:5799199103:2026-09-23T17:04:37Z:re_review",
       "comment_id": "5799199103",
@@ -33317,6 +33270,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sqlfresh",
         "head_sha": "9208ee1554420340872c451a88de9605a55dde03",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167194:6058978543:2026-10-08T20:15:48Z:clawsweeper_needs_human",
+      "comment_id": "6058978543",
+      "comment_version_key": "6058978543:2026-10-08T20:15:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167194#issuecomment-6058978543",
+      "comment_created_at": "2026-10-08T11:35:36Z",
+      "comment_updated_at": "2026-10-08T20:15:48Z",
+      "comment_body_sha256": "f43765f9f808a6b58e5595784989b017b3c044cc4a2eb6cf37a729908873eb35",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the conflict with main while preserving the merged parent's lifecycle repairs, then complete the declared current-main performance qualification and affected validation on the... (sha=05dc594a3e71479f1736ae60580e3eff0af98b1d)",
+      "expected_head_sha": "05dc594a3e71479f1736ae60580e3eff0af98b1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T20:17:08.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sqlproj",
+        "head_sha": "05dc594a3e71479f1736ae60580e3eff0af98b1d",
         "cluster_id": null,
         "job_path": null
       }
