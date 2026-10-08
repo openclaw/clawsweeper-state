@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:47:37.237Z",
+  "updated_at": "2026-10-08T08:47:51.862Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141418:6052148935:2026-10-08T04:21:12Z:re_review",
-      "comment_id": "6052148935",
-      "comment_version_key": "6052148935:2026-10-08T04:21:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141418#issuecomment-6052148935",
-      "comment_created_at": "2026-10-08T04:21:12Z",
-      "comment_updated_at": "2026-10-08T04:21:12Z",
-      "comment_body_sha256": "9d4f272e9464b6eb843a9b80a14906190e3e3228ad6fb3d38b53fc96cbe07452",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141418,
-      "author": "nocodet888-arch",
-      "author_id": 305874177,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T04:22:06.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tui-steer-agent-scope",
-        "head_sha": "421f1026a9feee84ef2fe540cb817b8db3d9bc8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138197:5539413816:2026-10-08T04:21:13Z:clawsweeper_needs_human",
       "comment_id": "5539413816",
@@ -33307,6 +33260,39 @@
         "kind": "pull_request",
         "branch": "fix/x-api-json-byte-cap",
         "head_sha": "619242c95dc409cf55981db1331c4a561d43625a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167066:6056197094:2026-10-08T08:46:44Z:clawsweeper_needs_human",
+      "comment_id": "6056197094",
+      "comment_version_key": "6056197094:2026-10-08T08:46:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167066#issuecomment-6056197094",
+      "comment_created_at": "2026-10-08T08:46:44Z",
+      "comment_updated_at": "2026-10-08T08:46:44Z",
+      "comment_body_sha256": "c969ce704ebb4c30b3ad9f9f99a949b65083279b927e175c8993ddda921f6681",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167066,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The pinned-head Vitest output exercises registry normalization through direct handler invocation with mocked surrounding services, rather than... (sha=d7121de80450fdf3c0067bc31062251c8df6b614)",
+      "expected_head_sha": "d7121de80450fdf3c0067bc31062251c8df6b614",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T08:47:51.862Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-session-id-trim",
+        "head_sha": "d7121de80450fdf3c0067bc31062251c8df6b614",
         "cluster_id": null,
         "job_path": null
       }
