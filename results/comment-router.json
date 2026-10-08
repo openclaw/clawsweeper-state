@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:11:04.435Z",
+  "updated_at": "2026-10-08T04:11:56.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166794:6048740273:2026-10-07T23:13:09Z:re_review",
-      "comment_id": "6048740273",
-      "comment_version_key": "6048740273:2026-10-07T23:13:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166794#issuecomment-6048740273",
-      "comment_created_at": "2026-10-07T23:13:09Z",
-      "comment_updated_at": "2026-10-07T23:13:09Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166794,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:17:52.193Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/release-2026.10.2-frv-handoff",
-        "head_sha": "9a20171479927c1a322eb87b0e3f4356e8a09969",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166796:6048756018:2026-10-07T23:14:25Z:re_review",
       "comment_id": "6048756018",
@@ -33438,6 +33391,39 @@
         "kind": "pull_request",
         "branch": "feat/slack-pre-rendered-cron-announce",
         "head_sha": "504a2f944c8d1cb0c87413144a96454c596db4c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1473:5787349263:2026-10-08T04:10:58Z:clawsweeper_needs_human",
+      "comment_id": "5787349263",
+      "comment_version_key": "5787349263:2026-10-08T04:10:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1473#issuecomment-5787349263",
+      "comment_created_at": "2026-09-23T01:23:08Z",
+      "comment_updated_at": "2026-10-08T04:10:58Z",
+      "comment_body_sha256": "62f03280d6a5545d1094204e3a68d19c8d53cd1afe9eca6a04df97b3bf56224d",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the pending current-head real Gateway usage proof and record the required full Windows validation sequence or an explicit environmental blocker. Preserve the original Tray fa... (sha=34a92e552131cff7a8413b0c71af5fd639dc9463)",
+      "expected_head_sha": "34a92e552131cff7a8413b0c71af5fd639dc9463",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T04:11:56.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-context-footer-usage-1433",
+        "head_sha": "34a92e552131cff7a8413b0c71af5fd639dc9463",
         "cluster_id": null,
         "job_path": null
       }
