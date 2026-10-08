@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T03:50:08.038Z",
+  "updated_at": "2026-10-08T03:50:30.863Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166774:6048149291:2026-10-07T22:40:38Z:clawsweeper_needs_human",
-      "comment_id": "6048149291",
-      "comment_version_key": "6048149291:2026-10-07T22:40:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166774#issuecomment-6048149291",
-      "comment_created_at": "2026-10-07T22:27:55Z",
-      "comment_updated_at": "2026-10-07T22:40:38Z",
-      "comment_body_sha256": "aeb73cd991971812cb1ce3e2e5f277000f166bf32c1ef018eabd7c712ba8f30f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166774,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=350fba4677e662ab34ae373e4a9dee3473f345dd)",
-      "expected_head_sha": "350fba4677e662ab34ae373e4a9dee3473f345dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T22:59:01.216Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-main-budgets-20261007",
-        "head_sha": "350fba4677e662ab34ae373e4a9dee3473f345dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166777:6048252857:2026-10-07T22:34:47Z:clawsweeper_needs_human",
       "comment_id": "6048252857",
@@ -33425,6 +33392,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156531:6051782373:2026-10-08T03:49:33Z:re_review",
+      "comment_id": "6051782373",
+      "comment_version_key": "6051782373:2026-10-08T03:49:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156531#issuecomment-6051782373",
+      "comment_created_at": "2026-10-08T03:49:33Z",
+      "comment_updated_at": "2026-10-08T03:49:33Z",
+      "comment_body_sha256": "c5cb5298b8a607307132502152d1a7ed39c6ac59ae4166bf6ea649eefd2bf8e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156531,
+      "author": "patrickrun",
+      "author_id": 29052739,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please review pr #156531 at exact head `7c47c22872d9414a897e0cf42321f7797c83125d`. the only change since `2b172a7` wraps the native-catalog completion method to fix ci oxlint unbound-method while forwarding the same rows and receiver. focused lint, catalog-access tests (2/2), and codex dynamic-tools tests (6/6) pass. the discord draft-preview test failure reproduced on this head and its test/source are identical to the pr base; it is outside the pr diff",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T03:50:29.146Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/upstream-codex-first-turn",
+        "head_sha": "7c47c22872d9414a897e0cf42321f7797c83125d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
