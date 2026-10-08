@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:33:48.874Z",
+  "updated_at": "2026-10-08T04:34:17.080Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166783:6049019647:2026-10-07T23:36:28Z:re_review",
-      "comment_id": "6049019647",
-      "comment_version_key": "6049019647:2026-10-07T23:36:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166783#issuecomment-6049019647",
-      "comment_created_at": "2026-10-07T23:36:28Z",
-      "comment_updated_at": "2026-10-07T23:36:28Z",
-      "comment_body_sha256": "ca0198f87d5c16f42f59ea15996ab97d9a6b9d6a4a880e1054e39e162e8f0dca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166783,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:37:21.525Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-chat-deeplink-reload",
-        "head_sha": "becfdc11504b4ce490c663c8750402986b527a10",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1672:6048945006:2026-10-07T23:37:02Z:clawsweeper_needs_human",
       "comment_id": "6048945006",
@@ -33443,6 +33396,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T04:33:48.874Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166947:6051715750:2026-10-08T04:33:14Z:clawsweeper_needs_human",
+      "comment_id": "6051715750",
+      "comment_version_key": "6051715750:2026-10-08T04:33:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166947#issuecomment-6051715750",
+      "comment_created_at": "2026-10-08T03:42:57Z",
+      "comment_updated_at": "2026-10-08T04:33:14Z",
+      "comment_body_sha256": "0e078369af9f2f7e5c3cd2d4cc3daa23c89b9ff8db3fc54dd98855096743b1a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The corrected head has not yet demonstrated published OpenClaw 2026.9.8 updating through candidate Doctor successfully; the earlier real run failed at this boundary, so repair and Gat... (sha=69ee5e1dc9282829bce36eb175f4fda9b127a262)",
+      "expected_head_sha": "69ee5e1dc9282829bce36eb175f4fda9b127a262",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T04:34:17.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-tailscale-preflight",
+        "head_sha": "69ee5e1dc9282829bce36eb175f4fda9b127a262",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
