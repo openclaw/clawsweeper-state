@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T14:35:56.400Z",
+  "updated_at": "2026-10-08T14:36:01.435Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167041:6056143639:2026-10-08T08:43:26Z:re_review",
-      "comment_id": "6056143639",
-      "comment_version_key": "6056143639:2026-10-08T08:43:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167041#issuecomment-6056143639",
-      "comment_created_at": "2026-10-08T08:43:26Z",
-      "comment_updated_at": "2026-10-08T08:43:26Z",
-      "comment_body_sha256": "8a53fc273fa2a97875b2a9993c7643578e450702b8073a16201f74a2b176a07e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167041,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T08:44:27.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/bundle3-plugins-ui-20261007",
-        "head_sha": "e3b6efb04e6910ed51233e8e4d081feadee5ddcb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166537:6034934156:2026-10-08T08:43:42Z:clawsweeper_needs_human",
       "comment_id": "6034934156",
@@ -33034,6 +32987,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-channel-tool-progress",
         "head_sha": "968309ba55e637d83ae839ad91bba083152bd11b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:257:5806713752:2026-10-08T14:34:49Z:clawsweeper_needs_human",
+      "comment_id": "5806713752",
+      "comment_version_key": "5806713752:2026-10-08T14:34:49Z",
+      "comment_url": "https://github.com/openclaw/discrawl/pull/257#issuecomment-5806713752",
+      "comment_created_at": "2026-09-24T03:04:48Z",
+      "comment_updated_at": "2026-10-08T14:34:49Z",
+      "comment_body_sha256": "d5ede7dcafab6a35a574855d4ee225b871af0b357f5b06eda81a946e1492fa99",
+      "repo": "openclaw/discrawl",
+      "issue_number": 257,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging activates synchronous index creation on the scheduled publisher's cached archive; peak memory, temporary disk headroom, writer delays, ongoing write costs, verified restoratio... (sha=4f5126db7af9f26010e1909a4497623cc5507f70)",
+      "expected_head_sha": "4f5126db7af9f26010e1909a4497623cc5507f70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T14:36:01.435Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/member-change-index",
+        "head_sha": "4f5126db7af9f26010e1909a4497623cc5507f70",
         "cluster_id": null,
         "job_path": null
       }
