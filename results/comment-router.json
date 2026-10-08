@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T18:52:48.136Z",
+  "updated_at": "2026-10-08T18:52:54.677Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156574:5801038884:2026-09-23T18:59:36Z:re_review",
-      "comment_id": "5801038884",
-      "comment_version_key": "5801038884:2026-09-23T18:59:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156574#issuecomment-5801038884",
-      "comment_created_at": "2026-09-23T18:59:36Z",
-      "comment_updated_at": "2026-09-23T18:59:36Z",
-      "comment_body_sha256": "2bc660fcd8945ce0a186c622d3731ed760a39ce56276650b774b86a07effff7e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156574,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T12:39:43.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-projection542",
-        "head_sha": "a7b0c582193fc9160c5f17fdc36504dc40a63a74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156568:5798481225:2026-10-08T12:38:35Z:clawsweeper_needs_human",
       "comment_id": "5798481225",
@@ -33363,6 +33316,39 @@
         "kind": "pull_request",
         "branch": "dbasync/incogp01",
         "head_sha": "e5d25c80247b256c4eb40e904bc69a8542fee549",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1749:6065924089:2026-10-08T18:51:47Z:clawsweeper_needs_human",
+      "comment_id": "6065924089",
+      "comment_version_key": "6065924089:2026-10-08T18:51:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1749#issuecomment-6065924089",
+      "comment_created_at": "2026-10-08T17:57:51Z",
+      "comment_updated_at": "2026-10-08T18:51:47Z",
+      "comment_body_sha256": "a9288d06ee35ebcc4ca53e7aa9d9975d89cc7b0c82275e0bfca234109e3654b9",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1749,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show that an actor authorized for the OCC source cannot rotate or remove a same-name foreign or reassi...; Review finding: [P1] Verify provider ownership before mutating refresh state — apps/controller/src/drivers/credential-refresh/openshell.ts:187-193 - [P2] Preserve status when an e... (sha=3ce93bfdae830c386377adbf302c262c7b8276ec)",
+      "expected_head_sha": "3ce93bfdae830c386377adbf302c262c7b8276ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T18:52:54.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/credential-refresh",
+        "head_sha": "3ce93bfdae830c386377adbf302c262c7b8276ec",
         "cluster_id": null,
         "job_path": null
       }
