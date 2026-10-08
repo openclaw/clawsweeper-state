@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:55:06.055Z",
+  "updated_at": "2026-10-08T08:56:10.097Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160620:5944168178:2026-10-02T01:57:35Z:re_review",
-      "comment_id": "5944168178",
-      "comment_version_key": "5944168178:2026-10-02T01:57:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160620#issuecomment-5944168178",
-      "comment_created_at": "2026-10-02T01:57:35Z",
-      "comment_updated_at": "2026-10-02T01:57:35Z",
-      "comment_body_sha256": "2a11cbba9c967b6b77ffdca8b08093862612af48346678402f8d26d6887925c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160620,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T04:32:40.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-exec-fatal-code-cron",
-        "head_sha": "8e4df6c84d9650945a46fc783786dedd812f0d4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160620:5882088939:2026-09-29T01:48:32Z:re_review",
       "comment_id": "5882088939",
@@ -33265,6 +33218,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159670:5856352687:2026-10-08T08:54:59Z:clawsweeper_needs_human",
+      "comment_id": "5856352687",
+      "comment_version_key": "5856352687:2026-10-08T08:54:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/159670#issuecomment-5856352687",
+      "comment_created_at": "2026-09-27T13:39:11Z",
+      "comment_updated_at": "2026-10-08T08:54:59Z",
+      "comment_body_sha256": "4fbdd27d64cdce74961ac4050b790f3eabe78e8c1ef2eda735c66d10c0d1ab79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 159670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The identity-verified complete body reports a patched isolated Gateway restart with eleven authenticated Claude CLI rows, but acknowle... (sha=c82d40b7a58f4b85563696e8e9f648a1313c425a)",
+      "expected_head_sha": "c82d40b7a58f4b85563696e8e9f648a1313c425a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T08:56:10.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-availability-partial-refresh-158922",
+        "head_sha": "c82d40b7a58f4b85563696e8e9f648a1313c425a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
