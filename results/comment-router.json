@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T19:51:21.970Z",
+  "updated_at": "2026-10-08T19:53:30.844Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5756701697:2026-09-21T07:06:46Z:re_review",
-      "comment_id": "5756701697",
-      "comment_version_key": "5756701697:2026-09-21T07:06:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5756701697",
-      "comment_created_at": "2026-09-21T07:06:46Z",
-      "comment_updated_at": "2026-09-21T07:06:46Z",
-      "comment_body_sha256": "2c9420501d46252e0c31cbd9f7844d43b8c1c4763a88536df23bee65187adf1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T13:47:23.651Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5758145049:2026-09-21T09:16:57Z:re_review",
       "comment_id": "5758145049",
@@ -33217,6 +33190,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133862:5474608491:2026-10-08T19:52:31Z:clawsweeper_needs_human",
+      "comment_id": "5474608491",
+      "comment_version_key": "5474608491:2026-10-08T19:52:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133862#issuecomment-5474608491",
+      "comment_created_at": "2026-08-31T06:28:22Z",
+      "comment_updated_at": "2026-10-08T19:52:31Z",
+      "comment_body_sha256": "e39f231cfbb8c0fd16ca858632e3b36e1c8204f033aaa35b68e4f15cebe731e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the macOS trace exercises the production task runner and send wrapper, but directly invokes a guard rather than the real client's HTTP boundary. Provid...; Review finding: [P1] Fence delayed auto-joins before completing monitor retirement — extensions/matrix/src/matrix/monitor/task-runner.ts:107 - [P2] Pass the required fallback argu... (sha=f19ad72bfc6d622e997444307746b042435f5b93)",
+      "expected_head_sha": "f19ad72bfc6d622e997444307746b042435f5b93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T19:53:30.844Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-wait-for-idle-deadline",
+        "head_sha": "f19ad72bfc6d622e997444307746b042435f5b93",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
