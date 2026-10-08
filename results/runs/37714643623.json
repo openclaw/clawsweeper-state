@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1676",
+  "mode": "autonomous",
+  "run_id": "37714643623",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37714643623",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1676.md",
+  "published_at": "2026-10-08T01:51:28.981Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1676",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1676",
+  "canonical_pr": null,
+  "summary": "Verified the updater metadata gap against preflight main 037c17dcb581cbe427ab1939576515643b9e0707. A narrow version-display repair is appropriate. Implementation is blocked in this read-only worker; the fix artifact is ready for the executor. No code changes or GitHub mutations occurred, and validation has not run.",
+  "actions": [
+    {
+      "target": "#1676",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "The source-proven gap warrants implementation, but this worker cannot write code or validation outputs. Execute the cluster fix artifact in a writable Windows checkout."
+    },
+    {
+      "target": "#1592",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "Related recovery work has distinct remaining scope. Keep it open and outside this implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1676",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "The repair can remain narrow without changing packaging strategy, migration identity policy, or legacy recovery behavior."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
