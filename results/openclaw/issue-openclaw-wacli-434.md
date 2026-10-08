@@ -2,16 +2,16 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-434"
 mode: "autonomous"
-run_id: "37854871238"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37854871238"
-head_sha: "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74"
+run_id: "37859465425"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37859465425"
+head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-08T22:45:42.634Z"
+published_at: "2026-10-08T23:34:00.635Z"
 canonical: "https://github.com/openclaw/wacli/issues/434"
 canonical_issue: "https://github.com/openclaw/wacli/issues/434"
 canonical_pr: null
-actions_total: 5
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37854871238](https://github.com/openclaw/clawsweeper/actions/runs/37854871238)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37859465425](https://github.com/openclaw/clawsweeper/actions/runs/37859465425)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/wacli/issues/434
 
 ## Summary
 
-Verified the documentation gap against main at 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Prepared a narrow four-file fix artifact. Local implementation and full validation are blocked by the read-only environment; no files or GitHub items were changed.
+Verified that MCP wrapper guidance remains missing on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Prepared a narrow documentation artifact and checked an in-memory draft. Implementation, full validation, and PR creation require a writable executor environment; no repository or GitHub mutations occurred.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,13 @@ Verified the documentation gap against main at 8fe6a5a1186c8b3af8258ade817e443e4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #434 | fix_needed | blocked | canonical | Implementation is blocked solely by the read-only filesystem. The documentation request remains viable and requires no unresolved product decision; use the fix artifact in an authorized writable environment. |
-| #48 | keep_closed | skipped | related | Historical design context supporting the documentation approach. |
-| #208 | keep_closed | skipped | related | Historical documentation foundation, not an implementation candidate. |
-| #425 | keep_closed | skipped | related | Historical concurrency context; the guide must reflect the landed delegation behavior. |
-| cluster:issue-openclaw-wacli-434 | build_fix_artifact | planned | canonical | A narrow documentation PR directly satisfies the calibrated request without runtime, schema, dependency, or CLI-contract changes. |
+| #434 | comment | planned | canonical | Coordinate the explicitly authorized documentation implementation while preserving reporter credit. |
+| #48 | keep_closed | skipped | related | Historical product-direction evidence; no remaining action on this closed RFC. |
+| #208 | keep_closed | skipped | related | Historical documentation precedent, not a candidate PR for this issue. |
+| #425 | keep_closed | skipped | related | Historical concurrency evidence; the new guide must reflect current delegated-command support. |
+| cluster:issue-openclaw-wacli-434 | fix_needed | planned | canonical | A bounded documentation gap remains, with no viable implementation PR in the supplied inventory. |
+| cluster:issue-openclaw-wacli-434 | build_fix_artifact | planned | canonical | Provide an executable four-file documentation plan with source-verified contracts, attribution, release-note context, and validation. |
+| cluster:issue-openclaw-wacli-434 | open_fix_pr | blocked | canonical | Implementation and PR creation are blocked on a writable environment and successful required validation. |
 
 ## Needs Human
 
