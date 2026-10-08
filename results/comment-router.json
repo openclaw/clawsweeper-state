@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T10:48:17.302Z",
+  "updated_at": "2026-10-08T10:48:50.182Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166948:6053379974:2026-10-08T05:55:52Z:re_review",
-      "comment_id": "6053379974",
-      "comment_version_key": "6053379974:2026-10-08T05:55:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166948#issuecomment-6053379974",
-      "comment_created_at": "2026-10-08T05:55:52Z",
-      "comment_updated_at": "2026-10-08T05:55:52Z",
-      "comment_body_sha256": "841538278782fcbc797f4e23b6dc60f88f0ef423efdbcbe7feb4887a71222935",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166948,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T06:00:03.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-interactive-maintenance",
-        "head_sha": "0d8ecefc028a0c004ad519da40bd014c103d9928",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166950:6053400598:2026-10-08T05:57:22Z:re_review",
       "comment_id": "6053400598",
@@ -33295,6 +33248,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167060:6056047113:2026-10-08T10:47:43Z:clawsweeper_auto_repair",
+      "comment_id": "6056047113",
+      "comment_version_key": "6056047113:2026-10-08T10:47:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167060#issuecomment-6056047113",
+      "comment_created_at": "2026-10-08T08:37:26Z",
+      "comment_updated_at": "2026-10-08T10:47:43Z",
+      "comment_body_sha256": "67f3dc0d45def32c86187340c0ea4f151df13420894115cee71329da3fd54c9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167060,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=8274df39f339f60cc083dbda39a577071a8386ca)",
+      "expected_head_sha": "8274df39f339f60cc083dbda39a577071a8386ca",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-08T10:48:50.182Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-worker-pool-sizing-policy-20260919",
+        "head_sha": "8274df39f339f60cc083dbda39a577071a8386ca",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
