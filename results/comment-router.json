@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-08T16:29:51.972Z",
+  "updated_at": "2026-10-08T16:28:09.116Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166933:6057730936:2026-10-08T10:19:34Z:re_review",
+      "comment_id": "6057730936",
+      "comment_version_key": "6057730936:2026-10-08T10:19:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166933#issuecomment-6057730936",
+      "comment_created_at": "2026-10-08T10:19:34Z",
+      "comment_updated_at": "2026-10-08T10:19:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166933,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T10:20:39.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diagnostics-runtime-capabilities",
+        "head_sha": "3a46a8b73d581077eb62a98bd7801c65a2facffd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156508:5795298527:2026-10-08T10:19:42Z:clawsweeper_needs_human",
       "comment_id": "5795298527",
@@ -32835,39 +32882,6 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-heap-floor-creep-soak-20260919",
         "head_sha": "455ff767aec7429cbfadcfd69d7850bcad3459f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3918:6011818085:2026-10-08T16:28:55Z:clawsweeper_needs_human",
-      "comment_id": "6011818085",
-      "comment_version_key": "6011818085:2026-10-08T16:28:55Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3918#issuecomment-6011818085",
-      "comment_created_at": "2026-10-06T07:48:25Z",
-      "comment_updated_at": "2026-10-08T16:28:55Z",
-      "comment_body_sha256": "81b6c5ac8a99534b18852d1377d002c641dc6d9b3d726294b11bc47ed0d43bdb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3918,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with current main and has no verified integrated result. (sha=da7cec87248d0d808abe32f9f230172867d17670)",
-      "expected_head_sha": "da7cec87248d0d808abe32f9f230172867d17670",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T16:29:51.972Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-sh-mirror-malformed-row",
-        "head_sha": "da7cec87248d0d808abe32f9f230172867d17670",
         "cluster_id": null,
         "job_path": null
       }
