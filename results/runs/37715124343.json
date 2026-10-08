@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166877",
+  "mode": "autonomous",
+  "run_id": "37715124343",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37715124343",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166877.md",
+  "published_at": "2026-10-08T02:27:32.742Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166877",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166877",
+  "canonical_pr": null,
+  "summary": "Confirmed the compatibility-check gap on preflight main and prepared a narrow fix plan. Implementation and request-boundary validation remain blocked by the read-only host. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#166877",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166877",
+      "candidate_fix": null,
+      "reason": "Unsupported lookarounds are missed by the existing strict-schema compatibility owner. A narrow repair can reuse the downgrade path without removing MCP constraints."
+    },
+    {
+      "target": "#110627",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#166877",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or branch repair applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166877",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166877",
+      "candidate_fix": null,
+      "reason": "The bug and repair scope are clear; the deterministic executor can implement and validate the artifact on the designated branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166877",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#166877",
+      "candidate_fix": null,
+      "reason": "PR preparation requires a writable executor checkout and completed local validation. Reuse clawsweeper/issue-openclaw-openclaw-166877; do not publish an unvalidated implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
