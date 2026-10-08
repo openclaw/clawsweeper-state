@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167501",
+  "mode": "autonomous",
+  "run_id": "37854587472",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37854587472",
+  "head_sha": "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167501.md",
+  "published_at": "2026-10-08T23:14:28.683Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167501",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167501",
+  "canonical_pr": null,
+  "summary": "Reproduced the npm classification defect on available main checkout 898efef46cd8faf504de7b6f8525022f03043c76. A narrow fix artifact is ready for the executor. Implementation is blocked by the read-only host; real HTTP proof is blocked by loopback listen EPERM. No changes or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#167501",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167501",
+      "candidate_fix": null,
+      "reason": "The reproduced behavior violates the existing transient-only readback contract. Proceed with a focused executor repair after refreshing and reproducing against current main."
+    },
+    {
+      "target": "#152438",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167501",
+      "candidate_fix": null,
+      "reason": "Retain as historical context; it does not fix the reproduced classification defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167501",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167501",
+      "candidate_fix": null,
+      "reason": "The fix plan is actionable; implementation and required validation must run on an executor with writable isolated storage and loopback networking."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
