@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37732877871",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37732877871",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-08T05:36:12.279Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Verified the false-hit defect on preflight main. A narrow fix artifact is ready; implementation is blocked by the read-only workspace and missing dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The reported defect remains source-proven and has a bounded implementation path."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Emit one narrow bug-fix plan for deterministic executor implementation."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout, project dependencies, and a supported runtime to establish the failing regression, implement the artifact, pass validation, and create or update the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
