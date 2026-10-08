@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T10:39:28.708Z",
+  "updated_at": "2026-10-08T10:39:29.324Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166947:6053270783:2026-10-08T05:47:45Z:re_review",
-      "comment_id": "6053270783",
-      "comment_version_key": "6053270783:2026-10-08T05:47:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166947#issuecomment-6053270783",
-      "comment_created_at": "2026-10-08T05:47:45Z",
-      "comment_updated_at": "2026-10-08T05:47:45Z",
-      "comment_body_sha256": "54f481576376744f524856d659d59258c5ee0284a88afe9b5e06753d7b66da64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166947,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:48:44.071Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-tailscale-preflight",
-        "head_sha": "69ee5e1dc9282829bce36eb175f4fda9b127a262",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:68478:4326172920:2026-10-08T05:31:40Z:autoclose",
       "comment_id": "4326172920",
@@ -33217,6 +33170,39 @@
         "kind": "pull_request",
         "branch": "fix/linux-release-request-app-token",
         "head_sha": "a1ec8d64e1dd85e29f248ea8f3a9d0c8dd381bbb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1716:6058037356:2026-10-08T10:38:28Z:clawsweeper_needs_human",
+      "comment_id": "6058037356",
+      "comment_version_key": "6058037356:2026-10-08T10:38:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1716#issuecomment-6058037356",
+      "comment_created_at": "2026-10-08T10:38:28Z",
+      "comment_updated_at": "2026-10-08T10:38:28Z",
+      "comment_body_sha256": "71f90d46f35339dcc89719663e5fac9e4a4b91c96bf8c344cabf3f629bfed34e",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1716,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The focused regression invokes the actual renderer CLI and reports the expected after-fix outcomes, but the supplied after-fix evidenc... (sha=f92c3dade8ba338f336cc92ee8f26e0ad1d1b198)",
+      "expected_head_sha": "f92c3dade8ba338f336cc92ee8f26e0ad1d1b198",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T10:39:29.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/profile-admin-email",
+        "head_sha": "f92c3dade8ba338f336cc92ee8f26e0ad1d1b198",
         "cluster_id": null,
         "job_path": null
       }
