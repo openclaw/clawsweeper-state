@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T02:41:39.660Z",
+  "updated_at": "2026-10-08T02:41:42.050Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166737:6047469424:2026-10-07T21:44:40Z:re_review",
-      "comment_id": "6047469424",
-      "comment_version_key": "6047469424:2026-10-07T21:44:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166737#issuecomment-6047469424",
-      "comment_created_at": "2026-10-07T21:44:40Z",
-      "comment_updated_at": "2026-10-07T21:44:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166737,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T21:45:52.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/catalog-recommended-list",
-        "head_sha": "f36018b42c7448a10b4a198b75fc125d0a54f7ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163943:5965998027:2026-10-03T05:34:27Z:re_review",
       "comment_id": "5965998027",
@@ -33548,6 +33501,39 @@
         "kind": "pull_request",
         "branch": "fix/137747-systemd-scalar-paths",
         "head_sha": "2be4686fc5f6184f92330e97a1e5ed179e386219",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166887:6050656115:2026-10-08T02:40:54Z:clawsweeper_needs_human",
+      "comment_id": "6050656115",
+      "comment_version_key": "6050656115:2026-10-08T02:40:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166887#issuecomment-6050656115",
+      "comment_created_at": "2026-10-08T02:02:49Z",
+      "comment_updated_at": "2026-10-08T02:40:54Z",
+      "comment_body_sha256": "164aab2d9ab6662ce7eaa32baaf4124b654183f374223bc3c6e8674641aa67ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record comparable release-base/head test cost and resolve the stated source and branch qualification holds through bounded failure disposition and applicable release-head ordered, ori... (sha=dd3ed510891fe1a02cf6703909cf856aea357f41)",
+      "expected_head_sha": "dd3ed510891fe1a02cf6703909cf856aea357f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T02:41:42.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/release-2026.9.9-frv-plugin-settlement-20261008",
+        "head_sha": "dd3ed510891fe1a02cf6703909cf856aea357f41",
         "cluster_id": null,
         "job_path": null
       }
