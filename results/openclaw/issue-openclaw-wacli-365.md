@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-365"
 mode: "autonomous"
-run_id: "37797035258"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37797035258"
+run_id: "37805325820"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37805325820"
 head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-08T15:15:24.735Z"
+published_at: "2026-10-08T16:06:23.608Z"
 canonical: "https://github.com/openclaw/wacli/issues/365"
 canonical_issue: "https://github.com/openclaw/wacli/issues/365"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37797035258](https://github.com/openclaw/clawsweeper/actions/runs/37797035258)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37805325820](https://github.com/openclaw/clawsweeper/actions/runs/37805325820)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/365
 
 ## Summary
 
-No implementation PR is justified yet. Current main includes the identified parser and conditional recovery fixes, but the six all-empty groups remain unexplained. An affected-group trace is required to identify a narrow defect. No files or GitHub state changed.
+No focused implementation is supported yet. Current main contains the confirmed parser and conditional recovery fixes, but the six all-empty groups remain unexplained. No code changed or PR path was emitted; #365 remains canonical. Only the unsupported cluster fix action is downgraded to a non-mutating needs_human action for missing reproduction evidence.
 
 ## Impact
 
@@ -66,15 +66,15 @@ No implementation PR is justified yet. Current main includes the identified pars
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #365 | keep_canonical | planned | canonical | The remaining observation is neither proven fixed nor covered by a demonstrated replacement fix. |
-| cluster:issue-openclaw-wacli-365 | needs_human | blocked | needs_human | Implementation requires a redacted current-main affected-group trace showing payload field names, body availability and decryption status. Without it, a parser or recovery patch would be speculative. Keep #365 open; emit no executable fix artifact or closing reference. |
-| #344 | keep_closed | skipped | related | Historical diagnostic work; preserve existing contributor credit and closure. |
-| #362 | keep_closed | skipped | related | Resolved, separately identified mechanism; historical context only. |
-| #371 | keep_closed | skipped | independent | Distinct backfill failure; no action in this implementation cluster. |
-| #383 | keep_closed | skipped | related | Landed partial repair; preserve contributor attribution. |
-| #416 | keep_closed | skipped | related | Confirmed parser gaps are repaired; the remaining observation is outside this landed scope. |
-| #441 | keep_closed | skipped | related | Conditional recovery is shipped; it does not prove recovery of the six reported groups. |
+| #365 | keep_canonical | planned | canonical | The remaining observation is distinct from the shipped repairs and cannot be declared fixed from aggregate text coverage. |
+| #344 | keep_closed | skipped | related | Historical diagnostic improvement; no mutation. |
+| #362 | keep_closed | skipped | independent | Separately resolved edit mechanism does not explain whole-group text absence. |
+| #371 | keep_closed | skipped | independent | Distinct retrieval failure; no mutation. |
+| #383 | keep_closed | skipped | related | Confirmed partial parser repair; remaining empty groups are outside its demonstrated scope. |
+| #416 | keep_closed | skipped | related | Confirmed partial repair already present on main; no mutation. |
+| #441 | keep_closed | skipped | related | Conditional recovery improvement does not demonstrate resolution of the reported groups. |
+| cluster:issue-openclaw-wacli-365 | needs_human | blocked | needs_human | An affected-group reproduction is required to identify a demonstrated defect. Another parser or recovery patch would be speculative. The job explicitly requires stopping without a PR when the request is not safely implementable. |
 
 ## Needs Human
 
-- For #365, supply a redacted affected-group trace from current main showing payload field names, message-body availability and decryption status. The supplied aggregate measurements and landed parser/recovery fixtures do not identify the cause of the six all-empty groups.
+- #365: provide a redacted affected-group reproduction on current main showing payload shapes, body-presence and delivery/decryption status. The hydrated review reports no high-confidence current-main reproduction for the six all-empty groups, and the provided artifacts contain no affected payload fixture.
