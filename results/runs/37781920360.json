@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37781920360",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37781920360",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-08T13:11:13.288Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository fix is established. On supplied current main, Crabbox cannot distinguish slow allocation from pre-worker dispatch failure when Blacksmith supplies no exact workflow association. Implementation requires a supported provider capability, consistent with the hydrated triage direction. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Blocked on Blacksmith exposing a supported, durable binding between the exact Testbox request and its workflow run before worker registration, including cancellation and admission failure. No such capability is established by the hydrated evidence or current adapter contract. A timeout heuristic or guessed run association would not satisfy the issue. Keep the issue open; do not create an executable fix PR artifact."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged repair; no mutation or new merge recommendation."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged repair; it does not resolve the remaining provider capability gap."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

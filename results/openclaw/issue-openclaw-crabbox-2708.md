@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37697549274"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37697549274"
-head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
+run_id: "37781920360"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37781920360"
+head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-07T22:43:12.039Z"
+published_at: "2026-10-08T13:11:13.288Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37697549274](https://github.com/openclaw/clawsweeper/actions/runs/37697549274)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37781920360](https://github.com/openclaw/clawsweeper/actions/runs/37781920360)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe implementation PR is established. Current main still depends on Blacksmith supplying an exact pre-worker workflow association. Recorded triage directs keeping the issue open until that provider capability exists. No files or GitHub state changed; tests were inspected, not executed.
+No safe repository fix is established. On supplied current main, Crabbox cannot distinguish slow allocation from pre-worker dispatch failure when Blacksmith supplies no exact workflow association. Implementation requires a supported provider capability, consistent with the hydrated triage direction. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No safe implementation PR is established. Current main still depends on Blacksmi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | planned | related | This issue is related to the shipped settlement repairs but has a distinct unresolved provider dependency. Implementation requires a supported Blacksmith binding between the exact Testbox request and its workflow run that exists before worker startup and survives admission failure or cancellation. Without it, slow allocation and failed dispatch are indistinguishable. Keep https://github.com/openclaw/crabbox/issues/2708 open; no safe executable fix artifact can be established from the provided evidence. |
-| #2669 | keep_closed | skipped | related | Historical context with a distinct root cause; no action on a closed item. |
-| #2670 | keep_closed | skipped | related | Shipped custody repair does not supply the missing pre-worker association. |
-| #2682 | keep_closed | skipped | related | Historical context with distinct scope; no action on a closed item. |
-| #2683 | keep_closed | skipped | related | Shipped observational repair does not create a provider dispatch-to-run binding. |
+| #2708 | keep_related | blocked | canonical | Blocked on Blacksmith exposing a supported, durable binding between the exact Testbox request and its workflow run before worker registration, including cancellation and admission failure. No such capability is established by the hydrated evidence or current adapter contract. A timeout heuristic or guessed run association would not satisfy the issue. Keep the issue open; do not create an executable fix PR artifact. |
+| #2669 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Historical merged repair; no mutation or new merge recommendation. |
+| #2682 | keep_closed | skipped | related | Historical context only. |
+| #2683 | keep_closed | skipped | related | Historical merged repair; it does not resolve the remaining provider capability gap. |
 
 ## Needs Human
 
