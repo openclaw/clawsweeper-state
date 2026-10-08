@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T21:01:01.308Z",
+  "updated_at": "2026-10-08T21:01:17.378Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156673:5854159501:2026-09-27T08:20:44Z:re_review",
-      "comment_id": "5854159501",
-      "comment_version_key": "5854159501:2026-09-27T08:20:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156673#issuecomment-5854159501",
-      "comment_created_at": "2026-09-27T08:20:44Z",
-      "comment_updated_at": "2026-09-27T08:20:44Z",
-      "comment_body_sha256": "f51ce99acce98e73c233390d4833db58d310b7eb7d579c0a083241e0fff7a256",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156673,
-      "author": "HerbertHuerto",
-      "author_id": 184875886,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T14:32:18.773Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/usage-worker-transcript-oom",
-        "head_sha": "c494c6d91643c8bcd71c591a08589caed47d8c5d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156673:5799676584:2026-10-08T14:31:17Z:clawsweeper_needs_human",
       "comment_id": "5799676584",
@@ -33367,6 +33320,39 @@
         "kind": "pull_request",
         "branch": "deslop/d31-agents-toplevel-20261008",
         "head_sha": "8b7c3da80bf34d3e3028040d0d8326b5887993f1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167452:6068958235:2026-10-08T21:00:18Z:clawsweeper_needs_human",
+      "comment_id": "6068958235",
+      "comment_version_key": "6068958235:2026-10-08T21:00:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167452#issuecomment-6068958235",
+      "comment_created_at": "2026-10-08T21:00:18Z",
+      "comment_updated_at": "2026-10-08T21:00:18Z",
+      "comment_body_sha256": "a0ea170a0bbd58742efc641ea0a187d59ab39dee6e780c0a8e3ada5bf72b96bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167452,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the conflicts with current main, preserve its task cancellation and separate search lane, and validate the five-second partial-result regression on the integrated head. (sha=7689a0115106efc83fb0bf295ebcb32e87d956c3)",
+      "expected_head_sha": "7689a0115106efc83fb0bf295ebcb32e87d956c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T21:01:17.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-db-write-queue-deadlock",
+        "head_sha": "7689a0115106efc83fb0bf295ebcb32e87d956c3",
         "cluster_id": null,
         "job_path": null
       }
