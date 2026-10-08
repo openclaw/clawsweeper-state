@@ -1,0 +1,111 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37855591620",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37855591620",
+  "head_sha": "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-08T22:52:23.725Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository-only implementation is established. Current main still depends on Blacksmith supplying an authoritative Testbox-to-workflow association. The recorded triage decision requires a provider-side capability before implementation. No code or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Retain the distinct pre-worker dispatch failure report while awaiting a supported authoritative association from Blacksmith."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical settlement work does not resolve missing pre-worker dispatch association."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical ownership protection must remain intact."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only settlement visibility is distinct from recovering an absent dispatch association."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical status work requires an association and does not supply the missing provider capability."
+    },
+    {
+      "target": "cluster:issue-openclaw-crabbox-2708",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "A supported Blacksmith capability must be confirmed before implementation can resume: a durable Testbox request-to-workflow binding available before worker registration and retained through cancellation or admission failure. The provided artifacts establish no safe executable fix. Inferring identity or treating native completion as settlement would violate the existing recovery contract."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 4,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "For https://github.com/openclaw/crabbox/issues/2708, confirm that Blacksmith exposes a supported, durable Testbox request-to-workflow binding before worker registration and retains it through cancellation or admission failure. The October 6 triage comment records that CLI 0.4.65 lacks this capability; no newer capability verification is available. Keep implementation blocked and the issue open until that prerequisite is established."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
