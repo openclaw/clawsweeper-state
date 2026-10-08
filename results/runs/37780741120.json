@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112832",
+  "mode": "autonomous",
+  "run_id": "37780741120",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37780741120",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112832.md",
+  "published_at": "2026-10-08T13:51:21.397Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_pr": null,
+  "summary": "The eager-start gap remains in source at preflight main 471f8fb923b74f45f9bf9cfe634af63d6c4506f5. A narrow fix artifact is prepared, but implementation and required reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#112832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Retain the canonical issue and prepare the minimum eager-flag repair. Implementation requires a writable executor with dependencies and isolated runtime state."
+    },
+    {
+      "target": "#112898",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Historical credited reference material, not an active repair or closure target."
+    },
+    {
+      "target": "#122537",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Merged partial overlap does not cover the eager-start expectation."
+    },
+    {
+      "target": "#128379",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without public mutation. The ordinary eager-start repair can consume existing main lifecycle contracts without changing their security boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "The artifact is actionable, but this host cannot implement or validate it. Reproduce at the real owner boundary before production edits; stop if the defect no longer reproduces."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
