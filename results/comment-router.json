@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T00:38:19.057Z",
+  "updated_at": "2026-10-08T00:38:32.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:425:6044984046:2026-10-07T19:12:38Z:re_review",
-      "comment_id": "6044984046",
-      "comment_version_key": "6044984046:2026-10-07T19:12:38Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/425#issuecomment-6044984046",
-      "comment_created_at": "2026-10-07T19:12:38Z",
-      "comment_updated_at": "2026-10-07T19:12:38Z",
-      "comment_body_sha256": "570c0405e5988669623d3fe599bcc4dbba42c25340769b2de9b49abe042877e7",
-      "repo": "openclaw/mcporter",
-      "issue_number": 425,
-      "author": "alexminza",
-      "author_id": 149919,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T19:13:40.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/408-vault-encrypt",
-        "head_sha": "99ff6eff8e3b78aca146b408489d800fa3e9f4df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166445:6044984656:2026-10-07T19:12:40Z:re_review",
       "comment_id": "6044984656",
@@ -33372,6 +33325,39 @@
         "kind": "pull_request",
         "branch": "review-product-quality",
         "head_sha": "2cb9c3b2113099a3d7cd93c386180b38d8f2d60e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166790:6048719716:2026-10-08T00:37:25Z:clawsweeper_needs_human",
+      "comment_id": "6048719716",
+      "comment_version_key": "6048719716:2026-10-08T00:37:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166790#issuecomment-6048719716",
+      "comment_created_at": "2026-10-07T23:11:29Z",
+      "comment_updated_at": "2026-10-08T00:37:25Z",
+      "comment_body_sha256": "82d73ba4bc953959e4825ffb5f6179fe4803ee0eb8c30e763d7495b09c268b64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166790,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8b613933f7fc2726748bddb841932a5b142966e1)",
+      "expected_head_sha": "8b613933f7fc2726748bddb841932a5b142966e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T00:38:32.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-validation-contracts-20261007",
+        "head_sha": "8b613933f7fc2726748bddb841932a5b142966e1",
         "cluster_id": null,
         "job_path": null
       }
