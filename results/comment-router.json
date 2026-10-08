@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-10-08T19:20:52.258Z",
+  "updated_at": "2026-10-08T19:21:02.355Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155879:5781574039:2026-10-08T12:21:58Z:clawsweeper_needs_human",
-      "comment_id": "5781574039",
-      "comment_version_key": "5781574039:2026-10-08T12:21:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155879#issuecomment-5781574039",
-      "comment_created_at": "2026-09-22T18:11:36Z",
-      "comment_updated_at": "2026-10-08T12:21:58Z",
-      "comment_body_sha256": "f278cbc98443607d4777130e79e4fe09f706c685f3dc32cd4a334ec71b038f53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155879,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Captured live output positively covers production ACPX startup and Doctor discovery with mixed malformed and valid filenames, but the... (sha=3d6c16963124d9bf401f0e06e4b5793f857a2758)",
-      "expected_head_sha": "3d6c16963124d9bf401f0e06e4b5793f857a2758",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T13:01:16.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-acpx-invalid-session-filenames-20260924",
-        "head_sha": "3d6c16963124d9bf401f0e06e4b5793f857a2758",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161146:5888858922:2026-10-08T12:21:21Z:clawsweeper_needs_human",
-      "comment_id": "5888858922",
-      "comment_version_key": "5888858922:2026-10-08T12:21:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161146#issuecomment-5888858922",
-      "comment_created_at": "2026-09-29T10:59:34Z",
-      "comment_updated_at": "2026-10-08T12:21:21Z",
-      "comment_body_sha256": "69a77a785409cdc447635b294433c6c54e819a17292c9b085ca8440be2df5c5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161146,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner passes a stable workspace to CLI or embedded planner turns, but the branch supplies only mocked runner-argument as...; Review finding: [P1] Keep workspace instructions out of setup planner turns — src/system-agent/assistant.ts:162 - [medium] Normal-agent workspace instructions reach the setup plan... (sha=30772b67ee6ceb87e297b87d694d5b240d85c35c)",
-      "expected_head_sha": "30772b67ee6ceb87e297b87d694d5b240d85c35c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T13:01:16.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/160777-stable-system-agent-workspace",
-        "head_sha": "30772b67ee6ceb87e297b87d694d5b240d85c35c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162533:5927559435:2026-10-08T12:20:35Z:clawsweeper_needs_human",
       "comment_id": "5927559435",
@@ -33370,6 +33304,59 @@
       }
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:165765:6002084199:2026-10-05T20:08:56Z:autofix",
+      "comment_id": "6002084199",
+      "comment_version_key": "6002084199:2026-10-05T20:08:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165765#issuecomment-6002084199",
+      "comment_created_at": "2026-10-05T20:08:56Z",
+      "comment_updated_at": "2026-10-05T20:08:56Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165765,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T19:20:39.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/github-plugin-ui",
+        "head_sha": "6ee9d4956948802af7c6dd13f4dc0346427ea69c",
+        "cluster_id": "automerge-openclaw-openclaw-165765",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165765.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1753:6066342432:2026-10-08T19:19:46Z:clawsweeper_needs_human",
       "comment_id": "6066342432",
       "comment_version_key": "6066342432:2026-10-08T19:19:46Z",
@@ -33401,6 +33388,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165765:6002331654:2026-10-08T19:19:31Z:clawsweeper_needs_human",
+      "comment_id": "6002331654",
+      "comment_version_key": "6002331654:2026-10-08T19:19:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165765#issuecomment-6002331654",
+      "comment_created_at": "2026-10-05T20:27:46Z",
+      "comment_updated_at": "2026-10-08T19:19:31Z",
+      "comment_body_sha256": "47b9265edc37dcee3f2de3ad82129b8f7cb55e5da621e7b61dbd453a97ba9279",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165765,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=6ee9d4956948802af7c6dd13f4dc0346427ea69c)",
+      "expected_head_sha": "6ee9d4956948802af7c6dd13f4dc0346427ea69c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T19:21:02.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/github-plugin-ui",
+        "head_sha": "6ee9d4956948802af7c6dd13f4dc0346427ea69c",
+        "cluster_id": "automerge-openclaw-openclaw-165765",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-165765.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }

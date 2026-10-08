@@ -31,16 +31,17 @@ security_policy: central_security_only
 security_sensitive: false
 target_branch: clawsweeper/automerge-openclaw-openclaw-165765
 source: pr_automerge
-requested_by: "clawsweeper[bot]"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/165765"
+requested_by: "Patrick-Erichsen"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/165765#issuecomment-6002084199"
+requested_by_id: "20157849"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
 Maintainer opted #165765 into ClawSweeper autofix.
 
-Requested by: clawsweeper[bot]
-Request comment: https://github.com/openclaw/openclaw/pull/165765
+Requested by: Patrick-Erichsen
+Request comment: https://github.com/openclaw/openclaw/pull/165765#issuecomment-6002084199
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/165765
