@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:28:01.138Z",
+  "updated_at": "2026-10-08T04:28:17.754Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2736:6048942459:2026-10-07T23:29:56Z:clawsweeper_needs_human",
-      "comment_id": "6048942459",
-      "comment_version_key": "6048942459:2026-10-07T23:29:56Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2736#issuecomment-6048942459",
-      "comment_created_at": "2026-10-07T23:29:56Z",
-      "comment_updated_at": "2026-10-07T23:29:56Z",
-      "comment_body_sha256": "62f1448efacdba60ae97e715ed1a5a822a4c2545f2d3252af322a644c48fbcbd",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2736,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed launcher has not been exercised on Windows PowerShell 5.1, and existing Windows CI selectors omit the added process tests. Establish native argv, uploaded-script, stream,... (sha=4c3851e98f31a58562914c9bd1185d901bba6077)",
-      "expected_head_sha": "4c3851e98f31a58562914c9bd1185d901bba6077",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T23:31:00.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-windows-argv-quoting",
-        "head_sha": "4c3851e98f31a58562914c9bd1185d901bba6077",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166269:6024569430:2026-10-06T20:46:10Z:clawsweeper_auto_merge",
       "comment_id": "6024569430",
@@ -33429,6 +33396,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:161235:6052218489:2026-10-08T04:27:11Z:re_review",
+      "comment_id": "6052218489",
+      "comment_version_key": "6052218489:2026-10-08T04:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/161235#issuecomment-6052218489",
+      "comment_created_at": "2026-10-08T04:27:11Z",
+      "comment_updated_at": "2026-10-08T04:27:11Z",
+      "comment_body_sha256": "3219633fc3523d9d225bea0fb2a9562809ff03b4ccf2f5547f9751f7a8c05635",
+      "repo": "openclaw/openclaw",
+      "issue_number": 161235,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T04:28:15.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-bundled-plugin-reload-20260929",
+        "head_sha": "b040fcc173e159746b8283d7d5ab5da41118b44d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
