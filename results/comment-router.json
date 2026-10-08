@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T02:56:32.968Z",
+  "updated_at": "2026-10-08T02:56:55.487Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166613:6044499312:2026-10-07T22:05:25Z:re_review",
-      "comment_id": "6044499312",
-      "comment_version_key": "6044499312:2026-10-07T22:05:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166613#issuecomment-6044499312",
-      "comment_created_at": "2026-10-07T18:44:01Z",
-      "comment_updated_at": "2026-10-07T22:05:25Z",
-      "comment_body_sha256": "5630f6556add6a2db8fef8e30e9fbb11d0aa8f52393e033a876f6a039499fe55",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166613,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T22:06:19.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/158903-destination",
-        "head_sha": "ab7819f2d4a4debd4c0458b692a24b93b35da115",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166764:6047792413:2026-10-07T22:06:30Z:clawsweeper_needs_human",
       "comment_id": "6047792413",
@@ -33556,6 +33509,39 @@
         "kind": "pull_request",
         "branch": "fix/swift-bootstrap-wait",
         "head_sha": "94af685cb8684ad4eb54dc029b65f04f9a373cd1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166876:6050528942:2026-10-08T02:56:01Z:clawsweeper_needs_human",
+      "comment_id": "6050528942",
+      "comment_version_key": "6050528942:2026-10-08T02:56:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166876#issuecomment-6050528942",
+      "comment_created_at": "2026-10-08T01:51:10Z",
+      "comment_updated_at": "2026-10-08T02:56:01Z",
+      "comment_body_sha256": "c9644a2b61a6999bdbb67edc02f6d48244e08bf35b0a9c9a3ba6cb6c96aef089",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166876,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive public Tool.async opt-out needs an area-owner decision on its provider-scoped support contract, or a revision that keeps the metadata private. (sha=08acaf0afacddbb7247daef333cc72a3528e4999)",
+      "expected_head_sha": "08acaf0afacddbb7247daef333cc72a3528e4999",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T02:56:55.487Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-sessions-yield",
+        "head_sha": "08acaf0afacddbb7247daef333cc72a3528e4999",
         "cluster_id": null,
         "job_path": null
       }
