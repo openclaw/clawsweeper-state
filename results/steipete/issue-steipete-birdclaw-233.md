@@ -2,12 +2,12 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37848436437"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37848436437"
-head_sha: "c48313d78bce80ea5e60ef57c397341e349cd837"
+run_id: "37850632587"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37850632587"
+head_sha: "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T21:45:03.297Z"
+published_at: "2026-10-08T22:05:02.214Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37848436437](https://github.com/openclaw/clawsweeper/actions/runs/37848436437)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37850632587](https://github.com/openclaw/clawsweeper/actions/runs/37850632587)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. Narrow fix artifact prepared; implementation and PR creation are blocked by the read-only filesystem and missing Bun. No files or GitHub state changed.
+Verified #233 remains valid at supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a7. Narrow fix artifact prepared; implementation and validation are blocked by read-only filesystem access, absent Bun, and absent dependencies. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The ordinary expansion bug remains valid and has a narrow repair path. Keep #233 open and reuse the designated implementation branch. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Planning remains possible despite the implementation environment blockers. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR creation is blocked until the executor implements and validates the canonical fix on clawsweeper/issue-steipete-birdclaw-233, including real CLI proof and coordination with the existing implementation progress. |
+| #233 | fix_needed | planned | canonical | Ordinary expansion defect with a narrow repair path; preserve #233 as the canonical issue and leave it open. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The implementation strategy is concrete and narrow; artifact preparation can proceed despite local execution restrictions. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Opening a PR is blocked until a writable executor implements the artifact, resolves implementation ownership, and completes validation and real CLI proof. |
 
 ## Needs Human
 
