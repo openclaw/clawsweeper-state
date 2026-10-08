@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37828624314"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37828624314"
-head_sha: "ad52903dc9f1d85a2a820074f7f69080b6d1bcf8"
+run_id: "37832232273"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37832232273"
+head_sha: "ef72f4b940b4dce28c5ccd6a9634e97360f172bc"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-08T19:07:30.815Z"
+published_at: "2026-10-08T19:34:29.769Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37828624314](https://github.com/openclaw/clawsweeper/actions/runs/37828624314)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37832232273](https://github.com/openclaw/clawsweeper/actions/runs/37832232273)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository implementation is established. Main still depends on Blacksmith's native run association, and hydrated triage records no supported pre-worker dispatch binding. Keep the issue open pending that provider capability. No changes or PR were created; tests and live provider reproduction were not run.
+Repository implementation is blocked on a supported Blacksmith pre-worker dispatch binding. Current main matches the recorded triage direction: native queued status without a run association cannot distinguish slow allocation from failed dispatch. No code changes or PR are appropriate until the provider supplies that capability.
 
 ## Impact
 
@@ -66,11 +66,11 @@ No safe repository implementation is established. Main still depends on Blacksmi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | canonical | Implementation is blocked on a supported, durable Blacksmith binding between the exact Testbox request and its workflow run before worker registration, retained through admission failure and cancellation. The supplied evidence establishes no such interface. Guessing by workflow/ref/time or accepting native completion alone would violate existing ownership guarantees. Resume adapter implementation once that provider contract is available. |
-| #2669 | keep_closed | skipped | related | Historical context; no mutation. |
-| #2670 | keep_closed | skipped | related | Historical repair; it does not supply the missing pre-worker dispatch binding. |
-| #2682 | keep_closed | skipped | related | Historical context; no mutation. |
-| #2683 | keep_closed | skipped | related | Historical repair; settlement observations still require an authoritative native association. |
+| #2708 | keep_related | blocked | related | Blocked on Blacksmith exposing a durable, authoritative Testbox-to-workflow-run binding before worker startup that survives cancellation and admission failure. Revisit the provider adapter once that supported capability exists; timeout changes or guessed run associations do not satisfy the issue. |
+| #2669 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Historical merged repair with a distinct scope. |
+| #2682 | keep_closed | skipped | related | Historical context only. |
+| #2683 | keep_closed | skipped | related | Historical merged repair; it does not resolve this dispatch lifecycle gap. |
 
 ## Needs Human
 
