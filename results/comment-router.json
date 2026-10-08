@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T06:08:15.196Z",
+  "updated_at": "2026-10-08T06:09:38.836Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156233:5789779990:2026-10-08T01:10:27Z:clawsweeper_needs_human",
-      "comment_id": "5789779990",
-      "comment_version_key": "5789779990:2026-10-08T01:10:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156233#issuecomment-5789779990",
-      "comment_created_at": "2026-09-23T05:50:04Z",
-      "comment_updated_at": "2026-10-08T01:10:27Z",
-      "comment_body_sha256": "d4475acbbf1bfc9fe7af6853e8e0ef84a73dbf21a4f1d5bdf2a2907274f6a2fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156233,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Complete standalone Android compilation and focused tests in both flavors, record results and measured test cost, and resolve the author’s recorded review and validation hold before m... (sha=e73c3ac500a6764fd3eba8f16b8b4df2a6d9449f)",
-      "expected_head_sha": "e73c3ac500a6764fd3eba8f16b8b4df2a6d9449f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T01:11:21.277Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/android-ingress-cached-transport-proof-20260923",
-        "head_sha": "e73c3ac500a6764fd3eba8f16b8b4df2a6d9449f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156236:5789837832:2026-10-08T01:11:12Z:clawsweeper_needs_human",
       "comment_id": "5789837832",
@@ -33100,6 +33067,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163885:6053561746:2026-10-08T06:08:50Z:re_review",
+      "comment_id": "6053561746",
+      "comment_version_key": "6053561746:2026-10-08T06:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163885#issuecomment-6053561746",
+      "comment_created_at": "2026-10-08T06:08:50Z",
+      "comment_updated_at": "2026-10-08T06:08:50Z",
+      "comment_body_sha256": "2d1c5b400169a1c7f6adb0db5aa65f0b2074a04ba3e745ed8e3a6a16d45cdc4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163885,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T06:09:37.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/cron-history-binding-20261003",
+        "head_sha": "f30992390535c484e3171ba72beeea140d07e9c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
