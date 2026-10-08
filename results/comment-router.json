@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:55:27.379Z",
+  "updated_at": "2026-10-08T01:55:39.386Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148682:6046868063:2026-10-07T21:07:15Z:re_review",
-      "comment_id": "6046868063",
-      "comment_version_key": "6046868063:2026-10-07T21:07:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148682#issuecomment-6046868063",
-      "comment_created_at": "2026-10-07T21:07:15Z",
-      "comment_updated_at": "2026-10-07T21:07:15Z",
-      "comment_body_sha256": "91b46540951c1b8151c75c66eb2b721528cbb213cbdbb1faf66f3455af4b5a1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148682,
-      "author": "mcaldas",
-      "author_id": 3955907,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T21:08:16.174Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-turn-usage",
-        "head_sha": "1e21cea69f1699e2ed0b1a2715efe3db526c9ff1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1657:6046870959:2026-10-07T21:07:25Z:clawsweeper_needs_human",
       "comment_id": "6046870959",
@@ -33470,6 +33423,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-missing-composer-and-header-transition",
         "head_sha": "cca13aff83fbead68dedc1f2971155cbfc394e01",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3804:5818095138:2026-10-08T01:54:44Z:clawsweeper_needs_human",
+      "comment_id": "5818095138",
+      "comment_version_key": "5818095138:2026-10-08T01:54:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3804#issuecomment-5818095138",
+      "comment_created_at": "2026-09-24T16:31:10Z",
+      "comment_updated_at": "2026-10-08T01:54:44Z",
+      "comment_body_sha256": "416a4701bf4506fb8553d35d9811a0f61869ca831e4274ef078d9aa4aefc9fe9",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3804,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head has merge conflicts; the resolved activation must be reviewed against current main before landing. (sha=60110b15d82b146e0f9f2de2ec899493c06e88ea)",
+      "expected_head_sha": "60110b15d82b146e0f9f2de2ec899493c06e88ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:55:39.386Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/activate-skill-card-input-reuse",
+        "head_sha": "60110b15d82b146e0f9f2de2ec899493c06e88ea",
         "cluster_id": null,
         "job_path": null
       }
