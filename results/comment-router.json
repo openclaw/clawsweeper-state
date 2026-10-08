@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:11:44.043Z",
+  "updated_at": "2026-10-08T08:12:13.003Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148397:6051591059:2026-10-08T03:30:49Z:re_review",
-      "comment_id": "6051591059",
-      "comment_version_key": "6051591059:2026-10-08T03:30:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148397#issuecomment-6051591059",
-      "comment_created_at": "2026-10-08T03:30:49Z",
-      "comment_updated_at": "2026-10-08T03:30:49Z",
-      "comment_body_sha256": "2dd4ce1f02a758f971f8b76e94900fc82be0054973fc171f57f637b81e24bb6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148397,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T03:40:44.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qwen-chat-template-reasoning-effort",
-        "head_sha": "9d3b8efc6d3d06977e7e018cb28d6cad9f0e2622",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148397:5668044693:2026-10-08T03:39:41Z:clawsweeper_auto_repair",
       "comment_id": "5668044693",
@@ -33297,6 +33250,39 @@
         "kind": "pull_request",
         "branch": "ci/fix1-handoff-lock-admission",
         "head_sha": "2e6f92b0f96274fcd08ad86056c52df2ee6519d1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156385:5792845391:2026-10-08T08:11:19Z:clawsweeper_needs_human",
+      "comment_id": "5792845391",
+      "comment_version_key": "5792845391:2026-10-08T08:11:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156385#issuecomment-5792845391",
+      "comment_created_at": "2026-09-23T10:03:15Z",
+      "comment_updated_at": "2026-10-08T08:11:19Z",
+      "comment_body_sha256": "b48617198ce355fe5c97406e021d50de860d4d2d656658ce3f01bf03bfbeafa1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156385,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current draft has merge conflicts, and main changed overlapping test hunks; reconcile the patch with main before relying on its earlier execution evidence. (sha=95e9f13832828a9422062f2524ef9b68e599699c)",
+      "expected_head_sha": "95e9f13832828a9422062f2524ef9b68e599699c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T08:12:13.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/imessage-suite-cleanup-20260923",
+        "head_sha": "95e9f13832828a9422062f2524ef9b68e599699c",
         "cluster_id": null,
         "job_path": null
       }
