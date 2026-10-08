@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:51:53.581Z",
+  "updated_at": "2026-10-08T01:53:13.973Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166741:6046803863:2026-10-07T21:03:19Z:clawsweeper_needs_human",
-      "comment_id": "6046803863",
-      "comment_version_key": "6046803863:2026-10-07T21:03:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166741#issuecomment-6046803863",
-      "comment_created_at": "2026-10-07T21:03:19Z",
-      "comment_updated_at": "2026-10-07T21:03:19Z",
-      "comment_body_sha256": "89b1c44a2e3cc9ce19662d946a30b73ccbba13da3d0c6b355e7bbe616b882205",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166741,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic four-worker hashing increases measured Node peak RSS by about 608 MiB; existing low-memory installations could fail during inventory, and no constrained-memory validation or... (sha=880c3e12ce66a021f9689d5726ea3068b75bdb15)",
-      "expected_head_sha": "880c3e12ce66a021f9689d5726ea3068b75bdb15",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T21:04:13.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/runtime-retention-profile-20261007",
-        "head_sha": "880c3e12ce66a021f9689d5726ea3068b75bdb15",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/goplaces:72:6011539754:2026-10-07T21:03:14Z:clawsweeper_needs_human",
       "comment_id": "6011539754",
@@ -33479,6 +33446,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T01:51:53.581Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166874:6050540573:2026-10-08T01:52:17Z:clawsweeper_auto_repair",
+      "comment_id": "6050540573",
+      "comment_version_key": "6050540573:2026-10-08T01:52:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166874#issuecomment-6050540573",
+      "comment_created_at": "2026-10-08T01:52:17Z",
+      "comment_updated_at": "2026-10-08T01:52:17Z",
+      "comment_body_sha256": "cf652e0ba5ab3f5374c2922fadeaf121d652f3cc3c2982683211b969e8ca58cb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166874,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=497cebcda359d1e74b2ae41313f8528a76493e01)",
+      "expected_head_sha": "497cebcda359d1e74b2ae41313f8528a76493e01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:53:13.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-completion-reporting",
+        "head_sha": "497cebcda359d1e74b2ae41313f8528a76493e01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
