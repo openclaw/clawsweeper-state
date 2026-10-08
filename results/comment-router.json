@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:22:37.681Z",
+  "updated_at": "2026-10-08T05:24:12.738Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166833:6049458566:2026-10-08T00:14:38Z:re_review",
-      "comment_id": "6049458566",
-      "comment_version_key": "6049458566:2026-10-08T00:14:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166833#issuecomment-6049458566",
-      "comment_created_at": "2026-10-08T00:14:38Z",
-      "comment_updated_at": "2026-10-08T00:14:38Z",
-      "comment_body_sha256": "c4bd88363d5cbc3818416dbffe39598f83260eca0309127e1c00e65a6f70e27e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166833,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T00:15:44.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/bun-gateway-broker-coverage",
-        "head_sha": "0f859c53e985ff2157441b5ebe42fd9eb8dc6ace",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153477:6049462038:2026-10-08T00:14:56Z:re_review",
       "comment_id": "6049462038",
@@ -33523,6 +33476,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166861:6050189990:2026-10-08T05:23:11Z:clawsweeper_needs_human",
+      "comment_id": "6050189990",
+      "comment_version_key": "6050189990:2026-10-08T05:23:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166861#issuecomment-6050189990",
+      "comment_created_at": "2026-10-08T01:19:23Z",
+      "comment_updated_at": "2026-10-08T05:23:11Z",
+      "comment_body_sha256": "f03fc2b4cbd98e05bb0d58b7cfc183defafe7c0df6d51572b278b621485368b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166861,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d44b90f04fdf3169828802f87efaadb860a2db7f)",
+      "expected_head_sha": "d44b90f04fdf3169828802f87efaadb860a2db7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T05:24:12.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/questioning-a-poor-ux-decision",
+        "head_sha": "d44b90f04fdf3169828802f87efaadb860a2db7f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
