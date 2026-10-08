@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:25:24.576Z",
+  "updated_at": "2026-10-08T08:26:13.502Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156531:6051782373:2026-10-08T03:49:33Z:re_review",
-      "comment_id": "6051782373",
-      "comment_version_key": "6051782373:2026-10-08T03:49:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156531#issuecomment-6051782373",
-      "comment_created_at": "2026-10-08T03:49:33Z",
-      "comment_updated_at": "2026-10-08T03:49:33Z",
-      "comment_body_sha256": "c5cb5298b8a607307132502152d1a7ed39c6ac59ae4166bf6ea649eefd2bf8e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156531,
-      "author": "patrickrun",
-      "author_id": 29052739,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please review pr #156531 at exact head `7c47c22872d9414a897e0cf42321f7797c83125d`. the only change since `2b172a7` wraps the native-catalog completion method to fix ci oxlint unbound-method while forwarding the same rows and receiver. focused lint, catalog-access tests (2/2), and codex dynamic-tools tests (6/6) pass. the discord draft-preview test failure reproduced on this head and its test/source are identical to the pr base; it is outside the pr diff",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T03:50:29.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upstream-codex-first-turn",
-        "head_sha": "7c47c22872d9414a897e0cf42321f7797c83125d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4310:6015936792:2026-10-08T03:49:56Z:clawsweeper_needs_human",
       "comment_id": "6015936792",
@@ -33355,6 +33308,39 @@
         "kind": "pull_request",
         "branch": "fix/mcp-app-approval-policy-recheck",
         "head_sha": "68dcc2d201498fe1ef15d2830a200a9a30e031cc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-10-08T08:24:48Z:clawsweeper_needs_human",
+      "comment_id": "5833145824",
+      "comment_version_key": "5833145824:2026-10-08T08:24:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5833145824",
+      "comment_created_at": "2026-09-25T13:24:34Z",
+      "comment_updated_at": "2026-10-08T08:24:48Z",
+      "comment_body_sha256": "afcd49a94a6499add3423aa11ceeec3ad8e3c1c2efa9c7de76954a23e84dc384",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Copied node credentials survive execution cleanup** - The node receives the selected account's reusable bearer token. Its administrator or same-user processes can copy that token and re...; Review finding: [medium] Copied node credentials survive execution cleanup — extensions/codex/src/node-exec-server.runtime.ts:238 (sha=72b7720542edf5add57711098ad93aebdfed9295)",
+      "expected_head_sha": "72b7720542edf5add57711098ad93aebdfed9295",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T08:26:13.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galiniliev/teamclaw-github-proxy-binding",
+        "head_sha": "72b7720542edf5add57711098ad93aebdfed9295",
         "cluster_id": null,
         "job_path": null
       }
