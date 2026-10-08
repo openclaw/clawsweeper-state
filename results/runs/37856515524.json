@@ -1,0 +1,106 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-547",
+  "mode": "autonomous",
+  "run_id": "37856515524",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37856515524",
+  "head_sha": "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-547.md",
+  "published_at": "2026-10-08T23:01:32.628Z",
+  "canonical": "https://github.com/steipete/oracle/issues/547",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/547",
+  "canonical_pr": null,
+  "summary": "Verified both #547 defects on preflight main 35d8022f370dc89e962637e4e88d3d8d35618f3d. A narrow implementation is appropriate. Returned an executor-ready fix artifact; this read-only worker changed no files and ran no tests.",
+  "actions": [
+    {
+      "target": "#547",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "The documented manual-login workflow remains broken on the supplied current main. Plan one implementation PR and leave the issue open."
+    },
+    {
+      "target": "#380",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contributor work supplies the existing window helper; it is not an open repair or closure target."
+    },
+    {
+      "target": "#541",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate diagnostic work is historical context, with no action required in this cluster."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-547",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "A small new PR can repair both verified defects without replacing contributor work, changing timeouts, or expanding the security boundary."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#547",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
