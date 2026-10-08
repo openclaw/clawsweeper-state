@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112832"
 mode: "autonomous"
-run_id: "37780741120"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37780741120"
+run_id: "37788553819"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37788553819"
 head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T13:51:21.397Z"
+published_at: "2026-10-08T14:32:51.049Z"
 canonical: "https://github.com/openclaw/openclaw/issues/112832"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112832"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37780741120](https://github.com/openclaw/clawsweeper/actions/runs/37780741120)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37788553819](https://github.com/openclaw/clawsweeper/actions/runs/37788553819)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/112832
 
 ## Summary
 
-The eager-start gap remains in source at preflight main 471f8fb923b74f45f9bf9cfe634af63d6c4506f5. A narrow fix artifact is prepared, but implementation and required reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
+The eager-start relay gap remains evident in source at preflight main SHA 85076439f27a4b6448ec50639ac29c1e562a5449. A narrow fix artifact is prepared, but implementation, failing regression, runtime proof, and validation are blocked by the read-only host and unavailable dependencies. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ The eager-start gap remains in source at preflight main 471f8fb923b74f45f9bf9cfe
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112832 | fix_needed | planned | canonical | Retain the canonical issue and prepare the minimum eager-flag repair. Implementation requires a writable executor with dependencies and isolated runtime state. |
-| #112898 | keep_closed | skipped | related | Historical credited reference material, not an active repair or closure target. |
-| #122537 | keep_closed | skipped | related | Merged partial overlap does not cover the eager-start expectation. |
-| #128379 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without public mutation. The ordinary eager-start repair can consume existing main lifecycle contracts without changing their security boundary. |
-| cluster:issue-openclaw-openclaw-112832 | build_fix_artifact | planned | canonical | The artifact is actionable, but this host cannot implement or validate it. Reproduce at the real owner boundary before production edits; stop if the defect no longer reproduces. |
+| #112832 | fix_needed | planned | canonical | The source finding supports a narrow bug fix. Implementation must first establish the required failing owner-boundary regression on a writable, dependency-ready executor. |
+| #112898 | keep_closed | skipped | related | Historical credited reference only; do not reopen, close, or merge it. |
+| #122537 | keep_closed | skipped | related | Related wake-up behavior does not cover eager startup before browser or native-helper activity. |
+| #128379 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without public mutation. Continue the independent startup bug repair using existing current-main lifecycle contracts. |
+| cluster:issue-openclaw-openclaw-112832 | build_fix_artifact | planned | canonical | Hand off one narrow new-fix PR plan to the deterministic executor. Refresh issue activity, check the designated branch for an existing PR, and coordinate with fuller-stack-dev before implementation. |
 
 ## Needs Human
 
