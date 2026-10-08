@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:25:45.122Z",
+  "updated_at": "2026-10-08T01:25:48.944Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166706:6046082542:2026-10-07T20:19:09Z:re_review",
-      "comment_id": "6046082542",
-      "comment_version_key": "6046082542:2026-10-07T20:19:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166706#issuecomment-6046082542",
-      "comment_created_at": "2026-10-07T20:19:09Z",
-      "comment_updated_at": "2026-10-07T20:19:09Z",
-      "comment_body_sha256": "428ebd0acb28063dd2f777f56a4fb4fdf5fb7b8445d149889900a67c0620d244",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166706,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T20:20:23.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/add-support-for-claude-5-5-haiku",
-        "head_sha": "bc241c93f4319caaaf7199ffe1a74402b3f64484",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1651:6045887104:2026-10-07T20:18:59Z:clawsweeper_needs_human",
       "comment_id": "6045887104",
@@ -33793,6 +33746,39 @@
         "kind": "pull_request",
         "branch": "fix/hide-private-packages-on-publisher-pages",
         "head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166808:6048936980:2026-10-08T01:24:43Z:clawsweeper_needs_human",
+      "comment_id": "6048936980",
+      "comment_version_key": "6048936980:2026-10-08T01:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166808#issuecomment-6048936980",
+      "comment_created_at": "2026-10-07T23:29:27Z",
+      "comment_updated_at": "2026-10-08T01:24:43Z",
+      "comment_body_sha256": "564aae8185c806ff4b595d7c93064ed581cc4553061efbad50d22bac3637a7c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The verified test merge and successful head CI cover the older base, while fetched main no longer contains either exception. Reconcile the inventory additions with that production rep... (sha=643209143d73e309b8d2deba626af6821762e5fd)",
+      "expected_head_sha": "643209143d73e309b8d2deba626af6821762e5fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:25:48.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-redaction-inventory-20261007",
+        "head_sha": "643209143d73e309b8d2deba626af6821762e5fd",
         "cluster_id": null,
         "job_path": null
       }
