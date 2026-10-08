@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T19:21:02.355Z",
+  "updated_at": "2026-10-08T19:22:18.586Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162533:5927559435:2026-10-08T12:20:35Z:clawsweeper_needs_human",
-      "comment_id": "5927559435",
-      "comment_version_key": "5927559435:2026-10-08T12:20:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162533#issuecomment-5927559435",
-      "comment_created_at": "2026-10-01T08:18:42Z",
-      "comment_updated_at": "2026-10-08T12:20:35Z",
-      "comment_body_sha256": "f2d179f6630aece8e35d444dc5ffaee801b25b46fa935c813a7a2f7c44c37c08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the published-driver × candidate update validation and attach redacted candidate-driven output showing verification and completion phases before the final report. (sha=d4ac3f19b4014b98aa948051e925034fddc3e950)",
-      "expected_head_sha": "d4ac3f19b4014b98aa948051e925034fddc3e950",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T13:01:16.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "update-progress-bb3/terminal-observer",
-        "head_sha": "d4ac3f19b4014b98aa948051e925034fddc3e950",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162663:5930671797:2026-10-08T12:19:09Z:clawsweeper_needs_human",
       "comment_id": "5930671797",
@@ -33435,6 +33402,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167423:6067342480:2026-10-08T19:21:10Z:clawsweeper_needs_human",
+      "comment_id": "6067342480",
+      "comment_version_key": "6067342480:2026-10-08T19:21:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167423#issuecomment-6067342480",
+      "comment_created_at": "2026-10-08T19:21:10Z",
+      "comment_updated_at": "2026-10-08T19:21:10Z",
+      "comment_body_sha256": "7117d2e4fb77a40c91a6896cb2964ba39bfb4814cb02e51c472450347d525da0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **\\[P1\\] Recognize bare CR delimiters before retaining stream data (P1)** - The new watcher searches only for \\n, although both the existing limiter and the installed EventSource parser recognize bare \\r. A valid...; Review finding: [P1] [P1] Recognize bare CR delimiters before retaining stream data — src/agents/mcp-http-transport.ts:279-284 - [P2] [P2] Preserve redirect metadata when wrapping... (sha=34cf112cae7f5f978b39721e7a74b4ce76993c34)",
+      "expected_head_sha": "34cf112cae7f5f978b39721e7a74b4ce76993c34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T19:22:18.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-167371-mcp-sse-endpoint-session-loss",
+        "head_sha": "34cf112cae7f5f978b39721e7a74b4ce76993c34",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
