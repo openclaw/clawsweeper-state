@@ -1,0 +1,93 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-553",
+  "mode": "autonomous",
+  "run_id": "37861377226",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37861377226",
+  "head_sha": "e4c173aeed287b177b9c2152cb50d055da5d7223",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-553.md",
+  "published_at": "2026-10-08T23:52:02.915Z",
+  "canonical": "https://github.com/steipete/oracle/issues/553",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/553",
+  "canonical_pr": null,
+  "summary": "Verified #553 on main at 35d8022f370dc89e962637e4e88d3d8d35618f3d. Both reported MCP overrides resolve to Latest, and the Latest matcher rejects GPT-6. A narrow fix artifact is prepared; implementation and validation are blocked by the read-only filesystem. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#465",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Historical implementation context; already closed."
+    },
+    {
+      "target": "#512",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Default-model policy is a separate product decision and remains outside this fix."
+    },
+    {
+      "target": "#539",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Different selection stage and remaining reproduction requirements; leave open."
+    },
+    {
+      "target": "#552",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Preserve the contributor PR. Coordinate overlapping picker changes without replacing or closing it; the new issue PR must address the uncovered MCP contract."
+    },
+    {
+      "target": "#553",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "The ordinary compatibility bug remains valid. Implementation is blocked by filesystem permissions, not by an unresolved product or security decision."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-553",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "A concrete non-mutating fix plan can proceed to the executor despite this worker's implementation blocker."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "keep_related": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
