@@ -2,12 +2,12 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37855096645"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37855096645"
-head_sha: "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74"
+run_id: "37860645718"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37860645718"
+head_sha: "e4c173aeed287b177b9c2152cb50d055da5d7223"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-08T22:46:55.311Z"
+published_at: "2026-10-08T23:44:05.663Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37855096645](https://github.com/openclaw/clawsweeper/actions/runs/37855096645)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37860645718](https://github.com/openclaw/clawsweeper/actions/runs/37860645718)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Confirmed #233 remains valid on supplied main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready for the executor. Implementation and PR creation remain blocked in this read-only worker; no code was changed or validation completed.
+Verified the bug on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow fix artifact. Implementation and validation are blocked in this read-only session; dependencies and pinned Bun are absent. GitHub authentication is unavailable for inspecting the stopped attempt or refreshing the owning-PR check.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Confirmed #233 remains valid on supplied main 2f81941b308bd99d38c4608d2d241bdbe1
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118 | keep_closed | skipped | related | Already closed; no action required. |
-| #163 | keep_closed | skipped | related | Already closed; no action required. |
-| #233 | fix_needed | planned | canonical | The source-proven bug has a narrow repair path without changing the fetching security boundary. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Provide a concrete executor plan while preserving #233 as the canonical issue. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | The executor must inspect the stopped attempt, recheck PR ownership, implement in a writable checkout, establish the failing regression, and pass validation before creating or updating the single issue PR. |
+| #118 | keep_closed | skipped | related | Historical context only. |
+| #163 | keep_closed | skipped | related | Historical context only. |
+| #233 | fix_needed | planned | canonical | The issue remains source-proven and narrowly implementable. No product decision is needed. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Provide an executable narrow plan for the authorized executor. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked on a writable executor, toolchain setup, and reconciliation of the stopped attempt and owning PR. Classification and fix planning remain valid. |
 
 ## Needs Human
 
