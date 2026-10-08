@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T06:26:13.106Z",
+  "updated_at": "2026-10-08T06:26:44.275Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:851:5940905735:2026-10-08T01:19:34Z:clawsweeper_needs_human",
-      "comment_id": "5940905735",
-      "comment_version_key": "5940905735:2026-10-08T01:19:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/851#issuecomment-5940905735",
-      "comment_created_at": "2026-10-01T21:23:46Z",
-      "comment_updated_at": "2026-10-08T01:19:34Z",
-      "comment_body_sha256": "8f9b23dacb78e4619bb4ecd924b4b621338b335db53e384d1f09c773388fcfe7",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 851,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P2\\] Preflight attachment collisions before stopping the predecessor (P2)** - Bind two bearer-token sources with the same env_var, or two openai sources using OPENAI_API_KEY, and deploy a dedicated replacement...; Review finding: [P2] [P2] Preflight attachment collisions before stopping the predecessor — apps/controller/src/drivers/credential-gateway/openshell.ts:445-451 - [P1] [P1] Recover... (sha=479a8835428e21ae209530f4794bbc56953ef7b3)",
-      "expected_head_sha": "479a8835428e21ae209530f4794bbc56953ef7b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T01:20:33.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/credential-gateway-refresh",
-        "head_sha": "479a8835428e21ae209530f4794bbc56953ef7b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166849:6049954629:2026-10-08T01:19:39Z:clawsweeper_needs_human",
       "comment_id": "6049954629",
@@ -33240,6 +33207,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165486:6053812675:2026-10-08T06:25:46Z:re_review",
+      "comment_id": "6053812675",
+      "comment_version_key": "6053812675:2026-10-08T06:25:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165486#issuecomment-6053812675",
+      "comment_created_at": "2026-10-08T06:25:46Z",
+      "comment_updated_at": "2026-10-08T06:25:46Z",
+      "comment_body_sha256": "42e4f2d43bd2585992711d89ef4c67711283882623029926a14946d46ec630c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165486,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T06:26:42.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/w148-windows-tauri-bun",
+        "head_sha": "d2cc71d93890b1d1aeab4b64be140a2f74087a07",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
