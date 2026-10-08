@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:43:27.385Z",
+  "updated_at": "2026-10-08T05:43:37.316Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145895:5645363165:2026-10-08T00:33:24Z:clawsweeper_needs_human",
-      "comment_id": "5645363165",
-      "comment_version_key": "5645363165:2026-10-08T00:33:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145895#issuecomment-5645363165",
-      "comment_created_at": "2026-09-12T10:36:41Z",
-      "comment_updated_at": "2026-10-08T00:33:24Z",
-      "comment_body_sha256": "b02635ff1ec00421f9d0b9628c13e9c15c6f283a631dc2c993c88706fad0569e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145895,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Changing or unselecting the effective Claude profile, or changing cwd for a relative root, makes retained old-root native history unavailable. Canonical history remains accessible, bu... (sha=e24b56fe34f1be693184fed48a13d1b1bbae51d4)",
-      "expected_head_sha": "e24b56fe34f1be693184fed48a13d1b1bbae51d4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T00:34:42.805Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-config-dir-transcripts-complete",
-        "head_sha": "e24b56fe34f1be693184fed48a13d1b1bbae51d4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165825:6004336418:2026-10-08T00:33:41Z:clawsweeper_needs_human",
       "comment_id": "6004336418",
@@ -33453,6 +33420,53 @@
         "kind": "pull_request",
         "branch": "fix/gateway-startup-diagnostics",
         "head_sha": "454cbf95b0e4cedfdbfdfe5af87cdc54041ee283",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166942:6053201439:2026-10-08T05:42:26Z:re_review",
+      "comment_id": "6053201439",
+      "comment_version_key": "6053201439:2026-10-08T05:42:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166942#issuecomment-6053201439",
+      "comment_created_at": "2026-10-08T05:42:26Z",
+      "comment_updated_at": "2026-10-08T05:42:26Z",
+      "comment_body_sha256": "72e3944f6ad1a9ec650e114d7d7fba50e72f548eac64dc6d33cc372353989f18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166942,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T05:43:35.807Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-start-readiness",
+        "head_sha": "8dff65baba97e03dd4aeeb32ec6a02aef7eb88f5",
         "cluster_id": null,
         "job_path": null
       },
