@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:57:20.427Z",
+  "updated_at": "2026-10-08T04:57:35.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166790:6049171017:2026-10-07T23:49:47Z:re_review",
-      "comment_id": "6049171017",
-      "comment_version_key": "6049171017:2026-10-07T23:49:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166790#issuecomment-6049171017",
-      "comment_created_at": "2026-10-07T23:49:47Z",
-      "comment_updated_at": "2026-10-07T23:49:47Z",
-      "comment_body_sha256": "62367ef707fbff69b862f3e7509af1c80712ec7a81b9eb17af02c02bfe8ef46c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166790,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review: patch-identical qa source-reference correction refreshed onto main 950bd83e85c2, which includes the merged workboard asset/google meet fix #166786 that caused the prior inherited qa smoke failure. only the same two yaml references differ from this base",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:50:46.616Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-validation-contracts-20261007",
-        "head_sha": "8b613933f7fc2726748bddb841932a5b142966e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145895:6017335015:2026-10-06T13:29:22Z:re_review",
       "comment_id": "6017335015",
@@ -33556,6 +33509,39 @@
         "kind": "pull_request",
         "branch": "refactor/shared-autoreview-20261002",
         "head_sha": "c1fa2491515f0a98c3866cc71c26f5b9ab641116",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:425:6038715038:2026-10-08T04:56:45Z:clawsweeper_needs_human",
+      "comment_id": "6038715038",
+      "comment_version_key": "6038715038:2026-10-08T04:56:45Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/425#issuecomment-6038715038",
+      "comment_created_at": "2026-10-07T13:14:13Z",
+      "comment_updated_at": "2026-10-08T04:56:45Z",
+      "comment_body_sha256": "2a233cbc7e75740464c5856926805e3613d174492852fb918654506788b804da",
+      "repo": "openclaw/mcporter",
+      "issue_number": 425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show that a real unrelated stdio MCP child receives no vault password at the final spawn boundary whil...; Review finding: [P1] Strip the vault password from regular stdio child launches — src/runtime/transport.ts:224 - [high] Vault-wide password disclosed to unrelated MCP children — s... (sha=c6ed6eb150f9880f14ae7bd8298fd7ab4dc09be9)",
+      "expected_head_sha": "c6ed6eb150f9880f14ae7bd8298fd7ab4dc09be9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T04:57:35.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/408-vault-encrypt",
+        "head_sha": "c6ed6eb150f9880f14ae7bd8298fd7ab4dc09be9",
         "cluster_id": null,
         "job_path": null
       }
