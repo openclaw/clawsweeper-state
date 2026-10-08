@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T11:54:57.698Z",
+  "updated_at": "2026-10-08T11:55:03.541Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5860000727:2026-09-27T21:30:48Z:re_review",
-      "comment_id": "5860000727",
-      "comment_version_key": "5860000727:2026-09-27T21:30:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5860000727",
-      "comment_created_at": "2026-09-27T21:30:48Z",
-      "comment_updated_at": "2026-09-27T21:30:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T06:49:23.850Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:157500:5860319056:2026-09-27T22:13:38Z:re_review",
       "comment_id": "5860319056",
@@ -33052,6 +33025,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T11:54:57.698Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138416:5544317262:2026-10-08T11:53:56Z:clawsweeper_needs_human",
+      "comment_id": "5544317262",
+      "comment_version_key": "5544317262:2026-10-08T11:53:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138416#issuecomment-5544317262",
+      "comment_created_at": "2026-09-04T17:42:24Z",
+      "comment_updated_at": "2026-10-08T11:53:56Z",
+      "comment_body_sha256": "ed01d4da9c8712a1f7397c5d986fc269bc048b50cf5b52469632670b2c970cf0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138416,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The touched compaction owners have changed on main, and the recorded test merge is stale; synchronize the repair with current main and verify the integrated retention behavior. (sha=8f9fdab74af8cfd6fb3e13df2a15e115e93e2f82)",
+      "expected_head_sha": "8f9fdab74af8cfd6fb3e13df2a15e115e93e2f82",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T11:55:03.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-summary-budget-output-bound",
+        "head_sha": "8f9fdab74af8cfd6fb3e13df2a15e115e93e2f82",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
