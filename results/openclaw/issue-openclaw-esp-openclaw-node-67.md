@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37803527029"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37803527029"
-head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-10-08T15:54:20.296Z"
+run_id: "37832210806"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37832210806"
+head_sha: "ef72f4b940b4dce28c5ccd6a9634e97360f172bc"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-10-08T19:33:41.426Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37803527029](https://github.com/openclaw/clawsweeper/actions/runs/37803527029)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37832210806](https://github.com/openclaw/clawsweeper/actions/runs/37832210806)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Plan a narrow handshake-recovery PR: terminate connecting attempts when Gateway JSON parsing fails and enforce the existing deadline during queue processing. This addresses verified recovery gaps without claiming to resolve the entire customized-firmware incident. No files or GitHub state were changed.
+Implementation is blocked on evidence identifying an upstream recovery defect. Current main was inspected, but the customized-firmware parsing allocation failure does not establish why timeout and reconnect failed. Keep #67 open; no fix PR is justified yet.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Plan a narrow handshake-recovery PR: terminate connecting attempts when Gateway 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #67 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Plan a narrow handshake-recovery PR: terminate connecting attempts when Gateway 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | Current main has narrow handshake recovery gaps consistent with the reported parse failure. No viable open implementation PR is hydrated. Keep the issue open because stock reproduction and the original reset-cleared stall remain unverified. |
-| #15 | keep_closed | skipped | related | Historical related work, not a repair or closure target. |
-| #64 | keep_closed | skipped | related | Related historical symptom with a different investigated failure path; not a duplicate or implementation target. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | A focused non-security recovery PR is appropriate without redesigning the runtime or modifying the reporter's unmerged display, Bluetooth, or sensor extensions. |
+| #67 | keep_canonical | planned | canonical | Implementation is blocked until a stock/current-main reproducer or failure-time trace identifies the failed recovery path. Capture worker progress, queue activity, connection state and elapsed deadline through parsing failure, then verify automatic handshake completion and device.status without reset. Changing dispatch or parsing recovery now would select an unproven cause. |
+| #15 | keep_closed | skipped | related | Historical reconnect evidence only; no closure or merge action. |
+| #23 | keep_closed | skipped | independent | Audio repair is independent of the reported handshake recovery failure. |
+| #64 | keep_closed | skipped | related | Related customized-firmware context, with a distinct failure path; not a proven duplicate of #67. |
 
 ## Needs Human
 
