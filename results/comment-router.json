@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T11:47:02.493Z",
+  "updated_at": "2026-10-08T11:47:03.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152985:5743065845:2026-10-08T06:32:32Z:clawsweeper_needs_human",
-      "comment_id": "5743065845",
-      "comment_version_key": "5743065845:2026-10-08T06:32:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152985#issuecomment-5743065845",
-      "comment_created_at": "2026-09-19T15:27:30Z",
-      "comment_updated_at": "2026-10-08T06:32:32Z",
-      "comment_body_sha256": "f6bf50f5d36eecdd4b3ed1569be368fa911d1aec5582fa094cc78df60c5a4c46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152985,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The inspected historical Gateway trace exercises the production Voice Call handler, OpenAI bridge, embedded agent, and HTTP/WebSocket... (sha=a150fdf527d6cb3c93d421c404df7c85734951b2)",
-      "expected_head_sha": "a150fdf527d6cb3c93d421c404df7c85734951b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T06:33:33.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/fix-voice-call-consult-identity-20260919",
-        "head_sha": "a150fdf527d6cb3c93d421c404df7c85734951b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156636:5800105509:2026-10-08T06:32:39Z:clawsweeper_needs_human",
       "comment_id": "5800105509",
@@ -33223,6 +33190,53 @@
         "kind": "pull_request",
         "branch": "fix/talk-session-id-trim",
         "head_sha": "2a97df20bd1d240d2560e8326a35972de785415e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137184:6059153243:2026-10-08T11:45:56Z:re_review",
+      "comment_id": "6059153243",
+      "comment_version_key": "6059153243:2026-10-08T11:45:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137184#issuecomment-6059153243",
+      "comment_created_at": "2026-10-08T11:45:56Z",
+      "comment_updated_at": "2026-10-08T11:45:56Z",
+      "comment_body_sha256": "d4e8684ebab9201ac5483336acb76180ddc92859fee36cc585d7bd00c29ebbdb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137184,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T11:47:01.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-single-pass",
+        "head_sha": "2d77e2e9b723780adeba5df6a7961a73aa53669a",
         "cluster_id": null,
         "job_path": null
       },
