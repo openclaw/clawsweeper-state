@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T19:49:42.842Z",
+  "updated_at": "2026-10-08T19:49:45.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:165486:6053812675:2026-10-08T06:25:46Z:re_review",
-      "comment_id": "6053812675",
-      "comment_version_key": "6053812675:2026-10-08T06:25:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/165486#issuecomment-6053812675",
-      "comment_created_at": "2026-10-08T06:25:46Z",
-      "comment_updated_at": "2026-10-08T06:25:46Z",
-      "comment_body_sha256": "42e4f2d43bd2585992711d89ef4c67711283882623029926a14946d46ec630c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 165486,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T13:44:02.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/w148-windows-tauri-bun",
-        "head_sha": "2024187c405278c32093eb2698b5550e882b613d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167250:6061211381:2026-10-08T13:43:07Z:clawsweeper_needs_human",
       "comment_id": "6061211381",
@@ -33168,6 +33121,39 @@
         "kind": "pull_request",
         "branch": "fix/emit-ts-format-comment",
         "head_sha": "f9ded3253c21553450859c9e29b1b902445fa0e7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:160:5762738687:2026-10-08T19:48:35Z:clawsweeper_needs_human",
+      "comment_id": "5762738687",
+      "comment_version_key": "5762738687:2026-10-08T19:48:35Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/160#issuecomment-5762738687",
+      "comment_created_at": "2026-09-21T15:07:56Z",
+      "comment_updated_at": "2026-10-08T19:48:35Z",
+      "comment_body_sha256": "a946dedeb7971afe5db95a45f6b96589c43cdb174fd92f1098d9374f189716dd",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Sync with current main and pass the shared macOS app-integrity checker against its OpenClaw 2026.9.5 artifact. (sha=7e6211a9be86b45c6b81d265d787ad3f95d92d44)",
+      "expected_head_sha": "7e6211a9be86b45c6b81d265d787ad3f95d92d44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T19:49:45.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/verify-installed-macos-app",
+        "head_sha": "7e6211a9be86b45c6b81d265d787ad3f95d92d44",
         "cluster_id": null,
         "job_path": null
       }
