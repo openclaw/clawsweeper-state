@@ -1,0 +1,109 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167336",
+  "mode": "autonomous",
+  "run_id": "37813765092",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37813765092",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167336.md",
+  "published_at": "2026-10-08T17:41:08.971Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167336",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167336",
+  "canonical_pr": null,
+  "summary": "Verified the missing recall-session provenance on supplied main 0363122eb1ba8568b12b2107e728dd418e9700d5. Prepared a narrow producer fix for the existing System filters. No files or GitHub state changed; implementation and validation require the executor.",
+  "actions": [
+    {
+      "target": "#167336",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167336",
+      "candidate_fix": null,
+      "reason": "Fix creation provenance at the plugin producer using existing public SessionEntry fields. No new classifier, key heuristic, configuration, or cleanup policy is needed."
+    },
+    {
+      "target": "#146124",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146124",
+      "candidate_fix": "#146234",
+      "reason": "Distinct producer and visibility contract; retain its existing implementation lane."
+    },
+    {
+      "target": "#146234",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146124",
+      "candidate_fix": null,
+      "reason": "Useful separate contributor work. This issue-specific job does not authorize repairing or merging its heartbeat lane."
+    },
+    {
+      "target": "#121851",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#121855",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Existing filter infrastructure; it did not stamp recall entries."
+    },
+    {
+      "target": "#145951",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent historical context; no prompt changes belong in this repair."
+    },
+    {
+      "target": "#160367",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical sibling fix, not coverage of the canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167336",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167336",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow implementation PR on clawsweeper/issue-openclaw-openclaw-167336, reusing any existing PR for that branch after live-state reconciliation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
