@@ -1,0 +1,109 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-365",
+  "mode": "autonomous",
+  "run_id": "37816560736",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37816560736",
+  "head_sha": "3db5c867c82e47c1fe31299625d34c184b9a4d8b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-365.md",
+  "published_at": "2026-10-08T17:30:40.531Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by the unexplained six all-empty groups. Current main contains the confirmed parser and conditional recovery fixes, but no affected-group trace establishes a remaining defect. No code changes or PR are proposed; #365 stays open.",
+  "actions": [
+    {
+      "target": "#365",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "The remaining observation is unresolved and is not proven covered by any merged fix."
+    },
+    {
+      "target": "#344",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Historical diagnostic work; it does not establish the cause of the empty groups."
+    },
+    {
+      "target": "#362",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A separately identified and resolved mechanism, not a demonstrated explanation for the six empty groups."
+    },
+    {
+      "target": "#371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical fetching failure."
+    },
+    {
+      "target": "#383",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Confirmed partial repair; the empty-group observation remains unresolved."
+    },
+    {
+      "target": "#416",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Confirmed partial repair already present on current main."
+    },
+    {
+      "target": "#441",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Conditional recovery improvement does not prove recovery of the reported groups."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-365",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "Obtain an affected-group trace on current main or v0.20.0 that distinguishes absent message bodies, unsupported payloads, and decryption failures. Without that evidence, no narrow implementation or regression test can be tied to the remaining symptom."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 6,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 6,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
