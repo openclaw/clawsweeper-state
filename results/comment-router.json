@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T14:16:20.347Z",
+  "updated_at": "2026-10-08T14:16:55.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166741:6055893133:2026-10-08T08:27:50Z:re_review",
-      "comment_id": "6055893133",
-      "comment_version_key": "6055893133:2026-10-08T08:27:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166741#issuecomment-6055893133",
-      "comment_created_at": "2026-10-08T08:27:50Z",
-      "comment_updated_at": "2026-10-08T08:27:50Z",
-      "comment_body_sha256": "0df7d10f5291cfd5eb3281b6bd68bf5cb06d0bed913ad11b251e3112e182e014",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166741,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T08:28:44.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/runtime-retention-profile-20261007",
-        "head_sha": "874f475e244f5e0480367dd1f9d2113198f84592",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141937:5580612841:2026-10-08T08:28:32Z:clawsweeper_auto_repair",
       "comment_id": "5580612841",
@@ -33164,6 +33117,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-schtasks-locale",
         "head_sha": "ed976ede37b148f1678a359b396ba7bb5953e2d7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138943:5550396145:2026-10-08T14:15:46Z:clawsweeper_needs_human",
+      "comment_id": "5550396145",
+      "comment_version_key": "5550396145:2026-10-08T14:15:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138943#issuecomment-5550396145",
+      "comment_created_at": "2026-09-05T07:50:03Z",
+      "comment_updated_at": "2026-10-08T14:15:46Z",
+      "comment_body_sha256": "9b39ef7dc07600dba7b19086138c0d3d43f574f5b466b94b655fb5d953106192",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed assistant-failure and failover-policy owners are exercised with synthetic responses and mocked credential advancement; the complete... (sha=cd160579392e1c3b5047dfb99d0554396ac6621d)",
+      "expected_head_sha": "cd160579392e1c3b5047dfb99d0554396ac6621d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T14:16:55.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/idle-timeout-same-model-retry",
+        "head_sha": "822a45f2f8b8e64215cdc2c8f13740b4ade2f26f",
         "cluster_id": null,
         "job_path": null
       }
