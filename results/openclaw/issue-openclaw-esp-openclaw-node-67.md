@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37853474951"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37853474951"
-head_sha: "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74"
-workflow_conclusion: "success"
+run_id: "37859127348"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37859127348"
+head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T22:31:12.090Z"
+published_at: "2026-10-08T23:29:16.138Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37853474951](https://github.com/openclaw/clawsweeper/actions/runs/37853474951)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37859127348](https://github.com/openclaw/clawsweeper/actions/runs/37859127348)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Implementation stopped without a PR: the reset-requiring recovery failure remains unexplained and has not been reproduced on stock current main. The inspected timeout scheduling could delay recovery under continuous queue traffic, but the supplied diagnostics do not establish that condition.
+Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready; implementation and branch validation are blocked by the read-only workspace and unavailable ESP-IDF toolchain. No files or GitHub state changed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation stopped without a PR: the reset-requiring recovery failure remain
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #67 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ Implementation stopped without a PR: the reset-requiring recovery failure remain
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | keep_canonical | planned | canonical | The operator requires stopping when the request is underspecified. Capture a failure-time trace and reproduce on stock current main or isolate a minimal extension before choosing a repair and claiming that it satisfies #67. No product decision is required. |
-| #15 | keep_closed | skipped | related | Historical connection-lifecycle context; not a proven fix for #67. |
-| #23 | keep_closed | skipped | independent | Historical context outside the connection-recovery implementation scope. |
-| #64 | keep_closed | skipped | related | Related custom-firmware availability report, not a demonstrated duplicate. |
+| #64 | keep_closed | skipped | related | Historical context with a different failure path. |
+| #67 | fix_needed | planned | canonical | An ordinary recovery bug remains on current main, with no hydrated implementation PR. Preserve the existing deadline through startup. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The implementation scope is narrow and clear; a writable executor can apply and validate this artifact. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | Implementation and PR creation require a writable executor with ESP-IDF. Complete regression, review, and build validation before opening or updating the single PR. |
 
 ## Needs Human
 
