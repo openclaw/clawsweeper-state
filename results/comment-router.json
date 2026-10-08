@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T03:34:05.061Z",
+  "updated_at": "2026-10-08T03:34:21.369Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166774:6048260743:2026-10-07T22:35:21Z:re_review",
-      "comment_id": "6048260743",
-      "comment_version_key": "6048260743:2026-10-07T22:35:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166774#issuecomment-6048260743",
-      "comment_created_at": "2026-10-07T22:35:21Z",
-      "comment_updated_at": "2026-10-07T22:35:21Z",
-      "comment_body_sha256": "e5e2855cb1312d47e68c00818419f4bda786ed16e638d3eb057ea203d15cb066",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166774,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T22:36:31.747Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-main-budgets-20261007",
-        "head_sha": "350fba4677e662ab34ae373e4a9dee3473f345dd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3811:5822605422:2026-10-07T22:35:48Z:clawsweeper_needs_human",
       "comment_id": "5822605422",
@@ -33464,6 +33417,39 @@
         "kind": "pull_request",
         "branch": "fix/skills-sh-mirror-malformed-row",
         "head_sha": "da7cec87248d0d808abe32f9f230172867d17670",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153477:5748086275:2026-10-08T03:33:20Z:clawsweeper_needs_human",
+      "comment_id": "5748086275",
+      "comment_version_key": "5748086275:2026-10-08T03:33:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153477#issuecomment-5748086275",
+      "comment_created_at": "2026-09-20T06:19:09Z",
+      "comment_updated_at": "2026-10-08T03:33:20Z",
+      "comment_body_sha256": "62e4ac500dfa3d8663ae36d1e8a63849390075a917701beea0be9b1f1a8a4cc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153477,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Have the area owner select the public-origin handoff contract; the prior Related-reference request is already resolved. (sha=e85321257b42a35d78e46074bb40206a882b6533)",
+      "expected_head_sha": "e85321257b42a35d78e46074bb40206a882b6533",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T03:34:21.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-handoff-public-origin",
+        "head_sha": "e85321257b42a35d78e46074bb40206a882b6533",
         "cluster_id": null,
         "job_path": null
       }
