@@ -1,0 +1,103 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-553",
+  "mode": "autonomous",
+  "run_id": "37805273217",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37805273217",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-553.md",
+  "published_at": "2026-10-08T16:05:38.189Z",
+  "canonical": "https://github.com/steipete/oracle/pull/552",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/553",
+  "canonical_pr": "https://github.com/steipete/oracle/pull/552",
+  "summary": "The reported failure remains on supplied main 35d8022f370dc89e962637e4e88d3d8d35618f3d. Open contributor PR #552 already provides the picker compatibility fix. No duplicate implementation PR is planned. Only the conflicting browserModelLabel contract needs a maintainer decision. No code or GitHub mutations occurred; validation was source inspection.",
+  "actions": [
+    {
+      "target": "#465",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#552",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Default-model policy is separate work and remains open."
+    },
+    {
+      "target": "#539",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Different selection stage and remaining evidence requirements; keep open."
+    },
+    {
+      "target": "#552",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#552",
+      "candidate_fix": null,
+      "reason": "Preserve @felipekrgb's active contribution as the canonical picker fix. A second compatibility PR would duplicate useful work; merge is prohibited by this job."
+    },
+    {
+      "target": "#553",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#552",
+      "candidate_fix": "#552",
+      "reason": "The concrete picker fix belongs to #552. Before changing the remaining override behavior, decide whether GPT requests should honor browserModelLabel or whether the MCP description should document canonical mapping. Do not create an overlapping PR or claim the entire issue is fixed."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 2,
+    "keep_canonical": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#553: Should browserModelLabel override canonical mapping for explicit GPT models, or should its MCP description be corrected to match existing CLI/MCP behavior? Picker compatibility already has the active credited fix path #552."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#553",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

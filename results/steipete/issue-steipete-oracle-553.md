@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-553"
 mode: "autonomous"
-run_id: "37801475819"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37801475819"
+run_id: "37805273217"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37805273217"
 head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-08T15:41:02.223Z"
+published_at: "2026-10-08T16:05:38.189Z"
 canonical: "https://github.com/steipete/oracle/pull/552"
 canonical_issue: "https://github.com/steipete/oracle/issues/553"
 canonical_pr: "https://github.com/steipete/oracle/pull/552"
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37801475819](https://github.com/openclaw/clawsweeper/actions/runs/37801475819)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37805273217](https://github.com/openclaw/clawsweeper/actions/runs/37805273217)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/pull/552
 
 ## Summary
 
-Verified #553 on supplied main SHA 35d8022f370dc89e962637e4e88d3d8d35618f3d. Writable contributor PR #552 already addresses the picker-label failure, so no duplicate implementation PR is planned. The remaining browserModelLabel contract discrepancy needs a specific maintainer decision.
+The reported failure remains on supplied main 35d8022f370dc89e962637e4e88d3d8d35618f3d. Open contributor PR #552 already provides the picker compatibility fix. No duplicate implementation PR is planned. Only the conflicting browserModelLabel contract needs a maintainer decision. No code or GitHub mutations occurred; validation was source inspection.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Verified #553 on supplied main SHA 35d8022f370dc89e962637e4e88d3d8d35618f3d. Wri
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #553 | needs_human | planned | needs_human | Do not create a competing picker fix. Decide whether GPT-model labels should override canonical mapping or whether the MCP description should document the existing restriction; implementing either interpretation without that decision would change or misstate supported behavior. |
-| #552 | keep_canonical | planned | canonical | Preserve @felipekrgb's existing useful implementation as the canonical picker compatibility path. Exact #553 payload coverage and override semantics remain to be reconciled. Merge is prohibited by this job. |
-| #512 | keep_related | planned | related | Keep the separate default-policy discussion open and outside this implementation. |
-| #539 | keep_related | planned | related | Different selection surface and unresolved reproduction details; retain as a separate follow-up. |
-| #465 | keep_closed | skipped | related | Historical implementation context only. |
+| #465 | keep_closed | skipped | related | Historical context only. |
+| #512 | keep_related | planned | related | Default-model policy is separate work and remains open. |
+| #539 | keep_related | planned | related | Different selection stage and remaining evidence requirements; keep open. |
+| #552 | keep_canonical | planned | canonical | Preserve @felipekrgb's active contribution as the canonical picker fix. A second compatibility PR would duplicate useful work; merge is prohibited by this job. |
+| #553 | needs_human | blocked | needs_human | The concrete picker fix belongs to #552. Before changing the remaining override behavior, decide whether GPT requests should honor browserModelLabel or whether the MCP description should document canonical mapping. Do not create an overlapping PR or claim the entire issue is fixed. |
 
 ## Needs Human
 
-- #553: Should browserModelLabel override canonical GPT-model mapping, or should its MCP description document that GPT requests ignore the override? Existing implementation and CLI tests support the restriction, while the MCP input description promises an override.
+- #553: Should browserModelLabel override canonical mapping for explicit GPT models, or should its MCP description be corrected to match existing CLI/MCP behavior? Picker compatibility already has the active credited fix path #552.
