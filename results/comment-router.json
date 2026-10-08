@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T05:51:43.753Z",
+  "updated_at": "2026-10-08T05:52:32.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163964:5965473982:2026-10-03T04:21:12Z:re_review",
-      "comment_id": "5965473982",
-      "comment_version_key": "5965473982:2026-10-03T04:21:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163964#issuecomment-5965473982",
-      "comment_created_at": "2026-10-03T04:21:12Z",
-      "comment_updated_at": "2026-10-03T04:21:12Z",
-      "comment_body_sha256": "33527fca883cba425d310ded914e8de73c378623c5f5da55e0e033330bc03832",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163964,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T01:00:09.504Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/image-draft-snapshot",
-        "head_sha": "15aaa6fe7ef8785914943e798161a53bb30cc646",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163964:5965608735:2026-10-03T04:41:05Z:re_review",
       "comment_id": "5965608735",
@@ -33059,6 +33012,39 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/oce-remove-obsolete-channel-styles",
         "head_sha": "f1ed3a67ddaefa836191f06aa4c3f34166643189",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165583:5995216176:2026-10-08T05:51:32Z:clawsweeper_needs_human",
+      "comment_id": "5995216176",
+      "comment_version_key": "5995216176:2026-10-08T05:51:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165583#issuecomment-5995216176",
+      "comment_created_at": "2026-10-05T13:15:39Z",
+      "comment_updated_at": "2026-10-08T05:51:32Z",
+      "comment_body_sha256": "dc3b0c4886628c1a105b0489201ecec1a118c2be9481c7d8b84ead3ba83f2b09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165583,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The V2 transport contract and V1 migration window lack SDK/security-owner acceptance; V1 transports that wait internally do not acquire the new final-effect account check. (sha=a4a5fdf838c14448c55712dd9f932b65fb64c0a4)",
+      "expected_head_sha": "a4a5fdf838c14448c55712dd9f932b65fb64c0a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T05:52:32.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-configured-profile-cli-fallback",
+        "head_sha": "a4a5fdf838c14448c55712dd9f932b65fb64c0a4",
         "cluster_id": null,
         "job_path": null
       }
