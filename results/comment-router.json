@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:24:12.162Z",
+  "updated_at": "2026-10-08T01:24:24.550Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161057:5888118624:2026-10-07T19:58:52Z:clawsweeper_needs_human",
-      "comment_id": "5888118624",
-      "comment_version_key": "5888118624:2026-10-07T19:58:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161057#issuecomment-5888118624",
-      "comment_created_at": "2026-09-29T10:11:41Z",
-      "comment_updated_at": "2026-10-07T19:58:52Z",
-      "comment_body_sha256": "4c04ca09bf7bacf64df4c34dc29bab59f229cb9ffd12d718286d183d3638eec7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161057,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the operator handlers now pass the request guard into archive/restore, but their new regression mocks... (sha=8f0b7fb9f16dfb642418cb229721e54092224d73)",
-      "expected_head_sha": "8f0b7fb9f16dfb642418cb229721e54092224d73",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T20:19:06.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/skill-workshop-simplify",
-        "head_sha": "8f0b7fb9f16dfb642418cb229721e54092224d73",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163943:5964384570:2026-10-07T19:59:46Z:clawsweeper_auto_repair",
       "comment_id": "5964384570",
@@ -33788,6 +33755,53 @@
       "status": "skipped",
       "processed_at": "2026-10-08T01:24:12.162Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166587:6050234133:2026-10-08T01:23:25Z:re_review",
+      "comment_id": "6050234133",
+      "comment_version_key": "6050234133:2026-10-08T01:23:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166587#issuecomment-6050234133",
+      "comment_created_at": "2026-10-08T01:23:25Z",
+      "comment_updated_at": "2026-10-08T01:23:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166587,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T01:24:23.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/restartmain",
+        "head_sha": "a67f2b5cbe1f89541c8ba66689ff06a04825650c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
