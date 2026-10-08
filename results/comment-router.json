@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T17:20:17.152Z",
+  "updated_at": "2026-10-08T17:20:35.814Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152985:5743065845:2026-10-08T10:48:44Z:autoclose",
-      "comment_id": "5743065845",
-      "comment_version_key": "5743065845:2026-10-08T10:48:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152985#issuecomment-5743065845",
-      "comment_created_at": "2026-09-19T15:27:30Z",
-      "comment_updated_at": "2026-10-08T10:48:44Z",
-      "comment_body_sha256": "33eab3fb87baf294337a4352251c6eb5abb5762380ab46b1c3e2125bf63d2a4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152985,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=a150fdf527d6cb3c93d421c404df7c85734951b2)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=a150fdf527d6cb3c93d421c404df7c85734951b2)",
-      "expected_head_sha": "a150fdf527d6cb3c93d421c404df7c85734951b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T10:49:51.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/fix-voice-call-consult-identity-20260919",
-        "head_sha": "a150fdf527d6cb3c93d421c404df7c85734951b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148397:5668044693:2026-10-08T10:48:55Z:clawsweeper_needs_human",
       "comment_id": "5668044693",
@@ -33021,6 +32988,65 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166993:6065274905:2026-10-08T17:19:40Z:automerge",
+      "comment_id": "6065274905",
+      "comment_version_key": "6065274905:2026-10-08T17:19:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166993#issuecomment-6065274905",
+      "comment_created_at": "2026-10-08T17:19:40Z",
+      "comment_updated_at": "2026-10-08T17:19:40Z",
+      "comment_body_sha256": "50a34d1502f4001a9cbf88db17f510b4aaff0ce0d1e0b12daecfc387b088dcc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166993,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; current checks are failing: android-test-play:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-08T17:20:32.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-identity-schema-compat",
+        "head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
+        "cluster_id": "automerge-openclaw-openclaw-166993",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
