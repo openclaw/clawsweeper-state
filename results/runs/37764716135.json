@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112832",
+  "mode": "autonomous",
+  "run_id": "37764716135",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37764716135",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112832.md",
+  "published_at": "2026-10-08T11:05:31.738Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the eager HTTP startup path still omits configured relay initialization. A narrow repair artifact is prepared; implementation and required failing regression/runtime proof are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#112832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "The minimum eager-flag expectation remains unsupported by the inspected source. Keep the issue open while the executor reproduces and repairs it."
+    },
+    {
+      "target": "#112898",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Retain as credited reference material; do not reopen, close, or transplant its broader automatic-start policy."
+    },
+    {
+      "target": "#122537",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Wake-up behavior partially overlaps but does not satisfy relay availability before browser activity under the eager flag."
+    },
+    {
+      "target": "#128379",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without public mutation. The ordinary startup repair must reuse current lifecycle contracts without changing their security boundary."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "The non-security fix remains narrow and actionable for a writable executor; no maintainer product decision is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112832",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "PR publication is blocked until a writable executor establishes the failing regression, implements the canonical fix path, completes validation and review, and reconciles current main and any newly opened implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
