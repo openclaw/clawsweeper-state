@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T17:28:55.324Z",
+  "updated_at": "2026-10-08T17:28:57.818Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-10-08T11:03:51Z:clawsweeper_needs_human",
-      "comment_id": "5833145824",
-      "comment_version_key": "5833145824:2026-10-08T11:03:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5833145824",
-      "comment_created_at": "2026-09-25T13:24:34Z",
-      "comment_updated_at": "2026-10-08T11:03:51Z",
-      "comment_body_sha256": "aaf4f791845c7ac6a615ac973c4518e3f575796e0688188a208882d51179ab0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Account authority survives execution-copy cleanup** - A newly credentialed Codex node administrator or same-user process can copy the selected bearer token and use its existing GitHub p...; Review finding: [medium] Account authority survives execution-copy cleanup — extensions/codex/src/node-exec-server.runtime.ts:236 (sha=f131d6c9ad2a2bcdfdbebec43f2b6267c41f7480)",
-      "expected_head_sha": "f131d6c9ad2a2bcdfdbebec43f2b6267c41f7480",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T11:05:47.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "f131d6c9ad2a2bcdfdbebec43f2b6267c41f7480",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1708:6057220069:2026-10-08T11:05:54Z:clawsweeper_needs_human",
       "comment_id": "6057220069",
@@ -33017,6 +32984,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1763:6065417847:2026-10-08T17:27:52Z:re_review",
+      "comment_id": "6065417847",
+      "comment_version_key": "6065417847:2026-10-08T17:27:52Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1763#issuecomment-6065417847",
+      "comment_created_at": "2026-10-08T17:27:52Z",
+      "comment_updated_at": "2026-10-08T17:27:52Z",
+      "comment_body_sha256": "07a04499fcecde295b50094c4689b2669022a8f3aad2de0dd1445ab35e734787",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1763,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T17:28:56.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/review-record-coercion-20261008",
+        "head_sha": "248d5bdf4c38f373ec6cadcdc08e76a1e29a1054",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
