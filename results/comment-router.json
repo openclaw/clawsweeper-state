@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T16:14:34.334Z",
+  "updated_at": "2026-10-08T16:14:58.986Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142357:5588945750:2026-10-08T10:10:21Z:clawsweeper_needs_human",
-      "comment_id": "5588945750",
-      "comment_version_key": "5588945750:2026-10-08T10:10:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142357#issuecomment-5588945750",
-      "comment_created_at": "2026-09-08T17:08:17Z",
-      "comment_updated_at": "2026-10-08T10:10:21Z",
-      "comment_body_sha256": "2a2efdc1e96a4621b45c54e314683a9bb5b4e0889b7cd83f9e11d4031d302900",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142357,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head conflicts with current main, including an area changed by the merged token-diagnostic repair; resolve the conflicts and review the resulting introduced changes before... (sha=66d478bf3f7f9eab887ec5d0ff3001937c5081bf)",
-      "expected_head_sha": "66d478bf3f7f9eab887ec5d0ff3001937c5081bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T10:11:21.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-credential-availability",
-        "head_sha": "66d478bf3f7f9eab887ec5d0ff3001937c5081bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1709:6057577110:2026-10-08T10:10:14Z:clawsweeper_needs_human",
       "comment_id": "6057577110",
@@ -32889,6 +32856,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167058:6064138025:2026-10-08T16:13:48Z:re_review",
+      "comment_id": "6064138025",
+      "comment_version_key": "6064138025:2026-10-08T16:13:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167058#issuecomment-6064138025",
+      "comment_created_at": "2026-10-08T16:13:48Z",
+      "comment_updated_at": "2026-10-08T16:13:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167058,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T16:14:56.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/crabbox-idempotency-165786",
+        "head_sha": "40d5b95c14f836a35f7a5ccefee05d4f59e6e037",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
