@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-96660",
+  "mode": "autonomous",
+  "run_id": "37857209444",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37857209444",
+  "head_sha": "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-96660.md",
+  "published_at": "2026-10-08T23:42:46.806Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/96660",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/96660",
+  "canonical_pr": null,
+  "summary": "Verified the remaining directory false-Missing path in source at preflight main 114d443b2f8e6d7459491b627f363a8a2a631f22. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only host and absent node_modules. No code or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#96660",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior fix is justified by source. The executor must first establish a failing sessions.files.list regression before implementation."
+    },
+    {
+      "target": "#97251",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine for central OpenClaw security handling without public mutation or reuse of its filesystem fallback."
+    },
+    {
+      "target": "#98646",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#105015",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve current host-read authority behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-96660",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; publication requires successful baseline reproduction, repair, review, and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
