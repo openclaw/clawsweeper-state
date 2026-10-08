@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142789"
 mode: "autonomous"
-run_id: "37757383043"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37757383043"
-head_sha: "dbd42faaac5974121b30866352ac0c3718ce1ed9"
+run_id: "37763613202"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37763613202"
+head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T10:14:36.027Z"
+published_at: "2026-10-08T11:18:17.807Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37757383043](https://github.com/openclaw/clawsweeper/actions/runs/37757383043)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37763613202](https://github.com/openclaw/clawsweeper/actions/runs/37763613202)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/142789
 
 ## Summary
 
-The terminal ownership defect remains source-evident on preflight main. A narrow fix artifact is ready for the executor, but implementation and runtime reproduction are blocked by this read-only host, absent dependencies, and Corepack EROFS. No files or GitHub state were changed.
+The source confirms the ownership-ordering defect on preflight main 36bd762422b348173b951819eef29e7fb2d307c3. A narrow fix artifact is prepared. Implementation and mandatory runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The terminal ownership defect remains source-evident on preflight main. A narrow
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142789 | fix_needed | planned | canonical | Repair existing session-qualified admission through the shared owner resolver. Preserve the issue until implementation and required proof complete. |
-| #142964 | keep_closed | skipped | related | Historical evidence and contributor credit only; this closed PR cannot own the active implementation or receive another closure. |
-| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned |  | The executor can apply this narrow plan on a writable prepared host. Establish the failing production-boundary regression before editing; PR publication remains contingent on reproduction, repair, review, and validation. |
+| #142789 | fix_needed | planned | canonical | A bounded existing-behavior repair remains warranted by source evidence. Execution requires a writable isolated checkout with dependencies and the mandatory reproduction. |
+| #142964 | keep_closed | skipped | related | Historical contributor evidence only; no closure or merge action is valid. |
+| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned |  | The narrow plan is reviewable, while implementation and runtime proof remain blocked by host prerequisites. |
 
 ## Needs Human
 
