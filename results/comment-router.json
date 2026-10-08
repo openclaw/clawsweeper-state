@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T06:34:38.910Z",
+  "updated_at": "2026-10-08T06:35:21.172Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166862:6050309017:2026-10-08T01:30:21Z:re_review",
-      "comment_id": "6050309017",
-      "comment_version_key": "6050309017:2026-10-08T01:30:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166862#issuecomment-6050309017",
-      "comment_created_at": "2026-10-08T01:30:21Z",
-      "comment_updated_at": "2026-10-08T01:30:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166862,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T01:31:21.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/cli-report-test-selection",
-        "head_sha": "e14a9aaea47c9740817ba56a7c318861c21f944e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163964:5964728965:2026-10-08T01:30:12Z:clawsweeper_needs_human",
       "comment_id": "5964728965",
@@ -33233,6 +33186,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sqlschema",
         "head_sha": "b881e1423c4a10bfc338f823dccefadcf996261d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165486:5991912580:2026-10-08T06:34:26Z:clawsweeper_needs_human",
+      "comment_id": "5991912580",
+      "comment_version_key": "5991912580:2026-10-08T06:34:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165486#issuecomment-5991912580",
+      "comment_created_at": "2026-10-05T09:39:03Z",
+      "comment_updated_at": "2026-10-08T06:34:26Z",
+      "comment_body_sha256": "15ac1fe54c90ab4d4df8105cdd7c2c7ab21a6c286a5ef615edac8955b5d0b32e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate approved desktop-to-CLI adoption and standard-account, stale-pin, reassigned-registration,...; Review finding: [medium] Elevated installation and recovery need final-effect proof — apps/linux/src-tauri/src/windows_elevation.rs:155 (sha=d2cc71d93890b1d1aeab4b64be140a2f74087a07)",
+      "expected_head_sha": "d2cc71d93890b1d1aeab4b64be140a2f74087a07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T06:35:21.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/w148-windows-tauri-bun",
+        "head_sha": "d2cc71d93890b1d1aeab4b64be140a2f74087a07",
         "cluster_id": null,
         "job_path": null
       }
