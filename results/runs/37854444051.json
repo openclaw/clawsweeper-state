@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167499",
+  "mode": "autonomous",
+  "run_id": "37854444051",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37854444051",
+  "head_sha": "9f3d54f8f0ca8fd90e2d7a2e23c1045b781fec74",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167499.md",
+  "published_at": "2026-10-08T22:57:51.342Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167499",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167499",
+  "canonical_pr": null,
+  "summary": "Reproduced premature throttle reads and repeated warnings through watchRelease/createClient on checkout main. Prepared a narrow fix artifact; implementation and required validation are blocked by the read-only host.",
+  "actions": [
+    {
+      "target": "#167499",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167499",
+      "candidate_fix": null,
+      "reason": "The existing behavior is reproducibly broken. Classification and fix planning are complete; patching and write-dependent validation require the executor's writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167499",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167499",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate. Artifact preparation is planned; local implementation is blocked solely by read-only filesystem permissions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
