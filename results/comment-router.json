@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T08:21:50.668Z",
+  "updated_at": "2026-10-08T08:22:43.501Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-10-08T03:44:11Z:clawsweeper_auto_repair",
-      "comment_id": "5567489931",
-      "comment_version_key": "5567489931:2026-10-08T03:44:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
-      "comment_created_at": "2026-09-07T08:12:30Z",
-      "comment_updated_at": "2026-10-08T03:44:11Z",
-      "comment_body_sha256": "2d11940601d8508d8eb3403560794ba9712b8c8db8e97db9836d4426ecc0f107",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=023e10d72ff605245455b077d84c067d2e86c7f5)",
-      "expected_head_sha": "023e10d72ff605245455b077d84c067d2e86c7f5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T03:47:21.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "023e10d72ff605245455b077d84c067d2e86c7f5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3892:5942956523:2026-10-08T03:46:52Z:clawsweeper_needs_human",
       "comment_id": "5942956523",
@@ -33342,6 +33309,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:166741:6055800449:2026-10-08T08:21:42Z:re_review",
+      "comment_id": "6055800449",
+      "comment_version_key": "6055800449:2026-10-08T08:21:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166741#issuecomment-6055800449",
+      "comment_created_at": "2026-10-08T08:21:42Z",
+      "comment_updated_at": "2026-10-08T08:21:42Z",
+      "comment_body_sha256": "fd6be2f8245e95e7b51a015ad6e5582a6349863fbbc4692a2037316265fe6767",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166741,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T08:22:41.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/runtime-retention-profile-20261007",
+        "head_sha": "b494c3968e3c236901d5666d2366e2682b32a09f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
