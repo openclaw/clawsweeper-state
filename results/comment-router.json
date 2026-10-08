@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T04:12:14.381Z",
+  "updated_at": "2026-10-08T04:12:48.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166802:6048819913:2026-10-07T23:19:31Z:freeform_assist",
-      "comment_id": "6048819913",
-      "comment_version_key": "6048819913:2026-10-07T23:19:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166802#issuecomment-6048819913",
-      "comment_created_at": "2026-10-07T23:19:31Z",
-      "comment_updated_at": "2026-10-07T23:19:31Z",
-      "comment_body_sha256": "a634aa14bc133d00ff9d90bdee55c3c069d0d533abcaff841119d733e35c6671",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166802,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review. removes the shell-only retired agents.list downgrade; existing real shell regression fails before and passes after. no updater or timeout policy changes. review exact head f13af5968f4514a6e828b475dd66a14996574958.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T23:20:14.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-canonical-survivor-20261007",
-        "head_sha": "f13af5968f4514a6e828b475dd66a14996574958",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166795:6048818978:2026-10-07T23:19:26Z:clawsweeper_needs_human",
       "comment_id": "6048818978",
@@ -33398,6 +33351,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166959:6052039030:2026-10-08T04:11:50Z:clawsweeper_needs_human",
+      "comment_id": "6052039030",
+      "comment_version_key": "6052039030:2026-10-08T04:11:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166959#issuecomment-6052039030",
+      "comment_created_at": "2026-10-08T04:11:50Z",
+      "comment_updated_at": "2026-10-08T04:11:50Z",
+      "comment_body_sha256": "a0d0d4c463610a6690f17f4356df1c64fb93b2592f664cc85c9af362da324f98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed script admission and internal source-reply persistence paths have no allowed-versus-revoke...; Review finding: [P1] Retain the scheduled message capability for script runs — src/cron/trigger-script.ts:415-417 - [P1] Keep scheduled authorization inside source-reply commits —... (sha=d7e0cd2754c65e7e48ad47f538ed785c919a87d2)",
+      "expected_head_sha": "d7e0cd2754c65e7e48ad47f538ed785c919a87d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T04:12:48.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026.9.9-stable-schema19",
+        "head_sha": "d7e0cd2754c65e7e48ad47f538ed785c919a87d2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
