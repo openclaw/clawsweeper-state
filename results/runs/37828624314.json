@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37828624314",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37828624314",
+  "head_sha": "ad52903dc9f1d85a2a820074f7f69080b6d1bcf8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-08T19:07:30.815Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository implementation is established. Main still depends on Blacksmith's native run association, and hydrated triage records no supported pre-worker dispatch binding. Keep the issue open pending that provider capability. No changes or PR were created; tests and live provider reproduction were not run.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a supported, durable Blacksmith binding between the exact Testbox request and its workflow run before worker registration, retained through admission failure and cancellation. The supplied evidence establishes no such interface. Guessing by workflow/ref/time or accepting native completion alone would violate existing ownership guarantees. Resume adapter implementation once that provider contract is available."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no mutation."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical repair; it does not supply the missing pre-worker dispatch binding."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no mutation."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical repair; settlement observations still require an authoritative native association."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
