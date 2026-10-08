@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T15:40:49.038Z",
+  "updated_at": "2026-10-08T15:40:51.986Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167092:6056919325:2026-10-08T09:30:41Z:re_review",
-      "comment_id": "6056919325",
-      "comment_version_key": "6056919325:2026-10-08T09:30:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167092#issuecomment-6056919325",
-      "comment_created_at": "2026-10-08T09:30:41Z",
-      "comment_updated_at": "2026-10-08T09:30:41Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167092,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T09:35:10.732Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/bun-pin-42bd",
-        "head_sha": "27d2f3a4a6e1e72faa0882eb3dc2915709531e06",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166269",
       "comment_id": "repair-loop-label-sweep:automerge:166269",
@@ -33014,6 +32967,39 @@
         "kind": "pull_request",
         "branch": "fix/f009-browser-proxy-direct",
         "head_sha": "027996faa892fdb5ccf0f203694678a165fbd688",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3812:5931883447:2026-10-08T15:39:54Z:clawsweeper_needs_human",
+      "comment_id": "5931883447",
+      "comment_version_key": "5931883447:2026-10-08T15:39:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3812#issuecomment-5931883447",
+      "comment_created_at": "2026-10-01T12:53:25Z",
+      "comment_updated_at": "2026-10-08T15:39:54Z",
+      "comment_body_sha256": "66ba76edad52c81a2963e3ca85da4dbb7a7c7a1b1d6c888dfe5817c4b55c0b96",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The unchanged production owner is reportCliInstallInternal and its indexed dedupe helper. The supplied macOS evidence reads source, while the a... (sha=f087394171cdf062087a189f56e6422ff3760ff6)",
+      "expected_head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T15:40:51.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f023-install-telemetry-race",
+        "head_sha": "f087394171cdf062087a189f56e6422ff3760ff6",
         "cluster_id": null,
         "job_path": null
       }
