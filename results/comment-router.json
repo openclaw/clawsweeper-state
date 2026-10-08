@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T22:41:28.304Z",
+  "updated_at": "2026-10-08T22:43:21.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151076:5953160944:2026-10-02T13:11:59Z:re_review",
-      "comment_id": "5953160944",
-      "comment_version_key": "5953160944:2026-10-02T13:11:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151076#issuecomment-5953160944",
-      "comment_created_at": "2026-10-02T13:11:59Z",
-      "comment_updated_at": "2026-10-02T13:11:59Z",
-      "comment_body_sha256": "c5729f5e7f3b0be6018f4c75166ed3f5be17b99fc85d8c924b849f04312ab1b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151076,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review for head `fd05ee2ffa8`: pr title corrected to 'renew budget only on admitted progress, keep silent overflow charged' (no longer promises uncharged no-op compactions). no code changed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T17:11:50.472Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167342:6065120692:2026-10-08T17:10:44Z:clawsweeper_needs_human",
       "comment_id": "6065120692",
@@ -32935,6 +32908,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166464:6031782138:2026-10-08T22:42:18Z:clawsweeper_needs_human",
+      "comment_id": "6031782138",
+      "comment_version_key": "6031782138:2026-10-08T22:42:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166464#issuecomment-6031782138",
+      "comment_created_at": "2026-10-07T05:43:19Z",
+      "comment_updated_at": "2026-10-08T22:42:18Z",
+      "comment_body_sha256": "aa719671232f1048ccd30bfa62a6ce48a5e0f61a67c3c10b643a9937f0178a24",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The current-head evidence exercises production bootstrap and native SQLite readers in isolated synthetic fixtures, including profile-only resolution and cleanup recovery. It does not... (sha=310deda0c23193e8d8dfcdf6a7f17feabb4a6cb5)",
+      "expected_head_sha": "310deda0c23193e8d8dfcdf6a7f17feabb4a6cb5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T22:43:21.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-auth-profile-managed-env",
+        "head_sha": "310deda0c23193e8d8dfcdf6a7f17feabb4a6cb5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
