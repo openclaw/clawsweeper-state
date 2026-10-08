@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T23:03:24.458Z",
+  "updated_at": "2026-10-08T23:03:54.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1763:6065417847:2026-10-08T17:27:52Z:re_review",
-      "comment_id": "6065417847",
-      "comment_version_key": "6065417847:2026-10-08T17:27:52Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1763#issuecomment-6065417847",
-      "comment_created_at": "2026-10-08T17:27:52Z",
-      "comment_updated_at": "2026-10-08T17:27:52Z",
-      "comment_body_sha256": "07a04499fcecde295b50094c4689b2669022a8f3aad2de0dd1445ab35e734787",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1763,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T17:28:56.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/review-record-coercion-20261008",
-        "head_sha": "248d5bdf4c38f373ec6cadcdc08e76a1e29a1054",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167086:6056871918:2026-10-08T17:27:57Z:clawsweeper_needs_human",
       "comment_id": "6056871918",
@@ -32944,6 +32897,39 @@
         "kind": "pull_request",
         "branch": "openclaw/plugin-retention-diagnostics",
         "head_sha": "dde9e3e9c4e2194558ba8e5d0ad03fd743164aa7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/goplaces:72:6011539754:2026-10-08T23:03:04Z:clawsweeper_needs_human",
+      "comment_id": "6011539754",
+      "comment_version_key": "6011539754:2026-10-08T23:03:04Z",
+      "comment_url": "https://github.com/openclaw/goplaces/pull/72#issuecomment-6011539754",
+      "comment_created_at": "2026-10-06T07:29:32Z",
+      "comment_updated_at": "2026-10-08T23:03:04Z",
+      "comment_body_sha256": "d586873785b45962bc818c0778908cf8a542e27d7035ff5fe8c9a2601dcb070b",
+      "repo": "openclaw/goplaces",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Captured terminal output proves the built details CLI and production HTTP client send the matching token and return selected-place JSON through an owned loopback server. The contribut... (sha=0ca738f1fd37c41fe9a1921107fb127a47c8a553)",
+      "expected_head_sha": "0ca738f1fd37c41fe9a1921107fb127a47c8a553",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T23:03:54.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/details-session-token-20261006",
+        "head_sha": "0ca738f1fd37c41fe9a1921107fb127a47c8a553",
         "cluster_id": null,
         "job_path": null
       }
