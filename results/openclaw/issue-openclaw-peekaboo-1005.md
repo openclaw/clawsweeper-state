@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-1005"
 mode: "autonomous"
-run_id: "37728003854"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37728003854"
+run_id: "37732739545"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37732739545"
 head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-08T04:38:03.155Z"
+published_at: "2026-10-08T05:34:15.986Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/1005"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/1005"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37728003854](https://github.com/openclaw/clawsweeper/actions/runs/37728003854)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37732739545](https://github.com/openclaw/clawsweeper/actions/runs/37732739545)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/1005
 
 ## Summary
 
-#1005 remains a credible performance bug. Current main retains the implicated watcher startup path, but implementation is blocked by unavailable AXorcist source and native validation. No files or GitHub state were changed.
+The issue remains a plausible scoped repair, but implementation and native verification are blocked: this checkout is read-only on Linux, AXorcist is uninitialized, and Crabbox is unavailable. No code or GitHub state changed; no PR is ready.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/1005
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | external base blocker: validation failed only in base-identical files outside the repair delta: scripts/setup-swift-workspace.py, AXorcist |
+| execute_fix | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 |
 | issue_implementation_status_comment | updated | #1005 |  |  |
 
 ## Apply Actions
@@ -67,8 +67,8 @@ Canonical: https://github.com/openclaw/peekaboo/issues/1005
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1005 | fix_needed | planned | canonical | Keep the canonical issue open. Its performance report warrants repair, but disabling watchers without native attribution and regression proof would not establish a safe fix. |
-| cluster:issue-openclaw-peekaboo-1005 | build_fix_artifact | planned |  | Provide a scoped integration artifact; do not execute its PR path until a verified upstream fix exists and macOS validation is available. |
+| #1005 | fix_needed | planned | canonical | Retain #1005 as the canonical bug report. A dependency-first repair is warranted for investigation, but the failing native baseline and symbolicated attribution have not been established by this worker. |
+| cluster:issue-openclaw-peekaboo-1005 | build_fix_artifact | planned |  | The fix artifact is planned, while implementation is blocked on a writable AXorcist home checkout and Peekaboo checkout plus a native macOS validation host. Do not open a PR until baseline attribution, regression proof, upstream verification, and Peekaboo validation succeed. |
 
 ## Needs Human
 

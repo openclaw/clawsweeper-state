@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/peekaboo",
+  "cluster_id": "issue-openclaw-peekaboo-1005",
+  "mode": "autonomous",
+  "run_id": "37732739545",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37732739545",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-peekaboo-1005.md",
+  "published_at": "2026-10-08T05:34:15.986Z",
+  "canonical": "https://github.com/openclaw/peekaboo/issues/1005",
+  "canonical_issue": "https://github.com/openclaw/peekaboo/issues/1005",
+  "canonical_pr": null,
+  "summary": "The issue remains a plausible scoped repair, but implementation and native verification are blocked: this checkout is read-only on Linux, AXorcist is uninitialized, and Crabbox is unavailable. No code or GitHub state changed; no PR is ready.",
+  "actions": [
+    {
+      "target": "#1005",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1005",
+      "candidate_fix": null,
+      "reason": "Retain #1005 as the canonical bug report. A dependency-first repair is warranted for investigation, but the failing native baseline and symbolicated attribution have not been established by this worker."
+    },
+    {
+      "target": "cluster:issue-openclaw-peekaboo-1005",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1005",
+      "candidate_fix": null,
+      "reason": "The fix artifact is planned, while implementation is blocked on a writable AXorcist home checkout and Peekaboo checkout plus a native macOS validation host. Do not open a PR until baseline attribution, regression proof, upstream verification, and Peekaboo validation succeed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1005",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
