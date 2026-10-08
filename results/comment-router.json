@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T09:36:49.619Z",
+  "updated_at": "2026-10-08T09:36:58.171Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:158719:6052692793:2026-10-08T05:04:14Z:re_review",
-      "comment_id": "6052692793",
-      "comment_version_key": "6052692793:2026-10-08T05:04:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158719#issuecomment-6052692793",
-      "comment_created_at": "2026-10-08T05:04:14Z",
-      "comment_updated_at": "2026-10-08T05:04:14Z",
-      "comment_body_sha256": "d83792d8f1d61e143798cfa39cc21cea1e593937b46b2316541b48e625047018",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158719,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:07:48.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-whatsapp-login-action-20260926",
-        "head_sha": "21940a82b1fc9eb50bfe03a52a2731d518d00811",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166727:6052722051:2026-10-08T05:06:38Z:re_review",
       "comment_id": "6052722051",
@@ -33279,6 +33232,39 @@
         "kind": "pull_request",
         "branch": "fix/homebrew-update-notifications",
         "head_sha": "fc015948c9e3daaa0f008b4b25377dfb18d1a07f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1530:6020897734:2026-10-08T09:35:45Z:clawsweeper_needs_human",
+      "comment_id": "6020897734",
+      "comment_version_key": "6020897734:2026-10-08T09:35:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1530#issuecomment-6020897734",
+      "comment_created_at": "2026-10-06T16:37:53Z",
+      "comment_updated_at": "2026-10-08T09:35:45Z",
+      "comment_body_sha256": "d3620b9e87a97038ddbd1caacc165157f5158587ce203f87ab6e0713e697564f",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1530,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record the credential-source owner's decision on live Secret adoption versus admitted copies. (sha=a9379635d5c89e2cc4bf613c7f45b96f27de2d03)",
+      "expected_head_sha": "a9379635d5c89e2cc4bf613c7f45b96f27de2d03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T09:36:58.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/rfc-0080-credential-gateway",
+        "head_sha": "a9379635d5c89e2cc4bf613c7f45b96f27de2d03",
         "cluster_id": null,
         "job_path": null
       }
