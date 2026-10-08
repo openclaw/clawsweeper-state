@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T10:21:40.811Z",
+  "updated_at": "2026-10-08T10:21:48.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156636:5801177332:2026-09-23T19:08:50Z:re_review",
-      "comment_id": "5801177332",
-      "comment_version_key": "5801177332:2026-09-23T19:08:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156636#issuecomment-5801177332",
-      "comment_created_at": "2026-09-23T19:08:50Z",
-      "comment_updated_at": "2026-09-23T19:08:50Z",
-      "comment_body_sha256": "0e9e69f8af0f17f7deb4420f758f34c5f4acd017212c0a8ca1736af6fcd8fafe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156636,
-      "author": "saju01",
-      "author_id": 30193438,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T05:37:25.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/synthetic-context-discovery-20260923",
-        "head_sha": "776c206e9fb451c767d300fad57dd912eb5ec488",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156636:5800105509:2026-10-08T05:36:22Z:clawsweeper_needs_human",
       "comment_id": "5800105509",
@@ -33205,6 +33158,39 @@
         "kind": "pull_request",
         "branch": "refactor/reef-test-fixtures-20260923",
         "head_sha": "5ea5656d25778dc5ec61e306d27bb5d5669c6e76",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1705:6056887602:2026-10-08T10:20:51Z:clawsweeper_needs_human",
+      "comment_id": "6056887602",
+      "comment_version_key": "6056887602:2026-10-08T10:20:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1705#issuecomment-6056887602",
+      "comment_created_at": "2026-10-08T09:28:43Z",
+      "comment_updated_at": "2026-10-08T10:20:51Z",
+      "comment_body_sha256": "97d015227d2da7f3a8f61214df45f30fd667a3b33af266280b1210716f584c52",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the current evidence exercises controller, PostgreSQL, queue, and IAM behavior but substitutes final Compute de...; Review finding: [medium] Verify replacement authority at the gateway boundary — packages/occ/src/index.ts:6059 (sha=caf5e444669b28972152d26cf6c911dea2d20668)",
+      "expected_head_sha": "caf5e444669b28972152d26cf6c911dea2d20668",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T10:21:48.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-787-788",
+        "head_sha": "caf5e444669b28972152d26cf6c911dea2d20668",
         "cluster_id": null,
         "job_path": null
       }
