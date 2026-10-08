@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112832",
+  "mode": "autonomous",
+  "run_id": "37768509491",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37768509491",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112832.md",
+  "published_at": "2026-10-08T11:32:30.506Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112832",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the eager relay startup defect. Implementation and required reproduction are blocked by the read-only host: the focused test command failed in Corepack with EROFS before tests ran. The checkout SHA also differs from preflight main. A narrow fix artifact is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#112832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "The canonical issue still has a narrow repair path. Source evidence is not a substitute for the required failing regression on refreshed main."
+    },
+    {
+      "target": "#112898",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Historical credited reference material, not an active repair or closure target. The job explicitly selects new_fix_pr with source_prs empty."
+    },
+    {
+      "target": "#122537",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Related lazy wake-up behavior does not satisfy eager relay readiness without browser activity or native-helper wake-up."
+    },
+    {
+      "target": "#128379",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact item for central OpenClaw security handling without public mutation. Continue the ordinary eager-start bug plan using existing runtime contracts."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "Preparation is complete enough for a scoped executor handoff; implementation and validation remain blocked on this host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112832",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112832",
+      "candidate_fix": null,
+      "reason": "PR publication requires a reproduced, implemented, reviewed, and validated fix in a writable executor. No ready branch exists from this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
