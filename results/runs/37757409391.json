@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167088",
+  "mode": "autonomous",
+  "run_id": "37757409391",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37757409391",
+  "head_sha": "dbd42faaac5974121b30866352ac0c3718ce1ed9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167088.md",
+  "published_at": "2026-10-08T10:13:51.366Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167088",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167088",
+  "canonical_pr": null,
+  "summary": "Verified the stale-activity race in source on preflight main 0acc55cfa8a973f9d1764f7641f41e5a38e88abe. A narrow repair should revalidate automatic archive eligibility under the existing mutation lock. This read-only worker made no changes and ran no regression tests; implementation and validation remain for the executor.",
+  "actions": [
+    {
+      "target": "#167088",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167088",
+      "candidate_fix": null,
+      "reason": "The current source permits recently committed activity to be ignored after archive waits for the lock. Preserve this canonical issue and implement the bounded repair; closure and merge are prohibited by this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167088",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167088",
+      "candidate_fix": null,
+      "reason": "The job authorizes a new fix PR and the defect fits a narrow existing-owner repair. The executor must refresh scoped GitHub state, implement, validate, and review before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
