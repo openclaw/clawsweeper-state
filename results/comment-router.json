@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T11:17:38.549Z",
+  "updated_at": "2026-10-08T11:18:18.687Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166994:6053643481:2026-10-08T06:14:38Z:re_review",
-      "comment_id": "6053643481",
-      "comment_version_key": "6053643481:2026-10-08T06:14:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166994#issuecomment-6053643481",
-      "comment_created_at": "2026-10-08T06:14:38Z",
-      "comment_updated_at": "2026-10-08T06:14:38Z",
-      "comment_body_sha256": "a312723828fe9d4cc8c8797fc4dc3f31851e49018955a523b4117fcccd4d4770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166994,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T06:15:42.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/remove-this-autoland",
-        "head_sha": "5968bda7c128b6a98f97e9befe7f20a36ece8376",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141389:5573979210:2026-10-08T06:14:33Z:clawsweeper_needs_human",
       "comment_id": "5573979210",
@@ -33277,6 +33230,39 @@
         "kind": "pull_request",
         "branch": "campaign/atomic-4",
         "head_sha": "169eb7bb5b4bb70bea9a2f0325d1e4cdd18fb38b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167184:6058679362:2026-10-08T11:17:09Z:clawsweeper_auto_repair",
+      "comment_id": "6058679362",
+      "comment_version_key": "6058679362:2026-10-08T11:17:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167184#issuecomment-6058679362",
+      "comment_created_at": "2026-10-08T11:17:09Z",
+      "comment_updated_at": "2026-10-08T11:17:09Z",
+      "comment_body_sha256": "6fe9d61d67aeb30461e09aa38fc99b83d3549746e63d78c9234c3e381253eefe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167184,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=bc87be961d93c5458b9f811141ef9d41c52fe916)",
+      "expected_head_sha": "bc87be961d93c5458b9f811141ef9d41c52fe916",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-08T11:18:18.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-drain-interrupt-settle-20260919",
+        "head_sha": "bc87be961d93c5458b9f811141ef9d41c52fe916",
         "cluster_id": null,
         "job_path": null
       }
