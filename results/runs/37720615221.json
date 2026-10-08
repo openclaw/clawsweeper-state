@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-166923",
+  "mode": "autonomous",
+  "run_id": "37720615221",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37720615221",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-166923.md",
+  "published_at": "2026-10-08T03:52:51.823Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/166923",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/166923",
+  "canonical_pr": null,
+  "summary": "Source confirms the missing fixture export on preflight main. Prepared a narrow repair artifact; implementation and runtime proof are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#166923",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166923",
+      "candidate_fix": null,
+      "reason": "The source finding remains valid and test-only. Runtime reproduction must precede editing in a writable isolated checkout with locked dependencies."
+    },
+    {
+      "target": "#166690",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation or regression attribution is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166923",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#166923",
+      "candidate_fix": null,
+      "reason": "A narrow executor-ready plan is supported by source inspection despite host execution limits."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-166923",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#166923",
+      "candidate_fix": null,
+      "reason": "Blocked until the executor reproduces the missing-export failure, applies the narrow repair, validates it, and obtains fresh review in a writable isolated checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
