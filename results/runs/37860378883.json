@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1676",
+  "mode": "autonomous",
+  "run_id": "37860378883",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37860378883",
+  "head_sha": "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1676.md",
+  "published_at": "2026-10-08T23:41:26.894Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1676",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1676",
+  "canonical_pr": null,
+  "summary": "Verified the missing uninstall-metadata reconciliation on preflight main 037c17dcb581cbe427ab1939576515643b9e0707. A narrow fix remains viable, but the read-only Linux environment blocks implementation and validation. No code or GitHub mutations occurred; no tests ran.",
+  "actions": [
+    {
+      "target": "#1676",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "The corrected in-app-update defect has a narrow implementation path. Implementation requires a writable checkout and Windows validation."
+    },
+    {
+      "target": "#1592",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "Keep the broader recovery issue separate and open."
+    },
+    {
+      "target": "#1675",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "Useful contributor work with a distinct scope; preserve its ownership and credit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-node-1676",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1676",
+      "candidate_fix": null,
+      "reason": "Planning is complete enough for an executor. Implementation, regression execution, review, and Windows proof are blocked in this environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

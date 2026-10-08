@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1676"
 mode: "autonomous"
-run_id: "37859621433"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37859621433"
+run_id: "37860378883"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37860378883"
 head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T23:33:24.692Z"
+published_at: "2026-10-08T23:41:26.894Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37859621433](https://github.com/openclaw/clawsweeper/actions/runs/37859621433)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37860378883](https://github.com/openclaw/clawsweeper/actions/runs/37860378883)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1676
 
 ## Summary
 
-Confirmed the metadata gap in preflight main 037c17dcb581cbe427ab1939576515643b9e0707. Prepared a narrow implementation artifact. No files changed or GitHub mutations performed: the filesystem is read-only, validation cannot start, and GitHub DNS resolution failed.
+Verified the missing uninstall-metadata reconciliation on preflight main 037c17dcb581cbe427ab1939576515643b9e0707. A narrow fix remains viable, but the read-only Linux environment blocks implementation and validation. No code or GitHub mutations occurred; no tests ran.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed the metadata gap in preflight main 037c17dcb581cbe427ab1939576515643b9
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1676 | fix_needed | planned | canonical | The corrected ordinary bug remains supported by inspected source and runtime evidence. Proceed through the cluster fix artifact after refreshing ownership and main; local implementation is environmentally blocked. |
-| #1592 | keep_related | planned | related | Keep the broader recovery issue open and outside this implementation. |
-| #1675 | keep_related | planned | related | Useful separate contributor work, not an owning implementation for #1676. Preserve natalie-aguinaldo's PR unchanged. |
-| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | The fix plan is concrete and narrow; execution requires a writable checkout and Windows validation capacity. No PR is ready for publication. |
+| #1676 | fix_needed | planned | canonical | The corrected in-app-update defect has a narrow implementation path. Implementation requires a writable checkout and Windows validation. |
+| #1592 | keep_related | planned | related | Keep the broader recovery issue separate and open. |
+| #1675 | keep_related | planned | related | Useful contributor work with a distinct scope; preserve its ownership and credit. |
+| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | Planning is complete enough for an executor. Implementation, regression execution, review, and Windows proof are blocked in this environment. |
 
 ## Needs Human
 
