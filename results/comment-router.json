@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T01:20:16.183Z",
+  "updated_at": "2026-10-08T01:20:25.681Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166674:6045874109:2026-10-07T20:06:18Z:re_review",
-      "comment_id": "6045874109",
-      "comment_version_key": "6045874109:2026-10-07T20:06:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166674#issuecomment-6045874109",
-      "comment_created_at": "2026-10-07T20:06:18Z",
-      "comment_updated_at": "2026-10-07T20:06:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166674,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T20:13:13.434Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/tb3writes",
-        "head_sha": "eaac581083b1384dc62aaa7463e7a1e56a4bd43a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166674:6043271042:2026-10-07T20:12:16Z:clawsweeper_needs_human",
       "comment_id": "6043271042",
@@ -33802,6 +33755,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166861:6050189990:2026-10-08T01:19:23Z:clawsweeper_needs_human",
+      "comment_id": "6050189990",
+      "comment_version_key": "6050189990:2026-10-08T01:19:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166861#issuecomment-6050189990",
+      "comment_created_at": "2026-10-08T01:19:23Z",
+      "comment_updated_at": "2026-10-08T01:19:23Z",
+      "comment_body_sha256": "b8e8240baad66afa42c6dea21f8403b2c0390197711ed71983d24e7f7a7d38e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166861,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Discord installations with omitted streaming settings will begin receiving progress messages after upgrade, reversing the documented opt-in policy without recorded area-owner... (sha=4cc2f48c39cc756ed90744a95889648e8e75a3f7)",
+      "expected_head_sha": "4cc2f48c39cc756ed90744a95889648e8e75a3f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T01:20:25.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/questioning-a-poor-ux-decision",
+        "head_sha": "4cc2f48c39cc756ed90744a95889648e8e75a3f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
