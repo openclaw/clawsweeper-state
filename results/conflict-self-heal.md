@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-08T19:35:42.318Z
+Generated: 2026-10-08T20:38:11.897Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -37,11 +37,11 @@ Repository: openclaw/openclaw
 | [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | clawsweeper/issue-openclaw-openclaw-118669 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | clawsweeper/issue-openclaw-openclaw-116747 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | clawsweeper/issue-openclaw-openclaw-118185 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | CONFLICTING | DIRTY | skipped | self-heal already dispatched 2 time(s) for this PR head |
+| [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
+| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | CONFLICTING | DIRTY | skipped | self-heal already dispatched 2 time(s) for this PR head |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
