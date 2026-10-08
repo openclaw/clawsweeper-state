@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37835702341"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37835702341"
-head_sha: "602e573750d089c09f5d140558f62bde4dd73740"
-workflow_conclusion: "failure"
+run_id: "37846756621"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37846756621"
+head_sha: "c48313d78bce80ea5e60ef57c397341e349cd837"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-08T20:04:05.045Z"
+published_at: "2026-10-08T21:30:54.508Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37835702341](https://github.com/openclaw/clawsweeper/actions/runs/37835702341)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37846756621](https://github.com/openclaw/clawsweeper/actions/runs/37846756621)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository-side implementation is established. Blacksmith must expose a durable Testbox-to-workflow binding before worker registration, retained through admission failure and cancellation. The inspected checkout matches preflight main 7d597efb297a121c77d84a0995448ea0e12c4637. No code changes or GitHub mutations were made; no PR is recommended.
+No safe repository implementation is established. Current main confirms the dependency described in the hydrated triage: Blacksmith must expose a durable Testbox-to-workflow binding before worker registration. No files changed, tests run, or GitHub mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ No safe repository-side implementation is established. Blacksmith must expose a 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #2708 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,11 @@ No safe repository-side implementation is established. Blacksmith must expose a 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | Keep the issue open as the canonical provider-capability request; the earlier settlement fixes do not resolve pre-worker dispatch association. |
+| #2708 | keep_related | skipped | related | Implementation is blocked on a supported Blacksmith capability that durably binds the exact Testbox request to its workflow run before worker registration and preserves that binding through admission failure or cancellation. No evidence supplied establishes that capability. Guessing a run or treating elapsed time/native completion as authoritative failure or settlement would violate the recorded triage and recovery contract. Keep the issue open as a related provider-dependent follow-up; emit no executable fix artifact or PR. |
 | #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical context; not an implementation candidate for this distinct capability gap. |
+| #2670 | keep_closed | skipped | related | Historical merged repair; no action required. |
 | #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Historical context; it does not supply the missing pre-worker binding. |
-| cluster:issue-openclaw-crabbox-2708 | fix_needed | blocked | related | Implementation is blocked on an external provider capability. With queued state and no authoritative association, Crabbox cannot distinguish slow allocation from failed dispatch. Resume only when the supported binding and terminal-state contract are available. The fix artifact records an audited no-PR outcome, not an executable implementation plan. |
+| #2683 | keep_closed | skipped | related | Historical merged repair; no action required. |
 
 ## Needs Human
 
