@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142789"
 mode: "autonomous"
-run_id: "37763613202"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37763613202"
+run_id: "37797440446"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37797440446"
 head_sha: "fb5a0d95b269f412aa185cf4deda1c115a83af69"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T11:18:17.807Z"
+published_at: "2026-10-08T15:55:13.357Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37763613202](https://github.com/openclaw/clawsweeper/actions/runs/37763613202)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37797440446](https://github.com/openclaw/clawsweeper/actions/runs/37797440446)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/142789
 
 ## Summary
 
-The source confirms the ownership-ordering defect on preflight main 36bd762422b348173b951819eef29e7fb2d307c3. A narrow fix artifact is prepared. Implementation and mandatory runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
+Current-main source supports the reported ownership-ordering defect. Implementation and runtime reproduction are blocked by the read-only host: the focused test command failed during Corepack setup with EROFS. A narrow, conditional fix artifact is prepared; no code or GitHub state changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The source confirms the ownership-ordering defect on preflight main 36bd762422b3
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142789 | fix_needed | planned | canonical | A bounded existing-behavior repair remains warranted by source evidence. Execution requires a writable isolated checkout with dependencies and the mandatory reproduction. |
-| #142964 | keep_closed | skipped | related | Historical contributor evidence only; no closure or merge action is valid. |
-| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned |  | The narrow plan is reviewable, while implementation and runtime proof remain blocked by host prerequisites. |
+| #142789 | fix_needed | planned | canonical | The existing session-qualified terminal contract has a narrow source-supported defect. Implementation requires a writable executor and a failing baseline through terminal.open before production edits. |
+| #142964 | keep_closed | skipped | related | Closed historical evidence only. Preserve contributor credit in the new issue implementation; emit no closure or merge action. |
+| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying it and publishing a PR are blocked until the executor establishes the required failing baseline and completes validation. |
 
 ## Needs Human
 

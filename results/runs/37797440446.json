@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142789",
+  "mode": "autonomous",
+  "run_id": "37797440446",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37797440446",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142789.md",
+  "published_at": "2026-10-08T15:55:13.357Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142789",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142789",
+  "canonical_pr": null,
+  "summary": "Current-main source supports the reported ownership-ordering defect. Implementation and runtime reproduction are blocked by the read-only host: the focused test command failed during Corepack setup with EROFS. A narrow, conditional fix artifact is prepared; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#142789",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "The existing session-qualified terminal contract has a narrow source-supported defect. Implementation requires a writable executor and a failing baseline through terminal.open before production edits."
+    },
+    {
+      "target": "#142964",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "Closed historical evidence only. Preserve contributor credit in the new issue implementation; emit no closure or merge action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142789",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Applying it and publishing a PR are blocked until the executor establishes the required failing baseline and completes validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
