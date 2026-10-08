@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T21:11:10.602Z",
+  "updated_at": "2026-10-08T21:11:32.710Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167055:6055935098:2026-10-08T14:36:21Z:clawsweeper_needs_human",
-      "comment_id": "6055935098",
-      "comment_version_key": "6055935098:2026-10-08T14:36:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167055#issuecomment-6055935098",
-      "comment_created_at": "2026-10-08T08:30:28Z",
-      "comment_updated_at": "2026-10-08T14:36:21Z",
-      "comment_body_sha256": "8cdb41700ad29deec252e87b8060ea5ad65f9e911ee0f75b0a84dfee2d13eb2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167055,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9d1e0a556763a22f33eda27a5033bb341d7b7339)",
-      "expected_head_sha": "9d1e0a556763a22f33eda27a5033bb341d7b7339",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T14:37:36.962Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/repair-08-progress",
-        "head_sha": "9d1e0a556763a22f33eda27a5033bb341d7b7339",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167260:6061605820:2026-10-08T14:36:39Z:clawsweeper_needs_human",
       "comment_id": "6061605820",
@@ -33354,6 +33321,53 @@
       "status": "skipped",
       "processed_at": "2026-10-08T21:11:10.602Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133862:6069115642:2026-10-08T21:10:26Z:re_review",
+      "comment_id": "6069115642",
+      "comment_version_key": "6069115642:2026-10-08T21:10:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133862#issuecomment-6069115642",
+      "comment_created_at": "2026-10-08T21:10:26Z",
+      "comment_updated_at": "2026-10-08T21:10:26Z",
+      "comment_body_sha256": "4fc0c3a506ea7cd07ffed4528b6e12d7e29eda5b3878ffaa1bee6481be05d00c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133862,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T21:11:30.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-wait-for-idle-deadline",
+        "head_sha": "7f48c4ad1824394535ff3344a7e9482e98d7bc44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
