@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-08T14:54:03.920Z",
+  "updated_at": "2026-10-08T14:55:12.280Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136179:5507042278:2026-10-08T08:45:07Z:clawsweeper_auto_repair",
-      "comment_id": "5507042278",
-      "comment_version_key": "5507042278:2026-10-08T08:45:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136179#issuecomment-5507042278",
-      "comment_created_at": "2026-09-02T08:55:44Z",
-      "comment_updated_at": "2026-10-08T08:45:07Z",
-      "comment_body_sha256": "ff1a42bfe22e7059ef8f26e863f39f7ab01e66ba7fcba268e512d5b611078ccf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136179,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e8c48de8c8d4c846d186e2da001abd48cc14ed75)",
-      "expected_head_sha": "e8c48de8c8d4c846d186e2da001abd48cc14ed75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T08:55:06.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ios-protected-input-focus",
-        "head_sha": "e8c48de8c8d4c846d186e2da001abd48cc14ed75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138543:5545802608:2026-10-08T08:45:51Z:clawsweeper_auto_repair",
       "comment_id": "5545802608",
@@ -33067,6 +33034,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165310:5987773628:2026-10-08T14:54:05Z:clawsweeper_needs_human",
+      "comment_id": "5987773628",
+      "comment_version_key": "5987773628:2026-10-08T14:54:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165310#issuecomment-5987773628",
+      "comment_created_at": "2026-10-05T03:50:21Z",
+      "comment_updated_at": "2026-10-08T14:54:05Z",
+      "comment_body_sha256": "2285193af1b8d81990eb4d09eea8df639a82d13888c870b62739a5a27ca71837",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165310,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The macOS Gateway terminal trace demonstrates compaction persistence and cron execution on the earlier deferral implementation, but do... (sha=428dbaf63cae332cab98a737aed2eea754234b9e)",
+      "expected_head_sha": "428dbaf63cae332cab98a737aed2eea754234b9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T14:55:12.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/165162-cron-prelane-lifecycle-claim",
+        "head_sha": "428dbaf63cae332cab98a737aed2eea754234b9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
