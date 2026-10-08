@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167269",
+  "mode": "autonomous",
+  "run_id": "37792516144",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37792516144",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167269.md",
+  "published_at": "2026-10-08T15:09:40.158Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167269",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167269",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the API.read guidance mismatch. A narrow four-file fix artifact is ready, but implementation and boundary reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167269",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#167269",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable, dependency-ready checkout. Reproduce through the existing Code Mode boundary fixture on current main before editing; do not publish if reproduction fails."
+    },
+    {
+      "target": "#130470",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167269",
+      "candidate_fix": null,
+      "reason": "Related Code Mode proof tooling with a distinct defect and repair scope; leave open."
+    },
+    {
+      "target": "#88763",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contract evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167269",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167269",
+      "candidate_fix": null,
+      "reason": "The executor can implement this bounded guidance repair once reproduction and host prerequisites are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
