@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T09:07:38.061Z",
+  "updated_at": "2026-10-08T09:08:01.032Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166269:6024569430:2026-10-06T20:46:10Z:clawsweeper_auto_merge",
-      "comment_id": "6024569430",
-      "comment_version_key": "6024569430:2026-10-06T20:46:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166269#issuecomment-6024569430",
-      "comment_created_at": "2026-10-06T20:11:34Z",
-      "comment_updated_at": "2026-10-06T20:46:10Z",
-      "comment_body_sha256": "aafe7bb88821d37144d326a9d1d7b3f12916a0bbbfefd724984a0f7909ad1376",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=72c26edb8a4a8e7dc6a342392c3092ae07e82a1e); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T04:36:16.856Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-auth-timeout-metadata",
-        "head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-        "cluster_id": "automerge-openclaw-openclaw-166269",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163239:6052307430:2026-10-08T04:33:41Z:re_review",
       "comment_id": "6052307430",
@@ -33291,6 +33244,51 @@
         "kind": "pull_request",
         "branch": "dbasync/w6discovery-preflight",
         "head_sha": "91d1830533818ccbbb27efe4fb15490595adcd6d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156448:5794002941:2026-09-23T11:28:34Z:re_review",
+      "comment_id": "5794002941",
+      "comment_version_key": "5794002941:2026-09-23T11:28:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/156448#issuecomment-5794002941",
+      "comment_created_at": "2026-09-23T11:28:34Z",
+      "comment_updated_at": "2026-09-23T11:28:34Z",
+      "comment_body_sha256": "d50b6932344c2dd0575e95ef03bbf761d3bbf6d034f08946a732ed16c1e4c1d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156448,
+      "author": "goslingmanagment",
+      "author_id": 220680726,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T09:07:59.167Z",
+      "target": {
+        "kind": "issue",
         "cluster_id": null,
         "job_path": null
       },
