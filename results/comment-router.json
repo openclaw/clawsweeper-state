@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-08T02:20:18.944Z",
+  "updated_at": "2026-10-08T02:21:02.611Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137757:5567872420:2026-09-07T08:42:59Z:re_review",
-      "comment_id": "5567872420",
-      "comment_version_key": "5567872420:2026-09-07T08:42:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137757#issuecomment-5567872420",
-      "comment_created_at": "2026-09-07T08:42:59Z",
-      "comment_updated_at": "2026-09-07T08:42:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137757,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-07T21:33:30.334Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137757:5602555019:2026-09-09T13:21:42Z:re_review",
       "comment_id": "5602555019",
@@ -33511,6 +33484,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:864:5943171576:2026-10-08T02:19:59Z:clawsweeper_needs_human",
+      "comment_id": "5943171576",
+      "comment_version_key": "5943171576:2026-10-08T02:19:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/864#issuecomment-5943171576",
+      "comment_created_at": "2026-10-02T00:17:41Z",
+      "comment_updated_at": "2026-10-08T02:19:59Z",
+      "comment_body_sha256": "479ac8f7b75cf72ee9a9d05ed340c85d70cdd6615deb3220888c45ccb7fafef3",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 864,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Default concurrent execution remains unqualified on Compose and Kubernetes installations; provide redacted outcomes demonstrating scenario overlap and independent credential cleanup w... (sha=731c1d7e5691642f0794cec52aa33c1bb3588a8c)",
+      "expected_head_sha": "731c1d7e5691642f0794cec52aa33c1bb3588a8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T02:21:02.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/qa-matrix-parallel",
+        "head_sha": "731c1d7e5691642f0794cec52aa33c1bb3588a8c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
