@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167130",
+  "mode": "autonomous",
+  "run_id": "37764029803",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37764029803",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167130.md",
+  "published_at": "2026-10-08T11:17:36.182Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167130",
+  "canonical_pr": null,
+  "summary": "Verified the connection-mismatch path on preflight main 36bd762422b348173b951819eef29e7fb2d307c3. Prepared a narrow repair artifact. Implementation and failing runtime reproduction are blocked by this host's read-only filesystem and absent dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167130",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167130",
+      "candidate_fix": null,
+      "reason": "The source supports a bounded existing-behavior defect. Establish the required failing concurrent production-worker regression before applying or publishing the repair."
+    },
+    {
+      "target": "#165879",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167130",
+      "candidate_fix": null,
+      "reason": "Historical lifecycle evidence, not an open repair candidate or a fix for the current parallel-reader mismatch."
+    },
+    {
+      "target": "#167029",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167130",
+      "candidate_fix": null,
+      "reason": "Historical context for parallel reads. Preserve foreground parallelism and existing cleanup accounting."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167130",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix path is justified by source evidence; implementation remains conditional on a failing runtime regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167130",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#167130",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout and installed dependencies to reproduce, repair, validate, and review before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
