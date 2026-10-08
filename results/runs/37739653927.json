@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2717",
+  "mode": "autonomous",
+  "run_id": "37739653927",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37739653927",
+  "head_sha": "11c625de8a3cd43b7943a7d1f3100dde7a851216",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2717.md",
+  "published_at": "2026-10-08T06:53:07.072Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2717",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2717",
+  "canonical_pr": null,
+  "summary": "Independent Windows image selection is already implemented. The remaining Server 2025 default rollout requires live qualification and regional image promotion with rollback, explicitly deferred by the maintainer. No code changes or PR are appropriate before that proof.",
+  "actions": [
+    {
+      "target": "#2717",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "Keep the issue open for the remaining rollout related to the merged partial implementations. Implementation is blocked on operator-run Server 2025 qualification and regional promoted-image rollout evidence. A fallback-only patch would bypass the documented prerequisite and would not migrate users whose promoted Windows AMIs take precedence. No safe executable fix artifact can be derived before the canary, native/desktop/WSL2 proof, regional inventory, and rollback receipts are recorded."
+    },
+    {
+      "target": "#2720",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "Historical partial implementation; no action on the closed PR."
+    },
+    {
+      "target": "#2734",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#2717",
+      "candidate_fix": null,
+      "reason": "Historical rollout preparation; no action on the closed PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2717",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
