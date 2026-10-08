@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T07:15:19.070Z",
+  "updated_at": "2026-10-08T07:15:19.593Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166880:6050764187:2026-10-08T02:12:42Z:re_review",
-      "comment_id": "6050764187",
-      "comment_version_key": "6050764187:2026-10-08T02:12:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166880#issuecomment-6050764187",
-      "comment_created_at": "2026-10-08T02:12:42Z",
-      "comment_updated_at": "2026-10-08T02:12:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166880,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T02:13:32.074Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-progress-react-166859",
-        "head_sha": "81383dee75d8a2010d95fa742a9314794bded059",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166703:6050763438:2026-10-08T02:12:38Z:re_review",
       "comment_id": "6050763438",
@@ -33621,6 +33574,39 @@
         "kind": "pull_request",
         "branch": "fix/yielded-requester-settle-fence",
         "head_sha": "66e81c10bd1104281249736504d69a4a27d04659",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167016:6054657634:2026-10-08T07:14:11Z:clawsweeper_needs_human",
+      "comment_id": "6054657634",
+      "comment_version_key": "6054657634:2026-10-08T07:14:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167016#issuecomment-6054657634",
+      "comment_created_at": "2026-10-08T07:14:11Z",
+      "comment_updated_at": "2026-10-08T07:14:11Z",
+      "comment_body_sha256": "236525a2c42a4243c86112d9869d019c456f396b3a5c643c96ffbb277583dc45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167016,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Change the PR body's automatic closing reference to Related: https://github.com/openclaw/openclaw/issues/165460 because continuation after an engine decline remains unresolved. (sha=cf55bf64d368b2fdb4af40734e78deaf0d1be68a)",
+      "expected_head_sha": "cf55bf64d368b2fdb4af40734e78deaf0d1be68a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T07:15:19.593Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-byte-fuse-compaction-declined",
+        "head_sha": "cf55bf64d368b2fdb4af40734e78deaf0d1be68a",
         "cluster_id": null,
         "job_path": null
       }
