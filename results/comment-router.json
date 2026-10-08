@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-10-08T15:25:18.362Z",
+  "updated_at": "2026-10-08T15:23:54.141Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:4361:6056631017:2026-10-08T09:12:59Z:re_review",
+      "comment_id": "6056631017",
+      "comment_version_key": "6056631017:2026-10-08T09:12:59Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/4361#issuecomment-6056631017",
+      "comment_created_at": "2026-10-08T09:12:59Z",
+      "comment_updated_at": "2026-10-08T09:12:59Z",
+      "comment_body_sha256": "bcc1687ad438805d0a299d14ab5c61e5c3cdd6588e76a181f215a655f5f13664",
+      "repo": "steipete/CodexBar",
+      "issue_number": 4361,
+      "author": "brzvsk",
+      "author_id": 9456996,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-08T09:18:35.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/widget-minute-freshness",
+        "head_sha": "e6a9be2dfa3dc7fa1974e87c5f4b2ce6bab39543",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4361:6054381542:2026-10-08T09:17:37Z:clawsweeper_needs_human",
       "comment_id": "6054381542",
@@ -32993,39 +33040,6 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-worker-sizing-on-128-cores-20260919",
         "head_sha": "b6daa048858415865809d072681728d95ac69ee3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166703:6044785137:2026-10-08T15:23:28Z:clawsweeper_needs_human",
-      "comment_id": "6044785137",
-      "comment_version_key": "6044785137:2026-10-08T15:23:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166703#issuecomment-6044785137",
-      "comment_created_at": "2026-10-07T19:01:15Z",
-      "comment_updated_at": "2026-10-08T15:23:28Z",
-      "comment_body_sha256": "5345a8562a8cedbf0787f58809429564791207691517d11347408abcb410d426",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166703,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=789106d11e61cf2fcec8d26f73b04bd61104bf57)",
-      "expected_head_sha": "789106d11e61cf2fcec8d26f73b04bd61104bf57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T15:25:18.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/turnbudget-step1-current",
-        "head_sha": "789106d11e61cf2fcec8d26f73b04bd61104bf57",
         "cluster_id": null,
         "job_path": null
       }
