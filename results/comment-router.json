@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T09:17:30.839Z",
+  "updated_at": "2026-10-08T09:18:13.676Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3870:5975928851:2026-10-04T02:51:03Z:re_review",
-      "comment_id": "5975928851",
-      "comment_version_key": "5975928851:2026-10-04T02:51:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3870#issuecomment-5975928851",
-      "comment_created_at": "2026-10-04T02:51:03Z",
-      "comment_updated_at": "2026-10-04T02:51:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3870,
-      "author": "Irish-Joseph",
-      "author_id": 135312096,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T04:44:45.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-mode-windows-test",
-        "head_sha": "451696df88d29e73d8c1365bfd71dbbddabc8e6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3870:5919821431:2026-10-08T04:43:51Z:clawsweeper_needs_human",
       "comment_id": "5919821431",
@@ -33328,6 +33281,39 @@
       "status": "skipped",
       "processed_at": "2026-10-08T09:17:30.839Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2743:6056699499:2026-10-08T09:17:13Z:clawsweeper_needs_human",
+      "comment_id": "6056699499",
+      "comment_version_key": "6056699499:2026-10-08T09:17:13Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2743#issuecomment-6056699499",
+      "comment_created_at": "2026-10-08T09:17:13Z",
+      "comment_updated_at": "2026-10-08T09:17:13Z",
+      "comment_body_sha256": "c63b5c5d3811a0eeb5dd5233a63ee0a30b4d8c196872d1350f639b31a4fdc425",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2743,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add real Windows behavior proof before merge; terminal screenshots, logs, or live output are acceptable. Redact IP addresses, credentials, and private endpoints. Updating the PR body... (sha=40859db5dc9896171ba9c41b1a018b102d5fb351)",
+      "expected_head_sha": "40859db5dc9896171ba9c41b1a018b102d5fb351",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T09:18:13.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-prep-pull-resilience",
+        "head_sha": "40859db5dc9896171ba9c41b1a018b102d5fb351",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
