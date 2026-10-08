@@ -2,16 +2,16 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-434"
 mode: "autonomous"
-run_id: "37859465425"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37859465425"
-head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
+run_id: "37860532382"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37860532382"
+head_sha: "e4c173aeed287b177b9c2152cb50d055da5d7223"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-08T23:34:00.635Z"
+published_at: "2026-10-08T23:43:27.349Z"
 canonical: "https://github.com/openclaw/wacli/issues/434"
 canonical_issue: "https://github.com/openclaw/wacli/issues/434"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37859465425](https://github.com/openclaw/clawsweeper/actions/runs/37859465425)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37860532382](https://github.com/openclaw/clawsweeper/actions/runs/37860532382)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/wacli/issues/434
 
 ## Summary
 
-Verified that MCP wrapper guidance remains missing on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Prepared a narrow documentation artifact and checked an in-memory draft. Implementation, full validation, and PR creation require a writable executor environment; no repository or GitHub mutations occurred.
+Verified the MCP documentation gap on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Prepared a narrow four-file documentation artifact. Implementation, full validation, and PR creation require a writable executor; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Verified that MCP wrapper guidance remains missing on preflight main 8fe6a5a1186
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #434 | comment | planned | canonical | Coordinate the explicitly authorized documentation implementation while preserving reporter credit. |
-| #48 | keep_closed | skipped | related | Historical product-direction evidence; no remaining action on this closed RFC. |
-| #208 | keep_closed | skipped | related | Historical documentation precedent, not a candidate PR for this issue. |
-| #425 | keep_closed | skipped | related | Historical concurrency evidence; the new guide must reflect current delegated-command support. |
-| cluster:issue-openclaw-wacli-434 | fix_needed | planned | canonical | A bounded documentation gap remains, with no viable implementation PR in the supplied inventory. |
-| cluster:issue-openclaw-wacli-434 | build_fix_artifact | planned | canonical | Provide an executable four-file documentation plan with source-verified contracts, attribution, release-note context, and validation. |
-| cluster:issue-openclaw-wacli-434 | open_fix_pr | blocked | canonical | Implementation and PR creation are blocked on a writable environment and successful required validation. |
+| #434 | fix_needed | planned | canonical | The request remains viable as documentation for existing CLI contracts. No runtime change or product decision is required. |
+| #48 | keep_closed | skipped | related | Historical design context only. |
+| #208 | keep_closed | skipped | related | Merged historical context; preserve existing contributor attribution. |
+| #425 | keep_closed | skipped | related | Historical concurrency context; the guide must not repeat the obsolete claim that all live commands fail alongside follow. |
+| cluster:issue-openclaw-wacli-434 | build_fix_artifact | planned |  | A narrow documentation PR is supported; the artifact is ready for an authorized writable executor. |
+| cluster:issue-openclaw-wacli-434 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked by the read-only environment. GitHub mutations remain delegated to ClawSweeper scripts; merge and issue closure are prohibited by this job. |
 
 ## Needs Human
 
