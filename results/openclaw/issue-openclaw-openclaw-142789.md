@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142789"
 mode: "autonomous"
-run_id: "37744283676"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37744283676"
-head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
+run_id: "37757383043"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37757383043"
+head_sha: "dbd42faaac5974121b30866352ac0c3718ce1ed9"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T08:20:42.310Z"
+published_at: "2026-10-08T10:14:36.027Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142789"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37744283676](https://github.com/openclaw/clawsweeper/actions/runs/37744283676)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37757383043](https://github.com/openclaw/clawsweeper/actions/runs/37757383043)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/142789
 
 ## Summary
 
-Source confirms premature ownerless launch-policy rejection on checkout main 6122a73a8e06f9431862a139bf796875ddb83c65, newer than preflight main 17bdf57ee5df7b742f238edebed88eb4a687d412. A narrow fix artifact is prepared. Implementation, failing regression, runtime proof, and required validation remain blocked by the read-only host and absent dependencies. No files or GitHub state were changed.
+The terminal ownership defect remains source-evident on preflight main. A narrow fix artifact is ready for the executor, but implementation and runtime reproduction are blocked by this read-only host, absent dependencies, and Corepack EROFS. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Source confirms premature ownerless launch-policy rejection on checkout main 612
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142789 | fix_needed | blocked | canonical | The bug-only repair is clear, but this host cannot establish the required failing production-boundary regression or implement and validate the branch. |
-| #142964 | keep_closed | skipped | related | Historical contributor context supplies useful ownership analysis and credit, but does not own an executable repair or justify reopening, closure, or merge. |
-| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned | canonical | Return the narrow executor plan while marking local implementation blocked; no unresolved product decision requires needs_human. |
+| #142789 | fix_needed | planned | canonical | Repair existing session-qualified admission through the shared owner resolver. Preserve the issue until implementation and required proof complete. |
+| #142964 | keep_closed | skipped | related | Historical evidence and contributor credit only; this closed PR cannot own the active implementation or receive another closure. |
+| cluster:issue-openclaw-openclaw-142789 | build_fix_artifact | planned |  | The executor can apply this narrow plan on a writable prepared host. Establish the failing production-boundary regression before editing; PR publication remains contingent on reproduction, repair, review, and validation. |
 
 ## Needs Human
 

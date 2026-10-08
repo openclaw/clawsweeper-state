@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142789",
+  "mode": "autonomous",
+  "run_id": "37757383043",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37757383043",
+  "head_sha": "dbd42faaac5974121b30866352ac0c3718ce1ed9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142789.md",
+  "published_at": "2026-10-08T10:14:36.027Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142789",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142789",
+  "canonical_pr": null,
+  "summary": "The terminal ownership defect remains source-evident on preflight main. A narrow fix artifact is ready for the executor, but implementation and runtime reproduction are blocked by this read-only host, absent dependencies, and Corepack EROFS. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#142789",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "Repair existing session-qualified admission through the shared owner resolver. Preserve the issue until implementation and required proof complete."
+    },
+    {
+      "target": "#142964",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "Historical evidence and contributor credit only; this closed PR cannot own the active implementation or receive another closure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142789",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142789",
+      "candidate_fix": null,
+      "reason": "The executor can apply this narrow plan on a writable prepared host. Establish the failing production-boundary regression before editing; PR publication remains contingent on reproduction, repair, review, and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
