@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167316",
+  "mode": "autonomous",
+  "run_id": "37806844811",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37806844811",
+  "head_sha": "fb5a0d95b269f412aa185cf4deda1c115a83af69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167316.md",
+  "published_at": "2026-10-08T16:18:23.159Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167316",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167316",
+  "canonical_pr": null,
+  "summary": "The permanent-error retry path remains present at preflight main dc203b5e486d3b931face78556019797dbe3f376. A narrow fix artifact is prepared, but implementation and failing/passing regression runs are blocked by the read-only filesystem. No code or GitHub state changed; the reporter's specific request origin remains unconfirmed.",
+  "actions": [
+    {
+      "target": "#167316",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167316",
+      "candidate_fix": null,
+      "reason": "Retain the issue as canonical and repair the bounded background retry defect. Reproduction must succeed before production edits or PR publication."
+    },
+    {
+      "target": "#112788",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or replacement action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167316",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167316",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow repair to a writable executor. Do not publish until the baseline regression fails for the intended reason and repaired validation passes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
