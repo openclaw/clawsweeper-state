@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-08T02:03:13.178Z",
+  "updated_at": "2026-10-08T02:03:47.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:166283:6047094408:2026-10-07T21:21:06Z:re_review",
-      "comment_id": "6047094408",
-      "comment_version_key": "6047094408:2026-10-07T21:21:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166283#issuecomment-6047094408",
-      "comment_created_at": "2026-10-07T21:21:06Z",
-      "comment_updated_at": "2026-10-07T21:21:06Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166283,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-07T21:22:38.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/w6profile",
-        "head_sha": "f6b8cefbd66552ed0b824557d2f0c2f5d6de131f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146018:5646472200:2026-10-07T21:06:18Z:clawsweeper_needs_human",
       "comment_id": "5646472200",
@@ -33432,6 +33385,39 @@
         "kind": "pull_request",
         "branch": "fix/stop-command-continuations",
         "head_sha": "5323982efa8095488beb1e3b6538660fbbe40666",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166887:6050656115:2026-10-08T02:02:49Z:clawsweeper_needs_human",
+      "comment_id": "6050656115",
+      "comment_version_key": "6050656115:2026-10-08T02:02:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166887#issuecomment-6050656115",
+      "comment_created_at": "2026-10-08T02:02:49Z",
+      "comment_updated_at": "2026-10-08T02:02:49Z",
+      "comment_body_sha256": "b462d3f18dee38e0122c403984d926ff359455a6dd46b7d71f6b02ac9cadff2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete and record exact-head release-branch focused and changed-gate validation, before/after test cost, and applicable standalone/original-shard/sibling qualification; retain the s... (sha=dd3ed510891fe1a02cf6703909cf856aea357f41)",
+      "expected_head_sha": "dd3ed510891fe1a02cf6703909cf856aea357f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-08T02:03:47.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/release-2026.9.9-frv-plugin-settlement-20261008",
+        "head_sha": "dd3ed510891fe1a02cf6703909cf856aea357f41",
         "cluster_id": null,
         "job_path": null
       }
