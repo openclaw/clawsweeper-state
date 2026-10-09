@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T21:59:46.983Z",
+  "updated_at": "2026-10-09T21:59:49.894Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:157500:5943264844:2026-10-02T00:26:41Z:re_review",
-      "comment_id": "5943264844",
-      "comment_version_key": "5943264844:2026-10-02T00:26:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157500#issuecomment-5943264844",
-      "comment_created_at": "2026-10-02T00:26:41Z",
-      "comment_updated_at": "2026-10-02T00:26:41Z",
-      "comment_body_sha256": "52c568efdbf29e98d6af1d308e1f16ab07f0e50995cb76e864d8f3fb52d527e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157500,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T17:16:20.617Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galiniliev/teamclaw-github-proxy-binding",
-        "head_sha": "92b0ce026949ab81f037f42117e874c58023b729",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157500:5833145824:2026-10-09T17:15:00Z:clawsweeper_needs_human",
       "comment_id": "5833145824",
@@ -31865,6 +31818,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167975:6089807371:2026-10-09T21:58:44Z:clawsweeper_auto_repair",
+      "comment_id": "6089807371",
+      "comment_version_key": "6089807371:2026-10-09T21:58:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167975#issuecomment-6089807371",
+      "comment_created_at": "2026-10-09T21:47:28Z",
+      "comment_updated_at": "2026-10-09T21:58:44Z",
+      "comment_body_sha256": "579916c1ad46583cf66802d8c9e6202e061df4eefe70b270c76e842d9ef010c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167975,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=de076ec6362b073c90b0779fd91ca7411cac0083)",
+      "expected_head_sha": "de076ec6362b073c90b0779fd91ca7411cac0083",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-09T21:59:49.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chatgpt-unlisted-dual-route",
+        "head_sha": "de076ec6362b073c90b0779fd91ca7411cac0083",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
