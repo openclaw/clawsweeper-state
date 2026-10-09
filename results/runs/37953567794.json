@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37953567794",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37953567794",
+  "head_sha": "c66ad5c3b65f0cf9d0defff0f338944b1a31d08b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-09T15:46:42.952Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "The connection-deadline defect remains on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix plan is ready; implementation and PR readiness are blocked by the read-only checkout, unavailable ESP-IDF and hardware, and unavailable access to the stopped run. No code or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Preserve the existing attempt deadline through transport startup without changing parsing, authentication, persistence, or public APIs."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or runtime isolation work belongs in this fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The source finding supports a focused repair without a product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Before PR creation or update, recover any stopped-run work, implement in a writable checkout, and complete the required regression and hardware qualification. Reuse the designated branch and maintain one PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
