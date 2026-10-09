@@ -2,12 +2,12 @@
 repo: "steipete/oracle"
 cluster_id: "issue-steipete-oracle-549"
 mode: "autonomous"
-run_id: "37583264579"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37583264579"
-head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
+run_id: "37879934552"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37879934552"
+head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-07T06:50:09.616Z"
+published_at: "2026-10-09T03:39:40.074Z"
 canonical: "https://github.com/steipete/oracle/issues/549"
 canonical_issue: "https://github.com/steipete/oracle/issues/549"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/oracle
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37583264579](https://github.com/openclaw/clawsweeper/actions/runs/37583264579)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37879934552](https://github.com/openclaw/clawsweeper/actions/runs/37879934552)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/oracle/issues/549
 
 ## Summary
 
-Verified #549 on preflight main ad214359fb91a31a338732530882a30c5c4a6001. Blob-backed generated images are rejected by detection and saving, and detached images cannot complete the response wait. A narrow implementation artifact is ready for the executor. No files or GitHub state were changed; full tests were not run.
+#549 remains reproducible from source on main 35d8022f370dc89e962637e4e88d3d8d35618f3d. Plan one narrow implementation PR for prompt-scoped blob-image detection, completion, and saving. Implementation and repository validation require the writable executor; this checkout is read-only and dependencies are absent.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Verified #549 on preflight main ad214359fb91a31a338732530882a30c5c4a6001. Blob-b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #517 | keep_closed | skipped | related | Historical layout context; no remaining action in this cluster. |
-| #525 | route_security | planned | security_sensitive | Quarantine this exact historical ref for central OpenClaw security handling without mutation. The independent image-capture repair does not require changing that boundary. |
-| #536 | keep_related | planned | related | Preserve kiyo-e's separate localization PR. It does not own #549, and this job prohibits merging. |
-| #548 | keep_related | planned | related | Keep the separate recovery-lifecycle issue open and outside this implementation. |
-| #549 | fix_needed | planned | canonical | Existing image-generation behavior remains broken on current main. Implement one focused PR on clawsweeper/issue-steipete-oracle-549; keep the issue open. |
-| cluster:issue-steipete-oracle-549 | build_fix_artifact | planned |  | The defect is narrow, non-security, and authorized for an implementation PR. The fix artifact supplies the concrete repair and validation path. |
+| #549 | fix_needed | planned | canonical | The reported ordinary browser regression is still present and has a narrow implementation path. |
+| #517 | keep_closed | skipped | related | Historical layout context only. |
+| #525 | route_security | planned | security_sensitive | Route this exact historical item to central OpenClaw security handling without public mutation; it does not block unrelated #549 work. |
+| #536 | keep_closed | skipped | related | Preserve the landed localization repair as historical context. |
+| #548 | keep_independent | planned | independent | Leave open for its separate workflow; exclude recovery cleanup from this implementation. |
+| cluster:issue-steipete-oracle-549 | build_fix_artifact | planned | canonical | Provide the executor with a concrete narrow repair plan. |
 
 ## Needs Human
 
