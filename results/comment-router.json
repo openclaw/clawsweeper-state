@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T00:08:23.337Z",
+  "updated_at": "2026-10-09T00:08:35.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167362:6066507612:2026-10-08T18:32:33Z:re_review",
-      "comment_id": "6066507612",
-      "comment_version_key": "6066507612:2026-10-08T18:32:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167362#issuecomment-6066507612",
-      "comment_created_at": "2026-10-08T18:32:33Z",
-      "comment_updated_at": "2026-10-08T18:32:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167362,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T18:33:44.353Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-async-media-wait-card",
-        "head_sha": "6a75e695f7b9f77a77e197d78ceb6bf53c3cf68d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167393:6066531470:2026-10-08T18:33:57Z:clawsweeper_needs_human",
       "comment_id": "6066531470",
@@ -32964,6 +32917,39 @@
         "kind": "pull_request",
         "branch": "dbasync/dslstate-1",
         "head_sha": "8e01625010e8268710820187f7c03af22789ae82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163357:5947350026:2026-10-09T00:07:29Z:clawsweeper_needs_human",
+      "comment_id": "5947350026",
+      "comment_version_key": "5947350026:2026-10-09T00:07:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163357#issuecomment-5947350026",
+      "comment_created_at": "2026-10-02T07:25:57Z",
+      "comment_updated_at": "2026-10-09T00:07:29Z",
+      "comment_body_sha256": "379fe3d0f91c16ae8cfdb8c5780ba5865390fcd3f7008d77b778d5ff8482df3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Obtain independent approval from openclaw/openclaw-secops for the changed Security Review enforcement scripts. (sha=36054f384ebdf466f8873d49cdbffee56a37b142)",
+      "expected_head_sha": "36054f384ebdf466f8873d49cdbffee56a37b142",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T00:08:35.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/security-review-notice-write-recovery",
+        "head_sha": "36054f384ebdf466f8873d49cdbffee56a37b142",
         "cluster_id": null,
         "job_path": null
       }
