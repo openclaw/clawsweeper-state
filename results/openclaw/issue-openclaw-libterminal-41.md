@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37685761735"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37685761735"
-head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
+run_id: "37982290628"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37982290628"
+head_sha: "2ecc4142c07a148ee423e6c6eb32713d9db7ba45"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T20:59:23.577Z"
+published_at: "2026-10-09T19:47:49.521Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 2
 ---
 
 # issue-openclaw-libterminal-41
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37685761735](https://github.com/openclaw/clawsweeper/actions/runs/37685761735)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37982290628](https://github.com/openclaw/clawsweeper/actions/runs/37982290628)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation is blocked by the issue's explicit upstream publication gates. Hydrated October 7 evidence reports both gates unmet, and no qualifying stable wrapper was identified. Keep #41 open; no code changes, fix artifact, or PR. Security-sensitive upstream context remains evidence only; routing is withheld because the correct upstream items and their live timestamps were not hydrated.
+Implementation remains blocked by the issue's explicit upstream publication prerequisites. Keep #41 open; no code changes or implementation PR proposed. Misqualified upstream references require corrected hydration before any routing or classification action.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Implementation is blocked by the issue's explicit upstream publication gates. Hy
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,12 @@ Implementation is blocked by the issue's explicit upstream publication gates. Hy
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | A published dependency satisfying the requested contract is a prerequisite, not an implementation choice. Resume only after both publications are verified; no maintainer decision is currently required. |
-| #77 | keep_closed | skipped | related | Historical preparation does not satisfy the dependency-adoption request. No closure or merge action is applicable. |
-| #169 | keep_related | skipped | related | Retain the upstream link as related context only. This skipped action does not establish that openclaw/libterminal#169 exists or classify its unavailable contents. Security routing cannot safely be repaired from these artifacts: correct the repository identity and hydrate coder/ghostty-web#169 before routing that exact upstream item to central OpenClaw security handling. No timestamp is invented and no GitHub action is authorized. |
-| #182 | keep_related | skipped | related | Retain the upstream link as related context only. This skipped action does not establish that openclaw/libterminal#182 exists or classify its unavailable contents. Security routing cannot safely be repaired from these artifacts: correct the repository identity and hydrate coder/ghostty-web#182 before routing that exact upstream item to central OpenClaw security handling. No timestamp is invented and no GitHub action is authorized. This does not reclassify #41 as security work. |
+| #41 | keep_canonical | planned | canonical | No qualifying stable dependency is established. An upgrade, prerelease adoption, or private ABI patch would violate the product request. Resume only after both publication prerequisites are verified. |
+| #77 | keep_closed | skipped | related | Historical preparatory work does not satisfy runtime adoption. No closure or additional implementation action applies. |
+| #169 | needs_human | blocked | needs_human | The unqualified target cannot safely identify the upstream security-routing subject. Resolve the repository mismatch and hydrate the exact upstream PR before routing; preserve the prior security concern for central handling without acting on openclaw/libterminal #169. This identity blocker does not change #41's publication hold. |
+| #182 | needs_human | blocked | needs_human | Resolve the repository mismatch and hydrate the exact upstream PR before issuing a per-item classification. Do not invent target metadata or apply an action to openclaw/libterminal #182. A linked release-candidate proposal does not establish the required stable wrapper publication. |
 
 ## Needs Human
 
-- none
+- #169: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/169 and obtain its hydrated identity and updated_at before central security routing; the local preflight lookup returned HTTP 404.
+- #182: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/182 and obtain its hydrated identity and updated_at before classification; the local preflight lookup returned HTTP 404.
