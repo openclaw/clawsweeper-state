@@ -1,0 +1,125 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-553",
+  "mode": "autonomous",
+  "run_id": "37962115193",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37962115193",
+  "head_sha": "c3b1bcf908f6f153e19ca7750906fca0dbba04f9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-553.md",
+  "published_at": "2026-10-09T16:57:23.967Z",
+  "canonical": "https://github.com/steipete/oracle/issues/553",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/553",
+  "canonical_pr": null,
+  "summary": "Verified #553 on main 35d8022f370dc89e962637e4e88d3d8d35618f3d and prepared a focused fix plan. Implementation and branch validation are blocked by the read-only filesystem and unavailable dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#553",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "The explicit MCP failure remains reproducible from current source and supports a narrow implementation."
+    },
+    {
+      "target": "#512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Preserve this separate default-policy request."
+    },
+    {
+      "target": "#539",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "The effort-control report has distinct reproduction and validation requirements."
+    },
+    {
+      "target": "#552",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Useful overlapping contributor work should remain open; this issue lane does not replace or finalize it."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-553",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "The concrete plan can be implemented by the executor in a writable checkout."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-553",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "A writable execution environment with installed dependencies must implement, review, and validate the branch before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation_script_missing: required pnpm check:changed is unavailable in target checkout",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#553",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
