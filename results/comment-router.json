@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T10:01:02.191Z",
+  "updated_at": "2026-10-09T10:01:05.720Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3907:5976646881:2026-10-09T04:06:19Z:clawsweeper_needs_human",
-      "comment_id": "5976646881",
-      "comment_version_key": "5976646881:2026-10-09T04:06:19Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3907#issuecomment-5976646881",
-      "comment_created_at": "2026-10-04T04:40:57Z",
-      "comment_updated_at": "2026-10-09T04:06:19Z",
-      "comment_body_sha256": "b991195bad8b631078863ef552eb11ee3fd6d2f7ba9cbac376897d6330e9af4c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3907,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=33b90e93f45d4f33c402814de577ef5612946d25)",
-      "expected_head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T04:07:19.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hide-private-packages-on-publisher-pages",
-        "head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167597:6074002335:2026-10-09T04:06:45Z:clawsweeper_needs_human",
       "comment_id": "6074002335",
@@ -33289,6 +33256,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134757:6078672592:2026-10-09T10:00:03Z:re_review",
+      "comment_id": "6078672592",
+      "comment_version_key": "6078672592:2026-10-09T10:00:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134757#issuecomment-6078672592",
+      "comment_created_at": "2026-10-09T10:00:03Z",
+      "comment_updated_at": "2026-10-09T10:00:03Z",
+      "comment_body_sha256": "02ad19c7a4cf6c6d3d1a6de09c6a734d46cfacd11c65c613bef01e604af248b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134757,
+      "author": "itsHugoBao",
+      "author_id": 41722971,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T10:01:04.186Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-app-translocation-copy-hang",
+        "head_sha": "631007cf167084efdf07bb038a18fc07dfef1195",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
