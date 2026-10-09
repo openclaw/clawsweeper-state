@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37882024976"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37882024976"
-head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
-workflow_conclusion: "success"
+run_id: "37886773814"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37886773814"
+head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T04:06:04.711Z"
+published_at: "2026-10-09T05:06:42.646Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37882024976](https://github.com/openclaw/clawsweeper/actions/runs/37882024976)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37886773814](https://github.com/openclaw/clawsweeper/actions/runs/37886773814)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository-only repair is established. Current main still requires an authoritative Blacksmith Testbox-to-workflow association, which the hydrated triage discussion says is unavailable before worker registration. Keep the issue open pending that provider capability. No code changes, PR, or GitHub mutations were made.
+No safe implementation PR is currently viable. The supplied main revision still lacks authoritative pre-worker dispatch evidence, and the hydrated triage discussion explicitly requires a supported Blacksmith capability before repository integration. No code or GitHub changes were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ No safe repository-only repair is established. Current main still requires an au
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #2708 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,12 @@ No safe repository-only repair is established. Current main still requires an au
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | canonical | Implementation depends on a supported provider binding retained through pre-worker cancellation or admission failure. No such capability is established by the supplied evidence. The job's stop-without-PR guardrail applies; no executable fix artifact is warranted. |
-| #2669 | keep_closed | skipped | related | Historical context only; no closure action. |
-| #2670 | keep_closed | skipped | related | Useful historical repair with a distinct scope. |
-| #2682 | keep_closed | skipped | related | Historical context only; no closure action. |
-| #2683 | keep_closed | skipped | related | The merged observation capability does not resolve the provider's missing pre-worker association. |
+| #2708 | keep_canonical | planned | canonical | Distinct unresolved provider capability gap; the merged settlement repairs do not cover pre-worker dispatch association. |
+| #2669 | keep_closed | skipped | related | Historical evidence only. |
+| #2670 | keep_closed | skipped | related | Merged settlement protection must be preserved; it does not supply missing dispatch association. |
+| #2682 | keep_closed | skipped | related | Historical evidence only. |
+| #2683 | keep_closed | skipped | related | Merged metadata support does not recover an association absent from native status. |
+| cluster:issue-openclaw-crabbox-2708 | keep_related | blocked | related | Resume implementation only when Blacksmith exposes a supported exact request-to-run association and terminal outcome that survive pre-worker cancellation/admission failure. The available evidence cannot support a narrow repository patch satisfying the issue. |
 
 ## Needs Human
 
