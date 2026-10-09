@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:58:25.503Z",
+  "updated_at": "2026-10-09T06:58:44.864Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167559:6072511915:2026-10-09T01:40:39Z:clawsweeper_needs_human",
-      "comment_id": "6072511915",
-      "comment_version_key": "6072511915:2026-10-09T01:40:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167559#issuecomment-6072511915",
-      "comment_created_at": "2026-10-09T01:40:39Z",
-      "comment_updated_at": "2026-10-09T01:40:39Z",
-      "comment_body_sha256": "404fd9a716337b2488643d1fb0c35b3f409f8a874c64cbe6a5a1d9dab4eb42a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167559,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The contributor exercised the shared dispatcher through the public SDK and observed successful after-fix receipts, but channel acknowledgements were synthetic. Provide redacted logs o... (sha=fbda703db90c3d4481ffa07e2ba9cd0a48443630)",
-      "expected_head_sha": "fbda703db90c3d4481ffa07e2ba9cd0a48443630",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T01:41:39.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-reply-settlement-after-idle-error",
-        "head_sha": "fbda703db90c3d4481ffa07e2ba9cd0a48443630",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167538:6071790018:2026-10-09T01:41:01Z:clawsweeper_needs_human",
       "comment_id": "6071790018",
@@ -33047,6 +33014,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164877:6076055090:2026-10-09T06:57:45Z:re_review",
+      "comment_id": "6076055090",
+      "comment_version_key": "6076055090:2026-10-09T06:57:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164877#issuecomment-6076055090",
+      "comment_created_at": "2026-10-09T06:57:45Z",
+      "comment_updated_at": "2026-10-09T06:57:45Z",
+      "comment_body_sha256": "82770183616b9a5b3426b910fcb329ba0898f364ec794201a7085457fe1e84f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164877,
+      "author": "shannon0430",
+      "author_id": 258282406,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T06:58:43.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-slack-implicit-thread-silence",
+        "head_sha": "7b7d0b4ac88c73f422693d48bc14e60fbb3099ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
