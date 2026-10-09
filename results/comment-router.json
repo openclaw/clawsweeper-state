@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T17:31:38.886Z",
+  "updated_at": "2026-10-09T17:33:45.832Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1799:6078949218:2026-10-09T10:19:17Z:re_review",
-      "comment_id": "6078949218",
-      "comment_version_key": "6078949218:2026-10-09T10:19:17Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1799#issuecomment-6078949218",
-      "comment_created_at": "2026-10-09T10:19:17Z",
-      "comment_updated_at": "2026-10-09T10:19:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1799,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T10:20:11.276Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup-r7-comment-router",
-        "head_sha": "e3649030c364075baadd51db6d0b2cabbaa3682b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1853:6078953476:2026-10-09T10:19:35Z:clawsweeper_needs_human",
       "comment_id": "6078953476",
@@ -33184,6 +33137,39 @@
         "kind": "pull_request",
         "branch": "fix/immutable-tool-approval",
         "head_sha": "7fc27db6797f98db73c6bd68edb1e4e1da282ffd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167879:6085818947:2026-10-09T17:32:32Z:clawsweeper_needs_human",
+      "comment_id": "6085818947",
+      "comment_version_key": "6085818947:2026-10-09T17:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167879#issuecomment-6085818947",
+      "comment_created_at": "2026-10-09T17:22:37Z",
+      "comment_updated_at": "2026-10-09T17:32:32Z",
+      "comment_body_sha256": "bbd9322b77c4f7f218ebf9b6adfc6ad9e4de0eef5076500aa7a24d881c8709ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The supplied Gateway harness replaces provider transport and embedded execution, while the inspected screenshots belong to an earlier PR. Show an allow...; Review finding: [medium] Retained authority lacks final-effect revocation evidence — src/gateway/talk/client-gateway-control.ts:86 (sha=cc6136c7562d9cb1a8d2fc5a4179c96137b1c657)",
+      "expected_head_sha": "cc6136c7562d9cb1a8d2fc5a4179c96137b1c657",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T17:33:45.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "voice-caller-lifetime-20261009",
+        "head_sha": "cc6136c7562d9cb1a8d2fc5a4179c96137b1c657",
         "cluster_id": null,
         "job_path": null
       }
