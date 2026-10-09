@@ -1,6 +1,51 @@
 {
-  "updated_at": "2026-10-09T18:28:37.947Z",
+  "updated_at": "2026-10-09T18:28:02.254Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158068:5830629880:2026-09-25T10:08:33Z:re_review",
+      "comment_id": "5830629880",
+      "comment_version_key": "5830629880:2026-09-25T10:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/158068#issuecomment-5830629880",
+      "comment_created_at": "2026-09-25T10:08:33Z",
+      "comment_updated_at": "2026-09-25T10:08:33Z",
+      "comment_body_sha256": "afa14030fa6ca9025c3ee5660fb94d03d2bca8cfe719bce3292346734c7fc38a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158068,
+      "author": "zozo123",
+      "author_id": 553010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T11:31:30.068Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167780:6079642193:2026-10-09T11:30:37Z:clawsweeper_needs_human",
       "comment_id": "6079642193",
@@ -32389,39 +32434,6 @@
         "kind": "pull_request",
         "branch": "fix/embedded-context-window-provenance",
         "head_sha": "220f6122f8042ec29a77001d3b2a8690f53c1859",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1756:6047169615:2026-10-09T18:27:42Z:clawsweeper_needs_human",
-      "comment_id": "6047169615",
-      "comment_version_key": "6047169615:2026-10-09T18:27:42Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1756#issuecomment-6047169615",
-      "comment_created_at": "2026-10-07T21:26:04Z",
-      "comment_updated_at": "2026-10-09T18:27:42Z",
-      "comment_body_sha256": "103af541618acebe1b623b712cbecd66e917d0280b2ddb7a8e448ce69af4a9a7",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1756,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Resolve the GitHub-reported conflicts against current main, preserving its profile-owned prompt routing and product/provenance review rules. (sha=1db94df2cac3715b595a0be05428bd129c74902a)",
-      "expected_head_sha": "1db94df2cac3715b595a0be05428bd129c74902a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T18:28:37.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/holistic-pr-review",
-        "head_sha": "1db94df2cac3715b595a0be05428bd129c74902a",
         "cluster_id": null,
         "job_path": null
       }
