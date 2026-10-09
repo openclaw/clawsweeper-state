@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:48:32.737Z",
+  "updated_at": "2026-10-09T06:48:39.687Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154952:5764103582:2026-10-09T01:05:04Z:clawsweeper_needs_human",
-      "comment_id": "5764103582",
-      "comment_version_key": "5764103582:2026-10-09T01:05:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154952#issuecomment-5764103582",
-      "comment_created_at": "2026-09-21T16:43:08Z",
-      "comment_updated_at": "2026-10-09T01:05:04Z",
-      "comment_body_sha256": "60ba810a765bdd9fc4e2ea1c2bafac4620b082040946618f3b3c12a0554c13fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154952,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The changed SQLite inventory and status readers are covered by local regression tests, but the supplied evidence shows no after-fix real replacement or restart-recovery result. The co...; Review finding: [P1] Use the existing replacement snapshot owner — src/config/sessions/session-accessor.sqlite-entry-inventory.ts:47-49 - [P2] Keep unrelated participant corruptio... (sha=2ddc0bc129008b27e4c402f5cd6908fc4a5fed64)",
-      "expected_head_sha": "2ddc0bc129008b27e4c402f5cd6908fc4a5fed64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T01:30:02.160Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr3-sqlite-participant-projection",
-        "head_sha": "2ddc0bc129008b27e4c402f5cd6908fc4a5fed64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158880:5846282304:2026-10-09T01:18:12Z:clawsweeper_needs_human",
       "comment_id": "5846282304",
@@ -33035,6 +33002,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167657:6075896846:2026-10-09T06:47:13Z:re_review",
+      "comment_id": "6075896846",
+      "comment_version_key": "6075896846:2026-10-09T06:47:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/167657#issuecomment-6075896846",
+      "comment_created_at": "2026-10-09T06:47:13Z",
+      "comment_updated_at": "2026-10-09T06:47:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167657,
+      "author": "OckleFrost",
+      "author_id": 263531959,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T06:48:38.423Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
