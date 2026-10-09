@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37891313912"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37891313912"
-head_sha: "8347e80179015163c469491e47badb09f31b7157"
+run_id: "37894856580"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37894856580"
+head_sha: "cf34fa9269dcbc53a787a926a9b991f33af2087c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T06:04:48.916Z"
+published_at: "2026-10-09T06:46:04.887Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 6
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37891313912](https://github.com/openclaw/clawsweeper/actions/runs/37891313912)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37894856580](https://github.com/openclaw/clawsweeper/actions/runs/37894856580)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow fix artifact. Local implementation and validation are blocked by the read-only environment, missing dependencies, and unavailable Bun. No GitHub mutations were performed.
+Verified the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow repair artifact. Implementation and PR creation remain blocked by the read-only checkout, unavailable Bun/dependencies, and failed GitHub DNS needed to reconcile the existing branch. No code or GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,9 @@ Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | A focused transport identity, success classification, and retry repair remains necessary. |
-| #118 | keep_closed | skipped | related | Historical context only. |
-| #163 | keep_closed | skipped | related | Historical context only. |
-| #175 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The repair is narrow and does not require a product decision. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Requires a writable executor with the pinned Bun toolchain, dependencies, and isolated live-test access. |
+| #233 | fix_needed | planned | canonical | This remains a focused expansion-correctness bug with a clear recovery path and no product decision required. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | A narrow executor-ready plan remains appropriate despite local implementation blockers. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Before PR creation, the executor must reconcile the existing attempt and branch, implement in a writable checkout, pass validation, and capture the requested redacted persisted-state proof. Reuse the designated branch and any existing PR. |
 
 ## Needs Human
 
