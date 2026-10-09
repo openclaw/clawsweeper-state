@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-167"
 mode: "autonomous"
-run_id: "37890501881"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37890501881"
+run_id: "37891184664"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37891184664"
 head_sha: "8347e80179015163c469491e47badb09f31b7157"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-10-09T05:54:55.574Z"
+result_status: "blocked"
+published_at: "2026-10-09T06:03:48.691Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37890501881](https://github.com/openclaw/clawsweeper/actions/runs/37890501881)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37891184664](https://github.com/openclaw/clawsweeper/actions/runs/37891184664)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/167
 
 ## Summary
 
-Verified the native-staging copy path remains on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Plan a focused byte-stream staging fix and regression coverage. Local implementation and runtime validation are blocked by the read-only host; no files or GitHub state changed. The later preload failure remains unproven.
+The native-staging repair remains viable on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation and required Windows proof are blocked by this read-only Linux environment. No files or GitHub state changed; a narrow fix artifact is provided.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Verified the native-staging copy path remains on preflight main 4215593cd5abd4cd
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167 | fix_needed | planned | canonical | A narrow producer-side staging repair is supported by current source. Leave the issue open and avoid changing preload behavior without runtime evidence. |
-| #75 | keep_closed | skipped | related | Merged context only; preserve the existing staging architecture and contributor credit. |
-| #86 | keep_closed | skipped | related | Historical preload work remains intact; no replacement or closure is needed. |
-| #160826 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the exact reference before classifying it. Keep this item non-mutating; its missing metadata does not block the supported #167 fix. |
-| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned | canonical | Produce one implementation PR for the supported staging defect; address the review's unresolved preload claim through validation rather than speculative changes. |
+| #167 | fix_needed | planned | canonical | Repair staging first. Keep the issue open and use Related unless installed-package tracing proves the complete reported failure resolved. |
+| #75 | keep_closed | skipped | related | Preserve the existing owner and contributor work; no closeout action applies. |
+| #86 | keep_closed | skipped | related | No mutation or additional preload implementation is justified by the available evidence. |
+| #160826 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the exact linked item before classifying it. The provided artifacts cannot safely supply target_kind or target_updated_at; do not infer its state or coverage. This blocker applies only to #160826. |
+| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned |  | Artifact creation is complete. Implementation and PR publication must wait for a writable checkout and the required disposable Windows validation environment. |
 
 ## Needs Human
 
-- #160826: resolve the reference's repository identity and hydrate its kind and updated_at. The same-repository preflight lookup returned HTTP 404, kind unknown, state unavailable, and updated_at null; the separately linked upstream issue is unhydrated. No action on this reference is authorized by inferred metadata.
+- #160826: Resolve whether the linked item belongs to openclaw/openclaw or openclaw/openclaw-windows-packaging and hydrate that exact item. Packaging-repository hydration returned HTTP 404; the preflight records kind unknown, state unavailable, and updated_at null, while the cross-repository URL was not hydrated. Target kind, timestamp, and classification cannot be safely inferred.

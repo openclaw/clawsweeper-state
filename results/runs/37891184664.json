@@ -1,0 +1,85 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37891184664",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37891184664",
+  "head_sha": "8347e80179015163c469491e47badb09f31b7157",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T06:03:48.691Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "The native-staging repair remains viable on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation and required Windows proof are blocked by this read-only Linux environment. No files or GitHub state changed; a narrow fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair staging first. Keep the issue open and use Related unless installed-package tracing proves the complete reported failure resolved."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing owner and contributor work; no closeout action applies."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No mutation or additional preload implementation is justified by the available evidence."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact linked item before classifying it. The provided artifacts cannot safely supply target_kind or target_updated_at; do not infer its state or coverage. This blocker applies only to #160826."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Artifact creation is complete. Implementation and PR publication must wait for a writable checkout and the required disposable Windows validation environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "needs_human": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: Resolve whether the linked item belongs to openclaw/openclaw or openclaw/openclaw-windows-packaging and hydrate that exact item. Packaging-repository hydration returned HTTP 404; the preflight records kind unknown, state unavailable, and updated_at null, while the cross-repository URL was not hydrated. Target kind, timestamp, and classification cannot be safely inferred."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
