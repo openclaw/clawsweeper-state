@@ -2,12 +2,12 @@
 repo: "openclaw/acpx"
 cluster_id: "issue-openclaw-acpx-808"
 mode: "autonomous"
-run_id: "37113087241"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37113087241"
-head_sha: "15a53b4f065fd96d4ceeff86cc47384c9902e153"
+run_id: "38000993296"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38000993296"
+head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-03T09:32:05.405Z"
+published_at: "2026-10-09T22:50:02.079Z"
 canonical: "https://github.com/openclaw/acpx/issues/808"
 canonical_issue: "https://github.com/openclaw/acpx/issues/808"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-acpx-808
 
 Repo: openclaw/acpx
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37113087241](https://github.com/openclaw/clawsweeper/actions/runs/37113087241)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38000993296](https://github.com/openclaw/clawsweeper/actions/runs/38000993296)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/acpx/issues/808
 
 ## Summary
 
-Implementation blocked by insufficient reproduction evidence. Inspected supplied current main; no confirmed acpx root cause or safe narrow patch was established. No code or GitHub changes made.
+Implementation is blocked by an unlocalized failure: the resolved cursor-composer command, environment versions, and failure trace are missing. No acpx root cause or focused repair is established. Keep the issue open and request reproduction details; no fix artifact or PR is warranted yet.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Implementation blocked by insufficient reproduction evidence. Inspected supplied
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Implementation blocked by insufficient reproduction evidence. Inspected supplied
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #808 | keep_canonical | planned | canonical | Keep the report open. The sandboxed versus unsandboxed comparison does not establish whether acpx, the adapter, or an environmental restriction caused the failure; no boundary-bypass claim is present. |
-| cluster:issue-openclaw-acpx-808 | needs_human | blocked | needs_human | Before implementation, obtain the resolved cursor-composer command and relevant configuration, acpx/adapter versions, platform, and a redacted verbose trace identifying the failed ACP method or denied operation. Without those details, a fix artifact would prescribe speculative changes. This action requests reproduction evidence only and authorizes no mutation. |
+| #808 | comment | planned | canonical | The job requires stopping without a PR when the request is underspecified. A specific failing request or denied operation is needed before selecting an acpx patch. |
+| #858 | keep_closed | skipped | related | Historical related evidence; neither a mutation target nor a proven fix for #808. |
 
 ## Needs Human
 
-- For #808, obtain the reporter's resolved cursor-composer command and relevant configuration, acpx/adapter versions, platform, and a redacted verbose trace identifying the failed ACP method or denied operation. The supplied artifacts do not establish an acpx root cause or a safe narrow patch.
+- none
