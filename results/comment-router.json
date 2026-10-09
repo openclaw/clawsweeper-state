@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T05:13:20.821Z",
+  "updated_at": "2026-10-09T05:13:34.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143115:5602446763:2026-10-08T23:46:36Z:clawsweeper_needs_human",
-      "comment_id": "5602446763",
-      "comment_version_key": "5602446763:2026-10-08T23:46:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143115#issuecomment-5602446763",
-      "comment_created_at": "2026-09-09T13:14:21Z",
-      "comment_updated_at": "2026-10-08T23:46:36Z",
-      "comment_body_sha256": "e452a36f1cfb079a8efbe259ad967040066de170756d2dd0553cb6a3ae39ea9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The changed attempt and runner exits are covered by mocked candidate rejections with real diagnostic capture. Available Gateway interruption traces exercise caller_signal_aborted inst... (sha=0deca277ec36f609174b97027a7c6630905b9360)",
-      "expected_head_sha": "0deca277ec36f609174b97027a7c6630905b9360",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T23:57:38.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/name-remaining-fallback-chain-stops",
-        "head_sha": "0deca277ec36f609174b97027a7c6630905b9360",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149187:5682656387:2026-10-08T23:45:51Z:clawsweeper_needs_human",
       "comment_id": "5682656387",
@@ -33095,6 +33062,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167585:6074740060:2026-10-09T05:12:39Z:re_review",
+      "comment_id": "6074740060",
+      "comment_version_key": "6074740060:2026-10-09T05:12:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6074740060",
+      "comment_created_at": "2026-10-09T05:12:39Z",
+      "comment_updated_at": "2026-10-09T05:12:39Z",
+      "comment_body_sha256": "5a078767dd55c6dd7b54ee23cb50a777590162f348695d4fad742736491d2f40",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167585,
+      "author": "Linux2010",
+      "author_id": 35169750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T05:13:33.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167365-effective-tool-inventory",
+        "head_sha": "f2396fc70cfdfc902255a3c960c8321561c02269",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
