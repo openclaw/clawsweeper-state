@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37937540600",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37937540600",
+  "head_sha": "11fdbcac1012c7c58c56efd5babadddf75c00e88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T13:37:22.520Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified the narrow encrypted-source staging defect remains at supplied main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. A two-file repair artifact is ready for the executor. Implementation and validation are blocked by this read-only Linux host; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair byte copying within the existing staging owner; no security-boundary or product-direction decision is needed."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context does not establish a fix for encrypted-source copying."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as historical evidence without assuming it resolves the reported Koffi failure."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No action on this closed context PR."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate live metadata before classifying or acting on this ref. This unavailable context does not block the narrow staging repair for #167."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The repair remains viable; the executor needs a writable checkout and disposable Windows validation environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Implement and validate the artifact in a suitable executor before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "needs_human": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826 only: packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null, while scope separately links https://github.com/openclaw/openclaw/issues/160826 without hydration. Resolve the intended repository and obtain live metadata before any classification or action on this ref; #167's repair path remains independent."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
