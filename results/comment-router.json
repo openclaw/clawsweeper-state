@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T14:12:21.746Z",
+  "updated_at": "2026-10-09T14:13:03.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166491:6032846378:2026-10-09T07:37:05Z:clawsweeper_needs_human",
-      "comment_id": "6032846378",
-      "comment_version_key": "6032846378:2026-10-09T07:37:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166491#issuecomment-6032846378",
-      "comment_created_at": "2026-10-07T07:07:42Z",
-      "comment_updated_at": "2026-10-09T07:37:05Z",
-      "comment_body_sha256": "991399c5f83afbb92b48d813ffe1fd294737e28fa067e9ad3ef2166451496e53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the inspected screenshots show the earlier saved-value conversion and deterministic vault row, but do not exercise the revised config.vaultSecret path....; Review finding: [P1] Carry requester authority into both persistence boundaries — src/gateway/server-methods/config.ts:991-995 - [P1] Stage vault-bound plaintext outside the autos... (sha=343641dfbb813d71cb54f16a023a0b9122986bf9)",
-      "expected_head_sha": "343641dfbb813d71cb54f16a023a0b9122986bf9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T07:38:55.692Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr/pr-3-vault-secret",
-        "head_sha": "343641dfbb813d71cb54f16a023a0b9122986bf9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166993:6053434782:2026-10-08T07:33:09Z:clawsweeper_needs_human",
       "comment_id": "6053434782",
@@ -33211,6 +33178,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:1887:6082642455:2026-10-09T14:12:02Z:re_review",
+      "comment_id": "6082642455",
+      "comment_version_key": "6082642455:2026-10-09T14:12:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1887#issuecomment-6082642455",
+      "comment_created_at": "2026-10-09T14:12:02Z",
+      "comment_updated_at": "2026-10-09T14:12:02Z",
+      "comment_body_sha256": "bf648952a5721f9343455845f13bab6781b501a7292120210e10b0fcef166560",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1887,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T14:13:02.025Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/oce-oct09-sequential-4",
+        "head_sha": "2fb3111ca43b29ceb91fe9f5e4c095b6a623e38e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
