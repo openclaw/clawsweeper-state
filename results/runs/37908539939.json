@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37908539939",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37908539939",
+  "head_sha": "ef0a6bf91f8bb45af0fcdb3691c34eb46b58faad",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-09T09:05:59.209Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix remains viable. Implementation and required runtime proof are blocked by the read-only workspace, unavailable ESP-IDF tooling, and absent attached serial hardware. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with distinct remaining investigation; no closure action is valid."
+    },
+    {
+      "target": "#67",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Preserve the active deadline during transport startup while retaining terminal cleanup."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "A concrete three-file repair plan is available despite local execution blockers."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The executor must implement and complete the required proof before creating or updating the single PR branch."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

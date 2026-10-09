@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37877602263"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37877602263"
-head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
+run_id: "37908539939"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37908539939"
+head_sha: "ef0a6bf91f8bb45af0fcdb3691c34eb46b58faad"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-10-09T03:08:40.114Z"
+result_status: "blocked"
+published_at: "2026-10-09T09:05:59.209Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37877602263](https://github.com/openclaw/clawsweeper/actions/runs/37877602263)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37908539939](https://github.com/openclaw/clawsweeper/actions/runs/37908539939)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A focused transport fix and regression tests are planned. Local implementation and validation are blocked by this session's read-only filesystem and absent ESP-IDF toolchain; no code or GitHub mutations occurred.
+Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix remains viable. Implementation and required runtime proof are blocked by the read-only workspace, unavailable ESP-IDF tooling, and absent attached serial hardware. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | The existing timeout is disabled by transport initialization. Preserving its timestamp is a narrow recovery fix without changing authentication or reconnect policy. |
-| #64 | keep_closed | skipped | related | Historical context with a distinct failure mechanism; no action is required. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned | canonical | The narrow implementation strategy is established and can be applied by the executor. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked | canonical | The executor must implement and validate the artifact in a writable checkout with ESP-IDF before opening or updating the PR. |
+| #64 | keep_closed | skipped | independent | Historical context with distinct remaining investigation; no closure action is valid. |
+| #67 | fix_needed | planned | canonical | Preserve the active deadline during transport startup while retaining terminal cleanup. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned | canonical | A concrete three-file repair plan is available despite local execution blockers. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked | canonical | The executor must implement and complete the required proof before creating or updating the single PR branch. |
 
 ## Needs Human
 
