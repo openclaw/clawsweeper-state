@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T21:51:45.328Z",
+  "updated_at": "2026-10-09T21:52:40.106Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163405:6056267965:2026-10-08T08:50:47Z:re_review",
-      "comment_id": "6056267965",
-      "comment_version_key": "6056267965:2026-10-08T08:50:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163405#issuecomment-6056267965",
-      "comment_created_at": "2026-10-08T08:50:47Z",
-      "comment_updated_at": "2026-10-08T08:50:47Z",
-      "comment_body_sha256": "1942253af275fc1ffae4c066a293cfc77bc81e27a6ecfed9f4e80693289e4086",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163405,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T16:54:26.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/jerry/xin-2003-srt-rebase",
-        "head_sha": "4f963f7eb25a93d0053671f1a066d4dcd8dea2b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163405:5948743886:2026-10-09T16:53:25Z:clawsweeper_auto_repair",
       "comment_id": "5948743886",
@@ -31884,6 +31837,39 @@
         "kind": "pull_request",
         "branch": "fix/docker-cli-podman-selection-20261009",
         "head_sha": "17c24f3ea540480a633511e5a37fd3c06c173665",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138329:5542137154:2026-10-09T21:51:40Z:clawsweeper_needs_human",
+      "comment_id": "5542137154",
+      "comment_version_key": "5542137154:2026-10-09T21:51:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138329#issuecomment-5542137154",
+      "comment_created_at": "2026-09-04T14:45:16Z",
+      "comment_updated_at": "2026-10-09T21:51:40Z",
+      "comment_body_sha256": "dc1cd0dd420bf06c4a1568dcbf8af2a3082348e86f0beff402e1f920a0d143d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The real Gateway/curl trace proves the initial Chat Completions session-key selection: beta-model receives the request and the client gets HTTP 200. It predates the explicit execution... (sha=90dadca64d04b99c768da3bfcdc218924f2d0726)",
+      "expected_head_sha": "90dadca64d04b99c768da3bfcdc218924f2d0726",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T21:52:40.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-completions-agent-owner",
+        "head_sha": "90dadca64d04b99c768da3bfcdc218924f2d0726",
         "cluster_id": null,
         "job_path": null
       }
