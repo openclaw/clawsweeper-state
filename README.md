@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 9, 2026, 11:22 UTC
+Last source update: Oct 9, 2026, 11:35 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 9, 2026, 11:22 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 9, 2026, 11:22 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37920384111) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 10:58 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37920745067) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Oct 9, 2026, 11:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37924500170) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 11:35 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37924479915) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 9, 2026, 07:08 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37897317420) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 9, 2026, 11:07 UTC
+Last source update: Oct 9, 2026, 11:32 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1619 | 100% |
-| Run attempts archived | 4759 | audit |
+| Run attempts archived | 4760 | audit |
 | Latest successful clusters | 1207 | 74.6% |
 | Latest failed clusters | 408 | 25.2% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1619 clusters: 412 maintainer action, 443 automation snapshot, 702 intervention needed, 62 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) [#160826](https://github.com/openclaw/openclaw-windows-packaging/issues/160826) is maintainer_input: #160826: Resolve the repository qualification before further classification. The packaging-repository placeholder returned HTTP 404 with....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-167778](cluster:issue-openclaw-openclaw-167778) is automation_failed: PR publication requires an implemented, validated repair. This blocks implementation/publication in the current worker, not the classific....
+- Intervention first: [steipete/birdclaw](https://github.com/steipete/birdclaw) [#233](https://github.com/steipete/birdclaw/pull/233) is automation_failed: The root cause and requested behavior are clear; repair is needed without a product or security decision. The issue remains open..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [#233](https://github.com/steipete/birdclaw/pull/233) | automation_failed | The root cause and requested behavior are clear; repair is needed without a product or security decision. The issue remains open. | Oct 9, 2026, 11:32 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37923658576](https://github.com/openclaw/clawsweeper/actions/runs/37923658576) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-167778](cluster:issue-openclaw-openclaw-167778) | automation_failed | PR publication requires an implemented, validated repair. This blocks implementation/publication in the current worker, not the classification or f... | Oct 9, 2026, 11:07 UTC | [issue-openclaw-openclaw-167778](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-167778.md) | [37920989320](https://github.com/openclaw/clawsweeper/actions/runs/37920989320) |
-| [steipete/birdclaw](https://github.com/steipete/birdclaw) | [cluster:issue-steipete-birdclaw-233](cluster:issue-steipete-birdclaw-233) | automation_failed | A writable executor with the pinned Bun toolchain, dependencies, GitHub access, and a suitable real setup must complete the prior-work inspection,... | Oct 9, 2026, 10:53 UTC | [issue-steipete-birdclaw-233](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-birdclaw-233.md) | [37919841179](https://github.com/openclaw/clawsweeper/actions/runs/37919841179) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#167766](https://github.com/openclaw/openclaw/pull/167766) | automation_failed | Existing recovery custody is partially erased by terminal reuse. The issue owns a distinct post-commit repair with no hydrated implementation PR. | Oct 9, 2026, 10:42 UTC | [issue-openclaw-openclaw-167766](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-167766.md) | [37918387724](https://github.com/openclaw/clawsweeper/actions/runs/37918387724) |
 | [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | No implementation PR is justified by the available evidence. Current main contains the related lookup and diagnostic fixes, but the original ZCode... | Oct 9, 2026, 10:36 UTC | [issue-openclaw-peekaboo-869](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-869.md) | [37918184264](https://github.com/openclaw/clawsweeper/actions/runs/37918184264) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#82015](https://github.com/openclaw/openclaw/pull/82015) | automation_failed | The established successful-edit receipt is lost during verified recovery; no viable open fix PR is hydrated. | Oct 9, 2026, 09:25 UTC | [issue-openclaw-openclaw-82015](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-82015.md) | [37910499825](https://github.com/openclaw/clawsweeper/actions/runs/37910499825) |
