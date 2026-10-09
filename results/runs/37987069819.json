@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37987069819",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37987069819",
+  "head_sha": "410f120f8b9ad66421da42244b77035ec612620a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T20:32:07.353Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified the narrow staging defect on supplied main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. A fix artifact is ready; implementation and validation are blocked by the read-only Linux host. No files or GitHub state changed. The later Koffi failure remains unconfirmed. Only the unavailable #160826 action is downgraded to needs_human because its kind and update timestamp cannot be established from the supplied artifacts.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair content copying inside the existing staging owner without changing preload routing, isolation, or release inputs."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged design and contributor attribution; no action on this historical PR."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its historical fix does not prove encrypted-source staging or the later reported child failure is resolved."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Redirect performance and compatibility policy are outside this copy repair."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact linked item before restoring an item classification requiring live metadata. Do not infer a kind or fabricate a timestamp. This blocker applies only to #160826 and does not block the independently supported #167 staging repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The artifact is actionable for a writable Windows executor. Local implementation and publication readiness cannot be established on this host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "needs_human": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826 only: the packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null; the actual linked URL is https://github.com/openclaw/openclaw/issues/160826 and has no hydrated live state. Resolve the repository identity and hydrate that exact item before supplying target metadata or restoring its classification. No GitHub mutation is authorized by this action."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
