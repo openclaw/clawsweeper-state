@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T05:42:35.685Z",
+  "updated_at": "2026-10-09T05:42:50.458Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/babelfish:48:6071695873:2026-10-09T00:23:21Z:re_review",
-      "comment_id": "6071695873",
-      "comment_version_key": "6071695873:2026-10-09T00:23:21Z",
-      "comment_url": "https://github.com/openclaw/babelfish/pull/48#issuecomment-6071695873",
-      "comment_created_at": "2026-10-09T00:23:21Z",
-      "comment_updated_at": "2026-10-09T00:23:21Z",
-      "comment_body_sha256": "660c4451d7a8e37274b1d4b46608f9ac26e7a27998e0939a6af53637c70d2c6f",
-      "repo": "openclaw/babelfish",
-      "issue_number": 48,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T00:29:48.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shell-expand-string-commands",
-        "head_sha": "68e4e3149ee5362154399c94a836aef8b50e06bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:48:5935864876:2026-10-09T00:28:54Z:clawsweeper_needs_human",
       "comment_id": "5935864876",
@@ -33075,6 +33028,39 @@
         "kind": "pull_request",
         "branch": "fix/157483-retire-before-native-compaction",
         "head_sha": "052cc590865fbeaca9c44abee84a1435936aa6ea",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3907:5976646881:2026-10-09T05:41:55Z:clawsweeper_needs_human",
+      "comment_id": "5976646881",
+      "comment_version_key": "5976646881:2026-10-09T05:41:55Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3907#issuecomment-5976646881",
+      "comment_created_at": "2026-10-04T04:40:57Z",
+      "comment_updated_at": "2026-10-09T05:41:55Z",
+      "comment_body_sha256": "37f09748fa9daa32926d3157acfb95c90c6db5a45f1ea03d6d16d59523b39ccc",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3907,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Sync the branch with current main, or verify a clean merge against it and check publisher visibility on that candidate; the supplied test merge is stale. (sha=33b90e93f45d4f33c402814de577ef5612946d25)",
+      "expected_head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T05:42:50.458Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hide-private-packages-on-publisher-pages",
+        "head_sha": "33b90e93f45d4f33c402814de577ef5612946d25",
         "cluster_id": null,
         "job_path": null
       }
