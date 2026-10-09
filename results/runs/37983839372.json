@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37983839372",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37983839372",
+  "head_sha": "65d743c0fe4863843073cefb8a7ff1901fbeb67c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T20:03:16.368Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "The narrow encrypted-source staging repair remains viable on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Local implementation and validation are blocked by the read-only Linux host. No files or GitHub state changed; a scoped executor fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "A source-supported ordinary staging bug can be repaired without changing encryption policy, isolation, upstream arguments, or runtime contracts."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Historical evidence does not prove the later config-validation failure is fixed."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The provided artifacts do not establish this target's identity, kind, or live updated_at. Resolve the repository identity and hydrate the intended ref before classifying it; do not invent metadata or infer closed state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The executor can implement the narrow repair on a writable Windows checkout; this worker cannot claim a validated branch or PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "needs_human": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: Resolve the intended repository identity before classification. Packaging preflight hydration returned HTTP 404 with kind unknown and updated_at null; the linked openclaw/openclaw issue was not hydrated. No target metadata can safely be supplied from these artifacts."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
