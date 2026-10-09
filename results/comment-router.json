@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T12:05:18.007Z",
+  "updated_at": "2026-10-09T12:05:28.069Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3833:5862161949:2026-10-09T05:43:05Z:clawsweeper_needs_human",
-      "comment_id": "5862161949",
-      "comment_version_key": "5862161949:2026-10-09T05:43:05Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3833#issuecomment-5862161949",
-      "comment_created_at": "2026-09-28T02:22:52Z",
-      "comment_updated_at": "2026-10-09T05:43:05Z",
-      "comment_body_sha256": "cff35743880a2250d698e474b2bbd6ab7325d0198a95917bcdc6b959b62e64fb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3833,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Product: not worth merging** - The original small bundles are useful and tested. Later managed publication covers both services, while the recorded area-owner direction keeps company definitions outside applicat... (sha=66f547401795bfeba82d76902d8a00cd5121a75f)",
-      "expected_head_sha": "66f547401795bfeba82d76902d8a00cd5121a75f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T05:44:03.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-723-manual-bundles",
-        "head_sha": "66f547401795bfeba82d76902d8a00cd5121a75f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167061:6056105931:2026-10-09T05:43:13Z:clawsweeper_needs_human",
       "comment_id": "6056105931",
@@ -33745,6 +33712,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167802:6080510047:2026-10-09T12:04:18Z:autofix",
+      "comment_id": "6080510047",
+      "comment_version_key": "6080510047:2026-10-09T12:04:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167802#issuecomment-6080510047",
+      "comment_created_at": "2026-10-09T12:04:18Z",
+      "comment_updated_at": "2026-10-09T12:04:18Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167802,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-10-09T12:05:19.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plain-update-report-copy-20261009",
+        "head_sha": "a5adfb8b52a51fd247375dacc7787b4b3ca414a6",
+        "cluster_id": "automerge-openclaw-openclaw-167802",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-167802.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-167802.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
