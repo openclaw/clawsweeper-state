@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T11:21:10.730Z",
+  "updated_at": "2026-10-09T11:21:58.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167567:6074808158:2026-10-09T05:18:35Z:re_review",
-      "comment_id": "6074808158",
-      "comment_version_key": "6074808158:2026-10-09T05:18:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167567#issuecomment-6074808158",
-      "comment_created_at": "2026-10-09T05:18:35Z",
-      "comment_updated_at": "2026-10-09T05:18:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167567,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T05:19:21.559Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/retain-prepared-answer-after-reasoning-tail",
-        "head_sha": "d7ae52ec29e74aae83e28b6662c8d805c48ddb0d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167585:6074809945:2026-10-09T05:18:45Z:re_review",
       "comment_id": "6074809945",
@@ -33643,6 +33596,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152706:5740402095:2026-10-09T11:21:03Z:clawsweeper_needs_human",
+      "comment_id": "5740402095",
+      "comment_version_key": "5740402095:2026-10-09T11:21:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152706#issuecomment-5740402095",
+      "comment_created_at": "2026-09-19T08:12:11Z",
+      "comment_updated_at": "2026-10-09T11:21:03Z",
+      "comment_body_sha256": "1827c2eed76b62e0d2248133ed9e966b9eaf9a44571cfb842310f2936421f4fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The pinned-head standalone trace calls withSessionTranscriptWriteLock against real SQLite and shows pre-persisted-user recovery, successful assistant persistence, and one keyed user r... (sha=978bcf895b0f5cfe3c15cc5f012ccba4b3775bc2)",
+      "expected_head_sha": "978bcf895b0f5cfe3c15cc5f012ccba4b3775bc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T11:21:58.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-anchor-degrade-152511",
+        "head_sha": "978bcf895b0f5cfe3c15cc5f012ccba4b3775bc2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
