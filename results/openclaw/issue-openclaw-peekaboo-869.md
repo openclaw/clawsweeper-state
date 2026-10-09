@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-869"
 mode: "autonomous"
-run_id: "37911983291"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37911983291"
-head_sha: "fac77558d76d4e7b32fe555bd11a2c8f33f42293"
+run_id: "37918184264"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37918184264"
+head_sha: "307fe46bf1813394c08495b341ce22315a0b7045"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T09:37:20.619Z"
+published_at: "2026-10-09T10:36:43.708Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/869"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37911983291](https://github.com/openclaw/clawsweeper/actions/runs/37911983291)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37918184264](https://github.com/openclaw/clawsweeper/actions/runs/37918184264)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/869
 
 ## Summary
 
-Implementation is blocked by an unclassified historical failure. Current main contains the related lookup and diagnostic fixes, but the available evidence neither proves ZCode is fixed nor identifies a remaining defect suitable for a focused PR. Keep #869 open; no fix artifact or GitHub mutation is proposed.
+No implementation PR is justified by the available evidence. Current main contains the related lookup and diagnostic fixes, but the original ZCode failure remains unclassified. Keep #869 open pending the maintainer-requested evidence.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Implementation is blocked by an unclassified historical failure. Current main co
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #869 | keep_canonical | planned | canonical | Recoverable original error/receipt evidence or same-host read-only diagnostics from a current binary are needed to classify the refusal. Different historical window IDs cannot establish the remaining implementation scope. |
-| #505 | keep_closed | skipped | related | Historical evidence only; no close or repair action applies. |
-| #906 | keep_closed | skipped | related | Related diagnostic work is already landed; it does not justify closing #869 or creating another diagnostic PR. |
+| #869 | keep_canonical | planned | canonical | The remaining failure has no established current-main reproduction or classified cause. Continue the existing read-only diagnostic path using recoverable original receipts or same-binary/host current-main metadata. A speculative patch cannot justify changing eligibility or identity safeguards. |
+| #505 | keep_closed | skipped | related | Merged historical context; no action or replacement is needed. |
+| #906 | keep_closed | skipped | related | Merged diagnostic work; it does not cover the unresolved report sufficiently for closeout. |
 
 ## Needs Human
 
