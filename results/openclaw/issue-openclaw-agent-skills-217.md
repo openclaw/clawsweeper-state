@@ -2,12 +2,12 @@
 repo: "openclaw/agent-skills"
 cluster_id: "issue-openclaw-agent-skills-217"
 mode: "autonomous"
-run_id: "37912291591"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37912291591"
-head_sha: "fac77558d76d4e7b32fe555bd11a2c8f33f42293"
+run_id: "37906159523"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37906159523"
+head_sha: "26c28e7912520955d083bb5eedefd08cb39b5547"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T09:40:54.874Z"
+published_at: "2026-10-09T08:42:34.938Z"
 canonical: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_issue: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/agent-skills
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37912291591](https://github.com/openclaw/clawsweeper/actions/runs/37912291591)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37906159523](https://github.com/openclaw/clawsweeper/actions/runs/37906159523)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 ## Summary
 
-#217 remains valid on supplied main SHA 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. A reader-only change cannot satisfy bounded-memory capture because downstream records, bundles, and successful prompt lists retain complete inputs. Implementation is blocked pending narrower pipeline sub-scopes. No code or GitHub changes were made.
+#217 remains valid on main 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. Complete bounded-memory capture requires coordinated changes to capture, retained representations, partition planning, and verification. A reader-only patch would leave the reported limitation intact; implementation is blocked by this lane's narrow-fix guardrail.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #217 | fix_needed | blocked | canonical | The accepted capacity limitation persists. Keep the issue open; file caps, truncation, or merely changing the read loop would not satisfy its contract. Implementation remains blocked pending narrower pipeline sub-scopes. |
-| #215 | keep_closed | skipped | related | Historical evidence establishing the uncapped-input contract; already closed. |
-| #240 | route_security | planned | security_sensitive | Quarantine this historical ref for central OpenClaw security handling without modifying it or blocking unrelated #217 classification. |
-| #287 | keep_closed | skipped | related | The partition-capacity repair is useful historical context but does not complete #217. |
-| cluster:issue-openclaw-agent-skills-217 | build_fix_artifact | blocked |  | A complete fix requires a coordinated representation and preparation migration, exceeding this lane's narrow implementation scope. A capture-only artifact would leave the same memory-scaling limitation downstream. No executable PR artifact is emitted under the job's broad-work guardrail. |
+| #217 | fix_needed | blocked | canonical | Satisfying the request requires replacing whole-content interfaces across multiple pipeline owners. Restoring file caps, truncating input, or merely reducing allocation copies would violate the accepted request. |
+| #215 | keep_closed | skipped | related | Historical contract and review evidence; no closure or branch repair applies. |
+| #240 | route_security | planned | security_sensitive | Quarantine this historical security-policy item for central OpenClaw security handling without GitHub mutation. It does not block classification of #217. |
+| #287 | keep_closed | skipped | related | Preserve the landed capacity improvement as historical evidence. |
+| cluster:issue-openclaw-agent-skills-217 | build_fix_artifact | blocked |  | The fix artifact records an audited blocked, no-PR outcome rather than an executable pipeline-wide redesign. Split the listed sub-scopes into staged follow-up jobs before attempting the complete request. |
 
 ## Needs Human
 
