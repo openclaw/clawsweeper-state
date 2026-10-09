@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37919841179",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37919841179",
+  "head_sha": "b17e94d1e7ed1f3db215a97074e78f4c21ebad53",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-09T10:53:30.184Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Issue #233 remains valid on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready, but implementation is blocked by the read-only filesystem, missing Bun/dependencies, and unavailable GitHub access. No files or GitHub state changed; no repaired branch or passing validation is claimed.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The root cause is clear and narrowly repairable without changing the transport or security boundary. Keep #233 as the sole canonical issue."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Hand off the concrete repair plan to a writable executor while preserving the issue classification and contributor credit."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "A writable executor with the pinned Bun toolchain, dependencies, GitHub access, and a suitable real setup must complete the prior-work inspection, implementation, and validation before opening or updating the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
