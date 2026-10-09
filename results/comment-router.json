@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T09:50:27.064Z",
+  "updated_at": "2026-10-09T09:51:09.679Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167081:6056720594:2026-10-09T03:53:25Z:clawsweeper_needs_human",
-      "comment_id": "6056720594",
-      "comment_version_key": "6056720594:2026-10-09T03:53:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167081#issuecomment-6056720594",
-      "comment_created_at": "2026-10-08T09:18:31Z",
-      "comment_updated_at": "2026-10-09T03:53:25Z",
-      "comment_body_sha256": "1e9b6071e56cb80921a16d965d2cf6fe1af5e7a96b26fa439d2610955d992160",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167081,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The updated body reports successful current-head Gateway recovery with real exec effects and restart no-replay, resolving the earlier historical-only gap. Preserve-running completion... (sha=590cce8ec130a53653581f377420f33868fe1bd1)",
-      "expected_head_sha": "590cce8ec130a53653581f377420f33868fe1bd1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T03:54:28.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-command-recovery-upstream",
-        "head_sha": "590cce8ec130a53653581f377420f33868fe1bd1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1801:6073953978:2026-10-09T03:57:00Z:clawsweeper_needs_human",
       "comment_id": "6073953978",
@@ -33289,6 +33256,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167342:6078526899:2026-10-09T09:50:04Z:re_review",
+      "comment_id": "6078526899",
+      "comment_version_key": "6078526899:2026-10-09T09:50:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167342#issuecomment-6078526899",
+      "comment_created_at": "2026-10-09T09:50:04Z",
+      "comment_updated_at": "2026-10-09T09:50:04Z",
+      "comment_body_sha256": "188bf9273d6aab588fbfdca73ea79e39e4b4d0c81eea4465b1c7edb1c0bccdfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167342,
+      "author": "Linux2010",
+      "author_id": 35169750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T09:51:08.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167078-drain-timeout-retry",
+        "head_sha": "05a3fdd07d48512649fc8ef06980f0d50686a779",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
