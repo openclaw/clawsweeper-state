@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T11:49:17.813Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6080209521",
+    "node_id": "IC_kwDOQb6kR88AAAABamiicQ",
+    "url": "https://github.com/openclaw/openclaw/issues/148650#issuecomment-6080209521",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/148650",
+    "pull_request_url": null,
+    "author": "olveww-dot",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T11:45:47Z",
+    "updated_at": "2026-10-09T11:45:47Z",
+    "body_hash": "b2b488dda13c5ed41b334ac24e4dd1ba3aaf83f5bc084c08e342cc6f14ec91c8",
+    "body_excerpt": "### 2026.9.9 field report: memory indexer cannot resolve the embedding secret Confirms this on macOS arm64 after a 2026.9.8 → 2026.9.9 upg ... nd ineffective for the CLI path). No manual repair attempted; config left as found apart from the reverted `secrets.egressProxy.enabled`.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://api.jina.ai/v1/embeddings"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6080209521",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical bug report with upgrade context, reproducible CLI output, attempted fixes, and impact analysis.",
+      "The embedding API URL is relevant to the reported failure, not solicitation or unrelated promotion.",
+      "No evidence of scams, phishing, abuse, or spam."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
