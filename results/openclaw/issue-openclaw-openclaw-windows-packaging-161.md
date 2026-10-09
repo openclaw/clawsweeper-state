@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37983836225"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37983836225"
-head_sha: "65d743c0fe4863843073cefb8a7ff1901fbeb67c"
-workflow_conclusion: "failure"
+run_id: "37993272276"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37993272276"
+head_sha: "e6419367a4d46bd7736a2ce87bb127140c024619"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T20:01:40.792Z"
+published_at: "2026-10-09T21:28:54.484Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-packaging-161
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37983836225](https://github.com/openclaw/clawsweeper/actions/runs/37983836225)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37993272276](https://github.com/openclaw/clawsweeper/actions/runs/37993272276)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-The SDK migration remains outstanding on the supplied current main. Implementation is blocked: the read-only Linux host cannot edit or validate a branch, the SDK contract and native assets are unavailable locally, and the coordinated migration exceeds the narrow repair scope. The fix artifact records a blocked, non-executable no-PR outcome. No files or GitHub state changed.
+#161 remains valid on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. The coordinated SDK and runtime migration exceeds this lane's narrow repair scope. The read-only Linux host also prevents implementation and required Windows validation. No files or GitHub state were changed; no PR is recommended from this run.
 
 ## Impact
 
@@ -48,13 +48,13 @@ The SDK migration remains outstanding on the supplied current main. Implementati
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #161 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ The SDK migration remains outstanding on the supplied current main. Implementati
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | fix_needed | blocked | canonical | The request remains valid and #161 remains canonical. Implementation is blocked by the exact scope and environment limitations recorded in the fix artifact; closure and merge are prohibited by this job. |
-| #44 | keep_closed | skipped | related | Preserve the merged contributor work as historical context; no mutation is appropriate. |
-| cluster:issue-openclaw-openclaw-windows-packaging-161 | build_fix_artifact | blocked |  | Do not emit an executable partial migration or claim a validated PR. Resume implementation only in a writable, secretless Windows environment with the verified SDK package and a scoped migration workflow covering transport, release-trust consumers, and lifecycle/upgrade proof. Preserve @paulcam206's issue and backend context. |
+| #161 | keep_canonical | planned | canonical | Keep the migration request open as the canonical implementation thread; it is neither already fixed nor covered by historical PR #44. |
+| #44 | keep_closed | skipped | related | Preserve @paulcam206's merged backend contribution as design provenance, not a current candidate fix or closure target. |
+| cluster:issue-openclaw-openclaw-windows-packaging-161 | needs_human | blocked | needs_human | Maintainer and area-contributor judgment is needed to scope the coordinated migration and its persisted-session compatibility contract before automation can produce a narrow fix artifact. Required sub-scopes are SDK contract and compatibility inspection, complete session-adapter cutover, coordinated runtime acquisition/package-provenance migration, and isolated Windows validation. Environment limitations independently block implementation. |
 
 ## Needs Human
 
-- none
+- For #161, scope the coordinated SDK/session compatibility and runtime release-trust migration with the area contributor. The supplied artifacts do not establish lifecycle, attached-console, cancellation, capability, error, or persisted sandbox-ID compatibility sufficiently to produce a safe narrow implementation artifact.
