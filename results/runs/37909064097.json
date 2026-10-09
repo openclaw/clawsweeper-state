@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37909064097",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37909064097",
+  "head_sha": "ef0a6bf91f8bb45af0fcdb3691c34eb46b58faad",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-09T09:10:22.162Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Confirmed the defect in source at preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow repair artifact is prepared. Implementation and validation are blocked by the read-only workspace, missing dependencies and Bun, and unsupported installed Node version. No code or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The reported failure remains present in current-main source and has a bounded repair that preserves the existing transport and CLI contract."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this plan without a product decision or broader audit."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Publication requires a reconciled, implemented, locally validated branch and the requested recovery evidence. Only implementation/publication is blocked; the classification and repair artifact remain valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
