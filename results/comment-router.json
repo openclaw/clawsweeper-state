@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T12:49:17.297Z",
+  "updated_at": "2026-10-09T12:49:36.943Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1785:6075565366:2026-10-09T06:22:01Z:re_review",
-      "comment_id": "6075565366",
-      "comment_version_key": "6075565366:2026-10-09T06:22:01Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1785#issuecomment-6075565366",
-      "comment_created_at": "2026-10-09T06:22:01Z",
-      "comment_updated_at": "2026-10-09T06:22:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1785,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T06:22:58.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prompt-field-contracts",
-        "head_sha": "a8b75dea0f371a745bce7ea0df2400f74681b8d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1788:6075568475:2026-10-09T06:22:18Z:re_review",
       "comment_id": "6075568475",
@@ -33762,6 +33715,39 @@
         "kind": "pull_request",
         "branch": "fix/skills-update-windows-tests",
         "head_sha": "663c6eea1421f942f6068194e99401bcbfa1edc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3869:5919773861:2026-10-09T12:48:37Z:clawsweeper_needs_human",
+      "comment_id": "5919773861",
+      "comment_version_key": "5919773861:2026-10-09T12:48:37Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3869#issuecomment-5919773861",
+      "comment_created_at": "2026-09-30T21:09:40Z",
+      "comment_updated_at": "2026-10-09T12:48:37Z",
+      "comment_body_sha256": "f39f032325fef32bf03fa5e2610216eeff4f3c17de56176bd39f0b5af88f8f6b",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=55cdcc1edde3b7d3be3762317ede5849a4ac08ad)",
+      "expected_head_sha": "55cdcc1edde3b7d3be3762317ede5849a4ac08ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T12:49:36.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-windows-tests",
+        "head_sha": "55cdcc1edde3b7d3be3762317ede5849a4ac08ad",
         "cluster_id": null,
         "job_path": null
       }
