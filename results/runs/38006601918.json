@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "plan",
+  "run_id": "38006601918",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38006601918",
+  "head_sha": "976a4d6b59d117cf771de1b5d601e95f1c327c32",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T23:57:25.699Z",
+  "canonical": "#167",
+  "canonical_issue": "#167",
+  "canonical_pr": null,
+  "summary": "The encrypted-source staging repair remains viable on supplied main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. Plan a narrow byte-copy repair and Windows regression in the existing staging owner. No files or GitHub state changed; Windows validation remains unrun.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair the source-supported staging failure; keep the later child-resolution symptom as a separate validation question."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Historical implementation evidence; no closeout action."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Retain as historical context without claiming it resolves #167."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Historical preload context; no action required."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the intended repository and hydrate the exact ref before classifying #160826. This missing context does not block the independently supported staging repair for #167."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826 only: resolve whether the intended context is https://github.com/openclaw/openclaw/issues/160826 and hydrate that exact ref. The packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null; do not fabricate target metadata."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
