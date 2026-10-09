@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37888674876"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37888674876"
-head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
+run_id: "37897687553"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37897687553"
+head_sha: "7b0c589b733593aa869818895d7d0288dcb5f8b6"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T05:31:29.447Z"
+published_at: "2026-10-09T07:15:36.207Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37888674876](https://github.com/openclaw/clawsweeper/actions/runs/37888674876)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37897687553](https://github.com/openclaw/clawsweeper/actions/runs/37897687553)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository implementation is established. The supplied current main still lacks authoritative pre-worker dispatch evidence, and recorded triage requires a supported Blacksmith Testbox-to-run binding. No code changes or PR are proposed.
+No safe implementation PR is viable yet. Current main still lacks an authoritative pre-worker dispatch association, and the hydrated triage direction explicitly requires a supported Blacksmith capability before repository repair. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ No safe repository implementation is established. The supplied current main stil
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | canonical | Implementation depends on Blacksmith exposing a supported authoritative dispatch binding and outcome before worker registration, retained through cancellation and admission failure. Inventing that binding or treating native completion as remote settlement would violate the documented lifecycle contract. This is an external capability blocker, not an unresolved maintainer decision. |
+| #2708 | keep_canonical | planned | canonical | External provider capability is required: a supported, exact Testbox-to-workflow binding and terminal dispatch outcome available before worker registration and retained through admission failure or cancellation. No concrete repository-only patch can distinguish the reported failures from legitimate queued allocation without that evidence. Resume implementation once the provider contract is available. |
 | #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Preserves recovery ownership but does not supply the missing pre-worker association. |
-| #2682 | keep_closed | skipped | related | Historical context for a distinct implemented capability. |
-| #2683 | keep_closed | skipped | related | Read-only settlement reporting does not repair native pre-worker dispatch failures. |
-| #2719 | keep_closed | skipped | related | Local ownership lookup is distinct from provider dispatch association. |
+| #2670 | keep_closed | skipped | related | Historical merged repair; does not resolve the source issue. |
+| #2682 | keep_closed | skipped | related | Historical context only. |
+| #2683 | keep_closed | skipped | related | Historical merged repair; does not resolve the source issue. |
+| #2719 | keep_closed | skipped | related | Historical context only. |
 
 ## Needs Human
 
