@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1676"
 mode: "autonomous"
-run_id: "37860378883"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37860378883"
-head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
+run_id: "37868207672"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37868207672"
+head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T23:41:26.894Z"
+published_at: "2026-10-09T01:13:02.079Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37860378883](https://github.com/openclaw/clawsweeper/actions/runs/37860378883)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37868207672](https://github.com/openclaw/clawsweeper/actions/runs/37868207672)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1676
 
 ## Summary
 
-Verified the missing uninstall-metadata reconciliation on preflight main 037c17dcb581cbe427ab1939576515643b9e0707. A narrow fix remains viable, but the read-only Linux environment blocks implementation and validation. No code or GitHub mutations occurred; no tests ran.
+The reported metadata defect remains supported by the inspected preflight main. A narrow fix plan is ready, but implementation is blocked by the read-only filesystem. No code changed, tests ran, Windows proof was collected, or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the missing uninstall-metadata reconciliation on preflight main 037c17d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1676 | fix_needed | planned | canonical | The corrected in-app-update defect has a narrow implementation path. Implementation requires a writable checkout and Windows validation. |
-| #1592 | keep_related | planned | related | Keep the broader recovery issue separate and open. |
-| #1675 | keep_related | planned | related | Useful contributor work with a distinct scope; preserve its ownership and credit. |
-| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | Planning is complete enough for an executor. Implementation, regression execution, review, and Windows proof are blocked in this environment. |
+| #1676 | fix_needed | planned | canonical | Implement the ordinary metadata bug without changing historical migration eligibility. |
+| #1592 | keep_related | planned | related | Keep broader Store migration recovery separate. |
+| #1675 | keep_related | planned | related | Preserve natalie-aguinaldo's independent contribution; do not combine or replace it. |
+| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | The artifact is actionable for a writable executor. Local implementation and PR readiness remain blocked by this worker's environment. |
 
 ## Needs Human
 
