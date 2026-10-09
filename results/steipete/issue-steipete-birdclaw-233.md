@@ -2,12 +2,12 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37861180196"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37861180196"
-head_sha: "e4c173aeed287b177b9c2152cb50d055da5d7223"
+run_id: "37871446419"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37871446419"
+head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T23:49:28.901Z"
+published_at: "2026-10-09T01:51:18.196Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37861180196](https://github.com/openclaw/clawsweeper/actions/runs/37861180196)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37871446419](https://github.com/openclaw/clawsweeper/actions/runs/37871446419)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready, but implementation and validation are blocked by read-only filesystem access, missing target dependencies, and unavailable Bun. Stopped-run inspection and owning-PR recheck also failed because GitHub authentication and network access are unavailable. No files or GitHub items were changed.
+The false-hit bug remains in preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready. Implementation, prior-run reconciliation, regression execution, and real CLI backfill proof are blocked by the read-only checkout, unavailable GitHub access, and missing supported toolchain/dependencies. No changes or GitHub mutations were made.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The ordinary correctness bug remains viable and needs no product decision. Implementation is externally blocked; keep the issue open and carry the concrete plan to an executor with writable checkout access. |
-| #118 | keep_closed | skipped | related | Historical context only. |
-| #163 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Provide an executable narrow repair plan without claiming a validated branch or opening a PR prematurely. |
+| #233 | fix_needed | planned | canonical | The canonical issue remains viable and source-confirmed; implementation requires a writable execution environment and the concrete validation gates below. |
+| #118 | keep_closed | skipped | related | Historical evidence only. |
+| #163 | keep_closed | skipped | related | Historical evidence only. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Artifact construction is complete; implementation and PR publication must wait for prior-run reconciliation, writable execution, passing validation, and actual redacted CLI proof. |
 
 ## Needs Human
 
