@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:14:00.755Z",
+  "updated_at": "2026-10-09T06:14:03.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80967:4429359243:2026-10-09T00:21:36Z:clawsweeper_needs_human",
-      "comment_id": "4429359243",
-      "comment_version_key": "4429359243:2026-10-09T00:21:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80967#issuecomment-4429359243",
-      "comment_created_at": "2026-05-12T09:57:48Z",
-      "comment_updated_at": "2026-10-09T00:21:36Z",
-      "comment_body_sha256": "580c96da5b16c929e41040642f56017ad1a074925cc3af2cc4ef7db3c81da93b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80967,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the captured macOS trace shows an early policy rejection, but does not prove requested-account binding or prevent another account from reaching provide...; Review finding: [P1] Preserve explicit model-profile binding during preparation — src/plugins/runtime/runtime-llm.runtime.ts:659-663 - [P2] Check the selected model before enterin... (sha=f0635aeca7191153f51786a2536a29bcff412887)",
-      "expected_head_sha": "f0635aeca7191153f51786a2536a29bcff412887",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T00:57:28.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pr-80203-patch",
-        "head_sha": "f0635aeca7191153f51786a2536a29bcff412887",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82540:4466649650:2026-10-09T00:21:00Z:clawsweeper_needs_human",
       "comment_id": "4466649650",
@@ -33046,6 +33013,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163746:6075431012:2026-10-09T06:12:27Z:re_review",
+      "comment_id": "6075431012",
+      "comment_version_key": "6075431012:2026-10-09T06:12:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163746#issuecomment-6075431012",
+      "comment_created_at": "2026-10-09T06:12:27Z",
+      "comment_updated_at": "2026-10-09T06:12:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163746,
+      "author": "jewseppi",
+      "author_id": 6901751,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T06:14:02.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-audio-preflight-chat-type",
+        "head_sha": "0fcbabaa64aa2b4474e30ce110d979a6e5f3d992",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
