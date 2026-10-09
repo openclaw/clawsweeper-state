@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37927530442",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37927530442",
+  "head_sha": "e679475f63b1f1e8b2f1c6f583abe5d016b5b878",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T12:14:19.167Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified the narrow staging defect on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Prepared a two-file fix plan. Implementation and validation are blocked on this read-only Linux host; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "A narrow owner-local repair remains viable. Runtime reproduction is still required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Artifact creation is possible; implementation and all changed-branch validation must run in a writable executor with the required Windows proof environment."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing staging design; no mutation."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No preload changes are justified within this repair."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact linked item before classifying it. No mutation is authorized for this unavailable ref; it is not needed for the scoped staging repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: Resolve the repository identity and hydrate the exact linked item if classification is required. Preflight returned HTTP 404 in openclaw/openclaw-windows-packaging with kind unknown and updated_at null; the linked URL points to openclaw/openclaw/issues/160826. Do not invent target metadata or expand the staging repair."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
