@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-77343"
 mode: "autonomous"
-run_id: "37997367463"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37997367463"
-head_sha: "314018ccc4e37748b77240f08ef67aef66098d8a"
+run_id: "37998407401"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37998407401"
+head_sha: "277f5a0c51f31a2403a5696eabc2225103735d11"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-09T22:12:46.890Z"
+published_at: "2026-10-09T22:23:29.036Z"
 canonical: "https://github.com/openclaw/openclaw/issues/77343"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/77343"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37997367463](https://github.com/openclaw/clawsweeper/actions/runs/37997367463)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37998407401](https://github.com/openclaw/clawsweeper/actions/runs/37998407401)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/77343
 
 ## Summary
 
-Reproduced both label-refresh defects on preflight main c75ff3cbf56ea8d00d1f33599482901999098f8d. Prepared a narrow executor fix plan. No files or GitHub state changed; implementation and final validation remain blocked on this read-only worker host.
+Reproduced both stale-label defects through the script event entry point on checkout main 9449b4e7dc97cd66a0e787db851c44f2a9ee447a. Prepared a narrow three-file fix artifact. Implementation is blocked in this worker by the read-only host; preflight main d331fd73241229029c32b2321c318417842f2bed is unavailable locally. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Reproduced both label-refresh defects on preflight main c75ff3cbf56ea8d00d1f3359
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #77343 | fix_needed | planned | canonical | The existing automatic refresh path fails to reconcile obsolete candidate classifications, and ready_for_review is missing from both dispatch layers. |
-| #77361 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without mutation. Implement the ordinary label-refresh bug independently from current main. |
-| #103702 | keep_closed | skipped | related | Retain as historical contribution and credit context. No closure, reopening, or branch mutation is planned. |
-| cluster:issue-openclaw-openclaw-77343 | build_fix_artifact | planned | canonical | A three-file bug fix is justified by failing baseline behavior. The executor can implement and validate it on the designated issue branch without reviving either historical branch. |
+| #77343 | fix_needed | planned | canonical | The existing automatic refresh behavior is broken. A new fix PR is appropriate; keep the issue open. |
+| #77361 | route_security | planned | security_sensitive | Respect the supplied security routing marker without blocking the unrelated non-security issue implementation. |
+| #103702 | keep_closed | skipped | related | Historical context only; no closure or branch repair is appropriate. |
+| cluster:issue-openclaw-openclaw-77343 | build_fix_artifact | planned |  | A narrow fix is supported by reproduced behavior and does not require configuration, dependencies, classification-policy changes, or broader permissions. |
 
 ## Needs Human
 

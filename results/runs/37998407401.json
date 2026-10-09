@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77343",
+  "mode": "autonomous",
+  "run_id": "37998407401",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37998407401",
+  "head_sha": "277f5a0c51f31a2403a5696eabc2225103735d11",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77343.md",
+  "published_at": "2026-10-09T22:23:29.036Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_pr": null,
+  "summary": "Reproduced both stale-label defects through the script event entry point on checkout main 9449b4e7dc97cd66a0e787db851c44f2a9ee447a. Prepared a narrow three-file fix artifact. Implementation is blocked in this worker by the read-only host; preflight main d331fd73241229029c32b2321c318417842f2bed is unavailable locally. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#77343",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "The existing automatic refresh behavior is broken. A new fix PR is appropriate; keep the issue open."
+    },
+    {
+      "target": "#77361",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Respect the supplied security routing marker without blocking the unrelated non-security issue implementation."
+    },
+    {
+      "target": "#103702",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or branch repair is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77343",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "A narrow fix is supported by reproduced behavior and does not require configuration, dependencies, classification-policy changes, or broader permissions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
