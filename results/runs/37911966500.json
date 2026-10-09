@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-101",
+  "mode": "autonomous",
+  "run_id": "37911966500",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37911966500",
+  "head_sha": "fac77558d76d4e7b32fe555bd11a2c8f33f42293",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-101.md",
+  "published_at": "2026-10-09T09:38:04.894Z",
+  "canonical": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_issue": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_pr": null,
+  "summary": "Rich-block URL export remains missing on preflight main 279160aff610f28bb812cf232415a5864915f3fd. A narrow implementation plan is prepared, but the read-only filesystem blocks edits and Go validation. The full issue body also requires hydration before claiming complete coverage or opening a PR. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#101",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "The URL-export limitation remains real; no active implementation PR is present in the supplied inventory."
+    },
+    {
+      "target": "#127",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical ref under the supplied security boundary for central OpenClaw handling; do not mutate it or expand its security work into #101."
+    },
+    {
+      "target": "#155",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#161",
+      "reason": "Historical table work has a distinct scope and does not fulfill #101."
+    },
+    {
+      "target": "#161",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep merged historical work closed; no merge or closeout action is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-101",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "A scoped plan remains useful despite the worker's implementation restrictions."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-101",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "Resume in a writable executor with full issue hydration. Reuse clawsweeper/issue-openclaw-notcrawl-101 and open only after scope, review, and native validation gates pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
