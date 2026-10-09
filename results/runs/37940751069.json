@@ -1,0 +1,63 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37940751069",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37940751069",
+  "head_sha": "d2fbd677ffe0c05f6bb4cc0005ff732e5450d2c9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-09T14:13:29.563Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Verified the false-hit bug on preflight main. Prepared a narrow repair artifact; implementation and PR creation remain blocked by the read-only workspace, missing Bun, and unavailable GitHub access needed to inspect the stopped implementation. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The reported bug remains present in the supplied current main. The requested repair is narrow and does not require changing a security boundary or making a product decision."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "A concrete fix artifact can guide the writable executor despite this worker's local implementation blockers."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "PR creation requires a completed, validated implementation. These are environmental blockers, not unresolved maintainer judgment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
