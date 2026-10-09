@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T00:22:27.687Z",
+  "updated_at": "2026-10-09T00:27:05.415Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167387:6066667046:2026-10-08T18:42:04Z:re_review",
-      "comment_id": "6066667046",
-      "comment_version_key": "6066667046:2026-10-08T18:42:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167387#issuecomment-6066667046",
-      "comment_created_at": "2026-10-08T18:42:04Z",
-      "comment_updated_at": "2026-10-08T18:42:04Z",
-      "comment_body_sha256": "d6fd972288324bb71447a4f288c1ef99dc064b6facc960b8321b92c737d7780a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167387,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T18:43:31.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-latest-client-version",
-        "head_sha": "a8e547aaf25d3918bcd0d9d8cadc3782585bb1c9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167366:6066049835:2026-10-08T18:42:58Z:clawsweeper_needs_human",
       "comment_id": "6066049835",
@@ -32983,6 +32936,39 @@
       "status": "skipped",
       "processed_at": "2026-10-09T00:22:27.687Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167267:6061851589:2026-10-09T00:26:10Z:clawsweeper_needs_human",
+      "comment_id": "6061851589",
+      "comment_version_key": "6061851589:2026-10-09T00:26:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167267#issuecomment-6061851589",
+      "comment_created_at": "2026-10-08T14:16:52Z",
+      "comment_updated_at": "2026-10-09T00:26:10Z",
+      "comment_body_sha256": "5f93edf5c74f1e8b4b31a5240282a18a15f2ee81448f5398f5dd91bd04363434",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167267,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Contributor terminal traces exercise real Doctor and SQLite repair, show schema acceptance and idempotence, and preserve sibling credentials and settings; the changed production blobs... (sha=63ad94d39e5d68baff63f112894ea32b4e394352)",
+      "expected_head_sha": "63ad94d39e5d68baff63f112894ea32b4e394352",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T00:27:05.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-catalog-partial-cost",
+        "head_sha": "63ad94d39e5d68baff63f112894ea32b4e394352",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
