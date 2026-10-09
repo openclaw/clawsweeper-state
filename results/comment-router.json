@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T20:39:40.130Z",
+  "updated_at": "2026-10-09T20:39:49.020Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167832:6083225526:2026-10-09T14:45:12Z:clawsweeper_auto_repair",
-      "comment_id": "6083225526",
-      "comment_version_key": "6083225526:2026-10-09T14:45:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167832#issuecomment-6083225526",
-      "comment_created_at": "2026-10-09T14:45:12Z",
-      "comment_updated_at": "2026-10-09T14:45:12Z",
-      "comment_body_sha256": "9dcb8c6e8ec3ddf59f151e99b7229dac974afa3f0f989cc011f55f427e657bce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167832,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=3c487b0179494cb20445f1fa8431a77a6dd98164)",
-      "expected_head_sha": "3c487b0179494cb20445f1fa8431a77a6dd98164",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T14:46:24.714Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-sidebar-menu-parity",
-        "head_sha": "3c487b0179494cb20445f1fa8431a77a6dd98164",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1899:6082846648:2026-10-09T14:45:42Z:clawsweeper_needs_human",
       "comment_id": "6082846648",
@@ -31787,6 +31754,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167958:6088863694:2026-10-09T20:38:43Z:re_review",
+      "comment_id": "6088863694",
+      "comment_version_key": "6088863694:2026-10-09T20:38:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167958#issuecomment-6088863694",
+      "comment_created_at": "2026-10-09T20:38:43Z",
+      "comment_updated_at": "2026-10-09T20:38:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167958,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T20:39:47.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/render-chunk-code-overflow",
+        "head_sha": "6b0c758fac83be20ff29e4dd27cfaad6c258506c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
