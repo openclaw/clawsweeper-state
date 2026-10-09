@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T05:03:56.112Z",
+  "updated_at": "2026-10-09T05:04:07.625Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163698:6071393264:2026-10-08T23:56:27Z:re_review",
-      "comment_id": "6071393264",
-      "comment_version_key": "6071393264:2026-10-08T23:56:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163698#issuecomment-6071393264",
-      "comment_created_at": "2026-10-08T23:56:27Z",
-      "comment_updated_at": "2026-10-08T23:56:27Z",
-      "comment_body_sha256": "47d323f3f2faa86de7b603089c775c1015608179f86c90ba2dc5614add3ad606",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163698,
-      "author": "he-yufeng",
-      "author_id": 40085740,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T23:57:19.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qianfan-streaming-usage",
-        "head_sha": "e2bec7d376d51aecea3b7c25151e0191c603ba81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150641:6071393970:2026-10-08T23:56:31Z:re_review",
       "comment_id": "6071393970",
@@ -33120,6 +33073,39 @@
         "kind": "pull_request",
         "branch": "refactor/plugin-capture-custody",
         "head_sha": "cae98809dd9bddeb81aeff5662000fa2bb84f2b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167584:6073648732:2026-10-09T05:03:17Z:clawsweeper_needs_human",
+      "comment_id": "6073648732",
+      "comment_version_key": "6073648732:2026-10-09T05:03:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167584#issuecomment-6073648732",
+      "comment_created_at": "2026-10-09T03:26:08Z",
+      "comment_updated_at": "2026-10-09T05:03:17Z",
+      "comment_body_sha256": "d7c0f61df663dace4bcea4750e8577590189b92bf9bf0af6e40c0263d82b85e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167584,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=aca1edfc855e27a5bf3a10b15bfa279545c019a3)",
+      "expected_head_sha": "aca1edfc855e27a5bf3a10b15bfa279545c019a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T05:04:07.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stab-session-title-quality",
+        "head_sha": "aca1edfc855e27a5bf3a10b15bfa279545c019a3",
         "cluster_id": null,
         "job_path": null
       }
