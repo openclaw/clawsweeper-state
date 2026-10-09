@@ -1,0 +1,85 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "37906551144",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37906551144",
+  "head_sha": "26c28e7912520955d083bb5eedefd08cb39b5547",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-09T08:46:35.354Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified the narrow staging defect remains on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. Prepared a fix artifact; implementation and required Windows proof are blocked by this read-only Linux host and missing compatible .NET SDK. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair readable encrypted-source staging through the existing agent-owned producer. Keep the issue open and retain the later Koffi failure as unproven runtime behavior."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical implementation context only."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Adjacent preload work does not prove that the later failure in #167 is fixed."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The linked ref's repository identity and live metadata remain unresolved. Block only its disposition pending correctly scoped hydration; do not infer a kind, timestamp, or closed state, and do not expand the native-staging repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The narrow plan is viable; implementation and validation require a writable Windows environment with the pinned SDK and authorized disposable fixtures."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "needs_human": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: Resolve the linked ref's repository identity and hydrate its live kind and updated_at before any disposition. Packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null; the linked openclaw/openclaw issue is unhydrated. This blocks only that ref."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
