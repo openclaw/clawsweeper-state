@@ -1,0 +1,43 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T10:55:03.226Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6079433938",
+    "node_id": "IC_kwDOQb6kR88AAAABalzM0g",
+    "url": "https://github.com/openclaw/openclaw/issues/167773#issuecomment-6079433938",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/167773",
+    "pull_request_url": null,
+    "author": "rweltens1978",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T10:52:52Z",
+    "updated_at": "2026-10-09T10:52:52Z",
+    "body_hash": "23c6a523d2678fd3b585cec00ebde3728b32b01c72f496883e23fba8da76cef1",
+    "body_excerpt": "- **Cause:** updater retention hard-links the publication recovery journal, while publication requires exactly one link. Read-only invento ... r repaired; resolving that requires corrected updater code. Doctor retains the original browser, plaintext-secret, and snapshot warnings.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://docs.openclaw.ai/cli/update/repair-and-recovery",
+      "https://docs.openclaw.ai/cli/update/repair-and-recovery"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6079433938",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical report describing an updater hard-link  ... steps, verification results, and a remaining code defect.",
+      "The documentation link supports the recovery procedure; th ... no solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
