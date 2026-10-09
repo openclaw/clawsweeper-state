@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T00:04:12.314Z",
+  "updated_at": "2026-10-09T00:04:18.443Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127171:5369670763:2026-10-08T17:58:53Z:clawsweeper_needs_human",
-      "comment_id": "5369670763",
-      "comment_version_key": "5369670763:2026-10-08T17:58:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127171#issuecomment-5369670763",
-      "comment_created_at": "2026-08-21T12:14:35Z",
-      "comment_updated_at": "2026-10-08T17:58:53Z",
-      "comment_body_sha256": "cb3f8b4df1a331d95a88051e0f7498d1b240f63051c3b8aca6cf28984b3a07c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject backends without an attachment projection (P1)** - The check excludes SSH only. OpenShell registers without a read-only attachment projection, so its attachment spawn can succeed while the child cannot re...; Review finding: [P1] Reject backends without an attachment projection — src/agents/subagents/spawn/subagent-attachments.ts:335-340 - [P1] Mount only the child session's attachment... (sha=b6c1f088f19a7ddb1332b25c985aaa412331fdbb)",
-      "expected_head_sha": "b6c1f088f19a7ddb1332b25c985aaa412331fdbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T18:29:34.335Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-929-attachment-symlink",
-        "head_sha": "b6c1f088f19a7ddb1332b25c985aaa412331fdbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127670:5376328747:2026-10-08T18:01:04Z:clawsweeper_auto_repair",
       "comment_id": "5376328747",
@@ -32959,6 +32926,39 @@
       "status": "skipped",
       "processed_at": "2026-10-09T00:04:12.314Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:914:5954591254:2026-10-09T00:03:18Z:clawsweeper_needs_human",
+      "comment_id": "5954591254",
+      "comment_version_key": "5954591254:2026-10-09T00:03:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/914#issuecomment-5954591254",
+      "comment_created_at": "2026-10-02T14:24:58Z",
+      "comment_updated_at": "2026-10-09T00:03:18Z",
+      "comment_body_sha256": "38161b31d48171b8ecb0cbf72558c02a7da4d11157ff4d822da25c9194b06745",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 914,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed OCC admission callback is covered by controller-handler fixtures with real Driver code and injected transport, but the contributor explicitly reports no after-fix SSH/syst... (sha=a73761c05ddb87bc3580f4f591a4003a1ee390e3)",
+      "expected_head_sha": "a73761c05ddb87bc3580f4f591a4003a1ee390e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T00:04:18.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/829-ssh-env-channel-credentials",
+        "head_sha": "a73761c05ddb87bc3580f4f591a4003a1ee390e3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
