@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37944487635",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37944487635",
+  "head_sha": "b5159758fb4a99210cb5563aeba2854e2156b130",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-09T14:33:40.113Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Verified the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix remains viable. Implementation and required device validation are blocked by this read-only session, absent ESP-IDF tooling and hardware, and unavailable authenticated access to the stopped workflow. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Preserving the attempt timestamp during transport initialization restores the existing timeout without changing parser, authentication, persistence, or public API behavior."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; handler isolation is outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Produce a concrete repair plan for a writable executor; inspect the stopped run and existing target branch before implementing, then require actual regression and device evidence before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
