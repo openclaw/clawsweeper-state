@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T09:54:17.444Z",
+  "updated_at": "2026-10-09T09:54:51.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1780:6073986840:2026-10-09T04:00:22Z:re_review",
-      "comment_id": "6073986840",
-      "comment_version_key": "6073986840:2026-10-09T04:00:22Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1780#issuecomment-6073986840",
-      "comment_created_at": "2026-10-09T04:00:22Z",
-      "comment_updated_at": "2026-10-09T04:00:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1780,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T04:01:17.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "review/implementer-owned-decisions",
-        "head_sha": "08273f998006bedeb0e1d0bd616b2c6527b8e4d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167598:6073988019:2026-10-09T04:00:29Z:clawsweeper_needs_human",
       "comment_id": "6073988019",
@@ -33300,6 +33253,39 @@
         "kind": "pull_request",
         "branch": "openclaw/compaction-correction-eval",
         "head_sha": "de479846797b60a516e00617ebd90a1109fbdcfd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1846:6078319268:2026-10-09T09:53:45Z:clawsweeper_needs_human",
+      "comment_id": "6078319268",
+      "comment_version_key": "6078319268:2026-10-09T09:53:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1846#issuecomment-6078319268",
+      "comment_created_at": "2026-10-09T09:35:50Z",
+      "comment_updated_at": "2026-10-09T09:53:45Z",
+      "comment_body_sha256": "6a0472f83ea55cbe3168030faf16c3635e77dae038ed263d2472338ff468be55",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1846,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e55f24b7f83b214b73a1414339ad7603e97b78a9)",
+      "expected_head_sha": "e55f24b7f83b214b73a1414339ad7603e97b78a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T09:54:51.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/troubleshooting-legacy-iptables-nat",
+        "head_sha": "e55f24b7f83b214b73a1414339ad7603e97b78a9",
         "cluster_id": null,
         "job_path": null
       }
