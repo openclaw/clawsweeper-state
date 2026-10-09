@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37871446419"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37871446419"
+run_id: "37875935203"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37875935203"
 head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-09T01:51:18.196Z"
+result_status: "planned"
+published_at: "2026-10-09T02:48:09.944Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37871446419](https://github.com/openclaw/clawsweeper/actions/runs/37871446419)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37875935203](https://github.com/openclaw/clawsweeper/actions/runs/37875935203)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-The false-hit bug remains in preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready. Implementation, prior-run reconciliation, regression execution, and real CLI backfill proof are blocked by the read-only checkout, unavailable GitHub access, and missing supported toolchain/dependencies. No changes or GitHub mutations were made.
+Verified #233 remains valid on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow repair artifact is ready for the executor. Local implementation and validation are blocked by the read-only workspace, missing Bun, and absent dependencies. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ The false-hit bug remains in preflight main 2f81941b308bd99d38c4608d2d241bdbe131
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The canonical issue remains viable and source-confirmed; implementation requires a writable execution environment and the concrete validation gates below. |
-| #118 | keep_closed | skipped | related | Historical evidence only. |
-| #163 | keep_closed | skipped | related | Historical evidence only. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Artifact construction is complete; implementation and PR publication must wait for prior-run reconciliation, writable execution, passing validation, and actual redacted CLI proof. |
+| #233 | fix_needed | planned | canonical | The source-proven defect and retry exclusion remain present on current main. #233 owns the focused repair. |
+| #118 | keep_closed | skipped | related | Historical context only; no action is required. |
+| #163 | keep_closed | skipped | related | Historical context only; no action is required. |
+| #175 | keep_closed | skipped | related | Historical context only; no action is required. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | A six-file repair can address the production path and existing false-hit state without redesigning storage or changing transport safeguards. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR publication must wait for implementation, validation, review, real behavior evidence, and branch-specific duplicate prevention in a writable executor. |
 
 ## Needs Human
 
