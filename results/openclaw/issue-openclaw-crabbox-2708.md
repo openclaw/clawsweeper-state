@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37934382166"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37934382166"
-head_sha: "cb3e2c1ace513cf59bbdb0dc1e87ea93c2e4bd91"
+run_id: "37966314874"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37966314874"
+head_sha: "c3b1bcf908f6f153e19ca7750906fca0dbba04f9"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T13:12:27.245Z"
+published_at: "2026-10-09T17:32:17.810Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37934382166](https://github.com/openclaw/clawsweeper/actions/runs/37934382166)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37966314874](https://github.com/openclaw/clawsweeper/actions/runs/37966314874)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository-only implementation is established. Blacksmith must expose a supported Testbox-to-workflow association and terminal dispatch outcome before worker registration. Current main preserves recovery ownership but cannot distinguish failed dispatch from slow allocation without that evidence. No code or GitHub mutations were made.
+Implementation is blocked on a supported Blacksmith capability that binds a Testbox request to its workflow run before worker startup and retains terminal outcomes. Current main still lacks that evidence. No code changes or executable fix artifact are proposed; the issue remains open.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,14 +66,13 @@ No safe repository-only implementation is established. Blacksmith must expose a 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | The issue remains distinct and unresolved, with an established external capability dependency rather than an unresolved maintainer decision. |
-| #2669 | keep_closed | skipped | related | Its recovery-custody scope differs from missing pre-worker dispatch evidence. |
-| #2670 | keep_closed | skipped | related | This repair preserves custody but does not supply missing dispatch identity. |
-| #2682 | keep_closed | skipped | related | Exposing available settlement evidence differs from obtaining absent provider evidence. |
-| #2683 | keep_closed | skipped | related | Its conservative unknown result for absent associations remains necessary and does not fix pre-worker dispatch reporting. |
-| #2719 | keep_closed | skipped | related | Local claim lookup does not change provider dispatch or settlement evidence. |
-| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | The blocked fix action cannot safely receive an implementation artifact from the supplied evidence and is downgraded to non-mutating needs_human. Obtain and verify a documented Blacksmith request-to-run binding that survives admission failure and cancellation before worker startup before resuming implementation; no change to the recorded recovery contract is proposed. |
+| #2708 | keep_canonical | planned | canonical | This remains the canonical report for the distinct pre-worker dispatch evidence gap. |
+| #2669 | keep_closed | skipped | related | Historical context only; no closure action is applicable. |
+| #2670 | keep_closed | skipped | related | The landed ownership repair remains relevant context but does not resolve missing dispatch identity. |
+| #2682 | keep_closed | skipped | related | Historical status capability request; its implementation cannot recover an association the provider never exposes. |
+| #2683 | keep_closed | skipped | related | The landed observational repair preserves uncertainty correctly and does not fix pre-worker provider evidence. |
+| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | Downgraded the blocked fix action because the provided artifacts establish no safe repository patch or executable fix plan. Maintainer/provider follow-up must establish the supported dispatch-binding contract before implementation can resume; the existing ownership guarantees must remain intact. |
 
 ## Needs Human
 
-- For https://github.com/openclaw/crabbox/issues/2708, obtain and verify supported Blacksmith evidence binding an exact Testbox request to its workflow run and terminal dispatch outcome before worker startup, including admission failure and cancellation. The supplied artifacts establish no such interface, so no safe implementation PR can be planned.
+- Implementation only: establish a supported Blacksmith dispatch receipt or exact pre-worker lookup that binds the Testbox request to its workflow run and retains cancellation/admission-failure outcomes. The October 6 triage comment on https://github.com/openclaw/crabbox/issues/2708 states CLI 0.4.65 exposes neither capability; no safe autonomous repository repair is established by the provided artifacts.
