@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T20:53:13.457Z",
+  "updated_at": "2026-10-09T20:53:37.409Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138344:6083850090:2026-10-09T15:21:04Z:re_review",
-      "comment_id": "6083850090",
-      "comment_version_key": "6083850090:2026-10-09T15:21:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138344#issuecomment-6083850090",
-      "comment_created_at": "2026-10-09T15:21:04Z",
-      "comment_updated_at": "2026-10-09T15:21:04Z",
-      "comment_body_sha256": "1dd672b51ca7da1b16035c971d6e46988f48ea4f17e64812c40f97c9bd49cc67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138344,
-      "author": "waterundman",
-      "author_id": 120729380,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the head changed, so the previous stamp no longer describes it. to be explicit about the one item you still hold: the published-updater-to-candidate service-maintenance run is not something i have claimed, and it is not something i can produce from an external contributor's position. i will run whatever scenario you specify if you want it driven differently, but absent that i am treating it as a maintainer call rather than a blocker i can clear",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T15:22:21.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/schtasks-probe-command",
-        "head_sha": "1c0a59354918bd3d1bee701bbb1686e71d6cbe02",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167843:6083863415:2026-10-09T15:21:53Z:clawsweeper_needs_human",
       "comment_id": "6083863415",
@@ -31826,6 +31779,39 @@
         "kind": "pull_request",
         "branch": "fix/config-write-stringify-stack",
         "head_sha": "19efa787800f721a1c7edd3974c6e885af4a73b2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167961:6089061800:2026-10-09T20:52:29Z:clawsweeper_needs_human",
+      "comment_id": "6089061800",
+      "comment_version_key": "6089061800:2026-10-09T20:52:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167961#issuecomment-6089061800",
+      "comment_created_at": "2026-10-09T20:52:29Z",
+      "comment_updated_at": "2026-10-09T20:52:29Z",
+      "comment_body_sha256": "23c1d35c891f06ecabd3e5201048b97574cd3964c277d956f62d6e4ebdd47905",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1979d12895100979bf5af51c0cfc90a234085c0e)",
+      "expected_head_sha": "1979d12895100979bf5af51c0cfc90a234085c0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T20:53:37.409Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-broadcast-serialization-allocation-20260919",
+        "head_sha": "1979d12895100979bf5af51c0cfc90a234085c0e",
         "cluster_id": null,
         "job_path": null
       }
