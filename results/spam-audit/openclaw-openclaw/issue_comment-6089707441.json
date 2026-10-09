@@ -1,0 +1,41 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T21:41:10.600Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6089707441",
+    "node_id": "IC_kwDOQb6kR88AAAABavmPsQ",
+    "url": "https://github.com/openclaw/openclaw/issues/134446#issuecomment-6089707441",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/134446",
+    "pull_request_url": null,
+    "author": "Verlbot",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T21:39:48Z",
+    "updated_at": "2026-10-09T21:39:48Z",
+    "body_hash": "1e3d0fd5c59e8beef300aa4862bc7b80b481bf96f968577e81d2b5d0291a3e1e",
+    "body_excerpt": "Additional Linux container reproduction on **OpenClaw 2026.9.6**, confirming the existing `${node}` plugin-integration reports through Gat ... port does **not** advocate a uid-only root exemption; the full executable-path trust concerns already recorded in this issue still apply.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [],
+    "urls": [
+      "https://github.com/openclaw/openclaw/blob/5a292d07eb88af5bbf5f800f40b48a49ffb89d29/src/secrets/exe",
+      "https://github.com/openclaw/openclaw/blob/5a292d07eb88af5bbf5f800f40b48a49ffb89d29/src/secrets/pro"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6089707441",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical reproduction describing executable ownership, permissions, and SecretRef integration behavior.",
+      "Contextual GitHub source links support the reported deployment evidence.",
+      "No solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
