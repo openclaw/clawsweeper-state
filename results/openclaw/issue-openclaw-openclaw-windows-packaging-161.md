@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37948410384"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37948410384"
-head_sha: "b078ff01e48a5b18d93089f5e96b07a2e2adccae"
-workflow_conclusion: "failure"
+run_id: "37979980994"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37979980994"
+head_sha: "271574b75b1d32480f8d9bd96f6c0e75705e6ac6"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T15:04:01.948Z"
+published_at: "2026-10-09T19:27:59.563Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37948410384](https://github.com/openclaw/clawsweeper/actions/runs/37948410384)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37979980994](https://github.com/openclaw/clawsweeper/actions/runs/37979980994)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-The SDK migration remains outstanding on supplied main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation is blocked by the read-only host and exceeds the narrow repair lane. No files or GitHub state changed; no validated PR branch exists.
+The SDK migration remains outstanding on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. It requires a coordinated transport and release-trust migration beyond this lane's narrow repair scope. The read-only Linux environment also prevents implementation and required Windows validation. Keep #161 open without an executable fix action. No files or GitHub state changed; no PR is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The SDK migration remains outstanding on supplied main SHA 4215593cd5abd4cd1f189
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #161 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,8 @@ The SDK migration remains outstanding on supplied main SHA 4215593cd5abd4cd1f189
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | fix_needed | planned | canonical | The explicit implementation request authorizes SDK adoption. The request remains valid; host and scope blockers do not require a new product decision. |
-| #44 | keep_closed | skipped | related | Preserve historical contributor context without reopening or mutating the merged PR. |
-| cluster:issue-openclaw-openclaw-windows-packaging-161 | build_fix_artifact | blocked |  | Resume only in a writable isolated environment with verified SDK contracts and a workflow sized for the coordinated migration. Do not publish a partial SDK-reference-only change. |
+| #161 | keep_related | planned | related | Downgraded the blocked fix action to non-mutating keep_related because the provided artifacts do not establish a safely executable narrow SDK migration: the SDK contract is unverified, the coordinated cutover exceeds the default repair limit, and the host cannot implement or run required Windows proof. Leave #161 open as the canonical request. No unresolved product decision or executable fix artifact is asserted. |
+| #44 | keep_closed | skipped | related | Historical evidence only; no closure or merge action applies. |
 
 ## Needs Human
 

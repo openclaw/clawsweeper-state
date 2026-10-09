@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-161",
+  "mode": "autonomous",
+  "run_id": "37979980994",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37979980994",
+  "head_sha": "271574b75b1d32480f8d9bd96f6c0e75705e6ac6",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-161.md",
+  "published_at": "2026-10-09T19:27:59.563Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/161",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/161",
+  "canonical_pr": null,
+  "summary": "The SDK migration remains outstanding on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. It requires a coordinated transport and release-trust migration beyond this lane's narrow repair scope. The read-only Linux environment also prevents implementation and required Windows validation. Keep #161 open without an executable fix action. No files or GitHub state changed; no PR is ready.",
+  "actions": [
+    {
+      "target": "#161",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#161",
+      "candidate_fix": null,
+      "reason": "Downgraded the blocked fix action to non-mutating keep_related because the provided artifacts do not establish a safely executable narrow SDK migration: the SDK contract is unverified, the coordinated cutover exceeds the default repair limit, and the host cannot implement or run required Windows proof. Leave #161 open as the canonical request. No unresolved product decision or executable fix artifact is asserted."
+    },
+    {
+      "target": "#44",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure or merge action applies."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#161",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
