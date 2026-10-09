@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T01:35:01.768Z",
+  "updated_at": "2026-10-09T01:35:02.606Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133862:5474608491:2026-10-08T19:52:31Z:clawsweeper_needs_human",
-      "comment_id": "5474608491",
-      "comment_version_key": "5474608491:2026-10-08T19:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133862#issuecomment-5474608491",
-      "comment_created_at": "2026-08-31T06:28:22Z",
-      "comment_updated_at": "2026-10-08T19:52:31Z",
-      "comment_body_sha256": "e39f231cfbb8c0fd16ca858632e3b36e1c8204f033aaa35b68e4f15cebe731e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133862,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the macOS trace exercises the production task runner and send wrapper, but directly invokes a guard rather than the real client's HTTP boundary. Provid...; Review finding: [P1] Fence delayed auto-joins before completing monitor retirement — extensions/matrix/src/matrix/monitor/task-runner.ts:107 - [P2] Pass the required fallback argu... (sha=f19ad72bfc6d622e997444307746b042435f5b93)",
-      "expected_head_sha": "f19ad72bfc6d622e997444307746b042435f5b93",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T19:53:30.844Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-wait-for-idle-deadline",
-        "head_sha": "f19ad72bfc6d622e997444307746b042435f5b93",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157005:5808218703:2026-10-08T19:53:29Z:clawsweeper_needs_human",
       "comment_id": "5808218703",
@@ -33269,6 +33236,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167459:6069430353:2026-10-09T01:33:55Z:clawsweeper_auto_repair",
+      "comment_id": "6069430353",
+      "comment_version_key": "6069430353:2026-10-09T01:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167459#issuecomment-6069430353",
+      "comment_created_at": "2026-10-08T21:30:29Z",
+      "comment_updated_at": "2026-10-09T01:33:55Z",
+      "comment_body_sha256": "a874769e6f23dda81d93738680bd7335a1228ff0bc01082655a581d69430fc14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=32302a5a076e288d119d757136ff59306df371f3)",
+      "expected_head_sha": "32302a5a076e288d119d757136ff59306df371f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T01:35:02.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/tracing-update-receipts-in-the-codebase",
+        "head_sha": "32302a5a076e288d119d757136ff59306df371f3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
