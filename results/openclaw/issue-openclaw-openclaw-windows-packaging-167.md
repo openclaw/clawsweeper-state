@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-167"
 mode: "autonomous"
-run_id: "37937540600"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37937540600"
-head_sha: "11fdbcac1012c7c58c56efd5babadddf75c00e88"
+run_id: "37945397610"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37945397610"
+head_sha: "b5159758fb4a99210cb5563aeba2854e2156b130"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T13:37:22.520Z"
+published_at: "2026-10-09T14:42:13.627Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37937540600](https://github.com/openclaw/clawsweeper/actions/runs/37937540600)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37945397610](https://github.com/openclaw/clawsweeper/actions/runs/37945397610)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/167
 
 ## Summary
 
-Verified the narrow encrypted-source staging defect remains at supplied main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. A two-file repair artifact is ready for the executor. Implementation and validation are blocked by this read-only Linux host; no files or GitHub state changed.
+Verified the unrepaired File.Copy staging path at preflight main SHA 4215593cd5abd4cd1f189e245dd64e7372415119. A narrow fix remains viable. Implementation and validation are blocked by the read-only Linux host; no files or GitHub state changed. Returned an executable repair plan, without claiming Windows reproduction or PR readiness.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,14 +66,13 @@ Verified the narrow encrypted-source staging defect remains at supplied main SHA
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167 | fix_needed | planned | canonical | Repair byte copying within the existing staging owner; no security-boundary or product-direction decision is needed. |
-| #75 | keep_closed | skipped | related | Historical context does not establish a fix for encrypted-source copying. |
-| #86 | keep_closed | skipped | related | Retain as historical evidence without assuming it resolves the reported Koffi failure. |
-| #111 | keep_closed | skipped | related | No action on this closed context PR. |
-| #160826 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate live metadata before classifying or acting on this ref. This unavailable context does not block the narrow staging repair for #167. |
-| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned |  | The repair remains viable; the executor needs a writable checkout and disposable Windows validation environment. |
-| cluster:issue-openclaw-openclaw-windows-packaging-167 | open_fix_pr | blocked |  | Implement and validate the artifact in a suitable executor before opening or updating the single implementation PR. |
+| #167 | fix_needed | planned | canonical | Repair readable encrypted-source copying at its existing producer; preserve #167 as the source issue and keep the later Koffi failure as an acceptance check. |
+| #75 | keep_closed | skipped | related | Historical implementation context, not an open repair or closure target. |
+| #86 | keep_closed | skipped | related | Preserve the landed preload behavior without treating it as coverage of #167. |
+| #111 | keep_closed | skipped | related | Historical resolution context, outside this staging repair. |
+| #160826 | needs_human | blocked | needs_human | Resolve the misqualified ref's repository identity and hydration before classifying it. Leave metadata null rather than inventing a kind or timestamp; no mutation or decision about the upstream item's contents is planned. This blocker is limited to #160826. |
+| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned | canonical | The plan is concrete and narrow; execution requires a writable checkout and disposable Windows validation environment. |
 
 ## Needs Human
 
-- #160826 only: packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null, while scope separately links https://github.com/openclaw/openclaw/issues/160826 without hydration. Resolve the intended repository and obtain live metadata before any classification or action on this ref; #167's repair path remains independent.
+- #160826 only: resolve the repository qualification and hydrate the intended ref before classification. The local preflight returned HTTP 404 with kind unknown and updated_at null; the linked openclaw/openclaw issue is unhydrated. Do not fabricate target_kind or target_updated_at. This does not block the #167 fix plan.
