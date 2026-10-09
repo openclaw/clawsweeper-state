@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-09T01:47:34.285Z",
+  "updated_at": "2026-10-09T01:47:49.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132051:5457878756:2026-08-28T21:19:49Z:re_review",
-      "comment_id": "5457878756",
-      "comment_version_key": "5457878756:2026-08-28T21:19:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132051#issuecomment-5457878756",
-      "comment_created_at": "2026-08-28T21:19:49Z",
-      "comment_updated_at": "2026-08-28T21:19:49Z",
-      "comment_body_sha256": "2fa6477dce405a17dab149cb46f37426aa1685a3a0b37d075ed32d5c9efdcb12",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132051,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T20:37:13.294Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132051:5458206042:2026-08-28T22:00:34Z:re_review",
       "comment_id": "5458206042",
@@ -32999,6 +32972,39 @@
       "status": "skipped",
       "processed_at": "2026-10-09T01:47:34.285Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167409:6066951398:2026-10-09T01:46:52Z:clawsweeper_needs_human",
+      "comment_id": "6066951398",
+      "comment_version_key": "6066951398:2026-10-09T01:46:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167409#issuecomment-6066951398",
+      "comment_created_at": "2026-10-08T18:58:51Z",
+      "comment_updated_at": "2026-10-09T01:46:52Z",
+      "comment_body_sha256": "8e73c9fd20b6d769b4f2343425200cfee03abc3b174e9108f5d1ef7f30fe89d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Reported runs exercise the production OpenClaw adapter and command producer through synthetic Codex requests and a mocked process supervisor. Provide redacted terminal captures, logs,... (sha=daf59eab1c1b1d8502f01801ade1ebaff0357102)",
+      "expected_head_sha": "daf59eab1c1b1d8502f01801ade1ebaff0357102",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T01:47:49.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-required-command-fixture-clock",
+        "head_sha": "daf59eab1c1b1d8502f01801ade1ebaff0357102",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
