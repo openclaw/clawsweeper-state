@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T18:15:15.647Z",
+  "updated_at": "2026-10-09T18:15:30.956Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1808:6079567648:2026-10-09T11:01:29Z:re_review",
-      "comment_id": "6079567648",
-      "comment_version_key": "6079567648:2026-10-09T11:01:29Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1808#issuecomment-6079567648",
-      "comment_created_at": "2026-10-09T11:01:29Z",
-      "comment_updated_at": "2026-10-09T11:01:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1808,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T11:02:27.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup-r7-containment-tests",
-        "head_sha": "558b8fed2a6acd51a8512bc31eb20e8a07daa587",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167108:6057161154:2026-10-09T11:01:26Z:clawsweeper_needs_human",
       "comment_id": "6057161154",
@@ -32542,6 +32495,39 @@
         "kind": "pull_request",
         "branch": "fix/gateway-sighup-managed-children",
         "head_sha": "5cc301d0026670e2248be7eeb7fdb7aa15b7e8a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167899:6086654273:2026-10-09T18:14:21Z:clawsweeper_needs_human",
+      "comment_id": "6086654273",
+      "comment_version_key": "6086654273:2026-10-09T18:14:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167899#issuecomment-6086654273",
+      "comment_created_at": "2026-10-09T18:14:21Z",
+      "comment_updated_at": "2026-10-09T18:14:21Z",
+      "comment_body_sha256": "3459463ff296ea635235d52847d99ae81817433fa16cc06e48e16624a8a33a8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f0c7ea1b4dfe47a1c837b653be1060b835b447b8)",
+      "expected_head_sha": "f0c7ea1b4dfe47a1c837b653be1060b835b447b8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T18:15:30.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-git-ref-mutation-cost-20260919",
+        "head_sha": "f0c7ea1b4dfe47a1c837b653be1060b835b447b8",
         "cluster_id": null,
         "job_path": null
       }
