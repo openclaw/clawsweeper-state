@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T10:37:05.468Z",
+  "updated_at": "2026-10-09T10:37:16.034Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157613:5822969592:2026-10-09T04:37:29Z:clawsweeper_needs_human",
-      "comment_id": "5822969592",
-      "comment_version_key": "5822969592:2026-10-09T04:37:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157613#issuecomment-5822969592",
-      "comment_created_at": "2026-09-24T22:02:48Z",
-      "comment_updated_at": "2026-10-09T04:37:29Z",
-      "comment_body_sha256": "e9a20578948a3ccfbe2f506a8c0d3b775978a83cc351ab8cd0e688a590abf2f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157613,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Rebase onto current main, retain only the remaining cleanup, and run the surviving changed suites and applicable changed-path checks. (sha=dc79ec58452018c53eb5387475fd952061d66bbe)",
-      "expected_head_sha": "dc79ec58452018c53eb5387475fd952061d66bbe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T04:39:03.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/core-assertion-cleanup-20260924",
-        "head_sha": "dc79ec58452018c53eb5387475fd952061d66bbe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/uirouter:53:6044768739:2026-10-09T04:38:27Z:clawsweeper_auto_repair",
       "comment_id": "6044768739",
@@ -33373,6 +33340,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1813:6079191957:2026-10-09T10:36:07Z:re_review",
+      "comment_id": "6079191957",
+      "comment_version_key": "6079191957:2026-10-09T10:36:07Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1813#issuecomment-6079191957",
+      "comment_created_at": "2026-10-09T10:36:07Z",
+      "comment_updated_at": "2026-10-09T10:36:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1813,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T10:37:14.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup-r7-workflow-guards",
+        "head_sha": "02d27a5943a954d8e722222d8ead2e808c0bc701",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
