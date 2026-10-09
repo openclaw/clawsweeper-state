@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T19:59:43.471Z",
+  "updated_at": "2026-10-09T19:59:48.028Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:1887:6082642455:2026-10-09T14:12:02Z:re_review",
-      "comment_id": "6082642455",
-      "comment_version_key": "6082642455:2026-10-09T14:12:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1887#issuecomment-6082642455",
-      "comment_created_at": "2026-10-09T14:12:02Z",
-      "comment_updated_at": "2026-10-09T14:12:02Z",
-      "comment_body_sha256": "bf648952a5721f9343455845f13bab6781b501a7292120210e10b0fcef166560",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1887,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T14:13:02.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/oce-oct09-sequential-4",
-        "head_sha": "2fb3111ca43b29ceb91fe9f5e4c095b6a623e38e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1879:6080677372:2026-10-09T14:16:33Z:clawsweeper_needs_human",
       "comment_id": "6080677372",
@@ -31750,6 +31703,39 @@
         "kind": "pull_request",
         "branch": "fix/copilot-listed-endpoint-transport",
         "head_sha": "5445c872db06d44b5682b60e155f2187bef22110",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167942:6088274987:2026-10-09T19:58:54Z:clawsweeper_auto_repair",
+      "comment_id": "6088274987",
+      "comment_version_key": "6088274987:2026-10-09T19:58:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167942#issuecomment-6088274987",
+      "comment_created_at": "2026-10-09T19:58:54Z",
+      "comment_updated_at": "2026-10-09T19:58:54Z",
+      "comment_body_sha256": "2e0e65275bc6441645f74c371093e5fede3b5dcf1dd1fb842b06a731bc98f69b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=06ec447a138f0462705a44964f384e1d902fbaf0)",
+      "expected_head_sha": "06ec447a138f0462705a44964f384e1d902fbaf0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-09T19:59:48.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude-cli-model-invariants",
+        "head_sha": "06ec447a138f0462705a44964f384e1d902fbaf0",
         "cluster_id": null,
         "job_path": null
       }
