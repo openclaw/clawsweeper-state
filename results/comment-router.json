@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T09:13:51.247Z",
+  "updated_at": "2026-10-09T09:14:48.131Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157492:5820393110:2026-10-09T03:13:08Z:clawsweeper_auto_repair",
-      "comment_id": "5820393110",
-      "comment_version_key": "5820393110:2026-10-09T03:13:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157492#issuecomment-5820393110",
-      "comment_created_at": "2026-09-24T19:03:26Z",
-      "comment_updated_at": "2026-10-09T03:13:08Z",
-      "comment_body_sha256": "ca5b5fc044860c130809da8125eb01e70625bee4761f36eb0c67dc9f943d4c7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157492,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=2ca2fe636d546f9509fb2570eba4224a2976f2e6)",
-      "expected_head_sha": "2ca2fe636d546f9509fb2570eba4224a2976f2e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T03:14:15.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/decision-catalog-accounting-f8fa117b",
-        "head_sha": "2ca2fe636d546f9509fb2570eba4224a2976f2e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167533:6071514632:2026-10-09T03:13:19Z:clawsweeper_needs_human",
       "comment_id": "6071514632",
@@ -33386,6 +33353,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167619:6077993757:2026-10-09T09:13:59Z:re_review",
+      "comment_id": "6077993757",
+      "comment_version_key": "6077993757:2026-10-09T09:13:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167619#issuecomment-6077993757",
+      "comment_created_at": "2026-10-09T09:13:59Z",
+      "comment_updated_at": "2026-10-09T09:13:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167619,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T09:14:46.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-refresh-fence-deadline-wall-clock",
+        "head_sha": "3b0be2bf662b746b54584ffa9d5719974791c407",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
