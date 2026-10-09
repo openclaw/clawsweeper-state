@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-96660"
 mode: "autonomous"
-run_id: "37857209444"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37857209444"
-head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
+run_id: "37861414837"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37861414837"
+head_sha: "e4c173aeed287b177b9c2152cb50d055da5d7223"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T23:42:46.806Z"
+published_at: "2026-10-09T00:25:19.653Z"
 canonical: "https://github.com/openclaw/openclaw/issues/96660"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/96660"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37857209444](https://github.com/openclaw/clawsweeper/actions/runs/37857209444)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37861414837](https://github.com/openclaw/clawsweeper/actions/runs/37861414837)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/96660
 
 ## Summary
 
-Verified the remaining directory false-Missing path in source at preflight main 114d443b2f8e6d7459491b627f363a8a2a631f22. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only host and absent node_modules. No code or GitHub mutations occurred.
+Confirmed the directory-to-Missing source path on preflight main 9284c76dea58496d0c02c925fa72f7aafad78ad0. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Verified the remaining directory false-Missing path in source at preflight main 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #96660 | fix_needed | planned | canonical | A narrow existing-behavior fix is justified by source. The executor must first establish a failing sessions.files.list regression before implementation. |
-| #97251 | route_security | planned | security_sensitive | Quarantine for central OpenClaw security handling without public mutation or reuse of its filesystem fallback. |
-| #98646 | keep_closed | skipped | related | Historical context only. |
-| #105015 | keep_closed | skipped | related | Historical context only; preserve current host-read authority behavior. |
-| cluster:issue-openclaw-openclaw-96660 | build_fix_artifact | planned |  | Artifact is ready for a writable executor; publication requires successful baseline reproduction, repair, review, and validation. |
+| #96660 | fix_needed | planned | canonical | A narrow ordinary bug fix remains warranted. Establish the failing sessions.files.list regression on current main before implementation; stop if it does not reproduce. |
+| #97251 | route_security | planned | security_sensitive | Quarantine this exact historical item for central OpenClaw security handling without public mutation; continue the independent directory bug plan. |
+| #98646 | keep_closed | skipped | related | Already closed; retain historical layout evidence without further action. |
+| #105015 | keep_closed | skipped | related | Already closed; preserve path-containment behavior and leave CHANGELOG.md unchanged. |
+| cluster:issue-openclaw-openclaw-96660 | build_fix_artifact | planned |  | Deliver the narrow executable repair plan to a writable executor; do not publish until reproduction, validation, and review succeed. |
 
 ## Needs Human
 
