@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:22:59.734Z",
+  "updated_at": "2026-10-09T06:23:18.006Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119975:5207031002:2026-10-02T00:09:56Z:clawsweeper_needs_human",
-      "comment_id": "5207031002",
-      "comment_version_key": "5207031002:2026-10-02T00:09:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5207031002",
-      "comment_created_at": "2026-08-06T15:36:49Z",
-      "comment_updated_at": "2026-10-02T00:09:56Z",
-      "comment_body_sha256": "cec5d8d19e5c8a4af190cdb57da51d1fca533d2afc2c315cd4d77328dc68abbc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119975,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Record boot progress instead of timer activity (P1)** - The acquired lease renews through setInterval every five seconds while run() is pending, regardless of whether startup advances. A hung asynchronous startu...; Review finding: [P1] Record boot progress instead of timer activity — src/infra/gateway-startup-progress.ts:29-34 - [P2] Apply startup evidence to unmanaged macOS restarts — src/c... (sha=959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef)",
-      "expected_head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T00:57:28.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119958",
-        "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
-        "cluster_id": "automerge-openclaw-openclaw-119975",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119975.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120143:5213518203:2026-10-03T08:37:26Z:clawsweeper_needs_human",
       "comment_id": "5213518203",
@@ -33020,6 +32973,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158044:5830889301:2026-10-09T06:22:22Z:clawsweeper_auto_repair",
+      "comment_id": "5830889301",
+      "comment_version_key": "5830889301:2026-10-09T06:22:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158044#issuecomment-5830889301",
+      "comment_created_at": "2026-09-25T10:27:40Z",
+      "comment_updated_at": "2026-10-09T06:22:22Z",
+      "comment_body_sha256": "94cac7ce590d9249839296fde83a5319beb203058e652b5429c3fbcfb47e0a39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158044,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=7eb59d0bf6f3c442c628a41cd68b44fbaa4f4efb)",
+      "expected_head_sha": "7eb59d0bf6f3c442c628a41cd68b44fbaa4f4efb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T06:23:18.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/manual-codex-byte-compaction",
+        "head_sha": "7eb59d0bf6f3c442c628a41cd68b44fbaa4f4efb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
