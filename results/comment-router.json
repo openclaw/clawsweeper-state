@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-10-09T03:54:24.272Z",
+  "updated_at": "2026-10-09T03:54:28.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:55686:4349598604:2026-10-08T22:11:57Z:autoclose",
-      "comment_id": "4349598604",
-      "comment_version_key": "4349598604:2026-10-08T22:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/55686#issuecomment-4349598604",
-      "comment_created_at": "2026-04-30T04:01:13Z",
-      "comment_updated_at": "2026-10-08T22:11:57Z",
-      "comment_body_sha256": "50597ad03d03a7003699a6677b34c27d822709e306a21df0e7d6b7834350faba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 55686,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T22:34:05.876Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75001:4351281626:2026-10-08T21:39:30Z:autoclose",
       "comment_id": "4351281626",
@@ -33240,6 +33209,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167081:6056720594:2026-10-09T03:53:25Z:clawsweeper_needs_human",
+      "comment_id": "6056720594",
+      "comment_version_key": "6056720594:2026-10-09T03:53:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167081#issuecomment-6056720594",
+      "comment_created_at": "2026-10-08T09:18:31Z",
+      "comment_updated_at": "2026-10-09T03:53:25Z",
+      "comment_body_sha256": "1e9b6071e56cb80921a16d965d2cf6fe1af5e7a96b26fa439d2610955d992160",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The updated body reports successful current-head Gateway recovery with real exec effects and restart no-replay, resolving the earlier historical-only gap. Preserve-running completion... (sha=590cce8ec130a53653581f377420f33868fe1bd1)",
+      "expected_head_sha": "590cce8ec130a53653581f377420f33868fe1bd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T03:54:28.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-command-recovery-upstream",
+        "head_sha": "590cce8ec130a53653581f377420f33868fe1bd1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
