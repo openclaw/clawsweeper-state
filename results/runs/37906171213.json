@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82015",
+  "mode": "autonomous",
+  "run_id": "37906171213",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37906171213",
+  "head_sha": "26c28e7912520955d083bb5eedefd08cb39b5547",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82015.md",
+  "published_at": "2026-10-09T08:44:36.195Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82015",
+  "canonical_pr": null,
+  "summary": "Confirmed the recovered-edit receipt defect in source at preflight main 74269ecbfee6bcb47083d87883c9af3480181fc5. Prepared a two-file repair plan. Local implementation and executable reproduction are blocked by the read-only host and missing dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#82015",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "The narrow existing-behavior repair is clear. Implementation requires a writable executor that first demonstrates failing metadata assertions on the base."
+    },
+    {
+      "target": "#82618",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Historical recovery proposal provides attribution context; the job explicitly requires a new issue implementation PR."
+    },
+    {
+      "target": "#111039",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Merged rendering work is historical context outside this repair."
+    },
+    {
+      "target": "#121528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Merged progress reporting does not cover this recovery defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82015",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "A narrow executable repair plan remains appropriate despite local implementation limits."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
