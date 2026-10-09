@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-217",
+  "mode": "autonomous",
+  "run_id": "38001807393",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38001807393",
+  "head_sha": "d1358b0e673c7ea0dfb43f8e2714d00692dc8779",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-217.md",
+  "published_at": "2026-10-09T22:59:49.957Z",
+  "canonical": "https://github.com/openclaw/agent-skills/issues/217",
+  "canonical_issue": "https://github.com/openclaw/agent-skills/issues/217",
+  "canonical_pr": null,
+  "summary": "#217 remains valid on preflight main 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. A focused implementation plan is ready, but the read-only workspace prevents code changes and branch validation. Existing skill validation, syntax parsing, and two partition regressions passed. No GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "The accepted capacity limitation remains source-confirmed. Implementation requires a writable execution environment; no product decision is unresolved."
+    },
+    {
+      "target": "#215",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Historical implementation context, not a mutation target."
+    },
+    {
+      "target": "#240",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact reference for central OpenClaw security handling without mutating it. The #217 implementation must preserve current scanner policy."
+    },
+    {
+      "target": "#287",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Preserve its planner behavior while implementing the separate complete-input memory fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-agent-skills-217",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Return a concrete executor plan. Local implementation and PR readiness are blocked solely by the read-only environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

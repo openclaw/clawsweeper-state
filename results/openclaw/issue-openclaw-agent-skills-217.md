@@ -2,12 +2,12 @@
 repo: "openclaw/agent-skills"
 cluster_id: "issue-openclaw-agent-skills-217"
 mode: "autonomous"
-run_id: "38001015010"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38001015010"
+run_id: "38001807393"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38001807393"
 head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-10-09T22:50:48.482Z"
+result_status: "blocked"
+published_at: "2026-10-09T22:59:49.957Z"
 canonical: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_issue: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/agent-skills
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38001015010](https://github.com/openclaw/clawsweeper/actions/runs/38001015010)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38001807393](https://github.com/openclaw/clawsweeper/actions/runs/38001807393)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 ## Summary
 
-#217 remains valid on main at 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. Prepared a focused shared-helper streaming plan. Baseline skill validation passed; read-only workspace permissions prevented implementation and repaired-branch validation. No GitHub mutations were performed.
+#217 remains valid on preflight main 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. A focused implementation plan is ready, but the read-only workspace prevents code changes and branch validation. Existing skill validation, syntax parsing, and two partition regressions passed. No GitHub mutations were made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #217 | fix_needed | planned | canonical | The accepted complete-input capacity improvement remains necessary. Implementation and validation must run in a writable executor checkout. |
-| #215 | keep_closed | skipped | related | Historical evidence establishing the uncapped capture contract, not an open repair target. |
-| #240 | route_security | planned | security_sensitive | Quarantine this historical reference for central OpenClaw security handling without mutating it or changing scanner policy in the streaming fix. |
-| #287 | keep_closed | skipped | related | A landed partial improvement whose partition choices and byte-coverage behavior must remain intact. |
-| cluster:issue-openclaw-agent-skills-217 | build_fix_artifact | planned | canonical | Provide the writable executor with a concrete implementation and validation plan; do not claim the branch is already repaired or validated. |
+| #217 | fix_needed | planned | canonical | The accepted capacity limitation remains source-confirmed. Implementation requires a writable execution environment; no product decision is unresolved. |
+| #215 | keep_closed | skipped | related | Historical implementation context, not a mutation target. |
+| #240 | route_security | planned | security_sensitive | Quarantine this exact reference for central OpenClaw security handling without mutating it. The #217 implementation must preserve current scanner policy. |
+| #287 | keep_closed | skipped | related | Preserve its planner behavior while implementing the separate complete-input memory fix. |
+| cluster:issue-openclaw-agent-skills-217 | build_fix_artifact | planned |  | Return a concrete executor plan. Local implementation and PR readiness are blocked solely by the read-only environment. |
 
 ## Needs Human
 
