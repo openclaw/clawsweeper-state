@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-96660"
 mode: "autonomous"
-run_id: "37869243766"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37869243766"
+run_id: "37874064936"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37874064936"
 head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T01:58:12.820Z"
+published_at: "2026-10-09T02:52:45.929Z"
 canonical: "https://github.com/openclaw/openclaw/issues/96660"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/96660"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37869243766](https://github.com/openclaw/clawsweeper/actions/runs/37869243766)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37874064936](https://github.com/openclaw/clawsweeper/actions/runs/37874064936)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/96660
 
 ## Summary
 
-Source inspection confirms the directory misclassification at preflight main SHA 3f76fe021990df309bfcd0905030520bb30f81f4. A narrow fix artifact is prepared. Implementation, failing regression, real Gateway reproduction, browser validation, and review remain blocked by the read-only sandbox and absent dependencies. No files or GitHub state were changed.
+Confirmed the reported directory classification defect in source at preflight main 608134ea54c3f3ecd08473a5b906d66872666573. Prepared a narrow fix artifact. Implementation and required runtime reproduction are blocked by the read-only filesystem and absent node_modules; no code or GitHub state changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Source inspection confirms the directory misclassification at preflight main SHA
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #96660 | fix_needed | planned | canonical | The remaining directory defect has a narrow owner-boundary repair path. Keep the issue open; root-display and original nano symlink symptoms are not proven by this repair. |
-| #97251 | route_security | planned | security_sensitive | Quarantine this exact historical item for central OpenClaw security handling without public mutation or reopening. |
-| #98646 | keep_closed | skipped | related | Already closed; no action is needed. |
-| #105015 | keep_closed | skipped | related | Already closed; retain its boundary and release-note lessons as context. |
-| cluster:issue-openclaw-openclaw-96660 | build_fix_artifact | planned |  | Proceed in a writable, dependency-provisioned executor only after establishing the required failing regression. Stop if current main does not reproduce. |
+| #96660 | fix_needed | planned | canonical | A narrow owner-boundary repair remains justified by source. Establish the required failing RPC regression before changing production code. |
+| #97251 | route_security | planned | security_sensitive | Quarantine this exact historical item for central OpenClaw security handling. No public mutation or borrowed implementation is planned. |
+| #98646 | keep_closed | skipped | related | Already closed; retain as evidence without reopening or closing it. |
+| #105015 | keep_closed | skipped | related | Already closed; preserve its established behavior and release-owned changelog policy. |
+| cluster:issue-openclaw-openclaw-96660 | build_fix_artifact | planned | canonical | Hand off an executable narrow plan to the authorized executor; do not publish until reproduction and validation gates pass. |
 
 ## Needs Human
 

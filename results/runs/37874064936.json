@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-96660",
+  "mode": "autonomous",
+  "run_id": "37874064936",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37874064936",
+  "head_sha": "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-96660.md",
+  "published_at": "2026-10-09T02:52:45.929Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/96660",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/96660",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported directory classification defect in source at preflight main 608134ea54c3f3ecd08473a5b906d66872666573. Prepared a narrow fix artifact. Implementation and required runtime reproduction are blocked by the read-only filesystem and absent node_modules; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#96660",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair remains justified by source. Establish the required failing RPC regression before changing production code."
+    },
+    {
+      "target": "#97251",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical item for central OpenClaw security handling. No public mutation or borrowed implementation is planned."
+    },
+    {
+      "target": "#98646",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Already closed; retain as evidence without reopening or closing it."
+    },
+    {
+      "target": "#105015",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Already closed; preserve its established behavior and release-owned changelog policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-96660",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96660",
+      "candidate_fix": null,
+      "reason": "Hand off an executable narrow plan to the authorized executor; do not publish until reproduction and validation gates pass."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
