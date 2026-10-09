@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167914",
+  "mode": "autonomous",
+  "run_id": "37974430774",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37974430774",
+  "head_sha": "cf33d41311e6ac9f13acb2654945316a3a0d5bb2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167914.md",
+  "published_at": "2026-10-09T18:45:19.205Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167914",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167914",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the reported defect. Implementation and required runtime reproduction are blocked by this host's read-only filesystem. No files or GitHub state changed, and no tests ran. A narrow executor fix artifact is prepared; the branch is not validated or PR-ready.",
+  "actions": [
+    {
+      "target": "#167914",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#167914",
+      "candidate_fix": null,
+      "reason": "The filesystem permits reads only. The executor must reproduce on latest main before making the owner repair; source evidence alone is not the required failing regression."
+    },
+    {
+      "target": "#164761",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct optimization; retain its contributor-owned path outside this repair."
+    },
+    {
+      "target": "#166304",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate root cause and active contributor work."
+    },
+    {
+      "target": "#166339",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Useful adjacent performance work with distinct scope."
+    },
+    {
+      "target": "#166433",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate worker implementation; preserve its existing review and contributor path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167914",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167914",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair remains appropriate, conditional on a failing latest-main regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
