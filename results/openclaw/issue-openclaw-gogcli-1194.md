@@ -2,12 +2,12 @@
 repo: "openclaw/gogcli"
 cluster_id: "issue-openclaw-gogcli-1194"
 mode: "autonomous"
-run_id: "37741994432"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37741994432"
-head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
+run_id: "37897666946"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37897666946"
+head_sha: "7b0c589b733593aa869818895d7d0288dcb5f8b6"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-08T07:16:02.211Z"
+published_at: "2026-10-09T07:16:12.157Z"
 canonical: "https://github.com/openclaw/gogcli/issues/1194"
 canonical_issue: "https://github.com/openclaw/gogcli/issues/1194"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/gogcli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37741994432](https://github.com/openclaw/clawsweeper/actions/runs/37741994432)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37897666946](https://github.com/openclaw/clawsweeper/actions/runs/37897666946)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/gogcli/issues/1194
 
 ## Summary
 
-Verified the documentation omission on main at 4d7478e9b73a2c60a5d557ff1456210ee4089422. Plan a two-file documentation fix for #1194. The worker checkout is read-only; no files or GitHub state were changed.
+Verified #1194 remains valid on preflight main 4d7478e9b73a2c60a5d557ff1456210ee4089422. Plan a two-file documentation fix with reporter credit. The worker checkout is read-only; no files or GitHub state were changed, and implementation validation remains pending.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Verified the documentation omission on main at 4d7478e9b73a2c60a5d557ff1456210ee
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1194 | fix_needed | planned | canonical | The request remains valid and can be satisfied by installation guidance plus the required changelog entry. |
-| #639 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without any GitHub mutation. The documentation fix does not alter its automation or security boundaries. |
-| #864 | keep_closed | skipped | related | Historical skill-packaging context; no repair or closure action is needed. |
-| #884 | keep_closed | skipped | independent | A resolved upstream installer issue with a different root cause. |
-| cluster:issue-openclaw-gogcli-1194 | build_fix_artifact | planned | canonical | Prepare a narrow new-fix PR path without closing #1194 or merging. |
+| #1194 | fix_needed | planned | canonical | A narrow documentation correction directly satisfies the issue without changing skill contents, discovery layout, or security boundaries. |
+| #639 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without public mutation or blocking the independent documentation fix. |
+| #864 | keep_closed | skipped | related | Historical skill-packaging context; no further action is needed in this cluster. |
+| #884 | keep_closed | skipped | independent | Resolved upstream installer behavior differs from #1194's missing installation-scope documentation. |
+| cluster:issue-openclaw-gogcli-1194 | build_fix_artifact | planned |  | Provide an executable, narrow fix plan for the downstream executor; no maintainer decision remains unresolved. |
 
 ## Needs Human
 
