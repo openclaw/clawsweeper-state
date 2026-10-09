@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T01:35:02.606Z",
+  "updated_at": "2026-10-09T01:35:06.764Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157005:5808218703:2026-10-08T19:53:29Z:clawsweeper_needs_human",
-      "comment_id": "5808218703",
-      "comment_version_key": "5808218703:2026-10-08T19:53:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157005#issuecomment-5808218703",
-      "comment_created_at": "2026-09-24T05:23:31Z",
-      "comment_updated_at": "2026-10-08T19:53:29Z",
-      "comment_body_sha256": "bf457e511f2614e2e53882be9f57d4cb57d2bc0a7bc9bce1c41d97277e876c5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157005,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Sync with current main, preserve its divider changes and roster-readiness waits, and validate the existing scrollbar, narrow-roster, resize, and settings scenarios on the integrated r... (sha=62ec4cea2b740b392053db0613b7893f98b93860)",
-      "expected_head_sha": "62ec4cea2b740b392053db0613b7893f98b93860",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T19:54:40.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sidebar-scrollbar-hit-target-20260924",
-        "head_sha": "62ec4cea2b740b392053db0613b7893f98b93860",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157025:5808018875:2026-10-08T19:53:53Z:clawsweeper_needs_human",
       "comment_id": "5808018875",
@@ -33269,6 +33236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6072444699:2026-10-09T01:34:07Z:re_review",
+      "comment_id": "6072444699",
+      "comment_version_key": "6072444699:2026-10-09T01:34:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6072444699",
+      "comment_created_at": "2026-10-09T01:34:07Z",
+      "comment_updated_at": "2026-10-09T01:34:07Z",
+      "comment_body_sha256": "13005b611efa1ae83a65abe9a26d7dfe248d335ae2b03364675df4d3b40ad4dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main dc8ac2b591 (37 commits) into memorytunning-pr-v2. new head f091e01c7f. merge was clean, skill-selection features preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage contract). focused skill-selection tests pass (6/6). note: tsgo:core shows 3 pre-existing upstream errors in state-migrations.no-replace-move.ts and plugin-source-file.ts (fs-safe api drift, not our files)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T01:35:05.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "f091e01c7f392ffbe599e11857245b3fc8356558",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
