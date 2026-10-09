@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37735016590"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37735016590"
-head_sha: "11c625de8a3cd43b7943a7d1f3100dde7a851216"
+run_id: "37871610518"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37871610518"
+head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-08T06:01:52.958Z"
+published_at: "2026-10-09T01:53:26.000Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37735016590](https://github.com/openclaw/clawsweeper/actions/runs/37735016590)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37871610518](https://github.com/openclaw/clawsweeper/actions/runs/37871610518)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-The archive mismatch remains present at preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. A focused implementation plan is prepared, but the read-only environment prevents edits, regression creation, and required validation. No code or GitHub changes were made; real-account confirmation remains outstanding.
+The archive-reconciliation gap remains on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation is blocked by the read-only workspace: no regression or patch could be written, and both focused test commands failed before running. No PR-ready branch or real-account behavior proof was produced.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The archive mismatch remains present at preflight main 8fe6a5a1186c8b3af8258ade8
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The bug is still supported by current source. Implement one ordered reconciliation path; keep the issue open. |
-| #468 | keep_closed | skipped | related | Historical evidence only; do not reopen, adopt unchanged, or emit another closure. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | planned |  | The artifact is available for execution; local implementation is blocked by enforced read-only filesystem permissions. |
+| #466 | fix_needed | planned | canonical | The issue remains valid and has no viable open implementation PR. Keep it open while implementation and proof are completed. |
+| #468 | keep_closed | skipped | related | Historical context only. Do not reopen, adopt unchanged, or issue another closure action. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | Return an implementation handoff only. A writable checkout, executable validation environment, and bounded complete implementation scope are required before PR creation. |
 
 ## Needs Human
 
