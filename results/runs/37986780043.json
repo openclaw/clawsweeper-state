@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "37986780043",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37986780043",
+  "head_sha": "410f120f8b9ad66421da42244b77035ec612620a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-09T20:27:26.586Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "Implementation remains blocked by #41's explicit upstream publication gates. No code changes or PR are appropriate yet. The checkout is clean and matches preflight main fc0f56595507f97359ba96a3334190a3f227e156; tests were not run because no implementation was made. The upstream references numbered 169 and 182 cannot receive automated actions because preflight hydrated unavailable references in the wrong repository.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Retain @vincentkoc's adoption request as the canonical tracking issue until its prerequisites are satisfied."
+    },
+    {
+      "target": "cluster:issue-openclaw-libterminal-41",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Resume only after both stable publications can be verified. The fix artifact records an audited, blocked no-PR outcome and authorizes no implementation."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical validation groundwork does not satisfy or supersede the runtime adoption request."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact upstream PR before representing central security routing. This action concerns the identity blocker, not security triage; do not mutate either reference."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact upstream reference before emitting a per-item classification. Do not apply an action to the unavailable local placeholder."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Resolve the #169 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#169 instead of linked coder/ghostty-web PR #169. Hydrate the exact upstream item before representing central security routing; no mutation is authorized.",
+    "Resolve the #182 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#182 instead of linked coder/ghostty-web PR #182. Its live metadata cannot be safely inferred or fabricated."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

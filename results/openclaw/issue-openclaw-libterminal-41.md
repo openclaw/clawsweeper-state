@@ -2,16 +2,16 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37982290628"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37982290628"
-head_sha: "2ecc4142c07a148ee423e6c6eb32713d9db7ba45"
+run_id: "37986780043"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37986780043"
+head_sha: "410f120f8b9ad66421da42244b77035ec612620a"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T19:47:49.521Z"
+published_at: "2026-10-09T20:27:26.586Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37982290628](https://github.com/openclaw/clawsweeper/actions/runs/37982290628)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37986780043](https://github.com/openclaw/clawsweeper/actions/runs/37986780043)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation remains blocked by the issue's explicit upstream publication prerequisites. Keep #41 open; no code changes or implementation PR proposed. Misqualified upstream references require corrected hydration before any routing or classification action.
+Implementation remains blocked by #41's explicit upstream publication gates. No code changes or PR are appropriate yet. The checkout is clean and matches preflight main fc0f56595507f97359ba96a3334190a3f227e156; tests were not run because no implementation was made. The upstream references numbered 169 and 182 cannot receive automated actions because preflight hydrated unavailable references in the wrong repository.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,13 @@ Implementation remains blocked by the issue's explicit upstream publication prer
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | No qualifying stable dependency is established. An upgrade, prerelease adoption, or private ABI patch would violate the product request. Resume only after both publication prerequisites are verified. |
-| #77 | keep_closed | skipped | related | Historical preparatory work does not satisfy runtime adoption. No closure or additional implementation action applies. |
-| #169 | needs_human | blocked | needs_human | The unqualified target cannot safely identify the upstream security-routing subject. Resolve the repository mismatch and hydrate the exact upstream PR before routing; preserve the prior security concern for central handling without acting on openclaw/libterminal #169. This identity blocker does not change #41's publication hold. |
-| #182 | needs_human | blocked | needs_human | Resolve the repository mismatch and hydrate the exact upstream PR before issuing a per-item classification. Do not invent target metadata or apply an action to openclaw/libterminal #182. A linked release-candidate proposal does not establish the required stable wrapper publication. |
+| #41 | keep_canonical | planned | canonical | Retain @vincentkoc's adoption request as the canonical tracking issue until its prerequisites are satisfied. |
+| cluster:issue-openclaw-libterminal-41 | fix_needed | blocked |  | Resume only after both stable publications can be verified. The fix artifact records an audited, blocked no-PR outcome and authorizes no implementation. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork does not satisfy or supersede the runtime adoption request. |
+| #169 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the exact upstream PR before representing central security routing. This action concerns the identity blocker, not security triage; do not mutate either reference. |
+| #182 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the exact upstream reference before emitting a per-item classification. Do not apply an action to the unavailable local placeholder. |
 
 ## Needs Human
 
-- #169: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/169 and obtain its hydrated identity and updated_at before central security routing; the local preflight lookup returned HTTP 404.
-- #182: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/182 and obtain its hydrated identity and updated_at before classification; the local preflight lookup returned HTTP 404.
+- Resolve the #169 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#169 instead of linked coder/ghostty-web PR #169. Hydrate the exact upstream item before representing central security routing; no mutation is authorized.
+- Resolve the #182 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#182 instead of linked coder/ghostty-web PR #182. Its live metadata cannot be safely inferred or fabricated.
