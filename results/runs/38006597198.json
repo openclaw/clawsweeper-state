@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-217",
+  "mode": "plan",
+  "run_id": "38006597198",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38006597198",
+  "head_sha": "976a4d6b59d117cf771de1b5d601e95f1c327c32",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-217.md",
+  "published_at": "2026-10-09T23:56:14.301Z",
+  "canonical": "#217",
+  "canonical_issue": "#217",
+  "canonical_pr": null,
+  "summary": "#217 remains valid on main 7e733069bc6d4e4e77adddb4fb4fcaca5a15e021. Plan one focused PR for disk-backed source/evidence capture and bounded prompt materialization. Repository skill validation and the existing first-overflow planner regression passed. No implementation or GitHub mutation was performed.",
+  "actions": [
+    {
+      "target": "#217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "The accepted capacity limitation persists. A file-reader-only change would leave complete evidence, bundles, Git output, and successful prompts resident, so the fix must carry disk-backed content through preparation and dispatch."
+    },
+    {
+      "target": "#215",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Preserve the established capture contract; no action on this closed PR."
+    },
+    {
+      "target": "#240",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical security-policy item to central OpenClaw security handling without mutation. It does not block the independent capacity fix."
+    },
+    {
+      "target": "#287",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Preserve measured-capacity fallback behavior; this partial improvement does not resolve complete-input memory scaling."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
