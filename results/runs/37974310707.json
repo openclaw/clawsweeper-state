@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167912",
+  "mode": "autonomous",
+  "run_id": "37974310707",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37974310707",
+  "head_sha": "fe750d1779208b067c1f694dba70f494cb29c401",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167912.md",
+  "published_at": "2026-10-09T18:42:51.431Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167912",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167912",
+  "canonical_pr": null,
+  "summary": "The defect remains in the checkout matching preflight main bc1d44c838e2f803ccc125d8b40ad45db2a70aa0. A narrow fix artifact is ready for the executor. Implementation and runtime validation are blocked here by read-only filesystem access and absent dependencies; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#167912",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167912",
+      "candidate_fix": null,
+      "reason": "Existing Prometheus behavior loses finite-range distinction for long durations. The explicit maintainer repair scope supplies a narrow implementation path; local execution requires a writable executor environment."
+    },
+    {
+      "target": "#127382",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167912",
+      "candidate_fix": null,
+      "reason": "Related histogram-range work in a different exporter; it does not fix the canonical Prometheus issue."
+    },
+    {
+      "target": "#96592",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence for additive bucket preservation; no action on this closed context reference."
+    },
+    {
+      "target": "#97098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#96592",
+      "candidate_fix": null,
+      "reason": "Historical context supporting the requested narrow metric scope."
+    },
+    {
+      "target": "#152217",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different exporter and affected scope; historical evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167912",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167912",
+      "candidate_fix": null,
+      "reason": "One focused new fix PR is appropriate; no hydrated Prometheus fixing PR exists."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
