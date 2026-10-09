@@ -1,0 +1,44 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T08:04:10.270Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6076963812",
+    "node_id": "IC_kwDOQb6kR88AAAABajcb5A",
+    "url": "https://github.com/openclaw/openclaw/issues/147620#issuecomment-6076963812",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/147620",
+    "pull_request_url": null,
+    "author": "quinnstoffer",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T08:02:58Z",
+    "updated_at": "2026-10-09T08:02:58Z",
+    "body_hash": "96c5c84ddb46e65faeec4f5ea75590648e1b459fedb907d4133b659a84d07ba9",
+    "body_excerpt": "Additional reproduction: Grafana Cloud Prometheus metrics are affected on OpenClaw 2026.9.8 (fc23bc8), npm install on macOS Gateway host.  ... re valid; the protected SecretRef path fails only when curl constructs HTTP Basic authentication. No credential values are included here.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://prometheus-prod-41-prod-au-southeast-1.grafana.net/api/prom/api/v1/query",
+      "https://prometheus-prod-41-prod-au-southeast-1.grafana.net/api/prom/api/v1/query"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6076963812",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical reproduction comparing direct and Gateway-proxied Prometheus authentication.",
+      "Includes relevant commands and HTTP responses without exposing credential values.",
+      "External URLs are service endpoints used in the reproduction, not solicitation, promotion, or phishing."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
