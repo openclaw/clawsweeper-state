@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37953567794"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37953567794"
+run_id: "37954561778"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37954561778"
 head_sha: "c66ad5c3b65f0cf9d0defff0f338944b1a31d08b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T15:46:42.952Z"
+published_at: "2026-10-09T15:54:41.356Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37953567794](https://github.com/openclaw/clawsweeper/actions/runs/37953567794)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37954561778](https://github.com/openclaw/clawsweeper/actions/runs/37954561778)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-The connection-deadline defect remains on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix plan is ready; implementation and PR readiness are blocked by the read-only checkout, unavailable ESP-IDF and hardware, and unavailable access to the stopped run. No code or GitHub mutations were performed.
+Confirmed the connection deadline defect on preflight main. Narrow fix artifact prepared; implementation and PR readiness are blocked by the read-only workspace, missing ESP-IDF and hardware, and unavailable stopped-run details. No code or GitHub mutations performed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ The connection-deadline defect remains on preflight main 9e4a646dfe7bc75942bcd5f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | Preserve the existing attempt deadline through transport startup without changing parsing, authentication, persistence, or public APIs. |
-| #64 | keep_closed | skipped | related | Historical context only; no closure or runtime isolation work belongs in this fix. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The source finding supports a focused repair without a product decision. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | Before PR creation or update, recover any stopped-run work, implement in a writable checkout, and complete the required regression and hardware qualification. Reuse the designated branch and maintain one PR. |
+| #64 | keep_closed | skipped | related | Historical context only; no closure or handler-isolation work belongs in this repair. |
+| #67 | fix_needed | planned | canonical | A source-confirmed ordinary recovery bug remains on current preflight main; no product or security-boundary decision is required. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The narrow repair is concrete enough for an executor artifact despite local implementation blockers. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | Resume in a writable ESP-IDF environment with GitHub access and an attached ESP32. Inspect and reuse prior work, then complete required validation before creating or updating the single implementation PR. |
 
 ## Needs Human
 
