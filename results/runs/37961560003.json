@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37961560003",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37961560003",
+  "head_sha": "232fc614f89ba3b313647b5a1e8adc1f7bb0ae58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-09T16:51:53.122Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Verified the connection deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready. Implementation and PR readiness remain blocked by the read-only filesystem, unavailable ESP-IDF toolchain and hardware, and inaccessible prior-run artifacts. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Preserve the attempt timestamp through transport startup while retaining terminal cleanup and existing retry behavior."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; handler isolation is outside this implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The ordinary recovery defect has a narrow implementation path without parser, authentication, protocol, persistence, or public API changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "The executor must recover any previous work, implement in a writable checkout, and complete the required device validation before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
