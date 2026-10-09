@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T11:21:58.685Z",
+  "updated_at": "2026-10-09T11:23:19.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167585:6074809945:2026-10-09T05:18:45Z:re_review",
-      "comment_id": "6074809945",
-      "comment_version_key": "6074809945:2026-10-09T05:18:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6074809945",
-      "comment_created_at": "2026-10-09T05:18:45Z",
-      "comment_updated_at": "2026-10-09T05:18:45Z",
-      "comment_body_sha256": "fb4635c1469eb2794ef3b46df199b22b4a92f4739e38bb093ff820af336f79c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167585,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T05:19:30.143Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/167365-effective-tool-inventory",
-        "head_sha": "f02978f6cc24cbaa1a1e837b22e827b91416b752",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167534:6071528639:2026-10-09T05:18:41Z:clawsweeper_needs_human",
       "comment_id": "6071528639",
@@ -33627,6 +33580,39 @@
         "kind": "pull_request",
         "branch": "fix/transcript-anchor-degrade-152511",
         "head_sha": "978bcf895b0f5cfe3c15cc5f012ccba4b3775bc2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167662:6075774254:2026-10-09T11:22:04Z:clawsweeper_needs_human",
+      "comment_id": "6075774254",
+      "comment_version_key": "6075774254:2026-10-09T11:22:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167662#issuecomment-6075774254",
+      "comment_created_at": "2026-10-09T06:38:38Z",
+      "comment_updated_at": "2026-10-09T11:22:04Z",
+      "comment_body_sha256": "42a88a3a288c551283283ecc44882f92c2f89ed7efd45badcdd39d80b0f9eb2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167662,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7cd91c2bc0d7cb109459f3d0c9482933675c240e)",
+      "expected_head_sha": "7cd91c2bc0d7cb109459f3d0c9482933675c240e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T11:23:19.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-writer-reader-cycle-audit-20260919",
+        "head_sha": "7cd91c2bc0d7cb109459f3d0c9482933675c240e",
         "cluster_id": null,
         "job_path": null
       }
