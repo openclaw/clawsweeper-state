@@ -1,6 +1,51 @@
 {
-  "updated_at": "2026-10-09T18:28:39.438Z",
+  "updated_at": "2026-10-09T18:28:02.254Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:158068:5830629880:2026-09-25T10:08:33Z:re_review",
+      "comment_id": "5830629880",
+      "comment_version_key": "5830629880:2026-09-25T10:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/158068#issuecomment-5830629880",
+      "comment_created_at": "2026-09-25T10:08:33Z",
+      "comment_updated_at": "2026-09-25T10:08:33Z",
+      "comment_body_sha256": "afa14030fa6ca9025c3ee5660fb94d03d2bca8cfe719bce3292346734c7fc38a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158068,
+      "author": "zozo123",
+      "author_id": 553010,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T11:31:30.068Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167780:6079642193:2026-10-09T11:30:37Z:clawsweeper_needs_human",
       "comment_id": "6079642193",
@@ -32389,39 +32434,6 @@
         "kind": "pull_request",
         "branch": "fix/embedded-context-window-provenance",
         "head_sha": "220f6122f8042ec29a77001d3b2a8690f53c1859",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:1010:6086857989:2026-10-09T18:27:39Z:clawsweeper_needs_human",
-      "comment_id": "6086857989",
-      "comment_version_key": "6086857989:2026-10-09T18:27:39Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/1010#issuecomment-6086857989",
-      "comment_created_at": "2026-10-09T18:27:39Z",
-      "comment_updated_at": "2026-10-09T18:27:39Z",
-      "comment_body_sha256": "57120f4ecf5ce9ee965619511afa7408fb045062ee26d5c96d805edcc20a977a",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 1010,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The native record owner creates a Core Audio tap and aggregate device, but the reported macOS 26.7 live runs produced no verified recording or observed deadline status. Add redacted t... (sha=fea5283540decfe97265ad1633a8ce6d8a92aba8)",
-      "expected_head_sha": "fea5283540decfe97265ad1633a8ce6d8a92aba8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T18:28:39.438Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/audio-capture-probe",
-        "head_sha": "fea5283540decfe97265ad1633a8ce6d8a92aba8",
         "cluster_id": null,
         "job_path": null
       }
