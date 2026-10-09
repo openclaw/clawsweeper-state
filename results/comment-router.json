@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T16:22:20.219Z",
+  "updated_at": "2026-10-09T16:25:00.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167734:6077907515:2026-10-09T09:08:26Z:clawsweeper_needs_human",
-      "comment_id": "6077907515",
-      "comment_version_key": "6077907515:2026-10-09T09:08:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167734#issuecomment-6077907515",
-      "comment_created_at": "2026-10-09T09:08:26Z",
-      "comment_updated_at": "2026-10-09T09:08:26Z",
-      "comment_body_sha256": "17f45db54d332d40bfb007a794cc2109c5a729cec17720dd78a737ec4e196da7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167734,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=590e4d1ecc426fd45baf50ccbc1e7a8fb92919d5)",
-      "expected_head_sha": "590e4d1ecc426fd45baf50ccbc1e7a8fb92919d5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T09:09:29.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/d18-p2-20261007",
-        "head_sha": "590e4d1ecc426fd45baf50ccbc1e7a8fb92919d5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167736:6077912433:2026-10-09T09:08:44Z:clawsweeper_needs_human",
       "comment_id": "6077912433",
@@ -33244,6 +33211,53 @@
       "finding_id": null,
       "status": "executed",
       "processed_at": "2026-10-09T16:22:18.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-scanner-dangerous-exec-inline-receiver",
+        "head_sha": "f64de0e9d08684566c64874f1384b268b8780321",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167843:6084897262:2026-10-09T16:23:57Z:re_review",
+      "comment_id": "6084897262",
+      "comment_version_key": "6084897262:2026-10-09T16:23:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167843#issuecomment-6084897262",
+      "comment_created_at": "2026-10-09T16:23:57Z",
+      "comment_updated_at": "2026-10-09T16:23:57Z",
+      "comment_body_sha256": "d9d54683e16ce77f4768f354d7c61182406a7c59c02f8e7e17297190e8f2b3d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167843,
+      "author": "YangManBOBO",
+      "author_id": 156181593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — proof comment posted: https://github.com/openclaw/openclaw/pull/167843#issuecomment-6084894401 shows the real cli deep audit flagging the inline exec skill as critical",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T16:24:58.620Z",
       "target": {
         "kind": "pull_request",
         "branch": "fix/skill-scanner-dangerous-exec-inline-receiver",
