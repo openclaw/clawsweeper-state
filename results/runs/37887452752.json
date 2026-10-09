@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-82015",
+  "mode": "autonomous",
+  "run_id": "37887452752",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37887452752",
+  "head_sha": "552822607e7287fc5acdd875c5a08b20d094a942",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-82015.md",
+  "published_at": "2026-10-09T05:46:41.285Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/82015",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/82015",
+  "canonical_pr": null,
+  "summary": "Confirmed the recovered-edit receipt defect in source at preflight main da67a08b20eb3c16445c7d4cc469f96751736cf9. Prepared a narrow executor fix plan. Implementation and runtime regression proof are blocked by the read-only host and missing node_modules; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#82015",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Existing successful-edit metadata is lost during recovery; a two-file bug fix is warranted, subject to executing the required failing regression first."
+    },
+    {
+      "target": "#82618",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Historical source context; no reopening, branch repair, or closure is requested."
+    },
+    {
+      "target": "#111039",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Merged historical context does not repair the verified recovery branch."
+    },
+    {
+      "target": "#121528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "Adjacent merged work; no remaining action belongs to this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-82015",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#82015",
+      "candidate_fix": null,
+      "reason": "The fix artifact is ready for the deterministic executor; local implementation is blocked by host permissions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
