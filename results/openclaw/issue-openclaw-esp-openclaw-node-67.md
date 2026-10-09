@@ -2,16 +2,16 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37966088184"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37966088184"
-head_sha: "c3b1bcf908f6f153e19ca7750906fca0dbba04f9"
+run_id: "37961560003"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37961560003"
+head_sha: "232fc614f89ba3b313647b5a1e8adc1f7bb0ae58"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T17:29:18.593Z"
+published_at: "2026-10-09T16:51:53.122Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37966088184](https://github.com/openclaw/clawsweeper/actions/runs/37966088184)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37961560003](https://github.com/openclaw/clawsweeper/actions/runs/37961560003)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Confirmed the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready. Implementation and required validation are blocked by the read-only workspace, unavailable ESP-IDF and hardware, and unauthenticated access to the stopped workflow. No code or GitHub changes were made.
+Verified the connection deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready. Implementation and PR readiness remain blocked by the read-only filesystem, unavailable ESP-IDF toolchain and hardware, and inaccessible prior-run artifacts. No code or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Confirmed the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | A source-confirmed ordinary recovery bug remains. Repair only startup deadline preservation. |
-| #64 | keep_closed | skipped | independent | Historical context only; no action belongs in this repair. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned | canonical | The artifact is executable in a writable environment with ESP-IDF and device access. Implementation remains blocked here; no PR-readiness or regression-pass claim is made. |
+| #67 | fix_needed | planned | canonical | Preserve the attempt timestamp through transport startup while retaining terminal cleanup and existing retry behavior. |
+| #64 | keep_closed | skipped | related | Historical context only; handler isolation is outside this implementation. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The ordinary recovery defect has a narrow implementation path without parser, authentication, protocol, persistence, or public API changes. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | The executor must recover any previous work, implement in a writable checkout, and complete the required device validation before opening or updating the single implementation PR. |
 
 ## Needs Human
 
