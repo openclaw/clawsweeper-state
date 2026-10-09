@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 9, 2026, 20:08 UTC
+Last source update: Oct 9, 2026, 20:30 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 9, 2026, 20:08 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 9, 2026, 20:08 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37983051280) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 19:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37983538538) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 9, 2026, 20:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37983051280) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 20:24 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37986640719) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 9, 2026, 14:27 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/37944232697) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 9, 2026, 20:03 UTC
+Last source update: Oct 9, 2026, 20:27 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1629 | 100% |
-| Run attempts archived | 4815 | audit |
+| Run attempts archived | 4816 | audit |
 | Latest successful clusters | 1209 | 74.2% |
 | Latest failed clusters | 416 | 25.5% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1629 clusters: 412 maintainer action, 443 automation snapshot, 712 intervention needed, 62 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) [#160826](https://github.com/openclaw/openclaw-windows-packaging/issues/160826) is maintainer_input: #160826: Resolve the intended repository identity before classification. Packaging preflight hydration returned HTTP 404 with kind unknow....
+- Maintainer first: [openclaw/libterminal](https://github.com/openclaw/libterminal) [#169](https://github.com/openclaw/libterminal/issues/169) is maintainer_input: Resolve the #169 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#169 instead of linked coder/ghostty-web....
 - Intervention first: [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) [#161](https://github.com/openclaw/openclaw-windows-packaging/pull/161) is automation_failed: The request remains valid and #161 remains canonical. Implementation is blocked by the exact scope and environment limitations recorded i....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
@@ -147,8 +147,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/libterminal](https://github.com/openclaw/libterminal) | [#169](https://github.com/openclaw/libterminal/issues/169) | maintainer_input | Resolve the #169 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#169 instead of linked coder/ghostty-web PR #169.... | Oct 9, 2026, 20:27 UTC | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [37986780043](https://github.com/openclaw/clawsweeper/actions/runs/37986780043) |
 | [openclaw/openclaw-windows-packaging](https://github.com/openclaw/openclaw-windows-packaging) | [#160826](https://github.com/openclaw/openclaw-windows-packaging/issues/160826) | maintainer_input | #160826: Resolve the intended repository identity before classification. Packaging preflight hydration returned HTTP 404 with kind unknown and upda... | Oct 9, 2026, 20:03 UTC | [issue-openclaw-openclaw-windows-packaging-167](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-167.md) | [37983839372](https://github.com/openclaw/clawsweeper/actions/runs/37983839372) |
-| [openclaw/libterminal](https://github.com/openclaw/libterminal) | [#169](https://github.com/openclaw/libterminal/issues/169) | maintainer_input | #169: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/169 and obtain its hydrated identity and updated_at before ce... | Oct 9, 2026, 19:47 UTC | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [37982290628](https://github.com/openclaw/clawsweeper/actions/runs/37982290628) |
 | [openclaw/wacli](https://github.com/openclaw/wacli) | [cluster:issue-openclaw-wacli-365](cluster:issue-openclaw-wacli-365) | maintainer_input | #365 implementation requires a current-main reproduction or redacted affected-group payload fixture distinguishing unsupported populated payloads,... | Oct 9, 2026, 19:42 UTC | [issue-openclaw-wacli-365](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-365.md) | [37981543693](https://github.com/openclaw/clawsweeper/actions/runs/37981543693) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#138707](https://github.com/openclaw/openclaw/issues/138707) | maintainer_input | Quarantine this exact reference for central OpenClaw security handling without public mutation. The ordinary prompt-refresh repair does not depend... | Oct 9, 2026, 12:11 UTC | [issue-openclaw-openclaw-167799](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-167799.md) | [37927135981](https://github.com/openclaw/clawsweeper/actions/runs/37927135981) |
 | [steipete/codexbar](https://github.com/steipete/codexbar) | [#4388](https://github.com/steipete/codexbar/issues/4388) | maintainer_input | #4388: Obtain a harness URL or exact product name, the desired metrics, and a redacted example of data missing from the existing DeepSeek provider. | Oct 9, 2026, 10:03 UTC | [issue-steipete-codexbar-4388](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4388.md) | [37914821183](https://github.com/openclaw/clawsweeper/actions/runs/37914821183) |
@@ -233,8 +233,8 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-openclaw-libterminal-41 | needs human | Resolve the #169 repository identity mismatch: preflight fetched unavailable openclaw/libterminal#169 instead of linked coder/ghostty-web PR #169.... | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [37986780043](https://github.com/openclaw/clawsweeper/actions/runs/37986780043) |
 | issue-openclaw-openclaw-windows-packaging-167 | needs human | #160826: Resolve the intended repository identity before classification. Packaging preflight hydration returned HTTP 404 with kind unknown and upda... | [issue-openclaw-openclaw-windows-packaging-167](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-packaging-167.md) | [37983839372](https://github.com/openclaw/clawsweeper/actions/runs/37983839372) |
-| issue-openclaw-libterminal-41 | needs human | #169: Resolve the misqualified reference to https://github.com/coder/ghostty-web/pull/169 and obtain its hydrated identity and updated_at before ce... | [issue-openclaw-libterminal-41](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-libterminal-41.md) | [37982290628](https://github.com/openclaw/clawsweeper/actions/runs/37982290628) |
 | issue-openclaw-wacli-365 | needs human | #365 implementation requires a current-main reproduction or redacted affected-group payload fixture distinguishing unsupported populated payloads,... | [issue-openclaw-wacli-365](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-365.md) | [37981543693](https://github.com/openclaw/clawsweeper/actions/runs/37981543693) |
 | issue-steipete-oracle-553 | execute_fix blocked | validation_script_missing: required pnpm check:changed is unavailable in target checkout | [issue-steipete-oracle-553](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-oracle-553.md) | [37962115193](https://github.com/openclaw/clawsweeper/actions/runs/37962115193) |
 | issue-steipete-codexbar-4388 | needs human | #4388: Obtain a harness URL or exact product name, the desired metrics, and a redacted example of data missing from the existing DeepSeek provider. | [issue-steipete-codexbar-4388](https://github.com/openclaw/clawsweeper-state/blob/state/results/steipete/issue-steipete-codexbar-4388.md) | [37914821183](https://github.com/openclaw/clawsweeper/actions/runs/37914821183) |
