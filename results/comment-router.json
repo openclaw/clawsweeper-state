@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T18:11:09.109Z",
+  "updated_at": "2026-10-09T18:11:14.210Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151770:5729778105:2026-10-09T10:56:12Z:clawsweeper_auto_repair",
-      "comment_id": "5729778105",
-      "comment_version_key": "5729778105:2026-10-09T10:56:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151770#issuecomment-5729778105",
-      "comment_created_at": "2026-09-18T12:09:55Z",
-      "comment_updated_at": "2026-10-09T10:56:12Z",
-      "comment_body_sha256": "61fd925aecbfb8e0aeea5172116da82e6e78763d296bd8e99c1483c92a1f6419",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151770,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=0dcc7f19abd8c8c1de06b08028b44cf67ceef44f)",
-      "expected_head_sha": "0dcc7f19abd8c8c1de06b08028b44cf67ceef44f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T10:57:59.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/runtime-facts-active-exec-scope-refresh",
-        "head_sha": "0dcc7f19abd8c8c1de06b08028b44cf67ceef44f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159428:5852806666:2026-10-09T10:47:56Z:clawsweeper_needs_human",
       "comment_id": "5852806666",
@@ -32531,6 +32498,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167891:6086591941:2026-10-09T18:10:18Z:re_review",
+      "comment_id": "6086591941",
+      "comment_version_key": "6086591941:2026-10-09T18:10:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167891#issuecomment-6086591941",
+      "comment_created_at": "2026-10-09T18:10:18Z",
+      "comment_updated_at": "2026-10-09T18:10:18Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167891,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T18:11:12.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedding-transport-budget",
+        "head_sha": "a9d465751e7c423d715cdd7f1344e7484410486d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
