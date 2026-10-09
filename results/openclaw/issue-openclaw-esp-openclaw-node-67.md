@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37859127348"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37859127348"
-head_sha: "ef343c0d9cd8084fabc459aa6ad831ce6c70e0f2"
+run_id: "37868131574"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37868131574"
+head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-08T23:29:16.138Z"
+result_status: "planned"
+published_at: "2026-10-09T01:10:15.338Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37859127348](https://github.com/openclaw/clawsweeper/actions/runs/37859127348)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37868131574](https://github.com/openclaw/clawsweeper/actions/runs/37868131574)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready; implementation and branch validation are blocked by the read-only workspace and unavailable ESP-IDF toolchain. No files or GitHub state changed.
+Verified the connection-deadline defect on supplied main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A focused fix artifact is ready; local implementation and PR readiness are blocked by the read-only checkout and unavailable ESP-IDF tooling. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #64 | keep_closed | skipped | related | Historical context with a different failure path. |
-| #67 | fix_needed | planned | canonical | An ordinary recovery bug remains on current main, with no hydrated implementation PR. Preserve the existing deadline through startup. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The implementation scope is narrow and clear; a writable executor can apply and validate this artifact. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | Implementation and PR creation require a writable executor with ESP-IDF. Complete regression, review, and build validation before opening or updating the single PR. |
+| #67 | fix_needed | planned | canonical | The upstream deadline defect is source-proven, narrow, non-security, and still present on the supplied current main. |
+| #64 | keep_closed | skipped | related | Historical context with a distinct root cause; no action is required. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | Emit an executable new-fix plan for the deterministic executor. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | The executor must implement and validate the artifact in a writable ESP-IDF environment before creating or updating the single authorized PR. |
 
 ## Needs Human
 
