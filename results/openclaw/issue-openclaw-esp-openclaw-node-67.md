@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
-mode: "autonomous"
-run_id: "38004292744"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38004292744"
-head_sha: "2ed5281c047a2cc472622f9730601ff851bbc15e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-09T23:29:12.376Z"
-canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
+mode: "plan"
+run_id: "38006594624"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38006594624"
+head_sha: "976a4d6b59d117cf771de1b5d601e95f1c327c32"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-09T23:56:49.894Z"
+canonical: "#67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38004292744](https://github.com/openclaw/clawsweeper/actions/runs/38004292744)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38006594624](https://github.com/openclaw/clawsweeper/actions/runs/38006594624)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
+Canonical: #67
 
 ## Summary
 
-Verified the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6 and prepared a narrow executable fix plan. Implementation is blocked in this worker by read-only filesystem permissions; ESP-IDF and an attached ESP32 are also unavailable. Failed-run reconciliation could not complete because GitHub CLI lacks a configured token. No code changes or GitHub mutations were made.
+Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. Plan a focused transport fix and Unity regressions. No code or GitHub mutations were made; build, execution, failed-run reconciliation, and ESP32 recovery validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Verified the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #64 | keep_closed | skipped | related | Historical context only; no sibling repair or closure is warranted. |
-| #67 | fix_needed | planned | canonical | A source-proven ordinary recovery defect has a narrow implementation path without changing authentication or public behavior contracts. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The executor can implement this narrow plan, but publication must wait for failed-run reconciliation and all required runtime validation. |
+| https://github.com/openclaw/esp-openclaw-node/issues/67 | fix_needed | planned | canonical | A narrow startup-only change can retain the existing 12,000 ms attempt deadline without changing authentication, retry reasons, public configuration, or terminal cleanup. |
 
 ## Needs Human
 
