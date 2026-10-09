@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T03:02:56.362Z",
+  "updated_at": "2026-10-09T03:03:10.761Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167431:6068650829:2026-10-08T21:47:03Z:clawsweeper_needs_human",
-      "comment_id": "6068650829",
-      "comment_version_key": "6068650829:2026-10-08T21:47:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167431#issuecomment-6068650829",
-      "comment_created_at": "2026-10-08T20:40:51Z",
-      "comment_updated_at": "2026-10-08T21:47:03Z",
-      "comment_body_sha256": "ec79a4532c475a5fb18d998cf739eb7fd53707d0c532223c332ae330bd5f5106",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167431,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - A maintainer must review the two secrets-reload changes and approve revision 07bf5349987ff546914599901768d7daf2de0e17 with the existing /allow-security-sensitive-change command. (sha=07bf5349987ff546914599901768d7daf2de0e17)",
-      "expected_head_sha": "07bf5349987ff546914599901768d7daf2de0e17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T21:48:07.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/account-scoped-channel-removal",
-        "head_sha": "07bf5349987ff546914599901768d7daf2de0e17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:65:6034505455:2026-10-08T21:47:57Z:clawsweeper_needs_human",
       "comment_id": "6034505455",
@@ -33257,6 +33224,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165987:6073375592:2026-10-09T03:02:15Z:re_review",
+      "comment_id": "6073375592",
+      "comment_version_key": "6073375592:2026-10-09T03:02:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165987#issuecomment-6073375592",
+      "comment_created_at": "2026-10-09T03:02:15Z",
+      "comment_updated_at": "2026-10-09T03:02:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165987,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T03:03:09.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/settle-wake-deliver-after-descendant-wait",
+        "head_sha": "3572962ef89c9d4e85c76f02b9037a1c9c55c703",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
