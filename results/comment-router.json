@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T19:04:18.109Z",
+  "updated_at": "2026-10-09T19:04:19.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167560:6080788195:2026-10-09T12:22:37Z:re_review",
-      "comment_id": "6080788195",
-      "comment_version_key": "6080788195:2026-10-09T12:22:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167560#issuecomment-6080788195",
-      "comment_created_at": "2026-10-09T12:22:37Z",
-      "comment_updated_at": "2026-10-09T12:22:37Z",
-      "comment_body_sha256": "4c8eeb07bd728438d651ad6d08605c8ba1eb617b465f0888dcd31ca595ad1332",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167560,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T12:23:28.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-creator-cap-silent-empty",
-        "head_sha": "f4899c2a010bafbb446d0e209bd095079c913a5b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:4390:6080642988:2026-10-09T12:13:02Z:re_review",
       "comment_id": "6080642988",
@@ -32213,6 +32166,39 @@
         "kind": "pull_request",
         "branch": "fix/immutable-tool-approval",
         "head_sha": "7fc27db6797f98db73c6bd68edb1e4e1da282ffd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166568:6036679963:2026-10-09T19:03:11Z:clawsweeper_needs_human",
+      "comment_id": "6036679963",
+      "comment_version_key": "6036679963:2026-10-09T19:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/166568#issuecomment-6036679963",
+      "comment_created_at": "2026-10-07T11:10:18Z",
+      "comment_updated_at": "2026-10-09T19:03:11Z",
+      "comment_body_sha256": "6af01f60b859c4dae2215811f88e575a2a9678ec00bd1621fd3ca539f8acdb14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 166568,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Arrange an upstream QA operator with existing Telegram broker access to complete the candidate-specific scenario in the author's handoff. (sha=78d6b55e32d6a93db691ff77e7e7d798e0692ec8)",
+      "expected_head_sha": "78d6b55e32d6a93db691ff77e7e7d798e0692ec8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T19:04:19.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/166536-assistant-source-20261007",
+        "head_sha": "78d6b55e32d6a93db691ff77e7e7d798e0692ec8",
         "cluster_id": null,
         "job_path": null
       }
