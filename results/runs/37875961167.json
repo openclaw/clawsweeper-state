@@ -1,0 +1,136 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-553",
+  "mode": "autonomous",
+  "run_id": "37875961167",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37875961167",
+  "head_sha": "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-553.md",
+  "published_at": "2026-10-09T02:48:46.388Z",
+  "canonical": "https://github.com/steipete/oracle/issues/553",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/553",
+  "canonical_pr": null,
+  "summary": "Verified both reported defects on supplied main 35d8022f370dc89e962637e4e88d3d8d35618f3d. A focused implementation artifact is ready for the executor. Local implementation and branch validation are blocked by the read-only filesystem; dependencies are also absent. No GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#465",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical implementation context; already closed."
+    },
+    {
+      "target": "#512",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate default-policy scope; leave open."
+    },
+    {
+      "target": "#539",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate effort-control defect; leave open without claiming this fix covers it."
+    },
+    {
+      "target": "#552",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the useful contributor PR. Its picker work overlaps only part of #553; do not replace, close, merge, or claim full coverage."
+    },
+    {
+      "target": "#553",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "The explicit MCP override and current picker compatibility defects remain reproducible from current-main source."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-553",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "A narrow new implementation PR can satisfy the issue without changing default policy or replacing #552."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-553",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#553",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked in this worker environment; the executable fix plan remains available."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation_script_missing: required pnpm check:changed is unavailable in target checkout",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#553",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
