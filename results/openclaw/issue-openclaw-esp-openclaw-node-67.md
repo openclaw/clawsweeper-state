@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37868131574"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37868131574"
+run_id: "37877602263"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37877602263"
 head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-10-09T01:10:15.338Z"
+published_at: "2026-10-09T03:08:40.114Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37868131574](https://github.com/openclaw/clawsweeper/actions/runs/37868131574)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37877602263](https://github.com/openclaw/clawsweeper/actions/runs/37877602263)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Verified the connection-deadline defect on supplied main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A focused fix artifact is ready; local implementation and PR readiness are blocked by the read-only checkout and unavailable ESP-IDF tooling. No code or GitHub mutations occurred.
+Verified the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A focused transport fix and regression tests are planned. Local implementation and validation are blocked by this session's read-only filesystem and absent ESP-IDF toolchain; no code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the connection-deadline defect on supplied main 9e4a646dfe7bc75942bcd5f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | The upstream deadline defect is source-proven, narrow, non-security, and still present on the supplied current main. |
-| #64 | keep_closed | skipped | related | Historical context with a distinct root cause; no action is required. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | Emit an executable new-fix plan for the deterministic executor. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | The executor must implement and validate the artifact in a writable ESP-IDF environment before creating or updating the single authorized PR. |
+| #67 | fix_needed | planned | canonical | The existing timeout is disabled by transport initialization. Preserving its timestamp is a narrow recovery fix without changing authentication or reconnect policy. |
+| #64 | keep_closed | skipped | related | Historical context with a distinct failure mechanism; no action is required. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned | canonical | The narrow implementation strategy is established and can be applied by the executor. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked | canonical | The executor must implement and validate the artifact in a writable checkout with ESP-IDF before opening or updating the PR. |
 
 ## Needs Human
 
