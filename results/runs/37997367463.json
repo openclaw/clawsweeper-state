@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77343",
+  "mode": "autonomous",
+  "run_id": "37997367463",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37997367463",
+  "head_sha": "314018ccc4e37748b77240f08ef67aef66098d8a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77343.md",
+  "published_at": "2026-10-09T22:12:46.890Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_pr": null,
+  "summary": "Reproduced both label-refresh defects on preflight main c75ff3cbf56ea8d00d1f33599482901999098f8d. Prepared a narrow executor fix plan. No files or GitHub state changed; implementation and final validation remain blocked on this read-only worker host.",
+  "actions": [
+    {
+      "target": "#77343",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "The existing automatic refresh path fails to reconcile obsolete candidate classifications, and ready_for_review is missing from both dispatch layers."
+    },
+    {
+      "target": "#77361",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without mutation. Implement the ordinary label-refresh bug independently from current main."
+    },
+    {
+      "target": "#103702",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "Retain as historical contribution and credit context. No closure, reopening, or branch mutation is planned."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77343",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "A three-file bug fix is justified by failing baseline behavior. The executor can implement and validate it on the designated issue branch without reviving either historical branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
