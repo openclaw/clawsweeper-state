@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:23:18.006Z",
+  "updated_at": "2026-10-09T06:23:18.471Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120143:5213518203:2026-10-03T08:37:26Z:clawsweeper_needs_human",
-      "comment_id": "5213518203",
-      "comment_version_key": "5213518203:2026-10-03T08:37:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120143#issuecomment-5213518203",
-      "comment_created_at": "2026-08-07T06:45:35Z",
-      "comment_updated_at": "2026-10-03T08:37:26Z",
-      "comment_body_sha256": "1031458d2937ace2bddffb36e39acaec87454eb440554509b4289da732d696b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve nested-only warnings from canonical DM fields (P2)** - Enabling nestedOnly here exposes the compatibility fallback in both resolvers. For example, accounts.work = { dm: { policy: \"open\" }, allowFrom: [\"*...; Review finding: [P2] Resolve nested-only warnings from canonical DM fields — src/config/validation-channel-rules.ts:173-174 (sha=bc3012edd4df6fb5d53e313c412aa42701639816)",
-      "expected_head_sha": "bc3012edd4df6fb5d53e313c412aa42701639816",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T00:57:28.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89254",
-        "head_sha": "bc3012edd4df6fb5d53e313c412aa42701639816",
-        "cluster_id": "automerge-openclaw-openclaw-120143",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120143.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121050:5231352861:2026-10-03T13:21:28Z:clawsweeper_needs_human",
       "comment_id": "5231352861",
@@ -32956,6 +32909,53 @@
         "kind": "pull_request",
         "branch": "prompt-field-contracts",
         "head_sha": "a8b75dea0f371a745bce7ea0df2400f74681b8d1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1788:6075568475:2026-10-09T06:22:18Z:re_review",
+      "comment_id": "6075568475",
+      "comment_version_key": "6075568475:2026-10-09T06:22:18Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1788#issuecomment-6075568475",
+      "comment_created_at": "2026-10-09T06:22:18Z",
+      "comment_updated_at": "2026-10-09T06:22:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1788,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T06:23:16.931Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/front-matter-owner",
+        "head_sha": "56dd14a80ead4495c64ce71470eb2044437ae81f",
         "cluster_id": null,
         "job_path": null
       },
