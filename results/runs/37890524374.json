@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw-windows-node",
+  "cluster_id": "issue-openclaw-openclaw-windows-node-1687",
+  "mode": "autonomous",
+  "run_id": "37890524374",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37890524374",
+  "head_sha": "8347e80179015163c469491e47badb09f31b7157",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-node-1687.md",
+  "published_at": "2026-10-09T05:55:38.022Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-node/issues/1687",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-node/issues/1687",
+  "canonical_pr": "https://github.com/openclaw/openclaw-windows-node/pull/1639",
+  "summary": "The preparation failure remains present on main 037c17dcb581cbe427ab1939576515643b9e0707. Existing PR #1639 addresses the protocol mismatch but depends on #1638 and retains validation blockers. A parallel implementation would duplicate existing work; carrying the dependency stack forward exceeds this narrow issue lane. The unsupported fix action for #1687 is downgraded to non-mutating keep_related because no safe narrow fix artifact is established by the provided evidence. No code or GitHub mutations were made. Build, tests, and runtime reproduction were not run.",
+  "actions": [
+    {
+      "target": "#1687",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1687",
+      "candidate_fix": "#1639",
+      "reason": "Keep the source issue open and preserve its link to the existing candidate implementation. Implementation remains blocked: no narrow new_fix_pr path was established without duplicating #1639 or importing its SDK dependency. Downgrade the fix action rather than invent an executable fix artifact."
+    },
+    {
+      "target": "#1639",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#1687",
+      "candidate_fix": null,
+      "reason": "Preserve @steipete's existing implementation and attribution. Its broader negotiated protocol adoption is the candidate path, rather than a duplicate issue implementation PR."
+    },
+    {
+      "target": "#1638",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this dependency for central OpenClaw security handling without mutation. This routing does not classify the ordinary compatibility report #1687 as security-sensitive."
+    },
+    {
+      "target": "#1051",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain closed historical context; emit no closure or repair mutation."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "route_security": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#1687",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
