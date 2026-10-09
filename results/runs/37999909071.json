@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-77343",
+  "mode": "autonomous",
+  "run_id": "37999909071",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37999909071",
+  "head_sha": "f89e1ba64970391edcb775ae720e76e879e95286",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-77343.md",
+  "published_at": "2026-10-09T22:40:20.664Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/77343",
+  "canonical_pr": null,
+  "summary": "Reproduced both label-refresh defects on supplied main 156412fec38b00d109da7998df1c1957e9f4b8dc. A narrow fix artifact is ready for the executor. Implementation is blocked here by the read-only filesystem; dependencies and actionlint are absent. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#77343",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "The existing expected behavior is demonstrably broken. Keep the issue open and implement one narrow PR through the designated executor."
+    },
+    {
+      "target": "#77361",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical item for central OpenClaw security handling without public mutation; continue the independent current-main bug fix."
+    },
+    {
+      "target": "#103702",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "Retain as credited historical context. Do not reopen, close again, or revive the stale branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-77343",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#77343",
+      "candidate_fix": null,
+      "reason": "Planning is complete; implementation and publication must run through the deterministic executor in a writable supported environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
