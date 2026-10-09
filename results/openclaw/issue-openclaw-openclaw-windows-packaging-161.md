@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37979980994"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37979980994"
-head_sha: "271574b75b1d32480f8d9bd96f6c0e75705e6ac6"
-workflow_conclusion: "success"
+run_id: "37983836225"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37983836225"
+head_sha: "65d743c0fe4863843073cefb8a7ff1901fbeb67c"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T19:27:59.563Z"
+published_at: "2026-10-09T20:01:40.792Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37979980994](https://github.com/openclaw/clawsweeper/actions/runs/37979980994)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37983836225](https://github.com/openclaw/clawsweeper/actions/runs/37983836225)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-The SDK migration remains outstanding on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. It requires a coordinated transport and release-trust migration beyond this lane's narrow repair scope. The read-only Linux environment also prevents implementation and required Windows validation. Keep #161 open without an executable fix action. No files or GitHub state changed; no PR is ready.
+The SDK migration remains outstanding on the supplied current main. Implementation is blocked: the read-only Linux host cannot edit or validate a branch, the SDK contract and native assets are unavailable locally, and the coordinated migration exceeds the narrow repair scope. The fix artifact records a blocked, non-executable no-PR outcome. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ The SDK migration remains outstanding on preflight main 4215593cd5abd4cd1f189e24
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #161 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,9 @@ The SDK migration remains outstanding on preflight main 4215593cd5abd4cd1f189e24
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | keep_related | planned | related | Downgraded the blocked fix action to non-mutating keep_related because the provided artifacts do not establish a safely executable narrow SDK migration: the SDK contract is unverified, the coordinated cutover exceeds the default repair limit, and the host cannot implement or run required Windows proof. Leave #161 open as the canonical request. No unresolved product decision or executable fix artifact is asserted. |
-| #44 | keep_closed | skipped | related | Historical evidence only; no closure or merge action applies. |
+| #161 | fix_needed | blocked | canonical | The request remains valid and #161 remains canonical. Implementation is blocked by the exact scope and environment limitations recorded in the fix artifact; closure and merge are prohibited by this job. |
+| #44 | keep_closed | skipped | related | Preserve the merged contributor work as historical context; no mutation is appropriate. |
+| cluster:issue-openclaw-openclaw-windows-packaging-161 | build_fix_artifact | blocked |  | Do not emit an executable partial migration or claim a validated PR. Resume implementation only in a writable, secretless Windows environment with the verified SDK package and a scoped migration workflow covering transport, release-trust consumers, and lifecycle/upgrade proof. Preserve @paulcam206's issue and backend context. |
 
 ## Needs Human
 
