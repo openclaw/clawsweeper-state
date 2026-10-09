@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T09:27:12.543Z",
+  "updated_at": "2026-10-09T09:27:29.047Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156650:5805348921:2026-09-24T00:39:32Z:re_review",
-      "comment_id": "5805348921",
-      "comment_version_key": "5805348921:2026-09-24T00:39:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156650#issuecomment-5805348921",
-      "comment_created_at": "2026-09-24T00:39:32Z",
-      "comment_updated_at": "2026-09-24T00:39:32Z",
-      "comment_body_sha256": "7c040b0b10d9ad1f6af91a10cdd6dee71fa30ae563188e2a8308fa7ae4cc1884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156650,
-      "author": "YangManBOBO",
-      "author_id": 156181593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: worker-deadline regression now dispatches a real task to a real pool worker over ipc (warm worker + atomics.wait block), so the production deadline aborts a genuinely dispatched task. dispatch proof and attribution assertions run outside the fallback owner so a swallowed candidate assertion cannot fake them. full evidence updated in the pr body. new head 1672a490b3c",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T03:27:53.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-local-worker-timeout-attribution",
-        "head_sha": "65605e1587715473ec04671d8e139ac3ab2cc566",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156650:5799355204:2026-10-09T03:26:51Z:clawsweeper_auto_repair",
       "comment_id": "5799355204",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "deslop/d17-p2-20261007",
         "head_sha": "990b13d2e65dfcd0a4d979195fd0aea2fb55f5d6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167662:6075774254:2026-10-09T09:26:28Z:clawsweeper_needs_human",
+      "comment_id": "6075774254",
+      "comment_version_key": "6075774254:2026-10-09T09:26:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167662#issuecomment-6075774254",
+      "comment_created_at": "2026-10-09T06:38:38Z",
+      "comment_updated_at": "2026-10-09T09:26:28Z",
+      "comment_body_sha256": "4aa57fd8d867ba7e7279cb1c905d660bc32af3297b8713d8f867df36dd5c9844",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167662,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Validate a clean current-main merge with the affected entry and retirement suites, and inspect the failed baseline-ratchet job to establish its cause. (sha=dc0df3ff795172749db27fc43f0b47378094bf2a)",
+      "expected_head_sha": "dc0df3ff795172749db27fc43f0b47378094bf2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T09:27:29.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-writer-reader-cycle-audit-20260919",
+        "head_sha": "dc0df3ff795172749db27fc43f0b47378094bf2a",
         "cluster_id": null,
         "job_path": null
       }
