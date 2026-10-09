@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-101",
+  "mode": "autonomous",
+  "run_id": "37941732389",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37941732389",
+  "head_sha": "d2fbd677ffe0c05f6bb4cc0005ff732e5450d2c9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-101.md",
+  "published_at": "2026-10-09T14:17:24.773Z",
+  "canonical": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_issue": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_pr": null,
+  "summary": "Rich-block URL loss remains on preflight main. A narrow fix artifact is prepared; implementation is blocked by the read-only workspace, and validation cannot start with installed Go 1.24.13 against required Go 1.27.1. No changes or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#101",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "Preserve archived third-party URLs and captions in Markdown through a focused renderer change. Treat the unverified transclusion behavior separately."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-101",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "A useful non-mutating implementation plan remains possible despite local execution blockers."
+    },
+    {
+      "target": "cluster:issue-openclaw-notcrawl-101",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "Publishing requires a writable executor, compatible Go toolchain, complete source-request verification, implementation, review, and passing validation. This worker cannot attest that a PR branch is ready."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

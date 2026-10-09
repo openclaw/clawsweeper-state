@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-101"
 mode: "autonomous"
-run_id: "37937284166"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37937284166"
-head_sha: "11fdbcac1012c7c58c56efd5babadddf75c00e88"
+run_id: "37941732389"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37941732389"
+head_sha: "d2fbd677ffe0c05f6bb4cc0005ff732e5450d2c9"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T13:36:01.270Z"
+published_at: "2026-10-09T14:17:24.773Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37937284166](https://github.com/openclaw/clawsweeper/actions/runs/37937284166)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37941732389](https://github.com/openclaw/clawsweeper/actions/runs/37941732389)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/notcrawl/issues/101
 
 ## Summary
 
-Rich-block link rendering remains missing on preflight main 279160aff610f28bb812cf232415a5864915f3fd. A narrow fix artifact is ready for the executor, but this read-only worker could neither implement nor validate a branch. Transclusion duplication remains a separate, unverified concern.
+Rich-block URL loss remains on preflight main. A narrow fix artifact is prepared; implementation is blocked by the read-only workspace, and validation cannot start with installed Go 1.24.13 against required Go 1.27.1. No changes or GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Rich-block link rendering remains missing on preflight main 279160aff610f28bb812
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101 | fix_needed | planned | canonical | The verified rich-block omission supports a narrow rendering PR. Keep #101 open because the broader transclusion concern has not been reproduced or resolved. |
-| cluster:issue-openclaw-notcrawl-101 | build_fix_artifact | planned |  | The artifact can be built by the deterministic executor. Local implementation and branch validation are blocked by the managed read-only filesystem. |
+| #101 | fix_needed | planned | canonical | Preserve archived third-party URLs and captions in Markdown through a focused renderer change. Treat the unverified transclusion behavior separately. |
+| cluster:issue-openclaw-notcrawl-101 | build_fix_artifact | planned |  | A useful non-mutating implementation plan remains possible despite local execution blockers. |
+| cluster:issue-openclaw-notcrawl-101 | open_fix_pr | blocked |  | Publishing requires a writable executor, compatible Go toolchain, complete source-request verification, implementation, review, and passing validation. This worker cannot attest that a PR branch is ready. |
 
 ## Needs Human
 
