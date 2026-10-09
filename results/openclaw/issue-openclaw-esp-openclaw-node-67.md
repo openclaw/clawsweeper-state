@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "38002151218"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38002151218"
-head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
+run_id: "38004292744"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38004292744"
+head_sha: "2ed5281c047a2cc472622f9730601ff851bbc15e"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T23:04:11.426Z"
+published_at: "2026-10-09T23:29:12.376Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38002151218](https://github.com/openclaw/clawsweeper/actions/runs/38002151218)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38004292744](https://github.com/openclaw/clawsweeper/actions/runs/38004292744)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Verified the deadline defect on supplied current main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow repair artifact is ready for the executor. Local implementation and required validation are blocked by read-only access, unavailable ESP-IDF tooling, and no attached ESP32. No code or GitHub mutations were performed.
+Verified the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6 and prepared a narrow executable fix plan. Implementation is blocked in this worker by read-only filesystem permissions; ESP-IDF and an attached ESP32 are also unavailable. Failed-run reconciliation could not complete because GitHub CLI lacks a configured token. No code changes or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified the deadline defect on supplied current main 9e4a646dfe7bc75942bcd5f628
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | The upstream deadline defect remains present and has a narrow implementation path. Keep the issue open; closure and merge are prohibited by this job. |
-| #64 | keep_closed | skipped | related | Historical context only; no sibling repair or closure action is warranted. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | Artifact construction is complete. Implementation, regression execution, failed-run reconciliation, and physical recovery proof remain blocked in this worker environment; the executor must satisfy these gates before opening a PR. |
+| #64 | keep_closed | skipped | related | Historical context only; no sibling repair or closure is warranted. |
+| #67 | fix_needed | planned | canonical | A source-proven ordinary recovery defect has a narrow implementation path without changing authentication or public behavior contracts. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | The executor can implement this narrow plan, but publication must wait for failed-run reconciliation and all required runtime validation. |
 
 ## Needs Human
 
