@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/notcrawl",
+  "cluster_id": "issue-openclaw-notcrawl-101",
+  "mode": "autonomous",
+  "run_id": "37891132564",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37891132564",
+  "head_sha": "8347e80179015163c469491e47badb09f31b7157",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-notcrawl-101.md",
+  "published_at": "2026-10-09T06:02:17.384Z",
+  "canonical": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_issue": "https://github.com/openclaw/notcrawl/issues/101",
+  "canonical_pr": null,
+  "summary": "The rich-block limitation remains on current main, but #101 explicitly leaves its output contract undecided. No implementation PR is planned pending approval of a bounded URL/caption export scope and separate handling of transclusion.",
+  "actions": [
+    {
+      "target": "#101",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#101",
+      "candidate_fix": null,
+      "reason": "Approve whether archived URL/caption output alone satisfies the requested rich-block support, specify its Markdown representation, and decide whether transclusion remains a separate issue. A partial implementation cannot safely claim to close the full request without that decision."
+    },
+    {
+      "target": "#127",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical credential-exposure context to central OpenClaw security handling without any GitHub mutation. It does not block unrelated rich-block classification."
+    },
+    {
+      "target": "#155",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": "#161",
+      "reason": "Already resolved table defect; retain as historical evidence."
+    },
+    {
+      "target": "#161",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged related work does not fulfill #101."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "route_security": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#101: Approve the rich-block Markdown output contract and whether URL/caption-only export satisfies the issue; keep unverified transclusion behavior separately scoped."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#101",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
