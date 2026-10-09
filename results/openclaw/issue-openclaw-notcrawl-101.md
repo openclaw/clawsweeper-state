@@ -2,16 +2,16 @@
 repo: "openclaw/notcrawl"
 cluster_id: "issue-openclaw-notcrawl-101"
 mode: "autonomous"
-run_id: "37911966500"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37911966500"
-head_sha: "fac77558d76d4e7b32fe555bd11a2c8f33f42293"
+run_id: "37927514454"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37927514454"
+head_sha: "e679475f63b1f1e8b2f1c6f583abe5d016b5b878"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T09:38:04.894Z"
+published_at: "2026-10-09T12:10:13.985Z"
 canonical: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_issue: "https://github.com/openclaw/notcrawl/issues/101"
 canonical_pr: null
-actions_total: 6
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/notcrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37911966500](https://github.com/openclaw/clawsweeper/actions/runs/37911966500)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37927514454](https://github.com/openclaw/clawsweeper/actions/runs/37927514454)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/notcrawl/issues/101
 
 ## Summary
 
-Rich-block URL export remains missing on preflight main 279160aff610f28bb812cf232415a5864915f3fd. A narrow implementation plan is prepared, but the read-only filesystem blocks edits and Go validation. The full issue body also requires hydration before claiming complete coverage or opening a PR. No code or GitHub changes were made.
+Verified the rich-block URL omission on preflight main. A focused fix is feasible, but this read-only run cannot implement or validate it. The complete issue body must also be retrieved before claiming the implementation satisfies #101.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,8 @@ Rich-block URL export remains missing on preflight main 279160aff610f28bb812cf23
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101 | fix_needed | planned | canonical | The URL-export limitation remains real; no active implementation PR is present in the supplied inventory. |
-| #127 | route_security | planned | security_sensitive | Quarantine this exact historical ref under the supplied security boundary for central OpenClaw handling; do not mutate it or expand its security work into #101. |
-| #155 | keep_closed | skipped | related | Historical table work has a distinct scope and does not fulfill #101. |
-| #161 | keep_closed | skipped | related | Keep merged historical work closed; no merge or closeout action is needed. |
-| cluster:issue-openclaw-notcrawl-101 | build_fix_artifact | planned |  | A scoped plan remains useful despite the worker's implementation restrictions. |
-| cluster:issue-openclaw-notcrawl-101 | open_fix_pr | blocked |  | Resume in a writable executor with full issue hydration. Reuse clawsweeper/issue-openclaw-notcrawl-101 and open only after scope, review, and native validation gates pass. |
+| #101 | fix_needed | planned | canonical | Keep #101 as the canonical implementation request. No closure or merge is authorized. |
+| cluster:issue-openclaw-notcrawl-101 | build_fix_artifact | blocked |  | Requires a writable execution environment, usable Go 1.27.1 toolchain/cache, and complete source-issue hydration before implementation and PR finalization. |
 
 ## Needs Human
 
