@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "37967377816",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37967377816",
+  "head_sha": "fe750d1779208b067c1f694dba70f494cb29c401",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-09T17:40:46.822Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": null,
+  "summary": "Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow repair is viable. Implementation and PR readiness are blocked by the read-only filesystem, unavailable ESP-IDF/device environment, and inaccessible stopped-run artifacts. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Repair the demonstrated upstream deadline defect while keeping the customized display/Bluetooth memory investigation outside this patch."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or runtime-dispatch redesign belongs in this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Provide a concrete repair plan for an executor with writable checkout and the required validation environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-esp-openclaw-node-67",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#67",
+      "candidate_fix": null,
+      "reason": "Before opening one PR, reconcile stopped-run work, refresh main and branch state, implement the patch, demonstrate base-failing/head-passing Unity behavior, and capture stock ESP32 saved-session recovery without reset."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
