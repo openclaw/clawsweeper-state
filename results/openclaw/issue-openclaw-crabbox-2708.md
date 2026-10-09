@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37900289120"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37900289120"
-head_sha: "4735291534a4e147f0ea4c6c1da85222c9680827"
-workflow_conclusion: "success"
+run_id: "37908727301"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37908727301"
+head_sha: "ef0a6bf91f8bb45af0fcdb3691c34eb46b58faad"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T07:43:29.537Z"
+published_at: "2026-10-09T09:06:39.722Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-crabbox-2708
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37900289120](https://github.com/openclaw/clawsweeper/actions/runs/37900289120)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37908727301](https://github.com/openclaw/clawsweeper/actions/runs/37908727301)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository implementation is established. Current main still lacks an authoritative pre-worker dispatch binding, and recorded triage identifies this as a Blacksmith capability dependency. Keep the issue open; no code changes or executable PR plan.
+No safe repository-only implementation is established. Current main matches the recorded provider-capability blocker: pre-worker dispatch failures lack an authoritative Testbox-to-GitHub-run association. Keep the issue open pending supported Blacksmith evidence. No changes or PR are proposed.
 
 ## Impact
 
@@ -48,13 +48,13 @@ No safe repository implementation is established. Current main still lacks an au
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #2708 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,14 +66,14 @@ No safe repository implementation is established. Current main still lacks an au
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | The reported pre-worker lifecycle gap remains distinct from the historical merged repairs. |
-| #2669 | keep_closed | skipped | related | Historical settlement context; no closure action. |
-| #2670 | keep_closed | skipped | related | Preserves recovery custody but does not supply pre-worker dispatch association. |
-| #2682 | keep_closed | skipped | related | Historical interface request with a different scope. |
-| #2683 | keep_closed | skipped | related | Exposes available evidence without resolving missing provider association. |
-| #2719 | keep_closed | skipped | independent | Ownership lookup optimization does not address dispatch failure detection. |
-| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | Provider or maintainer confirmation of a supported exact dispatch binding is required before implementation can resume. That binding must associate the exact Testbox request with its dispatch outcome before worker registration and survive cancellation or admission failure. Without it, failed dispatch and slow allocation remain indistinguishable. |
+| #2708 | keep_canonical | planned | canonical | The report remains distinct and unresolved, with a clear external dependency rather than an unresolved maintainer decision. |
+| #2669 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Preserve the landed repair and contributor credit; it does not resolve the source issue. |
+| #2682 | keep_closed | skipped | related | Historical context only. |
+| #2683 | keep_closed | skipped | related | The landed visibility repair preserves uncertainty and does not establish missing dispatch identity. |
+| #2719 | keep_closed | skipped | related | The lookup optimization does not address remote dispatch identification. |
+| cluster:issue-openclaw-crabbox-2708 | fix_needed | blocked |  | Slow allocation and failed pre-worker dispatch remain indistinguishable with the supported evidence described in the hydrated triage. Resume implementation only when Blacksmith provides the missing binding; do not create a speculative fix PR. |
 
 ## Needs Human
 
-- For https://github.com/openclaw/crabbox/issues/2708, obtain provider or maintainer confirmation of a supported exact Testbox-to-dispatch binding available before worker registration and retained through cancellation or admission failure. The October 6 triage records that CLI 0.4.65 lacks this capability; the supplied artifacts verify no newer capability. Retain the issue without a repository implementation PR until this blocker is resolved.
+- none
