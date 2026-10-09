@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T02:15:23.716Z",
+  "updated_at": "2026-10-09T02:17:23.664Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133862:6069115642:2026-10-08T21:10:26Z:re_review",
-      "comment_id": "6069115642",
-      "comment_version_key": "6069115642:2026-10-08T21:10:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133862#issuecomment-6069115642",
-      "comment_created_at": "2026-10-08T21:10:26Z",
-      "comment_updated_at": "2026-10-08T21:10:26Z",
-      "comment_body_sha256": "4fc0c3a506ea7cd07ffed4528b6e12d7e29eda5b3878ffaa1bee6481be05d00c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133862,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T21:11:30.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-wait-for-idle-deadline",
-        "head_sha": "7f48c4ad1824394535ff3344a7e9482e98d7bc44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145776:5644546226:2026-10-08T21:12:10Z:clawsweeper_needs_human",
       "comment_id": "5644546226",
@@ -33016,6 +32969,39 @@
         "kind": "pull_request",
         "branch": "dbasync/dslpd1-1",
         "head_sha": "11843b1dd7fd542ce4548c9554dc0e1f9ed038ea",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1788:6072779826:2026-10-09T02:15:20Z:clawsweeper_needs_human",
+      "comment_id": "6072779826",
+      "comment_version_key": "6072779826:2026-10-09T02:15:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1788#issuecomment-6072779826",
+      "comment_created_at": "2026-10-09T02:06:27Z",
+      "comment_updated_at": "2026-10-09T02:15:20Z",
+      "comment_body_sha256": "b4811d290ad4fbeb5542255e1aab0811c8ff8d5722fdd22bafe7b170c7059aba",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1788,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the reported real released-installation run demonstrates dedicated-Agent recreation, remapped grants, deployment, and workspace restoration, but does n...; Review finding: [P1] [P1] Verify exported permissions before adopting a same-name Role — scripts/split-layout-tenants.mjs:479-483 - [P1] [P1] Reject changed Agent settings before... (sha=b89ee5d189cde050abfa475ab44e202e255a292f)",
+      "expected_head_sha": "b89ee5d189cde050abfa475ab44e202e255a292f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T02:17:23.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upgrade-notes",
+        "head_sha": "b89ee5d189cde050abfa475ab44e202e255a292f",
         "cluster_id": null,
         "job_path": null
       }
