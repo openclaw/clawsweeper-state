@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-10-09T15:56:01.233Z",
+  "updated_at": "2026-10-09T15:53:28.822Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120943:5230656996:2026-10-09T08:43:43Z:clawsweeper_auto_repair",
+      "comment_id": "5230656996",
+      "comment_version_key": "5230656996:2026-10-09T08:43:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120943#issuecomment-5230656996",
+      "comment_created_at": "2026-08-09T08:48:16Z",
+      "comment_updated_at": "2026-10-09T08:43:43Z",
+      "comment_body_sha256": "1f004f4c9c177069fbe886f879c7eedb352be182e2663c9f010db8793549228b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=c7ba61aadc70fa17ef971205e0ff706f433e7a55)",
+      "expected_head_sha": "c7ba61aadc70fa17ef971205e0ff706f433e7a55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T08:55:20.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-template-comparison-nonfatal",
+        "head_sha": "c7ba61aadc70fa17ef971205e0ff706f433e7a55",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122193:5257532210:2026-10-09T08:45:50Z:clawsweeper_needs_human",
       "comment_id": "5257532210",
@@ -33213,39 +33246,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1918:6084200752:2026-10-09T15:54:59Z:clawsweeper_needs_human",
-      "comment_id": "6084200752",
-      "comment_version_key": "6084200752:2026-10-09T15:54:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1918#issuecomment-6084200752",
-      "comment_created_at": "2026-10-09T15:42:04Z",
-      "comment_updated_at": "2026-10-09T15:54:59Z",
-      "comment_body_sha256": "d557d750a99b72ad9da161fa11b4578ab8ea259bafeb323316fa532fa8750897",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 1918,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P1\\] Preserve PEM context when suppressing unseen frontier lines (P1)** - The previous finding remains unresolved. With tailLines=20, first deliver 20 distinct lines at T, then append -----BEGIN PRIVATE KEY---...; Review finding: [P1] [P1] Preserve PEM context when suppressing unseen frontier lines — packages/occ/src/runtime-logs/read.ts:382-385 - [high] Operational log readers can receive... (sha=602eb913a1ec1aa6ae322b6756b16d77c0f0df46)",
-      "expected_head_sha": "602eb913a1ec1aa6ae322b6756b16d77c0f0df46",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T15:56:01.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-949",
-        "head_sha": "602eb913a1ec1aa6ae322b6756b16d77c0f0df46",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
