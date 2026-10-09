@@ -1,0 +1,38 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T00:19:26.341Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6071639617",
+    "node_id": "IC_kwDOQb6kR88AAAABaeXeQQ",
+    "url": "https://github.com/openclaw/openclaw/issues/44309#issuecomment-6071639617",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/44309",
+    "pull_request_url": null,
+    "author": "Alex-HeYuQing",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T00:18:16Z",
+    "updated_at": "2026-10-09T00:18:16Z",
+    "body_hash": "ff3fcf348b036a16708eba508c4dfe62a4749406c41832dbddb1d5a0c1130fe8",
+    "body_excerpt": "**+1 — 这个需求很实在，我们在生产里天天遇到。** 我们跑的是一个多 Agent 团队（一个 Gateway，多个 agent 会话互相派活）。目前的 A2A 交接默认是\"发出去 → 对方回传 → 我这边又收到一条\"，**只要双方都触发回传，就会回声乒乓**，必须靠人肉 ... 通道**：派发与结果回传解耦，避免把\"回传\"当成\"回复\"。 3. **默认不回声**：同源消息被路由回来时默认丢弃（或在派发侧就用一次性 token 标记，防止回流）。 这个能力对我们这类\"中枢 + 多个 worker\"的编排场景价值很大，希望不要因 stale 关闭。🙏",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "6071639617",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic feature feedback describing production multi-agen ... ff problems, message echo loops, and current workarounds.",
+      "Proposes relevant technical improvements: fire-and-forget dispatch, separate result channels, and loop prevention.",
+      "No solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
