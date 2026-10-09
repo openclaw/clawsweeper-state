@@ -2,12 +2,12 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "37967377816"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37967377816"
-head_sha: "fe750d1779208b067c1f694dba70f494cb29c401"
+run_id: "37977163316"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37977163316"
+head_sha: "271574b75b1d32480f8d9bd96f6c0e75705e6ac6"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T17:40:46.822Z"
+published_at: "2026-10-09T19:05:36.098Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37967377816](https://github.com/openclaw/clawsweeper/actions/runs/37967377816)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37977163316](https://github.com/openclaw/clawsweeper/actions/runs/37977163316)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow repair is viable. Implementation and PR readiness are blocked by the read-only filesystem, unavailable ESP-IDF/device environment, and inaccessible stopped-run artifacts. No files or GitHub state were changed.
+Verified the deadline defect on preflight main 9e4a646dfe7bc75942bcd5f628488713ab7e3ef6. A narrow fix artifact is ready; implementation and required runtime proof are blocked by the read-only workspace, missing ESP-IDF, and unavailable device. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed the connection-deadline defect on preflight main 9e4a646dfe7bc75942bcd
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | fix_needed | planned | canonical | Repair the demonstrated upstream deadline defect while keeping the customized display/Bluetooth memory investigation outside this patch. |
-| #64 | keep_closed | skipped | related | Historical context only; no closure or runtime-dispatch redesign belongs in this repair. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned |  | Provide a concrete repair plan for an executor with writable checkout and the required validation environment. |
-| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked |  | Before opening one PR, reconcile stopped-run work, refresh main and branch state, implement the patch, demonstrate base-failing/head-passing Unity behavior, and capture stock ESP32 saved-session recovery without reset. |
+| #67 | fix_needed | planned | canonical | The upstream deadline defect remains real and narrowly repairable. Its relationship to the original customized-firmware incident remains unproven. |
+| #64 | keep_closed | skipped | related | Historical context only; handler isolation is outside this repair. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | build_fix_artifact | planned | canonical | The complete narrow implementation and validation plan is provided in fix_artifact. |
+| cluster:issue-openclaw-esp-openclaw-node-67 | open_fix_pr | blocked | canonical | The executor must reconcile the stopped run, implement in a writable checkout, and complete the required regression and device proof before opening or updating the single PR. |
 
 ## Needs Human
 
