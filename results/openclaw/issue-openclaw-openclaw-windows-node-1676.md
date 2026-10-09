@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-node"
 cluster_id: "issue-openclaw-openclaw-windows-node-1676"
 mode: "autonomous"
-run_id: "37868207672"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37868207672"
+run_id: "37873534034"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37873534034"
 head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T01:13:02.079Z"
+published_at: "2026-10-09T02:18:16.182Z"
 canonical: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-node/issues/1676"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw-windows-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37868207672](https://github.com/openclaw/clawsweeper/actions/runs/37868207672)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37873534034](https://github.com/openclaw/clawsweeper/actions/runs/37873534034)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-node/issues/1676
 
 ## Summary
 
-The reported metadata defect remains supported by the inspected preflight main. A narrow fix plan is ready, but implementation is blocked by the read-only filesystem. No code changed, tests ran, Windows proof was collected, or GitHub mutations occurred.
+The metadata refresh gap remains on supplied main SHA 037c17dcb581cbe427ab1939576515643b9e0707. A narrow implementation artifact is ready for the executor. Code changes and Windows validation are blocked by this read-only Linux workspace; the owning-PR recheck also requires authenticated GitHub access. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -66,10 +66,10 @@ The reported metadata defect remains supported by the inspected preflight main. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #1676 | fix_needed | planned | canonical | Implement the ordinary metadata bug without changing historical migration eligibility. |
-| #1592 | keep_related | planned | related | Keep broader Store migration recovery separate. |
-| #1675 | keep_related | planned | related | Preserve natalie-aguinaldo's independent contribution; do not combine or replace it. |
-| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | The artifact is actionable for a writable executor. Local implementation and PR readiness remain blocked by this worker's environment. |
+| #1676 | fix_needed | planned | canonical | A focused existing-registration metadata reconciliation is viable. Implementation is environmentally blocked, without an unresolved product decision. |
+| #1592 | keep_related | planned | related | Broader recovery work remains separate; this issue is not a duplicate or covered closeout target. |
+| #1675 | keep_related | planned | related | Preserve natalie-aguinaldo's separate migration contribution. It is not the implementation path for #1676. |
+| cluster:issue-openclaw-openclaw-windows-node-1676 | build_fix_artifact | planned |  | Return a concrete executor plan. Implementation requires a writable Windows checkout and an authenticated, branch-specific ownership recheck. |
 
 ## Needs Human
 
