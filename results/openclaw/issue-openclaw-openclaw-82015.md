@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82015"
 mode: "autonomous"
-run_id: "37880431493"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37880431493"
-head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
+run_id: "37884829911"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37884829911"
+head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T04:16:59.811Z"
+published_at: "2026-10-09T05:10:40.094Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82015"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37880431493](https://github.com/openclaw/clawsweeper/actions/runs/37880431493)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37884829911](https://github.com/openclaw/clawsweeper/actions/runs/37884829911)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/82015
 
 ## Summary
 
-Confirmed the recovered-edit receipt defect in source at preflight main 15305ccd53dedd1663a89f92a402480d7b71bbf8. Prepared a two-file fix plan. Implementation and runtime reproduction are blocked by the read-only filesystem; the focused test command failed during Corepack startup. No files or GitHub state were changed.
+Confirmed the recovery receipt defect in source at preflight main SHA 48e0271f6040cca380256d69d1d97e5f1636b770. Prepared a narrow fix plan. Implementation and failing/passing regression proof are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Confirmed the recovered-edit receipt defect in source at preflight main 15305ccd
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82015 | fix_needed | planned | canonical | A narrow existing-behavior bug remains in the active edit owner. No viable open implementation PR appears in the provided inventory. |
-| #82618 | keep_closed | skipped | related | Historical credited proposal only; do not reopen, close again, or restore retired files. |
-| #111039 | keep_closed | skipped | related | Historical rendering context; no action or additional UI work is needed in this cluster. |
-| #121528 | keep_closed | skipped | related | Adjacent historical feature; keep outside the implementation scope. |
-| cluster:issue-openclaw-openclaw-82015 | build_fix_artifact | planned | canonical | Concrete narrow artifact for the authorized executor; publication must wait for failing-base reproduction, implementation, required validation, and fresh review. |
+| #82015 | fix_needed | planned | canonical | The remaining defect is loss of existing change metadata after verified recovery; no new feature or policy decision is required. |
+| #82618 | keep_closed | skipped | related | Historical proposal supplies useful context and credit; the job explicitly requests a new fix PR in the current owner. |
+| #111039 | keep_closed | skipped | related | Merged rendering work is historical context and does not resolve the source-confirmed recovery metadata defect. |
+| #121528 | keep_closed | skipped | related | Historical streaming work requires no action in this repair. |
+| cluster:issue-openclaw-openclaw-82015 | build_fix_artifact | planned |  | The artifact is ready for an executor with a writable checkout; local implementation and runtime proof remain blocked. |
 
 ## Needs Human
 
