@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-466"
 mode: "autonomous"
-run_id: "37879947404"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37879947404"
-head_sha: "f847e0a87d80a4afb35d2afc2d6a3df9ef8dc73f"
+run_id: "37884690340"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37884690340"
+head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T03:40:17.871Z"
+published_at: "2026-10-09T04:41:29.941Z"
 canonical: "https://github.com/openclaw/wacli/issues/466"
 canonical_issue: "https://github.com/openclaw/wacli/issues/466"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37879947404](https://github.com/openclaw/clawsweeper/actions/runs/37879947404)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37884690340](https://github.com/openclaw/clawsweeper/actions/runs/37884690340)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/466
 
 ## Summary
 
-Confirmed the archive-reconciliation gap on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation and tests are blocked by the read-only filesystem. No code or GitHub state changed; no regression or real-account behavior proof was established.
+#466 remains valid on preflight main 8fe6a5a1186c8b3af8258ade817e443e434d7d91. Implementation and validation are blocked by the read-only environment and unavailable required toolchain. No code or GitHub state changed; no PR was opened.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed the archive-reconciliation gap on preflight main 8fe6a5a1186c8b3af8258
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #466 | fix_needed | planned | canonical | The request remains valid and has an explicit accepted boundary. No viable open implementation PR exists in the supplied inventory. |
-| #468 | keep_closed | skipped | related | Historical implementation evidence only. Do not reopen, adopt unchanged, or issue another closure action. |
-| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | The artifact documents the accepted repair, but implementation cannot proceed in this environment or be represented as a validated, bounded automatic PR. |
+| #466 | fix_needed | planned | canonical | An ordinary archive-state bug remains unresolved. #466 owns the accepted replacement path; no viable open implementation PR is present in the supplied inventory. |
+| #468 | keep_closed | skipped | related | Historical implementation and review evidence only. Do not reopen, adopt unchanged, or emit another closure. |
+| cluster:issue-openclaw-wacli-466 | build_fix_artifact | blocked |  | Classification is complete, but implementation cannot proceed in this environment. A writable checkout with the existing required toolchain and a bounded implementation scope is necessary; behavior completion additionally requires real-account confirmation. |
 
 ## Needs Human
 
