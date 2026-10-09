@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-10-09T18:33:57.636Z",
+  "updated_at": "2026-10-09T18:34:17.635Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166269",
-      "comment_id": "repair-loop-label-sweep:automerge:166269",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166269",
-      "comment_created_at": "2026-10-09T11:32:59.636Z",
-      "comment_updated_at": "2026-10-09T11:32:59.636Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166269,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T11:34:29.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-auth-timeout-metadata",
-        "head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-        "cluster_id": "automerge-openclaw-openclaw-166269",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109337:4998088146:2026-10-09T11:33:31Z:clawsweeper_auto_repair",
       "comment_id": "4998088146",
@@ -32394,6 +32342,39 @@
         "kind": "pull_request",
         "branch": "karkarl-sidebar-button-scaling",
         "head_sha": "2bcb1b5d53354ef8ba071479a8d712fe6c7836c2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167894:6086447896:2026-10-09T18:32:57Z:clawsweeper_needs_human",
+      "comment_id": "6086447896",
+      "comment_version_key": "6086447896:2026-10-09T18:32:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167894#issuecomment-6086447896",
+      "comment_created_at": "2026-10-09T18:00:54Z",
+      "comment_updated_at": "2026-10-09T18:32:57Z",
+      "comment_body_sha256": "682f5dd930fb2b84cdbd179ccda5fb6909489a801a91cb4891be29d4e9bf4d91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=690502e8f259dd913a1e6024df6079dec5f3fd64)",
+      "expected_head_sha": "690502e8f259dd913a1e6024df6079dec5f3fd64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T18:34:17.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stab-agent-create-ready",
+        "head_sha": "690502e8f259dd913a1e6024df6079dec5f3fd64",
         "cluster_id": null,
         "job_path": null
       }
