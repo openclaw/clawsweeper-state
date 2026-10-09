@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-09T16:22:07.676Z",
+  "updated_at": "2026-10-09T16:22:20.219Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89584:4617352897:2026-06-03T22:49:26Z:re_review",
-      "comment_id": "4617352897",
-      "comment_version_key": "4617352897:2026-06-03T22:49:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89584#issuecomment-4617352897",
-      "comment_created_at": "2026-06-03T22:49:26Z",
-      "comment_updated_at": "2026-06-03T22:49:26Z",
-      "comment_body_sha256": "ee354ebc020cf63ae0031f42b4fc414ce4d4c831b6d5611ba01bc7a5b0c0e085",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89584,
-      "author": "ubehera",
-      "author_id": 3691059,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T09:08:53.239Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167734:6077907515:2026-10-09T09:08:26Z:clawsweeper_needs_human",
       "comment_id": "6077907515",
@@ -33245,6 +33218,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167843:6084856054:2026-10-09T16:21:22Z:re_review",
+      "comment_id": "6084856054",
+      "comment_version_key": "6084856054:2026-10-09T16:21:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167843#issuecomment-6084856054",
+      "comment_created_at": "2026-10-09T16:21:22Z",
+      "comment_updated_at": "2026-10-09T16:21:22Z",
+      "comment_body_sha256": "90bb09c5589d3f27e8b34cca8e00c6c2e40e18db2e5490542702659b8d21b92e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167843,
+      "author": "YangManBOBO",
+      "author_id": 156181593,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof added above: the deep audit cli `openclaw security audit --deep` now reports the inline `require(\"child_process\").exec(...)` skill as a critical `skills.code_safety` / `dangerous-exec` finding on an isolated fixture workspace (separate openclaw_state_dir/config, built from this pr head)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T16:22:18.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-scanner-dangerous-exec-inline-receiver",
+        "head_sha": "f64de0e9d08684566c64874f1384b268b8780321",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
