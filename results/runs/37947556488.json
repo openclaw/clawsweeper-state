@@ -1,0 +1,52 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "37947556488",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37947556488",
+  "head_sha": "b078ff01e48a5b18d93089f5e96b07a2e2adccae",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-09T14:58:30.758Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow fix artifact. Local implementation is blocked by the read-only filesystem, missing Bun, and unavailable GitHub DNS. No code or GitHub state was changed; validation and real-setup proof remain pending.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The ordinary expansion bug remains viable and narrowly implementable. Keep #233 as the canonical issue while the executor implements and validates its fix."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The artifact is actionable in a writable executor with Bun and GitHub access. Only local implementation and validation are blocked; no maintainer product decision is unresolved."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
