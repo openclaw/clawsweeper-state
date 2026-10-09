@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-10-09T21:13:10.173Z",
+  "updated_at": "2026-10-09T21:13:30.943Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79670:4411620367:2026-10-09T15:25:00Z:autoclose",
-      "comment_id": "4411620367",
-      "comment_version_key": "4411620367:2026-10-09T15:25:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/79670#issuecomment-4411620367",
-      "comment_created_at": "2026-05-09T05:42:54Z",
-      "comment_updated_at": "2026-10-09T15:25:00Z",
-      "comment_body_sha256": "e1f9b12f4ccda16de3b8cf1f1e15aba41b21775e2a1fca5d90b620cbea4d1809",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T15:38:33.572Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149109:5680769809:2026-10-09T15:12:10Z:clawsweeper_auto_repair",
       "comment_id": "5680769809",
@@ -31875,6 +31844,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167954:6089345759:2026-10-09T21:12:32Z:re_review",
+      "comment_id": "6089345759",
+      "comment_version_key": "6089345759:2026-10-09T21:12:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167954#issuecomment-6089345759",
+      "comment_created_at": "2026-10-09T21:12:32Z",
+      "comment_updated_at": "2026-10-09T21:12:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167954,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T21:13:29.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167923-docker-importers",
+        "head_sha": "4b17c2045cd821c3e046d96659cd1c0fa444a25c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
