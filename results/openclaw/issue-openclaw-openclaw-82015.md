@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-82015"
 mode: "autonomous"
-run_id: "37890504909"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37890504909"
-head_sha: "8347e80179015163c469491e47badb09f31b7157"
+run_id: "37895082362"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37895082362"
+head_sha: "cf34fa9269dcbc53a787a926a9b991f33af2087c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T06:24:43.411Z"
+published_at: "2026-10-09T07:19:37.282Z"
 canonical: "https://github.com/openclaw/openclaw/issues/82015"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/82015"
 canonical_pr: null
-actions_total: 5
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37890504909](https://github.com/openclaw/clawsweeper/actions/runs/37890504909)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37895082362](https://github.com/openclaw/clawsweeper/actions/runs/37895082362)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/82015
 
 ## Summary
 
-Confirmed the recovered-edit receipt defect in source at preflight main 629593b029d8ff506ab223314b7be1d9d6ac8d18. Prepared a two-file repair plan. Read-only host restrictions prevent edits, a failing runtime regression, and local validation; no implementation or GitHub mutations occurred.
+Confirmed the recovered-edit receipt defect in source at preflight main fce3c7378c5b644426aced37b23c2d7d8cb3b7da. A narrow two-file fix artifact is ready for the executor. Local implementation and failing/passing regression proof are blocked by the host's read-only filesystem; no code or GitHub state was changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,12 @@ Confirmed the recovered-edit receipt defect in source at preflight main 629593b0
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #82015 | fix_needed | planned | canonical | Existing successful-edit metadata is lost only during verified post-write recovery. The repair fits the authorized bug-only scope; implementation requires a writable executor. |
-| #82618 | keep_closed | skipped | related | Historical same-root-cause proposal supplies credit and context, not an actionable branch or closure target. |
-| #111039 | keep_closed | skipped | related | Merged rendering work is historical context with a distinct implementation surface. |
-| #121528 | keep_closed | skipped | related | Live progress is adjacent historical work and does not cover the confirmed recovery defect. |
-| cluster:issue-openclaw-openclaw-82015 | build_fix_artifact | planned |  | A concrete narrow fix artifact is available despite this host's implementation restriction. No maintainer product decision remains unresolved. |
+| #82015 | fix_needed | planned | canonical | The remaining gap is broken existing recovery behavior, with an explicit narrow maintainer-approved fix shape. |
+| #82618 | keep_closed | skipped | related | Historical proposal supplies credited context; the job explicitly requires a new issue implementation PR with source_prs empty. |
+| #111039 | keep_closed | skipped | related | Historical rendering context does not resolve the remaining recovery defect. |
+| #121528 | keep_closed | skipped | related | Historical streaming context remains outside this two-file repair. |
+| cluster:issue-openclaw-openclaw-82015 | build_fix_artifact | planned | canonical | The narrow plan is supported by current source; implementation and executable regression evidence require a writable executor. |
+| cluster:issue-openclaw-openclaw-82015 | open_fix_pr | blocked | canonical | Cannot prepare a locally validated branch on this host. Reproduction must succeed on the executor before production edits or PR publication. |
 
 ## Needs Human
 
