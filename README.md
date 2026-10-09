@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 9, 2026, 23:37 UTC
+Last source update: Oct 9, 2026, 23:46 UTC
 
 ### Fleet
 
@@ -23,7 +23,7 @@ Last source update: Oct 9, 2026, 23:37 UTC
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 9, 2026, 23:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38003774598) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 23:35 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38005026696) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 9, 2026, 23:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38005967354) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 9, 2026, 22:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38000827936) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 9, 2026, 23:40 UTC
+Last source update: Oct 9, 2026, 23:47 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1632 | 100% |
-| Run attempts archived | 4839 | audit |
+| Run attempts archived | 4840 | audit |
 | Latest successful clusters | 1211 | 74.2% |
 | Latest failed clusters | 417 | 25.6% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1632 clusters: 413 maintainer action, 443 automation snapshot, 714 intervention needed, 62 no pending action, 0 completed.
 - Maintainer first: [openclaw/gogcli](https://github.com/openclaw/gogcli) [#639](https://github.com/openclaw/gogcli/issues/639) is maintainer_input: Quarantine this exact reference for central OpenClaw security handling while continuing the independent documentation repair..
-- Intervention first: [openclaw/peekaboo](https://github.com/openclaw/peekaboo) [issue-openclaw-peekaboo-922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-922.md) is automation_blocked: #922 remains unresolved on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. No receiver-proven mechanism supports a safe, focused....
+- Intervention first: [openclaw/peekaboo](https://github.com/openclaw/peekaboo) [issue-openclaw-peekaboo-922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-922.md) is automation_blocked: #922 remains valid on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. Implementation is blocked: no receiver-qualified mechanism....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#164610](https://github.com/openclaw/openclaw/issues/164610) is action_planned: The observed report owns the repair. Reproduce on current main before implementing; do not close or merge from this lane..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | #922 remains unresolved on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. No receiver-proven mechanism supports a safe, focused implement... | Oct 9, 2026, 23:40 UTC | [issue-openclaw-peekaboo-922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-922.md) | [38005267248](https://github.com/openclaw/clawsweeper/actions/runs/38005267248) |
+| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) |  | automation_blocked | #922 remains valid on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. Implementation is blocked: no receiver-qualified mechanism was estab... | Oct 9, 2026, 23:47 UTC | [issue-openclaw-peekaboo-922](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-922.md) | [38005860586](https://github.com/openclaw/clawsweeper/actions/runs/38005860586) |
 | [openclaw/esp-openclaw-node](https://github.com/openclaw/esp-openclaw-node) | [#67](https://github.com/openclaw/esp-openclaw-node/pull/67) | automation_failed | A source-proven ordinary recovery defect has a narrow implementation path without changing authentication or public behavior contracts. | Oct 9, 2026, 23:29 UTC | [issue-openclaw-esp-openclaw-node-67](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-esp-openclaw-node-67.md) | [38004292744](https://github.com/openclaw/clawsweeper/actions/runs/38004292744) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | Implementation depends on Blacksmith exposing a supported, durable pre-worker dispatch association and terminal status. Current main cannot disting... | Oct 9, 2026, 23:05 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [38002325498](https://github.com/openclaw/clawsweeper/actions/runs/38002325498) |
 | [openclaw/acpx](https://github.com/openclaw/acpx) |  | automation_blocked | Implementation is blocked by insufficient reproduction details. Inspection of supplied main found no verified acpx root cause or safe focused patch... | Oct 9, 2026, 22:59 UTC | [issue-openclaw-acpx-808](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-acpx-808.md) | [38001789910](https://github.com/openclaw/clawsweeper/actions/runs/38001789910) |
