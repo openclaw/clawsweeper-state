@@ -1,0 +1,83 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-547",
+  "mode": "autonomous",
+  "run_id": "37908845856",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37908845856",
+  "head_sha": "ef0a6bf91f8bb45af0fcdb3691c34eb46b58faad",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-547.md",
+  "published_at": "2026-10-09T09:08:12.990Z",
+  "canonical": "https://github.com/steipete/oracle/issues/547",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/547",
+  "canonical_pr": null,
+  "summary": "#547 remains actionable on main 35d8022f370dc89e962637e4e88d3d8d35618f3d. A narrow five-file fix artifact is ready. Local implementation and validation are blocked by the read-only filesystem; the required macOS CLI demonstration is unavailable on this Linux runner. No files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#547",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "The source-proven CLI usability defect has a narrow implementation path without changing authentication or window ownership boundaries."
+    },
+    {
+      "target": "#380",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical ownership-safe window restoration work; not an open candidate or replacement target."
+    },
+    {
+      "target": "#541",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed diagnostic work with a distinct scope; no additional action."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-547",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "The artifact is narrowly scoped and executable in a writable environment; no product decision remains unresolved."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-547",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "Implementation and required validation must complete in a writable checkout with macOS browser access before PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
