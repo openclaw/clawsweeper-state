@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "37685761735"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37685761735"
-head_sha: "34cc1aa014a16295779cdca4e336479bad5636ec"
+run_id: "37979623721"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37979623721"
+head_sha: "271574b75b1d32480f8d9bd96f6c0e75705e6ac6"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-07T20:59:23.577Z"
+published_at: "2026-10-09T19:24:40.476Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 2
 ---
 
 # issue-openclaw-libterminal-41
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37685761735](https://github.com/openclaw/clawsweeper/actions/runs/37685761735)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37979623721](https://github.com/openclaw/clawsweeper/actions/runs/37979623721)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation is blocked by the issue's explicit upstream publication gates. Hydrated October 7 evidence reports both gates unmet, and no qualifying stable wrapper was identified. Keep #41 open; no code changes, fix artifact, or PR. Security-sensitive upstream context remains evidence only; routing is withheld because the correct upstream items and their live timestamps were not hydrated.
+Adoption is blocked on the issue's explicit upstream publication gates. No qualifying stable Ghostty v1.4 wrapper was established. Current main still pins ghostty-web@0.4.0; validation groundwork is already present. No files changed, tests run, or PR proposed. The unavailable #169 and #182 placeholders require repository-qualified hydration before per-item actions can be safely emitted.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Implementation is blocked by the issue's explicit upstream publication gates. Hy
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,12 @@ Implementation is blocked by the issue's explicit upstream publication gates. Hy
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | A published dependency satisfying the requested contract is a prerequisite, not an implementation choice. Resume only after both publications are verified; no maintainer decision is currently required. |
-| #77 | keep_closed | skipped | related | Historical preparation does not satisfy the dependency-adoption request. No closure or merge action is applicable. |
-| #169 | keep_related | skipped | related | Retain the upstream link as related context only. This skipped action does not establish that openclaw/libterminal#169 exists or classify its unavailable contents. Security routing cannot safely be repaired from these artifacts: correct the repository identity and hydrate coder/ghostty-web#169 before routing that exact upstream item to central OpenClaw security handling. No timestamp is invented and no GitHub action is authorized. |
-| #182 | keep_related | skipped | related | Retain the upstream link as related context only. This skipped action does not establish that openclaw/libterminal#182 exists or classify its unavailable contents. Security routing cannot safely be repaired from these artifacts: correct the repository identity and hydrate coder/ghostty-web#182 before routing that exact upstream item to central OpenClaw security handling. No timestamp is invented and no GitHub action is authorized. This does not reclassify #41 as security work. |
+| #41 | keep_canonical | planned | canonical | Keep the adoption request open. Resume implementation only after both publications and wrapper compatibility are verified; the implementation dispatch does not override the issue's explicit prerequisites. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork remains credited to @steipete and adoption context to @vincentkoc; it does not satisfy #41. |
+| #169 | needs_human | blocked | needs_human | Resolve the repository-qualified identity and hydrate https://github.com/coder/ghostty-web/pull/169 for central security handling. A route_security action against this local placeholder cannot be safely repaired from the provided artifacts. Do not mutate either item. |
+| #182 | needs_human | blocked | needs_human | Resolve the repository-qualified identity and hydrate https://github.com/coder/ghostty-web/pull/182 before emitting a per-item keep_related action. Retain the external link as publication context only; do not act on the unavailable local placeholder. |
 
 ## Needs Human
 
-- none
+- #169: Correct the repository-misqualified 404 placeholder and hydrate https://github.com/coder/ghostty-web/pull/169 for repository-qualified central security handling; no verified external updated_at is provided.
+- #182: Correct the repository-misqualified 404 placeholder and hydrate https://github.com/coder/ghostty-web/pull/182 before per-item classification; no verified external updated_at is provided.
