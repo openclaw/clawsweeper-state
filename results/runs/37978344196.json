@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167923",
+  "mode": "autonomous",
+  "run_id": "37978344196",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37978344196",
+  "head_sha": "271574b75b1d32480f8d9bd96f6c0e75705e6ac6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167923.md",
+  "published_at": "2026-10-09T19:16:56.758Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/167923",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/167923",
+  "canonical_pr": null,
+  "summary": "Confirmed the staged-manifest/full-lockfile mismatch on preflight main 590a0257d137ea43828151481a2fc47f5e73783e. Prepared a narrow fix artifact. Actual reproduction, implementation, and validation are blocked by the read-only filesystem, denied Docker daemon access, and absent checkout dependencies. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167923",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167923",
+      "candidate_fix": null,
+      "reason": "The reported narrow packaging defect remains supported by current source. A writable, Docker-capable executor must reproduce it before editing; the issue stays open."
+    },
+    {
+      "target": "#103629",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical Docker packaging context, not a surviving fix candidate or mutation target."
+    },
+    {
+      "target": "#167411",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Toolchain provenance only; no dependency rollback, historical PR repair, or closure is proposed."
+    },
+    {
+      "target": "#46",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Unrelated historical context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-167923",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167923",
+      "candidate_fix": null,
+      "reason": "A narrow executor handoff is appropriate without a maintainer product decision. Publication must wait for reproduction and successful repair validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
