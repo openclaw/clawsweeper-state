@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37919841179"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37919841179"
-head_sha: "b17e94d1e7ed1f3db215a97074e78f4c21ebad53"
+run_id: "37923658576"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37923658576"
+head_sha: "9066ba178de5f6da805225a03a8a866c89fafff3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-09T10:53:30.184Z"
+published_at: "2026-10-09T11:32:34.679Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37919841179](https://github.com/openclaw/clawsweeper/actions/runs/37919841179)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37923658576](https://github.com/openclaw/clawsweeper/actions/runs/37923658576)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Issue #233 remains valid on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready, but implementation is blocked by the read-only filesystem, missing Bun/dependencies, and unavailable GitHub access. No files or GitHub state changed; no repaired branch or passing validation is claimed.
+Issue #233 remains valid on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is prepared. Local implementation is blocked by the read-only filesystem, missing Bun/dependencies, and unavailable GitHub connectivity. No changes, passing validation, real-setup proof, or PR are claimed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Issue #233 remains valid on preflight main 2f81941b308bd99d38c4608d2d241bdbe1313
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The root cause is clear and narrowly repairable without changing the transport or security boundary. Keep #233 as the sole canonical issue. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Hand off the concrete repair plan to a writable executor while preserving the issue classification and contributor credit. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | A writable executor with the pinned Bun toolchain, dependencies, GitHub access, and a suitable real setup must complete the prior-work inspection, implementation, and validation before opening or updating the single PR. |
+| #233 | fix_needed | planned | canonical | The root cause and requested behavior are clear; repair is needed without a product or security decision. The issue remains open. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned | canonical | Artifact preparation is complete. A writable executor with Bun and GitHub access must inspect the stopped run, implement, validate, and capture real-setup evidence before opening or updating the single issue PR. |
 
 ## Needs Human
 
