@@ -1,0 +1,73 @@
+{
+  "repo": "steipete/oracle",
+  "cluster_id": "issue-steipete-oracle-547",
+  "mode": "autonomous",
+  "run_id": "37920096746",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37920096746",
+  "head_sha": "b17e94d1e7ed1f3db215a97074e78f4c21ebad53",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-oracle-547.md",
+  "published_at": "2026-10-09T10:56:55.557Z",
+  "canonical": "https://github.com/steipete/oracle/issues/547",
+  "canonical_issue": "https://github.com/steipete/oracle/issues/547",
+  "canonical_pr": null,
+  "summary": "Verified #547 remains actionable on preflight main 35d8022f370dc89e962637e4e88d3d8d35618f3d. A narrow fix artifact is ready, but implementation is blocked by the read-only filesystem. Validation commands could not start, and the required macOS CLI demonstration remains pending. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#547",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "The implementation decision is clear. Filesystem restrictions prevent edits, regression coverage, and a locally validated branch; these are environment blockers rather than unresolved maintainer judgment."
+    },
+    {
+      "target": "#380",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contributor work supplies the existing ownership-safe restoration helper; it does not fix the missing-authentication wait path."
+    },
+    {
+      "target": "#541",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Cookie-transfer diagnostics are separate from silent manual-login polling and hidden-window accessibility."
+    },
+    {
+      "target": "cluster:issue-steipete-oracle-547",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#547",
+      "candidate_fix": null,
+      "reason": "The narrow artifact is actionable in a writable executor. Opening a PR remains contingent on implementation, passing checks, and the required macOS evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
