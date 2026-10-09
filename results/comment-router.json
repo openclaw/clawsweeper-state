@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T06:35:47.476Z",
+  "updated_at": "2026-10-09T06:39:04.349Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:160325:5880264595:2026-09-28T23:00:29Z:re_review",
-      "comment_id": "5880264595",
-      "comment_version_key": "5880264595:2026-09-28T23:00:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/160325#issuecomment-5880264595",
-      "comment_created_at": "2026-09-28T23:00:29Z",
-      "comment_updated_at": "2026-09-28T23:00:29Z",
-      "comment_body_sha256": "ee824897d8dfa770f6f4afe388713aa4b9bfe04f18c07e067ab1af0fbcbc18cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 160325,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T01:17:54.750Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-stream-subagent-budget",
-        "head_sha": "b0b5a13563017bb63ef2d224b89b384577c9282f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167520:6071066378:2026-10-09T01:15:43Z:clawsweeper_needs_human",
       "comment_id": "6071066378",
@@ -32962,6 +32915,39 @@
       "status": "skipped",
       "processed_at": "2026-10-09T06:35:47.476Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1791:6075765480:2026-10-09T06:37:55Z:clawsweeper_needs_human",
+      "comment_id": "6075765480",
+      "comment_version_key": "6075765480:2026-10-09T06:37:55Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1791#issuecomment-6075765480",
+      "comment_created_at": "2026-10-09T06:37:55Z",
+      "comment_updated_at": "2026-10-09T06:37:55Z",
+      "comment_body_sha256": "8cf9e325177fd31a02aac7be145e1d7f4bbdd91d5d379ee560ea875252321c23",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1791,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Sync with current main, or verify a clean merge with non-overlapping changes and check the integrated behavior. (sha=9324474967c84aafb4b9215dcc607fc544cfe84d)",
+      "expected_head_sha": "9324474967c84aafb4b9215dcc607fc544cfe84d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T06:39:04.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup-sha256-deps",
+        "head_sha": "9324474967c84aafb4b9215dcc607fc544cfe84d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
