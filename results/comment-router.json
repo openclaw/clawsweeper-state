@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-09T22:31:48.789Z",
+  "updated_at": "2026-10-09T22:31:51.733Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5328595642:2026-08-18T13:07:13Z:re_review",
-      "comment_id": "5328595642",
-      "comment_version_key": "5328595642:2026-08-18T13:07:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5328595642",
-      "comment_created_at": "2026-08-18T13:07:13Z",
-      "comment_updated_at": "2026-08-18T13:07:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T17:25:38.540Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5336306960:2026-08-19T01:17:41Z:re_review",
       "comment_id": "5336306960",
@@ -32165,6 +32138,39 @@
       "status": "skipped",
       "processed_at": "2026-10-09T22:31:48.789Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151924:5733332426:2026-10-09T22:30:47Z:clawsweeper_needs_human",
+      "comment_id": "5733332426",
+      "comment_version_key": "5733332426:2026-10-09T22:30:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151924#issuecomment-5733332426",
+      "comment_created_at": "2026-09-18T16:58:08Z",
+      "comment_updated_at": "2026-10-09T22:30:47Z",
+      "comment_body_sha256": "5a603aefa5c16c6402bae68d248af60759e70ad7cd01ae8c2ccc22cedf43fc90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Synthetic dispatch and registered channel-post harnesses exercise Telegram’s adapter and the real core guard, but the contributor explicitly reports no after-fix two-bot Telegram run.... (sha=d0f38d4f06f59146338f5f948b7d7d4378557437)",
+      "expected_head_sha": "d0f38d4f06f59146338f5f948b7d7d4378557437",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T22:31:51.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-bot-loop-guard",
+        "head_sha": "d0f38d4f06f59146338f5f948b7d7d4378557437",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
