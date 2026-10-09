@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T11:18:34.655Z",
+  "updated_at": "2026-10-09T11:18:46.819Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167585:6074740060:2026-10-09T05:12:39Z:re_review",
-      "comment_id": "6074740060",
-      "comment_version_key": "6074740060:2026-10-09T05:12:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6074740060",
-      "comment_created_at": "2026-10-09T05:12:39Z",
-      "comment_updated_at": "2026-10-09T05:12:39Z",
-      "comment_body_sha256": "5a078767dd55c6dd7b54ee23cb50a777590162f348695d4fad742736491d2f40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167585,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T05:13:33.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/167365-effective-tool-inventory",
-        "head_sha": "f2396fc70cfdfc902255a3c960c8321561c02269",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167534:6074750602:2026-10-09T05:13:37Z:re_review",
       "comment_id": "6074750602",
@@ -33718,6 +33671,39 @@
         "kind": "pull_request",
         "branch": "codex/doctor-empty-tool-allowlist-diagnostic",
         "head_sha": "79876424bc87217da965290a24e72c57d9633bd0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167789:6079801610:2026-10-09T11:17:42Z:clawsweeper_needs_human",
+      "comment_id": "6079801610",
+      "comment_version_key": "6079801610:2026-10-09T11:17:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167789#issuecomment-6079801610",
+      "comment_created_at": "2026-10-09T11:17:42Z",
+      "comment_updated_at": "2026-10-09T11:17:42Z",
+      "comment_body_sha256": "e239e607cbec37305619f1badef7dc432f8f74a9f94c7548d88e15cab5874f77",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167789,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ca6309daeb720d45adf192d2e2798ed399be293d)",
+      "expected_head_sha": "ca6309daeb720d45adf192d2e2798ed399be293d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T11:18:46.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/cli-tool-input-progress-167742",
+        "head_sha": "ca6309daeb720d45adf192d2e2798ed399be293d",
         "cluster_id": null,
         "job_path": null
       }
