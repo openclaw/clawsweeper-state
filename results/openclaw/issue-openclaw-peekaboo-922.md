@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38000391124"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38000391124"
-head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
+run_id: "38005267248"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38005267248"
+head_sha: "2ed5281c047a2cc472622f9730601ff851bbc15e"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T22:43:59.037Z"
+published_at: "2026-10-09T23:40:34.710Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38000391124](https://github.com/openclaw/clawsweeper/actions/runs/38000391124)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38005267248](https://github.com/openclaw/clawsweeper/actions/runs/38005267248)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 ## Summary
 
-The capability remains unresolved on current main. No safe receiver-proven mechanism was established, and this environment cannot perform the required macOS trials. #922 remains open as the canonical tracking issue. No code or GitHub mutations were made; no executable fix artifact is proposed.
+#922 remains unresolved on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. No receiver-proven mechanism supports a safe, focused implementation yet. Retain the issue open with a non-mutating classification; no code changed and no executable fix artifact emitted.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The capability remains unresolved on current main. No safe receiver-proven mecha
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | keep_related | skipped | related | Keep #922 open. Implementation remains blocked pending a receiver-proven mechanism and a writable checkout with a permissioned macOS validation host. Qualification must demonstrate exactly one unmodified, in-bounds receiver down/up pair from one cold request, without delayed extra callbacks or changes to foreground, guard, text, or selection state. The retained failed mechanisms do not support a production patch or executable fix artifact. |
-| #916 | keep_closed | skipped | related | Historical implementation and contributor evidence remain useful, but this closed proposal is not a viable fix. |
-| #926 | keep_closed | skipped | related | The landed diagnostic correction is related historical context and does not satisfy #922. |
+| #922 | keep_related | planned | canonical | Retain #922 open. A safe implementation requires a mechanism proven on macOS to deliver exactly one unmodified receiver down/up pair while preserving foreground, cursor, window, clipboard, text, and selection state. Enabling the existing native route repeats an unsuccessful proposal. The job directs stopping without code changes when implementation is not safely achievable by automation; no executable fix artifact can safely be supplied from the provided evidence. |
+| #916 | keep_closed | skipped | related | Historical implementation evidence; its passing checks do not establish receiver delivery. Preserve contributor attribution and retained investigation. |
+| #926 | keep_closed | skipped | related | A distinct diagnostic fix, not a candidate fix for #922. |
 
 ## Needs Human
 
