@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T04:41:26.103Z",
+  "updated_at": "2026-10-09T04:42:35.793Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153803:5750894682:2026-10-08T23:07:53Z:clawsweeper_needs_human",
-      "comment_id": "5750894682",
-      "comment_version_key": "5750894682:2026-10-08T23:07:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153803#issuecomment-5750894682",
-      "comment_created_at": "2026-09-20T15:57:06Z",
-      "comment_updated_at": "2026-10-08T23:07:53Z",
-      "comment_body_sha256": "3b6230390c46b99f5fa24df0b12dc57fb9819aa5970c0b0adce3bf7a723a9017",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the exact-head TypeSafe HTTP traces validly cover 8 assembly and 9 compaction controls, but withdrawal occurs before provider entry or after HTTP arriv...; Review finding: [P1] Keep omitted history out of post-turn persistence input — src/agents/harness/semantic-turn-context.ts:224-229 - [P1] Carry live consent through final HTTP adm... (sha=b2c6a44ad11a53be8e05604dd5b06302c9b289c7)",
-      "expected_head_sha": "b2c6a44ad11a53be8e05604dd5b06302c9b289c7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T23:20:24.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/semantic-turn-context-apply",
-        "head_sha": "b2c6a44ad11a53be8e05604dd5b06302c9b289c7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159614:5855426403:2026-10-08T23:07:08Z:clawsweeper_needs_human",
       "comment_id": "5855426403",
@@ -33260,6 +33227,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167411:6074399376:2026-10-09T04:41:10Z:re_review",
+      "comment_id": "6074399376",
+      "comment_version_key": "6074399376:2026-10-09T04:41:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167411#issuecomment-6074399376",
+      "comment_created_at": "2026-10-09T04:41:10Z",
+      "comment_updated_at": "2026-10-09T04:41:10Z",
+      "comment_body_sha256": "5fcac50dc71e7e069e1397e4b1e332c71a35a51a9956daacbf13af93ba90ea07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167411,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T04:42:34.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deps-seven-day-cutoff",
+        "head_sha": "9c1ed09c6f0e57b8495cb565da54709b71e512d0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
