@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37937556968"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37937556968"
-head_sha: "11fdbcac1012c7c58c56efd5babadddf75c00e88"
-workflow_conclusion: "failure"
+run_id: "37945454928"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37945454928"
+head_sha: "b5159758fb4a99210cb5563aeba2854e2156b130"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T13:38:22.238Z"
+published_at: "2026-10-09T14:41:09.373Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-windows-packaging-161
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37937556968](https://github.com/openclaw/clawsweeper/actions/runs/37937556968)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37945454928](https://github.com/openclaw/clawsweeper/actions/runs/37945454928)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-The SDK migration remains outstanding on main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation is blocked by the read-only Linux host and an unverified SDK contract. The coordinated transport, runtime, packaging, and validation cutover exceeds the narrow executor scope. No files or GitHub state changed.
+The SDK migration remains outstanding on supplied main 4215593cd5abd4cd1f189e245dd64e7372415119. Implementation is blocked by the read-only environment, unverified SDK contracts, and a coordinated migration exceeding the narrow repair scope. The unsupported fix action is downgraded to non-mutating needs_human; no executable fix artifact is emitted. No files or GitHub state changed; no repaired branch was validated.
 
 ## Impact
 
@@ -48,13 +48,13 @@ The SDK migration remains outstanding on main 4215593cd5abd4cd1f189e245dd64e7372
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #161 |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,10 @@ The SDK migration remains outstanding on main 4215593cd5abd4cd1f189e245dd64e7372
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | fix_needed | planned | canonical | The requested migration is still needed. Implementation readiness is blocked separately; keep the issue open. |
-| #44 | keep_closed | skipped | related | Historical backend design and contributor context; no mutation is appropriate. |
-| cluster:issue-openclaw-openclaw-windows-packaging-161 | build_fix_artifact | blocked |  | This is a blocked recovery inventory, not an executable narrow PR plan. Resume with SDK contract access and a writable Windows validation environment; establish narrower follow-up scopes before enabling implementation. |
+| #161 | keep_canonical | planned | canonical | The request remains valid and has a clear canonical issue. Keep it open; the authorized product direction does not require another maintainer decision. |
+| #44 | keep_closed | skipped | related | Preserve the existing contributor history. This merged backend is context, not an open implementation candidate. |
+| cluster:issue-openclaw-openclaw-windows-packaging-161 | needs_human | blocked | needs_human | Human coordination is required to establish safe implementation and review boundaries for the cross-cutting migration after inspecting the SDK contracts. Product direction is already authorized. No closure, merge, or publication is recommended. |
 
 ## Needs Human
 
-- none
+- For #161 implementation only: inspect Microsoft.Mxc.Sdk 1.0.0 contracts in a writable disposable Windows environment and establish coordinated implementation and review boundaries for native acquisition, transport/composition cutover, and validation/documentation. The supplied artifacts cannot support a safe narrow executable fix plan.
