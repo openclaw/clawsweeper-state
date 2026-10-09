@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T14:44:39.158Z",
+  "updated_at": "2026-10-09T14:44:42.644Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167679:6076979533:2026-10-09T08:04:07Z:re_review",
-      "comment_id": "6076979533",
-      "comment_version_key": "6076979533:2026-10-09T08:04:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167679#issuecomment-6076979533",
-      "comment_created_at": "2026-10-09T08:04:07Z",
-      "comment_updated_at": "2026-10-09T08:04:07Z",
-      "comment_body_sha256": "18a6e7c7c0a431e1fab58302cac02b36bb4f4e58c45b61b870b0fe25772a1dba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167679,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T08:05:03.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-memory-sync-reload",
-        "head_sha": "0c1d63993774b835ba843d1cac8cfc642b3d0cf8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167342:6076985818:2026-10-09T08:04:35Z:re_review",
       "comment_id": "6076985818",
@@ -33214,6 +33167,39 @@
         "kind": "pull_request",
         "branch": "codex/five-root-scout-oct09",
         "head_sha": "3ba09835cc1b782631f7a41507ec96524fd371df",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162994:5940472283:2026-10-09T14:43:26Z:clawsweeper_needs_human",
+      "comment_id": "5940472283",
+      "comment_version_key": "5940472283:2026-10-09T14:43:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162994#issuecomment-5940472283",
+      "comment_created_at": "2026-10-01T21:01:54Z",
+      "comment_updated_at": "2026-10-09T14:43:26Z",
+      "comment_body_sha256": "c0d1ba528ac4999925463d0e6afa3fef96c68deec7654e15cd36a345a5640460",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Previously accepted Gateway activation, real heartbeat execution against a loopback provider, and ledger readback remain valid for the unchanged core receipt path; historical-row evid... (sha=56a347e846d6990849dc93ac4b33e2f0160ee842)",
+      "expected_head_sha": "56a347e846d6990849dc93ac4b33e2f0160ee842",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T14:44:42.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fros/update-normal-cycle-verification",
+        "head_sha": "56a347e846d6990849dc93ac4b33e2f0160ee842",
         "cluster_id": null,
         "job_path": null
       }
