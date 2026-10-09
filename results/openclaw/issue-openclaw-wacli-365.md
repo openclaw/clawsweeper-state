@@ -2,12 +2,12 @@
 repo: "openclaw/wacli"
 cluster_id: "issue-openclaw-wacli-365"
 mode: "autonomous"
-run_id: "37981543693"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37981543693"
-head_sha: "d1d10cd28bfe4996db78485991ab483246dd462e"
+run_id: "37987359693"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37987359693"
+head_sha: "410f120f8b9ad66421da42244b77035ec612620a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T19:42:51.504Z"
+published_at: "2026-10-09T20:34:26.659Z"
 canonical: "https://github.com/openclaw/wacli/issues/365"
 canonical_issue: "https://github.com/openclaw/wacli/issues/365"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/wacli
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37981543693](https://github.com/openclaw/clawsweeper/actions/runs/37981543693)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37987359693](https://github.com/openclaw/clawsweeper/actions/runs/37987359693)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/wacli/issues/365
 
 ## Summary
 
-No implementation PR is safely justified yet. Current main contains the linked parser and conditional recovery improvements, but the six all-empty groups remain unexplained. The supplied evidence provides no current-main reproduction or affected payload fixture from which to derive a focused regression fix. No code or GitHub state was changed.
+No safe implementation PR is supported yet. Current main contains the confirmed parser and conditional recovery fixes, but the six all-empty groups still lack a current-main reproduction or payload evidence identifying their cause. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,15 +66,15 @@ No implementation PR is safely justified yet. Current main contains the linked p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #365 | keep_canonical | planned | canonical | Preserve the canonical investigation. Shipped improvements do not prove that the remaining empty-group observation is fixed. |
-| #344 | keep_closed | skipped | related | Historical diagnostic improvement; it does not establish the remaining groups' root cause. |
-| #362 | keep_closed | skipped | related | A distinct, previously repaired edit-envelope defect is historical context. |
-| #371 | keep_closed | skipped | related | Unanswered backfill anchors are distinct from present history rows containing no text. |
-| #383 | keep_closed | skipped | related | Confirmed composite-payload gaps were repaired without resolving the six-group observation. |
-| #416 | keep_closed | skipped | related | A landed partial repair whose documented limits preserve #365. |
-| #441 | keep_closed | skipped | related | Conditional recovery is present but does not demonstrate recovery of the reported groups. |
-| cluster:issue-openclaw-wacli-365 | needs_human | blocked | needs_human | Resume after obtaining a current-main reproduction or redacted affected payload fixture that identifies a specific failing path. No executable fix artifact can presently promise to satisfy #365. |
+| #365 | keep_canonical | planned | canonical | The remaining observation is not proven fixed or covered by the historical repairs. |
+| #344 | keep_closed | skipped | related | Historical diagnostics provide evidence, not a fix for the unexplained groups. |
+| #362 | keep_closed | skipped | related | A resolved edit-specific defect does not establish the cause of six all-empty groups. |
+| #371 | keep_closed | skipped | related | Backfill silence differs from present but text-empty history rows. |
+| #383 | keep_closed | skipped | related | A confirmed partial repair already landed; broader group-history coverage remains unproven. |
+| #416 | keep_closed | skipped | related | The landed repair explicitly does not explain the six empty groups. |
+| #441 | keep_closed | skipped | related | Conditional recovery is already enabled; successful recovery of the reported groups remains unverified. |
+| cluster:issue-openclaw-wacli-365 | needs_human | blocked | needs_human | A speculative parser or retry patch cannot be shown to satisfy #365. Human follow-up must obtain the missing reproduction evidence before implementation can be attributed to a narrow code path. |
 
 ## Needs Human
 
-- #365 implementation requires a current-main reproduction or redacted affected-group payload fixture distinguishing unsupported populated payloads, absent message content, and SDK decryption failures. The hydrated October 9 review reports no high-confidence reproduction, and the September 12 maintainer comment explicitly leaves the six all-empty groups unresolved.
+- #365: Obtain a redacted current-main history sample and correlated unhandled-payload/decryption diagnostics from an affected all-empty group, sufficient to identify the cause and construct a failing regression. The supplied artifacts do not support a safe implementation plan.

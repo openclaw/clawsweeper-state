@@ -1,0 +1,129 @@
+{
+  "repo": "openclaw/wacli",
+  "cluster_id": "issue-openclaw-wacli-365",
+  "mode": "autonomous",
+  "run_id": "37987359693",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37987359693",
+  "head_sha": "410f120f8b9ad66421da42244b77035ec612620a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-wacli-365.md",
+  "published_at": "2026-10-09T20:34:26.659Z",
+  "canonical": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_issue": "https://github.com/openclaw/wacli/issues/365",
+  "canonical_pr": null,
+  "summary": "No safe implementation PR is supported yet. Current main contains the confirmed parser and conditional recovery fixes, but the six all-empty groups still lack a current-main reproduction or payload evidence identifying their cause. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#365",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "The remaining observation is not proven fixed or covered by the historical repairs."
+    },
+    {
+      "target": "#344",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical diagnostics provide evidence, not a fix for the unexplained groups."
+    },
+    {
+      "target": "#362",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A resolved edit-specific defect does not establish the cause of six all-empty groups."
+    },
+    {
+      "target": "#371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Backfill silence differs from present but text-empty history rows."
+    },
+    {
+      "target": "#383",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A confirmed partial repair already landed; broader group-history coverage remains unproven."
+    },
+    {
+      "target": "#416",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The landed repair explicitly does not explain the six empty groups."
+    },
+    {
+      "target": "#441",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Conditional recovery is already enabled; successful recovery of the reported groups remains unverified."
+    },
+    {
+      "target": "cluster:issue-openclaw-wacli-365",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#365",
+      "candidate_fix": null,
+      "reason": "A speculative parser or retry patch cannot be shown to satisfy #365. Human follow-up must obtain the missing reproduction evidence before implementation can be attributed to a narrow code path."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 6,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 6,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "#365: Obtain a redacted current-main history sample and correlated unhandled-payload/decryption diagnostics from an affected all-empty group, sufficient to identify the cause and construct a failing regression. The supplied artifacts do not support a safe implementation plan."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#365",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
