@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T09:10:25.368Z",
+  "updated_at": "2026-10-09T09:10:28.554Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167294:6073444052:2026-10-09T03:08:55Z:re_review",
-      "comment_id": "6073444052",
-      "comment_version_key": "6073444052:2026-10-09T03:08:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167294#issuecomment-6073444052",
-      "comment_created_at": "2026-10-09T03:08:55Z",
-      "comment_updated_at": "2026-10-09T03:08:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167294,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T03:11:02.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/fix-devices-json-errors-20261008",
-        "head_sha": "0f8198018b112b264bccde39fda056fc67ff1281",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167577:6073385682:2026-10-09T03:10:12Z:autoclose",
       "comment_id": "6073385682",
@@ -33389,6 +33342,39 @@
         "kind": "pull_request",
         "branch": "fix/pairing-duplicate-action-127580",
         "head_sha": "c9a9e896f08a39ce00643e28f210128366bbe658",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167697:6076895020:2026-10-09T09:09:30Z:clawsweeper_needs_human",
+      "comment_id": "6076895020",
+      "comment_version_key": "6076895020:2026-10-09T09:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167697#issuecomment-6076895020",
+      "comment_created_at": "2026-10-09T07:58:12Z",
+      "comment_updated_at": "2026-10-09T09:09:30Z",
+      "comment_body_sha256": "9780e6e11593e7484c2470e0860b818784933e19e51990d6fd57087ace20c793",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7441d36e6ea54a0c96e6ef8aec637b6e067b1d44)",
+      "expected_head_sha": "7441d36e6ea54a0c96e6ef8aec637b6e067b1d44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T09:10:28.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-http-abort-error-noise-20260919",
+        "head_sha": "7441d36e6ea54a0c96e6ef8aec637b6e067b1d44",
         "cluster_id": null,
         "job_path": null
       }
