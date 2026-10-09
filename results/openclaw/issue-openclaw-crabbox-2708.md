@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37996272748"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37996272748"
-head_sha: "b2ce0d0157ca00e626f5760b38a99fe3a129c9ca"
+run_id: "38001655697"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38001655697"
+head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T21:59:06.529Z"
+published_at: "2026-10-09T22:57:44.432Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37996272748](https://github.com/openclaw/clawsweeper/actions/runs/37996272748)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38001655697](https://github.com/openclaw/clawsweeper/actions/runs/38001655697)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe repository implementation is currently supported by the evidence. Blacksmith must expose a durable Testbox-to-workflow binding before worker registration and preserve it through admission failure or cancellation. Current main matches the supplied preflight SHA; no code or GitHub mutations were made.
+No safe implementation PR is supported by the available evidence. On supplied current main, failed pre-worker dispatch and slow allocation remain indistinguishable without an authoritative Blacksmith request-to-run binding. Keep the issue open pending that provider capability. No files or GitHub state were changed; no tests were run.
 
 ## Impact
 
@@ -66,14 +66,14 @@ No safe repository implementation is currently supported by the evidence. Blacks
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | The report remains distinct from the merged ownership, settlement visibility and lookup repairs. Keep it open pending supported provider evidence. |
-| #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Preserve the landed ownership guarantees; this PR does not resolve the canonical issue. |
-| #2682 | keep_closed | skipped | related | Historical context with a different capability gap. |
-| #2683 | keep_closed | skipped | related | Read-only settlement visibility does not recover a missing pre-worker binding. |
-| #2719 | keep_closed | skipped | related | Ownership lookup performance is separate from dispatch lifecycle observability. |
-| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | Implementation cannot be safely planned from the supplied artifacts. Provider or maintainer follow-up must supply a supported binding between the Testbox request and its workflow run before worker registration that survives cancellation and admission failure. A guessed association or fabricated terminal state would violate the established lifecycle guarantees. No executable fix artifact is emitted. |
+| #2708 | keep_canonical | planned | canonical | This remains a distinct provider lifecycle problem; the merged related repairs do not supply the missing pre-worker association. |
+| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | A safe fix artifact cannot be derived from the supplied evidence. Provider confirmation of a supported pre-worker request-to-run binding is required before implementation can resume; this action authorizes no mutation. |
+| #2669 | keep_closed | skipped | related | Historical evidence only; no closure action. |
+| #2670 | keep_closed | skipped | related | Preserve the landed recovery guarantees. |
+| #2682 | keep_closed | skipped | related | Historical evidence only; no closure action. |
+| #2683 | keep_closed | skipped | related | Its read-only status capability does not resolve the dispatch observation gap. |
+| #2719 | keep_closed | skipped | related | Historical related optimization; no action. |
 
 ## Needs Human
 
-- For https://github.com/openclaw/crabbox/issues/2708, obtain and verify a supported Blacksmith pre-worker Testbox-to-workflow binding that survives cancellation and admission failure before resuming implementation. The hydrated triage says CLI 0.4.65 lacks this capability, and the supplied artifacts provide no newer supported contract.
+- For https://github.com/openclaw/crabbox/issues/2708, obtain authoritative Blacksmith confirmation of a supported, durable Testbox request-to-workflow-run binding available before worker registration and retained through cancellation or admission failure. The October 6 triage comment reports no such capability in CLI 0.4.65, and the supplied artifacts provide no newer supported contract. Implementation remains blocked pending that evidence.
