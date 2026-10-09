@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37917850852"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37917850852"
-head_sha: "957823c26fc8c75e8824d30300fa351ea5595e58"
+run_id: "37925019453"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37925019453"
+head_sha: "e679475f63b1f1e8b2f1c6f583abe5d016b5b878"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T10:33:10.570Z"
+published_at: "2026-10-09T11:46:36.140Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37917850852](https://github.com/openclaw/clawsweeper/actions/runs/37917850852)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37925019453](https://github.com/openclaw/clawsweeper/actions/runs/37925019453)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation is blocked by missing provider evidence: native queued status without a run association cannot distinguish slow allocation from pre-worker dispatch failure. Current source matches the recorded triage decision. No code changes or GitHub mutations were made; no executable PR plan is warranted.
+Implementation is blocked by missing provider-side dispatch identity and terminal evidence before worker registration. The checkout matches preflight main; inspection supports the recorded triage direction. No code changes or executable fix artifact were produced. Keep the issue open pending a supported Blacksmith capability.
 
 ## Impact
 
@@ -66,14 +66,14 @@ Implementation is blocked by missing provider evidence: native queued status wit
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | Keep the source issue open for provider capability follow-up; the related merged fixes do not resolve this dispatch evidence gap. |
-| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | Provider follow-up must establish a supported exact dispatch binding and terminal-outcome contract before implementation can resume. The provided artifacts establish no safe repository patch, so this action is non-mutating and has no fix artifact or executable PR path. |
+| #2708 | keep_canonical | planned | canonical | The report remains distinct from the merged settlement and ownership repairs. Its provider prerequisite is explicit; no unresolved maintainer decision requires escalation. |
 | #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical context only. |
-| #2682 | keep_closed | skipped | related | Historical context only. |
-| #2683 | keep_closed | skipped | related | Historical context only. |
-| #2719 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Merged recovery safeguards must remain intact. |
+| #2682 | keep_closed | skipped | related | Historical context with a different scope. |
+| #2683 | keep_closed | skipped | related | Exposing an existing association does not supply the missing dispatch identity. |
+| #2719 | keep_closed | skipped | related | Historical ownership optimization does not resolve dispatch failures. |
+| cluster:issue-openclaw-crabbox-2708 | needs_human | blocked | needs_human | External provider capability is required, rather than an unresolved product decision. Resume implementation only after supported exact Testbox-to-dispatch binding and terminal evidence surviving admission failure or cancellation before worker startup are established. The available evidence supplies no safe repository-only implementation; guessing associations or equating native completion with settlement would violate the documented recovery contract. |
 
 ## Needs Human
 
-- For https://github.com/openclaw/crabbox/issues/2708, obtain or verify a supported Blacksmith contract binding the exact Testbox request to its workflow run before worker startup and retaining terminal outcomes through cancellation/admission failure. The hydrated October 6 triage records that CLI 0.4.65 exposes neither a dispatch receipt nor pre-worker run lookup; no newer capability is established by the provided artifacts.
+- Implementation of https://github.com/openclaw/crabbox/issues/2708 requires evidence of a supported Blacksmith Testbox-to-dispatch binding and terminal outcomes available before worker registration. The hydrated October 6 triage comment records that CLI 0.4.65 exposes neither capability. No executable repository-only fix is safely established; keep the issue open until this external prerequisite is satisfied.
