@@ -1,0 +1,45 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-09T03:12:44.795Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6073476170",
+    "node_id": "IC_kwDOQb6kR88AAAABagHkSg",
+    "url": "https://github.com/openclaw/openclaw/pull/163655#issuecomment-6073476170",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/163655",
+    "pull_request_url": null,
+    "author": "chuanleiguo",
+    "author_association": "NONE",
+    "created_at": "2026-10-09T03:11:40Z",
+    "updated_at": "2026-10-09T03:11:40Z",
+    "body_hash": "438d71618d88c134f5ca0534fb3cb85ab380a25d713e495a32dd93f1225a4b04",
+    "body_excerpt": "### Runtime proof fixture for head `1c1ca90ccc072ff39175882bfedeef541e5c2370` The PR body links here because the full fixture does not fit ... ed stable upgrade/downgrade matrix are not exercised.\", }; await fs.writeFile( path.join(proofDir, \"runtime-result.json\"), ``` </details>",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "http://127.0.0.1:${address.port}/v1`",
+      "https://proof.example.test/",
+      "https://proof.example.test/",
+      "https://proof.example.test/"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6073476170",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic runtime proof fixture with test commands, synthetic data, and technical limitations.",
+      "Localhost and example-domain links support the test contex ... no solicitation, phishing, unrelated promotion, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
