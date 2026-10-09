@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T10:56:46.431Z",
+  "updated_at": "2026-10-09T10:57:32.558Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166269:6024569430:2026-10-06T20:46:10Z:clawsweeper_auto_merge",
-      "comment_id": "6024569430",
-      "comment_version_key": "6024569430:2026-10-06T20:46:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166269#issuecomment-6024569430",
-      "comment_created_at": "2026-10-06T20:11:34Z",
-      "comment_updated_at": "2026-10-06T20:46:10Z",
-      "comment_body_sha256": "aafe7bb88821d37144d326a9d1d7b3f12916a0bbbfefd724984a0f7909ad1376",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=72c26edb8a4a8e7dc6a342392c3092ae07e82a1e); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T04:56:37.012Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-auth-timeout-metadata",
-        "head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-        "cluster_id": "automerge-openclaw-openclaw-166269",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79360:4405948938:2026-10-09T04:48:48Z:autoclose",
       "comment_id": "4405948938",
@@ -33602,6 +33555,39 @@
         "kind": "pull_request",
         "branch": "fix/edit-recovery-diff-82015",
         "head_sha": "f9562b135edcd072af4d0c22da5dd21f2f654979",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1858:6079494751:2026-10-09T10:56:38Z:clawsweeper_needs_human",
+      "comment_id": "6079494751",
+      "comment_version_key": "6079494751:2026-10-09T10:56:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1858#issuecomment-6079494751",
+      "comment_created_at": "2026-10-09T10:56:38Z",
+      "comment_updated_at": "2026-10-09T10:56:38Z",
+      "comment_body_sha256": "84aab7112ab544d45ac56b6547dbbe780063dd3205ac4683e77aa548ed0b75e3",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The body reports after-fix Driver calls at the pinned head, but does not exercise normal API or worker startup in a real setup. Supply a terminal screenshot, logs, or live output show... (sha=2d5b98169e4cc8a84335c853bf235e65c66a2b64)",
+      "expected_head_sha": "2d5b98169e4cc8a84335c853bf235e65c66a2b64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T10:57:32.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compute-transport-secret-prefix",
+        "head_sha": "2d5b98169e4cc8a84335c853bf235e65c66a2b64",
         "cluster_id": null,
         "job_path": null
       }
