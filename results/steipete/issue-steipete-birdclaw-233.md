@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37884682797"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37884682797"
+run_id: "37886407197"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37886407197"
 head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-09T04:40:47.033Z"
+result_status: "planned"
+published_at: "2026-10-09T05:03:52.915Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37884682797](https://github.com/openclaw/clawsweeper/actions/runs/37884682797)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37886407197](https://github.com/openclaw/clawsweeper/actions/runs/37886407197)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-Verified the defect on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix is planned; implementation and validation are blocked by the read-only sandbox, missing Bun, and absent dependencies. No code or GitHub mutations occurred.
+Confirmed the defect on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow fix artifact is ready. Local implementation, full regression validation, and real-setup proof are blocked by read-only access, missing dependencies, and the unavailable pinned Bun runtime. No GitHub mutations or code changes were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Verified the defect on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The ordinary bug remains source-proven, with clear expected behavior and a bounded implementation path. |
-| #118 | keep_closed | skipped | related | Historical context only. |
-| #163 | keep_closed | skipped | related | Historical context only. |
-| #175 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | The artifact provides a concrete executor path despite this worker's implementation restrictions. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Implementation must run in a writable executor with the repository toolchain and isolated real-backfill setup; publication must wait for validation. |
+| #233 | fix_needed | planned | canonical | The ordinary URL-expansion bug remains reproducible from current source and has a focused implementation path. |
+| #118 | keep_closed | skipped | related | Preserve original URL keys and backup compatibility; no action on this merged PR. |
+| #163 | keep_closed | skipped | related | Historical cache-read context, not an implementation candidate for #233. |
+| #175 | keep_closed | skipped | related | Historical normalization context; no closure or merge action. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Provide an executable, narrowly scoped repair plan for the authorized executor without claiming implementation or validation completion. |
 
 ## Needs Human
 
