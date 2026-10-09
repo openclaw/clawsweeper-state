@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "37886773814"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37886773814"
+run_id: "37888674876"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37888674876"
 head_sha: "552822607e7287fc5acdd875c5a08b20d094a942"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T05:06:42.646Z"
+published_at: "2026-10-09T05:31:29.447Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37886773814](https://github.com/openclaw/clawsweeper/actions/runs/37886773814)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37888674876](https://github.com/openclaw/clawsweeper/actions/runs/37888674876)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-No safe implementation PR is currently viable. The supplied main revision still lacks authoritative pre-worker dispatch evidence, and the hydrated triage discussion explicitly requires a supported Blacksmith capability before repository integration. No code or GitHub changes were made.
+No safe repository implementation is established. The supplied current main still lacks authoritative pre-worker dispatch evidence, and recorded triage requires a supported Blacksmith Testbox-to-run binding. No code changes or PR are proposed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ No safe implementation PR is currently viable. The supplied main revision still 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #2708 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,12 @@ No safe implementation PR is currently viable. The supplied main revision still 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | Distinct unresolved provider capability gap; the merged settlement repairs do not cover pre-worker dispatch association. |
-| #2669 | keep_closed | skipped | related | Historical evidence only. |
-| #2670 | keep_closed | skipped | related | Merged settlement protection must be preserved; it does not supply missing dispatch association. |
-| #2682 | keep_closed | skipped | related | Historical evidence only. |
-| #2683 | keep_closed | skipped | related | Merged metadata support does not recover an association absent from native status. |
-| cluster:issue-openclaw-crabbox-2708 | keep_related | blocked | related | Resume implementation only when Blacksmith exposes a supported exact request-to-run association and terminal outcome that survive pre-worker cancellation/admission failure. The available evidence cannot support a narrow repository patch satisfying the issue. |
+| #2708 | keep_related | blocked | canonical | Implementation depends on Blacksmith exposing a supported authoritative dispatch binding and outcome before worker registration, retained through cancellation and admission failure. Inventing that binding or treating native completion as remote settlement would violate the documented lifecycle contract. This is an external capability blocker, not an unresolved maintainer decision. |
+| #2669 | keep_closed | skipped | related | Historical context only. |
+| #2670 | keep_closed | skipped | related | Preserves recovery ownership but does not supply the missing pre-worker association. |
+| #2682 | keep_closed | skipped | related | Historical context for a distinct implemented capability. |
+| #2683 | keep_closed | skipped | related | Read-only settlement reporting does not repair native pre-worker dispatch failures. |
+| #2719 | keep_closed | skipped | related | Local ownership lookup is distinct from provider dispatch association. |
 
 ## Needs Human
 

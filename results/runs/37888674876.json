@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "37888674876",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/37888674876",
+  "head_sha": "552822607e7287fc5acdd875c5a08b20d094a942",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-09T05:31:29.447Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository implementation is established. The supplied current main still lacks authoritative pre-worker dispatch evidence, and recorded triage requires a supported Blacksmith Testbox-to-run binding. No code changes or PR are proposed.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Implementation depends on Blacksmith exposing a supported authoritative dispatch binding and outcome before worker registration, retained through cancellation and admission failure. Inventing that binding or treating native completion as remote settlement would violate the documented lifecycle contract. This is an external capability blocker, not an unresolved maintainer decision."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserves recovery ownership but does not supply the missing pre-worker association."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct implemented capability."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only settlement reporting does not repair native pre-worker dispatch failures."
+    },
+    {
+      "target": "#2719",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Local ownership lookup is distinct from provider dispatch association."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
