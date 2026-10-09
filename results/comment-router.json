@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T03:24:36.484Z",
+  "updated_at": "2026-10-09T03:24:49.475Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167263:6061754513:2026-10-08T22:06:39Z:clawsweeper_needs_human",
-      "comment_id": "6061754513",
-      "comment_version_key": "6061754513:2026-10-08T22:06:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167263#issuecomment-6061754513",
-      "comment_created_at": "2026-10-08T14:11:48Z",
-      "comment_updated_at": "2026-10-08T22:06:39Z",
-      "comment_body_sha256": "c2d17445745d587c02acc239eeea677f8aa4c80616302a693c6937ce02af50d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167263,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Resolve the current-main conflicts while preserving both auth-source and runtime-target cohort preparation, then rerun the affected cohort and preparation checks. (sha=31f5cf6277e99d40370ed7fe96d753d32630b244)",
-      "expected_head_sha": "31f5cf6277e99d40370ed7fe96d753d32630b244",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-08T22:07:40.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/tb5envelopes",
-        "head_sha": "31f5cf6277e99d40370ed7fe96d753d32630b244",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167471:6069835906:2026-10-08T22:06:47Z:clawsweeper_auto_repair",
       "comment_id": "6069835906",
@@ -33234,6 +33201,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167279:6073617461:2026-10-09T03:23:22Z:re_review",
+      "comment_id": "6073617461",
+      "comment_version_key": "6073617461:2026-10-09T03:23:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167279#issuecomment-6073617461",
+      "comment_created_at": "2026-10-09T03:23:22Z",
+      "comment_updated_at": "2026-10-09T03:23:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167279,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T03:24:48.373Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/fix-exec-policy-json-errors-20261008",
+        "head_sha": "243ef49aa15890e935cdca60abd403e37bcc1b98",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
