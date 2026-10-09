@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T18:48:06.317Z",
+  "updated_at": "2026-10-09T18:48:22.338Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163336:5947109902:2026-10-09T11:40:30Z:clawsweeper_needs_human",
-      "comment_id": "5947109902",
-      "comment_version_key": "5947109902:2026-10-09T11:40:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163336#issuecomment-5947109902",
-      "comment_created_at": "2026-10-02T07:05:16Z",
-      "comment_updated_at": "2026-10-09T11:40:30Z",
-      "comment_body_sha256": "cdcc91ec4c930231bd185a61f97fb01cf67fc13df80b72c9a5297db530253c1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163336,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the changed custody owners have helper/RPC regression coverage, but no recorded final-effect execution shows allowed normal/queued work succeeding and...; Review finding: [P1] Validate required custody on normal and queued chat execution — src/agents/command/prepare.ts:356-362 - [P2] Normalize Git paths before comparing checkout ide... (sha=441f91ea39c09a73265f3bc175e1ba487e954ab3)",
-      "expected_head_sha": "441f91ea39c09a73265f3bc175e1ba487e954ab3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T11:48:34.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/required-session-workspaces",
-        "head_sha": "441f91ea39c09a73265f3bc175e1ba487e954ab3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163340:5947112016:2026-10-09T11:41:21Z:clawsweeper_needs_human",
       "comment_id": "5947112016",
@@ -32394,6 +32361,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167898:6087160516:2026-10-09T18:47:29Z:re_review",
+      "comment_id": "6087160516",
+      "comment_version_key": "6087160516:2026-10-09T18:47:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167898#issuecomment-6087160516",
+      "comment_created_at": "2026-10-09T18:47:29Z",
+      "comment_updated_at": "2026-10-09T18:47:29Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167898,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-09T18:48:21.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-prefix-cache-run-types",
+        "head_sha": "cb068702f8a01922a5948cb42991f94ee8c56ad3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
