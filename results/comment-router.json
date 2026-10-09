@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-09T04:46:46.679Z",
+  "updated_at": "2026-10-09T04:46:49.505Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167473:6071023910:2026-10-08T23:24:13Z:re_review",
-      "comment_id": "6071023910",
-      "comment_version_key": "6071023910:2026-10-08T23:24:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167473#issuecomment-6071023910",
-      "comment_created_at": "2026-10-08T23:24:13Z",
-      "comment_updated_at": "2026-10-08T23:24:13Z",
-      "comment_body_sha256": "e0cc8c5a5fb53f147b73066b8bbba9868d8ddaa1e731371f207aaf31ad349483",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167473,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-08T23:25:21.415Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-shared-repo-broken-tip-self-heal-20260919",
-        "head_sha": "f265b7392960638bc82b177d6f6216d5a03585e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:159730:6071026425:2026-10-08T23:24:26Z:re_review",
       "comment_id": "6071026425",
@@ -33243,6 +33196,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-session-id-trim",
         "head_sha": "d51fc29a685a33f1acecaff6a3f416f42215e82b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3926:6064077929:2026-10-09T04:46:01Z:clawsweeper_needs_human",
+      "comment_id": "6064077929",
+      "comment_version_key": "6064077929:2026-10-09T04:46:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3926#issuecomment-6064077929",
+      "comment_created_at": "2026-10-08T16:10:27Z",
+      "comment_updated_at": "2026-10-09T04:46:01Z",
+      "comment_body_sha256": "8a74ae55cdf14a5892b2ced19d76e286e30aa0af2ee9f9dd4dae12b676c6eb0d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the full failed Static checks log to identify the failing command and attribute it to this update or an independent cause. (sha=769e28e97ca546cb105be844926c91cdce813bbd)",
+      "expected_head_sha": "769e28e97ca546cb105be844926c91cdce813bbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T04:46:49.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-62a2fc2e88",
+        "head_sha": "769e28e97ca546cb105be844926c91cdce813bbd",
         "cluster_id": null,
         "job_path": null
       }
