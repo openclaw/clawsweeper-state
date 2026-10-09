@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-09T20:34:09.341Z",
+  "updated_at": "2026-10-09T20:34:24.621Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129304:5410488025:2026-10-09T14:37:44Z:clawsweeper_auto_repair",
-      "comment_id": "5410488025",
-      "comment_version_key": "5410488025:2026-10-09T14:37:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129304#issuecomment-5410488025",
-      "comment_created_at": "2026-08-25T12:38:48Z",
-      "comment_updated_at": "2026-10-09T14:37:44Z",
-      "comment_body_sha256": "a85addad571c559b8c6de51f3b82ba4cf2ce18d5963fb053b373363740879393",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129304,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=14ef3be7cea4a897e929b33ddcd08e4c36556e6e)",
-      "expected_head_sha": "14ef3be7cea4a897e929b33ddcd08e4c36556e6e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T14:38:46.775Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-followup-structured-dedupe-20260825",
-        "head_sha": "14ef3be7cea4a897e929b33ddcd08e4c36556e6e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137883:5535386080:2026-10-09T14:37:55Z:clawsweeper_needs_human",
       "comment_id": "5535386080",
@@ -31751,6 +31718,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167842:6083909477:2026-10-09T20:33:16Z:clawsweeper_needs_human",
+      "comment_id": "6083909477",
+      "comment_version_key": "6083909477:2026-10-09T20:33:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167842#issuecomment-6083909477",
+      "comment_created_at": "2026-10-09T15:24:36Z",
+      "comment_updated_at": "2026-10-09T20:33:16Z",
+      "comment_body_sha256": "4984a95693fdddf13b28cda4d99f300f3f47b30421eb9f60963251fe5204fc6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167842,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The recorded isolated Gateway run proves that the changed planner rejects the empty-catalog Gemini fallback and records a cron error. The newly changed hosted-search presence path sti... (sha=99c3d40a147dd554c56f9f2fc10aa4fac4aa40df)",
+      "expected_head_sha": "99c3d40a147dd554c56f9f2fc10aa4fac4aa40df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-09T20:34:24.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-fallback-tools-166451",
+        "head_sha": "99c3d40a147dd554c56f9f2fc10aa4fac4aa40df",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
