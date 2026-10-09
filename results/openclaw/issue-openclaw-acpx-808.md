@@ -2,12 +2,12 @@
 repo: "openclaw/acpx"
 cluster_id: "issue-openclaw-acpx-808"
 mode: "autonomous"
-run_id: "38000993296"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38000993296"
+run_id: "38001789910"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38001789910"
 head_sha: "d1358b0e673c7ea0dfb43f8e2714d00692dc8779"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T22:50:02.079Z"
+published_at: "2026-10-09T22:59:08.979Z"
 canonical: "https://github.com/openclaw/acpx/issues/808"
 canonical_issue: "https://github.com/openclaw/acpx/issues/808"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/acpx
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38000993296](https://github.com/openclaw/clawsweeper/actions/runs/38000993296)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38001789910](https://github.com/openclaw/clawsweeper/actions/runs/38001789910)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/acpx/issues/808
 
 ## Summary
 
-Implementation is blocked by an unlocalized failure: the resolved cursor-composer command, environment versions, and failure trace are missing. No acpx root cause or focused repair is established. Keep the issue open and request reproduction details; no fix artifact or PR is warranted yet.
+Implementation is blocked by insufficient reproduction details. Inspection of supplied main found no verified acpx root cause or safe focused patch. No code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Implementation is blocked by an unlocalized failure: the resolved cursor-compose
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #808 | comment | planned | canonical | The job requires stopping without a PR when the request is underspecified. A specific failing request or denied operation is needed before selecting an acpx patch. |
-| #858 | keep_closed | skipped | related | Historical related evidence; neither a mutation target nor a proven fix for #808. |
+| #808 | keep_canonical | planned | canonical | Keep the issue open. Before implementation, obtain the resolved cursor-composer command/argv, acpx and adapter versions, OS, and a redacted sandboxed verbose/JSON trace identifying the failed ACP method or denied operation. The job explicitly requires stopping without a PR when the request is underspecified. |
+| #858 | keep_closed | skipped | related | Historical context only; do not reopen, close, or treat it as a verified fix for #808. |
 
 ## Needs Human
 
