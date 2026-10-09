@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-161"
 mode: "autonomous"
-run_id: "37891151136"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37891151136"
-head_sha: "8347e80179015163c469491e47badb09f31b7157"
+run_id: "37906537913"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37906537913"
+head_sha: "26c28e7912520955d083bb5eedefd08cb39b5547"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T06:03:06.548Z"
+published_at: "2026-10-09T08:45:18.710Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/161"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37891151136](https://github.com/openclaw/clawsweeper/actions/runs/37891151136)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37906537913](https://github.com/openclaw/clawsweeper/actions/runs/37906537913)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 ## Summary
 
-#161 remains outstanding on main 4215593cd5abd4cd1f189e245dd64e7372415119. SDK adoption requires a coordinated migration exceeding this lane's narrow-fix scope. The implementation action is downgraded to non-mutating needs_human because the provided artifacts do not establish a safely scoped complete cutover. No files or GitHub state were changed.
+#161 remains valid on supplied current main. Complete SDK adoption requires a coordinated transport, runtime acquisition, packaging, and validation migration beyond this narrow implementation lane. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/161
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #161 | keep_canonical | planned | canonical | The requested migration remains valid. Keep this issue as its canonical tracking thread. |
-| #44 | route_security | planned | security_sensitive | Quarantine only the historical security-alert context without commenting, labeling, reopening, or modifying #44. Continue ordinary classification of #161. |
-| cluster:issue-openclaw-openclaw-windows-packaging-161 | needs_human | blocked | needs_human | Maintainer judgment is needed to select a complete migration scope or independently valid bounded stages after SDK contract inspection. A dependency-only PR would leave the existing backend active and would not satisfy #161. Downgrade this implementation action rather than invent an executable fix artifact or expand the job. |
+| #161 | keep_canonical | planned | canonical | The requested replacement is outstanding. Keep #161 as the canonical migration request. |
+| #44 | keep_closed | skipped | related | Historical implementation evidence, not an open implementation candidate. |
+| cluster:issue-openclaw-openclaw-windows-packaging-161 | needs_human | blocked | needs_human | The implementation cannot be safely represented by a narrow fix artifact from the supplied evidence. The area owner must decide how to scope the coordinated migration after SDK contract inspection; this action is non-mutating and does not authorize a fix PR. |
 
 ## Needs Human
 
-- #161: Select a complete migration scope or independently valid bounded stages after establishing SDK 1.0.0 equivalence for console execution, cancellation, readiness, structured errors, existing sessions, bundled x64/ARM64 runtime assets, and release-trust inputs. The documented complete cutover exceeds this lane's narrow-fix scope; no executable fix is authorized by this result.
+- For #161, the area owner must define a safely scoped migration after establishing SDK lifecycle, console, cancellation, existing-session, NativeAOT, and bundled-runtime contracts. The identified transport, acquisition, and packaging cutover exceeds this job's narrow implementation scope; no executable fix artifact is supported by the supplied evidence.
