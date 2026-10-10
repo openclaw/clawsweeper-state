@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T13:32:57.801Z",
+  "updated_at": "2026-10-10T13:32:59.429Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154043:5752497740:2026-10-10T08:54:42Z:clawsweeper_needs_human",
-      "comment_id": "5752497740",
-      "comment_version_key": "5752497740:2026-10-10T08:54:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154043#issuecomment-5752497740",
-      "comment_created_at": "2026-09-20T20:36:36Z",
-      "comment_updated_at": "2026-10-10T08:54:42Z",
-      "comment_body_sha256": "4e77c348e9c7b0dd2ccf9521919f185b317014b68ce6a8e47462111ac1810d44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154043,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Inspect the failed architecture-guard log and attribute its cause before selecting any contributor repair or inherited-failure path. (sha=6292e28ee47487e32fc2c9e14e239456e2f9814d)",
-      "expected_head_sha": "6292e28ee47487e32fc2c9e14e239456e2f9814d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T08:56:34.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mcp-per-request-header-provider",
-        "head_sha": "6292e28ee47487e32fc2c9e14e239456e2f9814d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168190:6093844453:2026-10-10T08:54:24Z:clawsweeper_needs_human",
       "comment_id": "6093844453",
@@ -33352,6 +33319,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168155:6098020459:2026-10-10T13:31:53Z:re_review",
+      "comment_id": "6098020459",
+      "comment_version_key": "6098020459:2026-10-10T13:31:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168155#issuecomment-6098020459",
+      "comment_created_at": "2026-10-10T13:31:53Z",
+      "comment_updated_at": "2026-10-10T13:31:53Z",
+      "comment_body_sha256": "2913750e94d1206e3da10f726f53e2908802604292260af0beb7bae58cc6b7af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168155,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T13:32:57.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ask-user-timeout-settlement-regression",
+        "head_sha": "ff38355a68f7d426a1069395a25f6cab718854c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
