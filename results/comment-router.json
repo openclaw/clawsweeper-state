@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T10:27:13.514Z",
+  "updated_at": "2026-10-10T10:27:31.062Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-10-10T05:53:17Z:clawsweeper_needs_human",
-      "comment_id": "5075679870",
-      "comment_version_key": "5075679870:2026-10-10T05:53:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
-      "comment_created_at": "2026-07-24T23:58:02Z",
-      "comment_updated_at": "2026-10-10T05:53:17Z",
-      "comment_body_sha256": "c8a72cb216d12b01d0604862a44e398e5293d11e207a3a46a21844fb24bdd023",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the inspected Teams screenshot and historical deployment reports support multi-bot replies, but do not show revoked-account denial after reload with an...; Review finding: [P2] Preserve the webhook port when selecting environment credentials — extensions/msteams/src/setup-core.ts:365-366 (sha=ca6196a70da6f612699cc2911a42b4647c837d9b)",
-      "expected_head_sha": "ca6196a70da6f612699cc2911a42b4647c837d9b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:54:33.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/msteams-multi-account-replacement-20260722",
-        "head_sha": "ca6196a70da6f612699cc2911a42b4647c837d9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161185:5890431417:2026-10-10T05:53:39Z:clawsweeper_auto_repair",
       "comment_id": "5890431417",
@@ -33578,6 +33545,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168361:6096553901:2026-10-10T10:26:43Z:re_review",
+      "comment_id": "6096553901",
+      "comment_version_key": "6096553901:2026-10-10T10:26:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168361#issuecomment-6096553901",
+      "comment_created_at": "2026-10-10T10:26:43Z",
+      "comment_updated_at": "2026-10-10T10:26:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168361,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T10:27:29.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-dir-symlink-restart",
+        "head_sha": "992274c74408e6d6595ec25beed4cb29ae2eb049",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
