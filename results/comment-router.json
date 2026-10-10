@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:13:19.944Z",
+  "updated_at": "2026-10-10T15:13:54.293Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168414:6097086992:2026-10-10T11:48:36Z:clawsweeper_needs_human",
-      "comment_id": "6097086992",
-      "comment_version_key": "6097086992:2026-10-10T11:48:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168414#issuecomment-6097086992",
-      "comment_created_at": "2026-10-10T11:36:45Z",
-      "comment_updated_at": "2026-10-10T11:48:36Z",
-      "comment_body_sha256": "d210b8fc2139228be3e80a8c649b2b6a8215ea0c7de91627b6a23d78f0a9f348",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168414,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the real rollback owner is exercised with mocked native stop/restart, while the macOS observation shows the original failure only; provide redacted pro...; Review finding: [P3] Update the readiness warning to describe conditional rollback restart — src/cli/update-cli/update-command-readiness.ts:79 - [medium] Expanded restart authorit... (sha=8a46bffa927744ac39b6ccf8826d6f41683be2c6)",
-      "expected_head_sha": "8a46bffa927744ac39b6ccf8826d6f41683be2c6",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T11:49:43.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/rollback-availability-1010",
-        "head_sha": "8a46bffa927744ac39b6ccf8826d6f41683be2c6",
-        "cluster_id": "automerge-openclaw-openclaw-168414",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-168414.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167965:6089360322:2026-10-10T11:48:30Z:clawsweeper_needs_human",
       "comment_id": "6089360322",
@@ -31014,6 +30967,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1901:6098954231:2026-10-10T15:12:56Z:re_review",
+      "comment_id": "6098954231",
+      "comment_version_key": "6098954231:2026-10-10T15:12:56Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1901#issuecomment-6098954231",
+      "comment_created_at": "2026-10-10T15:12:56Z",
+      "comment_updated_at": "2026-10-10T15:12:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1901,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T15:13:52.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/typed-queue-client",
+        "head_sha": "3d6a090dece077bcbcc508eecc844978c48e6d1c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
