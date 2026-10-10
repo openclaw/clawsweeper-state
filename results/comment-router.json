@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T04:40:47.818Z",
+  "updated_at": "2026-10-10T04:41:15.960Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141363:6091427924:2026-10-10T00:09:30Z:re_review",
-      "comment_id": "6091427924",
-      "comment_version_key": "6091427924:2026-10-10T00:09:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141363#issuecomment-6091427924",
-      "comment_created_at": "2026-10-10T00:09:30Z",
-      "comment_updated_at": "2026-10-10T00:09:30Z",
-      "comment_body_sha256": "0af5e8907f4d62ab601f7085c99d9b5ff351db5f913a8c82e88ec172688f2d7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141363,
-      "author": "nocodet888-arch",
-      "author_id": 305874177,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T00:10:18.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/portal-close-trim-requestId",
-        "head_sha": "18c6a0ba8f5ff12f8c91eed13de40518d56db562",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:156939:5817440927:2026-09-24T15:49:54Z:re_review",
       "comment_id": "5817440927",
@@ -34090,6 +34043,39 @@
         "kind": "pull_request",
         "branch": "fix/plain-prompt-fallback-capture-20261010",
         "head_sha": "577ff9a5e91e04600cb6a8c8fcf73fde187643fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158161:5834926162:2026-10-10T04:40:16Z:clawsweeper_needs_human",
+      "comment_id": "5834926162",
+      "comment_version_key": "5834926162:2026-10-10T04:40:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/158161#issuecomment-5834926162",
+      "comment_created_at": "2026-09-25T15:25:25Z",
+      "comment_updated_at": "2026-10-10T04:40:16Z",
+      "comment_body_sha256": "3287f66d9127ee6f962431ba2cbd673624275dc65f40009fa6fd987d5aae7bd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 158161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The historical isolated Gateway trace exercises the unchanged matcher through real HTTP, but its exact request is now refused by conservative budgeting and recovery has since changed.... (sha=69e2961f0752cf9d78e2baad76293ecdee20952b)",
+      "expected_head_sha": "69e2961f0752cf9d78e2baad76293ecdee20952b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T04:41:15.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/completions-exhausted-budget-all-modes",
+        "head_sha": "69e2961f0752cf9d78e2baad76293ecdee20952b",
         "cluster_id": null,
         "job_path": null
       }
