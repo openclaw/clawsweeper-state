@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T04:51:32.473Z",
+  "updated_at": "2026-10-10T04:51:36.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167225:6091700144:2026-10-10T00:37:21Z:re_review",
-      "comment_id": "6091700144",
-      "comment_version_key": "6091700144:2026-10-10T00:37:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167225#issuecomment-6091700144",
-      "comment_created_at": "2026-10-10T00:37:21Z",
-      "comment_updated_at": "2026-10-10T00:37:21Z",
-      "comment_body_sha256": "412d0ffe265b38474a3cbfb204d5edf05c6573617dbf1d6b2b7b31a766853d39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167225,
-      "author": "nocodet888-arch",
-      "author_id": 305874177,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T00:38:15.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/proxy-sse-pending-frame-budget",
-        "head_sha": "679e66e776b7ab0a4effaef8039de3e413e93abd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:1993:6089807515:2026-10-10T00:37:09Z:clawsweeper_needs_human",
       "comment_id": "6089807515",
@@ -33958,6 +33911,39 @@
         "kind": "pull_request",
         "branch": "fix/onboard-remote-gateway-restart-deadline-wall-clock-184",
         "head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137250:5524681276:2026-10-10T04:50:37Z:clawsweeper_needs_human",
+      "comment_id": "5524681276",
+      "comment_version_key": "5524681276:2026-10-10T04:50:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137250#issuecomment-5524681276",
+      "comment_created_at": "2026-09-03T10:59:31Z",
+      "comment_updated_at": "2026-10-10T04:50:37Z",
+      "comment_body_sha256": "fefefa77ee0f7771feea496990e195432409b620bdc9f2955ccc759a0b26bf0f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137250,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The recorded built CLI trace at fbae6ae9573f54f1504f40476ee2c9af0a5c635a proves capability filtering and inherited-disabled pins rejection for the retained production change, with an... (sha=ec516390d97512019f058caafcda267b35d00317)",
+      "expected_head_sha": "ec516390d97512019f058caafcda267b35d00317",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T04:51:36.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-account-actions-inherit",
+        "head_sha": "ec516390d97512019f058caafcda267b35d00317",
         "cluster_id": null,
         "job_path": null
       }
