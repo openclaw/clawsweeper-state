@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T23:33:52.130Z",
+  "updated_at": "2026-10-10T23:34:17.811Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141686:6100648765:2026-10-10T18:13:10Z:re_review",
-      "comment_id": "6100648765",
-      "comment_version_key": "6100648765:2026-10-10T18:13:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141686#issuecomment-6100648765",
-      "comment_created_at": "2026-10-10T18:13:10Z",
-      "comment_updated_at": "2026-10-10T18:13:10Z",
-      "comment_body_sha256": "ea3dcce4bc6661a27d2abe987948c322b83dea24143d54a80239fc213f434fbd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141686,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T18:13:56.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-embedding-input-cap",
-        "head_sha": "a759599cc6d88d3d8fd40fa0c552e6efeb45c2b9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168587:6100650242:2026-10-10T18:13:20Z:clawsweeper_auto_repair",
       "comment_id": "6100650242",
@@ -33362,6 +33315,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-recency-eligibility",
         "head_sha": "a67b6dc0f8ac4c0264a4fb9f446a3112bdae01b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143911:5616705068:2026-10-10T23:33:12Z:clawsweeper_needs_human",
+      "comment_id": "5616705068",
+      "comment_version_key": "5616705068:2026-10-10T23:33:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143911#issuecomment-5616705068",
+      "comment_created_at": "2026-09-10T09:56:24Z",
+      "comment_updated_at": "2026-10-10T23:33:12Z",
+      "comment_body_sha256": "2748268236aa91068820838beef2028c789c3f1aa6e039e85c051cfc48b719bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2f7d3084fce5e3f2887b7091a75da22dfd247108)",
+      "expected_head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T23:34:17.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-143821-memory-intersession",
+        "head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
         "cluster_id": null,
         "job_path": null
       }
