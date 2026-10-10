@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168122"
-mode: "autonomous"
-run_id: "38019169824"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38019169824"
-head_sha: "f51199a8d817fa8222656fce030f99e5b28f7e87"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T04:57:56.265Z"
-canonical: "https://github.com/openclaw/openclaw/issues/168122"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/168122"
+mode: "plan"
+run_id: "38027769255"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38027769255"
+head_sha: "498a8892d0b640d8e62c168d21b7a9fd9303eac8"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T05:34:13.442Z"
+canonical: "#168122"
+canonical_issue: "#168122"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38019169824](https://github.com/openclaw/clawsweeper/actions/runs/38019169824)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38027769255](https://github.com/openclaw/clawsweeper/actions/runs/38027769255)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/168122
+Canonical: #168122
 
 ## Summary
 
-Source inspection confirms defaults-only shorthand discovery remains on checkout main 58108eeecc526d16bbdf42fbb761b4719a02e82e. Implementation and failing-regression proof are blocked by the read-only host and absent dependencies. A narrow credited fix artifact is prepared; no files or GitHub state were changed.
+Plan one narrow implementation PR for the unresolved agent-local shorthand defect. No files or GitHub state changed; reproduction, tests, runtime proof, and review remain required before publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Source inspection confirms defaults-only shorthand discovery remains on checkout
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168122 | fix_needed | planned | canonical | Expected existing behavior has a narrow source-confirmed defect. Execute the failing owner-boundary regression before editing on a writable validation host. |
-| #164115 | keep_closed | skipped | related | Historical adjacent evidence only. |
-| #164126 | keep_closed | skipped | related | The landed status repair does not cover this defect. |
-| #165783 | keep_closed | skipped | related | Preserve as credited historical repair context; the job explicitly requests a new issue implementation PR. |
-| #167821 | keep_closed | skipped | related | Historical owner-movement context; do not restore the retired alias module. |
-| cluster:issue-openclaw-openclaw-168122 | build_fix_artifact | planned | canonical | The classification is clear and a narrow fix path is authorized; a writable executor must establish baseline failure and complete validation before publication. |
+| #168122 | fix_needed | planned | canonical | A focused bug-fix plan is justified. Establish the failing regression on the executor's latest main before implementing or publishing; stop if it cannot reproduce. No closure or merge is authorized. |
 
 ## Needs Human
 
