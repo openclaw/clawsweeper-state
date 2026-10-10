@@ -1,0 +1,100 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168585",
+  "mode": "plan",
+  "run_id": "38084025709",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38084025709",
+  "head_sha": "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168585.md",
+  "published_at": "2026-10-10T20:33:59.145Z",
+  "canonical": "#168585",
+  "canonical_issue": "#168585",
+  "canonical_pr": null,
+  "summary": "Plan a narrow startup-preparation repair for #168585. Checkout HEAD matches preflight main b66d8da2938da040a1db9a83851d80d59320ff5c, and source inspection confirms the reported journal-read-before-permit failure path remains. No edits, tests, or GitHub mutations were performed; baseline reproduction remains required before implementation.",
+  "actions": [
+    {
+      "target": "#168585",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168585",
+      "candidate_fix": null,
+      "reason": "A focused bug repair is authorized. Implementation must first demonstrate the baseline failure, then validate the repaired owner before opening or updating the single designated PR."
+    },
+    {
+      "target": "#164799",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#168585",
+      "candidate_fix": null,
+      "reason": "Shares startup admission infrastructure but contains distinct causes and remaining work; retain outside this implementation."
+    },
+    {
+      "target": "#168159",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different lifecycle owner and failure mechanism. Closure is outside this job's authority."
+    },
+    {
+      "target": "#149538",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical fleet evidence; no action on the closed issue."
+    },
+    {
+      "target": "#168160",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": "#168354",
+      "reason": "Resolved stack-depth defect is distinct from transient journal-read overload."
+    },
+    {
+      "target": "#168354",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Landed repair for a separate admission defect; retain as historical context."
+    },
+    {
+      "target": "#168365",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Landed process-lifecycle repair does not cover startup journal-read overload."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

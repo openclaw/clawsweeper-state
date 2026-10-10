@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168585"
-mode: "autonomous"
-run_id: "38074849785"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38074849785"
-head_sha: "49c65085f09de567292d1c145314dc8189612234"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T20:08:15.479Z"
-canonical: "https://github.com/openclaw/openclaw/issues/168585"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/168585"
+mode: "plan"
+run_id: "38084025709"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38084025709"
+head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T20:33:59.145Z"
+canonical: "#168585"
+canonical_issue: "#168585"
 canonical_pr: null
-actions_total: 8
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38074849785](https://github.com/openclaw/clawsweeper/actions/runs/38074849785)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38084025709](https://github.com/openclaw/clawsweeper/actions/runs/38084025709)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/168585
+Canonical: #168585
 
 ## Summary
 
-Verified the reported failure path on preflight main 471035c7b7c8ea066ed302006ab3780994d27324. Implementation and baseline reproduction are blocked by the read-only environment: the focused test command failed during Corepack provisioning with EROFS. No files or GitHub state changed. A narrow executor fix artifact is prepared; no passing regression, review, or CI is claimed.
+Plan a narrow startup-preparation repair for #168585. Checkout HEAD matches preflight main b66d8da2938da040a1db9a83851d80d59320ff5c, and source inspection confirms the reported journal-read-before-permit failure path remains. No edits, tests, or GitHub mutations were performed; baseline reproduction remains required before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 8 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,14 +66,13 @@ Verified the reported failure path on preflight main 471035c7b7c8ea066ed302006ab
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168585 | fix_needed | planned | canonical | A narrow existing-behavior repair is warranted, but a writable executor must establish baseline failure before editing production code. |
-| #164799 | keep_related | planned | related | Distinct startup causes and remaining validation; leave outside this implementation. |
-| #168159 | keep_independent | planned | independent | Codex process retirement is independent; closure is prohibited by this job. |
-| #149538 | keep_closed | skipped | related | Historical fleet evidence only. |
-| #168160 | keep_closed | skipped | independent | Distinct repaired admission-stack defect. |
-| #168354 | keep_closed | skipped | independent | Historical repair of another owner; not a candidate for this bug. |
-| #168365 | keep_closed | skipped | independent | Independent lifecycle repair; does not cover initial startup journal admission. |
-| cluster:issue-openclaw-openclaw-168585 | build_fix_artifact | planned | canonical | Artifact preparation is complete; implementation remains blocked here by read-only filesystem and unavailable test execution. |
+| #168585 | build_fix_artifact | planned | canonical | A focused bug repair is authorized. Implementation must first demonstrate the baseline failure, then validate the repaired owner before opening or updating the single designated PR. |
+| #164799 | keep_related | planned | related | Shares startup admission infrastructure but contains distinct causes and remaining work; retain outside this implementation. |
+| #168159 | keep_independent | planned | independent | Different lifecycle owner and failure mechanism. Closure is outside this job's authority. |
+| #149538 | keep_closed | skipped | related | Historical fleet evidence; no action on the closed issue. |
+| #168160 | keep_closed | skipped | independent | Resolved stack-depth defect is distinct from transient journal-read overload. |
+| #168354 | keep_closed | skipped | independent | Landed repair for a separate admission defect; retain as historical context. |
+| #168365 | keep_closed | skipped | independent | Landed process-lifecycle repair does not cover startup journal-read overload. |
 
 ## Needs Human
 
