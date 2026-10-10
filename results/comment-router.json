@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T23:35:04.503Z",
+  "updated_at": "2026-10-10T23:35:20.695Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167342:6100645879:2026-10-10T18:12:49Z:re_review",
-      "comment_id": "6100645879",
-      "comment_version_key": "6100645879:2026-10-10T18:12:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167342#issuecomment-6100645879",
-      "comment_created_at": "2026-10-10T18:12:49Z",
-      "comment_updated_at": "2026-10-10T18:12:49Z",
-      "comment_body_sha256": "c8ec189947d66d6c6f6f559558dae2632e413a6ad2a4d896f972ca492945cb1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167342,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T18:14:19.148Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/167078-drain-timeout-retry",
-        "head_sha": "09722d5c7282b2aa40814cca16e0c9c0ac02d2db",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91271:4644476495:2026-10-10T18:06:02Z:clawsweeper_needs_human",
       "comment_id": "4644476495",
@@ -33348,6 +33301,39 @@
         "kind": "pull_request",
         "branch": "codex/close-enabled-sync-experiment",
         "head_sha": "9a78bfaae3329dd1d7ad25f4121737315b8fd033",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150200:5702028724:2026-10-10T23:34:14Z:clawsweeper_needs_human",
+      "comment_id": "5702028724",
+      "comment_version_key": "5702028724:2026-10-10T23:34:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150200#issuecomment-5702028724",
+      "comment_created_at": "2026-09-16T17:51:46Z",
+      "comment_updated_at": "2026-10-10T23:34:14Z",
+      "comment_body_sha256": "49751e23d97f8fd0194990787f7771b89ba79261ecf9199c8d7b230a7b111126",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150200,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=80ae610482edeb7f54227dc6cf3608126ed3fc5c)",
+      "expected_head_sha": "80ae610482edeb7f54227dc6cf3608126ed3fc5c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T23:35:20.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/exec-reviewer-max-tokens",
+        "head_sha": "80ae610482edeb7f54227dc6cf3608126ed3fc5c",
         "cluster_id": null,
         "job_path": null
       }
