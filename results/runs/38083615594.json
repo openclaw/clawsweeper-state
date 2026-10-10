@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/esp-openclaw-node",
+  "cluster_id": "issue-openclaw-esp-openclaw-node-67",
+  "mode": "autonomous",
+  "run_id": "38083615594",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38083615594",
+  "head_sha": "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-esp-openclaw-node-67.md",
+  "published_at": "2026-10-10T20:27:48.016Z",
+  "canonical": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_issue": "https://github.com/openclaw/esp-openclaw-node/issues/67",
+  "canonical_pr": "https://github.com/openclaw/esp-openclaw-node/pull/68",
+  "summary": "No new PR is justified. Current main contains the confirmed handshake-deadline repair from merged #68. The remaining allocation failure and reset-free recovery questions concern customized firmware and lack a confirmed reproduction on current main. Keep #67 open pending hardware evidence.",
+  "actions": [
+    {
+      "target": "#67",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67",
+      "candidate_fix": "#68",
+      "reason": "#68 covers the confirmed deadline defect only. Another implementation requires a current-main reproducer and failure-time evidence identifying a remaining upstream defect. Capture serial before a controlled restart and compare stock versus customized firmware, verifying a fresh handshake and device.status without reset."
+    },
+    {
+      "target": "#64",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with a distinct failure path; no action is needed."
+    },
+    {
+      "target": "#68",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "canonical",
+      "canonical": "#68",
+      "candidate_fix": null,
+      "reason": "The confirmed upstream defect already has a landed, credited repair. Its partial coverage does not justify closing #67."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#67",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
