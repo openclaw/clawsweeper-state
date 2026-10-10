@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T12:23:17.488Z",
+  "updated_at": "2026-10-10T12:23:29.091Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167585:6095331652:2026-10-10T07:54:41Z:re_review",
-      "comment_id": "6095331652",
-      "comment_version_key": "6095331652:2026-10-10T07:54:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6095331652",
-      "comment_created_at": "2026-10-10T07:54:41Z",
-      "comment_updated_at": "2026-10-10T07:54:41Z",
-      "comment_body_sha256": "671cfcd22e041b8091df724c6c7fa241026eb62fab706d2253d84151861aaca4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167585,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T07:57:38.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/167365-effective-tool-inventory",
-        "head_sha": "e36c65027ec43bd566c14512291b6733caed28b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163295:5946614174:2026-10-10T07:55:34Z:clawsweeper_auto_repair",
       "comment_id": "5946614174",
@@ -33700,6 +33653,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168390:6097442916:2026-10-10T12:22:28Z:autoclose",
+      "comment_id": "6097442916",
+      "comment_version_key": "6097442916:2026-10-10T12:22:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168390#issuecomment-6097442916",
+      "comment_created_at": "2026-10-10T12:22:28Z",
+      "comment_updated_at": "2026-10-10T12:22:28Z",
+      "comment_body_sha256": "5ca493b624f93831f1b84aeaa05fcf55e19191c104b6690211a692c65c89e95a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168390,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "autoclose structured ClawSweeper close marker: close-required (sha=d77f0d3da55b94f7f3f7eb67e3fa92b35254e373)",
+      "intent": "autoclose",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper close marker: close-required (sha=d77f0d3da55b94f7f3f7eb67e3fa92b35254e373)",
+      "expected_head_sha": "d77f0d3da55b94f7f3f7eb67e3fa92b35254e373",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T12:23:29.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-local-alias-directives",
+        "head_sha": "d77f0d3da55b94f7f3f7eb67e3fa92b35254e373",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
