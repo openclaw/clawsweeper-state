@@ -1,0 +1,43 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T18:53:40.368Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6101008464",
+    "node_id": "IC_kwDOQb6kR88AAAABa6YAUA",
+    "url": "https://github.com/openclaw/openclaw/issues/168599#issuecomment-6101008464",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/168599",
+    "pull_request_url": null,
+    "author": "sirko198717-design",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T18:52:36Z",
+    "updated_at": "2026-10-10T18:52:36Z",
+    "body_hash": "ee6c8026b29d3d4878e8aa9e5c594d69163b32cc5aba198b2bf28cc2f95fa97c",
+    "body_excerpt": "Could a maintainer please confirm this manually? The CDP endpoint is reachable from inside the same WSL environment with curl: curl --max- ... unsupported configuration, could you please point me to the correct supported setup for Windows Companion + WSL Gateway + Windows Chrome?",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "http://172.25.32.1/json/version",
+      "https://example.com/"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6101008464",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical troubleshooting with a CDP connectivity check and a command reproducing the failure.",
+      "Requests maintainer guidance on a supported Windows Compan ... ome configuration; links are contextual, not promotional."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
