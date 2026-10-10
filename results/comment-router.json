@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:41:05.573Z",
+  "updated_at": "2026-10-10T15:41:11.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168403:6097359064:2026-10-10T12:12:40Z:re_review",
-      "comment_id": "6097359064",
-      "comment_version_key": "6097359064:2026-10-10T12:12:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168403#issuecomment-6097359064",
-      "comment_created_at": "2026-10-10T12:12:40Z",
-      "comment_updated_at": "2026-10-10T12:12:40Z",
-      "comment_body_sha256": "d219f98a1074583209d8f4775ff0e1894881cd5c7de7ff29ed41240a184eaaed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168403,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T12:13:34.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-update-slice9-release-gc-20260919",
-        "head_sha": "82840d3a829b4fd4fa6544d4f1267a941f1e7111",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2062:6097308376:2026-10-10T12:14:03Z:clawsweeper_needs_human",
       "comment_id": "6097308376",
@@ -30961,6 +30914,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/h3-2.0.1-rc.32",
         "head_sha": "213d0a42e78b876d59a0644d6e40c39d081958da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3892:5942956523:2026-10-10T15:40:12Z:clawsweeper_needs_human",
+      "comment_id": "5942956523",
+      "comment_version_key": "5942956523:2026-10-10T15:40:12Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3892#issuecomment-5942956523",
+      "comment_created_at": "2026-10-01T23:56:57Z",
+      "comment_updated_at": "2026-10-10T15:40:12Z",
+      "comment_body_sha256": "92333241a5a5485924bdbb846d1a7af2bf6a0268b2238a5a73e543f9f1461b79",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3892,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supplied dispatch mocks, workflow assertions, and identity tests do not exercise the candidate through GitHub routing or the HTTP boundary; attach reda... (sha=76ac3f8bec7332081b26891257325489f6c587b4)",
+      "expected_head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T15:41:11.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remove-staging-environment-20261001",
+        "head_sha": "76ac3f8bec7332081b26891257325489f6c587b4",
         "cluster_id": null,
         "job_path": null
       }
