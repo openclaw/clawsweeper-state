@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-10-10T02:55:17.655Z
+Generated: 2026-10-10T03:04:41.652Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 0 |
+| open_prs | 1 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
 | needs_checks | 0 |
 | needs_review | 0 |
-| needs_merge_preflight | 0 |
-| needs_result_backfill | 0 |
+| needs_merge_preflight | 1 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -30,4 +30,4 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |  |  |  |
+| [#168126](https://github.com/openclaw/openclaw/pull/168126) | fix: close session databases before model directive fixture removal | issue-openclaw-openclaw-168089 | MERGEABLE | CLEAN | SUCCESS:54 SKIPPED:50 NEUTRAL:1 | needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
