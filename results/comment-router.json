@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T18:32:43.198Z",
+  "updated_at": "2026-10-10T18:33:33.013Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5260568901:2026-08-12T00:28:54Z:re_review",
-      "comment_id": "5260568901",
-      "comment_version_key": "5260568901:2026-08-12T00:28:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5260568901",
-      "comment_created_at": "2026-08-12T00:28:54Z",
-      "comment_updated_at": "2026-08-12T00:28:54Z",
-      "comment_body_sha256": "8bde78adcb08ff2ada9f0ee3f74dd57a59893e933bf6178110e78b3ebdf583a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T14:23:30.995Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5260627696:2026-08-12T00:33:41Z:re_review",
       "comment_id": "5260627696",
@@ -31715,6 +31688,39 @@
       "status": "skipped",
       "processed_at": "2026-10-10T18:32:43.198Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168454:6097944806:2026-10-10T18:32:38Z:clawsweeper_needs_human",
+      "comment_id": "6097944806",
+      "comment_version_key": "6097944806:2026-10-10T18:32:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168454#issuecomment-6097944806",
+      "comment_created_at": "2026-10-10T13:22:37Z",
+      "comment_updated_at": "2026-10-10T18:32:38Z",
+      "comment_body_sha256": "e1a7f50b3dd8ce6868018703dde2a2971bf90e4bbdc92d590edf3d3bddb78120",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: show current-head reclaim returning during pending capture, successful replacement work, and rejection of revoked-worker replay and queued work before...; Review finding: [P1] [P1] Preserve confirmed-stop settlement for provider destruction — extensions/crabbox/src/crabbox-worker-provider.ts:711-713 - [P2] [P2] Update the recovery-e... (sha=c5029fa83f86df0c2c0882140c57211df0eb3cdf)",
+      "expected_head_sha": "c5029fa83f86df0c2c0882140c57211df0eb3cdf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T18:33:33.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/reclaim-hang-20261010",
+        "head_sha": "c5029fa83f86df0c2c0882140c57211df0eb3cdf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
