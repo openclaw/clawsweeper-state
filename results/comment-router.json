@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T00:53:03.222Z",
+  "updated_at": "2026-10-10T00:53:06.826Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5674646867:2026-09-15T04:16:17Z:re_review",
-      "comment_id": "5674646867",
-      "comment_version_key": "5674646867:2026-09-15T04:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5674646867",
-      "comment_created_at": "2026-09-15T04:16:17Z",
-      "comment_updated_at": "2026-09-15T04:16:17Z",
-      "comment_body_sha256": "6adfd0e8e9e8d9b10c6f86d5c3d6863c53b9f8b062dde038acaf85ce003afea4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T19:49:08.876Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5682785218:2026-09-15T15:14:20Z:re_review",
       "comment_id": "5682785218",
@@ -32725,6 +32698,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:473:6091839326:2026-10-10T00:52:14Z:clawsweeper_needs_human",
+      "comment_id": "6091839326",
+      "comment_version_key": "6091839326:2026-10-10T00:52:14Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/473#issuecomment-6091839326",
+      "comment_created_at": "2026-10-10T00:52:14Z",
+      "comment_updated_at": "2026-10-10T00:52:14Z",
+      "comment_body_sha256": "c9cc02c153a96f250163db1354149fdcab193546c9d30dd04a1e4de0a1cc7239",
+      "repo": "openclaw/wacli",
+      "issue_number": 473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The body and discussion provide tests and local-gate claims, but no after-fix real setup exercising advertisement ingestion through sync and the built message CLI or webhook receiver....; Review finding: [P2] Preserve ad referrals during phone-identity migration — internal/store/schema.sql:95 - [P2] Scrub ad referrals when applying an alias purge record — internal/... (sha=6269d085164d0b281aaf41a9a700de93d9de0196)",
+      "expected_head_sha": "6269d085164d0b281aaf41a9a700de93d9de0196",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T00:53:06.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upstream/message-ad-referral",
+        "head_sha": "6269d085164d0b281aaf41a9a700de93d9de0196",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
