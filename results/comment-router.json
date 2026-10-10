@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:43:27.002Z",
+  "updated_at": "2026-10-10T09:43:35.226Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166269",
-      "comment_id": "repair-loop-label-sweep:automerge:166269",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166269",
-      "comment_created_at": "2026-10-10T05:33:14.133Z",
-      "comment_updated_at": "2026-10-10T05:33:14.133Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166269,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T05:35:11.212Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-auth-timeout-metadata",
-        "head_sha": "72c26edb8a4a8e7dc6a342392c3092ae07e82a1e",
-        "cluster_id": "automerge-openclaw-openclaw-166269",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:892:6093456155:2026-10-10T05:34:18Z:clawsweeper_auto_repair",
       "comment_id": "6093456155",
@@ -33056,6 +33004,39 @@
         "kind": "pull_request",
         "branch": "codex/native-cron-history-prepare",
         "head_sha": "06e876fb934e8cead4afdff4d7e55ab725bba691",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167585:6073804354:2026-10-10T09:42:41Z:clawsweeper_needs_human",
+      "comment_id": "6073804354",
+      "comment_version_key": "6073804354:2026-10-10T09:42:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6073804354",
+      "comment_created_at": "2026-10-09T03:41:46Z",
+      "comment_updated_at": "2026-10-10T09:42:41Z",
+      "comment_body_sha256": "af7307fd34e7551a743863c99f8c7b7e9dcd119db24dda5be163d1ba841fbbf9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The Gateway RPC output and shipped-process comparisons exercise scenarios that already pass without metadata completion. The latest mechanism analysis adds useful context but does not... (sha=e36c65027ec43bd566c14512291b6733caed28b0)",
+      "expected_head_sha": "e36c65027ec43bd566c14512291b6733caed28b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T09:43:35.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167365-effective-tool-inventory",
+        "head_sha": "e36c65027ec43bd566c14512291b6733caed28b0",
         "cluster_id": null,
         "job_path": null
       }
