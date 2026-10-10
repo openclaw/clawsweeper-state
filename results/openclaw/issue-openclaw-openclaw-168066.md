@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168066"
-mode: "autonomous"
-run_id: "38013180103"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38013180103"
-head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T02:08:56.829Z"
-canonical: "https://github.com/openclaw/openclaw/issues/168066"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/168066"
+mode: "plan"
+run_id: "38018210971"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38018210971"
+head_sha: "9a51e7929b189f25e054b7117994befcb4800c1e"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T02:50:33.122Z"
+canonical: "#168066"
+canonical_issue: "#168066"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38013180103](https://github.com/openclaw/clawsweeper/actions/runs/38013180103)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38018210971](https://github.com/openclaw/clawsweeper/actions/runs/38018210971)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/168066
+Canonical: #168066
 
 ## Summary
 
-Source inspection confirms the reported preservation gap at preflight main 1f307d61d0f77dfe0c838420b8d2c18d73c0baf5. A narrow fix artifact is prepared for the executor. Implementation and required reproduction are blocked on this read-only host; node_modules is absent. No files or GitHub state were changed.
+Plan a narrow blocked-plugin preservation fix. No files or GitHub state changed; reproduction, implementation, and validation remain executor gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Source inspection confirms the reported preservation gap at preflight main 1f307
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168066 | fix_needed | planned | canonical | Preserve the authored entry at stale cleanup without changing ownership enforcement or migration policy. Require a failing real-boundary regression before editing. |
-| #76707 | keep_related | planned | related | Distinct repair and maintainer policy scope; leave open. |
-| #78493 | keep_related | planned | related | The proposed fix does not repair mixed ownership or redefine repair privileges; leave open. |
-| #53187 | route_security | planned | security_sensitive | Quarantine that historical finding for central OpenClaw security handling. Do not mutate the closed PR or expand this repair into its security analysis. |
-| #147711 | route_security | planned | security_sensitive | Route the historical finding to central OpenClaw security handling without mutating the PR. The config-preservation repair does not depend on resolving that finding. |
-| #150312 | keep_closed | skipped | related | Historical evidence and regression controls; no closure or merge action. |
-| cluster:issue-openclaw-openclaw-168066 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation remains blocked on this host and must proceed in the executor's writable secretless isolation. |
+| #168066 | build_fix_artifact | planned | canonical | A focused metadata-classification repair is justified; first reproduce through discovery, Doctor, and persisted config on the execution base. |
+| #76707 | keep_related | planned | related | Wrong-home detection has distinct scope and is unnecessary for preserving blocked-plugin configuration. |
+| #78493 | keep_related | planned | related | Preserving an authored plugin entry does not resolve broader privileged filesystem mutation. |
+| #53187 | route_security | planned | security_sensitive | Quarantine this exact historical reference for central security handling; recommend no public mutation or reopening. |
+| #147711 | route_security | planned | security_sensitive | Quarantine this exact reference without adjudicating the finding or blocking the independent configuration-preservation plan. |
+| #150312 | keep_closed | skipped | related | Historical preservation behavior must survive the focused repair. |
 
 ## Needs Human
 
