@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:10:45.152Z",
+  "updated_at": "2026-10-10T03:11:12.974Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:161170:6090545615:2026-10-09T22:45:50Z:re_review",
-      "comment_id": "6090545615",
-      "comment_version_key": "6090545615:2026-10-09T22:45:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161170#issuecomment-6090545615",
-      "comment_created_at": "2026-10-09T22:45:50Z",
-      "comment_updated_at": "2026-10-09T22:45:50Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161170,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T22:46:40.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-embeddings-slash-model",
-        "head_sha": "80c9550d4ec6ca86db2283d8521fcde245d5974b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2009:6090547659:2026-10-09T22:45:59Z:clawsweeper_needs_human",
       "comment_id": "6090547659",
@@ -33592,6 +33545,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-context-tokens-bundled-catalog-fallback",
         "head_sha": "34a3d6ef1e4b8108b2f58106de29287a723acd2f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168132:6093166151:2026-10-10T03:10:19Z:clawsweeper_needs_human",
+      "comment_id": "6093166151",
+      "comment_version_key": "6093166151:2026-10-10T03:10:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168132#issuecomment-6093166151",
+      "comment_created_at": "2026-10-10T03:10:19Z",
+      "comment_updated_at": "2026-10-10T03:10:19Z",
+      "comment_body_sha256": "ee232b9070f275055a4d920709471ba2d405877927c8842719a31d8673860083",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The supplied Linux proof exercises parser, event bus, executeAgentTurn, projector, and narrator input with synthetic wire events, mocked CLI transport, and mocked utility-model execut... (sha=5ff17c5b3e6355e7630eda5636e55362383a2610)",
+      "expected_head_sha": "5ff17c5b3e6355e7630eda5636e55362383a2610",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T03:11:12.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cli-failure-title-20261010",
+        "head_sha": "5ff17c5b3e6355e7630eda5636e55362383a2610",
         "cluster_id": null,
         "job_path": null
       }
