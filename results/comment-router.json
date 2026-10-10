@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:01:11.896Z",
+  "updated_at": "2026-10-10T20:01:20.161Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139451:5555182942:2026-10-10T14:32:53Z:clawsweeper_needs_human",
-      "comment_id": "5555182942",
-      "comment_version_key": "5555182942:2026-10-10T14:32:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139451#issuecomment-5555182942",
-      "comment_created_at": "2026-09-05T22:22:09Z",
-      "comment_updated_at": "2026-10-10T14:32:53Z",
-      "comment_body_sha256": "cd55bb4aa3d51535f0f5a2d28c24bc5f3fbe0e5ff45ff16421ff2e957a5f56c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied evidence covers direct helper unit tests, not an after-fix configuration-write or startup flow through the production owner. Provide redacted terminal output, logs, or a...; Review finding: [P1] Extend the existing backup owner instead of adding an unused parallel path — src/config/auto-backup.ts:15-18 - [P2] Reserve backup filenames exclusively to pr... (sha=4eb7f41c85874aa5f0945201be4f43782723ae0c)",
-      "expected_head_sha": "4eb7f41c85874aa5f0945201be4f43782723ae0c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T14:35:16.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "g3-agent/1788646607344",
-        "head_sha": "4eb7f41c85874aa5f0945201be4f43782723ae0c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145386:5641783146:2026-10-10T14:28:42Z:clawsweeper_auto_repair",
       "comment_id": "5641783146",
@@ -33173,6 +33140,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1912:6101614285:2026-10-10T20:00:16Z:re_review",
+      "comment_id": "6101614285",
+      "comment_version_key": "6101614285:2026-10-10T20:00:16Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1912#issuecomment-6101614285",
+      "comment_created_at": "2026-10-10T20:00:16Z",
+      "comment_updated_at": "2026-10-10T20:00:16Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1912,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T20:01:18.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "drop-host-overwritten-schema",
+        "head_sha": "bbfd0b64370b069857f58614db52203a6bd78d72",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
