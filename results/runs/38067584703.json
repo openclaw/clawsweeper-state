@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-217",
+  "mode": "autonomous",
+  "run_id": "38067584703",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38067584703",
+  "head_sha": "260683638a342cbed87181118530b15980282ff0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-217.md",
+  "published_at": "2026-10-10T16:28:36.102Z",
+  "canonical": "https://github.com/openclaw/agent-skills/issues/217",
+  "canonical_issue": "https://github.com/openclaw/agent-skills/issues/217",
+  "canonical_pr": null,
+  "summary": "#217 remains valid on preflight main 621fd3af706efc989154231ade7a4610a59d9460. A concrete fix plan is ready, but the read-only filesystem prevents implementation and branch validation. No files or GitHub items were changed. Skill validation and three existing partition regressions passed.",
+  "actions": [
+    {
+      "target": "#217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "The capacity limitation remains source-confirmed. Implementation requires writable execution; no product decision or security-boundary change is required."
+    },
+    {
+      "target": "#215",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Historical implementation context; no closure or branch repair action."
+    },
+    {
+      "target": "#240",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this item to central OpenClaw security handling without GitHub mutation. Preserve current scanner policy in the #217 fix."
+    },
+    {
+      "target": "#287",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Retain its partition-capacity behavior and regression coverage as implementation constraints."
+    },
+    {
+      "target": "cluster:issue-openclaw-agent-skills-217",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Return the concrete implementation plan for writable execution; do not treat baseline checks as validation of an implemented fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
