@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:50:53.757Z",
+  "updated_at": "2026-10-10T09:50:59.646Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168225:6094157738:2026-10-10T05:20:39Z:clawsweeper_needs_human",
-      "comment_id": "6094157738",
-      "comment_version_key": "6094157738:2026-10-10T05:20:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168225#issuecomment-6094157738",
-      "comment_created_at": "2026-10-10T05:20:39Z",
-      "comment_updated_at": "2026-10-10T05:20:39Z",
-      "comment_body_sha256": "423234a1cac87a2a486540817264b78c1fad70eec0f47fa02781e2c0ea391e27",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d4a39f8edd5d4f3c1a1067bc8f4a3484833108e0)",
-      "expected_head_sha": "d4a39f8edd5d4f3c1a1067bc8f4a3484833108e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:35:37.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/verbose-preamble",
-        "head_sha": "d4a39f8edd5d4f3c1a1067bc8f4a3484833108e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168222:6094173873:2026-10-10T05:22:58Z:maintainer_approve_automerge",
       "comment_id": "6094173873",
@@ -33137,6 +33104,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168075:6096285170:2026-10-10T09:50:04Z:re_review",
+      "comment_id": "6096285170",
+      "comment_version_key": "6096285170:2026-10-10T09:50:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168075#issuecomment-6096285170",
+      "comment_created_at": "2026-10-10T09:50:04Z",
+      "comment_updated_at": "2026-10-10T09:50:04Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168075,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:50:58.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-onboarding-embedding-rows",
+        "head_sha": "c1c1699d4802bd2fcc0bfc0c465187f892d93551",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
