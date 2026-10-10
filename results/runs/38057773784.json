@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-166269",
+  "mode": "autonomous",
+  "run_id": "38057773784",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38057773784",
+  "head_sha": "43288b03d404df57edc9886bfd3bf3e94b956c47",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166269.md",
+  "published_at": "2026-10-10T14:20:04.241Z",
+  "canonical": "#166269",
+  "canonical_issue": null,
+  "canonical_pr": "#166269",
+  "summary": "Make PR #166269 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#166269",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#166269",
+      "candidate_fix": "#166269",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "failed": 1,
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/gateway/server-methods/sessions-abort.ts: core production [check:changed] src/gateway/server-methods/sessions.abort-dedupe-currentness.test.ts: core test [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main Environment variable count budget config/env-var-count-budget.txt: OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 216ms ok conflict markers 314ms ok line-cap growth ratchet 4.52s failed:1 max-lines suppression ratchet [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 2 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 573 grandfathered suppressions.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/gateway/server-methods/sessions-abort.ts: core production [check:changed] src/gateway/server-methods/sessions.abort-dedupe-currentness.test.ts: core test [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main Environment variable count budget config/env-var-count-budget.txt: OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 216ms ok conflict markers 314ms ok line-cap growth ratchet 4.52s failed:1 max-lines suppression ratchet [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 2 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 573 grandfathered suppressions.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "automerge_repair_outcome_comment",
+      "status": "updated",
+      "target": "#166269",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
