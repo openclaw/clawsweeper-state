@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:23:45.710Z",
+  "updated_at": "2026-10-10T05:24:21.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167902:6092000046:2026-10-10T01:08:18Z:re_review",
-      "comment_id": "6092000046",
-      "comment_version_key": "6092000046:2026-10-10T01:08:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167902#issuecomment-6092000046",
-      "comment_created_at": "2026-10-10T01:08:18Z",
-      "comment_updated_at": "2026-10-10T01:08:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167902,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:09:18.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-sighup-managed-children",
-        "head_sha": "0ba0bcc58b2597bc62a9a394a0b9d8b525f82a92",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141310:5572878134:2026-10-10T01:08:22Z:clawsweeper_needs_human",
       "comment_id": "5572878134",
@@ -33933,6 +33886,39 @@
         "kind": "pull_request",
         "branch": "codex/stab-workboard-card-tools-docs",
         "head_sha": "704cab38038c36922a312a2dd0e40f9fa11c3d14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168091:6092905713:2026-10-10T05:23:23Z:clawsweeper_needs_human",
+      "comment_id": "6092905713",
+      "comment_version_key": "6092905713:2026-10-10T05:23:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168091#issuecomment-6092905713",
+      "comment_created_at": "2026-10-10T02:41:15Z",
+      "comment_updated_at": "2026-10-10T05:23:23Z",
+      "comment_body_sha256": "55511598652b8529b257ea818bf140c88de7e2f9f10f36cfbe454ee8f4d2f33d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed cron resolver and watchdog are covered by an in-process CronService test with mocked execution and real loopback webhook delivery, while the author explicitly reports no l... (sha=9be364d6431f7c87902522437473125b2ad80c6d)",
+      "expected_head_sha": "9be364d6431f7c87902522437473125b2ad80c6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:24:21.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-failure-alert-error-cause",
+        "head_sha": "9be364d6431f7c87902522437473125b2ad80c6d",
         "cluster_id": null,
         "job_path": null
       }
