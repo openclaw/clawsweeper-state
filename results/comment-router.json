@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:20:18.544Z",
+  "updated_at": "2026-10-10T07:20:25.408Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167979:6089884574:2026-10-10T03:24:11Z:clawsweeper_needs_human",
-      "comment_id": "6089884574",
-      "comment_version_key": "6089884574:2026-10-10T03:24:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167979#issuecomment-6089884574",
-      "comment_created_at": "2026-10-09T21:53:28Z",
-      "comment_updated_at": "2026-10-10T03:24:11Z",
-      "comment_body_sha256": "967ed2eca797d9440ab5fb2353ed45b196275a0c3729687ddcd974d68b452dd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167979,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c76a6e708021324f524b32648f79b7e6873491f0)",
-      "expected_head_sha": "c76a6e708021324f524b32648f79b7e6873491f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:25:03.934Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/line-cap-five-owners",
-        "head_sha": "c76a6e708021324f524b32648f79b7e6873491f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140508:5562791872:2026-10-10T03:24:33Z:clawsweeper_needs_human",
       "comment_id": "5562791872",
@@ -33241,6 +33208,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138786:6095053340:2026-10-10T07:19:16Z:re_review",
+      "comment_id": "6095053340",
+      "comment_version_key": "6095053340:2026-10-10T07:19:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138786#issuecomment-6095053340",
+      "comment_created_at": "2026-10-10T07:19:16Z",
+      "comment_updated_at": "2026-10-10T07:19:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138786,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T07:20:23.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-reindex-livelock",
+        "head_sha": "55c30ff66dcc7180d5424e781300810fe00c40c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
