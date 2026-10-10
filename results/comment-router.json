@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T17:42:31.757Z",
+  "updated_at": "2026-10-10T17:43:40.865Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167892:6098243166:2026-10-10T13:58:06Z:re_review",
-      "comment_id": "6098243166",
-      "comment_version_key": "6098243166:2026-10-10T13:58:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167892#issuecomment-6098243166",
-      "comment_created_at": "2026-10-10T13:58:06Z",
-      "comment_updated_at": "2026-10-10T13:58:06Z",
-      "comment_body_sha256": "f08d52287ad758fa5a388fd486bbc0b0c628d8ba4ecee59ab1295499740a0166",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167892,
-      "author": "ethanhawkes-gif",
-      "author_id": 259455325,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T13:59:06.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settled-finalizer-writer-rebound",
-        "head_sha": "77375feb322958ab6f8e3c0e1b7e48d342d33d50",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168093:6098250754:2026-10-10T13:59:00Z:re_review",
       "comment_id": "6098250754",
@@ -31156,6 +31109,39 @@
         "kind": "pull_request",
         "branch": "pgprep/postgres-schema",
         "head_sha": "7bed777cbbafdde4d0ef3cc9622923ff1c7736e0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143911:5616705068:2026-10-10T17:42:47Z:clawsweeper_needs_human",
+      "comment_id": "5616705068",
+      "comment_version_key": "5616705068:2026-10-10T17:42:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143911#issuecomment-5616705068",
+      "comment_created_at": "2026-09-10T09:56:24Z",
+      "comment_updated_at": "2026-10-10T17:42:47Z",
+      "comment_body_sha256": "03e5d06b3a08ee556419dad51dbbf6873e5aac37dfdebade231399f3fb6c11b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2f7d3084fce5e3f2887b7091a75da22dfd247108)",
+      "expected_head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T17:43:40.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-143821-memory-intersession",
+        "head_sha": "2f7d3084fce5e3f2887b7091a75da22dfd247108",
         "cluster_id": null,
         "job_path": null
       }
