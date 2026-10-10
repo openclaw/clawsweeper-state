@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:30:55.201Z",
+  "updated_at": "2026-10-10T20:31:30.429Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1905:6098984678:2026-10-10T15:16:17Z:re_review",
-      "comment_id": "6098984678",
-      "comment_version_key": "6098984678:2026-10-10T15:16:17Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1905#issuecomment-6098984678",
-      "comment_created_at": "2026-10-10T15:16:17Z",
-      "comment_updated_at": "2026-10-10T15:16:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1905,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T15:17:19.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/row3-github-imports",
-        "head_sha": "721fa89f89324070ed2cb3d3a1cdfd7b9f28ead5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1901:6098429442:2026-10-10T15:16:37Z:clawsweeper_needs_human",
       "comment_id": "6098429442",
@@ -33135,6 +33088,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/sweetcookiekit:25:6100854666:2026-10-10T20:30:42Z:clawsweeper_needs_human",
+      "comment_id": "6100854666",
+      "comment_version_key": "6100854666:2026-10-10T20:30:42Z",
+      "comment_url": "https://github.com/steipete/SweetCookieKit/pull/25#issuecomment-6100854666",
+      "comment_created_at": "2026-10-10T18:35:20Z",
+      "comment_updated_at": "2026-10-10T20:30:42Z",
+      "comment_body_sha256": "849227e15714a799f5c0e63a4d2e4d5df298f8e4ea2f6414fe4239c51a0a0f8d",
+      "repo": "steipete/sweetcookiekit",
+      "issue_number": 25,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed owners are readCurrentValue and ChromiumAnchoredFiles; supplied validation covers synthetic filesystem and paired Linux tests, while the final Darwin path fix is explicitl... (sha=4fecf1158b2a64045ad3d85e11aab3d8b6d73e7d)",
+      "expected_head_sha": "4fecf1158b2a64045ad3d85e11aab3d8b6d73e7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T20:31:30.429Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/strict-current-local-storage",
+        "head_sha": "4fecf1158b2a64045ad3d85e11aab3d8b6d73e7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
