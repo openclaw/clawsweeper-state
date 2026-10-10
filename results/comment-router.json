@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T22:18:11.176Z",
+  "updated_at": "2026-10-10T22:18:55.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168164:6094490202:2026-10-10T06:06:19Z:re_review",
-      "comment_id": "6094490202",
-      "comment_version_key": "6094490202:2026-10-10T06:06:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168164#issuecomment-6094490202",
-      "comment_created_at": "2026-10-10T06:06:19Z",
-      "comment_updated_at": "2026-10-10T06:06:19Z",
-      "comment_body_sha256": "7f1be46a0e3f814aa62eb1e211b5e54d4b194f0c34e99cf14c1fba92ce1481fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168164,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T17:15:43.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/server-compaction-defaults",
-        "head_sha": "c321b15b2c75279956d1eb13e2cba10ca4c4c377",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168164:6093528304:2026-10-10T17:14:41Z:clawsweeper_needs_human",
       "comment_id": "6093528304",
@@ -33127,6 +33080,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168650:6102267672:2026-10-10T22:17:59Z:clawsweeper_needs_human",
+      "comment_id": "6102267672",
+      "comment_version_key": "6102267672:2026-10-10T22:17:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168650#issuecomment-6102267672",
+      "comment_created_at": "2026-10-10T21:17:11Z",
+      "comment_updated_at": "2026-10-10T22:17:59Z",
+      "comment_body_sha256": "6be9f5fe1bbd1d25ec5151ce50ab48dca1bff66f702b1ec49933f7a1a5fef862",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168650,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the failed checks-fast-baseline-ratchets job and determine whether it requires a branch repair or qualifies for the repository’s inherited-failure landing path. (sha=97ca647e748e25fd23baac8721473af594aacb93)",
+      "expected_head_sha": "97ca647e748e25fd23baac8721473af594aacb93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T22:18:55.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-micro-restart-recovery-work-start-blocked-20260919",
+        "head_sha": "97ca647e748e25fd23baac8721473af594aacb93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
