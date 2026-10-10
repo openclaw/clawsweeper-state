@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/gogcli",
+  "cluster_id": "issue-openclaw-gogcli-1199",
+  "mode": "autonomous",
+  "run_id": "38093009564",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38093009564",
+  "head_sha": "3e3ac1fffea21e8f0b237313887ae81309b4d76c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-gogcli-1199.md",
+  "published_at": "2026-10-10T23:52:43.440Z",
+  "canonical": "https://github.com/openclaw/gogcli/issues/1199",
+  "canonical_issue": "https://github.com/openclaw/gogcli/issues/1199",
+  "canonical_pr": null,
+  "summary": "The request remains valid on preflight main c6efe737aecdeec952deaa2a4caf94e2cf0a75c7. A narrow implementation artifact is ready for the executor. Local implementation and validation are blocked by the read-only filesystem; the attempted focused test could not create Go's module cache. No code or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#1199",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1199",
+      "candidate_fix": null,
+      "reason": "The requested message-level extension has a clear, narrow implementation using existing selection and label-resolution code."
+    },
+    {
+      "target": "#385",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#1199",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closeout or branch repair is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1199",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#1199",
+      "candidate_fix": null,
+      "reason": "A focused new PR is viable; implementation can proceed in a writable executor checkout without a product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-gogcli-1199",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#1199",
+      "candidate_fix": null,
+      "reason": "PR readiness requires implementation, regression evidence, review, and validation in a writable environment. The deterministic executor must perform those steps before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
