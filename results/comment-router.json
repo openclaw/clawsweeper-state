@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:40:33.170Z",
+  "updated_at": "2026-10-10T05:40:58.146Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6092228087:2026-10-10T01:33:55Z:re_review",
-      "comment_id": "6092228087",
-      "comment_version_key": "6092228087:2026-10-10T01:33:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6092228087",
-      "comment_created_at": "2026-10-10T01:33:55Z",
-      "comment_updated_at": "2026-10-10T01:33:55Z",
-      "comment_body_sha256": "39f4f012de13e9c10144577fb1cd0a88d6a69f630a328fc762389d100bcb3e6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — merged upstream/main `1f307d61d0` (39 commits) into `memorytunning-pr-v2` → `6590788da0`. no conflicts; skill-selection contract (async worker `listauditeventsindatabase`, companion table `audit_skill_selection_events`, workspace-bootstrap-privacy re-export, 4-field run-usage) preserved. note: local `tsgo:core` shows pre-existing upstream errors in `state-migrations.no-replace-move.ts` / `plugin-generation-file-capture.ts` / `plugin-source-file.ts` (not touched by this pr)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:34:49.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "6590788da06ffd3bd98d0ddf48a997917ca73cd4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141326:6092228279:2026-10-10T01:33:56Z:re_review",
       "comment_id": "6092228279",
@@ -33898,6 +33851,39 @@
         "kind": "pull_request",
         "branch": "openclaw/task-progress-on-the-right-side",
         "head_sha": "465def4316e1606cff3e0681e6cfbfc630eb07b5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162798:5934854366:2026-10-10T05:39:55Z:clawsweeper_auto_repair",
+      "comment_id": "5934854366",
+      "comment_version_key": "5934854366:2026-10-10T05:39:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/162798#issuecomment-5934854366",
+      "comment_created_at": "2026-10-01T15:39:03Z",
+      "comment_updated_at": "2026-10-10T05:39:55Z",
+      "comment_body_sha256": "6c5e65759999401d50013af45a8d8e28117049f7b2e8826832d4c5f6c9917531",
+      "repo": "openclaw/openclaw",
+      "issue_number": 162798,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=87f76a5b7e86ab63038dbbd870fbf0797b095d92)",
+      "expected_head_sha": "87f76a5b7e86ab63038dbbd870fbf0797b095d92",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:40:58.146Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-onboarding-route-label",
+        "head_sha": "87f76a5b7e86ab63038dbbd870fbf0797b095d92",
         "cluster_id": null,
         "job_path": null
       }
