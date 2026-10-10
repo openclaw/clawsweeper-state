@@ -2,16 +2,16 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38005860586"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38005860586"
-head_sha: "b8a3991e8f6aadfc95982783e630241589101fee"
+run_id: "38065376290"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38065376290"
+head_sha: "70cfbb0677b28eabe1c5abeddc06bf208936cb88"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T23:47:55.789Z"
+published_at: "2026-10-10T15:55:59.005Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_pr: null
-actions_total: 3
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38005860586](https://github.com/openclaw/clawsweeper/actions/runs/38005860586)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38065376290](https://github.com/openclaw/clawsweeper/actions/runs/38065376290)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 ## Summary
 
-#922 remains valid on preflight main c02c26927d77ddcc17a61233cd4bc0cf83de485a. Implementation is blocked: no receiver-qualified mechanism was established, and this read-only Linux runner cannot perform the required native macOS validation. No code or GitHub state changed.
+The capability gap remains on preflight main d7d7e09f3d555ef742088c6f4f456b73caae6234. No bounded implementation is supported by receiver evidence: existing native approaches failed the required single-pair behavior. No code or GitHub changes were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,11 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | keep_related | skipped | related | Keep the canonical issue open through a non-mutating retention action. The provided artifacts establish no receiver-qualified implementation mechanism, so a concrete fix artifact cannot safely be supplied. Restoring the failed fallback or promoting chrome preparation would not satisfy the retained single-pair receiver contract. A writable macOS validation environment and a qualified mechanism are required before an implementation PR can be planned concretely. |
-| #916 | keep_closed | skipped | related | Historical implementation evidence, not a viable fix or mutation target. |
-| #926 | keep_closed | skipped | related | Completed diagnostic work with a distinct scope; it does not resolve #922. |
+| #922 | keep_related | skipped | related | Retain #922 as the canonical open investigation without an executable fix action. A native feasibility experiment must establish exactly one unmodified receiver down/up pair with unchanged first-mouse policy, exact target binding, and preserved desktop state before production routing changes. Dispatch-only tests cannot establish this. The provided artifacts do not support a safe bounded implementation, so no speculative fix artifact is emitted. |
+| #916 | keep_closed | skipped | related | Historical implementation evidence; do not reopen, replace, or represent it as a successful fix. |
+| #923 | keep_closed | skipped | related | Adjacent presentation fix does not satisfy passive receiver delivery. |
+| #926 | keep_closed | skipped | related | Adjacent diagnostic fix leaves the canonical capability unresolved. |
+| #927 | keep_closed | skipped | related | Typing receipt validation is distinct from cold passive pointer delivery. |
 
 ## Needs Human
 
