@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:21:09.338Z",
+  "updated_at": "2026-10-10T06:21:13.046Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:163267:6092706921:2026-10-10T02:25:44Z:re_review",
-      "comment_id": "6092706921",
-      "comment_version_key": "6092706921:2026-10-10T02:25:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163267#issuecomment-6092706921",
-      "comment_created_at": "2026-10-10T02:25:44Z",
-      "comment_updated_at": "2026-10-10T02:25:44Z",
-      "comment_body_sha256": "419e1265fd5792a2178e27f12db2b5c38a52f74c54dbced73d5a6cb9b1245d76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163267,
-      "author": "shannon0430",
-      "author_id": 258282406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:26:31.227Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-channel-visibility",
-        "head_sha": "f003cf7c795e40be0bdb8b4a30b569005770cea5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164783:6092708301:2026-10-10T02:25:53Z:re_review",
       "comment_id": "6092708301",
@@ -33421,6 +33374,39 @@
         "kind": "pull_request",
         "branch": "fix/round9-confirmed-merges",
         "head_sha": "4a1252e7ed8b2c5891af7223459f49a84b127b7c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168241:6094339059:2026-10-10T06:19:00Z:clawsweeper_needs_human",
+      "comment_id": "6094339059",
+      "comment_version_key": "6094339059:2026-10-10T06:19:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168241#issuecomment-6094339059",
+      "comment_created_at": "2026-10-10T05:46:31Z",
+      "comment_updated_at": "2026-10-10T06:19:00Z",
+      "comment_body_sha256": "3d92b7eb4668720ec28b227344a09ffa936b98a56b796858ea5697b0029f223d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=51e52865e8977aae165cb811d664e839c500f4d9)",
+      "expected_head_sha": "51e52865e8977aae165cb811d664e839c500f4d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:21:13.046Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-source-fence-admission-deadcode",
+        "head_sha": "51e52865e8977aae165cb811d664e839c500f4d9",
         "cluster_id": null,
         "job_path": null
       }
