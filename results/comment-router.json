@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T08:32:00.877Z",
+  "updated_at": "2026-10-10T08:32:09.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167798:6093683127:2026-10-10T04:17:51Z:re_review",
-      "comment_id": "6093683127",
-      "comment_version_key": "6093683127:2026-10-10T04:17:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167798#issuecomment-6093683127",
-      "comment_created_at": "2026-10-10T04:17:51Z",
-      "comment_updated_at": "2026-10-10T04:17:51Z",
-      "comment_body_sha256": "e419b13a39a6ea0586c63cf14a80d084a45b74c71c30f40e0e0c115ac6016c30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167798,
-      "author": "AmarkFox",
-      "author_id": 3632677,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T04:36:53.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/compat-append-only-runtime-context",
-        "head_sha": "747b9064223f38ec8b8e0309ca5cf06d283e5dfa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137092:5866870543:2026-09-28T09:08:27Z:re_review",
       "comment_id": "5866870543",
@@ -33048,6 +33001,39 @@
         "kind": "pull_request",
         "branch": "fix/advanced-settings-reconnect",
         "head_sha": "73117ef7977cabb23ce3fe8e30a7e05d61a7420f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:917:6095700544:2026-10-10T08:31:16Z:clawsweeper_needs_human",
+      "comment_id": "6095700544",
+      "comment_version_key": "6095700544:2026-10-10T08:31:16Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/917#issuecomment-6095700544",
+      "comment_created_at": "2026-10-10T08:31:16Z",
+      "comment_updated_at": "2026-10-10T08:31:16Z",
+      "comment_body_sha256": "dca443d1c5380bfc73ba6d7f3e23437e267e6ad862aa9e5265b2f88f1eb255bb",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 917,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supplied validation exercises the policy string with a mocked Sigstore verifier, rather than the real certificate-verification boundary; show an intend... (sha=f5b21b8c3b6b38f4050bc8e0005cf3e93067caba)",
+      "expected_head_sha": "f5b21b8c3b6b38f4050bc8e0005cf3e93067caba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T08:32:09.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "koffi/f5a-verifier-regex",
+        "head_sha": "f5b21b8c3b6b38f4050bc8e0005cf3e93067caba",
         "cluster_id": null,
         "job_path": null
       }
