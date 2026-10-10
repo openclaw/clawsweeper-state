@@ -2,12 +2,12 @@
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
 mode: "autonomous"
-run_id: "38065355515"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38065355515"
-head_sha: "70cfbb0677b28eabe1c5abeddc06bf208936cb88"
+run_id: "38067876189"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38067876189"
+head_sha: "b7e877075650da8e0a74fa0ab2b5c8fc03e35dcb"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-10T15:54:29.317Z"
+published_at: "2026-10-10T16:32:21.093Z"
 canonical: "https://github.com/openclaw/libterminal/issues/41"
 canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 2
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38065355515](https://github.com/openclaw/clawsweeper/actions/runs/38065355515)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38067876189](https://github.com/openclaw/clawsweeper/actions/runs/38067876189)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/libterminal/issues/41
 
 ## Summary
 
-Implementation remains blocked by the issue's explicit upstream publication gates. The same-day source report records both gates unmet. No code changes or PR proposed; keep #41 open. The misresolved #169 and #182 entries require reference correction before classification.
+Implementation remains blocked by the issue's explicit upstream publication gates. The October 10 review records both gates as unmet. Checkout matches preflight main d029be0e2bc6bbc088f26f42649e91f9b61944c7 and still pins ghostty-web@0.4.0. No code changed or PR proposed; tests were not run.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation remains blocked by the issue's explicit upstream publication gate
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | The publication hold is explicit and remains supported by the supplied evidence. Resume implementation only after both publications are verified; no unresolved maintainer decision requires escalation. |
-| #77 | keep_closed | skipped | related | Historical validation groundwork, not an adoption fix or mutation target. |
-| #169 | needs_human | blocked | needs_human | Correct the misresolved repository reference before classification. No target metadata can safely be supplied, and no GitHub mutation is proposed. |
-| #182 | needs_human | blocked | needs_human | Correct the misresolved repository reference before classification. No target metadata can safely be supplied, and no GitHub mutation is proposed. |
+| #41 | keep_canonical | planned | canonical | Keep the adoption tracker open. Resume implementation only after both publications are verified and an exact qualifying stable wrapper can be selected; no maintainer judgment is currently required. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork; no further action. |
+| #169 | needs_human | blocked | needs_human | Reference resolution is blocked: no libterminal target was established. Correct the misresolved cross-repository reference before classification; target metadata cannot safely be supplied from these artifacts. |
+| #182 | needs_human | blocked | needs_human | Reference resolution is blocked: no libterminal target was established. Correct the misresolved cross-repository reference before classification; target metadata cannot safely be supplied from these artifacts. |
 
 ## Needs Human
 
-- #169: Correct the preflight reference to coder/ghostty-web/pull/169; the libterminal lookup returned 404 and provides no target kind or update timestamp.
-- #182: Correct the preflight reference to coder/ghostty-web/pull/182; the libterminal lookup returned 404 and provides no target kind or update timestamp.
+- #169: Resolve the misparsed coder/ghostty-web cross-repository reference. The libterminal preflight lookup returned HTTP 404 with unknown kind and null updated_at; do not fabricate target metadata.
+- #182: Resolve the misparsed coder/ghostty-web cross-repository reference. The libterminal preflight lookup returned HTTP 404 with unknown kind and null updated_at; do not fabricate target metadata.
