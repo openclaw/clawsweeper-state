@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:34:04.864Z",
+  "updated_at": "2026-10-10T05:34:12.016Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138786:6092113662:2026-10-10T01:20:52Z:re_review",
-      "comment_id": "6092113662",
-      "comment_version_key": "6092113662:2026-10-10T01:20:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138786#issuecomment-6092113662",
-      "comment_created_at": "2026-10-10T01:20:52Z",
-      "comment_updated_at": "2026-10-10T01:20:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138786,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:21:47.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-reindex-livelock",
-        "head_sha": "678cc988d7d1126df5f876f160258a87169d0e21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168064:6092113616:2026-10-10T01:20:51Z:re_review",
       "comment_id": "6092113616",
@@ -33935,6 +33888,39 @@
         "kind": "pull_request",
         "branch": "fix/session-startup-recovery-ux",
         "head_sha": "ebd94db7589b7670dbab685b4cd5180bd076e3ef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168229:6094245988:2026-10-10T05:33:11Z:clawsweeper_needs_human",
+      "comment_id": "6094245988",
+      "comment_version_key": "6094245988:2026-10-10T05:33:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168229#issuecomment-6094245988",
+      "comment_created_at": "2026-10-10T05:33:11Z",
+      "comment_updated_at": "2026-10-10T05:33:11Z",
+      "comment_body_sha256": "18213998a754957d484c1d9e6e4c5f7fb043914d31895617f991a74a93e051ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168229,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: PluginInstance now keeps owner-joined ordinary tokens active during cleanup; show a loaded Memory Core startup scan stopping through disposal, plus rej... (sha=433655820c3b679882b77d1fbe6c5ce2be122101)",
+      "expected_head_sha": "433655820c3b679882b77d1fbe6c5ce2be122101",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:34:12.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-disposal-hang",
+        "head_sha": "433655820c3b679882b77d1fbe6c5ce2be122101",
         "cluster_id": null,
         "job_path": null
       }
