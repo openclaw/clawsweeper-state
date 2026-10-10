@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168412",
+  "mode": "autonomous",
+  "run_id": "38048880099",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38048880099",
+  "head_sha": "56f90615e6cd5cd24ea1507e020f32d7487bf414",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168412.md",
+  "published_at": "2026-10-10T11:39:45.160Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168412",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168412",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair artifact against preflight main c75be4fd9655f605805e4b13ead59703d8fb863e. Implementation is blocked by the read-only Linux workspace, unavailable Xcode/iOS simulators, and failed live GitHub rechecks. No code or GitHub state changed; native reproduction and validation remain required.",
+  "actions": [
+    {
+      "target": "#168412",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168412",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair remains justified by the hydrated evidence. Recheck linked contributor work and reproduce on current main on an authorized macOS host before editing or opening a PR."
+    },
+    {
+      "target": "#111831",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not an open candidate or proof that the current vertical card defect is fixed."
+    },
+    {
+      "target": "#112299",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Establishes expected existing behavior without resolving the new report."
+    },
+    {
+      "target": "#156683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve its continuity contract; historical evidence does not prove the current card extent is correct."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168412",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#168412",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Execution requires a writable authorized macOS checkout and successful contributor-PR recheck and baseline reproduction; do not publish an unproven repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
