@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:29:42.907Z",
+  "updated_at": "2026-10-10T06:31:13.354Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168087:6092531813:2026-10-10T02:32:27Z:clawsweeper_needs_human",
-      "comment_id": "6092531813",
-      "comment_version_key": "6092531813:2026-10-10T02:32:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168087#issuecomment-6092531813",
-      "comment_created_at": "2026-10-10T02:07:01Z",
-      "comment_updated_at": "2026-10-10T02:32:27Z",
-      "comment_body_sha256": "622efb7ae0b7e45902378629803319e626370df5e7f1fcbdfbaa9c83c164be85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168087,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied arithmetic transcript never exercises runRemoteGatewayInferenceOnboarding or its transport, and the inspected screenshot shows historical health only; provide redacted te... (sha=d70f3c43b097cc88ad476a36fa0e6011e3b74218)",
-      "expected_head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T02:33:18.630Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/onboard-remote-gateway-restart-deadline-wall-clock-184",
-        "head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166352:6027892365:2026-10-10T02:32:52Z:clawsweeper_needs_human",
       "comment_id": "6027892365",
@@ -33318,6 +33285,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168259:6094667111:2026-10-10T06:30:12Z:re_review",
+      "comment_id": "6094667111",
+      "comment_version_key": "6094667111:2026-10-10T06:30:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168259#issuecomment-6094667111",
+      "comment_created_at": "2026-10-10T06:30:12Z",
+      "comment_updated_at": "2026-10-10T06:30:12Z",
+      "comment_body_sha256": "356290bb538e3ee94355374fb58c7807bff07308f9e2a307b7f0c7c653b74295",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168259,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review — both findings are fixed in c3059da295f4cfaf86d9352348ed5428d0c5e8f0: policy-aware default preserves the chosen personal account, and auto uses the destination runtime description. required-worker conflicts are composed with precedence and transition regressions. each regression failed before repair; 250 focused tests and three mocked browser scenarios pass. fresh canonical p0/p1 autoreview is scoped-clean. updated body retains the exact remaining baseline/check limitations without claiming green ci",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T06:31:11.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/agentsapi-environment-picker",
+        "head_sha": "c3059da295f4cfaf86d9352348ed5428d0c5e8f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
