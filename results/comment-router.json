@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T12:41:19.214Z",
+  "updated_at": "2026-10-10T12:41:47.743Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168075:6092374379:2026-10-10T01:50:41Z:re_review",
-      "comment_id": "6092374379",
-      "comment_version_key": "6092374379:2026-10-10T01:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168075#issuecomment-6092374379",
-      "comment_created_at": "2026-10-10T01:50:41Z",
-      "comment_updated_at": "2026-10-10T01:50:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168075,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T08:09:00.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-onboarding-embedding-rows",
-        "head_sha": "f1072ee9db907440b90839594b5345eb523631de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168075:6092247845:2026-10-10T08:08:09Z:clawsweeper_needs_human",
       "comment_id": "6092247845",
@@ -33721,6 +33674,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-83be4269ed",
         "head_sha": "c8e5a9190104202fc750713fba0cf31aefcc3467",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168439:6097444223:2026-10-10T12:40:52Z:clawsweeper_auto_repair",
+      "comment_id": "6097444223",
+      "comment_version_key": "6097444223:2026-10-10T12:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168439#issuecomment-6097444223",
+      "comment_created_at": "2026-10-10T12:22:37Z",
+      "comment_updated_at": "2026-10-10T12:40:52Z",
+      "comment_body_sha256": "c46483ae30b721d3fafbf3b1091f4bc5fe47744c6d44905cd8c6f1579a00eca5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168439,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=29e6d51d3902298cc28f14ebc595cf80f61da3f1)",
+      "expected_head_sha": "29e6d51d3902298cc28f14ebc595cf80f61da3f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T12:41:47.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/group-prompt-silent-policy",
+        "head_sha": "29e6d51d3902298cc28f14ebc595cf80f61da3f1",
         "cluster_id": null,
         "job_path": null
       }
