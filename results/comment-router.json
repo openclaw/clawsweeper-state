@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T13:44:36.119Z",
+  "updated_at": "2026-10-10T13:44:53.173Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168265:6094488172:2026-10-10T09:05:10Z:clawsweeper_needs_human",
-      "comment_id": "6094488172",
-      "comment_version_key": "6094488172:2026-10-10T09:05:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168265#issuecomment-6094488172",
-      "comment_created_at": "2026-10-10T06:06:03Z",
-      "comment_updated_at": "2026-10-10T09:05:10Z",
-      "comment_body_sha256": "5d981369befed9c01cdea1dbb41b5b50f63d6563646a37301899612935111797",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168265,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: inspected synthetic Chromium screenshots demonstrate matching-agent identity before hello, but the HTTP harness does not exercise scope-denied callers...; Review finding: [P2] Match the full Gateway scope before reusing bootstrap identity — ui/src/pages/chat/chat-state-page.ts:201-203 - [P2] Clear staged grant cookies when final doc... (sha=2f02b1e53963f4c3859c2dcf5f35bf8884b42a3f)",
-      "expected_head_sha": "2f02b1e53963f4c3859c2dcf5f35bf8884b42a3f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T09:06:01.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/coldload-bootstrap-config",
-        "head_sha": "2f02b1e53963f4c3859c2dcf5f35bf8884b42a3f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2056:6095856291:2026-10-10T09:05:26Z:clawsweeper_needs_human",
       "comment_id": "6095856291",
@@ -33474,6 +33441,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167892:6098118974:2026-10-10T13:43:56Z:re_review",
+      "comment_id": "6098118974",
+      "comment_version_key": "6098118974:2026-10-10T13:43:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167892#issuecomment-6098118974",
+      "comment_created_at": "2026-10-10T13:43:56Z",
+      "comment_updated_at": "2026-10-10T13:43:56Z",
+      "comment_body_sha256": "12c7003d9f2d695ea98705ff328ded277ba83eef0a6405d52c43238afd58f6a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167892,
+      "author": "ethanhawkes-gif",
+      "author_id": 259455325,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T13:44:50.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/settled-finalizer-writer-rebound",
+        "head_sha": "77375feb322958ab6f8e3c0e1b7e48d342d33d50",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
