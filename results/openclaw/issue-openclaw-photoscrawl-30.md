@@ -2,12 +2,12 @@
 repo: "openclaw/photoscrawl"
 cluster_id: "issue-openclaw-photoscrawl-30"
 mode: "autonomous"
-run_id: "38073259879"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38073259879"
+run_id: "38076137542"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38076137542"
 head_sha: "49c65085f09de567292d1c145314dc8189612234"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-10T17:52:12.104Z"
+published_at: "2026-10-10T18:34:53.751Z"
 canonical: "https://github.com/openclaw/photoscrawl/issues/30"
 canonical_issue: "https://github.com/openclaw/photoscrawl/issues/30"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/photoscrawl
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38073259879](https://github.com/openclaw/clawsweeper/actions/runs/38073259879)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38076137542](https://github.com/openclaw/clawsweeper/actions/runs/38076137542)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/photoscrawl/issues/30
 
 ## Summary
 
-Verified the remaining snapshot-copy cost on supplied main. Prepared a narrow optimization artifact; implementation and validation are blocked by the read-only filesystem. No files or GitHub items were changed.
+Verified the remaining full-copy fallback on supplied main 9ec771e31b6b9f54c7d6aaf08c6dec29d74ce17e. Implementation and validation are blocked by the read-only filesystem. No files changed or GitHub mutations performed; no validated PR branch exists.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Verified the remaining snapshot-copy cost on supplied main. Prepared a narrow op
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #30 | fix_needed | planned | canonical | The recovery allocation cost remains real, and no open implementation PR is present in the provided inventory. Preserve the existing recovery guarantees while qualifying a smaller optimization. |
-| #31 | keep_closed | skipped | superseded | Historical contributor work; no mutation is appropriate. |
-| #32 | keep_closed | skipped | related | Merged partial mitigation, not a resolution of remaining recovery allocation. |
-| #55 | keep_closed | skipped | related | Merged partial mitigation; retain as historical context. |
-| cluster:issue-openclaw-photoscrawl-30 | build_fix_artifact | planned |  | Provide the executor a bounded candidate without weakening validation or claiming an implementation exists. |
+| #30 | fix_needed | planned | canonical | The remaining resource cost is present. No open implementation PR is included in the hydrated inventory. |
+| #31 | keep_closed | skipped | superseded | Historical contributor work; no further action. |
+| #32 | keep_closed | skipped | related | Merged partial mitigation, not a resolution of the remaining fallback allocation. |
+| #55 | keep_closed | skipped | related | Historical partial mitigation; its old review findings do not establish an open repair target in this job. |
+| cluster:issue-openclaw-photoscrawl-30 | build_fix_artifact | blocked | canonical | A lower-allocation recovery method requires synthetic preservation and allocation proof. This environment cannot implement or qualify it. |
 
 ## Needs Human
 
