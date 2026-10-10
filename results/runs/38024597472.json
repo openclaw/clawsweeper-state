@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168193",
+  "mode": "autonomous",
+  "run_id": "38024597472",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38024597472",
+  "head_sha": "cc3bdce349a3075ec631d6409584c80f5359a337",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168193.md",
+  "published_at": "2026-10-10T06:22:58.111Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168193",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168193",
+  "canonical_pr": null,
+  "summary": "The reported promise-handling gap remains on preflight main d0b46401b75e988976b2e9d57f455c9986a1d41d. Implementation and reproduction are blocked by the read-only host and missing dependencies. A narrow executor fix artifact is prepared; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#168193",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168193",
+      "candidate_fix": null,
+      "reason": "The source supports a narrow test-only repair, but source inspection does not satisfy the required deterministic failing regression."
+    },
+    {
+      "target": "#89526",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this linked item for central OpenClaw security handling without expanding or blocking the independent test-only fix."
+    },
+    {
+      "target": "#118825",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged coverage and contributor credit; no closeout action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168193",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168193",
+      "candidate_fix": null,
+      "reason": "A one-file fix plan is concrete; this worker cannot implement or validate it under the host restrictions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command left 1 background process(es) after exit",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#168193",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
