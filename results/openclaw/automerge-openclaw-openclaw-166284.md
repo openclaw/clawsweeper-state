@@ -1,22 +1,22 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-166284"
-mode: "plan"
-run_id: "38012077395"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38012077395"
+mode: "autonomous"
+run_id: "38014116685"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38014116685"
 head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-10-10T02:09:31.727Z"
+published_at: "2026-10-10T02:17:22.615Z"
 canonical: "#166284"
 canonical_issue: null
 canonical_pr: "#166284"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38012077395](https://github.com/openclaw/clawsweeper/actions/runs/38012077395)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38014116685](https://github.com/openclaw/clawsweeper/actions/runs/38014116685)
 
 Workflow conclusion: success
 
@@ -35,18 +35,18 @@ Canonical: #166284
 
 ## Summary
 
-Repair the existing contributor branch, preserve its narrow test fix, diagnose failing CI, and validate the repaired head. No mutations performed.
+Make PR #166284 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,20 +54,19 @@ Repair the existing contributor branch, preserve its narrow test fix, diagnose f
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/166284 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #166284 | merge_canonical | blocked | fix_pr | job does not allow merge |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #166284 | fix_needed | planned | canonical | The useful canonical repair requires CI diagnosis and validation. Failure logs are absent, so the specific CI cause remains unproven. |
-| #163980 | keep_closed | skipped | related | Historical related repair; no further action. |
+| #166284 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 

@@ -1,15 +1,58 @@
 {
   "version": 1,
-  "generated_at": "2026-10-10T02:11:45.046Z",
+  "generated_at": "2026-10-10T02:17:25.447Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/38015905840.json",
+  "run_record": "results/runs/38014116685.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "38015905840",
-  "considered": 0,
-  "pending": 0,
+  "run_id": "38014116685",
+  "considered": 2,
+  "pending": 2,
   "sent": 0,
-  "failed": 0,
+  "failed": 2,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#166284:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#166284",
+      "title": "test(config): authorize intentional warning reset write",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "failed",
+      "reason": "OpenClaw delivery failed",
+      "run_id": "38014116685",
+      "cluster_id": "automerge-openclaw-openclaw-166284",
+      "hook_run_id": "9285a2ef-7ef1-4dbf-abb1-46e8077c675c",
+      "delivery": {
+        "status": "failed",
+        "suppression_reason": null,
+        "error": null
+      },
+      "url": "https://github.com/openclaw/openclaw/pull/166284"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#166284:repair_contributor_branch:pushed:964660d4742b63837879747840cb760ca1c3d6a9",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#166284",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "failed",
+      "reason": "OpenClaw delivery failed",
+      "run_id": "38014116685",
+      "cluster_id": "automerge-openclaw-openclaw-166284",
+      "hook_run_id": "2793e449-cc97-4a35-aec8-e522e9c40454",
+      "delivery": {
+        "status": "failed",
+        "suppression_reason": null,
+        "error": null
+      },
+      "url": "https://github.com/openclaw/openclaw/pull/166284"
+    }
+  ]
 }
