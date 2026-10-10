@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
-mode: "autonomous"
-run_id: "38043067821"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38043067821"
-head_sha: "f9f7db87cd8dbb83d50ba6e52c78b476b2c986e0"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "38045064629"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38045064629"
+head_sha: "a3ac9853bee1539e1e8cebdbca61ebfc85212beb"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T09:57:45.012Z"
-canonical: "https://github.com/openclaw/crabbox/issues/2708"
+published_at: "2026-10-10T10:31:32.336Z"
+canonical: "2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38043067821](https://github.com/openclaw/clawsweeper/actions/runs/38043067821)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38045064629](https://github.com/openclaw/clawsweeper/actions/runs/38045064629)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/crabbox/issues/2708
+Canonical: 2708
 
 ## Summary
 
-Implementation is blocked on a supported Blacksmith capability providing durable pre-worker Testbox-to-run association and terminal dispatch status. Verified the existing observation boundary on preflight main df5e39492cfb6bdb388fea6e0dca91398b8ca789. No code changes or PR path proposed; keep the issue open.
+The issue remains valid, but implementation requires a supported Blacksmith capability that binds a Testbox request to its workflow run before worker registration. Current repository code and hydrated triage evidence provide no such capability. Retain the issue with a non-mutating classification; no code changes or fix PR are proposed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Implementation is blocked on a supported Blacksmith capability providing durable
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_canonical | planned | canonical | The reported failure remains distinct from the merged settlement and ownership repairs. Available evidence cannot distinguish slow allocation from failed pre-worker dispatch. |
-| cluster:issue-openclaw-crabbox-2708 | fix_needed | blocked | related | A repository-only patch would require inventing provider evidence or contradicting recorded triage. The job explicitly requires stopping without a PR when safe implementation is unavailable. |
-| #2669 | keep_closed | skipped | related | Historical context only. |
-| #2670 | keep_closed | skipped | related | Historical repair establishes guarantees that this issue's eventual implementation must preserve. |
-| #2682 | keep_closed | skipped | related | Historical context with distinct scope. |
-| #2683 | keep_closed | skipped | related | Exposes available evidence without supplying missing pre-worker dispatch identity. |
-| #2719 | keep_closed | skipped | related | Local lookup optimization does not resolve provider dispatch reporting. |
+| https://github.com/openclaw/crabbox/issues/2708 | keep_related | planned | related | Retain this issue while awaiting authoritative provider dispatch identity and terminal status that survive admission failure or cancellation before worker registration. The supplied artifacts do not support a safely executable fix artifact. Guessing workflow associations or treating native completion alone as settlement would contradict the recorded triage direction. This is an external capability blocker, not an unresolved maintainer decision. |
 
 ## Needs Human
 
