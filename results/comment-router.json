@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:21:13.046Z",
+  "updated_at": "2026-10-10T06:21:21.122Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:164783:6092708301:2026-10-10T02:25:53Z:re_review",
-      "comment_id": "6092708301",
-      "comment_version_key": "6092708301:2026-10-10T02:25:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164783#issuecomment-6092708301",
-      "comment_created_at": "2026-10-10T02:25:53Z",
-      "comment_updated_at": "2026-10-10T02:25:53Z",
-      "comment_body_sha256": "6d618f84172a2e54763879d1eef8b5eea19eab1f0096a02805e275eab405f457",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164783,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:26:45.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/device-pair-approve-authz-parity",
-        "head_sha": "263934d1a3e42727a22552a3d65831c41028576d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-10-10T02:26:33Z:clawsweeper_needs_human",
       "comment_id": "5225378319",
@@ -33407,6 +33360,39 @@
         "kind": "pull_request",
         "branch": "fix/sqlite-source-fence-admission-deadcode",
         "head_sha": "51e52865e8977aae165cb811d664e839c500f4d9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147063:5653719348:2026-10-10T06:19:43Z:clawsweeper_needs_human",
+      "comment_id": "5653719348",
+      "comment_version_key": "5653719348:2026-10-10T06:19:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147063#issuecomment-5653719348",
+      "comment_created_at": "2026-09-13T13:57:54Z",
+      "comment_updated_at": "2026-10-10T06:19:43Z",
+      "comment_body_sha256": "f53eb0f9b25025d9d20b2be31a7fd60c5e13f6db030f6b1ce258edfdb7221941",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147063,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed formatter is exercised through seeded native-shaped records and reported status-suite validation in an isolated sandbox, but the full PR body explicitly confirms no genuin... (sha=1658360691d800e6e93d033e21724967c2054cb1)",
+      "expected_head_sha": "1658360691d800e6e93d033e21724967c2054cb1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:21:21.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codeops/subagent-status-failures-6461d6b",
+        "head_sha": "1658360691d800e6e93d033e21724967c2054cb1",
         "cluster_id": null,
         "job_path": null
       }
