@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "38065365779",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38065365779",
+  "head_sha": "70cfbb0677b28eabe1c5abeddc06bf208936cb88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-10T15:56:42.273Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified the reported File.Copy staging path on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. A narrow managed byte-copy repair remains viable. Implementation and required validation are blocked by the read-only Linux workspace, missing pinned SDK 10.0.401, and unavailable disposable Windows environment. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The encrypted-source copy repair is source-supported and narrow. Windows reproduction is still required; the broader Koffi/config-validation outcome is not established."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation must run in a writable environment with the pinned SDK and disposable Windows proof. Do not publish a PR before the required regression and validation succeed."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no close or repair action."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related historical fix, not a duplicate or current implementation candidate."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The keep_independent action cannot satisfy required target metadata without inventing live state. Defer only this unavailable ref for identity and hydration resolution; exclude it from implementation and mutation targets."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: resolve the repository identity and obtain valid hydration before further classification. The supplied same-repository hydration returned HTTP 404, kind unknown, and updated_at null; the separately linked openclaw/openclaw issue cannot supply metadata for this target."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
