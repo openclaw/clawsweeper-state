@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:49:03.205Z",
+  "updated_at": "2026-10-10T06:49:07.502Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168087:6092992099:2026-10-10T02:50:28Z:re_review",
-      "comment_id": "6092992099",
-      "comment_version_key": "6092992099:2026-10-10T02:50:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168087#issuecomment-6092992099",
-      "comment_created_at": "2026-10-10T02:50:28Z",
-      "comment_updated_at": "2026-10-10T02:50:28Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168087,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:51:17.782Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/onboard-remote-gateway-restart-deadline-wall-clock-184",
-        "head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:158903:6090255325:2026-10-09T22:24:24Z:re_review",
       "comment_id": "6090255325",
@@ -33333,6 +33286,39 @@
         "kind": "pull_request",
         "branch": "fix-1643-realtime-voice-history",
         "head_sha": "e1f369af28440879c7c1ae86d44e9d5086c0aa7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168002:6090607259:2026-10-10T06:48:14Z:clawsweeper_needs_human",
+      "comment_id": "6090607259",
+      "comment_version_key": "6090607259:2026-10-10T06:48:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168002#issuecomment-6090607259",
+      "comment_created_at": "2026-10-09T22:51:16Z",
+      "comment_updated_at": "2026-10-10T06:48:14Z",
+      "comment_body_sha256": "878f42220bdda0306e271741ab2d4b7a26a6985acdfa4614781f8a1ba5d540cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the supplied paired Gateway workload supports the performance claim, but the ownership tests show only same-process publication. Provide redacted termi...; Review finding: [P1] [P1] Fence separate-process claims before caching write ownership — src/state/openclaw-state-ownership.ts:332-334 - [medium] Durable supervision custody can o... (sha=d2b39426fc5f16ea954d25e694fcf0ee3b4b4773)",
+      "expected_head_sha": "d2b39426fc5f16ea954d25e694fcf0ee3b4b4773",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:49:07.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w10constants",
+        "head_sha": "d2b39426fc5f16ea954d25e694fcf0ee3b4b4773",
         "cluster_id": null,
         "job_path": null
       }
