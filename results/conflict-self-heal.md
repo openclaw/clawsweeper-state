@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-10T23:35:39.990Z
+Generated: 2026-10-10T23:39:53.849Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -17,7 +17,7 @@ Repository: openclaw/openclaw
 
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
-| [#168126](https://github.com/openclaw/openclaw/pull/168126) | fix: close session databases before model directive fixture removal | clawsweeper/issue-openclaw-openclaw-168089 | MERGEABLE | CLEAN | skipped | merge state is clean or unknown |
+| [#168126](https://github.com/openclaw/openclaw/pull/168126) | fix: close session databases before model directive fixture removal | clawsweeper/issue-openclaw-openclaw-168089 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
@@ -34,7 +34,7 @@ Repository: openclaw/openclaw
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | clawsweeper/issue-openclaw-openclaw-118776 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | clawsweeper/issue-openclaw-openclaw-118669 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | clawsweeper/issue-openclaw-openclaw-116747 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | clawsweeper/issue-openclaw-openclaw-118185 | CONFLICTING | DIRTY | skipped | paused by clawsweeper:human-review |
+| [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | clawsweeper/issue-openclaw-openclaw-118185 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
