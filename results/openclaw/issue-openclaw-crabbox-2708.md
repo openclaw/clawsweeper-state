@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "38048409668"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38048409668"
-head_sha: "56f90615e6cd5cd24ea1507e020f32d7487bf414"
+run_id: "38054063532"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38054063532"
+head_sha: "ff328679cb3940489b2f2cd59e5bc69c3505e204"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T11:29:52.042Z"
+published_at: "2026-10-10T13:03:46.972Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38048409668](https://github.com/openclaw/clawsweeper/actions/runs/38048409668)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38054063532](https://github.com/openclaw/clawsweeper/actions/runs/38054063532)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation is blocked by missing provider evidence: no supported pre-worker Testbox-to-workflow association is established in the supplied artifacts or current integration. Verified the adapter on supplied main df5e39492cfb6bdb388fea6e0dca91398b8ca789. Keep the issue open pending that capability. No code changes, PR, or GitHub mutations; tests were inspected but not run.
+Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Inspection of supplied main df5e39492cfb6bdb388fea6e0dca91398b8ca789 confirms the adapter still depends on native status for exact run identity. No safe implementation PR can be specified from the available contract. No files changed, tests run, or GitHub mutations performed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation is blocked by missing provider evidence: no supported pre-worker 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | skipped | related | A slow allocation and a failed pre-worker dispatch remain indistinguishable with the available native evidence. Resume implementation only after a supported provider contract supplies durable exact request-to-run identity and terminal dispatch evidence. A speculative adapter patch would contradict the recorded triage direction. |
-| #2669 | keep_closed | skipped | related | Historical context; no action on the closed issue. |
-| #2670 | keep_closed | skipped | related | Preserve the landed ownership guarantees; this PR does not resolve the source issue. |
-| #2682 | keep_closed | skipped | related | Historical context with distinct remaining scope. |
-| #2683 | keep_closed | skipped | related | Read-only settlement visibility is landed; missing provider dispatch evidence remains separate. |
-| #2719 | keep_closed | skipped | related | Distinct landed optimization; no closeout or repair needed. |
+| #2708 | keep_related | skipped | related | External prerequisite: Blacksmith must expose a supported durable binding from Testbox ID to dispatch/run identity before worker registration, preserve it through cancellation/admission failure, and expose terminal status. Once that contract is available, a narrow adapter repair can be designed. The job explicitly requires stopping without a PR when safe implementation is unavailable. |
+| #2669 | keep_closed | skipped | related | Closed context only. |
+| #2670 | keep_closed | skipped | related | Merged historical context. |
+| #2682 | keep_closed | skipped | related | Closed context only. |
+| #2683 | keep_closed | skipped | related | Merged historical context. |
+| #2719 | keep_closed | skipped | independent | Independent merged optimization. |
 
 ## Needs Human
 
