@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T10:15:24.999Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6096460917",
+    "node_id": "IC_kwDOQb6kR88AAAABa2CcdQ",
+    "url": "https://github.com/openclaw/openclaw/issues/164620#issuecomment-6096460917",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/164620",
+    "pull_request_url": null,
+    "author": "Joelincn",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T10:14:07Z",
+    "updated_at": "2026-10-10T10:14:07Z",
+    "body_hash": "45ebcbe8c9ef4fbf542ca67e6618ca81b2085dd95542d0f818f5b47bb8e7fc57",
+    "body_excerpt": "Same problem from a fake-IP environment (Clash/mihomo, `198.18.0.0/15` + `fc00::/7`) — supporting this request with an additional reason.  ... 44BenchmarkRange` / `allowIpv6UniqueLocalRange` flags on all three paths — would resolve this class once instead of per-path regressions.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://clawhub.ai/v1/feeds/plugins%60"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6096460917",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical report describing fake-IP networking fa ... , SSRF guard behavior, timeouts, and configuration flags.",
+      "References related issues and proposes a relevant configuration toggle or consistent policy handling.",
+      "The external URL identifies the failing plugin-feed endpoint, not solicitation or promotion."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
