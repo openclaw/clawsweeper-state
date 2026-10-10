@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:07:11.017Z",
+  "updated_at": "2026-10-10T15:07:50.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6073739883:2026-10-09T03:35:06Z:re_review",
-      "comment_id": "6073739883",
-      "comment_version_key": "6073739883:2026-10-09T03:35:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6073739883",
-      "comment_created_at": "2026-10-09T03:35:06Z",
-      "comment_updated_at": "2026-10-09T03:35:06Z",
-      "comment_body_sha256": "785aff94b81b0845bd535dbe46ec8f20ef5b37b44f395e03cc166bbcef8f523b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T11:47:16.158Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:6078312229:2026-10-09T09:35:22Z:re_review",
       "comment_id": "6078312229",
@@ -30970,6 +30943,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168417:6097116380:2026-10-10T15:06:53Z:clawsweeper_needs_human",
+      "comment_id": "6097116380",
+      "comment_version_key": "6097116380:2026-10-10T15:06:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168417#issuecomment-6097116380",
+      "comment_created_at": "2026-10-10T11:40:40Z",
+      "comment_updated_at": "2026-10-10T15:06:53Z",
+      "comment_body_sha256": "39d269e2c696d2c7ec8dd9e1968160f836e62a41db1fe6bc2852c645bba7431d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168417,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the complete PR body reports CLI routing, roster publication, live/offline persistence, and repaired error transport, but the config fixture bypasses p...; Review finding: [P2] Include the new config dependencies in the extracted PR wrapper — src/config/config-state-mutation.ts:3 - [P2] Append the new method after the existing catalo... (sha=ad769d00d5b4d5de41a340f82e187f5e0a045d85)",
+      "expected_head_sha": "ad769d00d5b4d5de41a340f82e187f5e0a045d85",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T15:07:50.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ow2",
+        "head_sha": "ad769d00d5b4d5de41a340f82e187f5e0a045d85",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
