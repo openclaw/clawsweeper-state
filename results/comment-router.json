@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:01:47.511Z",
+  "updated_at": "2026-10-10T03:02:02.900Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136482:5513830989:2026-10-09T22:30:15Z:clawsweeper_auto_repair",
-      "comment_id": "5513830989",
-      "comment_version_key": "5513830989:2026-10-09T22:30:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136482#issuecomment-5513830989",
-      "comment_created_at": "2026-09-02T17:42:58Z",
-      "comment_updated_at": "2026-10-09T22:30:15Z",
-      "comment_body_sha256": "0190a4398d08657396f1fccfed5006097371e75ed842eed1b69d7ce393ab9bdd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=1ee7bcea7209610e3d594a8f10b18bfa9ebd3d38)",
-      "expected_head_sha": "1ee7bcea7209610e3d594a8f10b18bfa9ebd3d38",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:37:03.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-contention",
-        "head_sha": "1ee7bcea7209610e3d594a8f10b18bfa9ebd3d38",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146651:5650125892:2026-10-09T22:34:11Z:clawsweeper_needs_human",
       "comment_id": "5650125892",
@@ -33536,6 +33503,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1128:6093095073:2026-10-10T03:01:11Z:re_review",
+      "comment_id": "6093095073",
+      "comment_version_key": "6093095073:2026-10-10T03:01:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-6093095073",
+      "comment_created_at": "2026-10-10T03:01:11Z",
+      "comment_updated_at": "2026-10-10T03:01:11Z",
+      "comment_body_sha256": "24d9f86689826f2144fe949c8c14cc6a4bc65d7ebdb063d7fe8d066ff94019ca",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1128,
+      "author": "TheAngryPit",
+      "author_id": 7040636,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T03:02:01.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/tailscale-legacy-upgrade-20260807",
+        "head_sha": "540dd9093566ad1c9396ac7d2fefc510c3c30ceb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
