@@ -2,15 +2,15 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "38067816729"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38067816729"
-head_sha: "b7e877075650da8e0a74fa0ab2b5c8fc03e35dcb"
+run_id: "38080233555"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38080233555"
+head_sha: "dda6ac385f6e66de823e7f2698895cd951ba1ca5"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T16:53:53.592Z"
+published_at: "2026-10-10T19:36:20.614Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
-canonical_pr: "https://github.com/openclaw/esp-openclaw-node/pull/68"
+canonical_pr: null
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38067816729](https://github.com/openclaw/clawsweeper/actions/runs/38067816729)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38080233555](https://github.com/openclaw/clawsweeper/actions/runs/38080233555)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-No new PR is justified. Current main contains #68's confirmed handshake-deadline repair. The remaining customized-firmware allocation failure and reset-free Gateway restart recovery require hardware evidence before another narrow implementation can be identified. Keep #67 open.
+No new PR is justified. Current main contains #68's confirmed deadline repair; the remaining customized-firmware allocation failure and reset-free recovery need hardware evidence before another upstream patch.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No new PR is justified. Current main contains #68's confirmed handshake-deadline
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | keep_canonical | planned | canonical | The confirmed upstream defect is already repaired. Further implementation is blocked by the absence of a current-main reproducer or failure-time evidence identifying a remaining upstream defect; #68 only partially addresses this report. |
-| #64 | keep_closed | skipped | related | Historical context with a different unresolved cause; no action is appropriate. |
-| #68 | keep_closed | skipped | related | The existing merged repair owns the confirmed deadline defect; it does not justify closing the entire source issue. |
+| #67 | keep_canonical | planned | canonical | Keep the investigation open. Implementation requires serial capture beginning before a controlled Gateway restart on current main, successful handshake/device.status verification without reset, and stock-versus-customized firmware comparison to isolate any remaining upstream defect. #68 covers only the confirmed deadline defect. |
+| #64 | keep_closed | skipped | related | Historical context only; no action. |
+| #68 | keep_closed | skipped | related | Existing partial fix is on main; another deadline-repair PR would duplicate landed work. |
 
 ## Needs Human
 
