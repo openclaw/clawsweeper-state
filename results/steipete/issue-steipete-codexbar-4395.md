@@ -2,12 +2,12 @@
 repo: "steipete/codexbar"
 cluster_id: "issue-steipete-codexbar-4395"
 mode: "autonomous"
-run_id: "37988705921"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37988705921"
-head_sha: "e6419367a4d46bd7736a2ce87bb127140c024619"
+run_id: "37981692311"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37981692311"
+head_sha: "d1d10cd28bfe4996db78485991ab483246dd462e"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T20:45:38.901Z"
+published_at: "2026-10-10T01:10:13.472Z"
 canonical: "https://github.com/steipete/CodexBar/issues/4395"
 canonical_issue: "https://github.com/steipete/CodexBar/issues/4395"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: steipete/codexbar
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37988705921](https://github.com/openclaw/clawsweeper/actions/runs/37988705921)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/37981692311](https://github.com/openclaw/clawsweeper/actions/runs/37981692311)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/steipete/CodexBar/issues/4395
 
 ## Summary
 
-No PR is justified by the available evidence. Current main intentionally hides synthetic quotas, and the report does not include a usage-response payload demonstrating lost measurements. Keep #4395 open pending that evidence. No code or GitHub changes were made.
+No PR: the available evidence cannot distinguish absent provider quotas from a parsing regression. Keep #4395 open pending a redacted usage-response fixture. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No PR is justified by the available evidence. Current main intentionally hides s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #4395 | keep_canonical | planned | canonical | Implementation is blocked by missing reproduction evidence, rather than an unresolved maintainer decision. Obtain the usage endpoint JSON with cookies, tokens, email, and account identifiers removed, then compare its measured fields against the parser. HTTP 200 alone cannot establish that quota measurements were returned. Preserve the existing unavailable display until a response-backed defect is demonstrated. |
+| #4395 | keep_canonical | planned | canonical | Implementation is underspecified. Obtain the usage endpoint JSON with credentials and personal/account identifiers removed, then compare any returned measurements with the parser. HTTP 200 alone does not justify restoring quota bars or inventing an allowance. |
 
 ## Needs Human
 
