@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:32:40.313Z",
+  "updated_at": "2026-10-10T15:35:40.957Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166993:6053434782:2026-10-08T07:33:09Z:clawsweeper_needs_human",
-      "comment_id": "6053434782",
-      "comment_version_key": "6053434782:2026-10-08T07:33:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166993#issuecomment-6053434782",
-      "comment_created_at": "2026-10-08T05:59:55Z",
-      "comment_updated_at": "2026-10-08T07:33:09Z",
-      "comment_body_sha256": "4cd419b5ec977cd716755b7dc3864c975157c2fa657165fd3d0d39ee4f2c08a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166993,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Have a repository administrator provide the missing branch-protection policy-read capability or complete the documented native CI exception with an authorized policy-readable writer. (sha=0055a0180970aace400289f4baaa3cb0c6d140ae)",
-      "expected_head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T12:05:41.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-identity-schema-compat",
-        "head_sha": "0055a0180970aace400289f4baaa3cb0c6d140ae",
-        "cluster_id": "automerge-openclaw-openclaw-166993",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166993.md"
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118680",
       "comment_id": "repair-loop-label-sweep:autofix:118680",
@@ -30969,6 +30936,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6099146913:2026-10-10T15:34:09Z:re_review",
+      "comment_id": "6099146913",
+      "comment_version_key": "6099146913:2026-10-10T15:34:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6099146913",
+      "comment_created_at": "2026-10-10T15:34:09Z",
+      "comment_updated_at": "2026-10-10T15:34:09Z",
+      "comment_body_sha256": "47b4f4128dcc3174db4f75bcb0a827a8bde52ea68a4b534dc7dbcadeb48ca4de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T15:35:39.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "f341feb0add3746b24786934afe5d7f4c0395d3b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
