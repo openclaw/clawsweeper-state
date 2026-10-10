@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168081"
-mode: "autonomous"
-run_id: "38015156063"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38015156063"
-head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T02:45:16.635Z"
+mode: "plan"
+run_id: "38018208860"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38018208860"
+head_sha: "9a51e7929b189f25e054b7117994befcb4800c1e"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T02:49:48.678Z"
 canonical: "https://github.com/openclaw/openclaw/issues/168081"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/168081"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38015156063](https://github.com/openclaw/clawsweeper/actions/runs/38015156063)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38018208860](https://github.com/openclaw/clawsweeper/actions/runs/38018208860)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/168081
 
 ## Summary
 
-Both prompt mismatches remain in checked-out main c00651360053707a9b32b023ac5157c7e7fa2b0e. A narrow fix artifact is prepared. Local implementation and regression validation are blocked by the read-only filesystem and absent dependencies; GitHub recheck requires unavailable credentials. No code or GitHub mutations occurred.
+Plan a focused Mattermost prompt repair. Both mismatches remain in the inspected checkout. No code or GitHub state changed; failing-before/passing-after proof and required validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Both prompt mismatches remain in checked-out main c00651360053707a9b32b023ac5157
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168081 | fix_needed | planned | canonical | The documented existing button shape conflicts with agent guidance. Repair guidance only after the executor rechecks owning work and establishes the failing regression on its current base. |
-| #88721 | keep_closed | skipped | related | Historical contract evidence only; preserve typed-action fallback. |
-| #133288 | keep_closed | skipped | related | Distinct completed work; exclude from implementation scope. |
-| #134233 | keep_closed | skipped | related | Historical sibling evidence; preserve LINE guidance. |
-| #135350 | keep_closed | skipped | related | Completed question support must remain unchanged; this is not a fix for the current prompt mismatch. |
-| #135354 | keep_closed | skipped | related | Historical context only; exclude shared question wording from this fix. |
-| cluster:issue-openclaw-openclaw-168081 | build_fix_artifact | planned | canonical | Planning is supported by source and hydrated evidence. Implementation remains blocked in this worker environment, without an unresolved product decision. |
+| https://github.com/openclaw/openclaw/issues/168081 | fix_needed | planned | canonical | Repair the advertised payload and configuration guidance through existing prompt and account owners. Recheck for the reporter's promised PR before implementation, and reuse any owning work. Closure and merge are prohibited. |
 
 ## Needs Human
 
