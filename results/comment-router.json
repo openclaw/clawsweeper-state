@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:44:14.810Z",
+  "updated_at": "2026-10-10T14:44:38.034Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5869034332:2026-09-28T11:34:10Z:re_review",
-      "comment_id": "5869034332",
-      "comment_version_key": "5869034332:2026-09-28T11:34:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5869034332",
-      "comment_created_at": "2026-09-28T11:34:10Z",
-      "comment_updated_at": "2026-09-28T11:34:10Z",
-      "comment_body_sha256": "f97ff84b50816cb912234aed57ee300f88ed8afd37a1415c4c6e56972ba29ce9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please — synced with upstream/main (`251c610735`, 50 commits, clean merge, zero conflicts). skill-selection files intact, focused vitest 6/6 pass, tsgo:core clean on our files (remaining errors are pre-existing upstream in node-proxy-agent/plugin-sdk). new head: `d3599e89`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T11:47:16.158Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5877046397:2026-09-28T19:33:51Z:re_review",
       "comment_id": "5877046397",
@@ -30666,6 +30639,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168457:6098093180:2026-10-10T14:43:41Z:clawsweeper_needs_human",
+      "comment_id": "6098093180",
+      "comment_version_key": "6098093180:2026-10-10T14:43:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168457#issuecomment-6098093180",
+      "comment_created_at": "2026-10-10T13:40:49Z",
+      "comment_updated_at": "2026-10-10T14:43:41Z",
+      "comment_body_sha256": "0edaa2ecc3a2a7591420bdf20c0ad02e93bdfed324f296087cdbd6dceb0cd6fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the fixture exercises real locks and SQLite but calls handlers outside production Gateway authorization and mocks worker launch; provide sanitized allo... (sha=47c8225b55a17b3502ec5601fcbd7cc130f16bfc)",
+      "expected_head_sha": "47c8225b55a17b3502ec5601fcbd7cc130f16bfc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:44:38.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ow3-workboard",
+        "head_sha": "47c8225b55a17b3502ec5601fcbd7cc130f16bfc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
