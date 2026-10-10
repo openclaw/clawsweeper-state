@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:09:31.422Z",
+  "updated_at": "2026-10-10T03:09:34.825Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167985:6090150492:2026-10-09T22:39:10Z:clawsweeper_auto_repair",
-      "comment_id": "6090150492",
-      "comment_version_key": "6090150492:2026-10-09T22:39:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167985#issuecomment-6090150492",
-      "comment_created_at": "2026-10-09T22:15:24Z",
-      "comment_updated_at": "2026-10-09T22:39:10Z",
-      "comment_body_sha256": "f4a842fd7957a06af3f5bdedeb516dd0148c35c1e96cae9576a2862baee2e25a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167985,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=c50ae59c95f92ce855282532aee757494fa7cd97)",
-      "expected_head_sha": "c50ae59c95f92ce855282532aee757494fa7cd97",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:40:04.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-miniapp-public-origin",
-        "head_sha": "c50ae59c95f92ce855282532aee757494fa7cd97",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167739:6078051146:2026-10-09T22:40:12Z:clawsweeper_needs_human",
       "comment_id": "6078051146",
@@ -33571,6 +33538,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168123:6093151680:2026-10-10T03:08:36Z:re_review",
+      "comment_id": "6093151680",
+      "comment_version_key": "6093151680:2026-10-10T03:08:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168123#issuecomment-6093151680",
+      "comment_created_at": "2026-10-10T03:08:36Z",
+      "comment_updated_at": "2026-10-10T03:08:36Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168123,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T03:09:33.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-flush-duplicate-prefix",
+        "head_sha": "ba43d4a1cbe4b2a9ffe30781d231238b72b24274",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
