@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T08:35:32.350Z",
+  "updated_at": "2026-10-10T08:36:05.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168164:6093528304:2026-10-10T04:34:19Z:clawsweeper_needs_human",
-      "comment_id": "6093528304",
-      "comment_version_key": "6093528304:2026-10-10T04:34:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168164#issuecomment-6093528304",
-      "comment_created_at": "2026-10-10T03:58:14Z",
-      "comment_updated_at": "2026-10-10T04:34:19Z",
-      "comment_body_sha256": "0a9960bd512f4165a0e10590a89b9e7a0c0a893df59a8ef9c9f48ee4a7d9b5cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168164,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - The review found that existing stored data may not work after upgrade. Show that existing data still loads and works with this change. (sha=58289d8c9bfe29dac912e627741460ba26e9c2a3)",
-      "expected_head_sha": "58289d8c9bfe29dac912e627741460ba26e9c2a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T04:37:03.647Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/server-compaction-defaults",
-        "head_sha": "58289d8c9bfe29dac912e627741460ba26e9c2a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168166:6093536763:2026-10-10T04:29:06Z:clawsweeper_auto_repair",
       "comment_id": "6093536763",
@@ -33037,6 +33004,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168228:6095728259:2026-10-10T08:35:06Z:re_review",
+      "comment_id": "6095728259",
+      "comment_version_key": "6095728259:2026-10-10T08:35:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168228#issuecomment-6095728259",
+      "comment_created_at": "2026-10-10T08:35:06Z",
+      "comment_updated_at": "2026-10-10T08:35:06Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168228,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T08:36:03.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-prefer-newer-installed",
+        "head_sha": "196348d7ebd2fd96b32de14e03bf23fc4c6cd772",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
