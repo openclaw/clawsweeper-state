@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38080929065"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38080929065"
+run_id: "38081394241"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38081394241"
 head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T19:47:01.142Z"
+published_at: "2026-10-10T19:54:18.714Z"
 canonical: "https://github.com/openclaw/Peekaboo/issues/922"
 canonical_issue: "https://github.com/openclaw/Peekaboo/issues/922"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38080929065](https://github.com/openclaw/clawsweeper/actions/runs/38080929065)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38081394241](https://github.com/openclaw/clawsweeper/actions/runs/38081394241)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/Peekaboo/issues/922
 
 ## Summary
 
-The capability remains unresolved on main e59c220d6ea74201028e691b84eb26501ffc21ed. No demonstrated mechanism meets the receiver criteria, and this read-only Linux environment cannot implement or qualify a native macOS fix. No code or GitHub changes were made.
+#922 remains valid on main e59c220d6ea74201028e691b84eb26501ffc21ed, but no demonstrated native mechanism satisfies its single-pair receiver criteria. Implementation is blocked pending native macOS qualification. This read-only Linux worker cannot perform that qualification or validate a changed branch. #922 is retained open with a non-mutating keep_related action because no safe executable fix artifact can be established from the provided evidence. No code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ The capability remains unresolved on main e59c220d6ea74201028e691b84eb26501ffc21
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | keep_related | skipped | related | Keep the unresolved issue open without an executable fix action. Implementation requires a demonstrated native mechanism delivering exactly one unmodified down/up pair to an unchanged cold passive receiver, including observation for delayed callbacks and preservation of protected state. Expanding the existing route would repeat a known failed approach. No concrete production patch or safe fix artifact is justified from the available evidence. |
-| #916 | keep_closed | skipped | related | Historical evidence only; preserve the contributor's investigation and failed-proof record. |
-| #923 | keep_closed | skipped | related | Presentation changes do not resolve passive receiver delivery. |
-| #926 | keep_closed | skipped | related | Diagnostic correction is distinct from the unresolved input mechanism. |
-| #927 | keep_closed | skipped | related | Typing receipt validation does not resolve pointer receiver callbacks. |
+| #922 | keep_related | planned | related | Retain #922 open as the canonical investigation. The job requires stopping without a PR when implementation cannot be established safely. A production fallback would repeat mechanisms whose reported native trials failed acceptance. Resume with a writable checkout and a macOS receiver fixture to qualify exactly one unmodified in-bounds down/up pair under unchanged first-mouse policy, with no delayed extra callbacks and preserved foreground, guard, text, selection, and exact-target state. The blocked fix_needed action is downgraded to non-mutating keep_related because the qualifying mechanism and final edit surface remain unknown; inventing an executable fix artifact would be unsafe. |
+| #916 | keep_closed | skipped | related | Historical implementation evidence; its passing checks do not prove the requested receiver behavior. |
+| #923 | keep_closed | skipped | related | Presentation work does not resolve cold single-left receiver delivery. |
+| #926 | keep_closed | skipped | related | Diagnostic correction is distinct from the unresolved native capability. |
+| #927 | keep_closed | skipped | related | Typing receipt repair does not satisfy pointer receiver acceptance. |
 
 ## Needs Human
 
