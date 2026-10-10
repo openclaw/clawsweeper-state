@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw-windows-packaging",
+  "cluster_id": "issue-openclaw-openclaw-windows-packaging-167",
+  "mode": "autonomous",
+  "run_id": "38063377563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38063377563",
+  "head_sha": "f58fc2d9de10b383b9f6505f157c53f73bef6472",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-windows-packaging-167.md",
+  "published_at": "2026-10-10T15:27:37.150Z",
+  "canonical": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_issue": "https://github.com/openclaw/openclaw-windows-packaging/issues/167",
+  "canonical_pr": null,
+  "summary": "Verified that preflight main 4215593cd5abd4cd1f189e245dd64e7372415119 still uses File.Copy in SessionNativeStager.CopyDirectory. A narrow managed byte-copy repair remains viable. Implementation and validation are blocked by this read-only Linux host; no files or GitHub state changed, and no PR was opened.",
+  "actions": [
+    {
+      "target": "#167",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "Repair copying at its existing agent-side owner. Keep the issue open and avoid expanding into preload changes without failing-child evidence."
+    },
+    {
+      "target": "#75",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing staging ownership and contributor history; no close or repair action applies to this closed PR."
+    },
+    {
+      "target": "#86",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical preload evidence does not establish coverage of the current copy failure."
+    },
+    {
+      "target": "#111",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the landed redirect behavior unchanged."
+    },
+    {
+      "target": "#160826",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Resolve the repository identity and hydrate the exact reference before classifying it further. Keep this action non-mutating with unknown metadata explicitly null; do not infer closure from the already_closed hint or fabricate a timestamp. This blocks only #160826."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "The artifact provides a narrow executor path; implementation is not claimed complete or locally validated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-windows-packaging-167",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#167",
+      "candidate_fix": null,
+      "reason": "A writable executor and the required disposable Windows proof environment must complete implementation and validation before publication. Do not open an empty or unvalidated PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "needs_human": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#160826: resolve the exact repository reference and hydrate its kind and live updated_at before further classification. Packaging-repository hydration returned HTTP 404; the upstream URL is unhydrated. No mutation or closure is authorized for this unavailable context item."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
