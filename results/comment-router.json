@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:04:37.936Z",
+  "updated_at": "2026-10-10T07:04:40.784Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168125:6093119934:2026-10-10T03:04:29Z:clawsweeper_needs_human",
-      "comment_id": "6093119934",
-      "comment_version_key": "6093119934:2026-10-10T03:04:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168125#issuecomment-6093119934",
-      "comment_created_at": "2026-10-10T03:04:29Z",
-      "comment_updated_at": "2026-10-10T03:04:29Z",
-      "comment_body_sha256": "a06f16d54c2af3c045356907733e43c0ac145335b5d39f47f0e82a039358a6b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168125,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied terminal traces exercise real production functions and disk I/O through standalone drivers, providing useful boundary evidence but not the required shipped entry point; a... (sha=c715a1468ca3cb526934787c39a523ae7d003f95)",
-      "expected_head_sha": "c715a1468ca3cb526934787c39a523ae7d003f95",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:06:29.196Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/edit-overlapping-occurrences",
-        "head_sha": "c715a1468ca3cb526934787c39a523ae7d003f95",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:168126",
       "comment_id": "repair-loop-label-sweep:autofix:168126",
@@ -33180,6 +33147,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/proc-safe:4:6094930298:2026-10-10T07:03:48Z:clawsweeper_needs_human",
+      "comment_id": "6094930298",
+      "comment_version_key": "6094930298:2026-10-10T07:03:48Z",
+      "comment_url": "https://github.com/openclaw/proc-safe/pull/4#issuecomment-6094930298",
+      "comment_created_at": "2026-10-10T07:03:48Z",
+      "comment_updated_at": "2026-10-10T07:03:48Z",
+      "comment_body_sha256": "3e4833ea16e2894a90f3f976ab23797a0c222876a16a8dc468c178fe94ee5d35",
+      "repo": "openclaw/proc-safe",
+      "issue_number": 4,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the Windows script exercises the public API against real kernel objects, but its child exits 134 before lifetime-transfer scenarios run; provide succes...; Review finding: [P2] Skip the non-Windows platform test on Windows — test/windows-job.test.ts:11-12 - [P2] Use a viable Node environment in the output proof — scripts/windows-job-... (sha=a46248500ff780ab3c4ba589aaba80a63c6c79bc)",
+      "expected_head_sha": "a46248500ff780ab3c4ba589aaba80a63c6c79bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T07:04:40.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "koffi/p3-windows-job",
+        "head_sha": "a46248500ff780ab3c4ba589aaba80a63c6c79bc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
