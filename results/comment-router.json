@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:30:14.114Z",
+  "updated_at": "2026-10-10T15:30:31.798Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168307:6097237267:2026-10-10T11:56:31Z:re_review",
-      "comment_id": "6097237267",
-      "comment_version_key": "6097237267:2026-10-10T11:56:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/168307#issuecomment-6097237267",
-      "comment_created_at": "2026-10-10T11:56:31Z",
-      "comment_updated_at": "2026-10-10T11:56:31Z",
-      "comment_body_sha256": "428292ee9c752e14dca3ef8c7f1333ab308e0d08b028b3ea35c4419068bf3363",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168307,
-      "author": "TommyLei666",
-      "author_id": 212664666,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T11:57:36.251Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168408:6096903648:2026-10-10T11:57:38Z:clawsweeper_auto_repair",
       "comment_id": "6096903648",
@@ -31040,6 +30995,39 @@
         "kind": "pull_request",
         "branch": "hugenshen/fix-completion-utf8",
         "head_sha": "a20afdd9d2b4cbcf6a2532b4fba7788a0c074889",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168453:6097936351:2026-10-10T15:29:43Z:clawsweeper_needs_human",
+      "comment_id": "6097936351",
+      "comment_version_key": "6097936351:2026-10-10T15:29:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168453#issuecomment-6097936351",
+      "comment_created_at": "2026-10-10T13:21:35Z",
+      "comment_updated_at": "2026-10-10T15:29:43Z",
+      "comment_body_sha256": "ae5d5c9047374c72f762c7ae0d2cb5ef62efaa546a903ea27280f681524b341a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the full PR body supplies built-runtime SQL measurements and worker test results, but managed-plugin retirement and foreign-owner scenarios replace per...; Review finding: [P2] Keep the ownership adapter within the enforced lint limit — src/plugins/registry-runtime-session-ownership.ts:653-657 (sha=f2394b533ca3fda4ad760f421e287f07e470c07a)",
+      "expected_head_sha": "f2394b533ca3fda4ad760f421e287f07e470c07a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T15:30:31.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sw7a",
+        "head_sha": "f2394b533ca3fda4ad760f421e287f07e470c07a",
         "cluster_id": null,
         "job_path": null
       }
