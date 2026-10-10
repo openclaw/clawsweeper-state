@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:33:38.875Z",
+  "updated_at": "2026-10-10T03:34:06.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167963:6090806940:2026-10-09T23:09:20Z:re_review",
-      "comment_id": "6090806940",
-      "comment_version_key": "6090806940:2026-10-09T23:09:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167963#issuecomment-6090806940",
-      "comment_created_at": "2026-10-09T23:09:20Z",
-      "comment_updated_at": "2026-10-09T23:09:20Z",
-      "comment_body_sha256": "ac22ef5118de0206a1aa1036348d1b6c77f02c1613f59c1c418271615aad91d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167963,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T23:10:15.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-runtime-routing",
-        "head_sha": "41f26e5206fc13b8aaafc6f3641fd56c93d6ee3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167999:6090490517:2026-10-09T23:09:43Z:clawsweeper_auto_repair",
       "comment_id": "6090490517",
@@ -33528,6 +33481,39 @@
         "kind": "pull_request",
         "branch": "kevin/openshell-runtime-fixes-20261009",
         "head_sha": "62b14f486bad6be386ff5528cb63dfd19796a12d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1872:6093336297:2026-10-10T03:33:01Z:clawsweeper_needs_human",
+      "comment_id": "6093336297",
+      "comment_version_key": "6093336297:2026-10-10T03:33:01Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1872#issuecomment-6093336297",
+      "comment_created_at": "2026-10-10T03:33:01Z",
+      "comment_updated_at": "2026-10-10T03:33:01Z",
+      "comment_body_sha256": "d829cf7015b5290b55948969ef07e4fb44afeba0f0acb3bb61b3f0ef00dd8bad",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1872,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve maintainer decision** - Resolve the maintainer decision shown above before merge. (sha=34c52432c3e0f752804b05c8e8741740a5406cda)",
+      "expected_head_sha": "34c52432c3e0f752804b05c8e8741740a5406cda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T03:34:06.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/canonical-tuple-transient-retries",
+        "head_sha": "34c52432c3e0f752804b05c8e8741740a5406cda",
         "cluster_id": null,
         "job_path": null
       }
