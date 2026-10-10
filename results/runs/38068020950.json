@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-217",
+  "mode": "plan",
+  "run_id": "38068020950",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38068020950",
+  "head_sha": "b7e877075650da8e0a74fa0ab2b5c8fc03e35dcb",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-217.md",
+  "published_at": "2026-10-10T16:34:01.810Z",
+  "canonical": "#217",
+  "canonical_issue": "https://github.com/openclaw/agent-skills/issues/217",
+  "canonical_pr": null,
+  "summary": "#217 remains valid on supplied main 621fd3af706efc989154231ade7a4610a59d9460. Its scanner acceptance criteria conflict with current caller-owned scanning policy and need clarification before implementation. No code or GitHub changes were made; baseline skill validation passed.",
+  "actions": [
+    {
+      "target": "#217",
+      "action": "needs_human",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Clarify scanner acceptance criteria before recommending a PR that claims to satisfy the issue. Changing only file reads would leave downstream buffering unresolved."
+    },
+    {
+      "target": "#215",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Historical context; no closure or branch repair is appropriate."
+    },
+    {
+      "target": "#240",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only quarantine to central OpenClaw security handling; no mutation recommended."
+    },
+    {
+      "target": "#287",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "The landed partition repair only partially overlaps #217 and does not resolve complete-input buffering."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Confirm whether #217's helper-owned scanner acceptance criteria should be revised to preserve current caller-owned scanning policy. Reintroducing scanning requires a separate explicit maintainer decision and cannot be bundled into this non-security capacity implementation."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
