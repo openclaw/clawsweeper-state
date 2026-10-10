@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:40:39.817Z",
+  "updated_at": "2026-10-10T06:41:48.625Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168105:6092904963:2026-10-10T02:41:11Z:re_review",
-      "comment_id": "6092904963",
-      "comment_version_key": "6092904963:2026-10-10T02:41:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168105#issuecomment-6092904963",
-      "comment_created_at": "2026-10-10T02:41:11Z",
-      "comment_updated_at": "2026-10-10T02:41:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168105,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:42:08.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/control-ui-reload-only",
-        "head_sha": "b146c8416f02891e904df4055d981987283d823b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168099:6092902716:2026-10-10T02:40:56Z:clawsweeper_auto_repair",
       "comment_id": "6092902716",
@@ -33336,6 +33289,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168259:6094667111:2026-10-10T06:40:47Z:re_review",
+      "comment_id": "6094667111",
+      "comment_version_key": "6094667111:2026-10-10T06:40:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168259#issuecomment-6094667111",
+      "comment_created_at": "2026-10-10T06:30:12Z",
+      "comment_updated_at": "2026-10-10T06:40:47Z",
+      "comment_body_sha256": "7539126c682f915ebabe459f7929f4b08119d4497e8e99756573169207a948a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168259,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review — current head 09b6a15ab47d2d24ded26f454b7ecddd9f503924 fixes the device heading assertion and the diagnosed architecture failure: a type-only cycle through model-control. helpers now depend on the existing selection contract. madge reports 0 cycles; ui types/lint/formatting pass; device and hosted browser siblings pass all 16 scenarios. fresh canonical narrow autoreview is scoped-clean. previous role-default account and auto-description fixes remain intact. ci findings are explicitly pr-caused, not attributed to main",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T06:41:46.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/agentsapi-environment-picker",
+        "head_sha": "09b6a15ab47d2d24ded26f454b7ecddd9f503924",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
