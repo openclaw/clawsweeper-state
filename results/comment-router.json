@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:19:42.283Z",
+  "updated_at": "2026-10-10T07:20:07.154Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2031:6093223705:2026-10-10T03:23:17Z:clawsweeper_needs_human",
-      "comment_id": "6093223705",
-      "comment_version_key": "6093223705:2026-10-10T03:23:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2031#issuecomment-6093223705",
-      "comment_created_at": "2026-10-10T03:17:46Z",
-      "comment_updated_at": "2026-10-10T03:23:17Z",
-      "comment_body_sha256": "c816a1a964de1e2dead72b8e13dd24f63f3ebf806a1210b85c72ef567501fccc",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 2031,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supplied PostgreSQL tests exercise current IAM revocation through the real worker, but Compute teardown is simulated; provide redacted logs or terminal... (sha=269a805a18d07782d739e0dddb66fe5fca312b44)",
-      "expected_head_sha": "269a805a18d07782d739e0dddb66fe5fca312b44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:24:12.254Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-990-991",
-        "head_sha": "269a805a18d07782d739e0dddb66fe5fca312b44",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165091:5984118427:2026-10-10T03:23:49Z:clawsweeper_auto_repair",
       "comment_id": "5984118427",
@@ -33227,6 +33194,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167897:6095053836:2026-10-10T07:19:20Z:re_review",
+      "comment_id": "6095053836",
+      "comment_version_key": "6095053836:2026-10-10T07:19:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167897#issuecomment-6095053836",
+      "comment_created_at": "2026-10-10T07:19:20Z",
+      "comment_updated_at": "2026-10-10T07:19:20Z",
+      "comment_body_sha256": "09b64a3d1d670eba846409466b2d693875732b53eb743b3597046b99c32facb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167897,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T07:20:05.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/goal-continuation-root-cause",
+        "head_sha": "26c4a6313d0f2d30b35a86110aedba6698cca4c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
