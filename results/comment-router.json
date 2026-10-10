@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:49:59.775Z",
+  "updated_at": "2026-10-10T02:50:16.543Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167796:6080361584:2026-10-09T22:33:30Z:clawsweeper_needs_human",
-      "comment_id": "6080361584",
-      "comment_version_key": "6080361584:2026-10-09T22:33:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167796#issuecomment-6080361584",
-      "comment_created_at": "2026-10-09T11:56:15Z",
-      "comment_updated_at": "2026-10-09T22:33:30Z",
-      "comment_body_sha256": "e00d8f29070241e7c2c4426c906d6e4dd7e59b7fc1e97567542e614aff6c519d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167796,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Resolve the GitHub-reported conflicts within the remaining authorized conflict-only round and validate the affected composition. (sha=c46e7b8d1ca33f4d464100f0fecae9f2a318a5e2)",
-      "expected_head_sha": "c46e7b8d1ca33f4d464100f0fecae9f2a318a5e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:34:36.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/heartbeat-s3-land-20261009",
-        "head_sha": "c46e7b8d1ca33f4d464100f0fecae9f2a318a5e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158145:5834451809:2026-10-09T22:33:50Z:clawsweeper_needs_human",
       "comment_id": "5834451809",
@@ -33212,6 +33179,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:103201:6092982178:2026-10-10T02:49:25Z:re_review",
+      "comment_id": "6092982178",
+      "comment_version_key": "6092982178:2026-10-10T02:49:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-6092982178",
+      "comment_created_at": "2026-10-10T02:49:25Z",
+      "comment_updated_at": "2026-10-10T02:49:25Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T02:50:15.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "795f5bf616806f40c379a262f2264cfdcaf2d01d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
