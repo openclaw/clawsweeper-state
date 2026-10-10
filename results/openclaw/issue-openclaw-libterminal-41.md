@@ -1,54 +1,54 @@
 ---
 repo: "openclaw/libterminal"
 cluster_id: "issue-openclaw-libterminal-41"
-mode: "autonomous"
-run_id: "37969809312"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37969809312"
-head_sha: "fe750d1779208b067c1f694dba70f494cb29c401"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "38012075112"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38012075112"
+head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-09T23:54:37.237Z"
-canonical: "https://github.com/openclaw/libterminal/issues/41"
-canonical_issue: "https://github.com/openclaw/libterminal/issues/41"
+published_at: "2026-10-10T01:11:41.879Z"
+canonical: "#41"
+canonical_issue: "#41"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 2
+needs_human_count: 0
 ---
 
 # issue-openclaw-libterminal-41
 
 Repo: openclaw/libterminal
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37969809312](https://github.com/openclaw/clawsweeper/actions/runs/37969809312)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38012075112](https://github.com/openclaw/clawsweeper/actions/runs/38012075112)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/libterminal/issues/41
+Canonical: #41
 
 ## Summary
 
-Implementation is premature: the issue explicitly requires a stable Ghostty v1.4 tag and a published compatible wrapper, and neither gate is established. No files changed, tests run, or PR planned.
+The supplied preflight reports that both required upstream publication gates remain unmet. Current main still pins ghostty-web@0.4.0. Keep #41 open; no implementation PR or fix artifact is viable yet.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 2 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,9 @@ Implementation is premature: the issue explicitly requires a stable Ghostty v1.4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41 | keep_canonical | planned | canonical | Retain the canonical tracking issue. Resume implementation only after both publication gates are positively verified; preparatory validation does not satisfy runtime adoption. |
-| #77 | keep_closed | skipped | related | Historical groundwork is useful context, not a completed adoption or an actionable contributor branch. |
-| #169 | needs_human | blocked | needs_human | Resolve and hydrate the exact external identity before any security routing. The supplied artifacts cannot safely support route_security for local #169, and no target kind or timestamp may be invented. Keep the reported external concern quarantined from repair work; if confirmed, it belongs to central OpenClaw security handling. |
-| #182 | needs_human | blocked | needs_human | Correct repository-qualified hydration is required to resolve this action's identity and metadata. Do not invent metadata or apply any action to local #182. The upstream release candidate remains contextual evidence outside this implementation cluster. |
+| #41 | keep_canonical | planned | canonical | The adoption remains unimplemented, but its explicit upstream prerequisites are not satisfied in the supplied evidence. This is an external publication blocker, not an unresolved maintainer decision. |
+| #77 | keep_closed | skipped | related | Historical validation groundwork does not satisfy runtime adoption; no action on this closed PR is needed. |
 
 ## Needs Human
 
-- #169: Correct the misresolved external identity and hydrate https://github.com/coder/ghostty-web/pull/169 before verifying the reported security concern or routing that exact item.
-- #182: Correct the misresolved external identity and hydrate https://github.com/coder/ghostty-web/pull/182 before assigning target metadata; do not act on openclaw/libterminal#182.
+- none
