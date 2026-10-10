@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:42:51.006Z",
+  "updated_at": "2026-10-10T03:42:59.497Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161383:5898795805:2026-10-09T23:08:34Z:clawsweeper_auto_repair",
-      "comment_id": "5898795805",
-      "comment_version_key": "5898795805:2026-10-09T23:08:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/161383#issuecomment-5898795805",
-      "comment_created_at": "2026-09-29T21:00:45Z",
-      "comment_updated_at": "2026-10-09T23:08:34Z",
-      "comment_body_sha256": "52abb0ef7449477dff78e7f2d2bf6833937170936b372fe276452fce30ad3393",
-      "repo": "openclaw/openclaw",
-      "issue_number": 161383,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=b0a257110711dc8be06ee1e45cf85b18c86d974e)",
-      "expected_head_sha": "b0a257110711dc8be06ee1e45cf85b18c86d974e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T23:22:46.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/nightly-hunt-20260929",
-        "head_sha": "b0a257110711dc8be06ee1e45cf85b18c86d974e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161388:5898997188:2026-10-09T23:09:38Z:clawsweeper_auto_repair",
       "comment_id": "5898997188",
@@ -33435,6 +33402,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168097:6093407245:2026-10-10T03:41:53Z:re_review",
+      "comment_id": "6093407245",
+      "comment_version_key": "6093407245:2026-10-10T03:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168097#issuecomment-6093407245",
+      "comment_created_at": "2026-10-10T03:41:53Z",
+      "comment_updated_at": "2026-10-10T03:41:53Z",
+      "comment_body_sha256": "a76a4adbc7fdaea03c7c8bd4f92d58c0e130fc0b2cf936447c831da85637861d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168097,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T03:42:57.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/reduce-upgrade-proof-critical-path-time-2",
+        "head_sha": "1d2fcdc59d27371be5cea4f98c010b12e929ea02",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
