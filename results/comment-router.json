@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T18:14:30.392Z",
+  "updated_at": "2026-10-10T18:14:44.705Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5258282217:2026-08-11T20:09:53Z:re_review",
-      "comment_id": "5258282217",
-      "comment_version_key": "5258282217:2026-08-11T20:09:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5258282217",
-      "comment_created_at": "2026-08-11T20:09:53Z",
-      "comment_updated_at": "2026-08-11T20:09:53Z",
-      "comment_body_sha256": "84106b474e2cca427910fc88c1879d7e8a9ed68ee137453214f3a1a80bb28047",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T14:23:30.995Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5258284073:2026-08-11T20:10:04Z:re_review",
       "comment_id": "5258284073",
@@ -31494,6 +31467,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168588:6100654713:2026-10-10T18:13:49Z:clawsweeper_needs_human",
+      "comment_id": "6100654713",
+      "comment_version_key": "6100654713:2026-10-10T18:13:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168588#issuecomment-6100654713",
+      "comment_created_at": "2026-10-10T18:13:49Z",
+      "comment_updated_at": "2026-10-10T18:13:49Z",
+      "comment_body_sha256": "80afc492a54f90797be9bb0042d726e2caa32de57bfe18deceb8825c7ae614c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The body reports a successful isolated CLI-to-Gateway save and missing-token refusal, while supplied tests cover wrong-owner rejection and early writer...; Review finding: [P1] [P1] Forward requester authority into credential commit admission — src/commands/models/auth-api-key.ts:140-143 - [P1] [P1] Recheck requester authority at con... (sha=4e014d0fbdd971273fff9253ee0269c97d13277a)",
+      "expected_head_sha": "4e014d0fbdd971273fff9253ee0269c97d13277a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T18:14:44.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-auth-via-gateway",
+        "head_sha": "4e014d0fbdd971273fff9253ee0269c97d13277a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
