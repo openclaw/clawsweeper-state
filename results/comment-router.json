@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T23:50:51.297Z",
+  "updated_at": "2026-10-10T23:51:10.345Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168596:6100953959:2026-10-10T18:46:31Z:clawsweeper_needs_human",
-      "comment_id": "6100953959",
-      "comment_version_key": "6100953959:2026-10-10T18:46:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168596#issuecomment-6100953959",
-      "comment_created_at": "2026-10-10T18:46:31Z",
-      "comment_updated_at": "2026-10-10T18:46:31Z",
-      "comment_body_sha256": "fc9a8e6834e76c2236ecd5ac26617106b45d074f0e70da7ba678e8b675346dbe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168596,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The body explicitly identifies Client.handleInteraction proof with real persisted archive admission and mocked Discord REST, with no live Discord or production Gateway run; provide a... (sha=d4bb03c14cd2a1b9fd19f6a99b174a5e130bb999)",
-      "expected_head_sha": "d4bb03c14cd2a1b9fd19f6a99b174a5e130bb999",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T18:47:32.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/discord-slash-archive-guidance",
-        "head_sha": "d4bb03c14cd2a1b9fd19f6a99b174a5e130bb999",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168597:6100960775:2026-10-10T18:47:15Z:clawsweeper_auto_repair",
       "comment_id": "6100960775",
@@ -33099,6 +33066,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2106:6103472202:2026-10-10T23:50:04Z:re_review",
+      "comment_id": "6103472202",
+      "comment_version_key": "6103472202:2026-10-10T23:50:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2106#issuecomment-6103472202",
+      "comment_created_at": "2026-10-10T23:50:04Z",
+      "comment_updated_at": "2026-10-10T23:50:04Z",
+      "comment_body_sha256": "c27d7d122bec61a3c5ecccaf8a75b487ef92812cd86f18634fe123aa6a7146dd",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2106,
+      "author": "kevinlin-openai",
+      "author_id": 177054202,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review the pr body now includes the live observer read/refresh and exact owned-pr/branch cleanup proof, plus a separate read-only revoked-token rest and git check. it also discloses the earlier inconclusive negative-test anomaly and its limits. suite audit passed after mapping the observer test",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T23:51:08.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/qa-app-observer",
+        "head_sha": "bad7d7810a7e70e33dc904d883f3b2ccdb76aafe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
