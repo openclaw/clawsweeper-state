@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:15:07.312Z",
+  "updated_at": "2026-10-10T01:16:04.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155702:5776432363:2026-10-09T20:25:47Z:clawsweeper_needs_human",
-      "comment_id": "5776432363",
-      "comment_version_key": "5776432363:2026-10-09T20:25:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155702#issuecomment-5776432363",
-      "comment_created_at": "2026-09-22T12:24:25Z",
-      "comment_updated_at": "2026-10-09T20:25:47Z",
-      "comment_body_sha256": "d9bfd5602b922a624826f73d1e14ed3de2844f3a2faf893e5ee7831f3db5faaa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155702,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The changed review-job projector is supported by pre-fix production logs, policy probes, and projection tests, but this exact branch lacks observed after-fix Gateway reconciliation fo... (sha=609f3ead63da429636a2818195ca7b1970c504fc)",
-      "expected_head_sha": "609f3ead63da429636a2818195ca7b1970c504fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T20:41:06.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-collection-review-tool-policy",
-        "head_sha": "609f3ead63da429636a2818195ca7b1970c504fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158565:5842271375:2026-10-09T20:39:12Z:clawsweeper_auto_repair",
       "comment_id": "5842271375",
@@ -32847,6 +32814,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168006:6092064548:2026-10-10T01:15:16Z:re_review",
+      "comment_id": "6092064548",
+      "comment_version_key": "6092064548:2026-10-10T01:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168006#issuecomment-6092064548",
+      "comment_created_at": "2026-10-10T01:15:16Z",
+      "comment_updated_at": "2026-10-10T01:15:16Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168006,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:16:02.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/plugin-registry-runtime-deslop",
+        "head_sha": "01a09fd8b0c07893409c39acde8ceb191cfd3d19",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
