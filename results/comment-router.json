@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:54:46.408Z",
+  "updated_at": "2026-10-10T09:55:40.086Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/acpx:870:6094260846:2026-10-10T05:35:19Z:re_review",
-      "comment_id": "6094260846",
-      "comment_version_key": "6094260846:2026-10-10T05:35:19Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/870#issuecomment-6094260846",
-      "comment_created_at": "2026-10-10T05:35:19Z",
-      "comment_updated_at": "2026-10-10T05:35:19Z",
-      "comment_body_sha256": "fb61541d01ceae9df684452350b9999341f9b93aac59ba054fc947ddd3d654f4",
-      "repo": "openclaw/acpx",
-      "issue_number": 870,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T05:36:18.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/round9-20261009",
-        "head_sha": "04ae696936957f851dd917e4a072a1e435359b4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168052:6091848847:2026-10-10T05:35:15Z:clawsweeper_needs_human",
       "comment_id": "6091848847",
@@ -33162,6 +33115,39 @@
         "kind": "pull_request",
         "branch": "fix/llama-cpp-router-unverified-facts",
         "head_sha": "f3bfc0a00f2f0c6999a82ba2836ec32059f8c1a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-10-10T09:52:14Z:clawsweeper_needs_human",
+      "comment_id": "5567489931",
+      "comment_version_key": "5567489931:2026-10-10T09:52:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
+      "comment_created_at": "2026-09-07T08:12:30Z",
+      "comment_updated_at": "2026-10-10T09:52:14Z",
+      "comment_body_sha256": "a8f50d3e1c69c8ee2f17ab31f675f1bb6a8991e8b691767808a0f2e42290fd8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The posted terminal trace exercises encoding, projection, SQLite writing, and direct handler output, but bypasses the shipped agent/tool invocation; provide a real skill read or comma... (sha=66be794ce04ced9ae6a4e64df0261082ed23eaa1)",
+      "expected_head_sha": "66be794ce04ced9ae6a4e64df0261082ed23eaa1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T09:55:40.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "66be794ce04ced9ae6a4e64df0261082ed23eaa1",
         "cluster_id": null,
         "job_path": null
       }
