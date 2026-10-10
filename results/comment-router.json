@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:38:24.707Z",
+  "updated_at": "2026-10-10T07:39:32.198Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5756701697:2026-09-21T07:06:46Z:re_review",
-      "comment_id": "5756701697",
-      "comment_version_key": "5756701697:2026-09-21T07:06:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5756701697",
-      "comment_created_at": "2026-09-21T07:06:46Z",
-      "comment_updated_at": "2026-09-21T07:06:46Z",
-      "comment_body_sha256": "2c9420501d46252e0c31cbd9f7844d43b8c1c4763a88536df23bee65187adf1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:48:17.183Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5758145049:2026-09-21T09:16:57Z:re_review",
       "comment_id": "5758145049",
@@ -33277,6 +33250,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138786:5548862201:2026-10-10T07:38:18Z:clawsweeper_needs_human",
+      "comment_id": "5548862201",
+      "comment_version_key": "5548862201:2026-10-10T07:38:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138786#issuecomment-5548862201",
+      "comment_created_at": "2026-09-05T02:51:30Z",
+      "comment_updated_at": "2026-10-10T07:38:18Z",
+      "comment_body_sha256": "b9374c585d24c9fdc7220825339b6b00c82e56b7feb5845b242a352dc860533b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=55c30ff66dcc7180d5424e781300810fe00c40c4)",
+      "expected_head_sha": "55c30ff66dcc7180d5424e781300810fe00c40c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T07:39:32.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-reindex-livelock",
+        "head_sha": "55c30ff66dcc7180d5424e781300810fe00c40c4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
