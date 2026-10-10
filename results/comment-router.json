@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:22:40.642Z",
+  "updated_at": "2026-10-10T06:22:44.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168087:6092724660:2026-10-10T02:27:19Z:re_review",
-      "comment_id": "6092724660",
-      "comment_version_key": "6092724660:2026-10-10T02:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168087#issuecomment-6092724660",
-      "comment_created_at": "2026-10-10T02:27:19Z",
-      "comment_updated_at": "2026-10-10T02:27:19Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168087,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:27:47.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/onboard-remote-gateway-restart-deadline-wall-clock-184",
-        "head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168087:6092531813:2026-10-10T02:26:47Z:clawsweeper_needs_human",
       "comment_id": "6092531813",
@@ -33402,6 +33355,39 @@
       "status": "skipped",
       "processed_at": "2026-10-10T06:22:40.642Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168214:6094097842:2026-10-10T06:21:38Z:clawsweeper_needs_human",
+      "comment_id": "6094097842",
+      "comment_version_key": "6094097842:2026-10-10T06:21:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168214#issuecomment-6094097842",
+      "comment_created_at": "2026-10-10T05:12:36Z",
+      "comment_updated_at": "2026-10-10T06:21:38Z",
+      "comment_body_sha256": "d5201640876501fb15ea1f62654871280fbacf1e4f94b74a843798a4a5f9f2da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f0d5acb3eb7748da51f49e2639cb4812652ae4cc)",
+      "expected_head_sha": "f0d5acb3eb7748da51f49e2639cb4812652ae4cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:22:44.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worktree-heartbeat-reply-deadline",
+        "head_sha": "f0d5acb3eb7748da51f49e2639cb4812652ae4cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
