@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:33:14.553Z",
+  "updated_at": "2026-10-10T01:34:51.421Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167393:6066531470:2026-10-09T21:00:14Z:clawsweeper_needs_human",
-      "comment_id": "6066531470",
-      "comment_version_key": "6066531470:2026-10-09T21:00:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167393#issuecomment-6066531470",
-      "comment_created_at": "2026-10-08T18:33:57Z",
-      "comment_updated_at": "2026-10-09T21:00:14Z",
-      "comment_body_sha256": "f6d1fe9b806b73b7386102b253fdd872957c447aea1b4f264cd03f09e11df3b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167393,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a0de6328b9947932d71ad1133b54e793b4b68a1c)",
-      "expected_head_sha": "a0de6328b9947932d71ad1133b54e793b4b68a1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T21:03:02.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-stable-tool-catalog",
-        "head_sha": "915b45a30c6c5a1ddd1436e2922d186878cf31c2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167937:6088049939:2026-10-09T20:59:43Z:clawsweeper_needs_human",
       "comment_id": "6088049939",
@@ -32927,6 +32894,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6092228087:2026-10-10T01:33:55Z:re_review",
+      "comment_id": "6092228087",
+      "comment_version_key": "6092228087:2026-10-10T01:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6092228087",
+      "comment_created_at": "2026-10-10T01:33:55Z",
+      "comment_updated_at": "2026-10-10T01:33:55Z",
+      "comment_body_sha256": "39f4f012de13e9c10144577fb1cd0a88d6a69f630a328fc762389d100bcb3e6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — merged upstream/main `1f307d61d0` (39 commits) into `memorytunning-pr-v2` → `6590788da0`. no conflicts; skill-selection contract (async worker `listauditeventsindatabase`, companion table `audit_skill_selection_events`, workspace-bootstrap-privacy re-export, 4-field run-usage) preserved. note: local `tsgo:core` shows pre-existing upstream errors in `state-migrations.no-replace-move.ts` / `plugin-generation-file-capture.ts` / `plugin-source-file.ts` (not touched by this pr)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:34:49.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "6590788da06ffd3bd98d0ddf48a997917ca73cd4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
