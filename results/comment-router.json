@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:37:55.221Z",
+  "updated_at": "2026-10-10T15:38:05.121Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168274:6097312095:2026-10-10T12:06:27Z:re_review",
-      "comment_id": "6097312095",
-      "comment_version_key": "6097312095:2026-10-10T12:06:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168274#issuecomment-6097312095",
-      "comment_created_at": "2026-10-10T12:06:27Z",
-      "comment_updated_at": "2026-10-10T12:06:27Z",
-      "comment_body_sha256": "1f40f3ae59ae82063e8c6cfd1e1b35bd60f7152eb500f23a20557ec8608abac3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168274,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T12:07:10.886Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/readonly-worker-never-writes-shm",
-        "head_sha": "7056890a43a1323ee8ffc0c4f2a0da1ed834a645",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168410:6097314251:2026-10-10T12:06:45Z:re_review",
       "comment_id": "6097314251",
@@ -30981,6 +30934,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/vitest-5.0.2",
         "head_sha": "6a0baa01208a1e51680d7649e91d03ee523911a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3926:6064077929:2026-10-10T15:37:01Z:clawsweeper_needs_human",
+      "comment_id": "6064077929",
+      "comment_version_key": "6064077929:2026-10-10T15:37:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3926#issuecomment-6064077929",
+      "comment_created_at": "2026-10-08T16:10:27Z",
+      "comment_updated_at": "2026-10-10T15:37:01Z",
+      "comment_body_sha256": "17c9cd6eb04173ca78db8085a4534cab24e9be0136068182f45d15a892dfd14d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect https://github.com/openclaw/clawhub/actions/runs/37957300624/job/113910954260, identify the failing static command, and repair a dependency-update failure or establish an evidenced... (sha=fc9a01dabf0e4a1b7e1f1e10ec7f24cb831f4244)",
+      "expected_head_sha": "fc9a01dabf0e4a1b7e1f1e10ec7f24cb831f4244",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T15:38:05.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-62a2fc2e88",
+        "head_sha": "fc9a01dabf0e4a1b7e1f1e10ec7f24cb831f4244",
         "cluster_id": null,
         "job_path": null
       }
