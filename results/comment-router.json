@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:36:37.673Z",
+  "updated_at": "2026-10-10T02:36:41.357Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101866:6090289542:2026-10-09T22:27:19Z:re_review",
-      "comment_id": "6090289542",
-      "comment_version_key": "6090289542:2026-10-09T22:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-6090289542",
-      "comment_created_at": "2026-10-09T22:27:19Z",
-      "comment_updated_at": "2026-10-09T22:27:19Z",
-      "comment_body_sha256": "e400c9cdb54e735f3dbc0dda67dacaa384ca69ce75255bf40153f015ba54cafc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101866,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T22:28:18.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/transcript-media-grounding-upstream",
-        "head_sha": "a2e8eca58cfd0cdf029ade5109f906737c8a8b4a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151099:6090288255:2026-10-09T22:27:13Z:re_review",
       "comment_id": "6090288255",
@@ -33137,6 +33090,39 @@
         "kind": "pull_request",
         "branch": "fix/mattermost-pairing-queue-full",
         "head_sha": "081abdb178e0f7cb018181fd95cd601d376d69e1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2025:6092821224:2026-10-10T02:35:46Z:clawsweeper_needs_human",
+      "comment_id": "6092821224",
+      "comment_version_key": "6092821224:2026-10-10T02:35:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2025#issuecomment-6092821224",
+      "comment_created_at": "2026-10-10T02:35:46Z",
+      "comment_updated_at": "2026-10-10T02:35:46Z",
+      "comment_body_sha256": "78d6a9dae58d6a7e04812a9c0de0850324de26b4ff2d546b62e14aabd8b10583",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the isolated selector routes protected App and observer credentials into the existing GitHub journey, but the author explicitly reports no isolated-fix...; Review finding: [P2] Supply the inputs required by current main’s QA contract — tests/integration/full-integration-preflight.test.mjs:143-146 (sha=d779f57e22ed6422d02d690b22e90cbc2a03514b)",
+      "expected_head_sha": "d779f57e22ed6422d02d690b22e90cbc2a03514b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T02:36:41.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/isolated-qa-fixture",
+        "head_sha": "d779f57e22ed6422d02d690b22e90cbc2a03514b",
         "cluster_id": null,
         "job_path": null
       }
