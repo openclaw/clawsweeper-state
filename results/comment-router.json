@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:17:49.617Z",
+  "updated_at": "2026-10-10T14:18:05.331Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153379:6096269926:2026-10-10T09:47:56Z:re_review",
-      "comment_id": "6096269926",
-      "comment_version_key": "6096269926:2026-10-10T09:47:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153379#issuecomment-6096269926",
-      "comment_created_at": "2026-10-10T09:47:56Z",
-      "comment_updated_at": "2026-10-10T09:47:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153379,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T09:48:46.235Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-153103-annotation-editor-resize-keeps-comment",
-        "head_sha": "23182298270fb88677272a892f3b669068b544a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168370:6096270179:2026-10-10T09:47:58Z:clawsweeper_auto_repair",
       "comment_id": "6096270179",
@@ -32992,6 +32945,39 @@
         "kind": "pull_request",
         "branch": "fix-1022",
         "head_sha": "d2bd819dd2a18e372f66de3eed09476ae59d9f14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168473:6098403091:2026-10-10T14:16:02Z:clawsweeper_needs_human",
+      "comment_id": "6098403091",
+      "comment_version_key": "6098403091:2026-10-10T14:16:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168473#issuecomment-6098403091",
+      "comment_created_at": "2026-10-10T14:16:02Z",
+      "comment_updated_at": "2026-10-10T14:16:02Z",
+      "comment_body_sha256": "0567f8a3e6ecf6b9de94026e69bc1fb032c0f7327e7acf43503f42bf6fb2d4d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the exact-head session-accessor boundary failure and establish its cause before landing; assign contributor repair only if it is caused by this PR. (sha=868c62b7ec80295e677b62f06daebc14e88ff793)",
+      "expected_head_sha": "868c62b7ec80295e677b62f06daebc14e88ff793",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:18:05.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "solid2/p2-a2ui",
+        "head_sha": "868c62b7ec80295e677b62f06daebc14e88ff793",
         "cluster_id": null,
         "job_path": null
       }
