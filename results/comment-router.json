@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T11:09:41.810Z",
+  "updated_at": "2026-10-10T11:10:29.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168215:6094637342:2026-10-10T06:26:05Z:re_review",
-      "comment_id": "6094637342",
-      "comment_version_key": "6094637342:2026-10-10T06:26:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168215#issuecomment-6094637342",
-      "comment_created_at": "2026-10-10T06:26:05Z",
-      "comment_updated_at": "2026-10-10T06:26:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168215,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T06:27:07.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/workboard-fallback-167574",
-        "head_sha": "74bfa96ac1c18da2378750081c411fef2a9a279a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167965:6089360322:2026-10-10T06:26:27Z:clawsweeper_needs_human",
       "comment_id": "6089360322",
@@ -33669,6 +33622,39 @@
         "kind": "pull_request",
         "branch": "codeops/upstream-followup-device-operator",
         "head_sha": "8eb763317c3989f73280a05acd8afdfff3251345",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:905:6093939312:2026-10-10T11:09:28Z:clawsweeper_auto_repair",
+      "comment_id": "6093939312",
+      "comment_version_key": "6093939312:2026-10-10T11:09:28Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/905#issuecomment-6093939312",
+      "comment_created_at": "2026-10-10T04:51:40Z",
+      "comment_updated_at": "2026-10-10T11:09:28Z",
+      "comment_body_sha256": "b9c729139a67fa0f1f85473d607f4f2e70eb972648a4eed03968b916c2f4425a",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 905,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=fca0948716dd33f5d1e32ff534d38cddacd6f82b)",
+      "expected_head_sha": "fca0948716dd33f5d1e32ff534d38cddacd6f82b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T11:10:29.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "koffi/f4-freebsd",
+        "head_sha": "fca0948716dd33f5d1e32ff534d38cddacd6f82b",
         "cluster_id": null,
         "job_path": null
       }
