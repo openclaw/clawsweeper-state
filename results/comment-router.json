@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:12:47.365Z",
+  "updated_at": "2026-10-10T20:12:57.899Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167342:6083944139:2026-10-09T15:26:42Z:re_review",
-      "comment_id": "6083944139",
-      "comment_version_key": "6083944139:2026-10-09T15:26:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167342#issuecomment-6083944139",
-      "comment_created_at": "2026-10-09T15:26:42Z",
-      "comment_updated_at": "2026-10-09T15:26:42Z",
-      "comment_body_sha256": "0d20e4959202db92028690028838d295f29d31a272543aa58e2989fc8f2006a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167342,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T14:42:50.921Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167342:6085496833:2026-10-09T17:01:49Z:re_review",
       "comment_id": "6085496833",
@@ -33211,6 +33184,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:432:6101717584:2026-10-10T20:12:12Z:clawsweeper_needs_human",
+      "comment_id": "6101717584",
+      "comment_version_key": "6101717584:2026-10-10T20:12:12Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/432#issuecomment-6101717584",
+      "comment_created_at": "2026-10-10T20:12:12Z",
+      "comment_updated_at": "2026-10-10T20:12:12Z",
+      "comment_body_sha256": "86ef30f5fca21b7a310e3583f1ea57ccb083d84c74012e723118514c29baabb7",
+      "repo": "openclaw/mcporter",
+      "issue_number": 432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The supplied evidence exercises handleServeCli with real loopback sockets but mocks serveHttp and runtime setup; it does not demonstrate the shipped CLI starting its actual bridge on... (sha=dc5b31a647b9da102ae35a571435391cbadb824a)",
+      "expected_head_sha": "dc5b31a647b9da102ae35a571435391cbadb824a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T20:12:57.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/serve-ipv6-endpoint",
+        "head_sha": "dc5b31a647b9da102ae35a571435391cbadb824a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
