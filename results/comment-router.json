@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T21:35:56.650Z",
+  "updated_at": "2026-10-10T21:36:04.856Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125897:5331349126:2026-10-10T16:00:14Z:clawsweeper_needs_human",
-      "comment_id": "5331349126",
-      "comment_version_key": "5331349126:2026-10-10T16:00:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125897#issuecomment-5331349126",
-      "comment_created_at": "2026-08-18T16:49:45Z",
-      "comment_updated_at": "2026-10-10T16:00:14Z",
-      "comment_body_sha256": "895592aa27fc6beef0237421c31a2c2d1e362c48534cae273a9f6c1caff1fd0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The current-head production handler is covered by a fake app-server peer and synthetic message executor; earlier reported Codex 0.148 traces do not establish discovery and delivery af... (sha=241f2921daf02d2874113f2fee42a4853d63cf1d)",
-      "expected_head_sha": "241f2921daf02d2874113f2fee42a4853d63cf1d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T16:09:03.067Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/codex-message-tool-schema",
-        "head_sha": "241f2921daf02d2874113f2fee42a4853d63cf1d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126643:5355371677:2026-10-10T16:02:19Z:clawsweeper_auto_repair",
       "comment_id": "5355371677",
@@ -33483,6 +33450,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168420:6097124468:2026-10-10T21:35:12Z:clawsweeper_needs_human",
+      "comment_id": "6097124468",
+      "comment_version_key": "6097124468:2026-10-10T21:35:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168420#issuecomment-6097124468",
+      "comment_created_at": "2026-10-10T11:41:42Z",
+      "comment_updated_at": "2026-10-10T21:35:12Z",
+      "comment_body_sha256": "dd61a28f84d42dfe146e3f6f8d95fd6d69ad6996d787f1d4456f79b6b1eb2503",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168420,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: for any retained config.state.mutate RPC, show an allowed admin write and rejection of a non-admin or revoked queued caller before SQLite changes; supp...; Review finding: [P1] Preserve worker-owned async config health updates — src/config/io.health-state.ts:299-303 - [P1] Keep the extracted PR wrapper closed over runtime imports — s... (sha=72b251ebdc2827b28b5679499c1cd80824bdce63)",
+      "expected_head_sha": "72b251ebdc2827b28b5679499c1cd80824bdce63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T21:36:04.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ow2-plugins",
+        "head_sha": "72b251ebdc2827b28b5679499c1cd80824bdce63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
