@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:57:33.220Z",
+  "updated_at": "2026-10-10T02:57:34.164Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101866:5290836157:2026-08-14T07:43:33Z:re_review",
-      "comment_id": "5290836157",
-      "comment_version_key": "5290836157:2026-08-14T07:43:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-5290836157",
-      "comment_created_at": "2026-08-14T07:43:33Z",
-      "comment_updated_at": "2026-08-14T07:43:33Z",
-      "comment_body_sha256": "079d7f092dcacfd95bfefcfe8e4f2de79b9a0c175f8c6841b98dcdae612da1c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101866,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:36:41.011Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101866:5390701365:2026-08-24T04:23:23Z:re_review",
       "comment_id": "5390701365",
@@ -33438,6 +33411,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168087:6092531813:2026-10-10T02:56:30Z:clawsweeper_needs_human",
+      "comment_id": "6092531813",
+      "comment_version_key": "6092531813:2026-10-10T02:56:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168087#issuecomment-6092531813",
+      "comment_created_at": "2026-10-10T02:07:01Z",
+      "comment_updated_at": "2026-10-10T02:56:30Z",
+      "comment_body_sha256": "b4369d4eef23bb48ddb67fc8ea9884d23f092b86717d9c2dfafdd5b2bd0924b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168087,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The updated transcript now exercises runRemoteGatewayInferenceOnboarding, improving on the previous arithmetic-only evidence, but replaces the Gateway client and accelerates both timi... (sha=d70f3c43b097cc88ad476a36fa0e6011e3b74218)",
+      "expected_head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T02:57:34.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/onboard-remote-gateway-restart-deadline-wall-clock-184",
+        "head_sha": "d70f3c43b097cc88ad476a36fa0e6011e3b74218",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
