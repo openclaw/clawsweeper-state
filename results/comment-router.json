@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T16:55:30.212Z",
+  "updated_at": "2026-10-10T16:55:42.468Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6098049717:2026-10-10T13:35:26Z:re_review",
-      "comment_id": "6098049717",
-      "comment_version_key": "6098049717:2026-10-10T13:35:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6098049717",
-      "comment_created_at": "2026-10-10T13:35:26Z",
-      "comment_updated_at": "2026-10-10T13:35:26Z",
-      "comment_body_sha256": "ad4003c7f2053df0d0cf70760838715fea10e5caefd243d2961998696ad78a6a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T13:38:34.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "766d4a205a0b96704ea0420ed30c94e3f6c35ead",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166114:6098062379:2026-10-10T13:37:02Z:re_review",
       "comment_id": "6098062379",
@@ -30882,6 +30835,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-local-alias-directives",
         "head_sha": "d77f0d3da55b94f7f3f7eb67e3fa92b35254e373",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168533:6099928669:2026-10-10T16:54:45Z:clawsweeper_needs_human",
+      "comment_id": "6099928669",
+      "comment_version_key": "6099928669:2026-10-10T16:54:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168533#issuecomment-6099928669",
+      "comment_created_at": "2026-10-10T16:54:45Z",
+      "comment_updated_at": "2026-10-10T16:54:45Z",
+      "comment_body_sha256": "f867db3804cc30284db3dc19e298516827ee22811feb22915bd0de982307936d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168533,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the supplied evidence exercises the shared HTTP owner only inside Vitest, not a shipped transfer entry point; provide redacted logs or terminal output... (sha=d0f39a535e3969db3b360334397710be9add312a)",
+      "expected_head_sha": "d0f39a535e3969db3b360334397710be9add312a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T16:55:42.468Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167094-worker-transfer-tls",
+        "head_sha": "d0f39a535e3969db3b360334397710be9add312a",
         "cluster_id": null,
         "job_path": null
       }
