@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:04:35.994Z",
+  "updated_at": "2026-10-10T02:04:57.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167342:6065120692:2026-10-09T21:54:56Z:clawsweeper_needs_human",
-      "comment_id": "6065120692",
-      "comment_version_key": "6065120692:2026-10-09T21:54:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167342#issuecomment-6065120692",
-      "comment_created_at": "2026-10-08T17:10:44Z",
-      "comment_updated_at": "2026-10-09T21:54:56Z",
-      "comment_body_sha256": "b2a8fd28927862e22d45d07a2a802d56677d17a62c5cc81814148baa780b265d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167342,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The SQLite-backed admitReplyTurn → initSessionState → rollover harness shows the improved error on d5525d49c119873d0127801852334e8dfa9b14f7, and the reviewed integration retains it. A... (sha=05a3fdd07d48512649fc8ef06980f0d50686a779)",
-      "expected_head_sha": "05a3fdd07d48512649fc8ef06980f0d50686a779",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T21:56:11.240Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/167078-drain-timeout-retry",
-        "head_sha": "05a3fdd07d48512649fc8ef06980f0d50686a779",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167342:6076985818:2026-10-09T08:04:35Z:re_review",
       "comment_id": "6076985818",
@@ -33060,6 +33027,53 @@
       "status": "skipped",
       "processed_at": "2026-10-10T02:04:35.994Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167259:6092502768:2026-10-10T02:03:54Z:re_review",
+      "comment_id": "6092502768",
+      "comment_version_key": "6092502768:2026-10-10T02:03:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167259#issuecomment-6092502768",
+      "comment_created_at": "2026-10-10T02:03:54Z",
+      "comment_updated_at": "2026-10-10T02:03:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167259,
+      "author": "hugenshen",
+      "author_id": 16300669,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T02:04:55.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approval-utf16-grants",
+        "head_sha": "7a297547c5fcead83ef64ab098d7c64f6c6929b9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
