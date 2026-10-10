@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T14:59:10.955Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6098807352",
+    "node_id": "IC_kwDOQb6kR88AAAABa4RqOA",
+    "url": "https://github.com/openclaw/openclaw/issues/168489#issuecomment-6098807352",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/168489",
+    "pull_request_url": null,
+    "author": "Rvongxay",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T14:57:51Z",
+    "updated_at": "2026-10-10T14:57:51Z",
+    "body_hash": "9dce795e038fc1735bfbc3fee7f96ce46e5508d9f50cb28ce1b27428a1f98b09",
+    "body_excerpt": "Wire-level capture as requested (sanitized; API key redacted; model metadata included). **Setup:** OpenClaw 2026.9.6 (eb377ac), OpenRouter ... level to a reasoning-mandatory endpoint (map `off` → lowest supported non-off effort, or honor the stored session pin on first dispatch).",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://openrouter.ai/api/v1/chat/completions%60"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6098807352",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical evidence documenting API payload variants, response codes, model routing, and retry behavior.",
+      "Includes a concrete fix candidate supported by reproduction results; the API link is contextual, not promotional.",
+      "No solicitation, phishing, unrelated promotion, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
