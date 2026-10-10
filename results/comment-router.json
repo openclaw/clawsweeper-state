@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:12:36.968Z",
+  "updated_at": "2026-10-10T09:12:42.814Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156636:5800105509:2026-10-10T05:02:52Z:clawsweeper_needs_human",
-      "comment_id": "5800105509",
-      "comment_version_key": "5800105509:2026-10-10T05:02:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156636#issuecomment-5800105509",
-      "comment_created_at": "2026-09-23T17:57:37Z",
-      "comment_updated_at": "2026-10-10T05:02:52Z",
-      "comment_body_sha256": "9b825aa32d0cb6217351d223fddddd1897b075203f55cc26c6828a5241c7a843",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156636,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The inspected Windows footer proves prior combined build 3ec9988e, while the reported Telegram scenario exercised combined head 34a3d6ef with additional session/context consumers veri... (sha=05fe3183f45fe1b1841a4d482e4f4c1343609634)",
-      "expected_head_sha": "05fe3183f45fe1b1841a4d482e4f4c1343609634",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:07:20.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/synthetic-context-discovery-20260923",
-        "head_sha": "05fe3183f45fe1b1841a4d482e4f4c1343609634",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162798:5934854366:2026-10-10T05:03:36Z:clawsweeper_needs_human",
       "comment_id": "5934854366",
@@ -33017,6 +32984,53 @@
       "status": "skipped",
       "processed_at": "2026-10-10T09:12:36.968Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168361:6095999090:2026-10-10T09:11:44Z:re_review",
+      "comment_id": "6095999090",
+      "comment_version_key": "6095999090:2026-10-10T09:11:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168361#issuecomment-6095999090",
+      "comment_created_at": "2026-10-10T09:11:44Z",
+      "comment_updated_at": "2026-10-10T09:11:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168361,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:12:41.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-dir-symlink-restart",
+        "head_sha": "274f94f3d3e9e38b8f1ffe1a080c3ffba492cfc1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
