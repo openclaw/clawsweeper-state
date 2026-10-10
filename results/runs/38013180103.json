@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168066",
+  "mode": "autonomous",
+  "run_id": "38013180103",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38013180103",
+  "head_sha": "43e96c4fe318318af9e068f50b5e035f9221eae6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168066.md",
+  "published_at": "2026-10-10T02:08:56.829Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168066",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168066",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the reported preservation gap at preflight main 1f307d61d0f77dfe0c838420b8d2c18d73c0baf5. A narrow fix artifact is prepared for the executor. Implementation and required reproduction are blocked on this read-only host; node_modules is absent. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#168066",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168066",
+      "candidate_fix": null,
+      "reason": "Preserve the authored entry at stale cleanup without changing ownership enforcement or migration policy. Require a failing real-boundary regression before editing."
+    },
+    {
+      "target": "#76707",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct repair and maintainer policy scope; leave open."
+    },
+    {
+      "target": "#78493",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The proposed fix does not repair mixed ownership or redefine repair privileges; leave open."
+    },
+    {
+      "target": "#53187",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine that historical finding for central OpenClaw security handling. Do not mutate the closed PR or expand this repair into its security analysis."
+    },
+    {
+      "target": "#147711",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route the historical finding to central OpenClaw security handling without mutating the PR. The config-preservation repair does not depend on resolving that finding."
+    },
+    {
+      "target": "#150312",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence and regression controls; no closure or merge action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168066",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#168066",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked on this host and must proceed in the executor's writable secretless isolation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "route_security": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 6,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
