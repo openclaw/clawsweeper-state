@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:06:29.196Z",
+  "updated_at": "2026-10-10T03:06:58.326Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163801:5961931650:2026-10-09T22:22:50Z:clawsweeper_needs_human",
-      "comment_id": "5961931650",
-      "comment_version_key": "5961931650:2026-10-09T22:22:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163801#issuecomment-5961931650",
-      "comment_created_at": "2026-10-02T21:42:01Z",
-      "comment_updated_at": "2026-10-09T22:22:50Z",
-      "comment_body_sha256": "e2a63566b08da9de89ed2d6c75695bb56a718e196db2d907f1a71166227ce37f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163801,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The new tests exercise production schema composition and lookup with the shipped IMAP manifest, but the captured body explicitly reports no Gateway or browser session. Add after-fix e...; Review finding: [P2] [P2] Preserve validation constraints from both reference and siblings — src/config/schema.lookup-refs.ts:57-58 - [P2] [P2] Bound total expansion of referenced... (sha=6277c40a794ae6b61c08b2719e821a8fb41c33c6)",
-      "expected_head_sha": "6277c40a794ae6b61c08b2719e821a8fb41c33c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:37:03.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/plugin-schema-local-refs",
-        "head_sha": "6277c40a794ae6b61c08b2719e821a8fb41c33c6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163816:5962358044:2026-10-09T22:23:28Z:clawsweeper_auto_repair",
       "comment_id": "5962358044",
@@ -33563,6 +33530,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168126:6093130873:2026-10-10T03:05:56Z:clawsweeper_auto_merge",
+      "comment_id": "6093130873",
+      "comment_version_key": "6093130873:2026-10-10T03:05:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168126#issuecomment-6093130873",
+      "comment_created_at": "2026-10-10T03:05:56Z",
+      "comment_updated_at": "2026-10-10T03:05:56Z",
+      "comment_body_sha256": "b8a182cbc634c8ac0be8c66c1ae9e9df82b4f0bd62e93515abd7b1b317dd8e3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=a536f82665cf1d2105a0de332469cd7680d5c01d)",
+      "expected_head_sha": "a536f82665cf1d2105a0de332469cd7680d5c01d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T03:06:58.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-168089",
+        "head_sha": "a536f82665cf1d2105a0de332469cd7680d5c01d",
+        "cluster_id": "issue-openclaw-openclaw-168089",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-168089.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
