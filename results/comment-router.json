@@ -2,53 +2,6 @@
   "updated_at": "2026-10-10T05:03:42.400Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:157679:5904755967:2026-09-30T05:30:46Z:re_review",
-      "comment_id": "5904755967",
-      "comment_version_key": "5904755967:2026-09-30T05:30:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/157679#issuecomment-5904755967",
-      "comment_created_at": "2026-09-30T05:30:46Z",
-      "comment_updated_at": "2026-09-30T05:30:46Z",
-      "comment_body_sha256": "4b65c3443017c3aea4daee5c2348bbe8f7fa470683cd5014f554c22a69eaeae7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 157679,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T00:52:36.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-supervisor-guidance",
-        "head_sha": "9c37d92966770d03fff7ce2d5c00e08990323cdc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:157679:5824058359:2026-09-24T23:37:10Z:re_review",
       "comment_id": "5824058359",
       "comment_version_key": "5824058359:2026-09-24T23:37:10Z",
@@ -33878,6 +33831,39 @@
       "status": "skipped",
       "processed_at": "2026-10-10T05:02:00.125Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135328:5497175782:2026-10-10T05:02:47Z:clawsweeper_needs_human",
+      "comment_id": "5497175782",
+      "comment_version_key": "5497175782:2026-10-10T05:02:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135328#issuecomment-5497175782",
+      "comment_created_at": "2026-09-01T16:33:56Z",
+      "comment_updated_at": "2026-10-10T05:02:47Z",
+      "comment_body_sha256": "5f8f01f21660b18fef674cf617229430141cbefb16f8cd354024c1d7125f8336",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135328,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Inspected production-bundle screenshots with the repository mock Gateway demonstrate the earlier desktop default, saved 960px after reload, reset, and mobile containment; the subseque... (sha=6ebb89502306aae6173a0a6e594d9266a97b4ec2)",
+      "expected_head_sha": "6ebb89502306aae6173a0a6e594d9266a97b4ec2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:03:42.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-custodian-configured-width",
+        "head_sha": "6ebb89502306aae6173a0a6e594d9266a97b4ec2",
+        "cluster_id": null,
+        "job_path": null
+      }
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167979:6089884574:2026-10-10T05:02:43Z:clawsweeper_needs_human",
