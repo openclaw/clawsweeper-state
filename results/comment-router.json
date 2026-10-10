@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:48:27.549Z",
+  "updated_at": "2026-10-10T09:48:38.919Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164934:5980765156:2026-10-10T05:26:05Z:clawsweeper_auto_repair",
-      "comment_id": "5980765156",
-      "comment_version_key": "5980765156:2026-10-10T05:26:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/164934#issuecomment-5980765156",
-      "comment_created_at": "2026-10-04T13:56:35Z",
-      "comment_updated_at": "2026-10-10T05:26:05Z",
-      "comment_body_sha256": "d6baaa7e4c14306f392b2e1405db2f9e7c700a359e6f9208a5856e0955b1127f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 164934,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=15504f17a339c2c18e595ffa828a582cbaa2cfab)",
-      "expected_head_sha": "15504f17a339c2c18e595ffa828a582cbaa2cfab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:35:37.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-consult-correlation-clean-v5",
-        "head_sha": "15504f17a339c2c18e595ffa828a582cbaa2cfab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165091:5984118427:2026-10-10T05:13:31Z:clawsweeper_needs_human",
       "comment_id": "5984118427",
@@ -33095,6 +33062,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:1692:6096268125:2026-10-10T09:47:41Z:re_review",
+      "comment_id": "6096268125",
+      "comment_version_key": "6096268125:2026-10-10T09:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/1692#issuecomment-6096268125",
+      "comment_created_at": "2026-10-10T09:47:41Z",
+      "comment_updated_at": "2026-10-10T09:47:41Z",
+      "comment_body_sha256": "31581e9fba7ba23182b008e15dacf82dd7655beacbd69c869d1a4a5eeeab9e3b",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 1692,
+      "author": "freeqaz-openai",
+      "author_id": 323300293,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:48:37.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/oce-remove-obsolete-channel-styles",
+        "head_sha": "f1ed3a67ddaefa836191f06aa4c3f34166643189",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
