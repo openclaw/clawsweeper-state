@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T22:12:48.578Z",
+  "updated_at": "2026-10-10T22:12:49.755Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168478:6098569673:2026-10-10T17:08:19Z:clawsweeper_needs_human",
-      "comment_id": "6098569673",
-      "comment_version_key": "6098569673:2026-10-10T17:08:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168478#issuecomment-6098569673",
-      "comment_created_at": "2026-10-10T14:32:44Z",
-      "comment_updated_at": "2026-10-10T17:08:19Z",
-      "comment_body_sha256": "c44d3d7711f8c366ae5e53aff442a484ab1f0109bfc112ecd70d98c73530b63a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168478,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supplied Gateway SQL telemetry exercises plugin-state operations, and repair receipts support successor preservation, but neither shows a retained V2 r... (sha=3c193b97473a721884afe67dce875193ee5f5638)",
-      "expected_head_sha": "3c193b97473a721884afe67dce875193ee5f5638",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T17:10:44.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sw7b-1",
-        "head_sha": "3c193b97473a721884afe67dce875193ee5f5638",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168546:6100065091:2026-10-10T17:08:54Z:clawsweeper_needs_human",
       "comment_id": "6100065091",
@@ -33113,6 +33080,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168653:6102722582:2026-10-10T22:11:40Z:re_review",
+      "comment_id": "6102722582",
+      "comment_version_key": "6102722582:2026-10-10T22:11:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168653#issuecomment-6102722582",
+      "comment_created_at": "2026-10-10T22:11:40Z",
+      "comment_updated_at": "2026-10-10T22:11:40Z",
+      "comment_body_sha256": "0d852c4dc236a8eebe9365be028ddbf5a08fbbdb05540ad4a58e3c8af6b7ec2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168653,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T22:12:48.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-paired-token",
+        "head_sha": "dded84b33f34516638a4d2cad8b748be58521734",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
