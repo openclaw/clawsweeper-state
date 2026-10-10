@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "38060839938",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38060839938",
+  "head_sha": "c19101a4e1ace67aabfa8e17a7e7ae6e21e06bd9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-10T14:48:23.697Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "No safe repository-only fix is currently supported. Blacksmith must expose a durable pre-worker workflow association and terminal dispatch status. Current main matches the recorded triage; no code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "related",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Resume implementation when Blacksmith provides a supported Testbox-to-workflow binding available before worker registration and preserved through cancellation or admission failure, plus authoritative terminal status. Without that evidence, failed dispatch and slow allocation are indistinguishable. The job explicitly requires stopping without a PR when automation cannot implement safely."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; distinct from the missing pre-worker dispatch association."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed repair and contributor credit."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; exposing existing associations does not recover absent associations."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed observation contract and contributor credit."
+    },
+    {
+      "target": "#2719",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with no remaining action in this cluster."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

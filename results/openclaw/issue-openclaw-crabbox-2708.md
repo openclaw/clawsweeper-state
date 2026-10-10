@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "38057366788"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38057366788"
-head_sha: "43288b03d404df57edc9886bfd3bf3e94b956c47"
+run_id: "38060839938"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38060839938"
+head_sha: "c19101a4e1ace67aabfa8e17a7e7ae6e21e06bd9"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T13:55:05.246Z"
+published_at: "2026-10-10T14:48:23.697Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38057366788](https://github.com/openclaw/clawsweeper/actions/runs/38057366788)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38060839938](https://github.com/openclaw/clawsweeper/actions/runs/38060839938)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Current main still lacks that observation path. No safe Crabbox-only fix was identified; no files changed, tests run, or PR proposed.
+No safe repository-only fix is currently supported. Blacksmith must expose a durable pre-worker workflow association and terminal dispatch status. Current main matches the recorded triage; no code or GitHub changes were made.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation requires a supported Blacksmith pre-worker dispatch association a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | related | Resume implementation when a supported provider contract binds the exact Testbox request to its workflow before worker registration and preserves terminal failure evidence. Guessing runs by workflow/ref/time or treating native completion as settlement would violate the documented ownership guarantees. Keep the issue open; no executable fix artifact is justified yet. |
-| #2669 | keep_closed | skipped | related | Historical context, not an implementation target. |
-| #2670 | keep_closed | skipped | related | Preserve its recovery guarantees. |
-| #2682 | keep_closed | skipped | related | Distinct historical capability request. |
-| #2683 | keep_closed | skipped | related | Does not resolve the missing provider dispatch contract. |
-| #2719 | keep_closed | skipped | independent | Independent historical work. |
+| #2708 | keep_related | blocked | related | Resume implementation when Blacksmith provides a supported Testbox-to-workflow binding available before worker registration and preserved through cancellation or admission failure, plus authoritative terminal status. Without that evidence, failed dispatch and slow allocation are indistinguishable. The job explicitly requires stopping without a PR when automation cannot implement safely. |
+| #2669 | keep_closed | skipped | related | Historical context; distinct from the missing pre-worker dispatch association. |
+| #2670 | keep_closed | skipped | related | Preserve the landed repair and contributor credit. |
+| #2682 | keep_closed | skipped | related | Historical context; exposing existing associations does not recover absent associations. |
+| #2683 | keep_closed | skipped | related | Preserve the landed observation contract and contributor credit. |
+| #2719 | keep_closed | skipped | related | Historical context with no remaining action in this cluster. |
 
 ## Needs Human
 
