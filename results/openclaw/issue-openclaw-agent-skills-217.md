@@ -1,14 +1,14 @@
 ---
 repo: "openclaw/agent-skills"
 cluster_id: "issue-openclaw-agent-skills-217"
-mode: "plan"
-run_id: "38068020950"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38068020950"
-head_sha: "b7e877075650da8e0a74fa0ab2b5c8fc03e35dcb"
+mode: "autonomous"
+run_id: "38071364533"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38071364533"
+head_sha: "49c65085f09de567292d1c145314dc8189612234"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-10-10T16:34:01.810Z"
-canonical: "#217"
+published_at: "2026-10-10T17:24:27.155Z"
+canonical: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_issue: "https://github.com/openclaw/agent-skills/issues/217"
 canonical_pr: null
 actions_total: 4
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 2
 ---
 
 # issue-openclaw-agent-skills-217
 
 Repo: openclaw/agent-skills
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38068020950](https://github.com/openclaw/clawsweeper/actions/runs/38068020950)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38071364533](https://github.com/openclaw/clawsweeper/actions/runs/38071364533)
 
 Workflow conclusion: success
 
 Worker result: needs_human
 
-Canonical: #217
+Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 ## Summary
 
-#217 remains valid on supplied main 621fd3af706efc989154231ade7a4610a59d9460. Its scanner acceptance criteria conflict with current caller-owned scanning policy and need clarification before implementation. No code or GitHub changes were made; baseline skill validation passed.
+#217 remains valid on preflight main 38b67bc23842e6e9c79263225e20500339016dd0, but complete bounded-memory handling requires a cross-stage redesign with an unresolved resource contract. No executable fix artifact or PR was prepared. Frontmatter validation passed; the read-only checkout remains unchanged.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: #217
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #217 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,12 @@ Canonical: #217
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #217 | needs_human | planned | canonical | Clarify scanner acceptance criteria before recommending a PR that claims to satisfy the issue. Changing only file reads would leave downstream buffering unresolved. |
-| #215 | keep_closed | skipped | related | Historical context; no closure or branch repair is appropriate. |
-| #240 | route_security | planned | security_sensitive | Read-only quarantine to central OpenClaw security handling; no mutation recommended. |
-| #287 | keep_closed | skipped | related | The landed partition repair only partially overlaps #217 and does not resolve complete-input buffering. |
+| #217 | needs_human | blocked | needs_human | The implementation spans frozen source/evidence capture, bundle serialization and attribution, prompt planning, and execution/retry/cancellation lifetime management. The recorded resource-contract decision remains unresolved, and no maintainer calibration resolves it. A partial buffering change would not justify the requested closing reference. Leave the canonical issue open. |
+| #215 | keep_closed | skipped | related | Historical scope-contract evidence; no closure or repair action applies. |
+| #240 | route_security | planned | security_sensitive | Quarantine this historical item for central OpenClaw security handling without any GitHub mutation. It does not make #217 security-sensitive. |
+| #287 | keep_closed | skipped | related | Partial capacity improvement; it does not complete #217. |
 
 ## Needs Human
 
-- Confirm whether #217's helper-owned scanner acceptance criteria should be revised to preserve current caller-owned scanning policy. Reintroducing scanning requires a separate explicit maintainer decision and cannot be bundled into this non-security capacity implementation.
+- #217: Resolve the recorded memory and temporary-storage resource contract, including spool lifetime and cleanup during retries and cancellation, before dispatching the cross-stage implementation.
+- #217: Align the reported scan acceptance criteria with current caller-owned scanning policy; any scanner restoration must remain outside this repair lane.
