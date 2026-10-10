@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:54:47.709Z",
+  "updated_at": "2026-10-10T05:55:26.726Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-10-10T01:51:09Z:clawsweeper_auto_repair",
-      "comment_id": "5010052996",
-      "comment_version_key": "5010052996:2026-10-10T01:51:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5010052996",
-      "comment_created_at": "2026-07-18T05:22:08Z",
-      "comment_updated_at": "2026-10-10T01:51:09Z",
-      "comment_body_sha256": "60da98cf1c96a10cad151aa30fec8b06b8c83cc4d583cddd94e9bd7293f82a71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=09aec683e20bde1f3049b724360d35ce04cd3727)",
-      "expected_head_sha": "09aec683e20bde1f3049b724360d35ce04cd3727",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T01:52:05.570Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/comfy-workflow-file-cap",
-        "head_sha": "09aec683e20bde1f3049b724360d35ce04cd3727",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:161814:5909390371:2026-10-10T01:51:08Z:clawsweeper_needs_human",
       "comment_id": "5909390371",
@@ -33462,6 +33429,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164290:6094398875:2026-10-10T05:54:28Z:re_review",
+      "comment_id": "6094398875",
+      "comment_version_key": "6094398875:2026-10-10T05:54:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164290#issuecomment-6094398875",
+      "comment_created_at": "2026-10-10T05:54:28Z",
+      "comment_updated_at": "2026-10-10T05:54:28Z",
+      "comment_body_sha256": "18f98d655337da63c363e7a31b28fe1594feb86a8a70e131a19d9b72e2d0b053",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164290,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T05:55:25.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-token-redaction-account-id",
+        "head_sha": "4bd260e0caeb65a1882b46b24ec3863bc1273832",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
