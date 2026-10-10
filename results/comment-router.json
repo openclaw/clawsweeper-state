@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T10:31:19.268Z",
+  "updated_at": "2026-10-10T10:31:23.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168260:6094440939:2026-10-10T05:59:52Z:clawsweeper_needs_human",
-      "comment_id": "6094440939",
-      "comment_version_key": "6094440939:2026-10-10T05:59:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168260#issuecomment-6094440939",
-      "comment_created_at": "2026-10-10T05:59:52Z",
-      "comment_updated_at": "2026-10-10T05:59:52Z",
-      "comment_body_sha256": "55fa4903fe1d420da95168e010d5a48a4214dd955ce741148d70b6c843576a61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7d5d3949ef2df1cf646af9be49c38e90282e2098)",
-      "expected_head_sha": "7d5d3949ef2df1cf646af9be49c38e90282e2098",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T06:00:52.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/worker-stack-cleanup",
-        "head_sha": "7d5d3949ef2df1cf646af9be49c38e90282e2098",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168234:6094302992:2026-10-10T06:00:11Z:clawsweeper_needs_human",
       "comment_id": "6094302992",
@@ -33622,6 +33589,53 @@
       "status": "skipped",
       "processed_at": "2026-10-10T10:31:19.268Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168298:6096581697:2026-10-10T10:30:30Z:re_review",
+      "comment_id": "6096581697",
+      "comment_version_key": "6096581697:2026-10-10T10:30:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168298#issuecomment-6096581697",
+      "comment_created_at": "2026-10-10T10:30:30Z",
+      "comment_updated_at": "2026-10-10T10:30:30Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168298,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T10:31:22.025Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-session-rollout-snapshot-deadline-wall-clock-102",
+        "head_sha": "12e2e7b63c4dba9b89f4a97cfc6a2ab5782b3c5f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
