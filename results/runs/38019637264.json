@@ -1,0 +1,162 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168130",
+  "mode": "autonomous",
+  "run_id": "38019637264",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38019637264",
+  "head_sha": "f51199a8d817fa8222656fce030f99e5b28f7e87",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168130.md",
+  "published_at": "2026-10-10T04:36:00.306Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168130",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Local source retains per-file Jiti construction and local esmResolve calls, but implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed; no validated branch or PR exists.",
+  "actions": [
+    {
+      "target": "#168130",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168130",
+      "candidate_fix": null,
+      "reason": "A focused repair remains justified by source evidence. The executor must reproduce the mechanism on freshly verified main before editing or publishing."
+    },
+    {
+      "target": "#146993",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closeout action."
+    },
+    {
+      "target": "#155859",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Broader startup and responsiveness failures are not fully covered by this resolver repair."
+    },
+    {
+      "target": "#155911",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing contributor PR and its separate review process; it is not this cluster's canonical fix."
+    },
+    {
+      "target": "#157989",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate I/O and lifecycle repair boundary; leave open."
+    },
+    {
+      "target": "#160485",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Module compilation and repeated evaluation are distinct from capture-resolution fallback."
+    },
+    {
+      "target": "#160959",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate capture-staging and responsiveness boundary; preserve the report."
+    },
+    {
+      "target": "#162514",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Unique platform and recovery details require separate follow-up; no duplicate classification."
+    },
+    {
+      "target": "#166020",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact item's integrity-boundary proposals for central OpenClaw security handling. This is not a finding of a confirmed vulnerability and does not block the unrelated resolver plan."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168130",
+      "candidate_fix": null,
+      "reason": "Hand off a narrow conditional implementation plan to the authorized writable executor; require successful baseline reproduction before edits and publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 6,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 9,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/plugins/plugin-generation-artifact.test.ts: core test [check:changed] src/plugins/plugin-generation-artifact.ts: core production [check:changed] src/plugins/plugin-native-resolution.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main Environment variable count budget config/env-var-count-budget.txt: OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt OPENCLAW_* count 456 exceeds budget 455; update config/env-var-count-budget.txt [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 222ms ok conflict markers 313ms ok line-cap growth ratchet 4.78s failed:1 max-lines suppression ratchet [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 3 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 579 grandfathered suppressions.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#168130",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
