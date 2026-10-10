@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:54:20.561Z",
+  "updated_at": "2026-10-10T05:54:33.702Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168075:6092374379:2026-10-10T01:50:41Z:re_review",
-      "comment_id": "6092374379",
-      "comment_version_key": "6092374379:2026-10-10T01:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168075#issuecomment-6092374379",
-      "comment_created_at": "2026-10-10T01:50:41Z",
-      "comment_updated_at": "2026-10-10T01:50:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168075,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:51:28.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-onboarding-embedding-rows",
-        "head_sha": "af4ad29cb46add856e9b89f88a67e8b424b72ce6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143911:5616705068:2026-10-10T01:51:03Z:clawsweeper_needs_human",
       "comment_id": "5616705068",
@@ -33487,6 +33440,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-update-slice3-build-isolation-20260919",
         "head_sha": "7496e652e4dcc85b7663cd5ac516b941382c998d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-10-10T05:53:17Z:clawsweeper_needs_human",
+      "comment_id": "5075679870",
+      "comment_version_key": "5075679870:2026-10-10T05:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
+      "comment_created_at": "2026-07-24T23:58:02Z",
+      "comment_updated_at": "2026-10-10T05:53:17Z",
+      "comment_body_sha256": "c8a72cb216d12b01d0604862a44e398e5293d11e207a3a46a21844fb24bdd023",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the inspected Teams screenshot and historical deployment reports support multi-bot replies, but do not show revoked-account denial after reload with an...; Review finding: [P2] Preserve the webhook port when selecting environment credentials — extensions/msteams/src/setup-core.ts:365-366 (sha=ca6196a70da6f612699cc2911a42b4647c837d9b)",
+      "expected_head_sha": "ca6196a70da6f612699cc2911a42b4647c837d9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:54:33.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/msteams-multi-account-replacement-20260722",
+        "head_sha": "ca6196a70da6f612699cc2911a42b4647c837d9b",
         "cluster_id": null,
         "job_path": null
       }
