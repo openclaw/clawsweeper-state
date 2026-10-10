@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T12:22:54.189Z",
+  "updated_at": "2026-10-10T12:23:07.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6095242199:2026-10-10T07:44:05Z:re_review",
-      "comment_id": "6095242199",
-      "comment_version_key": "6095242199:2026-10-10T07:44:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6095242199",
-      "comment_created_at": "2026-10-10T07:44:05Z",
-      "comment_updated_at": "2026-10-10T07:44:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T07:57:38.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "9f594e9d7a4f7d8fbb34bb885dbc9c5d70db7346",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168169:6095323351:2026-10-10T07:54:00Z:re_review",
       "comment_id": "6095323351",
@@ -33711,6 +33664,39 @@
         "kind": "pull_request",
         "branch": "fix/slack-control-sigil-links",
         "head_sha": "e68b66b57efbc25dd3698f5cd1877a6607d64521",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168398:6096737260:2026-10-10T12:22:07Z:clawsweeper_needs_human",
+      "comment_id": "6096737260",
+      "comment_version_key": "6096737260:2026-10-10T12:22:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168398#issuecomment-6096737260",
+      "comment_created_at": "2026-10-10T10:51:57Z",
+      "comment_updated_at": "2026-10-10T12:22:07Z",
+      "comment_body_sha256": "e9e75cafa44b10a49103c12d9cf86c7b3d9553fd58a051d6d5ac28e8e09df31c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168398,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: provide a redacted trace through the production Codex request client showing an allowed native request and rejection before transport I/O when its sele... (sha=8420438826e8bfb5ec11e6ba6a45211e618b507f)",
+      "expected_head_sha": "8420438826e8bfb5ec11e6ba6a45211e618b507f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T12:23:07.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/incogp07",
+        "head_sha": "8420438826e8bfb5ec11e6ba6a45211e618b507f",
         "cluster_id": null,
         "job_path": null
       }
