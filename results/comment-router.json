@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T17:07:24.219Z",
+  "updated_at": "2026-10-10T17:07:30.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101866:5390795567:2026-08-24T04:37:13Z:re_review",
-      "comment_id": "5390795567",
-      "comment_version_key": "5390795567:2026-08-24T04:37:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-5390795567",
-      "comment_created_at": "2026-08-24T04:37:13Z",
-      "comment_updated_at": "2026-08-24T04:37:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101866,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T13:45:57.950Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101866:5390873470:2026-08-24T04:49:01Z:re_review",
       "comment_id": "5390873470",
@@ -30853,6 +30826,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/eightctl:119:6021192043:2026-10-10T17:02:51Z:clawsweeper_needs_human",
+      "comment_id": "6021192043",
+      "comment_version_key": "6021192043:2026-10-10T17:02:51Z",
+      "comment_url": "https://github.com/steipete/eightctl/pull/119#issuecomment-6021192043",
+      "comment_created_at": "2026-10-06T16:55:22Z",
+      "comment_updated_at": "2026-10-10T17:02:51Z",
+      "comment_body_sha256": "74fc2bdb08b2cf1bd7d6219997fc4f12719aa8766dc8b28e43ed6d239ffb41b3",
+      "repo": "steipete/eightctl",
+      "issue_number": 119,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The command builder, client and receipt store have synthetic HTTP, mocked-transport and process-crash tests; the full body explicitly supplies no controlled-account result. Attach aut... (sha=15ba0c96d2ba682e99597182a4c43febcefcdb43)",
+      "expected_head_sha": "15ba0c96d2ba682e99597182a4c43febcefcdb43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T17:07:30.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/smart-alarm-thermal-opt-in",
+        "head_sha": "15ba0c96d2ba682e99597182a4c43febcefcdb43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
