@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T08:41:54.170Z",
+  "updated_at": "2026-10-10T08:41:59.254Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167969:6089573875:2026-10-10T04:38:21Z:clawsweeper_needs_human",
-      "comment_id": "6089573875",
-      "comment_version_key": "6089573875:2026-10-10T04:38:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167969#issuecomment-6089573875",
-      "comment_created_at": "2026-10-09T21:29:47Z",
-      "comment_updated_at": "2026-10-10T04:38:21Z",
-      "comment_body_sha256": "48b03f1bd0cdcfce3e3982dc6b3826f2066b3bb47bac95cd4b2fc649e8a4dea5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167969,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: provide redacted terminal output or logs showing an allowed actor-bound local launch and rejection before process creation when its session is replaced...; Review finding: [P2] Carry actor authority into the final local PTY launch — src/gateway/server-methods/terminal.ts:465-467 - [medium] Inactive actor launch boundary remains incom... (sha=52c4bbde9aa3fd0a909979b3aa9dcba8a00ebb5f)",
-      "expected_head_sha": "52c4bbde9aa3fd0a909979b3aa9dcba8a00ebb5f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T04:39:11.941Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/incogp05",
-        "head_sha": "52c4bbde9aa3fd0a909979b3aa9dcba8a00ebb5f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:902:6093755390:2026-10-10T04:38:22Z:clawsweeper_auto_repair",
       "comment_id": "6093755390",
@@ -33103,6 +33070,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168226:6095770325:2026-10-10T08:40:51Z:re_review",
+      "comment_id": "6095770325",
+      "comment_version_key": "6095770325:2026-10-10T08:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168226#issuecomment-6095770325",
+      "comment_created_at": "2026-10-10T08:40:51Z",
+      "comment_updated_at": "2026-10-10T08:40:51Z",
+      "comment_body_sha256": "3621f5973fd61c5b78b3c9eb8456897cca20d05078856a4d69b0e0e1db3ac7ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168226,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T08:41:57.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-doctor-once",
+        "head_sha": "6249a2ebe88ffb74045cb4b9a904f804fcf48291",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
