@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 10, 2026, 12:44 UTC
+Last source update: Oct 10, 2026, 13:01 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Oct 10, 2026, 12:44 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 10, 2026, 12:44 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38050104671) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Oct 10, 2026, 12:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38052880210) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 10, 2026, 12:55 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38052744731) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 10, 2026, 13:01 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38054074892) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 10, 2026, 10:56 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38046644249) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 10, 2026, 12:15 UTC
+Last source update: Oct 10, 2026, 13:03 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1648 | 100% |
-| Run attempts archived | 4888 | audit |
+| Run attempts archived | 4889 | audit |
 | Latest successful clusters | 1236 | 75.0% |
 | Latest failed clusters | 408 | 24.8% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1648 clusters: 416 maintainer action, 451 automation snapshot, 718 intervention needed, 63 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#162398](https://github.com/openclaw/openclaw/issues/162398) is maintainer_input: Quarantine this exact linked PR for central OpenClaw security handling without treating the canonical bug as security work..
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [automerge-openclaw-openclaw-168414](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-168414.md) is automation_failed: validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:cha....
+- Intervention first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) is automation_blocked: Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Inspection of supplied main....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#168412](https://github.com/openclaw/openclaw/pull/168412) is action_planned: A focused repair at RootSidebarShell.contentCard fits established behavior. Proceed only after reproducing on current main and checking f....
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Inspection of supplied main df5e39492c... | Oct 10, 2026, 13:03 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [38054063532](https://github.com/openclaw/clawsweeper/actions/runs/38054063532) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 10, 2026, 12:15 UTC | [automerge-openclaw-openclaw-168414](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-168414.md) | [38048580561](https://github.com/openclaw/clawsweeper/actions/runs/38048580561) |
-| [openclaw/crabbox](https://github.com/openclaw/crabbox) |  | automation_blocked | Implementation is blocked by missing provider evidence: no supported pre-worker Testbox-to-workflow association is established in the supplied arti... | Oct 10, 2026, 11:29 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [38048409668](https://github.com/openclaw/clawsweeper/actions/runs/38048409668) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, extensions, extensi... | Oct 10, 2026, 11:18 UTC | [issue-openclaw-openclaw-168366](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-168366.md) | [38041745857](https://github.com/openclaw/clawsweeper/actions/runs/38041745857) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 10, 2026, 10:40 UTC | [automerge-openclaw-openclaw-166269](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-166269.md) | [38042688526](https://github.com/openclaw/clawsweeper/actions/runs/38042688526) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | Oct 10, 2026, 06:43 UTC | [issue-openclaw-openclaw-168207](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-168207.md) | [38026288974](https://github.com/openclaw/clawsweeper/actions/runs/38026288974) |
