@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T11:12:49.180Z",
+  "updated_at": "2026-10-10T11:13:25.546Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168259:6094667111:2026-10-10T06:30:12Z:re_review",
-      "comment_id": "6094667111",
-      "comment_version_key": "6094667111:2026-10-10T06:30:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168259#issuecomment-6094667111",
-      "comment_created_at": "2026-10-10T06:30:12Z",
-      "comment_updated_at": "2026-10-10T06:30:12Z",
-      "comment_body_sha256": "356290bb538e3ee94355374fb58c7807bff07308f9e2a307b7f0c7c653b74295",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168259,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review — both findings are fixed in c3059da295f4cfaf86d9352348ed5428d0c5e8f0: policy-aware default preserves the chosen personal account, and auto uses the destination runtime description. required-worker conflicts are composed with precedence and transition regressions. each regression failed before repair; 250 focused tests and three mocked browser scenarios pass. fresh canonical p0/p1 autoreview is scoped-clean. updated body retains the exact remaining baseline/check limitations without claiming green ci",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T06:31:11.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/agentsapi-environment-picker",
-        "head_sha": "c3059da295f4cfaf86d9352348ed5428d0c5e8f0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168267:6094668519:2026-10-10T06:30:24Z:clawsweeper_needs_human",
       "comment_id": "6094668519",
@@ -33669,6 +33622,39 @@
         "kind": "pull_request",
         "branch": "round9-deps",
         "head_sha": "923e4a784369568bdcba73aabaeeaa3ccaafff01",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168376:6096408327:2026-10-10T11:12:29Z:clawsweeper_needs_human",
+      "comment_id": "6096408327",
+      "comment_version_key": "6096408327:2026-10-10T11:12:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168376#issuecomment-6096408327",
+      "comment_created_at": "2026-10-10T10:07:01Z",
+      "comment_updated_at": "2026-10-10T11:12:29Z",
+      "comment_body_sha256": "c6eefdee4c467d23ec525203c9fdce3a99dabd5a61dc4657feb666b69ce514ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168376,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect check-test-types-core-4 diagnostics, repair any diff-caused error, or establish unchanged failing inputs and matching baseline evidence. (sha=365cd7f61e688edb96d136953a31a549a5b62531)",
+      "expected_head_sha": "365cd7f61e688edb96d136953a31a549a5b62531",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T11:13:25.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "solid2/p1-02b",
+        "head_sha": "365cd7f61e688edb96d136953a31a549a5b62531",
         "cluster_id": null,
         "job_path": null
       }
