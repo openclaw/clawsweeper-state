@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T21:47:18.551Z",
+  "updated_at": "2026-10-10T21:47:38.467Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168517:6099693528:2026-10-10T16:43:05Z:clawsweeper_needs_human",
-      "comment_id": "6099693528",
-      "comment_version_key": "6099693528:2026-10-10T16:43:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168517#issuecomment-6099693528",
-      "comment_created_at": "2026-10-10T16:28:44Z",
-      "comment_updated_at": "2026-10-10T16:43:05Z",
-      "comment_body_sha256": "732a44169708e4399104e0747c1f69eaa4e64970d1a6e84d4e95a027371e2aa7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168517,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ce1a8829d59d1f09820ce6f5a302234783609239)",
-      "expected_head_sha": "ce1a8829d59d1f09820ce6f5a302234783609239",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T16:45:10.299Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-integrity-check-once-at-admission",
-        "head_sha": "ce1a8829d59d1f09820ce6f5a302234783609239",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98662:4856451783:2026-10-10T16:44:52Z:clawsweeper_auto_repair",
       "comment_id": "4856451783",
@@ -33035,6 +33002,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167796:6100557972:2026-10-10T21:46:44Z:re_review",
+      "comment_id": "6100557972",
+      "comment_version_key": "6100557972:2026-10-10T21:46:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167796#issuecomment-6100557972",
+      "comment_created_at": "2026-10-10T18:03:06Z",
+      "comment_updated_at": "2026-10-10T21:46:44Z",
+      "comment_body_sha256": "fa5cb44d0bcfa7e6babeb812454caeb0bb0b97b98af1abacd4f805a9a8ae0680",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167796,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T21:47:37.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/heartbeat-s3-land-20261009",
+        "head_sha": "c8152a8a7097478cdbb9c9c9cb88abd150f9cc14",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
