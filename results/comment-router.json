@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:26:32.239Z",
+  "updated_at": "2026-10-10T02:26:46.612Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167985:6090150492:2026-10-09T22:15:24Z:clawsweeper_needs_human",
-      "comment_id": "6090150492",
-      "comment_version_key": "6090150492:2026-10-09T22:15:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167985#issuecomment-6090150492",
-      "comment_created_at": "2026-10-09T22:15:24Z",
-      "comment_updated_at": "2026-10-09T22:15:24Z",
-      "comment_body_sha256": "587d8f11a4956195425151215808d0d8bace314a18330934124b96e332e8e490",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167985,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The body reports successful Android use of a local 2026.9.7 patch, but provides no observable runtime evidence tying the changed URL resolver to /controlui, proxy-hosted Mini App auth... (sha=bf29ac62de84446618b6dd8b63a0cfc133842c4d)",
-      "expected_head_sha": "bf29ac62de84446618b6dd8b63a0cfc133842c4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:16:29.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-miniapp-public-origin",
-        "head_sha": "bf29ac62de84446618b6dd8b63a0cfc133842c4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:166948:6090159241:2026-10-09T22:16:08Z:re_review",
       "comment_id": "6090159241",
@@ -33109,6 +33076,53 @@
         "kind": "pull_request",
         "branch": "feat/session-channel-visibility",
         "head_sha": "f003cf7c795e40be0bdb8b4a30b569005770cea5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164783:6092708301:2026-10-10T02:25:53Z:re_review",
+      "comment_id": "6092708301",
+      "comment_version_key": "6092708301:2026-10-10T02:25:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164783#issuecomment-6092708301",
+      "comment_created_at": "2026-10-10T02:25:53Z",
+      "comment_updated_at": "2026-10-10T02:25:53Z",
+      "comment_body_sha256": "6d618f84172a2e54763879d1eef8b5eea19eab1f0096a02805e275eab405f457",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164783,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T02:26:45.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/device-pair-approve-authz-parity",
+        "head_sha": "263934d1a3e42727a22552a3d65831c41028576d",
         "cluster_id": null,
         "job_path": null
       },
