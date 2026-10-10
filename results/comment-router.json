@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T16:46:47.960Z",
+  "updated_at": "2026-10-10T16:48:10.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3811:6070301014:2026-10-08T22:27:16Z:re_review",
-      "comment_id": "6070301014",
-      "comment_version_key": "6070301014:2026-10-08T22:27:16Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3811#issuecomment-6070301014",
-      "comment_created_at": "2026-10-08T22:27:16Z",
-      "comment_updated_at": "2026-10-08T22:27:16Z",
-      "comment_body_sha256": "6205a1c757b0de4cfaff4c2b2b1bc4e361b5d5503581b356b8f37bb6a3c0fcff",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3811,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T13:35:59.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f028-skills-sh-mirror-identity",
-        "head_sha": "1519ebbc32c654cc4529aef6b5199854a6b6ff7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3811:5822605422:2026-10-10T13:35:13Z:clawsweeper_needs_human",
       "comment_id": "5822605422",
@@ -30896,6 +30849,39 @@
         "kind": "pull_request",
         "branch": "steipete/reclaim-hang-20261010",
         "head_sha": "5545fc7d6968bca16ddb43d5b8edf298cc7ffe9e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168417:6097116380:2026-10-10T16:47:10Z:clawsweeper_needs_human",
+      "comment_id": "6097116380",
+      "comment_version_key": "6097116380:2026-10-10T16:47:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168417#issuecomment-6097116380",
+      "comment_created_at": "2026-10-10T11:40:40Z",
+      "comment_updated_at": "2026-10-10T16:47:10Z",
+      "comment_body_sha256": "9c340ba6a60acc2210b2fa3ecc625283664fb1c1c51f1e24297e78853e5e4330",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168417,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: supplied CLI/Gateway routing and persistence evidence exercises allowed requests, but config.state.mutate still needs production non-admin denial and q... (sha=cbf598b43a2316e67757c32bc5220fba905afea3)",
+      "expected_head_sha": "cbf598b43a2316e67757c32bc5220fba905afea3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T16:48:10.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ow2",
+        "head_sha": "cbf598b43a2316e67757c32bc5220fba905afea3",
         "cluster_id": null,
         "job_path": null
       }
