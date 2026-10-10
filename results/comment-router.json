@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:13:20.668Z",
+  "updated_at": "2026-10-10T20:13:36.791Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168473:6098672884:2026-10-10T14:43:10Z:re_review",
-      "comment_id": "6098672884",
-      "comment_version_key": "6098672884:2026-10-10T14:43:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168473#issuecomment-6098672884",
-      "comment_created_at": "2026-10-10T14:43:10Z",
-      "comment_updated_at": "2026-10-10T14:43:10Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168473,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T14:47:26.843Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "solid2/p2-a2ui",
-        "head_sha": "868c62b7ec80295e677b62f06daebc14e88ff793",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168488:6098674366:2026-10-10T14:43:19Z:re_review",
       "comment_id": "6098674366",
@@ -33211,6 +33164,39 @@
       "status": "skipped",
       "processed_at": "2026-10-10T20:13:20.668Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:433:6101722440:2026-10-10T20:12:46Z:clawsweeper_needs_human",
+      "comment_id": "6101722440",
+      "comment_version_key": "6101722440:2026-10-10T20:12:46Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/433#issuecomment-6101722440",
+      "comment_created_at": "2026-10-10T20:12:46Z",
+      "comment_updated_at": "2026-10-10T20:12:46Z",
+      "comment_body_sha256": "6236c6e35d7093e270edac0108eb77b113ae438584b5ef9e533daa4039bbaf8c",
+      "repo": "openclaw/mcporter",
+      "issue_number": 433,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Evidence exercises path discovery and file reading through loadRawConfig with a mocked home directory, but does not show the shipped CLI reading and mutating the intended file for '--... (sha=87d86d019700283b1ad0b09b5088eb579792024c)",
+      "expected_head_sha": "87d86d019700283b1ad0b09b5088eb579792024c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T20:13:36.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/explicit-config-home-expansion",
+        "head_sha": "87d86d019700283b1ad0b09b5088eb579792024c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
