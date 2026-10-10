@@ -2,15 +2,15 @@
 repo: "openclaw/esp-openclaw-node"
 cluster_id: "issue-openclaw-esp-openclaw-node-67"
 mode: "autonomous"
-run_id: "38084990928"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38084990928"
-head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
+run_id: "38096456992"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38096456992"
+head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T20:48:34.124Z"
+published_at: "2026-10-10T23:54:33.101Z"
 canonical: "https://github.com/openclaw/esp-openclaw-node/issues/67"
 canonical_issue: "https://github.com/openclaw/esp-openclaw-node/issues/67"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/esp-openclaw-node/pull/68"
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/esp-openclaw-node
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38084990928](https://github.com/openclaw/clawsweeper/actions/runs/38084990928)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38096456992](https://github.com/openclaw/clawsweeper/actions/runs/38096456992)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/esp-openclaw-node/issues/67
 
 ## Summary
 
-No additional PR is justified. Current main contains #68's confirmed handshake-deadline repair. The remaining allocation failure and reset-free recovery concerns lack a current-main reproduction and require hardware evidence. Keep #67 open; no code or GitHub mutations were made.
+No new PR is justified yet. Current main contains #68's confirmed connection-deadline repair. The remaining customized-firmware allocation failure and reset-free recovery lack a post-fix reproduction. Keep #67 open pending hardware evidence; no code or GitHub mutations were made.
 
 ## Impact
 
@@ -66,9 +66,9 @@ No additional PR is justified. Current main contains #68's confirmed handshake-d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67 | keep_canonical | planned | canonical | Implementation is blocked by insufficient evidence of a remaining upstream defect. Capture serial before a controlled Gateway restart on current main without flashing/resetting during the test, verify a fresh handshake and device.status, and compare stock versus customized firmware. Isolate any remaining allocation failure before choosing another patch. |
-| #64 | keep_closed | skipped | related | Historical context only. |
-| #68 | keep_closed | skipped | related | Already merged partial repair; no further action. |
+| #67 | keep_canonical | planned | canonical | Implementation is blocked by missing post-fix reproduction, not an unresolved product decision. Capture serial before a controlled Gateway restart on current main, verify a fresh handshake and device.status without resetting, and compare stock with customized firmware before selecting another patch. |
+| #64 | keep_closed | skipped | related | Historical related context; no closure or runtime redesign is warranted. |
+| #68 | keep_closed | skipped | related | Preserve the landed repair and its existing contributor attribution; do not duplicate it or treat partial coverage as complete resolution of #67. |
 
 ## Needs Human
 
