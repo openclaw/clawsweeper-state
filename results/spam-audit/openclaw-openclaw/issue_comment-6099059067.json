@@ -1,6 +1,6 @@
 {
   "kind": "spam_scan_audit",
-  "generated_at": "2026-10-10T15:28:21.981Z",
+  "generated_at": "2026-10-10T15:49:40.411Z",
   "model": "internal",
   "status": "audit_only",
   "action": "none",
@@ -14,16 +14,16 @@
     "author": "edosulai",
     "author_association": "NONE",
     "created_at": "2026-10-10T15:24:03Z",
-    "updated_at": "2026-10-10T15:24:03Z",
-    "body_hash": "0814f53cac35d62713cad7f41048fce9ea884319ec1d8d571bc2a636d0ae202c",
-    "body_excerpt": "## Real behavior proof Tested on macOS 27.0.1, OpenClaw.app 2026.9.9, local gateway on `:18789`. Device names redacted. **Before** (stock  ... r than a full build of this branch, the two-line diff from 2949c337 was applied to the shipped `dist` bundle for the test, then reverted.",
+    "updated_at": "2026-10-10T15:48:27Z",
+    "body_hash": "049c6cea11f68ce1337c524997f6b49576635cc97fe4412b54c98b2394a2bdb1",
+    "body_excerpt": "## Real behavior proof macOS 27.0.1, OpenClaw.app 2026.9.9, local gateway on `:18789`. Hostnames renamed to `mac-host` in the screenshots; ... W_STATE_DIR`), since `main` wants an agent-DB schema migration the shipped 2026.9.9 build doesn't have. The live install was not touched.",
     "minimized_reason": null
   },
   "deterministic": {
     "signals": [],
     "urls": [
-      "https://raw.githubusercontent.com/edosulai/openclaw/pr-168441-proof/before.png",
-      "https://raw.githubusercontent.com/edosulai/openclaw/pr-168441-proof/after.png"
+      "https://raw.githubusercontent.com/edosulai/openclaw/50e3a2f1ae47809120a2f32bb593ef05917c83dc/before.png",
+      "https://raw.githubusercontent.com/edosulai/openclaw/50e3a2f1ae47809120a2f32bb593ef05917c83dc/after.png"
     ]
   },
   "model_result": {
@@ -31,7 +31,9 @@
     "spam_signal": "none",
     "confidence": 0.99,
     "reasons": [
-      "On-topic before-and-after verification of a pairing UI fix; linked screenshots provide project evidence."
+      "On-topic technical validation comparing stock and branch g ... ior, with build details and system-presence observations.",
+      "GitHub-hosted screenshots support the reported before-and- ... d state-directory notes provide relevant testing context.",
+      "No solicitation, unrelated promotion, phishing, or abuse."
     ],
     "should_investigate": false
   },
