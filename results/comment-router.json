@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:50:42.798Z",
+  "updated_at": "2026-10-10T06:50:53.564Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141326:6092998530:2026-10-10T02:51:17Z:re_review",
-      "comment_id": "6092998530",
-      "comment_version_key": "6092998530:2026-10-10T02:51:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141326#issuecomment-6092998530",
-      "comment_created_at": "2026-10-10T02:51:17Z",
-      "comment_updated_at": "2026-10-10T02:51:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141326,
-      "author": "hugenshen",
-      "author_id": 16300669,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:52:11.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tlon-upload-content-disposition",
-        "head_sha": "9e4dfc48600f962e1ff7b1fe802410af7289a115",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:160089:6093015193:2026-10-10T02:53:08Z:re_review",
       "comment_id": "6093015193",
@@ -33326,6 +33279,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1473:5787349263:2026-10-10T06:49:59Z:clawsweeper_needs_human",
+      "comment_id": "5787349263",
+      "comment_version_key": "5787349263:2026-10-10T06:49:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1473#issuecomment-5787349263",
+      "comment_created_at": "2026-09-23T01:23:08Z",
+      "comment_updated_at": "2026-10-10T06:49:59Z",
+      "comment_body_sha256": "66391aba6e1e4d0acb24ce09cf785d5908bbbcfc6eecb023804aaa4a3a204271",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Establish whether the native-publication UI failure reproduces on the base, or identify its causal connection to this diff, before landing. (sha=3d9b242b5f4407805c42c0f9ce50665e2482b065)",
+      "expected_head_sha": "3d9b242b5f4407805c42c0f9ce50665e2482b065",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:50:53.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-context-footer-usage-1433",
+        "head_sha": "3d9b242b5f4407805c42c0f9ce50665e2482b065",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
