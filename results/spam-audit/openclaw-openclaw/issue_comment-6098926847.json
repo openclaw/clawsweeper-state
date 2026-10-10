@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T15:11:29.637Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6098926847",
+    "node_id": "IC_kwDOQb6kR88AAAABa4Y8_w",
+    "url": "https://github.com/openclaw/openclaw/issues/166651#issuecomment-6098926847",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/166651",
+    "pull_request_url": null,
+    "author": "AmarkFox",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T15:10:14Z",
+    "updated_at": "2026-10-10T15:10:14Z",
+    "body_hash": "00f6c57648db9af8db2fbab55752b2cc42c09b24bae0333f4643438aaefec6c0",
+    "body_excerpt": "The same failure also happens on the Chat Completions path, when Bedrock is reached through a LiteLLM proxy (`api: \"openai-completions\"`,  ... euse the finalized run's system prompt and tools) would also stop this request from being a full cache miss, but that is a larger change.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [],
+    "urls": [
+      "https://github.com/AmarkFox/openclaw/commit/80d3fb4abd42c240d2b614fb45654c7a6a82e9ad"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6098926847",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical report describing a transport-specific failure, observed errors, and evidence of a working change.",
+      "Offers scoped tests and asks maintainers whether to extend an existing fix or open a separate PR.",
+      "The GitHub commit link is contextual project evidence; no  ... tion, unrelated promotion, phishing, or abuse is present."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
