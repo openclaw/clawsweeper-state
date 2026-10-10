@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-167923"
-mode: "autonomous"
-run_id: "37978344196"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37978344196"
-head_sha: "271574b75b1d32480f8d9bd96f6c0e75705e6ac6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-09T19:16:56.758Z"
-canonical: "https://github.com/openclaw/openclaw/issues/167923"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/167923"
+mode: "plan"
+run_id: "38012082137"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38012082137"
+head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T01:12:54.473Z"
+canonical: "#167923"
+canonical_issue: "#167923"
 canonical_pr: null
-actions_total: 5
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37978344196](https://github.com/openclaw/clawsweeper/actions/runs/37978344196)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38012082137](https://github.com/openclaw/clawsweeper/actions/runs/38012082137)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/167923
+Canonical: #167923
 
 ## Summary
 
-Confirmed the staged-manifest/full-lockfile mismatch on preflight main 590a0257d137ea43828151481a2fc47f5e73783e. Prepared a narrow fix artifact. Actual reproduction, implementation, and validation are blocked by the read-only filesystem, denied Docker daemon access, and absent checkout dependencies. No code or GitHub state changed.
+Already fixed in the supplied main checkout. Keep the issue closed; no implementation PR is needed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,7 @@ Confirmed the staged-manifest/full-lockfile mismatch on preflight main 590a0257d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167923 | fix_needed | planned | canonical | The reported narrow packaging defect remains supported by current source. A writable, Docker-capable executor must reproduce it before editing; the issue stays open. |
-| #103629 | keep_closed | skipped | related | Historical Docker packaging context, not a surviving fix candidate or mutation target. |
-| #167411 | keep_closed | skipped | related | Toolchain provenance only; no dependency rollback, historical PR repair, or closure is proposed. |
-| #46 | keep_closed | skipped | independent | Unrelated historical context. |
-| cluster:issue-openclaw-openclaw-167923 | build_fix_artifact | planned |  | A narrow executor handoff is appropriate without a maintainer product decision. Publication must wait for reproduction and successful repair validation. |
+| #167923 | keep_closed | skipped | canonical | The requested repair is present on supplied main. No changes or GitHub mutations are warranted. Docker builds and tests were not rerun; runtime validation is attributed to the hydrated maintainer comment. |
 
 ## Needs Human
 
