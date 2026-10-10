@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:43:04.089Z",
+  "updated_at": "2026-10-10T01:43:11.870Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155804:5779654069:2026-10-09T21:05:36Z:clawsweeper_auto_repair",
-      "comment_id": "5779654069",
-      "comment_version_key": "5779654069:2026-10-09T21:05:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155804#issuecomment-5779654069",
-      "comment_created_at": "2026-09-22T15:55:44Z",
-      "comment_updated_at": "2026-10-09T21:05:36Z",
-      "comment_body_sha256": "64855de1483fd9a8f78be301b3f423f1e5a3f7a6044e9558631ceb7a70cdc1d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155804,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=1b19f2d20b428b1d1f37e2be1b015626daf376ef)",
-      "expected_head_sha": "1b19f2d20b428b1d1f37e2be1b015626daf376ef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T21:24:15.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/generated-media-retry-custody",
-        "head_sha": "1b19f2d20b428b1d1f37e2be1b015626daf376ef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155832:5780114075:2026-10-09T21:06:35Z:clawsweeper_auto_repair",
       "comment_id": "5780114075",
@@ -32942,6 +32909,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168062:6092299367:2026-10-10T01:42:12Z:re_review",
+      "comment_id": "6092299367",
+      "comment_version_key": "6092299367:2026-10-10T01:42:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168062#issuecomment-6092299367",
+      "comment_created_at": "2026-10-10T01:42:12Z",
+      "comment_updated_at": "2026-10-10T01:42:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168062,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:43:10.582Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-partial-reasoning-order",
+        "head_sha": "981bfba325706c4bf334db7714476970e95b1204",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
