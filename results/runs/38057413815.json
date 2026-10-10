@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-167982",
+  "mode": "plan",
+  "run_id": "38057413815",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38057413815",
+  "head_sha": "43288b03d404df57edc9886bfd3bf3e94b956c47",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-167982.md",
+  "published_at": "2026-10-10T13:56:04.408Z",
+  "canonical": "#167982",
+  "canonical_issue": "#167982",
+  "canonical_pr": null,
+  "summary": "Plan one narrow producer repair for the canonical command-dispatch bug. Checkout matches preflight main 62e4695c93f773fe1b612bb0ff5e53e350f0d39e. Source inspection supports the reported workspace mismatch; runtime reproduction, implementation, tests, build, review, and Telegram proof remain pending. No mutations performed.",
+  "actions": [
+    {
+      "target": "#167982",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#167982",
+      "candidate_fix": null,
+      "reason": "A focused bug-only repair is supported. Establish a failing production-startup-to-scoped-dispatch regression before editing; stop if it does not reproduce on the executor's latest main."
+    },
+    {
+      "target": "#142336",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167982",
+      "candidate_fix": null,
+      "reason": "Related Telegram behavior with a distinct failure mechanism; context only for this repair."
+    },
+    {
+      "target": "#159001",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#167982",
+      "candidate_fix": null,
+      "reason": "Shared comparison area does not establish identical scope or remaining work. Preserve as separate related work."
+    },
+    {
+      "target": "#142340",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "Historical collision context; already closed."
+    },
+    {
+      "target": "#161267",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#167982",
+      "candidate_fix": null,
+      "reason": "Historical ownership and lifecycle evidence, not an open repair candidate or proof this issue is fixed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
