@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38069573235"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38069573235"
-head_sha: "b7e877075650da8e0a74fa0ab2b5c8fc03e35dcb"
+run_id: "38077766878"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38077766878"
+head_sha: "49c65085f09de567292d1c145314dc8189612234"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T16:58:10.883Z"
+published_at: "2026-10-10T18:59:17.664Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38069573235](https://github.com/openclaw/clawsweeper/actions/runs/38069573235)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38077766878](https://github.com/openclaw/clawsweeper/actions/runs/38077766878)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 ## Summary
 
-The capability gap remains on supplied main d7d7e09f3d555ef742088c6f4f456b73caae6234. Implementation is blocked: this checkout is read-only on Linux, and no macOS receiver-validation path is available. No code changes or GitHub mutations were made.
+#922 remains reproducible in source on main e59c220d6ea74201028e691b84eb26501ffc21ed. No receiver-proven implementation is available from the inspected evidence. Implementation is blocked by the read-only Linux environment and unavailable macOS validation transport. #922 is retained without an executable fix action because a safe implementation cannot be specified from the provided artifacts. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ The capability gap remains on supplied main d7d7e09f3d555ef742088c6f4f456b73caae
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | keep_related | skipped | related | Keep the unresolved issue open as the canonical investigation thread. Downgraded the blocked fix action to a non-mutating classification because the supplied artifacts establish no receiver-proven replacement mechanism; an executable fix artifact would prescribe speculative dispatch behavior contradicted by retained native trials. |
-| #916 | keep_closed | skipped | related | Retain the unsuccessful proposal and contributor investigation as historical evidence. |
-| #923 | keep_closed | skipped | related | Merged adjacent presentation work does not resolve #922. |
-| #926 | keep_closed | skipped | related | Merged diagnostic work is distinct from the remaining receiver-delivery gap. |
-| #927 | keep_closed | skipped | related | Merged typing-receipt work does not resolve #922. |
+| #922 | keep_related | blocked | related | The gap is real, but merely enabling the existing native route repeats an unsuccessful proposal. A narrowly qualified implementation cannot be established or validated from the provided artifacts in this environment. Retain the issue open without scheduling a fix. |
+| #916 | keep_closed | skipped | related | Historical proposal; not a viable fix or an open repair target. |
+| #923 | keep_closed | skipped | related | Adjacent landed work does not satisfy #922. |
+| #926 | keep_closed | skipped | related | Adjacent landed diagnostic fix does not satisfy #922. |
+| #927 | keep_closed | skipped | related | Adjacent landed receipt fix does not satisfy #922. |
 
 ## Needs Human
 
