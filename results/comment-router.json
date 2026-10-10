@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:04:41.898Z",
+  "updated_at": "2026-10-10T09:05:28.030Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168181:6093697685:2026-10-10T04:49:48Z:clawsweeper_needs_human",
-      "comment_id": "6093697685",
-      "comment_version_key": "6093697685:2026-10-10T04:49:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168181#issuecomment-6093697685",
-      "comment_created_at": "2026-10-10T04:19:38Z",
-      "comment_updated_at": "2026-10-10T04:49:48Z",
-      "comment_body_sha256": "57c4d4981fb1e610e624e10504e85b95445a005cf126fb5248787fdc77d1b0d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168181,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=77310579857f722c70b206392486c4694ab5cf17)",
-      "expected_head_sha": "77310579857f722c70b206392486c4694ab5cf17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T04:56:33.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/widget-state-retention",
-        "head_sha": "77310579857f722c70b206392486c4694ab5cf17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168194:6093793671:2026-10-10T04:51:59Z:clawsweeper_needs_human",
       "comment_id": "6093793671",
@@ -33115,6 +33082,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:164051:6095944379:2026-10-10T09:04:30Z:re_review",
+      "comment_id": "6095944379",
+      "comment_version_key": "6095944379:2026-10-10T09:04:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/164051#issuecomment-6095944379",
+      "comment_created_at": "2026-10-10T09:04:30Z",
+      "comment_updated_at": "2026-10-10T09:04:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 164051,
+      "author": "MoerAI",
+      "author_id": 26067127,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:05:26.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/consolidated-memory-budget-compaction",
+        "head_sha": "5f70c6640ef0c690031c3ecc40c705c69d3d122d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
