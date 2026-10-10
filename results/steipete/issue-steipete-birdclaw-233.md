@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "37981630582"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37981630582"
-head_sha: "d1d10cd28bfe4996db78485991ab483246dd462e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-09T19:43:30.622Z"
-canonical: "https://github.com/steipete/birdclaw/issues/233"
-canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
+run_id: "38012079793"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38012079793"
+head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T01:12:17.843Z"
+canonical: "#233"
+canonical_issue: "#233"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37981630582](https://github.com/openclaw/clawsweeper/actions/runs/37981630582)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38012079793](https://github.com/openclaw/clawsweeper/actions/runs/38012079793)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/steipete/birdclaw/issues/233
+Canonical: #233
 
 ## Summary
 
-Verified the defect on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow fix artifact. Implementation is blocked by read-only filesystem access, missing Bun/dependencies, and failed GitHub DNS. No files or GitHub items were changed; no validation passed.
+Plan only: #233 remains valid on supplied main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow repair is appropriate. No files or GitHub state changed; tests and real-setup validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Verified the defect on supplied main SHA 2f81941b308bd99d38c4608d2d241bdbe13135a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The source-proven defect remains present, the implementation scope is bounded, and #233 is the canonical repair request. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Planning is complete; a writable, network-enabled executor with the repository's Bun toolchain must implement and validate the artifact. |
-| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | PR readiness cannot be claimed until retained work is inspected, implementation completes, and required validation and recovery evidence are captured. |
+| #233 | fix_needed | planned | canonical | The defect and recovery gaps remain identifiable from current source. Emit a scoped fix artifact for the executor; closure and merge are prohibited by this job. |
 
 ## Needs Human
 
