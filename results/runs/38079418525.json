@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-83354",
+  "mode": "autonomous",
+  "run_id": "38079418525",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38079418525",
+  "head_sha": "eb06944825f20cff7f6252883985bc59538f1724",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-83354.md",
+  "published_at": "2026-10-10T20:21:53.537Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/83354",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/83354",
+  "canonical_pr": null,
+  "summary": "Reproduced Configure's disabled-unit misclassification through the actual function with in-memory dependency fixtures. Prepared a narrow fix artifact. Implementation is blocked by the read-only filesystem; dependencies are absent and the user-systemd bus is inaccessible. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#83354",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Bug reproduced; this worker cannot write the regression or implementation under the enforced read-only filesystem."
+    },
+    {
+      "target": "#165674",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open; do not add suppression, masking, flags, or update policy to this fix."
+    },
+    {
+      "target": "#144153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Historical source evidence only; no closure or branch-repair action."
+    },
+    {
+      "target": "#91221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context does not fix Configure's disabled-unit menu bypass."
+    },
+    {
+      "target": "#83330",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No remaining work in this cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-83354",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Concrete handoff for the deterministic executor; no direct GitHub mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
