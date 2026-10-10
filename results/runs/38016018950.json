@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168089",
+  "mode": "autonomous",
+  "run_id": "38016018950",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38016018950",
+  "head_sha": "78bc1ce725062c31a44cf544ef36120d9b5c663a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168089.md",
+  "published_at": "2026-10-10T03:05:37.505Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168089",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168089",
+  "canonical_pr": null,
+  "summary": "Confirmed all six missing teardown calls on preflight main 0bff78b03b47135795a1263ef94d4772b1bdad08. Narrow fix artifact prepared. Implementation and required Windows reproduction are blocked by this read-only Linux environment; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#168089",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168089",
+      "candidate_fix": null,
+      "reason": "The bounded fixture defect remains present in current source; runtime reproduction must precede editing."
+    },
+    {
+      "target": "#166352",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate root cause and implementation surface; retain its existing review path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168089",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#168089",
+      "candidate_fix": null,
+      "reason": "Provide the executor a concrete, credited repair plan while preserving the mandatory reproduction gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/168126",
+      "branch": "clawsweeper/issue-openclaw-openclaw-168089",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/168126",
+      "commit": "a536f82665cf1d2105a0de332469cd7680d5c01d",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#168089",
+      "pr": "https://github.com/openclaw/openclaw/pull/168126",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/168126",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#168126",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix: close session databases before model directive fixture removal",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

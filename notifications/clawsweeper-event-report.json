@@ -1,15 +1,37 @@
 {
   "version": 1,
-  "generated_at": "2026-10-10T03:04:41.885Z",
+  "generated_at": "2026-10-10T03:05:42.308Z",
   "input": "repair-apply-report.json",
-  "run_record": null,
+  "run_record": "results/runs/38016018950.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "38018615332",
-  "considered": 0,
-  "pending": 0,
+  "run_id": "38016018950",
+  "considered": 1,
+  "pending": 1,
   "sent": 0,
-  "failed": 0,
+  "failed": 1,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.fix_pr_opened:openclaw/openclaw:#168126:open_fix_pr:opened:a536f82665cf1d2105a0de332469cd7680d5c01d",
+      "type": "clawsweeper.fix_pr_opened",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#168126",
+      "title": null,
+      "action": "open_fix_pr",
+      "event_status": "opened",
+      "status": "failed",
+      "reason": "OpenClaw delivery failed",
+      "run_id": "38016018950",
+      "cluster_id": "issue-openclaw-openclaw-168089",
+      "hook_run_id": "96dcae81-e1d3-41d9-93c9-9c07fc7bd6f7",
+      "delivery": {
+        "status": "failed",
+        "suppression_reason": null,
+        "error": null
+      },
+      "url": "https://github.com/openclaw/openclaw/pull/168126"
+    }
+  ]
 }
