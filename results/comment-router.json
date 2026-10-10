@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T08:59:24.065Z",
+  "updated_at": "2026-10-10T09:00:36.766Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168140:6093913683:2026-10-10T04:48:06Z:re_review",
-      "comment_id": "6093913683",
-      "comment_version_key": "6093913683:2026-10-10T04:48:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168140#issuecomment-6093913683",
-      "comment_created_at": "2026-10-10T04:48:06Z",
-      "comment_updated_at": "2026-10-10T04:48:06Z",
-      "comment_body_sha256": "3c2d5b549370821abb031d94462830cd13e3cd45008f3582e18b4cf65d6d2862",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168140,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T04:56:04.999Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-link-control-tokens",
-        "head_sha": "1aceaca03ac186a3aa488aea4ddecbb30d290111",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103201:6093941575:2026-10-10T04:51:59Z:re_review",
       "comment_id": "6093941575",
@@ -33208,6 +33161,39 @@
         "kind": "pull_request",
         "branch": "openclaw/explore-customizable-session-background-images",
         "head_sha": "4d6ea3d80854eb9feade49d1d9bd0d2915372b81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:50:6095908398:2026-10-10T08:59:40Z:clawsweeper_needs_human",
+      "comment_id": "6095908398",
+      "comment_version_key": "6095908398:2026-10-10T08:59:40Z",
+      "comment_url": "https://github.com/openclaw/turnwire/pull/50#issuecomment-6095908398",
+      "comment_created_at": "2026-10-10T08:59:40Z",
+      "comment_updated_at": "2026-10-10T08:59:40Z",
+      "comment_body_sha256": "5f03f9d0c18be7e7d6d282d2f7d1d5217d2b662b06c9effb01a72acc1e246266",
+      "repo": "openclaw/turnwire",
+      "issue_number": 50,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the Linux Go 1.26 govulncheck log and establish whether its failure requires a toolchain update, dependency repair, or correction to the new invocation. (sha=b5d6711984292909f18e7365bd0a8dad749c4b94)",
+      "expected_head_sha": "b5d6711984292909f18e7365bd0a8dad749c4b94",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T09:00:36.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/round9-deps",
+        "head_sha": "b5d6711984292909f18e7365bd0a8dad749c4b94",
         "cluster_id": null,
         "job_path": null
       }
