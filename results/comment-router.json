@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:30:04.868Z",
+  "updated_at": "2026-10-10T20:30:17.123Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1898:6098980381:2026-10-10T15:15:47Z:re_review",
-      "comment_id": "6098980381",
-      "comment_version_key": "6098980381:2026-10-10T15:15:47Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1898#issuecomment-6098980381",
-      "comment_created_at": "2026-10-10T15:15:47Z",
-      "comment_updated_at": "2026-10-10T15:15:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1898,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T15:16:52.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/row3-github-runtime",
-        "head_sha": "6f8ca6631af750e9fbac3c7b2f9782778743e510",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2078:6098981345:2026-10-10T15:15:54Z:clawsweeper_needs_human",
       "comment_id": "6098981345",
@@ -33132,6 +33085,39 @@
         "kind": "pull_request",
         "branch": "fix/models-auth-via-gateway",
         "head_sha": "1361a682064358d851e9516d603d1a0974830be8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168596:6100953959:2026-10-10T20:29:15Z:clawsweeper_needs_human",
+      "comment_id": "6100953959",
+      "comment_version_key": "6100953959:2026-10-10T20:29:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168596#issuecomment-6100953959",
+      "comment_created_at": "2026-10-10T18:46:31Z",
+      "comment_updated_at": "2026-10-10T20:29:15Z",
+      "comment_body_sha256": "1f458e0bf53e451526db3884579795097bf304cdf2a63365c51aaebda85d45fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The exact-head evidence exercises Client.handleInteraction, persisted sessions, real dispatch, and controlled Discord REST; the contributor explicitly reports no live Discord or runni...; Review finding: [P1] Carry live native-command admission into archive recovery — src/auto-reply/reply/dispatch-from-config.lifecycle.ts:230-235 - [P2] Read the durable recovery so... (sha=defea5b0c7d568940c0f7a22a5a1878b0105c9f1)",
+      "expected_head_sha": "defea5b0c7d568940c0f7a22a5a1878b0105c9f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T20:30:17.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/discord-slash-archive-guidance",
+        "head_sha": "defea5b0c7d568940c0f7a22a5a1878b0105c9f1",
         "cluster_id": null,
         "job_path": null
       }
