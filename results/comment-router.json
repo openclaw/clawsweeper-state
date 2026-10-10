@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:21:17.241Z",
+  "updated_at": "2026-10-10T14:22:17.426Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103201:6096276373:2026-10-10T09:48:49Z:re_review",
-      "comment_id": "6096276373",
-      "comment_version_key": "6096276373:2026-10-10T09:48:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-6096276373",
-      "comment_created_at": "2026-10-10T09:48:49Z",
-      "comment_updated_at": "2026-10-10T09:48:49Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103201,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T09:49:39.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/incremental-session-chunk-diff",
-        "head_sha": "2bb17071d149f380cdb10ceee516994c9d74d928",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/steipete.me:283:6096278192:2026-10-10T09:49:05Z:clawsweeper_needs_human",
       "comment_id": "6096278192",
@@ -33034,6 +32987,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168457:6098093180:2026-10-10T14:21:12Z:clawsweeper_needs_human",
+      "comment_id": "6098093180",
+      "comment_version_key": "6098093180:2026-10-10T14:21:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168457#issuecomment-6098093180",
+      "comment_created_at": "2026-10-10T13:40:49Z",
+      "comment_updated_at": "2026-10-10T14:21:12Z",
+      "comment_body_sha256": "d2eec1e92c6934161cb708c99e0372aac5a852699ad56a7dbd3292860e5ae05b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the real-lock and SQLite fixture demonstrates visibility and settlement but bypasses Gateway authorization and mocks worker launch; provide sanitized t...; Review finding: [P2] Update lifecycle coverage for per-command CLI stores — extensions/workboard/index.ts:34-41 (sha=eff5e03455a056bc2d2faf62057b9ba7827af19c)",
+      "expected_head_sha": "eff5e03455a056bc2d2faf62057b9ba7827af19c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:22:17.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/ow3-workboard",
+        "head_sha": "eff5e03455a056bc2d2faf62057b9ba7827af19c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
