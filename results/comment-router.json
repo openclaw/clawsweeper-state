@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:51:35.385Z",
+  "updated_at": "2026-10-10T15:52:37.730Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168399:6097426403:2026-10-10T12:20:44Z:re_review",
-      "comment_id": "6097426403",
-      "comment_version_key": "6097426403:2026-10-10T12:20:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168399#issuecomment-6097426403",
-      "comment_created_at": "2026-10-10T12:20:44Z",
-      "comment_updated_at": "2026-10-10T12:20:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168399,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T12:21:36.932Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/durable-ask-user-167266",
-        "head_sha": "29c9e2cb00a8df452f6985df29f70a1ced03d300",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3883:5923385214:2026-10-10T12:21:16Z:clawsweeper_auto_repair",
       "comment_id": "5923385214",
@@ -31073,6 +31026,39 @@
         "kind": "pull_request",
         "branch": "feat/audio-capture-probe",
         "head_sha": "3743689d9b3bbbc900981286142a0dea5b9d2e16",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168502:6099338360:2026-10-10T15:51:40Z:clawsweeper_needs_human",
+      "comment_id": "6099338360",
+      "comment_version_key": "6099338360:2026-10-10T15:51:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168502#issuecomment-6099338360",
+      "comment_created_at": "2026-10-10T15:51:40Z",
+      "comment_updated_at": "2026-10-10T15:51:40Z",
+      "comment_body_sha256": "5bfae1f1242d9fc41eab7fdd3e0dec02f979237d31d0cfdd5ee295381ea87ac8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ebc7d674bab7ce6940314d399f88fbbca8b44aed)",
+      "expected_head_sha": "ebc7d674bab7ce6940314d399f88fbbca8b44aed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T15:52:37.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-dreaming-heartbeat-session-key",
+        "head_sha": "ebc7d674bab7ce6940314d399f88fbbca8b44aed",
         "cluster_id": null,
         "job_path": null
       }
