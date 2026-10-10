@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:22:09.086Z",
+  "updated_at": "2026-10-10T02:22:17.353Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167970:6090136473:2026-10-09T22:14:10Z:re_review",
-      "comment_id": "6090136473",
-      "comment_version_key": "6090136473:2026-10-09T22:14:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167970#issuecomment-6090136473",
-      "comment_created_at": "2026-10-09T22:14:10Z",
-      "comment_updated_at": "2026-10-09T22:14:10Z",
-      "comment_body_sha256": "7b029b6b3d52ee52951387048e3192deeb742adff4fc5124698bdb869b2e281a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167970,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T22:15:06.313Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-memory-startup-prep",
-        "head_sha": "b217b6574a7f7221ef0ffa0b262acd0f68d77ac7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1848:6090138526:2026-10-09T22:14:20Z:clawsweeper_needs_human",
       "comment_id": "6090138526",
@@ -33123,6 +33076,39 @@
         "kind": "pull_request",
         "branch": "fix/first-agent-stderr-diagnostics",
         "head_sha": "53bc7d0eb926b24451aea2d17374bccec77abf50",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168095:6092667812:2026-10-10T02:21:23Z:clawsweeper_auto_repair",
+      "comment_id": "6092667812",
+      "comment_version_key": "6092667812:2026-10-10T02:21:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168095#issuecomment-6092667812",
+      "comment_created_at": "2026-10-10T02:21:23Z",
+      "comment_updated_at": "2026-10-10T02:21:23Z",
+      "comment_body_sha256": "51c91e057c34f9a1186f182ccf36efdb26438f5c26c73a0f0046582bc3e09e13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168095,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=97ff1e5390625c51171c2ad5720cd6077efd076c)",
+      "expected_head_sha": "97ff1e5390625c51171c2ad5720cd6077efd076c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T02:22:17.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/168015-transcript-byte-latch-accounting",
+        "head_sha": "97ff1e5390625c51171c2ad5720cd6077efd076c",
         "cluster_id": null,
         "job_path": null
       }
