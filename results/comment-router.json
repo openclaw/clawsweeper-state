@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:36:37.946Z",
+  "updated_at": "2026-10-10T09:37:04.139Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155801:5779566340:2026-10-10T05:23:46Z:clawsweeper_needs_human",
-      "comment_id": "5779566340",
-      "comment_version_key": "5779566340:2026-10-10T05:23:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155801#issuecomment-5779566340",
-      "comment_created_at": "2026-09-22T15:49:34Z",
-      "comment_updated_at": "2026-10-10T05:23:46Z",
-      "comment_body_sha256": "6c88686d140887e317e3b4cbb2cffdd3934f6c8a554485df871728b64bf76d4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155801,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Native-timer output exercises the shared controller directly, and the WebSocket test supplies admission timestamps manually; neither exercises prepareCodexAttemptConnection through cr... (sha=809358a01d97e6cd053dff2dc238fb453953e4d1)",
-      "expected_head_sha": "809358a01d97e6cd053dff2dc238fb453953e4d1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:24:57.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-attempt-deadline-wall-clock-085",
-        "head_sha": "809358a01d97e6cd053dff2dc238fb453953e4d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:237:6094193763:2026-10-10T05:25:47Z:clawsweeper_needs_human",
       "comment_id": "6094193763",
@@ -33105,6 +33072,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167585:6096184782:2026-10-10T09:36:20Z:re_review",
+      "comment_id": "6096184782",
+      "comment_version_key": "6096184782:2026-10-10T09:36:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167585#issuecomment-6096184782",
+      "comment_created_at": "2026-10-10T09:36:20Z",
+      "comment_updated_at": "2026-10-10T09:36:20Z",
+      "comment_body_sha256": "d05e91ad1562b5488a064f3d0a2e057f4ba585446055c68e9e79dbd3b2768692",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167585,
+      "author": "Linux2010",
+      "author_id": 35169750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:37:03.130Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/167365-effective-tool-inventory",
+        "head_sha": "e36c65027ec43bd566c14512291b6733caed28b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
