@@ -1,0 +1,79 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-168231"
+mode: "autonomous"
+run_id: "38028468040"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38028468040"
+head_sha: "d3895fe78aa50a7645aed7f7a3fab05f897deb9c"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-10-10T07:12:52.678Z"
+canonical: "https://github.com/openclaw/openclaw/issues/168231"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/168231"
+canonical_pr: null
+actions_total: 6
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-168231
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38028468040](https://github.com/openclaw/clawsweeper/actions/runs/38028468040)
+
+Workflow conclusion: success
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/168231
+
+## Summary
+
+Source inspection confirms the bounded-turn rotation gap remains in checkout main 3b86cb9a820d23999d0d08a59145c05a6eb1d9c7. Implementation and behavioral reproduction are blocked by the read-only host: pnpm fails with EROFS before running tests. A narrow executor fix artifact is planned; no code or GitHub state changed.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 6 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, extensions, extensionTests, docs, tooling [check:changed] extension-impacting surface; extension typecheck included [check:changed] config/max-lines-baseline.txt: tooling surface [check:changed] extensions/codex/src/app-server/bounded-turn.quota.test.ts: extension test [check:changed] extensions/codex/src/app-server/bounded-turn.test-harness.ts: extension production [check:changed] extensions/codex/src/app-server/bounded-turn.ts: extension production [check:changed] extensions/codex/src/app-server/usage-limit-error.ts: extension production [check:changed] src/agents/cli-runner/claude-skills-plugin.ts: core production [check:changed] src/plugin-sdk/provider-auth-runtime.ts: public core/plugin contract affects extensions [check:changed] test/vitest/vitest.extension-database-workers-paths.mjs: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] SQLite worker ratchet $ node --import ./scripts/tsx.mjs scripts/check-database-worker-ratchet.mts --base origin/main [check:changed] test timeout race ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-timeout-race-ratchet.mts --base origin/main [check:changed] first-party mock export ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-mock-exports.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] extension test core imports $ node --import ./scripts/tsx.mjs scripts/check-no-extension-test-core-imports.ts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- config/max-lines-baseline.txt docs/plugins/codex-harness-runtime.md docs/plugins/sdk-runtime/models.md extensions/codex/src/app-server/bounded-turn.quota.test.ts extensions/codex/src/app-server/bounded-turn.test-harness.ts extensions/codex/src/app-server/bounded-turn.ts extensions/codex/src/app-server/usage-limit-error.ts src/agents/cli-runner/claude-skills-plugin.ts src/plugin-sdk/provider-auth-runtime.ts test/vitest/vitest.extension-database-workers-paths.mjs [check:changed] doctor contract declaration + closure guard tests $ node --import ./scripts/tsx.mjs scripts/test-projects-serial.mts src/plugins/doctor-contract-declarations.test.ts src/plugins/doctor-contract-closure-guard.test.ts [test] starting test/vitest/vitest.plugins.config.ts [test] passed 1 Vitest shard in 4.33s [check:changed] config docs baseline $ node --import ./scripts/tsx.mjs scripts/generate-config-doc-baseline.ts --check [check:changed] Plugin SDK package exports $ node --import ./scripts/tsx.mjs scripts/sync-plugin-sdk-exports.mts --check [check:changed] Plugin SDK surface budget $ node --max-old-space-size=8192 --import ./scripts/tsx.mjs scripts/plugin-sdk-surface-report.mts --check [check:changed] plugin boundaries $ node --import ./scripts/tsx.mjs scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] wrapper shadowing $ node --import ./scripts/tsx.mjs scripts/check-wrapper-shadowing.mts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] Control UI i18n catalog $ pnpm ui:i18n:verify $ node --import ./scripts/tsx.mjs scripts/control-ui-i18n-verify.ts verify [check:changed] typecheck core $ node scripts/run-tsgo.mjs -p tsconfig.core.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/core.tsbuildinfo [check:changed] typecheck core tests $ node scripts/run-tsgo-core-test-shards.mjs [tsgo:agents-root] passed in 39.2s [tsgo:agents-other] passed in 39.5s [tsgo:agents-tools] passed in 38.2s [tsgo:gateway-root] passed in 48.8s [tsgo:gateway-server] passed in 45.3s [tsgo:gateway-other] passed in 38.8s [tsgo:infra] passed in 42.1s [tsgo:state-logging] passed in 42.3s [tsgo:commands] passed in 41.5s [tsgo:plugins-platform] passed in 44.5s [tsgo:config-cli] passed in 40.1s [tsgo:messaging] passed in 39.6s [tsgo:services] passed in 39.3s [tsgo:other] passed in 40.1s [tsgo:ui-pages] passed in 44.4s [tsgo:ui-e2e] passed in 45.1s [tsgo:ui-other] passed in 44.3s [tsgo:packages] passed in 35.4s [tsgo:plugin-sdk] passed in 37.5s [tsgo:commands-doctor] passed in 38.1s [tsgo:cli-update] passed in 41.1s [tsgo:gateway-methods] passed in 44.3s [tsgo:ui-chat] passed in 45.0s [tsgo:agents-sessions] passed in 40.4s [tsgo:services-cron] passed in 39.5s [tsgo:ui-app] passed in 41.8s [tsgo:ui-components] passed in 43.3s [check:changed] typecheck extensions $ node scripts/run-tsgo.mjs -p tsconfig.extensions.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/extensions.tsbuildinfo [check:changed] typecheck extension tests $ node scripts/run-tsgo ... st.ts,extensions/codex/src/app-server/run-attempt-memory.test-support.ts,extensions/memory-core/index.ts removal-pending 2026-10-01 agent-harness-terminal-result-aliases due=true blocker=AgentHarnessAttemptResult.terminal and AgentHarnessDeliveryDefaults.visibleReplies; retain until harness migration verifies that legacy terminal fields and sourceVisibleReplies are unread readerRefs=0 readers=none removal-pending 2026-10-01 message-presentation-legacy-bridges due=true blocker=MessagePresentation values and channel presentation renderers; retain until reply producers and official channel packages no longer emit or read legacy interactive replies readerRefs=161 readers=extensions/a2a/src/inbound.ts,extensions/codex/src/app-server/run-attempt-active-turn.ts,extensions/codex/src/app-server/run-attempt.final-media.test.ts,extensions/codex/src/conversation-binding-hooks.ts,extensions/codex/src/conversation-binding.ts removal-pending 2026-10-01 official-plugin-export-aliases due=true blocker=MessagePresentation renderers and host-owned timeout/runtime behavior; retain until minimum supported official plugin packages no longer import these aliases readerRefs=21 readers=extensions/discord/api.ts,extensions/discord/src/voice/audio-worker-thread.ts,extensions/qa-lab/src/crabline-discord-thread-delivery.test.ts,extensions/qa-lab/src/live-transports/discord/discord-live.runtime.ts,extensions/qa-lab/src/live-transports/discord/discord-transcripts-authorization.runtime.test.ts removal-pending 2026-10-01 plugin-sdk-channel-setup-input-fields due=true blocker=plugin-local setup input intersections that declare each owning channel field; retain each field until a new published-plugin artifact sweep finds no reader readerRefs=0 readers=none removal-pending 2026-10-01 plugin-runtime-api-compat-aliases due=true blocker=the namespaced plugin API and focused runtime methods named per surface; retain until all enumerated flat API and runtime aliases have no readers readerRefs=8 readers=extensions/buzz/src/inbound.test.ts,extensions/feishu/src/bot.broadcast.routing.test.ts,extensions/feishu/src/bot.test.ts,extensions/feishu/src/comment-handler.test.ts,extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts removal-pending 2026-10-01 plugin-provider-manifest-compat-aliases due=true blocker=manifest-owned plugin kind/setup metadata and model catalog registration; retain until providers no longer publish runtime kind or legacy catalog hooks readerRefs=0 readers=none removal-pending 2026-10-01 plugin-sdk-provider-owned-helper-shims due=true blocker=provider-local auth, model, replay, OAuth, and stream helper APIs; retain until every helper is migrated in official providers and absent from published plugins readerRefs=467 readers=extensions/agentsapi/agentsapi-harness.lifecycle.test-helpers.ts,extensions/agentsapi/agentsapi-harness.persistence.test.ts,extensions/agentsapi/agentsapi-harness.ts,extensions/agentsapi/native-session-binding.test-api.ts,extensions/amazon-bedrock-mantle/discovery.ts removal-pending 2026-10-01 media-legacy-projection due=true blocker=ordered `MsgContext.media` / `InboundMediaFacts[]`; typed hook `media` and `originalMedia`; `Attachment*` template variables; and `openclaw/plugin-sdk/media-local-roots`; retain until a clean published-plugin artifact sweep verifies that the legacy media surfaces have no readers readerRefs=2 readers=src/plugins/compat/media-legacy-projection.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 memory-host-compatibility-aliases due=true blocker=canonical memory cache/FTS tables; retain until supported memory integrations are verified to use canonical tables without overrides and legacy table data remains preserved readerRefs=2 readers=src/plugins/compat/deprecation-marking.ts,src/plugins/contracts/extension-package-project-boundaries.test.ts removal-pending 2026-10-01 plugin-sdk-broad-runtime-barrels due=true blocker=focused plugin SDK subpaths for each runtime capability; retain until bundled and published plugins no longer import any of the seven broad barrels readerRefs=850 readers=extensions/a2a/src/http.test.ts,extensions/acpx/src/runtime.ts,extensions/acpx/src/session-owner-migration.ts,extensions/active-memory/index.ts,extensions/active-memory/query.ts removal-pending 2026-10-01 plugin-sdk-focused-compat-aliases due=true blocker=the focused replacement named by each TypeScript @deprecated annotation; retain until every enumerated alias has zero bundled and published readers readerRefs=463 readers=extensions/a2a/src/inbound.ts,extensions/acpx/index.test.ts,extensions/acpx/index.ts,extensions/acpx/register.runtime.test.ts,extensions/acpx/register.runtime.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=56 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/active-memory/trigger-recall.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts plugin-sdk entrypoints=366 supportedBundledFacade=0 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=24 wrapper shadowing guard passed. PASS package patch guard: no new pnpm patches; 9 approved patches allowlisted. control-ui-i18n: raw-copy: baseline entries=84 control-ui-i18n: source: keys=10367 literal_references=8198 template_prefix_references=291 control-ui-i18n: plugin=workboard keys=372 locales=20 unused_translations=1180 Coercion helper declaration guard passed (112 allowlisted declarations). deprecated API usage guard passed [deadcode] Knip script unused-export scan passed with 0 entries. |
+| issue_implementation_status_comment | updated | #168231 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #168231 | fix_needed | planned | canonical | A source-supported ordinary bug has no viable hydrated implementation PR. Reproduction, implementation, review, and validation require the writable executor. |
+| #102402 | keep_closed | skipped | related | Historical source and credit evidence only; do not reopen, close, or transplant its stale lifecycle. |
+| #119707 | keep_related | planned | related | Keep open for its separate generation-owner workflow. |
+| #152489 | keep_related | planned | related | Useful distinct contributor work; neither repair nor merge it in this issue-only lane. |
+| #162398 | route_security | planned | security_sensitive | Quarantine this exact linked PR for central OpenClaw security handling without treating the canonical bug as security work. |
+| cluster:issue-openclaw-openclaw-168231 | build_fix_artifact | planned |  | Provide an executable plan for a supported writable environment; require failing boundary reproduction before production edits or PR publication. |
+
+## Needs Human
+
+- none
