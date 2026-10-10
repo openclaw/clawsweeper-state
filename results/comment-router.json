@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T13:56:21.829Z",
+  "updated_at": "2026-10-10T13:56:44.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138087:6091839703:2026-10-10T00:52:17Z:re_review",
-      "comment_id": "6091839703",
-      "comment_version_key": "6091839703:2026-10-10T00:52:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138087#issuecomment-6091839703",
-      "comment_created_at": "2026-10-10T00:52:17Z",
-      "comment_updated_at": "2026-10-10T00:52:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138087,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T09:31:55.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-context-tokens-bundled-catalog-fallback",
-        "head_sha": "b5fe2875852563770939572f01ab27acbce3eb7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138087:5538784861:2026-10-10T09:30:43Z:clawsweeper_auto_repair",
       "comment_id": "5538784861",
@@ -33113,6 +33066,39 @@
         "kind": "pull_request",
         "branch": "deslop/heartbeat-s3-land-20261009",
         "head_sha": "6ec2f9e93bc1b4e8f7cc227b1c6adca51548f007",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2072:6098112528:2026-10-10T13:55:52Z:clawsweeper_needs_human",
+      "comment_id": "6098112528",
+      "comment_version_key": "6098112528:2026-10-10T13:55:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2072#issuecomment-6098112528",
+      "comment_created_at": "2026-10-10T13:43:11Z",
+      "comment_updated_at": "2026-10-10T13:55:52Z",
+      "comment_body_sha256": "2d0082d401f6a523bf23e6fb2c841aab3115e0930188198c218f9cce0767e70a",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the PostgreSQL Application failure for the reviewed head and determine whether it comes from these tests or an outside cause. (sha=aff869c21747d74583ad48db3c1b87152420c289)",
+      "expected_head_sha": "aff869c21747d74583ad48db3c1b87152420c289",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T13:56:44.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test-gaps-37",
+        "head_sha": "aff869c21747d74583ad48db3c1b87152420c289",
         "cluster_id": null,
         "job_path": null
       }
