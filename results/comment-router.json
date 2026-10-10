@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T13:53:18.511Z",
+  "updated_at": "2026-10-10T13:53:37.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:156312:5792095861:2026-09-23T09:08:10Z:re_review",
-      "comment_id": "5792095861",
-      "comment_version_key": "5792095861:2026-09-23T09:08:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156312#issuecomment-5792095861",
-      "comment_created_at": "2026-09-23T09:08:10Z",
-      "comment_updated_at": "2026-09-23T09:08:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156312,
-      "author": "xydigitLybnnnn",
-      "author_id": 280613588,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T09:30:40.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/156276-bug-control-ui-repeats-workspa",
-        "head_sha": "72f98aa95c2b6a92fb4efcc49b421749478b06f7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156312:5791143043:2026-10-10T09:29:42Z:clawsweeper_auto_repair",
       "comment_id": "5791143043",
@@ -33099,6 +33052,39 @@
         "kind": "pull_request",
         "branch": "fix/w13-q2",
         "head_sha": "953737e3fe3fce2564928d5fd3cc40e95b8a8fd0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168265:6094488172:2026-10-10T13:52:38Z:clawsweeper_needs_human",
+      "comment_id": "6094488172",
+      "comment_version_key": "6094488172:2026-10-10T13:52:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168265#issuecomment-6094488172",
+      "comment_created_at": "2026-10-10T06:06:03Z",
+      "comment_updated_at": "2026-10-10T13:52:38Z",
+      "comment_body_sha256": "cdc8c1e6ecb493646ba8b8b7b78d252854d5a39d21bb1f59e4ddbd27152037d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168265,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: inspected synthetic Chromium screenshots establish matching-agent identity before hello, but the supplied tests and media do not establish allowed deli...; Review finding: [P2] Revalidate paired credentials at final document delivery — src/gateway/control-ui.ts:928-930 - [P2] Discard staged grants when document delivery is rejected —... (sha=151b0bd97d014e18af5a8ef526ff535cd6f4bd28)",
+      "expected_head_sha": "151b0bd97d014e18af5a8ef526ff535cd6f4bd28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T13:53:37.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/coldload-bootstrap-config",
+        "head_sha": "151b0bd97d014e18af5a8ef526ff535cd6f4bd28",
         "cluster_id": null,
         "job_path": null
       }
