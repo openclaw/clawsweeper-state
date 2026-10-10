@@ -1,0 +1,76 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-168627"
+mode: "autonomous"
+run_id: "38083404963"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38083404963"
+head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-10-10T22:00:35.548Z"
+canonical: "https://github.com/openclaw/openclaw/issues/168627"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/168627"
+canonical_pr: null
+actions_total: 3
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-168627
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38083404963](https://github.com/openclaw/clawsweeper/actions/runs/38083404963)
+
+Workflow conclusion: success
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/168627
+
+## Summary
+
+The stale-success cache defect remains in preflight main 712f0ec826b8f0de0c633524a8d634cbb8696f6f. A narrow fix artifact is ready for the executor. Local implementation and baseline/candidate regression proof are blocked by the read-only filesystem and missing dependencies; no files or GitHub state were changed.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 3 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=coreTests, ui, tooling [check:changed] config/knip.config.ts: tooling surface [check:changed] ui/src/e2e/chat-composer-capability-menu.e2e.test.ts: UI test [check:changed] ui/src/pages/chat/chat-composer-capability-host.ts: UI production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] test timeout race ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-timeout-race-ratchet.mts --base origin/main [check:changed] first-party mock export ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-mock-exports.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- config/knip.config.ts ui/src/e2e/chat-composer-capability-menu.e2e.test.ts ui/src/pages/chat/chat-composer-capability-host.ts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] Control UI i18n catalog $ pnpm ui:i18n:verify $ node --import ./scripts/tsx.mjs scripts/control-ui-i18n-verify.ts verify [check:changed] Control UI Lit ratchet $ node --import ./scripts/tsx.mjs scripts/check-control-ui-lit-ratchet.mts --base origin/main [check:changed] typecheck core tests $ node scripts/run-tsgo-core-test-shards.mjs [tsgo:agents-root] passed in 40.7s [tsgo:agents-other] passed in 39.4s [tsgo:agents-tools] passed in 37.8s [tsgo:gateway-root] passed in 47.4s [tsgo:gateway-server] passed in 47.9s [tsgo:gateway-other] passed in 37.7s [tsgo:infra] passed in 41.2s [tsgo:state-logging] passed in 38.5s [tsgo:commands] passed in 40.1s [tsgo:plugins-platform] passed in 41.7s [tsgo:config-cli] passed in 40.6s [tsgo:messaging] passed in 39.7s [tsgo:services] passed in 39.5s [tsgo:other] passed in 37.8s [tsgo:ui-pages] passed in 44.6s [tsgo:ui-e2e] passed in 43.7s [tsgo:ui-other] passed in 42.8s [tsgo:packages] passed in 35.7s [tsgo:plugin-sdk] passed in 36.3s [tsgo:commands-doctor] passed in 36.3s [tsgo:cli-update] passed in 40.9s [tsgo:gateway-methods] passed in 48.0s [tsgo:ui-chat] passed in 47.6s [tsgo:agents-sessions] passed in 40.4s [tsgo:services-cron] passed in 36.8s [tsgo:ui-app] passed in 43.6s [tsgo:ui-components] passed in 41.7s [tsgo:ui-e2e-chat] passed in 43.5s [check:changed] typecheck UI $ node scripts/run-tsgo.mjs -p tsconfig.ui.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/ui.tsbuildinfo [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) production unused-export scan: Unused exports are not allowed: src/agents/harness/session-runtime-ownership.ts: readSessionRuntimeOwnershipAsync Delete the exports or model their real production consumers in Knip. [deadcode] Knip full-tree unused-export scan still running after 60s. full-tree unused-export scan: Unused exports are not allowed: src/agents/harness/session-runtime-ownership.ts: readSessionRuntimeOwnershipAsync Delete the exports or model their real production consumers in Knip. [check:changed] summary 218ms ok conflict markers 329ms ok line-cap growth ratchet 4.64s ok max-lines suppression ratchet 10.70s ok assertion SAFETY comment ratchet 774ms ok test timeout race ratchet 9.49s ok first-party mock export ratchet 171ms ok changelog attributions 143ms ok doctor deprecation registry 147ms ok guarded extension wildcard re-exports 140ms ok plugin-sdk wildcard re-exports 231ms ok duplicate scan target coverage 226ms ok dependency pin guard 141ms ok format changed files 423ms ok package patch guard 213ms ok test temp creation report (warning-only) 67.84s ok core tsgo graph boundary 2.76s ok Control UI i18n catalog 557ms ok Control UI Lit ratchet 1152.23s ok typecheck core tests 41.55s ok typecheck UI 5.74s ok coercion helper declaration guard 68.99s failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 3 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 571 grandfathered suppressions. OPENCLAW_* count 456/456 assertion SAFETY ratchet OK: 2850 files, 6724 grandfathered assertions. test timeout race ratchet OK: 129 files, 312 grandfathered sites. Mock factory ratchet OK: 10186 grandfathered factories. [doctor-deprecation-registry] OK as of 2026-10-10 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 729 directly declared dependency specs across 199 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 61ms on 3 files using 4 threads. PASS package patch guard: no new pnpm patches; 9 approved patches allowlisted. control-ui-i18n: raw-copy: baseline entries=85 control-ui-i18n: source: keys=10490 literal_references=8313 template_prefix_references=300 control-ui-i18n: plugin=workboard keys=372 locales=20 unused_translations=1180 Control UI Lit ratchet OK (2 changed files, base c8278d736d8eb3babe3ec963c79959ab1fcd59d6). Coercion helper declaration guard passed (112 allowlisted declarations). [deadcode] Knip script unused-export scan passed with 0 entries. |
+| issue_implementation_status_comment | updated | #168627 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #168627 | fix_needed | blocked | canonical | The classification and repair scope are clear. Implementation requires a writable, dependency-prepared executor environment; this is an environmental blocker, not unresolved maintainer judgment. |
+| #115907 | keep_closed | skipped | related | Historical implementation context only; no repair or closeout action targets this PR. |
+| cluster:issue-openclaw-openclaw-168627 | build_fix_artifact | planned |  | A concrete, narrow, non-security fix path is available for deterministic execution. Merge and issue closure remain prohibited. |
+
+## Needs Human
+
+- none
