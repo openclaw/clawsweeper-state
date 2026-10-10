@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T03:03:49.943Z",
+  "updated_at": "2026-10-10T03:04:04.277Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156080:5787707743:2026-10-09T22:29:40Z:clawsweeper_needs_human",
-      "comment_id": "5787707743",
-      "comment_version_key": "5787707743:2026-10-09T22:29:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/156080#issuecomment-5787707743",
-      "comment_created_at": "2026-09-23T02:05:23Z",
-      "comment_updated_at": "2026-10-09T22:29:40Z",
-      "comment_body_sha256": "93739d9ac6c7f42c7c8d7b777587d83d9e62ff851409bedb973a65caa820cba4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 156080,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The history reconciler is exercised by unit-level pending/consumed receipts and reported red/green checks, but this branch has no demonstrated browser send retaining the initial bubbl... (sha=13447cba9f9659b93bfbb36078f97b4f5e54f863)",
-      "expected_head_sha": "13447cba9f9659b93bfbb36078f97b4f5e54f863",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T22:37:03.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-optimistic-bubble-retire",
-        "head_sha": "13447cba9f9659b93bfbb36078f97b4f5e54f863",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156126:5788255814:2026-10-09T22:31:42Z:clawsweeper_auto_repair",
       "comment_id": "5788255814",
@@ -33550,6 +33517,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:163267:6092706921:2026-10-10T03:03:06Z:re_review",
+      "comment_id": "6092706921",
+      "comment_version_key": "6092706921:2026-10-10T03:03:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163267#issuecomment-6092706921",
+      "comment_created_at": "2026-10-10T02:25:44Z",
+      "comment_updated_at": "2026-10-10T03:03:06Z",
+      "comment_body_sha256": "bd1d5823b8d9dcc2e5330fbbac06a484124c940b9d9d75f7c4e94d0ce9804e91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163267,
+      "author": "shannon0430",
+      "author_id": 258282406,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T03:04:02.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-channel-visibility",
+        "head_sha": "9b99db182f547aba65f3edfef8e9fd2d376ae932",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
