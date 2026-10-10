@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168585",
+  "mode": "autonomous",
+  "run_id": "38074849785",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38074849785",
+  "head_sha": "49c65085f09de567292d1c145314dc8189612234",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168585.md",
+  "published_at": "2026-10-10T20:08:15.479Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168585",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168585",
+  "canonical_pr": null,
+  "summary": "Verified the reported failure path on preflight main 471035c7b7c8ea066ed302006ab3780994d27324. Implementation and baseline reproduction are blocked by the read-only environment: the focused test command failed during Corepack provisioning with EROFS. No files or GitHub state changed. A narrow executor fix artifact is prepared; no passing regression, review, or CI is claimed.",
+  "actions": [
+    {
+      "target": "#168585",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168585",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is warranted, but a writable executor must establish baseline failure before editing production code."
+    },
+    {
+      "target": "#164799",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct startup causes and remaining validation; leave outside this implementation."
+    },
+    {
+      "target": "#168159",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Codex process retirement is independent; closure is prohibited by this job."
+    },
+    {
+      "target": "#149538",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical fleet evidence only."
+    },
+    {
+      "target": "#168160",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct repaired admission-stack defect."
+    },
+    {
+      "target": "#168354",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical repair of another owner; not a candidate for this bug."
+    },
+    {
+      "target": "#168365",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent lifecycle repair; does not cover initial startup journal admission."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168585",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168585",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked here by read-only filesystem and unavailable test execution."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
