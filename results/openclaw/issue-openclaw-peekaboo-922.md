@@ -2,14 +2,14 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38077766878"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38077766878"
-head_sha: "49c65085f09de567292d1c145314dc8189612234"
+run_id: "38080929065"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38080929065"
+head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T18:59:17.664Z"
-canonical: "https://github.com/openclaw/peekaboo/issues/922"
-canonical_issue: "https://github.com/openclaw/peekaboo/issues/922"
+published_at: "2026-10-10T19:47:01.142Z"
+canonical: "https://github.com/openclaw/Peekaboo/issues/922"
+canonical_issue: "https://github.com/openclaw/Peekaboo/issues/922"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38077766878](https://github.com/openclaw/clawsweeper/actions/runs/38077766878)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38080929065](https://github.com/openclaw/clawsweeper/actions/runs/38080929065)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/peekaboo/issues/922
+Canonical: https://github.com/openclaw/Peekaboo/issues/922
 
 ## Summary
 
-#922 remains reproducible in source on main e59c220d6ea74201028e691b84eb26501ffc21ed. No receiver-proven implementation is available from the inspected evidence. Implementation is blocked by the read-only Linux environment and unavailable macOS validation transport. #922 is retained without an executable fix action because a safe implementation cannot be specified from the provided artifacts. No code or GitHub changes were made.
+The capability remains unresolved on main e59c220d6ea74201028e691b84eb26501ffc21ed. No demonstrated mechanism meets the receiver criteria, and this read-only Linux environment cannot implement or qualify a native macOS fix. No code or GitHub changes were made.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | keep_related | blocked | related | The gap is real, but merely enabling the existing native route repeats an unsuccessful proposal. A narrowly qualified implementation cannot be established or validated from the provided artifacts in this environment. Retain the issue open without scheduling a fix. |
-| #916 | keep_closed | skipped | related | Historical proposal; not a viable fix or an open repair target. |
-| #923 | keep_closed | skipped | related | Adjacent landed work does not satisfy #922. |
-| #926 | keep_closed | skipped | related | Adjacent landed diagnostic fix does not satisfy #922. |
-| #927 | keep_closed | skipped | related | Adjacent landed receipt fix does not satisfy #922. |
+| #922 | keep_related | skipped | related | Keep the unresolved issue open without an executable fix action. Implementation requires a demonstrated native mechanism delivering exactly one unmodified down/up pair to an unchanged cold passive receiver, including observation for delayed callbacks and preservation of protected state. Expanding the existing route would repeat a known failed approach. No concrete production patch or safe fix artifact is justified from the available evidence. |
+| #916 | keep_closed | skipped | related | Historical evidence only; preserve the contributor's investigation and failed-proof record. |
+| #923 | keep_closed | skipped | related | Presentation changes do not resolve passive receiver delivery. |
+| #926 | keep_closed | skipped | related | Diagnostic correction is distinct from the unresolved input mechanism. |
+| #927 | keep_closed | skipped | related | Typing receipt validation does not resolve pointer receiver callbacks. |
 
 ## Needs Human
 
