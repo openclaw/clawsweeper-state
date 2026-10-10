@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/photoscrawl",
+  "cluster_id": "issue-openclaw-photoscrawl-30",
+  "mode": "plan",
+  "run_id": "38071761249",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38071761249",
+  "head_sha": "49c65085f09de567292d1c145314dc8189612234",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-photoscrawl-30.md",
+  "published_at": "2026-10-10T17:29:28.974Z",
+  "canonical": "#30",
+  "canonical_issue": "#30",
+  "canonical_pr": null,
+  "summary": "The remaining recovery-copy cost is present on main. Implementation of #30 is blocked because the hydrated issue truncates its rejected-shortcut constraints and the prior GitHub CLI read lacked authentication. Prior tests also could not start in the read-only environment. No executable fix artifact is established; no changes or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#30",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#30",
+      "candidate_fix": null,
+      "reason": "Keep #30 open. The specific unresolved prerequisite is obtaining its complete rejected-shortcut constraints before selecting a safe implementation. The supplied fix-artifact.json contains planning metadata, not an implementation strategy. Downgrade the unsupported fix recommendation rather than invent an executable fix artifact."
+    },
+    {
+      "target": "#31",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#32",
+      "candidate_fix": null,
+      "reason": "Historical contributor work already superseded by #32; no action is needed."
+    },
+    {
+      "target": "#32",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#30",
+      "candidate_fix": null,
+      "reason": "Merged historical mitigation does not resolve the remaining fallback allocation."
+    },
+    {
+      "target": "#55",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#30",
+      "candidate_fix": null,
+      "reason": "Preserve the landed optimization and @mbelinky's credit; remaining recovery costs still belong to #30."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#30: Supply the complete source issue body, including the truncated 'Rejected Shortcut' constraints, so a safe implementation strategy can be selected without repeating a rejected approach."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
