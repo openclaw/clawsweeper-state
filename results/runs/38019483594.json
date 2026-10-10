@@ -1,0 +1,52 @@
+{
+  "repo": "steipete/birdclaw",
+  "cluster_id": "issue-steipete-birdclaw-233",
+  "mode": "autonomous",
+  "run_id": "38019483594",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38019483594",
+  "head_sha": "f51199a8d817fa8222656fce030f99e5b28f7e87",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/steipete/inbox/issue-steipete-birdclaw-233.md",
+  "published_at": "2026-10-10T03:12:02.000Z",
+  "canonical": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_issue": "https://github.com/steipete/birdclaw/issues/233",
+  "canonical_pr": null,
+  "summary": "The defect remains source-proven on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow implementation artifact is ready for the executor. Local implementation and validation are blocked by the read-only filesystem, missing Bun, and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "The request is narrow and viable. Preserve #233 as the canonical issue and implement one fix PR after completing the regression and validation gates."
+    },
+    {
+      "target": "cluster:issue-steipete-birdclaw-233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#233",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked in this worker environment. The executor must establish the failing regression, implement and validate the repair, and capture real-setup recovery evidence before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
