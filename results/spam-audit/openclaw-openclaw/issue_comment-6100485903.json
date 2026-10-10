@@ -1,0 +1,38 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T17:55:58.669Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6100485903",
+    "node_id": "IC_kwDOQb6kR88AAAABa54HDw",
+    "url": "https://github.com/openclaw/openclaw/issues/167406#issuecomment-6100485903",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/167406",
+    "pull_request_url": null,
+    "author": "RuiCatalao7",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T17:54:48Z",
+    "updated_at": "2026-10-10T17:54:48Z",
+    "body_hash": "0a545f978e091ceab16b3ea3b451c92d6234b2beb1f2ce2a21a5818e96741de0",
+    "body_excerpt": "The symlink EPERM in plugin-captures is likely the trigger here. Without admin or Developer Mode, linkPluginNativeReference's fs.symlinkSy ... ntWithoutDevLicense = 1) fixed it: the non-elevated task was ready in ~93 s with 0 hardlinked reference targets. Full details in #162047.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "6100485903",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical diagnosis connecting symlink failures, hardlink fallback, and quadratic revalidation.",
+      "Provides relevant reproduction context, performance measurements, a mitigation, and a related issue reference.",
+      "Contains no solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
