@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "38045584991",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38045584991",
+  "head_sha": "a3ac9853bee1539e1e8cebdbca61ebfc85212beb",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-10T10:41:11.294Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by missing supported Blacksmith pre-worker dispatch evidence. Current main still cannot distinguish failed dispatch from slow allocation when native status reports queued without a run association. The recorded triage direction rejects guessing that association. No code changes or executable fix PR plan were produced.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Keep the issue open. Resume implementation when Blacksmith supplies a supported durable Testbox-to-workflow binding before worker registration, retained through cancellation and admission failure, with authoritative terminal dispatch evidence. No unresolved maintainer decision is needed."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed recovery guarantees; this PR does not resolve the source issue."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with distinct scope."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Settlement visibility does not supply missing pre-worker dispatch identity."
+    },
+    {
+      "target": "#2719",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Local ownership lookup performance is distinct from provider dispatch reporting."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 5
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
