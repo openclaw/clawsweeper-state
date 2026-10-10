@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:22:37.038Z",
+  "updated_at": "2026-10-10T01:22:51.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162684:5931527660:2026-10-09T20:41:03Z:clawsweeper_needs_human",
-      "comment_id": "5931527660",
-      "comment_version_key": "5931527660:2026-10-09T20:41:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162684#issuecomment-5931527660",
-      "comment_created_at": "2026-10-01T12:31:51Z",
-      "comment_updated_at": "2026-10-09T20:41:03Z",
-      "comment_body_sha256": "b5b43899b138a01b4d46297681efb600f48054c7d63c7bc1f10f3d6a3709030a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162684,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Production Telegram traces on earlier heads exercise the dispatcher-to-queue handoff and show typing requests during waits and cleanup after replies. They do not satisfy the repositor... (sha=a387e885426b25a90e569762b9d30619342eea04)",
-      "expected_head_sha": "a387e885426b25a90e569762b9d30619342eea04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T20:42:05.932Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/queued-followup-typing",
-        "head_sha": "a387e885426b25a90e569762b9d30619342eea04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167954:6088907075:2026-10-09T20:41:46Z:clawsweeper_auto_repair",
       "comment_id": "6088907075",
@@ -32945,6 +32912,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1694:6092073744:2026-10-10T01:22:01Z:clawsweeper_needs_human",
+      "comment_id": "6092073744",
+      "comment_version_key": "6092073744:2026-10-10T01:22:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1694#issuecomment-6092073744",
+      "comment_created_at": "2026-10-10T01:16:16Z",
+      "comment_updated_at": "2026-10-10T01:22:01Z",
+      "comment_body_sha256": "21d808087e3a7257e0c52a8e6d1b710279a570b6d7c851094b2a01d6418e4580",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1694,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: current-head Windows ARM64 CLI output demonstrates both exact package collection paths and stable repeated assessment, but stops before persistent publ...; Review finding: [P2] Keep title matches advisory when deciding handoff relevance — .github/scripts/upstream-gateway-publish.cjs:204-206 - [medium] Demonstrate identity rejection b... (sha=60c6eb03eff6eddf728131c8bc94331085957123)",
+      "expected_head_sha": "60c6eb03eff6eddf728131c8bc94331085957123",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T01:22:51.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "karkarl-gateway-capability-gap-reports",
+        "head_sha": "60c6eb03eff6eddf728131c8bc94331085957123",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
