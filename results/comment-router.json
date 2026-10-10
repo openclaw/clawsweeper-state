@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T15:50:31.482Z",
+  "updated_at": "2026-10-10T15:51:02.611Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168437:6097406359:2026-10-10T12:18:36Z:clawsweeper_needs_human",
-      "comment_id": "6097406359",
-      "comment_version_key": "6097406359:2026-10-10T12:18:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168437#issuecomment-6097406359",
-      "comment_created_at": "2026-10-10T12:18:36Z",
-      "comment_updated_at": "2026-10-10T12:18:36Z",
-      "comment_body_sha256": "b1e859012c22674be530300f91bb478a4174ae99cf92f91ece1c5d61281d30bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168437,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=75bdf1bcaa4b48da4cd665530ee01bac70714d25)",
-      "expected_head_sha": "75bdf1bcaa4b48da4cd665530ee01bac70714d25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T12:19:29.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/server-chat-deslop",
-        "head_sha": "75bdf1bcaa4b48da4cd665530ee01bac70714d25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168435:6097290969:2026-10-10T12:19:10Z:clawsweeper_needs_human",
       "comment_id": "6097290969",
@@ -31034,6 +31001,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:98662:6099318324:2026-10-10T15:49:44Z:re_review",
+      "comment_id": "6099318324",
+      "comment_version_key": "6099318324:2026-10-10T15:49:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/98662#issuecomment-6099318324",
+      "comment_created_at": "2026-10-10T15:49:44Z",
+      "comment_updated_at": "2026-10-10T15:49:44Z",
+      "comment_body_sha256": "301ae89dab9dd17942d6048fbcbf7a31d71343ebd38f2478a80d72a90d0f62f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 98662,
+      "author": "welfo-beo",
+      "author_id": 187608477,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T15:51:01.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/13615-provider-rate-limit",
+        "head_sha": "da1acb4d6d2bd44cb2842bebbec32e86d90fee9c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
