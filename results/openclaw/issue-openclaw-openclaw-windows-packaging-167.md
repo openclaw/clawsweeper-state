@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-167"
 mode: "autonomous"
-run_id: "38065365779"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38065365779"
-head_sha: "70cfbb0677b28eabe1c5abeddc06bf208936cb88"
+run_id: "38077661970"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38077661970"
+head_sha: "49c65085f09de567292d1c145314dc8189612234"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T15:56:42.273Z"
+result_status: "planned"
+published_at: "2026-10-10T18:58:05.808Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38065365779](https://github.com/openclaw/clawsweeper/actions/runs/38065365779)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38077661970](https://github.com/openclaw/clawsweeper/actions/runs/38077661970)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/167
 
 ## Summary
 
-Verified the reported File.Copy staging path on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. A narrow managed byte-copy repair remains viable. Implementation and required validation are blocked by the read-only Linux workspace, missing pinned SDK 10.0.401, and unavailable disposable Windows environment. No files or GitHub state changed.
+Verified the reported staging path on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. A narrow managed-stream fix remains viable. Implementation and Windows proof are blocked on this read-only Linux host; no files or GitHub state changed. The later Koffi failure remains unresolved.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Verified the reported File.Copy staging path on preflight main 4215593cd5abd4cd1
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167 | fix_needed | planned | canonical | The encrypted-source copy repair is source-supported and narrow. Windows reproduction is still required; the broader Koffi/config-validation outcome is not established. |
-| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation must run in a writable environment with the pinned SDK and disposable Windows proof. Do not publish a PR before the required regression and validation succeed. |
-| #75 | keep_closed | skipped | related | Historical evidence only; no close or repair action. |
-| #86 | keep_closed | skipped | related | Related historical fix, not a duplicate or current implementation candidate. |
+| #167 | fix_needed | planned | canonical | Repair the existing producer; retain the later Koffi symptom as unresolved until actual child-resolution proof exists. |
+| #75 | keep_closed | skipped | related | Historical implementation, not a mutation target. |
+| #86 | keep_closed | skipped | related | Preserve as context without claiming coverage of #167. |
 | #111 | keep_closed | skipped | related | Historical context only. |
-| #160826 | needs_human | blocked | needs_human | The keep_independent action cannot satisfy required target metadata without inventing live state. Defer only this unavailable ref for identity and hydration resolution; exclude it from implementation and mutation targets. |
+| #160826 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the intended ref before classifying it. Keep this item non-mutating; do not invent metadata or treat it as a covered report or closure target. |
+| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned |  | Artifact is ready for a writable Windows executor; this host cannot implement or validate it. |
 
 ## Needs Human
 
-- #160826: resolve the repository identity and obtain valid hydration before further classification. The supplied same-repository hydration returned HTTP 404, kind unknown, and updated_at null; the separately linked openclaw/openclaw issue cannot supply metadata for this target.
+- #160826: packaging-repository hydration returned HTTP 404 with kind unknown and updated_at null; the linked URL belongs to openclaw/openclaw. Resolve the intended repository and hydrate that ref before classification. No mutation is authorized for this item.
