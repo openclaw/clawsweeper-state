@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T22:55:59.593Z",
+  "updated_at": "2026-10-10T22:56:20.053Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5697449557:2026-09-16T12:30:43Z:re_review",
-      "comment_id": "5697449557",
-      "comment_version_key": "5697449557:2026-09-16T12:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5697449557",
-      "comment_created_at": "2026-09-16T12:30:43Z",
-      "comment_updated_at": "2026-09-16T12:30:43Z",
-      "comment_body_sha256": "422881e6cb10de221d3c28af291ed987bb328ccb8b1cb864d1365b6211454dc9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T17:47:02.981Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5700158294:2026-09-16T15:35:21Z:re_review",
       "comment_id": "5700158294",
@@ -33190,6 +33163,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168483:6098577728:2026-10-10T22:55:27Z:clawsweeper_needs_human",
+      "comment_id": "6098577728",
+      "comment_version_key": "6098577728:2026-10-10T22:55:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168483#issuecomment-6098577728",
+      "comment_created_at": "2026-10-10T14:33:29Z",
+      "comment_updated_at": "2026-10-10T22:55:27Z",
+      "comment_body_sha256": "4bab2b77ca4a09fa401c0cfc34e5e714d6f972d421ba1abcfaeb1bec99bd1d00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the complete supplied body and discussion do not show the changed V2 binding and command preparation rejecting a reassigned conversation or revoked own...; Review finding: [P1] Include the publication helper required by the memory integration — extensions/memory-core/src/memory/manager-database-context.ts:50 - [P2] Scope snapshot inv... (sha=366d0a1ac714bfbd978fcf596a0e825e99be40fd)",
+      "expected_head_sha": "366d0a1ac714bfbd978fcf596a0e825e99be40fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T22:56:20.053Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sw7b-6",
+        "head_sha": "366d0a1ac714bfbd978fcf596a0e825e99be40fd",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
