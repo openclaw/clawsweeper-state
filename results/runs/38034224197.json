@@ -1,0 +1,100 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-168306",
+  "mode": "autonomous",
+  "run_id": "38034224197",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38034224197",
+  "head_sha": "acf20cfb6129d683aa2c1a6c8bd36a4b3dcef2c9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-168306.md",
+  "published_at": "2026-10-10T08:24:31.797Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/168306",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/168306",
+  "canonical_pr": null,
+  "summary": "Verified the prompt contradiction in source at preflight main b883658c8178ce1ea5dced8ffb6da60a612d66e1. Narrow fix artifact prepared; implementation and failing/passing regression proof are blocked by read-only filesystem permissions and absent node_modules. No code or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#168306",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168306",
+      "candidate_fix": null,
+      "reason": "A bounded instruction bug remains in current preflight main. Preserve the existing policy and defer implementation to the writable executor after failing baseline proof."
+    },
+    {
+      "target": "#164946",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different mechanism; leave open outside this implementation."
+    },
+    {
+      "target": "#167709",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct delivery-accounting defect; leave open."
+    },
+    {
+      "target": "#153800",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical policy evidence, not a repair or closure target."
+    },
+    {
+      "target": "#82060",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical fallback evidence; fallback changes are outside this job."
+    },
+    {
+      "target": "#166595",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-168306",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#168306",
+      "candidate_fix": null,
+      "reason": "Provide one narrow executor plan without claiming implementation, regression proof, or publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
