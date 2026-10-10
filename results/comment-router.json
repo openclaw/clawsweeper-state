@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:55:58.384Z",
+  "updated_at": "2026-10-10T09:57:14.088Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155801:5779566340:2026-10-10T05:35:09Z:clawsweeper_needs_human",
-      "comment_id": "5779566340",
-      "comment_version_key": "5779566340:2026-10-10T05:35:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155801#issuecomment-5779566340",
-      "comment_created_at": "2026-09-22T15:49:34Z",
-      "comment_updated_at": "2026-10-10T05:35:09Z",
-      "comment_body_sha256": "d6c4e9433fdab5bf4bfa0ea71abc081222a88eaf9aaafc7d45f6904d7889ef0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155801,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied terminal evidence exercises the shared controller after a real Codex initialize handshake, while the WebSocket regression manually supplies timestamps; neither exercises... (sha=809358a01d97e6cd053dff2dc238fb453953e4d1)",
-      "expected_head_sha": "809358a01d97e6cd053dff2dc238fb453953e4d1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T05:36:25.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-attempt-deadline-wall-clock-085",
-        "head_sha": "809358a01d97e6cd053dff2dc238fb453953e4d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168218:6094124922:2026-10-10T05:35:57Z:clawsweeper_needs_human",
       "comment_id": "6094124922",
@@ -33151,6 +33118,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167887:6096330814:2026-10-10T09:56:27Z:re_review",
+      "comment_id": "6096330814",
+      "comment_version_key": "6096330814:2026-10-10T09:56:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167887#issuecomment-6096330814",
+      "comment_created_at": "2026-10-10T09:56:27Z",
+      "comment_updated_at": "2026-10-10T09:56:27Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167887,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T09:57:13.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-one-narrative",
+        "head_sha": "31ba9f8dfb6ae8989ce0707ef0d522b277d53674",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
