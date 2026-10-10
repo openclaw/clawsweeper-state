@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:21:50.533Z",
+  "updated_at": "2026-10-10T01:22:37.038Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167955:6088896942:2026-10-09T20:41:03Z:clawsweeper_needs_human",
-      "comment_id": "6088896942",
-      "comment_version_key": "6088896942:2026-10-09T20:41:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167955#issuecomment-6088896942",
-      "comment_created_at": "2026-10-09T20:41:03Z",
-      "comment_updated_at": "2026-10-09T20:41:03Z",
-      "comment_body_sha256": "52fbfcf06b373e9b788a0e4f486fcba862859c641d436f6cd0ef21da6b0baac6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167955,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The inspected body supplies seven passing unit tests with fake timers, not an observed run of closeMemoryManagers through the production search flow. Provide a redacted terminal trace... (sha=706a22267fdfcdfecc44dc6dee64ae9740059e41)",
-      "expected_head_sha": "706a22267fdfcdfecc44dc6dee64ae9740059e41",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T20:42:04.638Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/memory-search-deadline-monotonic-20261009",
-        "head_sha": "706a22267fdfcdfecc44dc6dee64ae9740059e41",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162684:5931527660:2026-10-09T20:41:03Z:clawsweeper_needs_human",
       "comment_id": "5931527660",
@@ -32914,6 +32881,53 @@
         "kind": "pull_request",
         "branch": "fix/llama-cpp-setup-authored-model",
         "head_sha": "66e3233b7c5ef4c981c9051a627975e3b47a89fa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168034:6092120938:2026-10-10T01:21:37Z:re_review",
+      "comment_id": "6092120938",
+      "comment_version_key": "6092120938:2026-10-10T01:21:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168034#issuecomment-6092120938",
+      "comment_created_at": "2026-10-10T01:21:37Z",
+      "comment_updated_at": "2026-10-10T01:21:37Z",
+      "comment_body_sha256": "f70903deeff81b5b62994b4f3bf6bbe49f2562b22b84bfb92579e967c256588f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168034,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:22:35.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/duplicate-session-name-error-display",
+        "head_sha": "99e40bb0c94606bd21b9304b071c3d30e1e010a8",
         "cluster_id": null,
         "job_path": null
       },
