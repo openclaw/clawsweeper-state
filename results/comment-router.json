@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T16:17:08.325Z",
+  "updated_at": "2026-10-10T16:17:34.066Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5352695771:2026-08-20T07:19:01Z:re_review",
-      "comment_id": "5352695771",
-      "comment_version_key": "5352695771:2026-08-20T07:19:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5352695771",
-      "comment_created_at": "2026-08-20T07:19:01Z",
-      "comment_updated_at": "2026-08-20T07:19:01Z",
-      "comment_body_sha256": "48c1c93a9e9eefc0d53dae4b39a0c49f4a1aa9303a473643ef6ffa763987649f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T13:13:20.471Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5356339395:2026-08-20T13:10:31Z:re_review",
       "comment_id": "5356339395",
@@ -30802,6 +30775,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168485:6098571826:2026-10-10T16:16:36Z:clawsweeper_needs_human",
+      "comment_id": "6098571826",
+      "comment_version_key": "6098571826:2026-10-10T16:16:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168485#issuecomment-6098571826",
+      "comment_created_at": "2026-10-10T14:32:56Z",
+      "comment_updated_at": "2026-10-10T16:16:36Z",
+      "comment_body_sha256": "f96328eed4a536395630d3e548ffa2c4891250d528b3c1b20e8cd292975f3c25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: exercise allowed and revoked command owners through current and child Matrix binding operations, including revocation during queue and thread-root-send...; Review finding: [P2] Recheck expiry when queued removal executes — extensions/matrix/src/matrix/thread-bindings.ts:402-405 - [P2] Retire the manager after an uncertain targeted ac... (sha=a4a2361725492815a9e42dfdefccf44f8c35ccae)",
+      "expected_head_sha": "a4a2361725492815a9e42dfdefccf44f8c35ccae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T16:17:34.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sw7b-7",
+        "head_sha": "a4a2361725492815a9e42dfdefccf44f8c35ccae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
