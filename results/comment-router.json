@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:27:15.071Z",
+  "updated_at": "2026-10-10T07:27:29.230Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168091:6092905713:2026-10-10T03:37:18Z:clawsweeper_needs_human",
-      "comment_id": "6092905713",
-      "comment_version_key": "6092905713:2026-10-10T03:37:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168091#issuecomment-6092905713",
-      "comment_created_at": "2026-10-10T02:41:15Z",
-      "comment_updated_at": "2026-10-10T03:37:18Z",
-      "comment_body_sha256": "7b26ccc1a61b08263792f5a9be8031d84517bfb6240da66b926e624320e73c71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Supplied focused tests exercise CronService with mocked execution; the new real-HTTP notification test is reported blocked before execution, and no shipped Gateway or Telegram run is... (sha=56fda1280b751f965b7c56d67de7f1eb19c1b55e)",
-      "expected_head_sha": "56fda1280b751f965b7c56d67de7f1eb19c1b55e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:38:11.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-failure-alert-error-cause",
-        "head_sha": "56fda1280b751f965b7c56d67de7f1eb19c1b55e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167880:6085866973:2026-10-10T03:37:10Z:clawsweeper_needs_human",
       "comment_id": "6085866973",
@@ -33245,6 +33212,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168166:6095107958:2026-10-10T07:26:34Z:re_review",
+      "comment_id": "6095107958",
+      "comment_version_key": "6095107958:2026-10-10T07:26:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168166#issuecomment-6095107958",
+      "comment_created_at": "2026-10-10T07:26:34Z",
+      "comment_updated_at": "2026-10-10T07:26:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168166,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T07:27:27.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ollama-thinking-levels-from-show",
+        "head_sha": "8fc1cb4dc682a9062a4bca05f50566720a7702b5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
