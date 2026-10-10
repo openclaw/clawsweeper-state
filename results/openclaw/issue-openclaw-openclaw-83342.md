@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-83342"
 mode: "autonomous"
-run_id: "38077249834"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38077249834"
-head_sha: "49c65085f09de567292d1c145314dc8189612234"
+run_id: "38085188061"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38085188061"
+head_sha: "ef832edef590efd84628c44ff1ac9cf9c8f1fa0d"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-10-10T20:43:57.804Z"
+published_at: "2026-10-10T23:33:49.954Z"
 canonical: "https://github.com/openclaw/openclaw/issues/83342"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/83342"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38077249834](https://github.com/openclaw/clawsweeper/actions/runs/38077249834)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38085188061](https://github.com/openclaw/clawsweeper/actions/runs/38085188061)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/83342
 
 ## Summary
 
-Source inspection supports a narrow channel /models repair. Implementation and failing regression remain blocked by the read-only workspace and missing Vitest dependencies. No code or GitHub state changed; the executor fix plan is prepared.
+Source inspection supports a narrow channel /models repair at preflight main 53d2109ebfce9e2612115315d8b814cbcef6266d. Implementation is blocked by the read-only workspace and absent dependencies. No failing regression, repaired branch, review, or Telegram proof was produced. The executor must reproduce before editing.
 
 ## Impact
 
@@ -66,14 +66,14 @@ Source inspection supports a narrow channel /models repair. Implementation and f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #83342 | fix_needed | planned | canonical | No open viable fix PR is hydrated. Reproduce on reconciled current main before implementing the remaining channel projection repair. |
-| #82243 | keep_closed | skipped | related | No action on closed context. |
-| #85982 | keep_closed | skipped | related | Preserve historical contribution credit; do not reopen or close again. |
-| #97498 | keep_closed | skipped | related | Historical context; visibility features remain outside this repair. |
-| #103315 | keep_closed | skipped | independent | xai/x-ai normalization is explicitly outside this job. |
-| #103454 | keep_closed | skipped | independent | Separate provider alias contract. |
-| #166311 | keep_closed | skipped | related | Reuse the merged owner contract and credit @obviyus; do not treat this partial repair as full issue coverage. |
-| cluster:issue-openclaw-openclaw-83342 | build_fix_artifact | planned |  | Narrow executor artifact; no product ambiguity requires human judgment. |
+| #83342 | fix_needed | planned | canonical | Keep the issue open and prepare one bug-only implementation PR; reproduction remains a prerequisite. |
+| #82243 | keep_closed | skipped | related | No mutation of closed context. |
+| #85982 | keep_closed | skipped | related | Historical contributor work informs credit and preservation requirements; it is not an open repair target. |
+| #97498 | keep_closed | skipped | related | No visibility feature or configuration change. |
+| #103315 | keep_closed | skipped | independent | Historical context only. |
+| #103454 | keep_closed | skipped | independent | Historical context only. |
+| #166311 | keep_closed | skipped | related | Reuse the existing policy owner and preserve @obviyus's contribution. |
+| cluster:issue-openclaw-openclaw-83342 | build_fix_artifact | planned |  | A narrow repair plan is reviewable, but no implementation or publication is ready. |
 
 ## Needs Human
 
