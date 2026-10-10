@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:26:31.530Z",
+  "updated_at": "2026-10-10T07:26:46.296Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168097:6093347455:2026-10-10T03:34:16Z:re_review",
-      "comment_id": "6093347455",
-      "comment_version_key": "6093347455:2026-10-10T03:34:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168097#issuecomment-6093347455",
-      "comment_created_at": "2026-10-10T03:34:16Z",
-      "comment_updated_at": "2026-10-10T03:34:16Z",
-      "comment_body_sha256": "a8265702d48efefb25a323a296733ff1abeeb660a3922ecc2e984b3219850b6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168097,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T03:35:22.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/reduce-upgrade-proof-critical-path-time-2",
-        "head_sha": "1d2fcdc59d27371be5cea4f98c010b12e929ea02",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164909:5980183222:2026-10-10T03:35:21Z:autoclose",
       "comment_id": "5980183222",
@@ -33259,6 +33212,39 @@
       "status": "skipped",
       "processed_at": "2026-10-10T07:26:31.530Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2048:6094297086:2026-10-10T07:25:56Z:clawsweeper_needs_human",
+      "comment_id": "6094297086",
+      "comment_version_key": "6094297086:2026-10-10T07:25:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2048#issuecomment-6094297086",
+      "comment_created_at": "2026-10-10T05:40:34Z",
+      "comment_updated_at": "2026-10-10T07:25:56Z",
+      "comment_body_sha256": "b3f28a4c7b093cfbe5e4887606adbd003a16def6e64f8800c8b8839a044845e2",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2048,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: exercise occ dev up with the Compose OpenShell profile and differing host/container UIDs, demonstrate controller and worker credential consumption thro...; Review finding: [medium] Unverified routing-credential access boundary — internal/occdev/compose_routing.go:69 (sha=e047eac6a6634be923515f73dbe35c04e70dbb8e)",
+      "expected_head_sha": "e047eac6a6634be923515f73dbe35c04e70dbb8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T07:26:46.296Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kevin/openshell-pr-advisory",
+        "head_sha": "e047eac6a6634be923515f73dbe35c04e70dbb8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
