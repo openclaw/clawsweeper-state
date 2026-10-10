@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:07:53.674Z",
+  "updated_at": "2026-10-10T01:09:19.769Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167392:6066490286:2026-10-09T20:34:35Z:clawsweeper_needs_human",
-      "comment_id": "6066490286",
-      "comment_version_key": "6066490286:2026-10-09T20:34:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167392#issuecomment-6066490286",
-      "comment_created_at": "2026-10-08T18:31:32Z",
-      "comment_updated_at": "2026-10-09T20:34:35Z",
-      "comment_body_sha256": "7e1e6b828fed74c85db04f9efaed418744b3097fc79aa29e503e5ee61e1b7f0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The inspected manual standard-mode Telegram screenshot shows the changed row renderer restoring tool prefixes at the reported reviewed build; this is meaningful after-fix client proof... (sha=e17f361283f4688ca31f76baed815eb2d0f93e8f)",
-      "expected_head_sha": "e17f361283f4688ca31f76baed815eb2d0f93e8f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T20:35:40.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-progress-tool-emojis-20261008",
-        "head_sha": "e17f361283f4688ca31f76baed815eb2d0f93e8f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:166573:6037198045:2026-10-09T20:35:31Z:clawsweeper_needs_human",
       "comment_id": "6037198045",
@@ -32905,6 +32872,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167902:6092000046:2026-10-10T01:08:18Z:re_review",
+      "comment_id": "6092000046",
+      "comment_version_key": "6092000046:2026-10-10T01:08:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167902#issuecomment-6092000046",
+      "comment_created_at": "2026-10-10T01:08:18Z",
+      "comment_updated_at": "2026-10-10T01:08:18Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167902,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:09:18.203Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-sighup-managed-children",
+        "head_sha": "0ba0bcc58b2597bc62a9a394a0b9d8b525f82a92",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
