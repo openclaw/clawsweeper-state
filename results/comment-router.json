@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T23:33:08.593Z",
+  "updated_at": "2026-10-10T23:33:39.841Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168586:6100610958:2026-10-10T18:09:05Z:re_review",
-      "comment_id": "6100610958",
-      "comment_version_key": "6100610958:2026-10-10T18:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168586#issuecomment-6100610958",
-      "comment_created_at": "2026-10-10T18:09:05Z",
-      "comment_updated_at": "2026-10-10T18:09:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168586,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T18:09:56.651Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/clawsimple",
-        "head_sha": "ce40e3eea94479c8584e2f18f0f19b44b6150981",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168500:6099245399:2026-10-10T18:09:29Z:clawsweeper_needs_human",
       "comment_id": "6099245399",
@@ -33376,6 +33329,39 @@
         "kind": "pull_request",
         "branch": "oc-fix-142940-busctl-json",
         "head_sha": "7fda6f73827f658f9745c124d10567997f387a70",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168726:6103282387:2026-10-10T23:32:40Z:clawsweeper_needs_human",
+      "comment_id": "6103282387",
+      "comment_version_key": "6103282387:2026-10-10T23:32:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168726#issuecomment-6103282387",
+      "comment_created_at": "2026-10-10T23:23:47Z",
+      "comment_updated_at": "2026-10-10T23:32:40Z",
+      "comment_body_sha256": "5bb46670ef53affc12ae0ad0f83d0d0f1ff2cdb3938746b5c54ca8b41d145819",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168726,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6cc99a4d0e89c957132567590fe90537c6689e1f)",
+      "expected_head_sha": "6cc99a4d0e89c957132567590fe90537c6689e1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T23:33:39.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-switch-back-context",
+        "head_sha": "6cc99a4d0e89c957132567590fe90537c6689e1f",
         "cluster_id": null,
         "job_path": null
       }
