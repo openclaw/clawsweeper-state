@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "38054063532"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38054063532"
-head_sha: "ff328679cb3940489b2f2cd59e5bc69c3505e204"
+run_id: "38057366788"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38057366788"
+head_sha: "43288b03d404df57edc9886bfd3bf3e94b956c47"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-10T13:03:46.972Z"
+published_at: "2026-10-10T13:55:05.246Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38054063532](https://github.com/openclaw/clawsweeper/actions/runs/38054063532)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38057366788](https://github.com/openclaw/clawsweeper/actions/runs/38057366788)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Inspection of supplied main df5e39492cfb6bdb388fea6e0dca91398b8ca789 confirms the adapter still depends on native status for exact run identity. No safe implementation PR can be specified from the available contract. No files changed, tests run, or GitHub mutations performed.
+Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Current main still lacks that observation path. No safe Crabbox-only fix was identified; no files changed, tests run, or PR proposed.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Implementation requires a supported Blacksmith pre-worker dispatch association a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | skipped | related | External prerequisite: Blacksmith must expose a supported durable binding from Testbox ID to dispatch/run identity before worker registration, preserve it through cancellation/admission failure, and expose terminal status. Once that contract is available, a narrow adapter repair can be designed. The job explicitly requires stopping without a PR when safe implementation is unavailable. |
-| #2669 | keep_closed | skipped | related | Closed context only. |
-| #2670 | keep_closed | skipped | related | Merged historical context. |
-| #2682 | keep_closed | skipped | related | Closed context only. |
-| #2683 | keep_closed | skipped | related | Merged historical context. |
-| #2719 | keep_closed | skipped | independent | Independent merged optimization. |
+| #2708 | keep_related | blocked | related | Resume implementation when a supported provider contract binds the exact Testbox request to its workflow before worker registration and preserves terminal failure evidence. Guessing runs by workflow/ref/time or treating native completion as settlement would violate the documented ownership guarantees. Keep the issue open; no executable fix artifact is justified yet. |
+| #2669 | keep_closed | skipped | related | Historical context, not an implementation target. |
+| #2670 | keep_closed | skipped | related | Preserve its recovery guarantees. |
+| #2682 | keep_closed | skipped | related | Distinct historical capability request. |
+| #2683 | keep_closed | skipped | related | Does not resolve the missing provider dispatch contract. |
+| #2719 | keep_closed | skipped | independent | Independent historical work. |
 
 ## Needs Human
 

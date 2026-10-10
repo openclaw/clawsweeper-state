@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "issue-openclaw-crabbox-2708",
+  "mode": "autonomous",
+  "run_id": "38057366788",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38057366788",
+  "head_sha": "43288b03d404df57edc9886bfd3bf3e94b956c47",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-crabbox-2708.md",
+  "published_at": "2026-10-10T13:55:05.246Z",
+  "canonical": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_issue": "https://github.com/openclaw/crabbox/issues/2708",
+  "canonical_pr": null,
+  "summary": "Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract. Current main still lacks that observation path. No safe Crabbox-only fix was identified; no files changed, tests run, or PR proposed.",
+  "actions": [
+    {
+      "target": "#2708",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "related",
+      "canonical": "#2708",
+      "candidate_fix": null,
+      "reason": "Resume implementation when a supported provider contract binds the exact Testbox request to its workflow before worker registration and preserves terminal failure evidence. Guessing runs by workflow/ref/time or treating native completion as settlement would violate the documented ownership guarantees. Keep the issue open; no executable fix artifact is justified yet."
+    },
+    {
+      "target": "#2669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not an implementation target."
+    },
+    {
+      "target": "#2670",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve its recovery guarantees."
+    },
+    {
+      "target": "#2682",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical capability request."
+    },
+    {
+      "target": "#2683",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Does not resolve the missing provider dispatch contract."
+    },
+    {
+      "target": "#2719",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent historical work."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 5
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#2708",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
