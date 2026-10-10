@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T08:22:06.925Z",
+  "updated_at": "2026-10-10T08:23:00.728Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:171:6093711890:2026-10-10T04:21:19Z:clawsweeper_auto_repair",
-      "comment_id": "6093711890",
-      "comment_version_key": "6093711890:2026-10-10T04:21:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/171#issuecomment-6093711890",
-      "comment_created_at": "2026-10-10T04:21:19Z",
-      "comment_updated_at": "2026-10-10T04:21:19Z",
-      "comment_body_sha256": "31062cdf1a6ea403899d430e51289758e081a4d14bb3ae093cf491d1f688f964",
-      "repo": "openclaw/openclaw-windows-packaging",
-      "issue_number": 171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=5793140eae1576cb82593f61b3448ead1f27e2d2)",
-      "expected_head_sha": "5793140eae1576cb82593f61b3448ead1f27e2d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T04:22:11.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/background-gateway-recovery",
-        "head_sha": "5793140eae1576cb82593f61b3448ead1f27e2d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:901:6093658503:2026-10-10T04:21:47Z:clawsweeper_needs_human",
       "comment_id": "6093658503",
@@ -33039,6 +33006,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:156650:6095633927:2026-10-10T08:22:08Z:re_review",
+      "comment_id": "6095633927",
+      "comment_version_key": "6095633927:2026-10-10T08:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/156650#issuecomment-6095633927",
+      "comment_created_at": "2026-10-10T08:22:08Z",
+      "comment_updated_at": "2026-10-10T08:22:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 156650,
+      "author": "altaywtf",
+      "author_id": 9790196,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T08:22:59.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-local-worker-timeout-attribution",
+        "head_sha": "2dba9a8070976ea0b683f4e00d8ba3db3b8f9e40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
