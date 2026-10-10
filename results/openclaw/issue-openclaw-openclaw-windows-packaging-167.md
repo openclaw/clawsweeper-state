@@ -1,54 +1,54 @@
 ---
 repo: "openclaw/openclaw-windows-packaging"
 cluster_id: "issue-openclaw-openclaw-windows-packaging-167"
-mode: "autonomous"
-run_id: "38059433706"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38059433706"
+mode: "plan"
+run_id: "38059817602"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38059817602"
 head_sha: "50838a397382cbecd0de943145ea859e435f053b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T14:28:04.543Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T14:32:38.085Z"
 canonical: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_issue: "https://github.com/openclaw/openclaw-windows-packaging/issues/167"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-windows-packaging-167
 
 Repo: openclaw/openclaw-windows-packaging
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38059433706](https://github.com/openclaw/clawsweeper/actions/runs/38059433706)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38059817602](https://github.com/openclaw/clawsweeper/actions/runs/38059817602)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw-windows-packaging/issues/167
 
 ## Summary
 
-Verified the source-proven copy defect on preflight main 4215593cd5abd4cd1f189e245dd64e7372415119. A narrow managed-copy fix remains viable. Implementation and validation are blocked on this read-only Linux host; no files or GitHub state changed.
+Plan a narrow managed byte-copy repair for #167. The clean checkout matches preflight main 4215593cd5abd4cd1f189e245dd64e7372415119 and still uses File.Copy in SessionNativeStager.CopyDirectory. No files or GitHub state changed. Windows regression, quality, Release, architecture, and installed-MSIX proof remain unrun.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,13 +66,8 @@ Verified the source-proven copy defect on preflight main 4215593cd5abd4cd1f189e2
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #167 | fix_needed | planned | canonical | Repair encrypted-source copying in the existing staging owner. No active implementation PR is provided, and no product or security-boundary decision is required. |
-| #75 | keep_closed | skipped | related | Historical implementation context only; preserve its existing contributor attribution. |
-| #86 | keep_closed | skipped | related | Related historical preload repair; no shared copy defect is established. |
-| #111 | keep_closed | skipped | related | Historical subsystem context only. |
-| #160826 | needs_human | blocked | needs_human | Resolve the repository identity and hydrate the intended ref before classifying it as an issue or PR. Do not fabricate kind or timestamp, interpret unavailable state as closed, or use this ref for mutation or coverage claims. |
-| cluster:issue-openclaw-openclaw-windows-packaging-167 | build_fix_artifact | planned |  | The artifact is ready for an executor with writable checkout and disposable Windows facilities. Local implementation and validation remain blocked, not technically rejected. |
+| https://github.com/openclaw/openclaw-windows-packaging/issues/167 | build_fix_artifact | planned | canonical | The existing stager owns the defect and offers a focused repair without configuration, protocol, runtime, or security-boundary changes. |
 
 ## Needs Human
 
-- #160826: Resolve the repository identity before any further action. Hydration in openclaw/openclaw-windows-packaging returned HTTP 404 with kind unknown and updated_at null; the separately linked openclaw/openclaw issue is unhydrated. This blocks only classification of this ref.
+- none
