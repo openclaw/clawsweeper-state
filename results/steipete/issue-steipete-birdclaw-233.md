@@ -2,16 +2,16 @@
 repo: "steipete/birdclaw"
 cluster_id: "issue-steipete-birdclaw-233"
 mode: "autonomous"
-run_id: "38019483594"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38019483594"
+run_id: "38020877899"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38020877899"
 head_sha: "f51199a8d817fa8222656fce030f99e5b28f7e87"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T03:12:02.000Z"
+result_status: "planned"
+published_at: "2026-10-10T03:36:14.475Z"
 canonical: "https://github.com/steipete/birdclaw/issues/233"
 canonical_issue: "https://github.com/steipete/birdclaw/issues/233"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: steipete/birdclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38019483594](https://github.com/openclaw/clawsweeper/actions/runs/38019483594)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38020877899](https://github.com/openclaw/clawsweeper/actions/runs/38020877899)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/steipete/birdclaw/issues/233
 
 ## Summary
 
-The defect remains source-proven on preflight main 2f81941b308bd99d38c4608d2d241bdbe13135a7. A narrow implementation artifact is ready for the executor. Local implementation and validation are blocked by the read-only filesystem, missing Bun, and absent dependencies. No files or GitHub state were changed.
+Verified the defect on supplied main 2f81941b308bd99d38c4608d2d241bdbe13135a7 and prepared a narrow repair plan. Implementation and PR publication are blocked locally by read-only filesystem access, missing Bun/dependencies, and unavailable real-setup recovery proof.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ The defect remains source-proven on preflight main 2f81941b308bd99d38c4608d2d241
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #233 | fix_needed | planned | canonical | The request is narrow and viable. Preserve #233 as the canonical issue and implement one fix PR after completing the regression and validation gates. |
-| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation remains blocked in this worker environment. The executor must establish the failing regression, implement and validate the repair, and capture real-setup recovery evidence before publication. |
+| #233 | fix_needed | planned | canonical | The ordinary URL-expansion bug remains present and has a narrow repair path without changing the fetching trust boundary. |
+| cluster:issue-steipete-birdclaw-233 | build_fix_artifact | planned |  | A concrete fix artifact can be prepared despite this worker's implementation restrictions. |
+| cluster:issue-steipete-birdclaw-233 | open_fix_pr | blocked |  | Publication must wait for executor implementation, passing validation/review, and the required real-setup proof. This is an environment/proof blocker, not an unresolved product decision. |
 
 ## Needs Human
 
