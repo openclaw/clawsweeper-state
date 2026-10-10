@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:54:35.406Z",
+  "updated_at": "2026-10-10T05:54:47.709Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141310:6092378085:2026-10-10T01:51:07Z:re_review",
-      "comment_id": "6092378085",
-      "comment_version_key": "6092378085:2026-10-10T01:51:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141310#issuecomment-6092378085",
-      "comment_created_at": "2026-10-10T01:51:07Z",
-      "comment_updated_at": "2026-10-10T01:51:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141310,
-      "author": "hugenshen",
-      "author_id": 16300669,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:52:01.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-git-reject-truncated-stdout",
-        "head_sha": "516017bcdb57a44e7d2806e2854e624632379c33",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-10-10T01:51:09Z:clawsweeper_auto_repair",
       "comment_id": "5010052996",
@@ -33473,6 +33426,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-161024-status-foreign-port-early-exit",
         "head_sha": "ee508a30ff4a8f05b4ef388d0d87f41865c57b34",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:892:6093456155:2026-10-10T05:53:59Z:clawsweeper_auto_repair",
+      "comment_id": "6093456155",
+      "comment_version_key": "6093456155:2026-10-10T05:53:59Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/892#issuecomment-6093456155",
+      "comment_created_at": "2026-10-10T03:48:19Z",
+      "comment_updated_at": "2026-10-10T05:53:59Z",
+      "comment_body_sha256": "ced3c068517864b4c14b6a58046393825a6f950138ae30dc2d4dd5d4320ef4dc",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 892,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=f6686d33b39af8e95d78a7fae76647595f52be1b)",
+      "expected_head_sha": "f6686d33b39af8e95d78a7fae76647595f52be1b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:54:47.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "koffi/f1-pipe",
+        "head_sha": "f6686d33b39af8e95d78a7fae76647595f52be1b",
         "cluster_id": null,
         "job_path": null
       }
