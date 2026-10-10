@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-83354"
 mode: "autonomous"
-run_id: "38067600929"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38067600929"
-head_sha: "260683638a342cbed87181118530b15980282ff0"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-10-10T18:06:01.677Z"
+run_id: "38075958329"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38075958329"
+head_sha: "49c65085f09de567292d1c145314dc8189612234"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-10-10T19:08:08.096Z"
 canonical: "https://github.com/openclaw/openclaw/issues/83354"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/83354"
 canonical_pr: null
 actions_total: 6
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38067600929](https://github.com/openclaw/clawsweeper/actions/runs/38067600929)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38075958329](https://github.com/openclaw/clawsweeper/actions/runs/38075958329)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/83354
 
 ## Summary
 
-Reproduced the Configure defect against preflight main f9371958b137ec885ec0e53551755894ec48598f using actual Configure and Linux enabled-state functions with deterministic external-I/O fixtures. Prepared a two-file fix plan. Implementation and required validation are blocked by the read-only filesystem and missing dependencies. No files or GitHub state changed.
+Verified the Configure defect on preflight main aec6e7a56eb03eaba1a648310876d2d6d4811745 with a failing in-memory source-body reproduction. Prepared a narrow implementation artifact. Local implementation and full validation are blocked by read-only filesystem permissions, absent dependencies, and unavailable user-systemd access. No files or GitHub state changed.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Reproduced the Configure defect against preflight main f9371958b137ec885ec0e5355
 | Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Reproduced the Configure defect against preflight main f9371958b137ec885ec0e5355
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests, tooling [check:changed] src/commands/configure.daemon.test.ts: core test [check:changed] src/commands/configure.daemon.ts: core production [check:changed] test/tsconfig/tsconfig.core.test.ui-e2e.json: root test/support surface [check:changed] test/tsconfig/tsconfig.core.test.ui-other.json: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] SQLite worker ratchet $ node --import ./scripts/tsx.mjs scripts/check-database-worker-ratchet.mts --base origin/main [check:changed] test timeout race ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-timeout-race-ratchet.mts --base origin/main [check:changed] first-party mock export ratchet $ node --import ./scripts/tsx.mjs scripts/check-test-mock-exports.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/commands/configure.daemon.test.ts src/commands/configure.daemon.ts test/tsconfig/tsconfig.core.test.ui-e2e.json test/tsconfig/tsconfig.core.test.ui-other.json [check:changed] config docs baseline $ node --import ./scripts/tsx.mjs scripts/generate-config-doc-baseline.ts --check [check:changed] plugin boundaries $ node --import ./scripts/tsx.mjs scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] wrapper shadowing $ node --import ./scripts/tsx.mjs scripts/check-wrapper-shadowing.mts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] typecheck core $ node scripts/run-tsgo.mjs -p tsconfig.core.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/core.tsbuildinfo [check:changed] typecheck core tests $ node scripts/run-tsgo-core-test-shards.mjs [tsgo:agents-root] passed in 38.7s [tsgo:agents-other] passed in 39.6s [tsgo:agents-tools] passed in 38.5s [tsgo:gateway-root] passed in 50.0s [tsgo:gateway-server] passed in 45.8s [tsgo:gateway-other] passed in 40.6s [tsgo:infra] passed in 38.6s [tsgo:state-logging] passed in 39.9s [tsgo:commands] passed in 40.7s [tsgo:plugins-platform] passed in 41.6s [tsgo:config-cli] passed in 38.2s [tsgo:messaging] passed in 39.0s [tsgo:services] passed in 38.5s [tsgo:other] passed in 40.4s [tsgo:ui-pages] passed in 44.3s [tsgo:ui-e2e] passed in 42.9s [tsgo:ui-other] passed in 43.0s [tsgo:packages] passed in 35.8s [tsgo:plugin-sdk] passed in 38.8s [tsgo:commands-doctor] passed in 35.0s [tsgo:cli-update] passed in 38.0s [tsgo:gateway-methods] passed in 45.4s [tsgo:ui-chat] passed in 47.3s [tsgo:agents-sessions] passed in 42.6s [tsgo:services-cron] passed in 37.0s [tsgo:ui-app] passed in 41.3s [tsgo:ui-components] passed in 44.3s [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] deprecated API usage $ node --import ./scripts/tsx.mjs scripts/check-deprecated-api-usage.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) script unused-export scan: Unused exports are not allowed: tools/solid-lint/index.mjs: default Delete the exports or model their real production consumers in Knip. production unused-export scan: Unused exports are not allowed: src/cli/update-cli/update-command-post-activation-inspections.ts: POST_ACTIVATION_INSPECTIONS_STEP Delete the exports or model their real production consumers in Knip. [deadcode] Knip full-tree unused-export scan still running after 60s. full-tree unused-export scan: Unused exports are not allowed: src/agents/tools/sessions-channel-fixture.test-support.ts: resolveSessionConversationStub src/agents/tools/sessions-channel-fixture.test-support.ts: resolveSessionTargetStub src/cli/update-cli/update-command-post-activation-inspections.ts: POST_ACTIVATION_INSPECTIONS_STEP Delete the exports or model their real production consumers in Knip. [check:changed] summary 207ms ok conflict markers 311ms ok line-cap growth ratchet 4.49s ok max-lines suppression ratchet 10.57s ok assertion SAFETY comment ratchet 1.99s ok SQLite worker ratchet 732ms ok test timeout race ratchet 9.62s ok first-party mock export ratchet 168ms ok changelog attributions 137ms ok doctor deprecation registry 160ms ok guarded extension wildcard re-exports 148ms ok plugin-sdk wildcard re-exports 243ms ok duplicate scan target coverage 222ms ok dependency pin guard 73ms ok format changed files 3.39s ok config docs baseline 1.76s ok plugin boundaries 7.41s ok wrapper shadowing 420ms ok package patch guard 215ms ok test temp creation report (warning-only) 64.88s ok core tsgo  ... on through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=27 readers=extensions/active-memory/index.test.ts,extensions/active-memory/index.ts,extensions/codex/src/app-server/attempt-context.test.ts,extensions/codex/src/app-server/run-attempt-memory.test-support.ts,extensions/memory-core/index.ts removal-pending 2026-10-01 agent-harness-terminal-result-aliases due=true blocker=AgentHarnessAttemptResult.terminal and AgentHarnessDeliveryDefaults.visibleReplies; retain until harness migration verifies that legacy terminal fields and sourceVisibleReplies are unread readerRefs=0 readers=none removal-pending 2026-10-01 message-presentation-legacy-bridges due=true blocker=MessagePresentation values and channel presentation renderers; retain until reply producers and official channel packages no longer emit or read legacy interactive replies readerRefs=161 readers=extensions/a2a/src/inbound.ts,extensions/codex/src/app-server/run-attempt-active-turn.ts,extensions/codex/src/app-server/run-attempt.final-media.test.ts,extensions/codex/src/conversation-binding-hooks.ts,extensions/codex/src/conversation-binding.ts removal-pending 2026-10-01 official-plugin-export-aliases due=true blocker=MessagePresentation renderers and host-owned timeout/runtime behavior; retain until minimum supported official plugin packages no longer import these aliases readerRefs=21 readers=extensions/discord/api.ts,extensions/discord/src/voice/audio-worker-thread.ts,extensions/qa-lab/src/crabline-discord-thread-delivery.test.ts,extensions/qa-lab/src/live-transports/discord/discord-live.runtime.ts,extensions/qa-lab/src/live-transports/discord/discord-transcripts-authorization.runtime.test.ts removal-pending 2026-10-01 plugin-sdk-channel-setup-input-fields due=true blocker=plugin-local setup input intersections that declare each owning channel field; retain each field until a new published-plugin artifact sweep finds no reader readerRefs=0 readers=none removal-pending 2026-10-01 plugin-runtime-api-compat-aliases due=true blocker=the namespaced plugin API and focused runtime methods named per surface; retain until all enumerated flat API and runtime aliases have no readers readerRefs=8 readers=extensions/buzz/src/inbound.test.ts,extensions/feishu/src/bot.broadcast.routing.test.ts,extensions/feishu/src/bot.test.ts,extensions/feishu/src/comment-handler.test.ts,extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts removal-pending 2026-10-01 plugin-provider-manifest-compat-aliases due=true blocker=manifest-owned plugin kind/setup metadata and model catalog registration; retain until providers no longer publish runtime kind or legacy catalog hooks readerRefs=0 readers=none removal-pending 2026-10-01 plugin-sdk-provider-owned-helper-shims due=true blocker=provider-local auth, model, replay, OAuth, and stream helper APIs; retain until every helper is migrated in official providers and absent from published plugins readerRefs=468 readers=extensions/agentsapi/agentsapi-harness.lifecycle.test-helpers.ts,extensions/agentsapi/agentsapi-harness.persistence.test.ts,extensions/agentsapi/agentsapi-harness.ts,extensions/agentsapi/native-session-binding.test-api.ts,extensions/amazon-bedrock-mantle/discovery.ts removal-pending 2026-10-01 media-legacy-projection due=true blocker=ordered `MsgContext.media` / `InboundMediaFacts[]`; typed hook `media` and `originalMedia`; `Attachment*` template variables; and `openclaw/plugin-sdk/media-local-roots`; retain until a clean published-plugin artifact sweep verifies that the legacy media surfaces have no readers readerRefs=2 readers=src/plugins/compat/media-legacy-projection.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 memory-host-compatibility-aliases due=true blocker=canonical memory cache/FTS tables; retain until supported memory integrations are verified to use canonical tables without overrides and legacy table data remains preserved readerRefs=2 readers=src/plugins/compat/deprecation-marking.ts,src/plugins/contracts/extension-package-project-boundaries.test.ts removal-pending 2026-10-01 plugin-sdk-broad-runtime-barrels due=true blocker=focused plugin SDK subpaths for each runtime capability; retain until bundled and published plugins no longer import any of the seven broad barrels readerRefs=850 readers=extensions/a2a/src/http.test.ts,extensions/acpx/src/runtime.ts,extensions/acpx/src/session-owner-migration.ts,extensions/active-memory/index.ts,extensions/active-memory/query.ts removal-pending 2026-10-01 plugin-sdk-focused-compat-aliases due=true blocker=the focused replacement named by each TypeScript @deprecated annotation; retain until every enumerated alias has zero bundled and published readers readerRefs=463 readers=extensions/a2a/src/inbound.ts,extensions/acpx/index.test.ts,extensions/acpx/index.ts,extensions/acpx/register.runtime.test.ts,extensions/acpx/register.runtime.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=56 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/active-memory/trigger-recall.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts plugin-sdk entrypoints=367 supportedBundledFacade=0 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=26 wrapper shadowing guard passed. PASS package patch guard: no new pnpm patches; 9 approved patches allowlisted. Coercion helper declaration guard passed (112 allowlisted declarations). deprecated API usage guard passed |
-| issue_implementation_status_comment | updated | #83354 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,12 +66,12 @@ Reproduced the Configure defect against preflight main f9371958b137ec885ec0e5355
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #83354 | fix_needed | planned | canonical | The narrow Configure bug remains reproducible. No active canonical implementation PR is hydrated; the job authorizes one new implementation PR and prohibits merge or closure. |
-| #144153 | keep_closed | skipped | related | Historical source idea and contributor credit only. Adapt to current source and satisfy the outstanding proof requirement; do not reopen or close this historical item. |
-| #91221 | keep_closed | skipped | related | Merged historical context does not cover Configure's disabled-unit classification. |
-| #83330 | keep_closed | skipped | independent | Different root cause; historical context only. |
-| #165674 | keep_related | planned | related | Keep open outside this bug-only implementation. The Configure repair does not implement persistent suppression or masking policy. |
-| cluster:issue-openclaw-openclaw-83354 | build_fix_artifact | planned | canonical | The artifact is ready for a writable executor. Only implementation and validation are blocked; classification and fix planning are complete. |
+| #83354 | fix_needed | planned | canonical | The existing installed-definition capability supports a narrow bug fix without introducing suppression policy, configuration, or new service ownership. |
+| #165674 | keep_related | planned | related | Persistent suppression is distinct from Configure mistaking a disabled installation for an absent definition; leave this feature request outside the implementation. |
+| #144153 | keep_closed | skipped | related | Historical source of a useful idea and contributor credit. Adapt to current source and complete the outstanding proof; do not reopen, close, or update this historical branch. |
+| #91221 | keep_closed | skipped | related | A distinct supervisor-ownership repair does not fix Configure's disabled-definition decision. |
+| #83330 | keep_closed | skipped | related | Historical bootstrap context with a different mechanism; no action is required. |
+| cluster:issue-openclaw-openclaw-83354 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation and publication must proceed through the executor on a writable isolated host with dependencies and user-systemd access; no merge or closure is authorized. |
 
 ## Needs Human
 

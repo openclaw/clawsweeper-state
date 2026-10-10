@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-83354",
+  "mode": "autonomous",
+  "run_id": "38075958329",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38075958329",
+  "head_sha": "49c65085f09de567292d1c145314dc8189612234",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-83354.md",
+  "published_at": "2026-10-10T19:08:08.096Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/83354",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/83354",
+  "canonical_pr": null,
+  "summary": "Verified the Configure defect on preflight main aec6e7a56eb03eaba1a648310876d2d6d4811745 with a failing in-memory source-body reproduction. Prepared a narrow implementation artifact. Local implementation and full validation are blocked by read-only filesystem permissions, absent dependencies, and unavailable user-systemd access. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#83354",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "The existing installed-definition capability supports a narrow bug fix without introducing suppression policy, configuration, or new service ownership."
+    },
+    {
+      "target": "#165674",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Persistent suppression is distinct from Configure mistaking a disabled installation for an absent definition; leave this feature request outside the implementation."
+    },
+    {
+      "target": "#144153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Historical source of a useful idea and contributor credit. Adapt to current source and complete the outstanding proof; do not reopen, close, or update this historical branch."
+    },
+    {
+      "target": "#91221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "A distinct supervisor-ownership repair does not fix Configure's disabled-definition decision."
+    },
+    {
+      "target": "#83330",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical bootstrap context with a different mechanism; no action is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-83354",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#83354",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation and publication must proceed through the executor on a writable isolated host with dependencies and user-systemd access; no merge or closure is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
