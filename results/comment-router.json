@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:20:15.448Z",
+  "updated_at": "2026-10-10T01:21:38.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1843:6088884816:2026-10-09T20:40:12Z:clawsweeper_needs_human",
-      "comment_id": "6088884816",
-      "comment_version_key": "6088884816:2026-10-09T20:40:12Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1843#issuecomment-6088884816",
-      "comment_created_at": "2026-10-09T20:40:12Z",
-      "comment_updated_at": "2026-10-09T20:40:12Z",
-      "comment_body_sha256": "6c918625551170d67cfbbe1e36f7e14a0a8fc438d8e53c052c587764a6c6a497",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve maintainer decision** - Resolve the maintainer decision shown above before merge. (sha=240e964dbbee9cc04bdfdcb44e34813b90fabe88)",
-      "expected_head_sha": "240e964dbbee9cc04bdfdcb44e34813b90fabe88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T20:41:11.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-shard-tests",
-        "head_sha": "240e964dbbee9cc04bdfdcb44e34813b90fabe88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3932:6084850257:2026-10-09T20:40:14Z:clawsweeper_auto_repair",
       "comment_id": "6084850257",
@@ -32872,6 +32839,53 @@
         "kind": "pull_request",
         "branch": "fix/openai-compat-streaming-false",
         "head_sha": "d97acbcac43da8e7d5d6fa5f704f322796f2eb64",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:167897:6092112087:2026-10-10T01:20:41Z:re_review",
+      "comment_id": "6092112087",
+      "comment_version_key": "6092112087:2026-10-10T01:20:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167897#issuecomment-6092112087",
+      "comment_created_at": "2026-10-10T01:20:41Z",
+      "comment_updated_at": "2026-10-10T01:20:41Z",
+      "comment_body_sha256": "3fdbced6609b2fda7dc9fc4ef996872729d3d60a8dcc50b6191cfed2fe3548ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167897,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review — two ci fixture repairs on 26c4a6313d0f2d30b35a86110aedba6698cca4c5, with unchanged runtime safety logic and preserved behavioral assertions. the existing author response now records both root causes, ci-runtime red/green proof, and completed independent review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T01:21:32.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/goal-continuation-root-cause",
+        "head_sha": "26c4a6313d0f2d30b35a86110aedba6698cca4c5",
         "cluster_id": null,
         "job_path": null
       },
