@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:44:39.683Z",
+  "updated_at": "2026-10-10T05:45:01.181Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:166284",
-      "comment_id": "repair-loop-label-sweep:automerge:166284",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/166284",
-      "comment_created_at": "2026-10-10T01:38:56.098Z",
-      "comment_updated_at": "2026-10-10T01:38:56.098Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 166284,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "automerge enabled; current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T01:40:24.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-config-warning-size-drop",
-        "head_sha": "583ae647a803d4feb53678861d391c37c8b64c58",
-        "cluster_id": "automerge-openclaw-openclaw-166284",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-166284.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:164369:5970554408:2026-10-10T01:39:24Z:clawsweeper_needs_human",
       "comment_id": "5970554408",
@@ -33840,6 +33788,39 @@
         "kind": "pull_request",
         "branch": "steipete/coldload-plugin-ui-load",
         "head_sha": "26f8b42914abab269fbe27dccd2ce6983761e271",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157860:5826401030:2026-10-10T05:43:59Z:clawsweeper_needs_human",
+      "comment_id": "5826401030",
+      "comment_version_key": "5826401030:2026-10-10T05:43:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157860#issuecomment-5826401030",
+      "comment_created_at": "2026-09-25T03:53:47Z",
+      "comment_updated_at": "2026-10-10T05:43:59Z",
+      "comment_body_sha256": "c7724e5bbf6fe41e55437817e94bc29a5e2ac59f561129cef52f5cf3bb7c41fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Have the CI owner attribute the model-refresh stdout and dashboard cold-load failures using base or head-versus-revert evidence; request author repairs only for failures caused by this PR. (sha=46425438345f0a4cecb440b2d298f4786104da52)",
+      "expected_head_sha": "46425438345f0a4cecb440b2d298f4786104da52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T05:45:01.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-feedback-container-origins",
+        "head_sha": "46425438345f0a4cecb440b2d298f4786104da52",
         "cluster_id": null,
         "job_path": null
       }
