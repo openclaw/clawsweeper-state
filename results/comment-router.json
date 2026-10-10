@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T07:11:03.817Z",
+  "updated_at": "2026-10-10T07:11:38.974Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168132:6093166151:2026-10-10T03:10:19Z:clawsweeper_needs_human",
-      "comment_id": "6093166151",
-      "comment_version_key": "6093166151:2026-10-10T03:10:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168132#issuecomment-6093166151",
-      "comment_created_at": "2026-10-10T03:10:19Z",
-      "comment_updated_at": "2026-10-10T03:10:19Z",
-      "comment_body_sha256": "ee232b9070f275055a4d920709471ba2d405877927c8842719a31d8673860083",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied Linux proof exercises parser, event bus, executeAgentTurn, projector, and narrator input with synthetic wire events, mocked CLI transport, and mocked utility-model execut... (sha=5ff17c5b3e6355e7630eda5636e55362383a2610)",
-      "expected_head_sha": "5ff17c5b3e6355e7630eda5636e55362383a2610",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T03:11:12.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-cli-failure-title-20261010",
-        "head_sha": "5ff17c5b3e6355e7630eda5636e55362383a2610",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:156636:5800105509:2026-10-10T03:09:54Z:clawsweeper_needs_human",
       "comment_id": "5800105509",
@@ -33149,6 +33116,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168228:6094985917:2026-10-10T07:10:40Z:re_review",
+      "comment_id": "6094985917",
+      "comment_version_key": "6094985917:2026-10-10T07:10:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168228#issuecomment-6094985917",
+      "comment_created_at": "2026-10-10T07:10:40Z",
+      "comment_updated_at": "2026-10-10T07:10:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168228,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T07:11:37.372Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-prefer-newer-installed",
+        "head_sha": "5a2059e5972b859410ca8ef256448448ca5c44e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
