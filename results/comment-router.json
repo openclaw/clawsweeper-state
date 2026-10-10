@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:14:03.861Z",
+  "updated_at": "2026-10-10T20:14:21.392Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/collab:1:6069607413:2026-10-08T21:42:19Z:re_review",
-      "comment_id": "6069607413",
-      "comment_version_key": "6069607413:2026-10-08T21:42:19Z",
-      "comment_url": "https://github.com/openclaw/collab/pull/1#issuecomment-6069607413",
-      "comment_created_at": "2026-10-08T21:42:19Z",
-      "comment_updated_at": "2026-10-08T21:42:19Z",
-      "comment_body_sha256": "124c38e2aaedcf4e248ad9c6230fc1cd86315f688b35abd75f926a42aa9b7449",
-      "repo": "openclaw/collab",
-      "issue_number": 1,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T14:47:38.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/empty-anchor-outside-projected-text",
-        "head_sha": "f08c9a0745e715983f3330cb2e6543e1115de038",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/collab:1:6038915360:2026-10-10T14:46:49Z:clawsweeper_needs_human",
       "comment_id": "6038915360",
@@ -33180,6 +33133,39 @@
         "kind": "pull_request",
         "branch": "fix/ios-busy-chat-send",
         "head_sha": "6f96a96d74d168008bcc481e9ca2becae06cf15d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168316:6098379104:2026-10-10T20:13:26Z:clawsweeper_needs_human",
+      "comment_id": "6098379104",
+      "comment_version_key": "6098379104:2026-10-10T20:13:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168316#issuecomment-6098379104",
+      "comment_created_at": "2026-10-10T14:13:30Z",
+      "comment_updated_at": "2026-10-10T20:13:26Z",
+      "comment_body_sha256": "0c1b4b39fbfba297f4fb87c834f2d20fdf0f2d568d083a71837d7ae1eaeb28e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168316,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The complete body records real Gateway performance workloads and update validation, but supplies no final response or event trace for an allowed caller...; Review finding: [P2] Reuse unchanged snapshots without serializing them on metadata patches — src/config/sessions/session-accessor.sqlite-entry-cache-projection.ts:107-109 - [P2]... (sha=3006bca9517093afede690df8c5f987b37aa084e)",
+      "expected_head_sha": "3006bca9517093afede690df8c5f987b37aa084e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T20:14:21.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w11entrycache",
+        "head_sha": "3006bca9517093afede690df8c5f987b37aa084e",
         "cluster_id": null,
         "job_path": null
       }
