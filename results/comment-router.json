@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:47:42.276Z",
+  "updated_at": "2026-10-10T06:47:56.057Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103201:6092982178:2026-10-10T02:49:25Z:re_review",
-      "comment_id": "6092982178",
-      "comment_version_key": "6092982178:2026-10-10T02:49:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-6092982178",
-      "comment_created_at": "2026-10-10T02:49:25Z",
-      "comment_updated_at": "2026-10-10T02:49:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103201,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:50:15.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/incremental-session-chunk-diff",
-        "head_sha": "795f5bf616806f40c379a262f2264cfdcaf2d01d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1871:6092980306:2026-10-10T02:49:15Z:clawsweeper_needs_human",
       "comment_id": "6092980306",
@@ -33361,6 +33314,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-local-alias-shorthand",
         "head_sha": "eed9d09e7f94c56f7453a1573e727f3e095f13f5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167965:6089360322:2026-10-10T06:46:55Z:clawsweeper_needs_human",
+      "comment_id": "6089360322",
+      "comment_version_key": "6089360322:2026-10-10T06:46:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167965#issuecomment-6089360322",
+      "comment_created_at": "2026-10-09T21:13:36Z",
+      "comment_updated_at": "2026-10-10T06:46:55Z",
+      "comment_body_sha256": "361507d1323a56fd5b0171ac069b3dba3486fa13c544df44a045f43e9d04a8cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the reported Gateway workload supports the performance claim, but supplied results do not establish allowed and revoked placement persistence after gra...; Review finding: [P3] Limit the request-free helper claim to the host context — docs/plugins/sdk-runtime.md:318-320 - [medium] Establish revocation behavior after grant preparation... (sha=b89aab34cfc18928cc45d453011cdb5902d2fc70)",
+      "expected_head_sha": "b89aab34cfc18928cc45d453011cdb5902d2fc70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:47:56.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/noprobe",
+        "head_sha": "b89aab34cfc18928cc45d453011cdb5902d2fc70",
         "cluster_id": null,
         "job_path": null
       }
