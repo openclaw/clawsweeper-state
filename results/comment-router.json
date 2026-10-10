@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T06:44:36.166Z",
+  "updated_at": "2026-10-10T06:44:40.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154721:6092956909:2026-10-10T02:47:06Z:re_review",
-      "comment_id": "6092956909",
-      "comment_version_key": "6092956909:2026-10-10T02:47:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154721#issuecomment-6092956909",
-      "comment_created_at": "2026-10-10T02:47:06Z",
-      "comment_updated_at": "2026-10-10T02:47:06Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154721,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T02:47:53.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-embeddings-usage-zero-passthrough",
-        "head_sha": "4f5fece0f60e1c1441bf80b0f0bbac5485d194b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142022:5581651446:2026-10-10T02:47:38Z:autoclose",
       "comment_id": "5581651446",
@@ -33361,6 +33314,39 @@
         "kind": "pull_request",
         "branch": "fix/prompt-date-tail-context",
         "head_sha": "2920ba6119e8bc27867fafc2734ad5dc8b2989b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168285:6094766684:2026-10-10T06:43:44Z:clawsweeper_needs_human",
+      "comment_id": "6094766684",
+      "comment_version_key": "6094766684:2026-10-10T06:43:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168285#issuecomment-6094766684",
+      "comment_created_at": "2026-10-10T06:43:44Z",
+      "comment_updated_at": "2026-10-10T06:43:44Z",
+      "comment_body_sha256": "0af7a5a08eeb193c4b99cc18967e74e3b3803ee6344e63fb4b6adbff3c8a94f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the supplied handler tests mock child execution and show no actual transcript I/O. Provide redacted logs or terminal output from a real Gateway parent...; Review finding: [medium] Qualify authority after transcript-context detachment — src/gateway/agent-turn/agent-turn-service.ts:60 (sha=ec053c41edfc1ef4188a0a3c732e887e529b38f9)",
+      "expected_head_sha": "ec053c41edfc1ef4188a0a3c732e887e529b38f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T06:44:40.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/independent-run-transcript-context",
+        "head_sha": "ec053c41edfc1ef4188a0a3c732e887e529b38f9",
         "cluster_id": null,
         "job_path": null
       }
