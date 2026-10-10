@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:08:21.585Z",
+  "updated_at": "2026-10-10T05:08:54.726Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168054:6091897748:2026-10-10T00:58:12Z:clawsweeper_auto_repair",
-      "comment_id": "6091897748",
-      "comment_version_key": "6091897748:2026-10-10T00:58:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168054#issuecomment-6091897748",
-      "comment_created_at": "2026-10-10T00:58:12Z",
-      "comment_updated_at": "2026-10-10T00:58:12Z",
-      "comment_body_sha256": "64ea8738317b179396405b23ee540fb8b0ac24df988505aaed99e08dc2814203",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168054,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=d2d12929a8193da07b2d6a701274d3b1db41f6e8)",
-      "expected_head_sha": "d2d12929a8193da07b2d6a701274d3b1db41f6e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T00:59:11.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/inbound-media-hold",
-        "head_sha": "d2d12929a8193da07b2d6a701274d3b1db41f6e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:159863:5859369432:2026-10-10T00:58:20Z:clawsweeper_needs_human",
       "comment_id": "5859369432",
@@ -33947,6 +33914,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:165091:6094059955:2026-10-10T05:07:55Z:re_review",
+      "comment_id": "6094059955",
+      "comment_version_key": "6094059955:2026-10-10T05:07:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/165091#issuecomment-6094059955",
+      "comment_created_at": "2026-10-10T05:07:55Z",
+      "comment_updated_at": "2026-10-10T05:07:55Z",
+      "comment_body_sha256": "e8d00b4ab26690a0f895163bbc08ea42832397583af6cf087eaf4e2662335909",
+      "repo": "openclaw/openclaw",
+      "issue_number": 165091,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T05:08:53.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/keep-composer-visible-while-messages-queue",
+        "head_sha": "81bb2e51a7f864318a28aee7322cd79014e511ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
