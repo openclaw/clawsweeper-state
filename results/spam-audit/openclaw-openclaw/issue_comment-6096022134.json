@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T09:15:54.230Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6096022134",
+    "node_id": "IC_kwDOQb6kR88AAAABa1nqdg",
+    "url": "https://github.com/openclaw/openclaw/pull/162376#issuecomment-6096022134",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/162376",
+    "pull_request_url": null,
+    "author": "buyuangtampan",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T09:14:47Z",
+    "updated_at": "2026-10-10T09:14:47Z",
+    "body_hash": "bfa95153bc4a982d74fe9593261dc1f1b350dc3de13e04cf80bcc5c83ab4b004",
+    "body_excerpt": "Independent field report: the same failure occurred with the official Dropbox MCP plugin. Adding sanitized incident evidence here rather t ...  confirmed regression. No credentials, OAuth tokens, user identifiers, private paths, or raw production logs are included in this report.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://mcp.dropbox.com/mcp"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6096022134",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical incident report with affected versions, failure details, and relevant regression-test suggestions.",
+      "The Dropbox MCP endpoint is contextual technical evidence, not solicitation or unrelated promotion.",
+      "No phishing, abuse, or other spam indicators are present."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
