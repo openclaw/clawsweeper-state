@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T20:05:32.820Z",
+  "updated_at": "2026-10-10T20:05:39.845Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168482:6098578586:2026-10-10T14:33:34Z:clawsweeper_needs_human",
-      "comment_id": "6098578586",
-      "comment_version_key": "6098578586:2026-10-10T14:33:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168482#issuecomment-6098578586",
-      "comment_created_at": "2026-10-10T14:33:34Z",
-      "comment_updated_at": "2026-10-10T14:33:34Z",
-      "comment_body_sha256": "9932d1cabf82b05c6d4a61376ceb68678f850f130fd8c07169ab5118a59ed53a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: command authorization and native approval eligibility now await channel state; the supplied lifecycle tests and workload measurements do not show an al... (sha=c12020afa3d6b31debbf08172bfb871a27ce4b1c)",
-      "expected_head_sha": "c12020afa3d6b31debbf08172bfb871a27ce4b1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T14:35:16.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sw7b-5",
-        "head_sha": "c12020afa3d6b31debbf08172bfb871a27ce4b1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2074:6098406708:2026-10-10T14:34:34Z:clawsweeper_needs_human",
       "comment_id": "6098406708",
@@ -33215,6 +33182,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168588:6101647327:2026-10-10T20:04:05Z:re_review",
+      "comment_id": "6101647327",
+      "comment_version_key": "6101647327:2026-10-10T20:04:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168588#issuecomment-6101647327",
+      "comment_created_at": "2026-10-10T20:04:05Z",
+      "comment_updated_at": "2026-10-10T20:04:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168588,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T20:05:38.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/models-auth-via-gateway",
+        "head_sha": "1361a682064358d851e9516d603d1a0974830be8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
