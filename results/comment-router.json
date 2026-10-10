@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:04:57.446Z",
+  "updated_at": "2026-10-10T02:05:39.469Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:167342:6076985818:2026-10-09T08:04:35Z:re_review",
-      "comment_id": "6076985818",
-      "comment_version_key": "6076985818:2026-10-09T08:04:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/167342#issuecomment-6076985818",
-      "comment_created_at": "2026-10-09T08:04:35Z",
-      "comment_updated_at": "2026-10-09T08:04:35Z",
-      "comment_body_sha256": "e4872f4b0b33c6e92633272da764e218afffdde469ed2a133d4082eee0cec0d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 167342,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T21:56:11.240Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:167342:6083944139:2026-10-09T15:26:42Z:re_review",
       "comment_id": "6083944139",
@@ -33074,6 +33047,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:167880:6085866973:2026-10-10T02:04:42Z:clawsweeper_needs_human",
+      "comment_id": "6085866973",
+      "comment_version_key": "6085866973:2026-10-10T02:04:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/167880#issuecomment-6085866973",
+      "comment_created_at": "2026-10-09T17:25:40Z",
+      "comment_updated_at": "2026-10-10T02:04:42Z",
+      "comment_body_sha256": "2bef0d8c05d4cdc3925867a9f3c3602c4a402aa287ed112340ac89ea98e91a2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 167880,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed startup and backend-status owners have synthetic lifecycle tests, mocked status responses, and an executable fixture, but no supplied installed-Gateway run exercises the r... (sha=b3c6e1abc7544ae0874d1a53a7f84ec7c3c472a7)",
+      "expected_head_sha": "b3c6e1abc7544ae0874d1a53a7f84ec7c3c472a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T02:05:39.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-167072-recovery-20261009",
+        "head_sha": "b3c6e1abc7544ae0874d1a53a7f84ec7c3c472a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
