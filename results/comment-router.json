@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T16:57:16.286Z",
+  "updated_at": "2026-10-10T16:57:33.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1895:6098083141:2026-10-10T13:39:37Z:re_review",
-      "comment_id": "6098083141",
-      "comment_version_key": "6098083141:2026-10-10T13:39:37Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1895#issuecomment-6098083141",
-      "comment_created_at": "2026-10-10T13:39:37Z",
-      "comment_updated_at": "2026-10-10T13:39:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1895,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T13:40:37.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/row3-comment-policy-leaves",
-        "head_sha": "5a28605337e710c11a578fa05b7d899134a90e9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3883:5923385214:2026-10-10T13:39:52Z:clawsweeper_auto_repair",
       "comment_id": "5923385214",
@@ -30842,6 +30795,39 @@
         "kind": "pull_request",
         "branch": "dbasync/w11entrycache",
         "head_sha": "8e4c029e4de404895bc0ec190f733115992db9ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:253:6099946022:2026-10-10T16:56:37Z:clawsweeper_needs_human",
+      "comment_id": "6099946022",
+      "comment_version_key": "6099946022:2026-10-10T16:56:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/253#issuecomment-6099946022",
+      "comment_created_at": "2026-10-10T16:56:37Z",
+      "comment_updated_at": "2026-10-10T16:56:37Z",
+      "comment_body_sha256": "16353a1f8665a7ad7aea41c5768bef93d2be44819b037dd0a064f8d1ac094437",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 253,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the supplied body and linked EKS contribution contain no inspectable trace of this head acquiring Pod Identity credentials and completing a Bedrock tur...; Review finding: [P2] Preserve the serving predecessor's Pod Identity access during preparation — apps/controller/src/drivers/compute/kubernetes/index.ts:6873-6876 (sha=cc531673f210cf00a57f15d33c83bc39b0ee6f55)",
+      "expected_head_sha": "cc531673f210cf00a57f15d33c83bc39b0ee6f55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T16:57:33.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/bedrock-runtime-auth",
+        "head_sha": "cc531673f210cf00a57f15d33c83bc39b0ee6f55",
         "cluster_id": null,
         "job_path": null
       }
