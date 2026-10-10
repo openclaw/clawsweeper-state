@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:26:29.107Z",
+  "updated_at": "2026-10-10T14:26:42.777Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6097064128:2026-10-10T11:33:47Z:re_review",
-      "comment_id": "6097064128",
-      "comment_version_key": "6097064128:2026-10-10T11:33:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6097064128",
-      "comment_created_at": "2026-10-10T11:33:47Z",
-      "comment_updated_at": "2026-10-10T11:33:47Z",
-      "comment_body_sha256": "cc44330eec38c5e18be12a373f1f6ccc4d8de644d9aeb6ae0887ee2edd0d4c1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T11:34:53.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "f1e37c7ad771cd42bb31db2b326df4c636f966c9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3918:6022523177:2026-10-06T18:12:29Z:re_review",
       "comment_id": "6022523177",
@@ -30597,6 +30550,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sw7a",
         "head_sha": "1e043d4e6dc4e6115615f66790805adbe496092c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168458:6098113740:2026-10-10T14:25:49Z:clawsweeper_needs_human",
+      "comment_id": "6098113740",
+      "comment_version_key": "6098113740:2026-10-10T14:25:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168458#issuecomment-6098113740",
+      "comment_created_at": "2026-10-10T13:43:19Z",
+      "comment_updated_at": "2026-10-10T14:25:49Z",
+      "comment_body_sha256": "06c84738b41b20e4811f4a7eb261057a3379698913adbaeb9f302328b393a348",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: worker-cli.ts attaches provider authority and worker-launch.ts passes its placeholder into the node, but supplied evidence does not exercise an allowed... (sha=8bf2d7c51d62fb2089c0f36d6447c560e4eb8f9f)",
+      "expected_head_sha": "8bf2d7c51d62fb2089c0f36d6447c560e4eb8f9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:26:42.777Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openshell-brokered-worker-inference",
+        "head_sha": "8bf2d7c51d62fb2089c0f36d6447c560e4eb8f9f",
         "cluster_id": null,
         "job_path": null
       }
