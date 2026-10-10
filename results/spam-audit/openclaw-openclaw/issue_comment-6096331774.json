@@ -1,0 +1,41 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-10T09:57:51.303Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6096331774",
+    "node_id": "IC_kwDOQb6kR88AAAABa16j_g",
+    "url": "https://github.com/openclaw/openclaw/issues/168356#issuecomment-6096331774",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/168356",
+    "pull_request_url": null,
+    "author": "Joelincn",
+    "author_association": "NONE",
+    "created_at": "2026-10-10T09:56:35Z",
+    "updated_at": "2026-10-10T09:56:35Z",
+    "body_hash": "988707c6529068b4dd6a27aaab64be7cad9829cf82935297c06bfb414852840a",
+    "body_excerpt": "## Controlled phone-side repro + storage-spam side effect Tapped \"refresh models\" once in the Android app at **17:48:51**; gateway side: ` ... th. Honoring a configurable timeout (or failing quietly after the first attempt per restart) would solve both the UX banner and the spam.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://integrate.api.nvidia.com/v1/models"
+    ]
+  },
+  "model_result": {
+    "comment_id": "6096331774",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical reproduction with timestamps, timeout l ... ovider latency measurements, and storage-growth evidence.",
+      "The external API link is relevant to debugging; there is no solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
