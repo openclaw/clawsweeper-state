@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:33:42.977Z",
+  "updated_at": "2026-10-10T14:33:53.016Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168228:6097104907:2026-10-10T11:39:11Z:re_review",
-      "comment_id": "6097104907",
-      "comment_version_key": "6097104907:2026-10-10T11:39:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168228#issuecomment-6097104907",
-      "comment_created_at": "2026-10-10T11:39:11Z",
-      "comment_updated_at": "2026-10-10T11:39:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168228,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T11:40:11.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-prefer-newer-installed",
-        "head_sha": "7d5b0dd7d757b66fdf8f13150c317dd61ace2ae1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168422:6097110348:2026-10-10T11:39:54Z:clawsweeper_needs_human",
       "comment_id": "6097110348",
@@ -30571,6 +30524,39 @@
         "kind": "pull_request",
         "branch": "dbasync/sw7b-1",
         "head_sha": "5915284db81630d26782e8dc03e64a6624f07db8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168485:6098571826:2026-10-10T14:32:56Z:clawsweeper_needs_human",
+      "comment_id": "6098571826",
+      "comment_version_key": "6098571826:2026-10-10T14:32:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168485#issuecomment-6098571826",
+      "comment_created_at": "2026-10-10T14:32:56Z",
+      "comment_updated_at": "2026-10-10T14:32:56Z",
+      "comment_body_sha256": "ac1110d3ee9f2c2283c3514601c28eaf2c8e72245cf567b0be81575bb8e2c4f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: exercise allowed and revoked command owners through current and child Matrix binding persistence, including revocation during queued work and the child...; Review finding: [P2] Recheck expiry when queued removal executes — extensions/matrix/src/matrix/thread-bindings.ts:402-405 - [P2] Retire the manager after an uncertain targeted ac... (sha=bbcd292f840e55c1829ea5bc3990dc1bfdcd39cd)",
+      "expected_head_sha": "bbcd292f840e55c1829ea5bc3990dc1bfdcd39cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:33:53.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/sw7b-7",
+        "head_sha": "bbcd292f840e55c1829ea5bc3990dc1bfdcd39cd",
         "cluster_id": null,
         "job_path": null
       }
