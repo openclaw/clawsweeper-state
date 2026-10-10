@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/agent-skills"
 cluster_id: "issue-openclaw-agent-skills-217"
-mode: "autonomous"
-run_id: "38064907013"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38064907013"
+mode: "plan"
+run_id: "38065381835"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38065381835"
 head_sha: "70cfbb0677b28eabe1c5abeddc06bf208936cb88"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-10T15:49:09.795Z"
-canonical: "https://github.com/openclaw/agent-skills/issues/217"
-canonical_issue: "https://github.com/openclaw/agent-skills/issues/217"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-10T15:55:14.585Z"
+canonical: "#217"
+canonical_issue: "#217"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/agent-skills
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38064907013](https://github.com/openclaw/clawsweeper/actions/runs/38064907013)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38065381835](https://github.com/openclaw/clawsweeper/actions/runs/38065381835)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/agent-skills/issues/217
+Canonical: #217
 
 ## Summary
 
-#217 remains valid on supplied main 621fd3af706efc989154231ade7a4610a59d9460. A concrete fix artifact is prepared, but the read-only filesystem prevents implementation and branch validation. No files or GitHub items were changed.
+#217 remains valid on preflight main 621fd3af706efc989154231ade7a4610a59d9460. Plan one focused streaming implementation PR. Baseline skill validation passed; implementation and memory validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/agent-skills/issues/217
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #217 | fix_needed | planned | canonical | The accepted uncapped-input contract still needs streaming across capture, rendering, planning, and consumption; changing only the read loop would leave downstream retention. |
-| #215 | keep_closed | skipped | related | Historical contract and review evidence, not an automation target. |
-| #240 | route_security | planned | security_sensitive | Quarantine this exact scanner-policy item; it does not block the separate capacity fix. |
-| #287 | keep_closed | skipped | related | Preserve this distinct partition improvement and its behavior while implementing #217. |
-| cluster:issue-openclaw-agent-skills-217 | build_fix_artifact | planned |  | The artifact is prepared for a writable executor. No implementation or clean required-CI readiness is claimed. |
+| #217 | fix_needed | planned | canonical | Complete-input payload memory remains proportional to captured content and retained prompts. The issue requests streaming while preserving uncapped capture, complete coverage, and existing review contracts. |
+| #215 | keep_closed | skipped | related | Historical scope implementation; preserve its complete-input behavior. |
+| #240 | route_security | planned | security_sensitive | Quarantine this historical ref to central OpenClaw security handling without mutation; it does not block the independent capacity implementation. |
+| #287 | keep_closed | skipped | related | Landed partial improvement; retain its measured-capacity fallback and existing successful plan choices. |
 
 ## Needs Human
 

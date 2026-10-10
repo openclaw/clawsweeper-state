@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/agent-skills",
+  "cluster_id": "issue-openclaw-agent-skills-217",
+  "mode": "plan",
+  "run_id": "38065381835",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38065381835",
+  "head_sha": "70cfbb0677b28eabe1c5abeddc06bf208936cb88",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-agent-skills-217.md",
+  "published_at": "2026-10-10T15:55:14.585Z",
+  "canonical": "#217",
+  "canonical_issue": "#217",
+  "canonical_pr": null,
+  "summary": "#217 remains valid on preflight main 621fd3af706efc989154231ade7a4610a59d9460. Plan one focused streaming implementation PR. Baseline skill validation passed; implementation and memory validation remain pending.",
+  "actions": [
+    {
+      "target": "#217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Complete-input payload memory remains proportional to captured content and retained prompts. The issue requests streaming while preserving uncapped capture, complete coverage, and existing review contracts."
+    },
+    {
+      "target": "#215",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Historical scope implementation; preserve its complete-input behavior."
+    },
+    {
+      "target": "#240",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical ref to central OpenClaw security handling without mutation; it does not block the independent capacity implementation."
+    },
+    {
+      "target": "#287",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#217",
+      "candidate_fix": null,
+      "reason": "Landed partial improvement; retain its measured-capacity fallback and existing successful plan choices."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
