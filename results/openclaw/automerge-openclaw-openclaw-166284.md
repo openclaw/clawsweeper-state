@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-166284"
-mode: "autonomous"
-run_id: "37982283449"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/37982283449"
-head_sha: "2ecc4142c07a148ee423e6c6eb32713d9db7ba45"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "38012077395"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38012077395"
+head_sha: "43e96c4fe318318af9e068f50b5e035f9221eae6"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-10-09T20:01:00.162Z"
+published_at: "2026-10-10T02:09:31.727Z"
 canonical: "#166284"
 canonical_issue: null
 canonical_pr: "#166284"
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/37982283449](https://github.com/openclaw/clawsweeper/actions/runs/37982283449)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38012077395](https://github.com/openclaw/clawsweeper/actions/runs/38012077395)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #166284
 
 ## Summary
 
-Make PR #166284 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Repair the existing contributor branch, preserve its narrow test fix, diagnose failing CI, and validate the repaired head. No mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Make PR #166284 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #166284 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #166284 | fix_needed | planned | canonical | The useful canonical repair requires CI diagnosis and validation. Failure logs are absent, so the specific CI cause remains unproven. |
+| #163980 | keep_closed | skipped | related | Historical related repair; no further action. |
 
 ## Needs Human
 
