@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T01:56:47.359Z",
+  "updated_at": "2026-10-10T01:56:50.648Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163783:5961532592:2026-10-09T21:45:52Z:clawsweeper_needs_human",
-      "comment_id": "5961532592",
-      "comment_version_key": "5961532592:2026-10-09T21:45:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163783#issuecomment-5961532592",
-      "comment_created_at": "2026-10-02T21:10:08Z",
-      "comment_updated_at": "2026-10-09T21:45:52Z",
-      "comment_body_sha256": "50da68465c4abd5d91509ec500186533b0bce787ada90d1b3bad8399c544d8a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163783,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The captured body reports real channel creation and returned-target delivery through the Slack action owner, but explicitly leaves requester invitation and posting after reauthorizati...; Review finding: [P1] [P1] Use a bot-compatible scope in the generated Slack manifest — extensions/slack/src/setup-shared.ts:78 - [medium] Workspace administration inherits ordinar... (sha=cffcc8b247a5514a64cf6d53d4b32b4a719e213b)",
-      "expected_head_sha": "cffcc8b247a5514a64cf6d53d4b32b4a719e213b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-09T21:48:55.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-channel-create",
-        "head_sha": "cffcc8b247a5514a64cf6d53d4b32b4a719e213b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163800:5961903836:2026-10-09T21:45:09Z:clawsweeper_auto_repair",
       "comment_id": "5961903836",
@@ -33038,6 +33005,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154721:5759768702:2026-10-10T01:55:49Z:clawsweeper_auto_repair",
+      "comment_id": "5759768702",
+      "comment_version_key": "5759768702:2026-10-10T01:55:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154721#issuecomment-5759768702",
+      "comment_created_at": "2026-09-21T11:30:57Z",
+      "comment_updated_at": "2026-10-10T01:55:49Z",
+      "comment_body_sha256": "f2cc4a9c2b28a3a98b984e336cf0ce48c571b36f8941381d504023e1caf2d285",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=eb710ad903121ff3f0cea0b8406e4cb5a91b9d48)",
+      "expected_head_sha": "eb710ad903121ff3f0cea0b8406e4cb5a91b9d48",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-10T01:56:50.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-embeddings-usage-zero-passthrough",
+        "head_sha": "eb710ad903121ff3f0cea0b8406e4cb5a91b9d48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
