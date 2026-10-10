@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-10T02:34:25.980Z",
+  "updated_at": "2026-10-10T02:35:14.607Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:68280:6090245548:2026-10-09T22:23:32Z:re_review",
-      "comment_id": "6090245548",
-      "comment_version_key": "6090245548:2026-10-09T22:23:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/68280#issuecomment-6090245548",
-      "comment_created_at": "2026-10-09T22:23:32Z",
-      "comment_updated_at": "2026-10-09T22:23:32Z",
-      "comment_body_sha256": "7ab31fe5ad73453029c7244c416078323fd510b2f7e511be9427bc9d70cac80b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 68280,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-09T22:24:30.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/loopback-local-probe-auth",
-        "head_sha": "eb6b9254f769e22c87577c3acac98706611e3e25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:163405:6056267965:2026-10-08T08:50:47Z:re_review",
       "comment_id": "6056267965",
@@ -33162,6 +33115,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163267:5945980023:2026-10-10T02:33:54Z:clawsweeper_needs_human",
+      "comment_id": "5945980023",
+      "comment_version_key": "5945980023:2026-10-10T02:33:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/163267#issuecomment-5945980023",
+      "comment_created_at": "2026-10-02T05:10:35Z",
+      "comment_updated_at": "2026-10-10T02:33:54Z",
+      "comment_body_sha256": "93aa9902bba477e56a6f07789851ab0912f78beb12d5f06c41c9451d7a828879",
+      "repo": "openclaw/openclaw",
+      "issue_number": 163267,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the refreshed body reports actual child-Gateway/SQLite sessions_search execution, permitted sibling results, channel/account/workspace denial, and reas...; Review finding: [P1] Revalidate channel authority inside the admitted read boundary — src/agents/tools/sessions-access.ts:319 - [high] Channel authorization can outlive account re... (sha=f003cf7c795e40be0bdb8b4a30b569005770cea5)",
+      "expected_head_sha": "f003cf7c795e40be0bdb8b4a30b569005770cea5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T02:35:14.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-channel-visibility",
+        "head_sha": "f003cf7c795e40be0bdb8b4a30b569005770cea5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
