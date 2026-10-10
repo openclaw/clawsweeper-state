@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:13:41.491Z",
+  "updated_at": "2026-10-10T05:13:44.919Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141825:5579069648:2026-10-10T00:39:51Z:clawsweeper_auto_repair",
-      "comment_id": "5579069648",
-      "comment_version_key": "5579069648:2026-10-10T00:39:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141825#issuecomment-5579069648",
-      "comment_created_at": "2026-09-08T04:12:35Z",
-      "comment_updated_at": "2026-10-10T00:39:51Z",
-      "comment_body_sha256": "f3c33dd53c19cbca51ea89be598d78e02af73c63614870ee6a61752e938c234c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141825,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=5aab8c081a034ef84c2f32ffb54ef6ddde2f278a)",
-      "expected_head_sha": "5aab8c081a034ef84c2f32ffb54ef6ddde2f278a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T01:00:22.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/configurable-cooldown-bypass-nqy5z6",
-        "head_sha": "5aab8c081a034ef84c2f32ffb54ef6ddde2f278a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143054:5600845275:2026-10-10T00:51:31Z:clawsweeper_needs_human",
       "comment_id": "5600845275",
@@ -33913,6 +33880,53 @@
         "kind": "pull_request",
         "branch": "fix/wiki-apply-body-file-utf8",
         "head_sha": "244b78e9516476c204f39920f33372448bff0c5d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168052:6094099957:2026-10-10T05:12:53Z:re_review",
+      "comment_id": "6094099957",
+      "comment_version_key": "6094099957:2026-10-10T05:12:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168052#issuecomment-6094099957",
+      "comment_created_at": "2026-10-10T05:12:53Z",
+      "comment_updated_at": "2026-10-10T05:12:53Z",
+      "comment_body_sha256": "81fe1806578a143eac6c7d8fb5a4ceec1aee68819b034ba84f1ebebc0b421c6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168052,
+      "author": "nocodet888-arch",
+      "author_id": 305874177,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-10T05:13:43.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wiki-cli-validation-errors",
+        "head_sha": "14c07a562ebe689b49b0d474e5543c41600c83da",
         "cluster_id": null,
         "job_path": null
       },
