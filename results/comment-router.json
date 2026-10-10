@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-10-10T14:47:42.360Z",
+  "updated_at": "2026-10-10T14:47:47.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5899379626:2026-09-29T21:33:08Z:re_review",
-      "comment_id": "5899379626",
-      "comment_version_key": "5899379626:2026-09-29T21:33:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5899379626",
-      "comment_created_at": "2026-09-29T21:33:08Z",
-      "comment_updated_at": "2026-09-29T21:33:08Z",
-      "comment_body_sha256": "ee1e8cfcbd9865ac482bf7bdbc06010e06ab7ce01c6a1112b21a137b486a5b37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — synced with upstream/main (`71ef1c5d54`, head `4eb35764d1`), clean merge, skill-selection intact, focused tests green (6/6)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T11:47:16.158Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5901096546:2026-09-29T23:35:16Z:re_review",
       "comment_id": "5901096546",
@@ -30759,6 +30732,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168318:6095269608:2026-10-10T14:46:53Z:clawsweeper_needs_human",
+      "comment_id": "6095269608",
+      "comment_version_key": "6095269608:2026-10-10T14:46:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168318#issuecomment-6095269608",
+      "comment_created_at": "2026-10-10T07:47:08Z",
+      "comment_updated_at": "2026-10-10T14:46:53Z",
+      "comment_body_sha256": "38b1f6952c7daad905829a14e016490ab8b2fb2f89f8fefef313cc478fb11057",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - The review found that existing stored data may not work after upgrade. Show that existing data still loads and works with this change. (sha=acdc9775aab56ee79db30da8ac0907e7965238fa)",
+      "expected_head_sha": "acdc9775aab56ee79db30da8ac0907e7965238fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-10T14:47:47.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dbasync/w11domain",
+        "head_sha": "acdc9775aab56ee79db30da8ac0907e7965238fa",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
