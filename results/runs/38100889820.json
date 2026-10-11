@@ -1,0 +1,109 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-101083",
+  "mode": "autonomous",
+  "run_id": "38100889820",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38100889820",
+  "head_sha": "3e3ac1fffea21e8f0b237313887ae81309b4d76c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-101083.md",
+  "published_at": "2026-10-11T03:05:53.975Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/101083",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/101083",
+  "canonical_pr": null,
+  "summary": "The remaining IRC status defect is source-confirmed on preflight main fab68f488caf061cf0d72e3413ee33888a54ef24. Implementation and runtime reproduction are blocked by the read-only host: the focused test exits in Corepack with EROFS before loading tests. A narrow executor fix artifact is prepared; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#101083",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#101083",
+      "candidate_fix": null,
+      "reason": "Proceed in a writable executor, establishing the required failing regression before production edits. Close and merge are prohibited by this job."
+    },
+    {
+      "target": "#100127",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical sibling-channel evidence only."
+    },
+    {
+      "target": "#100343",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical sibling-channel context only."
+    },
+    {
+      "target": "#100799",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve its existing reconnect behavior; it does not complete the current status repair."
+    },
+    {
+      "target": "#101563",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#101083",
+      "candidate_fix": null,
+      "reason": "Use scenario context with attribution, while preserving running semantics tied to the live monitor task."
+    },
+    {
+      "target": "#149167",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep its distinct delivery and socket-ownership work open. Do not adopt, replace, or merge it in this issue implementation lane."
+    },
+    {
+      "target": "#165018",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Its merged backoff addresses the historical tight retry loop; preserve it during the remaining status repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-101083",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#101083",
+      "candidate_fix": null,
+      "reason": "The executor can implement this narrow artifact after establishing a failing baseline on its current main. Stop if the requested defect does not reproduce."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 5,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
