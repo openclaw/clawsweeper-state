@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T13:28:50.746Z",
+  "updated_at": "2026-10-11T13:35:22.819Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:158013:5829129216:2026-10-11T06:43:01Z:clawsweeper_needs_human",
-      "comment_id": "5829129216",
-      "comment_version_key": "5829129216:2026-10-11T06:43:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/158013#issuecomment-5829129216",
-      "comment_created_at": "2026-09-25T08:10:11Z",
-      "comment_updated_at": "2026-10-11T06:43:01Z",
-      "comment_body_sha256": "3de082f07d48eccf795e7f4bb66a711bf7077fac0563912ca19ad16d6cacb5e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 158013,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7065ca24d8d9c9eac19af7e4976ec448665b35dc)",
-      "expected_head_sha": "7065ca24d8d9c9eac19af7e4976ec448665b35dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:44:03.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/157925-skill-workshop-recency-dst",
-        "head_sha": "7065ca24d8d9c9eac19af7e4976ec448665b35dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:164836:5988881659:2026-10-05T05:50:14Z:re_review",
       "comment_id": "5988881659",
@@ -33535,6 +33502,53 @@
         "kind": "pull_request",
         "branch": "fix/command-transcript-parity",
         "head_sha": "239d7ed8d31d09a4f4f48b78ceef5eb94e20c05a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:6109580450:2026-10-11T13:34:43Z:re_review",
+      "comment_id": "6109580450",
+      "comment_version_key": "6109580450:2026-10-11T13:34:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6109580450",
+      "comment_created_at": "2026-10-11T13:34:43Z",
+      "comment_updated_at": "2026-10-11T13:34:43Z",
+      "comment_body_sha256": "38604834436310d5d209bb8816567daedd7d5a77a61fc8769a581eaeb2361937",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — synced with upstream/main (96a5e338a7), merge commit 97e81564ce. 1 conflict in packages/gateway-protocol/src/schema/audit.test.ts resolved keeping the skill-selection discrimination test. focused audit tests 28/28 pass, tsgo:core clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T13:35:21.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "97e81564ce098f46c294d68aa37074dda6ea00b1",
         "cluster_id": null,
         "job_path": null
       },
