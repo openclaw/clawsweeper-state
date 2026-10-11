@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T01:00:59.162Z",
+  "updated_at": "2026-10-11T01:01:50.680Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168604:6101639886:2026-10-10T20:03:13Z:re_review",
-      "comment_id": "6101639886",
-      "comment_version_key": "6101639886:2026-10-10T20:03:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168604#issuecomment-6101639886",
-      "comment_created_at": "2026-10-10T20:03:13Z",
-      "comment_updated_at": "2026-10-10T20:03:13Z",
-      "comment_body_sha256": "448dd0bc5d0517d5234fc2e856b6ecc098aae8a7febd03dae72b26f043e489fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168604,
-      "author": "cavit99",
-      "author_id": 35897738,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T20:04:00.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-busy-chat-send",
-        "head_sha": "6f96a96d74d168008bcc481e9ca2becae06cf15d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:430:6101640892:2026-10-10T20:03:20Z:clawsweeper_needs_human",
       "comment_id": "6101640892",
@@ -33299,6 +33252,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2106:6103997497:2026-10-11T01:00:48Z:re_review",
+      "comment_id": "6103997497",
+      "comment_version_key": "6103997497:2026-10-11T01:00:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2106#issuecomment-6103997497",
+      "comment_created_at": "2026-10-11T01:00:48Z",
+      "comment_updated_at": "2026-10-11T01:00:48Z",
+      "comment_body_sha256": "0c914287e14ff5619182f45e110ffd14ec069cc8d746a735be7873f86052febd",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2106,
+      "author": "kevinlin-openai",
+      "author_id": 177054202,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review the pr body now includes live second-existing-repository evidence through both actual observer cleanup paths. the test app was installed only on repo a; github rejected repo-b token mints (422), and independent reads after both the pr-close and leased git-delete attempts confirmed the disposable private repo b’s pr and refs unchanged. withdrawal proof and its restoration evidence are also documented",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T01:01:49.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/qa-app-observer",
+        "head_sha": "bad7d7810a7e70e33dc904d883f3b2ccdb76aafe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
