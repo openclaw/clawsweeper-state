@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T07:50:47.631Z",
+  "updated_at": "2026-10-11T07:51:08.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168401:6104957292:2026-10-11T03:18:48Z:re_review",
-      "comment_id": "6104957292",
-      "comment_version_key": "6104957292:2026-10-11T03:18:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168401#issuecomment-6104957292",
-      "comment_created_at": "2026-10-11T03:18:48Z",
-      "comment_updated_at": "2026-10-11T03:18:48Z",
-      "comment_body_sha256": "b1a0bc2833e8bee8463d0cb41f22f9e3a7c20339e6e97eaba93dfc50e73f5308",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168401,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T03:19:43.461Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/comparing-server-side-compaction-approaches",
-        "head_sha": "406b1341a780e840d383da23148a938728da6ef0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-10-11T03:18:53Z:clawsweeper_needs_human",
       "comment_id": "5212438693",
@@ -32474,6 +32427,39 @@
         "kind": "pull_request",
         "branch": "perf/native-write-parity",
         "head_sha": "af640414b53344b0204f464675a7fac5ce165a7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168973:6106735428:2026-10-11T07:50:18Z:clawsweeper_needs_human",
+      "comment_id": "6106735428",
+      "comment_version_key": "6106735428:2026-10-11T07:50:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168973#issuecomment-6106735428",
+      "comment_created_at": "2026-10-11T07:35:56Z",
+      "comment_updated_at": "2026-10-11T07:50:18Z",
+      "comment_body_sha256": "6256c14c34abe325610e639bf645bcbee6a111ef60f77bbecb5b294b95c49714",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: The supplied Gateway chat-completions result demonstrates IPv6 fallback after IPv4 refusal, but forbidden-address cases are shown only through resolver... (sha=da0c052f036ed7a0c1dc8beb03052ba125cf2b4f)",
+      "expected_head_sha": "da0c052f036ed7a0c1dc8beb03052ba125cf2b4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T07:51:08.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ssrf-all-validated-addresses",
+        "head_sha": "da0c052f036ed7a0c1dc8beb03052ba125cf2b4f",
         "cluster_id": null,
         "job_path": null
       }
