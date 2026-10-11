@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T09:02:01.102Z",
+  "updated_at": "2026-10-11T09:02:23.626Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150078:5698835243:2026-10-11T04:08:56Z:clawsweeper_needs_human",
-      "comment_id": "5698835243",
-      "comment_version_key": "5698835243:2026-10-11T04:08:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150078#issuecomment-5698835243",
-      "comment_created_at": "2026-09-16T14:07:41Z",
-      "comment_updated_at": "2026-10-11T04:08:56Z",
-      "comment_body_sha256": "f31f64599cf629ee097e912157a0b479a9b4ca4f21378b9e0b9b795cd52b4377",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150078,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=45014fa84c8cc44de442725c47f88137e11073cf)",
-      "expected_head_sha": "45014fa84c8cc44de442725c47f88137e11073cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T04:09:59.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/persist-hook-claimed-replies",
-        "head_sha": "45014fa84c8cc44de442725c47f88137e11073cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150078:5851160332:2026-09-27T00:10:38Z:re_review",
       "comment_id": "5851160332",
@@ -33076,6 +33043,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168199:6107382256:2026-10-11T09:01:35Z:re_review",
+      "comment_id": "6107382256",
+      "comment_version_key": "6107382256:2026-10-11T09:01:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168199#issuecomment-6107382256",
+      "comment_created_at": "2026-10-11T09:01:35Z",
+      "comment_updated_at": "2026-10-11T09:01:35Z",
+      "comment_body_sha256": "b3609ec74700089e609186fa682663c56e7d2167ee1e74728eefe16d03c32801",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168199,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T09:02:21.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stab-agent-delete-draining",
+        "head_sha": "223616b9a5baa2c9a06c88c398a8b3528fbc723d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
