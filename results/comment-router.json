@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T17:55:08.332Z",
+  "updated_at": "2026-10-11T17:59:48.577Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168948:6106453903:2026-10-11T08:02:06Z:clawsweeper_needs_human",
-      "comment_id": "6106453903",
-      "comment_version_key": "6106453903:2026-10-11T08:02:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168948#issuecomment-6106453903",
-      "comment_created_at": "2026-10-11T06:58:05Z",
-      "comment_updated_at": "2026-10-11T08:02:06Z",
-      "comment_body_sha256": "658b109cc69f61b6845d88742660ec924cf2eb1b4bcb078ab7b5ef8b465c3c35",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168948,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the supplied synthetic RPC comparisons and historical stack tests do not demonstrate allowed and foreign-profile rejection at OAuth effects, revocation...; Review finding: [P2] Preserve credentials when the connection commit outcome is unknown — src/gateway/github-personal-oauth.ts:308-309 - [P2] Revalidate the selected connection be... (sha=5e6d6038af0a15178e47e4d52c7cc1168aa2644a)",
-      "expected_head_sha": "5e6d6038af0a15178e47e4d52c7cc1168aa2644a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:02:55.399Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dbasync/sw7d-connections",
-        "head_sha": "5e6d6038af0a15178e47e4d52c7cc1168aa2644a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:942:6106810617:2026-10-11T08:02:14Z:clawsweeper_needs_human",
       "comment_id": "6106810617",
@@ -33017,6 +32984,51 @@
       "status": "skipped",
       "processed_at": "2026-10-11T17:55:08.332Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:2237:6111982017:2026-10-11T17:58:51Z:re_review",
+      "comment_id": "6111982017",
+      "comment_version_key": "6111982017:2026-10-11T17:58:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2237#issuecomment-6111982017",
+      "comment_created_at": "2026-10-11T17:58:51Z",
+      "comment_updated_at": "2026-10-11T17:58:51Z",
+      "comment_body_sha256": "545497f4efbe5551f469c8e1a7eab41b83de512b847ea66cd9af4495a6693bc0",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2237,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T17:59:47.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-repo-authority-keeps-runtime",
+        "head_sha": "7a9bb68f24e868b371668b5c7b3dda26f54210f5"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
