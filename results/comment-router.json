@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T00:30:40.611Z",
+  "updated_at": "2026-10-11T00:30:46.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:6101388495:2026-10-10T19:34:07Z:re_review",
-      "comment_id": "6101388495",
-      "comment_version_key": "6101388495:2026-10-10T19:34:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-6101388495",
-      "comment_created_at": "2026-10-10T19:34:07Z",
-      "comment_updated_at": "2026-10-10T19:34:07Z",
-      "comment_body_sha256": "debd0a73bd3e2216a7fbf767b6189ac0950afa9649c6e8fb302ce67f1bcb62a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review please. auto-sync with upstream/main (49 commits, merge 4a9edd1c14, no conflicts). focused tests: audit skill-selection 7/7 ✅, tsgo:core ✅. skill-selection contract preserved (async worker listauditeventsindatabase, companion table audit_skill_selection_events, workspace-bootstrap-privacy re-export, 4-field run-usage)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T19:35:11.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "4a9edd1c149c824565252d573f33cc109adbc80e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168382:6096494874:2026-10-10T19:34:20Z:clawsweeper_needs_human",
       "comment_id": "6096494874",
@@ -33208,6 +33161,39 @@
         "kind": "pull_request",
         "branch": "stack/copilot-run-context-provenance-20261010",
         "head_sha": "8d9a72780dcf0bd26143ff8bd9fe687f86c448c2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2108:6103191579:2026-10-11T00:29:46Z:clawsweeper_needs_human",
+      "comment_id": "6103191579",
+      "comment_version_key": "6103191579:2026-10-11T00:29:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2108#issuecomment-6103191579",
+      "comment_created_at": "2026-10-10T23:11:48Z",
+      "comment_updated_at": "2026-10-11T00:29:46Z",
+      "comment_body_sha256": "c79db7cc496e1f6830b65cb4e57f24ba02c0cb5e75ad06646a7ef33dad534955",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The body reports Node 24.21.0 renderer CLI runs at d2a4381e for both profiles, including invalid-name rejection and valid-name acceptance, but contains no captured terminal output, lo... (sha=d2a4381ebcfa9a4721ee35ea7b84f93b6509343d)",
+      "expected_head_sha": "d2a4381ebcfa9a4721ee35ea7b84f93b6509343d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T00:30:46.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2080-db-ca-secret-name",
+        "head_sha": "d2a4381ebcfa9a4721ee35ea7b84f93b6509343d",
         "cluster_id": null,
         "job_path": null
       }
