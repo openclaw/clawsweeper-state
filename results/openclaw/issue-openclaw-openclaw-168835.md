@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-168835"
-mode: "autonomous"
-run_id: "38106661373"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38106661373"
+mode: "plan"
+run_id: "38113226868"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38113226868"
 head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-11T04:49:07.102Z"
-canonical: "https://github.com/openclaw/openclaw/issues/168835"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/168835"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-11T05:01:18.977Z"
+canonical: "#168835"
+canonical_issue: "#168835"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38106661373](https://github.com/openclaw/clawsweeper/actions/runs/38106661373)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38113226868](https://github.com/openclaw/clawsweeper/actions/runs/38113226868)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/168835
+Canonical: #168835
 
 ## Summary
 
-Confirmed the reported warning-ordering defect in source at preflight main ddca97e26ac2d734869f4fe74d53fd3c99384152. Prepared a narrow executor repair plan. Implementation and failing/passing boundary proof are blocked by the read-only filesystem and absent node_modules; no code or GitHub state was changed.
+Prepare one narrow fix for delayed Doctor warning delivery. The clean checkout matches preflight main a235184c4a716602dcc4fe16e8d19b647cade805. Source inspection confirms parent receipt time is used after child settlement; runtime regression and compatibility proof remain required before PR publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Confirmed the reported warning-ordering defect in source at preflight main ddca9
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex validation-fix worker timed out after 30000ms |
-| issue_implementation_status_comment | updated | #168835 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,12 +66,11 @@ Confirmed the reported warning-ordering defect in source at preflight main ddca9
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #168835 | fix_needed | planned | canonical | A narrow existing-behavior repair is justified by source evidence; execution must first establish the requested failing regression. |
-| #155389 | keep_closed | skipped | related | Historical implementation context only. |
-| #165420 | keep_closed | skipped | independent | No remaining work belongs to this cluster. |
-| #165982 | keep_closed | skipped | independent | Historical compatibility evidence only. |
-| #166766 | keep_closed | skipped | related | Related symptom, different established cause; retain as closed context. |
-| cluster:issue-openclaw-openclaw-168835 | build_fix_artifact | planned |  | Hand off an executable, bounded repair plan without claiming validated implementation. |
+| #168835 | fix_needed | planned | canonical | The source supports a narrow existing-behavior repair. First prove the defect through the actual repair boundary; stop if it does not reproduce. Closure and merge are prohibited by this job. |
+| #155389 | route_security | planned | security_sensitive | Quarantine this historical security-related item from repair automation without changing its state. Its unrelated warning-reconciliation context does not block the canonical bug fix. |
+| #165420 | route_security | planned | security_sensitive | Credential-related context belongs outside this repair lane. No public mutation or security assessment is proposed. |
+| #165982 | keep_closed | skipped | independent | Historical update context with no remaining cluster action. |
+| #166766 | keep_closed | skipped | related | Different cause within the warning family; no duplicate closeout is justified. |
 
 ## Needs Human
 
