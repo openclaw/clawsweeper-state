@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T05:35:35.533Z",
+  "updated_at": "2026-10-11T05:36:36.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168644:6103663125:2026-10-11T00:16:08Z:re_review",
-      "comment_id": "6103663125",
-      "comment_version_key": "6103663125:2026-10-11T00:16:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168644#issuecomment-6103663125",
-      "comment_created_at": "2026-10-11T00:16:08Z",
-      "comment_updated_at": "2026-10-11T00:16:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168644,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T00:17:08.095Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/durable-npx-node-service",
-        "head_sha": "27b447dc07b737126124ff8847f2059cb8a4f921",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141869:6103561006:2026-10-11T00:02:34Z:re_review",
       "comment_id": "6103561006",
@@ -33270,6 +33223,39 @@
         "kind": "pull_request",
         "branch": "codex/qa1031-worker-timeout",
         "head_sha": "057b6d92f1593b49b03998e62bc7a0d1d9824b71",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168663:6102523696:2026-10-11T05:35:51Z:clawsweeper_needs_human",
+      "comment_id": "6102523696",
+      "comment_version_key": "6102523696:2026-10-11T05:35:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168663#issuecomment-6102523696",
+      "comment_created_at": "2026-10-10T21:47:44Z",
+      "comment_updated_at": "2026-10-11T05:35:51Z",
+      "comment_body_sha256": "86a7ec23750dc0b240a376698d9f31ae4c8d587b377d8a8e50cdeed05676686a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168663,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Resolve GitHub's reported merge conflict while preserving scoped name resolution and dashboard transcript priority, then validate the affected merged behavior. (sha=b8018f9e1fc78a25a67cfe672b12243df7f67680)",
+      "expected_head_sha": "b8018f9e1fc78a25a67cfe672b12243df7f67680",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T05:36:36.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/coldload-dashboard-route-prehello",
+        "head_sha": "b8018f9e1fc78a25a67cfe672b12243df7f67680",
         "cluster_id": null,
         "job_path": null
       }
