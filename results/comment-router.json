@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T01:50:53.068Z",
+  "updated_at": "2026-10-11T01:50:59.384Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:6078937282:2026-10-09T10:18:26Z:re_review",
-      "comment_id": "6078937282",
-      "comment_version_key": "6078937282:2026-10-09T10:18:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/906#issuecomment-6078937282",
-      "comment_created_at": "2026-10-09T10:18:26Z",
-      "comment_updated_at": "2026-10-09T10:18:26Z",
-      "comment_body_sha256": "4864be6584463928e074e96cc75c36ba77329cbbe9a083b42da303e819e14186",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 906,
-      "author": "miguelbranco80",
-      "author_id": 158162,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T20:48:30.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/per-person-gateway-roles",
-        "head_sha": "bbe491a8441b45fcdf55194d2d8bf67b018931b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-enterprise:906:5967351842:2026-10-03T08:51:09Z:re_review",
       "comment_id": "5967351842",
@@ -33492,6 +33445,39 @@
         "kind": "pull_request",
         "branch": "fix-1075",
         "head_sha": "dd028ff9e9b3d2e471c234cc06af8a1547838ffc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168795:6104224457:2026-10-11T01:50:03Z:clawsweeper_needs_human",
+      "comment_id": "6104224457",
+      "comment_version_key": "6104224457:2026-10-11T01:50:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168795#issuecomment-6104224457",
+      "comment_created_at": "2026-10-11T01:32:22Z",
+      "comment_updated_at": "2026-10-11T01:50:03Z",
+      "comment_body_sha256": "1df2362111bbb4677c1507933a0240fbbb55ee38af85483c155266e0951e45b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168795,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the real-WebSocket harness reports successful node-only and cloud-worker reconnects with unchanged generation, but no executed another-device or revoke... (sha=dc3c0a992fa6500660dc2dd8745a8c5fab8fed92)",
+      "expected_head_sha": "dc3c0a992fa6500660dc2dd8745a8c5fab8fed92",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T01:50:59.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/noop-scope-upgrade-20261010",
+        "head_sha": "dc3c0a992fa6500660dc2dd8745a8c5fab8fed92",
         "cluster_id": null,
         "job_path": null
       }
