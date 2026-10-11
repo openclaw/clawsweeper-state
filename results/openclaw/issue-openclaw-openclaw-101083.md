@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-101083"
-mode: "autonomous"
-run_id: "38100889820"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38100889820"
+mode: "plan"
+run_id: "38109257226"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38109257226"
 head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-10-11T03:05:53.975Z"
-canonical: "https://github.com/openclaw/openclaw/issues/101083"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/101083"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-10-11T03:46:33.732Z"
+canonical: "#101083"
+canonical_issue: "#101083"
 canonical_pr: null
-actions_total: 8
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38100889820](https://github.com/openclaw/clawsweeper/actions/runs/38100889820)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38109257226](https://github.com/openclaw/clawsweeper/actions/runs/38109257226)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/101083
+Canonical: #101083
 
 ## Summary
 
-The remaining IRC status defect is source-confirmed on preflight main fab68f488caf061cf0d72e3413ee33888a54ef24. Implementation and runtime reproduction are blocked by the read-only host: the focused test exits in Corepack with EROFS before loading tests. A narrow executor fix artifact is prepared; no files or GitHub state were changed.
+Plan a narrow IRC status repair in monitor.ts and monitor.test.ts. The clean checkout matches preflight main aa311a4b2864361cac66571412a9ad9df6e60a24 and corroborates the reported status gap. Runtime reproduction, implementation, review, and validation remain pending. No mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 8 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,14 +66,13 @@ The remaining IRC status defect is source-confirmed on preflight main fab68f488c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #101083 | fix_needed | planned | canonical | Proceed in a writable executor, establishing the required failing regression before production edits. Close and merge are prohibited by this job. |
-| #100127 | keep_closed | skipped | related | Historical sibling-channel evidence only. |
-| #100343 | keep_closed | skipped | related | Historical sibling-channel context only. |
-| #100799 | keep_closed | skipped | related | Preserve its existing reconnect behavior; it does not complete the current status repair. |
-| #101563 | keep_closed | skipped | related | Use scenario context with attribution, while preserving running semantics tied to the live monitor task. |
-| #149167 | keep_related | planned | related | Keep its distinct delivery and socket-ownership work open. Do not adopt, replace, or merge it in this issue implementation lane. |
-| #165018 | keep_closed | skipped | related | Its merged backoff addresses the historical tight retry loop; preserve it during the remaining status repair. |
-| cluster:issue-openclaw-openclaw-101083 | build_fix_artifact | planned |  | The executor can implement this narrow artifact after establishing a failing baseline on its current main. Stop if the requested defect does not reproduce. |
+| #101083 | fix_needed | planned | canonical | The remaining defect has a clear plugin-owned repair; demonstrate the failing baseline before changing production code. |
+| #149167 | keep_related | planned | related | Preserve its useful independent delivery and socket work; do not adopt or supersede it for this status repair. |
+| #100127 | keep_closed | skipped | independent | Historical status-contract context only. |
+| #100343 | keep_closed | skipped | independent | Different channel and historical context only. |
+| #100799 | keep_closed | skipped | related | Preserve the established reconnect behavior while repairing status publication. |
+| #101563 | keep_closed | skipped | related | Use scenario context with attribution; implement the current lifecycle contract through a new issue-scoped PR. |
+| #165018 | keep_closed | skipped | related | Historical evidence of completed retry work; the remaining status repair must preserve it. |
 
 ## Needs Human
 
