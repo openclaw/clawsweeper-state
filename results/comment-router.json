@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T12:58:40.046Z",
+  "updated_at": "2026-10-11T12:58:56.737Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168753:6103735964:2026-10-11T06:18:44Z:clawsweeper_needs_human",
-      "comment_id": "6103735964",
-      "comment_version_key": "6103735964:2026-10-11T06:18:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168753#issuecomment-6103735964",
-      "comment_created_at": "2026-10-11T00:25:34Z",
-      "comment_updated_at": "2026-10-11T06:18:44Z",
-      "comment_body_sha256": "c716c5352514cd52c5230cc423385481c383736f902a65c066b0328f9db7de1d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168753,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a68b9381133f3753b25e099fa15975fb2c91bd0b)",
-      "expected_head_sha": "a68b9381133f3753b25e099fa15975fb2c91bd0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:38:36.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "deslop/p13-channels-20261010",
-        "head_sha": "a68b9381133f3753b25e099fa15975fb2c91bd0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168933:6106168245:2026-10-11T06:35:45Z:clawsweeper_auto_repair",
       "comment_id": "6106168245",
@@ -33371,6 +33338,48 @@
         {
           "action": "comment",
           "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168771:6109265648:2026-10-11T12:58:06Z:re_review",
+      "comment_id": "6109265648",
+      "comment_version_key": "6109265648:2026-10-11T12:58:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168771#issuecomment-6109265648",
+      "comment_created_at": "2026-10-11T12:58:06Z",
+      "comment_updated_at": "2026-10-11T12:58:06Z",
+      "comment_body_sha256": "09545fc2e6e12388749b9d76863ec714d5268cb10bf89b1cc6f668f6bd948295",
+      "source_delivery_id": "67cdd690-c573-11f1-95c0-9216a435d35e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168771,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T12:58:56.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-retained-thread-eviction-deadline-wall-clock-179",
+        "head_sha": "08ca9eea4e451256a3bfc780989fa2c75abd7c68",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
