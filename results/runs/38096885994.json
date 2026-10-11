@@ -1,0 +1,76 @@
+{
+  "repo": "openclaw/libterminal",
+  "cluster_id": "issue-openclaw-libterminal-41",
+  "mode": "autonomous",
+  "run_id": "38096885994",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/38096885994",
+  "head_sha": "3e3ac1fffea21e8f0b237313887ae81309b4d76c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-libterminal-41.md",
+  "published_at": "2026-10-11T00:02:04.383Z",
+  "canonical": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_issue": "https://github.com/openclaw/libterminal/issues/41",
+  "canonical_pr": null,
+  "summary": "No implementation PR planned. The issue explicitly prohibits upgrading before a stable Ghostty v1.4.0 tag and compatible maintained wrapper are published. The latest hydrated review reports both gates unmet; independent upstream checks failed because DNS is unavailable. Current main remains pinned to ghostty-web@0.4.0. The unavailable, misattributed #169 and #182 inventory entries require reference correction; their kind and update timestamps cannot be safely inferred. No files or GitHub state changed; tests were not run.",
+  "actions": [
+    {
+      "target": "#41",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Retain the canonical tracking issue. Implementation is blocked until both explicit publication prerequisites are proven satisfied; the job permits stopping without a PR when implementation is not safely viable."
+    },
+    {
+      "target": "#77",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#41",
+      "candidate_fix": null,
+      "reason": "Historical preparation by @steipete, crediting @vincentkoc; it does not implement the requested runtime adoption."
+    },
+    {
+      "target": "#169",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Correct the misattributed inventory entry before further classification. The required target metadata cannot be safely repaired from the provided artifacts; no GitHub action is authorized for this unavailable reference."
+    },
+    {
+      "target": "#182",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Correct the misattributed inventory entry before further classification. The required target metadata cannot be safely repaired from the provided artifacts; no GitHub action is authorized for this unavailable reference."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "needs_human": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "#169: Correct the same-repository inventory attribution. Hydration returned HTTP 404 with unknown kind and null updated_at; the source link identifies coder/ghostty-web/pull/169.",
+    "#182: Correct the same-repository inventory attribution. Hydration returned HTTP 404 with unknown kind and null updated_at; the source link identifies coder/ghostty-web/pull/182."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
