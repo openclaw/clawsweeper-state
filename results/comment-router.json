@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T00:29:30.307Z",
+  "updated_at": "2026-10-11T00:29:34.894Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168325:6095529275:2026-10-10T19:29:24Z:clawsweeper_auto_repair",
-      "comment_id": "6095529275",
-      "comment_version_key": "6095529275:2026-10-10T19:29:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168325#issuecomment-6095529275",
-      "comment_created_at": "2026-10-10T08:08:09Z",
-      "comment_updated_at": "2026-10-10T19:29:24Z",
-      "comment_body_sha256": "9f731ab426387fa8ece2844da4cb312f51d9f1237f28563b308711fdeb2764b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168325,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=e567f204cb14caa43f4373ede26c1d3d1a193dce)",
-      "expected_head_sha": "e567f204cb14caa43f4373ede26c1d3d1a193dce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T19:32:32.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/redesign-ui-with-visualizer-sections",
-        "head_sha": "e567f204cb14caa43f4373ede26c1d3d1a193dce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168601:6101040264:2026-10-10T19:29:46Z:clawsweeper_needs_human",
       "comment_id": "6101040264",
@@ -33197,6 +33164,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168735:6103758537:2026-10-11T00:28:33Z:re_review",
+      "comment_id": "6103758537",
+      "comment_version_key": "6103758537:2026-10-11T00:28:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168735#issuecomment-6103758537",
+      "comment_created_at": "2026-10-11T00:28:33Z",
+      "comment_updated_at": "2026-10-11T00:28:33Z",
+      "comment_body_sha256": "0a4c9c266c5cdd6f1a4a7a5747dc7f4e36899f39741240b31216ebdc09f5e23a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168735,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T00:29:33.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-migration-marketplace-discovery-deadline-wall-clock",
+        "head_sha": "68a3bac81a0ebd21e694c5b15aa79d1d9772df2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
