@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Oct 11, 2026, 06:38 UTC
+Last source update: Oct 11, 2026, 06:41 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Oct 11, 2026, 06:38 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Oct 11, 2026, 06:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38116445003) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Oct 11, 2026, 06:41 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38116240819) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Oct 11, 2026, 06:38 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38118657615) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Oct 11, 2026, 05:58 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/38116514079) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Oct 11, 2026, 06:15 UTC
+Last source update: Oct 11, 2026, 06:41 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1672 | 100% |
-| Run attempts archived | 5011 | audit |
+| Run attempts archived | 5012 | audit |
 | Latest successful clusters | 1253 | 74.9% |
 | Latest failed clusters | 415 | 24.8% |
 | Latest cancelled clusters | 4 | 0.2% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1672 clusters: 423 maintainer action, 458 automation snapshot, 727 intervention needed, 64 no pending action, 0 completed.
-- Maintainer first: [openclaw/crabbox](https://github.com/openclaw/crabbox) [cluster:issue-openclaw-crabbox-2708](cluster:issue-openclaw-crabbox-2708) is maintainer_input: For https://github.com/openclaw/crabbox/issues/2708, obtain or verify a supported Blacksmith contract binding the exact Testbox request t....
+- Maintainer first: [openclaw/agent-skills](https://github.com/openclaw/agent-skills) [#240](https://github.com/openclaw/agent-skills/issues/240) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling. The #217 fix must preserve existing scanner policy..
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#168872](https://github.com/openclaw/openclaw/pull/168872) is automation_failed: The retained installed-owner case remains a plausible source-supported bug distinct from the previously fixed missing-plugin case. Requir....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#168838](https://github.com/openclaw/openclaw/issues/168838) is action_planned: A focused repair of existing mutation reporting fits the authorized bug-only scope. Historical linked refs do not establish a same-root-c....
 - Completed latest: no completed action in the latest records.
@@ -147,8 +147,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/agent-skills](https://github.com/openclaw/agent-skills) | [#240](https://github.com/openclaw/agent-skills/issues/240) | maintainer_input | Quarantine this exact ref for central OpenClaw security handling. The #217 fix must preserve existing scanner policy. | Oct 11, 2026, 06:41 UTC | [issue-openclaw-agent-skills-217](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-agent-skills-217.md) | [38118732074](https://github.com/openclaw/clawsweeper/actions/runs/38118732074) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [cluster:issue-openclaw-crabbox-2708](cluster:issue-openclaw-crabbox-2708) | maintainer_input | For https://github.com/openclaw/crabbox/issues/2708, obtain or verify a supported Blacksmith contract binding the exact Testbox request to its work... | Oct 11, 2026, 06:04 UTC | [issue-openclaw-crabbox-2708](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-2708.md) | [38116644716](https://github.com/openclaw/clawsweeper/actions/runs/38116644716) |
-| [openclaw/agent-skills](https://github.com/openclaw/agent-skills) | [#240](https://github.com/openclaw/agent-skills/issues/240) | maintainer_input | Quarantine this exact historical item without mutations or including its policy changes in the #217 fix. | Oct 11, 2026, 05:50 UTC | [issue-openclaw-agent-skills-217](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-agent-skills-217.md) | [38115926440](https://github.com/openclaw/clawsweeper/actions/runs/38115926440) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#168401](https://github.com/openclaw/openclaw/issues/168401) | maintainer_input | Quarantine this linked PR from repair automation under the supplied security rule. This routing makes no vulnerability determination and does not b... | Oct 11, 2026, 05:35 UTC | [issue-openclaw-openclaw-168843](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-168843.md) | [38115073199](https://github.com/openclaw/clawsweeper/actions/runs/38115073199) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#155389](https://github.com/openclaw/openclaw/issues/155389) | maintainer_input | Quarantine this historical security-related item from repair automation without changing its state. Its unrelated warning-reconciliation context do... | Oct 11, 2026, 05:01 UTC | [issue-openclaw-openclaw-168835](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-168835.md) | [38113226868](https://github.com/openclaw/clawsweeper/actions/runs/38113226868) |
 | [openclaw/openclaw-facetime](https://github.com/openclaw/openclaw-facetime) | [#7](https://github.com/openclaw/openclaw-facetime/issues/7) | maintainer_input | #7: Selecting a safe implementation remains unresolved because the artifacts establish neither a current-main macOS reproduction nor a source-prove... | Oct 11, 2026, 01:16 UTC | [issue-openclaw-openclaw-facetime-7](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-facetime-7.md) | [38101079011](https://github.com/openclaw/clawsweeper/actions/runs/38101079011) |
