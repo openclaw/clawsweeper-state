@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T01:42:23.695Z",
+  "updated_at": "2026-10-11T01:42:56.885Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4415:6100497014:2026-10-10T20:38:45Z:clawsweeper_needs_human",
-      "comment_id": "6100497014",
-      "comment_version_key": "6100497014:2026-10-10T20:38:45Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/4415#issuecomment-6100497014",
-      "comment_created_at": "2026-10-10T17:56:05Z",
-      "comment_updated_at": "2026-10-10T20:38:45Z",
-      "comment_body_sha256": "5af2cbb96272705bb52f4da0d1c0e571f35300806670db1416e757844189ba00",
-      "repo": "steipete/CodexBar",
-      "issue_number": 4415,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - Resolve the merge conflict GitHub reports for the reviewed head, preserving this repair and incoming main changes. (sha=79a2dad88386d5aea15b3449457fd5ecbc560107)",
-      "expected_head_sha": "79a2dad88386d5aea15b3449457fd5ecbc560107",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T20:39:37.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage/20260921-settings-window-27",
-        "head_sha": "79a2dad88386d5aea15b3449457fd5ecbc560107",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3932:6084850257:2026-10-10T20:38:48Z:clawsweeper_auto_repair",
       "comment_id": "6084850257",
@@ -33415,6 +33382,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168736:6104292921:2026-10-11T01:42:06Z:re_review",
+      "comment_id": "6104292921",
+      "comment_version_key": "6104292921:2026-10-11T01:42:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168736#issuecomment-6104292921",
+      "comment_created_at": "2026-10-11T01:42:06Z",
+      "comment_updated_at": "2026-10-11T01:42:06Z",
+      "comment_body_sha256": "d7a05798b27e963628b5b0cdeb4397a3bcd5dddae3cd29f972d98e30b28408cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168736,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added shipped-flow cleanup proof (real codexappserverclient lifecycle: spawn → initialize handshake → closeandwait → terminatecodexappserverdescendants → readcodexappserverprocesssnapshot), pre-fix red abortms=7000 vs post-fix green abortms=1999 through the same shipped flow. see the shipped-flow cleanup proof block at the top of the evidence section",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T01:42:55.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-transport-process-snapshot-deadline-wall-clock-103",
+        "head_sha": "4345303d8465f931fc1aa8818f164fd7267be345",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
