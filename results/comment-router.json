@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T13:04:20.353Z",
+  "updated_at": "2026-10-11T13:07:51.173Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168772:6104041181:2026-10-11T06:39:01Z:clawsweeper_needs_human",
-      "comment_id": "6104041181",
-      "comment_version_key": "6104041181:2026-10-11T06:39:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168772#issuecomment-6104041181",
-      "comment_created_at": "2026-10-11T01:06:45Z",
-      "comment_updated_at": "2026-10-11T06:39:01Z",
-      "comment_body_sha256": "69ddce2c4d20013489718beeb034a8e63a3c9bb6bb39f698bf111b02e52576d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168772,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: the full body supplies extensive test and harness results, but no after-fix final-effect trace through the surviving message, approval, and transcript...; Review finding: [P1] Preserve permission revocation after a committed reply is lost — src/cron/service/run-receipts.ts:106-109 - [P1] Carry the scheduled assertion to final provid... (sha=f8753d343f2910817e090021800498b1d177d5a5)",
-      "expected_head_sha": "f8753d343f2910817e090021800498b1d177d5a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T06:39:52.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/upd-l1540",
-        "head_sha": "f8753d343f2910817e090021800498b1d177d5a5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168917:6106007100:2026-10-11T06:39:49Z:clawsweeper_needs_human",
       "comment_id": "6106007100",
@@ -33417,6 +33384,53 @@
         "kind": "pull_request",
         "branch": "fix/codex-migration-marketplace-discovery-deadline-wall-clock",
         "head_sha": "afd8d6ee308d617ab8e1bdd2e5bbb49b34197542",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169107:6109342735:2026-10-11T13:07:15Z:re_review",
+      "comment_id": "6109342735",
+      "comment_version_key": "6109342735:2026-10-11T13:07:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169107#issuecomment-6109342735",
+      "comment_created_at": "2026-10-11T13:07:15Z",
+      "comment_updated_at": "2026-10-11T13:07:15Z",
+      "comment_body_sha256": "7999a3e2216491762e944a42cf28b9581ce9b65850738da4d58be3626953fe6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169107,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T13:07:49.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stab-session-actor-stale-version",
+        "head_sha": "6b76c5d8f010a3799de8f7d9dc2479b420455ef5",
         "cluster_id": null,
         "job_path": null
       },
