@@ -1,0 +1,38 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-10-11T02:43:55.092Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "6104713367",
+    "node_id": "IC_kwDOQb6kR88AAAABa96Ilw",
+    "url": "https://github.com/openclaw/openclaw/issues/167771#issuecomment-6104713367",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/167771",
+    "pull_request_url": null,
+    "author": "jj5638521",
+    "author_association": "NONE",
+    "created_at": "2026-10-11T02:42:38Z",
+    "updated_at": "2026-10-11T02:42:38Z",
+    "body_hash": "fa894604509f2fd37834a739b90eb8c6b084310c03d5eb3a9adfff986f4819b3",
+    "body_excerpt": "**Additional repro: native Linux (Ubuntu 24.04 VM, ext4 `/tmp`, not tmpfs), global npm install, 2026.9.9 → 2026.10.1** Same shape as this  ...  another non-temp location), or let `recovery.mjs status`/`retire` run when the only mismatch is a recreated lease DB with no live owner.",
+    "minimized_reason": null
+  },
+  "deterministic": {
+    "signals": [],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "6104713367",
+    "spam_signal": "none",
+    "confidence": 0.99,
+    "reasons": [
+      "On-topic technical reproduction with environment details, recovery error output, and update diagnostics.",
+      "Describes a backup-verified workaround and proposes relevant recovery and lease-database improvements.",
+      "No solicitation, unrelated promotion, phishing, or abuse."
+    ],
+    "should_investigate": false
+  },
+  "model_error": null
+}
