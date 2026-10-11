@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T05:58:05.963Z",
+  "updated_at": "2026-10-11T05:58:25.072Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168736:6103950489:2026-10-11T00:54:19Z:re_review",
-      "comment_id": "6103950489",
-      "comment_version_key": "6103950489:2026-10-11T00:54:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168736#issuecomment-6103950489",
-      "comment_created_at": "2026-10-11T00:54:19Z",
-      "comment_updated_at": "2026-10-11T00:54:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168736,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T00:55:17.132Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-transport-process-snapshot-deadline-wall-clock-103",
-        "head_sha": "4345303d8465f931fc1aa8818f164fd7267be345",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138087:5538784861:2026-10-11T00:55:29Z:clawsweeper_auto_repair",
       "comment_id": "5538784861",
@@ -32718,6 +32671,39 @@
         "kind": "pull_request",
         "branch": "fix/prepared-catalog-generation-recovery",
         "head_sha": "61136a0345d5de8cefb90344b0af9efbaeb20d77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168924:6106029610:2026-10-11T05:57:29Z:clawsweeper_needs_human",
+      "comment_id": "6106029610",
+      "comment_version_key": "6106029610:2026-10-11T05:57:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168924#issuecomment-6106029610",
+      "comment_created_at": "2026-10-11T05:57:29Z",
+      "comment_updated_at": "2026-10-11T05:57:29Z",
+      "comment_body_sha256": "88bc2be6b146c791556578a417ea94873135809da07cdb9224ea10870eda2e49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed chat-pane startup and rendering behavior is supported only by reported unit and mocked-Gateway E2E results; no inspectable runtime artifact accompanies this PR. Attach bef... (sha=bdb6ce91ff4ecfc872264fbc207932924f7c427a)",
+      "expected_head_sha": "bdb6ce91ff4ecfc872264fbc207932924f7c427a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T05:58:25.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/dashboard-cold-load-welcome-1420",
+        "head_sha": "bdb6ce91ff4ecfc872264fbc207932924f7c427a",
         "cluster_id": null,
         "job_path": null
       }
