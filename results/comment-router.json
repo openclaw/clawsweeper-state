@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T00:32:11.205Z",
+  "updated_at": "2026-10-11T00:32:19.809Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168597:6101405135:2026-10-10T19:35:38Z:re_review",
-      "comment_id": "6101405135",
-      "comment_version_key": "6101405135:2026-10-10T19:35:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168597#issuecomment-6101405135",
-      "comment_created_at": "2026-10-10T19:35:38Z",
-      "comment_updated_at": "2026-10-10T19:35:38Z",
-      "comment_body_sha256": "02d2a3274f000f2a38de23652b07f35efae8c44219073541553d3e7654e9d0eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168597,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T19:36:26.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "solid2/p1-06",
-        "head_sha": "da5299b9d666fe91b1dee7c2c3bd3391d63c41d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4404:6093506231:2026-10-10T19:35:35Z:clawsweeper_needs_human",
       "comment_id": "6093506231",
@@ -33194,6 +33147,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-switch-back-context",
         "head_sha": "54dbf3c03ce1d4dc3df280366221e2d2516d8621",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168670:6102845555:2026-10-11T00:31:22Z:clawsweeper_needs_human",
+      "comment_id": "6102845555",
+      "comment_version_key": "6102845555:2026-10-11T00:31:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168670#issuecomment-6102845555",
+      "comment_created_at": "2026-10-10T22:27:10Z",
+      "comment_updated_at": "2026-10-11T00:31:22Z",
+      "comment_body_sha256": "ce5768070ba0125aa3fc2bcbd0d6e7fc863173ffed1cd84f6e773f753ade120c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5887bb7248cd8b1ef4710955e8a7a311e0497979)",
+      "expected_head_sha": "5887bb7248cd8b1ef4710955e8a7a311e0497979",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T00:32:19.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-exec-completion-wake-keeps-tools",
+        "head_sha": "5887bb7248cd8b1ef4710955e8a7a311e0497979",
         "cluster_id": null,
         "job_path": null
       }
