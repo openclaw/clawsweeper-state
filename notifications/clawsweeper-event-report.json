@@ -1,15 +1,37 @@
 {
   "version": 1,
-  "generated_at": "2026-10-11T05:02:02.818Z",
+  "generated_at": "2026-10-11T05:21:29.276Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/38113292334.json",
+  "run_record": "results/runs/38111629865.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "38113292334",
-  "considered": 0,
-  "pending": 0,
+  "run_id": "38111629865",
+  "considered": 1,
+  "pending": 1,
   "sent": 0,
-  "failed": 0,
+  "failed": 1,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.repair_blocked:openclaw/openclaw:target-unknown:repair_contributor_branch:failed:2026-10-11T05:21:25.811Z",
+      "type": "clawsweeper.repair_blocked",
+      "severity": "error",
+      "repo": "openclaw/openclaw",
+      "target": null,
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "failed",
+      "status": "failed",
+      "reason": "OpenClaw delivery failed",
+      "run_id": "38111629865",
+      "cluster_id": "automerge-openclaw-openclaw-166269",
+      "hook_run_id": "552ff88b-f6ba-44ef-a43e-95d2fd0b857d",
+      "delivery": {
+        "status": "failed",
+        "suppression_reason": null,
+        "error": null
+      },
+      "url": null
+    }
+  ]
 }
