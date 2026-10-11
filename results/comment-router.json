@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T22:11:06.730Z",
+  "updated_at": "2026-10-11T22:13:20.599Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:163779:5961410880:2026-10-11T08:47:01Z:clawsweeper_needs_human",
-      "comment_id": "5961410880",
-      "comment_version_key": "5961410880:2026-10-11T08:47:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/163779#issuecomment-5961410880",
-      "comment_created_at": "2026-10-02T21:01:17Z",
-      "comment_updated_at": "2026-10-11T08:47:01Z",
-      "comment_body_sha256": "a94aa0488e94673ddfcf96b3124220357edc3858dc821c2be9fb2af10a4a48ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 163779,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step** - A maintainer must review the current redaction change and grant the exact-head security approval required by the repository guard. (sha=269a6bacedcc586d38e070d9c233ee0a9e3fce25)",
-      "expected_head_sha": "269a6bacedcc586d38e070d9c233ee0a9e3fce25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:51:13.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/responses-dotted-ciphertext",
-        "head_sha": "269a6bacedcc586d38e070d9c233ee0a9e3fce25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168789:6104183115:2026-10-11T08:40:51Z:clawsweeper_needs_human",
       "comment_id": "6104183115",
@@ -33233,6 +33200,51 @@
         "kind": "pull_request",
         "branch": "ci-router-postpublish",
         "head_sha": "3b8ca8f3eb7ae3dbd16fa11937cab8731859f226"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169361:6114432459:2026-10-11T22:12:28Z:re_review",
+      "comment_id": "6114432459",
+      "comment_version_key": "6114432459:2026-10-11T22:12:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169361#issuecomment-6114432459",
+      "comment_created_at": "2026-10-11T22:12:28Z",
+      "comment_updated_at": "2026-10-11T22:12:28Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169361,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T22:13:19.269Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedding-credentials-fail-closed",
+        "head_sha": "7f1f85f6d461296629b8a99c3fb45970d97ca2b9"
       },
       "actions": [
         {
