@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T02:17:50.210Z",
+  "updated_at": "2026-10-11T02:18:20.060Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168653:6102248184:2026-10-10T21:14:54Z:re_review",
-      "comment_id": "6102248184",
-      "comment_version_key": "6102248184:2026-10-10T21:14:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168653#issuecomment-6102248184",
-      "comment_created_at": "2026-10-10T21:14:54Z",
-      "comment_updated_at": "2026-10-10T21:14:54Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168653,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T21:15:50.189Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-paired-token",
-        "head_sha": "8a906bd94e3a8567b601ec90dd8e177811ad2d2b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168643:6102200148:2026-10-10T21:16:12Z:clawsweeper_auto_repair",
       "comment_id": "6102200148",
@@ -33428,6 +33381,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/development-minor-and-patch-62a2fc2e88",
         "head_sha": "fc9a01dabf0e4a1b7e1f1e10ec7f24cb831f4244",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3909:5990241891:2026-10-11T02:17:20Z:clawsweeper_auto_repair",
+      "comment_id": "5990241891",
+      "comment_version_key": "5990241891:2026-10-11T02:17:20Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3909#issuecomment-5990241891",
+      "comment_created_at": "2026-10-05T07:43:31Z",
+      "comment_updated_at": "2026-10-11T02:17:20Z",
+      "comment_body_sha256": "5ac579df5537e1985512b1f7459b271533757882d3bafb07783fa62cfb8f86f3",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3909,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b1a1c356f2dafea2d131705de3b5cb9b772ae826)",
+      "expected_head_sha": "b1a1c356f2dafea2d131705de3b5cb9b772ae826",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-10-11T02:18:20.060Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/update-convex-ai-files",
+        "head_sha": "b1a1c356f2dafea2d131705de3b5cb9b772ae826",
         "cluster_id": null,
         "job_path": null
       }
