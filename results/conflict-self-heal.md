@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-11T02:53:07.278Z
+Generated: 2026-10-11T03:45:49.942Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -10,7 +10,7 @@ Repository: openclaw/openclaw
 | open_clawsweeper_prs | 22 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 23 |
+| skipped | 22 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
@@ -18,7 +18,6 @@ Repository: openclaw/openclaw
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
 | [#168126](https://github.com/openclaw/openclaw/pull/168126) | fix: close session databases before model directive fixture removal | clawsweeper/issue-openclaw-openclaw-168089 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
