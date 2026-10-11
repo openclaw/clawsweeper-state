@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T15:51:40.752Z",
+  "updated_at": "2026-10-11T15:55:10.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168966:6106591177:2026-10-11T07:16:47Z:clawsweeper_needs_human",
-      "comment_id": "6106591177",
-      "comment_version_key": "6106591177:2026-10-11T07:16:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168966#issuecomment-6106591177",
-      "comment_created_at": "2026-10-11T07:16:47Z",
-      "comment_updated_at": "2026-10-11T07:16:47Z",
-      "comment_body_sha256": "77507c7614df589a92566792544976682546930209361d519a8a2df2d10a791e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168966,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=00785260ca9292eb95887943b2e11445101a9384)",
-      "expected_head_sha": "00785260ca9292eb95887943b2e11445101a9384",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T07:17:45.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/stab-incognito-codex-limitation",
-        "head_sha": "00785260ca9292eb95887943b2e11445101a9384",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:165493:5992150090:2026-10-11T07:16:53Z:clawsweeper_needs_human",
       "comment_id": "5992150090",
@@ -33582,6 +33549,51 @@
         "kind": "pull_request",
         "branch": "fix/windows-efs-sqlite-snapshot-rename-jbai-x7q4",
         "head_sha": "bc0b7ee0c41c13222cf9a3ff274a0d910e788bf7"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169200:6110832138:2026-10-11T15:54:12Z:re_review",
+      "comment_id": "6110832138",
+      "comment_version_key": "6110832138:2026-10-11T15:54:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169200#issuecomment-6110832138",
+      "comment_created_at": "2026-10-11T15:54:12Z",
+      "comment_updated_at": "2026-10-11T15:54:12Z",
+      "comment_body_sha256": "7f0e630572a309c4757a68b7fba1d9c532308cc4882ff975161c1a8c63319ee0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169200,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: e5d5c640427613179bd04bb17e957972a9f6eb4a fixes delivered components v2/embed capture and preserves mock exports. the assertion and mock-export ratchets pass; 93 focused discord tests pass, including four delivery regressions that failed before the representation repair. the body records the real gpt-5-mini text-command proof and the manual-only native interaction gap",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T15:55:09.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-command-transcript-parity",
+        "head_sha": "e5d5c640427613179bd04bb17e957972a9f6eb4a"
       },
       "actions": [
         {
