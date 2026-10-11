@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T05:54:46.715Z",
+  "updated_at": "2026-10-11T05:55:07.796Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:168724:6103921815:2026-10-11T00:50:25Z:re_review",
-      "comment_id": "6103921815",
-      "comment_version_key": "6103921815:2026-10-11T00:50:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168724#issuecomment-6103921815",
-      "comment_created_at": "2026-10-11T00:50:25Z",
-      "comment_updated_at": "2026-10-11T00:50:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168724,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T00:51:27.978Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-removal-catalog",
-        "head_sha": "7888f5e952c4ce74f44c853d73af5bd91501fbf0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4422:6103923834:2026-10-11T00:50:41Z:clawsweeper_needs_human",
       "comment_id": "6103923834",
@@ -32730,6 +32683,39 @@
         "kind": "pull_request",
         "branch": "fix/replicate-official-glyph",
         "head_sha": "912edc048ecfd7af4ba2e942dde95374a96b90b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168919:6106007747:2026-10-11T05:54:10Z:clawsweeper_needs_human",
+      "comment_id": "6106007747",
+      "comment_version_key": "6106007747:2026-10-11T05:54:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168919#issuecomment-6106007747",
+      "comment_created_at": "2026-10-11T05:54:10Z",
+      "comment_updated_at": "2026-10-11T05:54:10Z",
+      "comment_body_sha256": "e060a77b47d76f98b7a5508b1e4281cbd97cb1f4d874394d5a1155e1e8738e1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168919,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The inspected gist proves regression-test execution on macOS arm64, including real view-model observation and scripted NSHostingView rendering, but does not exercise the changed telem... (sha=20aa74cc3e1d8afe30072a21501d55107b1f1757)",
+      "expected_head_sha": "20aa74cc3e1d8afe30072a21501d55107b1f1757",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T05:55:07.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/apple-chat-redundant-updates",
+        "head_sha": "20aa74cc3e1d8afe30072a21501d55107b1f1757",
         "cluster_id": null,
         "job_path": null
       }
