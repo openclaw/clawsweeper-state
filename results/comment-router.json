@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T02:18:41.035Z",
+  "updated_at": "2026-10-11T02:18:56.259Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168649:6102263913:2026-10-10T21:16:45Z:clawsweeper_needs_human",
-      "comment_id": "6102263913",
-      "comment_version_key": "6102263913:2026-10-10T21:16:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168649#issuecomment-6102263913",
-      "comment_created_at": "2026-10-10T21:16:45Z",
-      "comment_updated_at": "2026-10-10T21:16:45Z",
-      "comment_body_sha256": "5e4c4d9a447ada5b952e33d3dd895b9fc9956b2346eec4a92ed49943f4bf72b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168649,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=849f9f33154907ce6f3303d2cee6a39e2336cb36)",
-      "expected_head_sha": "849f9f33154907ce6f3303d2cee6a39e2336cb36",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T21:17:39.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/large-fleet-gateway-responsiveness",
-        "head_sha": "849f9f33154907ce6f3303d2cee6a39e2336cb36",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168618:6101713374:2026-10-10T21:16:59Z:clawsweeper_needs_human",
       "comment_id": "6101713374",
@@ -33417,6 +33384,64 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168753:6104547215:2026-10-11T02:18:03Z:request_proof",
+      "comment_id": "6104547215",
+      "comment_version_key": "6104547215:2026-10-11T02:18:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168753#issuecomment-6104547215",
+      "comment_created_at": "2026-10-11T02:18:03Z",
+      "comment_updated_at": "2026-10-11T02:18:03Z",
+      "comment_body_sha256": "6c7c5461f69f3e53bd8e091c7514f3717b29b76f62d6247a98b69d314d436243",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168753,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "proof telegram-bot-e2e-proof",
+      "intent": "request_proof",
+      "proof_admission": {
+        "status": "queued",
+        "reason": "Queued one review with requested proof focus. The reviewer selects relevant supported checks and uses their observations before its final decision; no separate follow-up review is scheduled.",
+        "request": {
+          "repository": "openclaw/openclaw",
+          "pullRequest": 168753,
+          "headSha": "c10a4b8ceea671d7dd73802fe00dd44805cba575",
+          "scenarioId": "telegram-bot-e2e-proof",
+          "requestId": "de447bdba34dce547e7ef331a969e533f88ade837deeacee0f1fed118c004199"
+        }
+      },
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T02:18:54.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "deslop/p13-channels-20261010",
+        "head_sha": "c10a4b8ceea671d7dd73802fe00dd44805cba575",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
