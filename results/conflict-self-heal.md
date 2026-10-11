@@ -1,16 +1,16 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-10-11T03:45:49.942Z
+Generated: 2026-10-11T04:40:58.680Z
 Repository: openclaw/openclaw
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_clawsweeper_prs | 22 |
+| open_clawsweeper_prs | 21 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 22 |
+| skipped | 21 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
@@ -27,7 +27,6 @@ Repository: openclaw/openclaw
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | clawsweeper/issue-openclaw-openclaw-114169 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | clawsweeper/issue-openclaw-openclaw-89430 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
-| [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | clawsweeper/issue-openclaw-openclaw-119692 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | clawsweeper/issue-openclaw-openclaw-92199 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | clawsweeper/issue-openclaw-openclaw-119148 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | clawsweeper/issue-openclaw-openclaw-118776 | UNKNOWN | UNKNOWN | skipped | merge state is clean or unknown |
