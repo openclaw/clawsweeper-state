@@ -2,12 +2,12 @@
 repo: "openclaw/peekaboo"
 cluster_id: "issue-openclaw-peekaboo-922"
 mode: "autonomous"
-run_id: "38110285840"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38110285840"
-head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
+run_id: "38114685310"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38114685310"
+head_sha: "d14447b3cfb4e0ab8a0cb1a44278f39955032b5a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-11T04:06:03.418Z"
+published_at: "2026-10-11T05:28:13.284Z"
 canonical: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_issue: "https://github.com/openclaw/peekaboo/issues/922"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-peekaboo-922
 
 Repo: openclaw/peekaboo
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38110285840](https://github.com/openclaw/clawsweeper/actions/runs/38110285840)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38114685310](https://github.com/openclaw/clawsweeper/actions/runs/38114685310)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 ## Summary
 
-#922 remains valid on preflight main. Implementation is blocked: the retained native mechanisms fail receiver delivery, and this read-only Linux checkout cannot establish a replacement mechanism through macOS receiver trials. No code changes or executable PR artifact were produced.
+The capability gap remains on preflight main 5afcafb5ca7e4f3fe524ce1139d624e811cf3043. No receiver-proven implementation is established: direct native delivery and chrome-preparation experiments failed the required behavior. Retain #922 open as the canonical issue with a non-mutating action because the provided artifacts do not support a safe executable fix plan. No code or GitHub state changed.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/peekaboo/issues/922
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #922 | needs_human | blocked | needs_human | The provided artifacts establish failures in both retained mechanisms but do not establish a safe replacement implementation. The unresolved question is which native mechanism can deliver exactly one unmodified receiver pair while preserving first-mouse policy, exact-window binding, guard state and post-terminal observation. Owner investigation with fresh macOS receiver trials is required before an executable fix artifact can be specified; do not create a PR from the failed mechanisms. |
-| #916 | keep_closed | skipped | related | Preserve the contributor's failed trials, AX-error repair and review history as historical evidence; do not revive the proposal as a proven fix. |
-| #923 | keep_closed | skipped | related | Related presentation work does not satisfy #922's receiver-delivery requirement. |
-| #926 | keep_closed | skipped | related | Historical diagnostic correction; not a candidate fix for #922. |
-| #927 | keep_closed | skipped | independent | Distinct completed typing-receipt work. |
+| #922 | keep_related | skipped | canonical | Retain the canonical issue open. The blocked fix_needed action cannot safely receive a fix artifact from the provided evidence: neither tested mechanism delivers exactly one unmodified receiver pair without delayed extra callbacks or foreground fallback. Resume implementation with writable source and a macOS receiver fixture capable of qualifying a new mechanism. |
+| #916 | keep_closed | skipped | related | Retain @steipete's implementation and failed qualification as historical evidence; it is not a viable canonical fix. |
+| #923 | keep_closed | skipped | related | Presentation work does not establish the receiver capability requested by #922. |
+| #926 | keep_closed | skipped | related | Historical diagnostic correction is distinct from receiver delivery. |
+| #927 | keep_closed | skipped | independent | Typing receipt arithmetic is separate from the passive-view click capability. |
 
 ## Needs Human
 
-- #922: Establish a receiver-proven replacement native mechanism before specifying a fix. #916 delivered zero receiver callbacks, while chrome preparation produced two receiver pairs instead of one, including late out-of-bounds callbacks despite distinct positive event numbers. Fresh macOS trials must preserve first-mouse policy, exact-window binding, guard state and post-terminal observation.
+- none
