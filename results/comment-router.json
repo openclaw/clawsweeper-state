@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T07:33:23.869Z",
+  "updated_at": "2026-10-11T07:33:28.329Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168346:6095738455:2026-10-11T02:50:31Z:clawsweeper_needs_human",
-      "comment_id": "6095738455",
-      "comment_version_key": "6095738455:2026-10-11T02:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168346#issuecomment-6095738455",
-      "comment_created_at": "2026-10-10T08:36:30Z",
-      "comment_updated_at": "2026-10-11T02:50:31Z",
-      "comment_body_sha256": "4cf9d995ca03a232fec1e3bba27922b78f570270d21cc8300865bc14a61fc71b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168346,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0b3e9ac31966b56101f99cd7bd22dbe1a19e64b9)",
-      "expected_head_sha": "0b3e9ac31966b56101f99cd7bd22dbe1a19e64b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T02:51:40.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-prep/2026.9.33",
-        "head_sha": "0b3e9ac31966b56101f99cd7bd22dbe1a19e64b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:4422:6103923834:2026-10-11T02:50:57Z:clawsweeper_needs_human",
       "comment_id": "6103923834",
@@ -32447,6 +32414,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168965:6106709662:2026-10-11T07:32:29Z:re_review",
+      "comment_id": "6106709662",
+      "comment_version_key": "6106709662:2026-10-11T07:32:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168965#issuecomment-6106709662",
+      "comment_created_at": "2026-10-11T07:32:29Z",
+      "comment_updated_at": "2026-10-11T07:32:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168965,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T07:33:26.991Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-switch-system-event-dup",
+        "head_sha": "cea62480b6bc19c1b7ed6ba3b2c609c0814984cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
