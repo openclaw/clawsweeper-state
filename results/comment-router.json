@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T04:10:27.670Z",
+  "updated_at": "2026-10-11T04:13:00.489Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:162262:6094505822:2026-10-10T06:08:22Z:re_review",
-      "comment_id": "6094505822",
-      "comment_version_key": "6094505822:2026-10-10T06:08:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/162262#issuecomment-6094505822",
-      "comment_created_at": "2026-10-10T06:08:22Z",
-      "comment_updated_at": "2026-10-10T06:08:22Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 162262,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T23:06:55.441Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-startup-recovery",
-        "head_sha": "4cf00391959c9a2f7af44aedb79cb869cd18e84b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:162262:5923024675:2026-10-10T23:05:55Z:clawsweeper_auto_repair",
       "comment_id": "5923024675",
@@ -33208,6 +33161,39 @@
         "kind": "pull_request",
         "branch": "review-record-parser-removal",
         "head_sha": "21c15e2fab313a2645f5f2b2d52824dcdc7b1940",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168869:6105321908:2026-10-11T04:12:00Z:clawsweeper_needs_human",
+      "comment_id": "6105321908",
+      "comment_version_key": "6105321908:2026-10-11T04:12:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168869#issuecomment-6105321908",
+      "comment_created_at": "2026-10-11T04:12:00Z",
+      "comment_updated_at": "2026-10-11T04:12:00Z",
+      "comment_body_sha256": "bb73919d1411badcc614c4068b1d2bb38312148d00043827bc5ec822446f12ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step** - Inspect the failed QA Smoke CI profile 1/4 logs or uploaded evidence and determine whether its failure is caused by this PR. (sha=9ae202edb6ec91c761b74b724f9d08bbd830e0cc)",
+      "expected_head_sha": "9ae202edb6ec91c761b74b724f9d08bbd830e0cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T04:13:00.489Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-doctor-channel-capabilities",
+        "head_sha": "9ae202edb6ec91c761b74b724f9d08bbd830e0cc",
         "cluster_id": null,
         "job_path": null
       }
