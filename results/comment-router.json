@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T08:09:42.481Z",
+  "updated_at": "2026-10-11T08:10:25.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151679:6105074410:2026-10-11T03:35:52Z:re_review",
-      "comment_id": "6105074410",
-      "comment_version_key": "6105074410:2026-10-11T03:35:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151679#issuecomment-6105074410",
-      "comment_created_at": "2026-10-11T03:35:52Z",
-      "comment_updated_at": "2026-10-11T03:35:52Z",
-      "comment_body_sha256": "06ce3f456cc52d9bcfc31d67f8a25a2f68a8fd259b7c36b85e7057434b458097",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151679,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-11T03:36:50.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/codex-node-sessions-bounded-read-awaz",
-        "head_sha": "ca7b592773bf53097bfc1f34f8191a5b48ef776c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168778:6104086706:2026-10-11T03:36:26Z:clawsweeper_needs_human",
       "comment_id": "6104086706",
@@ -32485,6 +32438,39 @@
         "kind": "pull_request",
         "branch": "perf/c3-read-1",
         "head_sha": "027f250499eb5583970120c4c56f69efd10d8834",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:157860:5826401030:2026-10-11T08:09:26Z:clawsweeper_needs_human",
+      "comment_id": "5826401030",
+      "comment_version_key": "5826401030:2026-10-11T08:09:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/157860#issuecomment-5826401030",
+      "comment_created_at": "2026-09-25T03:53:47Z",
+      "comment_updated_at": "2026-10-11T08:09:26Z",
+      "comment_body_sha256": "01bc2d67aa0661e3d21e63fee0ab8de802b52903cb7cb22e6a1c997363cc076b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 157860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: historical container and Realtime evidence covers rotation, explicit-list preservation, unrelated-origin rejection, and held-then-revoked offers, but t...; Review finding: [P2] Refresh avatar CORS before publishing the response — src/gateway/user-profiles-http.ts:204 - [P3] Replace origin-policy polling with completion signals — exte... (sha=3095de819a0ac4fe6feb9a55f72a4e1fd5515c60)",
+      "expected_head_sha": "3095de819a0ac4fe6feb9a55f72a4e1fd5515c60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T08:10:25.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-feedback-container-origins",
+        "head_sha": "3095de819a0ac4fe6feb9a55f72a4e1fd5515c60",
         "cluster_id": null,
         "job_path": null
       }
