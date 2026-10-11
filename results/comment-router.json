@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T20:28:03.420Z",
+  "updated_at": "2026-10-11T20:34:35.256Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2144:6107150240:2026-10-11T08:38:26Z:clawsweeper_needs_human",
-      "comment_id": "6107150240",
-      "comment_version_key": "6107150240:2026-10-11T08:38:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2144#issuecomment-6107150240",
-      "comment_created_at": "2026-10-11T08:30:46Z",
-      "comment_updated_at": "2026-10-11T08:38:26Z",
-      "comment_body_sha256": "c812b56b1c57c0829acc27cbfe4b8551d6cf0abb220d8c0d1216dc9f1cbcf59a",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 2144,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Exclude reply records before publishing slow-stop Gateway logs (P2)** - When a Kubernetes stop remains pending past 60 seconds, this new call reaches recordPlatformLogs even if cleanup later succeeds. Its unchan...; Review finding: [P2] Exclude reply records before publishing slow-stop Gateway logs — tests/helpers/qa-repository.mjs:321-322 - [medium] Private runtime output persists in downloa... (sha=9062de61d9c006f3439e95e476271acb2a793538)",
-      "expected_head_sha": "9062de61d9c006f3439e95e476271acb2a793538",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:39:23.000Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-1088-test",
-        "head_sha": "9062de61d9c006f3439e95e476271acb2a793538",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168790:6104196242:2026-10-11T08:38:39Z:clawsweeper_needs_human",
       "comment_id": "6104196242",
@@ -33039,6 +33006,51 @@
         "kind": "pull_request",
         "branch": "prune-candidate-freshness",
         "head_sha": "c94b311d1ce451e4140c423e809ac536bca7fe13"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/ocm:330:6113390866:2026-10-11T20:27:13Z:re_review",
+      "comment_id": "6113390866",
+      "comment_version_key": "6113390866:2026-10-11T20:27:13Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/330#issuecomment-6113390866",
+      "comment_created_at": "2026-10-11T20:27:13Z",
+      "comment_updated_at": "2026-10-11T20:27:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/ocm",
+      "issue_number": 330,
+      "author": "shakkernerd",
+      "author_id": 165377636,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T20:34:34.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "self-update-store-context",
+        "head_sha": "279bf8529a9a017c46075efecb91c3fd1e9dd6fe"
       },
       "actions": [
         {
