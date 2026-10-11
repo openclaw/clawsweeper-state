@@ -2,16 +2,16 @@
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
 mode: "autonomous"
-run_id: "38113292334"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38113292334"
-head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
+run_id: "38115470217"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38115470217"
+head_sha: "d14447b3cfb4e0ab8a0cb1a44278f39955032b5a"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-11T05:02:01.232Z"
+published_at: "2026-10-11T05:43:07.459Z"
 canonical: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
-actions_total: 1
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38113292334](https://github.com/openclaw/clawsweeper/actions/runs/38113292334)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38115470217](https://github.com/openclaw/clawsweeper/actions/runs/38115470217)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation depends on a supported Blacksmith capability binding each Testbox request to its workflow run before worker registration, including admission failure and cancellation. The supplied triage explicitly awaits that capability; current main contains no integration for it. Keep the issue open pending that provider contract. No code changed or PR proposed.
+The observation gap remains on supplied main 7529953cc99f8e34772a9328cffb7fb89e1f98ed. Implementation requires a supported Blacksmith pre-worker dispatch association and terminal-status contract that is absent from the available evidence. No changes or executable fix PR plan were produced; keep the issue open.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,12 @@ Implementation depends on a supported Blacksmith capability binding each Testbox
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | planned | related | Keep the issue open pending a supported, durable Testbox-to-workflow binding and terminal-status contract. No narrow adapter patch can currently distinguish slow allocation from pre-worker dispatch failure without inventing an unsupported association, so an executable fix artifact cannot safely be supplied. |
+| #2708 | keep_related | skipped | related | Keep the issue open without an executable fix action. Resume only when Blacksmith supplies a documented, durable Testbox-to-workflow binding before worker registration that survives admission failure and cancellation, together with authoritative terminal dispatch evidence. A Crabbox-only heuristic would not safely satisfy the issue. |
+| #2669 | keep_closed | skipped | related | Closed historical context; no action. |
+| #2670 | keep_closed | skipped | related | Distinct merged repair; it does not supply pre-worker association. |
+| #2682 | keep_closed | skipped | related | Closed historical context with distinct scope. |
+| #2683 | keep_closed | skipped | related | Distinct merged repair; absent associations remain unknown. |
+| #2719 | keep_closed | skipped | related | Distinct merged optimization; no remaining work in this cluster. |
 
 ## Needs Human
 
