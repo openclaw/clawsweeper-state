@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-10-11T00:20:32.150Z",
+  "updated_at": "2026-10-11T00:21:00.733Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/acpx:862:6017033023:2026-10-06T13:12:38Z:re_review",
-      "comment_id": "6017033023",
-      "comment_version_key": "6017033023:2026-10-06T13:12:38Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/862#issuecomment-6017033023",
-      "comment_created_at": "2026-10-06T13:12:38Z",
-      "comment_updated_at": "2026-10-06T13:12:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/acpx",
-      "issue_number": 862,
-      "author": "donk8r",
-      "author_id": 274232363,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-10-10T19:22:09.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/octomind-agent",
-        "head_sha": "23b5fe671d382586a20456569dd666d6a298980f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "skipped",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:862:6016032347:2026-10-10T19:21:17Z:clawsweeper_needs_human",
       "comment_id": "6016032347",
@@ -33222,6 +33175,39 @@
         "kind": "pull_request",
         "branch": "fix/handoff-test-cleanup-guard",
         "head_sha": "ceaff8a6d63b0c59cde5fb11e4a7850295da0cf2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2110:6103693973:2026-10-11T00:20:05Z:clawsweeper_needs_human",
+      "comment_id": "6103693973",
+      "comment_version_key": "6103693973:2026-10-11T00:20:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2110#issuecomment-6103693973",
+      "comment_created_at": "2026-10-11T00:20:05Z",
+      "comment_updated_at": "2026-10-11T00:20:05Z",
+      "comment_body_sha256": "bbf15bd3abfec6eb5dfdda97339c25eaabd4f1007ee8ab17fddd3be4d3df46b9",
+      "repo": "openclaw/openclaw-enterprise",
+      "issue_number": 2110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - The changed owner is the OCC CLI duration validator, but supplied evidence consists of reported tests using an in-process Cobra command and loopback HTTP stub. Provide a terminal scre... (sha=ea332a34990bdd85ee1d95e85332be8cdd7df948)",
+      "expected_head_sha": "ea332a34990bdd85ee1d95e85332be8cdd7df948",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-10-11T00:21:00.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/occ-logs-explicit-zero-since",
+        "head_sha": "ea332a34990bdd85ee1d95e85332be8cdd7df948",
         "cluster_id": null,
         "job_path": null
       }
