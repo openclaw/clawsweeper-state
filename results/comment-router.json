@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T07:47:19.795Z",
+  "updated_at": "2026-10-11T07:47:31.101Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168401:6096791770:2026-10-11T03:07:57Z:clawsweeper_auto_repair",
-      "comment_id": "6096791770",
-      "comment_version_key": "6096791770:2026-10-11T03:07:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168401#issuecomment-6096791770",
-      "comment_created_at": "2026-10-10T10:59:04Z",
-      "comment_updated_at": "2026-10-11T03:07:57Z",
-      "comment_body_sha256": "0a96a4307b13ccba134217f51f1ebe4e3e322371d46bcb431f6abc3491b7e927",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168401,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable review findings (sha=dbe805cb192411d502591c9c8f27170cfd5c6e1c)",
-      "expected_head_sha": "dbe805cb192411d502591c9c8f27170cfd5c6e1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T03:09:04.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/comparing-server-side-compaction-approaches",
-        "head_sha": "dbe805cb192411d502591c9c8f27170cfd5c6e1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168745:6103597220:2026-10-11T03:08:51Z:clawsweeper_needs_human",
       "comment_id": "6103597220",
@@ -32509,6 +32476,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168965:6106777062:2026-10-11T07:41:27Z:re_review",
+      "comment_id": "6106777062",
+      "comment_version_key": "6106777062:2026-10-11T07:41:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168965#issuecomment-6106777062",
+      "comment_created_at": "2026-10-11T07:41:27Z",
+      "comment_updated_at": "2026-10-11T07:41:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168965,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T07:47:29.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-switch-system-event-dup",
+        "head_sha": "aee2703a58b3180ec8b960fd17acdaa079bff69e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
