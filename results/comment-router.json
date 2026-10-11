@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T19:06:45.393Z",
+  "updated_at": "2026-10-11T19:10:13.589Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-enterprise:2143:6107045291:2026-10-11T08:16:46Z:clawsweeper_needs_human",
-      "comment_id": "6107045291",
-      "comment_version_key": "6107045291:2026-10-11T08:16:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw-enterprise/pull/2143#issuecomment-6107045291",
-      "comment_created_at": "2026-10-11T08:16:46Z",
-      "comment_updated_at": "2026-10-11T08:16:46Z",
-      "comment_body_sha256": "ff742fb8a081fef1fd393a904ce6cb1a7d70b1e0152e36a521ce357c2442d656",
-      "repo": "openclaw/openclaw-enterprise",
-      "issue_number": 2143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - The supplied head verification exercises KubernetesComputeDriver.diagnoseAgentDeployment with substituted Kubernetes API responses, not the shipped API or CLI against an actual status... (sha=3702f81eb7c37cc00b8ab7a31c5ee01dd81fa2bf)",
-      "expected_head_sha": "3702f81eb7c37cc00b8ab7a31c5ee01dd81fa2bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-11T08:17:46.288Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-2142-runtime-diagnostic-timestamps",
-        "head_sha": "3702f81eb7c37cc00b8ab7a31c5ee01dd81fa2bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168962:6107046504:2026-10-11T08:16:56Z:re_review",
       "comment_id": "6107046504",
@@ -33241,6 +33208,51 @@
         "kind": "pull_request",
         "branch": "solid2/w-upgrade-solid",
         "head_sha": "3623a5b6d5b8575d535212d5473e2f6239a60ff7"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:169278:6112636501:2026-10-11T19:09:24Z:re_review",
+      "comment_id": "6112636501",
+      "comment_version_key": "6112636501:2026-10-11T19:09:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/169278#issuecomment-6112636501",
+      "comment_created_at": "2026-10-11T19:09:24Z",
+      "comment_updated_at": "2026-10-11T19:09:24Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 169278,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T19:10:12.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-local-preflight-visible",
+        "head_sha": "373c7136340df21c9f95fc2b0e3cdc8279150350"
       },
       "actions": [
         {
