@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/crabbox"
 cluster_id: "issue-openclaw-crabbox-2708"
-mode: "plan"
-run_id: "38101192126"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38101192126"
+mode: "autonomous"
+run_id: "38113292334"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/38113292334"
 head_sha: "3e3ac1fffea21e8f0b237313887ae81309b4d76c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-10-11T01:17:22.583Z"
-canonical: "#2708"
-canonical_issue: "#2708"
+published_at: "2026-10-11T05:02:01.232Z"
+canonical: "https://github.com/openclaw/crabbox/issues/2708"
+canonical_issue: "https://github.com/openclaw/crabbox/issues/2708"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/38101192126](https://github.com/openclaw/clawsweeper/actions/runs/38101192126)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/38113292334](https://github.com/openclaw/clawsweeper/actions/runs/38113292334)
 
 Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: #2708
+Canonical: https://github.com/openclaw/crabbox/issues/2708
 
 ## Summary
 
-Implementation remains blocked on a supported Blacksmith pre-worker dispatch association and terminal-status contract. Current main preserves the reported observation gap. No code changes or PR are proposed; keep the issue open.
+Implementation depends on a supported Blacksmith capability binding each Testbox request to its workflow run before worker registration, including admission failure and cancellation. The supplied triage explicitly awaits that capability; current main contains no integration for it. Keep the issue open pending that provider contract. No code changed or PR proposed.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Implementation remains blocked on a supported Blacksmith pre-worker dispatch ass
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #2708 |  |  |
 
 ## Apply Actions
 
@@ -66,7 +66,7 @@ Implementation remains blocked on a supported Blacksmith pre-worker dispatch ass
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #2708 | keep_related | blocked | related | Keep the issue open as the canonical tracking thread, with a non-mutating classification because no safe fix artifact can be established from the supplied evidence. No supported binding between the Testbox request and its pre-worker workflow run is established by the supplied evidence or current adapter. Guessing by workflow, ref, or time, or accepting native completion as settlement, would violate the existing exact-association contract. Resume implementation when Blacksmith supplies durable request-to-run identity and authoritative terminal status through cancellation and admission failure. |
+| #2708 | keep_related | planned | related | Keep the issue open pending a supported, durable Testbox-to-workflow binding and terminal-status contract. No narrow adapter patch can currently distinguish slow allocation from pre-worker dispatch failure without inventing an unsupported association, so an executable fix artifact cannot safely be supplied. |
 
 ## Needs Human
 
