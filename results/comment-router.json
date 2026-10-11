@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-10-11T00:21:10.379Z",
+  "updated_at": "2026-10-11T00:21:15.610Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:168454:6097944806:2026-10-10T19:22:24Z:clawsweeper_needs_human",
-      "comment_id": "6097944806",
-      "comment_version_key": "6097944806:2026-10-10T19:22:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/168454#issuecomment-6097944806",
-      "comment_created_at": "2026-10-10T13:22:37Z",
-      "comment_updated_at": "2026-10-10T19:22:24Z",
-      "comment_body_sha256": "6b03a539063e362868ac334b9862f725c4f7133c59320920c79d6c3dfefe29e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 168454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Authority-chain proof required: show current-head reclaim returning during pending capture, replacement work succeeding, and the retired worker's replay and queued effects rejected be...; Review finding: [P1] Retain cleanup settlement after a capture is claimed — extensions/crabbox/src/crabbox-worker-provider.ts:728 - [medium] Retired-worker effects need final-effe... (sha=97152940bf2c748a78af81cdd534bc5bb9478aa4)",
-      "expected_head_sha": "97152940bf2c748a78af81cdd534bc5bb9478aa4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-10-10T19:23:21.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/reclaim-hang-20261010",
-        "head_sha": "97152940bf2c748a78af81cdd534bc5bb9478aa4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:168601:6101280468:2026-10-10T19:23:14Z:re_review",
       "comment_id": "6101280468",
@@ -33211,6 +33178,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:168736:6103695264:2026-10-11T00:20:15Z:re_review",
+      "comment_id": "6103695264",
+      "comment_version_key": "6103695264:2026-10-11T00:20:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/168736#issuecomment-6103695264",
+      "comment_created_at": "2026-10-11T00:20:15Z",
+      "comment_updated_at": "2026-10-11T00:20:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 168736,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-10-11T00:21:12.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-transport-process-snapshot-deadline-wall-clock-103",
+        "head_sha": "a8ef4bec9ba1a8691a533504032a7ce8578052e0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "skipped",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
